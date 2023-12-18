@@ -23,7 +23,7 @@ To add a Static Entity to your app, do the following in Service Studio:
 
 1. Navigate to the **Data** tab, right-click on the **Entities** folder, and select **Add Static Entity to Database**.
 
-    ![Help menu with Entity commands](images/add-static-entity-ss.png?width=550)
+    ![Screenshot showing the process of adding a Static Entity to the database in Service Studio](images/add-static-entity-ss.png "Adding a Static Entity in Service Studio")
 
     Start typing to enter the name. Press **Enter** to confirm.
 
@@ -65,11 +65,11 @@ Use Static Entities when you need a predefined, or constant, set of values. For 
 
 Your Static Entity Status may look like this:
 
-![Static entity example](images/static-entity-example.png?width=300)
+![Example of a Static Entity structure for reservation statuses in a hotel app](images/static-entity-example.png "Static Entity Example")
 
 The Records folder of your Static Entity contains all statuses you have created. If you select "CheckedOut", the Properties Editor shows the following details:
 
-![Static entity - a Record example](images/static-entity-record-example.png?width=300)
+![Details of the 'CheckedOut' record in the Static Entity showing the Identifier, Label, and TextDescription](images/static-entity-record-example.png "Static Entity Record Details")
 
 The Identifier for the checked out status is `CheckedOut` and the Label is `"Checked-Out"`. The field TextDescription is the custom field and has the string value `"The guests have just left."`.
 

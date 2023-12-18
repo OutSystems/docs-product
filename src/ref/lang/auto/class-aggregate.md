@@ -6,8 +6,8 @@ guid: aa5d2ae3-56f3-40e8-8c10-75573d80424c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:333
+summary: Aggregates are optimized queries for fetching data in OutSystems, supporting advanced filtering and entity combinations, with client-side and server-side options for Mobile, Reactive, and Traditional Web Apps
 ---
-
 # Aggregate
 
 Aggregates allow you to fetch data using an optimized query, tailored to your usage. Aggregates automatically absorb changes in the data model and can load the local database's data from the server. They support combining several entities and advanced filtering, and bring only the attributes that are used on the screen or action. Attributes also abstract the underlying model for the developer, allowing attribute renaming and changes to the data type.  
@@ -28,7 +28,7 @@ You can create Aggregates in Screens, Blocks, or Action flows.
 To load data on a Screen or Block, right-click the Screen or Block and select **Fetch data from Database**.  
 An empty Aggregate opens and Service Studio displays a message on the empty Aggregate that you need to add an Entity.
 
-![Create new Aggregate](images/aggregate-create-ss.png)
+![Screenshot showing how to create an Aggregate in a Screen or Block in Service Studio](images/aggregate-create-ss.png "Creating an Aggregate in a Screen or Block")
 
 There are cases when you always need to fetch all records from the database, for example, to populate drop-down box lists. If you fetch all records using a Screen Aggregate, set the **Max. Records** higher than the maximum number of records you expect to fetch. Keep in mind that large amounts of data may slow down the user interface and degrade the responsiveness of the app.
 
@@ -36,7 +36,7 @@ There are cases when you always need to fetch all records from the database, for
 
 To add an Aggregate to an Action, drag an **Aggregate** from the toolbox to the flow. 
 
-![Add Aggregate to an Action](images/aggregate-server-side-ss.png)
+![Screenshot demonstrating the addition of a server-side Aggregate to an Action in Service Studio](images/aggregate-server-side-ss.png "Adding an Aggregate to an Action")
 
 There are cases when you always need to fetch all records from the database, for example, to populate drop-down box lists. If you fetch all records using a Data Action, leave the **Max. Records** field empty. In Data Actions, the **Max. Records** value is optional. If you don't provide a value, the Data Action fetches all records from the database. 
 
@@ -47,7 +47,7 @@ There are cases when you always need to fetch all records from the database, for
 1. Drag one of the Entities to the Aggregate window.  
 Service Studio populates the Aggregate with columns that correspond to the attributes of the Entity. Note that, for example, if your Entity is called **MyEntity**, the Aggregate is automatically called **GetMyEntity**.
 
-    ![Columns from database in Aggregate](images/database-columns-aggregate-ss.png)
+    ![Screenshot of Service Studio with an Entity being dragged to an Aggregate window to add as a data source](images/database-columns-aggregate-ss.png "Adding a Data Source to an Aggregate")
 
 For more information, see the [How To Fetch Data in an Aggregate](https://www.outsystems.com/training/lesson/1943/demo-how-to-fetch-data-in-an-aggregate) demo.
 
@@ -57,16 +57,16 @@ To add more data sources to your Aggregate, follow these steps:
 
 1. With the Aggregate open, in the **Sources** tab, click **Add source**.
 
-    ![Add a source to an Aggregate.](images/add-source-ss.png)
+    ![Screenshot showing the 'Add source' option in Service Studio to include additional data sources in an Aggregate](images/add-source-ss.png "Adding More Data Sources to an Aggregate")
 
 1. Click the source you want to add and then click **Select**.
 
-    ![Select source to add to the Aggregate.](images/select-source-ss.png)
+    ![Screenshot of the source selection interface in Service Studio for adding to an Aggregate](images/select-source-ss.png "Selecting a Data Source for an Aggregate")
 
 1. Select the join type between your sources.  
 For more information, see [Supported Join Types](../../data/handling-data/queries/supported-join-types.md).
 
-    ![Select join type between sources.](images/select-join-ss.png)
+    ![Screenshot illustrating the process of selecting a join type between data sources in an Aggregate](images/select-join-ss.png "Selecting Join Type Between Data Sources")
 
 For more information, see the [How To Fetch Data from Multiple Sources in Aggregates](https://www.outsystems.com/training/lesson/1974/demo-how-to-fetch-data-from-multiple-sources-in-aggregates) demo.
 

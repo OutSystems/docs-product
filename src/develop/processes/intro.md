@@ -42,18 +42,18 @@ The Taskbox is automatically available in your application once you are executin
 
 Use Sample Reactive Taskbox component from Forge to implement the Taskbox in Reactive Apps. Check instructions in document [Using Taskbox in Reactive Web Apps](https://success.outsystems.com/Documentation/How-to_Guides/Processes/Using_Taskbox_in_Reactive_Web_Apps).
 
-![Taskbox preview with task count](images/browser-process-task-list.png?width=450)
+![Screenshot of a browser displaying the process task list in a Reactive Web App](images/browser-process-task-list.png "Browser Process Task List")
 
-![Taskbox preview with a task opened](images/browser-process-task-opened.png?width=450)
+![Screenshot of a browser showing an opened process task with details in a Reactive Web App](images/browser-process-task-opened.png "Browser Process Task Opened")
 
 
 #### In Traditional Web Apps
 
 In Traditional Web Apps, the UI of the Taskbox is available by default.
 
-![](images/process-taskbox-highlighted.png)
+![Image highlighting the Taskbox feature in the UI of a Traditional Web App](images/process-taskbox-highlighted.png "Process Taskbox Highlighted in Traditional Web App")
 
-![](images/process-taskbox-opened.png)
+![Image showing an opened Taskbox with task instructions in a Traditional Web App](images/process-taskbox-opened.png "Process Taskbox Opened in Traditional Web App")
 
 When the end user clicks on a listed task, it is opened and the task instructions are displayed in the Taskbox. Simultaneously, the application navigates automatically to the appropriate Web Screen and displays the appropriate data needed for the end user to accomplish the task.
 

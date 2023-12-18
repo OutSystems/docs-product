@@ -1,11 +1,11 @@
 ---
+summary: The article discusses strategies to avoid conflicts between process logic and application logic by separating entity attributes or using commit transactions to prevent record locking
 locale: en-us
 guid: 1961c6df-66b1-4e5d-a324-b5bd09df1186
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:35
 ---
-
 # Separate Process Logic from Application Logic
 
 When you design a [Process](../intro.md) that is strongly integrated with your application, it may happen that both the process and the application are changing the same **Entity record** at the same time. This **leads to misbehaviors**, essentially due to:
@@ -32,7 +32,7 @@ In this case we recommend that you do the following:
 
 As an example, imagine an application and process to handle candidates that apply for a job. At some point, on the candidate edit screen, there is a button to Dismiss the candidate.
 
-![Candidate Record](images/separate-logic-1-diag.png)
+![Diagram illustrating the process when the Dismiss button is pressed in a candidate application, leading to a locked Candidate record.](images/separate-logic-1-diag.png "Candidate Dismissal Process Diagram")
 
 When the Dismiss button is pressed, the following happens:
 
@@ -46,7 +46,7 @@ When the Dismiss button is pressed, the following happens:
 
 Let's identify which attributes are changed either by the application or by the process. The **StatusId** is only changed by the process. So, let's create the **CandidateProcess** entity to have it isolated there.
 
-![Candidate Record Option 1](images/separate-logic-2-diag.png)
+![Diagram showing the creation of a CandidateProcess entity to isolate attributes changed by the process, preventing record locking.](images/separate-logic-2-diag.png "CandidateProcess Entity Creation Diagram")
 
 Now, when the Dismiss button is pressed, the following happens:
 
@@ -60,7 +60,7 @@ Now, when the Dismiss button is pressed, the following happens:
 
 The **CloseScheduleInterviews** is already at the end of the flow. So, let's add the a **CommitTransaction** before it to commit the changes in the database and end the lock.
 
-![Candidate Record Option 2](images/separate-logic-3-diag.png)
+![Diagram depicting the addition of a CommitTransaction action in the application flow to commit changes and end the lock on the Candidate record.](images/separate-logic-3-diag.png "CommitTransaction in Application Flow Diagram")
 
 Now, when the Dismiss button is pressed, the following happens:
 

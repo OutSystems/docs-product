@@ -34,7 +34,7 @@ To do so, follow these steps:
 1. Click the **Configuration** link below the name of the current environment.
 1. On the **Analytics Configuration** page, use the toggle to enable analytics for the Quality Assurance environment.
 
-![](images/enable-analytics-for-an-environment.png)
+![Screenshot of the Analytics Configuration page with the toggle switched on to enable analytics for the Quality Assurance environment](images/enable-analytics-for-an-environment.png "Enabling Analytics in the Quality Assurance Environment")
 
 After these steps, the platform starts collecting analytics about all applications in the Quality Assurance environment.
 

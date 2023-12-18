@@ -61,7 +61,7 @@ To add a Firebase plugin to your mobile app, complete the following steps:
 
 1. In Service Studio, go to **Logic** > **Client Action**, then select your Firebase plugin and use the actions in your logic.
 
-    ![Screenshot of creating and using the firebase actions in the logic tab of Service Studio](images/plugin-logic-tab-ss.png)
+    ![Screenshot of the Logic tab in Service Studio showing Firebase plugin actions](images/plugin-logic-tab-ss.png "Firebase Plugin Logic Tab in Service Studio")
 
     <div class="info" markdown="1">
 
@@ -77,7 +77,7 @@ You must provide the plugin configuration file as settings in the Service Studio
 
 1. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
 
-    ![Screenshot of the Resources folder in Service Studio](images/resources-folder-ss.png)
+    ![Screenshot of importing google-services.json file into the Resources folder in Service Studio](images/resources-folder-ss.png "Importing Resources in Service Studio")
 
 1. Select the **google-services.json** file and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
@@ -85,7 +85,7 @@ You must provide the plugin configuration file as settings in the Service Studio
 
 1. In the **Deploy Action** list, select **Deploy to Target Directory**. Leave the **Target Directory** field empty.
 
-    ![Screenshot of the Resource settings for Firebase](images/firebase-resources-ss.png)
+    ![Screenshot showing how to add Firebase configuration files to a mobile app in Service Studio](images/firebase-resources-ss.png "Firebase Configuration Files in Service Studio")
 
 
 1. In your app's Extensibility Configurations, add the following:
@@ -109,7 +109,7 @@ You must provide the plugin configuration file as settings in the Service Studio
 
 1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each environment. For details on pointing the mobile application to the correct configuration files in each environment, see [Override Mobile Extensibility Configurations](../../../managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md).
 
-    ![Resource settings for Firebase](images/firebase-multiple-configurations-ss.png)
+    ![Screenshot illustrating the process of adding multiple Firebase configuration files for different environments in Service Studio](images/firebase-multiple-configurations-ss.png "Multiple Firebase Configurations in Service Studio")
 
 ### Additional setup for the Dynamic Links plugin
 
@@ -133,7 +133,7 @@ The Firebase Dynamic Links Plugin requires the following additional setup steps 
 
 Starting with iOS 14.5, apps on the App Store must request the user’s permission to collect tracking data through the AppTrackingTransparency framework. For more information, see [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency).
 
-![Screenshot of RequestTrackingAuthorization client action parameters on Service Studio](images/firebase-request-tracking-authorization.png)
+![Image showing the Firebase request tracking authorization prompt in a mobile application](images/firebase-request-tracking-authorization.png "Firebase Request Tracking Authorization")
 
 To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin. Apple recommends triggering this prompt as soon as the app loads.
 If you want to present an alert before the iOS tracking permission dialog, enable the parameter **ShowInformation** on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.

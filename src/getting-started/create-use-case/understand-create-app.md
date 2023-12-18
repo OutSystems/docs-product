@@ -30,7 +30,7 @@ For now, use-case specific tutorials and accelerators are available only for the
 
 </div>
 
-![Process overview for creating your use case app](images/follow-tutorial-diag.png)
+![Diagram illustrating the steps to follow an OutSystems tutorial for creating an app](images/follow-tutorial-diag.png "Follow Tutorial Diagram")
 
 This article explains concepts to help you understand the application use case tutorials and how you create your own app.
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Section Index UI Pattern to organize the content of a screen, enabling quick navigation within the page.
 
-![](<images/sectionindex-7-ss.png>)
+![Screenshot of the Section Index widget in the Service Studio environment.](images/sectionindex-7-ss.png "Section Index Widget in Service Studio")
 
 **How to use the Section Index UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
     The Section Index widget is displayed.
 
-    ![](<images/sectionindex-8-ss.png>)
+    ![Illustration of adding the Section Index widget dependency in Service Studio.](images/sectionindex-8-ss.png "Adding Section Index Widget Dependency")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,27 +42,27 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
     In this example, we drag the Section Index widget into a column. 
 
-    ![](<images/sectionindex-2-ss.png>)
+    ![Example of dragging the Section Index widget into a column in the main content area.](images/sectionindex-2-ss.png "Dragging Section Index Widget into Main Content Area")
 
 1. In the Toolbox, search for and drag the Section widget into the Main Content area of your application's screen. Add as many sections as you require for your app.
 
     In this example, we drag 4 Section widgets [into a column](../../../../../develop/ui/patterns/web/structure/columns.md). Each section widget contains Title, Actions, and Content placeholders. 
 
-    ![](<images/sectionindex-5-ss.png>)
+    ![Screenshot showing the addition of multiple Section widgets into a column.](images/sectionindex-5-ss.png "Adding Multiple Section Widgets")
 
 1. Add the relevant content to Section widget's **Title** and **Content** placeholders.
 
     In this example, we add employee names to the **Title** placeholders, and Card Sectioned widgets with some text and images to the **Content** placeholder.
 
-    ![](<images/sectionindex-1-ss.png>)
+    ![Example of adding employee names and Card Sectioned widgets to the Title and Content placeholders of a Section widget.](images/sectionindex-1-ss.png "Adding Content to Section Widget Placeholders")
 
     A link is automatically created to every section you have on the screen. The name of the link is based on the text you entered in the **Title** placeholder of each section. In the following example, the links are set to the employee names we entered in step 2.
 
-    ![](<images/sectionindex-3-ss.png>)
+    ![Screenshot displaying automatically created links to sections named after employee titles.](images/sectionindex-3-ss.png "Automatically Created Links to Sections")
 
 1. On the **Properties** tab, you can customize the Section Index's look and feel by setting any of the optional properties.
 
-    ![](<images/sectionindex-6-ss.png>)
+    ![Image showing the customization options for the Section Index's properties in the Properties tab.](images/sectionindex-6-ss.png "Customizing Section Index Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -48,7 +48,7 @@ In an OutSystems Cloud infrastructure, contact OutSystems support and request to
 In a self-managed infrastructure, you can switch the order of two environments in the infrastructure using the **Switch Order** icon placed between those environments.
 
 
-![](images/manage-infrastructure-1.png)
+![Screenshot of the LifeTime Infrastructure Management Console showing options to manage OutSystems environments](images/manage-infrastructure-1.png "LifeTime Infrastructure Management Console")
 
 ## Manage an environment
 

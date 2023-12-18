@@ -27,27 +27,27 @@ You can provide a feedback message to the end user by using the Message logic to
 
     In this example, we enter ``Invalid password`` in the **Message** property (the message displayed to the user) and select **Error** as the message type.  
 
-    ![Drag message logic tool to client action flow](images/message-class-1-ss.png)
+    ![Screenshot showing the configuration of the Message logic tool with 'Invalid password' as the message and 'Error' as the type](images/message-class-1-ss.png "Message Logic Tool Configuration")
 
-    ![Invalid password message](images/message-class-6-ss.png)
+    ![Screenshot of the Message logic tool placed within a Client Action flow in Service Studio](images/message-class-6-ss.png "Message Logic Tool on Client Action Flow")
 
 The available predefined message types are as follows:
 
 * Info
 
-    ![Info message example](images/message-class-2-ss.png)
+    ![Example of an 'Info' type feedback message in Service Studio](images/message-class-2-ss.png "Info Message Type")
 
 * Success
 
-    ![Success message example](images/message-class-3-ss.png)
+    ![Example of a 'Success' type feedback message in Service Studio](images/message-class-3-ss.png "Success Message Type")
 
 * Warning
 
-    ![Warning message example](images/message-class-4-ss.png)
+    ![Example of a 'Warning' type feedback message in Service Studio](images/message-class-4-ss.png "Warning Message Type")
 
 * Error
 
-    ![Error message example](images/message-class-5-ss.png)
+    ![Example of an 'Error' type feedback message in Service Studio](images/message-class-5-ss.png "Error Message Type")
 
 
 ## Properties

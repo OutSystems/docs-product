@@ -19,7 +19,7 @@ The Alert UI pattern lets you provide important information on the screen to get
 * The ARIA role is **alert** when you set the **AlertType** property to **Entities.Alert.Error** or **Entities.Alert.Warning**.
 * The ARIA role is **status** when you set the **AlertType** property to **Entities.Alert.Success** or **Entities.Alert.Info**.
 
-    ![Alert Pattern](images/alert-pattern-ss.png)
+    ![Screenshot showing the Alert pattern with different ARIA roles in the OutSystems UI.](images/alert-pattern-ss.png "Alert Pattern Example")
 
 The Alert pattern further supports changing the ARIA role with the **SetAccessibilityRole** action. Here's an example of how to set the ARIA role "status".
 
@@ -30,7 +30,7 @@ The Alert pattern further supports changing the ARIA role with the **SetAccessib
 
 When toggling the visibility of the Alert, you must update the **aria-hidden** attribute to guarantee the alert complies with the Accessibility guidelines. You can do this by using the **SetAriaHidden** client action.
 
-![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png)
+![Screenshot of the OutSystems logic flow demonstrating how to set the ARIA role to 'status' for an Alert pattern.](images/set-role-alert-pattern-ss.png "Setting ARIA Role for Alert Pattern")
 
 ## MasterDetail pattern
 
@@ -55,12 +55,12 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
     **ClickedItemId** - to identify the Id of the clicked ListItem
 
-    ![Setting the master detail list item on click action](images/master-detail-listitemonclick-ss.png)
+    ![Screenshot illustrating the configuration of the OnClick action for a list item in the Master Detail pattern.](images/master-detail-listitemonclick-ss.png "Master Detail List Item OnClick Action")
 
 1. On the **Properties** tab, add a **tabindex** attribute and set it to "**0**”.
 1. Create an **aria-label** attribute, and add a descriptive text about the action after the aggregate, for example, **YourAggregate + " list item, click to open the detail".** You should also add an **onkeypress** event to  ensure keyboard navigation on the list item.
 
-    ![Master detail aria label aggregate](images/master-detail-aria-label-aggregate-ss.png)
+    ![Screenshot showing how to add an aria-label attribute with descriptive text to a list item in the Master Detail UI pattern.](images/master-detail-aria-label-aggregate-ss.png "Master Detail ARIA Label Configuration")
 
 1. On the **ListItemOnClick** action, add the **MasterDetailSetContentFocus** action. You need this for accessibility compliance, as it allows to change the focus between the detail and the next **listitem**, with parameters mapped from the **ListItemOnClick**:
 
@@ -68,10 +68,10 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
     1. **TriggerItem** (text) - Id of the clicked item.
 
-    ![Setting the Master detail set content focus action](images/master-detail-setcontentfocus-ss.png)
+    ![Screenshot depicting the addition of the MasterDetailSetContentFocus action in the ListItemOnClick logic flow for accessibility compliance.](images/master-detail-setcontentfocus-ss.png "Master Detail Set Content Focus Action")
 
 ### Demo
 
 OutSystems recommends that you create a sample screen from the **Master Detail** Screen Template and check the accessibility settings in a working example.
 
-![Master detail example](images/master-detail-example-ss.png)
+![Screenshot of a sample screen using the Master Detail pattern to demonstrate the accessibility settings in a working example.](images/master-detail-example-ss.png "Master Detail Pattern Example")

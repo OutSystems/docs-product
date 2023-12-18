@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/progresscircle-3-diag.png?width=650>)
+![Diagram illustrating the layout and classes of the Progress Circle UI pattern for Traditional Web Apps](images/progresscircle-3-diag.png "Progress Circle Layout Diagram")
 
 ## CSS selectors
 
@@ -41,11 +41,11 @@ Applies only to Traditional Web Apps.
 
     In this example, 3 colors represent different states of progress. Set the value of the ProgressColor parameter to `If(Progress <= 50, Entities.Color.Red, If( Progress > 50 and Progress < 75,  Entities.Color.Yellow ,  Entities.Color.Green))`.
     
-    ![](<images/progresscircle-4-ss.png>)
+    ![Screenshot showing how to set the Progress Circle color based on value conditions in Traditional Web Apps](images/progresscircle-4-ss.png "Progress Circle Color Change Example")
 
 1. Publish and test.
 
-    ![](<images/progresscircle-5-ss.gif>)
+    ![Animated GIF demonstrating the color change in the Progress Circle based on different value conditions](images/progresscircle-5-ss.gif "Progress Circle Color Change Demonstration")
 
 ### Remove the round corners of the Progress Circle
 
@@ -57,10 +57,10 @@ To remove the round corners, use this CSS snippet.
 }
 ```
 
-![](<images/progresscircle-6-ss.png>)
+![Screenshot displaying the Progress Circle with square corners after CSS modification to remove round corners](images/progresscircle-6-ss.png "Progress Circle Without Round Corners")
 
 ### Change the trail thickness of the Progress Circle
 
 To change the trail thickness, set the AdvancedFormat property to `{trailWidth: 1}`.
 
-![](<images/progresscircle-7-ss.png>)
+![Screenshot showing the Progress Circle with a customized trail thickness using the AdvancedFormat property](images/progresscircle-7-ss.png "Progress Circle Trail Thickness Adjustment")

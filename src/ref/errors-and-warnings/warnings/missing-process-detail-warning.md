@@ -4,8 +4,8 @@ guid: bc60f1be-f48a-4645-90f2-f2bda185d36a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2804:3232
+summary: The article explains how to set the Process Detail property in OutSystems to ensure task details display correctly in the Taskbox
 ---
-
 # Missing Process Detail Warning
 
 Message
@@ -14,7 +14,7 @@ Message
 Cause
 :   The text displayed under the link of an activity in the Taskbox is obtained from the Detail property of a Human Activity of that activity.
 
-    ![](images/missing-process-detail-warning-1.png)
+    ![Screenshot showing an example of a missing process detail warning in the Taskbox](images/missing-process-detail-warning-1.png "Missing Process Detail Warning Example")
   
     However, if a Human Activity as no detail specified, OutSystems tries to obtain it from the Process, as follows:
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and Classes
 
-![](<images/video-image-1.png>)
+![Screenshot showing the layout and classes of the Video UI Pattern in a Traditional Web App](images/video-image-1.png "Video UI Pattern Layout")
 
 ## Advanced Use Case
 
@@ -26,26 +26,26 @@ Applies only to Traditional Web Apps.
 
 1. Set a name to the Video pattern.
 
-    ![](<images/video-image-4.png>)
+    ![Image illustrating how to set a name to the Video pattern in the application](images/video-image-4.png "Setting Name to Video Pattern")
 
 1. Create Play and Pause actions on the screen.
 
-    ![](<images/video-image-5.png>)
+    ![Image depicting the creation of Play and Pause actions on the screen for the Video pattern](images/video-image-5.png "Creating Play and Pause Actions")
 
 1. In the Logic tab, click on the OutSystems UI Web to go to the Video Folder.
 
-    ![](<images/video-image-6.png>)
+    ![Image showing how to access the Video Folder in the Logic tab of OutSystems UI Web](images/video-image-6.png "Accessing Video Folder in Logic Tab")
 
 1. Drag the PlayVideo and PauseVideo actions inside the Play and Pause actions you created.
 
-    ![](<images/video-image-7.png>)
+    ![Image demonstrating how to drag the PlayVideo and PauseVideo actions into the created Play and Pause actions](images/video-image-7.png "Dragging Play and Pause Actions")
 
 1. For each server action, set the WidgetId parameter to the name of the Video pattern.
 
-    ![](<images/video-image-8.png>)
+    ![Image showing the process of setting the WidgetId parameter to the Video pattern's name for server actions](images/video-image-8.png "Setting WidgetId Parameter")
 
 1. Create the elements you want to act as buttons. You can also wrap icons around containers and set the OnClick to the Play and Pause actions.
 
 1. Publish and test.
 
-    ![](<images/video-gif-1.gif>)
+    ![Animated GIF demonstrating the interaction with custom Play and Pause buttons in the Video UI Pattern](images/video-gif-1.gif "Video Pattern Interaction Demonstration")

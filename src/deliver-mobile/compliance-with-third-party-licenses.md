@@ -29,7 +29,7 @@ If your app is not using the **OutSystems UI** module, you must add that depende
 1. Go to **Manage Dependencies…**. 
 1. Find the module **OutSystems UI** and add the block **Licenses** from the flow **Licenses**.   
   
-    ![](images/license-block-in-references-window.png)  
+    ![Screenshot showing the OutSystems UI License block within the Manage Dependencies window](images/license-block-in-references-window.png "OutSystems UI License Block in Manage Dependencies Window")  
 
 Then, you will be able to use the block **Licenses** in your app:
 
@@ -37,7 +37,7 @@ Then, you will be able to use the block **Licenses** in your app:
 1. Expand the module **OutSystems UI** and the flow **Licenses**.
 1. Drag and drop the block **Licenses** to the Content placeholder of your new screen.   
   
-    ![](images/drad-drop-licenses-block-ss.png)  
+    ![Step-by-step process of dragging and dropping the Licenses block into a new screen's content placeholder](images/drad-drop-licenses-block-ss.png "Drag and Drop Licenses Block")  
 
 Make the screen available in your app, so the end users can access the licensing information.
 
@@ -50,7 +50,7 @@ If you are using additional plug-ins or components in your app with the same lic
 
 The plug-ins supported by OutSystems, which you can install from OutSystems Forge, provide you a block named License with the text of the licenses and copyright notices that you must include in your mobile app.
 
-![](images/license-block-ss.png)
+![Example of an OutSystems plug-in License block ready to be included in the app](images/license-block-ss.png "OutSystems Plug-in License Block")
 
 You can add the licensing information of an OutSystems plug-in by doing the following:
 
@@ -58,7 +58,7 @@ You can add the licensing information of an OutSystems plug-in by doing the foll
 1. Within the **Licenses\Licenses** block of the **OutSystems UI** module, locate the placeholder **CustomLicenses**. 
 1. Drag and drop the block **License** from the OutSystems plug-in to the placeholder **CustomLicenses**. 
 
-    ![](images/customlicenses-placeholder-ss.png)
+    ![Screenshot showing the CustomLicenses placeholder within the Licenses block of the OutSystems UI module](images/customlicenses-placeholder-ss.png "Custom Licenses Placeholder")
 
 ### Other Plug-ins or Components
 

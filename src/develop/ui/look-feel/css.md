@@ -26,7 +26,7 @@ You can specify static CSS classes of an element in the properties pane by using
 * In Mobile and Reactive Web apps, insert the class names with quotes and separated by a space (`"bold red"`)
 * In Traditional Web apps, insert the class names without quotes and separated by a space (`bold red`)
 
-![CSS specifies in the Style Classes property](images/css-style-properties.png?width=630)
+![Screenshot of the CSS Style Properties pane in OutSystems Service Studio](images/css-style-properties.png "CSS Style Properties Pane")
 
 To specify the CSS classes dynamically use an **Expression**:
 
@@ -39,7 +39,7 @@ You can edit the CSS code in the Style Sheet Editor. Open the editor by double-c
 
 You can also open the Style Sheet Editor by clicking the **CSS** button in the Main Editor toolbar. Select the tab with the app name and define or edit the style to make it available to all elements. Alternatively, select the tab with the name of the currently selected screen or block to narrow the scope of the style to that screen or block.
 
-![CSS of the Theme](images/css-style-sheet-editor.png?width=600)
+![Image showing the CSS Style Sheet Editor interface in OutSystems](images/css-style-sheet-editor.png "CSS Style Sheet Editor")
 
 ## CSS specificity
 
@@ -57,11 +57,11 @@ The styles have different priorities and the order Service Studio imports the st
 
 Define your inline CSS in the **Attributes** section of the **Properties** tab. Add the `style` attribute and then enter the CSS rules with quotes (for example, `"background-color: yellow;"`).
 
-![The style property with quotes around CSS](images/css-extended-properties.png)
+![Example of defining inline CSS in the Attributes section of the Properties tab in OutSystems](images/css-extended-properties.png "CSS Extended Properties")
 
 In Traditional Web you can create inline CSS by adding `style` in the **Extended Properties**.
 
-![Inline CSS in Traditional Web app](images/css-properties.png)
+![Illustration of CSS properties usage in Traditional Web app within OutSystems](images/css-properties.png "CSS Properties")
 
 ## OutSystems grid
 

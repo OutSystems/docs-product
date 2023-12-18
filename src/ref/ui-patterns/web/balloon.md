@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/balloon-image-2.png>)
+![Screenshot showing the layout and classes of the Balloon UI Pattern in a traditional web application](images/balloon-image-2.png "Balloon UI Pattern Layout")
 
 ## Events
 
@@ -42,8 +42,8 @@ Here are some more advanced use-cases of the widget.
 
 1. Set the AdvancedFormat parameter to `{ animation: 'perspective' }`.
 
-    ![](<images/balloon-gif-1.gif>)
+    ![Animated example of the Balloon UI Pattern with default animation in a traditional web application](images/balloon-gif-1.gif "Balloon UI Pattern Animation Example")
 
 Changed animation:
 
-![](<images/balloon-gif-2.gif>)
+![Animated example of the Balloon UI Pattern with perspective animation in a traditional web application](images/balloon-gif-2.gif "Balloon UI Pattern Changed Animation")

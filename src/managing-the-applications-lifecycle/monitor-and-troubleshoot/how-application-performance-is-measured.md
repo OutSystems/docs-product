@@ -24,7 +24,7 @@ When end users are using an application, their actions send requests to a server
 
 The following picture shows the request-response cycle and the points where the Platform collects metrics.
 
-![](images/how-application-performance-is-measured-diag.png)
+![Diagram illustrating the request-response cycle and points where OutSystems Platform collects metrics, including client request, server processing, and response rendering.](images/how-application-performance-is-measured-diag.png "Application Performance Measurement Cycle")
 
 1. The client sends a request to the server, a request triggered by an end user action in the application.
 1. The request arrives to the server.

@@ -26,39 +26,39 @@ You can use the Overflow Menu pattern to show additional options when there is a
 
     The Table widget is displayed.
 
-    ![Table widget](<images/overflow-table-widget-ss.png>)
+    ![Screenshot of the Table widget in OutSystems Service Studio](images/overflow-table-widget-ss.png "Table Widget in Service Studio")
 
 1. From the Toolbox, drag the Table widget into the Main Content area of your application's screen.
 
-    ![Drag the Table widget to the screen](<images/overflow-drag-widget-ss.png>)
+    ![Dragging the Table widget into the Main Content area of an application's screen in Service Studio](images/overflow-drag-widget-ss.png "Dragging Table Widget to Screen")
 
 1. Select and right-click your screen name, and select **Fetch Data from Database**.
 
-    ![Drag the Table widget to the screen](<images/overflow-fetchdata-ss.png>)
+    ![Selecting the 'Fetch Data from Database' option by right-clicking the screen name in Service Studio](images/overflow-fetchdata-ss.png "Fetch Data from Database Option")
 
 1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant database entity and click **Select**.
 
     In this example, the **Sample_Employee** entity is selected.
 
-    ![Add the SAmple Employee database entity](<images/overflow-sampleemployee-ss.png>)
+    ![Adding the Sample Employee database entity to the screen in Service Studio](images/overflow-sampleemployee-ss.png "Adding Sample Employee Entity")
 
     The **GetEmployees** aggregate is automatically created.
 
-    ![The Get Employee aggregate is created](<images/overflow-getemployees-ss.png>)
+    ![Automatic creation of the GetEmployees aggregate after selecting the Sample Employee entity](images/overflow-getemployees-ss.png "GetEmployees Aggregate Created")
 
 1. Drag the **GetEmployees** aggregate into the table widget.
 
-    ![Drag the Get Employee aggregate into the table](<images/overflow-dragaggregate-ss.png>)
+    ![Dragging the GetEmployees aggregate into the Table widget in Service Studio](images/overflow-dragaggregate-ss.png "Dragging GetEmployees Aggregate into Table")
 
 1. Right-click the last header cell and select **Add New Column Right**.
 
-    ![Add a new column to the table](<images/overflow-addcolumn-ss.png>)
+    ![Adding a new column to the right of the table by right-clicking the last header cell in Service Studio](images/overflow-addcolumn-ss.png "Adding New Column to Table")
 
 1. Go back to the Toolbox and search for the **Overflow Menu**.
 
     The **Overflow Menu** widget is displayed.
 
-    ![Search for the Overflow Menu widget](<images/overflow-overflowwidget-ss.png>)
+    ![Display of the Overflow Menu widget in the Toolbox of Service Studio](images/overflow-overflowwidget-ss.png "Overflow Menu Widget in Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is set. To make the widget available in your app:
 
@@ -72,45 +72,45 @@ You can use the Overflow Menu pattern to show additional options when there is a
 
 1. From the Toolbox, drag the **Overflow Menu** widget into the **Row Cell** of the row you just created.
 
-    ![Drag Overflow widget into the row cell](<images/overflow-dragoverflow-ss.png>)
+    ![Dragging the Overflow Menu widget into the new row cell of the table in Service Studio](images/overflow-dragoverflow-ss.png "Dragging Overflow Menu Widget into Row Cell")
 
     By default, the Overflow Menu widget contains a **TriggerContent** placeholder with an **Icon** and a **Menu** placeholder that contains a **Title** and five **Links**. You can add/remove as many items to the **Menu** placeholder as required. In this example, only one link is kept.
 
 1. Remove all the elements inside the **Menu** placeholder, except one of the links.
 
-    ![Remove unnecessary  elements inside the Menu placeholder](<images/overflow-navigation-ss.png>)
+    ![Removing unnecessary elements inside the Menu placeholder of the Overflow Menu widget in Service Studio](images/overflow-navigation-ss.png "Menu Placeholder Navigation")
 
     In this example, this link is used to remove the table row.
 
 1. To add the **Trash** icon to the link, click on the icon inside the **Link** element, and select the **Trash** icon. 
 
-    ![Add the trash icon to the link](<images/overflow-trash-ss.png>)
+    ![Adding the Trash icon to the link inside the Overflow Menu widget in Service Studio](images/overflow-trash-ss.png "Adding Trash Icon to Link")
 
 1. Replace the text on the link to **Remove Employee**. 
 
-    ![Add the Remove Employee text to the link](<images/overflow-removeemployee-ss.png>)
+    ![Replacing the link text with 'Remove Employee' in the Overflow Menu widget in Service Studio](images/overflow-removeemployee-ss.png "Remove Employee Link Text")
 
 1. To use this link to remove a row from the table, click on the **Link** widget and, on the OnClick event, select **New Client Action**.
 
-    ![Remove unnecessary  elements inside the Menu placeholder](<images/overflow-clientaction-ss.png>)
+    ![Creating a new client action for the link's OnClick event in the Overflow Menu widget in Service Studio](images/overflow-clientaction-ss.png "New Client Action for Link")
 
 1. Add the relevant logic to the client action.
 
     For this example, click on the plus button and search for **ListRemove** and select **Call ListRemove**.
 
-    ![Add the client action logic](<images/overflow-logic-ss.png>)
+    ![Adding logic to the client action by selecting Call ListRemove in Service Studio](images/overflow-logic-ss.png "Adding Client Action Logic")
 
 1. Click **ListRemove** and on the **Position** property, add the following expression: ``GetEmployees.List.CurrentRowNumber``.
 
-    ![Add the expression to the position property](<images/overflow-removelist-ss.png>)
+    ![Setting the Position property with an expression for the ListRemove action in Service Studio](images/overflow-removelist-ss.png "Setting Position Property Expression")
 
 1. You can configure the Overflow Menu by selecting the pattern, and on the Properties tab, set the relevant properties.
 
-    ![Set the properties](<images/overflow-properties-ss.png>)
+    ![Configuring the properties of the Overflow Menu pattern in Service Studio](images/overflow-properties-ss.png "Overflow Menu Properties Configuration")
 
 After following these steps and publishing the module, you can test the pattern in your app.  The results from this example should look something like the following:
 
-![Result](<images/overflow-result.png>)
+![Resulting user interface showing the Overflow Menu implementation in a published application](images/overflow-result.png "Overflow Menu Implementation Result")
 ## Properties
 
 | Property| Description |

@@ -18,7 +18,7 @@ Edit expressions with the expression editor in Service Studio. Launch the expres
 
 The following are the parts of the expression editor, with notes on how you can use them.
 
-![Expression editor UI reference](images/expression-editor-ss.png?width=700)
+![Screenshot of the expression editor interface in Service Studio showing the expression field, toolbar, scope pane, description pane, and expression status](images/expression-editor-ss.png "Expression Editor in Service Studio")
 
 Expression field
 :    Edit your expressions in the expression field (1). Use **Ctrl+Space** to autocomplete a word or show a list of suggestions to use in the expression.

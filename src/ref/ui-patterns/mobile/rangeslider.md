@@ -34,7 +34,7 @@ These rules don’t apply to Patterns based on external libraries/providers, as 
 
 In the diagram below, gray denotes the classes added by OutSystems UI and green denotes the classes added by the provider.
 
-![Structure diagram](images/rangeslider-14-diag.png)
+![Diagram illustrating the structure of the Range Slider with OutSystems UI and provider classes](images/rangeslider-14-diag.png "Range Slider Structure Diagram")
 
 ### Modifiers 
 
@@ -80,7 +80,7 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 
 1. Set the **WidgetId** property of the action to the **RangeSliderId** returned from the initialized event.
 
-    ![Set the onValueChange event to trigger OnDragEnd](images/rangeslider-onenddrag-ss.png)
+    ![Screenshot showing how to set the onValueChange event to trigger on DragEnd for the Range Slider](images/rangeslider-onenddrag-ss.png "Set Range Slider OnDragEnd Event")
 
     By using this action, the change events is only triggered when the user releases the slider.
 
@@ -101,7 +101,7 @@ On the JavaScript node, paste the following code:
 
     **Note:** For the **CustomFormat**, add the desired decimal numbers. In this example we changed it to 2.
 
-![Set the code on the JavaScript node](images/rangeslider-format-ss.png)
+![Screenshot demonstrating how to change the decimal format on the tooltip of the Range Slider](images/rangeslider-format-ss.png "Change Decimal Format on Range Slider Tooltip")
 
 
 

@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&n
 
 Handling complex search pages with multiple search fields where most of them are not used can be highly challenging. Aggregates can handle the complexity of complex search pages but at the cost of performance. This article explains the use of Advanced SQL and server actions for handling complex search pages.
 
-![](images/complex-search-ss.png)
+![Screenshot of a complex search page with multiple search fields](images/complex-search-ss.png "Complex Search Page Screenshot")
 
 
 ## Steps to handle complicated search pages
@@ -36,7 +36,7 @@ OutSystems recommends that you use a Server Action instead of an Aggregate. Eith
 
 You can use Server Action to write queries based on the search fields. 
 
-![](images/search-with-aggrigate-ss.png)
+![Screenshot showing the use of aggregates in search functionality](images/search-with-aggrigate-ss.png "Search with Aggregate Screenshot")
 
 The input for the server action is a structure containing all the search fields. The output is a  list of a structure designed for your purpose, such as the columns of a grid.
 
@@ -44,7 +44,7 @@ The switch would be something like `IF @Search1 = Null and @Search2 = Null and .
 
 Using server action is the best option for improved performance, but this approach requires additional work and experimentation. You can add common search combinations as you find them, and the otherwise value would be the big complex query that handles all possibilities.
 
-![](images/search-with-adSQL-ss.png)
+![Screenshot illustrating the use of Advanced SQL in search operations](images/search-with-adSQL-ss.png "Search with Advanced SQL Screenshot")
 
 If you use Advanced SQL, then you must handle paging manually. Manual-coded paging improves performance, but it is slightly more complicated. 
 

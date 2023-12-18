@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 The **SQL** element lets you run, test, and review SQL queries in your apps. SQL is an all-purpose tool for developers who know SQL language. For a more straightforward and optimized data manipulation use **Aggregates**.
 
-![SQL in a logic flow](images/sql-in-flow-ss.png)
+![Screenshot of SQL element being used in an action flow within OutSystems development environment](images/sql-in-flow-ss.png "SQL Element in Action Flow")
 
 
 ## Accessing data
@@ -80,7 +80,7 @@ You can test your work by clicking the `TEST` button located at the bottom of th
 
 1. Click **TEST**.
 
-![Test Your SQL Query](images/test-sql-ss.gif)
+![Animated GIF showing the process of testing a SQL query in the OutSystems platform](images/test-sql-ss.gif "Testing SQL Query in OutSystems")
 
 ## Convert an Aggregate to SQL
 
@@ -112,7 +112,7 @@ To convert an existing Aggregate to a SQL element follow these steps:
 
 1. Click **PROCEED**.
 
-![Convert an Aggregate to SQL](images/convert-to-sql-ss.gif)
+![Animated GIF demonstrating how to convert an Aggregate to a SQL element in OutSystems](images/convert-to-sql-ss.gif "Converting Aggregate to SQL Element")
 
 Your action flow now includes a **SQL** element based on the original Aggregate. Service Studio disables and keeps the original Aggregate in the action flow. After you validate the query results of the new **SQL** element, delete the Aggregate.
 

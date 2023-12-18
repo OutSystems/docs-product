@@ -32,7 +32,7 @@ To sustain high scalability, the OutSystems **distributed architecture** support
 
 The OutSystems distributed architecture consists of a deployment server that performs all code generation, configuration, and version updates as well as horizontal scalability that enables the addition of as many front-end servers as needed, all of which are accessed by end users via a load balancer. The deployment controller server ensures that applications are consistently installed across all front end servers.
 
-![OutSystems distributed architecture](images/ha-scalability-distributed-arch-diag.png)
+![Diagram illustrating the distributed architecture of OutSystems for high availability and scalability with load balancers and front-end servers.](images/ha-scalability-distributed-arch-diag.png "OutSystems Distributed Architecture Diagram")
 
 A **load balancer** automatically distributes incoming application traffic across multiple front-end servers to spread the request load. The load balancer also detects any unhealthy front-end servers in the production environment and automatically reroute traffic to healthy instances until health is restored, increasing the fault tolerance of all applications. OutSystems stores mobile and web user sessions in the session database, allowing multiple requests from the same user to be handled by any front-end server in a farm environment. For improved performance and operation, the session database elements are configured on a dedicated database schema. OutSystems uses the native session management services of the application server stack.
 
@@ -46,7 +46,7 @@ Self-managed and OutSystems Cloud installations allow you to **scale vertically*
 * Temporarily increase the computing power of front-ends to finish processing computation-intensive jobs
 * Enhance the processing power of the database as an application portfolio grows to handle an increased load
 
-![vertical scaling](images/ha-scalability-vertical-scaling-diag.png)
+![Diagram showing vertical scaling in OutSystems infrastructure by increasing computing power within a single environment.](images/ha-scalability-vertical-scaling-diag.png "Vertical Scaling Diagram")
 
 
 ## Horizontal scaling
@@ -59,7 +59,7 @@ OutSystems also allows you to **scale horizontally** (in any hosting option) by 
 * Increased volume of batch processing
 * Increased data volume or number of transactions (database clustering)
 
-![horizontal scaling](images/ha-scalability-horizontal-scaling-diag.png)
+![Diagram depicting horizontal scaling in OutSystems infrastructure by adding more front-end servers to handle increased load.](images/ha-scalability-horizontal-scaling-diag.png "Horizontal Scaling Diagram")
 
 ## Common use cases
 
@@ -89,11 +89,11 @@ High availability solutions can be divided into two basic designs:
 
 **Localized high availability design** prevents localized hazardous events. By having redundancy, you can balance your load to respond to any existing events.
 
-![localized high availability](images/ha-scalability-localized-diag.png)
+![Diagram representing a localized high availability design in OutSystems infrastructure with load balancing and redundancy.](images/ha-scalability-localized-diag.png "Localized High Availability Design Diagram")
 
 **Geographic high availability design** prevents geographic system events. By having redundancy, both at the data center level and within the data center, you can manage geographical system events.
 
-![geographic high availability](images/ha-scalability-geographic-diag.png)
+![Diagram illustrating a geographic high availability design in OutSystems infrastructure with data center level redundancy.](images/ha-scalability-geographic-diag.png "Geographic High Availability Design Diagram")
 
 To scale horizontally in the OutSystems Cloud, OutSystems deploys additional front-end servers in a farm configuration and automatically syncs the applications of the environment to the new front-end server. The OutSystems Cloud high-availability option allows you to deploy front-end servers across different AWS Availability Zones. It also allows you to set up a database replica in a different availability zone than the primary database.
 
@@ -106,7 +106,7 @@ An infrastructure is composed of several environments, and you can decide to hav
 
 The following diagram depicts all the layers in the scope of a single environment.
 
-![high availability infrastructure](images/ha-scalability-infrastructure-diag.png)
+![Comprehensive diagram outlining the different layers of a high availability infrastructure in an OutSystems environment.](images/ha-scalability-infrastructure-diag.png "High Availability Infrastructure Overview Diagram")
 
 For more information about the layers and components outlined in this graphic, see the corresponding App Access, Application Delivery, Platform Core, and Data Access sections below. 
 
@@ -264,7 +264,7 @@ Typically, two scenarios are considered in this process:
 
 OutSystems recommend this setup as the provisioning of new front-end servers is **up to twice as quick** as when OutSystems is not installed. In this scenario, the base VM image already has OutSystems Platform Server and the development tools (Service Studio and Integration Studio) installed.
 
-![VM with OutSystems image](images/ha-scalability-auto_1.png?width=600)
+![Diagram showing the elasticity setup process for OutSystems with the Platform Server pre-installed on the base VM image.](images/ha-scalability-auto_1.png "Elasticity Setup with OutSystems Installed")
 
 For **VM provisioning**, the OutSystems image must be identical to the running front-end servers of the environment in regards to hardware, operating system, and software versions (including the Platform Server version). This ensures that all requirements and prerequisites are already met.
 
@@ -274,7 +274,7 @@ To create the PowerShell script to **associate the server to the environment**, 
 
 In this scenario, the base VM image only carries an installation of Windows Server and doesn’t have the OutSystems Platform Server installed. Compared to scenario 1, it brings the overhead of installing the Platform Server as well as ensuring all the prerequisites.
 
-![VM with OutSystems image](images/ha-scalability-auto_2.png?width=900)
+![Diagram illustrating the elasticity setup process for OutSystems with only Windows Server installed on the base VM image.](images/ha-scalability-auto_2.png "Elasticity Setup with Windows Server Only")
 
 For **VM provisioning**, you’ll need to ensure the following:
 
@@ -292,7 +292,7 @@ The [OutSystems solution template for Microsoft Azure Marketplace](https://succe
 
 The deployed OutSystems infrastructure is summarized in the following diagram:
 
-![Azure Marketplace infrastructure](images/outsystems-infrastructure.png)
+![Diagram of the OutSystems infrastructure deployed on Microsoft Azure, ready for horizontal scaling with Azure scale sets.](images/outsystems-infrastructure.png "OutSystems Infrastructure on Azure")
 
 Production environments, when deployed in farm mode, are ready for **horizontal scaling** with [Azure scale sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview). This scaling operation is exclusively done in the Azure Portal, so you don’t have to make any changes in OutSystems to register the new front-end servers. This allows your farm to distribute the workload evenly across the scale set servers. 
 

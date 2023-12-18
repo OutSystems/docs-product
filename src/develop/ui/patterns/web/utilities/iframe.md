@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Iframe UI Pattern to display information from other apps, on your screen, in bite-size previews. For more information about Iframes, see [HTML Iframes](https://www.w3schools.com/html/html_iframe.asp).
 
-![](<images/iframe-8.png>)
+![Preview of Iframe UI Pattern displaying information from another app](images/iframe-8.png "Iframe UI Pattern Preview")
 
 **How to use the Iframe UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Iframe UI Pattern to display information from other apps, on you
 
     The Iframe widget is displayed.
 
-    ![](<images/iframe-6-ss.png>)
+    ![Service Studio interface showing the Iframe widget in the Toolbox](images/iframe-6-ss.png "Iframe Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,13 +40,13 @@ You can use the Iframe UI Pattern to display information from other apps, on you
 
 1. From the Toolbox, drag the Iframe widget into the Main Content area of your application's screen.
 
-    ![](<images/iframe-7-ss.png>)
+    ![Process of dragging the Iframe widget into the main content area of an application's screen in Service Studio](images/iframe-7-ss.png "Dragging Iframe Widget into Main Content Area")
 
 1. On the **Properties** tab, set the relevant properties, for example, the source URL, its title, as well as its width and height. In this example, we use the Wikipedia Website.
 
     Note: The target destination must have the necessary security permissions that allow you to embed their website in your app.
 
-    ![](<images/iframe-5-ss.png>)
+    ![Properties tab in Service Studio with fields for setting the source URL, title, width, and height of an Iframe widget](images/iframe-5-ss.png "Setting Properties for Iframe Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

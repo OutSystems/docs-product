@@ -4,8 +4,8 @@ guid: fa3cf5ad-5e7b-4fdd-acc5-7b3f6c43791e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The Resource Editor in Integration Studio allows editing of resource properties and defines how resources are stored when an extension's module is published
 ---
-
 # Resource Editor
 
 The Resource Editor allows you to edit the properties of a resource that belongs to your extension. This editor is displayed when a resource is selected in the [Resources tree](<../resources-tree.md>) or in the [Multi-tab Editor](<../multi-tab-editors.md>).
@@ -16,22 +16,22 @@ The value of the Deploy Action property indicates where the resource is stored w
 
 |Deploy Action|Description|Files extensions|
 |--- |--- |--- |
-|Copy to Binaries directory|The resources are copied to the Platform Server where the module is published. The files are stored in the `bin2` directory, under the module directory.<br/>![](images/note.gif) Files stored in this directory are not accessible through the Internet browser.|dll, config, manifest, jar|
+|Copy to Binaries directory|The resources are copied to the Platform Server where the module is published. The files are stored in the `bin2` directory, under the module directory.<br/>![Icon indicating a note related to storing files in the Binaries directory](images/note.gif "Note Icon") Files stored in this directory are not accessible through the Internet browser.|dll, config, manifest, jar|
 |Copy to Application directory|The resources are copied to the Platform Server where the module is published. The files are stored in the module directory.|css, js, asmx, aspx|
 |Copy to Images directory|The resources are copied to the Platform Server where the module is published. The files are stored in the `img` directory under the module directory.|bmp, eps, jpg, jpeg, gif, tiff, ico and other image format files|
 |Ignore|The resources are not copied to the Platform Server. They belong to the extension but are not available in the server.|source files, documentation, etc.|
 
-![](images/warning.gif) You can change the Deploy Action property but this operation should be done with care because if a DLL or a JAR is not copied to the Binaries directory, the module won't be able to use the actions implemented by that DLL or JAR.
+![Icon indicating a warning about changing the Deploy Action property](images/warning.gif "Warning Icon") You can change the Deploy Action property but this operation should be done with care because if a DLL or a JAR is not copied to the Binaries directory, the module won't be able to use the actions implemented by that DLL or JAR.
 
 ## Comparing with Template
 
 Integration Studio has the necessary mechanisms for merging the changes in Integration Studio and the IDE (Integrated Development Environment), through the [Update Source Code](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-update-source-code.md>) operation.
 
-The [Resources tree](<../resources-tree.md>) contains the ![](images/resource-compare.gif) Compare With Template operation, which allows you to compare the differences between the resource file, stored in the file system, and the template file.
+The [Resources tree](<../resources-tree.md>) contains the ![Icon for the Compare With Template operation in the Resources tree](images/resource-compare.gif "Resource Compare Icon") Compare With Template operation, which allows you to compare the differences between the resource file, stored in the file system, and the template file.
 
 To use this operation, you have to specify the "Compare files using" parameter in the [Options Window](<../menu/edit/options.md>).
 
-![](images/tip.gif) The "Compare With Template" operation is very useful if the changes made in the extension elements are more complex and it becomes impossible to merge the two definitions. For example, if you changed the name of an element, it is not possible for the merge operation to relate the two elements.
+![Icon suggesting a tip about using the Compare With Template operation](images/tip.gif "Tip Icon") The "Compare With Template" operation is very useful if the changes made in the extension elements are more complex and it becomes impossible to merge the two definitions. For example, if you changed the name of an element, it is not possible for the merge operation to relate the two elements.
 
 ## Change a Resource's Properties
 

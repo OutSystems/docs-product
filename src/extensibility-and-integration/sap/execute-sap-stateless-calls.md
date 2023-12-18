@@ -5,8 +5,8 @@ guid: 24e5b7ad-48f0-4656-b5d7-c834488bef98
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:51
+summary: The article explains how to create an extension module in OutSystems to manage stateless SAP BAPI remote function calls for improved performance
 ---
-
 # Execute SAP Stateless Calls
 
 Some SAP BAPI remote functions do not need to commit database changes. However, since there is no way for the OutSystems platform to detect if a given SAP remote function requires a commit or not, by default it creates a new transaction for each SAP remote function call and commits changes before closing it.
@@ -60,4 +60,4 @@ In the following example, we consume a remote function from SAP that does not ne
     EndStatelessRegion
     :   Ends the stateless connections region in SAP.
 
-![SAP stateless call example](images/sap-stateless-01.png?width=300)
+![Flowchart illustrating the process of executing stateless calls in SAP with BeginStatelessRegion, BAPI_SelectedMethod, and EndStatelessRegion elements](images/sap-stateless-01.png "SAP Stateless Call Flow")

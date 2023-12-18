@@ -27,7 +27,7 @@ You have two options:
 * **Send as a Basic Auth header**. OutSystem encodes **Client ID** and **Client secret** to obtain a token and sends it as an authorization header to the authorization server. The token is a single Base64 encoded string, after the concatenation: `<Client ID>:<Client secret>`.
 * **Send client credentials in body**. OutSystem sends the client credentials in the request body using the following parameters: `client_id` (refers to the **Client ID** property) and `client_secret` (refers to the **Client secret** property).
 
-    ![Client properties for OAuth 2.0 client credential flow](images/oauth-auth-properties-client-ss.png)
+    ![Screenshot showing client authentication properties for OAuth 2.0 client credential flow in Service Studio](images/oauth-auth-properties-client-ss.png "Client Authentication Properties for OAuth 2.0")
 
 ## Consuming several methods
 
@@ -39,7 +39,7 @@ When consuming several REST API methods described in an OpenAPI specification fi
 
 If the OpenAPI specification file doesn't define the requirement for OAuth, you can always set these properties manually after consuming the REST API.
 
-![Authentication properties for the client flow](images/oauth-auth-properties-ss.png)
+![Screenshot of OAuth 2.0 authentication properties in Service Studio](images/oauth-auth-properties-ss.png "OAuth 2.0 Authentication Properties")
 
 ## Consuming a single method
 
@@ -61,7 +61,7 @@ You can test the REST API with OAuth client credentials flow authentication by:
 * Consuming a single method
 * Editing a method under the **Test** tab
 
-    ![Testing REST API with OAuth 2.0 client flow](images/oauth-method-test-ss.png)
+    ![Screenshot of testing a REST API method with OAuth 2.0 client flow authentication in Service Studio](images/oauth-method-test-ss.png "Testing REST API with OAuth 2.0 Client Flow")
 
 If you manually add the authorization header in the model or the OnBeforeRequest callback, you override the header if authentication is either **Basic authentication** or **OAuth 2.0: client credentials**.
 
@@ -77,7 +77,7 @@ The following example explains how a single REST API can be consumed with OAuth 
 
 1. In the **Consume Single API** dialog, enter the URL information in the **Method URL** field.
 
-    ![Screenshot of filling the Method URL for the Single Method REST API with OAuth 2.0](images/oauth-add-method-url-ss.png)
+    ![Screenshot showing the process of filling in the Method URL for a single method REST API with OAuth 2.0 in Service Studio](images/oauth-add-method-url-ss.png "Adding Method URL for REST API with OAuth 2.0")
 
 1. To set the OAuth 2.0 authentication for the REST API you are consuming, open the **Headers and Authentication** tab and then from the **Authentication** list, select **OAuth 2.0: client credentials**.
 
@@ -87,12 +87,12 @@ The following example explains how a single REST API can be consumed with OAuth 
 
     * To obtain a token and send it as an authorization header to the authorization server, from the **Client authentication** list, select **Send as a Basic Auth header**.
 
-        ![Screenshot of adding OAuth 2.0 client credentials details](images/oauth-fill-authentication-details-ss.png)
+        ![Screenshot of adding OAuth 2.0 client credentials details in Service Studio](images/oauth-fill-authentication-details-ss.png "Adding OAuth 2.0 Client Credentials")
 
 1. Open the **Test** tab and select **Test**. If the test is successful, you see the method's response in the Response area of **Test** tab. Then select **Finish**.
 
-    ![Screenshot of testing the REST API with OAuth 2.0 client credentials](images/oauth-test-api-ss.png)
+    ![Screenshot of testing the REST API with OAuth 2.0 client credentials in Service Studio](images/oauth-test-api-ss.png "Testing REST API with OAuth 2.0 Client Credentials")
 
 The following shows how the OAuth2.0 client credentials display in the logic tab.
 
-![Screenshot of OAuth 2.0 client credentials in the Logic tab](images/oauth-details-in-logic-tab-ss.png)
+![Screenshot showing OAuth 2.0 client credentials details in the logic tab of Service Studio](images/oauth-details-in-logic-tab-ss.png "OAuth 2.0 Client Credentials in Logic Tab")

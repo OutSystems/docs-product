@@ -34,7 +34,7 @@ OutSystems has the following components:
 
 * **Integration Studio:** The development tool to create connectors to integrate OutSystems applications with other enterprise systems. This tool is installed in the developers desktop. See this [online course](https://www.outsystems.com/training/courses/118/integration-studio-overview/) for information about using **Integration Studio**.
 
-![](images/intro-1.png)
+![Screenshot of OutSystems Integration Studio interface highlighting the development tools for creating connectors to integrate applications with enterprise systems.](images/intro-1.png "OutSystems Integration Studio Overview")
 
 ### Typical infrastructure
 

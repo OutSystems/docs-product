@@ -33,23 +33,23 @@ In this example, a new mobile app (MyApp) was developed to extend the functional
 * **MyApp** is [tagged with version 0.2](<tag-a-version.md>) and is ready to be deployed to Quality for testing.
 * **MyWebApp** is updated in the Development environment to include a new functionality used by **MyApp**.
 
-![](images/deploy-an-application-with-dependencies-1.png)
+![Screenshot of LifeTime deployment plan showing MyApp with dependencies highlighted in red indicating errors](images/deploy-an-application-with-dependencies-1.png "LifeTime Deployment Plan with Dependencies Highlighted")
   
 ### Deploy the Mobile App
 To deploy MyApp to Quality, do the following:
 
 1. Select **Deploy...** and add MyApp to the deployment plan. You can also search by the application name:
 
-    ![](images/deploy-an-application-with-dependencies-2.png)
+    ![Image showing the process of adding MyApp to the deployment plan in LifeTime](images/deploy-an-application-with-dependencies-2.png "Adding MyApp to Deployment Plan")
 
 1. Select the option **DEPLOY 0.2** and click **VALIDATE NOW**:
 
-    ![](images/deploy-an-application-with-dependencies-3.png)
+    ![Image displaying the DEPLOY 0.2 option selected for MyApp with the VALIDATE NOW button highlighted](images/deploy-an-application-with-dependencies-3.png "Selecting Deploy Option for MyApp")
 
 
 LifeTime detects that MyApp depends on MyWebApp, which also needs to be updated in Quality, and adds MyWebApp to the deployment plan. Both applications go red (error), and it’s not possible to continue with the deployment.
 
-![](images/deploy-an-application-with-dependencies-4.png)
+![Screenshot of LifeTime deployment plan with MyApp and MyWebApp highlighted in red due to errors](images/deploy-an-application-with-dependencies-4.png "LifeTime Deployment Plan with Error Indicators")
 
 In very specific situations where you have the total ownership of all the identified dependency modules and you are aware of the impact this deployment will cause in the destination environment, you can choose to "Continue with errors". Otherwise, you should continue forward to understand and solve all the dependencies. 
 
@@ -57,7 +57,7 @@ In very specific situations where you have the total ownership of all the identi
 
 To understand the dependencies, click on the error message in MyApp:
 
-![](images/deploy-an-application-with-dependencies-5.png)
+![Image showing an error message in LifeTime when clicking on MyApp to understand its dependencies](images/deploy-an-application-with-dependencies-5.png "Understanding Dependencies in LifeTime")
 
 LifeTime is warning that deploying this version of MyApp will make the application misbehave in Quality. This happens because MyApp is using an action from module MyWebApp, which is not available in the MyWebApp version that is deployed to Quality.
 
@@ -67,15 +67,15 @@ MyWebApp 0.4+ is exposing the required functionality and has to be tagged and de
 
 1. Choose **TAG & DEPLOY 0.5** for MyWebApp.
 
-    ![](images/deploy-an-application-with-dependencies-6.png)
+    ![Image illustrating the option to TAG & DEPLOY 0.5 for MyWebApp in LifeTime](images/deploy-an-application-with-dependencies-6.png "Tagging and Deploying MyWebApp")
 
 1. Keep **DEPLOY 0.2** for MyApp and click **VALIDATE NOW** to validate the deployment again:
 
-    ![](images/deploy-an-application-with-dependencies-7.png)
+    ![Image showing the VALIDATE NOW button to revalidate the deployment of MyApp and MyWebApp in LifeTime](images/deploy-an-application-with-dependencies-7.png "Validating Deployment in LifeTime")
 
 This time, all applications should go green (OK) and the deployment can now go ahead.
 
-![](images/deploy-an-application-with-dependencies-8.png)
+![Screenshot of LifeTime deployment plan with all applications marked green (OK) indicating readiness for deployment](images/deploy-an-application-with-dependencies-8.png "LifeTime Deployment Plan Ready for Deployment")
 
 ### Deploy to Quality
 
@@ -87,7 +87,7 @@ At this point you will review the deployment plan and deploy the applications to
 
 1. Review the deployment plan. In this example, PortalApp application consumes functionality from MyWebApp, so LifeTime suggests to republish PortalApp in the Quality environment in order to update its dependencies.
 
-    ![](images/deploy-an-application-with-dependencies-9.png)
+    ![Image showing the deployment plan in LifeTime with a suggestion to republish PortalApp in the Quality environment](images/deploy-an-application-with-dependencies-9.png "Reviewing Deployment Plan in LifeTime")
 
 1. Click the **Deploy Now** button.
 

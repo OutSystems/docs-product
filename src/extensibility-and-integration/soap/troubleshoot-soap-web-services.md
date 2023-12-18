@@ -24,10 +24,10 @@ To access the logs of your SOAP Web Service, do the following:
 
 1. In **Type**, filter the logging you want to see: `SOAP (Consume)` or `SOAP (Expose)`.
 
-    ![Select SOAP type](<images/select-type-sc.png>)
+    ![Screenshot showing the selection of SOAP type in OutSystems Service Center for viewing logs](images/select-type-sc.png "Selecting SOAP Type in Service Center")
 
 1. Click **Filter**.
 
 1. To see the details of a log entry click on the **Detail** link (or, if there was an error, on the **Error** link) displayed on the right to get detailed information.
 
-    ![Integration Log screen in Service Center](<images/integrations-log-screen-sc.png>)
+    ![Service Center screen displaying the details of SOAP Web Service logs with options to view specific entries](images/integrations-log-screen-sc.png "SOAP Web Service Log Details")

@@ -24,11 +24,11 @@ This data synchronization pattern is recommended for mobile apps where the end u
 
 The following is an overview of the Read-Only Data pattern logic:
 
-1. ![](images/icon-client.png) Invokes server to get data.
+1. ![Icon representing the client in the data synchronization process](images/icon-client.png "Client Icon") Invokes server to get data.
 
-1. ![](images/icon-server.png) Returns database data.
+1. ![Icon representing the server in the data synchronization process](images/icon-server.png "Server Icon") Returns database data.
 
-1. ![](images/icon-client.png) Deletes and recreates data in the local storage with the data received from the server.
+1. ![Icon representing the client in the data synchronization process](images/icon-client.png "Client Icon") Deletes and recreates data in the local storage with the data received from the server.
 
 <div class="info" markdown="1">
 
@@ -51,7 +51,7 @@ To automatically generate the logic needed to implement this pattern for an enti
 
     This option is only available if the local entity is linked to the database entity (with the Id as a foreign key to the database entity). That happens if you create local entities with a right click on **Local Storage** and choose **Add Entity from Database...**
 
-    ![Create Action to Sync Data \(Read-Only\)](images/read-only-data-accelerator.png)
+    ![Screenshot of the option to create a Read-Only Data synchronization action in Service Studio](images/read-only-data-accelerator.png "Create Action to Sync Data (Read-Only)")
 
 This creates the actions needed to implement the Read-Only synchronization pattern:
 
@@ -68,14 +68,14 @@ If you want this pattern to run in the [synchronization template mechanism](<../
 
 This sample defines a Database entity `Company` and its Local Storage counterpart `LocalCompany`.
 
-![Read-Only Data Pattern Data Model](images/read-only-data-data-model.png)
+![Diagram of the Read-Only Data model showing the Database entity 'Company' and its Local Storage counterpart 'LocalCompany'](images/read-only-data-data-model.png "Read-Only Data Model")
 
 
 ## OfflineDataSync Logic
 
 The following is a description of the logic of the `OfflineDataSync` client action:
 
-![Read-Only Data Pattern OfflineDataSync](images/read-only-data-offlinedatasync.png)
+![Flowchart of the OfflineDataSync client action logic for Read-Only Data synchronization](images/read-only-data-offlinedatasync.png "OfflineDataSync Logic")
 
 1. Calls the `ServerDataSync` server action to retrieve data from the database. The server returns a list of Company records.
 1. Deletes all Company records in the local storage.
@@ -88,7 +88,7 @@ The following is a description of the logic of the `OfflineDataSync` client acti
 
 The following is a description of the logic of the `ServerDataSync` server action:
 
-![Read-Only Data Pattern ServerDataSync](images/read-only-data-serverdatasync.png)
+![Flowchart of the ServerDataSync server action logic for Read-Only Data synchronization](images/read-only-data-serverdatasync.png "ServerDataSync Logic")
 
 1. The aggregate `GetCompanies` fetches all the Company records from the database.
 1. Assigns the records returned by the aggregate to the output parameter of the action.

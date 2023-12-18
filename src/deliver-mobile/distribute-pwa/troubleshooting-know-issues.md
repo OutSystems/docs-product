@@ -44,7 +44,7 @@ If the PWA can't load because you're getting the URL that matches the URL of the
 
 Open the app details screen. If the **Test in browser button** is deactivated, the app doesn't have a module defined. Click the curly arrow icon on the right side of the module name to set that module as the home module. Try loading the PWA again.
 
-![Set a home module](images/set-home-module-ss.png?width=600)
+![Screenshot showing how to set a home module in OutSystems application details screen](images/set-home-module-ss.png "Setting a Home Module in OutSystems")
 
 ### The PWA debugging isn't starting
 
@@ -60,7 +60,7 @@ If you're using Platform Server 11.7 or earlier **and** iOS 13 and later, you sh
 
 * Disable Web SQL. Go to **Settings** > **Safari** > **Advanced** > **Experimental Features** > and make sure **Disable Web SQL** is off.
     
-    ![WebSQL Settings in Safari iOS](images/pwa-ios-websql-settings.png?width=250)
+    ![Screenshot of disabling Web SQL in Safari's Experimental Features settings on iOS](images/pwa-ios-websql-settings.png "WebSQL Settings in Safari on iOS")
 
 ### PWA isn't working in iOS 13.0 to 13.2
 

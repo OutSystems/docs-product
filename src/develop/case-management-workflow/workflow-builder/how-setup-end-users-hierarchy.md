@@ -68,4 +68,4 @@ To configure the hierarchy integration you need to use the [Case_Configurations_
 
 1. Click on the **Enable hierarchy** switch to enable the end users hierarchy capability.
 
-    ![Users governance model](images/wfb-setup-end-users-hierarchy.png)
+    ![Screenshot showing the 'Enable hierarchy' switch in Workflow Builder for setting up end users hierarchy](images/wfb-setup-end-users-hierarchy.png "Workflow Builder End Users Hierarchy Setup")

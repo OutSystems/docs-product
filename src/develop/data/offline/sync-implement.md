@@ -33,7 +33,7 @@ The business logic for updating records for the individual entities is implement
 
 In our case, the logic in the client SyncProducts action updates the local data through the local entities with the new data received from the server. Now it's time to place this logic into the framework and prepare it for running in the background.
 
-![Offline sync client and server logic](images/step-1-offline.png)
+![Diagram showing the creation of client and server logic for data synchronization in a mobile app](images/step-1-offline.png "Client and Server Logic Creation")
 
 ## 2. Place the local entity action in OfflineDataSync action
 
@@ -41,7 +41,7 @@ The actions for updating local and remote storage need to be placed in the flow 
 
 In the example there's only one action (**SyncProducts**) and we placed it, as required, in the **OfflineDataSync** flow. We are now ready to configure the manual start of the sync.
 
-![Offline sync client action logic](images/step-2-offline.png)
+![Flowchart demonstrating the placement of the local entity action within the OfflineDataSync action](images/step-2-offline.png "Local Entity Action Placement")
 
 
 ## 3. Configure manual start of the sync
@@ -50,7 +50,7 @@ The manual sync should be started by **TriggerOfflineDataSync** from **Logic** >
 
 We created a button that calls the action we named SyncOnClick, and within the action's flow we dragged and dropped the TriggerOfflineDataSync. We ensured the updating logic is working as expected, so it's time to configure the automatic start of the sync.
 
-![](images/step-3-offline.png)
+![Screenshot of the process to configure manual start of data synchronization in a mobile app](images/step-3-offline.png "Manual Sync Configuration")
 
 ## 4. Configure automatic start of the sync
 
@@ -58,14 +58,14 @@ Open the **OfflineDataSyncConfiguration** action from **Logic** > **Client Actio
 
 In our example we decided not to start the sync automatically regardless of the conditions, so all our values are set to False.
 
-![The trying out of the sync in the app](images/step-4-offline.png)
+![Interface showing the configuration settings for automatic start of data synchronization](images/step-4-offline.png "Automatic Sync Configuration")
 
 
 # Sync Logic Flow
 
 This is the flow of the sync execution stages. Note that they do not map to the steps in which we created the actual sync logic.
 
-![The recommended stages of the offline sync](images/sync-stages.png)
+![Illustration of the stages involved in the execution flow of data synchronization logic](images/sync-stages.png "Sync Logic Execution Flow")
 
 Stage 1
 :   OfflineDataSync runs, in the background, the actions for updating the local storage. This action can be started manually by the TriggerOfflineDataSync action or automatically by an event configured in the OfflineDataSyncConfiguration action. 

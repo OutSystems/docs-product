@@ -22,25 +22,25 @@ To specify the preferences for your mobile app:
 
 1. Select the application module, go to its properties and open the Extensibility Configurations property. 
 
-    ![Extensibility Configuration property](images/extensibility-configurations-ss.png)
+    ![Screenshot of the Extensibility Configurations property in a mobile application module](images/extensibility-configurations-ss.png "Extensibility Configurations Property")
 
 2. In the Extensibility Configurations value window, you must create a JSON object (if not created) where you can specify the preferences. Add the “preferences” tag to the JSON to indicate that you will set preferences for the app.
 
-    ![Extensibility preferences](images/extensibility-preferences-ss.png)
+    ![Screenshot showing the JSON editor within Extensibility Configurations for setting mobile app preferences](images/extensibility-preferences-ss.png "Extensibility Configurations JSON Editor")
 
 3. Introduce the preferences you want from the [available preferences](https://cordova.apache.org/docs/en/latest/config_ref/#preference) in the JSON value: 
 
     1. Each preference you want to define is represented as a name/value pair, where the name is the preference name and the value is its parameter specified as a string (enclosed in double quotes), a boolean, or a number. The preference name is case-sensitive. Check the [preferences JSON template](#preferences-json-template) to avoid mistakes. 
 
-        ![Define global preferences](images/extensibility-preferences-global-ss.png)
+        ![Screenshot of global preferences specified in JSON format for a mobile app](images/extensibility-preferences-global-ss.png "Global Preferences JSON Example")
 
     2. You can set a preference to work only for a target mobile platform or apply it to all. Be aware that some [preferences may not work on every mobile platform](https://cordova.apache.org/docs/en/latest/config_ref/#preference). 
 
-        ![Define global, android and ios, preferences](images/extensibility-preferences-global-android-ios-ss.png)
+        ![Screenshot illustrating how to set platform-specific preferences in JSON for Android and iOS](images/extensibility-preferences-global-android-ios-ss.png "Platform-Specific Preferences JSON Example")
 
 4. To make this change available for the users, [publish and generate a new mobile application](<../generate-distribute-mobile-app/intro.md>) and distribute it. 
 
-    ![Generate mobile app to publish](images/generate-mobile-app-ss.png)
+    ![Screenshot of the process to publish and generate a new version of a mobile application](images/generate-mobile-app-ss.png "Publish and Generate Mobile App")
 
 ## Preferences JSON Template { #preferences-json-template }
 

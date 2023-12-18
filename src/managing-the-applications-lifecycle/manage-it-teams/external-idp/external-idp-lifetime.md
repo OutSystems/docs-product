@@ -16,13 +16,13 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
 1. Go to **User Management** > **Authentication Settings** and click **Add OpenId Connect Provider**.
 
-    ![Click Add OpenId Connect Provider](images/add-provider-lt.png)
+    ![Screenshot of the LifeTime console showing the option to add an OpenId Connect Provider](images/add-provider-lt.png "Adding OpenId Connect Provider in LifeTime")
 
     If there’s no local administrator configured, a warning pop-up displays advising you to add a local administrator account before configuring the external provider. With the external provider activated, if the SSO login method fails, the local administrator can help unblock users by configuring the username and password for them.
 
 1. Check the **Set administrator as local administrator** checkbox and click **Configure Provider**.
 
-    ![Add local administrator account](images/add-local-admin-lt.png)
+    ![Checkbox for setting administrator as local administrator in LifeTime authentication settings](images/add-local-admin-lt.png "Setting Administrator as Local Administrator")
 
     The existing administrator is migrated and a local administrator is automatically created. For more information about creating a local administrator account, see [Adding a local administrator](#adding-a-local-administrator). 
 
@@ -95,7 +95,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
         **Note**: For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
 
-    ![Enter authentication settings](images/auth-settings-scope-lt.png)
+    ![LifeTime authentication settings interface displaying scope configuration options for OpenID Connect](images/auth-settings-scope-lt.png "Configuring Scopes in Authentication Settings")
 
 1. Click **Save Changes**.
 
@@ -103,7 +103,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
     The **Activate OpenID Connect provider** pop-up is displayed. 
 
-    ![Activate provider](images/activate-openid-provider-lt.png)
+    ![Activate OpenID Connect provider pop-up window in LifeTime](images/activate-openid-provider-lt.png "Activating OpenID Connect Provider")
 
 1. Enter the **Client Secret**.
 
@@ -113,7 +113,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
 1. Click **Activate and Log Out**. 
 
-    ![Click Activate and Log Out](images/log-out-lt.png)
+    ![Log out confirmation dialog in LifeTime after activating OpenID Connect provider](images/log-out-lt.png "Log Out Confirmation")
 
 Once activated, you are logged out of the current session and redirected to the login page of the currently active OIDC provider login page.
 
@@ -135,7 +135,7 @@ The auto-provisioning of IT Users is not available. Therefore, you must create u
 
 When creating a new user in LifeTime, if an external IdP configuration is active, it’s not necessary to enter a password. This is because the authentication happens on the external IdP side. This way, users are forced to use the IdP authentication. Apart from basic user information, such as name, email, and role, the user is identified by matching the LifeTime **username** with the **username claim** value of the external Idp.
 
-![Create a new user](images/newuser-lt.png)
+![LifeTime console interface for creating a new user with external IdP authentication](images/newuser-lt.png "Creating a New User in LifeTime")
 
 ### Adding a local administrator
 
@@ -155,11 +155,11 @@ To add a local administrator, follow these steps:
 
 1. Go to **User Management** > **Authentication Settings** and click **Add local administrator**.
 
-    ![Add local administrator](images/add-localadmin-lt.png)
+    ![LifeTime console showing the option to add a local administrator](images/add-localadmin-lt.png "Adding a Local Administrator in LifeTime")
 
 1. Add the relevant details and click **Create**. 
 
-    ![New local administrator](images/new-localadmin-lt.png)
+    ![Form to add a new local administrator in LifeTime with fields for details](images/new-localadmin-lt.png "New Local Administrator Details")
 
 Once you add the local administrator, you can log in using `<domain>/LifeTimeSDK/Internal_Login.aspx?`. 
 
@@ -171,13 +171,13 @@ Once the OpenID Connect provider is activated, the fallback of using the built-i
 
     When activating the OIDC provider, in the **Activate OpenID Connect provider** pop-up, select the **Clear all local users passwords now (Recommended)** checkbox and click **Activate and Log Out**.
 
-    ![Activate provider](images/log-out-lt.png)
+    ![Log out confirmation dialog in LifeTime after activating OpenID Connect provider](images/log-out-lt.png "Log Out Confirmation")
 
 * **Option 2**
 
     If you don't clear the passwords when activating the OIDC provider, a warning message displays on the **Authentication Settings** screen. Click **Clear passwords now**.
 
-    ![Clear passwords](images/clear-pass-lt.png)
+    ![Warning message and button to clear built-in user passwords in LifeTime](images/clear-pass-lt.png "Clearing Built-in Password Credentials")
   
 
 

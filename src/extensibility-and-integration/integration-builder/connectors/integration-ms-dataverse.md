@@ -29,7 +29,7 @@ Verify the following:
 
 Follow the instructions provided in [Creating and using an integration](../use.md#create-use). You must authorize Integration Builder to access your data in Microsoft Dataverse through your Microsoft account.
 
-![Authorizing Integration Builder to access your Microsoft account data](images/dataverse-ib-authorization.png)
+![Screenshot showing the authorization process in Integration Builder for Microsoft Dataverse](images/dataverse-ib-authorization.png "Microsoft Dataverse Integration Builder Authorization")
 
 Integration Builder uses this authorization to retrieve the metadata from Microsoft Dataverse (environments, tables, and respective columns) and enable you to test a newly created integration in the development environment.
 
@@ -50,7 +50,7 @@ Request authentication is handled transparently when you call Server Actions exp
 You can select the `Create automatically` option to have Integration Manager create the connection on your behalf.
 Integration Manager generates a certificate and connects to the Integration Builder, which requests the creation of an Azure AD app that uses the certificate for authentication and authorization.
 
-![Authorizing Integration Manager to access your Microsoft account data](images/dataverse-im-authorization.png)
+![Image depicting the authorization options in Integration Manager for a Microsoft Dataverse connection](images/dataverse-im-authorization.png "Microsoft Dataverse Integration Manager Authorization")
 
 ### If you don't have administrator permissions in Azure Active Directory
 

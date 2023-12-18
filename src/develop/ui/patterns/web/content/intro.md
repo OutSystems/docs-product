@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Applicati
 
 Content patterns allow you to highlight and display important information to users in different ways, such as warnings, errors, and tooltips. Content patterns also allow you to organize information into sections and lists, making the on-screen content more easily readable for users.
 
-![Traditional web content patterns](<images/content-traditional-web-patterns-diag.png>)
+![Diagram illustrating various content patterns for traditional web applications](images/content-traditional-web-patterns-diag.png "Content Patterns Diagram")
 
 The available content patterns include the following:
 

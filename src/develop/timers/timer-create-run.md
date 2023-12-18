@@ -30,13 +30,13 @@ You can set the schedule of a Timer in one of the following ways:
 
 * **Setting the `Schedule` property of the Timer at design time**: You can define a recurrent schedule, such as daily or weekly, or define the Timer to run each time the module is published, for example to execute configurations or bootstrap data.
 
-    ![Setting the schedule property of the Timer](images/timer-schedule-property-ss.png)
+    ![Screenshot showing how to set the schedule property of a Timer in OutSystems](images/timer-schedule-property-ss.png "Setting the Schedule Property of the Timer")
 
 * **Setting the Timer schedule at runtime in Service Center**: In cases when you need to customize the Timer schedule when deploying an application to another environment, there is no need to change the application. The effective Timer schedule is set in Service Center, which uses the default settings in every environment unless specifically modified.
 
 * **Implement logic that changes the Timer schedule at runtime**: Assign the `Schedule` runtime property of the Timer with a specific schedule within your logic. Make sure to use the [correct time format](../../ref/lang/auto/class-timer.md#runtime-properties).  
 
-    ![Implement logic that changes Timer schedule](images/timer-implement-logic-ss.png)
+    ![Screenshot demonstrating the implementation of logic to change a Timer's schedule at runtime in OutSystems](images/timer-implement-logic-ss.png "Implementing Logic to Change Timer Schedule")
 
 When you define a schedule for your Timer, the Timer will run at the predefined time.
 
@@ -67,7 +67,7 @@ The `Wake<Timer Name>` action does not receive any input parameters and does not
 To use the `Wake<Timer Name>` built-in action in your logic, do the following:
 
 1. In the Process tab, expand the Timer element.
-    ![Use wake timer action](images/wake-timer-ss.png)
+    ![Screenshot illustrating how to use the WakeTimer built-in action in OutSystems](images/wake-timer-ss.png "Using the WakeTimer Built-in Action")
 
 1. Drag the `Wake<Timer Name>` action and use it in your logic.
 
@@ -82,4 +82,4 @@ To force the execution of a Timer in Service Center, do the following:
 1. Click on the Timer you want to run.
 1. Click the **Run Now** button.
 
-![run timer in service center](images/timer-create-run-sc.png)
+![Screenshot depicting the process of forcing a Timer to run in the Service Center of OutSystems](images/timer-create-run-sc.png "Running a Timer in Service Center")

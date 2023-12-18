@@ -24,7 +24,7 @@ After you create a new webhook module, it contains a logic for an echo chatbot. 
 
 Open your webhook module and go to **Logic** > **Server Actions** > **Utilities** > **GetMessageResponse**. Examine the logic in this Server Action.
 
-![Sample response](images/webhook-echo-response-ss.png?width=500)
+![Screenshot of the echo response logic in the webhook module within OutSystems](images/webhook-echo-response-ss.png "Webhook Echo Response Logic")
 
 ## Reply with an answer from a knowledge base
 

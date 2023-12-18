@@ -24,11 +24,11 @@ Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in 
 
 1. Click the **Start** icon and select **Settings**. 
 
-    ![Go to settings](images/windows-http-proxy-settings.png)
+    ![Start menu with Settings option highlighted for configuring HTTP proxy in Windows](images/windows-http-proxy-settings.png "Windows HTTP Proxy Settings")
 
 1. Select **Network & Internet**.
 
-    ![Select network and internet](images/windows-http-proxy-network-internet.png)
+    ![Network & Internet settings option highlighted in Windows settings](images/windows-http-proxy-network-internet.png "Windows Network & Internet Settings")
 
 1. Select **Proxy**.
 
@@ -40,7 +40,7 @@ Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in 
 
     1. Leave the **Port** field empty.
 
-        ![Enter proxy configurations](images/windows-http-proxy-setup.png)
+        ![Proxy configuration screen in Windows with 'Use a proxy server' toggle enabled and address field filled out](images/windows-http-proxy-setup.png "Windows Proxy Configuration")
 
     1. Click **Save**.
 
@@ -50,17 +50,17 @@ Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in 
 
 1. Search for **Proxies**.
 
-    ![Enter proxy configurations](images/mac-http-proxy-search.png)
+    ![System Preferences search field with 'Proxies' entered in MacOS](images/mac-http-proxy-search.png "MacOS Proxy Search")
 
 1. In the **Select a protocol to configure** section, choose **Web Proxy (HTTP)**.
 
     1. In the **Web proxy server** field, enter the proxy server name or IP address and port. In the example below, the proxy server is ``example.net`` and the proxy port is ``9090``.
 
-        ![Enter proxy configurations](images/mac-http-proxy-web-settings.png)
+        ![Web Proxy (HTTP) settings with server name and port entered in MacOS](images/mac-http-proxy-web-settings.png "MacOS Web Proxy Settings")
 
 1. In the **Select a protocol to configure** section, select **Secure Web Proxy (HTTPS)** and enter the proxy server name or IP address and port.
 
-    ![Enter proxy configurations](images/mac-http-proxy-secure-settings.png)
+    ![Secure Web Proxy (HTTPS) settings with server name and port entered in MacOS](images/mac-http-proxy-secure-settings.png "MacOS Secure Web Proxy Settings")
 
 1. Click **Ok**.
 
@@ -76,6 +76,6 @@ Some proxy servers require user authentication. In this case, you must provide t
 
 1. Enter the **Proxy username** and **Proxy password**.
 
-    ![Enter proxy configurations](images/mac-http-proxy-authen.png)
+    ![Service Studio Preferences dialog with 'Use proxy authentication' option enabled and credentials entered](images/mac-http-proxy-authen.png "Service Studio Proxy Authentication")
 
 1. Click **Apply**.

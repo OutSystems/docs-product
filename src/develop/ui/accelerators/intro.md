@@ -18,9 +18,9 @@ To have the accelerators in Service Studio toolbox, you need to install [OutSyst
 
 All the accelerators are represented by the accelerator icon in the widget toolbox:
 
-![Accelerator widget](images/acc-widget-ss.png)
+![Icon of the accelerator widget in the OutSystems Service Studio toolbox](images/acc-widget-ss.png "Accelerator Widget in Service Studio")
 
-![Accelerators available](images/acc-acclist-ss.png)
+![Screenshot showing a list of available accelerators in OutSystems Service Studio](images/acc-acclist-ss.png "List of Accelerators in Service Studio")
 
 ## How to use accelerators
 
@@ -32,7 +32,7 @@ In Service Studio, open a Screen for editing and follow these steps:
 
 1. Publish your app and preview the screen.
 
-![How to use an accelerator](images/acc-drag-drop-ss.gif)
+![Animated GIF demonstrating how to drag and drop an accelerator into a screen within OutSystems Service Studio](images/acc-drag-drop-ss.gif "Drag and Drop Accelerator in Service Studio")
 
 Once you've published your app, you can customize it by, for example, [replacing sample data with your own data](#replace-sample-data-with-real-data) and [adapting the UI and logic](#adapt-the-UI-and-logic) to match the user experience you want to achieve. You can also use the [Map](../patterns/mobile/interaction/map/map.md) and [Login with Google](accelerator-google.md) accelerators in your app.
 
@@ -50,4 +50,4 @@ You can change and adapt the UI and logic to suit your app. To help you with thi
 
 Most of the **List** accelerators have a matching **Details** screen template. These templates have the same look and feel and they're connected to the same sample data. There are multiple industry use cases available to choose from.
 
-![Screen template](images/acc-list.png)
+![Image displaying the accelerator list and details screen templates in OutSystems Service Studio](images/acc-list.png "Accelerator List and Details Screen Templates")

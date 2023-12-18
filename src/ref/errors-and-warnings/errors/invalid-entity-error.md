@@ -4,8 +4,8 @@ guid: bd6833c9-7995-4089-94a9-4eead9f5b6b3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:437
+summary: The article outlines various scenarios that trigger the 'Invalid Entity' error in OutSystems and provides solutions to resolve them
 ---
-
 # Invalid Entity Error
 
 The `Invalid Entity` error is issued in the following situations:
@@ -55,11 +55,11 @@ The `Invalid Entity` error is issued in the following situations:
 
     * You have EntityA and EntityB. There is a circular dependency if the Identifier of EntityA is of type EntityB Identifier and the Identifier of EntityB is of type EntityA Identifier.
 
-        ![](images/invalid-entity-1.png)  
+        ![Diagram showing a circular dependency between EntityA and EntityB where each entity's identifier is of the other's type](images/invalid-entity-1.png "Circular Dependency Example with EntityA and EntityB")  
 
     * You have an Entity whose Identifier is of type Entity Identifier.
 
-        ![](images/invalid-entity-2.png)
+        ![Illustration of an entity with a circular dependency in its identifier pointing to another entity identifier](images/invalid-entity-2.png "Circular Dependency Example with Single Entity Identifier")
 
     Change the data types of the entity Identifiers.
 

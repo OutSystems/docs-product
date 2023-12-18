@@ -24,7 +24,7 @@ You can use the Search UI Pattern to provide users with a search field.
 
     The Search widget is displayed.
 
-    ![](<images/search-1-ss.png>)
+    ![Screenshot of the Search widget in the Service Studio toolbox](images/search-1-ss.png "Search Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,17 +38,17 @@ You can use the Search UI Pattern to provide users with a search field.
 
 1. From the Toolbox, drag the Search widget into the Main Content area of your application's screen.
 
-    ![](<images/search-2-ss.png>)
+    ![Image showing how to drag the Search widget into the Main Content area of an application screen](images/search-2-ss.png "Dragging Search Widget to Main Content")
 
     By default, the Search widget contains Icon, Input, and Actions placeholders.
 
 1. Create a local variable by right-clicking on your screen name and selecting **Add Local Variable**.
 
-    ![](<images/search-3-ss.png>)
+    ![Screenshot of the process to add a local variable in OutSystems Service Studio](images/search-3-ss.png "Creating a Local Variable")
 
 1. Enter a name for the variable. In this example, we enter ``SearchText``.
 
-   ![](images/search-4-ss.png)
+   ![Image depicting the naming of a local variable as 'SearchText' in OutSystems Service Studio](images/search-4-ss.png "Naming the Local Variable")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

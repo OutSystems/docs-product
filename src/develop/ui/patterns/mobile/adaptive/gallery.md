@@ -32,7 +32,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     The Gallery widget is displayed.
 
-    ![Gallery widget](<images/gallery-widget-ss.png>)
+    ![Screenshot of the Gallery widget in the Service Studio toolbox](images/gallery-widget-ss.png "Gallery Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -46,47 +46,47 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
 1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](<images/gallery-dragwidget-ss.png>)
+    ![Dragging the Gallery widget into the Main Content area of an application screen](images/gallery-dragwidget-ss.png "Dragging Gallery Widget to Screen")
 
 1. Add the required content to the Gallery widget.
 
     By default, the Gallery widget expects a list.
 
-    ![Gallery widget placeholders](<images/gallery-list-ss.png>)
+    ![Default placeholders in the Gallery widget expecting a list](images/gallery-list-ss.png "Gallery Widget Placeholders")
 
     To use the Gallery UI Pattern with items from a database, drag a [List](<../../../../../ref/lang/auto/servicestudio-plugin-nrwidgets-list.md>) into the Gallery widget and create your custom content.
 
     In this example, we delete the list and add local images to the Gallery widget.
 
-    ![Add images to Gallery](<images/gallery-image-ss.png>)
+    ![Adding local images to the Gallery widget](images/gallery-image-ss.png "Adding Images to Gallery")
 
 1. On the Element tree, select the **Image** widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Gallery.
 
     **Note:** In this example, the image property **Type** is set to **Local** image. You can also add External and Binary Data images.
 
-    ![Import local images](<images/gallery-localimage-ss.png>)
+    ![Importing a local image into the Gallery widget](images/gallery-localimage-ss.png "Importing Local Images")
   
 1. You can configure the Gallery's look and feel by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device (see below for examples).
 
-    ![Set optional properties](<images/gallery-properties-ss.png>)
+    ![Configuring the Gallery's optional properties in the Properties tab](images/gallery-properties-ss.png "Setting Optional Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 **4 items per row**
 
-![4 items per row](<images/gallerymob-14-ss.png>)
+![Gallery UI pattern displaying four items per row on a mobile device](images/gallerymob-14-ss.png "Gallery with 4 Items Per Row")
 
 **3 items per row**
     
-![3 item per row](<images/gallerymob-15-ss.png>)
+![Gallery UI pattern displaying three items per row on a mobile device](images/gallerymob-15-ss.png "Gallery with 3 Items Per Row")
 
 **2 items per row**
 
-![2 items per row](<images/gallerymob-16-ss.png>)
+![Gallery UI pattern displaying two items per row on a mobile device](images/gallerymob-16-ss.png "Gallery with 2 Items Per Row")
 
 **1 item per row**
 
-![1 item per row](<images/gallerymob-17-ss.png>)
+![Gallery UI pattern displaying one item per row on a mobile device](images/gallerymob-17-ss.png "Gallery with 1 Item Per Row")
 
 ## Properties
 

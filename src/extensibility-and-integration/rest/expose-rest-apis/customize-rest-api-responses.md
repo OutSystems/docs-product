@@ -19,13 +19,13 @@ For that, do the following:
 
 1. In the exposed REST API, set the property **On Response** to `New OnResponse`.
 
-    ![REST API in Service Studio](images/ss-rest-expose-onresponse.png)
+    ![Screenshot showing where to set the On Response property in the OutSystems REST API configuration](images/ss-rest-expose-onresponse.png "Setting On Response Property")
 
 1. Open the OnResponse callback action that's now available under the REST API.
 
 1. Design the logic to customize the information of the response.
 
-    ![Input and output parameters of OnResponse callback](images/ss-rest-expose-onresponse-tree.png)
+    ![Screenshot of the OnResponse callback action logic tree in OutSystems](images/ss-rest-expose-onresponse-tree.png "OnResponse Callback Action Logic")
 
     You can get the text of the response by accessing the "ResponseText" attribute of the "Response" input parameter or its binary contents by accessing the "ResponseBinary" attribute.
 

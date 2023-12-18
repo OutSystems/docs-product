@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away.
 
-![](images/tabs-1.gif?width=650)
+![Animated GIF showing the interaction with the Tabs UI Pattern in a Traditional Web App](images/tabs-1.gif "Tabs UI Pattern Interaction")
 
 **How to use the Tabs UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Tabs UI Pattern to display large sets of information, which can 
 
     The Tabs widget is displayed.
 
-    ![](images/tabs-2-ss.png)
+    ![Screenshot of the Tabs widget in the Service Studio toolbox](images/tabs-2-ss.png "Tabs Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ You can use the Tabs UI Pattern to display large sets of information, which can 
 
 1. From the Toolbox, drag the Tabs widget into the Main Content area of your application's screen.
 
-    ![](images/tabs-3-ss.png)
+    ![Screenshot showing how to drag the Tabs widget into the main content area of an application's screen](images/tabs-3-ss.png "Dragging Tabs Widget into Main Content Area")
 
     By default, the Tabs widget contains 3 Header Items (tab titles) and 3 Content Items (tab content). You can add or delete as many as required.
   
@@ -48,7 +48,7 @@ You can use the Tabs UI Pattern to display large sets of information, which can 
 
 1. On the **Properties** tab, you can customize the Tabs look and feel by setting any of the optional properties, for example, which tab is displayed as the active tab when the page loads and whether the tabs are displayed vertically or horizontally.
 
-    ![](images/tabs-4-ss.png)
+    ![Screenshot of the Properties tab for customizing the Tabs widget in Service Studio](images/tabs-4-ss.png "Tabs Widget Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

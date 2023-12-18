@@ -16,7 +16,7 @@ Do the following:
 1\. In Integration Studio create an extension and define an action that will handle the WS-Addressing change.  
 In example below we defined an action in Integration Studio called "AddWSAddressing" with no input parameters.
 
-![](<images/is-action-add-wsaddressing.png>)
+![Screenshot of Integration Studio showing the defined AddWSAddressing action with no input parameters](images/is-action-add-wsaddressing.png "Integration Studio AddWSAddressing Action")
 
 2\. Click 'Edit Source Code .NET'. Set the project target framework and add a reference to the `System.ServiceModel` assembly.  
 Enter the code below, replacing the `MssAddWSAddressing` function placeholder that Integration Studio created for you:  

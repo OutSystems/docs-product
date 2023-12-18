@@ -14,29 +14,29 @@ This example shows how you can create a simple Donut Chart.
 
 1. From the Toolbox, drag the **Donut Chart** widget to the Screen.
 
-    ![Drag the Line Chart widget to the screen](images/chartdonut-drag-ss.png)
+    ![Screenshot showing the Donut Chart widget being dragged to the screen in the development environment](images/chartdonut-drag-ss.png "Dragging Donut Chart Widget")
 
 1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.
 
-    ![Expand the Data Point List property](images/chartdonut-expand-ss.png)
+    ![Screenshot of the Properties tab with the DataPointList property expanded to show options](images/chartdonut-expand-ss.png "Expanding DataPointList Property")
 
 1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
 
     This example uses fixed data. These properties define the first data point. Each data point corresponds to a slice on the donut chart. 
 
-    ![Set datapoint](images/chartdonut-datapoint-ss.png)
+    ![Screenshot demonstrating how to set the Label and Value properties for a data point in the Donut Chart](images/chartdonut-datapoint-ss.png "Setting Data Point Properties")
 
 1. To add more data points, repeat steps 2 and 3.
     
-    ![Add more datapoint](images/chartdonut-extra-datapoints-ss.png)
+    ![Screenshot illustrating the process of adding more data points to the Donut Chart](images/chartdonut-extra-datapoints-ss.png "Adding Additional Data Points")
 
 1. To customize the inner size of the Donut Chart, set the value of the **InnerSize** property. 
 
     In this example, the **InnerSize** property is set to 60% (by default, the **InnerSize** property is 50%).
 
-    ![Set inner size of donut](images/chartdonut-innersize-ss.png)
+    ![Screenshot showing the InnerSize property of the Donut Chart set to 60 percent](images/chartdonut-innersize-ss.png "Customizing Donut Chart Inner Size")
 
 After following these steps, you can publish your module:
 
-![Result](images/chartdonut-result.png)
+![Image of the final Donut Chart as it appears after publishing the module](images/chartdonut-result.png "Final Donut Chart Result")
 

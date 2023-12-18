@@ -18,9 +18,9 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/loginform-1-diag.png>)
+![Diagram showing the layout and classes of the Login Form for Traditional Web Apps](images/loginform-1-diag.png "Login Form Layout Diagram")
 
-![](<images/loginform-2-ss.png>)
+![Screenshot of the Login Form interface in a Traditional Web App](images/loginform-2-ss.png "Login Form Screenshot")
 
 ### Login
 
@@ -42,7 +42,7 @@ Drag login related content to this placeholder.
 
 1. Publish and test.
 
-    ![](<images/loginform-4-ss.png>)
+    ![Screenshot depicting the addition of a Sign In button to the Login Form](images/loginform-4-ss.png "Sign In Button Addition")
 
 ## Compatibility with other patterns
 

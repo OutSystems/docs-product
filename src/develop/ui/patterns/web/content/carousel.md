@@ -24,7 +24,7 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
   
      The Carousel widget is displayed.
 
-    ![](images/carousel-3-ss.png)
+    ![Screenshot of the Carousel widget in the Service Studio toolbox](images/carousel-3-ss.png "Carousel Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,7 +38,7 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
 1. To From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
 
-   ![](images/carousel-9-ss.png)
+   ![Dragging the Carousel widget into the main content area of an application screen](images/carousel-9-ss.png "Dragging Carousel Widget into Main Content Area")
 
 1. Place the content you want to appear in the Carousel into the Items placeholder. (In this example we use images.) 
 
@@ -48,19 +48,19 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
 1. Select or import the image you want to display. In this example, we use the sample OutSystems UI images.
 
-    ![](<images/carousel-10-ss.png>)
+    ![Select Image pop-up window for choosing an image for the Carousel item](images/carousel-10-ss.png "Select Image Pop-up for Carousel Item")
 
     Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
 
     To use a Carousel with items from a database, drag a [ListRecords widget](<../../../../../ref/lang/auto/class-list-records-widget.md>) into Items placeholder and create your custom content.
 
-    ![](<images/carousel-2-ss.png>)
+    ![Carousel pattern with a ListRecords widget inside the Items placeholder](images/carousel-2-ss.png "Carousel with ListRecords Widget")
 
 1. Repeat steps 4 and 5 for each of the Carousel items.
 
 1. From the Element tree, select the Carousel widget, and on the **Properties** tab, set the relevant (optional) properties, for example, navigation arrows and the number of items to display on different devices.
 
-    ![](images/carousel-11-ss.png)  
+    ![Properties tab for the Carousel widget in Service Studio showing optional settings](images/carousel-11-ss.png "Carousel Widget Properties")  
 
 1. After following these steps and publishing the module, you can test the pattern in your app.
 

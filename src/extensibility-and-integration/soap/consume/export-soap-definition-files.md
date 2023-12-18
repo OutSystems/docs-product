@@ -4,8 +4,8 @@ guid: 51019bcc-2daf-4dfe-9df7-856a656a7de5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1815%3A9268&mode=design&t=8a1ub9syb4QKHbuk-1
+summary: The article explains how to export and examine SOAP web service definition files using Service Studio for troubleshooting and modification purposes
 ---
-
 # Export definition files in a SOAP web service
 
 Consuming a SOAP Web Service in **Service Studio** is generally a seamless and trouble-free experience. There are cases, however, when developers want more information about a particular web service or need to make some modifications in order to make it conform to **OutSystems** requirements, such as:
@@ -32,12 +32,12 @@ A developer who doesn’t have access to the web service can use the SOAP **Expo
 
 1. In the Logic tab, right-click the consumed SOAP service and select **Export Definition Files…** from the context menu.
 
-    ![Export definition files](images/export-definition-files-ss.png)
+    ![Screenshot showing the context menu with the 'Export Definition Files...' option in Service Studio](images/export-definition-files-ss.png "Export Definition Files Option")
 
 1. Choose a folder to place the definition files. Aside from the .WSDL file itself, you may see an XSDs folder with schema files and an Imports folder with imported WSDL files.
 
 
-    ![WSDL Folder Structure](images/wsdl-folder-structure.png)
+    ![Image displaying the folder structure after exporting WSDL files, including XSDs and Imports folders](images/wsdl-folder-structure.png "WSDL Folder Structure")
 
 1. Examine the files using a text editor. When you are done you may continue to use the SOAP web service in the design of your app.
 

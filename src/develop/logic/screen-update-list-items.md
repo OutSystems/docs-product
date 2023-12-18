@@ -47,7 +47,7 @@ In the GoOutWeb application, used to find, review and rate places, we have a scr
 
 1. On the properties of the button Mark as Safe, set the Method property to Ajax Submit and set the Destination to a new screen action called Safe. 
 
-    ![Update List Items on a Screen - Button Mark as Safe](images/screen-update-list-items-button.png)
+    ![Screenshot showing the 'Mark as Safe' button added to the Action column of the ReportedReview screen in the GoOutWeb application.](images/screen-update-list-items-button.png "Mark as Safe Button on ReportedReview Screen")
 
 1. Open the new screen action, drag the action Review_ClearReport from the Logic tab to the action flow, and set the input parameter of this action to `GetReportedReviews.List.Current.Review`. This action updates the review to mark it as safe in the database. 
 
@@ -55,6 +55,6 @@ In the GoOutWeb application, used to find, review and rate places, we have a scr
 
 1. On the Properties editor set the field List to `ReviewTable.List` and the field Position to `ReviewTable.List.CurrentRowNumber`. This removes the review of the current row from the list displayed in the List widget.
 
-    ![Update List Items on a Screen - Use ListRemove](images/screen-update-list-items-list-remove.png)
+    ![Overlay of the ListRemove system action in the screen action flow, with properties set to remove the current review from the ReviewTable list.](images/screen-update-list-items-list-remove.png "ListRemove Action in Screen Flow")
 
 1. Publish and test. 

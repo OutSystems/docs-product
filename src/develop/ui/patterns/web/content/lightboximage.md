@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Light Box Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.  
 
-![](<images/lightboximage-15-ss.png>)
+![Example of Light Box Image UI Pattern in Service Studio](images/lightboximage-15-ss.png "Light Box Image UI Pattern Example")
 
 **How to use the Light Box Image UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Light Box Image UI Pattern to open smaller thumbnail images in f
 
     The Light Box Image widget is displayed.
 
-    ![](<images/lightboximage-12-ss.png>)
+    ![Light Box Image widget displayed in the Service Studio toolbox](images/lightboximage-12-ss.png "Light Box Image Widget in Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ You can use the Light Box Image UI Pattern to open smaller thumbnail images in f
 
 1. From the Toolbox, drag the Light Box Image widget into the Main Content area of your application's screen.
 
-    ![](<images/lightboximage-13-ss.png>)
+    ![Dragging the Light Box Image widget into the Main Content area in Service Studio](images/lightboximage-13-ss.png "Dragging Light Box Image Widget")
 
 1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/class-image-widget.md>) into the Light Box Image widget. This is a thumbnail image.
 
@@ -48,17 +48,17 @@ You can use the Light Box Image UI Pattern to open smaller thumbnail images in f
 
 1. Select or import the image you want to display. In this example, we use the sample OutSystems UI images.
 
-    ![](<images/lightboximage-9-ss.png>)
+    ![Select Image pop-up in Service Studio for choosing an image for the Light Box Image widget](images/lightboximage-9-ss.png "Selecting an Image for Light Box")
 
     Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
 
 1. From the Widget tree, select the Light Box Image widget.
 
-    ![](<images/lightboximage-14-ss.png>)
+    ![Light Box Image widget selected in the widget tree with properties displayed](images/lightboximage-14-ss.png "Light Box Image Widget Properties")
 
 1. On the **Properties** tab, set the relevant Light Box Image properties, for example, the title of the image that is displayed, the group the image belongs to, and the size that the image will display in full screen mode.
 
-     ![](<images/lightboximage-10-ss.png>)
+     ![Properties tab in Service Studio for setting Light Box Image widget properties](images/lightboximage-10-ss.png "Setting Light Box Image Properties")
 
 1. Repeat steps 2-6 for each of the images you want in your Light Box Pattern.
 

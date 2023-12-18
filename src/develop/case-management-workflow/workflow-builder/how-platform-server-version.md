@@ -16,4 +16,4 @@ To check which version of Platform Server an Environment is using, follow these 
 
 1. Check the Platform Server **Version**.
 
-    ![Check Platform Server version](images/check-platform-server-version-sc.png)
+    ![Screenshot showing where to check the Platform Server version in the Service Center console](images/check-platform-server-version-sc.png "Service Center Platform Server Version")

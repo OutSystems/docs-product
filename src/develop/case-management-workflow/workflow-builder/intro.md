@@ -16,7 +16,7 @@ All users need to have their development environment registered in Workflow Buil
 
 Creating low-code Reactive Web Apps with Workflow Builder makes the app creation process simpler, faster, and more collaborative, where multidisciplinary teams work together reducing the time-to-business outcome.
 
-![Workflow Builder login page](images/login-wfb.png)
+![Screenshot of the Workflow Builder login interface](images/login-wfb.png "Workflow Builder Login Screen")
 
 With Workflow Builder you can create apps that automate processes, improve efficiency, and get better outcomes on your daily work. Even if you have no previous experience developing apps.  
 

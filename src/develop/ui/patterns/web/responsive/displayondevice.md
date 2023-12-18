@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Display on Device UI pattern to select what elements are displayed on which device types. With this pattern you can improve the way information is displayed on different devices - computers, tablets, and phones - by specifically specifying which elements display on each of them.
 
-![](<images/displayondevice-1.png>)
+![Screenshot illustrating the Display on Device UI pattern in OutSystems Service Studio](images/displayondevice-1.png "Display on Device UI Pattern")
 
 **How to use the Display on Device UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Display on Device UI pattern to select what elements are display
 
     The Display on Device widget is displayed.
 
-    ![](<images/displayondevice-2-ss.png>)
+    ![Service Studio toolbox showing the Display on Device widget for selection](images/displayondevice-2-ss.png "Display on Device Widget in Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,17 +40,17 @@ You can use the Display on Device UI pattern to select what elements are display
 
 1. From the Toolbox, drag the Display on Device widget into the Main Content area of your application's screen.
 
-    ![](<images/displayondevice-3-ss.png>)
+    ![Dragging the Display on Device widget into the Main Content area of an OutSystems application screen](images/displayondevice-3-ss.png "Dragging Display on Device Widget")
 
 1. Add the required content to the placeholders inside the Display on Device widget.
 
     In this example, we add images by dragging the Image widget into the Display on Device widget and selecting an image from the sample OutSystems UI images.
 
-    ![](<images/displayondevice-4-ss.png>)
+    ![Adding images to the Display on Device widget placeholders in OutSystems Service Studio](images/displayondevice-4-ss.png "Adding Content to Display on Device Widget")
 
 1. On the **Properties** tab, from the **Behavior** drop-down list, choose the device types you want to display this widget on. These images are displayed on the device types you specify, and not shown for any other devices.
 
-    ![](<images/displayondevice-5-ss.png>)
+    ![Configuring the Behavior properties of the Display on Device widget to specify device types in OutSystems Service Studio](images/displayondevice-5-ss.png "Setting Properties for Display on Device Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

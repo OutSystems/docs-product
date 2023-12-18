@@ -127,7 +127,7 @@ Run a similar command to the one you executed before, also replacing the placeho
 `curl https://{yourserver.com}/{YourReactiveApp}/`
 
 The result will look something like this:
-![](images/prerender-ss.png)
+![Screenshot showing the difference between the prerendered and live version of a webpage when using the curl command](images/prerender-ss.png "Prerendered vs Live Version Comparison")
 
 Note that instead of showing the full HTML for your rendered page, you call different JavaScript files. These are the files that render the content of your application to the final users when they open it.
 

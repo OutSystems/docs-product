@@ -26,7 +26,7 @@ Translate only the attributes that need translation. The Id attributes, which ar
 
 1.  Go to the **Data** tab, right-click the **Multilingual Locales** folder and add your desired Locales. Select the most generic locale - for example, (pt) as opposed to (pt-PT).
 
-    ![select locale](images/select-locale-ss.png)
+    ![Screenshot of the process to select a locale in the Multilingual Locales folder within the Data tab](images/select-locale-ss.png "Selecting a Locale")
 
     <div class="info" markdown="1">
 
@@ -54,7 +54,7 @@ In this procedure you create an action to enable the translation based on the sp
 
 The image below shows a sample completed action flow. It includes the optional CaseActions static entity. In your action flow, ensure all connections for your Case Definition and Case Status static entities correspond with those shown:
 
-![Setup Case Config Locale](images/setup-case-config-locale-ss.png)
+![Flowchart showing the setup of the Case Configuration locale action in the Logic tab](images/setup-case-config-locale-ss.png "Setup Case Configuration Locale Action Flow")
 
 1. In the **Logic** tab, create a server action and name it `SetupCaseConfiguration_Locale`.
 
@@ -123,7 +123,7 @@ This action should be called in the timer as many times as the amount of languag
 
 On the main **Bootstrap_CaseConfiguration** timer action, call the new action based on the locales we added in the data tab and the ones we want to translate.
 
-![Adapt Bootstrap](images/adapt-bootstrap-ss.png)
+![Diagram illustrating the adaptation of the Bootstrap_CaseConfiguration timer action for multilingual support](images/adapt-bootstrap-ss.png "Adapting the Bootstrap Timer Action")
 
 1. Add the server action **SetupCaseConfiguration_Locale** for all the desired locales.
 In our example we created two actions, one for English (en) and another for Dutch (NL). We named them "ENSetupCaseConfiguration_Locale" and "NLSetupCaseConfiguration_Locale".

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Modal UI Pattern to interrupt the end user and demand an action. It is implemented to direct an end user’s attention to important information. Ideal for when the end user is requested to enter information critical to continuing the current process.
 
-![](<images/modal-1.png?width=800>)
+![Example of a Modal UI Pattern in use](images/modal-1.png "Modal UI Pattern Example")
 
 **How to use the Modal UI Pattern**
 
@@ -28,7 +28,7 @@ For the purposes of this example, our app already contains a form where the user
   
     The Modal widget is displayed.
 
-    ![](<images/modal-5-ss.png>)
+    ![Screenshot showing the Modal widget in OutSystems Service Studio](images/modal-5-ss.png "Modal Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,43 +42,43 @@ For the purposes of this example, our app already contains a form where the user
 
 1. To From the Toolbox, drag the Modal widget into the Main Content area of your application's screen, and on the **Properties** tab, enter a name for the widget. In this example we enter `Confirmation`.
 
-    ![](<images/modal-6-ss.png?width=800>)
+    ![Screenshot of dragging the Modal widget into the Main Content area in Service Studio](images/modal-6-ss.png "Adding Modal Widget to Main Content")
 
     By default, the Modal widget contains Title, Icon, Content, and Footer placeholders.
 
 1. Add your content to the placeholders. In this example we add text to the Title placeholder, text to the Content placeholder, and 2 buttons (Yes and No) to the Footer placeholder.
 
-    ![](<images/modal-7-ss.png?width=800>)
+    ![Screenshot of adding content to the Modal widget placeholders in Service Studio](images/modal-7-ss.png "Modal Widget Content Configuration")
 
 1. In this example, to open the Modal widget, we need to set the **Method** and **Destination** properties for the **Yes** button. To do this, select the **Yes** button, and on the **Properties** tab, from the **Method** drop-down, select **Ajax Submit** and from the **Destination** select **New Screen Action**.
 
-    ![](<images/modal-8-ss.png?width=800>)
+    ![Screenshot of setting the Method and Destination properties for the Yes button in the Modal widget](images/modal-8-ss.png "Setting Modal Widget Properties")
 
 1. Enter a name for the screen action. In this example, we enter `ConfirmSend`.
 
-    ![](<images/modal-11-ss.png>)
+    ![Screenshot of entering a name for the screen action in the Modal widget configuration](images/modal-11-ss.png "Naming Screen Action for Modal")
 
 1. Select the **Logic** tab, navigate to **OutSystemsUIWeb > Modal** and drag the **ToggleModal** onto the screen action.
 
-    ![](<images/modal-9-ss.png?width=800>)
+    ![Screenshot of the ToggleModal action being dragged onto the screen action in Service Studio](images/modal-9-ss.png "ToggleModal Logic in Service Studio")
 
 1. On the **properties** tab, from the **WidgetId** drop-down, select the Id of the Modal widget. In this example, we select **Confirmation.Id**.
 
-    ![](<images/modal-10-ss.png>)
+    ![Screenshot of selecting the WidgetId for the Modal widget from the Properties tab in Service Studio](images/modal-10-ss.png "Selecting WidgetId for Modal")
 
 1. In this example, to close the Modal, we need to set the **Method** and **Destination** properties for the **No** button. To do this, double-click your screen name, select the **No** button, and on the **Properties** tab, from the **Method** drop-down, select **Ajax Submit** and from the **Destination** select the screen action you previously created. In this case **ConfirmSend**.
 
-    ![](<images/modal-12-ss.png>)
+    ![Screenshot of setting the Method and Destination properties for the No button in the Modal widget](images/modal-12-ss.png "Configuring No Button in Modal")
 
 1. On the **Properties** tab, you can change the Modal's look and feel by setting the (optional) properties.
 
-    ![](<images/modal-4-ss.png>)
+    ![Screenshot of the optional properties for changing the Modal's look and feel in Service Studio](images/modal-4-ss.png "Modal Properties Configuration")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 The result of this example looks something like the following:
 
-![](<images/modal-13-ss.png?width=800>)
+![Example of the final appearance of the Modal UI Pattern after configuration](images/modal-13-ss.png "Final Look of Modal UI Pattern")
 
 ## Properties
 

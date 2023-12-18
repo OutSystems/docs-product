@@ -32,7 +32,7 @@ If you are upgrading from a previous OutSystems version, you may use Service Cen
 
 When you login in LifeTime for the first time, you will be redirected to the **INFRASTRUCTURE** tab, where you can set up your infrastructure by registering your OutSystems environments.
 
-![](images/lifetime-configure-1.png)
+![Screenshot of the LifeTime Infrastructure tab showing the initial setup interface](images/lifetime-configure-1.png "LifeTime Infrastructure Tab")
  
 ### Prerequisites
 
@@ -66,7 +66,7 @@ In this step you will provide the information that LifeTime needs to establish a
 * The **credentials** of a Service Center user having **administrator privileges**. LifeTime will use these credentials to establish the connection to the environment.
 * The **LifeTime address** that the environment will use to communicate with LifeTime. This address must be reachable from the environment.
 
-![](images/lifetime-configure-2.png)
+![Step 1 of registering an OutSystems environment in LifeTime, requesting environment information](images/lifetime-configure-2.png "Register Environment Information Step")
 
 When you click the **NEXT** button, LifeTime will attempt to establish a secure two-way connection with the environment, and validates if the environment complies with all the prerequisites. If the validations are successful, LifeTime will collect from the environment the information that is required for the following steps, such as existing roles and users.
 
@@ -78,7 +78,7 @@ When you are registering the second or following environment in the infrastructu
 
 However, if you already know your environment belongs to another position in the sequence, you can set it to the correct position by changing the value in the dropdown.
 
-![](images/lifetime-configure-3.png)
+![Step 2 of registering an OutSystems environment in LifeTime, defining the environment's position in the infrastructure](images/lifetime-configure-3.png "Define Environment Position Step")
 
 After registering an environment, you will still be able to move it back and forth in the sequence using the **Switch Order** operation.
 
@@ -88,7 +88,7 @@ In this step you will define the permission level that each LifeTime role will h
 
 Click the dropdown next to each LifeTime role to change the permission that role will have in the environment. If you are installing OutSystems for the first time, this will be straight forward: you will only need to define which permissions you want to grant the Developer role in the environment you are registering.
 
-![](images/lifetime-configure-4.png)
+![Step 3 of registering an OutSystems environment in LifeTime, mapping LifeTime roles to environment permissions](images/lifetime-configure-4.png "Map LifeTime Roles with Environment Permissions Step")
 
 #### Step 4. Import existing users from the environment
 
@@ -98,7 +98,7 @@ In this step, you will validate the list of IT users that will be imported to Li
 
 If you are installing OutSystems for the first time, there are no users in the environment to be imported, so you can click the **NEXT** button to proceed.
 
-![](images/lifetime-configure-5.png)
+![Step 4 of registering an OutSystems environment in LifeTime, importing existing users from the environment](images/lifetime-configure-5.png "Import Existing Users from Environment Step")
 
 
 The environment users that already exist in LifeTime will not be imported. You can check the list of these users in section **Existing LifeTime Users**.
@@ -109,13 +109,13 @@ In this final step you will be presented with a short summary of the information
 
 Confirm the information and click the **REGISTER ENVIRONMENT** button to complete the registration process.
 
-![](images/lifetime-configure-6.png)
+![Step 5 of registering an OutSystems environment in LifeTime, reviewing and confirming the registration summary](images/lifetime-configure-6.png "Review and Confirm Registration Summary Step")
 
 When you click the **REGISTER ENVIRONMENT** button, LifeTime registers the environment in the infrastructure and starts a synchronization process in background, which might take several minutes. During this period, your applications will slowly appear in the Applications area.
 
 To proceed with the registration of another environment, click the **Register an Existing Environment** link and repeat steps 1 to 5.
 
-![](images/lifetime-configure-7.png)
+![Final step showing the completion of an OutSystems environment registration and the start of synchronization in LifeTime](images/lifetime-configure-7.png "Complete Registration and Synchronization")
 
 ## Language options
 

@@ -48,7 +48,7 @@ To configure or generate your mobile app package (iOS or Android) in Service Stu
 
 1. After defining or changing your mobile app iOS or Android settings, click **Generate Android app** or **Generate iOS app**. 
 
-    ![Native app settings in Service Studio](images/native-platforms-tab-ss.png)
+    ![Screenshot of the native mobile settings tab in Service Studio for configuring mobile app packages](images/native-platforms-tab-ss.png "Native app settings in Service Studio")
 
 ## Configure and generate a mobile app package in Service Center { #config-generate-service-center }
 
@@ -58,11 +58,11 @@ To configure or generate your mobile app package (iOS or Android) in Service Cen
 
 1. Click the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
 
-    ![Native app settings in Service Center](images/native-platform-section-sc.png)
+    ![Screenshot showing the native mobile settings section in Service Center for mobile app distribution](images/native-platform-section-sc.png "Native app settings in Service Center")
 
 1. To configure your mobile app package for the first time or to change the current configuration for a given platform (iOS or Android), click the **Configure** link for the iOS or Android entry.
 
-    ![Android settings in Service Center](images/configure-android-settings-sc.png)
+    ![Screenshot of the Android configuration options in Service Center for mobile app packages](images/configure-android-settings-sc.png "Android settings in Service Center")
 
 1. After defining or changing your mobile app iOS or Android settings, click **Save**.
 
@@ -90,7 +90,7 @@ To define a different domain name for your mobile app, do the following:
 
 1. In the **Distribute** tab, under the section **Native Platforms**, click the **Change** link in the **Domain Name** column.
 
-    ![Hostname settings for mobile apps](images/change-hostname-sc.png)
+    ![Screenshot depicting the process of changing the hostname for mobile apps in Service Center](images/change-hostname-sc.png "Hostname settings for mobile apps")
 
 1. Enter the new domain name for the mobile app and click **Apply**. 
 
@@ -108,7 +108,7 @@ To set a different version code for your mobile app, do the following:
 
 1. In the **Distribute** tab, under the section **Native Platforms**, click the **Change** link in the **Code** column for the iOS or Android entry.
 
-    ![App code version settings for mobile apps](images/change-versioncode-sc.png)
+    ![Screenshot showing where to change the app version code for mobile apps in Service Center](images/change-versioncode-sc.png "App code version settings for mobile apps")
 
 1. Enter the new code for the mobile app and click **Apply**.
 
@@ -128,11 +128,11 @@ To choose a MABS version do the following:
 
 1. In the **Settings** column, click the **Configure** link for the iOS or Android entry.
 
-    ![Mobile app settings screen](images/open-mabs-version-selection-sc.png)
+    ![Screenshot of the mobile app settings screen with options to configure MABS version in Service Center](images/open-mabs-version-selection-sc.png "Mobile app settings screen")
 
 1. At the end of the configuration settings page, select the MABS version you wish to use for generating the mobile app package for the mobile platform you're configuring (iOS or Android) in the current environment, either the latest available version or a specific version (see below for details).
 
-    ![Mobile Apps Build Service (MABS) version selection)](images/select-mabs-version-sc.png)
+    ![Screenshot of the MABS version selection options in Service Center for mobile app package generation](images/select-mabs-version-sc.png "Mobile Apps Build Service (MABS) version selection")
 
     **Note:** The MABS version selection is only available for apps whose native platform settings are already configured.
 
@@ -159,7 +159,7 @@ To obtain a mobile app build log:
 1. Click your mobile app name to navigate to the mobile app detail page.
 1. In the **Distribute** tab, under the **Native Platforms** section, click the log icon for the desired platform to download the build log.
 
-![Download build log](<images/download-build-logs-sc.png>)
+![Icon for downloading the build log of a mobile app in Service Center](images/download-build-logs-sc.png "Download build log")
 
 ## Updating your mobile app package
 
@@ -179,6 +179,6 @@ To set an app for the PWA distribution in Service Center, do the following:
 
 1. Click the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The PWA settings are in the **Progressive Web Application (PWA)** section.
 
-    ![PWA settings in Service Center](images/pwa-settings-sc.png)
+    ![Screenshot of the Progressive Web Application settings in Service Center for mobile app distribution](images/pwa-settings-sc.png "PWA settings in Service Center")
 
 1. Select the checkbox **Distribute as PWA**, then click **Apply**.

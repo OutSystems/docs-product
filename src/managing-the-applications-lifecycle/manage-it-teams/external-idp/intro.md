@@ -53,11 +53,11 @@ Applications that use Service Center as a user provider and that implement the r
 
 The following diagram shows the flow for the IT Users Integration with External IdP (OIDC) feature when you activate it.
 
-![External IdP flow](images/it-users-integration-external-idp-diag.png)
+![Diagram illustrating the IT Users Integration with External Identity Provider via OpenID Connect](images/it-users-integration-external-idp-diag.png "IT Users Integration with External IdP via OpenID Connect")
 
 The following diagram shows the communication flow between Service Studio, AI Mentor Studio, Integration, Experience, and Workflow Builder with External IdP (OIDC).
 
-![Service Studio IdP](images/ss-aims-builders-external-idp-integration-diag.png)
+![Diagram showing the communication flow between Service Studio, AI Mentor Studio, and other builders with External Identity Provider via OpenID Connect](images/ss-aims-builders-external-idp-integration-diag.png "Communication Flow with External IdP for Various OutSystems Builders")
 
 For example, consider using Service Studio with an External IdP,
 
@@ -70,7 +70,7 @@ For example, consider using Service Studio with an External IdP,
 
 The following diagram shows the communication flow between LifeTime with External IdP (OIDC).
 
-![LifeTime IdP](images/lifetime-external-idp-integration-diag.png)
+![Diagram depicting the communication flow for LifeTime with an External Identity Provider using OpenID Connect](images/lifetime-external-idp-integration-diag.png "LifeTime Communication Flow with External IdP via OpenID Connect")
 
 For example, consider using LifeTime with an External IdP,
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](images/timeline-5-diag.png?width=750)
+![Diagram illustrating the layout and classes of the Timeline UI Pattern in a Traditional Web App](images/timeline-5-diag.png "Timeline Layout Diagram")
 
 ## Advanced Use Case
 
@@ -38,4 +38,4 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-![](<images/timeline-6.png>)
+![Screenshot showing the Timeline Pattern used with ListRecords widget in a Traditional Web App](images/timeline-6.png "Timeline Pattern with ListRecords")

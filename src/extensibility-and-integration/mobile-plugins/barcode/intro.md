@@ -32,11 +32,11 @@ OutSystems provides a demo app to help you learn how to use this plugin. Install
 * Use the a predefined UI block
 * Create a settings page
 
-    ![demo app main screen](images/sample-app-main-ss.png)
+    ![Screenshot of the main screen in the Barcode Demo App showing options to scan a code, use a UI block, and create a settings page](images/sample-app-main-ss.png "Main Screen of the Barcode Demo App")
 
     Here is the settings screen:
 
-    ![demo app settings screen](images/sample-app-settings-ss.png)
+    ![Screenshot of the settings screen in the Barcode Demo App with options to customize the scanner](images/sample-app-settings-ss.png "Settings Screen of the Barcode Demo App")
 
 ## Creating a user interface
 
@@ -50,7 +50,7 @@ To create the logic to scan for barcodes, follow these steps in Service Studio:
 
 2. To open the camera in your app for scanning, drag the **ScanBarcode** action to the flow.
 
-    ![Client action to scan a barcode](images/client-action-ss.png)
+    ![Screenshot showing the ScanBarcode action in Service Studio's client actions for the Barcode Plugin](images/client-action-ss.png "Service Studio Client Actions for Barcode Plugin")
 
     In the **ScanBarcode** action you can set scan instructions, back or front camera, or UI orientation, and enable the scan button. For more information about the **ScanBarcode** action, see [Scanning options](#scanning-options).
 

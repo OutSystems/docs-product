@@ -1,11 +1,11 @@
 ---
+summary: The article provides guidelines for designing automated workflows in business processes using Automatic Activity in OutSystems
 locale: en-us
 guid: 19cbdea5-0bab-4d93-9e54-aa727f878b4b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 ---
-
 # Designing Automatic Activities
 
 Use this pattern to design action flows, adding automated business logic to your processes with the [Automatic Activity](<../../../ref/lang/auto/class-automatic-activity.md>) as, for example:

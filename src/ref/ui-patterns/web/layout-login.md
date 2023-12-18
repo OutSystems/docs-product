@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/layoutlogin-1-diag.png>)
+![Diagram showing the layout structure for the Layout Login web block in Traditional Web Apps](images/layoutlogin-1-diag.png "Layout Login Diagram")
 
 ### Login
 
@@ -37,7 +37,7 @@ Drag an image, GIF or video to this placeholder.
 1. Set the Style Classes of that container to `full-height background-your-color`.
 1. Publish and test.
 
-![](<images/layoutlogin-2-ss.png?width=750>)
+![Screenshot demonstrating how to change the background color in the Layout Login web block](images/layoutlogin-2-ss.png "Layout Login Background Color Change")
 
 ## Compatibility with other patterns
 

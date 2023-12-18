@@ -29,7 +29,7 @@ We also recommend that you watch the "[Mobile Apps in Trouble](https://learn.out
 A given screen element changes its contents or style very rapidly and in a
 repeated way, causing a bad user experience.
 
-![screen-flicker.gif](images/screen-flicker.gif)
+![GIF demonstrating the flickering issue with a screen element in a mobile app](images/screen-flicker.gif "Element Flicker Issue")
 
 #### Possible Causes
 

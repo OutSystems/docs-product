@@ -49,7 +49,7 @@ Create a mobile app and turn on the toggle **Distribute as PWA** in the app deta
 
 1. Start creating a new app, and in the **New Application** window select **Phone App** or **Tablet App** app template.
 
-    ![New Phone or Tablet app](images/pwa-new-app-window-ss.png?width=600)
+    ![Screenshot of the New Application window in Service Studio showing options for Phone App and Tablet App templates](images/pwa-new-app-window-ss.png "New Application Window in Service Studio")
 
     <div class="info" markdown="1">
 
@@ -63,7 +63,7 @@ Create a mobile app and turn on the toggle **Distribute as PWA** in the app deta
 
 1. In the app details, under the **Distribute** tab, turn on the toggle **Distribute as PWA**. To locate the **Distribute** tab, go back to the home screen of Service Studio and click your app icon.
    
-    ![The PWA toggle to activate progressive web app distribution](images/pwa-toggle.png?width=600)
+    ![Toggle switch in OutSystems Service Studio to enable Distribute as PWA option](images/pwa-toggle.png "PWA Distribution Toggle")
 
 **Notes**
 
@@ -83,7 +83,7 @@ Here is how you can run your PWA. Go to the app details in Service Studio and cl
 * **Scan the QR code** to open the PWA on your mobile device. 
 * **Click the link** to open the PWA in a desktop browser.
 
-![The QR code and links to run progressive web app](images/pwa-open-links-ss.png?width=350)
+![Service Studio screen showing QR code and links to open the PWA on different devices](images/pwa-open-links-ss.png "QR Code and Links for PWA")
 
 ### PWA in Android
 
@@ -93,11 +93,11 @@ Follow these steps to install and run your PWA on an Android device.
 
 1. Tap the banner **Add (my app) to Home screen**.
 
-    ![Installing app in Android](images/pwa-app-install-android.png?width=300)
+    ![Banner prompt on an Android device to add the app to the home screen](images/pwa-app-install-android.png "Installing PWA on Android")
 
 1. After you see a confirmation that Android added the shortcut to the home screen, open the app like any other app installed from a store. You can uninstall it like any other Android app.
     
-    ![PWA on Android home screen](images/pwa-app-android-home.png?width=300)
+    ![Icon of the progressive web app added to the Android home screen](images/pwa-app-android-home.png "PWA on Android Home Screen")
 
 ### PWA in iOS
 
@@ -107,19 +107,19 @@ Follow these steps to install and run your PWA on an iOS device.
 
 1. Tap the Share button. The share menu opens.
    
-    ![Share button in Safari iOS](images/pwa-share-button-ios.png?width=300)
+    ![Share button in Safari browser on an iOS device for adding the app to the home screen](images/pwa-share-button-ios.png "Share Button in Safari on iOS")
 
 1. Tap **Add to home screen**. The confirmation screen opens.
 
-    ![Share options on iOS](images/pwa-share-options-ios.png?width=300)
+    ![Options menu in Safari on iOS showing the Add to Home Screen option](images/pwa-share-options-ios.png "Share Options on iOS")
 
 1. In the confirmation screen, tap **Add**.
     
-    ![Confirm adding to iPhone home screen](images/pwa-ios-share-confirm.png?width=300)
+    ![Confirmation dialog in iOS Safari for adding the app to the home screen](images/pwa-ios-share-confirm.png "Confirm Adding to iPhone Home Screen")
 
 1. Your app should now be on the home screen. You can uninstall it like any other iOS app.
     
-    ![Add to home screen share option on iOS](images/pwa-app-ios-home.png?width=300)
+    ![Progressive web app icon displayed on the iOS home screen](images/pwa-app-ios-home.png "PWA Added to iOS Home Screen")
 
 
 ## Customizing your PWA
@@ -137,7 +137,7 @@ You can edit your app name, description, color, and logo through the UI of Servi
 
 Use a prompt to tell your users they can install the PWA version of the app. For the iOS devices, try out the community-contributed plugin [Prompt to Install PWA](https://www.outsystems.com/forge/component-overview/8216/prompt-to-install-pwa), or develop a custom solution. 
 
-![A prompt to install PWA in iOS](images/prompt-pwa-install.png?width=300)
+![Custom prompt suggesting to install the PWA on an iOS device](images/prompt-pwa-install.png "Prompt to Install PWA on iOS")
 
 Android (Chrome) offers a native experience for the install prompt, so you don't need a plugin. 
 
@@ -154,7 +154,7 @@ More plugins are coming soon, and you can contribute with your own on the Forge.
 
 To debug a PWA, emulate the app in Google Chrome. Go to the **Debugger** tab, and then in the **Debug Setup** select **Emulate using Chrome**.
 
-![Activating the PWA debugger](images/pwa-debug-ss.png?width=750)
+![Service Studio screen showing the PWA debugger activation option](images/pwa-debug-ss.png "PWA Debugger Activation")
 
 <div class="info" markdown="1">
 

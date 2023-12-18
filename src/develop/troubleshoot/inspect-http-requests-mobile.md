@@ -18,7 +18,7 @@ Applies only to Mobile Apps.
 
 Use the network inspector to see the network activity of your iOS app. The user interface of the network inspector consists of a toolbar and a button that opens the screen with the network traffic details. 
 
-![Network inspector settings](images/network-inspector-toolbar.png?width=400)
+![Screenshot of the network inspector toolbar in an iOS app](images/network-inspector-toolbar.png "Network Inspector Toolbar")
 
 <div class="info" markdown="1">
 
@@ -37,25 +37,25 @@ Here is how you can activate and open the network inspection screen on the iOS d
 
 1. Hold three fingers on the screen for about half of a second. You can perform this gesture anywhere in the app at any time.
 
-    ![Network inspector settings](images/network-inspector-gesture.png?width=300)
+    ![Illustration of the three-finger gesture to activate the network inspector on an iOS device](images/network-inspector-gesture.png "Activating Network Inspector")
 
 1. The network toolbar shows. Tap **Network**.
 
-    ![Network inspector toolbar](images/network-inspector-toolbar.png?width=300)
+    ![Screenshot of the network inspector toolbar in an iOS app](images/network-inspector-toolbar.png "Network Inspector Toolbar")
 
 1. The network debugging is disabled by default on iOS, and you need to enable it. Tap the **Settings** button and activate **Network Debugging** option. Tap **Done** when you finish.
 
     The settings button:
 
-    ![Network inspector settings](images/network-inspector-settings.png?width=300)
+    ![Close-up of the network inspector settings button in an iOS app](images/network-inspector-settings.png "Network Inspector Settings Button")
 
     The debugging settings:
 
-    ![Network debugging](images/network-inspector-debugging.png?width=300)
+    ![Network debugging settings screen on an iOS app with the 'Network Debugging' option highlighted](images/network-inspector-debugging.png "Enabling Network Debugging")
 
 1. Finally, tap the **Network** button to show all requests. Tap a request to see the details.
 
-    ![Network debugging](images/network-inspector-request-list.png?width=300)
+    ![Screen showing a list of network requests in the network inspector of an iOS app](images/network-inspector-request-list.png "Network Requests List")
 
 <div class="info" markdown="1">
 

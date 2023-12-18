@@ -17,11 +17,11 @@ To reference sample data, include the **OutSystemsSampleDataDB** module in your 
 
 1. Click the manage dependencies icon in the Service Studio toolbar (or press CTRL+Q) to open the **Manage Dependencies** window.
 
-    ![Manage dependencies icon](images/manage-dependencies-ss.png)
+    ![Screenshot of the Manage Dependencies window in OutSystems Service Studio](images/manage-dependencies-ss.png "Manage Dependencies in Service Studio")
 
 2. Search for **OutSystemsSampleDataDB** and select it in the results pane. In the right pane select all **Entities** of the module, then click **Apply** to confirm and close the **Manage Dependencies** window.
 
-    ![Manage dependencies adding module](images/manage-dependencies-sample-data-module-ss.png)
+    ![Selecting entities from the OutSystemsSampleDataDB module in the Manage Dependencies window](images/manage-dependencies-sample-data-module-ss.png "Selecting OutSystemsSampleDataDB Module")
 
 The Entities are now available in the **Data** tab of **Service Studio**.
 
@@ -45,7 +45,7 @@ You may create entities to suit your own business requirements by changing the s
 1. In the **Logic** tab expand **Server Actions**  and then expand **OutSystemsSampleDataDB**.   
 1. Expand **Export** and **DownloadOriginalData** Server Action from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Export** to save the original source files in a zip archive. You need to create a logic flow to download a file by adding a **Download** element at the end of the flow.  
 
-    ![A flow to export sample data](images/sample-data-export-ss.png)
+    ![OutSystems Service Studio logic flow for exporting original sample data](images/sample-data-export-ss.png "Exporting Sample Data")
 
 1. Edit the source files in the zip archive with your own data.
 
@@ -63,15 +63,15 @@ If any app extends the provided entities, the **Foreign Key** constraint will no
 
 1. Access `http://<yourserver>/ServiceCenter/` and, from the **Factory** > **Application** area, search for **OutSystems Sample Data** and click it. 
     
-    ![Search for OutSystems Sample App](images/search-for-sample-data-app-sc.png)
+    ![Searching for the OutSystems Sample Data application in Service Center](images/search-for-sample-data-app-sc.png "Searching for OutSystems Sample Data Application")
     
 1. Click **OutSystemsSampleDataDB** in the **Application OutSystems Sample Data** window.
    
-    ![Search for OutSystems Sample App](images/application-outsystems-sample-data-sc.png)
+    ![OutSystems Sample Data application details in Service Center](images/application-outsystems-sample-data-sc.png "OutSystems Sample Data Application Details")
 
 1. In the **Timers** tab in the module details window, select **Reset_SampleData**, and then click **Run Now**.
     
-    ![Reset sample data timer](images/reset-sample-data-timer-sc.png)
+    ![Reset Sample Data timer option in the OutSystems Service Center module details window](images/reset-sample-data-timer-sc.png "Reset Sample Data Timer")
 
 Other timers that may be reset in the same way are described in the list below:
 

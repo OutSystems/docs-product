@@ -13,7 +13,7 @@ Fetch data in your apps by using everyday language to create queries. Ask for da
 
 Fetching data using human language includes the following steps:
 
-![Main steps of fetching data using human language](images/fetching-data-using-human-language-diag.png)
+![Diagram illustrating the steps to fetch data using human language in Service Studio](images/fetching-data-using-human-language-diag.png "Fetching Data Using Human Language Diagram")
 
 1. In an aggregate, you ask for data using human language.
 
@@ -35,13 +35,13 @@ To use this capability check the following:
 
 In an aggregate, add your data request in the text input, and click **Get Data**.
 
-![Ask for data using human language](images/add-your-data-request-ss.png)
+![Screenshot showing how to add a data request in Service Studio's aggregate](images/add-your-data-request-ss.png "Add Your Data Request in Service Studio")
 
 While you write your request, Service Studio provides suggestions based on context for the name of entities, attributes, variables, and functions.
 
 Use these suggestions to become more productive and to ensure you get the most reliable results. For example, if you have multiple attributes with the same name, use the right suggestion to quickly and accurately define the correct attribute.
 
-![Dropdown with suggestions for entity name](images/data-suggestions-ss.png)
+![Screenshot of Service Studio providing suggestions while typing a data request](images/data-suggestions-ss.png "Data Suggestions in Service Studio")
 
 ### Use cases
 

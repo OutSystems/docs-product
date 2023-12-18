@@ -41,7 +41,7 @@ In order to identify the several server profiles in the farm environment, please
 
 * A **loaded** front-end will have users accessing its applications but will not allow the Application deployment process to execute. 
 
-![](images/balanced-upgrade-highly-loaded-farms_0.png) 
+![Diagram illustrating the balanced upgrade process in a highly loaded OutSystems farm environment, showing updating and loaded front-ends.](images/balanced-upgrade-highly-loaded-farms_0.png "Balanced Platform Server Upgrade Process Diagram") 
 
 Note that, if the environment uses **Zones** for application segmentation, you must consider **updating** and **loaded** front-end profiles in each Zone. In that case, think of each Zone as if it were a distinct environment.
 

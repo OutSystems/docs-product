@@ -18,11 +18,11 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Adding a Filter to an Open Image
 
-![](images/light_box_add_filter.png)
+![Screenshot showing the addition of a filter to an image in Lightbox](images/light_box_add_filter.png "Adding a Filter to Lightbox Image")
 
 **Result**:
 
-![](images/Lightbox_filter.gif)
+![Animated GIF demonstrating the result of adding a filter to an image in Lightbox](images/Lightbox_filter.gif "Result of Adding Filter to Lightbox Image")
 
 ## Loading Binary Images After Click on Lightbox Image (images from database)
 
@@ -42,7 +42,7 @@ Follow the steps below to **expose the REST API**:
 
 1. Drag the assign widget and set Image (output parameter) with **GetPictureById.List.Current.Pictures.Image**.
 
-    ![](images/lightbox-drag-widget-set-image-ss.png)
+    ![Screenshot of the process to set the image output parameter in Lightbox by dragging a widget](images/lightbox-drag-widget-set-image-ss.png "Setting Image Output Parameter in Lightbox")
 
 Follow the steps below to **consume the REST API**:
 
@@ -52,7 +52,7 @@ Follow the steps below to **consume the REST API**:
 
 1. On the method URL, paste your domain URL + URL Path (get this on Expose REST API) + ?PictureId={PictureId}
 
-    ![](images/lightbox-paste-your-domain-ss.png)
+    ![Screenshot showing where to paste the domain URL for the REST API in Lightbox](images/lightbox-paste-your-domain-ss.png "Pasting Domain URL for REST API in Lightbox")
 
 Now we are able to create our screen with all pictures from the database using the LightBoxImage pattern to display them.
 
@@ -64,27 +64,27 @@ Now we are able to create our screen with all pictures from the database using t
 
 1. Drag your Pictures database to the **GetImagesIds** action and the **ListAppendAll** action.
 
-    ![](images/lightbox-drag-pictures-database-ss.png)
+    ![Screenshot illustrating the action of dragging the pictures database to the GetImagesIds action in Lightbox](images/lightbox-drag-pictures-database-ss.png "Dragging Pictures Database to GetImagesIds Action")
 
 1. In the **ListAppendAll** set the aggregate as source list (GetPictures.List) and map from pictures to Pictures Identifier. To do that, set **Pictures.Id** in the **Value** option.
 
-    ![](images/lightbox-list-append-all-ss.png)
+    ![Screenshot showing the ListAppendAll action in Lightbox to append pictures to a list](images/lightbox-list-append-all-ss.png "Appending to List in Lightbox")
 
 1. Drag the List widget to the screen.
 
 1. Drag the LightboxImage pattern to the List widget.
 
-    ![](images/lightbox-image-pattern-drag-ss.png)
+    ![Screenshot demonstrating how to drag the Lightbox Image pattern to a List widget](images/lightbox-image-pattern-drag-ss.png "Dragging Lightbox Image Pattern to List Widget")
 
 1. Set the ImageURL parameter on the **Lightbox Image** with your URL REST API + your fetched data.  
 a. "/your-module/rest/GetImages/GetFullSizeImage?PictureId=" + GetImagesIds.List.Current
 
-    ![](images/lightbox-set-url-parameter-ss.png)
+    ![Screenshot of setting the ImageURL parameter on the Lightbox Image pattern](images/lightbox-set-url-parameter-ss.png "Setting ImageURL Parameter in Lightbox")
 
 1. In the Lightbox Thumbnail Image set External URL on type and the URL REST API + your fetched data.  
 a. "/your-module/rest/GetImages/GetFullSizeImage?PictureId=" + GetImagesIds.List.Current
 
-    ![](images/lightbox-set-external-url-ss.png)
+    ![Screenshot showing the setting of an external URL in the Lightbox Thumbnail Image](images/lightbox-set-external-url-ss.png "Setting External URL in Lightbox Thumbnail Image")
 
 1. Publish your app.
 
@@ -97,10 +97,10 @@ a. "/your-module/rest/GetImages/GetFullSizeImage?PictureId=" + GetImagesIds.List
 1. Set the **ImageURL** parameter on the LightBoxImage and **Thumbnail** image with your external URL.  
 For example: GetPictures.List.Current.Pictures.ExternalURL.
 
-    ![](images/lightbox-set-image-url-ss.png)
+    ![Screenshot of setting the ImageURL parameter in Lightbox with an external URL](images/lightbox-set-image-url-ss.png "Setting Image URL in Lightbox with External URL")
 
 1. Publish your app.  
 
 ## Layout and Classes
 
-![](images/lightbox-layout-classes.png)
+![Screenshot displaying the layout and classes used in Lightbox](images/lightbox-layout-classes.png "Lightbox Layout and Classes")

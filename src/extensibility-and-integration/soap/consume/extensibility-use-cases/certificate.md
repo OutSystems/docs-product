@@ -23,7 +23,7 @@ Do the following:
 
 In the following example, we defined an action in Integration Studio called "SetupCertificateAuth", with a "ClientCertificateContent" input parameter of type Binary Data, and a "CertificatePassword" input parameter of type Text.
 
-![](<images/is-action-setup-client-certificate-auth.png>)
+![Screenshot of Integration Studio showing the action setup for client certificate authentication with input parameters for certificate content and password](images/is-action-setup-client-certificate-auth.png "Integration Studio Action Setup for Client Certificate Authentication")
 
 2\. Click 'Edit Source Code .NET'. In Visual Studio .NET, set the project target framework and add a reference to the `System.ServiceModel` assembly.  
 

@@ -34,29 +34,29 @@ To deploy and set up OutSystems on Microsoft Azure you must execute the followin
 
 1. Fill in the information for the **Basics** blade and click OK to proceed to the next blade. The **Solution Identifier** you choose will be used to prefix the name of all resources created during the deployment, such as virtual machines or databases. In the **Resource Group** section click **Create new** and enter a name.
 
-    ![Basics blade](images/azure-setup-basics.png)
+    ![Screenshot of the Azure Setup Basics blade with fields for Solution Identifier and Resource Group](images/azure-setup-basics.png "Azure Setup Basics Blade")
 
 1. In the **Virtual Machine Size** blade, choose between a Standalone (1 VM) or a Farm (1 VM and 1 scale set) production environment. Select the size of each virtual machine, using one of the recommended sizes. Click **OK** to proceed to the next blade.
 
-    ![Virtual Machine blade](images/azure-vm-size.png?width=700)
+    ![Screenshot showing the selection of virtual machine size in Azure with options for Standalone or Farm production environment](images/azure-vm-size.png "Azure Virtual Machine Size Selection")
 
 1. In the **Virtual Network Size** blade, confirm the values for the **Virtual network** and **Subnets** sections, and click **OK** in the **Subnets** section. Click **OK** to proceed to the next blade.
 
-    ![Virtual Network Size blade](images/azure-subnets.png?width=700)  
+    ![Screenshot of the Azure Virtual Network Size blade with Virtual network and Subnets configuration options](images/azure-subnets.png "Azure Virtual Network and Subnets Configuration")  
 
 1. Click **OK** in the **Summary** blade.
 
-    ![Summary blade](images/azure-summary.png?width=700)  
+    ![Screenshot of the Azure Summary blade displaying a summary of the deployment settings](images/azure-summary.png "Azure Deployment Summary")  
 
 1. Click the **Create** button in the **Buy** blade to start the deployment.
 
 The deployment process might take about 1 hour to complete. You can check the deployment status in the **Deployments** section of the resource group. OutSystems deployment is finished when all the listed deployments are successful.
 
-![Deployments section](images/setup-image11.png?width=700)
+![Screenshot showing the deployment status of OutSystems on Microsoft Azure in the Azure Portal](images/setup-image11.png "OutSystems Deployment Status in Azure")
 
 In your Azure Portal, you will now find a resource group with the name that you defined in the deployment wizard grouping all the newly created resources. All the [resources deployed](quick-reference.md#azure-resources "OutSystems on Microsoft Azure - Quick Reference") by OutSystems on Microsoft Azure solution template are prefixed with the solution identifier:
 
-![Resource group overview](images/setup-image15.png?width=700)
+![Screenshot of the Azure Portal displaying the resource group with all resources created by the OutSystems solution template](images/setup-image15.png "OutSystems Azure Resources")
 
 ## Apply your OutSystems License
 
@@ -73,11 +73,11 @@ To apply your OutSystems license to the **development** environment, do the foll
 
 1. Go to the details of the **application gateway** created for the development environment to get the **DNS name** of its public IP address. For example, if your solution identifier is "myid", the application gateway of the development environment is "myid-dev-appgw". Click on the Frontend public IP address field to go to the details page of the public IP address.
 
-    ![Application gateway](images/setup-image4.png?width=700)  
+    ![Screenshot of the Azure Portal showing the application gateway details for the OutSystems development environment](images/setup-image4.png "OutSystems Development Environment Application Gateway")  
 
 1. You will access the environment through the **DNS name** of the public IP address. In the Public IP address details page, use the "Click to copy" option to copy the DNS name.
 
-    ![Public IP Address](images/setup-image7.png?width=700)  
+    ![Screenshot of the Azure Portal with the DNS name of the public IP address for the OutSystems environment](images/setup-image7.png "OutSystems Public IP Address DNS Name")  
 
 1. Using the DNS name from the previous step, access the Service Center management console of the environment with the following URL: `http://<DNS_name>/ServiceCenter`.
 
@@ -90,7 +90,7 @@ To apply your OutSystems license to the **development** environment, do the foll
 
 1. Take note of the **Serial Number** of the environment. You will need it to get the license file from OutSystems Customer portal.
 
-    ![Serial Number](images/setup-image9.png?width=700)  
+    ![Screenshot of the Service Center management console displaying the Serial Number of the OutSystems environment](images/setup-image9.png "OutSystems Environment Serial Number")  
 
 1. Follow the steps at [Get a license file for an environment](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Manage_and_Upgrade/03_Get_a_license_file_for_an_environment#Self-managed_environments) to register the Serial Number and download the license file.
 
@@ -110,15 +110,15 @@ To add the trusted certificate to the Application Gateway of each environment (i
 
 1. From the Settings menu, select **Listeners**.
 
-    ![Application gateway](images/additconf-image12.png?width=700)  
+    ![Screenshot of the Azure Portal showing the Listeners settings in the Application Gateway](images/additconf-image12.png "Azure Application Gateway Listeners")  
 
 1. Select the **appGatewayHttpsListener**.
 
-    ![appGatewayHttpsListener](images/additconf-image20.png?width=700)  
+    ![Screenshot of the Azure Portal displaying the appGatewayHttpsListener details in the Application Gateway](images/additconf-image20.png "Azure Application Gateway Https Listener")  
 
 1. Add a new certificate by uploading the .pfx file along with the password and a name of your choice.
 
-    ![The certificate combo box](images/additconf-image11.png)
+    ![Screenshot of the Azure Portal interface for adding a new certificate to the Application Gateway](images/additconf-image11.png "Adding a Certificate to Azure Application Gateway")
 
 ## Register the environments in LifeTime
 
@@ -126,17 +126,17 @@ To register your environments in the LifeTime deployment management console, do 
 
 1. Go to the details of the **application gateway** created for the LifeTime environment to get the **DNS name** of its public IP address. For example, if your solution identifier is "myid", the application gateway of the LifeTime environment is "myid-life-appgw". Click on the Frontend public IP address field to go to the details page of the public IP address.
 
-    ![Application Gateway](images/setup-image22.png?width=700)  
+    ![Screenshot of the Azure Portal showing the application gateway details for the OutSystems LifeTime environment](images/setup-image22.png "OutSystems LifeTime Environment Application Gateway")  
 
 1. You will access the environment through the **DNS name** of the public IP address. In the Public IP address details page, use the "Click to copy" option to copy the DNS name.
 
-    ![DNS name](images/setup-image18.png?width=700)  
+    ![Screenshot of the Azure Portal with the DNS name of the public IP address for the OutSystems LifeTime environment](images/setup-image18.png "OutSystems LifeTime Public IP Address DNS Name")  
 
 1. Using the DNS name from the previous step, access the LifeTime console with the following URL: `http://<DNS_name>/LifeTime`.
 
 1. To register the development environment, we will use the **DNS name** of the public IP address associated to its application gateway, for example "myid-devappgw-PIP". Go to the details of the **public IP address** and use the "Click to copy" option to copy the DNS name.
 
-    ![Public IP address](images/setup-image7.png?width=700)  
+    ![Screenshot of the Azure Portal with the DNS name of the public IP address for the OutSystems environment](images/setup-image7.png "OutSystems Public IP Address DNS Name")  
 
 1. Follow the instructions on [registering an environment in LifeTime](../lifetime-configure.md#register-an-environment), using the DNS name you copied in the step below as the Environment Address in the environment registration wizard.
 
@@ -144,7 +144,7 @@ To register your environments in the LifeTime deployment management console, do 
 
 At this point, we recommend that you change your password for the LifeTime administration user (admin). Choose **My Settings** on the top right side of the LifeTime header to go to your settings page where you can change your password. Changing the admin password on LifeTime automatically changes the admin password of the Service Center management console of each registered environment.
 
-![My Settings](images/setup-image20.png)
+![Screenshot of the LifeTime console with the option to change the admin password highlighted](images/setup-image20.png "OutSystems LifeTime Admin Password Change")
 
 ## Install the extended product components
 
@@ -160,11 +160,11 @@ There are eight components that you need to set up in your **development environ
 
 1. Click **Install**. After the system verifies the prerequisites the message "Application is ready to be installed" shows.
 
-    ![Installation ready](images/forge-ready-to-install.png?width=500)
+    ![Screenshot of the OutSystems Forge showing the message 'Application is ready to be installed'](images/forge-ready-to-install.png "OutSystems Forge Installation Confirmation")
 
 1. Again, click **Install**. The application list in Service Studio opens, with a progress bar under the icon of the Charts Web component. The icon disappears after the installation finishes.
 
-    ![Component installing](images/applinstall.png?width=300)
+    ![Screenshot of the OutSystems Service Studio with a progress bar indicating the installation of an application](images/applinstall.png "OutSystems Service Studio Application Installation")
 
 1. Follow the steps 2 to 5 to install the remaining extended product components.
 

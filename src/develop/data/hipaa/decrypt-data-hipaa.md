@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Applicati
 
 To enable the decryption of an entity's data, do the following:
 
-![Decrypting entity data](images/decrypt-data-diag.png)
+![Flowchart illustrating the decryption process for HIPAA compliant data in OutSystems applications](images/decrypt-data-diag.png "Decryption Process Diagram")
 
 1. Start by [creating a decryption action](#decrypt-action) that holds the decryption logic for the data of an entity.
 

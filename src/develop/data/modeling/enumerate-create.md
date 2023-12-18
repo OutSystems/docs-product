@@ -37,7 +37,7 @@ To categorize places do the following in the GoOutWeb module:
 
 4. By setting the Identifier, create the following records: `Restaurant`, `Cafe`, `Museum`, `Attraction,` and `Hotel`.
 
-    ![](images/static-entity-records.gif)
+    ![Animated GIF showing the process of adding records to a Static Entity named 'Category' with values like Restaurant, Cafe, Museum, Attraction, and Hotel in OutSystems.](images/static-entity-records.gif "Adding Records to Static Entity in OutSystems")
 
 5. Drag the relationship connector from the Category static entity to the Place entity. This creates a one-to-many relationship.
 
@@ -60,7 +60,7 @@ Now that places have a category, we can use it for searching. In the Home screen
 
 The end result should be like this:
 
-![](images/categories-list.png)
+![Screenshot of the GoOut application's Home screen displaying a list of categories including Restaurant, Cafe, Museum, Attraction, and Hotel for user selection.](images/categories-list.png "Categories List in GoOut Application")
 
 In the Home screen, we already have a list that shows the top five places according to their rating. This list is visible when the time of day is during lunch hours. We want to only show restaurants in this list of places:
 

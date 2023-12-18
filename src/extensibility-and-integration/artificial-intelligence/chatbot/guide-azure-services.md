@@ -32,7 +32,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 
 1. Click the search field (or press **Ctrl + /** ) and enter `QnA Maker`. Locate the **Marketplace** section in the results and click **QnA Maker**.
    
-    ![Azure portal search](images/azure-portal-qna-search.png?width=600)
+    ![Screenshot showing how to search for QnA Maker in the Azure portal](images/azure-portal-qna-search.png "Azure Portal QnA Maker Search")
 
 1. Enter the information for your QnA Maker and click **Create**. Here is what you need to provide:
 
@@ -55,7 +55,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 
     * **App insights**. If you want to track your app performance and collect telemetry information, activate this option.
   
-    ![Azure portal search](images/azure-qna-maker-service-new.png?width=500)
+    ![Screenshot of the Azure portal interface for creating a new QnA Maker service](images/azure-qna-maker-service-new.png "Azure QnA Maker Service Creation")
 
 1. Click **Create**. After validation and deployment, the website redirects you to the Azure home page.
 
@@ -84,15 +84,15 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 
 1. Locate your bot name in **Recent resources** or search the bot in the search bar, then click the bot name. The settings page opens.
 
-    ![Web bot in Azure home](images/azure-web-app-bot-dashboard.png?width=500)
+    ![Screenshot of the Azure Web App Bot dashboard showing the bot settings](images/azure-web-app-bot-dashboard.png "Azure Web App Bot Dashboard")
 
 1. Open **Channels** from the side menu, locate **Add a featured channel** and click **Configure direct line channel button**. A page to configure direct line opens. 
 
-    ![New direct line channel for bot](images/azure-web-app-bot-service-direct-channel-new.png?width=500)
+    ![Screenshot of the Azure portal showing the configuration page for a new Direct Line channel in a Web App Bot service](images/azure-web-app-bot-service-direct-channel-new.png "Azure Web App Bot Direct Line Channel Configuration")
 
 1. In **Configure Direct Line** you can copy a direct line key now, or do it later when you are configuring the OutSystem component. Click **Done** to return to the main settings page.
 
-    ![Direct line channel secret key](images/azure-web-app-bot-service-direct-channel-key.png?width=500)
+    ![Screenshot displaying the secret key for a Direct Line channel in the Azure Web App Bot service](images/azure-web-app-bot-service-direct-channel-key.png "Azure Web App Bot Direct Line Channel Secret Key")
 
 ## Getting the settings from bot service { #get-settings }
 
@@ -114,7 +114,7 @@ Azure application and password fields are, by default, named **MicrosoftAppId** 
 
 1. In the **Configuration** page, under the **Application settings** section, locate **MicrosoftAppId** and **MicrosoftAppPassword**. Click the eye icons to reveal the field values. Copy the values.
 
-    ![Configuration values for bot](images/azure-web-app-bot-service-direct-config.png?width=600)
+    ![Screenshot showing the configuration values for MicrosoftAppId and MicrosoftAppPassword in the Azure Web App Bot service](images/azure-web-app-bot-service-direct-config.png "Azure Web App Bot Service Configuration")
 
 Another way to get the settings is to download the source code. In the bot configuration page, click **Build** in the side menu and then **Download bot source code**. Open the **settings.json** file in the source code folder to get the values.
 
@@ -128,11 +128,11 @@ You can get the secret after you [create a direct line channel](#add-a-direct-ch
 
 1. In the Connect to channels page, click **Edit** next to **Direct Line**. **Configure Direct Line** page opens.
 
-    ![Edit direct channel for bot](images/azure-web-app-bot-service-direct-channel-edit.png?width=600)
+    ![Screenshot of the Azure portal interface for editing a Direct Line channel in a Web App Bot service](images/azure-web-app-bot-service-direct-channel-edit.png "Editing Azure Web App Bot Direct Line Channel")
 
 1. In the **Configure Direct Line** page, click **Show** under one of the secret keys. Copy the value.
 
-    ![Secret key of a direct channel for bot](images/azure-web-app-bot-service-direct-channel-key.png?width=600)
+    ![Screenshot displaying the secret key for a Direct Line channel in the Azure Web App Bot service](images/azure-web-app-bot-service-direct-channel-key.png "Azure Web App Bot Direct Line Channel Secret Key")
 
     <div class="info" markdown="1">
 
@@ -160,11 +160,11 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 
 1. Click the plus button titled **Create a resource**.
 
-    ![Azure portal](images/azure-add-resource-button.png?width=400)
+    ![Screenshot of the Azure portal highlighting the 'Create a resource' button](images/azure-add-resource-button.png "Azure Portal Create a Resource Button")
 
 1. Select **AI + Machine Learning** and then click **Web App Bot**. A page to create In the new Web App Bot opens.
     
-    ![New Web App Bot](images/azure-web-app-bot-service-new.png?width=450)
+    ![Screenshot of the Azure portal page for creating a new Web App Bot service](images/azure-web-app-bot-service-new.png "Creating a New Azure Web App Bot")
     
 1. Enter the information for your bot and click **Create**. Here is what you need to provide:
 
@@ -177,7 +177,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
     * **App service plan / location**. This is a set of the compute resources which the bot uses.   
     * **Microsoft App ID and password**. Verify the selected option is **Autocreate App Id and password**.
 
-    ![New Web App Bot](images/azure-web-app-bot-service-create.png?width=250)
+    ![Screenshot showing the form to create a new Web App Bot service in the Azure portal](images/azure-web-app-bot-service-create.png "Azure Web App Bot Service Creation Form")
 
     <div class="info" markdown="1">
 

@@ -33,7 +33,7 @@ Install [File Demo App](https://www.outsystems.com/forge/component-overview/1001
 * List folders
 * Save text in temporary file
 
-![Demo app](images/sample-app.png?width=300)
+![Screenshot of the File Demo App interface showing file management features](images/sample-app.png "File Demo App Interface")
 
 ## Working with binary content
 
@@ -50,7 +50,7 @@ Here are some examples of how to use File Plugin.
 
 The **SaveFile** requires a binary input, so you need to convert the text to binary first. Use the **TextToBinaryData** (1) action from the **BinaryData** extension (you need to reference the **BinaryData** extension first). You can then use the **SaveFile** action from **Logic** > **Client Actions** > **FilePlugin** to create a file and save text (2). Set the file name and the path in the properties (3).
 
-![Flow to save text in file on mobile device](images/save-text-in-file-mobile-ss.png?width=550)
+![Step-by-step illustration of saving text in a file using the SaveFile action in OutSystems](images/save-text-in-file-mobile-ss.png "Save Text in File Process")
 
 <div class="info" markdown="1">
 
@@ -62,7 +62,7 @@ Refer to [Working with binary content](#working-with-binary-content) for more in
 
 Use the **ListDirectory** action from **Logic** > **Client Actions** > **ListDirectory** to get the list of the files (1). The file names are in the list **ListDirectory.FileList** (2).
 
-![Flow to list the files on a mobile device](images/list-files-mobile-ss.png?width=500)
+![Example of listing files in a directory using the ListDirectory action in OutSystems](images/list-files-mobile-ss.png "List Files in Directory")
 
 ## Reference
 

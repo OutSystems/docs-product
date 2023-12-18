@@ -17,16 +17,16 @@ To do this:
 
 1. [Create a new role](create-an-it-role.md#create-a-new-role) for the team manager that has the infrastructure-wide permission **Manage Teams and Application Roles**. The team manager will only be able to assign roles that have the same or lower permissions than his/her own. Therefore, you must set the permission levels for each environment to the maximum level that the team manager needs to assign to the team.  
 
-    ![](images/managers-handle-teams-new-role-lt.png?width=800)
+    ![Screenshot of the process to create a new role for team managers in OutSystems](images/managers-handle-teams-new-role-lt.png "Creating a New Role for Team Managers")
 
 1. [Add the team manager to the team](create-an-it-team.md#add-it-users-to-the-team) with the new role.  
 
-    ![](images/managers-handle-teams-add-to-team-lt.png)
+    ![Interface showing how to add a team manager to an IT team in OutSystems](images/managers-handle-teams-add-to-team-lt.png "Adding a Team Manager to the Team")
 
 When a new user joins the company, the infrastructure manager still needs to [create the user](create-an-it-user.md) and set the default role. Then, the team manager can add the user to the team.
 
-![](images/managers-handle-teams-add-users-lt.png)
+![Step-by-step guide for an infrastructure manager to add a new IT user in OutSystems](images/managers-handle-teams-add-users-lt.png "Infrastructure Manager Adding a New User")
 
 When adding the user to the team, the team manager can only assign a role that has the same or lower permissions than his/her own.
 
-![](images/managers-handle-teams-add-user-role-lt.png)
+![Procedure for a team manager to assign roles to a new user within their permission level in OutSystems](images/managers-handle-teams-add-user-role-lt.png "Team Manager Assigning a Role to a New User")

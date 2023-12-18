@@ -18,7 +18,7 @@ In this example, the modules that integrate with PayPal are going to be decouple
 
 Open the detail of the eCommerce application in Service Center and look for the implementation of PayPal integration which is already separated in the following modules: PaypalGateway and PayPal (extension).
 
-![](images/refactor-an-application-1.png)
+![Screenshot of the Service Center detailing the PayPalGateway and PayPal extension modules within the eCommerce application](images/refactor-an-application-1.png "Service Center showing PayPal integration modules")
 
 The refactoring of applications depends on how they're designed, but it usually starts with the following procedures:
 
@@ -50,7 +50,7 @@ Hover the mouse over the PayPalGateway, click on the ▼ button, click on the **
 
 Follow the same procedure to move the PayPal extension to the PayPal Services application.
 
-![](images/refactor-an-application-2.png)
+![Process of moving PayPalGateway and PayPal extension modules to the PayPal Services application in the Service Studio interface](images/refactor-an-application-2.png "Moving modules to a new application")
 
 
 ## Deploy to Quality Assurance

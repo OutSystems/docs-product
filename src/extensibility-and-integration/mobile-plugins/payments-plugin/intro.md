@@ -49,7 +49,7 @@ This sample app shows you how to complete the following procedures:
 
 * To trigger the payment flow, add the logic to a button.
 
-![Screenshot of headphones](images/Headphones.png)
+![Illustration of headphones indicating the sample app payment flow](images/Headphones.png "Sample App Payment Flow")
 
 ## Enable a frictionless payment experience in your app
 
@@ -136,7 +136,7 @@ Follow these steps, to verify the plugin’s availability, trigger the payment b
 
    1. To check if the Payments plugin works correctly during the runtime, add the **CheckPaymentsPlugin** action after the Start node.
 
-      ![Screenshot of creating logic to verify the plugin availability](images/OnReady-1.png)
+      ![Screenshot of the Service Studio showing the logic for checking the Payments Plugin availability](images/OnReady-1.png "Check Payments Plugin Logic")
 
    1. To handle the response from the CheckPaymentsPlugin, after the CheckPaymentsPlugin node, add an **If** condition.
 
@@ -150,7 +150,7 @@ Follow these steps, to verify the plugin’s availability, trigger the payment b
 
    1. In the **OnReady** action, below the flow that you already defined, after checking the plugin's availability, add the **SetupPaymentsPlugin** action.
 
-      ![Screenshot of creating logic to trigger payment action](images/OnReady-2.png)
+      ![Screenshot of the Service Studio showing the logic for setting up the Payments Plugin](images/OnReady-2.png "Setup Payments Plugin Logic")
 
    1. For testing configuration, use a test environment for payments.
       
@@ -166,7 +166,7 @@ Follow these steps, to verify the plugin’s availability, trigger the payment b
 
    1. Select **Download configurations** to download the JSON configuration file **PaymentsPluginConfiguration.json**.
 
-      ![Screenshot of editing app details and downloading configuration](images/DownloadConfig.png)
+      ![Button for downloading the Payments Plugin configuration file](images/DownloadConfig.png "Download Payments Plugin Configuration")
 
    1. In your Payments app, add the **PaymentsPluginConfiguration.json** file as a Resource of your app.
 
@@ -178,7 +178,7 @@ Follow these steps, to verify the plugin’s availability, trigger the payment b
 
       </div>
 
-         ![Screenshot of adding Payments related JSON file](images/JsonConfig.png)
+         ![Screenshot showing the Payments Plugin JSON configuration file added as a resource in the app](images/JsonConfig.png "Payments Plugin JSON Configuration")
 
       <div class="info" markdown="1">
 
@@ -194,7 +194,7 @@ Follow these steps, to verify the plugin’s availability, trigger the payment b
 
    1. To handle the response from the **IsReadyToPay** action, set the logic to apply conditions for your app based on whether the user has Apple Pay or Google Pay available or neither configured on the device, and if there’s any valid card to make the payment.
 
-      ![Screenshot of creating logic to verify pay wallets](images/OnReady-3.png)
+      ![Screenshot of the Service Studio showing the logic to verify if the payment service provider is ready for payment](images/OnReady-3.png "Is Ready To Pay Logic")
 
 <div class="info" markdown="1">
 
@@ -212,11 +212,11 @@ To trigger the payment on your app's screen, complete the following steps:
 
 1. For each button you added, add an action to handle the **OnClick** event. In the properties of the payment button, open the **Events** > **OnClick** dropdown and select the **New Client Action**.**OnClick** event.
 
-    ![Screenshot](images/NewClientAction.png)
+    ![Screenshot showing the creation of a new client action for handling payment button click events](images/NewClientAction.png "New Client Action for Payment")
 
 1. In the action flow of each action, you created in the previous step, check if the plugin is working properly during runtime. After the Start node, add the **TriggerPayment** action.
 
-    ![Screenshot](images/CheckOutOnClick.png)
+    ![Screenshot of the Service Studio showing the logic to trigger the payment process on button click](images/CheckOutOnClick.png "Trigger Payment Logic")
 
 1. To handle the response from TriggerPayment, after **TriggerPayment**, add an **If** node.
 

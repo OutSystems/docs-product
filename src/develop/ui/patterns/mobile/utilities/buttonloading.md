@@ -32,7 +32,7 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
 
     The Button Loading widget is displayed.
 
-    ![Button Loading widget](<images/buttonloading-widget-ss.png>)
+    ![Screenshot of the Button Loading widget in the Service Studio toolbox](images/buttonloading-widget-ss.png "Button Loading Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -50,29 +50,29 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
 
     By default the **Button Loading** widget contains a **Button** widget. We change the text of the button to **Create New User**.
 
-    ![Drag widget to existing form in the app](<images/buttonloading-drag-ss.png>)
+    ![Dragging the Button Loading widget onto a form in the Main Content area of an application's screen](images/buttonloading-drag-ss.png "Dragging Button Loading Widget to Form")
 
 1. Create a new local variable (of Boolean type) to control the state of the **Button Loading** widget. In this example, we call it **CreatingNewUser** and set the default value to **False**.
 
-    ![Create a new local variable](<images/buttonloading-variable-ss.png>)
+    ![Creating a new local Boolean variable named CreatingNewUser in Service Studio](images/buttonloading-variable-ss.png "Creating a New Local Variable")
 
 1. In this example, we also set the **ShowLabelOnLoading** property to **False**. 
 
     This displays the loading spinner only (not the Button label) while the button logic is being executed.
 
-    ![Set the ShowLabelOnLoading property](<images/buttonloading-setprop-ss.png>)
+    ![Setting the ShowLabelOnLoading property of the Button Loading widget to False in Service Studio](images/buttonloading-setprop-ss.png "Setting ShowLabelOnLoading Property")
 
 1. Double-click the **Button** widget and add the necessary logic. 
 
     In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **True**. (This is so the spinner shows the loading state.) The second Assign has the **CreatingNewUser** set       to **False**. (The logic is added between the two Assigns.)
 
-    ![Add the relevant logic](<images/buttonloading-logic-ss.png>)
+    ![Adding ButtonOnClick action logic to the Button widget in Service Studio](images/buttonloading-logic-ss.png "Adding Logic to Button Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ### Result
 
-![](<images/buttonloading-result-ss.png>)
+![Example of the Button Loading pattern result in an application](images/buttonloading-result-ss.png "Button Loading Pattern Result")
 
 ## Properties
 

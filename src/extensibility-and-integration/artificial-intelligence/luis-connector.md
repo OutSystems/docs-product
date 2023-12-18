@@ -45,7 +45,7 @@ Here is how you can install the connector and reference it in your app.
 1. Install the [Azure LUIS connector](https://www.outsystems.com/forge/component-overview/5737/azure-luis-connector) from Forge.
 2. In Service Studio, press **Crtl+Q** and find the **AzureLUISConnector** in the **Manage Dependencies** window. Select all public elements and click **Apply**. 
 
-    ![LUIS connector structure](images/luis-reference-elements-ss.png?width=600)
+    ![Screenshot showing how to reference the Azure LUIS Connector in OutSystems Service Studio](images/luis-reference-elements-ss.png "LUIS Connector Structure in Service Studio")
 
 3. Use the server actions in **Logic** > **Server Actions** > **AzureLUISConnector** > **LUISEndpointAPI** to build your logic.
 
@@ -55,7 +55,7 @@ Follow these instructions to get the settings from the LUIS app that you need to
 
 1. Go to **your LUIS app** in Azure > **Manage** > **Settings**. Copy the value of the **App ID**. 
 
-    ![LUIS settings tab](images/luis-settings.png?width=600)
+    ![Screenshot of the settings tab in the LUIS app within the Azure portal](images/luis-settings.png "LUIS App Settings in Azure")
 
 1. Still in **your LUIS app**, go to **Manage** > **Azure Resources** > **Prediction Resources**. Note that you may have more than one service in the **Prediction Resources** tab. Copy the setting from the service you want to use in your OutSystems app. Copy the following values:
 
@@ -74,17 +74,17 @@ To use the LUIS connector in your app, you need to configure the connector in Se
 
 1. Go to **Service Center** > **Factory** > **Modules**. Enter **AzureLUISConnector** in the **Name** field and press **Filter**.
 
-    ![Module search in Service Center](images/luis-module-search-sc.png?width=600)
+    ![Screenshot illustrating the process of searching for the AzureLUISConnector module in OutSystems Service Center](images/luis-module-search-sc.png "Searching for AzureLUISConnector Module in Service Center")
 
 1. Click **AzureLUISConnector** in the results list to open the module settings. Go to the **Integrations** tab and locate the **Consumed REST APIs** section.
     
-    ![Consumed REST settings in Service Center](images/luis-consumed-rest-sc.png?width=600)
+    ![Screenshot of the Consumed REST APIs settings for the AzureLUISConnector in OutSystems Service Center](images/luis-consumed-rest-sc.png "Configuring Consumed REST APIs in Service Center")
 
 1. In the **Consumed REST APIs** section click the **LUISEndpointAPI** link. A screen to edit the endpoint opens.
 
 1. In the **Effective URL** field, enter the following value: `(Endpoint URL)/luis/v2.0/apps`. **Endpoint URL** is the LUIS App value you obtained earlier. For example, if your **Endpoint URL** is `https://example.cognitiveservices.azure.com/`, the value you enter in **Effective URL** is `https://example.cognitiveservices.azure.com/luis/v2.0/apps`. Click **Apply** and then confirm by clicking **OK**.
 
-    ![LUIS endpoint configuration](images/luis-effective-url-sc.png?width=500)
+    ![Screenshot showing the configuration of the Effective URL for the LUIS endpoint in Service Center](images/luis-effective-url-sc.png "Setting the Effective URL for LUIS Endpoint")
 
     <div class="info" markdown="1">
 
@@ -94,7 +94,7 @@ To use the LUIS connector in your app, you need to configure the connector in Se
 
 1. If you want to use LUIS authoring (programmatic) API, go to the **Site Properties** of the AzureLUISConnector module. Edit **AuthoringKey** value and enter the **Primary Key** you got from the **Authoring Resource** tab.
 
-    ![LUIS authoring key configuration](images/luis-authoring-key-sc.png?width=500)
+    ![Screenshot depicting the configuration of the LUIS authoring key in the AzureLUISConnector module settings](images/luis-authoring-key-sc.png "LUIS Authoring Key Configuration")
 
 1. You can now test the connection with the LUIS service in Service Studio. 
 
@@ -115,7 +115,7 @@ Here is how you can test the LUIS API configuration by creating a sample flow in
     * In the **QueryToPredict** field, enter a text you are sending to the LUIS app.
     * In the **Staging** select True if you published your LUIS app to the staging slot. Select False if you published your app to a production slot.
 
-    ![LUIS server action in a flow](images/luis-logic-test-example-ss.png?width=400)
+    ![Screenshot demonstrating how to test the LUIS Predictions API using a sample flow in OutSystems Service Studio](images/luis-logic-test-example-ss.png "Testing LUIS Predictions API in Service Studio")
 
     <div class="info" markdown="1">
 

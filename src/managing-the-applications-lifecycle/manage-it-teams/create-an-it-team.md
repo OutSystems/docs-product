@@ -21,13 +21,13 @@ To create a team, do the following:
 
 1. Fill in the team’s Name and Description.  
 
-    ![](images/team-create-lt.png?width=600)
+    ![Screenshot of the LifeTime console showing the process of creating a new IT team](images/team-create-lt.png "Creating a New IT Team")
 
 1. Click the **CREATE** button to create the team.
 
 Now that the team is created, [add users](#add-it-users-to-the-team) and [applications](#add-applications-to-the-team) to the team. You can also [create new applications in the team](#create-a-new-application-in-the-team).
 
-![](images/team-lt.png?width=800)
+![Screenshot of the LifeTime console with a new IT team created](images/team-lt.png "New IT Team Created")
 
 ## Add IT users to the team 
 
@@ -47,13 +47,13 @@ To add one or more users to the same team, do the following:
 
 1. Choose one or more users to add to the team and specify the role those users will have within the team.  
 
-    ![](images/team-add-users-lt.png?width=700)
+    ![Screenshot of the LifeTime console interface for adding IT users to a team](images/team-add-users-lt.png "Adding IT Users to a Team")
 
 1. Repeat the previous step for the remaining users with other roles in the team.
 
 To remove users from the team, click the remove icon for those users in the team’s screen:
 
-![](images/team-remove-users-lt.png?width=800)
+![Screenshot showing the option to remove IT users from a team in the LifeTime console](images/team-remove-users-lt.png "Removing IT Users from a Team")
 
 ### Add one IT user to several teams
 
@@ -67,13 +67,13 @@ If you need to add a user to several teams, you can do it in the user's detail s
 
 1. Choose the teams and the role you want to assign the user in those teams.  
 
-    ![](images/team-add-user-to-several-teams-lt.png?width=600)
+    ![Screenshot of the LifeTime console detailing how to add an IT user to multiple teams](images/team-add-user-to-several-teams-lt.png "Adding an IT User to Several Teams")
 
 1. Click the **Grant Role in Teams** button.
 
 To remove the user from one or more teams, click the remove icon for those teams in the user’s detail screen:
 
-![](images/team-remove-user-lt.png?width=700)
+![Screenshot showing the process of removing an IT user from several teams in the LifeTime console](images/team-remove-user-lt.png "Removing an IT User from Teams")
 
 ## Add applications to the team
 
@@ -89,13 +89,13 @@ To add an application to a team, do the following:
 
 1. Choose the applications that users in this team will have access to. Notice that you will see only the applications that are not part of a team yet, as one application can only be part of a single team.  
 
-    ![](images/team-add-apps-lt.png?width=400)
+    ![Screenshot of the LifeTime console's 'Add Applications' interface for a team](images/team-add-apps-lt.png "Adding Applications to a Team")
 
 1. Click the **Add Applications to Team** button.
 
 To remove an application from the team, click the remove icon for that application in the team’s screen:
 
-![](images/team-remove-app-lt.png?width=800)
+![Screenshot depicting the removal of applications from a team in the LifeTime console](images/team-remove-app-lt.png "Removing Applications from a Team")
 
 ## Create a new application in the team
 
@@ -111,6 +111,6 @@ To create a new application in a team, do the following:
 
 1. Fill in the application details and click the **Create app** button.  
 
-    ![](images/team-create-app-lt.png?width=500)
+    ![Screenshot showing the form to create a new application within a team in the LifeTime console](images/team-create-app-lt.png "Creating a New Application in a Team")
 
 The IT users having **Change and Deploy Applications** permission level for the team now can use Service Studio to create modules in the new application.

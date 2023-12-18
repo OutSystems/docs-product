@@ -6,8 +6,8 @@ guid: d3a9dc9a-5e49-43c2-9d77-fc4e9f1778a8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:327
+summary: The article explains how to create and configure modules in OutSystems for Mobile and Reactive Web Apps, detailing properties and settings
 ---
-
 # Mobile Module
 
 
@@ -19,7 +19,7 @@ Applies to Mobile and Reactive Web Apps.
 
 An OutSystems App consists of one or more Modules joined by an Application Template. Click the module name (1) in any of the main Service Studio tabs (**Process**, **Interface**, **Logic**, or **Data**) to see the module properties pane (2).
 
-![Module properties](images/servicestudio-module-properties.png?width=800)
+![Screenshot of Service Studio showing the module properties pane](images/servicestudio-module-properties.png "Service Studio Module Properties")
 
 ## Create a new module
 
@@ -27,11 +27,11 @@ To create a new in an app, follow these steps in Service Studio:
 
 1. Go to the application list, search your app, and click on it. The application details screen opens.
 
-     ![App details screen](images/servicestudio-applications-screen.png?width=700)
+     ![Screenshot of Service Studio displaying the applications list screen](images/servicestudio-applications-screen.png "Service Studio Applications Screen")
 
 1. In the application details screen enter **Module name** and select module type from the **Choose module type** list.
 
-    ![App details screen](images/servicestudio-new-module.png?width=700)
+    ![Screenshot of Service Studio interface for creating a new module with module name and type selection](images/servicestudio-new-module.png "Creating a New Module in Service Studio")
   
 2. Click **Create module**. Your new module opens for editing.
 

@@ -23,11 +23,11 @@ The Azure resources that the OutSystems on Microsoft Azure solution template dep
 
 Each environment contains a **virtual machine** as the OutSystems Platform Server, playing the role of deployment controller and front-end server.
 
-![Deployment controller and front-end server](images/deployment_controller-and_front-end.png?width=400)
+![Diagram showing the OutSystems deployment controller and front-end server virtual machine on Azure](images/deployment_controller-and_front-end.png "OutSystems Deployment Controller and Front-End Server")
 
 If you chose to deploy a farm production environment, your production environment will have a virtual machine and a scale set. The second one acts as the front-end server answering HTTP(S) requests.
 
-![Additional front-end server](images/additional-front-end-server.png?width=300)
+![Diagram illustrating an additional front-end server in the OutSystems farm production environment on Azure](images/additional-front-end-server.png "OutSystems Additional Front-End Server")
 
 All virtual machines have Windows Server 2016 Datacenter installed.
 
@@ -50,7 +50,7 @@ For security reasons, the deployed virtual machines have remote desktop access d
 
 OutSystems on Microsoft Azure solution template uses Azure SQL Database service. Each environment contains one **SQL server** and three **SQL databases** \- the Platform/Applications database, the Logging database, and the Sessions database.
 
-![Databases](images/databases.png?width=500)
+![Diagram of OutSystems Azure SQL Database servers and databases for different environments](images/databases.png "OutSystems Azure SQL Databases")
 
 The price tier of all created databases is "S3 Standard".
 

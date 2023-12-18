@@ -58,7 +58,7 @@ ItemSelected  |  Triggered when an item of the list (or left side of the MasterD
   
 ## Layout and classes
 
-![](images/masterdetail-1-diag.png)
+![Diagram illustrating the Master Detail layout with left and right content areas](images/masterdetail-1-diag.png "Master Detail Layout Diagram")
 
 ## CSS selectors
 

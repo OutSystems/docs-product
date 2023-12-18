@@ -47,7 +47,7 @@ To create your key-value pair, you can use the client action **_SetValue_**:
 1. Set the Condition of the **_If_** to **_SetValue.Success_**;
 1. In the **_False_** branch of the **_If_**, add a **_Message_**, set the message type to **Error**, and set a **_Message_** to show to end users.
 
-![Setting a key-value pair](images/set-key-value-ss.png "Set a key-value pair")
+![Screenshot of the process to set a key-value pair using the SetValue client action in the OutSystems development environment](images/set-key-value-ss.png "Set a key-value pair")
 
 After setting your key-value pair, you can access them using the **_GetValue_** client action:
 
@@ -56,7 +56,7 @@ After setting your key-value pair, you can access them using the **_GetValue_** 
 1. Set the Condition of the **_If_** to **_GetValue.Success_**; Then, you can handle the response by assigning its value to a local variable.
 1. In the **_False_** branch of the **_If_**, add a **_Message_**, set the message type to **Error**, and set a **_Message_** to show to end users.
 
-![Get a key-value pair](images/get-key-value-ss.png "Get a key-value pair")
+![Screenshot of the process to retrieve a key-value pair using the GetValue client action in the OutSystems development environment](images/get-key-value-ss.png "Get a key-value pair")
 
 In case you want to remove a key-value pair that you previously created, you can do it using the **_RemoveKey_** client action:
 
@@ -65,7 +65,7 @@ In case you want to remove a key-value pair that you previously created, you can
 1. Set the Condition of the **_If_** to **_RemoveKey.Success_**;
 1. In the **_False_** branch of the **_If_**, add a **_Message_**, set the message type to **Error**, and set a **_Message_** to show to end users.
 
-![Remove a key-value pair](images/remove-key-value-ss.png "Remove a key-value pair")
+![Screenshot of the process to remove a key-value pair using the RemoveKey client action in the OutSystems development environment](images/remove-key-value-ss.png "Remove a key-value pair")
 
 ### **Choose if you want authentication to access your secrets**
 
@@ -83,7 +83,7 @@ Any value chosen for the KeyAuthentication variable doesn't affect the security 
 
 </div>
 
-![SetValue Run Client Action dialog for authentication](images/setvalue-run-client-action-ss.png "The SetValue Run Client Action dialog for authentication")
+![Screenshot showing the SetValue Run Client Action dialog with options for requiring authentication in the OutSystems development environment](images/setvalue-run-client-action-ss.png "The SetValue Run Client Action dialog for authentication")
 
 ### Migrate the key-value pairs stored in a previous version to a new version of the plugin
 
@@ -102,7 +102,7 @@ Any value chosen for the KeyAuthentication variable doesn't affect the security 
 
 </div>
 
-![Extensibility Configuration](images/extensibility-config.png "Extensibility Configuration")
+![Screenshot of the extensibility configuration screen in the OutSystems development environment](images/extensibility-config.png "Extensibility Configuration")
 
 ## Known issues and workarounds
 

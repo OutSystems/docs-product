@@ -60,7 +60,7 @@ To view the data of a local entity:
 1. Expand this tree node to show a list local entities defined in the application.
 1. Select one to view its data.
 
-![browser_view_local_storage.png](images/browser_view_local_storage.png)
+![Screenshot showing how to view local storage data in Chrome Developer Tools](images/browser_view_local_storage.png "Viewing Local Storage Data in Chrome")
 
 The tables for the local entities of the application have a `OSUSR_` prefix, while OutSystems tables have a `OSSYS_` prefix.
 
@@ -73,7 +73,7 @@ To run queries over local entities:
 1. Select **&lt;YourModuleName&gt;** in the tree on the left.
 1. Write your SQL queries in the console available on the right.  
   
-![browser_run_sql.png](images/browser_run_sql.png)
+![Screenshot illustrating how to run SQL queries in Chrome Developer Tools](images/browser_run_sql.png "Running SQL Queries in Chrome")
 
 ## Troubleshooting on your device connected to the desktop browser
 
@@ -122,7 +122,7 @@ To connect your device to the desktop Chrome browser:
 
 1. Click on the **inspect** link next to the URL of the WebView.  
   
-![browser_devices.png](images/browser_devices.png)
+![Screenshot of the Chrome inspect devices feature for remote debugging](images/browser_devices.png "Inspecting Devices in Chrome")
 
 You can now inspect and debug the contents of the WebView displaying your app in the device.
 
@@ -136,15 +136,15 @@ You can find below a series of tips that may improve your troubleshooting steps:
 
 * To make JavaScript code more perceivable and simple to read, click on the **Pretty Print** button available in the Sources tab.  
 
-    ![pretty-print.png](images/pretty-print.png)  
+    ![Icon for the Pretty Print feature in Chrome Developer Tools to format JavaScript code](images/pretty-print.png "Pretty Print JavaScript Code")  
 
 * To obtain more readable stack traces for asynchronous actions check the **Async** checkbox available in the **Sources** tab.
 
-    ![async-option.png](images/async-option.png)  
+    ![Screenshot showing the Async checkbox in the Sources tab of Chrome Developer Tools](images/async-option.png "Async Checkbox in Chrome Developer Tools")  
 
 * Keep a look for the errors in the **Console** tab. You can click on the link on the right side to navigate to the JavaScript location where the error is happening.
 
-    ![devtools-console.png](images/devtools-console.png)
+    ![Screenshot of the Chrome Developer Tools Console tab highlighting an error](images/devtools-console.png "Chrome Developer Tools Console")
 
 * When the application redirects you to an error page the logs in the **Console** tab disappear. To preserve them, check the **Preserve log** option.
 
@@ -160,11 +160,11 @@ A mobile app generates code and assets that run on the server and on the client 
 
 To locate the JavaScript files generated for client, expand the scripts folder in Chrome DevTools:  
 
-![Client JavaScript file location](images/generated-javascript-location.png)
+![Screenshot showing where to find generated JavaScript files in Chrome Developer Tools](images/generated-javascript-location.png "Location of Generated JavaScript Files")
 
 The explanation about the highlighted sections is in the table below. Please note that the number of generated JavaScript files may change and that the information provided may not be up to date.  
 
-![client-side-generated-js.png](images/client-side-generated-js.png)
+![Table describing the roles of different client-side generated JavaScript files](images/client-side-generated-js.png "Client-Side Generated JavaScript Files")
 
 ### JavaScript files roles
 
@@ -184,60 +184,60 @@ File | Description
 
 #### Aggregate
 
-![](images/image12.png)
+![Diagram showing how an Aggregate node is represented in JavaScript](images/image12.png "Aggregate Node Representation in JavaScript")
 
 #### Refresh Data
 
-![](images/image11.png)
+![Diagram showing how a Refresh Data node is represented in JavaScript](images/image11.png "Refresh Data Node Representation in JavaScript")
 
 #### Run Client Action
 
-![](images/image15.png)
+![Diagram showing how a Run Client Action node is represented in JavaScript](images/image15.png "Run Client Action Node Representation in JavaScript")
 
 #### Run Server Action
 
-![](images/image09.png)
+![Diagram showing how a Run Server Action node is represented in JavaScript](images/image09.png "Run Server Action Node Representation in JavaScript")
 
 #### JavaScript
 
-![](images/image04.png)
+![Diagram showing how a JavaScript node is represented in JavaScript](images/image04.png "JavaScript Node Representation in JavaScript")
 
 #### Assign
 
-![](images/image13.png)
+![Diagram showing how an Assign node is represented in JavaScript](images/image13.png "Assign Node Representation in JavaScript")
 
 #### If
 
-![](images/image07.png)
+![Diagram showing how an If node is represented in JavaScript](images/image07.png "If Node Representation in JavaScript")
 
 #### Switch
 
-![](images/image10.png)
+![Diagram showing how a Switch node is represented in JavaScript](images/image10.png "Switch Node Representation in JavaScript")
 
 #### For Each
 
-![](images/image02.png)
+![Diagram showing how a For Each node is represented in JavaScript](images/image02.png "For Each Node Representation in JavaScript")
 
 #### Destination
 
-![](images/image08.png)
+![Diagram showing how a Destination node is represented in JavaScript](images/image08.png "Destination Node Representation in JavaScript")
 
 #### Raise Exception
 
-![](images/image06.png)
+![Diagram showing how a Raise Exception node is represented in JavaScript](images/image06.png "Raise Exception Node Representation in JavaScript")
 
 #### Exception Handler
 
-![](images/image14.png)
+![Diagram showing how an Exception Handler node is represented in JavaScript](images/image14.png "Exception Handler Node Representation in JavaScript")
 
 #### JSON Serialize
 
-![](images/image00.png)
+![Diagram showing how a JSON Serialize node is represented in JavaScript](images/image00.png "JSON Serialize Node Representation in JavaScript")
 
 #### JSON Deserialize
 
-![](images/image01.png)
+![Diagram showing how a JSON Deserialize node is represented in JavaScript](images/image01.png "JSON Deserialize Node Representation in JavaScript")
 
 #### Message
 
-![](images/image03.png)
+![Diagram showing how a Message node is represented in JavaScript](images/image03.png "Message Node Representation in JavaScript")

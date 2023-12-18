@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Structure
 
-![Structure diagram](images/progress-classes-diag.png)
+![Diagram illustrating the CSS class structure for the Progress Circle UI Pattern](images/progress-classes-diag.png "Progress Circle CSS Classes Diagram")
 
 ### Modifiers
 

@@ -33,7 +33,7 @@ To log in to Integration Builder do the following:
 
 1. Open Integration Builder, available at <https://integrationbuilder.outsystems.com>.
 
-    ![Integration Builder login page](images/login-ib.png)
+    ![Screenshot of the Integration Builder login page with fields for environment URL and user credentials](images/login-ib.png "Integration Builder Login Page")
 
 1. In the **Environment** field, enter the address of your OutSystems development environment. Then, click **Next**.
 
@@ -55,7 +55,7 @@ On your first login, Integration Builder greets you with an onboarding guide. To
 
 1. Select the service provider that's the data source of your integration (for example, SAP).
 
-    ![Choosing a provider in Integration Builder](images/choose-a-provider-ib.png)
+    ![Image showing the process of selecting a service provider for a new integration in Integration Builder](images/choose-a-provider-ib.png "Choosing a Provider in Integration Builder")
 
     <div class="info" markdown="1">
 
@@ -76,7 +76,7 @@ On your first login, Integration Builder greets you with an onboarding guide. To
 
 In the "Review integration" step, click **Publish** to publish the integration modules to your OutSystems environment. This operation might take a few minutes.
 
-![Publishing an integration in Integration Builder](images/publishing-integration-ib.png)
+![Progress indicator displaying the publishing status of an integration in Integration Builder](images/publishing-integration-ib.png "Publishing an Integration in Integration Builder")
 
 Integration Builder also publishes some dependencies along with the integration. Check [Apps installed in your OutSystems environment](#other-apps) for more information.
 
@@ -99,7 +99,7 @@ To create a connection do the following:
 
 1. In the **Select a connection** drop-down, click **New Connection**.
 
-    ![Selecting a connection in Integration Manager](images/create-connection-im.png)
+    ![Dialog box for creating a new connection to an external system in Integration Manager](images/create-connection-im.png "Creating a Connection in Integration Manager")
 
 1. To connect the external system select one the following:
     
@@ -125,7 +125,7 @@ After creating a connection, associate it to the integration do the following:
 
 1. In Integration Manager, select the **My integrations** tab.
 
-    ![The My integrations tab in Integration Manager](images/my-integrations-im.png)
+    ![Integration Manager interface showing the 'My integrations' tab with a list of available integrations](images/my-integrations-im.png "My Integrations Tab in Integration Manager")
 
 1. In the **Integration name** column, click the link of the integration you want to associate with the connection.
 
@@ -137,7 +137,7 @@ After creating a connection, associate it to the integration do the following:
 
 1. Open **Manage Dependencies** and select the service module of your integration on the right. The service module has a "_IS" suffix by default.
 
-    ![Add a dependency to the service module Server Actions](images/add-dependencies-sap-ss.png)
+    ![Service Studio dialog for managing dependencies and adding a service module to an OutSystems application](images/add-dependencies-sap-ss.png "Adding Dependencies in Service Studio")
 
 1. Add a dependency for the Service Actions you want to call in your application.
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 OutSystems collects analytics about the performance of your applications, so that you can easily pinpoint and fix performance bottlenecks.
 
-![](images/troubleshoot-the-performance-of-an-application-1.png)
+![Screenshot of the LifeTime Analytics tab showing options to explore application performance](images/troubleshoot-the-performance-of-an-application-1.png "LifeTime Analytics Tab Overview")
 
 In your **LifeTime** console (`https://<lifetime_env>/lifetime`), navigate to the [Analytics](troubleshoot-the-performance-of-an-application.md) tab, where you can explore the performance of your apps. You can drill down and see the performance of an application based on:
 
@@ -42,19 +42,19 @@ During the last couple of days, we received emails complaining about the perform
 
 Looking at the **Screens Getting Slower** card, we can confirm that the performance of the Dashboard screen in the Field Services application has decreased during the last week. Its [APDEX](<the-apdex-performance-score.md>) value has dropped by 17%. Select the Dashboard screen to see more details.
 
-![](images/troubleshoot-the-performance-of-an-application-2.png)
+![Dashboard screen performance issue highlighted in the Screens Getting Slower card](images/troubleshoot-the-performance-of-an-application-2.png "Screens Getting Slower Card")
 
 We can see in the actions of the screen that the Preparation action has a low APDEX score.
 
 Click on the Preparation screen to see the more information about this action.
 
-![](images/troubleshoot-the-performance-of-an-application-3.png)
+![Details of the Preparation action with a low APDEX score indicating performance issues](images/troubleshoot-the-performance-of-an-application-3.png "Preparation Action APDEX Score")
 
 On the **Response Time Breakdown** card, check that most of the time is spent on the server.
 
 This means that the problem is probably on the server-side. Click on the **Server** tab to check what's causing the server to take so long.
 
-![](images/troubleshoot-the-performance-of-an-application-4.png)
+![Server Response Time Breakdown card showing the server as the main contributor to latency](images/troubleshoot-the-performance-of-an-application-4.png "Server Response Time Breakdown")
 
 On the [Slow Calls](how-application-performance-is-measured.md#about-slow-calls) card, we can see that the GetWorkOrdersByDate query is slow. This is the root cause of our problem.
 

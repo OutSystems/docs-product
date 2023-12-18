@@ -26,11 +26,11 @@ To start creating your app using the Issue Report template, follow the steps bel
 
     * **Main color** — Pick up the color to apply to the main actions (buttons) and menus background on the generated app. If you upload an icon for your app, Workflow Builder selects the main color based on it, for example, your company brand color.
 
-        ![Issue Report Template](images/wfb-issue-report-template.png)
+        ![Preview of the Issue Report template in Workflow Builder](images/wfb-issue-report-template.png "Issue Report Template Preview")
 
 1. Click on the **Save** button. Workflow Builder then creates and displays the workflow of your app.
 
-    ![Issue Report workflow](images/wfb-issue-report-workflow.png)
+    ![Workflow Builder screen showing the newly created workflow for the Issue Report app](images/wfb-issue-report-workflow.png "Workflow Creation Screen")
 
 1. On the initial form at the top of the workflow, click on the **Edit form** button to edit the form fields of the template. You can rename, change the properties, add, or remove fields.
 

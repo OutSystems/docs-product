@@ -16,7 +16,7 @@ This is a reference document that provides more information about components and
 
 The chatbot demo app is available in Forge. Go to the [OutSystems.AI Chatbot Reactive](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive), click **Download** and then **Download component + demo**. 
 
-![Forge page to download the chatbot demo](images/chatbot-demo-download-forge.png?width=650)
+![Screenshot of the OutSystems.AI Chatbot Reactive component download page on Forge](images/chatbot-demo-download-forge.png "Chatbot Demo App Download")
 
 ## Chatbot configuration wizard
 

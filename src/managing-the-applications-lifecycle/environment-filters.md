@@ -25,7 +25,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applicatio
 
 The landing page of the **LifeTime Management Console** (**Applications** list screen) gives IT users a high-level view of the state of their application portfolio. It provides information on the state of existing applications across the different environments that compose the infrastructure and it's the starting point for many  business needs, such as checking application details, staging application versions across environments up to managing user permissions, and infrastructure-level configurations.
 
-![Applications screen](images/applications-lt.png)
+![Screenshot of the LifeTime Management Console Applications list screen showing the state of applications across different environments](images/applications-lt.png "LifeTime Management Console Applications List")
 
 ## Benefits of using environment filters
 
@@ -53,21 +53,21 @@ To create an environment filter, follow these steps in LifeTime:
 
 * In the **Applications** list screen, expand the environment dropdown list and select the option to create an environment filter.
 
-    ![Create environment filter](images/create-filter-1-lt.png)
+    ![Step-by-step process showing how to create an environment filter in the LifeTime Management Console](images/create-filter-1-lt.png "Creating an Environment Filter in LifeTime")
 
 * Enter a name for the filter and select the environments that you want to display in this new filter. Then, choose whether you want this filter to be the default screen for your applications list, and click **Create**.
 
-    ![Enter environment name](images/create-filter-2-lt.png)
+    ![Dialog box for entering a name for the new environment filter and selecting environments to include](images/create-filter-2-lt.png "Environment Filter Configuration")
 
 As a result, the new filter is available to use. Edit or delete filters, as needed.
 
-![Successful filter result](images/result-successful-filter-list-lt.png)
-![Edit filter and delete filter](images/edit-delete-filter-lt.png)
+![Notification of successful creation of a new environment filter with the filter list visible](images/result-successful-filter-list-lt.png "Successful Creation of Environment Filter")
+![Options to edit or delete environment filters in the LifeTime Management Console](images/edit-delete-filter-lt.png "Edit and Delete Environment Filters")
 
 Each time you switch filters, the view is automatically updated to the selected filter.
 
-![Successful filter result](images/internal-filter-lt.png)
-![Edit filter and delete filter](images/external-filter-lt.png)
+![LifeTime Management Console view filtered to show only internal environments](images/internal-filter-lt.png "Internal Environment Filter View")
+![LifeTime Management Console view filtered to show only external environments](images/external-filter-lt.png "External Environment Filter View")
 
 ## Conclusion
 

@@ -23,7 +23,7 @@ If the Screen Template was compatible with your module, but now it's not:
 * Revert the changes you did to the module Theme. 
 * Check if you set the correct Theme in the **Default Theme** property field of your module or UI Flow.
 
-![Theme Compatibility warning](images/template-layout-theme-mismatch.png)
+![Screenshot of a warning message indicating theme incompatibility with screen templates in Service Studio](images/template-layout-theme-mismatch.png "Theme Compatibility Warning")
 
 ## Traditional Web Apps
 

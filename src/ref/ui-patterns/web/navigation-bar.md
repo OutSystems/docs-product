@@ -19,7 +19,7 @@ Applies only to Traditional Web Apps.
 ## Layout and classes
 
 
-![](images/navigationbar-4-diag.png)
+![Diagram illustrating the layout and classes of a navigation bar for traditional web apps](images/navigationbar-4-diag.png "Navigation Bar Diagram")
 
 ## CSS selectors
 
@@ -52,7 +52,7 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![](images/navigationbar-5-ss.png)
+    ![Screenshot showing the Navigation Bar used with ListRecords in a traditional web app](images/navigationbar-5-ss.png "Navigation Bar with ListRecords")
 
 
 ### Change the active color on the NavigationBarItem

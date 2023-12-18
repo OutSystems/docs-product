@@ -25,7 +25,7 @@ You can use the Inline SVG UI Pattern to change fill and stroke properties or an
 
     The Inline SVG widget is displayed.
 
-    ![](<images/inlinesvg-2-ss.png>)
+    ![Screenshot showing the Inline SVG widget in the Service Studio toolbox](images/inlinesvg-2-ss.png "Inline SVG Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -39,7 +39,7 @@ You can use the Inline SVG UI Pattern to change fill and stroke properties or an
 
 1. From the Toolbox, drag the Inline SVG widget into the Main Content area of your application's screen.
 
-    ![](<images/inlinesvg-3-ss.png>)
+    ![Screenshot illustrating how to drag the Inline SVG widget into the main content area of an application's screen](images/inlinesvg-3-ss.png "Dragging Inline SVG Widget into Main Content Area")
 
 1. On the **Properties** tab, in the **SVGCode** property, set your SVG code. 
 
@@ -53,13 +53,13 @@ You can use the Inline SVG UI Pattern to change fill and stroke properties or an
     </svg>"
     ```
 
-    ![](<images/inlinesvg-4-ss.png>)
+    ![Screenshot displaying the Properties tab where SVG code is set for the Inline SVG widget](images/inlinesvg-4-ss.png "Setting SVG Code in Properties Tab")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 Using the example above, the results are as follows:
 
-![](<images/inlinesvg-1-ss.png>)
+![Example output of an Inline SVG showing a circle and text label 'outsystems' in an application](images/inlinesvg-1-ss.png "Example of Inline SVG in an Application")
 
 **How to make your SVG code accessible**
 

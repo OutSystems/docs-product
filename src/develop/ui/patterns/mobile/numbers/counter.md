@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Counter UI Pattern to display numerical information as a notification. For example, the Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
-![](<images/counter-2-ss.png>)
+![Screenshot showing the Counter UI Pattern used for notifications, such as unread emails or messages.](images/counter-2-ss.png "Counter UI Pattern Notification Example")
 
 **How to use the Counter UI Pattern**
 
@@ -28,7 +28,7 @@ The following example demonstrates how you can display the number of registered 
 
     The Counter widget is displayed.
 
-    ![](<images/counter-1-ss.png>)
+    ![Screenshot of the Counter widget in the Service Studio toolbox.](images/counter-1-ss.png "Counter Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,21 +42,21 @@ The following example demonstrates how you can display the number of registered 
 
 1. From the Toolbox, drag the Counter widget into the Main Content area of your application's screen.
 
-    ![](<images/counter-3-ss.png>)
+    ![Screenshot illustrating how to drag the Counter widget into the main content area of an application's screen.](images/counter-3-ss.png "Dragging Counter Widget into Main Content Area")
 
     By default, the Counter widget contains a Content placeholder.
 
 1. To create an aggregate (in this example to retrieve all the users on the platform), right-click the screen name and select **Fetch Data from Database**.
 
-    ![](<images/counter-4-ss.png>)
+    ![Screenshot showing the process of creating an aggregate to fetch user data from the database.](images/counter-4-ss.png "Creating an Aggregate for User Data")
 
 1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **OK**. In this example, we select the **User** entity.
 
-    ![](<images/counter-5-ss.png>)
+    ![Screenshot depicting the addition of a database entity, specifically the User entity, to the application screen.](images/counter-5-ss.png "Adding a Database Entity to the Screen")
 
     The aggregate **GetUsers** is created.
 
-    ![](<images/counter-6-ss.png>)
+    ![Screenshot displaying the newly created GetUsers aggregate in Service Studio.](images/counter-6-ss.png "Aggregate GetUsers Created")
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 
@@ -64,13 +64,13 @@ The following example demonstrates how you can display the number of registered 
 
     `GetUsers.Count`
 
-    ![](<images/counter-7-ss.png>)
+    ![Screenshot of an Expression widget in Service Studio showing the expression to display the user count.](images/counter-7-ss.png "Expression Widget with User Count")
 
    You have now created an expression that displays the Count property of the Aggregate you created earlier, which gets and displays the number of users on your platform.
 
 1. On the **Properties** tab, you can customize the Counter's look and feel by setting any of the optional properties, for example, the height and orientation.
 
-    ![](<images/counter-8-ss.png>)
+    ![Screenshot highlighting the properties tab where the Counter's appearance can be customized.](images/counter-8-ss.png "Customizing Counter Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

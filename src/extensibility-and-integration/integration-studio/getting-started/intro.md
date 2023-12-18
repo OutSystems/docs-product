@@ -39,11 +39,11 @@ In the following example, we had a method in .NET to calculate the monthly payme
 
 1. In Integration Studio we created a new `CalculateMortage` action in the **Actions** folder and defined the `CalculateMortage` action signature as displayed in the image below:
 
-    ![](<images/example-extension-definition.png>)
+    ![Screenshot of the Integration Studio interface showing the definition of the CalculateMortage action within the Actions folder.](images/example-extension-definition.png "Extension Action Definition in Integration Studio")
 
 1. Clicked **Edit Source Code** to automatically generate the stubs for the actions and launch the IDE, where we implemented and tested the code.
 
-    ![](<images/example-extension-code.png>)
+    ![IDE screenshot with the source code for the CalculateMortage action in a .NET environment.](images/example-extension-code.png "Source Code Editing for Extension Action")
 
 1. Once we finished coding, we went back to Integration Studio and clicked **1-Click Publish** to deploy the extension.
 
@@ -53,4 +53,4 @@ To use the new extension in an application we proceeded as follows:
 
 1. Called the extension action in the application logic, after validating the end user input:
 
-    ![](<images/example-extension-use.png>)
+    ![Service Studio interface depicting the process of adding the CalculateMortgage action as a dependency in an OutSystems application.](images/example-extension-use.png "Using the Extension in an Application")

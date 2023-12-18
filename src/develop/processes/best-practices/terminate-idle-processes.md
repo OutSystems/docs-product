@@ -1,11 +1,11 @@
 ---
+summary: The article provides guidelines for terminating idle processes to improve application deployment by analyzing process flows and using tools like Decision and timers to manage execution
 locale: en-us
 guid: 129863e4-4a6a-4315-8954-d07138692d0c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:28
 ---
-
 # Terminate Idle Processes
 
 When you design a [Process](../intro.md) that stays idle for a long time, it may have a negative impact on the deployment of applications. This is essentially due to:
@@ -35,11 +35,11 @@ Set a way of launching the resuming processes using one of the following techniq
 
 As an example, imagine a process that monthly collects movements of credit cards and sends them to each customer by e-mail. Then, the customer has six months to make a claim for wrong movements. Most of the times, customers make the claim in the first 3 days after receiving the e-mail.
 
-![](images/idle-processes-1.png)
+![Diagram showing the initial process flow with a long idle period in the WaitForClaim activity.](images/idle-processes-1.png "Initial Idle Process Flow")
 
 The process stays active and idle for 6 months in the **WaitForClaim** activity. So, let's change the process flow and create a timer to resume the process:
 
-![](images/idle-processes-2.png)
+![Diagram illustrating the improved process flow with the addition of PrepareTimeout and RedirectReport activities, and a ProcessWaitingReports timer.](images/idle-processes-2.png "Improved Process Flow with Timer")
 
 1. The **PrepareTimeout** automatic activity is added to store all necessary information to resume the process.
 

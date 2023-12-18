@@ -22,18 +22,18 @@ To create a Screen, follow these steps in Service Studio:
 
 1. Go to the **Interface** tab, and then expand the **UI Flows** folder.
 
-    ![Interface tab UI Flows](images/interface-tab-ui-flows-ss.png)
+    ![Screenshot showing the Interface tab with the UI Flows folder expanded in Service Studio](images/interface-tab-ui-flows-ss.png "Interface Tab and UI Flows in Service Studio")
 
 1. From the **UI Flows**, right-click **MainFlow** and in the menu select **Add Screen**.
 
-    ![Add a Screen](images/add-screen-ss.png)
+    ![Context menu in Service Studio with the option to Add Screen selected](images/add-screen-ss.png "Adding a New Screen")
 
 1. Select one of the following:
     
     * **Empty**, to create an empty Screen
     * A Screen Template, to create a Screen based on a template
 
-    ![create Blank Screen](images/create-blank-screen-ss.png)
+    ![Dialog in Service Studio for creating a new Screen with options for Empty or a Screen Template](images/create-blank-screen-ss.png "Creating a Blank Screen")
 
 1. Optionally, enter a name in the **Screen name** field.
 

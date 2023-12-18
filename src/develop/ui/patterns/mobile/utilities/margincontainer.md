@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Margin Container UI Pattern to add symmetrical padding around a container.
 
-![](<images/margincontainer-1-ss.png>)
+![Screenshot of an example using the Margin Container UI Pattern in Service Studio](images/margincontainer-1-ss.png "Margin Container Example")
 
 **How to use the Margin Container UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Margin Container UI Pattern to add symmetrical padding around a 
 
     The Margin Container widget is displayed.
 
-    ![](<images/margincontainer-2-ss.png>)
+    ![Screenshot showing the Margin Container widget in the Service Studio Toolbox](images/margincontainer-2-ss.png "Margin Container Widget in Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ You can use the Margin Container UI Pattern to add symmetrical padding around a 
 
 1. From the Toolbox, drag the Margin Container widget into the Main Content area of your application's screen.
 
-    ![](<images/margincontainer-3-ss.png>)
+    ![Screenshot of dragging the Margin Container widget into the Main Content area in Service Studio](images/margincontainer-3-ss.png "Dragging Margin Container Widget")
 
     You can add as many Margin Container widgets as you want. In this example, we add 2.
 
@@ -48,7 +48,7 @@ You can use the Margin Container UI Pattern to add symmetrical padding around a 
 
     In this example we add an image widget to each of the placeholders and on the **Properties** tab, import an image using the **Image** dropdown.
 
-    ![](<images/margincontainer-4-ss.png>)
+    ![Screenshot demonstrating how to add content to the Margin Container placeholders in Service Studio](images/margincontainer-4-ss.png "Adding Content to Margin Container")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

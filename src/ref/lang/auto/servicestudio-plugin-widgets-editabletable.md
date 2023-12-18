@@ -28,21 +28,21 @@ The following example demonstrates how you can display the registered users on y
 
     The **Editable Table** widget is displayed. 
 
-    ![Editable Table widget](images/editabletable-1-ss.png)
+    ![Screenshot of the Editable Table widget in the Service Studio toolbox](images/editabletable-1-ss.png "Editable Table Widget in Service Studio")
 
 1. From the Toolbox, drag the **Editable Table** widget into the **Main Content** area of your application's screen.
 
-    ![Drag widget onto main screen](images/editabletable-2-ss.png)
+    ![Dragging the Editable Table widget into the Main Content area in Service Studio](images/editabletable-2-ss.png "Dragging Editable Table Widget")
 
 1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it into the Editable Table placeholder.
 
-    ![Drag entity to widget](images/editabletable-3-ss.png)
+    ![Selecting the User entity from the Data tab to add to the Editable Table widget](images/editabletable-3-ss.png "Selecting User Entity for Editable Table")
 
 1. To return to your screen, select the **Interface** tab, and select the Editable Table widget. 
 
 1. On the **Properties** tab, from the **Source Record List** dropdown, select the automatically created aggregate. In this example, we select **New Aggregate 'GetUsers'**. 
 
-    ![Editable Table widget](images/editabletable-4-ss.png)
+    ![Choosing the Source Record List for the Editable Table widget from the Properties tab](images/editabletable-4-ss.png "Setting Source Record List for Editable Table")
 
 After following these steps, and publishing the module, you can test the widget in your app. 
 
@@ -55,7 +55,7 @@ All of the registered users are displayed in an editable table. The Editable Tab
 * Add a new row and use the **ENTER** key to save that record and create a new one.
 * Cancel the edit or creation of the record using the **ESC** key.
 
-![Editable Table widget](images/editabletable-6-ss.png)
+![Editable Table widget displaying a list of registered user records in a Traditional Web App](images/editabletable-6-ss.png "Editable Table Widget with User Records")
 
 ## Properties
 

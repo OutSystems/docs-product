@@ -14,10 +14,10 @@ In OutSystems, you can monitor the daily activity of your environment in the Ser
 
 In **Analytics > Daily History** area, you will find the daily reports containing the activity metrics for the applications in the environment.
 
-![](images/monitor-daily-activity-list-sc.png)
+![Screenshot of the OutSystems Service Center showing the list of daily activity reports](images/monitor-daily-activity-list-sc.png "OutSystems Service Center Daily Activity List")
 
 Selecting the Daily Activity report for a specific date, you will see the daily metrics taken on that day for each application in the environment, such as the number of visitors, distinct users, sessions or errors.
 
-![](images/monitor-daily-activity-sc.png)
+![Detailed view of a daily activity report in the OutSystems Service Center, displaying metrics for a specific date](images/monitor-daily-activity-sc.png "OutSystems Service Center Daily Activity Report")
 
 The Daily Activity reports are generated only if the option **Enable Daily Activity Reports** is enabled in the [environment configuration](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Configure_your_OutSystems_environment). By default, OutSystems enables this option upon installation.

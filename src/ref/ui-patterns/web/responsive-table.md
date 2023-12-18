@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/responsivetable-4-diag.png>)
+![Diagram illustrating the layout and classes of a responsive table in a traditional web app](images/responsivetable-4-diag.png "Responsive Table Layout Diagram")
 
 ## CSS selectors
 

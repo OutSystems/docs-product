@@ -28,7 +28,7 @@ Separated logs are stored in the Data Platform, OutSystems' native cloud service
 
 Each app writes its own log entries using an internal logging API, ensuring user requests are not blocked while these logs are being written. This logging API collects log information produced by the app and sends it to the Data Platform. The logs can then be read using the [CentralizedPlatformLogs extension](centralized-platform-logs-extension.md). 
 
-![Separated logs architecture diagram](images/logs-architecture-overview-diag.png)
+![Diagram illustrating the architecture of separated logs in OutSystems Cloud, showing how each app writes log entries to the Data Platform.](images/logs-architecture-overview-diag.png "Logs Architecture Overview")
 
 ## Activate logs separation
 
@@ -46,7 +46,7 @@ To use the logs separation feature, make sure you meet the following requirement
 
 Once logs are separated, you'll be able to see the log storage location at [Customer Portal](https://www.outsystems.com/csportal/).
 
-![Log region location at Customer Portal](images/log-separation-portal.png)
+![Screenshot of the OutSystems Customer Portal displaying the log storage location for logs separation feature.](images/log-separation-portal.png "Customer Portal Log Separation")
 
 
 ### Open a support ticket

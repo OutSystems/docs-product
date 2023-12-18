@@ -1,12 +1,11 @@
 ---
-summary: 
-tags: 
+summary: The article provides a guide on how to set up log streaming from OutSystems to Dynatrace, including prerequisites and configuration steps
+tags:
 locale: en-us
 guid: 7e46389e-dc1f-42cc-9225-929bed3b82a1
 app_type: traditional web apps, mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3139%3A322&mode=design&t=IIMVc2WTi7UxHv00-1
 ---
-
 # Stream logs to Dynatrace
 
 This article explains how you can set up log streaming from OutSystems applications to the **Dynatrace** APM tool.
@@ -35,7 +34,7 @@ Once you've completed these steps, go to LifeTime and [configure the log streami
 * **API key header name**: ``Authorization``
 * **API key**: ``Api-Token <access token>``
 
-    ![Lifetime parameters](images/log-streaming-dynatrace-lt.png)
+    ![Screenshot of the OutSystems LifeTime interface showing the log streaming configuration fields for Dynatrace](images/log-streaming-dynatrace-lt.png "Log Streaming Configuration in LifeTime")
 
 ## Additional resources
 

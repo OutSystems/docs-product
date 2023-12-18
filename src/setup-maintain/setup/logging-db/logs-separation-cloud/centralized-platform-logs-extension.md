@@ -60,11 +60,11 @@ Both server actions responsible for fetching the data from the DB and the API in
 
 To request the first five general logs for a specific module using the PlatformLogs extension, you use the GetGeneralDBLogs action:
 
-![Using the GetGeneralDBLogs action in Service Studio](images/example-platformlogs-ss.png)
+![Screenshot of the GetGeneralDBLogs action in Service Studio for the PlatformLogs extension](images/example-platformlogs-ss.png "PlatformLogs Extension Example")
 
 To do the same using the CentralizedPlatformLogs extension, you use the GetGeneralLogs action:
 
-![Using the GetGeneralLogs action in Service Studio](images/example-centralized-ss.png)
+![Screenshot of the GetGeneralLogs action in Service Studio for the CentralizedPlatformLogs extension](images/example-centralized-ss.png "CentralizedPlatformLogs Extension Example")
 
 ## Available actions reference
 

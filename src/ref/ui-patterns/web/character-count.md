@@ -18,4 +18,4 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/charactercount-2-diag.png>)
+![Diagram illustrating the layout and classes for the Character Count UI Pattern in Traditional Web Apps](images/charactercount-2-diag.png "Character Count Layout Diagram")

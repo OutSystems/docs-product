@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Alert UI Pattern to highlight and display important information, errors, or warnings.
 
-![](<images/alert-image-1.png>)
+![Example of an Alert UI Pattern in a Traditional Web App](images/alert-image-1.png "Alert UI Pattern Example")
 
 **How to use the Alert UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Alert UI Pattern to highlight and display important information,
 
     The Alert widget is displayed.
 
-    ![](<images/alert-image-7.png>)
+    ![Screenshot showing the Alert widget in the Service Studio Toolbox](images/alert-image-7.png "Alert Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,17 +40,17 @@ You can use the Alert UI Pattern to highlight and display important information,
 
 1. From the Toolbox, drag the Alert widget into the Main Content area of your application's screen.
 
-    ![](<images/alert-image-8.png>)
+    ![Process of dragging the Alert widget into the Main Content area of an application's screen](images/alert-image-8.png "Dragging Alert Widget into Main Content")
 
 1. Select the Text placeholder, and enter the Alert message you want to display.
     
-    ![](<images/alert-image-11.png>)
+    ![Entering the Alert message text into the Text placeholder of the Alert widget](images/alert-image-11.png "Setting Alert Message Text")
 
 1. On the **Property** tab, set the mandatory **AlertType** property. In this example, the alert type is set to error which changes the message to display in red. Additionally, the (optional) **ShowCloseButton** property is set to True. This enables a Close button for the Alert. 
     
-    ![](<images/alert-image-9.png>)
+    ![Property tab showing the AlertType property set to error in the Alert widget](images/alert-image-9.png "AlertType Property Settings")
 
-    ![](<images/alert-image-10.png>)
+    ![Property tab showing the ShowCloseButton property enabled in the Alert widget](images/alert-image-10.png "ShowCloseButton Property Settings")
 
 1. After following these steps and publishing the module, you can test the pattern in your app. 
 

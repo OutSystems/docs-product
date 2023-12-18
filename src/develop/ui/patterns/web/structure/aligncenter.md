@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use Align Center UI Pattern to center content horizontally or vertically on the screen. 
 
-![](<images/aligncenter-1.png>)
+![Example of content centered horizontally and vertically using Align Center UI Pattern](images/aligncenter-1.png "Align Center UI Pattern Example")
 
 **How to use the Align Center UI Pattern**
 
@@ -28,7 +28,7 @@ This example shows you how to center align a user's name and initials.
 
     The Align Center widget is displayed.
 
-    ![](<images/aligncenter-2-ss.png>)
+    ![Screenshot showing the Align Center widget in Service Studio's Toolbox](images/aligncenter-2-ss.png "Service Studio Align Center Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,31 +42,31 @@ This example shows you how to center align a user's name and initials.
 
 1. From the Toolbox, drag the Align Center widget into the Main Content area of your application's screen.
     
-    ![](<images/aligncenter-3-ss.png>)
+    ![Dragging the Align Center widget into the Main Content area in Service Studio](images/aligncenter-3-ss.png "Dragging Align Center Widget")
    
 1. From the Toolbox, drag the User Initials pattern into the Align Center placeholder.
 
 1. On the **Properties** tab, in the Name property, enter a name. In this example, we enter **Scott Ritchie**.
 
-    ![](<images/aligncenter-4-ss.png>)
+    ![Setting the name property to 'Scott Ritchie' in the Align Center widget's Properties tab](images/aligncenter-4-ss.png "Setting Name Property in Align Center")
 
 1. Add the relevant content to the Align Center widget. In this example we add some text (Scott Richie) and an image. 
 
-    ![](<images/aligncenter-5-ss.png>)
+    ![Adding text and an image to the Align Center widget in Service Studio](images/aligncenter-5-ss.png "Adding Content to Align Center Widget")
 
 1. On the Align Center **Properties** tab, you can set the content's orientation (either vertical or horizontal).
 
-    ![](<images/aligncenter-6-ss.png>)
+    ![Align Center Properties tab with options to set content orientation to vertical or horizontal](images/aligncenter-6-ss.png "Align Center Properties Tab")
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 
 **Without Align Center UI Pattern** 
 
-![](<images/aligncenter-7-ss.png>)
+![Screenshot showing the user interface without the use of Align Center UI Pattern](images/aligncenter-7-ss.png "Without Align Center UI Pattern")
 
 **With Align Center UI Pattern**
 
-![](<images/aligncenter-8-ss.png>)
+![Screenshot showing the user interface with the Align Center UI Pattern applied](images/aligncenter-8-ss.png "With Align Center UI Pattern")
 
 ## Properties
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Sidebar UI Pattern to display additional information in the margin of the main content. The additional information supports the user's understanding of the main content.
 
-![](<images/sidebar-4.png>)
+![Example of a Sidebar UI Pattern in a Traditional Web App](images/sidebar-4.png "Sidebar UI Pattern Example")
 
 **How to use the Sidebar UI Pattern**
 
@@ -28,7 +28,7 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     The Sidebar widget is displayed.
 
-    ![](<images/sidebar-5-ss.png>)
+    ![Service Studio displaying the Sidebar widget in the Toolbox](images/sidebar-5-ss.png "Service Studio Sidebar Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,27 +42,27 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
 1. From the Toolbox, drag the Sidebar widget into the Main Content area of your application's screen.
 
-    ![](<images/sidebar-6-ss.png>)
+    ![Dragging the Sidebar widget into the Main Content area in Service Studio](images/sidebar-6-ss.png "Dragging Sidebar Widget")
 
 1. On the **Properties** tab, in the **Name** field, enter a name for the Sidebar widget. In this example, we call it **MySidebar**.
 
-    ![](<images/sidebar-9-ss.png>)
+    ![Properties tab in Service Studio with the Name field filled as 'MySidebar'](images/sidebar-9-ss.png "Naming the Sidebar Widget")
 
 1. Add your content to the Header and Content placeholders, for example, forms, images, text etc. In this example we add some text. 
    
-    ![](<images/sidebar-8-ss.png>)
+    ![Adding text content to the Header and Content placeholders of the Sidebar widget](images/sidebar-8-ss.png "Adding Content to Sidebar")
 
 1. From the Toolbox, drag the Button widget just below the Sidebar widget and on the **Properties** tab, in the **Label** field, enter the text you want to appear on the button (in this example, we enter **Open**) and from the **Method** drop-down, select **Ajax Submit**.
 
-    ![](<images/sidebar-7-ss.png>)
+    ![Button widget added below the Sidebar widget with the Label field set to 'Open' in Service Studio](images/sidebar-7-ss.png "Adding a Button Below Sidebar")
 
 1. To create a screen action for the button, double-click the button, select the **Logic** tab, and from the **Server Actions** folder, navigate to and drag the ToggleSidebar action onto the screen action.
 
-    ![](<images/sidebar-10-ss.png>)
+    ![Service Studio Logic tab showing the ToggleSidebar action being dragged onto the screen action](images/sidebar-10-ss.png "Creating Screen Action for Button")
 
 1. On the **Properties** tab, from the **WidgetId** drop-down, select the Id for the widget. In this example, **MySidebar.Id**.
 
-    ![](<images/sidebar-11-ss.png>)
+    ![Properties tab in Service Studio with the WidgetId drop-down selecting 'MySidebar.Id'](images/sidebar-11-ss.png "Setting WidgetId for Sidebar")
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

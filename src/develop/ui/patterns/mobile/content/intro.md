@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 Content patterns allow you to highlight and display important information to users in different ways, such as warnings, errors, tooltips, notifications and chat screens. Content patterns also allow you to organize information into sections and lists, making the on-screen content more easily readable for users.
 
-![Content patterns overview](images/content-patterns-diag.png)
+![Diagram illustrating various content patterns such as accordion, alert, card, and tooltip](images/content-patterns-diag.png "Content Patterns Diagram")
 
  The available content patterns include the following:
  

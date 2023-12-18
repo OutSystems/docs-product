@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and Classes
 
-![](<images/buttongroup-image-3.png>)
+![Screenshot illustrating the layout and classes of the Button Group UI Pattern in a Traditional Web App](images/buttongroup-image-3.png "Button Group Layout")
 
 ## Advanced Use Case
 
@@ -32,7 +32,7 @@ Applies only to Traditional Web Apps.
 
 1. In the ButtonGroupItem, use expressions with the class btn to display the content.
 
-    ![](<images/buttongroup-image-4.png>)
+    ![Step-by-step visual guide on using ButtonGroup with ListRecords in a Traditional Web App](images/buttongroup-image-4.png "ButtonGroup with ListRecords")
 
 1. In the ListRecords Widget, set the Line Separator to None in order to avoid additional margin between elements.
 

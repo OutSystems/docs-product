@@ -20,4 +20,4 @@ To set a different HTTP Status Code in the Response, do the following:
 1. Use the [SetStatusCode](<../../../ref/apis/auto/httprequesthandler-api.final.md#SetStatusCode>) action in your REST API Method or callback flow right before the end node. 
 1. Set its "StatusCode" property to the desired status code. 
 
-![](images/ss-rest-change-http-code.png)
+![Screenshot showing how to set a custom HTTP Status Code in OutSystems REST API method](images/ss-rest-change-http-code.png "Setting a Custom HTTP Status Code in OutSystems")

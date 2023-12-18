@@ -66,6 +66,6 @@ To execute the 1-Click Publish in Service Center, do the following:
 
 1. Click **Upload & Publish an Extension**, under the "Extensions" heading.
 
-    ![Upload and Publish Extension in Service Center](images/upload-publish-extension-sc.png)
+    ![Screenshot showing the 'Upload & Publish an Extension' option in the Service Center management console](images/upload-publish-extension-sc.png "Upload and Publish Extension in Service Center")
 
 1. Choose your XIF file (or drag the XIF file and drop it in this upload area) and click **1-Click Publish**.

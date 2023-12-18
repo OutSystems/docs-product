@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/fieldset-2-diag.png>)
+![Diagram illustrating the layout and classes of a Fieldset UI Pattern in Traditional Web Apps](images/fieldset-2-diag.png "Fieldset Layout Diagram")
 
 ## Advanced use case
 
@@ -42,7 +42,7 @@ you can use custom CSS to change the style of the Fieldset Pattern. The followin
 }
 ```
 
-![](<images/fieldset-3-ss.png>)
+![Screenshot showing an example of custom CSS applied to change the style of the Fieldset Pattern in a Traditional Web App](images/fieldset-3-ss.png "Fieldset Style Example 1")
 
 **Example 2**
 
@@ -59,4 +59,4 @@ you can use custom CSS to change the style of the Fieldset Pattern. The followin
 }
 ```
 
-![](<images/fieldset-4-ss.png>)
+![Screenshot demonstrating another example of custom CSS modifications to the Fieldset Pattern in a Traditional Web App](images/fieldset-4-ss.png "Fieldset Style Example 2")

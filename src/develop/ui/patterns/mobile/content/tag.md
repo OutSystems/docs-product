@@ -24,7 +24,7 @@ You can use the Tag UI Pattern to style small texts in a colored tag format. Use
   
     The Tag widget is displayed.
 
-    ![](<images/tag-1-ss.png>)
+    ![Screenshot of Service Studio showing the Tag widget in the Toolbox](images/tag-1-ss.png "Service Studio Tag Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,15 +38,15 @@ You can use the Tag UI Pattern to style small texts in a colored tag format. Use
 
 1. To From the Toolbox, drag the Tag widget into the Main Content area of your application's screen.
 
-    ![](<images/tag-2-ss.png>)
+    ![Dragging the Tag widget from the Toolbox into the Main Content area in Service Studio](images/tag-2-ss.png "Drag Tag Widget to Main Content")
 
 1. Add your content to the placeholders. In this example, we add some text.
 
-    ![](<images/tag-3-ss.png>)
+    ![Adding text content to the Tag widget's placeholders in Service Studio](images/tag-3-ss.png "Add Content to Tag Placeholder")
 
 1. On the properties tab, you can change the Tag's look and feel by setting the (optional) properties, for example, size and color.
 
-    ![](<images/tag-4-ss.png>)
+    ![Service Studio properties tab showing options to change the Tag's size and color](images/tag-4-ss.png "Tag Properties Configuration")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

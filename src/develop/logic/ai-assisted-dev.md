@@ -65,11 +65,11 @@ There are several ways to get suggestions:
 
 * Click the AI radar (blue circle) on the flow connectors.
 
-    ![Suggestions show after clicking](images/ai-flow-node-click-ss.png)
+    ![Screenshot of Code Mentor suggestions appearing after clicking the AI radar in Service Studio](images/ai-flow-node-click-ss.png "Interacting with AI suggestions")
 
 * Drag a connector from an existing element and drop it in the flow window.
 
-    ![Suggestions show after dragging the connector](images/ai-flow-node-drag-ss.gif)
+    ![GIF demonstrating how to get suggestions by dragging a connector in Service Studio's flow window](images/ai-flow-node-drag-ss.gif "Dragging connector for AI suggestions")
 
 * Accept a suggestion from Code Mentor whose required properties are already
   filled in for you. In most situations, this presents new suggestions for the
@@ -80,7 +80,7 @@ There are several ways to get suggestions:
 You can accept a suggestion presented by Code Mentor by clicking on it or by
 selecting it with the arrow keys and pressing `Enter`.
 
-![AI suggestions selected with the keyboard](images/ai-flow-node-suggestion-ss.gif)
+![GIF showing the acceptance of a suggestion from Code Mentor and the subsequent creation of a new element in the flow](images/ai-flow-node-suggestion-ss.gif "Accepting AI-generated suggestions")
 
 Service Studio creates a new element in the flow according to the selected
 suggestion.
@@ -169,7 +169,7 @@ To enable or disable the feature, do the following:
 
 1. In the Preferences window, locate the **Code Mentor** section.
 
-    ![Setting to turn AI suggestions on or off](images/ai-flow-settings-ss.png)
+    ![Screenshot of the setting to enable or disable AI logic suggestions in Service Studio](images/ai-flow-settings-ss.png "AI suggestions settings in Service Studio")
 
 1. Check the status of the option **Enable logic suggestions in your flow**.
 
@@ -188,7 +188,7 @@ allows searching for other elements. You can also manually edit the flow.
 If this keeps happening, check your internet connection and try again. You can
 still use the Intelligent Quick Search to search for other elements.
 
-![AI shows message to try again](images/ai-flow-ts-tryagain-ss.png)
+![Screenshot showing the troubleshooting step when no suggestions are provided by Code Mentor in Service Studio](images/ai-flow-ts-tryagain-ss.png "Troubleshooting AI suggestions")
 
 ### Why isn't the AI radar showing up?
 

@@ -25,7 +25,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 </div>
 You can use the Submenu UI Pattern to create a menu that is contained within another menu.
 
-![Example submenu](<images/submenu-example-ss.png>)
+![Screenshot showing an example of a submenu in a mobile app interface](images/submenu-example-ss.png "Submenu Example Screenshot")
 
 **How to use the Submenu UI Pattern**
 
@@ -33,7 +33,7 @@ You can use the Submenu UI Pattern to create a menu that is contained within ano
 
     The Submenu widget is displayed.
 
-    ![Submenu widget](<images/submenu-widget-ss.png>)
+    ![Image of the Submenu widget in the Service Studio toolbox](images/submenu-widget-ss.png "Submenu Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -47,7 +47,7 @@ You can use the Submenu UI Pattern to create a menu that is contained within ano
 
 1. From the Toolbox, drag the Submenu widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](<images/submenu-dragwidget-ss.png>)
+    ![Step-by-step process of dragging the Submenu widget into the Main Content area of an application screen](images/submenu-dragwidget-ss.png "Dragging Submenu Widget to Screen")
 
     By default, the Submenu widget contains a Menu placeholder and an Items placeholder that contains a link. You can add as many Items placeholders as required. In this example we add 3 more.
 
@@ -55,7 +55,7 @@ You can use the Submenu UI Pattern to create a menu that is contained within ano
 
     In this example, we add text to the Menu placeholder, and set the links in the Items placeholders to navigate to different pages in the app.
 
-    ![Add content](<images/submenu-additems-ss.png>)
+    ![Example of adding text and setting links in the Submenu Items placeholders](images/submenu-additems-ss.png "Adding Content to Submenu Items")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -19,7 +19,7 @@ To navigate to a detail screen in Reactive Web and Mobile:
 1. On the screen that displays the list, select the List Item widget. 
 1. In the properties of the List Item widget, select the target detail screen as handler for the On Click event and define the identifier of the current list item as an input argument to the target screen. 
 
-![](images/navigate-mobile.png?width=750)
+![Example of navigating to a detail screen in Reactive Web and Mobile using the List Item widget](images/navigate-mobile.png "Navigation to Detail Screen in Reactive Web and Mobile")
 
 ## In Traditional Web
 
@@ -28,4 +28,4 @@ To navigate to a detail screen in Traditional Web:
 1. On the screen that displays the list, associate a Link widget with a detail of the item displayed in the list.
 1. In the properties of the Link widget, select the target detail screen in the Destination property and define the identifier of the current list item as an input argument to the target screen. 
 
-![](images/navigate-web.png?width=750)
+![Illustration of linking to a detail screen in Traditional Web using the Link widget](images/navigate-web.png "Navigation to Detail Screen in Traditional Web")

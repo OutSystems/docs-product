@@ -17,13 +17,13 @@ In this example the Mobile Sales application consumes an action exposed by the v
 
 LifeTime displays a red icon near every application that is not running properly, so that you can easily understand the status of all applications running on each environment.
 
-![](images/repair-deployed-applications-1.png)
+![Red icon indicating a problem with the Mobile Sales application in LifeTime](images/repair-deployed-applications-1.png "LifeTime Application Status Indicator")
 
 To find out what is the problem with Mobile Sales, on the Applications tab click **Mobile Sales**, to display the details of the application.
 
 On the MobileSales module, hovering the mouse over the red icon shows a tooltip with the description of the problem: the module has broken references.
 
-![](images/repair-deployed-applications-2.png)
+![Tooltip showing broken references in the MobileSales module](images/repair-deployed-applications-2.png "Broken References Tooltip")
 
 To know which references are broken, the Mobile Sales module has to be opened and analyzed in Service Studio:
 
@@ -35,6 +35,6 @@ To know which references are broken, the Mobile Sales module has to be opened an
 
 Deploy Sales 0.2 from the development environment to the quality assurance environment.
 
-![](images/repair-deployed-applications-4.png)
+![Deployment process showing Sales 0.2 successfully deployed to Quality Assurance](images/repair-deployed-applications-4.png "Successful Deployment of Sales Application")
 
 When the deployment finishes, Mobile Sales has no more conflicts. It now references the Sales 0.2, making the Quality Assurance environment run without errors.

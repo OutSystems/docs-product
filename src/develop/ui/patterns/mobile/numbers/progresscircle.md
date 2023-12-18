@@ -26,7 +26,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge.
 
-![Example progress circle](<images/progresscircle-example-ss.png>)
+![Screenshot showing an example of the Progress Circle UI pattern in use](images/progresscircle-example-ss.png "Example of Progress Circle UI")
 
 **How to use the Progress Circle UI Pattern**
 
@@ -36,7 +36,7 @@ In this example, we create a button that increments the progress circle each tim
 
     The Progress Circle widget is displayed.
 
-    ![Progress Circle widget](<images/progresscircle-widget-ss.png>)
+    ![Image of the Progress Circle widget found in OutSystems Service Studio](images/progresscircle-widget-ss.png "Progress Circle Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -50,43 +50,43 @@ In this example, we create a button that increments the progress circle each tim
 
 1. From the Toolbox, drag the Progress Circle widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](<images/progresscircle-dragwidget-ss.png>)
+    ![Step-by-step image showing the Progress Circle widget being dragged into the Main Content area of an application screen](images/progresscircle-dragwidget-ss.png "Dragging Progress Circle Widget to Screen")
 
 1. Right-click your screen name, select **Add Local Variable**, and enter a name. for example, `Count`.
 
-    ![Add local variable](<images/progresscircle-variable-ss.png>)
+    ![Screenshot illustrating how to add a local variable for the Progress Circle in OutSystems Service Studio](images/progresscircle-variable-ss.png "Adding a Local Variable for Progress Circle")
 
 1. Select the Progress Circle widget, and on the **Properties** tab, in the **Progress** property, enter the **Count** variable. 
 
-    ![Add progress logic](<images/progresscircle-logic-ss.png>)
+    ![Image showing where to set the Progress property for the Progress Circle widget in the Properties tab](images/progresscircle-logic-ss.png "Setting Progress Property for Progress Circle")
 
 1. Select the **Expression** widget inside the Progress Circle, and on the **Properties** tab, in the **Value** property, enter the relevant logic for the progress. In this example, enter the local variable **Count**. 
 
-    ![Add expression logic](<images/progresscircle-expression-ss.png>)
+    ![Screenshot demonstrating how to add expression logic to the Progress Circle widget for displaying progress](images/progresscircle-expression-ss.png "Adding Expression Logic to Progress Circle")
 
 1. From the Toolbox, drag the **Separator** widget into the Progress Circle.
 
-    ![Add the separator widget](<images/progresscircle-separator-ss.png>)
+    ![Image depicting the insertion of a Separator widget into the Progress Circle structure](images/progresscircle-separator-ss.png "Inserting Separator Widget into Progress Circle")
 
 1. From the Toolbox, drag an **Expression** widget under the **Separator** widget and enter the relevant logic for the denominator. In this example, enter ``"100"``.
 
-    ![Add an expression widget for the denominator](<images/progresscircle-denominator-ss.png>)
+    ![Screenshot showing how to add an expression widget for the denominator in the Progress Circle pattern](images/progresscircle-denominator-ss.png "Adding Denominator Expression to Progress Circle")
 
 1. From the Toolbox, drag the Button widget into the Main Content area of your application's screen. 
 
     In this example, we call the button **Increment** and set the **On Click** event to a  **New Client Action** that assigns the **Count** variable to `Count + 1`.
 
-    ![Add a button to the screen](<images/progresscircle-button-ss.png>)
+    ![Image of adding an 'Increment' button to the application screen to control the Progress Circle](images/progresscircle-button-ss.png "Adding Increment Button to Screen")
 
-    ![Set the on click action logic](<images/progresscircle-assign-ss.png>)
+    ![Screenshot illustrating the assignment of the On Click event to a new client action for the Increment button](images/progresscircle-assign-ss.png "Setting On Click Action for Increment Button")
 
 1. Select the Progress Circle widget, and on the **Properties** tab, you can change the Progress Circle's look and feel by setting the (optional) properties, for example, the color settings.
 
-    ![Set optional properties](<images/progresscircle-properties-ss.png>)
+    ![Image showing the optional properties that can be set for the Progress Circle widget to change its appearance](images/progresscircle-properties-ss.png "Configuring Optional Properties of Progress Circle")
 
 After following these steps and publishing the module, you can test the pattern in your app. The result of this example should look something like the following:
 
-![Published app result](<images/progresscircle-result-ss.png>)
+![Screenshot displaying the final result of the Progress Circle UI pattern after implementation and testing in an app](images/progresscircle-result-ss.png "Final Result of Progress Circle Implementation")
 
 ## Properties
 

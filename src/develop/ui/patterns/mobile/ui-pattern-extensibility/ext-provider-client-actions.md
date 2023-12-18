@@ -1,13 +1,12 @@
 ---
-tags: runtime-mobileandreactiveweb;  
-summary: 
+tags: runtime-mobileandreactiveweb;
+summary: The article details how to use client actions to add events and configurations to UI Patterns in OutSystems
 locale: en-us
 guid: 6265028A-3331-417B-80BC-3E91A1E7B12C
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4647%3A10996&mode=design&t=ANpsYvOCthr9AWot-1
 ---
-
 # Provider client actions
 
 The following extensibility client actions are available for UI Patterns:
@@ -39,7 +38,7 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
 1. In Service Studio, in the Toolbox, search for the **Range Slider** Pattern.
 
-    ![Range Slider widget](<images/rangeslider-ss.png>)
+    ![Screenshot of the Range Slider widget in OutSystems Service Studio](images/rangeslider-ss.png "Range Slider Widget in Service Studio")
 
 1. Drag the Pattern to the screen and on the **Properties** tab, set the following mandatory properties:
 
@@ -49,11 +48,11 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
     * **StartingValue**: 50 
 
-    ![Drag widget to screen and enter mandatory properties](<images/rangeslider-drag-ss.png>)
+    ![Dragging the Range Slider widget to the screen and setting mandatory properties in Service Studio](images/rangeslider-drag-ss.png "Setting Properties for Range Slider")
 
 1. Staying on the **Properties** tab, in the **Events** section, select **New Client Action** for both the **Initialized** and **OnValueChange** events.
 
-    ![Create new client action for events](<images/initialized-ss.png>)
+    ![Creating a new client action for Initialized and OnValueChange events in Service Studio](images/initialized-ss.png "Creating New Client Action for Events")
 
 1. Create a new **OnSlide** client action and add the relevant logic. 
 
@@ -61,23 +60,23 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
     In this example, logic that triggers an ``"Is sliding"`` feedback message is added.
 
-    ![Create OnSLide client action](<images/onslide-ss.png>)
+    ![Creating an OnSlide client action and adding logic in Service Studio](images/onslide-ss.png "Creating OnSlide Client Action")
 
 1. To set the **OnSlide** client action to an **Object** variable:
 
     1. Drag a JavaScript node to the **Initialized** event flow.
 
-        ![Drag JavaScript node to event](<images/javascript-ss.png>)
+        ![Dragging a JavaScript node to the Initialized event flow in Service Studio](images/javascript-ss.png "Adding JavaScript Node to Event")
 
     1. Create an output parameter of type **Object** (Callback) inside the JavaScript node and assign the output parameter to the **OnSlide** client action. (The platform may automatically add brackets () to the end of the assign, for example, ``$actions.OnSlide().`` If so, remove them.)
 
-        ![Create output parameter and assign to client action](<images/callback-ss.png>)
+        ![Creating an output parameter and assigning it to the OnSlide client action in Service Studio](images/callback-ss.png "Assigning Client Action to Callback")
 
     **Note**: By default, the **SetNoUiSliderEvent** client action has a **Handler** input parameter of type **Object**. As you can’t directly pass client actions using parameters, you must change the **OnSlide** client action to an Object variable that can be passed to the **Handler** input parameter. 
 
 1. On the **Logic** tab, go to **Client Actions** -> **OutSystemsUI**, expand the **Range Slider** folder and drag the **SetNoUiSliderEvent** client action to the action flow.
 
-    ![Drag SetNoUiSliderEvent to the action flow](<images/setnouislider-ss.png>)
+    ![Dragging SetNoUiSliderEvent client action to the action flow in Service Studio](images/setnouislider-ss.png "Setting NoUiSlider Event in Service Studio")
 
 1. Set the following parameter values:
 
@@ -87,11 +86,11 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
     * **Handler** to the callback of type **Object** created in the JavaScript node.
 
-        ![Set the client action properties](<images/clientaction-properties-ss.png>)
+        ![Setting the properties for the SetNoUiSliderEvent client action in Service Studio](images/clientaction-properties-ss.png "Configuring Client Action Properties")
 
 1. Click **1-Click Publish**.
 
-    ![Result](<images/result-ss.png>)
+    ![Clicking 1-Click Publish to deploy changes in Service Studio](images/result-ss.png "Publishing Changes")
 
 ## Provider configuration
 
@@ -118,31 +117,31 @@ In the following example, the Date Picker Pattern is set to appear flat on the s
 
 1. In Service Studio, in the Toolbox, search for the **Date Picker** Pattern.
 
-    ![Date Picker](<images/datepicker-ss.png>)
+    ![Screenshot of the Date Picker widget in OutSystems Service Studio](images/datepicker-ss.png "Date Picker Widget in Service Studio")
 
 1. Drag the Pattern to the screen.
 
-    ![Drag Date Picker to the screen](<images/drag-datepicker-ss.png>)
+    ![Dragging the Date Picker widget to the screen in Service Studio](images/drag-datepicker-ss.png "Dragging Date Picker to the Screen")
 
 1. On the **Properties** tab,  in the **Events** section, select **New Client Action** for the **Initialized** event.
     
-    ![Create new client action for initialized event](<images/initialized-ss.png>)
+    ![Creating a new client action for Initialized and OnValueChange events in Service Studio](images/initialized-ss.png "Creating New Client Action for Events")
 
 1. On the **Logic** tab, go to **Client Actions** -> **OutSystems UI**, expand the **Date Pickers** folder, and drag the **SetFlatpickerConfigs** client action inside the **Initialized** action flow.
 
-    ![SetFlatpickerConfigs](<images/setflatpickrconfig-ss.png>)
+    ![Dragging SetFlatpickrConfigs client action inside the Initialized action flow in Service Studio](images/setflatpickrconfig-ss.png "Configuring Flatpickr in Service Studio")
 
 1. Set the **WidgetId** parameter to the **DatePickerWidgetId** parameter (returned by the Initialized action).
 
-    ![Set the Widget Id](<images/datepicker-widgetid-ss.png>)
+    ![Setting the WidgetId parameter for the Date Picker widget in Service Studio](images/datepicker-widgetid-ss.png "Setting Widget ID for Date Picker")
 
 1. Expand the **ProviderConfigs** parameter and set the **Inline** option to **True**.
 
-    ![Set Inline property to True ](<images/inline-ss.png>)
+    ![Setting the Inline property to True for Flatpickr configuration in Service Studio](images/inline-ss.png "Setting Inline Property for Flatpickr")
 
 1. Click **1-Click Publish**.
 
-    ![Set Inline property to True ](<images/flat-datepicker-ss.png>)
+    ![Result of setting the Date Picker Pattern to appear flat on the screen](images/flat-datepicker-ss.png "Flat Date Picker Result")
 
 <div class="info" markdown="1">
 

@@ -24,7 +24,7 @@ You can use the Button Group UI Pattern to display radio button choices to the u
 
     The Button Group widget is displayed.
 
-    ![](<images/buttongroup-image-1.png>)
+    ![Screenshot of the Button Group widget in the Service Studio toolbox](images/buttongroup-image-1.png "Button Group Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,13 +38,13 @@ You can use the Button Group UI Pattern to display radio button choices to the u
 
 1. From the Toolbox, drag the Button Group widget into the Main Content area of your application's screen.
 
-     ![](<images/buttongroup-image-2.png>)
+     ![Illustration of dragging the Button Group widget into the main content area of an application screen](images/buttongroup-image-2.png "Dragging Button Group Widget into Main Content Area")
 
     By default, the pattern contains 3 Button Group Items. You can add or delete as many Button Group Items as required.
 
 1. From the Widget Tree, select the **radio-button** element, and on the **Properties** tab, set the **Variable** and **Value** properties. 
 
-    ![](<images/buttongroup-image-3.png>)
+    ![Interface showing the properties tab for setting the variable and value properties of a radio-button element](images/buttongroup-image-3.png "Setting Properties for Radio Button Element")
 
 1. Repeat step 3 for each of the **radio-button** elements.
 

@@ -14,34 +14,34 @@ This example shows how you can create a simple Bar Chart with a customized legen
 
 1. From the Toolbox, drag the **Bar Chart** widget to the Screen.
 
-    ![Drag the Bar Chart widget to the screen ](images/chartbar-drag-ss.png)
+    ![Screenshot showing the Bar Chart widget being dragged onto the screen in the development environment](images/chartbar-drag-ss.png "Dragging Bar Chart Widget")
 
 1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.
 
-    ![Expand the Data Point List property](images/chartbar-expand-ss.png)
+    ![Screenshot of the Properties tab with the DataPointList property expanded to show options](images/chartbar-expand-ss.png "Expanding DataPointList Property")
 
 1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
 
     This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the bar chart.
 
-    ![Set the Position and Layout properties](images/chartbar-datapoint-ss.png)
+    ![Screenshot demonstrating how to set the Label and Value properties for a data point in the Bar Chart](images/chartbar-datapoint-ss.png "Setting Data Point Properties")
 
 1. Set the **SeriesName** property.
 
-    ![Set the series name](images/chart-seriesname-ss.png)
+    ![Screenshot showing the SeriesName property field in the Bar Chart widget properties](images/chart-seriesname-ss.png "Setting SeriesName Property")
 
 1. To add more data points, repeat steps 2 and 3.
 
 1. To customize the legend, in the **AddOns** placeholder, click **ChartLegend**, and on the **Properties** tab, set the **Position** property to **Entities.LegendPosition.TopRight** and the **Layout** to **Entities.LegendLayout.Vertical**.
 
-    ![Set the Position and Layout properties](images/chartbar-addon-ss.png)
+    ![Screenshot of the AddOns placeholder with the ChartLegend selected and Properties tab open](images/chartbar-addon-ss.png "ChartLegend AddOn Configuration")
 
 1. Set the extra configurations to customize the legend.
 
-    ![Customize the legend](images/chartbar-customize-ss.png)
+    ![Screenshot showing the extra configuration options for customizing the chart legend](images/chartbar-customize-ss.png "Customizing Chart Legend")
 
 After following these steps, you can publish your module:
 
-![Example Bar Chart](images/chartbar-result.png)
+![Image of the final result of the Bar Chart with customized legend after publishing the module](images/chartbar-result.png "Final Bar Chart Result")
 
 

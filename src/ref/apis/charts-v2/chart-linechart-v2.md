@@ -14,38 +14,38 @@ This example shows how you can create a simple Line Chart with a Spline line and
 
 1. From the Toolbox, drag the **Line Chart** widget to the Screen.
 
-    ![Drag the Line Chart widget to the screen ](images/chartline-drag-ss.png)
+    ![Screenshot of dragging the Line Chart widget onto the screen in OutSystems](images/chartline-drag-ss.png "Dragging Line Chart Widget")
 
 1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.
 
-    ![Expand the Data Point List property](images/chartline-expand-ss.png)
+    ![Screenshot showing the expansion of the DataPointList property in OutSystems](images/chartline-expand-ss.png "Expanding DataPointList Property")
 
 1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
 
     This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the line chart. 
 
-    ![Set datapoint](images/chartline-datapoint-ss.png)
+    ![Screenshot of setting Label and Value properties for a data point in OutSystems Line Chart](images/chartline-datapoint-ss.png "Setting Data Point Properties")
 
 1. Set the **SeriesName** property.
 
-    ![Set the series name](images/chart-seriesname-ss.png)
+    ![Screenshot where the SeriesName property is being set in OutSystems Line Chart](images/chart-seriesname-ss.png "Setting SeriesName Property")
 
 1. To add more data points, repeat steps 2 and 3.
 
-    ![Add more data points](images/chartline-extradatapoints-ss.png)
+    ![Screenshot illustrating the addition of extra data points to the Line Chart in OutSystems](images/chartline-extradatapoints-ss.png "Adding Additional Data Points")
 
 1. To enable the Spline Line, set the **Spline** property to **True**.
 
-    ![Set the Spline property](images/chartline-spline-ss.png)
+    ![Screenshot showing the Spline property set to True to enable Spline Line in OutSystems Line Chart](images/chartline-spline-ss.png "Enabling Spline Line")
 
 1. To customize a Series, click on the **SeriesStyling** in the **AddOns** placeholder, and on the **Properties** tab, set the **SeriesName** property to the Series you want to customize (in this case, **Series 1**).
 
-    ![Select the series to customize](images/chartline-addon-ss.png)
+    ![Screenshot of SeriesStyling customization for Series 1 in OutSystems Line Chart](images/chartline-addon-ss.png "Customizing Series with SeriesStyling")
 
 1. Expand the **Marker** property and set the extra configurations to customize the marker.
 
-    ![Set marker properties](images/chartline-marker-ss.png)
+    ![Screenshot displaying the customization options for the marker in OutSystems Line Chart](images/chartline-marker-ss.png "Customizing Chart Marker")
 
 After following these steps, you can publish your module:
 
-![Example Line Chart](images/chartline-result.png)
+![Image of the final result of a Line Chart with a Spline line and custom markers in OutSystems](images/chartline-result.png "Final Line Chart Result")

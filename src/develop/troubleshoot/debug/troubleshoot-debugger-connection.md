@@ -54,7 +54,7 @@ For the device to be detected by Service Studio, you should start by having the 
 
 1. Navigate to the **Developer options** section inside the **Settings** and enable the **USB debugging** option.
 
-    ![](<images/device-usb-debugging.png>)
+    ![Screenshot showing how to enable USB Debugging in the Developer options of an Android device settings](images/device-usb-debugging.png "USB Debugging Option in Android Device Settings")
 
     *Note:* If you don't have the **Developer options** section in **Settings**, check how to [enable **Developer options**](<https://developer.android.com/studio/debug/dev-options.html#enable>) on your device.
 
@@ -70,7 +70,7 @@ After ensuring that the USB debugging option is enabled, you should check if the
 
 1. If your device is listed under **Other devices**, you need to install the correct drivers before proceeding:
 
-    ![](<images/device-unrecognized.png>)
+    ![Image depicting an Android device listed under Other devices in Windows Device Manager indicating missing drivers](images/device-unrecognized.png "Device Not Recognized in Windows Device Manager")
 
 To help Windows correctly detect the device, follow [this guide](<https://developer.android.com/studio/run/oem-usb.html>) to install the drivers provided by the manufacturer.
 
@@ -80,39 +80,39 @@ If after following the guide mentioned above Windows still fails to recognize th
 
 1. Right-click on your device and select **Update Driver Software...**.
 
-    ![](<images/device-update-driver.png>)
+    ![Context menu option to update driver software for an unrecognized Android device in Windows](images/device-update-driver.png "Update Driver Software Option for Android Device")
 
 1. Choose **Browse my computer for driver software**.
 
-    ![](<images/device-browse-for-driver.png>)
+    ![Window prompt to browse computer for driver software for an Android device](images/device-browse-for-driver.png "Browse Computer for Driver Software Window")
 
 1. Choose **Let me pick from a list of device drivers on my computer**.
 
-    ![](<images/device-pick-driver-from-list.png>)
+    ![Selection screen to pick from a list of available device drivers on a computer](images/device-pick-driver-from-list.png "Pick from a List of Device Drivers on Computer")
 
 1. Select **Show All Devices** and click **Next**.
 
-    ![](<images/device-show-all-devices.png>)
+    ![Option to show all devices when updating driver software in Windows](images/device-show-all-devices.png "Show All Devices Option in Windows")
 
 1. Choose the option **Have Disk...**, browse to the `usb_driver` folder located on the extracted folder and click **OK**.
 
-    ![](<images/device-install-from-disk.png>)
+    ![Option to install driver from disk for an Android device in Windows](images/device-install-from-disk.png "Install from Disk Option for Android Device Driver")
 
 1. Select **Android ADB Interface** and click **Next**.
 
-    ![](<images/device-android-adb-interface.png>)
+    ![Selection of Android ADB Interface from the list of drivers during installation](images/device-android-adb-interface.png "Selecting Android ADB Interface Driver")
 
 1. Confirm the installation of the driver by pressing **Yes**.
 
-    ![](<images/device-driver-warning.png>)
+    ![Windows security warning dialog during the installation of an Android device driver](images/device-driver-warning.png "Windows Security Warning for Driver Installation")
 
 1. Install the driver by choosing **Install**.
 
-    ![](<images/device-driver-install-prompt.png>)
+    ![Prompt window for confirming the installation of an Android device driver](images/device-driver-install-prompt.png "Driver Installation Prompt for Android Device")
 
 When the installation completes, press **Close** and check that the device appears in Device Manager:
 
-![](<images/device-install-success.png>)
+![Confirmation of successful installation of Android device driver in Windows Device Manager](images/device-install-success.png "Successful Android Device Driver Installation")
 
 ### Incompatible USB mode selected in device { #incompatible-usb-mode-selected-in-device }
 
@@ -121,11 +121,11 @@ The USB mode which the device is configured to use when connecting to a PC can a
 Depending on the version of Android and the manufacturer of the device, this option can be in different places.
 First of all, check if you have any notification referring to the USB mode, like the ones below:
 
-![](<images/device-usb-mode-1.png>)
+![Notification on an Android device showing USB mode options for connection to a PC](images/device-usb-mode-1.png "USB Mode Notification on Android Device")
 
-![](<images/device-usb-mode-2.png>)
+![Selection of USB mode on an Android device when connected to a PC](images/device-usb-mode-2.png "USB Mode Selection on Android Device")
 
-![](<images/device-usb-mode-3.png>)
+![USB connection options available on an Android device for establishing a connection with a PC](images/device-usb-mode-3.png "USB Connection Options on Android Device")
 
 If you find these options, try to switch between them (`MTP`, `PTP` and `Camera` modes), disconnecting and reconnecting the device to the PC, and retrying the device discovery in Service Studio.
 
@@ -136,7 +136,7 @@ Whenever an Android device is connected to a PC, a request to allow USB Debuggin
 
 If you get a pop-up on your device like the one below, just tap **OK** and try again on Service Studio to detect the device:
 
-![](<images/device-allow-usb-debugging.png>)
+![Pop-up on an Android device asking to allow USB debugging with a PC](images/device-allow-usb-debugging.png "Allow USB Debugging Prompt on Android Device")
 
 ### More than one Android device is connected to your PC { #more-than-one-android-device-is-connected-to-your-pc }
 
@@ -178,13 +178,13 @@ Do the following:
 
 1. Make sure that the "Web Inspector" option is turned **on**.
 
-    ![](<images/ios-web-inspector.png>)
+    ![The Web Inspector toggle switch located in the Advanced section of Safari settings on an iOS device](images/ios-web-inspector.png "Web Inspector Toggle in iOS Safari Settings")
 
 ### PC is not trusted for debugging { #pc-is-not-trusted-for-debugging }
 
 The final step to setup your device to be ready for debugging is to trust the PC so it can communicate with the device. To do so, tap **Trust** when the following pop-up appears on your device:
 
-![](<images/device-trust-computer.png>)
+![Prompt on an iOS device asking to trust the connected computer for debugging purposes](images/device-trust-computer.png "Trust This Computer Prompt on iOS Device")
 
 Check [Apple Support](<https://support.apple.com/en-us/HT202778>) for more information on trusted computers.
 

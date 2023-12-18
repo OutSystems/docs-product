@@ -34,11 +34,11 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ### Accordion base structure
 
-![Base Accordion structure](images/accordion-base-structure-diag.png)
+![Diagram illustrating the base structure of an accordion component in a UI pattern](images/accordion-base-structure-diag.png "Accordion Base Structure Diagram")
 
 ### Accordion and List widget
 
-![Accordion and List widget](images/accordion-list-widget-diag.png)
+![Diagram showing the relationship between accordion and list widget in a UI pattern](images/accordion-list-widget-diag.png "Accordion and List Widget Diagram")
 
 ## API - Accordion
 

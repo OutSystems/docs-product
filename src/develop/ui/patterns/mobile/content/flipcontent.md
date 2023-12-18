@@ -26,7 +26,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
 
-![](<images/flipcontent-example.gif?width=500>)
+![Animated example of the Flip Content UI pattern in action, showing the front and back content flipping.](images/flipcontent-example.gif "Flip Content Interaction Example")
 
 **How to use the Flip content UI Pattern**
 
@@ -34,7 +34,7 @@ You can use the Flip Content UI Pattern to display information that when, for ex
 
     The Flip Content widget is displayed.
 
-    ![Flip Content widget](<images/flipcontent-widget-ss.png>)
+    ![Screenshot of the Flip Content widget in the OutSystems Service Studio toolbox.](images/flipcontent-widget-ss.png "Flip Content Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -48,7 +48,7 @@ You can use the Flip Content UI Pattern to display information that when, for ex
 
 1. From the Toolbox, drag the Flip Content widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](<images/flipcontent-dragwidget-ss.png>)
+    ![Screenshot showing the process of dragging the Flip Content widget into the Main Content area of an application's screen.](images/flipcontent-dragwidget-ss.png "Dragging Flip Content Widget to Screen")
 
     By default, the Flip Content widget contains **CardFront** and **CardBack** placeholders.
 
@@ -56,11 +56,11 @@ You can use the Flip Content UI Pattern to display information that when, for ex
 
     In this example, we add images by dragging the Image widget into the **CardFront** and **CardBack** placeholders and from the **Image** dropdown, selecting an image from the sample OutSystems UI images.
 
-    ![Add content to widget](<images/flipcontent-addimage-ss.png>)
+    ![Screenshot demonstrating how to add images to the CardFront and CardBack placeholders inside the Flip Content widget.](images/flipcontent-addimage-ss.png "Adding Content to Flip Content Widget")
 
 1. On the **Properties** tab, you can customize the Flip Content's look and feel by setting any of the (optional) properties.
 
-    ![Properties](<images/flipcontent-properties-ss.png>)
+    ![Screenshot of the Properties tab for customizing the Flip Content's appearance and behavior in OutSystems Service Studio.](images/flipcontent-properties-ss.png "Flip Content Properties")
 
 ## Properties
 

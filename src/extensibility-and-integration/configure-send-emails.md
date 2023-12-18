@@ -20,7 +20,7 @@ To configure SMTP in the environment, follow these steps in **Service Center**:
 1. Enter the information about the SMTP server (for example smtp.gmail.com).
 1. Click **Save**.
 
-![SMTP configuration in Service Center](images/configure-outsystems-to-send-emails-1.png)
+![Screenshot of SMTP server configuration steps in OutSystems Service Center](images/configure-outsystems-to-send-emails-1.png "SMTP Server Configuration in OutSystems Service Center")
 
 To check if the SMTP is properly configured, try sending an email from an existing application.
 
@@ -36,7 +36,7 @@ When developing and testing, you need to ensure that no email gets sent to your 
 
 To redirect all emails to a list of test users, check the **Redirect Emails to Test List**. Add the email addresses to redirect the emails to, in the **Test List Addresses** field.
 
-![List of the test email addresses](images/configure-outsystems-to-send-emails-2.png)
+![Interface for redirecting emails to a test list in OutSystems](images/configure-outsystems-to-send-emails-2.png "Redirecting Emails to Test List in OutSystems")
 
 In this example, all emails sent from this environment are redirected to an internal mailing list, instead of their original address.
 Note that all emails are redirected, including emails addressed using the CC and BCC fields.
@@ -48,4 +48,4 @@ To ensure the links in your emails point to the right environment, be sure to se
 
 Navigate to the **Administration** tab and click **Environment Configuration**. Set the **Hostname** field with the domain name you want your users to navigate to.
 
-![Hostname configuration](images/configure-outsystems-to-send-emails-3.png)
+![Form for setting the environment hostname in OutSystems administration settings](images/configure-outsystems-to-send-emails-3.png "Setting Environment Hostname in OutSystems")

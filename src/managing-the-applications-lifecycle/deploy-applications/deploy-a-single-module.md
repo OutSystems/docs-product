@@ -30,18 +30,18 @@ In the 'Application' tab, click the **Deploy...** green button between Developme
 
 In the MyBigWebApp application, click the **Do Nothing** dropdown menu, and select **Deploy Custom...**.
 
-![](images/deploy-a-single-module-1.png)
+![Screenshot showing the Deploy Custom option in the MyBigWebApp application to select a single module for deployment](images/deploy-a-single-module-1.png "Selecting a Single Module for Deployment")
 
 A pop-up opens, displaying all modules of the MyBigWebApp application. Notice the modules with a '+'(plus) sign, signaling that they have been changed.
 
 Check the MyBigWebApp4 module to deploy its latest version to Quality. Confirm the choice by pressing **Done**.
 
-![](images/deploy-a-single-module-2.png)
+![Pop-up window displaying all modules of MyBigWebApp with the MyBigWebApp4 module checked for deployment](images/deploy-a-single-module-2.png "Module Selection Pop-up")
 
 ### Deploy the Module
 
 Back to the deployment screen, click **Validate Now** to validate if just deploying module MyBigWebApp4 from MyBigWebApp has no impact on other applications in Quality. All it's OK, so click on the **Continue** button to review the deployment plan. 
 
-![](images/deploy-a-single-module-3.png)
+![Deployment screen with Validate Now and Continue buttons highlighted, indicating the process to deploy module MyBigWebApp4](images/deploy-a-single-module-3.png "Deployment Validation and Execution")
 
 Add a note like 'Deploying module MyBigWebApp4 from MyBigWebApp' and click on **Deploy Now**.

@@ -50,7 +50,7 @@ You can access Experience Builder with the **latest versions** of the following 
 
 When you log in to [Experience Builder](https://experiencebuilder.outsystems.com/) for the first time you enter the following welcome screen:
 
-![](images/login-eb.png)
+![Welcome screen of Experience Builder showing the environment field and Next button](images/login-eb.png "Experience Builder Login Screen")
 
 To log in to Experience Builder, perform the following steps.
 
@@ -75,29 +75,29 @@ To begin registering your infrastructure in Experience Builder, perform the foll
 
 1. Click on the **Register Environment** button.
 
-    ![](images/register-environment-eb.png)
+    ![Button to register environment in Experience Builder](images/register-environment-eb.png "Register Environment Button")
 
 1. Read the Experience Builder disclaimer and GDPR information carefully. To proceed, click on the **Accept and continue** button.
 
-    ![](images/disclaimer-eb.png)
+    ![Experience Builder disclaimer and GDPR information screen](images/disclaimer-eb.png "Experience Builder Disclaimer")
 
 1. Depending on your Platform Server release and your user role in Lifetime, there are two scenarios:
 
     * Experience Builder collects all data from your infrastructure automatically. Check the information displayed, and click on the **Register** button.
 
-        ![](images/activation-code-auto-eb.png)
+        ![Screen showing automatic data collection from infrastructure in Experience Builder](images/activation-code-auto-eb.png "Automatic Infrastructure Data Collection")
 
     * Enter your infrastructure activation code, and click on the **Register** button.
     Then, Proceed to **Step 4**.
     To learn how to get your activation code, refer to [Find the Activation Code of your infrastructure](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/02_Manage_and_Upgrade/Find_the_Activation_Code_and_the_Serial_Number).
 
-        ![](images/activation-code-manual-eb.png)
+        ![Field to enter infrastructure activation code manually in Experience Builder](images/activation-code-manual-eb.png "Manual Infrastructure Activation Code Entry")
 
 1. Download the **Experience Builder Components** package using the link provided on the screen.
 
 1. In the Service Center console of the Development Environment (`https://<development_environment>/ServiceCenter`), install the downloaded **.osp** file in your Development environment by following these steps:
     
-    ![](images/dev-env-sc.png)
+    ![Service Center console in Development Environment for installing Experience Builder Components package](images/dev-env-sc.png "Service Center Console")
 
     1. Click on **Factory**.
     1. Click on **Solutions**.
@@ -109,23 +109,23 @@ To begin registering your infrastructure in Experience Builder, perform the foll
 
 1. Click on the checkbox to confirm you completed all the steps, and then click on the **Next** button.
 
-    ![](images/dependencies-eb.png)
+    ![Checkbox to confirm completion of all steps for setting up Experience Builder dependencies](images/dependencies-eb.png "Experience Builder Dependencies Confirmation")
 
 1. Share Experience Builder with your IT users. To allow an Experience Builder user to generate an app, they’ll need to have an IT user created in your Infrastructure with permission to Change & Deploy Applications in the Development Environment.
 
 1. The Experience Builder registration is complete. Click on the **Go to Experience Builder** button to enter the tool.
 
-    ![](images/setup-complete-eb.png)
+    ![Final screen indicating the completion of Experience Builder setup with Go to Experience Builder button](images/setup-complete-eb.png "Experience Builder Setup Complete")
 
     When you enter the tool, a background process installs the Experience Builder components required to publish the apps.
 
-    ![Experience Builder components installation](images/components-install-eb.png)
+    ![Background process of Experience Builder components installation](images/components-install-eb.png "Experience Builder Components Installation")
 
     <div class="info" markdown="1">
 
     If the Experience Builder components installation fails, you need to install the components manually. Read [How to install or update dependencies](how-update-dependency.md) to learn about it.
     
-    ![Experience Builder components installation fail](images/install-components-fail-eb.png)
+    ![Error message indicating the failure of Experience Builder components installation](images/install-components-fail-eb.png "Experience Builder Components Installation Fail")
 
     </div>
 

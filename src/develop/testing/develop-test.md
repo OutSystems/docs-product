@@ -34,7 +34,7 @@ With this introduction to the principles of DDD, you may notice some common pitf
 
 In the following image, the screen in the UI module displays a form to edit a concept owned by the Core module. When submitting the changes, all validations take place in the corresponding Screen Action, which then calls the action from the Core modimages/ule to save the record. The Core Action itself doesn't  perform any validation on the given input and serves mostly as a wrapper for the Create Action of the entity.
 
-![Anti-Pattern #1 - Validations in the UI only](images/test-validation-only-ui-ss.png?width=800)
+![Screenshot showing a form in the UI module with validations occurring at the screen action level in OutSystems](images/test-validation-only-ui-ss.png "UI Level Validations")
 
 When testing the Core action, we can input any value into the action, and it will always succeed, barring any problems communicating with the database. Therefore, any test that uses this action in its execution loses its relevance.
 To solve this problem, move all business validations to the Core action to ensure the provided inputs are valid according to the business rules for that module.
@@ -57,7 +57,7 @@ Core level testing should focus on validating business rules:
 
 The Screen Action to submit changes on a page has embedded business logic in its flow. In the example image, it creates a master record, then it creates or updates child records, and finally creates some notification. 
 
-![Anti-Pattern #2 - Business logic in the UI](images/test-biz-logic-ui-ss.png?width=800)
+![Screenshot depicting embedded business logic within a screen action in OutSystems](images/test-biz-logic-ui-ss.png "Business Logic in UI")
 
 If this logic needs to be tested as a whole, then one of two things will happen:
 
@@ -71,7 +71,7 @@ The best way to handle this problem is to encapsulate the logic that needs to be
 
 DDD recommends using Service Actions and Public Entities for dependencies between domains.
 
-![Anti-Pattern #3 - Unsupported cross-domain dependencies](images/test-cross-domain-references-diag.png?width=600)
+![Diagram illustrating unsupported cross-domain referencing in OutSystems applications](images/test-cross-domain-references-diag.png "Cross-Domain References")
 
 This decision about whether to directly reference Public entities between domains may impact the test data setup and therefore needs to be discussed here.
 
@@ -90,7 +90,7 @@ In this section, we will use API to refer to REST, SOAP, or service actions.
 
 In an OutSystems environment, there are multiple modules that consume the same API. When we’re in the scope of a test execution and need to use mock services to isolate the application under test from the remote system (where the API is exposed), we’ll have to change every single module that is consuming this specific API. Needless to say, this becomes a maintenance nightmare while also being error-prone, as the potential to forget to change one module increases.
 
-![Anti-Pattern #4 - Same API consumed in multiple Modules](images/test-consume-api-several-modules-diag.png?width=500)
+![Diagram showing multiple modules consuming the same API in an OutSystems environment](images/test-consume-api-several-modules-diag.png "API Consumption in Multiple Modules")
 
 The best solution for you is to isolate the API consumption in a wrapper module that exposes the API methods through public actions. Core modules needing access to the API do it through the wrapper module. Later, in the scope of a test execution, when we need to point it to a mock service, that is done in one place only — the wrapper module.
 
@@ -154,7 +154,7 @@ In addition to that, the OutSystems platform doesn't provide any collision detec
 
 ### Mapping tests to the Architecture Canvas
 
-![Architecture Canvas](images/test-4-layer-diag.png?width=800)
+![Diagram of the 4-Layer Architecture Canvas used in OutSystems for service-oriented architectures](images/test-4-layer-diag.png "4-Layer Architecture Canvas")
 
 The [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) is an OutSystems architecture tool to make the design of Service-Oriented Architectures simple.
 

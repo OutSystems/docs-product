@@ -25,23 +25,23 @@ This data synchronization pattern is recommended for advanced scenarios where mu
 
 The following is an overview of the Read/Write Data With Conflict Detection pattern:
 
-1. ![](images/icon-client.png) Checks if there are unsolved conflicts. If conflicts exist, the client aborts the synchronization and reports the conflicts pending resolution.
+1. ![Icon representing a client in the Read/Write Data with Conflict Detection pattern](images/icon-client.png "Client Icon") Checks if there are unsolved conflicts. If conflicts exist, the client aborts the synchronization and reports the conflicts pending resolution.
 
-1. ![](images/icon-client.png) Sends local storage data modified by the app back to the server.
+1. ![Icon representing a client in the Read/Write Data with Conflict Detection pattern](images/icon-client.png "Client Icon") Sends local storage data modified by the app back to the server.
 
-1. ![](images/icon-server.png) Checks for conflicting changes performed in the database.
+1. ![Icon representing a server in the Read/Write Data with Conflict Detection pattern](images/icon-server.png "Server Icon") Checks for conflicting changes performed in the database.
 
-1. ![](images/icon-server.png) Adds the records to the list of conflicts if it conflicts with client data.
+1. ![Icon representing a server in the Read/Write Data with Conflict Detection pattern](images/icon-server.png "Server Icon") Adds the records to the list of conflicts if it conflicts with client data.
 
-1. ![](images/icon-server.png) Updates database records in the absence of conflicts.
+1. ![Icon representing a server in the Read/Write Data with Conflict Detection pattern](images/icon-server.png "Server Icon") Updates database records in the absence of conflicts.
 
-1. ![](images/icon-server.png) Sends updated database data and the list of conflicting changes.
+1. ![Icon representing a server in the Read/Write Data with Conflict Detection pattern](images/icon-server.png "Server Icon") Sends updated database data and the list of conflicting changes.
 
-1. ![](images/icon-client.png) Checks for conflicts. If conflicts exist, registers conflicts and updates local storage with the non-conflicting records. If no conflicts exist, deletes and recreates data in the local storage with the data received from the server.
+1. ![Icon representing a client in the Read/Write Data with Conflict Detection pattern](images/icon-client.png "Client Icon") Checks for conflicts. If conflicts exist, registers conflicts and updates local storage with the non-conflicting records. If no conflicts exist, deletes and recreates data in the local storage with the data received from the server.
 
-1. ![](images/icon-client.png) Updates last sync timestamp in local storage.
+1. ![Icon representing a client in the Read/Write Data with Conflict Detection pattern](images/icon-client.png "Client Icon") Updates last sync timestamp in local storage.
 
-1. ![](images/icon-client.png) Reports pending conflicts to the end user if applicable.
+1. ![Icon representing a client in the Read/Write Data with Conflict Detection pattern](images/icon-client.png "Client Icon") Reports pending conflicts to the end user if applicable.
 
 You need to implement a mechanism, either automatic or manual, to resolve the detected conflicts. For example, you can present the client and server versions of the records side by side and allow the end user to select which version to maintain.
 
@@ -52,7 +52,7 @@ Download the [sample module for the Read/Write Data with Conflict Detection patt
 
 This sample defines a database entity `Company` and its local storage counterpart `LocalCompany` . Additionally, the `LocalCompany` entity defines three metadata attributes to keep track of the synchronization status of the records, the `SyncProperties` local storage entity keeps the date and time of the last synchronization, and the `ConflictingCompany` local storage entity holds the conflicting records.
 
-![](images/read-write-data-with-conflict-detection-data-model.png)
+![Diagram illustrating the data model for the Read/Write Data with Conflict Detection pattern](images/read-write-data-with-conflict-detection-data-model.png "Data Model Diagram")
 
 1. Tracks changed records by storing the timestamp when the record was last updated or created. 
 1. Tracks deleted records. 
@@ -71,7 +71,7 @@ The application logic must update the metadata attributes `IsFromServer`, `IsMod
 
 The following is a description of the logic of the `OfflineDataSync` client action:
 
-![Read-Write Data With Conflict Detection Pattern OfflineDataSync](images/read-write-data-with-conflict-detection-offlinedatasync.png)
+![Flowchart detailing the OfflineDataSync logic for handling data synchronization and conflict detection](images/read-write-data-with-conflict-detection-offlinedatasync.png "OfflineDataSync Logic Flowchart")
 
 1. Obtains the number of `ConflictingCompany` records and triggers an exception if there are any unresolved conflicts from a previous synchronization.
 
@@ -109,7 +109,7 @@ The following is a description of the logic of the `OfflineDataSync` client acti
 
 The following is a description of the logic of the `ServerDataSync` server action:
 
-![](images/read-write-data-with-conflict-detection-serverdatasync.png)
+![Flowchart detailing the ServerDataSync logic for handling data synchronization and conflict resolution](images/read-write-data-with-conflict-detection-serverdatasync.png "ServerDataSync Logic Flowchart")
 
 1. Assigns the timestamp of this synchronization to an output parameter.
 

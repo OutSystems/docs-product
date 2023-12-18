@@ -18,21 +18,21 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/layout-sm-1-diag.png?width=600>)
+![Diagram illustrating the layout and classes of the Layout Side Menu for Traditional Web Apps](images/layout-sm-1-diag.png "Layout Side Menu Diagram")
 
 ## Responsive behavior
 
 This layout comes with a default responsive behavior. On tablets it remains the same as on desktop. But on phones it breaks the content vertically, making the placeholders Title and Actions full-width.
 
-![](<images/layout-sm-3-ss.png>)
+![Screenshot showing the Layout Side Menu's responsive behavior on a tablet device](images/layout-sm-3-ss.png "Layout Side Menu on Tablet")
 
-![](<images/layout-sm-7-ss.png>)
+![Screenshot displaying the Layout Side Menu's full-width placeholders Title and Actions on a phone device](images/layout-sm-7-ss.png "Layout Side Menu on Phone")
 
 The menu also adapts to mobile, hiding the navigation sidebar, which can be toggled by a hamburger icon.
 
-![](<images/layout-sm-4-ss.gif>)
+![Animated GIF demonstrating the toggle of the navigation sidebar in the Layout Side Menu on a mobile device](images/layout-sm-4-ss.gif "Layout Side Menu Mobile Navigation Toggle")
 
-![](<images/layout-sm-8-ss.png>)
+![Screenshot showing the Layout Side Menu's adaptation to mobile devices with a hidden navigation sidebar](images/layout-sm-8-ss.png "Layout Side Menu Mobile Adaptation")
 
 ## Advanced
 
@@ -47,7 +47,7 @@ Here are some more advanced use-cases of the widget.
 1. Set your custom breakpoints (in pixels). On the example below the phone breaks is set to happen only when the Device with is at 200px.
 1. Publish and test.
 
-![](<images/layout-sm-5-ss.png?width=600>)
+![Screenshot of the process to customize responsive breakpoints for the Layout Side Menu in the Common Web Flow](images/layout-sm-5-ss.png "Custom Responsive Breakpoints")
 
 ### Customize your content max-width
 
@@ -55,7 +55,7 @@ Here are some more advanced use-cases of the widget.
 1. In the Grid section, set your custom width (default value is 1280px) in the Max. Width parameter.
 1. Publish and test.
 
-![](<images/layout-sm-6-ss.png?width=600>)
+![Screenshot illustrating how to customize the content max-width for the Layout Side Menu in the Themes grid section](images/layout-sm-6-ss.png "Custom Content Max-Width")
 
 ## Device compatibility
 

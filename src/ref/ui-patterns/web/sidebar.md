@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/sidebar-3-diag.png>)
+![Diagram illustrating the layout and classes of the sidebar UI pattern in traditional web apps](images/sidebar-3-diag.png "Sidebar Layout Diagram")
 
 ## CSS selectors
 

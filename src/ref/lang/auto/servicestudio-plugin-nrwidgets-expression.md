@@ -17,11 +17,11 @@ The expression widget displays text or the result of an expression at runtime. I
 
 1. In the widget toolbar, search for **expression** and drag the widget to a screen, block or placeholder. The expression editor opens.
 
-    ![Expression widget](images/expression-widget-ss.png?width=400)
+    ![Screenshot of the Expression widget being selected in Service Studio](images/expression-widget-ss.png "Expression Widget in Service Studio")
 
 1. Enter an expression in the expression editor and click **Done**.
 
-    ![An expression in the expression editor](images/expression-editor-ss.png?width=600)
+    ![Screenshot of the Expression editor with an example expression in Service Studio](images/expression-editor-ss.png "Expression Editor in Service Studio")
     
     You can use one of these examples as the expression:
    

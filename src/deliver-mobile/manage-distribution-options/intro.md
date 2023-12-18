@@ -61,7 +61,7 @@ You need to run the following deployment plans **when your first deploy** MyApp 
 1. Plan A, from DEV to TEST. Configure MyApp for store-only updates in Plan A and deploy to TEST. With this, MyApp still receives hybrid updates in DEV.
 1. Plan B, from TEST1 to PROD. Configure MyApp for store-only updates in Plan B and deploy to PROD.
 
-![A sample deployment plan](images/deployment-sample-diag.png?width=700)
+![Diagram illustrating a sample deployment plan with store-only updates configuration across DEV, TEST, and PROD environments](images/deployment-sample-diag.png "Sample Deployment Plan")
 
 ### Mobile app update preferences
 
@@ -70,7 +70,7 @@ When you create a new deployment plan in LifeTime, you can change the update pre
 * **Updates are automatically pushed through your servers, and optionally through the app stores. (recommended).** When you select this option, the native mobile apps in the deployment plan receive the **hybrid updates**. This is the **default setting** for both apps and environments.
 * **Updates are distributed only through the app stores.** This is an optional setting that you need to activate per app and per environment, by adding apps to the deployment plan with this option on. When you select this option, the native mobile apps receive the **store-only updates**. The option applies to native mobile apps only, as progressive web apps (PWAs) always get the latest updates you deploy.
 
-![The Distribution tab in the configuration app settings of the deployment plan](images/distribution-tab-deployment-plan-lt.png?width=800)
+![Screenshot of the Distribution tab in a LifeTime deployment plan showing mobile application update preferences](images/distribution-tab-deployment-plan-lt.png "Distribution Tab in Deployment Plan")
 
 
 ## Configure a mobile app to update through the stores only { #set-store-only-updates}
@@ -87,7 +87,7 @@ To configure all environments for store-only updates, you need to configure the 
 
 1. Decide what's your source environment and what's your target environment. For example, your source environment is the development environment (DEV) and the target is the testing environment (TST).
 
-    ![Application screen in LifeTime](<images/applications-screen-lt.png?width=800>)
+    ![Screenshot of the Applications screen in LifeTime displaying a list of apps and environments](images/applications-screen-lt.png "Applications Screen in LifeTime")
 
     <div class="warning" markdown="1">
 
@@ -97,29 +97,29 @@ To configure all environments for store-only updates, you need to configure the 
 
 1. Click the **DEPLOY** button on the left side of your target environment.
 
-    ![Deploy command in LifeTime](<images/applications-deploy-button-lt.png?width=400>)
+    ![Screenshot highlighting the Deploy button on the Applications screen in LifeTime](images/applications-deploy-button-lt.png "Deploy Command in LifeTime")
  
 1. If the deployment plan contains no apps, the **Choose one or more Applications** dialog opens. Select your app, click **Add to Deployment Plan** and close the dialog.
 
-    ![A window to add an app to a deployment plan](<images/add-app-to-deployment-plan-lt.png?width=300>)
+    ![Dialog window for adding an application to a deployment plan in LifeTime](images/add-app-to-deployment-plan-lt.png "Add App to Deployment Plan")
 
 1. In the deployment plan screen, click **VALIDATE NOW**. The deployment validation starts.
 
-    ![Deployment plan pending validation](<images/validate-deployment-plan-lt.png?width=800>)
+    ![Screenshot showing the Validate Now button for a pending deployment plan in LifeTime](images/validate-deployment-plan-lt.png "Validate Deployment Plan")
 
 1. Click **CONTINUE** after the validation succeeds. The deployment settings screen opens.
 
 1. Click the **Configure applications settings** tab to open the settings.
 
-    ![Screen to edit the deployment plan in LifeTime](<images/edit-deployment-plan-lt.png?width=800>)
+    ![Screenshot of the screen to edit the deployment plan in LifeTime](images/edit-deployment-plan-lt.png "Edit Deployment Plan in LifeTime")
 
 1. Click the **DISTRIBUTION** tab and locate the **Mobile application update preferences** section. Select **Updates are distributed only through the app stores**, and then click **Continue** to return to the deployment settings screen.
 
-    ![Screen to configure apps for updates through the app stores only](<images/configure-updates-distribution-app-store-only-lt.png?width=800>)
+    ![Screenshot of the Distribution tab where 'Updates are distributed only through the app stores' is selected](images/configure-updates-distribution-app-store-only-lt.png "Configure Updates Distribution for App Store Only")
 
     If you have several apps in your deployment plan, click each of the app names in the **All remaining applications** section and then configure each app. Click **Continue** after you configure all apps.
 
-    ![Screen to configure multiple apps for updates through the app stores only](<images/configure-updates-distribution-app-store-only-multiple-lt.png?width=800>)
+    ![Screenshot showing the configuration of multiple apps for updates through the app stores only](images/configure-updates-distribution-app-store-only-multiple-lt.png "Configure Multiple Apps for Updates Through App Stores Only")
 
 
 1. Click **Deploy Now**, and then confirm the deployment plan. The deployment overview screen opens, showing the deployment running in the background. Once LifeTime finishes deploying your app to the target environment, a confirmation message shows.
@@ -152,11 +152,11 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
 
 1. Click **Settings** to open the app settings screen.
 
-    ![App details screen in LifeTime](images/app-details-lt.png?width=400)
+    ![Screenshot of the app details screen in LifeTime with the Settings button highlighted](images/app-details-lt.png "App Details Screen in LifeTime")
 
 1. At the top of the screen, click the name of the environment in **Settings in (ENVIRONMENT)**, and then select the environment from the list.
 
-    ![The environment selection list in LifeTime app settings](images/app-settings-select-environment-lt.png?width=400)
+    ![Screenshot of the environment selection list in LifeTime app settings](images/app-settings-select-environment-lt.png "Environment Selection in LifeTime App Settings")
 
 
 1. Scroll down to the **Advanced** section and check the text next to **Native Mobile Application Updates**:
@@ -164,7 +164,7 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
     * **Automatically pushed through your servers.** The app receives hybrid updates.
     * **Distributed only through the app stores.** The app receives updates only through the app stores.
 
-    ![The advanced settings section and mobile updates configuration status](images/app-settings-advanced-updates.png?width=600)
+    ![Screenshot of the Advanced settings section showing the mobile updates configuration status](images/app-settings-advanced-updates.png "Advanced Settings and Mobile Updates Configuration Status")
 
 ## How to develop an app that updates only through the app stores
 
@@ -190,7 +190,7 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
 1. Consider reviewing and editing the upgrade messages that users see in the app. In Service Studio, go to the module properties and locate the **Upgrade Messages** section. Those messages are about hybrid updates, and don't fit cases where users need to update the app through the store. For example, following the instruction "tap here to update" works for an app with hybrid updates, but not for app with the store-only update setting.  
 
-    ![Default upgrade messages in Service Studio module properties](images/upgrade-messages-properties-ss.png?width=350)
+    ![Screenshot of the default upgrade messages in Service Studio module properties](images/upgrade-messages-properties-ss.png "Upgrade Messages in Service Studio Module Properties")
 
 1. Test your app extensively. With the store-only updates, your users may update the apps less frequently, and you need to ensure that the native shell, the client side, and the server side of your app work correctly for all existing and new users.
 

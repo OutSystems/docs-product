@@ -94,11 +94,11 @@ To get the static resources links and URL mappings of a PWA, publish your app an
 
 1. Open the app in Chrome and go to the developer tools, then navigate to **Application** > **Service Workers** > **pwaServiceWorker.js**. The source code of **pwaServiceWorker.js** opens. 
 
-    ![Service worker in Chrome tools](images/service-worker-chrome-tools.png?width=700)
+    ![Screenshot showing how to access the service worker in Chrome Developer Tools under the Application tab](images/service-worker-chrome-tools.png "Service Worker in Chrome Developer Tools")
 
 1. Copy the items from `urlVersions` in the **pwaServiceWorker.js** file. These URLs point to the static resources.
 
-    ![Static resources](images/url-versions-pwa-service-worker.png?width=700)
+    ![Snippet of code from pwaServiceWorker.js displaying the static resources links in the urlVersions section](images/url-versions-pwa-service-worker.png "Static Resources in Service Worker")
 
 1. Also, copy the items from `urlMappings` in the **pwaServiceWorker.js** file.
 

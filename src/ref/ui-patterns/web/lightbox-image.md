@@ -18,9 +18,9 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/lightboximage-3-diag.png>) 
+![Diagram showing the layout of the Light Box Image UI Pattern in a traditional web app](images/lightboximage-3-diag.png "Light Box Image Layout Diagram") 
 
-![](<images/lightboximage-4-diag.png>)
+![Diagram illustrating the CSS classes associated with the Light Box Image UI Pattern](images/lightboximage-4-diag.png "Light Box Image Classes Diagram")
 
 ## Advanced use case
 
@@ -38,7 +38,7 @@ It is possible to change the opacity of Light Box Image overlay when it is open 
 }
 ```
 
-![](<images/lightboximage-5-ss.png>)
+![Screenshot of custom CSS code to change the Light Box Image overlay opacity](images/lightboximage-5-ss.png "Custom CSS for Light Box Image Overlay")
 
 ### Add rounded corners to images inside Light Box Image Pattern
 
@@ -51,5 +51,5 @@ To add rounded corners to images inside Light Box Image, add the following custo
 }
 ```
 
-![](<images/lightboximage-6-ss.png>)
+![Screenshot showing CSS code to add rounded corners to images in the Light Box Image Pattern](images/lightboximage-6-ss.png "CSS for Rounded Corners in Light Box Image")
     

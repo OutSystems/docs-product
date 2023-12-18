@@ -26,7 +26,7 @@ Use the Floating Action UI Pattern to show the primary action on a screen. Choos
 
     The Floating Actions widget is displayed.
 
-    ![](<images/floatingactions-1-ss.png>)
+    ![Screenshot of Service Studio showing the Floating Actions widget in the Toolbox](images/floatingactions-1-ss.png "Service Studio Floating Actions Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ Use the Floating Action UI Pattern to show the primary action on a screen. Choos
 
 1. From the Toolbox, drag the Floating Actions widget into the Main Content area of your application's screen.
 
-    ![](<images/floatingactions-3-ss.png>)
+    ![Screenshot of dragging the Floating Actions widget into the Main Content area in Service Studio](images/floatingactions-3-ss.png "Dragging Floating Actions Widget to Main Content")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

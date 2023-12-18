@@ -26,7 +26,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Progress Bar to display percentage values by incrementing values in a bar and to show the current progress of a task flow.
 
-![Example of Progress Bar Pattern](<images/progressbar-example-ss.png>)
+![Screenshot of a progress bar example in a mobile app interface](images/progressbar-example-ss.png "Progress Bar Example")
 
 **How to use the Progress Bar UI Pattern**
 
@@ -34,7 +34,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     The Progress Bar widget is displayed.
 
-    ![Progress Bar widget](<images/progressbar-widget-ss.png>)
+    ![Image showing the Progress Bar widget in the Service Studio toolbox](images/progressbar-widget-ss.png "Progress Bar Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -48,17 +48,17 @@ You can use the Progress Bar to display percentage values by incrementing values
 
 1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](<images/progressbar-dragwidget-ss.png>)
+    ![Screenshot demonstrating how to drag the Progress Bar widget into the Main Content area of an application's screen](images/progressbar-dragwidget-ss.png "Dragging Progress Bar Widget to Screen")
 
 1. Add the text you want to appear as the Progress Bar title.
 
     In this example, we add `Ongoing tasks`.
 
-    ![Add title to Progress Bar](<images/progressbar-text-ss.png>)
+    ![Screenshot showing the addition of the title 'Ongoing tasks' to the Progress Bar in the application interface](images/progressbar-text-ss.png "Adding Title to Progress Bar")
 
 1. Right-click your screen name, select **Add Local Variable**, and enter a name. In this example, we enter `Count`.
 
-    ![Add local variable](<images/progressbar-var-ss.png>)
+    ![Image depicting the process of adding a local variable named 'Count' for the Progress Bar](images/progressbar-var-ss.png "Adding Local Variable for Progress Bar")
 
 1. Select the Progress Bar widget, and on the **Properties** tab, in the Progress property, enter the relevant logic for the progress percentage.
 
@@ -68,13 +68,13 @@ You can use the Progress Bar to display percentage values by incrementing values
 
 1. From the Toolbox, drag the **Button** widget into the Main Content area of your application's screen. In this example, call the button **Increment** and set the **On Click** property to a **New Client Action** that assigns the **Count** variable to ``Count + 1``.
 
-    ![Add a button](<images/progressbar-button-ss.png>)
+    ![Screenshot of adding an 'Increment' button to the application screen for the Progress Bar functionality](images/progressbar-button-ss.png "Adding Increment Button")
 
-    ![Set the assign](<images/progressbar-assign-ss.png>)
+    ![Image showing the configuration of the 'On Click' property for the Increment button with a new client action](images/progressbar-assign-ss.png "Setting the Assign Action for Button")
 
 1. You can configure the Progress Bar by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 
-    ![Set optional properties](<images/progressbar-prop-ss.png>)
+    ![Screenshot illustrating how to set optional properties for the Progress Bar in the properties tab](images/progressbar-prop-ss.png "Setting Optional Properties of Progress Bar")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

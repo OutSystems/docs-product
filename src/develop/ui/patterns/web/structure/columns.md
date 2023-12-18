@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Columns UI Pattern to split content into separate columns, improving the way information is displayed on screen.
 
-![](<images/columns-1.png>)
+![Example of content split into multiple columns using the Columns UI Pattern](images/columns-1.png "Columns UI Pattern Example")
 
 **How to use the Columns UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
     The various Column widgets are displayed.
 
-    ![](<images/columns-2-ss.png>)
+    ![Screenshot showing Column widgets in Service Studio's Toolbox](images/columns-2-ss.png "Service Studio Column Widgets")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,15 +40,15 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
 1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. In this example, we drag the Columns 2 widget onto the screen.
 
-    ![](<images/columns-3-ss.png>)
+    ![Process of dragging a Column widget into the main content area of an application's screen](images/columns-3-ss.png "Dragging Column Widget into Main Content Area")
 
 1. Add the required content to the Column widget, for example, images, forms, text. In this example, we add some images and text.
 
-    ![](<images/columns-4-ss.png>)
+    ![Example of adding images and text to a Column widget in an application](images/columns-4-ss.png "Adding Content to Column Widget")
 
 1. On the **Properties** tab, you can  customize the Colums's look and feel by setting any of the optional properties, for example, the size of columns and space between each of the columns (GutterSize), and in what order the columns display on different device types.
 
-    ![](<images/columns-5-ss.png>)
+    ![Customization of Columns properties in the Properties tab](images/columns-5-ss.png "Customizing Columns Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
   
@@ -65,16 +65,16 @@ The following are examples of how the columns are displayed on each of the devic
 
 **Entities.BreakColumns.None**
 
-![](images/Column_break_none.png)
+![Example of column layout with no breaks on a device screen](images/Column_break_none.png "Column Break None Behavior")
 
 **Entities.BreakColumns.Middle**
 
-![](images/Column_break_middle.png)
+![Example of column layout with a break in the middle on a device screen](images/Column_break_middle.png "Column Break Middle Behavior")
 
 **Entities.BreakColumns.Last**
 
-![](images/Column_break_last.png)
+![Example of column layout with the last column breaking on a device screen](images/Column_break_last.png "Column Break Last Behavior")
 
 **Entities.BreakColumns.First**
 
-![](images/Column_break_first.png)
+![Example of column layout with the first column breaking on a device screen](images/Column_break_first.png "Column Break First Behavior")

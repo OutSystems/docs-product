@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/animate-3-diag.png>)
+![Diagram illustrating the layout and classes for the Animate UI Pattern in Traditional Web Apps](images/animate-3-diag.png "Animate UI Pattern Layout Diagram")
 
 ## CSS selectors
 
@@ -52,15 +52,15 @@ It is possible to hide elements in the screen using an Animation.
 
 1. Set the method of the On Click function to Submit and in the Destination property, create a new Action.
 
-    ![](<images/animate-4-ss.png>)
+    ![Configuration settings for the Toggle Animate server action in a Traditional Web App](images/animate-4-ss.png "Toggle Animate Server Action Configuration")
 
 1. In the Action created, drag the ToggleAnimate Action and set the Widget ID.
 
-    ![](<images/animate-5-ss.png>)
+    ![Screenshot demonstrating how to set the Widget ID for the ToggleAnimate action in a Traditional Web App](images/animate-5-ss.png "Setting Widget ID for ToggleAnimate Action")
 
 1. Publish and test.
 
-    ![](<images/animate-6-ss.gif?width=600>)
+    ![Animated demonstration of the Toggle Animate action in a Traditional Web App](images/animate-6-ss.gif "Toggle Animate Action Demonstration")
 
 ### Use animations on scroll
 
@@ -68,8 +68,8 @@ It is possible to load and animate the elements when they are not visible in the
 
 1. Drag the LoadOnVisible Pattern. Add the Animate Pattern with the desired content inside LoadOnVisible.
 
-    ![](<images/animate-7-ss.png>)
+    ![Screenshot showing the LoadOnVisible pattern containing the Animate pattern in a Traditional Web App](images/animate-7-ss.png "LoadOnVisible Pattern with Animate Pattern")
 
 1. Publish and test.
 
-    ![](<images/animate-8-ss.gif?width=600>)
+    ![Animated demonstration of elements loading and animating on scroll in a Traditional Web App](images/animate-8-ss.gif "LoadOnVisible and Animate Patterns Demonstration")

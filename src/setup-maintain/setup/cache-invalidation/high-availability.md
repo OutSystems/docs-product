@@ -26,7 +26,7 @@ This step is beyond the scope of this guide; check the official documentation fo
 
 After installing RabbitMQ on two separate machines, each node will be completely unaware of the existence of the other:
 
-![](<images/cluster-two-instances.png>)
+![Diagram showing two separate RabbitMQ instances on ServerA and ServerB before clustering](images/cluster-two-instances.png "Initial RabbitMQ Instances on Separate Servers")
 
 In the picture above we assume that, after installing both servers, the OutSystems platform was configured with the address of "ServerA" for its cache invalidation service.
 
@@ -102,7 +102,7 @@ If you installed RabbitMQ via Configuration Tool, the install folder is located 
 
 After running the commands you should now have RabbitMQ cluster ready to be used:
 
-![](<images/cluster-created.png>)
+![Diagram illustrating a RabbitMQ cluster with ServerA and ServerB nodes joined together](images/cluster-created.png "RabbitMQ Cluster Created")
 
 <div class="info" markdown="1">
 
@@ -164,7 +164,7 @@ start nginx
 
 After following the previous steps, you now have a load balancer distributing connections made by OutSystems modules to each node in the RabbitMQ cluster:
 
-![](<images/cluster-load-balancer.png>)
+![Diagram depicting a TCP load balancer distributing connections to a RabbitMQ cluster with ServerA and ServerB](images/cluster-load-balancer.png "Load Balancer with RabbitMQ Cluster")
 
 <div class="info" markdown="1">
 

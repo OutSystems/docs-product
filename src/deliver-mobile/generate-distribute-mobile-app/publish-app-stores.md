@@ -22,7 +22,7 @@ In OutSystems, you can generate a mobile application package to publish your mob
 
 The following diagram shows a typical publishing process:
 
-![Publishing Process](images/publishing-process.png)
+![Diagram illustrating the typical process for publishing a mobile app to app stores](images/publishing-process.png "Mobile App Publishing Process")
 
 ## Pre-requirements
 

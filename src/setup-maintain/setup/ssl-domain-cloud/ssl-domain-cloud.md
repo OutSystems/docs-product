@@ -14,7 +14,7 @@ Your OutSystems cloud environment includes a valid SSL certificate with the `out
 
 To set up your environment with your company domain, follow these steps:
 
-![](images/ssl-domain-cloud-steps.png)
+![Illustration of steps to configure SSL domain in OutSystems Cloud](images/ssl-domain-cloud-steps.png "Steps to Use Your SSL Domain in OutSystems Cloud")
 
 <div class="info" markdown="1">
 
@@ -49,11 +49,11 @@ To use your domain on OutSystems Cloud, you must upload the SSL certificate befo
 
 1. Click **Change** under the **SECURE ENDPOINT** section.
 
-    ![](images/ssl-domain-cloud-lt-0.png)
+    ![Screenshot showing the Secure Endpoint section in OutSystems Cloud environment settings](images/ssl-domain-cloud-lt-0.png "OutSystems Cloud Environment Secure Endpoint Section")
 
 1. Click **Add a new Domain Certificate**.
 
-    ![](images/ssl-domain-cloud-lt-1.png)
+    ![Screenshot of the option to add a new domain certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-1.png "Add New Domain Certificate Option in OutSystems Cloud")
 
 You'll have 3 possible options on the next screen:
 
@@ -85,7 +85,7 @@ A PEM certificate is commonly presented as a set of .PEM files (namely a certifi
 
 * **PEM Password:** If the private key is protected with a header such as `----- BEGIN ENCRYPTED PRIVATE KEY -----`, the password must be entered.
 
-![](images/ssl-domain-cloud-lt-2.png)
+![Screenshot of the form to submit a new PEM format domain certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-2.png "PEM Format Domain Certificate Submission Form")
 
 
 ### Domain certificate in PFX format { #PFX-certificate }
@@ -102,7 +102,7 @@ To submit a new PFX certificate, you require the following information:
 
 * **PFX Password:** The file is commonly protected with a password that's supplied by the Certificate Authority or your IT department.
 
-![](images/ssl-domain-cloud-lt-3.png)
+![Screenshot of the form to submit a new PFX format domain certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-3.png "PFX Format Domain Certificate Submission Form")
 
 ### Unknown domain certificate format { #ZIP-bundle }
 
@@ -128,7 +128,7 @@ To submit a bundle, you require the following information:
 
 * **Notes:** Additional information or required passwords that can help OutSystems determine the submitted information.
 
-![](images/ssl-domain-cloud-lt-4.png)
+![Screenshot of the form to submit an unknown format domain certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-4.png "Unknown Format Domain Certificate Submission Form")
 
 ### Certificate validation { #validate-certificate }
 
@@ -136,11 +136,11 @@ To finish the wizard, click **Validate**. Our systems will check the certificate
 
 Once successful, click **Submit**.
 
-![](images/ssl-domain-cloud-lt-7.png)
+![Screenshot of the Validate button during the SSL certificate upload process in OutSystems Cloud](images/ssl-domain-cloud-lt-7.png "Certificate Validation Button in OutSystems Cloud")
 
 If the certificate is not valid, the following warning message is displayed:
 
-![](images/ssl-domain-cloud-lt-8.png)
+![Screenshot displaying a warning message for an invalid SSL certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-8.png "Invalid Certificate Warning Message")
 
 OutSystems recommends to double check your certificate and submit it for a new validation.  For more information about handling errors, refer to [Possible errors when validating your SSL domain certificate](https://success.outsystems.com/Support/Troubleshooting/Infrastructure_management/Possible_errors_when_validating_your_SSL_domain_certificate)
 
@@ -148,11 +148,11 @@ You can submit an invalid certificate. In this case, OutSystems validates the ce
 
 In the meanwhile, you can check the status of the certificate validation at **Environments** > **Options** > **Manage Domain certificates**.
 
-![](images/ssl-domain-cloud-lt-5.jpg)
+![Screenshot showing the SSL certificate validation status in OutSystems Cloud](images/ssl-domain-cloud-lt-5.jpg "SSL Certificate Validation Status in OutSystems Cloud")
 
 If the certificate isn't validated you'll see the **Status** as loading:
 
-![](images/ssl-domain-cloud-lt-6.png)
+![Screenshot indicating a loading status for SSL certificate validation in OutSystems Cloud](images/ssl-domain-cloud-lt-6.png "Loading Status for SSL Certificate Validation")
 
  You can only assign the certificate to an environment once the validation process is complete.
  
@@ -164,16 +164,16 @@ You can now assign the certificate to an environment, directly from the **Enviro
 
 1. Select the environment and click **Change** in the Secure Endpoint section. 
 
-    ![](images/ssl-domain-cloud-lt-9.png)
+    ![Screenshot of the process to assign an SSL certificate to an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-9.png "Assigning SSL Certificate to an Environment")
 
 1. Select the desired certificate from the drop-down box and click **Next**.  
     
-    ![](images/ssl-domain-cloud-lt-10.png)
+    ![Screenshot of selecting an SSL certificate for an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-10.png "Selecting SSL Certificate for Environment")
 
 1. Chose the hostname for the environment and tick "I have created a CNAME record on my chosen hostname".
 1. Click **Update Secure Endpoint**.
 
-    ![](images/ssl-domain-cloud-lt-11.png)
+    ![Screenshot of the option to update the secure endpoint for an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-11.png "Update Secure Endpoint Option in OutSystems Cloud")
 
     Updating the hostname takes approximately 5 minutes.
 
@@ -212,18 +212,18 @@ You should never create on your DNS an A record pointing to an OutSystems Cloud 
 
 The diagram below shows the correct configuration in green:
 
-![](images/custom-dns-name-cloud_0.png)
+![Diagram showing the correct DNS configuration for OutSystems Cloud with a custom domain](images/custom-dns-name-cloud_0.png "Correct DNS Configuration for OutSystems Cloud")
 
 ## Renew the certificate
 
 When a certificate is about to expire, a warning appears for the environment:
 
-![](images/ssl-domain-cloud-lt-12.png)
+![Screenshot showing a warning for an SSL certificate about to expire in OutSystems Cloud](images/ssl-domain-cloud-lt-12.png "SSL Certificate Expiry Warning")
 
 1. Click **Manage Domain Certificates**.
 1. On the next screen, click **Renew**.
 
-![](images/ssl-domain-cloud-lt-13.png)
+![Screenshot of the option to renew an SSL certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-13.png "Renew SSL Certificate Option in OutSystems Cloud")
 
 ### LifeTime certificate renewal
 

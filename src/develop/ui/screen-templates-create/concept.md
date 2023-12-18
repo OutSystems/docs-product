@@ -48,7 +48,7 @@ Here is a simplified overview of the Screen Template instantiation:
   2. They open a **New Screen** dialog, select "About Company" Screen Template and confirm the selection. In the background, Service Studio changes the structure of this Screen to match the app structure.
   3. A new About Screen is available for the developers in the app.
 
-![Overview of Screen instantiation](images/template-instantiation.png)
+![Diagram illustrating the process of instantiating a Screen Template in OutSystems Service Studio](images/template-instantiation.png "Screen Template Instantiation Process")
 
 ## The Replace Data feature
 
@@ -71,4 +71,4 @@ The built-in Screen Templates use the [Sample Data](<sample-data.md>) that you c
 
 The Screen Templates you create are available to all developers logged into the environment. For all the developers who have Service Studio open when you add a Screen Template, that Screen Template is available after they refresh the Screen Templates list. They can do it by clicking the refresh message in the **New Screen**.
 
-![Screen Templates window](images/refresh-list.png)
+![Screenshot showing how to refresh the Screen Templates list in OutSystems Service Studio](images/refresh-list.png "Refreshing Screen Templates List")

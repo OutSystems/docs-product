@@ -18,13 +18,13 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Touch Events UI Pattern to enable touch events on a specific widget.
 
-![](images/touch_events_utilities.png)
+![Screenshot of the Touch Events utilities in a mobile or reactive web app interface](images/touch_events_utilities.png "Touch Events Utilities")
 
 ## How to create custom patterns using the Touch Events UI Pattern
 
 You can call the **event.preventDefault()** to prevent the default action associated with each event from occurring. The touchstart and touchend events don't need this action, but touchmove requires it to stop screen scrolling when the user is moving the finger inside the element.
 
-![](images/touch_events_custom_patterns.png)
+![Illustration of how to create custom patterns using the Touch Events UI Pattern](images/touch_events_custom_patterns.png "Custom Touch Events Patterns")
 
 To use the **event.preventDefault()**, use the following string of code:
 
@@ -36,26 +36,26 @@ You can use the Touch Events UI pattern to hide a header during a scroll action.
 
 1. Add the **TouchEvents** pattern to the **Layout** block.
 
-    ![](images/touch_events_layour.png)
+    ![Image showing the addition of the TouchEvents pattern to the Layout block](images/touch_events_layour.png "Touch Events Layout")
 
 1. Add an **End** event.
 
-    ![](images/add_end_event.png)
+    ![Image depicting the process of adding an End event in the Touch Events pattern](images/add_end_event.png "Adding an End Event")
 
 1. Add logic.
 
-    ![](images/touch_events_logic.png)
+    ![Image showing the logic configuration for the Touch Events pattern](images/touch_events_logic.png "Touch Events Logic")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 | Element | Code |
 |---|---|
-|![](images/JS_hide.png) |  var header = document.querySelector(".header");<br/>header.classList.add("hide");<br/>header.classList.add("header-on-scroll"); |
-|![](images/JS_show.png) |  var header = document.querySelector(".header");<br/>header.classList.remove("hide");<br/>header.classList.remove("header-on-scroll"); | 
+|![JavaScript code snippet to hide a header during a scroll action using Touch Events](images/JS_hide.png "JavaScript Code to Hide Header") |  var header = document.querySelector(".header");<br/>header.classList.add("hide");<br/>header.classList.add("header-on-scroll"); |
+|![JavaScript code snippet to show a header during a scroll action using Touch Events](images/JS_show.png "JavaScript Code to Show Header") |  var header = document.querySelector(".header");<br/>header.classList.remove("hide");<br/>header.classList.remove("header-on-scroll"); | 
   
 **Result**
 
-![](images/TouchEvents_EndResult.gif)
+![Animated GIF demonstrating the end result of using Touch Events to hide a header during scroll](images/TouchEvents_EndResult.gif "Touch Events End Result")
 
 ## Properties
 
@@ -71,4 +71,4 @@ There might be conflicts with any pattern with touch events (unless the code is 
 
 The following sample uses the Touch Events pattern:
 
-![](images/TouchEvents-Sample-1.png)
+![Sample image of a mobile or reactive web app using the Touch Events pattern](images/TouchEvents-Sample-1.png "Touch Events Sample")

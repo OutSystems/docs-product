@@ -16,25 +16,25 @@ To consume a SOAP Web Service in your application, do the following:
 
 1. Right-click the SOAP element and select **Consume SOAP Web Service...**.
 
-    ![Add Consume SOAP Web Service](images/soap-consume-add-consume-ss.png)
+    ![Screenshot of the 'Consume SOAP Web Service' dialog in OutSystems Service Studio](images/soap-consume-add-consume-ss.png "Consume SOAP Web Service Dialog")
 
 1. In the displayed dialog, specify the location of the Web Service definition (WSDL) and click **Consume**.
 
-    ![Specify WSDL Location](images/soap-consume-wsdl-ss.png)
+    ![Dialog box for specifying the WSDL location of a SOAP Web Service in OutSystems](images/soap-consume-wsdl-ss.png "Specify WSDL Location")
 
     When providing a remote URL, type it exactly the same way as you would type it into your web browser. To import a WSDL from your local file system, click **Upload file** and select your WSDL.
 
 1. If the service supports more than one binding, choose the desired binding and click **Next**. Otherwise, Service Studio skips this step.
 
-    ![Choose bindings](images/soap-consume-bindings-ss.png)
+    ![Selection of SOAP service bindings in OutSystems Service Studio](images/soap-consume-bindings-ss.png "Select SOAP Service Binding")
 
 1. If the service supports more than one method, choose the methods you wish to consume and click **Finish**. Otherwise, Service Studio skips this step.
 
-    ![Choose methods](images/soap-consume-methods-ss.png)
+    ![Choosing methods from a SOAP Web Service to consume in OutSystems](images/soap-consume-methods-ss.png "Choose SOAP Service Methods")
 
 Be aware that, for all remote WSDL files, the URL address must be accessible from the machine running **Platform Server** and not directly from Service Studio.
 
-![URL address accessible from Platform Server machine](<images/soap-get-wsdl-from-ps.png>)
+![Illustration showing the requirement for the WSDL file to be accessible from the Platform Server in OutSystems](images/soap-get-wsdl-from-ps.png "WSDL File Accessibility")
 
 When you consume a SOAP Web Service, OutSystems does the following for you:
 
@@ -43,7 +43,7 @@ When you consume a SOAP Web Service, OutSystems does the following for you:
 * Creates the Structures and Static Entities to hold the complex types defined in the WSDL
 * Maps the [XML data types into OutSystems data types](<../../../ref/extensibility-and-integration/soap/consumed-soap/mapping-xml-to-outsystems.md>)
 
-![SOAP consume result](images/soap-consume-result.png)
+![Result of consuming a SOAP Web Service in OutSystems, showing created elements](images/soap-consume-result.png "SOAP Web Service Consumption Result")
 
 OutSystems doesn't provide direct support for Web Services Enhancements (WSE). Instead, you can use the [SOAP Extensibility API](<../../../ref/apis/soap-extensibility-api.md>) to implement the functionality provided by Web Services Enhancements in your applications.
 
@@ -59,4 +59,4 @@ You can now use the newly created method in your application the same way you us
 
 1. Open the SOAP Web Service and drag the Web Service Method into your action flow.
 
-![](images/soap-consume-invoke.png)
+![Dragging a SOAP Web Service method into an action flow in OutSystems Service Studio](images/soap-consume-invoke.png "Invoke SOAP Web Service Method")

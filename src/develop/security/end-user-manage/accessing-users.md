@@ -28,5 +28,5 @@ The Users admin account is **not** the same one you use to connect to Service Ce
 
 </div>
 
-![Users app login screen before configuring the Administrator user](images/users-app-first-login-usr.png)
+![Screenshot of the Users app first login screen prompting for Administrator configuration](images/users-app-first-login-usr.png "Users App First Login Screen")
 

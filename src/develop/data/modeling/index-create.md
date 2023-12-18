@@ -23,7 +23,7 @@ To create an index for an entity:
 
 1. Right-click the Entity and select **Edit Entity**, or click the **Indexes and more** button in the Entity properties.
 
-    ![Edit Entity](images/create-database-index-edit-entity-ss.png)
+    ![Screenshot of the Edit Entity dialog in OutSystems with the Indexes and more button highlighted](images/create-database-index-edit-entity-ss.png "Edit Entity Dialog")
 
 1. Click the **New index** button to create an index.
 
@@ -32,11 +32,11 @@ To create an index for an entity:
 
 1. If you want this index to be restricted to restrict records only, change the **Unique** property to **Yes**.
 
-    ![Unique property](images/change-unique-property-ss.png)
+    ![Screenshot showing the Unique property toggle set to Yes for a new index in OutSystems](images/change-unique-property-ss.png "Unique Property Toggle")
 
 1. Add the attributes you want to include in the index.
 
-    ![Add Index Attribute](images/add-index-attributes-ss.png)
+    ![Screenshot of adding attributes to a new index in the OutSystems platform](images/add-index-attributes-ss.png "Adding Index Attributes")
 
 1. Click **Close**.
 

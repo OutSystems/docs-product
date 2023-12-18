@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and Classes
 
-![](<images/fileupload-image-2.png>)
+![Screenshot of File Upload UI layout with classes highlighted](images/fileupload-image-2.png "File Upload UI Layout")
 
 ## CSS Selectors
 

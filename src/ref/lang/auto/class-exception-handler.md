@@ -18,7 +18,7 @@ Set the Exception Handler's **Exception** property to the exception type you wan
 
 For example, the following flow handles the **Not Registered** exception:
 
-![Exception Handler example](images/exception-handler-example-ss.png)
+![Screenshot of an example flow in Service Studio showing the Exception Handler element handling a 'Not Registered' exception.](images/exception-handler-example-ss.png "Exception Handler Example")
 
 <div class="info" markdown="1">
 

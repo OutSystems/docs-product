@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/cardbackground-6-diag.png>)
+![Diagram showing the layout and classes for the Card Background UI Pattern in Traditional Web Apps](images/cardbackground-6-diag.png "Card Background Layout Diagram")
 
 ## CSS selectors
 
@@ -46,19 +46,19 @@ Applies only to Traditional Web Apps.
     - Height: `400`
     - ExtendedClass: `shadow-xl`
 
-    ![](<images/cardbackground-7-ss.png>)
+    ![Screenshot of the Counter pattern configuration with specific input parameters for color, position, height, and extended class](images/cardbackground-7-ss.png "Counter Pattern Style Configuration")
 
 1. Add a text widget into the Content placeholder and set the Style Classes property to `heading4 text-neutral-0`.
 
-    ![](<images/cardbackground-8-ss.png>)
+    ![Screenshot showing the addition of a text widget with heading4 and text-neutral-0 style classes in the Content placeholder](images/cardbackground-8-ss.png "Text Widget Style Setting")
 
 1. Drag an image to the BackgroundImage placeholder.
 
-    ![](<images/cardbackground-9-ss.png>)
+    ![Screenshot depicting the process of dragging an image into the BackgroundImage placeholder of the Card Background pattern](images/cardbackground-9-ss.png "Image Placeholder in Card Background")
 
 1. Publish and test.
 
-    ![](<images/cardbackground-10-ss.png>)
+    ![Screenshot of the published Card Background with a new style applied to the Counter pattern](images/cardbackground-10-ss.png "Published Card Background")
 
 ## Notes
 

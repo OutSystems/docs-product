@@ -41,7 +41,7 @@ To configure your component you need settings from Azure for each component. Her
 1. Take note of the **ENDPOINT**.
 1. Take note of the **LOCATION**.
 
-![Settings in Azure](images/text-analysis-azure-settings.png?width=600)
+![Screenshot of Azure settings for Text Analysis with Keys and Endpoint highlighted](images/text-analysis-azure-settings.png "Azure Settings for Text Analysis")
 
 ## Configure the Language Analysis component
 
@@ -55,7 +55,7 @@ Configure the module in Service Center with the settings from your Azure resourc
 
 1. Go to the **Site Properties** tab. Click the properties that begin with **OcpApimSubscription** to open the settings, then paste the Azure key value for the corresponding service in the **Effective Value**. For example, if you're setting up the component to use Text Analytics API, then edit **OcpApimSubscriptionKey_TextAnalyticsAPI**.
 
-    ![Service Center settings for the language analysis](images/text-analysis-settings-sc.png?width=600)
+    ![Screenshot of Service Center settings for configuring the Language Analysis component](images/text-analysis-settings-sc.png "Service Center Settings for Language Analysis")
 
 1. Skip this step if you're using **westus** location in Azure. If you're using another Azure location, you need to edit the URL of the API.
 
@@ -74,21 +74,21 @@ Drag the **KeyPhrasesHighlight** Block to your screen and enter the two mandator
 * **Text** – The text in which to detect key phrases.
 * **Language** – A two-letter code representing the language that follows the ISO 639-1 standard of [language codes](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support#language-list-and-status).
 
-![block for highlighting key phrases](images/text-analysis-key-phrases.png) 
+![Image of the Key Phrases Detection block in the OutSystems UI](images/text-analysis-key-phrases.png "Key Phrases Detection Block") 
 
 The **GetKeyPhrasesInText** action analyzes the text using the Text Analytics API KeyPhrases action from the Azure Cognitive Services Connector. The results of the detection show bold with a yellow background color. 
 
-![Sample text with key phrases highlighted](images/text-analysis-key-phrases-example.png)
+![Example showing key phrases detection with highlighted text in the OutSystems application](images/text-analysis-key-phrases-example.png "Example of Key Phrases Detection")
 
 To use the Server Action, drag the **GetKeyPhrasesInText** action to your flow and enter the input parameters.
 
-![Action to send text for key phrases parsing](images/text-analysis-key-phrases-input.png)
+![Image showing the input parameters for the GetKeyPhrasesInText Server Action in OutSystems](images/text-analysis-key-phrases-input.png "Key Phrases Detection Server Action")
 
 ### Sentiment analysis
 
 Drag the **SentimentDetection** Block to your screen. The Block has three placeholders and the action that performs the sentiment detection (DetectSentimentInText Server Action).
 
-![A block to detect sentiment](images/text-analysis-sentiment-detection.png) 
+![Image of the Sentiment Detection block with placeholders in the OutSystems UI](images/text-analysis-sentiment-detection.png "Sentiment Detection Block") 
 
 Then, customize these placeholders to show the result of the sentiment detection of a text depending on the score. The placeholders match an interval of a scale that ranges from 0% to 100% where:
 
@@ -98,17 +98,17 @@ Then, customize these placeholders to show the result of the sentiment detection
 
 The percentage is the indicator of the sentiment of the text in each scale interval. By default, the following emojis are indicators of the text sentiment.
 
-![Default emojis for sentiment rating](images/text-analysis-sentiment-detection-smileys.png)
+![Image showing emojis representing different sentiment scores in the OutSystems application](images/text-analysis-sentiment-detection-smileys.png "Sentiment Detection Emojis")
 
 The **DetectSentimentInText** Server Action requires the same input parameters as the Block. It returns a decimal value representing the sentiment score. You can change the intervals of the scale according to your use case.
 
-![Action with params for sentiment detection](images/text-analysis-sentiment-in-text.png)
+![Image showing the DetectSentimentInText Server Action with input parameters in OutSystems](images/text-analysis-sentiment-in-text.png "Sentiment Analysis Server Action")
 
 ### Language detection
 
 The **GetLanguageFromText** Server Action receives an input parameter, Text, and retrieves the language code detected in the text. The returned code is the [two letter code that follows the ISO 639-1 standard](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support#language-list-and-status).
 
-![Block for language detection, with parameters](images/text-analysis-detect-language-text.png)
+![Image showing the GetLanguageFromText Server Action in OutSystems](images/text-analysis-detect-language-text.png "Language Detection Server Action")
 
 ### Spell-check
 
@@ -123,7 +123,7 @@ The spell-check feature has a Block and a Server Action.
 1. Drag the **SpellCheck** Block to a screen in the application. 
 2. In the **TextArea** placeholder, drag an Input widget and bind it to a variable. 
 
-![Spellcheck block](images/text-analysis-image12.png)
+![Image of the Spell Check block in the OutSystems UI with TextArea placeholder](images/text-analysis-image12.png "Spell Check Block")
 
 The **SpellCheck** Block has server-side logic to analyze text and retrieve suggestions for the detected errors. It also has client-side logic that highlights and enables end users to choose what they want to do with the error. 
 
@@ -143,7 +143,7 @@ The speech to text feature accepts audio files and outputs a transcription. The 
 
 * **Profanity** – The condition specifying how to handle profanity in the results. Accepted values are **masked** (default), which replaces profanity with asterisks, **removed**, which removes all profanity from the result, or **raw**, which includes the profanity in the result.
 
-![Server Action for converting speech to text](images/text-analysis-speech-to-text.png)
+![Image showing the SpeechToText Server Action with input parameters in OutSystems](images/text-analysis-speech-to-text.png "Speech to Text Conversion Server Action")
 
 The output parameter of the **SpeechToText** Server Action is a transcription of the conversion result that has the highest confidence score.
 
@@ -184,15 +184,15 @@ Drop the **EntitiesHighlight** Block to your Screen and enter the two mandatory 
 * **Text** – The text in which you want to detect key phrases.
 * **LanguageCode** – A two-letter code representing the language that follows the ISO 639-1 standard of language codes.
 
-![Entity detection in Block](images/text-analysis-entity-detection-block.png)
+![Image of the EntitiesHighlight Block in the OutSystems UI](images/text-analysis-entity-detection-block.png "Entity Detection Block")
 
 The detected segments show as underlined text. The color of the underline corresponds to the type of entity extracted from the text. Hover over the entity to reveal its type.
 
-![Underlined detected entities](images/text-analysis-entity-highlight.png)
+![Example showing entity detection with underlined text in the OutSystems application](images/text-analysis-entity-highlight.png "Entity Highlight Example")
 
 To use the Server Action, drag the GetEntitiesInText action to your flow and enter the input parameters.
 
-![Entity detection in Server Action](images/text-analysis-entity-detection-action.png)
+![Image showing the GetEntitiesInText Server Action with input parameters in OutSystems](images/text-analysis-entity-detection-action.png "Entity Detection Server Action")
 
 The GetEntitiesInText action analyzes the text using the Text Analytics API Entities action from the Azure Cognitive Services Connector.
 

@@ -55,14 +55,14 @@ The following sections describe these steps in detail.
 
 1. In **Authentication** choose `Azure AD` (A).
 
-    ![Configure authentication in Users app](images/azuread-config-auth-usr.png)
+    ![Screenshot showing the Azure AD option selected in the Configure Authentication section of the Users application](images/azuread-config-auth-usr.png "Configure Authentication in Users App")
 
 1. Check the settings values in **1. Service Provider Connector Settings** (B).  
     OutSystems provides default values for the required options and also an auto-generated keystore.
 
 1. Download the Service Provider metadata file by clicking **Download SP Metadata XML**.
 
-    ![Download the Service Provider metadata file in Users app](images/azuread-download-sp-metadata-usr.png)
+    ![Screenshot of the Users app with the Download SP Metadata XML button highlighted](images/azuread-download-sp-metadata-usr.png "Download Service Provider Metadata File")
 
 ### Create and configure application in Azure AD portal
 
@@ -74,31 +74,31 @@ On the Azure side, create a new enterprise application from a template and confi
 
 1. Click **New application** to create your own application.
 
-    ![Click New application](images/azuread-new-application.png)
+    ![Screenshot of the Azure AD portal with the New application button highlighted](images/azuread-new-application.png "Create New Application in Azure AD Portal")
 
 1. Search for the **OutSystems Azure AD** application on Azure AD app gallery (A) and select the application from the search results (B).
 
-    ![Search for OutSystems Azure AD application](images/azuread-search-application.png)
+    ![Screenshot showing the search process for the OutSystems Azure AD application in the Azure AD app gallery](images/azuread-search-application.png "Search for OutSystems Azure AD Application")
 
 1. A sidebar with options opens at the right side of the page. Define a name for your Azure application in the **Name** field (C) and click **Create** (D).
 
     Wait a few seconds while Azure creates your application.
 
-    ![Add Azure AD application](images/azuread-add-application.png)
+    ![Screenshot of the Azure AD portal showing the process of adding a new Azure AD application with the Name field and Create button highlighted](images/azuread-add-application.png "Add Azure AD Application")
 
 1. After the app has been created, click **Single sign-on** on the left navigation menu and select the **SAML** single sign-on method.
 
-    ![Select SAML Single Sign-On](images/azuread-select-saml.png)
+    ![Screenshot of the Azure AD portal with the SAML single sign-on method option highlighted](images/azuread-select-saml.png "Select SAML Single Sign-On Method")
 
 1. Click **Upload metadata file** to upload the XML metadata file downloaded from the Users app.
 
-    ![Upload metadata file in Azure AD portal](images/azuread-upload-metadata.png)
+    ![Screenshot showing the Upload metadata file option in the Azure AD portal's single sign-on settings](images/azuread-upload-metadata.png "Upload Metadata File in Azure AD Portal")
 
 1. Select the XML metadata file and click **Add**.
 
 1. A sidebar with options appears at the right side of the page. Click **Save**.
 
-    ![Save metadata options](images/azuread-save-metadata.png)
+    ![Screenshot of the Azure AD portal showing the Save button for metadata options](images/azuread-save-metadata.png "Save Metadata Options in Azure AD Portal")
 
     <div class="info" markdown="1">
 
@@ -106,17 +106,17 @@ On the Azure side, create a new enterprise application from a template and confi
 
     Get back to the Users app, scroll to the **1. Service Provider Connector Settings** section, and click **Show Advanced Options**.
 
-    ![Accept Only Signed Login Responses option in the Users app](images/azuread-signed-login-responses-usr.png)
+    ![Screenshot of the Users app showing the Accept Only Signed Login Responses option](images/azuread-signed-login-responses-usr.png "Accept Only Signed Login Responses Option")
 
     If the option **Accept Only Signed Login Responses** is **enabled**, activate the corresponding option in Azure by following these sub-steps:
 
     a) In the Azure portal, edit the **SAML Signing Certificate** settings by clicking the pencil icon on the right.
 
-    ![Edit SAML Signing Certificate settings in Azure AD portal](images/azure-saml-signing-certificate.png)
+    ![Screenshot of the Azure AD portal showing the option to edit SAML Signing Certificate settings](images/azure-saml-signing-certificate.png "Edit SAML Signing Certificate Settings")
 
     b) In the **Signing Option** drop-down, select **Sign SAML response and assertion**.
 
-    ![Set Signing Option in Azure AD portal](images/azure-saml-signing-option.png)
+    ![Screenshot showing the Signing Option drop-down menu in the Azure AD portal with the Sign SAML response and assertion option](images/azure-saml-signing-option.png "Set Signing Option in Azure AD Portal")
 
     c) Click **Save** and then close the side window.
 
@@ -124,7 +124,7 @@ On the Azure side, create a new enterprise application from a template and confi
 
 1. Download the Federation Metadata XML by clicking the corresponding **Download** link.
 
-    ![Download federation metadata file in Azure AD portal](images/azuread-download-federation-metadata.png)
+    ![Screenshot of the Azure AD portal with the Download link for the Federation Metadata XML file highlighted](images/azuread-download-federation-metadata.png "Download Federation Metadata File")
 
 ### Finish configuration in the Users app
 
@@ -134,7 +134,7 @@ Back in the Users application, upload the XML file you downloaded in the previou
 
 1. Click **Upload from IdP/Federation Metadata XML**.
 
-    ![Upload metadata file in Users app](images/azuread-upload-federation-metadata-usr.png)
+    ![Screenshot of the Users app with the Upload from IdP/Federation Metadata XML button highlighted](images/azuread-upload-federation-metadata-usr.png "Upload Federation Metadata XML in Users App")
 
 1. Select the Federation Metadata XML file you downloaded from Azure.
 
@@ -142,7 +142,7 @@ Back in the Users application, upload the XML file you downloaded in the previou
 
     **Note**: A warning message about enabling SSO between app types is displayed. **Enabling this functionality is optional.**
 
-    ![SSO warning](images/azuread-warning.png)
+    ![Screenshot showing a warning message about enabling SSO between app types in the Users app](images/azuread-warning.png "SSO Warning Message")
 
     To enable IdP in Reactive Apps, do the following:
     
@@ -152,7 +152,7 @@ Back in the Users application, upload the XML file you downloaded in the previou
 
     1. In the **Common Login** section, select the **Single Sign-On Between App Types** checkbox, and click **Apply**.
 
-       ![Applications Authentication](images/azuread-sso.png)
+       ![Screenshot of the Service Center management console with the Single Sign-On Between App Types checkbox highlighted](images/azuread-sso.png "Applications Authentication")
 
     For more information about application authentication, see [Configure App Authentication](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md). 
 
@@ -170,17 +170,17 @@ Check [Assign users or groups to an app via the Azure portal](https://docs.micro
 
 1. Click **Test** to open the test options.
 
-    ![Test SAML configuration in Azure AD portal](images/azuread-test.png)
+    ![Screenshot of the Azure AD portal with the Test button for SAML configuration highlighted](images/azuread-test.png "Test SAML Configuration in Azure AD Portal")
 
 1. A sidebar appears at the right side of the page. Click **Sign in as current user**.
 
-    ![Click Sign in as current user button in Azure AD](images/azuread-sign-in-as-current-user.png)
+    ![Screenshot showing the Sign in as current user button in the Azure AD portal's test options sidebar](images/azuread-sign-in-as-current-user.png "Sign in as Current User Button")
 
 1. Enter the credentials of a user you previously associated with the Azure application in [Assign user or group to Azure application](#assign-user-azure-app).
 
 If the authentication is **successful**, the browser redirects you back to the Users app and you get an error message about not having permissions to view the screen.
 
-![Getting Invalid Permissions error in Users app](images/azuread-invalid-permissions-usr.png)
+![Screenshot of the Users app displaying an error message about invalid permissions after a successful Azure AD authentication test](images/azuread-invalid-permissions-usr.png "Invalid Permissions Error Message")
 
 This happens because the user you used for testing Azure AD authentication doesn't have any assigned OutSystems roles yet. You need to grant user roles in the Users app after the user logs in for the first time using Azure AD authentication, so that the user already exists in the OutSystems database.
 
@@ -213,11 +213,11 @@ Follow the procedure below:
 1. Access the Azure AD single sign-on configurations.
 1. Add the security groups as a Group Claim.
     
-    ![User attributes and claims screen](images/user-attributes-and-claims.png)
+    ![Screenshot of the Azure AD portal showing the User attributes and claims configuration screen](images/user-attributes-and-claims.png "User Attributes and Claims Screen")
 
 1. Access the configurations on the Users app and make sure that the Group information is mapped according to the response received from Azure AD.
 
-    ![Claims Screen](images/claims-screen.png)
+    ![Screenshot of the Users app showing the Claims configuration screen](images/claims-screen.png "Claims Configuration Screen in Users App")
     
 This should enable Azure AD to send the group ids (object id in Azure), which is created upon user authentication (if they don't already exist).
 

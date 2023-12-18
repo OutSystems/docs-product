@@ -14,7 +14,7 @@ To troubleshoot Service Actions you may need to check information regarding requ
 
 OutSystems keeps track of all requests to Service Actions; these log entries can be viewed in the **Service Action** section of the **Monitoring** in the Service Center (OutSystems environment management console).
 
-![service actions logs](<images/service-action-log-sc.png>)
+![Screenshot of the Service Action log section in the OutSystems Service Center](images/service-action-log-sc.png "Service Action Log in Service Center")
 
 By default OutSystems does not log details about errors, the headers or the payloads of requests to the Service Actions. The default logging detail level reduces the amount of information stored in the environment’s database but makes troubleshooting difficult; you need to [increase the logging level](#how-to-change-the-logging-detail-level-for-service-action) to `Troubleshoot` or `Full`.
 
@@ -36,7 +36,7 @@ To change the amount of information that is logged for requests to all Service A
 1. In the **Modules** tab, find your module and click the module's name to go to the details page.
 1. In the **Operations** tab, set the Service Actions logging level to the desired value (`Default`, `Troubleshoot` or `Full`).    
 
-    ![service actions log level](<images/service-action-log-level-sc.png>)
+    ![Instructions for changing the Service Actions logging level in the OutSystems Service Center](images/service-action-log-level-sc.png "Changing Service Actions Log Level")
 
 1. Click **Apply**.
 

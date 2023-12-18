@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 The Dropdown Select is a pattern that you can apply to other patterns to implement a search functionality or multiple selection in lists. You can use the Dropdown Select UI Pattern when you need an enhanced combo box or list box in forms, as it offers a richer user experience than the list.
 
-![](<images/dropdownselect-6-ss.png>)
+![Screenshot of the Dropdown Select UI Pattern in a Traditional Web App](images/dropdownselect-6-ss.png "Dropdown Select UI Pattern")
 
 **How to use the Dropdown Select UI Pattern**
 
@@ -26,7 +26,7 @@ The Dropdown Select is a pattern that you can apply to other patterns to impleme
 
     The Dropdown Select widget is displayed.
 
-    ![](<images/dropdownselect-1-ss.png>)
+    ![Image showing the Dropdown Select widget in the Service Studio toolbox](images/dropdownselect-1-ss.png "Dropdown Select Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,27 +40,27 @@ The Dropdown Select is a pattern that you can apply to other patterns to impleme
 
 1. From the Toolbox, drag the Dropdown Select widget into the Main Content area of your application's screen.
 
-    ![](<images/dropdownselect-5-ss.png>)
+    ![Dragging the Dropdown Select widget into the Main Content area of an application screen](images/dropdownselect-5-ss.png "Dragging Dropdown Select Widget")
 
 1. From the Toolbox, drag the Combo Box widget into the Main Content area of your application's screen, and on the Properties tab, enter a name for the widget. In this example, we enter `ListofEmployees`.
 
-    ![](<images/dropdownselect-9-ss.png?width=800>)
+    ![Configuring the Combo Box widget with the name 'ListofEmployees' in Service Studio](images/dropdownselect-9-ss.png "Combo Box Widget Configuration")
 
 1. Right-click your screen name, select **Add Local Variable**, and enter a name for the new variable. In this example, we enter `SelectedRecord`.
 
-    ![](<images/dropdownselect-8-ss.png>)
+    ![Adding a new local variable named 'SelectedRecord' to the screen in Service Studio](images/dropdownselect-8-ss.png "Adding Local Variable")
 
 1. Select the Combo Box widget, and on the **Properties** tab, enter the values for the **Variable** and **Source Entity** properties. In this example, we select **SelectedRecord** for the **Variable** property and drag the **Employees** entity into the Combo Box widget. This automatically becomes the **Source Entity** property value. 
 
-    ![](<images/dropdownselect-11-ss.png?width=800>)
+    ![Setting the Variable and Source Entity properties for the Combo Box widget in Service Studio](images/dropdownselect-11-ss.png "Setting Combo Box Properties")
 
 1. Select the Dropdown Select widget, and on the **Properties** tab, from the **WidgetId** drop-down, select the Combo Box widget Id. In this example, we select **ListofEmployees.Id**.
 
-    ![](<images/dropdownselect-12-ss.png>)
+    ![Linking the Dropdown Select widget to the Combo Box widget by selecting the WidgetId in Service Studio](images/dropdownselect-12-ss.png "Linking Dropdown Select to Combo Box")
 
 1. You can change the Dropdown Select's look and feel by setting the (Optional) properties on the Properties tab.
 
-    ![](<images/dropdownselect-13-ss.png>)
+    ![Customizing the look and feel of the Dropdown Select widget using the Properties tab in Service Studio](images/dropdownselect-13-ss.png "Customizing Dropdown Select Appearance")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

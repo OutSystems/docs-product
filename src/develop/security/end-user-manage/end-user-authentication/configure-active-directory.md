@@ -40,7 +40,7 @@ To use Active Directory domain authentication:
 
 1. In the [Users application](<../accessing-users.md>), click "Configure Authentication" in the sidebar.
 
-    ![](<images/users-auth-active-directory.png>)
+    ![Screenshot of the Users application with the 'Configure Authentication' option highlighted](images/users-auth-active-directory.png "Active Directory Authentication Configuration")
 
 1. Choose `Active Directory` in the **Authentication** drop-down list.
 

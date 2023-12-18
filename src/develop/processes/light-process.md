@@ -23,11 +23,11 @@ To enable light process execution, a process must meet all the following conditi
 * The **Launch On** property of the process is set with a database event.
     * Only entities with the **Expose Process Events** property enabled are allowed to be chosen in the process:
 
-        ![](images/expose-process-events-checkbox-ss.png)
+        ![Screenshot showing the Expose Process Events checkbox in the OutSystems Service Center](images/expose-process-events-checkbox-ss.png "Expose Process Events Checkbox")
 
 * The **Expose Process Entity** property of the process is set to **No**.
 
-    ![](images/light-process-1.png)
+    ![Flow diagram illustrating a simple Start to Automatic Activity to End process for light process execution](images/light-process-1.png "Light Process Flow Diagram")
 
 <div class="info" markdown="1">
 
@@ -49,15 +49,15 @@ To enable light process execution for a process, do the following:
 
 1. Click the **Apply** button. Changing this setting requires republishing the module.
 
-    ![light process execution](images/light-process-enable-sc.png)
+    ![Service Center management console showing the option to enable light process execution for an OutSystems application](images/light-process-enable-sc.png "Enabling Light Process Execution")
 
 1. To republish the module, go to the **Versions** tab and publish the current version of the module. You get a compilation message for the processes that can benefit from light process execution:
 
-    ![publish module](images/light-process-publish-module-sc.png)  
+    ![Compilation message in Service Center indicating the module is ready for light process execution after publishing](images/light-process-publish-module-sc.png "Publish Module for Light Process Execution")  
 
     You see the same compilation message when you publish the module through Service Studio:  
 
-    ![](images/light-process-3.png)
+    ![Service Studio compilation message confirming light process execution is enabled for the module](images/light-process-3.png "Light Process Execution Confirmation")
 
 After these steps and after publishing your module, the process is enabled for light process execution.  
 Keep in mind that only the creation of an entity record (the event configured in the **Launch On** of the process) triggers the process to execute as a light process. Launching the process using the Launch Process action executes the process as a regular process.

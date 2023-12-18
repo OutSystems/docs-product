@@ -31,7 +31,7 @@ After creating the zone, define which front-end servers belong to it. Do the fol
 
 1. In the input box under "Associate Servers to this Deployment Zone", type the front-end server names you wish to associate with the zone.
 
-    ![Associate front-end servers to deployment zone in Service Center](<images/zone-add-front-end.png>)
+    ![Input box for associating front-end servers to a new deployment zone in OutSystems Service Center](images/zone-add-front-end.png "Associate Servers to Deployment Zone")
 
     _Tip:_ The full name of the front-end server appears as suggested text after you start typing it.
 

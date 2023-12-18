@@ -1,11 +1,11 @@
 ---
+summary: The article advises on limiting the use of conditional starts in process flows to avoid complexity and deployment overhead
 locale: en-us
 guid: 812f03f1-00fa-4d03-b4af-7b7e580a5fc5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:31
 ---
-
 # Limit the Use of Conditional Starts
 
 When you add [Conditional Starts](<../../../ref/lang/auto/class-conditional-start.md>) to a [Process](../intro.md) you should consider well the business case you are addressing, or else you may be **introducing unnecessary complexity to the deployment of applications**. This is essentially due to:
@@ -24,7 +24,7 @@ Think of a process to handle candidates that apply for a job. At some point, int
 
 The conditional start is only necessary when interviews are scheduled, therefore, a dependency connector is added right before that activity.
 
-![](images/limit-conditional-starts.png)
+![Diagram showing a process flow where a dependency connector is added before a conditional start to handle job interview scheduling](images/limit-conditional-starts.png "Process Flow with Conditional Start and Dependency Connector")
 
 * Analyze the process flow and identify conditional starts that are not directly related with the process. A good method is usually to look for conditional starts with their `Start On` property empty, which means that they are being manually executed.
 
@@ -36,11 +36,11 @@ Add an input parameter to the new process to pass the identifier of the main pro
 
 From the process of the previous example, imagine it also has a conditional start to take note of ad hoc telephone calls.
 
-![](images/limit-conditional-starts-2.png)
+![Illustration of a process flow with a manual conditional start for ad hoc telephone call notes](images/limit-conditional-starts-2.png "Process Flow with Manual Conditional Start for Telephone Notes")
 
 The **TelephoneNote** conditional start is being explicitly started because it has no `Start On`. It is, in fact, a generic flow. It can be moved to a new process.
 
-![](images/limit-conditional-starts-3.png)
+![Example of a new, generic process flow created to handle telephone notes, separate from the main process](images/limit-conditional-starts-3.png "Generic Process Flow for Telephone Notes")
 
 This way, there are less conditional starts. Furthermore, the new process for the telephone notes is so generic that will probably be **reused**.
 

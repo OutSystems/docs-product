@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/bullets-2-diag.png>)
+![Diagram showing the layout and classes for the Bullets UI Pattern in Traditional Web Apps](images/bullets-2-diag.png "Bullets Layout Diagram")
 
 ## Advanced use case
 
@@ -31,4 +31,4 @@ Applies only to Traditional Web Apps.
 1. Inside the Bullet Item pattern, use expressions to display the content.
 1. Publish and test.
 
-![](<images/bullets-3-ss.png>)
+![Screenshot of the Bullets UI Pattern used with ListRecords in a Traditional Web App](images/bullets-3-ss.png "Bullets with ListRecords")

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Card Background UI Pattern to group small pieces of information and highlight them on the screen using a background image. The information is grouped into a small block that is easily noticeable on-screen. 
 
-![](<images/cardbackground-1-ss.png>)
+![Screenshot of a card background example in a traditional web app](images/cardbackground-1-ss.png "Card Background Example")
 
 **How to use the Card Background UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Card Background UI Pattern to group small pieces of information 
 
     The Card Background widget is displayed.
 
-    ![](<images/cardbackground-2-ss.png>)
+    ![Service Studio interface showing the Card Background widget in the toolbox](images/cardbackground-2-ss.png "Card Background Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,17 +40,17 @@ You can use the Card Background UI Pattern to group small pieces of information 
 
 1. From the Toolbox, drag the Card Background widget into the Main Content area of your application's screen.
 
-    ![](<images/cardbackground-3-ss.png>)
+    ![Dragging the Card Background widget into the Main Content area of an application screen](images/cardbackground-3-ss.png "Dragging Card Background Widget")
 
     By default, the Card Background widget contains a Content placeholder with some text and a Background Image placeholder with an image.
 
 1. Add your content to the placeholder. In this example we change the image. To do this, from the Widget Tree, select the Image, and on the **Properties** tab, from the **Image** drop-down, select the image you want to display.
 
-    ![](<images/cardbackground-4-ss.png>)
+    ![Widget Tree selection of an image to change in the Card Background widget properties](images/cardbackground-4-ss.png "Changing Image in Card Background")
 
 1. On the **Properties** tab, you can change the look and feel of the Card Background widget, by setting the (optional) properties, for example, the background color that overlays the image, the content's position and a minimum height for the card.
 
-    ![](<images/cardbackground-5-ss.png>)
+    ![Properties tab in Service Studio showing options to customize the Card Background widget](images/cardbackground-5-ss.png "Card Background Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

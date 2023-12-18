@@ -14,7 +14,7 @@ When developing your OutSystems applications, elements are implemented and reuse
 
 The module that implements and exposes functionality is the **producer** module. On the other hand, the module that reuses the exposed functionality is the **consumer** module. The functionality exposed by a **producer** module is considered as **dependencies** in the **consumers**.
 
-![](images/expose-and-reuse-diag.png)
+![Diagram illustrating the relationship between producer and consumer modules in OutSystems](images/expose-and-reuse-diag.png "Producer and Consumer Modules Diagram")
 
 Changes made in the producer module to the signature or implementation of the exposed elements may have impact in the consumer module. Check [this topic](handle-changes.md) to learn how the changes made in the producer in the exposed elements will impact the consumer modules.
 
@@ -26,7 +26,7 @@ To expose an element to other modules, do the following:
 
 1. Set the element's **Public** property to **Yes**.
 
-    ![Setting the Public property to Yes in a Server Action](images/expose-and-reuse-2.png?width=300)
+    ![Screenshot showing how to set the Public property to Yes in a Server Action within OutSystems](images/expose-and-reuse-2.png "Setting Public Property to Yes")
 
 1. Publish your module. After publishing your module, you can reuse the public elements in other modules in the environment.
 
@@ -42,19 +42,19 @@ To reuse elements from other modules, do the following:
 
 1. Open the **Manage Dependencies** window.
 
-    ![Clicking Manage Dependencies in the toolbar](images/expose-and-reuse-3.png?width=300)
+    ![Image depicting the Manage Dependencies option in the OutSystems IDE toolbar](images/expose-and-reuse-3.png "Manage Dependencies Toolbar Option")
 
 1. Select the producer module and then select the element you want to use.
 
-    ![Manage Dependencies window](images/expose-and-reuse-4.png?width=600)
+    ![Screenshot of the Manage Dependencies window in OutSystems showing how to select producer modules and elements](images/expose-and-reuse-4.png "Manage Dependencies Window")
 
 1. Press **Apply** to make the element available in your module.
 
-    ![Element in the tree defined in a producer module](images/expose-and-reuse-5.png?width=300)
+    ![Image showing an element in the tree structure defined in a producer module within the Manage Dependencies window](images/expose-and-reuse-5.png "Element Defined in Producer Module")
 
 1. Use the element exposed by the producer as any other element in your module.
 
-    ![Using a Server Action defined in another module](images/expose-and-reuse-6.png?width=600)
+    ![Screenshot demonstrating the use of a Server Action defined in a producer module within a consumer module in OutSystems](images/expose-and-reuse-6.png "Using a Server Action from Another Module")
 
 In the consumer module, you can see all the details you need to reuse the exposed element, such as the element name, the description, or the input/output parameters — called the **element's signature**.
 

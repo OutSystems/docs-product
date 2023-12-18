@@ -4,8 +4,8 @@ guid: d569b25f-1cf5-4e32-a006-185fcac10089
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The Attributes Editor is a tool for editing the properties of structure and entity attributes in an extension
 ---
-
 # Attributes Editor
 
 The Attributes Editor allows you to edit the properties of the [structure attributes](<../element-property/structure-attribute.md>) and [entity attributes](<../element-property/entity-attribute.md>) that belongs to your extension.
@@ -14,9 +14,9 @@ This editor is displayed together with the [Structure Editor](<structure.md>) or
 
 ## Add and Remove Attributes
 
-To **add** an attribute, simply type a new row in this editor or press the ![](images/add.gif) button in the editor or in the right menu.
+To **add** an attribute, simply type a new row in this editor or press the ![Animated button depicting the addition of a new attribute in the Attributes Editor](images/add.gif "Add Attribute Button") button in the editor or in the right menu.
 
-To **remove** an attribute, select the attribute row and press the ![](images/delete.gif) button in the editor or in the right menu.
+To **remove** an attribute, select the attribute row and press the ![Animated button depicting the deletion of an attribute in the Attributes Editor](images/delete.gif "Delete Attribute Button") button in the editor or in the right menu.
 
 ## Change an Attribute's Properties
 

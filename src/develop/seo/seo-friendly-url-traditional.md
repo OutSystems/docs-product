@@ -33,7 +33,7 @@ This document applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-F
 
 In Service Center, the console of Platform Server, a set of configurations let you to define rules by which incoming URLs are handled and transformed in the platform. Find these configuration options under the **Administration** tab, in the **SEO URLs** option. 
 
-![Config URL rules](images/seo-config-url-rules-sc.png)
+![Screenshot of SEO configuration URL rules in OutSystems Service Center](images/seo-config-url-rules-sc.png "SEO Configuration URL Rules in Service Center")
 
 At runtime, when clicking on a link on a page of your application, OutSystems optimizes the destination URL, and changes it to the best path that takes the most of your SEO-friendly URLs configuration. 
 
@@ -47,7 +47,7 @@ This section applies to Traditional Web apps. For Reactive Web Apps, see [SEO-Fr
 
 Use Page Rules to transform your URLs trailing information such as, page names and page parameters, into relevant keywords for search engines to rank them in a way that clearly describes your pages content. To specify these URLs transformations use the **New Page Rule** button.
 
-![New page rule](images/seo-new-page-rule-sc.png)
+![Screenshot showing the New Page Rule button in OutSystems Service Center](images/seo-new-page-rule-sc.png "New Page Rule Button in Service Center")
 
 The platform compares all incoming URLs with your rules, one by one, following the order you defined in the **SEO Friendly URLs - Page Rules** screen. The rule that's part of the app **Module** that matches the **URL Pattern** is the first applied. The app displays the **Web Screen** page and the parameter placeholders in the URL path. The Web Screen parameter name are enclosed in {} and the platform passes them to the page with their runtime values.
 
@@ -55,7 +55,7 @@ When there's Web Screen names ambiguity, prefix the Web Screen name with its Web
 
 At runtime, the platform assures that clicking on links to the Web Screens that have entries on any of these rules, have their destination URL transformed to use the **URL Pattern**. 
 
-![URL pattern](images/seo-url-pattern-sc.png)
+![Example of SEO friendly URL pattern configuration in OutSystems](images/seo-url-pattern-sc.png "SEO Friendly URL Pattern Configuration")
 
 With the above settings, when the application navigates to:
 
@@ -71,7 +71,7 @@ http://www.example.com/InsterstateBuses/From-Lisbon-To-Faro
 
 However, if there's only the 'To' parameter in the URL, the last rule applies, because the From parameter isn't defined to apply the previous rule. 
 
-![URL pattern to parameter](images/seo-url-pattern-to-parameter-sc.png)
+![Screenshot of SEO URL pattern focusing on 'To' parameter in OutSystems Service Center](images/seo-url-pattern-to-parameter-sc.png "SEO URL Pattern with 'To' Parameter")
 
 As such, navigating to the URL:
 
@@ -96,7 +96,7 @@ An eSpace Alias is an alternative eSpace name to be used in URLs: normally a sim
 
 To set eSpaces aliases select the **Module Alias List** option.
 
-![Module alias rules](images/seo-module-alias-rules-sc.png)
+![Screenshot of module alias rules configuration in OutSystems Service Center](images/seo-module-alias-rules-sc.png "Module Alias Rules in Service Center")
 
 Each module can only have one alias. You can still use the original module name in URLs.
 
@@ -122,7 +122,7 @@ Use Site Rules to simplify and organize URLs to better highlight site structure 
 
 Implement this kind of configurations selecting the **Site Rules List** option.
 
-![Site rules](images/seo-site-rules-sc.png)
+![Screenshot showing SEO site rules configuration in OutSystems Service Center](images/seo-site-rules-sc.png "SEO Site Rules Configuration")
 
 The platform compares all incoming URLs with your rules, one by one, following the order defined in the Site Rules screen. The first rule matching its **Base URL** value with the beginning of the URL path (excluding the protocol prefix) is the one applied: if there's a language **Locale** defined it gets set in the application. If there’s a **Root Application** defined, it's executed instead of the default application for the IIS site pointed at by the URL.
 
@@ -136,11 +136,11 @@ When domain changes occur make your old URLs point to the new ones using the Red
 
 To transform incoming URLs and force client-side redirects select the **Redirect Rules List** option.  
 
-![Redirect rules](images/seo-redirect-rules-sc.png)
+![Screenshot of SEO redirect rules in OutSystems Service Center](images/seo-redirect-rules-sc.png "SEO Redirect Rules in Service Center")
 
 All incoming URLs are compared with your rules, one by one, following the order defined in the 'Redirect Rules' screen. The first rule matching its **Base URL** value with the beginning of the URL path (excluding the protocol prefix) is the one applied: the matching part in the URL path is replaced by the rule’s **Replace With** value, remaining the rest of the URL path unchanged. The browser is then redirected to the new URL. 
 
-![Redirect rules replace with](images/seo-redirect-rules-replace-sc.png)
+![Example of URL redirection rule replacement in OutSystems Service Center](images/seo-redirect-rules-replace-sc.png "SEO Redirect Rules Replacement Example")
 
 With the above settings, when navigating to:
 ```
@@ -178,16 +178,16 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
 1. Launch Internet Information Services (IIS) Manager. In the Windows Start Menu, select **Server Manager**, select **Tools**, and then select the **Internet Information Services (IIS) Manager’ application**.
 
-    ![Select IIS manager application](images/seo-friendly-urls_12.png)
+    ![Screenshot of selecting Internet Information Services (IIS) Manager application in Windows](images/seo-friendly-urls_12.png "Selecting IIS Manager Application")
 
 
 1. In the IIS Manager tree, under the **Sites** folder, select **Default Web Site**;
 
-    ![Select default web site](images/seo-friendly-urls_8.png)
+    ![Screenshot of selecting the Default Web Site in Internet Information Services (IIS) Manager](images/seo-friendly-urls_8.png "Selecting Default Web Site in IIS Manager")
 
 1. Double-click on **ISAPI Filters** icon to open it, and then click on the **Add** link on the **Actions** pane;
 
-    ![Add link](images/seo-friendly-urls_9.png)
+    ![Screenshot of adding a new ISAPI Filter in Internet Information Services (IIS) Manager](images/seo-friendly-urls_9.png "Adding ISAPI Filter in IIS Manager")
 
 1. Set the **Filter Name** to 'OutSystems ISAPI Filter', and the 'Executable' to:
 
@@ -195,13 +195,13 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
     * 64-bit Operating Systems: `<your_OutSystems_Installation_Directory>\OutSystems\Platform Server\OsISAPIFilterx64.dll`
     
-    ![Select filter name](images/seo-friendly-urls_10.png)
+    ![Screenshot showing the configuration of OutSystems ISAPI Filter in IIS Manager](images/seo-friendly-urls_10.png "Configuring OutSystems ISAPI Filter")
 
     * Press ‘OK’ button to finish adding the 'OutSystems ISAPI Filter'
 
 1. In the IIS Manager tree, under the **Application Pools** folder, select the **DefaultAppPool** pool and then click on **View Applications** on the **Actions** pane on the right side:
 
-    ![Select DefaultAppPool](images/seo-friendly-urls_13.png)
+    ![Screenshot of selecting DefaultAppPool in Internet Information Services (IIS) Manager](images/seo-friendly-urls_13.png "Selecting DefaultAppPool in IIS Manager")
 
     * If the 'Root Application' Virtual Path is listed under **DefaultAppPool**, double-click it and change the 'Application pool' for 'Root Application' to **OutSystemsApplications**.
 

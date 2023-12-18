@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Timeline Item UI Pattern to show related events in a chronological order, such as a user's upcoming, current, and past activities.
 
-![](<images/timelineitem-1-ss.png>)
+![Screenshot showing an overview of the Timeline Item UI Pattern in a mobile app interface](images/timelineitem-1-ss.png "Timeline Item UI Pattern Overview")
 
 **How to use the Timeline Item UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Timeline Item UI Pattern to show related events in a chronologic
 
     The Timeline Item widget is displayed.
 
-    ![](<images/timelineitem-2-ss.png>)
+    ![Screenshot of the Timeline Item widget found in the Service Studio toolbox](images/timelineitem-2-ss.png "Timeline Item Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ You can use the Timeline Item UI Pattern to show related events in a chronologic
 
 1. From the Toolbox, drag the Timeline widget onto your application's screen.
 
-    ![](<images/timelineitem-3-ss.png?width=800>)
+    ![Screenshot illustrating how to drag the Timeline widget onto an application's screen in Service Studio](images/timelineitem-3-ss.png "Dragging Timeline Widget onto the Screen")
 
     By default, the Timeline Item widget contains Left, Icon, Title, Content, and Right placeholders. You can add as many Timeline Item widgets as required.
 
@@ -50,7 +50,7 @@ You can use the Timeline Item UI Pattern to show related events in a chronologic
 
     In this example we add some icons and text.
 
-    ![](<images/timelineitem-4-ss.png>)
+    ![Screenshot showing the configuration of content within the Timeline Item placeholders with icons and text](images/timelineitem-4-ss.png "Configuring Timeline Item Content")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

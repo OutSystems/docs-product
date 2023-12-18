@@ -19,11 +19,11 @@ For that, do the following:
 
 1. Select the exposed REST API you want to change and set its **Authentication** property to `Custom`.
 
-    ![Available values for Exposed REST API Authentication property](images/ss-rest-authentication-options.png)
+    ![Screenshot showing the available values for the Authentication property of an exposed REST API in OutSystems](images/ss-rest-authentication-options.png "Exposed REST API Authentication Options")
 
     As a result, OutSystems creates the **OnAuthentication** callback action in your REST API and executes it for every incoming request of this REST API, before the called method's action flow.
 
-    ![OnAuthentication action flow](images/ss-rest-onauthentication-custom-flow.png)
+    ![Screenshot of the OnAuthentication action flow in OutSystems for custom REST API authentication](images/ss-rest-onauthentication-custom-flow.png "OnAuthentication Custom Action Flow")
 
 1. In the **OnAuthentication** callback action, design the logic to authenticate the client. If you need to access data received in the URL, header or body of the HTTP request, you can use the [GetFormValue](../../../ref/apis/auto/httprequesthandler-api.final.md#GetFormValue), [GetRequestHeader](../../../ref/apis/auto/httprequesthandler-api.final.md#GetRequestHeader) or [GetRequestContent](../../../ref/apis/auto/httprequesthandler-api.final.md#GetRequestContent) actions of the [HTTPRequestHandler](../../../ref/apis/auto/httprequesthandler-api.final.md) extension.
 
@@ -124,7 +124,7 @@ Set the authentication logic to get the values of the HTTP headers and then chec
 
 1. Rename the element to `GetRequestHeaderAppId`.
 
-    ![Flow after calling GetRequestHeader](images/rest-custom-auth-getrequestheader-ss.png)
+    ![Flow diagram in OutSystems showing the GetRequestHeader server action to retrieve the 'X-Contacts-AppId' HTTP header](images/rest-custom-auth-getrequestheader-ss.png "GetRequestHeader Server Action in Flow")
 
 1. Drag another **Run Server Action** element to the flow (before the **End** element) and select the "GetRequestHeader" Server Action again.
 
@@ -151,7 +151,7 @@ Tip: Raising an exception in the "OnAuthentication" callback action sets an HTTP
 
 Here's a sample implementation of the complete **OnAuthentication** flow:
 
-![OnAuthentication complete example flow](images/rest-custom-auth-example-ss.png)
+![Screenshot of a sample implementation of the complete OnAuthentication flow in OutSystems for REST API custom authentication](images/rest-custom-auth-example-ss.png "Complete OnAuthentication Flow Example")
 
 ### Test the authentication
 
@@ -159,10 +159,10 @@ Test the logic of your custom authentication method using an API client like [Po
 
 1. Create a new test request pointing to the URL of a method of your exposed REST API (in the example, the "GetContacts" method), without including any extra headers.
 
-    ![Postman test without authentication gives an error](images/rest-custom-auth-example-error.png)
+    ![Screenshot of a Postman test request without authentication headers resulting in an error message](images/rest-custom-auth-example-error.png "Postman Test Without Authentication Error")
 
     You should get an error whose message you defined in the **Raise Exception** element.
 
 1. In the **Headers** sub-tab, add the required headers for authentication and check that you get the expected answer.
 
-![Postman test with authentication headers gives the expected results](images/rest-custom-auth-example-success.png)
+![Screenshot of a successful authentication test in Postman with the required HTTP headers included](images/rest-custom-auth-example-success.png "Successful Authentication Test in Postman")

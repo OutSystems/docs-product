@@ -23,7 +23,7 @@ To create a new role, do the following:
 
 1. Choose **ROLES** and click the **New Role** link.  
 
-    ![](images/roles-create-new-lt.png)
+    ![Screenshot of the LifeTime console showing the process of creating a new role in the USER MANAGEMENT area.](images/roles-create-new-lt.png "Creating a New Role in LifeTime Console")
 
 1. Fill in the Role Name.
 
@@ -31,15 +31,15 @@ To create a new role, do the following:
 
     * Move the slider to choose the permission level over the environment and applications.
 
-    ![](images/roles-permission-levels-lt.png)
+    ![Image depicting the slider interface for setting permission levels for a new role in the LifeTime console.](images/roles-permission-levels-lt.png "Setting Permission Levels for a New Role")
 
     * Set the toggle to define the specific permissions for the environment’s applications.
 
-    ![](images/roles-specific-permissions-lt.png)
+    ![Screenshot showing the toggle switches for defining specific permissions for applications within an environment in the LifeTime console.](images/roles-specific-permissions-lt.png "Defining Specific Permissions for a New Role")
 
     * Set the toggle to define the infrastructure-wide permissions.
 
-    ![](images/roles-infra-wide-permissions-lt.png)
+    ![Image displaying the toggle switches for setting infrastructure-wide permissions for a new role in the LifeTime console.](images/roles-infra-wide-permissions-lt.png "Setting Infrastructure-wide Permissions")
 
 1. Click the **SAVE** button to create the role.
 
@@ -57,7 +57,7 @@ You can assign **roles** to **users** in three different ways:
 
 You set the Default Role of a user when [creating the user](create-an-it-user.md):
 
-![](images/roles-create-user-lt.png)
+![Screenshot of the LifeTime console interface for creating a new user and setting their default role.](images/roles-create-user-lt.png "Creating a User and Setting Default Role")
 
 At any time, you can change the default role of the user in the user’s details page:
 
@@ -67,7 +67,7 @@ At any time, you can change the default role of the user in the user’s details
 
 1. Change the user's Default Role in the Role dropdown.  
 
-    ![](images/roles-default-role-lt.png)
+    ![Image showing the dropdown menu for changing a user's default role in the LifeTime console.](images/roles-default-role-lt.png "Changing a User's Default Role")
 
 The change will be immediately saved.
 
@@ -75,11 +75,11 @@ The change will be immediately saved.
 
 You specify the role of users in a team when you [add the users to the team](create-an-it-team.md#add-it-users-to-the-team):
 
-![](images/roles-grant-in-team-lt.png)
+![Screenshot illustrating the process of granting a role to a user within a team in the LifeTime console.](images/roles-grant-in-team-lt.png "Granting a Role to a User in a Team")
 
 You can change the role of a user in the team either in the team’s screen or in the user's detail screen:
 
-![](images/roles-update-in-team-lt.png)
+![Image showing the interface for updating a user's role in a team in the LifeTime console.](images/roles-update-in-team-lt.png "Updating a User's Role in a Team")
 
 The change will be immediately saved.
 
@@ -93,18 +93,18 @@ To assign a role to a user for a specific application, do the following:
 
 1. Click the **Grant Role in Applications** link.  
 
-    ![](images/roles-grant-in-app-link-lt.png)
+    ![Screenshot highlighting the 'Grant Role in Applications' link in the LifeTime console's USER MANAGEMENT area.](images/roles-grant-in-app-link-lt.png "Granting Role in Applications Link")
 
 1. Choose the Role and the applications you want the user to have that role.  
 
-    ![](images/roles-grant-in-app-lt.png)
+    ![Image showing the interface for assigning a role to a user for specific applications in the LifeTime console.](images/roles-grant-in-app-lt.png "Assigning a Role to a User for Specific Applications")
 
 1. Click the **Grant Role in Applications** button.
 
 To change the role that a user has over a specific application, change the role directly in the user’s screen. The change will be immediately saved:
 
-![](images/roles-update-in-app-lt.png)
+![Screenshot of the LifeTime console where a user's role for a specific application can be changed.](images/roles-update-in-app-lt.png "Changing a User's Role for a Specific Application")
 
 To revoke the role that a user has over a specific application, click the remove icon for that application in the user’s screen:
 
-![](images/roles-revoke-in-app-lt.png)
+![Image displaying the option to revoke a user's role for a specific application in the LifeTime console.](images/roles-revoke-in-app-lt.png "Revoking a User's Role for a Specific Application")

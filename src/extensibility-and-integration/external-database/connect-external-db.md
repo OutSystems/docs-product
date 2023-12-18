@@ -34,17 +34,17 @@ To use tables and views from external databases, create a database connection:
 
 1. Open the **Service Center** management console of your OutSystems environment.
 
-    ![](images/connect-external-db-0.png?width=800)
+    ![Screenshot of the Service Center management console in OutSystems](images/connect-external-db-0.png "Service Center Management Console")
 
     Tip: Open Service Center directly from Service Studio by clicking **Environment Management...**.
 
 1. On the **Administration** tab, select **Database Connections**.
 
-    ![](images/connect-external-db-new-connection-sc.png?width=1000)
+    ![Service Center showing the Database Connections tab with an option to create a new connection](images/connect-external-db-new-connection-sc.png "Database Connections in Service Center")
 
 1. Click **New Database Connection** and fill in the fields to set up the connection to the external database.
 
-    ![](images/connect-external-db-create-connection-sc.png?width=1000)
+    ![Form to create a new database connection in Service Center with fields for connection details](images/connect-external-db-create-connection-sc.png "New Database Connection Setup")
 
     If you need to fine-tune the database connection, choose the option **Advanced configuration**. This allows you to define your own connection string.
 
@@ -80,19 +80,19 @@ After configuring a database connection in Service Center, use Integration Studi
 
 1. Go back to **Service Studio**, open your app, select **New Module** and create a new **Extension** Module.
 
-    ![](images/connect-external-db-03.png?width=800)
+    ![Service Studio interface with the option to create a new Extension Module](images/connect-external-db-03.png "Creating a New Extension Module in Service Studio")
 
 1. In **Integration Studio**, **Connect** to your environment.
 
-    ![](images/connect-external-db-003.png?width=400)
+    ![Integration Studio dialog box for connecting to an OutSystems environment](images/connect-external-db-003.png "Connecting to Environment in Integration Studio")
 
 1. Right-click the **Entities** folder in the Extension Tree and select **Connect to External Table or View...**.
 
-    ![](images/connect-external-db-3.png?width=1000)
+    ![Context menu in Integration Studio to connect to an external table or view](images/connect-external-db-3.png "Connect to External Table or View")
 
 1. Follow the steps of the wizard.
 
-    ![](images/connect-external-db-4.png?width=600)
+    ![Wizard interface in Integration Studio for mapping an external table or view to an entity](images/connect-external-db-4.png "External Table or View Mapping Wizard")
     
     <div class="info" markdown="1">
 
@@ -112,7 +112,7 @@ After configuring a database connection in Service Center, use Integration Studi
 
 1. In the **1-Click Publish** summary window, select the **Missing Configuration** warning and then select **Configure**.
 
-    ![](images/connect-external-db-5.png?width=600)  
+    ![1-Click Publish summary window in Integration Studio with a warning for missing configuration](images/connect-external-db-5.png "1-Click Publish Summary Window")  
 
 ## Configure the extension to use a database connection
 
@@ -122,7 +122,7 @@ After mapping the tables or views, use Service Center to configure which databas
 
 1. Associate the logical database name of the extension to the database connection that the extension will use in runtime.
 
-    ![](images/connect-external-db-configure-extension-sc.png?width=1000)
+    ![Service Center interface for configuring a database connection for an extension](images/connect-external-db-configure-extension-sc.png "Configure Extension Database Connection")
 
 In some cases you need to select the database based on runtime data. Typically, the applicable databases share the same schema but they contain different data.
 
@@ -137,6 +137,6 @@ The Extension is now ready to be used in OutSystems apps:
 
 1. Add a dependency to the Extension and select the Entities that you will use in your app.  
 
-    ![](images/connect-external-db-7.png?width=600)
+    ![Service Studio Manage Dependencies dialog showing the extension entities to be added](images/connect-external-db-7.png "Manage Dependencies in Service Studio")
 
 You can now use the entities of the extension to manipulate data on the external databases just like you do with the standard OutSystems entities.

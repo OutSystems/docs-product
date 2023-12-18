@@ -38,4 +38,4 @@ When publishing an app to your development environment, the Workflow Builder add
  
  For example, a group Managers of an **Expenses Approval** app would be called `WB | Expenses Approval | Managers`. The Workflow Builder user only sees the name **Managers** within the Workflow Builder app.
 
-![Example of users groups](images/wfb-users-groups.png)
+![Screenshot showing how user groups are named and managed in Workflow Builder](images/wfb-users-groups.png "Workflow Builder User Groups")

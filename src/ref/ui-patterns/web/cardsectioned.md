@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/cardsectioned-2-diag.png>)
+![Diagram showing the layout and classes of the Card Sectioned UI Pattern](images/cardsectioned-2-diag.png "Card Sectioned Layout Diagram")
 
 ## CSS selectors
 
@@ -41,11 +41,11 @@ Applies only to Traditional Web Apps.
 
 **Desktop & Tablet**
 
-![](<images/cardsectioned-3.png>)
+![Example of the Card Sectioned Pattern displayed on desktop and tablet devices](images/cardsectioned-3.png "Card Sectioned on Desktop & Tablet")
 
 **Phone**
 
-![](<images/cardsectioned-4.png>)
+![Example of the Card Sectioned Pattern displayed on a phone device](images/cardsectioned-4.png "Card Sectioned on Phone")
 
 ## Notes
 The parameter IsRight only works if the parameter Orientation is Not Vertical.

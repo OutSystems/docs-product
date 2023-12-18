@@ -6,21 +6,21 @@ guid: 2e8ca3cb-cfae-41a3-bbd0-c6b14ca14258
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: An event in OutSystems allows a block to notify its parent element of an occurrence, with the option to pass input parameters and a mandatory setting
 ---
-
 # Event
 
 An event is an element that allows a block to interact with its parent element by notifying it that a particular event has occurred. Essentially, the block triggers an event and then the parent element handles it.
 
 Events can only be defined inside blocks.
 
-![Define an event inside a block](images/add-event-block-ss.png)
+![Screenshot showing how to define an event inside a block in OutSystems Service Studio](images/add-event-block-ss.png "Defining an Event Inside a Block")
 
 Input parameters can be added to events. This allows data to pass from the scope of a block to the outer scope of the parent element. This is necessary since the block and parent element have different scopes.
 
 If the **Is Mandatory** property of an event is set to **Yes**, you must define an event handler in the parent element where the block with the event is used. 
 
-![If the IsMandatory property is set to True, you must define an event handler](images/mandatory-event-ss.png)
+![Screenshot illustrating the IsMandatory property set to True, indicating the need to define an event handler in OutSystems Service Studio](images/mandatory-event-ss.png "Mandatory Event Property Set to True")
 
 
 ## Trigger event

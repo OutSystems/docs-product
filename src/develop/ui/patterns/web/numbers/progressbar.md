@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Progress Bar to display percentage values by incrementing values in a bar, and to show the current progress of a task flow. <!--You can also show progress in a Progress Circle or a Progress Circle Fraction. When using the Progress Bar UI Pattern, be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. -->
 
-![](<images/progressbar-1-ss.png>)
+![Screenshot of a progress bar example in a Traditional Web App](images/progressbar-1-ss.png "Progress Bar Example")
 
 **How to use the Progress Bar UI Pattern**
 
@@ -28,7 +28,7 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
     The Progress Bar widget is displayed.
 
-    ![](<images/progressbar-2-ss.png>)
+    ![Image showing the Progress Bar widget in the Service Studio toolbox](images/progressbar-2-ss.png "Progress Bar Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,27 +42,27 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
 1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen.
 
-    ![](<images/progressbar-3-ss.png>)
+    ![Dragging the Progress Bar widget into the Main Content area of an application screen](images/progressbar-3-ss.png "Dragging Progress Bar Widget")
 
     By default, the Progress Bar widget contains a Title and Value placeholder.
 
-    ![](<images/progressbar-4-ss.png>)
+    ![Default Progress Bar widget with Title and Value placeholder](images/progressbar-4-ss.png "Default Progress Bar Widget")
 
 1. Right-click your screen name and select **Add Preparation**.
 
 1. From the Toolbox, drag an Aggregate onto the screen preparation, and enter a name for the aggregate. In this example, we call the aggregate **GetTotalOrders**.
 
-    ![](<images/progressbar-10-ss.png>)
+    ![Creating an aggregate called GetTotalOrders in Service Studio](images/progressbar-10-ss.png "Aggregate in Service Studio")
 
 1. To add a database entity, double-click the aggregate you just created and click on the aggregate screen.
 
 1. From the **Select Source** pop-up, choose the source entity and click **OK**. In this example, we select the **Order** database.
 
-    ![](<images/progressbar-11-ss.png>)
+    ![Selecting the source entity for an aggregate in Service Studio](images/progressbar-11-ss.png "Select Source Entity for Aggregate")
 
 1. Return to the screen preparation, and add another aggregate (See step 4). In this example we call the second aggregate **GetShippedOrders**.
 
-    ![](<images/progressbar-12-ss.png>)
+    ![Adding a second aggregate called GetShippedOrders in Service Studio](images/progressbar-12-ss.png "Adding Second Aggregate")
 
 1. To add the relevant database entity, repeat steps 5 and 6.
 
@@ -72,7 +72,7 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
     `Order.Status = Entities.OrderStatus.Shipped`
 
-    ![](<images/progressbar-13-ss.png>)
+    ![Adding a filter to the GetShippedOrders aggregate in Service Studio](images/progressbar-13-ss.png "Adding Filter to Aggregate")
 
 1. Double-click your screen name, and on the **Properties** tab, from the **Percentage** drop-down, select **Expression Editor**.
 Enter the logic for the Progress Bar and click **DONE**.  This displays the percentage value as the stroke on the Progress Bar.
@@ -81,21 +81,21 @@ Enter the logic for the Progress Bar and click **DONE**.  This displays the perc
 
     `GetShippedOrders.Count / GetTotalOrders.Count * 100`
 
-    ![](<images/progressbar-14-ss.png>)
+    ![Setting the percentage value for the Progress Bar using an expression in Service Studio](images/progressbar-14-ss.png "Setting Progress Bar Percentage")
 
 1. From the Toolbox, drag an Expression widget into the **Value** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
 
 1. In the Expression Editor, enter the same logic as in step 11 (`GetShippedOrders.Count / GetTotalOrders.Count * 100`), and click **DONE**. This displays the percentage value on the Progress Bar.
 
-    ![](<images/progressbar-15-ss.png>)
+    ![Adding an expression widget to display the percentage value on the Progress Bar](images/progressbar-15-ss.png "Expression Widget for Progress Bar Value")
 
 1. Add the text you want to appear as the Progress Bar title to the **Title** placeholder. In this example, we add "Total % of shipped Orders".
 
-    ![](<images/progressbar-16-ss.png>)
+    ![Adding a title to the Progress Bar's Title placeholder in Service Studio](images/progressbar-16-ss.png "Progress Bar Title Placeholder")
 
 1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, size, and orientation of the Progress Bar.
 
-    ![](<images/progressbar-5-ss.png>)
+    ![Customizing the look and feel of the Progress Bar in Service Studio](images/progressbar-5-ss.png "Customizing Progress Bar Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -24,7 +24,7 @@ To use an icon in Reactive Web and Mobile:
 1. Select the icon you want to use and click OK.
 1. Optionally, you can add an event, by selecting and event from the Events drop-down menu, and then create the associated action in the handler.
 
-![](images/use-icons-mobile.png?width=750)
+![Screenshot showing how to add an icon in Reactive Web and Mobile applications using OutSystems](images/use-icons-mobile.png "Adding an Icon in Reactive Web and Mobile")
 
 ## In Traditional Web
 
@@ -33,4 +33,4 @@ To use an icon in Traditional Web:
 1. In the Interface tab, go to Rich Widgets and drag an Icon block to the screen. 
 1. Expand the drop-down list in the Name property and select the icon to be displayed. 
 
-![](images/use-icons-web.png?width=750)
+![Screenshot illustrating the process of adding an icon in Traditional Web applications using OutSystems](images/use-icons-web.png "Adding an Icon in Traditional Web")

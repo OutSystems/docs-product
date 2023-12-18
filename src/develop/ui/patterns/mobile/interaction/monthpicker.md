@@ -18,7 +18,7 @@ You can use the Month Picker UI Pattern to allow users input a month of the year
     
     The Month Picker widget is displayed.
 
-    ![Month Picker widget](images/monthpicker-widget-ss.png)
+    ![Screenshot of the Month Picker widget in the Service Studio toolbox](images/monthpicker-widget-ss.png "Month Picker Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -32,7 +32,7 @@ You can use the Month Picker UI Pattern to allow users input a month of the year
 
 1. From the Toolbox, drag the Month Picker widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](images/monthpicker-dragwidget-ss.png)
+    ![Dragging the Month Picker widget into the Main Content area of an application's screen](images/monthpicker-dragwidget-ss.png "Dragging Month Picker Widget to Screen")
 
     By default, the Month Picker contains an **Input** widget (type Text).
 
@@ -40,37 +40,37 @@ You can use the Month Picker UI Pattern to allow users input a month of the year
 
     This variable stores any value entered into or received by the input widget.
 
-    ![Create a new local variable](images/monthpicker-variable-ss.png)
+    ![Creating a local variable for the Month Picker input widget in Service Studio](images/monthpicker-variable-ss.png "Creating a New Local Variable for Month Picker")
 
 1. Enter a name for the variable (in this example **MonthVar**) and select **Text** as the **Data Type**.
 
-    ![Name the variable](images/monthpicker-monthvar-ss.png)
+    ![Naming the local variable as 'MonthVar' and selecting 'Text' as the data type](images/monthpicker-monthvar-ss.png "Naming the Month Variable")
 
 1. Right-click your main screen and add another local variable.
 
     This variable stores the month selected by the user.
 
-    ![Create a another local variable](images/monthpicker-localvar-ss.png)
+    ![Creating another local variable to store the month selected by the user](images/monthpicker-localvar-ss.png "Creating Another Local Variable")
 
 1. Enter a name for the variable (in this example **MonthPicked**) and select **MonthYear** as the **Data Type**.
 
-    ![Name the new variable](images/monthpicker-monthpicked-ss.png)
+    ![Naming the new local variable as 'MonthPicked' and selecting 'MonthYear' as the data type](images/monthpicker-monthpicked-ss.png "Naming the Month Picked Variable")
 
 1. To create an **OnSelect** event for the Month Picker, select the Month Picker widget, and on the **Properties** tab, from the **Handler** dropdown, select **New Client Action**.
 
-    ![Create a client action](images/monthpicker-client-action-ss.png)
+    ![Creating an OnSelect event client action for the Month Picker widget](images/monthpicker-client-action-ss.png "Creating a Client Action for Month Picker")
 
 1. To access the month selected by the user, create an **Assign** and set the **MonthPicked** to **SelectedMonth**.
 
-    ![Add an Assign to the client action](images/monthpicker-assign-ss.png)
+    ![Adding an Assign to set the 'MonthPicked' variable to 'SelectedMonth' in the client action](images/monthpicker-assign-ss.png "Adding an Assign to Client Action")
 
 1. You can configure the Month Picker by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties.
 
-    ![Set the relevant properties](images/monthpicker-properties-ss.png)
+    ![Configuring the Month Picker properties in Service Studio](images/monthpicker-properties-ss.png "Setting Properties for Month Picker")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
-![Result](images/monthpicker-result.png)
+![Final result showing the Month Picker implemented in an application](images/monthpicker-result.png "Month Picker Result")
 
 ## Properties
 

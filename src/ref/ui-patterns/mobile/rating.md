@@ -24,7 +24,7 @@ Applies to Mobile Apps and Reactive Web Apps only
   
 ## Structure
 
-![Structure diagram](images/rating-diag.png)
+![Diagram illustrating the structure of the Rating component in a mobile or reactive web app](images/rating-diag.png "Rating Component Structure")
 
 <div class="info" markdown="1">
 

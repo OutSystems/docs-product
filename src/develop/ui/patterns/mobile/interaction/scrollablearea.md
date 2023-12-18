@@ -24,7 +24,7 @@ The Scrollable Area Pattern is a simple scrollable block with a placeholder for 
 
     The Scrollable Area is displayed.
 
-    ![Scrollabel Area widget](<images/scrollwidget-ss.png>)
+    ![Screenshot of the Scrollable Area widget in the Service Studio toolbox](images/scrollwidget-ss.png "Scrollable Area Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,7 +38,7 @@ The Scrollable Area Pattern is a simple scrollable block with a placeholder for 
 
 1. From the Toolbox, drag the Scrollable Area widget into the Main Content area of your application's screen, 
 
-    ![Drag widget to sreen](<images/scrolldrag-ss.png>)
+    ![Dragging the Scrollable Area widget into the Main Content area of an application screen](images/scrolldrag-ss.png "Dragging Scrollable Area Widget to Screen")
 
     By default, the Scrollable Area widget contains a Content placeholder.
    
@@ -46,17 +46,17 @@ The Scrollable Area Pattern is a simple scrollable block with a placeholder for 
 
     In this example, we add some images by dragging the Image widget into the Content placeholder, and on the **Properties** tab, from the **Image** dropdown, select the relevant images.
 
-    ![Add images to Content placeholder](<images/scrollimage-ss.png>)
+    ![Adding images to the Content placeholder of the Scrollable Area widget](images/scrollimage-ss.png "Adding Images to Content Placeholder")
     
 1. On the **Properties** tab, you can customize the Scrollable Area's look and feel by setting any of the optional properties, for example, the height and width of the scrollable area. 
 
-    ![Set the optional properties](<images/scrollprop-ss.png>)
+    ![Customizing the Scrollable Area's properties in the Properties tab](images/scrollprop-ss.png "Setting Optional Properties of Scrollable Area")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 Example result:
 
-![Scrollable Area example](<images/scrollexample.png>)
+![Example result showing a Scrollable Area with content in an application](images/scrollexample.png "Example of Scrollable Area in an App")
 
 ## Properties
 

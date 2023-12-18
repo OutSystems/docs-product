@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Structure
 
-![Gallery Structure](images/gallery-class-diag.png)
+![Class diagram image showing the structure of the Gallery UI pattern](images/gallery-class-diag.png "Gallery Class Diagram")
 
 ### Modifiers
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Balloon UI Pattern to display content in a pop-up on the UI. The Balloon UI Pattern is useful when you need to display additional information related to a small on-screen element.
 
-![](<images/balloon-image-6.png>)
+![Example of Balloon UI Pattern used as a tooltip on a form](images/balloon-image-6.png "Balloon UI Pattern Example")
 
 **How to use the Balloon UI Pattern**
 
@@ -28,7 +28,7 @@ In this example, we use the Balloon as a tooltip on a screen with a form.
 
     The Balloon widget is displayed.
 
-    ![](<images/balloon-image-3.png>)
+    ![Balloon widget displayed in the Service Studio toolbox](images/balloon-image-3.png "Balloon Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,23 +42,23 @@ In this example, we use the Balloon as a tooltip on a screen with a form.
 
 1. From the Toolbox, drag the Balloon widget into the Main Content area of your application's screen.
 
-    ![](<images/balloon-image-7.png>)
+    ![Dragging the Balloon widget into the Main Content area of an application screen](images/balloon-image-7.png "Dragging Balloon Widget into Main Content")
 
 1. To bind the Balloon widget to the First Name input widget, on the **Properties** tab, from the **WidgetId** dropdown, select **firstname.Id**.
 
-    ![](<images/balloon-image-8.png>)
+    ![Binding the Balloon widget to the First Name input widget in the Properties tab](images/balloon-image-8.png "Binding Balloon Widget to First Name Input")
 
     **Note**: The **WidgetId** comes from the element **Name** you are binding the balloon with.
 
 1. In the Content placeholder, enter the content you want to display. In this example we add text.
 
-    ![](<images/balloon-image-9.png>)
+    ![Entering text content into the Balloon widget placeholder](images/balloon-image-9.png "Adding Content to Balloon Widget")
 
 1. Repeat steps 2-4 for each of the elements that require a Balloon pop-up.
 
 1. On the **Properties** tab, you can change the look and feel of the Balloon widget by setting the (optional) properties, for example, the position of the content on screen and what action triggers the content to display.
 
-    ![](<images/balloon-image-10.png>)
+    ![Setting optional properties of the Balloon widget on the Properties tab](images/balloon-image-10.png "Balloon Widget Properties")
 
 1. After following these steps and publishing the module, you can test the pattern in your app. 
 

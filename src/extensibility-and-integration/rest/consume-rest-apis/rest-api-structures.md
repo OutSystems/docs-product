@@ -33,7 +33,7 @@ Response:
 
 The following Structure is automatically created for this method:
 
-![](images/ss-rest-consume-structures.png)
+![Screenshot showing an example of a Structure created by OutSystems when consuming a REST API method](images/ss-rest-consume-structures.png "OutSystems REST API Consumed Structure Example")
 
 ## Reuse of Structures
 
@@ -68,7 +68,7 @@ As the existing "PostSettingsResponse" Structure is compatible with the new meth
 * The Structure is renamed to "Settings" to match both methods where it is used
 * An additional "Always_use_https" attribute is added to the Structure
 
-![](images/ss-rest-consume-structures-updated.png)
+![Screenshot illustrating how OutSystems reuses and updates a Structure for a new REST API method](images/ss-rest-consume-structures-updated.png "OutSystems REST API Reused Structure Example")
 
 ### Creating a New Structure Example
 
@@ -88,6 +88,6 @@ The following example adds a larger number of parameters to the Response example
 
 As only three of the attributes are covered by the existing Structure, which is less than half of the attributes, the existing Structure is not reused. OutSystems creates a new Structure named "Setting" to hold the response of the "GetSettings" method:
 
-![](images/ss-rest-consume-structures-updated-2.png)
+![Screenshot depicting the creation of a new Structure in OutSystems due to insufficient attribute coverage for reuse](images/ss-rest-consume-structures-updated-2.png "OutSystems REST API New Structure Creation Example")
 
 The previous "Settings" structure is not deleted since it is still used by the "PostSettings" method.

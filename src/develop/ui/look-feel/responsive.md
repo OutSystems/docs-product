@@ -24,7 +24,7 @@ To have a multiexperience on reactive and native mobile applications, OutSystems
 
 When the device type is detected, a set of classes is automatically added to the body HTML element.
 
-![Device detection](images/responsive-device-detection.png)
+![Diagram showing how OutSystems adds CSS classes for device, orientation, browser, operating system, and touch detection](images/responsive-device-detection.png "Responsive Device Detection")
 
 The CSS classes add the following:
 
@@ -64,7 +64,7 @@ To improve the experience and the responsive behavior of your application, the O
 
 Depending on screen size and resolution, OutSystems UI captures device type (desktop, tablet, or phone) and adapts the content to the screen. To learn more about app templates, see [OutSystems UI Framework App Templates](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/AppTemplates).
 
-![UI Layout](images/responsive-layout.png)
+![Illustration of OutSystems UI responsive layouts for different devices](images/responsive-layout.png "OutSystems UI Responsive Layouts")
 
 On Reactive applications, the OutSystems UI provides the following fully responsive layouts:   
 
@@ -76,7 +76,7 @@ The **LayoutTopMenu** and **LayoutSideMenu** layouts have different settings to 
 
 When an application is open on a mobile device, all the layouts have the same behavior, opening the menu as an overlay on the page content with all the menu items displayed.
 
-![Mobile Layout](images/responsive-mobile-layout.png)
+![Example of a mobile layout with menu overlay in OutSystems UI](images/responsive-mobile-layout.png "Responsive Mobile Layout")
 
 For Native Mobile applications, OutSystems UI provides a layout to use on a tablet, phone, and progressive web applications (PWA). The layout has the following  behaviors to open the menu:
 
@@ -84,7 +84,7 @@ For Native Mobile applications, OutSystems UI provides a layout to use on a tabl
 * **Overlay:** Opens the menu applying an overlay on top of the screen content
 * **Visible:** The menu is always visible
 
-![Native Layout](images/responsive-native-layout.png)
+![Depiction of native mobile application layout behaviors in OutSystems UI](images/responsive-native-layout.png "Responsive Native Layout")
 
 **Note:** On the phone, the layout always has the overlay behavior applied because of the available space on smaller screens, even when the **Expandable** or **Visible** behavior is enabled.
 
@@ -98,11 +98,11 @@ Every app is different. The way your app adapts to a specific device is, therefo
 
 All patterns on OutSystems UI can adapt the UI to the device, using only CSS. However, if your use case has specific scenarios to show or hide content, navigate to another page, or even run client actions, you need a little extra to run different logic according to the device.
 
-![Adaptive Patterns](images/responsive-adaptive-ss.png)
+![Screenshot showcasing various adaptive patterns available in OutSystems UI](images/responsive-adaptive-ss.png "Adaptive Patterns Screenshot")
 
 OutSystems UI provides a set of client-side actions that allow developers to decide which screen areas to hide, how images are placed, or even which screen to navigate to, according to the detected device. You can find the client-side actions on the **Logic** tab, inside the **DeviceDetection** folder.
 
-![Client-side actions](images/responsive-clientside-ss.png)
+![Screenshot of client-side actions for device detection in OutSystems UI](images/responsive-clientside-ss.png "Client-Side Actions Screenshot")
 
 **Available client-side actions:** _GetBrowser, GetDeviceOrientation, GetDeviceType, GetIsTouch, GetOS, IsDesktop, IsTablet, IsPhone, IsWebApp, IsRunningAsPWA, IsLayoutNative, and SetDeviceBreakpoints._
 
@@ -110,61 +110,61 @@ OutSystems UI provides a set of client-side actions that allow developers to dec
 
 OutSytems UI provides a set of structure patterns that allow dividing content in columns that follow the underlying grid. The structure patterns are blocks with specific responsive parameters, which allow the developer to configure how they react on each mobile device. 
 
-![Structure Patterns](images/responsive-structpatt-ss.png)
+![Screenshot displaying responsive structure patterns in OutSystems UI](images/responsive-structpatt-ss.png "Responsive Structure Patterns Screenshot")
 
 Possible values for tablet and phone include the following:
 
 * **Break All:** All columns break. This means each column occupies the total width of the available space:
 
-![Break all columns](images/responsive-breakall.png)
+![Visual representation of the 'Break All' responsive behavior for columns in OutSystems UI](images/responsive-breakall.png "Break All Columns Responsive Behavior")
 
 * **Break First:** Only the first column breaks. This means the first column occupies the total width and the other ones remain side by side:
 
-![Break first column](images/responsive-breakfirst.png)
+![Visual representation of the 'Break First' responsive behavior for columns in OutSystems UI](images/responsive-breakfirst.png "Break First Column Responsive Behavior")
 
 * **Break Middle:** All columns break. When there is an even number of columns, they are divided in half, with the same number of columns on top and bottom. When there is an uneven number of columns, there is always one more column on top than on the bottom:
 
-![Break middle column](images/responsive-breakmiddle.png)
+![Visual representation of the 'Break Middle' responsive behavior for columns in OutSystems UI](images/responsive-breakmiddle.png "Break Middle Columns Responsive Behavior")
 
 * **Break Last:** Only the last column breaks. This means the last column occupies the total width and the other ones remain side by side:
 
-![Break last column](images/responsive-breaklast.png)
+![Visual representation of the 'Break Last' responsive behavior for columns in OutSystems UI](images/responsive-breaklast.png "Break Last Column Responsive Behavior")
 
 * **Break None:** No columns break. This means all columns remain side by side:
 
-![Break no columns](images/responsive-breaknone.png)
+![Visual representation of the 'Break None' responsive behavior for columns in OutSystems UI](images/responsive-breaknone.png "Break None Columns Responsive Behavior")
 
 With OutSystems UI, you can use the platform grid to organize content, however, it has no responsive behavior. To organize content with responsive behavior, use the columns pattern instead, which allows you to configure the responsiveness yourself.
 
 If you want to use the platform grid and add your content using containers with specific columns width, you can use the **DisplayOnDevice** pattern to set your content and the custom structure that will be shown on each device.
 
-![Display on Device pattern](images/responsive-displayondevice-ss.png)
+![Screenshot showing the Display On Device pattern for responsive content in OutSystems UI](images/responsive-displayondevice-ss.png "Display On Device Pattern Screenshot")
 
 ## Application content changes based on devices
 
 OutSystems UI provides a set of actions — IsDesktop, IsTablet, IsPhone, IsWebApp, IsRunningAsPWA — to manage your content or to use in client actions. These actions also work as functions. You can find these client actions on the **Logic** tab, inside the **DeviceDetection** folder.
 
-![Actions as functions](images/responsive-actionfunctions-ss.png)
+![Screenshot of responsive action functions for device-specific content management in OutSystems UI](images/responsive-actionfunctions-ss.png "Responsive Action Functions Screenshot")
 
 You can use actions in the following ways:
 
 * To set values on input parameters:
 
-![Set values on input parameters](images/responsive-setvalues-ss.png)
+![Screenshot demonstrating how to set values on input parameters based on device type in OutSystems UI](images/responsive-setvalues-ss.png "Set Values on Input Parameters Screenshot")
 
-![Set values on input parameters](images/responsive-setvalues2-ss.png)
+![Screenshot showing an example of setting values on input parameters for different devices in OutSystems UI](images/responsive-setvalues2-ss.png "Set Values on Input Parameters Example Screenshot")
 
 * To control the Container’s visibility:
 
-![Control container's visibility](images/responsive-controlcontainer-ss.png)
+![Screenshot illustrating how to control container visibility based on device type in OutSystems UI](images/responsive-controlcontainer-ss.png "Control Container Visibility Screenshot")
 
 * To set conditions (If widget):
 
-![Set conditions](images/responsive-setconditions-ss.png)
+![Screenshot showing how to set conditions in an If widget for responsive design in OutSystems UI](images/responsive-setconditions-ss.png "Set Conditions in If Widget Screenshot")
 
 * To apply logic inside client actions on If conditions:
 
-![Apply logic](images/responsive-applylogic-ss.png)
+![Screenshot of applying logic inside client actions based on device type in OutSystems UI](images/responsive-applylogic-ss.png "Apply Logic in Client Actions Screenshot")
 
 ## Set responsive breakpoints
 
@@ -172,7 +172,7 @@ On the OutSystems UI, there are default device breakpoints that identify **table
 
 To override these breakpoints, there is the  **SetDeviceBreakpoints client action** (on the **Logic** tab, inside the **DeviceDetection** folder) that you can on your **application ready**, setting the new breakpoints to be applied:
 
-![Set responsive breakpoints](images/responsive-breakpoints-ss.png)
+![Screenshot showing how to set custom responsive breakpoints in OutSystems UI](images/responsive-breakpoints-ss.png "Set Responsive Breakpoints Screenshot")
 
 ## Notch support
 

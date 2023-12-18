@@ -37,15 +37,15 @@ The API Key and Endpoint values act as input parameters for the action of the co
 
 1. Go to the [list of Web Services](https://services.azureml.net/webservices) and select the required experiment. Alternatively, select the **Web Services** tab from the menu of the [Azure Machine Learning Web Services homepage](https://services.azureml.net/) and select the required experiment.
 
-    ![](images/ml-connector-image2.png?width=600)
+    ![Screenshot of Azure Machine Learning Web Services list highlighting the selection of a specific experiment](images/ml-connector-image2.png "Azure ML Web Services List")
 
 1. Click on **Use Web Service** to go to the **Consume** tab in the Menu.
 
-    ![](images/ml-connector-image4.png?width=400)
+    ![Screenshot showing the 'Use Web Service' button in the Azure Machine Learning Web Services interface](images/ml-connector-image4.png "Azure ML Use Web Service")
 
 1. Copy the values of the **Primary Key** and the **Request-Response** fields and save them in a document.
 
-    ![](images/ml-connector-image5.png?width=600)
+    ![Screenshot displaying the 'Primary Key' and 'Request-Response' fields with their values in the Azure ML Web Services Consume tab](images/ml-connector-image5.png "Azure ML API Key and Endpoint")
 
 The **Primary Key** value is the API Key and the **Request-Response** value is the Endpoint.
 
@@ -57,19 +57,19 @@ To create data structures from the Request and Response JSON strings, do the fol
 
 1. Click on **Submit Request** to expand the section displaying the JSON strings for **Execution request** and **ExecutionResults**.
 
-    ![](images/ml-connector-image9.png?width=600)
+    ![Screenshot of the Swagger API tab in Azure ML Web Services with the 'Submit Request' section expanded to show JSON strings](images/ml-connector-image9.png "Azure ML Swagger API Tab")
 
 1. In Service Studio, go to the Data tab, right-click the **Structures** folder and select **Add Structure from JSON**.       
 
-    ![](images/ml-connector-image1.png?width=500)
+    ![Screenshot of the OutSystems Service Studio with the 'Add Structure from JSON' option in the Structures folder context menu](images/ml-connector-image1.png "OutSystems Add Structure from JSON")
 
 1. Name the structure and enter the JSON string for **Execution request** in the input box. Delete the empty “Global Parameters” object and click the **Add Structure** button to create the structure.
 
-    ![](images/ml-connector-image3.png?width=600)
+    ![Screenshot of the OutSystems Service Studio showing the process of adding a new structure from a JSON string](images/ml-connector-image3.png "OutSystems New Structure from JSON")
 
 1. Repeat steps 2 and 3 to obtain a structure for the **ExecutionResults** JSON string.
 
-    ![](images/ml-connector-image8.png?width=600)
+    ![Screenshot of the OutSystems Service Studio with the 'ExecutionResults' JSON structure creation interface](images/ml-connector-image8.png "OutSystems ExecutionResults Structure")
 
 ### Step III. Add a reference to the connector in your application
 
@@ -89,13 +89,13 @@ To use the connector in your logic flow, do the following:
 
     * Request_Example is the **Execution request** structure with the values of Var1 appended to it. This acts as an input parameter of the connector.
 
-    ![](images/ml-connector-image6.png?width=600)
+    ![Screenshot of the OutSystems Service Studio logic flow with local variables TestValues and Request_Example](images/ml-connector-image6.png "OutSystems Logic Flow Variables")
 
 1. Drag TestValues to the flow and fill in the required fields.
 
 1. Drag a **ListAppend** action to the flow and select the values of the required input parameters from the dropdown.
 
-    ![](images/ml-connector-image7.png?width=600)
+    ![Screenshot of the OutSystems Service Studio logic flow with the 'ListAppend' action being configured](images/ml-connector-image7.png "OutSystems ListAppend Action")
 
 1. Add the **JSON Serialize** action to the flow to serialize the **Execution request** structure to a JSON string.
 

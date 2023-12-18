@@ -32,7 +32,7 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 
     The Accordion widget is displayed.
 
-    ![Accordion widget](<images/accordion-widget-ss.png>)
+    ![Screenshot of the Accordion widget in the Service Studio toolbox](images/accordion-widget-ss.png "Accordion Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -46,19 +46,19 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 
 1. From the Toolbox, drag the Accordion widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](<images/accordion-dragwidget-ss.png>)
+    ![Dragging the Accordion widget from the toolbox into the main content area of the application screen](images/accordion-dragwidget-ss.png "Dragging Accordion Widget to Screen")
 
     **Note:** By default, the Accordion widget contains 3 **AccordionItem** widgets. You can add or delete Accordion Items as required.
 
 1. Add the relevant content to the **AccordionItem** placeholders. In this example, some FAQs are added.
   
-    ![Add content to placeholders](<images/accordion-addcontent-ss.png>)
+    ![Adding FAQ content to AccordionItem placeholders in Service Studio](images/accordion-addcontent-ss.png "Adding Content to AccordionItem Placeholders")
 
 1. On the **Properties** tab, you can customize the Accordion's look and feel by setting any of the (optional) properties.
 
-    ![Set relevant Accordion properties](<images/accordion-properties-ss.png>)
+    ![Setting properties of the Accordion widget in Service Studio](images/accordion-properties-ss.png "Accordion Properties")
 
-    ![Set relevant Accordion Item properties](<images/accordion-properties-item-ss.png>)
+    ![Setting properties for an individual AccordionItem in Service Studio](images/accordion-properties-item-ss.png "Accordion Item Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

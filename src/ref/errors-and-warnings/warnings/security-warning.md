@@ -4,8 +4,8 @@ guid: 2dd8aae1-92e8-4901-a1d4-95e98c968ae7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=846%3A1646&mode=design&t=Ix2yojgoXorQvo4C-1
+summary: The article warns against exposing database operations on the client side and public Server Actions without authentication, and recommends server-side validation and access control
 ---
-
 # Security Warning
 
 Message
@@ -19,7 +19,7 @@ Recommendation
 
 :   To resolve the warning, create a Server Action that calls the Entity Action, and then use this Server Action on the Client Actions. Keep in mind that you still need to create the server logic to ensure that your data is valid before saving. Here's an example of a Server Action calling the Entity Action:
 
-: ![Create a server action](images/security-warning-1-ss.png)
+: ![Screenshot illustrating how to create a Server Action to call an Entity Action for secure database operations](images/security-warning-1-ss.png "Server Action Creation Example")
 
 ---
 
@@ -42,5 +42,5 @@ Recommendation
 
 :    * Redesign your logic so that the screen doesn’t fetch data from sources with sensitive data. 
 
-:    ![Uncheck Anonymous checkbox](images/security-warning-2-ss.png)
+:    ![Screenshot showing the process of unchecking the Anonymous checkbox to convert a screen to a Registered screen for enhanced security](images/security-warning-2-ss.png "Anonymous Role Removal Example")
 

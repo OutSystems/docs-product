@@ -24,7 +24,7 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
 
     The Lightbox Image widget is displayed.
 
-    ![](images/lightboxmob-image-1.png)
+    ![Screenshot of the Lightbox Image widget in the Service Studio toolbox](images/lightboxmob-image-1.png "Lightbox Image Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,13 +38,13 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
 
 1. From the Toolbox, drag the Lightbox Image widget into the Main Content area of your application's screen.
 
-      ![](images/lightboxmob-image-2.png)
+      ![Illustration of dragging the Lightbox Image widget into the main content area of an application screen](images/lightboxmob-image-2.png "Dragging Lightbox Image Widget into Main Content Area")
 
       By default, the Lightbox Image widget contains an Image placeholder. You can add as many images as required by dragging the Image widget from the Toolbox into the Lightbox Image widget.
 
 1. Select the **Image** placeholder and on the **Properties** tab, from the **Image** drop-down, select or import the thumbnail image you want to display. In this example, we use the sample OutSystems UI Images.
     
-    ![](images/lightboxmob-image-3.png)
+    ![Example of selecting an image for the Image placeholder in the Lightbox Image widget properties tab](images/lightboxmob-image-3.png "Setting the Image Placeholder Properties")
 
     Note: In this example, the image property is set to **Local Image**. You can also choose [External URL or Binary Data](../../../image/display-image.md).
 
@@ -70,4 +70,4 @@ The Lightbox Image UI pattern can be used only with images.
 
 Watch how the [Product Overview sample](https://silkui.outsystems.com/Samples_Mobile.aspx#Mobile_Details-Samples_ProductOverview) uses the Lightbox Image UI Pattern:
 
-![](images/Sample_LightBoxImage.gif)
+![Animated GIF showing the Product Overview sample application using the Lightbox Image UI Pattern](images/Sample_LightBoxImage.gif "Product Overview Sample Using Lightbox Image UI Pattern")

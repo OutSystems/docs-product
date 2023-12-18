@@ -18,8 +18,8 @@ To publish a Solution in an Environment follow these steps:
 1. Select **Choose File** and select the **Case Management Framework.osp** file.
 1. Select **1-Click Publish**.
 
-![](images/deploy-apps-sc-6.png)
+![Service Center console showing the process of uploading and publishing a solution in an environment](images/deploy-apps-sc-6.png "Uploading and Publishing a Solution")
 
 Validate if the Solution is successfully published by checking for a **Done: The solution was successfully published.** message.
 
-![](images/deploy-apps-sc-7.png)
+![Confirmation message indicating successful publication of the solution in Service Center](images/deploy-apps-sc-7.png "Successful Solution Publication Confirmation")

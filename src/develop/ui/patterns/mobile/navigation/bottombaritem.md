@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Bottom Bar Item UI Pattern to provide access to a bottom navigation drawer and up to four actions, including the floating action button. Main pieces of core functionality are made available with one tap while allowing rapid switching between features.
 
-![](<images/bottombaritem-1-ss.png>)
+![Screenshot of the Bottom Bar Item UI Pattern in Service Studio](images/bottombaritem-1-ss.png "Bottom Bar Item in Service Studio")
 
 **How to use the Bottom Bar Item UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Bottom Bar Item UI Pattern to provide access to a bottom navigat
   
     The Bottom Bar Item widget is displayed.
 
-    ![](<images/bottombaritem-3-ss.png>)
+    ![Image showing the Bottom Bar Item widget in the Service Studio Toolbox](images/bottombaritem-3-ss.png "Bottom Bar Item Widget in Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,19 +40,19 @@ You can use the Bottom Bar Item UI Pattern to provide access to a bottom navigat
 
 1. From the Toolbox, drag the Bottom Bar Item  widget into the Bottom placeholder area of your application's screen.
 
-    ![](<images/bottombaritem-2-ss.png>)
+    ![Demonstration of dragging the Bottom Bar Item widget into the Bottom placeholder in Service Studio](images/bottombaritem-2-ss.png "Dragging Bottom Bar Item to Placeholder")
 
     By default, the Bottom Bar Item contains Icon and Text placeholders. You can add as many Bottom Bar Items as required.
 
     In this example, we add another three more Bottom Bar Items.
 
-    ![](<images/bottombaritem-4-ss.png>)
+    ![Example of multiple Bottom Bar Items added to the bottom navigation drawer in Service Studio](images/bottombaritem-4-ss.png "Multiple Bottom Bar Items Added")
 
 1. For each of the Bottom Bar Items, add the relevant content.
 
     In this example we add linked icons and linked text to each of placeholders.
 
-    ![](<images/bottombaritem-5-ss.png>)
+    ![Screenshot showing linked icons and text added to each Bottom Bar Item placeholder in Service Studio](images/bottombaritem-5-ss.png "Adding Content to Bottom Bar Items")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

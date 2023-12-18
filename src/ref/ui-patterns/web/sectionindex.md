@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/sectionindex-4-diag.png>)
+![Diagram illustrating the layout and classes of the Section Index UI Pattern in Traditional Web Apps](images/sectionindex-4-diag.png "Section Index Layout Diagram")
 
 ## CSS selectors
 

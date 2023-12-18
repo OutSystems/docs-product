@@ -28,7 +28,7 @@ In the cross-platform Service Studio, to create a Record for a variable, you nee
 1. Optionally, change the **Data Type** and the **Name** of the attribute.
 1. In the variable context menu you can add more attributes to the Record.
 
-    ![Create a record for a variable](images/structure-create-use-7-ss.gif)
+    ![Animated GIF showing the process of creating a record for a variable in Service Studio](images/structure-create-use-7-ss.gif "Creating a Record for a Variable in Service Studio")
 
 In the Windows-only Service Studio, to create a Record for a variable, you need to:
 1. Create a new variable in the element where the Record is to be used.
@@ -44,14 +44,14 @@ Since the data type that we will need to assign to the output parameter will onl
 1. Expose a REST API, name it Place and create the method GetPlace.
 1. Add an input parameter to the GetPlace method named  `PlaceId`. Ensure the **Data Type** is **Place Identifier**.
 
-    ![Place REST API with an input parameter](images/structure-create-use-3-ss.png)
+    ![Screenshot of the Place REST API with an input parameter named PlaceId in Service Studio](images/structure-create-use-3-ss.png "Place REST API with Input Parameter")
 
 1. To define the logic of the GetPlace method, in the element tree, double-click **GetPlace**.
 1. Drag an aggregate from the toolbox into the action flow.
 1. Add the Place and Review entities to the aggregate.
 1. Filter the aggregate ensuring the Place.Id attribute matches the PlaceId parameter. Add a filter condition with `Place.Id = PlaceId`.
 
-    ![Logic of the GetPlace method](images/structure-create-use-4-ss.png)
+    ![Screenshot showing the logic of the GetPlace method with an aggregate filter condition in Service Studio](images/structure-create-use-4-ss.png "Logic of the GetPlace Method")
 
 1. In the GetPlace method, add an output parameter called `PlaceInformation`.
 1. Set the PlaceInformation **Data Type** to **Record...**. A Text attribute is added to the variable.
@@ -59,7 +59,7 @@ Since the data type that we will need to assign to the output parameter will onl
 1. Add a new attribute from the PlaceInformation context menu.
 1. Change the **Data Type** of the attribute to the **Review** entity and its **Name** to `Review`.
 
-    ![Output parameter with a record](images/structure-create-use-5-ss.png)
+    ![Screenshot of the output parameter configuration using a record in the GetPlace method in Service Studio](images/structure-create-use-5-ss.png "Output Parameter with a Record")
 
     <div class="info" markdown="1">
 
@@ -71,7 +71,7 @@ Since the data type that we will need to assign to the output parameter will onl
     1. From the toolbox, drag an Assign after the aggregate.
     1. Add an assignment by setting the **Variable** to `PlaceInformation` and the **Value** to `GetPlaceById.List.Current`.
 
-    ![Assign values to the output parameter](images/structure-create-use-6-ss.png)
+    ![Screenshot showing how to assign values to the output parameter PlaceInformation in the GetPlace method in Service Studio](images/structure-create-use-6-ss.png "Assign Values to the Output Parameter")
 
 ## Example using a Structure
 
@@ -87,7 +87,7 @@ Since we're going to reuse the user information in another action of the applica
     * `Name` of type Text
     * `Photo` of type Binary Data
 
-    ![Create and Use Structured Data](images/structure-create-use-1-ss.png)
+    ![Screenshot of creating and using structured data with a new structure named UserInfo in Service Studio](images/structure-create-use-1-ss.png "Creating and Using Structured Data")
 
 1. Expose a REST API named User and create the method GetUser.
 
@@ -102,4 +102,4 @@ Since we're going to reuse the user information in another action of the applica
 1. Since the data type returned by the aggregate is different from the output variable, below the assignment in the properties of the Assign node, map the attributes from the aggregate output to the output parameter attributes.
 
 
-![Create and Use Structured Data](images/structure-create-use-2-ss.png)
+![Screenshot showing the mapping of aggregate output to the attributes of the output parameter UserInformation in Service Studio](images/structure-create-use-2-ss.png "Mapping Aggregate Output to Output Parameter Attributes")

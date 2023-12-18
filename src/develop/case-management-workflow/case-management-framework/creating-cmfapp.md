@@ -37,7 +37,7 @@ Before you proceed, make sure that:
 
 1. Start **from an app** and click **Next**.
 
-![From an App](images/starter-app-fromapp-ss.png)
+![Screenshot showing the selection of Case Management App Starter in Service Studio](images/starter-app-fromapp-ss.png "Selecting the Case Management App Starter")
 
 1. Select **Case Management App Starter** from the list and click **Install**.
 
@@ -45,7 +45,7 @@ Before you proceed, make sure that:
 
 1. Click **EDIT** and adjust the name of your app to your preference. For the purposes of this article this will be referred to as `<app-name>`.
 
-![Edit App Name](images/starter-app-rename-ss.png)
+![Screenshot illustrating how to rename the app to a preferred name in Service Studio](images/starter-app-rename-ss.png "Renaming the App in Service Studio")
 
 1. If desired, you can also change or delete the description and icon for the app.
 
@@ -94,7 +94,7 @@ The **CaseDefinitionConfiguration** static entity holds the case definition for 
 
 1. Define any other attribute values to your preference.
 
-![Case Definition Static Entity](images/starter-app-cdrec-ss.png)
+![Screenshot of the CaseDefinitionConfiguration record configuration in Service Studio](images/starter-app-cdrec-ss.png "Configuring the CaseDefinitionConfiguration Record")
 
 ### CaseStatusConfiguration
 
@@ -148,7 +148,7 @@ The Setup server action has everything ready to bootstrap the app to CMf. This a
 
     </div>
 
-![Timer Setup](images/starter-app-timer-ss.png)
+![Screenshot displaying the Timer_SetupApplication settings in Service Studio](images/starter-app-timer-ss.png "Setting up the Timer_SetupApplication")
 
 1. Click **1-Click Publish** to publish the module.
 
@@ -170,7 +170,7 @@ You now need to reconfigure some of the module’s dependencies, names, and also
 
 1. Click **1-Click Publish** to publish the module.
 
-![Timer Setup](images/starter-app-req-proc-ss.png)
+![Screenshot showing the reconfiguration of the Workflow module dependencies in Service Studio](images/starter-app-req-proc-ss.png "Reconfiguring the Workflow Module Dependencies")
 
 ### Customizing the case workflow
 

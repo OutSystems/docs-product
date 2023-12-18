@@ -34,7 +34,7 @@ This example demonstrates how to highlight OutSystems office locations around th
 
     The Map widget is displayed.
 
-    ![Map in the Service Studio toolbar](<images/map-widget-ss.png>)
+    ![Screenshot of the Map widget in the Service Studio toolbar](images/map-widget-ss.png "Map Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -48,25 +48,25 @@ This example demonstrates how to highlight OutSystems office locations around th
 
 1. From the Toolbox, drag the Map widget into the Main Content area of your application's screen.
 
-    ![Drag Map widget onto the screen](<images/map-drag-ss.png>)
+    ![Dragging the Map widget onto the screen in Service Studio](images/map-drag-ss.png "Dragging Map Widget")
 
 1. On the **Properties** tab, enter an API key so that the "For development purposes" watermark is removed. 
 
-    ![Enter API key](<images/map-apikey-ss.png>)
+    ![Entering the API key in the Properties tab for the Map widget](images/map-apikey-ss.png "Entering API Key")
 
 1. Create an aggregate (GetOffices) that fetches the office location data.
 
-    ![Create an aggregate](<images/map-aggregate-ss.png>)
+    ![Creating an aggregate to fetch office location data in Service Studio](images/map-aggregate-ss.png "Creating an Aggregate")
 
 1. Drag the **List** widget onto the **Drag markers here** screen area and on the **Properties** tab, enter the List widget source (the list of offices). 
 
-    ![Drag List widget onto the screen](<images/map-list-ss.png>)
+    ![Dragging the List widget onto the screen area designated for markers](images/map-list-ss.png "List Widget on Screen")
 
 1. Drag the **Marker** block into the **List** widget. On the **Properties** tab, from the **Position** dropdown, select the office address property.
 
     **Note:** Marker blocks can only be added to the Map block. To add markers to a Static Map, you can use the Markers input parameter.
 
-    ![Drag Marker block onto the screen](<images/map-marker-ss.png>)
+    ![Dragging the Marker block into the List widget on the screen](images/map-marker-ss.png "Marker Block on Screen")
 
 1. You can change the Map's look and feel by setting the (Optional) properties on the **Properties** tab.
 
@@ -74,7 +74,7 @@ After following these steps and publishing the module, you can test the componen
 
 **Result**
 
-![Result](<images/map-result.png>)
+![Final result showing the interactive map with markers for OutSystems office locations](images/map-result.png "Map Component Result")
 
 ## Properties
 

@@ -22,13 +22,13 @@ You can configure your applications' Site Properties in the target environment d
 
 The deployment plan wizard enables you to configure the Site Properties of the applications being deployed during the step **Configure application settings**.
 
-![Configure applications settings step](images/configure-settings-during-deploy-2.png)
+![Screenshot of the deployment plan wizard highlighting the 'Configure application settings' step](images/configure-settings-during-deploy-2.png "Configure Application Settings During Deployment")
 
 When deploying applications, after adding the applications to your deployment plan, the deployment plan wizard takes you to the step **Configure application settings**.
 
 If there are application modules in the plan with new Site Properties that were never set in the target environment, you can define in this step the **Effective value** for those Site Properties in the target environment.
 
-![Define the Effective value for Site Properties](images/configure-site-settings-during-deploy-3.png)
+![Interface showing the process of setting effective values for new Site Properties in the deployment plan wizard](images/configure-site-settings-during-deploy-3.png "Defining Effective Values for Site Properties")
 
 In the deployment plan wizard, you can also see and change the existing settings of the applications to deploy. Click the button **All settings** to see the existing settings.
 
@@ -38,7 +38,7 @@ There are some situations when this step is **skipped** or **disabled**:
 
 * The step is **skipped** when there are no new settings to configure. However, if you need to change any existing settings, you can manually go back to **Configure application settings** by clicking the step in the wizard.
 
-    ![Configure applications settings step skipped](images/configure-settings-during-deploy-4.png)
+    ![Illustration of the deployment plan wizard with the 'Configure application settings' step skipped or disabled](images/configure-settings-during-deploy-4.png "Skipping or Disabling Configuration Steps")
 
 * The step is **disabled** when there aren't any settings to configure or the user executing the deployment doesn't have the required permissions.
 

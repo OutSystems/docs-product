@@ -26,7 +26,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Tooltip UI Pattern to dynamically display informative text when a user hovers over, clicks, or taps an on-screen element.
 
-![Example tooltip](<images/tooltip-example.png>)
+![Screenshot showing an example of a Tooltip being used in an application interface](images/tooltip-example.png "Example of a Tooltip in action")
 
 **How to use the Tooltip UI Pattern**
 
@@ -40,7 +40,7 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
   
     The Tooltip widget is displayed.
 
-    ![Tooltip widget](<images/tooltip-widget-ss.png>)
+    ![Image of the Tooltip widget as it appears in the OutSystems Service Studio](images/tooltip-widget-ss.png "Tooltip Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -54,7 +54,7 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 
 1. From the Toolbox, drag the Tooltip widget into the Main Content area of your application's screen.
 
-    ![Drag tooltip widget to screen](<images/tooltip-drag-ss.png>)
+    ![Step-by-step process of dragging the Tooltip widget into the Main Content area of an application screen](images/tooltip-drag-ss.png "Dragging Tooltip Widget to Screen")
 
     By default, the Tooltip widget contains Content and Tooltip placeholders.
 
@@ -62,15 +62,15 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
     
     In this example, we add a **Save** button to the Content placeholder and enter the tooltip text ``Save your details`` in the Tooltip placeholder.
 
-    ![Add content to tooltip](<images/tooltip-content-ss.png>)
+    ![Example of adding a Save button to the Content placeholder and entering tooltip text in the Tooltip placeholder](images/tooltip-content-ss.png "Adding Content to Tooltip")
     
 1. Select the **Save** button and add the relevant **On Click** event.
 
-    ![Add OnClick event to Save button](<images/tooltip-onclick-ss.png>)
+    ![Illustration of selecting the Save button and adding an On Click event in Service Studio](images/tooltip-onclick-ss.png "Adding OnClick Event to Save Button")
 
 1. On the **Properties** tab, from the **Position** dropdown, select where you want the tooltip to appear. In this example we want the tooltip to appear on top of the **Save** button. You can also change the look and feel of the Tooltip by setting the (optional) properties.
 
-    ![Set optional properties](<images/tooltip-properties-ss.png>)
+    ![Image showing how to set optional properties for the Tooltip, including its position and appearance](images/tooltip-properties-ss.png "Setting Optional Properties for Tooltip")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

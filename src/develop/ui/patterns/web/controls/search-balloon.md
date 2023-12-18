@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Search Balloon UI Pattern to provide users with a search field and while the user searches for content, the results are simultaneously updated in a results list.
 
-![](images/search-balloon-demo-browser.png?width=500)
+![Demonstration of the Search Balloon UI Pattern in a browser interface](images/search-balloon-demo-browser.png "Search Balloon Demo")
 
 **How to use the Search Balloon UI Pattern**
 
@@ -28,7 +28,7 @@ In this use case, we create a search balloon for a list of employees.
 
     The Search Balloon widget is displayed.
 
-    ![](images/searchballoon-1-ss.png)
+    ![Search Balloon widget displayed in the OutSystems Service Studio](images/searchballoon-1-ss.png "Search Balloon in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,41 +42,41 @@ In this use case, we create a search balloon for a list of employees.
 
 1. From the Toolbox, drag the Search Balloon widget into the Main Content area of your application's screen.
 
-    ![](images/searchballoon-2-ss.png?width=800)
+    ![Dragging the Search Balloon widget into the Main Content area in Service Studio](images/searchballoon-2-ss.png "Drag Search Balloon Widget")
 
     By default, the Search Balloon widget contains Icon, Input, Actions, and Answers placeholders.
 
 1. Select the Input widget, and on the **Properties** tab, from the **Variable** drop-down, select **New Local Variable**.
 
-    ![](images/searchballoon-3-ss.png)
+    ![Configuring the Input widget properties for the Search Balloon in Service Studio](images/searchballoon-3-ss.png "Configure Input Widget")
 
 1. Enter a name for the variable. In this example, we enter `SearchText`.
 
-    ![](images/searchballoon-4-ss.png)
+    ![Setting a new local variable for the Search Balloon's Input widget in Service Studio](images/searchballoon-4-ss.png "Set Local Variable")
 
 1. Add a preparation action by right-clicking your screen name, and selecting **Add Preparation**.
 
-    ![](images/searchballoon-5-ss.png)
+    ![Adding a preparation action to the screen for the Search Balloon in Service Studio](images/searchballoon-5-ss.png "Add Preparation Action")
 
 1. Drag the relevant data to the preparation flow. In this example, we drag an **Employee** entity to the preparation flow.
 
-    ![](images/searchballoon-6-ss.png)
+    ![Dragging the Employee entity to the preparation flow for the Search Balloon in Service Studio](images/searchballoon-6-ss.png "Data Preparation Flow")
 
 1. Select the **ListRecords1** widget, and on the **Properties** tab, from the **Source Record List**  drop-down, select the relevant source list. In this example, we select **GetEmployees.List**. Additionally, we enter `1` in the **Start Index** field.
 
-    ![](images/searchballoon-8-ss.png)
+    ![Selecting the source record list for the ListRecords widget in the Search Balloon setup](images/searchballoon-8-ss.png "ListRecords Widget Configuration")
 
 1. Select the **Input** widget, and on the **Properties** tab, from the **Destination** drop-down, select **New Screen Action**.
 
-    ![](images/searchballoon-9-ss.png)
+    ![Setting the destination for the Input widget in the Search Balloon configuration](images/searchballoon-9-ss.png "Input Widget Destination")
 
 1. Drag a **Refresh Data** node to the OnChange action flow, and in the **Select Data Source** window, select **GetEmployees** and then click **OK**.
 
-    ![](images/searchballoon-10-ss.png)
+    ![Adding a Refresh Data node to the OnChange action flow for the Search Balloon](images/searchballoon-10-ss.png "Refresh Data Node")
 
 1. Drag an **Ajax Refresh** node to the OnChange action flow, and in the **Select Widget** window, navigate and select the relevant widget. In this example, we select **ListRecords1** and click **OK**.
 
-    ![](images/searchballoon-11-ss.png?width=800)
+    ![Dragging an Ajax Refresh node to the OnChange action flow for the Search Balloon](images/searchballoon-11-ss.png "Ajax Refresh Node")
 
 1. Double-click the Preparation action and then double-click the **GetEmployees** aggregate.
 
@@ -86,11 +86,11 @@ In this use case, we create a search balloon for a list of employees.
 
     This forces the aggregate to return all records that have **SearchText** in the employee's name.
 
-    ![](images/searchballoon-12-ss.png)
+    ![Setting a filter condition in the GetEmployees aggregate for the Search Balloon](images/searchballoon-12-ss.png "Set Aggregate Filter")
 
 1. Double-click your screen name, select the Search Balloon Widget, right-click the Text placeholder, and select **Delete**.
 
-    ![](images/searchballoon-13-ss.png)
+    ![Deleting the Text placeholder from the Search Balloon Widget in Service Studio](images/searchballoon-13-ss.png "Delete Text Placeholder")
 
 1. Drag an Expression Widget to the list and enter the relevant expression value, and click **Done**. In this example, we enter the following:
 
@@ -98,7 +98,7 @@ In this use case, we create a search balloon for a list of employees.
 
     This filters the list to show the employees' name.
 
-    ![](images/searchballoon-14-ss.png)
+    ![Adding an Expression Widget to the Search Balloon to display employee names](images/searchballoon-14-ss.png "Add Expression Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

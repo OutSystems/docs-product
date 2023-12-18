@@ -33,7 +33,7 @@ Besides the System Roles already provided, you can define your own custom Roles 
 
 Granting and revoking Roles during runtime (using the Grant&lt;Role name&gt;Role and Revoke&lt;Role name&gt;Role actions) can be persistent across multiple sessions or only be active for a single session. You can only change this setting for Traditional Web Apps.
 
-![Role persistency](images/role-ispersistent-ss.png)
+![Screenshot showing the 'Is Persistent' property settings for Roles in Service Studio](images/role-ispersistent-ss.png "Role Persistence Setting in Service Studio")
 
 * **Persistent:** The runtime granting or revoking of Roles is stored in the database and is kept in between login sessions. Set the `Is Persistent` property of the Role to `Yes`.
 
@@ -59,7 +59,7 @@ Before using User_Role and User_Effective_Role in your app, add them as dependen
 1. In the producers list, select **(System)**.
 1. In the public elements list, select **User_Role** and **User_Effective_Role**.
 
-![Entities with Role information in OutSystems](images/roles-metamodel-ss.png)
+![Screenshot of the OutSystems metamodel displaying User_Role and User_Effective_Role entities](images/roles-metamodel-ss.png "User Roles in the OutSystems Metamodel")
 
 <div class="info" markdown="1">
 

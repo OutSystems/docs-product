@@ -14,7 +14,7 @@ Your [Workflow Builder](http://workflowbuilder.outsystems.com/) design journey s
 
 As a Workflow Builder app developer, the first step to do is to click **Create app** to enter the initial screen.
 
-![Creating a Workflow Builder app from scratch or templates](images/wfb-templates-screen.png)
+![Screenshot of the Workflow Builder templates selection screen with options for Blank Canvas, Project Request, Approval Request, and Issue Report](images/wfb-templates-screen.png "Workflow Builder Templates Screen")
 
 On this screen choose from one of the following options:
 

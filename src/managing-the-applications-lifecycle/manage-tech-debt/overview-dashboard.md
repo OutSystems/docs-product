@@ -22,7 +22,7 @@ The **Infrastructure overview** dashboard gives architects and development team 
 * How is the technical debt distributed
 * What has been the evolution
 
-![overview dashboard](images/overview-dashboard-ams.png)
+![Screenshot of the Infrastructure Overview Dashboard in AI Mentor Studio showing various metrics related to technical debt](images/overview-dashboard-ams.png "Infrastructure Overview Dashboard")
 
 Using the Infrastructure overview dashboard, you can compare the different charts through a specific period of time. This enables you to check at the same time both **status** and **progress** within the several areas that contribute to your technical debt.
 
@@ -66,7 +66,7 @@ In the Infrastructure overview dashboard you can see the following information:
 
 The **Technical debt** overall card gives you a first glimpse of how the technical debt is evolving in your applications through the main development slots (2 weeks, 1 month, and 3 months).
 
-![technical debt overall evolution](images/overview-overall-card-ams.png)
+![Card visualizing the overall evolution of technical debt over main development slots in the Infrastructure Overview Dashboard](images/overview-overall-card-ams.png "Technical Debt Overall Card")
 
 ### Check the technical debt distribution by category { #category}
 
@@ -74,7 +74,7 @@ In the **Technical debt per category** list you can see the distribution (%) of 
 
 Here you can assess which are the categories contributing more to your technical debt, and correlate that percentage with the number (absolute values) of the findings in each category.
 
-![technical debt per category](images/overview-debt-per-category-ams.png)
+![List showing the percentage distribution of technical debt by code pattern category in the Infrastructure Overview Dashboard](images/overview-debt-per-category-ams.png "Technical Debt Distribution by Category")
 
 ### Check the top code patterns with highest technical debt { #top-patterns }
 
@@ -86,7 +86,7 @@ The **Top code patterns with highest technical debt** graph shows an hierarchica
 
 Here you can quickly perceive which code patterns and categories are the largest contributors to your technical debt.
 
-![top code patterns](images/overview-top-patterns-ams.png)
+![Hierarchical graph displaying the top code patterns contributing to technical debt in the Infrastructure Overview Dashboard](images/overview-top-patterns-ams.png "Top Code Patterns with Highest Technical Debt")
 
 When you mouse hover a code pattern, you can see the corresponding number of findings.
 
@@ -102,7 +102,7 @@ This chart enables you to:
 
 * Identify the number of Open findings per day, by category, and the changes in solved and new findings. This way you can easily identify what findings you added to your tech debt (New), or the findings you managed to solve (Solved), and correlate this with the technical debt variation.
 
-![AI Mentor Studio variation vs. findings chart](images/overview-variation-ams.png)
+![Chart showing the daily variation of technical debt compared to the number of findings in the Infrastructure Overview Dashboard](images/overview-variation-ams.png "Technical Debt Variation vs. Number of Findings")
 
 <div class="info" markdown="1">
 
@@ -124,4 +124,4 @@ For example, for a specific date:
 
 The **Apps by highest technical debt** chart shows a ranking of the applications that contribute more to your technical debt. On each application, you can identify the modules contributing to that technical debt.
 
-![apps by highest technical debt](images/overview-apps-by-highest-ams.png)
+![Chart ranking applications by their contribution to technical debt in the Infrastructure Overview Dashboard](images/overview-apps-by-highest-ams.png "Applications by Highest Technical Debt")

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Animate UI Pattern to create animations within your app. This UI pattern allows you to emphasize elements as they appear on screen which enhances the overall usability of the app.
 
-![](<images/animate-10-ss.png>)
+![Screenshot of Animate UI Pattern in OutSystems Service Studio](images/animate-10-ss.png "Animate UI Pattern in Service Studio")
 
 **How to use the Animate UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Animate UI Pattern to create animations within your app. This UI
 
     The Animate widget is displayed.
 
-    ![](<images/animate-11-ss.png>)
+    ![Service Studio interface showing how to add Animate widget dependency](images/animate-11-ss.png "Adding Animate Widget Dependency")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,17 +40,17 @@ You can use the Animate UI Pattern to create animations within your app. This UI
 
 1. From the Toolbox, drag the Animate widget into the Main Content area of your application's screen.
 
-    ![](<images/animate-1-ss.png>)
+    ![Dragging the Animate widget into the Main Content area of an OutSystems application screen](images/animate-1-ss.png "Dragging Animate Widget to Main Content")
 
 1. Add the content you want to animate to Animate widget.
 
     In this example, we add an image by dragging the Image widget into Animate widget and selecting an image from the sample OutSystems UI images.
 
-    ![](<images/animate-12-ss.png>)
+    ![Adding an image to the Animate widget in OutSystems Service Studio](images/animate-12-ss.png "Adding Content to Animate Widget")
 
 1. Select the Animate widget, and on the **Properties** tab, set the relevant properties, for example, where you want the animation to enter and leave the screen and at what speed.
 
-    ![](<images/animate-2-ss.png>)
+    ![OutSystems Service Studio Properties tab for setting Animate widget properties](images/animate-2-ss.png "Setting Animate Widget Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 When designing your UI, OutSystems provides you with various different ways to allow users input information. 
 
-![Inputs diagram](images/inputs-diag.png)
+![Diagram illustrating different input options available in OutSystems for user interface design](images/inputs-diag.png "Input Options Diagram")
 
 The following is a list of the different input options available:
 

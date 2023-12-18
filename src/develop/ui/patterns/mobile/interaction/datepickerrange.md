@@ -24,7 +24,7 @@ In this example, the user selects a range of dates from the calendar. The dates 
 
     The Date Picker Range widget is displayed.
 
-    ![Date Picker Range widget](<images/datepickerrange-widget-ss.png>)
+    ![Screenshot of the Date Picker Range widget in OutSystems Service Studio](images/datepickerrange-widget-ss.png "Date Picker Range Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,46 +40,46 @@ In this example, the user selects a range of dates from the calendar. The dates 
 
     By default, the Date Picker Range contains an **Input** widget (type Text).
 
-    ![Drag the widget to the screen](<images/datepickerrange-drag-ss.png>)
+    ![Dragging the Date Picker Range widget into the Main Content area of an application's screen in Service Studio](images/datepickerrange-drag-ss.png "Dragging Date Picker Range Widget to Screen")
 
 1. Create a variable by selecting the **Input** widget, and on the **Properties** tab, select **New Local Variable** from the **Variable** dropdown.
 
     This variable stores any value entered into or received by the Input widget.
 
-    ![Create a new variable](<images/datepickerrange-inputvar-ss.png>)
+    ![Creating a new local variable for the Input widget in the Date Picker Range properties tab](images/datepickerrange-inputvar-ss.png "Creating a New Variable for Input Widget")
 
 1. Enter a name for the variable (in this example **DateVar**) and select **Date** as the **Data Type**.
 
-    ![Enter variable name and data type](<images/datepickerrange-datevar-ss.png>)
+    ![Entering a name for the new variable and selecting Date as the data type in Service Studio](images/datepickerrange-datevar-ss.png "Naming Variable and Selecting Data Type")
 
 1. Right-click your main screen and add 2 local variables (one to store the start date and one to store the end date selected by the user).
 
     This variable stores the date selected by the user.
 
-    ![Add another local variable](<images/datepickerrange-addvar-ss.png>)
+    ![Adding two new local variables to store the start date and end date selected by the user in Service Studio](images/datepickerrange-addvar-ss.png "Adding Local Variables for Start and End Dates")
 
 1. Enter a name for the variables (in this example **PickedStartDate** and **PickedEndDate**) and select **Date** as the **Data Type**.
 
-    ![Enter variable name and data type](<images/datepickerrange-pickedstart-pickedend-ss.png>)
+    ![Entering names for the start and end date variables and selecting Date as the data type in Service Studio](images/datepickerrange-pickedstart-pickedend-ss.png "Naming Start and End Date Variables")
    
 
 1. To create an **OnSelect** event for the Date Picker Range, on the **Properties** tab, from the **Handler** dropdown, select New **Client Action**.
 
-    ![Create onSelect event for Date Picker Range](<images/datepickerrange-handler-ss.png>)
+    ![Creating an OnSelect event for the Date Picker Range by selecting a new client action in the properties tab](images/datepickerrange-handler-ss.png "Creating OnSelect Event for Date Picker Range")
 
 1. To access the date range selected by the user, create an **Assign** and set the **PickedStartDate** to **SelectedStartDate** and **PickedEndDate** to **SelectedEndDate**.
 
-    ![Add assign and variable value](<images/datepickerrange-assigndate-ss.png>)
+    ![Assigning the PickedStartDate and PickedEndDate variables to the selected start and end dates in Service Studio](images/datepickerrange-assigndate-ss.png "Assigning Variable Values for Selected Dates")
 
 1. You can configure the Date Picker Range by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 
-    ![Set properties](<images/datepickerrange-properties-ss.png>)
+    ![Setting optional properties for the Date Picker Range in the properties tab of Service Studio](images/datepickerrange-properties-ss.png "Configuring Date Picker Range Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 **Result**
 
-![Date Picker Range result](<images/datepickerrange-result.png>)
+![Resulting user interface showing the Date Picker Range in a published application](images/datepickerrange-result.png "Date Picker Range Result")
 
 ## Properties
 

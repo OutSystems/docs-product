@@ -24,7 +24,7 @@ You can use the Section Group UI Pattern to keep the context of the header while
   
     The Section Group widget is displayed.
 
-    ![](<images/sectiongroup-1-ss.png>) 
+    ![Screenshot of the Section Group widget in the Service Studio toolbox](images/sectiongroup-1-ss.png "Section Group Widget in Service Studio") 
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,7 +38,7 @@ You can use the Section Group UI Pattern to keep the context of the header while
 
 1. To From the Toolbox, drag the **Section Group** widget into the **Main Content** area of your application's screen.
 
-    ![](<images/sectiongroup-2-ss.png>)
+    ![Dragging the Section Group widget into the Main Content area in Service Studio](images/sectiongroup-2-ss.png "Dragging Section Group Widget")
 
     By default, the Section Group widget contains 3 Section widgets which contain Title and Content placeholders.
 
@@ -46,19 +46,19 @@ You can use the Section Group UI Pattern to keep the context of the header while
 
     In this example, we add a title to the Title placeholder and some text to the Content placeholder. 
 
-    ![](<images/sectiongroup-3-ss.png?width=800>)
+    ![Adding a title and text to the placeholders in the Section Group widget](images/sectiongroup-3-ss.png "Adding Content to Section Group")
 
 1. On the **Properties** tab, you can customize the Section Group's look and feel by setting any of the (optional) properties.
 
-    ![](<images/sectiongroup-4-ss.png>)
+    ![Properties tab for customizing the Section Group's appearance in Service Studio](images/sectiongroup-4-ss.png "Section Group Properties Tab")
 
     **HasStickyTitles = False**
 
-    ![](<images/sectiongroup-5-ss.png>)
+    ![Preview of the Section Group widget with HasStickyTitles property set to False](images/sectiongroup-5-ss.png "Section Group with Non-sticky Titles")
 
     **HasStickyTitles = True**
 
-    ![](<images/sectiongroup-6-ss.png>)
+    ![Preview of the Section Group widget with HasStickyTitles property set to True](images/sectiongroup-6-ss.png "Section Group with Sticky Titles")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

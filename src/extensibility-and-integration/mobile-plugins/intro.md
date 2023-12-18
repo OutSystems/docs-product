@@ -74,7 +74,7 @@ To install a supported plugin from Forge:
 
 1. In the Forge plugin page, click **INSTALL** and follow the instructions to install the plugin and optionally the demo app that comes with the plugin.
 
-    ![Install plugin from Forge](images/forge-install.png?width=700)
+    ![Screenshot showing the INSTALL button on a Forge plugin page](images/forge-install.png "Forge Plugin Installation")
 
 1. Once the installation finishes, [reference the plugin in your module](#referencing-a-plugin).
 
@@ -96,7 +96,7 @@ Referencing an [installed plugin](#installing-a-plugin) lets you use the plugin 
 
 1. In the plugin elements, in the public elements list, select the elements you want to use in your app. If you're unsure which elements to select, select all by selecting the plugin handle at the top of the list.
 
-    ![Manage Dependencies dialog with all elements selected](images/manage-dependencies-plugin-ss.png?width=700)
+    ![Screenshot of the Manage Dependencies window in OutSystems Service Studio with plugin elements selected](images/manage-dependencies-plugin-ss.png "Service Studio Manage Dependencies")
 
 1. Click **Apply** to confirm adding the plugin to the app.
 

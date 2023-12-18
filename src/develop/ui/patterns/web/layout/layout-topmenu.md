@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 The Layout Top Menu is a pre-existing web block for a fixed top menu and is useful for simple apps, without a complex navigation structure. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app.
 
-![](<images/layouttopmenu-1-ss.png?width=800>)
+![Screenshot of the Layout Top Menu web block in OutSystems UI showing placeholders and widgets for customization](images/layouttopmenu-1-ss.png "Layout Top Menu in OutSystems")
 
 ## Properties
 

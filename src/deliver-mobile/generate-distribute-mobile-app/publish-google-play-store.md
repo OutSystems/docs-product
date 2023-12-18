@@ -42,7 +42,7 @@ To generate an Android build in the Service Studio, perform the following steps:
 
 1. Click on the **Generate Android App** button, or the Android cog icon button if you've already generated a previous Android app.
 
-    ![Configure Android App Menu](images/ss-native-platforms-tab-android2.png)
+    ![Screenshot of the Service Studio showing the Configure Android App Menu with the Generate Android App button highlighted](images/ss-native-platforms-tab-android2.png "Configure Android App Menu in Service Studio")
 
 1. In the **Build type** list, select the **Release** option.
 
@@ -54,7 +54,7 @@ To generate an Android build in the Service Studio, perform the following steps:
 
 1. Click **Generate Android app**.
 
-    ![Configure Android App Settings](images/ss-native_platforms-configure-android-app.png)    
+    ![Screenshot of the Service Studio interface for configuring Android app settings including Build type, App identifier, and Keystore information](images/ss-native_platforms-configure-android-app.png "Configure Android App Settings in Service Studio")    
 
 #### Service Center
 
@@ -64,11 +64,11 @@ To generate an Android build in the Service Studio, perform the following steps:
 
 1. Go to **Factory**, click on the **Applications** tab, and open your application from the applications list.
 
-    ![Service Center Factory Application Menu](images/outsystems-service-center-factory-applications-menu.png)
+    ![Screenshot of the OutSystems Service Center showing the Factory Applications menu with the Applications tab selected](images/outsystems-service-center-factory-applications-menu.png "Service Center Factory Application Menu")
 
 1. Select the **Distribute** tab and click on the **Configure** link for the Android entry in the **Native Platforms** section.
 
-    ![Service Center Factory Application Configure Android](images/outsystems-service-center-factory-native-platform-tab-android.png?width=500)
+    ![Screenshot of the OutSystems Service Center's Native Platforms section with the Configure link for Android highlighted](images/outsystems-service-center-factory-native-platform-tab-android.png "Service Center Factory Application Configure Android")
 
 1. In the **Build type** drop-down menu, select the **Release** option.
 
@@ -78,17 +78,17 @@ To generate an Android build in the Service Studio, perform the following steps:
 
 1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
 
-    ![Service Center Factory Application Android Settings](images/sc-configure-android-settings.png?width=500)
+    ![Screenshot of the Android settings in the Service Center with options for Build type, App identifier, and Keystore configuration](images/sc-configure-android-settings.png "Service Center Factory Application Android Settings")
 
 1. Click **Save** to save your settings.
 
 1. Click **Save and Generate** and wait a few moments while the app is being generated.
 
-    ![Service Center Factory Application Generate](images/sc-select-mabs-version.png)
+    ![Screenshot of the Service Center showing the Save and Generate button for creating an Android build of the mobile app](images/sc-select-mabs-version.png "Service Center Factory Application Generate")
 
 1. After the app is generated, click the **download** icon near the version information to download the Android build.
 
-    ![Service Center Factory Application Download](images/outsystems-service-center-factory-native-platform-download-android.png)
+    ![Screenshot of the Service Center with the download icon for the generated Android build near the version information](images/outsystems-service-center-factory-native-platform-download-android.png "Service Center Factory Application Download")
 
 ## Distribute the Mobile App through the Google Play store
 

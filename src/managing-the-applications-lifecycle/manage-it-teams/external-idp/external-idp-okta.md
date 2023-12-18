@@ -24,14 +24,14 @@ To configure Okta authentication, follow these steps:
 
 1. Go to **Applications** > **Applications** and click **Create App Integration**.
 
-    ![Click create app integration](images/create-app-ok.png)
+    ![Screenshot of the Okta portal showing the 'Create App Integration' button](images/create-app-ok.png "Creating an App Integration in Okta")
 
 1. On the **Create a new app integration** screen, select the following options and click **Next**.
 
     * **Sign-in method**: OIDC - OpenID Connect
     * **Application type**: Web Application
 
-    ![Click sign-in method and app type](images/select-app-type-ok.png)
+    ![Screenshot of Okta's 'Create a new app integration' screen with 'OIDC - OpenID Connect' and 'Web Application' selected](images/select-app-type-ok.png "Selecting Application Type in Okta")
 
 1. Complete the configuration with the following details and click **Save**.
 
@@ -52,7 +52,7 @@ To configure Okta authentication, follow these steps:
 
     * **Controlled access**: Select the option that suits your requirements
 
-        ![Enter configuration details](images/config-consoles-ok.png)
+        ![Screenshot detailing the configuration options for OutSystems Consoles app integration in Okta](images/config-consoles-ok.png "Configuring OutSystems Consoles in Okta")
 
 1. From the **OutSystems Consoles** application integration screen, copy the **Client ID** and the **Client Secret** details.
 
@@ -62,7 +62,7 @@ To configure Okta authentication, follow these steps:
 
     </div>
 
-    ![Copy client id and client secret](images/client-cred-ok.png)
+    ![Screenshot showing the 'Client ID' and 'Client Secret' for the OutSystems Consoles application in Okta](images/client-cred-ok.png "Client Credentials for OutSystems Consoles")
 
 ## Create an application in the Okta portal for the OutSystems Development Tools (Service Studio and Integration Studio).
 
@@ -74,7 +74,7 @@ To configure Okta authentication, follow these steps:
 
     * **Application type**: Native Application
 
-    ![Select OIDC and Native app](images/native-ok.png)
+    ![Screenshot of Okta's 'Create a new app integration' screen with 'OIDC - OpenID Connect' and 'Native Application' selected](images/native-ok.png "Selecting Native Application Type in Okta")
 
 1. Complete the configuration details with the following details and click **Save**.
 
@@ -114,13 +114,13 @@ To configure Okta authentication, follow these steps:
 
     * **Controlled access**: Select the option that suits your requirements
 
-    ![Enter configuration details](images/config-tools-ok.png)
+    ![Screenshot detailing the configuration options for OutSystems Development Tools app integration in Okta](images/config-tools-ok.png "Configuring OutSystems Development Tools in Okta")
 
 1. From the **OutSystems Development Tools** app integration screen copy the **Client ID**.
 
     **Note**: You’ll need this information later when you configure the provider in Lifetime.
 
-    ![Copy Client Id](images/client-id-ok.png)
+    ![Screenshot showing the 'Client ID' for the OutSystems Development Tools application in Okta](images/client-id-ok.png "Client ID for OutSystems Development Tools")
 
 ## Activate Okta configuration
 
@@ -130,7 +130,7 @@ To finalize and activate the Okta configuration for both Consoles and Developmen
 
     The server settings are displayed.
 
-    ![URI metadata](images/metadata-ok.png) 
+    ![Screenshot of the Okta Authorization Server settings displaying the 'Metadata URI' link](images/metadata-ok.png "Okta Authorization Server Metadata") 
 
 1. Copy the **Metadata URI** link.
 

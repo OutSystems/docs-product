@@ -22,7 +22,7 @@ The sitemap.xml and robots.txt files let you control website crawlers and index 
 
 This diagram explains the connection between crawlers, sitemaps, and robots:
 
-![Diagram showing the connection between crawlers, sitemaps, and robots](images/connection-between-crawlers-sitemaps-robots-diag.png)
+![Diagram illustrating how crawlers interact with sitemaps and robots.txt files for SEO optimization](images/connection-between-crawlers-sitemaps-robots-diag.png "Diagram of Connection Between Crawlers, Sitemaps, and Robots")
 
 ### Sitemap.xml 
 
@@ -67,19 +67,19 @@ To see an example of an app with a REST endpoint implemented, you can download t
 
 1. In **Service Studio**, go to the **Logic** tab and expand the **Integrations** folder.
 
-    ![Navigate to the Integrations folder](images/integrations-ss.png)
+    ![Screenshot showing how to navigate to the Integrations folder in Service Studio](images/integrations-ss.png "Service Studio Integrations Folder Navigation")
 
 1. Right-click **REST** and select **Expose REST API**.
 
-    ![Select expose REST API](images/expose-rest-ss.png)
+    ![Screenshot highlighting the option to expose a REST API in Service Studio](images/expose-rest-ss.png "Expose REST API Option in Service Studio")
 
 1. Enter a name for the API.
 
-    ![Enter a name for the API](images/location-ss.png)
+    ![Screenshot depicting where to enter the name for a new REST API in Service Studio](images/location-ss.png "Entering API Name in Service Studio")
 
 1. Add a method that returns the sitemap details. To do this, right-click the newly created REST API and select **Add REST API Method**.
 
-    ![Add a REST API method](images/method-ss.png)
+    ![Screenshot showing the process of adding a new REST API method in Service Studio](images/method-ss.png "Adding REST API Method in Service Studio")
 
 1. Enter a name for the method. 
 
@@ -87,7 +87,7 @@ To see an example of an app with a REST endpoint implemented, you can download t
 
     The output parameter is used to iteratively build the sitemap.
 
-    ![Add an output parameter](images/output-parameter-ss.png)
+    ![Screenshot illustrating how to add an output parameter to a REST API method in Service Studio](images/output-parameter-ss.png "Adding Output Parameter in Service Studio")
 
     The REST method’s output is an XML formatted list that includes all URL endpoints that are relevant for the search engine crawlers. 
 
@@ -183,7 +183,7 @@ If you haven't already, [create a site rule](seo-friendly-url-reactive.md#creati
 
 1. Right-click the **Resources** folder and select **Import Resource**. 
 
-    ![Importing a resource to the Resources folder](images/import-resource-ss.png)
+    ![Screenshot demonstrating how to import a resource into Service Studio](images/import-resource-ss.png "Importing Resource to Service Studio")
 
     A dialog opens.  
 
@@ -193,7 +193,7 @@ If you haven't already, [create a site rule](seo-friendly-url-reactive.md#creati
 
 1. Set the **Deploy Action** to `Deploy to Target Directory`.
 
-    ![Robots.txt resource properties](images/resource-properties-ss.png)
+    ![Screenshot showing the resource properties settings in Service Studio](images/resource-properties-ss.png "Setting Resource Properties in Service Studio")
 
     This action makes the file available under `MyApp/robots.txt`.  
 
@@ -207,7 +207,7 @@ If you haven't already, [create a site rule](seo-friendly-url-reactive.md#creati
 
 You must have an existing site rule to associate your domain root with the app for which you’re building the sitemap.
 
-![Generate a sitemap process](images/generate-sitemap-diag.png)
+![Workflow diagram outlining the steps for generating a sitemap in a collaborative environment](images/generate-sitemap-diag.png "Sitemap Generation Workflow Diagram")
 
 The **developer** and **deployer** collaborate to generate a sitemap.
 

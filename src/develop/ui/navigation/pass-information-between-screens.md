@@ -29,7 +29,7 @@ To add an Input Parameter to a Screen in Service Studio:
 
 1. Go to **Interface** > **UI Flows** > **MainFlow** and locate your Screen.
 
-    ![Selected Screen in Service Studio](images/screen-selected-ss.png?width=400)
+    ![Screenshot of a selected screen within Service Studio interface](images/screen-selected-ss.png "Selected Screen in Service Studio")
 
     <div class="info" markdown="1">
 
@@ -40,11 +40,11 @@ To add an Input Parameter to a Screen in Service Studio:
    
 2. Right-click the Screen and select **Add Input Parameter**. A new Input Parameter appears. 
 
-    ![Help menu to Create Input Parameter](images/help-menu-input-parameter-ss.png?width=400)
+    ![Context menu in Service Studio for adding a new Input Parameter](images/help-menu-input-parameter-ss.png "Help menu to Create Input Parameter")
 
 3. Service Studio selects the name of the Input Parameter and sets the focus for you to enter the name. Enter the name of the Input Parameter and press the Enter key.
 
-    ![Input Parameter with selected text name](images/new-input-parameter-ss.png?width=300)
+    ![New Input Parameter field with highlighted name ready for editing in Service Studio](images/new-input-parameter-ss.png "Input Parameter with selected text name")
 
 
 <div class="info" markdown="1">
@@ -59,17 +59,17 @@ In the Screen from which you're linking (source) to the Screen that receives the
 
 1. Search for the **Link** widget and drag it to the Screen. Then, enter your link text, for example "A link to another page".
    
-    ![A Screen with a link](images/screen-with-link-ss.png?width=700)
+    ![Example of a screen in Service Studio showing a Link widget added](images/screen-with-link-ss.png "A Screen with a link")
 
     Right now you can't publish the app because the 1-Click Publish button is red and there's an error. That is expected, as you need to set a destination for your Link as well. 
 
 2. Select the Link widget, go to **Properties** > **Events** > **On Click**, and in the list select your destination Screen. Notice how the Input Parameter shows below the Screen name in the properties.
 
-    ![Link widget properties with the input parameter](images/link-properties-input-parameter-ss.png?width=400)
+    ![Properties panel in Service Studio displaying the Input Parameter for a Link widget](images/link-properties-input-parameter-ss.png "Link widget properties with the input parameter")
     
 3. Still in the Link widget properties, under the Screen you selected, set the value for the Input Parameter.
 
-    ![Link widget properties with the input parameter](images/link-properties-input-parameter-set-ss.png?width=400)
+    ![Service Studio properties panel showing the Input Parameter value set to 100 for a Link widget](images/link-properties-input-parameter-set-ss.png "Link widget properties with the input parameter set")
 
     In our example, we entered **100** directly in the Input Parameter field. Usually you set a dynamic value, for example, with a Local Variable.
 

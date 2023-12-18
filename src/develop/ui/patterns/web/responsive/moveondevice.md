@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Move on Device UI Pattern to define the placement of information depending on the device.
 
-![](<images/moveondevice-3-ss.png>)
+![Screenshot showing the Move on Device UI Pattern in Service Studio](images/moveondevice-3-ss.png "Move on Device UI Pattern")
 
 **How to use the Move on Device UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Move on Device UI Pattern to define the placement of information
 
     The Container widget is displayed.
 
-    ![](<images/moveondevice-6-ss.png>)
+    ![Screenshot of the Service Studio Toolbox with the Container widget highlighted](images/moveondevice-6-ss.png "Container Widget in Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,27 +40,27 @@ You can use the Move on Device UI Pattern to define the placement of information
 
 1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen.
 
-    ![](<images/moveondevice-7-ss.png>)
+    ![Screenshot depicting the process of dragging the Container widget into the Main Content area in Service Studio](images/moveondevice-7-ss.png "Dragging Container Widget")
 
 1. On the **Properties** tab, enter the container name.
 
-    ![](<images/moveondevice-9-ss.png>)
+    ![Screenshot showing the Properties tab where the container name is being entered in Service Studio](images/moveondevice-9-ss.png "Setting Container Properties")
 
 1. Repeat steps 2 and 3 for as many containers as you need in your app. 
 
 1. From the Toolbox, drag the Move on Device widget into the Main Content area of your application's screen.
 
-    ![](<images/moveondevice-5-ss.png>)
+    ![Screenshot of the Service Studio Toolbox with the Move on Device widget available for selection](images/moveondevice-5-ss.png "Move on Device Widget in Toolbox")
 
 1. Add the required content to the Move on Device widget.
 
     In this example, we add an image by dragging the Image widget into the Move on Device widget and selecting an image from the sample OutSystems UI images.
 
-    ![](<images/moveondevice-8-ss.png>)
+    ![Screenshot illustrating the addition of an image to the Move on Device widget in Service Studio](images/moveondevice-8-ss.png "Adding Content to Move on Device Widget")
 
 1. To define where the image appears depending on the device, select the Move on Device widget, and on the **Properties** tab, set the PhoneWidgetId and TabletWidgetId properties.
 
-    ![](<images/moveondevice-2-ss.png>)
+    ![Screenshot of the Properties tab in Service Studio showing the configuration of PhoneWidgetId and TabletWidgetId for the Move on Device widget](images/moveondevice-2-ss.png "Configuring Move on Device Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

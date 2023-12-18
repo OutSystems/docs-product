@@ -4,11 +4,11 @@ guid: 426b3956-f51e-4d01-a743-33fcb462fce6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The Verify window in Integration Studio provides an interface to monitor and fix errors during the extension verification process
 ---
-
 # Verify Window
 
-The Verify window ![](images/validate.gif) is launched when you are [verifying](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-verify.md>) your extension.
+The Verify window ![Animated GIF showing the Verify window process in action](images/validate.gif "Verify Window Animation") is launched when you are [verifying](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-verify.md>) your extension.
 
 The areas and buttons available in the Verify window are presented below.
 

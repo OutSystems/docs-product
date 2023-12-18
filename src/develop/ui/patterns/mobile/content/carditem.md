@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Card Item UI Pattern to list items with multiple content types, such as image or icon (to the left), a title and description, and an action to the right.
 
-![](<images/carditem-1.png>)
+![Example of a Card Item UI Pattern with multiple content types](images/carditem-1.png "Card Item UI Pattern Example")
 
 **How to use the Card UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Card Item UI Pattern to list items with multiple content types, 
 
     The Card Item widget is displayed.
 
-    ![](<images/carditem-2-ss.png>)
+    ![Screenshot showing the Card Item widget in Service Studio](images/carditem-2-ss.png "Service Studio Card Item Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,7 +42,7 @@ You can use the Card Item UI Pattern to list items with multiple content types, 
 
     In this example, we drag the widget into the Card widget that's already in the Main Content area of the screen. You can add as many Card Item widgets as required (we add 4). 
 
-    ![](<images/carditem-3-ss.png>)
+    ![Process of dragging the Card Item widget into the Main Content area in Service Studio](images/carditem-3-ss.png "Adding Card Item to Main Content Area")
 
     By default, the Card Item widget contains a Left, Title, Content, and Right placeholder. 
 
@@ -50,7 +50,7 @@ You can use the Card Item UI Pattern to list items with multiple content types, 
 
     In this example, we add an icon to the Left placeholder, text to the Title and Content placeholders, and a phone icon to the Right placeholder. 
 
-    ![](<images/carditem-4-ss.png>)
+    ![Example of adding content to the placeholders of the Card Item widget in Service Studio](images/carditem-4-ss.png "Customizing Card Item Content")
 
 1. On the **Properties** tab, you can customize the Card Item's look and feel by setting any of the (optional) properties.
 

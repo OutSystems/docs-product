@@ -20,7 +20,7 @@ You can use the Panel UI Pattern to group information in a small block, organize
 
 Use a panel to group short pieces of information and highlight them on the screen with a specific structure.
 
-![](<images/panel-1.png>)
+![Example of a Panel UI Pattern in a Traditional Web App](images/panel-1.png "Panel UI Pattern Example")
 
 **How to use the Panel UI Pattern**
 
@@ -28,7 +28,7 @@ Use a panel to group short pieces of information and highlight them on the scree
   
     The Panel widget is displayed.
 
-    ![](<images/panel-2-ss.png>)
+    ![Service Studio displaying the Panel widget in the Toolbox](images/panel-2-ss.png "Service Studio Panel Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,17 +42,17 @@ Use a panel to group short pieces of information and highlight them on the scree
 
 1. To From the Toolbox, drag the Panel widget into the Main Content area of your application's screen.
 
-    ![](<images/panel-3-ss.png?width=800>)
+    ![Dragging the Panel widget into the Main Content area in Service Studio](images/panel-3-ss.png "Dragging Panel Widget to Main Content")
 
     By default, the Panel widget contains Title, Actions, Content, and Footer placeholders.
 
 1. Add your content to the placeholders. In this example, we add a title to the Title placeholder, text to the Content placeholder, and a button to the Actions placeholder.
 
-    ![](<images/panel-4-ss.png?width=800>)
+    ![Adding a title, text, and a button to the Panel widget placeholders in Service Studio](images/panel-4-ss.png "Adding Content to Panel Placeholders")
 
 1. Add the desired action to the content you have added to the Actions placeholder. In this example, the button we added redirects the user to a new page.
 
-    ![](<images/panel-5-ss.png?width=800>)
+    ![Configuring a button action in the Actions placeholder of the Panel widget](images/panel-5-ss.png "Configuring Actions in Panel Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

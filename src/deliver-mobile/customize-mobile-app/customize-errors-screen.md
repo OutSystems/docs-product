@@ -136,5 +136,5 @@ Here is an example of a JSON and the resulting screen. The CSS was minified to f
 
 The resulting error page looks like this:
 
-![](images/error-screen-example-1.png)
-![](images/error-screen-example-2.png)
+![Example of a mobile app custom error screen with a dark blue background and error message](images/error-screen-example-1.png "Custom Error Screen Example")
+![Mobile app error screen configuration showing JSON code with custom messages and styles](images/error-screen-example-2.png "Custom Error Screen Configuration")

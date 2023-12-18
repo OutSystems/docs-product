@@ -18,10 +18,10 @@ To get distinct values of an entity attribute:
 
 1. Right-click on the attribute for which you want to obtain distinct values, and choose to group by the attribute.
 
-![Get Distinct Values From the Database](images/distinct.png)
+![Screenshot showing how to group by a single attribute in an aggregate to get distinct values](images/distinct.png "Grouping by a Single Attribute")
 
 The aggregate only outputs the attribute values that are grouped.
 
 To get distinct values using multiple entity attributes, select all the required attributes and choose to `Group by selected attributes`.
 
-![Get Distinct Values From the Database](images/distinct-2.png)
+![Screenshot demonstrating grouping by multiple attributes in an aggregate for distinct values](images/distinct-2.png "Grouping by Multiple Attributes")

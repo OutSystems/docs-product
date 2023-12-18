@@ -14,7 +14,7 @@ When designing your application you are allowed to add all sort of files to your
 
 You can import Resources to your module in the Resources folder of the Data tab:
 
-![](images/resources-1.png)
+![Screenshot showing how to import resources into a module in the Resources folder of the Data tab](images/resources-1.png "Importing Resources")
 
 Any Resource you add to your module is saved in the module's OML file. When you publish the module, the Resources are deployed depending on the value set in their Deploy Action property:
 

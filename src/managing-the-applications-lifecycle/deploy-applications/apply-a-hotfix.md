@@ -27,7 +27,7 @@ A severe defect was discovered in the eCommerce application in Production and ha
 
 The version number in Pre-Production has changed: it is suffixed with a '+' (for new changes) and is in red because it is a hotfix.
 
-![](images/apply-a-hotfix-1.png)
+![Screenshot showing the version number in Pre-Production environment suffixed with a '+' indicating a hotfix, highlighted in red.](images/apply-a-hotfix-1.png "Pre-Production Environment with Hotfix Version")
 
 ## Deploy the Hotfix to Production
 
@@ -35,7 +35,7 @@ To apply the hotfix to Production, simply [deploy the application](<deploy-an-ap
 
 Both Pre-Production and Production have now the 1.7.1 version, and the Pre-Production version is still in red: the hotfix needs to be propagated backwards.
 
-![](images/apply-a-hotfix-2.png)
+![Screenshot of the deployment process with 'Tag & Deploy 1.7.1' highlighted, indicating the deployment of a hotfix to Production.](images/apply-a-hotfix-2.png "Deploying Hotfix to Production")
 
 ## Propagate the Hotfix
 
@@ -43,7 +43,7 @@ To solve an hotfix, all changes made to the application have to be propagated ba
 
 1. Click on the eCommerce application: the modules are listed and the ones with the hotfix are marked with a red '+'.
 
-    ![](images/apply-a-hotfix-3.png)   
+    ![Screenshot of the eCommerce application modules list with hotfix changes marked by a red '+' sign.](images/apply-a-hotfix-3.png "eCommerce Application Modules with Hotfix")   
 
 1. Merge all the modules with the hotfix changes in Pre-Production to Quality Assurance: click on the compare button (the difference sign) between the environments and select the specific changes you have done to implement the hotfix.
 
@@ -57,4 +57,4 @@ To solve an hotfix, all changes made to the application have to be propagated ba
 
 The hotfix is solved and there are no more application versions marked in red.
 
-![](images/apply-a-hotfix-5.png)
+![Screenshot showing the application versions with no red highlights, indicating that the hotfix has been successfully propagated and marked as solved.](images/apply-a-hotfix-5.png "Hotfix Marked as Solved")

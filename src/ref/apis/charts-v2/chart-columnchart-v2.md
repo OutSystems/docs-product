@@ -14,33 +14,33 @@ This example shows how to create a simple Column Chart with data labels.
 
 1. From the Toolbox, drag the **Column Chart** widget to the Screen.
 
-    ![Drag the Column Chart widget to the screen ](images/chartcolumn-drag-ss.png)
+    ![Screenshot showing the Column Chart widget being dragged onto the screen in the development environment](images/chartcolumn-drag-ss.png "Dragging Column Chart Widget")
 
 1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.
 
-    ![Expand the Data Point List property](images/chartcolumn-expand-ss.png)
+    ![Screenshot of the Properties tab with the DataPointList property expanded to show its options](images/chartcolumn-expand-ss.png "Expanding DataPointList Property")
 
 1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
 
     This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the column chart. 
 
-    ![Set datapoint](images/chartcolumn-datapointlist-ss.png)
+    ![Screenshot illustrating how to set the Label and Value properties for a data point in the Column Chart](images/chartcolumn-datapointlist-ss.png "Setting Data Point Properties")
 
 1. Set the **SeriesName** property.
 
-    ![Set the series name](images/chart-seriesname-ss.png)
+    ![Screenshot showing the SeriesName property field in the Properties tab for the Column Chart](images/chart-seriesname-ss.png "Setting SeriesName Property")
 
 1. To add more data points, repeat steps 2 and 3.
 
-    ![Add more data points](images/chartcolumn-extradatapoints-ss.png)
+    ![Screenshot demonstrating how to add more data points to the Column Chart by repeating previous steps](images/chartcolumn-extradatapoints-ss.png "Adding Additional Data Points")
 
 1. To show the values of each data point, click on the **SeriesStyling** in the **AddOns** placeholder, and on the **Properties** tab, set the **ShowDataPointValues** property to **True**.
 
     Since the **SeriesName** property was not set, this property will be applied to all series.
 
-    ![Show data point values](images/chartcolumn-showdatapoint-ss.png)
+    ![Screenshot of the SeriesStyling section where ShowDataPointValues property is set to True to display data point values](images/chartcolumn-showdatapoint-ss.png "Enabling Data Point Values Display")
 
 After following these steps, you can publish your module:
 
-![Example Area Chart](images/chartcolumn-result.png)
+![Image of the final result showing a published Column Chart with data labels](images/chartcolumn-result.png "Final Column Chart Result")
 

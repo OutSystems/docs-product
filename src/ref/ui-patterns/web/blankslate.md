@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/blankslate-2-diag.png>)
+![Diagram showing the layout and classes for the Blank Slate UI Pattern in Traditional Web Apps](images/blankslate-2-diag.png "Blank Slate Layout Diagram")
 
 ## CSS Selectors
 
@@ -40,9 +40,9 @@ Applies only to Traditional Web Apps.
 
 1. Drag the If Widget and enter the Empty runtime property in the condition.
 
-    ![](<images/blankslate-3-ss.png>)
+    ![Screenshot of the If Widget with the Empty runtime property condition for displaying the Blank Slate Pattern](images/blankslate-3-ss.png "Blank Slate Empty List Condition")
 
 1. Inside the True branch of the condition, use the Blank Slate Pattern.
 1. Inside the False branch of the condition, use your list.
 
-    ![](<images/blankslate-4-ss.png>)
+    ![Screenshot showing the True and False branches of the If Widget with the Blank Slate Pattern and a list](images/blankslate-4-ss.png "Blank Slate with List")

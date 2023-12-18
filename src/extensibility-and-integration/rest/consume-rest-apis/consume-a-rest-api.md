@@ -30,11 +30,11 @@ Do the following:
 
 1. Right-click on the **REST** element and select **Consume REST API...**
 
-    ![Context menu when right-clicking REST in Service Studio](images/ss-rest-consume-menu.png)
+    ![Context menu in Service Studio showing the option to consume a REST API](images/ss-rest-consume-menu.png "Service Studio Consume REST API Menu")
 
 1. In the displayed dialog, choose **Add Multiple Methods**.
 
-    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog-multiple.png)
+    ![Dialog window in Service Studio for adding multiple REST API methods](images/ss-rest-consume-dialog-multiple.png "Add Multiple Methods Dialog in Service Studio")
 
 1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Next**.
 
@@ -42,7 +42,7 @@ Do the following:
 
 1. Choose the REST API methods you want to import (by default, all methods) and click **Finish**.
 
-    ![Dialog to choose the REST API methods to import](images/ss-rest-consume-choose-methods.png)
+    ![Selection of REST API methods to import in Service Studio](images/ss-rest-consume-choose-methods.png "Select REST API Methods to Import")
 
 When importing the REST API, Service Studio does the following:
 
@@ -51,9 +51,9 @@ When importing the REST API, Service Studio does the following:
 * Creates the Structures to hold the corresponding input and output parameters under a new tree element with the REST API name
 * Maps the [REST Data Types into OutSystems Data Types](../../../ref/extensibility-and-integration/rest-apis/consumed-rest-api/mapping.md)
 
-![Created elements in Service Studio after consuming a REST API](images/ss-rest-consume-created-elements.png)
+![REST API elements created in Service Studio after importing methods](images/ss-rest-consume-created-elements.png "REST API Elements Created in Service Studio")
 
-![Created structures in Service Studio after consuming a REST API](images/ss-rest-consume-created-structures.png)
+![Data structures created in Service Studio corresponding to the REST API methods](images/ss-rest-consume-created-structures.png "REST API Structures Created in Service Studio")
 
 ## Consume a single method of a REST API { #single-method }
 
@@ -65,11 +65,11 @@ Do the following:
 
 1. Right-click on the **REST** element and select **Consume REST API...**.
 
-    ![Context menu when right-clicking REST in Service Studio](images/ss-rest-consume-menu.png)
+    ![Context menu in Service Studio showing the option to consume a REST API](images/ss-rest-consume-menu.png "Service Studio Consume REST API Menu")
 
 1. In the displayed dialog, choose **Add Single Method**.
 
-    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog-single.png)
+    ![Dialog window in Service Studio for adding a single REST API method](images/ss-rest-consume-dialog-single.png "Add Single Method Dialog in Service Studio")
 
 1. Fill the information about the **Method URL**. You can include parameters between braces in the URL for the method's input parameters.
 
@@ -88,17 +88,17 @@ Do the following:
 
 1. If the REST API you are consuming requires specific headers or uses HTTP Basic Authentication, open the **Headers / Auth** tab and fill the necessary information.
 
-    ![Consume REST API Method - Headers/Auth tab](images/ss-rest-consume-headers-auth.png)
+    ![Configuration of headers and authentication for a REST API in Service Studio](images/ss-rest-consume-headers-auth.png "Headers and Authentication Configuration in Service Studio")
 
 1. Fill the information about the Request and the Response. The easiest way to do this is to perform a test to the API and use the test result.
 
     Alternatively, you can add the JSON structure or text/plain example directly in the **Request** and **Response** fields in the **Body** tab. Open the **Test** tab. If you have parameters in your **Method URL**, you need to insert the parameter values to execute the test:
 
-    ![Consume REST API Method - Test tab](images/ss-rest-consume-test.png)
+    ![Testing a REST API method in Service Studio with parameters and response](images/ss-rest-consume-test.png "Test REST API Method in Service Studio")
 
     For manipulation methods, such as `POST` or `PUT`, fill the **Request** of the Body Content with the corresponding request structure:  
 
-    ![Consume REST API Method - Test tab with body filled in](images/ss-rest-consume-test-request.png)
+    ![Filling the request body content for testing a REST API method in Service Studio](images/ss-rest-consume-test-request.png "Request Body Content for REST API Method Test")
 
 1. Click **Test**. If the test is successful, you see the method's response in the Response area of **Test** tab.
 
@@ -106,13 +106,13 @@ Do the following:
 
     For manipulation methods (such as `POST` or `PUT`), do the same for the Request, by pressing **Copy to Request body** in the Request area:
 
-    ![Consume REST API Method - Copy to request body link after using Test](images/ss-rest-consume-test-request-copy.png)
+    ![Copying the test request to the request body field in Service Studio](images/ss-rest-consume-test-request-copy.png "Copy Test Request to Request Body in Service Studio")
 
     Usually, you obtain the most common fields this way. To know in full detail all the available fields, check the API documentation.
 
 1. Check if the **Request** and **Response** information is correct in the **Body** tab and click **OK**:
 
-    ![Consume REST API Method - Body tab](images/ss-rest-consume-body.png)
+    ![Finalizing the REST API method import with request and response details in Service Studio](images/ss-rest-consume-body.png "Finalize REST API Method Import in Service Studio")
 
 When importing the REST API method, Service Studio does the following:
 
@@ -121,9 +121,9 @@ When importing the REST API method, Service Studio does the following:
 * Creates the Structures to hold the corresponding input and output parameters under a new tree element with the REST API name
 * Maps the [REST Data Types into OutSystems Data Types](../../../ref/extensibility-and-integration/rest-apis/consumed-rest-api/mapping.md)
 
-![Created elements in Service Studio after consuming a REST API](images/ss-rest-consume-created-elements.png)
+![REST API elements created in Service Studio after importing methods](images/ss-rest-consume-created-elements.png "REST API Elements Created in Service Studio")
 
-![Created structures in Service Studio after consuming a REST API](images/ss-rest-consume-created-structures.png)
+![Data structures created in Service Studio corresponding to the REST API methods](images/ss-rest-consume-created-structures.png "REST API Structures Created in Service Studio")
 
 ## Use a REST API Method in your Application { #use }
 
@@ -133,17 +133,17 @@ You can now use the newly created methods in your application the same way you u
 
 1. Go to the action flow where you want to use the REST API Method.
   
-    ![Preparation flow where you want to use the imported REST API method](images/ss-rest-consume-use-method-3.png)
+    ![Dragging a REST API method into an application flow in Service Studio](images/ss-rest-consume-use-method-3.png "Using REST API Method in Application Flow")
 
 1. In the **Logic** tab, open the **Integrations** folder and the **REST** element.
 
 1. Expand the REST API element and drag the REST API Method into your action flow.
   
-    ![Preparation flow with REST API method invocations](images/ss-rest-consume-use-method-1.png)
+    ![Expanding the REST API element to use a method in Service Studio](images/ss-rest-consume-use-method-1.png "Expand REST API Element to Use Method")
 
 1. Use the method's output parameters as you do for any other action.
   
-    ![Example of using the output of a REST API method as a Source Record List](images/ss-rest-consume-use-method-2.png)
+    ![Using output parameters of a REST API method in an application flow in Service Studio](images/ss-rest-consume-use-method-2.png "Output Parameters of REST API Method")
 
 ## Using parameters in the URL query string { #using-params-query-string }
 

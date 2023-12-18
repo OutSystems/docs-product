@@ -56,7 +56,7 @@ This isn't shown in the sample app but is possible by using the User systems dat
 
 The following steps show how to enable your users to log in to your app using an existing social media account:
 
-![Diagram of steps to enable social login in your app](images/social-login-diag.png)
+![Diagram illustrating the social login flow in a mobile app](images/social-login-diag.png "Social Login Flow Diagram")
 
 1. [In Social Login Configurator, set up social login providers for your app](#set-providers).
 
@@ -142,7 +142,7 @@ Ensure you follow the provider's branding guidelines when creating each button.
 1. For each button you added in the previous step, add an action to handle the **On Click** event.
 In the properties of each social login button, open the **Events** > **On Click** dropdown and select **New Client Action**.
 
-    ![Add an action to handle the On Click event of the social login button](images/social-new-action-ss.png)
+    ![Screenshot showing how to add a new client action for social login in Service Studio](images/social-new-action-ss.png "New Client Action for Social Login")
 
 1. In the action flow of each action you created in the previous step, check if the plugin is working properly during runtime.
 After the **Start** node, add a **CheckSocialLoginPlugin** action.
@@ -159,7 +159,7 @@ After the **Start** node, add a **CheckSocialLoginPlugin** action.
 
 1. Connect **StartLogin** to an **End**.
 
-    ![The finished social login flow](images/social-flow-ss.png)
+    ![Screenshot of the logic flow for handling social login in Service Studio](images/social-flow-ss.png "Social Login Logic Flow")
 
 1. In the **Data** tab, create a **Site Property** named `EnvironmentAddress`, and set its default value to your environment address, `https://<your-environment>`. To obtain the value of this property, create a **Server Action**.
 When you deploy your app to another environment make sure you set its value to the corresponding environment address.

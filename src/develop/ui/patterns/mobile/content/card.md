@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Cards UI Pattern to group small pieces of information and highlight them on the screen. The information is grouped into a small block that is easily noticeable on-screen.
 
-![](<images/card-1.png>)
+![Example of a Card UI Pattern in a mobile app or reactive web app](images/card-1.png "Card UI Pattern Example")
 
 **How to use the Card UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Cards UI Pattern to group small pieces of information and highli
 
     The Card widget is displayed.
 
-    ![](<images/card-2-ss.png>)
+    ![Service Studio interface showing the Card widget in the Toolbox](images/card-2-ss.png "Service Studio Card Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,11 +40,11 @@ You can use the Cards UI Pattern to group small pieces of information and highli
 
 1. From the Toolbox, drag the Card widget into the Main Content area of your application's screen.
 
-    ![](<images/card-3-ss.png>)
+    ![Dragging the Card widget from the Toolbox into the Main Content area in Service Studio](images/card-3-ss.png "Dragging Card Widget to Main Content")
 
 1. Add your content to the placeholder. In this example we add some text.
 
-    ![](<images/card-4-ss.png>)
+    ![Adding text content to the Card widget placeholder in Service Studio](images/card-4-ss.png "Adding Content to Card Placeholder")
 
 1. On the **Properties** tab, you can customize the Card's look and feel by setting any of the (optional) properties.
 

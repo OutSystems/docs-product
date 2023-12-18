@@ -32,7 +32,7 @@ Once you have typed in the JSON string click **Close** to save the new extensibi
 
 See [Extensibility Configurations JSON Schema](<extensibility-configurations-json-schema.md>) for information about configuration schema and constraints.
 
-![Extensibility configuration window](images/customize-mobile-app-1.png)
+![Screenshot of the Extensibility Configuration window in a mobile app development interface](images/customize-mobile-app-1.png "Extensibility Configuration Window")
 
 You may change these default extensibility configurations when it is necessary to have different configurations for different environments. For example, the development team may want to increase the plugin logging level in the development environment in order to troubleshoot an issue, while keeping the default logging level in the quality and production environments.
 

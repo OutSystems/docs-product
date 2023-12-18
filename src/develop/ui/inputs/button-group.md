@@ -25,7 +25,7 @@ Follow the steps to create a form with three options.
     * Select the Radio Group widget.
     * In the properties of the Radio Group widget, in the **Variable** field, select `Color.Color`.
 
-    ![Radio Group properties](images/radio-group-ss.png?width=700)
+    ![Screenshot of the Radio Group properties in the Service Studio interface](images/radio-group-ss.png "Radio Group Properties")
 
 1. Set the properties of Radio Buttons, which are the widgets inside the Radio Group widget.
 
@@ -33,13 +33,13 @@ Follow the steps to create a form with three options.
     * For RadioButton2, select `Entities.Color.Yellow` in the **Value** property. Edit the label to "Lemon".
     * For RadioButton3, select `Entities.Color.Violet` in the **Value** property. Edit the label to "Plum".
 
-    ![Radio Button](images/radio-button-ss.png?width=700)
+    ![Screenshot showing properties of individual Radio Buttons within a Radio Group in Service Studio](images/radio-button-ss.png "Radio Button Properties")
 
 1. Drag an Expression widget below the Form and enter `"You selected " + Color.Color + " color."`.
 
 1. Publish the app and try it out in your browser.
     
-    ![Radio Button in browser](images/radio-button-preview.png?width=500)
+    ![Preview of Radio Buttons as they appear in a web browser](images/radio-button-preview.png "Radio Button Preview in Browser")
 
 
 
@@ -50,7 +50,7 @@ You can also use Button Group in Reactive Web and Mobile:
 1. Drag and drop the Button Group from the toolbox and bind it to the variable that will store the selected value. 
 1. For each Button Group Item, define the value to assign to the variable when the Button Group Item is selected and edit the corresponding text label. 
 
-![](images/button-group-1.png?width=750)
+![Screenshot of a Button Group widget in the Service Studio interface for Reactive Web and Mobile](images/button-group-1.png "Button Group in Reactive Web and Mobile")
 
 ## In Traditional Web
 
@@ -59,4 +59,4 @@ To use Radio Buttons in Traditional Web:
 1. Drag and drop the Radio Buttons from the widgets toolbox. 
 1. For each Radio Button, bind it to the variable that will store the selected value and define the value to assign to the variable when the Radio Button is selected. 
 
-![](images/button-group-2.png?width=750)
+![Screenshot of Radio Buttons widget in the Service Studio interface for Traditional Web applications](images/button-group-2.png "Radio Buttons in Traditional Web")

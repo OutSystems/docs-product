@@ -24,11 +24,11 @@ This data synchronization pattern is recommended for mobile apps where end users
 
 The following is an overview of the Read-Only Data Optimized pattern logic:
 
-1. ![](images/icon-client.png) Invokes server to get data.
+1. ![Icon representing a client device in the Read-Only Data Optimized pattern](images/icon-client.png "Client Icon") Invokes server to get data.
 
-1. ![](images/icon-server.png) Returns database data.
+1. ![Icon representing a server in the Read-Only Data Optimized pattern](images/icon-server.png "Server Icon") Returns database data.
 
-1. ![](images/icon-client.png) Deletes and recreates data in the local storage with the data received from the server. 
+1. ![Icon representing a client device in the Read-Only Data Optimized pattern](images/icon-client.png "Client Icon") Deletes and recreates data in the local storage with the data received from the server. 
 
 Download the [sample module for the Read-Only Data Optimized pattern](http://www.outsystems.com/forge/component/1638/Offline+Data+Sync+Patterns/), that uses companies as an example of data to synchronize. The following sections provide detailed descriptions of the data model and logic used in the sample module.
 
@@ -37,7 +37,7 @@ Download the [sample module for the Read-Only Data Optimized pattern](http://www
 
 This sample defines a database entity `Company` and its local storage counterpart `LocalCompany`. Additionally, the `SyncProperties` local storage entity keeps the date and time of the last synchronization.
 
-![](images/read-only-data-optimized-data-model.png)
+![Diagram of the Read-Only Data Optimized data model showing database entities and relationships](images/read-only-data-optimized-data-model.png "Read-Only Data Optimized Data Model")
 
 1. Tracks changed records by storing the timestamp when the record was last updated or created.
 1. Tracks deleted records.
@@ -50,7 +50,7 @@ The application logic must keep the entity attributes `ModifiedOn` and `IsActive
 
 The following is a description of the logic of the `OfflineDataSync` client action:
 
-![Read-Only Data Optimized Pattern OfflineDataSync](images/read-only-data-optimized-offlinedatasync.png)
+![Flowchart illustrating the logic of the OfflineDataSync client action in the Read-Only Data Optimized pattern](images/read-only-data-optimized-offlinedatasync.png "OfflineDataSync Logic Diagram")
 
 1. Obtains the timestamp of the last synchronization.
 1. Calls the `ServerDataSync` server action to retrieve data from the database that changed since the last synchronization. The server returns a list of changed or added Company records, a list of deleted (inactive) Company records, and the timestamp of this synchronization.
@@ -63,7 +63,7 @@ The following is a description of the logic of the `OfflineDataSync` client acti
 
 The following is a description of the logic of the `ServerDataSync` server action:
 
-![Read-Only Data Optimized Pattern ServerDataSync](images/read-only-data-optimized-serverdatasync.png)
+![Flowchart illustrating the logic of the ServerDataSync server action in the Read-Only Data Optimized pattern](images/read-only-data-optimized-serverdatasync.png "ServerDataSync Logic Diagram")
 
 1. Assigns the timestamp of this synchronization to an output parameter.
 

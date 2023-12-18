@@ -4,8 +4,8 @@ guid: 45cc30b7-02ce-49a6-9d9a-9f7d61b6a022
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The Import Actions from .NET Assembly wizard in Integration Studio allows users to import action definitions from a .NET assembly into their OutSystems extension
 ---
-
 # Import Actions from .NET Assembly
 
 The Import Actions from .NET Assembly wizard allows you to import the actions definitions from a .NET assembly. Using introspection into a .NET assembly, this wizard will create the actions you specified according to the signature of the .NET methods.
@@ -14,7 +14,7 @@ To import actions from a .NET assembly do the following:
 
 1. Right-click on the **Actions** folder in the [Extension tree](<../../../ref/integration-studio/multi-tree-navigator.md>) or alternatively select **Import** on the [**File** menu](<../../../ref/integration-studio/menu/file/intro.md>).
 
-1. Select ![](images/net-wizard.gif) **Import Actions from .NET Assembly**.
+1. Select ![Icon representing the Import Actions from .NET Assembly wizard](images/net-wizard.gif "Import Actions from .NET Assembly Wizard Icon") **Import Actions from .NET Assembly**.
 
 Integration Studio shows you a wizard that guides through a series of steps necessary to complete the import process:
 
@@ -26,15 +26,15 @@ Step 2
 
     You can select the assembly from the **Available Assemblies to Import** box, if this assembly was added previously as a [resource](<resource-define.md>) of the extension; or you can type the file name or click **Browse** to specify the .NET assembly.
 
-    ![](images/note.gif) If this .NET assembly has dependencies that are not resources of the extension and could not be resolved automatically, Integration Studio launches the **Missing Assembly Reference** window. In this window you have to specify the location of the assembly that is missing.
+    ![Icon indicating a note or important information](images/note.gif "Note Icon") If this .NET assembly has dependencies that are not resources of the extension and could not be resolved automatically, Integration Studio launches the **Missing Assembly Reference** window. In this window you have to specify the location of the assembly that is missing.
 
 Step 3
-:   This step presents all the ![](images/class-icon.gif) classes and their members as defined in the .NET assembly you selected in the previous step. Each class is identified by its full namespace. Inside each class folder you might find the following .NET member types:
+:   This step presents all the ![Icon representing a class in .NET assembly](images/class-icon.gif "Class Icon") classes and their members as defined in the .NET assembly you selected in the previous step. Each class is identified by its full namespace. Inside each class folder you might find the following .NET member types:
 
-    * **Constructor**: The associated icon is ![](images/constructor-icon.gif). Each constructor is identified by its name and signature.
-    * **Methods**: The associated icon is ![](images/method-icon.gif). Each method is identified by its name and signature.
-    * **Properties**: The associated icon is ![](images/property-icon.gif). Each property is identified by its name.
-    * **Public Fields**: The associated icon is ![](images/field-icon.gif). Each public field is identified by its name.
+    * **Constructor**: The associated icon is ![Icon representing a constructor in .NET assembly](images/constructor-icon.gif "Constructor Icon"). Each constructor is identified by its name and signature.
+    * **Methods**: The associated icon is ![Icon representing a method in .NET assembly](images/method-icon.gif "Method Icon"). Each method is identified by its name and signature.
+    * **Properties**: The associated icon is ![Icon representing a property in .NET assembly](images/property-icon.gif "Property Icon"). Each property is identified by its name.
+    * **Public Fields**: The associated icon is ![Icon representing a public field in .NET assembly](images/field-icon.gif "Field Icon"). Each public field is identified by its name.
 
     Check the tree node you want to import. If the node has children inside, all the children nodes are automatically checked.
 
@@ -45,7 +45,7 @@ Step 4
 
     * **Actions**: The [actions are created](<../../../ref/integration-studio/element-property/net-assembly-import-action.md>) based on the type of members selected in the previous step.
 
-    * **Resources**: The .NET assembly you specified in step 2 and all its recursive references are added as [resources](<../../../ref/integration-studio/resources-tree.md>) of your extension, together with the ![](images/imported-action.gif) **DotNetAction.ico** resource, if it hasn't been added already.
+    * **Resources**: The .NET assembly you specified in step 2 and all its recursive references are added as [resources](<../../../ref/integration-studio/resources-tree.md>) of your extension, together with the ![Icon representing an imported action in Integration Studio](images/imported-action.gif "Imported Action Icon") **DotNetAction.ico** resource, if it hasn't been added already.
 
     In this step, you have the possibility of analyzing how the actions will be created in the extension by clicking **View Report**. This button displays the report of the actions created and, if necessary, allows you to save it for future analysis.
 

@@ -30,11 +30,11 @@ The communication between AI Mentor Studio's components differs depending on you
 
 If you authenticate with your **OutSystems account**, communications between the AI Mentor Studio plugin and the AI Mentor Studio SaaS are always initiated by the plugin. This reduces connectivity requirements on your side since all that needs to be ensured is connectivity from the Plugin in the LifeTime environment to the AI Mentor Studio SaaS endpoint.  
 
-![AI Mentor Studio communication when using OutSystems account authentication](images/os-auth-communication-diag.png)
+![Diagram illustrating the communication flow initiated by the AI Mentor Studio plugin when using OutSystems account authentication.](images/os-auth-communication-diag.png "OutSystems Authentication Communication Diagram")
 
 If you authenticate with your **IT User account**, AI Mentor Studio needs to be able to connect with your infrastructure to ensure the login is correct. When a user authenticates or accepts the privacy policy, the AI Mentor Studio SaaS needs to communicate with the AI Mentor Studio plugin. To send data from the LifeTime probe to the AI Mentor Studio SaaS endpoint, the AI Mentor Studio plugin needs to communicate with the AI Mentor Studio SaaS. Thus, when using IT User authentication, the communication between the AI Mentor Studio SaaS and the AI Mentor Studio plugin is bidirectional.  
 
-![AI Mentor Studio communication when using IT User authentication](images/it-user-auth-communication-diag.png)
+![Diagram showing bidirectional communication between AI Mentor Studio SaaS and the AI Mentor Studio plugin when using IT User account authentication.](images/it-user-auth-communication-diag.png "IT User Authentication Communication Diagram")
 
 With either authentication method, the plugin can use a forward proxy to connect to the AI Mentor Studio SaaS endpoint.
 

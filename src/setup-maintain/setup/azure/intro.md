@@ -16,7 +16,7 @@ OutSystems solution template for Microsoft Azure Marketplace provides you with a
 
 The deployed OutSystems infrastructure is summarized in the following diagram:
 
-![Infrastructure overview](images/outsystems-infrastructure.png?width=700)
+![Diagram illustrating the OutSystems infrastructure on Microsoft Azure with Development, Test, Production, and LifeTime deployment management console environments](images/outsystems-infrastructure.png "OutSystems Infrastructure Diagram")
 
 Learn [more details about the deployed infrastructure](quick-reference.md "Quick Reference for OutSystems on Microsoft Azure") in the quick reference.
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps and Reactive Web Apps.
 
 When sending feedback is active for a Reactive Web App or Traditional Web App, a glowing circle shows on the app screens, close to the bottom-right corner. Note that you first need to [activate the feedback feature in the environment](user-feedback-enable.md).
 
-![App Feedback button](images/send-feedback-in-web-applications-1.png?width=800)
+![Glowing feedback circle on the bottom-right corner of a web app screen indicating where to click to send feedback](images/send-feedback-in-web-applications-1.png "Feedback Activation Indicator")
 
 To send feedback do the following:
 
@@ -27,4 +27,4 @@ To send feedback do the following:
 1. If the feedback is about a specific area or element on the screen, click that area or element. Pointing to the portion of a screen helps developers to understand the issue better.
 1. Press **SEND** to submit the feedback.
 
-![App Feedback screen annotation](images/send-feedback-in-web-applications-2.png?width=800)
+![Feedback pop-up window in a web app where users can type and send their feedback](images/send-feedback-in-web-applications-2.png "Feedback Submission Window")

@@ -33,7 +33,7 @@ The chatbot configuration wizard can guide you through the process of creating a
 
 This section is for you if you prefer following documentation. You can also use the [chatbot configuration wizard](configuration-wizard.md) to speed up the setup of your FAQ chatbot.
 
-![FAQ chatbot creation overview](images/faq-chatbot-overview-dia.png)
+![Diagram illustrating the overview of creating an FAQ chatbot with steps including preparing data, creating a knowledge base, QnA Maker Service, publishing, and configuring the chatbot UI.](images/faq-chatbot-overview-dia.png "FAQ Chatbot Overview Diagram")
 
 
 1. Prepare your questions and answers. You first need to put your questions and answers in a spreadsheet. See: [Prepare data for knowledge base](guide-azure-kb.md#prepare-data-kb)

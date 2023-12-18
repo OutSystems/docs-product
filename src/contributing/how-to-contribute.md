@@ -39,18 +39,18 @@ Don't want to contribute via GitHub? Send us your contribution to knowledge@outs
 Anytime you stumble upon something that you feel could be better, here’s how you can propose a change:
  
 1. Click the Edit button. 
-![Edit button Mindtouch](images/edit-mindtouch.png)
+![Screenshot of the Edit button on the MindTouch documentation platform](images/edit-mindtouch.png "Edit Button on MindTouch Platform")
 The corresponding page opens in the GitHub repository.
  
 2. On the GitHub page, click the Edit icon. 
-![Edit button GitHub](images/edit-git.png)
+![Screenshot showing the Edit icon on a GitHub repository page](images/edit-git.png "Edit Icon on GitHub")
  
 3. A text editor opens. Make your changes in it.
  
-![GitHub Editor](images/editor-git.png)
+![Screenshot of the GitHub text editor interface with markdown content](images/editor-git.png "GitHub Text Editor Interface")
  
 4. When you have finished your changes, scroll down in the editor, add a comment about your change and click Propose File Change. 
-![Proposed file change](images/propose-edit-git.png)
+![Screenshot of the Propose File Change button on GitHub after editing a document](images/propose-edit-git.png "Propose File Change on GitHub")
  
 And that's it! Your proposed changes are processed by our team and, **if approved**, made part of the documentation.
  
@@ -66,19 +66,19 @@ You can contribute to our community by doing the following:
 1. In the [GitHub repository](https://github.com/OutSystems?q=docs) to which you want to contribute,select the folder you want to add your new document to..
  
 2. Click Create new file:
-![Adding a new file](images/new-file-git.png)
+![Screenshot of the Create New File option on a GitHub repository](images/new-file-git.png "Create New File on GitHub")
  
 3. Give a name to your file in the format `[filename].md`:
-![New file name](images/new-name-git.png)
+![Screenshot showing the process of naming a new markdown file on GitHub](images/new-name-git.png "Naming a New File on GitHub")
  
 4. Add your content to the new file. To preview the content, click Preview.
-![Adding content](images/new-content-git.png)
+![Screenshot of adding content to a new markdown file in GitHub's editor](images/new-content-git.png "Adding Content to New File on GitHub")
  
 5. After you have added all the content, scroll down, add a description, and click Propose new file:
-![Proposing content](images/new-porpose-git.png)
+![Screenshot of the Propose New File button on GitHub after creating a document](images/new-porpose-git.png "Propose New File on GitHub")
  
 6. To submit your new content for approval, click Create Pull Request:
-![Doing a pull request](images/new-request-git.png)
+![Screenshot of the Create Pull Request button on GitHub for submitting new content](images/new-request-git.png "Create Pull Request on GitHub")
  
 And that's it! Your proposed changes are processed by our team and, **if approved**, made part of the documentation.
  

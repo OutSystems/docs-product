@@ -16,7 +16,7 @@ Service Studio uses the text you add in the **Request** field of the **Body** ta
 
 The format of the request example can be JSON, form URL Encoded, multipart/form-data, or text/plain. This article provides examples of each request format. For more information about consuming a single method API, see [Consume a single method of a REST API](consume-a-rest-api.md#single-method).
 
-![View request examples](images/request-examples-ss.png) 
+![Screenshot showing examples of requests in Service Studio](images/request-examples-ss.png "Service Studio Request Examples") 
 
 ## JSON 
 
@@ -33,7 +33,7 @@ If you use the JSON request format, you must insert a JSON payload. The followin
 
 Using this payload, the system creates the following input parameter and the corresponding structure:
 
-![Payload input parameters](images/payload-input-parameters-ss.png) ![Payload structure](images/payload-structure-ss.png) 
+![Image displaying the input parameters generated from a JSON payload in Service Studio](images/payload-input-parameters-ss.png "Payload Input Parameters in Service Studio") ![Image showing the structure created from a JSON payload in Service Studio](images/payload-structure-ss.png "Payload Structure in Service Studio") 
 
 ## Form URL Encoded 
 
@@ -48,7 +48,7 @@ The following request payload example contains three key-value pairs, ``name``, 
 name={name}&age={age}&email={email} 
 
 ```
-![Post URL sample](images/post-url-sample-ss.png)
+![Screenshot of a form URL encoded sample payload in Service Studio](images/post-url-sample-ss.png "Form URL Encoded Sample in Service Studio")
 
 ## Multipart/form-data
 
@@ -88,7 +88,7 @@ In this example, there are two parts - the first part is a JSON payload and the 
 
 Using this payload example, the system can infer the data structures involved. The metadata input parameter with two fields **Name** and **Created_at** and a second input parameter document of type **Binary Data**.
 
-![Metadata inputs](images/metadata-inputs-ss.png) 
+![Image illustrating the input parameters for multipart/form-data in Service Studio](images/metadata-inputs-ss.png "Multipart Form Data Inputs in Service Studio") 
 
 For more information about multipart/form-data structure, see the [standard specifications (RFC 2388)](https://www.ietf.org/rfc/rfc2388.txt).
 
@@ -102,4 +102,4 @@ In the following payload request example, the payload is simply the string "Hell
 
 The system creates an input parameter of data type Text.
 
-![Text Plain](images/plain-text-ss.png)
+![Screenshot showing a text/plain payload example in Service Studio](images/plain-text-ss.png "Text Plain Payload Example in Service Studio")

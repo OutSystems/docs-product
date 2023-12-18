@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](images/wizard-3-diag.png?width=750)
+![Diagram showing the layout and classes of the Wizard UI Pattern](images/wizard-3-diag.png "Wizard Layout Diagram")
 
 ## CSS selectors
 
@@ -57,13 +57,13 @@ Use this example to create a three steps Wizard with continue and back buttons.
 
 1. Create a new Screen Action named WizardNavigation.
 
-    ![](images/wizard-4-ss.png)
+    ![Screenshot of the Wizard Navigation screen action setup in the development environment](images/wizard-4-ss.png "Wizard Navigation Screen Action")
 
 1. Create a mandatory boolean Input Parameter on this action named IsNext.
 
 1. Drag an Assign and set WizardStepIndex, to `If(IsNext, WizardStepIndex + 1, WizardStepIndex - 1)`.
 
-    ![](images/wizard-5-ss.png)
+    ![Screenshot showing the assignment of the WizardStepIndex variable in the Wizard Navigation action](images/wizard-5-ss.png "Wizard Step Index Assignment")
 
 1. Drag an AjaxRefresh to refresh your content container on the screen.
 
@@ -71,14 +71,14 @@ Use this example to create a three steps Wizard with continue and back buttons.
 
 1. Do the same for the Back button, but set the parameter to False.
     
-    ![](images/wizard-6-ss.png)
+    ![Screenshot of the Wizard UI with Continue and Back buttons configured for navigation](images/wizard-6-ss.png "Wizard Continue and Back Buttons")
 
 1. In each WizardItem, add this If condition: `If(WizardStepIndex = 1, Entities.Step.Active, If(WizardStepIndex = 0, Entities.Step.Next, Entities.Step.Past))` to the Step parameter.
 
 1. Wrap the content containers in Ifs and set the condition to the respective step.
 
-    ![](images/wizard-7-ss.png?width=750)  
-    ![](images/wizard-8-ss.png?width=750)
+    ![Screenshot demonstrating the custom style applied to the active step in the Wizard UI Pattern](images/wizard-7-ss.png "Wizard Active Step Custom Style")  
+    ![Screenshot showing the content containers wrapped in conditional statements for each Wizard step](images/wizard-8-ss.png "Wizard Step Content Containers")
 
 ### Custom style for active step
 
@@ -122,4 +122,4 @@ To implement this, you can use either method described below.
             width: 100%;
         }
 
-    ![](images/wizard-9-ss.png?width=750)
+    ![Screenshot of the CSS code for custom styling the active step in the Wizard UI Pattern](images/wizard-9-ss.png "Wizard Custom Style CSS Code")

@@ -44,37 +44,37 @@ To deploy both applications to Quality, do the following:
 
 1. Click the **Deploy...** button between Development and Quality.
 
-    ![](images/deploy-an-application-1.png)
+    ![Screenshot showing the Deploy button between Development and Quality environments in LifeTime console](images/deploy-an-application-1.png "Deploy Button in LifeTime Console")
 
 1. In the popup window, search for the applications to deploy. You can filter by **Applications with differences** or search by the application name.
 
-    ![](images/deploy-an-application-3.png)
+    ![Popup window in LifeTime for searching and filtering applications to deploy](images/deploy-an-application-3.png "Application Search Popup Window")
 
 1. Select the applications to deploy and click **Add to Deployment Plan**.
 
-    ![](images/deploy-an-application-4.png)
+    ![Option to select applications and add them to the deployment plan in LifeTime](images/deploy-an-application-4.png "Add to Deployment Plan")
 
 1. In the deploy options, select **Deploy 0.2** for MyApp and **Deploy 0.3** for MyWebApp.
 
-    ![](images/deploy-an-application-5.png)
+    ![Deploy options in LifeTime showing selection of version 0.2 for MyApp and version 0.3 for MyWebApp](images/deploy-an-application-5.png "Selecting Application Versions for Deployment")
 
 1. Click **Validate Now** to validate the deployment in Quality.
 
-    ![](images/deploy-an-application-6.png)
+    ![Button to validate the deployment of applications in the Quality environment within LifeTime](images/deploy-an-application-6.png "Validate Deployment in Quality")
 
     Note: If LifeTime detects any changes in the applications included in the plan either in the source or in the target environment, it will show a **Refresh Applications** sticker that you can click to [refresh the applications](#refresh) included in the plan.
 
 1. The deployment plan is OK (all green). Click **CONTINUE** to move on.
     
-    ![](images/deploy-an-application-7.png)
+    ![LifeTime deployment plan showing all checks passed and the CONTINUE button enabled](images/deploy-an-application-7.png "Deployment Plan Validation")
 
 1. Type the **Deployment Notes** and click the **Deploy Now** button to execute the deployment.
     
-    ![](images/deploy-an-application-8.png)
+    ![Field for entering deployment notes and the Deploy Now button to execute the deployment in LifeTime](images/deploy-an-application-8.png "Deployment Notes and Deploy Now Button")
 
 When the deployment finishes, both applications have the same tagged version in both environments.
 
-![](images/deploy-an-application-9.png)
+![Confirmation screen showing successful deployment of applications with the same tagged version in both environments](images/deploy-an-application-9.png "Successful Deployment Confirmation")
 
 <div class="info" markdown="1">
 
@@ -97,13 +97,13 @@ To change the target environment of a deployment do the following:
 
     For example, if we want to deploy an app from **Development** to **Quality P2**, the source environment is **Development**.
 
-    ![](images/deploy-dev-quality-p1-lt.png)
+    ![Deploy button on the right of the source environment name for changing the target environment in LifeTime](images/deploy-dev-quality-p1-lt.png "Deploy Button for Changing Target Environment")
 
 1. In the popup to choose one or more applications to deploy, press **Cancel**. First, you will select a different target environment.
 
 1. Open the target environment dropdown by clicking its name (**Quality P1** in our example).
 
-    ![](images/deploy-choose-target-environment-lt.png)
+    ![Dropdown menu in LifeTime for selecting a different target environment during deployment](images/deploy-choose-target-environment-lt.png "Choosing a Different Target Environment")
 
 1. Select the desired target environment in the dropdown. In our example, we selected **Change environment to Quality P2**.
 
@@ -121,7 +121,7 @@ The detected changes include:
 
 When any of these changes is detected, a **Refresh Applications** sticker appears under the page title heading of the deployment plan creation screen:
 
-![](images/lt-refresh-applications.png)
+![Refresh Applications sticker indicating relevant changes in the source or target environments in LifeTime](images/lt-refresh-applications.png "Refresh Applications Sticker in Deployment Plan")
 
 To refresh the applications in the current plan, click **Refresh Applications**.
 

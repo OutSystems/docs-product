@@ -36,7 +36,7 @@ Unless it’s a [plugin supported by OutSystems](intro.md) and you are using a p
 
 The JSON can be used for additional settings needed by the plugin. For the full description of the JSON check the article [Extensibility Configurations JSON Schema](<../../deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md>).
 
-![](<images/plugin-exensibility-window-ss.png>)
+![Screenshot of the Extensibility Configuration window in OutSystems showing where to specify the Cordova plugin settings.](images/plugin-exensibility-window-ss.png "Extensibility Configuration Window")
 
 ### JSON Examples
 
@@ -102,8 +102,8 @@ Each plugin should have a `Check<Capability>Plugin` action (e.g. "CheckToastyPlu
 
 Create actions (e.g. "ShowToast") within the wrapper module and add a JavaScript flow element with the variables. Make the actions public so that they are available in the application. Write the descriptions for all the public actions, inputs and outputs. This helps when using the module in the target application.
 
-![](<images/plugin-exensibility-actions-ss.png>)
+![Screenshot of the OutSystems Service Studio showing the actions structure within a plugin wrapper module.](images/plugin-exensibility-actions-ss.png "Plugin Wrapper Module Actions")
 
 Insert the code that connects the wrapper to the Cordova plugin into a JavaScript element:
 
-![](<images/plugin-exensibility-js-ss.png>)
+![Screenshot of JavaScript code in OutSystems Service Studio used to connect a wrapper module to a Cordova plugin.](images/plugin-exensibility-js-ss.png "Plugin Extensibility JavaScript Code")

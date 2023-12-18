@@ -34,11 +34,11 @@ Let's create a new contact information management app. An application contains o
 
 In Service Studio, click **New Application**, choose **Traditional Web**, and name it `Contact Portal`.
 
-![Create a Traditional Web App](images/create-web-01.png)
+![Screenshot of creating a new Traditional Web application named Contact Portal in Service Studio](images/create-web-01.png "New Application Creation")
 
 In the new **Contact Portal** application, create a **Traditional Web** module, named `ContactPortal`.
 
-![Create a Module](images/create-web-02.png)
+![Screenshot of creating a new Traditional Web module named ContactPortal](images/create-web-02.png "New Module Creation")
 
 Click **Create Module** to create the module and open it for editing.
 
@@ -55,7 +55,7 @@ To do this, we are going to use an Excel file that already contains the followin
 
 In the `ContactPortal` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel...**, and select the sample file `Contacts.xlsx` (available [here](resources/Contacts.xlsx)).
 
-![Create a Database Table from an Excel File](images/create-web-03.png)
+![Screenshot showing how to import new entities from an Excel file in the ContactPortal module](images/create-web-03.png "Import Entities from Excel")
 
 When importing an Excel file, OutSystems creates a database table (called an Entity in OutSystems) with the necessary columns (called Attributes in OutSystems) to store the data in the database.
 
@@ -67,11 +67,11 @@ Now we can create a screen that lists all of the contacts.
 
 Open the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**. Then, drag and drop the entity **Contact** from the **Data** tab to an empty area in the Main Editor window.
 
-![Create a Screen to List Contacts](images/create-web-04.png)
+![Screenshot of dragging the Contact entity to the Main Editor window to create a list screen](images/create-web-04.png "Create List Screen")
 
 This creates a screen that includes a list that displays 50 contacts at a time, along with pagination and search functionality.
 
-![Contacts Screen](images/create-web-05.png)
+![Screenshot of the generated list screen displaying contacts with pagination and search functionality](images/create-web-05.png "Contacts List Screen")
 
 ## Create a screen to create and edit contacts
 
@@ -79,11 +79,11 @@ Creating a screen to create and edit records is as fast as creating a list scree
 
 With the **MainFlow** open, drag and drop the entity Contact from the **Data** tab to an empty area in the Main Editor window.
 
-![Create a Screen to Create and Edit Contacts](images/create-web-06.png)
+![Screenshot of dragging the Contact entity to create a screen for creating and editing contact records](images/create-web-06.png "Create Record Screen")
 
 This creates a new screen with a form to create new records or edit existing ones. OutSystems also adds the server-side logic to create and edit records automatically.
 
-![ContactDetail Screen](images/create-web-07.png)
+![Screenshot of the new screen with a form to create or edit contact records](images/create-web-07.png "Contact Record Form")
 
 ## Allow deleting contacts
 
@@ -91,7 +91,7 @@ To implement an application to manage contacts we are just missing the delete fu
 
 Double-click the screen **ContactDetail** to open it. Drag and drop a **Button** widget from the toolbox to the right of the Cancel button of the screen, right-click the new button and choose **Link to New 'DeleteContact' Screen Action**.
 
-![](images/create-web-09.png)
+![Screenshot showing the process of adding a delete button to the ContactDetail screen](images/create-web-09.png "Add Delete Functionality")
 
 OutSystems adds server-side logic to delete the contact record and associates the button to that logic.
 
@@ -99,8 +99,8 @@ OutSystems adds server-side logic to delete the contact record and associates th
 
 Now we just need to make the application go live. Click the **1-Click Publish** button to publish the application to your environment.
 
-![Publish Your Application](images/create-web-10.png)
+![Screenshot of the 1-Click Publish button to deploy the Traditional Web App](images/create-web-10.png "Publish Application")
 
 When the application is deployed, click the **Open in Browser** button to test your application in a browser.
 
-![Open Your Application](images/create-web-11.png)
+![Screenshot of the Open in Browser button to test the deployed Traditional Web App](images/create-web-11.png "Test Application in Browser")

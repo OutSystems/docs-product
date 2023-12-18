@@ -18,15 +18,15 @@ Here is how you can edit expressions and show the expression values.
 
 * Use the [expression editor](../../../develop/logic/expression-editor.md) to **edit expressions**. The expression editor shows you available elements. It automatically completes the text and shows suggestions after you press **Ctrl+Space**.
 
-    ![Expression editor](images/expression-editor-ss.png?width=600)
+    ![Screenshot of the expression editor interface showing available elements and autocomplete suggestions](images/expression-editor-ss.png "Expression Editor Screenshot")
 
 * **Edit expressions** inline in the properties of elements.
 
-    ![Expression inline](images/expression-inline-ss.png?width=400)
+    ![Screenshot of inline expression editing within the properties of an element](images/expression-inline-ss.png "Inline Expression Editing Screenshot")
 
 * To **show the result** of an expression, use the [expression widget](../../lang/auto/servicestudio-plugin-nrwidgets-expression.md). This is similar to the **print** command in other programming languages.
 
-    ![Expression widget](images/expression-widget-ss.png?width=400)
+    ![Screenshot of the expression widget used to display the result of an expression](images/expression-widget-ss.png "Expression Widget Screenshot")
 
 
 ## Notes

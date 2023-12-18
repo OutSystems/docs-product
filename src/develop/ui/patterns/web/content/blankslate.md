@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Blank Slate UI Pattern to inform end users, for example, to complete a task or when there is no data available for display etc.
 
-![Blank Slate UI Pattern](images/blankslate-1-ss.png)
+![Screenshot of a Blank Slate example in a Traditional Web App](images/blankslate-1-ss.png "Blank Slate Example")
 
 ## How to use the Blank Slate UI Pattern
 
@@ -26,7 +26,7 @@ You can use the Blank Slate UI Pattern to inform end users, for example, to comp
 
     The Blank Slate widget is displayed.
 
-    ![Blank slate widget](images/blankslate-2-ss.png)
+    ![Screenshot showing the Blank Slate widget in the Service Studio toolbox](images/blankslate-2-ss.png "Blank Slate Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,13 +40,13 @@ You can use the Blank Slate UI Pattern to inform end users, for example, to comp
 
 1. From the Toolbox, drag the Blank Slate widget into the Main Content area of your application's screen.
 
-    ![Drag widget into the main content](images/blankslate-3-ss.png)
+    ![Screenshot illustrating how to drag the Blank Slate widget into the main content area of an application screen](images/blankslate-3-ss.png "Dragging Blank Slate Widget")
 
     By default, the Blank Slate widget contains icon and text placeholders.
 
 1. Add your content to the placeholders. In this example we change the icon to a calendar icon by selecting the Icon placeholder, and on the **Properties** tab, from the **Name** drop-down, selecting the calendar icon. We also enter new text in the Text placeholder.
 
-    ![Change icon to calendar](images/blankslate-4-ss.png)
+    ![Screenshot demonstrating changing the icon to a calendar in the Blank Slate widget properties](images/blankslate-4-ss.png "Changing Icon to Calendar")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

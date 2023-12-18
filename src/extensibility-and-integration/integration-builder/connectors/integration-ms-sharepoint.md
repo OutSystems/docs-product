@@ -25,7 +25,7 @@ Verify the following:
 
 Follow the instructions provided in [Creating and using an integration](../use.md#create-use). You must authorize Integration Builder to access your data in SharePoint Online through your Microsoft account.
 
-![Authorizing Integration Builder to access your Microsoft account data](images/sharepoint-ib-authorization.png)
+![Screenshot showing the authorization process for SharePoint Integration Builder in OutSystems.](images/sharepoint-ib-authorization.png "SharePoint Integration Builder Authorization")
 
 Integration Builder uses this authorization to retrieve the metadata from the SharePoint Online server (Sites, Lists, and respective columns) and enable you to test a newly created integration in the development environment.
 
@@ -40,7 +40,7 @@ Request authentication is handled transparently when you call Server Actions exp
 You can select the `Create automatically` option to have the Integration Manager create the connection on your behalf.
 Integration Manager generates a certificate and connects to Integration Builder, which requests the creation of an Azure AD app that uses the certificate for authentication and authorization.
 
-![Authorizing Integration Manager to access your Microsoft account data](images/sharepoint-im-authorization.png)
+![Image depicting the process of authorizing a SharePoint Online connection via Integration Manager.](images/sharepoint-im-authorization.png "SharePoint Integration Manager Authorization")
 
 ### If you don't have administrator permissions in Azure Active Directory
 

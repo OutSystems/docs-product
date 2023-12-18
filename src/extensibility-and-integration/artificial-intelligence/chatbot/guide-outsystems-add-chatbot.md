@@ -23,7 +23,7 @@ Just starting? Check the [chatbot configuration wizard](configuration-wizard.md)
 
 1. Open the **Manage Dependencies** dialog (press **Ctrl+Q**). Search for `Chatbot`. Select **Chatbot** in the producers pane, and then select all elements in the elements pane. Click **Apply**.
        
-    ![Chatbot references](images/chatbot-add-references-ss.png?width=500)
+    ![Screenshot showing how to add Chatbot references in the Manage Dependencies dialog](images/chatbot-add-references-ss.png "Chatbot References")
 
     With this you add elements from the Chatbot component to create UI and configure the chatbot.
 
@@ -31,11 +31,11 @@ Just starting? Check the [chatbot configuration wizard](configuration-wizard.md)
 
 1. Add the chatbot block to the Screen. Navigate to **Interface** > **(you app)** > **UI Flows** > **Chatbot** > **Components**. Drag the **Chatbot** Block to the Screen. The Chatbot preview now shows in the Screen.
    
-    ![Chatbot references](images/chatbot-drag-chatbot-block-ss.png?width=500)
+    ![Screenshot illustrating the process of dragging the Chatbot block to a Screen in the app interface](images/chatbot-drag-chatbot-block-ss.png "Adding Chatbot Block to Screen")
 
 1. Select the Chatbot component Block. In the properties, locate **DirectLineSecret**. Paste the direct line key from Azure, surrounded by the quotation marks.
 
-    ![Direct line property](images/chatbot-direct-line-ss.png?width=500)
+    ![Screenshot of the Chatbot component properties with the DirectLineSecret field highlighted](images/chatbot-direct-line-ss.png "Chatbot Direct Line Property")
 
     <div class="info" markdown="1">
 
@@ -49,7 +49,7 @@ Just starting? Check the [chatbot configuration wizard](configuration-wizard.md)
 
 1. Publish your app and test the chatbot. Enter a message in the chat window. If you get replies from the chatbot, then your chatbot is working correctly.
 
-    ![Chatbot in a browser](images/chatbot-faq-example-browser.png?width=400)
+    ![Browser screenshot displaying a functional chatbot in a web app with a user message and chatbot reply](images/chatbot-faq-example-browser.png "Chatbot in Action")
 
     You can now start developing a more complex chatbot.
 

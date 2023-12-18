@@ -18,16 +18,16 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/badge-2-diag.png>)
+![Diagram showing the layout and classes of the Badge UI Pattern](images/badge-2-diag.png "Badge Layout Diagram")
 
 ## Advanced use case
 
 ### Use a transparent Badge pattern with a border
 
-![](<images/badge-5-ss.png>)
+![Screenshot demonstrating the use of a transparent Badge pattern with a border](images/badge-5-ss.png "Transparent Badge with Border")
 
 1. On the **Properties** tab, set the **Color** to transparent (`Entities.Color.Transparent`).
 
 1. In the ExtendedClass property, set the text color and the border size of the badge. 
 
-    ![](<images/badge-4-ss.png>)
+    ![Screenshot showing how to set the text color and border size in the Badge's ExtendedClass property](images/badge-4-ss.png "Badge Properties Configuration")

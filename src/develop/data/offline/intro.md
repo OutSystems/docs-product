@@ -18,7 +18,7 @@ When you install an OutSystems PWA, the service worker has already cached all th
 
 The following diagram shows the runtime architecture of a typical OutSystems mobile app. In PWA's the architecture is very similar but uses IndexedDB for the browser local storage and an offline framework composed of JavaScript.
 
-![Offline architecture](images/offline-architecture.png)
+![Diagram illustrating the runtime architecture of a typical OutSystems mobile app with offline capabilities](images/offline-architecture.png "Offline Architecture Diagram")
 
 To make your apps ready for scenarios with intermittent network access you need to define you local data model and implement a synchronization mechanism to exchange data between the device and the server when there is network access.
 
@@ -37,7 +37,7 @@ If you are considering storing sensitive data in local storage, you should use 
 
 The following are the recommended steps for implementing your offline data sync mechanism.
 
-![Sync implementation steps](images/sync-implementation-steps-diag.png)
+![Flowchart showing the recommended steps for implementing offline data synchronization in OutSystems](images/sync-implementation-steps-diag.png "Offline Data Sync Implementation Steps Diagram")
 
 Before you start the sync implementation, analyze the business needs and define who the end users are. Define the conditions under which the app should work. This will help in creating the connectivity and data capacity requirements that your apps should meet.
 
@@ -45,7 +45,7 @@ Also, decide who modifies the records and how. The sync implementation will be i
 
 ### 1. Create and adapt the entities
 
-![](images/sync-implementation-steps-1-diag.png)
+![Diagram detailing step 1 of the sync implementation process, focusing on creating and adapting entities](images/sync-implementation-steps-1-diag.png "Create and Adapt Entities for Sync")
 
 The local storage entities need to be simpler than the complex server entities. Denormalize the database relations to [design a lightweight local storage](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage>) in your mobile app. Use simple relations for the attributes corresponding to the data requirements you defined previously. You should be able to map the attributes of the simpler local entities to the server entities.
 
@@ -53,7 +53,7 @@ Analyze and select the sync patterns. On the local storage and server, create da
 
 ### 2. Implement the sync logic
 
-![](images/sync-implementation-steps-2-diag.png)
+![Diagram outlining step 2 of the sync implementation process, which involves implementing the synchronization logic](images/sync-implementation-steps-2-diag.png "Implement Sync Logic")
 
 OutSystems provides a [sync framework](<sync-implement.md>) that enables you to synchronize data between mobile apps and the server. The following are the main steps of implementing a sync mechanism with this framework:
 
@@ -69,13 +69,13 @@ Once you have your actions for receiving, sending, processing data and resolving
 
 ### 3. Create a robust user-experience
 
-![](images/sync-implementation-steps-3-diag.png)
+![Diagram for step 3 of the sync implementation process, emphasizing the creation of a robust user experience](images/sync-implementation-steps-3-diag.png "Create Robust User Experience for Offline Sync")
 
 At this point you should have most of your sync logic in place. The next step is to create a user experience around the sync. The user interface and app behavior should provide a robust experience for the end users. The end users should be aware of the network status, if the data they are working with is up to date, and they should also be aware of the sync outcomes. The initial sync should be well thought out. It should be obvious how to resolve conflicts.
 
 ### 4. Test your sync implementation
 
-![](images/sync-implementation-steps-4-diag.png)
+![Diagram for step 4 of the sync implementation process, highlighting the importance of testing the offline sync](images/sync-implementation-steps-4-diag.png "Test Offline Sync Implementation")
 
 Test your sync implementation against defined business goals, the use cases and also user experience. The browser simulator works well for basic debugging, but you should install your app on several devices and test how the sync and app perform in realistic scenarios. Keep in mind that your app is using the internal database and that it needs to be able to update even in poor connectivity. Another important sync test is a usability test to verify that the end users will have a responsive app that is intuitive to use.
 

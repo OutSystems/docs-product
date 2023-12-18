@@ -7,8 +7,8 @@ guid: bec0793d-a9f6-429b-b6dc-a86e4fdb60d3
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:324
+summary: The article describes how to add an On Application Resume action in a mobile app to handle tasks when the app returns from background to foreground
 ---
-
 # On Application Resume
 
 <div class="info" markdown="1">
@@ -25,7 +25,7 @@ To add this action to a Mobile app do the following:
 
 1. Right-click the "Client Actions" node in the tree and select **Add System Event** > **On Application Resume**.
 
-    ![](images/ss-add-system-event-reactive.png)
+    ![Screenshot showing how to add On Application Resume system event in Service Studio](images/ss-add-system-event-reactive.png "Adding On Application Resume System Event")
 
 ## Properties
 

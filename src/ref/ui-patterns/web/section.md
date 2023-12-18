@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/section-2-diag.png>)
+![Diagram illustrating the layout and classes of the Section UI Pattern](images/section-2-diag.png "Section Layout Diagram")
 
 ## Advanced use case
 
@@ -35,11 +35,11 @@ Write the following CSS in the CSS editor.
 
 **Before**
 
-![](<images/section-3.png>)
+![Screenshot showing the Section UI Pattern before removing the line below the title](images/section-3.png "Section Before CSS Changes")
 
 **After**
 
-![](<images/section-4.png>)
+![Screenshot showing the Section UI Pattern after applying CSS to remove the line below the title](images/section-4.png "Section After CSS Changes")
 
 ## Compatibility with other patterns
 

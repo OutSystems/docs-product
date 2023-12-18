@@ -36,7 +36,7 @@ Changing runtime settings for applications, modules, or extensions has different
 
 When you change a runtime setting for an application, module, or extension, you click the **Apply** button in the corresponding Service Center screen.
 
-![](images/settings-apply-app-sc.png)
+![Service Center screen showing the Apply button for changing runtime settings of an application](images/settings-apply-app-sc.png "Applying Runtime Settings for an Application")
 
 By clicking the **Apply** button, you are saving and applying the new runtime setting, causing the reload of the affected modules. From this moment, your changes will be effective (for example, the Effective URL of a consumed SOAP web service).
 
@@ -47,7 +47,7 @@ When you change runtime settings for the environment, those changes are not appl
 
 To save runtime settings for the environment without applying them, click the **Save** button on the corresponding screen.
 
-![](images/settings-runtime-env-save-sc.png)
+![Service Center screen with the Save button for environment runtime settings without applying them](images/settings-runtime-env-save-sc.png "Saving Runtime Settings for the Environment")
 
 Until you apply the changes, you will get a warning in the environment indicating there are pending configurations to apply. Modules will also be marked with a warning sign.
 
@@ -59,7 +59,7 @@ If you **republish** or **redeploy** a module, any pending environment runtime s
 
 To apply environment runtime settings to the whole factory, click the **Save and Apply Settings to the Factory** button on any screen where there are environment runtime settings.
 
-![](images/settings-runtime-env-apply-sc.png)
+![Service Center screen with the Save and Apply Settings to the Factory button for environment runtime settings](images/settings-runtime-env-apply-sc.png "Applying Runtime Settings to the Factory")
 
 By clicking the **Save and Apply Settings to the Factory** button, you are saving your latest changes on that screen and applying all pending runtime settings to all the modules in your factory, causing all modules to reload. From this moment, all the pending settings will be effective for all modules in the factory.
 
@@ -67,7 +67,7 @@ By clicking the **Save and Apply Settings to the Factory** button, you are savin
 
 If you want to apply pending runtime settings only to a set of modules, and not to the whole factory, you can do it by creating a **solution** in Service Center containing all the modules you want to apply the pending settings and clicking **Apply Settings**.
 
-![](<images/sc-solution-apply.png>)
+![Service Center screen for applying pending runtime settings to a selected set of modules within a solution](images/sc-solution-apply.png "Applying Settings to a Solution")
 
 ## Compile-time Settings
 

@@ -5,8 +5,8 @@ guid: ac774bf3-82fc-480e-a633-7652e559d52a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The article details how OutSystems maps various XML Data Types to corresponding OutSystems Data Types when consuming SOAP Web Services
 ---
-
 # Mapping XML Data Types to OutSystems Data Types
 
 When consuming SOAP Web Services in your module, OutSystems maps the XML Data Types into OutSystems Data Types as follows:
@@ -50,7 +50,7 @@ Along with this static entity, OutSystems will also create a structure to repres
 
 * An attribute for each choice option of the respective type.
 
-![SOAP choice structure](<images/soap-choice-structure-ss.png>)
+![Screenshot showing the SOAP choice structure mapping in OutSystems Service Studio](images/soap-choice-structure-ss.png "SOAP Choice Structure in Service Studio")
 
 To set the value of a WSDL element of type choice, set the Choice attribute to the Id of the desired choice, and fill in the corresponding structure attribute according to the "Choice" value.
 

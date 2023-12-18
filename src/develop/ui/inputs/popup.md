@@ -21,35 +21,35 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
     The **Popup** widget is displayed.
 
-    ![Popup widget](images/popup-1-ss.png)
+    ![Screenshot showing the Popup widget in the Service Studio toolbox](images/popup-1-ss.png "Popup Widget in Service Studio Toolbox")
 
 1. Drag the **Popup** widget into the **Main Content** area of your screen. 
 
-    ![Drag widget onto screen](images/popup-2-ss.png)
+    ![Screenshot of dragging the Popup widget into the Main Content area of the screen](images/popup-2-ss.png "Dragging Popup Widget into Main Content")
 
 1. Add a variable of boolean data type to the screen by right-clicking on your screen name (located in the element tree) and selecting **Add Local Variable**. In this example, we call the variable `ShowPopup`.
 
-    ![Add new local variable](images/popup-3-ss.png)
+    ![Screenshot of adding a local variable to the screen in Service Studio](images/popup-3-ss.png "Adding Local Variable to Screen")
 
-    ![Set variable to type Boolean](images/popup-4-ss.png)
+    ![Screenshot of naming the local variable as ShowPopup in Service Studio](images/popup-4-ss.png "Naming Local Variable ShowPopup")
 
 1. Select the Popup widget, and on the **Properties** tab, enter the new variable for the **Show Popup** property. This toggles the popup according to the variable value.
 
-    ![Set variable to type Boolean](images/popup-5-ss.png)
+    ![Screenshot showing the Show Popup property being set in the Popup widget properties](images/popup-5-ss.png "Setting Show Popup Property")
 
 1. Add your content to the popup.
 
     In this example, we add some text and a **Close Popup** button. We also add a **Show Popup** button to the **Actions** screen area.
 
-    ![Add content to popup](images/popup-6-ss.png)
+    ![Screenshot of adding text and buttons to the content of the Popup widget](images/popup-6-ss.png "Adding Content to Popup")
 
 1. Select the **Close Popup** button, and from the **On Click** dropdown, select **New Client Action**.
 
-    ![Create New Client Action](images/popup-8-ss.png)
+    ![Screenshot of creating a new client action for the Close Popup button in Service Studio](images/popup-8-ss.png "Creating New Client Action for Close Popup Button")
 
 1. Drag an **Assign** onto the client action, and set the **ShowPopup** variable to **False**.
 
-    ![Add Assign to client action ](images/popup-7-ss.png)
+    ![Screenshot of an Assign action setting the ShowPopup variable to False in Service Studio](images/popup-7-ss.png "Assigning ShowPopup Variable to False")
 
     Clicking the **Close Popup** button sets the **ShowPopup** variable to **False** and closes the popup.
 
@@ -69,35 +69,35 @@ To create and use a popup in Traditional Web Apps:
 
 1. In Service Studio, in the Toolbox, search for and drag the **Link** widget into the **Actions** placeholder of your screen.
 
-    ![Drag Link widget to the screen](images/popupweb-1-ss.png)
+    ![Screenshot showing the Link widget being added to the Actions placeholder in Service Studio](images/popupweb-1-ss.png "Link Widget in Actions Placeholder")
 
 1. Enter a name and some text for the link. In this example we enter `PopupLink` for the link name and ``Show Popup`` as the link text. Ensure the **Method** property is set to **Navigate**.
 
-    ![Enter link name and text](images/popupweb-2-ss.png)
+    ![Screenshot of setting the name and text properties for a Link widget in Service Studio](images/popupweb-2-ss.png "Setting Link Properties for Popup")
 
 1. Create a new screen for the popup. Select the **Widget Tree**, and from the **Source Web Block** dropdown, select **Layouts\LayoutPopup**.
 
-    ![Web Block source properties](images/popupweb-3-ss.png)
+    ![Screenshot of creating a new screen for the popup using the LayoutPopup template in Service Studio](images/popupweb-3-ss.png "Creating New Screen for Popup")
 
 1. Delete the **Center**, **Left**, and **Right** placeholders from the screen until you are left with only the **MainContent** placeholder.
 
-    ![Web Block source properties](images/popupweb-4-ss.png)
+    ![Screenshot of deleting the Center, Left, and Right placeholders from the popup screen in Service Studio](images/popupweb-4-ss.png "Deleting Placeholders from Popup Screen")
 
 1. Add the popup content. In this example, we add some text.
 
-    ![Popup content](images/popupweb-5-ss.png)
+    ![Screenshot of adding text content to the new popup screen in Service Studio](images/popupweb-5-ss.png "Adding Popup Content to New Screen")
 
 1. Select your main screen again, and from the **Properties** tab, set the link's **On Click** destination property to the popup screen you just created.
 
-    ![Link destination](images/popupweb-6-ss.png)
+    ![Screenshot of setting the On Click destination property for a Link widget to the popup screen in Service Studio](images/popupweb-6-ss.png "Setting On Click Destination Property")
 
 1. From the Toolbox, search for and drag the **Popup Editor** widget into the **Main Content** area of your screen.
 
-    ![Drag popup editor to screen](images/popupweb-7-ss.png)
+    ![Screenshot of adding the Popup Editor widget to the Main Content area of the screen in Service Studio](images/popupweb-7-ss.png "Adding Popup Editor Widget to Main Content")
 
 1. On the **Properties** tab, from the  **LinkOnButtonWidgetId** dropdown, select the Link widget Id (in this example, PopupLink.Id).
 
-    ![Drag popup editor to screen](images/popupweb-8-ss.png)
+    ![Screenshot of configuring the Popup Editor widget properties by linking it to a Link widget ID in Service Studio](images/popupweb-8-ss.png "Configuring Popup Editor Properties")
 
     You can also create a screen action for the Popup Editor widget by selecting **New Screen Action** from the **Destination** dropdown. In this example, we select **New Screen Action**, but leave the flow of the action empty.
 

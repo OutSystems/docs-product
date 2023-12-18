@@ -26,7 +26,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Section Index UI Pattern to organize the content of a screen, enabling quick navigation within the page.
 
-![Section Index example](<images/sectionindex-example.png>)
+![Example of a screen organized using the Section Index UI Pattern](images/sectionindex-example.png "Section Index Example")
 
 **How to use the Section Index UI Pattern**
 
@@ -34,7 +34,7 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
     The Section Index widget is displayed.
 
-    ![Section Index widget](<images/sectionindex-widget-ss.png>)
+    ![Service Studio displaying the Section Index widget in the Toolbox](images/sectionindex-widget-ss.png "Section Index Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the **Remove Unused Dependencies** setting is enabled. To make the widget available in your app:
 
@@ -50,39 +50,39 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
     In this example, we drag the Section Index widget into a column (ColumnsSmallLeft). By default, the Section Index widget contains 2 Section Index Items. You can add or delete as many as required. In this example, 4 Section Index Items are required.
 
-    ![Drag widget to screen](<images/sectionindex-dragwidget-ss.png>)
+    ![Dragging the Section Index widget into the Main Content area of a screen in Service Studio](images/sectionindex-dragwidget-ss.png "Dragging Section Index Widget to Screen")
 
 1. In the Toolbox, search for and drag the Section widget onto the screen. Add as many sections as you require for your app.
 
     In this example, we drag 4 Section widgets (to match the number of Section Index Items) onto the screen (Column2). Each section widget contains a **Title** and **Content** placeholder. 
 
-    ![Drag section to screen](<images/sectionindex-section-ss.png>)
+    ![Dragging Section widgets onto the screen to match the number of Section Index Items](images/sectionindex-section-ss.png "Adding Section Widgets to Screen")
 
 1. Add the relevant content to Section widget's **Title** and **Content** placeholders.
 
     In this example, we add employee names to the **Title** placeholders, and Card Sectioned widgets with some text and images to the **Content** placeholder. 
 
-    ![Add content to Section widget](<images/sectionindex-card-ss.png>)
+    ![Adding employee names and Card Sectioned widgets to the Section widget's placeholders](images/sectionindex-card-ss.png "Adding Content to Section Widget")
 
 1. Enter a name for each of the Card Sectioned widgets.
     
     This is so you can link them to each of the Section Index Items.
 
-    ![Enter name for Card Sectioned](<images/sectionindex-cardname-ss.png>)
+    ![Entering names for Card Sectioned widgets to link with Section Index Items](images/sectionindex-cardname-ss.png "Naming Card Sectioned Widgets")
    
 1.  In the Toolbox, search for and drag the Text widget into the first Section Index Item and enter a title (in this example, the employee's name). 
 
-    ![Enter a section index item title](<images/sectionindex-item-ss.png>)
+    ![Entering a title for the first Section Index Item in Service Studio](images/sectionindex-item-ss.png "Entering Section Index Item Title")
 
 1. To link the Section with the Section Index Item, select the Section Index Item, and on the **Properties** tab, set the **ScrollToWidgetId** property as the Section Id. In this example,  **AmosTesen.Id**.
 
-    ![Set the Section Id](<images/sectionindex-id-ss.png>)
+    ![Setting the ScrollToWidgetId property to link the Section with the Section Index Item](images/sectionindex-id-ss.png "Setting Section Id")
 
 1. Repeat steps 5,6 and 7 to add content and link your sections to the remaining Section Index Items.
 
 1. On the **Properties** tab, you can customize the Section Index's look and feel by setting any of the optional properties.
 
-    ![Set the properties](<images/sectionindex-properties-ss.png>)
+    ![Customizing the look and feel of the Section Index by setting properties in Service Studio](images/sectionindex-properties-ss.png "Customizing Section Index Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

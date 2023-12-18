@@ -14,7 +14,7 @@ The Case Management framework (CMf) enables you to build Case Management applica
 
 CMf is an extension of Business Process Technology (BPT) and is developed using OutSystems Service Studio. With CMf you are able to leverage a common set of features that make the development of case management apps simply, and more efficiently.
 
-![architecture](images/cmf-overview-arch-diag.png)
+![Diagram illustrating the architecture of the Case Management Framework within OutSystems](images/cmf-overview-arch-diag.png "Case Management Framework Overview Architecture Diagram")
 
 ## Prerequisite
 
@@ -24,7 +24,7 @@ To use the Case Management framework, your environment must use Platform Server 
 
 The Case Management framework uses cases as an extension of processes and activities, and provides actions and entities that let you add the following capabilities to your case management apps.
 
-![features](images/cmf-features-diag.png)
+![Diagram showcasing the various features available in the Case Management Framework](images/cmf-features-diag.png "Case Management Framework Features Diagram")
 
 **Process Auditing**
 

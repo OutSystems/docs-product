@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/dropdownselect-3-diag.png>)
+![Diagram illustrating the layout and classes of the Dropdown Select UI Pattern for Traditional Web Apps](images/dropdownselect-3-diag.png "Dropdown Select Layout Diagram")
 
 ## CSS selectors
 
@@ -68,11 +68,11 @@ Or using the CSS variable `var(--color-yourcolor)` example:
 
 With Combo Box:
 
-![](<images/dropdownselect-4-ss.gif?width=600>)
+![Animated preview showing the Dropdown Select UI Pattern with Combo Box in a browser](images/dropdownselect-4-ss.gif "Dropdown Select Combo Box Preview")
 
 With List Box:
 
-![](<images/dropdownselect-2-ss.gif?width=600>)
+![Animated preview showing the Dropdown Select UI Pattern with List Box in a browser](images/dropdownselect-2-ss.gif "Dropdown Select List Box Preview")
 
 ## Notes
 

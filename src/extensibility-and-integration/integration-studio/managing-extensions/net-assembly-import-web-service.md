@@ -4,8 +4,8 @@ guid: cdffaa83-59f9-4c88-a3f1-4168fd023051
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:63
+summary: The article explains how to import Web Services from a .NET assembly into OutSystems using Integration Studio, including creating proxies, handling shared data types, and dealing with recursive data types
 ---
-
 # Import Web Services from a .NET Assembly
 
 To provide support for a wider range of Web Services, Integration Studio allows you to import the definition of Web Service clients, known as Web References in OutSystems terminology. The Web Reference is encapsulated within an extension which you can then use in Service Studio.
@@ -56,7 +56,7 @@ It's possible to overcome this issue using the [`Disco.exe`](<https://msdn.micro
 
     Integration Studio introspects the DLL and asks you to select the Web Service methods to import.
 
-    ![](images/import-ws2.png)
+    ![Screenshot of the Import Web Service wizard in Integration Studio with options to select methods to import](images/import-ws2.png "Import Web Service Wizard in Integration Studio")
 
 1. Finally, select which methods to import.
 
@@ -82,13 +82,13 @@ Due to the OutSystems language expressiveness, there are certain constructs that
 
 As an example, consider the classes below.
 
-![](images/inheritance.png)
+![Diagram showing an example of inheritance structure with Life as the base class and Animal as the derived class](images/inheritance.png "Inheritance Structure Example")
 
 When introspecting the .NET assembly, Integration Studio creates a single structure with the same name as the base class. The **Type** attribute specifies which class the structure represents once instantiated.
 
 Notice also that the fields from all classes in the inheritance chain, are present in the **Life** structure as attributes, and their description states the class they belong to. Despite having the same structure to represent the whole inheritance, you should use the constructors provided to easily instantiate the desired class.
 
-![](images/import-ws1.png)
+![Screenshot of generated structures in Integration Studio with attributes from inherited classes](images/import-ws1.png "Generated Structures in Integration Studio")
 
 ## Using recursive data types
 
@@ -98,7 +98,7 @@ In the example above, the **Animal** class is recursive because it extends the *
 
 To assist you in the creation of the structures, Integration Studio provides a constructor action for each structure. The constructors receive as parameters all the fields of the class and internally convert the ones which cause recursion to their correct data type. For this reason, you should use the constructors to build the structures from the **bottom-up** and avoid dealing with serialization in the construction process.
 
-![](images/import-ws3.png)
+![Screenshot showing how Integration Studio handles recursive data types by serializing the elements](images/import-ws3.png "Recursive Data Types Handling")
 
 As an example, if you need to instantiate a chicken object, you should:
 
@@ -110,7 +110,7 @@ As an example, if you need to instantiate a chicken object, you should:
 
 After creating the chicken object, if you need to access its **FavoriteFood**, since it has **SerializedLife** data type, you need to use the `Deserialize` action provided. Call `Life_Deserialize` and pass as parameter the chicken attribute **FavoriteFood**, and this action converts it from **SerializedLife** to **Life**, so that you can read its values.
 
-![](images/import-ws4.png)
+![Screenshot illustrating the process of instantiating and serializing recursive data types in Integration Studio](images/import-ws4.png "Instantiating and Serializing Recursive Data Types")
 
 In the same way, if you need to directly assign the **FavoriteFood** to change its attributes, you need to:
 

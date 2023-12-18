@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 The Layout Side Menu is a pre-existing web block for a side menu. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app.
 
-![](<images/layoutsidemenu-1-ss.png?width=800>)
+![Screenshot of the Layout Side Menu web block in OutSystems Traditional Web Apps](images/layoutsidemenu-1-ss.png "Layout Side Menu Screenshot")
 
 ## Properties
 

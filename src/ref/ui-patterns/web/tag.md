@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and Classes
 
-![](<images/tag-3-diag.png>)
+![Diagram illustrating the layout and classes of the Tag UI Pattern in Traditional Web Apps](images/tag-3-diag.png "Tag Layout Diagram")
 
 ## Advanced use case
 
@@ -28,12 +28,12 @@ Applies only to Traditional Web Apps.
 
 1. In the ExtendedClass property, set the text color.
 
-    ![](<images/tag-4-ss.png>)
+    ![Screenshot showing the Tag UI Pattern with only border set and transparent background](images/tag-4-ss.png "Tag Border Only Example")
 
 1. Set the border size.
 
-    ![](<images/tag-5-ss.png>)
+    ![Screenshot of the settings for adjusting the border size in the Tag UI Pattern](images/tag-5-ss.png "Tag Border Size Setting")
 
 1. Publish and test.
 
-    ![](<images/tag-6.png>)
+    ![Image of the published Tag UI Pattern with custom border and text color](images/tag-6.png "Published Tag Pattern")

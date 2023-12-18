@@ -29,7 +29,7 @@ You can create the following Actions:
 
 Some Screens may require fetching complex information from the database or other external systems, for example a home banking dashboard. In Mobile and Reactive Web apps you do this in a **Data Action**:
 
-![Data Action](images/data-action.png)
+![Illustration of a Data Action in a Reactive Web or Mobile App](images/data-action.png "Data Action Example")
 
 **Data Actions** run on the server. You can create **Data Actions** to fetch complex data from the database, which you are not able to achieve using a single server Aggregate, or to fetch data from an external system, for example through a consumed REST API.
 
@@ -43,13 +43,13 @@ You can also create **Data Actions** in your Blocks.
 
 **In the scope of a Screen:** Lets you to run logic when the user interacts with the Screen. For example, if you have a Screen to update a Contact, you can create a **Client Action** that reacts to a user clicking the Save button, which then executes the update logic to update the Contact:
 
-![Example of a Client Action](images/client-action-screen.png?width=600)
+![Example of a Client Action triggered by a Save button on a Screen](images/client-action-screen.png "Client Action on Screen Example")
 
 You can also create **Client Actions** in your Blocks.
 
 **In the client logic:** Lets you encapsulate logic for reuse in several Screens. For example, if you have a validation rule that you must apply in several screens of your app, you can create a **Client Action** general to the client logic and use that action in the Client Actions of your Screens:
 
-![Sample validation](images/client-action-logic.png?width=600)
+![Example of a Client Action encapsulated for reuse in client logic](images/client-action-logic.png "Client Action in Client Logic Example")
 
 You can set a **Client Action** as a function and use it directly in Expressions of the client-side logic.
 
@@ -57,7 +57,7 @@ You can set a **Client Action** as a function and use it directly in Expressions
 
 You can also create **Server Actions** in your apps to encapsulate the logic and reuse it in other Actions, such as other Server Actions, Data Actions or Client Actions. **Server Actions** run logic on the server.
 
-![Server Action in Service Studio](images/server-action-ss.png?width=600)
+![Example of a Server Action in a Reactive Web or Mobile App](images/server-action-ss.png "Server Action Example")
 
 You can set a **Server Action** as a function and use it directly in Expressions of the server-side logic.
 

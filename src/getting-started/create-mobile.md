@@ -34,26 +34,26 @@ Let's create a new task management mobile app. Do the following in Service Studi
 
 1. Select **New Application**.
 
-    ![New app in Service Studio](images/new-app-ss.png)
+    ![Screenshot showing the selection of 'New Application' in Service Studio](images/new-app-ss.png "New Application Selection")
 
 1. Select **From scratch** and click **Next**.
 
-    ![New app in Service Studio](images/from-scratch-ss.png)
+    ![Screenshot of the 'From scratch' option selected when creating a new app](images/from-scratch-ss.png "Creating App From Scratch")
 
 1. Choose the **Phone App** template and click **Next**.
 
-    ![Mobile App template](images/phone-app-template-ss.png)
+    ![Screenshot displaying the selection of the 'Phone App' template in the app creation process](images/phone-app-template-ss.png "Phone App Template Selection")
 
 1. Name the app **To Do** and click **Create App**. Service Studio opens app details for you to add your first module.
 
-    ![App name in the new app window](images/name-of-app-ss.png)
+    ![Screenshot where the name 'To Do' is entered for the new mobile app](images/name-of-app-ss.png "Naming the Mobile App")
 
 1. In the app detail screen, confirm the following and click **Create Module**:
     
     * The name of the module is `ToDo`
     * The module type is **Phone App**.
 
-    ![Create a Mobile Module](images/new-module-ss.png)
+    ![Screenshot showing the creation of a new module with the name 'ToDo' and type 'Phone App'](images/new-module-ss.png "Creating a New Module")
 
     An application contains one or more modules, different parts of the application can be encapsulated in a module. A module is where you design the data model, implement the logic, and design the UI of your application.
 
@@ -71,7 +71,7 @@ Download the [tutorial Excel file](https://www.outsystems.com/home/TutorialResou
 
 In the **ToDo** module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel**, and select the tutorial Excel file `TutorialResource.xlsx`. Click **Import** in the dialog to confirm.
 
-![Create a Database Table from an Excel File](images/create-mobile-03.png)
+![Screenshot illustrating the import of an Excel file into the OutSystems database](images/create-mobile-03.png "Importing Excel Data")
 
 When importing an Excel file, OutSystems creates a database table (called an Entity in OutSystems) with the necessary columns (called Attributes in OutSystems) to store the data in the database.
 
@@ -85,15 +85,15 @@ Now we can create a screen that lists all of the tasks.
 
 Open the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**. Then, drag a **Screen** from the Toolbox to an empty area in the Main Editor window. Choose the **Empty** template, name your screen `Tasks` and click **Create Screen**.
 
-![Create a new empty screen](images/create-mobile-04.png)
+![Screenshot of the process to create a new screen for listing tasks in the mobile app](images/create-mobile-04.png "Creating a List Screen")
 
 Drag the **Task** entity from the **Data** tab to the Content placeholder of the mobile screen that is displayed in the Main Editor window.
 
-![Create a Screen to List Tasks](images/create-mobile-05.png)
+![Screenshot showing the Task entity being dragged to the content placeholder of the mobile screen](images/create-mobile-05.png "Adding Task Entity to Screen")
 
 This updates the **Tasks** to include a list that initially displays 20 tasks and automatically loads more tasks when the user scrolls to the end of the list.
 
-![Tasks Screen](images/create-mobile-06.png)
+![Screenshot of the Tasks list screen with a list that loads more tasks on scroll](images/create-mobile-06.png "Tasks List Screen")
 
 ## Create a screen to edit tasks
 
@@ -101,17 +101,17 @@ Creating a screen to edit the records is as fast as creating a list screen.
 
 Right-click the title of the first task in the list, click **Link to** > **(New Screen)**, choose the **Empty** template, name your screen `TaskDetail` and click **Create Screen**.
 
-![Create a Screen to Edit Tasks](images/create-mobile-07.png)
+![Screenshot showing the linking of the task title to a new screen for editing tasks](images/create-mobile-07.png "Linking Task Title to Edit Screen")
 
 This links the title of the tasks to a newly created screen. We will use this new screen to edit the tasks, but for that we will need a form:
 
 1. Drag a **Form** widget from the Toolbox to the Content placeholder in the **TaskDetail** mobile screen.
 
-    ![Drag a Form](images/create-mobile-08.png)
+    ![Screenshot of a Form widget being added to the TaskDetail screen for editing tasks](images/create-mobile-08.png "Adding Form Widget to TaskDetail Screen")
 
 1. Drag the **Task** entity from the **Data** tab to the previously created Form.
 
-    ![Create a Screen to Edit Tasks](images/create-mobile-10.png)
+    ![Screenshot where the Task entity is dragged onto the previously created form on the TaskDetail screen](images/create-mobile-10.png "Dragging Task Entity to Form")
 
 Now we will define the logic that runs when the end users press the Save button:
 
@@ -127,7 +127,7 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. Next, we'll need to assign value of the output parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id`.
     
-    ![](images/wrapper-create-ss.png)
+    ![Screenshot of the logic flow for creating or updating a task in the OutSystems Service Studio](images/wrapper-create-ss.png "Task Create or Update Logic")
 
 <!---1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the **True** branch of the **If**. Set the **Source** property to `GetTaskById.List.Current`.
 
@@ -139,7 +139,7 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task. 
 
-   ![Create a Screen to Edit Tasks](images/create-mobile-11.png)
+   ![Screenshot showing the Save button logic in the TaskDetail screen for saving task changes](images/create-mobile-11.png "Save Button Logic")
 
 ## Allow completing tasks
 
@@ -149,7 +149,7 @@ Now let's add the functionality to mark tasks as complete. Let's implement that 
 
 1. In the newly created List Action, replace the text "Action" with "Done".
 
-    ![Allow Completing Tasks](images/create-mobile-14.png)
+    ![Screenshot of the Swipe Left Action being configured to mark tasks as done](images/create-mobile-14.png "Swipe Left Action for Task Completion")
 
 1. Double-click an empty area of the List Action to define the logic associated with the Swipe Left Action.
 
@@ -159,13 +159,13 @@ Now let's add the functionality to mark tasks as complete. Let's implement that 
 
 1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
 
-    ![](images/wrapper-delete-ss.png)
+    ![Screenshot depicting the logic for deleting a task in the OutSystems Service Studio](images/wrapper-delete-ss.png "Task Delete Logic")
 
 1. Go back to the **Interface** tab and double click the action **DeleteTask**. Drag the **TaskDelete** server action to the flow. and set the TaskId to the input parameter *TaskId*.
 
 1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
 
-    ![Allow Completing Tasks](images/reactive-new-app-delete-refresh.png)
+    ![Screenshot showing the Refresh Data action after deleting a task to update the task list](images/reactive-new-app-delete-refresh.png "Refresh Data After Task Deletion")
 
 
 ## Allow adding tasks
@@ -175,18 +175,18 @@ We want to enable the end users to add new tasks from the list screen by linking
 1. In the **Interface** tab, double-click the **Tasks** to open the list screen.  
 Drag an **Icon** widget from the Toolbox to the Actions placeholder in the top right-hand corner of the screen and select the **plus** icon.
 
-    ![Add plus icon to Actions placeholder](images/create-mobile-12.png)
+    ![Screenshot of adding a plus icon to the Actions placeholder for creating new tasks](images/create-mobile-12.png "Adding New Task Icon")
 
 1. Right-click the **plus** icon and choose **Link** > **MainFlow\TaskDetail**.
 
-    ![Allow Adding Tasks](images/create-mobile-13.png)
+    ![Screenshot showing the plus icon linked to the TaskDetail screen for adding new tasks](images/create-mobile-13.png "Linking Plus Icon to TaskDetail Screen")
 
 
 ## Test your Mobile App
 
 At this stage we test the mobile app. Click the **1-Click Publish** button to publish the application to your environment.
 
-![Publish Your Mobile App](images/create-mobile-17.png)
+![Screenshot of the 1-Click Publish button to deploy the mobile app to the environment](images/create-mobile-17.png "Publishing the Mobile App")
 
 When the application is deployed, click the **Open in Browser** button to test your application in a browser (Chrome and Safari are supported).
 

@@ -23,4 +23,4 @@ For more information on how to use the Map component, see [How to use the Map co
 ## Static maps 
 Static maps are images that allow you to show simple maps. This type of map can be used in contexts where it is not possible to use a dynamic map, such as emails. Given its nature, it is not possible to interact with a static map or add elements, such as markers in runtime.
 
-![Map pattern in the preview screen](<images/map-overview.png>)
+![Overview of a static map in OutSystems application](images/map-overview.png "Static Map Overview")

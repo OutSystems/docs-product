@@ -1,12 +1,12 @@
 ---
-tags: 
+tags:
 locale: en-us
 guid: 014b125f-f9e4-4681-bc53-52a4b6c4ea58
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1414:1770
+summary: The article explains how to create, manipulate, and map lists in OutSystems, including system actions and runtime properties for list operations
 ---
-
 # List
 
 A List is a sequence of elements of the same data type, which may contain duplicate values. Elements can be inserted, fetched and removed from a list.
@@ -21,23 +21,23 @@ This example uses a Local Variable in a Screen. To create a Local Variable with 
 
 1. In the **Interface** tab, right-click a screen and select **Add Local Variable**.
 
-    ![Add a Local Variable to a screen](images/add-localvariable-ss.png)
+    ![Screenshot showing the context menu option to add a local variable in the Interface tab](images/add-localvariable-ss.png "Adding a Local Variable")
 
 1. Enter a name for the variable, for example, `Projects`.
 
 1. In the **Data Type** property, select **List...** from the dropdown.
 
-    ![Selecting List data type for the Local Variable](images/select-list-ss.png)
+    ![Screenshot of the Data Type property dropdown with List data type selected](images/select-list-ss.png "Selecting List Data Type")
 
 1. In **'Projects' List Element Type**, select the Data Type for your list's elements, for example, **Record**.
 
 1. On the Elements tree, note that a Text attribute is automatically created under the Projects local variable. Select this attribute and on the properties section, change its **Name** to, for example, `Name`.
 
-    ![Text attribute renamed to 'Name'](images/name-attribute-ss.png)
+    ![Screenshot highlighting the Text attribute under the Projects local variable being renamed to 'Name'](images/name-attribute-ss.png "Naming the List Attribute")
 
 1. To add a new attribute, right-click the Projects local variable and select **Add Attribute**.
 
-    ![Add Attribute to the Projects variable](images/add-attribute-ss.png)
+    ![Screenshot showing the option to add a new attribute to the Projects local variable](images/add-attribute-ss.png "Adding a New Attribute")
 
 1. Enter a name for the attribute, for example, `Description`.
 
@@ -48,7 +48,7 @@ This guide shows how to map another list to the Projects local variable created 
 
 1. Right-click your screen and select **Add Client Action**.
 
-    ![Add Client Action to a screen](images/add-clientaction-ss.png)
+    ![Screenshot showing the context menu option to add a client action on a screen](images/add-clientaction-ss.png "Adding a Client Action")
 
 1. Enter a name for the Client Action, for example, `MapProjects`.
 
@@ -60,19 +60,19 @@ This guide shows how to map another list to the Projects local variable created 
 
 1. A new section **Mapping from Project** appears. Make sure the mapping between attributes is correct.
 
-    ![Properties of the Assign node, with the mapping options](images/map-assign-ss.png)
+    ![Screenshot of the Assignments section with the Projects local variable being mapped to GetProjectById.List](images/map-assign-ss.png "Mapping Attributes in an Assignment")
 
 ## How to add an element to a list
 
 To add an element to a list, use the [ListAppend](<../../apis/auto/system-actions.final.md#ListAppend>) system action. This action is available both as a Client Action and a Server Action.
 
-![Action flow with a ListAppend action](images/listappend-ss.png)
+![Screenshot of the ListAppend system action in the development environment](images/listappend-ss.png "ListAppend System Action")
 
 ## How to iterate a list
 
 To iterate a list, use a For Each. Check [this guide](../../../develop/logic/list-iterate.md) on how to do it. 
 
-![Action flow with a For Each node](images/foreach-ss.png)
+![Screenshot showing a For Each loop in the development environment](images/foreach-ss.png "For Each Loop")
 
 ## Lists in input parameters
 
@@ -82,7 +82,7 @@ The following procedures are examples of how  you can use lists in input paramet
 
 In this example, there is a CombineProjects action that calls the FilterProjects action in its flow. The FilterProjects action has an input parameter named NamesList of data type **Text List**. 
 
-![Action 'CombineProjects' flow with an Action 'FilterProjects'.](images/comb-flow-ss.png)
+![Screenshot of the CombineProjects action flow calling the FilterProjects action](images/comb-flow-ss.png "CombineProjects Action Flow")
 
 When the FilterProjects action is called, you have to define which list to set as input parameter. In this example, the mapping is made from the Projects local variable created in the [example above](#createvariable). The Projects local variable has two attributes and the NamesList input parameter only has one, so only the Name attribute of the Projects local variable will be mapped to the input parameter. Follow these steps:
 
@@ -92,7 +92,7 @@ When the FilterProjects action is called, you have to define which list to set a
 
 1. In the **Mapping to Text** section, you have to define which attribute to map. Select the **Name** attribute from the dropdown.
 
-    ![Action 'FilterProjects' properties.](images/filterprojects-map-ss.png)
+    ![Screenshot showing the mapping of the Name attribute of the Projects local variable to the NamesList input parameter](images/filterprojects-map-ss.png "Mapping a List to an Input Parameter")
 
 
 ### How to add an element to a list input parameter
@@ -101,11 +101,11 @@ Instead of mapping from another list, you can add elements manually. Follow thes
 
 1. Click **+** to the left of **NamesList** to create a list with one element.
 
-    ![Action 'FilterProjects' properties, hovering the + to the left of the argument.](images/filterprojects-plus-ss.png)
+    ![Screenshot of the '+' button to add an element to the NamesList input parameter](images/filterprojects-plus-ss.png "Adding an Element to a List Input")
 
 1. In the element field, enter the value for the first element of the list.
 
-    ![Action 'FilterProjects' properties, with element 0 expanded](images/filterprojects-0arg-ss.png)
+    ![Screenshot of the input field for entering the value of the first element in the NamesList input parameter](images/filterprojects-0arg-ss.png "Entering a Value for List Element")
 
 1. To add more elements, repeat steps 1 and 2.
 

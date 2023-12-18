@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/layout-loginsplit-1-diag.png>)
+![Diagram showing the layout of the Login Split web block in Traditional Web Apps](images/layout-loginsplit-1-diag.png "Layout Login Split Diagram")
 
 ### Login
 
@@ -32,7 +32,7 @@ Drag login related content to this placeholder.
 1. Remove the background container and drag an image.
 1. Publish and test.
 
-![](<images/layout-loginsplit-1-ss.gif?width=600>)
+![Animated GIF demonstrating how to change the background to an image in the Login Split web block](images/layout-loginsplit-1-ss.gif "Login Split Background Image Change")
 
 ### Change layout structure
 
@@ -40,7 +40,7 @@ Drag login related content to this placeholder.
 1. Change the Column type by using the corresponding parameter (for instance, ColumnsMediumRight).
 1. Publish and test.
 
-![](<images/layout-loginsplit-2-ss.gif?width=600>)
+![Animated GIF showing the process of changing the layout structure in the Login Split web block](images/layout-loginsplit-2-ss.gif "Login Split Layout Structure Change")
 
 ## Compatibility with other patterns
 

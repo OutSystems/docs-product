@@ -24,7 +24,7 @@ When published in the target environment, Workflow Builder bootstraps the app's 
 
 The following diagram shows the modules of a Workflow Builder generated app:
 
-![Case Management app structure](images/wfb-case-manag-app.png)
+![Diagram illustrating the modules of a Workflow Builder generated case management app, including End User, Core, and Library layers.](images/wfb-case-manag-app.png "Workflow Builder Generated App Modules")
 
 The case management apps contains three layers, according to the [OutSystems Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas):
 
@@ -59,12 +59,12 @@ An admin can assign other Workflow Builder users as admins, in **Settings** > **
 
 To allow the business developers to test their apps while developing them Workflow Builder creates sample users on the publishing process, based on the groups of users defined in the workflow.
 
-![Example of sample users for testing your apps](images/wfb-sample-users.png)
+![Image showing sample users created by Workflow Builder during the publishing process for testing purposes.](images/wfb-sample-users.png "Sample Users in Workflow Builder")
 
 Logging in using these users shows the menus and screens specific to that users. For example, a requester sees a menu to create a new request and submit it for approval, and a manager sees the list of requests that need approval, and have the option to approve or reject them.
 
 The following image shows an example of a requester's **My requests** screen:
 
-![Requester's sample screen](images/wfb-sample-screen-requester.png)
+![Screenshot of a requester's 'My requests' screen in a Workflow Builder generated app, showing the user interface for creating and submitting requests.](images/wfb-sample-screen-requester.png "Requester's My Requests Screen in Workflow Builder")
 
 Check [Generating and testing your app](publish-test.md) for more information.

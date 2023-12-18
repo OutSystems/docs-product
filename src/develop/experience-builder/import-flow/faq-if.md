@@ -20,7 +20,7 @@ The **Experience Builder Templates Mobile** app provides two layout options:
 * Layout: Block that displays a header, footer, back button, and menu. Should be used on most screens.
 * LayoutBlank: Layout block that displays nothing but the screen content. Usually used when a more simple structure is needed, for example, Login and Sign Up pages. Screens that are built with this layout block are not affected by the user's customizations on Experience Builder's menu canvas.
 
-![Preview in browser of the Layout and LayoutBlank blocks](images/layout-options-eb.png)
+![Screenshot of Experience Builder layout options including the standard layout and LayoutBlank](images/layout-options-eb.png "Experience Builder Layout Options")
 
 ## Can I import flows with external dependencies?
 
@@ -53,12 +53,12 @@ BackButton | Identifies exit points used by the user to navigate to the previous
 Login | Identifies exit points used by the user to enter the application after a successful Login
 Onboarding | Identifies exit points that directs the user after being onboarded
 
-![Diagram demonstrating the Link type value on flows. The onboarding flow has an onboarding exit point. The Login flow has a Login Exit Point. The AccountDetail flow has a BackButton.](images/exit-point-type-eb.png)
+![Table describing different exit point types in Experience Builder such as BackButton, Login, and Onboarding](images/exit-point-type-eb.png "Experience Builder Exit Point Types")
 
 ## What is the effect of the "Has menu?" property on imported screens
 
 This property defines which screens should have a menu that is automatically added by Experience Builder.
 
-![Diagram displaying four sequential screens. The first and the fourth screens have a bottom bar and the property "Has menu" equal to true. The second and third don't have the bottom bar and the property is set to false.](images/screen-has-menu-eb.png)
+![Illustration of the 'Has menu?' property toggle in Experience Builder indicating whether a screen should have a menu](images/screen-has-menu-eb.png "Experience Builder Screen Menu Property")
 
 Usually, most screens should have a menu to allow users to easily navigate through the app. The exceptions are screens where the user should not leave a process (for example, the intermediary screens on a step-by-step process).

@@ -15,11 +15,11 @@ The Edit menu contains the following operations:
 
 Menu Item | Description
 :--------:|:-----------
-![](images/file-undo.gif) Undo | Reverse the last operation you executed in the current screen contents. Each click reverses one more operation.
-![](images/file-redo.gif) Redo | Reverse the action of the Undo. Each click reverse one more Undo operation.
-![](images/file-cut.gif) Cut | Removes the selected element(s) or text and stores it in the Clipboard.
-![](images/file-copy.gif) Copy | Stores the selected element(s) or text in the Clipboard.
-![](images/file-paste.gif) Paste | Insert the element(s) or text in the Clipboard at the insertion point.
-![](images/edit-find.gif) Find (`Ctrl+F`) | Allows you to search for a string in your extension.
+![Icon representing the Undo operation in the Edit menu](images/file-undo.gif "Undo Operation Icon") Undo | Reverse the last operation you executed in the current screen contents. Each click reverses one more operation.
+![Icon representing the Redo operation in the Edit menu](images/file-redo.gif "Redo Operation Icon") Redo | Reverse the action of the Undo. Each click reverse one more Undo operation.
+![Icon representing the Cut operation in the Edit menu](images/file-cut.gif "Cut Operation Icon") Cut | Removes the selected element(s) or text and stores it in the Clipboard.
+![Icon representing the Copy operation in the Edit menu](images/file-copy.gif "Copy Operation Icon") Copy | Stores the selected element(s) or text in the Clipboard.
+![Icon representing the Paste operation in the Edit menu](images/file-paste.gif "Paste Operation Icon") Paste | Insert the element(s) or text in the Clipboard at the insertion point.
+![Icon representing the Find operation in the Edit menu](images/edit-find.gif "Find Operation Icon") Find (`Ctrl+F`) | Allows you to search for a string in your extension.
 Find Next (`F3`) | Allows you to continue the search previously defined.
 Options... | Allows you to configure parameters related to the development in Integration Studio.<br/>For more information, see [Options window](<options.md>).

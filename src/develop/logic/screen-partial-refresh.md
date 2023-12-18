@@ -36,4 +36,4 @@ To refresh only part of a screen on a web app:
 
 4. Drag the Ajax Refresh from the toolbox to the action flow and select the widget that displays the updated data on the screen. The Ajax Refresh can only refresh widgets that have the property Name defined. 
 
-![](images/screen-partial-refresh-flow.png?width=750)
+![Flow diagram showing the process of refreshing part of a screen using Ajax in a Traditional Web App](images/screen-partial-refresh-flow.png "Ajax Screen Partial Refresh Flow")

@@ -36,7 +36,7 @@ To customize the request before it is sent:
 
 1. Set the **On Before Request** property of the REST API to `New OnBeforeRequest`.
   
-    ![Select New OneBeforeRequest](images/rest-new-onbeforerequest-ss.png)
+    ![Screenshot showing how to select 'New OnBeforeRequest' in the REST API properties](images/rest-new-onbeforerequest-ss.png "Select New OnBeforeRequest")
 
     An "OnBeforeRequest" action is made available under the REST API.
 
@@ -48,11 +48,11 @@ To customize the request before it is sent:
 
 To customize specific parts of a [multipart/form-data request](consume-multipart-form-data.md) inside the **OnBeforeRequest** callback, such as adding, removing, or editing parts, you can use the **RequestParts** attribute that represents a **RequestPart** list.
 
-![List of HTTPRequest attributes](images/requestparts-ss.png)
+![Screenshot of the RequestParts attribute in the REST API editor](images/requestparts-ss.png "RequestParts Attribute")
 
 The following example shows the logic flow of an **OnBeforeRequest** callback that appends, removes, and edits a part from the request. In this example, the **Request.RequestParts** list is edited. 
 
-![Action flow of the OnBeforeRequest callback](images/requestparts-action-ss.png)
+![Example logic flow in an OnBeforeRequest callback showing how to append, remove, and edit parts of a request](images/requestparts-action-ss.png "OnBeforeRequest Callback Logic Flow")
 
 ### Example use case: Adding a header for token-based authentication
 
@@ -79,7 +79,7 @@ You can add the following steps to the callback logic flow, as an example:
 
 1. Set the "CustomizedRequest" output parameter to our changed "Request" using an Assign element.
 
-![Set output parameter](images/rest-example-onbeforerequest-ss.png)
+![Screenshot illustrating the steps to add an authorization header in the OnBeforeRequest callback](images/rest-example-onbeforerequest-ss.png "Adding a Header for Token-Based Authentication")
 
 ## Customize the response
 
@@ -87,7 +87,7 @@ To customize the response after it has arrived:
 
 1. Set the **On After Response** property of the REST API to `New OnAfterResponse` action.
 
-    ![Select NewAfterResponse](images/rest-new-onafterresponse-ss.png)
+    ![Screenshot showing how to select 'New OnAfterResponse' in the REST API properties](images/rest-new-onafterresponse-ss.png "Select New OnAfterResponse")
 
     An "OnAfterResponse" action is made available under the REST API.
 

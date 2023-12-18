@@ -139,7 +139,7 @@ $actions.GlobalAsyncAction().then(function(result) {
 
 Note that a "$reject(...)" call or an error not handled by a "catch()" will produce an error feedback message by default, shown at the top of your application screen:
 
-![](images/feedback-message-error.png)
+![Error feedback message displayed at the top of the application screen](images/feedback-message-error.png "Error Feedback Message")
 
 <div class="info" markdown="1">
 

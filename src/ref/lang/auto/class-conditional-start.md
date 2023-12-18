@@ -6,8 +6,8 @@ guid: af6bd145-bc87-4f22-b917-dfff49c8691e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=848:1418
+summary: The article explains how to use the Conditional Start process activity to trigger process flows in response to entity record creation or update events
 ---
-
 # Conditional Start
 
 When designing the process flow of your process, you can start a flow when an event occurs in an entity record. This behavior is implemented through the **Conditional Start** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
@@ -32,7 +32,7 @@ In some cases you may want the Conditional Start to be executed only after one o
 
 This kind of connector is represented as the green dotted connector shown in the image below:
 
-![](images/dependency-connector.png)
+![Green dotted connector indicating dependency for Conditional Start in a process flow diagram](images/dependency-connector.png "Dependency Connector for Conditional Start")
 
 ## Using Conditional Start Activity References
 

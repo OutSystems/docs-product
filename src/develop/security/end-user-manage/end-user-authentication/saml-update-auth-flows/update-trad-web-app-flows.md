@@ -32,7 +32,7 @@ Do the following:
     * **User\_GetUnifiedLoginUrl**
     * **User\_GetUnifiedLogoutUrl**
 
-    ![Add dependency to two Server Actions from the Users Module](images/saml-reactive-manage-dependencies-ss.png)
+    ![Screenshot showing how to add User_GetUnifiedLoginUrl and User_GetUnifiedLogoutUrl dependencies in OutSystems Service Studio](images/saml-reactive-manage-dependencies-ss.png "Adding Dependencies in Service Studio")
 
 1. Click **Apply**.
 
@@ -56,7 +56,7 @@ Do the following:
 
 Check the following sample flow for a possible implementation of the steps above:
 
-![Sample implementation of an updated Logout flow](images/saml-trad-web-logout-flow-details-ss.png)
+![Flowchart detailing the logout process in a SAML traditional web application with conditions and redirects](images/saml-trad-web-logout-flow-details-ss.png "SAML Traditional Web App Logout Flow")
 
 If your **LoginInfo** Web Block contains a **Login** link pointing to the **Logout** Screen Action, you must also do the following:
 
@@ -72,4 +72,4 @@ If your **LoginInfo** Web Block contains a **Login** link pointing to the **Logo
 
 Check the following sample flow for a possible implementation of the steps above:
 
-![Updated flow of LoginInfo > Login Screen Action](images/saml-trad-web-login-flow-details-ss.png)
+![Flowchart illustrating the login process in a SAML traditional web application with conditions and redirects](images/saml-trad-web-login-flow-details-ss.png "SAML Traditional Web App Login Flow")

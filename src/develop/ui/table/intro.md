@@ -12,13 +12,13 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 You can use the Table Widget to create a table on your app screens, when you want to show data in cells distributed in rows and columns. This widget is available in Reactive Web Apps.
 
-![Table Widget](<images/table-in-toolbar-ss.png>)
+![Screenshot of the Table Widget in the toolbar of a Reactive Web App editor](images/table-in-toolbar-ss.png "Table Widget in Toolbar")
 
 ## Table Toolbar
 
 When you select a table created with Table Widget, you can use the Table toolbar in the main editor to move, add, or delete the columns.
 
-![Table Widget](<images/table-edit-commands-ss.png>)
+![Screenshot showing table edit commands in the main editor toolbar](images/table-edit-commands-ss.png "Table Edit Commands")
 
 ## Create a table in Reactive Web App
 
@@ -26,7 +26,7 @@ The quickest way to create a table in Reactive Web App is by dragging an Entity 
 
 To change the default number of records to show, edit the value of the **MaxRecords** Local Variable associated with the Screen where you dropped the Entity. 
 
-![Table Widget](<images/table-from-entity-preview-ss.png?width=700>)
+![Preview of a table created by dragging an Entity onto a Reactive Web App screen](images/table-from-entity-preview-ss.png "Table Creation from Entity")
 
 ## Create a table in Mobile and Progressive Web App
 
@@ -38,7 +38,7 @@ To create a Table in a Mobile App, which you distribute as a native mobile app o
 4. Select the Table. From the list in **Table** > **Properties** > **Source** select the List that was created previously by adding the Aggregate.
 5. Expand the Aggregate and Entity associated with the Screen. To create the columns, drag the Entity Attributes to the Table. The Table preview populates with sample the data preview.
 
-    ![Table Widget in a mobile app](<images/table-mobile-app-create-column-ss.png?width=700>)
+    ![Screenshot demonstrating how to add columns to a Table in a Mobile or Progressive Web App](images/table-mobile-app-create-column-ss.png "Adding Columns to Table in Mobile App")
 
 ## Add a new column
 

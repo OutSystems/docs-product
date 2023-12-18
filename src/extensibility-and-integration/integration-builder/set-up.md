@@ -4,13 +4,13 @@ guid: 617ec597-a128-4b2a-872f-4a3a5856628c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:2309
+summary: The article provides a guide on setting up Integration Builder in OutSystems, including prerequisites, registering infrastructure, installing dependencies, and configuring on-premises environments
 ---
-
 # How to set up Integration Builder
 
 Integration Builder is a Software as a Service (SaaS) that connects to your OutSystems environment to authenticate and validate user connections. Integration Builder works with Integration Manager to keep the status of your integrations current, so it needs to be able to connect with the environments to which you deploy the integrations. In addition, Integration Builder is available in all OutSystems editions.
 
-![Integration Builder connects to your environments](images/architecture-ib-setup-diag.png.png)
+![Diagram illustrating the architecture setup for Integration Builder in OutSystems](images/architecture-ib-setup-diag.png "Integration Builder Architecture Diagram")
 
 ## Prerequisites { #prerequisites }
 
@@ -84,7 +84,7 @@ After registering your infrastructure, a **Setup** widget at the bottom right pr
 
 To install dependencies, follow these steps:
 
-![Install dependencies](images/setup-widget-install-depend-ib.png)
+![Screenshot of the Setup widget prompting to install dependencies in Integration Builder](images/setup-widget-install-depend-ib.png "Setup Widget for Installing Dependencies")
 
 1. Click the **Setup** widget to expand it.
 
@@ -92,7 +92,7 @@ To install dependencies, follow these steps:
 
 After these steps Integration Builder stars installing the dependencies listed.
 
-![Installing dependencies](images/setup-widget-installling-depend-ib.png)
+![Screenshot showing the Setup widget in the process of installing dependencies in Integration Builder](images/setup-widget-installling-depend-ib.png "Setup Widget Installing Dependencies")
 
 ## Setting up on-premises environments
 

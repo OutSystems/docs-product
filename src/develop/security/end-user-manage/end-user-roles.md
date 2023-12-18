@@ -26,7 +26,7 @@ To grant a role to an end user:
 
 1. Click on **Add** to grant the role to the end user.
 
-![Grant an end user role from the application detail page](images/end-user-roles-gif1.gif?width=700)
+![Animated GIF showing the process of granting a role to an end user in the Users application](images/end-user-roles-gif1.gif "Granting a Role to an End User")
 
 ## Revoke a role from an end user { #revoke-role }
 
@@ -42,8 +42,8 @@ To revoke a role from an end user:
 
 1. Hover over the end user in the list and click on **Remove** to revoke the role from the end user.
 
-![Revoke an end user role from the application detail page](images/end-user-roles-gif2.gif?width=700)
+![Animated GIF demonstrating how to revoke a role from an end user in the Users application](images/end-user-roles-gif2.gif "Revoking a Role from an End User")
 
 Alternatively, you can grant or revoke a role from a user in the user details page. In this page you can view the list of all the roles granted to the user.
 
-![Grant an end user role from the user details page](images/roles-grant-from-user-usr.gif?width=700)
+![Animated GIF illustrating the alternative method of granting or revoking roles from the user details page in the Users application](images/roles-grant-from-user-usr.gif "Granting or Revoking Roles from User Details Page")

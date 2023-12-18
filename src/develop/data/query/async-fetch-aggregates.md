@@ -49,7 +49,7 @@ Let's create a "master" UI populated by the records from the Aggregate that fetc
 
 1. Go back to the **Interface** tab, and Set the **Fetch** property of the **GetEmployees** Aggregate to `At start`. This ensures that the app requests the data from the database when the Screen loads.
 
-    ![Fetch property of the Aggregate](images/master-detail-fetch-at-start.png)
+    ![Screenshot showing the Fetch property of the Aggregate configured to At start for immediate data fetching](images/master-detail-fetch-at-start.png "Fetch property of the Aggregate set to At start")
 
 1. Open your MasterDetailTutorial Screen and drag a Columns Medium Left Widget to the editor.
 
@@ -57,11 +57,11 @@ Let's create a "master" UI populated by the records from the Aggregate that fetc
 
 1. Drag a Tag Widget to the List Widget. At this point, your Screen should look similar to this:
 
-    ![Load all items in master detail](images/master-detail-load-all.png)
+    ![User interface of the MasterDetailTutorial Screen displaying a list of all employees](images/master-detail-load-all.png "Master detail screen with all items loaded")
 
     You can adjust the tag style in the properties:
 
-    ![Properties of the Tag Widget](images/master-detail-tag-props.png)
+    ![Properties panel of the Tag Widget in Service Studio showing style adjustments](images/master-detail-tag-props.png "Properties of the Tag Widget")
 
 1. Drag an Expression Widget to the Tag Widget. **Expression Value** editor opens. Enter `GetEmployees.List.Current.Sample_Employee.FirstName + " " + GetEmployees.List.Current.Sample_Employee.LastName` and click **Done**. The tags now show the employees' first and last names. Run the app, and you should see a Screen with the list of employees.
 
@@ -73,7 +73,7 @@ Let's now create the "detail" UI that loads and shows data only after a click. T
 
 1. Still in the Aggregate details pane, add a Filter to GetEmployeeDetails Aggregate with the following condition: `Sample_Employee.Id = GetEmployees.List.Current.Sample_Employee.Id`. This forces the Aggregate to return only a single record, a record that matches selection in the list of employees.
 
-    ![Filter that ensures only one record is returned](images/master-detail-filter.png)
+    ![Configuration of a filter in the GetEmployeeDetails Aggregate to ensure only one record is returned](images/master-detail-filter.png "Filter for Aggregate to return a single record")
 
 1. Set the **Fetch** property of the **GetEmployeeDetails** Aggregate to **Only on demand**. With this setting, the Aggregate queries the database only upon a request.
 
@@ -83,7 +83,7 @@ Let's now create the "detail" UI that loads and shows data only after a click. T
 
 1. Drag **GetEmployeeDetails** Aggregate to the False branch of the If Widget. This "scaffolds" an interface with the employee details and picture. At this point you should have a Screen with two Aggregates that update different parts of UI. The screenshot contains additional overlay to show how Aggregates fetch data for different parts of the Screen.
 
-    ![Load all items in master detail](images/master-detail-aggregates.png)
+    ![MasterDetailTutorial Screen showing how separate Aggregates fetch data for different parts of the UI](images/master-detail-aggregates.png "Master detail screen with separate Aggregates")
 
 1. Publish the app. If you open it in the browser, you should see the message "Select an employee to see the details.". In the next section we implement the logic to refresh the UI asynchronously.
 
@@ -99,13 +99,13 @@ The "detail" UI that loads data only when requested must be triggered. In this e
 
 1. Select the **Expression** within the Tag. In the "Events" section of the properties in the **Events** list, select **onclick**. In the **Handler** list select **New Client Action**. The **OnClick Client Action** opens for editing.
 
-    ![Adding events to trigger async loading](images/master-detail-events-refresh-ui.png)
+    ![Service Studio interface showing the process of adding onclick events to trigger asynchronous data loading](images/master-detail-events-refresh-ui.png "Adding events to trigger asynchronous loading")
 
 1. Drag an **Assign** node to the flow. In the **Variable** property, enter `GetEmployeeDetails.List.Current.Sample_Employee.Id`, and in **Value** enter `GetEmployees.List.Current.Sample_Employee.Id`. This tells the app which employee is selected in the list.
 
 1. Drag a **Refresh Data** to the flow below the Assign. When the **Select Data Source** dialog shows, select **GetEmployeeDetails**. This refreshes the UI where the data is used.
 
-    ![Flow with Assign and Refresh Data](images/master-detail-refresh-ui.png)
+    ![Flow diagram in Service Studio with Assign and Refresh Data nodes to update the UI asynchronously](images/master-detail-refresh-ui.png "Flow with Assign and Refresh Data")
 
 1. Publish the app and try clicking on the employee names. You should see the details load on the right side of the screen.
 
@@ -113,8 +113,8 @@ The "detail" UI that loads data only when requested must be triggered. In this e
 
 To see a working example, you can also create a Screen from one of the Screen Templates that are built around the master-detail pattern. 
 
-![Master-Detail Pattern in Screen Template dialog](images/master-detail-template.png)
+![Preview of a Screen Template implementing the master-detail pattern in Service Studio](images/master-detail-template.png "Master detail pattern Screen Template")
 
 In the created Screen, check the **Fetch** properties of the Aggregates and related logic.
 
-![Master-Detail Pattern in Service Studio](images/master-detail-sample.png)
+![Example of a master-detail implementation showing Fetch properties of Aggregates and related logic](images/master-detail-sample.png "Master detail sample implementation")

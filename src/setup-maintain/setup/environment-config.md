@@ -24,7 +24,7 @@ The Service Center console of a specific environment (eg. Development, Test, Pro
 
 The configuration of your environment is done in the **Administration > Environment Configuration** area in Service Center console:
 
-![](images/environment-config-1.png)
+![Screenshot of the Service Center console showing the Administration and Environment Configuration area](images/environment-config-1.png "Service Center Environment Configuration")
 
 When installing the Platform Server for the first time, you must configure the following settings:
 

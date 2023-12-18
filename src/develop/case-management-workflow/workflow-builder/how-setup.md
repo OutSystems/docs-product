@@ -49,7 +49,7 @@ Before logging in for the first time, make sure you have IT user accounts for yo
 
 When you log in to [Workflow Builder](http://workflowbuilder.outsystems.com/) for the first time you enter the following welcome screen:
 
-![Workflow Builder login page](images/login-wfb.png)
+![Screenshot of the Workflow Builder login page with environment field](images/login-wfb.png "Workflow Builder Login Page")
 
 To log in to Workflow Builder, perform the following steps.
 
@@ -76,11 +76,11 @@ To begin registering your infrastructure in Workflow Builder, perform the follow
 
 1. Click **Register environment**.
 
-    ![Workflow Builder welcome screen](images/wfb-setup-landingpage.png?width=750)
+    ![Workflow Builder welcome screen highlighting the 'Register environment' button](images/wfb-setup-landingpage.png "Workflow Builder Welcome Screen")
 
 1. Read the Workflow Builder disclaimer and GDPR information carefully. To proceed, click **Accept and continue**.
 
-    ![](images/wfb-setup-disclaimer.png)
+    ![Workflow Builder setup screen displaying disclaimer and GDPR information with 'Accept and continue' button](images/wfb-setup-disclaimer.png "Workflow Builder Disclaimer and GDPR Information")
 
 1. Check your OutSystems Platform Server release version.
 
@@ -93,7 +93,7 @@ For OutSystems releases later than **11.8.0** (April 2020), Workflow Builder col
 
 1. Check the information displayed, and click **Register**.
 
-    ![](images/wfb-setup-activation-code-manual-register.png)
+    ![Workflow Builder registration screen showing manual entry of activation code and 'Register' button](images/wfb-setup-activation-code-manual-register.png "Workflow Builder Manual Registration")
 
 1. Proceed to the [Final steps](#final-steps) section.
 
@@ -104,11 +104,11 @@ For Platform Server releases **between 11.7.2 and 11.8.0** (April 2020), perform
 1. Enter your activation code, and click **Register**.
 Check how to [Find the Activation Code of your infrastructure](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/02_Manage_and_Upgrade/Find_the_Activation_Code_and_the_Serial_Number).
 
-    ![](images/wfb-setup-enter-activation-code.png)
+    ![Enter activation code field in Workflow Builder setup with 'Register' button](images/wfb-setup-enter-activation-code.png "Enter Activation Code in Workflow Builder")
 
 1. Workflow Builder collects all data from your infrastructure automatically. Check the information displayed, and click **Register**.
 
-    ![](images/wfb-setup-activation-code-manual-register.png)
+    ![Workflow Builder registration screen showing manual entry of activation code and 'Register' button](images/wfb-setup-activation-code-manual-register.png "Workflow Builder Manual Registration")
 
 ### Final steps
 
@@ -122,7 +122,7 @@ Case Management framework is only installed in the registered environment.
 
 In case the Case Management framework fails to install, you have the possibility to download it and install it directly in your environment as any other OutSystems app, through your Service Center.
 
-![](images/wfb-setup-success.png)
+![Confirmation screen of successful Workflow Builder setup with Case Management framework installation](images/wfb-setup-success.png "Workflow Builder Setup Success")
 
 At this stage, you need to set up the governance model according to the instructions in the following sections.
 
@@ -135,7 +135,7 @@ You can invite business developers to leverage the Workflow Builder to build wor
 
 When building the workflow app, Workflow Builder users can assign tasks in the workflow to specific roles. Learn [How to set up the end users hierarchy](how-setup-end-users-hierarchy.md) to enable this capability.
 
-![](images/wfb-setup-register-complete.png)
+![Workflow Builder setup completion screen with 'Go to Workflow Builder' button](images/wfb-setup-register-complete.png "Workflow Builder Registration Complete")
 
 Click **Go to Workflow Builder button** to go to the Workflow Builder home screen.
 

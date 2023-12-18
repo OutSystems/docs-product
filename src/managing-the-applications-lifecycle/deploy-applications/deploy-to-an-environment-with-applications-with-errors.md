@@ -9,9 +9,9 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 
 # Deploy to an Environment with Applications with Errors
 
-In LifeTime, you may find applications marked with a ![](images/deploy-to-an-environment-with-applications-with-errors-1.png) icon next to them in a environment. This means that they are currently using (referencing) functionality of other applications but that functionality is no longer available or is incompatible. These applications are said to have incompatible references.
+In LifeTime, you may find applications marked with a ![Icon indicating applications with incompatible references in an environment](images/deploy-to-an-environment-with-applications-with-errors-1.png "Incompatible References Icon") icon next to them in a environment. This means that they are currently using (referencing) functionality of other applications but that functionality is no longer available or is incompatible. These applications are said to have incompatible references.
 
-![](images/deploy-to-an-environment-with-applications-with-errors-2.png)
+![Screenshot showing the Sales application with incompatible references in the Quality Assurance environment](images/deploy-to-an-environment-with-applications-with-errors-2.png "Incompatible References in Quality Assurance Environment")
 
 In the example above the Sales application has incompatible references in the Quality Assurance environment. This happens because Sales is using a public action of Customer Services through a reference.
 

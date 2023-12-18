@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Floating Content UI Pattern to display content on top of other screen elements, such as a map with navigation instructions.
 
-![](<images/floatingcontent-1-ss.png>)
+![Screenshot showing an example of a Floating Content panel floating over a map](images/floatingcontent-1-ss.png "Floating Content Panel Example")
 
 **How to use the Floating Content UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Floating Content UI Pattern to display content on top of other s
 
     The Floating Content widget is displayed.
 
-    ![](<images/floatingcontent-2-ss.png>)
+    ![Screenshot of the Floating Content widget in the Service Studio toolbox](images/floatingcontent-2-ss.png "Floating Content Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,7 +42,7 @@ You can use the Floating Content UI Pattern to display content on top of other s
 
     In this example, the Main Content area of already contains an image of a map. 
 
-    ![](<images/floatingcontent-3-ss.png?width=800>)
+    ![Screenshot illustrating how to drag the Floating Content widget into the Main Content area of an application screen](images/floatingcontent-3-ss.png "Dragging Floating Content Widget to Main Content Area")
 
     By default, the Floating Content widget contains a Content placeholder.
 
@@ -50,11 +50,11 @@ You can use the Floating Content UI Pattern to display content on top of other s
 
     In this example, we add a Search widget. 
 
-    ![](<images/floatingcontent-4-ss.png?width=800>)
+    ![Screenshot showing the addition of a Search widget to the Floating Content placeholder](images/floatingcontent-4-ss.png "Adding Content to Floating Content Placeholder")
 
 1. Select the Floating Content widget, and on the **Properties** tab, set the mandatory **Position** property. This defines where the widget is displayed. You can customize the Section's look and feel by setting any of the (optional) properties.
 
-    ![](<images/floatingcontent-5-ss.png?width=800>)
+    ![Screenshot of the Properties tab for the Floating Content widget with the Position property highlighted](images/floatingcontent-5-ss.png "Setting Properties of Floating Content Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

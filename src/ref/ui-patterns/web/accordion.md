@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and Classes
 
-![](<images/accordion-image-3.png>)
+![Screenshot of an accordion layout in a traditional web app](images/accordion-image-3.png "Accordion Layout")
 
 ## CSS Selectors
 
@@ -40,7 +40,7 @@ Applies only to Traditional Web Apps.
 1. Inside the AccordionItem Pattern, use expressions to display the database content you need.
 1. Publish and test.
 
-    ![](<images/accordion-image-4.png>)
+    ![Example of using Accordion with ListRecords in a traditional web app](images/accordion-image-4.png "Accordion with ListRecords")
 
 ### Change arrow position to left
 
@@ -56,7 +56,7 @@ It is possible to change the arrow position on AccordionItems by using custom CS
 }
 ```
 
-![](<images/accordion-image-5.png>)
+![Illustration of custom CSS applied to change the arrow position to the left in an AccordionItem](images/accordion-image-5.png "Custom CSS for Arrow Position")
 
 ### Add margin between each Accordion Item
 
@@ -77,10 +77,10 @@ You need to use custom CSS to add a margin between each Accordion Item. To do th
 }
 ```
 
-![](<images/accordion-image-6.png>)
+![Demonstration of custom CSS to add margin between Accordion Items](images/accordion-image-6.png "Custom CSS for Accordion Item Margin")
 
 ## Notes
 
 Line Separator from ListRecords should be None.
 
-![](<images/accordion-image-7.png>)
+![Visual representation of the line separator setting for ListRecords in an accordion](images/accordion-image-7.png "Accordion Line Separator")

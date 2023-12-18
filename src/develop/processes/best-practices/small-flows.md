@@ -1,11 +1,11 @@
 ---
+summary: Designing processes with smaller flows improves maintainability and speeds up deployment by simplifying impact analysis and upgrades
 locale: en-us
 guid: ea9128f4-23b8-4eb6-9e6e-c9970f610634
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:24
 ---
-
 # Design Processes with Small Flows
 
 When you design a [Process](../intro.md) with too many activities, it may **reveal hard to maintain and with impact on the deployment of applications**. This is essentially due to:
@@ -29,7 +29,7 @@ This way, the deployment runs faster because the process is executed through sma
 
 As an example, imagine a process to handle medical appointments: the physician produces a report of the appointment that is stamped and archived; if further exams are requested by the physician their report is also stamped and archived; finally, if there is a prescription, it is also stamped and archived. The medical appointment ends when all exams (if any) are done and validates the need of scheduling a new appointment.
 
-![](images/small-flows-1.png)
+![Diagram of a complex medical appointment process flow with multiple activities including report production, stamping, archiving, and handling prescriptions.](images/small-flows-1.png "Complex Medical Appointment Process Flow")
 
 We can identify two candidates for subprocesses in the main flow:
 
@@ -39,8 +39,8 @@ We can identify two candidates for subprocesses in the main flow:
 
 The main process flow becomes shorter and simpler and two new small processes are created.
 
-![](images/small-flows-2.png)
+![Simplified diagram of a medical appointment process flow after breaking down into subprocesses for stamping, archiving, and appointment scheduling.](images/small-flows-2.png "Simplified Medical Appointment Process Flow")
 
 The [NotifyPhysician](<../../../ref/lang/auto/class-send-email.md>) send email was also included in the new process as an optional branch that is executed or not depending on the type of document. This way we can further simplify the process flow by merging the two conditional starts into a single one, with the type of document as parameter.
 
-![](images/small-flows-3.png)
+![Optimized medical appointment process flow diagram featuring subprocesses and an optional email notification branch.](images/small-flows-3.png "Optimized Medical Appointment Process Flow with Email Notification")

@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Chat Message UI Pattern to display conversational posts in notifications or chat screens. It can be used to display content such as photos, text, images, delivery times, and statuses.
 
-![](<images/chatmessage-3.png>)
+![Example of a chat message UI pattern in a conversation post](images/chatmessage-3.png "Chat Message UI Pattern Example")
 
 **How to use the Chat Message UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
   
     The Chat Message widget is displayed.
 
-    ![](<images/chatmessage-1-ss.png>)
+    ![Screenshot showing the Chat Message widget in OutSystems Service Studio](images/chatmessage-1-ss.png "Chat Message Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
 
 1. From the Toolbox, drag the Chat Message widget into the Main Content area of your application's screen.
 
-    ![](<images/chatmessage-2-ss.png>)
+    ![Dragging the Chat Message widget into the Main Content area in Service Studio](images/chatmessage-2-ss.png "Dragging Chat Message Widget")
 
     By default, the Chat Message widget contains Image and Content placeholders.
 
@@ -48,13 +48,13 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
 
     In this example, we add the user avatar to the Image placeholder and text to the Content placeholder. 
 
-    ![](<images/chatmessage-4-ss.png>)
+    ![Adding user avatar and text to the Chat Message widget placeholders](images/chatmessage-4-ss.png "Adding Content to Chat Message")
 
     Alternatively, you can use, for example, a List to display a Chat Message for each message record on an entity. You can also use a [form](../../../../../develop/ui/forms/form-use.md) to allow users enter their messages. By using the relevant expressions and logic, once the user sends their message, refresh the list of messages so it appears as a conversational post.
 
 1. You can customize the Chat Message's look and feel by setting the (optional) properties on the **Properties** tab.
 
-    ![](<images/chatmessage-5-ss.png>)
+    ![Customization options for the Chat Message's look and feel in the Properties tab](images/chatmessage-5-ss.png "Customizing Chat Message Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

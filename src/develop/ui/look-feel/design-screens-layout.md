@@ -33,7 +33,7 @@ To create the layout for the dashboard, do as follows:
 1. Create a Block called Layout_Dashboard1. 
 1. Use placeholders to build the structure of the block as shown in the image below. Use containers to help group and position the placeholders, as shown in the Widget Tree. 
 
-![](images/design-screens-layout-1.png)
+![Example of a layout design for a dashboard with placeholders and containers in OutSystems](images/design-screens-layout-1.png "Layout Design for Dashboard")
 
 To use the layout, do as follows:
 
@@ -42,4 +42,4 @@ To use the layout, do as follows:
 1. Fetch and list the Latest 5 Reviews at the bottom. Learn how to [fetch data from the database](<../../data/query/fetch-display.md>). 
 1. Publish and test. 
 
-![](images/design-screens-layout-2.png)
+![Dashboard screen in OutSystems showing the implemented layout with charts and reviews](images/design-screens-layout-2.png "Implemented Layout on Dashboard Screen")

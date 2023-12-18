@@ -199,7 +199,7 @@ Configuration** and scroll down the page to the **Publish** section.
 
 1. Select the box for **Enable Json Serialize** and click **Apply** at the
 bottom of the screen.
-    ![Factory Configuration Publish options](images/json-serialize-optin-fc.png)
+    ![Screenshot of the JSON Serialize consistency opt-in option in the Factory Configuration tool](images/json-serialize-optin-fc.png "JSON Serialize Consistency Opt-in")
 
 1. You have to republish your apps to take advantage of the workaround.
 

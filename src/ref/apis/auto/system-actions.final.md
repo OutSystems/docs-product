@@ -27,7 +27,7 @@ Only a subset of the System Actions is by default available in your module. You 
 
 1. Click **(System)** in the left pane. The available actions show in the right pane.
 
-    ![Systems Actions in Manage Dependencies window](images/reference-systems-actions-ss.png?width=600)
+    ![Screenshot showing how to reference System Actions in an OutSystems module](images/reference-systems-actions-ss.png "Reference Systems Actions in OutSystems")
 
 1. Browse the available actions, click the checkboxes next to the actions you want to reference, then click **Apply** to confirm and close the window.
 

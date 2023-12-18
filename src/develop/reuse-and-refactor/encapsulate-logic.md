@@ -18,11 +18,11 @@ To encapsulate logic in a new action, do the following:
 
 1. In the Logic tab, add a new Action to your module.
 
-    ![](images/encapsulate-logic-1.png?width=300)
+    ![Screenshot showing how to add a new action in the Logic tab of a module](images/encapsulate-logic-1.png "Adding a New Action")
 
 1. Implement the logic in the action flow.
 
-    ![](images/encapsulate-logic-2.png?width=600)
+    ![Image depicting the implementation of logic within a new action flow](images/encapsulate-logic-2.png "Implementing Action Logic")
 
 
 Also, sometimes you have the same piece of logic already implemented in several places of your module, but you decide that it would make more sense to encapsulate that logic and use it elsewhere, to keep your module easier to maintain. In this situation, do one of the following to encapsulate the existing piece of logic in a new action:
@@ -39,7 +39,7 @@ To use the encapsulated logic in another action, do the following:
 
 2. Drag the action with the encapsulated logic from the Logic tab and drop it in the action flow.
 
-    ![](images/encapsulate-logic-3.png?width=600)
+    ![Illustration of dragging an action with encapsulated logic into another action flow](images/encapsulate-logic-3.png "Using Encapsulated Logic")
 
 3. Set the values of the Input Parameters, if any.
 

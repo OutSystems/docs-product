@@ -4,8 +4,8 @@ guid: 74906504-7e14-40cd-8a55-221155e073a7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:17
+summary: The article explains how to use .NET code for advanced extensibility in SOAP web services with OutSystems, including a Forge component for common use cases
 ---
-
 # Use Advanced Extensibility
 
 When consuming a SOAP web service you can use your own .NET code to change the connection or to customize the message in the request and/or response.
@@ -31,13 +31,13 @@ If your use case is not covered by the component or you want to create it from s
     
    Select your SOAP Web Service element in the element tree and create a new SOAP callback in the OnBeforeRequest property (the callback's name is "OnBeforeRequestAdvanced").  
 
-   ![Create a new SOAP callback](<images/soap-properties-beforerequest-ss.png>)    
+   ![Screenshot of SOAP Web Service properties with the OnBeforeRequest callback highlighted](images/soap-properties-beforerequest-ss.png "SOAP Web Service Properties")    
 
    Open the callback flow and drag the desired extension action(s) to the flow according to your use case.  
     
    **Note:** Extension actions using the SOAP Extensibility API can only be used in the context of a SOAP callback flow.
 
-   ![SOAP extenibility API](<images/flow-add-callback-ss.png>)
+   ![Screenshot showing how to add a callback action to a SOAP callback flow in Service Studio](images/flow-add-callback-ss.png "Adding a Callback to a SOAP Flow")
 
 ## SOAP extensibility component use cases { #example-use-cases }
 

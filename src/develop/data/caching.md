@@ -46,7 +46,7 @@ There are two SOAP Web Service implementations, with different support for cachi
 
 To start caching the content of an element, set the **Cache in Minutes** property to a value greater than zero.
 
-![Cache settings showing Cache in minutes property](images/cache-in-minutes-property.png?width=350)
+![Screenshot of the Cache in Minutes property settings in OutSystems](images/cache-in-minutes-property.png "Cache Settings")
 
 ## The caching mechanism
 

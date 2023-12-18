@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Counter UI Pattern to display numerical information as a notification. For example, the Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
-![](<images/counter-14-ss.png>)
+![Screenshot of the Counter UI Pattern used to display numerical information as a notification in a Traditional Web App](images/counter-14-ss.png "Counter UI Pattern Example")
 
 **How to use the Counter UI Pattern**
 
@@ -30,7 +30,7 @@ The following example demonstrates how you can display the number of registered 
 
     The Counter widget is displayed.
 
-    ![](<images/counter-7-ss.png>)
+    ![Image showing the Counter widget in the Service Studio toolbox for Traditional Web Apps](images/counter-7-ss.png "Counter Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -44,17 +44,17 @@ The following example demonstrates how you can display the number of registered 
 
 1. From the Toolbox, drag the Counter widget into the Main Content area of your application's screen.
 
-    ![](<images/counter-9-ss.png>)
+    ![Screenshot of dragging the Counter widget into the main content area of an application's screen in Service Studio](images/counter-9-ss.png "Dragging Counter Widget into Main Content Area")
 
 1. From the Element tree, create a Preparation action by right-clicking on your screen, and from the drop-down, select **Add Preparation**.
 
     This Preparation action executes logic that fetches the data before the screen is displayed.
 
-    ![](<images/counter-8-ss.png>)
+    ![Image depicting the process of adding a Preparation action to fetch data before the screen is displayed in Service Studio](images/counter-8-ss.png "Adding Preparation Action")
 
 1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it onto the Preparation action.
 
-    ![](<images/counter-10-ss.png>)
+    ![Screenshot showing the creation of an aggregate to retrieve user data by dragging the User entity onto the Preparation action in Service Studio](images/counter-10-ss.png "Creating an Aggregate for User Entity")
 
     This creates an [aggregate](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Queries/Aggregate) that retrieves all of the users on your platform.
 
@@ -62,7 +62,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. Within the Counter widget, right-click in the Text widget (containing the number 26), and select Convert to Expression.
 
-    ![](<images/counter-11-ss.png>)
+    ![Image illustrating the conversion of a text widget to an expression within the Counter widget in Service Studio](images/counter-11-ss.png "Converting Text Widget to Expression")
 
 1. In the Expression Editor, enter the following expression and click **Done**.
 
@@ -70,17 +70,17 @@ The following example demonstrates how you can display the number of registered 
 
     Note: You can also add the expression by navigating through the Expression Editor's **Scope** tree and double-clicking on the **Count** output parameter.
 
-   ![](<images/counter-12-ss.png>)
+   ![Screenshot of setting an expression in the Expression Editor to display the user count in the Counter widget](images/counter-12-ss.png "Setting the Expression to Display User Count")
 
    You have now created an expression that displays the Count property of the Aggregate you added to the Preparation action, which gets the number of users on your platform and displays them in your Counter.
 
 1. From the **Properties** tab of each of the Counter's widgets, you can customize the Counter's display text and icon. For this example, the display text is changed to Registered Users.
 
-      ![](<images/counter-13-ss.png>)
+      ![Image showing the customization of the Counter's display text and icon in the Properties tab of Service Studio](images/counter-13-ss.png "Customizing Counter Display Text and Icon")
 
 1. Additionally, on the **Properties** tab, you can customize the Counter's look and feel by setting any of the optional properties, for example, the height and orientation.
 
-      ![](<images/counter-3-ss.png>)
+      ![Screenshot of the Properties tab where the Counter's height and orientation can be customized in Service Studio](images/counter-3-ss.png "Customizing Counter's Look and Feel")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Chat Message UI Pattern to display conversational posts in notifications or chat screens. It can be used to display content such as photos, text, images, delivery times, and statuses.
 
-![](<images/chatmessage-3.png>)
+![Example of a chat message UI pattern in a conversation post](images/chatmessage-3.png "Chat Message UI Pattern Example")
 
 **How to use the Chat Message UI Pattern**
 
@@ -28,7 +28,7 @@ For the purposes of this example, our app already contains a [form](../../../../
   
     The Chat Message widget is displayed.
 
-    ![](<images/chatmessage-1-ss.png>)
+    ![Screenshot showing the Chat Message widget in OutSystems Service Studio](images/chatmessage-1-ss.png "Chat Message Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,7 +42,7 @@ For the purposes of this example, our app already contains a [form](../../../../
 
 1. To From the Toolbox, drag the Chat Message widget into the Main Content area of your application's screen.
 
-    ![](<images/chatmessage-2-ss.png>)
+    ![Process of dragging the Chat Message widget into the main content area of an application screen in Service Studio](images/chatmessage-2-ss.png "Dragging Chat Message Widget to Main Content")
 
     By default, the Chat Message widget contains Image, Name, Content, and Actions placeholders.
 
@@ -50,23 +50,23 @@ For the purposes of this example, our app already contains a [form](../../../../
 
     * In this example, so that the name the user enters in the form is displayed, we convert the Name placeholder to an expression and enter the relevant logic. To do this, we right-click the Name placeholder, select **Convert to Expression**, and in the **Expression Value** pop-up, navigate to the Name attribute, and click **Done**.
 
-        ![](<images/chatmessage-4-ss.png>)
+        ![Converting the Name placeholder to an expression in the Chat Message widget](images/chatmessage-4-ss.png "Converting Name Placeholder to Expression")
 
-        ![](<images/chatmessage-5-ss.png>)
+        ![Setting the expression value for the Name attribute in the Chat Message widget](images/chatmessage-5-ss.png "Setting Expression Value for Name")
 
     * So that the message the user enters in the form is displayed, we convert the Content placeholder to an expression and enter the relevant logic. To do this, we repeat the previous step, but this time, navigate to the Message attribute.
 
-        ![](<images/chatmessage-8-ss.png>)
+        ![Converting the Content placeholder to an expression for displaying user messages in the Chat Message widget](images/chatmessage-8-ss.png "Converting Content Placeholder to Expression")
 
 1. You can customize the Chat Message's look and feel by setting the (optional) properties on the **Properties** tab.
 
-    ![](<images/chatmessage-9-ss.png>)
+    ![Screenshot of the Properties tab for customizing the Chat Message widget in Service Studio](images/chatmessage-9-ss.png "Chat Message Properties Tab")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 The result of this example looks something like the following:
 
-![](<images/chatmessage-6-ss.png?width=800>)
+![Final result showing a conversational post using the Chat Message UI pattern in an application](images/chatmessage-6-ss.png "Final Result of Chat Message UI Pattern")
 
 ## Properties
 

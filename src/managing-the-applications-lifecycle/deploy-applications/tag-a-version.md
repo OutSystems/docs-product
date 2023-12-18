@@ -31,7 +31,7 @@ In this example, there are two applications in Development environment:
 
 They have reached a development milestone and must be tagged.
 
-![](images/tag-a-version-1.png)
+![Screenshot of the OutSystems LifeTime interface showing the application tagging process with a plus sign indicating changes since the last tag.](images/tag-a-version-1.png "Application Tagging Interface")
 
 The plus ('+') sign means the applications have changed since their last tag.
 
@@ -41,17 +41,17 @@ To tag the mobile app, do the following:
 
 1. Click on **MyApp** to show its details.
     
-    ![](images/tag-a-version-2.png)
+    ![Screenshot of the OutSystems LifeTime interface displaying details for the mobile app 'MyApp' with the 'TAG VERSION' button highlighted.](images/tag-a-version-2.png "MyApp Details")
 
 1. Click the **TAG VERSION** button for the Development environment.
 
 1. Set the Version to **0.2** and type a description. In the Mobile Versions section, there's also a plus ('+') sign for the Android platform, meaning that the [changes in the app](../../deliver-mobile/mobile-app-update-scenarios.md) require the tagging and generation of a new mobile package. Set also the mobile version for the native platform. Make sure the mobile version [is higher than any previous version](#mobile-package-version).
     
-    ![](images/tag-a-version-3.png)
+    ![Screenshot of the OutSystems LifeTime interface with the 'TAG VERSION' dialog for 'MyApp' where the version is set to 0.2 and a description is added.](images/tag-a-version-3.png "Tagging Mobile App Version")
 
 1. Click the **TAG VERSION** button to finish.
     
-    ![](images/tag-a-version-4.png)
+    ![Screenshot of the OutSystems LifeTime interface confirming that the mobile app 'MyApp' has been successfully tagged with version 0.2.](images/tag-a-version-4.png "Mobile App Tagged")
 
 The mobile app is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.
 
@@ -81,16 +81,16 @@ To tag the web application, do the following:
 
 1. Click on **MyWebApp** to show its details.
 
-    ![](images/tag-a-version-5.png)
+    ![Screenshot of the OutSystems LifeTime interface displaying details for the web application 'MyWebApp' with the 'TAG VERSION' button highlighted.](images/tag-a-version-5.png "MyWebApp Details")
 
 1. Click the **TAG VERSION** button for the Development environment.
 
 1. Set the Version to **0.3** and type a description. 
 
-    ![](images/tag-a-version-6.png)
+    ![Screenshot of the OutSystems LifeTime interface with the 'TAG VERSION' dialog for 'MyWebApp' where the version is set to 0.3 and a description is added.](images/tag-a-version-6.png "Tagging Web Application Version")
 
 1. Click the **TAG VERSION** button to finish.
 
-    ![](images/tag-a-version-7.png)
+    ![Screenshot of the OutSystems LifeTime interface confirming that the web application 'MyWebApp' has been successfully tagged with version 0.3.](images/tag-a-version-7.png "Web Application Tagged")
 
 The web application is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.

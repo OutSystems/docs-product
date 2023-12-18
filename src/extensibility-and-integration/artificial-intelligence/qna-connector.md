@@ -40,7 +40,7 @@ Here is how you can install the connector and reference it in your app.
 1. Install [Azure QnA Maker Connector](https://www.outsystems.com/forge/component-overview/6181/azure-qna-maker-connector) from Forge.
 2. In Service Studio, press **Crtl+Q** and find the **AzureQnAMakerConnector** in the **Manage Dependencies** window. Select all public elements and click **Apply**. 
 
-    ![QnA connector structure](images/qna-reference-elements-ss.png?width=600)
+    ![Screenshot showing how to reference Azure QnA Maker Connector in OutSystems Service Studio](images/qna-reference-elements-ss.png "QnA Connector Structure in Service Studio")
 
 3. Now you can add the server actions in **Logic** > **Server Actions** > **AzureQnAMakerConnector** to your logic.
 
@@ -59,7 +59,7 @@ QnA Maker Service settings are part of the Cognitive Services running in Azure.
     * **Service subscription key**. One of the values, **KEY 1** or **KEY 2**.
     * **Service endpoint url**. The URL from the **ENDPOINT** field.
 
-    ![QnA maker service in Azure](<images/qna-keys-tab.png?width=600>)
+    ![Screenshot of the Keys and Endpoints tab in Azure for the QnA Maker Service](images/qna-keys-tab.png "QnA Maker Service Keys and Endpoints")
 
 ### Knowledge base deployment details
 
@@ -76,7 +76,7 @@ These settings are available in the QnA Maker portal **after** you deploy a know
 
     Here is a screenshot with the knowledge base ID (1) and the knowledge base endpoint key (2):
 
-    ![Knowledge base deployment details](<images/qna-deployment-details.png?width=600>)
+    ![Screenshot highlighting the knowledge base ID and endpoint key in the QnA Maker portal](images/qna-deployment-details.png "Knowledge Base Deployment Details")
 
     
 ## Configure the QnA Maker connector
@@ -89,7 +89,7 @@ To use the QnA Maker connector in your app, you need to configure the connector 
 
 1. Click **AzureQnAMakerConnector** in the results list to open the module settings. Go to the **Site properties** tab and locate the **SubscriptionKey** setting.
     
-    ![Sample logic flow with a QnA maker action](images/qna-properties-subscription-key-sc.png?width=700)
+    ![Screenshot showing where to enter the subscription key in the Service Center for Azure QnA Maker Connector](images/qna-properties-subscription-key-sc.png "Configuring Subscription Key in Service Center")
 
 1. Click **SubscriptionKey** and in the **Effective Value** field enter the value of the **Service subscription key** you saved from Azure. Click **Apply**.
 
@@ -107,13 +107,13 @@ Test the connection between the OutSystems connector and Azure by requesting inf
 
 3. In the properties of the **GetKnowledgebaseDetails** server action, enter the knowledge base ID in the **KbId** field.
 
-    ![A sample flow to text the connector](images/qna-test-connector-action-properties-ss.png?width=500)
+    ![Screenshot of the GetKnowledgebaseDetails server action properties in Service Studio](images/qna-test-connector-action-properties-ss.png "Testing QnA Maker Connector")
 
     Notice that the output parameter of the server action is **KnowledgebaseDetails**, of the data type **KnowledgebaseDTO**. In this example, JSONSerialize converts the response to show it as text.
 
 4. Run the sample logic. If the connector is working correctly, you should receive the information about the selected knowledge base. In this example, the user interface shows the information, but you can use the debugger to quickly inspect the returned values.
     
-    ![Returned KB info from Azure](images/qna-get-info-browser-preview.png?width=400)
+    ![Browser preview displaying returned knowledge base information from Azure](images/qna-get-info-browser-preview.png "Knowledge Base Information Preview")
 
 ### Request a reply message from the knowledge base
 
@@ -122,7 +122,7 @@ Here is how you can test getting replies with the QnA Maker connector.
 1. Create a sample app and reference the QnA Maker connector.
 1. Define a question variable of a **QuestionDTO** data type, and then set the question text in **QuestionDTO.Question**. For example, if the parameter name is **MyQuestion** (of the data type **QuestionDTO**), then **MyQuestion.Question** is `"What is your number?"`. **MyQuestion.Question** the question that the connector sends to the knowledge base.
 
-    ![A question parameter](images/qna-question-parameter-ss.png?width=370)
+    ![Screenshot showing how to set up a question parameter in Service Studio for Azure QnA Maker Connector](images/qna-question-parameter-ss.png "Setting Up Question Parameter")
 
 1. Add the **GenerateAnswer** action from **Logic** > **Server Actions** > **AzureQnAMakerConnector** > **QnAMakerAPI_GenerateAnswer** to the flow. Enter the values in the action properties:
 
@@ -135,11 +135,11 @@ Here is how you can test getting replies with the QnA Maker connector.
 
 1. Store the value the knowledge base sends back in a variable. The reply message is the textual value of **GenerateAnswer.Answer.Answers.Current.Answer**.
 
-    ![A sample logic to get a reply from Azure QnA Maker service](images/qna-logic-sample-ss.png?width=500)
+    ![Screenshot of a sample logic flow in Service Studio to get a reply from Azure QnA Maker service](images/qna-logic-sample-ss.png "Sample Logic for QnA Maker Reply")
    
 1. Run the action. If the connector is working correctly, you should receive the closest match for the question. You can also create a user interface to display the knowledge base reply, or use the debugger to quickly inspect the returned values.
     
-    ![A sample reply](images/qna-reply-browser.png?width=400)
+    ![Browser preview showing a sample reply message from the Azure QnA Maker knowledge base](images/qna-reply-browser.png "Sample Reply from QnA Maker")
 
 ## Reference
 

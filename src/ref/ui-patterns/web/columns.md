@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/columns-3-diag.png>)
+![Diagram illustrating the Columns UI Pattern with various configurations and classes](images/columns-3-diag.png "Columns UI Pattern Diagram")
 
 ## CSS selectors
 

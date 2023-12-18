@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/breadcrumbs-3-diag.png>)
+![Diagram illustrating the layout and classes of the Breadcrumbs UI Pattern](images/breadcrumbs-3-diag.png "Breadcrumbs Layout Diagram")
 
 ## Advanced use case
 
@@ -34,10 +34,10 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![](<images/breadcrumbs-4-ss.png>)
+    ![Screenshot showing the Breadcrumbs UI Pattern used with a ListRecords widget](images/breadcrumbs-4-ss.png "Breadcrumbs with ListRecords")
 
 ## Additional notes
 
 The Line Separator property of the ListRecords widget should be set to **None**.
 
-![](<images/breadcrumbs-5-ss.png>)
+![Screenshot highlighting the Line Separator property setting for the ListRecords widget in Breadcrumbs](images/breadcrumbs-5-ss.png "Breadcrumbs Line Separator Setting")

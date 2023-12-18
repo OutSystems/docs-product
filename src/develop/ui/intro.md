@@ -14,7 +14,7 @@ OutSystems UI defines the way to build the structure of the user interfaces of y
 
 The following figure represents the OutSystems UI Architecture:
 
-![OutSystems UI Architecture](images/outsystems-ui-architecture.png?width=800)
+![Diagram illustrating the OutSystems UI Architecture with various components and their relationships](images/outsystems-ui-architecture.png "OutSystems UI Architecture Diagram")
 
 Let’s have a look at each component.
 
@@ -25,34 +25,34 @@ The OutSystems UI Framework is the base of all user interfaces and provides UI p
 For example, you can use the OutSystems UI Web Base and Email stylesheets, and [UI Patterns](patterns/intro.md) and layouts.
 
 
-![OutSystems UI Framework](images/outsystems-ui-framework.png?width=800)
+![Image showcasing the components of the OutSystems UI Framework including UI patterns and screen templates](images/outsystems-ui-framework.png "OutSystems UI Framework Components")
 
 ## The Built-in Screen Templates
 
 Created and maintained by OutSystems, the built-in screen templates are ready to use for developing your applications. You can choose from a different set of [Web Screen Templates](https://www.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=2) and [Mobile Screen Templates](https://www.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=1).
 
 
-![OutSystems UI Built-in Templates](images/outsystems-ui-built-in-templates.png?width=800)
+![Preview of OutSystems built-in screen templates for Web and Mobile applications](images/outsystems-ui-built-in-templates.png "OutSystems Built-in Screen Templates")
 
 ## The Custom Application Templates
 
 The application templates you use to build your applications. Refer to the OutSystems documentation to learn [how to create a Custom Application Template](reuse/create-a-custom-application-template.md).
 
 
-![OutSystems UI Custom Templates](images/outsystems-ui-custom-templates.png?width=800)
+![Example of custom application templates available in OutSystems for app development](images/outsystems-ui-custom-templates.png "Custom Application Templates in OutSystems")
 
 ## The Style Guide
 
 The Style Guide is a document with your brand theme colors and patterns ready to use to create a consistent user experience on your applications. It is an essential piece to ensure adherence to your brand rules, user interface consistency, and foster usability. It is designed to guide you through all delivery assets to optimize the development process and user experience.
 
-![OutSystems UI Style Guide](images/outsystems-ui-style-guide.png?width=800)
+![Snapshot of the OutSystems Style Guide showing brand theme colors and patterns](images/outsystems-ui-style-guide.png "OutSystems Style Guide Example")
 
 ## Your Applications
 
 Your applications can have all the necessary modules and contain all the CSS. All are created [based on an application template](https://success.outsystems.com/Documentation/11/Developing_an_Application/Application_Templates).
 
 
-![OutSystems UI Applications](images/outsystems-ui-applications.png?width=800)
+![Visual representation of applications built using OutSystems with emphasis on modular structure and CSS](images/outsystems-ui-applications.png "OutSystems Applications Overview")
 
 ## How It Works
 

@@ -23,13 +23,13 @@ Session cookies store information about a user session after the user logs in to
 
 You can configure an OutSystems environment to have secure session cookies. Service Studio and LifeTime have options that enable you to configure your security settings, such as [SameSite and Secure](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Upcoming_changes_in_cookie_handling_in_Google_Chrome#patch). For example, activating the **Secure option** adds the `Secure` attribute to all cookies the platform generates. In LifeTime, you do this by enabling the configuration **Secure Cookies** in the Environment Security of each environment:
 
-![Configuration screen to turn secure session cookies in LifeTime](images/secure-cookies-lifetime-ss.png)
+![Screenshot showing how to enable Secure Cookies in the OutSystems LifeTime environment security settings](images/secure-cookies-lifetime-ss.png "Secure Cookies Configuration in LifeTime")
 
 Alternatively, you can configure these security settings by installing [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) from the OutSystems Forge.
 
 After installing Factory Configuration, access the application and, in the *Platform Configurations* tab, find the option to enable secure session cookies:
 
-![configuration screen to turn secure session cookies](images/secure-cookies-enable-secure-session_0.png)
+![Screenshot of the Factory Configuration application with the option to enable secure session cookies highlighted](images/secure-cookies-enable-secure-session_0.png "Enabling Secure Session Cookies in Factory Configuration")
 
 <div class="info" markdown="1">
 
@@ -40,7 +40,7 @@ After you change the settings using Factory Configuration, make sure you **apply
 
 **Important note:** When you activate the secure flag, OutSystems only sends session cookies when using HTTPS. Therefore, to prevent unexpected behavior with user sessions, when you activate secure session cookies you should also force HTTPS for all screens. By enabling the Improved Application Security option, you have access to additional security configurations for your environment on Service Center and LifeTime, which allow not only to force HTTPS for web screens but also for web references:
 
-![configuration screen for force HTTPS](images/secure-cookies-enable-secure-session_1.png)
+![Screenshot illustrating the option to force HTTPS for web screens and web references in OutSystems](images/secure-cookies-enable-secure-session_1.png "Forcing HTTPS for Web Screens and Web References")
 
 This option is enabled by default since OutSystems 10 and it's available for OutSystems 9.1 since revision patch 9.1.600.0.
 
@@ -48,13 +48,13 @@ This option is enabled by default since OutSystems 10 and it's available for Out
 
 To activate the "secure" flag when setting a custom cookie in a **server-side context** (for example, in the context of a Server Action), set **CookieSecure** to `True` when calling the [SetCookie](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/HTTPRequestHandler_API#SetCookie) Server Action:
 
-![Set CookieSecure property in Service Studio](images/secure-cookies-cookiesecure-property-ss.png)
+![Screenshot of the SetCookie Server Action in OutSystems with the CookieSecure property set to True](images/secure-cookies-cookiesecure-property-ss.png "SetCookie Server Action with CookieSecure Property")
 
 This Input Parameter is available since Platform Server 11.7.0.
 
 In older versions of Platform Server this optional argument doesn't exist. As a workaround, you can append "`; Secure`" to the cookie value to activate the "secure" flag. Here's an example:
 
-![Add Secure string to CookieValue input parameter](images/secure-cookies-legacysecurevalue-ss.png)
+![Screenshot showing a legacy method for setting the secure flag on cookies by appending '; Secure' to the cookie value](images/secure-cookies-legacysecurevalue-ss.png "Legacy Method for Setting Secure Cookie Flag")
 
 To set the "secure" flag in a **client-side context** (for example, in JavaScript code), append "`; Secure`" to the cookie:
 

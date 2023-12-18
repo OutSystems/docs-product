@@ -28,7 +28,7 @@ Before you get started make sure that:
 
 The key steps for replacing the sample data in your use-case app with your own external data are the following:
 
-![Process overview for replacing sample data with your own data](images/use-your-data-diag.png)
+![Diagram illustrating the process of integrating external data into an OutSystems application](images/use-your-data-diag.png "Data Integration Process")
 
 1. Get external data from an external database, a System of Record (SoR), or an Excel file in your app. Check [this article to learn about the external data sources you can use in your app and how you to get the data in your app](get-external-data.md).
 

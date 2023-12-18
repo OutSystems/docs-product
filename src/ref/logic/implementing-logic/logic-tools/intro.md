@@ -1,17 +1,17 @@
 ---
-tags: 
+tags:
 locale: en-us
 guid: 4768759d-03d2-4a42-b408-6a444a68578c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1135
+summary: The article describes the various logic tools available in Service Studio for building applications, including actions, data operations, and control structures
 ---
-
 # Logic Tools
 
 The Service Studio toolbox contains a range of logic tools that help you build comprehensive apps. The logic tools allow you to, for example, run server actions that implement the business rules of your app, retrieve updated data from data sources, and assign values to variables.
 
-![OutSystems logic tools](images/logic-tools-diag.png)
+![Diagram illustrating the range of logic tools available in Service Studio for building applications](images/logic-tools-diag.png "Service Studio Logic Tools Diagram")
 
 For more information about each of the logic tools, see:
 

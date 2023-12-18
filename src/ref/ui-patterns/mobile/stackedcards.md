@@ -60,7 +60,7 @@ The overlays are enabled by default and have default colors in the Pattern. If y
 
 1. If you change the option “ **UseOverlays** ” to _False_ and add content to the placeholders, they will not be displayed.
 
-    ![](images/stackedcards-6-ss.png)
+    ![Screenshot of Stacked Cards UI Pattern with different background colors applied to overlays](images/stackedcards-6-ss.png "Stacked Cards Overlays")
 
 You can set other colors either by adding a container to **OverlayTop** , **OverlayRight** or **OverlayLeft** , and set your class. Or by using the following CSS code:
 
@@ -80,7 +80,7 @@ You can set other colors either by adding a container to **OverlayTop** , **Over
 ## Creating a button to execute swipes
 
 Create each action and drag the [public actions](../../../develop/ui/patterns/mobile/public-actions.md) (SwipeLeft, SwipeRight, or SwipeTop). In the Stacked Cards block, associate the handler to swipe events.  
-![](images/stackedcards-7.png)
+![Example of creating a button to execute swipe actions in Stacked Cards UI Pattern](images/stackedcards-7.png "Stacked Cards Swipe Actions")
 
 ## Creating a ListRemove button
 
@@ -97,7 +97,7 @@ OnTopSwipe  |  Triggered when swiping top.  |  False
   
 ## Layout
 
-![](images/stackedcards-8-diag.png)
+![Diagram showing the layout of the Stacked Cards UI Pattern](images/stackedcards-8-diag.png "Stacked Cards Layout Diagram")
 
 ## CSS Selectors
 

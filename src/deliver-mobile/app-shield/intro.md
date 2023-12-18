@@ -54,7 +54,7 @@ The following list describes the tags:
 
 The following diagram shows how release versions work in **AppShield**.
 
-![AppShield release life cycle](images/life-cycle-dia.png?width=800)
+![Diagram illustrating the release life cycle of the AppShield plugin with various version tags such as Stable, Current, Expiring, and Discontinued.](images/life-cycle-dia.png "AppShield Release Life Cycle Diagram")
 
 <div class="warning" markdown="1">
 
@@ -82,15 +82,15 @@ To protect your mobile app using the AppShield plugin, follow these steps:
     
     To download the plugin, go to [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge.
 
-    ![Install Appshield plugin](images/install-appshield.png)
+    ![Image showing the process of installing the AppShield plugin from the OutSystems Forge.](images/install-appshield.png "Install AppShield Plugin")
 
 1. **Add the dependencies for AppShield** plugin on each mobile app you want to protect.
 
-    ![Add dependencies](images/add-dependencies-ss.png)
+    ![Screenshot depicting how to add dependencies for the AppShield plugin in a mobile app project.](images/add-dependencies-ss.png "Add Dependencies for AppShield Plugin")
 
 1. **Generate and distribute a new mobile package** protected with AppShield.
 
-    ![Generate and distribute mobile package](images/distribute-app.png)
+    ![Image illustrating the steps to generate and distribute a new mobile package protected with AppShield.](images/distribute-app.png "Generate and Distribute Mobile Package")
 
 Note the following:
 
@@ -234,7 +234,7 @@ When you trigger a build with AppShield enabled and correctly configured, MABS i
 
 The shield phase occurs after the build phase, and a message at the end of the log file lets you know if the shield phase is successful.
 
-![Shield phase log](images/appshield-log.png)
+![Screenshot of the AppShield shield phase in the mobile app build logs indicating a successful shield operation.](images/appshield-log.png "AppShield Shield Phase Log")
 
 ## Obfuscation
 

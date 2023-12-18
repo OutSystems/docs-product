@@ -20,6 +20,6 @@ To aggregate a column into a single value, hover on the column, right-click, and
 * Min: finds the minimum value in the column
 * Count: counts how many rows there are in the column
 
-![Aggregate a Column Into a Single Value](images/aggregate-column-single-value.png)
+![Context menu showing aggregate functions including Sum, Average, Max, Min, and Count on a database column](images/aggregate-column-single-value.png "Aggregate Functions Menu")
 
 The list of available aggregate functions depends on the data type of the column. Sum and Average are only available for numeric data types whereas textual data types (text, email, and phone number) only have the Count function available.

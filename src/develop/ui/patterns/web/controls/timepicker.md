@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Time Picker UI Pattern to select a single time from a drop-down list.
 
-  ![](<images/timepicker-gif-1.gif>)
+  ![Animated GIF showing the interaction with the Time Picker UI Pattern in a Traditional Web App](images/timepicker-gif-1.gif "Time Picker Interaction")
 
 **How to use the Time Picker UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Time Picker UI Pattern to select a single time from a drop-down 
 
     The Time Picker widget is displayed.
 
-    ![](<images/timepicker-image-14.png>)
+    ![Screenshot of the Time Picker widget in the Service Studio Toolbox](images/timepicker-image-14.png "Time Picker Widget in Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,19 +40,19 @@ You can use the Time Picker UI Pattern to select a single time from a drop-down 
 
 1. From the Toolbox, drag the Time Picker widget into the Main Content area of your application's screen.
 
-    ![](<images/timepicker-image-15.png>)
+    ![Image showing the process of dragging the Time Picker widget into the Main Content area of an application screen](images/timepicker-image-15.png "Dragging Time Picker Widget")
 
 1. By default, the Time Picker widget contains an Input widget. It is mandatory to create a new local variable for this Input widget.
 
-    ![](<images/timepicker-image-16.png>)
+    ![Screenshot highlighting the default Input widget contained within the Time Picker widget](images/timepicker-image-16.png "Time Picker Default Input Widget")
 
 1. Set the variable **Data Type** to **Time**.
 
-    ![](<images/timepicker-image-17.png>)
+    ![Image showing the setting of the variable Data Type to Time for the Time Picker widget](images/timepicker-image-17.png "Setting Data Type to Time")
 
 1. On the **Properties** tab, you can change the look and feel of the Time Picker widget by setting the (optional) properties.
 
-    ![](<images/timepicker-image-18.png>)
+    ![Screenshot of the Properties tab for the Time Picker widget with options to change its appearance](images/timepicker-image-18.png "Time Picker Properties Tab")
 
 1. After following these steps and publishing the module, you can test the pattern in your app.
 

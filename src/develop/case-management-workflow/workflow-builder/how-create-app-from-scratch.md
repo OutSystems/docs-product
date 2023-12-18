@@ -32,7 +32,7 @@ To start creating your app from scratch, follow the steps below.
 
     * **Main color** — Pick up the color to apply to the main actions (buttons) and menus background on the generated app. If you upload an icon for your app, Workflow Builder selects the main color based on it, for example, your company brand color.
 
-        ![Customize your app from scratch- name, icon, and description](images/wfb-blank-canvas.png)
+        ![Screenshot showing the customization options for a new app including fields for app name, description, app icon, and main color in Workflow Builder.](images/wfb-blank-canvas.png "Customize your app from scratch")
 
 ## Workflow design
 
@@ -40,7 +40,7 @@ Once you fulfill the overall information about the app, you can start designing 
 
 All applications created in the Workflow Builder start by creating a single request **form** used to gather the required information from your app end users. These forms are the trigger of every workflow, so the first thing to do in your new app is to create a form. For example, if you are building an app to manage expenses from your employees, you need to add the form that they're going to fulfill for the expense request, to trigger the approval process of that particular expense.
 
-![Set up a new form](images/wfb-setup-form.png)
+![Workflow Builder interface prompting to set up a new form for the app.](images/wfb-setup-form.png "Set up a new form")
 
 ## Set up form { #set-up-form }
 
@@ -48,7 +48,7 @@ To create the form to gather information from the end users, follow the steps be
 
 1. Start by clicking on the **Setup Form** button. In this screen, you can define the request form your end users are going to see. To publish your app, you need to define at least one form field.
 
-    ![Adding new field in form](images/wfb-setup-form-field.png)
+    ![Screenshot of the Workflow Builder interface with an option to add a new field to a form.](images/wfb-setup-form-field.png "Adding new field in form")
 
 1. Click on the **+Add a field** button. The **New field** window opens.
 
@@ -63,7 +63,7 @@ To create the form to gather information from the end users, follow the steps be
     * Database Entity - Read more about using OutSystems database Entities  in the [Using the existing OutSystems database Entities](#use-outsystems-entities) section.
     * File upload
 
-    ![New form fields](images/wfb-form-new-field.png)
+    ![Image showing the new field window in Workflow Builder with different field types like Number, Text, Currency, and others.](images/wfb-form-new-field.png "New form fields")
 
 1. To make a field visible depending on the user inputs, click **Add visible rule** to set the conditions to make it visible. Learn about this feature in the [Adding conditional fields](#add-conditional-fields) section.
 
@@ -81,27 +81,27 @@ When building your form, you can choose to make fields visible depending on your
 
 1. Click **Add visibility rule**.
 
-    ![Add visibility rule](images/wfb-form-visibility-rule.png)
+    ![Screenshot illustrating how to add a visibility rule to a form field in Workflow Builder.](images/wfb-form-visibility-rule.png "Add visibility rule")
 
 1. From the first **If** dropdown (1), select the field name you want to add to the condition. You must have previously defined other fields in the form.
 
 1. From the second dropdown of the **If** condition (2), select the relevant condition logic, for example, **greater than**.
 
-    ![Setting the field condition ](images/wfb-visibility-rule-set-condition.png)
+    ![Image showing the process of setting a condition for a field's visibility in Workflow Builder.](images/wfb-visibility-rule-set-condition.png "Setting the field condition")
 
 1. In the right-hand field (3), enter the value for the rule. In this example, **If** the `Expense [€]` value is **greater than** `50`, then show the `Attach receipt` form field.
 
-    ![Final field condition](images/wfb-visibility-rule-condition.png)
+    ![Screenshot displaying the final condition set for a field's visibility in Workflow Builder.](images/wfb-visibility-rule-condition.png "Final field condition")
 
 1. Click **Save**.
 
 1. Check if the new fields setting you set are correct. To edit the visibility rule again, click **Edit rule**. To close the field definitions, click **Save**. 
 
-    ![Conditional field defined](images/wfb-form-visibility-rule-final.png)
+    ![Image of a defined conditional field in Workflow Builder with visibility rules applied.](images/wfb-form-visibility-rule-final.png "Conditional field defined")
 
 1. To test the new conditional field, select the **Preview** button on top of the screen and then interact with the form preview.
 
-    ![Visibility rule applied](images/wfb-visibility-rule-applied.png)
+    ![Screenshot showing the result of applying a visibility rule to a form field in Workflow Builder.](images/wfb-visibility-rule-applied.png "Visibility rule applied")
 
 ### Using the existing OutSystems database Entities { #use-outsystems-entities }
 
@@ -121,19 +121,19 @@ To use an Entity in a form field, follow these steps:
 
 1. To browse the existing public Entities in your development environment, click **Browse entity** .
 
-    ![Browsing existing OutSystems Entities](images/wfb-design-browse-entity.png)
+    ![Image of the Workflow Builder interface with options to browse existing OutSystems database entities.](images/wfb-design-browse-entity.png "Browsing existing OutSystems Entities")
 
 1. Select the Module that contains the Entity by clicking the **>** symbol. If you're not sure which module has the Entity you need, ask your IT administrator.
 
-    ![Finding existing OutSystems Entity Modules](images/wfb-design-find-entity.png)
+    ![Screenshot showing the selection process of an OutSystems module that contains the desired entity in Workflow Builder.](images/wfb-design-find-entity.png "Finding existing OutSystems Entity Modules")
 
 1. Select the Entity by clicking on the radio button, and then click **Save**.
 
-    ![Choosing the OutSystems Entity](images/wfb-design-choose-entity.png)
+    ![Image depicting the choice of an OutSystems Entity from a list in Workflow Builder.](images/wfb-design-choose-entity.png "Choosing the OutSystems Entity")
 
 1. From the **Choose attribute** drop-down menu, select the relevant attribute.
 
-    ![Choosing the OutSystems Entity field](images/wfb-design-choose-entity-field.png)
+    ![Screenshot highlighting the selection of a specific attribute from an OutSystems Entity in Workflow Builder.](images/wfb-design-choose-entity-field.png "Choosing the OutSystems Entity field")
 
 1. Click **Save** to add the new form field.
 
@@ -145,7 +145,7 @@ The default status of a form when you complete designing it in the workflow is *
 
     The Change status window is displayed.
 
-    ![Setting the form status](images/wfb-set-form-status.png?width=500)
+    ![Image showing the interface for setting the status of a form in Workflow Builder.](images/wfb-set-form-status.png "Setting the form status")
 
 1. From the **Change status to** drop-down, select one of the following options:
 
@@ -153,23 +153,23 @@ The default status of a form when you complete designing it in the workflow is *
     * **Create new status** — add a new status to the list, for example, **Pending**.
     * **Manage status** — create and manage all the statuses your request has. 
 
-    ![Select the form status](images/wfb-design-select-form-status.png)
+    ![Screenshot of the drop-down menu for selecting the status of a form in Workflow Builder.](images/wfb-design-select-form-status.png "Select the form status")
 
 1. To notify the users (Requesters) who submitted the form about the request status, select the **Send email to requester?** checkbox. You can preview the email by clicking the preview icon.
 
-    ![Email preview](images/wfb-design-email-preview.png?width=500)
+    ![Image of an email preview in Workflow Builder that is sent to the requester upon form status change.](images/wfb-design-email-preview.png "Email preview")
 
 1. To edit the email, click **Edit email**. 
 
     You can edit the email by directly typing in the **Subject** and **Message** fields. You can also edit the dynamic fields by choosing a value from the **Dynamic field** drop-down. 
 
-    ![Email edit](images/wfb-design-edit-email.png)
+    ![Screenshot showing the email editing interface in Workflow Builder with options to customize the subject and message.](images/wfb-design-edit-email.png "Email edit")
 
     The dynamic fields are placeholders that allow you to customize the email by automatically inserting the recipients data into these placeholders. In this example, we change the email message and add the **{{Request number}}** dynamic field.
 
-    ![Add new dynamic field ](images/wfb-design-email-edit-dynamic-field-add-dynamic.png)
+    ![Image of the email editing interface in Workflow Builder with an option to add a new dynamic field to the message.](images/wfb-design-email-edit-dynamic-field-add-dynamic.png "Add new dynamic field")
 
-    ![New email message](images/wfb-design-email-edit-dynamic-new-email.png)
+    ![Screenshot displaying a new email message in Workflow Builder with a dynamic field added to the content.](images/wfb-design-email-edit-dynamic-new-email.png "New email message")
 
 1. Click **Save**.
 
@@ -178,7 +178,7 @@ The default status of a form when you complete designing it in the workflow is *
 Once you have your form created, start adding steps to your workflow.
 To add a step, click on the **+ Add step** button.
 There are two kinds of steps: Manual task and Condition.
-![Two kinds of steps: manual task and condition](images/wfb-design-step-types.png)
+![Workflow Builder showing two types of steps available for adding to the workflow: manual task and condition.](images/wfb-design-step-types.png "Two kinds of steps: manual task and condition")
 
 
 ## Manual tasks { #manual-tasks }
@@ -197,11 +197,11 @@ To define a manual task, perform the following steps:
 
 1. In the **Name** field, enter the task name.
 
-    ![Manual task - name](images/wfb-design-manual-task-name.png?width=500)
+    ![Screenshot of the manual task naming interface in Workflow Builder.](images/wfb-design-manual-task-name.png "Manual task - name")
 
 1. From the **Assign to a group** drop-down menu, select one of the following options:
 
-    ![Manual task - assigning to a group](images/wfb-design-manual-task-assignment.png?width=500)
+    ![Image showing the assignment options for a manual task in Workflow Builder, including requester, requester's manager, and specific groups.](images/wfb-design-manual-task-assignment.png "Manual task - assigning to a group")
 
     * **Requester** - automatically assigns the request to the requester
 
@@ -225,13 +225,13 @@ To define a manual task, perform the following steps:
 
 1. To notify the users of your group about the new request, select the **Send email assigned group?** checkbox. You can preview the email by clicking the preview icon.
 
-    ![Manual task - email preview](images/wfb-design-email-preview-new-request.png)
+    ![Screenshot of an email preview in Workflow Builder that notifies a group about a new request assigned to them.](images/wfb-design-email-preview-new-request.png "Manual task - email preview")
 
 1. To edit the email, click **Edit email**. 
 
     You can edit the email by directly typing in the **Subject** and **Message** fields. You can also edit the dynamic fields by choosing a value from the **Dynamic field** drop-down.  
 
-    ![Email edit](images/wfb-design-email-edit-new-request.png)
+    ![Image of the email editing interface in Workflow Builder for customizing the notification sent to a group about a new request.](images/wfb-design-email-edit-new-request.png "Email edit")
    
 ### Create assignment rule
 
@@ -253,7 +253,7 @@ An assignment rule exists only in the context of the manual task for which you c
 
     **Note**: You cannot assign the task to the Requester.
 
-    ![Example of an assignment rule](images/wfb-design-assign-rule.png)
+    ![Screenshot showing an example of an assignment rule in Workflow Builder where a task is assigned based on a condition.](images/wfb-design-assign-rule.png "Example of an assignment rule")
 
 1. If needed add another **If** rule, by selecting **+If**, and then following steps 2 to 6 to define the rule and assignment.
 
@@ -316,7 +316,7 @@ To define the **Condition**, perform the steps below. You can add more than one 
 
 1. Choose the rule from the second drop-down list. These conditions vary according to what you chose in the previous field.
 
-    ![Adding conditions](images/wfb-design-add-condition.png?width=500)
+    ![Image of the interface for adding conditions to a workflow in Workflow Builder.](images/wfb-design-add-condition.png "Adding conditions")
 
 1. Write or choose the value in the third drop-down list. The available options change according to the previous field. Some examples:
 
@@ -330,7 +330,7 @@ To define the **Condition**, perform the steps below. You can add more than one 
 
 After creating a condition the workflow automatically splits into two branches: the true and the false branches.
 
-![Condition branches](images/wfb-design-condition-branches.png?width=450)
+![Workflow Builder showing the split into two branches after creating a condition: the true and the false branches.](images/wfb-design-condition-branches.png "Condition branches")
 
 For each branch, you need to define the following steps in the workflow. You can add the following tasks:
 
@@ -339,7 +339,7 @@ For each branch, you need to define the following steps in the workflow. You can
 * **Status** — to set a new status
 * **Go to...** — to proceed to another destination in your workflow, for example, to one of the existing manual tasks, conditions, or to the form submission.
 
-![Adding manual tasks to the middle of the workflow](images/wfb-design-add-manual-task-workflow.png?width=450)
+![Workflow Builder interface showing options for adding manual tasks to the middle of the workflow.](images/wfb-design-add-manual-task-workflow.png "Adding manual tasks to the middle of the workflow")
 
 All branches of a workflow finish with an **End** green icon.
 
@@ -353,33 +353,33 @@ A parallel flow is a process modeling capability that allows multiple paths with
 
 A sequential flow ends when all tasks in the process are complete.
 
-![Sequential parallel flow diagram](images/sequential-parallel-flow-wb.png)
+![Diagram illustrating the concept of sequential and parallel flows in Workflow Builder.](images/sequential-parallel-flow-wb.png "Sequential parallel flow diagram")
 
 When a parallel flow is executed, the sequence of activities in each parallel path is executed independently. 
 
-![Parallel flow diagram](images/parallel-flow-wb.png)  
+![Diagram showing a parallel flow with independent paths being executed simultaneously in Workflow Builder.](images/parallel-flow-wb.png "Parallel flow diagram")  
 
 You can define when a parallel flow ends, for example, when all branches are complete or when a specific branch finishes before the rest. This option means when that specific branch completes, the main flow continues.
 
-![Select when parallel flow ends](images/branch-ends-wb.png)
+![Workflow Builder interface with options to select when a parallel flow ends.](images/branch-ends-wb.png "Select when parallel flow ends")
 
 Workflow Builder allows you to create parallel flows. The following diagram shows parallel branches being used for an employee onboarding request where the IT manager and the facilities manager have parallel tasks to complete at the same time. 
 
-![Example employee onboarding example](images/parallel-branches-employee-onboarding-wb.png)
+![Workflow Builder diagram showing parallel branches used for an employee onboarding request.](images/parallel-branches-employee-onboarding-wb.png "Example employee onboarding example")
 
 ## Creating a parallel flow
 
 1. From the main canvas, click **+Add Step**, and select **Parallel branches**.
 
-    ![Add parallel branch](images/parallel-branch-wb.png)
+    ![Image showing the option to add a parallel branch to a workflow in Workflow Builder.](images/parallel-branch-wb.png "Add parallel branch")
 
 1. In the **Parallel branches** popup, click **Add branch**.
 
-    ![Add branch](images/add-branch-wb.png)
+    ![Screenshot of the 'Add branch' button in Workflow Builder for creating new branches in a parallel flow.](images/add-branch-wb.png "Add branch")
 
     **Note**: You can add a maximum of 4 branches to a branch flow. Adding  a new branch allows you to delete an existing branch. For each branch, you can add a manual task, a condition, a status, or a go to action. Adding a go to action allows you to proceed to another destination within the parallel flow. If you add a go to action after a condition or a parallel flow, you can only proceed to a manual task.  If you add a go to action after a manual task, you can proceed to another manual task, form submission, a condition, or another parallel flow.
 
-    ![Go To action ](images/go-to-wb.png)
+    ![Image of the 'Go To' action in Workflow Builder that allows proceeding to another destination within the workflow.](images/go-to-wb.png "Go To action")
 
 1. Enter a name for the branch flow and a name for each branch, then click **Save**.
 
@@ -387,18 +387,18 @@ Workflow Builder allows you to create parallel flows. The following diagram show
 
     The new parallel flow is displayed on the main canvas.
 
-    ![New parallel flow](images/new-parallel-flow-wb.png)
+    ![Screenshot showing a new parallel flow added to the main workflow canvas in Workflow Builder.](images/new-parallel-flow-wb.png "New parallel flow")
 
 ### Deleting a parallel flow
 
 1. From the main canvas, select the parallel flow you want to delete.
 
-    ![Select parallel to delete](images/select-parallel-flow-delete-wb.png)
+    ![Image highlighting the selection of a parallel flow in Workflow Builder for deletion.](images/select-parallel-flow-delete-wb.png "Select parallel to delete")
 
 1. Click the Delete icon.
 
-    ![Click delete icon](images/delete-parallel-flow-wb.png)
+    ![Screenshot showing the delete icon being clicked to remove a parallel flow from a workflow in Workflow Builder.](images/delete-parallel-flow-wb.png "Click delete icon")
 
 1. Click the **Yes, delete** button.
 
-    ![Click delete button](images/confirm-delete-wb.png)
+    ![Image of the confirmation dialog with the 'Yes, delete' button to confirm the deletion of a parallel flow in Workflow Builder.](images/confirm-delete-wb.png "Click delete button")

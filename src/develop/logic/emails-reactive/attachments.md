@@ -42,7 +42,7 @@ To attach a file to an email, complete the following steps in Service Studio:
 
     Service Studio shows a plus icon with the "add list item" tooltip.
 
-    ![Adding attachments in the Send Email action](images/email-attachment-inline-ss.png?width=495)
+    ![Screenshot showing how to add attachments in the Send Email action in Service Studio](images/email-attachment-inline-ss.png "Adding Attachments in the Send Email Action")
 
 1. Click the plus icon next to the **Attachments** list to add a new item.
 
@@ -50,13 +50,13 @@ To attach a file to an email, complete the following steps in Service Studio:
 
 1. Move your mouse over the item you added in the **Attachment** list and click the plus icon to expand.
 
-    ![Attachment properties](images/email-attachment-add-list-ss.png?width=315)
+    ![Screenshot of the expanded Attachment item in the Send Email action showing the plus icon](images/email-attachment-add-list-ss.png "Attachment Properties Interface")
 
 1. Enter the information to define the file name, content, and media type of the email attachment.
 
     For more information about the Attachment properties, see [Attachment data structure](#attachment-data-structure).
     
-    ![Attachment properties](images/email-attachment-properties.png?width=320)
+    ![Screenshot displaying fields for FileName, FileContent, and MimeType in the Attachment properties](images/email-attachment-properties.png "Defining Attachment Properties")
 
     The following are example properties to attach a PDF file from the module resources:
 
@@ -87,7 +87,7 @@ In the following example, Service Studio fetches images from a database with an 
 
     Service Studio places an Aggregate in the logic flow.
 
-    ![Getting data from database](images/email-attachment-getting-from-database.png?width=500)
+    ![Screenshot illustrating how to fetch images from a database with an Aggregate for email attachments](images/email-attachment-getting-from-database.png "Getting Data from Database for Email Attachments")
 
     <div class="info" markdown="1">
 
@@ -99,13 +99,13 @@ In the following example, Service Studio fetches images from a database with an 
 
     The expression editor opens.
 
-    ![Getting data from database](images/email-attachments-list.png?width=315)
+    ![Screenshot of the expression editor for selecting the output List from an Aggregate for email attachments](images/email-attachments-list.png "Email Attachments List Expression Editor")
 
 1. In the expression editor, select the output List from your Aggregate, for example, `GetSampleProductImages.List`. Service Studio shows an error with a message that you need to use the Attachment List data type. Click **Done** to close the editor and move on to the next step to map the values and resolve the error.
 
 1. In the Attachment section of Send Email, map the attributes so Service Studio knows which values pass to the attachments. You must specify binary content and the file name. The MIME type is optional, but providing it lets more email clients handle the attachment.
 
-    ![Mapping the values to the attachment data structure](images/email-attachment-mapping.png?width=315)
+    ![Screenshot showing the mapping of attributes to the Attachment data structure in Service Studio](images/email-attachment-mapping.png "Mapping Values to the Attachment Data Structure")
 
 
 ## Reference

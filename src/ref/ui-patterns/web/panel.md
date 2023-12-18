@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/panel-2-diag.png>)
+![Diagram illustrating the layout and classes of the Panel UI Pattern in Traditional Web Apps](images/panel-2-diag.png "Panel Layout Diagram")
 
 ## Advanced use case
 
@@ -26,14 +26,14 @@ Applies only to Traditional Web Apps.
 
 1. Set the ExtendedClass parameter to `shadow-l`.
 
-    ![](<images/panel-3-ss.png>)
+    ![Screenshot showing a Panel with the box-shadow effect applied in a Traditional Web App](images/panel-3-ss.png "Panel with Box-Shadow")
 
 1. Publish and test.
 
 **Before**
 
-![](<images/panel-4.png>)
+![Screenshot of a Panel before applying the box-shadow effect in a Traditional Web App](images/panel-4.png "Panel Before Box-Shadow")
 
 **After**
 
-![](<images/panel-5.png>)
+![Screenshot of a Panel after applying the box-shadow effect in a Traditional Web App](images/panel-5.png "Panel After Box-Shadow")

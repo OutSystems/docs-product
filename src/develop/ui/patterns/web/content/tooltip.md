@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Tooltip UI Pattern to dynamically display informative text when a user hovers over, clicks, or taps an on-screen element.
 
-![](<images/tooltip-1.png>)
+![Example of a Tooltip UI Pattern in a Traditional Web App](images/tooltip-1.png "Tooltip UI Pattern Example")
 
 **How to use the Tooltip UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
   
     The Tooltip widget is displayed.
 
-    ![](<images/tooltip-2-ss.png>)
+    ![Service Studio displaying the Tooltip widget in the Toolbox](images/tooltip-2-ss.png "Service Studio Tooltip Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 
 1. From the Toolbox, drag the Tooltip widget into the Main Content area of your application's screen.
 
-    ![](<images/tooltip-3-ss.png>)
+    ![Dragging the Tooltip widget into the Main Content area in Service Studio](images/tooltip-3-ss.png "Dragging Tooltip Widget to Main Content")
 
     By default, the Tooltip widget contains Widget and Content placeholders.
 
@@ -48,11 +48,11 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
     
     In this example, we add a Save button to the Widget placeholder and enter the tooltip text 'Save your details' in the Content placeholder.
 
-    ![](<images/tooltip-4-ss.png>)
+    ![Adding a Save button to the Widget placeholder and tooltip text 'Save your details' in Service Studio](images/tooltip-4-ss.png "Adding Content to Tooltip Placeholders")
 
 1. On the **Properties** tab, change the look and feel of the Tooltip by setting the (optional) properties.
 
-    ![](<images/tooltip-5-ss.png>)
+    ![Properties tab in Service Studio for customizing the Tooltip appearance](images/tooltip-5-ss.png "Setting Tooltip Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

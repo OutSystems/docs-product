@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/layout-popup-1-diag.png>)
+![Diagram illustrating the layout and classes of the Layout Popup web block for Traditional Web Apps](images/layout-popup-1-diag.png "Layout Popup Diagram")
 
 ### Main Content
 
@@ -35,7 +35,7 @@ Drag your content to this placeholder.
 1. Set the custom breakpoints (in pixels). In the example below, the phone breaks are set to happen only when the Device width is at 200px.
 1. Publish and test.
 
-![](<images/layout-popup-2-ss.png>)
+![Screenshot showing how to customize responsive breakpoints in the Layout Popup properties for Traditional Web Apps](images/layout-popup-2-ss.png "Layout Popup Breakpoints Customization")
 
 ## Notes
 

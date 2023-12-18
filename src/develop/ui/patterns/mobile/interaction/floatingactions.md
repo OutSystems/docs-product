@@ -26,7 +26,7 @@ Use the Floating Action UI Pattern to show the primary action on a screen. You c
 
     The Floating Actions widget is displayed.
 
-    ![](<images/floatingactions-1-ss.png>)
+    ![Screenshot of Service Studio showing the Floating Actions widget in the Toolbox](images/floatingactions-1-ss.png "Service Studio Floating Actions Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ Use the Floating Action UI Pattern to show the primary action on a screen. You c
 
 1. From the Toolbox, drag the Floating Actions widget into the Main Content area of your application's screen.
 
-    ![](<images/floatingactions-2-ss.png>)
+    ![Image depicting the process of dragging the Floating Actions widget into the Main Content area in Service Studio](images/floatingactions-2-ss.png "Dragging Floating Actions Widget to Main Content")
 
     By default, the Floating Actions widget contains a Button placeholder (with an icon) and an Items placeholder with 3 Floating Actions Item widgets (each containing a Label and Item placeholder). You can add or delete the Floating Actions Item widgets as required.
 
@@ -48,11 +48,11 @@ Use the Floating Action UI Pattern to show the primary action on a screen. You c
 
     In this example, we add text to the Label placeholders and linked icons to the Item placeholders.  
 
-    ![](<images/floatingactions-3-ss.png>)
+    ![Example of adding text and icons to the Floating Actions widget placeholders in Service Studio](images/floatingactions-3-ss.png "Adding Content to Floating Actions Placeholders")
 
 1. Select the Floating Actions widget, and on the **Properties** tab, set the relevant properties, for example, whether the actions are expanded and visible when the page loads.
 
-    ![](<images/floatingactions-4-ss.png>)
+    ![Screenshot showing the Properties tab for the Floating Actions widget in Service Studio with options to set](images/floatingactions-4-ss.png "Setting Properties of Floating Actions Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/stackedicon-3-diag.png>)
+![Diagram illustrating the layout and CSS class associations for the Stacked Icon UI Pattern](images/stackedicon-3-diag.png "Stacked Icon Layout Diagram")
 
 ## CSS selectors
 
@@ -38,21 +38,21 @@ Applies only to Traditional Web Apps.
 
 1. Set the parameters for the Tooltip behavior.
 
-    ![](<images/stackedicon-4-ss.png>)
+    ![Screenshot showing the configuration of Tooltip Pattern parameters for the Stacked Icon](images/stackedicon-4-ss.png "Tooltip Parameter Configuration")
 
 1. In the Widget placeholder, drag a StackedIcon Pattern.
 
 1. Set the parameters for the SatckedIcon Pattern.
 
-    ![](<images/stackedicon-5-ss.png>)
+    ![Screenshot displaying the StackedIcon Pattern parameters setup in the user interface](images/stackedicon-5-ss.png "StackedIcon Pattern Configuration")
 
 1. In the Content placeholder, from the Tooltip Pattern, set the desired label for the icon.
 
-    ![](<images/stackedicon-6-ss.png>)
+    ![Screenshot indicating where to input the label for the icon within the Tooltip Pattern content placeholder](images/stackedicon-6-ss.png "Tooltip Content Label Setting")
 
 1. Publish and test.
 
-![](<images/stackedicon-1.gif>)
+![Animated GIF demonstrating the interaction with the Stacked Icon UI Pattern](images/stackedicon-1.gif "Stacked Icon Interaction Demonstration")
 
 ## Notes
 

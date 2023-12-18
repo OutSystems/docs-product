@@ -18,5 +18,5 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/loadonvisible-2-diag.png>)
+![Diagram illustrating the Load on Visible UI Pattern for Traditional Web Apps](images/loadonvisible-2-diag.png "Load on Visible Diagram")
 

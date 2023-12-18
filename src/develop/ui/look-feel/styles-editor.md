@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 Styles Editor is a panel for editing basic visual properties. Use it to change, for example, font color, margins or border thickness. In the **Interface** tab, open a screen or block, select an element and click the **Styles** tab in the properties pane. Styles Editor panel is also available in **Style Sheet Editor**, where you can use the editor to modify saved styles.
 
-![Styles editor in Service Studio](images/styles-editor-full-app-window.png)
+![Screenshot of the Styles Editor full application window showing various styling options](images/styles-editor-full-app-window.png "Styles Editor Full Application Window")
 
 To style a widget use the options in **Font**, **Layout** and **Borders**. Here is an overview of what you can change by using Styles Editor:
 
@@ -28,8 +28,8 @@ Borders
 
 | Icon  | Meaning  |
 |---|---|
-|![Icon in editable properties](images/styles-editor-icon-editable-unlocked.png) | The value applies to all other related properties. |
-|![Icon in properties locked for edits](images/styles-editor-icon-editable-locked.png) | The value applies to the current property only. |
+|![Icon indicating that the value applies to all related properties in Styles Editor](images/styles-editor-icon-editable-unlocked.png "Editable Properties Icon") | The value applies to all other related properties. |
+|![Icon indicating that the value applies only to the current property in Styles Editor](images/styles-editor-icon-editable-locked.png "Locked Properties Icon") | The value applies to the current property only. |
 
 All changes apply to the current widget only.
 
@@ -57,7 +57,7 @@ How to change the style of a widget.
 1. Adjust outer and inner spacing in **Layout/Margin** and **Layout/Padding**.
 1. Add borders in the **Borders** section and adjust the roundness.
 
-![](images/styles-editor-animation.gif)
+![Animated GIF demonstrating how to change the style of a widget using the Styles Editor](images/styles-editor-animation.gif "Styles Editor Animation")
 
 ## Save a style
 

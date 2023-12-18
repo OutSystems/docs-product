@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/tooltip-3-diag.png>)
+![Diagram illustrating the layout and classes of a tooltip component in a traditional web app](images/tooltip-3-diag.png "Tooltip Layout Diagram")
 
 ## Events
 
@@ -34,4 +34,4 @@ Applies only to Traditional Web Apps.
 1. Drag a Tooltip to the preview.
 1. Set the AdvancedFormat parameter to `{ animation: 'perspective' }`.
 
-    ![](<images/tooltip-1.gif>)
+    ![Animated GIF showing the change of animation in a tooltip component within a traditional web app](images/tooltip-1.gif "Change Animation of Tooltip")

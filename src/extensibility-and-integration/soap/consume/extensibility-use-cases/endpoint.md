@@ -16,7 +16,7 @@ Do the following:
 1\. In Integration Studio create an extension and define an action that will handle the endpoint change.  
 In example below we defined an action in Integration Studio called "ChangeEndpoint", with a "Uri" input parameter of type Text.
 
-![](<images/is-action-change-endpoint.png>)
+![Screenshot showing the 'ChangeEndpoint' action defined in Integration Studio with a 'Uri' input parameter](images/is-action-change-endpoint.png "Integration Studio Action Configuration")
 
 2\. Click 'Edit Source Code .NET'. Set the project target framework and add a reference to the `System.ServiceModel` assembly.  
 Enter the code below, replacing the `MssChangeEndpoint` function placeholder that Integration Studio created for you:  

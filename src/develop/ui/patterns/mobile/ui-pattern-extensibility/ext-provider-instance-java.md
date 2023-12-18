@@ -1,13 +1,12 @@
 ---
-tags: runtime-mobileandreactiveweb;  
-summary: 
+tags: runtime-mobileandreactiveweb;
+summary: The article explains how to access and use provider instances in OutSystems through the Initialized event and JavaScript API for UI patterns like the Date Picker
 locale: en-us
 guid: CD21A754-068E-4DA7-9B74-A5122B1AEC7D
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4647%3A10005&mode=design&t=ANpsYvOCthr9AWot-1
 ---
-
 # Provider instance and JavaScript
 
 ## Initialized event
@@ -20,31 +19,31 @@ The following example demonstrates how to use the Date Picker Pattern to access 
 
 1. In Service Studio, in the Toolbox, search for the **Date Picker** Pattern.
 
-    ![Date Picker](<images/datepicker-ss.png>)
+    ![Screenshot showing the Date Picker pattern in the OutSystems Service Studio toolbox](images/datepicker-ss.png "Date Picker in Service Studio")
 
 1. Drag the Pattern to the screen.
 
-    ![Drag Date Picker to the screen](<images/drag-datepicker-ss.png>)
+    ![Screenshot illustrating how to drag the Date Picker pattern onto the screen in OutSystems Service Studio](images/drag-datepicker-ss.png "Dragging Date Picker to the Screen")
 
 1. On the **Properties** tab,  in the **Events** section, select **New Client Action** for the **Initialized** event.
     
-    ![Create new client action for initialized event](<images/initialized-ss.png>)
+    ![Screenshot depicting the process of creating a new client action for the Initialized event in OutSystems Service Studio](images/initialized-ss.png "Creating a New Client Action for Initialized Event")
 
 1. Drag a JavaScript node to the **Initialized** event flow.
 
-    ![Add JavaSript node to event flow](<images/instance-js-ss.png>)
+    ![Screenshot showing the addition of a JavaScript node to the Initialized event flow in OutSystems Service Studio](images/instance-js-ss.png "Adding JavaScript Node to Event Flow")
 
 1. Inside the JavaScript node, create an input parameter, of type **Text** and set the **Name** to **WidgetId**.
 
-    ![Create input parameter](<images/widgetid-para-ss.png>)
+    ![Screenshot demonstrating how to create an input parameter named WidgetId in a JavaScript node within OutSystems Service Studio](images/widgetid-para-ss.png "Creating an Input Parameter")
 
 1. Assign the **WidgetId** to the Id returned by the **Initialized** event.
 
-    ![Create input parameter](<images/assignid-ss.png>)
+    ![Screenshot showing the assignment of the WidgetId to the Id returned by the Initialized event in OutSystems Service Studio](images/assignid-ss.png "Assigning WidgetId")
 
 1. Use the OutSystems UI API (``OutSystems.OSUI.Patterns.DatePickerAPI.GetDatePickerItemById($parameters.WidgetId).provider``) to get the provider instance.
 
-    ![UseAPI to get the provider instance](<images/api-ss.png>)
+    ![Screenshot illustrating the use of OutSystems UI API to get the provider instance for the Date Picker pattern](images/api-ss.png "Using OutSystems UI API")
 
 1. Add your JavaScript code using the provider instance.
 

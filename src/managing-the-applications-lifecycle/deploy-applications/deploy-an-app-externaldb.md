@@ -34,11 +34,11 @@ In the Quality environment, define a Database Connection:
 
 1. On the **Administration** tab, select **Database Connections**.
 
-    ![](images/ext-db-05.png?width=800)
+    ![Screenshot of the Service Center Administration tab with Database Connections selected](images/ext-db-05.png "Service Center Administration Tab")
 
 1. Click **New Database Connection** and fill in the fields to set up the connection to the external database.
 
-    ![](images/ext-db-06.png?width=800)
+    ![Form for creating a new database connection in the Service Center](images/ext-db-06.png "New Database Connection Form")
 
     If you need to fine-tune the database connection, choose the option **Advanced configuration**. This allows you to define your own connection string.
 
@@ -70,33 +70,33 @@ To deploy the application to the Quality environment follow these steps:
 
 1. Open LifeTime for your Infrastructure.
 
-    ![](images/ext-db-07.png?width=800)
+    ![LifeTime management console interface showing the option to manage all environments](images/ext-db-07.png "LifeTime Management Console")
 
     Tip: Open LifeTime directly from Service Center by clicking **Manage all environments**.
 
 1. Select the **Applications** tab and select the **DEPLOY...** button between the Development environment and the Quality environment.
 
-    ![](images/ext-db-08.png?width=800)
+    ![DEPLOY button highlighted between Development and Quality environments in LifeTime](images/ext-db-08.png "Deploy Button in LifeTime")
 
 1. Select **Add Applications** and, in the **Choose one or more Applications** dialog, select your application and select **Add to Deployment Plan**.
 
-    ![](images/ext-db-09.png?width=400)
+    ![Dialog for adding applications to the deployment plan in LifeTime](images/ext-db-09.png "Add Applications to Deployment Plan")
 
 1. Select the **VALIDATE NOW** button between the Development environment and the Quality environment.
 
-    ![](images/ext-db-10-ea.png?width=800)
+    ![VALIDATE NOW button highlighted between Development and Quality environments in LifeTime](images/ext-db-10-ea.png "Validate Deployment in LifeTime")
 
 1. Select the **CONTINUE** button between the Development environment and the Quality environment.
 
-    ![](images/ext-db-11-ea.png?width=800)
+    ![CONTINUE button highlighted between Development and Quality environments in LifeTime](images/ext-db-11-ea.png "Continue Deployment in LifeTime")
 
 1. Verify the deployment plan, select **Deploy Now** and then in the **Deploy applications as planned** dialog select **Deploy Now** to start the deployment.
 
-    ![](images/ext-db-12.png?width=800)
+    ![Deploy Now dialog in LifeTime with the Deploy Now button to start the deployment](images/ext-db-12.png "Deploy Now Dialog in LifeTime")
 
 1. In the **Configure applications settings** step, enter the three-part **Physical Table Name** of each external database Entity. Make sure you enter the correct **Physical Table Name** for the target environment.
 
-    ![](images/ext-db-16-ea.png?width=800)
+    ![Configure applications settings step showing fields for entering the Physical Table Name](images/ext-db-16-ea.png "Configure Application Settings")
 
     <div class="info" markdown="1">
 
@@ -106,12 +106,12 @@ To deploy the application to the Quality environment follow these steps:
 
 1. After the deployment stops, click the **configuration or confirmation** link in the warning banner to open Service Center and map the database name of the extension to the database connection.
 
-    ![](images/ext-db-13-ea.png?width=800)
+    ![Warning banner with a configuration or confirmation link after deployment in LifeTime](images/ext-db-13-ea.png "Post-Deployment Configuration Link")
 
 1. Associate the logical database name of the extension to the Database Connection that you created previously.
 
-    ![](images/ext-db-14.png?width=800)
+    ![Service Center interface for associating the logical database name of the extension to the Database Connection](images/ext-db-14.png "Associate Logical Database Name")
 
 After the Deployment finishes your Extension is ready to be used by other applications in the Quality environment.
 
-![](images/ext-db-15.png?width=800)
+![Confirmation that the extension is ready to be used in the Quality environment](images/ext-db-15.png "Extension Ready in Quality Environment")

@@ -44,7 +44,7 @@ To enable the built-in accessibility features in Service Studio, do the followin
 1. Select the **EnableAccessibilityFeatures** input parameter.
 1. On the parameter properties, set the **Default Value** to **True**.
 
-    ![Set the Enable Accessibility Features parameter value to true](images/enabling-accessibility-features-ss.png)
+    ![Screenshot showing how to set the Enable Accessibility Features parameter to true in OutSystems Service Studio](images/enabling-accessibility-features-ss.png "Enabling Accessibility Features in Service Studio")
 
 By setting the **EnableAccessibilityFeatures** set to true, you activate the following features for all screens using the layout:
 
@@ -81,7 +81,7 @@ To set an alternative text to an image, do the following steps:
 1. In the **Attributes** section, create an **alt**.
 1. Enter the description. When an image is for decorative purposes, set **alt=""**.
 
-    ![Adding text alternative to images](images/image-text-alternatives-ss.png)
+    ![Screenshot demonstrating how to add alternative text to images in OutSystems](images/image-text-alternatives-ss.png "Adding Text Alternative to Images")
 
 After adding alt-text to an image, for each of the used images, and published the module, you can test the image text alternatives by using a screen reader.
 
@@ -99,7 +99,7 @@ To set the text headings, do the following steps:
 1. Enter some text into the HTML Element.
 1. Check the widget structure to verify that the text is within the **h1** element (4).
 
-    ![Setting text headings](images/text-headings-ss.png)
+    ![Screenshot illustrating how to set text headings using the HTML Element widget in OutSystems](images/text-headings-ss.png "Setting Text Headings")
 
 On setting the headings, you can test them using a screen reader.
 
@@ -113,16 +113,16 @@ Improve the text readability by letting the users increase the text spacing in y
 
 1. In your app screen, select the page element that triggers the increased text spacing. For example, a button.
 1. To create a new client action, in the **Events** section of the **Properties**, go to the **OnClick** event and select **(new client action)**.
-![Creating a new client action](images/new-client-action-ss.png)
+![Screenshot of the process to create a new client action for text spacing in OutSystems](images/new-client-action-ss.png "Creating a New Client Action")
 1. Set the action name as **TextSpacing**, for example.
 
-    ![Setting the text spacing client action](images/text-spacing-client-action-ss.png)
+    ![Screenshot showing the configuration of the Text Spacing client action in OutSystems](images/text-spacing-client-action-ss.png "Setting the Text Spacing Client Action")
 
 1. On the **Logic** tab, click on **OutSystemsUI**
 1. Click on the **Accessibility** Client Actions folder.
 1. Drag the **ToggleTextSpacing** action into the flow.
 
-    ![Setting the accessibility](images/set-accessibility-role-ss.png)
+    ![Screenshot depicting how to set the accessibility ToggleTextSpacing action in OutSystems](images/set-accessibility-role-ss.png "Setting the Accessibility Role")
 
 ### Form labels
 
@@ -134,7 +134,7 @@ To bind labels with the Forms fields they refer to, do the following steps:
 1. On the **Properties**, go to the **Input Widget** drop-down, and select the widget to associate the label (2).
 1. To see a demo of a form, create a screen based on a **Detail** Screen Template.
 
-![Associating labels to forms fields](images/form-labels-ss.png)
+![Screenshot showing how to bind Label widgets to input fields in OutSystems forms](images/form-labels-ss.png "Binding Form Labels to Input Fields")
 
 On setting these steps for each input field and publishing the module, you can test reading the inputs captions using a screen reader.
 
@@ -158,7 +158,7 @@ Turning on the built-in accessibility features allows you to get a visual highli
 
 You can explicitly select an element by using the **SetFocus** action. For example, to highlight an input field when a user enters a page that contains a form.
 
-![Setting the focus to an element](images/element-in-focus-ss.png)
+![Screenshot displaying how to highlight an element using the SetFocus action in OutSystems](images/element-in-focus-ss.png "Highlighting an Element in Focus")
 
 To explicitly select an element on a screen, do the following steps:
 
@@ -168,7 +168,7 @@ To explicitly select an element on a screen, do the following steps:
 1. Select the **SetFocus** action and drag it into the logic, as shown in the figure below.
 1. On the **Properties**, go to **WidgetId** and select the Id of the widget you want to highlight.
 
-![Adding the setfocus action into an Onready action](images/element-in-focus-setfocus-ss.png?width=550)
+![Screenshot of setting focus on a specific element using the SetFocus action in OutSystems](images/element-in-focus-setfocus-ss.png "Setting Focus on an Element")
 
 After following these steps and published the module, you can test the highlighting of the element.
 
@@ -183,7 +183,7 @@ To change the default main container, do the following steps:
 1. Double-click the **SkipToContentOnClick** action.
 1. Select the **SkipToContent** node in the flow and edit the **TargetId** in the action properties.
 
-![Setting the Skip To Content target id](images/skip-to-content-target-id-ss.png)
+![Screenshot illustrating how to set the Skip to Content target ID in OutSystems](images/skip-to-content-target-id-ss.png "Setting Skip to Content Target ID")
 
 <div class="info" markdown="1">
 

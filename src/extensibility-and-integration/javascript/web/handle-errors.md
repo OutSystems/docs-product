@@ -54,8 +54,8 @@ If you want to use **OutSystems OsAlertExceptionHandler** function, you must reg
 
 The example below shows the definition, in the scope of the Module, of a function to handle the JavaScript errors and its registration as an error handler function:
 
-![](images/handle-errors-1.png)
+![Code snippet showing how to define a JavaScript error handler function](images/handle-errors-1.png "JavaScript Error Handler Function Definition")
 
-![](images/handle-errors-2.png)
+![Code snippet showing how to register a JavaScript error handler function](images/handle-errors-2.png "JavaScript Error Handler Function Registration")
 
 You may register multiple functions to handle errors. All the registered error handler functions are executed when a JavaScript error occurs.

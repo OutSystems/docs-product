@@ -25,7 +25,7 @@ Follow these steps to create a Client Variable and initialize its value when the
 1. Set **Public** property of BlockWithClientVariable to **Yes**.
 1. Publish the app and open it in a browser.
 
-![Sample App A with a Client Variable](<images/client-variable.png>)
+![Screenshot showing the process of creating and setting a Client Variable in a Reactive Web App](images/client-variable.png "Client Variable in Reactive Web App")
 
 ## Create the second app and pass it the value of Client Variable
 

@@ -23,7 +23,7 @@ These commands can be used to execute common development tasks such as opening o
 
 To use the commands, on the CLI first navigate to your Service Studio installation directory:
 
-![Command line interface](images/ss-command_1.png)
+![Screenshot showing how to navigate to the Service Studio installation directory using the command line interface.](images/ss-command_1.png "Service Studio Installation Directory")
 
 And precede any command by `servicestudio.exe` and a space, for example: `servicestudio.exe -merge`.
 
@@ -60,7 +60,7 @@ Argument | Type | Description | Example
 
 Opens the Service Studio dialog to create a new application.
 
-![Create a new app dialog](images/ss-command_2.png)
+![Image of the Service Studio dialog for creating a new application.](images/ss-command_2.png "Create New Application Dialog")
 
 If the login information is not provided the login screen will show up before proceeding to the dialog to create an app.
 

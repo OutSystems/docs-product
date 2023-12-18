@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Display on Device UI pattern to select what elements are displayed on which device types. With this pattern you can improve the way information is displayed on different devices - computers, tablets, and phones - by specifically specifying which elements display on each of them.
 
-![](<images/displayondevice-1.png>)
+![Overview of Display on Device pattern showing different device types](images/displayondevice-1.png "Display on Device Pattern Overview")
 
 **How to use the Display on Device UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Display on Device UI pattern to select what elements are display
 
     The Display on Device widget is displayed.
 
-    ![](<images/displayondevice-2-ss.png>)
+    ![Service Studio interface with Display on Device widget highlighted](images/displayondevice-2-ss.png "Display on Device Widget in Service Studio")
   
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ You can use the Display on Device UI pattern to select what elements are display
 
 1. From the Toolbox, drag the Display on Device widget into the Main Content area of your application's screen.
 
-    ![](<images/displayondevice-3-ss.png>)
+    ![Dragging the Display on Device widget into the Main Content area in Service Studio](images/displayondevice-3-ss.png "Dragging Display on Device Widget")
 
     By default, the Display on Device widget contains OnDesktop, OnTablet, and OnPhone placeholders.
 
@@ -48,6 +48,6 @@ You can use the Display on Device UI pattern to select what elements are display
 
     In this example, we add images by dragging the Image widget into each of the placeholders, and on the **Properties** tab, from the **Image** dropdown, selecting an image from the sample OutSystems UI images.
 
-    ![](<images/displayondevice-4-ss.png>)
+    ![Adding images to OnDesktop, OnTablet, and OnPhone placeholders in Display on Device widget](images/displayondevice-4-ss.png "Configuring Display on Device Placeholders")
 
 After following these steps and publishing the module, you can test the pattern in your app.

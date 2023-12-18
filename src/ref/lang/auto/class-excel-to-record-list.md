@@ -19,7 +19,7 @@ To use Excel To Record List you need an Entity or Structure that matches the Exc
 
 Check the following example of an Entity named Address and a valid Excel file containing data to import:
 
-![Entity attributes and Excel file with data to import](images/exceltorecordlist-entity-excel.png)
+![Example of an Entity named Address and a corresponding Excel file with matching data columns](images/exceltorecordlist-entity-excel.png "Entity and Excel File Example")
 
 Entity attributes without a corresponding column in the Excel file get the default value of their data type (for example, `""` for a Text attribute).
 
@@ -29,7 +29,7 @@ To iterate over the successfully imported records, use a For Each and set the **
 
 Here's an example flow for handling the data you're importing using Excel to Record List:
 
-![Example flow for importing data from an Excel file](images/exceltorecordlist-example-flow-ss.png)
+![Flowchart showing the process of importing and handling data using Excel to Record List](images/exceltorecordlist-example-flow-ss.png "Example Data Handling Flow")
 
 Excel To Record List doesn't validate if the Excel file data has values for all the mandatory attributes of the Entity. You can use a Server Action (in this example, ValidateAddress) to check if the imported data complies with business rules like mandatory attributes, or handle the exception thrown by the CreateAddress entity action.
 

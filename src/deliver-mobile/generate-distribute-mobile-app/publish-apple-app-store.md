@@ -77,7 +77,7 @@ To generate your mobile app in the Service Studio, perform the following steps:
 
 1. Click on the **Generate iOS App** button or the iOS cog icon if you've already generated a previous iOS app.
 
-   ![Configure iOS App Menu](images/ss-native_platforms-tab-ios2.png?width=500)
+   ![Screenshot of the Configure iOS App menu in Service Studio showing the Generate iOS App button](images/ss-native_platforms-tab-ios2.png "Configure iOS App Menu in Service Studio")
 
 1. In the **Build type** list, select one of the following options:
 
@@ -94,7 +94,7 @@ To generate your mobile app in the Service Studio, perform the following steps:
 
 1. Click the **Generate iOS app** button.
 
-    ![Configure iOS App Settings](images/ss-native_platforms-configure-ios-app.png?width=500)
+    ![Screenshot of iOS app build configuration options in Service Studio](images/ss-native_platforms-configure-ios-app.png "iOS App Build Configuration")
 
 1. After the generation has been completed, scan the QR code or copy the created installation link using your device to install the generated iOS app. If you need to download the generated app package (IPA), follow the procedure below in Service Center.
 
@@ -106,15 +106,15 @@ To generate your mobile app in the Service Center, perform the following steps:
 
 1. Go to **Factory**, click on the **Applications** tab, and open your application from the applications list.
 
-    ![Service Center Factory Application Menu](images/outsystems-service-center-factory-applications-menu.png)
+    ![Screenshot of the Service Center Factory Applications menu with applications list](images/outsystems-service-center-factory-applications-menu.png "Service Center Factory Applications Menu")
 
 1. Select the **Distribute** tab and click on the **Configure** link for the iOS entry in the **Native Platforms** section.
 
-    ![Service Center Factory Application Configure iOS](images/outsystems-service-center-factory-native-platform-tab-ios.png)
+    ![Screenshot of the Service Center Native Platform tab showing the iOS configuration options](images/outsystems-service-center-factory-native-platform-tab-ios.png "Service Center Native Platform iOS Configuration")
 
 1. In the Build type drop-down menu, select **App Store** (for Apple Developer Program) or **In-House** (for Apple Developer Enterprise Program). The remaining options don’t apply to publishing.
 
-    ![Service Center Factory Application Configure iOS](images/outsystems-service-center-factory-native-platform-build-type.png)
+    ![Screenshot of the iOS build type selection dropdown in Service Center](images/outsystems-service-center-factory-native-platform-build-type.png "Service Center iOS Build Type Selection")
 
 1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, for example, **com.domain.appname**).
 
@@ -122,17 +122,17 @@ To generate your mobile app in the Service Center, perform the following steps:
 
     Provide a provisioning profile of the correct type (see the [Before You Start](#Before-You-Start) section). The provisioning profile should have a **.mobileprovision** extension.
 
-    ![Service Center Factory Application Configure iOS](images/sc-configure-ios-settings.png)
+    ![Screenshot of the iOS app settings configuration fields in Service Center](images/sc-configure-ios-settings.png "Service Center iOS App Settings Configuration")
 
 1. Click **Save** to save your settings.
 
 1. Click **Save and Generate** and wait a few moments while the app is being generated.
 
-    ![Service Center Factory Application Generate](images/sc-select-mabs-version.png)
+    ![Screenshot of the Service Center interface with the Save and Generate button for iOS app](images/sc-select-mabs-version.png "Service Center Generate iOS App")
 
 1. After the app is generated, click the download icon near the version information to download the iOS app package (IPA).
 
-    ![Service Center Factory Application Download IPA](images/outsystems-service-center-factory-native-platform-download-ios.png)
+    ![Screenshot of the Service Center interface showing the download icon for the generated iOS app package (IPA)](images/outsystems-service-center-factory-native-platform-download-ios.png "Service Center Download Generated IPA")
 
 <div class="info" markdown="1">
 

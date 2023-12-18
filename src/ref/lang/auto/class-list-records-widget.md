@@ -7,8 +7,8 @@ guid: bd15fc86-95cb-4875-a4e6-dd2e4e0e0faf
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:339
+summary: The List Records widget in Traditional Web Apps allows for displaying records in a list with customizable separators and data supplied via the Preparation Action
 ---
-
 # List Records Widget
 
 <div class="info" markdown="1">
@@ -19,7 +19,7 @@ Applies only to Traditional Web Apps.
 
 List Records widget displays the records in a list layout. After you drag this widget to the Screen, you need to supply data to it and set up how records show. 
 
-![List Records Widget overview](<images/list-records.png?width=600>)
+![Screenshot of the List Records widget in a Traditional Web App showing full names separated by new lines](images/list-records.png "List Records Widget Example")
 
 Here are some additional notes.
 

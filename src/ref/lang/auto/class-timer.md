@@ -6,8 +6,8 @@ guid: 92beb602-6c17-4991-a42d-c9860a32326f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=2836%3A4492&mode=design&t=Ix2yojgoXorQvo4C-1
+summary: OutSystems Timer is a tool for scheduling periodic execution of application logic, such as batch jobs, with features to manage and monitor their execution
 ---
-
 # Timer
 
 A Timer is an OutSystems tool that allows executing application logic periodically on a scheduled time. These are also known as **batch jobs**.
@@ -135,7 +135,7 @@ Here's the complete description of the attributes:
 
 The Scheduler Service is responsible for executing all Timers. This service is multi-threaded, therefore, it allows executing different Timers at the same time. For simplicity, the steps below describe the execution of a single Timer.
 
-![](images/timers-asynchronous-processes_0.png)
+![Flowchart illustrating the steps of Timer execution in OutSystems Scheduler Service](images/timers-asynchronous-processes_0.png "Timer Execution Process")
 
 The steps to execute Timers are as follows:
 
@@ -169,7 +169,7 @@ It's also important to implement the logic in the Timer action so that you make 
 
 Whenever a Timer has an execution error, OutSystems may execute the Timer again for a number of retries. You can set this number of retries in Service Center, in the Environment Configuration screen, under the Administration folder. By default, it's set to 3 retries.
 
-![](images/timers-asynchronous-processes_1.png)
+![Diagram showing the retry mechanism after a Timer execution error in OutSystems](images/timers-asynchronous-processes_1.png "Timer Retry Mechanism")
 
 ## Changing the schedule of a Timer dynamically
 
@@ -194,14 +194,14 @@ Open the action of the Timer and at the end of the flow add the following logic:
 
 1. Create a Query to get the **Cyclic_Job_Shared** record of the Timer. The Query has the module identifier (eSpaceId), the Timer name, and input parameters:
 
-    ![](images/timers-asynchronous-processes_2.png)
+    ![Screenshot of a query setup to fetch a Timer record in OutSystems Service Studio](images/timers-asynchronous-processes_2.png "Query for Timer Record")
 
 1. Set the query parameters with the following values:
 
     * **eSpaceId**: GetOwnerEspaceIdentifier()
     * **TimerName**: "CleanUp"
 
-    ![](images/timers-asynchronous-processes_3.png)
+    ![Screenshot showing how to set query parameters for Timer retrieval in OutSystems Service Studio](images/timers-asynchronous-processes_3.png "Setting Query Parameters")
 
 1. Calculate the next execution date and time to 2 hours from now and set it to the **Next_Run** attribute of the **Cyclic_Job_Shared** record: AddHours(CurrDateTime(),2)
 
@@ -211,7 +211,7 @@ Open the action of the Timer and at the end of the flow add the following logic:
 
 The action flow should end like this:
 
-![](images/timers-asynchronous-processes_4.png)
+![Flowchart depicting the logic for dynamically scheduling a Timer in OutSystems](images/timers-asynchronous-processes_4.png "Dynamic Timer Scheduling Logic")
 
 ## Managing Timers in Service Center
 
@@ -241,7 +241,7 @@ The criteria to sort Timers in the list are based on the following:
 
 The next picture shows an example of the Timers section in two moments, with 10 minutes of difference.
 
-![](images/timers-asynchronous-processes_5.png)
+![Screenshot of the Timers section in OutSystems Service Center showing execution monitoring](images/timers-asynchronous-processes_5.png "Monitoring Timers Execution")
 
 Taking the **Send Notifications** Timer in the example, you can see that:
 
@@ -254,11 +254,11 @@ The conclusion is that the Timer was executed before what was expected. This may
 
 In Service Center, you may check the Timer threads the Scheduler Service is executing, in the **Environment Health** option, under **Monitoring**.
 
-![](images/timers-asynchronous-processes_6.png)
+![Screenshot of the Environment Health page in OutSystems Service Center displaying Timer threads](images/timers-asynchronous-processes_6.png "Checking Timer Threads Health")
 
 In the Front-end Servers section, click the **detail** link in the **Scheduler** column to display the page with the details of the service. In this case, focus on Timer-related threads.
 
-![](images/timers-asynchronous-processes_7.png)
+![Detailed view of Timer-related threads in the Scheduler Service of OutSystems Service Center](images/timers-asynchronous-processes_7.png "Scheduler Service Timer Threads Detail")
 
 In example above, the Scheduler Service has the following threads related with Timers:
 
@@ -294,7 +294,7 @@ In the example below, you can see that:
 
 * The next execution is set to 08-01-2013 at 18:30:00.
 
-![](images/timers-asynchronous-processes_8.png)
+![Screenshot showing the interface for editing a Timer's settings in OutSystems Service Center](images/timers-asynchronous-processes_8.png "Editing a Timer in Service Center")
 
 #### Forcing the execution of a Timer
 
@@ -316,7 +316,7 @@ If the Timer is deactivated, the button shows **Activate** and you should press 
 
 In Service Center, you may look into how Timers execution has been going. For that, select the **Timers** option, under **Monitoring**. In case of errors, you can click the **Error** link to see the details.
 
-![](images/timers-asynchronous-processes_9.png)
+![Screenshot of the Timers log page in OutSystems Service Center with a list of Timer executions](images/timers-asynchronous-processes_9.png "Timers Log Overview")
 
 ## Properties
 

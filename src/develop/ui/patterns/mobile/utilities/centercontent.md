@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Center Content UI Pattern to vertically align content to the center of its container.
 
-![](<images/centercontent-1.png>)
+![Example of Center Content UI Pattern in a mobile app interface](images/centercontent-1.png "Center Content UI Pattern")
 
 **How to use the Center Content UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Center Content UI Pattern to vertically align content to the cen
 
     The Center Content widget is displayed.
 
-    ![](<images/centercontent-2-ss.png>)
+    ![Screenshot showing how to search for the Center Content widget in Service Studio's Toolbox](images/centercontent-2-ss.png "Service Studio Toolbox Search")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,13 +40,13 @@ You can use the Center Content UI Pattern to vertically align content to the cen
 
 1. From the Toolbox, drag the Center Content widget into the Main Content area of your application's screen.
 
-    ![](<images/centercontent-3-ss.png>)
+    ![Screenshot of dragging the Center Content widget into the Main Content area in Service Studio](images/centercontent-3-ss.png "Dragging Center Content Widget")
 
     By default, the Center Content widget contains Top, Center, and Bottom placeholders.
 
 1. Add the relevant content to each of the placeholders. In this example we add some images and text.
 
-    ![](<images/centercontent-4-ss.png>)
+    ![Screenshot showing the addition of images and text to the placeholders in the Center Content widget](images/centercontent-4-ss.png "Adding Content to Placeholders")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

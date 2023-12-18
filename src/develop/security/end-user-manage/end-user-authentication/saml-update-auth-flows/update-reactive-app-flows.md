@@ -48,7 +48,7 @@ Do the following:
     * **User\_GetUnifiedLoginUrl**
     * **User\_GetUnifiedLogoutUrl**
 
-    ![Add dependency to required Server Actions from Users](images/saml-reactive-manage-dependencies-ss.png)
+    ![Screenshot showing how to add SAML dependencies in the Manage Dependencies window of Service Studio](images/saml-reactive-manage-dependencies-ss.png "Adding SAML Dependencies in Service Studio")
 
 1. Click **Apply**.
 
@@ -76,7 +76,7 @@ Do the following:
 
 Here's the flow of a possible implementation, obtained by following the steps above:
 
-![Updated DoLogout flow with details](images/saml-reactive-dologout-flow-details-ss.png)
+![Flowchart detailing the DoLogout Server Action modifications for SAML support in Service Studio](images/saml-reactive-dologout-flow-details-ss.png "DoLogout Server Action Flow for SAML")
 
 ### Update the OnException Action
 
@@ -94,7 +94,7 @@ Do the following:
 
 Here's the flow of a possible implementation, obtained by following the steps above:
 
-![Updated OnException flow with details](images/saml-reactive-onexception-flow-details-ss.png)
+![Flowchart of the OnException Action update process for handling SAML login redirects in Service Studio](images/saml-reactive-onexception-flow-details-ss.png "OnException Action Flow Update for SAML")
 
 ### Update the UserInfo Block
 
@@ -114,7 +114,7 @@ Open the **ClientLogout** Action, available under the **UserInfo** Block in the 
 
 Here's the flow of a possible implementation, obtained by following the steps above:
 
-![Updated ClientLogout flow](images/saml-reactive-clientlogout-flow-ss.png)
+![Flowchart showing the ClientLogout Action logic for redirecting to SAML logout URL in Service Studio](images/saml-reactive-clientlogout-flow-ss.png "ClientLogout Action Flow for SAML")
 
 Create a new Client Action named **ClientLogin** under the **UserInfo** Block and define its flow according to the following:
 
@@ -126,7 +126,7 @@ Create a new Client Action named **ClientLogin** under the **UserInfo** Block an
 
 Here's the flow of a possible implementation, obtained by following the steps above:
 
-![Updated ClientLogin flow with details](images/saml-reactive-clientlogin-flow-details-ss.png)
+![Flowchart illustrating the ClientLogin Action setup for SAML login URL redirection in Service Studio](images/saml-reactive-clientlogin-flow-details-ss.png "ClientLogin Action Flow for SAML")
 
 Finally, change the UI of the **UserInfo** Block according to the following:
 
@@ -136,4 +136,4 @@ Finally, change the UI of the **UserInfo** Block according to the following:
 
 1. In the link properties, change the value of the **On Click** event to point to the **ClientLogin** Client Action you created previously.
 
-![Updated link in UserInfo Block](images/saml-reactive-userinfo-ui-ss.png)
+![Screenshot of the UserInfo Block interface with the updated Login link for SAML in Service Studio](images/saml-reactive-userinfo-ui-ss.png "UserInfo Block UI Update for SAML")

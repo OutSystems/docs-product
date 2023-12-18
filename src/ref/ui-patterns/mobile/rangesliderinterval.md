@@ -34,7 +34,7 @@ These rules don’t apply to Patterns based on providers, as is the case with th
 
 In the diagram below, gray denotes the classes added by OutSystems UI and green denotes the classes added by the provider.
 
-![Structure](images/rangesliderinterval-diag.png)
+![Diagram showing the structure of the Range Slider Interval with classes added by OutSystems UI in gray and classes added by the provider in green](images/rangesliderinterval-diag.png "Range Slider Interval Structure Diagram")
 
 ### Modifiers
 
@@ -80,7 +80,7 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 
 1. Set the **WidgetId** property of the action to the **RangeSliderIntervalId** returned from the initialized event.
 
-    ![Set onValue Change event](images/rangesliderinterval-ondragend-ss.png)
+    ![Screenshot of the process to set the onValueChange event to trigger on drag end in the Range Slider Interval](images/rangesliderinterval-ondragend-ss.png "Setting the onValueChange Event to Trigger on Drag End")
 
     By using this action, the change event is only triggered when the user releases the slider.
 
@@ -102,4 +102,4 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 
     **Note:** For the **CustomFormat**, add the desired decimal numbers. In this example we changed it to 2.
 
-    ![Change Custom Format](images/rangesliderinterval-format-ss.png)
+    ![Screenshot showing how to change the decimal format on the tooltip when the ShowFloatingLabel parameter is true in the Range Slider Interval](images/rangesliderinterval-format-ss.png "Changing the Decimal Format on the Tooltip")

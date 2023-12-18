@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Fieldset UI Pattern to group and label related information, such as a users personal details, improving the overall look and layout of your application.
 
-![](<images/fieldset-1-ss.png>)
+![Screenshot of an example Fieldset UI Pattern grouping related user information in a Traditional Web App](images/fieldset-1-ss.png "Fieldset UI Pattern Example")
 
 **How to use the Fieldset UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Fieldset UI Pattern to group and label related information, such
 
     The Fieldset widget is displayed.
 
-    ![](<images/fieldset-6-ss.png>)
+    ![Image showing the Fieldset widget in the Service Studio toolbox for Traditional Web Apps](images/fieldset-6-ss.png "Fieldset Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,17 +40,17 @@ You can use the Fieldset UI Pattern to group and label related information, such
 
 1. From the Toolbox, drag the Fieldset widget into the Main Content area of your application's screen.
 
-    ![](<images/fieldset-7-ss.png>)
+    ![Screenshot demonstrating how to drag the Fieldset widget into the main content area of a Traditional Web App](images/fieldset-7-ss.png "Dragging Fieldset Widget into Main Content Area")
 
 1. On the **Properties** tab, set the Title property.
 
     In the following example, we set the Title to `Basic Information`.
 
-    ![](<images/fieldset-5-ss.png>)
+    ![Example of setting the Title property to 'Basic Information' for the Fieldset widget in a Traditional Web App](images/fieldset-5-ss.png "Setting the Title Property of Fieldset")
 
 1. Add the relevant content to the placeholder, for example, text boxes and labels.
 
-    ![](<images/fieldset-8-ss.png>)
+    ![Image showing the addition of text boxes and labels to the placeholder of a Fieldset in a Traditional Web App](images/fieldset-8-ss.png "Adding Content to Fieldset Placeholder")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

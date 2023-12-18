@@ -24,7 +24,7 @@ Additionally, OutSystems shields each environment using a **Web Application Fire
 
 The diagram below shows the **network architecture** of a common setup for an OutSystems Cloud Standard Edition, including the set of **servers** and the **inbound/outbound communications** between the customer’s infrastructure and the internet:
 
-![OutSystems cloud diagram](images/cloud-architecture-standard-diag.png)
+![Diagram illustrating the network architecture of OutSystems Cloud Standard Edition, including servers and communication flows](images/cloud-architecture-standard-diag.png "OutSystems Cloud Standard Edition Network Architecture")
 
 Depending on the [OutSystems Cloud edition](https://www.outsystems.com/legal/success/cloud-services-catalog/), customers can expand their base setup with the following:
 
@@ -35,7 +35,7 @@ Depending on the [OutSystems Cloud edition](https://www.outsystems.com/legal/suc
 
 Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deliver-mobile/mobile-apps-build-service/intro.md), [AI Mentor Studio](../../../managing-the-applications-lifecycle/manage-tech-debt/intro.md), [Integration Builder](../../../extensibility-and-integration/integration-builder/intro.md),[Workflow Builder](../../../develop/case-management-workflow/workflow-builder/intro.md), and [Experience Builder](../../../develop/experience-builder/intro.md):
 
-![OutSystems cloud diagram tools](images/communication-between-environments-tools-diag.png)
+![Diagram showing the communication flow between OutSystems Cloud environments and various OutSystems tools](images/communication-between-environments-tools-diag.png "Communication Flow with OutSystems Tools")
 
 For more details, check the [OutSystems network requirements](../network-requirements.md).
 
@@ -57,7 +57,7 @@ Depending on the [OutSystems Cloud edition](https://www.outsystems.com/legal/suc
 
 The most common option is to [set up a site-to-site Virtual Private Network (VPN) connection](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Set_Up_a_VPN_to_your_OutSystems_Cloud) between the on-premises network and OutSystems Cloud using Internet Protocol security (IPSec):
 
-![OutSystems cloud diagram vpn](images/cloud-architecture-vpn-diag.png)
+![Diagram depicting a site-to-site VPN connection setup between on-premises systems and OutSystems Cloud](images/cloud-architecture-vpn-diag.png "VPN Connection in OutSystems Cloud Architecture")
 
 To accommodate more advanced integration scenarios and troubleshooting needs, customers can [request direct access to the application databases](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Access_the_database_of_your_OutSystems_Cloud) and use database client tools to perform the needed operations.
 
@@ -79,5 +79,5 @@ Additionally, customers who need extra layers of compliance have the option to u
 
 The diagram below shows the architecture of the typical setup for a Standard Edition with high-availability option in a high-compliance OutSystems Cloud:
 
-![OutSystems cloud high availability and compliance](images/cloud-architecture-high-availability-diag.png)
+![Diagram of the high-availability network architecture for a Standard Edition in the high-compliance OutSystems Cloud](images/cloud-architecture-high-availability-diag.png "High-Availability OutSystems Cloud Architecture")
 

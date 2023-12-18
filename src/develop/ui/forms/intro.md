@@ -12,4 +12,4 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 Forms allow users to collect and submit data in real-time which enhances user experience. You can use a form to [group input widgets](form-use.md) which allows users to enter data and store it in database records. Forms also allow you to [validate form fields](form-validate.md). When users enter data in a form and submit it, the data is checked and validated.
 
-![Form example](images/form-example-ss.png)
+![Screenshot of a user form with various input fields for data collection and submission](images/form-example-ss.png "Example of a User Form")

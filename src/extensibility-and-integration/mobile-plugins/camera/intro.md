@@ -38,7 +38,7 @@ For example, the demo app (the next image shows a screen from the demo app) show
 * Edit a picture taken with the camera or selected from the gallery
 * Edit the picture that now displays in the app
 
-![Camera plugin demo app](images/camera-sample-app-ss.png)
+![Screenshot of the Camera Demo App interface showing options to take a picture, capture a video, select media from the gallery, and edit pictures.](images/camera-sample-app-ss.png "Camera Demo App Screen")
 
 ## Taking a picture
 
@@ -56,7 +56,7 @@ You can start by defining a variable of the **Binary Data** data type to hold th
 Use a Button (2) or another widget to run the action that takes a picture.
 Use an **Image** widget (3) to show the image after using the camera, by setting **Type** to **Binary Data** and **Image Content** to the variable you created.
 
-![UI setup for taking pictures](images/camera-ui-setup-ss.png)
+![Screenshot illustrating the user interface setup for the camera feature with a variable for image data, a button to take a picture, and an image widget to display the picture.](images/camera-ui-setup-ss.png "Camera UI Setup")
 
 For more guidance on how to create an interface, see the UI accelerators that come with the Camera plugin.
 In Service Studio, navigate to **Interface** > **UI FLows** > **Camera Plugin** > **Camera Plugin**, and drag these Blocks to your Screen:
@@ -76,7 +76,7 @@ In the **TakePicture** action, you can set the parameters for quality, width, ba
 Check if taking pictures on the device works by verifying the value of **TakePicture.Success** is **True** (3).
 If yes, handle the picture data in **TakePicture.ImageCaptured** by assigning it to a variable of the **Binary Data** data type (4).
 
-![Take a picture, logic flow](images/camera-flow-take-picture-ss.png)
+![Flowchart screenshot detailing the process to take a picture using the Camera plugin, including checking plugin availability, opening the camera, and handling the captured image.](images/camera-flow-take-picture-ss.png "Camera Flow for Taking a Picture")
 
 ## Recording a video
 
@@ -105,7 +105,7 @@ When setting the URI parameter to a video file stored in the cache, beware that 
 
 </div>
 
-![Capture video logic flow 1](images/capture-video-logic-1-ss.png)
+![Screenshot showing the user interface setup for capturing video with a variable for video data, a button to record a video, and a PlayVideo widget to display the video.](images/capture-video-logic-1-ss.png "Capture Video UI Setup")
 
 For more guidance on creating an interface, see the UI accelerators that come with the Camera plugin.
 In Service Studio, navigate to **Interface > UI FLows > Camera Plugin > Camera Plugin**, and drag these Blocks to your Screen:
@@ -125,7 +125,7 @@ In the **RecordVideo** action, you can set the parameters for saving the recorde
 Check if recording videos on the device works by verifying the value of **RecordVideo.Success** is **True** (3).
 If yes, handle the picture data in **RecordVideo.MediaResult** by assigning it to a variable of the **MediaResult** data type (4).
 
-![Capture video logic flow 2](images/capture-video-logic-2-ss.png)
+![Flowchart screenshot outlining the logic to record a video using the Camera plugin, including checking plugin availability, capturing the video, and handling the video data.](images/capture-video-logic-2-ss.png "Camera Flow for Recording a Video")
 
 ## Selecting media from the gallery
 
@@ -136,7 +136,7 @@ The action **ChooseFromGallery** opens a media browser to let users select a med
 [Check for errors](#handling-errors) by verifying **ChooseFromGallery.Success** is **True** (2).
 After users select the image, the binary data of the image is in the variable **ChooseFromGallery.MediaResult.** (3).
 
-![Open from gallery](images/camera-flow-choose-from-gallery-ss.png)
+![Flowchart screenshot demonstrating the process for selecting media from the gallery using the Camera plugin, including opening the media browser and handling the selected media.](images/camera-flow-choose-from-gallery-ss.png "Camera Flow for Choosing Media from Gallery")
 
 ## Uploading media assets from URIs
 
@@ -144,12 +144,12 @@ You can use the video and picture URIs returned in the **MediaResult** variable,
 
 In the following example, the **UploadFileWithHeaders** client action uploads a video file to the app’s rest endpoint `rest/tickets/video`.
 
-![Upload with headers](images/upload-with-headers-ss.png)
+![Screenshot of the logic to upload a video file to a server endpoint using the UploadFileWithHeaders client action.](images/upload-with-headers-ss.png "Uploading Media Assets with Headers")
 
 You can upload the video file to an S3 bucket inside the rest endpoint and then use the video's presigned URL with the **Video** widget to play the uploaded video.
 
-![S3 Object Put](images/object-put-ss.png)
-![S3 Object Get PreSignedUrl](images/get-url-ss.png)
+![Screenshot showing the logic for uploading a video file to an S3 bucket within a REST endpoint.](images/object-put-ss.png "Uploading Video to S3 Bucket")
+![Screenshot depicting the logic to retrieve a presigned URL for a video uploaded to an S3 bucket.](images/get-url-ss.png "Retrieving Video URL")
 
 ## Image quality and app responsiveness
 
@@ -190,7 +190,7 @@ Here is the list of actions you can use to handle the errors.
 
 You can use these actions with the **If** nodes to check for errors and control how the app works.
 
-![Handling errors in the camera plugin](images/camera-handling-errors.png)
+![Screenshot of a flowchart for handling various errors that may occur when using the camera plugin in an app.](images/camera-handling-errors.png "Handling Errors in Camera Plugin")
 
 ## Reference
 

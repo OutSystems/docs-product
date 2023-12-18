@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and Classes
 
-![](<images/dropdown-image-2.png>)
+![Image illustrating the layout and classes of a dropdown component in a traditional web app](images/dropdown-image-2.png "Dropdown Layout")
 
 ## CSS Selectors
 
@@ -39,9 +39,9 @@ Applies only to Traditional Web Apps.
 1. In the Prompt placeholder, set the text you want to define as the prompt.
 1. Publish and test.
 
-    ![](<images/dropdown-image-3.png>)
+    ![Screenshot showing the use of ListRecords with a dropdown to create a list of links](images/dropdown-image-3.png "Dropdown ListRecords Example")
 
-    ![](<images/dropdown-gif-1.gif>)
+    ![Animated GIF demonstrating the interaction with a dropdown in a traditional web app](images/dropdown-gif-1.gif "Interactive Dropdown Example")
 
 
 

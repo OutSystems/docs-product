@@ -34,13 +34,13 @@ Follow the instructions to create a webhook module that lets you design advanced
 
 1. Create a new app in Service Studio. Choose the **Chatbot Webhook** template and add the default module to it.
 
-    ![New App window with the webhook template](images/webhook-select-new-app-ss.png?width=600)
+    ![New App window in Service Studio showing the selection of the Chatbot Webhook template](images/webhook-select-new-app-ss.png "Selecting the Chatbot Webhook Template")
 
 2. Publish the module.
 
 3. Optionally, move the module to the app to which you're adding the chatbot. This is a good practice.
    
-   ![App details screen with the move module icon](images/chatbot-move-module-ss.png?width=600)
+   ![App details screen in Service Studio with an icon highlighted to move the Chatbot module](images/chatbot-move-module-ss.png "Moving the Chatbot Module")
 
 ## Configure the webhook module
 
@@ -50,7 +50,7 @@ These are the instructions you should follow to configure the webhook module and
 
 2. In the module properties, go to the **Site Properties** tab. Edit the values for **MicrosoftClientId** and **MicrosoftClientSecret**.
 
-    ![Wbhook configuration in Service Center](images/webhook-configuration-sc.png?width=800)
+    ![Service Center interface showing the Webhook configuration with editable MicrosoftClientId and MicrosoftClientSecret fields](images/webhook-configuration-sc.png "Webhook Configuration in Service Center")
 
     <div class="info" markdown="1">
 
@@ -62,8 +62,8 @@ These are the instructions you should follow to configure the webhook module and
 
 4. Select the POST operation to expand the section. Copy the **Request URL** of the service from the tab in the browser. In our example the endpoint is **PostMessage**. 
 
-    ![Request URL from the API document](images/webhook-requesturl.png?width=600)
+    ![Documentation tab showing the Request URL for the MessagingWebhook_V1 POST operation in Service Studio](images/webhook-requesturl.png "API Request URL Documentation")
 
 5. Go to the Azure home page. Go to **Azure Home** > **Your Web App Bot** > **Settings** > enter the **Request URL** in the **Messaging endpoint** field. This updates the messaging endpoint in the bot service with the endpoint URL. Save the settings.
 
-    ![Request URL from the API document](images/webhook-azure-configure-endpoint.png?width=600)
+    ![Azure portal settings page for a Web App Bot with the Messaging endpoint field being configured with the Request URL](images/webhook-azure-configure-endpoint.png "Configuring the Messaging Endpoint in Azure")

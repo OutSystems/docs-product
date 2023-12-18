@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
  You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
 
-![](<images/flipcontent-1.gif?width=500>)
+![Animated GIF showing the Flip Content UI Pattern in action, where content flips to reveal additional information when clicked.](images/flipcontent-1.gif "Flip Content Interaction Example")
 
 **How to use the Flip content UI Pattern**
 
@@ -26,7 +26,7 @@ Applies only to Traditional Web Apps.
 
     The Flip Content widget is displayed.
 
-    ![](<images/flipcontent-2-ss.png>)
+    ![Screenshot of the Flip Content widget in the Service Studio toolbox.](images/flipcontent-2-ss.png "Flip Content Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,17 +40,17 @@ Applies only to Traditional Web Apps.
 
 1. From the Toolbox, drag the Flip Content widget into the Main Content area of your application's screen.
 
-    ![](<images/flipcontent-3-ss.png>)
+    ![Screenshot showing the process of dragging the Flip Content widget into the main content area of an application's screen in Service Studio.](images/flipcontent-3-ss.png "Dragging Flip Content Widget into Main Content Area")
 
 1. Add the required content for the front and back placeholders inside the Flip Content widget.
 
     In this example, we add images by dragging the Image widget into the front and back placeholders in the Flip Content widget and selecting an image from the sample OutSystems UI images.
 
-    ![](<images/flipcontent-4-ss.png>)
+    ![Screenshot demonstrating how to add images to the front and back placeholders of the Flip Content widget in Service Studio.](images/flipcontent-4-ss.png "Adding Content to Flip Content Widget")
 
 1. On the **Properties** tab, from the **Trigger** drop-down, you can customize when the Flip Content widget is triggered, for example, when it is clicked.  
 
-    ![](<images/flipcontent-5-ss.png>)
+    ![Screenshot of the Properties tab in Service Studio where the Trigger property of the Flip Content widget can be customized.](images/flipcontent-5-ss.png "Customizing Flip Content Trigger Property")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

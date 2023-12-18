@@ -29,11 +29,11 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
 1. Open **Windows Administrative Tools** > **AD FS**. Right-click **Applications Groups** and select **Add a new application group**.
 
-    ![Go to Add application group](images/add-app-group-usr.png)
+    ![Screenshot of the 'Add a new application group' option in AD FS](images/add-app-group-usr.png "Adding a New Application Group in AD FS")
 
 1. Select **Server application accessing a Web API template** and enter a meaningful application **Name**. Click **Next**.  
 
-    ![Create Web app](images/app-name-usr.png)
+    ![Screenshot showing the server application name entry field in AD FS](images/app-name-usr.png "Entering Application Name in AD FS")
 
 1. Add the Redirect URI to Service Center login and logout page from the Lifetime environment:
 
@@ -41,7 +41,7 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
     * ``https://<LT_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
 
-        ![Add redirect URIs](images/redirect-uri-usr.png)
+        ![Screenshot of redirect URI configuration for Service Center in AD FS](images/redirect-uri-usr.png "Configuring Redirect URIs in AD FS")
 
 1. Copy the **Client Identifier** (required in later steps) and click **Next**.
 
@@ -51,11 +51,11 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
 1. Choose an access control policy and click **Next**.
 
-    ![Choose access control](images/control-policy-usr.png)
+    ![Screenshot of access control policy selection in AD FS](images/control-policy-usr.png "Selecting Access Control Policy in AD FS")
 
 1. Set **Configure Application Permissions** by allowing recommended scopes. For AD FS to work with OutSystems platform, **openid**, **email**, **profile**, and **allatclaims** scopes must be added.
 
-    ![Add scopes](images/scopes-usr.png)
+    ![Screenshot showing the configuration of application permissions and scopes in AD FS](images/scopes-usr.png "Configuring Application Permissions in AD FS")
 
 1. Click **Next** and complete the setup. 
 
@@ -67,7 +67,7 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
     b. Select the Web API application and click **Edit**. 
 
-    ![Edit Web app](images/add-rulespweb-usr.png)
+    ![Screenshot of the option to add issuance transform rules for a Web API app in AD FS](images/add-rulespweb-usr.png "Adding Issuance Transform Rules in AD FS")
 
     c. Select the **Issuance Transform Rules** tab and click **Add Rules**.
 
@@ -75,7 +75,7 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
     e. To configure a claim rule, set the **Attribute store** as **Active Directory**. Map some LDAP attributes to outgoing claims such as **E-Mail-Addresses** and **Given-Name**. Click **Finish** and apply the changes.
 
-    ![Configure claim rule](images/claim-rule-usr.png)
+    ![Screenshot of LDAP attributes to outgoing claims mapping in AD FS](images/claim-rule-usr.png "Configuring Claim Rule in AD FS")
 
 ### Create a native app
 
@@ -83,7 +83,7 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
 1. Select the Server application and click **Add application**.
 
-    ![Add server app](images/server-app-usr.png)
+    ![Screenshot showing the option to add a native application to an application group in AD FS](images/server-app-usr.png "Adding a Native Application in AD FS")
 
 1. Select **Native application** and click **Next**.
 
@@ -140,4 +140,4 @@ You can configure AD FS as an external IdP by navigating to **Lifetime** > **Use
 * **Scopes**: Click the Test button next to the well-known configuration URl. It recommendeds scopes.
 * Click **Save Provider** then **Activate provider**. Enter the  client secret and select **Activate and Log Out**.
 
-    ![Configure AD FS in LifeTime](images/ad-fs-lt.png)
+    ![Screenshot of the AD FS configuration settings in the LifeTime platform](images/ad-fs-lt.png "AD FS Configuration in LifeTime")

@@ -53,7 +53,7 @@ Having the progressive modules preparation enabled, after upgrading your OutSyst
 
 While the modules preparation is taking place, Service Center displays the step progress:
 
-![Modules preparation in progress (Service Center)](images/module-preparation-progress-sc.png)
+![Screenshot showing the progress of module preparation in the Service Center](images/module-preparation-progress-sc.png "Service Center Module Preparation Progress")
 
 During this period, the Platform Server performs the preparation of small groups of modules. See below how to [check the progress](#progress) of the modules preparation in more detail, including which group of modules is currently being prepared.
 
@@ -69,7 +69,7 @@ When the preparation of a group completes, you can resume the development for th
 
 During the preparation step, if you go to the detail screen of a module that hasn't yet been compiled with the new platform version, the module Status is the following:
 
-![module detail screen](images/module-preparation-detail-screen-sc.png)
+![Screenshot of the Service Center detailing the status of a module during preparation](images/module-preparation-detail-screen-sc.png "Service Center Module Preparation Detail Screen")
 
 ### Checking the progress of the modules preparation { #progress }
 
@@ -85,19 +85,19 @@ While the modules preparation is in progress, Service Center notifies you that t
 
 To see the details of the modules preparation, click the **current preparation details** link on the blue banner, or the **More details** link on the sidebar.
 
-![Modules preparation in progress (Service Center)](images/module-preparation-progress-details-sc.png)
+![Screenshot displaying the detailed progress of module preparation in the Service Center](images/module-preparation-progress-details-sc.png "Service Center Module Preparation Progress Details")
 
 On this screen, you can see which group of modules is currently being prepared and the details of the preparation.
 
-![Modules preparation progress details (Service Center)](images/module-preparation-detail-sc.png)
+![Screenshot showing the details of the current module group being prepared in the Service Center](images/module-preparation-detail-sc.png "Service Center Module Preparation Detail")
 
 Too see the status of the current modules preparation and the progress of the already prepared modules, click the **Upgrades** tab.
 
-![Modules preparation modules progress (Service Center)](images/module-preparation-upgrades-progress-sc.png)
+![Screenshot illustrating the upgrades progress tab with module preparation status in the Service Center](images/module-preparation-upgrades-progress-sc.png "Service Center Upgrades Progress")
 
 In **self-managed installations**, you can also see the progress of the modules preparation in the Configuration Tool, in the window that appears after pressing **Apply/Exit**:
 
-![Modules preparation in progress (Configuration Tool)](images/module-preparation-progress-ct.png)
+![Screenshot of the Configuration Tool showing the progress of module preparation](images/module-preparation-progress-ct.png "Configuration Tool Module Preparation Progress")
 
 ## After the modules preparation finishes
 
@@ -119,15 +119,15 @@ Starting from Platform Server 11.19.0, a new [Deploy All](upgrade-platform-modul
 
 To see the upgrades report, click the **go to Upgrades** link on the banner.
 
-![Modules preparation finished successfully (Service Center)](images/module-preparation-success-sc.png)
+![Screenshot indicating the successful completion of module preparation in the Service Center](images/module-preparation-success-sc.png "Service Center Module Preparation Success")
 
 After the modules preparation finishes, you can access the upgrades report by clicking the **Upgrades** tab under the **Factory** section. In the report table, you see all the previous preparation executions and the corresponding status. You can access the preparation details of each execution by clicking its **Preparation** link.
 
-![Modules preparation success (Service Center)](images/module-preparation-upgrades-success-sc.png)
+![Screenshot of the Service Center showing the upgrades report after successful module preparation](images/module-preparation-upgrades-success-sc.png "Service Center Upgrades Success Report")
 
 If error occurs during the modules preparation, you can relaunch the preparation step by clicking the **Prepare** button. Subsequent executions of modules preparation will only apply to the modules that failed the preparation during the previous run.
 
-![Modules preparation error (Service Center)](images/module-preparation-upgrades-error-sc.png)
+![Screenshot showing an error during module preparation in the Service Center](images/module-preparation-upgrades-error-sc.png "Service Center Module Preparation Error")
 
 If the error persist, [see here](upgrade-platform-errors.md) how to proceed.
 
@@ -135,11 +135,11 @@ If the error persist, [see here](upgrade-platform-errors.md) how to proceed.
 
 If you are upgrading to **Platform Server 11.16.1 or earlier**, you can see the details of the modules preparation by clicking the **Click here for more details** link on the blue banner, or the link **More details** on the sidebar, in Service Center.
 
-![Modules preparation in progress (Service Center)](images/module-preparation-progress-prev-sc.png)
+![Screenshot of the Service Center showing module preparation progress for earlier Platform Server versions](images/module-preparation-progress-prev-sc.png "Service Center Previous Version Module Preparation Progress")
 
 If the **progressive modules preparation** is enabled in your environment, you’ll see the sequence of actions that are part of the modules preparation repeated once per group of modules.
 
-![Progressive modules preparation](images/module-preparation-batches-sc.png)
+![Screenshot displaying the batches of module preparation in the Service Center](images/module-preparation-batches-sc.png "Service Center Module Preparation Batches")
 
 Until the modules preparation finishes for a group, **you cannot** perform the following operations for the modules in that group:
 

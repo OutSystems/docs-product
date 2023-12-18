@@ -18,7 +18,7 @@ Applies only to Mobile Apps.
 
 The **Distribute** tab in Service Center, section **Native Platforms**, presents the following information:
 
-![](<images/sc-native-platforms-table.png>)
+![Screenshot of the Native Platforms table in Service Center showing platform configuration options for mobile apps](images/sc-native-platforms-table.png "Service Center Native Platforms Table")
 
 Platform
 :   The mobile platform being configured: iOS or Android.

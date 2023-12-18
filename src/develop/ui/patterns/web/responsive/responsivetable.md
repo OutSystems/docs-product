@@ -28,7 +28,7 @@ The following example demonstrates how you can display the registered users on y
 
     The Responsive Table widget is displayed.
 
-    ![](<images/responsivetable-8-ss.png>)
+    ![Screenshot of the Responsive Table widget in the Service Studio toolbox](images/responsivetable-8-ss.png "Responsive Table Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,17 +42,17 @@ The following example demonstrates how you can display the registered users on y
 
 1. From the Toolbox, drag the Responsive Table widget into the Main Content area of your application's screen.
 
-    ![](<images/responsivetable-1-ss.png>)
+    ![Dragging the Responsive Table widget into the Main Content area of an application screen](images/responsivetable-1-ss.png "Dragging Responsive Table Widget")
 
 1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it into the Responsive Table placeholder.
 
-    ![](<images/responsivetable-10-ss.png>)
+    ![Selecting the User entity from the Entities tree and dragging it into the Responsive Table placeholder](images/responsivetable-10-ss.png "Selecting User Entity for Responsive Table")
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 
 1. On the **Properties** tab, set the **ResponseBehavior** property. In this example, the property is set so the table header stays fixed and the user can scroll through the rows.
 
-    ![](<images/responsivetable-6-ss.png>)
+    ![Setting the ResponseBehavior property in the Properties tab to fix the table header and enable row scrolling](images/responsivetable-6-ss.png "Setting ResponsiveBehavior Property")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

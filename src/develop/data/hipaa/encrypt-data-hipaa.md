@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Applicati
 
 After subscribing to the OutSystems Cloud HIPAA offering, you can enable the encryption of data in an entity, as described below:
 
-![Encrypting entity data](images/encrypt-data-diag.png)
+![Diagram illustrating the process of encrypting data for HIPAA compliance in OutSystems Cloud.](images/encrypt-data-diag.png "Data Encryption Process Diagram")
 
 1. Start by [creating a CRUD wrapper action for the creation or updating of records from that entity](#crud-wrapper).
 
@@ -42,7 +42,7 @@ For each entity with attributes you want to encrypt, do the following:
 
 Before encrypting attributes ensure you have [created a wrapper action to save data](#crud-wrapper).
 
-![Encrypt unsearchable attributes](images/encrypt-no-search-diag.png)
+![Flowchart showing the steps to encrypt unsearchable attributes in OutSystems Cloud for HIPAA compliance.](images/encrypt-no-search-diag.png "Unsearchable Data Encryption Diagram")
 
 1. Create entity to save key mapping - Each entity that has data to be encrypted needs one of these mapping entities. This mapping entity is needed for the decryption of the unsearchable attribute at a later stage.
 
@@ -126,7 +126,7 @@ For each attribute you want to encrypt, do the following:
 
 ## Encrypt searchable attributes { #encrypt-search }
 
-![Encrypt searchable attributes](images/encrypt-search-diag.png)
+![Flowchart detailing the encryption process for searchable attributes in OutSystems Cloud adhering to HIPAA standards.](images/encrypt-search-diag.png "Searchable Data Encryption Diagram")
 
 1. Create encryption action - This reusable action enables the encryption of different searchable attributes. You need one of these actions for each module with entities with attributes to encrypt.
 

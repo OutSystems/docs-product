@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 OutSystems designed widgets to help you create lightweight emails that most email readers can open. When you edit an email, Service Studio shows the [available Email widgets](#widgets-available-in-emails) in the widgets toolbar.
 
-![widgets for emails](images/email-available-widgets-ss.png?width=700)
+![Screenshot of available Email widgets in the Service Studio toolbar](images/email-available-widgets-ss.png "Email Widgets in Service Studio")
 
 <div class="info" markdown="1">
 

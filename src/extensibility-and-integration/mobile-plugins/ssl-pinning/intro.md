@@ -126,13 +126,13 @@ In Service Studio, complete the following steps in the mobile app:
 
 1. Set the **Target Directory** property to pinning (no quotes).
 
-    ![Screenshot of setting target directory to pinning](images/sslplugin-2-ss.png)
+    ![Screenshot showing how to add the SSL Pinning configuration file to the mobile app in Service Studio](images/sslplugin-2-ss.png "Adding the SSL Pinning Configuration File to the App")
 
 ### Implement additional verification of the server certificate
 
 To add the SSL Pinning verification, you must install the [SSL Pinning Plugin](https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin) from Forge in your environment. 
 
-  ![Screenshot of adding SSL verification](images/sslplugin-1-ss.png)
+  ![Screenshot of the SSL Pinning Plugin being added to a mobile app in Service Studio](images/sslplugin-1-ss.png "SSL Pinning Plugin in Service Studio")
 
 In Service Studio, complete the following steps in your mobile app:
 

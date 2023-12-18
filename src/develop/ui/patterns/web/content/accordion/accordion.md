@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Accordion UI Pattern to allow users expand and hide content when clicked.
 
- ![](<images/accordion-image-2.png>)
+ ![Example of an Accordion UI Pattern in a Traditional Web Application](images/accordion-image-2.png "Accordion UI Pattern in Traditional Web App")
 
 **How to use the Accordion UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 
     The Accordion widget is displayed.
 
-    ![](<images/accordion-image-4.png>)
+    ![Accordion widget displayed in the Service Studio toolbox](images/accordion-image-4.png "Accordion Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,15 +40,15 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 
 1. From the Toolbox, drag the Accordion widget into the Main Content area of your application's screen.
 
-    ![](<images/accordion-image-5.png>)
+    ![Dragging the Accordion widget into the main content area of an application screen](images/accordion-image-5.png "Dragging Accordion Widget into Main Content Area")
 
     Note: By default, the Accordion widget contains 3 Accordion Item widgets. You can add or delete Accordion Items as required.
 
-    ![](<images/accordion-image-1.png>)
+    ![Default Accordion widget containing three Accordion Item widgets](images/accordion-image-1.png "Default Accordion Widget with 3 Items")
 
 1. Add the relevant content to the Accordion Item placeholders, for example, FAQs.
   
-    ![](<images/accordion-image-3.png>)
+    ![Adding content to the Accordion Item placeholders, such as FAQs](images/accordion-image-3.png "Adding Content to Accordion Item")
 
 1. After following these steps and publishing the module, you can test the pattern in your app.
 

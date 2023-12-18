@@ -26,11 +26,11 @@ To start creating your app using the New Initiative Request template, follow the
 
     * **Main color** — Pick up the color to apply to the main actions (buttons) and menus background on the generated app. If you upload an icon for your app, Workflow Builder selects the main color based on it, for example, your company brand color.
 
-        ![Project Request template](images/wfb-project-request-template.png)
+        ![Preview of the Workflow Builder Project Request template selection screen](images/wfb-project-request-template.png "Workflow Builder Project Request Template Preview")
 
 1. Click on the **Save** button. Workflow Builder then creates and displays the workflow of your app.
 
-    ![Issue Report workflow](images/wfb-projet-request-workflow.png)
+    ![Workflow Builder interface showing the newly created app workflow](images/wfb-projet-request-workflow.png "Workflow Builder New App Workflow Creation")
 
 1. On the initial form at the top of the workflow, click on the **Edit form** button to edit the form fields of the template. You can rename, change the properties, add, or remove fields.
 

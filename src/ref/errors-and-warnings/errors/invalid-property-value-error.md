@@ -4,8 +4,8 @@ guid: c2e98fc6-f0da-45e4-bc1b-7707f98220db
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The article explains the 'Invalid Property Value' error, its causes, and how to resolve it in different scenarios
 ---
-
 # Invalid Property Value Error
 
 The `Invalid Property Value` error is issued in the following situations:
@@ -16,7 +16,7 @@ Message
 Cause
 :   There's a mandatory property in `<element>` that you haven't set. For example, the **Destination** property in a Link widget.
 
-    ![Mandatory property not set. Link example.](images/ref-error-invalid-property-link.png)
+    ![Screenshot showing the Invalid Property Value error for a Link widget with a missing Destination property](images/ref-error-invalid-property-link.png "Invalid Property Value Error for Link Widget")
 
 Recommendation
 :   Set a value in the mandatory property.
@@ -29,7 +29,7 @@ Message
 Cause
 :   The **Default Value** property must be a literal. You can't set the property with an expression as, for example: `1 + 1`.
 
-    ![Literal value error](images/ref-error-literal-value.png)
+    ![Screenshot illustrating the error when Default Value property is not set to a literal](images/ref-error-literal-value.png "Default Value Must Be Literal Error")
 
 Recommendation
 :   Edit the **Default Value** property of the element and set a literal value.
@@ -44,7 +44,7 @@ Message
 Cause
 :   You have a Record widget that is populated with the content of another widget or the widget itself. For example a Show Record widget whose **Source Record** is `TableRecords1.List.Current`.
 
-    ![Record widget populated with the content of another widget](images/ref-error-source-record.png)
+    ![Screenshot depicting the error when a Source Record is set to the content of a widget](images/ref-error-source-record.png "Source Record Cannot Be Widget Content Error")
 
 Recommendation
 :   Edit the **Source Record** or **Source Record Lis**t (depending on the widget), and use a variable that's not a runtime property of any of the widgets available on the screen. You must use local variables, queries, or lists evaluated in the Screen Preparation.

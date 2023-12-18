@@ -57,7 +57,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 2. Click **Create a knowledge base** in the top menu.
     
     
-    ![Start Azure KB wizard](images/azure-kb-creation-start.png?width=400)
+    ![Screenshot of the Azure QnA Maker portal with the 'Create a knowledge base' button highlighted](images/azure-kb-creation-start.png "Starting the Azure Knowledge Base Creation Wizard")
 
 3. You can skip **STEP 1: Create a QnA service in Microsoft Azure** if you already have a QnA service in Azure. If you don't have a QnA service in Azure check [Create QnA Maker for instructions](guide-azure-services.md#create-qna-service). 
     
@@ -74,7 +74,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
     * **File name**. Click **Add file** and select the XLSX file with your [sample questions and answers](#sample-questions-and-answers).
     * **Chit-chat**. The chit-chat knowledge base contains light social conversation. Select a knowledge base that's appropriate for your brand voice. Skip this option if you want to add the chit-chat later.
 
-    ![The add file button in Azure KB wizard](images/azure-kb-creation-upload-file.png?width=500)
+    ![Screenshot showing the 'Add file' button in the Azure QnA Maker portal during knowledge base setup](images/azure-kb-creation-upload-file.png "Uploading a File in Azure Knowledge Base Wizard")
 
 7. In **STEP 5: Create your KB** click **Create your KB**. After a few moments, your knowledge base opens.
 
@@ -104,7 +104,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 4. Note the name of the QnA Maker service in "This knowledge base will be published to the **qna-service-name** QnA Maker service." Click **PUBLISH** and wait until you see the confirmation screen.
 5. In the conformation screen click **Create bot**. A new Web App Bot screen opens.
 
-    ![The add file button in Azure KB wizard](images/azure-kb-creation-deployed.png?width=400)
+    ![Confirmation screen in Azure QnA Maker portal indicating successful deployment of the knowledge base](images/azure-kb-creation-deployed.png "Azure Knowledge Base Successfully Deployed")
 
 6. In the new Web App Bot, most of the field values are already populated with the settings from the QnA Maker service. Pay attention, however, to the following:
 
@@ -112,7 +112,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
     * **App service plan / location**. Click to open and select your QnA Maker service. This is a set of the compute resources which the bot uses. 
     * **Application Insights**. Optional. If you want to track your app performance and collect telemetry information, activate this option.
 
-    ![The add file button in Azure KB wizard](images/azure-chatbot-qna-create.png?width=270)
+    ![Screenshot of the Azure portal interface for creating a new Web App Bot linked to the QnA Maker service](images/azure-chatbot-qna-create.png "Creating a Chatbot Service in Azure")
 
     <div class="info" markdown="1">
 

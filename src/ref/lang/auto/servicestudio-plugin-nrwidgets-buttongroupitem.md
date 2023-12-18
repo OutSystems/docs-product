@@ -22,7 +22,7 @@ The ButtonGroupItem is an individual button that represents an option within a [
 
 When you drag the Button Group widget into the Main Content area of your application's screen, by default, the widget contains 3 Button Group Items. You can add or delete as many Button Group Items as required and customize their properties as you wish.
 
-![Button Group Item](<images/buttongroupitem-1-ss.png>)
+![Screenshot of the default state of a Button Group Item in Service Studio](images/buttongroupitem-1-ss.png "Button Group Item Default State")
 
 ## Properties
 

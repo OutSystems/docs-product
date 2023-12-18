@@ -26,11 +26,11 @@ To start creating your app using the Approval Request template, follow the steps
 
     * **Main color** — Pick up the color to apply to the main actions (buttons) and menus background on the generated app. If you upload an icon for your app, Workflow Builder selects the main color based on it, for example, your company brand color.
 
-        ![Approval Request Template](images/wfb-approval-request-template.png)
+        ![Preview of the Approval Request template in Workflow Builder](images/wfb-approval-request-template.png "Approval Request Template Preview")
 
 1. Click on the **Save** button. Workflow Builder then creates and displays the workflow of your app.
 
-    ![Approval Request workflow](images/wfb-approval-request-workflow.png)
+    ![Workflow Builder screen showing the newly created workflow for the Approval Request app](images/wfb-approval-request-workflow.png "Workflow Creation Screen")
 
 1. On the initial form at the top of the workflow, click on the **Edit form** button to edit the form fields of the template. You can rename, change the properties, add, or remove fields.
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Stacked Icon UI Pattern to stack one icon on top of another, thus creating a new icon with its own distinctive meaning.
 
-![](<images/stackedicon-8-ss.png>)
+![Screenshot showing an example of a Stacked Icon with a ban symbol over a camera icon indicating 'No Photography'](images/stackedicon-8-ss.png "Stacked Icon Example")
 
 **How to use the Stacked Icon UI Pattern**
 
@@ -28,7 +28,7 @@ In this example, we create a **NO PHOTOGRAPHY** icon by stacking a ban icon on t
 
     The Stacked Icon widget is displayed.
 
-    ![](<images/stackedicon-9-ss.png>)
+    ![Screenshot of the Stacked Icon widget in the Service Studio toolbox](images/stackedicon-9-ss.png "Stacked Icon Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,11 +42,11 @@ In this example, we create a **NO PHOTOGRAPHY** icon by stacking a ban icon on t
 
 1. From the Toolbox, drag the Stacked Icon widget into the Main Content area of your application's screen.
 
-    ![](<images/stackedicon-10-ss.png>)
+    ![Screenshot depicting the process of dragging the Stacked Icon widget into the Main Content area of an application's screen](images/stackedicon-10-ss.png "Dragging Stacked Icon Widget")
 
 1. On the **Properties** tab, select the relevant icons. In this example, we select a ban icon for the front icon, and a camera icon for the back icon. We also set the front and back icon colors and size.
 
-    ![](<images/stackedicon-7-ss.png>)
+    ![Screenshot showing the Properties tab where the front and back icons, colors, and size are being set for the Stacked Icon](images/stackedicon-7-ss.png "Setting Properties for Stacked Icon")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -16,7 +16,7 @@ Use Raise Exception to throw an exception and stop the currently running action 
 
 When raising a User Exception, you must define the message to send as part of the exception in the **Message** property. The message is useful for logging purposes and eventually to display in the UI, informing the end user of the exception that occurred.
 
-![Raise Exception example](images/raise-exception-example-ss.png)
+![Screenshot of the Raise Exception element in a service studio action flow](images/raise-exception-example-ss.png "Raise Exception Example")
 
 <div class="info" markdown="1">
 

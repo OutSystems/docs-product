@@ -28,21 +28,21 @@ To override the Extensibility Configurations of your mobile app for a specific e
 
 1. Press the **Settings** link.  
 
-    ![](images/override-extensibility-configurations-1.png?width=700)
+    ![Screenshot showing how to access the settings link in the LifeTime management console for a mobile app](images/override-extensibility-configurations-1.png "Accessing Application Settings in LifeTime Console")
 
 1. Choose the environment where you want to override the Extensibility Configurations. The application must be already deployed in that environment.  
 
-    ![](images/override-extensibility-configurations-2.png?width=400)
+    ![Image depicting the selection of a specific environment in the LifeTime console to override extensibility configurations](images/override-extensibility-configurations-2.png "Selecting Environment for Extensibility Configurations")
 
 1. In the **Advanced** section, you will see the default Extensibility Configurations that were defined at design time. Choose the **Custom** option.
 
-    ![](images/override-extensibility-configurations-3.png)
+    ![Screenshot of the Advanced section in LifeTime console showing the default Extensibility Configurations](images/override-extensibility-configurations-3.png "Default Extensibility Configurations Section")
 
 1. Use the **Copy from Default** button to copy the default configurations to the custom field.
 
 1. In the Custom field, change only the configurations that need to be different for that environment, keeping the remaining configurations as is. Make sure the development team validates or provides you with the custom configurations.
 
-    ![](images/override-extensibility-configurations-4.png)
+    ![Image illustrating the process of customizing extensibility configurations for a mobile app in a specific environment](images/override-extensibility-configurations-4.png "Customizing Extensibility Configurations")
 
 1. Press the **Save** button.
 

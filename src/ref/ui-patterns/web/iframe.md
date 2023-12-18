@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/iframe-3-diag.png>)
+![Diagram showing the layout and classes of an Iframe in a traditional web app](images/iframe-3-diag.png "Iframe Layout Diagram")
 
 ## Advanced use case
 
@@ -30,6 +30,6 @@ This can be very useful if you are using a fixed width.
 
 1. Publish and test.
 
-    ![](<images/iframe-4-ss.png>)
+    ![Screenshot demonstrating how to change the Iframe width according to the device in a traditional web app](images/iframe-4-ss.png "Iframe Width Adjustment Example")
 
 You can change the condition of the width used. This code makes the width 500px on desktop, but on mobile, it is still full-width as the fixed width would probably overflow the screen.

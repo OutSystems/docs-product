@@ -29,7 +29,7 @@ From LifeTime 11.13.0 and Platform Server 11.15.0 versions and onwards, the Serv
 
 If you have **LifeTime** installed, set the **Content Security Policy** using this management console.
 
-![Content Security Policy in LifeTime](images/apply-content-security-policy-lt.png)
+![Screenshot of the LifeTime management console showing how to configure Content Security Policy for OutSystems applications](images/apply-content-security-policy-lt.png "Configuring Content Security Policy in LifeTime")
 
 ### For all environments
 
@@ -174,7 +174,7 @@ See [Troubleshooting OutSystems apps on iOS devices](https://success.outsystems.
 ## Troubleshooting missing or incorrect CSPs
 To confirm if the CSP headers are being applied, one can use the browser's developer tools to check the headers sent by the OutSystems application. To accomplish that, navigate to the application URL with the Developer Tools opened on the Network tab and check the response headers of the request (document type). Example below:
 
-![](images/csp_headers-dev_tools.png)
+![Browser developer tools network tab displaying the Content Security Policy headers sent by an OutSystems application](images/csp_headers-dev_tools.png "Checking CSP Headers in Browser Developer Tools")
 
 If the headers are either not present or are different from what you expected, we recommend checking the following:
 * Confirm that the application and its dependencies were published after the configuration of the Content Security Policies. Otherwise, the settings are not made effective;

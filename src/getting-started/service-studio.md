@@ -34,13 +34,13 @@ After you successfully connect, you see the list of applications that are on the
 * Install applications or components from the OutSystems Forge.
 
 
-![Service Studio development environment](images/service-studio-development-environment.png)
+![Screenshot of the Service Studio development environment showing the list of applications and the Environment tab.](images/service-studio-development-environment.png "Service Studio Development Environment")
 
 You can use the Search box in the Environment tab to find your application and modules, and also, to perform a search in the OutSystems Community. The Search box is available also on other screens, and the search scope depends on the currently opened screen.
 
 Once you create a new application or access an existing one, you navigate to the app detail screen:
 
-![Service Studio app details](images/service-studio-app-details.png)
+![Screenshot of the Service Studio app detail screen with areas for app details, app tabs, and buttons for editing, deleting, downloading, and testing the application.](images/service-studio-app-details.png "Service Studio Application Details")
 
 In the app detail screen you have the following areas:
 
@@ -70,7 +70,7 @@ Distribute tab
 
 The workspace of Service Studio is where you design, deploy, and debug the modules of your applications.
 
-![Service Studio workspace details ](images/service-studio-workspace-details.png)
+![Screenshot of the Service Studio workspace detailing the main editor, toolbar, toolbox, development tabs, status bar, application layer tabs, properties editor, and the 1-Click Publish button.](images/service-studio-workspace-details.png "Service Studio Workspace")
 
 The following areas organize the workspace:
 

@@ -29,12 +29,12 @@ Open the aggregate and do the following:
 
 1. On the `City` attribute, right-click, and choose **Group By City**.
   
-    ![Group by city](images/group-attribute-ss.png)
+    ![Screenshot showing the selection of 'Group By City' option for the City attribute in an aggregate](images/group-attribute-ss.png "Group By City Attribute")
 
 1. On the `Employee Id` attribute, right-click, and choose **count**.
 
-    ![Count employees](images/select-aggregate-function-ss.png)
+    ![Screenshot demonstrating how to select the 'count' aggregate function for the Employee Id attribute](images/select-aggregate-function-ss.png "Select Aggregate Function")
 
 1. Now you see how many employees are in each city.
 
-    ![Employees per city](images/group-calculate-ex2-ss.png)
+    ![Example screenshot displaying the result of grouping employees by city and counting them in an aggregate](images/group-calculate-ex2-ss.png "Grouped Data Calculation Example")

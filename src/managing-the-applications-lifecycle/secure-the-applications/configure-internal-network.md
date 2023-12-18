@@ -26,7 +26,7 @@ To configure an internal network for your OutSystems environment, do the followi
 
 1. Select the **Network Security** area.
 
-    ![](images/configure-internal-network-1.png?width=600)
+    ![Screenshot of the Network Security area in the OutSystems Service Center where the Internal network addresses field is highlighted](images/configure-internal-network-1.png "Internal Network Configuration")
 
 1. Fill in the **Internal network addresses** field with the list of IP addresses or ranges from which you want to allow the access to the management consoles and the endpoints of your applications defined as Internal Access Only. Assure you include also the IP addresses/ranges of the controller, all front-end servers and monitoring tools.
 

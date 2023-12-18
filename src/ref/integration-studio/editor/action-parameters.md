@@ -4,8 +4,8 @@ guid: ef146002-08c3-4bb8-8602-0a48cfa16b7d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The Action Parameter Editor in Integration Studio allows users to edit, add, remove, and reorder parameters, as well as toggle between input and output types for extension actions
 ---
-
 # Action Parameters Editor
 
 The Action Parameter Editor allows you to edit the [properties](<../element-property/action-parameter.md>) of the action parameter that belongs to your extension.
@@ -14,17 +14,17 @@ This editor is displayed together with the [Action Editor](<action.md>).
 
 ## Add and Remove Parameters
 
-To **add** a parameter, simply type a new row in this editor or press the ![](images/add.gif) button in the editor or in the right menu.
+To **add** a parameter, simply type a new row in this editor or press the ![Animated button for adding a new parameter in the Action Parameter Editor](images/add.gif "Add Parameter Button") button in the editor or in the right menu.
 
-To **remove** a parameter, select the parameter row and press the ![](images/delete.gif) button in the editor or in the right menu.
+To **remove** a parameter, select the parameter row and press the ![Animated button for deleting a parameter in the Action Parameter Editor](images/delete.gif "Delete Parameter Button") button in the editor or in the right menu.
 
-![](images/warning.gif) Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, the remove operation could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function by setting property Function to No, if you're deleting a single output parameter of a function action.
+![Warning icon indicating a potential issue when removing or toggling parameters in the Action Parameter Editor](images/warning.gif "Warning Icon") Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, the remove operation could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function by setting property Function to No, if you're deleting a single output parameter of a function action.
 
 ## Input and Output Parameters
 
-By default, the parameter is an input parameter. To define an Output parameter, simply click on the Input icon ![](images/input.gif) and Integration Studio switches to an Output parameter. In fact, both the Input ![](images/input.gif) and Output ![](images/output.gif) icons have a toggle behavior, allowing you to easily change the type of the parameter.
+By default, the parameter is an input parameter. To define an Output parameter, simply click on the Input icon ![Toggle icon to switch a parameter to input in the Action Parameter Editor](images/input.gif "Input Parameter Icon") and Integration Studio switches to an Output parameter. In fact, both the Input ![Toggle icon to switch a parameter to input in the Action Parameter Editor](images/input.gif "Input Parameter Icon") and Output ![Toggle icon to switch a parameter to output in the Action Parameter Editor](images/output.gif "Output Parameter Icon") icons have a toggle behavior, allowing you to easily change the type of the parameter.
 
-![](images/warning.gif) Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, this "toggle" operation could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function:
+![Warning icon indicating a potential issue when removing or toggling parameters in the Action Parameter Editor](images/warning.gif "Warning Icon") Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, this "toggle" operation could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function:
 
 * By setting the property Function to `No`, if you're adding another output parameter to a function action. 
 
@@ -36,10 +36,10 @@ The order of the parameters must be the same in both the extension action and in
 
 Button | Description
 :-----:|:-----------
-![](images/bottom-one.gif) | Move the selected parameter down.
-![](images/bottom-all.gif) | Move the selected parameter to the bottom of the list.
-![](images/top-one.gif) | Move the selected parameter up.
-![](images/top-all.gif) | Move the selected parameter to the top of the list.
+![Button to move the selected parameter down one position in the Action Parameter Editor](images/bottom-one.gif "Move Parameter Down Button") | Move the selected parameter down.
+![Button to move the selected parameter to the bottom of the list in the Action Parameter Editor](images/bottom-all.gif "Move Parameter to Bottom Button") | Move the selected parameter to the bottom of the list.
+![Button to move the selected parameter up one position in the Action Parameter Editor](images/top-one.gif "Move Parameter Up Button") | Move the selected parameter up.
+![Button to move the selected parameter to the top of the list in the Action Parameter Editor](images/top-all.gif "Move Parameter to Top Button") | Move the selected parameter to the top of the list.
 
 ## Change the Parameter Properties
 

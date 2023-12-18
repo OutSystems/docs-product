@@ -24,7 +24,7 @@ Applies to Mobile Apps and Reactive Web Apps only
   
 ## Layout and Classes
 
-![](images/datepicker-layout-classes-diag.png)
+![Diagram illustrating the layout and CSS classes of the Date Picker UI Pattern](images/datepicker-layout-classes-diag.png "Date Picker Layout and Classes Diagram")
 
 ## CSS Selectors
 

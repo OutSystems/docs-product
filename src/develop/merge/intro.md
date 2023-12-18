@@ -13,7 +13,7 @@ In an environment where many developers work on the same module, you often need 
 
 The merge capabilities are designed with OutSystems visual language in mind, which enables you to review changes for both visual and textual elements. 
 
-![](images/conflicts-detected.png)
+![Screenshot showing the conflicts detected during the merge process in Service Studio](images/conflicts-detected.png "Conflicts Detected in Service Studio")
 
 What follows is an overview of the merge feature. For the step by step instructions for conflict resolution, check [Compare and merge example](<merge-example.md>). The document about [the merge feature and team collaboration](<concepts.md>) outlines the merge operations in OutSystems.
 
@@ -31,7 +31,7 @@ Compare
 Publish my version
 :   Use this option to overwrite the version of the module on the server with your local version. This option is a destructive operation, and you will lose all changes in the version that is currently on the server.
 
-![](images/modified-version-detected.png)
+![Screenshot of the 'Modified version detected' window in Service Studio with merge options](images/modified-version-detected.png "Modified Version Detected Window")
 
 ## Compare and Merge window
 
@@ -58,7 +58,7 @@ To select the changes that will be saved in the local version, and that can then
 * To accept the changes from the local version, select the check box in **Merged version** pane.
 * To change the resulting local version, edit the text in **Merged version** pane.
 
-![](images/conflicts-text.png)
+![Screenshot of the 'Compare and Merge' window showing how to resolve textual conflicts in Service Studio](images/conflicts-text.png "Resolving Textual Conflicts")
 
 ### Highlight all differences
 
@@ -72,11 +72,11 @@ Here are the color descriptions.
 
 | Color | Name | Meaning |
  --- | --- | --- | 
-![](images/color-modifed-deleted.png) | Gray | Deleted line
-![](images/color-modifed-added.png) | Green| Inserted line
-![](images/color-modifed-light.png) | Light blue | Modified line with no conflicts, no changes in this version
-![](images/color-modifed-dark.png) | Dark blue | Modified line with no conflicts, this version was changed
-![](images/color-modifed-conflict.png) | Red | Modified in both versions, has conflicts
+![Color reference indicating a gray highlight for a deleted line in the merge comparison](images/color-modifed-deleted.png "Color Reference for Deleted Line") | Gray | Deleted line
+![Color reference indicating a green highlight for an inserted line in the merge comparison](images/color-modifed-added.png "Color Reference for Inserted Line") | Green| Inserted line
+![Color reference indicating a light blue highlight for a modified line without conflicts in the merge comparison](images/color-modifed-light.png "Color Reference for Modified Line Without Conflicts") | Light blue | Modified line with no conflicts, no changes in this version
+![Color reference indicating a dark blue highlight for a modified line with changes in the merge comparison](images/color-modifed-dark.png "Color Reference for Modified Line With Changes") | Dark blue | Modified line with no conflicts, this version was changed
+![Color reference indicating a red highlight for a line with conflicts in the merge comparison](images/color-modifed-conflict.png "Color Reference for Line With Conflicts") | Red | Modified in both versions, has conflicts
 
 ### "Merge and publish" vs "Merge"
 
@@ -89,4 +89,4 @@ Once you select which changes to accept, you may choose to **Merge and publish**
 
 The merge changes and actions are saved automatically. When the window **Recover Previous Merge** shows, click **Yes** to continue working on changes without losing the previous edits. Clicking **No** deletes the saved merge edits and you can start the edits from scratch.
 
-![](images/recover-previous-merge-dialog.png)
+![Screenshot of the 'Recover Previous Merge' dialog in Service Studio](images/recover-previous-merge-dialog.png "Recover Previous Merge Dialog")

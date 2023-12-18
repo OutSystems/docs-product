@@ -20,7 +20,7 @@ You can use the File Upload UI Pattern to allow users upload files to the app.
 
 The File Upload pattern is commonly used in a form, but it can also be used as a stand-alone element.
 
-![](<images/fileupload-image-1.png>)
+![Screenshot of the File Upload UI Pattern in a Traditional Web App](images/fileupload-image-1.png "File Upload UI Pattern")
 
 **How to use the File Upload Pattern**
 
@@ -28,7 +28,7 @@ The File Upload pattern is commonly used in a form, but it can also be used as a
 
     The File Upload widget is displayed.
 
-    ![](<images/fileupload-image-3.png>)
+    ![Image showing the File Upload widget in the Service Studio toolbox](images/fileupload-image-3.png "File Upload Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,7 +42,7 @@ The File Upload pattern is commonly used in a form, but it can also be used as a
 
 1. From the Toolbox, drag the File Upload widget into the Main Content area of your application's screen.
 
-    ![](<images/fileupload-image-4.png>)
+    ![Illustration of dragging the File Upload widget into the Main Content area of an application screen](images/fileupload-image-4.png "Dragging File Upload Widget")
 
 1. After following these steps and publishing the module, you can test the pattern in your app. 
 

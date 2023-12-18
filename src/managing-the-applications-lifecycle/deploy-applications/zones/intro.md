@@ -61,7 +61,7 @@ In the following example, we define three deployment zones:
 * The "B2E" deployment zone has one associated server: Server 2
 * The "Public" deployment zone has one associated server: Server 3
 
-![](images/intro-front-ends-diag.png)
+![Diagram showing three deployment zones named 'Internal Apps', 'B2E', and 'Public' with associated servers Server 1, Server 2, and Server 3 respectively.](images/intro-front-ends-diag.png "Deployment Zones and Associated Servers")
 
 Then, we configure three applications associating them with a given deployment zone:
 
@@ -71,7 +71,7 @@ Then, we configure three applications associating them with a given deployment z
 
 The platform deploys the applications to the three servers according to the following diagram:
 
-![](images/intro-applications-diag.png)
+![Diagram illustrating the deployment of Application 1 to the 'Internal Apps' zone, Application 2 to the 'B2E' zone, and Application 3 to the 'Public' zone.](images/intro-applications-diag.png "Application Deployment Across Servers")
 
 ## Communication Between Applications in Different Deployment Zones
 
@@ -85,7 +85,7 @@ In the following scenario, we have an application named "Front-end App" exposing
 
 The "Back-end Service" is discovered by the "Front-end App" through the deployment zone address of the "Back-end Service". This address might vary according to your network architecture and is defined by you in the "[Deployment Zone Address](<reference.md>)" parameter when creating the deployment zone.
 
-![](images/intro-ex-interzonecommunication-single-diag.png)
+![Diagram depicting the 'Front-end App' in the 'Public' deployment zone communicating with the 'Back-end Service' in the 'Internal Apps' deployment zone.](images/intro-ex-interzonecommunication-single-diag.png "Interzone Communication Between Front-end and Back-end Apps")
 
 ## Example Use Cases
 
@@ -109,7 +109,7 @@ To change the configuration of a web application so that it's only deployed to t
 
 1. Configure the web application to use the new deployment zone.
 
-![](images/intro-ex-segmented-server-diag.png)
+![Diagram showing a web application being deployed to a public-facing server in a DMZ network, separate from the internal server.](images/intro-ex-segmented-server-diag.png "Segmented Server Deployment Configuration")
 
 After these steps, the application you just configured is only deployed to the public-facing server, and it's removed from any other servers belonging to the previously configured deployment zone. Internet users access the application through the public server address.
 
@@ -132,7 +132,7 @@ To change the configuration of the web application so that it's only deployed to
 
 1. Configure the web application to use the new deployment zone.
 
-![](images/intro-ex-internal-app-diag.png)
+![Diagram illustrating an internal web application deployed only to the internal server, excluding the public-facing DMZ server.](images/intro-ex-internal-app-diag.png "Internal Web Application Deployment")
 
 After these steps, the application you just configured will only be deployed to the internal server, and it will be removed from any other servers belonging to the previously configured deployment zone. Internal end users will access the application through the internal server address.
 
@@ -153,7 +153,7 @@ To correctly deploy a web application to these two public-facing servers and do 
 
 1. Configure the web application to use the new deployment zone.
 
-![](images/intro-ex-load-distribution-diag.png)
+![Diagram demonstrating load distribution for a public web application across two public-facing servers using a load balancer.](images/intro-ex-load-distribution-diag.png "Load Distribution for Public Web Application")
 
 After doing these configurations, the platform deploys your web application to the two public-facing servers. Users can access the web application using the address of the load balancer, which hands over the requests to the configured servers in the "Public" deployment zone.
 

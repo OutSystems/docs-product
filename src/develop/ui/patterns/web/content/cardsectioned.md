@@ -20,7 +20,7 @@ Groups information in a small block organized with different sections for title,
 
 Use the Card Sectioned pattern to group short pieces of information and highlight them on the screen.
 
-![](<images/cardsection-3.png>)
+![Example of a Card Sectioned pattern in a Traditional Web App](images/cardsection-3.png "Card Sectioned Example")
 
 **How to use the Card Sectioned UI Pattern**
 
@@ -28,7 +28,7 @@ Use the Card Sectioned pattern to group short pieces of information and highligh
 
     The Card Sectioned widget is displayed.
 
-    ![](<images/cardsection-1-ss.png>)
+    ![Screenshot showing the Card Sectioned widget in OutSystems Service Studio](images/cardsection-1-ss.png "Card Sectioned Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,17 +42,17 @@ Use the Card Sectioned pattern to group short pieces of information and highligh
 
 1. From the Toolbox, drag the Card Sectioned widget into the Main Content area of your application's screen.
 
-    ![](<images/cardsection-2-ss.png>)
+    ![Dragging the Card Sectioned widget into the Main Content area of an application screen](images/cardsection-2-ss.png "Dragging Card Sectioned Widget")
 
     By default, the Card Sectioned widget contains an Image, Title, Content, and Footer placeholder.
 
 1. Add your content to the placeholders. In this example we add an image, a title, some text, and a link.
 
-    ![](<images/cardsection-4-ss.png>)
+    ![Adding an image, title, text, and link to the Card Sectioned widget placeholders](images/cardsection-4-ss.png "Adding Content to Card Sectioned")
 
 1. On the **Properties** tab, you can change the look and feel of the Card Sectioned widget, for example, the orientation and padding properties.
 
-    ![](<images/cardsection-5-ss.png>)
+    ![Properties tab for the Card Sectioned widget showing options for orientation and padding](images/cardsection-5-ss.png "Card Sectioned Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

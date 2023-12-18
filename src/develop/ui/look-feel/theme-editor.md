@@ -14,7 +14,7 @@ If your app uses a OutSystems UI Theme as a Base Theme, you can use Theme Editor
 
 To open Theme Editor, open a Screen and click the **Theme Editor...** icon in the workspace toolbar.
 
-![Open Theme Editor](images/theme-editor-01-ss.png?width=1000)
+![Screenshot of the Theme Editor interface in Service Studio](images/theme-editor-01-ss.png "Theme Editor Interface")
 
 ## Customize default colors of Screens and UI elements
 
@@ -22,7 +22,7 @@ Select one of the 18 default color palettes or use a custom palette based on the
 
 Once you select a color palette, Theme Editor sets a Primary color, a Header color, and a Background color. You can change each of these default colors by choosing one of the other three suggested colors or by defining a custom color.
 
-![Theme colors](images/theme-editor-02-ss.png?width=450)
+![Screenshot showing color customization options in Theme Editor](images/theme-editor-02-ss.png "Color Customization in Theme Editor")
 
 Get palette from an image
 :   Create a custom color palette based on the main colors of an image (.png, .jpeg). Select the logo of your company to create a color palette that reflects your brand.
@@ -43,7 +43,7 @@ Header
 
 Select one of the six font types and change the base size of your font.
 
-![Theme font](images/theme-editor-03-ss.png?width=450)
+![Screenshot displaying font type and size customization in Theme Editor](images/theme-editor-03-ss.png "Font Customization in Theme Editor")
 
 Font 
 :   Change the font type used in your app.
@@ -55,7 +55,7 @@ Font Size
 
 Change the general structure of your Screens and UI elements by selecting spacing, header sizes, border shape and the style of border shadow.
 
-![Theme structure](images/theme-editor-04-ss.png?width=450)
+![Screenshot of structure and shape customization settings in Theme Editor](images/theme-editor-04-ss.png "Structure and Shape Customization in Theme Editor")
 
 Spacing 
 :   Change the spacing between UI elements.
@@ -73,7 +73,7 @@ Shadow
 
 Change the background of the Login screen to a solid color, to a color with a gradient or to an image. Check your style changes by opening the **Login** screen, inside the **Common** UI flow. In Mobile apps it also changes the background of the Splash screen.
 
-![Login screen](images/theme-editor-05-ss.png?width=450)
+![Screenshot showing options for customizing the Login Screen background in Theme Editor](images/theme-editor-05-ss.png "Login Screen Background Customization")
 
 Background color
 :   Change the color of the Login Screen background.
@@ -88,4 +88,4 @@ Background image
 
 To delete all the style changes created using Theme Editor, press **Reset Theme Editor**.
 
-![Reset Theme Editor customization](images/theme-editor-06-ss.png?width=450)
+![Screenshot of the Reset Theme Editor button to revert style changes](images/theme-editor-06-ss.png "Reset Theme Editor Customization")

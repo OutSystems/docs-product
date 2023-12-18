@@ -24,11 +24,11 @@ When you use the Multilingual feature, the RTL is automatically applied based on
 }
 ```
 
-![Applying the Multilingual feature](images/rtl-multilingual.png)
+![Screenshot showing how to enable multilingual RTL support in an application](images/rtl-multilingual.png "Multilingual RTL Support")
 
 Here's the final result:
 
-![English and Arabic applied](images/rtl-arabic-english-applied-4.png)
+![Final result of an application interface displaying content in both Arabic and English with RTL applied](images/rtl-arabic-english-applied-4.png "Final Result of RTL Application")
 
 The multilingual feature is available from [Platform Server version 11.11.1 onwards](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server). To enable the Multilingual feature in your application, follow the [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md) guidelines. For more information about RTL languages, see [Checklist: Right-To-Left Languages (RTL)](https://lingohub.com/academy/best-practices/rtl-language-list).
 
@@ -48,35 +48,35 @@ To add the class injection, you must create an action with a JS node with the fo
 document.body.classList.add('is-rtl');
 ```
 
-![Multilingual feature applied manually](images/rtl-applyrtl-ss.png)
+![Code snippet demonstrating how to manually apply RTL to an application](images/rtl-applyrtl-ss.png "Manual RTL Application")
 
 Here's the final result:
 
-![English and Arabic applied](images/rtl-arabic-english-applied-4.png)
+![Final result of an application interface displaying content in both Arabic and English with RTL applied](images/rtl-arabic-english-applied-4.png "Final Result of RTL Application")
 
 ## Changing the application’s content based on RTL
 
 OutSystems UI provides an **IsRTL** action that checks if RTL is applied or not (boolean value). This action also works like a function. You can find it in the **Utilities** folder. 
 
-|![ISRtl action in Utilities folder](images/rtl-isrtl-ss.png)
+|![Image of the IsRTL action located in the Utilities folder of OutSystems UI](images/rtl-isrtl-ss.png "IsRTL Action in Utilities")
 
 You can use it in the following ways:
 
 * To set values on input parameters
 
-![Set values on input parameters](images/rtl-advancedformat-ss.png)
+![Example of using advanced format settings in an application with RTL support](images/rtl-advancedformat-ss.png "Advanced Format with RTL")
 
 * To control the Container’s visibility
 
-![Control the Container’s visibility](images/rtl-container-ss.png)
+![Illustration of controlling container visibility based on RTL settings](images/rtl-container-ss.png "RTL Container Visibility")
 
 * To set conditions (If widget)
 
-![Set If conditions](images/rtl-condition-ss.png)
+![Screenshot showing how to set conditions for RTL in an application interface](images/rtl-condition-ss.png "RTL Condition Settings")
 
 * To apply logic inside client actions on If conditions
 
-![Control the Container’s visibility](images/rtl-logic-ss.png)
+![Example of applying logic in client actions for RTL conditions](images/rtl-logic-ss.png "RTL Logic Application")
 
 ## Utilities
 
@@ -130,4 +130,4 @@ element.classList.add('is-rtl')
 
 You can also apply it directly to the layout block using the **ExtendedClass** parameter:
 
-![Apply RTL ExtendedClass parameter](images/rtl-extendedclass-ss.png)
+![Demonstration of adding an RTL class to the layout element using the ExtendedClass parameter](images/rtl-extendedclass-ss.png "Adding RTL Class to Layout Element")

@@ -4,13 +4,13 @@ guid: e1d27780-9956-400a-aa66-a730ed8e8c0a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:103
+summary: The OutSystems UI Framework offers tools and pre-built UI patterns to create responsive and customizable app interfaces
 ---
-
 # Look and Feel
 
 The OutSystems UI Framework is the base of all user interfaces. To enhance the look and feel of your app and provide a good user experience, the OutSystems UI Framework comes with [cascading style sheets (CSS)](css.md) that define how your HTML will look in the browser.  You can also [design the layout of your screens using placeholders](design-screens-layout.md) which help to define the position of the elements on the screen. The framework provides a [style editor](styles-editor.md) that allows you to change, for example, font color, margins or border thickness, as well as [themes](themes.md) and a [theme editor](theme-editor.md) that allow you to customize the overall style of your app. 
 
-![OutSystems UI Framework overview](images/outsystems-ui-framework-diag.png)
+![Diagram illustrating the components of the OutSystems UI Framework, including CSS, placeholders, style editor, themes, and UI patterns.](images/outsystems-ui-framework-diag.png "OutSystems UI Framework Diagram")
 
 From badges, progress bars, and counters to carousel patterns, the OutSystems UI framework provides a library of over a 100 [UI patterns](../patterns/intro.md) that allow you to provide seamless user interactions and quickly build the most complex and rich user interfaces. Additionally, the framework provides the capability to design and create apps with the content displaying from [right to left](rtl.md).
 

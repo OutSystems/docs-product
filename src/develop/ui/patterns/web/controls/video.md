@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Video UI pattern to embed a native video player into your application.
 
-![](<images/video-image-2.png>)
+![Screenshot of an embedded native video player in a Traditional Web App](images/video-image-2.png "Embedded Video Player UI")
 
 <div class="info" markdown="1">
 
@@ -32,7 +32,7 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 
     The Video widget is displayed.
 
-    ![](<images/video-image-10.png>)
+    ![Image showing the Video widget in the Service Studio toolbox](images/video-image-10.png "Video Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -46,34 +46,34 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 
 1. From the Toolbox, drag the Video widget into the Main Content area of your application's screen.
 
-    ![](<images/video-image-11.png>)
+    ![Illustration of dragging the Video widget into the Main Content area of an application screen](images/video-image-11.png "Dragging Video Widget into Main Content")
  
 1. On the **Properties** tab, set the **SourceFile** property to the source video file you want to embed in your app. 
 
     * If using an external source file, insert the file URL.
 
-        ![](<images/video-image-3.png>)
+        ![Example of setting the SourceFile property with an external video file URL](images/video-image-3.png "Setting SourceFile Property to External URL")
 
     * If using a local file, include the video in a module as a resource and use the runtime path as follows:
 
         1. On the **Data** tab, right-click the **Resources** folder and select **Import Resource**.
 
-            ![](images/video-image-add-resource.png)
+            ![Dialog for importing a video file as a resource into the module](images/video-image-add-resource.png "Importing Video File as Resource")
         
         1. Browse and select the video file you want to add and click **Open**.
         1. On the **Resource** properties tab, from the **Deploy Action** drop-down, select **Deploy to Target Directory**.
 
-             ![](<images/video-image-12.png>)
+             ![Dropdown menu for selecting 'Deploy to Target Directory' as the deploy action for a video resource](images/video-image-12.png "Setting Deploy Action for Video Resource")
 
         1. On the **Interface** tab, from the **Widget Tree**, select the Video pattern.
        
         1. In the **SourceFile** property, enter the runtime path of the video file.
 
-            ![](<images/video-image-13.png>)
+            ![Input field for entering the runtime path of the video file in the SourceFile property](images/video-image-13.png "Entering Runtime Path in SourceFile Property")
     
             **Tip**: You can copy the runtime path from the Resource Runtime Path property tab.
 
-            ![](<images/video-image-14.png>)
+            ![Resource properties tab showing the runtime path of the video file for copying](images/video-image-14.png "Copying Runtime Path from Resource Properties")
 
 1. On the Video **Properties** tab, you can also define (optional) properties, such as the height and width of the video and the audio settings.
 

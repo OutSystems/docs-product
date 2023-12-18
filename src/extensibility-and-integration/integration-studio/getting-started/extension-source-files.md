@@ -4,8 +4,8 @@ guid: b45e7737-81b3-441d-9baf-641f310c262d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: Integration Studio automatically generates template files for extension development after creation, which include .NET source files and properties for resource management
 ---
-
 # Extension Source Files
 
 Once the extension is [created](<../extension-life-cycle/extension-create.md>), Integration Studio automatically generates, according to the [definition](<../extension-life-cycle/extension-define.md>) of the extension elements, the necessary template files for the development bootstrap of that extension. Once these templates are generated, the source files listed below are added as resources of your extension and you can start coding the behavior of your extension actions.
@@ -28,7 +28,7 @@ By default, your extension has the following source files, stored under the `Sou
 
     * Actions are implemented in the  `<ExtensionName>.cs` file, which contains a .NET method for each action defined by your extension: the method name is `Mss<ActionName>` and parameters names are `ss<ParameterName>`.
 
-        ![](images/warning.gif) This file contains the signature of the methods that correspond to the actions exposed by your extension. You must not change these signatures. Any action, either [defined](<../managing-extensions/action-add.md>) in Integration Studio or [imported](<../managing-extensions/net-assembly-import-action.md>) from an assembly, must be defined in this file.
+        ![Warning icon indicating important information about .NET method signatures in the extension source files](images/warning.gif "Warning Icon") This file contains the signature of the methods that correspond to the actions exposed by your extension. You must not change these signatures. Any action, either [defined](<../managing-extensions/action-add.md>) in Integration Studio or [imported](<../managing-extensions/net-assembly-import-action.md>) from an assembly, must be defined in this file.
 
         Actions are declared in the `Interface.cs` file in the same way as explained above for `<ExtensionName>.cs` file.
 

@@ -20,7 +20,7 @@ You can use the Input with Icon UI Pattern to allow the end user input data with
 
 The Input with Icon UI Pattern includes an icon and placeholder text that supports the user when entering data. Is assists the user's comprehension by providing an example of the type of input required.  
 
-![](<images/inputwithicon-8-ss.png>)
+![Screenshot showing an example of the Input with Icon UI Pattern in a Traditional Web App](images/inputwithicon-8-ss.png "Input with Icon UI Pattern Example")
 
 **How to use the Input with Icon**
 
@@ -28,7 +28,7 @@ The Input with Icon UI Pattern includes an icon and placeholder text that suppor
 
     The Input with Icon widget is displayed.
 
-    ![](<images/inputwithicon-1-ss.png>)
+    ![Image of the Input with Icon widget found in the Service Studio Toolbox](images/inputwithicon-1-ss.png "Input with Icon Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,27 +42,27 @@ The Input with Icon UI Pattern includes an icon and placeholder text that suppor
 
 1. From the Toolbox, drag the Input with Icon widget into the Main Content area of your application's screen.
 
-    ![](<images/inputwithicon-2-ss.png>)
+    ![Dragging the Input with Icon widget into the Main Content area of an application screen](images/inputwithicon-2-ss.png "Dragging Input with Icon Widget")
 
 1. Select the Input widget, and on the **Properties** tab, from the **Variable** drop-down, select **New Local Variable**.
 
-    ![](<images/inputwithicon-3-ss.png>)
+    ![Selecting the Input widget and setting a new local variable in the Properties tab](images/inputwithicon-3-ss.png "Setting Variable for Input Widget")
 
 1. Enter a name for variable. In this example we enter `Username` and set the **Data Type** property to Text.
 
-    ![](<images/inputwithicon-5-ss.png>)
+    ![Entering a name for the new local variable for the Input widget, example using 'Username'](images/inputwithicon-5-ss.png "Naming the Local Variable")
 
 1. Select the Input widget again, and on the **Properties** tab, in the **Prompt** property, enter the text you want displayed in the input box that describes the expected value. In this example, we enter `Username`.
 
-    ![](<images/inputwithicon-9-ss.png>)
+    ![Entering text in the Prompt property of the Input widget to describe the expected value](images/inputwithicon-9-ss.png "Configuring Prompt Property")
 
 1. To change the icon, select the Icon widget, and from the **Name** drop-down, select the icon you want to display in the input box. In this example, we select the user icon.
 
-    ![](<images/inputwithicon-6-ss.png>)
+    ![Selecting a new icon for the Input with Icon widget from the Name drop-down](images/inputwithicon-6-ss.png "Changing the Icon in Input with Icon")
 
 1. You can change the Input with Icon's look and feel by setting the (optional) properties on the **Property** tab.
 
-    ![](<images/inputwithicon-7-ss.png>)
+    ![Setting optional properties on the Property tab to change the look and feel of the Input with Icon](images/inputwithicon-7-ss.png "Customizing Input with Icon Appearance")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

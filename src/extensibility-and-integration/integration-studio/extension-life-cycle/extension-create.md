@@ -4,8 +4,8 @@ guid: c3a15acb-2ada-4d0b-93f8-e897e74752fb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3387%3A2062&mode=design&t=187UAgmZTPxcY0ZG-1
+summary: Integration Studio allows the creation of extensions with Actions, Entities, and Structures for use in Service Studio, requiring specific permissions to publish
 ---
-
 # Create an Extension
 
 Integration Studio enables you to create an extension — a set of **Actions**, **Entities**, and **Structures** available in Service Studio but implemented in third-party technologies. An extension can be [used in any module](<../extension-life-cycle/extension-use.md>) after it's published in the Platform Server.
@@ -16,7 +16,7 @@ If you don't have LifeTime installed in your infrastructure, User Management is 
 
 ## How to create an extension
 
-1. In the **File** menu or in the toolbar, click ![](images/new.png) **New**.
+1. In the **File** menu or in the toolbar, click ![Icon for creating a new extension in Integration Studio](images/new.png "Create New Extension") **New**.
 
 1. Provide the information in the **Connect to Environment** window and click **Connect**. This step is required only once per session.  
 

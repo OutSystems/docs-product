@@ -576,7 +576,7 @@ Check [LifeTime API Examples](<../lifetime-deployment/api-use-cases.md>) to lear
 
 You can download the Swagger file for the LifeTime API v2 in the download page of LifeTime Management Console binaries (available from LifeTime Management Console 11.5.0). Go to the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), and select your LifeTime Management Console version:
 
-![download LifeTime](images/lifetime-api-downloads.png)
+![Screenshot of the LifeTime API v2 downloads page with links to download Swagger file](images/lifetime-api-downloads.png "LifeTime API Downloads")
 
 
 ## Summary {#swagger--summary-tags}

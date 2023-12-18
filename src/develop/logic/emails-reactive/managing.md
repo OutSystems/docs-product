@@ -27,7 +27,7 @@ To create a new Email in Service Studio, follow these steps:
     * In you're adding the first email in the module, right-click any UI Flow and select **Add Email**.
     * If you already have an email in the module, right-click the **Emails** UI Flow and select **Add Email**.
 
-    ![UI Flow and the new Email menu](images/add-email-ui-flow-ss.png?width=410)
+    ![Screenshot showing the UI Flow context menu with the option to add a new Email in Service Studio](images/add-email-ui-flow-ss.png "UI Flow and the New Email Menu")
 
     <div class="info" markdown="1">
 
@@ -37,14 +37,14 @@ To create a new Email in Service Studio, follow these steps:
 
 1. In the **New Email** window, select **Empty** and click **Create Email**.
 
-    ![Email templates in new email window](images/new-email-window-ss.png?width=700)
+    ![New Email window in Service Studio displaying various email templates to choose from](images/new-email-window-ss.png "Email Templates in New Email Window")
 
     1. Select the Email under the UI Flow, and enter the following details:
 
     * A name in the **Name** field
     * `"No subject"` as a temporary subject in the **Subject** field
 
-    ![Email properties](images/email-properties.png?width=310)
+    ![Email properties fields with a name and temporary subject entered in Service Studio](images/email-properties.png "Email Properties")
 
 ## Adding content to Email
 
@@ -52,7 +52,7 @@ To add content to your emails, follow these steps in Service Studio:
 
 1. Go to **Interface** > **UI Flows** > **your Emails UI Flow** and double-click the Email you want to edit. The Email opens for editing. The widget list shows the widgets that Emails currently support.
     
-    ![Email for editing](images/edit-email-open-ss.png?width=810)
+    ![Service Studio interface showing an Email open for editing with a list of supported widgets](images/edit-email-open-ss.png "Email for Editing")
 
     <div class="info" markdown="1">
 
@@ -62,7 +62,7 @@ To add content to your emails, follow these steps in Service Studio:
 
 1. Drag the **Text** widget to the Email and enter some text.
 
-    ![Text in Email](images/edit-email-add-text.png?width=810)
+    ![Email editor in Service Studio with a Text widget added to the email content](images/edit-email-add-text.png "Text in Email")
 
     <div class="info" markdown="1">
 
@@ -82,7 +82,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
 1. Right-click the Email in the **Interface** tab and select **Add Input Parameter** from the menu. Service Studio adds an Input Parameter.
 
-    ![Input parameter for Email](images/adding-input-param-email-ss.png?width=380)
+    ![Context menu in Service Studio for adding an Input Parameter to an Email](images/adding-input-param-email-ss.png "Input Parameter for Email")
 
 1. Set the following Input Parameter properties:
 
@@ -90,7 +90,7 @@ To add an Input to your Email and show the value in the email body, follow these
     * **Data Type** - select **Text**
     * **Is Mandatory** - Select **Yes** to make the **Handle** a required value in the Email
 
-    ![Input parameters for Email](images/inputs-for-emails-ss.png?width=350)
+    ![Input Parameter properties for an Email in Service Studio with Name, Data Type, and Is Mandatory fields](images/inputs-for-emails-ss.png "Input Parameters for Email")
 
 1. Double-click the Email in the **Interface** tab to open it for editing.
 
@@ -98,7 +98,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
 1. Enter `"Hello, " + Handle + "!"` and click **Done**.
 
-    ![Email preview](images/expression-preview-ss.png?width=700)
+    ![Preview of an Email in Service Studio showing a personalized greeting using an Expression widget](images/expression-preview-ss.png "Email Preview")
 
 
 When you open this email in the email client, the expression displays "Hello, John!" when the value of **Handle** is `"John"`.

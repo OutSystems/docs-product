@@ -28,11 +28,11 @@ To request an unscheduled synchronization, follow these steps:
 
 1. Go to the AI Mentor Studio LifeTime plugin (`https://<lifetime_environment>/AIMentorStudioProbe/`) and select **Monitor**.
 
-    ![Select Monitor](images/sync-plugin-monitor-lt.png)
+    ![Screenshot of AI Mentor Studio LifeTime plugin showing the Monitor option](images/sync-plugin-monitor-lt.png "AI Mentor Studio LifeTime Monitor")
 
 1. Select **Request Synchronization**.
 
-    ![Request synchronization](images/sync-plugin-request-lt.png)
+    ![Screenshot of AI Mentor Studio LifeTime plugin with the Request Synchronization option highlighted](images/sync-plugin-request-lt.png "Request Synchronization Option")
 
 After these steps, the synchronization request enters the **Outbound Queue** as **SyncRequest**.
 

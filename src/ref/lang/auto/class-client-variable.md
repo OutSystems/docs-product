@@ -6,8 +6,8 @@ guid: 06f35415-71b9-4dae-9f3a-eba708d514bf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1379:1794
+summary: Client Variables in Mobile and Reactive Web apps store client-side data in key-value pairs, excluding Binary data, and are shared across apps in the same environment with the same User Provider
 ---
-
 # Client Variable
 
 
@@ -36,13 +36,13 @@ This example shows how to use a Client Variable to keep the value of a Search wi
 
 1. Enter a name for the variable, for example `SearchKeyword`.
 
-    ![New Client Variable created with the name SearchKeyword](<images/client-variable-new-ss.png>)
+    ![Screenshot showing the process of adding a new Client Variable in the Data tab](images/client-variable-new-ss.png "Adding a New Client Variable")
 
 1. Select the Input widget.
 
 1. On the **Properties** tab, in the **Variable** field, enter `Client.SearchKeyword`.
 
-    ![Binding the Client Variable to the Input](<images/client-variable-input-ss.png>)
+    ![Screenshot demonstrating how to set a Client Variable for an Input widget in the Properties tab](images/client-variable-input-ss.png "Setting Client Variable for Input Widget")
 
 1. Double-click the aggregate on the Elements tree.
 
@@ -56,7 +56,7 @@ This example shows how to use a Client Variable to keep the value of a Search wi
 
 1. To save the filter, click **Close**. 
 
-    ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/client-var-filtered-aggregate-ss.png>) 
+    ![Screenshot of a filtered aggregate with a condition using the Client Variable in the Filter tab](images/client-var-filtered-aggregate-ss.png "Client Variable in Filtered Aggregate") 
 
 After you follow these steps and publish your module, you can test the functionality of the filter in your browser. The text inserted in the Input of the Search widget is stored in the defined Client Variable and is then used to filter the aggregate. When you change to another screen or close your browser, the value is kept and the filter still applies according to that value. 
 

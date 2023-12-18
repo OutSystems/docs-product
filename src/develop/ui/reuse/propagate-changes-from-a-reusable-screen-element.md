@@ -33,11 +33,11 @@ Let's first create a Block with "Small", "Medium", and "Large" buttons that, whe
 1. Right-click the Sizes Block and select **Add Event**. Name it SelectSize.
 1. Right-click the SelectSize Event and select **Add Input Parameter**. Name it SizeName.
 
-    ![Event with a parameter on a Block](images/block-event-properties.png)
+    ![Screenshot of an event with a parameter added to a Block in a development environment](images/block-event-properties.png "Event with a parameter on a Block")
 
 1. Double-click the Block and drag a Button Widget to it. In the Button properties, locate **Events** and under **On Click** select the **SelectSize** Event. In the **SizeName** Input Parameter enter "Small". Finally, edit the Text of the Button so it also says "small".
 
-    ![Block parameters properties](images/block-event-button-props.png?width=500)
+    ![Interface showing the properties of a Block with buttons for selecting sizes and configuring events](images/block-event-button-props.png "Block parameters properties")
 
 1. Using the same steps, add two more buttons, for "Medium" and "Large".
 
@@ -46,12 +46,12 @@ Let's first create a Block with "Small", "Medium", and "Large" buttons that, whe
 1. Drag Block Sizes to a Screen. The Block has an Event that needs to be handled, so Service Studio warns about it.
 1. Select the Block in the Screen and in the Handler property select **New Client Action**. You can now edit this new Action BlockSizesSelectSize.
 
-    ![Action triggered in the parent Screen](images/block-event-in-screen.png?width=500)
+    ![Development environment highlighting the action triggered in the parent screen when an event occurs in a Block](images/block-event-in-screen.png "Action triggered in the parent Screen")
 
 1. Drag **Message** Tool to the flow and enter in the **Message** property: `"You selected a " + SizeName + " item."`. SizeName is the parameter from the Block.
 
-    ![Message passed by the Block](images/block-event-flow.png)
+    ![Flow diagram showing how a message is constructed and passed by the Block when an event is triggered](images/block-event-flow.png "Message passed by the Block")
 
 1. Publish your sample app. Click the button with the label "Large" and you should see the message "You selected a large item.".
     
-    ![Message in the browser](images/block-event-preview.png?width=500)
+    ![Browser preview displaying a message indicating the selection of a large item after clicking the 'Large' button](images/block-event-preview.png "Message in the browser")

@@ -24,7 +24,7 @@ You can use the Load on Visible UI Pattern to enhance the speed of your applicat
 
     The Load on Visible widget is displayed.
 
-     ![](<images/loadonvisible-3-ss.png>)
+     ![Screenshot showing the Load on Visible widget in the Service Studio toolbox](images/loadonvisible-3-ss.png "Load on Visible Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,13 +38,13 @@ You can use the Load on Visible UI Pattern to enhance the speed of your applicat
 
 1. From the Toolbox, drag the Load on Visible widget into the Main Content area of your application's screen.
 
-    ![](<images/loadonvisible-4-ss.png>)
+    ![Image depicting the process of dragging the Load on Visible widget into the Main Content area](images/loadonvisible-4-ss.png "Dragging Load on Visible Widget")
 
 1. Add the required content to the placeholder inside the Load on Visible widget. 
 
     In this example, we add images by dragging the Image widget into the Load on Visible widget and selecting an image from the sample OutSystems UI images.
 
-    ![](<images/loadonvisible-5-ss.png>)
+    ![Example of adding images to the Load on Visible widget placeholder in Service Studio](images/loadonvisible-5-ss.png "Adding Content to Load on Visible Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

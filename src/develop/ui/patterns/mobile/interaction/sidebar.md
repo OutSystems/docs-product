@@ -24,7 +24,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Sidebar UI Pattern to display additional information in the margin of the main content. The additional information supports the user's understanding of the main content.
 
-![](<images/sidebar-example.png>)
+![Example of a Sidebar UI Pattern implemented in an application interface](images/sidebar-example.png "Sidebar UI Pattern Example")
 
 <div class="info" markdown="1">
 
@@ -40,7 +40,7 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     The Sidebar widget is displayed.
 
-    ![Search for the Sidebar widget](<images/sidebar-widget-ss.png>)
+    ![Screenshot showing how to search for the Sidebar widget in OutSystems Service Studio](images/sidebar-widget-ss.png "Searching for Sidebar Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -54,7 +54,7 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
 1. From the Toolbox, drag the Sidebar widget into the Main Content area of your application's screen.
 
-    ![Search for the Sidebar widget](<images/sidebar-drag-ss.png>)
+    ![Screenshot illustrating the process of dragging the Sidebar widget into the main content area of an application screen in Service Studio](images/sidebar-drag-ss.png "Dragging Sidebar Widget into Main Content Area")
 
     By default, the Sidebar widget contains Header and Content placeholders.
 
@@ -62,33 +62,33 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     In this example, we enter it `MySidebar`.
 
-    ![Enter a name for the Sidebar](<images/sidebar-name-ss.png>)
+    ![Screenshot depicting the naming of the Sidebar widget as 'MySidebar' in the properties tab of Service Studio](images/sidebar-name-ss.png "Naming the Sidebar Widget")
 
 1. Select and right-click your screen name, and select **Add Local Variable**.
 
-    ![Add a local variable](<images/sidebar-add-var-ss.png>)
+    ![Screenshot showing the addition of a local variable for controlling the Sidebar state in Service Studio](images/sidebar-add-var-ss.png "Adding a Local Variable for Sidebar")
 
 1. Enter a name for the variable.
 
     In this example, name the variable ``IsSidebarOpen``, set the **Data Type** as Boolean, and the **Default Value** to **False**.
 
-    ![Enter a name for the Sidebar](<images/sidebar-var-name-ss.png>)
+    ![Screenshot displaying the naming of the Sidebar variable as 'IsSidebarOpen' with a Boolean data type in Service Studio](images/sidebar-var-name-ss.png "Naming the Sidebar Variable")
 
 1. Select the Sidebar widget, and on the **Properties** tab, from the **StartsOpen** dropdown, select the newly created variable.
 
-    ![Set the StartsOpen property](<images/sidebar-isopen-ss.png>)
+    ![Screenshot showing the configuration of the StartsOpen property of the Sidebar widget to the 'IsSidebarOpen' variable in Service Studio](images/sidebar-isopen-ss.png "Setting the StartsOpen Property of Sidebar")
 
 1. Add your content to the **Header** and **Content** placeholders, for example, forms, images and text. 
     
     In this example we add some text.
    
-    ![Enter a name for the Sidebar](<images/sidebar-content-ss.png>)
+    ![Screenshot demonstrating how to add content to the Header and Content placeholders of the Sidebar widget in Service Studio](images/sidebar-content-ss.png "Adding Content to Sidebar Placeholders")
 
 1. From the Toolbox, drag the **Button** widget just below the **Sidebar** widget and on the **Properties** tab, in the **Text** field, enter the text you want to appear on the button.
 
     In this example, we enter `Open Sidebar`.
 
-    ![Add a button](<images/sidebar-button-ss.png>)
+    ![Screenshot of adding a button labeled 'Open Sidebar' below the Sidebar widget in Service Studio](images/sidebar-button-ss.png "Adding a Button to Toggle Sidebar")
 
 1. To create a screen action to toggle the Sidebar:
 
@@ -96,21 +96,21 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     b. Drag an **If** statement to the screen action, and on the **Properties** tab, set the **Condition** to the **IsSidebarOpen** variable.
 
-    ![Add If statement](<images/sidebar-if-ss.png>)
+    ![Screenshot illustrating the addition of an If statement to a screen action for toggling the Sidebar in Service Studio](images/sidebar-if-ss.png "Adding If Statement for Sidebar Toggle")
 
     c. On the **True** branch, add the **SidebarClose** client action and set the **WidgetId** parameter to the Sidebar Id.
 
-    ![Add SidebarClose client action](<images/sidebar-close-ss.png>)
+    ![Screenshot showing the SidebarClose client action being added to the True branch of an If statement in Service Studio](images/sidebar-close-ss.png "Adding SidebarClose Client Action")
 
     d. On the **False** branch, add the **SidebarOpen** client action and set the **WidgetId** parameter to the Sidebar Id.
 
     e. Drag an **Assign** to the screen action and set **IsSidebarOpen** variable to ``not IsSidebarOpen``.
     
-    ![Add an Assign](<images/sidebar-assign-ss.png>)
+    ![Screenshot depicting an Assign action to toggle the 'IsSidebarOpen' variable in Service Studio](images/sidebar-assign-ss.png "Assigning the Sidebar Open State")
 
 1. You can customize the Sidebar by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties.
 
-    ![Set relevant properties](<images/sidebar-properties-ss.png>)
+    ![Screenshot displaying the setting of optional properties for the Sidebar pattern in Service Studio](images/sidebar-properties-ss.png "Setting Optional Properties of Sidebar")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

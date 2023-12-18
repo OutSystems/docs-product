@@ -40,7 +40,7 @@ You need to set a valid value for the [Variable](../../../ref/data/handling-data
 
 For example, for an [Input](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-input.md), set a valid value for the Variable property.
 
-![Location of Variable property of Input](images/invalid-variable-error.png?width=300)
+![Screenshot showing an Invalid Variable Error in the OutSystems development environment](images/invalid-variable-error.png "Invalid Variable Error in OutSystems")
 
 For a [Radio Group](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-radiogroup.md), [Text Area](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-textarea.md), [Switch](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md), [Checkbox](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-checkbox.md), [Dropdown](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-dropdown.md), or [Button Group](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroup.md), set a valid value for the Variable property.
 

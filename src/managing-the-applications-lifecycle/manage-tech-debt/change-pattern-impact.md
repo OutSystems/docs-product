@@ -22,7 +22,7 @@ The predefined weight for each code pattern may not always fit your organization
 
 The weight of a code pattern is defined by the **Impact** level you choose in the **Maintenance** area of AI Mentor Studio. The impact levels go from None to Highest. A code pattern whose impact is defined as None will not be considered for the overall technical debt calculation, but the findings will still be counted. The **Status** of a code pattern tells you if its weight has been customized or not. If the status is set as Customized, the pattern's predefined impact level has been changed; If the status is set as Default, the pattern has the impact level predefined by AI Mentor Studio.
 
-![Code patterns tab in the Maintenance area of AI Mentor Studio](images/maintenance-patterns-ams.png)
+![Screenshot of the Maintenance Patterns section in AI Mentor Studio showing various code patterns and their impact levels.](images/maintenance-patterns-ams.png "Maintenance Patterns in AI Mentor Studio")
 
 ## Change the impact level of a code pattern
 
@@ -34,7 +34,7 @@ To change the impact level of a code pattern on your total technical debt, follo
 
 1. In the **Impact** column, use the dropdown to select the impact level for the code pattern.
 
-    ![Select the impact level from the Impact dropdown](images/impact-levels-ams.png)
+    ![Dropdown menu for selecting the impact level of a code pattern in AI Mentor Studio.](images/impact-levels-ams.png "Selecting Impact Levels in AI Mentor Studio")
 
     <div class="info" markdown="1">
 
@@ -44,7 +44,7 @@ To change the impact level of a code pattern on your total technical debt, follo
 
 1. Optionally, enter a reason for the impact change. Click **Change to &#60;new impact level&#62;** to confirm.
 
-    ![Confirmation window for the impact level change](images/change-impact-ams.png)
+    ![Interface for changing the impact level of a code pattern with an option to enter a reason for the change in AI Mentor Studio.](images/change-impact-ams.png "Changing Impact Level of a Code Pattern")
 
     The chosen impact levels reflect on the technical debt calculation only on the next synchronization. For more information, see [how to request a synchronization](how-force-sync.md).
 

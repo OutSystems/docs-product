@@ -20,7 +20,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Table Records widget to display the records of an entity or a structure in a tabular layout. You can define the table records as sortable making it easier for the user to read or find information faster. Record sorting can be fixed or dynamic, meaning that it can change during runtime. You can change the emphasis of a table row by changing its height and increase users' ability to read and interpret data in a table record by using zebra stripping. You can also use pagination to divide content and present it in a limited and digestible manner.
 
-![Overview of Table Records widget in use](<images/tablerecords-1-ss.png>)
+![Screenshot of the Table Records widget in a Traditional Web App](images/tablerecords-1-ss.png "Table Records Widget Overview")
 
 
 ## How to use the Table Records widget
@@ -31,37 +31,37 @@ In this example, user data is fetched from the User entity and displayed on scre
 
     The Table Records widget is displayed.
 
-    ![Table Records widget](<images/tablerecords-2-ss.png>)
+    ![Table Records widget displayed in the Service Studio Toolbox](images/tablerecords-2-ss.png "Table Records Widget in Toolbox")
 
 1. From the Toolbox, drag the Table Records widget into the Main Content area of your application's screen.
 
-    ![Drag Table Records widget onto screen](<images/tablerecords-3-ss.png>)
+    ![Dragging the Table Records widget into the Main Content area in Service Studio](images/tablerecords-3-ss.png "Dragging Table Records Widget")
 
 1. Add the relevant content to the Table Records widget. 
 
     In this example, from the **Data** tab, we drag the **User** entity into the Table Records widget. 
 
-    ![Drag User database into widget](<images/tablerecords-4-ss.png>)
+    ![Adding the User entity to the Table Records widget in Service Studio](images/tablerecords-4-ss.png "Adding User Entity to Table Records")
 
 1. Return to your screen by selecting the **Interface** tab. Right-click the screen name and select **Add Preparation**.
 
-    ![Add preparation](<images/tablerecords-5-ss.png>)
+    ![Adding a Preparation to the screen in Service Studio](images/tablerecords-5-ss.png "Adding Preparation to Screen")
 
 1. Add an Aggregate to the Preparation.
 
-    ![Add an aggregate](<images/tablerecords-7-ss.png>)
+    ![Adding an Aggregate to the Preparation in Service Studio](images/tablerecords-7-ss.png "Adding an Aggregate to Preparation")
 
 1. Double-click the Aggregate, click the screen, and from the **Select Source** popup, select the database entity you want to retrieve data from. Click **OK**. In this example, we select the User entity.
 
-    ![Select source entity](<images/tablerecords-6-ss.png>)
+    ![Selecting the User entity as the data source for an Aggregate in Service Studio](images/tablerecords-6-ss.png "Selecting Data Source for Aggregate")
 
     The **GetUsers** aggregate is created.
 
-    ![GetUsers aggregate is created](<images/tablerecords-8-ss.png>)
+    ![Display of the created GetUsers aggregate in Service Studio](images/tablerecords-8-ss.png "GetUsers Aggregate Created")
 
 1. Return to your main screen, select the Table Records widget, and on the **Properties** tab, select the Source Record List (in this example, the GetUsers aggregate we just created).
 
-    ![Select Source Record List](<images/tablerecords-9-ss.png>)
+    ![Setting the Source Record List for the Table Records widget in Service Studio](images/tablerecords-9-ss.png "Setting Source Record List")
 
 After following these steps and publishing the module, you can test the widget in your app.
 
@@ -70,7 +70,7 @@ After following these steps and publishing the module, you can test the widget i
 1. Select and right-click the Table Records widget, and select **Table** > **Insert Column to the Left** or **Insert column to the Right**.
 
 
-    ![Add new column](<images/tablerecords-10-ss.png>)
+    ![Adding a new column to the Table Records widget in Service Studio](images/tablerecords-10-ss.png "Adding New Column to Table Records")
 
 For more information about the Table Records widget properties, see [Table Records Widget](<../../../ref/lang/auto/class-table-records-widget.md>).
 

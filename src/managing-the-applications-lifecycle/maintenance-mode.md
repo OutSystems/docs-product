@@ -18,7 +18,7 @@ Maintenance mode is available from **LifeTime** version 11.9.0 onwards.
 
 </div>
 
-![environment in maintenance mode](images/infrastructure-maint-mode-lt.png)
+![Screenshot showing an environment in maintenance mode within the LifeTime console](images/infrastructure-maint-mode-lt.png "LifeTime Maintenance Mode")
 
 When an environment is in maintenance mode, LifeTime doesn't synchronize with that environment, and some operations are disabled.
 
@@ -70,13 +70,13 @@ To enable maintenance mode in an environment:
 
 1. In the **Infrastructure** tab, click the **Edit Environment** link for the environment that needs maintenance. For self-managed environments in OutSystems Cloud, go to the **Environments** tab and select the environment.
 
-![edit environment](images/infrastructure-edit-env-lt.png)
+![Screenshot of the Infrastructure tab in LifeTime with the Edit Environment link highlighted](images/infrastructure-edit-env-lt.png "Edit Environment in LifeTime")
 
 1. Click the **Enable maintenance mode** link.
 
 1. Type the reason for enabling maintenance mode and click **Enable**.
 
-![enable maintenance mode](images/infrastructure-enable-maint-mode-lt.png)
+![Dialog box for enabling maintenance mode with a field to enter the reason for the maintenance](images/infrastructure-enable-maint-mode-lt.png "Enable Maintenance Mode")
 
 Maintenance mode is now enabled, and LifeTime doesn't communicate with the environment. LifeTime aborts any deployments or synchronizations in progress, and it records the operation and corresponding reason in the [audit logs](monitor-and-troubleshoot/monitor-usage-with-audit-logs.md).
 
@@ -92,6 +92,6 @@ After you finish maintenance operations in your **self-managed environment**, di
 
 1. Type the reason to disable maintenance mode and click **Disable**.
 
-![disable maintenance mode](images/infrastructure-disable-maint-mode-lt.png)
+![Dialog box for disabling maintenance mode with a field to enter the reason for resuming normal operations](images/infrastructure-disable-maint-mode-lt.png "Disable Maintenance Mode")
 
 LifeTime resumes communication with the environment, and the environment starts synchronizing. LifeTime also records the operation and corresponding reason in the [audit logs](monitor-and-troubleshoot/monitor-usage-with-audit-logs.md).

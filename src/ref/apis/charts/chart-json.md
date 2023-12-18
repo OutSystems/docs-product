@@ -55,7 +55,7 @@ Where `<line-color>` is the color of the line, `<top-color>` is the color at the
             ]
         }}}"
 
-![](images/adv-area-01.png?width=300)
+![Example of a customized Area Chart with a vertical gradient fill from red at the top to transparent at the bottom](images/adv-area-01.png "Customized Area Chart with Gradient Fill")
 
 ### Combine two different chart types
 
@@ -103,7 +103,7 @@ To combine two different data series types in one chart follow these steps:
         }
     ]"
 
-![](images/adv-comb-01.png?width=300)
+![Example of a combined chart with Column and Spline types showing two different data series](images/adv-comb-01.png "Combined Column and Spline Chart")
 
 
 ## Adding JSON from Highcharts demos to OutSystems Charts

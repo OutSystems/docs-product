@@ -19,7 +19,7 @@ OutSystems 11 enables you to store the log data in a separate database, reducing
 
 Each OutSystems 11 application writes its own log entries using an internal logging API, making sure that user requests aren't blocked while these logs are being written. This logging API collects log information produced by the application and sends it to the log database.
 
-![Logging architecture overview](images/logging-overview-diag.png?width=700)
+![Diagram illustrating the logging architecture in OutSystems, showing the flow of logs from applications to the database](images/logging-overview-diag.png "Logging Overview Diagram")
 
 It's important to note that the Deployment Controller Service writes directly to the database tables, but Service Center consults only the database views.
 
@@ -29,7 +29,7 @@ This section of the documentation is an overview of the log architecture and pro
 
 You can consult the logs in Service Studio. Reference the **PlatformLogs Extension** in the **Manage Dependencies** window, then load the data from the Entities in **Data** > **Entities** > **PlatformLogs**.
 
-![PlatformLogs Extension in Manage Dependencies window](images/log-entites-ss.png?width=550)
+![Screenshot showing how to access log entities in OutSystems Service Studio](images/log-entites-ss.png "Service Studio Log Entities")
 
 
 </div>

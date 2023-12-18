@@ -18,18 +18,18 @@ When there are changes to your app, you can publish it to your development envir
 
 In **Service Studio**, click the **1 Publish** button to compile the code and publish the app.  
 
-![1-Click publish in Service Studio](images/1-publish-ss.png)
+![Screenshot of the Service Studio interface with the '1 Publish' button highlighted](images/1-publish-ss.png "Publishing in Service Studio")
 
 In **Service Center**, click the **Publish** button. 
 
-![Publish in Service Center](images/publish-sc.png)
+![Screenshot of the Service Center interface with the 'Publish' button highlighted](images/publish-sc.png "Publishing in Service Center")
 
 ## Deploy
 
 Deploying an app takes a version of the app from one environment and makes it available to a defined target environment, such as Quality or Production.  
 Deploying an app and its modules from one environment to another implies that those modules  are recompiled in the target environment. The compilation ensures that the modules are updated according to the producers available in the target environment.  
 
-![Deploy apps in LifeTime](images/deploy-lt.png)
+![Flowchart illustrating the deployment process of an app using LifeTime](images/deploy-lt.png "Deployment Process")
 
 You can deploy your apps [using LifeTime](../../managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md) or [using the LifeTime API](../apis/lifetime-deployment/examples/api-deploy-app.md).  
 
@@ -37,7 +37,7 @@ You can deploy your apps [using LifeTime](../../managing-the-applications-lifecy
 
 Sometimes, when deploying an app to a target environment, LifeTime detects the apps consuming functionality from the app being deployed. These consumer apps would have outdated dependencies with the current deployment. In the deployment plan, LifeTime suggests republishing these consumer apps in the target environment to ensure all its dependencies are up to date. Republishing these apps means that their code is recompiled and distributed to the application server. The version of those apps does not change as there were no changes made to those apps. You can choose not to republish these consumer apps, but it may lead to runtime errors.  
 
-![Republishing dependent apps in the deployment plan](images/deploy-dependencies-lt.png)
+![Screenshot showing the LifeTime deployment plan suggesting republishing of consumer apps with outdated dependencies](images/deploy-dependencies-lt.png "Deploying with Dependencies")
 
 Learn more about [deploying an app with dependencies](../../managing-the-applications-lifecycle/deploy-applications/deploy-an-application-with-dependencies.md).
 
@@ -47,7 +47,7 @@ When redeploying an app, the compiled code is redistributed to the application s
 
 You can only redeploy an app in **Service Center**. Go to **Factory** > **Modules**, then select the module you want to redeploy and select **Redeploy Published Version**.
 
-![Redeploy published version in Service Center](images/redeploy-sc.png)
+![Screenshot of the Service Center interface with the 'Redeploy Published Version' option for a module](images/redeploy-sc.png "Redeploying in Service Center")
 
 
 

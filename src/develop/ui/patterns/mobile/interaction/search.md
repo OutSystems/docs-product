@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Search UI Pattern to provide users with a search field. Use the Search UI Pattern to allow users find pieces of content by entering queries. Unlike navigation, knowledge of the content's location isn't required and searching is often the primary means of finding content.
 
-![](<images/search-5-ss.png>)
+![Example of Search UI Pattern in a mobile or reactive web app](images/search-5-ss.png "Search UI Pattern Example")
 
 **How to use the Search UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Search UI Pattern to provide users with a search field. Use the 
 
     The Search widget is displayed.
 
-    ![](<images/search-1-ss.png>)
+    ![Search widget displayed in the Service Studio toolbox](images/search-1-ss.png "Search Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,19 +40,19 @@ You can use the Search UI Pattern to provide users with a search field. Use the 
 
 1. From the Toolbox, drag the Search widget into the Main Content area of your application's screen.
 
-    ![](<images/search-2-ss.png>)
+    ![Dragging the Search widget into the Main Content area of an application screen](images/search-2-ss.png "Dragging Search Widget")
 
     By default, the Search widget contains an Input placeholder and widget.
 
 1. Select the Input widget, and on the **Properties** tab, create a local variable by selecting the **Variable** dropdown and selecting **New Local Variable**.
 
-    ![](<images/search-3-ss.png>)
+    ![Properties tab for the Search Input widget in Service Studio](images/search-3-ss.png "Search Input Properties")
 
 1. Enter a name for the variable.
 
     In this example, we enter `SearchText`.
 
-    ![](images/search-4-ss.png)
+    ![Entering a name for the local variable associated with the Search Input widget](images/search-4-ss.png "Naming Search Variable")
 
     This variable holds the value entered by the user. This variable can be reused throughout your app.
 

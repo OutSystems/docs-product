@@ -45,7 +45,7 @@ To create a PATCH method, do the following:
 
 1. Design the method as an action that receives a resource (in our case "ContactDTO") and edits a record that is stored in the database. In our example, the received structure is called "ContactDTO", which is similar to the Entity "Contact".
 
-    ![](images/patch-add-ss.png?width=750)
+    ![Screenshot of the OutSystems interface showing the process of adding a PATCH method to a REST API](images/patch-add-ss.png "Adding a PATCH Method in OutSystems")
 
 ## Constraint with the PATCH method
 Due to the simplification and abstraction provided by OutSystems to accelerate development, there's a constraint in the PATCH semantics that may result in patterns that are not supported by OutSystems language, like null values or dynamic structures. The following sections help you overcome this constraint if you need to do it.
@@ -67,11 +67,11 @@ To implement a correct PATCH, define default values in your structure attribute 
 
     1. For Integers and Long Interger data types, use `-999999999`:
 
-        ![](images/add-filename-1-ss.png?width=750)
+        ![Screenshot showing the setting of default values for integer and long integer data types in OutSystems](images/add-filename-1-ss.png "Setting Default Values for Integer Types")
     
     1. For Text and Email data types use `"undefined"`:
 
-        ![](images/add-filename-2-ss.png?width=750)
+        ![Screenshot showing the setting of default values for text and email data types in OutSystems](images/add-filename-2-ss.png "Setting Default Values for Text and Email Types")
     
 	
 #### Boolean data type
@@ -80,7 +80,7 @@ Booleans are a particular case, since there are only two possible values, making
 
 1. Map Booleans directly to Text. Set the same Default Value as used in the Text data type and set the attribute to "isActive":
 
-    ![](images/add-filename-4-ss.png)
+    ![Screenshot illustrating how to map boolean values to text fields with default values in OutSystems](images/add-filename-4-ss.png "Mapping Booleans to Text in OutSystems")
 
 1. When checking the condition of a boolean, you need to check if the text values are “false” or “true”.
 
@@ -102,7 +102,7 @@ After defining your default values correctly, and the input parameter of the PAT
 
 Check the following example to guide you in this operation:
 
-![](images/ss-patch-example-flow.png)
+![Flowchart example demonstrating the implementation of a PATCH method in OutSystems](images/ss-patch-example-flow.png "PATCH Method Example Flow")
 
 ### Converting a Text to a Boolean
 
@@ -110,4 +110,4 @@ When you do a PATCH, you may need to convert a Text to Boolean. Since there is n
 
 To do it, create a server action that receives a text input and returns a respective boolean value:
 
-![](images/ss-patch-boolean-text.png)
+![Screenshot showing a server action for converting text to boolean in the context of a PATCH operation in OutSystems](images/ss-patch-boolean-text.png "Converting Text to Boolean for PATCH")

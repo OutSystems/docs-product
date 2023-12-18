@@ -45,7 +45,7 @@ Force HTTPS for screens in Web Applications
 Force HTTPS for exposed integrations in Web Applications
 :   Use it to ensure all exposed SOAP and REST integrations in Web Applications (or in the selected application) are only served via HTTPS requests. Enabling this option overrides the security definitions of all exposed integrations for the application modules.
 
-![](images/enforce-https-security.png)
+![Screenshot of HTTPS security configuration options in OutSystems management console](images/enforce-https-security.png "Enforce HTTPS Security Configuration Options")
 
 **Notes:**
 

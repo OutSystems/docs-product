@@ -33,7 +33,7 @@ To add support for other character encodings do the following:
 
 In example below we defined an action in Integration Studio called "SetEncoding", with a "Encoding" input parameter of type Text.
 
-![](<images/is-action-set-encoding.png>)
+![Screenshot of Integration Studio showing the 'SetEncoding' action with an 'Encoding' input parameter of type Text](images/is-action-set-encoding.png "Integration Studio Action Configuration")
 
 2\. Click 'Edit Source Code .NET'. In Visual Studio .NET, set the project target framework and add a reference to `System.ServiceModel` and `System.Runtime.Serialization` assemblies.  
 

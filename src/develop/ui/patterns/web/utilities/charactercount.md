@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Character Count UI Pattern to display the number of characters a user has entered or has remaining for an onscreen text area. 
 
-![](<images/charactercount-5-ss.png>)
+![Screenshot showing an example of the Character Count UI Pattern in a Traditional Web App](images/charactercount-5-ss.png "Character Count Example")
 
 **How to use the Character Count UI Pattern**
 
@@ -28,7 +28,7 @@ You can use the Character Count UI Pattern to display the number of characters a
 
     The Character Count widget is displayed.
 
-    ![](<images/charactercount-7-ss.png>)
+    ![Image of the Character Count widget found in the Service Studio Toolbox](images/charactercount-7-ss.png "Character Count Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,15 +42,15 @@ You can use the Character Count UI Pattern to display the number of characters a
 
 1. From the Toolbox, drag the Character Count widget into the Main Content area of your application's screen.
 
-    ![](<images/charactercount-8-ss.png>)
+    ![Dragging the Character Count widget into the Main Content area of an application screen](images/charactercount-8-ss.png "Dragging Character Count Widget")
 
 1. On the **Properties** tab, from the **InputWidgetId** drop-down, select the Input widget Id you have already created (MyInput).
 
-    ![](<images/charactercount-9-ss.png>)
+    ![Properties tab showing the selection of the Input widget Id for the Character Count widget](images/charactercount-9-ss.png "Setting Input Widget ID")
 
 1. In the **Limit** property, enter the maximum number of characters allowed, for example, 180, and set the **IsDescending** property to True.
 
-    ![](<images/charactercount-10-ss.png>)
+    ![Setting the Limit and IsDescending properties for the Character Count widget](images/charactercount-10-ss.png "Configuring Character Count Properties")
 
     By setting the **Limit** property to 180, the user can enter up to 180 characters, and by setting the **IsDescending** property to True, the character count will go from 180 to 0.
 

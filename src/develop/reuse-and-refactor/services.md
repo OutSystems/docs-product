@@ -49,7 +49,7 @@ The way you implement a service in OutSystems will be different if your service 
 
 In OutSystems, exposing a **Server Action** generates a [strong dependency](strong-weak-dependencies.md#strong-dependencies) from the consumer to the producer module, in a **tightly-coupled** way.
 
-![](images/services-1-diag.png)
+![Diagram illustrating tightly-coupled server actions in OutSystems](images/services-1-diag.png "Tightly-Coupled Server Actions Diagram")
 
 The Server Action logic is executed just as if it is defined in the consumer module, running in a single process with the same request and transaction.
 
@@ -59,11 +59,11 @@ Each time the implementation of an exposed Server Action changes, the consumer m
 
 In OutSystems, a **Service Action** is a REST based remote call to another process, but its usage is very similar to public Server Actions. 
 
-![](images/services-2.png)
+![Conceptual illustration of service actions in OutSystems](images/services-2.png "Service Actions Conceptual Illustration")
 
 Exposing a Service Action generates a [weak dependency](strong-weak-dependencies.md#weak-dependencies) from the consumer to the producer module, in a **loosely-coupled** way.
 
-![](images/services-3-diag.png)
+![Diagram showing loosely-coupled service actions in OutSystems](images/services-3-diag.png "Loosely-Coupled Service Actions Diagram")
 
 Each time the implementation of an exposed Service Action changes, that change **takes immediate** effect in the consumer modules.
 
@@ -129,7 +129,7 @@ OutSystems provides you with a set of features that help you [converting existin
 
 You will probably start having a small service that is used by a single application. Take the example of a Customer service that encapsulates functionality to be reused by a Order Management application from the Sales department:
 
-![](images/services-4-diag.png)
+![Diagram of server actions used in small applications within the same release cycle](images/services-4-diag.png "Server Actions in Small Applications Diagram")
 
 Using **Server Actions** to expose Customer functionality simplifies the logic of the Order Management application, since the logic runs in a single process with the same request and transaction. However, changes in the Customer service may require the deploy of the Order Management application too.
 
@@ -139,7 +139,7 @@ As long as these modules have the **same release cycle**, keeping these modules 
 
 Then your system evolves and you have more applications using your service, for example a Shipping application, also from the Sales department:
 
-![](images/services-5-diag.png)
+![Diagram depicting server actions in applications with similar release cycles](images/services-5-diag.png "Server Actions in Applications with Similar Release Cycles")
 
 Keeping the modules tightly-coupled, using **Server Actions** to expose Customer functionality, will now require that Order Management and Shipping applications are both deployed together with Customer service whenever this module changes, increasing the deployment effort. On the other hand, the logic of Order Management and Shipping applications is still simple to develop and maintain. 
 
@@ -149,11 +149,11 @@ Since both applications belong to Sales department and have **similar release cy
 
 When you start having services that are reused by several applications, supporting different lines of business with **independent release cycles**, keeping all the modules tightly-coupled starts to be a burden in the deployment phase. Changes in the Customer service will now have negative impact in the release cycles of each consumer, because they may not be ready to be deployed yet.
 
-![](images/services-6-diag.png)
+![Impact diagram of tightly-coupled modules in large applications with different release cycles](images/services-6-diag.png "Tightly-Coupled Modules Impact Diagram")
 
 At this point you should consider exposing the functionality of your service in a loosely-coupled way, using Service Actions:
 
-![](images/services-7-diag.png)
+![Diagram illustrating loosely-coupled service actions in large applications with independent release cycles](images/services-7-diag.png "Loosely-Coupled Service Actions in Large Applications Diagram")
 
 In this case, using Service Actions to expose functionality will increase business value by enabling several consumers to have **independent release cycles**. On the other hand, you will have additional development effort, since the developer must implement additional logic to handle multiple processes and transactions. 
 

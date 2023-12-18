@@ -20,23 +20,23 @@ There are two different ways to add data to the **DataPointList** property: **Fi
 
     This example uses the Line Chart.
 
-    ![Expand the Data Point List property](images/chartline-drag-ss.png)
+    ![Screenshot of dragging a Line Chart component to the screen in the development environment](images/chartline-drag-ss.png "Dragging a Line Chart to the Screen")
 
 1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.  
 
-    ![Expand the Data Point List property](images/chartline-expand-ss.png)
+    ![Screenshot showing the expansion of the DataPointList property in the chart's properties tab](images/chartline-expand-ss.png "Expanding the DataPointList Property")
 
 1. To create a list with one data point, click **+[0]** and set the **Label** and **Value** properties.
     
     These properties define the first data point of the chart. Each data point corresponds to a point on the chart. Optionally, you can also set the **SeriesName**, **Tooltip**, and **Color** for the data points.
 
-    ![Expand the Data Point List property](images/chartline-datapoint-ss.png)
+    ![Screenshot of setting the Label and Value properties for a data point in a Line Chart](images/chartline-datapoint-ss.png "Setting Label and Value for Data Points")
 
 1. To add more data points, repeat steps 2 and 3.
 
 After following these steps, you can publish your module.
 
-![Example chart with fixed data](images/chartline-result-data.png)
+![Line Chart displayed on the screen with fixed data points added](images/chartline-result-data.png "Line Chart with Fixed Data")
 
 ## Populate your chart with variable data {#populate-your-chart-with-variable-data} 
 
@@ -46,29 +46,29 @@ Before you start, make sure you have a List of data points to use in your chart.
 
     This example uses the Column Chart.
 
-    ![Drag Column Chart to the screen](images/chartcolumn-drag-ss.png)
+    ![Screenshot of dragging a Column Chart component to the screen in the development environment](images/chartcolumn-drag-ss.png "Dragging a Column Chart to the Screen")
 
 1. On the **Properties** tab, set the **DataPointList** property to a List containing the data points for the chart.
 
-    ![Set Data Point List property](images/chart-data-datapointlist-ss.png)
+    ![Screenshot showing the DataPointList property being set to a list of data points in a Column Chart](images/chart-data-datapointlist-ss.png "Setting the DataPointList Property")
 
 1. Map the **Value** and the **Label** of the **DataPointList** to the attributes from the List containing the data points for the chart.
 
     Optionally, you can also set **DataSeriesName**, **Tooltip**, and **Color** for the data points.
 
-    ![Map the Data Point List](images/chart-data-mapping-ss.png)
+    ![Screenshot of mapping the Value and Label of the DataPointList to attributes from a list in a Column Chart](images/chart-data-mapping-ss.png "Mapping Data Points to List Attributes")
 
 After following these steps, you can publish your module. 
 
-![Example chart with variable data](images/chart-data-result.png)
+![Column Chart displayed on the screen with variable data points added](images/chart-data-result.png "Column Chart with Variable Data")
 
 ## Create a chart with multiple series
 
 To create a Chart with multiple series, follow one of the previous procedures and set the **SeriesName** property for the data points.
 
-![More data points](images/chart-data-addseries-ss.png)
-![Series name](images/chart-data-multiple-series-ss.png)
+![Screenshot showing the process of adding multiple series to a chart by setting the SeriesName property](images/chart-data-addseries-ss.png "Adding Multiple Series to a Chart")
+![Screenshot of a chart's properties with multiple series added](images/chart-data-multiple-series-ss.png "Chart with Multiple Series")
 
 After following these steps, you can publish your module. 
 
-![Example chart with multiple series](images/chart-example-multiple-series.png)
+![Example chart displayed on the screen with multiple data series represented](images/chart-example-multiple-series.png "Example of a Chart with Multiple Series")

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Section UI Pattern to organize on-screen content into different sections. This pattern can also be used with the Section Index UI Pattern to create anchors for each section.
 
-![](<images/section-5-ss.png>)
+![Preview image showing the Section UI Pattern in a Traditional Web App](images/section-5-ss.png "Section UI Pattern Preview")
 
 **How to use the Section UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Section UI Pattern to organize on-screen content into different 
   
     The Section widget is displayed.
 
-    ![](<images/section-1-ss.png>) 
+    ![Screenshot of the Section widget in the Service Studio toolbox](images/section-1-ss.png "Section Widget in Service Studio") 
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,17 +40,17 @@ You can use the Section UI Pattern to organize on-screen content into different 
 
 1. To From the Toolbox, drag the Section widget into the Main Content area of your application's screen.
 
-    ![](<images/section-2-ss.png?width=800>)
+    ![Process of dragging the Section widget into the Main Content area of an application's screen](images/section-2-ss.png "Dragging Section Widget into Main Content")
 
     By default, the Section widget contains Title, Actions, and Content placeholders.
 
 1. Add your content to the placeholders. In this example, we add a title to the Title placeholder, text to the Content placeholder, and a button to the Actions placeholder.
 
-    ![](<images/section-3-ss.png?width=800>)
+    ![Example of adding a title, text, and a button to the placeholders of the Section widget](images/section-3-ss.png "Adding Content to Section Widget Placeholders")
 
 1. Add the desired action to the content you have added to the Actions placeholder. In this example, the button we added redirects the user to a new page.
 
-    ![](<images/section-6-ss.png?width=800>)
+    ![Demonstration of adding an action to a button in the Actions placeholder of the Section widget](images/section-6-ss.png "Configuring Action in Section Widget")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

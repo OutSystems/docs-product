@@ -42,7 +42,7 @@ To add an end user as a member to the group:
 
 You can add as many end users as required to the group.
 
-![](images/groups-gif1.gif?width=500)
+![Animated GIF showing the process of adding members to a group in the Users application](images/groups-gif1.gif "Adding Members to a Group")
  
 An end user's groups can also be managed in the user details page, where you can see a list of all the groups the user belongs to and add new groups or remove existing ones.
 
@@ -55,4 +55,4 @@ To remove an user from a group:
 
 When you remove a user from a group, all the roles granted to the user by inheritance from that group will be revoked. You can still manually add a role that was granted to the user by inheritance from a group. This overrides the group inheritance, i.e., if you assign a role to an end user both through a group and individually, the role will not be revoked if the end user is removed from the group. In this scenario, the column `Inherited from` in the Roles section of the user detail page is empty.
 
-![](images/groups-gif2.gif?width=500)
+![Animated GIF demonstrating how to remove users from a group in the Users application](images/groups-gif2.gif "Removing Users from a Group")

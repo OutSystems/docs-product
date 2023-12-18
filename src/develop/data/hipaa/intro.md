@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: The article describes how to use the Cryptography Services app in OutSystems Cloud HIPAA offering to encrypt and decrypt PHI using AWS Key Management Service, with different actions for searchable and unsearchable attributes
 tags: article-page
 locale: en-us
 guid: 259aca31-dc2a-4eb1-8d5c-e322cefe5e66
@@ -7,8 +7,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A521&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
-
-
 # Implement encryption and decryption for HIPAA compliance
 
 When you subscribe to the OutSystems Cloud HIPAA offering your environments will include an app that you can reference to encrypt and decrypt PHI - **Cryptography Services**.
@@ -17,7 +15,7 @@ In its core, AWS Key Management Service provides a secure and resilient service 
 
 The Cryptography Services app interfaces with the Key Management Service (KMS) abstracting from the complexity of having and managing a KMS. 
 
-![Diagram of Cryptography Services and KMS](images/hipaa-crypto-diag.png)
+![Diagram illustrating the Cryptography Services app interfacing with AWS Key Management Service for encrypting and decrypting PHI in OutSystems Cloud HIPAA offering](images/hipaa-crypto-diag.png "Cryptography Services Diagram")
 
 It exposes actions that work with the KMS to encrypt and decrypt PHI. Those are divided into two groups of actions, depending on whether you need to search on the encrypted data: **actions for searchable attributes** and **actions for unsearchable attributes**.
 

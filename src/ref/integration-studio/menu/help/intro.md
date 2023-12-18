@@ -13,7 +13,7 @@ The Help menu on the [menu bar](<../../workspace.md>) contains the following ope
 
 Menu Item | Description
 :--------:|:-----------
-![](images/help.gif) Integration Studio Help | Launches this help file.
-![](images/whats-new.gif) What's New? | Opens a document that contains a general overview of the current version of the platform.
-![](images/submit-feedback.gif) Submit Feedback | [Submits feedback](<submit-feedback.md>) to OutSystems.
-![](images/home.gif) Start Screen | Displays the Start Screen of Integration Studio, where you can manage your extensions, take a tour on Integration Studio and get help.
+![Icon for Integration Studio Help in the Help menu](images/help.gif "Integration Studio Help") Integration Studio Help | Launches this help file.
+![Icon for What's New document in the Help menu](images/whats-new.gif "What's New?") What's New? | Opens a document that contains a general overview of the current version of the platform.
+![Icon for Submit Feedback in the Help menu](images/submit-feedback.gif "Submit Feedback") Submit Feedback | [Submits feedback](<submit-feedback.md>) to OutSystems.
+![Icon for Start Screen in the Help menu](images/home.gif "Start Screen") Start Screen | Displays the Start Screen of Integration Studio, where you can manage your extensions, take a tour on Integration Studio and get help.

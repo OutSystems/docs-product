@@ -17,7 +17,7 @@ Keeping your LifeTime management console upgraded enables you to benefit from th
 
 Up to version **OutSystems 10**, upgrading OutSystems to a new major version means upgrading all the infrastructure - LifeTime management console and the application environments.
 
-![](images/upgrade-lifetime-o10-diag.png?width=800)
+![Diagram illustrating the upgrade process of the LifeTime management console in OutSystems 10 infrastructure](images/upgrade-lifetime-o10-diag.png "OutSystems 10 LifeTime Upgrade Diagram")
 
 From version **OutSystems 11 onwards**, LifeTime is distributed independently from the Platform Server, which enables both components to have different upgrading pace.
 
@@ -25,7 +25,7 @@ From version **OutSystems 11 onwards**, LifeTime is distributed independently fr
 
 Upgrading LifeTime to Release Sep.2018 or later **does not require** the upgrade of your OutSystems application environments. You can benefit from LifeTime latest features and still keep your application environments in a previous supported version while you need.
 
-![](images/upgrade-lifetime-o11-diag.png?width=800)
+![Diagram showing the independent upgrade process of the LifeTime management console from the Platform Server in OutSystems 11](images/upgrade-lifetime-o11-diag.png "OutSystems 11 LifeTime Upgrade Diagram")
 
 ## Before the upgrade
 

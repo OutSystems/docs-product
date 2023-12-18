@@ -19,13 +19,13 @@ Use the App Feedback system app to configure the user feedback feature. You can 
 
 1. In the **Applications** section, select the **App Feedback** option in the drop-down menu next to the environment where you want to enable user feedback. This opens the App Feedback application in the environment.
 
-    ![App screen in LifeTime](images/app-feedback-enable-1.png?width=800)
+    ![Screenshot showing how to access App Feedback through the LifeTime console in the Applications section.](images/app-feedback-enable-1.png "Accessing App Feedback in LifeTime")
 
 1. In the App Feedback, go to the **Configuration** section.
 
 1. Activate the functionality of sending feedback through an app by toggling the switch to on.
 
-    ![App feedback configuration](images/app-feedback-enable-2.png?width=800)
+    ![Image depicting the activation of the feedback feature in the App Feedback configuration section.](images/app-feedback-enable-2.png "Activating Feedback Feature")
 
 1. If you're enabling user feedback for a **mobile app**, you must **regenerate the app**. Only the next generated app includes the feedback feature.
 
@@ -36,7 +36,7 @@ You can deactivate user feedback for an app the same way, this time turning the 
 
 When you enable user feedback for an app, by default all users can submit feedback. If you want to restrict the feedback to a specific group of users, select the name of the group in the drop-down list next to the feedback switch.
 
-![User group selection for app feedback](images/app-feedback-enable-3.png?width=800)
+![Screenshot illustrating the option to restrict feedback submission to a specific user group in the App Feedback settings.](images/app-feedback-enable-3.png "Feedback Submission Restriction")
 
 If the group of users for which you want to enable feedback doesn't exist, do the following:
 

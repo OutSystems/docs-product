@@ -4,8 +4,8 @@ guid: f9c4bf6c-a906-4df6-9272-a29b3d26466e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:440
+summary: The article explains different situations that trigger the 'Invalid Excel Import' error and how to resolve them
 ---
-
 # Invalid Excel Import Error
 
 The `Invalid Excel Import` error is issued in the following situations:
@@ -28,4 +28,4 @@ The `Invalid Excel Import` error is issued in the following situations:
 
     Import an unencrypted version of the Excel file.
 
-    ![](images/invalid-excel-import.png)
+    ![Screenshot illustrating an example of the Invalid Excel Import error with a dialog box indicating the error message](images/invalid-excel-import.png "Invalid Excel Import Error Example")

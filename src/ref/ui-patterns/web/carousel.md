@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/carousel-3-diag.png?width=600>)
+![Diagram showing the layout and classes of a Carousel UI component](images/carousel-3-diag.png "Carousel Layout Diagram")
 
 ## Advanced
 
@@ -28,8 +28,8 @@ Here are some more advanced use-cases of the widget.
 
 To place the arrows outside the carousel, change the input parameters Padding and Margin. To have this behavior both parameters must be of the same value. Padding creates a space around the carousel viewport and the margin pushes the elements apart, so they are hidden inside the carousel.
 
-![](<images/carousel-4-ss.png>)  
-![](<images/carousel-5-ss.png>)
+![Screenshot of a Carousel with arrows placed outside the viewport](images/carousel-4-ss.png "Carousel with External Arrows")  
+![Screenshot of a Carousel with adjusted padding and margin to place arrows outside](images/carousel-5-ss.png "Carousel with Adjusted Padding and Margin")
 
 ### Customizing the dots style
 
@@ -45,7 +45,7 @@ It is possible to change the style of the dots on a Carousel with the custom CSS
 }
 ```
 
-![](<images/carousel-6-ss.png>)
+![Screenshot showing custom style for Carousel dots with rectangular shape](images/carousel-6-ss.png "Custom Dots Style Example 1")
 
 #### Example 2
 
@@ -57,10 +57,10 @@ It is possible to change the style of the dots on a Carousel with the custom CSS
 }
 ```
 
-![](<images/carousel-7-ss.png>)
+![Screenshot displaying Carousel dots customized with a rounded rectangle shape](images/carousel-7-ss.png "Custom Dots Style Example 2")
 
 ## Notes
 
 Line Separator from ListRecords should be None.
 
-![](<images/carousel-8-ss.png>)
+![Screenshot illustrating the line separator setting as None in a Carousel component](images/carousel-8-ss.png "Carousel Line Separator Setting")

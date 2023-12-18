@@ -1,5 +1,5 @@
 ---
-summary:
+summary: The article provides guidelines for configuring load balancing in self-managed OutSystems installations, recommending round-robin, least connections, and ratio methods for Layer 4/7 load balancers and advising against sticky sessions for Layer 7
 en_title: 01 Recommended configurations for Load Balancing
 locale: en-us
 guid: 5a9bef4d-746b-40d7-a553-e677b99a8398
@@ -7,7 +7,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2569%3A879&mode=design&t=kfTANqFRrMacskax-1
 ---
-
 # Recommended configurations for Load Balancing
 
 <div class="info" markdown="1">
@@ -32,13 +31,13 @@ If a layer 7 load balancer is available, it can be used for a more intelligent l
 
 Requests are processed sequentially in a circular manner. [Front-end machines have the same hardware configuration](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures/02_Sizing_OutSystems_Platform), equal number of applications and the same target audience.
 
-![ ](images/recommended-configs-load-balancing_0.png)
+![Diagram illustrating the round-robin load balancing method where requests are distributed sequentially across front-end machines.](images/recommended-configs-load-balancing_0.png "Round-robin Load Balancing Diagram")
 
 ### Least Connections
 
 [Front-end machines have the same hardware configuration](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures/02_Sizing_OutSystems_Platform). The connection requests are sent to the server with least connection requests.
 
-![ ](images/recommended-configs-load-balancing_1.png)
+![Diagram showing the least connections load balancing technique where requests are sent to the server with the fewest connections.](images/recommended-configs-load-balancing_1.png "Least Connections Load Balancing Diagram")
 
 ### Ratio
 
@@ -46,7 +45,7 @@ Requests are processed sequentially in a circular manner. [Front-end machines ha
 
 The ratio load balancer can also be dynamic, where several monitoring checks are actively done to gather server performance and decide on the best node to serve the connection request.
 
-![ ](images/recommended-configs-load-balancing_2.png)
+![Diagram depicting the ratio load balancing strategy where more powerful servers receive a higher number of connection requests.](images/recommended-configs-load-balancing_2.png "Ratio Load Balancing Diagram")
 
 ### Specifics for Layer 7
 
@@ -61,7 +60,7 @@ To detect that a front-end is up and running in your on-premises/private cloud i
 
 With an L7 load balancer you get a more complete form of monitoring, going beyond the simple check whether the server is up or down.
 
-![ ](images/detecting-serverapp-availability_0.png)
+![Diagram demonstrating how to detect OutSystems server and application availability using TCP port monitoring.](images/detecting-serverapp-availability_0.png "Server and App Availability Detection Diagram")
 
 A best practice is to create a specific screen in your application that performs basic business validations. This ensures the system is up and outputs a specific string when everything is OK. In this screen you should test critical integrations (for example, web-services, external databases).
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/separator-2-diag.png>)
+![Diagram showing the layout and classes for the Separator UI Pattern in Traditional Web Apps](images/separator-2-diag.png "Separator Layout Diagram")
 
 ## CSS selectors
 
@@ -45,4 +45,4 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-![](<images/separator-3.png>)
+![Example of a vertical separator in a Traditional Web App interface](images/separator-3.png "Vertical Separator Example")

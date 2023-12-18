@@ -26,7 +26,7 @@ OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introductio
 
 **Progress Bar block structure**
 
-![Progress Bar Structure](images/progressbar-diag.png)
+![Diagram illustrating the structure of the Progress Bar block in OutSystems UI Patterns](images/progressbar-diag.png "Progress Bar Block Structure Diagram")
 
 ### Modifiers
 

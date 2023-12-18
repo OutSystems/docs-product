@@ -28,7 +28,7 @@ SelectedValue: Integer
   
 ## Layout and classes
 
-![](<images/rangeslider-3-diag.png>)
+![Diagram illustrating the layout and components of the Range Slider UI Pattern for Traditional Web Apps](images/rangeslider-3-diag.png "Range Slider Layout Diagram")
 
 ## CSS selectors
 

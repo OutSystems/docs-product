@@ -25,13 +25,13 @@ For example, a new developer just joined the company. To create the new IT user,
 
     **Note**: The password must meet the password complexity rules. It must have at least 12 characters including at least one number, one lowercase letter, and one uppercase letter. The password complexity rule is applicable only when a new password is created or an existing password is updated.
 
-    ![](images/user-create-lt.png)
+    ![Screenshot of the LifeTime console showing the form to create a new IT user with fields for username, email, and default role selection.](images/user-create-lt.png "Creating a New IT User in LifeTime")
 
 1. Click the **Create** button to create the user.
 
 The user is now created. You can grant the user with **additional permissions** by assigning roles to the user [in teams](about-permission-levels.md#role-assigned-to-users-for-a-team) or [for specific applications](about-permission-levels.md#role-assigned-to-users-for-a-specific-application):
 
-![](images/user-grant-additional-permissions.png)
+![Screenshot of the LifeTime console with options to grant additional permissions to a user for teams or specific applications.](images/user-grant-additional-permissions.png "Granting Additional Permissions to a User")
 
 Check the OutSystems [permission model for IT users](about-permission-levels.md) to better understand which should be the user’s default role and how can you grant the user with additional permissions.
 

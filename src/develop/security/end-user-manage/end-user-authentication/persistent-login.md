@@ -25,4 +25,4 @@ For Reactive and Mobile apps you can customize this duration in Service Center b
 
 For example, when you create a mobile application that uses one of the built-in [Application Templates](<../../../../develop/application-templates/intro.md>), the use of persistent login is the default.
 
-![](images/userlogin-remember.png)
+![Screenshot showing the 'Remember Login' option enabled in the user login settings for persistent authentication](images/userlogin-remember.png "Persistent Login Option")

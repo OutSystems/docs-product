@@ -26,7 +26,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     The Range Slider Interval widget is displayed.
 
-    ![](images/rangesliderinterval-2-ss.png)
+    ![Screenshot of the Range Slider Interval widget in the Service Studio toolbox](images/rangesliderinterval-2-ss.png "Range Slider Interval Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,41 +40,41 @@ In this example, we create a Range Slider Interval that allows the user select a
 
 1. From the Toolbox, drag the Range Slider Interval widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **InitialIntervalStart**, and **InitialIntervalEnd** values. In this example, we add static values.
 
-    ![](images/rangesliderinterval-3-ss.png?width=800)
+    ![Image showing where to enter MinValue, MaxValue, InitialIntervalStart, and InitialIntervalEnd for the Range Slider Interval](images/rangesliderinterval-3-ss.png "Setting Properties for Range Slider Interval")
 
 1. To create an **OnChange** event, on the **Properties** tab, from the **Handler** drop-down, select **New Screen Action**.
 
-    ![](images/rangesliderinterval-5-ss.png?width=800)
+    ![Screenshot of the Properties tab in Service Studio for creating an OnChange event for the Range Slider Interval](images/rangesliderinterval-5-ss.png "Creating OnChange Event for Range Slider Interval")
 
     By default, the **SelectedMinValue** and **SelectedMaxValue** input parameter are created.  
 
-    ![](images/rangesliderinterval-1-ss.png)
+    ![Image displaying the default SelectedMinValue and SelectedMaxValue input parameters for the Range Slider Interval](images/rangesliderinterval-1-ss.png "Default Input Parameters for Range Slider Interval")
 
 1. To create a variable for each of the expressions, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type. In this example we create the **LowerPrice** and **HighestPrice** variables with the **Currency** data type.
 
-    ![](images/rangesliderinterval-8-ss.png) 
+    ![Screenshot showing the process of adding LowerPrice and HighestPrice local variables with Currency data type](images/rangesliderinterval-8-ss.png "Adding Local Variables for Price Range") 
 
 1. So that the parameters read the range slider selections, double-click your screen action, from the Toolbox, add the **Assign** action to the screen action, and set the variable and value assignments for the Assign action. 
 
-    ![](images/rangesliderinterval-7-ss.png?width=800) 
+    ![Image illustrating how to set variable and value assignments for the Assign action in a screen action](images/rangesliderinterval-7-ss.png "Assign Action in Service Studio") 
 
 1. To display your selection, go back to your screen, and from the Toolbox, drag the Container widget into the Main Content area of your application's screen, enter a name and add your content to the Container placeholder. In this example, we enter ``DisplayValue`` for the name and add some text and an expression for each of the input parameters.
 
-    ![](images/rangesliderinterval-6-ss.png?width=800)
+    ![Screenshot of a Container widget named DisplayValue showing text and expressions for input parameters](images/rangesliderinterval-6-ss.png "Displaying Selection in Range Slider Interval")
 
 1. Go back to the screen action, and from the Toolbox, add the **Ajax Refresh** action to the screen action, and in the **Select Widget** pop-up, navigate to and select the Container widget name (in this example, DisplayValue), and click **OK**.
 
-    ![](images/rangesliderinterval-12-ss.png?width=800)
+    ![Image showing how to add an Ajax Refresh action to a screen action and select the DisplayValue Container widget](images/rangesliderinterval-12-ss.png "Ajax Refresh Action in Service Studio")
 
 1. To bind the **SelectedMinValue** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
 
-    ![](images/rangesliderinterval-9-ss.png)
+    ![Screenshot of the Expression Value editor with a variable selected for binding to an expression](images/rangesliderinterval-9-ss.png "Binding Variables to Expressions")
 
 1. Repeat step 8 for the **SelectedMaxValue** input parameter.
 
 1. From the **Properties** tab, you can change the Range Slider's look and feel by setting the (optional) properties.
 
-    ![](images/rangesliderinterval-13-ss.png)
+    ![Image showing the Properties tab with optional properties for customizing the Range Slider Interval's appearance](images/rangesliderinterval-13-ss.png "Optional Properties for Range Slider Interval")
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

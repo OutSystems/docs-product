@@ -22,11 +22,11 @@ When developing OutSystems apps, add ARIA roles, states, and properties by editi
 
 The ARIA property doesn't change when the app runs. To add the ARIA roles or attributes, select the widget, go to the **Properties** tab, and add the role or attribute in the **Attributes** section.
 
-![Setting aria as a static property](images/set-aria-as-a-static-property-ss.png)
+![Screenshot showing how to set ARIA as a static property in OutSystems UI](images/set-aria-as-a-static-property-ss.png "Setting ARIA as a Static Property")
 
 Similarly, you can set an ARIA role.
 
-![Setting an aria role](images/set-aria-role-ss.png)
+![Screenshot demonstrating setting an ARIA role in OutSystems UI](images/set-aria-role-ss.png "Setting an ARIA Role")
 
 ## Set ARIA dynamically
 
@@ -34,7 +34,7 @@ This ARIA property changes when the app runs, depending on a condition. To set a
 
 If the form is invalid, because one of the required fields is missing or a value isn't correct for a field, the form appears as marked with **aria-invalid="true"**. This is a signal to the screen readers to alert the users.
 
-![Setting the aria property dynamically](images/set-aria-dynamically-ss.png)
+![Screenshot illustrating how to set an ARIA property dynamically based on a condition in OutSystems UI](images/set-aria-dynamically-ss.png "Setting ARIA Dynamically")
 
 ## Built-in ARIA actions
 
@@ -75,7 +75,7 @@ To enable the status message, do the following steps:
 
 The following figure shows an example of a status message:
 
-![Setting a status message](images/status-message-ss.png)
+![Screenshot example of setting a status message using ARIA in OutSystems UI](images/status-message-ss.png "Status Message Example")
 
 ### Creating readable labels
 
@@ -93,7 +93,7 @@ To create a label, do the following steps:
 
 The following figure shows an example of a readable label on a **Delete** button. In this example, when the user selects this button, the screen reader says "Delete product".
 
-![Creating readable labels](images/creating-readable-labels-ss.png)
+![Screenshot showing an example of creating a readable label with ARIA for a 'Delete' button in OutSystems UI](images/creating-readable-labels-ss.png "Creating Readable Labels")
 
 ### Hide text in buttons or links
 
@@ -105,7 +105,7 @@ This section describes how to hide text from the screen readers. If you have a l
 1. Select the portion of the link text you want to hide, for example, "product" in “View product in store”.
 1. [Add a CSS class](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS)) that makes that part of the link invisible.
 
-    ![Hiding text in buttons or links](images/hiding-text-in-buttons-or-links-ss.png?width=350)
+    ![Screenshot depicting how to hide text in buttons or links for screen readers in OutSystems UI](images/hiding-text-in-buttons-or-links-ss.png "Hiding Text in Buttons or Links")
 
 ### Adding detailed descriptions for short labels
 
@@ -117,5 +117,5 @@ To add an **aria-label**, do the following:
 1. On the **Properties** tab, create a new **aria-label**attribute.
 1. Enter the descriptive text you want screen readers to say.
 
-    ![Adding detailed descriptions to short labels](images/adding-detailed-descriptions-short-labels-ss.png)
+    ![Screenshot showing how to add detailed descriptions to short labels using ARIA in OutSystems UI](images/adding-detailed-descriptions-short-labels-ss.png "Adding Detailed Descriptions to Short Labels")
 

@@ -14,7 +14,7 @@ To start developing your case management app using the [Case Management framewor
 
 Follow this guide to create the basis of your case management app, with the following modules:
 
-![Case management app architecture](images/bootstrap-app-archi.png)
+![Diagram illustrating the architecture of a case management app with UI, core services, and workflow modules](images/bootstrap-app-archi.png "Case Management App Architecture")
 
 * The user interface (UI) module which contains the screens of your app needed for end users to interact with the cases. Follow the optional step in this guide to create a simple version of this module so you can test your app.
 
@@ -48,7 +48,7 @@ Before you proceed, make sure that you installed the latest version of the [Case
 
 Start by creating your app and adding the core services module. The core services module is where you build the business logic and the corresponding public actions, and the configuration mechanisms for the case definition that you need while developing your apps with the Case Management framework.
 
-![Adding the core services module](images/bootstrap-step-1-archi.png)
+![Flowchart showing the steps to create an app and add a core services module in the Case Management framework](images/bootstrap-step-1-archi.png "Creating App and Core Services Module")
 
 Let's create an app, then create a core services module for your case, and finally create the business entity for your case. Follow these steps:
 
@@ -110,7 +110,7 @@ Next, let's create a static entity to keep the case definition and then create a
 
 1. Delete **Order** and **Is_Active** attributes.
 
-    ![CaseDefinitionConfiguration static entity](images/bootstrap-case-def-config-entity-ss.png)
+    ![Screenshot of the CaseDefinitionConfiguration static entity with attributes in Service Studio](images/bootstrap-case-def-config-entity-ss.png "Case Definition Configuration Entity")
 
 1. To configure the case definition, add a **Record** to the **CaseDefinitionConfiguration** static entity. Name the record `CaseDefinition`.
 
@@ -145,7 +145,7 @@ In this step you add an action to the core services module that associates the b
 
 1. Add a **Create&lt;business-entity-name&gt;** action after the assign, and set the **Source** as the input parameter.
 
-    ![Create entity action wrapper](images/bootstrap-case-create-wrap-ss.png)
+    ![Screenshot of the action flow for creating a business entity and initializing a case in Service Studio](images/bootstrap-case-create-wrap-ss.png "Create Entity Action Wrapper")
 
 ### Step 4. Creating the initial case status { #step4 }
 
@@ -169,7 +169,7 @@ In this step you create the initial case status of the case definition. Follow t
 
 1. Name the record `<initial-state>`, where &lt;initial-state&gt; represents the initial state of a case in your app, for example `Submitted`.
 
-    ![CaseStatusConfiguration static entity](images/bootstrap-case-status-config-entity-ss.png)
+    ![Screenshot of the CaseStatusConfiguration static entity with attributes in Service Studio](images/bootstrap-case-status-config-entity-ss.png "Case Status Configuration Entity")
 
 1. Set **IsInitial** as **True**.
 
@@ -228,7 +228,7 @@ In this step you create an action that bootstraps the case definition and case s
 
 In this step you create the workflow module, where you can later build the processes for case definitions using [BPT](../../processes/intro.md).
 
-![Adding the workflow module](images/bootstrap-step-2-archi.png)
+![Diagram showing the creation of a workflow module for case management in Service Studio](images/bootstrap-step-2-archi.png "Creating Workflow Module")
 
 Follow these steps:
 
@@ -250,7 +250,7 @@ Follow these steps:
 
 1. Set the following properties of the **Case_AssociateProcess** action:
 
-    ![On process start action of the process](images/bootstrap-assoc-case-process-ss.png)
+    ![Screenshot of the On Process Start action with Case_AssociateProcess action in Service Studio](images/bootstrap-assoc-case-process-ss.png "Associate Case with Process Action")
 
     * Set **CaseId** as `<business-entity-name>Id`, where &lt;business-entity-name&gt; is the name of the business entity you created in Step 1.
 
@@ -272,7 +272,7 @@ The following steps are for Reactive Web Apps only.
 
 Let's make sure the setup of your case management app is complete by adding a UI module that you can use to test your app.  
 
-![Adding the UI module](images/bootstrap-step-4-archi.png)
+![Diagram illustrating the testing setup for a Reactive Web App in the Case Management framework](images/bootstrap-step-4-archi.png "Testing Reactive Web App Setup")
 
 Follow these steps:
 

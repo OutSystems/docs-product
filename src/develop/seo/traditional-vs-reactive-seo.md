@@ -14,8 +14,8 @@ The SEO behavior between Reactive and Traditional Web apps is broadly similar, w
 
 For site and redirect rules, the setup process is the same between app types. You can set this process up in the SEO URLs section of Service Center. Page rules are only configurable through Service Center for Traditional Web apps. 
 
-![SEO URLs](images/page-rules-sc.png)
+![Screenshot showing the SEO page rules configuration in the Service Center for Traditional Web apps](images/page-rules-sc.png "SEO Page Rules in Service Center")
 
 For Reactive Web apps, you can configure page rules in Service Studio by selecting the screen and setting the **Custom URL** properties **Advanced** properties section.
 
-![Custom URLs](images/custom-url-ss.png)
+![Screenshot of the Custom URL properties in Service Studio for configuring page rules in Reactive Web apps](images/custom-url-ss.png "Custom URL Configuration in Service Studio")

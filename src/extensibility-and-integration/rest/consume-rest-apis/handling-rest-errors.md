@@ -16,7 +16,7 @@ To handle a REST API error, do the following:
 
 1. Add an Exception Handler to the logic that uses the REST API method, and set the **Exception** property to `All Exceptions` so that the exception handler catches all exceptions.
 
-    ![Exception Handler flow for handling all exceptions](images/ss-flow-allexceptions.png)
+    ![Screenshot showing how to add an Exception Handler with 'All Exceptions' selected in OutSystems](images/ss-flow-allexceptions.png "Exception Handler Configuration")
 
 1. Implement the logic in the exception handler flow to handle the error, like displaying a message to the end user.
 
@@ -30,6 +30,6 @@ For example, you might want to:
 
 * Throw specific User Exceptions based on the received error.
 
-    ![Example of throwing a specific User Exception in an action flow](images/ss-rest-handle-errors.png)
+    ![Screenshot demonstrating the implementation of logic to handle REST API errors in OutSystems](images/ss-rest-handle-errors.png "REST Error Handling Logic")
 
 * Change the status code of a REST error response to 200 (success) so that OutSystems doesn't raise an exception in a specific case.

@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 
 In OutSystems, the policies that grant or revoke permissions to IT users are managed using a role-based permission model. This means that **permissions** to perform operations are configured in **roles** that are then assigned to users.
 
-![permission level](images/lt-about-permission-levels-1.png?width=500)
+![Diagram showing the overview of permission levels in OutSystems](images/lt-about-permission-levels-1.png "OutSystems Permission Levels Overview")
 
 ## Roles
 
@@ -38,7 +38,7 @@ Each role is defined by a set of permissions that determine which operations the
 **Infrastructure-wide permissions**
 :   Control who can manage IT users, teams, and roles across the infrastructure. For self-managed infrastructures, allow managing the environments and its configurations.
 
-![](images/lt-about-permission-levels-5.png?width=800)
+![Illustration of environment-specific permissions in OutSystems](images/lt-about-permission-levels-5.png "OutSystems Environment-Specific Permissions")
 
 Check the details for each permission in the [reference below](#outsystems-permissions-reference).
 
@@ -58,7 +58,7 @@ While [creating an IT user](create-an-it-user.md), it's mandatory to define the 
 
 To follow the principle of security by default, the default role of users should grant them as little base permissions over applications as possible, so that all permissions necessary for the users to perform their work can be defined explicitly either through teams or directly for specific applications.
 
-![default role](images/about-permission-levels-2.png)
+![Image depicting how a default role is assigned to an IT user in OutSystems](images/about-permission-levels-2.png "Default Role Assignment in OutSystems")
 
 ### Role assigned to users for a team { #role-assigned-to-users-for-a-team }
 
@@ -66,7 +66,7 @@ While [adding an IT user to a team](create-an-it-team.md#add-it-users-to-the-tea
 
 The role assigned to users for teams **overrides the default role** of the users, and is typically used to explicitly grant extra permissions that apply only to the applications that belong to the team.
 
-![](images/about-permission-levels-3.png)
+![Image showing the role assignment to IT users for a team in OutSystems](images/about-permission-levels-3.png "Team-Based Role Assignment in OutSystems")
 
 This allows granting permissions for all applications that the team manages, without having to grant permissions on each application individually.
 
@@ -78,7 +78,7 @@ It's also possible to [assign a role directly to one user for a specific applica
 
 Roles assigned directly to a user on specific applications **override the default role** of the user and also **any role assigned through teams**.
 
-![](images/about-permission-levels-4.png)
+![Image illustrating the assignment of roles to IT users for a specific application in OutSystems](images/about-permission-levels-4.png "Application-Specific Role Assignment in OutSystems")
 
 ## OutSystems Permissions Reference
 

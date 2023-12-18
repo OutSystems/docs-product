@@ -34,7 +34,7 @@ You can see and define the event handlers in the Events section of the propertie
 
 ### On Opening the Application
 
-![](images/lifecycle-open-application.png?width=831)
+![Diagram illustrating the lifecycle stages when opening an application in OutSystems, including splash screen display, user role verification, and data fetching events.](images/lifecycle-open-application.png "Application Opening Lifecycle")
 
 Opening an application is one of the situations when a screen is loaded (the other situation is when navigating from another screen). In this case, the app displays the configured splash screen and then navigates to the default screen.
 
@@ -54,7 +54,7 @@ When the aggregates and data actions of the screen finish fetching the data, the
 
 ### On Navigating Between Screens
 
-![](images/lifecycle-navigate-screens.png?width=834)
+![Flowchart showing the lifecycle stages when navigating between screens in OutSystems, highlighting the loading of the new screen's DOM and the removal of the previous screen.](images/lifecycle-navigate-screens.png "Navigating Between Screens Lifecycle")
 
 Navigating from a screen to another is a very common pattern of applications. This is usually triggered by a user interaction such as clicking a button or list item on the screen. Navigating between screens in OutSystems means that a new screen is loaded and then the previous screen is removed.
 
@@ -76,7 +76,7 @@ As an example, imagine a screen showing the details of a contact along with the 
 
 ### On Changing the Parameters of a Block
 
-![](images/lifecycle-change-parameters.png?width=614)
+![Sequence diagram depicting the lifecycle events when changing the parameters of a block in OutSystems, including the Parameters Changed and Render events.](images/lifecycle-change-parameters.png "Block Parameter Change Lifecycle")
 
 To allow the notification and update of a block when one of its input parameters change, the application runs the [Parameters Changed](<#on-parameters-changed>) event handler of the block. A common use case for this event handler is to rerun some Aggregate or Data Action that depends on the input parameter, as exemplified in the image above where after a change in the calendar date, the query is executed again to obtain new values for the chart.
 

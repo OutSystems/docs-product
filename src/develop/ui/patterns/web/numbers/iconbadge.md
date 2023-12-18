@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Icon Badge UI Pattern to display numerical information as a notification. For example, the Icon Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
-![](<images/iconbadge-1-ss.png>)
+![Screenshot of the Icon Badge UI Pattern used to display numerical notifications](images/iconbadge-1-ss.png "Icon Badge UI Pattern Example")
 
 **How to use the Icon Badge UI Pattern**
 
@@ -30,7 +30,7 @@ The following example demonstrates how you can display the number of registered 
 
     The Icon Badge widget is displayed.
 
-    ![](<images/iconbadge-5-ss.png>)
+    ![Image showing the Icon Badge widget in the Service Studio toolbox](images/iconbadge-5-ss.png "Icon Badge Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -44,17 +44,17 @@ The following example demonstrates how you can display the number of registered 
 
 1. From the Toolbox, drag the Icon Badge widget into the Main Content area of your application's screen.
 
-    ![](<images/iconbadge-6-ss.png>)
+    ![Screenshot of dragging the Icon Badge widget into the Main Content area of an application screen](images/iconbadge-6-ss.png "Dragging Icon Badge Widget")
 
 1. From the Element tree, create a Preparation action by right-clicking on your screen, and from the drop-down, select **Add Preparation**.
 
     This Preparation action executes logic that fetches the data before the screen is displayed.
 
-    ![](<images/iconbadge-7-ss.png>)
+    ![Image illustrating how to add a Preparation action by right-clicking on the screen in Service Studio](images/iconbadge-7-ss.png "Adding Preparation Action")
 
 1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it onto the Preparation action.
 
-    ![](<images/iconbadge-8-ss.png>)
+    ![Screenshot showing the process of creating an aggregate to retrieve users in Service Studio](images/iconbadge-8-ss.png "Creating an Aggregate for Users")
 
     This creates an [aggregate](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Queries/Aggregate) that retrieves all the users on your platform.
 
@@ -68,13 +68,13 @@ The following example demonstrates how you can display the number of registered 
 
     Note: You can also add the expression by navigating through the Expression Editor's **Scope** tree and double-clicking on the **Count** output parameter. However, because the expected Badge [data type](../../../../../ref/data/data-types/available-data-types.md) (Integer) is different to the Count data type (Long Integer), to ensure the expression is correct, you must add `LongIntegerToInteger` to the `Get.Users.Count` expression.
 
-    ![](<images/iconbadge-9-ss.png>)
+    ![Image of the Expression Editor in Service Studio where the Number property of the Icon Badge widget is set](images/iconbadge-9-ss.png "Setting the Number Property")
 
     The **Number** property is now set to display the Count property of the Aggregate you added to the Preparation action, which gets the number of users on your platform and displays them in your icon badge.
 
 1. On the **Properties** tab, you can also customize the Icon Badge's look and feel by setting any of the optional properties, for example, the color. The following example displays a blue icon badge.  
 
-    ![](<images/iconbadge-10-ss.png>)
+    ![Screenshot displaying the customization options for the Icon Badge's color in the Properties tab](images/iconbadge-10-ss.png "Customizing Icon Badge Appearance")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

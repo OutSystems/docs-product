@@ -18,4 +18,4 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/inputwithicon-2-diag.png>)
+![Diagram illustrating the layout and classes for the Input with Icon UI Pattern in Traditional Web Apps](images/inputwithicon-2-diag.png "Input with Icon Layout Diagram")

@@ -6,8 +6,8 @@ guid: b8187826-7efd-4154-a3c3-6b810ca5e546
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=607:517
+summary: The article explains how to implement and manage Human Activity tasks in a process flow, which are assigned to end users for execution and can be configured with specific properties and security roles
 ---
-
 # Human Activity
 
 When designing the process flow of your process, you can add work to be carried out by the end user. This behavior is implemented through the **Human Activity** process activity, which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
@@ -24,11 +24,11 @@ If no configuration is done, the Human Activity is assigned to all end users, th
 
 To improve the end users experience while executing these activities, you can provide the details of the Human Activity and the instructions on how to execute it. For this, select the Human Activity instance in the flow path, and set the `Detail` and `Instructions` properties under **End-User Information**:
 
-![Human Activity properties](images/process-human-activity-properties-ss.png)
+![Screenshot of the Human Activity properties settings in Service Studio](images/process-human-activity-properties-ss.png "Human Activity Properties")
 
 This information will be available in the activities list and the activity details of the end users' Taskbox:
 
-![Human Activity Taskbox](images/process-human-activity-taskbox.png)
+![Example of a Human Activity displayed in the end user's Taskbox](images/process-human-activity-taskbox.png "Human Activity Taskbox")
 
 ## End the Activity on Entity Events
 

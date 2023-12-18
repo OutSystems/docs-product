@@ -18,4 +18,4 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/iconbadge-2-diag.png?width=650>)
+![Diagram showing the layout and classes of the Icon Badge UI Pattern for Traditional Web Apps](images/iconbadge-2-diag.png "Icon Badge Layout Diagram")

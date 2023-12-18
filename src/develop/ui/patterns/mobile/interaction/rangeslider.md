@@ -26,7 +26,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track increases or decreases the value.  
 
-![Example of a Range Slider](images/rangeslider-overview.png)
+![Overview of the Range Slider UI Pattern in OutSystems](images/rangeslider-overview.png "Range Slider Overview")
 
 <div class="info" markdown="1">
 
@@ -42,7 +42,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     The Range Slider widget is displayed.
 
-    ![Range Slider widget](images/rangeslider-widget-ss.png)
+    ![Image showing the Range Slider widget in OutSystems Service Studio](images/rangeslider-widget-ss.png "Range Slider Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -56,43 +56,43 @@ In this example, we create a Range Slider that allows the user select the number
 
 1. From the Toolbox, drag the Range Slider widget into the Main Content area of your application's screen.
 
-    ![Drag the widget to the application screen](images/rangeslider-dragwidget-ss.png)
+    ![Demonstration of dragging the Range Slider widget into the Main Content area of an application screen in Service Studio](images/rangeslider-dragwidget-ss.png "Dragging Range Slider Widget to Application Screen")
 
 1. On the **Properties** tab, enter the mandatory minimum, maximum, and starting values. 
     
     In this example, we add static values.
 
-    ![Add mandatory values](images/rangeslider-prop-vals-ss.png)
+    ![Screenshot showing how to add mandatory minimum, maximum, and starting values to the Range Slider properties in Service Studio](images/rangeslider-prop-vals-ss.png "Setting Mandatory Values for Range Slider")
 
 1. To create an OnChange event, on the **Properties** tab, from the **Handler** drop-down, select **New Client Action**.
 
-    ![Create client action](images/rangeslider-clientaction-ss.png)
+    ![Image illustrating the creation of a new client action for the Range Slider in OutSystems Service Studio](images/rangeslider-clientaction-ss.png "Creating a Client Action for Range Slider")
 
     By default, the **Value** input parameter is created.  
 
-    ![Value input parameter is created automatically](images/rangeslider-value-input-ss.png)
+    ![Image showing the automatically created Value input parameter for the Range Slider client action in Service Studio](images/rangeslider-value-input-ss.png "Value Input Parameter for Range Slider")
 
 1. From the Toolbox, drag the **Container** widget into the Main Content area of your application's screen, and add your content to the Container placeholder.
 
     In this example we add some text and an expression.
 
-    ![Add a container with content to the screen](images/rangeslider-container-ss.png)
+    ![Screenshot of adding text and an expression to a container in the Main Content area for the Range Slider pattern](images/rangeslider-container-ss.png "Adding Content to Range Slider Container")
 
 1. To create a variable for the expression, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type (in this example, we use **Decimal**).
 
-    ![Create a local variable of type decimal](images/rangeslider-locvar-ss.png)
+    ![Image depicting the creation of a local variable of type decimal for the Range Slider in Service Studio](images/rangeslider-locvar-ss.png "Creating a Local Variable for Range Slider")
 
 1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
 
-    ![Bind the variable to the expression](images/rangeslider-expression-ss.png)
+    ![Screenshot showing how to bind a newly created variable to the expression widget for the Range Slider](images/rangeslider-expression-ss.png "Binding Variable to Range Slider Expression")
 
 1. So that the **Value** parameter reads the range slider selection, double-click your client action, and from the Toolbox, add the **Assign** action to the client action. Set the Assign **Variable** to the local variable you created, and the Assign **Value** to the automatically generated input parameter (Value).
 
-    ![Set the assign variables and values](images/rangeslider-assign-ss.png)
+    ![Image demonstrating how to set the assign variables and values for the Range Slider's Value parameter in Service Studio](images/rangeslider-assign-ss.png "Assigning Variables and Values for Range Slider")
 
 1.  You can configure the Range Slider by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, the size. For more configurations, expand the **OptionalConfigs** property.
 
-    ![Set the optional properties](images/rangeslider-properties-ss.png)
+    ![Screenshot of setting optional properties for the Range Slider pattern in Service Studio](images/rangeslider-properties-ss.png "Configuring Optional Properties of Range Slider")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

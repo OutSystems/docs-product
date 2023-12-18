@@ -31,7 +31,7 @@ Let's follow a concrete example on how to perform these steps:
 1\. In Integration Studio, create an extension and define an action that will register a custom message inspector responsible for adding the SOAP request element before sending a request.  
 In this example we defined an action in Integration Studio called "RegisterHttpHeaderCallback" with no input parameters.
 
-![](<images/is-action-register-httpheader-callback.png>)
+![Screenshot of Integration Studio showing the action 'RegisterHttpHeaderCallback' defined for adding an HTTP header](images/is-action-register-httpheader-callback.png "Integration Studio Action Registration")
 
 2\. Click 'Edit Source Code .NET'. Set the project target framework and add a reference to the `System.ServiceModel` assembly.  
 Enter the code below, replacing the `MssRegisterHttpHeaderCallback` function placeholder that Integration Studio created for you:  

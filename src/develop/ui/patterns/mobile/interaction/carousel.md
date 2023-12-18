@@ -26,7 +26,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Carousel UI Pattern to display multiple items in a horizontal slide.  The Carousel Pattern optimizes screen space by displaying only a few images from a larger collection which you can view using the navigation controls. 
 
-![Example Carousel](images/carousel-example.png)
+![Screenshot showing an example of the Carousel UI Pattern in action](images/carousel-example.png "Example of a Carousel UI Pattern")
 
 <div class="info" markdown="1">
 
@@ -40,7 +40,7 @@ The Carousel Pattern is based on the Splide.js library (v3). For more informatio
   
      The Carousel widget is displayed.
 
-    ![Carousel widget](images/carousel-widget-ss.png)
+    ![Image of the Carousel widget as displayed in the OutSystems Service Studio](images/carousel-widget-ss.png "Carousel Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -54,7 +54,7 @@ The Carousel Pattern is based on the Splide.js library (v3). For more informatio
 
 1. From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
 
-    ![Drag widget to the screen](images/carousel-dragwidget-ss.png)
+    ![Step-by-step illustration of dragging the Carousel widget into the Main Content area of an application's screen](images/carousel-dragwidget-ss.png "Dragging Carousel Widget to the Screen")
 
     By default, the Carousel pattern contains a **CarouselItems** placeholder with a **List** widget and **Image** widget. If you want a Carousel with static images, you can remove the **List** widget and add your images inside the **CarouselItems** placeholder.
 
@@ -62,19 +62,19 @@ The Carousel Pattern is based on the Splide.js library (v3). For more informatio
 
     In this example, the List is deleted and 3 Image widgets are added.  
 
-    ![Add image widgets](images/carousel-addimages-ss.png) 
+    ![Example of adding three Image widgets to the Carousel Items placeholder in Service Studio](images/carousel-addimages-ss.png "Adding Image Widgets to Carousel") 
 
 1. Select the **Image** widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Carousel. 
 
     **Note:** In this example, the image Type is set to Local image. You can also add External and Binary Data images. In this example, the image property Type is set to **Local** image. You can also add [External and Binary Data](../../../image/display-image.md) images.   
 
-    ![Set image type](images/carousel-imagetype-ss.png)   
+    ![Screenshot showing how to set the image type for images in the Carousel UI Pattern](images/carousel-imagetype-ss.png "Setting Image Type in Carousel")   
 
 1. Repeat step 4 for each of the images in the Carousel. 
 
 1. You can configure the Carousel by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, **Navigation** or **ItemsPerSlide**.For more configurations, expand the **OptionalConfigs** property.
 
-    ![Set properties](images/carousel-properties-ss.png)  
+    ![Image depicting the process of setting optional properties for the Carousel UI Pattern](images/carousel-properties-ss.png "Carousel Properties Configuration")  
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

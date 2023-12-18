@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and Classes
 
-![](<images/alert-image-2.png>)
+![Screenshot showing the layout and classes of the Alert UI Pattern in a traditional web application](images/alert-image-2.png "Alert UI Pattern Layout")
 
 ## CSS Selectors
 
@@ -40,13 +40,13 @@ Applies only to Traditional Web Apps.
 
 1. In the properties of the container, change the display from True to ShowAlert.
 
-    ![](<images/alert-image-3.png>)
+    ![Image displaying the properties settings of the Alert animation container in a web application](images/alert-image-3.png "Alert Animation Container Properties")
 
 1. Drag the Animate pattern into the container.
 
 1. Change the EnterAnimation property to EnterTop.
 
-    ![](<images/alert-image-4.png>)
+    ![Image demonstrating the process of setting the Enter Animation property for the Alert pattern in a web application](images/alert-image-4.png "Setting Enter Animation Property")
 
 1. Drag the Alert pattern into the Animate placeholder.
 
@@ -54,8 +54,8 @@ Applies only to Traditional Web Apps.
 
 1. Type the message you want to display.
 
-    ![](<images/alert-image-5.png>)
+    ![Image illustrating the user interface for configuring the Alert message within the Alert pattern](images/alert-image-5.png "Configuring Alert Message")
     
 1. Publish and test.
 
-    ![](<images/alert-image-6.gif>)
+    ![Animated GIF demonstrating the Alert pattern with enter animation in a web application](images/alert-image-6.gif "Alert Pattern Animation Demonstration")

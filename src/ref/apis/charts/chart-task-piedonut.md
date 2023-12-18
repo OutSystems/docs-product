@@ -19,29 +19,29 @@ To create a Pie or Donut Chart with a fixed number of slices follow these steps:
 1. In **Mobile** applications, drag a **Pie Chart** or **Donut Chart** from the Toolbox to the Screen.  
     In **Web** applications, drag a **Pie Chart** from the Toolbox to the Screen, even if you want to create a Donut Chart. At the end of the procedure [Convert the Pie Chart to a Donut Chart in a Web application](#convert-a-pie-chart-to-a-donut-chart-in-a-web-application)
 
-    ![](images/pie-01.png)
+    ![Screenshot showing how to add a Pie or Donut Chart from the Toolbox to the Screen in OutSystems.](images/pie-01.png "Adding a Pie or Donut Chart to the Screen")
 
 1. On the properties of the chart, click **+** to the left of **SourceDataPointList** to create a list with one data point.
 
-    ![](images/pie-02.png?width=400)
+    ![Image illustrating the addition of a new SourceDataPointList for a Pie or Donut Chart in OutSystems.](images/pie-02.png "Creating a Data Point List for the Chart")
 
     Each data point corresponds to one slice of the pie or donut chart.
 
 1. Click **+** to the left of data point **\[0\]** and set the **Label** and **Value** properties of the data point.
   
-    ![](images/pie-03.png?width=400)
-    ![](images/pie-04.png?width=400)
+    ![Screenshot of the process to set the Label and Value properties for a data point in a Pie or Donut Chart.](images/pie-03.png "Setting Label and Value for a Data Point")
+    ![Image showing the configuration options for Tooltip and Color properties of a data point in OutSystems.](images/pie-04.png "Configuring Data Point Properties")
 
     Optionally, you can also set a **Tooltip** and a **Color** for the [data point](../auto/charts-api.final.md#Structure_DataPoint).  
     Tip: These properties can be set to values that change at runtime, like an Attribute from the List of an Aggregate.
 
 1. To add another data point, repeat steps **2.** and **3.**.
 
-    ![](images/pie-07.png?width=400)
+    ![Screenshot demonstrating how to add additional data points to a Pie or Donut Chart in OutSystems.](images/pie-07.png "Adding Multiple Data Points to the Chart")
 
 After publishing your module you can check your chart by opening the screen in browser or device:
 
-![](images/pie-result.png?width=400)
+![Example image of the final result of a Pie or Donut Chart displayed in a browser or device.](images/pie-result.png "Final Result of the Pie or Donut Chart")
 
 ## Create a Pie or Donut Chart with a variable number of slices
 
@@ -52,15 +52,15 @@ To create a Pie or Donut Chart with a variable number of slices follow these ste
 1. In **Mobile** applications, drag a **Pie Chart** or **Donut Chart** from the Toolbox to the Screen.  
     In **Web** applications, drag a **Pie Chart** from the Toolbox to the Screen, even if you want to create a Donut Chart. At the end of the procedure [Convert the Pie Chart to a Donut Chart in a Web application](#convert-a-pie-chart-to-a-donut-chart-in-a-web-application)
 
-    ![](images/pie-01.png)
+    ![Screenshot showing how to add a Pie or Donut Chart from the Toolbox to the Screen in OutSystems.](images/pie-01.png "Adding a Pie or Donut Chart to the Screen")
     
 1. On the properties of the chart, set the **SourceDataPointList** to a List containing the data points for the chart.
 
-    ![](images/pie-a02.png?width=400)
+    ![Image depicting how to set the SourceDataPointList to a List for a Pie or Donut Chart with variable slices.](images/pie-a02.png "Setting the SourceDataPointList for Variable Slices")
 
 1. Map the **Label** and **Value** of the **SourceDataPointList** to the correct Attributes from the List containing the data points for the chart.
 
-    ![](images/pie-a03.png?width=400)
+    ![Screenshot showing the mapping of Label and Value from the SourceDataPointList to Attributes in OutSystems.](images/pie-a03.png "Mapping Label and Value for Data Points")
 
 After publishing your module you can check your chart by opening the screen in browser or device.
 
@@ -76,6 +76,6 @@ To convert a Pie Cart to a Donut Chart in a Web application:
             }
         }"
 
-    ![](images/donut-w01.png)
+    ![Image illustrating the addition of JSON snippet to the HighChartsJSON property to convert a Pie Chart to a Donut Chart.](images/donut-w01.png "Converting a Pie Chart to a Donut Chart")
 
 After publishing your module you can check your chart by opening the screen in browser or device.

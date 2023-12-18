@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/togglebutton-3-diag.png>)
+![Diagram showing the layout and classes of the Toggle Button UI pattern](images/togglebutton-3-diag.png "Toggle Button Layout Diagram")
 
 ## CSS selectors
 
@@ -36,12 +36,12 @@ Applies only to Traditional Web Apps.
 
 1. Set a variable of type boolean to the checkbox.
 
-    ![](<images/togglebutton-1-ss.png>)
+    ![Screenshot of dragging the Toggle Button pattern into the preview](images/togglebutton-1-ss.png "Toggle Button Preview")
 
 1. In the Checkbox, set the parameter Enabled to False.
 
-    ![](<images/togglebutton-4-ss.png>)
+    ![Screenshot showing the Toggle Button with the Enabled parameter set to False](images/togglebutton-4-ss.png "Toggle Button Disabled Setting")
 
 1. Publish and test.
 
-    ![](<images/togglebutton-5-ss.png>)
+    ![Screenshot of the published Toggle Button in a disabled state](images/togglebutton-5-ss.png "Toggle Button Published Test")

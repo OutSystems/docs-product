@@ -24,7 +24,7 @@ To create your first app in Service Studio you can:
 * Follow **step-by-steps tutorials**. Check out the tutorials about [how to create a mobile app](create-mobile.md) or [how to create a web app](create-reactive-web.md).
 * Start from an **existing sample app**. Create a new app in Service Studio and choose **Start from an app** to see the collection of the prebuilt apps.
 
-![Creating a new app in OutSystems](images/getting-started-new-app-ss.png)
+![Screenshot of the Service Studio interface showing the process of starting a new application](images/getting-started-new-app-ss.png "Service Studio New App Interface")
 
 
 ## Creating apps
@@ -63,7 +63,7 @@ There are free online courses that teach how to use OutSystems. There are offici
 * [All OutSystems training courses](https://www.outsystems.com/training/courses/)
 * [Service Studio Overview](https://www.outsystems.com/training/courses/174/service-studio-overview/)
 
-![Training](images/getting-started-training.png)
+![Image showcasing the various training resources available for learning OutSystems development](images/getting-started-training.png "OutSystems Training Resources")
 
 ## Community
 
@@ -71,4 +71,4 @@ The OutSystems community welcomes all. Join the community in the Forum, to share
 
 * [OutSystems Forums](https://www.outsystems.com/forums/)
 
-![Community](images/getting-started-community.png)
+![Illustration of OutSystems community members engaging and sharing knowledge on a forum](images/getting-started-community.png "OutSystems Community Engagement")

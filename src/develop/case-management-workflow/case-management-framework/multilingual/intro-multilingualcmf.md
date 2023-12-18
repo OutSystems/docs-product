@@ -36,6 +36,6 @@ The CMf APIs return data translated to the current locale language selected at t
 
 A typical process flow is shown in the diagram below.
 
-![](images/cmf-mlingual-flow-diag.png)
+![Diagram illustrating the process flow for setting up a multilingual Case Management framework](images/cmf-mlingual-flow-diag.png "Multilingual Case Management Framework Process Flow")
 
 The full procedure on how to [enable Multilingual CMf can be found here](enabling-multilingualcmf.md).

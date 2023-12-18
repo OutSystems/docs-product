@@ -82,16 +82,16 @@ To create a site rule, follow these steps:
 
 1. Go to **Service Center** > **Administration** > **SEO URLs** > **Site Rules List**.  
 
-    ![Creating site rules](images/create-site-rules-1-sc.png)  
+    ![Screenshot of Service Center interface showing the first step in creating site rules](images/create-site-rules-1-sc.png "Creating Site Rules Step 1")  
 
 
 1. Select **New Site Rule**.  
 
-    ![Creating site rules](images/create-site-rules-2-sc.png)  
+    ![Screenshot of Service Center interface showing the second step in creating site rules](images/create-site-rules-2-sc.png "Creating Site Rules Step 2")  
 
 1. Enter the **Base URL** and the **Root Application**, and select **Create**.  
 
-    ![Creating site rules](images/create-site-rules-3-sc.png)  
+    ![Screenshot of Service Center interface showing the third step in creating site rules](images/create-site-rules-3-sc.png "Creating Site Rules Step 3")  
 
     As a result, you've enabled a new site rule.  
     You also have the option to select a site rule and edit, delete, or disable the **Base URL**.  
@@ -149,7 +149,7 @@ To add a custom screen URL, follow these steps:
 
 </div>  
 
-![Screen URLs settings and properties](images/page-redirects-properties-ss.png?)  
+![Screenshot of Service Studio showing the properties panel for customizing a screen's URL](images/page-redirects-properties-ss.png "Screen Properties for Custom URL")  
 
 #### Screen properties  
 
@@ -218,11 +218,11 @@ To manage redirect rules you need to know the following:
 
 To create, edit, delete, or disable redirect rules go to **Service Center** > **Administration** > **SEO URLs** > **Redirect Rules List**.  
 
-![Managing redirect rules](images/manage-redirect-rules-sc.png)  
+![Screenshot of Service Center interface for managing redirect rules](images/manage-redirect-rules-sc.png "Managing Redirect Rules in Service Center")  
 
 You can import or export redirect rules using Excel files. To import redirect rules using an Excel file, select **Import from Excel**.
 
-![Import from excel](images/import-excel-sc.png)
+![Screenshot showing the option to import redirect rules from an Excel file in Service Center](images/import-excel-sc.png "Importing Redirect Rules from Excel")
 
 The file used to import the redirect rules must comply with the following:
 
@@ -280,4 +280,4 @@ To create a dynamic title for a screen, follow these steps:
 1. In the screen properties, double-click the **Title** property. 
 1. In the opened **Expression** editor, enter an expression that sets the title value during runtime. For example, `"More about" + ProductTitle`.  
 
-![Dynamic title property](images/dynamic-title-property-ss.png)  
+![Screenshot of Service Studio showing how to set a dynamic title property for a screen](images/dynamic-title-property-ss.png "Dynamic Title Property in Service Studio")  

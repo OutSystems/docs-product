@@ -24,7 +24,7 @@ OnTabChange  |  Triggered when switching tabs.  |  _False_
 
 ## Layout and Classes
 
-![](images/tabs-layout-classes-diag.png)
+![Diagram illustrating the layout and CSS classes for the Tabs UI pattern in mobile and reactive web apps](images/tabs-layout-classes-diag.png "Tabs Layout and Classes Diagram")
 
 ## CSS Selectors
 

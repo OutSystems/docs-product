@@ -107,19 +107,19 @@ denied errors while trying to remove them.
 However, Erlang may lock files for a short time; it's worth repeating the
 operation to see if it works a second time.
 
-![error](https://user-images.githubusercontent.com/102377102/185116450-af2ae9e8-c80c-43d8-a4ff-9efff4547d64.png)
+![Screenshot showing an 'Access Denied' error message during the upgrade process](https://user-images.githubusercontent.com/102377102/185116450-af2ae9e8-c80c-43d8-a4ff-9efff4547d64.png "Access Denied Error Message")
 
 If this doesn’t solve the issue, follow the next steps in order:
 
 1. Navigate to the directory and find which files haven't been able to be removed (C:\Program Files\OutSystems\Platform Server\thirdparty\Erlang\erts-XX.X\bin);
-![folder](https://user-images.githubusercontent.com/102377102/185119006-4a2e1244-5bbc-4262-b53f-d90ef30b0662.png)
+![Image depicting locked files in the Erlang installation directory that cannot be removed](https://user-images.githubusercontent.com/102377102/185119006-4a2e1244-5bbc-4262-b53f-d90ef30b0662.png "Locked Files in Installation Directory")
 
 1. Open a program to view real-time resource information about software and
    hardware on your computer, like Resource Monitor (for Windows) and search
    for the file(s) which have access denied and couldn't be removed;
 
 1. Right-click on the locked file and select “End Process”;
-![endProcess](https://user-images.githubusercontent.com/102377102/185119206-ccd755f7-fe99-48bd-8e33-3ed092c7b786.png)
+![Resource Monitor window highlighting a locked file with an option to end the process](https://user-images.githubusercontent.com/102377102/185119206-ccd755f7-fe99-48bd-8e33-3ed092c7b786.png "Resource Monitor Highlighting Locked File")
 
 1. Once you stop the processes locking the folder, you can remove the files;
 

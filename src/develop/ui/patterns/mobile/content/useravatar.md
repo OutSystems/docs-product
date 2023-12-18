@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the User Avatar UI Pattern to display a user's initials or their image in a circular badge.
 
-![](<images/useravatar-4-ss.png>)
+![Screenshot showing an example of a User Avatar circular badge with user initials](images/useravatar-4-ss.png "User Avatar Circular Badge Example")
 
 **How to use the User Avatar UI Pattern**
 
@@ -29,7 +29,7 @@ The following example demonstrates how you can display the initials of the regis
 
     The User Avatar widget is displayed.
 
-    ![](<images/useravatar-1-ss.png>)
+    ![Screenshot of the User Avatar widget in the Service Studio toolbox](images/useravatar-1-ss.png "User Avatar Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -43,19 +43,19 @@ The following example demonstrates how you can display the initials of the regis
 
 1. From the Toolbox, drag the User Avatar widget into the Main Content area of your application's screen.
 
-    ![](<images/useravatar-2-ss.png>)
+    ![Screenshot illustrating how to drag the User Avatar widget into the main content area of an application's screen](images/useravatar-2-ss.png "Dragging User Avatar Widget into Main Content Area")
 
 1. To create an aggregate (in this example to retrieve all the users on the platform), right-click the screen name and select **Fetch Data from Database**.
 
-    ![](<images/useravatar-3-ss.png>)
+    ![Screenshot showing the option to create an aggregate to fetch data from the database](images/useravatar-3-ss.png "Creating an Aggregate to Fetch Data from Database")
 
 1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **OK**. In this example, we select the **User** entity.
 
-    ![](<images/useravatar-5-ss.png>)
+    ![Screenshot of selecting the User entity from the Select Source pop-up to add to the User Avatar](images/useravatar-5-ss.png "Adding a Database Entity for User Avatar")
 
     The aggregate **GetUsers** is created.
 
-    ![](<images/useravatar-6-ss.png>)
+    ![Screenshot of the newly created GetUsers aggregate in Service Studio](images/useravatar-6-ss.png "Aggregate GetUsers Created")
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen name.
 
@@ -67,13 +67,13 @@ The following example demonstrates how you can display the initials of the regis
 
     Note: You can also add the expression by navigating through the Expression Editor's **Scope** tree and double-clicking on the **Name** output parameter.
 
-    ![](<images/useravatar-7-ss.png>)
+    ![Screenshot of setting the Name property in the User Avatar widget using the Expression Editor](images/useravatar-7-ss.png "Setting Name Property in User Avatar Widget")
 
     The **Name** property is now set to display the Name property of the aggregate you created earlier, which gets and displays the names of the registered users on your platform.
 
 1. On the **Properties** tab, you can also customize User Avatar's look and feel by setting any of the optional properties, for example, the color, shape, and size. The following example displays a blue, medium-sized, circle badge.  
 
-    ![](<images/useravatar-8-ss.png>)
+    ![Screenshot showing customization options for the User Avatar's color, shape, and size](images/useravatar-8-ss.png "Customizing User Avatar Appearance")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

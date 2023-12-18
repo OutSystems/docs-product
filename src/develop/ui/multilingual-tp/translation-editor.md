@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 The **translation editor** lets you translate text and manage your translation directly from Service Studio. To open the editor go to the **Data** > right-click the **Multilingual Locales** folder > click **Edit Translations**.
 
-![Menu to open translation editor](images/opening-translation-editor-ss.png)
+![Screenshot showing how to open the translation editor in Service Studio by navigating through the Data menu and right-clicking the Multilingual Locales folder.](images/opening-translation-editor-ss.png "Opening the Translation Editor in Service Studio")
 
 Translation editor also opens when you [add a new translation language](translate-your-app.md).
 
@@ -26,7 +26,7 @@ Once you open the translation editor, you can:
 * **Navigate to a text in the module** by double-clicking a **Text** field to see the text in context.
 * **See the translation progress**, as it shows in the **Statistics** section (5).
 
-![Translation editor overview](images/translation-editor-overview-ss.png)
+![Screenshot of the translation editor interface in Service Studio highlighting the areas for translating text, switching languages, setting text behavior, filtering searches, navigating text in the module, and viewing translation progress.](images/translation-editor-overview-ss.png "Translation Editor Overview in Service Studio")
 
 <div class="info" markdown="1">
 

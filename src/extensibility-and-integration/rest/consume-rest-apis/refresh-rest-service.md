@@ -19,19 +19,19 @@ To refresh a REST API service:
 
 1. Under **REST**, right-click the REST API and select **Refresh REST API**. In this example, the name of the REST API is **Customers**.
 
-    ![Select Refresh REST API](images/select-refresh-rest-api-ss.png)
+    ![Screenshot showing how to select the Refresh REST API option in Service Studio](images/select-refresh-rest-api-ss.png "Select Refresh REST API Option")
 
 1. In the Refresh REST API popup, click **Yes**. 
 
     When you click **Yes**, any changes made to the previous version are lost.  
 
-    ![Confirm Refresh REST API](images/confirm-refresh-rest-api-ss.png)
+    ![Popup confirmation dialog for refreshing REST API in Service Studio](images/confirm-refresh-rest-api-ss.png "Confirm Refresh REST API")
 
 1. Enter the REST API URL or upload a new file, and click **Refresh Methods**. 
 
     In this example, the URL points to a JSON file that contains the complete list of REST methods.
 
-    ![Enter REST API url or upload a new file](images/enter-rest-api-url-ss.png)
+    ![Entering the REST API URL in the Refresh REST API popup in Service Studio](images/enter-rest-api-url-ss.png "Enter REST API URL")
 
 1. Select the methods you would like to consume. 
     
@@ -54,7 +54,7 @@ To refresh a REST API service:
 
     This example shows all available methods selected. **GetCustomersWithOrders** shows as **Deleted**, which means you can't select it.
 
-    ![All available methods](images/all-available-methods-ss.png)
+    ![Selecting methods to consume in the REST API refresh process in Service Studio](images/all-available-methods-ss.png "Select REST API Methods to Consume")
 
 1. Click **Finish** to add the selected methods.
 
@@ -74,7 +74,7 @@ To manually update a REST method:
 
 1. Update the REST API Method information to reflect the change you want to execute, such as adding new parameters to the request structure:
 
-    ![Add new parameter to the resquest structure](images/adding-new-parameter-request-structure-ss.png) 
+    ![Adding a new parameter to the request structure of a REST API method in Service Studio](images/adding-new-parameter-request-structure-ss.png "Add New Parameter to Request Structure") 
 
 1. Click **Finish**. 
 
@@ -84,24 +84,24 @@ When updating a [multipart/form-data method](consume-multipart-form-data.md), co
 
 * **Non-binary lists:** since everything is sent in the same part, the **Request Sample** field has its content encapsulated in [].
 
-    ![Request sample with a non-binary list](images/non-binary-list-ss.png)
+    ![Representation of a non-binary list in the Request Sample field in Service Studio](images/non-binary-list-ss.png "Non-binary List Representation")
 
     The data type is set to **Integer List**:
 
-    ![Data type set to **Integer List**](images/data-type-integer-list-ss.png)
+    ![Setting the data type to Integer List for a REST API method in Service Studio](images/data-type-integer-list-ss.png "Data Type Integer List")
 
 * **Binary lists or a dynamic number of parts:** There are as many parts as elements in the list. Therefore, the part representing a dynamic number of parts inside the **Request Sample** field has its name encapsulated in {}, since the name of each item of the part is a variable.
 
-    ![Request sample with a binary list](images/binary-list-ss.png)
+    ![Representation of a binary list in the Request Sample field in Service Studio](images/binary-list-ss.png "Binary List Representation")
 
     The data type is set to **RequestPart List**:
 
-    ![Data type set to **RequestPart List**](images/requestpart-list-ss.png)
+    ![Setting the data type to RequestPart List for a REST API method in Service Studio](images/requestpart-list-ss.png "RequestPart List Data Type")
 
 ## Adapt your application to the changes
 
 When you change the definition of the REST API method, OutSystems automatically updates the REST API Method and the associated structures according to your changes:
 
-![REST API Method and structures updated](images/structures-updated-ss.png)
+![Screenshot showing the updated REST API structures in Service Studio after changes](images/structures-updated-ss.png "REST API Structures Updated")
 
 You can now adapt the action flows or screens of your application to reflect the updated functionality.

@@ -26,7 +26,7 @@ Rule Line
 Rule Group Output
 :   This is the output that will be delivered if all the Rule Lines in the Rule Group for a specific Rule have been met. This may be, for example, a simple “True or False” or something more complex such as a list of Ids, Statuses or Groups.
 
-![](images/rules-engine-diag.png)
+![Diagram illustrating the components of the rules engine including Rule, Rule Group, Rule Line, and Rule Group Output](images/rules-engine-diag.png "Rules Engine Diagram")
 
 ## Setting up your first rule
 

@@ -17,7 +17,7 @@ Before building your case management app, you should consider how best to do so.
 
 Depending on who’s building the app, the complexity, and what type of case management app you want to develop, it's important to choose the right tool for building it. Simple applications can be built using CMf, however, for rapid development and by anyone in the business, we recommend using WB. For medium and complex apps, we recommend using CMf.
 
-![architecture](images/cmf-wb-diag.png)
+![Flowchart illustrating the decision process for choosing between Case Management Framework and Workflow Builder for app development](images/cmf-wb-diag.png "Comparison between Case Management Framework and Workflow Builder")
 
 To read more about Workflow Builder go to the [Introduction to Workflow Builder article](workflow-builder/intro.md), or to start building CM apps with it, go to the [Using Workflow Builder procedure](workflow-builder/how-use.md).
 

@@ -18,7 +18,7 @@ You can use the Time Picker UI Pattern to allow users input a time of day in eit
     
     The Time Picker widget is displayed.
 
-    ![Time Picker widget](<images/timepicker-widget-ss.png>)
+    ![Screenshot of the Time Picker widget in the Service Studio toolbox](images/timepicker-widget-ss.png "Time Picker Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -32,45 +32,45 @@ You can use the Time Picker UI Pattern to allow users input a time of day in eit
 
 1. From the Toolbox, drag the Time Picker widget into the Main Content area of your application's screen.
 
-    ![Drag Time Picker widget to screen](<images/timepicker-widget-drag-ss.png>)
+    ![Dragging the Time Picker widget into the Main Content area of an application screen in Service Studio](images/timepicker-widget-drag-ss.png "Dragging Time Picker Widget to Screen")
 
     By default, the Time Picker contains an **Input** widget (type Text).
 
 1. Create a variable by selecting the **Input** widget, and, on the **Properties** tab, select **New Local Variable** from the **Variable** dropdown.
 
-    ![Create local variable](<images/timepicker-local-variable-ss.png>)
+    ![Creating a new local variable for the Time Picker input widget in Service Studio](images/timepicker-local-variable-ss.png "Creating a Local Variable for Time Picker")
 
     This variable stores any value entered into or received by the input widget.
 
 1. Enter a name for the variable (in this example **TimeVar**) and select **Time** as the **Data Type**.
 
-    ![Enter variable name](<images/timepicker-timevar-ss.png>)
+    ![Entering a name for the Time Picker variable as TimeVar and selecting Time as the data type in Service Studio](images/timepicker-timevar-ss.png "Naming the Time Variable")
 
 1. Right-click your main screen and add another local variable.
 
-    ![Add a new local variable](<images/timepicker-new-loc-var-ss.png>)
+    ![Adding a new local variable in Service Studio for the Time Picker](images/timepicker-new-loc-var-ss.png "Adding a New Local Variable")
 
     This variable stores the time selected by the user.
 
 1. Enter a name for the variable (in this example **TimePicked**) and select **Time** as the **Data Type**.
 
-    ![Enter a variable name](<images/timepicker-timepicked-ss.png>)
+    ![Entering a name for the Time Picked variable and selecting Time as the data type in Service Studio](images/timepicker-timepicked-ss.png "Naming the Time Picked Variable")
 
 1. To create an **OnSelect** event for the Time Picker, select the widget and on the **Properties** tab, from the **Handler** dropdown, select **New Client Action**.
 
-    ![Create a new client action](<images/timepicker-clientaction-ss.png>)
+    ![Creating a new client action for the OnSelect event of the Time Picker in Service Studio](images/timepicker-clientaction-ss.png "Creating a New Client Action for Time Picker")
 
 1. To access the time selected by the user, create an **Assign** and set the **TimePicked** to **SelectedTime**.
 
-    ![Create an Assign](<images/timepicker-assign-ss.png>)
+    ![Creating an Assign to set the TimePicked variable to the selected time in Service Studio](images/timepicker-assign-ss.png "Creating an Assign for Time Picked")
 
 1. You can configure the Time Picker by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties. For more configurations, expand the **OptionalConfigs** property.
 
-    ![Set the properties](<images/timepicker-properties-ss.png>)
+    ![Configuring the properties of the Time Picker UI Pattern in Service Studio](images/timepicker-properties-ss.png "Setting Properties for Time Picker")
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 
-![Result](<images/timepicker-result-ss.png>)
+![Final result showing the Time Picker implemented on an application screen](images/timepicker-result-ss.png "Time Picker Result on Screen")
 
 ## Properties
 

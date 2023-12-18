@@ -28,11 +28,11 @@ The **Deployment Plans** screen contains a list of past and current deployment p
 
 Open the Deployment Plans screen by clicking **Deployment Plans** under the **Applications** area.
 
-![](images/deployment-plans-option-lt.png)
+![Screenshot of the Deployment Plans option under the Applications area in LifeTime](images/deployment-plans-option-lt.png "Deployment Plans Option in LifeTime")
 
 From this screen you can perform several operations like retrying an aborted deployment plan, or reusing a finished deployment plan. The available operations on each plan depend on the plan's status.
 
-![](images/deployment-plans-list-lt.png)
+![Screenshot showing a list of past and current deployment plans with their status in LifeTime](images/deployment-plans-list-lt.png "List of Deployment Plans in LifeTime")
 
 ## Reusing a deployment plan { #reuse }
 
@@ -52,13 +52,13 @@ To reuse a deployment plan from the Deployment Plans screen, do the following:
 
 1. Find the plan you wish to reuse in the plans list. You can search for the plan using several criteria. Expand the **Advanced filters** for more search options.
 
-    ![](images/deployment-plans-reuse-lt.png)
+    ![Screenshot of the Deployment Plans screen with the Reuse Plan option highlighted in LifeTime](images/deployment-plans-reuse-lt.png "Reusing a Deployment Plan in LifeTime")
 
 1. Click **Reuse Plan**. This operation is available for all finished plans that weren't aborted.
 
 1. In the pop-up window, choose the **source** and the **target** environments for the new plan.
 
-    ![](images/deployment-plans-reuse-popup-lt.png)
+    ![Screenshot of the popup window for reusing a deployment plan with options for source and target environments in LifeTime](images/deployment-plans-reuse-popup-lt.png "Reuse Deployment Plan Popup in LifeTime")
 
 You can choose to keep the tags that were in the source plan by selecting **Keep the tags used in the original plan**.  
 
@@ -92,7 +92,7 @@ To retry a deployment plan from the Deployment Plans screen, do the following:
 
 1. Find the aborted plan you wish to retry in the plans list. You can search for the plan using several criteria. Expand the **Advanced filters** for more search options.
 
-    ![](images/deployment-plans-retry-lt.png)
+    ![Screenshot of the Deployment Plans screen with the Retry Plan option highlighted for an aborted plan in LifeTime](images/deployment-plans-retry-lt.png "Retrying an Aborted Deployment Plan in LifeTime")
 
 1. Click **Retry Plan**. This operation is available for all aborted plans.
 

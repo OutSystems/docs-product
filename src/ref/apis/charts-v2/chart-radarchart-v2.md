@@ -14,35 +14,35 @@ This example shows how you can create a simple Radar Chart with multiple series 
 
 1. From the Toolbox, drag the **Radar Chart** widget to the Screen.
 
-    ![Drag the Radar Chart widget to the screen ](images/chartradardrag-ss.png)
+    ![Screenshot showing the Radar Chart widget being dragged onto the screen in the development environment](images/chartradardrag-ss.png "Dragging Radar Chart Widget")
 
 1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.
 
-    ![Expand the Data Point List property](images/chartradar-expand-ss.png)
+    ![Screenshot of the Properties tab with the DataPointList property expanded to show options](images/chartradar-expand-ss.png "Expanding DataPointList Property")
 
 1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
 
     This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the radar chart.  
 
-    ![Set the data point](images/chartradar-datapoint-ss.png)
+    ![Screenshot illustrating how to set the Label and Value properties for a data point in the Radar Chart](images/chartradar-datapoint-ss.png "Setting Data Point Properties")
 
 1. Set the **SeriesName** property.
 
-    ![Set the series name](images/chartradar-seriesname-ss.png)
+    ![Screenshot showing the SeriesName property field in the Radar Chart widget's Properties tab](images/chartradar-seriesname-ss.png "Setting SeriesName Property")
 
 1. To add more data points, repeat steps 2 and 3. 
 
-    ![Add more data points](images/chartradar-extra-datapoints-ss.png)
+    ![Screenshot demonstrating how to add more data points to the Radar Chart by repeating previous steps](images/chartradar-extra-datapoints-ss.png "Adding Additional Data Points")
 
 1. To customize a Series, in the AddOns placeholder, click **SeriesStyling** and on the **Properties** tab, set the **SeriesName** property to the Series you want to customize (in this example, Series 3).
 
-    ![Customize the Series](images/chartradar-customize-series-ss.png)
+    ![Screenshot of the SeriesStyling option in the AddOns placeholder used to customize a series in the Radar Chart](images/chartradar-customize-series-ss.png "Customizing a Series in Radar Chart")
 
 1. To customize the Series type, on the **Properties** tab, set the **SeriesType** to **Entities.SeriesType.Area**. This sets the Series type to Area.  
 
-    ![Set the Series type](images/chartradar-series-type-ss.png)
+    ![Screenshot showing the SeriesType property set to Entities.SeriesType.Area in the Radar Chart Properties tab](images/chartradar-series-type-ss.png "Setting Series Type to Area")
 
 After following these steps, you can publish your module:
 
-![Result](images/chartradar-result.png)
+![Image of the final Radar Chart result after publishing the module](images/chartradar-result.png "Final Radar Chart Result")
 

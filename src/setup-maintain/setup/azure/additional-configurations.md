@@ -22,7 +22,7 @@ To access the machines remotely through RDF, you need to create a jump server - 
 
 1. Discover the IP of a machine you want to connect to. Access the machine in the Azure Portal and in the left blade choose **Networking**. The IP shows next to the label **Private IP**.
 
-    ![Network details of a machine](images/additconf-private-ip.png?width=500)  
+    ![Screenshot showing the Networking section in Azure Portal with the Private IP address highlighted](images/additconf-private-ip.png "Azure Portal Networking Section")  
 
 1. After you connect remotely to the jump server, use it to connect to a machine inside the group by using the private IP of the machine.
 
@@ -36,15 +36,15 @@ To add the trusted certificate to the application gateway of the environment, do
 
 1. Go to the details of the **application gateway** that was created for the environment and choose **Listeners** from the menu to the left.
 
-    ![Application gateway](images/additconf-image12.png?width=700)  
+    ![Screenshot of the Application Gateway details page with Listeners option highlighted in the Azure Portal](images/additconf-image12.png "Application Gateway Listeners")  
 
 1. Select the **appGatewayHttpsListener**.
 
-    ![appGatewayHttpsListener](images/additconf-image20.png?width=700)  
+    ![Screenshot of the appGatewayHttpsListener selected in the Azure Portal](images/additconf-image20.png "appGatewayHttpsListener Selection")  
 
 1. Add a new certificate by uploading the .pfx file and providing its password. Name it according to your preference.
 
-    ![The certificate combo box](images/additconf-image11.png)
+    ![Screenshot showing the process of adding a new SSL certificate to the Application Gateway in Azure Portal](images/additconf-image11.png "Adding SSL Certificate to Application Gateway")
 
 Note that you can set up the end-to-end encryption for traffic in Microsoft Azure, as described in the Microsoft document [Configure end to end SSL by using Application Gateway with PowerShell](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-end-to-end-ssl-powershell).
 
@@ -56,27 +56,27 @@ To scale the number of front-ends of an OutSystems environment on Microsoft Azur
 
 1. Go to your OutSystems resource group and list only the "Virtual machine scale sets" resources.
 
-    ![Virtual machine scale sets](images/additconf-image6.png?width=700)  
+    ![Screenshot of the Azure Portal showing the Virtual Machine Scale Sets in the OutSystems resource group](images/additconf-image6.png "Azure Virtual Machine Scale Sets")  
 
 1. Select the virtual machine scale set corresponding to your OutSystems Production environment.
 
-    ![Resource overview](images/additconf-image2.png?width=700)
+    ![Screenshot of the Azure Portal with the Virtual Machine Scale Set for the OutSystems Production environment highlighted](images/additconf-image2.png "Selecting Virtual Machine Scale Set")
 
 1. Choose **Scaling** from the menu to the left.
 
-    ![Scaling](images/additconf-image5.png?width=700)  
+    ![Screenshot of the Scaling option in the menu for a Virtual Machine Scale Set in the Azure Portal](images/additconf-image5.png "Scaling Virtual Machine Scale Set")  
 
 1. Drag the slide or input the number of servers you want to add to your environment and click **Save**.
 
-    ![The Instance Count slide](images/additconf-image3.png?width=700)
+    ![Screenshot showing the interface to adjust the number of instances in a Virtual Machine Scale Set in Azure Portal](images/additconf-image3.png "Adjusting Scale Set Instance Count")
 
 Choosing **Instances** from the menu to the left, you can see the progress of the deployment.
 
-![Instances section](images/additconf-image1.png?width=700)
+![Screenshot of the Azure Portal showing the progress of deployment for new instances in a Virtual Machine Scale Set](images/additconf-image1.png "Deployment Progress of Scale Set Instances")
 
 When the deployment finishes, you will see in the Service Center console for your environment that the new front-end servers are already running.
 
-![Monitoring in Service Center](images/additconf-image25.png?width=700)
+![Screenshot of the Service Center console in OutSystems showing the new front-end servers running after scaling](images/additconf-image25.png "New Front-end Servers Running")
 
 ## Update Azure Scale Sets to a Newer Platform Version
 
@@ -84,27 +84,27 @@ Follow these steps to update a Platform Server deployed on Microsoft Azure scale
 
 1. Go to **Service Center** > **Administration** > **Servers** and disable the servers that are part of the scale set. Deleting is optional, but advised, to ensure you stay within the limit of the front-ends your license permits.
 
-    ![Front ends in the environment](images/azure-scale-sets-delete-env.png?width=700)
+    ![Screenshot of the Service Center in OutSystems with the option to disable servers in a scale set](images/azure-scale-sets-delete-env.png "Disabling Servers in Service Center")
 
 1. Go to your Azure Portal and make sure **Scaling** > **Configure** > **Instance count** is 0.
 
-    ![Scale set instance count](images/azure-scale-sets-instance-count.png?width=700)
+    ![Screenshot of the Azure Portal showing the Instance count configuration set to 0 for a Virtual Machine Scale Set](images/azure-scale-sets-instance-count.png "Azure Scale Set Instance Count Configuration")
 
 1. Update the Platform Server in your Deployment Controller, according to the checklist that opens in your browser when you run the update binary.
 
 1. Go to the [Base Image Versioning table](<https://github.com/OutSystems/AzureARMTemplates/#base-image-versioning>) of the available image versions and note the version that matches the Platform Server you installed/updated in your Deployment Controller VM.
 
-    ![Azure image versions](images/azure-image-versions.png?width=700)
+    ![Screenshot of the Base Image Versioning table on GitHub indicating available image versions for OutSystems](images/azure-image-versions.png "Base Image Versioning Table")
 
 1. Update the Platform version by running the following command in your Azure Portal Powershell: `Update-AzVmss -ResourceGroupName "your_resource_group" -VMScaleSetName "your_scaleset_name" -ImageReferenceVersion your_desired_version`
 
     Here is an example:
 
-    ![Example of command in Azure PowerShell](images/azure-powershell-image-update.png?width=700)
+    ![Screenshot of the Azure Portal Powershell interface with a command to update the Platform version of a Virtual Machine Scale Set](images/azure-powershell-image-update.png "Updating Platform Version in Azure Powershell")
 
     And here is the expected result. Notice that the version is updated to 1.6.0, which corresponds to the Platform Server 11.0.424.0:
 
-    ![Updated image](images/azure-updated-image.png?width=700)
+    ![Screenshot showing the updated Platform version in a Virtual Machine Scale Set in the Azure Portal](images/azure-updated-image.png "Updated Platform Version in Azure")
 
 1. Set the desired **Instance count** in the Azure Portal .
 

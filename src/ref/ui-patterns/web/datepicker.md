@@ -18,17 +18,17 @@ Applies only to Traditional Web Apps.
 
 ## Layout and Classes
 
-![](<images/datepicker-image-3.png?width=600>)
+![Screenshot of the Date Picker layout for Traditional Web Apps](images/datepicker-image-3.png "Date Picker Layout")
 
-![](<images/datepicker-image-4.png?width=600>)
+![Image showing the CSS classes used in the Date Picker component](images/datepicker-image-4.png "Date Picker Classes")
 
 ### Month Picker
 
-![](<images/datepicker-image-5.png?width=600>)
+![Example of the Month Picker interface in the Date Picker component](images/datepicker-image-5.png "Month Picker")
 
 ### Year Picker
 
-![](<images/datepicker-image-6.png?width=600>)
+![Example of the Year Picker interface in the Date Picker component](images/datepicker-image-6.png "Year Picker")
 
 ## Events
 
@@ -47,12 +47,12 @@ Applies only to Traditional Web Apps.
 
 1. Expand the AdvancedFormat property.
 
-    ![](<images/datepicker-image-9.png>)
+    ![Illustration of the Advanced Format property expansion in the Date Picker settings](images/datepicker-image-9.png "Advanced Format Property")
 
 1. Add `{ BeginEmpty: true }` in the AdvancedFormatJSON. 
 
 
-    ![](<images/datepicker-image-11.png>)
+    ![Configuration setting for starting with a blank input in the Date Picker](images/datepicker-image-11.png "Blank Input Configuration")
 
 ### Have a flat datepicker
 
@@ -60,13 +60,13 @@ Applies only to Traditional Web Apps.
 
 1. Expand the AdvancedFormat property.
 
-    ![](<images/datepicker-image-9.png>)
+    ![Illustration of the Advanced Format property expansion in the Date Picker settings](images/datepicker-image-9.png "Advanced Format Property")
 
 1. Add `{ bound: false }` in the AdvancedFormatJSON. 
 
 1. To use events to pick the chosen date, use OnSelect instead of OnClose.
 
-    ![](<images/datepicker-image-10.png>)
+    ![Configuration setting for having a flat Date Picker without bounding to an input field](images/datepicker-image-10.png "Flat Datepicker Configuration")
 
 ### Add Events
 
@@ -74,7 +74,7 @@ Applies only to Traditional Web Apps.
 
 1. Expand the AdvancedFormat property.
 
-    ![](<images/datepicker-image-9.png>)
+    ![Illustration of the Advanced Format property expansion in the Date Picker settings](images/datepicker-image-9.png "Advanced Format Property")
 
 1. Add your date time list in the EventList.
 
@@ -86,5 +86,5 @@ Applies only to Traditional Web Apps.
 
 1. Create an onClose or OnSelect event and use the date for your logic.
 
-    ![](<images/datepicker-image-12.png>)
+    ![Example of setting a custom date format in the Date Picker component](images/datepicker-image-12.png "Date Format Configuration")
 

@@ -20,7 +20,7 @@ However, if the compilation of a module in the current platform version isn't su
 
 If you have modules ready for deployment, you can use the Deploy All feature in Service Center. To do so, go to **Factory** > **Upgrades**, and select **Deploy**.
 
-![Selecting the **Deploy** operation in Upgrades page of Service Center](images/deploy-sc.png)
+![Screenshot of the Deploy All feature in the OutSystems Service Center](images/deploy-sc.png "Service Center Deploy All Feature")
 
 
 ## Modules deployment improvements
@@ -44,18 +44,18 @@ The  modules deployment process must be complete before you perform the followin
 
 If you try to perform any of the above operations for a module while the deployment is in progress, an error occurs. See below an example of an attempt to publish a module while the deployment is in progress: 
 
-![Error shown in the Modules page of Service Center](images/error-deploy-sc.png)
+![Error message displayed when attempting to publish a module during deployment in Service Center](images/error-deploy-sc.png "Error During Module Deployment")
 
 
 ## Checking the progress of the modules deployment
 
 After selecting **Deploy** to start the modules deployment, Service Center automatically shows the progress of the deployment. 
 
-![Deployment progress details](images/deploy-progress-sc.png)
+![Service Center screen showing the progress of modules deployment](images/deploy-progress-sc.png "Modules Deployment Progress")
 
 If you leave that page and want to access it again, go to **Factory** > **Upgrades** and select **Deployment** on the corresponding row of the report table.
 
-![Select Deployment details](images/select-deploy-details-sc.png)
+![Navigation to the deployment details in Service Center after initiating modules deployment](images/select-deploy-details-sc.png "Accessing Deployment Details")
 
 
 ## After the modules deployment finishes
@@ -64,7 +64,7 @@ After the modules deployment finishes successfully, your environment is fully up
 
 The report table displays all the previous deployment executions and the corresponding status. To access the deployment details of each execution, select **Deployment** on the corresponding row.
 
-![Deployment finished details](images/select-deploy-finished-sc.png)
+![Upgrades report table in Service Center showing the status of modules deployment](images/select-deploy-finished-sc.png "Deployment Finished Report")
 
 If an error occurs during the modules deployment, relaunch the deployment operation by selecting the **Deploy** button again. Subsequent module deployments will only deploy the modules that failed during the previous run. If the error keeps occurring, publish your solution instead of using the Deploy All feature.
 

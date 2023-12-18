@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Animate UI Pattern to create animations within your app. This UI pattern allows you to emphasize elements as they appear on screen which enhances the overall usability of the app.
 
-![](images/animation.gif)
+![GIF demonstrating a default animation effect in an app](images/animation.gif "Example of default animation")
 
 **How to use the Animate UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Animate UI Pattern to create animations within your app. This UI
 
     The Animate widget is displayed.
 
-    ![](<images/animate-3-ss.png>)
+    ![Screenshot showing the Animate widget in OutSystems Service Studio](images/animate-3-ss.png "Animate widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,7 +40,7 @@ You can use the Animate UI Pattern to create animations within your app. This UI
 
 1. From the Toolbox, drag the Animate widget into the Main Content area of your application's screen.
 
-    ![](<images/animate-1-ss.png>)
+    ![Screenshot of dragging the Animate widget into the Main Content area in OutSystems Service Studio](images/animate-1-ss.png "Dragging Animate widget")
 
     By default, the Animate widget contains a Content placeholder.
 
@@ -48,11 +48,11 @@ You can use the Animate UI Pattern to create animations within your app. This UI
 
     In this example, we add an image by dragging the Image widget into the Content placeholder, and on the **Properties** tab, from the **Image** dropdown, selecting image from the sample OutSystems UI images.
 
-    ![](<images/animate-4-ss.png?width=800>)
+    ![Screenshot of adding an image to the Content placeholder of the Animate widget in OutSystems Service Studio](images/animate-4-ss.png "Adding content to Animate widget")
 
 1. Select the Animate widget, and on the **Properties** tab, set the relevant properties, for example, where you want the animation to enter the screen and at what speed.
 
-    ![](<images/animate-5-ss.png>)
+    ![Screenshot of setting properties for the Animate widget in OutSystems Service Studio](images/animate-5-ss.png "Setting Animate widget properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

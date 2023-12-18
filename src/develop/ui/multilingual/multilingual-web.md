@@ -97,7 +97,7 @@ To export your translatable resources follow these steps:
 
         Note: Depending on the .NET Framework you are using, the translatable resource files can have more attributes than these; these extra attributes are ignored by Service Studio.
 
-        ![](images/multilingual-web-1.png)
+        ![Screenshot of the Export Language Resources dialog in Service Studio showing options for Excel and .resX file formats](images/multilingual-web-1.png "Export Language Resources Dialog")
 
     <div class="info" markdown="1">
 
@@ -164,21 +164,21 @@ You may change the language in which the application is running using the [SetCu
 
 As an example, use this System Action to allow the end user to change the operating language of your application:
 
-![](images/multilingual-web-2.png)
+![Interface showing flags for language selection in a multilingual web application](images/multilingual-web-2.png "Language Selection with Flags")
 
 Each flag has a link that, when pressed, invokes a screen action that changes the language locale. Here is the example for the Spanish flag:
 
 **Spanish Flag Link**
 
-![](images/multilingual-web-3.png)
+![Link represented by a Spanish flag to change the application language to Spanish](images/multilingual-web-3.png "Spanish Flag Link")
 
 **'ChangeLanguage' Action Flow**
 
-![](images/multilingual-web-4.png)
+![Flowchart of the 'ChangeLanguage' action in Service Studio](images/multilingual-web-4.png "'ChangeLanguage' Action Flow")
 
 **'SetCurrentLocale' Properties**
 
-![](images/multilingual-web-5.png)
+![Properties dialog for the 'SetCurrentLocale' system action in Service Studio](images/multilingual-web-5.png "'SetCurrentLocale' Properties")
 
 ## Display the Current Language to End User
 
@@ -186,4 +186,4 @@ You can obtain your application current language locale using the [GetCurrentLoc
 
 As an example, you may display to the end user a flag and the locale code (in [RFC 1766](<https://tools.ietf.org/html/rfc1766>) format) of the language which the application is operating:
 
-![](images/multilingual-web-6.png)
+![Display showing the current language locale with a flag and locale code in a multilingual web application](images/multilingual-web-6.png "Display Current Language")

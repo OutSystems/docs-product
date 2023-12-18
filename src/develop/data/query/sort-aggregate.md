@@ -49,17 +49,17 @@ In the following Sorting Example, a reactive application displays a list of empl
 
 1. Create a local variable and name it **SortAttribute**, then set the Data Type property to **text**.
 
-    ![List widget on a screen](images/sort-aggregate-ex-ss.png)
+    ![Screenshot of the SortingExample Reactive Web App setup in Service Studio with a local variable named SortAttribute.](images/sort-aggregate-ex-ss.png "Sorting Example Setup")
 
 1. Double-click on the aggregate **GetEmployees**.
 
 1. From the Sort tab, click **Add dynamic sort**, and then define the Local Variable as the value for the dynamic sort.
 
-    ![Add dynamic sort](images/sort-aggregate-ex1-ss.png)
+    ![Screenshot showing the process of adding a dynamic sort to the GetEmployees aggregate in Service Studio.](images/sort-aggregate-ex1-ss.png "Adding Dynamic Sort to Aggregate")
 
 1. From the toolbox, drag a **Button Group** widget to the top of the employees list and bind the variable **SortAttribute** with the Button Group.
 
-    ![Bind the variable to the Button Group](images/sort-aggregate-ex2-ss.png)
+    ![Screenshot of the Button Group widget on the SortingExample screen with SortAttribute variable bound to it.](images/sort-aggregate-ex2-ss.png "Button Group Widget Configuration")
 
 1. Remove one of the Button Group Items and rename the remaining Button Group Items to **Sort ASC** and **Sort DESC**.
 
@@ -69,12 +69,12 @@ In the following Sorting Example, a reactive application displays a list of empl
 
 1. On the ButtonGroup, define an event **On Change** as a new client action.
 
-    ![Define the event to sort](images/sort-aggregate-ex3-ss.png)
+    ![Screenshot depicting the setup of an On Change event for the ButtonGroup widget in the SortingExample application.](images/sort-aggregate-ex3-ss.png "Setting Up On Change Event")
 
 1. In the new client action, drag Refresh Data and select the data source as **GetEmployees**.
 
-    ![Define the logic to refresh the data](images/sort-aggregate-ex4-ss.png)
+    ![Screenshot illustrating the configuration of the Refresh Data action for the GetEmployees data source in the SortingExample app.](images/sort-aggregate-ex4-ss.png "Configuring Refresh Data in Client Action")
 
 1. Publish and test. Verify the list sorting changes after clicking the **Sort ASC** or **Sort DESC** buttons.  
 
-    ![Test the app](images/sort-aggregate-ex5-ss.gif)
+    ![Animated GIF demonstrating the sorting functionality in the SortingExample Reactive Web App after clicking Sort ASC and Sort DESC buttons.](images/sort-aggregate-ex5-ss.gif "Testing Sort Functionality")

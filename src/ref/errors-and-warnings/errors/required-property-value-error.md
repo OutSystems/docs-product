@@ -26,11 +26,11 @@ You need to set a valid value in the Value property.
 
 For an [Expression](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-expression.md), you need to define a [valid expression](../../../ref/logic/expressions/intro.md).
 
-![Location of Expression value](images/required-property-value-error.png?width=400)
+![Screenshot showing an example of a Required Property Value Error in the development environment](images/required-property-value-error.png "Required Property Value Error Example")
 
 For a [Button Group](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroup.md), set a valid value for the Value property of each of the options. 
 
-![Location of Button Group value](images/required-property-value-error-03.png?width=300)
+![Illustration of a Button Group widget with a missing Value property causing an error](images/required-property-value-error-03.png "Button Group Value Property Error")
 
 For a [Radio Group](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-radiogroup.md), set a valid value for the Value property of each of the options, and also ensure a value is set for the [Variable property](#variable-must-be-set). 
 
@@ -77,7 +77,7 @@ You need to set a valid value for the Variable property.
 
 For a [Radio Group](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-radiogroup.md), set a valid value for the Variable property, and also ensure a value is set for the [Value property](#value-must-be-set) of each of the options.
 
-![Location of Radio Group variable](images/required-property-value-error-02.png?width=300)
+![Example of a Radio Group widget with an unset Variable property resulting in an error](images/required-property-value-error-02.png "Variable Property Error in Radio Group")
 
 For an [Input](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-input.md), [Text Area](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-textarea.md), [Switch](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md), [Checkbox](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-checkbox.md), [Dropdown](../../lang/auto/servicestudio-plugin-nrwidgets-dropdown.md), or [Button Group](../../lang/auto/servicestudio-plugin-nrwidgets-buttongroup.md), set a valid value for the Variable property.
 

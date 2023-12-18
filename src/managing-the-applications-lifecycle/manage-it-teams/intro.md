@@ -27,6 +27,6 @@ OutSystems allows you to define the permissions of IT users using a [role-based 
 
 Manage your IT Teams in the **USER MANAGEMENT** area of your LifeTime console (`https://<lifetime_env>/lifetime`).
 
-![](images/intro-1.png)
+![Screenshot of the USER MANAGEMENT area in the OutSystems LifeTime console](images/intro-1.png "LifeTime Console User Management")
 
 To manage IT teams, you must be an infrastructure manager.

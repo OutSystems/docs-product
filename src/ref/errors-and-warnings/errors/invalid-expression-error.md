@@ -46,7 +46,7 @@ Depending on the type of [operand element](../../logic/expressions/operands.md),
 
 * If you are referencing an element, make sure that the element is in the scope of the current expression and that you entered the element correctly. In the [Expression Editor](../../../develop/logic/expression-editor.md), use the Scope Tree to insert the element.
 
-    ![](images/invalid-expression-01.png?width=400)
+    ![Screenshot showing an example of an invalid expression error in Service Studio](images/invalid-expression-01.png "Invalid Expression Error Example")
 
 * If you are writing a literal value in the expression, ensure you use the correct format:
     

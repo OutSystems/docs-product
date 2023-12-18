@@ -25,13 +25,13 @@ This data synchronization pattern is recommended for mobile apps where it is not
 
 The following is an overview of the Read/Write Data Last Write Wins pattern:
 
-1. ![](images/icon-client.png) Sends local storage data modified by the app back to the server. 
+1. ![Icon representing a mobile client in the Read/Write Data Last Write Wins pattern](images/icon-client.png "Client Icon") Sends local storage data modified by the app back to the server. 
 
-1. ![](images/icon-server.png) Updates database data with the one sent from local storage. 
+1. ![Icon representing a server in the Read/Write Data Last Write Wins pattern](images/icon-server.png "Server Icon") Updates database data with the one sent from local storage. 
 
-1. ![](images/icon-server.png) Sends updated database data. 
+1. ![Icon representing a server in the Read/Write Data Last Write Wins pattern](images/icon-server.png "Server Icon") Sends updated database data. 
 
-1. ![](images/icon-client.png) Deletes and recreates data in the local storage with the data received from the server. 
+1. ![Icon representing a mobile client in the Read/Write Data Last Write Wins pattern](images/icon-client.png "Client Icon") Deletes and recreates data in the local storage with the data received from the server. 
 
 Download the [sample module for the Read/Write Data Last Write Wins pattern](http://www.outsystems.com/forge/component/1638/Offline+Data+Sync+Patterns/), that uses companies as an example of data to synchronize. The following sections explain how to automatically generate this synchronization pattern and provide detailed descriptions of the data model and logic used in the sample module.
 
@@ -46,7 +46,7 @@ To automatically generate the logic needed to implement this pattern for an enti
 
 This option is only available if the local entity is linked to the database entity (with the Id as a foreign key to the database entity). That happens if you create local entities with a right click on **Local Storage** and choose **Add Entity from Database...**.
 
-![Create Action to Sync Data \(Read/Write\)](images/read-write-data-last-write-wins-accelerator.png)
+![Screenshot of the Read/Write Data Last Write Wins pattern accelerator in Service Studio](images/read-write-data-last-write-wins-accelerator.png "Read/Write Data Last Write Wins Accelerator")
 
 This creates the actions needed to implement the Read/Write synchronization pattern:
 
@@ -78,7 +78,7 @@ If you want this pattern to run in the [synchronization template mechanism](<../
 
 This sample defines a database entity `Company` and its local storage counterpart `LocalCompany`. Additionally, the `LocalCompany` entity defines three metadata attributes to keep track of the synchronization status of the records.
 
-![](images/read-write-data-last-write-wins-data-model.png)
+![Diagram of the data model for the Read/Write Data Last Write Wins synchronization pattern](images/read-write-data-last-write-wins-data-model.png "Read/Write Data Last Write Wins Data Model")
 
 The application logic must update the metadata attributes `IsFromServer` , `IsModified` and `IsActive` of the local entity according to the following:
 
@@ -91,7 +91,7 @@ The application logic must update the metadata attributes `IsFromServer` , `IsMo
 
 The following is a description of the logic of the `OfflineDataSync` client action:
 
-![Read-Write Data Last Write Wins Pattern OfflineDataSync](images/read-write-data-last-write-wins-offlinedatasync.png)
+![Flowchart illustrating the OfflineDataSync logic for the Read/Write Data Last Write Wins pattern](images/read-write-data-last-write-wins-offlinedatasync.png "OfflineDataSync Logic Flow")
 
 1. Obtains the list of locally added Company records. The aggregate uses the following filter:
 
@@ -120,7 +120,7 @@ The following is a description of the logic of the `OfflineDataSync` client acti
 
 The following is a description of the logic of the `ServerDataSync` server action:
 
-![](images/read-write-data-last-write-wins-serverdatasync.png)
+![Flowchart illustrating the ServerDataSync logic for the Read/Write Data Last Write Wins pattern](images/read-write-data-last-write-wins-serverdatasync.png "ServerDataSync Logic Flow")
 
 1. Iterates the list of locally added Company records and creates the new records in the database. To avoid collisions, the `Company.Id` is set to `NullIdentifier()` so that the records are created with new identifiers.
 

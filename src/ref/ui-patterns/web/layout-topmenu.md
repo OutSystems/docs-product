@@ -18,21 +18,21 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/layout-tm-1-diag.png>)
+![Diagram illustrating the layout and classes of the Layout Top Menu web block](images/layout-tm-1-diag.png "Layout Top Menu Diagram")
 
 ## Responsive behavior
 
 This layout comes with a default responsive behavior. On tablets it remains the same as on desktop. But on phones it breaks the content vertically, making the placeholders Title and Actions full-width.
 
-![](<images/layout-tm-3-ss.png>)
+![Screenshot showing the Layout Top Menu's responsive behavior on desktop and tablet devices](images/layout-tm-3-ss.png "Layout Top Menu on Desktop and Tablet")
 
 The menu also adapts to mobile, moving the navigation to a sidebar, toggled by a hamburger icon.
 
-![](<images/layout-tm-4-ss.gif>)
+![Animated GIF demonstrating the Layout Top Menu's responsive behavior on mobile devices with a sidebar navigation](images/layout-tm-4-ss.gif "Layout Top Menu Responsive Behavior on Mobile")
 
 On a mobile phone and tablet:
 
-![](<images/layout-tm-7-ss.png>)
+![Screenshot displaying the Layout Top Menu's appearance on mobile phones and tablets](images/layout-tm-7-ss.png "Layout Top Menu on Mobile Devices")
 
 ## Advanced
 
@@ -47,7 +47,7 @@ Here are some more advanced use-cases of the widget.
 1. Set your custom breakpoints (in pixels). On the example below the phone breaks is set to happen only when the Device with is at 200px.
 1. Publish and test.
 
-![](<images/layout-tm-5-ss.png>)
+![Screenshot of the process to customize responsive breakpoints for the Layout Top Menu](images/layout-tm-5-ss.png "Custom Responsive Breakpoints")
 
 ### Customize your content max-width
 
@@ -55,7 +55,7 @@ Here are some more advanced use-cases of the widget.
 1. In the Grid section, set your custom width (default value is 1280px) in the Max. Width parameter.
 1. Publish and test.
 
-![](<images/layout-tm-6-ss.png>)
+![Screenshot showing how to customize the content max-width in the Layout Top Menu](images/layout-tm-6-ss.png "Custom Content Max-Width Setting")
 
 ## Device compatibility
 

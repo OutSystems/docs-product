@@ -27,7 +27,7 @@ You can change the Attribute used for sorting.
 1. In the **Widget Tree**, locate the **Header Cell** of the row you want to sort by (or select the cell in the content editor).
 1. In the **Sort Attribute** drop-down combo box select the Attribute for sorting.
 
-    ![Pagination logic](<images/table-sort-attribute-ss.png?width=370>)
+    ![Screenshot showing how to change the sort attribute in a table widget within Service Studio](images/table-sort-attribute-ss.png "Table Sort Attribute Selection")
     
     **Note.** With nested structure as the table **Source** variable, to select a nested item as **Sort Attribute**, the **Data Type** of the **Source** needs to be a **List of Record** with your structure. Also, when using a structure **List** instead of **Record List**, you can only select the first level attributes as the **Sort Attribute**.
 
@@ -45,16 +45,16 @@ Follow these steps to add pagination to your table. You should already have an A
 1. Create **MyStartIndex** and **MyMaxRecords** Local Variables of the Integer Data Type. Set the default values of these variables.
 1. In the properties of the Aggregate that fetches your data set **StartIndex** to **MyStartIndex**, **Max. Records** to **MyMaxRecords**.
 
-    ![Aggregate index and max records](<images/pagination-aggregate-props-ss.png?width=370>)
+    ![Screenshot illustrating the settings for StartIndex and Max. Records in an Aggregate for pagination](images/pagination-aggregate-props-ss.png "Aggregate Index and Max Records Settings")
 
 1. Drag the Pagination Widget below the Table Widget and set  **StartIndex** to **MyStartIndex**, **MaxRecords** to **MyMaxRecords**. Also, set **TotalCount** to the Output Parameter `.Count` of the Aggregate.
 
-    ![Paginate Widget Properties](<images/pagination-paginate-props-ss.png?width=370>)
+    ![Screenshot displaying the Pagination Widget properties with StartIndex, MaxRecords, and TotalCount settings](images/pagination-paginate-props-ss.png "Pagination Widget Properties")
 
 1. Still in the Pagination Widget properties, from the **Handler** drop-down list box select **New Client Action**. Action **PaginationOnNavigate** opens.
 1. In the Action **PaginationOnNavigate** assign the value of the **NewStartIndex** Input Parameter to **MyStartIndex** (MyStartIndex = NewStartIndex). Drag a Refresh Data Tool to the Flow and set it to refresh the Aggregate.
 
-    ![Pagination logic](<images/pagination-logic-ss.png?width=700>)
+    ![Screenshot depicting the PaginationOnNavigate action logic for updating the StartIndex in a pagination system](images/pagination-logic-ss.png "Pagination Logic Configuration")
 
 1. Go back to the Pagination Widget properties and confirm that the **NewStartIndex** property is set to **NewStartIndex** from the Event.
 1. Publish the module.

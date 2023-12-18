@@ -34,7 +34,7 @@ In this example, we create a dropdown search for a list of employees. When the u
 
     The Dropdown Search widget is displayed.
 
-    ![Dropdown Search widget](<images/dropdownsearch-widget-ss.png>)
+    ![Screenshot of the Dropdown Search widget in the Service Studio toolbox](images/dropdownsearch-widget-ss.png "Dropdown Search Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -48,33 +48,33 @@ In this example, we create a dropdown search for a list of employees. When the u
 
 1. From the Toolbox, drag the Dropdown Search widget into the Main Content area of your application's screen.
 
-    ![Drag the widget to the screen](<images/dropdownsearch-drag-ss.png>)
+    ![Dragging the Dropdown Search widget from the toolbox into the Main Content area of the application screen](images/dropdownsearch-drag-ss.png "Dragging the Dropdown Search Widget to the Screen")
 
 1. Select and right-click your screen name, and select **Fetch Data from Database**.
 
-    ![Fetch data from database](<images/dropdownsearch-fetch-ss.png>)
+    ![Selecting the Fetch Data from Database option for the Dropdown Search in Service Studio](images/dropdownsearch-fetch-ss.png "Fetching Data from Database for Dropdown Search")
 
 1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant database entity and click **Select**.
 
     In this example, the **Sample_Employee** entity is selected. 
 
-    ![Select database entity](<images/dropdownsearch-source-ss.png>)
+    ![Selecting the Sample_Employee database entity for the Dropdown Search data source](images/dropdownsearch-source-ss.png "Selecting Database Entity for Dropdown Search")
 
     The **GetEmployees** aggregate is automatically created.
 
-    ![The GetEmployees aggregates is automatically created](<images/dropdownsearch-aggregate-ss.png>)
+    ![Automatic creation of the GetEmployees aggregate after selecting the database entity for Dropdown Search](images/dropdownsearch-aggregate-ss.png "GetEmployees Aggregate Created")
 
 1. Return to your screen by double-clicking the screen name. Select the Dropdown Search widget, and on the **Properties** tab, set the mandatory properties (**OptionsList**, **Value**, **Label**).
 
-    ![Set the mandatory properties](<images/dropdownsearch-logic-ss.png>)
+    ![Setting the OptionsList, Value, and Label mandatory properties in the Properties tab for Dropdown Search](images/dropdownsearch-logic-ss.png "Setting Mandatory Properties for Dropdown Search")
 
 1. Staying on the **Properties** tab, from the OnChanged event **Handler** dropdown, select **New Client Action**.
 
-    ![Create a new client action](<images/dropdownsearch-handler-ss.png>)
+    ![Creating a new client action from the OnChanged event handler dropdown for Dropdown Search](images/dropdownsearch-handler-ss.png "Creating a New Client Action for Dropdown Search")
 
     The **DropdownWidgetId** and **SelectedOptionList** input parameters are automatically generated. 
 
-    ![Create a new client action](<images/dropdownsearch-inputparams-ss.png>)
+    ![Automatic generation of DropdownWidgetId and SelectedOptionList input parameters for Dropdown Search](images/dropdownsearch-inputparams-ss.png "Dropdown Search Input Parameters")
 
 1. Add the relevant logic to the client action. 
 
@@ -88,15 +88,15 @@ In this example, we create a dropdown search for a list of employees. When the u
     
         This displays the selected employee's name and ID.
 
-        ![Add message logic](<images/dropdownsearch-message-ss.png>)
+        ![Adding a message to display the selected employee's name and ID in the Dropdown Search client action](images/dropdownsearch-message-ss.png "Adding Message Logic to Dropdown Search")
 
 1. You can configure the Dropdown Search by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the OptionalConfigs property.
 
-    ![Set optional properties](<images/dropdownsearch-properties-ss.png>)
+    ![Configuring optional properties for the Dropdown Search pattern in the Properties tab](images/dropdownsearch-properties-ss.png "Setting Optional Properties for Dropdown Search")
 
 After following these steps and publishing the module, you can test the pattern in your app. The results from this example should look something like the following:
 
-![Dropdown result](<images/dropdownsearch-result.png>)
+![Example of the Dropdown Search result displaying a list of employees](images/dropdownsearch-result.png "Dropdown Search Result Example")
 
 ## Properties
 

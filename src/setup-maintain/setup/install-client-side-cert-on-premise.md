@@ -43,7 +43,7 @@ The certificate needs to be installed through Microsoft Management Console (MMC)
 * right-click on the certificate and select **Open**;
 * on the **Certification Path** tab, find all the CAs used to validate the certificate;
 
-    ![Certificate details](images/install-client-side-cert-on-premise_0.png)
+    ![Screenshot showing the certification path verification process in the Microsoft Management Console](images/install-client-side-cert-on-premise_0.png "Certification Path Verification")
 
 * under **MMC** > **Certificates (Local Computer)** > **Trusted Root Certification Authorities** > **Certificates**, see if the Root CA (the first element in the certification path, in the example above 'Root Client CA')  appears on the list. If it is, skip the next step.
 
@@ -100,7 +100,7 @@ If you are having trouble using client-side authentication, besides double check
     1. right-click on the certificate and select **Open**;
     1. on the **General** tab, there should be the indication 'You have a private key that corresponds to this certificate'
 
-        ![Certificate private key](images/install-client-side-cert-on-premise_1.png)
+        ![Screenshot indicating the presence of a private key corresponding to the certificate in the Microsoft Management Console](images/install-client-side-cert-on-premise_1.png "Private Key Correspondence Confirmation")
 
 * Verify that the certificate's permissions for the private key are [correctly configured](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Installing_client_side_certificates_on_on-premises_environments#Configure__the_certificate_permissions).
 

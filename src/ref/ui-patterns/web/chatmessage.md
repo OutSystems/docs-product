@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](images/chatmessage-2-diag.png?width=600)
+![Diagram illustrating the layout and classes of the Chat Message UI Pattern for Traditional Web Apps](images/chatmessage-2-diag.png "Chat Message Layout Diagram")
 
 ## Events
 
@@ -40,7 +40,7 @@ Applies only to Traditional Web Apps.
 
 1. Drag a ListRecords widget into the preview with the chat users as the Source Record List.
 
-    ![](<images/chatmessage-6-ss.png>)
+    ![Screenshot showing the ListRecords widget with Chat Message pattern in a Traditional Web App interface](images/chatmessage-6-ss.png "Chat Message ListRecords Widget Screenshot")
 
 1. In the ListRecords widget, drag a ChatMessage pattern.
 
@@ -58,7 +58,7 @@ Applies only to Traditional Web Apps.
 
 The result would be something like this:
 
-![](<images/chatmessage-3.png>)
+![Example of a Chat Message with customized styles according to the user, featuring different background and text colors](images/chatmessage-3.png "Styled Chat Message Example")
 
 ### Show/Hide actions placeholder on click
 
@@ -70,7 +70,7 @@ The result would be something like this:
 
 1. In this new action, drag the ToggleChatActions. You can find it under the Logic tab - OutSystemsUIWeb - Chat Message folder.
 
-    ![](<images/chatmessage-4-ss.png>)
+    ![Screenshot displaying the ToggleChatActions action within the Logic tab of the OutSystemsUIWeb environment](images/chatmessage-4-ss.png "ToggleChatActions in Logic Tab Screenshot")
 
 1. In the WidgetId parameter, type the name of the Chat Message pattern.
 
@@ -78,4 +78,4 @@ The result would be something like this:
 
 The result is something like this:
 
-![](<images/chatmessage-1.gif>)
+![Animated GIF demonstrating the show and hide actions on a Chat Message pattern upon clicking](images/chatmessage-1.gif "Chat Message Interaction Demonstration")

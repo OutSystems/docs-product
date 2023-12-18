@@ -1,4 +1,5 @@
 ---
+summary: The article explains how to secure applications by restricting access to users within an internal network
 tags: support-devOps; support-Security; support-Security-featured
 locale: en-us
 guid: 110c2416-65b4-404d-8adc-e02219af4207
@@ -6,7 +7,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:126
 ---
-
 # Restrict Access to an Internal Network
 
 <div class="info" markdown="1">
@@ -30,4 +30,4 @@ You can restrict internal network access to the following elements:
 
 To restrict these elements to internal network access, set its **Internal Access Only** property to `Yes`.
 
-![restrict internal network](images/internal-network-set-ss.png)
+![Screenshot showing how to set the Internal Access Only property to Yes for restricting access to internal networks](images/internal-network-set-ss.png "Setting Internal Access Only Property")

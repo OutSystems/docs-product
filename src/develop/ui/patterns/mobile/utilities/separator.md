@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Separator UI Pattern to separate content clearly and ease visual organization.
 
-  ![Separator widget example](<images/separator-example.png>)
+  ![Example of a Separator widget in a user interface](images/separator-example.png "Separator widget example")
 
 **How to use the Separator UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Separator UI Pattern to separate content clearly and ease visual
 
     The Separator widget is displayed.
 
-    ![Separator](<images/separator-widget-ss.png>)
+    ![Screenshot of the Separator widget in Service Studio](images/separator-widget-ss.png "Separator")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,13 +40,13 @@ You can use the Separator UI Pattern to separate content clearly and ease visual
 
 1. From the Toolbox, drag the Separator widget into the Main Content area of your application's screen, where you want to separate content. In this example, we drag the widget in between 2 images.
 
-    ![Drag widget to screen](<images/separator-drag-ss.png>)
+    ![Dragging the Separator widget into the Main Content area of a screen in Service Studio](images/separator-drag-ss.png "Drag widget to screen")
 
     By default, the pattern displays a horizontal line with the application’s primary color. 
 
 1. On the **Properties** tab, you can customize the Separator's look and feel by setting any of the optional properties, for example, the color and the amount of space separating the content.
 
-    ![](<images/separator-prop-ss.png>)
+    ![Properties tab in Service Studio showing customization options for the Separator widget](images/separator-prop-ss.png "Separator Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

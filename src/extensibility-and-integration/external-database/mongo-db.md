@@ -61,7 +61,7 @@ The service module includes the following server actions:
 
 For collections with **Format** set as **JSON**, the server actions retrieve and receive MongoDB data as JSON, so you need to create Structures to represent the JSON structure in your apps.
 
-![Example of a structure that represents a Student MongoDB document](images/structure-ss.png)
+![Screenshot of the OutSystems interface showing how to create a Structure for MongoDB JSON data representation](images/structure-ss.png "OutSystems Structure Creation")
 
 You can create the Structures manually, or use **Add structure from JSON...** to automatically convert the JSON to a Structure. **Add structure from JSON...** is available in the context menu fro the **Structures** folder in the **Data** tab.
 
@@ -109,7 +109,7 @@ Check the following sections if the collection uses a JSON Format.
 
 Adding a record, known as a document in MongoDB, to a collection with JSON Format includes the following key steps:
 
-![Key steps to add a record using a MongoDB integration](images/add-record-diag.png)
+![Diagram illustrating the process of adding a record to a MongoDB collection with JSON format in OutSystems](images/add-record-diag.png "Adding a Record to MongoDB Diagram")
 
 1. [Create a Structure to represent a MongoDB document](#structure-record).
 
@@ -157,7 +157,7 @@ Save the serialized JSON data to your MongoDB database, by doing the following:
 
 Fetching a record, known as a document in MongoDB, from a collection with JSON Format includes the following key steps:
 
-![Key steps to fetch a record using a MongoDB integration](images/fetch-record-diag.png)
+![Diagram illustrating the process of fetching a record from a MongoDB collection with JSON format in OutSystems](images/fetch-record-diag.png "Fetching a Record from MongoDB Diagram")
 
 1. [Create a Structure to represent a MongoDB document](#structure-record).
 
@@ -216,7 +216,7 @@ If you completed the previous steps in the **Data Action** of a screen, you can 
 
 Fetching a list of records, known as documents in MongoDB, from a collection with JSON Format includes the following key steps:
 
-![Key steps to fetch a list of records using a MongoDB integration](images/fetch-list-diag.png)
+![Diagram illustrating the process of fetching a list of records from a MongoDB collection with JSON format in OutSystems](images/fetch-list-diag.png "Fetching a List of Records from MongoDB Diagram")
 
 1. [Create a Structure to represent a MongoDB document](#structure-list).
 

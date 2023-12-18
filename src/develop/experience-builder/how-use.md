@@ -81,7 +81,7 @@ This screen shows you the list of all the apps created with Experience Builder i
 
 Let's start by creating a new app by selecting **Create app**.
 
-![Create a new app](images/my-apps-create-eb.png)
+![Screenshot of the 'My apps' screen in Experience Builder showing the 'Create app' button](images/my-apps-create-eb.png "Create App Button on My Apps Screen")
 
 ## Step 4. Choose a starting point for your app
 
@@ -95,14 +95,14 @@ Fell free to explore the pre built app templates.<br/> After selecting one of th
 
 In this tutorial you are starting from an empty app. Select **Blank App**, and then select **Start building**.
 
-![Start from a blank app](images/start-blank-app-eb.png)
+![Option to select 'Blank App' and 'Start building' button in Experience Builder](images/start-blank-app-eb.png "Starting a Blank App in Experience Builder")
 
 ## Step 5. Customize your app
 
 The **Customize your app** screen lets you do some basic customization and branding of your app.  
 Follow these steps:
 
-![Customize your app](images/customize-app-eb.png)
+![Customize your app screen in Experience Builder with fields for app name and description](images/customize-app-eb.png "Customize Your App Screen")
 
 1. Enter a name for your app in **App name**, for example `Hello mobile world`, and enter a **Description**, for example `This is my first mobile app prototype.`.
 
@@ -136,7 +136,7 @@ Follow these steps:
 
 The flow canvas lets you design the screen flows of your app.
 
-![The flow canvas](images/flow-canavas-eb.png)
+![Flow canvas interface in Experience Builder for designing app screen flows](images/flow-canavas-eb.png "Flow Canvas in Experience Builder")
 
 <div class="info" markdown="1">
 
@@ -158,7 +158,7 @@ Follow these steps:
 
 1. Select **Add flow**.
 
-![Adding the Banking Sign Up flow](images/add-bank-sign-up-flow-eb.png)
+![Adding the 'Banking Sign Up' flow to the app in Experience Builder](images/add-bank-sign-up-flow-eb.png "Adding Banking Sign Up Flow")
 
 After these steps you add a flow to the flow canvas.
 
@@ -176,13 +176,13 @@ There are a number of options you can perform on a flow:
 
 The **Banking Sign Up** includes five screens that are linked together. For example, if a user of your mobile app selects **Next** in the **PersonalDetails** screen they move on to the **Password** screen.
 
-![The Banking Sign Up flow](images/bank-sign-up-flow-eb.png)
+![Overview of the 'Banking Sign Up' flow screens in Experience Builder](images/bank-sign-up-flow-eb.png "Banking Sign Up Flow Screens")
 
 ## Step 7. Connect an exit point to a new flow
 
 The **Banking Sign Up** also has three **exit points**, represented by blue circles.
 
-![](images/bank-sign-up-exit-points-eb.png)
+![Exit points on the 'Banking Sign Up' flow in Experience Builder](images/bank-sign-up-exit-points-eb.png "Banking Sign Up Flow Exit Points")
 
 <div class="info" markdown="1">
 
@@ -205,15 +205,15 @@ Follow these steps:
 
 1. Select the exit point of the last screen, originally named **SignUpSuccess**, and then select **Connect to a new flow**.
 
-    ![Connect exit point to a new flow](images/connect-exit-point-new-flow-eb.png)
+    ![Connecting an exit point from 'SignUpSuccess' to a new flow in Experience Builder](images/connect-exit-point-new-flow-eb.png "Connecting Exit Point to a New Flow")
 
 1. In the **Add flow** dialog, select the **Authentication** filter, and then add the **Login Passcode** flow.
 
-    ![Add the Login Passcode flow and connect it to the exit point](images/connect-to-login-pass-flow-eb.png)
+    ![Adding the 'Login Passcode' flow and connecting it to the 'SignUpSuccess' exit point in Experience Builder](images/connect-to-login-pass-flow-eb.png "Adding Login Passcode Flow")
 
 After these steps, you added the **Login And Passcode** flow to your canvas and linked the exit point to it.
 
-![Exit point linked to another flow](images/point-linked-flow-eb.png)
+![Exit point from 'SignUpSuccess' linked to the 'Login And Passcode' flow in Experience Builder](images/point-linked-flow-eb.png "Linked Exit Point to Login Flow")
 
 ## Step 8. Connect exit points to existing flows
 
@@ -236,27 +236,27 @@ Follow these steps:
 
 1. Select the **Forgot password?** exit point, and then select **Connect to a new flow**.
 
-    ![Connect to new flow](images/connect-new-flow-eb.png)
+    ![Connecting the 'Forgot password?' exit point to a new flow in Experience Builder](images/connect-new-flow-eb.png "Connecting to a New Flow")
 
 1. Select **Empty Screen**, set the **Name** as `lost_password_mockup`, and set the **Comment** as `This screen should let users recover their password. Check mockup.`.
 
-    ![Add empty screen](images/empty-screen-eb.png)
+    ![Adding an empty screen to the app flow in Experience Builder](images/empty-screen-eb.png "Adding an Empty Screen")
 
 1. To upload an image, click **Browse**, and select the relevant image.
 
     If you add an image, the image is displayed under the comment.
     
-    ![Upload image](images/upload-image-eb.png)
+    ![Uploading an image for the 'lost_password_mockup' empty screen in Experience Builder](images/upload-image-eb.png "Uploading an Image for Mockup")
 
 1. Click **Add flow**.
 
 1. In the canvas, select the context menu for the empty screen, and select **Edit flow**.
 
-    ![Edit flow](images/edit-flow-eb.png)
+    ![Editing the 'lost_password_mockup' flow in Experience Builder](images/edit-flow-eb.png "Editing a Flow")
 
 1. In the **Preview**, drag exit point **1** to where you want it to appear on your mockup image.
 
-    ![Exit point](images/exit-point-eb.png)
+    ![Setting an exit point on the 'lost_password_mockup' image in Experience Builder](images/exit-point-eb.png "Setting an Exit Point on Mockup")
 
     <div class="info" markdown="1">
 

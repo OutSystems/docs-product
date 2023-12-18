@@ -40,4 +40,4 @@ Let's create the `Review` entity:
     * `Comments`, Text type
     * `SubmittedOn`, Date type
 
-![Many-to-many relationship entity diagram](images/many-to-many-relationship-1.png)
+![Diagram illustrating a many-to-many relationship with a Review entity connected to User and Place entities in the GoOut mobile application data model](images/many-to-many-relationship-1.png "Many-to-Many Relationship Diagram")

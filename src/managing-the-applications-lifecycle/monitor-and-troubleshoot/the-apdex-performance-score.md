@@ -30,11 +30,11 @@ Each time the end user navigates to a page in your application, OutSystems check
 * 2–8 seconds: it provides a fair user experience, because it's **fairly slow**
 * Less than 2 seconds: it provides a good user experience, because it's **fast**
 
-![](images/the-apdex-performance-score-2.png)
+![Illustration showing the APDEX score interpretation with ratings from 0% to 100% indicating poor, fair, and good user experiences](images/the-apdex-performance-score-2.png "APDEX Score Interpretation")
 
 To calculate the APDEX score of an application, we use the following formula:
 
-![](images/the-apdex-performance-score-3.png)
+![Image of the formula used to calculate the APDEX score, indicating how different page load times affect the score](images/the-apdex-performance-score-3.png "APDEX Score Calculation Formula")
 
 This scores an application with:
 

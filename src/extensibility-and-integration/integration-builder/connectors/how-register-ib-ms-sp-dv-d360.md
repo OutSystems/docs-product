@@ -33,7 +33,7 @@ The procedure to register your application includes the following:
 
 1. From the top menu bar, click **+ New Registration**.
 
-    ![Top menu bar in MS Azur](images/ms-azure-top-menu-bar.png)
+    ![Screenshot of the Azure Portal top menu bar with the 'New Registration' button highlighted](images/ms-azure-top-menu-bar.png "Azure Portal Top Menu Bar")
 
 1. In the name field, **copy and paste** one of the following:  
 
@@ -81,11 +81,11 @@ To add and request application permissions for your environment, choose either t
 
 1. Below Configured permissions, click **Add a permission** to open the Request API permissions window.
 
-   ![add a permission](images/ms-azure-permission-selected.png)
+   ![Screenshot showing the API permissions section in Azure Portal with 'Add a permission' button selected](images/ms-azure-permission-selected.png "Azure Portal API Permissions")
 
 1. Under Request API permission, click in the **Dynamics CRM** box.
 
-   ![add a permission](images/ms-azure-dynamics-crm.png)
+   ![Screenshot of the Dynamics CRM permission option in Azure Portal's Request API permissions window](images/ms-azure-dynamics-crm.png "Azure Portal Dynamics CRM Permission")
 
 1. Under Permissions, select **user_impersonation**.
 
@@ -99,7 +99,7 @@ To add and request application permissions for your environment, choose either t
 
 1. Optionally, to grant permission, click the **Grant admin consent for `<your organization name>`** link.
 
-    ![Grant permission](images/ms-azure-grant-permission.png)
+    ![Screenshot of the Azure Portal with the 'Grant admin consent for your organization' link highlighted](images/ms-azure-grant-permission.png "Azure Portal Grant Permission")
 
 #### Adding Application Users in Power Apps
 

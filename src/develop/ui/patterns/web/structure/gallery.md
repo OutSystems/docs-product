@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end. 
 
-![](<images/gallery-7-ss.png>)
+![Screenshot showing the Gallery UI Pattern in a Traditional Web App](images/gallery-7-ss.png "Gallery UI Pattern Overview")
 
 **How to use the Gallery UI Pattern**
 
@@ -28,7 +28,7 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
     The Gallery widget is displayed.
 
-    ![](<images/gallery-8-ss.png>)
+    ![Image of the Gallery widget found in the Service Studio toolbox](images/gallery-8-ss.png "Gallery Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,23 +42,23 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
 1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
 
-    ![](<images/gallery-9-ss.png>)
+    ![Demonstration of dragging the Gallery widget into the Main Content area of an application screen](images/gallery-9-ss.png "Dragging Gallery Widget")
 
 1. Add the required content to the Gallery widget. 
 
     By default, the Gallery widget expects a list.
 
-    ![](<images/gallery-1-ss.png>)
+    ![Default content of the Gallery widget expecting a list](images/gallery-1-ss.png "Default Gallery Widget Content")
 
      To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/class-list-records-widget.md>) into the Gallery widget and create your custom content. 
 
     In this example, we delete the list and add images by dragging the Image widget into the Gallery widget and selecting an image from the OutSystems UI images. You can add as many as required.
 
-    ![](<images/gallery-10-ss.png>)
+    ![Customizing the Gallery widget by adding images to it](images/gallery-10-ss.png "Customizing Gallery Widget with Images")
 
 1. On the **Properties** tab, you can set the number of items to display on each row for different device types (see below for examples).
     
-    ![](<images/gallery-6-ss.png>)
+    ![Properties tab of the Gallery widget showing device-specific item display settings](images/gallery-6-ss.png "Gallery Properties Tab")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -66,19 +66,19 @@ The following are examples of how the items are display depending on how many yo
 
 **4 items per row**
 
-![](<images/gallery-11-ss.png>)
+![Example of a Gallery displaying four items per row](images/gallery-11-ss.png "Gallery with 4 Items Per Row")
 
 **3 items per row**
     
-![](<images/gallery-12-ss.png>)
+![Example of a Gallery displaying three items per row](images/gallery-12-ss.png "Gallery with 3 Items Per Row")
 
 **2 items per row**
 
-![](<images/gallery-13-ss.png>)
+![Example of a Gallery displaying two items per row](images/gallery-13-ss.png "Gallery with 2 Items Per Row")
 
 **1 item per row**
 
-![](<images/gallery-14-ss.png>)
+![Example of a Gallery displaying one item per row](images/gallery-14-ss.png "Gallery with 1 Item Per Row")
 
 ## Properties
 
@@ -93,4 +93,4 @@ The following are examples of how the items are display depending on how many yo
 
 Line Separator for ListRecords should be **None**.
 
-   ![](<images/gallery-2-ss.png>)
+   ![Screenshot of the Line Separator setting for ListRecords set to None](images/gallery-2-ss.png "Line Separator Setting for ListRecords")

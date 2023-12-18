@@ -22,7 +22,7 @@ After adding the application to your deployment plan, when there are new setting
 
 If your are deploying an application to that environment **for the first time** and the environment has more than one Deployment Zone, LifeTime enables you to select a Deployment Zone different from the default zone in the **Configure application settings** step.
 
-![](images/deploy-select-zone-lt.png)
+![Screenshot showing the Deployment Zone selection step in the LifeTime deployment plan wizard](images/deploy-select-zone-lt.png "Deployment Zone Selection in LifeTime")
 
 When selecting a specific Deployment Zone during the deployment:
 
@@ -42,23 +42,23 @@ In this scenario, to be able to select the Deployment Zone where you want the ap
 
 Consider an application named **Website** containing two modules already deployed to the Production environment: the **Backoffice** module, and the **Frontoffice** module.
 
-![](images/deploy-website-app-lt.png)
+![Diagram illustrating the Website application with Backoffice and Frontoffice modules in the Production environment](images/deploy-website-app-lt.png "Website Application Modules")
 
 For proper segmentation accessing the different kind of modules, we created a new application, **WebsiteBackoffice**, and moved the existing **Backoffice** module to this application.
 
-![](images/deploy-websitebo-app-lt.png)
+![Diagram showing the WebsiteBackoffice application with the Backoffice module separated from the Website application](images/deploy-websitebo-app-lt.png "WebsiteBackoffice Application")
 
 When deploying both applications to the Production environment, to properly segment the modules in the front-end servers, LifeTime will not allow selecting the Deployment Zone of **WebsiteBackoffice** application. This application will remain deployed in the previous zone.
 
-![](images/deploy-no-zone-select-lt.png)
+![Screenshot indicating the unavailability of Deployment Zone selection for the WebsiteBackoffice application in LifeTime](images/deploy-no-zone-select-lt.png "Unavailable Deployment Zone Selection")
 
 To make sure the **WebsiteBackoffice** application can be deployed to a different Deployment Zone, we must add a new module (for example, a new **WebsiteServices** module) to the **WebsiteBackoffice** application.
 
-![](images/deploy-new-module-lt.png)
+![Illustration of adding a new WebsiteServices module to the WebsiteBackoffice application for Deployment Zone selection](images/deploy-new-module-lt.png "Adding New Module to WebsiteBackoffice")
 
 When deploying the **WebsiteBackoffice** application to the Production environment again, you'll now be able to select the Deployment Zone for the application.
 
-![](images/deploy-websitebo-app-zone-lt.png)
+![Screenshot showing the ability to select a Deployment Zone for the WebsiteBackoffice application with the new module in LifeTime](images/deploy-websitebo-app-zone-lt.png "Deployment Zone Selection for WebsiteBackoffice")
 
 ## Known issue
 

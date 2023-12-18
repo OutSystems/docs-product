@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Over-the-air upgrades enable mobile apps to update directly on devices without app store resubmission, supported by Outsystems with both seamless and attention-requiring upgrade types
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: BBD8AF1F-9BF0-4162-8619-4DA257F12A72
@@ -7,7 +7,6 @@ app_type: mobile apps
 platform-version: o11
 figma:
 ---
-
 # Over-the-air upgrades
 
 ## What are over-the-air upgrades?
@@ -42,7 +41,7 @@ There is a set of situations that require you to generate a new Build and redist
 
 **OTA upgrade process diagram**
 
-![OTA upgrade process diagram](images/upgrade-ota-diag.png)  
+![Diagram illustrating the over-the-air upgrade process for mobile apps, including server-side publication and client-side version checking](images/upgrade-ota-diag.png "OTA Upgrade Process Diagram")  
 
 ## Common issues and how to troubleshoot them
 

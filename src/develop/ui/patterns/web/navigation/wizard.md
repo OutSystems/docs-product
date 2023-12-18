@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Wizard UI Pattern to split large complex tasks and processes into smaller manageable steps. A wizard presents a series of steps or conditions that the user needs to complete in order to accomplish a goal. Additionally, wizards usually include explicit button navigation to move a step forward or backward. Some wizard examples include software installation wizards and sign-up screens.
 
-![](<images/wizard-24-ss.png>)
+![Screenshot of a Wizard UI Pattern example in a Traditional Web App](images/wizard-24-ss.png "Wizard UI Pattern Example")
 
 **How to use the Wizard UI Pattern**
 
@@ -34,7 +34,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     The Wizard and Wizard Item widgets are displayed (both of which are required to use this pattern).
 
-    ![](<images/wizard-23-ss.png>)
+    ![Service Studio displaying Wizard and Wizard Item widgets for Traditional Web Apps](images/wizard-23-ss.png "Wizard and Wizard Item Widgets")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -48,17 +48,17 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. From the Toolbox, drag the Wizard widget into the Main Content area of your application's screen.
 
-    ![](<images/wizard-1-ss.png>)
+    ![Dragging the Wizard widget into the Main Content area of a Traditional Web App screen](images/wizard-1-ss.png "Wizard Widget in Main Content Area")
 
     By default, the Wizard widget contains three Wizard Item widgets. Each Wizard Item represents a step. You can add or delete Wizard Items as required.
 
 1. From the Toolbox, drag another Wizard Item into your Wizard Pattern. 
 
-    ![](images/wizard-28-ss.png)
+    ![Adding a new Wizard Item to the Wizard Pattern in Service Studio](images/wizard-28-ss.png "Adding a Wizard Item")
 
 1. Enter `4` for the new Wizard Item icon.
 
-    ![](images/wizard-27-ss.png)
+    ![Setting the icon for a new Wizard Item to number 4 in Service Studio](images/wizard-27-ss.png "Setting Wizard Item Icon")
 
 1. Rename each of the Wizard Items to the following:
 
@@ -67,13 +67,13 @@ The following example demonstrates how you can create a four step Wizard with na
     * Review Order
     * Confirm Order
 
-    ![](images/wizard-20-ss.png)
+    ![Renaming Wizard Items to Shopping Details, Payment Details, Review Order, and Confirm Order](images/wizard-20-ss.png "Renaming Wizard Items")
 
 1. From the Element tree, create an Input Parameter by right-clicking on your screen, and from the drop-down, select **Add Input Parameter**.
 
     The input parameter controls which Wizard step is shown to the user.
 
-    ![](images/wizard-25-ss.png)
+    ![Creating an Input Parameter in the Element tree of a Traditional Web App](images/wizard-25-ss.png "Creating an Input Parameter")
 
 1. On the **Properties** tab, set the Input Parameter properties as follows:
 
@@ -82,19 +82,19 @@ The following example demonstrates how you can create a four step Wizard with na
     * Is Mandatory: No
     * Default Value: 1
 
-    ![](images/wizard-13-ss.png)
+    ![Configuring properties of an Input Parameter with name CurrentStep and default value 1](images/wizard-13-ss.png "Setting Input Parameter Properties")
 
      By setting the **Default Value** to 1, you ensure that the  Wizard always starts on step 1.
 
 1. To create the logic that defines the status of each Wizard Item (as an active step, a past step, or a next step), select the first Wizard Item (step 1), and on the **Properties** tab, from the **Step** drop-down, select **Expression Editor**.
 
-    ![](images/wizard-29-ss.png)
+    ![Defining the status of a Wizard Item step using the Expression Editor in Service Studio](images/wizard-29-ss.png "Wizard Item Step Status Logic")
 
 1. In the expression editor, enter the following expression:
 
     `If(CurrentStep = 1, Entities.Step.Active,If(CurrentStep > 1, Entities.Step.Past, Entities.Step.Next))`
 
-    ![](images/wizard-19-ss.png)
+    ![Service Studio expression editor showing logic for Wizard step status based on CurrentStep](images/wizard-19-ss.png "Wizard Step Expression Logic")
 
     This logic has the following meaning:
 
@@ -108,13 +108,13 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. From the Toolbox, drag the If widget onto the main content area of your application's screen, just below the Wizard Pattern.
 
-    ![](images/wizard-30-ss.png)
+    ![Dragging an If widget onto the main content area below the Wizard Pattern](images/wizard-30-ss.png "Adding If Widget to Wizard")
 
 1. On the **Properties** tab, in the **Condition** property, enter the following:
 
     `CurrentStep = 1`
 
-    ![](images/wizard-19-ss.png)
+    ![Service Studio expression editor showing logic for Wizard step status based on CurrentStep](images/wizard-19-ss.png "Wizard Step Expression Logic")
 
     You have now created a condition that controls what's displayed on screen when the step is active.
 
@@ -124,7 +124,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     The following example shows a Shipping Details step that contains labels and input boxes.
 
-    ![](images/wizard-18-ss.png)
+    ![Example content for Shipping Details step with labels and input boxes in a Wizard Pattern](images/wizard-18-ss.png "Shipping Details Step Content")
 
 **Create the wizard navigation**
 
@@ -141,24 +141,24 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. On the **Properties** tab, from the **Destination** drop-down, select **New Screen Action**.
 
-    ![](images/wizard-22-ss.png)
+    ![Creating a new screen action for the Next button in a Wizard Pattern](images/wizard-22-ss.png "Creating a Screen Action")
 
 1. From the Toolbox, drag the Assign block onto your screen and set the **Variable** property to `CurrentStep` and the **Value** property to `CurrentStep + 1`. This ensures that user inputs are passed from step to step.
 
-    ![](images/wizard-21-ss.png)
+    ![Using an Assign block to set the CurrentStep variable for Wizard navigation](images/wizard-21-ss.png "Assign Block for Wizard Navigation")
 
 1. Repeat steps 4 and 5 for the **Previous** button, setting the **Variable** property to `CurrentStep` and the **Value** property to `CurrentStep - 1`.
 
 
 1. To display the **Next** button when applicable, select the **Next** button, right-click, and select **Enclose in If**.
 
-    ![](images/wizard-26-ss.png)
+    ![Enclosing the Next button in an If widget to control its display based on the current step](images/wizard-26-ss.png "Enclosing Next Button in If Widget")
 
 1. On the **Properties** tab, in the **Condition** property, enter the following:
 
     `CurrentStep < 4`
 
-    ![](images/wizard-17-ss.png)
+    ![Setting a condition to ensure the Next button is displayed only when applicable in a Wizard](images/wizard-17-ss.png "Condition for Displaying Next Button")
 
     You have now created a condition that ensures that the user can never go above the number of steps in the wizard.
 

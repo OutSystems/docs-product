@@ -37,9 +37,9 @@ For more information about permissions to access this feature, see [How does AI 
 To select modules to ignore:
 
 1. Go to the **Maintenance** tab of **AI Mentor Studio**.
-    ![Select Maintenance tab](images/select-maintenance-ams.png)
+    ![Screenshot of AI Mentor Studio with the Maintenance tab highlighted](images/select-maintenance-ams.png "Selecting the Maintenance Tab in AI Mentor Studio")
 1. On the **Maintenance** page, click **Ignored Modules** to get a list of all modules in your infrastructure, which includes filtering options for finding specific modules to ignore.
-    ![Ignored modules page](images/ignored-modules-main-page-ams.png)
+    ![Main page of Ignored Modules in AI Mentor Studio showing filtering options](images/ignored-modules-main-page-ams.png "Ignored Modules Main Page in AI Mentor Studio")
 
 You can use the following filters to fine-tune your choices, and then sort the results by the column headers.
 
@@ -60,17 +60,17 @@ To ignore **Forge** components in technical debt analysis:
 1. Go to the **Maintenance** tab.
 1. Click **Ignored Modules**.
 1. Select **Forge components** from the **Types** dropdown.
-    ![Ignore Forge components](images/ignore-forge-components-ams.png)
+    ![AI Mentor Studio's Ignored Modules page with Forge components selected from the Types dropdown](images/ignore-forge-components-ams.png "Ignoring Forge Components in AI Mentor Studio")
 1. Click the select all box in the header. 
     This selects all of the components on the current page.
-    ![Ignore Forge components](images/bulk-actions-ams.png)
+    ![Select all checkbox for bulk ignoring modules in AI Mentor Studio](images/bulk-actions-ams.png "Bulk Actions for Ignoring Modules in AI Mentor Studio")
 1. The information area under the filters tells you how many modules have been selected on the current page. Click **Select all &lt;n> items on this list** to add **Forge** components on all pages to the selection.
-    ![Select all components](images/select-all-ams.png)
+    ![Information area indicating the number of modules selected to ignore in AI Mentor Studio](images/select-all-ams.png "Select All Items for Ignoring in AI Mentor Studio")
 
 1. The information area now tells you that all components on all pages have been selected. Click **Change to Ignored**. 
-    ![Select all components](images/change-to-ignored-ams.png)
+    ![Button to change selected modules to Ignored status in AI Mentor Studio](images/change-to-ignored-ams.png "Changing Modules to Ignored Status in AI Mentor Studio")
 1. Click **Change to Ignored** in the popup window that asks you to confirm that you want to ignore all of the selected components, including those beyond the displayed page.
-    ![Confirm Ignore Forge components](images/bulk-actions-confirm-ams.png)
+    ![Confirmation popup for changing selected modules to Ignored status in AI Mentor Studio](images/bulk-actions-confirm-ams.png "Confirm Bulk Actions in AI Mentor Studio")
 
 All of the selected components/modules are marked to be ignored during future technical debt evaluations.
 
@@ -82,7 +82,7 @@ In some cases you may wish to fine-tune your selections. As one example, you may
 1. Sort the modules by the **Last analyzed on** column (or the **Status changed on** column, depending on what criteria you wish to use).
 1. Click the specific modules to ignore during analysis.
 1. Click **Change to Ignored**.
-    ![Ignored modules page](images/individually-ignored-modules-ams.png)
+    ![Process of selecting individual modules to ignore in AI Mentor Studio](images/individually-ignored-modules-ams.png "Individually Ignoring Modules in AI Mentor Studio")
 
     <div class="info" markdown="1">
 

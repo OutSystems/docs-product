@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 After you [create entities to persist data](../modeling/entity-create.md), you can edit your app's data without leaving Service Studio.
 
-![Edit data in Service Studio](images/edit-data-ss.png)
+![Screenshot of Service Studio interface showing data editing options](images/edit-data-ss.png "Editing Data in Service Studio")
 
 Add, remove, and change records of **entities** during app development, enables you to do the following:
 
@@ -52,7 +52,7 @@ In Service Studio, you can edit the data of **entities** that meet the following
 
 To start editing an entity's data, open the module where the entity exists. Then in the **Data** tab, double-click the entity, or right-click the entity and select **View or Edit Data**.
 
-![Open edit data in Service Studio](images/open-edit-data-ss.png)
+![Screenshot of Service Studio with the Data tab open, highlighting the option to view or edit data](images/open-edit-data-ss.png "Opening Data for Editing in Service Studio")
 
 <div class="info" markdown="1">
 
@@ -65,14 +65,14 @@ In the entity Data screen, you can then [add rows](how-edit-data.md#add), [remov
 
 Service Studio adds an asterisk, **\***, to the first cell of rows that contain pending changes.
 
-![Pending changes for a row](images/pending-changes-ss.png)
+![Screenshot showing rows with pending changes marked by an asterisk in Service Studio](images/pending-changes-ss.png "Pending Changes in Service Studio")
 
 If the change applies to specific cells of a row, Service Studio highlights that cell's background.
 
 Service Studio continually validates your pending changes, and highlights cells with a red outline if it detects an issue.<br/>
 Check the issue by hovering over the highlighted cell. Fix these issues before applying your changes.
 
-![Get details on issues with pending changes](images/pedning-changes-validation-ss.png)
+![Screenshot of Service Studio highlighting cells with validation errors in red outline](images/pedning-changes-validation-ss.png "Validating Pending Changes in Service Studio")
 
 If needed, you can [discard your changes](how-edit-data.md#discard) all at once, or one row at a time.
 
@@ -80,7 +80,7 @@ Once you [apply your changes](how-edit-data.md#apply), Service Studio creates an
 
 After trying to apply all your changes in the database, Service Studio lets you know if all changes were successful, or if any of the changes failed.
 
-![Changes applied successfully](images/changes-successfully-ss.png)
-![Changes failed to be applied](images/changes-failed-ss.png)
+![Screenshot of Service Studio indicating successful data changes with a confirmation message](images/changes-successfully-ss.png "Successful Data Changes in Service Studio")
+![Screenshot of Service Studio showing a message that some data changes failed](images/changes-failed-ss.png "Failed Data Changes in Service Studio")
 
 If you don't apply or discard your pending changes, Service Studio keeps them saved in your machine.

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Toggle Button UI Pattern to provide users with a stand-alone control that allows them to choose between two states, for example, a Yes/No value.
 
-![](<images/togglebutton-2-ss.png>)
+![Screenshot of the Toggle Button UI Pattern in a Traditional Web App](images/togglebutton-2-ss.png "Toggle Button UI Pattern")
 
 **How to use the Toggle Button UI Pattern**
 
@@ -28,7 +28,7 @@ In this example, we create a toggle button to activate a widget that can is acti
 
     The Toggle Button widget is displayed.
 
-    ![](<images/togglebutton-6-ss.png>)
+    ![Service Studio displaying the Toggle Button widget in the Toolbox](images/togglebutton-6-ss.png "Toggle Button Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,31 +42,31 @@ In this example, we create a toggle button to activate a widget that can is acti
 
 1. From the Toolbox, drag the Toggle Button widget into the Main Content area of your application's screen.
 
-    ![](<images/togglebutton-7-ss.png>)
+    ![Dragging the Toggle Button widget into the Main Content area of an application's screen](images/togglebutton-7-ss.png "Dragging Toggle Button Widget")
 
 1. Right-click your screen name and select **Add Local Variable**.
 
-    ![](<images/togglebutton-8-ss.png>)
+    ![Adding a new local variable to the screen in Service Studio](images/togglebutton-8-ss.png "Adding Local Variable")
 
 1. Enter a name and select a data type. In this example, we enter the name `IsToggled`, set the data type to **Boolean** and the default value to **False**.
 
-    ![](<images/togglebutton-9-ss.png>)
+    ![Setting properties for the local variable 'IsToggled' with a Boolean data type and default value False](images/togglebutton-9-ss.png "Setting Local Variable Properties")
 
 1. In this example, we add some text and a button. We enter a name for the [button](<../../../../../ref/lang/auto/class-button-widget.md>) (SubmitButton), and set the **Enabled** property to the local variable we created earlier (IsToggled).
 
-    ![](images/togglebutton-11-ss.png?width=800)
+    ![Configuring the Submit button to be enabled based on the 'IsToggled' local variable state](images/togglebutton-11-ss.png "Configuring Submit Button")
 
 1. Select the Checkbox widget, and on the **Properties** tab, from the **Variable** drop-down, select the local variable you just created (in this example, **IsToggled**).
 
-    ![](images/togglebutton-10-ss.png?width=800) 
+    ![Selecting the local variable 'IsToggled' for the Checkbox widget in the Properties tab](images/togglebutton-10-ss.png "Selecting Checkbox Variable") 
 
 1. From the OnChange **Destination** drop-down, select **New Screen Action**.
 
-    ![](images/togglebutton-12-ss.png?width=800) 
+    ![Setting the OnChange destination to a new screen action for the Toggle Button](images/togglebutton-12-ss.png "Setting OnChange Destination") 
 
 1. From the Toolbox, add the **Ajax Refresh** to the screen action, and in the **Select Widget** pop-up, navigate to and select the Submit button name (in this example, SubmitButton), and click **OK**.
 
-    ![](images/togglebutton-13-ss.png?width=800) 
+    ![Adding an Ajax Refresh to the screen action and selecting the Submit button for refresh](images/togglebutton-13-ss.png "Adding Ajax Refresh to Screen Action") 
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

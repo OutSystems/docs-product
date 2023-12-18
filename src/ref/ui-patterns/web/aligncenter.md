@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/aligncenter-8-diag.png>)
+![Diagram showing the layout and classes for Align Center UI Pattern in Traditional Web Apps](images/aligncenter-8-diag.png "Align Center Layout Diagram")
 
 ## CSS Selectors
 
@@ -35,7 +35,7 @@ Applies only to Traditional Web Apps.
 
 1. Set the Orientation parameter to Vertical.
 
-    ![](<images/aligncenter-9-ss.png>)
+    ![Screenshot demonstrating setting vertical align with custom content using Align Center pattern](images/aligncenter-9-ss.png "Align Center Vertical Orientation Screenshot")
 
 1. Drag an image into the Align Center placeholder and add the `border-radius-circle` class.
 
@@ -45,14 +45,14 @@ Applies only to Traditional Web Apps.
 
 1. Add another Text widget with the text "Marketing Communications Manager" and enclose it in a container.
 
-    ![](<images/aligncenter-10-ss.png>)
+    ![Screenshot showing Align Center pattern with an image and text widgets for a user profile](images/aligncenter-10-ss.png "Align Center with Custom Content Screenshot")
 
 1. Drag a container into the AlignCenter placeholder and add a Text widget.
 
 1. Type the text "02 Jan" and have its Style Class set to `font-size-xs text-neutral-6`.
 
-    ![](<images/aligncenter-11-ss.png>)
+    ![Screenshot of Align Center placeholder with a Text widget displaying the date in a small font size](images/aligncenter-11-ss.png "Align Center Text Widget Screenshot")
 
 1. Publish and test.
 
-    ![](<images/aligncenter-12.png>)
+    ![Image of the published result after testing the Align Center UI Pattern with custom content](images/aligncenter-12.png "Align Center Published Result")

@@ -27,15 +27,15 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ### Base Carousel block structure
 
-![Base Carousel block structure](images/carousel-structure-diag.png)
+![Diagram illustrating the base structure of a Carousel block](images/carousel-structure-diag.png "Base Carousel Block Structure Diagram")
 
 ### Library added structure with static content
 
-![Library added structure with static content](images/carousel-structure-static-diag.png)
+![Diagram showing the Carousel structure with added static content](images/carousel-structure-static-diag.png "Carousel Structure with Static Content Diagram")
 
 ### Library added structure with a List widget as content
 
-![Library added structure with a List widget as content](images/carousel-structure-list-diag.png)
+![Diagram depicting the Carousel structure with a List widget as content](images/carousel-structure-list-diag.png "Carousel Structure with List Widget Diagram")
 
 <div class="info" markdown="1">
 
@@ -87,7 +87,7 @@ If you are an advanced user, you might want to use the Carousel API (OutSystems.
 
 1. (Optional) If using only one item per slide, set custom Padding and Gap values, so the scale effect is noticeable.
 
-    ![Scale behavior](images/carousel-scale-ss.gif)
+    ![Animated GIF demonstrating the scale effect on the active item in a Carousel](images/carousel-scale-ss.gif "Carousel Scale Effect Demonstration")
 
 ### Disable the drag on the Carousel
 
@@ -96,6 +96,6 @@ If you are an advanced user, you might want to use the Carousel API (OutSystems.
 1. Set the **WidgetId** property of the action to the **CarouselId** returned from the **Initialized** event.
 1. Set the **HasDrag** boolean parameter to the desired value. In this example, it is set to False to disable the drag.
 
-    ![Disable drag](images/carousel-disabledrag-ss.png)
+    ![Screenshot showing how to disable the drag feature on a Carousel](images/carousel-disabledrag-ss.png "Carousel Disable Drag Screenshot")
 
     **Note**: You can use this client action linked to a button or any other trigger to toggle the drag in runtime.

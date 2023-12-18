@@ -26,7 +26,7 @@ This example demonstrates how to change the location of a map marker and get the
 
     The Map widget is displayed.
 
-    ![Map in the Service Studio toolbar](<images/map-widget-ss.png>)
+    ![Screenshot of the Map widget in the Service Studio toolbar](images/map-widget-ss.png "Map Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,46 +40,46 @@ This example demonstrates how to change the location of a map marker and get the
 
 1. From the Toolbox, drag the Map widget into the Main Content area of your application's screen.
 
-    ![Drag Map widget onto the screen](<images/map-drag-ss.png>)
+    ![Dragging the Map widget from the toolbox onto the main content area of the application screen](images/map-drag-ss.png "Dragging Map Widget onto the Screen")
 
 1. On the **Properties** tab, enter an API key so that the "For development purposes" watermark is removed. 
 
-    ![Enter API key](<images/map-apikey-ss.png>)
+    ![Entering an API key in the Properties tab to remove the development watermark from the Map widget](images/map-apikey-ss.png "Entering API Key for Map Widget")
 
 1. From the Toolbox, drag the Marker block onto the **Drag markers here** screen area.
 
-    ![Drag Marker block onto the screen](<images/map-marker-ss.png>)
+    ![Dragging the Marker block onto the Drag markers here area of the Map widget screen](images/map-marker-ss.png "Placing Marker Block on the Map")
 
 1. On the **Properties** tab, define the Marker's initial coordinates in the **Position** property. 
 
-    ![Define the Marker's coordinates](<images/map-position-ss.png>)
+    ![Defining the initial coordinates of the Marker in the Position property on the Properties tab](images/map-position-ss.png "Defining Marker's Initial Coordinates")
 
 1. To allow users to move a marker, expand the **OptionalConfigs** and set **AllowDrag** to True.
 
-    ![Define the Marker's coordinates](<images/map-draggable-ss.png>)
+    ![Setting AllowDrag to True in the OptionalConfigs to enable dragging of the map marker](images/map-draggable-ss.png "Enabling Marker Dragging")
 
 1.  To get the new marker coordinates, drag the **Marker Event** block inside the **MarkerEvents** placeholder and on the **Properties** tab, set the **EventName** property as **DragEnd**.
 
-    ![Get new coordinates](<images/map-markerevent-ss.png>)
+    ![Dragging the Marker Event block inside the MarkerEvents placeholder and setting the EventName property to DragEnd](images/map-markerevent-ss.png "Setting Up Marker DragEnd Event")
 
 1. Create two new local variables (Latitude and Longitude) to store the new coordinate values.
 
-    ![Create local variables](<images/map-variables-ss.png>)
+    ![Creating two new local variables for Latitude and Longitude to store new marker coordinates](images/map-variables-ss.png "Creating Latitude and Longitude Variables")
 
 1. Create a handler for the event and assign the new marker coordinates to the variables.
 
-    ![Create handler](<images/map-handler-ss.png>)
+    ![Creating a handler for the DragEnd event to assign new marker coordinates to the Latitude and Longitude variables](images/map-handler-ss.png "Creating Event Handler for New Coordinates")
 
 1. Add two expression widgets to the screen with the **Latitude** and **Longitude** variables to display the marker coordinates in your application. 
 
-    ![Add expressions to display new coordinates](<images/map-expression-ss.png>)
+    ![Adding expression widgets to the screen to display the new Latitude and Longitude marker coordinates](images/map-expression-ss.png "Displaying New Marker Coordinates")
 
 1. On the **Properties** tab, set the new variables **Default value** to the Boston US office (Latitude: 42.351657835 Longitude: -71.046881100).
 
-    ![Set variable default value](<images/map-draggable-varcoord-ss.png>)
+    ![Setting the default values of the new variables to the coordinates of the Boston US office on the Properties tab](images/map-draggable-varcoord-ss.png "Setting Default Variable Values")
 
 After following these steps and publishing the module, you can test the component in your app.
 
 **Result**
 
-![Result](<images/map-draggable-result-ss.png>)
+![Final result showing the draggable marker on the map within the application](images/map-draggable-result-ss.png "Final Result of Draggable Marker")

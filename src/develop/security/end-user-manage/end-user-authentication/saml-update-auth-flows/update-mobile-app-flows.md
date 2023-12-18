@@ -71,7 +71,7 @@ Go to Forge and install the [**Single Sign-On Mobile**](https://www.outsystems.c
 
         * IsPWA
 
-         ![Public elements to use from SingleSignOnMobile.](images/update-mobile-app-flows-dependencies-ss.png)
+         ![Screenshot showing the public elements to use from the Single Sign-On Mobile plugin in OutSystems Service Studio](images/update-mobile-app-flows-dependencies-ss.png "Public elements to use from SingleSignOnMobile")
 
 1. Click **Apply**.
 
@@ -89,22 +89,22 @@ If you're using Platform Server version 11.18 or later, and don’t see some of 
 
 In this step we suggest you adapt your app’s user interface to reflect the SSO authentication option for your users. The following is an example where the user can toggle between an SSO authentication and a more conventional user name/password authentication, using a local variable called **ShowSSOView**.
 
-![Login UI with SSO.](images/update-mobile-app-flows-ui-ss.png)
+![User interface example with a toggle between SSO authentication and conventional username/password authentication](images/update-mobile-app-flows-ui-ss.png "SSO and conventional login toggle UI")
 
 To use a Data Action to check if SSO is available and adapt the screen accordingly, follow these steps:
 
 1. Create the a new Data action **GetUserSSOAuthentication** and call the **UseSAMLAuthentication** server action.
 
-    ![Create new data action](images/update-mobile-app-flows-configure-ss.png)
+    ![Screenshot of creating a new data action GetUserSSOAuthentication in OutSystems Service Studio](images/update-mobile-app-flows-configure-ss.png "Create new data action for SSO")
 
 1. Set an action for the **OnAfterFetch** event to get the result of the server action and assign it to **IsSSOAuthConfigured**.
 
 
-    ![Check if SSO is available](images/update-mobile-app-flows-logic-ss.png)
+    ![Flowchart depicting the logic to check if SSO is available in a mobile app](images/update-mobile-app-flows-logic-ss.png "Check SSO availability logic")
 
 1. Assign **ShowSSOView** to the value of **IsSSOAuthConfigured**.
 
-    ![Assign the value](images/update-mobile-app-flows-assign-ss.png)
+    ![Screenshot showing the assignment of the IsSSOAuthConfigured value to ShowSSOView in OutSystems](images/update-mobile-app-flows-assign-ss.png "Assign SSO configuration value")
 
 
 ### Update the **OnClick** action for the **LoginSSO** button
@@ -115,7 +115,7 @@ For SSO authentication in both PWA and Native applications, create logic to upda
 
     1. If you’re running a PWA application, add the **User_GetUnifiedLoginUrl** server action and verify if a URL was returned. If it was, redirect to that URL.
 
-        ![Logic to verify if you are running a PWA.](images/update-mobile-app-flows-pwa-ss.png)
+        ![Logic flow for handling SSO login in a Progressive Web App (PWA)](images/update-mobile-app-flows-pwa-ss.png "PWA SSO login logic")
 
     1. If you’re running a native application, see step 2.
 
@@ -145,7 +145,7 @@ For SSO authentication in both PWA and Native applications, create logic to upda
 
 The following is an overview of the complete logic:
 
-![Complete logic of SSOOnClick.](images/update-mobile-app-flows-full-ss.png)
+![Complete overview of the logic flow for SSO login in a mobile application](images/update-mobile-app-flows-full-ss.png "Complete SSO login logic flow")
 
 ### Update the **UserInfo** block to manage the logout flow
 
@@ -155,7 +155,7 @@ In this step you update the **ClientLogout** client action of the **UserInfo blo
 
     1. If it’s not a Native application, add the **DoLogout** server action and redirect the application to the Login screen.
 
-        ![Logic to verify if you are running a PWA.](images/update-mobile-app-flows-pwa-logout-ss.png)
+        ![Logic flow for handling logout in a Progressive Web App (PWA)](images/update-mobile-app-flows-pwa-logout-ss.png "PWA logout logic")
 
     1. If you’re running a native application, see step 2.
 
@@ -183,4 +183,4 @@ In this step you update the **ClientLogout** client action of the **UserInfo blo
 
 The following is an overview of the complete logic:
 
-![Logout logic of the UserInfo block.](images/update-mobile-app-flows-logout-full-ss.png)
+![Complete overview of the logic flow for SSO logout in a mobile application](images/update-mobile-app-flows-logout-full-ss.png "Complete SSO logout logic flow")

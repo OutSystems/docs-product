@@ -30,13 +30,13 @@ File Viewer plugin can open:
 * **File from the app resources**. The plugin can access the **resources** path to load the file that's part of the app's static content. See [Working with app resources](#working-with-app-resources)
 * **Remote file**. The plugin downloads the file to the app sandbox and then opens the file.
 
-![File Viewer plugin](images/file-viewer-preview-ss.png)
+![Screenshot of the File Viewer plugin interface in a mobile app](images/file-viewer-preview-ss.png "File Viewer Plugin Preview")
 
 ## Progressive Web Apps (PWA)
 
 For now, it's impossible to access and manage a file system in a PWA or browser context. This means that using this plugin in a PWA only lets you open files via the device's file picker. You can show them in an OutSystems dialog. Your application needs to manage these limitations as necessary. The File Viewer plugin sample app has an example of this.
 
-![File Viewer plugin PWA](images/file-viewer-pwa-ss.png)
+![Screenshot showing the File Viewer plugin's support for Progressive Web Apps](images/file-viewer-pwa-ss.png "File Viewer PWA Support")
 
 ## Viewing files in Android and iOS
 
@@ -65,7 +65,7 @@ Here is how to add a file as a resource and open the file with the plugin.
     * Enter `resources` in the **Target Directory** property. Note that this value must be `resources` and you can't change it.
     * Select **Deploy to Target Directory** in the **Deploy Action** list.
 
-    ![Resources properties for File Viewer](images/resources-file-viewer-ss.png)
+    ![Screenshot of adding a file as a resource in the File Viewer plugin](images/resources-file-viewer-ss.png "Adding Resources in File Viewer Plugin")
 
 1. In the **OpenDocument** action enter `"resources\<file name>"` in the **FilePath** property. For example, if you add **sample.pdf** to **Resources**, the value of  **FilePath** is `"resources\sample.pdf"`.
 
@@ -80,7 +80,7 @@ The plugin can access only the resources you deploy in the **resources** path. T
 
 Here is an example of how to use the File Viewer plugin.
 
-![Open file logic](images/logic-file-viewer-ss.png)
+![Screenshot of the logic flow for using the File Viewer plugin in an app](images/logic-file-viewer-ss.png "Logic for File Viewer Plugin")
 
 A good practice is to check if the plugin is available to the app, and report an error if not. You can check the plugin availability by using the **CheckPlugin** action and checking the value of the **CheckPlugin.IsAvailable** boolean (1).
 

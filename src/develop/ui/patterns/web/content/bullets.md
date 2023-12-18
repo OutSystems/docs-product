@@ -24,7 +24,7 @@ You can use the Bullets UI Pattern to organize topics into separate bullet point
 
     The Bullets widget is displayed.
 
-    ![](<images/bullets-1-ss.png>)
+    ![Screenshot showing the Bullets widget in the Service Studio toolbox](images/bullets-1-ss.png "Bullets Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,7 +38,7 @@ You can use the Bullets UI Pattern to organize topics into separate bullet point
 
 1. From the Toolbox, drag the Bullets widget into the Main Content area of your application's screen.
 
-    ![](<images/bullets-2-ss.png>)
+    ![Screenshot of dragging the Bullets widget into the main content area of an application screen](images/bullets-2-ss.png "Dragging Bullets Widget into Main Content Area")
 
     By default, the Bullets widget contains 3 Bullet Items. You can add or delete Bullet Items as required. To create sub-bullets, you can drag the Bullets widget into the Bullet Item placeholder.
 
@@ -46,7 +46,7 @@ You can use the Bullets UI Pattern to organize topics into separate bullet point
 
     **Note**: If you leave any placeholder blank, it will not be displayed when the page is rendered.
 
-    ![](<images/bullets-5-ss.png>)
+    ![Screenshot with text added to each placeholder of the Bullets widget](images/bullets-5-ss.png "Adding Content to Bullets Placeholders")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

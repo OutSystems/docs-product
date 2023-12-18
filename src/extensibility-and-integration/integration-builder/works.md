@@ -17,7 +17,7 @@ After creating an integration and setting up a connection, use Service Studio to
 
 ## Architecture overview { #architecture }
 
-![Integration Builder architecture diagram](images/architecture-diag.png?width=800)
+![Diagram illustrating the architecture of Integration Builder, including components such as Integration Builder, Integration Manager, integrations, connections, and OutSystems apps.](images/architecture-diag.png "Integration Builder Architecture Diagram")
 
 The main components involved in the Integration Builder architecture are the following:
 

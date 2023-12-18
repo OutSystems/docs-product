@@ -37,7 +37,7 @@ To have WCAG-compliant color contrast ratio of text in your OutSystems applicati
 
 1. Select the element and go to its Styles Editor.
 
-    ![Setting color contrast ratio of text in Styles Editor](images/accessibility-color-contrast.png?width=550)
+    ![Screenshot of OutSystems Styles Editor showing how to set color contrast ratio for text](images/accessibility-color-contrast.png "Setting Color Contrast Ratio in Styles Editor")
 
 1. In the Font section, set the Size and Color.
 1. In the Layout section, set the Color to change the color of that element's background. 
@@ -57,7 +57,7 @@ Use headings correctly to organize the structure of your content and allow effec
 
 Convert a container or placeholder to a heading using the tag "OSTagName" in the Extended Properties.
 
-![Setting headings](images/accessibility-image3.jpg?width=600)
+![Example of setting a container to a heading using OSTagName in Extended Properties](images/accessibility-image3.jpg "Using Headings for Content Structure")
 
 For example, use the condition `OSTagName = "h1"` in the Extended Properties of the Title placeholder of a webscreen.
 
@@ -77,7 +77,7 @@ Learn more about [heading markup](https://www.w3.org/WAI/tutorials/page-structur
 
 In the Label property of the image, add a descriptive alternative text to make it accessible.
 
-![Setting descriptive alternative text](images/accessibility-image4.png?width=550)
+![OutSystems interface showing where to add descriptive alternative text to images](images/accessibility-image4.png "Adding Alternative Text to Images")
 
 The resultant HTML is as follows:
 
@@ -110,17 +110,17 @@ To group and organize widgets in forms, use the Fieldset pattern from OutSystems
 
 1. Drag the Form widget to the screen.
 
-    ![Forming widgets](images/accessibility-form-1.png)
+    ![Illustration of dragging a Form widget onto the screen in OutSystems](images/accessibility-form-1.png "Form Widget in OutSystems")
 
 1. Add as many Fieldset patterns as required.
 
-    ![Adding Fieldset patterns](images/accessibility-form-2.png)
+    ![Demonstration of adding multiple Fieldset patterns to a form in OutSystems](images/accessibility-form-2.png "Adding Fieldset Patterns to Forms")
 
 1. Add the required Input widgets in the Fieldset patterns and name them.
 1. Add Label widgets next to the Input widgets.
 1. To associate an input with a label, select the required input in the Input Widget property.
 
-    ![Selecting required input in Input Widget property](images/accessibility-form-3.png)
+    ![OutSystems form showing how to associate an input widget with a label widget](images/accessibility-form-3.png "Associating Input with Label Widgets")
 
 1. Publish and test.
 
@@ -166,7 +166,7 @@ Learn more about [outline: none](http://www.outlinenone.com/).
 
 The two types of default application templates in OutSystems—the TopMenu and the SideMenu—have layouts that are accessible, making sure they're interpretable by the browser and the screen reader.
 
-![TopMenu and SideMenu templates](images/accessibilityui-image1.jpg?width=550)
+![Preview of accessible TopMenu and SideMenu application templates in OutSystems](images/accessibilityui-image1.jpg "Accessible Application Templates")
 
 HTML Semantics used:
 `<header>, <nav>, <aside>, <main>, <footer>`
@@ -247,7 +247,7 @@ You should fix the navigation order in the HTML code instead of using positive `
 
 If you have to set the navigation order using the `tabindex`, set the `tabindex` in the Extended Properties of the required element.
 
-![Setting tabindex in the Extended Property](images/accessibilityui-image2.png)
+![OutSystems interface highlighting where to set the tabindex in Extended Properties](images/accessibilityui-image2.png "Setting Tabindex in Extended Properties")
 
 Learn more about accessible [usage of tabindex](https://webaim.org/techniques/keyboard/tabindex).
 
@@ -261,13 +261,13 @@ Learn more about accessible [usage of tabindex](https://webaim.org/techniques/ke
 
 These widgets are powerful elements for developers to implement accessibility in their applications. You can make containers and placeholders work as HTML tags. To do this, add `OSTagName = "<html_tag>"` as an Extended Property.
 
-![Using widgets to make containers and placeholders to work as HTML tags](images/accessibility-image6.jpg?width=600)
+![OutSystems interface showing how to extend containers for accessibility using Extended Properties](images/accessibility-image6.jpg "Extending Containers for Accessibility")
 
 You can also extend these elements to receive ARIA roles, ARIA states, ARIA properties, `tabindex`, or change things based on variables on your screen.
 
-![Setting elements to receive ARIA roles, ARIA states, ARIA properties, tabindex, or change things based on variables on your screen](images/accessibility-image7.png?width=600)
+![OutSystems interface showing how to extend placeholders for accessibility](images/accessibility-image7.png "Extending Placeholders for Accessibility")
 
-![Setting elements to receive ARIA roles, ARIA states, ARIA properties, tabindex, or change things based on variables on your screen](images/accessibility-image8.png?width=600)
+![OutSystems interface demonstrating setting ARIA roles and properties for accessibility](images/accessibility-image8.png "Setting ARIA Roles and Properties")
 
 ## Web accessibility tools and references
 
@@ -285,7 +285,7 @@ WCAG 2.0 and WCAG 2.1 are sets of stable guidelines that developers need to foll
 
 The use of non-semantic elements such as `<div>` and `<span>` with a class attribute isn't understandable by accessibility tools. Using HTML semantics clearly describes the meaning to browsers, developers and screen readers, and guarantees the accessibility of the content.
 
-![Image of examples of HTML semantics](images/accessibility-image9.jpg?width=600)
+![Examples of HTML semantics used to improve accessibility in web content](images/accessibility-image9.jpg "HTML Semantics for Accessibility")
 
 These are a few examples of HTML semantics: 
 
@@ -297,7 +297,7 @@ To have a readable structure that's accessibility compliant, implement HTML sema
 
 WAI-ARIA (Web Accessibility Initiative's Accessible Rich Internet Applications) has roles, states, and properties to help developers describe the meaning of content and works as an extension of HTML. It allows developers to add specific attributes to HTML tags (such as alert or slider).
 
-![Using Web Accessibility Initiative's Accessible Rich Internet Applications to allow developer to add attributes to HTML tags](images/accessibility-image10.jpg?width=600)
+![Illustration of ARIA roles, states, and properties used to enhance web accessibility](images/accessibility-image10.jpg "ARIA Extensions for Accessibility")
 
 See the [ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Roles), [ARIA states & properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#States_and_properties) and [ARIA Landmarks](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/HTML5.html) to learn more.
 

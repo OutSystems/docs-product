@@ -20,7 +20,7 @@ Groups information in a small block organized with different sections for title,
 
 Use the Card Sectioned pattern to group short pieces of information and highlight them on the screen.
 
-![Card Sectioned example](<images/cardsection-3.png>)
+![Example of a Card Sectioned pattern in a mobile app or reactive web app](images/cardsection-3.png "Card Sectioned Example")
 
 **How to use the Card Sectioned UI Pattern**
 
@@ -28,7 +28,7 @@ Use the Card Sectioned pattern to group short pieces of information and highligh
 
     The Card Sectioned widget is displayed.
 
-    ![Card Sectioned widget](<images/cardsection-1-ss.png>)
+    ![Screenshot showing the Card Sectioned widget in OutSystems Service Studio](images/cardsection-1-ss.png "Card Sectioned Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,7 +42,7 @@ Use the Card Sectioned pattern to group short pieces of information and highligh
 
 1. From the Toolbox, drag the Card Sectioned widget into the Main Content area of your application's screen.
 
-    ![Drag and drop card sectioned widget](<images/cardsection-2-ss.png>)
+    ![Illustration of dragging and dropping the Card Sectioned widget into the Main Content area in Service Studio](images/cardsection-2-ss.png "Drag and Drop Card Sectioned Widget")
 
     By default, the Card Sectioned widget contains an Image, Title, Content, and Footer placeholder.
 
@@ -50,11 +50,11 @@ Use the Card Sectioned pattern to group short pieces of information and highligh
 
     In this example we add an image, a title, some text, and a link.
 
-    ![Add content to the placeholders](<images/cardsection-4-ss.png>)
+    ![Screenshot demonstrating how to add content to the placeholders of the Card Sectioned widget](images/cardsection-4-ss.png "Adding Content to Card Sectioned Placeholders")
 
 1. On the **Properties** tab, you can change the look and feel of the Card Sectioned widget, for example, the orientation, and padding properties.
 
-    ![Card Sectioned properties](<images/cardsection-5-ss.png>)
+    ![Screenshot of the Properties tab for the Card Sectioned widget showing various customization options](images/cardsection-5-ss.png "Card Sectioned Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

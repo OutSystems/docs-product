@@ -15,7 +15,7 @@ When designing queries, it's common to add conditions to filter results and get 
 1. Double-click to open the Aggregate.
 1. Right-click the attribute you want to filter by and select **Filter...**.
 
-    ![Filter Query Results](images/filter-query.png)
+    ![Screenshot showing how to add a filter to an Aggregate in OutSystems](images/filter-query.png "Adding a Filter to an Aggregate")
 
 1. Enter the condition. 
 

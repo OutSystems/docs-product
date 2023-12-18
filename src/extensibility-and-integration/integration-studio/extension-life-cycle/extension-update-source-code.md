@@ -4,8 +4,8 @@ guid: 985d898a-a78b-4cb3-8628-8f9027631d7c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The article explains how to synchronize .NET IDE source code with extension definitions in Integration Studio, including generating templates, updating implementation files, and merging method signatures
 ---
-
 # Update the Extension Source Code
 
 The Update Source Code operation synchronizes the source code you added in the .NET IDE with the definition of the extension elements. This operation involves the following steps:
@@ -32,7 +32,7 @@ The Update Source Code operation synchronizes the source code you added in the .
   
 ## How to update the extension source code
 
-In the **File** menu or in the toolbar, click ![](images/update-source-code.png) **Update Source Code** or ![](images/1-click-publish-icon.png) [**1-Click Publish**](<extension-1-cp.md>).
+In the **File** menu or in the toolbar, click ![Icon of the Update Source Code button in the toolbar](images/update-source-code.png "Update Source Code Button") **Update Source Code** or ![Icon of the 1-Click Publish button in the toolbar](images/1-click-publish-icon.png "1-Click Publish Button") [**1-Click Publish**](<extension-1-cp.md>).
 
 <div class="info" markdown="1">
 

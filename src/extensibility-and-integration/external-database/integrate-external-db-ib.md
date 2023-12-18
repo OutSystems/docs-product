@@ -72,7 +72,7 @@ To integrate with an external database using Integration Builder, follow these s
 
 1. Use the integration in your application.
 
-    ![integrating with an external database using Integration Builder process overview](<images/integrate-external-db-process-diag.png>)
+    ![Flowchart illustrating the process of integrating with an external database using Integration Builder](images/integrate-external-db-process-diag.png "Integration Builder Process Overview")
 
 Previous integrations created in Integration Studio must be maintained and evolved in Integration Studio. Integration Builder cannot maintain those integrations. For new integrations, use Integration Builder.
 
@@ -84,7 +84,7 @@ Previous integrations created in Integration Studio must be maintained and evolv
 
 1. In the **Environment** field, enter the address of your OutSystems development environment and click **Next**.
 
-    ![Log into Integration Builder](<images/login-ib.png>)
+    ![Screenshot of the Integration Builder login page with fields for environment URL and user credentials](images/login-ib.png "Login to Integration Builder")
 
     **Note**: For security and governance reasons, you can only connect to a **development** environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
 
@@ -94,15 +94,15 @@ Previous integrations created in Integration Studio must be maintained and evolv
 
 1. On the **My integrations** screen, click **Create integration**.
 
-    ![Click Create integration button](<images/create-integration-ib.png>)
+    ![Screenshot highlighting the 'Create integration' button in Integration Builder](images/create-integration-ib.png "Create Integration Button")
 
 1. Choose a provider.
 
-    ![Choose a provider](<images/choose-provider-ib.png>)
+    ![Screenshot displaying the step of choosing a provider in Integration Builder](images/choose-provider-ib.png "Choose a Provider")
 
 1. If you are creating an integration with a relational database and using a Personal Environment, validate your credentials and click **Confirm**.
 
-    ![Validate your credentials](<images/validate-credentials-ib.png>)
+    ![Screenshot showing the credentials validation step in Integration Builder for relational database integration](images/validate-credentials-ib.png "Validate Credentials")
 
 1. If you are creating a MongoDB integration, and don't have Integration Manager MongoDB plugin installed, Integration Builder let's you know. Install the plugin by selecting **Install MongoDB plugin**, and after the plugin is installed, click **Next**.
 
@@ -130,7 +130,7 @@ If the database connection you want to use already exists, do the following:
 
     **Note**: The list of connections only displays connections that you have permissions to view. To select a connection from the list, you must have **Full Control** permissions.
 
-    ![Select a connection](<images/select-connection-ib.png>)
+    ![Screenshot depicting the selection of a database connection in Integration Builder](images/select-connection-ib.png "Select a Connection")
 
 #### Create a new connection { #option-2 }
 
@@ -144,7 +144,7 @@ Create a new connection by following these steps:
 
 1. Click **+ Create a connection**.
 
-    ![Create a connection in Service Studio](<images/create-ss-connection-ib.png>)
+    ![Screenshot illustrating the option to create a new database connection in Service Studio via Integration Builder](images/create-ss-connection-ib.png "Create a Connection in Service Studio")
 
 1. Enter the mandatory details, test your connection, and finally click **Create connection**.
 
@@ -179,11 +179,11 @@ This options is only available for integrations with relational databases.
 
 1. If your credentials don't allow you to create a connection, you can request your OutSystems Administrator to create it by clicking **Send request by email**.
 
-    ![Request a new connection](<images/send-request-ib.png>)
+    ![Screenshot showing the option to send a request for a new database connection via email in Integration Builder](images/send-request-ib.png "Request a New Connection")
 
 1. Enter all connection details to allow an OutSystem Administrator to create the connection and click **Send email**.
 
-    ![Send Request](<images/send-request-email-ib.png>)
+    ![Screenshot of the interface for sending an email request for a new database connection in Integration Builder](images/send-request-email-ib.png "Send Request Email")
 
     When your request is approved it will appear in your connection list in Integration Builder.
 
@@ -199,7 +199,7 @@ If you are integrating with DB2 iSeries, PostgreSQL, Aurora PostgreSQL, MySQL, O
 
 1. Select the database, catalog, or schema, to consume with the integration and click **Next**.
 
-    ![Select database](<images/select-database-ib.png>)
+    ![Screenshot showing the step of selecting a database, catalog, or schema in Integration Builder](images/select-database-ib.png "Select Database")
 
 1. Select the tables to consume with the integration and click **Next**.
 
@@ -211,7 +211,7 @@ If you are integrating with DB2 iSeries, PostgreSQL, Aurora PostgreSQL, MySQL, O
 
     </div>
 
-    ![Add tables](<images/add-tables-ib.png>)
+    ![Screenshot displaying the interface for adding tables to an integration in Integration Builder](images/add-tables-ib.png "Add Tables to Integration")
 
 When you publish the integration, the selected tables are represented as entities in Service Studio.
 You can select more tables later on by editing the published integration in Integration Builder.
@@ -272,7 +272,7 @@ After this step, [review and publish your integration](#review).
 
     * Preserve database NULLs - Always write Integration Builder default values as database NULL. Database NULLs are read as Integration Builder default values.
 
-    ![Review default value behavior option](<images/review-default-values-ib.png>)
+    ![Screenshot showing the default value behavior options during the review of an integration in Integration Builder](images/review-default-values-ib.png "Review Default Value Behavior Option")
 
     For more information about default values, see [Platform and Integration Builder default values](#platform-and-integration-builder-default-values).
 
@@ -316,7 +316,7 @@ Depending on the type of database you integrated with, follow the steps on one o
 
 1. Add a dependency to the integration, select the entities you want to use in your application, and click **Apply**.
 
-    ![Add dependency](<images/add-dependency-ss.png>)
+    ![Screenshot demonstrating how to add a dependency to an integration in OutSystems Service Studio](images/add-dependency-ss.png "Add Dependency in Service Studio")
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
 

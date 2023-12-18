@@ -27,4 +27,4 @@ To configure the runtime settings of a REST API you are consuming, do the follow
 1. Select the Integrations tab and click on the consumed REST API name to edit it. 
 1. Set the **effective URL** and/or **effective authentication credentials** for the current environment and click apply.   
   
-![REST runtime configuration](images/rest-runtime-configuration-sc.png)
+![Screenshot of the Service Center interface showing where to configure the runtime settings for a consumed REST API](images/rest-runtime-configuration-sc.png "Service Center REST API Runtime Configuration")

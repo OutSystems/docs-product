@@ -4,8 +4,8 @@ guid: 19f255a3-4d7e-4bf4-91d7-74c191a42399
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The Options window in Integration Studio allows customization of development parameters including file comparison, .NET SDK settings, and proxy authentication
 ---
-
 # Options Window
 
 In the Options window, of the [Edit](<intro.md>) menu, you can customize some parameters related to the development in Integration Studio.
@@ -53,7 +53,7 @@ The default compiler options are as follows:
     * `/target:Rebuild`: Cleans and then builds the specified solution or project according to the specified solution configuration.
     * `/property:Configuration=Release`: The solution will be compiled in Release mode, generating the DLLs and EXEs for the current extension.
 
-![](images/tip.gif) For more information about the compiler options, check the [MSDN site](<https://msdn.microsoft.com/en-us/library/ms164311.aspx>).
+![An icon representing a tip or suggestion related to .NET Compiler Tool Options in Integration Studio documentation](images/tip.gif "Tip Icon") For more information about the compiler options, check the [MSDN site](<https://msdn.microsoft.com/en-us/library/ms164311.aspx>).
 
 ## Connection Tab
 
@@ -64,7 +64,7 @@ Use proxy authentication
 
     Default value: un-checked.
 
-    ![](images/tip.gif) If the Platform Server you are trying to connect to has a proxy, then it's mandatory that you set this option; otherwise it won't be possible for Integration Studio to connect to it.
+    ![An icon representing a tip or suggestion related to .NET Compiler Tool Options in Integration Studio documentation](images/tip.gif "Tip Icon") If the Platform Server you are trying to connect to has a proxy, then it's mandatory that you set this option; otherwise it won't be possible for Integration Studio to connect to it.
 
 Proxy user
 :   User name used in the proxy authentication.

@@ -45,7 +45,7 @@ Create cards by building a response in the **GetMessageResponse** Server Action.
 
 Here is an example of a chatbot logic to send a PDF attachment in the chat window. When the user clicks the text in the chat window, the browser loads the PDF file.
 
-![Creating a chatbot response with a card](images/webhook-card-download-logic-sample-ss.png?width=600)
+![Screenshot of chatbot logic for creating a download card in OutSystems](images/webhook-card-download-logic-sample-ss.png "Chatbot Logic for Download Card")
 
 The bot logic usually has multiple branches, but this short example uses only one flow to focus on the logic of creating the download card.
 
@@ -67,13 +67,13 @@ The bot logic usually has multiple branches, but this short example uses only on
 
 Once you run the example logic, the chatbot replies with the following message:
 
-![Creating a chatbot response with a card](images/webhook-browser-preview-pdf-download.png?width=350)
+![Preview of chatbot message with a PDF download card in the browser](images/webhook-browser-preview-pdf-download.png "Chatbot PDF Download Preview")
 
 ## Reply with a card that has an image and a button
 
 Here is another example, which focuses on the logic overview and tha data structure. The bot logic usually has multiple branches, but this short example uses only one flow for better overview. 
 
-![Creating a chatbot response with a thumbnail card](images/webhook-card-download-thumbnail-sample-ss.png?width=600)
+![Screenshot of chatbot logic for creating a thumbnail card with a button in OutSystems](images/webhook-card-download-thumbnail-sample-ss.png "Chatbot Logic for Thumbnail Card")
 
 1. **CardAction** local variable with **CardAction** data type corresponds to a clickable button, and in this **Assign** tool you assign the values to it.
 1. **ListAppend** action adds the **CardAction** variable to the list of buttons, in **Attachment.Content.Buttons**.
@@ -84,10 +84,10 @@ Here is another example, which focuses on the logic overview and tha data struct
 
 Once the chatbot runs, it replies this message to the user:
 
-![Creating a chatbot response with a card](images/webhook-browser-preview-thumbnail.png?width=350)
+![Preview of chatbot message with a thumbnail image and a button card in the browser](images/webhook-browser-preview-thumbnail.png "Chatbot Thumbnail Card Preview")
 
 ## Reply with a multiple suggestions card
 
 This is a card that offers several suggestions to the user. For more information, explore the chatbot demo app.
 
-![Creating a chatbot response with a card](images/webhook-browser-preview-multiple-suggestions.png?width=350)
+![Preview of chatbot message with a multiple suggestions card in the browser](images/webhook-browser-preview-multiple-suggestions.png "Chatbot Multiple Suggestions Card Preview")

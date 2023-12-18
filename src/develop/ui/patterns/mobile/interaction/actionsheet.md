@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Action Sheet UI Patterns to add a menu that slides from the bottom of the screen when triggered by a user action.
 
-![](<images/actionsheet-1-ss.png>)
+![Screenshot of the Action Sheet UI Pattern in a mobile app interface](images/actionsheet-1-ss.png "Action Sheet UI Pattern")
 
 **How to use the Action Sheet UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Action Sheet UI Patterns to add a menu that slides from the bott
 
     The Action Sheet widget is displayed.
 
-    ![](<images/actionsheet-2-ss.png>)
+    ![Service Studio interface showing the Action Sheet widget in the toolbox](images/actionsheet-2-ss.png "Action Sheet Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,35 +40,35 @@ You can use the Action Sheet UI Patterns to add a menu that slides from the bott
 
 1. From the Toolbox, drag the Action Sheet widget into the Main Content area of your application's screen.
 
-    ![](<images/actionsheet-3-ss.png>)
+    ![Dragging the Action Sheet widget into the Main Content area of an application's screen](images/actionsheet-3-ss.png "Dragging Action Sheet Widget")
 
     By default, the Action Sheet widget contains 5 button placeholders. 
 
 1. Add the relevant content to the Button placeholders. In this example, we add buttons that navigate to other pages when clicked. 
 
-    ![](<images/actionsheet-5-ss.png>)
+    ![Action Sheet widget with button placeholders for adding navigation buttons](images/actionsheet-5-ss.png "Adding Buttons to Action Sheet")
 
 1. Add a local variable. In this example, we call the variable **IsOpened**. 
 
 1. Select the Action Sheet pattern, and on the **Properties** tab, set the **IsOpen** property to the new local variable (in this example, **IsOpened**).
 
-    ![](<images/actionsheet-4-ss.png>)
+    ![Properties tab in Service Studio with the IsOpen property being set to a local variable](images/actionsheet-4-ss.png "Setting IsOpen Property")
 
 1. To open the Action Sheet menu, we add a button and on the **Properties** tab, from the **OnClick** dropdown, select **New Client Action**.
 
-    ![](<images/actionsheet-6-ss.png>)
+    ![Adding a button to open the Action Sheet menu with the OnClick event in the Properties tab](images/actionsheet-6-ss.png "Creating OnClick Event")
 
 1. Add an Assign to the client action and set the **IsOpened** local variable to **True**. 
 
-    ![](<images/actionsheet-7-ss.png>)
+    ![Assign action in Service Studio setting the IsOpened local variable to True](images/actionsheet-7-ss.png "Assigning True to IsOpened Variable")
 
 1. To close the Action Sheet menu, on the **Properties** tab, from the **Handler** dropdrown of the **OnClose** event, select **New Client Action**.
     
-    ![](<images/actionsheet-8-ss.png>)
+    ![Setting up the OnClose event handler in the Properties tab to close the Action Sheet menu](images/actionsheet-8-ss.png "Creating OnClose Handler")
 
 1. Add an Assign to the client action and set the **IsOpened** local variable to **False**. 
 
-    ![](<images/actionsheet-9-ss.png>)
+    ![Assign action in Service Studio setting the IsOpened local variable to False](images/actionsheet-9-ss.png "Assigning False to IsOpened Variable")
 
 After following these steps and publishing the module, you can test the pattern in your app. 
        

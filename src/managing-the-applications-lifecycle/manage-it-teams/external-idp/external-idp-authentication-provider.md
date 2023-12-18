@@ -14,7 +14,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applicatio
 
 When accessing any Outsystems management console (Service Center and Lifetime) without a valid session, the user is redirected to the external IdP login screen. When the authentication flow finishes on the IdP, it redirects back to the platform and performs a successful login (if the user exists in the platform).
 
-![Login](images/login.png)
+![Screenshot of the external identity provider login screen for OutSystems management consoles](images/login.png "External IdP Login Screen")
 
 ## Logging out from OutSystems management consoles
 
@@ -30,19 +30,19 @@ To log into Service Studio using an IdP,  follow these steps:
 
 1. Click **Connect to Environment**.
 
-    ![Click Connect to Environment](images/connect-ss.png)
+    ![Service Studio interface showing the 'Connect to Environment' button](images/connect-ss.png "Connect to Environment in Service Studio")
 
 1. Enter the environment URL and click **Next**.
 
-    ![Enter environment and click Next](images/environment-ss.png)
+    ![Entering the environment URL in Service Studio for IdP authentication](images/environment-ss.png "Enter Environment URL in Service Studio")
 
     If the environment configuration to use an external IdP is correct, then the button changes to **Waiting to log in from your browser**.
 
-    ![Waiting to log into browser](images/waiting-ss.png)
+    ![Service Studio screen displaying 'Waiting to log in from your browser' message during IdP authentication](images/waiting-ss.png "Waiting to Log in from Browser")
 
     A new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a pop-up asking the user to **Open Service Studio**.
 
-    ![Open Service Studio](images/open-ss.png)
+    ![Browser pop-up asking to open Service Studio after IdP authentication](images/open-ss.png "Open Service Studio Prompt")
 
 1. Click the **Open Service Studio** button and complete the login process.
 
@@ -56,15 +56,15 @@ To log into Integration Studio using an IdP,  follow these steps:
 
 1. Click **Connect to Environment**.
 
-    ![Click Connect to Environment](images/connect-is.png)
+    ![Integration Studio interface showing the 'Connect to Environment' button](images/connect-is.png "Connect to Environment in Integration Studio")
 
 1. Enter the environment URL and click **Next**.
 
-    ![Enter environment and click Next](images/environment-is.png)
+    ![Entering the environment URL in Integration Studio for IdP authentication](images/environment-is.png "Enter Environment URL in Integration Studio")
 
     A message displays informing you to **Use the Identity Service website to complete the login process**.
 
-    ![Use identity service website](images/identity-service-is.png)
+    ![Message instructing to use the Identity Service website to complete the login process in Integration Studio](images/identity-service-is.png "Identity Service Login Prompt")
 
    A new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a pop-up asking the user to **Open Integration Studio**.
 

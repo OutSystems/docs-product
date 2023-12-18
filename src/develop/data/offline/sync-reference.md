@@ -22,7 +22,7 @@ These are the elements belonging to the framework for syncing data between the s
 
 OfflineDataSync folder in **Client Actions** should contain all actions that run on the mobile device to update local entities and exchange data with the corresponding actions in the server side of the logic.
 
-![](images/sync-logic-client-offlinedatasync.png)
+![Screenshot of the OfflineDataSync folder within the Client Actions tab showing the structure for offline data synchronization in a mobile app](images/sync-logic-client-offlinedatasync.png "OfflineDataSync Folder in Client Actions")
 
 ### OfflineDataSyncConfiguration
 
@@ -56,7 +56,7 @@ SyncUnit
 
 OfflineDataSync folder in **Server Actions** should contain all actions that run on the server to update server entities and exchange data with the corresponding actions in the client side of the logic.
 
-![](images/sync-logic-server-offlinedatasync.png)
+![Screenshot of the OfflineDataSync folder within the Server Actions tab illustrating the server-side logic for data synchronization](images/sync-logic-server-offlinedatasync.png "OfflineDataSync Folder in Server Actions")
 
 ### ServerDataSync
 
@@ -70,7 +70,7 @@ SyncUnit
 
 Mobile apps come with two actions to detect network status and type. These are also accessible as functions in expressions.
 
-![](images/sync-logic-client-mobilepatterns.png)
+![Screenshot of the MobilePatterns actions within the Client Actions tab used for detecting network status and type in mobile apps](images/sync-logic-client-mobilepatterns.png "MobilePatterns in Client Actions")
 
 ### GetNetworkStatus
 
@@ -87,7 +87,7 @@ The following event listeners in the Source Block of individual screens can be u
 
 To create actions as event listeners of these events, open the widget tree of a screen, select the **Layout** or **LayoutBlank** block instance in the screen and enter the **Handler** properties that correspond to the events.
 
-![](images/sync-interface-screen-layout.png)
+![Image of the UI Flows Common Layout and LayoutBlank in the Interface tab showing event listeners for sync outcomes](images/sync-interface-screen-layout.png "UI Flows Common Layout")
 
 ### OnSyncComplete
 
@@ -116,7 +116,7 @@ SyncUnit
 
 ## Interface tab > UI Flows > MobilePatterns > Private
 
-![](images/sync-interface-networkstatuschanged.png)
+![Image of the NetworkStatusChanged block in the Interface tab's MobilePatterns section for handling online and offline status changes](images/sync-interface-networkstatuschanged.png "NetworkStatusChanged Block")
 
 Contains a block that you can use to listen if the application is online or offline.
 

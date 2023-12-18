@@ -20,11 +20,11 @@ Just like any other bot, a chatbot needs a service that monitors for user intera
 
 A chatbot, as a feature you add to your app, consists of the user interface and the logic. For a chatbot with basic functionality, such as responding to predefined questions or sending files, you can use OutSystems to build logic.
 
-![Azure bot service and OutSystems logic](images/chatbot-architecture-logic-outsystems-dia.png?width=400)
+![Diagram illustrating the chatbot architecture logic using OutSystems](images/chatbot-architecture-logic-outsystems-dia.png "Chatbot Architecture Logic with OutSystems")
 
 For more sophisticated functions of a chatbot, for example, ability to understand natural language, awareness of spelling errors, or recognizing speech and intent of a user message, you should focus on using Azure Bot Framework.
 
-![Azure bot service and Azure logic](images/chatbot-architecture-logic-azure-dia.png?width=400)
+![Diagram showing the chatbot architecture logic implemented with Azure Bot Framework](images/chatbot-architecture-logic-azure-dia.png "Chatbot Architecture Logic with Azure")
 
 ## The OutSystems.AI Chatbot component
 
@@ -51,7 +51,7 @@ In a typical chatbot conversation there are:
 
 Here is an overview of the communication flow:
 
-![communication sequence diagram](images/azure-chatbot-communication-dia.png?width=700)
+![Flowchart depicting the communication sequence between OutSystems chatbot modules and Azure services](images/azure-chatbot-communication-dia.png "Azure Chatbot Communication Flow")
 
 <div class="info" markdown="1">
 

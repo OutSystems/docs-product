@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/card-2-diag.png>)
+![Diagram illustrating the layout and classes of a card component in a traditional web app](images/card-2-diag.png "Card Layout Diagram")
 
 ## Advanced use case
 
@@ -27,7 +27,7 @@ Applies only to Traditional Web Apps.
 1. Write the following classes in the ExtendedClass property of the card.
     `background-yourcolor text-neutral-0 border-size-none `
 
-    ![](<images/card-3-ss.png>)
+    ![Screenshot showing how to change the background color of a card by adding classes in the ExtendedClass property](images/card-3-ss.png "Card Background Color Change")
     
     The class `text-neutral-0` is to set the text-color to white, in contrast with the new background. The `border-size-none` class is to remove the border.
     
@@ -35,8 +35,8 @@ Applies only to Traditional Web Apps.
 
     **Before**
 
-    ![](<images/card-4.png>)
+    ![Image of a card before the background color change, showing the default appearance](images/card-4.png "Card Before Background Change")
 
     **After**
 
-    ![](<images/card-5.png>)
+    ![Image of a card after the background color change, demonstrating the contrast with white text and no border](images/card-5.png "Card After Background Change")

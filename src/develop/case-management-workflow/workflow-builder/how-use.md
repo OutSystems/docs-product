@@ -19,7 +19,7 @@ To build apps with the Workflow Builder, you need to have an IT user in your inf
 
 When logging in the Workflow Builder, you need to provide the **development environment** address, and then the login credentials. If you don't know your IT user or don't have one yet, you need to request it to your IT department. They're able to assist with this step. The same applies to the requested environment address.
 
-![Workflow Builder login page](images/login-wfb.png)
+![Screenshot of the Workflow Builder login page with fields for environment address and user credentials](images/login-wfb.png "Workflow Builder Login Page")
 
 <div class="info" markdown="1">
 
@@ -35,7 +35,7 @@ After logging in, if Workflow Builder lets you know that the environment isn't r
 
 Once the register process is complete, you get an onboarding that briefly explains the main features of Workflow Builder to familizarize you with the tool.
 
-![Welcome Caroucell](images/wfb-welcome-page.png)
+![Onboarding carousel screen in Workflow Builder introducing main features](images/wfb-welcome-page.png "Workflow Builder Welcome Carousel")
 
 If you want to revisit the onboarding, just look for the **?** button at the top menu of the tool, to trigger the onboarding steps.
 
@@ -43,7 +43,7 @@ If you want to revisit the onboarding, just look for the **?** button at the top
 
 After the onboarding, you land on the **My apps** screen. This screen is where the created apps appear. In the first stage, it's empty, since no apps were yet developed in Workflow Builder for this environment.
 
-![Welcome Caroucell](images/wfb-welcome-build-first-app.png)
+![Initial 'My apps' screen in Workflow Builder showing no apps with a prompt to build the first app](images/wfb-welcome-build-first-app.png "Workflow Builder My Apps Screen")
 
 Anyone that publishes an app to the development environment registered previously has their apps appear in this screen.
 
@@ -51,7 +51,7 @@ Anyone that publishes an app to the development environment registered previousl
 
 If there are apps already developed in this environment, they're visible on this screen. They can have different statuses: Published, Draft, or Failed to publish.
 
-![My apps screen with examples](images/wfb-my-apps-screen.png?width=750)
+![Workflow Builder screen displaying various app statuses such as Published, Draft, and Failed to publish](images/wfb-my-apps-screen.png "Workflow Builder App Status Examples")
 
 * **Published** - an app already developed in the Workflow Builder and published in your OutSystems environment. You can only edit this app in Workflow Builder.
 

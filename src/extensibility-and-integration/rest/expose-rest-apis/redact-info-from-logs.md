@@ -1,11 +1,11 @@
 ---
+summary: The article explains how to redact sensitive information from REST API logs in Service Studio by setting the Log Redaction property to Yes for specific input and output parameters
 locale: en-us
 guid: 3fcf9d96-a766-4578-9e76-3798201cca0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=2439%3A15059&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
-
 # Redacting information from REST API logs
 
 When [setting the logging level](https://success.outsystems.com/documentation/11/extensibility_and_integration/set_the_logging_level_of_rest_and_soap_integrations/) of a REST API to **Full** the input and output parameter values sent/received are shown up in the logs. Nonetheless, in some cases, you may not want some values of the parameters to be displayed.
@@ -26,7 +26,7 @@ To redact the values of a given Input Parameter from the logs, do the following:
 1. Select the input parameter you wish to redact, and set its **Log Redaction**
    property to **Yes**.
 
-    ![Activating the Log Redaction property of an input parameter](images/redact_password.png)
+    ![Screenshot showing how to enable log redaction for an input parameter in Service Studio](images/redact_password.png "Activating the Log Redaction property of an input parameter")
 
 Use the following steps to redact the values of a given Output Parameter from the logs:
 
@@ -36,10 +36,10 @@ Use the following steps to redact the values of a given Output Parameter from th
 
 1. Select the input parameter you wish to redact (in this case Code) , and set its **Log Redaction property** to **Yes**.
     
-    ![Activating the Log Redaction property of an output parameter](images/redact_code.png)
+    ![Screenshot illustrating the activation of log redaction for an output parameter in Service Studio](images/redact_code.png "Activating the Log Redaction property of an output parameter")
 
 With this configured, performing a request at runtime the resultant logs will look like shown below. 
 
-![Redacted code](images/logs.png)
+![Sample logs displaying redacted values for sensitive information in a REST API call](images/logs.png "Example of redacted REST API logs")
 
 You can see that it’s not possible to see the values of the Password and the Code which meant they are both shown as **redacted**.

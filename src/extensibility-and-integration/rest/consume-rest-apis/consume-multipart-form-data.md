@@ -29,19 +29,19 @@ When the **Request Format**property of a method is set to **Multipart/form-data*
 
 For example, the OpenAPI specification below has the request set to multipart/form data with a list of parts (address, profileImage, and id) that have their content-type defined.
 
-![OpenAPI spec](images/api-spec-usr.png) 
+![Example of an OpenAPI specification defining multipart form data with parts for address, profile image, and ID](images/api-spec-usr.png "OpenAPI Specification for Multipart/Form Data") 
 
 When you consume a REST API method, the corresponding fields, **Name**, **Data Type**, **Send In**, **Name in Request**, and **Content-Type in Multipart** for each part are automatically populated in Service Studio.
 
-![Fields automatically populates in Service Studio](images/input-parameter-ss.png)
+![Screenshot showing how input parameters are automatically populated in Service Studio for a REST API method](images/input-parameter-ss.png "Service Studio Input Parameters")
 
 If a part is specified as a **Binary dynamic list**, there are as many parts as elements of the list with the data type automatically set to **RequestPart**.
 
-![Binary dynamic list](images/list-binaries-usr.png) ![RequestPart data type](images/list-binaries-ss.png)
+![OpenAPI specification snippet showing a binary dynamic list for multipart form data](images/list-binaries-usr.png "Binary Dynamic List in OpenAPI Specification") ![Service Studio view of a binary dynamic list input with data type set to RequestPart List](images/list-binaries-ss.png "Binary Dynamic List in Service Studio")
 
 If no content-type is specified for a part, the **Content-Type in Multipart** field is populated based on the type of schema properties. For example, if the specification contains a list of integers without the content-type defined, the field is automatically populated based on the type of the schema properties.
 
-![List of integers data type](images/list-integers-ss.png)  
+![Service Studio configuration for a list of integers without a specified content-type in a multipart form data method](images/list-integers-ss.png "List of Integers in Service Studio")  
 
 **Note**: You can set the data type of each input, **overriding** whatever value was originally there. This means that, in the case of a multipart/form-data method, you can, for example, change the data type of an input from **Integer** to **RequestPart**.
 
@@ -55,11 +55,11 @@ You can use this structure if you want an arbitrary number of parts in the reque
 
 The following is an auxiliary data structure that represents a part and has a **Name**, **PartText**, **PartBinary**, **Filename**, and **Content-Type** properties.
 
-![Data structure](images/data-structure-ss.png) 
+![Service Studio representation of the RequestPart data structure with properties for name, text, binary, filename, and content-type](images/data-structure-ss.png "RequestPart Data Structure in Service Studio") 
 
 These properties are useful if you want greater flexibility to modify the parts (Name, Filename, and Content-Type). Sending a dynamic number of files with different extensions is the typical scenario for using multipart/form-data. The following image demonstrates this scenario.
 
-![Modify parts](images/modify-parts-ss.png) 
+![Example of modifying parts in Service Studio for a multipart form data request with different file extensions](images/modify-parts-ss.png "Modifying Parts in Service Studio") 
 
 
 ## Updating a multipart/form-data REST API method

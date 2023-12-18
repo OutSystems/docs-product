@@ -24,7 +24,7 @@ To open this editor do the following:
 
 1. Right-click the **Multilingual Locales** folder (or any of the languages inside it) and click **Edit Translations...**
 
-![](images/translations-editor-1.jpg)
+![Screenshot of the Translations Behavior Editor in Service Studio showing how to edit translation settings for multilingual locales](images/translations-editor-1.jpg "Translations Behavior Editor")
 
 The **Translations Behavior Editor** provides you a list of all your module's translatable resources for you to select and set to be translated or not.
 

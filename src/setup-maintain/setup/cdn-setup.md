@@ -1,12 +1,11 @@
 ---
-summary: 
+summary: The article explains how to use a CDN with OutSystems to deliver static content efficiently and improve app performance
 locale: en-us
 guid: 4c56a563-c298-4a10-9fe9-e0bc859ded6e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2066%3A3453&mode=design&t=PPL7U8XyNSIpuC5w-1
 ---
-
 # Using a CDN with OutSystems
 
 Content Delivery Network (CDN) is a cache mechanism that leverages a service with multiple servers spread over multiple regions around the world that work in delivering static content.
@@ -29,7 +28,7 @@ You can use your own CDN with your OutSystems self-managed infrastructure.
 
 Below is an example of a typical architecture:
 
-![CDN architecture](images/cdn-architecture-diag.png)
+![Diagram illustrating the architecture of a CDN within an OutSystems infrastructure](images/cdn-architecture-diag.png "CDN Architecture Diagram")
 
 ## Configurations
 
@@ -93,7 +92,7 @@ To do this, follow these steps:
 1. Under the **Actions** section, click **Set Common Headers…** 
 1. In the dialog box, select the **Expire Web content** checkbox and set the **After** value to **120 Second(s)**.
 
-![IIS change cache timeout](images/cdn-cache-timeout-usr.png)
+![Screenshot showing the process of setting the cache timeout in IIS Manager for CDN](images/cdn-cache-timeout-usr.png "CDN Cache Timeout Configuration")
 
 ### Service Center tuning
 

@@ -22,7 +22,7 @@ The feedback users send consists of:
 * Screen resolution
 * Operating system
 
-![Feedback preview](images/app-feedback-handle-2.png?width=800)
+![Screenshot of the App Feedback handling interface showing user feedback details](images/app-feedback-handle-2.png "App Feedback Handling Interface")
 
 
 ## Integrating AppFeedback with 3rd party tools

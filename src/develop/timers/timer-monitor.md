@@ -19,6 +19,6 @@ To check the Timer's past activity, for example if there was any error during it
 1. In the **Monitoring** tab, click **Timers**.
 1. Use the filters to find the Timer you want.
 
-![monitor timers](images/timer-monitor-sc.png)
+![Screenshot of the Service Center interface showing the Timers monitoring tab with filters](images/timer-monitor-sc.png "Service Center Timer Monitoring")
 
 To better understand how Timers are handled in OutSystems, check [Use Timers](intro.md).

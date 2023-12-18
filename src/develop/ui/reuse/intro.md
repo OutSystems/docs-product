@@ -27,7 +27,7 @@ Usage
 
 When something happens in a block it is possible to communicate that event to the parent screen or block so that it executes an action. In the same way, parent screens or blocks can also communicate with child blocks so that they execute an action. Using these two mechanisms together it is possible for a block to communicate with a sibling block.
 
-![Communicate between Blocks](images/block-communicate-diag.png)
+![Diagram illustrating communication between blocks, parent screens, and child blocks in OutSystems](images/block-communicate-diag.png "Block Communication Diagram")
 
 ### (A) Communication between a Block and the Parent Screen or Block
 

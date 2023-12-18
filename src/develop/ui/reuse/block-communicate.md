@@ -19,7 +19,7 @@ For example, suppose there is a screen that is the parent of two blocks:
 
 When the date changes in the Source block the Target block needs to be refreshed.
 
-![A date picker updates the time frame displayed in a chart](images/block-communicate-1.png)
+![Diagram showing communication between Source block with date picker and Target block with chart](images/block-communicate-1.png "Source and Target Block Communication")
 
 The following is an overview of the communication between blocks:
 
@@ -35,7 +35,7 @@ On the **Source** block:
 
 1. Create an action where you trigger the Event using the Trigger Event tool. If necessary, pass the necessary data as the input parameters of the Event;
 
-    ![](images/block-communicate-2.png)
+    ![Screenshot of adding an event to the Source block in the Elements tree](images/block-communicate-2.png "Creating an Event in Source Block")
 
 1. Call the action to trigger the Event.
 
@@ -45,7 +45,7 @@ On the **Parent** screen or block:
 
 1. In the Properties Pane, edit the Event and Handler properties under the Events section to add a new event handler action for the Event triggered by the Source block.
 
-    ![](images/block-communicate-3.png)
+    ![Screenshot showing the editing of Event and Handler properties in the Properties Pane](images/block-communicate-3.png "Editing Event and Handler Properties")
 
 1. In the newly created action, implement the logic to set new values for the input parameters of the Target block. When this happens, the Target block is automatically updated.
 
@@ -57,7 +57,7 @@ In **Reactive Web** and **Mobile** apps, if the **Target** block needs to execut
 
 1. In the newly created Client Action, implement the logic to refresh the queries or deal with the new values of the input parameters.
 
-    ![](images/block-communicate-5.png)
+    ![Screenshot of creating a new Client Action for the Target block in response to parameter changes](images/block-communicate-5.png "Creating a Client Action for Target Block")
 
 In **Traditional Web** apps, if the **Target** block needs to execute logic in response to the updated input parameter values:
 

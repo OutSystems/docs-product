@@ -59,7 +59,7 @@ Do the following:
 
 1. In the properties pane, click **...** (ellipsis) on the **JavaScript** property to open the JavaScript editor.
 
-![Opening the JavaScript editor for a Web Screen](images/run-js-code-4-ss.png)
+![Screenshot showing how to add a JavaScript code block in Service Studio](images/run-js-code-4-ss.png "JavaScript Editor in Service Studio")
 
 **Note:** You can also [include JavaScript files hosted outside your OutSystems infrastructure](#external-js).
 
@@ -67,7 +67,7 @@ Do the following:
 
 The example below shows a JavaScript function defined in the "ContactDetail" Web Screen:
 
-![Example of a JS function defined for a Web Screen](images/run-js-code-2-ss.png)
+![Example of a JavaScript function defined in the ContactDetail Web Screen in Service Studio](images/run-js-code-2-ss.png "JavaScript Function Example in Service Studio")
 
 ## 2. Run JavaScript code { #run-js-code }
 
@@ -87,13 +87,13 @@ You can invoke a JavaScript function when a given event occurs (for example, `on
 
 This example shows the properties of a Button configured to invoke the `AlertFieldMustBeFilled()` JavaScript function when the user clicks the button.
 
-![Calling a JS function in Extended Properties](images/run-js-code-ext-properties-1-ss.png)
+![Properties of a Button configured to invoke a JavaScript function on click in Service Studio](images/run-js-code-ext-properties-1-ss.png "Extended Properties for JavaScript Invocation")
 
 <div class="info" markdown="1">
 
 **Note:** Since the value of an Extended Property is an expression, you can enter any JavaScript statement directly as the **Extended Property** value:
 
-![Entering JS statements directly in Extended Properties](images/run-js-code-ext-properties-2-ss.png)
+![Example of entering a JavaScript statement directly as an Extended Property value in Service Studio](images/run-js-code-ext-properties-2-ss.png "JavaScript Statement as Extended Property Value")
 
 </div>
 
@@ -105,11 +105,11 @@ You can use unescaped Expressions to include JavaScript statements at a specific
 
 1. In the screen/block properties, enter the JavaScript code in **Value** property, between `<script></script>` tags.
 
-    ![Expression Editor showing unescaped content](images/run-js-code-expression-editor-ss.png)
+    ![Entering JavaScript code in the Expression editor between script tags in Service Studio](images/run-js-code-expression-editor-ss.png "JavaScript Code in Expression Editor")
 
 1. Set the **Escape Content** property to **No**.
 
-![Expression set as having unescaped content](images/run-js-code-expression-ss.png)
+![Unescaped Expression element with JavaScript code set to not escape content in Service Studio](images/run-js-code-expression-ss.png "Unescaped Expression with JavaScript Code")
 
 ### Run JavaScript code using the RunJavaScript action
 
@@ -117,13 +117,13 @@ In your action flows, either in a Screen Action or a Server Action, you can use 
 
 1. In Service Studio, add the **RunJavaScript** Server Action of the HTTPRequestHandler API as a dependency of your module. For more information, check [Reuse functionality from other modules](../../../develop/reuse-and-refactor/expose-and-reuse.md#reuse).
 
-    ![Manage Dependencies window showing the RunJavaScript Server Action](images/run-js-code-runjavascript-ss.png)
+    ![Adding the RunJavaScript Server Action from the HTTPRequestHandler API in Service Studio](images/run-js-code-runjavascript-ss.png "RunJavaScript Server Action in Service Studio")
 
 1. In the flow of a Screen Action or Server Action, add a **Run Server Action** element and select the **RunJavaScript** Server Action.
 
 1. Enter the JavaScript code you wish to run in the **Script** property of the **RunJavaScript** Server Action.
 
-    ![Properties of the RunJavaScript Server Action element](images/run-js-code-runjavascript-props-ss.png)
+    ![Properties of the RunJavaScript Server Action showing where to enter JavaScript code in Service Studio](images/run-js-code-runjavascript-props-ss.png "RunJavaScript Action Properties")
 
 <div class="info" markdown="1">
 
@@ -145,4 +145,4 @@ Do the following:
 
 1. In the **Preparation** of the Screen where you want to include the JavaScript code, add a call to the **AddJavaScriptTag** Server Action. Set the **JavaScriptURL** argument to the URL you previously identified.
 
-    ![Call AddJavaScriptTag in Screen Preparation](images/javascript-addjavascripttag-flow-ss.png)
+    ![Flow showing the AddJavaScriptTag Server Action in the Preparation of a Screen in Service Studio](images/javascript-addjavascripttag-flow-ss.png "AddJavaScriptTag Server Action Flow")

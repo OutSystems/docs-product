@@ -30,22 +30,22 @@ You have to make sure that the addresses configured for all your deployment zone
 
 In a **single-server scenario**, you can set the "Deployment Zone Address" field to the address of the environment according to its "Hostname" parameter, which is configured in Service Center > Administration > Environment Configuration > Hostname.
 
-![Architecture of a single-server scenario](<images/architecture-single-server.png>)
+![Diagram of single server network architecture for OutSystems deployment zones with user devices, database, and server platform apps.](images/architecture-single-server.png "Single Server Network Architecture")
 
 Element | Description
 :------:|------------
-![User device icon](<images/user-pc.png>) | User devices (mobile or desktop) accessing OutSystems applications.
-![Database icon](<images/db.png>) | Database (on-premise or on the cloud) used by the platform to store application metadata and by applications to store business data.
-![OutSystems platform icon](<images/server-platform-apps.png>) | OutSystems platform, installed on a virtual machine or on the cloud, along with applications living in the same IIS server (possibly using different application pools).
+![Icon representing user devices such as mobile or desktop accessing OutSystems applications.](images/user-pc.png "User Devices") | User devices (mobile or desktop) accessing OutSystems applications.
+![Icon representing the database used by the OutSystems platform and applications for storing metadata and business data.](images/db.png "Database") | Database (on-premise or on the cloud) used by the platform to store application metadata and by applications to store business data.
+![Icon representing the OutSystems platform and applications installed on a server, possibly using different application pools.](images/server-platform-apps.png "OutSystems Platform and Applications") | OutSystems platform, installed on a virtual machine or on the cloud, along with applications living in the same IIS server (possibly using different application pools).
 
 In a **farm scenario**, when you're using multiple servers, the deployment zone address should be the address of the load balancer configured to distribute load across servers in that deployment zone.
 
-![Architecture of a farm scenario](<images/architecture-zones.png>)
+![Diagram of farm scenario network architecture for OutSystems deployment zones with load balancers, servers, and deployment zones.](images/architecture-zones.png "Farm Scenario Network Architecture")
 
 Element | Description
 :------:|------------
-![Load balancer/Reverse proxy icon](<images/load-balancer.png>) | **Main Load Balancer and Reverse Proxy** - Exposes `www.mydomain.net` address and knows how to map `/AppX` and `/AppY` to the servers where those applications are available.<br/>**Deployment Zone Load Balancer** - Distributes load among the servers configured in the deployment zone.
-![App in a front-end server icon](<images/server-apps.png>) | A second (or third) server on which OutSystems applications can be reached. Installed on a virtual machine or on the cloud and reachable by the platform.
+![Icon representing the main load balancer and reverse proxy in a network architecture, mapping applications to the correct servers.](images/load-balancer.png "Load Balancer and Reverse Proxy") | **Main Load Balancer and Reverse Proxy** - Exposes `www.mydomain.net` address and knows how to map `/AppX` and `/AppY` to the servers where those applications are available.<br/>**Deployment Zone Load Balancer** - Distributes load among the servers configured in the deployment zone.
+![Icon representing multiple servers where OutSystems applications are installed and reachable by the platform.](images/server-apps.png "OutSystems Applications on Multiple Servers") | A second (or third) server on which OutSystems applications can be reached. Installed on a virtual machine or on the cloud and reachable by the platform.
 **"Intranet" Deployment Zone** | A customer-defined zone, including only some of the servers configured in the environment (2 out of 3 in the diagram).
 
 Client-side calls (any code running on the browser or on a mobile device) rely on the **environment URL**, so be sure to configure your network topology so that your public-facing applications are reachable through the environment URL.

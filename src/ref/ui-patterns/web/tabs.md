@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](images/tabs-5-diag.png?width=750)
+![Diagram showing the layout and classes of the Tabs UI Pattern in a traditional web app](images/tabs-5-diag.png "Tabs Layout Diagram")
 
 ## CSS selectors
 
@@ -57,4 +57,4 @@ Example:
 1. Add the classes `background-blue-lighter text-neutral-0`, this adds a light blue background and force the text to be white.
 1. Publish the application.
 
-![](images/tabs-6.png?width=750)
+![Example of tabs with a custom active header style and a light blue background color](images/tabs-6.png "Styled Tabs Example")

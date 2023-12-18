@@ -1,13 +1,12 @@
 ---
-tags: runtime-mobileandreactiveweb;  
-summary: 
+tags: runtime-mobileandreactiveweb;
+summary: The article provides a comprehensive guide on various interactive components and actions for OutSystems Mobile Apps and Reactive Web Apps, including accordions, bottom sheets, carousels, date pickers, dropdowns, flip content, notifications, and progress indicators
 locale: en-us
 guid: e4899a53-ca9e-4c13-b021-06518a34fba2
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:18
 ---
-
 # Public Actions
 
 <div class="info" markdown="1">
@@ -197,7 +196,7 @@ To remove elements from the Carousel, create an action with the ListRemove and U
 
 You can use the [Stacked Cards](<interaction/stackedcards.md>) actions described below anywhere in OutSystems.
 
-![](images/StackedCards_Actions.png)
+![Screenshot of Stacked Cards actions in OutSystems](images/StackedCards_Actions.png "Stacked Cards Actions")
 
 ### SwipeLeft Action
 
@@ -219,7 +218,7 @@ You must use this action on the ListRemove action. The action updates all cards 
 
 To remove elements from the Stacked Cards, create an action with the ListRemove and UpdateCarousel actions (see the example below).
 
-![](images/ListRemove.png) --> 
+![Example of List Remove action usage in OutSystems](images/ListRemove.png "List Remove Example") --> 
 
 ## Date Pickers
 

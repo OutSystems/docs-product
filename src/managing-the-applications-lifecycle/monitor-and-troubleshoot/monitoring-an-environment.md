@@ -16,11 +16,11 @@ To access the environment's **Monitoring** area, do one of the following:
 
 * In the **Applications** section of your LifeTime console (`https://<lifetime_environment>/lifetime`), click the **View Logs** link for the environment you want to access. You will be redirected to the **Monitoring** area of the environment's Service Center console.
 
-    ![View logs](images/monitoring-an-environment-1.png?width=500)
+    ![Screenshot showing the 'View Logs' link in the Applications section of the LifeTime console for accessing the Monitoring area.](images/monitoring-an-environment-1.png "Accessing the Monitoring Area via LifeTime Console")
 
 * Access directly to the environment's Service Center console (`https://<environment>/ServiceCenter`) and click **Monitoring**.
 
-    ![Monitoring](images/monitoring-an-environment-2.png?width=800)
+    ![Screenshot depicting the Monitoring option in the Service Center console for direct access.](images/monitoring-an-environment-2.png "Direct Access to Service Center's Monitoring Area")
 
 ## Monitoring Area
 
@@ -55,7 +55,7 @@ Service Actions
 
     The amount of information in each Service Actions log depends on the [Logging Level set for the Module where that Service Action lives](../../develop/troubleshoot/troubleshoot-service.md#how-to-change-the-logging-detail-level-for-service-action). The following image shows the details of an error log entry, available at `Troubleshoot` and `Full` Logging Levels.
 
-    ![Service Action Error Detail](images/log-service-error.png)
+    ![Detailed view of an error log entry in the Service Actions screen showing the error specifics.](images/log-service-error.png "Service Actions Error Log Details")
 
     Service Action logs contain a `Request Key` field that can be used to pinpoint the origin of a chain of requests by allowing you to relate all logs from the same top-level request.
 

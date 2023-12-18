@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Navigation Bar UI Pattern to organize content and enable the user to navigate their way around your app using hyperlinks. You use this pattern when the user needs to navigate through an application's main sections while maintaining the ability to browse to another subsection.
 
-![](images/navigationbar-7-ss.png)
+![Screenshot of the Navigation Bar UI Pattern in a Traditional Web App](images/navigationbar-7-ss.png "Navigation Bar UI Pattern")
 
 **How to use the Navigation Bar UI Pattern**
 
@@ -28,7 +28,7 @@ The following use case adds the Navigation Bar UI Pattern to **one** screen. If 
 
     The Navigation Bar widget is displayed.
 
-    ![](images/navigationbar-6-ss.png)
+    ![Image showing the Navigation Bar widget in the Service Studio toolbox](images/navigationbar-6-ss.png "Navigation Bar Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -42,7 +42,7 @@ The following use case adds the Navigation Bar UI Pattern to **one** screen. If 
 
 1. From the Toolbox, drag the Navigation Bar widget into the Main Content area of your application's screen.
 
-    ![](images/navigationbar-1-ss.png)
+    ![Dragging the Navigation Bar widget into the Main Content area of an application's screen](images/navigationbar-1-ss.png "Dragging Navigation Bar Widget")
 
     By default, the Navigation Bar widget contains a Navigation Bar Item widget and a Navigation Bar SubItem widget. You can add or delete as many of these widgets as required.
 
@@ -50,15 +50,15 @@ The following use case adds the Navigation Bar UI Pattern to **one** screen. If 
 
     In this example we add `Phones`, `Audio`, and `Accessories` to the Navigation Bar Item **Title** placeholders.
 
-    ![](images/navigationbar-12-ss.png)
+    ![Example of adding titles to Navigation Bar Items with 'Phones', 'Audio', and 'Accessories'](images/navigationbar-12-ss.png "Navigation Bar Item Titles")
 
     We also add links to the Navigation Bar SubItem **Content** placeholders. For each of the links, on the **Properties** tab, we add a link name and title, as well as the link destination.
 
-    ![](images/navigationbar-9-ss.png)
+    ![Adding links to Navigation Bar SubItem placeholders with link names and titles](images/navigationbar-9-ss.png "Navigation Bar SubItem Links")
 
 1. On the **Properties** tab, you can also customize the Navigation Bar's look and feel by setting any of the optional properties.
 
-    ![](images/navigationbar-3-ss.png)
+    ![Customization options for the Navigation Bar's look and feel in the Properties tab](images/navigationbar-3-ss.png "Customizing Navigation Bar Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

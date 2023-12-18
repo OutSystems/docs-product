@@ -19,20 +19,20 @@ To convert your app you must be a [**Workflow Builder administrator**](how-works
 
 1. From the dropdown menu, click **Convert to edit in Service Studio**.
 
-    ![Convert to edit in Service Studio](images/wfb-convert-ss.png)
+    ![Dropdown menu with the option to Convert to edit in Service Studio highlighted](images/wfb-convert-ss.png "Convert to edit in Service Studio option")
 
 1. Read the disclaimer carefully, and click the **I understand and want to convert my app** checkbox.
 
-    ![Convert to Service Studio Disclaimer](images/wfb-convert-ss-disclaimer.png)
+    ![Conversion disclaimer screen with the checkbox for understanding and wanting to convert the app](images/wfb-convert-ss-disclaimer.png "Conversion Disclaimer")
 
 1. To start the conversion, click **Convert app**. The conversion process can take several minutes to complete.
 
-    ![Conversion in progress](images/wfb-convert-ss-converting.png)
+    ![Screen showing the app conversion process with a progress indicator](images/wfb-convert-ss-converting.png "App Conversion Process")
 
 1. Once the conversion ends, the app shows the status **Converted to Service Studio**. From this point on, you can now edit the app in Service Studio and you can't edit the app in Workflow Builder.
 
-    ![App converted to Service Studio](images/wfb-convert-ss-converted.png)
+    ![App status updated to 'Converted to Service Studio' after the conversion process](images/wfb-convert-ss-converted.png "Converted to Service Studio Status")
 
 1. If you want to remove the converted app from the **My Apps** screen of Workflow Builder, click the three dots (**...**) in your app and click **Remove from Workflow Builder**.
 
-    ![Remove app from Workflow Builder](images/wfb-convert-ss-remove-wb.png)
+    ![Option to remove the app from Workflow Builder displayed in a dropdown menu](images/wfb-convert-ss-remove-wb.png "Remove from Workflow Builder Option")

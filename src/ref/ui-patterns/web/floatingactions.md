@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/floatingactions-2-diag.png>)
+![Diagram illustrating the layout and classes of the Floating Actions UI Pattern for Traditional Web Apps](images/floatingactions-2-diag.png "Floating Actions Layout Diagram")
 
 ## Events
 
@@ -67,7 +67,7 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![](<images/floatingactions-4-ss.gif>)
+    ![Animated GIF demonstrating the change of position for Floating Actions in a Traditional Web App](images/floatingactions-4-ss.gif "Floating Actions Position Change Demonstration")
 
 ### Use Floating Actions with List Records
 

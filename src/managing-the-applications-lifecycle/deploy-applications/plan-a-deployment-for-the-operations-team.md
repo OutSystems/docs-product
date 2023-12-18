@@ -26,7 +26,7 @@ After reaching a stable new version, the eCommerce team leader prepares the depl
 
 On the deployment summary screen, fill-in the deployment notes, and choose **Save Plan &amp; Notes**. Notice that even though team leaders have no permissions to deploy to Quality Assurance, they can still create deployment plans.
 
-![](images/plan-a-deployment-for-the-operations-team-1.png)
+![Screenshot of the deployment summary screen where the eCommerce team leader fills in the deployment notes and saves the plan.](images/plan-a-deployment-for-the-operations-team-1.png "Deployment Summary Screen")
 
 ## Edit a Deployment Plan
 
@@ -34,7 +34,7 @@ Later on, the Customer Portal team leader edits the existing plan.
 
 Click on the **Saved** blue button between Development and Quality Assurance, and set Customer Portal to **Tag and Deploy 0.6**.
 
-![](images/plan-a-deployment-for-the-operations-team-2.png)
+![Screenshot showing the process of editing an existing deployment plan by the Customer Portal team leader, highlighting the 'Saved' button and the 'Tag and Deploy 0.6' option.](images/plan-a-deployment-for-the-operations-team-2.png "Editing a Deployment Plan")
 
 On the deployment summary screen, edit the deployment notes to include more comments. You can then save the plan for the operations team.
 
@@ -44,10 +44,10 @@ Now the operations team just needs to review the plan and execute it, since only
 
 Click the **Continue** button to review the deployment plan.
 
-![](images/plan-a-deployment-for-the-operations-team-3.png)
+![Screenshot of the deployment interface with the 'Saved' blue button and 'Continue' button, indicating the step to review the deployment plan by the operations team.](images/plan-a-deployment-for-the-operations-team-3.png "Reviewing the Deployment Plan")
 
 Review the application versions and deployment notes. Click **Deploy Now**.
 
 The deployment begins, and you can check the deployment logs to see if everything went according to the plan.
 
-![](images/plan-a-deployment-for-the-operations-team-4.png)
+![Screenshot of the deployment process with the 'Deploy Now' button, showing the beginning of the deployment and the deployment logs.](images/plan-a-deployment-for-the-operations-team-4.png "Deployment Execution")

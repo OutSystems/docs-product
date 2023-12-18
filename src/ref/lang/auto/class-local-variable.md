@@ -14,7 +14,7 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1351:
 
 A Local Variable exists only in the scope of its parent element, for example, a Screen or an Action. A Local Variable can only be assigned and used locally inside that scope. Local variables are destroyed when execution leaves the scope of the parent element. The image below shows how to add a Local Variable inside a Screen.  
 
-![Adding a new Local Variable to a Screen](<images/add-local-variable-inside-screen-ss.png>)
+![Screenshot showing the process of adding a Local Variable inside a Screen in Service Studio](images/add-local-variable-inside-screen-ss.png "Adding a Local Variable in Service Studio")
 
 ## How to use
 
@@ -24,11 +24,11 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
 1. On the **Properties** tab, select the **Variable** dropdown and select **New Local Variable**.
 
-    ![Adding a new Local Variable to an Input](<images/local-variable-ss.png>)
+    ![Screenshot of the Properties tab in Service Studio with the Variable dropdown expanded showing the New Local Variable option](images/local-variable-ss.png "New Local Variable Selection")
 
 1. Enter a name for the variable, for example `SearchKeyword`. Make sure the **Data Type** is set to `Text`.
 
-    ![Entering the name for the Local Variable](<images/variable-searchkeyword-ss.png>)
+    ![Screenshot of a new Local Variable named SearchKeyword being created with the Data Type set to Text in Service Studio](images/variable-searchkeyword-ss.png "Defining a Local Variable as SearchKeyword")
 
 1. Double-click the aggregate on the Elements tree.
 
@@ -43,7 +43,7 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
 1. To save the filter, click **Close**. 
 
-    ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/filtered-aggregate-ss.png>) 
+    ![Screenshot of a filtered aggregate in Service Studio where the filter condition includes a Local Variable named SearchKeyword](images/filtered-aggregate-ss.png "Filtered Aggregate Using a Local Variable") 
 
 After you follow these steps and publish your module, you can test the functionality of the filter in your browser. The text inserted in the Input of the Search widget is stored in the defined Local Variable and is then used to filter the aggregate. When you change to another screen or close your browser, the Local Variable is destroyed and the filter no longer applies.   
 

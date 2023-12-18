@@ -24,7 +24,7 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
     The various Columns widgets are displayed. 
 
-    ![](images/columnsmob-image-1.png)
+    ![Screenshot of Columns widgets displayed in Service Studio](images/columnsmob-image-1.png "Columns Widgets in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -38,15 +38,15 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
 1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. The following example uses the Columns 2 widget.
 
-    ![](images/columnsmob-image-3.png)
+    ![Example of dragging a Columns 2 widget into the main content area of an application screen](images/columnsmob-image-3.png "Dragging Columns Widget into Main Content Area")
 
 1. Add the required content to the Columns widget. In this example we add an image and text.
 
-    ![](images/columnsmob-image-4.png)
+    ![Adding an image and text to a Columns widget in an application screen](images/columnsmob-image-4.png "Adding Content to Columns Widget")
 
 1. On the **Properties** tab, you can customize the Column's look and feel by setting any of the (optional) properties, for example, the size of the space between each of the columns (GutterSize), and in what order the columns display on different devices. 
 
-    ![](images/columnsmob-image-2.png)
+    ![Customization options for Columns widget properties in Service Studio](images/columnsmob-image-2.png "Customizing Columns Properties")
 
 1. After following these steps, and publishing the module, you can test the pattern in your app. 
 
@@ -61,16 +61,16 @@ ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You d
 
 **Entities.ColumnBreak.BreakNone (default)**
 
-![](images/Column_break_none.png)  
+![Illustration of default column break behavior with no breaks between columns](images/Column_break_none.png "Default Column Break Behavior")  
 
 **Entities.ColumnBreak.BreakMiddle**
 
-![](images/Column_break_middle.png)
+![Illustration of column break behavior with a break in the middle column](images/Column_break_middle.png "Column Break Middle Behavior")
 
 **Entities.ColumnBreak.BreakLast**
 
-![](images/Column_break_last.png)
+![Illustration of column break behavior with a break in the last column](images/Column_break_last.png "Column Break Last Behavior")
 
 **Entities.ColumnBreak.BreakFirst**
 
-![](images/Column_break_first.png)
+![Illustration of column break behavior with a break in the first column](images/Column_break_first.png "Column Break First Behavior")

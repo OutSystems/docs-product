@@ -5,8 +5,8 @@ guid: 191c6d17-5089-4d2e-9848-19e81f69476a
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A38&mode=design&t=187UAgmZTPxcY0ZG-1
+summary: The article explains how to use JavaScript in OutSystems for extending the functionality of Mobile and Reactive Web Apps
 ---
-
 # Extend Your Mobile and Reactive Apps Using JavaScript
 
 <div class="info" markdown="1">
@@ -17,7 +17,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 JavaScript code can be used in client actions of Reactive and Mobile apps through the **JavaScript element**, which you can drag from the Toolbox to the action flow.
 
-![javascript element](images/js-element-ss.png)
+![Screenshot of the JavaScript element in the OutSystems development environment](images/js-element-ss.png "JavaScript Element in OutSystems")
 
 The JavaScript element allows extending the OutSystems capabilities by using JavaScript code. In the code editor you can type regular JavaScript code, such as:
 
@@ -27,7 +27,7 @@ The JavaScript element allows extending the OutSystems capabilities by using Jav
 
 The code editor window, opened by double-clicking the element or the element's "JavaScript" property, has auto-complete support for JavaScript keywords and predefined JavaScript objects, as well as for OutSystems available client actions and roles. It also has syntax highlighting and checks the JavaScript code for errors and warnings. The TrueChange pane displays eventual JavaScript syntax errors:
 
-![](images/js-editor-with-error.png)
+![OutSystems JavaScript code editor displaying a syntax error in the TrueChange pane](images/js-editor-with-error.png "JavaScript Code Editor with Error")
 
 ## Use input and output parameters
 
@@ -35,7 +35,7 @@ Each JavaScript element defines its own scope. This means you must define input 
 
 To add and configure input or output parameters of a JavaScript element, right-click in the "Parameters" tree element of the pane below the code editor:
 
-![](images/js-add-parameter.png) ![](images/js-configure-parameter.png)
+![Process of adding input parameters to a JavaScript element in OutSystems](images/js-add-parameter.png "Adding JavaScript Parameters") ![Configuration options for output parameters in a JavaScript element within OutSystems](images/js-configure-parameter.png "Configuring JavaScript Parameters")
 
 Input and output parameters are accessed in JavaScript code through the predefined object "$parameters". The example below shows how to get the value of an input parameter called "Name" and how to set the value of an output parameter called "OutEmail", both defined in the current JavaScript element:
 

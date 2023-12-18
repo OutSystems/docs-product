@@ -14,7 +14,7 @@ Debug your app in Service Studio by pausing the execution at [breakpoints](<brea
 
 The [Debugger tab](<debugger-ui-reference.md>) shows app information like variable and runtime values. It also shows the current debugging context (current [thread](<threads.md>), event name, UI flow, screen and action, when applicable. Use the debugger commands available in the Debugger Toolbar and in the Debugger menu.
 
-![The Debugger window](images/debugger-intro-ss.png?width=800)
+![Screenshot of the initial debugger interface in OutSystems Service Studio](images/debugger-intro-ss.png "Debugger Introduction in Service Studio")
 
 ## How to debug your app
 
@@ -26,23 +26,23 @@ To debug your app, do the following in Service Studio:
 
 1. Before debugging a **native mobile app**, choose a debugging target in the [Debugger tab](<debugger-ui-reference.md>): Android, iOS, or Google Chrome which emulates a device. The section [Mobile Debugging Scenarios](<#mobile-debugging-scenarios>) includes further details about the different targets. If you're debugging a **mobile app distributed as a PWA**, select **Emulate using Google Chrome** in **Debugger** > **Debug Setup**. 
 
-    ![The debugger tab in Service Studio](<images/debugger-tab.png>)
+    ![Debugger tab in Service Studio showing options for native mobile app debugging](images/debugger-tab.png "Debugger Tab in Service Studio")
 
 1. Start debugger by clicking the **Start Debugging** button in the [Debugger tab](<debugger-ui-reference.md>) or by selecting **Debug in the Public Area** in the Debugger menu. When you're debugging mobile apps using the Google Chrome target, Service Studio opens a dedicated Chrome browser instance for debugging only.
 
     Note: To also open a browser when starting a debug session in a **web application**, check the **Open in new browser window** option in the **Debug Setup** tab.
 
-    ![Debug Setup](<images/debug-setup-tab-web.png>)
+    ![Debug setup options in Service Studio for web applications](images/debug-setup-tab-web.png "Debug Setup for Web Applications")
 
 1. Do some tasks in the module, up to a point when the execution runs into a breakpoint and suspends.
 
-1. When you switch to the Service Studio window, the flow or screen containing the element with the breakpoint shows on the canvas. Service Studio selects the element with the breakpoint and marks is with the ![debug icon](images/overlay-active-request.png) debug icon.
+1. When you switch to the Service Studio window, the flow or screen containing the element with the breakpoint shows on the canvas. Service Studio selects the element with the breakpoint and marks is with the ![Icon indicating an active debug request in OutSystems Service Studio](images/overlay-active-request.png "Debug Icon") debug icon.
 
-1. The execution context shows in the **Threads** tab of the **Debugger** tab, marked with the ![current thread](images/overlay-active-request.png) current thread icon, showing the current execution stack of the module elements. The **Debugger** tab also shows additional information you can explore.
+1. The execution context shows in the **Threads** tab of the **Debugger** tab, marked with the ![Icon indicating an active debug request in OutSystems Service Studio](images/overlay-active-request.png "Debug Icon") current thread icon, showing the current execution stack of the module elements. The **Debugger** tab also shows additional information you can explore.
 
 1. After analyzing the runtime values at that execution point, you can continue running the app by:
 
-    * Selecting one of the commands available for advancing the execution of the application logic: ![continue icon](images/toolbar-button-continue.png) **Continue**, ![step over icon](images/toolbar-button-step-over.png) **Step Over**, ![step into button](images/toolbar-button-step-into.png) **Step Into** or ![step out button](images/toolbar-button-step-out.png) **Step Out**. The execution point advances according to the command you run.
+    * Selecting one of the commands available for advancing the execution of the application logic: ![Continue command icon in the debugger toolbar of OutSystems Service Studio](images/toolbar-button-continue.png "Continue Command Icon") **Continue**, ![Step Over command icon in the debugger toolbar of OutSystems Service Studio](images/toolbar-button-step-over.png "Step Over Command Icon") **Step Over**, ![Step Into command icon in the debugger toolbar of OutSystems Service Studio](images/toolbar-button-step-into.png "Step Into Command Icon") **Step Into** or ![Step Out command icon in the debugger toolbar of OutSystems Service Studio](images/toolbar-button-step-out.png "Step Out Command Icon") **Step Out**. The execution point advances according to the command you run.
 
     * Right-clicking an element on the canvas (or in the module tree) and selecting the **Continue To Here** option in the context menu. The execution continues until it reaches that element on the canvas.
 

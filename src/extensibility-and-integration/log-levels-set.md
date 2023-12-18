@@ -3,9 +3,9 @@ locale: en-us
 guid: c215f526-4e79-416f-a7ae-4789e0a26a8c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+summary: Customize logging levels for REST and SOAP integrations in OutSystems to control information storage
 ---
-
 # Set the logging level of REST and SOAP integrations
 
 You can customize the logging level for consumed/exposed REST APIs and consumed SOAP Web Services to adjust the amount of stored information about requests/responses.
@@ -21,7 +21,7 @@ To configure the logging level, do the following:
 1. Set the **Logging Level** to the desired value: **Default**, **Troubleshoot**, or **Full**.
 1. Click **Apply**.
 
-![Set the logging level of a consumed SOAP Web Service](<images/log-level-set.png>)
+![Screenshot showing how to set the logging level for REST and SOAP integrations in OutSystems Service Center](images/log-level-set.png "Setting the Logging Level")
 
 <div class="info" markdown="1">
 

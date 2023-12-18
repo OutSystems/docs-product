@@ -29,7 +29,7 @@ Applies only to Traditional Web Apps.
   
 ## Layout and classes
 
-![](images/rangesliderinterval-3-diag.png)
+![Diagram illustrating the layout and classes of the Range Slider Interval component](images/rangesliderinterval-3-diag.png "Range Slider Interval Diagram")
 
 ## CSS selectors
 
@@ -68,4 +68,4 @@ Example:
 
 1. Publish the application.
 
-![](images/rangesliderinterval-5-ss.png)
+![Screenshot showing the Range Slider Interval with customized color and removed handler lines](images/rangesliderinterval-5-ss.png "Range Slider Interval Styling Screenshot")

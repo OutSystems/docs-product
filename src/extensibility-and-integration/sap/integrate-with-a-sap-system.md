@@ -6,8 +6,8 @@ guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:49
+summary: OutSystems provides a method to connect and integrate with SAP systems, allowing applications to fetch and update data using SAP remote functions
 ---
-
 # Integrate with a SAP System
 
 
@@ -31,7 +31,7 @@ OutSystems allows you to fetch or update data in a SAP system and use it in your
 
     These will be the default credentials of your SAP connection, which can be redefined later. 
 
-    ![Configure SAP connection](images/sapintegrate-remotefunc-ss.png)
+    ![Screenshot of SAP connection configuration window with fields for Connection details and Login parameters](images/sapintegrate-remotefunc-ss.png "SAP Connection Configuration")
 
 1. Click **Connect to choose functions**. 
 
@@ -39,11 +39,11 @@ OutSystems allows you to fetch or update data in a SAP system and use it in your
 
     1. If the connection is successful, you are redirected to the **Select remote functions** screen.
 
-        ![Successful connection](images/sapintegrate-successconnect-ss.png)
+        ![Screenshot showing a successful connection to SAP with the Select remote functions screen](images/sapintegrate-successconnect-ss.png "Successful SAP Connection")
 
     1. If your connection fails, an error dialog is displayed. You can expand the dialog to find out more about what's causing the error.
         
-        ![Failed connection](images/sapintegrate-failconnect-ss.png)
+        ![Error dialog screenshot indicating a failed connection to SAP with an option to expand for more details](images/sapintegrate-failconnect-ss.png "Failed SAP Connection")
 
 ## Import SAP remote functions
 
@@ -53,7 +53,7 @@ Once you've established a connection to SAP, you can now import SAP functions to
 
     Clicking on the function name displays the description, input, and output parameter details on the right-hand panel. 
 
-    ![Select SAP remote functions](images/sapintegrate-selectfunc-ss.png)
+    ![Screenshot of the Select remote functions screen with options to choose SAP functions for import](images/sapintegrate-selectfunc-ss.png "Select SAP Remote Functions")
 
 1. Click **Complete setup**. 
 
@@ -65,7 +65,7 @@ Once you've established a connection to SAP, you can now import SAP functions to
 
     * Creates the Structures to hold the parameters
 
-    ![Imported remote functions](images/sapintegrate-importedfunc-ss.png)
+    ![Screenshot showing the result of importing SAP remote functions with created SAP connection, actions, and structures](images/sapintegrate-importedfunc-ss.png "Imported SAP Functions")
 
 On the **Logic** tab, go to **Integrations** > **SAP**. You can now use the newly created actions in your application the same way you use any Server Action.
 
@@ -73,7 +73,7 @@ On the **Logic** tab, go to **Integrations** > **SAP**. You can now use the newl
 
 When a SAP Remote Function is called from your OutSystems application, the following flow is executed:
 
-![SAP remote function flow](images/sap-remote-function-flow-diag.png)
+![Flow diagram illustrating the process of calling a SAP Remote Function from an OutSystems application](images/sap-remote-function-flow-diag.png "SAP Remote Function Call Flow Diagram")
 
 1. **OnBeforeConnection():** This callback allows you to implement different SAP authentication methods using the [SAP Extensibility API](<../../ref/apis/sap-extensibility-api.md>), such as Logon Tickets or certificates. 
 1. **Connect to SAP & Begin Context:** The connection to SAP is established using the default credentials (if no different authentication is defined), and a context for calling the SAP remote function is started in SAP. 

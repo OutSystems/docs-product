@@ -23,7 +23,7 @@ When you [enable user feedback for your apps](user-feedback-enable.md), the App 
 
 1. In the Applications section, select the **App Feedback** option in the drop-down menu next to the environment for which you want to see the feedback items.
 
-    ![LifeTime applications screen](images/app-feedback-handle-3.png?width=750)
+    ![Dropdown menu for selecting App Feedback in the LifeTime console](images/app-feedback-handle-3.png "App Feedback Selection")
 
 1. Sign in with the credentials of a user account defined in the Users app (`https://<your environment>/Users`), that has Administrator or FeedbackManager permissions.
 
@@ -31,26 +31,26 @@ When you [enable user feedback for your apps](user-feedback-enable.md), the App 
 
 1. On the right side of the screen, ensure the selection of the drop-down menu is **Open**. This option allows you to display open requests, closed ones, or both.
 
-    ![Feedback items list](images/app-feedback-handle-overview.png?width=750)
+    ![Overview of feedback items in the App Feedback section](images/app-feedback-handle-overview.png "Feedback Overview")
 
 1. Select one of the listed feedbacks to check the information provided by the user, and click **Open**.
 
     A window with the details opens, providing the feedback from the user and screenshot of the app screen.
     
-    ![Open feedback details](images/app-handle-feedback-details.png?width=750)
+    ![Detailed view of user feedback with screenshot in the App Feedback application](images/app-handle-feedback-details.png "Feedback Details")
 
 1. To open the screen directly in Service Studio for acting upon the users' feedback, click **CHANGE THIS SCREEN**.
 
     1. Confirm this operation by clicking **Open Service Studio**. If you don't want to see this message again, click on the checkbox to automatically allow this operation.
 
-        ![Open Service Studio confirmation](images/app-handle-feedback-handle-ss-confirm.png?width=500)
+        ![Confirmation dialog for opening Service Studio from the App Feedback application](images/app-handle-feedback-handle-ss-confirm.png "Open Service Studio Confirmation")
 
     1. Enter your environment address and login credentials to allow downloading the app module from Service Center to Service Studio, and click **LOG IN**.
 
-        ![Enter environment address and login credentials](images/app-feedback-handle-download-module.png?width=500)
+        ![Login screen for downloading the app module from Service Center to Service Studio](images/app-feedback-handle-download-module.png "Download App Module")
 
     1. Implement the requested change or suggestion, publish your app, and test it.
 
 1. To mark the feedback as closed, click **Close**. The request moves to the closed list.
 
-    ![Closed requests list](images/app-handle-closed-request.png?width=750)
+    ![Feedback request marked as closed in the App Feedback application](images/app-handle-closed-request.png "Closed Feedback Request")

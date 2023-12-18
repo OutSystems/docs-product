@@ -28,6 +28,6 @@ To set up the user governance, perform the following steps:
 
 1. [Get your LifeTime service account token](../../../ref/apis/lifetime-deployment/rest-api-authentication.md#creating-a-service-account) and enter it on the **LifeTime service account token** field.
 
-    ![Users governance model](images/wfb-setup-govern-init.png)
+    ![Initial setup screen for user governance in Workflow Builder showing fields for environment address and service account token](images/wfb-setup-govern-init.png "Workflow Builder Governance Setup Initialization")
 
 1. Click on the **Save** button to save the changes.

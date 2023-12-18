@@ -39,11 +39,11 @@ If you want to provide the Data Replacement feature in elements other than lists
 
 In Reactive Web App, go to the properties and then under **Attributes** add `servicestudio-showRecord` as a new property. Then, set the value to `True`.
 
-![Attribute](images/template-guidelines-custom-data-replacement-support-ss.png?width=400)
+![Screenshot showing how to enable custom data replacement support in Service Studio for a Reactive Web App](images/template-guidelines-custom-data-replacement-support-ss.png "Custom Data Replacement Support in Service Studio")
 
 In Traditional Web App use the **Extended Properties** pane to add the same attribute.
 
-![Properties pane](images/guidelines-enable-replace-data.png)
+![Screenshot illustrating the process of enabling data replacement in a Traditional Web App using Extended Properties](images/guidelines-enable-replace-data.png "Enabling Data Replacement in Traditional Web App")
 
 ### Expressions
 
@@ -57,7 +57,7 @@ You should design the data in Widgets without mixing the local and server source
 
 Use generic names, like Table, List, Form etc. for the Widgets. When there are more identical elements, use something like MainTable and SecondaryTable.
 
-![Widget names](images/widget-names.png?width=600)
+![Example image displaying naming conventions for widgets such as MainTable and SecondaryTable](images/widget-names.png "Naming Conventions for Widgets")
 
 ### Prompts
 
@@ -85,6 +85,6 @@ Use the OutSystems UI Framework CSS classes or classes from your default Theme. 
 
 In cases where an element collapses within a branch of the If tool and breaks the preview in the main editor, wrap the element inside a Container. This forces the element to take the full width of the parent Container and fixes the preview. 
  
-![Service Studio Preview](images/gif-2.png)
+![Animated GIF demonstrating the preview and testing process of Screen Templates within the editor](images/gif-2.png "Preview and Testing of Screen Templates")
 
 Use a "Work in progress" category, or similar, to let the developers know which Screen Templates are work in progress.

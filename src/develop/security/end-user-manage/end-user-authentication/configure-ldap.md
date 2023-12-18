@@ -37,13 +37,13 @@ To configure the OutSystems end user authentication for LDAP with Active Directo
 
 1. Select **Use AD credentials**.
 
-    ![](images/users-auth-ldap-ad.png)
+    ![Screenshot of LDAP authentication configuration settings for Active Directory in the Users application](images/users-auth-ldap-ad.png "LDAP Authentication Configuration for Active Directory")
 
 1. Optionally, in the **Default Domain** field, enter the domain where end users are going to be authenticated.
 
 1. Test your configurations by entering your credentials in the respective fields for testing:
 
-![](<images/users-auth-test-configuration.png>)
+![Screenshot showing fields to test LDAP configuration with user credentials](images/users-auth-test-configuration.png "Test LDAP Configuration")
 
 ### Example
 
@@ -51,7 +51,7 @@ Consider the following example which uses the ADSI Edit tool, included in [Windo
 
 In this case the domain controller address (used as the server address) is `DOMAINCONTROLLER.domain.outsystems.com`, configured in the default port, and the Distinguished Name (DN) of the displayed root LDAP node is `DC=domain,DC=outsystems,DC=com`.
 
-![](images/adsi-domaincontroller.png)
+![Example of ADSI Edit tool showing the Active Directory hierarchy with domain controller address and distinguished name](images/adsi-domaincontroller.png "ADSI Edit Tool Example")
 
 To authenticate end users configured under the `CN=Users` LDAP node, use the following Base Distinguished Name in the LDAP URL field:
 
@@ -79,7 +79,7 @@ To configure OutSystems end user authentication with standard LDAP (that is, LDA
 
 1. In **User Search Filter** write the filter to use when searching users. The `{0}` placeholder denotes the username. If there's no query defined, the username is sent to the LDAP server exactly as provided.
 
-    ![](<images/ldap-user-search-filter.png>)
+    ![Screenshot of the User Search Filter configuration for standard LDAP authentication](images/ldap-user-search-filter.png "Standard LDAP User Search Filter Configuration")
 
     OutSystems provides a few search filter examples in the help text below the **User Search Filter** field. For more information on search filters check the [Search Filter Syntax](<https://docs.microsoft.com/en-us/windows/desktop/adsi/search-filter-syntax>) in Microsoft's documentation.
 
@@ -90,7 +90,7 @@ To configure OutSystems end user authentication with standard LDAP (that is, LDA
 
 1. Test your configurations by entering your credentials in the respective fields for testing:
 
-![](<images/users-auth-test-configuration.png>)
+![Screenshot showing fields to test LDAP configuration with user credentials](images/users-auth-test-configuration.png "Test LDAP Configuration")
 
 ## Obtain Active Directory configuration information { #obtain-ad-info }
 
@@ -102,11 +102,11 @@ If you're using a computer that's **part of the Active Directory domain** used f
 
     If you're using Windows 8 or higher, open the **Settings** app and then go to Accounts > "Access work or school". There's an indication telling you that you're connected to an Active Directory domain and what's the domain name:
 
-    ![](<images/domain-howto-win10.png>)
+    ![Screenshot of Windows 10 settings showing how to find the Active Directory domain name](images/domain-howto-win10.png "Finding Domain Name in Windows 10")
 
     If using Windows 7, open **Control Panel**, go to **System and Security** and click on System. The current domain is shown in the "Computer name, domain and workgroup settings".
 
-    ![](<images/domain-howto-win7.png>)
+    ![Screenshot of Windows 7 system properties showing the Active Directory domain name](images/domain-howto-win7.png "Finding Domain Name in Windows 7")
 
 1. **Get the Base Distinguished Name from the domain name.**
 

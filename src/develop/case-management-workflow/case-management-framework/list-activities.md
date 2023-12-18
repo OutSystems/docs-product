@@ -32,7 +32,7 @@ To get a list of activities assigned to a case worker logged in to your app, fol
 
 1. In the properties pane of the **Case_GetActivities** action, click on **Expand ActivityScope**.
 
-![Expand List](images/list-activ-expand-ss.png)
+![Screenshot showing the properties pane with the Expand ActivityScope option for the Case_GetActivities action](images/list-activ-expand-ss.png "Expand ActivityScope Properties")
 
 1. To get activities that the logged in user can work on, set **ActivityAssigneeType** as `Entities.ActivityAssigneeType.MyActivities`.
 
@@ -56,7 +56,7 @@ To get a list of activities assigned to a case worker logged in to your app, fol
 
 1. In the **Assign**, add an assignment that sets the output parameter as  `Case_GetActivities.ActivityResults`.
 
-![Add Assign](images/list-activ-assign-ss.png)
+![Screenshot of the Assign step in the data action flow setting the output parameter to Case_GetActivities.ActivityResults](images/list-activ-assign-ss.png "Assign Output Parameter")
 
 After these steps, use the output parameter as the data source of a **Table** or **List** to show the information to the case workers.
 
@@ -76,7 +76,7 @@ To add case information that's stored in the case business entity, make sure you
         * `ActivityResult` with **NewCaseSearch\ActivityResult** structure data type.
         * `<business-entity>` with **&lt;business-entity&gt;** entity data type.
     
-    ![Attributes to Outro](images/list-activ-add-case-ss.png)
+    ![Screenshot showing the process of adding ActivityResult and business entity attributes to the output parameter](images/list-activ-add-case-ss.png "Add Attributes to Output Parameter")
 
 1. If you followed the [procedure to get list of activities assigned to logged user](#basic-list), delete the **Assign** from the flow.
 
@@ -104,6 +104,6 @@ To add case information that's stored in the case business entity, make sure you
 
 1. Connect the **ListAppend** action to the **For Each**.
 
-![Attributes to Outro](images/list-activ-end-ss.png)
+![Screenshot illustrating the final steps in the data action flow with ListAppend action connected to the For Each loop](images/list-activ-end-ss.png "Finalize Data Action Flow")
 
 After these steps, use the output parameter as the data source of a **Table** or **List** to show the information to the case workers.

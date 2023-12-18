@@ -30,7 +30,7 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 
     The Video widget is displayed.
 
-    ![](<images/video-2-ss.png>)
+    ![Screenshot of the Video widget in the Service Studio toolbox](images/video-2-ss.png "Video Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -44,39 +44,39 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 
 1. From the Toolbox, drag the Video widget into the Main Content area of your application's screen.
 
-    ![](<images/video-3-ss.png>)
+    ![Dragging the Video widget from the toolbox into the main content area of an application screen](images/video-3-ss.png "Dragging Video Widget to Main Content")
  
 1. On the **Properties** tab, set the **VideoURL** property to the source video file you want to embed in your app. 
 
     * If using an external source file, insert the file URL.
 
-        ![](<images/video-4-ss.png>)
+        ![Properties tab showing the VideoURL field set with an external video file URL](images/video-4-ss.png "Setting External Video URL")
 
     * If using a local file, include the video in a module as a resource and use the runtime path as follows:
 
         1. On the **Data** tab, right-click the **Resources** folder and select **Import Resource**.
 
-            ![](<images/video-5-ss.png>)
+            ![Import Resource option in the Data tab for adding a local video file](images/video-5-ss.png "Importing Video Resource")
         
         1. Browse and select the video file you want to add and click **Open**.
 
         1. On the **Resource** properties tab, from the **Deploy Action** drop-down, select **Deploy to Target Directory**.
 
-            ![](<images/video-6-ss.png>)
+            ![Resource properties tab with Deploy Action dropdown set to Deploy to Target Directory](images/video-6-ss.png "Setting Deploy Action for Video Resource")
 
         1. On the **Interface** tab, from the **Widget Tree**, select the Video pattern.
        
         1. In the **VideoURL** property, enter the runtime path of the video file.
 
-            ![](<images/video-7-ss.png>)
+            ![VideoURL property field with the runtime path of the local video file entered](images/video-7-ss.png "Entering Runtime Path for Video")
     
             **Tip**: You can copy the runtime path from the Resource Runtime Path property tab.
 
-            ![](<images/video-8-ss.png>)
+            ![Resource Runtime Path property tab showing the path to copy for the VideoURL](images/video-8-ss.png "Copying Runtime Path from Resource Properties")
 
 1. On the Video **Properties** tab, you can also define (optional) properties, such as the height and width of the video and the audio settings.
 
-    ![](<images/video-9-ss.png>)
+    ![Video Properties tab with optional settings for height, width, and audio](images/video-9-ss.png "Video Properties Tab")
 
 After following these steps and publishing the module, you can test the pattern in your app. 
        

@@ -58,7 +58,7 @@ Follow the steps described
 
 1. Restart the IIS.
 
-![ISS Default website configurations](images/iss-default-website.png)
+![Screenshot of Internet Information Services (IIS) Manager showing the Default Web Site selected for configuration adjustments](images/iss-default-website.png "IIS Default Website Configuration")
 
 ### Workflow Builder requests a new Case Management framework version
 

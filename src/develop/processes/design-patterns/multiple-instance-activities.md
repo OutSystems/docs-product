@@ -1,11 +1,11 @@
 ---
+summary: The article describes how to execute multiple instances of a process activity dynamically at runtime, using either a new Process or a Conditional Start for scalability and structure
 locale: en-us
 guid: e4f2b751-f68b-4d31-b018-a30bf5a7f61a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:20
 ---
-
 # Executing Multiple Instance Activities
 
 Use this pattern to execute multiple instances of the same flow of activities. It is specially useful in situations where the number of executed instances is only known at runtime.
@@ -23,7 +23,7 @@ As an example, think of a recruitment process for candidates who apply for a job
 
 ### Using a New Process
 
-![](images/multiple-instance-activities-2.png)
+![Diagram illustrating the CandidateSelection process with multiple CandidateInterview process instances](images/multiple-instance-activities-2.png "New Process for Multiple Instance Activities")
 
 When the **CandidateSelection** process is executed the following occurs:
 
@@ -37,7 +37,7 @@ When the **CandidateSelection** process is executed the following occurs:
 
 ### Using a Conditional Start
 
-![](images/multiple-instance-activities-1.png)
+![Flowchart showing the process execution using Conditional Start for scheduling multiple interviews](images/multiple-instance-activities-1.png "Conditional Start for Multiple Instance Activities")
 
 When the process is executed the following occurs:
 

@@ -28,7 +28,7 @@ To enable access control for a case definition, follow these steps:
 
 1. In the action flow select the **Assign** and set the **HasAccessControl** to `True`.
 
-    ![Has Access Control](images/enable-access-con-ss.png?width=600)
+    ![Screenshot showing the process of setting HasAccessControl to True in the Bootstrap_CaseConfiguration action flow](images/enable-access-con-ss.png "Enabling Access Control")
 
 1. Publish the module by selecting **1-Click Publish**.
 

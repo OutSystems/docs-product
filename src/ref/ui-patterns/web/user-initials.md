@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/userinitials-2-diag.png>)
+![Diagram showing the layout and classes for the User Initials UI Pattern in Traditional Web Apps](images/userinitials-2-diag.png "User Initials Layout Diagram")
 
 ## Advanced use case
 
@@ -30,7 +30,7 @@ Applies only to Traditional Web Apps.
 
 1. In the UserInititals, set the name parameter to the value of the name field from the database.
 
-    ![](<images/userinitials-3-ss.png>)
+    ![Screenshot of the User Initials Pattern being used within a table in a Traditional Web App](images/userinitials-3-ss.png "User Initials in Table Preview")
 
 1. Change the pattern values.
 
@@ -51,18 +51,18 @@ Applies only to Traditional Web Apps.
 
 1. Drag an IF condition tool into the container and set the condition to `UserTable.List.Current.User.Is_Active`.
 
-    ![](<images/userinitials-5-ss.png>)
+    ![Screenshot showing the IF condition tool being used in the User Initials Pattern setup](images/userinitials-5-ss.png "IF Condition Tool in User Initials")
 
 1. In the True branch, drag the UserInitials pattern and set the name parameter to the value of the name field from the database.
 
 1. To adapt the UserInitials to the size of container, set the ExtendedClass parameter to `full-width full-height`.
 
-    ![](<images/userinitials-6-ss.png>)
+    ![Screenshot of the True branch configuration for the User Initials Pattern with extended class parameters](images/userinitials-6-ss.png "User Initials True Branch Configuration")
 
 1. In the False branch, drag an image and set the Style Classes to  `border-radius-circle`.
 
-    ![](<images/userinitials-7-ss.png>)
+    ![Screenshot of the False branch in the User Initials Pattern showing an image with a circular border](images/userinitials-7-ss.png "User Initials False Branch Image")
 
 1. Publish and test.
 
-    ![](<images/userinitials-8-ss.png?width=750>)
+    ![Screenshot of the published test for the User Initials Pattern in a Traditional Web App](images/userinitials-8-ss.png "Published User Initials Test")

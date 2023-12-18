@@ -134,7 +134,7 @@ To set up your case management app to work with calendars follow these steps:
 
 1. Connect the **For Each** to the **NonWorkingDay_CreateOrUpdate**, and then connect the **NonWorkingDay_CreateOrUpdate** to the **For Each**.
 
-    ![Bootstrap timer action](images/calendar-timer-action-ss.png)
+    ![Screenshot of the calendar timer action configuration in the case management app](images/calendar-timer-action-ss.png "Calendar Timer Action Configuration")
 
 1. Set the **CalendarNonWorkingDayRec** of the **NonWorkingDay_CreateOrUpdate** as `GetNonWorkingDayConfigurations.List.Current.NonWorkingDayConfigurations`.
 

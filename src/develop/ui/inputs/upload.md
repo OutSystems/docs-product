@@ -21,25 +21,25 @@ To upload a file in Reactive Web and Mobile apps:
 
     The Upload widget is displayed.
 
-    ![Upload widget](images/upload-1-ss.png)
+    ![Screenshot showing the Upload widget in the Service Studio toolbox](images/upload-1-ss.png "Upload Widget in Service Studio")
 
 1. Drag the Upload widget into the Main Content area of your screen.
 
-    ![Drag widget onto screen](images/upload-2-ss.png)
+    ![Screenshot of dragging the Upload widget into the Main Content area of the screen](images/upload-2-ss.png "Drag Upload Widget to Main Content")
 
     By default, the Upload widget contains an icon and text placeholder.
 
 1. To hold the file content, create a local variable by right-clicking on your screen name and selecting **Add Local Variable**. Enter a name for the variable and set the data type to Binary Data.
 
-    ![Add local variable](images/upload-3-ss.png)
+    ![Screenshot of creating a local variable for file content in Service Studio](images/upload-3-ss.png "Create Local Variable for File Content")
 
 1. Repeat step 3 to create a local variable to hold the file name, but in this case, select Text as the data type.
 
-    ![Add local variable](images/upload-5-ss.png)
+    ![Screenshot of creating a local variable for file name with Text data type in Service Studio](images/upload-5-ss.png "Create Local Variable for File Name")
 
 1. Select the Upload widget, and on the **Properties** tab, set the **File Content** property to the local variable you created (BinaryDataVar) to hold the file content and set the **File Name** property to the local variable you created (TextVar) to hold the file name.
 
-    ![Set File Content and File Name variables](images/upload-4-ss.png)
+    ![Screenshot showing the properties tab for the Upload widget with File Content and File Name set to local variables](images/upload-4-ss.png "Set Properties for Upload Widget")
 
 ### Save the uploaded file
 
@@ -61,11 +61,11 @@ To upload a file in a Traditional Web app:
 
     The Upload widget is displayed.
 
-    ![Upload widget](images/uploadweb-1-ss.png)
+    ![Screenshot displaying the Upload widget in the toolbox for a Traditional Web app in Service Studio](images/uploadweb-1-ss.png "Upload Widget in Traditional Web App")
 
 1. Drag the Upload widget into the Main Content area of your screen.
 
-    ![Drag widget onto screen](images/uploadweb-2-ss.png)
+    ![Screenshot of the Upload widget placed in the Main Content area of a Traditional Web app screen](images/uploadweb-2-ss.png "Upload Widget on Traditional Web Screen")
 
 ### Save the uploaded file
 

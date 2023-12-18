@@ -1,11 +1,11 @@
 ---
+summary: The article explains how to add Process Callback actions to validate and control the execution flow of a process
 locale: en-us
 guid: c903f266-1cdc-45fb-9609-188a79440359
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 ---
-
 # Using Process Callback Actions
 
 When designing the process flow of your process, you can add business rules to validate the execution of your process. This allows you to block or quit the process execution if a specified condition is not verified. This behavior is implemented through **Process Callback actions**.
@@ -17,7 +17,7 @@ When designing the process flow of your process, you can add business rules to v
 
 1. Select one of the **On Process ...** actions.
 
-    ![Add callback actions](images/add-callback-action-ss.png)
+    ![Screenshot showing how to add a Process Callback Action in the Processes tab](images/add-callback-action-ss.png "Adding a Process Callback Action")
 
 1. Design the behavior of the action.
 

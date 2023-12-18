@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/search-3-diag.png>)
+![Diagram illustrating the layout and classes of the Search UI Pattern in Traditional Web Apps](images/search-3-diag.png "Search UI Pattern Layout Diagram")
 
 ## Advanced use case
 
@@ -32,11 +32,11 @@ For this example, refer to the [FourColumns Screen Template](https://outsystemsu
 
 1. Drag a Icon Widget inside that container and choose `Entities.IconName.times` for the Name parameter. This is the X icon.
 
-    ![](<images/search-4-ss.png>)
+    ![Screenshot showing the implementation of a reset search button in the Search UI Pattern](images/search-4-ss.png "Reset Search Button Example")
 
 1. In the container, set the Display parameter to `If(SearchKeyword <> "", True, False)`. This uses the already existing SearchKeyword Local Variable and only displays the container if the search input has text.
 
-    ![](<images/search-5-ss.png>)
+    ![Screenshot demonstrating the conditional display of the reset search button based on the search keyword presence](images/search-5-ss.png "Conditional Display of Reset Button")
 
 1. Add an OnClick event and set the handler to the RefreshTable action.
 
@@ -44,8 +44,8 @@ For this example, refer to the [FourColumns Screen Template](https://outsystemsu
 
 1. In the Category property, set the ProductCategory Local Variable. This way you reset the search input as well as the screen to the default state.
 
-    ![](<images/search-6-ss.png>)
+    ![Screenshot of the configuration settings for the reset search button including OnClick event and Category property](images/search-6-ss.png "Reset Search Button Configuration")
 
 1. Publish and test.
 
-    ![](<images/search-7-ss.gif>)
+    ![Animated GIF demonstrating the functionality of the reset search button in the Search UI Pattern](images/search-7-ss.gif "Reset Search Button Test")

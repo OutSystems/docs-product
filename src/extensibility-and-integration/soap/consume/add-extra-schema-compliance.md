@@ -41,11 +41,11 @@ To enable these validations, follow these steps:
 
 1. Under the **Runtime** section, select the **Enable extra schema compliance in SOAP** checkbox and click **Apply**.   
 
-    ![Factory Configuration Runtime settings with option to enable extra schema compliance in SOAP.](images/enable-extra-schema-compliance-fc.png)
+    ![Screenshot showing the 'Enable extra schema compliance in SOAP' checkbox within the Factory Configuration application](images/enable-extra-schema-compliance-fc.png "Enabling Extra Schema Compliance in Factory Configuration")
     
     With this option enabled, whenever a response message is non-compliant, an exception is thrown and logged, and the following error message displays at runtime:
 
-    ![Error message informing that the response doesn't comply with the service schema definition.](images/compliance-error.png)
+    ![Error message displayed when a SOAP response message is non-compliant with the service definition](images/compliance-error.png "SOAP Compliance Error Message")
 
     If you want another message to be displayed to the end-user, you may choose to catch this thrown exception with an [Exception Handler](../../../develop/logic/exceptions/intro.md) on Service Studio.
 

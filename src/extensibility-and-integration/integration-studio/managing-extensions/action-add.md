@@ -4,8 +4,8 @@ guid: ae415dc5-20df-4cc4-9726-f02f47645ce8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The article explains how to manually add actions to an extension in Service Studio and details the properties and parameters to be specified
 ---
-
 # Add an Action
 
 Once you have created your extension you may manually add the actions that you want to expose in the extension.
@@ -14,7 +14,7 @@ Once you define the actions and publish the extension, add a reference to these 
 
 Do the following:
 
-1. Right-click on the **Actions** folder in the Multi-tree Navigator and select ![](images/action.gif) **Add Action**.
+1. Right-click on the **Actions** folder in the Multi-tree Navigator and select ![Animated GIF showing the 'Add Action' option being selected in Service Studio](images/action.gif "Add Action Icon") **Add Action**.
 
 1. Specify the following properties:
 

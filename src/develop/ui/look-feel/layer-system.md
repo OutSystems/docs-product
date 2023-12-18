@@ -41,7 +41,7 @@ Main global layers define the patterns hierarchy in the main Stacking Context. T
 * **layer-global-off-canvas:** 15
 * **layer-global-instant-interaction:** 20
 
-![Global Layers](images/layer-system.png)
+![Diagram illustrating the OutSystems UI Layer System with global and local layers](images/layer-system.png "OutSystems UI Layer System Diagram")
  
 
 ### Auxiliary

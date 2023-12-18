@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Timeline UI Pattern to show related events in a chronological order, such as a user’s upcoming, current, and past activities.
 
-![](<images/timeline-1.png>)
+![Example of a Timeline UI Pattern showing related events in chronological order](images/timeline-1.png "Timeline UI Pattern Example")
 
 **How to use the Timeline UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Timeline UI Pattern to show related events in a chronological or
 
     The Timeline widget is displayed.
 
-    ![](<images/timeline-2-ss.png>)
+    ![Screenshot of Service Studio showing the Timeline widget in the Toolbox](images/timeline-2-ss.png "Service Studio Timeline Widget")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,13 +40,13 @@ You can use the Timeline UI Pattern to show related events in a chronological or
 
 1. From the Toolbox, drag the Timeline widget onto your application’s screen.
 
-    ![](<images/timeline-3-ss.png>)
+    ![Screenshot of dragging the Timeline widget onto an application's screen in Service Studio](images/timeline-3-ss.png "Dragging Timeline Widget onto Screen")
 
     By default, the Timeline widget contains a Timeline Item widget which contains an Icon, Date, and Content placeholder. You can add as many Timeline Items as required.
 
 1. Set the required content in the Icon, Date, and Content placeholders. In this example we add some text.
 
-    ![](<images/timeline-4-ss.png>)
+    ![Screenshot showing how to set content in the Icon, Date, and Content placeholders of a Timeline Item](images/timeline-4-ss.png "Setting Content in Timeline Item")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

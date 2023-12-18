@@ -14,7 +14,7 @@ OutSystems logs runtime errors that happen in your application, making it easier
 
 You can check error logs in the environment management console (Service Center).
 
-![](images/troubleshoot-application-errors-1.png)
+![Screenshot of the environment management console showing the error logs for application troubleshooting](images/troubleshoot-application-errors-1.png "Environment Management Console")
 
 You can filter the error logs by application, module, error message, and more.
 
@@ -22,18 +22,18 @@ You can filter the error logs by application, module, error message, and more.
 
 Customers have been reporting an error in the Directory application, that is preventing them from updating their profile.
 
-![](images/troubleshoot-application-errors-2.png)
+![Error report indicating an issue in the Directory application preventing profile updates](images/troubleshoot-application-errors-2.png "Error Report for Directory App")
 
 Check if there are any errors logged for the Directory app. 
 
 1. In the Production environment, open the Service Center management console, and navigate to the **Monitoring** tab. 
 1. Filter by the 'Directory' application.
 
-![](images/troubleshoot-application-errors-3.png)
+![Service Center management console with filters applied to show error logs for the Directory application](images/troubleshoot-application-errors-3.png "Filtering Error Logs")
 
 It seems that there is a SQL query with errors. Click the **Detail** link to investigate.
 
-![](images/troubleshoot-application-errors-4.png)
+![Detailed view of a SQL query error in the Service Center error log for the Directory module](images/troubleshoot-application-errors-4.png "SQL Query Error Details")
 
 From the error log and stack trace, we can see the error is happening in the Directory module, more precisely in the Employee_MyProfile screen. Learn more about the [information logged by the platform.](<http://www.outsystems.com/forums/discussion/7856/anatomy-of-an-outsystems-error-stack/>)
 

@@ -19,7 +19,7 @@ By default, all end users are considered internal until you configure specific d
 
 1. Under **User Classification Rules**, select **Only users registered with these domains count as Internal** and enter the domain names that you own. 
 
-    ![](images/sc-user-classification-rules.png?width=900)
+    ![Screenshot of Service Center showing the User Classification Rules section where domains are configured to classify internal users](images/sc-user-classification-rules.png "Service Center User Classification Rules Configuration")
 
 1. Click **Save**.
 

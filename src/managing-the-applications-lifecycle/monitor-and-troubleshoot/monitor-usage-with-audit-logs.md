@@ -36,7 +36,7 @@ You can find the audit log for the tasks a user has made in the user details scr
 
 As an example, let's see the tasks "Andrea Fleet" has done. In your **LifeTime** console (`https://<lifetime_env>/lifetime`), navigate to the **USER MANAGEMENT** tab, choose **USERS**, and select **Andrea Fleet**. There you can find the **View Activity Log** link that displays all tasks made by Andrea.
 
-![](images/monitor-usage-with-audit-logs-1.png)
+![Screenshot of the OutSystems LifeTime console showing the User Management tab with Andrea Fleet's activity log.](images/monitor-usage-with-audit-logs-1.png "User Activity Log in OutSystems")
 
 ## Check the Changes Made in the Infrastructure
 
@@ -44,11 +44,11 @@ To help you understand the interactions performed in the infrastructure, you can
 
 As an example, let's see the audit logs related to the "Developer" role. Go to the **USER MANAGEMENT** tab, choose **ROLES**, and then choose the **Developer** role. There you can find the **View Change Log** link that displays all interactions done with this role.
 
-![](images/monitor-usage-with-audit-logs-2.png)
+![Screenshot of the OutSystems LifeTime console displaying the Roles section under User Management with the Developer role's change log.](images/monitor-usage-with-audit-logs-2.png "Role Change Log in OutSystems")
 
 Sometimes it's also useful to see all changes made in the infrastructure, and be able to filter them. For this, go to the **INFRASTRUCTURE** tab, or to the **ENVIRONMENTS** tab in OutSystems Cloud, and click the link **View Audit Logs**.
 
-![](images/monitor-usage-with-audit-logs-3.png)
+![Screenshot showing the Infrastructure tab in OutSystems with the View Audit Logs link highlighted.](images/monitor-usage-with-audit-logs-3.png "Infrastructure Audit Logs in OutSystems")
 
 
 ## Permissions Required to Access the Audit Logs

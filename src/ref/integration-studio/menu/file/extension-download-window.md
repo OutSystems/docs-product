@@ -4,11 +4,11 @@ guid: 72128f41-26f1-43f5-b5be-fd06451c1624
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+summary: The Download from Server window in Integration Studio facilitates downloading the latest version of an extension, displaying details such as name, version, upload date, user, and notes
 ---
-
 # Download from Server Window
 
-The ![](images/download-icon.gif) Download from server window is launched when you are [downloading an extension](<../../../../extensibility-and-integration/integration-studio/managing-extensions/extension-download.md>), in Integration Studio and allows you to download the latest extension version of a given extension.
+The ![Animated GIF icon representing download from server](images/download-icon.gif "Download Icon") Download from server window is launched when you are [downloading an extension](<../../../../extensibility-and-integration/integration-studio/managing-extensions/extension-download.md>), in Integration Studio and allows you to download the latest extension version of a given extension.
 
 The information and buttons available in the Download from Server window are presented below.
 

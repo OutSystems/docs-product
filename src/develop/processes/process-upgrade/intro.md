@@ -1,4 +1,5 @@
 ---
+summary: OutSystems automatically upgrades executing process instances when module process flows are modified, with an impact analysis determining if instances are suspended or upgraded
 tags: support-application_development; support-webapps
 locale: en-us
 guid: 628316ec-b24f-422b-bafa-93bc8dd3bc07
@@ -6,7 +7,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 ---
-
 # Upgrade Processes
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. However, the success of these upgrades depends on both the kind of changes you made to the process flow and the current execution state of process instances. An **impact analysis** determines whether a process instance is suspended or upgraded to execute the new process flow.

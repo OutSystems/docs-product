@@ -18,4 +18,4 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Layout and Classes
 
-![](images/column-layout-diag.png)
+![Diagram illustrating the layout and classes for the Columns UI Pattern in mobile and reactive web apps](images/column-layout-diag.png "Columns Layout Diagram")

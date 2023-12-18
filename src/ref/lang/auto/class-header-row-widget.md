@@ -7,8 +7,8 @@ guid: 5f5a5642-dccc-4d7b-beea-773622e175c1
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:329
+summary: The Header Row Widget is an automatic component of the Table Records Widget in Traditional Web Apps, used to display table headers
 ---
-
 # Header Row Widget
 
 <div class="info" markdown="1">
@@ -19,7 +19,7 @@ Applies only to Traditional Web Apps.
 
 Widget containing the cells that are part of the header row of a [Table Records Widget](<class-table-records-widget.md>).
 
-![Header Row widget selected in Service Studio](images/header-row-example-ss.png)
+![Screenshot showing an example of a Header Row in a Table Records Widget within Service Studio](images/header-row-example-ss.png "Example of a Header Row in Service Studio")
 
 When you add a Table Records Widget to a screen, the table gets a Header Row Widget automatically. To hide the header row of the table, set the **Show Header** property of the Table Records Widget to `No`.
 
@@ -27,7 +27,7 @@ Each time you add or remove a new attribute to the Table Records Widget, Service
 
 For example, in a Table Records Widget where you added two attributes, this is the result in the widget tree, with one Header Row and one Row (at design time), each containing two Cells:
 
-![Widget Tree view of a Table Records Widget](images/header-row-widget-tree-ss.png)
+![Screenshot illustrating the widget tree structure with a Header Row and a Row each containing two Cells in Service Studio](images/header-row-widget-tree-ss.png "Widget Tree Structure for Header Row")
 
 <div class="info" markdown="1">
 

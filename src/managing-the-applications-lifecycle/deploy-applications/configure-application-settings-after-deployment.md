@@ -30,11 +30,11 @@ While developing, the team used a connection for the service with development da
 
 In the infrastructure management console (LifeTime), find the **Executive Dashboard** app and navigate to its details.
 
-![](images/configure-application-1.png?width=800)
+![Screenshot of the infrastructure management console showing the Executive Dashboard application details.](images/configure-application-1.png "Infrastructure Management Console - Application Detail")
 
 In the application detail screen, click **Quality**. On the menu choose **Configure Application** to customize the Expenses integration that's running on the Quality environment.
 
-![](images/configure-application-2.png?width=800)
+![Application detail screen with the 'Quality' tab selected and the 'Configure Application' option highlighted.](images/configure-application-2.png "Configure Application in Quality Environment")
 
 Now on the Quality environment management console, click on the modules you want to configure. In this case we'll configure the ExecDashboard module.
 
@@ -46,7 +46,7 @@ The module settings are grouped into different tabs:
 * Timers – Set the schedule of batch tasks defined in the module
 * Operation – Configure other runtime settings like logging and auditing
 
-![](images/configure-application-3.png)
+![Module settings screen with tabs for Integrations, Tenants, Site Properties, Timers, and Operation.](images/configure-application-3.png "ExecDashboard Module Settings")
 
 Click the Integrations tab to see the ExecDashboard module integrations and to configure them. In this case we have two integrations:
 
@@ -55,7 +55,7 @@ Click the Integrations tab to see the ExecDashboard module integrations and to c
 
 To make the Expenses integration point to a system production-like data, click 'Expenses', set the **Effective URL** field with the URL to use.
 
-![](images/configure-application-4.png)
+![Integration configuration for the ExecDashboard module showing the 'Expenses' integration with the Effective URL field.](images/configure-application-4.png "Setting Effective URL for Expenses Integration")
 
 By setting an Effective URL, you are overriding the URL defined at development time. Even if developers change the URL in the application, the platform uses the Effective URL.
 

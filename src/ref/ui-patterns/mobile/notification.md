@@ -24,7 +24,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 # Structure
 
-![Notification structure](images/notification-diag.png)
+![Diagram illustrating the structure of the Notification UI Pattern](images/notification-diag.png "Notification Structure Diagram")
 
 **Note:** The swipe event is only added on tablet and mobile devices.
 

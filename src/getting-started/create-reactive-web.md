@@ -46,15 +46,15 @@ Let's create a sample "ToDo" app.
 
 1. In Service Studio, select **New Application**.
 
-    ![Select New Application in Service Studio](images/select-new-application-ss.png)
+    ![Screenshot showing the option to select 'New Application' in Service Studio for creating a Reactive Web App](images/select-new-application-ss.png "Select New Application in Service Studio")
 
 1. In the **New Application** window, choose **From scratch**, then click **Next**.
 
-    ![Select Reactive Web App](images/start-from-scracth-ss.png)
+    ![Screenshot of the 'New Application' window with the 'From scratch' option highlighted](images/start-from-scracth-ss.png "Start From Scratch Option")
 
 1. Choose **Reactive Web App**, then click **Next**.
 
-    ![Create a Reactive Web App](images/select-reactive-web-app-ss.png)
+    ![Screenshot displaying the selection of 'Reactive Web App' option during the new application setup](images/select-reactive-web-app-ss.png "Select Reactive Web App Option")
 
 1. In the properties for your new app, set up the following: 
     
@@ -68,11 +68,11 @@ Let's create a sample "ToDo" app.
     
     1. Click **Create App** to advance to the next step.
 
-    ![New App properties](images/app-info-ss.png)
+    ![Screenshot showing the application properties setup with fields for name, description, primary color, and icon upload](images/app-info-ss.png "Application Information Setup")
 
 1. In the application properties screen, make sure **Reactive Web App** is selected in the **Choose module type** dropdown. Click **Create Module** to create the first module and open it for editing.
 
-    ![New App properties](images/module-type-ss.png)
+    ![Screenshot of the application properties screen with 'Reactive Web App' selected in the 'Choose module type' dropdown](images/module-type-ss.png "Module Type Selection")
 
 
 ## Create a database table from an Excel file { #create-entity-from-excel }
@@ -89,7 +89,7 @@ Download the [tutorial Excel file](resources/TutorialResource.xlsx) to your comp
 
 In the **ToDo** module, open the **Data** tab on the top right-hand corner, right-click the **Database** folder, choose **Import New Entities from Excel**, and select the `TutorialResource.xlsx` Excel file. Click **Import** in the dialog to confirm.
 
-![Create a Database Table from an Excel File](images/import-entities-excel-ss.png)
+![Screenshot illustrating how to import new entities from an Excel file into the OutSystems database](images/import-entities-excel-ss.png "Import Entities from Excel")
 
 When importing an Excel file, OutSystems creates a database table (called an Entity in OutSystems) with the necessary columns (called Attributes in OutSystems) to store the data in the database.
 
@@ -101,23 +101,23 @@ Now we can create a Screen that shows all of the tasks.
 
 1. Switch to the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**. 
 
-    ![Open the MainFlow](images/click-mainflow-ss.png)
+    ![Screenshot showing the action of double-clicking 'MainFlow' under 'UI Flows' in Service Studio](images/click-mainflow-ss.png "Accessing MainFlow in Service Studio")
 
 1. Drag a **Screen** from the Toolbox to an empty area in the Main Editor window. 
 
-    ![Drag a Screen to the MainFlow](images/drag-screen-widget-ss.png)
+    ![Screenshot of dragging a 'Screen' widget from the Toolbox to the main editor window in Service Studio](images/drag-screen-widget-ss.png "Drag Screen Widget to Main Editor")
 
 1. Choose the **Empty** template (1), name your screen `Task` (2) and click **Create Screen** (3).
 
-    ![Create a new empty screen](images/select-empty-screen-ss.png)
+    ![Screenshot showing the selection of the 'Empty' template for a new screen named 'Task'](images/select-empty-screen-ss.png "Select Empty Screen Template")
 
 1. Drag the **Task** Entity from the **Data** tab to the Content placeholder of the screen.
 
-    ![Data tab and Task Entity](images/drag-task-entity-ss.png)
+    ![Screenshot depicting the action of dragging the 'Task' entity to the content placeholder of a screen](images/drag-task-entity-ss.png "Drag Task Entity to Screen")
 
     This automatically creates a Table with pagination support.
 
-    ![Tasks Screen](images/table-ss.png)
+    ![Screenshot of a table with pagination support automatically created after dragging the 'Task' entity to the screen](images/table-ss.png "Table with Pagination")
 
 ## Create a Screen to edit tasks
 
@@ -125,7 +125,7 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 
 1. Right-click the title of the first task in the row and select **Link to** > **(New Screen)**.
 
-    ![Create a Screen to Edit Tasks](images/create-link-new-screen-ss.png)
+    ![Screenshot showing the context menu option to link the title of a task to a new screen for editing](images/create-link-new-screen-ss.png "Create Link to New Screen")
 
 1. Choose the **Empty** template, name your screen `TaskDetail` and click **Create Screen**.
 
@@ -133,60 +133,60 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 
 1. Drag a **Form** widget from the Toolbox to the Content placeholder in the **TaskDetail** screen.
 
-    ![Drag a Form](images/drag-form-widget-ss.png)
+    ![Screenshot of dragging a 'Form' widget from the Toolbox to the content placeholder in the 'TaskDetail' screen](images/drag-form-widget-ss.png "Drag Form Widget to Screen")
 
 1. Drag the **Task** entity from the **Data** tab to the previously created Form.
 
-    ![Create a Screen to Edit Tasks](images/drag-task-entity-into-form-ss.png)
+    ![Screenshot showing the action of dragging the 'Task' entity into a form widget to create a form](images/drag-task-entity-into-form-ss.png "Drag Task Entity into Form")
 
     Now we will define the logic that runs when the end users press the **Save** button:
 
 1. Double-click an empty area of the **Save** button to define the logic associated with the button. This will create a new screen action named **SaveOnClick**.
 
-    ![Define the save button logic](images/double-click-save-button-ss.png)
+    ![Screenshot of double-clicking the 'Save' button to define the logic associated with the button](images/double-click-save-button-ss.png "Define Save Button Logic")
 
 1. In the **Logic** tab, right-click **Server Actions** and select **Add Server Action**. Set its name to **TaskCreateOrUpdate**. 
 
-    ![Add Server Action](images/create-server-action-ss.png)
+    ![Screenshot showing the creation of a new server action named 'TaskCreateOrUpdate' in Service Studio](images/create-server-action-ss.png "Create Server Action")
     
 1. Right-click the newly created action and select **Add Input Parameter**. Set its name to **Task**.
 
-    ![Add input parameter](images/add-input-parameter-ss.png)
+    ![Screenshot illustrating the addition of an input parameter named 'Task' to a server action](images/add-input-parameter-ss.png "Add Input Parameter to Action")
 
 1. In the Input Parameter properties, set the Data Type to **Task**.
 
-    ![Set data type](images/input-data-type-ss.png)
+    ![Screenshot showing the properties of an input parameter with the data type set to 'Task'](images/input-data-type-ss.png "Set Input Parameter Data Type")
 
 1. Right-click the **TaskCreateOrUpdate** action and select **Add Output Parameter**. Set its name to **TaskId**.
 
 
 1. In the Output Parameter properties, set the Data Type to **Task Identifier**. 
 
-    ![Set data type](images/output-data-type-ss.png)
+    ![Screenshot displaying the properties of an output parameter with the data type set to 'Task Identifier'](images/output-data-type-ss.png "Set Output Parameter Data Type")
 
 1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. 
 
-    ![Drag entity action to the flow of the server action](images/drag-entity-action-ss.png)
+    ![Screenshot of dragging the 'CreateOrUpdateTask' entity action to the flow of the 'TaskCreateOrUpdate' server action](images/drag-entity-action-ss.png "Drag Entity Action to Server Action Flow")
 
 1. Set the **Source** to the Input Parameter **Task**.
 
-    ![Set the source](images/action-source-ss.png)
+    ![Screenshot showing the setting of the 'Source' parameter to the input parameter 'Task' in an action](images/action-source-ss.png "Set Action Source Parameter")
 
 1. Next, we'll need to assign the value of the Output Parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node from the toolbox to the flow (1) and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id` (2).
 
-    ![Drag Assign node](images/drag-assign-set-variable-ss.png)
+    ![Screenshot of an 'Assign' node in a flow with the 'Variable' set to 'TaskId' and the 'Value' to 'CreateOrUpdateTask.Id'](images/drag-assign-set-variable-ss.png "Assign Output Parameter Value")
 
 1. In the **Interface** tab, double-click the **SaveOnClick** action.
 
-     ![Select SaveOnClick client action](images/save-on-click-ss.png)
+     ![Screenshot of the 'SaveOnClick' action in the interface tab of Service Studio](images/save-on-click-ss.png "SaveOnClick Action")
 
 1. Navigate to the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If** (1). Set the **Task** property to `GetTaskById.List.Current.task` (2).
 
-    ![Drag Server Action to the True branch](images/drag-server-action-ss.png)
+    ![Screenshot showing the dragging of the 'TaskCreateOrUpdate' server action to the 'True' branch of an 'If' condition](images/drag-server-action-ss.png "Drag Server Action to Logic Flow")
 
 1. Drag the **Task** Screen from the **Interface** tab to the **End** node so that the user is redirected back to the main screen after saving a task. 
 
-    ![Create a Screen to Edit Tasks](images/drag-task-screen-to-end-node-ss.png)
+    ![Screenshot of dragging the 'Task' screen to the 'End' node in a logic flow to redirect the user after saving](images/drag-task-screen-to-end-node-ss.png "Redirect to Task Screen After Save")
 
 ## Allow completing tasks
 
@@ -196,41 +196,41 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
 1. Right-click the Checkbox in the **Is Active** column and select **Delete**.
 
-    ![Allow Completing Tasks](images/delete-checkbox-icon-ss.png)
+    ![Screenshot showing the deletion of a checkbox from the 'Is Active' column in a task list](images/delete-checkbox-icon-ss.png "Delete Checkbox from Task List")
 
 1. Drag a **Button** widget to the same Container where the Checkbox was, and enter `Done` in the Text property of the button.
 
-    ![Drag button](images/drag-button-widget-ss.png)
+    ![Screenshot of dragging a 'Button' widget to replace a deleted checkbox in the task list](images/drag-button-widget-ss.png "Add Done Button to Task List")
 
 1. Double-click an empty area of the button to define the logic associated with the click.
 
-    ![Drag button](images/define-button-logic-ss.png)
+    ![Screenshot showing the definition of logic for a 'Done' button when clicked](images/define-button-logic-ss.png "Define Done Button Logic")
 
 1. In the **Logic** tab, right-click the **Server Actions** and select **Add Server Action**. Name it **TaskDelete**. 
 
 1. Add an Input Parameter to the **TaskDelete** to receive the Task identifier. Set its name to **TaskId** and the Data Type to **Task Identifier**.
 
-    ![Add Input Parameter](images/add-an-input-parameter-ss.png)
+    ![Screenshot illustrating the addition of an input parameter named 'TaskId' to the 'TaskDelete' server action](images/add-an-input-parameter-ss.png "Add Input Parameter to TaskDelete Action")
 
 1. In the **Data** tab, expand the **Task** Entity. Drag the **DeleteTask** Entity Action to the flow. 
 
-    ![Drag entity action to the flow](images/drag-entity-action-to-flow-ss.png)
+    ![Screenshot of dragging the 'DeleteTask' entity action to the flow of the 'TaskDelete' server action](images/drag-entity-action-to-flow-ss.png "Drag DeleteTask Action to Flow")
 
 1. Set the **Id** property to the Input Parameter **TaskId**.
 
-    ![Set Id property](images/set-id-property-ss.png)
+    ![Screenshot showing the setting of the 'Id' property to the input parameter 'TaskId' in the delete action](images/set-id-property-ss.png "Set Id Property for Delete Action")
 
 1. Go back to the **Interface** tab and double-click the **DoneOnClick** action under the **Task** screen. 
 
-    ![Open the DoneOnClick action](images/click-button-on-click-ss.png)
+    ![Screenshot of the 'DoneOnClick' action under the 'Task' screen in the interface tab](images/click-button-on-click-ss.png "DoneOnClick Action Definition")
 
 1. Select the **Logic** tab and drag the **TaskDelete** server action to the flow of the **DoneOnClick** action. Set the **TaskId** property to `GetTasks.List.Current.Task.Id`.
 
-    ![Drag server action](images/drag-server-action-set-property-ss.png)
+    ![Screenshot showing the dragging of the 'TaskDelete' server action to the flow and setting the 'TaskId' property](images/drag-server-action-set-property-ss.png "Set TaskId Property for TaskDelete Action")
 
 1. Drag **Refresh Data** from the Toolbox to the action flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks on the screen.
 
-    ![Drag Refresh Data to thr action flow](images/drag-refresh-data-widget-ss.png)
+    ![Screenshot of dragging a 'Refresh Data' widget to the action flow after the 'TaskDelete' action](images/drag-refresh-data-widget-ss.png "Refresh Data After Task Deletion")
 
 ## Allow adding tasks
 
@@ -240,14 +240,14 @@ We also want to enable the end users to add new tasks from the screen with all t
 
 1. Drag a **Button** widget from the toolbox to the Actions placeholder in the top right-hand corner of the screen. Change the label of the button to **Add Task**.
 
-    ![Add button to Actions placeholder](images/drag-button-widget-from-toolbox-ss.png)
+    ![Screenshot of dragging a 'Button' widget to the actions placeholder with the label 'Add Task'](images/drag-button-widget-from-toolbox-ss.png "Add Add Task Button to Task Screen")
 
 1. Right-click an empty area of the button and choose **Link** > **MainFlow\TaskDetail**.
 
-    ![Allow Adding Tasks](images/link-to-screen-ss.png)
+    ![Screenshot showing the linking of the 'Add Task' button to the 'TaskDetail' screen](images/link-to-screen-ss.png "Link Add Task Button to TaskDetail Screen")
 
 ## Test your Reactive Web App
 
 At this stage, you can test your Reactive Web App. Click the **1-Click Publish** button to publish the application to your environment. When the application is deployed, click the **Open in Browser** button to test your application in a browser.
 
-![Reactive Web App](images/your-reactive-web-app-ss.png)
+![Screenshot of the published Reactive Web App ready to be tested in a browser](images/your-reactive-web-app-ss.png "Test Your Reactive Web App")

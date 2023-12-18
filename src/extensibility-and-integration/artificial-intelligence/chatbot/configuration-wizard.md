@@ -15,7 +15,7 @@ Chatbot configuration wizard, or **Chatbot Configurator**, is available as a clo
 * Set up and manage connection between the AI provider and OutSystems environment.
 * Add QnA chatbots.
 
-![Wizard landing page](images/wizard-landing-page.png?width=700)
+![Screenshot of the Chatbot Configurator landing page](images/wizard-landing-page.png "Chatbot Configurator Landing Page")
 
 ## Accessing the chatbot configuration wizard
 
@@ -23,7 +23,7 @@ There are two ways you can use **Chatbot Configurator**. You can:
 
 * Add [the chatbot UI block](guide-outsystems-add-chatbot.md) first, publish the app, and then click the link in the chat preview to open the wizard.
   
-    ![Wizard link in the chat window](images/chatbot-wizard-link.png?width=400)
+    ![Image showing the wizard link in the chatbot preview window](images/chatbot-wizard-link.png "Chatbot Wizard Link")
 
 * Go to the [Chatbot Configurator](https://chatbotconfigurator.outsystems.com/ChatbotConfigurator/), configure the chatbot, and then add the UI block.
 

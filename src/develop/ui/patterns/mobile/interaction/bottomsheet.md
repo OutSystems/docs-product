@@ -1,13 +1,12 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: 
+summary: The article provides a step-by-step guide on how to use the Bottom Sheet UI pattern in mobile apps to display additional information
 locale: en-us
 guid: 4CCAE716-CF2A-4601-9F03-D6ACF603F01A
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=2885:24642
 ---
-
 # Bottom Sheet
 
 <div class="info" markdown="1">
@@ -26,7 +25,7 @@ In this example, we create a button that opens and closes the Bottom Sheet widge
 
     The Bottom Sheet widget is displayed.
 
-    ![Search for the Bottom Sheet widget](<images/bottomsheet-widget-ss.png>)
+    ![Screenshot showing how to search for the Bottom Sheet widget in Service Studio](images/bottomsheet-widget-ss.png "Bottom Sheet Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,49 +39,49 @@ In this example, we create a button that opens and closes the Bottom Sheet widge
 
 1. From the Toolbox, drag the Bottom Sheet widget into the Main Content area of your application's screen and on the **Properties** tab, in the **Name** field, enter a name for the Bottom Sheet widget.
 
-    ![Search for the Bottom Sheet widget](<images/bottomsheet-dragwidget-ss.png>)
+    ![Image depicting the process of dragging the Bottom Sheet widget into the Main Content area in Service Studio](images/bottomsheet-dragwidget-ss.png "Dragging Bottom Sheet Widget")
 
     By default, the Bottom Sheet widget contains a **TopBar** and a **Content** placeholder.
 
-    ![The Bottom Sheet widget placeholder](<images/bottomsheet-placeholder-ss.png>)
+    ![Screenshot of the Bottom Sheet widget's default placeholders for TopBar and Content in Service Studio](images/bottomsheet-placeholder-ss.png "Bottom Sheet Widget Placeholder")
 
 1. Add the relevant content to the TopBar and Content placeholders. 
 
-    ![Add content to Bottom Sheet placeholders](<images/bottomsheet-content-ss.png>)
+    ![Example of adding text, an icon, and a close button to the Bottom Sheet widget placeholders](images/bottomsheet-content-ss.png "Adding Content to Bottom Sheet")
 
     In this example, we add text, an icon, and a button to close the widget.
 
 1. To close the bottom sheet, select the **Close** button, and on the **Properties** tab, from the **On Click** dropdown, select **New Client Action**.  
 
-    ![New client action for close button](<images/bottomsheet-onclick-ss.png>)
+    ![Screenshot showing the selection of a new client action for the Close button on the Bottom Sheet widget](images/bottomsheet-onclick-ss.png "Setting On Click Action for Close Button")
 
 1. Drag a **Run Client Action** to the client action, add from the **Select Action** popup, navigate to the **BottomSheetClose** action and click **Select**.
 
-    ![Add BottomSheetClose action](<images/bottomsheet-close-ss.png>)
+    ![Image illustrating how to add the BottomSheetClose action to a client action in Service Studio](images/bottomsheet-close-ss.png "Adding BottomSheetClose Action")
 
 1. On the **Properties** tab, set the **WidgetId** to **BottomSheet.Id**.
 
-    ![Set the widgetId](<images/bottomsheet-id-ss.png>)
+    ![Screenshot demonstrating how to set the WidgetId to BottomSheet.Id in the properties tab](images/bottomsheet-id-ss.png "Setting WidgetId Property")
 
 1. In this example we create a button to open the Bottom sheet by dragging the **Button** widget just below the **Bottom Sheet** widget and on the **Properties** tab, in the **Text** field, enter the text you want to appear on the button.
 
-    ![Add an Open button](<images/bottomsheet-openbutton-ss.png>)
+    ![Image showing the addition of an Open button below the Bottom Sheet widget in Service Studio](images/bottomsheet-openbutton-ss.png "Adding Open Button for Bottom Sheet")
 
 1. Select the button, and on the **Properties** tab, from the **On Click** dropdown, select **New Client Action**.
 
 1. Drag a **Run Client Action** to the client action, add from the **Select Action** popup, navigate to the **BottomSheetOpen** action and click **Select**.
 
-    ![Add BottomSheetOpen action](<images/bottomsheet-openaction-ss.png>)
+    ![Screenshot depicting the process of adding the BottomSheetOpen action to a new client action](images/bottomsheet-openaction-ss.png "Adding BottomSheetOpen Action")
 
 1. On the **Properties** tab, set the **WidgetId** to **BottomSheet.Id**.
 
 1. You can customize the Bottom Sheet by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties.
 
-    ![Set relevant properties](<images/bottomsheet-properties-ss.png>)
+    ![Image displaying the customization options for the Bottom Sheet pattern in the properties tab](images/bottomsheet-properties-ss.png "Customizing Bottom Sheet Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 
-![Set relevant properties](<images/bottomsheet-resultapp.png>)
+![Screenshot of the Bottom Sheet UI pattern as it appears in a mobile app after implementation](images/bottomsheet-resultapp.png "Bottom Sheet in Mobile App")
 
 ## Properties
 

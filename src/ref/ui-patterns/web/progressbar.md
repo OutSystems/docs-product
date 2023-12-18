@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/progressbar-6-diag.png?width=650>)
+![Diagram showing the layout and classes of a progress bar in a traditional web app](images/progressbar-6-diag.png "Progress Bar Layout Diagram")
 
 ## CSS selectors
 
@@ -39,11 +39,11 @@ Applies only to Traditional Web Apps.
 
 1. To change the color of your ProgressBar based on values, create a condition and set limits to use color. In this example, 3 colors represent diferent states of progress. Set the Color parameter to `If(Value <= 50, Entities.Color.Red, If( Value > 50 and Value < 75,  Entities.Color.Yellow ,  Entities.Color.Green))`.
 
-    ![](<images/progressbar-7-ss.png>)
+    ![Screenshot demonstrating how to change the color of a progress bar based on its value](images/progressbar-7-ss.png "Progress Bar Color Change Example")
 
 1. Publish and test.
 
-    ![](<images/progressbar-5.gif>)
+    ![Animated GIF showing a progress bar in action within a traditional web app](images/progressbar-5.gif "Progress Bar Animation")
 
 ### Change the style of Progress Bar
 
@@ -56,7 +56,7 @@ It is possible to change the style of Progress bar by using custom CSS. To imple
 }
 ```
 
-![](<images/progressbar-8.png>)
+![Image of a progress bar with custom styling applied](images/progressbar-8.png "Custom Styled Progress Bar")
 
 ### Remove background of Progress Bar
 
@@ -68,4 +68,4 @@ To remove the background, use this CSS snippet.
 }
 ```
 
-![](<images/progressbar-9.png>)
+![Image of a progress bar with its background removed, showing transparency](images/progressbar-9.png "Progress Bar with Transparent Background")

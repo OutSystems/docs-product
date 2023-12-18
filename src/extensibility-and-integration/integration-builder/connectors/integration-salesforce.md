@@ -4,8 +4,8 @@ guid: 2f28086f-7a1a-4330-88d0-061e601593b9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:59
+summary: The article provides a guide on integrating Salesforce with OutSystems using Integration Builder, including prerequisites, authorization steps, and connection setup
 ---
-
 # Salesforce integration
 
 ## Prerequisites
@@ -18,7 +18,7 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 
 Follow the instructions provided in [Creating and using an integration](../use.md#create-use). You must authorize Integration Builder to access your data (list of objects) through your Salesforce account.
 
-![Authorizing Integration Builder in Salesforce](images/salesforce-authorize.png)
+![Screenshot of the Salesforce authorization process in Integration Builder](images/salesforce-authorize.png "Salesforce Authorization")
 
 Integration Builder uses this authorization to obtain the available objects for building a Salesforce integration.
 

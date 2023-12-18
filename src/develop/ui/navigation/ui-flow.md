@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 **UI Flow** is an element that groups Screens and Blocks. All instances of UI Flow in an app are under the **UI Flows** in the **Interface** tab.
 
-![UI Flows in Service Studio](images/ui-flows-ss.png?width=350)
+![Screenshot of the UI Flows section in the Interface tab of Service Studio](images/ui-flows-ss.png "UI Flows in Interface Tab")
 
 When you create a new app, the app already has some default UI Flows in **Interface** > **UI Flows**:
 
@@ -33,7 +33,7 @@ To add a new UI Flow, do the following in Service Studio:
    
 1. From the help menu, select **Add new UI Flow**.
     
-    ![Help menu with Add new UI Flow option](images/ui-flow-add-new-ss.png?width=400)
+    ![Help menu in Service Studio showing the option to add a new UI Flow](images/ui-flow-add-new-ss.png "Add New UI Flow Option")
 
 ## Creating UI Flow without styles
 
@@ -47,7 +47,7 @@ Follow these steps in Service Studio to create a UI Flow without CSS styles:
 
 4. Optionally, add a Screen under the UI Flow and verify if has no styles.
 
-    ![Screen with a blank Theme](images/screen-blank-theme-ss.png?width=530)
+    ![Example of a Screen with a blank Theme in Service Studio](images/screen-blank-theme-ss.png "Screen with Blank Theme")
 
 ## Setting the Theme of UI Flow
 
@@ -65,7 +65,7 @@ All elements you add to a UI Flow use the default Theme of the module. You can c
 
 3. In the UI Flow properties, select a Theme from the **Theme** list.
 
-    ![Theme property of a UI Flow](images/ui-flow-default-theme-ss.png?width=310) 
+    ![UI Flow properties in Service Studio with the Theme list expanded](images/ui-flow-default-theme-ss.png "UI Flow Theme Property") 
 
 4. Optionally, create a Screen under the UI Flow to verify the Screen uses the UI Flow's Theme. 
 
@@ -73,7 +73,7 @@ All elements you add to a UI Flow use the default Theme of the module. You can c
 
 **Default Screen** is the index page in Reactive Web Apps, or the home screen in Mobile Apps. There can be only one Default Screen in the module, and it's marked with the house icon.
 
-![Index page / home screen in UI Flow](images/ui-flows-home-screen-ss.png?width=400)
+![UI Flows home screen marked with a house icon in Service Studio](images/ui-flows-home-screen-ss.png "Default Screen in UI Flows")
 
 To set a Screen as default, do the following in Service Studio: 
 
@@ -93,13 +93,13 @@ Even though you can draw connectors in **UI Flow**, these connections are only v
 
 To create a Screen or Block, drag the element from the toolbox to the UI Flow editor. The available elements on the toolbox depend on the type of app you're creating.
 
-![UI Flow toolbox with elements](images/ui-flow-toolbox-ss.png?width=750)
+![Toolbox in UI Flow editor showing available elements for creating Screens or Blocks](images/ui-flow-toolbox-ss.png "UI Flow Toolbox")
 
 ### Scaffolding Screens
 
 Drag **Entities** to the UI Flow editor to start the accelerators (scaffolding). For example, if you drag an Entity to a UI Flow editor, you automatically scaffold two Screens with working logic, one for listing the items, one for editing them.
 
-![Automatically created Screens](images/scaffolding-screens-ss.png?width=400)
+![Scaffolding Screens in UI Flow editor with two automatically generated Screens](images/scaffolding-screens-ss.png "Scaffolding Screens")
 
 ## UI Flows in Traditional Web Apps
 

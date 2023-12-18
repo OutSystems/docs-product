@@ -14,30 +14,30 @@ This example shows how you can create a simple Area Chart with a Stacked Series.
 
 1. From the Toolbox, drag the **Area Chart** widget to the Screen.
 
-    ![Drag the Area Chart widget to the screen ](images/chartarea-drag-ss.png)
+    ![Screenshot showing the process of dragging the Area Chart widget onto the screen in OutSystems](images/chartarea-drag-ss.png "Dragging Area Chart Widget")
 
 1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.
 
-    ![Expand the Data Point List property](images/chartarea-expand-ss.png)
+    ![Screenshot of the Properties tab with the DataPointList property expanded in OutSystems](images/chartarea-expand-ss.png "Expanding DataPointList Property")
 
 1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
 
     This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the area chart. 
 
-    ![Set datapoint](images/chartarea-datapointlist-ss.png)
+    ![Screenshot illustrating how to set the Label and Value properties for a data point in an Area Chart in OutSystems](images/chartarea-datapointlist-ss.png "Setting Data Point Properties")
 
 1. Set the **SeriesName** property.
 
-    ![Set the series name](images/chart-seriesname-ss.png)
+    ![Screenshot showing the SeriesName property field in the Area Chart widget properties in OutSystems](images/chart-seriesname-ss.png "Setting Series Name Property")
 
 1. To add more data points, repeat steps 2 and 3.
 
-    ![Add more data points](images/chartarea-extradatapoints-ss.png)
+    ![Screenshot demonstrating how to add additional data points to the Area Chart in OutSystems](images/chartarea-extradatapoints-ss.png "Adding Extra Data Points")
 
 1. To enable the Stacked Series, set the **StackingType** property to **Entities.StackingType.Stacked**.
 
-    ![Set stacking type](images/chartarea-stackingtype-ss.png)
+    ![Screenshot depicting the StackingType property set to Stacked in the Area Chart widget in OutSystems](images/chartarea-stackingtype-ss.png "Enabling Stacked Series")
 
 After following these steps, you can publish your module:
 
-![Example Area Chart](images/chartarea-result.png)
+![Screenshot of the final result of an Area Chart with Stacked Series in OutSystems](images/chartarea-result.png "Final Area Chart Result")

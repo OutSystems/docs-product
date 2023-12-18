@@ -22,7 +22,7 @@ This topic shows you how to add an infrastructure to AI Mentor Studio and how to
 
 To change the language of AI Mentor Studio, select your user name, then select a language under **Language**.
 
-![Change language](images/select-language-ams.png)
+![Screenshot showing how to change language settings in AI Mentor Studio by selecting the user name](images/select-language-ams.png "Selecting Language in AI Mentor Studio")
 
 </div>
 
@@ -40,7 +40,7 @@ IT administrators can enforce IT User authentication in a specific environment. 
 
 If you log in with your **OutSystems account**, AI Mentor Studio shows you the following welcome screen:
 
-![Welcome screen for OutSystems login](images/welcome-os-ams.png)
+![Welcome screen in AI Mentor Studio for users logging in with an OutSystems account](images/welcome-os-ams.png "Welcome Screen for OutSystems Account in AI Mentor Studio")
 
 Select one of the options shown on the welcome screen:
 
@@ -57,7 +57,7 @@ Select one of the options shown on the welcome screen:
 
 If you log in with your **IT user account** and your infrastructure isn’t registered yet, AI Mentor Studio shows you the following welcome screen:
 
-![Welcome screen for IT user login](images/welcome-it-user-ams.png)
+![Welcome screen in AI Mentor Studio for users logging in with an IT user account](images/welcome-it-user-ams.png "Welcome Screen for IT User Account in AI Mentor Studio")
 
 AI Mentor Studio shows you the option:
 
@@ -104,7 +104,7 @@ Depending on your authentication method, the interface might differ slightly fro
 
 1. Fill in your infrastructure information, or confirm it is correct in case it's already pre-filled. Then, click **Register**.
 
-    ![Register infrastructure step](images/infra-setup-ams.png)
+    ![Form for registering and setting up infrastructure information in AI Mentor Studio](images/infra-setup-ams.png "Infrastructure Setup in AI Mentor Studio")
 
 1. Read the **AI Mentor Studio disclaimer** with the terms and conditions. If you agree, select **Accept and continue**.
 
@@ -116,7 +116,7 @@ Depending on your authentication method, the interface might differ slightly fro
 
     </div>
 
-    ![Install code analysis probe](images/install-code-analysis-probe-ams.png)
+    ![Instructions for downloading and installing the code analysis probe in AI Mentor Studio](images/install-code-analysis-probe-ams.png "Installing Code Analysis Probe in AI Mentor Studio")
 
     1. Select **Download code analysis probe** to download the probe.
 
@@ -126,7 +126,7 @@ Depending on your authentication method, the interface might differ slightly fro
 
 1. Fill in your LifeTime environment address, or confirm it is correct in case it's already pre-filled. Follow the procedure shown in AI Mentor Studio to install the LifeTime probe:
 
-    ![Install the LifeTime probe](images/install-lifetime-probe-ams.png)
+    ![Instructions for downloading and installing the LifeTime probe in AI Mentor Studio](images/install-lifetime-probe-ams.png "Installing LifeTime Probe in AI Mentor Studio")
 
     1. Select **Download LifeTime probe** to download the probe.
 
@@ -138,7 +138,7 @@ Depending on your authentication method, the interface might differ slightly fro
 
 1. Configure the **code analysis probe** by selecting the development environment as the **Target environment**. 
 
-    ![Configure the Code analysis](images/setup-probe-environment-lt.png)
+    ![Configuring the target environment for the code analysis probe in LifeTime](images/setup-probe-environment-lt.png "Setting Up Probe Environment in LifeTime")
 
     <div class="info" markdown="1">
 
@@ -156,7 +156,7 @@ Depending on your authentication method, the interface might differ slightly fro
 
     1. If you agree with the privacy policy, select the checkbox and then select **Agree and continue**.
 
-    ![Accept privacy policy](images/privacy-policy-ams.png)
+    ![Privacy policy agreement screen in AI Mentor Studio](images/privacy-policy-ams.png "AI Mentor Studio Privacy Policy")
 
 After completing these steps, you can see your infrastructure listed, but it may take up to 12 hours for your apps to appear in AI Mentor Studio.
 
@@ -176,7 +176,7 @@ If you log in with your **OutSystems account**, follow these steps to associate 
 
 1. Select **Plugins** \> **AI Mentor Studio**.
 
-    ![Select AI Mentor Studio plugin](images/select-plugin-lt.png)
+    ![Navigating to the AI Mentor Studio plugin in the LifeTime application](images/select-plugin-lt.png "Selecting AI Mentor Studio Plugin in LifeTime")
 
     <div class="info" markdown="1">
 
@@ -186,7 +186,7 @@ If you log in with your **OutSystems account**, follow these steps to associate 
 
 1. Select **Go to AI Mentor Studio**.
 
-    ![Setup AI Mentor Studio plugin](images/go-to-ai-mentor-studio-lt.png)
+    ![Button to go to AI Mentor Studio from the LifeTime application](images/go-to-ai-mentor-studio-lt.png "Accessing AI Mentor Studio from LifeTime")
 
 1. After being redirected to AI Mentor Studio:
 
@@ -200,7 +200,7 @@ If you log in with your **IT user account**, follow these steps to associate you
 
 1. After logging into AI Mentor Studio:
 
-    ![Accept privacy policy](images/privacy-policy-ams.png)
+    ![Privacy policy agreement screen in AI Mentor Studio](images/privacy-policy-ams.png "AI Mentor Studio Privacy Policy")
 
     1. Check the **Installation details** and read the **privacy policy** carefully.
 

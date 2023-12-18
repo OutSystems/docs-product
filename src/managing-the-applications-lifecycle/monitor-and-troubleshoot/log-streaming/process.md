@@ -15,7 +15,7 @@ With log streaming, you can stream your application and platform logs in OpenTel
 
 Following is an overview of the process for streaming log data to different APM tools:
 
-![Log streaming process flow diagram](images/log-streaming-process-flow-diag.png)
+![Diagram illustrating the process flow for streaming log data to APM tools](images/log-streaming-process-flow-diag.png "Log Streaming Process Flow Diagram")
 
 <div class="info" markdown="1">
 

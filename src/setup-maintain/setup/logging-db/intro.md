@@ -22,7 +22,7 @@ Despite their importance, collecting those logs must be done in a way that does 
 
 Each OutSystems 11 application now writes its own log entries using an internal logging API, making sure that user requests are not blocked while these logs are being written. This logging API collects log information produced by the application and sends it to the log database.
 
-![Log Architecture overview](<images/logs-architecture-overview-diag.png>)
+![Diagram illustrating the architecture of log data separation in OutSystems 11, showing how each application writes its own log entries to a separate log database.](images/logs-architecture-overview-diag.png "OutSystems Logs Architecture Overview")
 
 ## Accessing log data
 

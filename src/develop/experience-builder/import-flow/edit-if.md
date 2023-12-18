@@ -19,29 +19,29 @@ After importing flows into Experience Builder, you can edit them. The way you ed
 
 1. Log into Experience Builder and click the **Flows** tab.
 
-    ![Click the Flows tab](images/flows-tab-eb.png)
+    ![Screenshot of the Flows tab in Experience Builder interface](images/flows-tab-eb.png "Flows Tab in Experience Builder")
 
 1. Locate the imported flow you want to edit and from the contextual menu, select **Edit flow**.
 
-    ![Click the Edit option in the contextual menu](images/edit-flow-eb.png)
+    ![Contextual menu in Experience Builder showing the 'Edit flow' option](images/edit-flow-eb.png "Edit Flow Option")
 
 1. Edit the flow display name,  flow category, and tags and then click the **Next: edit screens** button.
 
-    ![Editing flow metadata](images/edit-wizard-flow-metadata-eb.png)
+    ![Editing flow metadata such as display name, category, and tags in Experience Builder](images/edit-wizard-flow-metadata-eb.png "Edit Flow Metadata Wizard")
 
 1. Edit the screen's display name, **Has menu?** property, screen image, and reposition the exit points and then, click the **Next: review flows** button.
 
-    ![Edit data in the import form](images/set-additional-data-eb.png)
+    ![Interface for setting additional data for screens including display name, menu property, and image](images/set-additional-data-eb.png "Set Additional Data for Screens")
 
 1. Check your changes and click the **Next: manage update** button.
 
-    ![Reviewing changes getting applied](images/edit-wizard-review-eb.png)
+    ![Reviewing edited flow details in Experience Builder before managing updates](images/edit-wizard-review-eb.png "Review Edited Flow")
 
 1. Review which apps will be affected by this change and then click the **Save** button. 
 
     All apps that use any re-imported flows are moved to Draft. This allows you to review them again before re-publishing them.
 
-    ![A list of apps affected by the edition](images/edit-wizard-manage-update-eb.png)
+    ![Managing update process in Experience Builder showing affected apps](images/edit-wizard-manage-update-eb.png "Manage Update Wizard")
 
 ## Reimporting a flow
 
@@ -49,38 +49,38 @@ To reimport a flow, you must reimport the entire template module that contains i
 
 1. Log into Experience Builder and click the **Flows** tab.
 
-    ![Click the Flows tab](images/flows-tab-eb.png)
+    ![Screenshot of the Flows tab in Experience Builder interface](images/flows-tab-eb.png "Flows Tab in Experience Builder")
 
 1. Click the **Import Flow** button.
 
-    ![Import a flow](images/import-flows-button-eb.png)
+    ![Import Flow button in Experience Builder to start the flow import process](images/import-flows-button-eb.png "Import Flows Button")
 
 1. Select the **I have already created my Experience Builder template** checkbox and then click the **Next: select template** button.
 
-      ![Select checkbox click Next](images/module-template-created-eb.png)
+      ![Checkbox for confirming the creation of an Experience Builder template module](images/module-template-created-eb.png "Module Template Created Checkbox")
 
 1. From the list of modules, select the one that contains the flow template you want to update and click the **Next: validate template** button.
 
-    ![Select templates module](images/select-application-eb.png)
+    ![Selecting an application module from a list in Experience Builder](images/select-application-eb.png "Select Application Module")
 
 1. Analyze the validation process feedback messages. Your module needs to be re-validated to check if it still complies with Experience Builder guidelines.
 
     If there are no blocking errors, click the **Next: define flows** button to continue the importing process.
 
-    ![Analyze validation result](images/check-validation-eb.png)
+    ![Validation feedback messages during the module reimport process in Experience Builder](images/check-validation-eb.png "Check Module Validation")
 
 1. Edit flow data according to the [metadata reference](metadata-if.md) document. Then, click the **Next: define screens** button.
 
-    ![Edit flow data in the import form](images/eb-reimport-flow.png)
+    ![Editing flow data during the reimport process in Experience Builder](images/eb-reimport-flow.png "Reimport Flow Data Editing")
 
 1. Edit the screen data according to the [metadata reference](metadata-if.md) document and then click the **Next: review flow** button..
 
-    ![Edit screens data in the import form](images/reimport-screen-eb.png)
+    ![Editing screen data during the flow reimport process in Experience Builder](images/reimport-screen-eb.png "Reimport Screen Data Editing")
 
  1. Review all of the flows and screens. Ensure that all of the names and images are in place and that the screens inside each flow are in the correct order. Then click the **Next: Manage update** button.
 
-    ![Review data getting imported](images/reimport-review-eb.png)
+    ![Reviewing reimported flows and screens in Experience Builder](images/reimport-review-eb.png "Review Reimported Flow")
 
 1. Review which apps will be affected by this change and then click the **Save** button. All apps that use any re-imported flows are moved to Draft. This allows you to review them again before re-publishing them.
 
-    ![A list of apps affected by the edition](images/edit-wizard-manage-update-eb.png)
+    ![Managing update process in Experience Builder showing affected apps](images/edit-wizard-manage-update-eb.png "Manage Update Wizard")

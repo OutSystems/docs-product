@@ -19,7 +19,7 @@ IP-level Attack
 :   The attacker has a list of users and tries to guess their passwords from a specific IP address. In this case, the attacker IP address is blocked.  
     By blocking the IP address, the platform won't also allow the attacker to go through all users and flood the application with requests, which could also lead to a denial-of-service (DoS) attack.
 
-![](images/protection-against-brute-force-attacks-0.png)
+![Diagram illustrating the protection mechanism against brute force attacks at user and IP levels](images/protection-against-brute-force-attacks-0.png "Brute Force Attack Protection Mechanism")
 
 ## How the Protection Works
 
@@ -122,7 +122,7 @@ To unblock IP addresses in Service Center, do the following:
 
 The environment management console (Service Center) provides logs with information that can be used to monitor possible brute force attacks.
 
-![](images/protection-against-brute-force-attacks-1.png)
+![Flowchart showing the two-step backoff mechanism for brute force protection](images/protection-against-brute-force-attacks-1.png "Brute Force Protection Countermeasures")
 
 To access the log, proceed as follows:
 
@@ -132,7 +132,7 @@ To access the log, proceed as follows:
 
 When a user or IP address is blocked due to a possible brute force attack, the information is displayed in the following format:
 
-![](images/protection-against-brute-force-attacks-2.png)
+![Example of a log entry for a blocked user or IP address due to a brute force attack](images/protection-against-brute-force-attacks-2.png "Blocked User or IP Address Log Entry")
 
 * The timestamp of the login attempt
 * The user who did the login attempt
@@ -143,7 +143,7 @@ When a user or IP address is blocked due to a possible brute force attack, the i
 
 If a failed login attempt does not configure an attack, the information is displayed as follows:
 
-![](images/protection-against-brute-force-attacks-3.png)
+![Example of a log entry for a failed login attempt that does not configure an attack](images/protection-against-brute-force-attacks-3.png "Failed Login Attempt Log Entry")
 
 * The timestamp of the login attempt
 * The user who did the login attempt
@@ -191,7 +191,7 @@ To configure the brute force protection for IT users, do the following in **all 
 
 1. Go to the Factory Configuration application (`https://<environment_name>/FactoryConfiguration`) and change the Brute Force Protection settings.
     
-    ![](images/protection-against-brute-force-attacks-4.png)
+    ![Screenshot of the Brute Force Protection settings in the Factory Configuration application](images/protection-against-brute-force-attacks-4.png "Brute Force Protection Settings in Factory Configuration")
 
 1. Click the **Apply** button.
 

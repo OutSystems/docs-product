@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](<images/modal-5-diag.png>)
+![Diagram illustrating the layout and classes of a Modal component in Traditional Web Apps](images/modal-5-diag.png "Modal Layout and Classes Diagram")
 
 ## Advanced use case
 

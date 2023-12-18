@@ -28,11 +28,11 @@ To add a new language and translate your app, do the following in Service Studio
 
 1. Go to the **Data** tab and right-click on the **Multilingual Locales**. Then, select **Add Locale**. The **Select Locale** window opens.
 
-    ![Add new language for translation](images/add-new-language-translation-ss.png)
+    ![Screenshot showing how to add a new language for translation in Service Studio](images/add-new-language-translation-ss.png "Adding a New Language in Service Studio")
 
 2. Select a locale and then click **OK** to open the **translations editor**.
 
-    ![Select new language](images/select-new-language-ss.png)
+    ![Screenshot of the Select Locale window in Service Studio for choosing a new language](images/select-new-language-ss.png "Selecting a New Language")
 
     <div class="info" markdown="1">
 
@@ -42,13 +42,13 @@ To add a new language and translate your app, do the following in Service Studio
 
 3. In the translations editor, select the **Translate** option in the behavior list to see all text that needs translation.
 
-    ![Shows text that needs translation](images/show-translatable-text-ss.png)
+    ![Screenshot displaying text that needs translation in the Service Studio translations editor](images/show-translatable-text-ss.png "Translatable Text in Service Studio")
 
     See [Translating with the translation editor](translation-editor.md) for more information on how to use the editor.
 
 4. Translate the text in the **Translation in (language code)** column. Click **Done** when you are finished.
 
-    ![Translation in the translation editor](images/enter-translation-ss.png)
+    ![Screenshot of the translation editor in Service Studio with a column for entering translations](images/enter-translation-ss.png "Entering Translations in Service Studio")
     
 After you finish translating the text in your app, you then need to create a language switcher to show the available translations.
 
@@ -64,23 +64,23 @@ A language switcher lets your users change the language of the app. To create a 
 
 1. Drag a Link widget to a screen and enter the language name in the **Text** part of the **Link**. 
 
-    ![Link with a language name](images/link-with-language-name-ss.png)
+    ![Screenshot showing a Link widget with a language name in Service Studio](images/link-with-language-name-ss.png "Link Widget with Language Name")
 
     The example shows how to use the Link widget to change the app language. You can create the same action with other widgets, including Button and Dropdown.
 
 2. Select the Link widget to view its properties. In the **On Click** list, select **New Client Action**. New Client Action opens for editing.
 
-    ![New client action from the list](images/new-client-action-for-link-ss.png)
+    ![Screenshot of Service Studio showing how to create a new client action for a language switcher link](images/new-client-action-for-link-ss.png "Creating a New Client Action for a Link")
 
 3. With the logic editor open, go to the **Logic** tab and expand the **(System)** section in **Client Actions**. Locate the **SetCurrentLocale** client action and drag it to the logic flow.
 
-    ![SetCurrentLocale in the Logic tab](images/client-action-in-logic-tab.png)
+    ![Screenshot of the Logic tab in Service Studio with the SetCurrentLocale client action highlighted](images/client-action-in-logic-tab.png "SetCurrentLocale Client Action in Logic Tab")
 
     <div class="info" markdown="1">
 
     If you can't find the **SetCurrentLocale Client Action**, you need to reference it first. Press **Ctrl+Q** to open the **Manage Dependencies** window and select **(System)**. In the right pane under **Client Actions**, select **SetCurrentLocale** and click **Apply** to confirm. You can now use **SetCurrentLocale Client Action** in your app logic.
 
-    ![SetCurrentLocale Client Action in Manage Dependencies](images/set-current-locale-in-manage-dependencies.png)
+    ![Screenshot showing the SetCurrentLocale client action in the Manage Dependencies window of Service Studio](images/set-current-locale-in-manage-dependencies.png "SetCurrentLocale in Manage Dependencies")
 
     </div>
 
@@ -92,7 +92,7 @@ A language switcher lets your users change the language of the app. To create a 
 
 4. In the **SetCurrentLocale Client Action**, enter the code of the language (for example, `"pt-BR"`) in the **Locale** property.
 
-    ![SetCurrentLocale and the Locale property](images/locale-in-client-action.png)
+    ![Screenshot of the SetCurrentLocale client action in Service Studio with the Locale property field highlighted](images/locale-in-client-action.png "Locale Property in SetCurrentLocale Client Action")
 
     <div class="info" markdown="1">
 
@@ -110,7 +110,7 @@ Use the [translation editor](translation-editor.md) to edit existing translation
 
 You can get information about the current language with the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction-environment.md#GetCurrentLocale>).
 
-![GetCurrentLocale function in the expression editor](images/get-current-locale-language-ss.png)
+![Screenshot showing the GetCurrentLocale function in Service Studio](images/get-current-locale-language-ss.png "GetCurrentLocale Function in Service Studio")
 
 ## Working with Static Entities
 
@@ -118,11 +118,11 @@ Follow these steps to translate the text in Static Entities and show the transla
 
 1. In the [translation editor](translation-editor.md), search for the text you want to translate and set **Behavior** to **Translate**.
 
-    ![Translation editor](images/static-entity-search-ss.png)
+    ![Screenshot of the translation editor in Service Studio with a search for Static Entity text](images/static-entity-search-ss.png "Static Entity Search in Translation Editor")
 
 2. While still in the translation editor, enter the translation in the **Translation in (language code)** cell and click **Done**.
 
-    ![Translation editor](images/static-entity-translate-ss.png)
+    ![Screenshot of the translation editor in Service Studio showing the translation process for a Static Entity](images/static-entity-translate-ss.png "Translating Static Entity in Translation Editor")
     
     <div class="info" markdown="1">
 
@@ -133,7 +133,7 @@ Follow these steps to translate the text in Static Entities and show the transla
 
 3. In the logic, to switch the locale, add **Refresh Data** just after the **SetCurrentLocale** action and select the Static Entity.
 
-    ![Refresh of Static Entity](images/static-entity-refresh-ss.png)
+    ![Screenshot showing the Refresh Data action for a Static Entity in Service Studio](images/static-entity-refresh-ss.png "Refreshing Static Entity Data")
 
 ## Switching back to the default language
 

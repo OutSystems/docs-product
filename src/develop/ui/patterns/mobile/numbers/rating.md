@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Rating UI Pattern to allow users rate, for example, products and services.
 
-![Example of Rating pattern](<images/rating-example-ss.png>)
+![Screenshot showing an example of the Rating UI Pattern in use](images/rating-example-ss.png "Rating Example Screenshot")
 
 **How to use the Rating UI Pattern**
 
@@ -26,7 +26,7 @@ You can use the Rating UI Pattern to allow users rate, for example, products and
 
     The Rating widget is displayed.
 
-    ![Rating widget](<images/rating-widget-ss.png>)
+    ![Screenshot of the Rating widget in the Service Studio toolbox](images/rating-widget-ss.png "Rating Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,17 +40,17 @@ You can use the Rating UI Pattern to allow users rate, for example, products and
 
 1. From the Toolbox, drag the **Rating** widget into the Main Content area of your application's screen.
 
-    ![Drag widget onto the screen](<images/rating-dragwidget-ss.png>)
+    ![Screenshot illustrating how to drag the Rating widget onto the application screen](images/rating-dragwidget-ss.png "Dragging the Rating Widget")
 
     By default, the pattern is already prepared to work as a 5-Star rating pattern. However, you can change the icons to hearts, smiles, thumbs, or any other content.
 
 1. On the **Properties** tab, from the **RatingValue** dropdown, enter the rating number you want displayed. In this example, we enter `3`.  
     
-    ![Set the Rating Value property](<images/rating-value-ss.png>)
+    ![Screenshot showing the RatingValue property being set to 3 in the properties tab](images/rating-value-ss.png "Setting the Rating Value Property")
 
 1. You can customize the Rating's look and feel by setting any of the optional properties.
 
-    ![Set additional properties](<images/rating-properties-ss.png>)
+    ![Screenshot displaying the customization options for the Rating's look and feel in the properties tab](images/rating-properties-ss.png "Rating Properties Customization")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

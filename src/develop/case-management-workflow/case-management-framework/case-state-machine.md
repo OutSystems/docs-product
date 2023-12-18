@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 A case state machine defines what transitions between case statuses are allowed. For example, you can use the case state machine to allow a case status change from "Under Analysis" to "Resolved", but not from "Submitted" to "Open".
 
-![transistions](images/cmf-allowed-transitions-diag.png?width=750)
+![Diagram illustrating allowed transitions between case statuses in a case state machine](images/cmf-allowed-transitions-diag.png "Allowed Case Status Transitions Diagram")
 
 A case state machine is important when status updates aren't done programmatically, and the end user of the app can choose between the different possible status.
 
@@ -37,7 +37,7 @@ To define a case state machine, follow these steps:
     
     * `IsActive`, with boolean data type.
 
-    ![CaseStateMachineConfiguration Static Entity](images/case-st-mac-csmcstatic-ss.png)
+    ![Screenshot of the CaseStateMachineConfiguration static entity with attributes in the development environment](images/case-st-mac-csmcstatic-ss.png "CaseStateMachineConfiguration Static Entity")
 
 1. In the **Logic** tab, open the **Timer_SetupApplication** server action.
 
@@ -58,7 +58,7 @@ To define a case state machine, follow these steps:
     * Set **CaseStatusId** as `TextToIdentifier(FromCaseStatusId)`.
     * Set **NextCaseStatusId** as `TextToIdentifier(ToCaseStatusId)`.
 
-![CaseStateMachine_GetByTransition](images/case-st-mac-csmgetbytran-ss.png)
+![Screenshot showing the CaseStateMachine GetByTransition action in the development environment](images/case-st-mac-csmgetbytran-ss.png "CaseStateMachine GetByTransition Action")
 
 1. Add a [**CaseStateMachine_CreateOrUpdate**](ref/auto/CaseConfigurations_API.final.md#CaseStateMachine_CreateOrUpdate) action next to the **CaseStateMachine_GetByTransition**, and connect the **CaseStateMachine_GetByTransition** to the **CaseStateMachine_CreateOrUpdate** action.
 
@@ -73,7 +73,7 @@ To define a case state machine, follow these steps:
     * Set **NextCaseStatusId** as `TextToIdentifier(GetCaseStateMachineConfigurations.List.Current.CaseStateMachineConfiguration.ToCaseStatusId)`.
     * Set **IsActive** as `GetCaseStateMachineConfigurations.List.Current.CaseStateMachineConfiguration.IsActive`.
 
-![CaseStateMachine_CreateOrUpdate](images/case-st-mac-csmcreateorup-ss.png)
+![Screenshot displaying the CaseStateMachine CreateOrUpdate action with expanded inputs in the development environment](images/case-st-mac-csmcreateorup-ss.png "CaseStateMachine CreateOrUpdate Action")
 
 1. Publish the module by selecting **1-Click Publish**.
 

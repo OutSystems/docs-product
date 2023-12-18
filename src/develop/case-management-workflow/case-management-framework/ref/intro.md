@@ -14,7 +14,7 @@ The Case Management framework accelerates the creation of custom-fit business pr
 
 ## Framework architecture
 
-![Case Management framework architecture](images/cmf-archi.png)
+![Diagram illustrating the architecture of the Case Management framework, including API modules, Business Logic modules, and Core Services modules](images/cmf-archi.png "Case Management Framework Architecture")
 
 The **API modules** include the actions that you can use in your applications:
 

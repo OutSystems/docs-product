@@ -65,7 +65,7 @@ Do the following:
 
     **Note:** The Users app requires SAML assertions to be **signed**. Make sure you activate the assertion signing setting in your Identity Provider.
 
-    ![Accept Only Signed Login Responses option in Configure Authentication](images/saml-option-signed-login-responses.png)
+    ![Screenshot of the 'Accept Only Signed Login Responses' option in the OutSystems Users application configuration](images/saml-option-signed-login-responses.png "Accept Only Signed Login Responses option in Configure Authentication")
 
 **Tip:** To speed up configuration, and if your Identity Provider (IdP) has this feature, you can export a Service Provider (SP) metadata XML file in the Users application to import it in your IdP.  
 Similarly, you can import a Federation metadata XML file containing the IdP Server Settings in the Users application if your IdP has the option to export this metadata file.
@@ -132,7 +132,7 @@ _Known limitation:_ In Azure AD, group names received from the Identity Provider
 
 The SAML Message Logs page is very useful when troubleshooting SAML configuration or authentication issues. It's available from the right sidebar by clicking "SAML Message Logs".
 
-![SAML Message Logs page](images/saml-message-logs.png?width=800)
+![Screenshot showing the SAML Message Logs page in the OutSystems platform](images/saml-message-logs.png "SAML Message Logs")
 
 These logs are available for 7 days by default. You can customize this retention period using the `DeleteSAMLLogsOlderThen` multi-tenant Site Property of the Users module.
 

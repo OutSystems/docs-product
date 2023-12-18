@@ -4,8 +4,8 @@ guid: 597ab495-4b31-4d7f-8c36-a8998c5d4070
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6407
+summary: The article details how OutSystems Integration Builder generates integrations with library and service modules to interact with external systems, including CRUD operations, filtering, ordering, pagination, and advanced customization options
 ---
-
 # Structure of generated integrations
 
 Integration Builder generates and publishes integrations, which are OutSystems applications composed of two modules:
@@ -79,7 +79,7 @@ BasicFilters (List of BasicFilter)
     FilterOperator = `Entities.FilterOperator.StartsWith_CaseInsensitive`  
     Value = `"john"`
 
-    ![Properties of a Server Action using BasicFilters](images/basicfilters-example-ss.png)
+    ![Screenshot showing an example of basic filters setup in OutSystems Integration Builder](images/basicfilters-example-ss.png "Example of Basic Filters in Integration Builder")
 
     <div class="info" markdown="1">
 
@@ -110,7 +110,7 @@ BasicOrderBy (List of OrderBy)
     EntityAttribute = `Entities.ACustomersAttributes.CustomerName`  
     Direction = `Entities.SortDirection.Ascending`
 
-    ![Properties of a Server Action using BasicOrderBy](images/basicorderby-example-ss.png)
+    ![Screenshot illustrating an example of basic ordering setup in OutSystems Integration Builder](images/basicorderby-example-ss.png "Example of Basic OrderBy in Integration Builder")
 
     <div class="info" markdown="1">
     

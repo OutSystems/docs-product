@@ -61,6 +61,6 @@ Solution
 
     1. In the Widget Tree, select the container in the **Content** placeholder, and add the `login-screen` class to the **Style Classes** property.
 
-    ![Add the "login-screen" class to the login screen container](images/faq-login-add-class-ss.png)
+    ![Screenshot showing how to add the login-screen class to the Content placeholder in Service Studio](images/faq-login-add-class-ss.png "Adding login-screen class in Service Studio")
 
     After these steps publish your app.

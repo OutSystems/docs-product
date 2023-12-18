@@ -32,7 +32,7 @@ If you have more than one Theme in your module, you can change the default modul
 
 3. In the **Default Theme** list select your Theme.
 
-    ![Module properties and Theme](images/module-theme-ss.png?width=300)
+    ![Screenshot showing how to set the default module Theme in Service Studio](images/module-theme-ss.png "Module Properties and Theme Selection")
 
 ## Creating a Theme without styles
 
@@ -44,7 +44,7 @@ It's possible to create a Theme without any styles. Follow these steps in Servic
 
 3. In the **Base Theme** property list of the new Theme select **(None)**.
     
-    ![A Theme with no base Theme](images/creating-blank-theme-ss.png?width=300)
+    ![Steps to create a Theme without styles in Service Studio](images/creating-blank-theme-ss.png "Creating a Blank Theme in Service Studio")
 
 4. Optionally, go to **Interface** > **UI Flows**, select a UI Flow and in the properties select you blank Theme **Theme** list. This makes all elements under the UI Flow to use the blank Theme. 
 
@@ -64,7 +64,7 @@ The Themes in the OutSystems UI framework follow a structure based on the Screen
 
 The following diagram shows how a new Theme inherits the layout from the base Theme, and how the platform uses the Blocks and Placeholders to generate a page. The main layout has Placeholders whose content are Blocks (the Header placeholder is replaced by the content generated in the Header block). The CSS is also inherited from the base Theme, but can be overridden by the application CSS.
 
-![](images/themes-concept.png?width=500)
+![Diagram illustrating the structure of an OutSystems UI Theme with Blocks and Placeholders](images/themes-concept.png "OutSystems UI Theme Structure")
 
 ## Blocks
 
@@ -280,4 +280,4 @@ Menu items in web can be created automatically by drag and drop. If you want to 
 
 Here is an example of blocks for a web Theme and their placeholders:
 
-![](images/theme-layout.png?width=300)
+![Example of blocks and placeholders in a web Theme for OutSystems](images/theme-layout.png "Web Theme Blocks and Placeholders")

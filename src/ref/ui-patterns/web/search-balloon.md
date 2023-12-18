@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![](images/searchballoon-2-diag.png?width=800)
+![Diagram illustrating the layout and classes of the Search Balloon UI Pattern](images/searchballoon-2-diag.png "Search Balloon Layout Diagram")
 
 ## Events
 
@@ -43,6 +43,6 @@ Here are some more advanced use-cases of the widget.
 1. On the AdvancedFormat parameter add the following line:  
 `{ showOnInit: true }`.
 
-![](images/searchballoon-1-ss.gif?width=800)
+![Animated GIF showing the Search Balloon widget initialization with results displayed](images/searchballoon-1-ss.gif "Search Balloon Initialization")
 
-![](images/searchballoon-2-ss.gif?width=800)
+![Animated GIF demonstrating the change in animation of the Search Balloon widget's results](images/searchballoon-2-ss.gif "Search Balloon Animation Change")

@@ -47,7 +47,7 @@ logic is the following:
 
 The implemented flow looks like the following:
 
-![GetCurrentLocation final flow](images/ai-action-final-flow-ss.png)
+![Screenshot of the final Client Action flow in Service Studio](images/ai-action-final-flow-ss.png "Final Client Action Flow")
 
 Follow the steps presented in the next sections to create the logic flow using
 Code Mentor assisted development.
@@ -87,7 +87,7 @@ Code Mentor assisted development.
 The resulting Client Action and output parameter should look like the
 following:
 
-![Elements tree showing the new GetCurrentLocation Client Action](images/ai-action-client-action-ss.png)
+![Screenshot showing the Client Action and output parameter setup in Service Studio](images/ai-action-client-action-ss.png "Client Action and Output Parameter")
 
 <div class="info" markdown="1">
 
@@ -110,7 +110,7 @@ suggestions.
    a new **If** element and some stars pop, meaning that Service Studio filled
    in some properties of the new element for you.
 
-    ![Accept first flow suggestions from Code Mentor](images/ai-action-01-check-location-ss.gif)
+    ![Animated GIF demonstrating the selection of Code Mentor suggestions for checking location plugin availability](images/ai-action-01-check-location-ss.gif "Code Mentor Suggestion for Location Check")
 
 1. Right-click **Check if CheckLocationPlugin IsAvailable** and select **Swap
    Connectors**.
@@ -137,7 +137,7 @@ suggestions.
 
 1. Select **End flow** from the suggestions.
 
-    ![Show message when the plugin isn't available and end the flow](images/ai-action-02-no-plugin-branch-ss.gif)
+    ![Animated GIF showing the flow for handling the scenario where the location plugin is not available](images/ai-action-02-no-plugin-branch-ss.gif "Handling No Plugin Available Scenario")
 
 1. Click the AI radar between **Check if CheckLocationPlugin IsAvailable** and
    **End** and select **Call GetLocation**. Some more suggestions appear for
@@ -159,7 +159,7 @@ suggestions.
 
 1. Select **End flow**.
 
-    ![Get location from the plugin and handle any errors](images/ai-action-03-get-location-ss.gif)
+    ![Animated GIF illustrating the logic flow for getting the location using the location plugin](images/ai-action-03-get-location-ss.gif "Get Location Logic Flow")
 
 1. Click the AI radar between **Check if GetLocation Success** and the **End**
    element.
@@ -167,7 +167,7 @@ suggestions.
 1. Select **Set Location to GetLocation.Location** from the suggestions. Some
    stars pop again.
 
-    ![Assign obtained location to output parameter](images/ai-action-04-set-location-ss.gif)
+    ![Animated GIF showing the process of setting the obtained location to the output parameter](images/ai-action-04-set-location-ss.gif "Setting Location to Output Parameter")
 
 1. Fill in the error messages in the **Message** elements, if you haven't done
    it yet.

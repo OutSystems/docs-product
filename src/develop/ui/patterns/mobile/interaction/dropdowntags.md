@@ -34,7 +34,7 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
     The Dropdown Tags widget is displayed.
 
-    ![Dropdown Tag widget](<images/dropdowntags-widget-ss.png>)
+    ![Screenshot of the Dropdown Tags widget in the Service Studio toolbox](images/dropdowntags-widget-ss.png "Dropdown Tags Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -48,7 +48,7 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
 1. From the Toolbox, drag the Dropdown Search widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](<images/dropdowntags-drag-ss.png>)
+    ![Dragging the Dropdown Tags widget from the toolbox into the main content area of an application screen](images/dropdowntags-drag-ss.png "Dragging Dropdown Tags Widget to Screen")
 
 1. Select and right-click your screen name, and select **Fetch Data from Database**.
 
@@ -56,19 +56,19 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
     In this example, the **Sample_Employee** entity is selected. 
 
-    ![Select database entity](<images/dropdowntags-source-ss.png>)
+    ![Selecting the Sample_Employee database entity for the Dropdown Tags widget](images/dropdowntags-source-ss.png "Selecting Database Entity for Dropdown Tags")
 
     The **GetEmployees** aggregate is automatically created.
 
-    ![Aggregate automatically created](<images/dropdowntags-aggregate-ss.png>)
+    ![GetEmployees aggregate automatically created after selecting a database entity for Dropdown Tags](images/dropdowntags-aggregate-ss.png "Automatically Created Aggregate for Dropdown Tags")
 
 1. Return to your screen by double-clicking the screen name, select the **Dropdown Tags** widget, and on the **Properties** tab, set the mandatory properties (**ItemList**, **Value**, **Text**).
 
-    ![Set mandatory properties](<images/dropdowntags-mandprops-ss.png>)
+    ![Setting the ItemList, Value, and Text mandatory properties for the Dropdown Tags widget](images/dropdowntags-mandprops-ss.png "Setting Mandatory Properties for Dropdown Tags")
 
 1. Staying on the **Properties** tab, from the **Handler** dropdown, select **New Client Action**.
 
-    ![Create new client action](<images/dropdowntags-handler-ss.png>)
+    ![Creating a new client action for the Dropdown Tags widget from the properties tab](images/dropdowntags-handler-ss.png "Creating New Client Action for Dropdown Tags")
 
 1. Add the relevant logic to the client action. 
 
@@ -83,15 +83,15 @@ In this example, we create a dropdown tags search for a list of employees and a 
     
         This displays the number of selected items selected.
 
-        ![Add logic](<images/dropdowntags-message-ss.png>)
+        ![Adding logic to display the number of selected items in the Dropdown Tags client action](images/dropdowntags-message-ss.png "Adding Logic to Client Action in Dropdown Tags")
 
 1. You can configure the Dropdown Tags by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 
-    ![Set properties](<images/dropdowntags-properties-ss.png>)
+    ![Setting optional properties for the Dropdown Tags widget in the properties tab](images/dropdowntags-properties-ss.png "Configuring Optional Properties for Dropdown Tags")
 
 After following these steps and publishing the module, you can test the pattern in your app. The result of this example should look something like the following:
 
-![Dropdown Tag result](<images/dropdowntags-result.png>)
+![Final result showing the Dropdown Tags UI pattern in use within an application](images/dropdowntags-result.png "Result of Configured Dropdown Tags")
 
 ## Properties
 

@@ -5,8 +5,8 @@ guid: ad3eafdc-ad10-415d-bcd6-21a2ef277cd1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A33&mode=design&t=8a1ub9syb4QKHbuk-1
+summary: The article provides a step-by-step guide on how to expose a SOAP Web Service, including setting properties, adding methods, and publishing the module
 ---
-
 # Expose a SOAP Web Service
 
 To expose a SOAP Web Service, do the following:
@@ -15,7 +15,7 @@ To expose a SOAP Web Service, do the following:
 
 1. Right-click the SOAP element and select **Expose SOAP Web Service**. 
 
-    ![Add expose SOAP web service](images/soap-expose-add-web-service.png) 
+    ![Screenshot showing the option to expose a SOAP Web Service in the Integrations folder](images/soap-expose-add-web-service.png "Expose SOAP Web Service") 
 
 1. Set the name of your SOAP Web Service and the remaining properties. 
 
@@ -23,7 +23,7 @@ To expose a SOAP Web Service, do the following:
 
 1. Right-click your new SOAP Web Service and select **Add Web Service Method**. 
 
-    ![Add web service method](images/soap-add-method-ss.png)
+    ![Screenshot demonstrating how to add a new Web Service Method to a SOAP Web Service](images/soap-add-method-ss.png "Add Web Service Method")
 
 1. Set the name of your method. 
 

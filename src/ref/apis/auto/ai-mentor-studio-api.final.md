@@ -580,7 +580,7 @@ To authenticate your API requests, follow the guidelines in the [AI Mentor Studi
 
 You can access the **Swagger file** from the [AI Mentor Studio API page](https://aimentorstudio.outsystems.com/AIMentorStudioAPI/rest/V1/):
 
-![AI Mentor Studio API page, where you can download the swagger by clicking **swagger.json**.](images/api-swagger-aims.png) 
+![Screenshot of the AI Mentor Studio API Swagger interface showing available endpoints](images/api-swagger-aims.png "AI Mentor Studio API Swagger Interface") 
 
 <div class="container">
 <h1>V1</h1>

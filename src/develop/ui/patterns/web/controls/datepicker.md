@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Date Picker UI Pattern to allow the user to select a single or a range of dates using a calendar.
 
-![](<images/datepicker-image-13.png>)
+![Illustration of the Date Picker UI Pattern in a Traditional Web App](images/datepicker-image-13.png "Date Picker UI Pattern")
 
 **How to use the Date Picker UI Pattern**
 
@@ -38,27 +38,27 @@ You can use the Date Picker UI Pattern to allow the user to select a single or a
 
 1. On the **Properties** tab, enter the Input **Name**. In this example we call it **datepicker**. 
 
-    ![](<images/datepicker-image-14.png>)
+    ![Screenshot showing where to enter the Input Name for the Date Picker](images/datepicker-image-14.png "Setting the Input Name")
 
 1. From the **Variable** drop-down, select **New Local Variable**.
 
 1. On the properties tab, set the Variable **Data Type** to **Date**.
 
-    ![](<images/datepicker-image-16.png>)
+    ![Screenshot demonstrating how to set the Variable Data Type to Date for the Date Picker](images/datepicker-image-16.png "Setting the Variable Data Type")
  
 1. From the Toolbox, drag the Date Picker widget into the Main Content area of your application's screen.
 
 1. Set the **InputWidgetId** to the input Id. 
 
-    ![](<images/datepicker-image-2.png>)
+    ![Screenshot showing how to set the InputWidgetId for the Date Picker widget](images/datepicker-image-2.png "Linking the Date Picker to an Input Widget")
 
 1. In the Events, create the OnClose and OnSelect events.
 
-    ![](<images/datepicker-image-7.png>)
+    ![Screenshot of the process to create OnClose and OnSelect events for the Date Picker](images/datepicker-image-7.png "Creating OnClose and OnSelect Events")
 
 1. Use the date in the input parameter in your logic.
 
-    ![](<images/datepicker-image-8.png>)
+    ![Screenshot illustrating how to use the date from the Date Picker in application logic](images/datepicker-image-8.png "Using the Date in Logic")
 
 1. Publish and test.
 
@@ -85,7 +85,7 @@ For advanced options, you can check the official documentation of the [Pikaday l
 | EventsList (DateTime List): Optional | A list of events (type Date Time) |
 | AdvancedFormatJSON (DateTime List): Optional | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: <https://github.com/dbushell/Pikaday> |
 
-![](<images/datepicker-gif-1.gif>)
+![Animated GIF demonstrating the interaction with the Date Picker UI in a Traditional Web App](images/datepicker-gif-1.gif "Date Picker Interaction")
 
 ## Device Compatibility
 

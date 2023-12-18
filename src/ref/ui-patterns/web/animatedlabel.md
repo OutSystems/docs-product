@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
   
-![](<images/animatedlabel-4-diag.png>)
+![Diagram showing the layout and classes of the Animated Label UI Pattern](images/animatedlabel-4-diag.png "Animated Label Layout Diagram")
 
 ## CSS selectors
 
@@ -40,8 +40,8 @@ Applies only to Traditional Web Apps.
 
 **Before** 
 
-![](<images/animatedlabel-5-ss.png>)
+![Screenshot of the Animated Label UI Pattern before activation](images/animatedlabel-5-ss.png "Animated Label Before Activation")
 
 **After** 
 
-![](<images/animatedlabel-6-ss.png>)
+![Screenshot of the Animated Label UI Pattern after activation, with the label positioned 50px from the top](images/animatedlabel-6-ss.png "Animated Label After Activation")

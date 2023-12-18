@@ -49,8 +49,9 @@ Action | Description
 [Security_CheckEnvironmentPermission](<#Security_CheckEnvironmentPermission>) | Checks if a user has a permission for a specific environment. If no user is specified, the current user is used.
 [Security_CheckInfrastructurePermission](<#Security_CheckInfrastructurePermission>) | Checks if a user has the 'Configure Infrastructure' permission. If no user is specified, the current user is used.
 [Security_GetApplicationsPermissions](<#Security_GetApplicationsPermissions>) | Returns the permissions the specified user has for each application in the environment. If no user is specified, the current user is used.
-[Security_GetEnvironmentsPermissions](<#Security_GetEnvironmentsPermissions>) | Returns the permissions the specified user has for each environment. If no user is specified, the current user is used.
-[SetLoginRedirectURL](<#SetLoginRedirectURL>) | 
+[Security_GetEnvironmentsPermissionsWithFlags](<#Security_GetEnvironmentsPermissionsWithFlags>) | Returns the permissions the specified user has for each environment. If no user is specified, the current user is used.
+[Security_GetEnvironmentsPermissions](<#Security_GetEnvironmentsPermissions>) | From LifeTime Management Console Release Oct.2019 CP1 onwards, this action was deprecated. Please use the new action Security_GetEnvironmentsPermissionsWithFlags, which also returns the new environment permission flags CreateApplications and AddReferencesToSystem.
+[SetLoginRedirectURL](<#SetLoginRedirectURL>) |
 
 Structure | Description
 ---|---

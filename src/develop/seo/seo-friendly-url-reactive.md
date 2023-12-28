@@ -108,7 +108,7 @@ Remember the following when working with site rules:
 
 <div class="info" markdown="1">
 
-To create and manage site rules, go to **Service Studio**.
+To create and manage custom screen URLs, go to **Service Studio**.
 
 </div>  
 

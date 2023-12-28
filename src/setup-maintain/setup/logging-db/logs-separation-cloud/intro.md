@@ -4,7 +4,7 @@ tags:
 locale: en-us
 guid: 0E0E7403-39D9-4A4A-9CF1-9B506B665F9E
 app_type: traditional web apps, mobile apps, reactive web apps
-figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2260%3A5493&mode=design&t=FmLDu71TKycbph9n-1
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2759%3A945&mode=design&t=Kg2A9ZRlEAD4nwJ1-1
 platform-version: o11
 ---
 

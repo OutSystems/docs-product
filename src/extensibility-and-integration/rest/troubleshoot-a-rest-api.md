@@ -19,19 +19,35 @@ You can configure the detail level of the logs that OutSystems keeps for each RE
 To access the logs of your REST API, do the following:
 
 1. Go to the Service Center management console of your OutSystems environment.
+
 1. Go to the **Monitoring** section and select **Integrations**.
+
 1. In **Type**, filter the logging you want to see: `REST (Consume)` or `REST (Expose)`.
+
+    ![Screenshot of error details](images/type-filter-options-sc.png "Error details")
+
 1. Click **Filter**.
+
 1. To access the details of a log entry, click on the **Detail** link (or, if there is an error, on the **Error** link).
-![Screenshot of Integrations Log](images/integrations-log-ss.png "Integrations Log")
+
+    ![Screenshot of Integrations Log](images/integrations-log-sc.png "Integrations Log")
+
 1. Under the error details, you will also find the stack trace.
-![Screenshot of error details](images/error-detail-ss.png "Error details")
+
+    ![Screenshot of error details](images/error-detail-sc.png "Error details")
 
 ## View REST API Logs directly from the database
 
 Customers with access to the database cab also query related to an action and see all related details by doing the following:
 
 1. Access the database on the selected environment.
-1. Run the following query `select * from OSLOG_INT_DETAIL where id IN (select id from OSLOG_INTEGRATION where action like '%<APIaction>%')`
+
+1. Run the following query:
+
+     ```
+     select * from OSLOG_INT_DETAIL where id IN (select id from OSLOG_INTEGRATION where action like '%<APIaction>%')
+     ```
+
 1. Details similar to the example.
-![Screenshot of query log](images/sql-query-ss.png "Query log")
+
+    ![Screenshot of query log](images/sql-query-usr.png "Query log")

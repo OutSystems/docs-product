@@ -54,3 +54,7 @@ An application typically has its own business rules. In OutSystems you can creat
 ![Visual representation of a Server Action in OutSystems, used to encapsulate business logic for reuse in various parts of the application.](images/server-action-web.png "Server Action in OutSystems")
 
 You can set a **Server Action** as a function and use it directly in expressions. 
+
+## Service Actions
+
+This action is like a service action. But it has a loosely dependency with the producer. Means when any changes made to this action in producer module, consumer module need not be refreshed.

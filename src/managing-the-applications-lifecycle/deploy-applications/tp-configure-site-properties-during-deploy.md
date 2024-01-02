@@ -28,8 +28,6 @@ If there are application modules in the plan with new site properties that were 
 
 Additionally, if you make any changes to the **IsSecret** property of the site property, you must define the effective value for the site property.
 
-![Interface showing the process of setting effective values for new Site Properties in the deployment plan wizard.](images/configure-site-settings-during-deploy-3.png "Defining Effective Values for Site Properties")
-
 ![Screenshot of the deployment plan wizard where the user defines the Effective value for new Site Properties.](images/cfg-site-prop-stg-lt.png "Effective Value for Site Properties")
 
 In the deployment plan wizard, you can also change the existing settings of the applications to deploy. Because secret site properties don't have default values, the **Default Value** field will not display any information. To display the existing settings, click the **All settings** button.

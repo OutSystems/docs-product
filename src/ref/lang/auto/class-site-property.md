@@ -45,11 +45,7 @@ In this example, there's a screen with an aggregate named **GetEmployees**. This
 
 1. Click **MaxRecords**, then change its **Effective Value** to  `5`. By doing this, you're changing the MaxRecords' value at runtime and the aggregate will now retrieve 5 records instead of the default 10.
 
-    ![Service Center interface showing the MaxRecords site property with an option to change its Effective Value.](images/site-prop-effective-val-sc.png "Editing MaxRecords Site Property")
-
-1. Click **MaxRecords**, then change its **Effective Value** to  `5`. By doing this, you're changing the MaxRecords' value at runtime and the aggregate will now retrieve 5 records instead of the default 10.
-
-    ![Process of changing the Effective Value of the MaxRecords site property to 5 in Service Center.](images/effective-value-sc.png "Changing Effective Value of MaxRecords")
+    ![Service Center interface showing the MaxRecords site property with an option to change its Effective Value.](images/effective-value-sc.png "Editing MaxRecords Site Property")
 
 1. Click **Apply** and then refresh your app's page. The MaxRecords displayed must adopt the new value.
 

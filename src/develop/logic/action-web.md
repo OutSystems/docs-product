@@ -21,6 +21,7 @@ In OutSystems web applications you can create the following Actions:
 * Preparation
 * Screen Actions
 * Server Actions
+* Service Actions
 
 ## Preparation Actions
 

@@ -7,7 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A39&mode=design&t=98kL4vRdGIKpuwQm-1
 ---
 
-# Configure Application Settings After Deployment
+# Configure application settings after deployment
 
 When deploying an application to another environment, you often need to change application settings according to the environment you're deploying to.
 

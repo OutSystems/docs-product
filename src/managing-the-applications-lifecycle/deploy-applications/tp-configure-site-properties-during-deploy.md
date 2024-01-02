@@ -8,42 +8,50 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A33&mode=design&t=98kL4vRdGIKpuwQm-1
 ---
 
-# Configure Site Properties During Deployment
+# Configure site properties during deployment
 
-You can configure your applications' Site Properties in the target environment during the deployment plan.
+You can configure your applications' site properties in the target environment during the deployment plan.
 
-## Prerequisites
+<div class="info" markdown="1">
 
-* To configure Site Properties during deployment, LifeTime must be on version 11.14.0 or higher.
-* The user executing the deployment must have the "Change & Deploy Applications" permission for all applications in the deployment plan.
-* This feature doesn't apply to multi-tenant Site Properties.
+Ensure the user executing the deployment has the **Change & Deploy Applications** permission for all apps in the deployment plan.
 
-<iframe src="https://player.vimeo.com/video/734417155?h=793863e41d" width="650" height="325" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+</div>
 
-The deployment plan wizard enables you to configure the Site Properties of the applications being deployed during the step **Configure application settings**.
+The deployment plan wizard allows you to configure the site properties of the apps being deployed during the **Configure application settings** step.
 
-![Screenshot of the deployment plan wizard highlighting the 'Configure application settings' step](images/configure-settings-during-deploy-2.png "Configure Application Settings During Deployment")
+![Screenshot of the deployment plan wizard highlighting the 'Configure application settings' step.](images/configure-settings-during-deploy-2.png "Configure Application Settings During Deployment")
 
-When deploying applications, after adding the applications to your deployment plan, the deployment plan wizard takes you to the step **Configure application settings**.
+When deploying apps, after you add the apps to your deployment plan, the deployment plan wizard takes you to the **Configure application settings** step.
 
-If there are application modules in the plan with new Site Properties that were never set in the target environment, you can define in this step the **Effective value** for those Site Properties in the target environment.
+If there are application modules in the plan with new site properties that were never set in the target environment, you can define the **Effective value** for those site properties in the target environment in this step.
 
-![Interface showing the process of setting effective values for new Site Properties in the deployment plan wizard](images/configure-site-settings-during-deploy-3.png "Defining Effective Values for Site Properties")
+Additionally, if you make any changes to the **IsSecret** property of the site property, you must define the effective value for the site property.
 
-In the deployment plan wizard, you can also see and change the existing settings of the applications to deploy. Click the button **All settings** to see the existing settings.
+![Interface showing the process of setting effective values for new Site Properties in the deployment plan wizard.](images/configure-site-settings-during-deploy-3.png "Defining Effective Values for Site Properties")
 
-Select an application from the applications list to the left to see the settings for that application. If your deployment plan contains applications with no changes, you will not be able to change the settings for those applications.
+![Screenshot of the deployment plan wizard where the user defines the Effective value for new Site Properties.](images/cfg-site-prop-stg-lt.png "Effective Value for Site Properties")
 
-There are some situations when this step is **skipped** or **disabled**:
+In the deployment plan wizard, you can also change the existing settings of the applications to deploy. Because secret site properties don't have default values, the **Default Value** field will not display any information. To display the existing settings, click the **All settings** button.
+
+Select an app from the app list to display the settings for that application. If your deployment plan contains applications with no changes, you can't change the settings for those apps.
+
+The following are some examples of when this step is **skipped** or **disabled**:
 
 * The step is **skipped** when there are no new settings to configure. However, if you need to change any existing settings, you can manually go back to **Configure application settings** by clicking the step in the wizard.
 
-    ![Illustration of the deployment plan wizard with the 'Configure application settings' step skipped or disabled](images/configure-settings-during-deploy-4.png "Skipping or Disabling Configuration Steps")
+    ![Illustration of the deployment plan wizard with the 'Configure application settings' step skipped or disabled.](images/configure-settings-during-deploy-4.png "Skipping or Disabling Configuration Steps")
 
 * The step is **disabled** when there aren't any settings to configure or the user executing the deployment doesn't have the required permissions.
 
-The Site Properties of the applications to deploy are set in the target environment after the applications are published. Beware of Timers that run `When Published`, since the Site Properties that the Timers may use are not yet updated when the Timers run.
+The site properties of the applications to deploy are set in the target environment after the apps are published. Beware of Timers that run `When Published`, since the site properties that the Timers may use are not yet updated when the Timers run.
 
-To update the Site Properties' value in the target environment after the deployment, [use the Service Center console](configure-application-settings-after-deployment.md).
+To update the site properties value in the target environment after the deployment, [use the Service Center console](configure-application-settings-after-deployment.md).
+
+<div class="info" markdown="1">
+
+This feature doesn't apply to multi-tenant site properties.
+
+</div>
 
 

@@ -51,7 +51,9 @@ Enable your OutSystems application to consume or share data with a Salesforce ap
  
 ## Assign pre-authorized users
  
- 1. In Salesforce Service Setup, go to **Administration** > **Users** > **Permissions Sets**. 
+1. Start by deciding which user account will be used to run your application’s requests. We recommend creating a user account that won’t be used for any other purpose. That user account should have permission to read, write, and delete data from Salesforce business objects. 
+ 
+1. In Salesforce Service Setup, go to **Administration** > **Users** > **Permissions Sets**. 
 
 1. Click **New**.
 
@@ -64,11 +66,17 @@ Enable your OutSystems application to consume or share data with a Salesforce ap
 
 1. On the **Permission Set** page you just created, click **Manage Assignments**, and then click **Add Assignments**.
 
-1. Select and assign a user. We recommend assigning a specific user, and that user should have permission to read, write, and delete data from Salesforce business objects.
+1. Select and assign the user account you chose in step 1.
+
+1. Go back to the the Permission Set page and click the link named Assigned Connected Apps.
+
+1. Click the Edit button.
+
+1. Add the Connected App you created to the Enabled Connected Apps list and click Save.
 
 1. Navigate back to **App Manager**. 
 
-1. For the app you created, click the arrow on the right and select **Manage**.
+1. Find the connected app you created earlier, click the arrow on the right and select **Manage**.
 
 1. Click **Edit Policies.**
 
@@ -76,4 +84,4 @@ Enable your OutSystems application to consume or share data with a Salesforce ap
 
 1. In **Permissions Sets**, click **Manage Permission Sets**.
 
-1. Select the Permission set you created, and click **Save**. 
+1. Select the Permission set you created in step 5, and click **Save**. 

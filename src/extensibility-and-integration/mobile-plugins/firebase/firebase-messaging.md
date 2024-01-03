@@ -70,9 +70,9 @@ The following steps show how to create a back-end notification service and how t
 
 <div class="info" markdown="1">
 
-**The Cloud Messaging Configurator, version 1.1.0 and older, is deprecated**. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref)). This means the **v2** and **v1** endpoints will no longer be functional.
+The Cloud Messaging Configurator, version 1.1.0 and older, is deprecated. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref). This means the **v2** and **v1** endpoints will no longer be functional.
 
-To provide a better OutSystems experience, the Configurator's REST APIs have been replaced by Server Actions available on the Firebase Cloud Messaging Plugin. **If you are consuming these APIs, you should start the migration process as soon as possible**.
+To provide a better OutSystems experience, the Configurator's REST APIs have been replaced by Server Actions available on the Firebase Cloud Messaging Plugin. If you are consuming these APIs, you should start the migration process as soon as possible.
 
 </div>
 
@@ -146,13 +146,11 @@ To set up a back-end notification service, follow these steps:
 
     ![Screenshot showing how to access the Firebase Service Account File.](images/firebase-service-account-generation.png "Firebase Service Account File access")
 
-<div class="info" markdown="1">
+<div title="Recommendations on how to store and access the Firebase Service Account File" class="info" markdown="1">
   
-**Recommendations on how to store and access the Firebase Service Account File**
+* Considering that the Firebase Service Account File should be safely stored on the app, it is recommended, that this information be encrypted, keeping its key secure. 
 
-* Considering that the Firebase Service Account File should be safely stored on the Developer's Application, it is recommended, as already mentioned, that this information be encrypted, keeping its key secure. 
-
-* The binary data associated with the Firebase Service Account File is required to use the Plugin’s Server Actions for Notification triggering. This means that there should be a simple way to fetch this information on the App. One way to achieve this is to associate it with the Firebase Project Identifier (by, e.g., keeping this mapping stored in a database table).
+* The binary data associated with the Firebase Service Account File is required to use the Plugin’s Server Actions for notification triggering. This means that there should be a simple way to fetch this information on the app. One way to achieve this is to associate it with the Firebase Project Identifier by, for example, keeping this mapping stored in a database table.
 
 </div>
 

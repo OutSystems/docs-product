@@ -57,4 +57,7 @@ You can set a **Server Action** as a function and use it directly in expressions
 
 ## Service Actions
 
-This action is like a service action. But it has a loosely dependency with the producer. Means when any changes made to this action in producer module, consumer module need not be refreshed.
+This action is like a server action. But it has a loosely dependency with the producer. Means when any changes made to this action in producer module, consumer module need not be refreshed.
+
+![Visual representation of a service action in outsystmes.]
+(images/ServiceAction.png "Service Action in Outsystems")

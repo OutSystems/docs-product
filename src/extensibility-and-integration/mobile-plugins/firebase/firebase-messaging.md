@@ -76,8 +76,6 @@ To provide a better OutSystems experience, the Configurator's REST APIs have bee
 
 </div>
 
-<div class="warning" markdown="1">
-
 To set up a back-end notification service, follow these steps:
 
 1. Install the [Cloud Messaging Configurator](https://www.outsystems.com/forge/component-overview/13300) forge component in your environment.
@@ -88,7 +86,7 @@ To set up a back-end notification service, follow these steps:
 
 1. In the **APIKey** entity, set **AppId** and **Key** using encrypted values.
 
-   These values are used to authenticate your REST API, so make sure you keep the encrypted values secure.
+    These values are used to authenticate your REST API, so make sure you keep the encrypted values secure.
 
     ![Screenshot of the Firebase Messaging API Key configuration in the Cloud Messaging Configurator app](images/firebase-messaging-apikey-ss.png "Firebase     Messaging API Key Configuration")
 
@@ -138,7 +136,7 @@ To set up a back-end notification service, follow these steps:
 
 1. In the newly created module, consume the **Firebase Cloud Messaging Plugin** and add the Server Actions, along with its associated Static Entities.
 
-![Screenshot showing how to import the Server Actions and associated Static Entities.](images/firebase-cloud-messaging-server-actions-import.png "Firebase Messaging Cloud Plugin Server Actions Import")
+    ![Screenshot showing how to import the Server Actions and associated Static Entities.](images/firebase-cloud-messaging-server-actions-import.png "Firebase Messaging Cloud Plugin Server Actions Import")
 
 1. Create the logic to store and access your Firebase Service Account File in the app you just created.
 
@@ -146,7 +144,7 @@ To set up a back-end notification service, follow these steps:
 
     1. For extra security, encrypt and store this file as such, keeping the encryption key secure.
 
-![Screenshot showing how to access the Firebase Service Account File.](images/firebase-service-account-generation.png "Firebase Service Account File access")
+    ![Screenshot showing how to access the Firebase Service Account File.](images/firebase-service-account-generation.png "Firebase Service Account File access")
 
 <div class="info" markdown="1">
   

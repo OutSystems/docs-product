@@ -146,9 +146,9 @@ To set up a back-end notification service, follow these steps:
 
     ![Screenshot showing how to access the Firebase Service Account File.](images/firebase-service-account-generation.png "Firebase Service Account File access")
 
-<div title="Recommendations on how to store and access the Firebase Service Account File" class="info" markdown="1">
+<div class="info" markdown="1">
   
-* Considering that the Firebase Service Account File should be safely stored on the app, it is recommended, that this information be encrypted, keeping its key secure. 
+* Considering that the Firebase Service Account File should be safely stored on the app, OutSystems recommends that this information be encrypted, keeping its key secure. 
 
 * The binary data associated with the Firebase Service Account File is required to use the Plugin’s Server Actions for notification triggering. This means that there should be a simple way to fetch this information on the app. One way to achieve this is to associate it with the Firebase Project Identifier by, for example, keeping this mapping stored in a database table.
 
@@ -213,7 +213,7 @@ We have 3 types of custom actions:
 
 ## Enable notifications with custom sound { #custom-sounds }
 
-To enhance your notification with custom sounds, you must put the .wav files you want to use as notification sounds into a .zip file called **sounds.zip**. Then, upload the .zip file to the app’s Resources folder. Additionally, you must use the **Plugin's Server Actions**, using the *Sound* parameter inside the *Notification* parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** methods.
+To enhance your notification with custom sounds, you must put the .wav files you want to use as notification sounds into a .zip file called **sounds.zip**. Then, upload the .zip file to the app’s Resources folder. Additionally, you must use the **Plugin's Server Actions**, using the **Sound** parameter inside the **Notification** parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** methods.
 
 It is important to note the following requirements for custom sounds:
 

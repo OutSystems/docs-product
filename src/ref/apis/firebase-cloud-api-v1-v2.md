@@ -10,6 +10,14 @@ figma:
 
 # Cloud Messaging Configurator APIs
 
+<div class="info" markdown="1" >
+    
+**The Cloud Messaging Configurator, version 1.0.0 and older, is deprecated**. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref)). This means the **v2** and **v1** endpoints will no longer be functional.
+
+To provide a better OutSystems experience, the Configurator's REST APIs have been replaced by Server Actions available on the Firebase Cloud Messaging Plugin. **If you are consuming these APIs, you should start the migration process as soon as possible**.
+
+</div>
+
 Use OutSystems' Cloud Messaging Configurator REST APIs to do the following:
 
 * Send notifications (normal or silent) to all users associated with a topic or group of topics.

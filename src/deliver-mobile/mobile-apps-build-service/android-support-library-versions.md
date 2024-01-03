@@ -16,6 +16,12 @@ Applies only to Mobile Apps.
 
 </div>
 
+<div class="warning" markdown="1">
+
+Starting with version 10, MABS no longer replaces the legacy packages from Support Library. AndroidX packages must be used instead. For more details, please check the **[release notes](https://success.outsystems.com/support/release_notes/mobile_apps_build_service_versions/mabs_10_release_notes/#breaking-changes)**.
+
+</div>
+
 Whenever the target Android SDK is changed for a version of MABS, the version for the support libraries reflect this change as well. This affects the core and supported mobile plugins as well as the third-party plugins available in the Forge. For instance, with MABS 5, the target Android SDK has been raised to 28.
 
 ## Scenarios of plugins using different versions of support libraries
@@ -28,17 +34,18 @@ Plugins that use different versions of the same library (with the exact same nam
 
 ![Flowchart illustrating the version resolution process when plugins use different versions of the same Android support library](images/android-support-library-versions-2.png "Version Resolution Process")
 
+
 ### When does version incompatibility occur?
 
 However, version resolution does not occur when libraries that depend on each other are used. MABS builds always reference `com.android.support:support-v4` and `com.android.support:support-annotations`. Thus, libraries associated to these must be handled carefully to ensure that the different versions match.
 
 For instance, `com.android.support:support-core-utils` is referenced by `support-v4`. A mobile plugin that uses version 25 of this library is incompatible with the `support-v4` reference and the build fails in both MABS 4 and 5.
 
-![Diagram showing version incompatibility due to different versions of support-core-utils in Android support libraries](images/android-support-library-versions-3.png "Version Incompatibility with Support-Core-Utils")
+![Diagram illustrating version incompatibility when using support-core-utils library with different versions of support-v4](images/android-support-library-versions-3.png "Version Incompatibility with Support Core Utils Library")
 
 Another example is `com.android.support:exifinterface`, which references `support-annotations`. A mobile plugin that uses version 25 of this library is incompatible with the `support-annotations` reference and the build fails in both MABS 4 and 5.
 
-![Diagram highlighting version incompatibility with support-annotations in Android support libraries](images/android-support-library-versions-1.png "Version Incompatibility with Support-Annotations")
+![Diagram showing version incompatibility with exifinterface library that references different versions of support-annotations](images/android-support-library-versions-1.png "Version Incompatibility with Support Annotations Library")
 
 In both scenarios, if the version used is 26 instead of 25, the build works in MABS 4. Similarly, the build works in MABS 5 for version 28 support libraries.
 It should be noted that this type of incompatibility is not unique to support libraries.

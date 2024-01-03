@@ -38,9 +38,15 @@ The content in this document applies only to the native Android apps.
 
 ## How to enable AndroidX 
 
+<div class="warning" markdown="1">
+
+The `AndroidXEnabled` preference no longer has any effect starting with MABS 10. For more details, please check the **[release notes](https://success.outsystems.com/support/release_notes/mobile_apps_build_service_versions/mabs_10_release_notes/#breaking-changes)**.
+
+</div>
+
 <div class="info" markdown="1">
 
-You need to enable AndoridX if you're using MABS 6.3 Beta. AndroidX is **enabled by default in MABS 7 Beta**.  
+You need to enable AndroidX if you're using MABS 6.3 Beta. AndroidX is **enabled by default in MABS 7 Beta**.  
 
 </div>
 

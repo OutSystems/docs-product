@@ -33,7 +33,7 @@ Component tests validate the behavior of single units of code. These tests corre
 
 Find more details on Component testing in:
 
-* [Developing for Testability > Unit/Component Testing](https://success.outsystems.com/Documentation/11/Developing_an_Application/Developing_for_Testability#Core_Layer)
+* [Developing for Testability > Unit/Component Testing](../develop-test.md#core-layer)
 
 * [Automated Testing Tools](automated-testing-tools.md)
 
@@ -43,7 +43,7 @@ Integration/API tests validate integration with external systems, such as a midd
 
 There’s more for you to read about Integration/API testing in these links:
 
-* Developing for Testability > [Service API Isolation](https://success.outsystems.com/Documentation/11/Developing_an_Application/Developing_for_Testability#Service_API_Isolation)
+* Developing for Testability > [Service API Isolation](../develop-test.md#service-api-isolation)
 
 * Automated Testing Tools > [Automated UI and API Testing Tools](automated-testing-tools.md#testing-tools)
 
@@ -53,7 +53,7 @@ System or End-to-End (E2E) tests validate complete functionality from an end-use
 
 For more about UI testing, here are some useful links:
 
-* Developing for Testability>[Web UI Simulation](https://success.outsystems.com/Documentation/11/Developing_an_Application/Developing_for_Testability#Web_UI_Simulation)
+* Developing for Testability>[Web UI Simulation](../develop-test.md#ui-simulation)
 
 * Automated Testing Tools>[Automated UI and API Testing Tools](automated-testing-tools.md)
 

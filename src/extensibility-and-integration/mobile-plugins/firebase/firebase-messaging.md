@@ -15,7 +15,7 @@ Normal notifications have a UI that displays visual and auditory cues. The cues 
 
 OutSystems also has notification features you can use to create custom actions and custom sounds.
 
-Following is a high-level process describing how to implement and manage the notifications of your OutSystems app.
+The following is a high-level process describing how to implement and manage the notifications of your OutSystems app.
 
 1. Use the **Firebase Cloud Messaging Plugin’s Server Actions** to set up a back-end notification service.
 
@@ -72,55 +72,9 @@ The following steps show how to create a back-end notification service and how t
 
 The Cloud Messaging Configurator, version 1.1.0 and older, is deprecated. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref). This means the **v2** and **v1** endpoints will no longer be functional.
 
-To provide a better OutSystems experience, the Configurator's REST APIs have been replaced by Server Actions available on the Firebase Cloud Messaging Plugin. If you are consuming these APIs, you should start the migration process as soon as possible.
+The Cloud Messaging Configurator’s REST APIs have been replaced by server actions available on the Firebase Cloud Messaging Plugin. If you are consuming these APIs, they must be replaced with the server actions as soon as possible.
 
 </div>
-
-To set up a back-end notification service, follow these steps:
-
-1. Install the [Cloud Messaging Configurator](https://www.outsystems.com/forge/component-overview/13300) forge component in your environment.
-
-   This component includes the REST API methods necessary to send notifications to a list of users or topics.
-
-1. Open the **Cloud Messaging Configurator**.
-
-1. In the **APIKey** entity, set **AppId** and **Key** using encrypted values.
-
-    These values are used to authenticate your REST API, so make sure you keep the encrypted values secure.
-
-    ![Screenshot of the Firebase Messaging API Key configuration in the Cloud Messaging Configurator app](images/firebase-messaging-apikey-ss.png "Firebase     Messaging API Key Configuration")
-
-1. Create a new app to serve as your back-end notification.
-
-    This app can be a Reactive Web or Mobile app.
-
-1. In the new back-end app, create a module.
-
-1. In the newly created module, consume the **Cloud Messaging Configurator** REST API methods.
-
-   For more details on how to consume a REST API, refer to [Consume one or more REST API methods](../../rest/consume-rest-apis/consume-a-rest-api.md).
-
-   After importing the REST API methods you may get an invalid URL error. If you get an error, go to the consumed REST API properties and change the **Base URL** to include your stage address, setting it as `https://<your-environment>/CloudMessagingConfigurator/rest/v1`. Replace `<your-environment>`     with your environment address and `<rest-api-version>` with the version you want to use.
-
-   ![Screenshot showing how to set the base URL for Firebase Messaging in the Cloud Messaging Configurator](images/firebase-messaging-base-url-ss.png "Firebase Messaging Base URL Setting")
-  
-   OutSystems offers two versions for Cloud Messaging Configurator REST APIs based on the features you want to use. To learn more about the versions, refer to the [reference page](../../../ref/apis/firebase-cloud-api-v1-v2.md).
-
-1. Then, use the AppId and Key you defined in step 3 to authenticate your REST calls. In the consumed REST API properties, add the following **HTTP headers**:
-
-      * `X-Send-AppId` = `<your-appid>`, replacing `<your-appid>` with the **AppId** defined in step 3.
-
-      * `X-Send-Key` = `<your-key>`, replacing `<your-key>` with the **Key** defined in step 3.
-
-Now, you can start to create the UI for your back-end notification service. For example, to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin), associate a **SendNotifcationToUsers** method to a button.
-
-![Screenshot of the Firebase Cloud Messaging key sender configuration interface](images/fcm-key-sender-config-ss.png "FCM Key Sender Configuration")
-
-To access values for the parameters **FCMServerKey** and **SenderID**, in Service Studio, navigate to **Project Settings** > **Cloud Messaging** > **Firebase Console**.
-
-![Image illustrating the configuration of a REST API call for Firebase Cloud Messaging](images/fcm-rest-call.png "FCM REST API Call Configuration")
-
-Other available methods include **SendNotificationToTopics**, **SendSilentNotificationToUsers**, and **SendSilentNotificationToTopics**.
 
 To set up a back-end notification service, follow these steps:
 
@@ -146,9 +100,9 @@ To set up a back-end notification service, follow these steps:
 
        ![Screenshot showing how to access the Firebase Service Account File.](images/firebase-service-account-generation.png "Firebase Service Account File access")
 
-        **Note**: In addition to encrypting the Firebase Service Account File, the binary data associated with the Firebase Service Account File is required to use the Plugin’s Server Actions for notification triggering. This means that there should be a simple way to fetch this information on the app. One way to achieve this is to associate it with the Firebase Project Identifier by, for example, keeping this mapping stored in a database table.
+        **Note**: In addition to encrypting the Firebase Service Account File, the binary data associated with the Firebase Service Account File is required to use the Plugin’s Server Actions for notification triggering. This means that there should be a simple way to fetch this information in the app. One way to achieve this is to associate it with the Firebase Project Identifier by, for example, keeping this mapping stored in a database table.
 
-  Now you can start to create the UI for your back-end notification service. For example, to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin), associate the **SendNotificationToUsers** Server Action to a button and add logic to retrieve your Service Account file.
+Now you can start to create the UI for your back-end notification service. For example, to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin), associate the **SendNotificationToUsers** Server Action to a button and add logic to retrieve your Service Account file.
 
 ![Image illustrating the configuration of Server Action call for Firebase Cloud Messaging](images/fcm-server-action-call.png "FCM Server Action Call Configuration")
 
@@ -158,23 +112,23 @@ Other available methods include **SendNotificationToTopics**, **SendSilentNotifi
 
 This section describes some of the actions that you can use to leverage notification functions on your mobile app.
 
-On first use you might want to send to receive notifications to your app user. For that you can use the **RegisterDevice** action on initialization of your app. On first use, this action displays a native request permission dialog and upon user acceptance, the device is registered on the Firebase Cloud Messaging service and is ready to receive notifications. On future verifications you can always use the **CheckPermission** action to verify if the app has permission to receive notifications.
+On first use, you might want to send to receive notifications to your app user. For that, you can use the **RegisterDevice** action on the initialization of your app. On first use, this action displays a native request permission, dialog and upon user acceptance, the device is registered on the Firebase Cloud Messaging service and is ready to receive notifications. On future verifications, you can always use the **CheckPermission** action to verify if the app has permission to receive notifications.
 
-Alternatively you can provide an explicit way to register and unregister the device from the Firebase cloud Messaging service using the **RegisterDevice** / **UnregisterDevice** actions. Then associate the actions to a UI element such as a toggle.
+Alternatively, you can provide an explicit way to register and unregister the device from the Firebase cloud Messaging service using the **RegisterDevice** / **UnregisterDevice** actions. Then associate the actions to a UI element such as a toggle.
 
 ![Screenshot showing the logic flow for registering a device with Firebase Messaging](images/firebase-messaging-logic-register-device-ss.png "Firebase Messaging Register Device Logic")
 
 After registering the device on the Firebase Cloud Messaging service, the active device's token becomes available and can be retrieved using the action **GetToken**.
 
-To manage topic subscriptions you can use the **Subscribe / Unsubscribe** actions. The user will need to set the topic name to which the app will subscribe (or unsubscribe). If the topic doesn't exist yet on the Firebase Cloud Messaging project, it creates a new one.
+To manage topic subscriptions, you can use the **Subscribe / Unsubscribe** actions. The user will need to set the topic name to which the app will subscribe (or unsubscribe). If the topic doesn't exist yet on the Firebase Cloud Messaging project, it creates a new one.
 
 ![Screenshot displaying the logic for adding a topic in Firebase Messaging](images/firebase-messaging-logic-add-topic-ss.png "Firebase Messaging Add Topic Logic")
 
-To retrieve all pending silent notifications you can use the **GetPendingNotification** action. This action will output a silent notifications list with Timestamp, MessageID, TimeToLive, and an ExtraData list of key-value pairs. Silent notifications are notifications that have no UI representation in the form of a visual or auditory stimulus in the app. Despite being silent, these notifications can deliver a data package to the app (called extra data), in the form of a list of key-value pairs.
+To retrieve all pending silent notifications, you can use the **GetPendingNotification** action. This action outputs a silent notifications list with Timestamp, MessageID, TimeToLive, and an ExtraData list of key-value pairs. Silent notifications are notifications that have no UI representation in the form of a visual or auditory stimulus in the app. Despite being silent, these notifications can deliver a data package to the app (called extra data), in the form of a list of key-value pairs.
 
 <div class="info" markdown="1">
 
-Note that when receiving a silent notification without extra data, and your app is on the background, the notification is not saved in the database, i.e., it won’t be returned in the **GetPendingNotifications** action.
+Note that when receiving a silent notification without extra data and your app is in the background, the notification is not saved in the database, that is, it won’t be returned in the **GetPendingNotifications** action.
 
 </div>
 
@@ -186,7 +140,7 @@ As part of the notification experience, the developer might want to control the 
 
 ![Screenshot of the action to set the badge number in Firebase Messaging](images/firebase-messaging-set-badge-ss.png "Firebase Messaging Set Badge Number")
 
-Finally, you might want to give the opportunity to your user to clear all app's notifications remaining in the notification center. For this you can associate the **ClearNotifications** action to a piece of UI such as a button.
+Finally, you might want to give the opportunity to your user to clear all the app's notifications remaining in the notification center. For this, you can associate the **ClearNotifications** action to a piece of UI, such as a button.
 
 ![Screenshot of the action to clear all notifications in Firebase Messaging](images/firebase-messaging-clear-notifications-ss.png "Firebase Messaging Clear Notifications")
 

@@ -1,12 +1,11 @@
 ---
-en_title: Integration/API Testing
+summary: The article provides best practices for designing and automating Integration/API tests, emphasizing the importance of not testing business logic and considering various types of integration beyond APIs.
 guid: c3feac47-4625-4632-a11f-6bbcba99482b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 ---
-
 # Integration/API Testing
 
 Integration/API testing is often a good target for automation. There's no user interface to perform manual tests, and testers often need to invest a lot of time setting up each individual test, which leaves small room for exploratory testing. Integration/API tests can include both integration with external systems and integration with loosely coupled services exposed by other OutSystems applications. Here are recommended practices on how to build integration tests with OutSystems.
@@ -26,7 +25,7 @@ As mentioned above, integration tests don't focus only on API tests. Given this 
 1. API integration tests 
 1. Other integration tests, i.e. virtualization tools, external databases, mail servers 
 
-### API Integration Tests 
+### API Integration Tests { #api-integration-tests }
 
 APIs can be exposed by either external systems such as SAP, Jira, Google Drive, or by other OutSystems applications. Many tools allow scanning [WSDL](https://www.w3.org/TR/2001/NOTE-wsdl-20010315) and/or [Swagger](https://swagger.io/docs/specification/about/) files (for SOAP and REST, respectively) to automatically generate all of the API endpoints as test objects or modules to later build your test cases or reusable test blocks.
 

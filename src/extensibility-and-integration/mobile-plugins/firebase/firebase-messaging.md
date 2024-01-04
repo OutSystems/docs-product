@@ -72,7 +72,7 @@ The following steps show how to create a back-end notification service and how t
 
 The Cloud Messaging Configurator, version 1.1.0 and older, is deprecated. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref). This means the **v2** and **v1** endpoints will no longer be functional.
 
-The Cloud Messaging Configurator’s REST APIs have been replaced by server actions available on the Firebase Cloud Messaging Plugin. If you are consuming these APIs, they must be replaced with the server actions as soon as possible.
+The Cloud Messaging Configurator's REST APIs have been replaced by server actions available on the Firebase Cloud Messaging Plugin. If you are consuming these APIs, they must be replaced with the server actions as soon as possible.
 
 </div>
 
@@ -90,7 +90,7 @@ To set up a back-end notification service, follow these steps:
 
 1. In the newly created module, consume the **Firebase Cloud Messaging Plugin** and add the Server Actions, along with its associated Static Entities.
 
-    ![Screenshot showing how to import the Server Actions and associated Static Entities.](images/firebase-cloud-messaging-server-actions-import.png "Firebase Messaging Cloud Plugin Server Actions Import")
+    ![Screenshot showing how to import the Server Actions and associated Static Entities.](images/fcm-server-actions-import-ss.png "Firebase Messaging Cloud Plugin Server Actions Import")
 
 1. Create the logic to store and access your Firebase Service Account File in the app you just created.
 

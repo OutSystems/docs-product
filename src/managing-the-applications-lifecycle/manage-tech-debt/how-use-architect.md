@@ -73,7 +73,7 @@ To get more details, click the mini chart.
 
 ![Detailed chart in AI Mentor Studio showing the technical debt trendline and trend value over time.](images/use-chart-ams.png "Detailed Technical Debt Chart")
 
-The technical debt chart includes a technical debt trendline and a trend value. This information tells you whether your technical debt is increasing or decreasing with time. The chart is a stacked 100% chart for the level of technical debt with the Y axis reflecting the trendline drawn in the chart. 
+The technical debt chart is a 100% stacked chart with a trend value (X axis) indicating the level of technical debt and a trendline (Y axis) that tells you whether your technical debt is increasing or decreasing with time. 
 
 Ideally, you want your technical debt chart all green with a horizontal trendline. Or, a chart that's not so green but has a high negative trendline which indicates that the technical debt is being actively worked on.
 

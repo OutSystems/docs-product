@@ -37,6 +37,12 @@ You can translate the following elements of your Module:
 * Images
 * Static Entities (make sure the `Use Translations` advanced property is enabled)
 
+<div class="info" markdown="1">
+
+Text Identifiers in Static Entities cannot be translated.
+
+</div>
+
 From the translation process view, these elements will be considered **translatable resources**. You can select how each translatable resource in your Module is handled - whether it should effectively be translated (text or images that should be different in different languages) or not (for instance, a brand name that is the same across different languages) - using the [Translations Behavior Editor](./translations-editor.md). 
 
 <div class="info" markdown="1">

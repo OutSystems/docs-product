@@ -540,12 +540,6 @@
         - topics:
             - href: develop/seo/prerender-io-usage-and-configuration.md
 
-    # Testing
-    - href: develop/testing/intro.md
-    - topics:
-        - href: develop/testing/develop-test.md
-        - href: develop/testing/testing-bdd-framework.md
-
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
     # Experience Builder
@@ -1028,9 +1022,25 @@
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-proxy.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/faq.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/troubleshoot.md
-
-    - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
+
+# Testing Apps
+- href: testing/intro.md
+- topics:
+    - href: testing/develop-test.md    
+    - href: testing/testing-bdd-framework.md
+    - href: testing/ui-testing-selenium/faq.md        
+# OutSystems Automated Testing Best Practices
+    - href: testing/test-automation-in-delivery-lifecycle.md
+    - href: testing/automated-testing/testing-guidelines.md
+    - topics: 
+        - href: testing/automated-testing/strategy.md
+        - href: testing/automated-testing/automated-testing-tools.md
+        - href: testing/automated-testing/component-testing.md
+        - href: testing/automated-testing/integration-api-testing.md
+        - href: testing/automated-testing/web-ui-testing.md        
+        - href: testing/automate-unit-testing-and-api-testing/faq.md
+
 
 # Setup and mantain your OutSystems infraestructure
 - href: setup-maintain/intro.md

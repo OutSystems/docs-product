@@ -51,29 +51,27 @@ Enable your OutSystems application to consume or share data with a Salesforce ap
  
 ## Assign pre-authorized users
  
- 1. In Salesforce Service Setup, go to **Administration** > **Users** > **Permissions Sets**. 
+**Prerequisite:** Choose a dedicated user account for executing your application's requests. Using a user account solely for this purpose is advisable to avoid conflicts. Ensure this account is granted sufficient privileges to read, write, and manage data across Salesforce business objects. Once this is set up, proceed with the following steps.
+ 
+1. **Create a Permission Set:**
+   - In Salesforce, navigate to **Service Setup** > **Administration** > **Users** > **Permissions Sets**.
+   - Click **New**, fill in the required fields (Label and API Name), and set the **License** to **None**.
+   - Click **Save**.
 
-1. Click **New**.
+1. **Manage Assignments:**
+   - On the created **Permission Set** page, click **Manage Assignments** and then **Add Assignments**.
+   - Select and assign the dedicated user account.
 
-1. Fill in the fields; note the following:
+1. **Configure Connected App Access:**
+   - Return to the **Permission Set** page, click **Assigned Connected Apps**, and click **Edit**.
+   - Add the previously created Connected App to the Enabled list and save.
 
-    * After you type the Label, the API Name should autocomplete.
-    * Leave the **License** drop-down as **None**
+1. **Edit App Policies:**
+   - Navigate back to **App Manager**.
+   - Find your connected app, select **Manage** from the options, and then click **Edit Policies**.
+   - Under **Permitted Users**, choose **Admin approved users are pre-authorized**.
+   - Save your changes.
 
-1. Click **Save**. 
-
-1. On the **Permission Set** page you just created, click **Manage Assignments**, and then click **Add Assignments**.
-
-1. Select and assign a user. We recommend assigning a specific user, and that user should have permission to read, write, and delete data from Salesforce business objects.
-
-1. Navigate back to **App Manager**. 
-
-1. For the app you created, click the arrow on the right and select **Manage**.
-
-1. Click **Edit Policies.**
-
-1. In **Permitted Users**, select **Admin approved users are pre-authorized**, and click **Save**.
-
-1. In **Permissions Sets**, click **Manage Permission Sets**.
-
-1. Select the Permission set you created, and click **Save**. 
+1. **Finalize Permission Set:**
+   - Under **Permissions Sets**, click **Manage Permission Sets**.
+   - Select the Permission Set created earlier and click **Save**.

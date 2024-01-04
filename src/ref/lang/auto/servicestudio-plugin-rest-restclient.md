@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Plugin.REST.RestClientDescriptor
 helpids: 17200
 locale: en-us
 guid: 750da14a-1a1d-48fd-bea4-735d992e3d48

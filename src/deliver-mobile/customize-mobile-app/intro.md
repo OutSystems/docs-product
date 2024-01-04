@@ -24,7 +24,7 @@ The configurations you can define for your app are:
 * Icons of the app to display in the iOS and Android menus 
 * Custom splash screens for all available screen sizes 
 * Customized application status bar, such as changing  background color or making it transparent 
-* [Create a plugin to extend the capabilities of your mobile apps](<../../extensibility-and-integration/mobile-plugins/using-cordova-plugins.md>)
+* [Create a plugin to extend the capabilities of your mobile apps](../../extensibility-and-integration/mobile-plugins/cordova-plugin/intro.md)
 
 To define these advanced configurations during development, go to the **Interface** tab, select the app name, and click **…** on the right side of the **Extensibility Configuration** field to open the **Extensibility Configuration** window. The extensibility configuration property is a JSON object that defines the configurations you want.
 

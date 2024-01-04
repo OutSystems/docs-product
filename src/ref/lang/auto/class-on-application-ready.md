@@ -1,7 +1,5 @@
 ---
 summary: The On Application Ready action initializes app settings during the home module load in Mobile and Reactive Web Apps
-kinds: ServiceStudio.Model.SystemClientActions+OnApplicationReady+Kind
-tags:
 locale: en-us
 guid: b89718c6-8e22-4481-a4ea-6481e349e206
 app_type: mobile apps, reactive web apps

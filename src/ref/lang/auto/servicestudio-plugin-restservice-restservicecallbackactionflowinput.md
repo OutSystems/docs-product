@@ -1,5 +1,5 @@
 ---
-kinds: ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowInputDescriptor
+summary: 
 helpids: 30062
 locale: en-us
 guid: ae9680b9-818f-483a-ab48-e368e6f97b8c

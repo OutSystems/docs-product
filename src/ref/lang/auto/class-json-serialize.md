@@ -1,7 +1,5 @@
 ---
 summary: JSON Serialize logic action reference
-tags: JSON;JSON Serialize
-kinds: ServiceStudio.Model.Nodes+JSONSerialize+Kind
 helpids: 30002
 locale: en-us
 guid: a1cf5074-f5ba-48cf-a229-206358fd55c0

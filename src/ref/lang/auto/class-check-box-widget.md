@@ -1,7 +1,6 @@
 ---
-kinds: ServiceStudio.Model.WebWidgets+CheckBox+Kind, ServiceStudio.Model.WebWidgets+ReferenceCheckBox+Kind
 helpids: 4026
-tags: runtime-traditionalweb
+tags: 
 locale: en-us
 guid: 3facb0e8-ae9c-4efa-95ea-27bacf9806fa
 app_type: traditional web apps

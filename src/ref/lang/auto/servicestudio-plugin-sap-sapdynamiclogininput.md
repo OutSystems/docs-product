@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Plugin.SAP.SapDynamicLoginInputDescriptor
 helpids: 30070
 locale: en-us
 guid: 831bea2d-593d-47b1-a5f0-00862c4232ea

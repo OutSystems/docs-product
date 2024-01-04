@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Plugin.SAP.SapActionOutputDescriptor
 helpids: 30067
 locale: en-us
 guid: 4ce0e5f5-6bad-48f9-9685-88693679ab22

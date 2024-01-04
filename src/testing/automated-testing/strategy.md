@@ -1,5 +1,5 @@
 ---
-en_title: Automated Testing Strategy
+summary: 
 guid: 43ac8c54-9bb3-4dd7-be5d-0301eeee07f9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -119,7 +119,7 @@ Mocking services are used to simulate real services used in a given functionalit
 
 This is very useful to pinpoint potential problems during testing. If we have a set of tests on a given functionality that are using mocking services to simulate an external system, and all execute successfully, then we know our application logic is okay. But if we have another set of tests on the same functionality that instead communicate with the actual external system, and they fail, then we know that the problem is at the integration level.The problem is that the API changed or the external system is down. This is a technique called contract testing.
 
-![Strategy integration points](images/strategy-integration-points.png)
+![Diagram showing the strategy for integration points in automated testing, highlighting the use of mocking services to simulate real services and eliminate dependencies from external systems.](images/strategy-integration-points.png "Integration Points Strategy for Automated Testing")
 
 This implies that when the external service is called, the application needs to be aware if it is running in the context of a test execution, and if mocking will apply in external dependencies. Some tests will want to use mocking, and some won't. For this reason, we recommend that you define a separate mocking services framework to provide two simple functionalities:
 
@@ -138,19 +138,19 @@ Because the MockingServices module is generic and will be used by all domains, e
 
 This is what the architecture should look like:
 
-![Mocking Services Architecture](images/strategy-mockingservices-architecture.png)
+![Architecture diagram of the mocking services framework, depicting the relationship between the central MockingServices module and various DomainMockingServices modules for different domains.](images/strategy-mockingservices-architecture.png "Mocking Services Framework Architecture")
 
 ### Mocking in REST APIs
 
 In the context of REST API methods, simply add the testing mode validation to the "OnBeforeRequest" event action, and if it returns true, customize the request URL to point it to the destination mock service, as shown in this picture.
 
-![Mocking REST APIs](images/strategy-mocking-rest.png)
+![Illustration of the process for mocking REST APIs during automated testing, focusing on the OnBeforeRequest event action and the redirection to the mock service URL.](images/strategy-mocking-rest.png "Mocking REST APIs Process")
 
 ### Mocking in SOAP APIs
 
 In the context of SOAP API methods, add testing validation before calling the actual service method. If it returns true, override the target URL by calling the "SetWebReferenceURL" action from the "EnhancedWebReferences" module. Here's a small example:
 
-![Mocking SOAP APIs](images/strategy-mocking-soap.png)
+![Example showing how to implement mocking for SOAP APIs in automated testing, including the use of the SetWebReferenceURL action to override the target URL.](images/strategy-mocking-soap.png "Mocking SOAP APIs Example")
 
 ### MockingServices Sample Module
 
@@ -158,7 +158,7 @@ This is a brief description of a possible implementation for this module, with a
 
 #### Data tab
 
-![Mocking data services](images/strategy-mockingservices-data.png)
+![Screenshot of the data model for mocking services, featuring site properties and entities for managing domain-specific mocking configurations.](images/strategy-mockingservices-data.png "Mocking Services Data Model")
 
 ##### Site Properties
 
@@ -175,7 +175,7 @@ DomainMocking
 
 #### Logic Tab
 
-![MockingService Logic](images/strategy-mockingservices-logic-ss.png)
+![Screenshot of the logic tab for the MockingServices module, detailing the public actions available for setting and checking domain mocking status, and the exceptions that can be thrown.](images/strategy-mockingservices-logic-ss.png "Mocking Services Logic Overview")
 
 ##### Public Actions
 
@@ -200,4 +200,4 @@ The module keeps the domain name in a site property and wraps the actions from t
 
 Here's a sample of what one of these DomainMockingServices modules looks like:
 
-![Mocking domain services](images/strategy-domainmockingservices.png)
+![Sample implementation of the DomainMockingServices module, showing how it abstracts the MockingServices module's functionality for domain-specific usage in automated testing.](images/strategy-domainmockingservices.png "Domain Mocking Services Module Sample")

@@ -1,5 +1,5 @@
 ---
-en_title: OutSystems Testing Guidelines
+summary: 
 guid: 5b8189ce-c413-481c-ba0a-ef1598996630
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -121,7 +121,7 @@ So, how do you decide which tests to automate? Well, we like the approach Angie 
 
 Test automation greatly reduces regression testing on increasingly complex or mission-critical systems. It is also a critical part of any continuous delivery approach. When choosing which tests to automate, it’s highly advisable to adopt the [Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) approach, which states that test automation effort should be distributed according to a pyramid shape, with component tests on the bottom layer and moving all the way up to E2E tests. The reason for this is that component tests are easy to write and maintain, as well as very fast to run, whereas E2E tests are typically unstable, hard to maintain, and very time consuming to execute.
 
-![Testing pyramid](images/guidelines-testing-pyramid-diag.png)
+![Diagram of the Testing Pyramid strategy for test automation, showing the distribution of component tests, integration tests, and end-to-end tests.](images/guidelines-testing-pyramid-diag.png "Testing Pyramid Strategy Diagram")
 
 A key concept for implementing the Testing Pyramid is to write testable applications. In OutSystems, this means adopting the [4-Layer Canvas architecture principles](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) and distributing functionality into small, testable pieces. For instance, all business entities reside in core layer modules and are wrapped by public server actions that validate data correctness, dependencies, and calculations. No business logic should be in Screen actions because these are not testable with component tests.
 

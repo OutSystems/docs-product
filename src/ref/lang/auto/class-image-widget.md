@@ -1,7 +1,6 @@
 ---
-kinds: ServiceStudio.Model.WebWidgets+Image+Kind, ServiceStudio.Model.WebWidgets+ReferenceImage+Kind
 helpids: 4044
-tags: runtime-traditionalweb
+tags: 
 locale: en-us
 guid: 4246f32d-ed38-4f0f-9585-653d7247cf8c
 app_type: traditional web apps

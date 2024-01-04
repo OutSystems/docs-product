@@ -1,7 +1,5 @@
 ---
 summary: Reference information on the Expression widget for displaying a text literal or an expression to calculate at runtime on the screen.
-tags: outsystems-designing-screens; reference; designing-screens; expression
-kinds: ServiceStudio.Plugin.NRWidgets.ExpressionDescriptor
 helpids: 30028
 locale: en-us
 guid: b5b035e8-ea51-41bb-ab1a-92dcb8db2013

@@ -1,5 +1,5 @@
 ---
-en_title: Component Testing
+summary: 
 guid: 0f836bfe-225b-41b0-851e-91b04544362c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -17,7 +17,7 @@ For component testing, we recommend using the [BDDFramework](https://www.outsyst
 
 The framework has four different web blocks available to build your tests. For each test scenario, you'll need a BDDScenario web block to represent it.
 
-![](images/component-bdd-webblocks.png)
+![Screenshot of the BDDFramework web blocks used for building test scenarios in OutSystems.](images/component-bdd-webblocks.png "BDDFramework Web Blocks")
 
 <!-- BDDFramework Web Blocks  -->
 
@@ -41,7 +41,7 @@ Consider the example architecture below. We can clearly see that for each OutSys
 * For OutSystems 11 or higher, if it's loosely coupled to the core app and only references service actions and entities, then the test app must be loosely coupled as well.
 * If it only references the core app through REST/SOAP APIs, then the test application may only reference REST/SOAP from the core test app too. 
 
-![](images/component-test-code-isolation-1.png)
+![Diagram illustrating the separation between OutSystems applications and their corresponding test applications.](images/component-test-code-isolation-1.png "Component Test Code Isolation")
 
 In terms of dependencies between a test application and OutSystems applications, the test application should only reference: 
 
@@ -50,7 +50,7 @@ In terms of dependencies between a test application and OutSystems applications,
 
 Complying to these rules ensures that the developed tests do not introduce any unwanted dependencies that could potentially impact the deployment plans when promoting new application and/or test code to other environments. 
 
-![](images/component-test-code-isolation-2.png)
+![Diagram showing the allowed dependencies between a test application and OutSystems applications.](images/component-test-code-isolation-2.png "Test Application Dependencies")
 
 ### Reusability 
 
@@ -66,7 +66,7 @@ Notice that it is perfectly fine, and even sometimes desirable, to reuse common 
 
 For simplicity sake, we earlier described that you start defining a test scenario by dragging the BDDScenario web block directly onto your test screen. Furthermore, as a best practice when implementing component testing with the BDD Framework, we recommend you group multiple tests in the same test screen. These tests can be grouped by whatever criteria the team agrees on, such as requirement, functionality, or concept.
 
-![](images/component-design-patterns.png)
+![Screenshot demonstrating how multiple tests are grouped in the same test screen within the OutSystems environment.](images/component-design-patterns.png "Component Test Design Patterns")
 
 By following this approach, each test implements in its own separate web block instead of directly in the test screen. After each test web block is implemented, they can enter the test screen along with the FinalResult web block. When you access the screen, all tests included run just as if they were defined directly on the screen.
 

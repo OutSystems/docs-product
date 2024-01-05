@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integ
 
 # Troubleshoot a REST API
 
-OutSystems keeps track of all requests and responses of your REST API, namely, a time log of all request/response activity and content.
+OutSystems keeps track of all requests and responses of your REST API, such as, a time log of all request/response activity and content.
 
 You can configure the detail level of the logs that OutSystems keeps for each REST API, for example,increasing the logging level of a given REST API while troubleshooting an issue. Check [Set the logging level of REST and SOAP integrations](../log-levels-set.md) for more information.
 

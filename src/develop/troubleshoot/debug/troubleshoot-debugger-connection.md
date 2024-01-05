@@ -166,7 +166,7 @@ _Note:_ If you installed iTunes from the Microsoft Store you must have iTunes ru
 
 <div class="info" markdown="1">
 
-For checking network requests in iOS apps built with MABS 6.0 and later, use the [build-in network inspection tool](../inspect-http-requests-mobile.md).
+For checking network requests in iOS apps built with MABS 6.0 and later, use the [build-in network inspection tool](https://www.outsystems.com/tk/redirect?g=2bea2ff9-7655-4952-a00c-2a3f1e3316e9).
 
 </div>
 

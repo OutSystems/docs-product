@@ -519,7 +519,7 @@
         - href: develop/troubleshoot/trace-executed-queries.md
         - href: develop/troubleshoot/solve-common-mobile-app-development-issues.md
         - href: develop/troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md
-        - href: develop/troubleshoot/inspect-http-requests-mobile.md
+
     # Merge the Work
     - href: develop/merge/intro.md
     - topics:

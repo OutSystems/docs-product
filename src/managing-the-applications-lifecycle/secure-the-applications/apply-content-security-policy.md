@@ -64,7 +64,6 @@ By design, the Content Security Policy on the app level overrides the same polic
 
 If you don’t have **LifeTime** installed, configure CSP in each environment using the environment management console, **Service Center**.
 
-
 ### For an environment
 
 To configure CSP for all apps in an environment in Service Center:
@@ -179,5 +178,5 @@ To confirm if the CSP headers are being applied, one can use the browser's devel
 If the headers are either not present or are different from what you expected, we recommend checking the following:
 * Confirm that the application and its dependencies were published after the configuration of the Content Security Policies. Otherwise, the settings are not made effective;
 * Validate if the CSP configurations set at the application level are not different than the ones set for the whole environment. CSP headers at application level will overwrite the environment level configurations;
-* Confirm that no Factory Configurations' Shared Configuration is manipulating the CSP headers. If the is an existing Shared Configuration adding custom headers which is associated to existing modules, it will overwrite the CSP configurations defined in LifeTime. We recommend managing CSP headers only via Lifetime.
+* Confirm that no Factory Configurations' Shared Configuration is manipulating the CSP headers. If there is an existing Shared Configuration adding custom headers which is associated to existing modules, it will overwrite the CSP configurations defined in LifeTime. We recommend managing CSP headers only via Lifetime.
 

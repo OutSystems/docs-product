@@ -52,6 +52,15 @@ In this example, there's a screen with an aggregate named **GetEmployees**. This
 
 In this example, there's an integration with an external service, where the service credentials, such as password, must be protected.
 
+<div class="info" markdown="1">
+
+To avail of the secret site property functionality, the following is required:
+* LifeTime 11.20.1
+* Platform Server 11.25.0
+* Service Studio 11.54.35
+
+</div>
+
 1. On the **Data** tab, right-click **Site Properties** and select **Add Site Property**.
 
 1. Set the site property's **Name** to **ServicePassword** and the **Data Type** to **String**. 

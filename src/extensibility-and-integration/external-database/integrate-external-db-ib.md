@@ -205,12 +205,6 @@ If you are integrating with DB2 iSeries, PostgreSQL, Aurora PostgreSQL, MySQL, O
 
     To view the attributes of a table, select the relevant table.
 
-    <div class="info" markdown="1">
-
-    Once you select a collection, the **Access Type** option appears. To only allow reading data and prevent writing data for that collection, select the **Read-only** checkbox for the given collection.
-
-    </div>
-
     ![Screenshot displaying the interface for adding tables to an integration in Integration Builder](images/add-tables-ib.png "Add Tables to Integration")
 
 When you publish the integration, the selected tables are represented as entities in Service Studio.

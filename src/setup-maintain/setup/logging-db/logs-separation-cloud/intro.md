@@ -76,3 +76,4 @@ You'll no longer be able to [query the database directly to access the log datab
 * Use the [CentralizedPlatformLogs extension](centralized-platform-logs-extension.md).
 
 * Use [Log Streaming](https://www.outsystems.com/tk/redirect?g=75f48471-6193-4149-abf4-29c15e75c1f6).
+

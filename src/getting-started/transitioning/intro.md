@@ -12,20 +12,18 @@ figma:
 
 <div class="info" markdown="1">
 
-To help you understand Service Studio, OutSystem's integrated development environment (IDE), the following short video introduces the IDE and its elements: [Service Studio: Walkthrough](https://learn.outsystems.com/training/journeys/web-developer-662/service-studio-walkthrough/o11/2352)
+To understand the IDE (Service Studio), it may be helpful to watch this short video introducing the elements around it first: [Service Studio: Walkthrough](https://learn.outsystems.com/training/journeys/web-developer-662/service-studio-walkthrough/o11/2352)
 
 </div>
 
-If you're already experienced in traditional 'hand coding' development, you may feel a little lost trying to learn OutSystems - primarily because it's not a matter of typing something else instead of what you are used to typing, but because you have to navigate a new visual IDE and you need to understand how what you are used to typing can be done within the OutSystems visual paradigm.
+If you're already versed in traditional "hand coding" development, you may feel lost trying to learn OutSystems - primarily because it's not a matter of typing something else instead of what you are used to typing, but you have to be able to navigate around a new visual IDE (Service Studio), and also need to understand how what you are used to "typing" can be done within the OutSystems "visual paradigm".
 
-However, once you understand the basic OutSystems concepts and become familiar with the IDE, your learning and productivity can accelerate exponentially.
+Luckily, once you understand the basic OutSystems concepts and get used to how the IDE is laid out, we expect your learning and productivity accelerate at an exponential pace.
 
-To help with the initial learning curve that many traditional developers encounter while transitioning to OutSystems, this section provides a few helpful documents:
+To assist with the "initial learning hump" that many traditional developers encounter while transitioning to OutSystems, this section provides a few helpful documents:
 
-* [Developer cheat sheet](resources/Developer-Cheat-Sheet-v0.6.pdf)
-* [OutSystems main concepts](resources/OutSystems-Main-Concepts-v0.6.pdf)
-
-**Note**: These resources are not meant to make you an expert in OutSystems - there is plenty of training and documentation for that.  
+* [Developer Cheat Sheet](dev-cheat-sheet.md)
+* [OutSystems Main Concepts](os-language-concepts.md)
 
 ## Related information
 
@@ -35,5 +33,3 @@ To help with the initial learning curve that many traditional developers encount
 * [OutSystems for Java Developers](https://learn.outsystems.com/training/journeys/outsystems-for-java-developers-456)
 * [Getting Started with OutSystems for PHP Developers](https://learn.outsystems.com/training/journeys/outsystems-for-php-developers-457)
 * [Hello World (on Steroids)](https://learn.outsystems.com/training/journeys/hello-world-699)
-
-

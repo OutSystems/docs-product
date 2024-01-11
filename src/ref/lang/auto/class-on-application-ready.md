@@ -15,12 +15,14 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-Your app runs the **On Application Ready** during the loading of the home module. Use **On Application Ready** to set up the app, for example, to initialize variables and mobile plugins.
+The **On Application Ready** action runs when navigating to a module. Use **On Application Ready** to set up the app, for example, to initialize variables and mobile plugins.
 
-Up to Platform Server version 11.16.0, the **On Application Ready** action runs asynchronously, and doesn't block the render of the screens.
-On Platform Server version 11.16.1 and higher, the **On Application Ready** action runs synchronously and blocks screen render.
+**On Application Ready** action runs synchronously and blocks the screen render. This means that when navigating to a module for the first time, the accessed screen will render only after **On Application Ready** completes.
 
-Note that **On Application Ready** by design runs only during the loading of the home module. This means that the app ignores this action in the non-home modules.
+After the first execution, navigations between screens from the same module don't trigger **On Application Ready**. This includes navigating to other screens using 
+[External Site](class-external-site.md) or [Destination](class-destination.md), navigating back to a previous screen, etc. However, if you navigate to a screen of a different module, the **On Application Ready** of that module is executed.
+
+Note that **On Application Ready** is executed if the user types or refreshes the url of a screen directly in the browser address bar. This causes the corresponding module to reload.
 
 To add the **On Application Ready** action to a Mobile or Reactive Web App do the following in Service Studio:
 

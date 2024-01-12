@@ -129,7 +129,6 @@ First of all, check if you have any notification referring to the USB mode, like
 
 If you find these options, try to switch between them (`MTP`, `PTP` and `Camera` modes), disconnecting and reconnecting the device to the PC, and retrying the device discovery in Service Studio.
 
-
 ### USB Debugging was not allowed in device { #usb-debugging-was-not-allowed-in-device }
 
 Whenever an Android device is connected to a PC, a request to allow USB Debugging is shown on the device. This request should be accepted so that Service Studio can communicate with the device.
@@ -144,23 +143,22 @@ Only one device from each platform (Android/iOS) can be connected to the PC for 
 
 Ensure that you only have one Android device connected to your PC.
 
-
 ## Issues While Connecting an iOS Device
 
 Check the following sections for more information on how to solve these issues:
 
-* [iTunes is not installed on your PC](<#itunes-is-not-installed-on-your-pc>)
+* [Missing programs and/or libraries](<#itunes-is-not-installed-on-your-pc>)
 * [Web Inspector is not enabled on your device](<#web-inspector-is-not-enabled-on-your-device>)
 * [PC is not trusted for debugging](<#pc-is-not-trusted-for-debugging>)
 * [More than one iOS device is connected to your PC](<#more-than-one-ios-device-is-connected-to-your-pc>)
 
-### iTunes is not installed on your PC { #itunes-is-not-installed-on-your-pc }
+### Missing programs and/or libraries { #missing-programs-andor-libraries }
 
-One of the requirements for the debugger to work with iOS devices is the iTunes installation on the machine where Service Studio is executing. Please make sure that you have it installed on your machine before trying to perform any debug session with an iOS device.
+If you are running Service Studio on Windows, for the debugger to work with iOS devices, you must have iTunes installed.
 
 [Download the latest version](<https://www.apple.com/itunes/download/>) from Apple's website.
 
-_Note:_ If you installed iTunes from the Microsoft Store you must have iTunes running to be able to debug OutSystems mobile apps in iOS devices.
+**Note**: If you installed iTunes from the Microsoft Store, you must have iTunes running to be able to debug OutSystems mobile apps on iOS devices.
 
 ### Web Inspector is not enabled on your device { #web-inspector-is-not-enabled-on-your-device }
 

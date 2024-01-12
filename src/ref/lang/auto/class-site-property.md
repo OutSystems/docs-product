@@ -10,7 +10,13 @@ summary: The article explains how to create and use a site property in an applic
 
 # Site property
 
-A site property is a global variable that has a constant value, or a value that doesn't change often.  
+A site property is a global variable that has a constant value, or a value that doesn't change often.
+
+By design, Site Property values have a 2000 character limit. The *usable number of characters* of a Site Property value can be lesser than 2000 characters depending on different scenarios:
+
+* It is set as a Secure Site Property.
+* The Encoding of the value.
+* The Platform's database character encoding configuration.
 
 ## How to use site properties
 

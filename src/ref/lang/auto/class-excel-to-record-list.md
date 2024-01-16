@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Model.Nodes+ExcelToRecordList+Kind
 helpids: 10001
 summary: Use Excel To Record List when you need to load data from an Excel file in your app at runtime.
 locale: en-us

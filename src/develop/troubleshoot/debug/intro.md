@@ -54,33 +54,45 @@ While developing **Traditional Web apps** you can also [debug modules in your Pe
 
 There are different ways of debugging a mobile app that help you discover, understand, and fix issues. You can debug your mobile app in one of the following ways:
 
-Emulate the mobile app using the Google Chrome browser in your PC
-:   Use the Chrome browser in your PC to debug your mobile app if you don't need to execute native plugins, as the native plugins can't run in PC. This option is convenient to test the logic of the app. However, to check the performance or experience of the mobile app, test your app on a real device.
-    Also consider this scenario if all the native plugins in the mobile app have action wrappers defined that return mock data when the plugin isn't available. For more information, check the Best Practices topic on [creating wrapper actions for native plugins](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Define_Fallbacks_for_Your_Native_Plugins>).
+* **Emulate the mobile app using the Google Chrome browser on your PC**
 
-Install the Mobile App on a Device
-:   Test the mobile app directly on a device as your users would run it. It's the best place to test the performance and experience of your app. You can do it in an iOS or Android device. Generate the native app package for your app in Service Studio using the `Debug` (Android) or `Development` (iOS) build type, install it in the device, and follow the steps below according to your mobile device platform.
+    Use the Chrome browser on your computer to debug your mobile app if you don't need to execute native plugins, as native plugins can't run on a personal computer. This option is convenient to test the logic of the app. However, to check the performance or experience of the mobile app, test your app on a real mobile device. Also, consider this scenario if all the native plugins in the mobile app have action wrappers defined that return mock data when the plugin isn't available. For more information, refer to the best practices topic on [creating wrapper actions for native plugins](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Define_Fallbacks_for_Your_Native_Plugins>).
 
-    To test a mobile app on an iOS device:
+* **Install the mobile app on a device**
+
+    Test the mobile app directly on a device as your users would run it. It's the best place to test the performance and experience of your app. You can do it on an iOS or Android device. Generate the native app package for your app in Service Studio using the Debug (Android) or Development (iOS) build type, install it on the device, and follow the steps below according to your mobile device platform and computer operating system.
+
+    * **To test a mobile app on an iOS device running on Service Studio:**
     
-    1. On your **PC**, install [iTunes](<https://www.apple.com/itunes/download/>).
-    1. In your **device**, turn the "Web Inspector" option **on**. For detailed instructions see [Troubleshoot Debugger Connection Issues](<troubleshoot-debugger-connection.md#web-inspector-is-not-enabled-on-your-device>).
-    1. Connect your mobile device to the PC through a USB cable.
-    1. In your **device**, allow the PC to debug on the device.
+        1. On your **Windows computer**, install [iTunes](<https://www.apple.com/itunes/download/>) (this step is not necessary if you're running Service Studio on a MacOS computer).
+
+        1. On your **device**, turn the **Web Inspector** option **On**. 
+        
+            For detailed instructions, refer to [Troubleshoot Debugger Connection Issues](<troubleshoot-debugger-connection.md#web-inspector-is-not-enabled-on-your-device>).
+
+        1. Connect your device to the computer using a USB cable.
+
+            The **Trust This Computer** popup is displayed on your device.
+
+        1. Click **Trust** to allow debugging on the device.
     
-    To test a mobile app on an Android device:
+    * **To test a mobile app on an Android device**:
     
-    1. In your **device**, turn [USB debugging ON](<https://developer.android.com/studio/debug/dev-options.html#enable>).
-    1. Connect your mobile device to the PC through a USB cable.
-    1. In your **device**, allow the PC to debug on the device.
-    
-    For more help, check [Troubleshoot Debugger Connection Issues](<troubleshoot-debugger-connection.md>).
+        1. On your **device**, turn [USB debugging On](<https://developer.android.com/studio/debug/dev-options.html#enable>).
+
+        1. Connect your mobile device to the computer using a USB cable.
+
+            The **Allow USB debugging** popup is displayed.
+
+        1. Click **Allow** to allow debugging on your device.
+
+For more information, refer to [Troubleshoot Debugger Connection Issues](<troubleshoot-debugger-connection.md>).
 
 If you need to troubleshoot app crashes, a plugin or check the native code of apps, debug your apps with the mobile platform's native tools, such as Android Studio for Android and Xcode for iOS. Before debugging using the native tools, you must generate a mobile package with `Debug` (Android) or `Development` (iOS) build type.
 
 <div class="info" markdown="1">
 
-See also recommendations in [Solve Common Mobile App Development Issues](<../solve-common-mobile-app-development-issues.md>) and [Best Practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>). These resources have useful tips that might save you some troubleshooting time.
+For more information, refer to [Solve Common Mobile App Development Issues](<../solve-common-mobile-app-development-issues.md>) and [Best Practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>). These resources have useful tips that might save you some troubleshooting time.
 
 </div>
 

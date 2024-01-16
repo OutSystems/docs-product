@@ -1,6 +1,6 @@
 ---
 summary: How to export text for translation and import back translated text.
-tags: support-application_development
+tags: 
 locale: en-us
 guid: f5ec781d-b346-4f47-b4cc-1ccb94a50312
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -27,7 +27,7 @@ To export the translatable text from your module follow these steps in Service S
 2. In the menu select one of the options to export in the format you want:
 
     * **To Excel**. Exports all translatable text to a single Excel file.
-    * **To .resX (.NET resource format)**. Exports all translatable text to the .resX files.
+    * **To .resX (.NET resource format)**. Exports all translatable text to the .resX files ([not available in the cross-platform Service Studio](../../../setup-maintain/setup/limitations.md)).
 
 3. Select the export location and click **OK**.
 

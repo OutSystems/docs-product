@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Model.Variables+ClientVariable+Kind
 helpids: 30206
 locale: en-us
 guid: 06f35415-71b9-4dae-9f3a-eba708d514bf

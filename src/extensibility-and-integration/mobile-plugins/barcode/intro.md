@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use the Barcode Plugin to scan barcodes and QR codes.
+summary: Learn how to use the barcode plugin to scan barcodes and QR codes.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 22ea5600-8b2b-4ad3-8e64-06e512155c58
@@ -7,7 +7,7 @@ app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=807:385
 ---
-
+ 
 # Barcode Plugin
 
 <div class="info" markdown="1">

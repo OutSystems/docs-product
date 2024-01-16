@@ -1,7 +1,4 @@
 ---
-kinds: ServiceStudio.Model.Nodes+SendEmail+Kind, ServiceStudio.Model.ProcessNodes+SendEmailActivity+Kind
-helpids: 0
-tags: runtime-traditionalweb
 locale: en-us
 guid: 73d29c1b-5be0-4ebc-9828-0c0aaaff142b
 app_type: traditional web apps

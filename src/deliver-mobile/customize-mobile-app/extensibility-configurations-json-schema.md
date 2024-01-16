@@ -152,7 +152,7 @@ The following section provides more details about the options you can use in the
 | InitLoggerSyncDelay             | Android        | 0       | Seconds to delay the logger synchronization after the initialization.         |
 | RemoveUserCertificates          | Android        |true for MABS ≥ 9; <br/> false for MABS &lt; 9| Set to true to remove user certificates from the trust anchors in network_security_config.xml.         |
 | FilterTouchesWhenObscured | Android |true for MABS ≥ 9<br/> false for MABS &lt; 9| Defines the value of the filterTouchesWhenObscured property of WebView on Android. Set to true to prevent the app from handling touches while obscured by other apps. Learn more about filterTouchesWhenObscured [here](https://developer.android.com/reference/android/view/View#security).|
-| DisableInspectorNotification | iOS | false | Set to true to remove the notification from the [Network inspector](../../develop/troubleshoot/inspect-http-requests-mobile.md) plugin in iOS debug builds. |
+| DisableInspectorNotification | iOS | false | Set to true to remove the notification from the [Network inspector](https://www.outsystems.com/tk/redirect?g=2bea2ff9-7655-4952-a00c-2a3f1e3316e9) plugin in iOS debug builds. |
 | DeepLinksHandlerType | Android, iOS | default | Defines how the mobile app [handles deeplinks](customize-deeplink-behavior.md). This can have 4 possible values: `default`, `event`, `function` or `legacy`. |
 
 ## Constraints

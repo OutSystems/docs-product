@@ -1,7 +1,6 @@
 ---
-kinds: ServiceStudio.Model.WebWidgets+ComboBox+Kind, ServiceStudio.Model.WebWidgets+ReferenceComboBox+Kind
 helpids: 4027
-tags: runtime-traditionalweb
+tags: 
 locale: en-us
 guid: 2ad09f6b-4508-4db2-b84a-3ce248492fc3
 app_type: traditional web apps

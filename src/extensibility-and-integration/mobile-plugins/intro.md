@@ -22,7 +22,7 @@ Plugins provide important functionalities to native mobile apps, letting you use
 
 The table shows the OutSystems-supported mobile plugins that you can find in the Forge repository. Some of them are already supported when distributing your app as a Progressive Web App (PWA).
 
-You may also create mobile plugins by [wrapping an Apache Cordova plugin into a module](<using-cordova-plugins.md>).
+You may also create mobile plugins by [wrapping an Apache Cordova plugin into a module](./cordova-plugin/intro.md).
 
 Plugin | Description | Supported in PWA
 -------|-------------|---

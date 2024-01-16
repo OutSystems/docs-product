@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Model.Variables+LocalVariable+Kind
 helpids: 1013
 summary: A Local Variable exists only in the scope of its parent element.
 locale: en-us

@@ -1,7 +1,5 @@
 ---
-kinds: ServiceStudio.Model.WebWidgets+EmailLink+Kind, ServiceStudio.Model.WebWidgets+Link+Kind, ServiceStudio.Model.WebWidgets+ReferenceEmailLink+Kind, ServiceStudio.Model.WebWidgets+ReferenceLink+Kind
 helpids: 4028
-tags: runtime-traditionalweb
 locale: en-us
 guid: ecc756d6-3965-4b19-a3e8-309fd3b87b0d
 app_type: traditional web apps

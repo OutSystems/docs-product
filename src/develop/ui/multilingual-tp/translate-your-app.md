@@ -114,7 +114,13 @@ You can get information about the current language with the [GetCurrentLocale bu
 
 ## Working with Static Entities
 
-Follow these steps to translate the text in Static Entities and show the translation in the app. 
+<div class="info" markdown="1">
+
+Text Identifiers in Static Entities cannot be translated.
+
+</div>
+
+Follow these steps to translate the text in Static Entities and show the translation in the app.
 
 1. In the [translation editor](translation-editor.md), search for the text you want to translate and set **Behavior** to **Translate**.
 

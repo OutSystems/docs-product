@@ -148,7 +148,7 @@ The following systems are certified to integrate with OutSystems.
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2
 * Oracle 12c (12.1 and 12.2, Standard Edition or Enterprise Edition)
-* Oracle 11g R2 (Standard Edition or Enterprise Edition)
+* Oracle 11g R2 (Standard Edition or Enterprise Edition). From Platform Server 11.25.0, Oracle 11g R2 is no longer supported.
 
 The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 

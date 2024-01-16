@@ -1,5 +1,5 @@
 ---
-kinds: ServiceStudio.Plugin.SAP.SapActionDescriptor
+summary: 
 helpids: 17253
 locale: en-us
 guid: 602fe7e6-6a83-449a-8d9f-4dff8831755b

@@ -1,6 +1,4 @@
 ---
-kinds: ServiceStudio.Model.ProcessNodes+HumanActivity+Kind, ServiceStudio.Model.ReferenceHumanActivity+Kind
-helpids: 0
 locale: en-us
 guid: b8187826-7efd-4154-a3c3-6b810ca5e546
 app_type: traditional web apps, mobile apps, reactive web apps

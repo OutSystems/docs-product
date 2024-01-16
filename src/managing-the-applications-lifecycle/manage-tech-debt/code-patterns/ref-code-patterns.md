@@ -1,7 +1,5 @@
 ---
-tags: article-page
 summary: Up to date list of code patterns analyzed by the current version of AI Mentor Studio.
-en_title: Code Patterns
 locale: en-us
 guid: a7187cf7-6f1d-4f7c-8141-03f856639f08
 app_type: traditional web apps, mobile apps, reactive web apps

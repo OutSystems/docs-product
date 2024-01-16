@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Model.Nodes+WebScreen+Kind, ServiceStudio.Model.ReferenceWebScreen+Kind
 helpids: 4011
 locale: en-us
 guid: 333dff4e-a7da-4b66-903f-041625db4010

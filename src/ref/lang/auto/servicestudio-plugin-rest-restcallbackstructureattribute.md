@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Plugin.REST.RestCallbackStructureAttributeDescriptor
 helpids: 30056
 locale: en-us
 guid: 7338265c-44ce-4afa-acd4-d72324598625

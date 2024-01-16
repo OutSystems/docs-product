@@ -1,7 +1,7 @@
 ---
 tags:
 summary: Learn how to create a simple Line Chart with a Spline line and custom markers in OutSystems.
-locale: en-uscolumnline
+locale: en-us
 guid: 0A9D1277-D008-4B96-8BCF-F559BEE3374C
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11

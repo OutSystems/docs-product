@@ -1,6 +1,5 @@
 ---
 summary: Integration Builder allows anyone to implement complex integrations between an OutSystems application and your enterprise Systems of Records like SAP or Salesforce.
-en_title: Integration Builder
 locale: en-us
 guid: 7d1ada04-3931-44d4-9dc1-654ed40f16f2
 app_type: traditional web apps, mobile apps, reactive web apps

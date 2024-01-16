@@ -1,5 +1,5 @@
 ---
-kinds: ServiceStudio.Plugin.SAP.SapCallbackActionFlowDescriptor
+summary: 
 helpids: 30068
 locale: en-us
 guid: 447f9880-e68f-4858-94ca-8d0b24de4c15

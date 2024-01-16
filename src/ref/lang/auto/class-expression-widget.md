@@ -1,5 +1,4 @@
 ---
-kinds: ServiceStudio.Model.WebWidgets+InlineExpression+Kind, ServiceStudio.Model.WebWidgets+ReferenceInlineExpression+Kind
 helpids: 4020
 tags: runtime-traditionalweb
 locale: en-us

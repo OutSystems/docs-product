@@ -1,7 +1,5 @@
 ---
-kinds: ServiceStudio.Model.WebWidgets+InputPassword+Kind, ServiceStudio.Model.WebWidgets+ReferenceInputPassword+Kind
 helpids: 4025
-tags: runtime-traditionalweb
 locale: en-us
 guid: e908d4d2-b3df-4e78-baf9-c105f9732869
 app_type: traditional web apps

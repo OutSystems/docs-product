@@ -1,6 +1,6 @@
 ---
 summary: Learn how to deploy one application from one environment to another.
-tags: support-Application_Lifecycle-featured
+tags: 
 locale: en-us
 guid: 2a095f90-2b09-4d7c-9013-71a5ac4d9653
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 
 In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>) takes a version of the application from one environment and deploys it in another. Just select the tagged version of the application and LifeTime deploys it in the exact development state in which it was tagged.
 
-**Note:** Application and module names must be unique within each environment and that as you stage, name changes are propagated to the target environments. It is important to keep all environments up to date when changing application or module names to avoid the following scenarios:
+**Note:** Application and module names must be unique within each environment and as you stage, name changes are propagated to the target environments. It is important to keep all environments up to date when changing application or module names to avoid the following scenarios:
 
 - [LifeTime staging aborts after renaming an app or module](https://success.outsystems.com/Support/Troubleshooting/Application_lifecycle/LifeTime_staging_aborts_after_renaming_an_app_or_module)
 
@@ -20,11 +20,11 @@ In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>)
 
 Here's an example of deploying applications in LifeTime.
 
-## Deploy a Web and a Mobile Application
+## Deploy an app in LifeTime
 
 <div class="info" markdown="1">
 
-This example uses Development, Quality, and Production environments. The application environments in your infrastructure may differ.
+This example uses Development, Quality, and Production environments. The applications and environments in your infrastructure may differ.
 
 </div>
 

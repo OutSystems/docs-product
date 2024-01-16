@@ -20,7 +20,7 @@ In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>)
 
 Here's an example of deploying applications in LifeTime.
 
-## Deploy a Web and a Mobile Application
+## Deploy a Traditional/Reactive Web and a Mobile Application
 
 <div class="info" markdown="1">
 

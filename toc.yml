@@ -1422,17 +1422,11 @@
                 - href: ref/lang/auto/class-event.md
                 - href: ref/lang/auto/class-external-site.md
                 - href: ref/lang/auto/class-screen.md
-        # Platform Utilities
-        - href: ref/platform/intro.md
+        # System Events
+        - href: ref/platform/system-events/intro.md
         - topics:
-            # System Events
-            - href: ref/platform/system-events/intro.md
-            - topics:
-                # Mobile
-                - href: ref/platform/system-events/mobile.md
-                - topics:
-                    - href: ref/lang/auto/class-on-application-ready.md
-                    - href: ref/lang/auto/class-on-application-resume.md
+            - href: ref/lang/auto/class-on-application-ready.md
+            - href: ref/lang/auto/class-on-application-resume.md
 
         # Processes
         - href: ref/processes/intro.md

@@ -128,7 +128,7 @@ When adding multiple domains, insert 1 domain per line without any separators af
 | Object-src    |The domains from which applications are allowed to load objects (for `<object>`, `<embed>` and `<applet>` elements).<br/>The following source expressions are allowed: `self` and `*`.|`-`|
 | Plugin-types  |The valid plugins that the user browser may invoke|-|
 | Script-src    |The domains from which applications are allowed to load scripts.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`<br/>`'unsafe-eval'`|
-| Style-src     |The domains from which applications are allowed to load styles.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/><br/>Values added at runtime:<br/>`'unsafe-eval'`|
+| Style-src     |The domains from which applications are allowed to load styles.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`|
 | Frame-ancestors|The domains which are allowed to embed applications in a frame.<br/>The following source expressions are allowed: `self` and `*`.|`self`<br/>`gap:`|
 | Frame-src | There's no dedicated field, but you can use the `Child-src` field to enter the values for the platform to generate the `Frame-src` directive. | `self` |
 | Report-to     |URI where content security violations will be reported.|`<internal>`|

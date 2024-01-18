@@ -1423,7 +1423,7 @@
                 - href: ref/lang/auto/class-external-site.md
                 - href: ref/lang/auto/class-screen.md
         # System Events
-        - href: ref/platform/system-events/intro.md
+        - href: ref/system-events/intro.md
         - topics:
             - href: ref/lang/auto/class-on-application-ready.md
             - href: ref/lang/auto/class-on-application-resume.md

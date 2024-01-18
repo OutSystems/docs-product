@@ -9,3 +9,9 @@ figma:
 ---
 
 # System Events
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>

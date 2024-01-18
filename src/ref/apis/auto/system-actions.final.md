@@ -734,17 +734,17 @@ Persistent
 
 ### LogMessage { #LogMessage }
 
-Registers information that can be presented in Service Center in the module general log.
+With the server side LogMessage action you can register your custom app logs that will be shown in Service Center general logs. When checking these logs in Service Center, the Module field represents the app module that generated the message, or in other words, the module where the LogMessage is consumed. The **Time of Log** and **Module** fields are automatically added when the log is created. You must also add the inputs below.
 
 *Inputs*
 
 Message
-:   Type: mandatory, Text.  
-    The message to add to the module general log. Limited to 2000 chars.
+:   Type: mandatory, Text.
+    The message to add to the module general log. In Service Center, it will show in the **Message** column.
 
 ModuleName
-:   Type: mandatory, Text.  
-    The name of the module to be associated with the log message.
+:   Type: mandatory, Text. It's length is limited to 15 characters, extra characters will be truncated.
+    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance`or `Debug`. It will show in Service Center in the **Source** column.
 
 ### Logout { #Logout }
 
@@ -1055,17 +1055,17 @@ Ascending
 
 ### LogMessage { #Client_LogMessage }
 
-Registers information that can be presented in Service Center in the module general log.
+With the client side LogMessage action you can register your custom app logs that will be shown in Service Center general logs. When checking these logs in Service Center, the Module field represents the app module that generated the message, or in other words, the module where the LogMessage is consumed. The **Time of Log** and **Module** fields are automatically added when the log is created. You must also add the inputs below.
 
 *Inputs*
 
 Message
-:   Type: mandatory, Text.  
-    The message to add to the module general log.
+:   Type: mandatory, Text.
+    The message to add to the module general log. In Service Center, it will show in the **Message** column.
 
 ModuleName
-:   Type: mandatory, Text.  
-    The name of the module to be associated with the log message.
+:   Type: mandatory, Text. It's length is limited to 15 characters, extra characters will be truncated.
+    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance`or `Debug`. It will show in Service Center in the **Source** column.
 
 ### RequireScript { #Client_RequireScript }
 

@@ -9,13 +9,9 @@ figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?ty
 
 # OutSystems 11 to ODC migration
 
-For over 20 years, OutSystems has been committed to ensuring that you, our customers, have access to the latest and greatest capabilities for software delivery. When we built our product, it was because we wanted to make innovation easier so that you can always be at the forefront of it. It is for this same reason that we released OutSystems Developer Cloud (ODC).
+We want to ensure that you can take your existing O11 app portfolio and convert it into native ODC apps. Where once O11 applications are converted and published on ODC they can take advantage of all existing and future ODC capabilities, for example, cloud-native architecture, scaling without limits, and new AI capabilities for businesses and developers.
 
-In keeping with this commitment, OutSystems also wants to ensure that you can take your existing O11 app portfolio and modernize it for native ODC apps. This means that even older apps can take advantage of all existing and future ODC capabilities, for example, cloud-native architecture, scaling without limits, and new AI capabilities for businesses and developers.
-
-![Diagram illustrating the conversion process from OutSystems 11 apps to OutSystems Developer Cloud apps](images/app-conversion-diag.png "O11 to ODC App Conversion Diagram")
-
-To make this opportunity for modernization as easy as possible, OutSystems fully supports you in the migration journey by providing documentation and migration tools to ease and automate a significant part of the work.
+In order to guide you through O11 to ODC code and data migration journey, OutSystems provides documentation and migration tools to ease and automate the process.
 
 ![Graphic representation of the supporting materials provided by OutSystems for the migration from O11 to ODC](images/o11-odc-migration-kit-diag.png "O11 to ODC Migration Support Material")
 
@@ -53,13 +49,11 @@ Migration capabilities will be delivered incrementally, addressing the most comm
 
 ### Stage 1: O11 app portfolio assessment
 
-![Diagram highlighting the outcomes of the O11 app portfolio assessment stage in the migration process](images/migration-process-step-1-diag.png "O11 App Portfolio Assessment Outcomes")
+ODC apps must be architected in a way that allows you to reap the benefits of cloud-native architecture and microservices design, fostering application-independent lifecycle and ownership.
 
-ODC was designed to bring your apps into the cloud-native future. This means that ODC apps must be architected in a way that allows you to reap the benefits of cloud-native architecture and microservices design, fostering application-independent lifecycle and ownership. In summary, ODC enables businesses to be agile and helps them meet the [DevOps Research and Assessment (DORA) metrics standards](https://dora.dev/).
+Once O11 apps are ported over to ODC, for them to truly benefit from all ODC capabilities, it's important to adjust the O11 app portfolio-architecture to align with ODC architecture best practices.  Also, some code patterns are implemented differently on ODC, which means that you will have to validate the suggested conversion.
 
-Once O11 apps are ported over to ODC, for them to truly benefit from all ODC capabilities, it's important to adjust the O11 app portfolio-architecture to align with ODC architecture best practices.  Also, some code patterns are not fully compatible with ODC and must be adjusted accordingly on the O11 side before migration.
-
-To help with the O11 app portfolio assessment, OutSystems is releasing a [set of documents](../migration-to-odc/preparation/process.md). An automatic assessment tool will also be available to help you automate the O11 app portfolio assessment in a way that can be worked seamlessly into your development activities.
+To help with the O11 app portfolio assessment, OutSystems is releasing a [set of documents](../migration-to-odc/preparation/process.md). An automatic assessment tool will also be available to help you automate the O11 app portfolio assessment in a way that can be seamlessly incorporated into your regular development activities.
 
 #### Outcomes
 
@@ -69,13 +63,10 @@ To help with the O11 app portfolio assessment, OutSystems is releasing a [set of
 
 * Overview of the entire factory applicational domains, understanding boundaries and domain prioritization
 
+
 ### Stage 2: Code preparation
 
-![Diagram illustrating the outcomes of the code preparation stage in the O11 to ODC migration process](images/migration-process-step-2-diag.png "Code Preparation Outcomes")
-
-Once you’ve completed your O11 app portfolio assessment, you must adjust your current O11 app portfolio architecture and code to ensure that migrated apps benefit from all ODC benefits. 
-
-Once the O11 app portfolio assessment (stage 1 of migration) is completed, teams will understand what tasks must be addressed before migrating to ODC and can build these steps into sprints, prioritized according to the desired migration timelines.
+Once you’ve completed your O11 app portfolio assessment, you must adjust your current O11 app portfolio architecture and code to ensure that migrated apps benefit from all ODC benefits. You should consider including necessary adjustments into sprints, prioritized according to the desired migration timelines.
 
 #### Outcomes
 
@@ -83,13 +74,12 @@ Once the O11 app portfolio assessment (stage 1 of migration) is completed, teams
 
 * Segregate applicational domains to be able to migrate apps independently
 
-### Stage 3: Code migration
 
-![Diagram detailing the outcomes of the code migration stage from O11 to ODC](images/migration-process-step-3-diag.png "Code Migration Outcomes")
+### Stage 3: Code migration
 
 Once you’ve completed the O11 app portfolio assessment and the code preparation steps for your app portfolio, it’s time to start converting your O11 apps to ODC apps.
 
-During this step, all O11 apps, modules, and extensions are converted into ODC using the conversion tool. The following are some examples of automations that are in place to guarantee that O11 code is mapped into ODC constructs, keeping the same functionality.
+During this step, all O11 apps, modules, and extensions are converted into ODC using the conversion tool. The following are some examples of automations that are in place to guarantee that O11 code is mapped into ODC constructs, keeping the same functionality. For example:
 
 * Replace System references with the ODC equivalent
 * Replace Login and Logout flows
@@ -101,11 +91,10 @@ During this step, all O11 apps, modules, and extensions are converted into ODC u
 
 * Reduce migration lead time and business impact, reducing error-prone occurrences.
 
+
 ### Stage 4: Data migration
 
-![Diagram showing the outcomes of the data migration stage in the transition from O11 to ODC](images/migration-process-step-4-diag.png "Data Migration Outcomes")
-
-Finally, once the code is converted and published on ODC, it’s time to look at data. Data migration tools will be available to ensure that O11 data is correctly migrated to ODC. These tools help you convert data types, foreign keys, data mapping, and identity mapping.
+Finally, once the code is converted and published on ODC, it’s time to look at data. Data migration tools will be available to ensure that O11 data is correctly migrated to ODC. These tools ensure automatic conversion of data types, foreign keys, data mapping, and identity mapping whenever needed.
 
 #### Outcomes
 

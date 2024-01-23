@@ -1,6 +1,6 @@
 ---
 summary: List of System Actions (both server actions and client actions) available in OutSystems, including list operations.
-tags: support-application_development; support-Mobile_Apps; support-webapps
+tags: 
 locale: en-us
 guid: 15b8a38f-a4cc-4bb7-b496-520824990340
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -744,7 +744,7 @@ Message
 
 ModuleName
 :   Type: mandatory, Text. It's length is limited to 15 characters, extra characters will be truncated.
-    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance`or `Debug`. It will show in Service Center in the **Source** column.
+    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance` or `Debug`. It will show in Service Center in the **Source** column.
 
 ### Logout { #Logout }
 
@@ -1065,7 +1065,7 @@ Message
 
 ModuleName
 :   Type: mandatory, Text. It's length is limited to 15 characters, extra characters will be truncated.
-    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance`or `Debug`. It will show in Service Center in the **Source** column.
+    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance` or `Debug`. It will show in Service Center in the **Source** column.
 
 ### RequireScript { #Client_RequireScript }
 

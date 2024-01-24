@@ -61,7 +61,7 @@ To add a Firebase plugin to your mobile app, complete the following steps:
 
 1. In Service Studio, go to **Logic** > **Client Action**, then select your Firebase plugin and use the actions in your logic.
 
-    ![Screenshot of the Logic tab in Service Studio showing Firebase plugin actions](images/plugin-logic-tab-ss.png "Firebase Plugin Logic Tab in Service Studio")
+    ![Shows the Logic tab in Service Studio with the Firebase plugin actions.](images/plugin-logic-tab-ss.png "Firebase Plugin Logic Tab in Service Studio")
 
     <div class="info" markdown="1">
 
@@ -77,7 +77,7 @@ You must provide the plugin configuration file as settings in the Service Studio
 
 1. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
 
-    ![Screenshot of importing google-services.json file into the Resources folder in Service Studio](images/resources-folder-ss.png "Importing Resources in Service Studio")
+    ![Shows importing google-services.json file into the Resources folder in Service Studio](images/resources-folder-ss.png "Importing Resources in Service Studio")
 
 1. Select the **google-services.json** file and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
@@ -85,7 +85,7 @@ You must provide the plugin configuration file as settings in the Service Studio
 
 1. In the **Deploy Action** list, select **Deploy to Target Directory**. Leave the **Target Directory** field empty.
 
-    ![Screenshot showing how to add Firebase configuration files to a mobile app in Service Studio](images/firebase-resources-ss.png "Firebase Configuration Files in Service Studio")
+    ![Shows how to add Firebase configuration files to a mobile app in Service Studio](images/firebase-resources-ss.png "Firebase Configuration Files in Service Studio")
 
 
 1. In your app's Extensibility Configurations, add the following:
@@ -109,7 +109,7 @@ You must provide the plugin configuration file as settings in the Service Studio
 
 1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each environment. For details on pointing the mobile application to the correct configuration files in each environment, see [Override Mobile Extensibility Configurations](../../../managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md).
 
-    ![Screenshot illustrating the process of adding multiple Firebase configuration files for different environments in Service Studio](images/firebase-multiple-configurations-ss.png "Multiple Firebase Configurations in Service Studio")
+    ![Shows the process of adding multiple Firebase configuration files for different environments in Service Studio](images/firebase-multiple-configurations-ss.png "Multiple Firebase Configurations in Service Studio")
 
 ### Additional setup for the Dynamic Links plugin
 
@@ -133,7 +133,7 @@ The Firebase Dynamic Links Plugin requires the following additional setup steps 
 
 Starting with iOS 14.5, apps on the App Store must request the user’s permission to collect tracking data through the AppTrackingTransparency framework. For more information, see [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency).
 
-![Image showing the Firebase request tracking authorization prompt in a mobile application](images/firebase-request-tracking-authorization.png "Firebase Request Tracking Authorization")
+![Shows the Firebase request tracking authorization prompt in a mobile application](images/firebase-request-tracking-authorization.png "Firebase Request Tracking Authorization")
 
 To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin. Apple recommends triggering this prompt as soon as the app loads.
 If you want to present an alert before the iOS tracking permission dialog, enable the parameter **ShowInformation** on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
@@ -170,3 +170,42 @@ By default, an app using the Firebase Analytics plugin is able to trigger the na
 If your app collects user data for advertising purposes, also known as Attribution, within Firebase Analytics context, it must prompt the AppTrackingTransparency framework.
 
 </div>
+
+### Additional information for Firebase Analytics ecommerce events
+
+Starting in version *0.2.0*, Firebase Analytics plugin users can log ecommerce events, which are specifically tailored to collect information about your user's shopping behavior.
+
+It's important to note that Google's ecommerce API enforces a set of constraints for each event. For example, the API ensures you include a ```item_list_id``` parameter when logging a ```view_item_list``` event.
+
+The Firebase Analytics plugin performs the validations when ```LogECommerceEvent``` is invoked. You can find the details of the validations for each event, by following the Google's documentation link, in the list below.
+
+To further illustrate this example, the following shows a typical usage of the ```LogECommerceEvent client action```:
+
+![Shows the Firebase Analytics LogECommerceEvent client action for a ```view_item_list```](images/firebase-ecommerce-run-client-action-ss.png "Firebase Analytics LogECommerceEvent client action example")
+
+Currently, the Firebase Analytics plugin supports the following events:
+
+* [add_payment_info](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#add_payment_info)
+* [add_shipping_info](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#add_shipping_info)
+* [add_to_cart](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#add_to_cart)
+* [add_to_wishlist](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#add_to_wishlist)
+* [begin_checkout](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#begin_checkout)
+* [purchase](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#purchase)
+* [refund](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#refund)
+* [remove_from_cart](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#remove_from_cart)
+* [select_item](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#select_item)
+* [select_promotion](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#select_promotion)
+* [view_cart](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_cart)
+* [view_item_list](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_item_list)
+* [view_item](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_item)
+* [view_promotion](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_promotion)
+
+From the provided entity ```ECommerceEvent```, users can select the event type.
+
+![Shows the ```ECommerceEvent``` entity](images/firebase-entity-ecommerce-event-ss.png "Firebase Analytics LogECommerceEvent entity")
+
+Select the key for each parameter to be included on the event logging from the  ```ECommerceEventParameterKey``` entity.
+
+![Shows the ```ECommerceEvent``` entity](images/firebase-ecommerce-parameterkey-ss.png "Firebase Analytics LogECommerceEvent entity")
+
+For more information on which event requires which parameters, refer to [Google's documentation page regarding 'measure ecommerce'](https://developers.google.com/analytics/devguides/collection/ga4/ecommerce).

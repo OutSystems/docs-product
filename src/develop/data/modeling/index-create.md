@@ -30,7 +30,7 @@ To create an index for an entity:
 1. Enter a name for the index.
     In this example, **OrderProductUnique** is added.
 
-1. If you want this index to be restricted to restrict records only, change the **Unique** property to **Yes**.
+1. If you want this index to be restricted to unique (non-duplicate) records only, change the **Unique** property to **Yes**.
 
     ![Screenshot showing the Unique property toggle set to Yes for a new index in OutSystems](images/change-unique-property-ss.png "Unique Property Toggle")
 

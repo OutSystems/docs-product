@@ -345,7 +345,7 @@ Applies to Mobile Apps and Reactive Web Apps only.
 
 </div>
 
-This event is disabled by default. This means that the event is not generated. Even when the event is enabled, it isn't processed by LifeTime Analytics because Mobile and Reactive Web Apps are not supported in LifeTime Analytics.
+This event is disabled by default. This means that the event is not generated. Even when the event is enabled, it isn't processed by LifeTime Analytics because Mobile and Reactive Web Apps are not supported in LifeTime Analytics. You can enable the ScreenServer event in Factory Configuration under the **Platform Configurations** section.  
 
 This event occurs whenever the server finishes handling a request. This is identical to WebScreenServerExecuted without its client counterpart. The event's properties are the following:
 
@@ -375,8 +375,8 @@ This event occurs whenever the server finishes handling a request. This is ident
 
 #### Request event details for TimerExecuted event { #timerexecuted-details }
 
-This event is disabled by default. This means that the event is not generated. Even when the event is enabled, it isn't processed by LifeTime Analytics because this event is not supported by LifeTime Analytics.
-
+This event is disabled by default. This means that the event is not generated. Even when the event is enabled, it isn't processed by LifeTime Analytics because this event is not supported by LifeTime Analytics. You can enable the TimerExecuted event in Factory Configuration under the **Platform Configurations** section.
+    
 This event occurs whenever the server finishes handling a timer. The event's properties are the following:
 
 | Property | Meaning                               | Description                                                  |

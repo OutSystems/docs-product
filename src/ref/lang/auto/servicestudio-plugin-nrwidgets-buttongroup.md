@@ -5,7 +5,7 @@ locale: en-us
 guid: 018284ce-ede4-43d4-b85b-189b2d5a86ac
 app_type: mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A402&mode=design&t=Ix2yojgoXorQvo4C-1
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=3002%3A373&mode=design&t=t7R0lKcODmSSUet7-1
 ---
 
 # Button Group
@@ -164,10 +164,6 @@ Set of buttons from which the user can select a single option.
 
 ## Note
 
-<p>When used inside List Records or Table Records, you must manually add the attribute name for each radio button that is part of a Button Group so that the platform binds them correctly:</p> 
-<br/>
+When used inside List Records or Table Records, you must manually add the attribute name for each radio button that is part of a Button Group so that the platform binds them correctly:
 
-![Example of a Button Group used inside List Records or Table Records with manually added attribute names for radio buttons](https://user-images.githubusercontent.com/29493222/182202878-60b13063-fa8b-4c14-b61f-8447b1f1e9bd.png "Button Group Usage Example")
-
-
-
+![Example of a Button Group used inside List Records or Table Records with manually added attribute names for radio buttons](images/add-attribute-radio-button-ss.png "Button Group Usage Example")

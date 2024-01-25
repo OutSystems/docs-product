@@ -21,8 +21,7 @@ If you don’t attach the Lambda@Edge functions you created to them, it will not
 
 ## Optimize the number of user agents
 
-Prerender.io caches page per user-agent. When a page is requested from two bots (user agents), Prerender.io charges for two caches, one for each bot.
-Although you might want to publish your website on the leading search engines and social networks, you should limit the bots forwarded to prerender.io. You can define the bots to be included in your prerender policy by modifying the Lambda@Edge function. Include only those bots that are necessary to decrease potential costs.
+You can define the bots to be included in your prerender policy by modifying the Lambda@Edge function. Include only those bots that are necessary to decrease potential costs.
 
 ## Adopt cache / re-cache strategy
 

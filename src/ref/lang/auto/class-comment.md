@@ -15,7 +15,7 @@ If you write **TODO**, **TBD**, or **REMINDER** in uppercase, the comment shows 
 
 You can add links in comments by using the `a` HTML tag. For example: `This a <a href="https:\\www.example.com">link to a website</a>.`
 
-![Screenshot of the Comment tool interface in Service Studio](images/comment-tool-ss.png "Comment Tool Screenshot")
+![Comment tool interface in Service Studio](images/comment-tool-ss.png "Comment Tool Screenshot")
 
 ## Properties
 
@@ -42,7 +42,7 @@ You can add links in comments by using the `a` HTML tag. For example: `This a <a
 <td>Set to Yes to have the comment displayed as a reminder in the TrueChange tab.</td>
 <td>Yes</td>
 <td>No</td>
-<td>The upper-cased keywords TODO, TBD, and REMINDER automatically set the comment as a reminder.</td>
+<td>The upper-cased keywords TODO, TBD, and REMINDER automatically set the comment as a reminder. Removing those keywords won't set 'Is Reminder' to 'No'.</td>
 </tr>
 </tbody>
 </table>

@@ -14,7 +14,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applicatio
 
 <div class="info" markdown="1">
 
-You must subscribe to an add-on to activate log streaming. For more information, contact your Account management team.
+You must subscribe to an add-on to activate log streaming. You must enable log separation before purchasing the log streaming add-on. For more information, contact your Account management team.
 
 </div>
 

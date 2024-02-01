@@ -22,5 +22,6 @@ following:
 
 1. Select the input parameter you wish to redact, and set its **Log Redaction**
    property to **Yes**.
+Note: Authorization input parameter will always be redacted for security measure.
 
     ![Screenshot showing how to set the Log Redaction property to Yes for an input parameter in Service Studio](images/redact-logs-property-ss.png "Setting Log Redaction Property in Service Studio")

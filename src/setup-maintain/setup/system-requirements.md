@@ -45,11 +45,11 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ### Application server
 
-* Microsoft Internet Information Services (IIS) 10.0 or higher configured with a valid SSL certificate emitted by a public certificate authority
+* Microsoft Internet Information Services (IIS) 10.0 or higher configured with a valid SSL certificate emitted by a public certificate authority. The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.
 
 ### Database management system
 
-Use the same type of database engine for all the 3 databases in Platform Server (platform and apps, logs, session). OutSystems does not support a combination of database engines. For example, you cannot use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
+Use the same type of database engine for all the 3 databases in Platform Server (platform and apps, logs, session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
 
 * Microsoft SQL Server 2019 or higher, with compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
 * Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
@@ -60,11 +60,11 @@ Use the same type of database engine for all the 3 databases in Platform Server 
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2
 * Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)
 
-<sup>1</sup> Developer and Express editions of Microsoft SQL Server (any version) are not supported.
+<sup>1</sup> Developer and Express editions of Microsoft SQL Server (any version) aren't supported.
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
-Apart from standard Oracle Database setups, OutSystems Platform 8.0 and onwards works with [Oracle Exadata Database Machines](http://www.oracle.com/us/products/database/exadata/overview/index.html) running with Oracle Linux 5.5 or higher.
+Apart from standard Oracle Database setups, OutSystems platform 8.0 and onwards works with [Oracle Exadata Database Machines](http://www.oracle.com/us/products/database/exadata/overview/index.html) running with Oracle Linux 5.5 or higher.
 
 ### Additional software requirements
 
@@ -118,10 +118,10 @@ For more information on the available DB instance classes, refer to [Amazon's DB
 OutSystems supports Microsoft Azure SQL Database V12 with the following considerations:
 
 * The database service tier must be at least "S3".
-* The MDC (Multiple Database Catalogs) feature is not supported.
-* Connecting to Azure SQL database using Windows authentication is not supported.
-* Private endpoints are not supported, due to a limitation on how Microsoft implements them.
-* Customizing the timezone from UTC is not supported in Azure SQL database.
+* The MDC (Multiple Database Catalogs) feature isn't supported.
+* Connecting to Azure SQL database using Windows authentication isn't supported.
+* Private endpoints aren't supported, due to a limitation on how Microsoft implements them.
+* Customizing the timezone from UTC isn't supported in Azure SQL database.
 
 OutSystems also supports SQL Server running on an Azure virtual machine.
 
@@ -154,7 +154,7 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 <div class="info" markdown="1">
 
-From OutSystems 11 Platform Server Release Oct.2019 onwards you cannot have integrations with Oracle databases earlier than 11g R2.
+From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integrations with Oracle databases earlier than 11g R2.
 
 </div>
 
@@ -176,13 +176,13 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you cannot have inte
 ### IBM database
 
 * DB2 for iSeries V6R1 or higher
-* **OutSystems** supports integration with DB2 databases hosted in iSeries machines only. It does not support integration with DB2 databases hosted in Unix, Linux, or Windows.
+* **OutSystems** supports integration with DB2 databases hosted in iSeries machines only. It doesn't support integration with DB2 databases hosted in Unix, Linux, or Windows.
 
 <div class="info" markdown="1">
 
 The installation of the IBM i Access Client Solutions - Windows Application Package software is required in all Front-End and Deployment Controller server machines.
 
-The use of double-byte characters with DB2 databases is not supported.
+The use of double-byte characters with DB2 databases isn't supported.
 
 </div>
 
@@ -203,7 +203,7 @@ The use of double-byte characters with DB2 databases is not supported.
 ## Development tools
 
 To develop your applications using OutSystems, you must install **Service Studio** and **Integration Studio** development tools on your desktop.
-You can download the latest version of development tools from the [OutSystems downloads page](https://www.outsystems.com/Downloads/search/Development+Environment/11/).
+You can download the latest version of development tools from the [OutSystems downloads page](https://www.outsystems.com/Downloads/).
 
 ### Service Studio
 
@@ -236,7 +236,7 @@ Before setting up Service Studio make sure that your computer meets the followin
 * Google Chrome version 54 or later, or Microsoft Edge
 :   To perform client-side debugging in Service Studio using a  desktop browser 
 * Android device drivers
-:   To perform client-side debugging on an Android mobile device if the device is not recognized automatically
+:   To perform client-side debugging on an Android mobile device if the device isn't recognized automatically
 * iTunes 12.1.3 or later
 :   To perform client-side debugging on an iOS mobile device
 
@@ -252,7 +252,7 @@ The installation requirements for Integration Studio are as follows:
 
 Limitations:
 
-* The touch feature of touch screen devices is not supported, however, you can use touch screen devices with keyboard and mouse.
+* The touch feature of touch screen devices isn't supported, however, you can use touch screen devices with keyboard and mouse.
 
 #### Operating System
 

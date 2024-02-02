@@ -224,6 +224,7 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 **Windows:**
 
+* Windows 11 (64-bit)
 * Windows 10 (64-bit)
 * Windows 8 (64-bit)
 * Microsoft Windows Server 2019

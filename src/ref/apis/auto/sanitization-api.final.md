@@ -11,15 +11,15 @@ figma:
 # Sanitization API
 
 
-API that provides methods to help you avoid code injection in HTML, JavaScript, and SQL snippets that need to include untrusted content, for example, content gathered from end users.
+API that provides server actions to help you avoid code injection in HTML, JavaScript, and SQL snippets that need to include untrusted content, for example, content gathered from end users. To use the server actions from Sanitization API, add the **Sanitization (extension)** as a dependency.
 
 ## Summary
 
 Action | Description
 ---|---
 [BuildSafe_InClauseIntegerList](<#BuildSafe_InClauseIntegerList>) | Returns a comma-delimited text value containing all the integer values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause.
-[BuildSafe_InClauseTextList](<#BuildSafe_InClauseTextList>) | Returns a comma-delimited text value with the encoded version of all the text values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause.
-[SanitizeHtml](<#SanitizeHtml>) | Sanitizes the provided HTML using the HtmlSanitizer NuGet package.
+[BuildSafe_InClauseTextList](<#BuildSafe_InClauseTextList>) | Returns a comma-delimited text value with the encoded version of all the text values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause. This method should only be used in queries against the Platform's main database. Behavior can be unexpected when used against external databases.
+[SanitizeHtml](<#SanitizeHtml>) | Sanitizes the provided HTML using [HtmlSanitizer NuGet package](https://github.com/mganss/HtmlSanitizer).
 [VerifyJavascriptLiteral](<#VerifyJavascriptLiteral>) | Ensures the provided JavaScript only contains JavaScript/JSON literals such as string, array, or Object literals. If it contains anything else, an INVALID JAVASCRIPT LITERAL exception is thrown. Learn more about JavaScript literals in the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Literals).
 [VerifySqlLiteral](<#VerifySqlLiteral>) | **Deprecated**. Ensure the provided SQL only contains literals. If it contains anything else, an INVALID SQL LITERAL exception is thrown.
 
@@ -60,6 +60,12 @@ For more information, check [Building Dynamic SQL Statements the Right Way](http
 
 Returns a comma-delimited text value with the encoded version of all the text values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause.
 
+<div class="info" markdown="1">
+
+This method should only be used in queries against the Platform's main database. Behavior can be unexpected when used against external databases.
+
+</div>
+
 *Inputs*
 
 ValueList
@@ -89,8 +95,7 @@ For more information, check [Building Dynamic SQL Statements the Right Way](http
 
 ### SanitizeHtml { #SanitizeHtml }
 
-Sanitizes the provided HTML using the HtmlSanitizer NuGet package.  
-Note: The underlying library was recently changed from OWASP Java HTML Sanitizer Project. Check the [Release Notes](<https://success.outsystems.com/Support/Release_Notes/11/Platform_Server>) for a summary of what changed.
+Sanitizes the provided HTML using [HtmlSanitizer NuGet package](https://github.com/mganss/HtmlSanitizer).
 
 *Inputs*
 
@@ -123,6 +128,14 @@ SanitizedJavascriptLiteral
 ### VerifySqlLiteral { #VerifySqlLiteral }
 
 **Deprecated**. Ensures the provided SQL only contains literals. If it contains anything else, an INVALID SQL LITERAL exception is thrown.
+
+The following items are considered valid literals:
+* Non-Unicode and Unicode (prefix it with an uppercase N) strings surrounded by single quotes,'. For example `'1900-01-01'`; `'true'`).
+* Integers and decimals, for example: `2.5`; `-4`.
+* Null, for example: `null`; `NULL`; `Null`.
+* Whitespaces.
+* Lists containing the previous literals, for example: `'fact'`; `12,0`; `('apple','banana','orange')`.
+* Any combination of the previous literals.
 
 *Inputs*
 

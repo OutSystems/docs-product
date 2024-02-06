@@ -224,9 +224,8 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 **Windows:**
 
-* Windows 11 (64-bit)
+* Windows 11 (64-bit) since Service Studio 11.54.45
 * Windows 10 (64-bit)
-* Windows 8 (64-bit)
 * Microsoft Windows Server 2019
 * Microsoft Windows Server 2016
 
@@ -258,8 +257,6 @@ Limitations:
 #### Operating System
 
 * Windows 10 (64-bit)
-* Windows 8 (64-bit)
-* Windows 7 (64-bit)
 * Microsoft Windows Server 2019, since Development Environment 11.6.5
 * Microsoft Windows Server 2016
 

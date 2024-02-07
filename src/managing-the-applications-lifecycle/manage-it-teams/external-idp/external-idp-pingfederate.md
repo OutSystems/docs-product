@@ -19,7 +19,7 @@ To configure PingFederate as an external IdP, follow these steps:
 
 Establish an Active Directory datastore connection for retrieving user attributes for outbound connections.
 
-**LADP configuration details:**
+**LDAP configuration details:**
 
 * **Authentication method**: Simple
 * **User DN**: Distinguished name of the active directory user used to authenticate the user store.
@@ -28,7 +28,6 @@ Establish an Active Directory datastore connection for retrieving user attribute
 For more information, refer to  [Configuring an Active Directory datastore](https://docs.pingidentity.com/r/en-us/solution-guides/htg_config_ad_datastore_pingfed).
 
 ## 2. Create a password credential validator instance
-
 
 **Instance configuration details:**
 
@@ -47,7 +46,7 @@ For more information, refer to [Configuring authorization server settings](https
 
 ## 4. Configure scopes
 
-In addition to OAuth, PIngFederate supports the use of scopes to constrain and define access privileges.
+In addition to OAuth, PingFederate supports the use of scopes to constrain and define access privileges.
 
 **openid**, **email**, **profile**, and **offline_access** scopes are mandatory settings.
 

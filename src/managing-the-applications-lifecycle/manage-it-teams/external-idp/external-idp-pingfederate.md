@@ -81,7 +81,7 @@ For more information, refer to [Managing IdP adapter grant mapping](https://docs
 
 ## 10. Create clients (Web and Desktop) 
 
-#### **Web client**
+#### Web client
 
 **Redirect URIs**: 
 ``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``

@@ -123,6 +123,8 @@ Once activated, you are logged out of the current session and redirected to the 
 
 **Note**: Once the OpenId Connect provider is activated, users  can no longer use the fallback built-in authentication mechanism. In the case of any issues with the external IdP, designated break-glass users, also known as local admins, can login using a username and password to deactivate the OpenID Connect provider and enable any alternative authentication mechanism.
 
+**Note**: The identity provider cannot be edited once enabled. You must switch to a different authentication mechanism or create a new identity provider if you want to edit any fields such as client secret.
+
 <div class="warning" markdown="1">
 
 If an OpenId Connect provider is activated before the LifeTime upgrade, to gain access to the complete feature set, you must deactivate and reactivate the provider again. OutSystems recommends having at least one [local administrator added](#adding-a-local-administrator) before activating OIDC. To deactivate the existing OpenId Connect provider, the built-in authentication mechanism must be activated and then OpenId Connect provider must be reactivated. Note that the client secret is required when you activate the OpenId Connect provider.

@@ -19,7 +19,7 @@ To configure PingFederate as an external IdP, follow these steps:
 
 Establish an Active Directory datastore connection for retrieving user attributes for outbound connections.
 
-### LADP configuration details:
+**LADP configuration details:**
 
 * **Authentication method**: Simple
 * **User DN**: Distinguished name of the active directory user used to authenticate the user store.
@@ -29,7 +29,8 @@ For more information, refer to  [Configuring an Active Directory datastore](http
 
 ## 2. Create a password credential validator instance
 
-### Instance configuration details:
+
+**Instance configuration details:**
 
 * **Search Filter**: ``(|(sAMAccountName=${username})(userPrincipalName=${username}))``
 * **Scope of Search**: Subtree
@@ -80,14 +81,14 @@ For more information, refer to [Managing IdP adapter grant mapping](https://docs
 
 ## 10. Create clients (Web and Desktop) 
 
-### Web client
+#### **Web client**
 
 **Redirect URIs**: 
 ``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
 **Allowed Grant Types**: Select Authorization Code, Implicit, Refresh Token, Client Credentials.
 
-### Native client
+#### Native client
 
 **Redirect URIs**: Add the following redirect URIs for mobile and desktop applications:
 * ``integrationstudio://auth``

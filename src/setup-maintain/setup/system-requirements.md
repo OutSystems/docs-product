@@ -77,17 +77,23 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ## Cache invalidation service
 
-The cache invalidation service requires the following minimum version of RabbitMQ Server:
+RabbitMQ Server and Erlang versions numbers follow the format: Major.Minor.Patch. OutSystems Platform Server versions require minimum Patch versions of RabbitMQ Server and Erlang.
 
-* RabbitMQ Server 3.10.14 with Erlang version 25.1.2, since Platform Server 11.19.0
-* RabbitMQ Server 3.9.11 with Erlang version 24.2, from Platform Server 11.15.0 to 11.18.1
-* RabbitMQ Server 3.8.21 with Erlang version 23.2, from Platform Server 11.13.2 to 11.14.1
-* RabbitMQ Server 3.8.3 with Erlang version 22.3, from Platform Server 11.9.0 to 11.13.1
-* RabbitMQ Server 3.7.7 with Erlang version 20.3, for earlier versions of Platform Server
+You can upgrade to the latest Patch of RabbitMQ Server, and the latest Minor of Erlang provided that:
 
-These versions can be upgraded to the latest Patch of RabbitMQ Server and the latest Minor of Erlang, ensuring the combination complies with the [official documentation](https://www.rabbitmq.com/which-erlang.html).
+* The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 3.10.25 for environments using Platform Server 11.19.0.
+* The Minor version of Erlang is higher than the one listed for the Platform Server version. For example, you can upgrade Erlang version to 25.2 for environments using Platform Server 11.19.0.
+* You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html). For example, when upgrading for RabbitMQ Server 3.10.25 you can upgrade Erlang to 25.2
 
-During Platform Server installation, OutSystems provides you with a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation, if it fulfills the same version requirements.
+The following are the minimum Patch versions of RabbitMQ Server and Erlang per Platform Server version:
+
+* For Platform Server 11.19.0 and higher: RabbitMQ Server 3.10.14 and Erlang version 25.1.2
+* From Platform Server 11.15.0 to 11.18.1: RabbitMQ Server 3.9.11 and Erlang version 24.2
+* From Platform Server 11.13.2 to 11.14.1: RabbitMQ Server 3.8.21 and Erlang version 23.2
+* From Platform Server 11.9.0 to 11.13.1: RabbitMQ Server 3.8.3 and Erlang version 22.3
+* For Platform Server 11.8.2 and lower: RabbitMQ Server 3.7.7 and Erlang version 20.3
+
+During Platform Server installation, OutSystems provides a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation if it fulfills the same version requirements.
 
 ## Amazon EC2 considerations
 

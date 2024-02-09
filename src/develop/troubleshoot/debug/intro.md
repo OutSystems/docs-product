@@ -105,3 +105,11 @@ When debugging an app and checking the values of the Date Time data type, keep i
 * On the server, the date and time are in the timezone of the server.
 
 You can read more about timezones in [Available Data Types](../../../ref/data/data-types/available-data-types.md#date-time-notes).
+
+## Proxy scenarios
+
+If your infrastructure has multiple front-end servers, and they are behind a load balancer/proxy server, Service Studio will need to match the origin IP address from the front-end server to the developer's IP address, which will not be accessible with the proxy behind it. If you are trying to debug a Traditional Web application, for this to be possible, you will need to add the proxy IP address in the Trusted Proxy addresses section present in Service Center -> Administration -> Security -> Network Security. For Mobile and Reactive applications, this change is not required, as the debugger will still stop at breakpoints regardless of the origin IP address.  
+
+Warning here
+
+This procedure applies only to self-managed environments. For OutSystems Cloud installations, this is currently not supported, as it is not possible to add Trusted proxy addresses.

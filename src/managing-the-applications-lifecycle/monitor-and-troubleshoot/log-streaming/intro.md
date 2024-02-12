@@ -14,7 +14,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applicatio
 
 <div class="info" markdown="1">
 
-Log streaming support is only available for cloud deployments.
+Log streaming support is only available for OutSystems Cloud deployments.
 
 </div>
 

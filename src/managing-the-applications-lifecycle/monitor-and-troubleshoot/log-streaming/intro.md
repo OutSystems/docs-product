@@ -14,7 +14,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applicatio
 
 <div class="info" markdown="1">
 
-You must subscribe to an add-on to activate log streaming. For more information, contact your Account management team.
+Log streaming support is only available for OutSystems Cloud deployments.
 
 </div>
 

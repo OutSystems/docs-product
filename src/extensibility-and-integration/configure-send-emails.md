@@ -30,7 +30,7 @@ Not sure how to access Service Center? If your environment URL is `outsystems.ex
 
 </div>
 
-## OutSystems SMTP Port Options
+## OutSystems SMTP port options
 
 OutSystems supports SMTP ports 25, 465, and 587. Consider using secure ports 465 or 587 to avoid potential issues with port 25 throttling. 
 Port 465 offers SMTP over SSL (SMTPS), while port 587 is a recommended alternative for SMTP submission, enhancing reliability and security in email communication within OutSystems.

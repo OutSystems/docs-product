@@ -167,7 +167,7 @@ In this step you update the **ClientLogout** client action of the **UserInfo blo
 
         1. If User_IsExternalUser.IsExternal is FALSE, run the GetCallbackURL client action. This action will return a URL;
         
-        1. Add the User_GetUnifiedLoginURL server action, setting the OriginalUrl parameter as: GetCallbackUrl.Url
+        1. Add the User_GetUnifiedLogoutURL server action, setting the OriginalUrl parameter as: GetCallbackUrl.Url
 
         1. Verify that the URL exists. You can use the condition:
 

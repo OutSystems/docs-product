@@ -18,7 +18,9 @@ Also available: [Log data reference in OutSystems 10](https://success.outsystems
 
 ## Mapping of the database views and Entities
 
-You can access the log data in Service Studio, by using the PlatformLogs extension. Each entry has the corresponding _Previous entry. For example, for the oslog_General view you have both oslog_General_Previous in the database views and Log_General_Previous in the Entity list.
+You can access the log data in Service Studio, by using the PlatformLogs extension. Each entry has the corresponding _Previous entry. For example, for the oslog_General view you have both oslog_General_Previous in the database views and Log_General_Previous in the Entity list.  
+
+Ensure **Add System Dependencies** is in the **Default Role**, as these entities are not inside the system module but considered part of it.
 
 <div class="info" markdown="1">
 

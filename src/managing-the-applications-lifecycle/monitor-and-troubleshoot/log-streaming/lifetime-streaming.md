@@ -7,7 +7,13 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3139%3A323&mode=design&t=IIMVc2WTi7UxHv00-1
 ---
-# Configuring the log streaming service in LifeTime 
+# Configuring the log streaming service in LifeTime
+
+<div class="info" markdown="1">
+
+To configure log streaming in LifeTime, the user must have the Admin built-in role.
+
+</div>
 
 This example uses **Elastic Cloud** as the destination tool.
 

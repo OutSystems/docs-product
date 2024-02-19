@@ -220,3 +220,4 @@ Since the Okta end user authentication method is very similar to the SAML 2.0 on
 * Check the [SAML Message Logs page](configure-saml.md#logs) for detailed information on Okta messages exchanged for end user authentication.
 
 * Use the same method for [accessing the Users application when you're locked out](configure-saml.md#locked-access) due to incorrect configuration settings in end user authentication.
+

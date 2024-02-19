@@ -1,14 +1,21 @@
 ---
-summary: 
-tags: 
+summary: The article provides a guide on setting up the OpenTelemetry Collector for APM tools that require OpenTelemetry data.
+tags:
 locale: en-us
 guid: ded295b9-7894-4192-a7df-9bf89f1eca25
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
-
 # Set up the OpenTelemetry Collector
 
 This article explains how to set up the OpenTelemetry collector for Application Performance Monitoring (APM) tools that don't support native ingestion of OpenTelemetry data.
+
+## Prerequisites
+
+* Enabled [Log separation](../../../setup-maintain/setup/logging-db/logs-separation-cloud/intro.md). 
+
+* Installed Platform Server version 11.23.1 or higher.
+
+* Installed LifeTime version 11.19.0 or higher.
 
 To receive logs in Datadog or Splunk, you must set up an OpenTelemetry Collector:
 

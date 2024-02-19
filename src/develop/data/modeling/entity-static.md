@@ -71,6 +71,6 @@ The Records folder of your Static Entity contains all statuses you have created.
 
 ![Details of the 'CheckedOut' record in the Static Entity showing the Identifier, Label, and TextDescription](images/static-entity-record-example.png "Static Entity Record Details")
 
-The Identifier for the checked out status is `CheckedOut` and the Label is `"Checked-Out"`. The field TextDescription is the custom field and has the string value `"The guests have just left."`.
+The Identifier for the checked out status is `CheckedOut` and the Label is `"CheckedOut"`. The field TextDescription is the custom field and has the string value `"The guest have just left."`.
 
 You can access the record for checked out status by referencing its Identifier, like this: `Entities.Status.CheckedOut`.

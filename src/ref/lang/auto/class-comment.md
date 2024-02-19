@@ -15,35 +15,14 @@ If you write **TODO**, **TBD**, or **REMINDER** in uppercase, the comment shows 
 
 You can add links in comments by using the `a` HTML tag. For example: `This a <a href="https:\\www.example.com">link to a website</a>.`
 
-![Screenshot of the Comment tool interface in Service Studio](images/comment-tool-ss.png "Comment Tool Screenshot")
+![Comment tool interface in Service Studio](images/comment-tool-ss.png "Comment Tool Screenshot")
 
 ## Properties
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Mandatory</th>
-<th>Default value</th>
-<th>Observations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td title="Text">Text</td>
-<td>Text to display. The HTML <b>a</b> tag is allowed.</td>
-<td></td>
-<td>"Write your comment here"</td>
-<td></td>
-</tr>
-<tr>
-<td title="Is Reminder">Is Reminder</td>
-<td>Set to Yes to have the comment displayed as a reminder in the TrueChange tab.</td>
-<td>Yes</td>
-<td>No</td>
-<td>The upper-cased keywords TODO, TBD, and REMINDER automatically set the comment as a reminder.</td>
-</tr>
-</tbody>
-</table>
+
+|Name|Description|Mandatory|Default value|Observations|
+|---|---|---|---|---|
+|Text| Text to display. The HTML **a** tag is allowed.|Yes |"Write your comment here"|
+|Is Reminder|Set to Yes to have the comment displayed as a reminder in the TrueChange tab.|Yes|No|The upper-cased keywords TODO, TBD, and REMINDER automatically set the comment as a reminder. Removing such keywords won't set `Is Reminder` to `No`|
+
 

@@ -43,6 +43,10 @@ Here is an example for a server that's in GMT+01 (Paris) and a mobile device in 
 
 If you don't need this scenario in your logic, use data types Date and Time separately to deal with the respective values.
 
+<a id="date-range-notes"></a>**Date Supported Range Notes**
+
+The supported range for Dates is [#1900-01-01#, #3000-12-31#]. Using dates inside this range ensures the correct behavior of all components the platform needs to integrate with. OutSystems does not support any dates outside of this range and can't ensure that they will be handled correctly by all components of the product.
+
 <a id="text-notes"></a>**Text Notes**
 
 If your database is SQL Server, the length of a Text attribute represents the number of **byte-pairs** that you can store in a column of type Text, rather than the number of characters. Characters defined in the Unicode range 0-65,535 can be stored in one byte-pair. However, characters defined in higher Unicode ranges (65,536-1,114,111), such as emojis, kanji, hiragana, and katakana characters, may use two byte-pairs. This is a [limitation of SQL Server itself](https://docs.microsoft.com/en-us/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql?view=sql-server-ver15#remarks).

@@ -25,7 +25,7 @@ These could be the steps to resolve the conflicts.
 
     ![Compare and Merge window showing conflicting CSS edits in the 'ClientList' screen](images/conflicts-text.png "Compare and Merge - Style Sheet")
 
-1. Select which part of the CSS code goes into the resulting local module that you will publish at the end of the merge. Click the arrow icon next to the text to replace `color: green;` with  `color: red;`. **Merged version (1 conflict)** changes to  **Merged version (0 conflicts)**. You can also edit the code by typing in the **Merged version** pane.
+1. Select which part of the CSS code goes into the resulting local module that you will publish at the end of the merge. Click the arrow icon next to the text to replace `color: yellow;` with  `color: blue;`. **Merged version (1 conflict)** changes to  **Merged version (0 conflicts)**. You can also edit the code by typing in the **Merged version** pane.
 
     ![Arrow icon indicating the selection of CSS code to resolve conflicts in the merged version](images/conflicts-text-orange-arrow.png "Resolving CSS Conflicts")
 

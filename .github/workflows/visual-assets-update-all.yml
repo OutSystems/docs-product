@@ -103,7 +103,7 @@ jobs:
       
     - name: Create Pull Request
       if: (github.event_name == 'issue_comment' && steps.check.outputs.triggered == 'true') || github.event_name != 'issue_comment'
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v6
       with:
         token: ${{ secrets.TOOLS_PAT }}
         commit-message: Update visual assets in ${{ github.ref_name }}

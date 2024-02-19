@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%
 
 <div class="info" markdown="1">
 
-This guide applies only to self-managed installations. It doesn't apply to OutSystems Cloud, where OutSystems provides the load balancing mechanism. 
+This guide applies only to self-managed installations. It doesn't apply to OutSystems Cloud, where OutSystems provides the load balancing mechanism.
 
 </div>
 
@@ -39,13 +39,13 @@ In order to identify the several server profiles in the farm environment, please
 
 * An **updating** front-end will not have users accessing the Applications but will allow the platform and Application upgrade and deployment process to execute;
 
-* A **loaded** front-end will have users accessing its applications but will not allow the Application deployment process to execute. 
+* A **loaded** front-end will have users accessing its applications but will not allow the Application deployment process to execute.
 
-![Diagram illustrating the balanced upgrade process in a highly loaded OutSystems farm environment, showing updating and loaded front-ends.](images/balanced-upgrade-highly-loaded-farms_0.png "Balanced Platform Server Upgrade Process Diagram") 
+![Diagram illustrating the balanced upgrade process in a highly loaded OutSystems farm environment, showing updating and loaded front-ends.](images/balanced-upgrade-highly-loaded-farms-diag.png "Balanced Platform Server Upgrade Process Diagram")
 
 Note that, if the environment uses **Zones** for application segmentation, you must consider **updating** and **loaded** front-end profiles in each Zone. In that case, think of each Zone as if it were a distinct environment.
 
-Also, the Controller server (the one running the Deployment Controller Service) must be included as part of the initial **updating** set. 
+Also, the Controller server (the one running the Deployment Controller Service) must be included as part of the initial **updating** set.
 
 With this definition in mind, choose your updating and loaded front-ends. To improve the reliability of the procedure we recommend that the sets of updating and loaded front-ends are defined before the procedure and that the procedure is annotated to have actual front-end/machine names so that it can be referenced during the execution of the upgrade.
 
@@ -66,4 +66,3 @@ To execute the upgrade, use the following steps:
 ## More information
 
 Check the [OutSystems Platform installation guide](../setup/intro.md) to learn more about the requirements and recommended steps to install OutSystems.
-

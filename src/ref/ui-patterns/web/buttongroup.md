@@ -39,6 +39,10 @@ Applies only to Traditional Web Apps.
 1. Publish and test.
 
 
+## Note
+
+When used inside List Records or Table Records, you must manually add the attribute name for each radio button that is part of a Button Group so that the platform binds them correctly: 
 
 
+![Example of a Button Group used inside List Records or Table Records with manually added attribute names for radio buttons](images/buttongroup-image-5-ss.png "Button Group Usage Example")
 

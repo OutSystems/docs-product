@@ -66,6 +66,32 @@ The value of the **Extensibility Configurations** property of a mobile app modul
             /* ...more iOS preferences... */
         ]
     },
+    "resources": {
+        // Common resources for iOS and Android
+         "global": {
+            "<The key of the resource>": {
+                "src": "<The resource location relative to config.xml>",
+                "target": "<The path to where the resource will be copied within the Android/iOS project>"
+            },
+            /* ...more global resources... */
+        },
+        // Just for Android
+        "android": {
+            "<The key of the resource>": {
+                "src": "<The resource location relative to config.xml>",
+                "target": "<The path to where the resource will be copied within the Android project>"
+            },
+            /* ...more Android resources... */
+        },
+        // Just for iOS
+        "ios": {
+            "<The key of the resource>": {
+                "src": "<The resource location relative to config.xml>",
+                "target": "<The path to where the resource will be copied within the iOS project>"
+            },
+            /* ...more iOS resources... */
+        }
+    },
     "icons": {
         // Just for Android
         "android": [
@@ -154,6 +180,18 @@ The following section provides more details about the options you can use in the
 | FilterTouchesWhenObscured | Android |true for MABS ≥ 9<br/> false for MABS &lt; 9| Defines the value of the filterTouchesWhenObscured property of WebView on Android. Set to true to prevent the app from handling touches while obscured by other apps. Learn more about filterTouchesWhenObscured [here](https://developer.android.com/reference/android/view/View#security).|
 | DisableInspectorNotification | iOS | false | Set to true to remove the notification from the [Network inspector](https://www.outsystems.com/tk/redirect?g=2bea2ff9-7655-4952-a00c-2a3f1e3316e9) plugin in iOS debug builds. |
 | DeepLinksHandlerType | Android, iOS | default | Defines how the mobile app [handles deeplinks](customize-deeplink-behavior.md). This can have 4 possible values: `default`, `event`, `function` or `legacy`. |
+
+## Resources
+
+The following section provides more details on the `resources` top-level property. The feature translates into the `resource-file` feature on [Cordova](https://cordova.apache.org/docs/en/12.x/config_ref/#resource-file). These resources are included in the folder `www`, available for use within the project compilation. Use **OutSystems Resources** with **Deploy Action** set to **Deploy to Target Directory** in the application project.  
+
+* The `src` property of a resource is relative to the location of `config.xml` (project root). Since the resources become available in the `www` folder, the value should start with it.
+* If you add the resource `my-resource.ext` in Service Studio, the value should be `www/my-resource.ext`.
+* The `target` property of a resource is relative to the Android/iOS project. If a resource with the same name already exists in the specified `target`, it is overridden.
+* For Android, the path is relative to `<project_root>/platforms/android`.
+* For iOS, the path is relative to `<project_root>/platforms/ios/<app_name>/Resources`
+
+As an example of the usage of this feature on an OutSystems-supported plugin, see the [Firebase plugins documentation](../../extensibility-and-integration/mobile-plugins/firebase/intro.md#adding-google-services-configuration-files).
 
 ## Constraints
 

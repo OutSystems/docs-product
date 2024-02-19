@@ -16,7 +16,7 @@ This guide applies only to self-managed installations. It doesn't apply to OutSy
 
 [OutSystems scales horizontally with the addition of front-ends to suit the needed capacity](https://success.outsystems.com/Documentation/Best_Practices/Infrastructure_management/Designing_OutSystems_Infrastructures/Scaling_and_high_availability_for_OutSystems_Platform_servers). In a farm environment, balancing the application load across multiple front-ends is a basic requirement to ensure higher availability.
 
-OutSystems as self-managed doesn't include a load balancing mechanism of its own. To balance load between front-ends in an OutSystems Platform farm, you must resort to one of many load balancing mechanisms on the market. 
+OutSystems as self-managed doesn't include a load balancing mechanism of its own. To balance load between front-ends in an OutSystems Platform farm, you must resort to one of many load balancing mechanisms on the market.
 
 OutSystems supports both **layer 4** and **layer 7** load balancers. This is possible since the session model is stored in a centralized database which is accessed by all the Front-ends. Therefore, requests from individual end-users can be distributed across Front-ends without any impact.
 
@@ -30,13 +30,13 @@ If a layer 7 load balancer is available, it can be used for a more intelligent l
 
 Requests are processed sequentially in a circular manner. [Front-end machines have the same hardware configuration](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures/02_Sizing_OutSystems_Platform), equal number of applications and the same target audience.
 
-![Diagram illustrating the round-robin load balancing method where requests are distributed sequentially across front-end machines.](images/recommended-configs-load-balancing_0.png "Round-robin Load Balancing Diagram")
+![Diagram illustrating the round-robin load balancing method where requests are distributed sequentially across front-end machines.](images/load-balancer-round-robin-config-diag.png "Round-robin Load Balancing Diagram")
 
 ### Least Connections
 
 [Front-end machines have the same hardware configuration](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures/02_Sizing_OutSystems_Platform). The connection requests are sent to the server with least connection requests.
 
-![Diagram showing the least connections load balancing technique where requests are sent to the server with the fewest connections.](images/recommended-configs-load-balancing_1.png "Least Connections Load Balancing Diagram")
+![Diagram showing the least connections load balancing technique where requests are sent to the server with the fewest connections.](images/load-balancer-least-connections-config-diag.png "Least Connections Load Balancing Diagram")
 
 ### Ratio
 
@@ -44,7 +44,7 @@ Requests are processed sequentially in a circular manner. [Front-end machines ha
 
 The ratio load balancer can also be dynamic, where several monitoring checks are actively done to gather server performance and decide on the best node to serve the connection request.
 
-![Diagram depicting the ratio load balancing strategy where more powerful servers receive a higher number of connection requests.](images/recommended-configs-load-balancing_2.png "Ratio Load Balancing Diagram")
+![Diagram depicting the ratio load balancing strategy where more powerful servers receive a higher number of connection requests.](images/load-balancer-ratio-config-diag.png "Ratio Load Balancing Diagram")
 
 ### Specifics for Layer 7
 
@@ -52,14 +52,13 @@ Load balancers with Layer 7 capabilities have a mechanism to manage user session
 
 Sticky session refers to the feature of many load balancing solutions for web-farms to route the requests for a particular session to the same physical machine that serviced the first request for that session. This is mainly used to ensure that a session isn't lost due to routing requests for a session to different servers. Since requests for a user are always routed to the same machine that first served the request for that session, sticky sessions can cause uneven load distribution across servers.
 
-
 ## Detecting OutSystems server and app availability
 
 To detect that a front-end is up and running in your on-premises/private cloud installation, you can monitor the TCP port that's serving the applications or web services, the most common ones are TCP port 80 (HTTP) and TCP port 443 (HTTPS).
 
 With an L7 load balancer you get a more complete form of monitoring, going beyond the simple check whether the server is up or down.
 
-![Diagram demonstrating how to detect OutSystems server and application availability using TCP port monitoring.](images/detecting-serverapp-availability_0.png "Server and App Availability Detection Diagram")
+![Diagram demonstrating how to detect OutSystems server and application availability using TCP port monitoring.](images/load-balancer-detecting-server-app-diag.png "Server and App Availability Detection Diagram")
 
 A best practice is to create a specific screen in your application that performs basic business validations. This ensures the system is up and outputs a specific string when everything is OK. In this screen you should test critical integrations (for example, web-services, external databases).
 

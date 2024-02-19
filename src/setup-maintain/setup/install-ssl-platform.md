@@ -34,17 +34,15 @@ Reach out to your network, system or infrastructure administrator if you need he
 
 ## Creating a Certificate Signing Request (CSR)
 
-A typical step before requesting a new certificate or renew an existing one, is to generate a CSR to be provided to the Certificate Authority. If you need instructions on how to generate a CSR, refer to [this article](https://success.outsystems.com/Support/Enterprise_Customers/Installation/How_to_generate_a_CSR). If you already have a CSR, proceed to the next section.
+A typical step before requesting a new certificate or renew an existing one, is to generate a CSR to be provided to the Certificate Authority. If you need instructions on how to generate a CSR, refer to [this article](https://www.outsystems.com/tk/redirect?g=98e7f6a1-508c-4d53-9ac9-1de52829e137). If you already have a CSR, proceed to the next section.
 
 
 ## Acquiring the SSL certificate
 
 After you have created your Certificate Signing Request (the .txt file), you need to acquire the certificate before installing it in your application server.
 
-There are two ways to obtain a certificate:
+To obtain a certificate contact a Certification Authority.
 
-* Contact one Certification Authority
-* Contact your company's Certification Authority, if there is one
 
 <div class="info" markdown="1">
 
@@ -71,6 +69,9 @@ Before proceeding with the installation, check the integrity of your certificate
 </div>
 
 Once you have acquired your certificate, you need to install it in your application server. The following sections include instructions on how to do it, for each of the application servers supported by OutSystems. These instructions assume that you have OutSystems installed, already. For instructions on how to install OutSystems, refer to [Setting Up OutSystems](./intro.md).
+
+
+The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.
 
 <div class="info" markdown="1">
 

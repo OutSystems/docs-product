@@ -14,7 +14,7 @@ OutSystems’ reactive applications are Single Page Applications (SPAs). These a
 When a user accesses the app, the server returns a pretty bare HTML file and some JavaScript (JS) that executes on the client side to render the UI. This also allows fetching data asynchronously in parallel with page rendering.
 However, when you have very complex logic or you retrieve a big amount of data, you might experience longer initial loading times due to reliance on client-side rendering (CSR). This can present SEO challenges as search engine bots need to render the page in order to index it. 
 
-In these situations, you’ll benefit from using the pre-render technology.
+In these situations, you benefit from using the pre-render technology. **Although this improves your app's Core Web Vitals, it does't affect the end-user experience.**
 
 In this article, we describe how you can integrate the OutSystems platform with a third-party pre-rendering solution called [prerender.io](https://prerender.io/). 
 

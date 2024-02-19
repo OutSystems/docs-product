@@ -79,7 +79,7 @@ After completing the O11 app portfolio assessment, adjust the current O11 app po
 
 Once you’ve completed the O11 app portfolio assessment and the code preparation steps for your app portfolio, it’s time to start converting your O11 apps to ODC apps.
 
-During this step, all O11 apps, modules, and extensions are converted into ODC using the conversion tool. The following are some examples of automations that are in place to guarantee that O11 code is mapped into ODC constructs, keeping the same functionality. For example:
+In this step, the conversion tool is used to convert all O11 apps, modules, and extensions into ODC. The tool ensures that the O11 code is mapped into ODC constructs while maintaining the same functionality. The following are some examples of the automations in place to guarantee this mapping:
 
 * Replace System references with the ODC equivalent
 * Replace Login and Logout flows

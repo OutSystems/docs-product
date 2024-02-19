@@ -66,7 +66,7 @@ To help with the O11 app portfolio assessment, OutSystems is releasing a [set of
 
 ### Stage 2: Code preparation
 
-Once you’ve completed your O11 app portfolio assessment, you must adjust your current O11 app portfolio architecture and code to ensure that migrated apps benefit from all ODC benefits. You should consider including necessary adjustments into sprints, prioritized according to the desired migration timelines.
+After completing the O11 app portfolio assessment, adjust the current O11 app portfolio architecture and code to ensure that migrated apps benefit from all ODC advantages. Consider including necessary adjustments in sprints, prioritized according to the desired migration timelines.
 
 #### Outcomes
 

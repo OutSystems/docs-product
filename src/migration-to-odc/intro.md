@@ -94,7 +94,7 @@ In this step, the conversion tool is used to convert all O11 apps, modules, and 
 
 ### Stage 4: Data migration
 
-Finally, once the code is converted and published on ODC, it’s time to look at data. Data migration tools will be available to ensure that O11 data is correctly migrated to ODC. These tools ensure automatic conversion of data types, foreign keys, data mapping, and identity mapping whenever needed.
+Finally, after converting the code and publishing it on ODC, it's time to address the data. Data migration tools are available to ensure that O11 data is correctly migrated to ODC. These tools automatically convert data types, foreign keys, data mapping, and identity mapping as needed.
 
 #### Outcomes
 

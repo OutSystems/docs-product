@@ -49,7 +49,7 @@ Migration capabilities will be delivered incrementally, addressing the most comm
 
 ### Stage 1: O11 app portfolio assessment
 
-ODC apps must be architected in a way that allows you to reap the benefits of cloud-native architecture and microservices design, fostering application-independent lifecycle and ownership.
+ODC applications must be designed to take advantage of cloud-native architecture and microservices design, which promote application-independent lifecycle and ownership.
 
 To fully benefit from all ODC capabilities, it's important to adjust the O11 app portfolio architecture to align with ODC architecture best practices. Additionally, some code patterns are implemented differently on ODC, so it's necessary to validate the suggested conversion.
 

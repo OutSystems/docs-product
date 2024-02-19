@@ -194,4 +194,4 @@ To finalize and activate the Azure AD configuration for IT users, follow these s
 
 1. In the pop-up window that will appear, fill in the **Client Secret** stored earlier.
 
-1. Click the **Activate and Logout** button to start using Okta as the external Identity Provider of the OutSystems platform.
+1. Click the **Activate and Logout** button to start using Azure AD as the external Identity Provider of the OutSystems platform.

@@ -5,7 +5,7 @@ locale: en-us
 guid: 12783fed-7ac1-41f3-8d46-544892ff8b58
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3357%3A181&mode=design&t=euKRtFlOlIA3rbUd-1
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=267%3A99&mode=design&t=wnuT61gSaBFQZ5jn-1
 ---
 
 # Protection against Brute Force Attacks

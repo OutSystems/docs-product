@@ -148,7 +148,7 @@ You can submit an invalid certificate. In this case, OutSystems validates the ce
 
 In the meanwhile, you can check the status of the certificate validation at **Environments** > **Options** > **Manage Domain certificates**.
 
-![Screenshot showing the SSL certificate validation status in OutSystems Cloud](images/ssl-domain-cloud-lt-5.jpg "SSL Certificate Validation Status in OutSystems Cloud")
+![Screenshot showing the SSL certificate validation status in OutSystems Cloud](images/ssl-domain-cloud-lt-5.png "SSL Certificate Validation Status in OutSystems Cloud")
 
 If the certificate isn't validated you'll see the **Status** as loading:
 

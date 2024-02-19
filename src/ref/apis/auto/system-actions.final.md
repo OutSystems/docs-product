@@ -1,6 +1,6 @@
 ---
 summary: List of System Actions (both server actions and client actions) available in OutSystems, including list operations.
-tags: support-application_development; support-Mobile_Apps; support-webapps
+tags: 
 locale: en-us
 guid: 15b8a38f-a4cc-4bb7-b496-520824990340
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -27,7 +27,7 @@ Only a subset of the System Actions is by default available in your module. You 
 
 1. Click **(System)** in the left pane. The available actions show in the right pane.
 
-    ![Screenshot showing how to reference System Actions in an OutSystems module](images/reference-systems-actions-ss.png "Reference Systems Actions in OutSystems")
+    ![Reference System Actions in an OutSystems module](images/reference-systems-actions-ss.png "Reference Systems Actions in OutSystems")
 
 1. Browse the available actions, click the checkboxes next to the actions you want to reference, then click **Apply** to confirm and close the window.
 
@@ -739,12 +739,12 @@ With the server side LogMessage action you can register your custom app logs tha
 *Inputs*
 
 Message
-:   Type: mandatory, Text.
+:   Type: mandatory, Text. It's length is limited to 2000 characters, extra characters will be truncated.
     The message to add to the module general log. In Service Center, it will show in the **Message** column.
 
 ModuleName
 :   Type: mandatory, Text. It's length is limited to 15 characters, extra characters will be truncated.
-    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance`or `Debug`. It will show in Service Center in the **Source** column.
+    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance` or `Debug`. It will show in Service Center in the **Source** column.
 
 ### Logout { #Logout }
 
@@ -1060,12 +1060,12 @@ With the client side LogMessage action you can register your custom app logs tha
 *Inputs*
 
 Message
-:   Type: mandatory, Text.
+:   Type: mandatory, Text. It's length is limited to 2000 characters, extra characters will be truncated.
     The message to add to the module general log. In Service Center, it will show in the **Message** column.
 
 ModuleName
 :   Type: mandatory, Text. It's length is limited to 15 characters, extra characters will be truncated.
-    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance`or `Debug`. It will show in Service Center in the **Source** column.
+    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance` or `Debug`. It will show in Service Center in the **Source** column.
 
 ### RequireScript { #Client_RequireScript }
 

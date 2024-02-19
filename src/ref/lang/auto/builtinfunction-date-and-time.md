@@ -51,7 +51,7 @@ figma:
 </tr>
 <tr>
 <td><a href="#CurrDateTime">CurrDateTime</a>()</td>
-<td>In client-side calls, it returns the device date and time.<br/>In server-side calls, it returns the platform server date and time.<br/>In query calls, it returns the platform server date and time.<br/><br/>Date times in the device are converted in the server to the server time zone.<br/>Conversely, date times in the server are converted in the device to the device time zone.</td>
+<td>In client-side calls, it returns the device date and time. It also returns milliseconds.<br/>In server-side calls, it returns the platform server date and time.<br/>In query calls, it returns the platform server date and time.<br/><br/>Date times in the device are converted in the server to the server time zone.<br/>Conversely, date times in the server are converted in the device to the device time zone.</td>
 </tr>
 <tr>
 <td><a href="#CurrTime">CurrTime</a>()</td>
@@ -363,7 +363,7 @@ Type: Date
 
 ## CurrDateTime { #CurrDateTime }
 
-In client-side calls, it returns the device date and time.  
+In client-side calls, it returns the device date and time. It also returns milliseconds.  
 In server-side calls, it returns the platform server date and time.  
 In query calls, it returns the platform server date and time.  
   

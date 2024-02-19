@@ -946,6 +946,7 @@
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-azure.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-okta.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-adfs.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-pingfederate.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-lifetime.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-general.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-authentication-provider.md

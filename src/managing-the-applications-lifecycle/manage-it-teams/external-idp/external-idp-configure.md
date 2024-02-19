@@ -22,4 +22,6 @@ See the following articles for configuration instructions:
 
 * [Configuring Active Directory Federation Services](external-idp-adfs.md)
 
+* [Configuring PingFederate authentication](external-idp-pingfederate.md)
+
 Step 2. [Configuring LifeTime authentication](external-idp-lifetime.md)

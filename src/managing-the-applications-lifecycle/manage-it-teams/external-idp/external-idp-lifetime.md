@@ -93,7 +93,11 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
         
     1. **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
 
-        **Note**: For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
+        <div class="info" markdown="1">
+
+         For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
+
+         </div>
 
     ![LifeTime authentication settings interface displaying scope configuration options for OpenID Connect](images/auth-settings-scope-lt.png "Configuring Scopes in Authentication Settings")
 
@@ -118,6 +122,8 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 Once activated, you are logged out of the current session and redirected to the login page of the currently active OIDC provider login page.
 
 **Note**: Once the OpenId Connect provider is activated, users  can no longer use the fallback built-in authentication mechanism. In the case of any issues with the external IdP, designated break-glass users, also known as local admins, can login using a username and password to deactivate the OpenID Connect provider and enable any alternative authentication mechanism.
+
+**Note**: The identity provider cannot be edited once enabled. You must switch to a different authentication mechanism or create a new identity provider if you want to edit any fields such as client secret.
 
 <div class="warning" markdown="1">
 

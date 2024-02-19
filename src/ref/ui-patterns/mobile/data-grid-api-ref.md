@@ -12,7 +12,7 @@ figma:
 
 [comment]: <> (2.2.0)
 
-Data Grid for Reactive Web Applications is built on top of [Grape City Data Grid](https://www.grapecity.com/en/wijmo-flexgrid/), an Enterprise Grade Javascript Data Grid, that can be used for building applications, such as reporting, data analytics, and business workflow.
+Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](https://developer.mescius.com/wijmo/flexgrid-javascript-data-grid/), an Enterprise Grade Javascript Data Grid, that can be used for building applications, such as reporting, data analytics, and business workflow.
 
 ## Summary
 
@@ -26,6 +26,7 @@ Widget | Description
 [DateTimeColumn](<#DateTimeColumn>) | Column for your GridContainer Block to render text fields. Drag as many columns as you need into the GridColumnsPlaceholder in the GridContainer Block.
 [DropdownColumn](<#DropdownColumn>) | Column for your GridContainer Block to render fields with dropdown options. Drag as many columns as you need into the GridColumnsPlaceholder in the GridContainer Block.
 [Grid](<#Grid>) | Container that displays the grid. Add the Grid Block to your Screen and associate your data to it.
+[ImageColumn](<#ImageColumn>) | Column for your GridContainer Block to render image fields. Drag as many columns as you need into the GridColumnsPlaceholder in the GridContainer Block.
 [MenuItem_Column_Freeze](<#MenuItem_Column_Freeze>) | Allows the user to freeze columns on the grid.
 [MenuItem_Column_FreezeUnfreeze](<#MenuItem_Column_FreezeUnfreeze>) | Allows the user to freeze or unfreeze columns on the grid.
 [MenuItem_Column_Unfreeze](<#MenuItem_Column_Unfreeze>) | Allows the user to unfreeze columns on the grid.
@@ -46,7 +47,7 @@ Widget | Description
 
 Action | Description
 ---|---
-[ArrangeData](<#ArrangeData>) | Prepares your data to be used by the Data Grid. Use this action in the Data Action after you have fetched the data from the database.
+[ArrangeData](<#ArrangeData>) | Prepares your data to be used by the Data Grid. Use this action in the Data Action after you've fetched the data from the database (**only available for O11**).
 
 Client Action | Description
 ---|---
@@ -93,6 +94,8 @@ Structure | Description
 [DropdownOption](<#Structure_DropdownOption>) | Option displayed in the Dropdown column.
 [ErrorMessage](<#Structure_ErrorMessage>) | Error message from actions, such as adding or removing rows from the grid.
 [Filter_Condition](<#Structure_Filter_Condition>) | Represents a filter condition.
+[ImageOptionalConfigs](<#Structure_ImageOptionalConfigs>) | Additional configurations that can be set in the Image Column.
+[Mandatory](<#Structure_Mandatory>) | Sets column fields as mandatory and sets an error message.
 [Mandatory](<#Structure_Mandatory>) | Sets column fields as mandatory and sets an error message.
 [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>) | Additional configurations that can be set in the Context Menu items.
 [NumberConditionalFormatRule](<#Structure_NumberConditionalFormatRule>) | Conditional format rule definition for the Number column.
@@ -314,6 +317,31 @@ HasGroupPanel
 OptionalConfigs
 :   Type: optional, [OptionalConfigs](<#Structure_OptionalConfigs>).  
     Set additional parameters to customize the grid's behavior and functionality.
+
+
+### ImageColumn { #ImageColumn }
+
+Column for your GridContainer Block to render image fields. 
+  
+Drag as many columns as you need into the GridColumnsPlaceholder in the GridContainer Block.
+
+**Inputs**
+
+Header
+:   Type: mandatory, Text.  
+    Title of the column.
+
+ImageUrlFromBinding
+:   Type: optional, Text.  
+    Field to be displayed as image url from your data. Expected format: &quot;{EntityName}.[FieldName]&quot;. The field must be a URL.  
+    For example: &quot;Product_Sample.ImageURL&quot;
+    Note: Field "ImageUrlFixed" is dominant.
+
+ImageOptionalConfigs
+:   Type: optional, [ImageOptionalConfigs](<#Structure_ImageOptionalConfigs>).  
+    Set additional parameters to customize the column's behavior and functionality.
+
+
 
 ### MenuItem_Column_Freeze { #MenuItem_Column_Freeze }
 
@@ -1300,6 +1328,66 @@ Value
 :   Type: Text.  
     Condition value against which the cell value will be matched against - string format.
 
+### ImageOptionalConfigs { #Structure_ImageOptionalConfigs }
+
+Additional configurations that can be set in the Image Column.
+
+**Attributes**
+
+AltTextFixed
+:   Type: Text.
+    Alternative text for column images, if images cannot be displayed. 
+    Note: If used, field "AltTextFromBinding" will be ignored.
+
+AltTextFromBinding
+:   Type: Text.
+    Field to be displayed as alternative text for column images, if images cannot be displayed. 
+    Expected format: &quot;{EntityName}.[FieldName]&quot;.
+    For example: &quot;Product_Sample.Name&quot;
+    Note: Field "AltTextFixed" is dominant.
+
+Align
+:   Type: AlignMode Identifier.  
+    Set the horizontal alignment of cells in the column  
+    Default:  
+    * Text Columns - Left  
+    * Currency Columns - Right  
+    * Numeric Columns - Right  
+    * Dropdown Columns - Left  
+    * Date/DateTime Columns - Right  
+    * Checkbox Columns - Center
+
+AllowReorder
+:   Type: Boolean.
+    Allows changing the column order (default: true).
+
+AllowResize
+:   Type: Boolean.
+    Allows resizing the column width (default: true).
+
+AllowSort
+:   Type: Boolean.
+    Allows sorting data by column (default: true). If TextField is filled this parameter will be ignored.
+
+CanBeHidden
+:   Type: Boolean.
+    Set if the column is hidden in the column picker menu or not. (default: true).
+    Note: setting the parameter CanBeHidden to "false" and having Visible = "false", will IMPACT the end-user experience - the user will not be able to see the column or toggle it even.
+
+Visible
+:   Type: Boolean.
+    Allows to hide/display the column in the data grid (default: true).
+    Note: If used, field "AltTextFromBinding" will be ignored.
+
+Width
+:   Type: Integer.
+    Set the column's default width in pixels (default: 0 -> set automatically by the grid).
+
+HeaderTooltip
+:   Type: Text.
+    Message to show on hover column header when this parameter is not empty.
+
+
 ### Mandatory { #Structure_Mandatory }
 
 Set column fields as mandatory and set an error message
@@ -1314,6 +1402,7 @@ IsMandatory
 ErrorMessage
 :   Type: Text.  
     Message that will be displayed if the cell is not filled with any value
+
 
 ### MenuItemOptionalConfigs { #Structure_MenuItemOptionalConfigs }
 

@@ -1,6 +1,5 @@
 ---
 summary: This is a quick intro to get you started with OutSystems development.  
-tags: support-application_development; support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 036994b9-0656-4dc8-8b94-b0c4e9d71a1f
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -35,7 +34,7 @@ There are several prebuilt elements that you can use to build your apps faster. 
 
 * [Forge](https://www.outsystems.com/forge/)
 * [Screen templates](https://www.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=2)
-* [User interface patterns](https://www.outsystems.com/OutSystemsUIWebsite/PatternOverview)
+* [User interface patterns](https://www.outsystems.com/OutSystemsUIWebsite/PatternsOverview)
 * [Choose the right app for your project](right-app.md)
 
 

@@ -56,7 +56,7 @@ There are different ways of debugging a mobile app that help you discover, under
 
 * **Emulate the mobile app using the Google Chrome browser on your PC**
 
-    Use the Chrome browser on your computer to debug your mobile app if you don't need to execute native plugins, as native plugins can't run on a personal computer. This option is convenient to test the logic of the app. However, to check the performance or experience of the mobile app, test your app on a real mobile device. Also, consider this scenario if all the native plugins in the mobile app have action wrappers defined that return mock data when the plugin isn't available. For more information, refer to the best practices topic on [creating wrapper actions for native plugins](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Define_Fallbacks_for_Your_Native_Plugins>).
+    Use the Chrome browser on your computer to debug your mobile app if you don't need to execute native plugins, as native plugins can't run on a personal computer. This option is convenient to test the logic of the app. However, to check the performance or experience of the mobile app, test your app on a real mobile device. Also, consider this scenario if all the native plugins in the mobile app have action wrappers defined that return mock data when the plugin isn't available. For more information, refer to the best practices topic on [creating wrapper actions for native plugins](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/#Define-Fallbacks-for-Your-Native-Plugins).
 
 * **Install the mobile app on a device**
 
@@ -105,3 +105,15 @@ When debugging an app and checking the values of the Date Time data type, keep i
 * On the server, the date and time are in the timezone of the server.
 
 You can read more about timezones in [Available Data Types](../../../ref/data/data-types/available-data-types.md#date-time-notes).
+
+## Proxy scenarios
+
+If your infrastructure includes multiple front-end servers behind a load balancer or proxy server. The Service Studio must match the origin IP address from the front-end server to the developer's IP address. However, this is not accessible when using a proxy server.
+
+To debug a Traditional Web application, you must add the proxy IP speech to the Trusted Proxy addresses section in Service Center>Administration>Security>Network Security. The debugger stops at breakpoints regardless of the origin IP address for Mobile and Reactive applications.
+
+<div class="info" markdown="1">
+
+Proxy scenarios are supported in self-managed environments. However, there is no option to add Trusted proxy addresses in OutSystems Cloud installations.
+
+</div>

@@ -9,7 +9,7 @@ figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?ty
 
 # OutSystems 11 to ODC migration
 
-We want to ensure that you can take your existing O11 app portfolio and convert it into native ODC apps. Where once O11 applications are converted and published on ODC they can take advantage of all existing and future ODC capabilities, for example, cloud-native architecture, scaling without limits, and new AI capabilities for businesses and developers.
+Our goal is to enable you to convert your current O11 app portfolio into native ODC apps. Once converted and published on ODC, these applications can leverage all current and future ODC capabilities, such as cloud-native architecture, limitless scaling, and new AI features for businesses and developers.
 
 In order to guide you through O11 to ODC code and data migration journey, OutSystems provides documentation and migration tools to ease and automate the process.
 

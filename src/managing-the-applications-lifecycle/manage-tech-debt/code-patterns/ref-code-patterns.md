@@ -1002,16 +1002,3 @@ Unused data queries (Aggregates or SQL queries) can waste resources and degrade 
 **How to fix**  
 
 Check whether the Aggregate or the SQL query is necessary and consider deleting it.  
-
-
-### Reminder Comments
-
-Reminder Comments are remarks or reminders for yourself or team members. Some keywords may set a Commment as a reminder, [check the documentation to know more](../../../ref/lang/auto/class-comment.md). AIMS will flag Comments set as reminders that are unresolved. 
-
-**Impact**  
-
-Comments marked as "Is Reminder" may indicate important technical debt or unresolved issues.
-
-**How to fix**
-
-Resolve the issue or finish the task related to the reminder [Comment](../../../ref/lang/auto/class-comment.md). When completed remove the Comment or change **Is Reminder** to `No`.

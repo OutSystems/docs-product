@@ -134,7 +134,7 @@ Protections that are available for iOS builds.
 * Code injection protection
 * Debugger protection
 * Screen mirroring detection
-* Screenshot protection ([see limitation](#general))
+* Screenshot protection (Only blocks system screenshots[see limitation](#general))
 
 ## Configuration
 

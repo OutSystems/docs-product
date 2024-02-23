@@ -7,7 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 ---
-# Reseeding identity values in BPT tables (SQL Server)
+
+# Reseeding identity values in BPT tables
 
 <div class="info" markdown="1">
 

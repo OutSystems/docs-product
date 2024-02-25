@@ -44,4 +44,5 @@ jobs:
           ALTTEXTER_GITHUB_TOKEN_OVERRIDE: ${{ vars.ALTTEXTER_GITHUB_TOKEN_OVERRIDE }}
           ALTTEXTER_GITHUB_USERNAME: ${{ vars.ALTTEXTER_GITHUB_USERNAME }}
           ALTTEXTER_GITHUB_EMAIL: ${{ vars.ALTTEXTER_GITHUB_EMAIL }}
+          ALTTEXTER_SILENTMODE: ${{ vars.ALTTEXTER_SILENTMODE }}
         run: python /app/alttexter-ghclient.py

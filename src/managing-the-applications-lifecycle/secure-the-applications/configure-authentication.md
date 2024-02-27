@@ -34,7 +34,7 @@ The following setting applies to both persistent and session authentication:
 
 * **Cache Time In Minutes** – Number of minutes the authentication information sent by the device is considered valid by the server without the need to fetch it from the database. After this time, the server validates the authentication tokens against the information stored in the database and supplies new authentication tokens. If set to 0, the authentication cache mechanism is disabled.
 
-* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web apps, and Mobile Aaps distributed as Progressive Web apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
+* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web apps, and Mobile Apps distributed as Progressive Web apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
 
 **Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). 
 

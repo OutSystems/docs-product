@@ -1,6 +1,6 @@
 ---
 summary: Enable a login experience that uses an external provider, namely Google, Apple, Facebook, or LinkedIn, in your mobile app.
-tags: runtime-mobile
+tags: 
 locale: en-us
 guid: 834dcc40-0b87-4161-bcd0-db32053044c7
 app_type: mobile apps
@@ -265,13 +265,9 @@ This means that they count towards the user limits established in your subscript
 
 Use the methods available in the [Users API](../../../ref/apis/auto/users-api.final.md) to create or update end-user records.
 
-## Known issues and workarounds
-
-Check the following known issues and possible workarounds.
-
 ### Compatibility with operating systems
 
-#### iOS only.
+**iOS only**
 
 The native login flow for Apple sign is only available for iOS 13 and later versions.
 For earlier iOS versions, use the PWA login flow.

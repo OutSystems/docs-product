@@ -105,3 +105,47 @@ When you're retrying a deployment plan the following situations may arise due to
 * If the source environment no longer contains **any** application from the original plan, LifeTime shows a pop-up with a warning, and you cannot move forward.
 
 * If some of the **tagged versions** aren't available for deployment anymore when you retry the plan (for example, if a more recent version of an application was already deployed to the target environment), LifeTime shows you a feedback message stating this situation, and you'll be able to adjust the new deployment plan accordingly.
+
+## Creating and executing a parallel deployment plan 
+
+<div class="info" markdown="1">
+
+**Feature availability**
+
+To create and edit deployment plans in parallel for the same target environment:
+* **OutSystems Cloud infrastructures**: LifeTime 11.18.0 and higher
+* **Self-managed infrastructures**: LifeTime 11.21.0 and higher
+
+To execute deployment plans in parallel for the same target environment:
+* **OutSystems Cloud infrastructures**: LifeTime 11.21.0 and higher
+
+</div>
+
+If you have independent delivery lines in your factory, you can create, edit, and execute deployment plans for the same environment in your infrastructure in parallel. This allows different teams to deploy plans to the same target environment simultaneously. Parallel deployments decrease time-to-value by shortening the time-to-production of apps.
+
+### Prerequisites
+
+* Deployments don't contain a module that is already being deployed or redeployed for the same target environment in another deployment plan (otherwise, the deployment is blocked).
+
+* Deployments don't contain direct or indirect references (both as producers or as consumers) to any other module that is already being deployed for the same target environment in another deployment plan (otherwise, the deployment is blocked). 
+
+* Parallel deployments are enabled in LifeTime. By default, this is enabled for all environments.
+
+* Parallel deployment limit is defined for each environment in LifeTime. By default, the limit is 5. For OutSystems Cloud infrastructures, the limit cannot be increased above 5. For self-managed infrastructure, this limit can be increased above 5. 
+
+To create and execute a new deployment in parallel with other deployment plans targeting the same environment, follow these steps:
+
+1. In LifeTime, navigate to **Applications** > **Deployment Plans**.
+
+1. Click **Create new deployment plan**.
+
+    ![Screenshot of the Deployment Plans screen with the Create a new deployment plan button highlighted](images/deployment-plans-create-lt.png "Create a new deployment plan in LifeTime")
+
+1. In the **Create a deployment plan** popup, select your source and target environments, and click **Continue**.
+
+    ![Screenshot of theCreate a deployment plan popup with the source and target environments selected](images/deployment-plans-source-target-lt.png "Select the source and target environments")
+
+    **Note**: This example assumes that there are other deployment plans being executed against this target environment simultaneously. 
+
+1. [Edit and execute the deployment.](../deploy-applications/plan-a-deployment-for-the-operations-team.md#edit-a-deployment-plan) 
+

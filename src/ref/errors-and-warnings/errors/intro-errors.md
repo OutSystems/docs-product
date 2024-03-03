@@ -42,7 +42,7 @@ For more information about the different errors, see:
 * [Invalid Column Reference Error](invalid-column-reference-error.md)
 * [Invalid Combo Box Widget Error](invalid-combo-box-widget-error.md)
 * [Invalid Consumed Web Service Error](invalid-consumed-web-service-error.md)
-* [Invalid Data Action](invalid-data-dependency.md)
+* [Invalid Data Action](invalid-data-action.md)
 * [Invalid Data Dependency](invalid-data-dependency.md)
 * [Invalid Data Type Error](invalid-data-type-error.md)
 * [Invalid Entity Error](invalid-entity-error.md)

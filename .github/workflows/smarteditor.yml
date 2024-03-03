@@ -1,0 +1,56 @@
+name: smarteditor
+
+on:
+  issue_comment:
+    types:
+      - created
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  smarteditor-ghclient:
+    runs-on: ubuntu-latest
+    if: contains(github.event.comment.body, '/smarteditor')
+    container: 
+      image: ghcr.io/jonathanalgar/smarteditor-ghclient:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Add reaction to comment
+        run: |
+          COMMENT_ID=${{ github.event.comment.id }}
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Content-Type: application/json" \
+               -d '{"content":"eyes"}' \
+               "https://api.github.com/repos/${{ github.repository }}/issues/comments/$COMMENT_ID/reactions"
+      - name: Set ref for checkout
+        id: set_ref
+        run: |
+          PR_API_URL="${{ github.event.issue.pull_request.url }}"
+          REF=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" $PR_API_URL | jq -r .head.ref)
+          echo "REF=$REF" >> $GITHUB_ENV
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with:
+          fetch-depth: 1
+          ref: ${{ env.REF }}
+
+      - name: Run script
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+          SMARTEDITOR_ENDPOINT: ${{ secrets.SMARTEDITOR_ENDPOINT }}
+          SMARTEDITOR_TOKEN: ${{ secrets.SMARTEDITOR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOOLS_PAT: ${{ secrets.TOOLS_PAT }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          SMARTEDITOR_GITHUB_TOKEN_OVERRIDE: ${{ vars.SMARTEDITOR_GITHUB_TOKEN_OVERRIDE }}
+          SMARTEDITOR_GITHUB_USERNAME: ${{ vars.SMARTEDITOR_GITHUB_USERNAME }}
+          SMARTEDITOR_GITHUB_EMAIL: ${{ vars.SMARTEDITOR_GITHUB_EMAIL }}
+        run: python /app/smarteditor-ghclient.py

@@ -446,6 +446,7 @@
             - href: develop/processes/best-practices/limit-conditional-starts.md
             - href: develop/processes/best-practices/separate-process-application-logic.md
             - href: develop/processes/best-practices/scale-queries.md
+        - href: develop/processes/reseed-bpt-tables.md
         - href: develop/processes/light-process.md
 
     # Use Timers

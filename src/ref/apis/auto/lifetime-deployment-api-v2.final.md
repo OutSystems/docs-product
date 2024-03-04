@@ -11936,13 +11936,8 @@ IpAddress
 <span class="json-property-type">string</span>
 <span class="json-property-range" title="Value limits"></span>
 </dt>
-<dt data-property-name="Type">
-<span class="json-property-name">Type:</span>
-<span class="json-property-type">string</span>
-<span class="json-property-range" title="Value limits"></span>
-</dt>
 <dd>
-<p>Type of the message. [Info | Warning | Error] </p>
+<p>Details of the message.</p>
 <div class="json-inner-schema">
 </div>
 </dd>

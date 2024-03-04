@@ -14,15 +14,15 @@ In OutSystems, a Custom Application Template is a module that you can use as a s
 
 To create a template for an application:
 
-1. Create a new application, select the type of app for which you want this template to be used. 
+1. Create a new application, select the type of app for which you want this template to be used.
 
-1. Create a module and name it as `Template_<module_name>`, where `<module_name>` is the name you wish to assign to the new template. 
+1. Create a module and name it as `Template_<module_name>`, where `<module_name>` is the name you wish to assign to the new template.
 
-1. Open the module. In the properties of the module , insert a description and an icon. Along with the syntax of the module name in the step before, for a module to be considered a template it must have a description and an icon. 
+1. Open the module. In the properties of the module , insert a description and an icon. Along with the syntax of the module name in the step before, for a module to be considered a template it must have a description and an icon.
 
-1. Add to your module the developments you want to provide to the applications based on the template, like blocks or user permission logic. 
+1. Add to your module the developments you want to provide to the applications based on the template, like blocks or user permission logic.
 
-1. Publish to make the template available. Next time you create an app, this module will appear as a template in the templates list. 
+1. Publish to make the template available. Next time you create an app, this module will appear as a template in the templates list.
 
 Once an application is created based on a template, further changes to the template will not impact this same application.
 
@@ -36,15 +36,15 @@ To help with that task, we will create a template to be the base of all planned 
 
 1. Create a new application. and select Mobile App as the type of app to build.
 
-1. Write down the name `BrandTweeTemplates` as the app's name. 
+1. Write down the name `BrandTweeTemplates` as the app's name.
 
-1. Since the Margarita template has some of the features we want our template to have, select it as the template for our module. 
+1. Since the Margarita template has some of the features we want our template to have, select it as the template for our module.
 
-1. Create the module that will be the template. 
+1. Create the module that will be the template.
 
-1. Insert the name `Template_BrandTwee`, where `Template_` is a required prefix to your name to set the module as a template. 
+1. Insert the name `Template_BrandTwee`, where `Template_` is a required prefix to your name to set the module as a template.
 
-1. Open the module. Along with a name, for it to be considered a template it also needs a description and an icon. 
+1. Open the module. Along with a name, for it to be considered a template it also needs a description and an icon.
 
 1. Go to the module’s properties and insert a description:
 
@@ -52,8 +52,8 @@ To help with that task, we will create a template to be the base of all planned 
 
 1. Define an icon for the module.
 
-    ![](images/Create_a_Template_for_an_Application_-_template.png)
+    ![Screenshot of the OutSystems development environment showing the properties of the Template_BrandTwee module with fields for Name, Description, and Icon.](images/Create_a_Template_for_an_Application_-_template.png "OutSystems Template Module Properties")
 
 1. Now we can develop what you want to provide with this template, such as the form screens, its validations, and adjust the base theme to follow the company's brand image. 
 
-1. Publish. Once published, it becomes available in the templates list when we create a new application. 
+1. Publish. Once published, it becomes available in the templates list when we create a new application.

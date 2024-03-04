@@ -18,16 +18,16 @@ There the following types of application templates:
 * custom application templates
 * Forge application templates
 
-### Built-in application templates
+## Built-in application templates
 
 **Reactive Web App**, **Phone App**, and **Tablet App** are the built-in application templates that OutSystems creates and maintains. They use the [OutSystems UI](https://outsystemsui.outsystems.com/outsystemsuiwebsite/) and let you use the compatible theme, patterns, screen templates, and other UI components.
 
 ![Screenshot of the application templates selection screen in OutSystems Service Studio](images/app-templates.png "Application Templates Selection")
 
-### Custom application templates
+## Custom application templates
 
-Custom application templates are the application templates you create. Check out [Create a Custom Application Template](<../ui/reuse/create-a-custom-application-template.md>) for more instructions.
+Custom application templates are the application templates you create. Check out [Create a Custom Application Template](../ui/reuse/create-a-custom-application-template.md) for more instructions.
 
-### Forge application templates
+## Forge application templates
 
 Forge application templates are provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates). Once you install an application template from Forge, you can select it when you're creating a new app, just like other application templates.

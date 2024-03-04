@@ -40,13 +40,13 @@ It's possible to create a Theme without any styles. Follow these steps in Servic
 
 1. Go to the **Interface** tab.
 
-2. Right-click the **Themes** folder, then select **Add Theme**. New Theme appears in the **Themes** folder.
+1. Right-click the **Themes** folder, then select **Add Theme**. New Theme appears in the **Themes** folder.
 
-3. In the **Base Theme** property list of the new Theme select **(None)**.
-    
+1. In the **Base Theme** property list of the new Theme select **(None)**.
+
     ![Steps to create a Theme without styles in Service Studio](images/creating-blank-theme-ss.png "Creating a Blank Theme in Service Studio")
 
-4. Optionally, go to **Interface** > **UI Flows**, select a UI Flow and in the properties select you blank Theme **Theme** list. This makes all elements under the UI Flow to use the blank Theme. 
+1. Optionally, go to **Interface** > **UI Flows**, select a UI Flow and in the properties select you blank Theme **Theme** list. This makes all elements under the UI Flow to use the blank Theme.
 
 ## Creating a Theme from a Base Theme
 

@@ -19,4 +19,3 @@ Applies to Mobile Apps and Reactive Web Apps only
 The following components and UI patterns are specially designed to address common application use cases in mobile development.
 
 ![Screenshot of various mobile UI patterns for application development](images/UI_Mobile_Patterns_1.png "Mobile UI Patterns")
-

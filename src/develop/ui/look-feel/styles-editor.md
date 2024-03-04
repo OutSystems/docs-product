@@ -22,7 +22,7 @@ Layout
 :     Width, height, alignment (left, center, right) and the background color. Margins and padding. When applicable to the selected element, **Width** and **Margin Left** properties have column count for the grid.
 
 Borders
-:   Thickness and color of the borders. Roundness of corners. 
+:   Thickness and color of the borders. Roundness of corners.
 
 **Margins** and **Borders** have icons to indicate how edits apply to the widget.
 
@@ -37,9 +37,9 @@ If you want to use the same style on other widgets, save the style as a set of p
 
 The expandable section **Styles Properties Applied** lists all styles in the widget. Click a style to open Style Sheet Editor at the style definition.
 
-You can edit [CSS](<css.md>) directly in the module [Theme](<themes.md>) for a greater control of the visual elements.
+You can edit [CSS](css.md) directly in the module [Theme](themes.md) for a greater control of the visual elements.
 
-Note that Styles Editor edits can be overridden by the `style` value of the **Extended Properties**, according to the [CSS specificity](<css.md#css-specificity>) rules. Additionally, any class added in `class` extended property isn't visible in the editor.
+Note that Styles Editor edits can be overridden by the `style` value of the **Extended Properties**, according to the [CSS specificity](css.md#css-specificity) rules. Additionally, any class added in `class` extended property isn't visible in the editor.
 
 # Examples of use
 
@@ -90,7 +90,7 @@ How to edit existing CSS style.
 How to reset the widget styles to default values.
 
 1. Select a widget.
-2. Go to **Styles Editor** > **Styles**.
-3. Delete the CSS styles in the text box under **Style Properties Applied**.
+1. Go to **Styles Editor** > **Styles**.
+1. Delete the CSS styles in the text box under **Style Properties Applied**.
 
-If you saved custom styles, you need to remove them in **Styles Editor** > **Styles** > **Style Classes**. If you're not sure which styles you created and which are default, create a new widget and compare the styles under **Style Classes**. 
+If you saved custom styles, you need to remove them in **Styles Editor** > **Styles** > **Style Classes**. If you're not sure which styles you created and which are default, create a new widget and compare the styles under **Style Classes**.

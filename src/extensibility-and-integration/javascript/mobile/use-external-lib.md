@@ -26,13 +26,14 @@ Before using JavaScript code from an external library or contained in a `.js` fi
 
 1. Import or create a script under the **Scripts** tree folder. This script may reside in the module (that is, it was created using the context menu options "Create Script" or "Import Script", when right-clicking the "Scripts" folder), or can be a reference to a script defined in another module.
 
-    ![](images/module-add-script.png)
+    ![Screenshot showing the context menu options to add a script in OutSystems, with 'Import Script' and 'Create Script' highlighted.](images/module-add-script.png "Adding a Script in OutSystems")
 
 1. In the **Interface** tab, select the screen/block where you want to add the JavaScript code, and its properties select the script in the **Required Scripts** property:
 
-    ![](images/screen-add-required-script.png)
+    ![Screenshot of the OutSystems interface tab displaying the screen properties with the 'Select Required Script' dropdown expanded, showing 'Scripts.MyScript' as an option.](images/screen-add-required-script.png "Selecting a Required Script in OutSystems")
 
-The script added as a required script is evaluated in the global scope. Thus, you can use functions and objects initialized in this script in any JavaScript element of the screen/block.
+The script added as a required script is evaluated in the global scope.
+Thus, you can use functions and objects initialized in this script in any JavaScript element of the screen/block.
 
 ## Demo
 

@@ -36,7 +36,7 @@ Depending on what version of OutSystems UI you are using, some patterns may be d
     ![Screenshot showing how to select Manage Dependencies in Service Studio](images/select-manage-dependencies-ss.png "Manage Dependencies in Service Studio")
 
 1. Click **In Use**.
-   
+
     ![Screenshot of the In Use button in Service Studio's Dependencies tab](images/select-in-use-button-ss.png "In Use Button in Service Studio")
 
 1. Select **OutSystemsUI**.

@@ -23,6 +23,7 @@ In this article, we describe how you can integrate the OutSystems platform with 
 <div class="info" markdown="1">
 
 There are other pre-render solutions in the market and you are free to choose a different one that fits your needs. OutSystems recommends [Prerender.io](https://prerender.io/) as one of your pre-rendering options due to its significant SEO improvements. 
+
 Note that the steps below are applicable for OutSystems Cloud customers.
 
 </div>

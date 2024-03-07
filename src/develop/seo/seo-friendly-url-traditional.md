@@ -84,7 +84,7 @@ Shows the following URL:
 ```
 http://www.example.com/InsterstateBuses/To-Faro
 ```
-### eSpaces Aliases
+### Module Aliases
 
 <div class="info" markdown="1">
 
@@ -92,7 +92,7 @@ This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Fr
 
 </div>
 
-An eSpace Alias is an alternative eSpace name to be used in URLs: normally a simpler, friendlier, and keyword relevant name. To check which eSpaces have aliases, select the ‘eSpace Alias List’ option.
+A module alias is an alternative module name to be used in URLs: normally a simpler, friendlier, and keyword relevant name. To check which module have aliases, select the ‘Module Alias List’ option.
 
 To set eSpaces aliases select the **Module Alias List** option.
 
@@ -130,7 +130,7 @@ With the above settings use the simplified www.myCompany.com URL to access myCom
 
 On the other hand, the site for Taxi Anywhere displays the application default web page with the language locale automatically set according to the URL.
 
-### Redirect Rules
+### Redirect Rules {redirect-rules}
 
 When domain changes occur make your old URLs point to the new ones using the Redirect Rules. It allows for old URL references to keep working, and for search engines to have a way of knowing that a replacement took place, thus not affecting their previous search engine ranking information.
 

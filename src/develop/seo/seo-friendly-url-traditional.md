@@ -134,6 +134,12 @@ On the other hand, the site for Taxi Anywhere displays the application default w
 
 When domain changes occur make your old URLs point to the new ones using the Redirect Rules. It allows for old URL references to keep working, and for search engines to have a way of knowing that a replacement took place, thus not affecting their previous search engine ranking information.
 
+<div class="info" markdown="1">
+
+If you have enabled [secure endpoints for host header injection protection](../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
+
+</div>  
+
 To transform incoming URLs and force client-side redirects select the **Redirect Rules List** option.  
 
 ![Screenshot of SEO redirect rules in OutSystems Service Center](images/seo-redirect-rules-sc.png "SEO Redirect Rules in Service Center")

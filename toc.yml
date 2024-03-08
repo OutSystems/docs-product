@@ -956,14 +956,15 @@
         - href: managing-the-applications-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
     - href: managing-the-applications-lifecycle/secure-the-applications/intro.md
     - topics:
-        - href: managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md
-        - href: managing-the-applications-lifecycle/secure-the-applications/apply-content-security-policy.md
-        - href: managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md
-        - href: managing-the-applications-lifecycle/secure-the-applications/encrypt-viewstate.md
-        - href: managing-the-applications-lifecycle/secure-the-applications/protection-against-brute-force-attacks.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-https-by-enabling-ssl.md
-
+        - href: managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/apply-content-security-policy.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/protection-against-brute-force-attacks.md
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/encrypt-viewstate.md
+        
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
@@ -1113,7 +1114,7 @@
         - href: setup-maintain/upgrade/upgrade-platform-module-deploy.md
         - href: setup-maintain/upgrade/upgrade-platform-errors.md
 
-    # Mantain your OutSystems infraestructure
+    # Maintain your OutSystems infraestructure
 
 
 # Migration to ODC

@@ -1,13 +1,12 @@
 ---
-summary: Configure your OutSystems Cloud environments to use your company's domain. Keep serving secure applications with SSL certificates.
-tags: support-Application_Troubleshooting; support-Cloud_Platform; support-Cloud_Platform-featured; support-Installation_Configuration; support-installation; support-Security; article-page
+summary: Learn how to set up a custom SSL domain in OutSystems Cloud by managing SSL certificates and DNS configurations.
+tags:
 locale: en-us
 guid: 75f71e55-19e7-4a6a-bd44-f730385acf52
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2580%3A4785&mode=design&t=uPq3qCZl7kqIKVy0-1
 ---
-
 # Use your SSL domain in OutSystems Cloud
 
 Your OutSystems cloud environment includes a valid SSL certificate with the `outsystemsenterprise.com` domain. You can also use your own domain by assigning your SSL certificate to the environment. To use your own domain, you must upload your SSL certificate that replaces the `outsystemsenterprise.com` default certificate.
@@ -204,9 +203,11 @@ An example :
 
 <div class="warning" markdown="1">
 
-The DNS of the OutSystems servers redirects to a load balancer, with an address like *.elb.amazonaws.com. But the address of the load balancer is subject to change. You can't use the load balancer address in your DNS records.
+* The DNS of the OutSystems servers redirects to a load balancer, with an address like *.elb.amazonaws.com. But the address of the load balancer is subject to change. You can't use the load balancer address in your DNS records.
 
-You should never create on your DNS an A record pointing to an OutSystems Cloud server's IP address.
+* You should never create on your DNS an A record pointing to an OutSystems Cloud server's IP address.
+
+* If you have enabled [secure endpoints for host header injection protection](../../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure that they're adjusted to your DNS configurations.
 
 </div>
 

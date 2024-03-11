@@ -32,7 +32,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Click  **+ New registration**.
 
-    ![URI metadata](images/new-reg-az.png)
+    ![Screenshot highlighting the '+ New registration' button in the Azure Active Directory App registrations section.](images/new-reg-az.png "Azure AD New Registration Button")
 
 1. Enter the **Name** and **Supported account type**.
 
@@ -48,23 +48,18 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Go to **Authentication** and click **+ Add a platform**.
 
-    ![Add a platfrom](images/add-platform-az.png)
+    ![Screenshot showing the '+ Add a platform' button in the Authentication section of an Azure AD application.](images/add-platform-az.png "Azure AD Add a Platform Button")
 
 1. From the **Configure platforms** screen, click **Web**.
 
-    ![Choose web platform](images/web-az.png)
+    ![Screenshot highlighting the 'Web' option in the 'Configure platforms' screen in Azure AD.](images/web-az.png "Azure AD Web Platform Selection")
 
 1. Set the **Redirect URI** to the Service Center login page from the LifeTime environment:
 
     * ``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
-    ![Set redirect URI](images/redirect-az.png)
+    ![Screenshot showing the field for setting the Redirect URI to the Service Center login page in the Azure AD application configuration.](images/redirect-az.png "Set Redirect URI")
 
-1. Set the **Front-channel logout URL** to the LifeTime logout page from the LifeTime environment:
-
-    * ``https://<LT_ENV>/LifeTimeSDK/CentralizedLogoutPage.aspx``
-
-    ![Set the Front-channel logout URL](images/front-channel-az.png)
 
 1. Click **Configure**.
 
@@ -72,7 +67,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
     * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
-    ![Add new URI for ech environment](images/redirect-uri-az.png)
+    ![Screenshot displaying multiple fields for adding new Redirect URIs for different environments in Azure AD.](images/redirect-uri-az.png "Azure AD Redirect URIs for Environments")
 
 1. Click **Save**.
 
@@ -80,17 +75,17 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Go to **Authentication** and click **+ Add a platform**.
 
-    ![Add a platfrom](images/add-platform-az.png)
+    ![Screenshot showing the '+ Add a platform' button in the Authentication section of an Azure AD application.](images/add-platform-az.png "Azure AD Add a Platform Button")
 
 1. From the **Configure platforms** screen, click **Mobile and desktop applications**.
 
-    ![Choose mobile and desktop applications](images/mob-desktop-az.png)
+    ![Screenshot highlighting the 'Mobile and desktop applications' option in the 'Configure platforms' screen in Azure AD.](images/mob-desktop-az.png "Azure AD Mobile and Desktop Applications Selection")
 
 1. Set the **Custom redirect URIs** to the following Service Studio protocol:
 
     * ``servicestudio://auth``
 
-    ![Set custom redirect URI](images/custom-uri-az.png)
+    ![Screenshot showing the field to set custom redirect URIs for desktop applications in Azure AD.](images/custom-uri-az.png "Azure AD Custom Redirect URIs for Desktop Applications")
 
 1. Click **Configure**.
 
@@ -118,7 +113,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Go to the **Certificates & Secrets** > **Client  secrets** and click **+ New client secret**.
 
-    ![Add new client secret](images/add-secret-az.png)
+    ![Screenshot highlighting the '+ New client secret' button in the Certificates & Secrets section of an Azure AD application.](images/add-secret-az.png "Azure AD New Client Secret Button")
 
 1. On the **Add a client secret** screen, enter the following details:
 
@@ -126,7 +121,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
     * **Expires**: Recommended: 6 months
 
-    ![Enter secret details](images/secret-details-az.png)
+    ![Screenshot showing the 'Add a client secret' dialog with fields for description and expiration in Azure AD.](images/secret-details-az.png "Azure AD Add a Client Secret Dialog")
 
 1. Click **Add**.
 
@@ -138,25 +133,25 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
     </div>
 
-    ![Enter secret details](images/secret-value-az.png)
+    ![Screenshot displaying a newly created client secret value in the 'Client secrets' tab of an Azure AD application.](images/secret-value-az.png "Azure AD Client Secret Value")
 
 ## Configure Azure AD Open ID permissions
 
 1. Go to **API Permissions** and click **+ Add a permission**.
 
-    ![Add a permission](images/add-permission-az.png)
+    ![Screenshot showing the '+ Add a permission' button in the API Permissions section of an Azure AD application.](images/add-permission-az.png "Azure AD Add API Permission Button")
 
 1. From the **Request API permissions** screen, go to **Microsoft APIs** and select **Microsoft Graph**.
 
-    ![Select Microsoft Graph](images/graph-az.png)
+    ![Screenshot highlighting the 'Microsoft Graph' option in the 'Request API permissions' screen in Azure AD.](images/graph-az.png "Azure AD Microsoft Graph API Selection")
 
 1. Select **Delegated permissions**.
 
-    ![Select delegated permissions](images/delegated-permissions-az.png)
+    ![Screenshot showing the 'Delegated permissions' option in the 'Request API permissions' screen for Microsoft Graph in Azure AD.](images/delegated-permissions-az.png "Azure AD Delegated Permissions Selection")
 
 1. Select all **OpenId permissions**.
 
-    ![Select OpenId permissions](images/openid-permissions-az.png)
+    ![Screenshot displaying the selection of OpenID permissions in the 'Request API permissions' screen for Microsoft Graph in Azure AD.](images/openid-permissions-az.png "Azure AD OpenID Permissions Selection")
 
 1. Click **Add Permissions**.
 
@@ -176,19 +171,19 @@ To finalize and activate the Azure AD configuration for IT users, follow these s
 
         **Note** This URI can be found in the Azure Portal by navigating to the **Azure Active Directory** > **App Registrations** > **Endpoints**, and copying the **OpenID Connect metadata document** link.
 
-        ![Copy OpenId metadata document](images/endpoint-az.png)
+        ![Screenshot showing the OpenID Connect metadata document URI in the 'Endpoints' tab of an Azure AD application.](images/endpoint-az.png "Azure AD OpenID Connect Metadata Document URI")
 
     1. **Client ID Type**: Select the option **Single Client ID for Desktop and Web tools**.
 
     1. **Client ID**: Fill in with the **Application (client) ID** that is found in the Azure Portal's **Azure Active Directory** service and **Overview** tab.
 
-        ![Copy application client id](images/app-client-id-az.png)
+        ![Screenshot displaying the Application (client) ID in the 'Overview' tab of an Azure AD application.](images/app-client-id-az.png "Azure AD Application Client ID")
 
     1. **Username Claim**: The claim used to match the username field of the user configured in LifeTime which will need to be  ``preferred_username`` for Azure AD. For more information about claims, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
 
 1. Click **Save Changes**.
 
-1. Before making Azure AD as the effective IdP, make sure to test the configuration and ensure that the Azure AD users have a corresponding user created in the OutSystems platform first.
+1. Before making Azure AD the effective IdP, make sure to test the configuration and ensure that the Azure AD users have a corresponding user created in the OutSystems platform first.
 
 1. Click **Activate**.
 

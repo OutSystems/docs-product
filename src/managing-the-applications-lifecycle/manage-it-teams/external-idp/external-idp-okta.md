@@ -48,8 +48,6 @@ To configure Okta authentication, follow these steps:
 
         * For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center logout page: ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
 
-        * For the Lifetime environment, add a new URI for the Lifetime logout page: ``https://<LT_ENV>/LifeTimeSDK/CentralizedLogoutPage.aspx``
-
     * **Controlled access**: Select the option that suits your requirements
 
         ![Screenshot detailing the configuration options for OutSystems Consoles app integration in Okta](images/config-consoles-ok.png "Configuring OutSystems Consoles in Okta")

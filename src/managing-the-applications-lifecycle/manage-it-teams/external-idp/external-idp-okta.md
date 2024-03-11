@@ -134,7 +134,7 @@ To finalize and activate the Okta configuration for both Consoles and Developmen
 
     **Note**: You need this information when configuring the provider in LifeTime.
 
-1. To configure and activate the provider, follow the steps in the [LifeTime](#lifetime) section using the following details for for the OIDC provider information:
+1. To configure and activate the provider, follow the steps in the [LifeTime](#lifetime) section using the following details for the OIDC provider information:
 
     1. Click the **Use a different Client Ids for Desktop and Web tools** link and add both Application IDs using the following details:
 

@@ -29,6 +29,7 @@ To configure Okta authentication, follow these steps:
 1. On the **Create a new app integration** screen, select the following options and click **Next**.
 
     * **Sign-in method**: OIDC - OpenID Connect
+    
     * **Application type**: Web Application
 
     ![Screenshot of Okta's 'Create a new app integration' screen with 'OIDC - OpenID Connect' and 'Web Application' selected](images/select-app-type-ok.png "Selecting Application Type in Okta")
@@ -50,7 +51,7 @@ To configure Okta authentication, follow these steps:
 
     * **Controlled access**: Select the option that suits your requirements
 
-        ![Screenshot detailing the configuration options for OutSystems Consoles app integration in Okta](images/config-consoles-ok.png "Configuring OutSystems Consoles in Okta")
+        ![Screenshot detailing the configuration options for OutSystems Consoles app integration in Okta](images/config-console-ok.png "Configuring OutSystems Consoles in Okta")
 
 1. From the **OutSystems Consoles** application integration screen, copy the **Client ID** and the **Client Secret** details.
 
@@ -147,27 +148,3 @@ To finalize and activate the Okta configuration for both Consoles and Developmen
         * **Client Secret**: OutSystems Consoles Client Secret
 
         * **Client Id for Desktop tools**: OutSystems Development Tools Client ID
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

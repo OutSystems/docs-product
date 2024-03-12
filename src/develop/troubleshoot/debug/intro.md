@@ -119,6 +119,6 @@ Alternatively, manual distribution of users across front-ends or using DNS load 
 
 <div class="info" markdown="1">
 
-Proxy scenarios are supported in self-managed environments. However, there is no option to add Trusted proxy addresses in OutSystems Cloud installations.
+Proxy scenarios are supported in self-managed environments. However, there is no option to add Trusted proxy addresses in OutSystems Cloud.
 
 </div>

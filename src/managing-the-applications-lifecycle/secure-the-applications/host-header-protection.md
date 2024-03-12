@@ -71,7 +71,7 @@ Before enabling secure endpoints you must list all the hostnames used to access 
 
     ![Diagram depicting DNS configuration with multiple endpoints pointing to an OutSystems environment address, illustrating the need to add all endpoints as secure in LifeTime.](images/dns-config-diag.png "DNS Configuration Diagram")
 
-    In this scenario, you must add all endpoints that can eventually lead to your `outsystemsenterprise.com` environment address as secure endpoints in LifeTime. In this example, you would need to add endpoint 1`, `endpoint 2`, and `endpoint 3`.
+    In this scenario, you must add all endpoints that can eventually lead to your `outsystemsenterprise.com` environment address as secure endpoints in LifeTime. In this example, you would need to add `endpoint 1`, `endpoint 2`, and `endpoint 3`.
 
     <div class="info" markdown="1">
 

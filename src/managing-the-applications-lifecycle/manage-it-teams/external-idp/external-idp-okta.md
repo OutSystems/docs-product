@@ -51,7 +51,7 @@ To configure Okta authentication, follow these steps:
 
     * **Controlled access**: Select the option that suits your requirements
 
-        ![Screenshot detailing the configuration options for OutSystems Consoles app integration in Okta](images/config-console-ok.png "Configuring OutSystems Consoles in Okta")
+        ![Screenshot detailing the configuration options for OutSystems Consoles app integration in Okta](images/config-consoles-ok.png "Configuring OutSystems Consoles in Okta")
 
 1. From the **OutSystems Consoles** application integration screen, copy the **Client ID** and the **Client Secret** details.
 

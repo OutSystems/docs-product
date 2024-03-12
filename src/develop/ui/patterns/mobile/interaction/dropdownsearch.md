@@ -128,4 +128,7 @@ After following these steps and publishing the module, you can test the pattern 
 |Event| Description| 
 |---|---|
 |Initialized: Optional| Event triggered after the Dropdown Search instance is ready.| 
-|OnChanged: Mandatory| Event triggered each time an option is selected.| 
+|OnChanged: Mandatory| Event triggered each time an option is selected.|
+
+## Public Actions
+This pattern includes available [public actions](../public-actions.md#dropdowns) that can be used to extend its behavior.

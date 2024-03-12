@@ -14,7 +14,7 @@ In your application logic, you may want to loop over each element in a collectio
 
 To iterate through the elements of a List:
 
-1. Add a **For Each** flow element to the action flow.
+1. Add a **For Each** flow element to the action flow.\
 ![Screenshot showing how to add a For Each flow element to the action flow](images/for-each-1-ss.png "Adding a For Each Element")
 1. Set its **Record List** property to the list you want to iterate. 
 ![Screenshot demonstrating setting the Record List property for the For Each element](images/for-each-2-ss.png "Setting the Record List Property")

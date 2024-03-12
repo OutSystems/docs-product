@@ -138,14 +138,14 @@ Protection available specific to iOS apps.
 
 ### Screen mirroring detection
 
-* **What it does:** Prevent external screens (connected through an adapter or through Airplay) from mirroring the application window often used for social engineering attacks and external scraping of screen data.
+* **What it does:** Prevent external screens (connected through an adapter or Airplay) from mirroring the application window often used for social engineering attacks and external scraping of screen data.
 * **What happens:** On positive detections block the screen mirroring functionality.
 * **Is it configurable?:** No.
 
 
 ### Screenshot protection
 
-* **What it does:** Blocks the creation of system screenshots.
+* **What it does:** Only blocks the creation of system screenshots, user-initiated screenshots are still allowed.
 * **What happens:** On positive detections blocks system screenshots.
 * **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](intro.md#configuration)
 

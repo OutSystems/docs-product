@@ -207,7 +207,7 @@ An example :
 
 * You should never create on your DNS an A record pointing to an OutSystems Cloud server's IP address.
 
-* If you have enabled [secure endpoints for host header injection protection](../../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure that they're adjusted to your DNS configurations.
+* If you have enabled [secure endpoints in LifeTime](../../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure that they're adjusted to your DNS configurations.
 
 </div>
 

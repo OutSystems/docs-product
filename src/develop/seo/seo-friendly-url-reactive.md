@@ -188,9 +188,13 @@ This is a preview of the transformed URL (for example, the Product screen has th
 
 ## Redirect rules  
 
-<div class="info" markdown="1">
+<div class="warning" markdown="1">
 
-If you have enabled [secure endpoints for host header injection protection](../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
+If you have enabled [secure endpoints](../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
+
+</div>
+
+<div class="info" markdown="1">
 
 To create and manage redirect rules, go to **Service Center**.
 

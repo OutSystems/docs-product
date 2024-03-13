@@ -162,6 +162,12 @@ The installation package will automatically download the required binaries for i
 
 Before starting the installation of the component, the installation package will validate if all the prerequisites are available on your system. The installation **will not proceed** if any prerequisites are missing.
 
+<div class="info" markdown="1">
+
+The installer will only install the minimum required version for the OutSystems Platform Server installation, which may not be the latest available version.
+
+</div>
+
 If you select the **Perform Tuning** option in the installer, and after checking that the prerequisites are correctly installed, the installation package will also check if it can automatically apply most of the mandatory steps in the **Tuning and Security checklist** section of the Installation Checklist.  
 The process will not make any modifications to user-defined configurations; it will only change any default values to the recommended values, as described in the referenced section in the Installation Checklist.
 

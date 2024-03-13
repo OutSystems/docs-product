@@ -574,7 +574,14 @@ Note: New findings are only processed every 12 hours.
 
 </div>
 
+
 To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../ai-mentor-studio/aims-api-authentication.md) article. 
+
+<div class="info" markdown="1">
+
+**Report page URL integration**: ApplicationGUID and TeamId parameters (case sensitive) can be passed to AI Mentor Studio report page to automatically set corresponding Teams and Apps filters. TeamId parameter should map to team ExternalId field returned in the API.
+
+</div>
 
 ## Access the Swagger file
 

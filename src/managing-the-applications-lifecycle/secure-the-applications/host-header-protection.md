@@ -1,34 +1,28 @@
 ---
-summary: Learn how to configure secure endpoints to prevent host header injection in OutSystems Cloud.
+summary: Learn how to configure secure endpoints to better secure your OutSystems Cloud environments.
 locale: en-us
 guid: 6c1dcebe-0c55-4fb3-b94b-21d162a23053
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3492-399&mode=design&t=POXL6zLzKO5sOwUF-0
 ---
-# Protecting against host header injection with secure endpoints
 
+# Configuring secure endpoints
 
-Host header injection is a vulnerability in which an attacker manipulates the host header of a HTTP request to deceive a server into handling the request as if it were intended for a different domain. Malicious actors can intercept a user's request and change the host header.
-The following diagram shows an example of such an attack.
+To better protect your OutSystems Cloud, you can configure secure endpoints that validate the host header of all your incoming requests.
 
-![Diagram illustrating a host header injection attack where an attacker manipulates the host header to redirect a user's request to a malicious server.](images/hh-injection-attack-diag.png "Host Header Injection Attack Diagram")
+Implementing this configuration is essential for achieving regulatory compliance like [PCI](https://www.outsystems.com/tk/redirect?g=1fcf38a0-15c1-486a-b022-a9d21dea89b6).
 
+LifeTime provides functionality to set up secure endpoints. This feature verifies incoming requests against your defined list of endpoints. Any request with an unauthorized endpoints is declined, enforcing access exclusively through the designated endpoints to enhance security.
 
-To safeguard against unauthorized access to sensitive data, manipulation of user sessions, and exposure to malicious content, it's crucial to mitigate this vulnerability. Implementing this configuration is essential for achieving [PCI compliance](https://www.outsystems.com/tk/redirect?g=1fcf38a0-15c1-486a-b022-a9d21dea89b6).
-
-In the OutSystems Cloud, LifeTime provides functionality to set up secure endpoints. This feature safeguards against host header injection attacks by verifying incoming requests against your defined list of endpoints. Any request with an unauthorized host header is declined, enforcing access exclusively through the designated endpoints to enhance security.
-
-![Diagram showing the functionality of secure endpoints in OutSystems Cloud to safeguard against host header injection attacks.](images/secured-endpoints-diag.png "Secured Endpoints Diagram")
-
-
+![Diagram showing the functionality of secure endpoints in OutSystems Cloud.](images/secured-endpoints-diag.png "Secured Endpoints Diagram")
 
 Therefore, configuring the endpoint list according to your organization’s specific infrastructure is important to ensure your endpoints aren’t rejected.
 
 The following are important notes regarding secure endpoints:
 
 * Both enabling and disabling the feature require a support ticket.
-* When host header injection protection is enabled, the environment's hostname is always allowed by default.
+* When secure endpoints are enabled, the environment's hostname is always allowed by default.
 * Once enabled, you can customize the list of allowed endpoints in self-service.
 * Wildcards (*.example.com) aren’t supported as secure endpoints.
 * If you remove all allowlisted endpoints, your environment only allows access with its own hostname.
@@ -38,10 +32,10 @@ The following are important notes regarding secure endpoints:
 
 ## Prerequisites { #prerequisites }
 
-To configure additional secure endpoints for host header injection protection, you first need to ensure the following conditions:
+To configure additional secure endpoints, you first need to ensure the following conditions:
 
 * Your infrastructure is in the OutSystems Cloud.
-* The LifeTime version is 11.17.4.0 or higher.
+* The LifeTime version is 11.21.1 or higher.
 * To manage secure endpoints, you need to have Admin built-in role in LifeTime.
 
 
@@ -107,7 +101,7 @@ After you’ve checked the endpoint configurations and the redirect rules, you s
 
 ## Enabling secure endpoints { #enable-secure-endpoints }
 
-To protect against host header injection, you can enable secure endpoints in any environment. OutSystems Support must perform the first configuration. Follow these steps:
+You can enable secure endpoints in any environment. OutSystems Support must perform the first configuration. Follow these steps:
 
 1. [Open a support case](https://www.outsystems.com/support/portal/open-support-case)
 1. In the support case, provide the environments to enable the feature and the compiled list of endpoints per environment. This is a fundamental step, if no list is provided, only the environment address will be allowed in the host header.
@@ -124,7 +118,7 @@ When you change the endpoint configurations or redirect rules, especially when a
 
 ## Managing the list of secure endpoints { #manage-secure-endpoints } 
 
-When you enable host header injection protection, LifeTime displays **Additional Secure Endpoints**. These endpoints form the allow list for validating host headers. Any request with a host header that differs from those in the allow list will be blocked.
+When you enable the feature, LifeTime displays **Additional Secure Endpoints**. These endpoints form the allow list for validating host headers. Any request with a host header that differs from those in the allow list will be blocked.
 
 To manage secure endpoints follow these steps:
 

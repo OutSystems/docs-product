@@ -4,7 +4,7 @@ locale: en-us
 guid: 92c4605e-5731-4f25-b18b-81e3318d575e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=1%3A853&mode=design&t=blNAbpnofC4dwbOh-1
+figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=1%3A853&mode=design
 ---
 
 # Convert O11 architecture blueprint to ODC architecture blueprint

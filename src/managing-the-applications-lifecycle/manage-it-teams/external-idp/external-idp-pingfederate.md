@@ -102,17 +102,7 @@ For more information, refer to [Managing IdP adapter grant mapping](https://docs
 
 For more information, refer to [Configuring an OAuth client](https://docs.pingidentity.com/r/en-us/solution-guides/mzt1663945300370).
 
-## 11. Return scopes as part of ID token response
-
-To return scopes as part of token response, follow these steps:
-
-1. Open the ``/pingfederate/server/default/data/config-store/oauth-scope-settings.xml`` file.
-1. Change the value of the ``always-return-scope-for-authz-code`` item from **False** to **True**. For example, ``<z:item name="always-return-scope-for-authz-code">true</z:item>``.
-1. Restart the PingFederate service.
-    
-    **Note**: Skip this step if you are not using Integration Studio.
-
-## 12. Configure PingFederate as OpenID connect provider in Lifetime
+## 11. Configure PingFederate as OpenID connect provider in Lifetime
 
 You can configure PingFederate as an external IdP by following thse steps:
 

@@ -1,13 +1,12 @@
 ---
-summary: SEO-friendly URLs for Reactive Web apps 
-tags: runtime-traditionalweb
+summary: The article provides guidelines for creating SEO-friendly URLs in Reactive Web apps, best practices, and configuration steps for site rules, custom screen URLs, redirect rules, URL prioritization, and dynamic page titles
+tags: 
 locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3329%3A27075&mode=design&t=vStGeN187wwjAjiU-1
 ---
-
 # SEO-friendly URLs for Reactive Web apps  
 
 ## Prerequisites  
@@ -188,6 +187,12 @@ Set this property to **Path** to pass the parameters separated by / in the URL (
 This is a preview of the transformed URL (for example, the Product screen has the ProductId input parameter and its URL Structure set as **Query string**. So the URL Pattern value will be `Product?ProductId={ProductId}`). 
 
 ## Redirect rules  
+
+<div class="warning" markdown="1">
+
+If you have enabled [secure endpoints](../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
+
+</div>
 
 <div class="info" markdown="1">
 

@@ -36,9 +36,9 @@ You can use All Exceptions if, within that specific scope, you want to handle al
 
 ### User Exception { #user-exception }
 
-You can create your own User Exceptions and raise them in your logic in specific conditions. For example, you can create a User Exception named UnavailableExternalSystem and raise it in your logic when you detect that the external system you use to fetch data in your application is experiencing a downtime.
+You can create your own User Exceptions and raise them in your logic in specific conditions. For example, you can create a User Exception named UnavailableExternalSystem and raise it in your logic when you detect that the external system you use to fetch data in your application is experiencing downtime.
 
-The User Exceptions created by you are "children nodes" of the general User Exception. This means that a general User Exception Handler will handle any of your own User Exceptions if it appears in the flow before an Exception Handler for your specific User Exception.
+Your specific exception handler handles exceptions before the general User Exception Handler.
 
 ### Database Exception { #database-exception }
 

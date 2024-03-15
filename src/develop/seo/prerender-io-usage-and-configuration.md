@@ -1,13 +1,12 @@
 ---
-summary: Learn about the best practices for usage and configuration of Prerender.io with OutSystems apps. 
-tags: 
+summary: Learn how to efficiently use Prerender.io and cut costs through smart caching and setup.
+tags:
 locale: en-us
 guid: 4E680AB9-9BF6-41B2-9537-C3325FF673F5
 app_type: mobile apps, reactive web apps
 platform-version: o11, ODC
 figma:
 ---
-
 # Best practices - Prerender.io usage and configuration
 
 Prerender ensures that a cached page is served in response to the user agent's request.
@@ -36,7 +35,7 @@ Prerender.io crawls the active sitemaps weekly and compares cached URLs with tho
 
 ## Provide correct HTTP status codes
 
-If your pages return an HTTP status code other than 200, then add **meta tags** to inform Prerender.io of the correct HTTP status code. These tags allow you to specify an alternative status code or headers for crawlers and override the default behaviour of the HTML page that consistently returns a 200 status code. For more information on adding meta tags, see Prerender.io [best practices](https://docs.prerender.io/docs/11-best-practices).
+If your pages return an HTTP status code other than 200, then add **meta tags** to inform Prerender.io of the correct HTTP status code. These tags allow you to specify an alternative status code or headers for crawlers and override the default behavior of the HTML page that consistently returns a 200 status code. For more information on adding meta tags, see Prerender.io [best practices](https://docs.prerender.io/docs/11-best-practices).
 For example, if a page is moved to a new URL, you can keep the old URL with a blank page and return a 301 status code. You can set the meta tags and Prerender.io return a 301 to the crawler with the page's new location.
 
 ```

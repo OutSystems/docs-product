@@ -21,9 +21,9 @@ JavaScript code can be used in client actions of Reactive and Mobile apps throug
 
 The JavaScript element allows extending the OutSystems capabilities by using JavaScript code. In the code editor you can type regular JavaScript code, such as:
 
-* Declare variables and assign values to them 
-* Invoke user-defined or built-in functions 
-* Call client actions, either synchronously or asynchronously, etc. 
+* Declare variables and assign values to them
+* Invoke user-defined or built-in functions
+* Call client actions, either synchronously or asynchronously, etc.
 
 The code editor window, opened by double-clicking the element or the element's "JavaScript" property, has auto-complete support for JavaScript keywords and predefined JavaScript objects, as well as for OutSystems available client actions and roles. It also has syntax highlighting and checks the JavaScript code for errors and warnings. The TrueChange pane displays eventual JavaScript syntax errors:
 
@@ -54,7 +54,7 @@ Output parameters can **not** be added dynamically just by setting their value i
 
 Client actions are available through the "$actions" predefined object. This object contains references to:
 
-* Global client actions defined in the current module or referenced from other modules 
+* Global client actions defined in the current module or referenced from other modules
 * Other client actions belonging to the same screen/block, if the JavaScript element is placed in a screen/block client action flow
 
 The return value is a simple JavaScript object containing each client action output parameters.
@@ -91,9 +91,9 @@ few predefined objects are already defined in the context where your
 JavaScript code will be executed. The name of these objects starts with a "$"
 sign:
 
-* **$parameters** – Contains the input and output parameters defined for the current JavaScript element. 
-* **$actions** – Contains references to client actions callable from the current JavaScript element scope (client actions either defined in the current module or referenced from another module, like system actions). 
-* **$roles** – Contains all the custom-defined roles for the current module. 
-* **$public** – Contains objects instantiating all public JavaScript API classes and modules. Check the [JavaScript API Reference](<../../../ref/apis/javascript/intro.md>) to find all the available modules and functions. 
+* **$parameters** – Contains the input and output parameters defined for the current JavaScript element.
+* **$actions** – Contains references to client actions callable from the current JavaScript element scope (client actions either defined in the current module or referenced from another module, like system actions).
+* **$roles** – Contains all the custom-defined roles for the current module.
+* **$public** – Contains objects instantiating all public JavaScript API classes and modules. Check the [JavaScript API Reference](<../../../ref/apis/javascript/intro.md>) to find all the available modules and functions.
 
 Other objects commonly available in JavaScript in a browser context can also be used, such as "window", "document", "JSON" and "RegExp" objects.

@@ -14,7 +14,7 @@ Cascading Style Sheets (CSS) is a language for describing how HTML content shoul
 
 These app UI elements have CSS which you can edit:
 
-* [Themes](<themes.md>)
+* [Themes](themes.md)
 * Screens and Emails
 * Blocks
 * Widgets (complex widgets have more than one style)
@@ -80,4 +80,4 @@ OutSystems development tools don't support the use of CSS preprocessors (such as
 1. **Avoid Inline Styles**: Inline styles can quickly become hard to manage and maintain, especially in large and complex projects. When styling is scattered throughout the HTML elements, it becomes challenging to track and modify styles, leading to code duplication and potential errors.
 1. **Avoid using ID selector**: The Id of each element is managed by the platform depending on its scope and could be changed anytime. To avoid unexpected behaviors, use CSS classes instead.
 1. **Centralize CSS in theme**: Adding styles in blocks and screen stylesheets can lead to maintainability and scalability issues. It leads to style duplication and also may have some impact on performance because it increases the file requests to the server.
-1. **Use CSS variables**: CSS variables allow you to define reusable values that can be used across your entire stylesheet. This makes it easy to maintain consistent styles throughout your application. 
+1. **Use CSS variables**: CSS variables allow you to define reusable values that can be used across your entire stylesheet. This makes it easy to maintain consistent styles throughout your application.

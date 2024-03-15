@@ -38,6 +38,3 @@ Content patterns allow you to highlight and display important information to use
 * [Tag](tag.md)
 * [Tooltip](tooltip.md)
 * [User Avatar](useravatar.md)
-
-
-

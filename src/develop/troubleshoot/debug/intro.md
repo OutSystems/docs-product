@@ -106,11 +106,16 @@ When debugging an app and checking the values of the Date Time data type, keep i
 
 You can read more about timezones in [Available Data Types](../../../ref/data/data-types/available-data-types.md#date-time-notes).
 
-## Proxy scenarios
+## Debugging in Proxy Scenarios and Farm Environments
 
-If your infrastructure includes multiple front-end servers behind a load balancer or proxy server. The Service Studio must match the origin IP address from the front-end server to the developer's IP address. However, this is not accessible when using a proxy server.
+In environments with multiple front-end servers behind a load balancer or proxy server, debugging may encounter issues due to unmatched origin IP addresses.
 
-To debug a Traditional Web application, you must add the proxy IP speech to the Trusted Proxy addresses section in Service Center>Administration>Security>Network Security. The debugger stops at breakpoints regardless of the origin IP address for Mobile and Reactive applications.
+For Traditional Web Applications, adding the proxy IP address to the Trusted Proxy addresses in Service Center > Administration > Security > Network Security resolves this issue, enabling proper debugging.
+
+It's important to note that debugger functionality remains unaffected for Mobile and Reactive Applications, as breakpoints are honored regardless of origin IP addresses.
+
+In farm setups, debugging can be challenging as user connections to specific front-ends cannot be guaranteed. This necessitates ensuring that the load balancer redirects users based on immutable criteria for effective debugging. 
+Alternatively, manual distribution of users across front-ends or using DNS load balancing can also help manage debugging challenges.
 
 <div class="info" markdown="1">
 

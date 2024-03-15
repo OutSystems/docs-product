@@ -29,6 +29,7 @@ To configure Okta authentication, follow these steps:
 1. On the **Create a new app integration** screen, select the following options and click **Next**.
 
     * **Sign-in method**: OIDC - OpenID Connect
+    
     * **Application type**: Web Application
 
     ![Screenshot of Okta's 'Create a new app integration' screen with 'OIDC - OpenID Connect' and 'Web Application' selected](images/select-app-type-ok.png "Selecting Application Type in Okta")
@@ -47,8 +48,6 @@ To configure Okta authentication, follow these steps:
     * **Sign-out redirect URIs**:
 
         * For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center logout page: ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
-
-        * For the Lifetime environment, add a new URI for the Lifetime logout page: ``https://<LT_ENV>/LifeTimeSDK/CentralizedLogoutPage.aspx``
 
     * **Controlled access**: Select the option that suits your requirements
 
@@ -136,7 +135,7 @@ To finalize and activate the Okta configuration for both Consoles and Developmen
 
     **Note**: You need this information when configuring the provider in LifeTime.
 
-1. To configure and activate the provider, follow the steps in the [LifeTime](#lifetime) section using the following details for for the OIDC provider information:
+1. To configure and activate the provider, follow the steps in the [LifeTime](#lifetime) section using the following details for the OIDC provider information:
 
     1. Click the **Use a different Client Ids for Desktop and Web tools** link and add both Application IDs using the following details:
 
@@ -149,27 +148,3 @@ To finalize and activate the Okta configuration for both Consoles and Developmen
         * **Client Secret**: OutSystems Consoles Client Secret
 
         * **Client Id for Desktop tools**: OutSystems Development Tools Client ID
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

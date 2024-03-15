@@ -22,7 +22,7 @@ To avoid this blocking behavior, JavaScript calls that are expected to take some
 
 **Promises** allow you to execute, compose and manage asynchronous operations. They allow for asynchronous methods to return values like synchronous methods do. However, instead of the final value, the asynchronous method returns a promise for the value at some point in the future (or never).
 
-For more information on using promises, check the [Mozilla Developer Network documentation on Promises](<https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise>).
+For more information on using promises, check the [Mozilla Developer Network documentation on Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
 ## Define an Asynchronous Client Action
 
@@ -73,7 +73,6 @@ If you have not defined any custom exception handlers in your module, the except
 
 </div>
 
-
 ## Call an Asynchronous Client Action
 
 When an asynchronous client action is called, its return value is not a simple JavaScript object, as in the synchronous case, but a promise. The output parameter values will be made available in the future (or eventually never) through the returned promise.
@@ -98,7 +97,7 @@ The "result" parameter is an object that contains the output parameters of the c
 You can also act upon an unhandled error or a call to "$reject()" occurred in the asynchronous client action. To do that, do one of the following:
 
 1. Add a second argument to the "then()" method. Its full signature is "then(onFullfilled, onRejected)", and the "onRejected" is a callback function called when "$reject()" is called in the asynchronous action, or 
-1. Chain the return value of the "then()" method, which is also a promise, with a "catch(onRejected)" method, that will handle the error case – this chaining process is called _composition_. 
+1. Chain the return value of the "then()" method, which is also a promise, with a "catch(onRejected)" method, that will handle the error case – this chaining process is called _composition_.
 
 Example using "catch(onRejected)":
 
@@ -150,5 +149,5 @@ You should always include error handling code when calling asynchronous client a
 Take into account that calling synchronous client actions in JavaScript must be coded differently than calling asynchronous client actions:
 
 * When calling synchronous client actions the return value is **a simple JavaScript object** containing the output parameters.
- 
-* When calling asynchronous client actions **a promise is returned**, i.e. the returned values will not be available immediately after returning to the caller context. If you don't take this into account in your JavaScript code, the subsequent logic may be operating on invalid data. 
+
+* When calling asynchronous client actions **a promise is returned**, i.e. the returned values will not be available immediately after returning to the caller context. If you don't take this into account in your JavaScript code, the subsequent logic may be operating on invalid data.

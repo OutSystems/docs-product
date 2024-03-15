@@ -48,7 +48,7 @@ OutSystems covers the full application lifecycle, from development to deployment
 
 * **Management Environment:** The environment that hosts LifeTime application, which is the infrastructure management console. Given its requirements, LifeTime application must run in a **dedicated** environment. **Installing LifeTime in an existing environment is not a supported scenario.** Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
 
-You can have your infrastructure on the cloud or as self-managed. [Learn more about the possible OutSystems infrastructure configurations.](./possible-setups/intro.md)
+You can have your infrastructure on the cloud or as self-managed. [Learn more about the possible OutSystems infrastructure configurations.](possible-setups/intro.md)
 
 ### Licensing
 
@@ -82,11 +82,11 @@ A self-managed OutSystems infrastructure is located on the customer’s datacent
 
 Before installing any component of OutSystems, make sure your hardware and software comply with the minimum requirements. For this, be sure to check:
 
-* [System requirements](./system-requirements.md): the supported hardware and software for installing OutSystems.
+* [System requirements](system-requirements.md): the supported hardware and software for installing OutSystems.
 
-* [Network requirements](./network-requirements.md): the network requirements for an environment where OutSystems is installed.
+* [Network requirements](network-requirements.md): the network requirements for an environment where OutSystems is installed.
 
-* [Default Platform Server and database configurations](./default-configurations.md): to install and run OutSystems, you need permission to change files in the file system, run services, and make changes to the database.
+* [Default Platform Server and database configurations](default-configurations.md): to install and run OutSystems, you need permission to change files in the file system, run services, and make changes to the database.
 
 ## Installation steps
 
@@ -161,6 +161,12 @@ The OutSystems Platform Server and LifeTime installation packages can automatica
 The installation package will automatically download the required binaries for installing the prerequisites from the official Microsoft sources. However, you can also perform an [offline installation](<#offline-installation>).
 
 Before starting the installation of the component, the installation package will validate if all the prerequisites are available on your system. The installation **will not proceed** if any prerequisites are missing.
+
+<div class="info" markdown="1">
+
+The installer will only install the minimum required version for the OutSystems Platform Server installation, which may not be the latest available version.
+
+</div>
 
 If you select the **Perform Tuning** option in the installer, and after checking that the prerequisites are correctly installed, the installation package will also check if it can automatically apply most of the mandatory steps in the **Tuning and Security checklist** section of the Installation Checklist.  
 The process will not make any modifications to user-defined configurations; it will only change any default values to the recommended values, as described in the referenced section in the Installation Checklist.

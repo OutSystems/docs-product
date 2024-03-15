@@ -68,7 +68,7 @@ Before proceeding with the installation, check the integrity of your certificate
 
 </div>
 
-Once you have acquired your certificate, you need to install it in your application server. The following sections include instructions on how to do it, for each of the application servers supported by OutSystems. These instructions assume that you have OutSystems installed, already. For instructions on how to install OutSystems, refer to [Setting Up OutSystems](./intro.md).
+Once you have acquired your certificate, you need to install it in your application server. The following sections include instructions on how to do it, for each of the application servers supported by OutSystems. These instructions assume that you have OutSystems installed, already. For instructions on how to install OutSystems, refer to [Setting Up OutSystems](intro.md).
 
 
 The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.

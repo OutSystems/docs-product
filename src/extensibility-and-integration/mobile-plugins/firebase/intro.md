@@ -18,7 +18,7 @@ Firebase is a Google mobile development platform. It speeds up development of ma
 
 * [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)
 * [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
-* [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
+* [Dynamic Links (Deprecated)](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
 
 <div class="info" markdown="1">
@@ -104,6 +104,10 @@ To get the target directory, concatenate the **app identifier** and **.firebase*
 Use the target directory value in the **Target Directory** property of the **Resource**.
 
 ### Additional setup for the Dynamic Links Plugin
+<div class="warning" markdown="1">
+Firebase Dynamic Links is being shutdown by Google on August 25th. You can check more info [here](https://firebase.google.com/support/dynamic-links-faq#:~:text=FAQ%20further%20below.-,When%20will%20Firebase%20Dynamic%20Links%20stop%20working%3F,Dynamic%20Links%20will%20shut%20down.). OutSystems has deprecated this plugin and will also shut it down on August 25th. 
+If you are using FCM Dynamic Links for deep-linking, OutSystems is assessing the possibility of providing a supported solution for App Links and Universal Links.  
+</div>
 
 The Firebase Dynamic Links Plugin has some additional setup steps that need to be followed for it to work correctly:
 

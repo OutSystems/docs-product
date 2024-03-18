@@ -143,7 +143,7 @@ The **Purpose** you can configure for the environment is subject to the environm
 </table>
 
 <p style="font-size:12px">
-1- Optimizations that only concern the performance of the 1-Click Publish process; 2- When not available the publish process will stop and ask the user if it should abort or continue; 3- Publishing the Current Running Version of a solution ensures broken dependencies are refreshed; 4- By publishing a module with the same name.
+1- Optimizations that only concern the performance of the 1-Click Publish process; 2- When not available the publish process will stop and ask the user if it should abort or continue; 3- Publishing the Current Running Version of a solution ensures all dependencies are refreshed; 4- By publishing a module with the same name.
 </p>
 
 <p style="font-size:12px" markdown="1">

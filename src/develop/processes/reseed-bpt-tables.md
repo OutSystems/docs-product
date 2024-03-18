@@ -1,5 +1,5 @@
 ---
-summary: Reseeding identity values in BPT tables 
+summary:  identity values in BPT tables 
 tags: 
 locale: en-us
 guid: b12b531a-097a-41c5-965b-7354fcdc2cef
@@ -29,13 +29,11 @@ If you use BPTs a lot, it may be worth considering alternative design patterns, 
 To check the current identity values in your BPT tables, you can run the following SQL statement:
 
 ```sql
-Unset
 DBCC CHECKIDENT(<table_name>, NORESEED);
 ```
 The expected output will look like something like this:
 
 ```sql
-Unset
 Checking identity information: current identity value '<current identity value>', current column value '<current column value>'. DBCC execution completed. If DBCC printed error messages, contact your system administrator.
 ```
 
@@ -54,7 +52,6 @@ The following steps demonstrates how you can reseed the identity value for the `
 1. Run the following SQL statement in the OutSystems Platform Database.
 
     ```sql
-    Unset
     DBCC CHECKIDENT (ossys_BPM_Activity, RESEED, -2147483648);
     GO
     ```
@@ -62,7 +59,6 @@ The following steps demonstrates how you can reseed the identity value for the `
 1. Run the following SQL statement to verify the identity value has been reseeded.
 
     ```sql
-    Unset
     DBCC CHECKIDENT (ossys_BPM_Activity, NORESEED);
     GO
     ```

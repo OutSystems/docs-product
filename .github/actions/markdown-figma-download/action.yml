@@ -7,7 +7,7 @@ runs:
     run: |
       if [ ! -f "markdown-figma" ]
       then
-      wget --no-verbose https://github.com/MiguelDomingues/markdown-figma/releases/download/v0.10.1/markdown-figma-linux -O ./markdown-figma
+      wget --no-verbose https://github.com/MiguelDomingues/markdown-figma/releases/download/v0.10.2/markdown-figma-linux -O ./markdown-figma
       fi
     shell: bash
 

@@ -35,11 +35,11 @@ There are four main categories of variables that compose the new Layer System:
 
 Main global layers define the patterns hierarchy in the main Stacking Context. The top value used is 20 (for accessibility and overall values management, it’s important to keep them as low as possible).
 
-* **layer-global-screen:** 0;
-* **layer-global-elevated:** 5
-* **layer-global-navigation:** 10
-* **layer-global-off-canvas:** 15
-* **layer-global-instant-interaction:** 20
+1. **layer-global-screen:** 0;
+2. **layer-global-elevated:** 5
+3. **layer-global-navigation:** 10
+4. **layer-global-off-canvas:** 15
+5. **layer-global-instant-interaction:** 20
 
 ![Diagram illustrating the OutSystems UI Layer System with global and local layers](images/layer-system.png "OutSystems UI Layer System Diagram")
  

@@ -14,15 +14,17 @@ Site Properties are global variables that have constant values. They are typical
 
 You can set a Site Property to a default value on its creation. At runtime, someone with privileges can change the Site Property value for a specific environment through the environment management console (Service Center).
 
+Starting with versions LifeTime 11.20.1, Platform Server 11.25.0, and Service Studio 11.54.35, Site Properties have the additional property **Is secret**. Set this to `Yes` where confidential information such as service credentials need to be protected. Secret Site Properties don't have a default value and can only be set in Service Center.
+
 ## Create and use a Site Property
 
 Site Properties exist in the server-side of the application. To create and use a Site Property:
 
-1. In the Data tab, right-click on the Site Properties folder and add a site property.
+1. In the **Data** tab, right-click on the **Site Properties** folder and click on **Add Site Property**.
 
     ![](images/site-property.png)
 
-1. Define the name, data type and default value of the newly created Site Property.
+1. Define the **Name**, **Data Type**, **Is secret** and **Default Value** of the newly created Site Property.
 
 1. Use the Site Property in your server-side code by referring to it as `Site.<SitePropertyName>`.
 
@@ -32,15 +34,15 @@ Site Properties are stored in cache of your application until invalidated.
 
 ## Change the value of a Site Property in Service Center
 
-1. Open the Service Center in your environment (`http://<environment>/ServiceCenter`) and login with your credentials.
-1. In the Factory tab, select **Applications** and filter by the name of your application.
+1. Open the **Service Center** in your environment (`http://<environment>/ServiceCenter`) and login with your credentials.
+1. In the **Factory** tab, select **Applications** and filter by the name of your application.
 1. Select the module in which the Site Properties are stored.
 1. Click on the **Site Properties** tab and select the Site Property whose value you want to change.
-1. Change the Effective Value of the Site Property and click Apply.
+1. Change the **Effective Value** of the Site Property and click **Apply**.
 
 ## Usage
 
-This section explains how to use a Site Property, using an example of an aggregate called **GetMovies** to retrieve records about movies from a **Movie** Entity, with the default maximum records of 50.
+This section explains how to use a Site Property, using an example of an aggregate called **GetMovies** to retrieve records about movies from a **Movie** Entity, with the default maximum records of 10.
 
 Follow the steps below.
 

@@ -10742,6 +10742,17 @@ IpAddress
 <div class="json-inner-schema">
 </div>
 </dd>
+<dt data-property-name="DetailsURL">
+<span class="json-property-name">DetailsURL:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-read-only"></span>
+</dt>
+<dd>
+<p>The URL to access the application details in LifeTime. <b>This attribute is available as of LifeTime Management Console 11.22.0.</b></p>
+<div class="json-inner-schema">
+</div>
+</dd>
 <dt data-property-name="IsSystem">
 <span class="json-property-name">IsSystem:</span>
 <span class="json-property-type">boolean</span>
@@ -11534,6 +11545,16 @@ IpAddress
 <div class="json-inner-schema">
 </div>
 </dd>
+<dt data-property-name="DetailsURL">
+<span class="json-property-name">DetailsURL:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The URL to access the deployment plan in LifeTime. <b>This attribute is available as of LifeTime Management Console 11.22.0.</b></p>
+<div class="json-inner-schema">
+</div>
+</dd>
 <dt data-property-name="Notes">
 <span class="json-property-name">Notes:</span>
 <span class="json-property-type">string</span>
@@ -12189,6 +12210,16 @@ IpAddress
 </dt>
 <dd>
 <p>The order of the environment as registered in Lifetime.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="DetailsURL">
+<span class="json-property-name">DetailsURL:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The URL to access the environment details in LifeTime. <b>This attribute is available as of LifeTime Management Console 11.22.0.</b></p>
 <div class="json-inner-schema">
 </div>
 </dd>

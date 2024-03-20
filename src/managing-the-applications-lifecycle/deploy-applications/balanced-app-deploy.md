@@ -22,8 +22,7 @@ For highly loaded farm environments, the recommendation is to perform a balanced
 
 This article describes the steps to deploy an application into a highly loaded OutSystems farm environment. The deployment process is balanced throughout the existing front-ends, guaranteeing no downtime for the applications.
 
-![Illustration of the balanced application deployment process in OutSystems](images/balanced-app-deploy-1.png "Balanced Application Deployment Process")
-
+![Illustration of the balanced application deployment process in OutSystems](images/balanced-app-deploy-1-diag.png "Balanced Application Deployment Process")
 
 ## Prerequisites
 
@@ -32,7 +31,6 @@ For the execution of this procedure, the following requirements must be met:
 * Have a **network load balancing mechanism** to distribute the application traffic between the front-ends.
 
 * The operation is performed by a user with **administrative privileges** at Service Center and operating system level (in the services management console).
-
 
 ## Overview
 
@@ -58,11 +56,11 @@ For this procedure, you will have to identify **two groups** of front-end server
 
 The following diagram shows these front-end groups in the farm environment, where the end-users access the applications through a load balancing mechanism:
 
-![Diagram showing the division of front-end servers into Updating and Loaded groups in a farm environment](images/balanced-app-deploy-2.png "Front-end Groups in Farm Environment")
+![Diagram showing the division of front-end servers into Updating and Loaded groups in a farm environment](images/balanced-app-deploy-2-diag.png "Front-end Groups in Farm Environment")
 
 Note that, if the environment uses [Deployment Zones](zones/intro.md) for application segmentation, you must consider a group of Updating front-ends and a group of Loaded front-ends for each Zone. In that case, think of each Zone as if it were a distinct farm environment.
 
-![Diagram of Updating and Loaded front-end groups for each Deployment Zone in a farm environment](images/balanced-app-deploy-3.png "Deployment Zones in Farm Environment")
+![Diagram of Updating and Loaded front-end groups for each Deployment Zone in a farm environment](images/balanced-app-deploy-3-diag.png "Deployment Zones in Farm Environment")
 
 ## Before you start
 
@@ -82,8 +80,8 @@ Do the following on each front-end server:
 1. Stop and disable the **OutSystems Scheduler Service**. Confirm that the service stays stopped and disabled.
 
 <div class="info" markdown="1">
- 
-Don’t start the OutSystems Scheduler Service until instructed to do so. 
+
+Don’t start the OutSystems Scheduler Service until instructed to do so.
 
 </div>
 
@@ -92,7 +90,7 @@ Don’t start the OutSystems Scheduler Service until instructed to do so.
 1. Access your **Load Balancer** management tool.
 1. Remove the application traffic from the **Updating front-ends**. The **Loaded front-ends** must be the only ones receiving traffic from end-users.
 
-![Load balancer configuration redirecting traffic away from Updating front-ends](images/balanced-app-deploy-4.png "Load Balancer Configuration for Updating Front-ends")
+    ![Load balancer configuration redirecting traffic away from Updating front-ends](images/balanced-app-deploy-4-diag.png "Load Balancer Configuration for Updating Front-ends")
 
 **Step 3. Disable deployment in the Loaded front-ends**
 
@@ -106,7 +104,6 @@ Don’t start the OutSystems Scheduler Service until instructed to do so.
 1. Log in with deployment privileges.
 1. Create or reuse a **deployment plan** including your applications and deploy it.
 1. Wait until the deployment finishes successfully.
-
 
 Any updates in the database caused by the new application version are executed during this publishing. The updated code will be automatically deployed to the remaining **Updating front-ends**.
 
@@ -123,7 +120,7 @@ Do the following on each **Updating front-end** server:
 1. Set the **Updating front-ends** to start receiving application traffic.
 1. Remove the application traffic from the **Loaded front-ends**. This time, the **Updating front-ends** must be the only ones receiving traffic from end-users.
 
-![Load balancer configuration redirecting traffic away from Loaded front-ends](images/balanced-app-deploy-5.png "Load Balancer Configuration for Loaded Front-ends")
+    ![Load balancer configuration redirecting traffic away from Loaded front-ends](images/balanced-app-deploy-5-diag.png "Load Balancer Configuration for Loaded Front-ends")
 
 Now your end-users will start seeing the new application version.
 

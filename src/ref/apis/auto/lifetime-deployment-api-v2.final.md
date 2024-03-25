@@ -2065,6 +2065,17 @@ TargetEnvironmentKey
 </div>                </dd>
 </dl>
 </section>
+<section class="sw-behaviors">
+<dl>
+<dt class="sw-behaviors-get-after-create">
+<b>Get deployment after creation changes its state</b>
+</dt>
+<dd class="sw-behaviors-get-after-create">
+A new deployment has an undefined status and when using this method to get a deployment's details just after it was created, the deployment status changes to 'Validating'.
+This behavior is by design.
+</dd>
+</dl>
+</section>
 </div>
 </div>
 <div id="operation--deployments--post" class="swagger--panel-operation-post panel">

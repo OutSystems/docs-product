@@ -40,10 +40,6 @@ To integrate with OutSystems Consoles, follow these steps:
 
         * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
 
-    * For the Lifetime environment, add a new URI for the Lifetime logout page:
-
-        * ``https://<LT_ENV>/LifeTimeSDK/CentralizedLogoutPage.aspx``
-
 ## Integrating with OutSystems Development Tools
 
 To integrate OutSystems Development Tools, follow these steps:

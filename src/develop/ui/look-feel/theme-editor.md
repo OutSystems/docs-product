@@ -57,7 +57,7 @@ Change the general structure of your Screens and UI elements by selecting spacin
 
 ![Screenshot of structure and shape customization settings in Theme Editor](images/theme-editor-04-ss.png "Structure and Shape Customization in Theme Editor")
 
-Spacing 
+Spacing
 :   Change the spacing between UI elements.
 
 Header size

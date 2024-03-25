@@ -2783,6 +2783,20 @@ RedeployOutdated
 <td>
 </td>
 </tr>
+<tr>
+<td>
+IncludeErrorDetails
+</td>
+<td><p>If True, when an error occurs the returned message will contain more details about the error in question. <b>This parameter is available as of LifeTime Management Console 11.21.0</b>.</p>
+</td>
+<td>query</td>
+<td>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+</td>
+</tr>
 </tbody>
 </table>
 </section>

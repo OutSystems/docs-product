@@ -62,7 +62,7 @@ Core module providing services to Foundation modules.
 
 **Impact**  
 
-Foundation modules are not supposed to consume services from a core module. They need to be fully isolated with no business logic or reference to a business module, otherwise consuming a foundation might bring unexpected impacts.
+Foundation modules are not supposed to consume services from a core module. They need to be fully isolated with no business logic or reference to a business module. Otherwise, consuming a foundation might bring unexpected impacts.
     
 **How to fix**  
 
@@ -70,7 +70,7 @@ To get more details on each finding, select "Consumed elements". If a consumed e
 
 ### Cyclic references between modules
 
-Cyclic references between two Foundation or two Core modules.
+Cyclic references between two Foundation modules or two Core modules.
 
 **Impact**  
 
@@ -78,7 +78,7 @@ Cycles between modules usually means an error in service abstraction and brings 
 
 **How to fix**  
 
-To get more details on each finding, select "Consumed elements". Understand the conceptual relation between modules involved in a cycle, to decide which module isn't supposed to consume the other. Decide whether moving the consumed elements to the module that consumes them makes sense in terms of conceptual abstraction, or if you should move all the consumed elements to a new module.
+To get more details on each finding, select "Consumed elements". Understand the conceptual relation between modules involved in a cycle to decide which module isn't supposed to consume the other. Decide whether moving the consumed elements to the module that consumes them makes sense in terms of conceptual abstraction or if you should move all the consumed elements to a new module.
 
 ### Orchestration application providing services
 
@@ -92,9 +92,9 @@ An Orchestration application must be fully isolated, not providing services - an
 
 Check Discovery for which modules are being consumed and move them to Core/Foundation applications, according to the concepts.
 
-### End-User application providing services
+### End-user application providing services
 
-End-User application providing services to non-Orchestration applications.
+End-user application providing services to non-orchestration applications.
 
 **Impact**  
 
@@ -118,7 +118,7 @@ To get more details on each finding, select "Consumed modules". If a consumed mo
 
 ### Cyclic references between applications
 
-Cyclic references between two Foundation or two Core applications.
+Cyclic references between two Foundation modules or two Core applications.
 
 **Impact**  
 
@@ -128,7 +128,7 @@ Cycles between Core or Foundation applications usually mean a wrong isolation of
 
 To get more details on each finding, select "Consumed modules". Understand the conceptual relation between apps involved in a cycle, to decide which app isn't supposed to consume the other. Decide whether moving the consumed modules to the app that is consuming them makes sense in terms of conceptual abstraction.
 
-### Client and server side Entities and logic aren't isolated
+### Client and server-side Entities and logic aren't isolated
 
 <div class="info" markdown="1">
 
@@ -136,7 +136,7 @@ Applies to **Mobile** apps only.
 
 </div>
 
-Both client and server side Entities and logic are implemented in the same module.
+Both client and server-side Entities and logic are implemented in the same module.
 
 **Impact**  
 
@@ -409,7 +409,7 @@ Site Property is being updated using Application logic.
 
 **Impact**  
 
-When a Site Property is updated it invalidates the Module's cache. Therefore subsequent accesses to cached data have to be fetched from database or recalculated in the application logic, which may result in a performance hit.
+When a Site Property is updated it invalidates the Module's cache. Therefore subsequent accesses to cached data have to be fetched from the database or recalculated in the application logic, which may result in a performance hit.
 
 **How to fix**  
 
@@ -421,7 +421,7 @@ Using the Count property of an Aggregate or SQL query to check if results were r
 
 **Impact**  
 
-For performance, OutSystems query optimizer makes sure the output of Aggregates and advanced queries only the essential data to feed a screen. This means, the Count property needs to execute an additional query to get the total number of registries.
+For performance, OutSystems query optimizer makes sure the output of Aggregates and advanced queries only the essential data to feed a screen. This means the Count property needs to execute an additional query to get the total number of registries.
 
 **How to fix**  
 
@@ -461,7 +461,7 @@ On all Screen requests, the current session's data is loaded from the database. 
 
 **How to fix**  
 
-Store this data in your a Entity using the session identifier as primary key and fetch it only when needed. Keep the session limited to context information that is useful in every request.
+Store this data in your Entity using the session identifier as the primary key and fetch it only when needed. Keep the session limited to context information that is useful in every request.
 
 ### Large image
 
@@ -535,7 +535,7 @@ Local Storage model is not optimized.
 
 **Impact**  
 
-Local Storage is being either copied exactly from server Entities or is using a complex model (including too many fields, Foreign Keys, or Complex data types). This forces the use of multiples joins in Client Aggregates, hindering the performance of the application on mobile devices.
+Local Storage is being either copied exactly from server Entities or is using a complex model (including too many fields, Foreign Keys, or Complex data types). This forces the use of multiple joins in Client Aggregates, hindering the performance of the application on mobile devices.
 
 **How to fix**  
 
@@ -593,7 +593,7 @@ No offline synchronization is being made or is being executed with poor performa
 
 **How to fix**  
 
-Place the local entity synchronization actions inside the OfflineDataSync action, configure the manual and automatic start of sync and use TrigerOfflineDataSync for background synchronizations. SyncUnit parameter should be used to prevent updating unnecessary entities.
+Place the local entity synchronization actions inside the OfflineDataSync action, configure the manual and automatic start of sync, and use TrigerOfflineDataSync for background synchronizations. SyncUnit parameter should be used to prevent updating unnecessary entities.
 
 ### No asynchronous Offline sync
 
@@ -629,7 +629,7 @@ The logic must be designed to deal with different network conditions, not just s
 
 **How to fix**  
 
-Use GetNetworkStatus to detect the network conditions and ensure that the logic and UI take the conditions into consideration and reacts appropriately.
+Use GetNetworkStatus to detect the network conditions and ensure that the logic and UI take the conditions into consideration and react appropriately.
 
 ### CSS in the screen's style sheet
 
@@ -643,11 +643,11 @@ CSS in the screen's style sheet.
 
 **Impact**  
 
-Having CSS spread through different screens may create maintenance issues. Centralizing CSS in the app's Theme helps to reduce the maintenance cost. Also, defining CSS in mobile Screens will create flicker when navigating through different pages.
+Having CSS spread through different screens may create maintenance issues. Centralizing CSS in the app's Theme helps to reduce the maintenance cost. Also, defining CSS on mobile Screens will create a flicker when navigating through different pages.
 
 **How to fix**  
 
-Define the class inside the theme of the application. Even if it's only a small change it is better to define a specific class (that can then be reused) for it than add to a specific page and then copy the same class over and over.
+Define the class inside the theme of the application. Even if it's only a small change, it is better to define a specific class (that can then be reused) for it than add to a specific page and then copy the same class over and over.
 
 ### Complex splash screen
 
@@ -661,7 +661,7 @@ Keep the splash screen simple and fast by minimizing the number of requests to t
 
 **Impact**  
 
-Having a complex UI or adding heavy or lengthy operations to the splash screen increases the app load time. User may see a blank screen before the screen renders.
+Having a complex UI or adding heavy or lengthy operations to the splash screen increases the app load time. Users may see a blank screen before the screen renders.
 
 **How to fix**  
 
@@ -677,7 +677,7 @@ A timer that exceeds its Timeout in the Minutes property may result in the code 
 
 **How to fix**  
 
-Long execution Timers should follow the wake timer pattern to reschedule themselves to restart and continue the current task at hand. To implement the wake timer pattern start by adding an explicit logical timeout inside the Timer logic that when reached takes the necessary actions to properly terminate the current execution, store the current progress of the process in such a way that when its execution restarts it can easily pick up the execution from this stored last point. This pattern ends with a wake timer action for itself at the end of the timer flow. Another good practice for long Timers is to define them with checkpoints so that the Timer can be killed and restarted with no impact on the data. At these checkpoints, consider executing partial commits to ensure that if some error occurs the processed data is only rolled back until the last commit (and avoid processing the same data all over again on next execution).
+Long execution Timers should follow the wake timer pattern to reschedule themselves to restart and continue the current task at hand. To implement the wake timer pattern start by adding an explicit logical timeout inside the Timer logic that, when reached, takes the necessary actions to properly terminate the current execution, store the current progress of the process in such a way that when its execution restarts it can easily pick up the execution from this stored last point. This pattern ends with a wake timer action for itself at the end of the timer flow. Another good practice for long Timers is to define them with checkpoints so that the Timer can be killed and restarted with no impact on the data. At these checkpoints, consider executing partial commits to ensure that if some error occurs, the processed data is only rolled back until the last commit (and avoid processing the same data all over again on next execution).
 
 ## Security
 
@@ -699,12 +699,10 @@ If the screen that calls a server action allows anonymous access, the REST endpo
 
 A malicious actor might modify client-side logic (JavaScript), check the server requests, and manipulate input parameters to try to access your data or perform unauthorized actions.
 
-
 **How to fix**  
 
 If you don't need the screen to be publicly accessible, disable the Anonymous Role for that screen.<br/>
 Otherwise, ensure that all data sent from the app to the server is re-validated in the server action in a way that prevents unauthorized access to read or edit data.
-
 
 ### SQL injection
 
@@ -712,21 +710,21 @@ Avoid enabling the Expand Inline property of a SQL Query Parameter since it coul
 
 **Impact**  
 
-OutSystems uses prepared statements by default to execute the SQL queries that you define in SQL elements. These prepared statements contain SQL parameters or placeholders, for which you define values before executing the SQL statement. These parameters can only store a value of a given type and not arbitrary SQL fragments.
+OutSystems uses prepared statements by default to execute the SQL queries that you define in SQL elements. These prepared statements contain SQL parameters or placeholders for which you define values before executing the SQL statement. These parameters can only store a value of a given type and not arbitrary SQL fragments.
 
-If you enable the Expand Inline property for a Query Parameter, its value will no longer be handled as a SQL parameter value. Instead, the Query Parameter value will be included in the SQL statement without first being evaluated and turned into a literal by the SQL engine. This means that you can use the Query Parameter to insert SQL fragments in the full SQL statement dynamically, but it also means that your end-users may be able to exploit this fact if you don't take the necessary precautions.
+If you enable the Expand Inline property for a Query Parameter, its value will no longer be handled as an SQL parameter value. Instead, the Query Parameter value will be included in the SQL statement without first being evaluated and turned into a literal by the SQL engine. This means that you can use the Query Parameter to insert SQL fragments in the full SQL statement dynamically, but it also means that your end-users may be able to exploit this fact if you don't take the necessary precautions.
 
 The use of expanded inline parameters that change too often also increases your technical debt, as it doesn’t allow the database to optimize execution plans. The database keeps generating new queries, bringing the performance down.
 
 **How to fix**  
 
-OutSystems will use a SQL parameter for every Query Parameter that has the Expand Inline property disabled. This property is disabled by default, providing you default protection against SQL injection attacks. It's difficult to use properly expanded parameters inline since you need to make sure that any user input is properly escaped before using it in a SQL statement. If you can, avoid enabling this property altogether.  
+OutSystems will use an SQL parameter for every Query Parameter that has the Expand Inline property disabled. This property is disabled by default, providing you default protection against SQL injection attacks. It's difficult to use properly expanded parameters inline since you need to make sure that any user input is properly escaped before using it in an SQL statement. If you can, avoid enabling this property altogether.  
 
 OutSystems provides ways of implementing common use cases without enabling the Expand Inline property and provides recommendations when using the Expand Inline. For more information, see [SQL Injection Warning ](../../../ref/errors-and-warnings/warnings/sql-injection-warning.md).
 
 If you must enable Expand Inline, take the following recommendations into account:
 
-* Do not perform manual string encoding using the **Replace** function.String literals should only be encoded using the **EncodeSql** function. Doing it manually using the **Replace** function is prone to errors and can introduce bugs into your application that can later be exploited by end-users.
+* Do not perform manual string encoding using the **Replace** function. String literals should only be encoded using the **EncodeSql** function. Doing it manually using the **Replace** function is prone to errors and can introduce bugs into your application that can later be exploited by end-users.
 
 * Use **EncodeSql()** to encode string literals. The **EncodeSql** function encodes string literals to be used in SQL statements when the **Expand Inline** property is enabled. Make sure you avoid the following bad practices when using **EncodeSql()**:
 
@@ -736,7 +734,7 @@ If you must enable Expand Inline, take the following recommendations into accoun
         
     * Use **EncodeSql** only to encode string literals, not complete fragments of an SQL statement.
 
-* Do not build ``""WHERE column IN (@values)""`` clauses by wrapping all the values in a EncodeSql call:
+* Do not build ``""WHERE column IN (@values)""`` clauses by wrapping all the values in an EncodeSql call:
 ``values = EncodeSql(name1 + "","" + name2 + "","" + name).``
 
     This approach will not protect you from SQL injection. Instead, use the ``BuildSafe_InClauseIntegerList() and BuildSafe_InClauseTextList()`` functions to build ``""WHERE column IN (@values)""`` clauses.
@@ -833,7 +831,7 @@ Passing identity information as a server action parameter is extremely insecure.
 
 **How to fix**  
 
-Identity information should be obtained on server calls, using functions like GetUserId, executed on the server, and never sent as a regular action parameter. GetUserId executed on the server ensures proper identity flow, is secure and cannot be manipulated. 
+Identity information should be obtained on server calls using functions like GetUserId, executed on the server, and never sent as a regular action parameter. GetUserId executed on the server ensures proper identity flow, is secure and cannot be manipulated. 
 
 Remove any usages of GetUserId on the client side, and replace them with the same function on the server side. In this way, you’ll avoid passing identity information from the client side to the server side as an action parameter.
 
@@ -875,7 +873,7 @@ If the screen can be accessed by the Registered role, any user with a valid OutS
 
 Remove the exposed information or use a more restricted custom role for the screen.  
 
-Use a secure criteria with GetUserId inside the Aggregate filter if you’re filtering information based on user context.
+Use a secure criteria with GetUserId inside the Aggregate filter if you're filtering information based on user context.
 
 ### Insecure Usage of GetUserId in client Block parameters
 
@@ -889,7 +887,7 @@ Avoid passing identity information in a Block widget parameter.
 
 **Impact**
 
-Passing identity information through a Block widget parameter allows manipulating that identity information at client side. This creates an insecure identity flow to any existing backend server actions or queries using this parameter, meaning that the authenticated user might be manipulated at any time.  
+Passing identity information through a Block widget parameter allows manipulating that identity information on the client side. This creates an insecure identity flow to any existing backend server actions or queries using this parameter, meaning that the authenticated user might be manipulated at any time.  
 
 Since the execution of GetUserId on reactive client components depends on client cookies, any user can easily change parameters by manipulating server calls or changing client session ID identifiers. Malicious users can exploit the ability to change identity-related parameters and impersonate other users and access sensitive data. Users can also bypass role checks, which, even though done on the server, become vulnerable due to insecure parameters received from the client.    
 
@@ -915,13 +913,13 @@ Repeating the same logic in different action flows makes it more difficult to ma
 
 For each pattern found, select the magnifying glass to get more details.
 
-In the details' dialog, check the list of actions that include duplicated logic on the left side, and check the representation of the duplicated logic on the right side. The duplicated logic is highlighted and shown in the context of each action flow.
+In the details dialog, check the list of actions that include duplicated logic on the left side, and check the representation of the duplicated logic on the right side. The duplicated logic is highlighted and shown in the context of each action flow.
     
 If possible, refactor the actions where the duplicated logic exists by extracting the duplicated logic into a single action that can be reused.
 
 ### Missing descriptions on public element or parameter
 
-Required descriptions on modules, modules' public elements and their related input/output parameters.
+Required descriptions of modules, modules' public elements, and their related input/output parameters.
 
 **Impact**  
 
@@ -953,7 +951,7 @@ A Preparation or screen action with more than 20 nodes or an action with more th
 
 **How to fix**  
 
-Break flow logic into smaller and potentially reusable actions and/or place comments to explain portions of your flow. Note: explore the 'Extract to Action' feature, available in the right-click menu when you select a portion of a flow.
+Break flow logic into smaller and potentially reusable actions and/or place comments to explain portions of your flow. **Note**: Explore the 'Extract to Action' feature, available in the right-click menu when you select a portion of a flow.
 
 ### Too much disabled code
 
@@ -981,7 +979,7 @@ Revise the affected True/False conditions and consider removing/changing the unr
 
 ### Unused Actions in Module
 
-An action that isn’t used in the module and is also not exposed to other modules (non-public action).
+An action that isn't used in the module and is also not exposed to other modules (non-public action).
 
 **Impact**  
 
@@ -993,7 +991,7 @@ Check whether the action is necessary and consider deleting it from the module.
 
 ### Unused Aggregate or SQL Query
 
-An Aggregate or SQL query isn’t used.
+An Aggregate or SQL query isn't used.
 
 **Impact**  
 
@@ -1002,3 +1000,15 @@ Unused data queries (Aggregates or SQL queries) can waste resources and degrade 
 **How to fix**  
 
 Check whether the Aggregate or the SQL query is necessary and consider deleting it.  
+
+### Reminder comments
+
+Reminder comments are remarks or reminders for yourself or team members. Some keywords may set a comment as a reminder. For more information, refer to the [Comment documentation](../../../ref/lang/auto/class-comment.md). AIMS will flag Comments set as reminders. 
+
+**Impact**  
+
+Comments marked as "Is Reminder" may indicate important technical debt or unresolved issues.
+
+**How to fix**
+
+Resolve the issue or finish the task related to the reminder [Comment](../../../ref/lang/auto/class-comment.md). When completed, remove the comment or change **Is Reminder** to **No**.

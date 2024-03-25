@@ -32,9 +32,9 @@ You can configure general authentication settings and also specific settings for
 
 The following setting applies to both persistent and session authentication:
 
-* **Cache Time In Minutes** – Number of minutes the authentication information sent by the device is considered valid by the server without the need to fetch it from the database. After this time, the server validates the authentication tokens against the information stored in the database and supplies new authentication tokens. If set to 0, the authentication cache mechanism is disabled.
+* **Cache Time In Minutes** – Number of minutes the authentication information sent by the device is considered valid by the server without the need to fetch it from the database. After this time, the server validates the authentication tokens against the information stored in the database and supplies new authentication tokens. Setting it to 0 disables the authentication cache mechanism.
 
-* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web apps, and Mobile Aaps distributed as Progressive Web apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
+* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web apps, and Mobile Apps distributed as Progressive Web apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
 
 **Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). 
 
@@ -66,7 +66,7 @@ To configure the authentication settings for apps in your OutSystems environment
 
 In this page you can also generate new keys for authenticating and encrypting cookie values. This will force all the users of your apps to login again in the next server request. To generate new keys, press the Generate button in Authentication and Encryption Keys area:
 
-![The Generate button for new Authentication and Encryption Keys](images/configure-app-authentication-generate-keys-sc.png)
+![Close-up of the Generate button for new Authentication and Encryption Keys in Service Center.](images/configure-app-authentication-generate-keys-sc.png "Generate New Authentication and Encryption Keys")
 
 ## Authentication Types
 
@@ -106,13 +106,15 @@ The server validates the request by checking the following conditions:
 
 If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user or fails in case of tampering.
 
-![Authentication flow](images/authentication-1.png)
+![Diagram illustrating the authentication flow including cookie validation and session expiration.](images/authentication-1.png "Authentication Flow Diagram")
 
 ### Authentication Cache
 
-The authentication mechanism for apps includes caching capabilities to avoid the overhead of validating and updating authentication information in the database upon each request.
+The authentication mechanism for apps includes caching capabilities to avoid the overhead of validating and updating authentication information in the database upon each request. Within a defined period of time the server uses the information stored in the cookies to authenticate the requests of an authenticated session, instead of retrieving the authentication information from the database. 
 
-Within a defined period of time the server uses the information stored in the cookies to authenticate the requests of an authenticated session, instead of retrieving the authentication information from the database.
+Requests reaching the server within the Cache Time period don't extend the login expiration, as shown in the previous diagram. For example, with a session Max Idle Time of 10 minutes and a Cache Time of 5 minutes, any request reaching the server less than 5 minutes after the login doesn't extend the session expiration. If the user doesn't interact with the application after minute 5, the session expires at minute 10. Only the first request after the 5-minute period will extend the session expiration by another 10 minutes.
+
+Keep this behavior in mind when the session Max Idle Time is low or when Max Idle Time and Cache Time values are very close. We recommend keeping the Cache Time value as a low fraction of Max Idle Time (for example, 20 %) to minimize the perception of this behavior.
 
 ### Logging out of the application
 

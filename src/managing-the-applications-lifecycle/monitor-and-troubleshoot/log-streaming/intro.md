@@ -72,6 +72,8 @@ OutSystems supports the following APM tools:
 
 * Dynatrace
 
+Note that any other tool compatible with the OpenTelemetry protocol and OTLP logs format should typically be capable of interpreting the OutSystems logs.
+
 ## Supported log data
 
 The APM tool receives application logs, platform logs, and all logs that are available  in the OutSystems management console (Service Center), such as:

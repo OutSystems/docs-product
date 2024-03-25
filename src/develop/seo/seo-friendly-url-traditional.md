@@ -84,7 +84,7 @@ Shows the following URL:
 ```
 http://www.example.com/InsterstateBuses/To-Faro
 ```
-### eSpaces Aliases
+### Modules aliases
 
 <div class="info" markdown="1">
 
@@ -92,9 +92,9 @@ This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Fr
 
 </div>
 
-An eSpace Alias is an alternative eSpace name to be used in URLs: normally a simpler, friendlier, and keyword relevant name. To check which eSpaces have aliases, select the ‘eSpace Alias List’ option.
+A module Alias is an alternative module name to be used in URLs: normally a simpler, friendlier, and keyword relevant name. 
 
-To set eSpaces aliases select the **Module Alias List** option.
+To check or add module aliases, select the **Module Alias List**.
 
 ![Screenshot of module alias rules configuration in OutSystems Service Center](images/seo-module-alias-rules-sc.png "Module Alias Rules in Service Center")
 
@@ -130,9 +130,15 @@ With the above settings use the simplified www.myCompany.com URL to access myCom
 
 On the other hand, the site for Taxi Anywhere displays the application default web page with the language locale automatically set according to the URL.
 
-### Redirect Rules
+### Redirect Rules {redirect-rules}
 
 When domain changes occur make your old URLs point to the new ones using the Redirect Rules. It allows for old URL references to keep working, and for search engines to have a way of knowing that a replacement took place, thus not affecting their previous search engine ranking information.
+
+<div class="info" markdown="1">
+
+If you have enabled [secure endpoints in LifeTime](../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
+
+</div>  
 
 To transform incoming URLs and force client-side redirects select the **Redirect Rules List** option.  
 

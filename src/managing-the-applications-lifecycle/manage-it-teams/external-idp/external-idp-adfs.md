@@ -35,11 +35,13 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
     ![Screenshot showing the server application name entry field in AD FS](images/app-name-usr.png "Entering Application Name in AD FS")
 
-1. Add the Redirect URI to Service Center login and logout page from the Lifetime environment:
+1. Add the Redirect URIs:
 
-    * ``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
+    * **Sign-in redirect URIs**:
+        * For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center login page: ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
-    * ``https://<LT_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
+    * **Sign-out redirect URIs**:
+        * For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center logout page: ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
 
         ![Screenshot of redirect URI configuration for Service Center in AD FS](images/redirect-uri-usr.png "Configuring Redirect URIs in AD FS")
 

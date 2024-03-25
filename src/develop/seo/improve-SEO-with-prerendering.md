@@ -18,9 +18,13 @@ In these situations, you benefit from using the pre-render technology. **Althoug
 
 In this article, we describe how you can integrate the OutSystems platform with a third-party pre-rendering solution called [prerender.io](https://prerender.io/). 
 
+
+
 <div class="info" markdown="1">
 
 There are other pre-render solutions in the market and you are free to choose a different one that fits your needs. OutSystems recommends [Prerender.io](https://prerender.io/) as one of your pre-rendering options due to its significant SEO improvements. 
+
+Note that the steps below are applicable for OutSystems Cloud customers.
 
 </div>
 
@@ -45,8 +49,6 @@ Prerender.io offers several options to integrate with your application. The best
 <div class="info" markdown="1">
 
 For more information on using CDN with OutSystems, see [Using a CDN with OutSystems](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/using_a_cdn_with_outsystems/).
-
-Note that this guidance is not applicable for OutSystems cloud customers. 
 
 </div>
 

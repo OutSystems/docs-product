@@ -41,7 +41,7 @@ Let's first create a Block with "Small", "Medium", and "Large" buttons that, whe
 
 1. Using the same steps, add two more buttons, for "Medium" and "Large".
 
-###  Use the Block with the Event in a Screen
+### Use the Block with the Event in a Screen
 
 1. Drag Block Sizes to a Screen. The Block has an Event that needs to be handled, so Service Studio warns about it.
 1. Select the Block in the Screen and in the Handler property select **New Client Action**. You can now edit this new Action BlockSizesSelectSize.
@@ -53,5 +53,5 @@ Let's first create a Block with "Small", "Medium", and "Large" buttons that, whe
     ![Flow diagram showing how a message is constructed and passed by the Block when an event is triggered](images/block-event-flow.png "Message passed by the Block")
 
 1. Publish your sample app. Click the button with the label "Large" and you should see the message "You selected a large item.".
-    
+
     ![Browser preview displaying a message indicating the selection of a large item after clicking the 'Large' button](images/block-event-preview.png "Message in the browser")

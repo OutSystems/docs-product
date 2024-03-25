@@ -66,7 +66,7 @@ For more information, refer to [Configuring access token manager mappings](https
 
 ## 7. Configure OpenID Connect policy management
 
-This configuration allows you to define OpenID Connect policies for client access to attributes mapped according to OpenID specifications.
+This configuration allows you to define OpenID Connect policies for client access to attributes mapped according to OpenID specifications. Ensure "INCLUDE USER INFO IN ID TOKEN" and "RETURN ID TOKEN ON REFRESH GRANT" are selected.
 
 For more information, refer to [Configuring OpenID Connect policies](https://docs.pingidentity.com/r/en-us/pingfederate-101/help_policiesmanagementtasklet_policiesmanagementstate). 
 
@@ -83,9 +83,9 @@ For more information, refer to [Managing IdP adapter grant mapping](https://docs
 #### Web client
 
 **Redirect URIs**: 
-``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
-
-**Allowed Grant Types**: Select Authorization Code, Implicit, Refresh Token, Client Credentials.
+For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center login page: ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
+  
+**Allowed Grant Types**: Select Authorization Code, Refresh Token, Client Credentials.
 
 #### Native client
 
@@ -98,21 +98,11 @@ For more information, refer to [Managing IdP adapter grant mapping](https://docs
 * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
 * For each OutSystems environment in your infrastructure (excluding Lifetime), add an **Integration Managers URI**: ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
 
-**Allowed Grant Types**: Select Authorization Code, Implicit and Refresh Token.
+**Allowed Grant Types**: Select Authorization Code and Refresh Token.
 
 For more information, refer to [Configuring an OAuth client](https://docs.pingidentity.com/r/en-us/solution-guides/mzt1663945300370).
 
-## 11. Return scopes as part of ID token response
-
-To return scopes as part of token response, follow these steps:
-
-1. Open the ``/pingfederate/server/default/data/config-store/oauth-scope-settings.xml`` file.
-1. Change the value of the ``always-return-scope-for-authz-code`` item from **False** to **True**. For example, ``<z:item name="always-return-scope-for-authz-code">true</z:item>``.
-1. Restart the PingFederate service.
-    
-    **Note**: Skip this step if you are not using Integration Studio.
-
-## 12. Configure PingFederate as OpenID connect provider in Lifetime
+## 11. Configure PingFederate as OpenID connect provider in Lifetime
 
 You can configure PingFederate as an external IdP by following thse steps:
 

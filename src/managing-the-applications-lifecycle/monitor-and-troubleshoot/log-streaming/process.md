@@ -50,4 +50,4 @@ For detailed information on streaming logs to different APM tools, refer to:
 * [Stream log data to Datadog](datadog.md)
 
 For detailed information on handling troubleshooting and handling errors, refer to:
-[Troubleshooting and handling errors](https://success.outsystems.com/support/errors/log_streaming/)
+[Troubleshooting and handling errors](https://success.outsystems.com/support/errors/log_streaming_errors/)

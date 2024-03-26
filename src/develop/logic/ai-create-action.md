@@ -110,7 +110,7 @@ suggestions.
    a new **If** element and some stars pop, meaning that Service Studio filled
    in some properties of the new element for you.
 
-    ![Animated GIF demonstrating the selection of Code Mentor suggestions for checking location plugin availability](images/ai-action-01-check-location-ss.gif "Code Mentor Suggestion for Location Check")
+    <iframe src="https://player.vimeo.com/video/927271146" width="750" height="823" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the selection of Code Mentor suggestions for checking location plugin availability.</iframe>
 
 1. Right-click **Check if CheckLocationPlugin IsAvailable** and select **Swap
    Connectors**.
@@ -137,7 +137,7 @@ suggestions.
 
 1. Select **End flow** from the suggestions.
 
-    ![Animated GIF showing the flow for handling the scenario where the location plugin is not available](images/ai-action-02-no-plugin-branch-ss.gif "Handling No Plugin Available Scenario")
+    <iframe src="https://player.vimeo.com/video/927275599" width="750" height="722" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the flow for handling the scenario where the location plugin is not available.</iframe>
 
 1. Click the AI radar between **Check if CheckLocationPlugin IsAvailable** and
    **End** and select **Call GetLocation**. Some more suggestions appear for
@@ -159,15 +159,13 @@ suggestions.
 
 1. Select **End flow**.
 
-    ![Animated GIF illustrating the logic flow for getting the location using the location plugin](images/ai-action-03-get-location-ss.gif "Get Location Logic Flow")
-
 1. Click the AI radar between **Check if GetLocation Success** and the **End**
    element.
 
 1. Select **Set Location to GetLocation.Location** from the suggestions. Some
    stars pop again.
 
-    ![Animated GIF showing the process of setting the obtained location to the output parameter](images/ai-action-04-set-location-ss.gif "Setting Location to Output Parameter")
+    <iframe src="https://player.vimeo.com/video/927280306" width="750" height="832" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the process of setting the obtained location to the output parameter.</iframe>
 
 1. Fill in the error messages in the **Message** elements, if you haven't done
    it yet.

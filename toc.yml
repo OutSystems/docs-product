@@ -942,7 +942,13 @@
         - href: monitor-and-troubleshoot/manage-tech-debt/how-proxy.md
         - href: monitor-and-troubleshoot/manage-tech-debt/faq.md
         - href: monitor-and-troubleshoot/manage-tech-debt/troubleshoot.md
-
+            #Collecting feedback from apps
+    - href: monitor-and-troubleshoot/app-feedback/intro.md
+    - topics:
+        - href: monitor-and-troubleshoot/app-feedback/user-feedback-enable.md
+        - href: monitor-and-troubleshoot/app-feedback/user-feedback-send-mobile.md
+        - href: monitor-and-troubleshoot/app-feedback/user-feedback-send-web.md
+        - href: monitor-and-troubleshoot/app-feedback/user-feedback-handle.md
 #security
 - href: security/intro.md
 - topics:
@@ -952,8 +958,10 @@
     - href: security/configure-internal-network.md
     - href: security/apply-content-security-policy.md
     - href: security/enforce-https-security.md
+    - href: security/host-header-protection.md
     - href: security/encrypt-viewstate.md
     - href: security/protection-against-brute-force-attacks.md
+    - href: security//configure-authentication.md
     - href: security/use-https-by-enabling-ssl.md
     - href: security/app-shield/intro.md
     - topics:
@@ -1094,6 +1102,7 @@
             - href: manage-platform-app-lifecycle/manage-it-teams/external-idp/external-idp-errors.md
         - href: manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
         - href: manage-platform-app-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
+
 
 # Migration to ODC
 

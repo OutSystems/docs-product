@@ -14,7 +14,7 @@ This editor is displayed when the extension is selected in the [Multi-tree Navig
 
 ## Extension Elements
 
-To manage the elements of your extension, see [Define Extension Actions](<../../../extensibility-and-integration/integration-studio/managing-extensions/action-define.md>), [Use Structures](<../../../extensibility-and-integration/integration-studio/managing-extensions/structure-define.md>), [Define Extension Entities](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-define.md>), and [Add a Resource](<../../../extensibility-and-integration/integration-studio/managing-extensions/resource-define.md>).
+To manage the elements of your extension, see [Define Extension Actions](<../../../integration-with-systems/integration-studio/managing-extensions/action-define.md>), [Use Structures](<../../../integration-with-systems/integration-studio/managing-extensions/structure-define.md>), [Define Extension Entities](<../../../integration-with-systems/integration-studio/managing-extensions/entity-define.md>), and [Add a Resource](<../../../integration-with-systems/integration-studio/managing-extensions/resource-define.md>).
 
 ## Change the Extension Properties
 

@@ -42,7 +42,7 @@ You can view the collected data in the **ANALYTICS** area.
 
 ## Retention policy
 
-LifeTime Analytics has the capability to hold data only for a specific period (for example, for one month or one year), instead of holding all the data. Data older than the defined period will be purged daily. If you have your own analysis tool, you can use the [Performance Monitoring API](../../ref/apis/performancemonitoring-api.md) to collect the data from LifeTime Analytics and keep in LifeTime Analytics only the most recent data.
+LifeTime Analytics has the capability to hold data only for a specific period (for example, for one month or one year), instead of holding all the data. Data older than the defined period will be purged daily. If you have your own analysis tool, you can use the [Performance Monitoring API](../ref/apis/performancemonitoring-api.md) to collect the data from LifeTime Analytics and keep in LifeTime Analytics only the most recent data.
 
 By default, LifeTime Analytics will hold all data, but the data retention period can be adjusted in the "Platform Configurations" Tab of the [Factory Configuration](https://www.outsystems.com/forge/25/) Application. 
 

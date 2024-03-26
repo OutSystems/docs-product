@@ -27,7 +27,7 @@ To enable single sign-on on your Mobile App, you must configure an identity prov
 
 To configure SAML 2.0 and add your identity provider, see the  [Configure SAML 2.0 Authentication](../configure-saml.md) documentation.
 
-To activate the Single Sign-On Between App Types setting in Service Center, see the [Configure App Authentication](../../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md) documentation.
+To activate the Single Sign-On Between App Types setting in Service Center, see the [Configure App Authentication](../../../../security/configure-authentication.md) documentation.
 
 ## Updating the login and logout flows
 

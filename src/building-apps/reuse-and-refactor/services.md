@@ -41,7 +41,7 @@ You should use Reactive Web, Mobile, or Traditional Web modules to implement UI 
 
 The way you implement a service in OutSystems will be different if your service exposes functionality to external systems or inside the same OutSystems environment:
 
-* **Expose functionality to an external system or a different OutSystems infrastructure:** You can implement the logic of your service exposing a [REST API](../../extensibility-and-integration/rest/expose-rest-apis/intro.md) or a [SOAP Web Service](../../extensibility-and-integration/soap/expose/expose-soap-web-service.md) in your Service module.
+* **Expose functionality to an external system or a different OutSystems infrastructure:** You can implement the logic of your service exposing a [REST API](../../integration-with-systems/rest/expose-rest-apis/intro.md) or a [SOAP Web Service](../../integration-with-systems/soap/expose/expose-soap-web-service.md) in your Service module.
 
 * **Expose a service to be reused by other modules or applications inside the same OutSystems environment:** You can implement the logic of your service in a tightly-coupled way exposing public **Server Actions**, or you can do it in a loosely-coupled way exposing **Service Actions**.
 
@@ -105,7 +105,7 @@ If the operation executed in a Service Action fails, the consumer logic must han
 Using Service Actions implies executing logic through remote calls, which can have significant performance penalties when compared to running the same logic in a single process. Therefore, your logic must take into account the amount of data passed through the remote requests. 
 Also, if there is a communication failure, the consumer logic must be prepared to handle the communication exceptions. 
 
-The remote address used when calling Service Actions is determined by the [Deployment Zone Address](<../../managing-the-applications-lifecycle/deploy-applications/zones/reference.md>) of the producer. If the producer is in a different deployment zone from the consumer, then the consumer must be able to reach the producer. For more information check [Communication between applications in different Deployment Zones](<../../managing-the-applications-lifecycle/deploy-applications/zones/intro.md#communication-between-applications-in-different-deployment-zones>). 
+The remote address used when calling Service Actions is determined by the [Deployment Zone Address](<../../deploying-apps/zones/reference.md>) of the producer. If the producer is in a different deployment zone from the consumer, then the consumer must be able to reach the producer. For more information check [Communication between applications in different Deployment Zones](<../../deploying-apps/zones/intro.md#communication-between-applications-in-different-deployment-zones>). 
 
 ### Choose Between Server Actions and Service Actions
 

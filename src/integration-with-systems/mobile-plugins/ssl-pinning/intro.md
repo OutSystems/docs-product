@@ -50,7 +50,7 @@ To implement SSL Pinning in OutSystems, follow these steps:
 
 <div class="info" markdown="1">
 
-If you update the [configuration file](#create-the-configuration-file) of the SSL Pinning plugin in new versions of your app, you need to manually run the app build creation. To learn more about when you must install a new build, see [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
+If you update the [configuration file](#create-the-configuration-file) of the SSL Pinning plugin in new versions of your app, you need to manually run the app build creation. To learn more about when you must install a new build, see [Situations when the user must install a new build](../../../deploying-apps/mobile-app-packaging-delivery/mobile-app-update-scenarios.md#required-new-build)
 
 </div>
 
@@ -110,7 +110,7 @@ If you're using an OutSystems personal environment, use a dummy text for the sec
 
 <div class="warning" markdown="1">
 
-If you change the SSL Pinning resource file **pinning.json**, you need to manually run the app build creation. To learn more about when you must install a new build, see [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
+If you change the SSL Pinning resource file **pinning.json**, you need to manually run the app build creation. To learn more about when you must install a new build, see [Situations when the user must install a new build](../../../deploying-apps/mobile-app-packaging-delivery/mobile-app-update-scenarios.md#required-new-build)
 
 </div>
 

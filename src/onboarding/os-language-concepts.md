@@ -21,7 +21,7 @@ There is also a downloadable compact PDF of this content:
 
 </div>
 
-## [Processes Tab](../../ref/processes/intro.md)
+## [Processes Tab](../ref/processes/intro.md)
 
 ### Business Processes and Batch Processing
 
@@ -38,7 +38,7 @@ There is also a downloadable compact PDF of this content:
 |---------------|------------------------------------------------|-------------|
 | Wake&lt;Timer&gt;   | Explicitly wake a Timer, ignoring its schedule |             |
 
-## [Interface Tab](../../ref/interfaces/intro.md)
+## [Interface Tab](../ref/interfaces/intro.md)
 
 ### User Interface
 
@@ -69,7 +69,7 @@ There is also a downloadable compact PDF of this content:
 | Expression                     | Render value computed at run-time                                                   | Label       |
 | (See Documentation for Others) | Table, List, List Item, Form, Label, Input, Text Area, Switch, Checkbox, Radio Group, Dropdown, Upload, Button, Button Group, Link, Popover Menu, Image, Icon, Popup, Block, HTML Element, etc                                                             |             |
 
-## [Logic Tab](../../ref/logic/intro.md)
+## [Logic Tab](../ref/logic/intro.md)
 
 ### Business Logic
 

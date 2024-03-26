@@ -56,7 +56,7 @@ The main components involved in the Integration Builder architecture are the fol
 
 Integration Builder authenticates IT users by contacting your environment to validate the user credentials.
 
-To use Integration Builder you must have an [IT user](../../managing-the-applications-lifecycle/manage-it-teams/intro.md) that has the [correct permissions](set-up.md#prerequisites) for the environment.
+To use Integration Builder you must have an [IT user](../../manage-platform-app-lifecycle/manage-it-teams/intro.md) that has the [correct permissions](set-up.md#prerequisites) for the environment.
 
 All IT users in your infrastructure that have these permissions can access and edit all integrations created and managed by Integration Builder.
 
@@ -90,12 +90,12 @@ To update dependencies, the IT user must have **Change and Deploy Applications**
 
 <div class="info" markdown="1">
 
-If you want to disallow a sub-set of Integration Builder users from updating dependencies, in LifeTime, [change the IT user permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) for those users in one of the following ways:
+If you want to disallow a sub-set of Integration Builder users from updating dependencies, in LifeTime, [change the IT user permissions](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md) for those users in one of the following ways:
 
-* Assign these users the **Open and Debug Applications** permission for each dependency app. Learn more about [assigning roles for an app](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md#role-assigned-to-users-for-a-specific-application).
+* Assign these users the **Open and Debug Applications** permission for each dependency app. Learn more about [assigning roles for an app](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#role-assigned-to-users-for-a-specific-application).
 
     or
 
-* Add these users to a team with **Open and Debug Applications** permission for each dependency app. Learn more about [assigning roles with a team](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md#role-assigned-to-users-for-a-team).
+* Add these users to a team with **Open and Debug Applications** permission for each dependency app. Learn more about [assigning roles with a team](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#role-assigned-to-users-for-a-team).
 
 </div>

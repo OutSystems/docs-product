@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%
 
 # OutSystems on Microsoft Azure
 
-OutSystems solution template for Microsoft Azure Marketplace provides you with an OutSystems 11 infrastructure with four environments: Development, Test, Production, and [LifeTime deployment management console](../../../managing-the-applications-lifecycle/intro.md). At the end of the [setup process](set-up-platform.md "Set Up OutSystems on Microsoft Azure"), you will have an OutSystems infrastructure running on Azure configured according to OutSystems best practices.
+OutSystems solution template for Microsoft Azure Marketplace provides you with an OutSystems 11 infrastructure with four environments: Development, Test, Production, and [LifeTime deployment management console](../../../manage-platform-app-lifecycle/intro.md). At the end of the [setup process](set-up-platform.md "Set Up OutSystems on Microsoft Azure"), you will have an OutSystems infrastructure running on Azure configured according to OutSystems best practices.
 
 ## OutSystems Infrastructure
 

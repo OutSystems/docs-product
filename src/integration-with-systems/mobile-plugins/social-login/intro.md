@@ -259,7 +259,7 @@ Token | Text | User's access token stored by the social login provider. |
 
 ### Create logic to map users to OutSystems end users { #map-users }
 
-Ensure you map social login users to [OutSystems end users](../../../develop/security/end-user-manage/intro.md).
+Ensure you map social login users to [OutSystems end users](../../../user-management/end-user-manage/intro.md).
 Note that users that sign in using the social login count as non-anonymous end users.
 This means that they count towards the user limits established in your subscription.
 

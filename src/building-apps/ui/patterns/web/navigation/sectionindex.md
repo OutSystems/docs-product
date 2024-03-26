@@ -46,7 +46,7 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
 1. In the Toolbox, search for and drag the Section widget into the Main Content area of your application's screen. Add as many sections as you require for your app.
 
-    In this example, we drag 4 Section widgets [into a column](../../../../../develop/ui/patterns/web/structure/columns.md). Each section widget contains Title, Actions, and Content placeholders. 
+    In this example, we drag 4 Section widgets [into a column](../../../../../building-apps/ui/patterns/web/structure/columns.md). Each section widget contains Title, Actions, and Content placeholders. 
 
     ![Screenshot showing the addition of multiple Section widgets into a column.](images/sectionindex-5-ss.png "Adding Multiple Section Widgets")
 

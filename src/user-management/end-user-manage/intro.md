@@ -31,7 +31,7 @@ Some customers have more than one production runtime in the same OutSystems 11 i
 ## Managing your end users
 You may periodically deactivate end users who you know won't continue to use your applications, and these users, once deactivated, will no longer count toward your licensed end-user capacities. For example, when an employee leaves, you would deactivate this user because they no longer need access to apps you've built for your employees.
 
-You can [manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users` or manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.final.md).
+You can [manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users` or manage end users programmatically using the [Users API](../../ref/apis/auto/users-api.final.md).
 
 ## User providers
 The **Users** module serves as the default user provider that enables single sign-on for end-users. It is possible to create and use other modules as user providers. In doing so, all modules using that user provider will share a source of user records and active sessions.
@@ -44,7 +44,7 @@ Versions prior to Platform Server 11.7.0 don't support classifying end users as 
 ## Related resources
 * [Classify Users as Internal Users](classify-internal-users.md): includes information on configuring your email domains for purposes of classifying users as internal or external.
 * [End User Authentication](end-user-authentication/intro.md): information on external authentication methods.
-* [Managing IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md): manage developer access, administrators, and other roles with access to OutSystems management tools.
+* [Managing IT users](../../manage-platform-app-lifecycle/manage-it-teams/intro.md): manage developer access, administrators, and other roles with access to OutSystems management tools.
 * [Group management](groups.md): creating and managing groups of users.
 * [Single Sign-On](end-user-authentication/single-sign-on.md): learn more about Single Sign-On, and how the end-users can authenticate to all applications at once.
 * [Multi-tenant applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/How_to_Build_a_Multi-tenant_Application#Managing_Tenants_and_End-Users): managing different cohorts of users from different tenants.

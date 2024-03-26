@@ -16,7 +16,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-The [default Extensibility configurations](../../deliver-mobile/customize-mobile-app/intro.md) of an OutSystems mobile app are defined at design time in the application home module. However, there are some situations when it is necessary to have different extensibility configurations for different environments.
+The [default Extensibility configurations](mobile-app-packaging-delivery/customize-mobile-app/intro.md) of an OutSystems mobile app are defined at design time in the application home module. However, there are some situations when it is necessary to have different extensibility configurations for different environments.
 
 For example, the development team needs to troubleshoot an issue in a plugin used by a mobile app, so they want to increase the plugin logging level in the development environment only, keeping the default logging level in quality and production environments.
 

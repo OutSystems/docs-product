@@ -8,7 +8,7 @@ summary: The Select Server window facilitates connection to a Platform Server by
 ---
 # Select Server Window
 
-The Select Server... window ![Animated GIF showing the process of connecting to a Platform Server using the Select Server window](images/connect-server.gif "Select Server Window") allows you to [connect to a specific Platform Server](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/server-connect.md>). This window is launched automatically whenever necessary, or you can explicitly invoke it in the File menu or in the Toolbar.
+The Select Server... window ![Animated GIF showing the process of connecting to a Platform Server using the Select Server window](images/connect-server.gif "Select Server Window") allows you to [connect to a specific Platform Server](<../../../../integration-with-systems/integration-studio/extension-life-cycle/server-connect.md>). This window is launched automatically whenever necessary, or you can explicitly invoke it in the File menu or in the Toolbar.
 
 The parameters of the Select Server... window are presented below.
 

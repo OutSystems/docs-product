@@ -267,7 +267,7 @@ For **Forge components**, it's a good practice to take the opportunity to upgrad
 
 ## Testing { #testing }
 
-After publishing your applications in the new version, create and run tests to ensure that your applications hot-points aren't affected by the upgrade. Test your applications (screens, workflows, operations, etc.), and check for application errors or background issues in [Service Center's Error Log](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md), to guarantee that all applications are running as expected.
+After publishing your applications in the new version, create and run tests to ensure that your applications hot-points aren't affected by the upgrade. Test your applications (screens, workflows, operations, etc.), and check for application errors or background issues in [Service Center's Error Log](../../monitor-and-troubleshoot/monitoring-an-environment.md), to guarantee that all applications are running as expected.
 
 ## Doing maintenance while upgrading environments { #maintenance }
 

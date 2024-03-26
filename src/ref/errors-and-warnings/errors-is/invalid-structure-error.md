@@ -26,4 +26,4 @@ Cause
 :   You have two or more structures with Record attributes that are using a recursive data type definition. For example,you have two structures: `StructureA` and `StructureB`. In `StructureA`, you have a Record attribute whose Record Definition is `StructureB`; and in `StructureB`, you have a Record attribute whose Record Definition is `StructureA`.
 
 Recommendation    
-:   [Edit these Record attributes](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-attribute.md>) and change their Record Definitions in order to avoid a recursive data type definition. 
+:   [Edit these Record attributes](<../../../integration-with-systems/integration-studio/managing-extensions/entity-attribute.md>) and change their Record Definitions in order to avoid a recursive data type definition. 

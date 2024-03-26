@@ -22,7 +22,7 @@ Since Experience Builder focuses on the creation of the front end of mobile apps
 
 Experience Builder authenticates IT users by contacting your environment to validate the user credentials.
 
-To use Experience Builder you must have an [IT user](../../managing-the-applications-lifecycle/manage-it-teams/intro.md) that has the [correct permissions](how-setup.md#your-user) for the environment.  
+To use Experience Builder you must have an [IT user](../../manage-platform-app-lifecycle/manage-it-teams/intro.md) that has the [correct permissions](how-setup.md#your-user) for the environment.  
 All IT users in your infrastructure that have these permissions can use Experience Builder to create and publish apps.
 
 Every Experience Builder user can access and edit all Experience Builder apps created in that environment.

@@ -20,7 +20,7 @@ You can use the Responsive Table UI Pattern to display information in a logical 
 
 **How to use the Responsive Table UI Pattern**
 
-The Responsive Table UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../../develop/logic/action-web.md).
+The Responsive Table UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../logic/action-web.md).
 
 The following example demonstrates how you can display the registered users on your platform.
 

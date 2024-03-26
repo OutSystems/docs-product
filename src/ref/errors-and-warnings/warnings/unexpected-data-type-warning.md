@@ -34,7 +34,7 @@ Check the [data types](../../data/data-types/available-data-types.md) managed in
 
 **Cause**
 
-You are using the incorrect [data type](../../data/data-types/available-data-types.md) to reference a Record of another [Static Entity](../../../develop/data/modeling/entity-static.md).
+You are using the incorrect [data type](../../data/data-types/available-data-types.md) to reference a Record of another [Static Entity](../../../building-apps/data/modeling/entity-static.md).
 
 **Recommended action**
 

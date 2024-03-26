@@ -12,7 +12,7 @@ Message
 :   `An error occurred while preparing the templates generation: <error detail>.`
 
 Cause
-:   It was not possible to complete the generation of the extension templates. These templates will be stored in a folder under the extension folder and are generated during the [creation of an extension](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-create.md>), when [updating the source code](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-update-source-code.md>) or when using the [Compare With Template operation](<../../integration-studio/editor/resource.md#comparing-with-template>).
+:   It was not possible to complete the generation of the extension templates. These templates will be stored in a folder under the extension folder and are generated during the [creation of an extension](<../../../integration-with-systems/integration-studio/extension-life-cycle/extension-create.md>), when [updating the source code](<../../../integration-with-systems/integration-studio/extension-life-cycle/extension-update-source-code.md>) or when using the [Compare With Template operation](<../../integration-studio/editor/resource.md#comparing-with-template>).
 
 Recommendation
 :   This error is related to a file system error and you should check whether your environment is working properly: If Integration Studio has the permissions necessary to write these template files in the extension folder; if your disk has space available; if the folder where the extension is being stored exists. If the problem persists, contact your System Administrator to ask for help.
@@ -34,7 +34,7 @@ Message
 :   `A time-out has occurred. Compiler appears to be blocked.`
 
 Cause
-:   You are trying to [compile](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-compile.md>) your extension but the Compiler is not responding.
+:   You are trying to [compile](<../../../integration-with-systems/integration-studio/extension-life-cycle/extension-compile.md>) your extension but the Compiler is not responding.
 
 Recommendation
 :   Check whether there are Compiler processes running that might prevent the compilation from continuing. Try to compile the extension again and if the problem persists, contact your System Administrator.

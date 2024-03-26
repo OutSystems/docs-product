@@ -47,7 +47,7 @@ The case management apps contains three layers, according to the [OutSystems Arc
 ## Users in Workflow Builder
 
 Workflow Builder authenticates IT users by contacting your environment to validate the user credentials.
-To use Workflow Builder in an environment, you must have an [IT User](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md) that has the [correct permissions](how-setup.md#your-user) for that environment.
+To use Workflow Builder in an environment, you must have an [IT User](../../../manage-platform-app-lifecycle/manage-it-teams/intro.md) that has the [correct permissions](how-setup.md#your-user) for that environment.
 All IT users in your infrastructure with these permissions can use Workflow Builder.
 
 ### Workflow Builder administrator

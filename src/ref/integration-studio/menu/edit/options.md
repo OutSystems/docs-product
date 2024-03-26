@@ -29,7 +29,7 @@ Show "Select default Application Server for new extension" window
 In this tab you can specify the parameters related to .NET Software Development Kit (SDK) you want to use in .NET extensions.
 
 .NET Integrated Development Environment
-:   Path of the .NET IDE (Integrated Development Environment) used for coding the .NET extensions. This parameter is used in the [Edit Source Code](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-code-edit.md>) and [Compile the Extension](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-compile.md>) options.
+:   Path of the .NET IDE (Integrated Development Environment) used for coding the .NET extensions. This parameter is used in the [Edit Source Code](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-code-edit.md>) and [Compile the Extension](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-compile.md>) options.
 
     Default value: Detected by Integration Studio based on the .NET IDEs installed on your machine (one of the Visual Studio versions/editions supported by OutSystems).  
     Examples:  
@@ -37,7 +37,7 @@ In this tab you can specify the parameters related to .NET Software Development 
     `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe`
 
 .NET Compiler Tool
-:   Path of the builder used when the extension is compiled within Integration Studio, during the [verification](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-verify.md>) of an extension. The .NET Compiler Tool is executed, in the background, through a command line with the options defined below.
+:   Path of the builder used when the extension is compiled within Integration Studio, during the [verification](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify.md>) of an extension. The .NET Compiler Tool is executed, in the background, through a command line with the options defined below.
 
     Default value: Detected by Integration Studio based on the .NET Framework versions installed in the current machine and supported by OutSystems.  
     Examples:  
@@ -45,7 +45,7 @@ In this tab you can specify the parameters related to .NET Software Development 
     `C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe`
 
 .NET Compiler Tool Options
-:   Indicates the compiler options used when the extension is compiled within Integration Studio, during the [verification](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-verify.md>) of an extension.  
+:   Indicates the compiler options used when the extension is compiled within Integration Studio, during the [verification](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify.md>) of an extension.  
 The default compiler options are as follows:
 
     * `/nologo`: Prevents copyright information from displaying.

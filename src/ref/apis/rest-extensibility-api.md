@@ -12,7 +12,7 @@ figma:
 
 The OutSystems REST Extensibility API enables you to access the content of requests and responses used by methods consumed from other REST APIs. It is automatically imported to your environment at installation.
 
-To manipulate the request/response, create an extension module, and use its methods in the OnBeforeRequestAdvanced/OnAfterResponseAdvanced callback of the consumed REST API. [Learn more about how to customize the request/response](<../../extensibility-and-integration/rest/consume-rest-apis/advanced-customizations.md>).
+To manipulate the request/response, create an extension module, and use its methods in the OnBeforeRequestAdvanced/OnAfterResponseAdvanced callback of the consumed REST API. [Learn more about how to customize the request/response](<../../integration-with-systems/rest/consume-rest-apis/advanced-customizations.md>).
 
 The components described in this topic are available under the following .NET namespace: `OutSystems.RuntimePublic.REST`
 

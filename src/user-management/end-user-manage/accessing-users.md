@@ -24,7 +24,7 @@ Before accessing the Users app for the first time, you must configure the Admini
 
 <div class="info" markdown="1">
 
-The Users admin account is **not** the same one you use to connect to Service Center, LifeTime or Service Studio, as those are [IT Administrator Users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
+The Users admin account is **not** the same one you use to connect to Service Center, LifeTime or Service Studio, as those are [IT Administrator Users](../../manage-platform-app-lifecycle/manage-it-teams/intro.md).
 
 </div>
 

@@ -18,7 +18,7 @@ To perform this operation ensure the following:
 
 * Your environments use **OutSystems 11 Platform Server Release Jul.2019** or later.
 
-* If your environments are managed by LifeTime, you must have the [Change and Deploy Applications permission](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels). This means you must have one of the following:
+* If your environments are managed by LifeTime, you must have the [Change and Deploy Applications permission](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels). This means you must have one of the following:
 
     * A role assigned to your user with the **Change and Deploy Applications** permission level (or higher) as default role.
     * A role assigned to your user with the **Change and Deploy Applications** permission level (or higher) for the Users app.
@@ -30,7 +30,7 @@ To perform this operation ensure the following:
 
 <div class="info" markdown="1">
 
-To find out your permissions, see [Find Out the Permissions of IT Users](../../../managing-the-applications-lifecycle/manage-it-teams/find-out-the-permissions-of-it-users.md).
+To find out your permissions, see [Find Out the Permissions of IT Users](../../manage-platform-app-lifecycle/manage-it-teams/find-out-the-permissions-of-it-users.md).
 
 </div>
 

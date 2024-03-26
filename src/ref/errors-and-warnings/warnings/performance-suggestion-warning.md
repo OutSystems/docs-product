@@ -58,7 +58,7 @@ Cause
 :   The rendering of the screen/block only starts after the OnInitialize action finishes. If you access the local storage or execute requests to the server during this stage, you may delay the rendering of the screen/block and make the app look unresponsive.
 
 Recommendation
-:   Move all logic that accesses local storage or server into Screen Aggregates or Data Actions. This way the rendering starts sooner and the fetching of the data or running other server operations runs concurrently, while the screen/block is rendering. For more information, see the [Screen and Block Lifecycle Events](<../../../develop/logic/screen-block-lifecycle-events.md>) documentation.
+:   Move all logic that accesses local storage or server into Screen Aggregates or Data Actions. This way the rendering starts sooner and the fetching of the data or running other server operations runs concurrently, while the screen/block is rendering. For more information, see the [Screen and Block Lifecycle Events](<../../../building-apps/logic/screen-block-lifecycle-events.md>) documentation.
 
 ---
 
@@ -71,7 +71,7 @@ Cause
 :   You seem to be including an external JavaScript library in a JavaScript flow element, which is not recommended. External JavaScript libraries can be too complex to run on mobile devices.
 
 Recommendation
-:   If you really need to use a JavaScript library, [add it as a Script element](<../../../extensibility-and-integration/javascript/mobile/use-external-lib.md>) instead of a JavaScript flow element. However, you should [avoid using external JavaScript libraries](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/#avoid-using-external-javascript-libraries). 
+:   If you really need to use a JavaScript library, [add it as a Script element](<../../../integration-with-systems/javascript/mobile/use-external-lib.md>) instead of a JavaScript flow element. However, you should [avoid using external JavaScript libraries](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/#avoid-using-external-javascript-libraries). 
 
 ---
 

@@ -34,7 +34,7 @@ To implement stateless calls in your application, add references to the followin
 * **BeginStatelessRegion**: Starts a stateless connections region in SAP
 * **EndStatelessRegion**: Ends the stateless connections region in SAP
 
-Learn [how to consume exposed elements in a module](<../../develop/reuse-and-refactor/expose-and-reuse.md#reuse>).
+Learn [how to consume exposed elements in a module](<../../building-apps/reuse-and-refactor/expose-and-reuse.md#reuse>).
 
 ## Implement logic to execute stateless calls
 

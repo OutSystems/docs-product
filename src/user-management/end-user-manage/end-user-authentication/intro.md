@@ -13,7 +13,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 <div class="info" markdown="1">
 
 This section applies only to the authentication of **end users** — the users of your OutSystems applications.  
-The authentication of **IT users**, like Developers and IT Administrators, is [configured in LifeTime](../../../../managing-the-applications-lifecycle/manage-it-teams/use-an-external-authentication-provider.md).
+The authentication of **IT users**, like Developers and IT Administrators, is [configured in LifeTime](../../../manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md).
 
 </div>
 

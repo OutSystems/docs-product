@@ -16,7 +16,7 @@ When a REST API method runs into an error, it's useful to send a meaningful erro
 
 When OutSystems receives a REST API request, it checks if the request is valid. If the **request isn't valid**, OutSystems performs the following:
 
-1. Sets the [HTTP status code of the response](<../../../ref/extensibility-and-integration/rest-apis/exposed-rest-api/built-in-http-status-codes.md>) according to the type of the issue.
+1. Sets the [HTTP status code of the response](<../../../ref/integration-with-systems/rest-apis/exposed-rest-api/built-in-http-status-codes.md>) according to the type of the issue.
 1. Adds an error message to the response body for each issue detected in the validation step.
 1. Adds the HTTP status code to the response body.
 1. Sends the response immediately to the caller, without processing the action flow defined for that request.
@@ -43,7 +43,7 @@ If the REST API request is valid, OutSystems starts executing the action flow of
 
 ## Throw a custom error
 
-When developing your exposed REST API you may need to throw your own custom errors, different from the [built-in errors](<../../../ref/extensibility-and-integration/rest-apis/exposed-rest-api/built-in-http-status-codes.md>).
+When developing your exposed REST API you may need to throw your own custom errors, different from the [built-in errors](<../../../ref/integration-with-systems/rest-apis/exposed-rest-api/built-in-http-status-codes.md>).
 
 To throw a custom error in your REST API, do the following:
 

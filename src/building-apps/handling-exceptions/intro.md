@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=266%3A22&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
 
-# Handle Exceptions
+# Handling Exceptions
 
 An exception is an exceptional circumstance that prevents your application flow from running normally. For example, when your application fetches data from an external system, and that system is experiencing a downtime.
 
@@ -55,7 +55,7 @@ OutSystems can raise Database Exceptions whenever you are interacting with the d
 OutSystems can raise Security Exceptions whenever you have authentication or other security mechanisms in your application module. Security Exceptions include:
 
 Invalid Login
-:   The login provided by the end user isn't correct. This exception is raised by the [Login](../../../ref/apis/auto/system-actions.final.md#Login) and [LoginPassword](../../../ref/apis/auto/system-actions.final.md#LoginPassword) System Actions.
+:   The login provided by the end user isn't correct. This exception is raised by the [Login](../../ref/apis/auto/system-actions.final.md#Login) and [LoginPassword](../../ref/apis/auto/system-actions.final.md#LoginPassword) System Actions.
 
 Not Registered
 :   The end user is not registered and cannot access the current screen without registration. When you create new custom Roles in your module, OutSystems creates specific Role Exceptions under Not Registered Exception:

@@ -10,7 +10,7 @@ figma:
 
 The following list provides information on the supported configurations and limitations for the **Import Actions from .NET Assembly** wizard in the current Integration Studio version.
 
-For the supported assembly versions please check the [System Requirements](../../../setup-maintain/setup/system-requirements.md#integration-studio).  
+For the supported assembly versions please check the [System Requirements](../../../setup-infra-platform/setup/system-requirements.md#integration-studio).  
   
 
 ## Imported Elements

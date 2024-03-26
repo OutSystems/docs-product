@@ -99,9 +99,9 @@ Experience Builder creates apps based on the latest version of OutSystems UI, wh
 
 This module ensures the following:
 
-* Your app includes all the versions of the app icon and the **Extensibility Configurations** that enable [the use of custom icons](../../deliver-mobile/customize-mobile-app/modify-the-app-icon.md). The **res.zip** resource contains all the icon versions. Your app needs this to be published in app stores.
+* Your app includes all the versions of the app icon and the **Extensibility Configurations** that enable [the use of custom icons](../../deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/modify-the-app-icon.md). The **res.zip** resource contains all the icon versions. Your app needs this to be published in app stores.
 
-* Your app includes all the splash screen image sizes and the **Extensibility Configurations** that enable [the use of a custom splash screen](../../deliver-mobile/customize-mobile-app/use-custom-splash-screens.md). The **res.zip** resource contains all the needed versions of the splash screen image and of the icon.
+* Your app includes all the splash screen image sizes and the **Extensibility Configurations** that enable [the use of a custom splash screen](../../deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/use-custom-splash-screens.md). The **res.zip** resource contains all the needed versions of the splash screen image and of the icon.
 
 * Your app includes the **Extensibility Configurations** needed to ensure the correct orientation and color when you distribute it as a Progressive Web App (PWA) or as a native mobile app. Your app needs this to be published in app stores.
 

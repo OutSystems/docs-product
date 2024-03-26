@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Search engine optimization for your OutSystems apps 
+# Search engine optimization in apps
 
 Search engine optimization (SEO) is the process of improving a website’s content and technical configuration to increase its ranking in search engine results pages (SERPs). Because search is one of the main ways in which people discover content online, ranking higher in search engines can lead to an increase in traffic to a website. SEO makes your website more visible to people who are looking for solutions that your brand, product, or service can provide via search engines. 
 

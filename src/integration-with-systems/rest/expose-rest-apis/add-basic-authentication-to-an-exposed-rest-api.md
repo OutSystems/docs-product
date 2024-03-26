@@ -47,6 +47,6 @@ As a result, OutSystems creates the "OnAuthentication" action in your REST API t
 
 ![Flow diagram of the OnAuthentication action handling basic authentication in OutSystems REST API](images/ss-rest-onauthentication-basic-flow.png "OnAuthentication Action Flow")
 
-All methods in the REST API now require Basic Authentication. Manage user credentials in your end user management application (by default, the [Users application](../../../develop/security/end-user-manage/accessing-users.md)).
+All methods in the REST API now require Basic Authentication. Manage user credentials in your end user management application (by default, the [Users application](../../../user-management/end-user-manage/accessing-users.md)).
 
 In the example above, OutSystems logs in the user and creates a session during the request. The GetUserId() function returns the user ID and you can call the CheckRole built-in functions, allowing you to create logic based on the user and the roles assigned to the user.

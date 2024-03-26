@@ -18,7 +18,7 @@ A typical situation of tagging an application is when it reaches a development m
 2. The development continues
 3. The tagged version of the application is deployed to another environment for tests
 
-When tagging a mobile app, there is an extra section called Mobile Versions that allows tagging the mobile package. That operation isn't frequently needed because the platform automatically updates the app without generating new packages. In some [update scenarios](<../../deliver-mobile/mobile-app-update-scenarios.md>) new packages have to be tagged and generated.
+When tagging a mobile app, there is an extra section called Mobile Versions that allows tagging the mobile package. That operation isn't frequently needed because the platform automatically updates the app without generating new packages. In some [update scenarios](<mobile-app-packaging-delivery/mobile-app-update-scenarios.md>) new packages have to be tagged and generated.
 
 Here's an example of tagging applications.
 
@@ -45,7 +45,7 @@ To tag the mobile app, do the following:
 
 1. Click the **TAG VERSION** button for the Development environment.
 
-1. Set the Version to **0.2** and type a description. In the Mobile Versions section, there's also a plus ('+') sign for the Android platform, meaning that the [changes in the app](../../deliver-mobile/mobile-app-update-scenarios.md) require the tagging and generation of a new mobile package. Set also the mobile version for the native platform. Make sure the mobile version [is higher than any previous version](#mobile-package-version).
+1. Set the Version to **0.2** and type a description. In the Mobile Versions section, there's also a plus ('+') sign for the Android platform, meaning that the [changes in the app](mobile-app-packaging-delivery/mobile-app-update-scenarios.md) require the tagging and generation of a new mobile package. Set also the mobile version for the native platform. Make sure the mobile version [is higher than any previous version](#mobile-package-version).
     
     ![Screenshot of the OutSystems LifeTime interface with the 'TAG VERSION' dialog for 'MyApp' where the version is set to 0.2 and a description is added.](images/tag-a-version-3.png "Tagging Mobile App Version")
 
@@ -55,11 +55,11 @@ To tag the mobile app, do the following:
 
 The mobile app is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.
 
-If you need to install and test the tagged application version in a mobile device still in the Development environment, you can [generate a new mobile package](../../deliver-mobile/generate-distribute-mobile-app/intro.md) before proceeding with the deploy to Quality. Otherwise, OutSystems generates a new mobile package during the deployment process.
+If you need to install and test the tagged application version in a mobile device still in the Development environment, you can [generate a new mobile package](mobile-app-packaging-delivery/generate-distribute-mobile-app/intro.md) before proceeding with the deploy to Quality. Otherwise, OutSystems generates a new mobile package during the deployment process.
 
 #### Mobile package versions { #mobile-package-version }
 
-In [update scenarios](<../../deliver-mobile/mobile-app-update-scenarios.md>) that require the generation of a new mobile package, you need to set the new mobile version for the package during the tagging operation in LifeTime. This **new mobile version** must be **higher than any previous version**.
+In [update scenarios](<mobile-app-packaging-delivery/mobile-app-update-scenarios.md>) that require the generation of a new mobile package, you need to set the new mobile version for the package during the tagging operation in LifeTime. This **new mobile version** must be **higher than any previous version**.
 
 LifeTime applies this restriction to the mobile version to comply with the same restriction in public app stores, where you can't publish a new version of your mobile app using a version number lower than the current one. As LifeTime can't validate which versions were already published in the app stores, the tagging operation restricts lower mobile versions.
 

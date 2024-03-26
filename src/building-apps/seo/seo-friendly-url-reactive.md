@@ -21,7 +21,7 @@ SEO-friendly URLs for Reactive Web apps require the following:
 
 * For self-managed infrastructures, [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) must be enabled.
 
-* The domains used in the SEO rules should correspond to domains are effective in the environment. For more information about assigning domains check [Use your SSL domain in OutSystems Cloud](../../setup-maintain/setup/ssl-domain-cloud/ssl-domain-cloud.md) or [Install an SSL Certificate in self-managed environments](../../setup-maintain/setup/install-ssl-platform.md).
+* The domains used in the SEO rules should correspond to domains are effective in the environment. For more information about assigning domains check [Use your SSL domain in OutSystems Cloud](../../setup-infra-platform/setup/ssl-domain-cloud/ssl-domain-cloud.md) or [Install an SSL Certificate in self-managed environments](../../setup-infra-platform/setup/install-ssl-platform.md).
 
 <div class="info" markdown="1">
 
@@ -190,7 +190,7 @@ This is a preview of the transformed URL (for example, the Product screen has th
 
 <div class="warning" markdown="1">
 
-If you have enabled [secure endpoints](../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
+If you have enabled [secure endpoints](../../security/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
 
 </div>
 

@@ -21,7 +21,7 @@ During the development process, you defined groups of users. As the next step, a
 
 ## Users and user group management
 
-To manage users and groups the IT user needs to have access to the  [OutSystems Users tool](../../security/end-user-manage/accessing-users.md), provided by OutSystems, that allows you to manage users.
+To manage users and groups the IT user needs to have access to the  [OutSystems Users tool](../../../user-management/end-user-manage/accessing-users.md), provided by OutSystems, that allows you to manage users.
 To have access to this tool, OutSystems users need to have administrator privileges. Usually, your organization IT owns and manages this tool.
 
 When publishing an app to your development environment, the Workflow Builder adds to the **OutSystems Users** the groups that your business users created in the apps they built in Workflow Builder.

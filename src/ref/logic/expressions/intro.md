@@ -16,7 +16,7 @@ If you are creating an expression and encounter errors, check [here](../../../re
 
 Here is how you can edit expressions and show the expression values.
 
-* Use the [expression editor](../../../develop/logic/expression-editor.md) to **edit expressions**. The expression editor shows you available elements. It automatically completes the text and shows suggestions after you press **Ctrl+Space**.
+* Use the [expression editor](../../../building-apps/logic/expression-editor.md) to **edit expressions**. The expression editor shows you available elements. It automatically completes the text and shows suggestions after you press **Ctrl+Space**.
 
     ![Screenshot of the expression editor interface showing available elements and autocomplete suggestions](images/expression-editor-ss.png "Expression Editor Screenshot")
 

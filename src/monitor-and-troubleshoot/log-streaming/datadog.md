@@ -12,7 +12,7 @@ This article explains how you can set up log streaming from OutSystems applicati
 
 ## Prerequisites
 
-* Enabled [log separation](../../../setup-maintain/setup/logging-db/logs-separation-cloud/intro.md).
+* Enabled [log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md).
 
 * Installed Platform Server version 11.23.1 or higher.
 

@@ -46,4 +46,4 @@ Drag login related content to this placeholder.
 
 ## Compatibility with other patterns
 
-[Layouts](../../../develop/ui/patterns/web/layout/layout-login.md)
+[Layouts](../../../building-apps/ui/patterns/web/layout/layout-login.md)

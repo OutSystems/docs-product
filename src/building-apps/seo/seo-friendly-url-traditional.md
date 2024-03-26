@@ -136,7 +136,7 @@ When domain changes occur make your old URLs point to the new ones using the Red
 
 <div class="info" markdown="1">
 
-If you have enabled [secure endpoints in LifeTime](../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
+If you have enabled [secure endpoints in LifeTime](../../security/host-header-protection.md) make sure the domains you're redirecting to are present in the **Additional secure endpoints** in LifeTime.
 
 </div>  
 

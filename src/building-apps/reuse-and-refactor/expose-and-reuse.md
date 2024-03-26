@@ -30,7 +30,7 @@ To expose an element to other modules, do the following:
 
 1. Publish your module. After publishing your module, you can reuse the public elements in other modules in the environment.
 
-By definition, Service Actions are always public to other modules, so you don't need to set them as public. This also happens for the elements exposed by [Extensions](../../extensibility-and-integration/integration-studio/getting-started/extension.md).
+By definition, Service Actions are always public to other modules, so you don't need to set them as public. This also happens for the elements exposed by [Extensions](../../integration-with-systems/integration-studio/getting-started/extension.md).
 
 Depending on the type of elements that you expose, OutSystems generates a **strong dependency** or a **weak dependency** between your module and the consumer modules. Check [Understand Strong and Weak Dependencies](strong-weak-dependencies.md) to understand the differences between strong and weak dependencies and how each element is exposed.
 

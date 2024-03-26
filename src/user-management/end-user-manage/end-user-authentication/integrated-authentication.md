@@ -36,14 +36,14 @@ Exposed and Consumed SOAP Web Services
 :   For exposed Web Services, the OutSystems application always asks the web service client for its credentials while processing the request. Note that, depending on the client that invokes the SOAP Web Service, it may not be possible to send the credentials and to consume its services.  
     For consumed Web Services, OutSystems sends its credentials to the Web Service server. Note that delegation is not supported if your system is configured to use NTLM when you invoke a Web Service inside a web screen.
 
-Tip: If you need to support Integration Windows Authentication in an exposed REST API you can do it by [implementing your own custom logic](../../../../extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md).
+Tip: If you need to support Integration Windows Authentication in an exposed REST API you can do it by [implementing your own custom logic](../../../integration-with-systems/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md).
 
 ## Integrated Authentication built-in actions
 
 OutSystems has built-in actions and functions that use Integrated Windows Authentication.
 
-* [IntegratedSecurityGetDetails](<../../../../ref/apis/auto/system-actions.final.md#IntegratedSecurityGetDetails>): Gets information about the current Windows user.
-* [IntegratedSecurityCheckRole](<../../../../ref/apis/auto/system-actions.final.md#IntegratedSecurityCheckRole>): Checks whether the current Windows user has access to a specific Windows role.
+* [IntegratedSecurityGetDetails](<../../../ref/apis/auto/system-actions.final.md#IntegratedSecurityGetDetails>): Gets information about the current Windows user.
+* [IntegratedSecurityCheckRole](<../../../ref/apis/auto/system-actions.final.md#IntegratedSecurityCheckRole>): Checks whether the current Windows user has access to a specific Windows role.
 
 ## Remarks
 

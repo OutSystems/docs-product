@@ -177,7 +177,7 @@ Set the URL Path property of the REST API method to a valid URL.
 
 **More info**
 
-Check [Customize REST URLs](../../../extensibility-and-integration/rest/expose-rest-apis/customize-rest-urls.md) for more information.
+Check [Customize REST URLs](../../../integration-with-systems/rest/expose-rest-apis/customize-rest-urls.md) for more information.
 
 ## Set a valid expression for the attribute &lt;attribute>.
 

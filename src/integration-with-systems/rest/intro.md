@@ -18,6 +18,6 @@ You can also expose REST APIs in your OutSystems applications. In this case, oth
 
 If you're creating a REST API to expose functionality that is going to be consumed only by other modules or applications inside the same OutSystems environment, consider using **Service Actions** instead.
 
-A Service Action is a REST-based remote call to another process, but its usage is very similar to public Server Actions. For more information check [Use Services to Expose Functionality](../../develop/reuse-and-refactor/services.md).
+A Service Action is a REST-based remote call to another process, but its usage is very similar to public Server Actions. For more information check [Use Services to Expose Functionality](../../building-apps/reuse-and-refactor/services.md).
 
 </div>

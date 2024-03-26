@@ -8,7 +8,7 @@ figma:
 
 # Extension Properties
 
-To access the properties of an [extension](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-create.md>), simply double-click on the extension in the Extension tab, in the [Multi-tree Navigator](<../multi-tree-navigator.md>).
+To access the properties of an [extension](<../../../integration-with-systems/integration-studio/extension-life-cycle/extension-create.md>), simply double-click on the extension in the Extension tab, in the [Multi-tree Navigator](<../multi-tree-navigator.md>).
 
 The extension properties are explained below.
 

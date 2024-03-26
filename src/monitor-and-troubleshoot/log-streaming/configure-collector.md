@@ -11,7 +11,7 @@ This article explains how to set up the OpenTelemetry collector for Application 
 
 ## Prerequisites
 
-* Enabled [Log separation](../../../setup-maintain/setup/logging-db/logs-separation-cloud/intro.md). 
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
 
 * Installed Platform Server version 11.23.1 or higher.
 

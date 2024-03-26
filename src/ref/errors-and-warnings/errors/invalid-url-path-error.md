@@ -88,7 +88,7 @@ Recommendation
     Notes:
 
     * Even though you can use the `/` character in **URL Path** values, this character is usually reserved for specifying hierarchical structures in REST methods.
-    * OutSystems reserves the `{` and `}` characters for including the value of REST method input parameters in the URL. Check [Customize REST URLs](../../../extensibility-and-integration/rest/expose-rest-apis/customize-rest-urls.md) for more information.
+    * OutSystems reserves the `{` and `}` characters for including the value of REST method input parameters in the URL. Check [Customize REST URLs](../../../integration-with-systems/rest/expose-rest-apis/customize-rest-urls.md) for more information.
 
 <div class="info" markdown="1">
 

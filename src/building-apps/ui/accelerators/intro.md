@@ -40,7 +40,7 @@ Once you've published your app, you can customize it by, for example, [replacing
 
 Some accelerators are populated with sample data so that you can publish and preview the app in runtime without any required changes.
 
-However, you can replace this sample data by dragging and dropping your entities onto the UI which automatically replaces the sample data with your data. Depending on the difference in data structures, there may be errors left to solve. For more information, see [Replace sample data](../screen-templates-use/replace-data.md).
+However, you can replace this sample data by dragging and dropping your entities onto the UI which automatically replaces the sample data with your data. Depending on the difference in data structures, there may be errors left to solve. For more information, see [Replace sample data](../screen-templates/replace-data.md).
 
 ### Adapt the UI and logic
 

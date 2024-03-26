@@ -115,7 +115,7 @@ You can use unescaped Expressions to include JavaScript statements at a specific
 
 In your action flows, either in a Screen Action or a Server Action, you can use the [RunJavaScript](../../../ref/apis/auto/httprequesthandler-api.final.md#RunJavaScript) action of the HTTPRequestHandler extension to get your JavaScript code to run in the context of the browser.
 
-1. In Service Studio, add the **RunJavaScript** Server Action of the HTTPRequestHandler API as a dependency of your module. For more information, check [Reuse functionality from other modules](../../../develop/reuse-and-refactor/expose-and-reuse.md#reuse).
+1. In Service Studio, add the **RunJavaScript** Server Action of the HTTPRequestHandler API as a dependency of your module. For more information, check [Reuse functionality from other modules](../../../building-apps/reuse-and-refactor/expose-and-reuse.md#reuse).
 
     ![Adding the RunJavaScript Server Action from the HTTPRequestHandler API in Service Studio](images/run-js-code-runjavascript-ss.png "RunJavaScript Server Action in Service Studio")
 
@@ -141,7 +141,7 @@ Do the following:
 
 1. Get the full URL of the JavaScript file you wish to include in a Screen of your app. For example, `https://cdn.mycompany.com/js/util.js`.
 
-1. In Service Studio, add the [AddJavaScriptTag](../../../ref/apis/auto/httprequesthandler-api.final.md#AddJavaScriptTag) Server Action of the HTTPRequestHandler API as a dependency of your module. For more information, check [Reuse functionality from other modules](../../../develop/reuse-and-refactor/expose-and-reuse.md#reuse).
+1. In Service Studio, add the [AddJavaScriptTag](../../../ref/apis/auto/httprequesthandler-api.final.md#AddJavaScriptTag) Server Action of the HTTPRequestHandler API as a dependency of your module. For more information, check [Reuse functionality from other modules](../../../building-apps/reuse-and-refactor/expose-and-reuse.md#reuse).
 
 1. In the **Preparation** of the Screen where you want to include the JavaScript code, add a call to the **AddJavaScriptTag** Server Action. Set the **JavaScriptURL** argument to the URL you previously identified.
 

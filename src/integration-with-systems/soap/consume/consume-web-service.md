@@ -41,7 +41,7 @@ When you consume a SOAP Web Service, OutSystems does the following for you:
 * Creates the SOAP Web Service
 * Creates the exposed Web Service Methods with the corresponding input and output parameters
 * Creates the Structures and Static Entities to hold the complex types defined in the WSDL
-* Maps the [XML data types into OutSystems data types](<../../../ref/extensibility-and-integration/soap/consumed-soap/mapping-xml-to-outsystems.md>)
+* Maps the [XML data types into OutSystems data types](<../../../ref/integration-with-systems/soap/consumed-soap/mapping-xml-to-outsystems.md>)
 
 ![Result of consuming a SOAP Web Service in OutSystems, showing created elements](images/soap-consume-result.png "SOAP Web Service Consumption Result")
 

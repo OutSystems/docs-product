@@ -7,7 +7,7 @@ platform-version: o11
 figma:
 ---
 
-# Use Timers
+# Using Timers
 
 You can use **Timers** to execute asynchronous logic in your OutSystems application. This is useful to execute batch tasks like sending emails at a predetermined time, or to execute logic to configure an application after its deployment.
 

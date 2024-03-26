@@ -17,7 +17,7 @@ HTTPS allows you to establish a secure communication channel between the end use
 
 To use HTTPS in your application you must configure and activate SSL (Secure Socket Layers) in the environments of your infrastructure. When SSL is active, the development environments and monitoring consoles will also use a secure connection to the environment.
 
-After configuring SSL in your infrastructure, you can define that [some parts](<../../develop/security/secure-http-requests.md>) or your [entire application/environment](<enforce-https-security.md>) must be served over HTTPS.
+After configuring SSL in your infrastructure, you can define that [some parts](<secure-http-requests.md>) or your [entire application/environment](<enforce-https-security.md>) must be served over HTTPS.
 
 Note that all requests made to the back-end of a Mobile or Reactive Web app (the server part of the OutSystems generated code for your app) are **always** made over HTTPS.
 
@@ -27,8 +27,8 @@ You can enable SSL in your infrastructure in one of the following ways, dependin
 
 SSL in OutSystems Cloud
 :   Your cloud environment is automatically rolled out with a valid SSL certificate for the `outsystemsenterprise.com` domain.  
-    However, you can customize both the hostname of your environment and its SSL domain certificate by following the steps outlined in [Use your SSL domain in OutSystems Cloud](../../setup-maintain/setup/ssl-domain-cloud/ssl-domain-cloud.md).
+    However, you can customize both the hostname of your environment and its SSL domain certificate by following the steps outlined in [Use your SSL domain in OutSystems Cloud](../setup-infra-platform/setup/ssl-domain-cloud/ssl-domain-cloud.md).
 
 SSL in an On-Premises Infrastructure
 :   In on-premises infrastructures you need to acquire and install an SSL domain certificate to add HTTPS support to your OutSystems applications.  
-    Check [How to install an SSL Certificate in self-managed environments](../../setup-maintain/setup/install-ssl-platform.md) in the Support Knowledge Base.
+    Check [How to install an SSL Certificate in self-managed environments](../setup-infra-platform/setup/install-ssl-platform.md) in the Support Knowledge Base.

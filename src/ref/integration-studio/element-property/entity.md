@@ -8,7 +8,7 @@ figma:
 
 # Entity Properties
 
-The next table presents the properties of the [entity](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-define.md>) element.  
+The next table presents the properties of the [entity](<../../../integration-with-systems/integration-studio/managing-extensions/entity-define.md>) element.  
 
 |Property|Description|Optionality|Default value|Obs.|
 |--- |--- |--- |--- |--- |

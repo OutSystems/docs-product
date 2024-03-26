@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 # How to set up the users governance model
 
-The goal of this document is to guide [IT users](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) through the setup the end users governance model in [Workflow Builder](http://workflowbuilder.outsystems.com/).
+The goal of this document is to guide [IT users](../../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md) through the setup the end users governance model in [Workflow Builder](http://workflowbuilder.outsystems.com/).
 
 <div class="info" markdown="1">
 
@@ -22,7 +22,7 @@ Setting up the users governance model, allows you to define what users can do in
 
 To set up the user governance, perform the following steps:
 
-1. Create teams, roles, and IT users in LifeTime. Refer to [Manage IT users](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) and to [End user management](../../security/end-user-manage/accessing-users.md) for more information.
+1. Create teams, roles, and IT users in LifeTime. Refer to [Manage IT users](../../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md) and to [End user management](../../../user-management/end-user-manage/accessing-users.md) for more information.
 
 1. On the **LifeTime environment address** field, enter your LifeTime environment address.
 

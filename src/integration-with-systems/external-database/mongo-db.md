@@ -95,11 +95,11 @@ To add a record, known as a document in MongoDB, to a collection with Structure 
 
 ### Fetch a record from a collection with Structure Format
 
-To fetch a record, known as a document in MongoDB, to a collection with Structure Format follow the steps in [Fetch a single record](../../develop/data/query/fetch-data-ib.md#fetch-record).
+To fetch a record, known as a document in MongoDB, to a collection with Structure Format follow the steps in [Fetch a single record](../../building-apps/data/operations/fetch-data-ib.md#fetch-record).
 
 ### Fetch a list of records from a collection with Structure Format
 
-To fetch a list of records, known as a document in MongoDB, to a collection with Structure Format follow the steps in [Fetch a single record](../../develop/data/query/fetch-data-ib.md#fetch-list).
+To fetch a list of records, known as a document in MongoDB, to a collection with Structure Format follow the steps in [Fetch a single record](../../building-apps/data/operations/fetch-data-ib.md#fetch-list).
 
 ## Collection with JSON Format { #json-format }
 
@@ -210,7 +210,7 @@ Assign the deserialize data to the output parameter by doing the following:
 
     * `<output-parameter>` = `JSONDeserialize<structure>.Data`
 
-If you completed the previous steps in the **Data Action** of a screen, you can [show the record in a screen](../../develop/data/query/fetch-data-ib.md#show-a-single-record--show-record).
+If you completed the previous steps in the **Data Action** of a screen, you can [show the record in a screen](../../building-apps/data/operations/fetch-data-ib.md#show-a-single-record--show-record).
 
 ### Fetch a list of records from a collection with JSON Format
 
@@ -272,4 +272,4 @@ Now deserialize the list of records and append the records to the output paramet
 
 1. Connect **ListAppend** to the **For Each**.
 
-If you completed the previous steps in the **Data Action** of a screen, you can [show the list of records in a screen](../../develop/data/query/fetch-data-ib.md#show-a-list-of-records--show-list).
+If you completed the previous steps in the **Data Action** of a screen, you can [show the list of records in a screen](../../building-apps/data/operations/fetch-data-ib.md#show-a-list-of-records--show-list).

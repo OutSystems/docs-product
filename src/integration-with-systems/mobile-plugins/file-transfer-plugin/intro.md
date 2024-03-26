@@ -51,7 +51,7 @@ The file type is always decided based on the HTTP header `Content-Type`, set in 
 
 ### Upload  { #pwa-upload }
 
-This plugin doesn't offer the upload features in a PWA context, since the [Upload Widget](../../../develop/ui/inputs/upload.md) offers the same capabilities.
+This plugin doesn't offer the upload features in a PWA context, since the [Upload Widget](../../../building-apps/ui/inputs/upload.md) offers the same capabilities.
 
 ## Demo app
 

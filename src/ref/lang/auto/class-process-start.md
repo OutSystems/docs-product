@@ -8,9 +8,9 @@ figma:
 
 # Process Start
 
-When designing the process flow of your process, you must start the process flow with the **Process Start** activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>). Only one Process Start activity is allowed in a process flow design as this is where the process flow execution starts when the process is launched.
+When designing the process flow of your process, you must start the process flow with the **Process Start** activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../building-apps/processes/process-flow/process-flow-toolbox.md>). Only one Process Start activity is allowed in a process flow design as this is where the process flow execution starts when the process is launched.
 
-However, when designing the process flow of your process, you can start specific flows in the process to handle [entity actions events](<../../../develop/processes/intro.md#entity-actions-events>) raised by your application.
+However, when designing the process flow of your process, you can start specific flows in the process to handle [entity actions events](<../../processes/intro.md#entity-actions-events>) raised by your application.
 
 ## Starting Alternative Flows
 

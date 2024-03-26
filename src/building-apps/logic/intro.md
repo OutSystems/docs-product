@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Implement Application Logic
+# Application Logic
 
 In OutSystems, the logic of your applications is implemented through **Actions**. While developing your applications, you can create your own custom actions and use the actions OutSystems provides you:
 

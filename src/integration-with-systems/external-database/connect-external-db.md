@@ -10,11 +10,11 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 
 # Integrate with an external database using Integration Studio
 
-OutSystems integrates with your existing databases. This allows you to develop apps that access data on external databases using OutSystems entities in Service Studio and without having to worry about data migration. For a list of supported external database engines and their supported versions check the [System Requirements](../../setup-maintain/setup/system-requirements.md#integration-with-external-systems).
+OutSystems integrates with your existing databases. This allows you to develop apps that access data on external databases using OutSystems entities in Service Studio and without having to worry about data migration. For a list of supported external database engines and their supported versions check the [System Requirements](../../setup-infra-platform/setup/system-requirements.md#integration-with-external-systems).
 
 <div class="info" markdown="1">
 
-When you're done developing your integration with an external database and you want to deploy the app to another Environment (for example, the quality assurance environment) check out [this step by step guide](../../managing-the-applications-lifecycle/deploy-applications/deploy-an-app-externaldb.md).
+When you're done developing your integration with an external database and you want to deploy the app to another Environment (for example, the quality assurance environment) check out [this step by step guide](../../deploying-apps/deploy-an-app-externaldb.md).
 
 </div>
 

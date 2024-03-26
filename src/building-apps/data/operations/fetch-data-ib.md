@@ -9,7 +9,7 @@ figma:
 
 # Fetch and display data from an integration
 
-After [adding an integration as a dependency to your module in Service Studio](../../../extensibility-and-integration/integration-builder/use.md#use), use the [actions from the integration](../../../extensibility-and-integration/integration-builder/structure.md) to fetch and manipulate the data from your external system of records. This article shows you how to fetch a single record or a list of records, that you can then show in a screen.
+After [adding an integration as a dependency to your module in Service Studio](../../../integration-with-systems/integration-builder/use.md#use), use the [actions from the integration](../../../integration-with-systems/integration-builder/structure.md) to fetch and manipulate the data from your external system of records. This article shows you how to fetch a single record or a list of records, that you can then show in a screen.
 
 Fetch a single record, if, for example, to show data about a product in a product detail screen.
 Fetch a list of records, if, for example, to show a table with a list of products in a product list screen.
@@ -24,7 +24,7 @@ Start by [fetching data in your screen](#fetch-data), and then [show the data in
 
 ## Prerequisites
 
-Before you start, ensure you created an app with a module and [added the integration as a dependency to your module in Service Studio](../../../extensibility-and-integration/integration-builder/use.md#use).
+Before you start, ensure you created an app with a module and [added the integration as a dependency to your module in Service Studio](../../../integration-with-systems/integration-builder/use.md#use).
 
 ## Fetch data from an integration { #fetch }
 

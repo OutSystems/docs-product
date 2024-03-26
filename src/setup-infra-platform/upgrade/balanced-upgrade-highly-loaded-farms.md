@@ -17,7 +17,7 @@ This guide applies only to self-managed installations. It doesn't apply to OutSy
 
 <div class="warning" markdown="1">
 
-**This guide applies exclusively to Platform Server upgrades**. If you are also deploying application changes while performing a Platform Server upgrade, you will need to take extra steps which are outside the scope of this guide. For more information, see [Balanced Application Deployment on Highly Loaded OutSystems Farms](../../managing-the-applications-lifecycle/deploy-applications/balanced-app-deploy.md).
+**This guide applies exclusively to Platform Server upgrades**. If you are also deploying application changes while performing a Platform Server upgrade, you will need to take extra steps which are outside the scope of this guide. For more information, see [Balanced Application Deployment on Highly Loaded OutSystems Farms](../../deploying-apps/balanced-app-deploy.md).
 
 </div>
 

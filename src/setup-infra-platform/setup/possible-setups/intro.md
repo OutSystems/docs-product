@@ -84,7 +84,7 @@ In this scenario,you must change the hostname configuration to match ``www.examp
 
 ### Deployment zone configurations
 
-[Selective Deployment Using Deployment Zones](../../../managing-the-applications-lifecycle/deploy-applications/zones/intro.md) is a feature that allows you to define the distribution of apps by servers on farm environments, ensuring that servers can have different purposes. 
+[Selective Deployment Using Deployment Zones](../../../deploying-apps/zones/intro.md) is a feature that allows you to define the distribution of apps by servers on farm environments, ensuring that servers can have different purposes. 
 
 Each deployment zone has an address, which is used in the following scenario:
 * Internal communication between apps deployed into different zones, including service APIs
@@ -137,7 +137,7 @@ You can only **define one value for the hostname configuration**. In doing so,  
 
 ### LifeTime configurations
 
-LifeTime is the [centralized console for managing your OutSystems environments](../../../managing-the-applications-lifecycle/initial-setup-of-an-infrastructure.md), apps, IT users, and security, covering the full application life cycle from development to deployment.
+LifeTime is the [centralized console for managing your OutSystems environments](../../../manage-platform-app-lifecycle/initial-setup-of-an-infrastructure.md), apps, IT users, and security, covering the full application life cycle from development to deployment.
 
 To provide its functionality, LifeTime contacts some APIs on the servers. These APIs are exposed by Service Center and Server.API.
 

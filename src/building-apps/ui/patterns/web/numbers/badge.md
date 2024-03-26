@@ -22,7 +22,7 @@ You can use the Badge UI Pattern to display numerical information as a notificat
 
 **How to use the Badge UI Pattern**
 
-The Badge UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../../develop/logic/action-web.md). 
+The Badge UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../logic/action-web.md). 
 
 The following example demonstrates how you can display the number of registered users on your platform.
 

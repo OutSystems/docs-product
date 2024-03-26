@@ -12,7 +12,7 @@ Besides the functions listed below, you also have another built-in function avai
 
 * `Check<role_name>Role`
 
-Check [Role Functions](../../../develop/security/user-roles/create-a-custom-role.md#role-functions) for more information.
+Check [Role Functions](../../../user-management/user-roles/create-a-custom-role.md#role-functions) for more information.
 
 
 

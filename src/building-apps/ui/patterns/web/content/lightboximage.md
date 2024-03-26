@@ -50,7 +50,7 @@ You can use the Light Box Image UI Pattern to open smaller thumbnail images in f
 
     ![Select Image pop-up in Service Studio for choosing an image for the Light Box Image widget](images/lightboximage-9-ss.png "Selecting an Image for Light Box")
 
-    Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
+    Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../building-apps/ui/image/display-image.md).
 
 1. From the Widget tree, select the Light Box Image widget.
 

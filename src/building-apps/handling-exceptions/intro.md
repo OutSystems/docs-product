@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=266%3A22&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
 
-# Handling Exceptions
+# Handling exceptions
 
 An exception is an exceptional circumstance that prevents your application flow from running normally. For example, when your application fetches data from an external system, and that system is experiencing a downtime.
 

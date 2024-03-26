@@ -7,4 +7,4 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# Extensibility and integration
+# Integration with external systems

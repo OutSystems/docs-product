@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# Setup and maintain your OutSystems infrastructure
+# Setup OutSystems infrastructure and platform
 
 Find under this section articles about:
 

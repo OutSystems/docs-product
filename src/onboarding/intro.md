@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Transitioning to the OutSystems language
+# Onboarding developers
 
 <div class="info" markdown="1">
 

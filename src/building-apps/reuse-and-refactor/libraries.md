@@ -68,7 +68,7 @@ The elements that you can use in Libraries are enforced both in Service Studio e
 Considering the architectural philosophy behind Libraries, some concepts must be approached differently. Take the following into account when creating a Library:
 
 * Libraries can only reference elements from other Libraries or from Extensions. However, you can still reference System actions.
-* Libraries can only access Site Properties in read-only mode. The effective values of Site Properties can still be modified via Service Center, or via LifeTime when the [technical preview "Configure Site Properties during deployment"](../../managing-the-applications-lifecycle/deploy-applications/tp-configure-site-properties-during-deploy.md) is enabled.
+* Libraries can only access Site Properties in read-only mode. The effective values of Site Properties can still be modified via Service Center, or via LifeTime when the [technical preview "Configure Site Properties during deployment"](../../deploying-apps/tp-configure-site-properties-during-deploy.md) is enabled.
 * By design, these elements are not available in Libraries:
     * Screens
     * Service Actions
@@ -98,4 +98,4 @@ When using Libraries, it is not possible to deploy [existing resources](../data/
 
 ### Debugging a Library
 
-To debug a Library module you need to set the **entry module** to a module that is consuming the library, like you already do when debugging producer modules. Check [Debugging Producer Modules](../troubleshoot/debug/debug-producer-modules.md) for more information.
+To debug a Library module you need to set the **entry module** to a module that is consuming the library, like you already do when debugging producer modules. Check [Debugging Producer Modules](../../debugging-apps/debug-producer-modules.md) for more information.

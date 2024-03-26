@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:129
 ---
 
-# Debugging Applications
+# Debugging apps
 
 Debug your app in Service Studio by pausing the execution at [breakpoints](<breakpoints.md>), specific points in a module, and then running the logic step-by-step. This lets you find any issues in your logic design.
 
@@ -92,7 +92,7 @@ If you need to troubleshoot app crashes, a plugin or check the native code of ap
 
 <div class="info" markdown="1">
 
-For more information, refer to [Solve Common Mobile App Development Issues](<../solve-common-mobile-app-development-issues.md>) and [Best Practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>). These resources have useful tips that might save you some troubleshooting time.
+For more information, refer to [Solve Common Mobile App Development Issues](<../monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md>) and [Best Practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>). These resources have useful tips that might save you some troubleshooting time.
 
 </div>
 
@@ -104,7 +104,7 @@ When debugging an app and checking the values of the Date Time data type, keep i
 * In the client UI, the date and time are in the timezone of the client.
 * On the server, the date and time are in the timezone of the server.
 
-You can read more about timezones in [Available Data Types](../../../ref/data/data-types/available-data-types.md#date-time-notes).
+You can read more about timezones in [Available Data Types](../ref/data/data-types/available-data-types.md#date-time-notes).
 
 ## Debugging in Proxy Scenarios and Farm Environments
 

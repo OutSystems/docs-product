@@ -22,7 +22,7 @@ In a Single Sign-On scenario, check out your unified modules in Service Center: 
 
 <div class="info" markdown="1">
 
-For the single sign-on to work throughout different app types, you also need to activate it in the security settings of your environment. See [Configure app authentication settings](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md) and the instructions about SSO.
+For the single sign-on to work throughout different app types, you also need to activate it in the security settings of your environment. See [Configure app authentication settings](../../../security/configure-authentication.md) and the instructions about SSO.
 
 </div>
 

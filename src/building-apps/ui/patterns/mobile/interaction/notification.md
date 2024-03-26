@@ -28,7 +28,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 **This component doesn't facilitate push notifications**. For more information about push notifcations, see the following articles:
 
-* [Firebase Cloud Messaging Plugin](../../../../../extensibility-and-integration/mobile-plugins/firebase/firebase-messaging.md)
+* [Firebase Cloud Messaging Plugin](../../../../../integration-with-systems/mobile-plugins/firebase/firebase-messaging.md)
 
 * [How to Use Push Notifications with OneSignal](https://success.outsystems.com/documentation/how_to_guides/integrations/how_to_use_push_notifications_with_onesignal/)
 

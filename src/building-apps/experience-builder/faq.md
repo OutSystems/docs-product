@@ -26,6 +26,6 @@ Note that the **Empty Screens** are a particular case - since they don’t belon
 
 ## Why does Experience Builder ask for such high-resolution images for both app icon and splash screen?
 
-Experience Builder asks for [native app icons](../../deliver-mobile/customize-mobile-app/modify-the-app-icon.md) images with 1024x1024 and [splash screen images](../../deliver-mobile/customize-mobile-app/use-custom-splash-screens.md) with 2048x2048 to ensure the creation of all the image sizes needed to publish your mobile app in Google and Apple app stores.
+Experience Builder asks for [native app icons](../../deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/modify-the-app-icon.md) images with 1024x1024 and [splash screen images](../../deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/use-custom-splash-screens.md) with 2048x2048 to ensure the creation of all the image sizes needed to publish your mobile app in Google and Apple app stores.
 
 Experience Builder packages all these images in a zip file with the correct folders structure, and adds all the extensibility configurations required to use all these assets once you publish your app.

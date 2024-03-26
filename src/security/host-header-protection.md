@@ -86,7 +86,7 @@ Before enabling secure endpoints you must list all the hostnames used to access 
 
 ### Check redirect rules in Service Center { #check-redirect-rules }
 
-With [redirect rules](../../develop/seo/seo-friendly-url-traditional.md#redirect-rules), your environment might redirect requests to an endpoint not gathered in the section above. Make sure to verify the **Redirect Rules List**  in Service Center and allow all the destination endpoints present in the **New URL**.
+With [redirect rules](../building-apps/seo/seo-friendly-url-traditional.md#redirect-rules), your environment might redirect requests to an endpoint not gathered in the section above. Make sure to verify the **Redirect Rules List**  in Service Center and allow all the destination endpoints present in the **New URL**.
 
 <div class="info" markdown="1">
 

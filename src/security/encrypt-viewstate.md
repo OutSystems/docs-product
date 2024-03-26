@@ -42,7 +42,7 @@ You can confirm or toggle the view state encryption using the supported Forge co
 
     </div>
 
-1. [Apply the settings](../deploy-applications/apply-configurations.md#apply-pending-settings-to-a-set-of-modules) to all modules.
+1. [Apply the settings](../deploying-apps/apply-configurations.md#apply-pending-settings-to-a-set-of-modules) to all modules.
 
 ## Use session token to encrypt view state
 

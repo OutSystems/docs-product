@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%
 
 # Quick Reference for OutSystems on Microsoft Azure
 
-This article describes the Azure resources deployed by [OutSystems on Microsoft Azure](intro.md "OutSystems on Microsoft Azure Overview") solution template, which contains the OutSystems Development, Test, Production, and [LifeTime deployment management console](../../../managing-the-applications-lifecycle/intro.md) environments.
+This article describes the Azure resources deployed by [OutSystems on Microsoft Azure](intro.md "OutSystems on Microsoft Azure Overview") solution template, which contains the OutSystems Development, Test, Production, and [LifeTime deployment management console](../../../manage-platform-app-lifecycle/intro.md) environments.
 
 ## Azure Resources 
 

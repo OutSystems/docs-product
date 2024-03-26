@@ -65,7 +65,7 @@ After selecting the scope, follow these steps:
 
 3. Double-click on the action to define its logic. Drag and drop **Logic** widgets from the Toolbox into the flow and set their properties.
 
-4. To make the action accessible as a function in an [expression](../../ref/logic/expressions/intro.md), set the action's **Function** parameter to `Yes`.
+4. To make the action accessible as a function in an [expression](../ref/logic/expressions/intro.md), set the action's **Function** parameter to `Yes`.
 
 
 ### Define variables
@@ -107,13 +107,13 @@ In the **Data Type** property of the variable, to define a variable of:
 
 Using **If**![Small icon representing a Server-side If logic widget in Service Studio.](images/If_Server_sm.png "Server If Widget")![Small icon representing a Server-side If logic widget in Service Studio.](images/If_Client_sm.png "Client If Widget") logic widget:
 
-In the properties panel after selecting the **If** widget, double-click on the **Condition** property row to bring up the [Expression Editor](../../develop/logic/expression-editor.md) and type your expression in the **Expression** field using operands and operators, as well as variables, functions, and scripts in scope as seen in the **Scope** pane (bottom left of Expression Editor).
+In the properties panel after selecting the **If** widget, double-click on the **Condition** property row to bring up the [Expression Editor](../building-apps/logic/expression-editor.md) and type your expression in the **Expression** field using operands and operators, as well as variables, functions, and scripts in scope as seen in the **Scope** pane (bottom left of Expression Editor).
 
 #### In an assignment
 
 Using **Assign**![Small icon representing a Server-side Assign logic widget in Service Studio.](images/Assign_Server_sm.png "Server Assign Widget Icon")![Small icon representing a Client-side Assign logic widget in Service Studio.](images/Assign_Client_sm.png "Client Assign Widget Icon") logic widget:
 
-In the properties panel after selecting the **Assign** widget, select a variable to assign the expression to, then double-click on the **Value** property row to bring up the [Expression Editor](../../develop/logic/expression-editor.md) and type your expression in the expression field using operands and operators, as well as variables, functions, and scripts in scope as seen in the **Scope** pane (bottom left of Expression Editor).
+In the properties panel after selecting the **Assign** widget, select a variable to assign the expression to, then double-click on the **Value** property row to bring up the [Expression Editor](../building-apps/logic/expression-editor.md) and type your expression in the expression field using operands and operators, as well as variables, functions, and scripts in scope as seen in the **Scope** pane (bottom left of Expression Editor).
 
 ### Define For Each and While loops in an action
 
@@ -183,7 +183,7 @@ If calling from a UI element, first double-click on the UI element to edit the *
 
 #### Consume a REST API
 
-1. From the **Logic** tab![Small icon representing the Logic Tab in Service Studio.](images/Tab_Logic.png "Logic Tab Icon"), right-click REST under the **Integrations** folder, click **Consume REST API**, then select "**Add single method**". You can select **Add multiple methods** if you have access to a REST API with Swagger specification and want to [consume multiple methods at once](../../extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md#all-methods).
+1. From the **Logic** tab![Small icon representing the Logic Tab in Service Studio.](images/Tab_Logic.png "Logic Tab Icon"), right-click REST under the **Integrations** folder, click **Consume REST API**, then select "**Add single method**". You can select **Add multiple methods** if you have access to a REST API with Swagger specification and want to [consume multiple methods at once](../integration-with-systems/rest/consume-rest-apis/consume-a-rest-api.md#all-methods).
 
 1. Select the **Method** (GET, POST, PUT, DELETE, PATCH), and paste the **URL**, replacing any parameters in braces (curly brackets).
 

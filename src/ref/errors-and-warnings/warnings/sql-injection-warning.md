@@ -10,7 +10,7 @@ figma:
 
 # SQL Injection Warning
 
-OutSystems uses [prepared statements](<https://en.wikipedia.org/wiki/Prepared_statement>) by default to execute the SQL queries that you define in [SQL elements](<../../../develop/data/query/sql.md>). These prepared statements contain SQL parameters or placeholders, for which you define values before executing the SQL statement. These parameters can only store a value of a given type and not arbitrary SQL fragments. Learn more on how the use of prepared statements can prevent SQL injection attacks in OWASP's [SQL Injection Prevention Cheat Sheet](<https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet>).
+OutSystems uses [prepared statements](<https://en.wikipedia.org/wiki/Prepared_statement>) by default to execute the SQL queries that you define in [SQL elements](<../../../building-apps/data/operations/sql.md>). These prepared statements contain SQL parameters or placeholders, for which you define values before executing the SQL statement. These parameters can only store a value of a given type and not arbitrary SQL fragments. Learn more on how the use of prepared statements can prevent SQL injection attacks in OWASP's [SQL Injection Prevention Cheat Sheet](<https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet>).
 
 Also, OutSystems uses a SQL parameter for every Query Parameter that has the **Expand Inline** property **disabled**. This property is disabled by default, providing you **default protection against SQL injection attacks**.
 

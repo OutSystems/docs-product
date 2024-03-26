@@ -7,5 +7,5 @@ platform-version: o11
 figma:
 ---
 
-# Secure the Applications
+# Security
 

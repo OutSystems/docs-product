@@ -39,7 +39,7 @@ To use the layout, do as follows:
 
 1. Go to the Dashboard screen and add Layout_Dashboard1 to the screen.
 1. Add the Reviews per Day and Places by Category charts at the top.
-1. Fetch and list the Latest 5 Reviews at the bottom. Learn how to [fetch data from the database](../../data/query/fetch-display.md).
+1. Fetch and list the Latest 5 Reviews at the bottom. Learn how to [fetch data from the database](../../data/operations/fetch-display.md).
 1. Publish and test.
 
 ![Dashboard screen in OutSystems showing the implemented layout with charts and reviews](images/design-screens-layout-2.png "Implemented Layout on Dashboard Screen")

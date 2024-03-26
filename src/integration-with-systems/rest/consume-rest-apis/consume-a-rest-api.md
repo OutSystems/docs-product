@@ -49,7 +49,7 @@ When importing the REST API, Service Studio does the following:
 * Creates the REST API
 * Creates REST API Methods with the corresponding input and output parameters
 * Creates the Structures to hold the corresponding input and output parameters under a new tree element with the REST API name
-* Maps the [REST Data Types into OutSystems Data Types](../../../ref/extensibility-and-integration/rest-apis/consumed-rest-api/mapping.md)
+* Maps the [REST Data Types into OutSystems Data Types](../../../ref/integration-with-systems/rest-apis/consumed-rest-api/mapping.md)
 
 ![REST API elements created in Service Studio after importing methods](images/ss-rest-consume-created-elements.png "REST API Elements Created in Service Studio")
 
@@ -119,7 +119,7 @@ When importing the REST API method, Service Studio does the following:
 * Creates a REST API element under the **REST** element in the tree
 * Creates a REST API Method with the corresponding input and output parameters
 * Creates the Structures to hold the corresponding input and output parameters under a new tree element with the REST API name
-* Maps the [REST Data Types into OutSystems Data Types](../../../ref/extensibility-and-integration/rest-apis/consumed-rest-api/mapping.md)
+* Maps the [REST Data Types into OutSystems Data Types](../../../ref/integration-with-systems/rest-apis/consumed-rest-api/mapping.md)
 
 ![REST API elements created in Service Studio after importing methods](images/ss-rest-consume-created-elements.png "REST API Elements Created in Service Studio")
 

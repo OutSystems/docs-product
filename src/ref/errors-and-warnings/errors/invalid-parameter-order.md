@@ -21,6 +21,6 @@ When you have a Screen with custom URLs, put the mandatory Input Parameters firs
 
 <div class="info" markdown="1">
 
-This error is part of [SEO-friendly URLs for Reactive Web Apps](../../../develop/seo/intro.md).
+This error is part of [SEO-friendly URLs for Reactive Web Apps](../../../building-apps/seo/intro.md).
 
 </div>

@@ -154,7 +154,7 @@ Back in the Users application, upload the XML file you downloaded in the previou
 
        ![Screenshot of the Service Center management console with the Single Sign-On Between App Types checkbox highlighted](images/azuread-sso.png "Applications Authentication")
 
-    For more information about application authentication, see [Configure App Authentication](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md). 
+    For more information about application authentication, see [Configure App Authentication](../../../security/configure-authentication.md). 
 
 ### Assign user or group to Azure application { #assign-user-azure-app }
 

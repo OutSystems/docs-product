@@ -14,7 +14,7 @@ The exceptions raised in your module are handled in a flow starting with an Exce
 
 An exception can be raised by OutSystems or in your logic at any point of your module. For typical UI requests, you can handle the raised exceptions by:
 
-* Adding an [Exception Handler](<../../../ref/lang/auto/class-exception-handler.md>) element and its logic in your action's flow.
+* Adding an [Exception Handler](<../../ref/lang/auto/class-exception-handler.md>) element and its logic in your action's flow.
 * Adding an On Exception action in your UI Flows.
 * Let the Global Exception Handler of your module do the work. By default, Global Exception Handler property of your module is set to the On Exception action of the "Common" UI Flow.
 
@@ -38,4 +38,4 @@ You should have, at least, one Exception Handler in your application flow to inf
 
 When you are handling exceptions raised by an integration you are consuming (such as an action of an Extension or a method of a REST API) you won't be able to determine the type of exception. In these situations, you should handle the exception with an All Exceptions Handler. Then, you can use the **ExceptionMessage** property of the Exception Handler element to identify the exception.
 
-For more information on handling errors in consumed REST APIs, check [Handling REST Errors](../../../extensibility-and-integration/rest/consume-rest-apis/handling-rest-errors.md).
+For more information on handling errors in consumed REST APIs, check [Handling REST Errors](../../integration-with-systems/rest/consume-rest-apis/handling-rest-errors.md).

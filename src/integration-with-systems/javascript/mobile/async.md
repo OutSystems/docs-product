@@ -69,7 +69,7 @@ If you do not include an Error object as an argument, a default Error object wil
 
 Only the predefined function "$reject()" will **trigger an Exception** in OutSystems, which will be handled by the first Exception handler available.
 
-If you have not defined any custom exception handlers in your module, the exception will be handled by the default Global Exception Handler. Check [Exception Handling Mechanism](<../../../develop/logic/exceptions/handling-mechanism.md>) for more information.
+If you have not defined any custom exception handlers in your module, the exception will be handled by the default Global Exception Handler. Check [Exception Handling Mechanism](<../../../building-apps/handling-exceptions/handling-mechanism.md>) for more information.
 
 </div>
 

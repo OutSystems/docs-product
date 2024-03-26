@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Logged data fields
 
-The underlying data schema for Log separation is based on the [OpenTelemetry](https://opentelemetry.io/) specification, an open standard to ensure vendor-agnostic data. In the following tables, you can find useful information on how the existing data fields map to the new OpenTelemetry fields. For more information about the existing data fields, see [Log data reference](../../../managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md)
+The underlying data schema for Log separation is based on the [OpenTelemetry](https://opentelemetry.io/) specification, an open standard to ensure vendor-agnostic data. In the following tables, you can find useful information on how the existing data fields map to the new OpenTelemetry fields. For more information about the existing data fields, see [Log data reference](../logging/reference.md)
 
 ## General logs
 

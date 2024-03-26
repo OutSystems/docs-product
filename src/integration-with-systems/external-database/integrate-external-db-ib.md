@@ -26,7 +26,7 @@ You can use Integration Builder to integrate your apps with the following extern
 
 <div class="info" markdown="1">
 
-For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems in the system requirements article](../../setup-maintain/setup/system-requirements.md).
+For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems in the system requirements article](../../setup-infra-platform/setup/system-requirements.md).
 
 </div>
 
@@ -42,7 +42,7 @@ Once you establish a database connection, you can develop apps in Service Studio
 
 * All infrastructure servers must be able to connect to the external database.
 
-* If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup-maintain/setup/network-requirements.md#integration-builder).
+* If you use the [Internal Network configuration](../../security/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup-infra-platform/setup/network-requirements.md#integration-builder).
 
 ## Known limitations
 
@@ -116,7 +116,7 @@ You can connect an integration in the following ways:
 
 * [**Create a new connection**](#option-2): If you need a new database connection and you meet one of the following scenarios, you can **create a connection**:
 
-    * You're integrating with a relational database and you have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
+    * You're integrating with a relational database and you have the required [permissions](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md).
 
     * You're integrating with MongoDB.
 
@@ -136,7 +136,7 @@ If the database connection you want to use already exists, do the following:
 
 If you meet one of the following scenarios, you can **create a connection**:
 
-* You're integrating with a relational database and you have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
+* You're integrating with a relational database and you have the required [permissions](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md).
 
 * You're integrating with MongoDB.
 

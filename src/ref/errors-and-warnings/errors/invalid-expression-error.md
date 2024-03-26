@@ -22,7 +22,7 @@ Your are trying to divide by 0 in a numeric expression, and this is not possible
 
 **Recommended action**
 
-Update the [expression](../../../develop/logic/expression-editor.md) to remove the [division](../../logic/expressions/operators.md) by 0.
+Update the [expression](../../../building-apps/logic/expression-editor.md) to remove the [division](../../logic/expressions/operators.md) by 0.
 
 ## Non-terminated 'Text' literal
   
@@ -32,7 +32,7 @@ You have not used the correct format for the termination of a Text literal in yo
 
 **Recommended action**
 
-Update the [Text literal](../../logic/expressions/operands.md) to the correct termination format in your [expression](../../../develop/logic/expression-editor.md). For example, wrap the literal in quotation marks ("), such as `"Amazing text"`.
+Update the [Text literal](../../logic/expressions/operands.md) to the correct termination format in your [expression](../../../building-apps/logic/expression-editor.md). For example, wrap the literal in quotation marks ("), such as `"Amazing text"`.
 
 ## Can't identify &lt;element> element in expression.
 
@@ -44,7 +44,7 @@ Service Studio cannot identify the operand element in the expression.
 
 Depending on the type of [operand element](../../logic/expressions/operands.md), do one of the following:
 
-* If you are referencing an element, make sure that the element is in the scope of the current expression and that you entered the element correctly. In the [Expression Editor](../../../develop/logic/expression-editor.md), use the Scope Tree to insert the element.
+* If you are referencing an element, make sure that the element is in the scope of the current expression and that you entered the element correctly. In the [Expression Editor](../../../building-apps/logic/expression-editor.md), use the Scope Tree to insert the element.
 
     ![Screenshot showing an example of an invalid expression error in Service Studio](images/invalid-expression-01.png "Invalid Expression Error Example")
 
@@ -99,7 +99,7 @@ The syntax of the expression is not correct. For example, if you end a function 
 
 **Recommended action**
 
-Check your [expression](../../../develop/logic/expression-editor.md) to validate its [operands](../../logic/expressions/operands.md), [operators](../../logic/expressions/operators.md), and [variables](../../../ref/data/handling-data/variables/intro.md).
+Check your [expression](../../../building-apps/logic/expression-editor.md) to validate its [operands](../../logic/expressions/operands.md), [operators](../../logic/expressions/operators.md), and [variables](../../../ref/data/handling-data/variables/intro.md).
 
 ## Parameter &lt;parameter> in function &lt;function> is mandatory and must be specified
 
@@ -141,7 +141,7 @@ The syntax of the expression is correct, but it has an argument for a parameter 
 
 Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.md) or the User function definition to validate its arguments. 
 
-If you deleted a [parameter](../../../ref/lang/auto/class-input-parameter.md), update the [expression](../../../develop/logic/expression-editor.md) to remove the errors. Right-click the error line to see the fixing suggestions OutSystems provides you for this error:
+If you deleted a [parameter](../../../ref/lang/auto/class-input-parameter.md), update the [expression](../../../building-apps/logic/expression-editor.md) to remove the errors. Right-click the error line to see the fixing suggestions OutSystems provides you for this error:
     
 * `Create <function> Input Parameter`  
     Creates the argument in the function.

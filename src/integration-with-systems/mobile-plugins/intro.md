@@ -57,8 +57,8 @@ Plugin | Description | Supported in PWA
 When working with the plugins:
 
 * Use the plugin that supports iOS or Android, depending on your target platform. The app generation fails if you use a plugin that isn't supported on the target platform. For more information on app generation errors check our [list of MABS errors](<https://success.outsystems.com/support/errors/mabs_errors/>).
-* Each time you add, remove, or modify the plugin in an app, OutSystems [rebuilds the native shell](<../../deliver-mobile/mobile-app-update-scenarios.md#Situations_When_the_User_Must_Install_a_New_Build>) which you then have to distribute to the end users for installation.
-* [Include the plugin license](<../../deliver-mobile/compliance-with-third-party-licenses.md#Include_the_Third_Party_Licenses_Used_by_Plug-ins_or_Components>) in your app to respect the license agreements of that plugin. These license agreements are usually placed in the About page of the app that uses them.
+* Each time you add, remove, or modify the plugin in an app, OutSystems [rebuilds the native shell](<../../deploying-apps/mobile-app-packaging-delivery/mobile-app-update-scenarios.md#Situations_When_the_User_Must_Install_a_New_Build>) which you then have to distribute to the end users for installation.
+* [Include the plugin license](<../../deploying-apps/mobile-app-packaging-delivery/compliance-with-third-party-licenses.md#Include_the_Third_Party_Licenses_Used_by_Plug-ins_or_Components>) in your app to respect the license agreements of that plugin. These license agreements are usually placed in the About page of the app that uses them.
 
 ## Adding plugins
 
@@ -119,4 +119,4 @@ OS Security    | Provides the APIs for the security layer.
 Mobile AppFeedback | Enables the user to invoke App Feedback for submitting feedback about the app.
 NetworkStatus  | Lets your app know when the device is online/offline and informs of the type of network available (for example, WiFi, 3G, 4G).
 
-While you may see the names of these built-in plugins in the [native mobile shell logs](<../../managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md>) they're not user-configurable. The only exception is [Mobile AppFeedback](<../../managing-the-applications-lifecycle/app-feedback/user-feedback-enable.md>), which is present in the native shell if you enable the App Feedback feature.
+While you may see the names of these built-in plugins in the [native mobile shell logs](<../../monitor-and-troubleshoot/monitoring-an-environment.md>) they're not user-configurable. The only exception is [Mobile AppFeedback](<../../monitor-and-troubleshoot/app-feedback/user-feedback-enable.md>), which is present in the native shell if you enable the App Feedback feature.

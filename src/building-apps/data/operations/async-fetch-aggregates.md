@@ -25,7 +25,7 @@ This is often called a master-detail pattern, and you can implement it by using 
 Before we move on to the steps of implementing the master-detail pattern and showing how the asynchronous data fetching works, let's prepare our app:
 
 * Create a new Reactive Web App. You can check the instructions in the article [Create a Reactive Web App](../../../getting-started/create-reactive-web.md).
-* In the newly created Reactive App, check if you have **OutSystemsSampleDataDB** under **Data** > **Entities** > **Database**. If not, follow the steps in [Referencing sample data in apps](../../ui/screen-templates-create/sample-data.md#referencing-sample-data-in-apps), as we need it to for the example in this article.
+* In the newly created Reactive App, check if you have **OutSystemsSampleDataDB** under **Data** > **Entities** > **Database**. If not, follow the steps in [Referencing sample data in apps](../../ui/screen-templates/sample-data.md#referencing-sample-data-in-apps), as we need it to for the example in this article.
 
 ## Overview
 

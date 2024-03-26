@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:4
 
 An operand tells the platform which data to use to manipulate an expression. For example, in the expression `MyValue + 1`, `MyValue` and `1` are the operands. 
 
-Use the [expression editor](../../../develop/logic/expression-editor.md) to see which operands are available in the current scope. The expression editor checks what variables, parameters, functions, and other values, you can use for an operation in, for example, a screen or an action.
+Use the [expression editor](../../../building-apps/logic/expression-editor.md) to see which operands are available in the current scope. The expression editor checks what variables, parameters, functions, and other values, you can use for an operation in, for example, a screen or an action.
 
 All operands always have a [data type](../../data/data-types/available-data-types.md).
 

@@ -6,7 +6,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A2&mode=design&t=98kL4vRdGIKpuwQm-1
 ---
-# Deploy Applications
+# Deploying apps
 
 Once you have completed development, it's time to begin the deployment process. Along with information about version tagging and preparing a deployment plan, this section also covers some special cases, such as refactoring applications, repairing deployed applications, and applying a hotfix.
 

@@ -34,7 +34,7 @@ Errors
     By clicking the **Detail** link of the log, it is possible to analyze the execution stack trace.
 
 General
-:   This screen displays system and application activity, either implicitly like slow query warnings, or explicitly by invoking the System Action [LogMessage](../../ref/apis/auto/system-actions.final.md#LogMessage) in the applications. This screen also lists the deployment steps when an application is being deployed, as well as [native app shell log](#native-app-shell-logging) entries with log type `General`.
+:   This screen displays system and application activity, either implicitly like slow query warnings, or explicitly by invoking the System Action [LogMessage](../ref/apis/auto/system-actions.final.md#LogMessage) in the applications. This screen also lists the deployment steps when an application is being deployed, as well as [native app shell log](#native-app-shell-logging) entries with log type `General`.
 
     It allows you to understand the probable causes of slowness in your applications.
 
@@ -53,7 +53,7 @@ Screen Requests
 Service Actions
 :   This screen displays the time the server took to execute a Service Action.
 
-    The amount of information in each Service Actions log depends on the [Logging Level set for the Module where that Service Action lives](../../develop/troubleshoot/troubleshoot-service.md#how-to-change-the-logging-detail-level-for-service-action). The following image shows the details of an error log entry, available at `Troubleshoot` and `Full` Logging Levels.
+    The amount of information in each Service Actions log depends on the [Logging Level set for the Module where that Service Action lives](../monitor-and-troubleshoot/troubleshoot-service.md#how-to-change-the-logging-detail-level-for-service-action). The following image shows the details of an error log entry, available at `Troubleshoot` and `Full` Logging Levels.
 
     ![Detailed view of an error log entry in the Service Actions screen showing the error specifics.](images/log-service-error.png "Service Actions Error Log Details")
 
@@ -91,13 +91,13 @@ Environment Health
 
 
 Security
-:   Displays the IP addresses that were [blocked by the Platform Server](../secure-the-applications/protection-against-brute-force-attacks.md) due to multiple failed login attempts. You can unblock these IP addresses.
+:   Displays the IP addresses that were [blocked by the Platform Server](../security/protection-against-brute-force-attacks.md) due to multiple failed login attempts. You can unblock these IP addresses.
 
 ## Native App Shell Logging
 
 OutSystems allows you to have full visibility of all the errors that may be occurring in the devices of end users of your **mobile apps**. This capability allows you to understand and act fast on any problems detected in your mobile apps.
 
-The native app shell logs are displayed in the **Errors** and the **General** screens of the environment’s **Monitoring** section in Service Center console. Each log entry contains the [OutSystems native plugin](../../extensibility-and-integration/mobile-plugins/intro.md) that triggered the log message in the "Module" field, while the "Stack" field displays the stack trace of all native components used until reaching the point that triggered the log message.
+The native app shell logs are displayed in the **Errors** and the **General** screens of the environment’s **Monitoring** section in Service Center console. Each log entry contains the [OutSystems native plugin](../integration-with-systems/mobile-plugins/intro.md) that triggered the log message in the "Module" field, while the "Stack" field displays the stack trace of all native components used until reaching the point that triggered the log message.
 
 Native app shell logs contain the following device information:
 

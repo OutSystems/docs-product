@@ -18,7 +18,7 @@ In this example the eCommerce and Customer Portal apps are developed by two diff
 
 Each team leader adds their application to the deployment plan, but only the operations team has permissions to deploy applications to Quality Assurance.
 
-To learn how to set up the permissions in your teams to comply with your deployment process, check [Understand the Permission Model for IT Users](../manage-it-teams/about-permission-levels.md).
+To learn how to set up the permissions in your teams to comply with your deployment process, check [Understand the Permission Model for IT Users](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md).
 
 ## Create a Deployment Plan
 

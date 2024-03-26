@@ -17,9 +17,9 @@ To set up your environment with your company domain, follow these steps:
 
 <div class="info" markdown="1">
 
-Setting up a different SSL domain changes the endpoint URL of the web services exposed by the environment to include the new domain. This change means that consumer apps must use the new endpoint URLs. OutSystems applications consuming your [REST APIs](../../../extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md) or [SOAP Web Services](../../../extensibility-and-integration/soap/consume/configure-runtime.md) can configure the new endpoint URLs at runtime in Service Center.
+Setting up a different SSL domain changes the endpoint URL of the web services exposed by the environment to include the new domain. This change means that consumer apps must use the new endpoint URLs. OutSystems applications consuming your [REST APIs](../../../integration-with-systems/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md) or [SOAP Web Services](../../../integration-with-systems/soap/consume/configure-runtime.md) can configure the new endpoint URLs at runtime in Service Center.
 
-To update the new SSL domain name in a mobile application, you must regenerate the app and then distribute the updated version to end users, allowing them to download and install the new version. For more information, refer to [Customizing the mobile app domain name](../../../deliver-mobile/generate-distribute-mobile-app/intro.md#customizing-the-mobile-app-domain-name--customizing-the-mobile-app-domain-name).
+To update the new SSL domain name in a mobile application, you must regenerate the app and then distribute the updated version to end users, allowing them to download and install the new version. For more information, refer to [Customizing the mobile app domain name](../../../deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/intro.md#customizing-the-mobile-app-domain-name--customizing-the-mobile-app-domain-name).
 
 </div>
 
@@ -207,7 +207,7 @@ An example :
 
 * You should never create on your DNS an A record pointing to an OutSystems Cloud server's IP address.
 
-* If you have enabled [secure endpoints in LifeTime](../../../managing-the-applications-lifecycle/secure-the-applications/host-header-protection.md) make sure that they're adjusted to your DNS configurations.
+* If you have enabled [secure endpoints in LifeTime](../../../security/host-header-protection.md) make sure that they're adjusted to your DNS configurations.
 
 </div>
 

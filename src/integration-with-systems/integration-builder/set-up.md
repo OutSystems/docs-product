@@ -14,7 +14,7 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
 ## Prerequisites { #prerequisites }
 
-* The [IT user](../../managing-the-applications-lifecycle/manage-it-teams/intro.md) you use to log in to Integration Builder must have the **Change and Deploy Applications** permission level and the **Create Applications** specific permission for the development environment. Check [Understanding the permission model for IT users](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) for more information.
+* The [IT user](../../manage-platform-app-lifecycle/manage-it-teams/intro.md) you use to log in to Integration Builder must have the **Change and Deploy Applications** permission level and the **Create Applications** specific permission for the development environment. Check [Understanding the permission model for IT users](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md) for more information.
 
 * Use the latest version of any of the following desktop browsers: Edge, Firefox, Google Chrome, or Safari.
 
@@ -24,7 +24,7 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
     * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
 
-    * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. The Integration Builder will use the environment's public DNS hostname to communicate. Check [Integration Builder network requirements](../../setup-maintain/setup/network-requirements.md#integration-builder) for detailed information.
+    * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. The Integration Builder will use the environment's public DNS hostname to communicate. Check [Integration Builder network requirements](../../setup-infra-platform/setup/network-requirements.md#integration-builder) for detailed information.
 
 <div class="info" markdown="1">
 

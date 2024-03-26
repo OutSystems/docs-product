@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 # How to set up Workflow Builder
 
-The goal of this document is to guide [IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md) through the [Workflow Builder](http://workflowbuilder.outsystems.com/) installation process. 
+The goal of this document is to guide [IT users](../../../manage-platform-app-lifecycle/manage-it-teams/intro.md) through the [Workflow Builder](http://workflowbuilder.outsystems.com/) installation process. 
 
 ## Prerequisites { #prerequisites }
 
@@ -22,11 +22,11 @@ To use Workflow Builder, make sure you meet the following prerequisites:
 
 * Your development environment must use Platform Server 11.7.2 (January 2020) or later to run Workflow Builder. To allow your users to reuse OutSystems Entities from your environment, the minimum version of Platform Server is 11.9 (July 2020). Refer to the [release notes](https://success.outsystems.com/Support/Release_Notes/Workflow_Builder) for more information.
 
-* Ensure your development environment allows inbound traffic from `https://workflowbuilder.outsystems.com` in port **443** to communicate with Workflow Builder. The Workflow Builder will use the environment's public DNS hostname to communicate. Refer to the [Workflow Builder network requirements](../../../setup-maintain/setup/network-requirements.md#workflow-builder) for detailed information.
+* Ensure your development environment allows inbound traffic from `https://workflowbuilder.outsystems.com` in port **443** to communicate with Workflow Builder. The Workflow Builder will use the environment's public DNS hostname to communicate. Refer to the [Workflow Builder network requirements](../../../setup-infra-platform/setup/network-requirements.md#workflow-builder) for detailed information.
 
 <div class="info" markdown="1">
 
-If your infrastructure is on OutSystems Cloud and you didn't [configure an internal network for the environment](../../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you already meet this prerequisite.
+If your infrastructure is on OutSystems Cloud and you didn't [configure an internal network for the environment](../../../security/configure-internal-network.md), you already meet this prerequisite.
 
 </div>
 
@@ -45,7 +45,7 @@ You can access Workflow Builder with the latest versions of the following **desk
 
 ## Log in for the first time
 
-Before logging in for the first time, make sure you have IT user accounts for your users in your OutSystems infrastructure. [Learn how to create IT users](../../../managing-the-applications-lifecycle/manage-it-teams/create-an-it-user.md) in OutSystems.
+Before logging in for the first time, make sure you have IT user accounts for your users in your OutSystems infrastructure. [Learn how to create IT users](../../../manage-platform-app-lifecycle/manage-it-teams/create-an-it-user.md) in OutSystems.
 
 When you log in to [Workflow Builder](http://workflowbuilder.outsystems.com/) for the first time you enter the following welcome screen:
 

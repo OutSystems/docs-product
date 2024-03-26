@@ -32,7 +32,7 @@ To expose a SOAP Web Service, do the following:
 When you publish your module, the following happens:
 
 * The actions of exposed SOAP Web Services are translated into methods in the WSDL, with the same name and description.
-* The data types used by these actions are [mapped into XML data types](<../../../ref/extensibility-and-integration/soap/exposed-soap/mapping-outsystems-to-xml.md>) in the WSDL.
+* The data types used by these actions are [mapped into XML data types](<../../../ref/integration-with-systems/soap/exposed-soap/mapping-outsystems-to-xml.md>) in the WSDL.
 
 Also:
 

@@ -50,7 +50,7 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
 
     ![Adding user avatar and text to the Chat Message widget placeholders](images/chatmessage-4-ss.png "Adding Content to Chat Message")
 
-    Alternatively, you can use, for example, a List to display a Chat Message for each message record on an entity. You can also use a [form](../../../../../develop/ui/forms/form-use.md) to allow users enter their messages. By using the relevant expressions and logic, once the user sends their message, refresh the list of messages so it appears as a conversational post.
+    Alternatively, you can use, for example, a List to display a Chat Message for each message record on an entity. You can also use a [form](../../../forms/form-use.md) to allow users enter their messages. By using the relevant expressions and logic, once the user sends their message, refresh the list of messages so it appears as a conversational post.
 
 1. You can customize the Chat Message's look and feel by setting the (optional) properties on the **Properties** tab.
 

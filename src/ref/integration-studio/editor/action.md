@@ -32,7 +32,7 @@ You can change the properties of the action, at any time. Simply double-click in
 
 ## Import Details
 
-This button is enabled when this action was [imported from a .NET assembly](<../../../extensibility-and-integration/integration-studio/managing-extensions/net-assembly-import-action.md>) and displays a report where you can check the original .NET signature and the corresponding action definition. The following information is displayed:
+This button is enabled when this action was [imported from a .NET assembly](<../../../integration-with-systems/integration-studio/managing-extensions/net-assembly-import-action.md>) and displays a report where you can check the original .NET signature and the corresponding action definition. The following information is displayed:
 
 * **Action**: Name of the action with the following syntax:
 

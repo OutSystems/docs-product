@@ -8,7 +8,7 @@ figma:
 
 # Structure Properties
 
-The next table presents the properties of the [structure](<../../../extensibility-and-integration/integration-studio/managing-extensions/structure-define.md>) element.  
+The next table presents the properties of the [structure](<../../../integration-with-systems/integration-studio/managing-extensions/structure-define.md>) element.  
 
 |Property|Description|Optionality|Default value|Obs.|
 |--- |--- |--- |--- |--- |

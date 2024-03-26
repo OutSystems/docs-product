@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 # How to set up the end users hierarchy
 
-The goal of this document is to guide [IT users](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) through the setup of the end users hierarchy in [Workflow Builder](http://workflowbuilder.outsystems.com/).
+The goal of this document is to guide [IT users](../../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md) through the setup of the end users hierarchy in [Workflow Builder](http://workflowbuilder.outsystems.com/).
 
 <div class="info" markdown="1">
 
@@ -18,7 +18,7 @@ You need to be an [Workflow Builder administrator](how-works.md#workflow-builder
 
 </div>
 
-When building the workflow app, the Workflow Builder users can assign tasks in the workflow to specific roles. For example, one employee acting as a requester, and a manager acting as an approver. They have to inform you about the roles they created so that you could create them hierarchically in [Users](../../security/end-user-manage/accessing-users.md).
+When building the workflow app, the Workflow Builder users can assign tasks in the workflow to specific roles. For example, one employee acting as a requester, and a manager acting as an approver. They have to inform you about the roles they created so that you could create them hierarchically in [Users](../../../user-management/end-user-manage/accessing-users.md).
 
 Workflow Builder generates for each app a set of groups, roles, and sample users (in the development environment only) that you need to use for the user and access management. The roles and groups generated are associated with each application and have the following structure:
 

@@ -22,7 +22,7 @@ You can use the User Initials UI Pattern to display a user’s initials or their
 
 **How to use the User Initials UI Pattern**
 
-The User Initials UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../../develop/logic/action-web.md).
+The User Initials UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../logic/action-web.md).
 
 The following example demonstrates how you can display the initials of the registered users on your platform.
 

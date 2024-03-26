@@ -30,7 +30,7 @@ All the communication between the app and the Platform Server is done through [s
 
 ## HTTPS security in Traditional Web Apps
 
-OutSystems provides developers with the ability of deciding at design time the HTTP security used in Traditional Web Apps. They can do it by [defining which pages and integrations](<../../develop/security/secure-http-requests.md>) are available over HTTP and HTTPS.
+OutSystems provides developers with the ability of deciding at design time the HTTP security used in Traditional Web Apps. They can do it by [defining which pages and integrations](<secure-http-requests.md>) are available over HTTP and HTTPS.
 
 IT Managers or Administrators can override and enforce the HTTPS security of Traditional Web Apps that are installed and running. They can do it for a **whole environment**, which affects all applications running there, or **application by application**.
 

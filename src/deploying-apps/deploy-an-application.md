@@ -78,8 +78,8 @@ When the deployment finishes, both applications have the same tagged version in 
 
 <div class="info" markdown="1">
 
-If you're deploying a mobile app that is already [configured to generate the mobile app package](<../../deliver-mobile/generate-distribute-mobile-app/intro.md>), be aware that some changes you do in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
-[Check here](../../deliver-mobile/mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build) all the situations that require the user to install a new application package.
+If you're deploying a mobile app that is already [configured to generate the mobile app package](<mobile-app-packaging-delivery/generate-distribute-mobile-app/intro.md>), be aware that some changes you do in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
+[Check here](mobile-app-packaging-delivery/mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build) all the situations that require the user to install a new application package.
 
 </div>
 

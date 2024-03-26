@@ -147,5 +147,5 @@ To create and execute a new deployment in parallel with other deployment plans t
 
     **Note**: This example assumes that there are other deployment plans being executed against this target environment simultaneously. 
 
-1. [Edit and execute the deployment.](../deploy-applications/plan-a-deployment-for-the-operations-team.md#edit-a-deployment-plan) 
+1. [Edit and execute the deployment.](plan-a-deployment-for-the-operations-team.md#edit-a-deployment-plan) 
 

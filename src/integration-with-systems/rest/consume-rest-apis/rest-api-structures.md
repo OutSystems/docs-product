@@ -16,7 +16,7 @@ When you consume REST API methods in your module, OutSystems automatically creat
 * The method name 
 * If it will hold a Request or a Response
 
-The data type of each input or output parameter is [mapped into an OutSystems data type](<../../../ref/extensibility-and-integration/rest-apis/consumed-rest-api/mapping.md>).
+The data type of each input or output parameter is [mapped into an OutSystems data type](<../../../ref/integration-with-systems/rest-apis/consumed-rest-api/mapping.md>).
 
 For example, consider the following consumed REST API Method from Twitter:
     

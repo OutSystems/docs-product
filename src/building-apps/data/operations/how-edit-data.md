@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 Learn how to add a record or row, remove a record or row, and change an attribute or cell in Service Studio.
 
-To understand how editing data on Service Studio works and the prerequisites check the [edit data while developing article](intro.md).
+To understand how editing data on Service Studio works and the prerequisites check the [edit data while developing article](./edit-data.md).
 
 ## Add a record or row { #add }
 

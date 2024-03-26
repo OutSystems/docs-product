@@ -27,7 +27,7 @@ To export the translatable text from your module follow these steps in Service S
 2. In the menu select one of the options to export in the format you want:
 
     * **To Excel**. Exports all translatable text to a single Excel file.
-    * **To .resX (.NET resource format)**. Exports all translatable text to the .resX files ([not available in the cross-platform Service Studio](../../../setup-maintain/setup/limitations.md)).
+    * **To .resX (.NET resource format)**. Exports all translatable text to the .resX files ([not available in the cross-platform Service Studio](../../../setup-infra-platform/setup/limitations.md)).
 
 3. Select the export location and click **OK**.
 

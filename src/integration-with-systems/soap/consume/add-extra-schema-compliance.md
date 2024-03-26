@@ -47,7 +47,7 @@ To enable these validations, follow these steps:
 
     ![Error message displayed when a SOAP response message is non-compliant with the service definition](images/compliance-error.png "SOAP Compliance Error Message")
 
-    If you want another message to be displayed to the end-user, you may choose to catch this thrown exception with an [Exception Handler](../../../develop/logic/exceptions/intro.md) on Service Studio.
+    If you want another message to be displayed to the end-user, you may choose to catch this thrown exception with an [Exception Handler](../../../building-apps/handling-exceptions/intro.md) on Service Studio.
 
 1. After you change the settings using **Factory Configuration**, make sure you apply new configurations to your environment.
 

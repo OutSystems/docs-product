@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 
 # Change the HTTP Status Code of a REST API
 
-OutSystems uses [a set of built-in HTTP Status Codes](<../../../ref/extensibility-and-integration/rest-apis/exposed-rest-api/built-in-http-status-codes.md>) in the Responses of your exposed REST API Methods.
+OutSystems uses [a set of built-in HTTP Status Codes](<../../../ref/integration-with-systems/rest-apis/exposed-rest-api/built-in-http-status-codes.md>) in the Responses of your exposed REST API Methods.
 
 However, there are situations where you might want to send a different HTTP Status Code. For example, when a record is successfully created, it's common to use the "201 Created" Status Code.
 

@@ -203,7 +203,7 @@ After importing the root and intermediate certificates, you need to import the s
 
 Once you've installed the certificate, you're able to access your OutSystems applications using HTTPS.
 
-If you can force HTTPS redirection of all accesses via HTTP. You can control this behavior at Flow or Screen level, but also [for the whole environment](../../managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md), which applies to all apps in the environment, or for specific apps.
+If you can force HTTPS redirection of all accesses via HTTP. You can control this behavior at Flow or Screen level, but also [for the whole environment](../../security/enforce-https-security.md), which applies to all apps in the environment, or for specific apps.
 
 <div class="info" markdown="1">
 

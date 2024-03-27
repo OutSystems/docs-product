@@ -82,13 +82,13 @@ In the following upgrade scenarios, you must **publish all your applications** a
 
 Make sure you involve your teams (you will need your development and test teams) and plan ahead to align the upgrade with your release cycle.
 
-![Icon indicating incorrect timing for an upgrade sprint overlapping with a development sprint](images/wrong.png "Incorrect Upgrade Timing") An upgrade sprint should never break a development sprint!
+An upgrade sprint should never break a development sprint!
 
-![Diagram showing flawed sprint planning where an upgrade sprint disrupts the flow of development sprints](images/sprint-planning-wrong.png "Flawed Sprint Planning with Upgrade")
+![Diagram showing flawed sprint planning where an upgrade sprint disrupts the flow of development sprints](images/sprint-planning-wrong-diag.png "Flawed Sprint Planning with Upgrade")
 
-![Icon indicating correct timing for an upgrade sprint between development sprints](images/correct.png "Correct Upgrade Timing") An upgrade should always happen between development sprints (if you have teams at a different speed, make the necessary adjustments).
+An upgrade should always happen between development sprints (if you have teams at a different speed, make the necessary adjustments).
 
-![Diagram showing proper sprint planning with an upgrade sprint scheduled between development sprints](images/sprint-planning-correct.png "Proper Sprint Planning with Upgrade")
+![Diagram showing proper sprint planning with an upgrade sprint scheduled between development sprints](images/sprint-planning-correct-diag.png "Proper Sprint Planning with Upgrade")
 
 Validate the best time to upgrade the Production environment and plan the remaining environment upgrades from there.
 
@@ -102,7 +102,7 @@ You always have the freedom to choose the order that's most convenient for you. 
 
 For pre-production, you should create a custom checklist containing all the requirements and steps to execute in production, following a [downtime](#downtime) or [zero-downtime](#zero-downtime) approach.
 
-![Flowchart illustrating the recommended order of upgrading environments following the staging lifecycle](images/infrastructure-staging-lifecycle.png "Infrastructure Staging Lifecycle")
+![Flowchart illustrating the recommended order of upgrading environments following the staging lifecycle](images/infra-staging-lifecycle-diag.png "Infrastructure Staging Lifecycle")
 
 #### Go live strategies { #go-live }
 
@@ -112,7 +112,7 @@ When upgrading the Platform Server you should consider that the environment is l
 
 A Downtime approach is the safest way to perform an upgrade and advised when there are no business requirements for zero-downtime. By stopping the Production environment and preventing end-users access, the Upgrade process consistency is guaranteed, and a rollback can happen with no data loss.
 
-![Illustration of the downtime upgrade process where the production environment is stopped during the upgrade](images/downtime-upgrade.png "Downtime Upgrade Process")
+![Illustration of the downtime upgrade process where the production environment is stopped during the upgrade](images/downtime-upgrade-diag.png "Downtime Upgrade Process")
 
 ##### Zero-downtime upgrade { #zero-downtime }
 
@@ -126,7 +126,7 @@ Choosing to do a Zero-Downtime Upgrade means that if you need to rollback, you w
 1. Upgrade the remaining Front-End servers.
 1. Finally, reconnect all servers to the Load Balancer.
 
-![Illustration of the zero-downtime upgrade process with multiple front-end servers being upgraded in phases](images/no-downtime-upgrade.png "Zero-Downtime Upgrade Process")
+![Illustration of the zero-downtime upgrade process with multiple front-end servers being upgraded in phases](images/no-downtime-upgrade-diag.png "Zero-Downtime Upgrade Process")
 
 ## Execution { #execution }
 
@@ -244,7 +244,6 @@ For **mobile apps**, upon a Platform Server version upgrade in your **Production
 <div class="warning" markdown="1">
 
 Starting from Platform Server 11.19.0, a new [Deploy All](upgrade-platform-module-deploy.md) feature is available.
-
 
 </div>
 

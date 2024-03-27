@@ -14,6 +14,13 @@ This API is in technical preview. Customers are free to use it without costs as 
 
 </div>
 
+<div class="warning" markdown="1">
+
+This feature is currently available for use and packaging and pricing details may be subject to updates in the future.
+
+</div>
+
+
 The security of an app is an important aspect of an application development cycle. A common security best practice recommends that the code be analyzed statically (SAST).
 
 OutSystems provides an API that enables you to download the generated code for the current running apps. For mobile applications, the source code package returned by the API contains the server-side code and the native code. With this API, you can request the source code of an app and run-it against your in-house SAST tools.

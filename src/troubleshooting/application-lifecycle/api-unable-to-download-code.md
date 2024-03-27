@@ -11,7 +11,7 @@ platform-version: o11
 
 If you are getting an error downloading the source code package of an application from the steps mentioned in [this article](https://success.outsystems.com/documentation/11/reference/outsystems_apis/lifetime_api_v2/lifetime_api_examples/get_source_code_of_an_application/), you can troubleshoot a potential issue by following the steps below. 
 
-## 1 - Check if the user has Open and Debug over the application
+## Step 1: Check if the user has Open and Debug over the application
 
 To validate this requirement, follow these steps:
 
@@ -21,7 +21,7 @@ To validate this requirement, follow these steps:
 
 The wrong permissions level returns a message: `You need permission to access the environment {EnvironmentKey} or the app {ApplicationKey}.`
 
-## 2 - Check if the environment key exists
+## Step 2: Check if the environment key exists
 
 Call the API method that returns all the environments registered on your infrastructure.
 Request: `GET /lifetimeapi/rest/v2/environments/`
@@ -51,11 +51,11 @@ Response body:
 
 Check that the environment key (**Key**) is correctly passed to the API call.
 
-If the environment key does not exist the API will return a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
+If the environment key does not exist the API return a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
 
-## 3 - Check if the application key exists
+## Step 3: Check if the application key exists
 
-Call the API method that returns all the applications available on your infrastructure.
+Call the API that returns all the applications available on your infrastructure.
 
 Request: `GET /lifetimeapi/rest/v2/applications/`
 
@@ -80,13 +80,13 @@ Response body:
 ]
 ```
 
-Check that the application key (**Key**) is correctly passed to the API call.
-If the application key does not exist the API will return a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
+Check that the application key (**Key**) is passed correctly to the API call.
+If the application key does not exist the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
 
-## 4 - Package is bigger than the size limit
+## Step 4: Check if the package is bigger than the size limit
 
-If you see an Error message like “The resulting source code package has X Mb. The maximum size allowed is 150 Mb. Please refer to documentation on how to overcome this error.”, this means that the resulting source code archive is bigger than 150Mb and because of scalability and performance reasons the API will not store and send such bigger files.
+If you see an Error message such as **The resulting source code package has X Mb. The maximum size allowed is 150 Mb. Please refer to documentation on how to overcome this error.**, this means that the resulting source code archive is bigger than 150Mb. In such scenarios, because of scalability and performance reasons the API cannot store and send such big files.
 
-As a possible workaround the customer can split the application they want to run the SAST in smaller ones and then call the API for these smaller applications.
+As a workaround, you can split the application to run the SAST in smaller apps and then call the API for these small applications.
 
 If the above validations didn't help you solve the issue and you need further assistance, [open a support case](https://www.outsystems.com/SupportPortal/CaseOpen/) to get help from OutSystems Support.

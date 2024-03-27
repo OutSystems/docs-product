@@ -10,12 +10,6 @@ platform-version: o11
 
 <div class="warning" markdown="1">
 
-This API is in technical preview. Customers are free to use it without costs as is. Changes to the API may occur, including pricing details that may be defined in the future.
-
-</div>
-
-<div class="warning" markdown="1">
-
 This feature is currently available for use and packaging and pricing details may be subject to updates in the future.
 
 </div>

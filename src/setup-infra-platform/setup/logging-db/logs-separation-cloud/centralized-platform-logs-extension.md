@@ -18,9 +18,10 @@ When querying data from the database, you build your queries based on the log pr
 
 To use the CentralizedPlatformLogs extension, make sure you meet the following requirements:
 
+* You have activated [log separation](intro.md).
 * You use Platform Server version 11.23.0 or higher.
-
 * You use Service Studio version 11.54.0 or higher.
+  
 
 ## Transition from using the PlatformLogs extension to the CentralizedPlatformLogs extension
 

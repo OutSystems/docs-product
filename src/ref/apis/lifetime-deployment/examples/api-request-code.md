@@ -56,8 +56,6 @@ To request the source code of an application, follow these steps:
 1. [Get the download link](#step-5-get-download-link) of the application source code package.
 1. Download the application source code package.
 
-Read the example API calls (requests and responses) below for each of the presented steps.
-
 ### Step 1: Get the environment key
 
 This step is optional and call the API only if you don't know the environment key. 

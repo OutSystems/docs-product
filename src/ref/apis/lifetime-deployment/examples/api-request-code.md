@@ -14,15 +14,15 @@ This API is in technical preview. Customers are free to use it without costs as 
 
 </div>
 
-For OutSystems customers security is an important aspect of an application development cycle. A common security best practice recommends that the code should be analyzed statically (SAST).
+The security of an app is an important aspect of an application development cycle. A common security best practice recommends that the code be analyzed statically (SAST).
 
-OutSystems platform provides an API that enables our customers to download the generated code for the current running apps. The source code package returned by the API contains the server-side code and the native code, if it’s a mobile application.
+OutSystems platform provides an API that enables you to download the generated code for the current running apps. The source code package returned by the API contains the server-side code and the native code, if it’s a mobile application.
 
-This will leverage the customers' ability to request the source code of an OutSystems application and run-it against one of the SAST tools they might use in-house.
+This enables you to request the source code of an OutSystems application and run-it against one of the in-house SAST tools.
 
 <div class = "info" markdown="1">
 
-The code shared in the API will be as much as possible the same as the one running on the server. For security and licensing reasons, some files with configurations, secrets and proprietary code will not be shared by the API.
+The code shared in the API are almost same as the one running on the server. For security and licensing reasons, some files with configurations, secrets and proprietary code are not shared by the API.
 
 </div>
 
@@ -34,16 +34,15 @@ The code in the package does not compile or is executable.
 
 <div class = "info" markdown="1">
 
-Extension code will not be available through the API.
+Extension code is not available through the API.
 
 </div>
 
 ## Prerequisites
 
-To download the source code of an app, ensure that you have the following:
+To download the source code of an app, ensure that the environment from where you want to get the source code has:
 
-* Environment from where you want to get the source code must comply with the following:
-    * Platform Server version 11.27.0 or higher
+* Platform Server version 11.27.0 or higher
 * LifeTime version 11.21.1 or higher
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
     * Service Account needs Open and Debug on the environment
@@ -52,8 +51,8 @@ To download the source code of an app, ensure that you have the following:
 
 To request the source code of an application, follow these steps:
 
-1. Get the **environment key** of the environment where you want to request the application source code (move ahead if you already have this information).
-1. Get the **application key** of the application you want to request the source code (move ahead if you already have this information).
+1. Get the **environment key** of the environment where you want to request the application source code (skip this step if you already have this information).
+1. Get the **application key** of the application you want to request the source code (skip this step if you already have this information).
 1. Get the **package key** of the application source code you want to request.
 1. Check the **status** of the application source code packaging you want to request.
 1. Once done, get the **download link** of the application source code package you want to request.
@@ -63,7 +62,7 @@ Read the example API calls (requests and responses) below for each of the presen
 
 ### 1 - Get the environment key
 
-We start by calling the API method that returns all the environments available on your infrastructure (only necessary if we don't know the environment key yet):
+First, call the API method that returns all the environments available on your infrastructure (only necessary if we don't know the environment key yet):
 
 Request: `GET /lifetimeapi/rest/v2/environments/`
 
@@ -91,13 +90,19 @@ Response body:
 ]
 ```
 
-Since we want to request the source code of an application in our environment of type "NonProduction", we chose the environment "Testing", we take note of its key so that we can use it in the upcoming API calls.
+In this request, the source code of an application is requested from the **Testing** environment. 
+
+<div class = "info" markdown="1">
+
+Note the environment key to use it in the upcoming API calls.
+
+</div>
 
 Example of an environment key: **849515f2-b4ff-4aca-a9d6-9407bea655f4**
 
 ### 2 - Get the application key
 
-Next, we call the API method that returns all the available applications in the infrastructure to get the application key. You can skip this step if you already have the application key. 
+Next, call the API method that returns all the available applications in the infrastructure to get the application key. You can skip this step if you already have the application key. 
 
 Request: `GET /lifetimeapi/rest/v2/applications/`
 
@@ -122,17 +127,23 @@ Response body:
 ]
 ```
 
-We want to request the application source code for the "EmployeeBackoffice" application. We take note of its key so that we can use it in the next API calls:
+In this request, you request the source code for **EmployeeBackoffice** application.  
+
+<div class = "info" markdown="1">
+
+Note the application key to use it in the upcoming API calls.
+
+</div>
 
 Example "EmployeeBackoffice" application key: **c9a7a82e-0eee-4a3d-8e22-2a19c69c766f**
 
 ### 3 - Get the package key
 
-We start by taking the API method "template" URL used to get the source code package key for an application on a given environment.
+Get the source code package key for an application on a given environment by the taking the API method "template" URL.
 
 `POST/environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess`
 
-We then change the `{EnvironmentKey}` and `{ApplicationKey}` placeholders to the correct values and perform the following request:
+Replace the `{EnvironmentKey}` and `{ApplicationKey}` with values retrieved and make a request:
 
 `POST /lifetimeapi/rest/v2/environments/849515f2-b4ff-4aca-a9d6-9407bea655f4/applications/c9a7a82e-0eee-4a3d-8e22-2a19c69c766f/sourcecodeaccess`
 
@@ -146,17 +157,23 @@ Response body:
 }
 ```
 
-The request for the platform to package the source code of the application "EmployeeBackoffice". We take note of the package key.
+In this request, you request the source code for **EmployeeBackoffice** application.  
+
+<div class = "info" markdown="1">
+
+Note the package key to use it in the upcoming API calls.
+
+</div>
 
 Example package key: **bc354abb-6691-41ee-9ed3-9454747e2d4d**
 
 ### 4 - Check status
 
-We start by taking the API method "template" URL used to get the status of the application source code packaging. Perform the following request:
+Get the status of the application source code packaging by taking the API method "template" URL.
 
 `GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/status`
 
-We then change the `{EnvironmentKey}`, `{ApplicationKey}` and `{PackageKey}` placeholders to the correct values and perform the following request:
+Replace the `{EnvironmentKey}`, `{ApplicationKey}`, and `{PackageKey}` with values retrieved and make a request: 
 
 `GET /lifetimeapi/rest/v2/environments/849515f2-b4ff-4aca-a9d6-9407bea655f4/applications/c9a7a82e-0eee-4a3d-8e22-2a19c69c766f/sourcecodeaccess/bc354abb-6691-41ee-9ed3-9454747e2d4d/status`
 
@@ -192,11 +209,11 @@ Example response body:
 
 ### 5 - Get download link
 
-Start by taking the API method "template" URL used to get the download link of the application source code package.
+Get the download link of the application source code package by taking the API method "template" URL.
 
 `GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/download`
 
-We then change the `{EnvironmentKey}`, `{ApplicationKey}` and `{PackageKey}` placeholders to the correct values and perform the following request:
+Replace the  `{EnvironmentKey}`, `{ApplicationKey}`, and `{PackageKey}` with values retrieved and make the following request:
 
 `GET /lifetimeapi/rest/v2/environments/849515f2-b4ff-4aca-a9d6-9407bea655f4/applications/c9a7a82e-0eee-4a3d-8e22-2a19c69c766f/sourcecodeaccess/bc354abb-6691-41ee-9ed3-9454747e2d4d/download`
 
@@ -212,18 +229,18 @@ The response contains the link to download the source code package of the applic
 
 ### 6 - Download package
 
-Use the URL obtained from the previous step and get the source code package of the application requested. The download link is a call to a Lifetime API. The authentication token is mandatory for the request. The API method "template" URL used to download the application source code package is:
+Use the URL obtained from [Use download link](#get-download-link) and get the source code package of the application. The download link is a call to a Lifetime API. The authentication token is mandatory for the request. The API method "template" URL used to download the application source code package is:
 
 `GET /lifetimeapi/rest/v2/downloads/{DownloadKey}`
 
-We then can change the `{DownloadKey}` with the value on the recieved URL or call the full value of the URL received from the previous step, performing the following request:
+Replace the `{DownloadKey}` with the value on the download URL or call the full URL received from the step [Use download link](#get-download-link).
 
 `GET /lifetimeapi/rest/v2/downloads/f4ee541b-5791-4997-a56d-360d80c24821`
 
-If you are unable to download source code of the application, refer to [this article](https://success.outsystems.com/support/troubleshooting/application_lifecycle/unable_to_download_the_source_code_of_an_application/). 
+If you are unable to download source code of the application, refer to [Unable to download the source code of an application article](https://success.outsystems.com/support/troubleshooting/application_lifecycle/unable_to_download_the_source_code_of_an_application). 
 
-## Reviewing results
+## Review results
 
-When reviewing static code analysis results, it's important to keep in mind that each static code analysis tool will report on findings without a proper context. These findings must be reviewed to detect false positives and experts in OutSystems development shall be consulted to help on understanding those findings in the proper context.
+When reviewing static code analysis results, you must note that each static code analysis tool can report findings without proper context. These findings must be reviewed to detect false positives. You can consult the experts in OutSystems development to help  understand these findings with proper context.
 
-Follow the [link](https://success.outsystems.com/support/security/static_application_security_testing/#review-results) for some examples of such findings and why they should be considered false positives.
+For more information about reviewing results and why certain finding should be considered false positives, refer to [Static application security testing](https://success.outsystems.com/support/security/static_application_security_testing/#review-results).

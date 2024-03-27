@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Handling exceptions
+# Analyze the Logs of Exceptions
 
 You can analyze the logs of the exceptions handled in your application in the management console of your OutSystems environment.
 

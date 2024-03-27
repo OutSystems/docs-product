@@ -9,7 +9,7 @@ platform-version: o11
 
 # Unable to download the source code of an application
 
-If you are getting an error downloading the source code package of an application from the steps mentioned in [this article](https://success.outsystems.com/documentation/11/reference/outsystems_apis/lifetime_api_v2/lifetime_api_examples/get_source_code_of_an_application/), you can troubleshoot a potential issue by following the steps below. 
+This articles explains how you can troubleshoot, if you are getting an error [downloading the source code package of an application](../../ref/apis/lifetime-deployment/examples/api-request-code.md).
 
 ## Step 1: Check if the user has Open and Debug over the application
 
@@ -51,7 +51,7 @@ Response body:
 
 Check that the environment key (**Key**) is correctly passed to the API call.
 
-If the environment key does not exist the API return a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
+If the environment key does not exist,the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
 
 ## Step 3: Check if the application key exists
 
@@ -81,7 +81,7 @@ Response body:
 ```
 
 Check that the application key (**Key**) is passed correctly to the API call.
-If the application key does not exist the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
+If the application key does not exist, the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
 
 ## Step 4: Check if the package is bigger than the size limit
 

@@ -17,6 +17,7 @@ Follow the procedure below to configure a separate database for log data and app
 * This procedure is **optional**;
 * Applications will only log data to the new log database after their configurations are re-applied;
 * Existing log data will no longer be accessible unless it is explicitly copied to the new database tables (check the [Optional Tasks](<#optional-tasks>) section).
+* Run the configuration tool on the deployment controller server for each environment. For changes to the database, execute the deployment controller once. For changes to local configurations on the server, export the configuration file for all servers, and run it on each server.
 
 ## SQL Server
 

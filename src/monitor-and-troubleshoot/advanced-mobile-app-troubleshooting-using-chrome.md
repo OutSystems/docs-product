@@ -45,7 +45,7 @@ You can troubleshoot your mobile app as soon as you publish it, checking its log
 1. Open the Chrome browser on the desktop (use the latest version).
 1. Open Chrome Developer Tools (for example, by pressing `F12`) and start debugging or troubleshooting. 
 
-Check the [Developer Tools JavaScript Debugging Reference](<https://developers.google.com/web/tools/chrome-devtools/javascript/reference>) from Google for more information on the debugging features provided by Chrome Developer Tools.
+Check the [Developer Tools JavaScript Debugging Reference](<https://developer.chrome.com/docs/devtools/javascript/reference>) from Google for more information on the debugging features provided by Chrome Developer Tools.
 
 To debug a client action you can hold down the `Ctrl` key while using the application to trigger that action; this automatically sets a breakpoint and holds execution at the start of any client action. Check below for other useful tips while using Chrome Developer Tools.
 
@@ -126,7 +126,7 @@ To connect your device to the desktop Chrome browser:
 
 You can now inspect and debug the contents of the WebView displaying your app in the device.
 
-Check the [Developer Tools JavaScript Debugging Reference](<https://developers.google.com/web/tools/chrome-devtools/javascript/reference>) from Google for more information on the debugging features provided by Chrome Developer Tools.
+Check the [Developer Tools JavaScript Debugging Reference](<https://developer.chrome.com/docs/devtools/javascript/reference>) from Google for more information on the debugging features provided by Chrome Developer Tools.
 
 ## Troubleshooting tips { #tips }
 

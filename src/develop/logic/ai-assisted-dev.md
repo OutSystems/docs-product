@@ -19,8 +19,7 @@ following best practices.
 Code Mentor suggestions appear in flow connectors when you click the AI radar,
 shown as a pulsing blue circle.
 
-![Artificial intelligence gives development suggestions for a low-code
-logic](images/ai-flow-service-studio-ss.gif)
+<iframe src="https://player.vimeo.com/video/926348913" width="750" height="635" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video illustrating Code Mentor suggestions within flow connectors.</iframe>
 
 <div class="info" markdown="1">
 
@@ -69,7 +68,7 @@ There are several ways to get suggestions:
 
 * Drag a connector from an existing element and drop it in the flow window.
 
-    ![GIF demonstrating how to get suggestions by dragging a connector in Service Studio's flow window](images/ai-flow-node-drag-ss.gif "Dragging connector for AI suggestions")
+    <iframe src="https://player.vimeo.com/video/926351837" width="750" height="635" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showcasing Code Mentor suggestions following the action of dragging a connector.</iframe>
 
 * Accept a suggestion from Code Mentor whose required properties are already
   filled in for you. In most situations, this presents new suggestions for the
@@ -80,7 +79,7 @@ There are several ways to get suggestions:
 You can accept a suggestion presented by Code Mentor by clicking on it or by
 selecting it with the arrow keys and pressing `Enter`.
 
-![GIF showing the acceptance of a suggestion from Code Mentor and the subsequent creation of a new element in the flow](images/ai-flow-node-suggestion-ss.gif "Accepting AI-generated suggestions")
+<iframe src="https://player.vimeo.com/video/926353191" width="750" height="635" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the acceptance of AI-generated suggestions using the keyboard.</iframe>
 
 Service Studio creates a new element in the flow according to the selected
 suggestion.

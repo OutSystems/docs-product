@@ -14,10 +14,11 @@ This feature is currently available for use and packaging and pricing details ma
 
 </div>
 
+Highly regulated industries typically have internal organizational security and compliance policies that they must comply with. Frequently, these procedures include employing specific static code analysis tools to test applications security.
 
-The security of an app is an important aspect of an application development cycle. A common security best practice recommends that the code be analyzed statically (SAST).
+The OutSystems platform provides an API that enables you to download the generated code for the current running apps. The source code package returned by the API contains the server-side code and the native code, if it’s a mobile application.
 
-OutSystems provides an API that enables you to download the generated code for the current running apps. For mobile applications, the source code package returned by the API contains the server-side code and the native code. With this API, you can request the source code of an app and run-it against your in-house SAST tools.
+With this capability, you can extend OutSystems’s built-in security capabilities by integrating your preferred Static Application Security Testing (SAST) tool. This supports your security and compliance needs, facilitating integration into continuous deployment pipelines, where automated application source code security validations occur across multiple CI/CD stages.
 
 <div class = "info" markdown="1">
 

@@ -106,7 +106,13 @@ When you're retrying a deployment plan the following situations may arise due to
 
 * If some of the **tagged versions** aren't available for deployment anymore when you retry the plan (for example, if a more recent version of an application was already deployed to the target environment), LifeTime shows you a feedback message stating this situation, and you'll be able to adjust the new deployment plan accordingly.
 
-## Creating and executing a parallel deployment plan 
+## Creating and executing a parallel deployment plan
+
+<div class="warning" markdown="1">
+
+This feature is currently available for use and packaging and pricing details may be subject to updates in the future.
+
+</div>
 
 <div class="info" markdown="1">
 

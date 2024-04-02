@@ -31,7 +31,7 @@ Deploying an app and its modules from one environment to another implies that th
 
 ![Flowchart illustrating the deployment process of an app using LifeTime](images/deploy-lt.png "Deployment Process")
 
-You can deploy your apps [using LifeTime](../../managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md) or [using the LifeTime API](../apis/lifetime-deployment/examples/api-deploy-app.md).  
+You can deploy your apps [using LifeTime](../../deploying-apps/deploy-an-application.md) or [using the LifeTime API](../apis/lifetime-deployment/examples/api-deploy-app.md).  
 
 ## Republish
 
@@ -39,7 +39,7 @@ Sometimes, when deploying an app to a target environment, LifeTime detects the a
 
 ![Screenshot showing the LifeTime deployment plan suggesting republishing of consumer apps with outdated dependencies](images/deploy-dependencies-lt.png "Deploying with Dependencies")
 
-Learn more about [deploying an app with dependencies](../../managing-the-applications-lifecycle/deploy-applications/deploy-an-application-with-dependencies.md).
+Learn more about [deploying an app with dependencies](../../deploying-apps/deploy-an-application-with-dependencies.md).
 
 ## Redeploy
 

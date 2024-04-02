@@ -73,27 +73,27 @@ For more information, see the [How To Fetch Data from Multiple Sources in Aggreg
 
 Once you have your Aggregate with its sources defined, you can filter and sort your results:
 
-* To add filters to your Aggregate, follow the steps in [Filter Query Results](../../../develop/data/query/filter-results.md).  
+* To add filters to your Aggregate, follow the steps in [Filter Query Results](../../../building-apps/data/operations/filter-results.md).  
 For more information, see the [How to Filter Data in an Aggregate](https://www.outsystems.com/training/lesson/1939/demo-how-to-filter-data-in-an-aggregate) demo.
 
-* To sort the results of your Aggregate, follow the steps in [Sort Results in an Aggregate](../../../develop/data/query/sort-aggregate.md).  
+* To sort the results of your Aggregate, follow the steps in [Sort Results in an Aggregate](../../../building-apps/data/operations/sort-aggregate.md).  
 For more information, see the [How To Sort Data in an Aggregate](https://www.outsystems.com/training/lesson/1938/demo-how-to-sort-data-in-an-aggregate) demo.
 
 ## Advanced use cases
 
-* If you don't want the columns of your Aggregate to include repeated values, follow the steps in [Get Distinct Values from the Database](../../../develop/data/query/distinct.md).
+* If you don't want the columns of your Aggregate to include repeated values, follow the steps in [Get Distinct Values from the Database](../../../building-apps/data/operations/distinct.md).
 
-* To calculate values based on groups of identical data using Aggregate functions, follow the steps in [Calculate Values from Grouped Data](../../../develop/data/query/group-calculate.md).  
+* To calculate values based on groups of identical data using Aggregate functions, follow the steps in [Calculate Values from Grouped Data](../../../building-apps/data/operations/group-calculate.md).  
 For more information, see the [How To Create Aggregation Functions in Aggregates](https://www.outsystems.com/training/lesson/1975/demo-how-to-create-aggregation-functions-in-aggregates) demo.
 
-* To create a new attribute based on the value of other attributes, you can define your own expression to calculate the values. Follow the steps in [Create a Calculated Attribute in an Aggregate](../../../develop/data/query/calculated-attribute-create.md).  
+* To create a new attribute based on the value of other attributes, you can define your own expression to calculate the values. Follow the steps in [Create a Calculated Attribute in an Aggregate](../../../building-apps/data/operations/calculated-attribute-create.md).  
 For more information, see the [How To Create Calculated Attributes in Aggregates](https://www.outsystems.com/training/lesson/1973/demo-how-to-create-calculated-attributes-in-aggregates) demo.
 
 ## Showing data
 
-* To display an Aggregate's data, follow the steps in [Show data in a widget](../../../develop/data/query/fetch-display.md#show-data-in-a-widget).
+* To display an Aggregate's data, follow the steps in [Show data in a widget](../../../building-apps/data/operations/fetch-display.md#show-data-in-a-widget).
 
-* If you don't want to load all data of a Screen at the same time, you can [implement asynchronous data fetching](../../../develop/data/query/async-fetch-aggregates.md).
+* If you don't want to load all data of a Screen at the same time, you can [implement asynchronous data fetching](../../../building-apps/data/operations/async-fetch-aggregates.md).
 
 ## Properties
 

@@ -8,7 +8,7 @@ figma:
 
 # End
 
-When designing the process flow of your process, you must end flow paths with the **End** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
+When designing the process flow of your process, you must end flow paths with the **End** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../building-apps/processes/process-flow/process-flow-toolbox.md>).
 
 <div class="info" markdown="1">
 

@@ -564,7 +564,7 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1549:
 
 AI Mentor Studio API helps you manage technical debt, allowing you to use its data in third-party tools. This enables you to:
 
-* Integrate technical debt data from [AI Mentor Studio](../../../managing-the-applications-lifecycle/manage-tech-debt/intro.md) with other technical debt and BI tools you already use.
+* Integrate technical debt data from [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md) with other technical debt and BI tools you already use.
 
 * Use technical debt data as a quality gate of an automated CI/CD pipeline. This ensures that deploys meet a predefined technical debt value.   
 

@@ -46,7 +46,7 @@ Method of a Consumed SOAP Web Service.
 <td>Maximum time this method waits for a synchronous Web Service request to complete and after which an exception is raised. If unspecified, the timeout observed is 100 seconds.</td>
 <td></td>
 <td>100</td>
-<td>The "Duration" field in integration logs can have higher values than the "Timeout in Seconds" value. For more information check [Log data reference](../../../managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md#integration).</td>
+<td>The "Duration" field in integration logs can have higher values than the "Timeout in Seconds" value. For more information check [Log data reference](../../../monitor-and-troubleshoot/logging/reference.md#integration).</td>
 </tr>
 <tr>
 <td title="OriginalName">Original Name</td>

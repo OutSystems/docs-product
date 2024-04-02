@@ -20,13 +20,13 @@ For example, the following flow handles the **Not Registered** exception:
 
 <div class="info" markdown="1">
 
-There's a hierarchy of exception types in OutSystems. If you define an Exception Handler that handles a "parent" exception type, this Exception Handler can also handle any "children" exception type. Check [Handle Exceptions](../../../develop/logic/exceptions/intro.md) for more information.
+There's a hierarchy of exception types in OutSystems. If you define an Exception Handler that handles a "parent" exception type, this Exception Handler can also handle any "children" exception type. Check [Handle Exceptions](../../../building-apps/handling-exceptions/intro.md) for more information.
 
 </div>
 
 In the exception-handling flow started by an Exception Handler element you can perform tasks like displaying a feedback message, logging exception details, and even raising a different type of exception.
 
-Check [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md) to learn more about the chain of Exception Handlers that the platform searches for when an exception occurs.
+Check [Exception Handling Mechanism](../../../building-apps/handling-exceptions/handling-mechanism.md) to learn more about the chain of Exception Handlers that the platform searches for when an exception occurs.
 
 ## Logging exceptions { #logging }
 
@@ -34,7 +34,7 @@ If you set the **Log Error** property to **Yes**, the platform creates a log for
 
 ## Aborting database transactions { #aborting }
 
-When you handle an exception in an [action running on server side](../../../develop/logic/actions.md), you can choose what happens to the database transaction by setting the **Abort Transaction** property of the Exception Handler:
+When you handle an exception in an [action running on server side](../../../building-apps/logic/actions.md), you can choose what happens to the database transaction by setting the **Abort Transaction** property of the Exception Handler:
 
 * Set the **Abort Transaction** property to **Yes** if you want that all the database transactions that weren't committed are aborted and changes rolled back in the database.
 
@@ -51,7 +51,7 @@ In Reactive Web and Mobile apps, the **Abort Transaction** property isn't availa
 | Name | Description | Mandatory | Default value | Observations |
 |---|---|---|---|---|
 | Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes |
-| Exception | Type of exception to handle. | Yes | There is a call hierarchy for exceptions that determines the error handler behavior. For more info see [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md). |
+| Exception | Type of exception to handle. | Yes | There is a call hierarchy for exceptions that determines the error handler behavior. For more info see [Exception Handling Mechanism](../../../building-apps/handling-exceptions/handling-mechanism.md). |
 | Abort Transaction | Set to Yes to abort the transaction and rollback changes. | Yes | Yes | This property is only available in Traditional Web Apps or in a server-side context (for all apps). |
 | Log Error | Set to Yes to log an error when the exception occurs. | Yes | Yes |
 

@@ -15,7 +15,7 @@ Cause
 :   You have an entity with just one sequential attribute and this situation is not allowed by some of databases supported by OutSystems.
 
 Recommendation
-:   Depending on your requirements, either add a new attribute to your entity; or un-check the Auto Number property. Learn more about [entity attributes](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-attribute.md>).
+:   Depending on your requirements, either add a new attribute to your entity; or un-check the Auto Number property. Learn more about [entity attributes](<../../../integration-with-systems/integration-studio/managing-extensions/entity-attribute.md>).
 
 ---
 
@@ -26,7 +26,7 @@ Cause
 :   Your entity has more than one Binary data attributes and this situation is not supported by the database.
 
 Recommendation
-:   Depending on your requirements, either change the data type of one of these attributes or [create](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-add.md>) a new entity and move one of these attributes to this new entity.
+:   Depending on your requirements, either change the data type of one of these attributes or [create](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) a new entity and move one of these attributes to this new entity.
 
 ---
 
@@ -37,4 +37,4 @@ Cause
 :   The physical table name you specified has an invalid table for SQL Server and/or Oracle databases.
 
 Recommendation
-:   [Edit this entity](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-add.md>) and specify the Table Name property. 
+:   [Edit this entity](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) and specify the Table Name property. 

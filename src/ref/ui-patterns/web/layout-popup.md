@@ -57,4 +57,4 @@ You can override the following code to avoid this behavior.
 
 ## Compatibility with other patterns
 
-[RichWidgets Popup Editor](../../../develop/ui/inputs/popup.md)
+[RichWidgets Popup Editor](../../../building-apps/ui/inputs/popup.md)

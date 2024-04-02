@@ -26,7 +26,7 @@ Allows the user to select one or more values from a list of possible values.
 Consider the following alternatives if your users need to select only **one value** from a list:
 
 * [Combo Box Widget](<class-combo-box-widget.md>)
-* [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md) UI Pattern
+* [Dropdown](../../../building-apps/ui/patterns/web/controls/dropdown.md) UI Pattern
 
 </div>
 
@@ -84,7 +84,7 @@ To maintain the selection when there's an Ajax refresh, you can follow an approa
 
 ## Combining with other widgets and UI Patterns
 
-If you're allowing users to select multiple values in a List Box widget, consider using the [Dropdown Select](../../../develop/ui/patterns/web/controls/dropdownselect.md) UI Pattern together with the List Box. The Dropdown Select UI Pattern makes it easier for an end user to check the list items they already selected.
+If you're allowing users to select multiple values in a List Box widget, consider using the [Dropdown Select](../../../building-apps/ui/patterns/web/controls/dropdownselect.md) UI Pattern together with the List Box. The Dropdown Select UI Pattern makes it easier for an end user to check the list items they already selected.
 
 ## Properties
 

@@ -40,15 +40,15 @@ There are several prebuilt elements that you can use to build your apps faster. 
 
 You can also use OutSystems builder to prototype the front end of mobile apps or create workflows, if your product license includes these tools. With the builders you can start creating your apps without Service Studio.
 
-* [Workflow Builder](../develop/case-management-workflow/workflow-builder/intro.md) lets you create fully functional web apps to automate and manage simple workflows.
-* [Experience Builder](../develop/experience-builder/intro.md) lets you create the front end of mobile apps, that you can test right away, and then continue developing in Service Studio.
+* [Workflow Builder](../building-apps/case-management-workflow/workflow-builder/intro.md) lets you create fully functional web apps to automate and manage simple workflows.
+* [Experience Builder](../building-apps/experience-builder/intro.md) lets you create the front end of mobile apps, that you can test right away, and then continue developing in Service Studio.
 
 ## Extensions
 
 With Integration Studio you can write extensions in C#. This lets you expand the functionality of your apps and to work with any existing systems you may have.
 
 * [Integration Studio](../ref/integration-studio/workspace.md)
-* [Writing extensions](../extensibility-and-integration/integration-studio/getting-started/intro.md)
+* [Writing extensions](../integration-with-systems/integration-studio/getting-started/intro.md)
 
 ## Documentation
 

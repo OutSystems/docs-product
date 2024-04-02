@@ -8,7 +8,7 @@ figma:
 
 # Automatic Activity
 
-When designing the process flow of your process, you can add work to be carried out automatically in your process, that is, without the need for human intervention. This behavior is implemented through the **Automatic Activity** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
+When designing the process flow of your process, you can add work to be carried out automatically in your process, that is, without the need for human intervention. This behavior is implemented through the **Automatic Activity** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../building-apps/processes/process-flow/process-flow-toolbox.md>).
 
 An Automatic Activity can have output parameters and local variables.
 

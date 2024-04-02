@@ -24,11 +24,11 @@ You have a For Each element with a Cycle loop path that does not return to the F
 
 Update the Cycle loop to return to the [For Each](../../../ref/lang/auto/class-for-each.md) element in your Action. 
 
-For example, for a [list](../../../develop/logic/list-iterate.md), you need to create a connection from the last step in your logic to the For Each node to close the cycle.
+For example, for a [list](../../../building-apps/logic/list-iterate.md), you need to create a connection from the last step in your logic to the For Each node to close the cycle.
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../building-apps/logic/actions.md) and [Actions in Traditional Web Apps](../../../building-apps/logic/action-web.md).
 
 ## Ambiguous paths to &lt;element> in &lt;action>
 
@@ -53,9 +53,9 @@ Check [Exception Handler](../../../ref/lang/auto/class-exception-handler.md) for
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../building-apps/logic/actions.md) and [Actions in Traditional Web Apps](../../../building-apps/logic/action-web.md).
 
-Check [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md) for additional information about Exception Handler flows.
+Check [Exception Handling Mechanism](../../../building-apps/handling-exceptions/handling-mechanism.md) for additional information about Exception Handler flows.
 
 ## If must have one (T)rue and one F(alse) link
   
@@ -69,7 +69,7 @@ Update the [If](../../../ref/lang/auto/class-if.md) element in the Action to hav
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../building-apps/logic/actions.md) and [Actions in Traditional Web Apps](../../../building-apps/logic/action-web.md).
 
 ## Switch condition for &lt;path> connector must return a 'Boolean' value
   
@@ -83,7 +83,7 @@ Update the [Switch](../../../ref/lang/auto/class-switch.md) element in the Actio
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../building-apps/logic/actions.md) and [Actions in Traditional Web Apps](../../../building-apps/logic/action-web.md).
 
 ## &lt;switch> must have an otherwise optional connector in &lt;action>
   
@@ -97,7 +97,7 @@ Update the [Switch](../../../ref/lang/auto/class-switch.md) element in the Actio
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../building-apps/logic/actions.md) and [Actions in Traditional Web Apps](../../../building-apps/logic/action-web.md).
 
 ## Start is required in &lt;action>
 
@@ -111,7 +111,7 @@ Edit the Action and add a Start element. An Action flow must have only one Start
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../building-apps/logic/actions.md) and [Actions in Traditional Web Apps](../../../building-apps/logic/action-web.md).
 
 ## More than one Start found in &lt;action>
 
@@ -125,4 +125,4 @@ Edit the Action and remove the additional Start elements.
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/class-screen-action.md), [Client](../../../ref/lang/auto/class-client-action.md), [Server](../../../ref/lang/auto/class-server-action.md), and [Data](../../../ref/lang/auto/class-data-action.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../building-apps/logic/actions.md) and [Actions in Traditional Web Apps](../../../building-apps/logic/action-web.md).

@@ -8,7 +8,7 @@ summary: The article details the properties of entity attributes in OutSystems, 
 ---
 # Entity Attribute Properties
 
-The next table presents the properties of the [entity attribute](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-attribute.md>) element.  
+The next table presents the properties of the [entity attribute](<../../../integration-with-systems/integration-studio/managing-extensions/entity-attribute.md>) element.  
   
 |Property|Description|Optionality|Default value|Obs.|
 |--- |--- |--- |--- |--- |

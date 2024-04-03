@@ -30,7 +30,7 @@ When you develop a Reactive Web App:
 * You can build apps using the client-side runtime and create responsive UX.
 * Your apps run on a modern stack.
 
-If you haven't developed OutSystems apps that focus on the client-side development paradigm, you can check the explanation about [Screen and Block lifecycle Events](<../develop/logic/screen-block-lifecycle-events.md>) and these notes about [best practices](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/).
+If you haven't developed OutSystems apps that focus on the client-side development paradigm, you can check the explanation about [Screen and Block lifecycle Events](<../building-apps/logic/screen-block-lifecycle-events.md>) and these notes about [best practices](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/).
 
 ![Diagram illustrating the concept of a Reactive Web App in OutSystems](images/reactive-web-app-diag.png "Reactive Web App Diagram")
 
@@ -78,4 +78,4 @@ Traditional Web App is an earlier type of OutSystems app with a focus on server-
 
 ## What's a Service?
 
-As your app grows, you can use [Services](../develop/reuse-and-refactor/services.md) to abstract specific core concepts and expose functionality to other applications, following a service-oriented architecture.
+As your app grows, you can use [Services](../building-apps/reuse-and-refactor/services.md) to abstract specific core concepts and expose functionality to other applications, following a service-oriented architecture.

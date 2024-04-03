@@ -8,7 +8,7 @@ summary: The article details the properties of the action element in Integration
 ---
 # Action Properties
 
-The next table presents the properties of the [action](<../../../extensibility-and-integration/integration-studio/managing-extensions/action-define.md>) element.  
+The next table presents the properties of the [action](<../../../integration-with-systems/integration-studio/managing-extensions/action-define.md>) element.  
 
 |Property|Description|Optionality|Default value|Obs.|
 |--- |--- |--- |--- |--- |

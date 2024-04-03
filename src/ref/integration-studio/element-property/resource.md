@@ -8,7 +8,7 @@ figma:
 
 # Resource Properties
 
-The next table presents the properties of the [resource](<../../../extensibility-and-integration/integration-studio/managing-extensions/resource-define.md>) element.  
+The next table presents the properties of the [resource](<../../../integration-with-systems/integration-studio/managing-extensions/resource-define.md>) element.  
 
 |Property|Description|Optionality|Default value|Obs.|
 |--- |--- |--- |--- |--- |

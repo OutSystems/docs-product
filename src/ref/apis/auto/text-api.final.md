@@ -22,7 +22,7 @@ To make these elements available in your module do the following:
 1. Select the elements you want to use in your module (right side).
 1. Press **OK**.
 
-For more information on adding elements from other modules as dependencies, check [Expose and Reuse Functionality Between Modules](../../../develop/reuse-and-refactor/expose-and-reuse.md#reuse).
+For more information on adding elements from other modules as dependencies, check [Expose and Reuse Functionality Between Modules](../../../building-apps/reuse-and-refactor/expose-and-reuse.md#reuse).
 
 ## Summary
 

@@ -8,7 +8,7 @@ summary: The article explains how to import action definitions from a .NET assem
 ---
 # Imported Actions Properties
 
-The Import Actions from .NET Assembly wizard allows you to import action definitions from a .NET assembly. Using introspection of a .NET assembly, this wizard will create an action for each method, property and public field you checked in step 3 of the [Import Actions from .NET Assembly](<../../../extensibility-and-integration/integration-studio/managing-extensions/net-assembly-import-action.md>) wizard. The properties of the imported actions depend on the type of the assembly item you select, as explained below.
+The Import Actions from .NET Assembly wizard allows you to import action definitions from a .NET assembly. Using introspection of a .NET assembly, this wizard will create an action for each method, property and public field you checked in step 3 of the [Import Actions from .NET Assembly](<../../../integration-with-systems/integration-studio/managing-extensions/net-assembly-import-action.md>) wizard. The properties of the imported actions depend on the type of the assembly item you select, as explained below.
 
 ![Icon indicating a note or important information in the documentation](images/note.gif "Note Icon") All actions created with this mechanism are created with the Function property set to its default, that is, `No`.
 

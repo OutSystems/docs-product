@@ -13,6 +13,6 @@ In ODC, server actions can be public in libraries but not in apps. Hence, you mu
 
  Exposing a service action generates a weak dependency from the consumer to the producer module in a loosely-coupled way. Each time the implementation of an exposed service action changes, that change takes immediate effect in the consumer modules. 
  
- For large factories, you must ensure that your O11 app portfolio architecture follows a domain-driven design aligned with the to-be ODC architecture, which mandates that boundaries between domains must be loosely coupled. In such scenarios, you must refactor your O11 app to use service actions, as only weak references are allowed between ODC applications. For detailed information on using service actions and understanding best practices, refer to [use services to expose functionality](../../../develop/reuse-and-refactor/services.md).
+ For large factories, you must ensure that your O11 app portfolio architecture follows a domain-driven design aligned with the to-be ODC architecture, which mandates that boundaries between domains must be loosely coupled. In such scenarios, you must refactor your O11 app to use service actions, as only weak references are allowed between ODC applications. For detailed information on using service actions and understanding best practices, refer to [use services to expose functionality](../../../building-apps/reuse-and-refactor/services.md).
 
  You must refactor your O11 app to use service actions, as only weak references are allowed between ODC applications. 

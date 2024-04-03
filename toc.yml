@@ -572,7 +572,7 @@
 - topics:
     - href: testing-apps/develop-test.md    
     - href: testing-apps/testing-bdd-framework.md
-    - href: testing-apps//ui-testing-selenium/faq.md        
+    - href: testing-apps/ui-testing-selenium/faq.md        
     - href: testing-apps/test-automation-in-delivery-lifecycle.md
     - href: testing-apps/automated-testing/testing-guidelines.md
     - href: testing-apps/automated-testing/strategy.md
@@ -917,7 +917,7 @@
     - href: security/host-header-protection.md
     - href: security/encrypt-viewstate.md
     - href: security/protection-against-brute-force-attacks.md
-    - href: security//configure-authentication.md
+    - href: security/configure-authentication.md
     - href: security/use-https-by-enabling-ssl.md
     - href: security/app-shield/intro.md
     - topics:

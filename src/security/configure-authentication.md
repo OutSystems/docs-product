@@ -44,7 +44,7 @@ The **Single Sign-On Between App Types** is not turned on by default. See below 
 
 </div>
 
-The following settings are used for persistent authentication:
+The following settings are used for persistent authentication: 
 
 * **Max Idle Time** – The maximum number of days a user stays logged in (in the server) without communicating with the server. After this time passes, the user needs to log in again if the application goes online (connects to the server).
 

@@ -22,7 +22,6 @@ As [SeleniumHQ’s website](http://www.seleniumhq.org/) states, there are two ma
 
 [Selenium IDE](http://www.seleniumhq.org/projects/ide/) is an integrated development environment for Selenium, implemented as a Firefox extension that allows you to record, edit and replay HTML-encoded scripts that mimic user interactions with a web application. It is great for you to quickly develop and store common interactions that you wish to repeat in the future (for instance: to script frequent administration operations).
 
- 
 
 [Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) allows you to address more complex scenarios when there is a need for fully automated UI tests (e.g. automated regression tests) and / or to parallelize their executions across different browsers ([Selenium Grid](http://www.seleniumhq.org/docs/07_selenium_grid.jsp)). The WebDriver API enables the development of UI tests through common object-oriented programming languages such as Java, C#, Javascript (Node), etc., overcoming some of the limitations of Selenium IDE’s script based testing, as well as providing a more effective instrumentation of the tested browsers. Note that WebDriver was built as the successor of [Selenium RC](http://www.seleniumhq.org/projects/remote-control/), which allowed to run Selenium IDE style scripts for the same purpose and is not recommended anymore.
 

@@ -15,21 +15,16 @@
         - href: getting-started/create-use-case/replace-data-sauce.md
     - href: getting-started/component.md
     - href: getting-started/tips-tricks/tips-tricks.md
-
-
 # Onboarding developers
 - href: onboarding/intro.md
 - topics:
     - href: onboarding/dev-cheat-sheet.md
     - href: onboarding/os-language-concepts.md
-
-
 # Building apps
 - href: building-apps/intro.md
 - topics:
     # Use Application Templates
     - href: building-apps/application-templates/intro.md
-
     # Data management
     - href: building-apps/data/intro.md
     - topics:
@@ -41,7 +36,6 @@
             - href: building-apps/data/modeling/entity-static.md
             - href: building-apps/data/modeling/enumerate-create.md
             - href: building-apps/data/modeling/index-create.md
-
             #Entity relationships
             - href: building-apps/data/modeling/relationship/intro.md
             - topics:
@@ -65,7 +59,6 @@
             - href: building-apps/data/operations/calculated-attribute-create.md
             - href: building-apps/data/operations/distinct.md
             - href: building-apps/data/operations/sql.md
-        #-----------------------------------------------------------------------
         - href: building-apps/data/hipaa/intro.md
         - topics:
             - href: building-apps/data/hipaa/encrypt-data-hipaa.md
@@ -80,7 +73,6 @@
         - href: building-apps/data/share-client-var-between-app.md
         - href: building-apps/data/resources.md
         - href: building-apps/data/caching.md
-        #----------------------------------------------------------------------
         # Offline
         - href: building-apps/data/offline/intro.md
         - topics:
@@ -94,11 +86,9 @@
                 - href: building-apps/data/offline/patterns/read-write-data-with-conflict-detection.md
                 - href: building-apps/data/offline/patterns/read-write-data-one-to-many.md
             - href: building-apps/data/offline/sync-checklist.md
-
     # Design UI
     - href: building-apps/ui/intro.md
     - topics:
-
         # Screens
         - href: building-apps/ui/screens/intro.md
         # Accessibility
@@ -110,7 +100,6 @@
             - href: building-apps/ui/accessibility/additional-accessibility-resources.md
             - href: building-apps/ui/accessibility/accessibility-web/accessibility-web.md
             - href: building-apps/ui/accessibility/accessibility-web/vpat-template.md
-
         # How to use Screen Templates
         - href: building-apps/ui/screen-templates/intro.md
         - topics:
@@ -121,12 +110,10 @@
             - href: building-apps/ui/screen-templates/guidelines.md
             - href: building-apps/ui/screen-templates/reference-metadata.md
             - href: building-apps/ui/screen-templates/sample-data.md
-
         # Table
         - href: building-apps/ui/table/intro.md
         - topics:
             - href: building-apps/ui/table/pagination-sorting.md
-
         # Inputs
         - href: building-apps/ui/inputs/intro.md
         - topics:
@@ -135,19 +122,16 @@
             - href: building-apps/ui/inputs/switch-checkbox.md
             - href: building-apps/ui/inputs/popup.md
             - href: building-apps/ui/inputs/upload.md
-
         # Forms
         - href: building-apps/ui/forms/intro.md
         - topics:
             - href: building-apps/ui/forms/form-use.md
             - href: building-apps/ui/forms/form-validate.md
-
         # Images
         - href: building-apps/ui/image/intro.md
         - topics:
             - href: building-apps/ui/image/use-icons.md
             - href: building-apps/ui/image/display-image.md
-
         # Look and Feel
         - href: building-apps/ui/look-feel/intro.md
         - topics:
@@ -159,7 +143,6 @@
             - href: building-apps/ui/look-feel/layer-system.md
             - href: building-apps/ui/look-feel/responsive.md
             - href: building-apps/ui/look-feel/rtl.md
-
         # Reuse UI
         - href: building-apps/ui/reuse/intro.md
         - topics:
@@ -168,12 +151,10 @@
             - href: building-apps/ui/reuse/dedicated-ui-modules.md
             - href: building-apps/ui/reuse/block-communicate.md
             - href: building-apps/ui/reuse/create-a-custom-application-template.md
-
         # Accelerators
         - href: building-apps/ui/accelerators/intro.md
         - topics:
             - href: building-apps/ui/accelerators/accelerator-google.md
-
         # Patterns
         - href: building-apps/ui/patterns/intro.md
         - topics:
@@ -356,27 +337,23 @@
                     - href: building-apps/ui/patterns/web/utilities/iframe.md
                     - href: building-apps/ui/patterns/web/utilities/separator.md
                     - href: building-apps/ui/patterns/web/utilities/stackedicon.md
-
         # Navigation
         - href: building-apps/ui/navigation/intro.md
         - topics:
             - href: building-apps/ui/navigation/navigate-to-detail-screen.md
             - href: building-apps/ui/navigation/pass-information-between-screens.md
             - href: building-apps/ui/navigation/ui-flow.md
-
         # Multilingual UI
         - href: building-apps/ui/multilingual/intro.md
         - topics:
             - href: building-apps/ui/multilingual/multilingual-web.md
             - href: building-apps/ui/multilingual/translations-editor.md
-
         # Multilingual Technical Preview
         - href: building-apps/ui/multilingual-tp/intro.md
         - topics:
             - href: building-apps/ui/multilingual-tp/translate-your-app.md
             - href: building-apps/ui/multilingual-tp/translation-editor.md
             - href: building-apps/ui/multilingual-tp/translation-management.md
-
     # Application Logic
     - href: building-apps/logic/intro.md
     - topics:
@@ -390,7 +367,6 @@
         - href: building-apps/logic/screen-update-list-items.md
         - href: building-apps/logic/screen-partial-refresh.md
         - href: building-apps/logic/client-data-transfer-optimization-tp.md
-
     # Use Processes
     - href: building-apps/processes/intro.md
     - topics:
@@ -438,7 +414,6 @@
             - href: building-apps/processes/best-practices/scale-queries.md
         - href: building-apps/processes/reseed-bpt-tables.md
         - href: building-apps/processes/light-process.md
-
     #Sending emails
     - href: building-apps/sending-emails/intro.md
     - topics:
@@ -447,19 +422,16 @@
         - href: building-apps/sending-emails/sending.md
         - href: building-apps/sending-emails/widgets.md
         - href: building-apps/sending-emails/attachments.md
-
     #Handling exceptions
     - href: building-apps/handling-exceptions/intro.md
     - topics:
         - href: building-apps/handling-exceptions/analyze-logs.md
         - href: building-apps/handling-exceptions/handling-mechanism.md
-
     # Use Timers
     - href: building-apps/timers/intro.md
     - topics:
         - href: building-apps/timers/timer-create-run.md
         - href: building-apps/timers/timer-monitor.md
-
     # Reuse and Refactor
     - href: building-apps/reuse-and-refactor/intro.md
     - topics:
@@ -472,7 +444,6 @@
         # Libraries
         - href: building-apps/reuse-and-refactor/libraries.md
         - href: building-apps/reuse-and-refactor/convert-to-library.md
-
     # Merge the Work
     - href: building-apps/merge/intro.md
     - topics:
@@ -491,7 +462,6 @@
     - topics:
         - href: building-apps/seo/improve-SEO-with-prerendering.md
         - href: building-apps/seo/prerender-io-usage-and-configuration.md
-
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
     # Experience Builder
@@ -587,7 +557,6 @@
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseServices_API.final.md
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseConfigurations_API.final.md
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseProcessConfigurations_API.final.md
-
 # Debugging apps
 - href: debugging-apps/intro.md
 - topics:
@@ -598,7 +567,6 @@
     - href: debugging-apps/debug-producer-modules.md
     - href: debugging-apps/debugger-ui-reference.md
     - href: debugging-apps/troubleshoot-debugger-connection.md
-
 # Testing Apps
 - href: testing-apps/intro.md
 - topics:
@@ -613,7 +581,6 @@
     - href: testing-apps/automated-testing/integration-api-testing.md
     - href: testing-apps/automated-testing/web-ui-testing.md        
     - href: testing-apps/automate-unit-testing-and-api-testing/faq.md
-
 # Deploying apps
 - href: deploying-apps/intro.md
 - topics:
@@ -643,7 +610,6 @@
         - href: deploying-apps/zones/reference.md
         - href: deploying-apps/zones/modules-and-apps-in-deployment-zones.md
     - href: deploying-apps/override-extensibility-configurations.md
-    
     # Packaging and delivery of Mobile Apps
     - href: deploying-apps/mobile-app-packaging-delivery/intro.md
     - topics:
@@ -681,8 +647,6 @@
             - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/advanced.md
             - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/troubleshooting-know-issues.md
         - href: deploying-apps/mobile-app-packaging-delivery/compliance-with-third-party-licenses.md
-
-
 # Integration with external systems
 - href: integration-with-systems/intro.md
 - topics:
@@ -754,7 +718,6 @@
                 - href: integration-with-systems/integration-builder/connectors/how-register-ib-ms-sp-dv-d360.md
         - href: integration-with-systems/integration-builder/structure.md
         - href: integration-with-systems/integration-builder/troubleshoot.md
-
     #REST
     - href: integration-with-systems/rest/intro.md
     - topics:
@@ -788,7 +751,6 @@
             - href: integration-with-systems/rest/expose-rest-apis/patch-method.md
             - href: integration-with-systems/rest/expose-rest-apis/redact-info-from-logs.md
         - href: integration-with-systems/rest/troubleshoot-a-rest-api.md
-
     #SOAP
     - href: integration-with-systems/soap/intro.md
     - topics:
@@ -818,7 +780,6 @@
     # Log levels for consumed REST and SOAP integrations
     - href: integration-with-systems/log-levels-set.md
     - href: integration-with-systems/log-levels-reference.md
-
     #SAP
     - href: integration-with-systems/sap/intro.md
     - topics:
@@ -827,7 +788,6 @@
         - href: integration-with-systems/sap/execute-sap-stateful-calls.md
         - href: integration-with-systems/sap/execute-sap-stateless-calls.md
         - href: integration-with-systems/sap/troubleshoot-sap-remote-functions.md
-
     # Integration Studio
     - href: integration-with-systems/integration-studio/getting-started/intro.md
     - topics:
@@ -855,9 +815,7 @@
                 - href: integration-with-systems/integration-studio/managing-extensions/action-parameter.md
                 - href: integration-with-systems/integration-studio/managing-extensions/net-assembly-import-action.md
                 - href: integration-with-systems/integration-studio/managing-extensions/net-assembly-import-action-configurations.md
-
             - href: integration-with-systems/integration-studio/managing-extensions/structure-define.md
-
             - href: integration-with-systems/integration-studio/managing-extensions/entity-define.md
             - topics:
                 - href: integration-with-systems/integration-studio/managing-extensions/entity-add.md
@@ -868,14 +826,12 @@
             - href: integration-with-systems/integration-studio/managing-extensions/resource-define.md
             - href: integration-with-systems/integration-studio/managing-extensions/net-assembly-import-web-service.md
             - href: integration-with-systems/integration-studio/managing-extensions/extension-download.md
-    
     #Integration with external database
     - href: integration-with-systems/external-database/intro.md
     - topics:
         - href: integration-with-systems/external-database/integrate-external-db-ib.md
         - href: integration-with-systems/external-database/mongo-db.md
         - href: integration-with-systems/external-database/connect-external-db.md
-
 # Monitor and troubleshoot
 - href: monitor-and-troubleshoot/intro.md
 - topics:
@@ -969,7 +925,6 @@
         - href: security/app-shield/obfuscate-custom-rules.md
         - href: security/app-shield/ExitOnUrl.md
         - href: security/app-shield/query-all-packages.md
-
 # User management
 - href: user-management/intro.md
 - topics:
@@ -1001,7 +956,6 @@
     - topics:
         - href: user-management/user-roles/create-a-custom-role.md
         - href: user-management/user-roles/validate-permissions.md
-
 # Setup OutSystems infrastructure and platform
 - href: setup-infra-platform/intro.md
 - topics:
@@ -1030,7 +984,6 @@
         - href: setup-infra-platform/setup/change-db-authentication.md
         - href: setup-infra-platform/setup/load-balancing-apps/recommended-configs-load-balancing.md
         - href: setup-infra-platform/setup/cdn-setup.md
-
         # Cache Invalidation Service
         - href: setup-infra-platform/setup/cache-invalidation/intro.md
         - topics:
@@ -1045,13 +998,11 @@
             - href: setup-infra-platform/setup/logging-db/configure-separate-db.md
             - href: setup-infra-platform/setup/logging-db/update-applications.md
             - href: setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md                    
-
         - href: setup-infra-platform/setup/unattended-install/intro.md
         - topics:
             - href: setup-infra-platform/setup/unattended-install/config-tool-ref.md
             - href: setup-infra-platform/setup/unattended-install/server-hsconf-ref.md
             - href: setup-infra-platform/setup/unattended-install/osp-tool-ref.md
-
         # OutSystems on Microsoft Azure
         - href: setup-infra-platform/setup/azure/intro.md
         - topics:
@@ -1060,7 +1011,6 @@
             - href: setup-infra-platform/setup/azure/quick-reference.md
             - href: setup-infra-platform/setup/azure/getting-setup-logs.md
             - href: setup-infra-platform/setup/azure/plan-associate.md
-
     # Upgrading
     - href: setup-infra-platform/upgrade/upgrade-platform.md
     - topics:
@@ -1069,7 +1019,6 @@
         - href: setup-infra-platform/upgrade/upgrade-platform-module-prep.md
         - href: setup-infra-platform/upgrade/upgrade-platform-module-deploy.md
         - href: setup-infra-platform/upgrade/upgrade-platform-errors.md
-
 #Manage Oustsystems platform and app life cycle
 - href: manage-platform-app-lifecycle/intro.md
 - topics:
@@ -1102,10 +1051,7 @@
             - href: manage-platform-app-lifecycle/manage-it-teams/external-idp/external-idp-errors.md
         - href: manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
         - href: manage-platform-app-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
-
-
 # Migration to ODC
-
 - href: migration-to-odc/intro.md
 - topics:
     # Preparation
@@ -1124,7 +1070,6 @@
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-systementities.md
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-siteproperties.md
     - href: migration-to-odc/reference.md
-
 # Reference
 - href: ref/intro.md
 - topics:
@@ -1255,7 +1200,6 @@
                     - href: ref/lang/auto/servicestudio-plugin-soap-soapstaticentityattribute.md
                     - href: ref/lang/auto/servicestudio-plugin-soap-soapstructure.md
                     - href: ref/lang/auto/servicestudio-plugin-soap-soapstructureattribute.md
-
                     - href: ref/integration-with-systems/soap/consumed-soap/legacy/intro.md
                     - topics:
                         - href: ref/lang/auto/class-soap-web-service-deprecated.md
@@ -1332,7 +1276,6 @@
                     - href: ref/lang/auto/class-javascript.md
                     - href: ref/lang/auto/class-trigger-event.md
                     - href: ref/lang/auto/class-end.md
-
         # Interfaces
         - href: ref/interfaces/intro.md
         - topics:
@@ -1416,7 +1359,6 @@
         - topics:
             - href: ref/lang/auto/class-on-application-ready.md
             - href: ref/lang/auto/class-on-application-resume.md
-
         # Processes
         - href: ref/processes/intro.md
         - topics:
@@ -1438,13 +1380,11 @@
                 - href: ref/lang/auto/class-send-email.md
                 - href: ref/lang/auto/class-wait.md
             - href: ref/lang/auto/class-timer.md
-
         # Workspace
         - href: ref/workspace/intro.md
         - topics:
             - href: ref/lang/auto/class-mobile-module.md
             - href: ref/lang/auto/class-reference.md
-
         # Traditional Web
         - href: ref/traditional-web/intro.md
         - topics:
@@ -1564,7 +1504,6 @@
                     - href: ref/lang/auto/class-go-to-destination.md
                     - href: ref/lang/auto/class-web-block.md
                     - href: ref/lang/auto/class-web-screen.md
-
             # Web Logic Tools
             - href: ref/traditional-web/web-logic-tools/intro.md
             - topics:
@@ -1590,21 +1529,16 @@
                 #- href: ref/lang/auto/class-raise-exception.md
                 #- href: ref/lang/auto/class-end.md
                 #- href: ref/lang/auto/class-start.md
-
             # Web System Events
             - href: ref/traditional-web/web-system-events/intro.md
             - topics:
                 - href: ref/lang/auto/class-on-begin-web-request.md
                 - href: ref/lang/auto/class-on-session-start.md
-
             - href: ref/lang/auto/class-module.md
-
     # Publishing and deploying
     - href: ref/publish-deploy/publish-deploy.md
-
     # Service Studio command line
     - href: ref/ss-command/ss-command-line.md
-
     # Configuration Tool
     - href: ref/configuration-tool/intro.md
     - topics:
@@ -1628,7 +1562,6 @@
         - href: ref/configuration-tool/tabs/scheduler.md
         - href: ref/configuration-tool/create-indexes.md
         - href: ref/configuration-tool/dotnet-connection-strings-sql-server.md
-
     # Errors and Warnings
     - href: ref/errors-and-warnings/intro-errors-and-warnings.md
     - topics:
@@ -1818,7 +1751,6 @@
             - href: ref/errors-and-warnings/warnings-is/unexpected-attribute-warning.md
             - href: ref/errors-and-warnings/warnings-is/unexpected-entity-warning.md
             - href: ref/errors-and-warnings/warnings-is/unexpected-resource-warning.md
-
     # Integration Studio
     - href: ref/integration-studio/workspace.md
     - topics:
@@ -1866,7 +1798,6 @@
             - href: ref/integration-studio/element-property/entity-attribute.md
             - href: ref/integration-studio/element-property/resource.md
         - href: ref/integration-studio/element-naming.md
-
     # OutSystems APIs
     - href: ref/apis/intro.md
     - topics:
@@ -1925,7 +1856,6 @@
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
                 - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md
                 - href: ref/apis/lifetime-deployment/examples/api-register-env.md
-                
                 - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
@@ -1950,4 +1880,3 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
-        

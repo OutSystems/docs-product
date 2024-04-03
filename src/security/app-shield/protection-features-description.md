@@ -175,4 +175,3 @@ package:/data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_B
 ```sh
 > adb pull /data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_BuMgQV55l8A==/base.apk output.apk
 ```
-

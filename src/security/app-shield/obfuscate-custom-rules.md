@@ -215,4 +215,3 @@ The code obfuscation process generates a mapping file that maps original names t
 If you have a syntax error on your custom obfuscation rules, the base64 encoding of your file propagates the error and the build fails. Verify the syntax of your custom obfuscation rules is correct. You can use Code Obfuscation Helper tool which provides a validator for the syntax of your custom code obfuscation rules and an encoder to base64. If you write your code using the code editor, after each input, the validator runs. Upon completion, a success or error message displays.
 
 If you have a runtime error caused by the obfuscation, have someone on your team review the device logs.
-

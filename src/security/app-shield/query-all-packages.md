@@ -57,4 +57,3 @@ If your app doesn't require PCI compliance, remove the QUERY_ALL_PACKAGES permis
         "RemoveQueryAllPackagesPermission":"true"
 
 1. Generate a new Android package for your app and submit your updated app to Google Play.
-

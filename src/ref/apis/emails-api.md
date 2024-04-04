@@ -10,7 +10,7 @@ figma:
 
 # Emails API
 
-The Emails API allows you to get information from the OutSystems data model to customize and extend the design of your Emails.
+The Emails API allows you to get information from the OutSystems data model to customize and extend the design of your Emails. The Emails API is exposed in the form of an OutSystems system entity. 
 
 With this API your can, for example, do the following:
 

@@ -2444,7 +2444,8 @@ Go to
 </div>
 <div class="panel-body">
 <section class="sw-operation-description">
-<p>Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.</p>
+<p>Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of the deployment object.</p>
+<p>Using this method to remove an application from a plan sets the application as "Do Nothing" while keeping it as part of the plan. In LifeTime v11.22.0 or later, removing an application from a plan will set it as "Do Nothing" and will no longer appear in the plan. For more details see Breaking Changes</p>
 </section>
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 

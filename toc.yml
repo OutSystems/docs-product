@@ -835,6 +835,7 @@
 # Monitor and troubleshoot
 - href: monitor-and-troubleshoot/intro.md
 - topics:
+    - href: monitor-and-troubleshoot/log-information-in-action-flows.md
     - href: monitor-and-troubleshoot/troubleshoot-service.md
     - href: monitor-and-troubleshoot/trace-executed-queries.md
     - href: monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md

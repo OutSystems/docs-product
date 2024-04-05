@@ -2445,6 +2445,11 @@ Go to
 <div class="panel-body">
 <section class="sw-operation-description">
 <p>Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.</p>
+<p>
+    <b>Issue</b>Removing an application from a deployment using LifeTime API effectively removes it from the deployment’s application list.
+    <b>Runtime</b>Traditional web, Reactive web, Mobile
+    <b>Rationale</b>Removing an application from a plan sets the application as "Do Nothing" while keeping it as part of the plan. Now, retrieving the deployment's information returns only the applications in the plan.
+</p>
 </section>
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 

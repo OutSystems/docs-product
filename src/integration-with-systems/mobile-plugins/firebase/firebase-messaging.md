@@ -76,13 +76,6 @@ The following steps show how to create a back-end notification service and how t
 
 ## Set up a back-end notification service { #set-back-end }
 
-<div class="info" markdown="1">
-
-The Cloud Messaging Configurator, version 1.1.0 and older, is deprecated. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref). This means the **v2** and **v1** endpoints will no longer be functional.
-
-The Cloud Messaging Configurator's REST APIs have been replaced by server actions available on the Firebase Cloud Messaging Plugin. If you are consuming these APIs, they must be replaced with the server actions as soon as possible.
-
-</div>
 
 To set up a back-end notification service, follow these steps:
 

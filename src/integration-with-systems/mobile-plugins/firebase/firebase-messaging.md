@@ -1,13 +1,21 @@
 ---
 summary: The Firebase Cloud Messaging plugin for OutSystems enables sending of both normal and silent notifications to mobile app users, with support for custom actions, sounds, and back-end notification service setup
-tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 locale: en-us
 guid: a941e1f8-94f8-400c-8e44-fa969cce59d8
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2218:14983
 ---
-# Firebase Cloud Messaging Plugin
+# Firebase Cloud Messaging plugin using server actions
+
+
+<div class="info" markdown="1">
+
+This article applies only to Firebase Cloud Message plugin version 4.0.0 and newer. The newer versions use [server actions](#server-actions-reference) to manage the notifications.
+
+If you are still using Firebase Cloud Message plugin version 3.0.1 and older, OutSystems recommends that you migrate to version 1.0.0 and newer by June 2024.
+ 
+</div>
 
 The [Firebase Cloud Messaging plugin](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) lets you set a notification experience that starts the Firebase cross-platform messaging solution. This plugin lets you send normal and silent notifications to your mobile app users. Normal notifications can include customizable actions and sounds.
 

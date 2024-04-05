@@ -26,7 +26,7 @@ Firebase is a Google mobile development platform that speeds up the mobile app c
 
 <div class="info" markdown="1">
 
-To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Migrating_to_the_supported_Firebase-based_mobile_plugins).
+To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://www.outsystems.com/tk/redirect?g=0999bb9f-af58-4fc6-ba6d-9c411958eedc).
 
 </div>
 

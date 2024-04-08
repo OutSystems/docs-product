@@ -1,5 +1,5 @@
 ---
-summary: troubleshooting common problems with using the download source code API
+summary: Troubleshooting common problems with using the download source code API.
 tags: 
 locale: en-us
 guid: E542C662-6053-4758-A514-1A4117364DD0

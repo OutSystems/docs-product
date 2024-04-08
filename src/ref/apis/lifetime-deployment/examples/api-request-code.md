@@ -227,6 +227,7 @@ Response body:
     "expires": "2022-12-21T17:00:00Z"
 }
 ```
+
 The response contains the link to download the source code package of the application.
 
 ### Step 6: Download package
@@ -239,10 +240,10 @@ Replace the `{DownloadKey}` with the value on the download URL or call the full 
 
 `GET /lifetimeapi/rest/v2/downloads/f4ee541b-5791-4997-a56d-360d80c24821`
 
-If you are unable to download source code of the application, refer to [Unable to download the source code of an application article](../../../../troubleshooting/application-lifecycle/api-unable-to-download-code.md). 
+If you are unable to download source code of the application, refer to [Unable to download the source code of an application article](api-unable-to-download-code.md). 
 
 ## Review results
 
-When reviewing static code analysis results, you must note that each static code analysis tool can report findings without proper context. These findings must be reviewed to detect false positives. You can consult the experts in OutSystems development to help  understand these findings with proper context.
+When reviewing static code analysis results, you must note that each static code analysis tool can report findings without proper context. These findings must be reviewed to detect false positives. You can consult the experts in OutSystems development to help understand these findings with proper context.
 
 For more information on why certain findings should be considered false positives, refer to [Static application security testing](https://success.outsystems.com/support/security/static_application_security_testing/#review-results).

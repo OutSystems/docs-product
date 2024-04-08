@@ -9,7 +9,7 @@ platform-version: o11
 
 # Unable to download the source code of an application
 
-This article explains how you can troubleshoot if you are getting an error [downloading the source code package of an application](../../ref/apis/lifetime-deployment/examples/api-request-code.md).
+This article explains how you can troubleshoot if you are getting an error [downloading the source code package of an application](api-request-code.md).
 
 ## Step 1: Check if the user has Open and Debug over the application
 

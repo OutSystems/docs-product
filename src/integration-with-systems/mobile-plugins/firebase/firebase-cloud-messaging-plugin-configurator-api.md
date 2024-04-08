@@ -257,3 +257,4 @@ Firebase SDKs for Android and iOS do not support subscribing to topics for which
 For both iOS and Android.
 
 Using the Firebase Cloud Messaging in combination with Firebase Performance requires v1.0.4 (or higher) of the latter.
+

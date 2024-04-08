@@ -1,7 +1,7 @@
 ---
 summary: Learn how to get the source code of an application for static code analysis. OutSystems provides an API that lets you download the code. 
 locale: en-us
-guid: 8DD3FD53-11F9-4CE4-9251-BACDA78F7D1C
+guid: c0f22c7d-ac63-4704-b50f-97a3c697da44
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---

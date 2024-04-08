@@ -9,7 +9,7 @@ platform-version: o11
 
 # Unable to download the source code of an application
 
-This articles explains how you can troubleshoot, if you are getting an error [downloading the source code package of an application](../../ref/apis/lifetime-deployment/examples/api-request-code.md).
+This article explains how you can troubleshoot if you are getting an error [downloading the source code package of an application](../../ref/apis/lifetime-deployment/examples/api-request-code.md).
 
 ## Step 1: Check if the user has Open and Debug over the application
 
@@ -51,7 +51,7 @@ Response body:
 
 Check that the environment key (**Key**) is correctly passed to the API call.
 
-If the environment key does not exist,the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
+If the environment key does not exist, the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
 
 ## Step 3: Check if the application key exists
 
@@ -81,6 +81,7 @@ Response body:
 ```
 
 Check that the application key (**Key**) is passed correctly to the API call.
+
 If the application key does not exist, the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
 
 ## Step 4: Check if the package is bigger than the size limit
@@ -89,4 +90,4 @@ If you see an Error message such as **The resulting source code package has X Mb
 
 As a workaround, you can split the application to run the SAST in smaller apps and then call the API for these small applications.
 
-If the above validations didn't help you solve the issue and you need further assistance, [open a support case](https://www.outsystems.com/SupportPortal/CaseOpen/) to get help from OutSystems Support.
+If the above validations didn't help you solve the issue and need further assistance, [open a support case](https://www.outsystems.com/SupportPortal/CaseOpen/) to get help from OutSystems Support.

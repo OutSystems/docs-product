@@ -675,6 +675,18 @@ Scheme
 <td>Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes.</td>
 </tr>
 <tr>
+<td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess--post">POST /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess</a></td>
+<td>Request the creation of the source code package of the application to be downloaded</td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess--PackageKey--download--get">GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/download</a></td>
+<td>Returns a link where the source code package can be downloaded. The link will expire in 60 minutes</td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess--PackageKey--status--get">GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/status</a></td>
+<td>Returns the details of a given source code packaging execution, including the status and messages</td>
+</tr>
+<tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey--versions--post">POST /environments/{EnvironmentKey}/applications/{ApplicationKey}/versions/</a></td>
 <td>Creates a new version of the application based on the current running application.</td>
 </tr>
@@ -4013,6 +4025,374 @@ Expires</td>
 </section>
 </div>
 </div>
+<span id="path--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess-"></span>
+<div id="operation--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess--post" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">POST</span> <strong>/environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess</strong></h3>
+Go to <a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Request the creation of the source code package of the application to be downloaded.</p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EnvironmentKey</td>
+<td><p>The key of the environment from which to get the application binary file link.</p></td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td><span class="json-property-required"></span></td>
+</tr>
+<tr>
+<td>ApplicationKey</td>
+<td><p>The key of the application for which to get the binary file link.</p></td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td><span class="json-property-required"></span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span></p>
+<dl>
+<dt class="sw-response-200">200 OK</dt>
+<dd class="sw-response-200">
+<div class="rowr"><div class="col-md-12">
+<p>Operation to package all the source code files started successfully.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/SourceCode_StatusRecord">SourceCode_StatusRecord</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-400">400 Bad Request</dt>
+<dd class="sw-response-400">
+<div class="rowr"><div class="col-md-12">
+<p>The required type <code>&lt;Type&gt;</code> is invalid for given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-403">403 Forbidden</dt>
+<dd class="sw-response-403">
+<div class="rowr"><div class="col-md-12">
+<p>User doesn&#39;t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-404">404 Not Found</dt>
+<dd class="sw-response-404">
+<div class="rowr"><div class="col-md-12">
+<p>No environment or application found. Please check that the EnvironmentKey and ApplicationKey exist.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-500">500 Internal Server Error</dt>
+<dd class="sw-response-500">
+<div class="rowr"><div class="col-md-12">
+<p>Failed to start the operation to package all the source code files.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-501">501 Not Supported</dt>
+<dd class="sw-response-501">
+<div class="rowr"><div class="col-md-12">
+<p>Feature not supported.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+</dl>
+</section>
+</div></div>
+<span id="path--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess--PackageKey--download-"></span>
+<div id="operation--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess--PackageKey--download--post" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/download</strong></h3>
+Go to <a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns a link where the source code package can be downloaded. The link will expire in 60 minutes.</p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EnvironmentKey</td>
+<td><p>The key of the environment from which to get the application binary file link.</p></td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td><span class="json-property-required"></span></td>
+</tr>
+<tr>
+<td>ApplicationKey</td>
+<td><p>The key of the application for which to get the binary file link.</p></td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td><span class="json-property-required"></span></td>
+</tr>
+<tr>
+<td>PackageKey</td>
+<td><p>The key of the application's source code operation.</p></td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td><span class="json-property-required"></span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span></p>
+<dl>
+<dt class="sw-response-200">200 OK</dt>
+<dd class="sw-response-200">
+<div class="rowr"><div class="col-md-12">
+<p>Returns a link where the source code package can be downloaded.</p>
+</div></div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DownloadLink">DownloadLink</a>
+</div>
+</div></div>
+<div class="col-md-12">
+<section class="sw-response-headers">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-response-header-name"></th>
+<th class="sw-response-header-description"></th>
+<th class="sw-response-header-data-type"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="sw-response-header-Expires">
+<td>
+Expires</td>
+<td><p>The expiration date and time of the returned link.</p>
+</td>
+<td>
+<span class="json-property-type">string</span>    <span class="json-property-format">(date-time)</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
+</dd>
+<dt class="sw-response-400">400 Bad Request</dt>
+<dd class="sw-response-400">
+<div class="rowr"><div class="col-md-12">
+<p>The required type <code>&lt;Type&gt;</code> is invalid for given keys (Environment:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>;PackageKey:<code>&lt;PackageKey&gt;</code>).</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-403">403 Forbidden</dt>
+<dd class="sw-response-403">
+<div class="rowr"><div class="col-md-12">
+<p>User doesn&#39;t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-404">404 Not Found</dt>
+<dd class="sw-response-404">
+<div class="rowr"><div class="col-md-12">
+<p>No environment or application found. Please check that the EnvironmentKey and ApplicationKey are exists.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-500">500 Internal Server Error</dt>
+<dd class="sw-response-500">
+<div class="rowr"><div class="col-md-12">
+<p>Failed to start the operation to package all the source code files.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-501">501 Not Supported</dt>
+<dd class="sw-response-501">
+<div class="rowr"><div class="col-md-12">
+<p>Feature not supported.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+</dl>
+</section>
+</div></div>
+<span id="path--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess--PackageKey--status-"></span>
+<div id="operation--environments--EnvironmentKey--applications--ApplicationKey--sourcecodeaccess--PackageKey--status--post" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/status</strong></h3>
+Go to <a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns the details of a given source code packaging execution, including the status and messages.</p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EnvironmentKey</td>
+<td><p>The key of the environment from which to get the application binary file link.</p></td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td><span class="json-property-required"></span></td>
+</tr>
+<tr>
+<td>ApplicationKey</td>
+<td><p>The key of the application for which to get the binary file link.</p></td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td><span class="json-property-required"></span></td>
+</tr>
+<tr>
+<td>PackageKey</td>
+<td><p>The key of the application's source code operation.</p></td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td><span class="json-property-required"></span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span></p>
+<dl>
+<dt class="sw-response-200">200 OK</dt>
+<dd class="sw-response-200">
+<div class="rowr"><div class="col-md-12">
+<p>Returns the status and messages.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/SourceCode_StatusRecord">SourceCode_StatusRecord</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-400">400 Bad Request</dt>
+<dd class="sw-response-400">
+<div class="rowr"><div class="col-md-12">
+<p>The required type <code>&lt;Type&gt;</code> is invalid for given keys (Environment:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>;PackageKey:<code>&lt;PackageKey&gt;</code>).</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-403">403 Forbidden</dt>
+<dd class="sw-response-403">
+<div class="rowr"><div class="col-md-12">
+<p>User doesn&#39;t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-404">404 Not Found</dt>
+<dd class="sw-response-404">
+<div class="rowr"><div class="col-md-12">
+<p>No environment or application found. Please check that the EnvironmentKey and ApplicationKey exist.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-500">500 Internal Server Error</dt>
+<dd class="sw-response-500">
+<div class="rowr"><div class="col-md-12">
+<p>Failed to start the operation to package all the source code files.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+<dt class="sw-response-501">501 Not Supported</dt>
+<dd class="sw-response-501">
+<div class="rowr"><div class="col-md-12">
+<p>Feature not supported.</p>
+</div></div>
+<div class="rowr"><div class="col-md-6 sw-response-model"><div  class="panel panel-definition"><div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div></div></div></div>
+</dd>
+</dl>
+</section>
+</div></div>
 <span id="path--environments--EnvironmentKey--applications--ApplicationKey--versions-"></span>
 <div id="operation--environments--EnvironmentKey--applications--ApplicationKey--versions--post" class="swagger--panel-operation-post panel">
 <div class="panel-heading">
@@ -14688,3 +15068,102 @@ IpAddress
 </section>
 </div>
 </div>        
+<div id="definition-SourceCode_StatusRecord" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/SourceCode_StatusRecord"></a>SourceCode_StatusRecord:<span class="json-property-type"><span class="json-property-type">object</span><span class="json-property-range" title="Value limits"></span></span></h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Details of a given source code packaging execution, including the status and messages.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="PackageKey">
+<span class="json-property-name">PackageKey:</span>
+<span class="json-property-type">string</span>
+</dt>
+<dd>
+<p>PackageKey that identifies the source code package requested.</p>
+<div class="json-inner-schema"></div>
+</dd>
+<dt data-property-name="Status">
+<span class="json-property-name">Status:</span>
+<span class="json-property-type">string</span>
+</dt>
+<dd>
+<p>Status of the operaiton. Status can be Running, Done, Error.</p>
+<div class="json-inner-schema"></div>
+</dd>
+<dt data-property-name="Messages">
+<span class="json-property-name">Messages:</span>
+<span class="json-property-type">object[]</span>
+</dt>
+<dd>
+<p>List of messages that describes what the operation is doing.</p>
+<div class="json-inner-schema">
+<section class="json-schema-array-items">
+<span class="json-property-type">
+<a class="json-schema-ref" href="#/definitions/Platform_HEMessage">Platform_HEMessage</a>
+</span>
+<div class="json-inner-schema"></div>
+</section>
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="definition-Platform_HEMessage" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/Platform_HEMessage"></a>Platform_HEMessage:<span class="json-property-type"><span class="json-property-type">object</span><span class="json-property-range" title="Value limits"></span></span></h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Platform messages.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="Id">
+<span class="json-property-name">Id:</span>
+<span class="json-property-type">string</span>
+</dt>
+<dd>
+<p>Message identifier.</p>
+<div class="json-inner-schema"></div>
+</dd>
+<dt data-property-name="Message">
+<span class="json-property-name">Message:</span>
+<span class="json-property-type">string</span>
+</dt>
+<dd>
+<p>Message.</p>
+<div class="json-inner-schema"></div>
+</dd>
+<dt data-property-name="Detail">
+<span class="json-property-name">Detail:</span>
+<span class="json-property-type">string</span>
+</dt>
+<dd>
+<p>Message details.</p>
+<div class="json-inner-schema"></div>
+</dd>
+<dt data-property-name="Type">
+<span class="json-property-name">Type:</span>
+<span class="json-property-type">string</span>
+</dt>
+<dd>
+<p>Message type.</p>
+<div class="json-inner-schema"></div>
+</dd>
+<dt data-property-name="ExtraInfo">
+<span class="json-property-name">ExtraInfo:</span>
+<span class="json-property-type">string</span>
+</dt>
+<dd>
+<p>Message additional information.</p>
+<div class="json-inner-schema"></div>
+</dd>
+</dl>
+</section>
+</div>
+</div>

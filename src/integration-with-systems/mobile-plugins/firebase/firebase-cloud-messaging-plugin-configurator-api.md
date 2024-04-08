@@ -6,6 +6,7 @@ app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3653-5&mode=design&t=KKbqsgPPqdrPLkpd-0
 ---
+
 # Firebase Cloud Messaging plugin using configurator APIs
 
 <div class="info" markdown="1">

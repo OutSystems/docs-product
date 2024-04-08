@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:16
 ---
 
-# Send an Email From a Web Application
+# Send an Email From a Traditional Web Application
 
 <div class="info" markdown="1">
 
@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 <div class="info" markdown="1">
 
-This article is about emails in Traditional Web Apps. For Reactive Web Apps, see [Emails in Mobile and Reactive Web Apps](intro.md).
+This article is about emails in Traditional Web Apps. For Reactive Web Apps, see [Sending emails from apps](intro.md).
 
 </div>
 

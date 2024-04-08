@@ -10,6 +10,12 @@ figma:
 
 # Sending emails from apps
 
+<div class="info" markdown="1">
+
+This article is about emails in Reactive and Mobile Apps. For Traditional Web Apps, see [Send an Email From a Traditional Web Application](emails.md).
+
+</div>
+
 Create and send **Emails for Mobile and Reactive** along with **Attachments in Mobile and Reactive emails**.
 
 ## Prerequisites

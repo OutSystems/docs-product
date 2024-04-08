@@ -572,7 +572,7 @@
 - topics:
     - href: testing-apps/develop-test.md    
     - href: testing-apps/testing-bdd-framework.md
-    - href: testing-apps//ui-testing-selenium/faq.md        
+    - href: testing-apps/ui-testing-selenium/faq.md        
     - href: testing-apps/test-automation-in-delivery-lifecycle.md
     - href: testing-apps/automated-testing/testing-guidelines.md
     - href: testing-apps/automated-testing/strategy.md
@@ -677,15 +677,20 @@
     - topics:
         - href: integration-with-systems/mobile-plugins/barcode/intro.md
         - href: integration-with-systems/mobile-plugins/camera/intro.md
-        - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
+        - topics:  
+            - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-transfer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-viewer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/firebase/intro.md
-        - href: integration-with-systems/mobile-plugins/firebase/firebase-messaging.md
+        - topics:
+            - href: integration-with-systems/mobile-plugins/firebase/firebase-messaging.md
+            - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-messaging-plugin-configurator-api.md
+            - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-api-v1-v2.md
         - href: integration-with-systems/mobile-plugins/health-fitness/intro.md
         - href: integration-with-systems/mobile-plugins/social-login/intro.md
-        - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md
+        - topics:
+            - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md
         - href: integration-with-systems/mobile-plugins/ssl-pinning/intro.md
         - href: integration-with-systems/mobile-plugins/payments-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/cordova-plugin/intro.md
@@ -835,6 +840,7 @@
 # Monitor and troubleshoot
 - href: monitor-and-troubleshoot/intro.md
 - topics:
+    - href: monitor-and-troubleshoot/log-information-in-action-flows.md
     - href: monitor-and-troubleshoot/troubleshoot-service.md
     - href: monitor-and-troubleshoot/trace-executed-queries.md
     - href: monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md
@@ -917,7 +923,7 @@
     - href: security/host-header-protection.md
     - href: security/encrypt-viewstate.md
     - href: security/protection-against-brute-force-attacks.md
-    - href: security//configure-authentication.md
+    - href: security/configure-authentication.md
     - href: security/use-https-by-enabling-ssl.md
     - href: security/app-shield/intro.md
     - topics:
@@ -1832,7 +1838,6 @@
         - href: ref/apis/emails-api.md
         - href: ref/apis/auto/enhancedwebreferences-api.final.md
         - href: ref/apis/auto/epa-taskbox-api.final.md
-        - href: ref/apis/firebase-cloud-api-v1-v2.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/auto/includejavascript-api.final.md
         - href: ref/apis/javascript/intro.md
@@ -1880,4 +1885,3 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
-    

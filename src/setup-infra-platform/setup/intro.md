@@ -1,6 +1,5 @@
 ---
 summary: Learn the several components that are part of OutSystems, and how to set up OutSystems on the cloud or as self-managed.
-tags: article-page; support-installation; support-Installation_Configuration-overview; support-Integrations_Extensions
 locale: en-us
 guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -194,9 +193,9 @@ Do the following:
         2\. Rename the Microsot .NET Framework Installer to `DotNet.exe`.  
         _Note:_ If you're installing a Platform Server version earlier than 11.9, rename the installer to `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` instead.
     
-    * **.NET 6.0 Runtime & Hosting Bundle for Windows**  
-        1\. [Download the .NET 6.0 Runtime & Hosting Bundle for Windows](https://download.visualstudio.microsoft.com/download/pr/0d000d1b-89a4-4593-9708-eb5177777c64/cfb3d74447ac78defb1b66fd9b3f38e0/dotnet-hosting-6.0.6-win.exe) from Microsoft.  
-        2\. Rename the .NET Installer to `DotNet_WindowsHosting_6.exe`
+    * **.NET 8.0 Runtime & Hosting Bundle for Windows**  
+        1\. [Download the .NET 8.0 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) from Microsoft.  
+        2\. Rename the .NET Installer to `DotNet_WindowsHosting_8.exe`
 
     * **.NET Uninstall Tool v1.5.255402 (Optional)** 
 

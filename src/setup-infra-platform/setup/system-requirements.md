@@ -1,5 +1,5 @@
 ---
-summary: Check the hardware and software requirements to install OutSystems on-premises.
+summary: 
 tags: 
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
@@ -70,7 +70,12 @@ Apart from standard Oracle Database setups, OutSystems platform 8.0 and onwards 
 
 * Microsoft .NET Framework 4.8 (supported since Platform Server 11 – Release Oct.2019 CP2) or Microsoft .NET Framework 4.7.2
 * Microsoft Build Tools 2015
-* .NET 6.0 Runtime & Hosting Bundle for Windows
+* .NET Runtime & Hosting Bundle for Windows in the following versions, depending on the Platform Server version:
+    * .NET 8.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.27.0 or newer
+    * .NET 6.0 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.17.1 and 11.26.0
+    * .NET 3.1 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.12.2 and 11.17.0
+    * .NET 2.1 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.12.1 and 11.0.539.0 (Release Jul.2019 CP1)
+    * .NET 2.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.0.528.0 (Release Jul.2019) and older
 * Microsoft Visual C++ 2015-2022 Redistributable (x64) (only for Platform Server version 11.21.0 or above)
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.

@@ -24,10 +24,10 @@ Regardless of whether you are consuming single or multiple methods, OutSystems l
 
 You have two options:
 
-* **Send as a Basic Auth header**. OutSystem encodes **Client ID** and **Client secret** to obtain a token and sends it as an authorization header to the authorization server. The token is a single Base64 encoded string, after the concatenation: `<Client ID>:<Client secret>`.
-* **Send client credentials in body**. OutSystem sends the client credentials in the request body using the following parameters: `client_id` (refers to the **Client ID** property) and `client_secret` (refers to the **Client secret** property).
+* **Send as a Basic Auth header**. OutSystems encodes **Client ID** and **Client secret** to obtain a token and sends it as an authorization header to the authorization server. The token is a single Base64 encoded string, after the concatenation: `<Client ID>:<Client secret>`.
+* **Send client credentials in body**. OutSystems sends the client credentials in the request body using the following parameters: `client_id` (refers to the **Client ID** property) and `client_secret` (refers to the **Client secret** property).
 
-    ![Screenshot showing client authentication properties for OAuth 2.0 client credential flow in Service Studio](images/oauth-auth-properties-client-ss.png "Client Authentication Properties for OAuth 2.0")
+    ![Screenshot showing client authentication properties for OAuth 2.0 client credential flow in Service Studio](images/oauth-auth-properties-client-ss.png "Client Authentication Properties for OAuth 2.0 Client Credential Flow")
 
 ## Consuming several methods
 

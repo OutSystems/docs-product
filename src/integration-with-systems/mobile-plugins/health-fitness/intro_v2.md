@@ -1,22 +1,23 @@
 ---
-summary: The Health and Fitness plugin lets you use data from Apple's HealthKit and Google's Health Connect to create customized solutions for your users.
+summary: The Health and Fitness plugin lets you use data from Apple HealthKit and Google Fit and create customized solutions for your users.
 locale: en-us
-guid: 15541b1b-d214-4a3d-b37d-489f6ecd8815
+guid: 58915a48-1778-4182-b55f-77b91d6abb05
 app_type: mobile apps
 platform-version: o11
-figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1265%3A86185&mode=design&t=187UAgmZTPxcY0ZG-1
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3646%3A249&mode=design&t=7rMnksgyPaWb1FNL-1
 ---
 
-# Health and Fitness Plugin HealthKit and Google Health Connect
+# Health and Fitness Plugin using HealthKit and Google Fit
+
 <div class="info" markdown="1">
 
 Applies only to Mobile Apps.
 
 </div>
 
-The [Health & Fitness plugin version 2.0.](https://www.outsystems.com/forge/component-overview/11715/) enables you to access and use health and fitness data in a mobile app. The plugin provides access to Apple's HealthKit (iOS) and Google's Health Connect (Android) by letting you use data relevant to your health and fitness use cases.
+The [Health & Fitness plugin](https://www.outsystems.com/forge/component-overview/11715/) enables you to access and use health and fitness data in a mobile app. The plugin provides access to the Apple HealthKit and Google Fit APIs by letting you use data relevant to your health and fitness use cases.
 
-The plugin is unaware of the provider you use for data, but you always need to request user permissions to access data. The plugin saves no health and fitness data to the device. In cases where your app writes data to the APIs, the package name is the identifier of the data source.
+The plugin is unaware of the provider you use for data, but you always need to request permissions from users to access data. The plugin saves no health and fitness data to the device. In cases where your app writes data to the APIs, the package name is the identifier of the data source.
 
 As a good practice, verify the plugin is available in the app and prevent the app from crashing. Use the **Logic** > **Client Actions** > **HealthFitnessPlugin** > **CheckHealthFitnessPlugin** action to check for the plugin availability. If the plugin isn't available to the app, display an error to your users.
 
@@ -32,108 +33,13 @@ To learn how to install and reference a plugin in your **OutSystems** apps, and 
 
 This sample app shows you how to do the following with the health and fitness data:
 
-* Request permission to access data.
-* Do simple queries that return the last logged value for a given variable.
-* Do advanced queries for a specific period that return a list of values.
-* Write profile data (e.g. writing data for weight).
-* Retrieve raw data related to workouts for a specific period. This is currently available on iOS only.
-* Use the data in user interface components, such as cards, tables, and graphs.
+* Request permission to access
+* Do simple queries that return the last logged value
+* Do advanced queries for a specific period that return a list of values
+* Retrieve raw data related to workouts, for a specific period. This is currently available on iOS only.
+* Use the data in user interface components, such as cards, tables, and graphs
 
 ![Screenshot of the Health & Fitness sample app interface showing various health metrics.](images/sample-app.png "Health & Fitness Sample App")
-
-## Important note about Health Connect (Android only)
-
-Starting on Android 14, [Health Connect](https://health.google/health-connect-android/) already comes pre-installed. For lower versions of Android, users must install the Health Connect app from the Google Play Store.
-
-<div class="info" markdown="1">
-
-Please note that before users can use your app, you must request access to Health Connect data types by filling out the Developer Declaration Form from Google. For more information, see [Request access to Health Connect data types](https://developer.android.com/health-and-fitness/guides/health-connect/publish/request-access).
-
-</div>
-
-### Navigating from your app to the Health Connect app page on the Play Store (Android only)
-
-The following image shows how you can use the **RedirectToURL** Destination to navigate from your app to the Health Connect app page on the Google Play Store. This is especially important for users with Android 13 or lower devices that need to install the Health Connect app from the Play Store.
-
-![Screenshot showing how to navigate to the Health Connect page on the Google Play Store.](images/navigate-to-play-store.png "Navigate to Play Store")
-
-### Navigating from your app to the Health Connect app (Android only)
-
-If users already have the Health Connect app installed on their device, you can use the **OpenHealthConnectApp** client action to navigate from your app to the Health Connect app. This is especially important when users deny permissions to access Health Connect data types enough times that the permission prompt isn't shown again, when using the **RequestPermissions** client action. When this happens, you can redirect users to the Health Connect app so they can grant the necessary permissions.
-
-To navigate to the Health Connect app, simply call the **OpenHealthConnecetApp** client action, as shown in the image below.
-
-![Screenshot showing how to navigate to the Health Connect app.](images/navigate-to-health-connect.png "Navigate to Health Connect")
-
-## Providing the Privacy Policy file (Android only)
-
-You must provide the privacy policy file through the Resources of your app. This file holds the content that your end-users see after clicking on the privacy policy link that appears in the permissions screen when calling the **RequestPermissions** client action. It should contain the rationale of the requested permissions, describing how your app uses and handles the user's data.
-
-To add the privacy policy file to your mobile app, complete the following steps:
-
-1. In Service Studio, go to the **Data** tab.
-1. Right-click the **Resources** folder, and select **Import Resource**. The **Import Resource** dialog opens.
-
-![Screenshot showing how to import a resource.](images/import-resource.png "Importing a Resource")
-
-1. Select your privacy policy file. Please note that it should be a text file (.txt) and it should named **HealthConnect_PrivacyPolicy.txt**.
-1. In the **Deploy Action** list, select **Deploy to Target Directory**. Leave the **Target Directory** field empty.
-
-![Screenshot showing how to set the deploy action of the resource.](images/resource-deploy-action.png "Resource Deploy Target")
-
-## (Optional) Configuring which Health Connect data types you wish to access (Android only)
-
-By default, when using the Health and Fitness plugin, your app will be configured to access every Health Connect data type the plugin provides. In other words, every variable will be configured to have read and write access. If you wish to provide a custom configuration, you can do so through the Extensibility Configurations of your app.
-
-To configure the access type for a given Health Connect data type (variable), you simply define an Android preference in your app's Extensibility Configurations, as follows:
-
-```json
-        {
-            "preferences": {
-                "android": [
-                    {
-                        "name": "<VARIABLE_NAME>",
-                        "value": "<ACCESS_TYPE>"
-                    }
-                ]
-            }
-        }
-```
-
-For specific variables, the **name** of the preference should be the **Identifier** of the variable record in the **AllVariables** static entity of the plugin. For heart rate, for example, the **name** of the preference should be "HeartRate".
-
-You can also define preferences for variable groups (e.g. fitness variables). More specifically, you can define preferences for the following variable groups: "AllVariables", "FitnessVariables", "HealthVariables", and "ProfileVariables".
-
-The **value** of the preference should be the access type for the variable, which can be one of the following: "Read", "Write", or "ReadWrite".
-
-Note that the most specific preference has precedence over less specific ones. For example, if the "Steps" variable is set to have write access, while the "FitnessVariables" group is set to have read access, every fitness variable will be set to have read access, except for "Steps", which will have write access instead.
-
-Here's a concrete example of a configuration that sets write access to the "Steps" variable, read access to all fitness variables (except for "Steps"), write access to all health variables (e.g. "HeartRate"), and read and write access to all remaining variables ("AllVariables):
-
-```json
-        {
-            "preferences": {
-                "android": [
-                    {
-                        "name": "Steps",
-                        "value": "Write"
-                    },
-                    {
-                        "name": "FitnessVariables",
-                        "value": "Read"
-                    },
-                    {
-                        "name": "HealthVariables",
-                        "value": "Write"
-                    },
-                    {
-                        "name": "AllVariables",
-                        "value": "ReadWrite"
-                    },
-                ]
-            }
-        }
-```
 
 ## Enabling your users to track their health and fitness data
 
@@ -171,7 +77,8 @@ The plugin has groups of default variables in **Data** > **Entities** > **Health
 * HealthVariables
 * FitnessVariables
 * ProfileVariables
-* WorkoutType
+* SummaryVariables
+* WorkoutVariables
 
 ![Service Studio interface for requesting user permissions grouped by health and fitness data types.](images/get-permissions-by-group-ss.png "Requesting Permissions by Group")
 
@@ -191,7 +98,7 @@ To show the step count for the day, you can use an **Expression** and customize 
 
 ### Create logic to access and use health and fitness data
 
-The plugin reads and writes the data using **AdvancedQuery** client action. In the **AdvancedQuery** action, set the values for the predefined variables.
+The plugin reads and writes the data through the **AdvancedQuery** client action. In the **AdvancedQuery** action, set the values for the predefined variables.
 
 The health or fitness query parameters might include:
 
@@ -207,13 +114,7 @@ Verify that access and storage of health or fitness data on the device works. Ch
 
 </div>
 
-#### Notes about AdvancedQuery on Android
-
-* The **TimeUnit** parameter can't be set to **MILLISECONDS** or **SECONDS**. By default, **TimeUnit** will be set to **MINUTE**.
-* The query result for **BloodPressure** is a list with structure **[systolic, diastolic, systolic, diastolic]**, where each element on the list is a pair of two readings. Example: [118, 76, 119, 77].
-* The dates returned in the **Result** and **ResultDataPoints** output parameters are in the UTC timezone.
-
-### Create logic to access and use workout data (iOS only)
+### Create logic to access and use workouts data (iOS only)
 
 To enrich the data that the developer can already obtain from the **AdvancedQuery**, there's also a **GetWorkoutsData** client action that retrieves data related to workouts. To achieve that, it's required to set the values for the input parameters, including:
 
@@ -237,7 +138,7 @@ Verify that access and storage of health or fitness workout data on the device w
 
 To write health and fitness data you can use the **WriteData** action. Set the parameters for the type of health or fitness variable you want and the new value you want to store.
 
-To check that writing the health or fitness data on the device is working, verify the value of **WriteData.Success** is **True**.
+To check that writing the health or fitness data on the device is working, verify that the value of **WriteData.Success** is **True**.
 
 ### Create logic to define a background job
 
@@ -259,65 +160,19 @@ Consider the following parameterization for a background job that notifies you i
 
 ![Configuration of a background job in Service Studio for heart rate monitoring with notification settings.](images/set-background-job2-ss.png "Setting Up a Heart Rate Monitoring Alarm")
 
-After you have created your background job you can update or delete it using the **UpdateBackgroundJob** action and the **DeleteBackgroundJob** action.
+After you have created your background job you can update or delete it using the **UpdateBackgroundJob** action and the **DeleteBackgroundJob** action, respectively.
 
-To check the background job was successfully created, verify the value of **SetBackgroundJob.Success** is **True**.
+To check that the background job was successfully created, verify that the value of **SetBackgroundJob.Success** is **True**.
 
-#### Setting a background job in Android 14
+### Create logic to disconnect your Android app from Google Fit
 
-When setting a background job for the first time in Android 14, for some variables, the permission to schedule exact alarms will be requested. More specifically, this permission will be requested when setting the first background job if the variable is one of the following: weight, height, sleep, blood glucose, or body fat percentage.
-
-With that said, it is a best practice to present a message to the user explaining why the permission is necessary (e.g. to get notifications about health and fitness data), before calling the **SetBackgroundJob** client action.
-
-#### (Optional) Opt-out of permissions for background jobs (Android only)
-
-By default, all necessary background job Android permissions (e.g. "android.permission.ACTIVITY_RECOGNITION") are configured. If you don't want to use background job features and don't want these permissions to be included in your app, set the (`DisableBackgroundJobs`) preference in the Extensibility Configurations to **true**, as follows:
-
-```json
-        {
-            "preferences": {
-                "android": [
-                    {
-                        "name": "DisableBackgroundJobs",
-                        "value": true
-                    }
-                ]
-            }
-        }
-```
-
-#### Additional information about background jobs in Android
-
-When using the **SetBackgroundJob** client action, the **IMMEDIATE** option for the **JobFrequency** field of the **Variable** input parameter only applies to the following variables: steps, heart rate, calories burned, blood pressure, basal metabolic rate, walking speed, and distance. For the other variables (weight, height, sleep, blood glucose, and body fat percentage), the **IMMEDIATE** option will run every minute, as it is the minimum recommended frequency for alarms on Android.
-
-Background jobs run using foreground services, which results in a temporary notification being shown to the user. In most cases, as the background job processing is fast, the temporary notification won't be presented to the user. Nevertheless, you can define the **title** and **description** of this notification, in case it is shown. By default, we already set a title and description, but you can define your own values as follows:
-
-```json
-        {
-            "preferences": {
-                "android": [
-                    {
-                        "name": "BackgroundNotificationTitle",
-                        "value": "Measuring your health and fitness data."
-                    },
-                    {
-                        "name": "BackgroundNotificationDescription",
-                        "value": "Your health and fitness data is being measured in the background."
-                    }
-                ]
-            }
-        }
-```
-
-### Create logic to disconnect your Android app from Health Connect
-
-To disconnect your Android app from Health Connect, and consequently revoke all permissions, you can use the **DisableHealthConnect** action. To check that your app is no longer connected to Health Connect, verify the value of **DisableHealthConnect.Success** is **True**.
+To disconnect your Android app from Google Fit, and consequently revoke all permissions, recording subscriptions, and sensor registrations, you can use the **DisableGoogleFit** action. To check that your app is no longer connected to Google Fit, verify that the value of **DisableGoogleFit.Success** is **True**.
 
 After calling this action, you can also verify that the app no longer has access to any data by calling **AdvancedQuery**, **GetFitnessData**, **GetHealthData**, or **GetProfileData**.
 
 <div class="info" markdown="1">
 
-Your app should be implemented so that when a user chooses to disconnect it from Health Connect, it does not try to fetch any data or request any permissions until the user changes their decision.
+Your app should be implemented so that when a user chooses to disconnect it from Google Fit, it does not try to fetch any data or request any permissions until the user changes their decision.
 
 </div>
 
@@ -330,38 +185,11 @@ Following is a list of actions you can use to make sure there are no errors:
 | Variable        | Action                   | Description                                                    |
 | --------------- | ------------------------ | -------------------------------------------------------------- |
 | **IsAvailable** | CheckHealthFitnessPlugin | True if the plugin is available in the app.                    |
-| **Success**     | RequestPermissions       | True if there aren't errors while requesting permissions.      |
 | **Success**     | AdvancedQuery            | True if there aren't errors while accessing and storing data.  |
 | **Success**     | GetWorkoutsData          | True if there aren't errors while accessing and storing data.  |
 | **Success**     | GetFitnessData (*)       | True if there aren't errors while accessing and storing data.  |
-| **Success**     | WriteProfileData         | True if there aren't errors while writing data.                |
+| **Success**     | WriteData                | True if there aren't errors while writing data.                |
 | **Success**     | SetBackgroundJob         | True if there aren't errors while creating a background job.   |
-| **Success**     | DeleteBackgroundJob      | True if there aren't errors while deleting a background job.   |
-| **Success**     | UpdateBackgroundJob      | True if there aren't errors while updating a background job.   |
-| **Success**     | ListBackgroundJobs       | True if there aren't errors while listing the background jobs. |
-| **Success**     | OpenHealthConnectApp     | True if there aren't errors while opening the Health Connect app. |
-| **Success**     | DisableGoogleFit         | True if there aren't errors while disconnecting from Google Fit.|
-| **Success**     | DisableHealthConnect     | True if there aren't errors while disconnecting from Health Connect.|
+| **Success**     | DisconnectFromGoogleFit  | True if there aren't errors while disconnecting from Google Fit.|
 
 (*) There are several actions in the Health & Fitness plugin that begin with **Get** and have a **Success** variable.
-
-### Units of measurement
-
-Following is the full list of health and fitness variables our plugin supports, and their units of measurement:
-
-| Variable                 | Android                          | iOS                              |
-| ------------------------ | -------------------------------- | -------------------------------- |
-| **Heart Rate**           | Beats per minute (bpm)           | BPM (beats per minute)           |
-| **Steps**                | Number of steps in sample        | Number of steps in sample        |
-| **Weight**               | Kilograms (kg)                   | Kilograms (kg)                   |
-| **Height**               | Centimetres (cm)                 | Centimetres (cm)                 |
-| **Calories Burned**      | Kilocalories (kcal)              | Kilocalories (kcal)              |
-| **Sleep**                | Duration of sleep                | Duration of sleep                |
-| **Blood Pressure**       | Millimeters of mercury (mmHg)    | Millimeters of mercury (mmHg)    |
-| **Blood Glucose**        | Millimoles per litter (mmol/L)   | Milligrams per deciliter (mg/dL) |
-| **Body Fat Percentage**  | Percentage                       | Percentage                       |
-| **Basal Metabolic Rate** | Kilocalories per day (kcal/day)  | Kilocalories per day (kcal/day)  |
-| **Walking Speed**        | Meters per second (m/s)          | Meters per second (m/s)          |
-| **Distance**             | Meters (m)                       | Meters (m)                       |
-
-Note that the **Workout** variable isn't on the list because it doens't have a single unit for measure, as iOS supports different types of workouts. Also, this variable is currently not available on Android.

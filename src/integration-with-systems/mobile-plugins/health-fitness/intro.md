@@ -4,10 +4,10 @@ locale: en-us
 guid: 58915a48-1778-4182-b55f-77b91d6abb05
 app_type: mobile apps
 platform-version: o11
-figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1265%3A86185&mode=design&t=187UAgmZTPxcY0ZG-1
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3646%3A249&mode=design&t=7rMnksgyPaWb1FNL-1
 ---
 
-# Health and Fitness Plugin
+# Health and Fitness Plugin using HealthKit and Google Fit
 
 <div class="info" markdown="1">
 
@@ -166,7 +166,7 @@ To check that the background job was successfully created, verify that the value
 
 ### Create logic to disconnect your Android app from Google Fit
 
-To disconnect your Android app from Google Fit, and consequently revoke all permissions, recording subscriptions, and sensor registrations, you can use the **DisconnectFromGoogleFit** action. To check that your app is no longer connected to Google Fit, verify that the value of **DisconnectFromGoogleFit.Success** is **True**.
+To disconnect your Android app from Google Fit, and consequently revoke all permissions, recording subscriptions, and sensor registrations, you can use the **DisableGoogleFit** action. To check that your app is no longer connected to Google Fit, verify that the value of **DisableGoogleFit.Success** is **True**.
 
 After calling this action, you can also verify that the app no longer has access to any data by calling **AdvancedQuery**, **GetFitnessData**, **GetHealthData**, or **GetProfileData**.
 

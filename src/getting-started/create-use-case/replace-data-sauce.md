@@ -46,13 +46,13 @@ Depending on the external data system you are using, check each one the followin
 
 If you created an **order management** app, a **field services** app,  a **retail catalog** app, a **city inspections** app, an **energy portal** app, or a **sales CRM** app, follow these steps:
 
-1. In the list screen, replace the data in the table, gallery or list by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-automatically).
+1. In the list screen, replace the data in the table, gallery or list by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-automatically).
 
-1. In the list screen, replace the data in the filters part by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-manually).
+1. In the list screen, replace the data in the filters part by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-manually).
 
-1. In the detail screen, if you have a list, replace its data by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-automatically).
+1. In the detail screen, if you have a list, replace its data by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-automatically).
 
-1. In the detail screen, replace the data by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-manually).
+1. In the detail screen, replace the data by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-manually).
 
 1. Publish your module by selecting **1-Click Publish**.
 
@@ -60,9 +60,9 @@ If you created an **order management** app, a **field services** app,  a **retai
 
 If you created a **retail banking** app, follow these steps:
 
-1. In the detail screen, replace the Check Balance list data by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-automatically).
+1. In the detail screen, replace the Check Balance list data by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-automatically).
 
-1. In the detail screen, replace the data by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-manually).
+1. In the detail screen, replace the data by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-manually).
 
 1. Publish your module by selecting **1-Click Publish**.
 
@@ -72,9 +72,9 @@ If you created a **retail banking** app, follow these steps:
 
 If you created an **order management** app, a **field services** app,  a **retail catalog** app, a **city inspections** app, an **energy portal** app, or a **sales CRM** app, follow these steps:
 
-1. In the list screen, replace the data by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-manually).
+1. In the list screen, replace the data by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-manually).
 
-1. In the detail screen, replace the data by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-manually).
+1. In the detail screen, replace the data by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-manually).
 
 1. Publish your module by selecting **1-Click Publish**.
 
@@ -82,7 +82,7 @@ If you created an **order management** app, a **field services** app,  a **retai
 
 If you created a **retail banking** app, follow these steps:
 
-1. Replace the data in your detail screen, by following this [guide](../../develop/ui/screen-templates-use/replace-data.md#replace-data-manually).
+1. Replace the data in your detail screen, by following this [guide](../../building-apps/ui/screen-templates/replace-data.md#replace-data-manually).
 
 1. Publish your module by selecting **1-Click Publish**.
 

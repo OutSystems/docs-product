@@ -8,7 +8,7 @@ figma:
 
 # Integration Studio Warnings
 
-The warnings displayed when you are [verifying](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-verify.md>) or [publishing](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-1-cp.md>) an extension are listed below.
+The warnings displayed when you are [verifying](<../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify.md>) or [publishing](<../../../integration-with-systems/integration-studio/extension-life-cycle/extension-1-cp.md>) an extension are listed below.
 
 * [Missing file](<missing-file-warning.md>)
 * [Missing Options](<missing-options-warning.md>)

@@ -71,7 +71,7 @@ Method of a consumed REST API.
 <td>Maximum waiting time to get a response from the Web Service. By default is 100 seconds.</td>
 <td></td>
 <td></td>
-<td>The "Duration" field in integration logs can have higher values than the "Timeout in Seconds" value. For more information check [Log data reference](../../../managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md#integration).</td>
+<td>The "Duration" field in integration logs can have higher values than the "Timeout in Seconds" value. For more information check [Log data reference](../../../monitor-and-troubleshoot/logging/reference.md#integration).</td>
 </tr>
 </tbody>
 </table>

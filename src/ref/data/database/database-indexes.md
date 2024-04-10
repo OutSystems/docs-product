@@ -30,7 +30,7 @@ Developers can define custom indexes in Service Studio to improve the performanc
 
 <div class="info" markdown="1">
 
-See [Create an Entity Index](<../../../develop/data/modeling/index-create.md>) for instructions about creating indexes in Service Studio.
+See [Create an Entity Index](<../../../building-apps/data/modeling/index-create.md>) for instructions about creating indexes in Service Studio.
 
 </div>
 

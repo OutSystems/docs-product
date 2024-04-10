@@ -70,7 +70,7 @@ To add an element to a list, use the [ListAppend](<../../apis/auto/system-action
 
 ## How to iterate a list
 
-To iterate a list, use a For Each. Check [this guide](../../../develop/logic/list-iterate.md) on how to do it. 
+To iterate a list, use a For Each. Check [this guide](../../../building-apps/logic/list-iterate.md) on how to do it. 
 
 ![Screenshot showing a For Each loop in the development environment](images/foreach-ss.png "For Each Loop")
 

@@ -15,7 +15,7 @@ Cause
 :   The data type of the parameter is not valid.
 
 Recommendation
-:   Edit the [action parameter](<../../../extensibility-and-integration/integration-studio/managing-extensions/action-parameter.md>) and set a valid data type for it.
+:   Edit the [action parameter](<../../integration-studio/element-property/action-parameter.md>) and set a valid data type for it.
 
 ---
 
@@ -26,7 +26,7 @@ Cause
 :   The attribute set in the output parameter is not an Identifier attribute and there's no Identifier attribute defined in the entity.
 
 Recommendation
-:   Edit the [entity](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-define.md>), define the Identifier attribute, and set it on the [action parameter](<../../../extensibility-and-integration/integration-studio/managing-extensions/action-parameter.md>).
+:   Edit the [entity](<../../../integration-with-systems/integration-studio/managing-extensions/entity-define.md>), define the Identifier attribute, and set it on the [action parameter](<../../integration-studio/element-property/action-parameter.md>).
 
 ---
 
@@ -37,4 +37,4 @@ Cause
 :   The output parameter is set as Mandatory but only input parameters can be set as Mandatory.
 
 Recommendation
-:   Edit the [action parameter](<../../../extensibility-and-integration/integration-studio/managing-extensions/action-parameter.md>) and un-set it as mandatory.
+:   Edit the [action parameter](<../../integration-studio/element-property/action-parameter.md>) and un-set it as mandatory.

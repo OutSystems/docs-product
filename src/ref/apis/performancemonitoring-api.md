@@ -15,7 +15,7 @@ To allow you to analyze the user experience of your apps, OutSystems logs [reque
 * Retrieve a list of request events that occurred in your application
 * Register your own request-related events
 
-The server only stores data for the last two days. Learn [how application performance is measured](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md).
+The server only stores data for the last two days. Learn [how application performance is measured](../../monitor-and-troubleshoot/how-application-performance-is-measured.md).
 
 ## Summary
 
@@ -36,9 +36,9 @@ Returns a list of request events, filtered by event names and the time interval 
 
 Authentication can be basic authentication that provides the credentials of a LifeTime user, or it can be authentication that uses service account tokens as [described in LifeTime API documentation](lifetime-deployment/rest-api-authentication.md). 
 
-The API only returns request events for the applications for which the user has *Open and Debug Applications* permissions in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
+The API only returns request events for the applications for which the user has *Open and Debug Applications* permissions in the environment. Learn more about how to [configure security for an infrastructure](../../manage-platform-app-lifecycle/manage-it-teams/intro.md).
 
-To use it in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment and also for the application module. Otherwise, the API responds with a status code of '200 - OK' but doesn't retrieve any events.
+To use it in an application, make sure that [monitoring is turned on](../../monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment and also for the application module. Otherwise, the API responds with a status code of '200 - OK' but doesn't retrieve any events.
 
 #### URL
 
@@ -159,7 +159,7 @@ curl --user mike.fitt:123456
 
 Adds an event to the request event logs, allowing you to collect custom data about web requests. This method uses the [LogRequestEvent](auto/asynchronous-logging-api.final.md) method of the AsynchronousLogging API, which relies on a non-persistent message queue. As a result, request events that are in the message queue waiting to be processed are lost in the case of a system failure.
 
-To use this method in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment, and for the application module. Otherwise the API responds with a status code of '200 – OK', but doesn't register the event.
+To use this method in an application, make sure that [monitoring is turned on](../../monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment, and for the application module. Otherwise the API responds with a status code of '200 – OK', but doesn't register the event.
 
 #### URL
 
@@ -268,7 +268,7 @@ EC | Number of errors | The number of errors that occurred during the request.
 
 #### Request event details for QueryExecuted event { #queryexecuted-details }
 
-This event occurs when the platform detects a [slow query](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
+This event occurs when the platform detects a [slow query](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 Property | Meaning | Description  
 ---|---|---  
@@ -291,7 +291,7 @@ EC | Number of errors | The number of errors that occurred during the request.
 
 #### Request event details for ConsumedIntegrationExecuted event { #consumedintegrationexecuted-details }
 
-This event occurs when the platform detects a [slow consumed integration](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
+This event occurs when the platform detects a [slow consumed integration](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 Property | Meaning | Description  
 ---|---|---  
@@ -316,7 +316,7 @@ EC | Number of errors | The number of errors that occurred during the request.
 
 #### Request event details for ExtensionExecuted event { #extensionexecuted-details }
 
-This event occurs when the platform detects a [slow extension action](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
+This event occurs when the platform detects a [slow extension action](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 Property | Meaning | Description  
 ---|---|---  

@@ -689,6 +689,8 @@
             - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-messaging-plugin-configurator-api.md
             - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-api-v1-v2.md
         - href: integration-with-systems/mobile-plugins/health-fitness/intro.md
+        - topics:
+            - href: integration-with-systems/mobile-plugins/health-fitness/intro_v2.md
         - href: integration-with-systems/mobile-plugins/social-login/intro.md
         - topics:
             - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md

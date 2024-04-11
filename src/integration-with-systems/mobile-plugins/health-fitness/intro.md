@@ -55,7 +55,7 @@ Please note that before users can use your app, you must request access to Healt
 
 The following image shows how you can use the **RedirectToURL** Destination to navigate from your app to the Health Connect app page on the Google Play Store. This is especially important for users with Android 13 or lower devices that need to install the Health Connect app from the Play Store.
 
-![Screenshot showing how to navigate to the Health Connect page on the Google Play Store.](images/navigate-to-play-store.png "Navigate to Play Store")
+![Screenshot showing how to set the deploy action of the resource.](images/resource-deploy-action.png "Resource Deploy Target")
 
 ### Navigating from your app to the Health Connect app (Android only)
 
@@ -79,7 +79,7 @@ To add the privacy policy file to your mobile app, complete the following steps:
 1. Select your privacy policy file. Please note that it should be a text file (.txt) and it should named **HealthConnect_PrivacyPolicy.txt**.
 1. In the **Deploy Action** list, select **Deploy to Target Directory**. Leave the **Target Directory** field empty.
 
-![Screenshot showing how to set the deploy action of the resource.](images/resource-deploy-action.png "Resource Deploy Target")
+![Screenshot showing how to navigate to the Health Connect page on the Google Play Store.](images/navigate-to-play-store.png "Navigate to Play Store")
 
 ## (Optional) Configuring which Health Connect data types you wish to access (Android only)
 

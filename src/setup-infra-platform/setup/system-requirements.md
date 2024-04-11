@@ -268,6 +268,7 @@ Limitations:
 
 #### Operating System
 
+* Windows 11 (64-bit) since Integration Studio 11.14.23
 * Windows 10 (64-bit)
 * Microsoft Windows Server 2019, since Development Environment 11.6.5
 * Microsoft Windows Server 2016

@@ -13,6 +13,7 @@ See some real-world scenarios of using a set of LifeTime API methods to perform 
 
 * [Create a new application version](examples/api-new-app-version.md)
 * [Deploy an application](examples/api-deploy-app.md)
+* [Publish an application across infrastructures using the LifeTime API](examples/api-deploy-infrastructure.md)
 * [Rollback a mobile app](examples/api-rollback-mobile-app.md)
 * [Register an environment](examples/api-register-env.md)
 * [Unregister an environment](examples/api-unregister-env.md)

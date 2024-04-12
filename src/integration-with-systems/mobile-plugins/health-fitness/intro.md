@@ -8,6 +8,7 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integ
 ---
 
 # Health and Fitness Plugin HealthKit and Google Health Connect
+
 <div class="info" markdown="1">
 
 Applies only to Mobile Apps.

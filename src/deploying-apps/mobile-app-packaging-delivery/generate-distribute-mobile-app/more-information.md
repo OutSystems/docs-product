@@ -58,7 +58,7 @@ To create the certificate (`.p12` extension format):
 
 To create your certificate you need to provide a CSR file. Apple will provide you with instructions on how to create one if you have an Apple machine, but if you don't have a Mac here's how you can do it on a Windows machine:
 
-1. Download the most recent version of [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html). 
+1. Download the latest release of [OpenSSL v3](http://slproweb.com/products/Win32OpenSSL.html). 
 1. Start a new command prompt (Start > Run > `cmd.exe`). 
 1. Execute the command to set the folder used on the OpenSSL installation: 
 
@@ -79,32 +79,28 @@ After you run the command on your computer, it will generate a new CSR file with
 Now that you have created the CSR file, go back to the Apple Developer Portal and upload the file. Follow the next steps on Apple's page to create a new Certificate (CER file format). This certificate includes both public and private keys and can be used for multiple apps.
 
 <div class="warning" markdown="1">
-
 Back up the CSR and the CER files in a safe place.
-
 </div>
 
-<div class="info" markdown="1">
+If you're using a Mac, download the CER file, install it, and export it to the P12 file format. If you are using a Windows machine, open the command prompt and execute the following commands:
 
-If you are creating the P12 file with OpenSSL 3.0 or higher, add the flag `-legacy` to the previous command. If OpenSSL is not installed system-wide, the command returns the error "pkcs12: unable to load provider legacy". If that happens, you can either add the flag `-provider-path <openssl_path>/providers` to the previous command or set the environment variable `OPENSSL_MODULES` to point to the directory `<openssl_path>/providers`. The command should look like the following:
-
-    <path_to_openssl_bin>\openssl.exe pkcs12 -legacy -provider-path <openssl_path>/providers -export -inkey <privateKey>.key -in <app_pem>.pem -out <app_p12>.p12
-
-</div>
-
-If you're using a Mac, download the CER file, install it and export to the P12 file format. If you are using a Windows machine, open the command prompt and execute the following commands:
-    
-    <path_to_openssl_bin>\openssl.exe x509 -in <certificate_cer>.cer -inform DER -out <app_pem_file_name>.pem -outform PEM 
+```
+<path_to_openssl_bin>\openssl.exe x509 -in <certificate_cer>.cer -inform DER -out <app_pem_file_name>.pem -outform PEM
+```
 
 where `<certificate_cer>` is the name of the certificate downloaded from Apple and `<app_pem_file_name>` is the name for the PEM file.
 
 Now you'll need to use the file you've just generated to run the following command and create the P12 file:
-    
-    <path_to_openssl_bin>\openssl.exe pkcs12 -export -inkey <privateKey>.key -in <app_pem>.pem -out <app_p12>.p12
 
-where `<privateKey>` is the file generated when creating the CSR file, `<app_pem_filename>` is the name of the created PEM file in the command executed before and `<app_p12>` is the name you want for the P12 file.
+```
+<path_to_openssl_bin>\openssl.exe pkcs12 -legacy -provider-path <openssl_path>/providers -export -inkey <privateKey>.key -in <app_pem>.pem -out <app_p12>.p12
+```
 
-You will be asked for a password, create one and remember or store it somewhere &#8212; you'll need to insert it in OutSystems. The P12 file created in the last step is the certificate to generate the iOS app.
+where `<privateKey>` is the file generated when creating the CSR file, `<app_pem_filename>` is the name of the created PEM file in the command executed before, and `<app_p12>` is the name you want for the P12 file.
+
+You will be asked for a password; create one and remember or store it somewhere, as you'll need to insert it in OutSystems.
+
+The P12 file created in the last step is the certificate to generate the iOS app.
 
 ### Create a Provisioning Profile
 

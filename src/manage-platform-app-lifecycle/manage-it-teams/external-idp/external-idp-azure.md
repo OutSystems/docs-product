@@ -155,38 +155,6 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Click **Add Permissions**.
 
-## Configure Azure AD as OutSystems' Identity Provider
+## Configure Azure AD as OpenId connect provider in LifeTime
 
-To finalize and activate the Azure AD configuration for IT users, follow these steps:
-
-1. Access the LifeTime console.
-
-1. Go to **User Management** > **Authentication Settings**, and click **Add OpenId Connect Provider**.
-
-1. Enter the following Azure AD details in the form:
-
-    1. **Name**: ID Provider (for example, Azure AD OIDC)
-
-    1. **Well-known Configuration URL**: OpenID Connect metadata document URI.
-
-        **Note** This URI can be found in the Azure Portal by navigating to the **Azure Active Directory** > **App Registrations** > **Endpoints**, and copying the **OpenID Connect metadata document** link.
-
-        ![Screenshot showing the OpenID Connect metadata document URI in the 'Endpoints' tab of an Azure AD application.](images/endpoint-az.png "Azure AD OpenID Connect Metadata Document URI")
-
-    1. **Client ID Type**: Select the option **Single Client ID for Desktop and Web tools**.
-
-    1. **Client ID**: Fill in with the **Application (client) ID** that is found in the Azure Portal's **Azure Active Directory** service and **Overview** tab.
-
-        ![Screenshot displaying the Application (client) ID in the 'Overview' tab of an Azure AD application.](images/app-client-id-az.png "Azure AD Application Client ID")
-
-    1. **Username Claim**: The claim used to match the username field of the user configured in LifeTime which will need to be  ``preferred_username`` for Azure AD. For more information about claims, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
-
-1. Click **Save Changes**.
-
-1. Before making Azure AD the effective IdP, make sure to test the configuration and ensure that the Azure AD users have a corresponding user created in the OutSystems platform first.
-
-1. Click **Activate**.
-
-1. In the pop-up window that will appear, fill in the **Client Secret** stored earlier.
-
-1. Click the **Activate and Logout** button to start using Azure AD as the external Identity Provider of the OutSystems platform.
+Follow the steps mentioned [here](external-idp-lifetime.md).

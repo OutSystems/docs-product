@@ -42,17 +42,17 @@ Once you've completed these steps, go to LifeTime and [configure the log streami
         Note: The new configuration format does not automatically update existing configurations. However, they remain functional without interruption.
         </div>
 
-    * **For LifeTime version lower than 11.22.0**
+* **For LifeTime version lower than 11.22.0**
 
-        You can select ``Other`` as the **Destination** with the following parameters:
+    You can select ``Other`` as the **Destination** with the following parameters:
 
-        * **Destination**: ``Other`` 
-        * **Protocol**: ``OTLP/HTTP`` (**Note**: gRPC is not supported)
-        * **Endpoint**: Dynatrace SaaS Endpoint  ``https://{your-environment-id}.live.dynatrace.com/api/v2/otlp/v1/logs``
-        * **API key header name**: ``Authorization``
-        * **API key**: ``Api-Token <access token>``
+    * **Destination**: ``Other`` 
+    * **Protocol**: ``OTLP/HTTP`` (**Note**: gRPC is not supported)
+    * **Endpoint**: Dynatrace SaaS Endpoint  ``https://{your-environment-id}.live.dynatrace.com/api/v2/otlp/v1/logs``
+    * **API key header name**: ``Authorization``
+    * **API key**: ``Api-Token <access token>``
 
-            ![Screenshot of the OutSystems LifeTime interface showing the log streaming configuration fields for Dynatrace](images/log-streaming-dynatrace-lt.png "Log Streaming Configuration in LifeTime")
+        ![Screenshot of the OutSystems LifeTime interface showing the log streaming configuration fields for Dynatrace](images/log-streaming-dynatrace-lt.png "Log Streaming Configuration in LifeTime")
 
 ## Additional resources
 

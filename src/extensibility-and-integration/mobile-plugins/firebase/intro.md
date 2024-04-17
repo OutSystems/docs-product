@@ -106,7 +106,7 @@ Use the target directory value in the **Target Directory** property of the **Res
 ### Additional setup for the Dynamic Links Plugin
 <div class="warning" markdown="1">
 Firebase Dynamic Links is being shutdown by Google on August 25th. You can check more info [here](https://firebase.google.com/support/dynamic-links-faq#:~:text=FAQ%20further%20below.-,When%20will%20Firebase%20Dynamic%20Links%20stop%20working%3F,Dynamic%20Links%20will%20shut%20down.). OutSystems has deprecated this plugin and will also shut it down on August 25th. 
-If you are using FCM Dynamic Links for deep-linking, OutSystems is assessing the possibility of providing a supported solution for App Links and Universal Links.  
+If you are using Firebase Dynamic Links for deep-linking, OutSystems is assessing the possibility of providing a supported solution for App Links and Universal Links.  
 </div>
 
 The Firebase Dynamic Links Plugin has some additional setup steps that need to be followed for it to work correctly:

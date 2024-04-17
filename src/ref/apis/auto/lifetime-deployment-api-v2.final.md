@@ -252,7 +252,7 @@ Scheme
 </tr>
 <tr>
 <td><a href="#operation--deployments--DeploymentKey---put">PUT /deployments/{DeploymentKey}/</a></td>
-<td>Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.</td> <td>Using this method to remove apps from a deployment plan sets their status as <strong>Do Nothing</strong>, but they still appear in the deployment details. From LifeTime 11.22.0 or later, the apps are removed from the deployment plan. For more information, refer to <a href= "https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#introduced-in-lifetime-11.22.0">Breaking Changes.</a></td>
+<td>Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.</td> <td>Using this method to remove apps from a deployment plan sets their status as <strong>Do Nothing</strong>, but they still appear in the deployment details. From LifeTime 11.22.0 or later, the apps are removed from the deployment plan. For more information, refer to <a href="https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#introduced-in-lifetime-11.22.0">Breaking Changes.</a></td>
 </tr>
 <tr>
 <td><a href="#get-deployments-deploymentkey">GET /deployments/{DeploymentKey}/</a></td>

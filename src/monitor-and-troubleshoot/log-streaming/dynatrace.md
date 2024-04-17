@@ -39,7 +39,7 @@ Once you've completed these steps, go to LifeTime and [configure the log streami
         ![Screenshot of the OutSystems LifeTime interface showing the log streaming configuration fields with Dynatrace as the Destination](images/log-streaming-dest-dyna-lt.png "Log Streaming Configuration in LifeTime with Dynatrace as the Destination")
 
         <div class="info" markdown="1">
-            **Note**: The new configuration format does not automatically update existing configurations. However, they remain functional without interruption.
+        Note: The new configuration format does not automatically update existing configurations. However, they remain functional without interruption.
         </div>
 
     * **For LifeTime version lower than 11.22.0**

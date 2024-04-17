@@ -75,7 +75,7 @@ To add the privacy policy file to your mobile app, complete the following steps:
 1. In Service Studio, go to the **Data** tab.
 1. Right-click the **Resources** folder, and select **Import Resource**. The **Import Resource** dialog opens.
 
-![Screenshot showing how to import a resource.](images/import-resource.png "Importing a Resource")
+    ![Screenshot showing how to import a resource.](images/import-resource.png "Importing a Resource")
 
 1. Select your privacy policy file. Please note that it should be a text file (.txt) and it should named **HealthConnect_PrivacyPolicy.txt**.
 1. In the **Deploy Action** list, select **Deploy to Target Directory**. Leave the **Target Directory** field empty.

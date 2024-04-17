@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 ---
 
-# Map database connections using the LifeTime API
+# Map logical database to database connections using the LifeTime API
 
-<div class="info" markdown="1">
+<div class="warning" markdown="1">
 
 This feature is currently available for use and packaging and pricing details may be subject to updates in the future.
 

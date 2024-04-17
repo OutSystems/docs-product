@@ -104,17 +104,4 @@ For more information, refer to [Configuring an OAuth client](https://docs.pingid
 
 ## 11. Configure PingFederate as OpenID connect provider in Lifetime
 
-You can configure PingFederate as an external IdP by following thse steps:
-
-1. Navigating to **Lifetime**> **User Management** > **Authentication Settings** 
-1. Enter the details for the OIDC provider information:
-
-    * **Provider name**: Anything of choice
-    * **Well-known Configuration URL**: ``https://<PingFederateHostname>/.well-known/openid-configuration``
-    * **Client ID Type**: Different Client ID for Desktop and Web tools
-    * **Client ID for Web tools**: Web client ID
-    * **Client ID for Desktop tools**: Desktop client ID
-    * **Username Claim**: preferred_username
-    * **Scopes**: Click the **Test** button next to the well-known configuration URL. It adds recommended scopes.
-1. Click **Save Provider**, then **Activate Provider**. 
-1. Enter the client secret and click **Activate and Log Out**.
+Follow the steps mentioned [here](external-idp-lifetime.md).

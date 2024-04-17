@@ -121,30 +121,6 @@ To configure Okta authentication, follow these steps:
 
     ![Screenshot showing the 'Client ID' for the OutSystems Development Tools application in Okta](images/client-id-ok.png "Client ID for OutSystems Development Tools")
 
-## Activate Okta configuration
+## Configure Okta as OpenId connect provider in LifeTime
 
-To finalize and activate the Okta configuration for both Consoles and Development Tools, follow these steps:
-
-1. Go to **Security** > **API**, and from the default **Authorization Servers** tab, click your authorization server name.
-
-    The server settings are displayed.
-
-    ![Screenshot of the Okta Authorization Server settings displaying the 'Metadata URI' link](images/metadata-ok.png "Okta Authorization Server Metadata") 
-
-1. Copy the **Metadata URI** link.
-
-    **Note**: You need this information when configuring the provider in LifeTime.
-
-1. To configure and activate the provider, follow the steps in the [LifeTime](#lifetime) section using the following details for the OIDC provider information:
-
-    1. Click the **Use a different Client Ids for Desktop and Web tools** link and add both Application IDs using the following details:
-
-        * **Name**: Okta
-
-        * **OpenID Connect metadata document**: Metadata URI
-
-        * **Client Id for Web tools**: OutSystems Consoles Client ID
-
-        * **Client Secret**: OutSystems Consoles Client Secret
-
-        * **Client Id for Desktop tools**: OutSystems Development Tools Client ID
+Follow the steps mentioned [here](external-idp-lifetime.md).

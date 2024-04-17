@@ -28,7 +28,6 @@ You can download the Swagger file for the LifeTime API v2 in the download page o
 
 ![Screenshot of the LifeTime API v2 downloads page with links to download Swagger file](images/lifetime-api-downloads.png "LifeTime API Downloads")
 
-
 ## Summary {#swagger--summary-tags}
 
 The LifeTime API is available through your LifeTime environment, with the API base URL determined by your LifeTime environment's domain. For instance, if your LifeTime address is `example-lt.outsystemsenteprise.com/lifetime`, then the LifeTime API base URL is `example-lt.outsystemsenteprise.com/lifetimeapi/rest/v2`.
@@ -252,8 +251,8 @@ Scheme
 <td>Discards a deployment, if possible. Only deployments whose state is "saved" can be deleted.</td>
 </tr>
 <tr>
-<td><a href="#put-deployments-deploymentkey">PUT /deployments/{DeploymentKey}/</a></td>
-<td>Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.</td>
+<td><a href="#operation--deployments--DeploymentKey---put">PUT /deployments/{DeploymentKey}/</a></td>
+<td>Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.</td> <td>Using this method to remove apps from a deployment plan sets their status as **Do Nothing**, but they still appear in the deployment details. From LifeTime 11.22.0 or later, the apps are removed from the deployment plan. For more information, refer to [Breaking Changes](https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#introduced-in-lifetime-11.22.0).</td>
 </tr>
 <tr>
 <td><a href="#get-deployments-deploymentkey">GET /deployments/{DeploymentKey}/</a></td>

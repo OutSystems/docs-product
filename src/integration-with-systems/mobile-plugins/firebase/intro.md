@@ -83,6 +83,12 @@ You must provide the plugin configuration file as settings in the Service Studio
 
     Repeat this step for the **GoogleService-Info.plist** file.
 
+    <div class="info" markdown="1">
+
+    The iOS file extension **.plist** may not be recognised by the Windows IIS Server and can lead to build issues. If this happens, add the file's MIME type to the server's MIME Types list, associating the **application/xml** MIME type with the **.plist** file name extension.
+
+    </div>
+
 1. In the **Deploy Action** list, select **Deploy to Target Directory**. Leave the **Target Directory** field empty.
 
     ![Shows how to add Firebase configuration files to a mobile app in Service Studio](images/firebase-resources-ss.png "Firebase Configuration Files in Service Studio")

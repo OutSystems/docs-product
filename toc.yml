@@ -632,6 +632,8 @@
             - topics:
                 - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/publish-google-play-store.md
                 - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/publish-apple-app-store.md
+                - topics:
+                    - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/privacy-updates-for-apple-app-store-submissions.md
             - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/more-information.md
             - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/configuration-native-platforms.md
         - href: deploying-apps/mobile-app-packaging-delivery/mobile-app-update-scenarios.md

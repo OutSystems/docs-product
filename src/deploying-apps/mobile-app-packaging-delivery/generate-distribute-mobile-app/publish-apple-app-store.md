@@ -146,6 +146,8 @@ Only available if you enrolled in the [Apple Developer Program](https://develope
 
 Now that [your application is prepared](#Application-Preparation) and the IPA file generated you can now [submit your application for review](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-for-review). Apple is going to review your application before making it available in the App Store.
 
+For more information about privacy updates for Apple App Store submissions, refer [here](privacy-updates-for-apple-app-store-submissions.md)
+
 The process is complete. You'll receive feedback from Apple about your application submission.
 
 ______________________________________________________________

@@ -462,7 +462,7 @@ Returns a list of applications that exist in the infrastructure.
 | 400 | Failed to retrieve applications because IncludeModules was requested but IncludeEnvStatus was not, or invalid request when listing all applications. | [Exception](#exception) |
 | 500 | Failed to list the applications. | [Exception](#exception) |
 
-### `/applications/{ApplicationKey}/`
+### /applications/{ApplicationKey}/
 
 #### GET { #get-applications-applicationkey }
 ##### Description:

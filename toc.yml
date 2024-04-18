@@ -849,6 +849,7 @@
     - href: monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md
     - href: monitor-and-troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md         
     - href: monitor-and-troubleshoot/monitoring-an-environment.md
+    - href: setup-infra-platform/setup/disable-registered-role-error.md
     - href: monitor-and-troubleshoot/monitor-env-activity.md
     - href: monitor-and-troubleshoot/monitor-usage-with-audit-logs.md
     - href: monitor-and-troubleshoot/enable-analytics-for-an-environment.md
@@ -1069,15 +1070,15 @@
     - href: migration-to-odc/preparation/o11architecture-to-odc-architecture.md
     - href: migration-to-odc/preparation/refactoring-o11-application/intro.md
     - topics:
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-bpt.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-extensions.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-structures.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-roles.md
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-serveraction-to-serviceaction.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-soap.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-roles.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-structures.md
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-systementities.md
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-siteproperties.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-extensions.md       
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-soap.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-bpt.md        
     - href: migration-to-odc/reference.md
 # Reference
 - href: ref/intro.md

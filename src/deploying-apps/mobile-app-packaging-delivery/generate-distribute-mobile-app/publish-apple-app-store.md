@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20A
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps.
+Applies only to Mobile apps.
 
 </div>
 

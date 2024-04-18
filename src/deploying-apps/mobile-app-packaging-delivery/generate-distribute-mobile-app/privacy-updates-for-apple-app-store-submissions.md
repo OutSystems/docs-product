@@ -75,7 +75,7 @@ For OutSystems 11, use Service Studio to add and upload the privacy manifest fil
 
 1. Ensure that the **Deploy Action** attribute of the **Resource** property is set to `Deploy to Target Directory`.
 
-    ![Screenshot of OutSystems Service Studio showing how to add a PrivacyInfo.xcprivacy file to the Resources.](images/privacy-info-file-ss.png "Adding Privacy Manifest File in OutSystems Service Studio")
+    ![Service Studio showing how to add a PrivacyInfo.xcprivacy file to the Resources.](images/privacy-info-file-ss.png "Adding Privacy Manifest File in OutSystems Service Studio")
 
 1. In the **Logic** tab, select your app icon. In the **Advanced** section, click on **Extensibility Configurations.**
 

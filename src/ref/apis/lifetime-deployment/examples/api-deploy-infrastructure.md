@@ -48,7 +48,7 @@ For the use-case of publishing apps from one infrastructure to another, consider
 * Deployments created through this API do not perform impact analyses. Executing such deployment plans is similar to a solution published directly through the Service Center.
 * While publishing apps directly to production environments is possible, this option is disabled by default. This scenario can be enabled by changing the following setting, which can be found on [LifeTime settings.](https://hostname/lifetime/Settings.aspx)
 
-![Screenshot of the LifeTime deployment settings with the option to allow deployment of binaries to production environments toggled off.](../images/deploy_apps_or_soutions.png "LifeTime Deployment Settings")
+![Screenshot of the LifeTime deployment settings with the option to allow deployment of binaries to production environments toggled off.](images/deploy_apps_or_soutions.png "LifeTime Deployment Settings")
 
 The following are example API calls (requests and responses) for each step.
 

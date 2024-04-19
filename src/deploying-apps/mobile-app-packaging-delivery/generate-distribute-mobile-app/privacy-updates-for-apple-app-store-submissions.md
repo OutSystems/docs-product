@@ -67,7 +67,7 @@ You must provide a PrivacyInfo.xcprivacy file in your OutSystems app, where the 
 
 ## Providing a privacy manifest file in OutSystems 11
 
-For OutSystems 11, use Service Studio to add and upload the privacy manifest file.
+In Service Studio add and upload the privacy manifest file:
 
 1. In the **Data** tab, add the file to **Resources**. Right-click and select **Import Resource**. Select your file.
 

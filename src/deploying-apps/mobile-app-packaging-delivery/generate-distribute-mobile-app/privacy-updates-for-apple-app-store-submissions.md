@@ -93,3 +93,4 @@ In Service Studio add and upload the privacy manifest file:
         }
     }
     ```
+

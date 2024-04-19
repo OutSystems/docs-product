@@ -41,11 +41,11 @@ You can edit [CSS](css.md) directly in the module [Theme](themes.md) for a great
 
 Note that Styles Editor edits can be overridden by the `style` value of the **Extended Properties**, according to the [CSS specificity](css.md#css-specificity) rules. Additionally, any class added in `class` extended property isn't visible in the editor.
 
-# Examples of use
+## Examples of use
 
 Here are some examples of how you can use Styles Editor to change widgets look, save styles and apply them to other widgets in the application.
 
-## Change style of a widget
+### Change style of a widget
 
 How to change the style of a widget.
 
@@ -59,7 +59,7 @@ How to change the style of a widget.
 
 ![Animated GIF demonstrating how to change the style of a widget using the Styles Editor](images/styles-editor-animation.gif "Styles Editor Animation")
 
-## Save a style
+### Save a style
 
 How to save a style as a CSS class.
 
@@ -68,7 +68,7 @@ How to save a style as a CSS class.
 1. In the dialogue that opens, enter a name for the class (for example, `myStyle`). The class groups all the elements of style.
 1. In the Style Sheet Editor window that opens, press **OK**.
 
-## Apply a saved style
+### Apply a saved style
 
 How to apply a saved style to a widget.
 
@@ -76,7 +76,7 @@ How to apply a saved style to a widget.
 1. In the **Style Classes** section click the **pencil icon**.
 1. Add your style class to the style list, separating it by a space. For example: `BaseStyle1 BaseStyle2 myStyle`.
 
-## Edit a saved style
+### Edit a saved style
 
 How to edit existing CSS style.
 
@@ -85,7 +85,7 @@ How to edit existing CSS style.
 1. In the window that opens, edit the properties in the embedded **Styles Editor**.
 1. Click **OK** when you finish editing.
 
-## Reset style to default
+### Reset style to default
 
 How to reset the widget styles to default values.
 

@@ -17,6 +17,12 @@ This feature is currently available for use, and packaging and pricing details m
 
 With built-in download and publish capabilities, you can easily move app or solution files from your source environment to your target environment, even across different infrastructures. This facilitates continuous deployment at scale and strengthens governance within the Center of Excellence (CoE).
 
+<div class="info" markdown="1">
+
+To publish an app across infrastructures using the LifeTime API you need LifeTime version 11.22.0, or higher.
+
+</div>
+
 Follow the API calls outlined below:
 
 1. Get the binary file from the source environment
@@ -43,9 +49,10 @@ Follow the API calls outlined below:
 
 For the use-case of publishing apps from one infrastructure to another, consider the following:
 
-* The target environment must be registered in a LifeTime. Scenarios with stand-alone (e.g. without a LifeTime) environments are not supported.
+* The target environment must be registered in a LifeTime. Scenarios with stand-alone (without a LifeTime) environments are not supported.
 * The modules of apps being published must be free of Intelectual Property Protection (IPP). Modules that are IPP protected will fail to publish in the target infrastructure.
 * Deployments created through this API do not perform impact analyses. Executing such deployment plans is similar to a solution published directly through the Service Center.
+* Deployment plans created via the LifeTime API will be shown in the LifeTime interface as read-only.
 * While publishing apps directly to production environments is possible, this option is disabled by default. This scenario can be enabled by changing the following setting, which can be found on [LifeTime settings.](https://hostname/lifetime/Settings.aspx)
 
 ![Screenshot of the LifeTime deployment settings with the option to allow deployment of binaries to production environments toggled off.](images/deploy_apps_or_soutions.png "LifeTime Deployment Settings")
@@ -67,7 +74,7 @@ Response body:
     {
         "Key": "f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e",
         "Name": "Development",
-        "OSVersion": "11.0.110.0",
+        "OSVersion": "11.26.0",
         "Order": 0,
         "HostName": "dev-env.company.com",
         "UseHTTPS": true,
@@ -81,7 +88,7 @@ Response body:
     {
         "Key": "849515f2-b4ff-4aca-a9d6-9407bea655f4",
         "Name": "Production",
-        "OSVersion": "11.0.110.0",
+        "OSVersion": "11.26.0",
         "Order": 1,
         "HostName": "prd-env-1.company.com",
         "UseHTTPS": true,
@@ -142,7 +149,7 @@ Response body:
 ```javascript
 {
     "url": "https://lt-env.company.net/lifetimeapi/rest/v2/downloads/0933c71c-5759-4d7e-8ae0-148e23c82462",
-    "expires": "2023-06-02T17:31:16Z"
+    "expires": "2024-06-02T17:31:16Z"
 }
 ```
 
@@ -165,9 +172,9 @@ Response body:
     {
         "Key": "f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e",
         "Name": "Development",
-        "OSVersion": "11.0.110.0",
+        "OSVersion": "11.26.0",
         "Order": 0,
-        "HostName": "dev-env.company.com",
+        "HostName": "dev-env.example.com",
         "UseHTTPS": true,
         "EnvironmentType": "Development",
         "NumberOfFrontEnds": 1,
@@ -179,9 +186,9 @@ Response body:
     {
         "Key": "849515f2-b4ff-4aca-a9d6-9407bea655f4",
         "Name": "Production",
-        "OSVersion": "11.0.110.0",
+        "OSVersion": "11.26.0",
         "Order": 1,
-        "HostName": "prd-env-1.company.com",
+        "HostName": "prd-env-1.example.com",
         "UseHTTPS": true,
         "EnvironmentType": "Production",
         "NumberOfFrontEnds": 1,
@@ -299,7 +306,7 @@ Response body:
 ```javascript
 {
     "url": "https://lt-env.company.net/lifetimeapi/rest/v2/downloads/ec455658-b80d-4602-a6be-0fe1de1772ef",
-    "expires": "2023-06-02T17:31:16Z"
+    "expires": "2024-06-02T17:31:16Z"
 }
 ```
 
@@ -346,10 +353,10 @@ Response body:
         "SourceEnvironmentKey": "",
         "TargetEnvironmentKey": "7709a06f-e76f-4a88-b008-c72e77878a5c",
         "Notes": "",
-        "CreatedOn": "2023-06-05T10:25:23Z",
+        "CreatedOn": "2024-03-05T10:25:23Z",
         "CreatedBy": "LT API Account",
         "CreatedByUsername": "lt_api_account",
-        "SavedOn": "2023-06-05T10:25:23Z",
+        "SavedOn": "2024-03-05T10:25:23Z",
         "SavedBy": "LT API Account",
         "SavedByUsername": "lt_api_account",
         "StartedOn": "1900-01-01T00:00:00",
@@ -403,20 +410,20 @@ Response body:
     "Info": "",
     "DeploymentLog": [
         {
-            "Instant": "2023-06-05T10:30:27.177Z",
+            "Instant": "2024-04-05T10:30:27.177Z",
             "Message": "Uploaded solution pack file from disk"
         },
         {
-            "Instant": "2023-06-05T10:30:30.197Z",
+            "Instant": "2024-04-05T10:30:30.197Z",
             "Message": "Applying Deployment Zones configurations in Development Environment"
         },
         {...},
         {
-            "Instant": "2023-06-05T10:31:14.4Z",
+            "Instant": "2024-04-05T10:31:14.4Z",
             "Message": "Synchronizing data with 'Development' environment."
         },
         {
-            "Instant": "2023-06-05T10:31:19Z",
+            "Instant": "2024-04-05T10:31:19Z",
             "Message": "Deploy completed"
         }
     ]
@@ -427,5 +434,3 @@ Response body:
 When the deployment status is `finished_successful`, you know that the app deployment has finished successfully.
 
 If you get an intermediate deployment status, such as `running` in the response, you must keep polling the status of the deployment execution (by repeating the API method call) until the execution reaches a terminal deployment status, either a successful or an unsuccessful one.
-
-Please note that these deployment plans will be shown in the LifeTime UI as read-only.

@@ -23,6 +23,12 @@ In this example, perform the following generic steps using API calls:
 
 3. Map the missing database connections.
 
+<div class="info" markdown="1">
+
+To map database connections using the LifeTime API you need LifeTime version 11.21.1, or higher.
+
+</div>
+
 ## 1. Get the deployment status
 
 Start by calling the API method that returns the status for the deployment.

@@ -1749,7 +1749,7 @@ Adds the specified application to a given team.
 | 404 | Team not found. | [Exception](#exception) |
 | 500 | Internal error raised. | [Exception](#exception) |
 
-### /teams/&#123;TeamKey&#125;/applications/&#123;ApplicationKey}
+### /teams/&#123;TeamKey&#125;/applications/&#123;ApplicationKey&#125;
 
 #### DELETE { #delete-teams-teamkey-applications-applicationkey }
 ##### Description:
@@ -2137,7 +2137,7 @@ A structure holding the new version name for the application and for its native 
 | ChangeLog | string | Change log of the version to be created. | No |
 | Version | string | Version of the application. | No |
 | MobileVersions | [ [MobileVersion](#mobileversion) ] | List of mobile versions. | No |
-| ModuleVersionKeys | [ string ] | [DEPRECATED] List of module version keys to validate if the current state of the application is still the expected. This parameter was deprecated on LifeTime Feb 2019 Release, there is no need to pass the module version keys. If the module version keys are passed, they will still be validated. | No |
+| ModuleVersionKeys | [ string ] | **DEPRECATED** List of module version keys to validate if the current state of the application is still the expected. This parameter was deprecated on LifeTime Feb 2019 Release, there is no need to pass the module version keys. If the module version keys are passed, they will still be validated. | No |
 
 #### ApplicationVersionKeyDeploymentZoneKeyRecordListTextTextTextRecord
 

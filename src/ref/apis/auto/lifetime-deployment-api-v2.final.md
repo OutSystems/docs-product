@@ -24,7 +24,7 @@ Check [LifeTime API Examples](<../lifetime-deployment/api-use-cases.md>) to lear
 
 </div> 
 
-You can download the Swagger file for the LifeTime API v2 in the download page of LifeTime Management Console binaries (available from LifeTime Management Console 11.5.0). Go to the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), and select your LifeTime Management Console version:
+You can download the Swagger file for the LifeTime API v2 in the download page of LifeTime Management Console binaries (available from LifeTime version 11.5.0). Go to the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), and select your LifeTime version:
 
 ![Screenshot of the LifeTime API v2 downloads page with links to download Swagger file](images/lifetime-api-downloads.png "LifeTime API Downloads")
 
@@ -43,44 +43,17 @@ Version
 Scheme
 :   https
 
+### /applications
 
-<h3 id="tag--applications" class="swagger-summary-tag">/applications</h3>
-<p class="sw-tag-external-doc"></p>
-<table class="table table-bordered table-condensed swagger--summary">
-<thead>
-<tr>
-<th>Endpoint</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#get-applications">GET /applications/</a></td>
-<td>Returns a list of applications that exist in the infrastructure.</td>
-</tr>
-<tr>
-<td><a href="#get-applications-applicationkey">GET /applications/&#123;ApplicationKey&#125;/</a></td>
-<td>Returns the details of a given application.
-</td>
-</tr>
-<tr>
-<td><a href="#get-applications-applicationkey-versions">GET /applications/&#123;ApplicationKey&#125;/versions/</a></td>
-<td>Returns a list of versions of a given application.</td>
-</tr>
-<tr>
-<td><a href="#delete-applications-applicationkey-versions-versionkey">DELETE /applications/&#123;ApplicationKey&#125;/versions/&#123;VersionKey&#125;/</a></td>
-<td>Discards an application version, if possible. Running versions, or versions used in Deployments cannot be deleted.</td>
-</tr>
-<tr>
-<td><a href="#get-applications-applicationkey-versions-versionkey">GET /applications/&#123;ApplicationKey&#125;/versions/&#123;VersionKey&#125;/</a></td>
-<td>Returns the details of a given version of the specified application.</td>
-</tr>
-<tr>
-<td><a href="#get-applications-applicationkey-versions-versionkey-content">GET /applications/&#123;ApplicationKey&#125;/versions/&#123;VersionKey&#125;/content/</a></td>
-<td>Returns a link where the binary file for a given application version can be downloaded. The link will expire in 60 minutes.</td>
-</tr>
-</tbody>
-</table>
+| Endpoint | Description |
+|---|---|
+| [GET /applications/](#get-applications) | Returns a list of applications that exist in the infrastructure. | 
+| [GET /applications/&#123;ApplicationKey&#125;/](#get-applications-applicationkey) | Returns the details of a given application. |
+| [GET /applications/&#123;ApplicationKey&#125;/versions/](#get-applications-applicationkey-versions) | Returns a list of versions of a given application. |
+| [DELETE /applications/&#123;ApplicationKey&#125;/versions/&#123;VersionKey&#125;/](#delete-applications-applicationkey-versions-versionkey) | Discards an application version, if possible. Running versions, or versions used in Deployments cannot be deleted. |
+| [GET /applications/&#123;ApplicationKey&#125;/versions/&#123;VersionKey&#125;/](#get-applications-applicationkey-versions-versionkey) | Returns the details of a given version of the specified application. |
+| [GET /applications/&#123;ApplicationKey&#125;/versions/&#123;VersionKey&#125;/content/](#get-applications-applicationkey-versions-versionkey-content) | Returns a link where the binary file for a given application version can be downloaded. The link will expire in 60 minutes. |
+
 
 ### /deployments
 
@@ -101,11 +74,11 @@ Scheme
 | Endpoint | Description |
 |---|---|
 | [GET /environments](#get-environments)/ | Lists all the environments in the infrastructure. |
-| [POST /environments/](#post-environments) | Registers an environment in LifeTime. This endpoint is available as of LifeTime Management Console 11.11.0. |
+| [POST /environments/](#post-environments) | Registers an environment in LifeTime. This endpoint is available as of LifeTime version 11.11.0. |
 | [GET /environments/&#123;EnvironmentKey&#125;/](#get-environments-environmentkey) | Returns the details of a given environment. |
-| [DELETE /environments/&#123;EnvironmentKey&#125;/](#delete-environments-environmentkey) | Unregisters an environment from LifeTime. This endpoint is available as of LifeTime Management Console 11.11.0. |
+| [DELETE /environments/&#123;EnvironmentKey&#125;/](#delete-environments-environmentkey) | Unregisters an environment from LifeTime. This endpoint is available as of LifeTime version 11.11.0. |
 | [GET /environments/&#123;EnvironmentKey&#125;/applications/](#get-environments-environmentkey-applications) | Returns information about the running versions of all applications in a given environment. |
-| [POST /environments/&#123;EnvironmentKey&#125;/applications/](#post-applications) | Creates a new application in the environment. This endpoint is available as of LifeTime Management Console 11.5.0. |
+| [POST /environments/&#123;EnvironmentKey&#125;/applications/](#post-applications) | Creates a new application in the environment. This endpoint is available as of LifeTime version 11.5.0. |
 | [GET /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/](#get-environments-environmentkey-applications) | Returns information about the running version of the specified application in a given environment. |
 | [GET /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/content/](#get-environments-environmentkey-applications-applicationkey-content) | Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes. |
 | [POST /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/sourcecodeaccess/](#post-environments-environmentkey-applications-applicationkey-sourcecodeaccess) | Request the creation of the source code package of the application to be downloaded. This endpoint requires LifeTime version 11.21.1 and Platform Server 11.27.0, or higher. |
@@ -116,198 +89,97 @@ Scheme
 | [GET /environments/&#123;EnvironmentKey&#125;/modules/&#123;ModuleKey&#125;/sourcecodeaccess/&#123;PackageKey&#125;/download/](#get-environments-environmentkey-modules-modulekey-sourcecodeaccess-packagekey-download) | Returns a link where the module's source code package can be downloaded. The link will expire in 60 minutes. |
 | [GET /environments/&#123;EnvironmentKey&#125;/modules/&#123;ModuleKey&#125;/sourcecodeaccess/&#123;PackageKey&#125;/status/](#get-environments-environmentkey-modules-modulekey-sourcecodeaccess-packagekey-status) | Returns the details of a given module's source code packaging execution, including the status and messages. |
 | [GET /environments/&#123;EnvironmentKey&#125;/deploymentzones/](#get-environments-environmentkey-deploymentzones) | Returns information about the deployment zones available in a given environment. |
-| [GET /environments/&#123;EnvironmentKey&#125;/templates/](#get-environments-environmentkey-templates) | Returns information about the templates available in a given environment. This endpoint is available as of LifeTime Management Console 11.5.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/content_security_policies/](#get-environments-environmentkey-content_security_policies) | Returns information about the Content Security Policy in a given environment. This endpoint is available as of LifeTime Management Console 11.10.3. |
-| [PUT /environments/&#123;EnvironmentKey&#125;/content_security_policies/](#put-environments-environmentkey-content_security_policies) | Sets the Content Security Policies for a given environment. This endpoint is available as of LifeTime Management Console 11.10.3. |
-| [GET /environments/&#123;EnvironmentKey&#125;/dbconnections/](#get-environments-environmentkey-dbconnections) | Returns all the DB connections of a given environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [POST /environments/&#123;EnvironmentKey&#125;/dbconnections/](#post-environments-environmentkey-dbconnections) | Creates a new DB connection for an environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/](#get-environments-environmentkey-dbconnections-dbconnectionname) | Returns the detail of a DB Connection for a given environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [PUT /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/](#put-environments-environmentkey-dbconnections-dbconnectionname) | Updates a DB connection for an environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [DELETE /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/](#delete-environments-environmentkey-dbconnections-dbconnectionname) | Deletes a DB connection for an environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [PUT /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/rolepermissionlevel/](#put-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel) | Sets the DB connection permission levels for a Role in a given environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [DELETE /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/rolepermissionlevel/](#delete-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel) | Revokes the DB connection permissions for a Role in an environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/rolepermissionlevel/&#123;Role&#125;/](#get-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel-role) | Returns the DB connection permission level of a Role for a given environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [PUT /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/userpermissionlevel/](#put-environments-environmentkey-dbconnections-dbconnectionname-userpermissionlevel) | Sets the DB connection permission levels for a User in a given environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [DELETE /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/userpermissionlevel/](#delete-environments-environmentkey-dbconnections-dbconnectionname-userpermissionlevel) | Revokes the DB connection permissions for a User in an environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/userpermissionlevel/&#123;Username&#125;/](#get-environments-environmentkey-dbconnections-dbconnectionname-userpermissionlevel-username) | Returns the DB connection permission level of a User for a given environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/dbconnection/dbproviders/](#get-environments-environmentkey-dbconnection-dbproviders) | Returns the list of providers for all the DB connections in a given environment. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [GET /environments/dbconnection/permissionlevels/](#get-environments-dbconnection-permissionlevels) | Returns the permission levels for the DB connections. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [POST /environments/&#123;EnvironmentKey&#125;/testdbconnection/](#post-environments-environmentkey-dbconnections) | Tests the DB connection. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [GET /environments/blockedipaddresses/](#get-environments-blockedipaddresses) | Gets the IP Addresses blocked login attempts. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [POST /environments/&#123;EnvironmentKey&#125;/deployment/](#post-environments-environmentkey-deployment) | Creates a binary deployment to a target environment. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime Management Console 11.22.0. |
-| [DELETE /environments/blockedipaddresses/&#123;IPAddress&#125;/](#delete-environments-blockedipaddresses-ipaddress) | Unblocks a given IP Address. This endpoint is available as of LifeTime Management Console 11.13.0. |
-| [POST /environments/&#123;EnvironmentKey&#125;/solution/](#post-environments-environmentkey-solution) | Creates a temporary solution. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime Management Console 11.22.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/solution/&#123;SolutionKey&#125;/](#get-environments-environmentkey-solution-solutionkey) | Download the given solution. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime Management Console 11.22.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/solutionstatus/&#123;SolutionKey&#125;/](#get-environments-environmentkey-solutionstatus-solutionkey)| Returns the status of the solution being created. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime Management Console 11.22.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/templates/](#get-environments-environmentkey-templates) | Returns information about the templates available in a given environment. This endpoint is available as of LifeTime version 11.5.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/content_security_policies/](#get-environments-environmentkey-content_security_policies) | Returns information about the Content Security Policy in a given environment. This endpoint is available as of LifeTime version 11.10.3. |
+| [PUT /environments/&#123;EnvironmentKey&#125;/content_security_policies/](#put-environments-environmentkey-content_security_policies) | Sets the Content Security Policies for a given environment. This endpoint is available as of LifeTime version 11.10.3. |
+| [GET /environments/&#123;EnvironmentKey&#125;/dbconnections/](#get-environments-environmentkey-dbconnections) | Returns all the DB connections of a given environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [POST /environments/&#123;EnvironmentKey&#125;/dbconnections/](#post-environments-environmentkey-dbconnections) | Creates a new DB connection for an environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/](#get-environments-environmentkey-dbconnections-dbconnectionname) | Returns the detail of a DB Connection for a given environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [PUT /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/](#put-environments-environmentkey-dbconnections-dbconnectionname) | Updates a DB connection for an environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [DELETE /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/](#delete-environments-environmentkey-dbconnections-dbconnectionname) | Deletes a DB connection for an environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [PUT /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/rolepermissionlevel/](#put-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel) | Sets the DB connection permission levels for a Role in a given environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [DELETE /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/rolepermissionlevel/](#delete-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel) | Revokes the DB connection permissions for a Role in an environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/rolepermissionlevel/&#123;Role&#125;/](#get-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel-role) | Returns the DB connection permission level of a Role for a given environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [PUT /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/userpermissionlevel/](#put-environments-environmentkey-dbconnections-dbconnectionname-userpermissionlevel) | Sets the DB connection permission levels for a User in a given environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [DELETE /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/userpermissionlevel/](#delete-environments-environmentkey-dbconnections-dbconnectionname-userpermissionlevel) | Revokes the DB connection permissions for a User in an environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/userpermissionlevel/&#123;Username&#125;/](#get-environments-environmentkey-dbconnections-dbconnectionname-userpermissionlevel-username) | Returns the DB connection permission level of a User for a given environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/dbconnection/dbproviders/](#get-environments-environmentkey-dbconnection-dbproviders) | Returns the list of providers for all the DB connections in a given environment. This endpoint is available as of LifeTime version 11.13.0. |
+| [GET /environments/dbconnection/permissionlevels/](#get-environments-dbconnection-permissionlevels) | Returns the permission levels for the DB connections. This endpoint is available as of LifeTime version 11.13.0. |
+| [POST /environments/&#123;EnvironmentKey&#125;/testdbconnection/](#post-environments-environmentkey-dbconnections) | Tests the DB connection. This endpoint is available as of LifeTime version 11.13.0. |
+| [GET /environments/blockedipaddresses/](#get-environments-blockedipaddresses) | Gets the IP Addresses blocked login attempts. This endpoint is available as of LifeTime version 11.13.0. |
+| [POST /environments/&#123;EnvironmentKey&#125;/deployment/](#post-environments-environmentkey-deployment) | Creates a binary deployment to a target environment. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime version 11.22.0. |
+| [DELETE /environments/blockedipaddresses/&#123;IPAddress&#125;/](#delete-environments-blockedipaddresses-ipaddress) | Unblocks a given IP Address. This endpoint is available as of LifeTime version 11.13.0. |
+| [POST /environments/&#123;EnvironmentKey&#125;/solution/](#post-environments-environmentkey-solution) | Creates a temporary solution. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime version 11.22.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/solution/&#123;SolutionKey&#125;/](#get-environments-environmentkey-solution-solutionkey) | Download the given solution. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime version 11.22.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/solutionstatus/&#123;SolutionKey&#125;/](#get-environments-environmentkey-solutionstatus-solutionkey)| Returns the status of the solution being created. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime version 11.22.0. |
 
-<h3 id="tag--modules" class="swagger-summary-tag">/modules</h3>
-<p class="sw-tag-external-doc">
-</p>
-<table class="table table-bordered table-condensed swagger--summary">
-<thead>
-<tr>
-<th>Endpoint</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#get-modules">GET /modules/</a></td>
-<td>Returns a list of modules that exist in the infrastructure.
-</td>
-</tr>
-<tr>
-<td><a href="#get-modules-modulekey">GET /modules/&#123;ModuleKey&#125;/</a></td>
-<td>Returns the details of a given module.</td>
-</tr>
-<tr>
-<td><a href="#get-modules-modulekey-versions">GET /modules/&#123;ModuleKey&#125;/versions/</a></td>
-<td>Returns a list of versions of a given module.</td>
-</tr>
-<tr>
-<td><a href="#get-modules-modulekey-versions-moduleversionkey">GET /modules/&#123;ModuleKey&#125;/versions/&#123;ModuleVersionKey&#125;/</a></td>
-<td>Returns the details of a given module version.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="tag--roles" class="swagger-summary-tag">/roles</h3>
-<p class="sw-tag-external-doc">
-<strong>Available as of LifeTime Management Console 11.5.0.</strong>
-</p>
-<table class="table table-bordered table-condensed swagger--summary">
-<thead>
-<tr>
-<th>Endpoint</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#get-roles">GET /roles/</a></td>
-<td>Lists all the roles.</td>
-</tr>
-<tr>
-<td><a href="#post-roles">POST /roles/</a></td>
-<td>Creates a role with the specified permissions.</td>
-</tr>
-<tr>
-<td><a href="#get-roles-rolekey">GET /roles/&#123;RoleKey&#125;/</a></td>
-<td>Returns the details of a given role.</td>
-</tr>
-<tr>
-<td><a href="#put-roles-rolekey">PUT /roles/&#123;RoleKey&#125;/</a></td>
-<td>Updates a role with the specified permissions.</td>
-</tr>
-<tr>
-<td><a href="#delete-roles-rolekey">DELETE /roles/&#123;RoleKey&#125;/</a></td>
-<td>Deletes a role.</td>
-</tr>
-<tr>
-<td><a href="#get-roles-permissionlevels">GET /roles/permissionlevels/</a></td>
-<td>Gets available permission levels.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="tag--teams" class="swagger-summary-tag">/teams</h3>
-<p class="sw-tag-external-doc">
-<strong>Available as of LifeTime Management Console 11.5.0.</strong>
-</p>
-<table class="table table-bordered table-condensed swagger--summary">
-<thead>
-<tr>
-<th>Endpoint</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#get-teams">GET /teams/</a></td>
-<td>Lists all the teams.</td>
-</tr>
-<tr>
-<td><a href="#post-teams">POST /teams/</a></td>
-<td>Creates a team with the specified details. The operation only creates the team. Users and Applications should be associated using specific endpoints.</td>
-</tr>
-<tr>
-<td><a href="#get-teams-teamkey">GET /teams/&#123;TeamKey&#125;/</a></td>
-<td>Returns the details of a given team.</td>
-</tr>
-<tr>
-<td><a href="#put-teams-teamkey">PUT /teams/&#123;TeamKey&#125;/</a></td>
-<td>Updates a team with the specified details. The operation only affects the Team details. Users and Applications should be associated or dissociated using specific endpoints.</td>
-</tr>
-<tr>
-<td><a href="#delete-teams-teamkey">DELETE /teams/&#123;TeamKey&#125;/</a></td>
-<td>Deletes a team.</td>
-</tr>
-<tr>
-<td><a href="#post-teams-teamkey-applications">POST /teams/&#123;TeamKey&#125;/applications/</a></td>
-<td>Adds the specified application to a given team. The operation adds an existing application to the team. To create a new application, use <a href="#post-environments-environmentkey-applications">POST /environments/&#123;EnvironmentKey&#125;/applications/</a>.</td>
-</tr>
-<tr>
-<td><a href="#delete-teams-teamkey-applications-applicationkey">DELETE /teams/&#123;TeamKey&#125;/applications/&#123;ApplicationKey}</a></td>
-<td>Removes application from the given team.</td>
-</tr>
-<tr>
-<td><a href="#post-teams-teamkey-users">POST /teams/&#123;TeamKey&#125;/users/</a></td>
-<td>Adds a user to a team with a specified role.</td>
-</tr>
-<tr>
-<td><a href="#delete-teams-teamkey-users-userkey">DELETE /teams/&#123;TeamKey&#125;/users/&#123;UserKey&#125;/</a></td>
-<td>Removes a user from the given team.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="tag--users" class="swagger-summary-tag">/users</h3>
-<p class="sw-tag-external-doc">
-<strong>Available as of LifeTime Management Console 11.5.0.</strong>
-</p>
-<table class="table table-bordered table-condensed swagger--summary">
-<thead>
-<tr>
-<th>Endpoint</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#get-users">GET /users/</a></td>
-<td>Lists all the users. By default shows only active users.</td>
-</tr>
-<tr>
-<td><a href="#post-users">POST /users/</a></td>
-<td>Creates a user with the specified details. The operation only creates the user. Teams and Applications should be associated using specific endpoints.</td>
-</tr>
-<tr>
-<td><a href="#get-users-userkey">GET /users/&#123;UserKey&#125;/</a></td>
-<td>Returns the details of a given user.</td>
-</tr>
-<tr>
-<td><a href="#put-users-userkey">PUT /users/&#123;UserKey&#125;/</a></td>
-<td>Updates a user with the specified details. The operation only updates the user details. Teams and Applications should be associated using specific endpoints.</td>
-</tr>
-<tr>
-<td><a href="#post-users-userkey-setpassword">POST /users/&#123;UserKey&#125;/setpassword/</a></td>
-<td>Allows to change a password of a given user.</td>
-</tr>
-<tr>
-<td><a href="#post-users-userkey-applications">POST /users/&#123;UserKey&#125;/applications/</a></td>
-<td>Grants a given role to the given application to the user.</td>
-</tr>
-<tr>
-<td><a href="#delete-users-userkey-applications-applicationkey">DELETE /users/&#123;UserKey&#125;/applications/&#123;ApplicationKey&#125;/</a></td>
-<td>Revokes user's role in application permission.</td>
-</tr>
-<tr>
-<td><a href="#get-users-userkey-blockedlogins">GET /users/&#123;UserKey&#125;/blockedlogins/</a></td>
-<td>Gets the users blocked login attempts. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
-</tr>
-<tr>
-<td><a href="#delete-users-userkey-blockedlogins">DELETE /users/&#123;UserKey&#125;/blockedlogins/</a></td>
-<td>Unblocks a given user. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
-</tr>
-</tbody>
-</table>
+### /modules
+
+| Endpoint | Description |
+|---|---|
+| [GET /modules/](#get-modules) | Returns a list of modules that exist in the infrastructure. |
+| [GET /modules/&#123;ModuleKey&#125;/](#get-modules-modulekey) | Returns the details of a given module. |
+| [GET /modules/&#123;ModuleKey&#125;/versions/](#get-modules-modulekey-versions) | Returns a list of versions of a given module. |
+| [GET /modules/&#123;ModuleKey&#125;/versions/&#123;ModuleVersionKey&#125;/](#get-modules-modulekey-versions-moduleversionkey) | Returns the details of a given module version. |
+
+### /roles
+
+<div class="info" markdown="1">
+
+Available as of LifeTime version 11.5.0.
+
+</div>
+
+| Endpoint | Description |
+|---|---|
+| [GET /roles/](#get-roles) | Lists all the roles. |
+| [POST /roles/](#post-roles) | Creates a role with the specified permissions. |
+| [GET /roles/&#123;RoleKey&#125;/](#get-roles-rolekey) | Returns the details of a given role. |
+| [PUT /roles/&#123;RoleKey&#125;/](#put-roles-rolekey) | Updates a role with the specified permissions. |
+| [DELETE /roles/&#123;RoleKey&#125;/](#delete-roles-rolekey) | Deletes a role. |
+| [GET /roles/permissionlevels/](#get-roles-permissionlevels) | Gets available permission levels. |
+
+
+### /teams
+
+<div class="info" markdown="1">
+
+Available as of LifeTime version 11.5.0.
+
+</div>
+
+| Endpoint | Description |
+|---|---|
+| [GET /teams/](#get-teams) | Lists all the teams. |
+| [POST /teams/](#post-teams) | Creates a team with the specified details. The operation only creates the team. Users and Applications should be associated using specific endpoints. |
+| [GET /teams/&#123;TeamKey&#125;/](#get-teams-teamkey) | Returns the details of a given team. |
+| [PUT /teams/&#123;TeamKey&#125;/](#put-teams-teamkey) | Updates a team with the specified details. The operation only affects the Team details. Users and Applications should be associated or dissociated using specific endpoints. |
+| [DELETE /teams/&#123;TeamKey&#125;/](#delete-teams-teamkey) | Deletes a team. |
+| [POST /teams/&#123;TeamKey&#125;/applications/](#post-teams-teamkey-applications) | Adds the specified application to a given team. The operation adds an existing application to the team. To create a new application, use [POST /environments/&#123;EnvironmentKey&#125;/applications/](#post-environments-environmentkey-applications). |
+| [DELETE /teams/&#123;TeamKey&#125;/applications/&#123;ApplicationKey&#125;](#delete-teams-teamkey-applications-applicationkey) | Removes application from the given team. |
+| [POST /teams/&#123;TeamKey&#125;/users/](#post-teams-teamkey-users) | Adds a user to a team with a specified role. |
+| [DELETE /teams/&#123;TeamKey&#125;/users/&#123;UserKey&#125;/](#delete-teams-teamkey-users-userkey) | Removes a user from the given team. |
+
+
+### /users
+
+<div class="info" markdown="1">
+
+Available as of LifeTime version 11.5.0.
+
+</div>
+
+| Endpoint | Description |
+|---|---|
+| [GET /users/](#get-users) | Lists all the users. By default shows only active users. |
+| [POST /users/](#post-users) | Creates a user with the specified details. The operation only creates the user. Teams and Applications should be associated using specific endpoints. |
+| [GET /users/&#123;UserKey&#125;/](#get-users-userkey) | Returns the details of a given user. |
+| [PUT /users/&#123;UserKey&#125;/](#put-users-userkey) | Updates a user with the specified details. The operation only updates the user details. Teams and Applications should be associated using specific endpoints. |
+| [POST /users/&#123;UserKey&#125;/setpassword/](#post-users-userkey-setpassword) | Allows to change a password of a given user. |
+| [POST /users/&#123;UserKey&#125;/applications/](#post-users-userkey-applications) | Grants a given role to the given application to the user. |
+| [DELETE /users/&#123;UserKey&#125;/applications/&#123;ApplicationKey&#125;/](#delete-users-userkey-applications-applicationkey) | Revokes user's role in application permission. |
+| [GET /users/&#123;UserKey&#125;/blockedlogins/](#get-users-userkey-blockedlogins) | Gets the users blocked login attempts. This endpoint is available as of LifeTime version 11.13.0. |
+| [DELETE /users/&#123;UserKey&#125;/blockedlogins/](#delete-users-userkey-blockedlogins) | Unblocks a given user. This endpoint is available as of LifeTime version 11.13.0. |
 
 ## Endpoints
 

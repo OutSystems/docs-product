@@ -1034,6 +1034,7 @@
 #Manage Oustsystems platform and app life cycle
 - href: manage-platform-app-lifecycle/intro.md
 - topics:
+    - href: manage-platform-app-lifecycle/database-replica.md
     - href: manage-platform-app-lifecycle/initial-setup-of-an-infrastructure.md
     - href: manage-platform-app-lifecycle/environment-filters.md
     - href: manage-platform-app-lifecycle/maintenance-mode.md

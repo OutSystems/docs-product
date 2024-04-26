@@ -46,12 +46,12 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
 After you follow these steps and publish your module, you can test the functionality of the filter in your browser. The text inserted in the Input of the Search widget is stored in the defined Local Variable and is then used to filter the aggregate. When you change to another screen or close your browser, the Local Variable is destroyed and the filter no longer applies.   
 
-Learn more in this [lesson about Variables](https://www.outsystems.com/training/lesson/2069/variables?LearningPathId=18).  
+Learn more in this [lesson about Variables](https://learn.outsystems.com/training/journeys/web-developer-662/variables/o11/316).  
 
 To practice, check these exercises where you can see examples of Local Variables usage:  
 
-* In Reactive Web development: [Using Local Variables for pagination and sorting](https://www.outsystems.com/training/lesson/2045/pagination-and-sorting-exercise?LearningPathId=18)  
-* In Traditional Web development: [Using Local Variables for data queries and widgets](https://www.outsystems.com/training/lesson/1766/data-queries-and-widgets-ii-exercise?LearningPathId=2)  
+* In Reactive Web development: [Using Local Variables for pagination and sorting](https://learn.outsystems.com/training/journeys/web-developer-662/pagination-and-sorting-exercise/o11/559)  
+* In Traditional Web development: [Using Local Variables for data queries and widgets](https://learn.outsystems.com/training/journeys/traditional-web-developer-655/data-queries-and-widgets-ii-exercise/o11/1126)  
 
 ## Properties
 

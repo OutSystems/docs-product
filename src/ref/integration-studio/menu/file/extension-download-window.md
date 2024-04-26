@@ -8,7 +8,7 @@ summary: The Download from Server window in Integration Studio facilitates downl
 ---
 # Download from Server Window
 
-The ![Animated GIF icon representing download from server](images/download-icon.gif "Download Icon") Download from server window is launched when you are [downloading an extension](<../../../../extensibility-and-integration/integration-studio/managing-extensions/extension-download.md>), in Integration Studio and allows you to download the latest extension version of a given extension.
+The ![Animated GIF icon representing download from server](images/download-icon.gif "Download Icon") Download from server window is launched when you are [downloading an extension](<../../../../integration-with-systems/integration-studio/managing-extensions/extension-download.md>), in Integration Studio and allows you to download the latest extension version of a given extension.
 
 The information and buttons available in the Download from Server window are presented below.
 

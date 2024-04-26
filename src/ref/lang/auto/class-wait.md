@@ -8,7 +8,7 @@ figma:
 
 # Wait
 
-When designing the process flow of your process, you can put your process flow execution on hold. This behavior is implemented through the **Wait** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
+When designing the process flow of your process, you can put your process flow execution on hold. This behavior is implemented through the **Wait** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../building-apps/processes/process-flow/process-flow-toolbox.md>).
 
 The Wait process activity allows you to put your process flow execution on hold until one of the following events occurs:
 
@@ -21,7 +21,7 @@ The Wait process activity allows you to put your process flow execution on hold 
 
     </div>
 
-A Wait process activity can have input parameters, output parameters and [callback actions](<../../../develop/processes/actions-callback/actions-activities-callback.md>).
+A Wait process activity can have input parameters, output parameters and [callback actions](<../../../building-apps/processes/actions-callback/actions-activities-callback.md>).
 
 ## End the Activity on Entity Events
 
@@ -116,7 +116,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 <td>If set to True, the activity execution may be skipped.</td>
 <td>Yes</td>
 <td>No</td>
-<td></td>
+<td>When allowed, skip can be triggered programmatically using the <code>ActivitySkip</code> system action under the <code>(System)</code> reference.</td>
 </tr>
 </tbody>
 </table>

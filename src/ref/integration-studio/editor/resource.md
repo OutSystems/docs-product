@@ -25,7 +25,7 @@ The value of the Deploy Action property indicates where the resource is stored w
 
 ## Comparing with Template
 
-Integration Studio has the necessary mechanisms for merging the changes in Integration Studio and the IDE (Integrated Development Environment), through the [Update Source Code](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-update-source-code.md>) operation.
+Integration Studio has the necessary mechanisms for merging the changes in Integration Studio and the IDE (Integrated Development Environment), through the [Update Source Code](<../../../integration-with-systems/integration-studio/extension-life-cycle/extension-update-source-code.md>) operation.
 
 The [Resources tree](<../resources-tree.md>) contains the ![Icon for the Compare With Template operation in the Resources tree](images/resource-compare.gif "Resource Compare Icon") Compare With Template operation, which allows you to compare the differences between the resource file, stored in the file system, and the template file.
 
@@ -38,7 +38,7 @@ To use this operation, you have to specify the "Compare files using" parameter i
 You can change the properties of a resource at any time. Simply double-click in the resource in the [Resources tree](<../resources-tree.md>) or select the resource in the [Multi-tab editor](<../multi-tab-editors.md>), if the resource editor is already opened.
 
 Import Details
-:   This button is enabled when this resource was added due to [importing actions from a .NET assembly](<../../../extensibility-and-integration/integration-studio/managing-extensions/net-assembly-import-action.md>) and displays a report where you can check for additional information. The following information is displayed:
+:   This button is enabled when this resource was added due to [importing actions from a .NET assembly](<../../../integration-with-systems/integration-studio/managing-extensions/net-assembly-import-action.md>) and displays a report where you can check for additional information. The following information is displayed:
 
 * Resource: Name of the resource with the following syntax:
 

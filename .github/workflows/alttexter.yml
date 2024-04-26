@@ -38,10 +38,11 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           ALTTEXTER_ENDPOINT: ${{ secrets.ALTTEXTER_ENDPOINT }}
           ALTTEXTER_TOKEN: ${{ secrets.ALTTEXTER_TOKEN }}
-          ALTTEXTER_RATEMINUTE: ${{ secrets.ALTTEXTER_RATEMINUTE }}
+          ALTTEXTER_RATEMINUTE: ${{ vars.ALTTEXTER_RATEMINUTE }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TOOLS_PAT: ${{ secrets.TOOLS_PAT }}
           ALTTEXTER_GITHUB_TOKEN_OVERRIDE: ${{ vars.ALTTEXTER_GITHUB_TOKEN_OVERRIDE }}
           ALTTEXTER_GITHUB_USERNAME: ${{ vars.ALTTEXTER_GITHUB_USERNAME }}
           ALTTEXTER_GITHUB_EMAIL: ${{ vars.ALTTEXTER_GITHUB_EMAIL }}
+          ALTTEXTER_SILENTMODE: ${{ vars.ALTTEXTER_SILENTMODE }}
         run: python /app/alttexter-ghclient.py

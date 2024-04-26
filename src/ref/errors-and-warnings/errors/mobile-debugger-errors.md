@@ -8,7 +8,7 @@ figma:
 
 # Mobile Debugger Related Errors
 
-The mobile debugging feature of Service Studio works through a connection to a specific Google Chrome instance which is launched by Service Studio when you start [debugging a mobile app](<../../../develop/troubleshoot/debug/intro.md#mobile-debugging-scenarios>).
+The mobile debugging feature of Service Studio works through a connection to a specific Google Chrome instance which is launched by Service Studio when you start [debugging a mobile app](<../../../debugging-apps/intro.md#mobile-debugging-scenarios>).
 
 Check below for a list of possible errors that may arise when starting or performing a debug session as well as some tips for fixing them.
 

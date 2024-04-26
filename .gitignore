@@ -3,3 +3,4 @@ styles/
 rules/
 .vs/*
 config.yml
+.aider*

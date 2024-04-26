@@ -32,7 +32,7 @@ You can change the properties of the entity at any time. Simply double-click in 
 
 ## Import Details
 
-This button is enabled when this entity is [imported from a database](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-import-from-database.md>), and displays a report where you can check the original table definition and the corresponding entity definition. The following information is displayed:
+This button is enabled when this entity is [imported from a database](<../../../integration-with-systems/integration-studio/managing-extensions/entity-import-from-database.md>), and displays a report where you can check the original table definition and the corresponding entity definition. The following information is displayed:
 
 * **Entity**: Name of the entity and its status with the following syntax:
 

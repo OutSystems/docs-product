@@ -37,13 +37,13 @@ Excel To Record List doesn't validate if the Excel file data has values for all 
 Tip: If you need to import data from an Excel file at **design time**, when developing your application, check the following topics:
 
 * [Create an Entity from an Excel file and import data](../../../getting-started/create-reactive-web.md#create-entity-from-excel), if you don't have an Entity to hold the imported Excel data yet
-* [Bootstrap an Entity Using an Excel File](../../../develop/data/excel-bootstrap.md), if you want to import data to an existing Entity
+* [Bootstrap an Entity Using an Excel File](../../../building-apps/data/excel-bootstrap.md), if you want to import data to an existing Entity
 
 </div>
 
 ## Availability
 
-Excel To Record List is only available in **Server Actions**. In Reactive Web and Mobile apps you must send the uploaded file to the server and then process that file in a Server Action. Check [Enable End Users to Upload Files](../../../develop/ui/inputs/upload.md) for more information.
+Excel To Record List is only available in **Server Actions**. In Reactive Web and Mobile apps you must send the uploaded file to the server and then process that file in a Server Action. Check [Enable End Users to Upload Files](../../../building-apps/ui/inputs/upload.md) for more information.
 
 ## Properties
 

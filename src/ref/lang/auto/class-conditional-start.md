@@ -8,13 +8,13 @@ summary: The article explains how to use the Conditional Start process activity 
 ---
 # Conditional Start
 
-When designing the process flow of your process, you can start a flow when an event occurs in an entity record. This behavior is implemented through the **Conditional Start** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
+When designing the process flow of your process, you can start a flow when an event occurs in an entity record. This behavior is implemented through the **Conditional Start** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../building-apps/processes/process-flow/process-flow-toolbox.md>).
 
 The Conditional Start process activity starts the execution of its flow either when a **record creation** or a **record update** event occurs. However, to ensure that all new incoming events are handled, the Conditional Start does not end its execution after handling an event. For that, every time an event occurs it starts a new execution of the flow and returns itself to listen for the new incoming events.
 
 All Conditional Start activities in the process flow end their execution when the process execution ends.
 
-A Conditional Start process activity can have input parameters, output parameters and [callback actions](<../../../develop/processes/actions-callback/actions-activities-callback.md>).
+A Conditional Start process activity can have input parameters, output parameters and [callback actions](<../../../building-apps/processes/actions-callback/actions-activities-callback.md>).
 
 ## Start Executing on Entity Events
 
@@ -30,7 +30,7 @@ In some cases you may want the Conditional Start to be executed only after one o
 
 This kind of connector is represented as the green dotted connector shown in the image below:
 
-![Green dotted connector indicating dependency for Conditional Start in a process flow diagram](images/dependency-connector.png "Dependency Connector for Conditional Start")
+![Green dotted connector indicating dependency for Conditional Start in a process flow diagram](images/dependency-connector-ss.png "Dependency Connector for Conditional Start")
 
 ## Using Conditional Start Activity References
 
@@ -40,7 +40,7 @@ Service Studio provides you with mechanisms to access Conditional Start process 
 
 Changing the `Start On` property to listen to events from another entity only has effect on Conditional Start instances that are created after the change. All instances that were already executing will continue listening to events from the previous entity. Therefore, you should only make this change when there are no more Conditional Start instances listening to the previous entity.
 
-As a best practice, remember to [limit the number of Conditional Starts in a Process](<../../../develop/processes/best-practices/limit-conditional-starts.md>).
+As a best practice, remember to [limit the number of Conditional Starts in a Process](<../../../building-apps/processes/best-practices/limit-conditional-starts.md>).
 
 ## Properties
 

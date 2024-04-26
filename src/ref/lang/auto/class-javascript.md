@@ -9,7 +9,7 @@ figma:
 
 # JavaScript
 
-Adds JavaScript flow element for [extending](<../../../extensibility-and-integration/javascript/mobile/intro.md>) the OutSystems capabilities with JavaScript code.
+Adds JavaScript flow element for [extending](<../../../integration-with-systems/javascript/mobile/intro.md>) the OutSystems capabilities with JavaScript code.
 
 ## Properties
 

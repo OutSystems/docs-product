@@ -8,7 +8,6 @@ figma:
 
 # Script
 
-
 ## Properties
 
 <table markdown="1">
@@ -45,7 +44,7 @@ figma:
 </tr>
 <tr>
 <td title="Runtime Path">Runtime Path</td>
-<td>Path to the image.</td>
+<td>Path to the script.</td>
 <td>Yes</td>
 <td></td>
 <td></td>

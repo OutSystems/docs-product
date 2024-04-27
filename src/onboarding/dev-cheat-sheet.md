@@ -240,3 +240,4 @@ From the **Interface** tab![Small icon representing the Interface Tab in Service
 Select the Form element widget, and configure the Variable property to bind it to in the properties panel (bottom right).
 
 It may require data conversion (see guidance above).
+

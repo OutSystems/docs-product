@@ -131,15 +131,4 @@ You can find your AD FS server endpoints by going to **Windows Administrative To
 
 ## Configure AD FS as OpenId connect provider in LifeTime
 
-You can configure AD FS as an external IdP by navigating to **Lifetime** > **User Management** > **Authentication Settings** using the the following details for the OIDC provider information:
-
-* **Provider name**: Anything of choice
-* **Well-known Configuration URL**: ``https://<ADFShostname>/adfs/.well-known/openid-configuration``
-* **Client ID Type**: Different Client ID for Desktop and Web tools
-* **Client ID for Web tools**: Copied in step 4 of [Create a server app](#create-a-server-app)
-* **Client ID for Desktop tools**: Copied in step 5 of [Create a native app](#create-a-native-app)
-* **Username Claim**: email (or whatever has been configured at the time of setting up AD FS)
-* **Scopes**: Click the Test button next to the well-known configuration URl. It recommendeds scopes.
-* Click **Save Provider** then **Activate provider**. Enter the  client secret and select **Activate and Log Out**.
-
-    ![Screenshot of the AD FS configuration settings in the LifeTime platform](images/ad-fs-lt.png "AD FS Configuration in LifeTime")
+Follow the steps mentioned [here](external-idp-lifetime.md).

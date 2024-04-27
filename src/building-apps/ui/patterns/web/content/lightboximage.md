@@ -1,5 +1,4 @@
 ---
-tags: runtime-traditionalweb; 
 summary: Light Box Image displays an image thumbnail that is clicked to open a fullscreen image.
 locale: en-us
 guid: 615116df-3bdc-4500-9451-9815ef342240
@@ -73,3 +72,9 @@ After following these steps and publishing the module, you can test the pattern 
 | ImageURL (Text): Optional | URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode. |
 | ImageZoom (Decimal): Optional | Defines the size of the image that opens in full screen mode (based on the thumbnail size).<p>To avoid rendering problems, try to use images with the same ratio.<p>Examples</p><ul><li>2 - A thumbnail with 100x100, and zoom 2 opens with 200x200.</li><li> 0.5 - A thumbnail with 500x500, and zoom 0.5 opens with 250x250.</li></ul></p> |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+<div class="info" markdown="1">
+
+To disable the URL feature, use the class ``disable-url`` on the ExtendedClass parameter.
+
+</div>

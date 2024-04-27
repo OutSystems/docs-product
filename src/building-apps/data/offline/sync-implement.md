@@ -61,7 +61,7 @@ In our example we decided not to start the sync automatically regardless of the 
 ![Interface showing the configuration settings for automatic start of data synchronization](images/step-4-offline.png "Automatic Sync Configuration")
 
 
-# Sync Logic Flow
+## Sync Logic Flow
 
 This is the flow of the sync execution stages. Note that they do not map to the steps in which we created the actual sync logic.
 

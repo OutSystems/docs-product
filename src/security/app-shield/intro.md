@@ -1,6 +1,6 @@
 ---
 summary: Protect your mobile apps against tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse. Check out notes about Google Play app signing.
-tags: support-application_development; runtime-mobile;
+tags: 
 locale: en-us
 guid: bacbf600-bd10-4caf-820a-205c16a58691
 app_type: mobile apps
@@ -214,6 +214,7 @@ These are the values available in the **AppShield** configuration JSON.
 | AddTrustedScreenReaderSigner    | Text         | Android      | If BlockUntrustedScreenreaders is set to True, this option can whitelist a third-party screen reader. This option must be added for each screen reader software that you want to add to the whitelist. |
 | AllowJailbrokenRootedDevices    | Boolean      | iOS, Android | If set to True, users can run the app on the jailbroken devices.                            |
 | AllowScreenshot                 | Boolean      | iOS, Android | If set to True, users can take screenshots of the app.                                      |
+| ApplicationSignerCertificate    | Text(Base64) | iOS, Android | Adds the given certificate to the accepted signers whitelist of the final package. This option must be added for each certificate that you want to add to the whitelist.|
 | AppShieldObfuscationRules       | Text(base64) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
 | BlockDeveloperMode              | Boolean      | iOS, Android | If set to True, the application is blocked from running on iOS devices that have Developer Mode enabled and Android devices with Developer Options unlocked.                                           |
 | BlockUntrustedKeyboards         | Boolean      | Android      | If set to True, untrusted keyboards are detected and blocked.                                           |
@@ -246,34 +247,60 @@ The limitations that are specific to the obfuscation.
 * Native iOS bitcode obfuscation isn't supported.
 * You need to contact Support to get the mapping files.
 
-## Limitations
+## Whitelist signing certificates
 
-**AppShield** has the following limitations.
+One of the security features of **AppShield** is repackaging detection, which prevents the re-signing of the app package.
+However, there are some situations where a re-signing of the application is desired and/or required (for example, the Google Play App Signing is required when uploading .aab to the Google Play Store).
+For those reasons, **AppShield** allows to whitelist certificates, so that a given signature is considered safe within the repackaging security analysis.
 
-### General
+### How to obtain the signing certificate { #obtain-the-signing-certificate }
 
-* On iOS the plugin doesn't block user-initiated screenshots, it only notifies the app that a screenshot was taken. OutSystems currently doesn't support this event. However, **AppShield** blocks taking screenshots of the iOS App Switcher.
+#### For iOS
 
-* After MABS creates a build with the **AppShield** plugin active and signs the build, you can't sign that build again manually because the app would recognize that as a sign of tampering.
+If you have the **PKCS12 file**, do the following:
 
-## Google Play App Signing
+1. Run the command `keytool -storetype PKCS12 -keystore <pkcs12-file> -storepass <store-pass> -alias <alias> -exportcert -rfc > certificate.pem`. You should now have a **certificate.pem** file. An alternative is to run the command `openssl pkcs12 -in <pcks12-file> -nokeys -password pass:<password> -out certificate.pem`. Depending on the certificate and the openssl version, the `-legacy` option might be required.
 
-<div class="info" markdown="1">
+1. Open the **certificate.pem** file in a text editor and copy the content between **-BEGIN CERTIFICATE-** and **-END CERTIFICATE-**.
 
-This applies to apps for Google Play Store that have the app signing feature enabled.
+#### For Android
 
-</div>
+If you have the **Keystore file**, do the following:
 
-One of the security features of **AppShield** is repackaging detection. This protection prevents the re-signing of the app package but also causes incompatibility with the Google Play App Signing. You can fix this by providing information about the certificate in the **AppShield** settings.
+1. Run the command `keytool -keystore <keystore-file> -storepass <store-pass> -alias <alias> -exportcert -rfc > certificate.pem`. You should now have a **certificate.pem** file.
 
-In the **Android section** of the Extensibility Configurations JSON, add the **name** with `GooglePlayAppSigningCertificate` and the **value** with the public key. Here is an example:
+1. Open the **certificate.pem** file in a text editor and copy the content between **-BEGIN CERTIFICATE-** and **-END CERTIFICATE-**.
 
-```
+
+If the signing certificate is the **App Signing Certificate** from the Google Play App Signing feature, do the following:
+
+1. From Google Play Console download the **App Signing Certificate** available in the **App Signing** fragment.
+
+1. Convert the **.der** file to **.pem** by running the command `openssl x509 -inform der -in deployment_cert.der -out certificate.pem`. You should now have a **certificate.pem** file.
+
+1. Open the **certificate.pem** file in a text editor and copy the content between **-BEGIN CERTIFICATE-** and **-END CERTIFICATE-**.
+
+### How to whitelist the signing certificate
+
+You can whitelist signing certificates using the `ApplicationSignerCertificate` preference. The value of the preference must be the signing certificate obtained by following the steps in the [How to obtain the signing certificate](#obtain-the-signing-certificate) section.
+
+The `ApplicationSignerCertificate` preference can be specified multiple times. Each certificates provided in the value of that preference will be whitelisted by AppShield. This means that AppShield will detect applications signed with any of those certificates as secure.
+
+With the `ApplicationSignerCertificate` feature, the certificate of the keystore provided to MABS is also whitelisted. This means that the app retrieved from MABS can be directly installed on any device (because the application will be signed with a trusted certificate).
+
+In the **Android and/or iOS section** of the [Extensibility Configurations JSON](../../deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/extensibility-configurations-json-schema.md), add the **name** with `ApplicationSignerCertificate` and the **value** with the public key. Here is an example:
+```json
 {
     "preferences": {
         "android": [
             {
-                "name": "GooglePlayAppSigningCertificate",
+                "name": "ApplicationSignerCertificate",
+                "value": "[public-key-certificate]"
+            }
+        ],
+        "ios": [
+            {
+                "name": "ApplicationSignerCertificate",
                 "value": "[public-key-certificate]"
             }
         ]
@@ -281,18 +308,12 @@ In the **Android section** of the Extensibility Configurations JSON, add the **n
 }
 ```
 
-To get the values for **[public-key-certificate]**, do the following:
-
-1. From Google Play Console download the **App Signing Certificate** available in the **App Signing** fragment.
-
-1. Convert the **.der** file to **.pem** by running the command `openssl x509 -inform der -in deployment_cert.der -out certificate.pem` You should now have a **certificate.pem** file.
-
-1. Open the **certificate.pem** file in a text editor and copy the content between **-BEGIN CERTIFICATE-** and **-END CERTIFICATE-**.
-
 After these changes steps, generate a new build of your mobile app.
 
-<div class="warning" markdown="1">
+## Limitations
 
-If you generate an app in MABS with Play App Signing on, you need to sign the app via Google Play before you install it on your device. An unsigned app won't work, even if you install it by running the installer directly on the device.
+**AppShield** has the following limitations:
 
-</div>
+* On iOS the plugin doesn't block user-initiated screenshots, it only notifies the app that a screenshot was taken. OutSystems currently doesn't support this event. However, **AppShield** blocks taking screenshots of the iOS App Switcher.
+
+* After MABS creates a build with the **AppShield** plugin active and signs the build, you can't sign that build again manually because the app would recognize that as a sign of tampering.

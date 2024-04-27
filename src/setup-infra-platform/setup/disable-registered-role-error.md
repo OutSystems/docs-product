@@ -9,7 +9,7 @@ figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your
 
 # Disable Registered Role Required error logs
 
-It's common to find the error `Registered Role Required` in the error logs. This error happens when a request is made to the server by the app after the session has expired. Considering the asynchronous nature of reactive and mobile apps that contain multiple actions, these errors can multiply in the error logs. Sometimes, OutSystems developers consider these messages irrelevant and prefer to disable them. This article gives a context about why these error messages happen and how to disable them.
+It's common to find the error `Registered Role Required` in the error logs. This error happens when a request is made to the server by the app after the session has expired. Considering the asynchronous nature of reactive and mobile apps that contain multiple actions, these errors can multiply in the error logs. Sometimes, OutSystems developers consider these messages irrelevant and prefer to disable them. This article gives a context about why these error messages happen and how to disable them. 
 
 ![](images/disable-registered-role-error-sc.png)
 

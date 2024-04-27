@@ -28,13 +28,35 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
 1. Enter the following details according to the OIDC provider you are using:
 
-    1. **Name**: ID Provider
+    * **Name**: ID Provider
 
-    1. **Well-known Configuration URL**: OpenID Connect metadata document URI
+    * **Well-known Configuration URL**: OpenID Connect metadata document URI
 
-        You can validate the URL using the **Test configuration** link.
+        **Note**: Click the **Test** button to verify the well-known URL. This action will also add some recommended scopes required for OIDC connection in the future.
+
+   * **Client ID Type**: Select one of the following:
+
+        * Single Client ID for Desktop and Web tools
+
+        * Different Client ID for Desktop and Web tools
+
+            If you choose the **Use a different Client Ids for Desktop and Web tools** option, enter the following:
+
+            * **Client ID for Desktop tools**: Native Application’s Client ID
+           
+            * **Client ID for Web tools**: Web Application’s Client ID
+
+    * **Client ID**: Client ID for both desktop and web tools.
+        
+    * **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
+
+        <div class="info" markdown="1">
+
+         For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
+
+         </div>
        
-    1. **Scopes**: Clicking the **Test** button after you enter the well-known configuration URL fetches all the scopes supported and enabled in the identity provider. The scopes are displayed on the **Configuration details** section. Any required scope for the user authentication process can be added and saved for the configuration.
+    * **Scopes**: Clicking the **Test** button after you enter the well-known configuration URL fetches all the scopes supported and enabled in the identity provider. The scopes are displayed on the **Configuration details** section. Any required scope for the user authentication process can be added and saved for the configuration.
   
           
        **Note:** Please follow these guidelines when selecting values for scopes:
@@ -48,7 +70,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
        Selecting values outside the provided list may result in errors or data inconsistencies.
        
         **Default Selected Scopes**:
-          By default, the following scopes are added for all identity providers and cannot be removed:
+          If the following scopes are supported by identity providers then they are added by default and cannot be removed:
        
         * openid
        
@@ -75,47 +97,23 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
          *   **AD FS**:
                     For AD FS, it is recommended to add the **allatclaims** scope. This scope requests the access token claims in the identity token.
 
-          **Note**: The recommended additional scopes mentioned above are not exhaustive, and users should consult their identity provider's documentation for specific scope requirements.
+        **Note**: The recommended additional scopes mentioned above are not exhaustive, and users should consult their identity provider's documentation for specific scope requirements.
+       
+        ![LifeTime authentication settings interface displaying scope configuration options for OpenID Connect](images/auth-settings-scope-lt.png "Configuring Scopes in Authentication Settings")
 
-     1. **Client ID Type**: Select one of the following:
+ 1. Click **Save Changes**.
 
-        * Single Client ID for Desktop and Web tools
-
-        * Different Client ID for Desktop and Web tools
-
-            If you choose the **Use a different Client Ids for Desktop and Web tools** option, enter the following:
-
-            * **Client ID for Desktop tools**: Native Application’s Client ID
-           
-            * **Client ID for Web tools**: Web Application’s Client ID
-
-    1. **Client ID**: Client ID for both desktop and web tools.
-        
-    1. **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
-
-        <div class="info" markdown="1">
-
-         For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
-
-         </div>
-
-    ![LifeTime authentication settings interface displaying scope configuration options for OpenID Connect](images/auth-settings-scope-lt.png "Configuring Scopes in Authentication Settings")
-
-1. Click **Save Changes**.
-
-1. Click **Activate**.
+ 1. Click **Activate**.
 
     The **Activate OpenID Connect provider** pop-up is displayed. 
 
-    ![Activate OpenID Connect provider pop-up window in LifeTime](images/activate-openid-provider-lt.png "Activating OpenID Connect Provider")
+     * Enter the **Client Secret**.
 
-1. Enter the **Client Secret**.
+     * Select the **Clear all local user’s passwords now (Recommended)** checkbox.
 
-1. Select the **Clear all local user’s passwords now (Recommended)** checkbox.
+        For more information about clearing user’s passwords, see [Clearing built-in password credentials](#clearing-built-in-password-credentials).
 
-    For more information about clearing user’s passwords, see [Clearing built-in password credentials](#clearing-built-in-password-credentials).
-
-1. Click **Activate and Log Out**. 
+     * Click **Activate and Log Out**. 
 
     ![Log out confirmation dialog in LifeTime after activating OpenID Connect provider](images/log-out-lt.png "Log Out Confirmation")
 

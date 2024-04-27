@@ -1,13 +1,21 @@
 ---
 summary: The Firebase Cloud Messaging plugin for OutSystems enables sending of both normal and silent notifications to mobile app users, with support for custom actions, sounds, and back-end notification service setup
-tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 locale: en-us
 guid: a941e1f8-94f8-400c-8e44-fa969cce59d8
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2218:14983
 ---
-# Firebase Cloud Messaging Plugin
+# Firebase Cloud Messaging plugin using server actions
+
+
+<div class="info" markdown="1">
+
+This article applies only to Firebase Cloud Message plugin version 4.0.0 and newer. The newer versions use [server actions](#server-actions-reference) to manage the notifications.
+
+If you are still using Firebase Cloud Message plugin version 3.0.1 and older, OutSystems recommends that you migrate to version 4.0.0 and newer by June 2024.
+ 
+</div>
 
 The [Firebase Cloud Messaging plugin](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) lets you set a notification experience that starts the Firebase cross-platform messaging solution. This plugin lets you send normal and silent notifications to your mobile app users. Normal notifications can include customizable actions and sounds.
 
@@ -68,13 +76,6 @@ The following steps show how to create a back-end notification service and how t
 
 ## Set up a back-end notification service { #set-back-end }
 
-<div class="info" markdown="1">
-
-The Cloud Messaging Configurator, version 1.1.0 and older, is deprecated. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref). This means the **v2** and **v1** endpoints will no longer be functional.
-
-The Cloud Messaging Configurator's REST APIs have been replaced by server actions available on the Firebase Cloud Messaging Plugin. If you are consuming these APIs, they must be replaced with the server actions as soon as possible.
-
-</div>
 
 To set up a back-end notification service, follow these steps:
 
@@ -102,23 +103,35 @@ To set up a back-end notification service, follow these steps:
 
         **Note**: In addition to encrypting the Firebase Service Account File, the binary data associated with the Firebase Service Account File is required to use the Plugin’s Server Actions for notification triggering. This means that there should be a simple way to fetch this information in the app. One way to achieve this is to associate it with the Firebase Project Identifier by, for example, keeping this mapping stored in a database table.
 
-Now you can start to create the UI for your back-end notification service. For example, to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin), associate the **SendNotificationToUsers** Server Action to a button and add logic to retrieve your Service Account file.
+Now you can start to create the UI for your back-end notification service. For example, to send a notification to a user on the associated Firebase project (using an app with the Cloud Messaging plugin), associate the **SendNotificationToUsers** Server Action to a button and add logic to retrieve your Service Account file. 
+
+If you want to send the notification to specific users, note that these are identified by their Firebase Token, that can be obtained with the **GetToken** client action. You can find this ID on the Firebase Project Settings under the Cloud Messaging tab. 
+
+To send a notification to all users, or to all Android or iOS users, you need to fill the **SenderID** structure attribute of the **SendRequest** parameter. You can find this ID on the Firebase Project Settings under the Cloud Messaging tab. 
+
+Moreover, to send a notification specifically to all Android or iOS users, you should set the **SendToPlatform** structure attribute to one of the values in the **Platform** static entity that the plugin provides.
 
 ![Image illustrating the configuration of Server Action call for Firebase Cloud Messaging](images/fcm-server-action-call.png "FCM Server Action Call Configuration")
 
-Other available methods include **SendNotificationToTopics**, **SendSilentNotificationToUsers**, and **SendSilentNotificationToTopics**.
+Other available methods include **SendNotificationToTopics**, **SendSilentNotificationToUsers**, and **SendSilentNotificationToTopics**. 
+
+For silent notifications (**SendSilentNotificationToUsers** and **SendSilentNotificationToTopics**), the **TimeToLive** structure attribute sets the notifications' expiration time. More specifically, if the **TimeValue** for a specific **TimeUnit** is greater than 0, the message will persist in the local storage and be delivered at the first opportunity, until the expiration time has passed.
+
+For topic notifications (**SendNotificationToTopics**, **SendSilentNotificationToTopics**), set the topics for which a notification will be delivered to in the **SendToTopics** structure attribute.
 
 ## Enable basic notification functions in your app { #enable-notifications }
 
 This section describes some of the actions that you can use to leverage notification functions on your mobile app.
 
-On first use, you might want to send to receive notifications to your app user. For that, you can use the **RegisterDevice** action on the initialization of your app. On first use, this action displays a native request permission, dialog and upon user acceptance, the device is registered on the Firebase Cloud Messaging service and is ready to receive notifications. On future verifications, you can always use the **CheckPermission** action to verify if the app has permission to receive notifications.
+On first use, you might want to register your users to receive notifications. For that, you can use the **RegisterDevice** action when your app opens. For example, if the user isn’t already registered, you can call the **RegisterDevice** action on the **OnReady** event of the app’s home screen. On first use, this action displays a native permission request and, upon user acceptance, the device is registered on the Firebase Cloud Messaging service, ready to receive notifications.
 
-Alternatively, you can provide an explicit way to register and unregister the device from the Firebase cloud Messaging service using the **RegisterDevice** / **UnregisterDevice** actions. Then associate the actions to a UI element such as a toggle.
+Alternatively, you can provide an explicit way to register and unregister the device from the Firebase Cloud Messaging service using the **RegisterDevice** / **UnregisterDevice** actions. Then associate the actions to a UI element such as a toggle.
+
+To prevent errors, it's a good practice to first check if the plugin is available using the **CheckCloudMessagingPlugin** action.
 
 ![Screenshot showing the logic flow for registering a device with Firebase Messaging](images/firebase-messaging-logic-register-device-ss.png "Firebase Messaging Register Device Logic")
 
-After registering the device on the Firebase Cloud Messaging service, the active device's token becomes available and can be retrieved using the action **GetToken**.
+After registering the device on the Firebase Cloud Messaging service, the active device's token becomes available and can be retrieved using the action **GetToken**. For iOS devices, the Apple Push Notification service token can also be retrieved, using the **GetAPNsToken** action.
 
 To manage topic subscriptions, you can use the **Subscribe / Unsubscribe** actions. The user will need to set the topic name to which the app will subscribe (or unsubscribe). If the topic doesn't exist yet on the Firebase Cloud Messaging project, it creates a new one.
 
@@ -183,11 +196,19 @@ A Cloud Messaging notification is by default presented in the notification cente
 
 You need to add this block to each screen that might handle the notification content.
 
+Optionally, you can use the **NotificationDialog** block, which provides a notification dialog UI inside the app.
+
 ## Manage the experience of custom actions using the Notifications block. { #custom-actions-ux }
 
 A Cloud Messaging notification is by default presented in the notification center, however the developer might want to handle the notification content in-app when the app is on foreground. To enable this you can use the **NotificationsHandler** block, using **InternalRouteActionClicked** for custom actions. This block triggers events that pass the parameters of both notifications and silent notifications to the context of the app.
 
 You need to add this block to each screen that might handle the notification content.
+
+## Manage the experience of notification clicks
+
+When the end-user clicks on a notification in the notification center, the app opens by default. If you want your app to handle the notification click, you can use the **NotificationsHandler** block and define a handler for the **NotificationClicked** event.
+
+If you want to navigate to a screen inside your app when the end-user clicks on a notification, you can use the **BuildInternalDeepLink** client action from the plugin. Our Sample App has this scenario implemented. If you want to do something else after the end-user clicks on a notification, simply implement your logic in the handler you create for the **NotificationClicked** event.
 
 ## Optional setup for notification Channel Name and Description - Android only
 
@@ -210,6 +231,10 @@ By default the Cloud Messaging plugin defines values for the notification channe
 }
 ```
 
+The following image illustrates how the notification channel's name and description will appear in the user device:
+
+![Screenshot of notification channel name and description](images/fcm-notification-channel.png "Notification Channel")
+
 ## Limitations
 
 ### On Silent Notifications
@@ -225,6 +250,12 @@ For more information see: Apple documentation
 For both iOS and Android.
 
 Firebase SDKs for Android and iOS do not support subscribing to topics for which the name contains spaces, like `TV Shows`.
+
+### On Transitive Dependencies
+
+Starting on version 4.0.0 of the plugin, builds of your app can fail if:
+1. it contains a dependency to another app, mobile or web, that includes an asset from the Firebase Cloud Messaging plugin
+2. the app doesn't include the necessary configuration files for Firebase plugins (e.g. google-services.json).
 
 ## On Compatibility with Firebase Performance
 

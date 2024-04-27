@@ -1,6 +1,5 @@
 ---
 summary: Cloud Messaging Configurator API for the Firebase Cloud Messaging Plugin.
-tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 locale: en-us
 guid: 612389e2-3fb0-455c-8506-eebc7627615b
 app_type: mobile apps

@@ -12,19 +12,19 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 
 <div class="info" markdown="1">
 
-Applies only to Traditional Web Apps.
+Applies only to Traditional Web apps.
 
 </div>
 
-To decrease the deployment time, it is sometimes useful to deploy a single module of an application, instead of [deploying the entire application](<deploy-an-application.md>). This feature is only available for Web applications.
+To decrease the deployment time, it's sometimes useful to deploy a single module of an application, instead of [deploying the entire application](<deploy-an-application.md>). This feature is only available for Web applications.
 
 Here's an example of how to do it.
 
-## Deploy One Module of an Application to Quality
+## Deploy one module of an app to Quality
 
 In this example, MyBigWebApp is a web application with several modules. It has changes in one module (MyBigWebApp4) and we only want to deploy this module to Quality.
 
-### Choose the Module to Deploy
+### Choose the module to deploy
 
 In the 'Application' tab, click the **Deploy...** green button between Development and Quality.
 

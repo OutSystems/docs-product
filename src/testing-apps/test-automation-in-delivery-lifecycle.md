@@ -32,7 +32,7 @@ Other than that, we commonly observe an anti-pattern where this process doesn't 
 
 With the proposed team organization, acceptance criteria is defined  in the earliest collaborative sessions between all three roles (PO, DEV, and QA — commonly called "the three amigos.") This streamlines the process and avoids stumbling during the development and test stages, or misinterpreting expected outcomes. The discussions between the three roles are at the core of [Behavior-Driven Development (BDD.)](https://www.agilealliance.org/glossary/bdd/) The aim is to build software that not only works correctly, but serves business needs.
 
-Those discussions should happen during the [backlog refinement sessions](https://www.agilealliance.org/glossary/backlog-grooming/), where the teams already discuss the development details of their user stories to ensure that they are ready for sprint. This way, a test definition, which includes acceptance criteria, design for testability, and test strategies, will be just another subject added to the details of a user story.
+Those discussions should happen during the backlog refinement sessions, where the teams already discuss the development details of their user stories to ensure that they are ready for sprint. This way, a test definition, which includes acceptance criteria, design for testability, and test strategies, will be just another subject added to the details of a user story.
 
 It is important to define testing as a detail of the user story rather than leaving it till the end of the meeting. Not foregrounding testing makes it a second-tier concern that doesn't get the attention it deserves.
 

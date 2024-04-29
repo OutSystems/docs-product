@@ -31,7 +31,7 @@ To receive logs in Datadog or Splunk, you must set up an OpenTelemetry Collector
 
 <div class="info" markdown="1">
 
-* If the OpenTelemetry Collector implementation is OLTP over HTTP, according to the [OpenTelemetry specification](https://opentelemetry.io/docs/specs/otlp/#otlphttp-request) then, the default URL path for requests that carry log data is ``v1/logs``. If you are using OTLP/HTTP, you must add this path to the URL endpoint for a successful connection and data transfer.
+* If the OpenTelemetry Collector implementation is OLTP over HTTP, according to the [OpenTelemetry specification](https://opentelemetry.io/docs/specs/otlp/#otlphttp-request) then, the default URL path for requests that carry log data is `v1/logs`. In this case, you must add this path to the URL endpoint in LifeTime, for example: `https://my-colletor.com/v1/logs`.
 
 * While monitoring to avoid unexpected connection failure, you must keep track and renew the SSL/TLS certificate used in the OpenTelemetry collector before the expiration date.
 

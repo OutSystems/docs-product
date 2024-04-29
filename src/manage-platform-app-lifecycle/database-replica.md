@@ -3,7 +3,7 @@ summary:
 tags:
 locale: en-us
 guid: 706c08f9-df6b-4bac-bb20-0e683262cadd
-app_type: traditional web apps, reactive web apps
+app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 ---
@@ -12,7 +12,7 @@ figma:
 
 <div class="info" markdown="1">
 
-Database Replica is included in OutSystems' [Limited Availability (LA)](https://success.outsystems.com/support/release_notes/outsystems_product_releases/#limited-availability-la) program.
+Database Replica is under a [Limited Availability (LA)](https://success.outsystems.com/support/release_notes/outsystems_product_releases/#limited-availability-la) program.
 
 </div>
 
@@ -78,8 +78,8 @@ Only 2 read-only credentials are available with access to:
 
 * ```OSUSR_*``` (business app tables)
 
-* ```OSSYS_USER``` (User platform system table)
+* ```OSSYS_USER``` (Users system table)
 
-* ```OSSYS_ROLE``` (Permission platform system table)
+* ```OSSYS_ROLE``` (Roles system table)
 
-* ```OSSYS_USER_ROLE``` (Association of the User and Permissions system tables).
+* ```OSSYS_USER_ROLE``` (Roles per User system table).

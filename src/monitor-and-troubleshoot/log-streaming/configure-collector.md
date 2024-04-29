@@ -11,7 +11,7 @@ This article explains how to set up the OpenTelemetry collector for Application 
 
 ## Prerequisites
 
-* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
+* Enabled [Logs separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
 
 * Installed Platform Server version 11.23.1 or higher.
 
@@ -29,7 +29,11 @@ To receive logs in Datadog or Splunk, you must set up an OpenTelemetry Collector
 
 1.  Run the OpenTelemetry Collector. 
 
-**Note**: If the OpenTelemetry Collector implementation is OLTP over HTTP, according to the [OpenTelemetry specification](https://opentelemetry.io/docs/specs/otlp/#otlphttp-request), the default URL path for requests that carry log data is ``v1/logs``. If using OTLP/HTTP, you must add this path to the URL endpoint for a successful connection and data transfer.
+**Notes**: 
+
+* If the OpenTelemetry Collector implementation is OLTP over HTTP, according to the [OpenTelemetry specification](https://opentelemetry.io/docs/specs/otlp/#otlphttp-request), the default URL path for requests that carry log data is ``v1/logs``. If using OTLP/HTTP, you must add this path to the URL endpoint for a successful connection and data transfer.
+
+* Monitoring: in order to avoid unexpected connection failure, it is advised for Customers to keep track and renew their SSL/TLS certificate used in the OpenTelemetry collector before the expiration date.
 
 ## Example file with a basic configuration
 

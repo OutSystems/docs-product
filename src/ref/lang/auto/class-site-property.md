@@ -14,7 +14,7 @@ A site property is a global variable that has a constant value, or a value that 
 
 By design, site property values have a limit of 2000 characters. The usable number of characters of a site property value can be less than 2000 characters depending on different scenarios:
 
-* It's set as a secure site property.
+* It's set as a secret site property.
 * The encoding of the value.
 * The platform's database character encoding configuration.
 

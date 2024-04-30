@@ -1,6 +1,5 @@
 ---
 summary: To install and run OutSystems, you need permissions to change files in the file system, run services, listen to specific ports, and make changes to the database.
-tags: support-devOps; support-installation; support-Installation_Configuration; support-Integrations_Extensions
 locale: en-us
 guid: e7fb04c6-9cb6-48d9-a4e7-8d4ad3702613
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -40,24 +39,29 @@ Also, the OutSystems installers creates registry entries to store some configura
 
 During the installation, OutSystems registers a set of services on the server. You can start and stop these services using the Windows Management Console.
 
+The executable and configuration files are located in `C:\Program Files\OutSystems\Platform Server\` with some exceptions:
+- For Scheduler Service, since Platform Server version 11.11.1, they're located in `C:\Program Files\OutSystems\Platform Server\Scheduler\`.
+- For Deployment Service, since Platform Server version 11.24.0, they're located in `C:\Program Files\OutSystems\Platform Server\DeployService\`.
+- For Deployment Controller Service, since Platform Server version 11.25.0, they're located in `C:\Program Files\OutSystems\Platform Server\CompilerService\`.
+
 ### For platform versions prior to 11.18:
 
-|Service|Executable C:\Program Files\OutSystems\Platform Server|Configuration C:\Program Files\OutSystems\Platform Server|Account|
+|Service|Executable|Configuration|Account|
 |-------|-------|-------|-------|
-|Compiler|CompilerService.exe|CompilerService.exe.config|OSControllerUser|
-|DeployService|DeployService.exe|DeployService.exe.config|Local System account|
-|Scheduler|Scheduler.exe|Scheduler.exe.config|OSSchedulerUser|
+|Deployment Controller Service|CompilerService.exe|CompilerService.exe.config|OSControllerUser|
+|Deployment Service|DeployService.exe|DeployService.exe.config|Local System account|
+|Scheduler Service|Scheduler.exe|Scheduler.exe.config|OSSchedulerUser|
 
 
 ### For platform versions 11.18 or later:
 
-|Service|Executable C:\Program Files\OutSystems\Platform Server|Configuration C:\Program Files\OutSystems\Platform Server|Account|
+|Service|Executable|Configuration|Account|
 |-------|-------|-------|-------|
 |SMS Connector|SmsConnector.exe|SmsConnector.exe.config|Local System account|
-|Compiler|CompilerService.exe|CompilerService.exe.config|NT Service\OutSystems Deployment Controller Service|
-|DeployService|DeployService.exe|DeployService.exe.config|Local System account|
+|Deployment Controller Service|CompilerService.exe|CompilerService.exe.config|NT Service\OutSystems Deployment Controller Service|
+|Deployment Service|DeployService.exe|DeployService.exe.config|Local System account|
 |Log|LogServer.exe|LogServer.exe.config|Local System account|
-|Scheduler|Scheduler.exe|Scheduler.exe.config|NT Service\OutSystems Scheduler Service|
+|Scheduler Service|Scheduler.exe|Scheduler.exe.config|NT Service\OutSystems Scheduler Service|
 
 Note: When using SQL Server as the platform database with Windows Authentication, OutSystems services (OutSystems Deployment Controller Service, OutSystems Deployment Service, OutSystems Scheduler Service) run under the configured Windows account.
 

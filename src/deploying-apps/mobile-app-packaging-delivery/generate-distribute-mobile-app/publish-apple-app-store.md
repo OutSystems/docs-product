@@ -1,6 +1,5 @@
 ---
 summary: Generate a mobile app package for your mobile app to publish in the Apple App Store.  Distribute your mobile app directly to your company's end users, if you enrolled in the Apple Enterprise Developer Program.
-tags: runtime-mobile; support-mobile
 locale: en-us
 guid: 3d02e722-3225-47fa-b343-d6188e21d174
 app_type: mobile apps
@@ -12,7 +11,7 @@ figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20A
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps.
+Applies only to Mobile apps.
 
 </div>
 
@@ -145,6 +144,8 @@ The size of your IPA increases due to the addition of Apple's Swift libraries. T
 Only available if you enrolled in the [Apple Developer Program](https://developer.apple.com/programs/).
 
 Now that [your application is prepared](#Application-Preparation) and the IPA file generated you can now [submit your application for review](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-for-review). Apple is going to review your application before making it available in the App Store.
+
+For more information about privacy updates for Apple App Store submissions, refer [here](privacy-updates-for-apple-app-store-submissions.md)
 
 The process is complete. You'll receive feedback from Apple about your application submission.
 

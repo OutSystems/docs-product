@@ -632,6 +632,8 @@
             - topics:
                 - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/publish-google-play-store.md
                 - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/publish-apple-app-store.md
+                - topics:
+                    - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/privacy-updates-for-apple-app-store-submissions.md
             - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/more-information.md
             - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/configuration-native-platforms.md
         - href: deploying-apps/mobile-app-packaging-delivery/mobile-app-update-scenarios.md
@@ -647,6 +649,7 @@
             - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/advanced.md
             - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/troubleshooting-know-issues.md
         - href: deploying-apps/mobile-app-packaging-delivery/compliance-with-third-party-licenses.md
+
 # Integration with external systems
 - href: integration-with-systems/intro.md
 - topics:
@@ -677,15 +680,22 @@
     - topics:
         - href: integration-with-systems/mobile-plugins/barcode/intro.md
         - href: integration-with-systems/mobile-plugins/camera/intro.md
-        - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
+        - topics:  
+            - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-transfer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-viewer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/firebase/intro.md
-        - href: integration-with-systems/mobile-plugins/firebase/firebase-messaging.md
+        - topics:
+            - href: integration-with-systems/mobile-plugins/firebase/firebase-messaging.md
+            - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-messaging-plugin-configurator-api.md
+            - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-api-v1-v2.md
         - href: integration-with-systems/mobile-plugins/health-fitness/intro.md
+        - topics:
+            - href: integration-with-systems/mobile-plugins/health-fitness/intro_v2.md
         - href: integration-with-systems/mobile-plugins/social-login/intro.md
-        - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md
+        - topics:
+            - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md
         - href: integration-with-systems/mobile-plugins/ssl-pinning/intro.md
         - href: integration-with-systems/mobile-plugins/payments-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/cordova-plugin/intro.md
@@ -835,11 +845,13 @@
 # Monitor and troubleshoot
 - href: monitor-and-troubleshoot/intro.md
 - topics:
+    - href: monitor-and-troubleshoot/log-information-in-action-flows.md
     - href: monitor-and-troubleshoot/troubleshoot-service.md
     - href: monitor-and-troubleshoot/trace-executed-queries.md
     - href: monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md
     - href: monitor-and-troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md         
     - href: monitor-and-troubleshoot/monitoring-an-environment.md
+    - href: setup-infra-platform/setup/disable-registered-role-error.md
     - href: monitor-and-troubleshoot/monitor-env-activity.md
     - href: monitor-and-troubleshoot/monitor-usage-with-audit-logs.md
     - href: monitor-and-troubleshoot/enable-analytics-for-an-environment.md
@@ -1022,6 +1034,7 @@
 #Manage Oustsystems platform and app life cycle
 - href: manage-platform-app-lifecycle/intro.md
 - topics:
+    - href: manage-platform-app-lifecycle/database-replica.md
     - href: manage-platform-app-lifecycle/initial-setup-of-an-infrastructure.md
     - href: manage-platform-app-lifecycle/environment-filters.md
     - href: manage-platform-app-lifecycle/maintenance-mode.md
@@ -1060,15 +1073,15 @@
     - href: migration-to-odc/preparation/o11architecture-to-odc-architecture.md
     - href: migration-to-odc/preparation/refactoring-o11-application/intro.md
     - topics:
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-bpt.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-extensions.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-structures.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-roles.md
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-serveraction-to-serviceaction.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-soap.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-roles.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-structures.md
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-systementities.md
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-siteproperties.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-extensions.md       
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-soap.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-bpt.md        
     - href: migration-to-odc/reference.md
 # Reference
 - href: ref/intro.md
@@ -1832,7 +1845,6 @@
         - href: ref/apis/emails-api.md
         - href: ref/apis/auto/enhancedwebreferences-api.final.md
         - href: ref/apis/auto/epa-taskbox-api.final.md
-        - href: ref/apis/firebase-cloud-api-v1-v2.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/auto/includejavascript-api.final.md
         - href: ref/apis/javascript/intro.md
@@ -1854,9 +1866,15 @@
             - topics:
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
+                - href: ref/apis/lifetime-deployment/examples/api-deploy-infrastructure.md
+                - href: ref/apis/lifetime-deployment/examples/api-map-database-connections.md
                 - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md
+                - href: ref/apis/lifetime-deployment/examples/api-register-env.md                
                 - href: ref/apis/lifetime-deployment/examples/api-register-env.md
                 - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
+                - href: ref/apis/lifetime-deployment/examples/api-request-code.md
+                - topics:
+                    - href: ref/apis/lifetime-deployment/examples/api-unable-to-download-code.md
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
         - href: ref/apis/auto/lifetime-sdk.final.md
@@ -1868,6 +1886,7 @@
         - href: ref/apis/auto/platformruntime-api.final.md
         - href: ref/apis/processes-api.md
         - href: ref/apis/rest-extensibility-api.md
+        
         # RuntimePublic.Db API
         - href: ref/apis/runtimepublic-db/intro.md
         - topics:
@@ -1880,3 +1899,4 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
+

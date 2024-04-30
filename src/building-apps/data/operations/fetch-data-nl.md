@@ -3,7 +3,7 @@ summary: Fetch data in your apps using human language.
 locale: en-us
 guid: A2F9928D-5F44-4DA0-B567-EDC9191E4A7B
 app_type: traditional web apps, mobile apps, reactive web apps
-platform-version: O11, ODC
+platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=2421:23528
 ---
 

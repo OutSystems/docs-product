@@ -26,7 +26,7 @@ Firebase is a Google mobile development platform that speeds up the mobile app c
 
 <div class="info" markdown="1">
 
-To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Migrating_to_the_supported_Firebase-based_mobile_plugins).
+To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://www.outsystems.com/tk/redirect?g=0999bb9f-af58-4fc6-ba6d-9c411958eedc).
 
 </div>
 
@@ -82,6 +82,12 @@ You must provide the plugin configuration file as settings in the Service Studio
 1. Select the **google-services.json** file and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
     Repeat this step for the **GoogleService-Info.plist** file.
+
+    <div class="info" markdown="1">
+
+    The iOS file extension **.plist** may not be recognised by the Windows IIS Server and can lead to build issues. If this happens, add the file's MIME type to the server's MIME Types list, associating the **application/xml** MIME type with the **.plist** file name extension.
+
+    </div>
 
 1. In the **Deploy Action** list, select **Deploy to Target Directory**. Leave the **Target Directory** field empty.
 

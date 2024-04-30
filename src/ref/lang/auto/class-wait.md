@@ -116,7 +116,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 <td>If set to True, the activity execution may be skipped.</td>
 <td>Yes</td>
 <td>No</td>
-<td></td>
+<td>When allowed, skip can be triggered programmatically using the <code>ActivitySkip</code> system action under the <code>(System)</code> reference.</td>
 </tr>
 </tbody>
 </table>

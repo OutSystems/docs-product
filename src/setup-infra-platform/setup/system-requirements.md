@@ -1,5 +1,5 @@
 ---
-summary: Check the hardware and software requirements to install OutSystems on-premises.
+summary: 
 tags: 
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
@@ -70,7 +70,12 @@ Apart from standard Oracle Database setups, OutSystems platform 8.0 and onwards 
 
 * Microsoft .NET Framework 4.8 (supported since Platform Server 11 – Release Oct.2019 CP2) or Microsoft .NET Framework 4.7.2
 * Microsoft Build Tools 2015
-* .NET 6.0 Runtime & Hosting Bundle for Windows
+* .NET Runtime & Hosting Bundle for Windows in the following versions, depending on the Platform Server version:
+    * .NET 8.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.27.0 or newer
+    * .NET 6.0 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.17.1 and 11.26.0
+    * .NET 3.1 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.12.2 and 11.17.0
+    * .NET 2.1 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.12.1 and 11.0.539.0 (Release Jul.2019 CP1)
+    * .NET 2.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.0.528.0 (Release Jul.2019) and older
 * Microsoft Visual C++ 2015-2022 Redistributable (x64) (only for Platform Server version 11.21.0 or above)
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
@@ -87,6 +92,7 @@ You can upgrade to the latest Patch of RabbitMQ Server, and the latest Minor of 
 
 The following are the minimum Patch versions of RabbitMQ Server and Erlang per Platform Server version:
 
+* For Platform Server 11.27.0 and higher: RabbitMQ Server 3.13.0 and Erlang version 26.2.2
 * For Platform Server 11.19.0 and higher: RabbitMQ Server 3.10.14 and Erlang version 25.1.2
 * From Platform Server 11.15.0 to 11.18.1: RabbitMQ Server 3.9.11 and Erlang version 24.2
 * From Platform Server 11.13.2 to 11.14.1: RabbitMQ Server 3.8.21 and Erlang version 23.2
@@ -262,6 +268,7 @@ Limitations:
 
 #### Operating System
 
+* Windows 11 (64-bit) since Integration Studio 11.14.23
 * Windows 10 (64-bit)
 * Microsoft Windows Server 2019, since Development Environment 11.6.5
 * Microsoft Windows Server 2016

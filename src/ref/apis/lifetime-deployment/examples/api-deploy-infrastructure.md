@@ -65,7 +65,7 @@ The following are example API calls (requests and responses) for each step.
 
 Start by calling the API method that returns all the available environments on the infrastructure to determine the source environment key (this step is only necessary if  you don't have this information already).
 
-Request: `GET/lifetimeapi/rest/v2/environments/`
+Request: `GET /lifetimeapi/rest/v2/environments/`
 
 Response body:
 
@@ -106,11 +106,11 @@ Response body:
 
 Call the API method that returns all the available apps in the environment to find the application key:
 
-Request: `GET/lifetimeapi/rest/v2/environments/{EnvironmentKey}/apps/`
+Request: `GET /lifetimeapi/rest/v2/environments/{EnvironmentKey}/applications/`
 
 After replacing the `{EnvironmentKey}` placeholder with the correct key, you get the following final URL:
 
-Request: `GET/lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/apps/`
+Request: `GET /lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/applications/`
 
 Response body:
 
@@ -138,11 +138,11 @@ Please note that the app modules must not be IPP protected. IPP protected module
 
 Call the API method that returns the link to download the app's binary (.oap file).
 
-Request: `GET/lifetimeapi/rest/v2/environments/{EnvironmentKey}/apps/{ApplicationKey}/content`
+Request: `GET /lifetimeapi/rest/v2/environments/{EnvironmentKey}/applications/{ApplicationKey}/content`
 
 After replacing the `{EnvironmentKey}` and `{ApplicationKey}` placeholders with the correct keys, you get the following final URL:
 
-Request: `GET/lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/apps/8c9101e2-5ed7-4f20-96a0-e23b435be4d1/content`
+Request: `GET /lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/applications/8c9101e2-5ed7-4f20-96a0-e23b435be4d1/content`
 
 Response body:
 
@@ -163,7 +163,7 @@ Using the URL from the last request, you can get the binary file you'll deploy t
 
 Start by calling the API method that returns all the available environments on the infrastructure to determine the source environment key (this step is only necessary if  you don't have this information already).
 
-Request: `GET/lifetimeapi/rest/v2/environments/`
+Request: `GET /lifetimeapi/rest/v2/environments/`
 
 Response body:
 
@@ -204,11 +204,11 @@ Response body:
 
 Call the API method that returns all the available apps in the environment to find the application keys:
 
-Request: `GET/lifetimeapi/rest/v2/environments/{EnvironmentKey}/apps/`
+Request: `GET /lifetimeapi/rest/v2/environments/{EnvironmentKey}/applications/`
 
 After replacing the `{EnvironmentKey}` placeholder with the correct key, you  get the following final URL:
 
-Request: `GET/lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/apps/`
+Request: `GET /lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/applications/`
 
 Response body:
 
@@ -237,11 +237,11 @@ Please note that the app modules must not be IPP protected. IPP protected module
 
 Call the API method that creates a solution with a list of apps:
 
-Request: `POST/lifetimeapi/rest/v2/environments/{EnvironmentKey}/solution`
+Request: `POST /lifetimeapi/rest/v2/environments/{EnvironmentKey}/solution`
 
 After replacing the `{EnvironmentKey}` placeholder with the correct key, you get the following final URL:
 
-Request: `POST/lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/solution`
+Request: `POST /lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/solution`
 
 Request body:
 
@@ -265,11 +265,11 @@ Response body: `Ae1ef38a-f4cf-47be-b1c3-5df4417a1b94`
 
 Call the API method that returns the status of the solution package:
 
-Request: `GET/lifetimeapi/rest/v2/environments/{EnvironmentKey}/solutionstatus/{SolutionKey}`
+Request: `GET /lifetimeapi/rest/v2/environments/{EnvironmentKey}/solutionstatus/{SolutionKey}`
 
 After replacing the `{EnvironmentKey}` and `{SolutionKey}` placeholders with the correct keys, you get the following final URL:
 
-Request: `GET/lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/solutionstatus/Ae1ef38a-f4cf-47be-b1c3-5df4417a1b94`
+Request: `GET /lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/solutionstatus/Ae1ef38a-f4cf-47be-b1c3-5df4417a1b94`
 
 If the operation is successful, the response body contains the actual status of the solution and the status reason (when the solution status is aborted), which can be:
 - Gathering Dependencies: The process is calculating all the dependencies for the solution.
@@ -293,11 +293,11 @@ Response body:
 
 Call the API method that returns the link to download the solution's binary (.osp file).
 
-Request: `GET/lifetimeapi/rest/v2/environments/{EnvironmentKey}/solution/{SolutionKey}`
+Request: `GET /lifetimeapi/rest/v2/environments/{EnvironmentKey}/solution/{SolutionKey}`
 
 After replacing the `{EnvironmentKey}` and `{SolutionKey}` placeholders with the correct keys, you get the following final URL:
 
-Request: `GET/lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/solution/Ae1ef38a-f4cf-47be-b1c3-5df4417a1b94`
+Request: `GET /lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/solution/Ae1ef38a-f4cf-47be-b1c3-5df4417a1b94`
 
 If the status of the solution is different from Completed, it will return a 400 HTTP Status Code.
 
@@ -388,7 +388,7 @@ Start the deployment execution by calling the following API method using  the st
 
 Adapting the template above to our example:
 
-Request: `POST/lifetimeapi/rest/v2/deployments/16e9ad8a-9afa-46f8-8e3d-34f3b3e6d2cd/start/`
+Request: `POST /lifetimeapi/rest/v2/deployments/16e9ad8a-9afa-46f8-8e3d-34f3b3e6d2cd/start/`
 
 If the start command is successful, OutSystems  returns a 202 Accepted HTTP status code, with an empty response body.
 

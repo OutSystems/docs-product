@@ -16,7 +16,7 @@ The Invalid Data Dependency error is issued in the following situations:
 
 * `'{0}' can depend on single data source only. Remove the references to other data sources.`
   
-    A data source can only depend on another data source (e.g. Screen Aggregates, Data Actions). One data source cannot depend on two, or more, data sources. Merge multiple data sources into one or reference a client variable instead.
+    A data source can only depend on another data source (for example, Screen Aggregates, or Data Actions). One data source can't depend on two or more data sources. Merge multiple data sources into one or reference a client variable instead.
 
 * `Loop detected in '{0}'. Edit the data source references to remove circular dependency.`
   

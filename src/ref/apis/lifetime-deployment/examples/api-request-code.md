@@ -143,7 +143,7 @@ Example "EmployeeBackoffice" application key: **c9a7a82e-0eee-4a3d-8e22-2a19c69c
 
 This API returns the package key for an application on a given environment.
 
-`POST/environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess`
+`POST /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess`
 
 Replace the `{EnvironmentKey}` and `{ApplicationKey}` with values retrieved from Step 1 and Step 2 and make a request:
 

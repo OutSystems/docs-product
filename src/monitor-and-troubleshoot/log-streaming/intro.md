@@ -58,6 +58,16 @@ For APM tools that don't support native ingestion of OTLP log data such as **Dat
 
 </div>
 
+## Requirements for use
+
+Before you start streaming logs, ensure you have:
+
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
+
+* Installed Platform Server version 11.23.1 or higher.
+
+* Installed LifeTime version 11.19.0 or higher.
+
 ## Supported application performance monitoring tools
 
 OutSystems supports the following APM tools:

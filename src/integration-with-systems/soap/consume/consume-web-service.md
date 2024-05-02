@@ -34,7 +34,7 @@ To consume a SOAP Web Service in your application, do the following:
 
 Be aware that, for all remote WSDL files, the URL address must be accessible from the machine running **Platform Server** and not directly from Service Studio.
 
-![Illustration showing the requirement for the WSDL file to be accessible from the Platform Server in OutSystems](images/soap-get-wsdl-from-ps.png "WSDL File Accessibility")
+![Illustration showing the requirement for the WSDL file to be accessible from the Platform Server in OutSystems](images/wsdl-files-diag.png "WSDL File Accessibility")
 
 When you consume a SOAP Web Service, OutSystems does the following for you:
 

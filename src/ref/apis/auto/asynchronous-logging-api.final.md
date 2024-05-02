@@ -44,7 +44,7 @@ Instant
 
 RequestKey
 :   Type: Text.  
-    The GUID that identifies the request. Use the Request_GetKey action of the RuntimePlatform API to get this value.
+    The GUID that identifies the request. Use the Request_GetKey action of the PlatformRuntime API to get this value.
 
 ModuleName
 :   Type: Text. Mandatory.  
@@ -80,7 +80,7 @@ Instant
 
 RequestKey
 :   Type: Text. Mandatory.  
-    The GUID that identifies the request. Use the Request_GetKey action of the RuntimePlatform API to get this value.
+    The GUID that identifies the request. Use the Request_GetKey action of the PlatformRuntime API to get this value.
 
 RequestEventName
 :   Type: Text. Mandatory.  

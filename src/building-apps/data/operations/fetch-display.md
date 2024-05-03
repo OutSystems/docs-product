@@ -21,7 +21,7 @@ This document guides you through two steps:
 
 Here is how you can fetch data in your app by using an Aggregate. Aggregates are a handy way to get data, and they don't require knowledge of databases. As this is a simple app, you can reference the data directly from the main module.
 
-<iframe src="https://vimeo.com/942168038" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
+<iframe src="https://player.vimeo.com/video/942168038" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
 
 <div class="info" markdown="1">
 
@@ -69,7 +69,7 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
 Once you fetch data from the database, use one of many OutSystems widgets to show the data to the users. Continuing from the previous section, in this example you create a list with the employee last names.
 
-<iframe src="https://vimeo.com/942168052" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Demonstration showcasing the process of displaying data within a widget.</iframe>
+<iframe src="https://player.vimeo.com/video/942168052" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Demonstration showcasing the process of displaying data within a widget.</iframe>
 
 1. Open your **Home** Screen for editing. To do that, double-click **Home** in  **Interface** > **UI Flows** > **Main Flow**.
 

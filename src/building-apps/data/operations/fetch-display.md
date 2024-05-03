@@ -14,13 +14,14 @@ You often need to fetch data from a database to, for example, show it on the scr
 
 This document guides you through two steps:
 
-1. Getting data. You first need to load some data from your database. The example uses Entities from OutSystems sample data, but you can use your Entities as well. 
+1. Getting data. You first need to load some data from your database. The example uses Entities from OutSystems sample data, but you can use your Entities as well.
 1. Showing data. Once your app has data, you can show all records or just some. The example uses the List widget, but you can add a Table or some other widget.
-
 
 ## Fetch data from a database
 
 Here is how you can fetch data in your app by using an Aggregate. Aggregates are a handy way to get data, and they don't require knowledge of databases. As this is a simple app, you can reference the data directly from the main module.
+
+<iframe src="https://vimeo.com/942168038" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
 
 <div class="info" markdown="1">
 
@@ -60,14 +61,15 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
     </div>
 
-1. Go back to **Interface** > **UI Flows** > **Main Flow** > **Home** and notice the **GetEmployees** Aggregate in the Screen. Expand the Aggregate to see the Entities, and then expand the Entities to list the Attributes. There's also a warning that you're not using the data anywhere. Follow the instructions on [how to show the data in an app](#showing-data) to prevent the warning. 
+1. Go back to **Interface** > **UI Flows** > **Main Flow** > **Home** and notice the **GetEmployees** Aggregate in the Screen. Expand the Aggregate to see the Entities, and then expand the Entities to list the Attributes. There's also a warning that you're not using the data anywhere. Follow the instructions on [how to show the data in an app](#showing-data) to prevent the warning.
 
     ![Screenshot showing the GetEmployees Aggregate in the Home Screen of OutSystems Service Studio](images/fetch-data-aggregate-in-screen-ss.png "Aggregate Displayed in OutSystems Screen")
-
 
 ## Show data in a widget
 
 Once you fetch data from the database, use one of many OutSystems widgets to show the data to the users. Continuing from the previous section, in this example you create a list with the employee last names.
+
+<iframe src="https://vimeo.com/942168052" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Demonstration showcasing the process of displaying data within a widget.</iframe>
 
 1. Open your **Home** Screen for editing. To do that, double-click **Home** in  **Interface** > **UI Flows** > **Main Flow**.
 

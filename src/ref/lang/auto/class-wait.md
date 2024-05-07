@@ -43,8 +43,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 
 | Name | Description | Mandatory | Default value | Observations |
 |---|---|---|---|---|
-| Description | Text that documents the element. | | | Useful for documentation purpose.
-The maximum size of this property is 2000 characters. |
+| Description | Text that documents the element. | | | Useful for documentation purposes.The maximum size of this property is 2000 characters. |
 | Label | Text displayed in the back-office when an instance of this Wait activity is executed. | | | If not defined, the displayed text will be the Wait process activity name. |
 | Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes | | |
 | Public | Indicates whether this process activity can be used by other modules. | Yes | No | 	This property is only available for process activities that were created in the current module. When a process activity is public its process must also be public. |

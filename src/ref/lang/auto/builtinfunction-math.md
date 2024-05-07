@@ -8,41 +8,14 @@ figma:
 
 # Math
 
-
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#Abs">Abs</a>(&#8203;Decimal)</td>
-<td>Returns the absolute value (unsigned magnitude) of the decimal number 'n'.</td>
-</tr>
-<tr>
-<td><a href="#Mod">Mod</a>(&#8203;Decimal, Decimal)</td>
-<td>Returns the remainder of decimal division of 'n' by 'm'.</td>
-</tr>
-<tr>
-<td><a href="#Power">Power</a>(&#8203;Decimal, Decimal)</td>
-<td>Returns 'n' raised to the power of 'm'.</td>
-</tr>
-<tr>
-<td><a href="#Round">Round</a>(&#8203;Decimal, Integer)</td>
-<td>Returns the Decimal number 'n' rounded to a specific number of 'fractional digits'.<br/>The round method applied depends on where the function is used:<br/>- In <b>expressions in client-side and server-side logic</b>, applies the method round half to even (rounds to the nearest integer, 0.5 rounds to the nearest even integer).<br/>- In aggregates that query <b>SQL Server or Oracle databases</b>, applies the method round half away from 0 (rounds to the nearest integer, 0.5 rounds the number further away from 0).<br/>- In aggregates that query <b>iDB2 databases</b>, applies the method round half up (rounds to the nearest integer, 0.5 rounds up).</td>
-</tr>
-<tr>
-<td><a href="#Sqrt">Sqrt</a>(&#8203;Decimal)</td>
-<td>Returns the square root of the Decimal number 'n'.</td>
-</tr>
-<tr>
-<td><a href="#Trunc">Trunc</a>(&#8203;Decimal)</td>
-<td>Returns the Decimal number 'n' truncated to integer removing the decimal part of 'n'.</td>
-</tr>
-</tbody>
-</table>
+| Name | Description |
+|---|---|
+| [Abs](#Abs)(​Decimal) | Returns the absolute value (unsigned magnitude) of the decimal number 'n'. |
+| [Mod](#Mod)(​Decimal, Decimal) | Returns the remainder of decimal division of 'n' by 'm'. |
+| [Power](#Power)(​Decimal, Decimal) | Returns 'n' raised to the power of 'm'. |
+| [Round](#Round)(​Decimal, Integer) | Returns the Decimal number 'n' rounded to a specific number of 'fractional digits'.<br/>The round method applied depends on where the function is used:<ul><li>In **expressions in client-side and server-side logic**, applies the method round half to even (rounds to the nearest integer, 0.5 rounds to the nearest even integer).</li><li> In **aggregates that query SQL Server or Oracle databases**, applies the method round half away from 0 (rounds to the nearest integer, 0.5 rounds the number further away from 0).</li><li> In **aggregates that query iDB2 databases**, applies the method round half up (rounds to the nearest integer, 0.5 rounds up).</li></ul> |
+| [Sqrt](#Sqrt)(​Decimal) | Returns the square root of the Decimal number 'n'. |
+| [Trunc](#Trunc)(​Decimal) | Returns the Decimal number 'n' truncated to integer removing the decimal part of 'n'. |
 
 ## Abs { #Abs }
 

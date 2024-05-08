@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Sidebar shows additional content on the side of the screen.
+summary: Explore how to implement and customize the Sidebar UI Pattern in OutSystems 11 (O11) for enhanced user interface design in Traditional Web Apps.
 locale: en-us
 guid: e04f67a0-6c80-4d32-b519-55fb5ff7a04b
 app_type: traditional web apps

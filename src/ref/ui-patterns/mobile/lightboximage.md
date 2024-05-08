@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced use cases for the Lightbox Image UI Pattern.
+summary: Explore image manipulation and REST API integration in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: b0e2b293-97b8-47b4-abfe-d5b99df4bc3c
 app_type: mobile apps, reactive web apps

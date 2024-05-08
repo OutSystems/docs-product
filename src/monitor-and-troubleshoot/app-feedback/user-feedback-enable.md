@@ -1,5 +1,5 @@
 ---
-summary: Let users to send feedback while from an app.
+summary: OutSystems 11 (O11) enables user feedback for apps through the App Feedback system, allowing configuration and user-specific restrictions.
 locale: en-us
 guid: 7679b3a4-2a80-4ddf-9e85-e470c8af8428
 app_type: traditional web apps, mobile apps, reactive web apps

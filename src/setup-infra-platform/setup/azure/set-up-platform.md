@@ -1,6 +1,6 @@
 ---
 tags: support-Installation_Configuration; support-Installation_Configuration-overview; support-installation;
-summary: Instructions on how to set up OutSystems on Microsoft Azure, from running the solution wizard and registering the environments, to installing the UI components.
+summary: Learn how to deploy and configure OutSystems 11 (O11) on Microsoft Azure, including licensing, certificate installation, and environment registration.
 locale: en-us
 guid: 4a33c4a9-87b2-4ce0-9523-93c937f53fdd
 app_type: traditional web apps, mobile apps, reactive web apps

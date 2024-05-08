@@ -1,6 +1,6 @@
 ---
 helpids: 30042
-summary: Reference information on the Popover Menu widget for adding a container that opens when the user taps an element or a region.
+summary: Explore the properties, events, and runtime attributes of the Popover Menu in OutSystems 11 (O11).
 locale: en-us
 guid: 41d66ab0-f67a-49f8-adf1-931415c3047e
 app_type: traditional web apps, mobile apps, reactive web apps

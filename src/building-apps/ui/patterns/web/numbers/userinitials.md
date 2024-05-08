@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: User Initials display user information in a circular badge.
+summary: OutSystems 11 (O11) supports the User Initials UI Pattern for displaying user initials or images in a circular badge within Traditional Web Apps.
 locale: en-us
 guid: 079fe985-0d1e-435c-984a-cbd125908f13
 app_type: traditional web apps

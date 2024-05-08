@@ -1,4 +1,5 @@
 ---
+summary: Learn how to address consumed web service integrity warnings in OutSystems 11 (O11) when the WSDL changes or the URL becomes inaccessible.
 locale: en-us
 guid: f80b680e-8d63-4def-bbf0-c3fdf279d3a2
 app_type: traditional web apps, mobile apps, reactive web apps

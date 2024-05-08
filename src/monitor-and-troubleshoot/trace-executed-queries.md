@@ -1,5 +1,5 @@
 ---
-summary: Adding information about the query origin to executed SQL queries allows you to trace underperforming queries back to your OutSystems applications.
+summary: OutSystems 11 (O11) enhances database troubleshooting by allowing DBAs to trace queries back to specific modules and actions in OutSystems applications.
 locale: en-us
 guid: 179d378b-8fcb-4446-b8c6-b67abeb1e608
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -42,7 +42,7 @@ Do the following:
 
 1. Enable the **Add Query Origin to Generated SQL** setting under "Publish".
     
-    ![](images/add-query-origin-fc.png)
+    ![Screenshot highlighting the 'Add Query Origin to Generated SQL' option in the Factory Configuration settings.](images/add-query-origin-fc.png "Factory Configuration Setting for Query Origin")
 
 1. Click **Apply**.
 

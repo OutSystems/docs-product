@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use a MongoDB integration in your apps.
+summary: Learn how to integrate MongoDB with OutSystems 11 (O11) for enhanced database interactions and management.
 locale: en-us
 guid: 929211ce-87e5-4927-a399-36c6b342d1a8
 app_type: traditional web apps, mobile apps, reactive web apps

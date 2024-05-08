@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb; 
-summary: Learn how you can use Utility patterns to enhance the look of you UI.
+summary: Explore the utilities available in OutSystems 11 (O11) for Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: 40cc0cb9-22c3-43eb-a930-106067fda21c
 app_type: mobile apps, reactive web apps

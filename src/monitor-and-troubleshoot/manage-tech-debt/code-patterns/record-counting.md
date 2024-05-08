@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: 
+summary: Explore how OutSystems 11 (O11) optimizes record counting in aggregates and addresses challenges in SQL queries.
 locale: en-us
 guid: 63b22fd8-b156-4c3e-b95a-16b5ace39c62
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -25,7 +25,7 @@ The platform in SQL queries runs the same query without the Maxrecords limitatio
 
 1. To count the number of rows of a SQL Query, copy the query designed to retrieve data and adapt it with the sole goal of counting number of rows:
   
-    ![](images/appropriate-record-counting.png)
+    ![Flowchart showing the optimization of a SQL query for record counting by replacing column names with Count(1), simplifying table joins, and removing the ORDER BY clause.](images/appropriate-record-counting.png "Optimizing SQL Query for Record Counting")
 
 1. Don’t use the `.Count` property, in Aggregates or SQL queries, just to test if the query returned something or not. Testing `<Query>.List.Empty` instead of testing `<Query>.Count = 0` saves a costly run of an extra query just to count elements when all you want is to check if the result is empty or not.  
   

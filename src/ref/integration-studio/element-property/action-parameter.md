@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) action parameter properties are detailed in a table format, specifying mandatory and optional settings, default values, and data types.
 locale: en-us
 guid: c1e911aa-f9af-45e6-b0b9-495695392881
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Upgrading the cache invalidation service in a fault-tolerant environment.
+summary: OutSystems 11 (O11) cache invalidation upgrade strategies include full-stop and rolling upgrades, each with specific pros and cons.
 tags: version-11; support-Installation_Configuration
 locale: en-us
 guid: 54a92414-2911-11ed-b1a1-00155d847f89

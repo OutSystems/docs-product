@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Dropdown Select UI Pattern.
+summary: Explore CSS customization options for Dropdown Select UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 4d9ccb38-173c-42fa-9f2f-6ea73e338b52
 app_type: traditional web apps

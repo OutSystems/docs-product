@@ -1,5 +1,5 @@
 ---
-summary: Use light process execution for large scale batch processing scenarios, such as an event broker.
+summary: OutSystems 11 (O11) enables scalable database queueing with light process execution for faster event processing.
 tags: support-webapps;
 locale: en-us
 guid: 99aedeaf-deb9-440c-b1e7-258b60875e00

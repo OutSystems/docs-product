@@ -4,7 +4,7 @@ guid: f9c4bf6c-a906-4df6-9272-a29b3d26466e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:440
-summary: The article explains different situations that trigger the 'Invalid Excel Import' error and how to resolve them
+summary: Explore common causes and solutions for the 'Invalid Excel Import' error in OutSystems 11 (O11).
 ---
 # Invalid Excel Import Error
 

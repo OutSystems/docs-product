@@ -1,5 +1,5 @@
 ---
-summary: The article explains how modifying parameters in OutSystems process flows can suspend executing process instances
+summary: Explore how modifying parameters in OutSystems 11 (O11) impacts the execution of process instances.
 locale: en-us
 guid: b41e47d0-4d8d-4c37-84fb-b49af5783548
 app_type: traditional web apps, mobile apps, reactive web apps

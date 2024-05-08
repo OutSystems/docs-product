@@ -1,5 +1,5 @@
 ---
-summary: Check how to configure your OutSystems environment to secure session cookies and how to activate the secure cookie flag while developing the app.
+summary: OutSystems 11 (O11) enhances security by enabling secure session and application cookies to protect sensitive information during transmission.
 locale: en-us
 guid: e65820c4-3550-4a5d-be8d-54531bada121
 app_type: traditional web apps, mobile apps, reactive web apps

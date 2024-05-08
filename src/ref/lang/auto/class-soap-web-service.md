@@ -1,4 +1,5 @@
 ---
+summary: Explore SOAP Web Service properties and configurations in OutSystems 11 (O11).
 helpids: 11003, 11001
 locale: en-us
 guid: b3443ec2-7cb3-43e7-a8b9-1651890a5985

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb; 
-summary: Advanced use cases for the Rating UI Pattern
+summary: Explore the features and API of the Rating component in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: cde868f5-0402-49de-8c91-0754724634cc
 app_type: mobile apps, reactive web apps

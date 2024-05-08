@@ -1,5 +1,5 @@
 ---
-summary: Reference of the View menu.
+summary: Explore toolbar and status bar customization options in the View menu of OutSystems 11 (O11).
 locale: en-us
 guid: 208451d7-67e3-43f8-bf9d-8250f7d4e78c
 app_type: traditional web apps, mobile apps, reactive web apps

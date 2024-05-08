@@ -1,5 +1,5 @@
 ---
-summary: Alert gets the end user's attention and highlights important information, errors or warnings on the screen.
+summary: Learn how to implement and customize the Alert UI Pattern in OutSystems 11 (O11) for Traditional Web Apps to display important messages.
 locale: en-us
 guid: 8b7fa781-fd52-47d6-a24a-1f0ffa05b99b
 app_type: traditional web apps

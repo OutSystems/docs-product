@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn more about the issues that can occur while publishin an Experience Builder app. This topic includes a list of all the warning and blockers in Experience Builder.
+summary: Explore how OutSystems 11 (O11) Experience Builder manages app publishing through blockers and warnings identification.
 locale: en-us
 guid: bc1675fa-8742-45a2-bf28-5f5eafd826c0
 app_type: traditional web apps, mobile apps, reactive web apps

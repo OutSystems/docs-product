@@ -4,7 +4,7 @@ guid: 5f5a5642-dccc-4d7b-beea-773622e175c1
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:329
-summary: The Header Row Widget is an automatic component of the Table Records Widget in Traditional Web Apps, used to display table headers
+summary: Explore the Header Row Widget in OutSystems 11, which automatically integrates with the Table Records Widget for Traditional Web Apps.
 ---
 
 # Header Row Widget

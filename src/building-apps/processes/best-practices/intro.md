@@ -1,4 +1,5 @@
 ---
+summary: Explore best practices for designing efficient processes in OutSystems 11 (O11) to enhance performance.
 tags: support-application_development; support-webapps
 locale: en-us
 guid: 98721b97-6825-472f-9fa8-f9199b7a261d

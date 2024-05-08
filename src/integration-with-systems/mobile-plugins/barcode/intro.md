@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use the barcode plugin to scan barcodes and QR codes.
+summary: Learn how to integrate and utilize the Barcode Plugin in OutSystems 11 (O11) for scanning various barcode formats in native mobile apps.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 22ea5600-8b2b-4ad3-8e64-06e512155c58

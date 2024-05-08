@@ -1,5 +1,5 @@
 ---
-summary: Invalid character in a page name when working with SEO. 
+summary: Explore how OutSystems 11 (O11) handles Invalid Format errors in page names by enforcing SEO-friendly URL guidelines.
 tags:
 locale: en-us
 guid: 6f21e13b-c858-496b-bd91-942d787e8457

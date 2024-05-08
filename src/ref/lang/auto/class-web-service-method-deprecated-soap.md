@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) deprecates consumed SOAP 1.1 Web Services, transitioning to support SOAP 1.2 in new modules.
 locale: en-us
 guid: b6f1f703-4aca-4ec5-afa7-6277b63230d6
 app_type: traditional web apps, mobile apps, reactive web apps

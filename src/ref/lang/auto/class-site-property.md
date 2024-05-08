@@ -5,7 +5,7 @@ guid: dc811245-bcef-4579-bcee-3530a997eecd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1526:2630
-summary: The article explains how to create and use a site property in an application to manage values like maximum records for an aggregate
+summary: Explore how OutSystems 11 (O11) utilizes site properties to manage global variables and integrate secure data handling in applications.
 ---
 
 # Site property

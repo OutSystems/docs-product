@@ -1,6 +1,6 @@
 ---
 helpids: 4029
-summary: Reference information on the If widget for displaying content on the screen based on a condition.
+summary: OutSystems 11 (O11) features the If Widget, which dynamically displays content based on evaluated conditions at runtime.
 locale: en-us
 guid: 0db36704-5f51-4287-8d29-771859e6e7f3
 app_type: traditional web apps, mobile apps, reactive web apps

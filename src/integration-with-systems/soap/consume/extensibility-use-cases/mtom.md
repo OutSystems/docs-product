@@ -1,5 +1,5 @@
 ---
-summary: How to add support for Message Transmission Optimization Mechanism (MTOM) using the SOAP Extensibility API.
+summary: Learn how to enable MTOM in SOAP messages for optimized transmission using OutSystems 11 (O11) in this technical guide.
 locale: en-us
 guid: 37ee4b4e-0cfb-471e-aa97-6fb0bb427ff4
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Explore the Radio Button Widget in OutSystems 11 (O11), designed for creating mutually exclusive option selections in Traditional Web Apps.
 helpids: 4045
 locale: en-us
 guid: 5f9dcef2-c781-41b5-bc68-914d4cdaec29

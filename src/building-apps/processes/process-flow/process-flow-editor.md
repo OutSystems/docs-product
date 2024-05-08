@@ -1,5 +1,5 @@
 ---
-summary: Learn more about this specific editor where you can define the process flow of your processes.
+summary: Explore the Process Flow Editor in OutSystems 11 (O11), a tool for defining and managing process flows within Service Studio.
 locale: en-us
 guid: 3b354b39-f6fa-46a2-9ee0-95f82dedbff1
 app_type: traditional web apps, mobile apps, reactive web apps

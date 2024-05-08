@@ -1,5 +1,5 @@
 ---
-summary: How to create one-to-many relationships between entities in OutSystems.
+summary: OutSystems 11 (O11) supports creating one-to-many relationships between entities using foreign keys.
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: b6ccd0f3-6d0c-4628-bb6a-b9c9e40bc3a0

@@ -1,5 +1,5 @@
 ---
-summary: The article lists keyboard shortcuts for Service Studio on Windows and macOS
+summary: Explore keyboard shortcuts for OutSystems 11 (O11) across various development environments and operating systems.
 locale: en-us
 guid: d508b2f0-f667-4a03-8117-20292875c195
 app_type: traditional web apps, mobile apps, reactive web apps

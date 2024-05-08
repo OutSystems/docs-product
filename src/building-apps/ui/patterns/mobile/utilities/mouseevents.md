@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: The Mouse Events UI Pattern enables click events on a specific widget or pattern.
+summary: Explore high-precision element selection in OutSystems 11 (O11) using the Mouse Events UI Pattern for Mobile and Reactive Web Apps.
 locale: en-us
 guid: 95bf7d02-e8a6-4ca9-a080-cc4e80cb1629
 app_type: mobile apps, reactive web apps
@@ -26,7 +26,7 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
     The Mouse Events widget is displayed.
 
-    ![](images/mouseevents-1-ss.png)
+    ![Screenshot showing the Mouse Events widget in the Service Studio toolbox.](images/mouseevents-1-ss.png "Mouse Events Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -40,53 +40,53 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
 1. From the Toolbox, drag the Mouse Events widget into the Main Content area of your application's screen.
 
-    ![](images/mouseevents-2-ss.png)
+    ![Screenshot of dragging the Mouse Events widget into the Main Content area in Service Studio.](images/mouseevents-2-ss.png "Dragging Mouse Events Widget")
 
 1. From the Toolbox, drag the Center Content widget into the Main Content area of your screen.
  
-    ![](images/mouseevents-3-ss.png)
+    ![Screenshot showing the Center Content widget being dragged into the Main Content area in Service Studio.](images/mouseevents-3-ss.png "Center Content Widget")
 
 1. On the **Properties** tab, enter a name in the **Name** property. In this example, we enter `card`.
 
-    ![](images/mouseevents-4-ss.png)
+    ![Screenshot of the Properties tab where the Center Content widget is named 'card'.](images/mouseevents-4-ss.png "Naming the Center Content Widget")
 
 1. Add 2 local variables by right-clicking on your screen name and selecting **Add Local Variable**.
 
     In this example we call name them **Drag** and **Distance**. Both local variables are of data type text.
 
-    ![](images/mouseevents-5-ss.png)
+    ![Screenshot showing the addition of two local variables named 'Drag' and 'Distance' in Service Studio.](images/mouseevents-5-ss.png "Adding Local Variables")
 
 1. Add the relevant content to the Center Content widget placeholders. 
 
    In this example, we add text and 2 expressions to the Center placeholder, and text to the Bottom placeholder. 
 
-   ![](images/mouseevents-6-ss.png)
+   ![Screenshot displaying text and expressions added to the Center placeholder of the Center Content widget.](images/mouseevents-6-ss.png "Content in Center Placeholder")
 
    Each of the expressions are set to the local variables respectively (**Drag** and **Distance**).
 
-   ![](images/mouseevents-7-ss.png)
+   ![Screenshot showing expressions set to local variables 'Drag' and 'Distance' in the Center Content widget.](images/mouseevents-7-ss.png "Expressions Linked to Local Variables")
 
 1. Add a client action by right-clicking your screen name and selecting **Add Client Action**.
 
 1. Enter a name for the client action. In this example, we enter `MouseEventsMove`.
 
-   ![](images/mouseevents-8-ss.png)
+   ![Screenshot of the Service Studio interface with a new client action named 'MouseEventsMove'.](images/mouseevents-8-ss.png "Adding a Client Action")
 
 1. Add 2 input parameters by right-clicking the client action and selecting **Add Input Parameter**.
 
     In this example, we add the **OffsetX** and **OffsetY** input parameters and set their data type to decimal.
 
-    ![](images/mouseevents-9-ss.png)
+    ![Screenshot showing the addition of two input parameters named 'OffsetX' and 'OffsetY' to the client action.](images/mouseevents-9-ss.png "Adding Input Parameters")
 
 1. Add the relevant logic to the client action. In this example, we add the following:
 
-    ![](images/mouseevents-10-ss.png)
+    ![Screenshot of the logic flow for the 'MouseEventsMove' client action in Service Studio.](images/mouseevents-10-ss.png "Client Action Logic")
 
 1. Select the Mouse Events widget and set the **WidgetId**, **PreventDefaults**, and the **Handler** properties. 
 
     In this example, the **WidgetId** is set to **card.Id**, the **PreventDefaults** to **False**, **OfFsetX** to **OffsetX**, and **OffsetY** to **OffsetY**.
 
-    ![](images/mouseevents-11-ss.png)
+    ![Screenshot showing the Mouse Events widget properties set with 'WidgetId', 'PreventDefaults', and 'Handler' in Service Studio.](images/mouseevents-11-ss.png "Setting Mouse Events Widget Properties")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

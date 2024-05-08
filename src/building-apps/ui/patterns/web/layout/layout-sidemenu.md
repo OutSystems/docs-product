@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Layout Side Menu uses the space available on the side to improve navigation. 
+summary: Explore the Layout Side Menu web block in OutSystems 11 (O11) for customizable UI components in Traditional Web Apps.
 locale: en-us
 guid: a2d35777-96f1-42e8-b9b6-760eb59d24cd
 app_type: traditional web apps

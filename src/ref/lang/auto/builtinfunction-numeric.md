@@ -1,4 +1,5 @@
 ---
+summary: Explore numeric functions like Max, Min, and Sign in OutSystems 11 (O11) for server-side, client-side, and database logic.
 locale: en-us
 guid: aace68aa-c3bc-4e37-85f1-ad8b6f204bf7
 app_type: traditional web apps, mobile apps, reactive web apps

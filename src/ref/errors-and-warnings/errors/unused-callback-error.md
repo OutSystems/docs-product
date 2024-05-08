@@ -1,4 +1,5 @@
 ---
+summary: Explore how to resolve the 'Unused Callback' error in OutSystems 11 (O11) by utilizing or removing unused REST API callbacks.
 locale: en-us
 guid: a6f3ed0c-94af-4c2a-9083-80ff50ca3083
 app_type: traditional web apps, mobile apps, reactive web apps

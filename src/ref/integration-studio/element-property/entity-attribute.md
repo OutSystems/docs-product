@@ -4,7 +4,7 @@ guid: 08269e2d-fc6b-49ef-93e0-9f7bce9c2724
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article details the properties of entity attributes in OutSystems, including their optionality, defaults, and special considerations
+summary: Explore the detailed properties of entity attributes in OutSystems 11 (O11), including mandatory and optional settings, data types, and default values.
 ---
 # Entity Attribute Properties
 

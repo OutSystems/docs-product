@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Flip Content UI Pattern.
+summary: Explore the advanced use cases and CSS selectors for the Flip Content UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 478229ef-fead-4fea-be67-f0fdd66c7209
 app_type: traditional web apps

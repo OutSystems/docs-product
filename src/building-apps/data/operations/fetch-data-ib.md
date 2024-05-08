@@ -1,5 +1,5 @@
 ---
-summary: Learn how to fetch data from an integration created using Integration Builder.
+summary: Explore how OutSystems 11 (O11) facilitates data fetching and display from integrations in application screens.
 locale: en-us
 guid: af0a23a7-38a2-4d2e-89da-a734af4e68a4
 app_type: traditional web apps, mobile apps, reactive web apps

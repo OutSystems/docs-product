@@ -1,4 +1,5 @@
 ---
+summary: Learn to send asynchronous emails in Traditional Web Apps using the Send Email tool in OutSystems 11 (O11).
 locale: en-us
 guid: 73d29c1b-5be0-4ebc-9828-0c0aaaff142b
 app_type: traditional web apps

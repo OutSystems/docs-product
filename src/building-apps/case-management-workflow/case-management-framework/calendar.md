@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: In the Case Management framework, you can use calendars to calculate service level agreement (SLA) due dates while taking into account the working schedule of your end users. Learn how to add calendars to your apps.
+summary: OutSystems 11 (O11) enables the definition of working schedules using calendars to calculate SLA due dates.
 guid: 75fd28ce-c038-42e4-bbd0-1f5abe2e6c79
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

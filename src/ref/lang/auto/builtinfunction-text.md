@@ -4,7 +4,7 @@ guid: 6ebdb9db-f7cd-44bd-a2c8-48fa22272dba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article describes various text manipulation functions such as character conversion, concatenation, encoding for web contexts, substring extraction, case conversion, and trimming
+summary: OutSystems 11 (O11) provides a comprehensive suite of string manipulation functions for server-side and client-side logic.
 ---
 # Text
 

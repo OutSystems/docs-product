@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use Events to trigger an Action and pass a value from a Block to Blocks or Screens.
+summary: Explore how to use events for communication between Blocks and parent elements in OutSystems 11 (O11).
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 6140a263-aa35-45e6-92a7-dc4453dae1c6

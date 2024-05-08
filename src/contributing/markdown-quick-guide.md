@@ -1,3 +1,11 @@
+---
+locale: en-us
+guid: d1334c25-ec8f-4567-8f8a-6f2e26b2d41f
+app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
+summary:
+---
 # Markdown language hints
 
 The following hints cover the basics of markdown making you able to edit almost everything in our documentation. If you need/want to know about markdown extensively, check this guide.

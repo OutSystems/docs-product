@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties and mandatory settings of the SAP Callback input parameter in OutSystems 11 (O11).
 helpids: 30069
 locale: en-us
 guid: 03cdc256-d569-4d64-b280-eea6b54e24bb

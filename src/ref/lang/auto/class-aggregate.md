@@ -5,7 +5,7 @@ guid: aa5d2ae3-56f3-40e8-8c10-75573d80424c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:333
-summary: Aggregates are optimized queries for fetching data in OutSystems, supporting advanced filtering and entity combinations, with client-side and server-side options for Mobile, Reactive, and Traditional Web Apps
+summary: Learn how to efficiently fetch and manage data using Aggregates in OutSystems 11 (O11), supporting both client-side and server-side operations.
 ---
 # Aggregate
 

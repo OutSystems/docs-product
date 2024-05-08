@@ -4,7 +4,7 @@ guid: fa3cf5ad-5e7b-4fdd-acc5-7b3f6c43791e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Resource Editor in Integration Studio allows editing of resource properties and defines how resources are stored when an extension's module is published
+summary: Explore how OutSystems 11 (O11) manages resource properties and deployment actions in its Resource Editor.
 ---
 # Resource Editor
 

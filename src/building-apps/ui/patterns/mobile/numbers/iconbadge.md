@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Icon Badge displays numerical information as notification.
+summary: OutSystems 11 (O11) features the Icon Badge UI Pattern for displaying numerical notifications in Mobile and Reactive Web Apps.
 locale: en-us
 guid: 085bea26-5d10-41b4-a31b-9e840315b759
 app_type: mobile apps, reactive web apps

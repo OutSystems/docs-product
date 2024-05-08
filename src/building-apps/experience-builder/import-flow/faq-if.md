@@ -1,5 +1,5 @@
 ---
-summary: Check the answers to the frequently asked questions about importing Flows to Experience Builder.
+summary: OutSystems 11 (O11) article details importing flows, layout usage, and property settings in Experience Builder.
 locale: en-us
 guid: c90cf9dd-fbcb-4f66-8bc8-d6bc41a9755e
 app_type: traditional web apps, mobile apps, reactive web apps

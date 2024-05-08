@@ -4,7 +4,7 @@ guid: 8545c13f-4722-4075-954a-8790ebc8e683
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=269:1
-summary: The article explains how to design sequential activities by arranging them in the order of execution within a process flow
+summary: Learn how to design sequential activities in OutSystems 11 (O11) by connecting them in the flow path according to their execution order.
 ---
 # Designing Sequential Activities
 

@@ -1,5 +1,5 @@
 ---
-summary: Reference for the Edit menu.
+summary: OutSystems 11 (O11) features an Edit menu that includes common clipboard operations and environment editing options.
 locale: en-us
 guid: 9b0eabe2-5eb5-4e6b-bb17-b77edc2bb68f
 app_type: traditional web apps, mobile apps, reactive web apps

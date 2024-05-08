@@ -1,5 +1,5 @@
 ---
-summary: Learn how to unregister an environment using the LifeTime API.
+summary: This guide details how to unregister an environment from LifeTime using the OutSystems 11 (O11) API.
 tags:
 locale: en-us
 guid: a76f6a1e-6bab-459d-8d59-cec919610591

@@ -5,7 +5,7 @@ guid: 686e3c25-4aaf-4507-9c51-aaf8f05954f7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1414:1769
-summary: The article explains data types in OutSystems, their operations, and how they map to .NET, including Lists and Structures
+summary: Explore the range of data types in OutSystems 11 (O11), including lists and structures, and their integration with .NET at runtime.
 ---
 # Data Types
 

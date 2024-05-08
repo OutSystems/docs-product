@@ -14,13 +14,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
   pr-info:
     name: Pull Request / Info
-
     runs-on: ubuntu-latest
-
-
     steps:
     - name: Find Pull Request
       if: github.ref_name != github.event.repository.default_branch
@@ -53,37 +49,43 @@ jobs:
 
   jira:
     name: "JIRA"
-
     needs: [pr-info]
-
     if: needs.pr-info.outputs.pull-request != ''
-
     uses: ./.github/workflows/jira-issue-pr.yml
     secrets: inherit
     with:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
       pull-request-title: ${{ needs.pr-info.outputs.pull-request-title }}
       ignore: ${{ needs.pr-info.outputs.skip-jira == 'true' }}
-    
+
   visual-assets:
     name: "Visual Assets"
-
     needs: [pr-info]
-
     if: needs.pr-info.outputs.pull-request != ''
-
     uses: ./.github/workflows/visual-assets-pr.yml
     secrets: inherit
     with:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
       files: ${{ needs.pr-info.outputs.changed-files }}
 
-  tools:
-    name: Tools
-    
-    needs: [pr-info]
-
-    uses: ./.github/workflows/build.yml
+  frontmatter:
+    name: Frontmatter
+    uses: ./.github/workflows/validate-frontmatter.yml
     secrets: inherit
 
-  
+  validations:
+    name: Misc validations
+    needs: frontmatter
+    if: needs.frontmatter.result == 'success'
+    uses: ./.github/workflows/validations.yml
+    secrets: inherit
+    with:
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
+      TK_CICD_BRANCH: 'main'
+
+  tools:
+    name: Tools
+    needs: [pr-info, frontmatter]
+    uses: ./.github/workflows/build.yml
+    secrets: inherit

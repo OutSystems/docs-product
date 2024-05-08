@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Progress Bar UI Pattern.
+summary: Explore progress bar customization in OutSystems 11 (O11) with layout options, CSS, and dynamic color changes.
 locale: en-us
 guid: e574e089-b093-408e-9ed1-6850d664a81d
 app_type: traditional web apps

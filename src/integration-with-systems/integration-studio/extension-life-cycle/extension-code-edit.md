@@ -4,7 +4,7 @@ guid: e3eef60b-0694-4c49-9666-5f4749d6cf32
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains how to edit .NET extension source code in Integration Studio and synchronize it with the extension definition
+summary: OutSystems 11 (O11) enables direct editing of extension source code in the .NET IDE via Integration Studio.
 ---
 # Edit Extension Source Code
 

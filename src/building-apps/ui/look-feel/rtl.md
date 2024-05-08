@@ -1,5 +1,5 @@
 ---
-summary: Creating apps that display content right-to-left (RTL).
+summary: OutSystems 11 (O11) supports right-to-left (RTL) languages by default in its UI framework, facilitating multilingual application development.
 tags: 
 locale: en-us
 guid: f7a12f2e-55b0-4a1a-8a50-a7b2e7fff65e

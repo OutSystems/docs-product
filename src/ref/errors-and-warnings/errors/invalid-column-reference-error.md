@@ -1,4 +1,5 @@
 ---
+summary: Explore common causes and solutions for the 'Invalid Column Reference' error in OutSystems 11 (O11).
 locale: en-us
 guid: ed240efa-1b90-4ce9-9263-a9bbfee1c90b
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
+summary: Learn to configure OIDC authentication in OutSystems 11 (O11) LifeTime, including local administrator setup and scope management.
 tags:
 locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5

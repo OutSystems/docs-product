@@ -1,5 +1,5 @@
 ---
-summary: Learn how to add a record or row, remove a record or row, and change an attribute or cell in Service Studio.
+summary: Explore how to manage entity data in OutSystems 11 (O11) using Service Studio, including adding, modifying, and deleting records.
 tags: 
 locale: en-us
 guid: f83e9afb-de9b-4b5e-9564-24490bc762e5

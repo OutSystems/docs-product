@@ -1,5 +1,5 @@
 ---
-summary: Learn how to implement decryption in your apps while ensuring HIPAA compliance in the OutSystems Cloud.
+summary: OutSystems 11 (O11) enables HIPAA-compliant data encryption through searchable and unsearchable encryption methods in its cloud environment.
 locale: en-us
 guid: 4b9ff75f-4e89-4a94-85bc-f6c7c3cc3f9c
 app_type: traditional web apps, mobile apps, reactive web apps

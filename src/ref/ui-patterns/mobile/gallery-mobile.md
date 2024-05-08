@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced Use Cases for the Gallery UI Pattern.
+summary: Explore the structure and API of the Gallery UI pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: b48f442d-6ab3-47c9-96ad-2bae75f24bc8
 app_type: mobile apps, reactive web apps

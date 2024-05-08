@@ -1,5 +1,5 @@
 ---
-summary: How to export text for translation and import back translated text.
+summary: Learn how to manage translations in OutSystems 11 (O11) by exporting and importing language resources using Excel or .resX formats.
 tags: 
 locale: en-us
 guid: f5ec781d-b346-4f47-b4cc-1ccb94a50312

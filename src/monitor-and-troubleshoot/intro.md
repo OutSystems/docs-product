@@ -1,5 +1,5 @@
 ---
-summary: Understand the current state of an environment and monitor problems impacting end users.
+summary: OutSystems 11 (O11) offers comprehensive monitoring and troubleshooting tools for application performance and user experience.
 tags: support-devOps; support-monitoring
 locale: en-us
 guid: 636a2bea-478d-4703-aaf8-e2f8ee514f2c

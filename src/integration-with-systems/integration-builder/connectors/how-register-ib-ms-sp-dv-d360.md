@@ -1,5 +1,5 @@
 ---
-summary: Register Integration SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 applications in Azure AD to authenticate and authorize users. 
+summary: OutSystems 11 (O11) facilitates Azure Active Directory app registration for SharePoint, Dataverse, and Dynamics 365 integration.
 locale: en-us
 guid: 50a76d12-73cb-4924-b36f-e76b68a00cb5
 app_type: traditional web apps, mobile apps, reactive web apps

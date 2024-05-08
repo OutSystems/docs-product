@@ -1,5 +1,5 @@
 ---
-summary: Learn how to publish an application across infrastructures using the LifeTime API.
+summary: Explore how OutSystems 11 (O11) enables app publishing across infrastructures using the LifeTime API for continuous deployment and governance.
 locale: en-us
 guid: 8abfd804-e5d3-4765-a33c-8030ee2327a2
 app_type: traditional web apps, mobile apps, reactive web apps

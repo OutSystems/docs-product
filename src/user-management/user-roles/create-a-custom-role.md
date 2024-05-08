@@ -1,5 +1,5 @@
 ---
-summary: You can manage end users permissions to specific screens and operations of your application using your own custom Roles.
+summary: Learn how to create and manage custom roles in OutSystems 11 (O11) to control user access to application screens and operations.
 tags: support-Security; 
 locale: en-us
 guid: 53e7e31f-233a-4495-8d3c-5f931cb35ccd

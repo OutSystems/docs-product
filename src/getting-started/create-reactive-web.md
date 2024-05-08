@@ -1,5 +1,5 @@
 ---
-summary: Follow this tutorial to learn how to create a Reactive Web App to manage tasks.
+summary: Learn to develop a Reactive Web App using OutSystems 11 (O11) by importing data, creating screens, and implementing logic.
 tags: runtime-reactiveweb;
 locale: en-us
 guid: 795332a5-e1f3-40c0-886d-75b7bddf48af

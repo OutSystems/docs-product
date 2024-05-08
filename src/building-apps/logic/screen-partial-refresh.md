@@ -1,5 +1,5 @@
 ---
-summary: It is possible to update certain parts of the screen without reloading the whole screen, thus improving the end user experience.
+summary: Explore how to use Ajax for partial screen refreshes in Traditional Web Apps with OutSystems 11 (O11).
 tags: support-Front_end_Development; support-webapps-featured; runtime-traditionalweb
 locale: en-us
 guid: cf447891-96c9-41a7-b624-455c180d4002

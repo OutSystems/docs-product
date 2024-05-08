@@ -1,5 +1,5 @@
 ---
-summary: Learn why apps that use AppShield on Android request the QUERY_ALL_PACKAGES permission, its effects and how to handle the permission in your app.
+summary: Learn how OutSystems 11 (O11) utilizes AppShield to manage the QUERY_ALL_PACKAGES permission in Android apps for compliance and security.
 tags: support-application_development; runtime-mobile; 
 locale: en-us
 guid: 3e8ca8cc-4c36-4948-8fdb-2ac789698b01

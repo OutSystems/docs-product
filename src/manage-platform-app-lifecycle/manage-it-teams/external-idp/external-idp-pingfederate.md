@@ -1,10 +1,11 @@
 ---
-summary: Configure PingFederate as an external identity provider
+summary: Learn to configure PingFederate as an external identity provider for OutSystems 11 (O11), covering LDAP setups and token management.
 tags:
 locale: en-us
 guid: 8c57419b-f92a-4e5d-bcbc-f2b89abb2a28
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: 
 ---
 
 # Configuring PingFederate as an external identity provider

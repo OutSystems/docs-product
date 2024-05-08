@@ -1,5 +1,5 @@
 ---
-summary: Learn about different Android support library versions, how these versions are handled by MABS and how they should be handled by customers and plugin developers.
+summary: Explore Android support library version management in OutSystems 11 (O11) for MABS compatibility and plugin integration.
 tags: runtime-mobile
 locale: en-us
 guid: 8734c248-e81d-4d5b-a3a2-323a0373c188

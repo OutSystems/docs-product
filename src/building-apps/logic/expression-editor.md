@@ -1,5 +1,5 @@
 ---
-summary: Use the expression editor to edit and validate expressions. The expressions editor shows the available elements, for example, variables and functions. It supports autocomplete and suggestions.
+summary: Explore the expression editor in OutSystems 11 (O11) for editing and validating expressions within Service Studio.
 tags: support-application_development
 locale: en-us
 guid: b42ff2da-f3fb-4900-9643-60c293c26f55

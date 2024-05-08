@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) offers user authentication and management functionalities, including OTP, passcode, and pattern login methods.
 locale: en-us
 guid: 64bdb156-e936-4ec0-855b-9ee3f8934f0e
 app_type: traditional web apps, mobile apps, reactive web apps

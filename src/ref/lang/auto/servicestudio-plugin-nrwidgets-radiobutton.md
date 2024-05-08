@@ -1,6 +1,6 @@
 ---
 helpids: 30215
-summary: Reference information on the Radio Button widget for representing an option within a Radio Group on a screen.
+summary: Explore the functionality and properties of the Radio Button widget in OutSystems 11 (O11) for Mobile and Reactive Web Apps.
 locale: en-us
 guid: 9db2cbf8-bc7e-41b7-a94e-9be56ff81f3c
 app_type: mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Integration Studio allows you to develop extensions in advanced integration scenarios between existing enterprise systems and OutSystems.
+summary: OutSystems 11 (O11) empowers developers to extend functionality and integrate with external systems using Integration Studio.
 locale: en-us
 guid: ab847837-20ab-4643-8541-63482f518aac
 app_type: traditional web apps, mobile apps, reactive web apps

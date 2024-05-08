@@ -1,5 +1,5 @@
 ---
-summary: Grant your IT users permissions by assigning them roles.
+summary: Explore role creation and assignment features in OutSystems 11 (O11) for enhanced IT user management and security policy customization.
 locale: en-us
 guid: 23c1ff9e-cfa0-4efc-9406-f7bec7187f24
 app_type: traditional web apps, mobile apps, reactive web apps

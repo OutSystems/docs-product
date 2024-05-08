@@ -2,7 +2,7 @@
 summary: This article outlines how to refactor site properties in your O11 apps for compatibility with ODC.
 locale: en-us
 guid: 19d82c11-dc9a-43e8-bce1-1767e48e58fd
-app_type: traditional web apps, mobile apps, reactive web appsc
+app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: 
 ---

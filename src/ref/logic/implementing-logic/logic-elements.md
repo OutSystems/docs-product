@@ -5,7 +5,7 @@ guid: 44b455cc-6390-48e5-a97f-ff3ca57cab5d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2314:3895
-summary: OutSystems allows defining logic through Actions which can be server or client-side and are used in reactive web and mobile apps
+summary: Learn about OutSystems 11 (O11) logic elements like Screen, Client, and Server Actions for app development.
 ---
 # Logic Elements
 

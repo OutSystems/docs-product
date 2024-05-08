@@ -1,4 +1,5 @@
 ---
+summary: Explore fixed and dynamic attributes of Process Entities in OutSystems 11 (O11) to enhance application logic and process management.
 locale: en-us
 guid: 1af83292-a0c9-4a25-b525-9fbfa59105d1
 app_type: traditional web apps, mobile apps, reactive web apps

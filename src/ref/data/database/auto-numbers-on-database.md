@@ -1,4 +1,5 @@
 ---
+summary: Learn how OutSystems 11 (O11) handles auto number attributes in databases, ensuring unique values with SQL Server and Oracle configurations.
 tags: 
 locale: en-us
 guid: 3a57d1cf-1b4f-4a9b-b1c3-29214eb15c14

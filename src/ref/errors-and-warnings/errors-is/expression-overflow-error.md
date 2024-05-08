@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) addresses Expression Overflow errors by recommending adjustments to default values for Decimal and Integer data types.
 locale: en-us
 guid: b28e1b36-ce34-4cae-b7e9-75fa23cb70ec
 app_type: traditional web apps, mobile apps, reactive web apps

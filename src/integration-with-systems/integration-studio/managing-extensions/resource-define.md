@@ -4,7 +4,7 @@ guid: e7143ce0-e179-48f5-a85c-91a174f36eba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains how to define and manage resources in an extension using Integration Studio, including adding files and setting properties
+summary: Explore how to define and manage resources in OutSystems 11 (O11) using Integration Studio, including adding files and setting properties.
 ---
 # Define Resources
 

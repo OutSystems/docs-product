@@ -1,5 +1,5 @@
 ---
-summary: Reference home page for errors and warnings.
+summary: Explore how OutSystems 11 (O11) validates application development by issuing errors and warnings at various stages of the module lifecycle.
 locale: en-us
 guid: 1193ec37-21ef-45e2-b1a2-cd4cf1d8b3a7
 app_type: traditional web apps, mobile apps, reactive web apps

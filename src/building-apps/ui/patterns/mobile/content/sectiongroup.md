@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Use the Section Group UI Pattern to keep the context of the header while progressively viewing more content by scrolling.
+summary: Learn how to implement the Section Group UI Pattern in OutSystems 11 (O11) to maintain header context while scrolling through content.
 locale: en-us
 guid: 7a764bd9-b48b-4961-a2b0-594723d02997
 app_type: mobile apps, reactive web apps

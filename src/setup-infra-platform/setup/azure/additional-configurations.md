@@ -1,6 +1,6 @@
 ---
 tags: support-Installation_Configuration; support-installation;
-summary: After setting up OutSystems you might want to access additional configurations, such as Remote Desktop access, SSL certificates or the environment scaling.
+summary: Explore advanced configurations for OutSystems 11 (O11) on Microsoft Azure, including remote access, SSL certificates, and scaling options.
 locale: en-us
 guid: 465ae50f-349c-4b1f-b082-565b3a653e7d
 app_type: traditional web apps, mobile apps, reactive web apps

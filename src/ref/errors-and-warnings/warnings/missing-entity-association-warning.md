@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve missing entity association warnings in OutSystems 11 (O11) by managing module references and permissions.
 locale: en-us
 guid: 590a02ff-3c8a-442a-a6af-a18205dbe1d8
 app_type: traditional web apps, mobile apps, reactive web apps

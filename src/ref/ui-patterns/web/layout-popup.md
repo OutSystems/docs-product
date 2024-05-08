@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Layout Popup web block.
+summary: Explore the features and customization options of the Layout Popup in OutSystems 11 for Traditional Web Apps, including responsive breakpoint adjustments.
 locale: en-us
 guid: b363b2eb-6bee-41e0-a0a5-926d6a67f1dd
 app_type: traditional web apps

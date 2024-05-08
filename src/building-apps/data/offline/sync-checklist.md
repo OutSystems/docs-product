@@ -1,5 +1,5 @@
 ---
-summary: A checklist with tips and advice for creating mobile apps that synchronize data with the server.
+summary: OutSystems 11 (O11) offers a detailed checklist to improve offline data synchronization in mobile apps, enhancing performance and user experience.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: d56de308-6a6f-4003-8573-ba69db403011

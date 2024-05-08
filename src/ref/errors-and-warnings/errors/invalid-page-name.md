@@ -1,5 +1,5 @@
 ---
-summary: Invalid page name when working with SEO. 
+summary: OutSystems 11 (O11) displays an "Invalid Page Name Error" when a page name contains characters other than letters, digits, dash, tilde, or slash.
 tags:
 locale: en-us
 guid: 6237e558-882b-40a4-9276-64dff7b6b16d

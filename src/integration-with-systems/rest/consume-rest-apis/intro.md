@@ -1,5 +1,5 @@
 ---
-summary: Consume REST APIs in your OutSystems applications.
+summary: Explore how to consume REST APIs using OutSystems 11 (O11), including authentication methods and advanced customizations.
 tags: support-application_development; support-Integrations_Extensions; support-Integrations_Extensions-overview
 locale: en-us
 guid: 5a949da9-dd60-4ea9-a05b-70c27bc53655

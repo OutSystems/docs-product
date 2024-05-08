@@ -1,9 +1,10 @@
 ---
-summary: Learn how to get the source code of an application for static code analysis. OutSystems provides an API that lets you download the code. 
+summary: Learn how OutSystems 11 (O11) enables secure API-based source code retrieval for compliance and security integration in regulated industries.
 locale: en-us
 guid: c0f22c7d-ac63-4704-b50f-97a3c697da44
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: 
 ---
 
 # Get the source code of an application

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) enables custom SQL data fetching with configurable properties and runtime attributes for enhanced database interaction.
 helpids: 9002
 locale: en-us
 guid: a77df642-bdb0-4789-8b7f-2f5dbe74e999

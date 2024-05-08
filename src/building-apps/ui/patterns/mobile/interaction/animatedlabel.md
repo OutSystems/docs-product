@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: The Animated Label animates a label when there is user input.
+summary: Explore how to animate user input labels using the Animated Label UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 6b42f314-f637-444d-b908-f0609c1ba46f
 app_type: mobile apps, reactive web apps

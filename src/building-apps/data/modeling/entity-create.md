@@ -1,5 +1,5 @@
 ---
-summary: Create database tables by modeling Entities in OutSystems.
+summary: OutSystems 11 (O11) simplifies the creation and management of database entities and their attributes for data persistence.
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: c961514e-d0da-422a-9ec1-2051f82669d8
@@ -42,7 +42,7 @@ We have an application called Go Out, that allows you to read and write reviews 
 
 1. With the entity selected, add the other attributes by clicking with the right-button in "Add Entity Attribute" to create the attributes:
 
-    ![](images/entity-editor.png)
+    ![Context menu in OutSystems showing the option to 'Add Entity Attribute' for the Place entity.](images/entity-editor.png "OutSystems Entity Editor")
 
     1. Create the `Name` attribute. By default the data type is set to `Text` and the length is `50`, change it to `100`;
     1. Make the attribute mandatory by setting the Is Mandatory property to `Yes`.

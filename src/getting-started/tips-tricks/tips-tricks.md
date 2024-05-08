@@ -1,5 +1,5 @@
 ---
-summary: The article provides tips and tricks for using Service Studio, including enabling dark theme, using keyboard shortcuts, editing multiple elements, and improving performance with features like Entity Diagrams and removing unused dependencies
+summary: Explore essential features and enhancements in OutSystems 11 (O11) for efficient application development and management.
 tags:
 locale: en-us
 guid: 0a003300-3e48-41de-8b77-f08d464a9eb4

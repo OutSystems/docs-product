@@ -1,4 +1,5 @@
 ---
+summary: Explore the structure and properties of SAP remote functions in OutSystems 11 (O11).
 helpids: 30072
 locale: en-us
 guid: 895732c3-42f6-4e78-87f8-efef7a1de2ef

@@ -1,5 +1,5 @@
 ---
-summary: PATCH method allows a new HTTP method when exposing REST APIs that applies partial modifications to a resource.
+summary: OutSystems 11 (O11) now supports the PATCH method for exposed REST services, enabling partial updates to resources.
 locale: en-us
 guid: f3ab51bb-7226-49f9-a529-a5e485a6952b
 app_type: traditional web apps, mobile apps, reactive web apps

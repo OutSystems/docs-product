@@ -1,5 +1,5 @@
 ---
-summary: A list of Azure resources that the OutSystems AI components and connectors use. 
+summary: Explore the necessary Azure resources for OutSystems 11 (O11) AI components and connectors detailed in this reference guide.
 tags:
 locale: en-us
 guid: bff3062c-8092-4b41-abf7-b315d1035d39

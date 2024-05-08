@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Alert gets the end user's attention and highlights important information, errors or warnings on the screen.
+summary: Explore how to implement and customize the Alert UI Pattern in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 19bf61bf-cf92-4e5f-b0d1-44f667b32bc7
 app_type: mobile apps, reactive web apps

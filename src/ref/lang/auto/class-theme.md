@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) defines application themes, detailing properties, grid systems, and web block layouts for enhanced customization and functionality.
 helpids: 17140
 locale: en-us
 guid: b29c0bb6-f138-4d20-934f-df01ba3c4e2a

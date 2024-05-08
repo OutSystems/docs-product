@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore the properties of input parameters for REST API callbacks in OutSystems 11 (O11), detailing mandatory fields and default values.
 helpids: 30062
 locale: en-us
 guid: ae9680b9-818f-483a-ab48-e368e6f97b8c

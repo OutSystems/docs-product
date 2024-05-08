@@ -1,6 +1,6 @@
 ---
 helpids: 30034
-summary: Reference information on the Input widget for allowing users to input data on a screen.
+summary: OutSystems 11 (O11) provides a detailed guide on the properties, events, and runtime behaviors of input widgets in application development.
 locale: en-us
 guid: d3d73598-1309-489b-a15a-2b9d518a8226
 app_type: traditional web apps, mobile apps, reactive web apps

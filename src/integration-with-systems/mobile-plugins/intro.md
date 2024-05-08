@@ -1,5 +1,5 @@
 ---
-summary: Extend the functionalities of your mobile apps by using plugins.
+summary: Explore the range of mobile plugins supported by OutSystems 11 (O11) for enhancing native mobile app functionalities, available in the Forge repository.
 tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 locale: en-us
 guid: 5543e1d8-095e-45d1-aef6-d3c054649421

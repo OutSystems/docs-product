@@ -1,5 +1,5 @@
 ---
-summary: Learn about the OutSystems JavaScript API that allows you to call OutSystems specific actions and act upon mobile app events in your JavaScript code
+summary: Explore how OutSystems 11 (O11) enhances mobile and reactive web apps through its comprehensive JavaScript API for custom user experiences.
 tags: article-page; runtime-mobileandreactiveweb
 guid: f676f015-823b-4e39-8a35-23ec3973bbde
 locale: en-us

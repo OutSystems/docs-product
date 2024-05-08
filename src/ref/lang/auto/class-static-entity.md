@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties and functionalities of static entities in OutSystems 11 (O11), designed for robust business logic integration.
 helpids: 15005
 locale: en-us
 guid: 1c756124-6173-4742-a20d-52bb7e0833fc

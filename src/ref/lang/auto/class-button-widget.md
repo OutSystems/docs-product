@@ -1,4 +1,5 @@
 ---
+summary: Learn about the Button Widget in OutSystems 11 (O11), which allows users to trigger actions, submit data, or navigate in Traditional Web Apps.
 helpids: 4009
 tags: 
 locale: en-us

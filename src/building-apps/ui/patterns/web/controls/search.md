@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Search allows the user to find pieces of content without the use of navigation.
+summary: Learn how to implement the Search UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, including widget setup and customization.
 locale: en-us
 guid: e0731879-d8a5-406c-b5a8-7b08cc36caee
 app_type: traditional web apps

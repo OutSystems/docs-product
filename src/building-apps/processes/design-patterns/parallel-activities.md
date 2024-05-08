@@ -1,5 +1,5 @@
 ---
-summary: The article explains how to design parallel activities in a process and methods to join them back into a single path with synchronization or forced termination, and highlights anti-patterns to avoid
+summary: OutSystems 11 (O11) supports designing parallel activities in business processes, allowing for simultaneous task execution and synchronization options.
 locale: en-us
 guid: 9ecd6d17-54b0-4f53-9fcc-b6c9cee561e5
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 helpids: 17142
-summary: Reference information on the Placeholder widget for reserving space in your block for filling when the block is used.
+summary: Learn about the Placeholder Widget in OutSystems 11 (O11), which reserves space in blocks and supports various properties for customization.
 locale: en-us
 guid: 5d21e0a3-fe0a-40cd-827b-a2a1ea1aa5ac
 app_type: traditional web apps, mobile apps, reactive web apps

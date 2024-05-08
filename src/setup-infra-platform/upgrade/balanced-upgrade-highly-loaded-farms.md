@@ -1,5 +1,5 @@
 ---
-summary: This guide presents the steps required to successfully upgrade Platform Server in an existing highly loaded OutSystems farm environment. The upgrade and deployment process is balanced throughout the existing front-ends, guaranteeing no downtime for the applications.
+summary: Learn how to upgrade OutSystems 11 (O11) on highly loaded farms with no downtime by balancing the load across front-ends during the upgrade process.
 locale: en-us
 guid: 99c574cd-7d20-4b50-8059-34a22f27cda4
 app_type: traditional web apps, mobile apps, reactive web apps

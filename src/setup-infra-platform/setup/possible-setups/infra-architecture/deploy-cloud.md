@@ -1,5 +1,5 @@
 ---
-summary: An OutSystems Cloud infrastructure provides enterprise-class cloud computing without the hassle of managing physical software infrastructure.
+summary: Explore the comprehensive cloud-based PaaS offerings of OutSystems 11 (O11), featuring robust security, high availability, and automated maintenance.
 locale: en-us
 guid: de7c085b-1c0b-4a1f-9d36-4a7e3f1c3ebc
 app_type: traditional web apps, mobile apps, reactive web apps

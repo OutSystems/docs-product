@@ -1,5 +1,5 @@
 ---
-summary: Check how you can troubleshoot REST APIs by temporarily setting higher logging levels.
+summary: Explore REST API logging and troubleshooting features in OutSystems 11 (O11).
 tags: 
 locale: en-us
 guid: 60a9bcc9-9841-40ba-b6be-95dc14831c47

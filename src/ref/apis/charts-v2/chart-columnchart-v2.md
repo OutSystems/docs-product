@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to create a simple Column Chart with data labels.
+summary: Learn how to create a column chart with data labels in OutSystems 11 (O11) using the Column Chart widget and configuring properties for data visualization.
 locale: en-us
 guid: A1458CB9-862F-4F78-B823-E1D0A3453FDE
 app_type: traditional web apps, mobile apps, reactive web apps

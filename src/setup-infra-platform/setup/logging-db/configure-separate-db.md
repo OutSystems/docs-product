@@ -1,5 +1,5 @@
 ---
-summary: How to configure a separate database for log data and apply these configuration changes to existing OutSystems applications.
+summary: Learn how to configure a separate database for log data in OutSystems 11 (O11) and apply these changes to existing applications.
 tags: support-Installation_Configuration; version-11
 locale: en-us
 guid: 5e138471-327c-410a-a2ea-104fdad2d68c

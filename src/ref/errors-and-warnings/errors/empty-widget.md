@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Empty Widget' error in OutSystems 11 (O11) by adding content to Dropdown widgets.
 locale: en-us
 guid: d8955d06-9233-4ded-a916-e748837e3bfb
 app_type: traditional web apps, mobile apps, reactive web apps

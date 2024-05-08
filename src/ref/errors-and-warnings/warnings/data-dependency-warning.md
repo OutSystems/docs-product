@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve data dependency warnings in OutSystems 11 (O11) by adjusting Fetch properties or using Refresh Data elements.
 locale: en-us
 guid: 85799d04-70f9-41a2-8f2e-fb4f457747c5
 app_type: traditional web apps, mobile apps, reactive web apps

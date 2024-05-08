@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the Inconsistent Dependency Warning in OutSystems 11 (O11) by republishing the producer module to prevent runtime errors.
 locale: en-us
 guid: 7a05fa08-e986-451f-8636-5cdc78aa5a10
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to combine OutSystems logic with Azure for advanced chatbot features and add powerful AI features to your chatbot. The advanced features include custom replies, connection with a knowledge base, and detecting intents.
+summary: Learn how to integrate Azure AI functionalities with OutSystems 11 (O11) for enhanced chatbot interactions and logic processing.
 tags:
 locale: en-us
 guid: ff14d9bc-d70c-453d-a510-e6ee2e0874d9

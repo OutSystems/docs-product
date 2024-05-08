@@ -1,5 +1,5 @@
 ---
-summary: The article explains how to use a CDN with OutSystems to deliver static content efficiently and improve app performance
+summary: Explore how integrating a CDN with OutSystems 11 (O11) enhances app performance by offloading static content delivery and improving user experience.
 locale: en-us
 guid: 4c56a563-c298-4a10-9fe9-e0bc859ded6e
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Chat Message UI Pattern.
+summary: Explore the features and customization options of the Chat Message UI Pattern in OutSystems 11 for Traditional Web Apps.
 locale: en-us
 guid: 6a62f636-ac37-4f02-8dde-b125bbb18919
 app_type: traditional web apps

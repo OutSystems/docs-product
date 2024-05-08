@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: Learn about the expanded functionality for human activities that the Case Management framework provides.
+summary: OutSystems 11 (O11) provides APIs for managing human activities in case management, including assignments and access controls.
 guid: 3dd527f3-1678-47ac-bf40-c86b8116b5b3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

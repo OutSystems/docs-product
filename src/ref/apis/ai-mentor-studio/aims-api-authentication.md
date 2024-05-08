@@ -1,5 +1,5 @@
 ---
-summary: Authenticating AI Mentor StudioAPI requests.
+summary: Explore secure API authentication methods for AI Mentor Studio, integrated with OutSystems 11 (O11).
 tags: article-page; support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
 locale: en-us
 guid: FDBC3311-C94C-4C9C-8CC1-E7F26FC76F02

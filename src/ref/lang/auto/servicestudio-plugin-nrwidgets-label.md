@@ -1,6 +1,6 @@
 ---
 helpids: 30033
-summary: Reference information on the Label widget for allowing users to add text labels on a screen.
+summary: Explore the Label widget's properties, events, and runtime attributes in OutSystems 11 (O11) for enhancing user interface design.
 locale: en-us
 guid: 58db2c1b-53a2-48ef-b635-9f7e1f762b65
 app_type: traditional web apps, mobile apps, reactive web apps

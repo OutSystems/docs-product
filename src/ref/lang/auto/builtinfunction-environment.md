@@ -1,4 +1,5 @@
 ---
+summary: Explore the technical functionalities of OutSystems 11 (O11) including server type, locale, database provider, and user agent retrieval.
 locale: en-us
 guid: 83ba44be-1320-4def-9741-0cf7e7842b05
 app_type: traditional web apps, mobile apps, reactive web apps

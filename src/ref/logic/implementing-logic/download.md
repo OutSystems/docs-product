@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) includes a Download Tool for Reactive Web Apps, handling client-side file downloads with potential limitations for large files.
 locale: en-us
 guid: 5a57bbea-d8d7-44d5-921e-07aec6c1f705
 app_type: traditional web apps, mobile apps, reactive web apps

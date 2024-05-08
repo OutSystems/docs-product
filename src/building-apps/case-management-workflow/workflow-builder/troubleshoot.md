@@ -1,6 +1,6 @@
 ---
 tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; Troubleshoot
-summary: Troubleshoot Workflow Builder.
+summary: Explore troubleshooting steps for OutSystems 11 (O11) Workflow Builder for both app developers and IT administrators.
 guid: 33571f0b-996f-47e8-ac9d-e43cbc98c2e4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

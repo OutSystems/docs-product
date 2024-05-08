@@ -1,5 +1,5 @@
 ---
-summary: Component with widgets for plotting charts in web apps.
+summary: Explore chart creation and customization with OutSystems 11 (O11) using Highcharts 11.2.0 for dynamic data visualization.
 tags: article-page; support-application_development; support-Front_end_Development
 locale: en-us
 guid: 868f8412-a29e-4c0b-9e37-3c75830502eb

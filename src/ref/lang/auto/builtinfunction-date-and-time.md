@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) provides a comprehensive suite of date and time manipulation functions for server-side, client-side, and database contexts.
 locale: en-us
 guid: 55fca69d-c374-4057-b2f5-6872d5673d34
 app_type: traditional web apps, mobile apps, reactive web apps

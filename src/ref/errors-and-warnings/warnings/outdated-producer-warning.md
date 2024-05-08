@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve outdated producer warnings in OutSystems 11 (O11) by republishing modules to refresh references and prevent runtime errors.
 locale: en-us
 guid: 2d0f78ae-6d89-437a-ab38-cf89125d8036
 app_type: traditional web apps, mobile apps, reactive web apps

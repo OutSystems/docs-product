@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) issues an "Invalid Response Format" error when a REST API method has an incorrect or unset 'Response Format' property.
 locale: en-us
 guid: b12fc7de-5897-4cf7-9e05-7b53cda233c0
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Customize the URL of your exposed REST API methods according to your needs.
+summary: Learn how to customize REST API method URLs in OutSystems 11 (O11) to enhance API endpoint structures.
 tags: 
 locale: en-us
 guid: 3e4b997b-6c2c-4ccb-ae1a-31d4ed3ad0a8

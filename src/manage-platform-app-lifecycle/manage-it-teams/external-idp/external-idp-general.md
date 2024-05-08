@@ -1,5 +1,5 @@
 ---
-summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
+summary: Explore how to integrate external identity providers using OIDC with OutSystems 11 (O11) for enhanced authentication across web and native applications.
 tags:
 locale: en-us
 guid: 7486CF76-C3FC-41E0-B2E9-F6C6512FAB44

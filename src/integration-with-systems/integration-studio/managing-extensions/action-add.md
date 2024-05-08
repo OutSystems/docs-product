@@ -4,7 +4,7 @@ guid: ae415dc5-20df-4cc4-9726-f02f47645ce8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains how to manually add actions to an extension in Service Studio and details the properties and parameters to be specified
+summary: Explore how to manually add and configure actions in OutSystems 11 (O11) extensions for enhanced functionality.
 ---
 # Add an Action
 

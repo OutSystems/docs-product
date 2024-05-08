@@ -1,5 +1,5 @@
 ---
-summary: Learn about adding, disabling and deleting end users in the Users application.
+summary: Learn how to manage end user accounts in OutSystems 11 (O11) using the Users application for creation, activation, deactivation, and deletion.
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 8b17c8d9-939a-486c-bec9-fe1309df7aed

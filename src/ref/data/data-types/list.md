@@ -5,7 +5,7 @@ guid: 014b125f-f9e4-4681-bc53-52a4b6c4ea58
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1414:1770
-summary: The article explains how to create, manipulate, and map lists in OutSystems, including system actions and runtime properties for list operations
+summary: OutSystems 11 (O11) provides comprehensive guidance on managing lists, including creation, manipulation, and mapping techniques.
 ---
 # List
 

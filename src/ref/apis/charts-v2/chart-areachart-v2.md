@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to create a simple Area Chart with Staked Series in OutSystems.
+summary: Learn how to create a stacked area chart in OutSystems 11 (O11) using the Area Chart widget and configuring data points and series properties.
 locale: en-us
 guid: BA3C3E2A-BFD3-454E-B527-00AAE44DEA8F
 app_type: traditional web apps, mobile apps, reactive web apps

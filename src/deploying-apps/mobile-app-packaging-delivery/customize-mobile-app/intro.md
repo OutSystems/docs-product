@@ -1,5 +1,5 @@
 ---
-summary: Customize your mobile app regarding device characteristics and mobile platform, thus fulfilling business requirements or improve the experience of your users.
+summary: Explore mobile app customization options in OutSystems 11 (O11) including interface configurations and environment-specific settings.
 tags: runtime-mobile
 locale: en-us
 guid: 8e510d45-a9d0-44c9-b2c1-5f676be38a25

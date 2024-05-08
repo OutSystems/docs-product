@@ -1,4 +1,5 @@
 ---
+summary: Explore the Upload Widget in OutSystems 11 (O11), designed for file selection and upload in Traditional Web Apps.
 helpids: 4040
 locale: en-us
 guid: d4e8f882-7eb3-4476-a056-c0f4017ea78f

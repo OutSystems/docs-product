@@ -1,5 +1,5 @@
 ---
-summary: Log tab showing specific settings for the 'Oracle' database provider.
+summary: Explore Oracle database configurations for logging in OutSystems 11 (O11), including connection settings, user management, and Unicode support.
 locale: en-us
 guid: 4730ef3b-0979-41fb-95dc-b177a430f9e7
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb
-summary: Provides methods to access native capabilities of the device.
+summary: Explore device capabilities in OutSystems 11 (O11) with the `whenReady` function, ensuring native API readiness.
 locale: en-us
 guid: cb9a46ef-3b0c-48e2-9307-8fa4d00567e3
 app_type: mobile apps, reactive web apps

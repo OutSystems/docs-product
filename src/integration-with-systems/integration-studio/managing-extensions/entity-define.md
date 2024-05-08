@@ -1,4 +1,5 @@
 ---
+summary: Learn how to define extension entities in OutSystems 11 (O11) to utilize external database tables effectively.
 locale: en-us
 guid: c5e5c6fd-fba7-4be6-ba09-d1b028c8a1c1
 app_type: traditional web apps, mobile apps, reactive web apps

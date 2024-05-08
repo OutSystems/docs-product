@@ -1,5 +1,5 @@
 ---
-summary: Define a custom status bar in your mobile app.
+summary: Explore how to customize the application status bar in mobile apps using OutSystems 11 (O11) without plugins.
 tags: runtime-mobile; support-Front_end_Development-featured
 locale: en-us
 guid: 3a9110d2-7128-413c-a6a4-3b2deed94d87

@@ -4,7 +4,7 @@ guid: b87b0a9b-ac31-4705-ae8e-87ae97505fb1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article outlines the three logging levels for REST APIs and consumed SOAP Web Services, detailing the amount of information logged at each level
+summary: OutSystems 11 (O11) provides three logging levels for REST APIs and SOAP Web Services - Default, Troubleshoot, and Full.
 ---
 # Logging levels reference for integrations
 

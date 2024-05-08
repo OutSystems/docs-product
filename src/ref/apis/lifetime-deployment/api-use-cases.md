@@ -1,5 +1,5 @@
 ---
-summary: Learn how to perform common tasks using the LifeTime API.
+summary: Explore real-world examples of using LifeTime API methods in OutSystems 11 (O11) for tasks like application deployment and versioning.
 locale: en-us
 guid: dcf82210-2b59-420c-9014-81f80f0d907a
 app_type: traditional web apps, mobile apps, reactive web apps

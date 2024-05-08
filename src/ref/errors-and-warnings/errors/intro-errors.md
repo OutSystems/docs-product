@@ -1,5 +1,5 @@
 ---
-summary: Reference home page for errors.
+summary: Explore various deployment errors in OutSystems 11 (O11) that must be resolved before successful module deployment.
 locale: en-us
 guid: ecaeecfd-158e-4c16-9111-5f1f3484616b
 app_type: traditional web apps, mobile apps, reactive web apps

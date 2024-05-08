@@ -1,4 +1,5 @@
 ---
+summary: Explore common `Invalid Join` error scenarios in OutSystems 11 (O11) related to entity and structure usage in join conditions.
 locale: en-us
 guid: 659d5361-cb0c-4aff-bab5-f021cc017017
 app_type: traditional web apps, mobile apps, reactive web apps

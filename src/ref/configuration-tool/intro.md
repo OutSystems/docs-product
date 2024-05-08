@@ -1,6 +1,6 @@
 ---
 tags: support-Installation_Configuration
-summary: Use Configuration Tool for configuring you Platform server for on-premises installations.
+summary: Explore the Configuration Tool in OutSystems 11 (O11) for server setup and management in complex environments.
 locale: en-us
 guid: 3ccedde9-7f7c-4d04-8992-703b00953c15
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -4,7 +4,7 @@ guid: 74906504-7e14-40cd-8a55-221155e073a7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:17
-summary: The article explains how to use .NET code for advanced extensibility in SOAP web services with OutSystems, including a Forge component for common use cases
+summary: OutSystems 11 (O11) supports advanced SOAP web service extensibility through .NET code integration and a dedicated Forge component.
 ---
 # Use Advanced Extensibility
 

@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: Learn how to change the impact level a code pattern has on your total technical debt calculation.
+summary: OutSystems 11 (O11) allows customization of code pattern impact levels on technical debt through AI Mentor Studio.
 locale: en-us
 guid: EB77F9BF-FA60-4B26-9E19-FA17C6B70EF1
 app_type: traditional web apps, mobile apps, reactive web apps

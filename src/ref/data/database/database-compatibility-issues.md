@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) addresses database compatibility issues by standardizing SQL features and behaviors across different DBMS types.
 tags: 
 locale: en-us
 guid: 9ae75fbb-3c7b-4307-9b9a-9e18bcb16017

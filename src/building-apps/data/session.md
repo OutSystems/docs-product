@@ -1,5 +1,5 @@
 ---
-summary: Learn how OutSystems uses Sessions to maintain information about the previous web requests the end user made.
+summary: OutSystems 11 (O11) manages state in traditional web apps through sessions, enabling context persistence across user requests.
 tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: a6784b12-4617-437f-b5e5-ec8c8b579006

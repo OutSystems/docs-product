@@ -1,6 +1,6 @@
 ---
 helpids: 30040
-summary: Reference information on the Button widget for triggering an action on a screen.
+summary: Explore the button widget functionalities in OutSystems 11 (O11), including properties, events, and runtime attributes.
 locale: en-us
 guid: 193110a3-2fa3-45ae-9cdb-ae5ba20a7cef
 app_type: traditional web apps, mobile apps, reactive web apps

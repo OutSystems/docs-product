@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: The article explains how to access and use provider instances in OutSystems through the Initialized event and JavaScript API for UI patterns like the Date Picker
+summary: Explore how to access and manipulate provider instances using the Initialized event in OutSystems 11 (O11).
 locale: en-us
 guid: CD21A754-068E-4DA7-9B74-A5122B1AEC7D
 app_type: mobile apps, reactive web apps

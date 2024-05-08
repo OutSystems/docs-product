@@ -1,5 +1,5 @@
 ---
-summary: List of System Actions (both server actions and client actions) available in OutSystems, including list operations.
+summary: Explore the comprehensive guide on using System Actions in OutSystems 11 (O11) for server and client-side operations in application development.
 tags: 
 locale: en-us
 guid: 15b8a38f-a4cc-4bb7-b496-520824990340

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Separator UI Pattern.
+summary: Explore the Separator UI Pattern in Traditional Web Apps using OutSystems 11 (O11), detailing layout, CSS selectors, and advanced use cases.
 locale: en-us
 guid: fb3e8080-28b4-44a2-89dd-0c5c940c7e5a
 app_type: traditional web apps

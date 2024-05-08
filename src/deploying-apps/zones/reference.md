@@ -1,5 +1,5 @@
 ---
-summary: Reference information on deployment zone parameters.
+summary: OutSystems 11 (O11) deployment zones feature customizable parameters for enhanced application management in on-premises installations.
 locale: en-us
 guid: 73511ea5-c2d6-493a-9d84-bbc699e84fc5
 app_type: traditional web apps, mobile apps, reactive web apps

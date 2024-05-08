@@ -1,5 +1,5 @@
 ---
-summary: Learn how to add attachments to emails.
+summary: Learn how to add email attachments in OutSystems 11 (O11) using the Send Email node in Service Studio.
 tags: support-application_development
 locale: en-us
 guid: 33f25da2-2cd8-4016-a12d-3b6ebfd12fc2

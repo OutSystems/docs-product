@@ -4,7 +4,7 @@ guid: 426b3956-f51e-4d01-a743-33fcb462fce6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Verify window in Integration Studio provides an interface to monitor and fix errors during the extension verification process
+summary: Learn about the Verify window in OutSystems 11 (O11), essential for extension verification and error handling.
 ---
 # Verify Window
 

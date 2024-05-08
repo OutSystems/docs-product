@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) offers guidelines for optimizing mobile app performance through efficient data handling and server interaction.
 locale: en-us
 guid: a63209c4-0f36-4c07-9a7a-e5c217b2b4d0
 app_type: traditional web apps, mobile apps, reactive web apps

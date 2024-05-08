@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Environment Fault' error in OutSystems 11 (O11) when the Deployment Controller Service is down.
 locale: en-us
 guid: 3e5e54ef-a2af-4c15-b331-6f6651f44401
 app_type: traditional web apps, mobile apps, reactive web apps

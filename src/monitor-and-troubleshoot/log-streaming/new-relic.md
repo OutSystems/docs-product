@@ -1,9 +1,11 @@
 ---
-summary: This articles guides how you can stream log data to New Relic APM tool.
+summary: Learn how to stream logs from OutSystems 11 (O11) applications to New Relic by setting up the necessary configurations and API integrations.
 tags: 
 locale: en-us
 guid: 3155fa32-225e-4925-bf8e-95a0816f62b3
 app_type: traditional web apps, mobile apps, reactive web apps
+figma: 
+platform-version: o11
 ---
 
 # Stream logs to New Relic

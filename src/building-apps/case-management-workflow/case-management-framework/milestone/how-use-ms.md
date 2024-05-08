@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework; CMf;
-summary: Learn how to use milestone instances in your case management app.
+summary: Learn how to manage milestone instances in case management applications using OutSystems 11 (O11).
 guid: 34bb2be4-ccf7-4cff-81ee-b517dc31f5d0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Bullets UI Pattern.
+summary: Explore how to integrate the Bullets UI Pattern with ListRecords in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 9fe6a555-54b5-4521-a880-36846463903d
 app_type: traditional web apps

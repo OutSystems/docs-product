@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) addresses common SQL errors by providing specific fixes and educational resources for developers.
 locale: en-us
 guid: 87c242a3-2d64-4c38-b1d9-95b761d7290f
 app_type: traditional web apps, mobile apps, reactive web apps

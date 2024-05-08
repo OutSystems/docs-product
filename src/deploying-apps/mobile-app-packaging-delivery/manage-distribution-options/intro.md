@@ -1,5 +1,5 @@
 ---
-summary: Mobile apps updates distribution setting lets you control how the apps update on user devices. Select store-only updates or hybrid updates. The store-only updates go through Google Play or the Apple App Store, and always update the native shell. In hybrid updates, apps can update the logic inside the existing native shell automatically, or require an update of native shell.
+summary: Explore mobile app updates distribution options in OutSystems 11 (O11), including store-only and hybrid updates.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: c9f2e601-8b4c-4dc7-93d4-e456c058b6f4

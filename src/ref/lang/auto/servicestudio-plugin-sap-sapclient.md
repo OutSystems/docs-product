@@ -1,4 +1,5 @@
 ---
+summary: Explore SAP connection properties and settings in OutSystems 11 (O11) for effective system integration.
 helpids: 17252
 locale: en-us
 guid: 14b4eecd-c93a-45cd-871d-6f6470945bd1

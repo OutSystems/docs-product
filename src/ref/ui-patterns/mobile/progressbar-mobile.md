@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb; 
-summary: Advanced use cases for the Progress Bar
+summary: Explore the structured use and customization of the Progress Bar in OutSystems 11 (O11) for Mobile and Reactive Web Apps.
 locale: en-us
 guid: fdef91ac-b3e1-4e49-a652-7921c46c9b35
 app_type: mobile apps, reactive web apps

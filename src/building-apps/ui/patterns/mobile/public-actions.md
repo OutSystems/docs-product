@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: The article provides a comprehensive guide on various interactive components and actions for OutSystems Mobile Apps and Reactive Web Apps, including accordions, bottom sheets, carousels, date pickers, dropdowns, flip content, notifications, and progress indicators
+summary: Learn to manage UI components in OutSystems 11 (O11) for enhanced web and mobile app functionality.
 locale: en-us
 guid: e4899a53-ca9e-4c13-b021-06518a34fba2
 app_type: mobile apps, reactive web apps

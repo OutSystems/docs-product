@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties of structure attributes in consumed SOAP Web Services in OutSystems 11 (O11).
 locale: en-us
 guid: 990d2fb4-4286-477c-9efe-235431ef7833
 app_type: traditional web apps, mobile apps, reactive web apps

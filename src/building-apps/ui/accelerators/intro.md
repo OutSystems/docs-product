@@ -1,5 +1,5 @@
 ---
-summary: See how to implement accelerators, small building blocks to compose a screen that are oriented to specific use cases.
+summary: OutSystems 11 (O11) accelerators enable faster creation of reactive web and mobile apps with customizable screen components.
 tags: 
 locale: en-us
 guid: fc130f38-3ed2-46f5-a1d1-4319f3e37dfb

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Breadcrumbs present the location of the user within the hierarchy of applications.
+summary: OutSystems 11 (O11) supports the Breadcrumbs UI Pattern for enhancing navigation in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: fd207363-044c-4b69-a584-83cbcb7b0108
 app_type: mobile apps, reactive web apps

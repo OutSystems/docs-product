@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb; 
-summary: Badge display numerical information as notification.
+summary: OutSystems 11 (O11) supports the Badge UI Pattern for displaying numerical notifications in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: 4e759186-e8a8-416a-a1fc-505d2cdc8de8
 app_type: mobile apps, reactive web apps

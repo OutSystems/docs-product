@@ -1,5 +1,5 @@
 ---
-summary: You need a Screen Template compatible with your Theme to display the final page properly.
+summary: Learn how to ensure theme compatibility with screen templates in OutSystems 11 (O11) to prevent display issues in your application.
 locale: en-us
 guid: 40469935-043c-4248-b54d-61e119ee9b2b
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -4,7 +4,7 @@ guid: 191e1ae6-bb41-460f-b5b4-a94474e514b2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains how to connect to an environment in Integration Studio to perform various operations
+summary: OutSystems 11 (O11) requires users to connect to an environment in Integration Studio to perform operations like 1-Click Publish and importing entities.
 ---
 # Connect to an environment
 

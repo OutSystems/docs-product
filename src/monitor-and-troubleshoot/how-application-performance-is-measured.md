@@ -1,5 +1,5 @@
 ---
-summary: OutSystems collects metrics of how applications are performing, to allow you to monitor and troubleshoot runtime issues. Learn what metrics are collected and how.
+summary: Explore how OutSystems 11 (O11) measures application performance using LifeTime Analytics to monitor end-user experiences and identify bottlenecks.
 tags: support-Application_Lifecycle; support-Integrations_Extensions; support-monitoring; support-monitoring-overview; support-monitoring-featured; runtime-traditionalweb
 locale: en-us
 guid: c9bafed1-f783-47d9-9f02-fa30a53c9ae6

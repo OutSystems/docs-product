@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: How to change the location of a map marker on the Map component. 
+summary: Learn how to retrieve draggable marker coordinates in OutSystems 11 (O11) using the OutSystems Map component for Mobile and Reactive Web Apps.
 locale: en-us
 guid: b7dce067-3d75-4c88-8a92-9de144f97896
 app_type: mobile apps, reactive web apps

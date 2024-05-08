@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Modal UI Pattern.
+summary: Explore advanced customization of modal animation speeds in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: a9618344-1b9f-4aa8-892b-456d7d7a75eb
 app_type: traditional web apps

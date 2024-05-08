@@ -1,5 +1,5 @@
 ---
-summary: Learn how you can use Adaptive patterns to view your app in multiple layouts on various screen sizes.
+summary: OutSystems 11 (O11) supports adaptive patterns for optimal display across various device types and screen sizes in mobile and reactive web apps.
 tags: runtime-mobileandreactiveweb;  
 locale: en-us
 guid: 8ff27ca3-0716-4aa9-9b9f-03f8a68dc96c

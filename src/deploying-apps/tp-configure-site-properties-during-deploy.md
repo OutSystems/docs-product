@@ -1,5 +1,5 @@
 ---
-summary: Learn how to set application Site Properties in the target environment while performing a deployment in LifeTime.
+summary: Learn how to configure site properties in OutSystems 11 (O11) during deployment to enhance application settings management.
 tags: 
 locale: en-us
 guid: 4acf3283-61b0-4409-a357-cb2ef63f1a5e

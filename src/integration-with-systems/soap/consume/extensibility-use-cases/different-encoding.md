@@ -1,5 +1,5 @@
 ---
-summary: How to add support for a different character encoding using the SOAP Extensibility API.
+summary: Learn how to support various character encodings in SOAP requests using OutSystems 11 (O11) by implementing custom message encoders in WCF.
 locale: en-us
 guid: 14fef923-0b13-45f6-b7f3-d5a676ba5565
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: How to create and deploy a knowledge base in Azure.
+summary: Learn how to create and deploy a QnA Maker knowledge base in Azure for use with the FAQ chatbot in OutSystems 11 (O11).
 tags:
 locale: en-us
 guid: 3d8d6edd-b26e-4f5a-83f4-bfedcf272b68

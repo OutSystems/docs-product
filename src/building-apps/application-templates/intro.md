@@ -1,5 +1,5 @@
 ---
-summary: Use application templates to bootstrap an app.
+summary: Explore various application templates including built-in, custom, and Forge options in OutSystems 11 (O11) to accelerate app development.
 tags: support-application_development; support-Front_end_Development; support-Front_end_Development-overview; support-Mobile_Apps; support-webapps
 guid: 5a669286-c41f-49c6-afe6-00a911f5f162
 locale: en-us

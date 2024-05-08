@@ -1,5 +1,5 @@
 ---
-summary: Fix the target directory of a resource to allow your deployment to complete.
+summary: OutSystems 11 (O11) requires changing the target directory of resources to non-system directories before deployment to avoid errors.
 tags:
 locale: en-us
 guid: 3be20de4-b979-43e3-89a4-c56d7b9ea6f1

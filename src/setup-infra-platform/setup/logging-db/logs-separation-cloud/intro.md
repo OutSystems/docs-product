@@ -1,5 +1,5 @@
 ---
-summary: OutSystems Cloud allows you to change the logs storage location, reducing the impact that logging can have on running applications.
+summary: OutSystems 11 (O11) enables separate log storage for cloud customers, enhancing system performance and stability.
 tags: 
 locale: en-us
 guid: 0E0E7403-39D9-4A4A-9CF1-9B506B665F9E

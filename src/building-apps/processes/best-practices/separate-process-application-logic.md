@@ -1,5 +1,5 @@
 ---
-summary: The article discusses strategies to avoid conflicts between process logic and application logic by separating entity attributes or using commit transactions to prevent record locking
+summary: Explore strategies to separate process logic from application logic in OutSystems 11 (O11) to prevent record locking issues.
 locale: en-us
 guid: 1961c6df-66b1-4e5d-a324-b5bd09df1186
 app_type: traditional web apps, mobile apps, reactive web apps

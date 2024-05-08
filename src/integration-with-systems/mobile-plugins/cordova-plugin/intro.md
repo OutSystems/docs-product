@@ -1,5 +1,5 @@
 ---
-summary: Create a mobile plugin by wrapping an Apache Cordova plugin into an OutSystems module. Reference the plugin from the npm registry or git repository, or write it from zero.
+summary: Explore how to integrate Apache Cordova plugins into mobile apps using OutSystems 11 (O11) by wrapping them into modules.
 tags: runtime-mobile; support-Integrations_Extensions; support-Mobile_Apps
 locale: en-us
 guid: 2d86818a-afda-4680-9090-8966faa38be9

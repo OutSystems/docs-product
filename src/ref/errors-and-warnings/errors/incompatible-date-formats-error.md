@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) resolves 'Incompatible Date Formats' errors by aligning REST API and method date formats.
 locale: en-us
 guid: 8b291081-7322-4558-8b0a-c1ac18ba5218
 app_type: traditional web apps, mobile apps, reactive web apps

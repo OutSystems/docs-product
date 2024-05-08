@@ -1,5 +1,5 @@
 ---
-summary: The authentication is configurable per environment to meet different security requirements.
+summary: Explore how to configure app authentication settings in OutSystems 11 (O11) to enhance security and user experience across different app types.
 tags: runtime-mobileandreactiveweb; support-Security-overview
 locale: en-us
 guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
@@ -66,7 +66,7 @@ To configure the authentication settings for apps in your OutSystems environment
 
 In this page you can also generate new keys for authenticating and encrypting cookie values. This will force all the users of your apps to login again in the next server request. To generate new keys, press the Generate button in Authentication and Encryption Keys area:
 
-![Close-up of the Generate button for new Authentication and Encryption Keys in Service Center.](images/configure-app-authentication-generate-keys-sc.png "Generate New Authentication and Encryption Keys")
+![Close-up of the Generate button for new Authentication and Encryption Keys in OutSystems Service Center.](images/configure-app-authentication-generate-keys-sc.png "Generate New Authentication and Encryption Keys")
 
 ## Authentication Types
 
@@ -106,7 +106,7 @@ The server validates the request by checking the following conditions:
 
 If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user or fails in case of tampering.
 
-![Diagram illustrating the authentication flow including cookie validation and session expiration.](images/authentication-1.png "Authentication Flow Diagram")
+![Diagram illustrating the authentication flow including cookie validation and session expiration in OutSystems.](images/authentication-1.png "Authentication Flow Diagram")
 
 ### Authentication Cache
 

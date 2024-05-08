@@ -1,5 +1,5 @@
 ---
-summary: Learn how to configure accessibility settings specific to some OutSystems UI patterns.
+summary: Learn about enhancing accessibility in OutSystems 11 (O11) UI patterns with ARIA roles and focus management.
 tags: runtime-reactiveweb
 locale: en-us
 guid: 41f4db30-ace4-4972-8cad-f954f43cd831

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to manage User Groups by modifying the System reference or accessing OutSystems database directly.
+summary: Explore custom group management techniques in OutSystems 11 (O11) using internal and external systems.
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: f2dc6e55-9db1-48b6-9e06-796a42618b8d

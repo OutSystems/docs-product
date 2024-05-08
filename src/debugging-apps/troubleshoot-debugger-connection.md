@@ -1,5 +1,5 @@
 ---
-summary: Troubleshoot issues that can arise while connecting your mobile device to your PC for debugging purposes.
+summary: Explore common mobile app debugging issues and solutions in OutSystems 11 (O11) using Service Studio 11.5.44.2557 or later.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: dc4e00b1-34e4-4bf0-9fa6-b63c6d4f6719

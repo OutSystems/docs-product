@@ -1,6 +1,6 @@
 ---
 helpids: 30038
-summary: Reference information on the Checkbox widget for allowing the user to check or uncheck an option on a screen.
+summary: Learn about the Checkbox component in OutSystems 11 (O11), which allows users to toggle options and stores values in a Boolean variable.
 locale: en-us
 guid: 4d0eddfa-fe0b-4811-8493-51c59d434c3e
 app_type: traditional web apps, mobile apps, reactive web apps

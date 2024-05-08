@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb
-summary: Provides the ability to perform normal and history navigations, and to override some navigation behaviors (e.g. back). Used to create new transition animations instead of overriding the existing ones using CSS.
+summary: OutSystems 11 (O11) enhances navigation in mobile and reactive web apps with custom back handlers and transition animations.
 locale: en-us
 guid: c274f0ef-e0b8-4093-bd87-049cda15248d
 app_type: mobile apps, reactive web apps

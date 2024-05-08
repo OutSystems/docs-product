@@ -5,7 +5,7 @@ guid: 9c51bf66-6188-4eeb-b921-6663acff1da8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1115
-summary: The article explains how variables are used to store various types of data in app development
+summary: OutSystems 11 (O11) facilitates app development by allowing the use of various types of variables to store and utilize values throughout the application.
 ---
 # Variables
 

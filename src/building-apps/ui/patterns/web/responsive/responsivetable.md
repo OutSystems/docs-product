@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Responsive Table displays information in a logical and organized way that is easy to scan and read.
+summary: Explore how to implement the Responsive Table UI Pattern in OutSystems 11 (O11) for organized data display and interaction.
 locale: en-us
 guid: 4d49cb72-9e20-4d2c-9bc4-d2db032317aa
 app_type: traditional web apps

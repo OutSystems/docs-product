@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Counter UI Pattern.
+summary: Explore the customization of the Counter UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, including layout, CSS, and advanced styling options.
 locale: en-us
 guid: c41f4255-ed4b-4aae-a934-9eebbcfcc129
 app_type: traditional web apps

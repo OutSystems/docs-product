@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use built-in emails in your web applications.
+summary: Explore how OutSystems 11 (O11) enables sending emails from traditional web applications, including dynamic content composition and asynchronous delivery.
 tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: fcef1ee7-5f7d-4c00-a92c-14f0a0039ac0

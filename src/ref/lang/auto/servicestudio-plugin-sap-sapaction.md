@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore how OutSystems 11 (O11) integrates SAP remote functions for data retrieval and documentation.
 helpids: 17253
 locale: en-us
 guid: 602fe7e6-6a83-449a-8d9f-4dff8831755b

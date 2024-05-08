@@ -6,7 +6,7 @@ guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:49
-summary: OutSystems provides a method to connect and integrate with SAP systems, allowing applications to fetch and update data using SAP remote functions
+summary: OutSystems 11 (O11) enables integration with SAP systems, allowing data fetching and updating for application use.
 ---
 # Integrate with a SAP System
 

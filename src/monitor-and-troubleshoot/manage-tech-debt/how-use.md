@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to use AI Mentor Studio by following one of the tutorials in this topic.
+summary: Explore AI Mentor Studio in OutSystems 11 (O11) to enhance your development, architecture, and team leadership skills.
 locale: en-us
 guid: 115abc7a-0267-4497-868b-d3c09b1e92fa
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Progress Bar displays the progress of a task by incrementing values in a bar.
+summary: Explore how to implement and customize the Progress Bar in OutSystems 11 for mobile and reactive web apps.
 locale: en-us
 guid: 024aef71-32e0-490d-8bb9-3e2a45845b91
 app_type: mobile apps, reactive web apps

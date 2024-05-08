@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore real-time business analytics with minimal performance impact using Database Replica in OutSystems 11 (O11).
 tags:
 locale: en-us
 guid: 706c08f9-df6b-4bac-bb20-0e683262cadd

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features a Wait process activity that pauses process flows until specified events or timeouts occur.
 locale: en-us
 guid: f8be65b0-6cde-4d57-ad19-0f473f662fa0
 app_type: traditional web apps, mobile apps, reactive web apps

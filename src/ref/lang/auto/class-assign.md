@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features an Assign Tool for variable-value assignments, supporting both literal and computed values.
 helpids: 7001, 15002
 locale: en-us
 guid: 493e43c0-c626-4ffd-8a99-161132b90261

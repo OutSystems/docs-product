@@ -1,5 +1,5 @@
 ---
-summary: Add documentation to your REST API to help developers to integrate their applications with your system.
+summary: Learn how OutSystems 11 (O11) simplifies REST API documentation by automatically generating it upon module publication.
 tags: 
 locale: en-us
 guid: b125017d-f037-4a5f-bba4-cdc563e0a4bf
@@ -26,4 +26,4 @@ OutSystems publishes the documentation under the base URL of the REST API. To op
 
 1. Choose **Open Documentation**.
 
-    ![](images/ss-rest-open-documentation.png)
+    ![Context menu in Service Studio showing the 'Open Documentation' option for a REST API.](images/ss-rest-open-documentation.png "Open REST API Documentation in Service Studio")

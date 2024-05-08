@@ -1,5 +1,5 @@
 ---
-summary: Use the QnA Maker connector to query your Azure knowledge bases directly in the OutSystems app. QnA Maker is often part of the chatbot logic. 
+summary: Explore how to integrate Azure QnA Maker Connector with OutSystems 11 (O11) for enhanced knowledge base management.
 tags: 
 locale: en-us
 guid: ab7eb739-c72b-4177-979b-bfe9d58a9334

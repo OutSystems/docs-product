@@ -1,5 +1,5 @@
 ---
-summary: Protect your mobile apps against tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse. Check out notes about Google Play app signing.
+summary: OutSystems 11 (O11) enhances mobile app security with the licensed AppShield plugin, offering runtime and rest protection.
 tags: 
 locale: en-us
 guid: bacbf600-bd10-4caf-820a-205c16a58691

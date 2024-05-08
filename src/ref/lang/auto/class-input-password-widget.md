@@ -1,4 +1,5 @@
 ---
+summary: Explore the Input Password Widget in OutSystems 11 (O11), designed for secure user input masking and validation.
 helpids: 4025
 locale: en-us
 guid: e908d4d2-b3df-4e78-baf9-c105f9732869

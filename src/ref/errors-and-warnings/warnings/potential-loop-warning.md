@@ -1,4 +1,5 @@
 ---
+summary: Avoid infinite loops in OutSystems 11 (O11) by not altering screen or block data in OnRender actions and removing data refreshes in OnAfterFetch actions.
 locale: en-us
 guid: 6a94d155-a80f-423c-95c5-5267e603a46d
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Screen Templates contain sample data, which you can manage in a back-office. You can view, reset and add your own data.
+summary: Learn how to manage and reference sample data in OutSystems 11 (O11) using the OutSystemsSampleDataDB module.
 locale: en-us
 guid: 075fbf61-e674-4e7e-bda6-612dbd61fc44
 app_type: traditional web apps, mobile apps, reactive web apps

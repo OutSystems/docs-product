@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore the Form Widget in OutSystems 11 (O11), designed for grouping input widgets with shared validation in Traditional Web Apps.
 helpids: 17194
 locale: en-us
 guid: 0e4bedbe-6a83-44f4-8c55-969878cb2fc4

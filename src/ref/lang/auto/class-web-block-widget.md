@@ -1,4 +1,5 @@
 ---
+summary: Explore the Web Block widget in OutSystems 11 (O11) for customizable integration in Traditional Web Apps.
 locale: en-us
 guid: 4160f6d7-1bcd-4299-80b7-5ccd8bbc42d2
 app_type: traditional web apps

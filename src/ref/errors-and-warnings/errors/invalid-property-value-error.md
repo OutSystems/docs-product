@@ -4,7 +4,7 @@ guid: c2e98fc6-f0da-45e4-bc1b-7707f98220db
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains the 'Invalid Property Value' error, its causes, and how to resolve it in different scenarios
+summary: OutSystems 11 (O11) documentation details solutions for the "Invalid Property Value" error, including setting mandatory properties and using literals.
 ---
 # Invalid Property Value Error
 

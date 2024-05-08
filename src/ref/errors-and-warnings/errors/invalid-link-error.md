@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recommendations on how to solve Invalid Link TrueChange errors.
+summary: Learn to fix 'Invalid Link Error' in OutSystems 11 (O11) by setting correct 'Method' and 'Destination' properties for the Link widget.
 tags:
 locale: en-us
 guid: 5debccff-1599-4aa2-9c84-3b2732758e6a

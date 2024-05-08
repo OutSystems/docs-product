@@ -2,7 +2,7 @@
 summary: This article outlines how to refactor system entities in your O11 apps for compatibility with ODC.
 locale: en-us
 guid: 3e9df6e0-0883-4c03-8cbd-f2259c689768
-app_type: traditional web apps, mobile apps, reactive web appsc
+app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: 
 ---

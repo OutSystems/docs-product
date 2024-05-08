@@ -1,5 +1,5 @@
 ---
-summary: OutSystems helps you build applications that have advanced AI and machine learning functionalities.
+summary: Explore AI and machine learning functionalities in your low-code applications with OutSystems 11 (O11), available on the OutSystems Forge.
 locale: en-us
 guid: bf9332a9-d068-4c72-9de7-704f085a3156
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Screens and Blocks follow a lifecycle composed by a set of stages. Learn what those stages are and you what can do at each one.
+summary: Explore lifecycle events in OutSystems 11 (O11) for effective management of Mobile and Reactive Web Apps.
 tags: runtime-mobileandreactiveweb; support-application_development; support-Application_Troubleshooting-featured; support-Mobile_Apps
 locale: en-us
 guid: 9205fe77-5e90-402b-ba73-45cdc745515a

@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: Learn about rules engine and how to use it ih the Case Management framework.
+summary: Learn how to set up and use the rules engine in OutSystems 11 (O11) to evaluate business rules effectively.
 locale: en-us
 guid: c994832b-31a9-4ee0-9ac3-96a1023d5b23
 app_type: traditional web apps, mobile apps, reactive web apps

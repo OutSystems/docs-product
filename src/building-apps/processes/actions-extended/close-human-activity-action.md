@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) provides a method to close Human Activities in action flows by setting input parameters and using extended actions.
 locale: en-us
 guid: 249a28f9-965b-47b7-bbe1-6ba5d20032d5
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,9 +1,9 @@
 ---
-summary: Breakpoints are used to suspend the execution of your application while troubleshooting and debugging issues.
+summary: Learn how to manage breakpoints in OutSystems 11 (O11) for effective debugging of process flows, screen flows, and action flows.
 locale: en-us
-guid: 9f051835-5900-4113-aedd-9ac7a5b4d4fa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+guid: b6478ecf-0592-4d5b-bbe6-87d1d9776833
 figma:
 ---
 

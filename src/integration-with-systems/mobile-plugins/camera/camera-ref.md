@@ -1,5 +1,5 @@
 ---
-summary: Camera plugin - reference page
+summary: Explore the Camera Plugin functionalities in OutSystems 11 (O11), including client actions, web blocks, and error handling.
 tags: runtime-mobile
 locale: en-us
 guid: ce70e86c-de5e-413e-988e-d0dca05b30f0

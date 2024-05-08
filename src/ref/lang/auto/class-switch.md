@@ -1,4 +1,5 @@
 ---
+summary: Learn how the Switch Tool in OutSystems 11 (O11) manages action flow paths based on evaluated conditions, including an "Otherwise" fallback.
 locale: en-us
 guid: bbcf3fc3-e6c7-4d65-b941-2a77b0b885d6
 app_type: traditional web apps, mobile apps, reactive web apps

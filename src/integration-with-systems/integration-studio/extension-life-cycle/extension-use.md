@@ -1,4 +1,5 @@
 ---
+summary: Explore how to enhance module functionality or extend the database model in OutSystems 11 (O11) by adding and using extensions.
 locale: en-us
 guid: 7fe4a4ad-7c65-4fce-9c54-8720bede33b1
 app_type: traditional web apps, mobile apps, reactive web apps

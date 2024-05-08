@@ -1,6 +1,6 @@
 ---
 helpids: 30036
-summary: Reference information on the Dropdown widget for showing a dropdown list for the users to select a value on the screen.
+summary: Explore the Dropdown Widget in OutSystems 11 (O11) for creating customizable drop-down lists in Mobile and Reactive Web Apps.
 locale: en-us
 guid: 15a7a421-2257-46eb-b995-caff2bf6404f
 app_type: traditional web apps, mobile apps, reactive web apps

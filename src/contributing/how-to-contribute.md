@@ -1,3 +1,11 @@
+---
+locale: en-us
+guid: 54551f96-1028-45cf-9206-1677d00e0389
+app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
+summary:
+---
 # How to Collaborate with our Documentation
  
 ## Overview

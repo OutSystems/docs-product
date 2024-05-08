@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Use the Button Loading pattern to call actions that don't run immediately.
+summary: Explore the Button Loading UI Pattern in OutSystems 11 (O11) for enhancing user experience by providing visual feedback during action execution.
 locale: en-us
 guid: 9117e011-39f7-442f-b00b-9ac846acab63
 app_type: mobile apps, reactive web apps

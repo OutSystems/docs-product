@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: The Bottom Bar Item provides access to a bottom navigation drawer
+summary: Explore the Bottom Bar Item UI Pattern in OutSystems 11 (O11) for enhanced mobile and reactive web app navigation.
 locale: en-us
 guid: 68ecb55f-4372-4f1f-910e-46129f456bf8
 app_type: mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Explore the Multi-tab Editors feature in OutSystems 11 (O11) for managing workspace elements efficiently.
 locale: en-us
 guid: 6fed3c9c-981a-4bb0-9dcb-0960352c4027
 app_type: traditional web apps, mobile apps, reactive web apps

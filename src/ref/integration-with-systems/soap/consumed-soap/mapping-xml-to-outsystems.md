@@ -5,7 +5,7 @@ guid: ac774bf3-82fc-480e-a633-7652e559d52a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article details how OutSystems maps various XML Data Types to corresponding OutSystems Data Types when consuming SOAP Web Services
+summary: Learn how OutSystems 11 (O11) maps XML Data Types to OutSystems Data Types for SOAP Web Services integration.
 ---
 # Mapping XML Data Types to OutSystems Data Types
 

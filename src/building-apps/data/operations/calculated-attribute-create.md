@@ -1,5 +1,5 @@
 ---
-summary: How to create a new attribute to a data query and base its value on the other record's attributes.
+summary: Explore how to create and utilize calculated attributes in aggregates using OutSystems 11 (O11).
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 802680cb-425f-4561-a353-56f582457b68

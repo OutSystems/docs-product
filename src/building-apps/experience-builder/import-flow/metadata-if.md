@@ -1,5 +1,5 @@
 ---
-summary:  Enter the metadata when importing Flow Templates, to correctly integrate them with Experience Builder and allow developers to use them during mobile applications creation.
+summary: Explore how OutSystems 11 (O11) utilizes metadata in Experience Builder to manage flow templates and their integration.
 locale: en-us
 guid: b9d9a9ce-0a4b-4ee4-a574-96d022f3324a
 app_type: traditional web apps, mobile apps, reactive web apps

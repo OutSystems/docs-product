@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: Follow this guide to begin developing a case management app using the Case Management framework.
+summary: Learn how to develop a Case Management app using the Case Management App Starter on OutSystems 11 (O11).
 guid: 00c3322e-e53f-480d-977a-005b69f94549
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

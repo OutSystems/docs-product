@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Accordion expands vertically-stacked content by clicking on the header.
+summary: Explore how to implement and customize the Accordion UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 6f52287b-c093-4b03-84f9-ac1e7ea57152
 app_type: traditional web apps

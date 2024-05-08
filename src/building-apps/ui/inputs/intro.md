@@ -1,5 +1,5 @@
 ---
-summary: See what are the inputs available to use in your screens or blocks and how to use them.
+summary: Explore various user input options in OutSystems 11 (O11) for UI design, including dropdowns, radio buttons, switches, popups, and file uploads.
 tags: 
 locale: en-us
 guid: 18044d09-890f-470b-bf4a-d28b992b4f87

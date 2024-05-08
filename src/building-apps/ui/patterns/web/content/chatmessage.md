@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Chat Message displays conversation posts in notifications or chat screens.
+summary: OutSystems 11 (O11) includes a customizable Chat Message UI Pattern for displaying conversational posts.
 locale: en-us
 guid: 2ee63ee6-02cf-4a5a-a348-92e5b46b3946
 app_type: traditional web apps

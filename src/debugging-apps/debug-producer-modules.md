@@ -1,5 +1,5 @@
 ---
-summary: Check how to debug functionality exposed by a producer Module being consumed in a different module.
+summary: Explore debugging producer modules in OutSystems 11 (O11) with specific steps for handling public and service actions.
 tags:
 locale: en-us
 guid: 8876a767-5845-47e4-9c93-bdec76114e0e

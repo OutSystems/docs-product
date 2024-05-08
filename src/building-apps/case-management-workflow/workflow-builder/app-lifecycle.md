@@ -1,6 +1,6 @@
 ---
 tags: Workflow Builder; Case Management; Business developers; App lifecycle
-summary: Learn about app lifecycle management in Workflow Builder.
+summary: Explore app lifecycle management and user group handling in OutSystems 11 (O11) with Workflow Builder for efficient production deployment.
 guid: 816ecd33-ab29-49d0-ae42-648840ac1251
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

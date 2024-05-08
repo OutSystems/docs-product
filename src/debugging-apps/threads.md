@@ -1,5 +1,5 @@
 ---
-summary: Learn more about threads in OutSystems.
+summary: Explore thread management and debugging features in OutSystems 11 (O11), including suspending, examining, and aborting threads during development.
 locale: en-us
 guid: 6ed6cc03-b8a8-4bc7-b3b6-e5a7e7fc2e01
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -40,14 +40,14 @@ In this case, the Threads Tab inside the [Debugger Tab](<debugger-ui-reference.m
 
 While debugging a server thread (corresponding to an action being performed in the server) you may abort its execution, terminating it.
 
-Use the ![](images/toolbar-button-abort.png) Abort Running Server Threads button available on the Debugger Toolbar or in the Debugger Menu.
+Use the ![Icon representing the Abort Running Server Threads button in the debugger toolbar.](images/toolbar-button-abort.png "Abort Running Server Threads Button") Abort Running Server Threads button available on the Debugger Toolbar or in the Debugger Menu.
 
 
 ## Suspend All Executing Server Threads
 
 If you feel that one or more server threads are taking longer than expected and something might be wrong, you can suspend their execution.
 
-Select the ![](images/toolbar-button-suspend.png) Suspend Running Server Threads option in the Debugger menu. An entry is created for each one of them in the Threads Tab. 
+Select the ![Icon depicting the Suspend Running Server Threads button in the debugger menu.](images/toolbar-button-suspend.png "Suspend Running Server Threads Button") Suspend Running Server Threads option in the Debugger menu. An entry is created for each one of them in the Threads Tab. 
 
 When suspended, Service Studio will focus the element that was being executed by the server thread when the thread was suspended.
 

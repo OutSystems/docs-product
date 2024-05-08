@@ -1,4 +1,5 @@
 ---
+summary: Explore how to resolve the "no content" warning in OutSystems 11 (O11) widgets due to missing attributes.
 locale: en-us
 guid: 31362103-2b6d-4e5a-8062-dfa29253f540
 app_type: traditional web apps, mobile apps, reactive web apps

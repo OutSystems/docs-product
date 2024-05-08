@@ -1,5 +1,5 @@
 ---
-summary: How to configure SAML 2.0 end user authentication for your applications.
+summary: Explore how OutSystems 11 (O11) integrates SAML 2.0 for federated authentication, enabling SSO and addressing current limitations and configuration steps.
 tags: runtime-traditionalwebandreactiveweb
 locale: en-us
 guid: 47803c16-1495-4db3-b9e5-10dbd77538a9

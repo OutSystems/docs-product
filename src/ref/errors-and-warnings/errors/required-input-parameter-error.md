@@ -1,4 +1,5 @@
 ---
+summary: Explore how to resolve the 'Required Input Parameter' error in OutSystems 11 (O11) when configuring REST API methods.
 locale: en-us
 guid: c0adb2a0-b45d-4ffe-b4c6-28a9f5c7484e
 app_type: traditional web apps, mobile apps, reactive web apps

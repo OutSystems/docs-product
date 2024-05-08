@@ -5,7 +5,7 @@ guid: 06f35415-71b9-4dae-9f3a-eba708d514bf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1379:1794
-summary: Client Variables in Mobile and Reactive Web apps store client-side data in key-value pairs, excluding Binary data, and are shared across apps in the same environment with the same User Provider
+summary: OutSystems 11 (O11) supports Client Variables in Mobile and Reactive Web apps for client-side data storage in a key-value format.
 ---
 # Client Variable
 

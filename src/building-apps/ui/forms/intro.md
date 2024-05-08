@@ -1,5 +1,5 @@
 ---
-summary: See how to implement forms and validate user inputs.
+summary: OutSystems 11 (O11) enhances user experience by allowing real-time data collection and submission through forms that group input widgets and validate data.
 tags: 
 locale: en-us
 guid: 13f0400d-d287-43e7-8f59-a056d2048e7b

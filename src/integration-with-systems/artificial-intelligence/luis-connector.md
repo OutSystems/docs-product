@@ -1,5 +1,5 @@
 ---
-summary: Build apps that can understand what your users write. Create smart conversational features with LUIS, for your use cases, and connect to the app through OutSystems LUIS connector.
+summary: Explore how to integrate Microsoft Azure's LUIS service with OutSystems 11 (O11) for enhanced language understanding in applications.
 tags: 
 locale: en-us
 guid: 958cb80b-87a3-4501-ad60-437b9cc71e8d

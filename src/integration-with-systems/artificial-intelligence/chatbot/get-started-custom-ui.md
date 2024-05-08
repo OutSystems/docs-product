@@ -1,5 +1,5 @@
 ---
-summary: See how to create a custom user interface for the chatbot. 
+summary: OutSystems 11 (O11) features a ChatbotAdvanced block for custom chatbot UI integration with Azure.
 tags:
 locale: en-us
 guid: 4a9fac26-25aa-4c53-a0fa-bb76b640c5e2

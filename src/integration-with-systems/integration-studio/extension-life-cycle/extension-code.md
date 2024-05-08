@@ -1,4 +1,5 @@
 ---
+summary: Explore how to code and manage extensions in OutSystems 11 (O11) using Integration Studio and a .NET IDE.
 locale: en-us
 guid: 731fa171-3e4d-40e0-add4-8d9b16ed0d08
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -4,7 +4,7 @@ guid: a3688c1a-0d04-4d07-a22e-deb8a36862db
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Action Editor in Integration Studio allows for editing properties and icons of actions within an extension
+summary: Explore the features of the Action Editor in OutSystems 11 (O11) for editing action properties and managing extensions.
 ---
 # Action Editor
 

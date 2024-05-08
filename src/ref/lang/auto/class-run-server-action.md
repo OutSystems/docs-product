@@ -1,6 +1,6 @@
 ---
 helpids: 30107
-summary: Executes a Server Action, which contains logic that's executed on the server.
+summary: Execute server-side logic with input and output parameters using the Run Server Action tool in OutSystems 11 (O11).
 locale: en-us
 guid: f5811e56-3206-4621-a31a-74da90160dd2
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Explore custom UI patterns and client actions in OutSystems 11 (O11) for enhanced app development.
 locale: en-us
 guid: 8d848bc2-1057-4692-8e94-9ba8c4212806
 app_type: traditional web apps, mobile apps, reactive web apps

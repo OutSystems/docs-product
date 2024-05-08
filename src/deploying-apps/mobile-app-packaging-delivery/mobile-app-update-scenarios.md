@@ -1,5 +1,5 @@
 ---
-summary: Understand how automatic updates to mobile apps work when you click on "1-Click Publish".
+summary: Explore mobile app update mechanisms and scenarios in OutSystems 11 (O11), detailing seamless upgrades and conditions requiring new app builds.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: ce4f8a4d-d473-4b92-a448-cf39fde1f64d

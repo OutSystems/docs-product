@@ -5,7 +5,7 @@ guid: 4e615b2f-6864-4b64-8d9f-d786e046eed2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2146:3572
-summary: OutSystems enables applications to interact with external systems through consumed REST APIs
+summary: Explore how OutSystems 11 (O11) enables the consumption of REST APIs to interact with external systems.
 ---
 # Consumed REST API
 

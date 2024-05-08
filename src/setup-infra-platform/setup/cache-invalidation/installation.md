@@ -1,5 +1,5 @@
 ---
-summary: How to install and configure the Cache Invalidation Service using the command-line.
+summary: Explore how to install and configure RabbitMQ via command-line for OutSystems 11 (O11) by modifying server configurations and running specific commands.
 tags: version-11; support-Installation_Configuration
 locale: en-us
 guid: 7f15fedf-010b-4271-8630-86ab785d618a

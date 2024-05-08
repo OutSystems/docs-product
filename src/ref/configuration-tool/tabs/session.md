@@ -1,5 +1,5 @@
 ---
-summary: The Session tab allows you to configure the database used by OutSystems to store the end user persistent sessions.
+summary: Learn how to configure the database for end user persistent sessions in OutSystems 11 (O11) across different database systems.
 locale: en-us
 guid: edfd47cf-ac05-450b-8823-ebc389345dc8
 app_type: traditional web apps, mobile apps, reactive web apps

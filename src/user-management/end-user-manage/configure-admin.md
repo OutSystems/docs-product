@@ -1,5 +1,5 @@
 ---
-summary: Learn how to configure the Administrator user of the Users app.
+summary: OutSystems 11 (O11) requires configuration of the Administrator user for the Users app to set passwords and assign roles.
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 319FF915-A2E9-4A0B-AC8A-93E0A511E997

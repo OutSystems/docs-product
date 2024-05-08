@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) introduces email functions for creating, concatenating, and validating email addresses in application flows.
 locale: en-us
 guid: f4d76631-b342-403c-bbfc-516c9b53f250
 app_type: traditional web apps, mobile apps, reactive web apps

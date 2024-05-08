@@ -1,4 +1,5 @@
 ---
+summary: Explore common Invalid SOAP Static Entity Usage Errors in OutSystems 11 (O11) and their solutions.
 helpids: 30168
 locale: en-us
 guid: 2e53abeb-cf9d-4231-808e-33e9b5c1d17e

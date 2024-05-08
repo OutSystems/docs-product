@@ -1,5 +1,5 @@
 ---
-summary: Learn how you can integrate with SAP in OutSystems.
+summary: OutSystems 11 (O11) integrates with SAP using the SAP Connector for Microsoft.NET, supporting standard and secure authentication options.
 tags: 
 locale: en-us
 guid: 3c630499-23ad-4947-9600-ad9392538dd6

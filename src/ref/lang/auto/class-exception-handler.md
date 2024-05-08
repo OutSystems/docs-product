@@ -1,5 +1,5 @@
 ---
-summary: Use the Exception Handler element to catch an exception and to start a logic flow for handling that exception.
+summary: Learn how to manage exceptions in OutSystems 11 (O11) using the Exception Handler element for various error types.
 locale: en-us
 guid: 9d318909-8caa-4f44-85fd-ef3ada5d566c
 app_type: traditional web apps, mobile apps, reactive web apps

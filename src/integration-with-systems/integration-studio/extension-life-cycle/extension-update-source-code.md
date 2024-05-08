@@ -4,7 +4,7 @@ guid: 985d898a-a78b-4cb3-8628-8f9027631d7c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains how to synchronize .NET IDE source code with extension definitions in Integration Studio, including generating templates, updating implementation files, and merging method signatures
+summary: Learn how to synchronize and update extension source code in OutSystems 11 (O11) using Integration Studio's automated operations.
 ---
 # Update the Extension Source Code
 

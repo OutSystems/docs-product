@@ -4,7 +4,7 @@ guid: 227269b0-1de7-4179-8b42-40fe86ac8129
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article details the properties of structure attributes in Integration Studio, including their optionality, defaults, and special considerations
+summary: Explore the detailed properties of structure attributes in OutSystems 11 (O11), including mandatory settings, data types, and default values.
 ---
 # Structure Attribute Properties
 

@@ -1,5 +1,5 @@
 ---
-summary: Create your Screen Templates for all developers in the factory.
+summary: Explore how to create and manage custom screen templates in OutSystems 11 (O11) using the Service Studio environment.
 tags: support-Mobile_Apps-featured; support-webapps-featured
 locale: en-us
 guid: 874543f6-0021-47c7-9b10-28853b48d6a3

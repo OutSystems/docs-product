@@ -1,5 +1,5 @@
 ---
-summary: Platform tab showing specific configuration settings for the Oracle database provider.
+summary: Explore Oracle database configurations for OutSystems 11 (O11) including connection settings, Unicode support, and administrative options.
 locale: en-us
 guid: a9efebcd-a811-4f57-ac3d-3ac58e920fe6
 app_type: traditional web apps, mobile apps, reactive web apps

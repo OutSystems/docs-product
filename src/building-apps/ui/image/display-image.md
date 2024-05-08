@@ -1,5 +1,5 @@
 ---
-summary: Display an image stored in the database in both web and mobile applications.
+summary: Explore how to display database-stored images in applications using OutSystems 11 (O11).
 tags:
 locale: en-us
 guid: 0e4fc725-6ba9-4e5e-8834-71ca8b4aa180
@@ -18,29 +18,29 @@ To display a database image in Reactive Web and Mobile:
 
 1. Open the screen where you want to display the image. 
 
-    ![](images/open-screen-ss.png)
+    ![Screenshot of the OutSystems interface highlighting the option to open a screen.](images/open-screen-ss.png "OutSystems Open Screen Interface")
 
 
 1. Check if there is an aggregate fetching the image from the database. Add the aggregate if needed. 
 
-    ![](images/add-aggregate-ss.png)
+    ![Screenshot showing how to add an aggregate to fetch data from the database in OutSystems.](images/add-aggregate-ss.png "Adding an Aggregate in OutSystems")
 
 
 1. Drag the Image widget from the toolbox to the screen. 
 
-    ![](images/drag-image-widget-ss.png)
+    ![Screenshot illustrating the process of dragging an image widget onto the screen in OutSystems.](images/drag-image-widget-ss.png "Dragging an Image Widget in OutSystems")
 
     
 
 1. Set the property Type to `Binary Data`. 
 
-    ![](images/set-property-type.png)
+    ![Screenshot displaying the property settings for an image widget with the type set to Binary Data.](images/set-property-type.png "Setting Property Type to Binary Data")
 
   
 
 1. Set the property Image Content to the entity attribute that stores the image.
 
-    ![](images/set-property-image-content.png)
+    ![Screenshot showing the Image Content property being set to an entity attribute that stores the image.](images/set-property-image-content.png "Setting Image Content Property")
 
 ## In Traditional Web
 

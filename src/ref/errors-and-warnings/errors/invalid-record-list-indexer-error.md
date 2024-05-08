@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Invalid Record List Indexer' error in OutSystems 11 (O11) by ensuring proper data types and list usage.
 locale: en-us
 guid: c16aaff5-3030-44bf-bae7-1c2a0960dd00
 app_type: traditional web apps, mobile apps, reactive web apps

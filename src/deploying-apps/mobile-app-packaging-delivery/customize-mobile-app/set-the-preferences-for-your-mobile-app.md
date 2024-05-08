@@ -1,5 +1,5 @@
 ---
-summary: Learn how to set the preferences for your mobile application.
+summary: OutSystems 11 (O11) enables setting mobile app preferences through JSON in the Extensibility Configurations property.
 tags: runtime-mobile
 locale: en-us
 guid: 36e4b86b-db80-4a29-9c79-86cc1c4f7f66

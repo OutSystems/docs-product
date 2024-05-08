@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Time Picker selects a single time from a drop-down list.
+summary: Explore the Time Picker UI Pattern in OutSystems 11 (O11) for selecting times in Traditional Web Apps.
 locale: en-us
 guid: 113a390f-c3f6-4ba3-b493-184f75c36227
 app_type: traditional web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Option menu, which slides from the bottom of the screen, triggered by a user action.
+summary: Explore how to implement the Action Sheet UI Pattern in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 54f296bf-249a-425b-b54c-6d446248c228
 app_type: mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Understand what are strong dependencies and weak dependencies between modules.
+summary: Explore how OutSystems 11 (O11) manages strong and weak dependencies between producer and consumer modules to ensure efficient application functionality.
 locale: en-us
 guid: 63b2c835-1d5e-4923-a61a-541bd5a16747
 app_type: traditional web apps, mobile apps, reactive web apps

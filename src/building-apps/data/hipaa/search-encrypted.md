@@ -1,5 +1,5 @@
 ---
-summary: Learn how to search encrypted searchable attributes.
+summary: Explore how OutSystems 11 (O11) enables searching encrypted data by encrypting search strings before database queries.
 locale: en-us
 guid: f1e59367-c1a5-4ef1-bb4e-ea265d5100e2
 app_type: traditional web apps, mobile apps, reactive web apps

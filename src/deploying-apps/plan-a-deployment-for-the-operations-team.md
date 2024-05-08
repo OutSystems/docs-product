@@ -1,5 +1,5 @@
 ---
-summary: Check how to collaboratively create a deployment plan, that can later be executed by other team to deploy your applications.
+summary: Explore how OutSystems 11 (O11) facilitates collaborative deployment planning between development and operations teams.
 tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: 89d88d9f-f70a-491a-9265-e02c5b93b85a

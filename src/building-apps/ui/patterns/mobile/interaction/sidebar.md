@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Sidebar shows additional content on the side of the screen.
+summary: Explore the Sidebar UI Pattern in OutSystems 11 (O11) for enhancing app interfaces with additional, supportive content.
 locale: en-us
 guid: d948b2a9-574a-43a1-bf6a-9465bdc22dfe
 app_type: mobile apps, reactive web apps

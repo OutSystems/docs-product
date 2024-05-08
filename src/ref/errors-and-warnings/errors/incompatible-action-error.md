@@ -1,4 +1,5 @@
 ---
+summary: Explore how to resolve the Incompatible Action Error in OutSystems 11 (O11) by using the SOAP Extensibility API for consumed SOAP Web Services.
 helpids: 30202
 locale: en-us
 guid: 45f3d12c-cd89-4141-be22-c0005c1a6530

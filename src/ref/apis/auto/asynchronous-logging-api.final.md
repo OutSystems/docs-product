@@ -1,5 +1,5 @@
 ---
-summary: The Asynchronous Logging API provides actions to asynchronously insert records into the database or register request events of your applications in an asynchronous way.
+summary: OutSystems 11 (O11) introduces an Asynchronous Logging API that enables non-persistent, queued database logging for errors, records, and request events.
 tags: support-application_development; support-Application_Troubleshooting; support-devOps; support-monitoring
 locale: en-us
 guid: 3f292aa4-1be7-4699-8231-0d465c90297d

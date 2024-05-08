@@ -1,5 +1,5 @@
 ---
-summary: Learn how to grant users with permissions for specific applications.
+summary: Learn how to grant specific application permissions in OutSystems 11 (O11) for enhanced monitoring without module access.
 locale: en-us
 guid: 00796575-6a6e-40dc-a4a8-88ff5d4a549a
 app_type: traditional web apps, mobile apps, reactive web apps

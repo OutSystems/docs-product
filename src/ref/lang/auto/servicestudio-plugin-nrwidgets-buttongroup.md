@@ -1,6 +1,6 @@
 ---
 helpids: 30039
-summary: Reference information on the Button group widget available for adding a set of buttons for users to select a single option on a screen.
+summary: Explore the Button Group component in OutSystems 11 (O11), designed for selecting a single option in Mobile and Reactive Web Apps.
 locale: en-us
 guid: 018284ce-ede4-43d4-b85b-189b2d5a86ac
 app_type: mobile apps, reactive web apps

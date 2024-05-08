@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Timeline indicates related events in chronological order.
+summary: Explore how to implement the Timeline UI Pattern in OutSystems 11 (O11) to display events chronologically in web applications.
 locale: en-us
 guid: 045e94bb-45ae-4672-8c58-c9f2bd07a485
 app_type: traditional web apps

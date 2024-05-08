@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore how to resolve incomplete upgrade warnings in OutSystems 11 (O11) by ensuring all modules are updated post-server upgrade.
 tags:
 helpids: 30220
 locale: en-us

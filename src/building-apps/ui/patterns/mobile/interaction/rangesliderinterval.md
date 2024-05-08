@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: the Range Slider Interval UI Pattern allows users select a single value between two range values.
+summary: Explore how to implement and configure the Range Slider Interval UI pattern in OutSystems 11 (O11) for selecting values within a specified range.
 locale: en-us
 guid: 69f1f6e5-318f-4da2-aa8f-912a7b8e66c2
 app_type: mobile apps, reactive web apps

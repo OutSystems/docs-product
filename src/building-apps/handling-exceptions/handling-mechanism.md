@@ -1,5 +1,5 @@
 ---
-summary: Learn about exception handling in OutSystems.
+summary: OutSystems 11 (O11) features a robust exception handling mechanism that manages errors through various handlers and flows within application modules.
 tags: support-Application_Troubleshooting; support-webapps
 locale: en-us
 guid: aa97807f-3db5-4d86-a746-7fe2506481a6

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Align Center places content horizontally or vertically within a container.
+summary: OutSystems 11 (O11) features the Align Center UI Pattern for centering content in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: 911674fa-b1b7-42e4-8e72-eb103d0294e4
 app_type: mobile apps, reactive web apps

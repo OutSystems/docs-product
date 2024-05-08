@@ -1,5 +1,5 @@
 ---
-summary: Build fully functional Screens, with built-in logic, styles, and sample data.
+summary: Explore how OutSystems 11 (O11) enhances app development with customizable Screen Templates featuring predefined layouts and components.
 tags: support-Mobile_Apps-featured; support-webapps-featured
 locale: en-us
 guid: ca291da3-9cc0-496c-bc37-018488602df9

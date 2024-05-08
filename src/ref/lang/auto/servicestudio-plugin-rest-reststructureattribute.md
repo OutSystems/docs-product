@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) defines structured attributes for REST API methods, detailing properties like Name, Type, and Is Mandatory.
 helpids: 30058
 locale: en-us
 guid: 1d89067b-946a-4832-99ec-81c78cb5ca3f

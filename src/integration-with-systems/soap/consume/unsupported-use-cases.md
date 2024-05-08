@@ -1,5 +1,5 @@
 ---
-summary: Check the list of currently unsupported use cases when consuming SOAP 1.2 Web Services and how to overcome some of these situations.
+summary: Explore the unsupported SOAP use cases in OutSystems 11 (O11) and potential workarounds for Service Studio limitations.
 locale: en-us
 guid: dfd157ac-c6ce-4710-a022-3bd27f5fc8bc
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Allows users to rate a particular item or service.
+summary: Explore how to implement and customize the Rating UI Pattern in OutSystems 11 (O11) for enhancing user interaction in mobile and reactive web apps.
 locale: en-us
 guid: f0a35dfd-ff8e-4e04-8a4b-2407efaca4f6
 app_type: mobile apps, reactive web apps

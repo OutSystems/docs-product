@@ -1,5 +1,5 @@
 ---
-summary: Guidelines for configuring load balancing in self-managed OutSystems installations, recommending round-robin, least connections, and ratio methods for Layer 4/7 load balancers and advising against sticky sessions for Layer 7
+summary: Explore recommended load balancing configurations for OutSystems 11 (O11) in self-managed environments, supporting both layer 4 and layer 7 load balancers.
 locale: en-us
 guid: 5a9bef4d-746b-40d7-a553-e677b99a8398
 app_type: traditional web apps, mobile apps, reactive web apps

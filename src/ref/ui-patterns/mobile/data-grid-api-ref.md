@@ -1,6 +1,6 @@
 ---
 tags: runtime-reactiveweb;
-summary: Data Grid APIs 
+summary: Explore advanced grid functionalities in OutSystems 11 (O11) for building dynamic, data-driven reactive web applications.
 locale: en-us
 guid: 1bd5d5c4-98f6-4b5f-a463-865bfccb7339
 app_type: reactive web apps

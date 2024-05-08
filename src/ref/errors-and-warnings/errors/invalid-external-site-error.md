@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) issues an 'Invalid External Site' error when a URL in an External Site element is incorrectly wrapped in quotes.
 locale: en-us
 guid: 8e1138a1-e294-4b9a-a0f6-79ff3f8b9865
 app_type: traditional web apps, mobile apps, reactive web apps

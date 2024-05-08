@@ -1,5 +1,5 @@
 ---
-summary: Expose a REST API to allow other systems to retrieve or manipulate information.
+summary: Learn how to expose and customize REST APIs in OutSystems 11 (O11) to integrate with external systems effectively.
 tags: 
 locale: en-us
 guid: 28d56896-53c1-40c0-ac3d-84c757ac71d0

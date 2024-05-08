@@ -1,5 +1,5 @@
 ---
-summary: The article provides best practices for designing and automating Integration/API tests, emphasizing the importance of not testing business logic and considering various types of integration beyond APIs.
+summary: Explore integration/API testing strategies and best practices using OutSystems 11 (O11) for enhanced software performance and reliability.
 guid: c3feac47-4625-4632-a11f-6bbcba99482b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

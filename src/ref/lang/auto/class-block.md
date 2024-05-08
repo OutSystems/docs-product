@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties and functionalities of Blocks in OutSystems 11 (O11), including their ability to implement logic and manage dependencies.
 helpids: 1006
 locale: en-us
 guid: fc28dd21-c51c-429f-a88d-61824267676a

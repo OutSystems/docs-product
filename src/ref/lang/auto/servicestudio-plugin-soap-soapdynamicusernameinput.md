@@ -1,4 +1,5 @@
 ---
+summary: Learn how to define a username for SOAP Web Service authentication in OutSystems 11 (O11) using the Username Input Parameter.
 locale: en-us
 guid: 21a8934d-1aa2-45a3-b899-b22589dd256f
 app_type: traditional web apps, mobile apps, reactive web apps

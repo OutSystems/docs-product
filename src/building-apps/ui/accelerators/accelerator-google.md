@@ -1,6 +1,6 @@
 ---
 tags:
-summary: This article provides a detailed guide on how to use the Login with Google accelerator.
+summary: Implement the Login with Google accelerator in OutSystems 11 (O11) for Reactive Web apps using OAuth 2.0.
 locale: en-us
 guid: 18f3d63b-831f-429c-aac1-7bf9ca65e58a
 app_type: traditional web apps, mobile apps, reactive web apps

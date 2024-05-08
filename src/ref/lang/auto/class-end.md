@@ -1,4 +1,5 @@
 ---
+summary: Explore how to effectively terminate process flows using the End process activity in OutSystems 11 (O11).
 locale: en-us
 guid: c5b81b52-09ee-4eb6-be4b-b1854f2be1a2
 app_type: traditional web apps, mobile apps, reactive web apps

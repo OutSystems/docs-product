@@ -1,4 +1,5 @@
 ---
+summary: Learn how to attach a file to an email using OutSystems 11 (O11), including mandatory properties like 'Name' and 'File Content'.
 locale: en-us
 guid: 05294b82-4021-4992-abe8-41d7d285b55b
 app_type: traditional web apps, mobile apps, reactive web apps

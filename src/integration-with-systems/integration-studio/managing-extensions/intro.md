@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) manages extensions efficiently in this detailed guide.
 tags: 
 locale: en-us
 guid: f8a37847-c17b-45b2-8c39-7f5a30ad61da

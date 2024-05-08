@@ -1,5 +1,5 @@
 ---
-summary: Send emails from Reactive Web Apps and Mobile Apps. Learn more about how emails work in OutSystems.
+summary: OutSystems 11 (O11) supports sending emails with attachments in Mobile and Reactive apps, requiring SMTP setup and specific platform versions.
 tags: support-application_development, article-page
 locale: en-us
 guid: e08ac080-d0c3-469c-baad-39526af24ded

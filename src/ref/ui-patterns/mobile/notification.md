@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Advanced use cases for the Notification UI Pattern. 
+summary: Explore the notification features and API methods of OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: 7505a6aa-329a-4f60-a1a6-e7d3bd727943
 app_type: mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: How to create a new deployment zone in Service Center.
+summary: Learn how to create and configure a new deployment zone in OutSystems 11 (O11) for on-premises installations.
 locale: en-us
 guid: bcb24adb-f56c-4be3-afcc-6305fe0f0e4e
 app_type: traditional web apps, mobile apps, reactive web apps

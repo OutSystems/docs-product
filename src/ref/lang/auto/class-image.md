@@ -1,4 +1,5 @@
 ---
+summary: Explore image resource properties and formats in OutSystems 11 (O11), including mandatory fields and runtime properties.
 locale: en-us
 guid: 1d0d90ba-aa79-4e09-ba87-12ce8ce0e4d4
 app_type: traditional web apps, mobile apps, reactive web apps

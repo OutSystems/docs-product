@@ -1,6 +1,6 @@
 ---
 helpids: 30198
-summary: Reference information on the Table widget for displaying data in cells distributed in rows and columns. The tables created with Table Widget support automatic pagination, sorting, and dragging Attributes to add columns.
+summary: OutSystems 11 (O11) introduces the Table Widget for Reactive Web Apps, featuring automatic pagination, sorting, and customizable columns.
 locale: en-us
 guid: 3cbb4a7d-817e-4709-b696-fae09de3d45d
 app_type: traditional web apps, mobile apps, reactive web apps

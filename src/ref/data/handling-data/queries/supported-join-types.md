@@ -5,7 +5,7 @@ guid: d2ac8884-a37b-423d-9655-b235291485cd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=843:1507
-summary: The article explains the four types of joins supported in a database query to combine records from multiple entities
+summary: Explore the supported join types in OutSystems 11 (O11) for efficiently querying and combining data from multiple entities.
 ---
 # Supported Join Types
 

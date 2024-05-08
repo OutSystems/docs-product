@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced uses cases for the Stacked Icon UI Pattern. 
+summary: Explore the Stacked Icon UI Pattern in OutSystems 11 (O11) for enhancing Traditional Web Apps with scalable icons and tooltips.
 locale: en-us
 guid: fb849376-d199-4131-af7d-fb890d688676
 app_type: traditional web apps

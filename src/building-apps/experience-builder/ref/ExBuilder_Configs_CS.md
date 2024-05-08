@@ -1,4 +1,5 @@
 ---
+summary: Explore server actions for managing site properties in mobile applications with OutSystems 11 (O11).
 locale: en-us
 guid: 1233ca21-be96-4571-abab-4b38a30aa237
 app_type: traditional web apps, mobile apps, reactive web apps

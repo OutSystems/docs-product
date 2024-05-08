@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Animate adds default animations to emphasize elements as they appear on the screen.
+summary: Learn how to enhance app usability with the Animate UI Pattern in OutSystems 11 (O11), enabling dynamic element animations in Traditional Web Apps.
 locale: en-us
 guid: 297aaf40-3584-4ed5-b1d4-7bfbbe3bbfaa
 app_type: traditional web apps

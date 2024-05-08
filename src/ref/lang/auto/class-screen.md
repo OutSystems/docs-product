@@ -1,4 +1,5 @@
 ---
+summary: Explore the user interface properties and events of OutSystems 11 (O11) screens, essential for application development and documentation.
 helpids: 4011
 locale: en-us
 guid: ca24e447-f946-4dd9-87d7-664e6d6ed848

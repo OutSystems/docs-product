@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Search Balloon UI Pattern.
+summary: Explore the features and advanced use-cases of the Search Balloon UI pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: f2455c53-89bf-4a8e-89c5-3fd31f5fadb7
 app_type: traditional web apps

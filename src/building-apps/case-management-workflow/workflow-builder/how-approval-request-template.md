@@ -1,6 +1,6 @@
 ---
 tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow; template; approval-request
-summary: Learn how to create an Approval Request app using a Workflow Builder template.
+summary: Learn how to create an app using the Approval Request template in OutSystems 11 (O11).
 guid: ee2f7324-b677-427b-9e70-c60c4b1e9e9b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

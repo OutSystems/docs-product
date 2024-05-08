@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'module Name Conflict' error in OutSystems 11 (O11) when encountering duplicate module or tenant names.
 locale: en-us
 guid: 8cac607a-6ba3-4392-825c-59d9eeaae525
 app_type: traditional web apps, mobile apps, reactive web apps

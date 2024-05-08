@@ -1,5 +1,5 @@
 ---
-summary: The Processes API allows you to get information from the OutSystems data model to customize and extend the design of your Processes.
+summary: Explore and extend process management capabilities in OutSystems 11 (O11) using the comprehensive Processes API.
 tags: 
 locale: en-us
 guid: 76b2e4f2-00b3-4c01-85a9-a00791998fdd

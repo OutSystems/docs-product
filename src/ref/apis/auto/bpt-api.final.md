@@ -1,5 +1,5 @@
 ---
-summary: Low-level API to create custom inboxes for process activities.
+summary: Explore the BPT API functionalities for managing processes and activities in OutSystems 11 (O11).
 tags: 
 locale: en-us
 guid: 2dc203a7-a140-4fbc-9ab8-97cdaf1c55f5

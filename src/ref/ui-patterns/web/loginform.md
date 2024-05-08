@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Login Form web block.
+summary: Explore the detailed guide on implementing and customizing the Login Form in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: bf2c05bb-2a29-4a57-903b-98007af0401b
 app_type: traditional web apps

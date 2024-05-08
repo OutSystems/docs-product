@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: The article provides a step-by-step guide on how to use the Bottom Sheet UI pattern in mobile apps to display additional information
+summary: Learn how to implement and customize the Bottom Sheet UI pattern in OutSystems 11 (O11) for enhanced mobile app interfaces.
 locale: en-us
 guid: 4CCAE716-CF2A-4601-9F03-D6ACF603F01A
 app_type: mobile apps

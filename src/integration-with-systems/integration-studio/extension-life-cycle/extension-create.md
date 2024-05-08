@@ -4,7 +4,7 @@ guid: c3a15acb-2ada-4d0b-93f8-e897e74752fb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3387%3A2062&mode=design&t=187UAgmZTPxcY0ZG-1
-summary: Integration Studio allows the creation of extensions with Actions, Entities, and Structures for use in Service Studio, requiring specific permissions to publish
+summary: OutSystems 11 (O11) enables the creation of extensions through Integration Studio, allowing integration with third-party technologies.
 ---
 # Create an Extension
 

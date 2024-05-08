@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;   
-summary: Tooltip dynamically displays simple informative content on end user interaction.
+summary: Explore how to implement and customize the Tooltip UI Pattern in OutSystems 11 (O11) for enhanced user interface interactions.
 locale: en-us
 guid: 44f1bcc8-d2bd-4174-ae3d-8813092a4bac
 app_type: mobile apps, reactive web apps

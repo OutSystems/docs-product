@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) addresses the 'Invalid Text Value' error by guiding users to adjust text properties that do not meet character limits.
 locale: en-us
 guid: cfa237a8-7738-48a4-8561-bacf28c6e379
 app_type: traditional web apps, mobile apps, reactive web apps

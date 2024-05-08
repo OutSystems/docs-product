@@ -1,4 +1,5 @@
 ---
+summary: Learn how to secure OutSystems 11 (O11) applications from open redirect vulnerabilities by using the ReplaceURLDomain() function.
 locale: en-us
 guid: 8e3aa9ec-bcb4-4d64-b16c-1a0a77110b8b
 app_type: traditional web apps, mobile apps, reactive web apps

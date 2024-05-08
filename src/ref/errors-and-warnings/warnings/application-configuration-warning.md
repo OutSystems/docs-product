@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the invalid shared configuration issue in OutSystems 11 (O11) by consulting the Service Center Factory Configuration solution.
 locale: en-us
 guid: 7f61abb9-ec5a-47ae-9e7e-d98dc926e78f
 app_type: traditional web apps, mobile apps, reactive web apps

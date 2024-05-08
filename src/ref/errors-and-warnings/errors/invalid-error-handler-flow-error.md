@@ -1,4 +1,5 @@
 ---
+summary: Explore solutions for the 'Invalid Error Handler Flow' error in OutSystems 11 (O11) when error handler flows intersect main paths.
 locale: en-us
 guid: 0f83bb7e-3cc8-4134-938b-9f9194175dc7
 app_type: traditional web apps, mobile apps, reactive web apps

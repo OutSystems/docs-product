@@ -1,5 +1,5 @@
 ---
-summary: Provides actions to manipulate HTTP Requests and Responses.
+summary: OutSystems 11 (O11) provides a comprehensive HTTPRequestHandler API for managing HTTP requests and responses across various application types.
 tags: 
 locale: en-us
 guid: 762585b4-510c-4749-b5d9-646e1c46f2e0

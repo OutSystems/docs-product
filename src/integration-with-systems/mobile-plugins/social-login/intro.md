@@ -1,5 +1,5 @@
 ---
-summary: Enable a login experience that uses an external provider, namely Google, Apple, Facebook, or LinkedIn, in your mobile app.
+summary: OutSystems 11 (O11) features a Social Login plugin for mobile apps, supporting authentication via Google, Apple, Facebook, and LinkedIn.
 tags: 
 locale: en-us
 guid: 834dcc40-0b87-4161-bcd0-db32053044c7

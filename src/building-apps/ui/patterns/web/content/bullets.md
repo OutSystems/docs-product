@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Bullets break up large blocks of text into smaller points that are easier to read.
+summary: Explore how to organize content using the Bullets UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 0028c775-3531-4d78-b693-124fb9f1c70e
 app_type: traditional web apps

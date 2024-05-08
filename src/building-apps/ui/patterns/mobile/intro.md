@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: The list of mobile patterns for fast mobile UI development.
+summary: Explore mobile and reactive UI patterns in OutSystems 11 (O11) for enhanced app development.
 locale: en-us
 guid: c186083b-0936-47cb-804d-3e5fcad431a0
 app_type: mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Date Picker allows the end user to select a single or a range of dates using a calendar.
+summary: Explore the Date Picker UI Pattern in OutSystems 11 (O11) for selecting dates in mobile and reactive web apps.
 locale: en-us
 guid: 1037b7a1-61e2-4f92-a78c-c132cee67995
 app_type: mobile apps, reactive web apps

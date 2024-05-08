@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create an input parameter to pass information to the destination screen.
+summary: Learn how to pass data between screens using Input Parameters in OutSystems 11 (O11).
 tags: support-application_development; support-Mobile_Apps; support-webapps
 locale: en-us
 guid: abc236ca-9b9d-41ea-9694-7a0148c216b1

@@ -1,5 +1,5 @@
 ---
-summary: How to configure Azure AD end user authentication for your applications.
+summary: Explore how to configure Microsoft Entra ID (formerly Azure AD) authentication for Traditional and Reactive Web Apps in OutSystems 11 (O11).
 tags: runtime-traditionalwebandreactiveweb
 locale: en-us
 guid: dd03208e-8d07-4720-bc69-3ebf9b541290

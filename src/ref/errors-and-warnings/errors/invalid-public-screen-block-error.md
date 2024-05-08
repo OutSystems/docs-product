@@ -1,4 +1,5 @@
 ---
+summary: Explore solutions for the 'Invalid Public Screen Block Error' in OutSystems 11 (O11) related to public accessibility and parameter issues.
 locale: en-us
 guid: aae1e0e4-4838-4c23-9387-a7dda68cbb4f
 app_type: traditional web apps, mobile apps, reactive web apps

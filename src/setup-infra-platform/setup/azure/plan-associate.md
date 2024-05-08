@@ -1,5 +1,5 @@
 ---
-summary: This article describes how to ensure your OutSystems Installation on Azure using custom Azure Resource Manager (ARM) templates is associated with OutSystems.
+summary: Learn how to associate your OutSystems 11 (O11) installation on Azure with OutSystems for enhanced support and optimized usage.
 locale: en-us
 guid: fc966397-ce73-4217-bc1d-7a048bd65347
 app_type: traditional web apps, mobile apps, reactive web apps

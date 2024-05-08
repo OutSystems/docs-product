@@ -1,5 +1,5 @@
 ---
-summary: This article describes the steps to deploy an application into a highly loaded OutSystems farm environment. 
+summary: OutSystems 11 (O11) supports balanced application deployment in self-managed farm environments to ensure no downtime.
 tags: 
 locale: en-us
 guid: 525adee0-1259-458e-bc2d-b1f1d178a832

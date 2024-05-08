@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: Check the answers to the frequently asked questions about Experience Builder.
+summary: OutSystems 11 (O11) Experience Builder FAQ addresses app flow integration, naming conventions, and high-resolution image requirements.
 locale: en-us
 guid: cd113946-442f-4263-b30e-40a48caba5a1
 app_type: traditional web apps, mobile apps, reactive web apps

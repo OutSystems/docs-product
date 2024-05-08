@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) allows dynamic configuration of SAP connections at runtime to adapt to different environments without republishing modules.
 tags: support-Installation_Configuration; support-Integrations_Extensions
 locale: en-us
 guid: ef8e199e-6f48-4a7a-8084-6e0cd1d5a532

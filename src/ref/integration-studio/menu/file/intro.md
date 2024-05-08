@@ -4,7 +4,7 @@ guid: f5eb9f11-455a-4bfe-bd0d-2ee4968044bb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The File menu in Integration Studio provides various options for managing extensions, including creation, opening, saving, importing, server selection, downloading, verification, publishing, and source code synchronization
+summary: Explore the File menu functionalities in OutSystems 11 (O11) for managing extensions efficiently.
 ---
 # File Menu
 

@@ -1,6 +1,6 @@
 ---
 helpids: 17196
-summary: Displays the records of an Entity or a Structure in a tabular layout and allows the user to create new records, update, or delete existing records.
+summary: Discover data management using the Editable Table widget in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 7f80f931-e1ac-4e99-a40e-70b31e30a6ce
 app_type: traditional web apps

@@ -1,6 +1,6 @@
 ---
 tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; Bussiness developers
-summary: Learn about Workflow Builder.
+summary: OutSystems 11 (O11) enhances app development with Workflow Builder, enabling rapid, collaborative creation of workflow apps.
 guid: a0f60d57-4ae7-4c6b-a6db-1f180513b9bd
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

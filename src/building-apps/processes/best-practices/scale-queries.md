@@ -1,5 +1,5 @@
 ---
-summary: The article provides a solution for scaling queries over process entities in OutSystems by creating a custom entity to store necessary runtime information
+summary: OutSystems 11 (O11) enhances process entity query scalability by recommending the creation of custom entities to store essential runtime information.
 locale: en-us
 guid: c50b149e-e4f0-4399-a941-b5e2a9bd86d5
 app_type: traditional web apps, mobile apps, reactive web apps

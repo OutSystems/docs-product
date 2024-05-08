@@ -1,5 +1,5 @@
 ---
-summary: Store the variable values and share them across apps.
+summary: Learn how to share a client variable between applications using OutSystems 11 (O11) for Reactive Web and Mobile Apps.
 tags: support-application_development;
 locale: en-us
 guid: e45b6e4c-0b32-4934-ad0b-c74a014df878

@@ -1,4 +1,5 @@
 ---
+summary: Explore the essential properties of elements in OutSystems 11 (O11), including mandatory settings and documentation features.
 locale: en-us
 guid: 5a9cfc54-42b5-408f-8d00-bf66f0f6cabd
 app_type: traditional web apps, mobile apps, reactive web apps

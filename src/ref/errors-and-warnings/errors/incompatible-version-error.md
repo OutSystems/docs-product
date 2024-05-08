@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different Incompatible Version TrueChange errors.
+summary: OutSystems 11 (O11) faces compatibility issues when Service Studio and Platform Server versions mismatch.
 tags:
 locale: en-us
 guid: 8c03c1ee-0f03-402a-af76-b40b7209060b

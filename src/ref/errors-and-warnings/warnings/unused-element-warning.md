@@ -1,4 +1,5 @@
 ---
+summary: Learn how to handle the Unused Element Warning in OutSystems 11 (O11) by checking and removing unnecessary code elements.
 locale: en-us
 guid: ffaf9e71-a423-4627-a3f5-75fec1f708ff
 app_type: traditional web apps, mobile apps, reactive web apps

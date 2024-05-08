@@ -1,5 +1,5 @@
 ---
-summary: The article advises on limiting the use of conditional starts in process flows to avoid complexity and deployment overhead
+summary: Learn to limit the use of Conditional Starts in OutSystems 11 (O11) to reduce complexity and deployment overhead.
 locale: en-us
 guid: 812f03f1-00fa-4d03-b4af-7b7e580a5fc5
 app_type: traditional web apps, mobile apps, reactive web apps

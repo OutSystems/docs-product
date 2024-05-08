@@ -1,5 +1,5 @@
 ---
-summary: Server-to-client data transfer optimization reduces the data the client-side of the app receive.
+summary: OutSystems 11 (O11) enhances server-to-client data transfer optimization for Mobile and Reactive Web Apps by using a sophisticated data flow algorithm.
 tags:
 locale: en-us
 guid: cad64443-6400-41a9-98e4-154162e790fa

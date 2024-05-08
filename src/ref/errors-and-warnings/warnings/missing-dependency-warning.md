@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve missing dependency warnings in OutSystems 11 (O11) by checking with the producer's owner or the Service Center administrator.
 locale: en-us
 guid: 1812425b-e8ab-42e1-a32e-c6ed7dc6f2e6
 app_type: traditional web apps, mobile apps, reactive web apps

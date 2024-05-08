@@ -1,5 +1,5 @@
 ---
-summary: Testing in OutSystems
+summary: Explore best practices for developing testable applications with OutSystems 11 (O11), focusing on domain isolation, anti-patterns, and UI simulation.
 tags:
 locale: en-us
 guid: a04eb23a-d3fe-4967-875b-02d15033b8cd

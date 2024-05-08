@@ -1,5 +1,5 @@
 ---
-summary: Customize how deeplinks are handled in your mobile app.
+summary: Explore how to customize deeplink behavior in mobile apps using OutSystems 11 (O11) with various `DeepLinksHandlerType` preferences.
 tags: runtime-mobile
 locale: en-us
 guid: 411e538e-743c-4e9f-a78b-1a4c8fdf3932

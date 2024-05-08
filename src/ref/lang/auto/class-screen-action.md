@@ -1,4 +1,5 @@
 ---
+summary: Explore the functionality and properties of Screen Actions in OutSystems 11 (O11) for enhanced user interaction logic.
 locale: en-us
 guid: 4ccf9451-f78a-4c45-8507-2e0fa2f7e4b2
 app_type: traditional web apps, mobile apps, reactive web apps

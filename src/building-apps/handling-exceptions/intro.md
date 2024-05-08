@@ -1,5 +1,5 @@
 ---
-summary: Handle and raise exceptions in OutSystems applications.
+summary: Explore how OutSystems 11 (O11) manages and categorizes various types of exceptions to enhance application error handling.
 tags: article-page; support-Application_Troubleshooting; support-webapps
 locale: en-us
 guid: 7215bc5b-f7dd-4da9-9c09-c4be569b9992

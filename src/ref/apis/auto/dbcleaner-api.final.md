@@ -1,5 +1,5 @@
 ---
-summary: Allows freeing-up database space.
+summary: OutSystems 11 (O11) DbCleaner API facilitates database space management by allowing deletion of unused entities, attributes, and module versions.
 tags: support-application_development; support-Database
 locale: en-us
 guid: 9fdba27d-69ca-46b4-9a7b-6dee299c8084

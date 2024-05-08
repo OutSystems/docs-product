@@ -1,5 +1,5 @@
 ---
-summary: Using teams you can manage the permissions of several IT users working in the same business team over all the applications they own without having to grant permissions on each application individually.
+summary: Learn how to set up permissions for IT users in teams using OutSystems 11 (O11) to manage application access efficiently.
 locale: en-us
 guid: 4817e9c4-cab5-4d89-ba2a-b7bf0ba260b9
 app_type: traditional web apps, mobile apps, reactive web apps

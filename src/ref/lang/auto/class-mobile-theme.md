@@ -1,4 +1,5 @@
 ---
+summary: Explore mobile theme properties and grid definitions in OutSystems 11 (O11) to customize application aesthetics and layout.
 helpids: 17140
 locale: en-us
 guid: f2ef48f5-3cab-43e9-b6af-cd355e10abab

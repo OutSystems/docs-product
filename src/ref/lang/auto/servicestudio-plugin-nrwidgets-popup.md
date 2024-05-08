@@ -1,6 +1,6 @@
 ---
 helpids: 30046
-summary: Reference information on the Popup widget for adding floating container/window (modal container) above other screen content.
+summary: Explore modal popup features in OutSystems 11 (O11) for web and mobile app development.
 locale: en-us
 guid: 8815652b-3b2f-47ee-81be-f58165e33a8c
 app_type: mobile apps, reactive web apps

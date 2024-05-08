@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: OutSystems Maps version 1.1.0 introduces some changes in the component structure. This page aims to help you migrate deprecated functionalities to new ones.
+summary: Explore the migration guide for deprecated functionalities in OutSystems Maps version 1.1.0 on OutSystems 11 (O11).
 locale: en-us
 guid: fda9408b-4043-4e53-aff2-96e241be9716
 app_type: mobile apps, reactive web apps

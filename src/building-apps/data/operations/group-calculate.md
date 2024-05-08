@@ -1,5 +1,5 @@
 ---
-summary: Use aggregate functions to calculate values based on groups of identical data.
+summary: Explore how to calculate values from grouped data using aggregate functions in OutSystems 11 (O11).
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: d2578f60-c7a2-40fe-8e74-382aecad9b2f

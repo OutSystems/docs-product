@@ -1,5 +1,5 @@
 ---
-summary: For OutSystems cloud, when you need to consume webservices that require authentication using client-side certificates, request OutSystems Support to install the certificates on the front-end servers.
+summary: Explore how to install client-side certificates in OutSystems 11 (O11) cloud environments for secure webservice consumption.
 tags: 
 locale: en-us
 guid: 7c93c0ac-8de4-412f-8c80-37179170f1d8

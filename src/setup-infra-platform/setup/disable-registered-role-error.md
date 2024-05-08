@@ -1,5 +1,5 @@
 ---
-summary: Learn to disable Registered Role Required error logs. 
+summary: Learn how to disable "Registered Role Required" error logs in OutSystems 11 (O11) for cleaner error management in reactive and mobile apps.
 locale: en-us
 guid: FFD30107-AFEA-4113-A1EE-05E9EC46987C
 app_type: mobile apps, reactive web apps
@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your
 
 It's common to find the error `Registered Role Required` in the error logs. This error happens when a request is made to the server by the app after the session has expired. Considering the asynchronous nature of reactive and mobile apps that contain multiple actions, these errors can multiply in the error logs. Sometimes, OutSystems developers consider these messages irrelevant and prefer to disable them. This article gives a context about why these error messages happen and how to disable them. 
 
-![](images/disable-registered-role-error-sc.png)
+![Example of Registered Role Required error messages in the OutSystems error log.](images/disable-registered-role-error-sc.png "Screenshot of the Registered Role Required error in OutSystems logs")
 
 ## Context
 
@@ -36,7 +36,7 @@ Please follow these steps to disable the **Registered Role Required** error logs
 
 1. In the **Platform Configurations** tab, uncheck the option **Enable "Registered Role Required" error logs**.
 
-    ![](images/disable-registered-role-error.png)
+    ![Screenshot showing the Factory Configuration setting to disable Registered Role Required error logs in OutSystems.](images/disable-registered-role-error.png "Factory Configuration option to disable Registered Role Required error logs")
 
 1. Create a solution in Service Center, including all reactive and mobile apps with corresponding dependencies. Check the option **Publish with full compilations** and publish the solution. 
 

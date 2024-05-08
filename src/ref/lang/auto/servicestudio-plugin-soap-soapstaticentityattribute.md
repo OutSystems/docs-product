@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties of a static entity attribute in consumed SOAP Web Services in OutSystems 11 (O11).
 locale: en-us
 guid: 0c7eda5f-bb0f-4514-9add-a0fcd23b364e
 app_type: traditional web apps, mobile apps, reactive web apps

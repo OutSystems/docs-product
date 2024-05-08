@@ -1,5 +1,5 @@
 ---
-summary: This article describes the process to upgrade the LifeTime management console of your OutSystems infrastructure to Release Sep.2018 (11.0.108.0) or later, and what you must take into consideration during that process.
+summary: Guide on upgrading the LifeTime management console in OutSystems 11 (O11) to enhance features without needing to upgrade application environments.
 tags: 
 locale: en-us
 guid: 1dd579f8-20ca-4af9-89fa-40697272f8bc

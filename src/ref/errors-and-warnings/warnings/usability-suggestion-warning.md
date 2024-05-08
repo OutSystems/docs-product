@@ -1,4 +1,5 @@
 ---
+summary: Explore common usability warnings and recommendations for OutSystems 11 (O11) regarding message length, input submission, and editable table actions.
 locale: en-us
 guid: 8df1dab2-62e4-4d27-aa62-05c7a2fe8612
 app_type: traditional web apps, mobile apps, reactive web apps

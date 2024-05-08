@@ -1,5 +1,5 @@
 ---
-summary: Check how cache invalidation works in OutSystems 11.
+summary: Learn about cache invalidation using RabbitMQ in OutSystems 11 (O11) to manage data efficiently.
 tags: article-page; version-11
 helpids: 30176
 locale: en-us

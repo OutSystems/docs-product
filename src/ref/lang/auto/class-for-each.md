@@ -1,4 +1,5 @@
 ---
+summary: Explore the For Each tool in OutSystems 11 (O11), enabling iterative actions on Record Lists with customizable settings.
 helpids: 7004
 locale: en-us
 guid: 6a3422fb-fc3c-429b-9a52-cd0054520ac5

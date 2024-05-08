@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb; 
-summary: Learn how you can use Number patterns to highlight and display numerical information to users in different ways, such as counters, percentages, ratings, and progress bars.
+summary: OutSystems 11 (O11) enhances user experience by offering diverse number patterns for displaying numerical data in mobile and reactive web apps.
 locale: en-us
 guid: 3ec6b9d0-a32e-4142-b4fc-700bb4835278
 app_type: mobile apps, reactive web apps

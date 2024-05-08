@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Invalid Property Value Error' in OutSystems 11 (O11) by setting or correcting the Record Definition.
 locale: en-us
 guid: c89d62ae-9e81-430f-9c6a-7ced75e3d05a
 app_type: traditional web apps, mobile apps, reactive web apps

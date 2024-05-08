@@ -1,5 +1,5 @@
 ---
-summary: Provides actions for validating and securely storing passwords in the database, compliant with established cryptographic practices.
+summary: OutSystems 11 (O11) features the PlatformPasswordUtils API for secure password validation and storage using cryptographic hashing.
 tags: 
 locale: en-us
 guid: 0c8970c5-42b4-4ab0-8e87-7d88223f2789

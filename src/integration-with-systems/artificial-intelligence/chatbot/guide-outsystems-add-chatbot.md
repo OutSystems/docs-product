@@ -1,5 +1,5 @@
 ---
-summary: How to add the UI chatbot component to an app. This is a quick solution that covers many use cases.
+summary: This guide details how to integrate a chatbot UI block into an OutSystems 11 (O11) app, enhancing user interaction through a chat window.
 tags:
 locale: en-us
 guid: 4d218bfe-d4ed-474f-bc58-2b4573911a31

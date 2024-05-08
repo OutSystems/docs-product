@@ -1,5 +1,5 @@
 ---
-summary: How to change the service endpoint at runtime using the SOAP Extensibility API.
+summary: OutSystems 11 (O11) enables runtime SOAP web service endpoint changes through custom extensions and actions in Integration Studio.
 locale: en-us
 guid: a6bf6200-5b57-4941-8d06-1b29a1985d7d
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) triggers an "Invalid SAP Connection" error when no remote functions are linked to a SAP connection.
 locale: en-us
 guid: 6af39380-3f07-4666-bd86-865b63ed4703
 app_type: traditional web apps, mobile apps, reactive web apps

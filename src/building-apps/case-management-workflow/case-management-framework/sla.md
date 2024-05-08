@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: Learn about how you can set and enforce service level agreement (SLA) resolution or response times at the case level and activity level.
+summary: Learn how to set and enforce SLA resolution times in OutSystems 11 (O11) using the Case Management framework.
 guid: e745cd81-f50a-483d-a08d-4279288fceae
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: You can create Timers at design time and set their running schedule at design or runtime.
+summary: Explore how to create, schedule, and manually trigger Timers in OutSystems 11 (O11) for efficient task automation.
 locale: en-us
 guid: 133d8c46-b36b-47de-9ad3-ca8e6460bb20
 app_type: traditional web apps, mobile apps, reactive web apps

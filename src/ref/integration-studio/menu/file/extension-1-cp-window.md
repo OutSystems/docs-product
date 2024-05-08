@@ -4,7 +4,7 @@ guid: 7ece2478-a4fe-4f05-8f53-3053d04f30e8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The 1-Click Publish window in Integration Studio provides a user interface to manage the publishing process of extensions, including error handling and progress tracking
+summary: Explore the features of the 1-Click Publish window in OutSystems 11 (O11), facilitating error handling, progress tracking, and extension management.
 ---
 # 1-Click Publish Window
 

@@ -4,7 +4,7 @@ guid: e1d27780-9956-400a-aa66-a730ed8e8c0a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:103
-summary: The OutSystems UI Framework offers tools and pre-built UI patterns to create responsive and customizable app interfaces
+summary: OutSystems 11 (O11) enhances app UI with customizable CSS, themes, and responsive design tools.
 ---
 # Look and Feel
 

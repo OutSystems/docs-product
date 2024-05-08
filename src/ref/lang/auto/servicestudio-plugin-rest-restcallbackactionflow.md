@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) supports REST API callback customization through specific action flows, enhancing API integration capabilities.
 locale: en-us
 guid: 75d5ed76-ed3d-405c-a3a5-e497af70434c
 app_type: traditional web apps, mobile apps, reactive web apps

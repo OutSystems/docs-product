@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) advises setting 'Abort Transaction' to 'Yes' for all exceptions to ensure data consistency.
 locale: en-us
 guid: c8621cd0-b3e5-4521-b4c4-c461639c4f37
 app_type: traditional web apps, mobile apps, reactive web apps

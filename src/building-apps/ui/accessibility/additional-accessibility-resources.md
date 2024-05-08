@@ -1,5 +1,5 @@
 ---
-summary: Links to additional accessibility resources (evaluation tools, screen readers, color and contrast checkers, practices)
+summary: Explore essential web accessibility resources and tools to enhance your OutSystems 11 (O11) applications' compliance with WCAG guidelines.
 tags:
 locale: en-us
 guid: ee0ffa43-b179-4214-bcd2-3b692817c51c

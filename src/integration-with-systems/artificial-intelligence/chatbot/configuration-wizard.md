@@ -1,5 +1,5 @@
 ---
-summary: Chatbot Configurator is a cloud wizard that helps you set up you chatbot backend in Azure.
+summary: Explore the Chatbot Configurator for OutSystems 11 (O11) to easily set up and manage AI chatbots within your OutSystems environment.
 tags:
 locale: en-us
 guid: a812ce9d-d668-4fc8-9d12-aab9f5f111f3

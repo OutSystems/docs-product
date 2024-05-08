@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) identifies and helps resolve "Invalid Blocks" errors caused by looping web block sequences.
 locale: en-us
 guid: 3c3744ef-942f-49a1-b868-3f8498598a8e
 app_type: traditional web apps, mobile apps, reactive web apps

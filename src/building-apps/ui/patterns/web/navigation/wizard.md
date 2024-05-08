@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Wizard splits complex tasks and process into steps.
+summary: OutSystems 11 (O11) enhances Traditional Web Apps with a Wizard UI Pattern for streamlined multi-step processes.
 locale: en-us
 guid: b535721f-289a-4ad1-825b-ce7271cc0191
 app_type: traditional web apps

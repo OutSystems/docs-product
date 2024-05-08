@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) uses the .NET Compiler Tool to generate the main DLL for extensions by compiling the .NET solution according to specified options.
 locale: en-us
 guid: 4e4db0cf-3fc9-4646-b737-a4563bc7a9c6
 app_type: traditional web apps, mobile apps, reactive web apps

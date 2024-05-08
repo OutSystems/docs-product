@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework; Access control; CMf; AC;
-summary: Learn about access control and how to do it with the Case Management framework.
+summary: Learn how to enable access control in OutSystems 11 (O11) for case definitions within the Case Management framework.
 guid: 6b9969e1-6771-4e7a-9c5b-d639b0d08d62
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

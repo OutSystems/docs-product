@@ -1,4 +1,5 @@
 ---
+summary: Learn how to initiate and manage process flows in OutSystems 11 (O11) using the Process Start and Conditional Start activities.
 locale: en-us
 guid: 6f406b45-353d-49f7-b859-2d3b5e153240
 app_type: traditional web apps, mobile apps, reactive web apps

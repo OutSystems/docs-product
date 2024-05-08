@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "helpids": {},
+      "summary": {},
+      "tags": {},
+      "guid": {
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+      },
+      "locale": {
+        "type": "string",
+        "enum": [
+          "en-us"
+        ]
+      },
+      "app_type": {
+        "type": "string",
+        "pattern": "^(mobile apps|reactive web apps|traditional web apps)(,\\s*(mobile apps|reactive web apps|traditional web apps))*$"
+    },
+      "platform-version": {
+        "type": "string",
+        "enum": [
+          "o11"
+        ]
+      },
+      "figma": {
+        "oneOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "string",
+            "pattern": "^$"
+          },
+          {
+            "type": "string",
+            "pattern": "^https://www\\.figma\\.com"
+          }
+        ]
+      }
+    },
+    "required": [
+      "summary",
+      "locale",
+      "app_type",
+      "guid",
+      "platform-version",
+      "figma"
+    ],
+    "additionalProperties": false
+}

@@ -1,5 +1,5 @@
 ---
-summary: Extensions, defined in Integration Studio, allow you to increment OutSystems functionality and integrate with external systems.
+summary: OutSystems 11 (O11) extensions facilitate external system integration via customizable actions, structures, entities, and resources.
 locale: en-us
 guid: 84e1a2bb-ddb5-40d3-9419-17be22398c15
 app_type: traditional web apps, mobile apps, reactive web apps

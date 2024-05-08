@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Timeline UI Pattern.
+summary: Explore how to integrate the Timeline UI Pattern with ListRecords in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: c0cdbad2-39c2-434e-afc5-6f05acf4901d
 app_type: traditional web apps

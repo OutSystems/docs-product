@@ -1,5 +1,5 @@
 ---
-summary: Use Static Entities for immutable data.
+summary: Learn how to manage Static Entities in OutSystems 11 (O11) for predefined data sets with global scope and automatic persistence management.
 tags:
 locale: en-us
 guid: a0ab595d-66a9-4bee-988a-d12ba224b0e5

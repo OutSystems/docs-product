@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) triggers an "Invalid Receive In" error for incorrect output parameter settings in REST APIs.
 locale: en-us
 guid: 90a4dbc8-4410-4801-87ad-9a93ad6609b0
 app_type: traditional web apps, mobile apps, reactive web apps

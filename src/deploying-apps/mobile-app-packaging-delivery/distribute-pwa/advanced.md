@@ -1,5 +1,5 @@
 ---
-summary: Edit the PWA manifest and create a custom service worker.
+summary: Explore advanced PWA settings and customizations in OutSystems 11 (O11) for enhanced mobile app development.
 tags: support-application_development; runtime-mobile;
 locale: en-us
 guid: 418aac4c-1cdc-40b2-9b69-ba4fd68527f7

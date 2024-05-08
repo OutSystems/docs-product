@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) provides a comprehensive module for mobile-specific lookups, including server actions and structures for various data types.
 locale: en-us
 guid: 20b75e5b-44cc-46b5-8448-8b5b87e9ebf4
 app_type: traditional web apps, mobile apps, reactive web apps

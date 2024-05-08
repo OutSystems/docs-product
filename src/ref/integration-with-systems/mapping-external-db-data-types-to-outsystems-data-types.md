@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) maps external database data types to its own data types across various databases.
 tags: support-application_development; support-Database; support-Integrations_Extensions
 locale: en-us
 guid: 310843b2-84da-4461-99e8-c2dc6be41778

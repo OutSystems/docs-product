@@ -4,7 +4,7 @@ guid: 45cc30b7-02ce-49a6-9d9a-9f7d61b6a022
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Import Actions from .NET Assembly wizard in Integration Studio allows users to import action definitions from a .NET assembly into their OutSystems extension
+summary: Learn to import .NET assembly actions into OutSystems 11 (O11) using a step-by-step wizard.
 ---
 # Import Actions from .NET Assembly
 

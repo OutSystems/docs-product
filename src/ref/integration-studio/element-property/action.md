@@ -4,7 +4,7 @@ guid: b5a2987a-129b-4bc7-953d-13a6f8ffc2ca
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article details the properties of the action element in Integration Studio, including name, icon, description, function, and import details
+summary: OutSystems 11 (O11) action properties include mandatory and optional settings, defaults, and customization options.
 ---
 # Action Properties
 

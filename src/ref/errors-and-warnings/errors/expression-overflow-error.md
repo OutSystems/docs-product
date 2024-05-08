@@ -1,4 +1,5 @@
 ---
+summary: Explore common `Expression Overflow` error scenarios in OutSystems 11 (O11) related to data type limits and value ranges.
 locale: en-us
 guid: f5218ef6-23d9-441f-8003-1789c839edaf
 app_type: traditional web apps, mobile apps, reactive web apps

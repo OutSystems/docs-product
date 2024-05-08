@@ -5,7 +5,7 @@ guid: f6eaf671-e183-45ce-8034-d3e16656b3b2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=2836%3A3583&mode=design&t=Ix2yojgoXorQvo4C-1
-summary: Comment is a tool for adding annotated text boxes in code, with features to highlight reminders and include links
+summary: Explore how OutSystems 11 (O11) enhances code commenting with features like reminders and link embedding in the TrueChange™ tab.
 ---
 # Comment
 

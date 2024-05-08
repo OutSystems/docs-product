@@ -1,5 +1,5 @@
 ---
-summary: The Health and Fitness plugin lets you use data from Apple HealthKit and Google Fit and create customized solutions for your users.
+summary: OutSystems 11 (O11) integrates a Health & Fitness plugin that facilitates access to Apple HealthKit and Google Fit APIs for mobile apps.
 locale: en-us
 guid: 58915a48-1778-4182-b55f-77b91d6abb05
 app_type: mobile apps

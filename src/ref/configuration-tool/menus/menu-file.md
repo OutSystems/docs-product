@@ -1,5 +1,5 @@
 ---
-summary: Use these options to import and export the configuration, and export the SQL/PowerShell scripts.
+summary: Explore configuration management and script generation features in OutSystems 11 (O11) for efficient deployment across servers.
 locale: en-us
 guid: c87ade70-83ff-4ba0-b333-9ce56da5c8f1
 app_type: traditional web apps, mobile apps, reactive web apps

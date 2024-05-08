@@ -1,4 +1,5 @@
 ---
+summary: Explore how to design process flows using the editor in OutSystems 11 (O11) after creating a process.
 locale: en-us
 guid: ead753b9-93a1-468a-9949-0eca55faa765
 app_type: traditional web apps, mobile apps, reactive web apps

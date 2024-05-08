@@ -1,4 +1,5 @@
 ---
+summary: Explore the Edit Record widget in OutSystems 11 (O11), designed for editing single records in Traditional Web Apps with a tabular layout.
 helpids: 4021
 tags: 
 locale: en-us

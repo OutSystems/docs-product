@@ -4,7 +4,7 @@ guid: 51019bcc-2daf-4dfe-9df7-856a656a7de5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1815%3A9268&mode=design&t=8a1ub9syb4QKHbuk-1
-summary: The article explains how to export and examine SOAP web service definition files using Service Studio for troubleshooting and modification purposes
+summary: OutSystems 11 (O11) enhances SOAP web service integration by allowing the export of definition files through Service Studio.
 ---
 # Export definition files in a SOAP web service
 

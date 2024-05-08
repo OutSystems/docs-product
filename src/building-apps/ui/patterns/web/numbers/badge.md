@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Badge display numerical information as notification.
+summary: OutSystems 11 (O11) supports the Badge UI Pattern for displaying dynamic numerical notifications in Traditional Web Apps.
 locale: en-us
 guid: 4e5ea285-0422-4cb1-9f36-1e49d7422fb7
 app_type: traditional web apps

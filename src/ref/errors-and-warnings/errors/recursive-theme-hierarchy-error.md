@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the Recursive Theme Hierarchy error in OutSystems 11 (O11) by addressing circular dependencies between themes.
 locale: en-us
 guid: 5d3d786b-ebf4-47f0-b289-a207dadd8bb0
 app_type: traditional web apps, mobile apps, reactive web apps

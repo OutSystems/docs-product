@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Use Cases for the Navigation Bar UI Pattern.
+summary: Explore navigation bar customization options in OutSystems 11 (O11) for traditional web apps, including CSS selectors and advanced use cases.
 locale: en-us
 guid: 7eec386c-a22e-4f3a-a6cd-2509360fadfc
 app_type: traditional web apps

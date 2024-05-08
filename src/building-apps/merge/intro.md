@@ -1,5 +1,5 @@
 ---
-summary: Integrate other developers' changes into your module by using the merge feature. It works with both visual and textual elements.
+summary: Explore merging and versioning features in OutSystems 11 (O11) designed for effective team collaboration on modules.
 locale: en-us
 guid: 1c3fca8d-f369-4aaa-b647-dcc9db705eb1
 app_type: traditional web apps, mobile apps, reactive web apps

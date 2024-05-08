@@ -4,7 +4,7 @@ guid: b45e7737-81b3-441d-9baf-641f310c262d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: Integration Studio automatically generates template files for extension development after creation, which include .NET source files and properties for resource management
+summary: Learn how OutSystems 11 (O11) automates the generation of extension source files for streamlined development in Integration Studio.
 ---
 # Extension Source Files
 

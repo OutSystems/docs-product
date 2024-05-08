@@ -1,5 +1,5 @@
 ---
-summary: Add JavaScript code to a Traditional Web App to make it more dynamic, adding custom behavior to pages executed on the user's browser while minimizing the number of calls to the server.
+summary: Explore how to enhance Traditional Web Apps with JavaScript in OutSystems 11 (O11) for dynamic user experiences and efficient server communication.
 tags: runtime-traditionalweb
 locale: en-us
 guid: ade87f50-8404-4392-88d0-e33397418fe9

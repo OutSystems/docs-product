@@ -1,5 +1,5 @@
 ---
-summary: The article describes how to execute multiple instances of a process activity dynamically at runtime, using either a new Process or a Conditional Start for scalability and structure
+summary: Learn how to execute multiple instances of a flow of activities in OutSystems 11 (O11) for scalable and dynamic process management.
 locale: en-us
 guid: e4f2b751-f68b-4d31-b018-a30bf5a7f61a
 app_type: traditional web apps, mobile apps, reactive web apps

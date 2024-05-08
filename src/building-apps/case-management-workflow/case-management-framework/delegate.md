@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: Learn about delegating cases and activities using the Case Management framework.
+summary: Learn how to manage delegation of cases and activities in OutSystems 11 (O11) using the CaseConfigurations_API and CaseServices_API modules.
 guid: 29292c65-0d1c-489c-b7f8-622d282dc021
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) introduces detailed properties and configurations for the Cell Widget, including mandatory settings and runtime attributes.
 locale: en-us
 guid: c6a8d1ee-69f8-4864-b318-45e927008881
 app_type: traditional web apps, mobile apps, reactive web apps

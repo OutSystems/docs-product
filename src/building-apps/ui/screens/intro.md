@@ -1,5 +1,5 @@
 ---
-summary: Screen is a building block of an app. You can create empty Screens or with some predefined content.
+summary: Explore how to create and utilize UI elements in OutSystems 11 (O11) for both web and mobile applications.
 locale: en-us
 guid: a864addf-9175-49f9-905e-e90013c7d238
 app_type: traditional web apps, mobile apps, reactive web apps

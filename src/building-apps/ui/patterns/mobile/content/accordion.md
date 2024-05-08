@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Accordion expands vertically-stacked content by clicking on the header.
+summary: Learn how to implement and customize the Accordion UI pattern in OutSystems 11 (O11) for dynamic content management in mobile and reactive web apps.
 locale: en-us
 guid: 4cdf1677-f152-4afc-ac90-75901d2e9055
 app_type: mobile apps, reactive web apps

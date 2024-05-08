@@ -4,7 +4,7 @@ guid: 16186793-9357-420f-a833-2c5e0d3c47b5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article provides a guide on how to manually add an entity to an extension in Integration Studio, including setting properties and attributes
+summary: OutSystems 11 (O11) allows manual addition of entities to extensions and offers a wizard for importing multiple entities from a database.
 ---
 # Add an Entity
 

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to validate the information users enter in forms. Use the built-in validation for email, currency, numbers, text — or create custom validators. Customize the feedback messages that show next to the invalid values.
+summary: OutSystems 11 (O11) offers built-in and customizable form validation for enhanced user experience in web and mobile apps.
 tags:
 locale: en-us
 guid: 5a4706ab-9f44-405a-a6fc-758b86c29d30

@@ -1,5 +1,5 @@
 ---
-summary: Use File Viewer plugin to let users of your mobile app view remote or app resource files.
+summary: Explore the capabilities of the File Viewer plugin in OutSystems 11 (O11) for opening and managing files in mobile and Progressive Web Apps.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 8f00b7c4-754a-4afd-86ac-740c255458b1

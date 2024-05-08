@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties and configurations of input parameters in consumed REST API methods in OutSystems 11 (O11).
 helpids: 30080
 locale: en-us
 guid: 32eb391b-601d-4332-9f9b-a6844fd5c034

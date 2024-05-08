@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Floating Actions displays an action that floats in the bottom right corner of the screen.
+summary: Learn how to implement the Floating Actions UI Pattern in OutSystems 11 (O11) for enhanced mobile and reactive web app interfaces.
 locale: en-us
 guid: ebdedf83-2dba-46f4-9415-c0679e4ced71
 app_type: mobile apps, reactive web apps

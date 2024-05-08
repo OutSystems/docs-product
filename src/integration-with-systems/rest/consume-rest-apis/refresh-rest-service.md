@@ -1,5 +1,5 @@
 ---
-summary: Change the services consumed from a REST Web Service; get the latest changes or modify the list of consumed methods in Service Studio.
+summary: Learn how to refresh and manually update REST web services in OutSystems 11 (O11) using Service Studio for improved API integration.
 tags: support-Integrations_Extensions
 locale: en-us
 guid: 051817d3-80d3-4bdf-bdb7-af69b96f58eb

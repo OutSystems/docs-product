@@ -1,5 +1,5 @@
 ---
-summary: Read about caching in OutSystems Apps.
+summary: OutSystems 11 (O11) enhances app performance through efficient caching mechanisms and selective cache invalidation options.
 locale: en-us
 guid: b1fd3cda-593d-4e77-99db-bfccef52149f
 app_type: traditional web apps, mobile apps, reactive web apps

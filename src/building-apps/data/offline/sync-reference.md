@@ -1,5 +1,5 @@
 ---
-summary: Descriptions of the elements in the offline sync framework. 
+summary: OutSystems 11 (O11) provides a detailed sync framework for mobile apps, covering data synchronization between client and server actions.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: 4bdbcec9-3e7a-4701-a2e8-4bd6166e7bb0

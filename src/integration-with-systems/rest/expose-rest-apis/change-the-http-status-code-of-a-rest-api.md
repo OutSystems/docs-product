@@ -1,5 +1,5 @@
 ---
-summary: How to send a specific HTTP Status Code in the response of an exposed REST API method.
+summary: OutSystems 11 (O11) allows customization of HTTP Status Codes in REST API responses by using the SetStatusCode action.
 tags: 
 locale: en-us
 guid: c0c56e61-281f-410c-8fb2-a07561bbca46

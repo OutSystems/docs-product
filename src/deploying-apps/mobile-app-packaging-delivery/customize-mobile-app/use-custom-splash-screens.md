@@ -1,5 +1,5 @@
 ---
-summary: Specify custom splash screens for your mobile app adapted to all screen sizes and densities.
+summary: Learn how to customize the native splash screen in OutSystems 11 (O11) for a seamless user experience on mobile apps.
 tags: runtime-mobile; support-Front_end_Development-featured
 locale: en-us
 guid: f8dfa815-8c3e-4906-9378-e9d91ad6b4a4
@@ -33,17 +33,17 @@ To use a custom image as the native splash screen of your app:
 
 1. In the Data tab of the main Module of your app, right-click the Resources folder and import the ZIP file as a Resource. 
 
-    ![](images/res-folder-ss.png)
+    ![Screenshot of the Resources folder with a ZIP file imported as a resource in OutSystems.](images/res-folder-ss.png "Importing ZIP File as Resource")
 
     Leave the `Deploy Action` property as `Do Nothing`.
 
 1. In the properties of the app module add the [Splash Screens JSON template](#splash-screens-json-templates) to the **Extensibility Configurations** property:
 
-    ![](images/splash-screens-ss.png)
+    ![Screenshot showing where to add the Splash Screens JSON template in the Extensibility Configurations property.](images/splash-screens-ss.png "Extensibility Configurations Property")
 
 1. In the JSON template that you added to the **Extensibility Configurations** property, replace `<path_to_resources_file>` with the name of the ZIP file and replace each one of the `<path_to_splash_screen_image>.png` with the corresponding splash screen PNG image location inside the ZIP file. After this step, you should get a JSON similar to the following:
 
-    ![](images/extensibility-splashsreens-ss.png)
+    ![Screenshot of the JSON template added to the Extensibility Configurations property with paths to splash screen images.](images/extensibility-splashsreens-ss.png "JSON Template in Extensibility Configurations")
 
     <div class="warning" markdown="1">
     
@@ -53,7 +53,7 @@ To use a custom image as the native splash screen of your app:
 
 1. To make this change available to users, [publish and generate a new mobile application package](<../generate-distribute-mobile-app/intro.md>) and distribute it. 
 
-    ![](images/generate-mobile-app-ss.png)
+    ![Screenshot of the mobile app package generation process with a QR code for app installation.](images/generate-mobile-app-ss.png "Generating Mobile App Package")
 
 ## Devices screen sizes and densities { #devices-screen-sizes-and-densities }
 

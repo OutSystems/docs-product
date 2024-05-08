@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Gallery enables the users to sequentially browse the content when there are many cards grouped into one or more collections.
+summary: Explore the Gallery UI Pattern in OutSystems 11 (O11) for displaying content groups in Traditional Web Apps.
 locale: en-us
 guid: fa8125c1-ec09-4d4f-8c84-41be51e007b8
 app_type: traditional web apps

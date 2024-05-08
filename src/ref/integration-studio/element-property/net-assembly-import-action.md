@@ -4,7 +4,7 @@ guid: 6d427a2f-1395-4386-abde-fe9f074f7e38
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains how to import action definitions from a .NET assembly into OutSystems, detailing how constructors, methods, properties, and public fields are converted into actions with specific naming and parameter conventions
+summary: OutSystems 11 (O11) facilitates importing .NET assembly items as actions with specific properties and parameters.
 ---
 # Imported Actions Properties
 

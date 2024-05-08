@@ -1,5 +1,5 @@
 ---
-summary: Learn how to register an environment using the LifeTime API.
+summary: Explore how to use the LifeTime API in OutSystems 11 (O11) to register environments and manage role-based permissions.
 tags:
 locale: en-us
 guid: fa3c3a72-304f-4171-b85a-77e614a20326

@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve SQL warnings in OutSystems 11 (O11) by matching select columns and output structures accurately.
 locale: en-us
 guid: 5d5ceec8-9d14-44c9-b289-57ae396f7409
 app_type: traditional web apps, mobile apps, reactive web apps

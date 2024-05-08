@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve common entity errors in OutSystems 11 (O11) by ensuring proper attribute and identifier settings.
 locale: en-us
 guid: ccb19e76-042b-4861-8822-dcaedc912d5b
 app_type: traditional web apps, mobile apps, reactive web apps

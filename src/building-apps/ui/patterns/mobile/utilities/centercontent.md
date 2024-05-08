@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Use the Center Content pattern to align the content to the center of its container.
+summary: Explore how to vertically center content in OutSystems 11 (O11) using the Center Content UI Pattern for mobile and reactive web apps.
 locale: en-us
 guid: 050c3c6c-4147-474f-b78b-eb143ef5ebb8
 app_type: mobile apps, reactive web apps

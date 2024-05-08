@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) requires updating external links when a module name is changed to ensure application compliance.
 locale: en-us
 guid: 00999f64-7e94-4592-a8e1-a592ae2f677b
 app_type: traditional web apps, mobile apps, reactive web apps

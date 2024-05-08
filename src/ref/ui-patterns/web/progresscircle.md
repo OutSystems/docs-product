@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Progress Circle UI Pattern
+summary: Explore UI customization options for the Progress Circle in OutSystems 11 (O11).
 locale: en-us
 guid: 26092480-0d4f-441c-aeca-c82f31a3df51
 app_type: traditional web apps

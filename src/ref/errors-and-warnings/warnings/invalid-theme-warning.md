@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different Invalid Theme TrueChange warnings.
+summary: OutSystems 11 (O11) requires specific placeholders in theme layouts to ensure proper functionality.
 tags:
 locale: en-us
 guid: 0b9c59a1-505b-4139-9567-c0f219b62ac8

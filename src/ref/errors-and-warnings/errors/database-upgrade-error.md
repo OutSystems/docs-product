@@ -1,4 +1,5 @@
 ---
+summary: Explore common database upgrade errors and solutions in OutSystems 11 (O11).
 locale: en-us
 guid: 3bb08332-800d-426b-bdf2-2de08f859c9b
 app_type: traditional web apps, mobile apps, reactive web apps

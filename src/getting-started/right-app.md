@@ -1,5 +1,5 @@
 ---
-summary: Learn what is the right app for your project. Know the difference between web and mobile apps in OutSystems and what to choose for your needs. 
+summary: Explore app development options in OutSystems 11 (O11) for various platforms, including Reactive Web Apps and Mobile Apps, to suit different project needs.
 tags: support-application_development; support-Mobile_Apps-overview; support-webapps-overview
 locale: en-us
 guid: 1945689d-cfc3-497f-b313-a8cf051a18d9

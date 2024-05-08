@@ -1,4 +1,5 @@
 ---
+summary: Explore the File and Help menus in the OutSystems 11 (O11) Configuration Tool for managing settings and accessing support information.
 tags: support-Installation_Configuration
 locale: en-us
 guid: d1ef7bdc-480c-42b1-bf85-106da06c6bbb

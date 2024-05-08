@@ -1,5 +1,5 @@
 ---
-summary: Check the recommended network architecture for using deployment zones.
+summary: Explore network architecture for OutSystems 11 (O11) with deployment zones, load balancers, and reverse proxies.
 tags: support-Application_Lifecycle; support-Infrastuture_Architecture
 locale: en-us
 guid: 74a8ebdd-0c4e-45a1-b39e-51a170a27524

@@ -1,5 +1,5 @@
 ---
-summary: Use output parameters to your process activity to return information to the following process activities in the flow path.
+summary: Learn how to manage output parameters in process flows using OutSystems 11 (O11) to facilitate data passage between activities.
 locale: en-us
 guid: 88f8d860-47a8-4529-b137-e3d7e832b5b7
 app_type: traditional web apps, mobile apps, reactive web apps

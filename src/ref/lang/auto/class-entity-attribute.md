@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) defines an Entity Attribute as a database table column with specific properties and settings for application development.
 locale: en-us
 guid: a5293dd0-7718-4b6e-a560-a807edb69083
 app_type: traditional web apps, mobile apps, reactive web apps

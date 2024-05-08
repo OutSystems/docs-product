@@ -1,5 +1,5 @@
 ---
-summary: OutSystems logs every task performed by IT users in the infrastructure management and keeps an audit log made available to consult.
+summary: OutSystems 11 (O11) features detailed audit logs for tracking IT user activities and ensuring infrastructure traceability.
 tags: support-Integrations_Extensions; support-monitoring;  support-monitoring-featured
 locale: en-us
 guid: ff41a92e-5717-4a6c-9016-12acdb4de71f

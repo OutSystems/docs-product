@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: The Pagination UI Pattern helps users find a specific item on long listings.
+summary: Explore how to implement and configure the Pagination UI pattern in OutSystems 11 (O11) for efficient data handling in mobile and reactive web apps.
 locale: en-us
 guid: 20819218-aa75-441f-b2e6-6796dc14f1d8
 app_type: mobile apps, reactive web apps

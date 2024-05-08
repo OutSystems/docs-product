@@ -1,5 +1,5 @@
 ---
-summary: Add basic authentication to the requests made to the REST APIs you are exposing.
+summary: Learn how to implement basic authentication in exposed REST APIs using OutSystems 11 (O11).
 tags: 
 locale: en-us
 guid: fa99306b-0261-47c1-821f-80262d8dd45b

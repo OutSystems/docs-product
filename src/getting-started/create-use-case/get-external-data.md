@@ -1,5 +1,5 @@
 ---
-summary: Learn more about how to get external data in your OutSystems applications. This article summarizes ways to use external data with OutSystems.
+summary: Learn how OutSystems 11 (O11) enables integration with external databases, systems of record, and Excel to enhance app development.
 tags:
 locale: en-us
 guid: 4430e635-ef3e-45e4-a2f6-39c74300518d

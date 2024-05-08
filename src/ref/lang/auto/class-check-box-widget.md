@@ -1,4 +1,5 @@
 ---
+summary: Learn about the Check Box widget in OutSystems 11 (O11), designed for Traditional Web Apps, featuring properties for customization and validation.
 helpids: 4026
 tags: 
 locale: en-us

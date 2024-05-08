@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Use the Map pattern to add Google Maps to your app.
+summary: Explore interactive mapping in OutSystems 11 (O11) with the Map component, supporting Google Maps and Leaflet for global office location visualization.
 locale: en-us
 guid: 3193c9d8-9711-4d4c-bf24-839f22a8052f
 app_type: mobile apps, reactive web apps

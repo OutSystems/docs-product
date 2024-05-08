@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features a Table Widget for organizing screen content in Traditional Web Apps, with customizable rows, columns, and cell properties.
 helpids: 4015
 locale: en-us
 guid: 3d3bc1b9-9937-4e08-b4ce-f935022fc6dc

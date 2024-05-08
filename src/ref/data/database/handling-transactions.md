@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) handles database transactions with automatic and explicit controls, supporting various isolation levels.
 tags: support-Database
 locale: en-us
 guid: cb6c0a9e-1714-484f-90ed-74f2afa98f67

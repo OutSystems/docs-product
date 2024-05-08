@@ -1,5 +1,5 @@
 ---
-summary: Follow this tutorial to quickly create and test an example mobile app to manage tasks.
+summary: Learn to build and test a mobile app with OutSystems 11 (O11) by importing Excel data into a database.
 tags: runtime-mobile; support-Mobile_Apps; support-Mobile_Apps-overview
 locale: en-us
 guid: 0ee5a8f6-0c94-4316-818f-49cc25f92283

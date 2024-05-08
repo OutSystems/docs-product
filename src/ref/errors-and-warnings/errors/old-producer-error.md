@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recommendations on how to solve an Old Producer error.
+summary: Learn how to resolve the 'Old Producer Error' in OutSystems 11 (O11) when a module hasn't been prepared for the current environment version.
 tags:
 locale: en-us
 guid: 0897286f-5a9a-480b-992f-1855920b9ed1

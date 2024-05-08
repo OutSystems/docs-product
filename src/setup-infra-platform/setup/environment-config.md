@@ -1,5 +1,5 @@
 ---
-summary: Learn how to configure the hostname, purpose and debug mode of your OutSystems environment in Service Center console.
+summary: Learn how to configure your OutSystems 11 (O11) environment, including setting the hostname, purpose, and debug mode in the Service Center console.
 tags: support-Installation_Configuration
 locale: en-us
 guid: 34e53ab0-1ab2-429a-81c0-dd29cf99a549

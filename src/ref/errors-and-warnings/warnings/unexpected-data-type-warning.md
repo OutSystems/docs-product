@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different Unexpected Data Type TrueChange warnings.
+summary: OutSystems 11 (O11) documentation highlights solutions for data type mismatch issues in expressions and entity identifiers.
 tags:
 locale: en-us
 guid: 7b112440-68dd-47c3-926d-b59e83cf0327

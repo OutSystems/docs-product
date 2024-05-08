@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Find answers to frequently asked questions about AI Mentor Studio in the following sections.
+summary: Explore the capabilities and integration options of OutSystems 11 (O11) with AI Mentor Studio for enhanced code analysis and technical debt management.
 locale: en-us
 guid: d7db51a1-9917-4baa-a36e-716dc0c75d96
 app_type: traditional web apps, mobile apps, reactive web apps

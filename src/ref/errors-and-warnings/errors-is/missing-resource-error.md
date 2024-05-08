@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the Missing Resource Error in OutSystems 11 (O11) by updating the extension source code.
 locale: en-us
 guid: cca76fc3-0b0e-45b7-8ce8-f3184592ed95
 app_type: traditional web apps, mobile apps, reactive web apps

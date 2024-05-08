@@ -5,7 +5,7 @@ guid: ad3eafdc-ad10-415d-bcd6-21a2ef277cd1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A33&mode=design&t=8a1ub9syb4QKHbuk-1
-summary: The article provides a step-by-step guide on how to expose a SOAP Web Service, including setting properties, adding methods, and publishing the module
+summary: Learn how to expose a SOAP Web Service in OutSystems 11 (O11) by setting properties, adding methods, and configuring namespaces.
 ---
 # Expose a SOAP Web Service
 

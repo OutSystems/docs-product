@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Tag styles small texts in a colored tag format.
+summary: Explore how to use the Tag UI Pattern in OutSystems 11 (O11) to enhance user interfaces by styling texts with customizable colors, sizes, and shapes.
 locale: en-us
 guid: b448e71a-760c-46b3-9fed-b3b97229d351
 app_type: traditional web apps

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) feature for converting Record Lists to Excel files, including mandatory properties and attributes for file export.
 helpids: 10002
 locale: en-us
 guid: d1e3abef-bbf3-4455-87b2-3c19acc594bb

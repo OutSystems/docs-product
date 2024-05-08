@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) manages external site navigation through URL properties and dynamic input parameters.
 helpids: 1003
 locale: en-us
 guid: 45080b5d-e942-4a12-935b-ac0db428c0e2

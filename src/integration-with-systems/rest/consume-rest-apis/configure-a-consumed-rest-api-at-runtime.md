@@ -1,5 +1,5 @@
 ---
-summary: How to override the Base URL and the Basic Authentication credentials of a consumed REST API for a given environment.
+summary: Learn how to configure a consumed REST API at runtime in OutSystems 11 (O11) for different environments without republishing the module.
 tags: 
 locale: en-us
 guid: bab48957-3b44-44a9-9996-d705c67a2dd6

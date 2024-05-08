@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Search UI Pattern.
+summary: Explore advanced search functionalities in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: cfd34720-b1a4-452c-ab75-0af83bed2963
 app_type: traditional web apps

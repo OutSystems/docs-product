@@ -1,5 +1,5 @@
 ---
-summary: Use Send Email action on the server to send emails. Trigger manual or automatic sending of emails.
+summary: Explore email sending and triggering functionalities in OutSystems 11 (O11) with detailed steps and examples for creating server actions and UI triggers.
 tags: support-application_development,
 locale: en-us
 guid: c24bedc2-2f7b-4275-b3af-58b08b4a5b2e

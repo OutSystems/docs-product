@@ -1,5 +1,5 @@
 ---
-summary: The article explains how to add Process Callback actions to validate and control the execution flow of a process
+summary: Learn how to implement and design Process Callback actions in OutSystems 11 (O11) to validate and control process execution flows.
 locale: en-us
 guid: c903f266-1cdc-45fb-9609-188a79440359
 app_type: traditional web apps, mobile apps, reactive web apps

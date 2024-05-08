@@ -1,5 +1,5 @@
 ---
-summary: Edit previously imported Flows in Experience Builder.
+summary: Explore how to edit and reimport flow templates in OutSystems 11 (O11) using Experience Builder.
 locale: en-us
 guid: bfe493f7-3801-4266-a435-e2d7b64e395f
 app_type: traditional web apps, mobile apps, reactive web apps

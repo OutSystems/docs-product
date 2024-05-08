@@ -1,5 +1,5 @@
 ---
-summary: The Key Store Plugin allows you to securely store, get and remove secrets (key-value pairs) on iOS & Android devices.
+summary: Explore secure storage of sensitive data in mobile apps using the Key Store plugin in OutSystems 11 (O11).
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: d66f03f6-4f9a-4923-9f55-75adabf5ed64

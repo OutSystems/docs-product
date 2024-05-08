@@ -1,5 +1,5 @@
 ---
-summary: Learn how to be compliant with the licensing requirements of the third party components used by your application.
+summary: Explore how OutSystems 11 (O11) ensures compliance with third-party licenses in mobile apps by integrating licensing information.
 tags: runtime-mobile
 locale: en-us
 guid: a1e335a8-d8f0-4039-bd89-67590def7910

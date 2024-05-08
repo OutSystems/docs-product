@@ -1,10 +1,10 @@
 ---
-summary: Learn to integrate the OutSystems platform with a third-party pre-rendering solution.
+summary: OutSystems 11 (O11) integrates with prerender.io to enhance SEO for reactive applications by pre-rendering content for better indexing by search engines.
 tags: 
 locale: en-us
 guid: 528FED29-0646-431E-98D1-9BDF5471068A
 app_type: mobile apps, reactive web apps
-platform-version: o11, ODC
+platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4239:737
 ---
 

@@ -1,4 +1,5 @@
 ---
+summary: Explore explicit and implicit communication methods in processes using OutSystems 11 (O11).
 locale: en-us
 guid: a779877f-c993-4609-9b15-12216cd263c7
 app_type: traditional web apps, mobile apps, reactive web apps

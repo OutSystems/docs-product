@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Toggle Button UI Pattern.
+summary: Explore the detailed guide on using and styling the Toggle Button UI pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 0a3ed4d0-92d8-42d3-8cb5-076de9b5752a
 app_type: traditional web apps

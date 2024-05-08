@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Chat Message displays conversation posts in notifications or chat screens.
+summary: Explore how to implement and customize the Chat Message UI Pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: 6d975212-eb39-4891-83ba-9306ba78b2cd
 app_type: mobile apps, reactive web apps

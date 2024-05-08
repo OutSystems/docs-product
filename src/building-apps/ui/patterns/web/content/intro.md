@@ -1,5 +1,5 @@
 ---
-summary: Content patterns allow you to highlight and display important information to users in different ways, such as warnings, errors, and tooltips.
+summary: OutSystems 11 (O11) offers diverse content patterns for effective information display and organization.
 locale: en-us
 guid: 0b158172-2203-468c-8242-f48fcccc023c
 app_type: traditional web apps

@@ -4,7 +4,7 @@ guid: cdffaa83-59f9-4c88-a3f1-4168fd023051
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:63
-summary: The article explains how to import Web Services from a .NET assembly into OutSystems using Integration Studio, including creating proxies, handling shared data types, and dealing with recursive data types
+summary: Explore how OutSystems 11 (O11) facilitates the import of .NET assembly-based Web Services into Integration Studio for enhanced application development.
 ---
 # Import Web Services from a .NET Assembly
 

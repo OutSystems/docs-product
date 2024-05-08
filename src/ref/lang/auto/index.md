@@ -4,7 +4,7 @@ guid: 90fdddea-a0af-4d39-a56d-dda1bd58ed12
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1:89
-summary: The article provides an index of OutSystems language elements, including built-in functions, widgets, and plugins
+summary: Explore the comprehensive guide to built-in functions, widgets, and plugins in OutSystems 11 (O11).
 ---
 # OutSystems Language
 

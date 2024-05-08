@@ -1,5 +1,5 @@
 ---
-summary: More information on the data presented in the "Native Platforms" tab of Service Center.
+summary: Explore mobile app configuration and management options for iOS and Android in OutSystems 11 (O11) via the Service Center's Native Platforms section.
 tags: runtime-mobile
 locale: en-us
 guid: 1ad36b43-1e0e-4efb-a701-651bf0b97e06

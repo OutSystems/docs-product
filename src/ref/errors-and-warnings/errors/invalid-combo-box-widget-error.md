@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve common configuration errors in the Combo Box widget in OutSystems 11 (O11).
 locale: en-us
 guid: c8ac04ea-7e81-44be-b645-bf003af44f25
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Invalid Extension' error in OutSystems 11 (O11) by setting literal default values for input parameters in Integration Studio.
 locale: en-us
 guid: 0b8a546c-b037-4bc9-a9f0-ae936c88c951
 app_type: traditional web apps, mobile apps, reactive web apps

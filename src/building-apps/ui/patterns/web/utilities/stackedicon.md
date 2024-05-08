@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Stacked Icon expands the icon set and creates new graphical representation of concepts.
+summary: Learn how to create distinctive icons by stacking them in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 163fef6d-6b13-4479-baaa-25c27569832d
 app_type: traditional web apps

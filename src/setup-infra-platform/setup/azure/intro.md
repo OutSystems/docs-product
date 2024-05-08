@@ -1,6 +1,6 @@
 ---
 tags: support-Installation_Configuration; support-Installation_Configuration-overview; support-installation;
-summary: OutSystems on Microsoft Azure is a versatile platform ready for scaling.
+summary: Explore OutSystems 11 (O11) infrastructure setup on Microsoft Azure, featuring multi-environment deployment and horizontal scaling options.
 locale: en-us
 guid: 5a889483-823a-4502-8899-7c5bc94082a9
 app_type: traditional web apps, mobile apps, reactive web apps

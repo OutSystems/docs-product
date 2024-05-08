@@ -1,5 +1,5 @@
 ---
-summary: Implement a drop-down list with a native look and feel. To do this, use Dropdown Widget in Mobile and Reactive Web Apps or a Combo Box Widget in Traditional Web Apps.
+summary: Explore how to implement Dropdown and Combo Box widgets for user selection in OutSystems 11 (O11) applications.
 tags:
 locale: en-us
 guid: bc593b2b-0d5d-45ea-9f3d-4fb99df6dedb

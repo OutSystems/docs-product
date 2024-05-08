@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) provides detailed properties for input parameters in consumed SOAP Web Services, including mandatory fields and default values.
 locale: en-us
 guid: 249fbacb-2b93-4dd1-8675-e48bcccbd609
 app_type: traditional web apps, mobile apps, reactive web apps

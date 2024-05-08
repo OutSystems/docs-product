@@ -1,4 +1,5 @@
 ---
+summary: Explore common data synchronization patterns for mobile apps with OutSystems 11 (O11), including sample modules for implementation.
 tags: runtime-mobile; support-application_development; support-Application_Troubleshooting-featured; support-Mobile_Apps
 locale: en-us
 guid: ed285ef6-c4cc-4d6b-925a-fddb12c4205d

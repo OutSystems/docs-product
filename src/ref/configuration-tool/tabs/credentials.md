@@ -1,5 +1,5 @@
 ---
-summary: The Credentials tab allows you to define or reset the password of the Platform Server admin user.
+summary: OutSystems 11 (O11) features a Credentials tab for defining or resetting the Platform Server admin user's password.
 locale: en-us
 guid: 065a2e85-acf4-4895-87fd-5f176f406932
 app_type: traditional web apps, mobile apps, reactive web apps

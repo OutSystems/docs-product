@@ -1,5 +1,5 @@
 ---
-summary: Show the tabular data with Table.
+summary: Explore table creation and editing features in OutSystems 11 (O11) for Reactive Web Apps and Mobile/Progressive Web Apps.
 tags: runtime-reactiveweb;
 locale: en-us
 guid: 4fbaf92c-a4a3-4acd-9453-c8502ee36d8f

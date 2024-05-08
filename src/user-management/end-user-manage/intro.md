@@ -1,5 +1,5 @@
 ---
-summary: Learn about end-user licensing on OutSystems.
+summary: Explore end user management and classification in OutSystems 11 (O11), including internal, external, and anonymous user distinctions and capacities.
 tags: 
 locale: en-us
 guid: 907b0fd3-bc46-4391-aae2-673296d795d9

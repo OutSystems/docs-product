@@ -1,4 +1,5 @@
 ---
+summary: Explore common errors in OutSystems 11 (O11) related to invalid client functions and their resolutions.
 locale: en-us
 guid: ca17ad44-8f4c-4e6f-8744-8fb87aff9244
 app_type: traditional web apps, mobile apps, reactive web apps

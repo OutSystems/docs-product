@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Displays large sets of information, which can be split into different areas, while always remaining a click away. 
+summary: Learn how to implement and customize the Tabs UI Pattern in OutSystems 11 (O11) for effective content organization in mobile and reactive web apps.
 locale: en-us
 guid: a5e72a7a-870d-46e7-b2be-a15ac6948b97
 app_type: mobile apps, reactive web apps

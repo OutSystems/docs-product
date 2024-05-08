@@ -1,5 +1,5 @@
 ---
-summary: Learn how to scale your OutSystems infrastructure and configure it for high availability.
+summary: Explore high availability and scalability strategies in OutSystems 11 (O11), focusing on vertical and horizontal scaling and distributed architecture.
 tags: 
 locale: en-us
 guid: eaf6fefe-684a-42aa-b27f-a3ab234e8aac

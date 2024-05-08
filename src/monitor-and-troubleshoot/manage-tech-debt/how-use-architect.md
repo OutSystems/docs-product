@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to Check the technical debt of all the apps in your infrastructure.
+summary: Explore how OutSystems 11 (O11) leverages AI Mentor Studio to manage and reduce technical debt across applications.
 locale: en-us
 guid: 5771d1af-cf5a-4e5c-a4c7-79f03a5f99ef
 app_type: traditional web apps, mobile apps, reactive web apps

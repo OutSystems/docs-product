@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: The Touch Events UI Pattern enables touch events on a specific widget.
+summary: Learn how to enable and customize touch events in mobile and reactive web apps using the Touch Events UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 543a0aea-546e-48ce-92e6-dcc08e9fd2be
 app_type: mobile apps, reactive web apps

@@ -4,7 +4,7 @@ guid: d569b25f-1cf5-4e32-a006-185fcac10089
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Attributes Editor is a tool for editing the properties of structure and entity attributes in an extension
+summary: Explore how OutSystems 11 (O11) enhances attribute management in extensions through its Attributes Editor.
 ---
 # Attributes Editor
 

@@ -1,5 +1,5 @@
 ---
-summary: The article provides guidelines for creating SEO-friendly URLs in Reactive Web apps, best practices, and configuration steps for site rules, custom screen URLs, redirect rules, URL prioritization, and dynamic page titles
+summary: OutSystems 11 (O11) enables SEO-friendly URLs for Reactive Web apps, requiring specific server and studio versions.
 tags: 
 locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F

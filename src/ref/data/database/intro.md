@@ -1,4 +1,5 @@
 ---
+summary: Explore database handling techniques in OutSystems 11 (O11), including indexing, compatibility, and data type management.
 tags: support-Database
 locale: en-us
 guid: 00467a7d-fad6-4a53-9210-5065c66aeb7c

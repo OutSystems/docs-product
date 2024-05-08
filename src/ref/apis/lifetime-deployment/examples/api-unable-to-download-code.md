@@ -1,10 +1,11 @@
 ---
-summary: Troubleshooting common problems with using the download source code API.
+summary: Explore troubleshooting steps for downloading application source code in OutSystems 11 (O11).
 tags: 
 locale: en-us
 guid: E542C662-6053-4758-A514-1A4117364DD0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: 
 ---
 
 # Unable to download the source code of an application

@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework; Access control; CMf; AC;
-summary: After enabling access control for a case definition, you can grant access to specific case instances of that case definition. Learn how to grant or remove access to a case instance for a user or a group of users.
+summary: Learn how to grant or revoke access to a case instance in OutSystems 11 (O11) using specific server actions and properties.
 guid: a2fd36f7-6635-4e07-a09e-a46b2e64987b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

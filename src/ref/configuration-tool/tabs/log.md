@@ -1,5 +1,5 @@
 ---
-summary: The Log tab allows you to configure the logging database and some advanced log settings.
+summary: Explore advanced logging settings and database configurations in OutSystems 11 (O11) through the Log tab.
 locale: en-us
 guid: 1522f7b9-bb8e-4ef3-b4c5-25e110e89a68
 app_type: traditional web apps, mobile apps, reactive web apps

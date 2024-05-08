@@ -1,5 +1,5 @@
 ---
-summary: SEO strategies to improve the ranking of your domain in search results begins with indexing your pages. To do this, you need to ensure that your pages are crawler-friendly.  
+summary: OutSystems 11 (O11) enhances SEO for Reactive Web apps by optimizing crawler accessibility through effective use of sitemaps and robots.txt files.
 tags: runtime-traditionalweb
 locale: en-us
 guid: 7D2154CF-186A-4671-89FA-88C7C25FBBC8

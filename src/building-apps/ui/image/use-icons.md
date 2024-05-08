@@ -1,5 +1,5 @@
 ---
-summary: Learn how to display an icon to help end users identify functionality or information on the screens.
+summary: Discover using over 600 built-in icons in OutSystems 11 (O11) for application interfaces.
 tags:
 locale: en-us
 guid: ae0d2c36-c50f-4084-b986-d19572b31cc5

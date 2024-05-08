@@ -1,5 +1,5 @@
 ---
-summary: How to consume and use a SOAP Web Service in OutSystems.
+summary: Guide on consuming SOAP Web Services in OutSystems 11 (O11), including WSDL configuration and method integration.
 tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
 locale: en-us
 guid: 12679c35-25ab-4d32-a6f2-11a3b94ee3d7

@@ -1,4 +1,5 @@
 ---
+summary: Explore server-side logic execution and properties in OutSystems 11 (O11) with detailed guidelines on exposed server actions and their constraints.
 helpids: 17059
 locale: en-us
 guid: a6524deb-a27a-43d3-b958-a22ec97f1f8c

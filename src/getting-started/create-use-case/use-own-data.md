@@ -1,5 +1,5 @@
 ---
-summary: Learn more about how to use external data in your OutSystems applications. This article summarizes ways to use external data with OutSystems.
+summary: Explore how to integrate your own data into your use-case app in OutSystems 11 (O11) by replacing sample data with external sources.
 tags:
 locale: en-us
 guid: 26564166-8c97-4176-a172-1a16703d86d7

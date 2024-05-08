@@ -1,5 +1,5 @@
 ---
-summary: Learn how to allow developers in the team to create integrations with external databases.
+summary: Learn how OutSystems 11 (O11) enables specific developer roles to integrate with external databases without altering connection settings.
 locale: en-us
 guid: 2bac9add-33d1-4240-8cc7-d23a897f0415
 app_type: traditional web apps, mobile apps, reactive web apps

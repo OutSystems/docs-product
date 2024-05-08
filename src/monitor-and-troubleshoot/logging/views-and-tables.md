@@ -1,4 +1,5 @@
 ---
+summary: Explore the log model of OutSystems 11 (O11), featuring minimal-index tables and weekly rotated views for efficient runtime and querying.
 locale: en-us
 guid: 76cb90a0-8399-4aab-a5de-279278094c1e
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties and functionalities of the REST API method in OutSystems 11 (O11), including mandatory fields and HTTP methods.
 helpids: 17226
 locale: en-us
 guid: 259604df-5c74-4e48-b673-cf10be6f3e07

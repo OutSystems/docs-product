@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: 
+summary: OutSystems 11 (O11) addresses the challenge of optimizing image sizes for web and mobile applications to enhance load times and performance.
 locale: en-us
 guid: ea0f4bea-2a44-4d6d-bd9b-1ec11f8beffa
 app_type: traditional web apps, mobile apps, reactive web apps

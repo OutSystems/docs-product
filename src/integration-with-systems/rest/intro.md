@@ -1,5 +1,5 @@
 ---
-summary: Consuming and exposing REST APIs in OutSystems.
+summary: Explore REST API integration and exposure capabilities in OutSystems 11 (O11) for enhanced application interoperability.
 tags: 
 locale: en-us
 guid: e66f1a19-83df-4bb1-ad39-a61cfaaa6bbb

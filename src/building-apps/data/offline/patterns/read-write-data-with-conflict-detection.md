@@ -1,5 +1,5 @@
 ---
-summary: Use this synchronization pattern when for advanced scenarios where more than one user will change the same data while the app is offline.
+summary: OutSystems 11 (O11) supports advanced data synchronization and conflict detection for mobile apps, ensuring data integrity across offline scenarios.
 tags: runtime-mobile
 locale: en-us
 guid: 9440e4f9-b77c-44ab-9b9a-f5cc985fbfbb

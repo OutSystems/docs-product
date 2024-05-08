@@ -1,4 +1,5 @@
 ---
+summary: Explore automated testing tools compatible with OutSystems 11 (O11) for efficient web and mobile app testing.
 guid: 33518ed5-11df-42fe-8cba-daa3622ea514
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

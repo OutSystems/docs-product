@@ -1,5 +1,5 @@
 ---
-summary: The article explains the effects of removing activities from process flows on executing process instances in OutSystems
+summary: Explore the impact of deleting activities from process flows in OutSystems 11 (O11) and how it affects executing process instances.
 locale: en-us
 guid: 0fa73852-d845-4c80-8b71-0b9c177a4f81
 app_type: traditional web apps, mobile apps, reactive web apps

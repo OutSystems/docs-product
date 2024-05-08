@@ -1,4 +1,5 @@
 ---
+summary: Explore OutSystems 11 (O11) functions like GeneratePassword and If, which offer server-side and client-side logic capabilities.
 locale: en-us
 guid: a2b93961-e935-4710-9afe-8727e23b0b99
 app_type: traditional web apps, mobile apps, reactive web apps

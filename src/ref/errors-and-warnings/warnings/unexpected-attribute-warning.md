@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the "invalid attribute name in Oracle" error in OutSystems 11 (O11) by renaming attributes that conflict with Oracle reserved words.
 locale: en-us
 guid: 16902581-2d4e-4919-b101-7db15909734f
 app_type: traditional web apps, mobile apps, reactive web apps

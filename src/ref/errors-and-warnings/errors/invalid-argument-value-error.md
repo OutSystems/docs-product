@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) generates an "Invalid Argument Value" error when a non-existent Web Service name is used in an action argument.
 locale: en-us
 guid: c28f7649-b364-4139-86ae-5b71089813ac
 app_type: traditional web apps, mobile apps, reactive web apps

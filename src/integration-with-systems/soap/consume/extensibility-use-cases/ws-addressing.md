@@ -1,5 +1,5 @@
 ---
-summary: How to add WS-Addressing elements to SOAP requests using the SOAP Extensibility API.
+summary: Explore how to add WS-Addressing elements to SOAP requests using OutSystems 11 (O11) in Integration and Service Studio.
 locale: en-us
 guid: 67a70ca1-1af0-4993-8761-077e1727acda
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb
-summary: Provides contextual information based on the screen that is being presented. Used to identify the screen, module and application that is currently running.
+summary: OutSystems 11 (O11) features ApplicationContext for contextual details on the current screen, module, and application.
 locale: en-us
 guid: 1441aa35-5b4b-44f1-81de-52be529e2583
 app_type: mobile apps, reactive web apps

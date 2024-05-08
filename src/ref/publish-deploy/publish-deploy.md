@@ -1,5 +1,5 @@
 ---
-summary: Publishing an app compiles the code and makes it available to the development environment, while deploying an app takes a version of the app from one environment to another and compiles the code in the target environment.
+summary: Explore the processes of publishing, deploying, republishing, and redeploying apps in OutSystems 11 (O11).
 tags:
 locale: en-us
 guid: 0C021138-FA51-4A62-97E2-EC6C030FFDA4

@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore how to use Ajax Refresh in OutSystems 11 (O11) to update screen elements dynamically without full page reloads.
 locale: en-us
 guid: 7b8ee1bd-6f84-4af0-b6a4-ea2ff8aaa6e4
 app_type: traditional web apps, mobile apps, reactive web apps

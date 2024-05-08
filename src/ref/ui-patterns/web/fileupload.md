@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the File Upload UI Pattern.
+summary: Explore the layout, classes, and CSS selectors for file uploads in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 7c176124-0522-4577-a50a-3dbf6e33535d
 app_type: traditional web apps

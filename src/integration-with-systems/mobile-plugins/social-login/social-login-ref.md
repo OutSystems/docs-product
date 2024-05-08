@@ -1,5 +1,5 @@
 ---
-summary: Social Login plugin - reference page
+summary: Explore the Social Login plugin functionalities and error handling for OutSystems 11 (O11).
 tags: runtime-mobile
 locale: en-us
 guid: 126ae5a9-3ac9-4f2c-a40d-a1cd4f107b5a

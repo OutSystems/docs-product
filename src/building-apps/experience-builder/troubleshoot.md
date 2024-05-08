@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to troubleshoot and fix common issues you may face while using Experience Builder.
+summary: Explore common issues and solutions for Experience Builder in OutSystems 11 (O11), including image distortion, publishing errors, and module conflicts.
 locale: en-us
 guid: 5fbcd20a-ae06-4818-a497-2ac6596506ce
 app_type: traditional web apps, mobile apps, reactive web apps

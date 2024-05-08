@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Modal is a box with content that interrupts the end user and demands an action.
+summary: Explore how to implement and customize the Modal UI Pattern in OutSystems 11 (O11) for enhanced user interaction in Traditional Web Apps.
 locale: en-us
 guid: 64cf2199-6b69-480b-a63e-49b91965e777
 app_type: traditional web apps

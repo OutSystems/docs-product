@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Tag styles small texts in a colored tag format.
+summary: Explore how to use the Tag UI Pattern in OutSystems 11 (O11) to enhance user interfaces by styling texts with customizable colors, shapes, and sizes.
 locale: en-us
 guid: ad4f4ddf-d346-4347-b78d-8741dea7cb94
 app_type: mobile apps, reactive web apps

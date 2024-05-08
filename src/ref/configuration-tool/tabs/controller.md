@@ -1,5 +1,5 @@
 ---
-summary: In the Controller tab you define how front-end servers and the deployment controller server communicate.
+summary: Explore the communication settings between front-end servers and the deployment controller server in OutSystems 11 (O11) using the Controller tab.
 locale: en-us
 guid: 34809e50-82d5-4e93-a02e-a3bab8811b5d
 app_type: traditional web apps, mobile apps, reactive web apps

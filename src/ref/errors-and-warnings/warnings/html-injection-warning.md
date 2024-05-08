@@ -1,4 +1,5 @@
 ---
+summary: Learn how to secure OutSystems 11 (O11) applications against HTML injection by using encoding and sanitization functions.
 locale: en-us
 guid: 5f57c113-47fb-4a99-b6f6-377b71ff2227
 app_type: traditional web apps, mobile apps, reactive web apps

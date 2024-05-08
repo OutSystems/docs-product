@@ -1,5 +1,5 @@
 ---
-summary:  identity values in BPT tables 
+summary: Explore how to manage and extend the capacity of BPT tables in SQL Server by reseeding identity values using OutSystems 11 (O11) tools and APIs.
 tags: 
 locale: en-us
 guid: b12b531a-097a-41c5-965b-7354fcdc2cef

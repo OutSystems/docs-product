@@ -1,4 +1,5 @@
 ---
+summary: Learn how to address the missing entity filter warning in OutSystems 11 (O11) by setting conditions on entity attributes in process activities.
 locale: en-us
 guid: 0306c69d-0c0d-440f-9016-34367cda685d
 app_type: traditional web apps, mobile apps, reactive web apps

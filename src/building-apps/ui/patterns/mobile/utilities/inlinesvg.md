@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Inline SVG changes fill and stroke properties or animates the SVG paths.
+summary: OutSystems 11 (O11) supports the Inline SVG UI Pattern for customizing SVG properties and animations in mobile and reactive web apps.
 locale: en-us
 guid: e79dc731-c258-4920-8ec4-6d4245cfc24a
 app_type: mobile apps, reactive web apps

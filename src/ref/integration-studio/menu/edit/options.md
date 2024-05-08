@@ -4,7 +4,7 @@ guid: 19f255a3-4d7e-4bf4-91d7-74c191a42399
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Options window in Integration Studio allows customization of development parameters including file comparison, .NET SDK settings, and proxy authentication
+summary: Explore customization options for development in Integration Studio with OutSystems 11 (O11).
 ---
 # Options Window
 

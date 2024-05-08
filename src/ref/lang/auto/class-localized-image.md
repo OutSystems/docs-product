@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties of localized images in OutSystems 11 (O11), including mandatory language association.
 locale: en-us
 guid: c29cf435-579e-4912-aed4-af8d6d55f93e
 app_type: traditional web apps, mobile apps, reactive web apps

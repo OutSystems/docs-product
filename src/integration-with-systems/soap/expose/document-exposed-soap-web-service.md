@@ -1,5 +1,5 @@
 ---
-summary: OutSystems generates documentation for an exposed SOAP Web Service when you publish its application module.
+summary: OutSystems 11 (O11) simplifies SOAP Web Service documentation by auto-generating it upon module publication based on the "Description" properties.
 tags: 
 locale: en-us
 guid: 07a471e4-c784-44ba-b868-8c90605481c0

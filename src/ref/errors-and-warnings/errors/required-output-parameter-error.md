@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) generates a "Required Output Parameter" error when REST API method settings are incorrectly configured.
 locale: en-us
 guid: 7f2767bd-fc33-43f2-b074-0073230a18d6
 app_type: traditional web apps, mobile apps, reactive web apps

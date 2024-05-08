@@ -1,6 +1,6 @@
 ---
 tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; Business developers
-summary: Learn about the Workflow Builder pre-requirements and how to set it up.
+summary: This guide outlines the setup process for Workflow Builder on OutSystems 11 (O11), covering prerequisites, login, and registration steps.
 guid: 0127e599-526d-459e-8226-c7cb6fb21110
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) error occurs when a module set as a User Provider is incorrectly configured, requiring adjustment of the Is User Provider property.
 locale: en-us
 guid: 7fa65fdc-8d24-4c0b-afba-67d556a0bbf9
 app_type: traditional web apps, mobile apps, reactive web apps

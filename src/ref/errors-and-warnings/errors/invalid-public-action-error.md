@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) issues the "Invalid Public Action" error for non-public or referenced record parameters in public actions.
 locale: en-us
 guid: f55fcb70-f968-4223-9b1c-8f9136349e41
 app_type: traditional web apps, mobile apps, reactive web apps

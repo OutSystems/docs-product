@@ -5,7 +5,7 @@ guid: 191c6d17-5089-4d2e-9848-19e81f69476a
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A38&mode=design&t=187UAgmZTPxcY0ZG-1
-summary: The article explains how to use JavaScript in OutSystems for extending the functionality of Mobile and Reactive Web Apps
+summary: Explore how OutSystems 11 (O11) enhances mobile and reactive apps by integrating JavaScript for extended functionality.
 ---
 # Extend Your Mobile and Reactive Apps Using JavaScript
 

@@ -1,6 +1,6 @@
 ---
 helpids: 30077
-summary: Reference information on the List Action widget for allowing you to define the behavior when swiping the correspondent List Item, which can be executing a screen action or navigating to another screen.
+summary: Explore how OutSystems 11 (O11) enhances mobile and reactive web apps with customizable List Actions for swipe gestures.
 locale: en-us
 guid: 0cfabe1b-7274-404a-901d-e334b007fb26
 app_type: mobile apps, reactive web apps

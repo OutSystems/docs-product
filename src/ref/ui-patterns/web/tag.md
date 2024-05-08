@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Tag UI Pattern.
+summary: Explore the customization of the Tag UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, including border-only modifications.
 locale: en-us
 guid: 98676e02-fc12-46ea-a908-cf04568e7d09
 app_type: traditional web apps

@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) enhances client-side logic execution in reactive web and mobile apps through the Run Client Action feature.
 helpids: 30110
 locale: en-us
 guid: 3be54d9f-15c8-4e78-8a14-350f5d1f2845

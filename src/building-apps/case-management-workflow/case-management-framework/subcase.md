@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework.
-summary: Learn about subcases and how to associate them with a parent case.
+summary: Learn how to create and manage subcases in a case management app using OutSystems 11 (O11), including setting up core services and adapting parent cases.
 guid: 6f4a1519-2b35-46d4-979a-5578b33d4dc5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

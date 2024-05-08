@@ -1,5 +1,5 @@
 ---
-summary: Inform app users of the reason why AppShield blocked an app. Define a URL that the app opens once the AppShield closes the app it suspects is modified or tampered with.
+summary: OutSystems 11 (O11) uses AppShield's ExitOnURL feature to redirect users when an app is blocked for security.
 tags: support-application_development; runtime-mobile;
 locale: en-us
 guid: ff593156-92ef-4947-86f1-e3d2dfb58908
@@ -56,7 +56,7 @@ To enable the `ExitOnURL` feature, first copy the JSON code snippet below and co
 
 1. To define the `ExitOnURL` property as a new global preference, paste the JSON code snippet into the window.
 
-    ![Define Exit URL](images/extensibility-configuration-appshield-ss.png)
+    ![Screenshot of the Extensibility Configuration window in OutSystems Service Studio showing where to paste the ExitOnURL JSON code.](images/extensibility-configuration-appshield-ss.png "Extensibility Configuration Window in Service Studio")
 
 1. In the `ExitOnURL` value string replace `example.com` with the correct domain name and `landing-page` with the path and name that suits your needs. A typical **Exit URL** may be `https://example.com/errors/protectionblocker/why-cant-i-use-my-app`. Then click **Close**.
 

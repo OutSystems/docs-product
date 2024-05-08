@@ -1,5 +1,5 @@
 ---
-summary: Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams, and roles.
+summary: OutSystems 11 (O11) LifeTime API v2 enables management of applications, environments, deployments, and user roles.
 tags: 
 locale: en-us
 guid: 8ebd5215-2960-4071-8a9c-83fe39674ee0

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to combine OutSystems logic with Azure for advanced chatbot features. See how to use cards in the chatbot responses.
+summary: OutSystems 11 (O11) enhances chatbot UI with interactive cards compatible with Azure Bot Framework.
 tags:
 locale: en-us
 guid: 01af56ec-fb0d-44ea-a78f-8323557ee6bf

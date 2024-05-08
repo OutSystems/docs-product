@@ -1,5 +1,5 @@
 ---
-summary: Let your users interact with your app through a chat interface. This is an introduction to creating a chatbot with the OutSystems chatbot component and Microsoft Azure.
+summary: OutSystems 11 (O11) enables rapid creation of AI-powered chatbots using the OutSystems.AI Chatbot component and Microsoft Azure.
 tags:
 locale: en-us
 guid: c9733003-eb20-49b3-93af-47e313315e30

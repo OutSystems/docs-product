@@ -1,5 +1,5 @@
 ---
-summary: Learn how to develop a template that you can you use as the starting point of your applications.
+summary: OutSystems 11 (O11) enables the creation of Custom Application Templates to streamline app development with predefined functionalities and aesthetics.
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 54d15c8a-e72c-4732-a54e-9f4e0be1fe0e

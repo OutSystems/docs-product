@@ -1,4 +1,5 @@
 ---
+summary: Explore solutions for the 'Invalid Public Structure' error in OutSystems 11 (O11) when dealing with public attributes and module references.
 locale: en-us
 guid: 6c059ca7-c68d-44de-9352-267cde943cff
 app_type: traditional web apps, mobile apps, reactive web apps

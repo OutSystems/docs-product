@@ -1,5 +1,5 @@
 ---
-summary: Enter the metadata when creating Screen Templates, to enable the developers to choose the best Screen Template for the Screen they are creating.
+summary: Explore how to effectively use metadata and preview images for Screen Templates in OutSystems 11 (O11).
 locale: en-us
 guid: e888ea09-ae0e-4632-9631-5b9abfd1acaf
 app_type: traditional web apps, mobile apps, reactive web apps

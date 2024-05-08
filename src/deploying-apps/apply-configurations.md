@@ -1,5 +1,5 @@
 ---
-summary: There are several types of configurations in Service Center. Learn more about them and how they can be applied.
+summary: Learn how to configure operational, runtime, and compile-time settings in OutSystems 11 (O11) via the Service Center to optimize application behavior.
 tags: support-Installation_Configuration; version-11
 locale: en-us
 guid: fd03d085-fcb8-4b45-939e-1931252ade2c

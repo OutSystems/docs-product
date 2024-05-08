@@ -1,4 +1,5 @@
 ---
+summary: Explore common 'Invalid Screen' error scenarios and solutions in OutSystems 11 (O11).
 locale: en-us
 guid: bad56419-c238-4adc-971c-c4b30c9a2af5
 app_type: traditional web apps, mobile apps, reactive web apps

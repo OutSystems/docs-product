@@ -1,5 +1,5 @@
 ---
-summary: API to manage End Users and Groups.
+summary: Explore user and group management functionalities in OutSystems 11 (O11) through its comprehensive Users API.
 tags: support-devOps; support-Security
 locale: en-us
 guid: ce2ac90a-1911-4fcf-8c8d-016110b3f8e2

@@ -1,4 +1,5 @@
 ---
+summary: Explore the "Go To Destination" feature in OutSystems 11 (O11) that allows navigation to different screens, with properties detailed in a structured table.
 locale: en-us
 guid: cf74bb79-fd4f-4dd9-8e41-36bfb60cedab
 app_type: traditional web apps, mobile apps, reactive web apps

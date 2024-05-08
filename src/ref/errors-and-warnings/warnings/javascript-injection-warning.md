@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) advises using EncodeJavaScript() or VerifyJavascriptLiteral() to prevent JavaScript injection vulnerabilities from user inputs.
 locale: en-us
 guid: 8afc6360-df8d-451d-81cd-fd499fa5bd15
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) supports executing another process within a process flow, enhancing reusability and consistency in process implementation.
 locale: en-us
 guid: c895ee72-9869-47c1-a51d-5189df376351
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Character Count displays the number of characters left to be entered in a target input field.
+summary: Learn how to implement the Character Count UI Pattern in OutSystems 11 (O11) for Traditional Web Apps to manage text input limits.
 locale: en-us
 guid: 35ae7f29-b021-4f09-a081-66c668b816e4
 app_type: traditional web apps

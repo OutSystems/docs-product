@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to set up Experience Builder.
+summary: Learn how to set up Experience Builder in OutSystems 11 (O11) with specific environment, user, and device prerequisites.
 locale: en-us
 guid: 0d73e561-eeae-4755-af4c-eb4a6a92f6df
 app_type: traditional web apps, mobile apps, reactive web apps

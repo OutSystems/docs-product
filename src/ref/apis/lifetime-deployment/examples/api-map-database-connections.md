@@ -1,5 +1,5 @@
 ---
-summary: Learn how to map database connections when deploying using the LifeTime API.
+summary: Learn how to map logical databases to database connections using the LifeTime API in OutSystems 11 (O11).
 locale: en-us
 guid: f4b0e6fd-f612-4773-8e37-d2693ef6a005
 app_type: traditional web apps, mobile apps, reactive web apps

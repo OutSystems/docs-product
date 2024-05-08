@@ -1,5 +1,5 @@
 ---
-summary: Learn how to handle the deployment of applications having incompatible references.
+summary: Explore how OutSystems 11 (O11) handles deployment in environments with applications that have incompatible references.
 locale: en-us
 guid: cf9598e3-f6e3-49c7-852d-c126b621afbc
 app_type: traditional web apps, mobile apps, reactive web apps

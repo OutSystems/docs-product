@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features a Comment Widget for development-time screen annotations and TrueChange™ reminders.
 helpids: 30083
 tags: 
 locale: en-us

@@ -1,5 +1,5 @@
 ---
-summary: The article describes how to periodically check for updates from an external system, such as SAP, to proceed with a process after certain conditions are met
+summary: Learn how to design polling of external systems using OutSystems 11 (O11) for efficient data synchronization and process continuation.
 locale: en-us
 guid: 4a3be3da-ce0d-4940-a534-60a2c22468cf
 app_type: traditional web apps, mobile apps, reactive web apps

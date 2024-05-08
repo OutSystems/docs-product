@@ -1,5 +1,5 @@
 ---
-summary: Complete reference for the Configuration Tool command line.
+summary: Comprehensive guide to using the Configuration Tool command line for OutSystems 11 (O11), detailing syntax, parameters, and usage examples.
 tags: support-Installation_Configuration; support-Installation_Configuration-overview
 locale: en-us
 guid: 7c953aae-e0ef-4034-afcf-84960d18ad3b

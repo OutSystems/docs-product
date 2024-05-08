@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create a new application version using the LifeTime API.
+summary: This article details creating a new application version in OutSystems 11 (O11) using the LifeTime API.
 locale: en-us
 guid: 1cee6166-d9ce-4a1c-9cd6-665516d482a0
 app_type: traditional web apps, mobile apps, reactive web apps

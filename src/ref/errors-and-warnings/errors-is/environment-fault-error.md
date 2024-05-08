@@ -1,4 +1,5 @@
 ---
+summary: Explore common error messages and troubleshooting steps for OutSystems 11 (O11) in the development environment.
 locale: en-us
 guid: 0da9d6af-49d3-4ddf-a728-5984516ccf04
 app_type: traditional web apps, mobile apps, reactive web apps

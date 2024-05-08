@@ -1,5 +1,5 @@
 ---
-summary: Analyze the logs of the exceptions handled in your application in the management console of your OutSystems environment.
+summary: OutSystems 11 (O11) allows users to analyze exception logs via the management console by accessing the Monitoring section and filtering by application.
 tags: support-Application_Troubleshooting
 locale: en-us
 guid: 72005a6b-1250-49cd-83cc-24b6528b7a12

@@ -1,9 +1,11 @@
 ---
-summary: Streaming log data to 3rd party monitoring platforms
+summary: Explore the integration of OpenTelemetry standards in OutSystems 11 (O11) for enhanced log data management across various modules and applications.
 tags: article-page; support-Installation_Configuration; version-11; cloud_configuration; conceptual
 locale: en-us
 guid: 83602415-028e-4bd2-937f-99ff473939c0
 app_type: traditional web apps, mobile apps, reactive web apps
+figma: 
+platform-version: o11
 ---
 
 # Logged data fields

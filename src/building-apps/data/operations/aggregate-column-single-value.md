@@ -1,5 +1,5 @@
 ---
-summary: Use aggregate functions on a column to calculate a single value.
+summary: Discover how to aggregate a column into a single value using OutSystems 11 (O11) with functions like Sum, Average, Max, Min, and Count.
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 65fc5101-2962-4239-a14a-f1a4f9d19fab

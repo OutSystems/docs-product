@@ -4,7 +4,7 @@ guid: e5f289e4-8fb1-444e-816c-faaeff668755
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:446
-summary: The article explains how to resolve invalid flow errors by ensuring elements in an action flow have the required incoming and outgoing connectors
+summary: OutSystems 11 (O11) troubleshooting guide for resolving invalid flow errors by ensuring proper connector configurations in action flows.
 ---
 # Invalid Flow Error
 

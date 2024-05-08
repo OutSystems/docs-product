@@ -1,5 +1,5 @@
 ---
-summary: Keep the control of the users and teams that are created, but delegate the permission management to the team manager.
+summary: OutSystems 11 (O11) enhances IT team permission management by enabling infrastructure managers to delegate role assignments to team managers.
 locale: en-us
 guid: e666aa10-a5dd-41c4-856d-52a7b2ff5474
 app_type: traditional web apps, mobile apps, reactive web apps

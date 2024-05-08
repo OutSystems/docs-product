@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Iframe displays information from other apps on the screen in small previews.
+summary: OutSystems 11 (O11) supports the integration of Iframe UI Pattern for displaying external app content in Traditional Web Apps.
 locale: en-us
 guid: e334605f-9e05-484e-b50e-5450497c2412
 app_type: traditional web apps

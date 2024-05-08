@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) offers mathematical functions such as Abs, Mod, Power, Round, Sqrt, and Trunc for diverse computing environments.
 locale: en-us
 guid: 88c149c0-76f4-49ab-b7ad-328a35be02ea
 app_type: traditional web apps, mobile apps, reactive web apps

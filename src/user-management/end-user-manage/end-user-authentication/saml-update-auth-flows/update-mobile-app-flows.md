@@ -1,5 +1,5 @@
 ---
-summary: How to configure SAML 2.0 end user authentication for your mobile applications.
+summary: Learn how to update the login and logout flows in your mobile app to support SAML 2.0 using OutSystems 11 (O11).
 tags:
 locale: en-us
 guid: 8b7802cb-bd7b-47e4-a3d1-bc8124ca4856

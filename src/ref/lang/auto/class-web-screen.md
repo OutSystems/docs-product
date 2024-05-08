@@ -1,4 +1,5 @@
 ---
+summary: Explore the comprehensive properties of web screens in OutSystems 11 (O11), detailing user interface configurations and security settings.
 helpids: 4011
 locale: en-us
 guid: 333dff4e-a7da-4b66-903f-041625db4010

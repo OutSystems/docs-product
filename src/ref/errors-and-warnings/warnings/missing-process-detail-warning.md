@@ -4,7 +4,7 @@ guid: bc60f1be-f48a-4645-90f2-f2bda185d36a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2804:3232
-summary: The article explains how to set the Process Detail property in OutSystems to ensure task details display correctly in the Taskbox
+summary: Learn how to resolve the missing process detail warning in OutSystems 11 (O11) by setting the Detail property for human activities in the Taskbox.
 ---
 # Missing Process Detail Warning
 

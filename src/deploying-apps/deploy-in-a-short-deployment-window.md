@@ -1,5 +1,5 @@
 ---
-summary: Deploy applications in two stages to ensure a deployment fits in your deployment window.
+summary: OutSystems 11 (O11) enables two-stage deployments to accommodate short deployment windows and minimize business disruption.
 locale: en-us
 guid: d51c949d-d74e-4754-a9ff-ae8c83013ebb
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -46,11 +46,11 @@ To activate the 2-stage deployment, do the following:
 
 1. Click the **Edit Environment** link in the target environment. In this case, the Production environment.
 
-    ![](images/deploy-in-a-short-deployment-window-1.png)
+    ![Screenshot showing the 'Edit Environment' link in the LifeTime console's Infrastructure area.](images/deploy-in-a-short-deployment-window-1.png "Edit Environment Option")
 
 1. Check the **Execute deployments in two stages** option.  
 
-    ![](images/deploy-in-a-short-deployment-window-2.png)
+    ![Screenshot of the 'Edit Production' screen with the 'Execute deployments in two stages' option checked.](images/deploy-in-a-short-deployment-window-2.png "Two-Stage Deployment Activation")
 
 1. Click **Save**. The 2-stage deployment is now active for Production.
 
@@ -64,15 +64,15 @@ With the 2-stage deployment active, we can safely start deploying the applicatio
 
 1. In the deployment plan, click on **Prepare Deployment**.  
 
-    ![](images/deploy-in-a-short-deployment-window-3.png)
+    ![Screenshot highlighting the 'Prepare Deployment' button in the deployment plan.](images/deploy-in-a-short-deployment-window-3.png "Prepare Deployment Button")
 
     At this stage, applications are compiled, SQL scripts are generated, and binaries uploaded to the destination environment.
 
-    ![](images/deploy-in-a-short-deployment-window-4.png)
+    ![Screenshot showing the progress of the first stage of deployment preparation.](images/deploy-in-a-short-deployment-window-4.png "Deployment Preparation Progress")
 
 1. Choose **Continue Later** to finish the first stage of the deployment.  
 
-    ![](images/deploy-in-a-short-deployment-window-7.png)  
+    ![Screenshot displaying the 'Continue Later' option during the first stage of deployment.](images/deploy-in-a-short-deployment-window-7.png "Continue Later Option")  
 
 <div class="warning" markdown="1">
 
@@ -86,10 +86,10 @@ As agreed, by the deployment window time, we can safely start the second stage o
 
 1. Click on **Prepared**.  
 
-    ![](images/deploy-in-a-short-deployment-window-5.png)
+    ![Screenshot of the 'Prepared' section in the deployment plan indicating readiness for the second stage.](images/deploy-in-a-short-deployment-window-5.png "Prepared Deployments Section")
 
 1. In the deployment plan, click on **Continue Deployment**. The SQL scripts are executed and the running application is changed to the new version.  
 
-    ![](images/deploy-in-a-short-deployment-window-6.png)
+    ![Screenshot showing the execution of SQL scripts and application updates during the second stage of deployment.](images/deploy-in-a-short-deployment-window-6.png "Continue Deployment Progress")
 
 If you are deploying a mobile app to another environment for the first time, you need to [configure the app](<mobile-app-packaging-delivery/generate-distribute-mobile-app/intro.md>) in that target environment, so the mobile app package can be generated.

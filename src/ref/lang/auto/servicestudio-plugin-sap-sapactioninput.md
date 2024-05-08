@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties of input parameters for SAP remote functions in OutSystems 11 (O11), detailing mandatory fields and data types.
 helpids: 30066
 locale: en-us
 guid: 0c2f28f8-e4c4-4b13-9139-fba94b1a2774

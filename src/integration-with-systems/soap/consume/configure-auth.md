@@ -1,5 +1,5 @@
 ---
-summary: Configure the desired Web Service authentication method using basic authentication, dynamic login or per environment authentication.
+summary: Explore how to configure web service authentication in OutSystems 11 (O11) for SOAP services, including basic, dynamic, and certificate-based methods.
 tags: support-Integrations_Extensions
 locale: en-us
 guid: 5ea726ad-7fb5-476b-ac3a-7c808b0692ef

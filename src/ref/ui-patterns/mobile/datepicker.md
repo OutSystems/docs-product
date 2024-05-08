@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced use cases for the Date Picker UI Pattern.
+summary: Explore the Date Picker reference for OutSystems 11 (O11), detailing events, layout, and CSS selectors for mobile and reactive web apps.
 locale: en-us
 guid: 0134e6e2-5319-4f34-9f72-5a137e9971a4
 app_type: mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve grid dimensions overflow in OutSystems 11 (O11) by adjusting widget properties to fit within defined grid boundaries.
 locale: en-us
 guid: 8faa36bf-6acf-423b-9fc7-9e365c55697e
 app_type: traditional web apps, mobile apps, reactive web apps

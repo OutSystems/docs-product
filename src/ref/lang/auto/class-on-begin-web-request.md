@@ -1,4 +1,5 @@
 ---
+summary: Learn about the "On Begin Web Request" action in OutSystems 11 (O11), which triggers on each server request.
 locale: en-us
 guid: d11d552e-fcfc-42b8-8690-a058f4c74dae
 app_type: traditional web apps, mobile apps, reactive web apps

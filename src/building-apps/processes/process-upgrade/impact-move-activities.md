@@ -1,5 +1,5 @@
 ---
-summary: Moving activities in process flows can result in the suspension of executing process instances, requiring analysis in Service Center to determine if they can continue
+summary: Explore how moving activities in process flows impacts executing instances in OutSystems 11 (O11).
 locale: en-us
 guid: 64eb9856-d396-4d2b-8df4-a0b23f520787
 app_type: traditional web apps, mobile apps, reactive web apps

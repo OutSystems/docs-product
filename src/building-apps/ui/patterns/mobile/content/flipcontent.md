@@ -1,5 +1,5 @@
 ---
-summary: Flip Content prioritizes information display, keeping the interface uncluttered.
+summary: Learn how to use the Flip Content UI Pattern in OutSystems 11 (O11) to enhance interactive content display in mobile and reactive web apps.
 tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: 714b1496-4c20-47fd-afcb-a0f2007ad984

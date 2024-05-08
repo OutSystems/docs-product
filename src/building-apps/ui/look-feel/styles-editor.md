@@ -1,5 +1,5 @@
 ---
-summary: Styles Editor is a panel for editing look and feel of widgets, such as color, size, alignment, borders. You can save styles as CSS classes and apply them elsewhere in your app.
+summary: Explore widget customization in OutSystems 11 (O11) using the Styles Editor to modify visual properties like font, layout, and borders.
 locale: en-us
 guid: 17ffefde-81fc-4aff-af1e-b99a12347194
 app_type: traditional web apps, mobile apps, reactive web apps

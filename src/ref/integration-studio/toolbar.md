@@ -4,7 +4,7 @@ guid: 5395d30e-5e9a-4605-9d92-717fedcfeefb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Toolbar in Integration Studio provides a range of operations for managing extensions, such as creating, opening, saving, undoing, redoing, cutting, copying, pasting, and publishing
+summary: Explore the toolbar functionalities in OutSystems 11 (O11) for managing extensions in Integration Studio.
 ---
 # Toolbar
 

@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to customize Charts with JSON.
+summary: OutSystems 11 (O11) enables advanced chart customization through JSON snippets using the Highcharts API.
 locale: en-us
 guid: 92266737-d5de-4683-9446-57c1aff419f3
 app_type: traditional web apps, mobile apps, reactive web apps

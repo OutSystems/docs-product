@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: A marker is added to the Map component when the user clicks the map. 
+summary: Learn how to add a marker on a map click in OutSystems 11 (O11) using the OutSystems Map component for Mobile and Reactive Web Apps.
 locale: en-us
 guid: 64103ccc-9190-4483-8145-3f063dd1b823
 app_type: mobile apps, reactive web apps

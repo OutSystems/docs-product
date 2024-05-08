@@ -1,5 +1,5 @@
 ---
-summary: Use watches to examine module elements while debugging threads in your module.
+summary: Explore debugging features in OutSystems 11 (O11) that allow for monitoring module elements via the Watches tab in Service Studio.
 locale: en-us
 guid: de70f6a6-f126-4ebd-85f3-b98d0a5d613c
 app_type: traditional web apps, mobile apps, reactive web apps

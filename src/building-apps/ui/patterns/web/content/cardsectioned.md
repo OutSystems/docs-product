@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Card Sectioned groups short pieces of information in sections and highlights them on the screen.
+summary: Explore the Card Sectioned UI pattern in OutSystems 11 (O11) for organizing and highlighting information in Traditional Web Apps.
 locale: en-us
 guid: 1ba59808-a9ca-45c3-8f9c-3b68edccaef4
 app_type: traditional web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Balloon shows a content overlay to users, without forcing them to lose the UI context.
+summary: Learn how to implement the Balloon UI Pattern in OutSystems 11 (O11) to display pop-up content on UI elements effectively.
 locale: en-us
 guid: 872dd221-b71e-4780-b7f0-141d2ab55db5
 app_type: traditional web apps

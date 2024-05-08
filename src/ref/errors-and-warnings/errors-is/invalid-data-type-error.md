@@ -1,4 +1,5 @@
 ---
+summary: Explore solutions for the 'Invalid Data Type Error' in OutSystems 11 (O11) by verifying property data types.
 locale: en-us
 guid: f8e2e58b-b994-40b3-af06-776b86d84574
 app_type: traditional web apps, mobile apps, reactive web apps

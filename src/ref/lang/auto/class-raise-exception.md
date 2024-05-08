@@ -1,5 +1,5 @@
 ---
-summary: Use Raise Exception to throw an exception and stop the currently running action flow.
+summary: Explore how to use the Raise Exception feature in OutSystems 11 (O11) to terminate action flows and manage exceptions effectively.
 locale: en-us
 guid: 28c483f0-bb37-4212-848b-dca6d34dad5c
 app_type: traditional web apps, mobile apps, reactive web apps

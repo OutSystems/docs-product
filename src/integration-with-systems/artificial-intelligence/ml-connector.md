@@ -1,5 +1,5 @@
 ---
-summary: Use the Azure Machine Learning Connector to communicate with an Azure Machine Learning Score Model in real time and return prediction results.
+summary: Integrate Azure Machine Learning with OutSystems 11 (O11) using the Azure ML Connector to enhance real-time predictive analytics capabilities.
 tags:
 locale: en-us
 guid: e59aad71-2eea-41aa-ae91-0aa531532cc1

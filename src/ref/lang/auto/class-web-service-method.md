@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties of web service methods in OutSystems 11 (O11), detailing mandatory elements and documentation features.
 locale: en-us
 guid: c2a33934-e55d-483c-979d-713835b61f38
 app_type: traditional web apps, mobile apps, reactive web apps

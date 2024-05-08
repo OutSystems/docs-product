@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the Grid Dimensions Overflow error in OutSystems 11 (O11) by adjusting widget width or grid settings.
 locale: en-us
 guid: c2b5c213-e7d5-4ddf-b8ef-445dd2612288
 app_type: traditional web apps, mobile apps, reactive web apps

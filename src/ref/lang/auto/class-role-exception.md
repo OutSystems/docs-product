@@ -1,5 +1,5 @@
 ---
-summary: Role Exception is a custom exception created automatically by OutSystems from each role available in your module.
+summary: Learn how OutSystems 11 (O11) automatically creates Role Exceptions for user role management in modules.
 locale: en-us
 guid: eba380ac-388a-493d-b166-f806e40a09f1
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: A Library is a module type that allows you to reduce the number of dependencies in a given environment.
+summary: OutSystems 11 (O11) introduces Libraries as a module type designed to enhance application architecture by promoting reusability and reducing dependencies.
 tags: runtime-mobileandreactiveweb
 locale: en-us
 guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
@@ -92,7 +92,7 @@ When using Libraries, it is not possible to deploy [existing resources](../data/
 
 1. Enter a name for the new module and choose **Library** as the module type in the dropdown.
 
-    ![](images/ss-create-library.png)
+    ![Screenshot of the Service Studio interface showing the process of creating a new Library module.](images/ss-create-library.png "Service Studio Create Library Interface")
 
 1. Click **Create Module**.
 

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create actions to be reused in your logic. 
+summary: OutSystems 11 (O11) enhances application maintainability by allowing logic encapsulation within actions that can be reused across modules.
 tags: support-application_development; support-webapps-featured
 locale: en-us
 guid: cd22e454-c0cf-4a69-809f-6d6463f67e4c

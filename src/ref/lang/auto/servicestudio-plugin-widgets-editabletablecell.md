@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties and runtime attributes of the Cell Widget in OutSystems 11 (O11), designed for editable tables.
 locale: en-us
 guid: ef21f07a-0b80-4be3-84c6-e99bcc2093ef
 app_type: traditional web apps, mobile apps, reactive web apps

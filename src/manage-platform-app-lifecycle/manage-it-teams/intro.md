@@ -1,5 +1,5 @@
 ---
-summary: Learn more about typical security policies for OutSystems infrastructures. Check how to define a simple security policy for small teams or large teams, and how to set up enterprise-grade security policies.
+summary: OutSystems 11 (O11) enables IT user management through a role-based permission model, supporting both simple and complex security policies.
 tags: support-Security; support-Application_Lifecycle
 locale: en-us
 guid: be9622e0-f844-42a6-8ca2-b4a486cfc4e0

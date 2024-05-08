@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Follow this walkthrough to get started using Experience Builder.
+summary: Explore how to create a mobile app prototype using Experience Builder in OutSystems 11 (O11), covering user signup, login, and support functionalities.
 locale: en-us
 guid: 742c329a-59a4-4138-867b-46f05b621cb6
 app_type: traditional web apps, mobile apps, reactive web apps

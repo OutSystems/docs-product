@@ -1,5 +1,5 @@
 ---
-summary: SEO can be categorized into two major categories, content SEO and technical SEO. These categories are both equally important when it comes to your website ranking high in search engine result pages
+summary: Explore how OutSystems 11 (O11) enhances both content and technical SEO to improve website rankings and user experience.
 tags: runtime-traditionalweb
 locale: en-us
 guid: E0CB30E3-30B2-4593-AACF-97765EB80D45

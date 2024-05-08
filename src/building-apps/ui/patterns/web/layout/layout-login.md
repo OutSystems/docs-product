@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Layout Login is a custom page layout for the login screen.
+summary: Explore the customizable Layout Login web block in OutSystems 11 (O11) for Traditional Web Apps, featuring various placeholders and widgets.
 locale: en-us
 guid: 77b92b70-0fe1-4f35-a776-22f98fd1365e
 app_type: traditional web apps

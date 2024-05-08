@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: You can change a enable or disable auto-classification of apps in AI Mentor Studio.
+summary: Learn how to manage AI auto-classification in AI Mentor Studio for OutSystems 11 (O11).
 locale: en-us
 guid: 1b423f33-a40a-4659-a633-dad0d32c6432
 app_type: traditional web apps, mobile apps, reactive web apps

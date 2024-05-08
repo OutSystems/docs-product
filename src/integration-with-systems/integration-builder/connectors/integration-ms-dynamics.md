@@ -1,5 +1,5 @@
 ---
-summary: Learn more about the Microsoft Dynamics 365 integration.
+summary: Explore Microsoft Dynamics 365 integration capabilities with OutSystems 11 (O11) for enhanced data management and application development.
 locale: en-us
 guid: 5c9afbf6-6035-4da8-8d08-77c1503c0dcf
 app_type: traditional web apps, mobile apps, reactive web apps

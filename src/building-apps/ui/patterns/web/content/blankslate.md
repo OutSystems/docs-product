@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Blank Slate informs end users when they start using the application, complete a task or when there is no data available for display.
+summary: Explore how to implement the Blank Slate UI Pattern in OutSystems 11 (O11) for enhancing Traditional Web Apps when no data is available.
 locale: en-us
 guid: e77f1bd7-6d92-4bdb-b3fe-82f5bd1b2e1b
 app_type: traditional web apps

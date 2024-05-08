@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: FileUpload allows the end user to transfer a file or add content to the application.
+summary: OutSystems 11 (O11) supports file uploads in Traditional Web Apps through a File Upload UI Pattern, enabling users to add files to applications.
 locale: en-us
 guid: 0a5c3fb1-4677-4fe5-bafd-a63eb787adb1
 app_type: traditional web apps

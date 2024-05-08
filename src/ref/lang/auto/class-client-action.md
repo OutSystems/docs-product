@@ -1,4 +1,5 @@
 ---
+summary: Explore client-side logic execution and properties in OutSystems 11 (O11) with detailed guidelines on exposed client actions and their restrictions.
 helpids: 30098
 locale: en-us
 guid: a079b872-4f63-411e-ae37-751b3a81e591

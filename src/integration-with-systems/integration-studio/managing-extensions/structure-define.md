@@ -4,7 +4,7 @@ guid: 64abe2b1-809c-4f5c-8dcd-b24547c83ee8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: Integration Studio allows the definition of complex data types using Structures, which can be used in parameters and attributes as Record or Record List data types
+summary: OutSystems 11 (O11) enables complex data type definitions through Structures in Integration Studio for enhanced data handling in applications.
 ---
 # Define Extension Structures
 

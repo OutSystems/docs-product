@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) advises upgrading from deprecated jQuery version '1.4.2 OS' to ensure compatibility and functionality of new features.
 locale: en-us
 guid: 781daf7e-11c4-4792-b928-e8d9a993f5fe
 app_type: traditional web apps, mobile apps, reactive web apps

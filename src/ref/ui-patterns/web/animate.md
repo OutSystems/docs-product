@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Animate UI Pattern.
+summary: Explore animation features in Traditional Web Apps using OutSystems 11 (O11) for dynamic UI interactions.
 locale: en-us
 guid: 1aad8f7f-9da7-417a-9cfd-3c159905fc99
 app_type: traditional web apps

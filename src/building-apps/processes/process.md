@@ -1,5 +1,5 @@
 ---
-summary: Check how to create and execute processes, which are elements that allow you to integrate your business processes into your applications.
+summary: Explore how OutSystems 11 (O11) integrates business processes into applications through process flows and various editing and execution tools.
 tags: support-webapps
 locale: en-us
 guid: 7f9ed2cf-c73b-467e-bdfa-cf4ba9655613

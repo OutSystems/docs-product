@@ -1,5 +1,5 @@
 ---
-summary: Learn how to solve the situation of an application that depends on functionality that no longer exists or has changed.
+summary: OutSystems 11 (O11) guide on repairing deployed applications with broken references by deploying updated versions to match dependencies.
 locale: en-us
 guid: cb9abf07-67bd-427a-b9c6-4c4b608f4980
 app_type: traditional web apps, mobile apps, reactive web apps

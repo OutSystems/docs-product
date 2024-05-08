@@ -4,7 +4,7 @@ guid: c1518786-3c7a-4b70-8e10-60eb048fd357
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: 
+summary: OutSystems 11 (O11) enables efficient server-side data fetching with Data Actions after screen loads.
 ---
 
 # Data Action

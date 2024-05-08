@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use a For Each to iterate a list in your logic.
+summary: Explore how to iterate lists using the For Each logic node in OutSystems 11 (O11).
 tags: support-webapps
 locale: en-us
 guid: 15a9d0fc-aef0-4d69-bfaa-edeefbecad36

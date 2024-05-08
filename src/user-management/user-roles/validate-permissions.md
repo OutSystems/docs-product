@@ -1,5 +1,5 @@
 ---
-summary: If you need to restrict end user access to specific areas or operations in an application, you must validate their permissions.
+summary: OutSystems 11 (O11) enables control over end-user access to app screens, data, and actions based on user IDs or roles.
 tags: support-Security; support-Security-featured
 locale: en-us
 guid: 68463867-fb0c-4e54-9fe5-d0e117dbf9bb

@@ -1,5 +1,5 @@
 ---
-summary: Generate a production mobile app package for your mobile app to distribute to a group of selected end users.
+summary: Learn how to generate and distribute your mobile app to a limited group of end users using OutSystems 11 (O11).
 tags: runtime-mobile; support-mobile
 locale: en-us
 guid: bc8c19e3-512c-4be4-b900-f8f5c1880832

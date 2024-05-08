@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create multilingual Reactive Web and Mobile App with OutSystems.
+summary: OutSystems 11 (O11) supports multilingual reactive web and mobile apps with user-selectable language options.
 tags: support-application_development;
 locale: en-us
 guid: d92eca43-e46e-4db0-8445-4dfb51e0b73d

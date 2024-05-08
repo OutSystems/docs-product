@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Card Sectioned UI Pattern.
+summary: Explore the Card Sectioned UI Pattern in OutSystems 11 (O11), detailing layout, CSS classes, and responsive orientation adjustments.
 locale: en-us
 guid: 31a87c67-318b-4a23-8ce5-f46cdca4a0ab
 app_type: traditional web apps

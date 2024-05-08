@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) documentation details properties and runtime properties of resources in mobile and web modules.
 helpids: 17020
 locale: en-us
 guid: e2cc47cf-825c-475d-b989-952f2dbf90d3

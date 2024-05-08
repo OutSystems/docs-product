@@ -1,5 +1,5 @@
 ---
-summary: Use cases currently unsupported when consuming REST services using "enums" and how to overcome some of these situations.
+summary: Explore the handling of unsupported REST use cases in OutSystems 11 (O11), including enums and reference parameters.
 locale: en-us
 guid: 269cf511-27bd-4705-ab9a-1785375f5367
 app_type: traditional web apps, mobile apps, reactive web apps

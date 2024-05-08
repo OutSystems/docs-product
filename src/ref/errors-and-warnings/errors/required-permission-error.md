@@ -1,4 +1,5 @@
 ---
+summary: Explore common permission errors in OutSystems 11 (O11) related to module updates and user provider settings.
 locale: en-us
 guid: f1dd1b03-de58-453d-a537-f17b73c72595
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Explore default values for various data types in OutSystems 11 (O11) and their corresponding storage in SQL Server, Oracle, and MySQL databases.
 tags: support-Database
 locale: en-us
 guid: cbbcab1c-2534-43e7-b734-9fef31683b88

@@ -1,4 +1,5 @@
 ---
+summary: Explore UI testing for web applications using Selenium and its integration with OutSystems 11 (O11) in this detailed guide.
 guid: d29ef610-f434-4411-ba63-14ef0463624e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -41,7 +42,7 @@ The easiest way to start looking into Selenium is by using the IDE, so we will u
 
  
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_0.png)** **![image alt text](images/How-to-do-UI-testing-with-Selenium_1.png)
+![Screenshot of the Selenium IDE Plugin download page for Firefox.](images/How-to-do-UI-testing-with-Selenium_0.png "Selenium IDE Plugin for Firefox")** **![Screenshot of the Selenium IDE interface with an empty test case.](images/How-to-do-UI-testing-with-Selenium_1.png "Selenium IDE Interface")
 
  
 
@@ -105,13 +106,13 @@ Assume that our goal is to enter the Login page and press on one of the predefin
 
  
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_2.png)
+![Screenshot of the Directory application's login page with sample user links.](images/How-to-do-UI-testing-with-Selenium_2.png "Directory Login Page")
 
 As you can see in the picture above, Selenium IDE has used the id of the link for "Charlotte Y Anderson" for locating the link during the recording session. This has several disadvantages as we have already outlined. We can use the **link **locator instead and use the link text, since it is unique in this particular webscreen.
 
  
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_3.png)
+![Screenshot of Selenium IDE showing the use of a link locator for the 'Charlotte Y. Anderson' user.](images/How-to-do-UI-testing-with-Selenium_3.png "Selenium IDE Link Locator")
 
 This script would yield the same result while being completely independent from the id of the link. If later on we decide to change the location of the link in the page, the script would still work as long as the link text remained the same.
 
@@ -121,7 +122,7 @@ Let’s take the previous example and change the scenario: we now want to insert
 
  
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_4.png)
+![Screenshot of Selenium IDE displaying default locators for username and password fields and the login button.](images/How-to-do-UI-testing-with-Selenium_4.png "Selenium IDE Default Locators")
 
 Once again, Selenium IDE outputted the ids of the inputs and Login button as locators. In this situation, when dealing with buttons and inputs, the "link" locator from the previous section cannot be used.
 
@@ -143,7 +144,7 @@ Going back to the task at hand, we normally use "dummy" CSS styles in the inputs
 
  
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_5.png)
+![Screenshot of Service Studio showing the addition of custom 'SeleniumUsernameInput' style to an input widget.](images/How-to-do-UI-testing-with-Selenium_5.png "Service Studio Custom Styles")
 
 As you can see in the above image, we added a "SeleniumUsernameInput" dummy style that doesn’t even need to be defined in the CSS stylesheet of the module. We just need it to be outputted in the HTML element of the input after we have published the eSpace (you can check it is there by using an inspector tool like [Firebug](http://getfirebug.com/)).
 
@@ -151,7 +152,7 @@ As you can see in the above image, we added a "SeleniumUsernameInput" dummy styl
 
 We can then use CSS selectors in our script to locate the inputs and button through the new dummy styles: `"**css=.<Name_Of_Dummy_Style>**"`:
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_6.png)
+![Screenshot of Selenium IDE showing the use of CSS selectors for username and password fields and the login button.](images/How-to-do-UI-testing-with-Selenium_6.png "Selenium IDE CSS Selectors")
 
  
 
@@ -165,7 +166,7 @@ One common situation when testing the UI of OutSystems Apps is to locate web ele
 
 Going back to the Directory app example, let’s assume that, after logging in, we want the Selenium script to expand the details of the Andrea Mccarthy employee.
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_7.png)
+![Screenshot of the Directory application's employee list with the 'Andrea Mccarthy' employee highlighted.](images/How-to-do-UI-testing-with-Selenium_7.png "Directory Employees List")
 
  
 
@@ -175,7 +176,7 @@ Selenium IDE recorder once again produces a locator for the link-click that is b
 
 However, setting a customized id in Service Studio for the employee name will solve this.
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_8.png)
+![Screenshot of Service Studio showing the addition of a custom 'data-seleniumid' property to an employee name link.](images/How-to-do-UI-testing-with-Selenium_8.png "Service Studio Customized Ids")
 
 We create the extended property called data-seleniumid which is then outputted as a custom tag with the same name in the HTML element in the page. The value is defined by an expression containing "Person" suffixed with the row number in the table records.
 
@@ -187,7 +188,7 @@ At last, we correct the Selenium IDE script to use a CSS selector using the cust
 
  
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_9.png)
+![Screenshot of Selenium IDE showing the use of a custom id locator for the 'Andrea Mccarthy' employee link.](images/How-to-do-UI-testing-with-Selenium_9.png "Selenium IDE Custom Id Locator")
 
 The locator "css=span[seleniumid="Person3"]" will look for the span containing the custom selenium id. This way we are able to locate elements inside table and list records using identifiers completely controlled by us, thus being more future proof.
 
@@ -238,7 +239,7 @@ When Selenium IDE scripts start to grow in size, they become hard to read. A gre
 
 You can manually add comments to Selenium scripts directly in their source code through regular HTML comments. Just open the "Source" tab in Selenium IDE. Here’s an example:
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_10.png)
+![Screenshot of Selenium IDE source code with HTML comments added for readability.](images/How-to-do-UI-testing-with-Selenium_10.png "Selenium IDE Source Code Comments")
 
-![image alt text](images/How-to-do-UI-testing-with-Selenium_11.png)
+![Screenshot of Selenium IDE showing a test case with descriptive comments in the source code.](images/How-to-do-UI-testing-with-Selenium_11.png "Selenium IDE Test Case with Comments")
 

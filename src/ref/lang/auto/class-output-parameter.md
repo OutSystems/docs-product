@@ -1,6 +1,6 @@
 ---
 helpids: 7012, 30101
-summary: An Output Parameter allows you to return computed values from an action, process, or process flow element.
+summary: OutSystems 11 (O11) supports Output Parameters in various elements, enabling the return of computed values from actions and integrations.
 locale: en-us
 guid: e96ab33b-39af-4c68-9283-71881290eb84
 app_type: traditional web apps, mobile apps, reactive web apps

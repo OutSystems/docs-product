@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: Learn about permissions for access control and which Case Management framework actions check for these permissions.
+summary: Explore access control in OutSystems 11 (O11) Case Management framework, detailing permissions and API actions.
 guid: 7748225f-8e88-43ea-bed6-29d510530176
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

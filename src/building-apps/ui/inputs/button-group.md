@@ -1,5 +1,5 @@
 ---
-summary: Let users select a single option from a group of choices, with the Radio Group widget.
+summary: Explore how to implement single-choice selection using radio buttons and button groups in OutSystems 11 (O11).
 tags:
 locale: en-us
 guid: 3eb6105e-2157-472f-972f-f3cc133043a5

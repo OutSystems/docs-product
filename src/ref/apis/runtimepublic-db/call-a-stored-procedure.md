@@ -1,5 +1,5 @@
 ---
-summary: Use the RuntimePublic.Db API to call a stored procedure.
+summary: Explore how to call a stored procedure using .NET native objects in OutSystems 11 (O11).
 tags: 
 locale: en-us
 guid: 7b30a0ca-ff76-47b2-8183-6f0974bbf2d1

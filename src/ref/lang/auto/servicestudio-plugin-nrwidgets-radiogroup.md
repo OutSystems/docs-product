@@ -1,5 +1,5 @@
 ---
-summary: Reference information on the Radio Group widget for adding groups of two or more Radio Buttons
+summary: Explore the Radio Group widget in OutSystems 11 (O11), which groups Radio Buttons and manages user selections through variable properties.
 helpids: 30215
 locale: en-us
 guid: 2f9bd54c-d963-4b3a-8bab-5f6d47dcd0b2

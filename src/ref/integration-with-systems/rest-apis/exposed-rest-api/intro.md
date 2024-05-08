@@ -5,7 +5,7 @@ guid: 63332ee6-2b9a-4ffd-a9d6-0dd38276c9da
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2146:3573
-summary:
+summary: Explore how OutSystems 11 (O11) enables the exposure of methods through REST APIs, facilitating integration and connectivity.
 ---
 
 # Exposed REST API

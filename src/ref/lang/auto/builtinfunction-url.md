@@ -1,4 +1,5 @@
 ---
+summary: Explore URL management functions in OutSystems 11 (O11) for enhancing module personalization and error handling.
 locale: en-us
 guid: ee8d9725-b38d-4d95-8294-71e7d838ee7b
 app_type: traditional web apps, mobile apps, reactive web apps

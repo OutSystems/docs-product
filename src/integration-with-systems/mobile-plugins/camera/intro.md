@@ -1,5 +1,5 @@
 ---
-summary: Let your users take pictures in native mobile apps and PWAs. Adjust the picture properties in the native mobile apps. Demo app available to see the plugin in action.
+summary: Explore the Camera plugin in OutSystems 11 (O11) for capturing and managing media in mobile and progressive web apps.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 158347bc-c312-4499-9912-1f1dfeac7d50

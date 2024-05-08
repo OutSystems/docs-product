@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) warns of potential data loss when SAP parameters mapped to Decimal exceed supported value ranges.
 locale: en-us
 guid: 59ec2532-1c5b-4011-a042-2edd112da5b0
 app_type: traditional web apps, mobile apps, reactive web apps

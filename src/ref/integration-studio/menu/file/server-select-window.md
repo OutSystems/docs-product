@@ -4,7 +4,7 @@ guid: 99378b9c-3cd1-4b75-a0d0-189ad54153a1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Select Server window facilitates connection to a Platform Server by allowing users to input host, user name, and password details
+summary: Explore server connection options in OutSystems 11 (O11) using the Select Server window for efficient platform integration.
 ---
 # Select Server Window
 

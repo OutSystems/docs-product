@@ -4,7 +4,7 @@ guid: c215f526-4e79-416f-a7ae-4789e0a26a8c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: Customize logging levels for REST and SOAP integrations in OutSystems to control information storage
+summary: This article explains how to configure the logging level for REST and SOAP integrations in OutSystems 11 (O11).
 ---
 # Set the logging level of REST and SOAP integrations
 

@@ -1,5 +1,5 @@
 ---
-summary: In OutSystems, you can monitor the daily activity of your environment in the Service Center console.
+summary: OutSystems 11 (O11) allows monitoring of daily environment activity through the Service Center console, providing detailed application metrics.
 tags: support-Monitoring;
 locale: en-us
 guid: 5d4aa86a-ec57-46d7-b29f-81c2967bdb0c

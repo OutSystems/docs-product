@@ -1,5 +1,5 @@
 ---
-summary: Learn how to turn on monitoring in an environment.
+summary: Learn how to enable and configure environment-specific analytics for Traditional Web Apps in OutSystems 11 (O11) using the LifeTime console.
 tags: support-Integrations_Extensions; support-monitoring; support-monitoring-overview; runtime-traditionalweb
 locale: en-us
 guid: 7257acb7-f5f1-46a9-a047-ff5a439ae49c

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to implement encryption in your apps to ensure HIPAA compliance in the OutSystems Cloud.
+summary: Learn how to decrypt HIPAA compliant data in OutSystems 11 (O11) using searchable and unsearchable attributes.
 locale: en-us
 guid: b5a18548-1f7c-48a0-87f5-43936645d8cd
 app_type: traditional web apps, mobile apps, reactive web apps

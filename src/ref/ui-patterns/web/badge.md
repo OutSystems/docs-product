@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Badge UI Pattern.
+summary: Explore the layout, classes, and advanced customization of the Badge UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: f677e159-79fd-4270-adad-fc16e1c49bf4
 app_type: traditional web apps

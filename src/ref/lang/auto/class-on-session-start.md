@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) handles the OnSessionStart action in Traditional Web Apps, triggered by system events such as user login or logout.
 locale: en-us
 guid: 6b2deaab-c532-4326-9934-c042c42271de
 app_type: traditional web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Displays the current progress of a task using circular or semi-circular progress indicators.
+summary: Explore how to implement and customize the Progress Circle UI Pattern in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 1f0827a1-891f-4fe7-a37e-34a66224f7dc
 app_type: mobile apps, reactive web apps

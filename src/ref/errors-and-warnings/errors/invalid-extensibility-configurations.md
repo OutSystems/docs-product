@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Invalid Extensibility Configurations' error in OutSystems 11 (O11) by correcting JSON syntax errors in the module property.
 locale: en-us
 guid: e630e6c0-7ef7-4d66-9ac6-3c9b4fb090ad
 app_type: traditional web apps, mobile apps, reactive web apps

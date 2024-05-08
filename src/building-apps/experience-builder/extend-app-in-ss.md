@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn about the architecture of apps published with Experience Builder and insights on how to extend these apps.
+summary: Explore how to extend your Experience Builder app using Service Studio in OutSystems 11 (O11).
 locale: en-us
 guid: 5e52f2fd-36e6-4ebb-b75d-5d3e2158cd35
 app_type: traditional web apps, mobile apps, reactive web apps

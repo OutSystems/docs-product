@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Time Picker UI Pattern.
+summary: Explore the features and advanced use cases of the Time Picker UI component in OutSystems 11 (O11).
 locale: en-us
 guid: 19d186e8-664b-4066-9e83-e866c45cbba7
 app_type: traditional web apps

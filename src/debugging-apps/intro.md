@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use the debug features provided by OutSystems to easily find and troubleshoot semantic errors in your apps.
+summary: OutSystems 11 (O11) provides advanced debugging features in Service Studio for detailed app analysis and troubleshooting.
 tags: support-application_development; support-Application_Troubleshooting; support-Application_Troubleshooting-featured
 locale: en-us
 guid: 78def0b5-863d-4d58-8ea0-bb9f28bf1ef8

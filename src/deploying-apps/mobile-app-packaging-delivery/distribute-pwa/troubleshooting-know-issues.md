@@ -1,5 +1,5 @@
 ---
-summary: Troubleshooting tips and notes. Know issues.
+summary: Explore troubleshooting tips and known issues for mobile apps in OutSystems 11 (O11), including PWA-specific challenges and solutions.
 tags: support-application_development; runtime-mobile;
 locale: en-us
 guid: 894f3950-7424-4995-9f8b-4e7e9c2645d7

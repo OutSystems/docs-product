@@ -1,5 +1,5 @@
 ---
-summary: Check OutSystems network requirements before installing it on an environment.
+summary: OutSystems 11 (O11) network requirements include specific open ports, protocols, and configurations for optimal application accessibility and performance.
 tags: support-installation
 locale: en-us
 guid: 6238ecb9-6eaf-4406-a421-f4b01322052d

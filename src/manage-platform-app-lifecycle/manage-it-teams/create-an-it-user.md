@@ -1,5 +1,5 @@
 ---
-summary: Create IT users for new developers and operators that will operate the platform.
+summary: OutSystems 11 (O11) facilitates the management of IT users by providing a centralized user management system in the LifeTime console.
 locale: en-us
 guid: 67304326-4018-4f4c-88c7-8e5034fe9ce5
 app_type: traditional web apps, mobile apps, reactive web apps

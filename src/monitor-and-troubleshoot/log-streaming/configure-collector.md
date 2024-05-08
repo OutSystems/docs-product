@@ -1,9 +1,11 @@
 ---
-summary: The article provides a guide on setting up the OpenTelemetry Collector for APM tools that require OpenTelemetry data.
+summary: Learn how to set up the OpenTelemetry Collector for APM tools with OutSystems 11 (O11) for enhanced application performance monitoring.
 tags:
 locale: en-us
 guid: ded295b9-7894-4192-a7df-9bf89f1eca25
 app_type: traditional web apps, mobile apps, reactive web apps
+figma: 
+platform-version: o11
 ---
 # Set up the OpenTelemetry Collector
 

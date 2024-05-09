@@ -89,7 +89,7 @@ Any value chosen for the KeyAuthentication variable doesn't affect the security 
 
 <div class="info" markdown="1">
     
-Applies to versions of the plugin above or equal to **2.4.0**. 
+Applies to version 2.4.0 and higher
 
 </div>
 

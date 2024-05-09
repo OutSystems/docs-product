@@ -115,7 +115,29 @@ You must provide the plugin configuration file as settings in the Service Studio
 
 1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each environment. For details on pointing the mobile application to the correct configuration files in each environment, see [Override Mobile Extensibility Configurations](../../../deploying-apps/override-extensibility-configurations.md).
 
+    Note that, when configured for different environments, the source should be changed to the corresponding environment file, while the "target" should remain unchanged. Below is an example for the Dev environment, where we just change “www/**google-services-dev.json**” and “www/**GoogleService-Info-dev.plist**” in the "src".
+
     ![Shows the process of adding multiple Firebase configuration files for different environments in Service Studio](images/firebase-multiple-configurations-ss.png "Multiple Firebase Configurations in Service Studio")
+
+    ```JSON
+    {
+            "resources": {
+                "android": {
+                    "AndroidResource": {
+                        "src": "www/google-services-dev.json",
+                        "target": "app/google-services.json"
+                    }
+                },
+                "ios": {
+                    "IosResource": {
+                        "src": "www/GoogleService-Info-dev.plist",
+                        "target": "GoogleService-Info.plist"
+                    }
+                }
+            }
+        }
+
+    ```
 
 ### Additional setup for the Dynamic Links plugin
 

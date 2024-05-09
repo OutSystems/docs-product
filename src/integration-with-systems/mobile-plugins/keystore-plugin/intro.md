@@ -88,7 +88,7 @@ Any value chosen for the KeyAuthentication variable doesn't affect the security 
 #### (Optional) Set the authentication dialog content (Android only)
 
 <div class="info" markdown="1">
-    
+
 Applies to version 2.4.0 and higher
 
 </div>

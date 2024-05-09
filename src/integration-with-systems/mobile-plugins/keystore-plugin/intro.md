@@ -126,7 +126,7 @@ To set the values for these fields, define the following Android preferences in 
         }
 ```
 
-Note that these prefrences are optional. If they're not set, then the values in the example above are used by default.
+**Note:** These preferences are optional. If they're not set, then the values in the example above are used by default.
 
 ### Migrate the key-value pairs stored in a previous version to a new version of the plugin
 

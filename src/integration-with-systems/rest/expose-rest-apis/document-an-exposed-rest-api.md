@@ -26,7 +26,7 @@ OutSystems publishes the documentation under the base URL of the REST API. To op
 
 1. Choose **Open Documentation**.
 
-    ![Context menu in Service Studio showing the 'Open Documentation' option for a REST API.](images/ss-rest-open-documentation.png "Open REST API Documentation in Service Studio")
+    ![Context menu in Service Studio showing the 'Open Documentation' option for a REST API.](images/rest-open-documentation-ss.png "Open REST API Documentation in Service Studio")
 
 The resulting documentation is a standard swagger. You can see a [live example of a Contacts REST API here](https://expertsmobile.outsystems.com/ContactsAPI/rest/v1/).
 

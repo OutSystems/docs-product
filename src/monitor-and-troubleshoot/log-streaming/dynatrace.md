@@ -55,6 +55,12 @@ Once you've completed these steps, go to LifeTime and [configure the log streami
 
         ![Screenshot of the OutSystems LifeTime interface showing the log streaming configuration fields for Dynatrace](images/log-streaming-dynatrace-lt.png "Log Streaming Configuration in LifeTime")
 
+<div class="info" markdown="1">
+
+The streaming follows the limits of Dynatrace's ingestion API. For more information, refer to Dynatrace's documentation on [Ingest OpenTelemetry logs](https://docs.dynatrace.com/docs/extend-dynatrace/opentelemetry/getting-started/logs/ingest#ingestion-limits).   
+
+</div>
+
 ## Additional resources
 
 [Export with OLTP.](https://www.dynatrace.com/support/help/extend-dynatrace/opentelemetry/getting-started/otlp-export)

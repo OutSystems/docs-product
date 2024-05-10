@@ -88,8 +88,8 @@ Any value chosen for the KeyAuthentication variable doesn't affect the security 
 #### (Optional) Set the authentication dialog content (Android only)
 
 <div class="info" markdown="1">
-    
-Applies to versions of the plugin above or equal to **2.4.0**. 
+
+Applies to version 2.4.0 and higher
 
 </div>
 
@@ -126,7 +126,7 @@ To set the values for these fields, define the following Android preferences in 
         }
 ```
 
-Note that these prefrences are optional. If they're not set, then the values in the example above are used by default.
+**Note:** These preferences are optional. If they're not set, then the values in the example above are used by default.
 
 ### Migrate the key-value pairs stored in a previous version to a new version of the plugin
 

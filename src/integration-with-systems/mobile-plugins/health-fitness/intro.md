@@ -62,7 +62,7 @@ The following image shows how you can use the **RedirectToURL** Destination to n
 
 If users already have the Health Connect app installed on their device, you can use the **OpenHealthConnectApp** client action to navigate from your app to the Health Connect app. This is especially important when users deny permissions to access Health Connect data types enough times that the permission prompt isn't shown again, when using the **RequestPermissions** client action. When this happens, you can redirect users to the Health Connect app so they can grant the necessary permissions.
 
-To navigate to the Health Connect app, simply call the **OpenHealthConnecetApp** client action, as shown in the image below.
+To navigate to the Health Connect app, simply call the **OpenHealthConnectApp** client action, as shown in the image below.
 
 ![Screenshot showing how to navigate to the Health Connect app.](images/navigate-to-health-connect.png "Navigate to Health Connect")
 
@@ -289,7 +289,7 @@ By default, all necessary background job Android permissions (e.g. "android.perm
 
 #### Additional information about background jobs in Android
 
-When using the **SetBackgroundJob** client action, the **IMMEDIATE** option for the **JobFrequency** field of the **Variable** input parameter only applies to the following variables: steps, heart rate, calories burned, blood pressure, basal metabolic rate, walking speed, and distance. For the other variables (weight, height, sleep, blood glucose, and body fat percentage), the **IMMEDIATE** option will run every minute, as it is the minimum recommended frequency for alarms on Android.
+When using the **SetBackgroundJob** client action, the **IMMEDIATE** option for the **JobFrequency** field of the **Variable** input parameter only applies to the following variables: steps, heart rate, calories burned, blood pressure, basal metabolic rate, walking speed, and distance. For the other variables (weight, height, sleep, blood glucose, body fat percentage and oxygen saturation), the **IMMEDIATE** option will run every minute, as it is the minimum recommended frequency for alarms on Android.
 
 Background jobs run using foreground services, which results in a temporary notification being shown to the user. In most cases, as the background job processing is fast, the temporary notification won't be presented to the user. Nevertheless, you can define the **title** and **description** of this notification, in case it is shown. By default, we already set a title and description, but you can define your own values as follows:
 
@@ -364,5 +364,6 @@ Following is the full list of health and fitness variables our plugin supports, 
 | **Basal Metabolic Rate** | Kilocalories per day (kcal/day)  | Kilocalories per day (kcal/day)  |
 | **Walking Speed**        | Meters per second (m/s)          | Meters per second (m/s)          |
 | **Distance**             | Meters (m)                       | Meters (m)                       |
+| **Oxygen Saturation**    | Percentage                       | Percentage                       |
 
-Note that the **Workout** variable isn't on the list because it doens't have a single unit for measure, as iOS supports different types of workouts. Also, this variable is currently not available on Android.
+Note that the **Workout** variable isn't on the list because it doesn't have a single unit for measure, as iOS supports different types of workouts. Also, this variable is currently not available on Android.

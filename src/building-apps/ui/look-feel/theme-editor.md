@@ -1,5 +1,5 @@
 ---
-summary: Use Theme Editor to customize the overall style of your app. Each change you make is immediately applied to your app in Service Studio.
+summary: Explore app customization options in OutSystems 11 (O11) using the Theme Editor for style adjustments in Service Studio.
 tags: support-application_development; support-Front_end_Development
 locale: en-us
 guid: 5ee100a0-6f04-4289-8f48-5ceff38331e7

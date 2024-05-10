@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) deprecates SOAP output parameters, detailing properties like Name, Data Type, and Nillable in its documentation.
 helpids: 7012, 30101
 locale: en-us
 guid: fa9d634f-e1d2-4ea0-a302-37f50b51365e

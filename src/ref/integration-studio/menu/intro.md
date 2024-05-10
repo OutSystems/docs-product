@@ -1,4 +1,5 @@
 ---
+summary: Explore the features and functionalities of Integration Studio in OutSystems 11 (O11) through its comprehensive menu options.
 tags: 
 locale: en-us
 guid: 882dd0ac-7363-4f94-bf48-cc565bc4b49c

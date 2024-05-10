@@ -1,5 +1,5 @@
 ---
-summary: Learn how to configure a RabbitMQ cluster and how you can make OutSystems cache invalidation service fault-tolerant.
+summary: Learn how to configure a RabbitMQ cluster for high-availability cache invalidation in OutSystems 11 (O11).
 tags: version-11; support-Installation_Configuration
 locale: en-us
 guid: a86cf4a3-e053-46a4-b873-373624fda83d

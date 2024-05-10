@@ -4,7 +4,7 @@ guid: cf34b4c6-2dc9-4ea3-82d0-f77dcc9f68ca
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Entity Editor is a tool for editing properties and identifiers of entities within an extension, with additional features for imported entities
+summary: Learn how to manage and edit entity properties in OutSystems 11 (O11) using the Entity Editor.
 ---
 # Entity Editor
 

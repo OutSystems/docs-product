@@ -1,5 +1,5 @@
 ---
-summary: Use the Content Security Policy (CSP) against code injection attacks in applications developed with OutSystems to protect against a growing number of attacks on the Web.
+summary: Explore how OutSystems 11 (O11) integrates Content Security Policy (CSP) to enhance security for web and mobile applications.
 tags:
 locale: en-us
 guid: e59d9233-7c2d-43ae-b8a2-f55d75263c68

@@ -1,5 +1,5 @@
 ---
-summary: Override the default Extensibility Configurations of a mobile app for a specific environment.
+summary: Override default mobile extensibility configurations in specific environments using OutSystems 11 (O11).
 tags: runtime-mobile
 locale: en-us
 guid: 09207082-720b-48a1-980b-e8937925e461

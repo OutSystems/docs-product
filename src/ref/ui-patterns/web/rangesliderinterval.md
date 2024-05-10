@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Range Slider Interval UI Pattern.
+summary: Explore the features and customization options of the Range Slider Interval component in OutSystems 11 (O11).
 locale: en-us
 guid: 3c86ec87-d4c6-441b-adf1-bdb30f056a62
 app_type: traditional web apps

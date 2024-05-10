@@ -1,4 +1,5 @@
 ---
+summary: Explore the technical properties and behaviors of exposed roles in OutSystems 11 (O11), including transaction exceptions and persistence settings.
 helpids: 15004
 locale: en-us
 guid: 9fc0da79-a220-4620-bcd5-b69331ec3b0c

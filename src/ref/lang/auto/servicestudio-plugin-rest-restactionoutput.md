@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties of output parameters in consumed REST API methods in OutSystems 11 (O11).
 helpids: 30081
 locale: en-us
 guid: f27841f8-0506-40bf-a590-427215436a01

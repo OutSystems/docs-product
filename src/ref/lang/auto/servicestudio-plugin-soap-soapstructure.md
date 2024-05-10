@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: OutSystems 11 (O11) provides a detailed structure for consumed SOAP Web Services, including properties like Name, Description, and Original Namespace.
 locale: en-us
 guid: e0728a88-129e-4db8-98e2-56bf83c77246
 app_type: traditional web apps, mobile apps, reactive web apps

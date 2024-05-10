@@ -1,5 +1,5 @@
 ---
-summary: JSON Serialize logic action reference
+summary: Explore JSON serialization features in OutSystems 11 (O11), including data type conversion, property settings, and runtime behaviors.
 helpids: 30002
 locale: en-us
 guid: a1cf5074-f5ba-48cf-a229-206358fd55c0

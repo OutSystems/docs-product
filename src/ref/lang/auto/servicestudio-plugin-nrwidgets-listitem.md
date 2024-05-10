@@ -1,6 +1,6 @@
 ---
 helpids: 30031
-summary: Reference information on the List Item widget for allowing you to displays a list item with full swipe behavior capability, containing a List Action widget to define the swiping behavior.
+summary: OutSystems 11 (O11) introduces a List Item widget with full swipe behavior and customizable actions for mobile and reactive web apps.
 locale: en-us
 guid: 7378bd28-e563-4ca9-bede-731dca5fa49f
 app_type: mobile apps, reactive web apps

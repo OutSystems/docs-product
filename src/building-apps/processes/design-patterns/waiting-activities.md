@@ -1,5 +1,5 @@
 ---
-summary: The article explains how to use the Wait activity in process design to pause execution until certain conditions are met, such as timeouts, database events, or explicit closure with validation logic
+summary: OutSystems 11 (O11) incorporates the Wait activity to manage process execution based on conditions like timeouts and database events.
 locale: en-us
 guid: 6af5d9c9-a99e-4940-bc69-c847ef743f6b
 app_type: traditional web apps, mobile apps, reactive web apps

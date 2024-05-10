@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the generic publishing error in OutSystems 11 (O11) by contacting your system administrator.
 locale: en-us
 guid: 482daf77-4ccf-46d4-9835-4de8972cc041
 app_type: traditional web apps, mobile apps, reactive web apps

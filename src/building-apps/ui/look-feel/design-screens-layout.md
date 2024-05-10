@@ -1,5 +1,5 @@
 ---
-summary: Use layouts to define the position and look and feel of the elements on the screen. A layout can be reused in many screens so they can be consistent.
+summary: Learn how to design screen layouts using placeholders in OutSystems 11 (O11) for consistent and dynamic content distribution.
 tags: support-application_development; support-Front_end_Development; support-Front_end_Development-featured; support-webapps
 locale: en-us
 guid: 1ac298ad-4931-46ba-bc63-5e27536c0603

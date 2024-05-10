@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Character Count UI Pattern.
+summary: Explore the layout and classes of the Character Count UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 0aff7fc0-9c0e-4ff5-9736-588beddc3335
 app_type: traditional web apps

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to configure secure endpoints to better secure your OutSystems Cloud environments.
+summary: Explore how OutSystems 11 (O11) enhances security by configuring secure endpoints to validate host headers and ensure regulatory compliance.
 locale: en-us
 guid: 6c1dcebe-0c55-4fb3-b94b-21d162a23053
 app_type: mobile apps, reactive web apps, traditional web apps

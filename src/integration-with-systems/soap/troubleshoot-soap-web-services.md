@@ -1,5 +1,5 @@
 ---
-summary: Use the logging features of OutSystems, adjusting the logging level of SOAP web services if necessary, to troubleshoot SOAP web wervices.
+summary: OutSystems 11 (O11) provides detailed logging for both exposed and consumed SOAP Web Services, accessible via the Service Center management console.
 tags: support-application_development; support-Integrations_Extensions
 locale: en-us
 guid: ddb0cd62-4de7-48c2-9f44-3a9240a4ae66

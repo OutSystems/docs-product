@@ -1,4 +1,5 @@
 ---
+summary: Explore built-in functions for business logic in OutSystems 11 (O11), categorized into Math, Numeric, Text, and more.
 locale: en-us
 guid: ce9a0af3-a200-48eb-a9de-46dfb212d35f
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -5,7 +5,7 @@ guid: 24e5b7ad-48f0-4656-b5d7-c834488bef98
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:51
-summary: The article explains how to create an extension module in OutSystems to manage stateless SAP BAPI remote function calls for improved performance
+summary: Learn how to enhance performance in OutSystems 11 (O11) by managing stateless SAP calls using an extension module.
 ---
 # Execute SAP Stateless Calls
 

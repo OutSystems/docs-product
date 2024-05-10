@@ -1,5 +1,5 @@
 ---
-summary: Blocks are interface parts that can be reused in screens and other blocks.
+summary: Explore how OutSystems 11 (O11) enhances UI reusability and maintainability through the use of Blocks and Web Blocks.
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps; support-Front_end_Development-overview
 locale: en-us
 guid: 3c67d197-93c9-4620-8f3d-719e15405278

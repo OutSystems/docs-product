@@ -1,6 +1,6 @@
 ---
 tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow; template; issue-report
-summary: Learn how to create an Issue Report app using a Workflow Builder template.
+summary: OutSystems 11 (O11) enables users to create apps using the Issue Report template by following a step-by-step guide.
 guid: 2eb55ee1-3508-4c49-9303-3d968ef6b3a2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

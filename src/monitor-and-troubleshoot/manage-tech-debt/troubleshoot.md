@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Troubleshoot AI Mentor Studio
+summary: Explore troubleshooting tips for OutSystems 11 (O11) focusing on AI Mentor Studio synchronization, code discrepancies, and login issues.
 locale: en-us
 guid: e2eb38b8-b3b6-42dd-9389-232ef2ba6226
 app_type: traditional web apps, mobile apps, reactive web apps

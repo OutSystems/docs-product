@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Light Box Image UI Pattern.
+summary: Learn to customize the Light Box Image UI Pattern in OutSystems 11 (O11) with CSS for enhanced visuals.
 locale: en-us
 guid: 6b8b6bad-949d-4561-9cd9-a062b11fc20b
 app_type: traditional web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Video UI Pattern.
+summary: Explore advanced customization of video controls in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: cd532674-6556-4684-bdd5-fcff4e6c422e
 app_type: traditional web apps

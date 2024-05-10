@@ -1,4 +1,5 @@
 ---
+summary: Learn how to integrate and manage business processes in your applications using OutSystems 11 (O11).
 helpids: 17016
 locale: en-us
 guid: 27d0d6c8-85f1-45aa-adf1-a6333b01c3b9

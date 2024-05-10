@@ -1,5 +1,5 @@
 ---
-summary: Use Switch or Check Box widgets to change the value of boolean variables.
+summary: OutSystems 11 (O11) offers widgets like Check Box and Switch for boolean input in forms, available in different web and mobile environments.
 tags:
 locale: en-us
 guid: dc284a2a-904b-4d90-84c0-43cbd7dcd7a0

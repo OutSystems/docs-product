@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Card UI Pattern.
+summary: Explore card component customization in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 64b922a7-ca05-4d8f-bb40-2c75539b0bc2
 app_type: traditional web apps

@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework; Multilingual Case Management framework
-summary: Conceptual introduction to multilingual Case Management framework.
+summary: Explore the multilingual capabilities of the Case Management framework in OutSystems 11 (O11), supporting multiple languages for application development.
 guid: 2e31ca9c-b4b9-4e3a-9ed3-81172a775fd4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

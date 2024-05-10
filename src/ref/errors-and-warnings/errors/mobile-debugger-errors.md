@@ -1,4 +1,5 @@
 ---
+summary: Explore common mobile debugging errors and solutions in OutSystems 11 (O11) when using Google Chrome.
 locale: en-us
 guid: 960f029e-c1fc-444c-bb46-ac92fdda5916
 app_type: traditional web apps, mobile apps, reactive web apps

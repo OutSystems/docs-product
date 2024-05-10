@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) identifies and recommends the deletion of unused actions in a module to optimize application performance.
 locale: en-us
 guid: 7316b94a-14c9-4e46-85bf-c1105c44030e
 app_type: traditional web apps, mobile apps, reactive web apps

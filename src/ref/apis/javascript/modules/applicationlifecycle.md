@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb
-summary: Provides information about the status of the application's lifecycle. Used to protect the app during upgrades, when local model access shouldn't be allowed, and to customize the application loading process.
+summary: OutSystems 11 (O11) provides tools to manage the application lifecycle, including monitoring upgrades and customizing the loading process.
 locale: en-us
 guid: 90d5caaf-3d6a-4ddc-b2de-012bbec4c2f3
 app_type: mobile apps, reactive web apps

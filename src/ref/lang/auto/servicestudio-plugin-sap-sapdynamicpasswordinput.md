@@ -1,4 +1,5 @@
 ---
+summary: Learn how OutSystems 11 (O11) integrates SAP password input parameters for enhanced security and dynamic login capabilities.
 helpids: 30071
 locale: en-us
 guid: 05055421-befe-428c-8f14-17ef09fe3126

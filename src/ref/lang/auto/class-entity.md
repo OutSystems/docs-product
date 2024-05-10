@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) provides detailed entity management features, including properties for data protection and customization.
 helpids: 15005
 locale: en-us
 guid: 9c912e20-4808-41f2-93e8-6e83a3654ab7

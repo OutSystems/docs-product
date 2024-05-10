@@ -1,5 +1,5 @@
 ---
-summary: Assign custom icons for your mobile app, specifying versions for each screen sizes and densities.
+summary: OutSystems 11 (O11) allows customization of mobile app icons by importing icon images in various sizes and densities into the application module.
 tags: runtime-mobile; support-Mobile_Apps-featured
 locale: en-us
 guid: 4d07edaa-0b7b-41b8-bd1f-59c4b1bfd103

@@ -1,4 +1,5 @@
 ---
+summary: Explore the encapsulation and exposure rules of Structures in OutSystems 11 (O11), including their properties and limitations.
 helpids: 15007, 30102
 locale: en-us
 guid: fe544d88-12d3-4de4-95b1-687bc64c34bc

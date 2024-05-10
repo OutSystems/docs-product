@@ -4,7 +4,7 @@ guid: 17d3cb2c-81bd-4784-aacf-7c382295c1a0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: Integration Studio enforces specific naming conventions and character limits for elements, with automatic character translation and warnings for reserved words
+summary: OutSystems 11 (O11) Integration Studio enforces naming conventions and character limits for elements.
 ---
 # Naming Elements in Integration Studio
 

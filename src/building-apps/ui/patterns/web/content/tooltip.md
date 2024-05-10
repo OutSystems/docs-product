@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Tooltip dynamically displays simple informative content on end user interaction.
+summary: Explore how to implement and customize the Tooltip UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 0e075d6f-21b5-4929-a591-d27832d9b40a
 app_type: traditional web apps

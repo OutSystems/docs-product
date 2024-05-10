@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) deprecates the consumed SOAP Web Service based on SOAP 1.1 protocol, transitioning to a new implementation supporting SOAP 1.2.
 helpids: 11003, 11001
 locale: en-us
 guid: c2e59d22-6ed6-4982-a9fd-5ce8e440d660

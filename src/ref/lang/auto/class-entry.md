@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) defines the entry point for Traditional Web Apps, detailing URL structure and properties.
 helpids: 4001
 tags: 
 locale: en-us

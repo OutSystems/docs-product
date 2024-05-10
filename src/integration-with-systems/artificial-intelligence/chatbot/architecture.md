@@ -1,5 +1,5 @@
 ---
-summary: Overview of the parts that make a chatbot in OutSystems and how they function together.
+summary: Explore chatbot architecture and integration using OutSystems 11 (O11) and Azure services for enhanced app functionality.
 tags:
 locale: en-us
 guid: b7b3693d-5efc-4f7e-bef5-472a07175945

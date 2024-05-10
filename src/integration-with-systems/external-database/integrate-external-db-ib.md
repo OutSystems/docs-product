@@ -1,5 +1,5 @@
 ---
-summary: Integrating your applications with external databases using Integration Builder
+summary: Learn how to integrate external databases with your apps using Integration Builder in OutSystems 11 (O11).
 tags:
 locale: en-us
 guid: fcc67384-67da-41a3-b52b-e2491db85b0c

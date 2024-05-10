@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create and use complex data types in your applications.
+summary: Explore how to use structures and records for compound data types in OutSystems 11 (O11) for efficient app development.
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: eb3ff661-0b92-4f55-9bf3-cceb8dd2c0b9

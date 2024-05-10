@@ -1,4 +1,5 @@
 ---
+summary: Learn how to address the Unused Attribute Warning in OutSystems 11 (O11) by deleting unnecessary value entries and verifying attribute deletions.
 locale: en-us
 guid: 54c78d12-b3c9-428a-bc6f-cc0d7a8c5546
 app_type: traditional web apps, mobile apps, reactive web apps

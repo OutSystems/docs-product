@@ -1,5 +1,5 @@
 ---
-summary: Overview of options, resources, and tools to implement automated testing in your OutSystems environment .
+summary: Explore automated testing strategies and tools in OutSystems 11 (O11) to enhance application delivery and reliability.
 tags: 
 locale: en-us
 guid: 319b0b59-b9cc-48d8-a776-ea8c0b564711

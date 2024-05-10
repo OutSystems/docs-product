@@ -1,5 +1,5 @@
 ---
-summary: Learn about creating groups, assigning roles to them and managing group members in the Users application.
+summary: Explore how to manage end users and organize roles using groups in OutSystems 11 (O11).
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 17e0082a-7169-482d-a383-89eeab15b9df

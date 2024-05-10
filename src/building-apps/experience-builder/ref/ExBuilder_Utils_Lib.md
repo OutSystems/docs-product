@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features ExBuilder_Utils_Lib for geocoding addresses and coordinates using Google's API.
 locale: en-us
 guid: 9ecbb8d4-3888-4d93-b72d-b34aef107a1e
 app_type: traditional web apps, mobile apps, reactive web apps

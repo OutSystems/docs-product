@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) automates input parameter configuration for REST API authentication.
 helpids: 30061
 locale: en-us
 guid: 7fbaa379-bf8c-43e8-8352-f320768a330d

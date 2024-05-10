@@ -1,4 +1,5 @@
 ---
+summary: Explore the structure and properties of REST API Callbacks in OutSystems 11 (O11) for effective integration and documentation.
 helpids: 30055
 locale: en-us
 guid: 5fc67999-8f0f-455d-b611-9a4079cbcc0e

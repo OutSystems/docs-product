@@ -1,5 +1,5 @@
 ---
-summary: Enabling maintenance mode on an environment avoids unnecessary communication attempts and disruptions during maintenance.
+summary: OutSystems 11 (O11) introduces maintenance mode in LifeTime version 11.9.0 to manage environment synchronization during maintenance activities.
 tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps
 locale: en-us
 guid: 373a27f2-990b-4257-bc8d-4d6d33c41ff0

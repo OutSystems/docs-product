@@ -1,5 +1,5 @@
 ---
-summary: Learn more about Integrated Windows Authentication in OutSystems.
+summary: OutSystems 11 (O11) supports Integrated Windows Authentication for centralized user management and automatic application authentication.
 tags: runtime-traditionalweb
 locale: en-us
 guid: 7cfdce45-42ed-4217-9e4b-fdd3bd671f6b

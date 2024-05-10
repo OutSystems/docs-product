@@ -1,5 +1,5 @@
 ---
-summary: Use your own .NET code to customize the information that is sent in requests or received in responses of consumed REST APIs.
+summary: Explore advanced customizations in OutSystems 11 (O11) using .NET code for REST API requests and responses.
 tags: 
 locale: en-us
 guid: 79eee8b9-b6ae-43e0-8127-9d6004f24ec4

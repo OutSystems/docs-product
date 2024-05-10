@@ -4,7 +4,7 @@ guid: b6fd826d-d92b-4c58-870e-da6c7311fad8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains how to update an entity definition in Integration Studio by refreshing it from the database, which replaces the existing definition and retains only the entity name
+summary: OutSystems 11 (O11) allows users to refresh an entity definition in Integration Studio by fetching updated table information from the database.
 ---
 # Refresh an Entity
 

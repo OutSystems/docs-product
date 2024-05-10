@@ -1,5 +1,5 @@
 ---
-summary: Learn how to test and fix accessibility issues on your OutSystems Reactive Web applications.
+summary: OutSystems 11 (O11) emphasizes early testing and fixing of accessibility issues using tools like WAVE and Lighthouse to enhance app development.
 tags: runtime-reactiveweb
 locale: en-us
 guid: 4d847458-cdd8-40ec-848a-aa9af7e1d2ea

@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different Concurrent Publishing TrueChange errors.
+summary: Explore how to resolve concurrent publishing errors in OutSystems 11 (O11) when modules are locked during simultaneous operations.
 tags:
 locale: en-us
 guid: d16fc208-4a45-4e8e-a4d1-d271d33f00a4

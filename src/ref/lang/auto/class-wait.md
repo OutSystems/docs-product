@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features a Wait process activity that pauses process flows until specified events or timeouts occur.
 locale: en-us
 guid: f8be65b0-6cde-4d57-ad19-0f473f662fa0
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -41,127 +42,24 @@ Changing the `Close On` property to listen to events from another entity only ha
 
 ## Properties
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Mandatory</th>
-<th>Default value</th>
-<th>Observations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td title="Description">Description</td>
-<td>Text that documents the element.</td>
-<td></td>
-<td></td>
-<td>Useful for documentation purpose.<br/>The maximum size of this property is 2000 characters.</td>
-</tr>
-<tr>
-<td title="Label">Label</td>
-<td>Text displayed in the back-office when an instance of this Wait activity is executed.</td>
-<td></td>
-<td></td>
-<td>If not defined, the displayed text will be the Wait process activity name.</td>
-</tr>
-<tr>
-<td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
-<td>Yes</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td title="Public">Public</td>
-<td>Indicates whether this process activity can be used by other modules.</td>
-<td>Yes</td>
-<td>No</td>
-<td>This property is only available for process activities that were created in the current module. When a process activity is public its process must also be public.</td>
-</tr>
-<tr>
-<td title="Close On">Close On</td>
-<td>Entity action that automatically ends the Wait Activity execution.</td>
-<td></td>
-<td></td>
-<td>The event that automatically closes (ends) the process activity execution:<br/><br/>
-        <strong>Create &lt;entity&gt;:</strong> the Wait is ended when a record is created for the specified entity;<br/><br/>
-        <strong>Update &lt;entity&gt;:</strong> the Wait is ended when a record is updated for the specified entity.</td>
-</tr>
-<tr>
-<td title="Original Name">Original Name</td>
-<td>Name of the element as defined in the module which implements it (producer module). This property is read-only.</td>
-<td>Yes</td>
-<td></td>
-<td>This property is only visible for referenced elements.</td>
-</tr>
-<tr >
-<th colspan="5">Advanced</th>
-</tr>
-<tr>
-<td title="Timeout">Timeout</td>
-<td>Date and time until the Wait activity pauses the process flow execution.</td>
-<td></td>
-<td></td>
-<td>You may set the timeout date in two ways:<br/><br/>
-        <strong>Absolute:</strong> the timeout date is fixed.<br/>
-        For example: <code>#2015-01-01 00:00:00#</code><br/><br/>
-        <strong>Relative:</strong> the timeout date depends on the current moment.
-        For example, if you want to wait a day then define your timeout date as: <code>AddDays(CurrDateTime(),1)</code><br/>
-        This value is defined as a Date Time.</td>
-</tr>
-<tr>
-<td title="Allow Skip">Allow Skip</td>
-<td>If set to True, the activity execution may be skipped.</td>
-<td>Yes</td>
-<td>No</td>
-<td>When allowed, skip can be triggered programmatically using the <code>ActivitySkip</code> system action under the <code>(System)</code> reference.</td>
-</tr>
-</tbody>
-</table>
+| Name | Description | Mandatory | Observations |
+|---|---|---|---|
+| Description | Text that documents the element. | | Useful for documentation purposes.The maximum size of this property is 2000 characters. |
+| Label | Text displayed in the back-office when an instance of this Wait activity is executed. | | If not defined, the displayed text will be the Wait process activity name. |
+| Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes | |
+| Public | Indicates whether this process activity can be used by other modules. | Yes | This property is only available for process activities that were created in the current module. When a process activity is public its process must also be public. |
+| Close On | Entity action that automatically ends the Wait Activity execution. | | The event that automatically closes (ends) the process activity execution: <br/><br/> `Create <entity>`: the Wait is ended when a record is created for the specified entity. <br/><br/> `Update <entity>`: the Wait is ended when a record is updated for the specified entity.
+| Original Name | Name of the element as defined in the module which implements it (producer module). This property is read-only. | Yes | This property is only visible for referenced elements. |
+| Timeout | Date and time until the Wait activity pauses the process flow execution. | | You may set the timeout date in two ways: <br/><br/> **Absolute**: the timeout date is fixed. For example: `#2015-01-01 00:00:00#` <br/><br/> **Relative**: the timeout date depends on the current moment. For example, if you want to wait a day then define your timeout date as: `AddDays(CurrDateTime(),1)`. This value is defined as a Date Time.
+| Allow Skip | If set to True, the activity execution may be skipped. | Yes | When allowed, skip can be triggered programmatically using the **ActivitySkip** system action under the **(System)** reference.
 
 ## Runtime Properties
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Read Only</th>
-<th>Type</th>
-<th>Observations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ClosedInstant</td>
-<td>Date and time when the process activity instance was closed.</td>
-<td>Yes</td>
-<td>Date Time</td>
-<td></td>
-</tr>
-<tr>
-<td>Expired</td>
-<td>True if the process activity instance ended because of a timeout.</td>
-<td>Yes</td>
-<td>Boolean</td>
-<td></td>
-</tr>
-<tr>
-<td>Skipped</td>
-<td>True if the process activity instance ended because it was skipped.</td>
-<td>Yes</td>
-<td>Boolean</td>
-<td></td>
-</tr>
-<tr>
-<td>ActivityId</td>
-<td>Identifier of the process activity instance at runtime.</td>
-<td>Yes</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Name | Description | Read Only | Type |
+|---|---|---|---|
+| ClosedInstant | Date and time when the process activity instance was closed. | Yes | Date Time |
+| Expired | True if the process activity instance ended because of a timeout. | Yes | Boolean |
+| Skipped | True if the process activity instance ended because it was skipped. | Yes | Boolean |
+| ActivityId | Identifier of the process activity instance at runtime. | Yes | |
+
 

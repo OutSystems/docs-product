@@ -1,5 +1,5 @@
 ---
-summary: Allows you to get the technical debt details of an OutSystems infrastructure.
+summary: Explore the AI Mentor Studio API for managing technical debt in OutSystems 11 (O11).
 tags: article-page; support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
 locale: en-us
 guid: 29A5FD23-8A6E-4B2B-853F-58AD0A34C560

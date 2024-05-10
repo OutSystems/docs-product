@@ -1,11 +1,10 @@
 ---
-summary: The On Application Ready action initializes app settings during the home module load in Mobile and Reactive Web Apps
+summary: OutSystems 11 (O11) includes an "On Application Ready" action that initializes settings and blocks screen rendering until complete.
 locale: en-us
 guid: b89718c6-8e22-4481-a4ea-6481e349e206
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:322
-summary: The On Application Ready action initializes app settings during the home module load in Mobile and Reactive Web Apps
 ---
 # On Application Ready
 
@@ -54,4 +53,3 @@ To add the **On Application Ready** action to a Mobile or Reactive Web App do th
 </tr>
 </tbody>
 </table>
-

@@ -1,5 +1,5 @@
 ---
-summary: OutSystems automatically upgrades executing process instances when module process flows are modified, with an impact analysis determining if instances are suspended or upgraded
+summary: Explore how OutSystems 11 (O11) automatically upgrades process flows and performs impact analysis to manage active process instances.
 tags: support-application_development; support-webapps
 locale: en-us
 guid: 628316ec-b24f-422b-bafa-93bc8dd3bc07

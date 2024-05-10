@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) enables automatic process activities with integrated error handling and business logic implementation.
 locale: en-us
 guid: 2d7ca3ba-dd47-4cbb-9400-2399d1b07d7a
 app_type: traditional web apps, mobile apps, reactive web apps

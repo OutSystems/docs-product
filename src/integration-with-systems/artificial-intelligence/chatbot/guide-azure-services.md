@@ -1,5 +1,5 @@
 ---
-summary: This document guides you through creating the Azure resources for developing a chatbot.
+summary: Explore how to configure Azure resources for OutSystems 11 (O11) chatbot integration, including creating services and channels.
 tags:
 locale: en-us
 guid: 2d4d86ce-b835-4fb6-9af8-ecee723d94a7

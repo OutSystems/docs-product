@@ -1,4 +1,5 @@
 ---
+summary: Explore the detailed properties and configurations of modules in OutSystems 11 (O11) for traditional web applications.
 helpids: 1011
 locale: en-us
 guid: 1189b6d2-baf6-4b9f-bfc7-e88033ba8e7b

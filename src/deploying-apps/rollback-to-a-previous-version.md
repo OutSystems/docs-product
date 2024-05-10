@@ -1,5 +1,5 @@
 ---
-summary: Check how to rollback an application to its previous version, in case a critical bug is detected.
+summary: Learn how to rollback to a previous application version using OutSystems 11 (O11) through tagging or republishing solutions.
 tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: 49b59373-a60e-4d93-8399-41084f083f51

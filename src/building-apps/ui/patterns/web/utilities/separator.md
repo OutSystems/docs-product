@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Separator distributes content into clear groups and ease visual organization.
+summary: Learn how to use the Separator UI Pattern in OutSystems 11 (O11) to enhance visual organization in Traditional Web Apps.
 locale: en-us
 guid: c2f627d5-7dbf-4c75-a18e-43635917c6e6
 app_type: traditional web apps

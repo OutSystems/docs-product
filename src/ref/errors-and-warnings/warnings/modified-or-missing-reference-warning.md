@@ -1,4 +1,5 @@
 ---
+summary: Explore error handling in OutSystems 11 (O11) for incompatible or missing module references to prevent application runtime errors.
 locale: en-us
 guid: eacad4d3-ae36-4f26-bb60-02ba575bf448
 app_type: traditional web apps, mobile apps, reactive web apps

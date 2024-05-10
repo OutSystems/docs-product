@@ -4,7 +4,7 @@ guid: 966c33e2-bdc0-4847-91b3-9fbda9b29d9f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A99&mode=design&t=187UAgmZTPxcY0ZG-1
-summary: The article explains how to redact sensitive information from REST API logs by setting the Log Redaction property to Yes for specific input parameters in Service Studio
+summary: OutSystems 11 (O11) enables log redaction for sensitive REST API input parameters.
 ---
 # Redacting information from REST API logs
 

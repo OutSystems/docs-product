@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve common `Invalid Error Handler` errors in OutSystems 11 (O11) by managing exception flows and screen parameters.
 locale: en-us
 guid: c2ae03b0-1005-4a66-a5c6-72b8387e779c
 app_type: traditional web apps, mobile apps, reactive web apps

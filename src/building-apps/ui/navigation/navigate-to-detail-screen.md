@@ -1,5 +1,5 @@
 ---
-summary: Allow end users to check the details of a record by navigating to another screen.
+summary: Explore how to navigate to a detail screen in OutSystems 11 (O11) for both Reactive Web and Mobile, and Traditional Web applications.
 tags:
 locale: en-us
 guid: 407dfc26-80f5-440c-b3e1-56d8e7d27ce8

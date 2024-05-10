@@ -1,4 +1,5 @@
 ---
+summary: Explore solutions for the database warning in OutSystems 11 (O11) when module and server database types mismatch.
 locale: en-us
 guid: dc568697-e3e5-4dae-9f80-7c4663228e68
 app_type: traditional web apps, mobile apps, reactive web apps

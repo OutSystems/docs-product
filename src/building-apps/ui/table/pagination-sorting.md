@@ -1,5 +1,5 @@
 ---
-summary: These are the instructions for implementing your own pagination and sorting.
+summary: Learn how to manually implement table pagination and sorting in OutSystems 11 (O11) with detailed instructions for enhancing user interface functionality.
 tags: runtime-reactiveweb;
 locale: en-us
 guid: c85c1a3d-327a-49e1-af6d-bd99a67b4ebc

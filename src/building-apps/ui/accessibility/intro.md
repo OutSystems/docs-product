@@ -1,5 +1,5 @@
 ---
-summary: Learn how to make your OutSystems Reactive Web applications accessible to everyone.
+summary: OutSystems 11 (O11) integrates WCAG-compliant accessibility features, enabling developers to create universally usable apps.
 tags: article-page; runtime-mobileandreactiveweb
 locale: en-us
 guid: 845ea0d1-6110-4a9f-a4ca-19e53b178825

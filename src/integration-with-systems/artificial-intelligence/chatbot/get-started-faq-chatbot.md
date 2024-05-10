@@ -1,5 +1,5 @@
 ---
-summary: Steps for creating an FAQ chatbot with the OutSystems component and Azure resources.
+summary: Explore how to create an FAQ chatbot using OutSystems 11 (O11) and Microsoft Azure, integrating knowledge bases and UI components.
 tags:
 locale: en-us
 guid: f48545b1-eda8-4c71-80a0-53b79a4e8d08

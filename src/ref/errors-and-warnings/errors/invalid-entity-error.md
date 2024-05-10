@@ -4,7 +4,7 @@ guid: bd6833c9-7995-4089-94a9-4eead9f5b6b3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:437
-summary: The article outlines various scenarios that trigger the 'Invalid Entity' error in OutSystems and provides solutions to resolve them
+summary: OutSystems 11 (O11) addresses common entity configuration errors, detailing solutions for attribute and identifier issues.
 ---
 # Invalid Entity Error
 

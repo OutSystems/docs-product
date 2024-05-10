@@ -1,5 +1,5 @@
 ---
-summary: Cloud Messaging Configurator API for the Firebase Cloud Messaging Plugin.
+summary: Explore the deprecated and updated features of OutSystems 11 (O11) Cloud Messaging Configurator APIs for enhanced notification management.
 locale: en-us
 guid: 612389e2-3fb0-455c-8506-eebc7627615b
 app_type: mobile apps

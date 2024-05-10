@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) manages data model changes to ensure data integrity during application deployment.
 tags: support-Database
 locale: en-us
 guid: 5008ac01-e236-474f-a0ec-0b7169c31e2d

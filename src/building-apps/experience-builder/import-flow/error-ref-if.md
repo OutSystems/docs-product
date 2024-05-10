@@ -1,5 +1,5 @@
 ---
-summary:  Experience Builder validates the flow templates module to provide a flawless experience for developers using custom flows.
+summary: OutSystems 11 (O11) validates module structure during custom flow template imports to ensure optimal integration and developer experience.
 locale: en-us
 guid: 8c89ad30-ff41-497f-81c9-2ec418fde122
 app_type: traditional web apps, mobile apps, reactive web apps

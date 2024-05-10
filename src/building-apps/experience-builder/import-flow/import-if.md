@@ -1,5 +1,5 @@
 ---
-summary: Import your flow templates to Experience Builder.
+summary: Explore the process of importing mobile flow templates into Experience Builder using OutSystems 11 (O11).
 locale: en-us
 guid: c306701e-60ed-4267-9514-2d9834a9523f
 app_type: traditional web apps, mobile apps, reactive web apps

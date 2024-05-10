@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Blank Slate UI Pattern.
+summary: Learn how to implement the Blank Slate UI Pattern in Traditional Web Apps using OutSystems 11 (O11) for optimal content alignment and conditional display.
 locale: en-us
 guid: 57108c14-9fcd-46a6-9604-489d54277361
 app_type: traditional web apps

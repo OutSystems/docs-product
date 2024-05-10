@@ -1,4 +1,5 @@
 ---
+summary: Explore the structure and properties of REST API methods in OutSystems 11 (O11).
 helpids: 30057
 locale: en-us
 guid: 87d9f1db-bf3a-40ac-a5a8-562243e035f2

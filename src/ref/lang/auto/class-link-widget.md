@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features a Link Widget for Traditional Web Apps, enabling hyperlink functionalities for actions, data submission, or navigation.
 helpids: 4028
 locale: en-us
 guid: ecc756d6-3965-4b19-a3e8-309fd3b87b0d

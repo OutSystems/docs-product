@@ -1,5 +1,5 @@
 ---
-summary: Layer System used to manage the z-index values across all patterns on OutSystems UI.
+summary: OutSystems 11 introduces a new z-index management system in OutSystems UI 2.16.0, enhancing maintainability and customization.
 tags:
 locale: en-us
 guid: c3a6352a-f92a-4d3a-9bfd-8bdd93f411ae

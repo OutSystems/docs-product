@@ -4,85 +4,28 @@ guid: 6ebdb9db-f7cd-44bd-a2c8-48fa22272dba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article describes various text manipulation functions such as character conversion, concatenation, encoding for web contexts, substring extraction, case conversion, and trimming
+summary: OutSystems 11 (O11) provides a comprehensive suite of string manipulation functions for server-side and client-side logic.
 ---
 # Text
 
-
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#Chr">Chr</a>(&#8203;Integer)</td>
-<td>Returns a single-character string corresponding to the 'c' character code.</td>
-</tr>
-<tr>
-<td><a href="#Concat">Concat</a>(&#8203;Text, Text)</td>
-<td>Returns the concatenation of two Texts: 't1' and 't2'.</td>
-</tr>
-<tr>
-<td><a href="#EncodeHtml">EncodeHtml</a>(&#8203;Text)</td>
-<td>Replaces special characters in a string so that you can use it in HTML literals. Use this function when using un-escaped expressions that contain content provided by end users.<br/><br/>Warning: Since this function only encodes strings that will be used in HTML literals, it does not protect you from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as JavaScript code, only to encode HTML literals.</td>
-</tr>
-<tr>
-<td><a href="#EncodeJavaScript">EncodeJavaScript</a>(&#8203;Text)</td>
-<td>Replaces special characters in a string so that you can use it in JavaScript literals. Use this function when using un-escaped expressions that contain content provided by end users.<br/><br/>Warning: Since this function only encodes strings that will be used in JavaScript literals, it does not protect you from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as JavaScript code, only to encode JavaScript literals.</td>
-</tr>
-<tr>
-<td><a href="#EncodeSql">EncodeSql</a>(&#8203;Text)</td>
-<td>Replaces special characters in a string literal so that you can use it in a SQL statement. Use this function when the Expand Inline property of a Query Parameter is enabled to escape content provided by end users.<br/><br/>Warning: Since this function only encodes string literals, it does not protect you from SQL injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as part of the SQL statement. Check the OutSystems Best Practices documentation for more information on building dynamic SQL statements the right way.</td>
-</tr>
-<tr>
-<td><a href="#EncodeUrl">EncodeUrl</a>(&#8203;Text)</td>
-<td>Replaces all non-alphanumeric characters in a string, i.e. characters outside of the [0-9a-zA-Z] range, so that you can safely use it in URL parameter values. Use this function to build URLs in your application that may contain content provided by end users, e.g. when dynamically building URLs to an external site.</td>
-</tr>
-<tr>
-<td><a href="#Index">Index</a>(&#8203;Text, Text, Integer, Boolean, Boolean)</td>
-<td>Returns the zero-based position in Text 't' where 'search' Text can be found. Returns -1 if 'search' is not found or if 'search' is empty.</td>
-</tr>
-<tr>
-<td><a href="#Length">Length</a>(&#8203;Text)</td>
-<td>Returns the number of characters in Text 't'.</td>
-</tr>
-<tr>
-<td><a href="#NewLine">NewLine</a>()</td>
-<td>Returns a string containing the New Line (Return) character.</td>
-</tr>
-<tr>
-<td><a href="#Replace">Replace</a>(&#8203;Text, Text, Text)</td>
-<td>Returns Text 't' after replacing all Text occurrences of 'search' with 'replace'.</td>
-</tr>
-<tr>
-<td><a href="#Substr">Substr</a>(&#8203;Text, Integer, Integer)</td>
-<td>Returns a sub-string of 't' beginning at 'start' zero-based position and with 'length' characters.</td>
-</tr>
-<tr>
-<td><a href="#ToLower">ToLower</a>(&#8203;Text)</td>
-<td>Converts Text 't' to the equivalent lowercase text.</td>
-</tr>
-<tr>
-<td><a href="#ToUpper">ToUpper</a>(&#8203;Text)</td>
-<td>Converts Text 't' to the equivalent uppercase text.</td>
-</tr>
-<tr>
-<td><a href="#Trim">Trim</a>(&#8203;Text)</td>
-<td>Removes all leading and trailing space characters (' ') from Text 't'.</td>
-</tr>
-<tr>
-<td><a href="#TrimEnd">TrimEnd</a>(&#8203;Text)</td>
-<td>Removes all trailing space characters (' ') from Text 't'.</td>
-</tr>
-<tr>
-<td><a href="#TrimStart">TrimStart</a>(&#8203;Text)</td>
-<td>Removes all leading space characters (' ') from Text 't'.</td>
-</tr>
-</tbody>
-</table>
+| Name | Description |
+|---|---|
+| [Chr](#Chr)(​Integer) | Returns a single-character string corresponding to the 'c' character code. |
+| [Concat](#Concat)(​Text, Text) | Returns the concatenation of two Texts: 't1' and 't2'. |
+| [EncodeHtml](#EncodeHtml)(​Text) | Replaces special characters in a string so that you can use it in HTML literals. Use this function when using un-escaped expressions that contain content provided by end users.<br/>**Warning**: Since this function only encodes strings that will be used in HTML literals, **it does not protect** from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. **Do not** use this function to encode text that might get executed as JavaScript code, only to encode HTML literals. |
+| [EncodeJavaScript](#EncodeJavaScript)(​Text) | Replaces special characters in a string so that you can use it in JavaScript literals. Use this function when using un-escaped expressions that contain content provided by end users.<br/>**Warning**: Since this function only encodes strings that will be used in JavaScript literals, **it does not protect** from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. **Do not** use this function to encode text that might get executed as JavaScript code, only to encode JavaScript literals. |
+| [EncodeSql](#EncodeSql)(​Text) | Replaces special characters in a string literal so that you can use it in a SQL statement. Use this function when the Expand Inline property of a Query Parameter is enabled to escape content provided by end users.<br/>**Warning**: Since this function only encodes string literals, **it does not protect** from SQL injection vulnerabilities on its own. **Do not** use this function to encode text that might get executed as part of the SQL statement. Check the OutSystems documentation for more information on [building dynamic SQL statements the right way](https://www.outsystems.com/tk/redirect?g=373e4dbc-5192-4f28-b438-120fff238be3). |
+| [EncodeUrl](#EncodeUrl)(​Text) | Replaces all non-alphanumeric characters in a string (characters outside of the `[0-9a-zA-Z]` range), so that you can safely use it in URL parameter values. Use this function to build URLs in your application that may contain content provided by end users, for example, when dynamically building URLs to an external site. |
+| [Index](#Index)(​Text, Text, Integer, Boolean, Boolean) | 	Returns the zero-based position in Text 't' where 'search' Text can be found. Returns -1 if 'search' is not found or if 'search' is empty. |
+| [Length](#Length)(​Text) | Returns the number of characters in Text 't'. |
+| [NewLine](#NewLine)() | Returns a string containing the New Line (Return) character. |
+| [Replace](#Replace)(​Text, Text, Text) | Returns Text 't' after replacing all Text occurrences of 'search' with 'replace'. |
+| [Substr](#Substr)(​Text, Integer, Integer) | Returns a sub-string of 't' beginning at 'start' zero-based position and with 'length' characters. |
+| [ToLower](#ToLower)(​Text) | Converts Text 't' to the equivalent lowercase text. |
+| [ToUpper](#ToUpper)(​Text) | Converts Text 't' to the equivalent uppercase text. |
+| [Trim](#Trim)(​Text) | Removes all leading and trailing space characters (' ') from Text 't'. |
+| [TrimEnd](#TrimEnd)(​Text) | 	Removes all trailing space characters (' ') from Text 't'. |
+| [TrimStart](#TrimStart)(​Text) | Removes all leading space characters (' ') from Text 't'. |
 
 ## Chr { #Chr }
 

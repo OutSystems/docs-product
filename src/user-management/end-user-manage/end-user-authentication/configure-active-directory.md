@@ -1,5 +1,5 @@
 ---
-summary: How to configure Active Directory end user authentication for your applications.
+summary: This article provides a guide on configuring Active Directory authentication in OutSystems 11 (O11) for self-managed installations.
 locale: en-us
 guid: b4a590a6-d9e2-4f0a-80c4-d3ac9f3bd14b
 app_type: traditional web apps, mobile apps, reactive web apps

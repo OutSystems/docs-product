@@ -1,5 +1,5 @@
 ---
-summary: Learn how to monitor Timers.
+summary: OutSystems 11 (O11) provides a feature to monitor and log Timer activities, accessible through the Service Center with appropriate permissions.
 locale: en-us
 guid: caf9e5cf-7145-41f9-b6e7-af2f0f7f0652
 app_type: traditional web apps, mobile apps, reactive web apps

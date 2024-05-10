@@ -1,5 +1,5 @@
 ---
-summary: The article describes how to use the Cryptography Services app in OutSystems Cloud HIPAA offering to encrypt and decrypt PHI using AWS Key Management Service, with different actions for searchable and unsearchable attributes
+summary: OutSystems 11 (O11) integrates AWS Key Management Service for HIPAA-compliant encryption and decryption of PHI through its Cryptography Services app.
 tags: article-page
 locale: en-us
 guid: 259aca31-dc2a-4eb1-8d5c-e322cefe5e66

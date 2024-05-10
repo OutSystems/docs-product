@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) provides detailed error messages and recommendations for resolving widget and attribute property mismatches in application modules.
 locale: en-us
 guid: b50e7c6e-1f6a-4ae5-bd3d-5c621d1bd899
 app_type: traditional web apps, mobile apps, reactive web apps

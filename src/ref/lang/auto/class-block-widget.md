@@ -1,5 +1,5 @@
 ---
-summary: Reference information on the Block widget available for displaying a reusable screen element on a screen.
+summary: OutSystems 11 (O11) features the Block Widget, enabling customizable blocks with input parameters on screens.
 locale: en-us
 guid: 2a9589d1-4484-4a62-aa11-9574fa5e2b17
 app_type: traditional web apps, mobile apps, reactive web apps

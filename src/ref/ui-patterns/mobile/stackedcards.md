@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced use cases for the Stacked Cards UI Pattern
+summary: Explore CSS customization for the Stacked Cards UI Pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: 2b2b2437-d9dc-44bf-8d95-a0fb959fa61c
 app_type: mobile apps, reactive web apps

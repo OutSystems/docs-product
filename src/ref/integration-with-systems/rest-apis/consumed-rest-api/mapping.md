@@ -1,5 +1,5 @@
 ---
-summary: A list of mappings between structures and data types in REST requests.
+summary: OutSystems 11 (O11) automatically maps JSON data types to corresponding OutSystems data types when consuming REST API methods.
 tags:
 locale: en-us
 guid: afc8d9b0-863d-4592-be88-c376d083f49a

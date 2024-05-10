@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Carousel UI Pattern.
+summary: Explore advanced customization options for Carousel UI components in OutSystems 11 (O11), including external arrow placement and dot styling.
 locale: en-us
 guid: d0b2bc8d-6a37-424d-8399-56e586304c93
 app_type: traditional web apps

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) introduces UI Flows to logically group screens with common settings and enhanced security features.
 helpids: 4034
 locale: en-us
 guid: c6a9d058-311b-4564-8685-cd992ed4563f

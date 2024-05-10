@@ -1,5 +1,5 @@
 ---
-summary: Learn the requirements an external authentication plugin must implement.
+summary: OutSystems 11 (O11) supports external authentication for IT users through customizable SOAP web service plugins.
 locale: en-us
 guid: cd4618ec-7a4b-400f-a33c-a819571ebbb9
 app_type: traditional web apps, mobile apps, reactive web apps

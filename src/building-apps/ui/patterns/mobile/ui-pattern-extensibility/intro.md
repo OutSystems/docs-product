@@ -1,5 +1,5 @@
 ---
-summary: The article explains how to extend OutSystems UI Patterns using provider client actions and JavaScript, listing patterns with their external providers and versions
+summary: Explore the extensibility of UI Patterns in OutSystems 11 (O11) using external providers and dedicated OutSystems features.
 tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: E9183915-DC47-4192-ACE3-AE04472EFCB2

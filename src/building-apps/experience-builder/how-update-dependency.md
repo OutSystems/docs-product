@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to install or update Experience Builder dependencies.
+summary: Learn how to manually install or update dependencies in OutSystems 11 (O11) using Experience Builder if automatic updates fail.
 locale: en-us
 guid: 846ff90b-1883-40ce-adcf-ca9eb6004f90
 app_type: traditional web apps, mobile apps, reactive web apps

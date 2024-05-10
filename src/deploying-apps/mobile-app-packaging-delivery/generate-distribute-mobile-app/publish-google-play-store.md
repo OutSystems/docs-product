@@ -1,5 +1,5 @@
 ---
-summary: Generate a mobile app package for your mobile app to publish in the Google Play Store. 
+summary: This article provides a detailed guide on publishing your mobile Android application developed with OutSystems 11 (O11) to the Google Play Store.
 tags: runtime-mobile; support-mobile
 locale: en-us
 guid: 49613761-0f66-4d87-b41a-bf600081e654

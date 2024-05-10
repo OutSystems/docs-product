@@ -1,5 +1,5 @@
 ---
-summary: Add logic to customize the information sent in requests or received in responses of consumed REST APIs.
+summary: Learn how to customize REST API requests and responses in OutSystems 11 (O11) using callbacks and advanced integration scenarios.
 tags: 
 locale: en-us
 guid: 21574391-c5b3-4831-a7b2-8aaf94df2230

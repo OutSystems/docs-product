@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) details the properties of output parameters for SAP remote functions, including data types and documentation features.
 helpids: 30067
 locale: en-us
 guid: 4ce0e5f5-6bad-48f9-9685-88693679ab22

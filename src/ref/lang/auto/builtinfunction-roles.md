@@ -1,4 +1,5 @@
 ---
+summary: Explore role management functions like `Check<role_name>Role` in OutSystems 11 (O11) for user authentication and authorization.
 locale: en-us
 guid: a3d00b4b-8f79-4136-9b52-bc9052faaa8d
 app_type: traditional web apps, mobile apps, reactive web apps

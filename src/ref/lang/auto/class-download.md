@@ -1,4 +1,5 @@
 ---
+summary: Explore file sending features and properties of the Download Tool in OutSystems 11 (O11).
 locale: en-us
 guid: 6db67bd3-800f-40ea-8b86-c545c9a3c2c7
 app_type: traditional web apps, mobile apps, reactive web apps

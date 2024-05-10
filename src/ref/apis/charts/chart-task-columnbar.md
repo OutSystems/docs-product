@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to create a simple Column or Bar chart in OutSystems.
+summary: Explore how to create column and bar charts in OutSystems 11 (O11) using fixed or variable data points and multiple series.
 locale: en-us
 guid: 7115204b-9a1e-42f8-87f8-d1d771608667
 app_type: traditional web apps, mobile apps, reactive web apps

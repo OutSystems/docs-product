@@ -1,4 +1,5 @@
 ---
+summary: Explore the functionalities of the Image Widget in OutSystems 11 (O11), supporting various image sources and formats for Traditional Web Apps.
 helpids: 4044
 tags: 
 locale: en-us

@@ -1,4 +1,5 @@
 ---
+summary: Learn how OutSystems 11 (O11) automatically manages database constraints including primary keys and foreign keys.
 tags: support-Database
 locale: en-us
 guid: dcf4b1f6-3561-4cf7-b2ee-4b0caca4130b

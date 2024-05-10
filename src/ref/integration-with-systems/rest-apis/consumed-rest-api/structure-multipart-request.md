@@ -1,5 +1,5 @@
 ---
-summary: Reference page for the REST API Multipart Request structure.
+summary: Learn about the structure and properties of REST API Multipart Requests in OutSystems 11 (O11).
 tags: 
 locale: en-us
 guid: B8DBE1F9-981D-4CFC-9181-13470CA3ACB4

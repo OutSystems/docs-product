@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: Learn how to get a list of activities assigned to a case worker logged in to your app.
+summary: Learn how to display a list of activities assigned to a case worker in OutSystems 11 (O11) using UI module dependencies and data actions.
 guid: 826bbac1-ea6d-46e0-9e43-3581d214331c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

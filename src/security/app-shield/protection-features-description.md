@@ -1,5 +1,5 @@
 ---
-summary: Provide additional detail to AppShield users on each of the AppShield's protection features;
+summary: Explore the comprehensive security features of OutSystems 11 (O11) for mobile apps, including root detection, code obfuscation, and more.
 locale: en-us
 guid: 7696c5bc-71ab-4eeb-ac4c-2805bd79f5b1
 app_type: mobile apps

@@ -4,7 +4,7 @@ guid: dc751f41-faba-4421-be15-a595e5bd4a55
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6342
-summary: The article explains how to obtain SAP service specifications from the SAP API Business Hub for default services or from the service endpoint for custom services
+summary: Explore how to obtain SAP service specifications for integration with OutSystems 11 (O11) using the SAP API Business Hub and custom service endpoints.
 ---
 # Obtaining the SAP service specification
 

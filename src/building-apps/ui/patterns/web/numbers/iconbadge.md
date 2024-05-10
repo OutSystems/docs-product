@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Icon Badge displays numerical information as notification.
+summary: OutSystems 11 (O11) features the Icon Badge UI Pattern for displaying numerical notifications in Traditional Web Apps.
 locale: en-us
 guid: fa1815e9-06e0-4a60-bd56-135abbf03e0b
 app_type: traditional web apps

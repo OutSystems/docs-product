@@ -1,4 +1,5 @@
 ---
+summary: Explore how to resolve the 'Invalid Record' error in OutSystems 11 (O11) when a record lacks attributes.
 locale: en-us
 guid: a1d0e4e5-5910-479b-912f-4580537c97d4
 app_type: traditional web apps, mobile apps, reactive web apps

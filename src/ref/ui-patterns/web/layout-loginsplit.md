@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Layout Login Split web block.
+summary: Learn to customize the Login Split web block in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 804f282e-4480-4c8c-ba5a-4bc376436caa
 app_type: traditional web apps

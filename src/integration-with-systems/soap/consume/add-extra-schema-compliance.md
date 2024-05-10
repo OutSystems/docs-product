@@ -1,5 +1,5 @@
 ---
-summary: Learn how to add extra schema compliance validations in SOAP.
+summary: Enable extra schema compliance validations in OutSystems 11 (O11) for SOAP web services to ensure XML message compliance.
 tags: support-Installation_Configuration; version-11
 locale: en-us
 guid: 1062467B-0DCE-446E-B31C-584119C941A2

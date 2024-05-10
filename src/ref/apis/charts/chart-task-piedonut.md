@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to create a simple Pie or Donut chart in OutSystems.
+summary: Explore how to create and customize Pie and Donut charts in OutSystems 11 (O11) for both mobile and web applications.
 locale: en-us
 guid: a5d2d3bd-c18c-4828-b099-a0ce4980fe1e
 app_type: traditional web apps, mobile apps, reactive web apps

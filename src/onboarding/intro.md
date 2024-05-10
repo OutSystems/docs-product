@@ -1,5 +1,5 @@
 ---
-summary: Learn how to take what you already know from your experience in developing with traditional languages and see how your knowledge can be transferred and implemented quickly within the OutSystems Platform.
+summary: Explore developer onboarding and IDE navigation for OutSystems 11 (O11) to enhance learning and productivity.
 tags:
 locale: en-us
 guid: 023dfb7e-0d99-4596-867e-14cb3e768142

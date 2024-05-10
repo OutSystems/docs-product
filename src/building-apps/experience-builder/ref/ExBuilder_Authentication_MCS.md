@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) offers extensive mobile authentication services, including biometric, passcode, and user session management.
 locale: en-us
 guid: bf5a417a-a13c-4dc4-b9c8-4800c7f324b3
 app_type: traditional web apps, mobile apps, reactive web apps

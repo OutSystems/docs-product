@@ -1,9 +1,10 @@
 ---
 tags:
-summary: You can ignore classes of modules during tech-debt analysis in AI Mentor Studio.
+summary: OutSystems 11 (O11) allows selective ignoring of modules during technical debt analysis to provide a more accurate assessment in AI Mentor Studio.
 guid: 70460AD8-7C84-4D86-9E83-2274E9802B93
 locale: en-us
 platform-version: o11
+app_type: mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1573:1815
 ---
 

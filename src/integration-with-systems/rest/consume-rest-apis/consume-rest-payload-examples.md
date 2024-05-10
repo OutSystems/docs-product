@@ -1,5 +1,5 @@
 ---
-summary: Examples of the payload sent at runtime in a request when consuming a REAT method.
+summary: Explore payload request examples for consuming a single REST method in OutSystems 11 (O11).
 tags: support-Integrations_Extensions-featured
 locale: en-us
 guid: E7A21ACC-EC04-4FB8-A3CC-D121EF8A9963

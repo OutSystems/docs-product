@@ -1,5 +1,5 @@
 ---
-summary: Check how IT Managers or Administrators can override and enforce the HTTP security of OutSystems applications that are installed and running.
+summary: OutSystems 11 (O11) ensures HTTPS security for Mobile, Reactive, and Traditional Web Apps with built-in SSL and configurable settings.
 tags: support-Security-overview
 locale: en-us
 guid: a152ecbb-2419-489f-87c5-000918d502f0

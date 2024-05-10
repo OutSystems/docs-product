@@ -1,5 +1,5 @@
 ---
-summary: Upload and download files in background.
+summary: Explore advanced file transfer capabilities in mobile and Reactive Web Apps with the File Transfer Plugin in OutSystems 11 (O11).
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 0bb071a1-f602-4d6b-9b4e-ca0c9c044c06

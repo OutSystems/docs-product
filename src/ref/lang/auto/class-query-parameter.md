@@ -4,7 +4,7 @@ guid: 5bbf3ba9-4d58-4cb3-9a6e-3634d2e01c31
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1469:2187
-summary: The article explains how to define and use query parameters in SQL queries within a Service Studio environment, using an Employee data model example
+summary: Explore how to integrate query parameters into SQL queries within OutSystems 11 (O11) for dynamic data retrieval.
 ---
 # Query Parameter
 

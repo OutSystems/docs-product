@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Submenu is used to create a menu contained within another menu.
+summary: OutSystems 11 (O11) documentation explains the Submenu UI Pattern integration for Mobile and Reactive Web Apps.
 locale: en-us
 guid: a4d2d0a7-47cf-4816-a3a4-c0861a5b59d7
 app_type: mobile apps, reactive web apps

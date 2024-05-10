@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework; Multilingual Case Management framework
-summary: Follow this guide to set up and enable multilingual Case Management framework.
+summary: Enable multilingual support in OutSystems 11 (O11) by translating static entities and setting locale-specific actions.
 guid: c882b8c5-8154-4465-ac69-968f5194050d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

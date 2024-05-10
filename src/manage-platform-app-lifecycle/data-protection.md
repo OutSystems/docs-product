@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore lifecycle management and data protection features in OutSystems 11 (O11), including personal data handling and security mechanisms.
 tags:
 locale: en-us
 guid: 9a5711af-7947-4f71-9569-ae016863db49

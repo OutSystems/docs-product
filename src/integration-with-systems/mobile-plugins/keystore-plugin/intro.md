@@ -1,5 +1,5 @@
 ---
-summary: The Key Store Plugin allows you to securely store, get and remove secrets (key-value pairs) on iOS & Android devices.
+summary: Explore secure storage of sensitive data in mobile apps using the Key Store plugin in OutSystems 11 (O11).
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: d66f03f6-4f9a-4923-9f55-75adabf5ed64
@@ -67,7 +67,7 @@ In case you want to remove a key-value pair that you previously created, you can
 
 ![Screenshot of the process to remove a key-value pair using the RemoveKey client action in the OutSystems development environment](images/remove-key-value-ss.png "Remove a key-value pair")
 
-### **Choose if you want authentication to access your secrets**
+### Choose if you want authentication to access your secrets
 
 <div class="info" markdown="1">
 
@@ -84,6 +84,49 @@ Any value chosen for the KeyAuthentication variable doesn't affect the security 
 </div>
 
 ![Screenshot showing the SetValue Run Client Action dialog with options for requiring authentication in the OutSystems development environment](images/setvalue-run-client-action-ss.png "The SetValue Run Client Action dialog for authentication")
+
+#### (Optional) Set the authentication dialog content (Android only)
+
+<div class="info" markdown="1">
+
+Applies to version 2.4.0 and higher
+
+</div>
+
+You can set the content of the authentication dialog that appears to the end-user when accessing key-value pairs. More specifically, you can set values for the dialog's **title** and **subtitle**. For devices with an Android version below or equal to 10, you can also set the value for the **cancel button** (also known as **negative button**). 
+
+<div class="info" markdown="1">
+
+For Android versions 10 or lower, these values only apply to biometric authentication (for example, fingerprint). These values also apply to Android version 11 and higher when using the standard authentication methods. 
+
+For Android versions 10 or lower, when using standard authentication methods (for example, PIN), the Android system uses predefined values
+
+</div>
+
+To set the values for these fields, define the following Android preferences in your app's Extensibility Configurations:
+
+```json
+        {
+            "preferences": {
+                "android": [
+                    {
+                        "name": "AuthPromptTitle",
+                        "value": "Authentication required"
+                    },
+                    {
+                        "name": "AuthPromptSubtitle",
+                        "value": "Please authenticate to continue"
+                    },
+                    {
+                        "name": "AuthPromptCancelButton",
+                        "value": "Cancel"
+                    }
+                ]
+            }
+        }
+```
+
+**Note:** These preferences are optional. If they're not set, then the values in the example above are used by default.
 
 ### Migrate the key-value pairs stored in a previous version to a new version of the plugin
 
@@ -102,7 +145,18 @@ Any value chosen for the KeyAuthentication variable doesn't affect the security 
 
 </div>
 
-![Screenshot of the extensibility configuration screen in the OutSystems development environment](images/extensibility-config.png "Extensibility Configuration")
+```json
+        {
+   "preferences":{
+       "global": [
+            {
+                "name": "MigratedKeysAuthentication",
+                "value": true
+            }
+       ]
+   }
+}
+```
 
 ## Known issues and workarounds
 

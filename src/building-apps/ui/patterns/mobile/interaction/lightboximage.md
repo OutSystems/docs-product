@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Displays an image thumbnail that can be clicked to open a fullscreen image.
+summary: Learn how to implement the Lightbox Image UI Pattern in OutSystems 11 (O11) for enhancing image galleries in mobile and reactive web apps.
 locale: en-us
 guid: 971050ab-ea28-4490-8698-433ce02974de
 app_type: mobile apps, reactive web apps

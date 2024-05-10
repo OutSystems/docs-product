@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different Invalid Data Type TrueChange errors.
+summary: Explore common data type errors and solutions in OutSystems 11 (O11) for expressions, REST API methods, and widgets.
 tags:
 locale: en-us
 guid: cc8e619d-18de-4b4a-a62a-d4058ce5e528

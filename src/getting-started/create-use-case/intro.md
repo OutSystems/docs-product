@@ -1,5 +1,5 @@
 ---
-summary: Learn more about how OutSystems can enable you to deliver value. In this article you're guided through the process of creating your first app that fulfills your business initiatives, using your own data.
+summary: Explore how OutSystems 11 (O11) provides tutorials and accelerators for creating customized apps across various use cases.
 tags:
 locale: en-us
 guid: c7315436-17a6-49f5-a395-60b6da7bac46

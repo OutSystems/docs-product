@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Carousel shows a subset of items in a cyclic view.
+summary: Learn how to implement and customize the Carousel UI Pattern in OutSystems 11 (O11) for dynamic content display in web applications.
 locale: en-us
 guid: a8810d33-7e06-48db-a6a9-f44b601d5e0a
 app_type: traditional web apps

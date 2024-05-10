@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Input with Icon allows the end user to input data with the help of a hint.
+summary: OutSystems 11 (O11) features the Input with Icon UI Pattern for enhanced data entry in Traditional Web Apps.
 locale: en-us
 guid: 28c2a35c-1fad-450b-bb5f-a31926f49c1a
 app_type: traditional web apps

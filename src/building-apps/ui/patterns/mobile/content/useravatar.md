@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: User Avatar displays user information in a circular badge.
+summary: Learn how to display user initials or images in a circular badge using the User Avatar UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: ca179aae-31fe-4032-b523-167c3ba531e5
 app_type: mobile apps, reactive web apps

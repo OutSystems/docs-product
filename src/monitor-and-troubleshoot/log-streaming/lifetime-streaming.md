@@ -1,5 +1,5 @@
 ---
-summary: The article provides a step-by-step guide on setting up log streaming from LifeTime to Elastic Cloud
+summary: Learn how to configure log streaming in LifeTime for OutSystems 11 (O11) using Elastic Cloud as the destination tool.
 tags:
 locale: en-us
 guid: 172ac547-add4-4cc5-9adf-d72fbe379d35

@@ -1,5 +1,5 @@
 ---
-summary: Ensure a strict security policy by checking the permissions IT users have over an application.
+summary: Explore user permissions management in OutSystems 11 (O11) for IT users across applications and environments.
 locale: en-us
 guid: ee37b850-be3f-4964-87a3-12800efb3363
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -21,7 +21,7 @@ In this example we want to understand who has access to the application Mobile B
 
 1. Click the **Permissions** link.  
 
-    ![](images/users-permissions-app-lt.png)
+    ![Screenshot showing user permissions for the Mobile Banking application in the LifeTime console.](images/users-permissions-app-lt.png "Application Permissions Overview")
 
 On this page, we can see:
 
@@ -37,7 +37,7 @@ In this example we want to understand the permissions that a specific user has, 
 
 1. In the **USERS** screen, find the user and click the Name of the user to go to the details page.  
 
-    ![](images/users-permissions-user-lt.png)
+    ![Screenshot detailing specific user permissions within the LifeTime console, including roles and access levels across environments.](images/users-permissions-user-lt.png "IT User Permissions Detail")
 
 On this page, we can see that:
 

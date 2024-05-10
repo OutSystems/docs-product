@@ -1,5 +1,5 @@
 ---
-summary: This data synchronization pattern is recommended for mobile apps with entities that follow a one-to-many relationship and where it is not likely for multiple end users to change the same data while the apps are offline.
+summary: OutSystems 11 (O11) facilitates a Read/Write Data One-to-Many synchronization pattern for mobile apps, ensuring data consistency with a "last write wins" approach.
 tags: runtime-mobile
 locale: en-us
 guid: 26530521-14df-4bb6-82d4-e087f6566a05

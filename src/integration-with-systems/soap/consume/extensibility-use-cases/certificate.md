@@ -1,5 +1,5 @@
 ---
-summary: How to add support for authenticating SOAP requests with a client certificate using the SOAP Extensibility API.
+summary: OutSystems 11 (O11) supports authenticating SOAP requests using a client certificate, as detailed in the integration and configuration process.
 locale: en-us
 guid: c3df3d40-fd98-48f6-8c63-0ec22f08f516
 app_type: traditional web apps, mobile apps, reactive web apps

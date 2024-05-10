@@ -1,5 +1,5 @@
 ---
-summary: Protect your mobile apps against tampering. OutSystems let's you create custom obfuscation rules to protect your apps against modification and misuse.
+summary: Learn how to create custom obfuscation rules for non-OutSystems plugins in OutSystems 11 (O11) to enhance mobile app security.
 tags: support-application_development; runtime-mobile; 
 locale: en-us
 guid: 8fe53ff7-6928-4fa2-b80d-cef17d9da254
@@ -185,7 +185,7 @@ To enable custom code obfuscation, follow these steps to add a property to the E
 
 1. From Service Studio, select **your module name**, go to the properties, and double-click **Extensibility Configuration**.
 
-    ![extend-configuration-field.png](images/extensibility-configurations-option-ss.png)
+    ![Screenshot highlighting the Extensibility Configurations option in OutSystems Service Studio.](images/extensibility-configurations-option-ss.png "Service Studio Extensibility Configurations Option")
 
 1. In the **Extensibility Configuration** field, enter the obfuscation property as a new global preference. Call the new property in the Extensibility Configuration JSON **AppShieldObfuscationRules**, and its value is a base64 encoding of your custom obfuscation rules. The following code snippet is an example of the JSON implementation.
 

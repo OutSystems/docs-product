@@ -1,5 +1,5 @@
 ---
-summary: How to update OutSystems applications that became invalid due to the log model changes in OutSystems 11.
+summary: Explore how to update applications for compatibility with OutSystems 11 (O11) log data model, including handling joins with log entities.
 tags: support-Installation_Configuration; version-11
 locale: en-us
 guid: fb46fada-91f7-45b9-b936-b0310303f4e8

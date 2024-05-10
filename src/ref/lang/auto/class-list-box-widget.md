@@ -1,6 +1,6 @@
 ---
 helpids: 4041
-summary: Allows the user to select one or more values from a list of possible values.
+summary: OutSystems 11 (O11) introduces the List Box widget for Traditional Web Apps, enabling users to select one or multiple values from a predefined list.
 locale: en-us
 guid: 7a819ca9-6e8b-418a-9270-ad6a8546ea1a
 app_type: traditional web apps

@@ -4,7 +4,7 @@ guid: af6bd145-bc87-4f22-b917-dfff49c8691e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=848:1418
-summary: The article explains how to use the Conditional Start process activity to trigger process flows in response to entity record creation or update events
+summary: Explore how OutSystems 11 (O11) utilizes the Conditional Start process activity to initiate workflows based on entity record events.
 ---
 # Conditional Start
 

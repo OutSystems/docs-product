@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: OutSystems 11 (O11) article discusses the drawbacks of using inline JavaScript and CSS, emphasizing best practices for maintainability and performance.
 locale: en-us
 guid: db93a6af-6f3d-45a6-b57a-ec7fbba596c3
 app_type: traditional web apps, mobile apps, reactive web apps

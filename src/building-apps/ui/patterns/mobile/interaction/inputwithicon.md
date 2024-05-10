@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Input with Icon allows the end user to input data with the help of a hint.
+summary: OutSystems 11 (O11) features the Input with Icon UI Pattern for enhancing user input with visual hints in Mobile and Reactive Web Apps.
 locale: en-us
 guid: ec5ca995-0a63-4bc9-b5d9-9c22a0f34a5b
 app_type: mobile apps, reactive web apps

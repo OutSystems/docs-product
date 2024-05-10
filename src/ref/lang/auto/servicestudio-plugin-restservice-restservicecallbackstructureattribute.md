@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore the structure attribute properties for REST API callbacks in OutSystems 11 (O11), detailing mandatory fields and data types.
 helpids: 30065
 locale: en-us
 guid: 44c5ae3d-131d-422d-b71b-a5e6598490f1

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) addresses the "Invalid Excel Handling" error by guiding users to correctly configure attributes in Excel-related elements.
 locale: en-us
 guid: 554085e9-ccc7-4e7a-8b41-a7dcb7f84429
 app_type: traditional web apps, mobile apps, reactive web apps

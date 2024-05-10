@@ -1,5 +1,5 @@
 ---
-summary: Identify and solve issues that may occur while using Integration Builder.
+summary: Explore common troubleshooting steps for Integration Builder in OutSystems 11 (O11), including solutions for connectivity and permission issues.
 locale: en-us
 guid: f10a765a-8c75-4ddd-8c80-c0deae442e94
 app_type: traditional web apps, mobile apps, reactive web apps

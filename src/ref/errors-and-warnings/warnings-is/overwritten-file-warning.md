@@ -1,4 +1,5 @@
 ---
+summary: Learn how OutSystems 11 (O11) handles file overrides during merge operations and backup processes in Integration Studio.
 locale: en-us
 guid: 5858cdc4-1a20-4f23-9e81-8c710cf06ab6
 app_type: traditional web apps, mobile apps, reactive web apps

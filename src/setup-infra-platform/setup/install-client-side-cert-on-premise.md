@@ -1,6 +1,5 @@
 ---
-summary: To make certificate authenticated requests to webservices, OutSystems Platform Server needs to be configured to bear the client side certificate. This article guides on how to install the certificate on self-managed environments.
-Tags: 
+summary: Explore the installation of client-side certificates in self-managed environments using OutSystems 11 (O11) for secure SOAP/REST API communications.
 locale: en-us
 guid: 1fd17ee2-6c15-4f5b-8b37-94113a71eafc
 app_type: traditional web apps, mobile apps, reactive web apps

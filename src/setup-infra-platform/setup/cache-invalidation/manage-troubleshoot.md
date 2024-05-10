@@ -1,5 +1,5 @@
 ---
-summary: Learn in OutSystems 11 the instructions for enabling the management plugin and for troubleshooting Cache Invalidation Service (RabbitMQ) issues.
+summary: Explore troubleshooting techniques for the cache invalidation service in OutSystems 11 (O11) involving RabbitMQ and Erlang configurations.
 tags: version-11
 locale: en-us
 guid: 4b06ed06-572c-48c9-835c-f38db745052c

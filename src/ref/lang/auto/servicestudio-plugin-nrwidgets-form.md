@@ -1,6 +1,6 @@
 ---
 helpids: 30032
-summary: Reference information on the Form widget for specifying a collection of user inputs that share the same validation context, on the screen.
+summary: OutSystems 11 (O11) offers a flexible Form widget for managing single records with customizable properties and events.
 locale: en-us
 guid: 2f341b30-01c8-46f2-9eb7-0e59725efad1
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Learn how to trigger and document events in OutSystems 11 (O11) using the Trigger Event feature with mandatory properties.
 locale: en-us
 guid: f093d004-0222-44cd-96ac-2f25a94f3acf
 app_type: traditional web apps, mobile apps, reactive web apps

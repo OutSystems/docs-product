@@ -1,5 +1,5 @@
 ---
-summary: Learn how to define Roles to set the security of your applications.
+summary: Explore user role management in OutSystems 11 (O11) for controlling access to application screens and operations.
 tags: 
 locale: en-us
 guid: d3fe610b-9bf9-4695-b516-01820a33abba

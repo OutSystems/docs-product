@@ -1,5 +1,5 @@
 ---
-summary: In the Cache tab you define the configuration settings of the Cache Invalidation Service.
+summary: Explore cache invalidation settings for OutSystems 11 (O11) including RabbitMQ configurations and service management options.
 locale: en-us
 guid: f224026f-76d6-4b2b-b750-a0d2f52f609a
 app_type: traditional web apps, mobile apps, reactive web apps

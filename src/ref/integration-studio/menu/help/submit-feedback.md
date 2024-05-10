@@ -4,7 +4,7 @@ guid: 10b4220e-09b6-4e8f-a60a-424800889615
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Submit Feedback operation in Integration Studio allows users to send comments or suggestions directly to OutSystems
+summary: OutSystems 11 (O11) features a Submit Feedback operation in the Help menu, enabling users to provide comments or suggestions directly to OutSystems.
 ---
 # Submit Feedback Window
 

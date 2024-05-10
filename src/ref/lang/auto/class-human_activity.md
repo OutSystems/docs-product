@@ -4,7 +4,7 @@ guid: b8187826-7efd-4154-a3c3-6b810ca5e546
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=607:517
-summary: The article explains how to implement and manage Human Activity tasks in a process flow, which are assigned to end users for execution and can be configured with specific properties and security roles
+summary: Explore how OutSystems 11 (O11) implements Human Activity to manage user tasks within process flows.
 ---
 # Human Activity
 

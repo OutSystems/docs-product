@@ -1,5 +1,5 @@
 ---
-summary: How to update the logout flow of your Traditional Web App so that it supports SAML-based end user authentication methods.
+summary: Update your Traditional Web App's logout flow in OutSystems 11 (O11) to support SAML 2.0 Single Logout functionality.
 tags: runtime-traditionalweb
 locale: en-us
 guid: 6ebc3a3e-4916-46b3-829c-a5143a5991da

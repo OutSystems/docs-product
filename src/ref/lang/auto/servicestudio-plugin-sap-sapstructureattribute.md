@@ -1,4 +1,5 @@
 ---
+summary: Explore the structure attribute properties for SAP remote functions in OutSystems 11 (O11), detailing mandatory fields and data types.
 helpids: 30073
 locale: en-us
 guid: b2bb3ce3-6403-4a1a-80d9-c5d34e509048

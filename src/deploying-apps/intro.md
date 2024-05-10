@@ -1,5 +1,5 @@
 ---
-summary: Guidance on deploying applications, including version tagging, deployment planning, and handling special cases like refactoring and hotfixes.
+summary: OutSystems 11 (O11) enhances app deployment by integrating with third-party orchestration platforms for automated CI/CD processes.
 locale: en-us
 guid: 594c9e1f-93d8-41f6-8b30-18a257bd6ea0
 app_type: traditional web apps, mobile apps, reactive web apps

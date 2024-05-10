@@ -1,5 +1,5 @@
 ---
-summary: The article explains how executing process instances are affected by the addition of new activities in OutSystems process flows
+summary: Explore how OutSystems 11 (O11) automatically upgrades executing process instances when activities are added to process flows.
 locale: en-us
 guid: b51a153e-2fe4-4721-ac98-8de123fdf804
 app_type: traditional web apps, mobile apps, reactive web apps

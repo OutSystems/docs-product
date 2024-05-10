@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) handles existing database table name conflicts by automatically renaming physical table names.
 locale: en-us
 guid: 7e812677-ceb0-4d0d-8e79-b56f14a7a28b
 app_type: traditional web apps, mobile apps, reactive web apps

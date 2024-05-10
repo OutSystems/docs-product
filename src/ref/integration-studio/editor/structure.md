@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) enhances structure editing capabilities through its Structure Editor feature.
 locale: en-us
 guid: 6c99fc79-ab44-4a23-8105-96bded0a842f
 app_type: traditional web apps, mobile apps, reactive web apps

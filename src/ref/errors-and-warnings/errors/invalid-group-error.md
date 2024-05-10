@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the "Invalid Group" error in OutSystems 11 (O11) when columns are incorrectly grouped without using an entity attribute.
 locale: en-us
 guid: 3a0036d4-b992-4050-a1eb-fccbccdd2e86
 app_type: traditional web apps, mobile apps, reactive web apps

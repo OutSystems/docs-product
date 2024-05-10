@@ -1,5 +1,5 @@
 ---
-summary:  Check the causes and recomendations on how to solve the different Invalid Variable TrueChange errors.
+summary: OutSystems 11 (O11) addresses Invalid Variable Errors by requiring valid values for the Variable property in various widgets and tools.
 tags:
 locale: en-us
 guid: 0eb3292f-592a-4301-a9ee-7ac3c598e70a

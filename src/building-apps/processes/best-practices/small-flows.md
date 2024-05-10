@@ -1,5 +1,5 @@
 ---
-summary: Designing processes with smaller flows improves maintainability and speeds up deployment by simplifying impact analysis and upgrades
+summary: Learn how OutSystems 11 (O11) enhances deployment efficiency by designing processes with smaller, manageable subprocesses.
 locale: en-us
 guid: ea9128f4-23b8-4eb6-9e6e-c9970f610634
 app_type: traditional web apps, mobile apps, reactive web apps

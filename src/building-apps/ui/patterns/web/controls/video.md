@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Learn how to embed a native video player in your app.
+summary: Explore how to embed a native video player in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 23431108-d3aa-4c10-9307-c8ad925dc9f1
 app_type: traditional web apps

@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) licensing warnings guide administrators on renewing or adjusting licenses to ensure server functionality.
 locale: en-us
 guid: 51e508a9-fe2f-4ea2-b545-9772a85628c6
 app_type: traditional web apps, mobile apps, reactive web apps

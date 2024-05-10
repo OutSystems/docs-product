@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recommendations on how to solve the different Locked Module errors.
+summary: OutSystems 11 (O11) encounters a Locked Module Error during platform upgrades, preventing publishing or deleting modules until the upgrade completes.
 tags:
 locale: en-us
 guid: abc85ab7-84f6-4409-8e23-527447edf15b

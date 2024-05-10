@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Panel UI Pattern.
+summary: Explore advanced UI customization in OutSystems 11 (O11) for Traditional Web Apps, including adding box-shadow effects to panels.
 locale: en-us
 guid: 14257aa5-1da9-4d49-b619-e89a5bd50936
 app_type: traditional web apps

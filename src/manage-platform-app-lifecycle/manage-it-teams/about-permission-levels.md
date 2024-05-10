@@ -1,5 +1,5 @@
 ---
-summary: Learn the OutSystems permissions model.
+summary: Explore the role-based permission model for IT users in OutSystems 11 (O11), detailing roles, permissions, and assignment methods.
 locale: en-us
 guid: 5a167254-3be6-44df-93ef-0d801e27efbb
 app_type: traditional web apps, mobile apps, reactive web apps

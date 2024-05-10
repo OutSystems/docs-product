@@ -1,5 +1,5 @@
 ---
-summary: Light Box Image displays an image thumbnail that is clicked to open a fullscreen image.
+summary: Explore the Light Box Image UI Pattern in OutSystems 11 (O11) for enhancing image galleries in Traditional Web Apps.
 locale: en-us
 guid: 615116df-3bdc-4500-9451-9815ef342240
 app_type: traditional web apps

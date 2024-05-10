@@ -1,6 +1,6 @@
 ---
 helpids: 7011, 30100
-summary: An Input Parameter allows you to provide data to an element for further use.
+summary: Learn how to use Input Parameters in OutSystems 11 (O11) to pass data into elements like Client Actions for enhanced application functionality.
 locale: en-us
 guid: 6b4c779a-b8ce-482d-a842-1b2eedc84785
 app_type: traditional web apps, mobile apps, reactive web apps

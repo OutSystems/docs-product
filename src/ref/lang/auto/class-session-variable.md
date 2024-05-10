@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) utilizes Session Variables for server-side data storage in Traditional Web Apps.
 helpids: 15001
 locale: en-us
 guid: ee806cae-33e4-4751-b49f-ddbd4aa5164c

@@ -1,6 +1,6 @@
 ---
 helpids: 30037
-summary: Reference information on the Switch Group widget for adding two-state toggle controls to allow users to select between two options.
+summary: Explore the Switch widget in OutSystems 11 (O11), a two-state toggle control for Mobile and Reactive Web Apps with customizable properties and events.
 locale: en-us
 guid: 4479919f-eabb-4cad-97d0-5e8e990d8524
 app_type: mobile apps, reactive web apps

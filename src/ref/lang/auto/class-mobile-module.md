@@ -5,7 +5,7 @@ guid: d3a9dc9a-5e49-43c2-9d77-fc4e9f1778a8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:327
-summary: Explains how to create and configure modules in OutSystems for Mobile and Reactive Web Apps, detailing properties and settings
+summary: Learn how to create and manage mobile modules in OutSystems 11 (O11) for enhanced app development.
 ---
 # Mobile Module
 

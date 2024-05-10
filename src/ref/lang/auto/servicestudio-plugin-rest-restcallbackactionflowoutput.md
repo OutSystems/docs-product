@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) documentation details the properties of output parameters in REST API Callback actions.
 helpids: 30054
 locale: en-us
 guid: 9eaec8da-b414-45eb-b2cb-f41c10fa3241

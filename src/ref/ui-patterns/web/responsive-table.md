@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Responsive Table UI Pattern.
+summary: Learn how to configure responsive tables in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 7b507cb7-8c2c-4705-a564-69e0bda38397
 app_type: traditional web apps

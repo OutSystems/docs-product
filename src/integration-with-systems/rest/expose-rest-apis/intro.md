@@ -1,5 +1,5 @@
 ---
-summary: Exposing REST APIs in your OutSystems applications.
+summary: OutSystems 11 (O11) enables the exposure of methods via REST APIs, incorporating security validations and customizable request and response handling.
 tags: support-application_development; support-Integrations_Extensions
 locale: en-us
 guid: 08e6c830-5f88-4645-b86f-412e1c399a1f

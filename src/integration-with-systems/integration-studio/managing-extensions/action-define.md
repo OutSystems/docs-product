@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) allows users to define extension actions to enhance functionality across different applications or technologies.
 locale: en-us
 guid: 13eaeec1-6665-471b-8891-18bb8d1241a8
 app_type: traditional web apps, mobile apps, reactive web apps

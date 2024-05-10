@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) enhances application quality by integrating automated testing into the development and delivery lifecycle.
 locale: en-us
 guid: 49f299a3-b4f6-4ae6-b422-baf45dfe54a6
 app_type: traditional web apps, mobile apps, reactive web apps

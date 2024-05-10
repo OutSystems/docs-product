@@ -1,5 +1,5 @@
 ---
-summary: Follow this tutorial to quickly create and test a Traditional Web App example to manage contacts.
+summary: Learn to build Traditional Web Apps with OutSystems 11 (O11) by importing Excel data and managing contacts.
 tags: runtime-traditionalweb; support-webapps
 locale: en-us
 guid: f84888af-0987-4ec7-98f7-195f6e493292

@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Use the Margin Container and easily add symmetrical padding around a container.
+summary: Explore how to implement the Margin Container UI Pattern in OutSystems 11 (O11) for adding symmetrical padding in Mobile and Reactive Web Apps.
 locale: en-us
 guid: 8099782f-c5ac-4a8f-a70a-fa9946d834a3
 app_type: mobile apps, reactive web apps

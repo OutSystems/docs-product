@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) details the functionality and restrictions of Web Blocks in Traditional Web Apps, including properties and runtime behaviors.
 helpids: 1006
 locale: en-us
 guid: 5d03bd37-8e91-4c60-8d7f-b550ab56994d

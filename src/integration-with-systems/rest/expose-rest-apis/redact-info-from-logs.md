@@ -1,5 +1,5 @@
 ---
-summary: The article explains how to redact sensitive information from REST API logs in Service Studio by setting the Log Redaction property to Yes for specific input and output parameters
+summary: OutSystems 11 (O11) enables log redaction for sensitive information in REST API logs.
 locale: en-us
 guid: 3fcf9d96-a766-4578-9e76-3798201cca0e
 app_type: traditional web apps, mobile apps, reactive web apps

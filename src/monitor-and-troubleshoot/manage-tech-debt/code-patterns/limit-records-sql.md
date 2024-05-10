@@ -1,6 +1,6 @@
 ---
 tags:
-summary: The article explains how to limit the number of records fetched from a database to optimize resource usage
+summary: OutSystems 11 (O11) emphasizes controlling the number of records fetched from databases to optimize resource usage and improve application performance.
 locale: en-us
 guid: 1aecc52f-daef-42a3-ab1b-12e31f086dcb
 app_type: traditional web apps, mobile apps, reactive web apps

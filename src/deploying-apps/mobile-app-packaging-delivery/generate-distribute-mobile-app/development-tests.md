@@ -1,5 +1,5 @@
 ---
-summary: Learn how to generate a mobile app package for test purposes and also how to share it so others can also test.
+summary: Learn how to generate and distribute mobile app packages for development testing using OutSystems 11 (O11).
 tags: runtime-mobile; support-mobile; support-Mobile_Apps
 locale: en-us
 guid: 8d9cef20-3f8a-440f-b229-bc8b3ced3e51

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced uses cases for the Align Center UI Pattern.
+summary: Learn how to use the Align Center UI pattern in Traditional Web Apps with OutSystems 11 (O11) for effective layout management and customization.
 locale: en-us
 guid: b4a62bda-9298-473c-bc03-c0acc4de20f3
 app_type: traditional web apps

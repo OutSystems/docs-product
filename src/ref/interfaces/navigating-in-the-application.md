@@ -1,4 +1,5 @@
 ---
+summary: Explore the features and navigation tips of OutSystems 11 (O11) in this detailed guide.
 tags: 
 locale: en-us
 guid: 2a31f77b-09dd-4bac-b3b8-bc286a684fc0

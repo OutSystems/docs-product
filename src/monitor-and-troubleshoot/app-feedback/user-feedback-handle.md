@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to handle the feedback submitted by users.
+summary: OutSystems 11 (O11) streamlines user feedback management through its App Feedback application.
 locale: en-us
 guid: b8db2ed6-0551-41c8-b16d-3063670c0417
 app_type: traditional web apps, mobile apps, reactive web apps

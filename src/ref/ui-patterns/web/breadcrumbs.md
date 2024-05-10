@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Breadcrumbs UI Pattern
+summary: Explore breadcrumb integration in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 4e6390a2-3d56-4b65-aabe-aa7588ff2253
 app_type: traditional web apps

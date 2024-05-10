@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties of output parameters in REST API methods in OutSystems 11 (O11), detailing mandatory fields and default values.
 helpids: 30060
 locale: en-us
 guid: 887a371e-106f-46cc-b419-92d929de0dd1

@@ -4,7 +4,7 @@ guid: 52c8b0c4-1091-41d6-8c68-a19938e1547f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:58
-summary: The article outlines the steps for implementing and using an extension in OutSystems, including creation, coding in a third-party IDE, and publishing
+summary: Explore the extension life cycle in OutSystems 11 (O11) and third-party IDEs, detailing creation, coding, and publishing processes.
 ---
 # Extension Life Cycle
 

@@ -1,5 +1,5 @@
 ---
-summary: Features currently unavailable in the cross-platform Service Studio.  
+summary: Discover the unavailable features in the cross-platform Service Studio of OutSystems 11 (O11).
 app_type: traditional web apps, mobile apps, reactive web apps
 guid: 7f64b9e0-7746-416e-b32d-c770f1322f02
 locale: en-us

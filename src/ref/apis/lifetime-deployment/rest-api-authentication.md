@@ -1,5 +1,5 @@
 ---
-summary: Using OutSystems service account tokens to authenticate REST API method calls.
+summary: Learn how to authenticate REST API calls using service accounts and tokens in OutSystems 11 (O11).
 tags: support-application_development; support-Integrations_Extensions
 locale: en-us
 guid: 1f0c3b37-45b9-4a4d-b640-016dac5f5d6b
@@ -36,7 +36,7 @@ To create a service account in LifeTime, do the following:
 
 1. In the LifeTime management console of your infrastructure, open the **User Management** tab and select the **Service Accounts** sub-menu. 
 
-    ![](images/lt_service_accounts.png)
+    ![Screenshot of the LifeTime Service Accounts management console highlighting the 'New Service Account' button.](images/lt_service_accounts.png "LifeTime Service Accounts Management Console")
 
 1. Select **New Service Account**. 
 
@@ -44,7 +44,7 @@ To create a service account in LifeTime, do the following:
 
     After creating the service account, you are provided with the authentication token that you must include in each REST API method call to authenticate the request.
 
-    ![](images/lt_auth_token_blurred.png)
+    ![Blurred image of an authentication token provided by LifeTime after creating a service account.](images/lt_auth_token_blurred.png "Authentication Token Display")
     
     **Note**: As a security measure, the authentication token is only shown once.If you lose the token, you must generate a new one, and the previous token is no           longer valid.
 
@@ -65,7 +65,7 @@ If you need to revoke or deprecate a given authentication token, you should gene
 
 1. Click the **Generate new Authentication Token** link. 
 
-    ![](images/lt_gen_new_auth_token.png)
+    ![Screenshot showing the option to generate a new authentication token for a service account in LifeTime.](images/lt_gen_new_auth_token.png "Generate New Authentication Token")
 
 1. Click **Continue** to confirm that you want to generate a new token, and that you’re fully aware that the previous token will be revoked/deprecated and will no longer work. 
 

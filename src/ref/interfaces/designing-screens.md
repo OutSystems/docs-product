@@ -1,5 +1,5 @@
 ---
-summary: Reference information on elements available for designing screens.
+summary: Explore widget functionalities in OutSystems 11 (O11) for efficient UI screen design.
 tags: outsystems-designing-screens; reference; designing-screens
 locale: en-us
 guid: 9a6e61ee-eaae-442e-bbb6-6edde598b908

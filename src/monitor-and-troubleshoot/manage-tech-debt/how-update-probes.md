@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: When a new AI Mentor Studio probe version is released, users with Full Control of the code analysis environment can update it autonomously. Learn how to update the probes in this topic.
+summary: OutSystems 11 (O11) is not mentioned in the provided article, which focuses on updating AI Mentor Studio probes.
 locale: en-us
 guid: d11dd771-148b-49fd-8bfd-dfe0800620c5
 app_type: traditional web apps, mobile apps, reactive web apps

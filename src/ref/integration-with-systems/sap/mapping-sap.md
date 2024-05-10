@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) integrates SAP data types into corresponding OutSystems data types, facilitating seamless data mapping and management.
 tags: 
 locale: en-us
 guid: b494a3d0-48d5-4988-ac70-8e7df29cc0ce

@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: OutSystems 11 (O11) features the Label Widget for improved accessibility in Traditional Web Apps.
 helpids: 17198
 locale: en-us
 guid: c8a95d6b-9e2c-4a22-81c3-19f768410e0e

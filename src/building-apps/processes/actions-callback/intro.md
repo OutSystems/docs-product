@@ -1,5 +1,5 @@
 ---
-summary: The article explains how to use callback actions to implement business rules in process flows
+summary: Learn how to implement and validate business rules in your process flow using callback actions in OutSystems 11 (O11).
 tags:
 locale: en-us
 guid: b5e04430-4a9c-4697-83a0-f495f4b9d650

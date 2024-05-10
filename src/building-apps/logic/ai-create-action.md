@@ -1,5 +1,5 @@
 ---
-summary: Follow a guided example of creating a Client Action with Code Mentor.
+summary: Learn how to create a Client Action using Code Mentor in OutSystems 11 (O11) to obtain and return a user's GPS location.
 locale: en-us
 guid: 7565e532-4bff-488b-acf2-ab11ab8f8b58
 app_type: mobile apps, reactive web apps

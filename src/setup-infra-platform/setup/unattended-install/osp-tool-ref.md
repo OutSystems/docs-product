@@ -1,5 +1,5 @@
 ---
-summary: Complete reference for the Solution Pack Tool (OSPTool) command line.
+summary: Learn how to use the Solution Pack Tool (OSPTool) for publishing solutions in OutSystems 11 (O11) environments.
 tags: support-Installation_Configuration; support-Installation_Configuration-overview
 locale: en-us
 guid: dee8f358-e76a-4277-af9f-c18bd1a05616

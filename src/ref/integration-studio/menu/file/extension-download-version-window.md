@@ -1,4 +1,5 @@
 ---
+summary: Explore the Download Version from Server window in OutSystems 11 (O11) for downloading specific extension versions in Integration Studio.
 locale: en-us
 guid: fd2ef8b2-c684-4f63-9fe8-a3e0e77f0812
 app_type: traditional web apps, mobile apps, reactive web apps

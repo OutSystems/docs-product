@@ -1,5 +1,5 @@
 ---
-summary: Learn about the OutSystems infrastructure architecture and its deployment options. Includes details about the underlying technologies, components, and services. Displays infrastructure examples with different levels of complexity, including multiple OutSystems pipelines.
+summary: Explore the scalable and flexible infrastructure architecture and deployment options of OutSystems 11 (O11) for optimized application development.
 tags: article-page
 locale: en-us
 guid: 59f6b703-30bd-4143-8af8-aac2f6e82ae0

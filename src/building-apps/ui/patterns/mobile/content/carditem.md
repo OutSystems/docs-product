@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: The Card Item widget allows you to list items with multiple content types, such as an image or icon, a title and description, and an action to the right.
+summary: Explore how to implement and customize the Card Item UI Pattern in OutSystems 11 (O11) for enhanced mobile and reactive web app interfaces.
 locale: en-us
 guid: 434a7ae9-243a-47b8-ae7c-e2f424a5411b
 app_type: mobile apps, reactive web apps

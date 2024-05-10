@@ -1,5 +1,5 @@
 ---
-summary: Reference information on the Expression widget for displaying a text literal or an expression to calculate at runtime on the screen.
+summary: OutSystems 11 (O11) features an expression widget that displays text or computed expressions in runtime environments.
 helpids: 30028
 locale: en-us
 guid: b5b035e8-ea51-41bb-ab1a-92dcb8db2013

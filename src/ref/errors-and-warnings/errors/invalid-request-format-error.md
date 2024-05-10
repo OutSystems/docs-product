@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Invalid Request Format' error in OutSystems 11 (O11) by adjusting REST API method properties or input parameters.
 locale: en-us
 guid: cd6419c6-8176-4cba-8788-49eee2196c4a
 app_type: traditional web apps, mobile apps, reactive web apps

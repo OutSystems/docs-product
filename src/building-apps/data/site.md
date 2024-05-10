@@ -1,5 +1,5 @@
 ---
-summary: Store variables at the environment level and use them to implement application behaviors that are configurable at runtime.
+summary: Explore how OutSystems 11 (O11) utilizes Site Properties to configure application behaviors dynamically at runtime without republishing.
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: cab950c5-aaec-4e83-a318-9d74a7e789b4
@@ -20,7 +20,7 @@ Site Properties exist in the server-side of the application. To create and use a
 
 1. In the Data tab, right-click on the Site Properties folder and add a site property.
 
-    ![](images/site-property.png)
+    ![Screenshot showing the option to add a Site Property in the OutSystems development environment.](images/site-property.png "Adding a Site Property")
 
 1. Define the name, data type and default value of the newly created Site Property.
 

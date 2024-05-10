@@ -1,5 +1,5 @@
 ---
-summary: Use this synchronization pattern when it is not likely for more than one user to change the same data while the app is offline.
+summary: Explore the "Read/Write Data Last Write Wins" synchronization pattern in OutSystems 11 (O11) for mobile app data consistency.
 tags: runtime-mobile
 locale: en-us
 guid: 053acd13-6c13-4849-b496-35631a4ad7f3

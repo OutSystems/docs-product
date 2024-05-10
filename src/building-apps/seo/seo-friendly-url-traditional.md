@@ -1,5 +1,5 @@
 ---
-summary: The URLs that are easy to read, memorize, and type contribute to great user experience (UX) and search engine optimization (SEO). OutSystems lets you configure the app URLs for UX and SEO. This guide describes the available techniques to simplify the URLs of the Traditional Web Apps.
+summary: Explore SEO-friendly URL configurations for Traditional Web apps in OutSystems 11 (O11).
 tags: runtime-traditionalweb
 helpids: 30374
 locale: en-us

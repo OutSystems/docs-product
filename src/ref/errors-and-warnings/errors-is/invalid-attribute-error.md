@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve invalid attribute errors in OutSystems 11 (O11) by setting valid data types and defining identifier attributes.
 locale: en-us
 guid: 81b14a73-9d6c-443d-8ef8-22819129e350
 app_type: traditional web apps, mobile apps, reactive web apps

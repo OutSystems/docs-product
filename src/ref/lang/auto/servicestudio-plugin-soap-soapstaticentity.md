@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) integrates static entities from consumed SOAP Web Services, supporting enhanced UI labeling and documentation features.
 locale: en-us
 guid: 6d4ae983-ef46-42d6-a080-89084a034d14
 app_type: traditional web apps, mobile apps, reactive web apps

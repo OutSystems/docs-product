@@ -1,5 +1,5 @@
 ---
-summary: The article explains how to create conditional paths in a process flow using the Decision tool to determine the path based on outcomes
+summary: Explore conditional path design in OutSystems 11 (O11) using the Decision tool for process flow management.
 locale: en-us
 guid: 5a27b7c6-3710-4a8b-807b-6b71e26670d1
 app_type: traditional web apps, mobile apps, reactive web apps

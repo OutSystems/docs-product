@@ -1,5 +1,5 @@
 ---
-summary: Translate your app directly from Service Studio by translating the module text and then creating a language switcher.
+summary: Explore multilingual app translation and language switching features in OutSystems 11 (O11) using Service Studio.
 tags: support-application_development
 locale: en-us
 guid: e664c563-cb0f-491c-bd05-8f1684d4a5a3

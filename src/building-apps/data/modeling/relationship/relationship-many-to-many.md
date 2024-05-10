@@ -1,5 +1,5 @@
 ---
-summary: How to implement a many-to-many relationship using a junction table in OutSystems.
+summary: OutSystems 11 (O11) tutorial on creating many-to-many relationships using a junction entity.
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 9a7e1290-8439-4b9b-8471-ee1114d03024

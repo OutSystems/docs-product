@@ -1,4 +1,5 @@
 ---
+summary: Learn about the SAP username input parameter in OutSystems 11 (O11), essential for SAP connections with Dynamic Login.
 helpids: 30070
 locale: en-us
 guid: 831bea2d-593d-47b1-a5f0-00862c4232ea

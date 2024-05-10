@@ -1,5 +1,5 @@
 ---
-summary: This article describes the modules deployment step during a Platform Server upgrade.
+summary: OutSystems 11 (O11) enhances deployment flexibility with an optional modules deployment step during Platform Server upgrades.
 tags: support-devOps; support-upgrade
 locale: en-us
 guid: 510C5CED-6AC6-4FD1-B26F-02BAEDF8E3DD

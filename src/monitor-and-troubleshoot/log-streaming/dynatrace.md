@@ -1,10 +1,11 @@
 ---
-summary: The article provides a guide on how to set up log streaming from OutSystems to Dynatrace, including prerequisites and configuration steps
+summary: This article details how to configure log streaming from OutSystems 11 (O11) to Dynatrace, including prerequisites and setup instructions.
 tags:
 locale: en-us
 guid: 7e46389e-dc1f-42cc-9225-929bed3b82a1
 app_type: traditional web apps, mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3139%3A322&mode=design&t=IIMVc2WTi7UxHv00-1
+platform-version: o11
 ---
 # Stream logs to Dynatrace
 

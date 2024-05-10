@@ -1,5 +1,5 @@
 ---
-summary: Use the RuntimePublic.Db API to insert data in the application database.
+summary: OutSystems 11 (O11) provides a method to insert data into an application database using the RuntimePublic.Db API.
 tags: 
 locale: en-us
 guid: 58b8df19-233a-40bb-ac4a-e5936cdcbd81

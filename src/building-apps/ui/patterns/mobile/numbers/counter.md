@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Counter shows the total number of occurrences of several values regarding a single topic.
+summary: Explore how to implement and customize the Counter UI Pattern in OutSystems 11 (O11) for displaying dynamic numerical data in web and mobile applications.
 locale: en-us
 guid: 18443b28-3b50-4e2d-9731-a84aac8cdaf1
 app_type: mobile apps, reactive web apps

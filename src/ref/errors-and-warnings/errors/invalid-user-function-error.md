@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) triggers an 'Invalid User Function' error when a function-set action lacks exactly one output parameter.
 locale: en-us
 guid: cc89e846-d1a0-41bb-b604-c2ecef4bbf6c
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Learn how the Expression Widget in OutSystems 11 (O11) displays runtime text literals or expression evaluations in Traditional Web Apps.
 helpids: 4020
 tags: runtime-traditionalweb
 locale: en-us

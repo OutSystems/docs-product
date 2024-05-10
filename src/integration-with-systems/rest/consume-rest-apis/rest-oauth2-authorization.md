@@ -1,5 +1,5 @@
 ---
-summary: How to use OAuth 2.0 client credential flow in Service Studio for REST APIs.
+summary: Explore OAuth 2.0 client flow authorization for REST API web services in OutSystems 11 (O11).
 tags: support-Integrations_Extensions-featured
 locale: en-us
 guid: beb761a2-ef08-44e6-aa0c-ee11bada5baa

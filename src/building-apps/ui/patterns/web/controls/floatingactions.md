@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Floating Actions displays an action that floats in the bottom right corner of the screen.
+summary: Learn how to implement the Floating Actions UI Pattern in OutSystems 11 (O11) for enhanced user interface design in Traditional Web Apps.
 locale: en-us
 guid: 2d4b31df-c2f5-46c6-945b-8fd711f22542
 app_type: traditional web apps

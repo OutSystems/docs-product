@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Multiple Date Formats' error in OutSystems 11 (O11) by standardizing date formats in REST API examples.
 locale: en-us
 guid: 2b8e15da-86d4-42c1-aa9f-9b29a80aab4d
 app_type: traditional web apps, mobile apps, reactive web apps

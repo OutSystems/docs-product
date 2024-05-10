@@ -4,7 +4,7 @@ guid: 27ff9512-9516-45cd-9722-feb4690e5caa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Resources tree in Integration Studio displays and manages the files associated with an extension, including their addition, status, and physical location
+summary: Explore the management of extension resources in OutSystems 11 (O11) using Integration Studio's Resources tree.
 ---
 # Resources Tree
 

@@ -1,5 +1,5 @@
 ---
-summary: Generate iOS and Android mobile app packages to test mobile apps or distribute them to the app stores. You can also enable the (progressive web app) PWA distribution. 
+summary: Learn how OutSystems 11 (O11) supports mobile app packaging and delivery through native builds and progressive web app (PWA) distribution.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-overview
 locale: en-us
 guid: b6da547f-4ef6-4bd3-bffc-365d5630da64

@@ -1,5 +1,5 @@
 ---
-summary: Using enumerates allows removing hard-coded values from applications, making them less error prone. In OutSystems, enumerates are Static Entities.
+summary: Explore how to create and utilize enumerates as Static Entities in OutSystems 11 (O11) for enhanced application flexibility and strong typing.
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 7fb8e153-c008-47ea-a7c2-419d85d33c1b

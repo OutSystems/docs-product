@@ -1,5 +1,5 @@
 ---
-summary: Reference of the Help menu.
+summary: Explore the Help menu in OutSystems 11 (O11) for resources like Integration Studio Help, updates, feedback submission, and a Start Screen overview.
 locale: en-us
 guid: a4e4f590-1c84-40b3-9242-77824221ee46
 app_type: traditional web apps, mobile apps, reactive web apps

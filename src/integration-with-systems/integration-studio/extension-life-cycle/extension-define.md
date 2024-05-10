@@ -1,4 +1,5 @@
 ---
+summary: Learn how to define extension elements like actions, structures, entities, and resources in OutSystems 11 (O11).
 locale: en-us
 guid: 0deb5983-3f9e-4a35-bbba-65396634c860
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: The Animated Label animates a label when there is user input.
+summary: Learn how to animate user input labels in Traditional Web Apps using the Animated Label UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: cada799f-c2fe-4d0a-98aa-309bf3a4fd16
 app_type: traditional web apps

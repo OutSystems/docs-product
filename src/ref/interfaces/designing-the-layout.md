@@ -1,4 +1,5 @@
 ---
+summary: Explore essential resources for designing app layouts with OutSystems 11 (O11), including guides on images, localized images, mobile themes, and UI flows.
 tags: 
 locale: en-us
 guid: 593e0def-f3b6-4046-a6d9-d71f3613e90a

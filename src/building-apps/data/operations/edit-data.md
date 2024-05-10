@@ -1,5 +1,5 @@
 ---
-summary: Learn how to edit your app's data using Service Studio, to test your app, or to prepare a demo with meaningful data.
+summary: OutSystems 11 (O11) enables editing of entity data directly in Service Studio during app development.
 tags:
 locale: en-us
 guid: ebbc32e6-d57f-43c2-a62b-5ce779c4dad2

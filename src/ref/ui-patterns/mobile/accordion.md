@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Advanced use cases for the Accordion UI Pattern. 
+summary: Explore accordion management features and APIs in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: e1c30cdd-a7f1-4ce5-aae5-2dddb7a845b9
 app_type: mobile apps, reactive web apps

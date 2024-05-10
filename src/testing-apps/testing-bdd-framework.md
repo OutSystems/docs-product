@@ -1,5 +1,5 @@
 ---
-summary: Introduces component testing using the BDDFramework tools.
+summary: Explore component testing in OutSystems 11 using BDDFramework tools for automated testing of Actions and Services.
 tags: 
 locale: en-us
 guid: b55c5578-ca69-4287-8431-445224d3165f
@@ -55,7 +55,7 @@ The following steps walk through creating a test application.
 1. Type the app name, for example, **App-Name-1** and click **Create App**.
 1. On the **App-Name-1** page, under **Modules**, change the module name to **AppName1-TESTS**, and leave the module type as **BDD Framework Client Side**.
 
-    ![](images/create-bdd-module-xplat.png)
+    ![Service Studio interface showing the process of creating a new BDD Framework module within an application.](images/create-bdd-module-xplat.png "Creating a BDD Framework Module")
 
 1. Click **Create module**. The module imports all the building blocks you need, and the test module is connected to the app you created.
 
@@ -65,13 +65,13 @@ The following steps walk through creating a test application.
 
 1. Right-click **TestFlow** and select **Add Screen**.
 
-    ![](images/testflow-1-xplat.png) 
+    ![Context menu in Service Studio with an option to add a new screen to the TestFlow.](images/testflow-1-xplat.png "Adding a New Screen to TestFlow") 
 
     You may see a message that new templates are loading.
 
 1. Select **New Test Suite**, type **MyFirst_TestSuite** in the name field, and click **Create Screen.**
  
-    ![](images/new-test-suite-xplat.png)
+    ![Service Studio screen template selection interface highlighting the 'New Test Suite' option.](images/new-test-suite-xplat.png "Selecting New Test Suite Template")
 
     The screen contains a test structure that's added to the UI Flow.
 

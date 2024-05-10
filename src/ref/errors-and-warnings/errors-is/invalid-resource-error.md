@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) encounters an "Invalid Resource Error" when an empty file cannot be stored in the Binaries directory.
 locale: en-us
 guid: dcd74051-5eb0-49fd-af03-3a2553dc978e
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 helpids: 30035
-summary: Reference information on the Text widget for adding a multi-line field to hold text typed by the users.
+summary: OutSystems 11 (O11) details configuration options for multi-line text fields in mobile and reactive web apps.
 locale: en-us
 guid: 52c47131-75d8-4e4b-92c7-00b226933bbb
 app_type: mobile apps, reactive web apps

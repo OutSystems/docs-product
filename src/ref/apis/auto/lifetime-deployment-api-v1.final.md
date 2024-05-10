@@ -1,5 +1,5 @@
 ---
-summary: Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure.
+summary: OutSystems 11 (O11) LifeTime API v1 is deprecated; use LifeTime API v2 for infrastructure management.
 tags: support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
 locale: en-us
 guid: 12a00b35-9fbb-497f-a3f1-4e0017f401bd

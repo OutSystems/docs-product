@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: The Notification UI Pattern is a contextual short message that provides important information to the user. 
+summary: Explore how to implement and customize the Notification UI Pattern in OutSystems 11 (O11) for effective user communication in mobile and reactive web apps.
 locale: en-us
 guid: 90ae661d-b0d0-4001-b2b1-efe5c50bb056
 app_type: mobile apps, reactive web apps

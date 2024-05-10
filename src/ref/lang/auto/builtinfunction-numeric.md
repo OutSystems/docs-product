@@ -1,4 +1,5 @@
 ---
+summary: Explore numeric functions like Max, Min, and Sign in OutSystems 11 (O11) for server-side, client-side, and database logic.
 locale: en-us
 guid: aace68aa-c3bc-4e37-85f1-ad8b6f204bf7
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,29 +9,11 @@ figma:
 
 # Numeric
 
-
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#Max">Max</a>(&#8203;Decimal, Decimal)</td>
-<td>Returns the largest number of 'n' and 'm'.</td>
-</tr>
-<tr>
-<td><a href="#Min">Min</a>(&#8203;Decimal, Decimal)</td>
-<td>Returns the smallest number of 'n' and 'm'.</td>
-</tr>
-<tr>
-<td><a href="#Sign">Sign</a>(&#8203;Decimal)</td>
-<td>Returns -1 if 'n' is negative; 1 if 'n' is positive; 0 if 'n' is 0.</td>
-</tr>
-</tbody>
-</table>
+| Name | Description |
+|---|---|
+| [Max](#Max)(​Decimal, Decimal) | Returns the largest number of 'n' and 'm'. |
+| [Min](#Min)(​Decimal, Decimal) | Returns the smallest number of 'n' and 'm'. |
+| [Sign](#Sign)(​Decimal) | Returns -1 if 'n' is negative; 1 if 'n' is positive; 0 if 'n' is 0. |
 
 ## Max { #Max }
 

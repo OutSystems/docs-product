@@ -1,4 +1,5 @@
 ---
+summary: Explore how to resolve the unused connector warning in OutSystems 11 (O11) by linking screens in web flows.
 locale: en-us
 guid: 42bf68d5-449b-479f-8009-d02639218f6b
 app_type: traditional web apps, mobile apps, reactive web apps

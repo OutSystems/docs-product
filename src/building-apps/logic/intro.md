@@ -1,5 +1,5 @@
 ---
-summary: Learn more about implementing and reuse actions, iterating lists, and handling exceptions. Find more about the lifecycle of screens and blocks.
+summary: Explore how OutSystems 11 (O11) implements application logic through built-in, custom, and system event actions in various app architectures.
 tags:
 locale: en-us
 guid: 1eef31a3-6807-412e-98e1-0e3b93fc6050

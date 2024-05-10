@@ -1,5 +1,5 @@
 ---
-summary: The article provides an overview of OutSystems main concepts, comparing them to traditional development languages and explaining their use in web and mobile application development
+summary: Explore the core features and language mappings of OutSystems 11 (O11) for developing enterprise-grade applications.
 tags:
 locale: en-us
 guid: 708cf7ca-d378-4db1-b479-62e11496f75a

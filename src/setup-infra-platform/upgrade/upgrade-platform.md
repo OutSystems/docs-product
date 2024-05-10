@@ -1,5 +1,5 @@
 ---
-summary: This article is a guide on how to upgrade the Platform Server component in your OutSystems environments, keeping your infrastructure up-to-date to make best use of the latest features and improvements.
+summary: Explore the process of upgrading to OutSystems 11 (O11) with a focus on Platform Server enhancements and independent LifeTime upgrades.
 tags: support-devOps; support-upgrade
 locale: en-us
 guid: 617e2ef6-9fca-4cf0-9840-a0277670083e

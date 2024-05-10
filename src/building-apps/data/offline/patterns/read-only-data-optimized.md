@@ -1,5 +1,5 @@
 ---
-summary: Use this synchronization pattern when your users only need to read data while the app is offline and there are large amounts of data to synchronize.
+summary: Explore the Read-Only Data Optimized pattern in OutSystems 11 (O11) for efficient data synchronization in mobile apps.
 tags: runtime-mobile
 locale: en-us
 guid: 1a81a250-78b5-4d79-b161-3b501049e46c

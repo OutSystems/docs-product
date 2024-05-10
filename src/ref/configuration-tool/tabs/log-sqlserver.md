@@ -1,5 +1,5 @@
 ---
-summary: Log tab showing specific settings for the 'Azure SQL Database / SQL Server' database provider.
+summary: Explore logging configurations for SQL Server and Azure SQL Database in OutSystems 11 (O11).
 locale: en-us
 guid: 09712708-bd45-4271-9005-9b19e43d29dc
 app_type: traditional web apps, mobile apps, reactive web apps

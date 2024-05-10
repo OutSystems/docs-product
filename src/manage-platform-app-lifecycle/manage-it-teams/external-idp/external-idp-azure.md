@@ -1,5 +1,5 @@
 ---
-summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
+summary: This guide details configuring Microsoft Azure AD authentication for OutSystems 11 (O11) as an identity provider.
 tags:
 locale: en-us
 guid: DA5BA9CA-066E-49E2-92C8-674CB644C370

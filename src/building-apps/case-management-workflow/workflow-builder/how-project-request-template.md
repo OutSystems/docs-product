@@ -1,6 +1,6 @@
 ---
 tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow; template; new-initiative-request
-summary: Learn how to create a New Initiative Request app using a Workflow Builder template.
+summary: Learn how to create apps using the Project Request template in OutSystems 11 (O11).
 guid: 3571926d-eafe-4ced-a42f-9be2230a0639
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

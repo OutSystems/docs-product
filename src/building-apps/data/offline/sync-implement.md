@@ -1,5 +1,5 @@
 ---
-summary: An overview of the steps for implementing the logic for client and server data exchange and the ways to tap into the sync framework.
+summary: Explore how OutSystems 11 (O11) facilitates offline data synchronization in mobile apps using a structured framework.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: 8680eeb4-f6ec-4c12-ae1d-1b228ed5de5b

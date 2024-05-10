@@ -1,5 +1,5 @@
 ---
-summary: OutSystems permission model allows you to limit the creation of new applications in an environment to some users, such as IT architects.
+summary: Learn how OutSystems 11 (O11) manages application creation permissions, allowing architects to create applications while restricting junior developers.
 locale: en-us
 guid: f5ba93ec-ca75-43eb-a9ab-e0e83596927d
 app_type: traditional web apps, mobile apps, reactive web apps

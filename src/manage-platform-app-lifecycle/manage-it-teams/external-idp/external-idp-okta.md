@@ -1,5 +1,5 @@
 ---
-summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
+summary: This guide details configuring Okta authentication for OutSystems 11 (O11) applications and development tools.
 tags:
 locale: en-us
 guid: 5F1E1CC1-A4E7-497F-A176-7A8671CC5D8B

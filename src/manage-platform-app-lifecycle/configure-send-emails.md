@@ -1,5 +1,5 @@
 ---
-summary: How to configure SMTP in OutSystems.
+summary: Explore how to configure SMTP for email functionality in OutSystems 11 (O11).
 tags: support-Installation_Configuration
 locale: en-us
 guid: 85879015-1e65-424a-85cb-3405be3dafe9

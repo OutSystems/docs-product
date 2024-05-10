@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 allows you to store log data in a log database separate from the application database, reducing the impact that logging can have on running applications.
+summary: OutSystems 11 (O11) enables the separation of log data into a distinct database, enhancing application performance and maintenance.
 tags: article-page; support-Installation_Configuration; version-11
 locale: en-us
 guid: 1e5deb19-1e3e-4f3d-8036-ec5f4ade1a5c

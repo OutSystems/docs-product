@@ -1,5 +1,5 @@
 ---
-summary: How to configure Okta end user authentication for your applications.
+summary: Learn how to configure Okta authentication for end users in OutSystems 11 (O11) applications, including setup in both the Users app and Okta portal.
 tags: runtime-traditionalwebandreactiveweb
 locale: en-us
 guid: acab4979-21b8-47ef-8618-48af0944b3a6

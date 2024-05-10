@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create and use a popup in your application.
+summary: Explore how to effectively implement and manage popups in OutSystems 11 (O11) for both Reactive Web and Mobile as well as Traditional Web applications.
 tags:
 locale: en-us
 guid: f43cd1e1-13d3-4960-b025-4f75f9383ee8

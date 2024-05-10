@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: RangeSliderInterval selects a single value or a range between two values.
+summary: Implement the Range Slider Interval UI pattern in OutSystems 11 (O11) for value selection in web apps.
 locale: en-us
 guid: 94ed04bf-3e70-41d6-9d40-713927750c02
 app_type: traditional web apps

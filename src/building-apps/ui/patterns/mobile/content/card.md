@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Card groups small pieces of information and highlights them on the screen.
+summary: Learn how to use the Card UI Pattern in OutSystems 11 (O11) to effectively group and display information in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: a44ab647-aef4-44ba-b68b-d7a0d421a92c
 app_type: mobile apps, reactive web apps

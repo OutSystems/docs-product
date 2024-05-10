@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore the properties and configurations of a Consumed SOAP Web Service method in OutSystems 11 (O11).
 locale: en-us
 guid: ed14038d-f827-432d-b5c1-523022d5fea9
 app_type: traditional web apps, mobile apps, reactive web apps

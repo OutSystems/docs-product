@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Displays a master list and the details for the currently selected item.
+summary: Implement the Master Detail UI pattern in OutSystems 11 (O11) for item-detail display in apps.
 locale: en-us
 guid: d6387a11-92d7-4075-874c-7f538bb21e32
 app_type: mobile apps, reactive web apps

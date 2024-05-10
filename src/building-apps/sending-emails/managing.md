@@ -1,5 +1,5 @@
 ---
-summary: Use Emails under UI Flows to design and add available widgets. Add data to emails with the input parameters.
+summary: Explore how to design and manage email content in OutSystems 11 (O11) using Service Studio's UI elements and templates.
 tags: support-application_development,
 locale: en-us
 guid: 455d5651-9b51-4de7-8f8a-5888ab78d78e

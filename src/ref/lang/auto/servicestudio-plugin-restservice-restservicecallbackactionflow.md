@@ -4,7 +4,7 @@ guid: 253e4815-ffcb-4be1-b218-d45d50d3fcea
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: 
+summary: Learn how to preprocess requests and customize responses in OutSystems 11 (O11) using REST API Callback with OnRequest and OnResponse action flows.
 ---
 
 # REST API Callback

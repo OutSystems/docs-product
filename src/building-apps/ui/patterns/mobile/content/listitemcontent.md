@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: List Item Content is used to layout content such as icons, text, and actions inside a list in a readable way.
+summary: Learn how to organize content effectively in mobile and reactive web apps using the List Item Content UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 1c561d9b-7797-4365-b605-9c56261bfe04
 app_type: mobile apps, reactive web apps

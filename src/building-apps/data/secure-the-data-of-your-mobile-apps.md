@@ -1,5 +1,5 @@
 ---
-summary: Set of best practices and solutions for securing data in your mobile apps built with OutSystems.
+summary: Explore best practices for securing mobile app data with OutSystems 11 (O11), focusing on data storage and encryption methods.
 tags: runtime-mobile; support-Security; support-Security-featured
 locale: en-us
 guid: 5b81d4aa-2da0-4e88-9d14-c17a753a79fa

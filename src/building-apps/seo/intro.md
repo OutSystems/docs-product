@@ -1,5 +1,5 @@
 ---
-summary: Search engine optimization (SEO) is the process of improving a website’s content and technical configuration to increase its ranking in search engine results pages (SERPs).
+summary: OutSystems 11 (O11) enhances app visibility and user experience through SEO, with considerations for performance during SEO rules synchronization.
 tags: runtime-traditionalweb
 locale: en-us
 guid: C07BCA11-7DB2-49FD-B01B-97EBFBDCF36F

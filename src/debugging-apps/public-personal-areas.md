@@ -1,5 +1,5 @@
 ---
-summary: Learn more about the two areas where modules can be executed and debugged.
+summary: OutSystems 11 (O11) facilitates module execution and debugging in both Public and Personal Areas for enhanced development control.
 locale: en-us
 guid: 4c1e3298-79aa-4d28-83d1-36c9b4b27cd7
 app_type: traditional web apps, mobile apps, reactive web apps

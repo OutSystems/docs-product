@@ -1,5 +1,5 @@
 ---
-summary: Learn the several components that are part of OutSystems, and how to set up OutSystems on the cloud or as self-managed.
+summary: Explore the setup and components of OutSystems 11 (O11) for cloud and self-managed infrastructures.
 locale: en-us
 guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 app_type: traditional web apps, mobile apps, reactive web apps

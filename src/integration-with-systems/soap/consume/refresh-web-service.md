@@ -1,5 +1,5 @@
 ---
-summary: Refresh the Web Service to get the latest changes in a consumed SOAP Web Service or to modify the list of consumed methods in Service Studio.
+summary: OutSystems 11 (O11) provides a method to refresh SOAP Web Services in Service Studio by updating the consumed methods and services.
 tags: support-Integrations_Extensions
 locale: en-us
 guid: 68e18433-b490-4ba2-9269-0261f6b656fd

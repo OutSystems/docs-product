@@ -1,5 +1,5 @@
 ---
-summary: Use an aggregate with grouped columns to obtain only the distinct values of entity attributes.
+summary: OutSystems 11 (O11) enables the extraction of distinct values from database tables by using aggregates with grouped columns.
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 4ceecc67-9976-48c7-bcdb-fa895a141d81

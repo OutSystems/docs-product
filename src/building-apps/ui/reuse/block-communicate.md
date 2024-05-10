@@ -1,5 +1,5 @@
 ---
-summary: Blocks use events to communicate changes to the parent screen/block or to another block.
+summary: Explore how to pass data between blocks in OutSystems 11 (O11) to update UI components dynamically.
 tags:
 locale: en-us
 guid: 77d2313f-f484-4581-825e-c198e4756a11

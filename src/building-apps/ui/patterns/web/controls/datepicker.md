@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Date Picker allows the end user to select a single or a range of dates using a calendar.
+summary: Learn how to implement the Date Picker UI Pattern in OutSystems 11 (O11) for selecting dates within Traditional Web Apps.
 locale: en-us
 guid: 0eaaa700-8f98-4d1e-b478-5df2d45101ff
 app_type: traditional web apps

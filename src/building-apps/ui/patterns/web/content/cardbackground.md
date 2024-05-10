@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Card Background groups short pieces of information and highlights them on the screen while providing additional relevance by using a background image.
+summary: Learn to enhance Traditional Web Apps using the Card Background UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 516d476b-42fc-4ed1-a26c-22b941906121
 app_type: traditional web apps

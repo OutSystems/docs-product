@@ -1,5 +1,5 @@
 ---
-summary: Use the built-in feedback feature to let your users send feedback about an app directly from the app.
+summary: Explore how OutSystems 11 (O11) enhances app development with integrated user feedback and third-party tool compatibility.
 tags: support-Application_Lifecycle; support-application_development; support-Integrations_Extensions; support-Application_Lifecycle-overview
 locale: en-us
 guid: bbd958b1-b38f-4ac1-9ea7-7a48be8d65ac

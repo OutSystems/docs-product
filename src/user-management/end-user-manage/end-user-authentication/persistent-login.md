@@ -1,5 +1,5 @@
 ---
-summary: Learn more about persistent login, to enable end users not having to log in every time after their first successful login.
+summary: Learn how to implement persistent login in OutSystems 11 (O11) to maintain user sessions across devices without repeated logins.
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 36803dc8-3459-4e8b-957e-3b3519453e58

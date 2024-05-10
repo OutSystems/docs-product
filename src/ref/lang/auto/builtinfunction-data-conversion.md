@@ -1,4 +1,5 @@
 ---
+summary: Explore data conversion functions in OutSystems 11 (O11) for various data types including Boolean, Integer, Decimal, Date, and Text.
 locale: en-us
 guid: 97603ff0-1f23-42e0-aaad-0e566af8eeec
 app_type: traditional web apps, mobile apps, reactive web apps

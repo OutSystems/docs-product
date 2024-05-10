@@ -1,6 +1,6 @@
 ---
 helpids: 17064
-summary: Reference information on the Text widget for enclosing the text that users type in your screen or block.
+summary: OutSystems 11 (O11) Text Widget properties and usage details for screen and block elements.
 locale: en-us
 guid: 5886405f-8490-4b2c-8eff-06f95ceec41d
 app_type: traditional web apps, mobile apps, reactive web apps

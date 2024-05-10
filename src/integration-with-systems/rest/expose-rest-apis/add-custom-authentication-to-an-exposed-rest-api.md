@@ -1,5 +1,5 @@
 ---
-summary: Improve the security of exposed REST APIs by adding custom authentication logic.
+summary: OutSystems 11 (O11) supports custom authentication for exposed REST APIs through configurable OnAuthentication actions.
 tags: 
 locale: en-us
 guid: 844a1455-677f-4248-a50f-d6cd12bb4531

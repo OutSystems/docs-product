@@ -1,5 +1,5 @@
 ---
-summary: Applications secured with authentication can be subject to brute force attacks that systematically try to guess user passwords. OutSystems provides a built-in protection mechanism that allows taking countermeasures against these attacks.
+summary: OutSystems 11 (O11) features integrated protection against brute force attacks, blocking suspicious user and IP activity.
 tags: support-Security-overview
 locale: en-us
 guid: 12783fed-7ac1-41f3-8d46-544892ff8b58

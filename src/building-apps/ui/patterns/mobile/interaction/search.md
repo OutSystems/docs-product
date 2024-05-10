@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Search allows the user to find pieces of content without the use of navigation.
+summary: Learn how to implement the Search UI Pattern in OutSystems 11 (O11) to enhance user experience by allowing content searches without navigation knowledge.
 locale: en-us
 guid: 583538cf-ffe1-4c39-9fe5-60667fd05f26
 app_type: mobile apps, reactive web apps

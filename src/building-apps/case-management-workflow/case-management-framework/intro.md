@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: The Case Management framework accelerates the creation of custom-fit business process and case management apps with OutSystems.
+summary: Explore the Case Management framework in OutSystems 11 (O11) for enhanced business process solutions and operational efficiency.
 guid: 46c46161-b83a-491d-89a2-0bff10c4e5f6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

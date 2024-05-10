@@ -1,5 +1,5 @@
 ---
-summary: Develop a progressive web app (PWA) by creating a mobile app and toggling on the option to distribute the app as PWA. Try your app in Android and iOS.
+summary: Learn how to distribute your mobile app as a progressive web app (PWA) using OutSystems 11 (O11) for a seamless, native-like experience across platforms.
 tags: support-application_development, article-page
 locale: en-us
 guid: 92faa93c-8b74-4d6d-9914-229c3fa33813

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Section separates content into groups, easing visual organization.
+summary: Explore how to effectively use the Section UI Pattern in OutSystems 11 (O11) to organize content in Traditional Web Apps.
 locale: en-us
 guid: 838dea96-eace-422c-8430-3a86522d2449
 app_type: traditional web apps

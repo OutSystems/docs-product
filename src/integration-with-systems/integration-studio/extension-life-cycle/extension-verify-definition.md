@@ -4,7 +4,7 @@ guid: 6d5862f0-19e2-409e-a555-d4ab04d1a164
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3387%3A2058&mode=design&t=187UAgmZTPxcY0ZG-1
-summary: The article explains how to check an extension's validity by using the Verify the Extension Definition operation
+summary: Learn how to ensure your extension is error-free using the Verify the Extension Definition operation in OutSystems 11 (O11).
 ---
 # Verify the Extension Definition
 

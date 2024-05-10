@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Progress Bar displays the progress of a task by incrementing values in a bar.
+summary: Explore how to implement and customize the Progress Bar in OutSystems 11 (O11) for Traditional Web Apps to visually represent task completion.
 locale: en-us
 guid: 2a589d5e-0cd8-4dab-b9fa-bc7d12cacf23
 app_type: traditional web apps

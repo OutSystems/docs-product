@@ -1,4 +1,5 @@
 ---
+summary: Learn how to implement and manage decision flows in OutSystems 11 (O11) using the Decision process activity for effective process flow design.
 locale: en-us
 guid: 87b4ecb6-b6c3-4c7b-b2ab-603bd95f36e2
 app_type: traditional web apps, mobile apps, reactive web apps

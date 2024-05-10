@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create multilingual applications with OutSystems.
+summary: OutSystems 11 (O11) supports translating the UI of Traditional Web Apps into multiple languages using built-in localization mechanisms.
 tags: support-application_development; runtime-traditionalweb;
 locale: en-us
 guid: 63d6ab36-1403-4f8f-9ba8-ee4450833e39

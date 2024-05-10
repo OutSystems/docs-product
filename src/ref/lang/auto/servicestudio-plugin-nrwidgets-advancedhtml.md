@@ -1,6 +1,6 @@
 ---
 helpids: 30048
-summary: Reference information on the HTML Element widget for adding a custom HTML element to the screen.
+summary: Explore custom HTML element configuration in OutSystems 11 (O11) for enhanced web and mobile app development.
 locale: en-us
 guid: b9f2d2f5-39f6-4709-936c-7518ac9d960a
 app_type: mobile apps, reactive web apps

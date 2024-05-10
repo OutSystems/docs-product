@@ -1,5 +1,5 @@
 ---
-summary: The Firebase Cloud Messaging plugin for OutSystems enables sending of both normal and silent notifications to mobile app users, with support for custom actions, sounds, and back-end notification service setup
+summary: Explore the integration and management of notifications in OutSystems 11 using the Firebase Cloud Messaging plugin with server actions.
 locale: en-us
 guid: a941e1f8-94f8-400c-8e44-fa969cce59d8
 app_type: mobile apps

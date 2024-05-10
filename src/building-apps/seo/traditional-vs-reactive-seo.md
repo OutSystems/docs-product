@@ -1,5 +1,5 @@
 ---
-summary: The SEO behavior between Reactive and Traditional Web apps is broadly similar, with the exception of module aliases which are not supported for Reactive web apps but can be achieved through site rules instead.
+summary: Explore SEO configurations for OutSystems 11 (O11) Reactive and Traditional Web apps, detailing differences in module aliases and page rules setups.
 tags: runtime-traditionalweb
 locale: en-us
 guid: 74EB0BCA-31AD-4EA8-8892-6FA2A2011664

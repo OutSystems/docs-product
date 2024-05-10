@@ -1,5 +1,5 @@
 ---
-summary: Fetch data in your apps using human language.
+summary: Explore how OutSystems 11 (O11) enables fetching data through natural language queries in Service Studio.
 locale: en-us
 guid: A2F9928D-5F44-4DA0-B567-EDC9191E4A7B
 app_type: traditional web apps, mobile apps, reactive web apps

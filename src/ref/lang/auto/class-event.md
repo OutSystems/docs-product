@@ -4,7 +4,7 @@ guid: 2e8ca3cb-cfae-41a3-bbd0-c6b14ca14258
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: An event in OutSystems allows a block to notify its parent element of an occurrence, with the option to pass input parameters and a mandatory setting
+summary: OutSystems 11 (O11) enables block events to interact with parent elements by triggering notifications and handling data through input parameters.
 ---
 # Event
 

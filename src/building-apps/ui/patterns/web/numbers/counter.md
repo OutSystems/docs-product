@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Counter shows the total number of occurrences of several values regarding a single topic.
+summary: OutSystems 11 (O11) features a Counter UI Pattern for displaying dynamic numerical notifications in Traditional Web Apps.
 locale: en-us
 guid: 91058e55-ccbb-494d-bc74-9bdeab106742
 app_type: traditional web apps

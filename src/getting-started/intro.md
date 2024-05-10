@@ -1,5 +1,5 @@
 ---
-summary: This is a quick intro to get you started with OutSystems development.  
+summary: Explore the essentials of building web and mobile apps with OutSystems 11 (O11), including setup, development, and deployment tools.
 locale: en-us
 guid: 036994b9-0656-4dc8-8b94-b0c4e9d71a1f
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags:
-summary: T
+summary: Learn how to create and customize a Bar Chart with a legend in OutSystems 11 (O11) using fixed or variable data.
 locale: en-us
 guid: 63FB9BE0-A9BA-4173-8BF2-8049B69DCC6B
 app_type: traditional web apps, mobile apps, reactive web apps

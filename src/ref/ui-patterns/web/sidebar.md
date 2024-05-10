@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Use Cases for the Sidebar UI Pattern.
+summary: Explore the sidebar UI pattern layout and CSS classes for traditional web apps in OutSystems 11 (O11).
 locale: en-us
 guid: 084bb303-c011-405d-adec-710e9227c8ae
 app_type: traditional web apps

@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different Required Property Value TrueChange errors
+summary: OutSystems 11 (O11) addresses common widget property errors by providing specific guidance on setting required values in the development environment.
 tags:
 locale: en-us
 guid: 104aade7-8bf2-4e15-9871-f05e91e008f6

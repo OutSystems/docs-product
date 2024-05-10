@@ -1,5 +1,5 @@
 ---
-summary: Guide to submitting apps to the App Store with the required privacy manifest.
+summary: Explore how OutSystems 11 (O11) integrates privacy manifest files for Apple App Store submissions, detailing API usage and compliance requirements.
 locale: en-us
 guid: f9c0555e-6be6-4e50-be36-2111716aa879
 app_type: mobile apps

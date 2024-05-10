@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) handles Oracle database reserved words and recommended attribute naming solutions.
 locale: en-us
 guid: 94bc7cd0-af9e-41fe-9b49-cd95a1aa4b13
 app_type: traditional web apps, mobile apps, reactive web apps

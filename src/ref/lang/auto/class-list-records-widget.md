@@ -5,7 +5,7 @@ guid: bd15fc86-95cb-4875-a4e6-dd2e4e0e0faf
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:339
-summary: The List Records widget in Traditional Web Apps allows for displaying records in a list with customizable separators and data supplied via the Preparation Action
+summary: Learn how to use the List Records widget in OutSystems 11 (O11) to display records in a list layout for Traditional Web Apps.
 ---
 # List Records Widget
 

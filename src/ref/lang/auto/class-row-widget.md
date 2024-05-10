@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) documentation details the properties and runtime attributes of the Row Widget in web applications.
 locale: en-us
 guid: 1d16cf24-1073-46b4-9564-b4f35396b46c
 app_type: traditional web apps, mobile apps, reactive web apps

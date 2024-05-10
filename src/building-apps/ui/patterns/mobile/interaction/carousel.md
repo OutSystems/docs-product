@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Displays multiple items in a horizontal slide.
+summary: Explore the Carousel UI Pattern in OutSystems 11 (O11) for displaying multiple items in a horizontal slide using navigation controls.
 locale: en-us
 guid: a2167543-6fcc-4c6e-9ff5-ba4426722ed5
 app_type: mobile apps, reactive web apps

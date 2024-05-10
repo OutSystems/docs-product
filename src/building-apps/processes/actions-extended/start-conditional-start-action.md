@@ -1,4 +1,5 @@
 ---
+summary: Explore how to initiate a Conditional Start in OutSystems 11 (O11) using the Start Conditional Start Action with specific input parameters.
 locale: en-us
 guid: 143a03ee-a51c-4c5b-b28c-45266ccd9926
 app_type: traditional web apps, mobile apps, reactive web apps

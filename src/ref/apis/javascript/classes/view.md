@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb
-summary: Provides methods to deal with active view components and their state.
+summary: Explore methods for managing view components and states in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 5d68d556-eca2-4dad-a0e5-ba6decc5f22b
 app_type: mobile apps, reactive web apps

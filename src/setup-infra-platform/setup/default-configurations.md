@@ -1,5 +1,5 @@
 ---
-summary: To install and run OutSystems, you need permissions to change files in the file system, run services, listen to specific ports, and make changes to the database.
+summary: Explore server and database configurations essential for deploying OutSystems 11 (O11) in various environments.
 locale: en-us
 guid: e7fb04c6-9cb6-48d9-a4e7-8d4ad3702613
 app_type: traditional web apps, mobile apps, reactive web apps

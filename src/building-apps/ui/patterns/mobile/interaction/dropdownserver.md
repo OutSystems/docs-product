@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: The Dropdown Server Side UI Pattern offers a choice of available options that the user can search. This version of the dropdown block has no logic functionality, leaving the logic to be fully implemented by the developers.
+summary: Explore the customizable Dropdown Server Side UI pattern in OutSystems 11 (O11) for managing complex dropdown use cases.
 locale: en-us
 guid: 8B9A073C-74E8-4019-84DE-C686AAFAC59A
 app_type: mobile apps, reactive web apps

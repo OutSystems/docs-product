@@ -1,6 +1,6 @@
 ---
 helpids: 30043
-summary: Reference information on the Image widget for displaying an image on the screen from a defined source.
+summary: Learn how to display and manage images in OutSystems 11 (O11) with options for local, external, and binary data sources.
 locale: en-us
 guid: 5d499b46-63fa-4200-9a63-19c5bc007744
 app_type: traditional web apps, mobile apps, reactive web apps

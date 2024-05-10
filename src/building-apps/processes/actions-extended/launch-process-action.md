@@ -1,4 +1,5 @@
 ---
+summary: Learn how to use the Launch Process Action in OutSystems 11 (O11) to execute processes asynchronously and manage input and output parameters.
 locale: en-us
 guid: b710c30e-e103-430c-8646-2488f414a422
 app_type: traditional web apps, mobile apps, reactive web apps

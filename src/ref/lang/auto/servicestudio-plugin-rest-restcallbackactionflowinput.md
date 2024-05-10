@@ -1,4 +1,5 @@
 ---
+summary: Explore the properties of input parameters in REST API Callback actions in OutSystems 11 (O11).
 helpids: 30053
 locale: en-us
 guid: acb357eb-4100-486a-a9ba-e610ce1b52b2

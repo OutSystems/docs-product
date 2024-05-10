@@ -1,5 +1,5 @@
 ---
-summary: Customize the information sent in responses when exposing a REST API.
+summary: Learn how to customize REST API responses in OutSystems 11 (O11) by setting the On Response property and using the OnResponse callback.
 tags: 
 locale: en-us
 guid: e8e058c7-435f-4c70-8073-afd4ac5b451a

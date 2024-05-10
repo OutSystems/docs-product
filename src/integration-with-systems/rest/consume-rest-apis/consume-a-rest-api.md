@@ -1,5 +1,5 @@
 ---
-summary: How to consume a REST API or a single API method and use it in your OutSystems applications.
+summary: Learn to consume REST API methods in OutSystems 11 (O11) using OpenAPI specifications or individual methods in Service Studio.
 tags: support-Integrations_Extensions-featured
 locale: en-us
 guid: b7ea1336-4e6b-49a8-8a61-fd56c2ae5f57

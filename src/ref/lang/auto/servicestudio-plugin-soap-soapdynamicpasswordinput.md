@@ -1,4 +1,5 @@
 ---
+summary: Learn how to define a password for SOAP Web Service method authentication in OutSystems 11 (O11) using the Password Input Parameter.
 locale: en-us
 guid: 457bae02-6d3f-4670-8876-8f882abb258f
 app_type: traditional web apps, mobile apps, reactive web apps

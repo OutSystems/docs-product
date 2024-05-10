@@ -1,4 +1,5 @@
 ---
+summary: Learn how to modify SOAP connections, requests, and responses using extension methods in OutSystems 11 (O11) with the SOAP Extensibility API.
 helpids: 30174
 locale: en-us
 guid: c0e4920c-99f4-41e1-995c-85a9ed120053

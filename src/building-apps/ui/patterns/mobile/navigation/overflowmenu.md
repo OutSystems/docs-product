@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: The Pagination UI Pattern helps users find a specific item on long listings.
+summary: Learn how to implement the Overflow Menu in OutSystems 11 (O11) to manage UI space constraints effectively.
 locale: en-us
 guid: 82d11a7a-6ee9-4f81-a7a6-36a8950f0de3
 app_type: mobile apps, reactive web apps

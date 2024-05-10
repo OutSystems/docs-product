@@ -1,5 +1,5 @@
 ---
-summary: The Embedded Process Automation (EPA) shows automatically a floating taskbox in the browser, with all pending activities.
+summary: Explore the EPA Taskbox API functionalities in OutSystems 11 (O11) for managing user activities in Traditional Web Apps.
 tags: runtime-traditionalweb
 locale: en-us
 guid: 24b83310-17ec-4eea-a688-89da29816145

@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different Internal TrueChange errors.
+summary: Explore troubleshooting steps for resolving internal errors in OutSystems 11 (O11) by submitting feedback or contacting support.
 tags:
 locale: en-us
 guid: b206df3a-c286-4468-aa80-a70e9af8b0f7

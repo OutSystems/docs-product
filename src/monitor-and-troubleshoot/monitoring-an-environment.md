@@ -1,5 +1,5 @@
 ---
-summary: You can view the logs and other useful information to monitor your OutSystems applications and the environment's status in the Monitoring area of the Service Center console.
+summary: Explore environment monitoring and log management features in OutSystems 11 (O11) through the Service Center console.
 tags: support-Integrations_Extensions; support-monitoring; support-monitoring-overview
 locale: en-us
 guid: 70ae67ba-01d3-4434-aa0c-c4dd0a18a337

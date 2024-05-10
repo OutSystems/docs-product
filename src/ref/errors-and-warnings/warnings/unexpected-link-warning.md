@@ -1,4 +1,5 @@
 ---
+summary: Learn how to correctly configure link properties in OutSystems 11 (O11) to ensure proper navigation and validation.
 locale: en-us
 guid: 509dbbc9-652c-44a5-b276-4df9cf8992fd
 app_type: traditional web apps, mobile apps, reactive web apps

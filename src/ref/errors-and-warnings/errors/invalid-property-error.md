@@ -1,4 +1,5 @@
 ---
+summary: Explore solutions for the 'Invalid Property' error in OutSystems 11 (O11) when a property is defined multiple times for the same element.
 locale: en-us
 guid: b13b8d21-4c7b-4c3d-a928-00112c210227
 app_type: traditional web apps, mobile apps, reactive web apps

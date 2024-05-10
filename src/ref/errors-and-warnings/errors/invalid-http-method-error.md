@@ -1,4 +1,5 @@
 ---
+summary: Learn how to resolve the 'Invalid HTTP Method' error in OutSystems 11 (O11) when using GET methods with body parameters.
 locale: en-us
 guid: 2bcfc8f0-9630-4a74-a218-fcd00359bdb2
 app_type: traditional web apps, mobile apps, reactive web apps

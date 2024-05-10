@@ -1,4 +1,5 @@
 ---
+summary: Explore the features and properties of the Input Widget in OutSystems 11 (O11) for Traditional Web Apps.
 helpids: 4024
 locale: en-us
 guid: 194c0eca-3e99-4ee0-9ffd-d153e14b2225

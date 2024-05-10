@@ -1,4 +1,5 @@
 ---
+summary: Explore common structure errors and solutions in OutSystems 11 (O11), including attribute requirements and recursive data type issues.
 locale: en-us
 guid: 998774b6-35c3-4c5b-9284-590d998a302f
 app_type: traditional web apps, mobile apps, reactive web apps

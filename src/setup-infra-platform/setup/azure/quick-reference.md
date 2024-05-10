@@ -1,6 +1,6 @@
 ---
 tags: support-Installation_Configuration; support-installation;
-summary: More information about Azure Resources such as VMs, SQL databases, storage, virtual machine scale sets.
+summary: OutSystems 11 (O11) deployment on Microsoft Azure involves configuring virtual machines, SQL databases, and application gateways.
 locale: en-us
 guid: 88d66b58-baee-4c61-9d03-b21e5b4aeac9
 app_type: traditional web apps, mobile apps, reactive web apps

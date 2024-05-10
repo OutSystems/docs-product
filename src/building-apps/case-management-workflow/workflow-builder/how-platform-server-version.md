@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: Learn how to check the version of Platform Server of an Environment.
+summary: Learn how to verify the Platform Server version installed in an OutSystems 11 (O11) environment using the Service Center console.
 guid: 067af21a-bc2b-43ee-9888-2f56c354fcc0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

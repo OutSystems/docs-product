@@ -1,6 +1,6 @@
 ---
 helpids: 30045
-summary: Reference information on the Upload widget for allowing the users to browse and select a local file to upload into the application.
+summary: OutSystems 11 (O11) features an Upload widget that supports file uploads up to 250MB, with drag-and-drop functionality limited by browser compatibility.
 locale: en-us
 guid: 2abe40f3-97c8-4405-b758-3baa7e638b72
 app_type: traditional web apps, mobile apps, reactive web apps

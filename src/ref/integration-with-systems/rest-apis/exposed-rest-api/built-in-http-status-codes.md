@@ -1,4 +1,5 @@
 ---
+summary: Learn about the built-in HTTP status codes used in OutSystems 11 (O11) for handling REST API methods.
 tags: 
 locale: en-us
 guid: 9ad139dd-e6af-4245-8dba-9185b2317192

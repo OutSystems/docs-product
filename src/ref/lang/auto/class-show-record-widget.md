@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features a Show Record widget for displaying single records in Traditional Web Apps with tabular layout constraints.
 helpids: 4022
 locale: en-us
 guid: d570d3e9-60ad-40d8-a87b-df968ff67d2a

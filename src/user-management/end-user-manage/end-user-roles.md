@@ -1,5 +1,5 @@
 ---
-summary: Learn about granting roles to end users and revoking them in the Users application.
+summary: Explore how to manage end user roles in OutSystems 11 (O11) through granting and revoking access in the Users application.
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 0aa8f19f-5429-4b1d-bd3e-48575eb4ffc7

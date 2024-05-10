@@ -1,4 +1,5 @@
 ---
+summary: Explore common 'Invalid Image' error solutions in OutSystems 11 (O11) related to image widget properties and data types.
 locale: en-us
 guid: 286230b7-c011-42bd-9923-7b3ef0a4abbc
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,10 +1,10 @@
 ---
-summary: Learn how to efficiently use Prerender.io and cut costs through smart caching and setup.
+summary: Learn how to optimize Prerender.io usage and configuration with OutSystems 11 (O11) to minimize costs and improve SEO.
 tags:
 locale: en-us
 guid: 4E680AB9-9BF6-41B2-9537-C3325FF673F5
 app_type: mobile apps, reactive web apps
-platform-version: o11, ODC
+platform-version: o11
 figma:
 ---
 # Best practices - Prerender.io usage and configuration

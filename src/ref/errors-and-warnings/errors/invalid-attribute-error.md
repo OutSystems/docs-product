@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) provides solutions for handling 'Invalid Attribute' errors in application development.
 locale: en-us
 guid: aa586167-cd4f-46aa-bd1b-1ddb48969923
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: To edit or create a theme you need to know the basics about the theme structure. This document shows how themes integrate into the platform through predefined blocks and placeholders.
+summary: OutSystems 11 (O11) offers a flexible theme management system that allows customization and optimization of app visuals through its UI framework.
 tags: support-application_development; support-Front_end_Development
 locale: en-us
 guid: fa7dc8c3-aea1-4ccb-a2d6-219772a1a7f2

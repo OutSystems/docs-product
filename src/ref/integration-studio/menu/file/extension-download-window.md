@@ -4,7 +4,7 @@ guid: 72128f41-26f1-43f5-b5be-fd06451c1624
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Download from Server window in Integration Studio facilitates downloading the latest version of an extension, displaying details such as name, version, upload date, user, and notes
+summary: OutSystems 11 (O11) features a Download from Server window in Integration Studio, facilitating the download of the latest extension versions.
 ---
 # Download from Server Window
 

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced uses cases for the Columns UI Pattern.
+summary: OutSystems 11 (O11) provides a detailed guide on CSS selectors for various column configurations in Traditional Web Apps.
 locale: en-us
 guid: 6ce39ef3-220e-4cc8-ac81-a96b73b8d259
 app_type: traditional web apps

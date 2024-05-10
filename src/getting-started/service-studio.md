@@ -1,5 +1,5 @@
 ---
-summary: Get to know the main areas of the Service Studio interface.
+summary: Explore the capabilities of OutSystems 11 (O11) Service Studio, a low-code visual development environment for creating and managing applications.
 tags:
 locale: en-us
 guid: 23af05a7-9a06-4b73-ad98-3a9edee4ca0d

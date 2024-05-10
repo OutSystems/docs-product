@@ -1,5 +1,5 @@
 ---
-summary: OutSystems allows your IT users to authenticate using the same account they use in other corporate systems.
+summary: OutSystems 11 (O11) supports external authentication providers for IT users, allowing integration with systems like Active Directory and LDAP.
 tags: support-Security-overview
 locale: en-us
 guid: f8b008aa-ae75-470a-adc3-5863bf6be8e6
@@ -69,7 +69,7 @@ To choose an external authentication provider, do the following:
 
 1. From the list on the left, choose the desired authentication provider.
 
-    ![](images/use-an-external-authentication-provider-1.png)
+    ![Screenshot showing the selection of an Active Directory authentication provider in the OutSystems infrastructure management console.](images/use-an-external-authentication-provider-1.png "Selecting an Authentication Provider")
 
     In the example above, we chose the AD authentication provider (`ADAuthProvider`).
 
@@ -86,7 +86,7 @@ To start the configuration:
 
 1. Click in the **Configuring** link. This will open the configuration screen of the authentication provider in the infrastructure management console environment. 
 
-    ![](images/use-an-external-authentication-provider-2.png)
+    ![Screenshot of the Active Directory authentication configuration page with the default domain set to OUTSYSTEMS.](images/use-an-external-authentication-provider-2.png "Configuring Active Directory Authentication")
 
     In this example, the Active Directory domain was set to `OUTSYSTEMS`.
 
@@ -101,7 +101,7 @@ After all necessary configuration settings have been defined and before propagat
 
 1. Click the **Test in LifeTime** link. This tests if the plugin is properly configured in the infrastructure management console environment and that it can successfully authenticate IT users.
 
-    ![](images/use-an-external-authentication-provider-3.png)
+    ![Screenshot indicating the successful test of the AD authentication provider in the LifeTime environment of OutSystems.](images/use-an-external-authentication-provider-3.png "Testing Authentication Plugin in LifeTime Environment")
 
 1. If the test ran successfully, click the **Propagate** link to propagate the configuration settings to all the environments of your infrastructure.
 
@@ -124,7 +124,7 @@ After all necessary configuration settings have been defined and before propagat
 
 1. Test the plugin in all the environments of your infrastructure by clicking on the **Test it in all environments** link.
 
-    ![](images/use-an-external-authentication-provider-4.png)
+    ![Screenshot showing the successful test results of the AD authentication provider across different environments in OutSystems.](images/use-an-external-authentication-provider-4.png "Authentication Plugin Test Results")
 
 1. If all the tests succeeded, apply the configurations to all environments by clicking in the **Apply configurations** link.
 

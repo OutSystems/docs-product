@@ -1,6 +1,6 @@
 ---
 helpids: 30027
-summary: Reference information on the Container widget for grouping widgets and applying styles to them on a screen.
+summary: OutSystems 11 (O11) features a Container widget that simplifies screen layout organization through drag-and-drop functionality.
 locale: en-us
 guid: 71a7768d-6ce0-4e61-96b6-7bc5acaea194
 app_type: traditional web apps, mobile apps, reactive web apps

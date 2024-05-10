@@ -1,5 +1,5 @@
 ---
-summary: Display the same content on several screens by developing reusable Blocks.
+summary: Explore how to create and reuse UI Blocks across different applications in OutSystems 11 (O11) to streamline user interface development.
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 6cd79d30-4d78-4fd5-8707-b4af2cbd5078

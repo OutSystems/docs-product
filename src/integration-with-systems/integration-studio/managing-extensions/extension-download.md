@@ -4,7 +4,7 @@ guid: 2bb10995-f2e7-48a6-a6d5-2fbb248f09e6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The article explains how to download an extension from a Platform Server, including steps to select the version and check download permissions
+summary: Explore how to download and manage extensions in OutSystems 11 (O11) using the Platform Server and Integration Studio.
 ---
 # Download an Extension
 

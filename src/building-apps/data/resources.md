@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use Resources to display a PDF document or to play a video file in a screen.
+summary: OutSystems 11 (O11) allows users to manage and deploy various types of resources within their applications, enhancing functionality and user interaction.
 tags: support-application_development
 locale: en-us
 guid: a27b2277-218f-4439-8ea7-6884e0d1eaa3

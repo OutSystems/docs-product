@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) deprecates structures used in SOAP web service methods, detailing properties like name, description, and namespace.
 helpids: 15007, 30102
 locale: en-us
 guid: 459c47a3-0744-4ec6-85b0-af67b81d16d6

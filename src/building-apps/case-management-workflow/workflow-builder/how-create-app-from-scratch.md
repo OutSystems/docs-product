@@ -1,6 +1,6 @@
 ---
 tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow
-summary: Learn how to create an app from scratch in Workflow Builder.
+summary: Explore the comprehensive guide on building a Workflow Builder app from scratch using OutSystems 11 (O11).
 guid: 23eb1fab-8030-4857-ab70-2e96e1735bc6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

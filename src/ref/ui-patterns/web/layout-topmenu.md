@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Layout Top Menu web block.
+summary: Explore the responsive design and customization options of the Layout Top Menu in OutSystems 11 (O11).
 locale: en-us
 guid: 32bd92fb-5665-45a8-ac9c-69d26270cb75
 app_type: traditional web apps

@@ -1,4 +1,5 @@
 ---
+summary: Explore common licensing errors and solutions in OutSystems 11 (O11) when server licenses are missing, invalid, expired, or resource limits are exceeded.
 locale: en-us
 guid: de5bd7ca-83d5-45be-b0b3-ee9f729a9931
 app_type: traditional web apps, mobile apps, reactive web apps

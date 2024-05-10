@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) JSON Deserialize feature converts JSON strings into various data types with configurable properties.
 helpids: 30004
 locale: en-us
 guid: ed1575d2-e5b5-41a1-be11-e638b406fbb4

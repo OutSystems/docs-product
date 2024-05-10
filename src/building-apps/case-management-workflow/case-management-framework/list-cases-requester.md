@@ -1,6 +1,6 @@
 ---
 tags: Case Management; Case Management framework;
-summary: Learn how to get a list of cases create by the requester logged in to your app.
+summary: Learn how to display a list of cases created by a requester in OutSystems 11 (O11) using data actions and dependencies.
 guid: da294998-4af8-4fb5-acf8-939d4d2d5a06
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

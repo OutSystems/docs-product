@@ -1,4 +1,5 @@
 ---
+summary: Learn how to optimize SQL queries in OutSystems 11 (O11) by replacing complete attribute enumeration with wildcard usage for better maintenance.
 locale: en-us
 guid: d9b03ed2-6a7e-4674-8c03-fec66386a573
 app_type: traditional web apps, mobile apps, reactive web apps

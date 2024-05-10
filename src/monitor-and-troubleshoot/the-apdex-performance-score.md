@@ -1,5 +1,5 @@
 ---
-summary: Learn about the APDEX (Application Performance Index) metric, used by OutSystems to measure the user satisfaction with the performance of your applications.
+summary: Explore how OutSystems 11 (O11) utilizes the APDEX metric to evaluate application performance and user satisfaction.
 tags: support-Integrations_Extensions; support-monitoring;  support-monitoring-featured
 locale: en-us
 guid: 4322a32a-812e-4357-be20-ce1693dd2968

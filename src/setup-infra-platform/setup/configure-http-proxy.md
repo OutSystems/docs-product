@@ -1,5 +1,5 @@
 ---
-summary: Learn how to configure an HTTP proxy server on your local computer to be used by Service Studio.
+summary: This guide details configuring a HTTP proxy server in OutSystems 11 (O11) Service Studio for developers on restricted networks.
 tags: 
 locale: en-us
 guid: b367660c-65e1-45d5-a6c2-c4ea29a9c8ab

@@ -1,5 +1,5 @@
 ---
-summary: UI Flow groups screens into logical units with common settings.
+summary: Learn how to manage and customize UI Flows in OutSystems 11 (O11) for efficient app interface development.
 locale: en-us
 guid: be5be9b1-2021-4aef-919c-4b36b930255d
 app_type: traditional web apps, mobile apps, reactive web apps

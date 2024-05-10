@@ -1,5 +1,5 @@
 ---
-summary: Changing SQL Server database authentication to Windows Authentication or Database Authentication.
+summary: Guide on changing SQL Server database authentication modes in OutSystems 11 (O11) for various installations.
 tags:
 locale: en-us
 guid: 34EF8749-5F32-456F-965D-5FF41037B82C

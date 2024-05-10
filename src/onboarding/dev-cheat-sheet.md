@@ -1,5 +1,5 @@
 ---
-summary: The article provides a cheat sheet for new OutSystems developers on how to perform common tasks within the Service Studio IDE
+summary: Explore essential development tasks in OutSystems 11 (O11) with this developer cheat sheet, covering data structures, screen creation, actions, and more.
 tags:
 locale: en-us
 guid: 055b0d0b-4275-47e8-873a-17e034b6c312

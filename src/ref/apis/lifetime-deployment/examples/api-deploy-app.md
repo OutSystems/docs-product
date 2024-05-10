@@ -1,5 +1,5 @@
 ---
-summary: Learn how to deploy an application using the LifeTime API.
+summary: Learn to deploy applications using the LifeTime API in OutSystems 11 (O11), covering key retrieval to deployment status checks.
 locale: en-us
 guid: e243c532-467c-428e-aa5a-79915621e280
 app_type: traditional web apps, mobile apps, reactive web apps

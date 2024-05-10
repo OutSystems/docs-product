@@ -1,4 +1,5 @@
 ---
+summary: Explore the structure attribute properties for REST API callbacks in OutSystems 11 (O11), detailing element identification and data specifications.
 helpids: 30056
 locale: en-us
 guid: 7338265c-44ce-4afa-acd4-d72324598625

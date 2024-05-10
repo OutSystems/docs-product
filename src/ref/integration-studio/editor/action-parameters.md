@@ -4,7 +4,7 @@ guid: ef146002-08c3-4bb8-8602-0a48cfa16b7d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary: The Action Parameter Editor in Integration Studio allows users to edit, add, remove, and reorder parameters, as well as toggle between input and output types for extension actions
+summary: Explore the functionalities of the Action Parameters Editor in OutSystems 11 (O11), which facilitates the management of action parameters in extensions.
 ---
 # Action Parameters Editor
 

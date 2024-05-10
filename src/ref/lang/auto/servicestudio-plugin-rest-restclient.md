@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) provides a REST API with customizable properties for integration and runtime adjustments.
 helpids: 17200
 locale: en-us
 guid: 750da14a-1a1d-48fd-bea4-735d992e3d48

@@ -1,5 +1,5 @@
 ---
-summary: Navigation patterns allow you to group related content together while helping users move around the app and locate specific features and information easily.
+summary: Explore navigation patterns in OutSystems 11 (O11) for enhancing user experience in Mobile Apps and Reactive Web Apps.
 tags: runtime-mobileandreactiveweb;  
 locale: en-us
 guid: 0ca561f5-af91-4aee-ac5e-1cbd2d6cf5ae

@@ -1,5 +1,5 @@
 ---
-summary: Customize the SOAP Web Service endpoint URL and user credentials per environment in Service Center.
+summary: Configure runtime SOAP Web Service settings in OutSystems 11 (O11) for environment-specific customization.
 locale: en-us
 guid: 8f587c50-8581-49eb-a959-fb72411a00de
 app_type: traditional web apps, mobile apps, reactive web apps

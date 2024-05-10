@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) maps its data types to .NET data types at runtime.
 tags: 
 locale: en-us
 guid: 671a69c4-3fe2-4a6a-9627-2eae9526aece

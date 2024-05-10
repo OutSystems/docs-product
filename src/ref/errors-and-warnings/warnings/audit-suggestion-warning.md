@@ -1,4 +1,5 @@
 ---
+summary: Set 'Log Error' to 'Yes' for 'AllExceptions' in OutSystems 11 (O11) to improve error logging.
 locale: en-us
 guid: daf2fc35-917d-446f-b1a8-3f821f59dda8
 app_type: traditional web apps, mobile apps, reactive web apps

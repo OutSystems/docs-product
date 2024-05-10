@@ -1,9 +1,11 @@
 ---
-summary: This articles guides how you can stream log data to Datadog APM tool.
+summary: Learn how to stream logs from OutSystems 11 (O11) to Datadog by setting up the OpenTelemetry Collector and configuring the log streaming service.
 tags: 
 locale: en-us
 guid: 2812b9bc-ca11-436f-ac4e-2fc596b9dd61
 app_type: traditional web apps, mobile apps, reactive web apps
+figma: 
+platform-version: o11
 ---
 
 # Stream logs to Datadog

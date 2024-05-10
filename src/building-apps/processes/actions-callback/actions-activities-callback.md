@@ -1,4 +1,5 @@
 ---
+summary: Learn how to implement and manage Activity Callback actions in OutSystems 11 (O11) to control process activities based on business rules.
 locale: en-us
 guid: da852258-d018-4628-b2bb-aec5fcc78c0b
 app_type: traditional web apps, mobile apps, reactive web apps

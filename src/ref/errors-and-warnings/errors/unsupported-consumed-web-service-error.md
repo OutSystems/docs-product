@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) encounters an Unsupported Consumed Web Service error in Service Studio when consuming SOAP Web Services with specific WSDL issues.
 locale: en-us
 guid: 03541b11-4b74-423c-8148-e3efaa1d8efd
 app_type: traditional web apps, mobile apps, reactive web apps

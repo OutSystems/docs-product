@@ -1,5 +1,5 @@
 ---
-summary: Learn how to set up a custom SSL domain in OutSystems Cloud by managing SSL certificates and DNS configurations.
+summary: OutSystems 11 (O11) allows users to configure their own SSL domain in the OutSystems Cloud by uploading and assigning their SSL certificate.
 tags:
 locale: en-us
 guid: 75f71e55-19e7-4a6a-bd44-f730385acf52

@@ -108,12 +108,6 @@ When you're retrying a deployment plan the following situations may arise due to
 
 ## Creating and executing a parallel deployment plan
 
-<div class="warning" markdown="1">
-
-This feature is currently available for use and packaging and pricing details may be subject to updates in the future.
-
-</div>
-
 <div class="info" markdown="1">
 
 **Feature availability**

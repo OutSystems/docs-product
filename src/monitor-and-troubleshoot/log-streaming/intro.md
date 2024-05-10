@@ -1,12 +1,11 @@
 ---
-summary: Explore real-time log streaming capabilities in OutSystems 11 (O11) using OpenTelemetry for enhanced application monitoring and performance analysis.
+summary: This article provides an overview of log Streaming, its benefits and use cases, high-level architecture for streaming log data, supported log data, and the supported application performance monitoring tools. 
 tags: 
 locale: en-us
 guid: 75f48471-6193-4149-abf4-29c15e75c1f6
 app_type: traditional web apps, mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3139%3A324&mode=design&t=IIMVc2WTi7UxHv00-1
 
-platform-version: o11
 ---
 
 # Introduction to log streaming
@@ -51,11 +50,13 @@ OutSystems uses [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/sp
 
 2. The log messages are converted to OTLP format and are then processed further.
 
-3. The OTLP messages are then exported in the binary format [Protobuf](https://protobuf.dev/) over HTTP or gRPC, depending on the transport protocol supported by the APM tool. The messages are sent to the APM tools in batches with multiple records every 100 ms and aren't compressed. The size of these messages varies between 1100 bytes and 1700 bytes. If the APM tool is unavailable, the failed batches are retried for up to 48 hours after the first attempt to avoid data loss.
+3. The OTLP messages are then exported in the binary format [Protobuf](https://protobuf.dev/) over HTTP or gRPC, depending on the transport protocol supported by the APM tool. The messages are sent to the APM tools in batches with multiple records every 100 ms and aren't compressed. The size of these messages varies between 1100 bytes and 1700 bytes.
 
 <div class="info" markdown="1">
 
-For APM tools that don't support native ingestion of OTLP log data such as **Datadog**, **Splunk**, you must [set up an OpenTelemetry collector](configure-collector.md).
+* For a scenario of temporary unavailability from the APM tool destination, failed batches are queued and retried for up to 48 hours in order to avoid data loss during this period. Such scenarios may delay the delivery of logs.
+* A batch is dropped in case of HTTP / gRPC Internal error response from the APM tool ingestion.
+* APM tools may implement rules and limits to the ingestion, which are followed by OutSystems Log Streaming when adherent to the OpenTelemetry protocol, but unexpected changes and other restrictive limits may impact the streaming service and prevent data from being ingested in the APM tool.
 
 </div>
 
@@ -84,6 +85,12 @@ OutSystems supports the following APM tools:
 * Dynatrace
 
 Note that any other tool compatible with the OpenTelemetry protocol and OTLP logs format should typically be capable of interpreting the OutSystems logs.
+
+<div class="info" markdown="1">
+
+For APM tools that don't support native ingestion of OTLP log data such as **Datadog**, **Splunk**, you must [set up an OpenTelemetry collector](configure-collector.md).
+
+</div>
 
 ## Supported log data
 

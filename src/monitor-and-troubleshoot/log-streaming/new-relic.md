@@ -25,7 +25,7 @@ To set up the OutSystems log streaming service, using **New Relic** as the desti
 Once you have these values, go to LifeTime and [configure the log streaming service](lifetime-streaming.md). 
 
 <div class="info" markdown="1">
-Note: The streaming follows the limits in New Relic's ingestion API according to their [documentation](https://docs.newrelic.com/docs/data-apis/ingest-apis/event-api/introduction-event-api/#limits/).
+The streaming follows the limits of New Relic's ingestion API. For more information, refer to New Relic's documentation on [Send custom events with our Event API](https://docs.newrelic.com/docs/data-apis/ingest-apis/event-api/introduction-event-api/#limits).   
 </div>
 
 ## Additional resources

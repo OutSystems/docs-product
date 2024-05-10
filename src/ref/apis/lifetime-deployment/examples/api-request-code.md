@@ -9,12 +9,6 @@ figma:
 
 # Get the source code of an application
 
-<div class="warning" markdown="1">
-
-This feature is currently available for use and packaging and pricing details may be subject to updates in the future.
-
-</div>
-
 Highly regulated industries typically have internal organizational security and compliance policies that they must comply with. Frequently, these procedures include employing specific static code analysis tools to test applications security.
 
 The OutSystems platform provides an API that enables you to download the generated code for the current running apps. The source code package returned by the API contains the server-side code and the native code, if it’s a mobile application.

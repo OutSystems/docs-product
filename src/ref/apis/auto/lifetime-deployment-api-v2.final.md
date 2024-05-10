@@ -107,11 +107,11 @@ Scheme
 | [GET /environments/dbconnection/permissionlevels/](#get-environments-dbconnection-permissionlevels) | Returns the permission levels for the DB connections. This endpoint is available as of LifeTime version 11.13.0. |
 | [POST /environments/&#123;EnvironmentKey&#125;/testdbconnection/](#post-environments-environmentkey-dbconnections) | Tests the DB connection. This endpoint is available as of LifeTime version 11.13.0. |
 | [GET /environments/blockedipaddresses/](#get-environments-blockedipaddresses) | Gets the IP Addresses blocked login attempts. This endpoint is available as of LifeTime version 11.13.0. |
-| [POST /environments/&#123;EnvironmentKey&#125;/deployment/](#post-environments-environmentkey-deployment) | Creates a binary deployment to a target environment. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime version 11.22.0. |
+| [POST /environments/&#123;EnvironmentKey&#125;/deployment/](#post-environments-environmentkey-deployment) | Creates a binary deployment to a target environment. This endpoint is available as of LifeTime version 11.22.0. |
 | [DELETE /environments/blockedipaddresses/&#123;IPAddress&#125;/](#delete-environments-blockedipaddresses-ipaddress) | Unblocks a given IP Address. This endpoint is available as of LifeTime version 11.13.0. |
-| [POST /environments/&#123;EnvironmentKey&#125;/solution/](#post-environments-environmentkey-solution) | Creates a temporary solution. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime version 11.22.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/solution/&#123;SolutionKey&#125;/](#get-environments-environmentkey-solution-solutionkey) | Download the given solution. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime version 11.22.0. |
-| [GET /environments/&#123;EnvironmentKey&#125;/solutionstatus/&#123;SolutionKey&#125;/](#get-environments-environmentkey-solutionstatus-solutionkey)| Returns the status of the solution being created. This feature is currently available for use and packaging and pricing details may be subject to updates in the future. This endpoint is available as of LifeTime version 11.22.0. |
+| [POST /environments/&#123;EnvironmentKey&#125;/solution/](#post-environments-environmentkey-solution) | Creates a temporary solution. This endpoint is available as of LifeTime version 11.22.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/solution/&#123;SolutionKey&#125;/](#get-environments-environmentkey-solution-solutionkey) | Download the given solution. This endpoint is available as of LifeTime version 11.22.0. |
+| [GET /environments/&#123;EnvironmentKey&#125;/solutionstatus/&#123;SolutionKey&#125;/](#get-environments-environmentkey-solutionstatus-solutionkey)| Returns the status of the solution being created. This endpoint is available as of LifeTime version 11.22.0. |
 
 ### /modules
 

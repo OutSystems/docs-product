@@ -1,7 +1,7 @@
 ---
 summary: Explore test automation integration in the development lifecycle with OutSystems 11 (O11), emphasizing team roles and effective acceptance criteria.
 locale: en-us
-guid: 49f299a3-b4f6-4ae6-b422-baf45dfe54a6
+guid: 4238af98-49f2-480c-b837-43bcadba9053
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:

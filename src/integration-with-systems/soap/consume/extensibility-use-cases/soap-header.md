@@ -1,5 +1,5 @@
 ---
-summary: Explore how to add a SOAP header to requests in OutSystems 11 (O11) using C# and WCF in Integration Studio.
+summary: Explore how to add a SOAP header to requests in OutSystems 11 (O11) using .NET and WCF in Integration Studio.
 locale: en-us
 guid: fff8ebfb-2aed-4628-ad28-774ac83074bc
 app_type: traditional web apps, mobile apps, reactive web apps

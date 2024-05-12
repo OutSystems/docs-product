@@ -1,5 +1,5 @@
 ---
-summary: Explore how to add an HTTP header to SOAP web service requests using OutSystems 11 (O11) and C# in Integration Studio.
+summary: Explore how to add an HTTP header to SOAP web service requests using OutSystems 11 (O11) and .NET in Integration Studio.
 locale: en-us
 guid: 2f16774f-ec28-4597-9b56-c19599cb233e
 app_type: traditional web apps, mobile apps, reactive web apps

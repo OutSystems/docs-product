@@ -112,5 +112,5 @@ Note that this process does not create any new users in the OutSystems database.
 
 If a user is deactivated in the active directory, the user's status is synchronized by the `SynchronizeDomainUsers` timer. However, when the user is reactivated in the active directory, the user's status is **not updated to active**. This prevents the user from logging in.
 
-**Workaorund:** Log into the Users module using Administrator credentials and update the user's status to active.
+**Workaround:** Log into the Users module using Administrator credentials and update the user's status to active.
 

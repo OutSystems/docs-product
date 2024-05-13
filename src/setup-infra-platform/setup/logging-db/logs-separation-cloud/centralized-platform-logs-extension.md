@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) introduces the CentralizedPlatformLogs extension for accessing log data via API when using the logs separation feature.
+summary: Use the CentralizedPlatformLogs extension for accessing log data when using the logs separation feature.
 tags: 
 locale: en-us
 guid: F5F17E2A-F130-40EF-AD5E-7774D3295FE7

@@ -1,0 +1,14 @@
+name: VectorDB update
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  call_shared_workflow:
+    name: VectorDB update
+    uses: OutSystems/tk-cicd/.github/workflows/chroma-update.yml@main
+    with:
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      TK_CICD_BRANCH: 'main'
+    secrets: inherit

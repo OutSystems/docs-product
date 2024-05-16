@@ -56,7 +56,7 @@ Download button
 :   Click to download your app as an OutSystems Application Pack `.oap` file)
 
 Test In Browser button
-:   Click to open your application quickly in a browser for testing.
+:   Click to open your application quickly in a browser for testing. Note that this button only shows for Home modules.
 
 ## App tabs
 

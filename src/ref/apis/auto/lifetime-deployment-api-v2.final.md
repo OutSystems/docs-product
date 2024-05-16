@@ -2742,7 +2742,7 @@ A structure holding the solution name, the application keys and a boolean to inc
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | SolutionName | string | Name for the solution to be created. | No |
-| ApplicationKeys | [ [string](#applicationkeys) ] | List of application keys. | Yes |
+| ApplicationKeys | [string] | List of application keys. | Yes |
 | IncludeReferences | boolean | True to include references. | No |
 
 #### ApplicationKeys

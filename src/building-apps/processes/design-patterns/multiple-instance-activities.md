@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 Use this pattern to execute multiple instances of the same flow of activities. It is specially useful in situations where the number of executed instances is only known at runtime.
 
-To execute multiple instances of a flow of activities, either place those activities in a new [Process](../process.md) or in a flow of a [Conditional Start](<../../../ref/lang/auto/class-conditional-start.md>).
+To execute multiple instances of a flow of activities, either place those activities in a new [Process](../process.md) or in the flow of a [Conditional Start](<../../../ref/lang/auto/class-conditional-start.md>).
 
 The **advantage** of using a new **Process** is that it **clarifies the structure** of the process and **improves scalability**, even if the number of process instances grows to millions. It also helps you [limit the use of conditional starts](../best-practices/limit-conditional-starts.md).
 

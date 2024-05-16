@@ -17,7 +17,7 @@ Integrations with MongoDB include one app with the following modules:
 
 * A **library module** that exposes Server Actions with logic to interact with MongoDB data. By default, the module name has a "_DRV" suffix, meaning "driver".
 
-* A **service module** that provides an abstraction layer on top of the Server Actions from the library module. Your apps should reference this module when interacting with MongoDB. The Server Actions exposed in this module use the credentials stored in connections to authenticate requests, and you don't need to provide authentication data in each Server Action call. By default, the module name has a "_IS" suffix, meaning "integration service". with suffixes DRV and IS in their names.
+* A **service module** that provides an abstraction layer on top of the Server Actions from the library module. Your apps should reference this module when interacting with MongoDB. The Server Actions exposed in this module use the credentials stored in connections to authenticate requests, and you don't need to provide authentication data in each Server Action call. By default, the module name has a "_IS" suffix, meaning "integration service". The library and service modules are named with suffixes DRV and IS in their names, respectively.
 
 ### Actions in the service module { #actions }
 

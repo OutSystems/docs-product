@@ -34,7 +34,7 @@ If your tool does not support native ingestion of OpenTelemetry data, then you m
 To enable log streaming from the OutSystems app to the corresponding APM tool, you must configure the APM server URL or OpenTelemetry collector URL and the authentication credentials.  
 
 4. Test and validate the connection
-In LifeTime, test if your app has established a connection with the APM tool and validate if the test data is sent to the destination tool.  If the connection fails, then refer to the [troubleshooting guide](https://success.outsystems.com/support/errors/log_streaming/) to understand why and how you can resolve the errors and retest the connection.
+In LifeTime, test if your app has established a connection with the APM tool and validate if the test data is sent to the destination tool.  If the connection fails, then refer to the [troubleshooting guide](https://success.outsystems.com/support/errors/log_streaming_errors/)) to understand why and how you can resolve the errors and retest the connection.
 
 ## What's next
 

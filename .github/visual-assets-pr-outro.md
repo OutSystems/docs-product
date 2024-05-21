@@ -7,7 +7,7 @@ Each visual asset is classified according to the list below:
 
 * **Delete** - No export defined in Figma, and not used in the corresponding Markdown file. Might be used elsewhere.
 
-* **Missing in Figma** - Used in markdown, and exists in the repository, but there is no asset with an export defined in Figma.
+* **Missing in Figma** - Used in markdown, and exists in the repository, but there is no asset with an export defined in Figma. Confirm if the Figma link is correct, it should direct to the page (canvas) rather than the image (frame).
 
 * **Not used** - Export defined in Figma but the asset is not used in the corresponding Markdown file.
 

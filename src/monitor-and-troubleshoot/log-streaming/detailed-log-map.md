@@ -10,7 +10,15 @@ platform-version: o11
 
 # Logged data fields
 
-The underlying data schema for Log separation is based on the [OpenTelemetry](https://opentelemetry.io/) specification, an open standard to ensure vendor-agnostic data. In the following tables, you can find useful information on how the existing data fields map to the new OpenTelemetry fields. For more information about the existing data fields, see [Log data reference](../logging/reference.md)
+The underlying data schema for Log separation is based on the [OpenTelemetry](https://opentelemetry.io/) specification, an open standard to ensure vendor-agnostic data. The following tables describe the mapping between the existing data fields and the new OpenTelemetry fields. For more information about the existing data fields, see [Log data reference](../logging/reference.md)
+
+<div class="info" markdown="1">
+
+The field names shown in the APM tool can differ from the OpenTelemetry field names listed in the tables, as seen in the Elastic Cloud APM tool.
+
+The field `log.attributes.outsystems.log.type` can be used to differentiate the different log types. In Elastic Cloud, this field is named as `labels.outsystems_log_type`
+
+</div>
 
 ## General logs
 
@@ -33,6 +41,7 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Tenant_Id|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
 |User_Id|log.attributes.enduser.id|Int|User identifier. 0 if no user logged in (anonymous navigation).|
 |Username|log.attributes.outsystems.user.name|Text|Username relative to the authenticated session|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: General. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
 ## Error logs
 
@@ -56,8 +65,9 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Tenant_Id|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
 |User_Id|log.attributes.enduser.id|Int|User identifier. 0 if no user logged in (anonymous navigation).|
 |Username|log.attributes.outsystems.user.name|Text|Username relative to the authenticated session|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: Error. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
-## Request event logs
+## RequestEvent logs
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
@@ -69,8 +79,9 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |ModuleKey|resource.attributes.outsystems.module.key|Text|Name of the module where the event occurred.|
 |RequestEventName|log.attributes.outsystems.log.event.type|Text|The name of the event.|
 |RequestKey|log.attributes.outsystems.request.key|GUID|Correlation field of the several log types to a single request.|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: RequestEvent. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
-## Cyclic job logs
+## CyclicJob logs
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
@@ -88,6 +99,7 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Request_Key|log.attributes.outsystems.request.key|GUID|Correlation field of the several log types to a single request.|
 |Should_Have_Run_At|log.attributes.outsystems.timer.shouldhaverunat|Date Time|Scheduled time for execution of this  cyclic job. Instant of execution is expected to be equal or larger than this field.|
 |Tenant_Id|log.attributes.outsystems.tenant_id|Int|ID of the tenant where the message  was logged. 0 if message originates  from an OutSystems service.|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: CyclicJob. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
 ## Extension logs
 
@@ -109,6 +121,7 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Tenant_Id|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
 |User_Id|log.attributes.enduser.id|Int|User identifier. 0 if no user logged in (anonymous navigation).|
 |Username|log.attributes.outsystems.user.name|Text|Username relative to the authenticated session|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: Extension. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
 ## Integration logs
 
@@ -130,6 +143,7 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Source|log.attributes.net.host.ip|Text|Empty / meaningless for CONSUME type; for EXPOSE type this is the source IP of the external system.|
 |Tenant_Id|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
 |Type|log.attributes.http.method|Text|One of: SOAP (Consume); SOAP (Expose); REST (Consume); REST (Expose).|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: Integration. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
 ## Integration detail 
 
@@ -141,8 +155,9 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Instant|@timestamp|Date Time|Time of log generation in the front end (server log) or time of log generation in the mobile device (client log).|
 |Message|log.attributes.outsystems.log.detail_message|Text|Short log information.|
 |TenantId|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: IntDetailLog. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
-## Mobile request logs
+## MobileRequest logs
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
@@ -163,6 +178,7 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Tenant_Id|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
 |User_Id|log.attributes.enduser.id|Int|User identifier. 0 if no user logged in (anonymous navigation).|
 |Username|log.attributes.outsystems.user.name|Text|Username relative to the authenticated session|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: MobileRequest. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
 ## Mobile request detail logs
 
@@ -174,6 +190,7 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Instant|@timestamp|Date Time|Time of log generation in the front end (server log) or time of log generation in the mobile device (client log).|
 |Message|log.attributes.outsystems.log.detail_message|Text|Log message|
 |TenantId|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: MRDetailLog. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
 ## Screen logs
 
@@ -200,6 +217,7 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |User_Id|log.attributes.enduser.id|Int|User identifier. 0 if no user logged in (anonymous navigation).|
 |Username|log.attributes.outsystems.user.name|Text|Username relative to the authenticated session|
 |Viewstate_bytes|log.attributes.outsystems.log.viewstate_bytes|Int|Size of the viewstate associated with this request. 0 if the request has no viewstate (GET); greater than 0 if the request is a POST or AJAX request.|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: Screen. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
 ## Service Action logs
 
@@ -225,6 +243,7 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Tenant_Id|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
 |User_Id|log.attributes.enduser.id|Int|User identifier. 0 if no user logged in (anonymous navigation).|
 |Username|log.attributes.outsystems.user.name|Text|Username relative to the authenticated session|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: ServiceAPI. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
 ## Service API detail logs
 
@@ -236,3 +255,4 @@ The underlying data schema for Log separation is based on the [OpenTelemetry](ht
 |Instant|@timestamp|Date Time|Time of log generation in the front end (server log) or time of log generation in the mobile device (client log).|
 |Message|log.attributes.outsystems.log.detail_message|Text|Short log information.|
 |TenantId|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
+|N/A|log.attributes.outsystems.log.type|Text|Type of log: ServiceAPIDetailLog. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|

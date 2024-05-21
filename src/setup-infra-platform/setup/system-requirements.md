@@ -235,6 +235,8 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 * macOS Big Sur
 * macOS Monterrey
+* macOS Ventura since Service Studio 11.54.60
+* macOS Sonoma since Service Studio 11.54.60
 
 **Windows:**
 

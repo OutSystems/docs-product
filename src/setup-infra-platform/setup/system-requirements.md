@@ -276,7 +276,7 @@ Limitations:
 * Microsoft Windows Server 2019, since Development Environment 11.6.5
 * Microsoft Windows Server 2016
 
-OutSystems only supports Windows editions that are [supported by Microsoft](https:mm//support.microsoft.com/en-us/lifecycle/search).
+OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 
 #### Required software
 

@@ -50,9 +50,9 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
         
     * **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
 
-        <div class="info" markdown="1">
+        <div class="warning" markdown="1">
 
-         For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
+         For Azure and OKTA you must use ``preferred_username`` as the **Username Claim** value.
 
          </div>
        

@@ -41,7 +41,7 @@ There are some key differences between both extensions, mostly differences betwe
 | **Number of results and skipping** | The number of results returned and skipping of rows can be defined using default database syntax (TOP, OFFSET). | The number of results can be defined using **PageSize** and skipped using **StartIndex**. |
 | **Query operators** | The query can include several conditions to be applied when filtering the logs using database syntax. | Applicable to integer and text input parameter types: <br/> `eq` - returns results that contain and exact value. <br/> Applicable to integer and date time input parameter types: <br/> `lt` - returns results containing values less than the provided. <br/> `lte` - values less than or equal to the provided. <br/> `gt` - values greater than the provided. <br/> `gte` - values greater than or equal to the provided. <br/>All query conditions are combined with the **AND** operator. |
 | **Sorting** | The query can include a sorting command (ORDER BY) which can be applied to any log property. | Every request accepts a boolean input parameter **AscendingOrder** which sorts the logs by `Instant`. False for newest first and true for oldest first. Default is false. |
-| **Restrictions** | The maximum number of logs per request is 500 (**PageSize** <= 500). | The maximum number of logs + offset logs is 10000 (**PageSize** + **StartIndex** <= 10000). |
+| **Restrictions** | -  | The maximum number of logs per request is 500 (**PageSize** <= 500). The maximum number of logs that you can go back and access is 10000 (**PageSize** + **StartIndex** <= 10000). |
 
 ### Unsupported scenarios
 

@@ -233,8 +233,9 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 **macOS (cross-platform Service Studio only):**
 
-* macOS Big Sur
 * macOS Monterrey
+* macOS Ventura since Service Studio 11.54.60
+* macOS Sonoma since Service Studio 11.54.60
 
 **Windows:**
 
@@ -275,7 +276,7 @@ Limitations:
 * Microsoft Windows Server 2019, since Development Environment 11.6.5
 * Microsoft Windows Server 2016
 
-OutSystems only supports Windows editions that are [supported by Microsoft](https:mm//support.microsoft.com/en-us/lifecycle/search).
+OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 
 #### Required software
 

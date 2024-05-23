@@ -1,5 +1,4 @@
 ---
-tags: runtime-mobileandreactiveweb;
 summary: Explore how to implement and customize the Counter UI Pattern in OutSystems 11 (O11) for displaying dynamic numerical data in web and mobile applications.
 locale: en-us
 guid: 18443b28-3b50-4e2d-9731-a84aac8cdaf1
@@ -16,7 +15,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-You can use the Counter UI Pattern to display numerical information as a notification. For example, the Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
+You can use the Counter UI Pattern to give feedback about the current count of several elements. For example, you can use it to show the count of completed tasks or the number of users.
 
 ![Screenshot showing the Counter UI Pattern used for notifications, such as unread emails or messages.](images/counter-2-ss.png "Counter UI Pattern Notification Example")
 

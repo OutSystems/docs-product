@@ -10,15 +10,11 @@ figma:
 
 # Using Database Replica for reporting
 
-<div class="info" markdown="1">
+The Database Replica provides direct access to your OutSystems 11 live application data without affecting performance or stability. It's an exact replica of your production database, with changes reflected in seconds. This allows you to perform real-time business analytics on your data without limitations on the volume of data you can access or extract.
 
-Database Replica is under a [Limited Availability (LA)](https://success.outsystems.com/support/release_notes/outsystems_product_releases/#limited-availability-la) program.
+A Database Replica can be deployed in any OutSystems 11 cloud environment. Upon deployment, you receive two read-only database access credentials, which can be used for your ETL processes or directly with business analytics and reporting tools. Additionally, you can connect Database Replica to your OutSystems applications as an [external data source](../integration-with-systems/external-database/intro.md) to build reporting dashboards within OutSystems.
 
-</div>
-
-Database Replica allows you to establish direct access to data in an OutSystems 11 Cloud production database. It enables you to apply real-time business analytics to data without encountering performance issues and with minimal lag. Data is constantly updated to the replica and is seconds away from the main database. The amount of time it takes to update the replica depends not on the database size but on the changes made to the primary database.
-
-You utilize your read-only credentials to access one replica per production database. With your read-only credentials, you access:
+With your read-only credentials, you gain access to:
 
 * Database tables created by the entities you define in Service Studio.
 
@@ -39,12 +35,6 @@ Consider the following requirements for Database Replica:
 * You must have the OutSystems Cloud high-availability option enabled. Users interested in obtaining the high-availability option should contact their account team for further assistance.
 
 * Your primary database server must meet a minimum scalability requirement of Class 3.
-
-## Request a Database Replica user
-
-Subscribing to Database Replica provides access credentials. Use these credentials to connect to BI platforms like Power BI or create reporting dashboards in OutSystems apps using an [external database](../integration-with-systems/external-database/intro.md)
-
-![Flowchart illustrating the process of subscribing to Database Replica, obtaining credentials, and connecting to BI platforms or external databases.](images/subscription-diag.png "Database Replica Subscription Process")
 
 ## Before you begin
 
@@ -74,7 +64,7 @@ Following up on your support case, OutSystems does the following:
 
 ### Granted permissions
 
-Only 2 read-only credentials are available with access to:
+Only two read-only credentials are available with access to:
 
 * ```OSUSR_*``` (business app tables)
 

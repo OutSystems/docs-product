@@ -10,9 +10,9 @@ figma:
 
 # Using Database Replica for reporting
 
-The Database Replica provides direct access to your OutSystems 11 live application data without affecting performance or stability. It's an exact replica of your production database, with changes reflected in seconds. This allows you to perform real-time business analytics on your data without limitations on the volume of data you can access or extract.
+Database Replica provides direct access to your OutSystems 11 live application data without affecting performance or stability. It's an exact replica of your production database, with changes reflected in seconds. This allows you to perform real-time business analytics on your data without limitations on the volume of data you can access or extract.
 
-A Database Replica can be deployed in any OutSystems 11 cloud environment. Upon deployment, you receive two read-only database access credentials, which can be used for your ETL processes or directly with business analytics and reporting tools. Additionally, you can connect Database Replica to your OutSystems applications as an [external data source](../integration-with-systems/external-database/intro.md) to build reporting dashboards within OutSystems.
+Database Replica can be deployed in any OutSystems 11 cloud environment. Upon deployment, you receive two read-only database access credentials, which can be used for your ETL processes or directly with business analytics and reporting tools. Additionally, you can connect Database Replica to your OutSystems applications as an [external data source](../integration-with-systems/external-database/intro.md) to build reporting dashboards within OutSystems.
 
 With your read-only credentials, you gain access to:
 

@@ -72,9 +72,9 @@ If you log in with your **IT user account** and your infrastructure is already r
 
 Before registering and setting up your infrastructure in AI Mentor Studio, make sure that the following requirements are met:
 
-* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition. **You can't use a Personal Environment with AI Mentor Studio**.
+* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition (Except Trial editions). **You can't use a Personal Environment with AI Mentor Studio**.
 
-* **LifeTime** is deployed in a **dedicated environment**.
+* **LifeTime** is deployed in a **dedicated environment**. This is mandatory for trial editions because Lifetime and Development share the same environment.
 
 * Your code analisys environment uses **Platform Server 11.18.1** or later.
 

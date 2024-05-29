@@ -74,7 +74,9 @@ Before registering and setting up your infrastructure in AI Mentor Studio, make 
 
 * Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition. **You can't use a Personal Environment with AI Mentor Studio**.
 
-* **LifeTime** is deployed in a **dedicated environment**.
+* OutSystems Partners can use AI Mentor Studio with Cloud demos.
+
+* For self-managed infrastructures, LifeTime must be deployed in a dedicated environment.
 
 * Your code analisys environment uses **Platform Server 11.18.1** or later.
 
@@ -82,7 +84,7 @@ Before registering and setting up your infrastructure in AI Mentor Studio, make 
 
 * You have the **Administrator** role in your infrastructure.
 
-* AI Mentor Studio will use the environment's public DNS hostname to communicate. Check [AI Mentor Studio network requirements](../../setup-infra-platform/setup/network-requirements.md#ai-mentor-studio) for detailed information.
+* AI Mentor Studio will use the environment's public DNS hostname to communicate. Check [AI Mentor Studio network requirements](../../setup-infra-platform/setup/network-requirements.md#ai-mentor-studio) for detailed information. In the OutSystems Cloud, these requirements are ensured.
 
 <div class="info" markdown="1">
 

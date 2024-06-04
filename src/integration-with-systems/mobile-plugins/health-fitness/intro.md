@@ -214,6 +214,10 @@ Verify that access and storage of health or fitness data on the device works. Ch
 * The query result for **BloodPressure** is a list with structure **[systolic, diastolic, systolic, diastolic]**, where each element on the list is a pair of two readings. Example: [118, 76, 119, 77].
 * The dates returned in the **Result** and **ResultDataPoints** output parameters are in the UTC timezone.
 
+#### Notes about AdvancedQuery on iOS
+
+* When querying the **Sleep** variable, the results correspond to the "IN BED INTERVALS" that are registered in the Health app from the system. Using different time units or operations won't alter the results returned.
+
 ### Create logic to access and use workout data (iOS only)
 
 To enrich the data that the developer can already obtain from the **AdvancedQuery**, there's also a **GetWorkoutsData** client action that retrieves data related to workouts. To achieve that, it's required to set the values for the input parameters, including:

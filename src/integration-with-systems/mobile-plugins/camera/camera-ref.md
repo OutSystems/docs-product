@@ -52,7 +52,8 @@ SaveToPhotoAlbum|Input|Boolean|Sets if the media captured can be saved in the de
 CameraDirection|Input|Structure|Select the front or back camera as default when taking a new picture. Default value: BackCamera.
 AllowEdit|Input|Boolean|Sets if the media captured must be sent to an edit screen right after the capturing.
 AllowMultiplePictures|Input|Boolean|Sets if the user can select multiple pictures.
-ImageCaptured|Output|Structure|Returns the captured image and its information.
+IncludeMetadata|Input|Boolean|Sets if MediaResult should include its metadata. If an error occurs when obtaining the metadata, it will return empty.
+MediaResult|Output|[MediaResult Structure](#mediaresult-data-structure)|Returns the captured picture and its information.
 Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
 Error|Output|Error|Displays detailed information of an error, if applicable.
 
@@ -63,6 +64,17 @@ Opens a native video player to play local files.
 Parameter|Type|Data Type|Description
 -|-|-|-
 URI|Input|Text|Sets the URI of the video to be played.
+Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
+Error|Output|Error|Displays detailed information of an error, if applicable.
+
+#### EditURIPicture
+
+Opens a screen to edit a given picture.
+
+Parameter|Type|Data Type|Description
+-|-|-|-
+InputImage|Input|Binary Data|Sets the URI of the video' to be edited.
+OutputImage|Output|Binary Data|Returns the edited picture and its information.
 Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
 Error|Output|Error|Displays detailed information of an error, if applicable.
 
@@ -77,6 +89,29 @@ AllowEdit|Input|Boolean|Sets if the media captured must be sent to an edit scree
 AllowMultipleSelection|Input|Boolean|Sets if the user can select multiple media.
 IncludeMetadata|Input|Boolean|Sets if MediaResult should include its metadata. If an error occurs when obtaining the metadata, it will return empty
 MediaResult|Output|[MediaResult Structure](#mediaresult-data-structure)|Returns the selected media and its information.
+Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
+Error|Output|Error|Displays detailed information of an error, if applicable.
+
+### Deprecated Client Actions
+
+The use of these client actions is discouraged.
+
+#### TakePicture
+
+Opens the device's camera and allows the user to take a picture.
+
+Parameter|Type|Data Type|Description
+-|-|-|-
+Quality|Input|Integer|Sets the picture quality, in percentage (100% means full device quality). By default, the quality is 60%. Applies only to .JPEG EncodingType.
+Width|Input|Integer|Sets the picture width, in pixels.
+Height|Input|Integer|Sets the picture height, in pixels.
+CorrectOrientation|Input|Boolean|Sets if the captured media orientation should be automatically fixed when the device is rotated.
+EncodingType|Input|Structure|Sets the captured media format: JPEG or PNG. By default, the media format is JPEG.
+SaveToPhotoAlbum|Input|Boolean|Sets if the media captured can be saved in the device’s gallery.
+CameraDirection|Input|Structure|Select the front or back camera as default when taking a new picture. Default value: BackCamera.
+AllowEdit|Input|Boolean|Sets if the media captured must be sent to an edit screen right after the capturing.
+AllowMultiplePictures|Input|Boolean|Sets if the user can select multiple pictures.
+ImageCaptured|Output|Structure|Returns the captured image binary. information.
 Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
 Error|Output|Error|Displays detailed information of an error, if applicable.
 
@@ -102,14 +137,6 @@ OutputImage|Output|Binary Data|Returns the edited picture and its information.
 Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
 Error|Output|Error|Displays detailed information of an error, if applicable.
 
-#### Open Permissions
-
-Opens the app’s permissions screen in the device settings.
-
-Parameter|Type|Data Type|Description
--|-|-|-
-Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
-Error|Output|Error|Displays detailed information of an error, if applicable.
 
 ### Web Blocks
 

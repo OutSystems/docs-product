@@ -74,7 +74,7 @@ Otherwise, open the camera with **TakePicture** to let users take a picture (2).
 In the **TakePicture** action, you can set the parameters for quality, width, back or front camera, and more.
 
 Check if taking pictures on the device works by verifying the value of **TakePicture.Success** is **True** (3).
-If yes, handle the picture data in **TakePicture.ImageCaptured** by assigning it to a variable of the **Binary Data** data type (4).
+If it does, handle the picture data in **TakePicture.MediaResult.Thumbnail** by assigning it to a variable of the **Binary Data** data type (4).
 
 ![Flowchart screenshot detailing the process to take a picture using the Camera plugin, including checking plugin availability, opening the camera, and handling the captured image.](images/camera-flow-take-picture-ss.png "Camera Flow for Taking a Picture")
 

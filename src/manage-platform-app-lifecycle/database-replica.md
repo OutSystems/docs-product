@@ -32,15 +32,12 @@ Consider the following requirements for Database Replica:
 
 * Your primary database server must meet a minimum scalability requirement of Class 3.
 
-## Before you begin
-
-To request a **Database Replica user**:
-
-* You must be a **company administrator** or an **infrastructure administrator** for your company's account.
 
 ### Request a Database Replica user
 
-To request a Database Replica user, open a support case. Make sure you include the following information in the support case description:
+To request a Database Replica user, open a support case. You must be a **company administrator** or an **infrastructure administrator** for your company's account.
+
+Make sure you include the following information in the support case description:
 
 * Identify the **environments** where you require database access by providing their name or address.
 

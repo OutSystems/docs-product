@@ -107,7 +107,7 @@ When configuring CSP take the following risks of misconfiguration into account:
 
 ## Removing unsafe-eval and unsafe-inline CSP directives from Reactive web apps
 
-<div class=”info markdown=”1”>
+<div class="info" markdown="1">
 
 Applies to OutSystems Platform version 11.28.0 onwards and Factory Configuration version 11.28.0 onwards.
 

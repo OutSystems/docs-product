@@ -14,7 +14,7 @@ Database Replica provides direct access to your OutSystems 11 live application d
 
 Database Replica can be deployed in any OutSystems 11 cloud environment. Upon deployment, you receive two read-only database access credentials, which can be used for your ETL processes or directly with business analytics and reporting tools. Additionally, you can connect Database Replica to your OutSystems applications as an [external data source](../integration-with-systems/external-database/intro.md) to build reporting dashboards within OutSystems.
 
-See [Granted permissions](#granted-permissions).
+See the [granted permissions](#granted-permissions).
 
 ![Diagram showing the data flow from the primary database to the database replica with read/write access for the application server and read-only access for the BI/reporting application.](images/database-replica-diag.png "Database Replica Diagram")
 

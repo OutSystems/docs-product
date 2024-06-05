@@ -32,6 +32,8 @@ Consider the following requirements for Database Replica:
 
 * A subscription to Database Replica is required. Contact your Account Manager for provisioning.
 
+* The OutSystems Cloud database is SQL server.
+
 * You must have the OutSystems Cloud high-availability option enabled. Users interested in obtaining the high-availability option should contact their account team for further assistance.
 
 * Your primary database server must meet a minimum scalability requirement of Class 3.
@@ -64,12 +66,13 @@ Following up on your support case, OutSystems does the following:
 
 ### Granted permissions
 
-Only two read-only credentials are available with access to:
+You can have up to 2 credentials with read only permissions. The granted permissions will allow you to:
 
-* ```OSUSR_*``` (business app tables)
+* SELECT over all database tables and views
+* SHOWPLAN
+* VIEW DATABASE STATE
+* VIEW SERVER STATE
 
-* ```OSSYS_USER``` (Users system table)
+All database tables and views include all OutSystems tables (both metamodel tables and application tables), and the database management system tables.
 
-* ```OSSYS_ROLE``` (Roles system table)
-
-* ```OSSYS_USER_ROLE``` (Roles per User system table).
+Application tables are the ones created by the Platform Server when you create entities in Service Studio. These tables use the prefix OSUSR.

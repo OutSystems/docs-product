@@ -33,7 +33,7 @@ Consider the following requirements for Database Replica:
 * Your primary database server must meet a minimum scalability requirement of Class 3.
 
 
-### Request a Database Replica user
+## Request a Database Replica user
 
 To request a Database Replica user, open a support case. You must be a **company administrator** or an **infrastructure administrator** for your company's account.
 
@@ -55,7 +55,7 @@ Following up on your support case, OutSystems does the following:
 
 * Provides you a file with the database address and credentials.
 
-### Granted permissions
+## Granted permissions
 
 You can have up to 2 credentials with read only permissions. The granted permissions will allow you to:
 

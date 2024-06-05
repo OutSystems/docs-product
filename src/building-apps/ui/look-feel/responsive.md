@@ -174,6 +174,8 @@ To override these breakpoints, there is the  **SetDeviceBreakpoints client actio
 
 ![Screenshot showing how to set custom responsive breakpoints in OutSystems UI](images/responsive-breakpoints-ss.png "Set Responsive Breakpoints Screenshot")
 
+**Note:** When opening on an iPad Pro (or similar tablet devices) in landscape it will be treated as a desktop.
+
 ## Notch support
 
 Recently, the inclusion of notch displays has become dominant on mobile devices, especially on iOS devices. This means applications need to react to each display, repositioning its content based on the available notch area.

@@ -94,7 +94,7 @@ After following these steps and publishing the module, you can test the pattern 
 <div class="info" markdown="1">
 
 When including clickable elements inside the Tooltip component, which is not the typical use case, you can use a specific data attribute to support this scenario.<br/>
-Add ``data-allow-event-propagation="true"`` or ``data-allow-event-propagation=True`` to those elements to enable event propagation (available **after OutSystems UI version 2.14.0**)
+Add ``data-allow-event-propagation="true"`` or ``data-allow-event-propagation=True`` to those elements to enable event propagation (partially introduced in **OutSystems UI version 2.12.0** and fully available **after OutSystems UI version 2.14.0**)
 
 </div>
 

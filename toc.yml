@@ -925,6 +925,8 @@
     - href: security/secure-cookies-enable-secure-session.md
     - href: security/configure-internal-network.md
     - href: security/apply-content-security-policy.md
+    - topics:
+        - href: security/impact-factory-settings.md
     - href: security/enforce-https-security.md
     - href: security/host-header-protection.md
     - href: security/encrypt-viewstate.md

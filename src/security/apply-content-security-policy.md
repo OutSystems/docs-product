@@ -109,7 +109,7 @@ When configuring CSP take the following risks of misconfiguration into account:
 
 <div class="info" markdown="1">
 
-Applies to OutSystems Platform version 11.28.0 onwards and Factory Configuration version 11.28.0 onwards.
+Applies to OutSystems Platform version 11.28.0 and higher and Factory Configuration version 11.2.1 and higher.
 
 </div>
 

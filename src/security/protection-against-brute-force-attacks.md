@@ -55,7 +55,7 @@ To unblock users/IP addresses and restore the normal login process, refer to the
 To unblock an **end user**, do the following:
 
 1. Log in to the **Users** application.
-1. Go to the User details page and scroll down to the bottom of the page to s the **Blocked Login Attempts** section.
+1. Go to the User details page and scroll down to the bottom of the page to the **Blocked Login Attempts** section.
 1. If the user is blocked, an entry is added to this section specifying the number of attempts, the IP address used, and the timestamp of the last attempt.
 1. Click the  **Unblock** link to restore the normal login process for this specific end user.
 

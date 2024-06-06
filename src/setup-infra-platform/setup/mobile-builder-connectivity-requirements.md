@@ -27,7 +27,7 @@ If you have any questions on whether a specific approach would work in your case
 
 Amazon CloudFront, which MABS uses, is a distributed service with the endpoint IP addresses that can change over time. You may allow access to an external service in your organization by opening an exception to a specific IP in the firewall, but this approach isn't viable with Amazon CloudFront.
 
-The simplest, and potentially most secure way, of meeting this requirement and is a proxy. When using a proxy to mediate the access with the internet, ensure it allows access to the **nativebuilder.api.outsystems.com** URL and any other URL the MABS service might require from the Internet for normal functioning.
+The simplest, and potentially most secure way, of meeting this requirement is a proxy. When using a proxy to mediate the access with the internet, ensure it allows access to the **nativebuilder.api.outsystems.com** URL and any other URL the MABS service might require from the Internet for normal functioning.
 
 ## Use a firewall to limit access to a domain
 

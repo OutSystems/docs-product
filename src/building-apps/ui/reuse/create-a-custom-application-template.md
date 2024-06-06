@@ -38,8 +38,6 @@ To help with that task, we will create a template to be the base of all planned 
 
 1. Write down the name `BrandTweeTemplates` as the app's name.
 
-1. Since the Margarita template has some of the features we want our template to have, select it as the template for our module.
-
 1. Create the module that will be the template.
 
 1. Insert the name `Template_BrandTwee`, where `Template_` is a required prefix to your name to set the module as a template.

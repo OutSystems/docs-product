@@ -28,7 +28,7 @@ When editing expressions in your process flow, you have access to the following 
 
 * Output parameters of process activities in the process flow. Take note that, to use a process activity output parameter, that process activity must precede in all the process flow paths the process activity where you want to use the output parameters.  For example, to use the output parameters of an Automatic Activity in a Decision element, the Automatic Activity element must precede the Decision element in all paths to the Decision element in the process flow.
 
-Anyway, when you're editing your process flow, all of the process activities available in the scope are present in the Scope tree of the Expression Editor, in a case where you're editing an expression, or in the variables tree of the Select Variable window, in a case where you're trying to use a variable.
+When you're editing your process flow, all of the process activities available in the scope are present in the Scope tree of the Expression Editor when editing an expression, or in the variables tree of the Select Variable window when trying to use a variable.
 
 
 ## Launching a Process

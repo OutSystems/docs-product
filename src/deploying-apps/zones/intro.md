@@ -53,6 +53,12 @@ The OutSystems applications provided in the System Components solution must be a
 
 </div>
 
+<div class="warning" markdown="1">
+
+When you use the Deployment Controller as a standalone installation, you must turn on **Use HTTPS for internal communications** in the Deployment Zone that contains Service Center.
+
+</div>
+
 ## Example
 
 In the following example, we define three deployment zones:

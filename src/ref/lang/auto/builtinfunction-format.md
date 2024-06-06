@@ -322,7 +322,14 @@ Minute:
 - mm: minutes WITH leading zero;  
 Second:  
 - s: seconds without leading zero;  
-- ss: seconds WITH leading zero;  
+- ss: seconds WITH leading zero;
+Miliseconds:  
+- f: the tenths of a second WITH leading zero;
+- ff: the hundredths of a second WITH leading zero;
+- fff: the milliseconds WITH leading zero;
+- F: the tenths of a second without leading zero;
+- FF: the hundredths of a second without leading zero;
+- FFF: the milliseconds without leading zero;
 AM Designator:  
 - t: first letter of AM or PM;  
 - tt: AM or PM.  

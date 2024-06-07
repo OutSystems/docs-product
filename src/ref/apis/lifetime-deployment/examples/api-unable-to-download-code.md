@@ -54,7 +54,15 @@ Check that the environment key (**Key**) is correctly passed to the API call.
 
 If the environment key does not exist, the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
 
-## Step 3: Check if the application key exists
+## Step 3: Check if the resource exists
+
+### Step 3.1: Check if the application key exists
+
+<div class = "info" markdown="1">
+
+If calling the application's endpoints.
+
+</div>
 
 Call the API that returns all the applications available on your infrastructure.
 
@@ -85,10 +93,60 @@ Check that the application key (**Key**) is passed correctly to the API call.
 
 If the application key does not exist, the API returns a message: `The environment {EnvironmentKey} or the app {ApplicationKey} doesn't exist.`
 
-## Step 4: Check if the package is bigger than the size limit
+### Step 3.2: Check if the module key exists
+
+<div class = "info" markdown="1">
+
+If calling the module's endpoints.
+
+</div>
+
+Call the API that returns all the modules available on your infrastructure.
+
+Request: `GET /lifetimeapi/rest/v2/modules/`
+
+Response body:
+
+```
+[
+    {...},
+    {
+        "Key": "c9a7a82e-0eee-4a3d-8e22-2a19c69c766f",
+        "Name": "EmployeeBackoffice",
+        "Description": "",
+        "Kind": "eSpace",
+        "ModuleStatusInEnv": []
+    },
+    {...}
+]
+```
+
+Check that the module key (**Key**) is passed correctly to the API call.
+
+If the module key does not exist, the API returns a message: `The environment {EnvironmentKey} or the module {ModuleKey} doesn't exist.`
+
+## Step 4: Error in the get download link
+
+If you encounter errors getting the download link:
+Request: `GET /environments/{EnvironmentKey}/modules/{ModuleKey}/sourcecodeaccess/{PackageKey}/download`
+
+Check that the operation's status is **Done**. To do this, call the endpoint status and check the **Status** property.
+Request: `GET /environments/{EnvironmentKey}/modules/{ModuleKey}/sourcecodeaccess/{PackageKey}/status`
+
+```
+{
+  "PackageKey": "bc354abb-6691-41ee-9ed3-9454747e2d4d",
+  "Status": "Done",
+  "Messages": [
+    {...}
+  ]
+}
+```
+
+## Step 5: Check if the package is bigger than the size limit
 
 If you see an Error message such as **The resulting source code package has X Mb. The maximum size allowed is 150 Mb. Please refer to documentation on how to overcome this error.**, this means that the resulting source code archive is bigger than 150Mb. In such scenarios, because of scalability and performance reasons the API cannot store and send such big files.
 
-As a workaround, you can split the application to run the SAST in smaller apps and then call the API for these small applications.
+As a workaround, you can split the application to run the SAST in smaller apps and then call the API for these small applications, or you can call the [Module version of the API](api-request-code.md#get-the-source-code-of-a-module) to get the source code at the module level.
 
-If the above validations didn't help you solve the issue and need further assistance, [open a support case](https://www.outsystems.com/SupportPortal/CaseOpen/) to get help from OutSystems Support.
+If the above validations didn't help you solve the issue and you need further assistance, [open a support case](https://www.outsystems.com/SupportPortal/CaseOpen/) to get help from OutSystems Support.

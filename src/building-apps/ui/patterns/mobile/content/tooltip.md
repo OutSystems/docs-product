@@ -89,3 +89,12 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Initialized: Optional|Event triggered after the Tooltip instance is ready.| 
 |OnToggle: Mandatory|Event triggered each time a Tooltip opens or closes.| 
+
+
+<div class="info" markdown="1">
+
+To include clickable elements inside the Tooltip component, add ``data-allow-event-propagation="true"`` or ``data-allow-event-propagation=True`` to the clickable elements. This enables event propagation.
+Applies to OutSystems UI version 2.14.0 and higher.
+
+</div>
+

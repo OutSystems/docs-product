@@ -11,10 +11,7 @@ figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applicat
 
 A Content Security Policy (CSP) helps to prevent attacks from untrusted sources. Your policy should detect and mitigate these attacks.
 
-For OutSystems to adhere to security guidelines, the forced usage of these directives was removed. These changes in behavior are controlled by Factory Configuration settings. By default the settings are enabled and set to True, meaning the platform enforces the usage of the following directives:
-
-* unsafe-inline
-* unsafe-eval
+For OutSystems to adhere to security guidelines, the use of unsafe-inline and unsafe-eval directives is now optional. These changes in behavior are controlled by Factory Configuration settings. By default the settings are enabled and set to True, meaning the platform adds these directives.
 
 <div class="warning" markdown="1">
 

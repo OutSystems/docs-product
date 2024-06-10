@@ -32,7 +32,7 @@ If you have **LifeTime** installed, set the **Content Security Policy** using th
 
 ### For all environments
 
-To configure the CSP in all environments in **LifeTime**:
+To configure the CSP in all environments in **LifeTime**, follow these steps:
 
 1. Go to the **Infrastructure** section to see all environments.
 1. In an environment, select the **Environment Security** option.
@@ -43,7 +43,7 @@ To configure the CSP in all environments in **LifeTime**:
 
 ### For an app
 
-To configure CSP for an application in **LifeTime**:
+To configure CSP for an application in **LifeTime**, follow these steps:
 
 1. Select the **Applications** section, and then the application.
 1. Select the **Security Settings** option.
@@ -115,7 +115,7 @@ Applies to OutSystems Platform version 11.28.0 and higher and Factory Configurat
 
 You can run OutSystems reactive web apps without the **unsafe-eval** and **unsafe-inline** directives in the response headers and no errors on the client side (browser).
 
-The **unsafe-eval** directive allows the web pages to evaluate strings as code. This directive consists of the eval function, the function constructor, and some usages of the **setTimeout** and **setInterval** functions. This directive leads to reduced protection against certain types of DOM-based XSS attacks.
+The **unsafe-eval** directive allows the web pages to evaluate strings as code. This directive consists of the **eval** function, the function constructor, and some usages of the **setTimeout** and **setInterval** functions. This directive leads to reduced protection against certain types of DOM-based XSS attacks.
 
 The **unsafe-inline** directive allows the use of inline resources such as inline ``<script>`` and ``<style>`` elements, ``javascript:`` URLs, and inline event handlers. Therefore, any user can inject a script attribute into your website and perform the cross-site scripting (XSS) attack.
 
@@ -127,17 +127,17 @@ To remove the **unsafe-eval** directive in reactive web apps:
 
 1. Go to the [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration) Forge component.
 
-1. On the **Platform Configurations** tab, set the **Compiler.EnforceUnsafeEvalReactive** variable to **False**.
+1. On the **Platform Configurations** tab, in the **Runtime** section, uncheck the **Enforce Unsafe Eval Reactive** checkbox.
 
-    By default, this setting is set to **True**.
+    By default, this checkbox is **checked**.
 
 ### Remove the unsafe-inline directive from Reactive web apps
 
 1. Go to the  [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration) Forge component.
 
-1. On the **Platform Configurations** tab, set the **Compiler.EnforceUnsafeInlineReactive** variable to **False**.
+1. On the **Platform Configurations** tab, in the **Runtime** section, uncheck the **Enforce Unsafe Inline Reactive** checkbox.
 
-    By default, this setting is set to **True**.
+    By default, this checkbox is **checked**.
 
 **Note**: After changing either of these settings, you must restart OutSystems Deployment Controller Service, and all apps must be republished for the changes to take effect.
 

@@ -19,9 +19,9 @@ Applies to Mobile Apps and Reactive Web Apps only
 You can use the Video UI pattern to embed a native video player into your application.
 
 <div class="info" markdown="1">
- 
-If you want to stream videos from YouTube, Vimeo, or others, refer to the [How to Add Video to Your Applications](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_add_video_to_your_applications/) article. 
- 
+
+If you want to stream videos from YouTube, Vimeo, or others, refer to the [How to Add Video to Your Applications](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_add_video_to_your_applications/) article.
+
 </div>
 
 **How to use the Video UI Pattern**

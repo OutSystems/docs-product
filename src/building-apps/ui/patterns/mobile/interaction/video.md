@@ -20,7 +20,7 @@ You can use the Video UI pattern to embed a native video player into your applic
 
 **Note:** If you want to stream videos from YouTube, Vimeo, or others, refer to the [How to Add Video to Your Applications](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_add_video_to_your_applications/) article.
 
-**How to use the Video UI Pattern**
+## How to use the Video UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Video`.
 

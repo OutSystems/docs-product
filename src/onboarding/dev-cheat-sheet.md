@@ -15,7 +15,7 @@ This document is a summary of the most common basic tasks a developer new to the
 
 There is also a downloadable compact PDF of this content:
 
-* [OutSystems Developer Cheat Sheet PDF](resources/OutSystems-Developer-Cheat-Sheet.pdf)
+[OutSystems Developer Cheat Sheet PDF](resources/OutSystems-Developer-Cheat-Sheet.pdf)
 
 </div>
 

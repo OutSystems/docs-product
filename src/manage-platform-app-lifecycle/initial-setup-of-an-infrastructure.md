@@ -69,7 +69,7 @@ The new environment name is updated in your Customer Portal and Lifetime.
 
 ### Rename an environment in an OutSystems self-managed infrastructure
 
-to rename an environment on a self-managed infrastructure, follow these steps: 
+To rename an environment on a self-managed infrastructure, follow these steps: 
 
 1. Log into the Customer Portal and select the **Platform** menu item.
 

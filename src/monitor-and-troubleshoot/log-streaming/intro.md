@@ -55,7 +55,7 @@ OutSystems uses [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/sp
 <div class="info" markdown="1">
 
 * For a scenario of temporary unavailability from the APM tool destination, failed batches are queued and retried for up to 48 hours in order to avoid data loss during this period. Such scenarios may delay the delivery of logs.
-* HTTP 400/gRPC Internal Error and HTTP 413 Payload Too Large responses from the APM tool ingestion will cause the current batch to be dropped.
+* HTTP 500/gRPC Internal Error and HTTP 413 Payload Too Large responses from the APM tool ingestion will cause the current batch to be dropped.
 * APM tools may implement rules and limits to the ingestion, which are followed by OutSystems Log Streaming when adherent to the OpenTelemetry protocol, but unexpected changes and other restrictive limits may impact the streaming service and prevent data from being ingested in the APM tool.
 
 </div>

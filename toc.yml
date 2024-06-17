@@ -584,6 +584,7 @@
 # Deploying apps
 - href: deploying-apps/intro.md
 - topics:
+    - href: deploying-apps/dev-del-scale/dev-del-scale.md
     - href: deploying-apps/tag-a-version.md
     - href: deploying-apps/deploy-an-application.md
     - href: deploying-apps/deployment-plans.md
@@ -910,7 +911,7 @@
         - href: monitor-and-troubleshoot/manage-tech-debt/how-proxy.md
         - href: monitor-and-troubleshoot/manage-tech-debt/faq.md
         - href: monitor-and-troubleshoot/manage-tech-debt/troubleshoot.md
-            #Collecting feedback from apps
+    #Collecting feedback from apps
     - href: monitor-and-troubleshoot/app-feedback/intro.md
     - topics:
         - href: monitor-and-troubleshoot/app-feedback/user-feedback-enable.md

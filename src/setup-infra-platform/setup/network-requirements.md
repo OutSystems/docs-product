@@ -42,7 +42,7 @@ The table below details the ports that need to be accessible in each server of a
 
 <div class="info" markdown="1">
 
-**Security best practice:** TCP ports 12000, 12001, and 12002 shouldn't be open to the internet.
+**Security best practice:** TCP ports 12000, 12001, 12002 and 12102 shouldn't be open to the internet.
 
 </div>
 
@@ -63,9 +63,11 @@ The following table lists the ports that should be open to correctly **monitor**
 |Front-End|Front-End|80|TCP|IIS Monitoring|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service Monitoring|
 |Front-End|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
+|Front-End|Front-End|12102|TCP|OutSystems Scheduler Service Monitoring. Applies to Platform Server 11.28.0 and higher.|
 |Front-End|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
 |Controller|Front-End|80|TCP|IIS Monitoring|
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
+|Controller|Front-End|12102|TCP|OutSystems Scheduler Service Monitoring. Applies to Platform Server 11.28.0 and higher.|
 |Controller|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
 |Front-End and Controller|\*.outsystems.com<br/>outsystems.com|443|TCP|Telemetry|
 

@@ -230,7 +230,8 @@ The following are the available configurations:
 |CompilerServerHostname|Hostname or IP address of the Deployment Controller Server.|To make it easier to add a front-end server later, we do not recommend using the value localhost as the hostname.|
 |CompilerServerPort|Numeric value.|Port used by the Deployment Controller Service, in the Deployment Controller Server.|
 |DeploymentServerPort|Numeric value.|Port used by the Deployment Service, in the Front-End Servers.|
-|SchedulerServerPort|Numeric value.|Port used by the Scheduler Service, in the Front-End Servers.|
+|SchedulerRESTPort|Numeric value.|Primary port used by the Scheduler Service, in the Front-End Servers. Applies to Platform Server 11.28.0 and higher.|
+|SchedulerServerPort|Numeric value.|Secondary port used by the Scheduler Service, in the Front-End Servers.|
 |SupportAsynchronousLog|"true" or "false".<br/>**Internal**, do not customize.||
 |ServiceInitializationTimeoutInSeconds|Numeric value.|Timeout for services to restart. The default value is 180 seconds.|
 

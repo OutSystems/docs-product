@@ -10,7 +10,9 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Applicati
 
 # Access the Users app
 
-The OutSystems **Users** app lets you create, update, and delete [end users](intro.md) (the users of your apps) and their roles. You can also manage user roles individually or in bulk using groups.
+The OutSystems **Users** app lets you create, update, and delete [End Users](intro.md) (the users of your apps) and their roles. You can also manage [User Roles](../user-roles/intro.md) individually or in bulk using groups.
+
+## Navigate to the Users app
 
 To access the Users app for a specific OutSystems environment, go to:
 
@@ -19,6 +21,8 @@ To access the Users app for a specific OutSystems environment, go to:
 For example, if your environment address is `example.outsystemscloud.com`, go to:
 
 `https://example.outsystemscloud.com/Users/`
+
+## Initial configuration
 
 Before accessing the Users app for the first time, you must configure the Administrator user. Learn how to [configure the Administrator user of the Users app](configure-admin.md).
 
@@ -29,4 +33,3 @@ The Users admin account is **not** the same one you use to connect to Service Ce
 </div>
 
 ![Screenshot of the Users app first login screen prompting for Administrator configuration](images/users-app-first-login-usr.png "Users App First Login Screen")
-

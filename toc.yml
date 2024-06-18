@@ -584,6 +584,7 @@
 # Deploying apps
 - href: deploying-apps/intro.md
 - topics:
+    - href: deploying-apps/dev-del-scale/dev-del-scale.md
     - href: deploying-apps/tag-a-version.md
     - href: deploying-apps/deploy-an-application.md
     - href: deploying-apps/deployment-plans.md
@@ -878,6 +879,7 @@
             - href: monitor-and-troubleshoot/log-streaming/elastic.md                            
             - href: monitor-and-troubleshoot/log-streaming/new-relic.md
             - href: monitor-and-troubleshoot/log-streaming/splunk.md
+            - href: monitor-and-troubleshoot/log-streaming/amazon-s3.md
             - href: monitor-and-troubleshoot/log-streaming/configure-collector.md
     #App quality and technical debt
     - href: monitor-and-troubleshoot/manage-tech-debt/intro.md
@@ -910,7 +912,7 @@
         - href: monitor-and-troubleshoot/manage-tech-debt/how-proxy.md
         - href: monitor-and-troubleshoot/manage-tech-debt/faq.md
         - href: monitor-and-troubleshoot/manage-tech-debt/troubleshoot.md
-            #Collecting feedback from apps
+    #Collecting feedback from apps
     - href: monitor-and-troubleshoot/app-feedback/intro.md
     - topics:
         - href: monitor-and-troubleshoot/app-feedback/user-feedback-enable.md

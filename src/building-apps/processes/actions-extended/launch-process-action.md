@@ -11,6 +11,12 @@ figma:
 
 Use the **Launch&lt;Process Name&gt;** [process extended action](intro.md) in an action flow to launch the execution of a **Process**. This process is **executed asynchronously**, that is, it is launched and executed independently from the action flow execution, which immediately steps to the next element in the flow.
 
+<div class="warning" markdown="1">
+
+**Important!** When using **Launch&lt;Process Name&gt;** in an action, the launched process might start before the current transaction has been committed. This means that any changes that were made during the transaction that launched the process might not yet be visible in that process. For example, if you update an entity and then launch a process using **Launch&lt;Process Name&gt;** by passing that entity's id, that process might not yet see the updated values for that entity, as the transaction updating the entity might not have been committed yet.
+
+</div>
+
 ## Input parameters
 
 * **Process Input Parameters**: one parameter for each input parameter in the process definition.

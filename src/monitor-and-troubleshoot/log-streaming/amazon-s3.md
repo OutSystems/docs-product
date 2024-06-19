@@ -13,17 +13,17 @@ This article explains how you can set up log streaming from OutSystems applicati
 
 ## Prerequisites
 
-* Enabled [log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md).
-
 * Installed Platform Server version 11.23.1 or higher.
 
 * Installed LifeTime version 11.19.0 or higher.
 
+* Enabled [log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md).
+
 <div class="info" markdown="1">
 
-Stream to Amazon S3 requires an [OpenTelemetry Collector](configure-collector.md) with a specific [AWS S3 contrib exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/awss3exporter#aws-s3-exporter-for-opentelemetry-collector/).
-As of June 2024, the [AWS S3 contrib exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/awss3exporter#aws-s3-exporter-for-opentelemetry-collector/) is in [Alpha stability](https://github.com/open-telemetry/opentelemetry-collector#alpha/).
-OutSystems is not a maintainer of the [OpenTelemetry Collector Contrib repository](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main?tab=readme-ov-file#opentelemetry-collector-contrib/). Customers are advised to assess their use case and learn more before adopting it.
+Stream to Amazon S3 requires an [OpenTelemetry Collector](configure-collector.md) with a specific [AWS S3 contrib exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/awss3exporter#aws-s3-exporter-for-opentelemetry-collector/). 
+As of June 2024, the [AWS S3 contrib exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/awss3exporter#aws-s3-exporter-for-opentelemetry-collector/) is in [Alpha stability](https://github.com/open-telemetry/opentelemetry-collector#alpha/). 
+Customers are advised to assess their use case and learn more before adopting it.
 
 </div>
 
@@ -31,7 +31,9 @@ OutSystems is not a maintainer of the [OpenTelemetry Collector Contrib repositor
 
 To set up the OutSystems log streaming service, using Amazon S3 as the destination storage, follow these steps:
 
-1. Set up the [OpenTelemetry Collector](configure-collector.md) with Amazon S3 as the exporter.
+1. Set up the [OpenTelemetry Collector](configure-collector.md).
+
+1. Configure a receiver that accepts HTTP or gRPC connections (refer [here](https://github.com/open-telemetry/opentelemetry-collector/blob/main/receiver/otlpreceiver/README.md) for example) and that uses the [AWS S3 contrib exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/awss3exporter#aws-s3-exporter-for-opentelemetry-collector/).
 
 1. Get the OpenTelemetry Collector endpoint and authentication credentials.
 

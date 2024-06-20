@@ -9,13 +9,11 @@ summary: OutSystems 11 (O11) enables efficient server-side data fetching with Da
 
 # Data Action
 
-Use Data Actions to fetch complex data from the database or external systems after the Screen loads. Data Actions run on the server.
-
-Data Actions and client-side Aggregates concurrently start to fetch data after the Screen loads.
+Data Actions are server-side processes that fetch complex data from databases or external systems. They execute after the [Screen](../../../building-apps/ui/screens/intro.md) loads, running concurrently with client-side [Aggregates](./class-aggregate.md).
 
 <div class="info" markdown="1">
 
-Avoid doing any login operations in Data Actions. Data Actions concur with other server requests, and it's unsure which will override cookies last.
+Avoid doing any login operations in Data Actions. Data Actions coincide with other server requests, making it unclear which will ultimately override the cookies.
 
 </div>
 
@@ -44,7 +42,7 @@ Avoid doing any login operations in Data Actions. Data Actions concur with other
 <td>Text that documents the element.</td>
 <td></td>
 <td></td>
-<td>Useful for documentation purpose.<br/>The maximum size of this property is 2000 characters.</td>
+<td>Useful for documentation purposes.<br/>The maximum size of this property is 2000 characters.</td>
 </tr>
 <tr>
 <td title="Server Request Timeout">Server Request Timeout</td>
@@ -102,4 +100,3 @@ Avoid doing any login operations in Data Actions. Data Actions concur with other
 </tr>
 </tbody>
 </table>
-

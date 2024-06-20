@@ -18,7 +18,7 @@ Log streaming support is only available for OutSystems Cloud deployments.
 
 </div>
 
-Log streaming is the process of continuously collecting and streaming log data to your Application Performance Monitoring (APM) or analytics tools in near real-time. With  log streaming enabled, you can send a permanent stream of application and platform logs from applications developed with the OutSystems platform to various third-party APM tools and custom/data store tools, typically for analysis, monitoring, storage, and alerting purposes. Some examples of APM tools that support the ingestion of OpenTelemetry log data are Elastic Cloud, Datadog, Dynatrace, Splunk, and New Relic.
+Log streaming is the process of continuously collecting and streaming log data to your Application Performance Monitoring (APM) or analytics tools in near real-time. With log streaming enabled, you can send a permanent stream of application and platform logs from applications developed with the OutSystems platform to various third-party APM tools and custom/data store tools, typically for analysis, monitoring, storage, and alerting purposes. Some examples of such tools that support the ingestion of OpenTelemetry log data are Elastic Cloud, Datadog, Dynatrace, Splunk, New Relic, and Amazon S3.
 
 OutSystems adopts the [OpenTelemetry](https://opentelemetry.io/) standard to stream log data to various APM tools. OpenTelemetry is an [open-source](https://github.com/open-telemetry) observability framework comprising a collection of tools, APIs, and SDKs that you can use to instrument, generate, collect, and export log data to help analyze your applications' performance and behavior. OpenTelemetry is tool-agnostic, meaning it can be used with various commercial and open-source APM tools without significant configuration changes.
 
@@ -70,9 +70,9 @@ Before you start streaming logs, ensure you have:
 
 * Installed LifeTime version 11.19.0 or higher.
 
-## Supported application performance monitoring tools
+## Supported tools
 
-OutSystems supports the following APM tools:
+OutSystems supports the following tools:
 
 * Elastic Cloud
 
@@ -84,17 +84,19 @@ OutSystems supports the following APM tools:
 
 * Dynatrace
 
+* Amazon S3
+
 Note that any other tool compatible with the OpenTelemetry protocol and OTLP logs format should typically be capable of interpreting the OutSystems logs.
 
 <div class="info" markdown="1">
 
-For APM tools that don't support native ingestion of OTLP log data such as **Datadog**, **Splunk**, you must [set up an OpenTelemetry collector](configure-collector.md).
+For tools that don't support native ingestion of OTLP log data such as **Datadog**, **Splunk**, **Amazon S3**, you must [set up an OpenTelemetry collector](configure-collector.md).
 
 </div>
 
 ## Supported log data
 
-The APM tool receives application logs, platform logs, and all logs that are available  in the OutSystems management console (Service Center), such as:
+The APM tool receives application logs, platform logs, and all logs that are available in the OutSystems management console (Service Center), such as:
 
 * Errors
 
@@ -129,6 +131,8 @@ For detailed information on streaming logs to different APM tools, refer to:
 * [Stream log data to Dynatrace](dynatrace.md)
 
 * [Stream log data to Datadog](datadog.md)
+
+* [Stream log data to Amazon S3](amazon-s3.md)
 
 ## Further reading
 

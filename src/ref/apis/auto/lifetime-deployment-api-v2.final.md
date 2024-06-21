@@ -2228,8 +2228,8 @@ Message from a deployment operation log.
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| DeploymentStatus | string |  | Yes |
-| Info | string |  | Yes |
+| DeploymentStatus | string | Type of deployment status. [aborted\|aborting\|finished_successful\|finished_with_errors\|finished_with_warnings\|force_finished\|needs_user_intervention\|running\|saved] | Yes |
+| Info | string | When DeploymentStatus is needs_user_intervention, the following values ​​can be returned: [business_process_impact\|deployment_prepared\|needs_configuration_or_confirmation\|deployment_suspended] | Yes |
 | DeploymentLog | [ [DeploymentMessage](#deploymentmessage) ] |  | Yes |
 
 #### DeploymentTechnology_v2

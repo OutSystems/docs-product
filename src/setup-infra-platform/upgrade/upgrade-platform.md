@@ -1,6 +1,5 @@
 ---
 summary: Explore the process of upgrading to OutSystems 11 (O11) with a focus on Platform Server enhancements and independent LifeTime upgrades.
-tags: support-devOps; support-upgrade
 locale: en-us
 guid: 617e2ef6-9fca-4cf0-9840-a0277670083e
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -160,15 +159,15 @@ In the OutSystems Cloud, the process of upgrading the Platform Server is handled
     
     1. When upgrading the **Development environment** of your infrastructure to **Platform Server 11.11.3 or earlier**, OutSystems also installs the latest version of the following components:
 
-        * [OutSystems UI](https://www.outsystems.com/forge/component-overview/1385/silk-ui-mobile)
-        * [OutSystems UI Web](https://www.outsystems.com/forge/4143/)
-        * [OutSystems Charts](https://www.outsystems.com/forge/4141/)
-        * [OutSystems Charts Web](https://www.outsystems.com/forge/4142/)
-        * [OutSystems Maps](https://www.outsystems.com/forge/component-overview/9909/)
-        * [OutSystems UI Templates Mobile](https://www.outsystems.com/forge/4148/)
-        * [OutSystems UI Templates Reactive](https://www.outsystems.com/forge/6335/)
-        * [OutSystems UI Web Screen Templates](https://www.outsystems.com/forge/4146/)
-        * [OutSystems Sample Data](https://www.outsystems.com/forge/4145/)
+        * [OutSystems UI](https://www.outsystems.com/forge/component-overview/1385/outsystems-ui-o11)
+        * [OutSystems UI Web](https://www.outsystems.com/forge/component-overview/4143/outsystems-ui-web-o11)
+        * [OutSystems Charts](https://www.outsystems.com/forge/component-overview/4141/outsystems-charts-o11)
+        * [OutSystems Charts Web](https://www.outsystems.com/forge/component-overview/4142/outsystems-charts-web-o11)
+        * [OutSystems Maps](https://www.outsystems.com/forge/component-overview/9909/outsystems-maps-o11)
+        * [OutSystems Templates Mobile](https://www.outsystems.com/forge/component-overview/4148/outsystems-templates-mobile-o11)
+        * [OutSystems Templates Reactive](https://www.outsystems.com/forge/component-overview/6335/outsystems-templates-reactive-o11)
+        * [OutSystems Screen Templates Traditional](https://www.outsystems.com/forge/component-overview/4146/outsystems-screen-templates-traditional-o11)
+        * [OutSystems Sample Data](https://www.outsystems.com/forge/component-overview/4145/outsystems-sample-data-o11)
     
     1. When upgrading to **Platform Server 11.12.0 or later**, you're reponsible for updating those components.
 

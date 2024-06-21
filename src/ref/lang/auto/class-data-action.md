@@ -9,7 +9,7 @@ summary: OutSystems 11 (O11) enables efficient server-side data fetching with Da
 
 # Data Action
 
-Data Actions are server-side processes that fetch complex data from databases or external systems. They execute after the [Screen](../../../building-apps/ui/screens/intro.md) loads, running concurrently with client-side [Aggregates](./class-aggregate.md).
+Data Actions are server-side processes that fetch complex data from databases or external systems. They execute after the [Screen](../../../building-apps/ui/screens/intro.md) loads, running concurrently with client-side [Aggregates](class-aggregate.md).
 
 <div class="info" markdown="1">
 

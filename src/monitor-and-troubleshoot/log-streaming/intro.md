@@ -92,6 +92,8 @@ Note that any other tool compatible with the OpenTelemetry protocol and OTLP log
 
 For tools that don't support native ingestion of OTLP log data such as **Datadog**, **Splunk**, **Amazon S3**, you must [set up an OpenTelemetry collector](configure-collector.md).
 
+IP whitelisting is not supported as OutSystems origin IPs might change.
+
 </div>
 
 ## Supported log data

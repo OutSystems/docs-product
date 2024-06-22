@@ -56,8 +56,8 @@ Collection of all client actions that trigger the API methods to customize and e
 
 |Widget|Description|
 |---|---|
-|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/).|
-|SetHighchartsXAxisConfigs|Extend the x-axis properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis).|
-|SetHighchartsYAxisConfigs|Extend the y-axis properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis).|
-|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/series).|
+|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations. <br>Due to security reasons, configurations/properties using callback functions, objects (e.g. arrays) cannot be used since they will not be parsed. <br>You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/).|
+|SetHighchartsXAxisConfigs|Extend the x-axis properties with additional Highcharts configurations. <br>Due to security reasons, configurations/properties using callback functions, objects (e.g. arrays) cannot be used since they will not be parsed. <br>You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis).|
+|SetHighchartsYAxisConfigs|Extend the y-axis properties with additional Highcharts configurations. <br>Due to security reasons, configurations/properties using callback functions, objects (e.g. arrays) cannot be used since they will not be parsed. <br>You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis).|
+|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations. <br>Due to security reasons, configurations/properties using callback functions, objects (e.g. arrays) cannot be used since they will not be parsed. <br>You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/series).|
 |UpdateChartColorScheme|A list of color values to use for the chart. Some of the formats accepted are: HTML, rgb, rgba and hex. |

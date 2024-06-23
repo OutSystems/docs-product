@@ -33,7 +33,7 @@ Deployment Zone Address
 
     <div class="info" markdown="1">
 
-    You can only change the Deployment Zone Address if there are no modules deployed in that deployment zone.
+    You have two ways to change the Deployment Zone Address, either fom Service Center if there are no modules deployed in that deployment zone or through the Configuration Tool Command Line /ModifyDeploymentZone .
 
     </div>
 

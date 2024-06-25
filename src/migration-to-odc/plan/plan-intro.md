@@ -25,7 +25,7 @@ Depending on the size of your app portfolio, you may follow different migration 
 
 <div class="info" markdown="1">
 
-Follow this approach if you have less than two business apps, less than 300 AOs, and you are part of the **Migration Early Access Program**. Otherwise, follow the [coexistence approach](#coexistence).
+Follow this approach if you have less than two business apps, less than 300 AOs, and if you been granted access to the Migration Kit. Otherwise, follow the [coexistence approach](#coexistence).
 
 </div>
 

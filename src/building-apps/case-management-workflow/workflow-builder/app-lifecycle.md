@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 Once you are comfortable with the generated app and want to evolve the app created in [Workflow Builder](http://workflowbuilder.outsystems.com/) to a production environment to make it available to your app end users, you have to contact your IT team.
 
-<div class="info" markdown=1>
+<div class="info" markdown="1">
 Note: Always make sure that you involve the IT team so that the overall experience with the Workflow Builder is as frictionless as possible.
 </div>
 

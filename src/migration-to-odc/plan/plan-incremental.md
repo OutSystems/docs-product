@@ -7,7 +7,7 @@ platform-version: o11
 figma: 
 ---
 
-# Plan and prepare O11 architecture for coexistence migration
+# Map O11 to ODC architecture for coexistence migration
 
 ## Overview
 

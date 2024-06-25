@@ -1,13 +1,22 @@
 ---
-summary: This article describes how to refactor from public roles in O11 to domain-specific roles in ODC.
+summary: 
 locale: en-us
-guid: b81449f8-885f-4493-aaa9-289e8e56694a
+guid: 4751d001-d519-4214-ae71-bec2e5b72f24
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=11%3A2&mode=design&t=blNAbpnofC4dwbOh-1
+figma:
+helpids: 30528
 ---
+# Asset consuming a Role
 
-# Refactor public roles to be ODC-compatible
+In ODC, Assets can't have dependencies to Roles from other Assets.
+This means that each App must define its own Roles and can't share them with other Apps.
+
+## How to solve
+
+You must solve this pattern in O11, before proceeding with the code migration to ODC.
+
+### Solve in O11
 
 In O11, you can have public roles shared across domains. However, in ODC, public roles are not allowed.
 
@@ -20,4 +29,3 @@ This can cause issues when converting the horizontal domain with the foundation 
     ![Diagram illustrating the creation of a role in each vertical domain for ODC](images/create-roles-in-domains-diag.png "Create Role in Each Domain")
 
 1. Map your end users to both roles in the domain. For more information, refer to [End User Management](https://success.outsystems.com/documentation/outsystems_developer_cloud/user_management/roles/).
-

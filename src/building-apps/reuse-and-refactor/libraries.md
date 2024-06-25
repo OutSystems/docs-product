@@ -48,7 +48,7 @@ For example, use Libraries to implement:
 Due to their stateless and database agnostic desing, Libraries can only contain certain elements. The elements you can use in Libraries are enforced both in Service Studio editors, while you're editing your module, and in the **Manage Dependencies** window, when you're referencing elements from other modules. Follows a list of the availability of elements in a Library module:
 
 | Service Studio element | Availability in Library modules |
-| --- | :---: |
+| :---: | :---: |
 | UI Flows | ![Green check circle icon indicating availability of elements in Library modules.](images/ic_check_circle.png "Check Circle Icon") |
 | Screens | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon") |
 | Blocks | ![Green check circle icon indicating availability of elements in Library modules.](images/ic_check_circle.png "Check Circle Icon") |

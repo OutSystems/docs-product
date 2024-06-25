@@ -9,12 +9,6 @@ figma:
 
 # Publish an app across infrastructures using the LifeTime API
 
-<div class="warning" markdown="1">
-
-This feature is currently available for use, and packaging and pricing details may be subject to updates in the future.
-
-</div>
-
 With built-in download and publish capabilities, you can easily move app or solution files from your source environment to your target environment, even across different infrastructures. This facilitates continuous deployment at scale and strengthens governance within the Center of Excellence (CoE).
 
 <div class="info" markdown="1">

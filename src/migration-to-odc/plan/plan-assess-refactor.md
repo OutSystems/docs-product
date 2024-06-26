@@ -7,7 +7,7 @@ platform-version: o11
 figma:
 ---
 
-# Assess app refactoring
+# Assess app architecture and ODC readiness
 
 After completing the [mapping of O11 to ODC architecture and adding the first version of your ODC architecture to the Migration Assessment Tool](plan-map-apps.md), you are ready to check the first assessment.
 

@@ -20,4 +20,4 @@ You must solve this pattern in O11, before proceeding with the code migration to
 
 To solve this pattern, review the O11 to ODC architecture mapping and move the O11 module with the Local Storage Entity to an O11 App, then map that O11 app to the ODC consumer.
 
-![Diagram showing the architecture review before and after. Before: ODC App 1 has O11 App 1 with O11 Module 1, ODC App 2 has O11 App 2 with O11 Module 2, and ODC App 3 has O11 App 3 with O11 Module 3. Strong dependencies to an ODC App aren't allowed. After: Each ODC App has its corresponding O11 App and Module without dependencies.](images/review-arch-consolidate.png "Architecture Review Before and After")
+![Diagram showing the architecture review before and after. Before: ODC App 1 has O11 App 1 with O11 Module 1, ODC App 2 has O11 App 2 with O11 Module 2, and ODC App 3 has O11 App 3 with O11 Module 3. Strong dependencies to an ODC App aren't allowed. After: Each ODC App has its corresponding O11 App and Module without dependencies.](images/review-arch-consolidate-diag.png "Architecture Review Before and After")

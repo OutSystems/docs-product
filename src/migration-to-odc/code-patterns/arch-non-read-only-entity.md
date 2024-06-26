@@ -24,4 +24,4 @@ Depending on your scenario, solve this pattern in one of the following ways:
 
 * If only one ODC App consumes the Entity, review the O11 to ODC architecture mapping and move the O11 module with the Entity to a new O11 App, then map that O11 App to the ODC consumer.
 
-    ![Diagram showing the architecture before and after review. Before: O11 Modules are within O11 Apps, which are within ODC Apps, with strong dependencies. After: O11 Modules are within O11 Apps, which are within ODC Apps, with no strong dependencies.](images/review-arch-consolidate.png "Architecture Review Before and After")
+    ![Diagram showing the architecture before and after review. Before: O11 Modules are within O11 Apps, which are within ODC Apps, with strong dependencies. After: O11 Modules are within O11 Apps, which are within ODC Apps, with no strong dependencies.](images/review-arch-consolidate-diag.png "Architecture Review Before and After")

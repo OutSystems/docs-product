@@ -22,8 +22,8 @@ To solve this pattern, review the O11 to ODC architecture mapping considering th
 
 * If only one ODC App or Library consumes the Client Action, move the O11 Module with the Client Action to a new O11 App, then map that O11 App to the ODC consumer.
 
-    ![Diagram showing the architecture review process. Before the review, O11 Module 1 is within ODC App 1. After the review, O11 Module 1 is moved to O11 App 4 and mapped to the ODC consumer.](images/review-arch-consolidate.png "Architecture Review Process for Single ODC App or Library")
+    ![Diagram showing the architecture review process. Before the review, O11 Module 1 is within ODC App 1. After the review, O11 Module 1 is moved to O11 App 4 and mapped to the ODC consumer.](images/review-arch-consolidate-diag.png "Architecture Review Process for Single ODC App or Library")
 
 * If several ODC Apps or Libraries consume the Client Action, convert the O11 Module with the Client Action to an O11 Library Module, move that O11 Module to a new O11 Ap, and then map that O11 App to an ODC Library.
 
-    ![Diagram showing the architecture review process. Before the review, O11 Modules are within ODC Apps. After the review, O11 Module 1 is moved to O11 App 4 and shared as a library in ODC Library 1.](images/review-arch-move-to-lib.png "Architecture Review Process for Multiple ODC Apps or Libraries")
+    ![Diagram showing the architecture review process. Before the review, O11 Modules are within ODC Apps. After the review, O11 Module 1 is moved to O11 App 4 and shared as a library in ODC Library 1.](images/review-arch-move-to-lib-1-diag.png "Architecture Review Process for Multiple ODC Apps or Libraries")

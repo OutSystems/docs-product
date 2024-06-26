@@ -38,3 +38,10 @@ After these steps, you have validated your ODC architecture, and your team needs
 1. In the Assessment report, remove the **Categories** filter.
 
 1. Check each code pattern, then decide how to solve each finding. This information is important for your development team, so they can estimate the refactoring effort and [prepare for the app migration](../prepare/prep-refactor-o11-apps.md).
+
+<div class="info" markdown="1">
+
+Make sure all O11 End Users have their email address field set. In **Users**, [set email addresses for all the End Users](../../user-management/end-user-manage/add-delete-users.md).
+This is needed to unblock the migration to ODC, since in ODC Users must have an email address set.
+
+</div>

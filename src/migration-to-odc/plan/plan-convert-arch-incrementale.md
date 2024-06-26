@@ -7,7 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=1%3A853&mode=design
 ---
 
-# Convert O11 architecture blueprint to ODC architecture blueprint
+# Convert O11 architecture to ODC architecture
 
 To map the existing O11 architecture to ODC architecture, OutSystems recommends that you analyze your existing O11 app architecture blueprint and perform additional refactoring and modifications. Keep iterating the architecture until you arrive at the final ODC architecture blueprint.
 

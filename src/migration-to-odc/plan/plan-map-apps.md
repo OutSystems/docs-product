@@ -126,7 +126,7 @@ Do the following:
 
     1. Select **Save mapping**.
 
-After you define and map all your ODC future assets, you are ready to start validating your architecture and assessing the required adjustment needs of your apps, to get them ready for the migration.
+After you define and map all your ODC future assets, you are ready to [start validating your architecture and assessing the required adjustment needs of your apps, to get them ready for the migration](plan-assess-refactor.md).
 
 **Example**
 

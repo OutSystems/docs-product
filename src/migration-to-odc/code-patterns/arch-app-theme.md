@@ -20,4 +20,4 @@ You must solve this pattern in O11, before proceeding with the code migration to
 
 To solve this pattern, review the O11 to ODC architecture mapping by converting the O11 Module with the Theme to an O11 Library module, move that O11 Module to a new O11 App, then map that new O11 app to an ODC Library.
 
-![Diagram showing the architecture review process for ODC and O11 modules, illustrating the transition from O11 modules within ODC apps to an O11 library module within an ODC library.](images/review-arch-move-to-lib.png "Architecture Review for ODC and O11 Modules")
+![Diagram showing the architecture review process for ODC and O11 modules, illustrating the transition from O11 modules within ODC apps to an O11 library module within an ODC library.](images/review-arch-move-to-lib-1-diag.png "Architecture Review for ODC and O11 Modules")

@@ -22,8 +22,8 @@ Depending on your scenario, review the O11 to ODC architecture mapping consideri
 
 * If only one ODC App or Library consumes the Image, move the O11 Module with the Image to a new O11 App, then map that O11 App to the ODC consumer.
 
-    ![Diagram showing the architecture review process for ODC and O11 modules, illustrating the movement of an O11 module to a new O11 app.](images/review-arch-consolidate.png "Architecture Review for ODC and O11 Modules")
+    ![Diagram showing the architecture review process for ODC and O11 modules, illustrating the movement of an O11 module to a new O11 app.](images/review-arch-consolidate-diag.png "Architecture Review for ODC and O11 Modules")
 
 * If several ODC Apps or Libraries consume the Image, convert the O11 Module with the Image to an O11 Library Module, move that O11 Module to a new O11 Ap, and then map that O11 App to an ODC Library.
 
-    ![Diagram showing the architecture review process for ODC and O11 modules, illustrating the movement of an O11 module to an ODC library.](images/review-arch-move-to-lib.png "Architecture Review for ODC and O11 Modules")
+    ![Diagram showing the architecture review process for ODC and O11 modules, illustrating the movement of an O11 module to an ODC library.](images/review-arch-move-to-lib-1-diag.png "Architecture Review for ODC and O11 Modules")

@@ -33,7 +33,7 @@ The app assessment helps you plan your migration to ODC, by supporting you with 
 
 After these steps, you have validated your ODC architecture, and your team needs to solve the remaining code patterns and findings by refactoring apps.
 
-## Prepare O11 app refactoring
+## Prepare O11 app changes for ODC readiness
 
 1. In the Assessment report, remove the **Categories** filter.
 

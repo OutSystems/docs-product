@@ -1069,24 +1069,51 @@
         - href: manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
         - href: manage-platform-app-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
 # Migration to ODC
-- href: migration-to-odc/intro.md
+- href: migration-to-odc/migration-intro.md
 - topics:
-    # Preparation
-    - href: migration-to-odc/preparation/process.md
-    - href: migration-to-odc/preparation/map-o11-to-odc-domains.md
-    - href: migration-to-odc/preparation/o11architecture-to-odc-architecture.md
-    - href: migration-to-odc/preparation/refactoring-o11-application/intro.md
+    #Plan
+    - href: migration-to-odc/plan/plan-intro.md
     - topics:
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-serveraction-to-serviceaction.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-roles.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-structures.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-systementities.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-siteproperties.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-extensions.md       
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-soap.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-bpt.md        
-    - href: migration-to-odc/reference.md
+        - href: migration-to-odc/setup-assessement-tool.md
+        - href: migration-to-odc/plan/plan-map-apps.md
+        - href: migration-to-odc/plan/plan-assess-refactor.md
+        - href: migration-to-odc/plan/plan-incremental.md
+        - href: migration-to-odc/plan/plan-map-incremental.md
+        - href: migration-to-odc/plan/plan-convert-arch-incrementale.md
+    # Preparation
+    - href: migration-to-odc/prepare/prep-intro.md
+    - topics:
+        - href: migration-to-odc/prepare/prep-refactor-o11-apps.md
+    # Code patterns
+    - href: migration-to-odc/code-patterns/intro.md
+    - topics:
+        - href: migration-to-odc/code-patterns/arch-server-action.md
+        - href: migration-to-odc/code-patterns/arch-client-action.md
+        - href: migration-to-odc/code-patterns/arch-block.md
+        - href: migration-to-odc/code-patterns/arch-lib-entity.md
+        - href: migration-to-odc/code-patterns/arch-non-read-only-entity.md
+        - href: migration-to-odc/code-patterns/arch-image.md
+        - href: migration-to-odc/code-patterns/arch-local-storage.md
+        - href: migration-to-odc/code-patterns/arch-process.md
+        - href: migration-to-odc/code-patterns/arch-resource.md
+        - href: migration-to-odc/code-patterns/arch-role.md
+        - href: migration-to-odc/code-patterns/arch-mobile-screen.md
+        - href: migration-to-odc/code-patterns/arch-web-screen.md
+        - href: migration-to-odc/code-patterns/arch-script.md
+        - href: migration-to-odc/code-patterns/arch-lib-service-action.md
+        - href: migration-to-odc/code-patterns/arch-priv-struct.md
+        - href: migration-to-odc/code-patterns/arch-app-theme.md
+        - href: migration-to-odc/code-patterns/arch-not-mapped.md
+        - href: migration-to-odc/code-patterns/arch-extension.md
+        - href: migration-to-odc/code-patterns/arch-system-element.md
+        - href: migration-to-odc/code-patterns/end-user-no-email.md
+        - href: migration-to-odc/code-patterns/elem-bpt.md
+        - href: migration-to-odc/code-patterns/elem-soap.md
+        - href: migration-to-odc/code-patterns/elem-rest-expose.md
+        - href: migration-to-odc/code-patterns/refactor-anonymous-registered-roles.md
+        - href: migration-to-odc/code-patterns/refactor-systementities.md
+        - href: migration-to-odc/code-patterns/refactor-siteproperties.md
+    - href: migration-to-odc/prepare/reference.md
 # Reference
 - href: ref/intro.md
 - topics:

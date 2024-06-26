@@ -7,11 +7,11 @@ platform-version: o11
 figma: 
 ---
 
-# Prepare O11 application architecture
+# Map O11 to ODC architecture for coexistence migration
 
-## Overview 
+## Overview
 
-The preparation phase is a period of refactoring your O11 apps so that they're ready for migration to the ODC platform.This document is intended for O11 application architects who are planning and preparing the existing O11 application architecture to enable smooth migration to ODC in the future.
+The preparation phase is a period of refactoring your O11 apps so that they're ready for migration to the ODC platform. This document is intended for O11 application architects who are planning and preparing the existing O11 application architecture to enable smooth migration to ODC in the future.
 
 ## Prepare existing O11 apps to migrate to ODC
 
@@ -41,18 +41,18 @@ While the Assessment tool is still under development, you can use the Discovery 
 ### Step 4: Map O11 domains to ODC apps and libraries 
 
 Once you have designed your domain-driven architecture, you can map your O11 horizontal and vertical domains to ODC apps and libraries. This exercise helps you understand if your domain architecture is well designed, allowing you to iterate on the design before starting to refactor. 
-For detailed information, refer to [map O11 domains to ODC apps and libraries](../preparation/o11architecture-to-odc-architecture.md).
+For detailed information, refer to [map O11 domains to ODC apps and libraries](plan-map-incremental.md).
 
 Next, you must analyze your existing O11 application architecture and perform additional and modifications to map the existing O11 architecture to ODC architecture.
-For detailed information, refer to [Convert O11 architecture blueprint to ODC architecture blueprint](../preparation/o11architecture-to-odc-architecture.md).
+For detailed information, refer to [Convert O11 architecture blueprint to ODC architecture blueprint](plan-convert-arch-incrementale.md).
 
 ### Step 5: Refactor your architecture to adhere to architecture best practices
 
-As you assess your existing O11 domain architecture, you must refactor your O11 application to ensure that you follow the best practices of architecture canvas and domain-driven architecture. 
+As you assess your existing O11 domain architecture, you must refactor your O11 application to ensure that you follow the best practices of architecture canvas and domain-driven architecture.
 
 Here are some guidelines for refactoring your O11 app:
 
-* [Refactor server actions to service action](../preparation/refactoring-o11-application/refactor-serveraction-to-serviceaction.md)
+* [Refactor server actions to service action](../code-patterns/arch-server-action.md)
 
 To learn more about fundamentals of ODC architecture and architecture design patterns in ODC, refer to [architecture fundamentals](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/apps/odc/1) and [architecture patterns](https://learn.outsystems.com/training/journeys/architecture-patterns-581/odc) under ODC training.
 
@@ -62,12 +62,12 @@ As you build your ODC application architecture, you must perform additional refa
 
 Here are some procedures and guidelines for refactoring your O11 app:
 
-* [Refactor anonymous and registered roles](../preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md)
-* [Refactor public roles](../preparation/refactoring-o11-application/refactor-public-roles.md)
-* [Refactor public structures](../preparation/refactoring-o11-application/refactor-public-structures.md)
-* [Refactor system entities](../preparation/refactoring-o11-application/refactor-systementities.md)
-* [Refactor site properties](../preparation/refactoring-o11-application/refactor-siteproperties.md)
-* [Refactor extensions](../preparation/refactoring-o11-application/refactor-extensions.md)
+* [Refactor anonymous and registered roles](../code-patterns/refactor-anonymous-registered-roles.md)
+* [Refactor public roles](../code-patterns/arch-role.md)
+* [Refactor public structures](../code-patterns/arch-priv-struct.md)
+* [Refactor system entities](../code-patterns/refactor-systementities.md)
+* [Refactor site properties](../code-patterns/refactor-siteproperties.md)
+* [Refactor extensions](../code-patterns/arch-extension.md)
 
 ### Step 7: Refactor code patterns
 
@@ -75,8 +75,8 @@ Some features in O11 aren't supported in ODC. For example, ODC does not support 
 
 Here are some code patterns that you must transform in O11 before migrating to ODC or modify the ODC code after the migration is complete:
 
-* [Refactor SOAP](refactoring-o11-application/refactor-soap.md)
-* [Refactor BPT](refactoring-o11-application/refactor-bpt.md)
+* [Refactor SOAP](../code-patterns/elem-soap.md)
+* [Refactor BPT](../code-patterns/elem-bpt.md)
 
 ## Additional resources
 

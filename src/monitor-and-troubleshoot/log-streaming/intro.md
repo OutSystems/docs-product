@@ -10,11 +10,9 @@ platform-version: o11
 
 # Introduction to log streaming
 
-## Log streaming
-
 <div class="info" markdown="1">
 
-Log streaming support is only available for OutSystems Cloud deployments.
+Log streaming support is only available for OutSystems Cloud deployments with a valid log streaming subscription.
 
 </div>
 
@@ -69,6 +67,8 @@ Before you start streaming logs, ensure you have:
 * Installed Platform Server version 11.23.1 or higher.
 
 * Installed LifeTime version 11.19.0 or higher.
+
+* A subscription to log streaming is required. Contact your Account Manager for provisioning.
 
 ## Supported tools
 

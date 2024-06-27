@@ -31,7 +31,7 @@ Besides the System Roles already provided, you can define your own custom Roles 
 
 ## Persistency in Roles
 
-Granting and revoking Roles during runtime (using the Grant&lt;Role name&gt;Role and Revoke&lt;Role name&gt;Role actions) can be persistent across multiple sessions or only be active for a single session. You can only change this setting for Traditional Web Apps.
+Granting and revoking Roles during runtime (using the Grant&lt;Role name&gt;Role and Revoke&lt;Role name&gt;Role actions) can be persistent across multiple sessions or only be active for a single session. You can only change this setting for Traditional Web Apps and Service Modules.
 
 ![Screenshot showing the 'Is Persistent' property settings for Roles in Service Studio](images/role-ispersistent-ss.png "Role Persistence Setting in Service Studio")
 

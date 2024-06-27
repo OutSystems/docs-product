@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 
 # Static Entities
 
-A **Static Entity** consists of a set of named values. Think of Static Entities as literal values stored in a database whose scope is always global. The **Records** folder of the Static Entity holds the data, and the Attributes define the structure of the data.
+A [**Static Entity**](../../../ref/lang/auto/class-static-entity.md) consists of a set of named values. Think of Static Entities as literal values stored in a database whose scope is always global. The **Records** folder of the Static Entity holds the data, and the Attributes define the structure of the data.
 
 The only action available for the Static Entities is the **Get&lt;StaticEntity&gt;** action, because OutSystems manages the data persistence for you.
 

@@ -14,11 +14,11 @@ OutSystems provides the necessary capabilities to implement use cases that requi
 
 When you install an OutSystems mobile app, it already includes all resources such as UI elements and client-side logic that are necessary for the app to run with no connectivity to the server. Data can be persisted locally in an SQLite database. Your mobile app only needs network connectivity to access data and logic on the server.
 
-When you install an OutSystems PWA, the service worker has already cached all the resources such as UI elements and client-side logic that are necessary for the app to run with no connectivity to the server. Data can be persisted locally in an IndexedDB database. Similarly to a mobile app, your PWA only needs network connectivity to access data and logic on the server. 
+When you install an OutSystems PWA, the service worker has already cached all the resources such as UI elements and client-side logic that are necessary for the app to run with no connectivity to the server. Data can be persisted locally in an IndexedDB database. Similarly to a mobile app, your PWA only needs network connectivity to access data and logic on the server.
 
 The following diagram shows the runtime architecture of a typical OutSystems mobile app. In PWA's the architecture is very similar but uses IndexedDB for the browser local storage and an offline framework composed of JavaScript.
 
-![Diagram illustrating the runtime architecture of a typical OutSystems mobile app with offline capabilities](images/offline-architecture.png "Offline Architecture Diagram")
+![Diagram illustrating the runtime architecture of a typical OutSystems mobile app with offline capabilities](images/offline-architecture-diag.png "Offline Architecture Diagram")
 
 To make your apps ready for scenarios with intermittent network access you need to define you local data model and implement a synchronization mechanism to exchange data between the device and the server when there is network access.
 

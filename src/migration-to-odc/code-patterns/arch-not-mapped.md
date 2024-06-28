@@ -14,12 +14,8 @@ This means that the ODC Asset will have broken references once you migrate it to
 
 ## How to solve
 
-You can decide to solve this pattern in O11, before migrating code, or in ODC, after migrating the code.
+You must solve this pattern in O11, before migrating code to ODC.
 
 ### Solve in O11
 
-Review the review the O11 to ODC architecture mapping by mapping the O11 producer App to an ODC App or Library.
-
-### Solve in ODC
-
-After migrating the asset to ODC, fix the broken dependency.
+Review the O11 to ODC architecture mapping by mapping the O11 producer App to an ODC App or Library.

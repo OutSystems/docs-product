@@ -11,7 +11,7 @@ helpids: 30544
 # Map O11 to ODC architecture for one shot migration
 
 If your O11 factory has two or less business apps, use this simplified approach to the conversion of your O11 architecture to your ODC architecture.
-This is the first step of the first stage in your O11 to ODC migration, [Plan app migration](plan-intro.md), that enables you to start assessing the required adjustment needs of your O11 apps.
+This step of the [Plan app migration](plan-intro.md) stage enables you to start assessing the required adjustment needs of your O11 apps.
 
 <div class="info" markdown="1">
 
@@ -91,14 +91,14 @@ Now, it's time to add the mapping you previously defined to the Migration Assess
 
 <div class="info" markdown="1">
 
-For all ODC Asset Types, currently, **Extensions** and **Forge** components can't be mapped.
+For all ODC Asset Types, currently, **Extensions** can't be mapped.
 For **ODC Libraries**, you can only map O11 Apps that only contain O11 Library Modules. Make sure you convert all O11 Modules of O11 Apps you want to map to and ODC Library to O11 Library Modules.
 
 </div>
 
 Do the following:
 
-1. In the Assessment Tool, create each of the future ODC Apps and Libraries, and map them to your O11 apps. For now you aren't able to map except for Extensions and Forge components. Do the following:
+1. In the Assessment Tool, create each of the future ODC Apps and Libraries, and map them to your O11 apps. For now you aren't able to map Extensions. Do the following:
 
     1. Access the Assessment Tool.
 

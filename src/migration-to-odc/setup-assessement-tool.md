@@ -23,6 +23,8 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
 * You are part of the Early Access Program, and have been granted access to the Migration Kit.
 
+* Your O11 infrastructure uses SQL Server databases.
+
 * Your O11 environments use Platform Server 11.8.0 or later.
 
 * Your IT User has the **Manage Users and Roles** permission.

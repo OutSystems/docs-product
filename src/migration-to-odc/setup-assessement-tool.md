@@ -25,7 +25,7 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
 * Your O11 infrastructure uses SQL Server databases.
 
-* Your O11 environments use Platform Server 11.8.0 or later.
+* Your O11 environments use Platform Server 11.18.1 or later.
 
 * Your IT User has the **Manage Users and Roles** permission.
 
@@ -64,7 +64,7 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
 1. Open Migration Assessment Tool from the environment in which you installed the Migration Assessment Tool Console. Log in using your IT User credentials.
 
-1. Go to the LifeTime management console, and create a service account and copy the authentication token.
+1. Go to the LifeTime management console, and [create a service account](../ref/apis/lifetime-deployment/rest-api-authentication.md) and copy the authentication token.
 
 1. In the Migration Assessment Tool, configure the access to LifeTime and the engine, by setting the following fields:
 

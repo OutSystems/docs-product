@@ -37,7 +37,7 @@ To categorize places do the following in the GoOutWeb module:
 
 4. By setting the Identifier, create the following records: `Restaurant`, `Cafe`, `Museum`, `Attraction,` and `Hotel`.
 
-    ![Animated GIF showing the process of adding records to a Static Entity named 'Category' with values like Restaurant, Cafe, Museum, Attraction, and Hotel in OutSystems.](images/static-entity-records.gif "Adding Records to Static Entity in OutSystems")
+    <iframe src="https://player.vimeo.com/video/973090333" width="750" height="721" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the process of adding records to a Static Entity in OutSystems.</iframe>
 
 5. Drag the relationship connector from the Category static entity to the Place entity. This creates a one-to-many relationship.
 

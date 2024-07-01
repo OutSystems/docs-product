@@ -28,7 +28,7 @@ In the cross-platform Service Studio, to create a record for a variable, you nee
 1. Optionally, change the **Data Type** and the **Name** of the attribute.
 1. In the variable context menu you can add more attributes to the Record.
 
-    ![Animated GIF showing the process of creating a record for a variable in Service Studio](images/structure-create-use-7-ss.gif "Creating a Record for a Variable in Service Studio")
+    <iframe src="https://player.vimeo.com/video/973090356" width="750" height="375" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the process of creating a record for a variable in Service Studio.</iframe>
 
 In the Windows-only Service Studio, to create a record for a variable, you need to:
 1. Create a new variable in the element where the Record is to be used.

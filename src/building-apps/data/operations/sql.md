@@ -49,7 +49,6 @@ To learn more about SQL in OutSystems, check out the following free courses:
 * [SQL Queries](https://www.outsystems.com/training/courses/146/sql-queries/). Write your SQL queries to interact with data in OutSystems.
 * [Getting Started with OutSystems for SQL Developers](https://www.outsystems.com/training/courses/169/getting-started-with-outsystems-for-sql-developers/). Learn how to create a data model, fetch data, and how to use an existing external database in an OutSystems app.
 
-
 </div>
 
 ## Write your own SQL query
@@ -80,7 +79,7 @@ You can test your work by clicking the `TEST` button located at the bottom of th
 
 1. Click **TEST**.
 
-![Animated GIF showing the process of testing a SQL query in the OutSystems platform](images/test-sql-ss.gif "Testing SQL Query in OutSystems")
+    <iframe src="https://player.vimeo.com/video/973090415" width="750" height="501" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video testing a SQL query in the OutSystems platform.</iframe>
 
 ## Convert an Aggregate to SQL
 
@@ -112,7 +111,7 @@ To convert an existing Aggregate to a SQL element follow these steps:
 
 1. Click **PROCEED**.
 
-![Animated GIF demonstrating how to convert an Aggregate to a SQL element in OutSystems](images/convert-to-sql-ss.gif "Converting Aggregate to SQL Element")
+    <iframe src="https://player.vimeo.com/video/973090206" width="750" height="501" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing hot to convert an Aggregate to a SQL element.</iframe>
 
 Your action flow now includes a **SQL** element based on the original Aggregate. Service Studio disables and keeps the original Aggregate in the action flow. After you validate the query results of the new **SQL** element, delete the Aggregate.
 

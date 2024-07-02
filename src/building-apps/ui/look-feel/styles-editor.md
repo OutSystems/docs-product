@@ -57,7 +57,7 @@ How to change the style of a widget.
 1. Adjust outer and inner spacing in **Layout/Margin** and **Layout/Padding**.
 1. Add borders in the **Borders** section and adjust the roundness.
 
-<iframe src="https://player.vimeo.com/video/973090389" width="750" height="648" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing how to change the style of a widget using the Styles Editor.</iframe>
+<iframe src="https://player.vimeo.com/video/973090389" width="750" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing how to change the style of a widget using the Styles Editor.</iframe>
 
 ### Save a style
 

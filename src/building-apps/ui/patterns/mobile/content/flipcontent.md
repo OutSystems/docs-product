@@ -26,7 +26,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
 
-![Animated example of the Flip Content UI pattern in action, showing the front and back content flipping.](images/flipcontent-example.gif "Flip Content Interaction Example")
+<iframe src="https://player.vimeo.com/video/973090281" width="750" height="296" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing how the Flip Content UI pattern in action, showing the front and back content flipping.</iframe>
 
 **How to use the Flip content UI Pattern**
 

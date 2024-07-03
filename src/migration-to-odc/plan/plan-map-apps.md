@@ -10,6 +10,12 @@ helpids: 30544
 
 # Map O11 to ODC architecture for one shot migration
 
+<div class="info" markdown="1">
+
+This article only applies to customers with access to the Migration Kit.
+
+</div>
+
 If your O11 factory has two or less business apps, use this simplified approach to the conversion of your O11 architecture to your ODC architecture.
 This step of the [Plan app migration](plan-intro.md) stage enables you to start assessing the required adjustment needs of your O11 apps.
 

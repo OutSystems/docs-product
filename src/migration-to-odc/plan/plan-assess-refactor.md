@@ -9,6 +9,12 @@ figma:
 
 # Assess app architecture and ODC readiness
 
+<div class="info" markdown="1">
+
+This article only applies to customers with access to the Migration Kit.
+
+</div>
+
 After completing the [mapping of O11 to ODC architecture and adding the first version of your ODC architecture to the Migration Assessment Tool](plan-map-apps.md), you are ready to check the first assessment.
 
 The app assessment helps you plan your migration to ODC, by supporting you with the following:

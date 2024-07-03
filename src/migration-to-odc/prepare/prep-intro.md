@@ -9,7 +9,11 @@ figma:
 
 # Prepare O11 app
 
-## Overview
+<div class="info" markdown="1">
+
+This article only applies to customers with access to the Migration Kit.
+
+</div>
 
 The preparation stage is a period of refactoring your O11 apps so that they're ready for migration to the ODC platform. This document is intended for O11 application architects who are planning and preparing the existing O11 application architecture to enable smooth migration to ODC in the future.
 

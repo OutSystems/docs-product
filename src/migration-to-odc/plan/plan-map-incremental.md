@@ -9,6 +9,12 @@ figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?ty
 
 # Map O11 domains to ODC apps and libraries
 
+<div class="info" markdown="1">
+
+This article only applies to customers with access to the Migration Kit.
+
+</div>
+
 In ODC, you can create apps or libraries. An app can be a web, tablet, or mobile app. An ODC app encapsulates business concepts, UI, logic, and data of a specific business context. The ODC apps are loosely coupled and have independent lifecycles. 
 
 Libraries are a collection of reusable components used across multiple apps. They are used to implement business-agnostic components such as themes, integration wrappers, and logic utilities. They are strongly coupled with ODC apps and are packaged into a version included inside the application container.

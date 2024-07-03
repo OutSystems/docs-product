@@ -9,6 +9,12 @@ figma:
 
 # Set up the Migration Assessment Tool
 
+<div class="info" markdown="1">
+
+This article only applies to customers with access to the Migration Kit.
+
+</div>
+
 The Migration Assessment Tool helps you accelerate the Plan and Preparation stages of your O11 to ODC Migration, in the following ways:
 
 * Define the O11 to ODC architecture blueprint, based on the Apps and Modules available in your O11 Development environment.

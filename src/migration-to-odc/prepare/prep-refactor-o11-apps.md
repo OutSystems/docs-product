@@ -9,6 +9,12 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 
 # Make O11 apps compatible with ODC
 
+<div class="info" markdown="1">
+
+This article only applies to customers with access to the Migration Kit.
+
+</div>
+
 Once the existing O11 app architecture to migrate to ODC has been prepared, you must ensure your O11 apps are ODC-compatible. The Migration Assessment Tool enables you to identify the inconsistent code patterns in your O11 apps, and is a key step before migrating your code to ODC.
 
 ## Prerequisites

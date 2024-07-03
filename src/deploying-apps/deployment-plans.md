@@ -131,6 +131,7 @@ To create and edit deployment plans in parallel for the same target environment:
 
 To execute deployment plans in parallel for the same target environment:
 * **OutSystems Cloud infrastructures**: LifeTime 11.21.0 and higher
+* **Self-managed infrastructures**: LifeTime 11.24.0 and higher
 
 </div>
 

@@ -12,7 +12,7 @@ figma:
 
 [Experience Builder](https://experiencebuilder.outsystems.com/) is a Software as a Service (SaaS) tool that accelerates the creation of pixel-perfect mobile apps with great UX, by helping you create prototypes of your next mobile app. The best UX that's typically present in B2C apps can also be used for your B2B and B2E projects.
 
-![Animated GIF showcasing updates and features in the OutSystems Experience Builder](images/product-update.gif "Experience Builder Product Update Animation")
+<iframe src="https://player.vimeo.com/video/973090304" width="750" height="354" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the updates and features in OutSystems Experience Builder.</iframe>
 
 OutSystems Team Leaders and Developers, as well as UX/UI Designers working with OutSystems teams, can use Experience Builder to do the following:
 
@@ -54,3 +54,4 @@ Patient Healthcare
 If you are an OutSystems Team Leader check out [how Experience Builder works](how-works.md) and [how to set up Experience Builder](how-setup.md). After everything is set up, check out [how to use Experience Builder](how-use.md).
 
 If you are an OutSystems Developer or a UX/UI Designer check out [how to use Experience Builder](how-use.md).
+

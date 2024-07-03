@@ -53,6 +53,7 @@ The following elements displayed in the element tree can have Input Parameters:
 * Emails
 * External Sites
 * JavaScript elements (available on Client Actions)
+* Advanced SQL
 
 The Input Parameters of the following elements have additional properties:
 

@@ -77,4 +77,4 @@ In the following Sorting Example, a reactive application displays a list of empl
 
 1. Publish and test. Verify the list sorting changes after clicking the **Sort ASC** or **Sort DESC** buttons.  
 
-    ![Animated GIF demonstrating the sorting functionality in the SortingExample Reactive Web App after clicking Sort ASC and Sort DESC buttons.](images/sort-aggregate-ex5-ss.gif "Testing Sort Functionality")
+    <iframe src="https://player.vimeo.com/video/973090257" width="750" height="454" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the sorting functionality.</iframe>

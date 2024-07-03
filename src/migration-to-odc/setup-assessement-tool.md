@@ -23,19 +23,23 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
 * You are part of the Early Access Program, and have been granted access to the Migration Kit.
 
-* Your O11 environments use Platform Server 11.8.0 or later.
+* Your O11 infrastructure uses SQL Server databases.
+
+* Your O11 environments use Platform Server 11.18.1 or later.
+
+* One of your non-LifeTime environments, where you publish the Migration Assessment Tool Console, has [**Single Sign-On Betwwen App Types** enabled](../security/configure-authentication.md). Please note that to enable this setting, you must also [toogle the **Enable HTTP Strict Transport Security (HSTS)**](../security/enforce-https-security.md) and [enable secure session cookies](../security/secure-cookies-enable-secure-session.md) in that environment.
 
 * Your IT User has the **Manage Users and Roles** permission.
 
 ## Install the Migration Assessment Tool Engine
 
-1. Download the [Migration Assessment Tool Engine solution pack]().
+1. Download the [Migration Assessment Tool Engine solution pack](resources/Migration_Assessment_Engine_v1_0.osp).
 
 1. In your **LifeTime environment**, open Service Center and [upload and publish the Migration Assessment Tool Engine solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
 
 ## Install the Migration Assessment Tool Console
 
-1. Download the [Migration Assessment Tool Console solution pack]().
+1. Download the [Migration Assessment Tool Console solution pack](resources/Migration_Assessment_Console_v1_0.osp).
 
 1. In any of your Environments, except for the LifeTime environment, open Service Center and [upload and publish the Migration Assessment Tool Console solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
 
@@ -46,23 +50,23 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
     </div>
 
-1. Still in the Service Center of the same Environment, [enable Single sign-on between app types (SSO)](../security/configure-authentication.md).
+1. Still in the Service Center of the same Environment, ensure [**Single Sign-On Betwwen App Types**](../security/configure-authentication.md) is enabled.
 
 ## Install the Probe in the Development environment
 
-1. Download the [Migration Assessment Tool Probe solution pack]().
+1. Download the [Migration Assessment Tool Probe solution pack](resources/Migration_Assessment_Probe_v1_0.osp).
 
 1. In your **Development environment**, open Service Center and [upload and publish the Migration Assessment Tool Probe solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
 
 ## Optional - Deploy the Probe to other environments
 
-1. In the LifeTime console, deploy the Migration Assessment Tool Probe from the Development environment to the target Environments.
+1. In the LifeTime console, deploy the Migration Assessment Tool Probe from the Development environment to other Environments where you want to also check the ODC-readiness of apps. For example, you may want to deploy the probe to the QA environment, so you can later run the assessment on apps during the app testing phase.
 
 ## Configure the Migration Assessment Tool
 
 1. Open Migration Assessment Tool from the environment in which you installed the Migration Assessment Tool Console. Log in using your IT User credentials.
 
-1. Go to the LifeTime management console, and create a service account and copy the authentication token.
+1. Go to the LifeTime management console, and [create a service account](../ref/apis/lifetime-deployment/rest-api-authentication.md) and copy the authentication token.
 
 1. In the Migration Assessment Tool, configure the access to LifeTime and the engine, by setting the following fields:
 

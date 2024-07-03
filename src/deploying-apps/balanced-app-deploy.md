@@ -18,9 +18,7 @@ This guide applies only to self-managed installations. It doesn't apply to OutSy
 
 OutSystems hot-deploys the new versions of your applications with no downtime. At any time, it's possible to [rollback to a previous version](rollback-to-a-previous-version.md) if, for example, critical bugs are detected.
 
-For highly loaded farm environments, the recommendation is to perform a balanced application deployment.
-
-This article describes the steps to deploy an application into a highly loaded OutSystems farm environment. The deployment process is balanced throughout the existing front-ends, guaranteeing no downtime for the applications.
+This article describes the steps to deploy applications as a part of a blue-green deployment strategy, further limiting the impact of critical bugs. The deployment process is balanced throughout the existing front-ends.
 
 ![Illustration of the balanced application deployment process in OutSystems](images/balanced-app-deploy-1-diag.png "Balanced Application Deployment Process")
 
@@ -46,7 +44,7 @@ The overall procedure is the following:
 
 * Once all front-ends are running the new versions of the applications, the load balancer is configured to redirect traffic among all of them.
 
-By performing an incremental deployment, this process ensures no downtime.
+This process allows the deployment to be rolled back before it reaches end-users.
 
 For this procedure, you will have to identify **two groups** of front-end servers:
 
@@ -68,9 +66,9 @@ Note that, if the environment uses [Deployment Zones](zones/intro.md) for applic
 
 * Annotate the procedure to have the actual front-end/machine names so that you can reference them during the execution of the deployment.
 
-## Deploying applications in a highly loaded farm environment  
+## Deploying applications using a balanced application deployment
 
-Follow the steps below to execute a balanced application deployment.
+Follow the steps below to execute a blue-green deployment.
 
 **Step 1. Disable the OutSystems Scheduler Service in all front-ends (Updating and Loaded front-ends)**
 

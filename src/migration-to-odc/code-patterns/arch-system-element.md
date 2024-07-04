@@ -484,6 +484,6 @@ Depending on the scenario, do one of the following:
 
 * For [System entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel/):
 
-     * If there's a dependency to the User entity, use the ODC cache based Users entity. Note that in ODC the cache based User entity has a simpler field structure when compared to the O11 User entity.
+     * If there's a dependency to the User entity, check that your code dependent on this entity works properly. In ODC the cache based User entity has a simpler field structure when compared to the O11 User entity, so some fields aren't available.
  
      * Otherwise, refactor your code to avoid the dependency to the system entity.

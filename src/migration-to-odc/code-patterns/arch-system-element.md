@@ -11,6 +11,10 @@ helpids: 30538
 
 Most of the functionality provided by O11 system elements is available in ODC, except for functionality that either doesn't work with the cloud-native architecture of ODC or that relates to functionality that isn't available in ODC.
 
+System elements includes functionality exposed as Actions and built-in functions, and also includes [system Entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel).
+
+In ODC, system entities don't exist. Therefore, any reference to these entities must be removed except for the User entity that exists as a cache but with a simpler field structure.
+
 The following sections list the system actions that still exist in ODC and don't haven't changed, the system elements that still exist but that changed, and finally the system elements that aren't available in ODC.
 
 ## Functionality available in ODC without changes { #no-changes }
@@ -470,8 +474,16 @@ You must solve this pattern in ODC, after proceeding with the code migration to 
 
 Depending on the scenario, do one of the following:
 
-* If the [functionality of the system element is available in ODC without changes](#no-changes), ensure the dependencies are defined correctly.
+* For functionality exposed as actions or built-in functions:
 
-* If the [functionality of the system element is available in ODC with changes](#changes), implement the changes in your ODC Assets.
+    * If the [functionality of the system element is available in ODC without changes](#no-changes), ensure the dependencies are defined correctly.
+    
+    * If the [functionality of the system element is available in ODC with changes](#changes), implement the changes in your ODC Assets.
+    
+    * If the [functionality of the system element isn't available in ODC](#not-available), revisit your code since it no longer has access to these O11 functionalities.
 
-* If the [functionality of the system element isn't available in ODC](#not-available), revisit your code since it no longer has access to these O11 functionalities.
+* For [System entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel/):
+
+     * If there's a dependency to the User entity, use the ODC cache based Users entity. Note that in ODC the cache based User entity has a simpler field structure when compared to the O11 User entity.
+ 
+     * Otherwise, refactor your code to avoid the dependency to the system entity.

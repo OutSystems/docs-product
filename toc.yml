@@ -1100,9 +1100,7 @@
         - href: migration-to-odc/code-patterns/arch-resource.md
         - href: migration-to-odc/code-patterns/arch-role.md
         - href: migration-to-odc/code-patterns/arch-mobile-screen.md
-        - href: migration-to-odc/code-patterns/arch-web-screen.md
         - href: migration-to-odc/code-patterns/arch-script.md
-        - href: migration-to-odc/code-patterns/arch-lib-service-action.md
         - href: migration-to-odc/code-patterns/arch-priv-struct.md
         - href: migration-to-odc/code-patterns/arch-app-theme.md
         - href: migration-to-odc/code-patterns/arch-not-mapped.md
@@ -1111,9 +1109,7 @@
         - href: migration-to-odc/code-patterns/end-user-no-email.md
         - href: migration-to-odc/code-patterns/elem-bpt.md
         - href: migration-to-odc/code-patterns/elem-soap.md
-        - href: migration-to-odc/code-patterns/elem-rest-expose.md
         - href: migration-to-odc/code-patterns/refactor-anonymous-registered-roles.md
-        - href: migration-to-odc/code-patterns/refactor-systementities.md
         - href: migration-to-odc/code-patterns/refactor-siteproperties.md
     - href: migration-to-odc/prepare/reference.md
 # Reference

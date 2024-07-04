@@ -65,7 +65,7 @@ Here are some procedures and guidelines for refactoring your O11 app:
 * [Refactor anonymous and registered roles](../code-patterns/refactor-anonymous-registered-roles.md)
 * [Refactor public roles](../code-patterns/arch-role.md)
 * [Refactor public structures](../code-patterns/arch-priv-struct.md)
-* [Refactor system entities](../code-patterns/refactor-systementities.md)
+* [Refactor system entities](../code-patterns/arch-system-element.md#how-to-solve)
 * [Refactor site properties](../code-patterns/refactor-siteproperties.md)
 * [Refactor extensions](../code-patterns/arch-extension.md)
 

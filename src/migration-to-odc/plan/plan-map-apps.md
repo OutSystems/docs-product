@@ -98,7 +98,7 @@ Now, it's time to add the mapping you previously defined to the Migration Assess
 <div class="info" markdown="1">
 
 For all ODC Asset Types, currently, **Extensions** can't be mapped.
-For **ODC Libraries**, you can only map O11 Apps that only contain O11 Library Modules. Make sure you convert all O11 Modules of O11 Apps you want to map to and ODC Library to O11 Library Modules.
+For **ODC Libraries**, you can only map O11 Apps that only contain O11 Library Modules. Make sure you convert all O11 Modules of O11 Apps you want to map to an ODC Library to O11 Library Modules.
 
 </div>
 
@@ -125,8 +125,8 @@ Do the following:
 
         <div class="info" markdown="1">
 
-        For all ODC Asset Types, currently, **Extensions** and **Forge** components can't be mapped.
-        For **ODC Libraries**, you can only map O11 Apps that only contain O11 Library Modules. Make sure you convert all O11 Modules of O11 Apps you want to map to and ODC Library to O11 Library Modules.
+        For all ODC Asset Types, currently, **Extensions** can't be mapped.
+        For **ODC Libraries**, you can only map O11 Apps that only contain O11 Library Modules. Make sure you convert all O11 Modules of O11 Apps you want to map to an ODC Library to O11 Library Modules.
 
         </div>
 

@@ -33,7 +33,7 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
 * Your O11 environments use Platform Server 11.18.1 or later.
 
-* One of your non-LifeTime environments, where you publish the Migration Assessment Tool Console, has [**Single Sign-On Betwwen App Types** enabled](../security/configure-authentication.md). Please note that to enable this setting, you must also [toogle the **Enable HTTP Strict Transport Security (HSTS)**](../security/enforce-https-security.md) and [enable secure session cookies](../security/secure-cookies-enable-secure-session.md) in that environment.
+* One of your non-LifeTime environments, where you publish the Migration Assessment Tool Console, has [**Single Sign-On Between App Types** enabled](../security/configure-authentication.md). Please note that to enable this setting, you must also [toggle the **Enable HTTP Strict Transport Security (HSTS)**](../security/enforce-https-security.md) and [enable secure session cookies](../security/secure-cookies-enable-secure-session.md) in that environment.
 
 * Your IT User has the **Manage Users and Roles** permission.
 

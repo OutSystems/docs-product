@@ -16,7 +16,7 @@ OutSystems cross-region disaster recovery (XRDR) requires the subscription of an
 
 </div>
 
-OutSystems cross-region disaster recovery (XRDR) is a strategy that allows you to recover your OutSystems Cloud platform from the complete loss of an Amazon Web Services (AWS) or OutSystems cloud region. The strategy involves backing up your data, apps, and cloud infrastructure across different geographic regions. With cross-region disaster recovery, you get business continuity and data protection against the most impactful natural or man-made disasters.
+OutSystems cross-region disaster recovery (XRDR) is a strategy that allows you to recover your OutSystems Cloud platform from the complete loss of an Amazon Web Services (AWS) or OutSystems Cloud region. The strategy involves backing up your data, apps, and cloud infrastructure across different geographic regions. With cross-region disaster recovery, you get business continuity and data protection against the most impactful natural or man-made disasters.
 
 ## Key concepts of cross-region disaster recovery
 
@@ -58,7 +58,7 @@ The following are some of the benefits of cross-region disaster recovery:
 
 * **Compliance**
 
-    * For many industries (for example, healthcare and government), a business continuity disaster recovery plan that is compliant with disasters that may affect a region within a 100-kilometer radius is mandatory. OutSystems XRDR allows you to choose the recovery region from any of the available OutSystems cloud regions. 
+    * For many industries (for example, healthcare and government), a business continuity disaster recovery plan that is compliant with disasters that may affect a region within a 100-kilometer radius is mandatory. OutSystems XRDR allows you to choose the recovery region from any of the available OutSystems Cloud regions. 
 
     * Data sovereignty: With OutSystems XRDR, you can choose the recovery region from any of the available OutSystems Cloud regions.
 

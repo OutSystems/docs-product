@@ -26,6 +26,7 @@ Depending on the size of your app portfolio, you may follow different migration 
 <div class="info" markdown="1">
 
 Follow this approach if you have less than two business apps, less than 300 AOs, and if you been granted access to the Migration Kit. Otherwise, follow the [coexistence approach](#coexistence).
+If you don't have access to the Migration Kit please reach out to your OutSystems account team to get more information.
 
 </div>
 

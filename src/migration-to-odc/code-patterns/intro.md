@@ -24,7 +24,6 @@ Here's some guidelines to refactor your O11 app:
 * [Asset consuming an ODC application Client Action](arch-client-action.md)
 * [Asset consuming an extension](arch-extension.md)
 * [Asset consuming an Image from an Application](arch-image.md)
-* [Library consuming an ODC application Entity](arch-lib-entity.md)
 * [Asset consuming a Local Storage Entity](arch-local-storage.md)
 * [Asset consuming a Screen in mobile app](arch-mobile-screen.md)
 * [Application consuming a non-read only Entity](arch-non-read-only-entity.md)

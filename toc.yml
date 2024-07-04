@@ -1092,7 +1092,6 @@
         - href: migration-to-odc/code-patterns/arch-server-action.md
         - href: migration-to-odc/code-patterns/arch-client-action.md
         - href: migration-to-odc/code-patterns/arch-block.md
-        - href: migration-to-odc/code-patterns/arch-lib-entity.md
         - href: migration-to-odc/code-patterns/arch-non-read-only-entity.md
         - href: migration-to-odc/code-patterns/arch-image.md
         - href: migration-to-odc/code-patterns/arch-local-storage.md

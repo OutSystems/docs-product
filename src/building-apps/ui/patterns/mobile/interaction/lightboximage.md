@@ -31,9 +31,9 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Lightbox Image widget into the Main Content area of your application's screen.
@@ -43,7 +43,7 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
       By default, the Lightbox Image widget contains an Image placeholder. You can add as many images as required by dragging the Image widget from the Toolbox into the Lightbox Image widget.
 
 1. Select the **Image** placeholder and on the **Properties** tab, from the **Image** drop-down, select or import the thumbnail image you want to display. In this example, we use the sample OutSystems UI Images.
-    
+
     ![Example of selecting an image for the Image placeholder in the Lightbox Image widget properties tab](images/lightboxmob-image-3.png "Setting the Image Placeholder Properties")
 
     Note: In this example, the image property is set to **Local Image**. You can also choose [External URL or Binary Data](../../../image/display-image.md).
@@ -71,3 +71,5 @@ The Lightbox Image UI pattern can be used only with images.
 Watch how the [Product Overview sample](https://silkui.outsystems.com/Samples_Mobile.aspx#Mobile_Details-Samples_ProductOverview) uses the Lightbox Image UI Pattern:
 
 ![Animated GIF showing the Product Overview sample application using the Lightbox Image UI Pattern](images/Sample_LightBoxImage.gif "Product Overview Sample Using Lightbox Image UI Pattern")
+
+<iframe src="https://player.vimeo.com/video/977630859" width="372" height="666" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video exhibiting an application using the Lightbox Image UI Pattern.</iframe>

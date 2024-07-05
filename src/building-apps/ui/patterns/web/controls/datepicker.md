@@ -31,12 +31,12 @@ You can use the Date Picker UI Pattern to allow the user to select a single or a
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
-1. On the **Properties** tab, enter the Input **Name**. In this example we call it **datepicker**. 
+1. On the **Properties** tab, enter the Input **Name**. In this example we call it **datepicker**.
 
     ![Screenshot showing where to enter the Input Name for the Date Picker](images/datepicker-image-14.png "Setting the Input Name")
 
@@ -45,7 +45,7 @@ You can use the Date Picker UI Pattern to allow the user to select a single or a
 1. On the properties tab, set the Variable **Data Type** to **Date**.
 
     ![Screenshot demonstrating how to set the Variable Data Type to Date for the Date Picker](images/datepicker-image-16.png "Setting the Variable Data Type")
- 
+
 1. From the Toolbox, drag the Date Picker widget into the Main Content area of your application's screen.
 
 1. Set the **InputWidgetId** to the input Id. 
@@ -85,7 +85,7 @@ For advanced options, you can check the official documentation of the [Pikaday l
 | EventsList (DateTime List): Optional | A list of events (type Date Time) |
 | AdvancedFormatJSON (DateTime List): Optional | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: <https://github.com/dbushell/Pikaday> |
 
-![Animated GIF demonstrating the interaction with the Date Picker UI in a Traditional Web App](images/datepicker-gif-1.gif "Date Picker Interaction")
+<iframe src="https://player.vimeo.com/video/977630375" width="750" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with the Date Picker UI in a Traditional Web App.</iframe>
 
 ## Device Compatibility
 

@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away.
 
-![Animated GIF showing the interaction with the Tabs UI Pattern in a Traditional Web App](images/tabs-1.gif "Tabs UI Pattern Interaction")
+<iframe src="https://player.vimeo.com/video/977630954" width="750" height="231" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the interaction with the Tabs UI Pattern in a Traditional Web App.</iframe>
 
 **How to use the Tabs UI Pattern**
 

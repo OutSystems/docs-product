@@ -70,6 +70,4 @@ The Lightbox Image UI pattern can be used only with images.
 
 Watch how the [Product Overview sample](https://silkui.outsystems.com/Samples_Mobile.aspx#Mobile_Details-Samples_ProductOverview) uses the Lightbox Image UI Pattern:
 
-![Animated GIF showing the Product Overview sample application using the Lightbox Image UI Pattern](images/Sample_LightBoxImage.gif "Product Overview Sample Using Lightbox Image UI Pattern")
-
 <iframe src="https://player.vimeo.com/video/977630859" width="372" height="666" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video exhibiting an application using the Lightbox Image UI Pattern.</iframe>

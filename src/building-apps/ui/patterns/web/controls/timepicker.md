@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Time Picker UI Pattern to select a single time from a drop-down list.
 
-  ![Animated GIF showing the interaction with the Time Picker UI Pattern in a Traditional Web App](images/timepicker-gif-1.gif "Time Picker Interaction")
+  <iframe src="https://player.vimeo.com/video/977630997" width="750" height="281" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with the Time Picker UI Pattern in a Traditional Web App.</iframe>
 
 **How to use the Time Picker UI Pattern**
 

@@ -39,7 +39,7 @@ This section describes the database entities that support Timers and their funct
 
 #### Entity Meta_Cyclic_Job
 
-This entity contains the definitions of Timers created in modules which are stored in records in the **ossys_Meta_Cyclic_Job** database table. These records are created and managed by OutSystems and the **Effective_Timeout** is the only attribute that you can change.
+This entity contains the definitions of Timers created in modules. These records are created and managed by OutSystems and the **Effective_Timeout** is the only attribute that you can change.
 
 Here's the complete description of the attributes:
 
@@ -62,7 +62,7 @@ This entity contains the information about all Timers to be executed by the Sche
 
 As there may be multiple Front-end Server nodes executing Timers, each with its own time, the time reference for executing Timers is always the database clock.
 
-Records of this entity are stored in the database in the **ossys_Cyclic_Job** table. They're created and managed by OutSystems.
+Records of this entity are created and managed by OutSystems.
 
 The **Schedule** and **Next_Run** are the only attributes of this entity that you can change. However, don’t set them when the Timer is being executed, which can be verified by checking the value in the **Is_Running_Since** attribute:
 
@@ -90,7 +90,7 @@ This entity contains the information of Timers to be executed by the Scheduler S
 
 As there may be multiple Front-end Server nodes executing Timers, each with its own time, the time reference for executing Timers is always the database clock.
 
-Records of this entity are stored in the database in the **ossys_Cyclic_Job_Shared** table. They're created and managed by OutSystems.
+Records of this entity are created and managed by OutSystems.
 
 The **Schedule** and **Next_Run** are the only attributes of this entity that you can change. However, don’t set them when the Timer is being executed, which can be verified by checking the value in the **Is_Running_Since** attribute:
 
@@ -111,9 +111,10 @@ Here's the complete description of the attributes:
 | **Is_Running_By** | This attribute has the name of the Front-end Server node that's executing the Timer. The **Is_Running_Since** attribute is also set.|
 | **Number_Of_Tries** | The number of consecutive times the Timer was executed without success.|
 
-#### Tables oslog_Cyclic_Job_< N >
+#### Tables LogCyclic_Job and Log_Cyclic_Job_Previous
 
-These tables store all logging information about executed Timers. You can browse it in Service Center (see [Checking the Timers log](#timers-log)).
+These entities store all logging information about recently executed Timers. You can browse it in Service Center (see [Checking the Timers log](#timers-log)).
+These are available under the PlatformLogs extension and are not accessible with the log separation feature enabled. With log separation, similar information is available using the CentralizedPlatformLogs extension actions.
 
 Here's the complete description of the attributes:
 
@@ -125,7 +126,7 @@ Here's the complete description of the attributes:
 | **Espace_Id** | The reference to the module where the Timer was created.|
 | **Tenant_Id** | The reference to the tenant where the Timer was executed.|
 | **Executed_By** | The name of the Front-end Server node that executed the Timer ('Server' in Service Center).|
-| **Error_Id** | The reference to the [oslog_]Error_< N > entity.<br/><br/> If set, it means there was an error executing the application logic of the Timer and in Service Center Timers Log page displays a red link called Error in the row of the Timer.|
+| **Error_Id** | The reference to the Log_Error entity.<br/><br/> If set, it means there was an error executing the application logic of the Timer and in Service Center Timers Log page displays a red link called Error in the row of the Timer.|
 | **Should_Have_Run_At** | The date and time when this Timer should have been executed.<br/><br/> Note that if a system is very loaded, this value can be quite different than the Instant attribute. This may happen because the same module has many tenants and all have the same schedule, other Timers are taking too much time to execute, etc.<br/><br/> This is the database clock date and time.|
 | **Next_Run** | Is a date time representing when this Timer should start again (based on schedule, as explained above).|
 | **Cycle** | Log cycle number for internal use.|

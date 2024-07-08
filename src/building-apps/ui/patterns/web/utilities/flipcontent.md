@@ -18,7 +18,7 @@ Applies only to Traditional Web Apps.
 
  You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
 
-![Animated GIF showing the Flip Content UI Pattern in action, where content flips to reveal additional information when clicked.](images/flipcontent-1.gif "Flip Content Interaction Example")
+<iframe src="https://player.vimeo.com/video/977630439" width="750" height="303" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the Flip Content UI Pattern in action, where content flips to reveal additional information when clicked.</iframe>
 
 **How to use the Flip content UI Pattern**
 
@@ -33,9 +33,9 @@ Applies only to Traditional Web Apps.
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Flip Content widget into the Main Content area of your application's screen.

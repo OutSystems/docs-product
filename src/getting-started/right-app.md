@@ -16,7 +16,7 @@ You can create several types of apps in OutSystems. Here's an overview to help y
 * To create an app and submit it to the Apple App Store or Google Play, as a mobile app for users to download, select **Phone App** or **Tablet App**.
 * To create a lightweight app and share it as a progressive web app (PWA) from your website and let users put the app icon on their mobile home screens, select **Phone App** or **Tablet App**.
 
-![Animated GIF showing the process of selecting an app type in the New Application window of OutSystems](images/new-app-window-ss.gif "New Application Window in OutSystems")
+<iframe src="https://player.vimeo.com/video/977630610" width="750" height="601" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the process of selecting an app type in the New Application window of OutSystems</iframe>
 
 ## What's a Reactive Web App?
 
@@ -35,7 +35,6 @@ If you haven't developed OutSystems apps that focus on the client-side developme
 ![Diagram illustrating the concept of a Reactive Web App in OutSystems](images/reactive-web-app-diag.png "Reactive Web App Diagram")
 
 ![Diagram highlighting the characteristics of a Reactive Web App in OutSystems](images/reactive-web-app-characteristics-diag.png "Reactive Web App Characteristics")
-
 
 <div class="info" markdown="1">
 

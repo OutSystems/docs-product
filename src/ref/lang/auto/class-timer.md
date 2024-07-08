@@ -114,7 +114,7 @@ Here's the complete description of the attributes:
 #### Tables LogCyclic_Job and Log_Cyclic_Job_Previous
 
 These entities store all logging information about recently executed Timers. You can browse it in Service Center (see [Checking the Timers log](#timers-log)).
-These are available under the PlatformLogs extension and are not accessible with the log separation feature enabled. With log separation, similar information is available using the CentralizedPlatformLogs extension actions.
+These are available under the PlatformLogs extension and are not accessible with the [log separation](../../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md) feature enabled. With log separation, similar information is available using the  [CentralizedPlatformLogs extension](../../../setup-infra-platform/setup/logging-db/logs-separation-cloud/centralized-platform-logs-extension.md) actions.
 
 Here's the complete description of the attributes:
 

@@ -39,7 +39,7 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
 ## Set up the tool
 
-The Migration Assessement Tool set up includes the following steps:
+The Migration Assessement Tool setup includes the following steps:
 
 1. [Install the Engine in the LifeTime environment](#engine)
    

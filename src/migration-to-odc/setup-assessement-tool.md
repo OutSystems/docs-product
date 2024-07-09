@@ -37,13 +37,27 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
 * Your IT User has the **Manage Users and Roles** permission.
 
-## Install the Migration Assessment Tool Engine
+## Set up the tool
+
+The Migration Assessement Tool set up includes the following steps:
+
+1. [Install the Engine in the LifeTime environment](#engine)
+   
+1. [Install the Console](#console)
+   
+1. [Install the Probe in the Development environment](#probe-dev)
+   
+1. [Optional - Deploy the Probe to other environments](#probe-other-env)
+   
+1. [Configure the Migration Assessment Tool](#configure)
+
+### Install the Engine { #engine }
 
 1. Download the [Migration Assessment Tool Engine solution pack](resources/Migration_Assessment_Engine_v1_0.osp).
 
 1. In your **LifeTime environment**, open Service Center and [upload and publish the Migration Assessment Tool Engine solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
 
-## Install the Migration Assessment Tool Console
+### Install the Console { #console }
 
 1. Download the [Migration Assessment Tool Console solution pack](resources/Migration_Assessment_Console_v1_0.osp).
 
@@ -58,17 +72,17 @@ You need to ensure the following before setting up the Migration Assessment Plan
 
 1. Still in the Service Center of the same Environment, ensure [**Single Sign-On Betwwen App Types**](../security/configure-authentication.md) is enabled.
 
-## Install the Probe in the Development environment
+### Install the Probe in the Development environment { #probe-dev }
 
 1. Download the [Migration Assessment Tool Probe solution pack](resources/Migration_Assessment_Probe_v1_0.osp).
 
 1. In your **Development environment**, open Service Center and [upload and publish the Migration Assessment Tool Probe solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
 
-## Optional - Deploy the Probe to other environments
+### Optional - Deploy the Probe to other environments { #probe-other-env }
 
 1. In the LifeTime console, deploy the Migration Assessment Tool Probe from the Development environment to other Environments where you want to also check the ODC-readiness of apps. For example, you may want to deploy the probe to the QA environment, so you can later run the assessment on apps during the app testing phase.
 
-## Configure the Migration Assessment Tool
+### Configure the Migration Assessment Tool { #configure }
 
 1. Open Migration Assessment Tool from the environment in which you installed the Migration Assessment Tool Console. Log in using your IT User credentials.
 

@@ -53,13 +53,13 @@ The Migration Assessement Tool setup includes the following steps:
 
 ### Install the Engine { #engine }
 
-1. Download the [Migration Assessment Tool Engine solution pack](resources/Migration_Assessment_Engine_1_0.osp).
+1. Download the [Migration Assessment Tool Engine solution pack](resources/Migration_Assessment_Engine_v1_0.osp).
 
 1. In your **LifeTime environment**, open Service Center and [upload and publish the Migration Assessment Tool Engine solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
 
 ### Install the Console { #console }
 
-1. Download the [Migration Assessment Tool Console solution pack](resources/Migration_Assessment_Console_1_0.osp).
+1. Download the [Migration Assessment Tool Console solution pack](resources/Migration_Assessment_Console_v1_0.osp).
 
 1. In any of your Environments, except for the LifeTime environment, open Service Center and [upload and publish the Migration Assessment Tool Console solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
 
@@ -74,7 +74,7 @@ The Migration Assessement Tool setup includes the following steps:
 
 ### Install the Probe in the Development environment { #probe-dev }
 
-1. Download the [Migration Assessment Tool Probe solution pack](resources/Migration_Assessment_Probe_1_0.osp).
+1. Download the [Migration Assessment Tool Probe solution pack](resources/Migration_Assessment_Probe_v1_0.osp).
 
 1. In your **Development environment**, open Service Center and [upload and publish the Migration Assessment Tool Probe solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
 

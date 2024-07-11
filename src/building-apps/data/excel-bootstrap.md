@@ -50,4 +50,4 @@ When you publish the module, it executes the action to bootstrap the data. If th
 
 Check this demo on how to bootstrap your data from an Excel file, and [download the Sample](resources/BootstrapFromExcel.oml) and the [sample data](resources/SampleData.xls) used in it.
 
-<iframe width="750" height="500" src="https://www.youtube.com/embed/-8o-d_xrxbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://player.vimeo.com/video/874767575" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video displaying how to bootstrap Entity data from Excel.</iframe>

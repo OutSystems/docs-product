@@ -28,7 +28,7 @@ To configure the OutSystems log streaming service, using **Splunk** as the desti
 
 1. Set up the [OpenTelemetry Collector](configure-collector.md).
 
-1. Configure a receiver that accepts HTTP or gRPC connections (refer [here](https://github.com/open-telemetry/opentelemetry-collector/blob/main/receiver/otlpreceiver/README.md) for example) and that uses the Splunk Exporter (refer [here](https://github.com/signalfx/splunk-otel-collector/tree/main/examples/otel-logs-splunk) for example).
+1. Configure a receiver that accepts HTTP or gRPC connections (see an example at https://github.com/open-telemetry/opentelemetry-collector/blob/main/receiver/otlpreceiver/README.md) and that uses the Splunk Exporter (refer [here](https://github.com/signalfx/splunk-otel-collector/tree/main/examples/otel-logs-splunk) for example).
 
 1. Change the collector version to the most recent release in the **docker-compose.yml** file, change the image parameter [http://quay.io/signalfx/splunk-otel-collector:0.67.0](https://quay.io/repository/signalfx/splunk-otel-collector?tab=tags&tag=0.67.0) to the latest numerated image found.
 

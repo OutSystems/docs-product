@@ -101,7 +101,7 @@ In the following example, Service Studio fetches images from a database with an 
 
     ![Screenshot of the expression editor for selecting the output List from an Aggregate for email attachments](images/email-attachments-list.png "Email Attachments List Expression Editor")
 
-1. In the expression editor, select the output List from your Aggregate, for example, `GetSampleProductImages.List`. Service Studio shows an error with a message that you need to use the Attachment List data type. Click **Done** to close the editor and move on to the next step to map the values and resolve the error.
+1. In the expression editor, select the output List from your Aggregate, for example, `GetSampleProductImages.List`. Service Studio shows an error with a message that you need to use the Attachment List data type. Click **Close** to close the editor and move on to the next step to map the values and resolve the error.
 
 1. In the Attachment section of Send Email, map the attributes so Service Studio knows which values pass to the attachments. You must specify binary content and the file name. The MIME type is optional, but providing it lets more email clients handle the attachment.
 

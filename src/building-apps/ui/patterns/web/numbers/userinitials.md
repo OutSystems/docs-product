@@ -62,7 +62,7 @@ The following example demonstrates how you can display the initials of the regis
 
 1. Select the User Initials widget, and on the **Properties** tab, from the **Name** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the following expression and click **Done**.
+1. In the Expression Editor, enter the following expression and click **Close**.
 
     `GetUsers.List.Current.User.Name`
 

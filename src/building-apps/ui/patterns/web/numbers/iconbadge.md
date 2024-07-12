@@ -62,7 +62,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. Select the Icon Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the following expression and click **Done**.
+1. In the Expression Editor, enter the following expression and click **Close**.
 
     `LongIntegerToInteger(GetUsers.Count)`
 

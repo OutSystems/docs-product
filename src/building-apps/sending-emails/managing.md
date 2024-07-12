@@ -96,7 +96,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
 1. Drag an **Expression** widget to the Email. The expression editor opens.
 
-1. Enter `"Hello, " + Handle + "!"` and click **Done**.
+1. Enter `"Hello, " + Handle + "!"` and click **Close**.
 
     ![Preview of an Email in Service Studio showing a personalized greeting using an Expression widget](images/expression-preview-ss.png "Email Preview")
 

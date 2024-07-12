@@ -90,7 +90,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 
     ![Screenshot of the Azure portal showing the configuration page for a new Direct Line channel in a Web App Bot service](images/azure-web-app-bot-service-direct-channel-new.png "Azure Web App Bot Direct Line Channel Configuration")
 
-1. In **Configure Direct Line** you can copy a direct line key now, or do it later when you are configuring the OutSystem component. Click **Done** to return to the main settings page.
+1. In **Configure Direct Line** you can copy a direct line key now, or do it later when you are configuring the OutSystem component. Click **Close** to return to the main settings page.
 
     ![Screenshot displaying the secret key for a Direct Line channel in the Azure Web App Bot service](images/azure-web-app-bot-service-direct-channel-key.png "Azure Web App Bot Direct Line Channel Secret Key")
 

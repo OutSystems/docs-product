@@ -74,7 +74,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     ![Adding an Ajax Refresh action to the Range Slider screen action](images/rangeslider-12-ss.png "Ajax Refresh Action for Range Slider")
 
-1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
+1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Close**.
 
     ![Binding the new local variable to the expression widget for the Range Slider value](images/rangeslider-9-ss.png "Binding Variable to Range Slider Expression")
 

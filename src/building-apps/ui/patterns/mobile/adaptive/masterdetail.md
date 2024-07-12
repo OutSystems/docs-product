@@ -94,7 +94,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
 1. On the **GetUserDetails** screen, click **Filters**, then click **Add Filter**.
 
-1. From the Filter Condition editor, enter the following condition and click **Done**.
+1. From the Filter Condition editor, enter the following condition and click **Close**.
 
     `User.Id = SelectedUserId`
 

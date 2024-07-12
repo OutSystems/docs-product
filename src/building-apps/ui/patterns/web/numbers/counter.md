@@ -64,7 +64,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![Image illustrating the conversion of a text widget to an expression within the Counter widget in Service Studio](images/counter-11-ss.png "Converting Text Widget to Expression")
 
-1. In the Expression Editor, enter the following expression and click **Done**.
+1. In the Expression Editor, enter the following expression and click **Close**.
 
     `GetUsers.Count`
 

@@ -34,7 +34,7 @@ In the MyBigWebApp application, click the **Do Nothing** dropdown menu, and sele
 
 A pop-up opens, displaying all modules of the MyBigWebApp application. Notice the modules with a '+'(plus) sign, signaling that they have been changed.
 
-Check the MyBigWebApp4 module to deploy its latest version to Quality. Confirm the choice by pressing **Done**.
+Check the MyBigWebApp4 module to deploy its latest version to Quality. Confirm the choice by pressing **Close**.
 
 ![Pop-up window displaying all modules of MyBigWebApp with the MyBigWebApp4 module checked for deployment](images/deploy-a-single-module-2.png "Module Selection Pop-up")
 

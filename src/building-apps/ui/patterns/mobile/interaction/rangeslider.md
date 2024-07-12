@@ -82,7 +82,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     ![Image depicting the creation of a local variable of type decimal for the Range Slider in Service Studio](images/rangeslider-locvar-ss.png "Creating a Local Variable for Range Slider")
 
-1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
+1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Close**.
 
     ![Screenshot showing how to bind a newly created variable to the expression widget for the Range Slider](images/rangeslider-expression-ss.png "Binding Variable to Range Slider Expression")
 

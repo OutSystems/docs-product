@@ -80,7 +80,7 @@ In this use case, we create a search balloon for a list of employees.
 
 1. Double-click the Preparation action and then double-click the **GetEmployees** aggregate.
 
-1. Click **Filters**, then click **Add Filter** and in the **Filter Condition** field, enter the relevant logic and click **Done**. In this example, we enter the following condition:
+1. Click **Filters**, then click **Add Filter** and in the **Filter Condition** field, enter the relevant logic and click **Close**. In this example, we enter the following condition:
 
      `Employee.FirstName like "%" + SearchText + "%" or Employee.LastName like "%" + SearchText + "%" or SearchText = ""`.
 
@@ -92,7 +92,7 @@ In this use case, we create a search balloon for a list of employees.
 
     ![Deleting the Text placeholder from the Search Balloon Widget in Service Studio](images/searchballoon-13-ss.png "Delete Text Placeholder")
 
-1. Drag an Expression Widget to the list and enter the relevant expression value, and click **Done**. In this example, we enter the following:
+1. Drag an Expression Widget to the list and enter the relevant expression value, and click **Close**. In this example, we enter the following:
 
     `ListRecords1.List.Current.Employee.Name + " "`
 

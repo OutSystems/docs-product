@@ -48,7 +48,7 @@ For the purposes of this example, our app already contains a [form](../../../for
 
 1. Add the relevant content to the placeholders.
 
-    * In this example, so that the name the user enters in the form is displayed, we convert the Name placeholder to an expression and enter the relevant logic. To do this, we right-click the Name placeholder, select **Convert to Expression**, and in the **Expression Value** pop-up, navigate to the Name attribute, and click **Done**.
+    * In this example, so that the name the user enters in the form is displayed, we convert the Name placeholder to an expression and enter the relevant logic. To do this, we right-click the Name placeholder, select **Convert to Expression**, and in the **Expression Value** pop-up, navigate to the Name attribute, and click **Close**.
 
         ![Converting the Name placeholder to an expression in the Chat Message widget](images/chatmessage-4-ss.png "Converting Name Placeholder to Expression")
 

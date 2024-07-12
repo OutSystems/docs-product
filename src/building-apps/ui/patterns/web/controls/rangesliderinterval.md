@@ -66,7 +66,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     ![Image showing how to add an Ajax Refresh action to a screen action and select the DisplayValue Container widget](images/rangesliderinterval-12-ss.png "Ajax Refresh Action in Service Studio")
 
-1. To bind the **SelectedMinValue** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
+1. To bind the **SelectedMinValue** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Close**.
 
     ![Screenshot of the Expression Value editor with a variable selected for binding to an expression](images/rangesliderinterval-9-ss.png "Binding Variables to Expressions")
 

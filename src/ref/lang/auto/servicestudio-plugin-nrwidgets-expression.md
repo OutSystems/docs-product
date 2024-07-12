@@ -17,7 +17,7 @@ The expression widget displays text or the result of an expression at runtime. I
 
     ![Screenshot of the Expression widget being selected in Service Studio](images/expression-widget-ss.png "Expression Widget in Service Studio")
 
-1. Enter an expression in the expression editor and click **Done**.
+1. Enter an expression in the expression editor and click **Close**.
 
     ![Screenshot of the Expression editor with an example expression in Service Studio](images/expression-editor-ss.png "Expression Editor in Service Studio")
     

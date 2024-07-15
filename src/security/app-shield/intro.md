@@ -134,7 +134,7 @@ Protections that are available for iOS builds.
 * Code injection protection
 * Debugger protection
 * Screen mirroring detection
-* Screenshot protection ([see limitation](#general))
+* Screenshot protection ([see limitation](#limitations))
 
 ## Configuration
 
@@ -309,7 +309,7 @@ In the **Android and/or iOS section** of the [Extensibility Configurations JSON]
 
 After these changes steps, generate a new build of your mobile app.
 
-## Limitations
+## Limitations { #limitations }
 
 **AppShield** has the following limitations:
 

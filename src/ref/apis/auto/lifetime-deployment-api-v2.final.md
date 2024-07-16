@@ -331,7 +331,7 @@ Returns a link where the binary file for a given application version can be down
 #### POST { #post-deployments }
 ##### Description:
 
-Creates a deployment to a target environment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.
+Creates a deployment to a target environment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object. Starting with LifeTime 11.21.0, it is possible to create and edit multiple deployment plans for the same target environment in parallel.
 
 ##### Parameters
 
@@ -398,7 +398,7 @@ Discards a deployment, if possible. Only deployments whose state is "saved" can 
 #### PUT { #put-deployments-deploymentkey }
 ##### Description:
 
-Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.
+Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object. Using this method to remove apps from a deployment plan sets their status as Do Nothing, but they still appear in the deployment details. Starting with LifeTime 11.21.0, it is possible to create and edit multiple deployment plans for the same target environment in parallel. From LifeTime 11.22.0 or later, the apps are removed from the deployment plan. For more information, refer to [Breaking Changes](https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#introduced-in-lifetime-11.22.0).
 
 ##### Parameters
 
@@ -442,7 +442,7 @@ Returns the details of a given deployment. The returned information contains the
 #### POST { #post-deployments-deploymentkey-command }
 ##### Description:
 
-Executes the given command in a specified deployment. The allowed commands are "start", "continue" and "abort".
+Executes the given command in a specified deployment. The allowed commands are “start”, “continue” and “abort”. Starting with LifeTime 11.24.0, it is possible to execute multiple deployment plans for the same target environment in parallel.
 
 ##### Parameters
 

@@ -55,7 +55,7 @@ Use the same type of database engine for all the 3 databases in Platform Server 
 * Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
-* Azure SQL Database V12
+* Azure SQL Database, with compatibility level between 130 and 150
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2
 * Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)
@@ -129,8 +129,9 @@ For more information on the available DB instance classes, refer to [Amazon's DB
 
 ## Microsoft Azure considerations
 
-OutSystems supports Microsoft Azure SQL Database V12 with the following considerations:
+OutSystems supports Microsoft Azure SQL Database with the following considerations:
 
+* The compatibility level must be between 130 and 150.
 * The database service tier must be at least "S3".
 * The MDC (Multiple Database Catalogs) feature isn't supported.
 * Connecting to Azure SQL database using Windows authentication isn't supported.

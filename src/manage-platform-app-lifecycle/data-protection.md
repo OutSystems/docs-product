@@ -32,7 +32,7 @@ In order to manage IT Users, both Service Center and LifeTime store the followin
 
 Service Center and LifeTime have a system that protects against brute force attacks that systematically try to guess user passwords.
 
-This system offers protection against two levels of attacks, user-level attacks and IP-level attacks (more details [here](../security/protection-against-brute-force-attacks.md)); and needs to store some personal user data in order to be functional. The personal information stored in **LoginAttempt** system entity (physical table name: **OSSYS\_LOGIN\_ATTEMPT**) is:
+This system offers protection against two levels of attacks, user-level attacks and IP-level attacks (more details [here](../security/protection-against-brute-force-attacks.md)); and needs to store some personal user data to be functional. The personal information stored in **LoginAttempt** system entity (physical table name: **OSSYS\_LOGIN\_ATTEMPT**) is:
 
 * Username (for example, Amos Tesen)
 * IP Address (for example, 192.0.2.0)

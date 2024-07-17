@@ -1043,6 +1043,7 @@
     - href: manage-platform-app-lifecycle/environment-filters.md
     - href: manage-platform-app-lifecycle/maintenance-mode.md
     - href: manage-platform-app-lifecycle/configure-send-emails.md
+    - href: manage-platform-app-lifecycle/data-protection.md
     - href: manage-platform-app-lifecycle/manage-it-teams/intro.md
     - topics:
         - href: manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md

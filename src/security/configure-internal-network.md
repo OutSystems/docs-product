@@ -39,6 +39,7 @@ When you define an internal network for a specific OutSystems environment, it wi
 * The Service Center console of the environment
 * The LifeTime console of the environment, if the environment where the configuration was applied is a LifeTime environment
 * Connections from Service Studio, Integration Studio and OSP Tool to the environment
+* System Components that are meant to be used by the development tools, like RESTDevService
 
 In the case you inadvertently define an internal network configuration that blocks you from accessing Service Center, you can:
 

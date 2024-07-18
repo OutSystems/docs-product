@@ -24,17 +24,18 @@ IT users have access to the audit log and can check:
     * Environments
     * Infrastructure
 
-<div class="info" markdown="1">
-
-Note that screenshots used in this article are taken from the self-managed installation and they may differ if you are using OutSystems Cloud.
-
-</div>
 
 ## See the Tasks a User has Performed
 
 You can find the audit log for the tasks a user has made in the user details screen.
 
 As an example, let's see the tasks "Andrea Fleet" has done. In your **LifeTime** console (`https://<lifetime_env>/lifetime`), navigate to the **USER MANAGEMENT** tab, choose **USERS**, and select **Andrea Fleet**. There you can find the **View Activity Log** link that displays all tasks made by Andrea.
+
+<div class="info" markdown="1">
+
+Granting [developer permissions via Customer Portal](https://www.outsystems.com/tk/redirect?g=5bd7f106-3784-4821-a603-0ad0c0fd8f82) will be audited in LifeTime as performed by the user `Administrator`. This Administrator user is distinct from your own LifeTime or Customer Portal admins. Instead, it's a service user that's used for integrations with OutSystems 11 Cloud, such as Customer Portal.
+
+</div>
 
 ![Screenshot of the OutSystems LifeTime console showing the User Management tab with Andrea Fleet's activity log.](images/monitor-usage-with-audit-logs-1.png "User Activity Log in OutSystems")
 

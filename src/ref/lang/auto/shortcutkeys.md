@@ -33,7 +33,7 @@ figma:
 |Look for help, by telling us what you want to do|F1||
 |Rename selected element|F2||
 |Open selected dropdwon|F4|F4|
-|Open Preferences||Cmd+comma||
+|Open Preferences||Cmd+comma|
 
 ## Basic Development
 

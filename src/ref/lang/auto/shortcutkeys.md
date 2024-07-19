@@ -114,7 +114,7 @@ figma:
 |---|---|---|
 |Run and Debug in Personal Area|F6|Cmd+F6|
 |Debug in Public Area|F7|Cmd+F7|
-|Stop Debug|Shift+F6 (Shift+F7)|Shift+Cmd+F6 (Shift+Cmd+F7)||
+|Stop Debug|Shift+F6 (Shift+F7)|Shift+Cmd+F6 (Shift+Cmd+F7)|
 |Add/remove breakpoint|F8|Cmd+F8|
 |Disable/enable breakpoint|Ctrl+F8|Shift+Cmd+F8|
 |Step into|F11|Cmd+F11|

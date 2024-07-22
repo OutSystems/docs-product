@@ -103,11 +103,15 @@ During Platform Server installation, OutSystems provides a script that simplifie
 
 ## Amazon EC2 considerations
 
-OutSystems can run on Amazon EC2 instances. Each instance must fulfill the following requirements:
+OutSystems can run on Amazon EC2 instances. Each instance must fulfill one the following requirements:
 
-* The EC2Config service must be running
+* The `Amazon EC2Launch` service must be running, available from Amazon EC2Launch v2 (starting with Platform Server 11.29.0)
 
-For more information on how to enable this service, refer to [Amazon EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
+* Or, the `EC2Config` service must be running
+
+For more information on how to enable `Amazon EC2Launch` service, refer to [Amazon EC2Launch v2 service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2.html).
+
+For more information on how to enable `EC2Config` service, refer to [Amazon EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
 
 ## Amazon RDS considerations
 

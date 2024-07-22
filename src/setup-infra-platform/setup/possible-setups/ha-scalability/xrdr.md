@@ -22,9 +22,9 @@ OutSystems cross-region disaster recovery (XRDR) is a strategy that allows you t
 
 The following are some of the key concepts of cross-region disaster recovery:
 
-* **Automated failover and failback**
+* **Failover and failback**
 
-    * Failover: The automatic operations switch from the primary site to the secondary site during a disaster.
+    * Failover: The operations switch from the primary site to the secondary site during a disaster.
 
     * Failback: The process of returning operations to the primary site once it's restored.
 

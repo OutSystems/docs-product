@@ -3,7 +3,7 @@ locale: en-us
 guid: ae415dc5-20df-4cc4-9726-f02f47645ce8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3739-243&t=0k6vqSszFayqzk9h-1
 summary: Explore how to manually add and configure actions in OutSystems 11 (O11) extensions for enhanced functionality.
 ---
 # Add an Action
@@ -14,7 +14,7 @@ Once you define the actions and publish the extension, add a reference to these 
 
 Do the following:
 
-1. Right-click on the **Actions** folder in the Multi-tree Navigator and select ![Animated GIF showing the 'Add Action' option being selected in Service Studio](images/action.gif "Add Action Icon") **Add Action**.
+1. Right-click on the **Actions** folder in the Multi-tree Navigator and select ![Animated GIF showing the 'Add Action' option being selected in Service Studio](images/action.png "Add Action Icon") **Add Action**.
 
 1. Specify the following properties:
 

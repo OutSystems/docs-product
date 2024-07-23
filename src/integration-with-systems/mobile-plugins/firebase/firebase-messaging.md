@@ -235,6 +235,26 @@ The following image illustrates how the notification channel's name and descript
 
 ![Screenshot of notification channel name and description](images/fcm-notification-channel.png "Notification Channel")
 
+## Enable message delivery data export to BigQuery
+
+BigQuery allows to:
+
+* analyze the push notification data using BigQuery SQL
+*  export it to another cloud provider
+*  use the data for your custom ML models. 
+
+Starting on version 4.3.0, the plugin offers a way to enable an app's message delivery data export to BigQuery. This is available through two client actions:
+* `DeliveryMetricsExportToBigQueryEnabled`: Determines whether Firebase Cloud Messaging exports message delivery metrics to BigQuery.
+* `SetDeliveryMetricsExportToBigQuery`: Enables or disables Firebase Cloud Messaging message delivery metrics export to BigQuery.
+
+To have a better idea of what BigQuery is and how to enable it within the Firebase Console, please refer to the [official documentation](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#bigquery-data-export).
+
+The feature is disabled by default. To enable it, `SetDeliveryMetricsExportToBigQuery` needs to be called with its `Enable` input parameter set to `true`.
+
+### Known limitations on iOS
+
+As explained in the following [page](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#enable-message-delivery-data-export), there are two ways to enable the data export on iOS, one for [alert](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#enable_delivery_data_export_for_alert_notifications) and another for [background notifications](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#enable_delivery_data_export_for_background_notifications). On OutSystems mobile apps, it's not possible to enable data export for alert notifications, so you won't be able to enable the feature for all notifications.
+
 ## Limitations
 
 ### On Silent Notifications

@@ -1,6 +1,5 @@
 ---
 summary: OutSystems 11 (O11) supports mobile app development with Firebase plugins for enhanced features like analytics and crash reporting.
-tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 locale: en-us
 guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
 app_type: mobile apps
@@ -145,6 +144,7 @@ To trigger the native AppTrackingTransparency framework, use the **RequestTracki
 If you want to present an alert before the iOS tracking permission dialog, enable the parameter **ShowInformation** on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
 
 By default, the **NSUserTrackingUsageDescription** field is set to `AppName needs your attention.`. As explained by Apple [here](https://developer.apple.com/documentation/apptrackingtransparency), this property must contain "a message that informs the user why an app is requesting permission to use data for tracking the user or the device.". You can set your custom description by including an iOS-specific preference (`USER_TRACKING_DESCRIPTION_IOS`) in the Extensibility Configurations of the application, as follows:
+
 ```JSON
 {
     "preferences": {
@@ -177,17 +177,19 @@ If your app collects user data for advertising purposes, also known as Attributi
 
 </div>
 
-### Additional information for Firebase Analytics ecommerce events
+### Additional information for Firebase Analytics
 
-Starting in version *0.2.0*, Firebase Analytics plugin users can log ecommerce events, which are specifically tailored to collect information about your user's shopping behavior.
+#### Ecommerce events
 
-It's important to note that Google's ecommerce API enforces a set of constraints for each event. For example, the API ensures you include a ```item_list_id``` parameter when logging a ```view_item_list``` event.
+Starting in version **2.0.1**, Firebase Analytics plugin users can log ecommerce events, which are specifically tailored to collect information about your user's shopping behavior.
 
-The Firebase Analytics plugin performs the validations when ```LogECommerceEvent``` is invoked. You can find the details of the validations for each event, by following the Google's documentation link, in the list below.
+It's important to note that Google's ecommerce API enforces a set of constraints for each event. For example, the API ensures you include a `item_list_id` parameter when logging a `view_item_list` event.
 
-To further illustrate this example, the following shows a typical usage of the ```LogECommerceEvent client action```:
+The Firebase Analytics plugin performs the validations when `LogECommerceEvent` is invoked. You can find the details of the validations for each event, by following the Google's documentation link, in the list below.
 
-![Shows the Firebase Analytics LogECommerceEvent client action for a ```view_item_list```](images/firebase-ecommerce-run-client-action-ss.png "Firebase Analytics LogECommerceEvent client action example")
+To further illustrate this example, the following shows a typical usage of the `LogECommerceEvent client action`:
+
+![Shows the Firebase Analytics LogECommerceEvent client action for a `view_item_list`](images/firebase-ecommerce-run-client-action-ss.png "Firebase Analytics LogECommerceEvent client action example")
 
 Currently, the Firebase Analytics plugin supports the following events:
 
@@ -206,12 +208,42 @@ Currently, the Firebase Analytics plugin supports the following events:
 * [view_item](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_item)
 * [view_promotion](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_promotion)
 
-From the provided entity ```ECommerceEvent```, users can select the event type.
+From the provided entity `ECommerceEvent`, users can select the event type.
 
-![Shows the ```ECommerceEvent``` entity](images/firebase-entity-ecommerce-event-ss.png "Firebase Analytics LogECommerceEvent entity")
+![Shows the `ECommerceEvent` entity](images/firebase-entity-ecommerce-event-ss.png "Firebase Analytics LogECommerceEvent entity")
 
-Select the key for each parameter to be included on the event logging from the  ```ECommerceEventParameterKey``` entity.
+Select the key for each parameter to be included on the event logging from the  `ECommerceEventParameterKey` entity.
 
-![Shows the ```ECommerceEvent``` entity](images/firebase-ecommerce-parameterkey-ss.png "Firebase Analytics LogECommerceEvent entity")
+![Shows the `ECommerceEvent` entity](images/firebase-ecommerce-parameterkey-ss.png "Firebase Analytics LogECommerceEvent entity")
 
 For more information on which event requires which parameters, refer to [Google's documentation page regarding 'measure ecommerce'](https://developers.google.com/analytics/devguides/collection/ga4/ecommerce).
+
+#### Enable/disable data collection
+
+Starting in version **2.1.1**, the Firebase Analytics plugin can effectively enable and disable data collection. For the `SetEnabled` client action to properly work, the following needs to be added to your app's Extensibility Configurations:
+
+```JSON
+{
+    "preferences": {
+        ...
+        "global": [
+            ...,
+            {
+                "name": "ANALYTICS_COLLECTION_ENABLED",
+                "value": "false"
+            },
+            ...
+        ],
+        ...
+    }
+}
+```
+
+<div class="info" markdown="1">
+
+Keep in mind that:
+
+* For `SetEnabled` to have any effect on the data collection, the preference needs to be included.
+* The preference only needs to be added when you want to control the collection. If not provided or is used with another value (for example: `true`), the collection will be enabled and it won't be possible to change it.
+
+</div>

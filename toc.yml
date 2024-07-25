@@ -695,8 +695,8 @@
         - href: integration-with-systems/mobile-plugins/keystore-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/payments-plugin/intro.md 
         - href: integration-with-systems/mobile-plugins/social-login/intro.md
-            - topics:
-            - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md                   
+        - topics:
+            - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md                 
         - href: integration-with-systems/mobile-plugins/ssl-pinning/intro.md
         - href: integration-with-systems/mobile-plugins/cordova-plugin/intro.md
     #Javascript

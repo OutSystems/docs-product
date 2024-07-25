@@ -111,7 +111,7 @@ Do the following:
     1. If this is the first mapping after setting up the Assessment Tool, select **Start mapping O11 apps**. Otherwise, select **Map O11 apps**.
 
     1. In the **ODC** section, set the following:
-        * **Asset name**
+        * **Asset name**, making sure you follow the [ODC naming best practices](https://www.outsystems.com/tk/redirect?g=4f33c44e-316d-43b3-9929-221138d053be)
         * **Asset type**
         * Optionally, set the **Asset description**. 
 

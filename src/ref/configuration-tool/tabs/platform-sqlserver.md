@@ -64,7 +64,7 @@ For advanced settings, click on the **Advanced Settings** link.
 </tr>
 </tbody>
 </table>
-  
+
 ## Administrator section
 
 The Administrator section allows you to configure the database user that manages the platform. This user owns the OutSystems metamodel tables, views, and indexes.

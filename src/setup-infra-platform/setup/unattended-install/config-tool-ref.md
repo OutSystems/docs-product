@@ -54,15 +54,18 @@ ConfigurationTool.com
 ## Parameters
 `/ApplySettingsFactory`
 
-:   Applies the current `server.hsconf` settings to the factory.  
+:   Restarts OutSystems services in the current server
 
-Note: This command only generates output in case of errors.  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+    When executed from the server with the Deployment Controller role, also triggers the [Apply Settings to the Factory](../../../deploying-apps/apply-configurations.md) operation to update the configurations of all published modules.
+
+Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This only generates output in case of errors and cannot be used with other parameters.
 
 `/ClearInternalNetwork`
 
 :   Resets the internal network settings so that internal applications become accessible from any origin.
 
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/CreateUpgradeCacheInvalidationService`
 
@@ -72,41 +75,43 @@ Note:  In order to execute properly in integrated authentication scenarios, this
 
 :   Deploys all the successfully prepared modules from your current Platform Server version to the latest version, except for those modules already deployed in the latest version. Read more about this feature in [Modules deployment step during Platform Server upgrade](../../upgrade/upgrade-platform-module-deploy.md).
 
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
-
-`/GetDeploymentZones`
-
-:   Lists the configured deployment zones for the current installation. The data is presented in JSON format, limited to the relevant settings that can be manipulated with `/ModifyDeploymentZone`, namely: the Configuration Name and Address, and its Enable HTTPS status.
-
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/GenerateTemplates`
 
 :   Generates server configuration file (`.hsconf`) templates for each supported database engine in `Platform Server\docs`.
 
+Note: This cannot be used with other parameters.
+
+`/GetDeploymentZones`
+
+:   Lists the configured deployment zones for the current installation. The data is presented in JSON format, limited to the relevant settings that can be manipulated with `/ModifyDeploymentZone`, namely: the Configuration Name and Address, and its Enable HTTPS status.
+
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This cannot be used with other parameters.
+
 `/GetSerial`
 
 :   Prints the serial number of this installation.
 
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This cannot be used with other parameters.
 
 `/InstallServiceCenter`
 
 :   Forces the Service Center installation to run after finishing Configuration Tool.
 
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/InstallSystemComponents`
 
 :   Forces the System Components installation or upgrade to run after applying the configuration settings.
 
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/ModifyDeploymentZone <deployment_zone_name> <deployment_zone_address> [<enable_https>]`
 
 :   Modifies the Address and/or Enable HTTPS settings of a Deployment Zone.
-
- In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
     `<deployment_zone_name>` is the Deployment Zone that you want to modify; this argument is case insensitive (for example "GLOBAL" will map to "Global").
 
@@ -114,22 +119,25 @@ Note:  In order to execute properly in integrated authentication scenarios, this
 
     `[<enable_https>]` is an optional boolean argument; if this argument is not provided the setting will remain unchanged. If the string "true" (case insensitive) is provided, the Enable HTTPS setting is set to "true"; if any other string is provided the setting Enable HTTPS is set to "false". The applied value of the Enable HTTPS setting is displayed.
 
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+
 `/RebuildSession <session_db_admin_username> <session_db_admin_password>`
 
 :   Upgrades the session database model. The username and password provided must belong to a user with permissions to execute these operations.
 
- In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
-
      `<session_db_admin_username>` is the username for the session database superuser.
 
      `<session_db_admin_password>` is the password for the session database superuser.
+     
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/RegenerateSettingsKey`
 
 :   Generates a new private.key file.
 
-Note: After invoking this parameter, `/UpgradeInstall` needs to be invoked with `/InstallServiceCenter`. 
-In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note: After invoking this parameter, in a separate call, `/UpgradeInstall` needs to be invoked with `/InstallServiceCenter`. 
+In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This cannot be used with other parameters.
 
 `/SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]`
 
@@ -153,22 +161,25 @@ If this parameter is invoked after the first install then it requires `/WithWind
 
 :   Defines the password for the Platform Server administrator account, if the account is active.
 
-Note: In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/UploadLicense <license_file> <platform_server_admin_user> <platform_server_admin_password>`
 
 :   Uploads the license file and checks if the license is valid.
 
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
-
-    You must provide valid Service Center admin user credentials to execute this operation.  
+    You must provide valid Service Center admin user credentials to execute this operation.
+    
     The Service Center application must be running.
+
+Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This cannot be used with other parameters.
+
 
 `/UpgradeEnvironment`
 
 :   Installs the core components (Service Center and the System Components), and starts [preparing your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version. Skips any of these steps if they were previously executed.
 
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/UpgradeInstall [<integrated_auth_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]`
 
@@ -182,7 +193,7 @@ Note:  In order to execute properly in integrated authentication scenarios, this
 
 :   Forces the [preparation of your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version.
 
-Note:  In order to execute properly in integrated authentication scenarios, this command requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/WithWindowsAuthentication <integrated_auth_admin_password>`
 

@@ -55,13 +55,13 @@ After following these steps and publishing the module, you can test the pattern 
   
 **Result**
 
-![Animated GIF demonstrating the end result of using Touch Events to hide a header during scroll](images/TouchEvents_EndResult.gif "Touch Events End Result")
+<iframe src="https://player.vimeo.com/video/991471309" width="492" height="750" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the end result of using Touch Events to hide a header during scroll.</iframe>
 
 ## Properties
 
 |**Property** | **Description** |
 |---|---| 
-| WidgetId | This is the element that responds to the touch you configure.| 
+| WidgetId | This is the element that responds to the touch you configure.|
 
 ## Compatibility with other patterns
 
@@ -72,3 +72,4 @@ There might be conflicts with any pattern with touch events (unless the code is 
 The following sample uses the Touch Events pattern:
 
 ![Sample image of a mobile or reactive web app using the Touch Events pattern](images/TouchEvents-Sample-1.png "Touch Events Sample")
+

@@ -14,7 +14,7 @@ The maximum number of characters allowed depends on the element you are handling
 
 * **Entity attribute name**: 28 characters.
 
-    ![Warning icon indicating a message about reserved words in Oracle databases](images/warning.gif "Integration Studio Warning") If you are using an Oracle database, there are some reserved words that cannot be used as attribute names: `timestamp`, `number`, `blob`, `clob` and `varchar2`. Integration Studio presents a warning message notifying you that the attribute name must be changed.
+    ![Warning icon indicating a message about reserved words in Oracle databases](images/warning-icon.png "Integration Studio Warning") If you are using an Oracle database, there are some reserved words that cannot be used as attribute names: `timestamp`, `number`, `blob`, `clob` and `varchar2`. Integration Studio presents a warning message notifying you that the attribute name must be changed.
 
 * **Any other element**: 50 characters.
 

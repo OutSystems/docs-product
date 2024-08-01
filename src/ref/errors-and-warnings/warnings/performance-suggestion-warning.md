@@ -31,7 +31,7 @@ Cause
 :   Each time a Server Action is executed in a Client Action there is a request going from the user device to the server. Having several Server Actions in the same Client Action will result in multiple requests to the server, which can slower the application.
 
 Recommendation
-:   Group all the Server Actions executed in your Client Action in a single Server Action and use that Server Action insted. This will reduce the number of requests to the server to one single request.
+:   Group all the Server Actions executed in your Client Action in a single Server Action and use that Server Action instead. This will reduce the number of requests to the server to one single request.
 
 ---
 

@@ -1000,6 +1000,7 @@
         - href: setup-infra-platform/setup/change-db-authentication.md
         - href: setup-infra-platform/setup/load-balancing-apps/recommended-configs-load-balancing.md
         - href: setup-infra-platform/setup/cdn-setup.md
+        - href: setup-infra-platform/setup/factory-config.md
         # Cache Invalidation Service
         - href: setup-infra-platform/setup/cache-invalidation/intro.md
         - topics:
@@ -1027,6 +1028,7 @@
             - href: setup-infra-platform/setup/azure/quick-reference.md
             - href: setup-infra-platform/setup/azure/getting-setup-logs.md
             - href: setup-infra-platform/setup/azure/plan-associate.md
+
     # Upgrading
     - href: setup-infra-platform/upgrade/upgrade-platform.md
     - topics:

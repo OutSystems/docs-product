@@ -93,6 +93,8 @@ After adapting your O11 architecture, you are ready to start using the Migration
 
 ## Map O11 to ODC architecture in the Migration Assessment Tool { #map-in-tool }
 
+![Diagram showing the Map O11 apps to ODC architecture step in the migration process](images/prep-map-o11-odc-arch-diag.png "Map O11 apps to ODC architecture")
+
 Now, it's time to add the mapping you previously defined to the Migration Assessment Tool. The mapping is always based on the O11 Apps available in your Development Environment.
 
 <div class="info" markdown="1">

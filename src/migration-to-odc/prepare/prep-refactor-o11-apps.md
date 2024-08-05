@@ -29,6 +29,8 @@ Before starting, ensure the following:
 
 ## Adapt O11 apps for ODC migration
 
+![Diagram showing the Adapt O11 apps for ODC migration step in the migration process](images/prepare-adapt-o11-apps-diag.png "Adapt O11 apps for ODC migration diagram")
+
 To adapt your O11 apps and make them ODC-compatible, follow these steps:
 
 1. Log into the Migration Assessment Tool. Your team has installed the Migration Assessment Tool in your infrastructure, so you need to get the URL of the tool from them.

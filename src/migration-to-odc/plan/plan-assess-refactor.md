@@ -4,7 +4,7 @@ locale: en-us
 guid: 0b89d709-a914-4f96-8869-3c653149576d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2168-1376
 ---
 
 # Assess app architecture and ODC readiness
@@ -24,6 +24,8 @@ The app assessment helps you plan your migration to ODC, by supporting you with 
 * Understand and decide on what adjustment your team needs to do in O11, before migrating the apps to ODC.
 
 ## Validate the ODC architecture
+
+![Diagram showing the Assess app architecture and ODC readiness step in the migration process](images/prep-assess-app-arch-diag.png "Map O11 apps to ODC architecture")
 
 1. After [mapping your ODC architecture](plan-map-apps.md), open the assessment by selecting **Open assessment**.
 

@@ -81,9 +81,9 @@ To create a shared configuration from scratch:
 
 1. Click **Create New Shared Configuration**.
 
-    ![Screenshot of the Shared Configurations tab with the 'Create New Shared Configuration' link highlighted.](./images/create-shared-config-ct.png "Create New Shared Configuration Link")
+    ![Screenshot of the Shared Configurations tab with the 'Create New Shared Configuration' link highlighted.](./images/create-shared-config-ct.png "Shared Configurations Tab")
 
-1. Click **Create** when you are ready to create a new configuration.![Screenshot of the Create Shared Configuration page with the 'Create' button highlighted.](./images/create-button-ct.png "Create Button")
+1. Click **Create** when you are ready to create a new configuration.![Screenshot of the Create Shared Configuration page with the 'Create' button highlighted.](./images/create-button-ct.png "Create Shared Configuration Page")
 
 ### Pre-made samples
 
@@ -114,11 +114,11 @@ After creating a shared configuration, associate them with the eSpaces by follow
 
 1. Click on the eSpace name.
 
-    ![Screenshot of the eSpaces tab with an eSpace name highlighted.](./images/select-espace-ct.png "Select eSpace")
+    ![Screenshot of the eSpaces tab with an eSpace name highlighted.](./images/select-espace-ct.png "eSpaces Tab")
 
 1. Select the shared configuration to be associated.
 
-    ![Screenshot of the Associate Shared Configurations section with the 'Associate' button highlighted.](./images/associate-ct.png "Associate Shared Configuration")
+    ![Screenshot of the Associate Shared Configurations section with the 'Associate' button highlighted.](./images/associate-ct.png "Associate Shared Configurations")
 
 **Note**: You can also link multiple shared configurations to a single eSpace.
 
@@ -132,7 +132,7 @@ Configuration changes done in Factory Configuration 11 might not be applied imme
 
 The **Platform Configurations** tab lists several internal configurations that affect the whole platform. To view the description of each configuration and the effects of enabling or modifying it, hover the mouse over each question mark.
 
-![Screenshot of the Platform Configurations tab with a tooltip displayed by hovering over a question mark icon.](./images/hover-for-more-info-ct.png "Hover for More Info")
+![Screenshot of the Platform Configurations tab with a tooltip displayed by hovering over a question mark icon.](./images/hover-for-more-info-ct.png "Platform Configurations Tab")
 
 Here's a list of relevant platform configurations and their parameters used inside the OutSystems database:
 

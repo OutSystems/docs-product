@@ -97,7 +97,7 @@ Pre-made samples are found in the **Pre-made Samples** field. Use the following 
 
 * **Integrated Authentication**: Use it to configure Integrated Authentication for Java using NTLM HTTP filters.
 
-* **OSTraces**: Changes the Log level of the OutSystems Platform, file location, and other related settings. These changes increase the log level number by editing the following snippet created automatically by Factory Configuration when you press the **Fill** button. For more information about OSTraces, refer to [Change OutSystems platform logging levels - OSTrace](../logs/change-logging-levels.md)
+* **OSTraces**: Changes the Log level of the OutSystems Platform, file location, and other related settings. These changes increase the log level number by editing the following snippet created automatically by Factory Configuration when you press the **Fill** button. For more information about OSTraces, refer to [Change OutSystems platform logging levels - OSTrace](https://success.outsystems.com/support/troubleshooting/getting_logs_for_troubleshooting_purposes/change_outsystems_platform_logging_levels_ostrace/)
 
 ```
 (...)

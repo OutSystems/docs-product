@@ -3,7 +3,7 @@ locale: en-us
 guid: cf34b4c6-2dc9-4ea3-82d0-f77dcc9f68ca
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3063-7&t=0cuQUgeosMV2m0Kw-1
 summary: Learn how to manage and edit entity properties in OutSystems 11 (O11) using the Entity Editor.
 ---
 # Entity Editor
@@ -20,7 +20,7 @@ To set the entity identifier, do one of the following:
 
 * In the **Entity editor**, edit the Identifier property and select the attribute you want from the drop-down list;
 
-* In the **Attributes table**, right-click on the attribute you want and select the Set as Identifier ![Context menu with 'Set as Identifier' option highlighted for setting the entity identifier in the Attributes table](images/identifier.gif "Set as Identifier Option") option.
+* In the **Attributes table**, right-click on the attribute you want and select the Set as Identifier ![Context menu with 'Set as Identifier' option highlighted for setting the entity identifier in the Attributes table](images/identifier-icon.png "Set as Identifier Option") option.
 
 ## Entity Attributes
 

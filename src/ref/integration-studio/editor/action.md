@@ -28,7 +28,7 @@ To manage the action parameters, see [Action Parameters Editor](<action-paramete
 
 You can change the properties of the action, at any time. Simply double-click in the action in the [Multi-tree navigator](<../workspace.md>) or select the action in the [Multi-tab editor](<../workspace.md>).
 
-![Animated GIF showing a warning icon, indicating a cautionary note about setting actions as functions in Integration Studio](images/warning.gif "Warning Icon") Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, changing this property to Yes could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function by creating an output parameter, if the action has none and you're trying to set property Function to `Yes`.
+![Animated GIF showing a warning icon, indicating a cautionary note about setting actions as functions in Integration Studio](images/warning-icon.png "Warning Icon") Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, changing this property to Yes could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function by creating an output parameter, if the action has none and you're trying to set property Function to `Yes`.
 
 ## Import Details
 

@@ -3,7 +3,7 @@ locale: en-us
 guid: 19f255a3-4d7e-4bf4-91d7-74c191a42399
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3072-13&t=wVzbD9aw4fUXUtiF-1
 summary: Explore customization options for development in Integration Studio with OutSystems 11 (O11).
 ---
 # Options Window
@@ -53,7 +53,7 @@ The default compiler options are as follows:
     * `/target:Rebuild`: Cleans and then builds the specified solution or project according to the specified solution configuration.
     * `/property:Configuration=Release`: The solution will be compiled in Release mode, generating the DLLs and EXEs for the current extension.
 
-![An icon representing a tip or suggestion related to .NET Compiler Tool Options in Integration Studio documentation](images/tip.gif "Tip Icon") For more information about the compiler options, check the [MSDN site](<https://msdn.microsoft.com/en-us/library/ms164311.aspx>).
+![An icon representing a tip or suggestion related to .NET Compiler Tool Options in Integration Studio documentation](images/tip-icon.png "Tip Icon") For more information about the compiler options, check the [MSDN site](<https://msdn.microsoft.com/en-us/library/ms164311.aspx>).
 
 ## Connection Tab
 
@@ -64,7 +64,7 @@ Use proxy authentication
 
     Default value: un-checked.
 
-    ![An icon representing a tip or suggestion related to .NET Compiler Tool Options in Integration Studio documentation](images/tip.gif "Tip Icon") If the Platform Server you are trying to connect to has a proxy, then it's mandatory that you set this option; otherwise it won't be possible for Integration Studio to connect to it.
+    ![An icon representing a tip or suggestion related to .NET Compiler Tool Options in Integration Studio documentation](images/tip-icon.png "Tip Icon") If the Platform Server you are trying to connect to has a proxy, then it's mandatory that you set this option; otherwise it won't be possible for Integration Studio to connect to it.
 
 Proxy user
 :   User name used in the proxy authentication.

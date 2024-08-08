@@ -20,6 +20,6 @@ Screen Templates enable you to create [Screens](../screens/intro.md) with predef
 
 Screen Templates help you develop faster. For example, create a work order template and make it onto a Screen that shows the statuses of your project tasks. You can change the Screens by [dropping](<replace-data.md>) an Entity over the widget. When the Entity changes, Service Studio updates the user interface.
 
-Service Studio comes with the default Screen Templates that are based on the OutSystems UI Framework. You can [create your Screen Templates](<intro.md>) as well.
+Service Studio comes with the default Screen Templates that are based on the OutSystems UI Framework. You can [create your Screen Templates](<create-screen-template.md>) as well.
 
 ![Mobile view of the New Screen window in Service Studio](images/new-screen-window-mobile.png "New Screen Window on Mobile")

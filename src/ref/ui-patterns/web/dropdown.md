@@ -41,7 +41,4 @@ Applies only to Traditional Web Apps.
 
     ![Screenshot showing the use of ListRecords with a dropdown to create a list of links](images/dropdown-image-3.png "Dropdown ListRecords Example")
 
-    ![Animated GIF demonstrating the interaction with a dropdown in a traditional web app](images/dropdown-gif-1.gif "Interactive Dropdown Example")
-
-
-
+    <iframe src="https://player.vimeo.com/video/996245584" width="458" height="658" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with a dropdown in a traditional web app.</iframe>

@@ -42,8 +42,8 @@ Here are some more advanced use-cases of the widget.
 
 1. Set the AdvancedFormat parameter to `{ animation: 'perspective' }`.
 
-    ![Animated example of the Balloon UI Pattern with default animation in a traditional web application](images/balloon-gif-1.gif "Balloon UI Pattern Animation Example")
+    <iframe src="https://player.vimeo.com/video/996222934" width="750" height="359" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Animated example of the Balloon UI Pattern with default animation in a traditional web application.</iframe>
 
 Changed animation:
 
-![Animated example of the Balloon UI Pattern with perspective animation in a traditional web application](images/balloon-gif-2.gif "Balloon UI Pattern Changed Animation")
+<iframe src="https://player.vimeo.com/video/996222909" width="750" height="359" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Animated example of the Balloon UI Pattern with default animation in a traditional web application.</iframe>

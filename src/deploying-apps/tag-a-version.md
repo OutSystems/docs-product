@@ -55,7 +55,7 @@ To tag the mobile app, do the following:
 
 The mobile app is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.
 
-<div warning="info" markdown="1">
+<div class="warning" markdown="1">
 
 Note that the mobile version will only be updated in other environments if the application  **is deployed through LifeTime**. Publishing the same version in other environments directly in Service Center or Service Studio will not update the mobile version.
 

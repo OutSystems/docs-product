@@ -78,4 +78,4 @@ The result would be something like this:
 
 The result is something like this:
 
-![Animated GIF demonstrating the show and hide actions on a Chat Message pattern upon clicking](images/chatmessage-1.gif "Chat Message Interaction Demonstration")
+<iframe src="https://player.vimeo.com/video/996232208" width="238" height="214" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the show and hide actions on a Chat Message pattern upon clicking.</iframe>

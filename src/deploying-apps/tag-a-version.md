@@ -55,6 +55,12 @@ To tag the mobile app, do the following:
 
 The mobile app is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.
 
+<div warning="info" markdown="1">
+
+Note that the mobile version will only be updated in other environments if the application  **is deployed through LifeTime**. Publishing the same version in other environments directly in Service Center or Service Studio will not update the mobile version.
+
+</div>
+
 If you need to install and test the tagged application version in a mobile device still in the Development environment, you can [generate a new mobile package](mobile-app-packaging-delivery/generate-distribute-mobile-app/intro.md) before proceeding with the deploy to Quality. Otherwise, OutSystems generates a new mobile package during the deployment process.
 
 #### Mobile package versions { #mobile-package-version }

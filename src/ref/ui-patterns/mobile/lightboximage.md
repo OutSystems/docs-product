@@ -22,7 +22,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 **Result**:
 
-![Animated GIF demonstrating the result of adding a filter to an image in Lightbox](images/Lightbox_filter.gif "Result of Adding Filter to Lightbox Image")
+<iframe src="https://player.vimeo.com/video/996193965" width="368" height="604" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the result of adding a filter to an image in Lightbox.</iframe>
 
 ## Loading Binary Images After Click on Lightbox Image (images from database)
 

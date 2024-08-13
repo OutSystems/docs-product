@@ -69,7 +69,7 @@ Applies only to Traditional Web Apps.
 
     ![Image illustrating the addition of an Ajax refresh for the Timepicker_Container in the TimePatternOnSelect action](images/timepicker-image-8.png "Ajax Refresh Setup")
 
-![Animated GIF demonstrating interaction with the Time Picker UI component](images/timepicker-gif-2.gif "Time Picker Interaction")
+<iframe src="https://player.vimeo.com/video/998212683" width="750" height="388" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating interaction with the Time Picker UI component.</iframe>
 
 ### Disable specific times
 
@@ -93,7 +93,7 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![Animated GIF showing the Time Picker with specific times disabled](images/timepicker-gif-3.gif "Time Picker Disabled Times")
+    <iframe src="https://player.vimeo.com/video/998212655" width="750" height="388" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the Time Picker with specific times disabled.</iframe>
 
 ### Start Input as Empty
 

@@ -49,7 +49,7 @@ When you set an entity attribute as mandatory it is automatically validated on t
 
 When you delete an entity or an entity attribute, the platform is permissive and lets you do it whether it is being used or not, but you must fix the elements where it is being used. In the database, the entity or entity attribute is not deleted by the platform.
 
-### Choosing between entities and static entities
+## Choosing between entities and static entities
 
 Use Entities and Static Entities based on the type of data you need to manage.
 

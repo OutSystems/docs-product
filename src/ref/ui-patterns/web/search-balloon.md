@@ -43,6 +43,6 @@ Here are some more advanced use-cases of the widget.
 1. On the AdvancedFormat parameter add the following line:  
 `{ showOnInit: true }`.
 
-![Animated GIF showing the Search Balloon widget initialization with results displayed](images/searchballoon-1-ss.gif "Search Balloon Initialization")
+<iframe src="https://player.vimeo.com/video/998132418" width="7500" height="208" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the Search Balloon widget initialization with results displayed.</iframe>
 
-![Animated GIF demonstrating the change in animation of the Search Balloon widget's results](images/searchballoon-2-ss.gif "Search Balloon Animation Change")
+<iframe src="https://player.vimeo.com/video/998132395" width="7500" height="208" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the Search Balloon widget initialization with results displayed.</iframe>

@@ -87,7 +87,7 @@ If you are an advanced user, you might want to use the Carousel API (OutSystems.
 
 1. (Optional) If using only one item per slide, set custom Padding and Gap values, so the scale effect is noticeable.
 
-    ![Animated GIF demonstrating the scale effect on the active item in a Carousel](images/carousel-scale-ss.gif "Carousel Scale Effect Demonstration")
+    <iframe src="https://player.vimeo.com/video/998119166" width="750" height="306" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the scale effect on the active item in a Carousel.</iframe>
 
 ### Disable the drag on the Carousel
 

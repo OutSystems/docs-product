@@ -34,4 +34,4 @@ Applies only to Traditional Web Apps.
 1. Drag a Tooltip to the preview.
 1. Set the AdvancedFormat parameter to `{ animation: 'perspective' }`.
 
-    ![Animated GIF showing the change of animation in a tooltip component within a traditional web app](images/tooltip-1.gif "Change Animation of Tooltip")
+    <iframe src="https://player.vimeo.com/video/998227283" width="638" height="118" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the change of animation in a Tooltip component within a traditional web app.</iframe>

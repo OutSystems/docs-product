@@ -70,7 +70,7 @@ The Migration Assessement Tool setup includes the following steps:
 
     </div>
 
-1. Still in the Service Center of the same Environment, ensure [**Single Sign-On Betwwen App Types**](../security/configure-authentication.md) is enabled.
+1. Still in Service Center of the same Environment, ensure [**Single Sign-On Between App Types**](../security/configure-authentication.md) is enabled.
 
 ### Install the Probe in the Development environment { #probe-dev }
 

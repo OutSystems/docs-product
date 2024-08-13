@@ -52,7 +52,7 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-![Animated GIF demonstrating the interaction with the Stacked Icon UI Pattern](images/stackedicon-1.gif "Stacked Icon Interaction Demonstration")
+<iframe src="https://player.vimeo.com/video/998188456" width="750" height="417" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with the Stacked Icon UI Pattern.</iframe>
 
 ## Notes
 

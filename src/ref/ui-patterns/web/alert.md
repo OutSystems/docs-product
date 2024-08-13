@@ -55,7 +55,7 @@ Applies only to Traditional Web Apps.
 1. Type the message you want to display.
 
     ![Image illustrating the user interface for configuring the Alert message within the Alert pattern](images/alert-image-5.png "Configuring Alert Message")
-    
+
 1. Publish and test.
 
-    ![Animated GIF demonstrating the Alert pattern with enter animation in a web application](images/alert-image-6.gif "Alert Pattern Animation Demonstration")
+    <iframe src="https://player.vimeo.com/video/998122525" width="750" height="163" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the Alert pattern with enter animation in a web application.</iframe>

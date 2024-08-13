@@ -48,4 +48,4 @@ For this example, refer to the [FourColumns Screen Template](https://outsystemsu
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the functionality of the reset search button in the Search UI Pattern](images/search-7-ss.gif "Reset Search Button Test")
+    <iframe src="https://player.vimeo.com/video/998144519" width="750" height="502" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the flickering issue with a screen element in a mobile app.</iframe>

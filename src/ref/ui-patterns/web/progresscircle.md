@@ -37,15 +37,15 @@ Applies only to Traditional Web Apps.
 
 1. Set the Value of the Progress Circle's Progress parameter.
 
-1. To change the color of the Progress Circle based on values, create a condition and set limits. 
+1. To change the color of the Progress Circle based on values, create a condition and set limits.
 
     In this example, 3 colors represent different states of progress. Set the value of the ProgressColor parameter to `If(Progress <= 50, Entities.Color.Red, If( Progress > 50 and Progress < 75,  Entities.Color.Yellow ,  Entities.Color.Green))`.
-    
+
     ![Screenshot showing how to set the Progress Circle color based on value conditions in Traditional Web Apps](images/progresscircle-4-ss.png "Progress Circle Color Change Example")
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the color change in the Progress Circle based on different value conditions](images/progresscircle-5-ss.gif "Progress Circle Color Change Demonstration")
+    <iframe src="https://player.vimeo.com/video/998126828" width="292" height="304" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the color change in the Progress Circle based on different value conditions.</iframe>
 
 ### Remove the round corners of the Progress Circle
 

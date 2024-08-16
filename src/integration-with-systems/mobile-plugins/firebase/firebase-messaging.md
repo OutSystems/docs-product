@@ -208,7 +208,16 @@ You need to add this block to each screen that might handle the notification con
 
 When the end-user clicks on a notification in the notification center, the app opens by default. If you want your app to handle the notification click, you can use the **NotificationsHandler** block and define a handler for the **NotificationClicked** event.
 
-If you want to navigate to a screen inside your app when the end-user clicks on a notification, you can use the **BuildInternalDeepLink** client action from the plugin. Our Sample App has this scenario implemented. If you want to do something else after the end-user clicks on a notification, simply implement your logic in the handler you create for the **NotificationClicked** event.
+If you want to navigate to a screen inside your app when the end-user clicks on a notification, you can use the **BuildInternalDeepLink** client action from the plugin. You should pass the name of the destination screen to the **Notification > DeepLink** attribute of the **SendRequest** parameter of the server action you called to deliver the notification (**SendNotificationToUsers** or **SendNotificationToTopics**). If you want the **BuildInternalDeepLink** action to build a deep link with query parameters, you should set the **key-value** pairs using the **ExtraDataList** attribute. 
+
+Our Sample App has this scenario implemented. If you want your app to do something else when the end-user clicks on a notification, simply implement your logic in the handler you create for the **NotificationClicked** event.
+
+
+<div class="warning" markdown="1">
+
+When sending a notification with a deep link, you should avoid using the following values for the **Key** attribute of **ExtraDataList**: from, notification, deepLink, showDialog, timeToLive, com.outsystems.fcm.notification, google.message_id, google.product_id, google.delivered_priority, google.original_priority, google.sent_time, google.ttl, gcm.n.analytics_data, collapse_key, FMOCA_TITLE, FMOCA_BODY, FMOCA_IMAGE, FMOCA_DATA.
+
+</div>
 
 ## Optional setup for notification Channel Name and Description - Android only
 
@@ -254,6 +263,44 @@ The feature is disabled by default. To enable it, `SetDeliveryMetricsExportToBig
 ### Known limitations on iOS
 
 As explained in the following [page](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#enable-message-delivery-data-export), there are two ways to enable the data export on iOS, one for [alert](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#enable_delivery_data_export_for_alert_notifications) and another for [background notifications](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#enable_delivery_data_export_for_background_notifications). On OutSystems mobile apps, it's not possible to enable data export for alert notifications, so you won't be able to enable the feature for all notifications.
+
+## Server actions reference
+
+### SendNotificationToTopics
+
+Sends a notification to all users associated with a topic or group of topics.
+
+|Parameter| Type | Data Type | Description |
+|:--------|:--------|:----------|:------------|
+| SendRequest | Input | SendToTopics Data Structure | The notification to topics request. |
+| Response | Output | FirebaseResponse Data Structure | The Response sent by Firebase. |
+
+### SendNotificationToUsers
+
+Sends a notification to a user or group of users.
+
+Parameter| Type | Data Type | Description |
+|:--------|:--------|:----------|:------------|
+| SendRequest | Input | SendToUsers Data Structure | The notification to users request. |
+| Response | Output | FirebaseResponse Data Structure | The Response sent by Firebase. |
+
+### SendSilentNotificationToTopics
+
+Sends a silent notification to all users associated with a topic or group of topics.
+
+|Parameter| Type | Data Type | Description |
+|:--------|:--------|:----------|:------------|
+| SendRequest | Input | SilentTopicNotification Data Structure | The silent notification to topic request. |
+| Response | Output | FirebaseResponse Data Structure | The Response sent by Firebase. |
+
+### SendSilentNotificationToUsers
+
+SendSilentNotificationToUsersSends a silent notification to a user or group of users.
+
+|Parameter| Type | Data Type | Description |
+|:--------|:--------|:----------|:------------|
+| SendRequest | Input | SilentUserNotification Data Structure | The silent notification to users request. |
+| Response | Output | FirebaseResponse Data Structure | The Response sent by Firebase. |
 
 ## Limitations
 

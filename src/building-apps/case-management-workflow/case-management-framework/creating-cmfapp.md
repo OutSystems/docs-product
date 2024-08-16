@@ -100,7 +100,7 @@ The **CaseDefinitionConfiguration** static entity holds the case definition for 
 
 Next, let’s customize the **CaseStatusConfiguration** static entity to define the different statuses the case can have.
 
-1. Still in the Data tab of the **CMAppStarter_CS** module, open the CaseDefinitionConfiguration static entity.
+1. Still in the Data tab of the **CMAppStarter_CS** module, open the CaseStatusConfiguration static entity.
 
 1. Open the **Records** folder and copy the **Closed_ExampleToCopyAndDelete** record.
 
@@ -174,7 +174,7 @@ You now need to reconfigure some of the module’s dependencies, names, and also
 
 ### Customizing the case workflow
 
-You can now start customizing the WF module in preparation for your CM app and building processes for case defnitions using [BPT](../../processes/intro.md). Note that there is a **HumanActivity_Example** activity that you can adapt to your preference including its name, description and if needed, setting instructions.
+You can now start customizing the WF module in preparation for your CM app and building processes for case definitions using [BPT](../../processes/intro.md). Note that there is a **HumanActivity_Example** activity that you can adapt to your preference including its name, description and if needed, setting instructions.
 
 The CaseComplete action calls on the Case_Complete action from CMf. After you have finished customizing the module, ensure the CaseComplete action is the final step in the flow.
 

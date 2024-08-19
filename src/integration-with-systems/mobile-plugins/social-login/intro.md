@@ -264,10 +264,3 @@ Note that users that sign in using the social login count as non-anonymous end u
 This means that they count towards the user limits established in your subscription.
 
 Use the methods available in the [Users API](../../../ref/apis/auto/users-api.final.md) to create or update end-user records.
-
-### Compatibility with operating systems
-
-**iOS only**
-
-The native login flow for Apple sign is only available for iOS 13 and later versions.
-For earlier iOS versions, use the PWA login flow.

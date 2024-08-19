@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Explore customizable charting options in OutSystems 11 (O11) with the enhanced Charts API v2 and Highcharts 11.2.0 integration.
+summary: Explore customizable charting options in OutSystems 11 (O11) with the enhanced Charts API v2 and Highcharts 11.4.6 integration.
 locale: en-us
 guid: CA58D796-3D68-4221-8DD8-33049ACEA9E5
 app_type: traditional web apps, mobile apps, reactive web apps

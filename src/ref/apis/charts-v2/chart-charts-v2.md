@@ -16,7 +16,7 @@ Available from OutSystems Charts v3.0.0. For more information on how to use the 
 
 </div>
 
-The Charts API v2 allows you to create, populate, and customize charts. OutSystems uses Highcharts 11.2.0 to generate the charts. For more information about implementation and the API, see the [Highcharts documentation](https://api.highcharts.com/highcharts/).
+The Charts API v2 allows you to create, populate, and customize charts. OutSystems uses Highcharts 11.4.6 to generate the charts. For more information about implementation and the API, see the [Highcharts documentation](https://api.highcharts.com/highcharts/).
 
 ## Charts
 

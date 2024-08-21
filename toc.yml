@@ -681,6 +681,7 @@
         - href: integration-with-systems/mobile-plugins/camera/intro.md
         - topics:  
             - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
+        - href: integration-with-systems/mobile-plugins/inapp-browser/inapp-browser.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-transfer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-viewer-plugin/intro.md

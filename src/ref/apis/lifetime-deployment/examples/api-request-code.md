@@ -40,8 +40,8 @@ Extension code is not available through the API.
 
 To download the source code of an app or a module, ensure that the environment from where you want to get the source code has:
 
-* Platform Server version 11.27.0 or higher
-* LifeTime version 11.21.1 or higher
+* Platform Server version 11.28.0 or higher
+* LifeTime version 11.22.0 or higher
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
     * Service Account needs Open and Debug on the environment
 

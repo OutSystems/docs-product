@@ -125,9 +125,3 @@ To enable your app to open HTTP URLs in the web view, set the **InAppBrowserClea
             }
         }
 ```
-
-
-
-
-
-

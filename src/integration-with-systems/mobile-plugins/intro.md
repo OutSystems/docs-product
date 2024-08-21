@@ -120,3 +120,4 @@ Mobile AppFeedback | Enables the user to invoke App Feedback for submitting feed
 NetworkStatus  | Lets your app know when the device is online/offline and informs of the type of network available (for example, WiFi, 3G, 4G).
 
 While you may see the names of these built-in plugins in the [native mobile shell logs](<../../monitor-and-troubleshoot/monitoring-an-environment.md>) they're not user-configurable. The only exception is [Mobile AppFeedback](<../../monitor-and-troubleshoot/app-feedback/user-feedback-enable.md>), which is present in the native shell if you enable the App Feedback feature.
+

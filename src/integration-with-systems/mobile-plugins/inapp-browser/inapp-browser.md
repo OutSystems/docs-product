@@ -7,7 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3732-79&t=Ib80O7AL6sHpUAoc-0
 ---
 
-# InApp Browser Plugin
+# InApp Browser plugin
 
 <div class="info" markdown="1">
 
@@ -67,7 +67,6 @@ Here's the result of opening a URL in the system browser, on iOS:
 
 ![Screenshot of a URL opened in a system browser on an iOS device](images/system-browser-ios.png "System Browser on iOS")
 
-
 ## Open a URL in an external browser outside the app
 
 To create the logic to open a URL in an external browser, outside the your app, follow these steps in Service Studio:
@@ -83,7 +82,6 @@ To create the logic to open a URL in an external browser, outside the your app, 
 Here's the result of opening a URL in the external browser, on Android (Google Chrome):
 
 ![Screenshot of a URL opened in an external browser on an Android device](images/external-browser-android.png "External Browser on Android")
-
 
 ## Handle browser events
 

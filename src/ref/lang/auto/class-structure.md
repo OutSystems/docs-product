@@ -10,7 +10,11 @@ figma:
 
 # Structure
 
-A Structure is a compound data type used to encapsulate groups of related attributes.  
+A Structure is a compound data type used to encapsulate groups of related attributes. Structures can be used in scenarios such as defining complex data types for REST API methods, integrating with external systems, or managing compound data in your app.
+
+For example, in an app, you can create a UserInfo structure to store data like the user's ID, name, and profile picture. You can reuse this structure in different actions throughout the app, ensuring consistency and efficiency. 
+
+For more information, refer to [Use structures to create compound data types](../../../building-apps/data/structure-create-use.md#example-using-a-structure).
 
 ## Exposed Structure
 

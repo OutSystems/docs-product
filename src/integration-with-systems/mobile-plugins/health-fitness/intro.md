@@ -268,11 +268,13 @@ After you have created your background job you can update or delete it using the
 
 To check the background job was successfully created, verify the value of **SetBackgroundJob.Success** is **True**.
 
-#### Setting a background job in Android 14
+#### Setting a background job in Android
 
-When setting a background job for the first time in Android 14, for some variables, the permission to schedule exact alarms will be requested. More specifically, this permission will be requested when setting the first background job if the variable is one of the following: weight, height, sleep, blood glucose, or body fat percentage.
+Starting in Android 15, when setting a background job for the first time, the Health Connect permission to read data in the background will be requested.
 
-With that said, it is a best practice to present a message to the user explaining why the permission is necessary (e.g. to get notifications about health and fitness data), before calling the **SetBackgroundJob** client action.
+Starting in Android 14, when setting a background job for the first time, for some variables, the permission to schedule exact alarms will be requested. More specifically, this permission will be requested when setting the first background job if the variable is one of the following: weight, height, sleep, blood glucose, or body fat percentage.
+
+With that said, it is a best practice to present a message to the user explaining why these permissions are necessary (e.g. to get notifications about health and fitness data), before calling the **SetBackgroundJob** client action.
 
 #### (Optional) Opt-out of permissions for background jobs (Android only)
 

@@ -62,7 +62,7 @@ It is possible to interact with other patterns or trigger actions with FlipConte
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the interaction with the Flip Content pattern](images/flipcontent-11.gif "Flip Content Interaction Demonstration")
+    <iframe src="https://player.vimeo.com/video/1001631534" width="428" height="386" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with the Flip Content pattern.</iframe>
 
 ### Use the Toggle server action on Flip Content Pattern
 
@@ -94,4 +94,4 @@ It is possible to use a button or containers to interact with FlipContent by usi
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the toggle action on Flip Content pattern](images/flipcontent-image-10.gif "Flip Content Toggle Action Demonstration")
+    <iframe src="https://player.vimeo.com/video/1001631555" width="428" height="386" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with the Flip Content pattern.</iframe>

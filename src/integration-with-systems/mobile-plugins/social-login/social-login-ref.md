@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Social Login plugin - reference page
+# Social Login Plugin - Reference Page
 
 ## Plugin elements
 

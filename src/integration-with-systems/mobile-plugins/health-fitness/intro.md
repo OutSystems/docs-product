@@ -7,7 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1265%3A86185&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
-# Health and Fitness Plugin HealthKit and Google Health Connect
+# Health and Fitness Plugin using HealthKit and Health Connect
 
 <div class="info" markdown="1">
 

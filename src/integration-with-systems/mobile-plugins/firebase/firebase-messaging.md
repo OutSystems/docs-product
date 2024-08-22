@@ -6,7 +6,7 @@ app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2218:14983
 ---
-# Firebase Cloud Messaging plugin using server actions
+# Firebase Cloud Messaging Plugin using server actions
 
 
 <div class="info" markdown="1">

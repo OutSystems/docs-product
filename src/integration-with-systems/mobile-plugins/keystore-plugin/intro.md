@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2925:15309
 ---
 
-# Key Store plugin
+# Key Store Plugin
 
 <div class="info" markdown="1">
 

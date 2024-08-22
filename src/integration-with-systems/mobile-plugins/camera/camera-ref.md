@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Camera plugin - reference page
+# Camera Plugin - Reference Page
 
 ## Plugin Elements
 
@@ -251,7 +251,8 @@ OS-PLUG-CAMR-0023 (NEW)|iOS, Android|Couldn’t choose media from the gallery be
 OS-PLUG-CAMR-0024 (NEW)|Android|Couldn't get media file path.
 OS-PLUG-CAMR-0025 (NEW)|iOS, Android|Cordova is not available.
 OS-PLUG-CAMR-0026 (NEW)|iOS, Android|Couldn’t play video.
-OS-PLUG-CAMR-0027 (NEW)|Android|The selected file doesn’t exist.
+OS-PLUG-CAMR-0027 (NEW)|Android|URI parameter cannot be empty.
 OS-PLUG-CAMR-0028 (NEW)|iOS|Couldn’t get video from the gallery.
 OS-PLUG-CAMR-0029 (NEW)|iOS|There's an issue with the plugin.
+OS-PLUG-CAMR-0030 (NEW)|Android|The selected file doesn't exist.
 

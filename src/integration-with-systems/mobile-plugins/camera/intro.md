@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1088:5164
 ---
 
-# Camera plugin
+# Camera Plugin
 
 <div class="info" markdown="1">
 

@@ -24,7 +24,7 @@ By using the separated logs feature, you can:
 
 ## Architecture
 
-Separated logs are stored in the Data Platform, OutSystems' native cloud service. Data Platform is a single pipeline for all observability data. It uses [Open Telemetry](https://opentelemetry.io/docs/) data standards to ensure that all observability data is properly structured and tagged, and can be correlated across services. 
+Separated logs are stored for 7 weeks in the Data Platform, OutSystems' native cloud service. Data Platform is a pipeline for all observability data. It uses [Open Telemetry](https://opentelemetry.io/docs/) data standards to ensure that all observability data is properly structured and tagged, and can be correlated across services. 
 
 Each app writes its own log entries using an internal logging API, ensuring user requests aren't blocked while these logs are being written. This logging API collects log information produced by the app and sends it to the Data Platform. Data sent from your OutSystems Cloud to Data Platform is encrypted in transit using TLS 1.2 and at rest using an AES-256 algorithm. The logs can then be read using the [CentralizedPlatformLogs extension](centralized-platform-logs-extension.md). 
 

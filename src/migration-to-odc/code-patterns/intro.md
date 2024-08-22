@@ -37,6 +37,5 @@ Here's some guidelines to refactor your O11 app:
 * [Asset consuming O11 system elements](arch-system-element.md)
 * [The Asset cannot contain BPTs](elem-bpt.md)
 * [The Asset cannot contain SOAP](elem-soap.md)
-* [End users with no email](end-user-no-email.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
 * [Refactor site properties](refactor-siteproperties.md)

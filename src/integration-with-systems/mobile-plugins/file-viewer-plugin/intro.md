@@ -16,8 +16,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-Use the File Viewer plugin to create logic that lets users open remote or app resource files, or in the case of a Progressive Web App (PWA), open and view files from your device (via a file picker). In Android users select an app to open the file. iOS provides a native preview for supported file types.
-
+Use the File Viewer plugin to create logic that lets users open remote or app resource files. In the case of a Progressive Web App (PWA), it allows users to open and view files from their device via a file picker. On Android, users select an app to open the file. iOS provides a native preview for supported file types.
 
 <div class="info" markdown="1">
 
@@ -37,6 +36,14 @@ File Viewer plugin can open:
 For now, it's impossible to access and manage a file system in a PWA or browser context. This means that using this plugin in a PWA only lets you open files via the device's file picker. You can show them in an OutSystems dialog. Your application needs to manage these limitations as necessary. The File Viewer plugin sample app has an example of this.
 
 ![Screenshot showing the File Viewer plugin's support for Progressive Web Apps](images/file-viewer-pwa-ss.png "File Viewer PWA Support")
+
+<div class="info" markdown="1">
+
+When using the device's file picker to open PDF files, the File Viewer plugin uses [Mozilla's PDFjs Javascript library](https://github.com/mozilla/pdf.js), more specifically, the `getDocument` function passing it the file's `objectURL`.
+
+This function uses Regex to validate the name/url passed to it and **this value is not sanitized by plugin**. As such, when using the plugin the application developer should not allow users to open random PDFs directly from the internet in their application.
+
+</div>
 
 ## Viewing files in Android and iOS
 

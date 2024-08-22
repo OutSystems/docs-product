@@ -23,7 +23,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
+| ---|---|---
 | Dropdown |  .choices__list--dropdown.is-active |  Defines if the drop-down is closed or opened  |
 
 ## Advanced use case
@@ -68,11 +68,11 @@ Or using the CSS variable `var(--color-yourcolor)` example:
 
 With Combo Box:
 
-![Animated preview showing the Dropdown Select UI Pattern with Combo Box in a browser](images/dropdownselect-4-ss.gif "Dropdown Select Combo Box Preview")
+<iframe src="https://player.vimeo.com/video/1001510016" width="750" height="403" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the Dropdown Select UI Pattern with combo box in a browser.</iframe>
 
 With List Box:
 
-![Animated preview showing the Dropdown Select UI Pattern with List Box in a browser](images/dropdownselect-2-ss.gif "Dropdown Select List Box Preview")
+<iframe src="https://player.vimeo.com/video/1001510029" width="750" height="403" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the Dropdown Select UI Pattern with list box in a browser.</iframe>
 
 ## Notes
 

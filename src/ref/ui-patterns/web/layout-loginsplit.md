@@ -32,7 +32,7 @@ Drag login related content to this placeholder.
 1. Remove the background container and drag an image.
 1. Publish and test.
 
-![Animated GIF demonstrating how to change the background to an image in the Login Split web block](images/layout-loginsplit-1-ss.gif "Login Split Background Image Change")
+<iframe src="https://player.vimeo.com/video/1002043829" width="750" height="380" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating how to change the background to an image in the Login Split web block.</iframe>
 
 ### Change layout structure
 
@@ -40,7 +40,7 @@ Drag login related content to this placeholder.
 1. Change the Column type by using the corresponding parameter (for instance, ColumnsMediumRight).
 1. Publish and test.
 
-![Animated GIF showing the process of changing the layout structure in the Login Split web block](images/layout-loginsplit-2-ss.gif "Login Split Layout Structure Change")
+<iframe src="https://player.vimeo.com/video/1002043844" width="750" height="364" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the process of changing the layout structure in the Login Split web block.</iframe>
 
 ## Compatibility with other patterns
 

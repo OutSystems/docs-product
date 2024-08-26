@@ -67,7 +67,8 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the change of position for Floating Actions in a Traditional Web App](images/floatingactions-4-ss.gif "Floating Actions Position Change Demonstration")
+    <iframe src="https://player.vimeo.com/video/1002673080" width="238" height="276" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the change of position for Floating Actions in a Traditional Web App.</iframe>
+
 
 ### Use Floating Actions with List Records
 

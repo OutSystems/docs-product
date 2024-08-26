@@ -51,10 +51,13 @@ To configure Akamai CDN/WAF:
         If you prefer to add more static files to the list, please do at this moment
         1. Choose **Cache for 1 days**
         1. Press **next**
-            <div class="info" markdown="1">
+
+           <div class="info" markdown="1">
             
             Ensure you update the [Cache timeout values in IIS](https://success.outsystems.com/documentation/11/setup_outsystems_infrastructure_and_platform/setting_up_outsystems/using_a_cdn_with_outsystems/#cache-timeout). If you’re an OS Cloud customer open a support ticket ahead of time requesting this change, explaining you’re trying to implement a WAF/CDN.
-            </div>
+
+           </div>
+           
     1. On Security Settings tab give a name for this configuration and click **Next**.
     1. On Review and activate tab you can review the applied settings in the previous steps. If you’re happy with the settings click **Activate**.
     1. On Verify step, perform the hosts files changes and test that your settings are working. Click **Next**.
@@ -100,6 +103,7 @@ To customize the rules on your Akamai WAF, do the following:
 <div class="info" markdown="1">
 
 Although this guide focus on WAFs, you can leverage other components of Akamai App & API Protector to personalize your security configuration, such as applying a geo protection to your OutSystems infrastructure. That, for example, would allow you to block traffic from certain countries.
+
 </div>
 
 ## Test, Monitor, Fine-tune

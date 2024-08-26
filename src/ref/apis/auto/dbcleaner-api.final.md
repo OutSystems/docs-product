@@ -140,11 +140,11 @@ OlderThan
 
 ModuleId
 :   Type: optional, Integer.  
-    The module identifier. If not specified, returns module versions of all modules.
+    The module identifier. If not specified, deletes module versions of all modules.
 
 MaxNumberOfVersions
 :   Type: optional, Integer.  
-    The maximum number of versions to get. If not specified, returns the oldest 100 module versions. Set to 0 (zero) to get all the module versions.
+    The maximum number of versions to get. If not specified, deletes the oldest 100 module versions. Set to 0 (zero) to get all the module versions.
 
 *Outputs*
 

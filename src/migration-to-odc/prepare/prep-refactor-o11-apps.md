@@ -75,7 +75,7 @@ To adapt your O11 apps and make them ODC-compatible, follow these steps:
 
 ## Next steps
 
-* Deploy the updated O11 apps to the OA environment
+* Tag and deploy the updated O11 apps to the OA environment
 
 * Perform acceptance tests for the updated O11 apps in QA
 

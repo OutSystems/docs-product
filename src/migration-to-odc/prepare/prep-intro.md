@@ -11,7 +11,7 @@ figma:
 
 <div class="info" markdown="1">
 
-This article only applies to customers with access to the Migration Kit. 
+This article only applies to customers with access to the Migration Kit.
 
 </div>
 

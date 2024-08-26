@@ -30,7 +30,7 @@ This layout comes with a default responsive behavior. On tablets it remains the 
 
 The menu also adapts to mobile, hiding the navigation sidebar, which can be toggled by a hamburger icon.
 
-![Animated GIF demonstrating the toggle of the navigation sidebar in the Layout Side Menu on a mobile device](images/layout-sm-4-ss.gif "Layout Side Menu Mobile Navigation Toggle")
+<iframe src="https://player.vimeo.com/video/1002680199" width="344" height="750" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the toggle of the navigation sidebar in the Layout Side Menu on a mobile device.</iframe>
 
 ![Screenshot showing the Layout Side Menu's adaptation to mobile devices with a hidden navigation sidebar](images/layout-sm-8-ss.png "Layout Side Menu Mobile Adaptation")
 

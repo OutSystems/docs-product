@@ -1,5 +1,5 @@
 ---
-summary: Learn more about the step-by-step one shot process when migrating your o11 apps and data to ODC
+summary: Learn more about the step-by-step one shot process when migrating your o11 apps and data to ODC.
 guid: f3102151-e4fb-415a-91da-9c16dc56fe2e
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
@@ -33,7 +33,7 @@ Before you start migrating apps, ensure the following:
 
 * [The O11 to ODC architecture has been validated](../plan/plan-assess-refactor.md).
 
-* [The compatibility of your O11 apps with ODC ](../prepare/prep-refactor-o11-apps.md)
+* [The compatibility of your O11 apps with ODC](../prepare/prep-refactor-o11-apps.md).
 
 ## Step-by-step migration process
 

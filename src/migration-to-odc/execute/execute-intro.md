@@ -1,6 +1,5 @@
 ---
 summary: Learn more about the step-by-step one shot process when migrating your o11 apps and data to ODC
-tags: 
 guid: f3102151-e4fb-415a-91da-9c16dc56fe2e
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps

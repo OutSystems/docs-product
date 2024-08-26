@@ -22,7 +22,7 @@ After migrating the O11 code to ODC and publishing the ODC apps and libraries in
 
 <div class="info" markdown="1">
 
-    You can migrate only data stored within the O11 platform to ODC. If you are using external databases, you must configure the external database connection in ODC. 
+You can migrate only data stored within the O11 platform to ODC. If you are using external databases, you must configure the external database connection in ODC. 
 
 </div>
 
@@ -50,7 +50,7 @@ Stop environment makes the source O11 environment inaccessible to developers and
 
 <div class="warning" markdown="1">
 
-This option means **all O11 apps in the source O11 environment can't be accessed**, whether they're part of the migration or not..
+This option means **all O11 apps in the source O11 environment can't be accessed**, whether they're part of the migration or not.
 
 </div>
 

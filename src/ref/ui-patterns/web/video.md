@@ -48,4 +48,4 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the interaction with custom Play and Pause buttons in the Video UI Pattern](images/video-gif-1.gif "Video Pattern Interaction Demonstration")
+    <iframe src="https://player.vimeo.com/video/1002739137" width="750" height="469" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with custom Play and Pause buttons in the Video UI Pattern.</iframe>

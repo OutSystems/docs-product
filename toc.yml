@@ -1097,7 +1097,6 @@
     # Execute
     - href: migration-to-odc/execute/execute-intro.md
     - topics:
-        - href: migration-to-odc/execute/execute-intro.md
         - href: migration-to-odc/execute/execute-connect-to-tool.md
         - href: migration-to-odc/execute/execute-about-migrate-code.md
         - href: migration-to-odc/execute/execute-how-to-migrate-code.md

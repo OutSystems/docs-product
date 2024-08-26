@@ -43,7 +43,7 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![Animated GIF showing a progress bar in action within a traditional web app](images/progressbar-5.gif "Progress Bar Animation")
+    <iframe src="https://player.vimeo.com/video/1002735393" width="750" height="171" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating a progress bar in action within a traditional web app.</iframe>
 
 ### Change the style of Progress Bar
 

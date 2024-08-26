@@ -28,7 +28,7 @@ This layout comes with a default responsive behavior. On tablets it remains the 
 
 The menu also adapts to mobile, moving the navigation to a sidebar, toggled by a hamburger icon.
 
-![Animated GIF demonstrating the Layout Top Menu's responsive behavior on mobile devices with a sidebar navigation](images/layout-tm-4-ss.gif "Layout Top Menu Responsive Behavior on Mobile")
+<iframe src="https://player.vimeo.com/video/1002731447" width="344" height="750" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the Layout Top Menu's responsive behavior on mobile devices with a sidebar navigation.</iframe>
 
 On a mobile phone and tablet:
 

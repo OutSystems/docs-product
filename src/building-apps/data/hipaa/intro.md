@@ -19,7 +19,13 @@ The Cryptography Services app interfaces with the Key Management Service (KMS) a
 
 It exposes actions that work with the KMS to encrypt and decrypt PHI. Those are divided into two groups of actions, depending on whether you need to search on the encrypted data: **actions for searchable attributes** and **actions for unsearchable attributes**.
 
-For example, you may want to both encrypt `email address` and `blood type`, but you only want `blood type` to be searcheable. You may have a screen that filters a search by `blood type` but you won't be able to search by `email address`.
+## About searchable and unsearchable data
+
+Searchable data allows you to perform searches while unsearchable data does not. For example, you may encrypt both `email address` and `blood type`, but you only want `blood type` to be searcheable. This means, you can design a screen that filters a search by `blood type` but not by `email address`.
+
+Searchable data encryption uses unsalted, predictable encryption, meaning that the same plaintext input with the same key  always produces the same ciphertext. While this approach is less secure, it allows for easier searching.
+
+On the other hand, unsearchable data encryption employs salted encryption, where additional random data, known as a "salt," is added to the plaintext. This ensures that even with the same plaintext and key, the resulting ciphertext will be different each time, providing stronger security at the cost of searchability.
 
 ## Actions for searchable attributes
 

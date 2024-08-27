@@ -82,7 +82,7 @@ Configurator](https://www.outsystems.com/forge/component-overview/13679/payments
 
 You need the following information:
 
-* Access to the Payments Configurator at `https://<your-environment>/PaymentsConfigurator/`, where replace `<your-environment>` with your development environment address.
+* Access to the Payments Configurator at `https://<your-environment>/PaymentsConfigurator/`, where you should replace `<your-environment>` with your development environment address.
 
 * Access to a mobile PSP by either configuring a new mobile payment service or editing an existing one. To configure PSP details, add the following information (depending on the PSP):
 

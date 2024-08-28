@@ -38,7 +38,7 @@ To access the logs of your REST API, do the following:
 
 ## View REST API Logs directly from the database
 
-Customers with access to the database cab also query related to an action and see all related details by doing the following:
+Customers with access to the database can also see all related details by doing the following:
 
 1. Access the database on the selected environment.
 

@@ -123,7 +123,7 @@ Otherwise, open the camera with **RecordVideo** to let users capture a video (2)
 In the **RecordVideo** action, you can set the parameters for saving the recorded media to the device’s gallery.
 
 Check if recording videos on the device works by verifying the value of **RecordVideo.Success** is **True** (3).
-If yes, handle the picture data in **RecordVideo.MediaResult** by assigning it to a variable of the **MediaResult** data type (4).
+If yes, handle the video data in **RecordVideo.MediaResult** by assigning it to a variable of the **MediaResult** data type (4).
 
 ![Flowchart screenshot outlining the logic to record a video using the Camera plugin, including checking plugin availability, capturing the video, and handling the video data.](images/capture-video-logic-2-ss.png "Camera Flow for Recording a Video")
 

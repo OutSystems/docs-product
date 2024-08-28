@@ -120,7 +120,7 @@ You can connect an integration in the following ways:
 
     * You're integrating with MongoDB.
 
-* [**Request a new connection 3**](#option-3): If you need a new connection to a relational database but don't have the required permissions, you can **request a new connection**. This option is only available for integrations with relational databases.
+* [**Request a new connection**](#option-3): If you need a new connection to a relational database but don't have the required permissions, you can **request a new connection**. This option is only available for integrations with relational databases.
 
 #### Use an existing connection { #option-1 }
 

@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 
 Adding documentation to your REST API is essential as it helps developers to integrate their applications with your system.
 
-OutSystems facilitates documenting your REST API by automatically generating the documentation when you publish the module. The platform generates the documentation from the properties of the REST API, the REST API methods, and their parameters. Subsequent changes to the exposed REST API (for example, when endpoints or parameters and added or changed) are automatically updated in the generated documentation.
+OutSystems facilitates documenting your REST API by automatically generating the documentation when you publish the module. The platform generates the documentation from the properties of the REST API, the REST API methods, and their parameters. Subsequent changes to the exposed REST API (for example, when endpoints or parameters are added or changed) are automatically updated in the generated documentation.
 
 Do the following:
 

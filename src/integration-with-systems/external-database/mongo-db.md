@@ -99,7 +99,7 @@ To fetch a record, known as a document in MongoDB, to a collection with Structur
 
 ### Fetch a list of records from a collection with Structure Format
 
-To fetch a list of records, known as a document in MongoDB, to a collection with Structure Format follow the steps in [Fetch a single record](../../building-apps/data/operations/fetch-data-ib.md#fetch-list).
+To fetch a list of records, known as a document in MongoDB, to a collection with Structure Format follow the steps in [Fetch a list of records](../../building-apps/data/operations/fetch-data-ib.md#fetch-list).
 
 ## Collection with JSON Format { #json-format }
 

@@ -34,8 +34,8 @@ Use the following steps to redact the values of a given Output Parameter from th
 
 1. In the element tree, expand the consumed REST element, and then expand the element for REST Method with the input parameter you want to redact from the logs.
 
-1. Select the input parameter you wish to redact (in this case Code) , and set its **Log Redaction property** to **Yes**.
-    
+1. Select the output parameter you wish to redact (in this case Code) , and set its **Log Redaction property** to **Yes**.
+
     ![Screenshot illustrating the activation of log redaction for an output parameter in Service Studio](images/redact_code.png "Activating the Log Redaction property of an output parameter")
 
 With this configured, performing a request at runtime the resultant logs will look like shown below. 

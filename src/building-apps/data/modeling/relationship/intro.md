@@ -18,7 +18,7 @@ The entity where the reference attribute should be created depends on the cardin
 
 <div class="info" markdown="1">
 
-When modeling your data keep in mind that **static entities** can only have relationships with **other static entities**.
+When modeling data, remember that static entities can only have foreign keys to other static entities. They can't reference dynamic entities.
 
 </div>
 

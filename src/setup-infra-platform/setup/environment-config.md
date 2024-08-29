@@ -60,7 +60,7 @@ Management (LifeTime)
 
 :   This is where LifeTime, the infrastructure management console, lives. An environment with this purpose requires stability, and that’s why they also behave similarly to environments with Production purpose, with no optimizations being done.
 
-The **Purpose** you can configure for the environment is subject to the environment's license.
+The **Purpose** you can configure for the environment is subject to the environment's license. A license with the Development type only allows Development and Non-Production purposes.
 
 #### Feature availability for different Purposes
 
@@ -138,6 +138,13 @@ The **Purpose** you can configure for the environment is subject to the environm
 <td style="align:center;background-color:#dddddd;">No</td>
 <td style="align:center;background-color:#dddddd;">No</td>
 <td style="align:center;background-color:#dddddd;">No</td>
+</tr>
+<tr>
+<td>Debug</td>
+<td style="align:center;background-color:#2ecc71;">Yes</td>
+<td style="align:center;background-color:#2ecc71;">Yes</td>
+<td style="align:center;background-color:#2ecc71;">Yes</td>
+<td style="align:center;background-color:#2ecc71;">Yes</td>
 </tr>
 </tbody>
 </table>

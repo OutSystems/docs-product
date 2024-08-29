@@ -16,7 +16,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-You can use the Blank State UI Pattern to inform end users, for example, to complete a task or when there is no data available for display etc.
+You can use the Blank Slate UI Pattern to inform end users, for example, to complete a task or when there is no data available for display etc.
 
 ![Screenshot of an example implementation of the Blank Slate UI Pattern in a mobile or reactive web app](images/blankslate-5-ss.png "Blank Slate UI Pattern Example")
 

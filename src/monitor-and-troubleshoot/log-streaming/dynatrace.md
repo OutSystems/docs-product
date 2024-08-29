@@ -57,7 +57,7 @@ Once you've completed these steps, go to LifeTime and [configure the log streami
 
 <div class="info" markdown="1">
 
-The streaming follows the limits of Dynatrace's ingestion API. For more information, refer to Dynatrace's documentation on [Ingest OpenTelemetry logs](https://docs.dynatrace.com/docs/extend-dynatrace/opentelemetry/getting-started/logs/ingest#ingestion-limits).   
+Large 'content' and 'exception.stacktrace' attribute values are truncated to 4,000 characters before streaming. For more information regarding limits followed while streaming to Dynatrace's ingestion API, refer to Dynatrace's documentation on [Ingest OpenTelemetry logs](https://docs.dynatrace.com/docs/extend-dynatrace/opentelemetry/getting-started/logs/ingest#ingestion-limits).   
 
 </div>
 

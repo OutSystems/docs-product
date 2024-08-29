@@ -28,7 +28,7 @@ Once you have these values, go to LifeTime and [configure the log streaming serv
 
 <div class="info" markdown="1">
 
-The streaming follows the limits of New Relic's ingestion API. For more information, refer to New Relic's documentation on [Send custom events with our Event API](https://docs.newrelic.com/docs/data-apis/ingest-apis/event-api/introduction-event-api/#limits).   
+Large 'message and 'exception.stacktrace' attribute values are truncated to 4,000 characters before streaming in order to follow New Relic's ingestion API limits. For more information, refer to New Relic's documentation on [Send custom events with our Event API](https://docs.newrelic.com/docs/data-apis/ingest-apis/event-api/introduction-event-api/#limits).   
 
 </div>
 

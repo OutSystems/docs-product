@@ -73,13 +73,131 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |:-|:-|:-:|-|
 |Application_Key|resource.attributes.outsystems.app.key|Text|Unique identifier of the application where the event occurred.|
 |Application_Name|resource.attributes.outsystems.app.name|Text|Name of the application where the event occurred.|
-|EventDetails|log.body|Text|A JSON object with the details about the event. Each built-in request event has its own details: WebScreenClientExecuted; WebScreenServerExecuted; QueryExecuted; ConsumedIntegrationExecuted; ExtensionExecuted.|
+|EventDetails|log.body|Text|A JSON object with the details about the event. Each built-in request event has its own details:<br/>• [WebScreenClientExecuted](#webscreenclientexecuted-details)<br/>• [WebScreenServerExecuted](#webscreenserverexecuted-details)<br/>• [QueryExecuted](#queryexecuted-details)<br/>• [ConsumedIntegrationExecuted](#consumedintegrationexecuted-details)<br/>• [ExtensionExecuted](#extensionexecuted-details).|
 |Instant|@timestamp|Date Time|Date and time when the event occurred in the front-end (server log) or in the mobile device (client log).|
 |Module_Name|log.attributes.outsystems.log.message.tag|Text|Unique identifier of the module where the event occurred.|
 |ModuleKey|resource.attributes.outsystems.module.key|Text|Name of the module where the event occurred.|
 |RequestEventName|log.attributes.outsystems.log.event.type|Text|The name of the event.|
 |RequestKey|log.attributes.outsystems.request.key|GUID|Correlation field of the several log types to a single request.|
 |N/A|log.attributes.outsystems.log.type|Text|Type of log: RequestEvent. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
+
+#### Request event details for WebScreenClientExecuted event { #webscreenclientexecuted-details }
+
+| Existing data field | OpenTelemetry field | Meaning | Description|
+|:-|:-|:-:|-|  
+|AK |outsystems.request.event.details.ak| Action Key | The key of the action that was handling the request on the server.|
+|AN |outsystems.request.event.details.an| Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".|
+|EK |outsystems.request.event.details.ek| Environment Key | The unique key identifying the environment the user was accessing.|
+|EN |outsystems.request.event.details.en| Environment Name | The name of the environment the user was accessing.|
+|EPK |outsystems.request.event.details.epk| EndPoint Key | The key of the web screen that was handling the request.|
+|EPN |outsystems.request.event.details.epn| EndPoint Name | The name of the web screen that was handling the request.|
+|TK |outsystems.request.event.details.tk| Tenant Key | A unique key identifying the tenant.|
+|TN |outsystems.request.event.details.tn| Tenant Name | The name of the tenant.|
+|FN |outsystems.request.event.details.fn| Front-end Name | The name of the front-end server that handled the request.|
+|VK |outsystems.request.event.details.vk| Visitor Key | Unique identifier key for the visitor that performed the request.<br/>A visitor is a combination of a device and a browser. The key is created at the first time the visitor accesses the website's domain using a given device and browser. The same key is used until the browser cookies are cleared.|
+|ViK |outsystems.request.event.details.vik| Visit Key | Unique identifier of the visit associated with the current request.<br/>A visit is defined as a series of page requests from the same visitor. A visit is considered finished when no requests have been recorded for 30 minutes.|
+|SK |outsystems.request.event.details.sk| Session Key | Unique identifier of the session associated with the request.|
+|UK |outsystems.request.event.details.uk| User Key | Unique user identifier associated with the user, if logged in during the request.|
+|SR |outsystems.request.event.details.sr| Screen Resolution | The browser window screen resolution. Formatted as "&lt;width&gt;x&lt;height&gt;". Example: "1024x768".|
+|UA |outsystems.request.event.details.ua| User Agent | The user agent string as provided by the browser.|
+|D |outsystems.request.event.details.d| Duration | The time, in milliseconds, that passed from the moment the user made the request (for example, by clicking on a link) until the browser finished processing the response.<br/>Note: This attribute is related only to the HTTP request itself. If the HTML contains references to other resources (for example, images or fonts), the time it took to download and process those resources is not included.|
+|LT |outsystems.request.event.details.lt| Load Time | The time, in milliseconds, that the browser took to process the response. The load time includes for example the page rendering and the JavaScript execution.|
+|TTFB |outsystems.request.event.details.ttfb| Time To First Byte | The time, in milliseconds, that passed from the moment the user made the request (for example, user clicked on a link), until the browser received the first byte of the response from the Platform Server.|
+|TTLB |outsystems.request.event.details.ttlb| Time To Last Byte | The time, in milliseconds, that passed from the moment the user made the request (for example, user clicked on a link), until the browser received the last byte of the response from the Platform Server.|
+
+#### Request event details for WebScreenServerExecuted event { #webscreenserverexecuted-details }
+
+| Existing data field | OpenTelemetry field | Meaning | Description|
+|:-|:-|:-:|-|  
+|TK |outsystems.request.event.details.tk| Tenant Key | A unique key identifying the tenant.|
+|TN |outsystems.request.event.details.tn| Tenant Name | The name of the tenant.|
+|EK |outsystems.request.event.details.ek| Environment Key | The unique key identifying the environment the user was accessing.|
+|EN |outsystems.request.event.details.en| Environment Name | The name of the environment the user was accessing.|
+|FN |outsystems.request.event.details.fn| Front-end Name | The name of the front-end server that handled the request.|
+|EPK |outsystems.request.event.details.epk| EndPoint Key | The key of the web screen that was handling the request.|
+|EPN |outsystems.request.event.details.epn| EndPoint Name | The name of the web screen that was handling the request.|
+|AK |outsystems.request.event.details.ak| Action Key | The key of the action that was handling the request on the server.|
+|AN |outsystems.request.event.details.an| Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".|
+|D |outsystems.request.event.details.d| Duration | The time, in milliseconds, that passed from the moment the user made the request (for example, by clicking on a link) until the browser finished processing the response.<br/>Note: This attribute is related only to the HTTP request itself. If the HTML contains references to other resources (for example, images or fonts), the time it took to download and process those resources is not included.|
+|TQT |outsystems.request.event.details.tqt| Total Query Time | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries).|
+|TQE |outsystems.request.event.details.tqe| Total Query Executions | The total number of executed queries (Aggregates and Advanced Queries).|
+|TET |outsystems.request.event.details.tet| Total Extension Time | The total time spent, in milliseconds, calling actions provided by extensions.|
+|TEE |outsystems.request.event.details.tee| Total Extension Executions | The total number of calls to actions provided by extensions.|
+|TCIT |outsystems.request.event.details.tcit| Total Consumed Integration Time | The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP).|
+|TCIE |outsystems.request.event.details.tcie| Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP).|
+|TSAT |outsystems.request.event.details.tsat| Total Consumed Service Action Time | The total time spent, in milliseconds, calling service actions.|
+|TSAE |outsystems.request.event.details.tsae| Total Consumed Service Action Calls | The total number of calls of service actions.|
+|IP |outsystems.request.event.details.ip| Client IP | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875).|
+|SAT |outsystems.request.event.details.sat| Session Acquisition Time | The time spent, in milliseconds, retrieving the session from the database.|
+|SS |outsystems.request.event.details.ss| Session Size | The session size, in bytes.|
+|VSS |outsystems.request.event.details.vss| View State Size | The view state, in bytes.|
+|UID |outsystems.request.event.details.uid| User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the User Id isn't included in the event attributes.|
+|EC |outsystems.request.event.details.ec| Number of errors | The number of errors that occurred during the request.|
+
+#### Request event details for QueryExecuted event { #queryexecuted-details }
+
+| Existing data field | OpenTelemetry field | Meaning | Description|
+|:-|:-|:-:|-|  
+|TK |outsystems.request.event.details.tk| Tenant Key | A unique key identifying the tenant.|
+|TN |outsystems.request.event.details.tn| Tenant Name | The name of the tenant.|
+|AK |outsystems.request.event.details.ak| Action Key | The key of the action that was handling the request.|
+|AN |outsystems.request.event.details.an| Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".|
+|EK |outsystems.request.event.details.ek| Environment Key | The unique key identifying the environment the user was accessing.|
+|EN |outsystems.request.event.details.en| Environment Name | The name of the environment the user was accessing.|
+|EPK |outsystems.request.event.details.epk| EndPoint Key | The key of the web screen that was handling the request.|
+|EPN |outsystems.request.event.details.epn| EndPoint Name | The name of the web screen that was handling the request.|
+|FN |outsystems.request.event.details.fn| Front-end Name | The name of the front-end server that handled the request.|
+|D |outsystems.request.event.details.d| Duration | The total duration of all the slow query executions.|
+|OK |outsystems.request.event.details.ok| Object Key | The key that identifies the slow query.|
+|ON |outsystems.request.event.details.on| Object Name | The name of the slow query.|
+|NE |outsystems.request.event.details.ne| Number of Executions | The total number of calls for a given slow query.|
+|OEK |outsystems.request.event.details.oek| Object's eSpace Key | The key of the application module where the slow query was called.| 
+|OEN |outsystems.request.event.details.oen| Object's eSpace Name | The name of the application module where the slow query was called.|
+|EC |outsystems.request.event.details.ec| Number of errors | The number of errors that occurred during the request.|
+
+#### Request event details for ConsumedIntegrationExecuted event { #consumedintegrationexecuted-details }
+
+| Existing data field | OpenTelemetry field | Meaning | Description|
+|:-|:-|:-:|-|  
+|TK |outsystems.request.event.details.tk| Tenant Key | A unique key identifying the tenant.|
+|TN |outsystems.request.event.details.tn| Tenant Name | The name of the tenant.|
+|EK |outsystems.request.event.details.ek| Environment Key | The unique key identifying the environment the user was accessing.|
+|EN |outsystems.request.event.details.en| Environment Name | The name of the environment the user was accessing.|
+|FN |outsystems.request.event.details.fn| Front-end Name | The name of the front-end server that handled the request.|
+|ON |outsystems.request.event.details.on| Object Name | The name of the slow integration method.|
+|OK |outsystems.request.event.details.ok| Object Key | The key that identifies the slow integration method.|
+|OEN |outsystems.request.event.details.oen| Object's eSpace Name | The name of the application module where the slow integration was called.| 
+|OEK |outsystems.request.event.details.oek| Object's eSpace key | The key of the application module where the slow integration was called.|
+|NE |outsystems.request.event.details.ne| Number of Executions | The total number of calls for a given slow integration.|
+|D |outsystems.request.event.details.d| Duration | The total duration of all the slow integration executions.|
+|EPK |outsystems.request.event.details.epk| EndPoint Key | The key of the web screen that was handling the request.|
+|EPN |outsystems.request.event.details.epn| EndPoint Name | The name of the web screen that was handling the request.|
+|AK |outsystems.request.event.details.ak| Action Key | The key of the action that was handling the request.|
+|AN |outsystems.request.event.details.an| Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".|
+|IT |outsystems.request.event.details.it| Integration Type | The integration type. Current supported integration types: SOAP, REST and SAP.|
+|IE |outsystems.request.event.details.ie| Integration Endpoint | The integration's endpoint URL.|
+|EC |outsystems.request.event.details.ec| Number of errors | The number of errors that occurred during the request.|
+
+#### Request event details for ExtensionExecuted event { #extensionexecuted-details }
+
+| Existing data field | OpenTelemetry field | Meaning | Description|
+|:-|:-|:-:|-|  
+|TK |outsystems.request.event.details.tk| Tenant Key | A unique key identifying the tenant.|
+|TN |outsystems.request.event.details.tn| Tenant Name | The name of the tenant.|
+|EK |outsystems.request.event.details.ek| Environment Key | The unique key identifying the environment the user was accessing.|
+|EN |outsystems.request.event.details.en| Environment Name | The name of the environment the user was accessing.|
+|FN |outsystems.request.event.details.fn| Front-end Name | The name of the front-end server that handled the request.|
+|OK |outsystems.request.event.details.ok| Object key | The key that identifies the slow extension's action.|
+|ON |outsystems.request.event.details.on| Object name | The name of the slow extension's action.|
+|OEK |outsystems.request.event.details.oek| Object's eSpace key | The key of the eSpace where the slow extension action was called.|
+|OEN |outsystems.request.event.details.oen| Object's eSpace name | The name of the eSpace where the slow extension action was called.|
+|NE |outsystems.request.event.details.ne| Number of Executions | The total number of calls for a given slow extension's action.|
+|D |outsystems.request.event.details.d| Duration | The total duration of all the slow extension executions.|  
+|EPK |outsystems.request.event.details.epk| EndPoint Key | The key of the web screen that was handling the request.|
+|EPN |outsystems.request.event.details.epn| EndPoint Name | The name of the web screen that was handling the request.|
+|AK |outsystems.request.event.details.ak| Action Key | The key of the action that was handling the request.|
+|AN |outsystems.request.event.details.an| Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".|
+|EC |outsystems.request.event.details.ec| Number of errors | The number of errors that occurred during the request.|
 
 ## CyclicJob logs
 

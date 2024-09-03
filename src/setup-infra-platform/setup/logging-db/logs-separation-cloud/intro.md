@@ -61,8 +61,8 @@ Although the logging capabilities don’t change, by changing the logs storage l
 
 ### Service Center and LifeTime
 
-Changing the logs storage location won't change how Service Center and LifeTime display the logs. You’ll still be able to access the logs via Service Center and LifeTime despite the change of the logs storage location.
-Service Center and LifeTime show you the logs from the previous two weeks. However, note that after activating the logs separation feature, Service Center and LifeTime won’t show the logs from before the activation. You are only able to see the logs from the moment you activated the feature. If you need to access logs from the previous two weeks, reach out to [OutSystems support](https://www.outsystems.com/tk/redirect?g=A82EA0CB-B101-4F08-BCFB-77559EF63801).  
+Changing the logs storage location won't change how Service Center and LifeTime Analytics display the logs. You’ll still be able to access the logs via Service Center and LifeTime Analytics despite the change of the logs storage location.
+Service Center shows the logs from the previous four weeks, while LifeTime Analytics considers logs from the previous two weeks. However, note that after activating the logs separation feature, Service Center and LifeTime Analytics won’t show the logs from before the activation. You are only able to see the logs from the moment you activated the feature. If you need to access logs from the previous two weeks, reach out to [OutSystems support](https://www.outsystems.com/tk/redirect?g=A82EA0CB-B101-4F08-BCFB-77559EF63801).  
 
 ### PlatformLogs extension
 

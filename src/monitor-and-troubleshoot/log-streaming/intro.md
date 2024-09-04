@@ -86,13 +86,13 @@ OutSystems supports the following tools:
 
 * Amazon S3
 
-Note that any other tool compatible with the OpenTelemetry protocol and OTLP logs format should typically be capable of interpreting the OutSystems logs.
-
 <div class="info" markdown="1">
 
-For tools that don't support native ingestion of OTLP log data such as **Datadog**, **Splunk**, **Amazon S3**, you must [set up an OpenTelemetry collector](configure-collector.md).
+Other tools compatible with the OpenTelemetry protocol and OTLP logs format are typically capable of interpreting the OutSystems logs, but you need to evaluate them. Also, many APM tools are not native-compatible. For example, Splunk, Datadog, and Amazon S3 have implemented and distributed a public exporter library with the OpenTelemetry collector.
 
-IP whitelisting is not supported as OutSystems origin IPs might change.
+The OpenTelemetry collector is an app that runs separately and must be launched/supported by customers. For more information, refer to [How to set up an OpenTelemetry collector](configure-collector.md).
+
+IP allowlisting is not supported as the OutSystems origin IPs might change.
 
 </div>
 

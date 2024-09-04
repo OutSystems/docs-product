@@ -29,7 +29,7 @@ You can migrate only data stored within the O11 platform to ODC. If you are usin
 The data migration scope includes the following:
 
 * The entire volume of data within all entities of mapped O11 apps in the Assessment Tool.
-* All end users in the User table, including active and inactive users.
+* End users in the User table, including active and inactive users, with valid and unique emails set on the email field.
 
 You can perform data migration multiple times at each stage. However, each time you migrate the O11 data, it overwrites the existing app data in ODC. For end users, the migration doesn't overwrite existing users in ODC; it updates them instead.
 

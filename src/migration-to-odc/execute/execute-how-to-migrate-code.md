@@ -82,6 +82,6 @@ To publish an ODC app or a library, follow these steps:
 
 ## Next steps
 
-* [Configure migrated apps](execute-configure-migrated-apps.md)
-* [Adapt SQL queries](execute-adapt-sql-queries.md)
-* [Adapt login flow](execute-adapt-login-flow.md)
+* If your apps use SQL queries, make sure you [adapt those SQL queries](execute-adapt-sql-queries.md).
+* You must [adapt login flow of your apps](execute-adapt-login-flow.md).
+* You may need to [configure some settings to ensure the apps work correctly](execute-configure-migrated-apps.md).

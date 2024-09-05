@@ -111,7 +111,7 @@ SaveToPhotoAlbum|Input|Boolean|Sets if the media captured can be saved in the de
 CameraDirection|Input|Structure|Select the front or back camera as default when taking a new picture. Default value: BackCamera.
 AllowEdit|Input|Boolean|Sets if the media captured must be sent to an edit screen right after the capturing.
 AllowMultiplePictures|Input|Boolean|Sets if the user can select multiple pictures.
-ImageCaptured|Output|Structure|Returns the captured image binary. information.
+ImageCaptured|Output|Structure|Returns the captured image binary information.
 Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
 Error|Output|Error|Displays detailed information of an error, if applicable.
 

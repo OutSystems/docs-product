@@ -118,7 +118,7 @@ Keep this behavior in mind when the session Max Idle Time is low or when Max Idl
 
 ### Logging out of the application
 
-When an end user logs out of an app, all sessions are terminated. This prevents any invalid persistent authenticated session from staying alive.
+When an end user logs out of an app, all sessions in that browser are terminated. This prevents any invalid persistent authenticated session from staying alive.
 
 When the single sign-on between app types (SSO) is configured, if the end user logs out of a Reactive or Mobile app, all Traditional web apps in the same browser scope, regardless of the user provider, are also be logged out.
 

@@ -97,3 +97,8 @@ To migrate O11 app data and end-users to ODC, follow these steps:
 
 Once the migration is complete, you can view a list of migrated entities for every ODC app.
 
+<div class="info" markdown=1>
+
+If you selected the **Stop environment** option for your source O11 environment, and you still want your end users to keep using any of the O11 apps in that O11 environment, [restart the O11 environment](https://success.outsystems.com/support/troubleshooting/infrastructure_management/restart_services_on_outsystems_cloud/).
+
+</div>

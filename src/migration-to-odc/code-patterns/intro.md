@@ -28,6 +28,7 @@ Here's some guidelines to refactor your O11 app:
 * [Asset consuming a Screen in mobile app](arch-mobile-screen.md)
 * [Application consuming a non-read only Entity](arch-non-read-only-entity.md)
 * [Asset consuming a reference that is not defined in any mapped ODC asset](arch-not-mapped.md)
+* [Asset consuming a reference to a Traditional Web element](convert-trad-web.md)
 * [Asset consuming a private Structure](arch-priv-struct.md)
 * [Asset consuming a Process](arch-process.md)
 * [Asset consuming a Resource](arch-resource.md)
@@ -39,3 +40,4 @@ Here's some guidelines to refactor your O11 app:
 * [The Asset cannot contain SOAP](elem-soap.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
 * [Refactor site properties](refactor-siteproperties.md)
+

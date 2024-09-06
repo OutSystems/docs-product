@@ -39,6 +39,8 @@ You define the Input Parameter values in the properties of the Run Client Action
 
 To set an Input Parameter value, enter an expression in the corresponding property.
 
+Check this [training lesson](https://www.outsystems.com/tk/redirect?g=fa37b77b-cb56-4aa4-9dda-6136be4a6ae4) to learn more with an example.
+
 ## Input Parameters availability
 
 The following elements displayed in the element tree can have Input Parameters:

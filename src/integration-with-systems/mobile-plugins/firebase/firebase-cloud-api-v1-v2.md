@@ -23,7 +23,7 @@ Use OutSystems' Cloud Messaging Configurator REST APIs to do the following:
 
 * Send a notification (normal or silent) to a user or group of users.
 
-Following are the versions of the Cloud Message Configurator REST API in OutSystem:
+Following are the versions of the Cloud Messaging Configurator REST API in OutSystem:
 
 * [v1 endpoint](#v1)
 

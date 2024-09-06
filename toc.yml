@@ -1131,6 +1131,7 @@
         - href: migration-to-odc/code-patterns/elem-soap.md
         - href: migration-to-odc/code-patterns/refactor-anonymous-registered-roles.md
         - href: migration-to-odc/code-patterns/refactor-siteproperties.md
+        - href: migration-to-odc/code-patterns/convert-trad-web.md
     - href: migration-to-odc/prepare/reference.md
 # Reference
 - href: ref/intro.md

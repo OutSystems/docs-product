@@ -130,6 +130,10 @@ In Reactive Web and Mobile apps, this feature isn't available for Aggregates in 
 
 Consider the following when using the SQL element:
 
+### Syntax
+
+SQL queries have some syntax differences depending on the database provider being used. Write your queries according to the syntax of your database provider.
+
 ### Avoid Data Definition Language
 
 The SQL tool should only be used to execute the following: `SELECT`, `INSERT`, `UPDATE`, and `DELETE` statements. Using Data Definition Language (DDL) statements like `CREATE TABLE`, `ALTER TABLE`, `DROP TABLE`, etc. might make the OutSystems metamodel inconsistent, leading to misbehavior.
@@ -153,7 +157,7 @@ If the **Database** property is set as **All**, Service Studio checks the querie
 
 ### Avoid Expand Inline property of query parameters
 
-Expanding inline parameters can be challenging since you need to make sure that any user input is properly escaped. If possible, avoid enabling this property altogether. OutSystems provides ways of implementing common use cases without enabling this property. Check [Building dynamic SQL statements the right way](<https://success.outsystems.com/Documentation/Best_Practices/Building_dynamic_SQL_statements_the_right_way>).
+Expanding inline parameters can be challenging since you need to make sure that any user input is properly escaped. If possible, avoid enabling this property altogether. OutSystems provides ways of implementing common use cases without enabling this property. For more information, see [Avoid expand inline parameters for dynamic values](https://success.outsystems.com/documentation/best_practices/performance_and_monitoring/avoid_expand_inline_parameters_for_dynamic_values/) and [Building dynamic SQL statements the right way](<https://success.outsystems.com/Documentation/Best_Practices/Building_dynamic_SQL_statements_the_right_way>).
 
 ### SLOWSQL log messages
 

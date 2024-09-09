@@ -2,7 +2,17 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
-      "helpids": {},
+      "helpids": {
+        "oneOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "string",
+            "pattern": "^\\d+(,\\s*\\d+)*$"
+          }
+        ]
+      },
       "summary": {},
       "tags": {},
       "guid": {

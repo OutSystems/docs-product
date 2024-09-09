@@ -21,7 +21,7 @@ jobs:
     steps:
     - name: Acknowledge Comment - Start
       id: check
-      uses: shanegenschaw/pull-request-comment-trigger@v2.1.0
+      uses: shanegenschaw/pull-request-comment-trigger@v3.0.0
       if: github.event_name == 'issue_comment'
       with:
         trigger: 'Update'

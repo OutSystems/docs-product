@@ -104,4 +104,4 @@ The Migration Assessement Tool setup includes the following steps:
 
     </div>
 
-1. Optionally, configure the access to the Probes in the other environments where you deployed the probe.
+1. Optionally, configure the access to the Probes in the other environments where you deployed the probe. 

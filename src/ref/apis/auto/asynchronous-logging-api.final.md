@@ -16,9 +16,9 @@ The Asynchronous Logging API provides actions to perform the following asynchron
 * insert records into the database
 * register request events of your applications
 
-The record or request event gets added to a message queue. Then the OutSystems log service processes it, and adds it to the database.
+The record or request event gets added to a queue. Then it is processed asynchronously and added to the database.
 
-The message queue is non-persistent. This means that in case of a system failure, pending records and request events get lost.
+The asynchronous queue is non-persistent. This means that in case of a system failure, pending records and request events get lost.
 
 To use this API, simply reference the AsynchronousLogging module in your application.
 
@@ -26,15 +26,15 @@ To use this API, simply reference the AsynchronousLogging module in your applica
 
 Action | Description
 ---|---
-[LogError](<#LogError>) | Asynchronously inserts a error into the database. Errors are kept in a message queue and inserted into the database in bulk after a short period.
-[LogRecord](<#LogRecord>) | Asynchronously inserts a record into the database. Records are kept in a message queue and inserted into the database in bulk after a short period.
-[LogRequestEvent](<#LogRequestEvent>) | Asynchronously logs a request event. The events are kept in a message queue and inserted in bulk after a short period.
+[LogError](<#LogError>) | Asynchronously inserts a error into the database. Errors are kept in a queue and inserted into the database in bulk after a short period.
+[LogRecord](<#LogRecord>) | Asynchronously inserts a record into the database. Records are kept in a queue and inserted into the database in bulk after a short period.
+[LogRequestEvent](<#LogRequestEvent>) | Asynchronously logs a request event. The events are kept in a queue and inserted in bulk after a short period.
 
 ## Actions
 
 ### LogError { #LogError }
 
-Asynchronously inserts a error into the database. Errors are kept in a message queue and inserted into the database in bulk after a short period. Note that the message queue is non-persistent.
+Asynchronously inserts a error into the database. Errors are kept in a queue and inserted into the database in bulk after a short period. Note that the queue is non-persistent.
 
 *Inputs*
 
@@ -60,7 +60,7 @@ Detail
 
 ### LogRecord { #LogRecord }
 
-Asynchronously inserts a record into the database. Records are kept in a message queue and inserted into the database in bulk after a short period. Note that the message queue is non-persistent.
+Asynchronously inserts a record into the database. Records are kept in a queue and inserted into the database in bulk after a short period. Note that the queue is non-persistent.
 
 *Inputs*
 

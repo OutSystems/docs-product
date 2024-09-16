@@ -94,7 +94,7 @@ At this point you will review the deployment plan and deploy the applications to
 
 MyApp and MyWebApp are deployed to Quality. MyApp is ready for testing.
 
-## Update dependencies in the target environment { update-dependencies }
+## Update dependencies in the target environment { #update-dependencies }
 
 When deploying an application to a target environment, LifeTime detects the applications consuming functionality from the application being deployed and that would have [outdated dependencies](../building-apps/reuse-and-refactor/handle-changes.md#change-functionality-in-the-producer-module) with the current deployment. In the deployment plan, LifeTime suggests to republish these consumer applications in the target environment to ensure all its dependencies are up to date.
 

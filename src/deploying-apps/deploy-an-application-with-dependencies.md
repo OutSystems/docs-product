@@ -1,14 +1,14 @@
 ---
 summary: Learn to deploy applications with dependencies in OutSystems 11 (O11), ensuring error-free functionality in target environments.
-tags: support-Application_Lifecycle-featured
 locale: en-us
+helpids: 4
 guid: 3bd09323-cb2b-454a-90b7-341f7c47936e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:44
 ---
 
-# Deploy an Application with Dependencies
+# Deploy an application with dependencies
 
 An application that is [deployed to another environment](<deploy-an-application.md>) may experience runtime errors if it depends on the functionality of other applications that are not deployed together with it. 
 
@@ -26,7 +26,7 @@ In this situation, do the following:
 Here's an example of how to do it.
 
 
-## Deploy MyApp to Quality for Testing
+## Deploy MyApp to the Quality environment
 
 In this example, a new mobile app (MyApp) was developed to extend the functionality of the existing web application (MyWebApp):
 
@@ -35,7 +35,8 @@ In this example, a new mobile app (MyApp) was developed to extend the functional
 
 ![Screenshot of LifeTime deployment plan showing MyApp with dependencies highlighted in red indicating errors](images/deploy-an-application-with-dependencies-1.png "LifeTime Deployment Plan with Dependencies Highlighted")
   
-### Deploy the Mobile App
+### Deploy the mobile app
+
 To deploy MyApp to Quality, do the following:
 
 1. Select **Deploy...** and add MyApp to the deployment plan. You can also search by the application name:
@@ -53,7 +54,7 @@ LifeTime detects that MyApp depends on MyWebApp, which also needs to be updated 
 
 In very specific situations where you have the total ownership of all the identified dependency modules and you are aware of the impact this deployment will cause in the destination environment, you can choose to "Continue with errors". Otherwise, you should continue forward to understand and solve all the dependencies. 
 
-### Understand the Dependencies
+### Understand the dependencies
 
 To understand the dependencies, click on the error message in MyApp:
 
@@ -61,7 +62,7 @@ To understand the dependencies, click on the error message in MyApp:
 
 LifeTime is warning that deploying this version of MyApp will make the application misbehave in Quality. This happens because MyApp is using an action from module MyWebApp, which is not available in the MyWebApp version that is deployed to Quality.
 
-### Resolve the Dependencies
+### Resolve the dependencies
 
 MyWebApp 0.4+ is exposing the required functionality and has to be tagged and deployed to Quality:
 
@@ -93,7 +94,7 @@ At this point you will review the deployment plan and deploy the applications to
 
 MyApp and MyWebApp are deployed to Quality. MyApp is ready for testing.
 
-## Update Dependencies in Target Environment
+## Update dependencies in the target environment { update-dependencies }
 
 When deploying an application to a target environment, LifeTime detects the applications consuming functionality from the application being deployed and that would have [outdated dependencies](../building-apps/reuse-and-refactor/handle-changes.md#change-functionality-in-the-producer-module) with the current deployment. In the deployment plan, LifeTime suggests to republish these consumer applications in the target environment to ensure all its dependencies are up to date.
 

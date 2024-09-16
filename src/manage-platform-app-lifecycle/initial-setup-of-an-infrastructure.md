@@ -1,7 +1,7 @@
 ---
 summary: Explore how to manage and configure your OutSystems 11 (O11) infrastructure using the LifeTime console for application lifecycle management.
-tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps; support-Infrastuture_Architecture-overview
 locale: en-us
+helpids: 7
 guid: 5f21d5c6-f612-4ac0-835d-3a468b82c45b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
@@ -20,11 +20,11 @@ A typical OutSystems infrastructure comprises the following environments:
 
 You can manage your OutSystems infrastructure from the **INFRASTRUCTURE** tab of the LifeTime console (`https://<your_lifetime_server>/lifetime`).
 
-## Set up the infrastructure
+## Set up the infrastructure { #setup }
 
 To execute the initial setup of your OutSystems infrastructure in LifeTime, follow the instructions in [Configure the infrastructure management console](../setup-infra-platform/setup/lifetime-configure.md).
 
-## Add or remove environments
+## Add or remove environments { #add-remove-environments }
 
 At any time, you can add or remove environments to your OutSystems infrastructure in LifeTime.
 
@@ -41,11 +41,11 @@ To remove one of your OutSystems environments from the infrastructure:
     1. Click the **Edit Environment** link for the environment you want to remove.
     1. Click the **Unregister environment** link.
 
-## Rename environments
+## Rename environments { #rename-environments }
 
 The OutSystems Customer Portal is a centralized platform that provides you with a self-service hub that allows you to rename your environments. To access the Customer Portal, log into [OutSystems Community](https://www.outsystems.com/community) and go to **My Platform** > **Customer Portal**.
 
-### Rename an environment on an OutSystems Cloud infrastructure
+### Rename an environment on an OutSystems Cloud infrastructure { #rename-environments-cloud }
 
 To rename an environment on an OutSystems Cloud infrastructure, follow these steps:
 
@@ -67,7 +67,7 @@ To rename an environment on an OutSystems Cloud infrastructure, follow these ste
 
 The new environment name is updated in your Customer Portal and Lifetime.
 
-### Rename an environment in an OutSystems self-managed infrastructure
+### Rename an environment in an OutSystems self-managed infrastructure { #rename-environments-self-mng }
 
 To rename an environment on a self-managed infrastructure, follow these steps: 
 
@@ -91,7 +91,7 @@ The new environment name is updated in your Customer Portal.
 
 If you need assistance renaming your environment reach out to [OutSystems Support](https://www.outsystems.com/goto/contact-outsystems-support).
 
-## Switch the environments order
+## Switch the environments order { #switch-environment-order }
 
 In an OutSystems Cloud infrastructure, contact OutSystems support and request to change the order of deployment.
 
@@ -99,7 +99,7 @@ In a self-managed infrastructure, you can switch the order of two environments i
 
 ![Screenshot of the LifeTime Infrastructure Management Console showing options to manage OutSystems environments](images/manage-infrastructure-1.png "LifeTime Infrastructure Management Console")
 
-## Manage an environment
+## Manage an environment { #manage-environment }
 
 To manage an environment individually, use the links available in each environment:
 

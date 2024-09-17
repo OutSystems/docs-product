@@ -12,6 +12,8 @@ figma:
 
 Application Lifecycle Management (ALM) is the continuous process of managing applications throughout their entire lifecycle: from development to maintenance.
 
+## LifeTime Management Console
+
 **LifeTime** is a unified console with visibility of all environments in your infrastructure. It manages the deployment of applications, IT users, and security across all environments.  
 
 It allows you to increase the control over your factory in the following areas:
@@ -30,9 +32,17 @@ Security
 
 In LifeTime you have visibility over all environments in your infrastructure. To configure and monitor a specific environment, you can use the management console of the environment (Service Center).
 
+### Daily synchronization
+
 To keep LifeTime and your environments in sync, LifeTime automatically performs a daily synchronization operation. This operation includes the following data:
 
 * IT Users, IT Roles and IT Teams
 * Permissions
 * Environment status
 * Version information of Applications and Modules and their configurations
+
+The synchronization should run while the infrastructure is on low activity. To change the starting time for the daily sync process in LifeTime:
+
+* **Self-managed infrastructures**: Go to **Infrastructure** > **LifeTime Settings**. Then, edit the **Daily Synchronization schedule**.
+
+* **OutSystems Cloud infrastructures**: Go to **Environments**, select **Options** on the right of the screen, and choose **LifeTime Settings**. Then, edit the **Daily Synchronization schedule**.

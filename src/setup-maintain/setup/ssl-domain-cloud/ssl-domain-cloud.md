@@ -38,14 +38,7 @@ To configure SSL for your domain, do the following:
 
 </div>
 
-<div class="info" markdown="1">
-
-Certificates have a chain comprised of the following:
-Root > Intermediate > Final server (domain) certificate. You'll need to provide a certificate with the complete chain.
-​​Some Certificate Authorities (CAs) distribute certificates differently. While some provide the complete certificate chain, others solely provide the final server (domain) certificate, prompting users to assemble the remaining components of the chain themselves.
-Prior to installation, it's important to validate your certificate, making sure it includes the full chain. This can be achieved through various means, such as employing third-party tools like [SSL Checker](https://www.sslshopper.com/ssl-checker.html).
-
-</div>
+Certificates follow a chain structure that includes the Root, Intermediate, and Final server (domain) certificate. You must provide a certificate that contains the complete chain. Some Certificate Authorities (CAs) provide the full chain, while others only provide the final server (domain) certificate, requiring you to assemble the chain manually. Before installation, validate that your certificate includes the entire chain. You can do this using third-party tools.
 
 ## Upload the certificate in LifeTime { #upload-certificate }
 

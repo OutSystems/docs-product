@@ -70,11 +70,11 @@ In O11, with built-in authentication, the end users login with any username and 
 
 ### How are users and roles migrated
 
-When you migrate end users, you also migrate their individual and group roles, along with all permissions and access levels, to ODC. The end users are assigned the same roles they had in O11. However, if you migrate data from a different environment later, the roles of the  existing end users in ODC are updated to match those from the new environment.
+When you migrate end users to ODC, you also migrate their roles with permissions and access levels. The end users are assigned the same roles they had in O11. However, if you migrate data from a different environment later, the roles of the  existing end users in ODC are updated to match those from the new environment.
 
-OutSystems also migrates the user groups that match the groups in O11. You must ensure that groups in O11 have at least one associated user to prevent the creation of empty groups.
+The migration of the group roles from O11 to ODC is not supported.
 
-For example, if a finance app has user groups such as Sales Manager and Sales Representative. When you migrate end users, OutSystems migrates both groups. If User A has the Sales Manager role in the DEV environment and the Sales Representative role in the production environment. If you migrate the production environment after the development environment, User A is updated with the Sales Representative role.
+When setting up user groups, create them manually in ODC and add the roles migrated from O11. You can manage roles in ODC Portal > **End-user groups**. For more information, see [Roles in ODC](https://success.outsystems.com/documentation/outsystems_developer_cloud/user_management/roles/).
 
 ### Getting ready to migrate end users
 

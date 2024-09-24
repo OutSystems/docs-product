@@ -38,6 +38,8 @@ To configure SSL for your domain, do the following:
 
 </div>
 
+Certificates follow a chain structure that includes the root, intermediate, and domain certificate. You must provide a certificate that contains the complete chain. Some CAs provide the full chain, while others only provide the domain certificate, requiring you to assemble the chain. Before upload, validate that your certificate contains the complete chain.
+
 ## Upload the certificate in LifeTime { #upload-certificate }
 
 To use your domain on OutSystems Cloud, you must upload the SSL certificate before assigning it to the environments:

@@ -57,8 +57,7 @@ To migrate O11 code to ODC, follow these steps:
 If the migration is successful, the process ends with **Finished** status. The O11 apps mapped in the Assessment tool are converted to ODC apps and libraries. These ODC apps and libraries are still **Unpublished**. 
 Now, in ODC, you must [publish the ODC apps and libraries](#publish-odc-apps-and-libraries).
 
-If the migration is unsuccessful, the process ends with a **Finished with errors** status. You cannot open the app or the library in the ODC Studio. 
-Contact OutSystems support for guidelines on how to fix the errors and include the data and time the migration was started in your request.
+If the migration is unsuccessful, the process ends with a **Finished with errors** status. You cannot open the app or the library in the ODC Studio.
 
 ### Publish ODC apps and libraries
 
@@ -79,6 +78,10 @@ To publish an ODC app or a library, follow these steps:
 1. If it's a Library, [release that library](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/libraries/#release-library). 
 
 1. Repeat steps 1 to 6 until all apps and libraries are published in ODC.
+
+## Troubleshooting
+
+You can check the logs and identify migration issues in Portal. Go to **MIGRATE O11** > **Code migrations** > select the tab **Migrations** > select an entry > select an app > open the **Logs** tab. If you are unable to fix the issue, contact OutSystems Support for guidelines. Include the date and time the migration was started in your support request.
 
 ## Next steps
 

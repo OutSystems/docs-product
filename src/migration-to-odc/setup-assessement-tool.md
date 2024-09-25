@@ -51,11 +51,11 @@ You can start planning the migration once you sign in to the Assessment Tool app
 1. From the home screen, select the O11 environment from the dropdown button on the top.
 1. From the **Map O11 apps** screen, select **Map O11 apps** to open a new screen that lets you map the existing O11 apps to new ODC apps. After you save the mapping, the app queues the analysis.
 
-       <div class="info" markdown="1">
+   <div class="info" markdown="1">
 
-       This step requires preparation. See: Map O11 to ODC architecture for one shot migration.
+   This step requires preparation. See: Map O11 to ODC architecture for one shot migration.
 
-       </div>
+   </div>
 
 1. From the home screen, select **Open assessment** to view the findings, or select one of the ODC assets. 
 1. On the Assessment page, you can navigate through the list of findings, where you can see where that finding is present in your code and also a link to documentation with detailed information on how to fix it.  

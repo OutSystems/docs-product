@@ -53,7 +53,7 @@ You can start planning the migration once you sign in to the Assessment Tool app
 
    <div class="info" markdown="1">
 
-   This step requires preparation. See: Map O11 to ODC architecture for one shot migration.
+   This step requires preparation. See: [Map O11 to ODC architecture for one shot migration](plan/plan-map-apps.md).
 
    </div>
 

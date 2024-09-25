@@ -15,13 +15,52 @@ This article only applies to customers with access to the Migration Kit.
 
 </div>
 
-The Migration Assessment Tool helps you accelerate the Plan and Preparation stages of your O11 to ODC Migration, in the following ways:
+The Migration Assessment Tool helps you evaluate the readiness of O11 apps for the ODC migration and guides you through the necessary code adjustments.
 
-* Define the O11 to ODC architecture blueprint, based on the Apps and Modules available in your O11 Development environment.
+The first step is to design your ODC architecture blueprint. This step is crucial to ensure that your applications, once migrated, can fully benefit from ODC capabilities, mainly app-independent lifecycle and high scalability, to name a few. In this process, the goal is to design a plan without any code changes. This plan will become your ODC apps. You use the O11 apps as building blocks for those apps, where an ODC app can be composed of one or [multiple existing O11 apps](./plan/plan-map-apps.md).
 
-* Validate the O11 to ODC architecture blueprint.
+After mapping, the Migration Assessment Tool assesses elements of O11 apps and shows a report with patterns. These patterns address technical challenges during migration, such as dealing with O11-specific features that may be implemented differently in ODC and adapting app architecture. Following the patterns lets you update your application and transition from the older system to ODC's modern cloud-native framework.
 
-* Understand and decide on what adjustment your team needs to do in O11, before migrating the apps to ODC.
+The Assessment Tool consists of the following components:
+
+Console:
+
+* The app provides the user interface of the Assessment Tool.
+* Lets you configure the connection with the engine and the probes.
+* Provides you with the mapping functionality to organize the O11 apps and libraries in the ODC apps.
+* It interacts with the engine.
+
+Engine:
+
+* It is the communication entry point between your O11 infrastructure and ODC tenant.
+* Resides in LifeTime. You install the engine from the Service Center in the LifeTime environment.
+* Interacts with the console and with other O11 environments through the probes.
+* Initiates the probes and queues the scanning of the environments where the probes are installed.
+* By default, the engine queues an analysis with the probes every 15 minutes.
+* Engine keeps a record of all the findings
+
+Probe:
+
+* Identifies the source O11 environment for migration to ODC (development, testing, production…). The source environment is the code's origin and the data you migrate to ODC.
+* The first probe you install is in  the development environment.
+* Analyzes the O11 apps in the environment and returns the findings to the engine.
+
+You can start planning the migration once you sign in to the Assessment Tool app. The process looks like this:
+
+1. If you haven't already configured the tool, go to the home screen, select **Configuration** from the dropdown menu at the top, and enter the settings for LifeTime and the probes.
+1. From the home screen, select the O11 environment from the dropdown button on the top.
+1. From the **Map O11 apps** screen, select **Map O11 apps** to open a new screen that lets you map the existing O11 apps to new ODC apps. After you save the mapping, the app queues the analysis.
+
+       <div class="info" markdown="1">
+
+       This step requires preparation. See: Map O11 to ODC architecture for one shot migration.
+
+       </div>
+
+1. From the home screen, select **Open assessment** to view the findings, or select one of the ODC assets. 
+1. On the Assessment page, you can navigate through the list of findings, where you can see where that finding is present in your code and also a link to documentation with detailed information on how to fix it.  
+
+Once you address all patterns that require changes in the O11 apps, you can initiate the migration of code and data from your ODC Portal.
 
 ## Prerequisites
 
@@ -105,3 +144,5 @@ The Migration Assessement Tool setup includes the following steps:
     </div>
 
 1. Optionally, configure the access to the Probes in the other environments where you deployed the probe. 
+
+Next step: [Map O11 to ODC architecture for one shot migration](./plan/plan-map-apps.md)

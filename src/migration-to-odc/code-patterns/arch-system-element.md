@@ -453,8 +453,8 @@ Following are actions that are no longer available in ODC. You must revisit your
 #### Environment 
 The following list provides information on built-in actions in the environment category that aren't available in ODC. You can't apply manual transformations. 
 
-*  **GetApplicationServerType:** This function was used in O11 to check whether the server was .Net or Java but the server type in ODC is always the same. So this action is not necessary.
-*  **GetDatabaseProvider:** In ODC, the DB engine is always **Aurora Postgres** so this function is no longer required.
+*  **GetApplicationServerType:** This function was used in O10 or earlier to check whether the server was .NET or Java but the server type in ODC is always the same. So this action is not necessary.
+*  **GetDatabaseProvider:** In ODC, the DB engine is always Aurora Postgres so this function is no longer required.
 * **GetEntryEspaceId:** In ODC, apps are run in containers so this function is not needed.
 * **GetObsoleteTenantId:** ODC doesn't support multi-tenant applications so this function is not needed.
 *  **GetOwnerEspaceIdentifier:** ODC doesn't have system tables so this function is not needed.

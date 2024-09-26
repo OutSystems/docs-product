@@ -20,7 +20,7 @@ Settings can be grouped into three categories, based on their impact (ordered fr
 
 ## Operation Settings
 
-**Operation** settings are stored in the database. When you save changes to operation settings, those changes are effective immediately after clearing the cache for the setting (for example, the schedule of a timer).
+**Operation** settings are stored in the database. When you save changes to operation settings, those changes are effective immediately.
 
 ## Runtime Settings
 

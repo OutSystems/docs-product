@@ -4,7 +4,7 @@ locale: en-us
 guid: 29920fad-9efd-45ae-a4e4-212705fceb65
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2336-2236
 ---
 
 # Set up the Migration Assessment Tool
@@ -45,6 +45,8 @@ Probe:
 * The first probe you install is in  the development environment.
 * Analyzes the O11 apps in the environment and returns the findings to the engine.
 
+![Diagram showing the architecture of the Migration Assessment Tool, including the Console, Engine, and Probes in different environments (DEV, Q&A, PROD) and their interactions.](images/assessment-tool-architecture-diag.png "Migration Assessment Tool Architecture Diagram")
+
 You can start planning the migration once you sign in to the Assessment Tool app. The process looks like this:
 
 1. If you haven't already configured the tool, go to the home screen, select **Configuration** from the dropdown menu at the top, and enter the settings for LifeTime and the probes.
@@ -57,7 +59,7 @@ You can start planning the migration once you sign in to the Assessment Tool app
 
    </div>
 
-1. From the home screen, select **Open assessment** to view the findings, or select one of the ODC assets. 
+1. From the home screen, select **Open assessment** to view the findings, or select one of the ODC assets.
 1. On the Assessment page, you can navigate through the list of findings, where you can see where that finding is present in your code and also a link to documentation with detailed information on how to fix it.  
 
 Once you address all patterns that require changes in the O11 apps, you can initiate the migration of code and data from your ODC Portal.
@@ -81,13 +83,13 @@ You need to ensure the following before setting up the Migration Assessment Plan
 The Migration Assessement Tool setup includes the following steps:
 
 1. [Install the Engine in the LifeTime environment](#engine)
-   
+
 1. [Install the Console](#console)
-   
+
 1. [Install the Probe in the Development environment](#probe-dev)
-   
+
 1. [Optional - Deploy the Probe to other environments](#probe-other-env)
-   
+
 1. [Configure the Migration Assessment Tool](#configure)
 
 ### Install the Engine { #engine }
@@ -143,6 +145,6 @@ The Migration Assessement Tool setup includes the following steps:
 
     </div>
 
-1. Optionally, configure the access to the Probes in the other environments where you deployed the probe. 
+1. Optionally, configure the access to the Probes in the other environments where you deployed the probe.
 
 Next step: [Map O11 to ODC architecture for one shot migration](./plan/plan-map-apps.md)

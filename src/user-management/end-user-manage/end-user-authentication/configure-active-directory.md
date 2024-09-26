@@ -52,10 +52,8 @@ To use Active Directory domain authentication:
 
     </div>
 
-1. To enable Integrated Windows Authentication for all applications, select **Windows Integrated Authentication** (only available in Traditional Web applications).
-
-    Alternatively, you can enable Integrated Windows Authentication for a just [a selected number of elements](integrated-authentication.md) in Service Studio (for example, just for some web screens, web flows or web services).
-    
     <div class="info" markdown="1">
-    Security best practices strongly advise that you avoid using the Windows Integrated Authentication when a workstation is shared between several users.
+
+    Security best practices strongly advise against using the Windows Integrated Authentication when a workstation is shared between several users.
+
     </div>

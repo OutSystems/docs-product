@@ -15,6 +15,8 @@ You can use a popup to show information to users or ask them to enter informatio
 
 ## Reactive Web and Mobile
 
+Here's a [video tutorial about using Popup in Reactive Web and Mobile App](https://www.youtube.com/watch?v=RrMARHvJBXU).
+
 To create and use a popup in Reactive Web and Mobile Apps:
 
 1. In Service Studio, in the Toolbox, search for `Popup`.
@@ -55,11 +57,12 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
 1. Repeat steps 6 and 7 for the Open Popup button, substituting the variable value to True. Clicking the **Open Popup** button sets the ShowPopup variable to **True** and opens the popup.
 
-After following these steps and publishing the module, you can test the pattern in your app.
+After following these steps and publishing the module, you can test the pattern in your app. 
+
 
 <div class="info" markdown="1">
 
-Here's a [video tutorial about using Popup in Reactive Web and Mobile App](https://www.youtube.com/watch?v=RrMARHvJBXU).
+To enable the Accessibility Features offered by the **EnableAccessibilityFeatures** layout parameter in a popup, you must add the class "has-accessible-features" manually to the **Style Classes** parameter of the popup widget.
 
 </div>
 

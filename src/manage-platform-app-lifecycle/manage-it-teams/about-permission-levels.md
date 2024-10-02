@@ -144,7 +144,7 @@ Assigned for an **Application** | Not applicable.
 
 Add System Dependencies | |
 ---------|----------
-Assigned as **Default Role** | In the applications for which the user has Change and Deploy permission, the user can add new dependencies to the public elements of System module.
+Assigned as **Default Role** | In the applications for which the user has Change and Deploy permission, the user can add new dependencies to the public elements of System module. Once these dependencies are added, any user, even without permission to add system dependencies, can use them.
 Assigned for a **Team** | Not applicable.
 Assigned for an **Application** | Not applicable.
 

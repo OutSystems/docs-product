@@ -4,7 +4,7 @@ locale: en-us
 guid: ebd97f10-d965-4b69-9829-ccbabeee44d2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-6830
 helpids: 30520
 ---
 # Asset consuming an ODC application Client Action

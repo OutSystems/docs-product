@@ -4,7 +4,7 @@ locale: en-us
 guid: 788a3d99-a2fe-4fa2-b868-d2851cd2ffb8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=1-852
 ---
 
 # Plan app migration

@@ -4,7 +4,7 @@ locale: en-us
 guid: f74beda0-279a-499c-932d-5ad57587c8f3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7805
 helpids: 30529
 ---
 # Asset consuming a Screen in mobile app

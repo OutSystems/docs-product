@@ -1,5 +1,5 @@
 ---
-summary: Explore chart creation and customization with OutSystems 11 (O11) using Highcharts 11.4.6 for dynamic data visualization.
+summary: Explore chart creation and customization with OutSystems 11 (O11) using Highcharts 11.4.8 for dynamic data visualization.
 tags: article-page; support-application_development; support-Front_end_Development
 locale: en-us
 guid: 868f8412-a29e-4c0b-9e37-3c75830502eb
@@ -15,7 +15,7 @@ The OutSystems API for plotting charts.
 
 You can create a chart by dragging a chart widget to the screen. The widget property `SourceDataPointList` is the list consisting of the `DataPoint` elements. The `DataPoint` element defines the drawing of the chart: `Label`, `Value`, `DataSeriesName`, `Tooltip` and `Color`. You need to provide values to the `DataPoint`, and in charts with more than one series, you need to specify each series you want to represent in the chart.
 
-OutSystems uses Highcharts 11.4.6 to generate the charts, and you should consult the [Highcharts documentation](https://api.highcharts.com/highcharts/) for implementation and the API.
+OutSystems uses Highcharts 11.4.8 to generate the charts, and you should consult the [Highcharts documentation](https://api.highcharts.com/highcharts/) for implementation and the API.
 
 ## Summary
 
@@ -25,7 +25,7 @@ Widget | Description
 [BarChart](<#BarChart>) | Bar charts compare multiple values using horizontal bars.<br/>In this chart, the X-axis runs vertically and the Y-axis runs horizontally.
 [ColumnChart](<#ColumnChart>) | Column charts compare multiple values using vertical bars.
 [LineChart](<#LineChart>) | Line charts illustrate trends of values over time.
-[PieChart](<#PieChart>) | Pie charts illustrate proportions of values.
+[PieChart](<#PieChart>) | Pie charts illustrate the proportions of values.
 
 Action | Description
 ---|---
@@ -35,7 +35,7 @@ Action | Description
 [DataPoint_Init](<#DataPoint_Init>) | Initializes a DataPoint record with the values passed as arguments. The record is returned by the action.
 [DataPoint_InitMissing](<#DataPoint_InitMissing>) | Initializes a DataPoint to plot a gap on the chart. The record is returned by the action.
 [XAxisFormat_Init](<#XAxisFormat_Init>) | Initializes an XAxisFormat record with the values passed as arguments. The record is returned by the action.
-[YAxisFormat_Init](<#YAxisFormat_Init>) | Initializes an YAxisFormat record with the values passed as arguments. The record is returned by the action.
+[YAxisFormat_Init](<#YAxisFormat_Init>) | Initializes a YAxisFormat record with the values passed as arguments. The record is returned by the action.
 
 Structure | Description
 ---|---
@@ -258,7 +258,7 @@ AdvancedFormat
 
 ### PieChart { #PieChart }
 
-Pie charts illustrate proportions of values.
+Pie charts illustrate the proportions of values.
 
 *Inputs*
 

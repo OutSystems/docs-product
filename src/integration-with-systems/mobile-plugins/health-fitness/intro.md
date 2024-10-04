@@ -295,7 +295,7 @@ By default, all necessary background job Android permissions (e.g. "android.perm
 
 #### Additional information about background jobs in Android
 
-When using the **SetBackgroundJob** client action, the **IMMEDIATE** option for the **JobFrequency** field of the **Variable** input parameter only applies to the following variables: steps, heart rate, calories burned, blood pressure, basal metabolic rate, walking speed, and distance. For the other variables (weight, height, sleep, blood glucose, body fat percentage and oxygen saturation), the **IMMEDIATE** option will run every minute, as it is the minimum recommended frequency for alarms on Android.
+When using the **SetBackgroundJob** client action, the **IMMEDIATE** option for the **JobFrequency** field of the **Variable** input parameter only applies to the following variables: steps, heart rate, calories burned, blood pressure, basal metabolic rate, walking speed, and distance. For the other variables (weight, height, sleep, blood glucose, body fat percentage, oxygen saturation and body temperature), the **IMMEDIATE** option will run every minute, as it is the minimum recommended frequency for alarms on Android.
 
 Background jobs run using foreground services, which results in a temporary notification being shown to the user. In most cases, as the background job processing is fast, the temporary notification won't be presented to the user. Nevertheless, you can define the **title** and **description** of this notification, in case it is shown. By default, we already set a title and description, but you can define your own values as follows:
 
@@ -371,5 +371,6 @@ Following is the full list of health and fitness variables our plugin supports, 
 | **Walking Speed**        | Meters per second (m/s)          | Meters per second (m/s)          |
 | **Distance**             | Meters (m)                       | Meters (m)                       |
 | **Oxygen Saturation**    | Percentage                       | Percentage                       |
+| **Body Temperature**     | Celsius (ºC)                     | Celsius (ºC)                     |
 
 Note that the **Workout** variable isn't on the list because it doesn't have a single unit for measure, as iOS supports different types of workouts. Also, this variable is currently not available on Android.

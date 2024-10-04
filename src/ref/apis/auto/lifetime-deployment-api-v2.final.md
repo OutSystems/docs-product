@@ -2464,7 +2464,7 @@ Full definition of a role.
 | ---- | ---- | ----------- | -------- |
 | key | string | Identifier of a role. | No |
 | name | string | Name of a role | No |
-| manageInfrastructure | boolean | Allows manage the infrastructure. | No |
+| manageInfrastructure | boolean | In OutSystems Cloud, users with a role that has this attribute can manage IT users, roles, and teams. In self-managed infrastructures, it additionally includes permission to manage environments and their configurations. | No |
 | manageTeams | boolean | Allows to manage teams and roles. | No |
 | environmentPermissions | [ [EnvironmentPermission](#environmentpermission) ] | Definition of permission levels per environment. | No |
 

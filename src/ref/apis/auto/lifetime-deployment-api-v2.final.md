@@ -2709,7 +2709,9 @@ Represents a set of an application and a role.
 | roleKey | string |  | No |
 | roleName | string |  | No |
 
-#### NewApplication
+#### ApplicationCreate
+
+A structure holding the name, description and other attributes of the new application.
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |

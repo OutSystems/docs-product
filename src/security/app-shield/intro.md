@@ -94,7 +94,7 @@ To protect your mobile app using the AppShield plugin, follow these steps:
 
 Note the following:
 
-* All AppShield capabilities, except [Screen reader](protection-features-description.md#screen-reader-detection--android-screen-reader-), [Keylogger](protection-features-description.md#keylogger-protection), [Tapjacking](protection-features-description.md#tapjacking-protection--tapjacking-protection-), and [Private space](protection-features-description.md#private-space-detection--private-space-detection-) detection are enabled by default.
+* All AppShield capabilities, except [Screen reader](protection-features-description.md#android-screen-reader), [Keylogger](protection-features-description.md#keylogger-protection), [Tapjacking](protection-features-description.md#tapjacking-protection), and [Private space](protection-features-description.md#private-space-detection) detection are enabled by default.
 * If any additional configuration is needed, go to the [Configuration](#configuration) section.
 * The app file size increases after hardening the security.
 * MABS takes more time to create a hardened build.

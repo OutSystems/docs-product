@@ -679,6 +679,7 @@
     - topics:
         - href: integration-with-systems/mobile-plugins/barcode/intro.md
         - href: integration-with-systems/mobile-plugins/camera/intro.md
+        - href: integration-with-systems/mobile-plugins/location/intro.md
         - topics:  
             - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
         - href: integration-with-systems/mobile-plugins/inapp-browser/inapp-browser.md

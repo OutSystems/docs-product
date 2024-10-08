@@ -130,6 +130,17 @@ For more information, see [how to get the application hash](#how-to-get-the-appl
 * **What happens:** When trying to mirror the screen or trying to take screenshots of the application, a black screen is shown instead.
 * **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](intro.md#configuration)
 
+### Tapjacking protection { #tapjacking-protection }
+
+* **What it does:** Blocks an attack vector where a user is tricked into granting permissions to a malicious app by unintentionally selecting a security-relevant control that was hidden behind a valid control of the another app.  
+* **What happens:** The application will check for malicious overlays and remove the overlay entirely for apps running on Android 12 and above or block inputs to the overlay for versions below Android 12.
+* **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](intro.md#configuration)
+
+### Private Space Detection { #private-space-detection }
+
+* **What it does:** Blocks an app from running if the app is installed on a private space or a work profile.  
+* **What happens:** On positive detections block the app from running. If **ExitOnURL** is configured, a URL, which the app developer can use to inform the app end-user, is opened upon blocking the app. See [Configuring an exit URL for a blocked app](ExitOnUrl.md)
+* **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](intro.md#configuration)
 
 ## iOS
 
@@ -145,8 +156,8 @@ Protection available specific to iOS apps.
 
 ### Screenshot protection
 
-* **What it does:** Blocks the creation of system screenshots.
-* **What happens:** On positive detections blocks system screenshots.
+* **What it does:** Blocks the creation of both user and system screenshots.
+* **What happens:** When trying to mirror the screen or trying to take screenshots of the application, a black screen is shown instead.
 * **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](intro.md#configuration)
 
 ## How to get the application hash

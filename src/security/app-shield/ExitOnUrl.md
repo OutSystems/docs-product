@@ -152,3 +152,4 @@ A list of reasons for app shutdown in Android devices.
 | 21      | Application crashed outside of Java-code, either native library or Shield |
 | 22      | Hooking frameworks detected                                               |
 | 23      | Native debugger prevention not possible on this device                    |
+| 32      | App started from a private space or work profile                          |

@@ -94,7 +94,7 @@ To protect your mobile app using the AppShield plugin, follow these steps:
 
 Note the following:
 
-* All AppShield capabilities, except [Screen reader](https://success.outsystems.com/documentation/11/delivering_mobile_apps/harden_the_protection_of_mobile_apps_with_appshield/appshield_protection_features/#android-screen-reader) and [Keylogger](https://success.outsystems.com/documentation/11/delivering_mobile_apps/harden_the_protection_of_mobile_apps_with_appshield/appshield_protection_features/#keylogger-protection) detection are enabled by default.
+* All AppShield capabilities, except [Screen reader](protection-features-description.md#screen-reader-detection--android-screen-reader-), [Keylogger](protection-features-description.md#keylogger-protection), [Tapjacking](protection-features-description.md#tapjacking-protection--tapjacking-protection-), and [Private space](protection-features-description.md#private-space-detection--private-space-detection-) detection are enabled by default.
 * If any additional configuration is needed, go to the [Configuration](#configuration) section.
 * The app file size increases after hardening the security.
 * MABS takes more time to create a hardened build.
@@ -124,6 +124,8 @@ Protections that are available for Android builds.
 * Untrusted keyboard detection
 * Screenshot protection
 * Task hijacking protection
+* Tapjacking protection
+* Private space and work profile security enforcement
 
 ### iOS
 
@@ -134,7 +136,7 @@ Protections that are available for iOS builds.
 * Code injection protection
 * Debugger protection
 * Screen mirroring detection
-* Screenshot protection ([see limitation](#limitations))
+* Screenshot protection
 
 ## Configuration
 
@@ -178,6 +180,14 @@ Here is an example of the JSON for **Extensibility Configurations**. You can use
                 "value": "true"
             },
             {
+                "name": "AllowPrivateSpace",
+                "value": "false"
+            },
+            {
+                "name": "AllowTapjacking",
+                "value": "false"
+            },
+            {
                 "name": "AllowScreenshot",
                 "value": "false"
             },
@@ -213,7 +223,9 @@ These are the values available in the **AppShield** configuration JSON.
 | AddTrustedKeyboardSigner        | Text         | Android      | If BlockUntrustedKeyboards is set to True, this option can whitelist a third-party keyboard. This option must be added for each keyboard software that you want to add to the whitelist. |
 | AddTrustedScreenReaderSigner    | Text         | Android      | If BlockUntrustedScreenreaders is set to True, this option can whitelist a third-party screen reader. This option must be added for each screen reader software that you want to add to the whitelist. |
 | AllowJailbrokenRootedDevices    | Boolean      | iOS, Android | If set to True, users can run the app on the jailbroken devices.                            |
+| AllowPrivateSpace                 | Boolean      | Android | If set to false, the application is blocked from running if the application was started from a private space or a work profile.                                      |
 | AllowScreenshot                 | Boolean      | iOS, Android | If set to True, users can take screenshots of the app.                                      |
+| AllowTapjacking                 | Boolean      | Android | If set to false, the application will detect tapjacking attempts and remove the malicious overlay entirely for apps running on Android 12 and above or block inputs to the overlay for versions below Android 12.                                       |
 | ApplicationSignerCertificate    | Text(Base64) | iOS, Android | Adds the given certificate to the accepted signers whitelist of the final package. This option must be added for each certificate that you want to add to the whitelist.|
 | AppShieldObfuscationRules       | Text(base64) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
 | BlockDeveloperMode              | Boolean      | iOS, Android | If set to True, the application is blocked from running on iOS devices that have Developer Mode enabled and Android devices with Developer Options unlocked.                                           |
@@ -312,7 +324,5 @@ After these changes steps, generate a new build of your mobile app.
 ## Limitations { #limitations }
 
 **AppShield** has the following limitations:
-
-* On iOS the plugin doesn't block user-initiated screenshots, it only notifies the app that a screenshot was taken. OutSystems currently doesn't support this event. However, **AppShield** blocks taking screenshots of the iOS App Switcher.
 
 * After MABS creates a build with the **AppShield** plugin active and signs the build, you can't sign that build again manually because the app would recognize that as a sign of tampering.

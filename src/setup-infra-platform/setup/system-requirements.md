@@ -66,7 +66,6 @@ Use the same type of database engine for all the 3 databases in Platform Server 
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
-Apart from standard Oracle Database setups, OutSystems platform 8.0 and onwards works with [Oracle Exadata Database Machines](http://www.oracle.com/us/products/database/exadata/overview/index.html) running with Oracle Linux 5.5 or higher.
 
 ### Additional software requirements
 

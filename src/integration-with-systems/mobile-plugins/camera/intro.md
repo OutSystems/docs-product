@@ -256,7 +256,8 @@ The table shows the compatibility of the Camera plugin with the Mobile Apps Buil
 
 |Plugin version|Compatible with MABS version|Notes|
 |-|-|-|
-|7.2.0 and later|MABS 8.1 and later.||
+|7.5.0 and later|MABS 10.0 and later.||
+|7.2.0 and later|MABS 9.0 and later.||
 |7.1.0 and later|MABS 7.0 and later.||
 |5.1.0 and later|All MABS versions.||
 |5.0.0 and later|MABS 5.0 and later.|For Android P with Support Library 28.|

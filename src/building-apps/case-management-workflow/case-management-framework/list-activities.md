@@ -32,7 +32,7 @@ To get a list of activities assigned to a case worker logged in to your app, fol
 
 1. In the properties pane of the **Case_GetActivities** action, click on **Expand ActivityScope**.
 
-![Screenshot showing the properties pane with the Expand ActivityScope option for the Case_GetActivities action](images/list-activ-expand-ss.png "Expand ActivityScope Properties")
+    ![Screenshot showing the properties pane with the Expand ActivityScope option for the Case_GetActivities action](images/list-activ-expand-ss.png "Expand ActivityScope Properties")
 
 1. To get activities that the logged in user can work on, set **ActivityAssigneeType** as `Entities.ActivityAssigneeType.MyActivities`.
 

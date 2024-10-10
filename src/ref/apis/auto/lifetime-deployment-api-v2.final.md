@@ -1425,7 +1425,7 @@ Returns a list of modules that exist in the infrastructure.
 
 ### /modules/&#123;ModuleKey&#125;/
 
-#### GET { #get-modules-ModuleKey }
+#### GET { #get-modules-modulekey }
 ##### Description:
 
 Returns the details of a given module.
@@ -1557,7 +1557,7 @@ Returns the details of a given role.
 | 404 | Role not found. | [Exception](#exception) |
 | 500 | Internal error raised. | [Exception](#exception) |
 
-#### PUT { #put-roles-RoleKey }
+#### PUT { #put-roles-rolekey }
 ##### Description:
 
 Updates a role with the specified permissions.
@@ -1579,7 +1579,7 @@ Updates a role with the specified permissions.
 | 404 | Role not found. | [Exception](#exception) |
 | 500 | Internal error raised. | [Exception](#exception) |
 
-#### DELETE { #delete-roles-RoleKey }
+#### DELETE { #delete-roles-rolekey }
 ##### Description:
 
 Deletes a role.

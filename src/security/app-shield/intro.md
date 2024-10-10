@@ -218,25 +218,25 @@ Here is an example of the JSON for **Extensibility Configurations**. You can use
 
 These are the values available in the **AppShield** configuration JSON.
 
-| Value                           | Type         | OS           | Description                                                                                       |
-| ------------------------------- | ------------ | ------------ | ------------------------------------------------------------------------------------------------- |
-| AddTrustedKeyboardSigner        | Text         | Android      | If BlockUntrustedKeyboards is set to True, this option can whitelist a third-party keyboard. This option must be added for each keyboard software that you want to add to the whitelist. |
-| AddTrustedScreenReaderSigner    | Text         | Android      | If BlockUntrustedScreenreaders is set to True, this option can whitelist a third-party screen reader. This option must be added for each screen reader software that you want to add to the whitelist. |
-| AllowJailbrokenRootedDevices    | Boolean      | iOS, Android | If set to True, users can run the app on the jailbroken devices.                            |
-| AllowPrivateSpace                 | Boolean      | Android | If set to false, the application is blocked from running if the application was started from a private space or a work profile.                                      |
-| AllowScreenshot                 | Boolean      | iOS, Android | If set to True, users can take screenshots of the app.                                      |
-| AllowTapjacking                 | Boolean      | Android | If set to false, the application will detect tapjacking attempts and remove the malicious overlay entirely for apps running on Android 12 and above or block inputs to the overlay for versions below Android 12.                                       |
-| ApplicationSignerCertificate    | Text(Base64) | iOS, Android | Adds the given certificate to the accepted signers whitelist of the final package. This option must be added for each certificate that you want to add to the whitelist.|
-| AppShieldObfuscationRules       | Text(base64) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
-| BlockDeveloperMode              | Boolean      | iOS, Android | If set to True, the application is blocked from running on iOS devices that have Developer Mode enabled and Android devices with Developer Options unlocked.                                           |
-| BlockUntrustedKeyboards         | Boolean      | Android      | If set to True, untrusted keyboards are detected and blocked.                                           |
-| BlockUntrustedScreenreaders     | Boolean      | Android      | If set to True, untrusted screen readers are detected and blocked.                                      |
-| DisableAppShielding             | Boolean      | iOS, Android | Activates or deactivates App Shield.
-| ExitOnURL | URL value | iOS, Android| If an app feature is blocked due to a configured policy of the **AppShield** plugin, the default browser opens the URL where the problem may be explained. For more information, refer to ExitOnURL.                                                           |
-| RemoveQueryAllPackagesPermission | Boolean | Android | If set to True, it removes the app's ability to check other installed applications. For more information, see [here](query-all-packages.md). |
-| android                         | JSON value   | Android      | The key denoting values that apply to Android devices. |
-| global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.|
-| ios                             | JSON value   | iOS          | The key denoting values that apply to iOS devices.|
+| Configuration                   | Type         | Default Value | OS           | Description                                                                                       | 
+| ------------------------------- | ------------ | ------------- | ------------ | ------------------------------------------------------------------------------------------------- |
+| AddTrustedKeyboardSigner        | Text         |               | Android      | If BlockUntrustedKeyboards is set to True, this option can whitelist a third-party keyboard. This option must be added for each keyboard software that you want to add to the whitelist. |
+| AddTrustedScreenReaderSigner    | Text         |               | Android      | If BlockUntrustedScreenreaders is set to True, this option can whitelist a third-party screen reader. This option must be added for each screen reader software that you want to add to the whitelist. |
+| AllowJailbrokenRootedDevices    | Boolean      | false         | iOS, Android | If set to True, users can run the app on the jailbroken devices.                            |
+| AllowPrivateSpace               | Boolean      | true          | Android      | If set to false, the application is blocked from running if the application was started from a private space or a work profile.                                      |
+| AllowScreenshot                 | Boolean      | false         | iOS, Android | If set to True, users can take screenshots of the app.                                      |
+| AllowTapjacking                 | Boolean      | true          | Android | If set to false, the application will detect tapjacking attempts and remove the malicious overlay entirely for apps running on Android 12 and above or block inputs to the overlay for versions below Android 12.                                       |
+| ApplicationSignerCertificate    | Text(Base64) |               | iOS, Android | Adds the given certificate to the accepted signers whitelist of the final package. This option must be added for each certificate that you want to add to the whitelist.|
+| AppShieldObfuscationRules       | Text(base64) |               | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
+| BlockDeveloperMode              | Boolean      | false         | iOS, Android | If set to True, the application is blocked from running on iOS devices that have Developer Mode enabled and Android devices with Developer Options unlocked.                                           |
+| BlockUntrustedKeyboards         | Boolean      | false         | Android      | If set to True, untrusted keyboards are detected and blocked.                                           |
+| BlockUntrustedScreenreaders     | Boolean      | false         | Android      | If set to True, untrusted screen readers are detected and blocked.                                      |
+| DisableAppShielding             | Boolean      | false         | iOS, Android | Activates or deactivates App Shield.
+| ExitOnURL                       | URL value    |               | iOS, Android| If an app feature is blocked due to a configured policy of the **AppShield** plugin, the default browser opens the URL where the problem may be explained. For more information, refer to ExitOnURL. |
+| RemoveQueryAllPackagesPermission | Boolean | true (false for versions below 1.5.1) | Android | If set to True, it removes the app's ability to check other installed applications. For more information, see [here](query-all-packages.md). |
+| android                         | JSON value   |               | Android      | The key denoting values that apply to Android devices. |
+| global                          | JSON value   |               | iOS, Android | Settings in this section apply to both Android and iOS builds.|
+| ios                             | JSON value   |               | iOS          | The key denoting values that apply to iOS devices.|
 
 ## Check if app with AppShield builds successfully
 

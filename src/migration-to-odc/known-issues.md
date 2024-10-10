@@ -15,11 +15,11 @@ This page outlines the current technical limitations related to the migration on
 
 During the migration, a validation process checks the size of each binary data attribute in the database. If an attribute exceeds the maximum allowed size of 100 MB, the migration cannot continue.
 
-## Impact
+### Impact
 
 The migration of data from O11 to ODC is blocked.
 
-## How to fix
+### How to fix
 
 Ensure that there the of the attributes in your OutSystems 11 is smaller than 100 MB.
 

@@ -11,17 +11,17 @@ figma:
 
 This page outlines the current technical limitations related to the migration on the OutSystems 11 apps to ODC. OutSystems development teams are actively working on addressing the issues.
 
-## Not possible to migrate with data attributes larger than 100 MB
+## Data is truncated for attributes larger than 100 MB
 
-During the migration, a validation process checks the size of each binary data attribute in the database. If an attribute exceeds the maximum allowed size of 100 MB, the migration cannot continue.
+A validation process checks the size of each binary data attribute in the database. If an attribute exceeds the maximum allowed size of 100 MB, the data is truncated in the migration process. This mechanism is in place to unblock the migration process, but it requires careful data preparation before migration to a production environment.
 
 ### Impact
 
-The migration of data from O11 to ODC is blocked.
+The truncation of attributes leads to data loss.
 
 ### How to fix
 
-Ensure that there the of the attributes in your OutSystems 11 is smaller than 100 MB.
+When **migrating to a production environment**, ensure that the attributes in your OutSystems 11 apps are smaller than 100 MB.
 
 ## Forbidden access to LifeTime
 

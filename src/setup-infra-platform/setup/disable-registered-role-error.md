@@ -9,7 +9,7 @@ figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your
 
 # Disable Registered Role Required error logs
 
-It's common to find the error `Registered Role Required` in the error logs. This error happens when a request is made to the server by the app after the session has expired. Considering the asynchronous nature of reactive and mobile apps that contain multiple actions, these errors can multiply in the error logs. Sometimes, OutSystems developers consider these messages irrelevant and prefer to disable them. This article gives a context about why these error messages happen and how to disable them. 
+It's common to find the error `Registered Role Required` in the error logs. This exception happens when an expired user session requests any action that requires a registered role. A registered role refers to any non-anonymous role, including custom roles. Considering the asynchronous nature of reactive and mobile apps that contain multiple actions, these errors can multiply in the error logs. Sometimes, OutSystems developers consider these messages irrelevant and prefer to disable them. This article explains why these error messages happen and how to disable them. 
 
 ![Example of Registered Role Required error messages in the OutSystems error log.](images/disable-registered-role-error-sc.png "Screenshot of the Registered Role Required error in OutSystems logs")
 
@@ -17,7 +17,7 @@ It's common to find the error `Registered Role Required` in the error logs. This
 
 On reactive and mobile apps, the session expires if it's idle for more than the time defined in [Max Idle Time](../../security/configure-authentication.md) (20 minutes by default). The client-side (browser) can only validate the session by contacting the server. This means that the next time the user interacts with the app and it generates one or more server requests (through the execution of server, service and data actions, or aggregates), the server validates if the session is still valid. When processing the request, the server detects that the session is no longer valid and will reject it throwing and logging a **Registered role required** exception (NotRegistered Exception). As a result, the server invalidates the session by invalidating the session cookies.
 
-The client logic is usually prepared to receive a **NotRegistered Exception** (or Security Exception) on an exception handler to redirect the user to a login or invalid permissions screen. These client handlers might have the option log error set to **Yes**, which will log a second error on the Error Logs.
+The client logic is usually prepared to receive a **NotRegistered Exception** (or Security Exception) on an exception handler to redirect the user to a login or invalid permissions screen. These client handlers might have the option **Log Error** set to **Yes**, which will log a second error on the Error Logs.
 
 However, these apps might have many actions that are executed asynchronously. For example, if a screen contains more than 5 data actions and the screen is refreshed, each of these requests generates 2 errors in the logs. This might lead to log pollution.
 

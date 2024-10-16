@@ -165,7 +165,7 @@ You need to have bidirectional secure communication between the front-end of the
 
 ### AI Mentor Studio
 
-To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../building-apps/experience-builder/how-works.md). 
+To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../monitor-and-troubleshoot/manage-tech-debt/how-works.md). 
 
 The network requirements depend on the authentication method and Probe version you use to access AI Mentor Studio.
 

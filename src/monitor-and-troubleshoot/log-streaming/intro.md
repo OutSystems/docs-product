@@ -22,7 +22,7 @@ OutSystems adopts the [OpenTelemetry](https://opentelemetry.io/) standard to str
 
 The following video gives you a quick overview about what log streaming is, the benefits of log streaming, and how it all works. 
 
-<iframe src="https://player.vimeo.com/video/1020681710" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
+<iframe src="https://player.vimeo.com/video/1020984471" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
 
 ## Benefits of log streaming
 

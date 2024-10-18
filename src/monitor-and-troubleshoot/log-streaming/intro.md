@@ -118,6 +118,12 @@ The APM tool receives application logs, platform logs, and all logs that are ava
 
 For detailed information about logged data, refer to [log data formats](detailed-log-map.md).
 
+## A quickstart introduction to log streaming 
+
+This video gives you a quick overview about what log streaming is, the benefits of log streaming, and how it all works. 
+
+<iframe src="https://player.vimeo.com/video/1020681710" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
+
 ## What's next
 
 For detailed information on streaming logs to different APM tools, refer to:
@@ -145,6 +151,4 @@ Here are some additional helpful documentation, links, and articles:
 * [OpenTelemetry protocol](https://opentelemetry.io/docs/specs/otel/protocol/)
 
 * [OpenTelemetry collector](https://opentelemetry.io/docs/collector/)
-
-
 

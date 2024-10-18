@@ -55,8 +55,6 @@ jobs:
     secrets: inherit
     with:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
-      pull-request-title: ${{ needs.pr-info.outputs.pull-request-title }}
-      ignore: ${{ needs.pr-info.outputs.skip-jira == 'true' }}
 
   visual-assets:
     name: "Visual Assets"

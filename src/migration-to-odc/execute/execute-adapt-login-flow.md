@@ -22,7 +22,7 @@ After migrating the O11 code to ODC, you must modify the login and logout flow f
 
     * Add or replace the reset password actions, ensuring they're linked to the Login screen, and add the password reset email.
 
-Once the end users have set a new password, they can log in to the ODC app using their email address and the new password. For detailed information about password reset, refer to [Password reset in ODC](password-reset-in-odc.md). This means you need to adapt the following in your migrated app:
+Once the end users have set a new password, they can log in to the ODC app using their email address and the new password. For detailed information about password reset, refer to [Password reset in ODC](password-reset-in-odc.md).
 
 <div class="info" markdown="1">
 

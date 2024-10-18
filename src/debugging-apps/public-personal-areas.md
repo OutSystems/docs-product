@@ -13,7 +13,7 @@ A Traditional Web module can be executed and debugged in two different areas: th
 
 <div class="info" markdown="1">
 
-Reactive Web and Mobile modules are always published and debugged in the Public Area.
+Applies only to Traditional Web Apps.
 
 </div>
 

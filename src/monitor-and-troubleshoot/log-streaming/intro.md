@@ -20,6 +20,10 @@ Log streaming is the process of continuously collecting and streaming log data t
 
 OutSystems adopts the [OpenTelemetry](https://opentelemetry.io/) standard to stream log data to various APM tools. OpenTelemetry is an [open-source](https://github.com/open-telemetry) observability framework comprising a collection of tools, APIs, and SDKs that you can use to instrument, generate, collect, and export log data to help analyze your applications' performance and behavior. OpenTelemetry is tool-agnostic, meaning it can be used with various commercial and open-source APM tools without significant configuration changes.
 
+The following video gives you a quick overview about what log streaming is, the benefits of log streaming, and how it all works. 
+
+<iframe src="https://player.vimeo.com/video/1020681710" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
+
 ## Benefits of log streaming
 
 One of the main purpose of implementing log streaming support for OutSystems apps is to improve the usability and availability of application and platform log data. Here are some key benefits of this feature:
@@ -117,12 +121,6 @@ The APM tool receives application logs, platform logs, and all logs that are ava
 * Timers
 
 For detailed information about logged data, refer to [log data formats](detailed-log-map.md).
-
-## A quickstart introduction to log streaming 
-
-This video gives you a quick overview about what log streaming is, the benefits of log streaming, and how it all works. 
-
-<iframe src="https://player.vimeo.com/video/1020681710" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
 
 ## What's next
 

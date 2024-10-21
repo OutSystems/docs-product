@@ -49,6 +49,12 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
     * **Client ID**: Client ID for both desktop and web tools.
         
     * **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
+  
+    <div class="warning" markdown="1">
+      
+    For Azure and OKTA you must use ``preferred_username`` as the **Username Claim** value.
+         
+    </div>
        
     * **Scopes**: Clicking the **Test** button after you enter the well-known configuration URL fetches all the scopes supported and enabled in the identity provider. The scopes are displayed on the **Configuration details** section. Any required scope for the user authentication process can be added and saved for the configuration.
   

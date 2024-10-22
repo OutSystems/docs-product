@@ -114,7 +114,7 @@ In the Microsoft Entra admin center, navigate back to your application's single 
 
 For information on how to test the configuration, refer to [Test SSO](https://learn.microsoft.com/en-us/entra/identity/saas-apps/outsystems-tutorial#test-sso). If the authentication is **successful**, the browser redirects you back to the Users app and you get an error message about not having permissions to view the screen.
 
-![Screenshot of the Users app displaying an error message about invalid permissions after a successful Azure AD authentication test](images/azuread-invalid-permissions-usr.png "Invalid Permissions Error Message")
+![Screenshot of the Users app displaying an error message about invalid permissions after a successful authentication test](images/azuread-invalid-permissions-usr.png "Invalid Permissions Error Message")
 
 This happens because the user you used for testing Microsoft Entra authentication doesn't have any assigned OutSystems roles yet. You need to grant user roles in the Users app after the user logs in for the first time using Microsoft Entra authentication, so that the user already exists in the OutSystems database.
 
@@ -132,7 +132,7 @@ Do the following:
 
     `https://<your_server_name>/Users/Login.aspx`
 
-    Using this specific URL allows you to log in to the Users app skipping the external authentication method that's currently configured (Azure AD).
+    Using this specific URL allows you to log in to the Users app skipping the external authentication method that's currently configured (Microsoft Entra).
 
 1. Log in with an administrator account.
 

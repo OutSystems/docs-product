@@ -66,9 +66,9 @@ The following sections describe these steps in detail.
 
 1. Configure SAML as the single sign-on method. 
 
-**Note**:  If you only want to accept signed login responses, set the **Signing Option** to **Sign SAML response and assertion**.
+    **Note**:  If you only want to accept signed login responses, set the **Signing Option** to **Sign SAML response and assertion**.
 
-3. Upload the XML metadata file you downloaded from the Users app. 
+1. Upload the XML metadata file you downloaded from the Users app. 
 
 For more information on how to create a new application in Microsoft Entra, refer to [Add an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal#add-an-enterprise-application)
 

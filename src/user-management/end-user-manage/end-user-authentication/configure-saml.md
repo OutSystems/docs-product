@@ -32,7 +32,7 @@ The current SAML 2.0 implementation in OutSystems has some limitations outlined 
 
 * To implement single logout you may need to change the authentication flows of your OutSystems application. Check below for details.
 
-* Though the Users application is multi-tenant, multi-tenancy isn't supported when using SAML 2.0, Azure AD or Okta authentication methods.
+* Though the Users application is multi-tenant, multi-tenancy isn't supported when using SAML 2.0, Microsoft Entra or Okta authentication methods.
   
 * Supports only flows initiated by the Service Provider.
 
@@ -81,7 +81,7 @@ For more information, check the following topics according to your application t
 
 ### Enable single sign-on between app types to use SAML 2.0 in Reactive Web Apps { #enable-sso-between-app-types }
 
-To use SAML 2.0 authentication in Reactive Web Apps, you must enable **Single Sign-On Between App Types** in the environment configuration. This also applies to SAML-based authentication methods like Azure AD and Okta.
+To use SAML 2.0 authentication in Reactive Web Apps, you must enable **Single Sign-On Between App Types** in the environment configuration. This also applies to SAML-based authentication methods like Microsoft Entra and Okta.
 
 Additionally, this configuration requires you to enable some additional security settings at the environment level.
 
@@ -124,7 +124,7 @@ You can configure the **Groups** claim in the "Configure Authentication" screen 
 
 When there is a match, the Users application associates the user logging in to the existing OutSystems group. If there's no match, OutSystems first creates a new group with the same name as the Identity Provider Server group and then associates the user to that group.
 
-_Known limitation:_ In Azure AD, group names received from the Identity Provider Server consist only of a globally unique identifier (GUID). This means that to have a match between Azure AD groups and OutSystems groups you must name the OutSystems groups using these GUID values.
+_Known limitation:_ In Microsoft Entra, group names received from the Identity Provider Server consist only of a globally unique identifier (GUID). This means that to have a match between Microsoft Entra groups and OutSystems groups you must name the OutSystems groups using these GUID values.
 
 ## Troubleshooting SAML authentication issues
 

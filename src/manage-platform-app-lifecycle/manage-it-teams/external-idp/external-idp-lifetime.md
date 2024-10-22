@@ -52,7 +52,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
   
     <div class="warning" markdown="1">
       
-    For Azure and OKTA you must use ``preferred_username`` as the **Username Claim** value.
+    For Microsoft Entra and OKTA you must use ``preferred_username`` as the **Username Claim** value.
          
     </div>
        
@@ -88,8 +88,8 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
         **Recommended Additional Scopes**:
                     The following are some recommendations for additional scope selection based on commonly used identity providers:
 
-         *  **Azure AD**:
-                    For Azure AD, it is recommended to add the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
+         *  **Microsoft Entra**:
+                    For Microsoft Entra, it is recommended to add the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
 
          *  **Okta**:
                     For Okta, it is recommended to add the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.

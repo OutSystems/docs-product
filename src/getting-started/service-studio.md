@@ -31,8 +31,6 @@ After you successfully connect, you see the list of applications that are on the
 * Create a new application.
 * Install applications and components from the [OutSystems Forge](https://www.outsystems.com/forge/).
 * View and access your existing applications.
-* Install applications or components from the OutSystems Forge.
-
 
 ![Screenshot of the Service Studio development environment showing the list of applications and the Environment tab.](images/service-studio-development-environment.png "Service Studio Development Environment")
 

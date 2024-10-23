@@ -36,7 +36,7 @@ When using AI Mentor Studio REST API, take the following security considerations
 
 ## Prerequisites
 
-To use the AI Mentor Studio API, you must have [full control permissions assigned as a default role](../../../building-apps/experience-builder/how-works.md#manage-architecture-dashboard-api).
+To use the AI Mentor Studio API, you must have full control permissions assigned as a default role.
 
 ## How to obtain a key { #obtain-key }
 

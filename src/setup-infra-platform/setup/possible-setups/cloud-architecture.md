@@ -33,7 +33,7 @@ Depending on the [OutSystems Cloud edition](https://www.outsystems.com/legal/suc
 
 ### Communications with OutSystems tools
 
-Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/intro.md), [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md), [Integration Builder](../../../integration-with-systems/integration-builder/intro.md),[Workflow Builder](../../../building-apps/case-management-workflow/workflow-builder/intro.md), and [Experience Builder](../../../building-apps/experience-builder/intro.md):
+Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/intro.md), [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md), [Integration Builder](../../../integration-with-systems/integration-builder/intro.md), and [Workflow Builder](../../../building-apps/case-management-workflow/workflow-builder/intro.md). 
 
 ![Diagram showing the communication flow between OutSystems Cloud environments and various OutSystems tools](images/communication-between-environments-tools-diag.png "Communication Flow with OutSystems Tools")
 

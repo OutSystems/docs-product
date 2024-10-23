@@ -39,8 +39,6 @@ You can integrate an external IdP by configuring the OIDC protocol in LifeTime. 
 
 * Integration Builder
 
-* Experience Builder
-
 * Workflow Builder
 
 * Factory Configuration 

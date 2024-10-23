@@ -101,18 +101,6 @@ Even though OutSystems is built to scale horizontally, you need to consider the 
 
 As an example, if you are using Amazon RDS as your database server and running the Platform Server on your own infrastructure, the application’s performance will be degraded.
 
-### Experience Builder
-
-[Experience Builder](https://experiencebuilder.outsystems.com/) must be able to connect to the environment where you want Experience Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
-
-Alternatively, ensure that the front ends of the environment used with Experience Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
-
-The Experience Builder uses the environment's public DNS hostname to communicate.
-
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-experiencebuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
-
 ### Integration Builder
 
 [Integration Builder](https://integrationbuilder.outsystems.com/) should be able to connect to the environments where you deploy integrations*. When connecting Integration Builder to all your environments, ensure that the front ends of the environments accept inbound connections from the **Source** address. For example, for a standard infrastructure, Integration Builder should be able to connect to the development, quality assurance, and production environments but doesn't need to connect to LifeTime.

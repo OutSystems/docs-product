@@ -39,7 +39,7 @@ figma:
 
 |Description|Windows|macOS|
 |---|---|---|
-||F5|1-Click Publish|
+|1-Click Publish|F5||
 |Hide/show warning in TrueChange tab|Ctrl+H|Shift+Cmd+H|
 |Enable/disable Styles Editor|Ctrl+J||
 |Refresh Aggregate's data preview|Ctrl+L|Cmd+R|
@@ -58,8 +58,8 @@ figma:
 |---|---|---|
 |Go back|Alt+Left||
 |Go forward|Alt+Right||
-|Move forward through window tabs|Ctrl+Tab|Ctrl+Right|
-|Move back through window tabs|Ctrl+Shift+Tab|Ctrl+Shift+Right|
+|Move forward through window tabs|Ctrl+Tab||
+|Move back through window tabs|Ctrl+Shift+Tab||
 |Move to the Processes tab|Ctrl+1|Cmd+1|
 |Move to the Interface tab|Ctrl+2|Cmd+2|
 |Move to the Logic tab|Ctrl+3|Cmd+3|

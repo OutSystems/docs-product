@@ -9,7 +9,7 @@ figma:
 
 # Ajax Refresh
 
-Use the **Ajax Refresh** element in your flow to refresh parts of the screen without reloading the entire page.
+Use the [**Ajax Refresh**](../../../building-apps/logic/screen-partial-refresh.md) element in your flow to refresh parts of the screen without reloading the entire page.
 
 Keep the following key points in mind when using **Ajax Refresh**:
 

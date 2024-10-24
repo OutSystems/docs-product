@@ -24,7 +24,7 @@ Are you developing a Reactive Web App? Keep in mind that Ajax Refresh does not e
 
 Refreshing only certain parts of a screen without having to re-render the whole screen improves the end user experience by creating dynamic interfaces and supporting faster user interactions.
 
-For web applications, you can use Ajax to perform asynchronous requests to the web server that fetch only the necessary data to dynamically refresh the screen, without needing to refresh the whole page.
+For web applications, you can use [Ajax](../../ref/lang/auto/class-ajax-refresh.md) to perform asynchronous requests to the web server that fetch only the necessary data to dynamically refresh the screen, without needing to refresh the whole page.
 
 To refresh only part of a screen on a web app:
 

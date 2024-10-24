@@ -43,6 +43,8 @@ Before modifying the login and logout flows, ensure the following:
 
 After migrating your app to ODC, you can adapt the login and logout flows by following these steps:
 
+![Displaying the process for adapting login flow in the migrated app in ODC Studio](images/adapt-login-flow.png "Adapting login flow in the migrated appin ODC Studio")
+
 1. [Create a boilerplate ODC app](#step-0). 
 
 1. [Adapt Login screen and actions](#step-1).
@@ -101,6 +103,8 @@ To change the UserInfo block, follow these steps in your **migrated app**:
 
     1. In the block properties, set the **On Initialize** event handler to `(None)`.
 
+        ![Screenshot showing the (None) being set in the UserInfo block properties in ODC Studio.](images/Set-None-odcs.png "Screenshot of adding (None) event")
+
     1. In the block properties, add the **On Ready** event. Ensure the event handler is set as the **OnReady** action.
 
         ![Screenshot showing the OnReady event being set in the UserInfo block properties in ODC Studio.](images/Set-OnReady-odcs.png "Screenshot of adding OnReady event")
@@ -110,8 +114,6 @@ To change the UserInfo block, follow these steps in your **migrated app**:
         ![Screenshot showing the OnClick event handler being set to the Common\Login screen in ODC Studio.](images/paste-OnClick-screen-odcs.png "Screenshot of adding OnClick event screen")
 
 1. In **migrated app** > **Data** > **Client Variables** folder, paste the **UserPhotoURL** client variable from **boilerplate app** > **Data** > **Client Variables**.
-
-    ![Screenshot showing the UserPhotoURL client variable in the Client Variables folder in ODC Studio.](images/Paste-UserPhotoURL-odcs.png "Screenshot of adding UserPhotoURL")
 
 ### Add reset password flow and email { #step-3 }
 

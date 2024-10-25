@@ -10,7 +10,9 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 
 # Monitor Usage with Audit Logs
 
-OutSystems logs every task performed by IT users in the infrastructure management, and keeps an audit log made available to consult. This ensures you have traceability in your infrastructure, and can follow up when problems arise, since no interaction goes unnoticed.
+OutSystems logs every task performed by IT users in the infrastructure management, and keeps an audit log made available to consult. This ensures you have traceability in your infrastructure, and can follow up when problems arise, since no interaction goes unnoticed. 
+
+LifeTime audit logs are never cleaned up, meaning they are retained indefinitely. This allows you to always have access to historical data for compliance and troubleshooting purposes.
 
 IT users have access to the audit log and can check:
 

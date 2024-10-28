@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 
 OutSystems logs every task performed by IT users in the infrastructure management, and keeps an audit log made available to consult. This ensures you have traceability in your infrastructure, and can follow up when problems arise, since no interaction goes unnoticed. 
 
-LifeTime audit logs are never cleaned up, meaning they are retained indefinitely. This allows you to always have access to historical data for compliance and troubleshooting purposes.
+By default, LifeTime audit logs are kept for 365 days. It's possible to adjust the number of retention days in the site property `TimeToKeepAuditsInDays` of the **LifeTimeAudit** module. You can find this module by accessing Service Center of your LifeTime environment and navigating to **Factory** > **Modules**.  
 
 IT users have access to the audit log and can check:
 

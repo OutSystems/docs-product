@@ -26,7 +26,7 @@ You can specify static CSS classes of an element in the properties pane by using
 * In Mobile and Reactive Web apps, insert the class names with quotes and separated by a space (`"bold red"`)
 * In Traditional Web apps, insert the class names without quotes and separated by a space (`bold red`)
 
-![Screenshot of the CSS Style Properties pane in OutSystems Service Studio](images/css-style-properties.png "CSS Style Properties Pane")
+![Screenshot of the CSS Style Properties pane in OutSystems Service Studio.](images/css-style-properties.png "CSS Style Properties Pane")
 
 To specify the CSS classes dynamically use an **Expression**:
 
@@ -39,7 +39,7 @@ You can edit the CSS code in the Style Sheet Editor. Open the editor by double-c
 
 You can also open the Style Sheet Editor by clicking the **CSS** button in the Main Editor toolbar. Select the tab with the app name and define or edit the style to make it available to all elements. Alternatively, select the tab with the name of the currently selected screen or block to narrow the scope of the style to that screen or block.
 
-![Image showing the CSS Style Sheet Editor interface in OutSystems](images/css-style-sheet-editor.png "CSS Style Sheet Editor")
+![Image showing the CSS Style Sheet Editor interface in OutSystems.](images/css-style-sheet-editor.png "CSS Style Sheet Editor")
 
 ## CSS specificity
 
@@ -57,11 +57,11 @@ The styles have different priorities and the order Service Studio imports the st
 
 Define your inline CSS in the **Attributes** section of the **Properties** tab. Add the `style` attribute and then enter the CSS rules with quotes (for example, `"background-color: yellow;"`).
 
-![Example of defining inline CSS in the Attributes section of the Properties tab in OutSystems](images/css-extended-properties.png "CSS Extended Properties")
+![Example of defining inline CSS in the Attributes section of the Properties tab in OutSystems.](images/css-extended-properties.png "CSS Extended Properties")
 
 In Traditional Web you can create inline CSS by adding `style` in the **Extended Properties**.
 
-![Illustration of CSS properties usage in Traditional Web app within OutSystems](images/css-properties.png "CSS Properties")
+![Illustration of CSS properties usage in Traditional Web app within OutSystems.](images/css-properties.png "CSS Properties")
 
 ## OutSystems grid
 
@@ -69,7 +69,9 @@ OutSystems uses a high-level grid system. If you specify the number of columns i
 
 ## Importing CSS
 
-Use the `@import` CSS at-rule in Style Sheet Editor to import style rules from other locations. Put it as the first line in your sheet.
+Use the `@import` CSS at-rule in the Style Sheet Editor to bring in style rules from other valid stylesheets. Place the `@import` rule at the very top of the stylesheet, and ensure the URL is publicly accessible to end-users' browsers.
+
+![Screenshot showing the use of the @import CSS at-rule in the Style Sheet Editor.](images/import-css-at-rule-ss.png "Import CSS At-Rule")
 
 ## Preprocessors
 

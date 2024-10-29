@@ -155,9 +155,9 @@ If the certificate isn't validated you'll see the **Status** as loading:
 
 ![Screenshot indicating a loading status for SSL certificate validation in OutSystems Cloud](images/ssl-domain-cloud-lt-6.png "Loading Status for SSL Certificate Validation")
 
- You can only assign the certificate to an environment once the validation process is complete.
+You can only assign the certificate to an environment once the validation process is complete.
  
-OutSystems Support will only contact you if the certificate is missing any information. You can assign the certificate to an environment only once this process is complete.
+OutSystems Support will only contact you if the certificate is missing any information.
 
 ## Assigning the certificate to an environment
 
@@ -171,7 +171,7 @@ You can now assign the certificate to an environment, directly from the **Enviro
     
     ![Screenshot of selecting an SSL certificate for an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-10.png "Selecting SSL Certificate for Environment")
 
-1. Chose the hostname for the environment and tick "I have created a CNAME record on my chosen hostname".
+1. Choose the hostname for the environment and tick "I have created a CNAME record on my chosen hostname".
 1. Click **Update Secure Endpoint**.
 
     ![Screenshot of the option to update the secure endpoint for an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-11.png "Update Secure Endpoint Option in OutSystems Cloud")

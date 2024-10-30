@@ -48,6 +48,10 @@ To connect to the Migration Assessment Tool, follow these steps:
 
 1. Click **Save**
 
+## Troubleshooting
+
+You can export logs from the Migration Assessment Tool. Go to **Maintenance** > **View troubleshoot** > select **Export**.
+
 ## Next steps
 
 * Ensure the IT user migrating the code has the **O11 Migrations** > **Migrate O11 code** role.

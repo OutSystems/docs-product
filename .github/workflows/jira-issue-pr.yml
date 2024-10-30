@@ -264,7 +264,11 @@ jobs:
 
     - name: Update PR Title
       run: |
-        gh pr edit ${{ inputs.pull-request }} --repo ${{ github.repository }} --title "${{ steps.create-jira-issue.outputs.key }} ${{ needs.find-jira-issue.outputs.pr-title }}"
+        title=$(sed 's/"//g'  <<-EOF
+        ${{ needs.find-jira-issue.outputs.pr-title }}
+        EOF
+        )
+        gh pr edit ${{ inputs.pull-request }} --repo ${{ github.repository }} --title "${{ steps.create-jira-issue.outputs.key }} $(echo $title)"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

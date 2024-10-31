@@ -42,4 +42,4 @@ For more information on handling errors in consumed REST APIs, check [Handling R
 
 ## Handling exceptions in WebBlocks
 
-The `OnException` handler in `UIFlow1` manages exceptions raised by a `WebBlock` from `UIFlow2` when the `WebBlock` is used within `Screen1` of `UIFlow1`. For example, in this scenario, the `OnException` handling is determined by the flow of the screen where the `WebBlock` is implemented, regardless of the `WebBlock`’s original flow.
+Imagine you have two flows, UIFlow1 and UIFlow2. In UIFlow1, there’s a Screen that includes a WebBlock from UIFlow2. If an exception occurs within this WebBlock, the `OnException` handler in UIFlow1 will handle it, not the one in UIFlow2. This is because, when you use components from another flow (like UIFlow2) within a Screen in UIFlow1, UIFlow1 takes on the responsibility for handling any exceptions those components might raise. This behavior is expected, as UIFlow1 acts as the primary flow and has precedence in exception handling for any elements it contains, regardless of their origin.

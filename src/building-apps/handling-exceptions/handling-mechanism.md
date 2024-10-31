@@ -39,3 +39,7 @@ You should have, at least, one Exception Handler in your application flow to inf
 When you are handling exceptions raised by an integration you are consuming (such as an action of an Extension or a method of a REST API) you won't be able to determine the type of exception. In these situations, you should handle the exception with an All Exceptions Handler. Then, you can use the **ExceptionMessage** property of the Exception Handler element to identify the exception.
 
 For more information on handling errors in consumed REST APIs, check [Handling REST Errors](../../integration-with-systems/rest/consume-rest-apis/handling-rest-errors.md).
+
+## Handling exceptions in WebBlocks
+
+The `OnException` handler in `UIFlow1` manages exceptions raised by a `WebBlock` from `UIFlow2` when the `WebBlock` is used within `Screen1` of `UIFlow1`. For example, in this scenario, the `OnException` handling is determined by the flow of the screen where the `WebBlock` is implemented, regardless of the `WebBlock`’s original flow.

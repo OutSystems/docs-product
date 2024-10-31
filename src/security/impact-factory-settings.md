@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3265-714&t=D4PV7CTOyfcxYPJQ-0
 ---
-# Impacts of removing unsafe directives
+# Impacts of removing unsafe directives (Reactive Web Apps Only)
 
 A Content Security Policy (CSP) helps to prevent attacks from untrusted sources. Your policy should detect and mitigate these attacks.
 
@@ -16,7 +16,7 @@ For OutSystems to adhere to security guidelines, the use of unsafe-inline and un
 
 <div class="warning" markdown="1">
 
-Users can disable the use of these directives.  The impacts identified in this document only occur if you change the factory configuration settings from True to False.
+Disabling the use of these directives is done through configuration settings. The impacts identified in this document only occur if you change the factory configuration settings from True to False.
 
 </div>
 

@@ -115,7 +115,7 @@ This links the title of the tasks to a newly created screen. We will use this ne
 
 Now we will define the logic that runs when the end users press the Save button:
 
-1. Double-click an empty area of the **Save** button to define the logic associated with the button. This will create a new screen action named **SaveOnClick**.
+1. Double-click the **Save** button, ensure you click outside of the button text area, to define the logic associated with the button. This creates a new screen action named **SaveOnClick**.
 
 1. In the Logic tab create a server action named **TaskCreateOrUpdate**.
 

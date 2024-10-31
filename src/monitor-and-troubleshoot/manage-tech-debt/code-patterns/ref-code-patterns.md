@@ -381,6 +381,12 @@ Ensure that the default timeout has a short time defined (no more than 10 second
 
 ### Inline JavaScript
 
+<div class="info" markdown="1">
+
+Applies to **Traditional Web** apps only.
+
+</div>
+
 Inline JavaScript defined in an unescaped Expression.
 
 **Impact**  

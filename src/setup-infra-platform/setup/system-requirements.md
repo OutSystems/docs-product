@@ -51,16 +51,17 @@ Future revisions of OutSystems may require the installation of an update within 
 
 Use the same type of database engine for all the 3 databases in Platform Server (platform and apps, logs, session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
 
-* Microsoft SQL Server 2019 or higher, with compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
-* Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
-* Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
-* Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
+* Microsoft SQL Server 2022, with compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
+* Microsoft SQL Server 2019, with compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
+* Microsoft SQL Server 2017 <sup>1</sup>
+* Microsoft SQL Server 2016 <sup>1</sup>
+* Microsoft SQL Server 2014 <sup>1</sup>
 * Azure SQL Database, with compatibility level between 130 and 150
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2<sup>2</sup>
 * Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)<sup>2</sup>
 
-<sup>1</sup> Developer and Express editions of Microsoft SQL Server (any version) aren't supported.
+<sup>1</sup> Requires Web Edition or higher. Developer and Express editions of Microsoft SQL Server (any version) aren't supported.
 
 <sup>2</sup> This version is no longer supported by Oracle, won't be supported by OutSystems starting Jan, 1st 2025.
 
@@ -151,7 +152,8 @@ The following systems are certified to integrate with OutSystems.
 
 ### SQL Server Database
 
-* Microsoft SQL Server 2019 or higher, with compatibility level 150, since Platform Server 11.12.0
+* Microsoft SQL Server 2022, with compatibility level 150, since Platform Server 11.12.0
+* Microsoft SQL Server 2019, with compatibility level 150, since Platform Server 11.12.0
 * Microsoft SQL Server 2017
 * Microsoft SQL Server 2016
 * Microsoft SQL Server 2014

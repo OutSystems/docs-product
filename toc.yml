@@ -191,6 +191,12 @@
                     - href: building-apps/ui/patterns/mobile/interaction/animatedlabel.md
                     - href: building-apps/ui/patterns/mobile/interaction/bottomsheet.md
                     - href: building-apps/ui/patterns/mobile/interaction/carousel.md
+                    - href: building-apps/ui/patterns/mobile/interaction/data-grid/intro.md
+                    - topics:
+                        - href: building-apps/ui/patterns/mobile/interaction/data-grid/faq.md
+                        - href: building-apps/ui/patterns/mobile/interaction/data-grid/how-to-view-data.md
+                        - href: building-apps/ui/patterns/mobile/interaction/data-grid/how-to-edit-data.md
+                        - href: building-apps/ui/patterns/mobile/interaction/data-grid/how-to-save-data.md
                     - href: building-apps/ui/patterns/mobile/interaction/datepicker.md
                     - href: building-apps/ui/patterns/mobile/interaction/datepickerrange.md
                     - href: building-apps/ui/patterns/mobile/interaction/dropdownsearch.md

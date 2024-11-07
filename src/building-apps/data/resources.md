@@ -23,6 +23,14 @@ Any Resource you add to your module is saved in the module's OML file. When you 
 * **Deploy to Target Directory**: The resource is deployed to the sub-directory set in the Target Directory property, which is created under the deploy directory of the module.  
     **Note:** Deploying to Target Directory is not applicable if you are using Library Modules.
 
+
+## Security considerations
+
+* Some resource files deployed to the Target Directory may be executed by IIS. This depends on how IIS is configured.
+
+* It's your responsibility to ensure that the included resource comes from a trustworthy source.
+
+
 <div class="info" markdown="1">
 
 Adding big resource files to your module may slow down the publish operation.

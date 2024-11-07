@@ -34,10 +34,12 @@ The following are the requirements for installing the Platform Server in your da
 * Microsoft Windows Server 2019 (Standard Edition or higher edition), since Platform Server Release Jul.2019
 * Microsoft Windows Server 2016 (Standard Edition or higher edition)
 
-OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
+<div class="info" markdown="1">
 
 <sup>1</sup> When installing the Platform Server on Windows Server 2022, or upgrading an existing installation to Windows Server 2022, consider increasing the CPU and memory of the machines as the Operating System itself requires more resources.
+OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 
+</div>
 
 The supported Operating System configurations must be deployed on bare metal or hardware virtualization technologies (for example, VMware or KVM).
 
@@ -61,12 +63,15 @@ Use the same type of database engine for all the 3 databases in Platform Server 
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2<sup>2</sup>
 * Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)<sup>2</sup>
 
+<div class="info" markdown="1">
+
 <sup>1</sup> Requires Web Edition or higher. Developer and Express editions of Microsoft SQL Server (any version) aren't supported.
 
 <sup>2</sup> This version is no longer supported by Oracle, won't be supported by OutSystems starting Jan, 1st 2025.
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
+</div>
 
 ### Additional software requirements
 

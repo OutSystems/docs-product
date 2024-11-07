@@ -62,7 +62,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 <div class="info" markdown="1">
 
-To enable the Accessibility Features offered by the **EnableAccessibilityFeatures** layout parameter in a popup, you must add the class "has-accessible-features" manually to the **Style Classes** parameter of the popup widget.
+To enable the Accessibility Features offered by the **EnableAccessibilityFeatures** layout parameter in a popup, you must manually add the class "has-accessible-features" to the **Style Classes** parameter of the popup widget. Also, if you want to change the pop-up's size or other look and feel parameters, use the [Styles tab](../look-feel/styles-editor.md) to define your customizations.
+
 
 </div>
 

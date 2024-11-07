@@ -37,6 +37,7 @@ The following are the requirements for installing the Platform Server in your da
 <div class="info" markdown="1">
 
 <sup>1</sup> When installing the Platform Server on Windows Server 2022, or upgrading an existing installation to Windows Server 2022, consider increasing the CPU and memory of the machines as the Operating System itself requires more resources.
+
 OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 
 </div>

@@ -919,6 +919,7 @@
         - href: security/app-shield/obfuscate-custom-rules.md
         - href: security/app-shield/ExitOnUrl.md
         - href: security/app-shield/query-all-packages.md
+        - href: security/app-shield/troubleshooting.md
     - href: security/implementing-waf/implementing-waf-os.md
     - topics:
         - href: security/implementing-waf/waf-outsystems.md

@@ -12,8 +12,6 @@ figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742
 
 Before starting, make sure that the components [OutSystems Data Grid Web](https://www.outsystems.com/forge/component-overview/5554/) and [OutSystems Data Grid Web Sample](https://www.outsystems.com/forge/component-overview/5555/) are installed in your environment.
 
-Check also [OutSystems Data Grid Web video tutorials](<https://www.youtube.com/playlist?list=PLxALhSwsaivxRsBZ4kEfzvH4cqU9q0nso>) on YouTube.
-
 ## Create interface to view data
 
 Follow these steps to create a grid interface where users can view and filter data.

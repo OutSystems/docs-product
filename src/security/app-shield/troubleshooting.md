@@ -8,7 +8,7 @@ platform-version: o11
 figma: 
 ---
 
-# Troubleshooting AppShield Crashes
+# Troubleshooting AppShield crashes
 
 <div class="info" markdown="1">
 
@@ -16,7 +16,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-## Crash Logs
+## Crash logs
 
 When AppShield detects a security threat to the app, it either blocks it or, in some scenarios, immediately **crashes the app** to close all windows at malicious attempts.
 

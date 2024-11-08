@@ -108,7 +108,7 @@ The app includes the following parameter information in the generated **Exit URL
 
 | Query Parameter | Description                                                                                 |
 | --------------- | ------------------------------------------------------------------------------------------- |
-| %reason%        | The reason for the shutdown, in decimal. See [Troubleshooting](./troubleshooting.md#shutdown-reasons) for explanations of these values. |
+| %reason%        | The reason for the shutdown, in decimal. Refer to [Troubleshooting AppShield Crashes](troubleshooting.md#shutdown-reasons) for explanations of these values. |
 | %manufacturer%  | The manufacturer of the device                                                              |
 | %model%         | The model name of the device                                                                |
 | %android%       | The Android API level of the device                                                         |

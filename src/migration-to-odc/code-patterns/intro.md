@@ -31,7 +31,7 @@ These are the patterns that require modification in the O11 apps.
 
 * [App theme](arch-app-theme.md)
 * [Entity, local storage](arch-local-storage.md)
-* [entity, non-read only ](arch-non-read-only-entity.md)
+* [Entity, non-read only ](arch-non-read-only-entity.md)
 * [Image from an app](arch-image.md)
 * [ODC application Block](arch-block.md)
 * [ODC application Client Action](arch-client-action.md)

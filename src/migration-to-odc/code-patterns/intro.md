@@ -9,35 +9,54 @@ figma:
 
 # O11 to ODC migration code patterns
 
-As you plan and prepare your existing O11 app architecture to smoothly migrate to ODC at a later point, you must refactor and adjust your O11 implementation to ease the migration process.
+As you plan and prepare your existing O11 app architecture to migrate late to ODC, you must refactor and adjust your O11 implementation for an efficient migration process.
 
 <div class="info" markdown="1">
 
-The OutSystems Migration Toolkit will provide automation in the future to support some of the following refactorings. Until then, you’ll have to manually refactor the app so that the migration is not blocked.
+The OutSystems Migration Toolkit will provide automation in the future to support some of the following patterns. Until then,manually refactor the apps so to unblock the migration.
 
 </div>
 
-Here's some guidelines to refactor your O11 app:
+Here are some guidelines to refactor your O11 app.
 
-* [Asset consuming an Application Theme](arch-app-theme.md)
-* [Asset consuming an ODC application Block](arch-block.md)
-* [Asset consuming an ODC application Client Action](arch-client-action.md)
-* [Asset consuming an extension](arch-extension.md)
-* [Asset consuming an Image from an Application](arch-image.md)
-* [Asset consuming a Local Storage Entity](arch-local-storage.md)
-* [Asset consuming a Screen in mobile app](arch-mobile-screen.md)
-* [Application consuming a non-read only Entity](arch-non-read-only-entity.md)
-* [Asset consuming a reference that is not defined in any mapped ODC asset](arch-not-mapped.md)
-* [Asset consuming a reference to a Traditional Web element](convert-trad-web.md)
-* [Asset consuming a private Structure](arch-priv-struct.md)
-* [Asset consuming a Process](arch-process.md)
-* [Asset consuming a Resource](arch-resource.md)
-* [Asset consuming a Role](arch-role.md)
-* [Asset consuming a Script](arch-script.md)
-* [Asset consuming an ODC application Server Action](arch-server-action.md)
+## General
+
+General information about the language elements and architecture in O11 and ODC.
+
 * [Asset consuming O11 system elements](arch-system-element.md)
+
+## Fix in O11
+
+These are the patterns that require modification in the O11 apps.
+
+* [App theme](arch-app-theme.md)
+* [Entity, local storage](arch-local-storage.md)
+* [entity, non-read only ](arch-non-read-only-entity.md)
+* [Image from an app](arch-image.md)
+* [ODC application Block](arch-block.md)
+* [ODC application Client Action](arch-client-action.md)
+* [ODC application server action](arch-server-action.md)
+* [Private structure](arch-priv-struct.md)
+* [Process](arch-process.md)
+* [Reference not defined in any mapped ODC asset](arch-not-mapped.md)
+* [Resource](arch-resource.md)
+* [Roles, anonymous and registered ](refactor-anonymous-registered-roles.md)
+* [Roles, public](arch-role.md)
+* [Screen in mobile app](arch-mobile-screen.md)
+* [Script](arch-script.md)
+* [Traditional web elements](convert-trad-web.md)
+
+## Not supported
+
+These are the patterns about elements that are not supported in ODC when compared to O11.
+
 * [The Asset cannot contain BPTs](elem-bpt.md)
 * [The Asset cannot contain SOAP](elem-soap.md)
-* [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
-* [Refactor site properties](refactor-siteproperties.md)
+
+## Fix in ODC
+
+These are the patterns that require modification in the ODC apps.
+
+* [Extension](arch-extension.md)
+* [Site properties](refactor-siteproperties.md)
 

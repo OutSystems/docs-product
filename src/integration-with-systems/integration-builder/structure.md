@@ -3,7 +3,7 @@ locale: en-us
 guid: 597ab495-4b31-4d7f-8c36-a8998c5d4070
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6407
+figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=1019-6407&node-type=canvas&t=U3PEelBj0FHBpYxA-0
 summary: OutSystems 11 (O11) Integration Builder structures integrations into library and service modules for CRUD operations and external system interactions.
 ---
 # Structure of generated integrations
@@ -14,11 +14,11 @@ Integration Builder generates and publishes integrations, which are OutSystems a
 
 * One **service module** that provides an additional abstraction layer on top of the Server Actions in the library module. The Server Actions exposed in this module use the credentials stored in connections to authenticate requests, and you don't need to provide authentication data in each Server Action call. By default, the module name has a "_IS" suffix, meaning "integration service".
 
-    <div class="info" markdown="1">
+<div class="info" markdown="1">
 
-    Use the elements exposed by the **service module** of the integration to interact with the external system.
+Use the elements exposed by the **service module** of the integration to interact with the external system.
 
-    </div>
+</div>
 
 You can define both the OutSystems application name and the name of the modules when creating the integration in Integration Builder. Check [Create and configure a new integration](use.md#create-configure-integration) for more information.
 
@@ -47,93 +47,99 @@ You can filter, define the sort order, and paginate results from invoking Server
 
 ### Using filters { #filter }
 
-Result filtering is available in `Search*` and `Count*` Server Actions. There are two types of filtering available:
+Result filtering is available in `Search*` and `Count*` Server Actions. These are the following ways filtering is available:
 
-BasicFilters (List of BasicFilter)
-:   Define simple criteria for filtering. Each basic filter is defined in the following manner:  
-    "Compare entity attribute A of type T with value V, using operator O".  
-    
-    <div class="info" markdown="1">
-    
-    For SharePoint Online, use the `FolderFilter` parameter to filter files by folder instead of `BasicFilters`.
-    
-    </div>
-    
-    All basic filter parameters are Static Entities, except for the value to search. The available attributes are the attribute names of the external system entity available in a Static Entity. Check the following examples of entity attribute types and operators:
+**BasicFilters (List of BasicFilter)** 
 
-    EntityAttributeType = `DateTime`, `Number`, `Text`, etc.  
-    FilterOperator = `Equal`, `GreaterThan`, `StringContains`, `EndsWith`, `EndsWith_CaseInsensitive`, etc.
+You can define simple criteria for filtering. Define each basic filter in the following manner:  
 
-    <div class="warning" markdown="1">
+* "Compare entity attribute A of type T with value V, using operator O".  
 
-     Don't use `CaseInsentitve` filter operator with SharePoint Online integrations. Doing so causes an error.
-    
-    </div>
-    
-    
+<div class="info" markdown="1">
 
-    Combine one or more of these basic filters to produce your final filter condition. For example, consider a Customer entity of the external system with a CustomerName attribute. For example, to search for customers whose name starts with "John" (case insensitive), use the following BasicFilter:
+For SharePoint Online, use the `FolderFilter` parameter to filter files by folder instead of `BasicFilters`.
 
-    EntityAttribute = `Entities.ACustomersAttributes.CustomerName`  
-    EntityAttributeType = `Entities.EntityAttributeType.Text`  
-    FilterOperator = `Entities.FilterOperator.StartsWith_CaseInsensitive`  
+</div>
+
+All basic filter parameters are Static Entities, except for the value to search. The available attributes are the attribute names of the external system entity available in a Static Entity. Check the following examples of entity attribute types and operators:
+
+* EntityAttributeType = `DateTime`, `Number`, `Text` 
+* FilterOperator = `Equal`, `GreaterThan`, `StringContains`, `EndsWith`, `EndsWith_CaseInsensitive`, etc.
+
+<div class="warning" markdown="1">
+
+Don't use `CaseInsentitve` filter operator with SharePoint Online integrations. Doing so causes an error.
+
+</div>
+
+You can combine one or more of these basic filters to produce your final filter condition. For example, consider a Customer entity of the external system with a CustomerName attribute. For example, to search for customers whose name starts with "John" (case insensitive), use the following BasicFilter:
+
+* EntityAttribute = `Entities.ACustomersAttributes.CustomerName`  
+* EntityAttributeType = `Entities.EntityAttributeType.Text`  
+* FilterOperator = `Entities.FilterOperator.StartsWith_CaseInsensitive`  
     Value = `"john"`
 
-    ![Screenshot showing an example of basic filters setup in OutSystems Integration Builder](images/basicfilters-example-ss.png "Example of Basic Filters in Integration Builder")
+![Screenshot showing an example of basic filters setup in OutSystems Integration Builder](images/basicfilters-example-ss.png "Example of Basic Filters in Integration Builder")
 
-    <div class="info" markdown="1">
+<div class="info" markdown="1">
 
-    The ACustomersAttributes Static Entity is available in the **library module** of the integration. By default, the name of this module has a "_DRV" suffix.
+The ACustomersAttributes Static Entity is available in the **library module** of the integration. By default, the name of this module has a "_DRV" suffix.
 
-    The EntityAttributeType and FilterOperator Static Entities are available in the **IntegrationUtils_Lib module**.
+The EntityAttributeType and FilterOperator Static Entities are available in the **IntegrationUtils_Lib module**.
 
-    </div>
+</div>
 
-AdvancedFilters (Text)
-:   Define the full query string using OData terminology. For example:
+**AdvancedFilters (Text)**
 
-    `"City eq 'Redmond'"` (`eq` means equal)  
-    `"City ne 'London'"` (`ne` means not equal)  
-    `"Price gt 20"` (`gt` means greater than)  
-    `"Price ge 10"` (`ge` means greater than or equal)
+Define the full query string using OData terminology. For example:
 
-    You can check the structure of the Results output parameter to find the attributes names you can use in your query.
+* `"City eq 'Redmond'"` (`eq` means equal)  
+* `"City ne 'London'"` (`ne` means not equal)  
+* `"Price gt 20"` (`gt` means greater than)  
+* `"Price ge 10"` (`ge` means greater than or equal)
+
+You can check the structure of the Results output parameter to find the attributes names you can use in your query.
 
 ### Ordering results { #order }
 
-You can define the order of the records in a result set when invoking `Search*` Server Actions. There are two ways of defining the order of results:
+You can define the order of the records in a result set when invoking `Search*` Server Actions. There are multiple ways of defining the order of results:
 
-BasicOrderBy (List of OrderBy)
-:   Defines ordering in a way similar to basic filtering. You must specify one or more entity attribute names (available in a Static Entity) and the order direction.  
-    For example, to order search results by customer name when searching for records of the Customer entity, do the following:
+**BasicOrderBy (List of OrderBy)**
 
-    EntityAttribute = `Entities.ACustomersAttributes.CustomerName`  
-    Direction = `Entities.SortDirection.Ascending`
+Defines ordering in a way similar to basic filtering. You must specify one or more entity attribute names (available in a Static Entity) and the order direction.  
 
-    ![Screenshot illustrating an example of basic ordering setup in OutSystems Integration Builder](images/basicorderby-example-ss.png "Example of Basic OrderBy in Integration Builder")
+For example, to order search results by customer name when searching for records of the Customer entity, do the following:
 
-    <div class="info" markdown="1">
+* EntityAttribute = `Entities.ACustomersAttributes.CustomerName`  
+* Direction = `Entities.SortDirection.Ascending`
+
+![Screenshot illustrating an example of basic ordering setup in OutSystems Integration Builder](images/basicorderby-example-ss.png "Example of Basic OrderBy in Integration Builder")
+
+<div class="info" markdown="1">
     
-    The ACustomersAttributes Static Entity is available in the **library module** of the integration. By default, the name of this module has a "_DRV" suffix.
+The ACustomersAttributes Static Entity is available in the **library module** of the integration. By default, the name of this module has a "_DRV" suffix.
 
-    The SortDirection Static Entity is available in the **IntegrationUtils_Lib module**.
+The SortDirection Static Entity is available in the **IntegrationUtils_Lib module**.
 
-    </div>
+</div>
 
-AdvancedOrderBy (Text)
-:   Defines ordering using an OData expression. For example: `"CustomerName asc"`
+**AdvancedOrderBy (Text)**
+
+Defines ordering using an OData expression. For example: `"CustomerName asc"`
 
 ### Pagination { #paginate }
 
 You can use pagination when invoking `Search*` Server Actions. Define limits on the result set using the following parameters:
 
-Skip / Offset
-:   Defines how many records to skip in the result set. If the parameter value is 5, you get results from record 6 onward. Set this parameter according to the current page of the results.
+**Skip / Offset**
 
-Top / MaxRecords
-:   Defines how many records to return in the result set. If the parameter value is 10, you get only the first 10 records. Set this parameter according to the number of records you want to display per page of results.
+Defines how many records to skip in the result set. If the parameter value is 5, you get results from record 6 onward. Set this parameter according to the current page of the results.
 
-You can use these two parameters together, or just one at a time, according to your business needs. It's recommended that you define the order of the results when using pagination. Check [Ordering results](#order).
+**Top / MaxRecords**
+
+Defines how many records to return in the result set. If the parameter value is 10, you get only the first 10 records. Set this parameter according to the number of records you want to display per page of results.
+
+You can use these parameters together, or just one at a time, according to your business needs. It's recommended that you define the order of the results when using pagination. Check [Ordering results](#order).
 
 <div class="info" markdown="1">
 
@@ -143,16 +149,18 @@ When using SharePoint Online integrations in an app, it isn't possible to implem
 
 ## Advanced scenarios { #advanced }
 
-The integrations generated by Integration Builder provide two ways of supporting advanced scenarios:
+The integrations generated by Integration Builder provide the following ways of supporting advanced scenarios:
 
-Use advanced input parameters of Server Actions
-:   Besides the basic input parameters, each Server Action provides advanced input parameters that allow you to use OData expressions for searching, filtering, and ordering. These parameters are "AdvancedFilters" and "AdvancedOrderBy".
+**Use advanced input parameters of Server Actions**
 
-Configure the integration to allow editing in Service Studio
-:   By default, you can't modify generated integrations in Service Studio. This allows you to keep modifying and publishing new versions of the integration using Integration Builder. However, you can choose to generate an integration that allows editing in Service Studio, losing the ability to modify this integration in Integration Builder. For example, you can create an integration editable in Service Studio to implement an alternative authentication method for external system requests.
+Besides the basic input parameters, each Server Action provides advanced input parameters that allow you to use OData expressions for searching, filtering, and ordering. These parameters are "AdvancedFilters" and "AdvancedOrderBy".
 
-    <div class="info" markdown="1">
+**Configure the integration to allow editing in Service Studio**
 
-    If you follow this customization path, you or any other developers **can't modify the configuration of the integration or publish it again using Integration Builder**. After publishing an integration that allows editing, you can only make further changes to it using Service Studio.
+By default, you can't modify generated integrations in Service Studio. This allows you to keep modifying and publishing new versions of the integration using Integration Builder. However, you can choose to generate an integration that allows editing in Service Studio, losing the ability to modify this integration in Integration Builder. For example, you can create an integration editable in Service Studio to implement an alternative authentication method for external system requests.
 
-    </div>
+<div class="info" markdown="1">
+
+If you follow this customization path, you or any other developers **can't modify the configuration of the integration or publish it again using Integration Builder**. After publishing an integration that allows editing, you can only make further changes to it using Service Studio.
+
+</div>

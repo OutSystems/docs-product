@@ -53,6 +53,10 @@ The styles have different priorities and the order Service Studio imports the st
 1. Styles that Service Studio generates when you use Styles Editor.
 1. Inline style you define in **Attributes** or **Extended Properties**.
 
+The following video provides an overview of how CSS functions in a browser, with a focus on overriding styles.
+
+<iframe src="https://player.vimeo.com/video/874775842" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video displaying how how CSS functions in a browser, with a focus on overriding styles.</iframe>
+
 ## Inline CSS
 
 Define your inline CSS in the **Attributes** section of the **Properties** tab. Add the `style` attribute and then enter the CSS rules with quotes (for example, `"background-color: yellow;"`).

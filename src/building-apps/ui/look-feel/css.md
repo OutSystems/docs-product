@@ -43,7 +43,7 @@ You can also open the Style Sheet Editor by clicking the **CSS** button in the M
 
 ## CSS specificity
 
-The styles have different priorities and the order Service Studio imports the style sheets affects how the browsers apply them. The last style to be applied has the highest priority.
+Specificity is the algorithm used by browsers to determine which style declaration is ultimately applied to an element. The styles have different priorities and the order Service Studio imports the style sheets affects how the browsers apply them. The last style to be applied has the highest priority.
 
 1. System style sheet for Container widgets in the Grid.
 1. Block style sheet.
@@ -58,6 +58,12 @@ The following video provides an overview of how CSS functions in a browser, with
 <iframe src="https://player.vimeo.com/video/874775842" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video displaying how how CSS functions in a browser, with a focus on overriding styles.</iframe>
 
 ## Inline CSS
+
+<div class="warning" markdown="1">
+
+Using inline CSS is not a good practice. For more information, refer to the [CSS Best Practices](#css-best-practices) section.
+
+</div>
 
 Define your inline CSS in the **Attributes** section of the **Properties** tab. Add the `style` attribute and then enter the CSS rules with quotes (for example, `"background-color: yellow;"`).
 
@@ -81,7 +87,7 @@ Use the `@import` CSS at-rule in the Style Sheet Editor to bring in style rules 
 
 OutSystems development tools don't support the use of CSS preprocessors (such as Sass or LESS) in apps.
 
-## CSS Best Practices:
+## CSS Best Practices
 
 1. **Avoid Inline Styles**: Inline styles can quickly become hard to manage and maintain, especially in large and complex projects. When styling is scattered throughout the HTML elements, it becomes challenging to track and modify styles, leading to code duplication and potential errors.
 1. **Avoid using ID selector**: The Id of each element is managed by the platform depending on its scope and could be changed anytime. To avoid unexpected behaviors, use CSS classes instead.

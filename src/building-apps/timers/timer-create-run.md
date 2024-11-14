@@ -24,6 +24,8 @@ If the Action you specify has input parameters, when creating the Timer you need
 
 You can set a schedule to run the Timer automatically or you can force the Timer to run without waiting for the scheduled time.
 
+To learn more about setting up timers in tenants, take a look at [Setting up Timers](https://success.outsystems.com/documentation/how_to_guides/development/how_to_build_a_multi_tenant_application/#:~:text=of%20the%20module.-,Setting%20up%20Timers,-Similarly%20to%20Entities).
+
 ## Set the Timer Schedule
 
 You can set the schedule of a Timer in one of the following ways:

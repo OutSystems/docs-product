@@ -59,7 +59,7 @@ On your first login, Integration Builder greets you with an onboarding guide. To
 
     <div class="info" markdown="1">
 
-    If you are integrating with a **external database**, check out [how to Integrate with an external database using Integration Builder ](../external-database/integrate-external-db-ib.md)
+    If you are integrating with an **external database**, check out [how to Integrate with an external database using Integration Builder ](../external-database/integrate-external-db-ib.md)
 
     </div>
 

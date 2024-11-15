@@ -97,6 +97,11 @@ After following these steps and publishing the module, you can test the componen
 | AllowColumnReorder (Boolean): Optional  | Allows columns to be reordered. Default value is True. | 
 | AllowColumnResize (Boolean): Optional  | Allows column width to be resized. Default value is True. |  
 | AllowColumnSort (Boolean): Optional  | Allows sorting data by column. Default value is True. | 
+| KeyBinding (Text): Optional  | Set the primary key field of the data. Expected format: 'Entity.Attribute'. <br/>Use this field when doing Server-side validations. <br/>Don’t want to refresh the grid after adding lines. Combine with UpdateAddedLineKey and GetRowNumberByKey actions. | 
 | RowHeight (Integer): Optional  | Sets the row height in pixels. Default height is 48 pixels. | 
 | RowsPerPage (Integer): Optional  | Sets the number of rows displayed per page. Default value is 50.| 
+| ShowAggregateValues (Boolean): Optional  | Set to True to display a line below the grid with the column values aggregated (sum, min, max, etc.). <br/>By default, the parameter is set to False. <br/>To define the aggregation function of a given numeric (Number or Currency) column, use the SetColumnAggregate client action.| 
+| SanitizeInputValues (Boolean): Optional  | Set True to assure the values inputed in the grid will be sanitized or False if you want to explicitly allow custom code to run.| 
+| ServerSidePagination (Boolean): Optional  | Set to True if you want to enable server-side pagination. By default, False.| 
+| RowHeader (RowHeader Identifier): Optional  | Defines what is shown on the first column of the grid. Default value is *Entities.RowHeader.RowNumber*.| 
 

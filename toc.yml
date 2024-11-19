@@ -977,10 +977,14 @@
         - topics:
             - href: setup-infra-platform/setup/mobile-builder-connectivity-requirements.md
             - href: setup-infra-platform/setup/configure-http-proxy.md
+            - href: setup-infra-platform/setup/ip-range-cloud.md
         - href: setup-infra-platform/setup/default-configurations.md
         - href: setup-infra-platform/setup/environment-config.md
         - href: setup-infra-platform/setup/lifetime-configure.md
         - href: setup-infra-platform/setup/ssl-domain-cloud/ssl-domain-cloud.md
+        - href: setup-infra-platform/setup/vpn/vpn-support.md
+        - href: setup-infra-platform/setup/aws-direct-connect/aws-direct-connect-os-cloud.md
+        - href: setup-infra-platform/setup/connect-tgw/connect-tgw.md
         - href: setup-infra-platform/setup/install-ssl-platform.md
         - href: setup-infra-platform/setup/install-client-side-certificate-paas.md
         - href: setup-infra-platform/setup/install-client-side-cert-on-premise.md
@@ -1054,12 +1058,14 @@
             - href: manage-platform-app-lifecycle/manage-it-teams/external-idp/external-idp-authentication-provider.md
             - href: manage-platform-app-lifecycle/manage-it-teams/external-idp/external-idp-errors.md
         - href: manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
-        - href: manage-platform-app-lifecycle/manage-it-teams/implement-an-authentication-plugin.md    
+        - href: manage-platform-app-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
+    - href: manage-platform-app-lifecycle/access-database-paas/access-database-paas.md
+    - topics:
+        - href: manage-platform-app-lifecycle/access-database-paas/temporary-access-database-backup.md
     - href: manage-platform-app-lifecycle/migrate-db-clone.md
     - href: manage-platform-app-lifecycle/database-replica.md   
     - href: manage-platform-app-lifecycle/environment-filters.md
     - href: manage-platform-app-lifecycle/maintenance-mode.md
-
 
 # Migration to ODC
 - href: migration-to-odc/migration-intro.md

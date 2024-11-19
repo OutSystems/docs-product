@@ -40,4 +40,4 @@ The main steps in the Planning phase of your one-shot migration are the followin
 
 ## Coexistence approach { #coexistence }
 
-Check [plan and prepare O11 architecture for coexistence migration](plan-incremental.md) to follow the coexistence approach.
+OutSystems is preparing the guidance for the coexistence migration.

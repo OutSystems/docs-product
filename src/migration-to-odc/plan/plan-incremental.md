@@ -7,81 +7,79 @@ platform-version: o11
 figma: 
 ---
 
-# Map O11 to ODC architecture for coexistence migration
+# Adapting O11 architecture and creating an ODC blueprint
 
-## Overview
+Preparing your apps for migration to OutSystems Developer Cloud (ODC) is essential to benefit the cloud-native architecture of ODC. ODC offers a modular, scalable environment that enhances app performance and resilience. Planning the migration early can ensure a smoother transition, minimize business disruption, and position your apps for long-term success in a modern, cloud-native infrastructure.
 
-The preparation phase is a period of refactoring your O11 apps so that they're ready for migration to the ODC platform. This document is intended for O11 application architects who are planning and preparing the existing O11 application architecture to enable smooth migration to ODC in the future.
+The migration process consists of phases, including creating the ODC blueprint, mapping it from O11 apps, and preparing the O11 architecture. 
 
-## Prepare existing O11 apps to migrate to ODC
+The ODC blueprint results from planning and focusing on your business goals and development team independence. It contains an overview of the future ODC architecture and the list of changes required for ODC. The blueprint evolves as you adapt your O11 apps for the migration and their mirroring functionalities in ODC. It captures all the necessary changes apps need during migration, especially once the code is in ODC. However, you do not need an ODC tenant in this preparatory phase.
 
-Here are the steps to help you prepare and refactor your existing O11 apps to enable smooth and seamless migration to ODC at a later point.
+Adapting the O11 apps means implementing best practices to prepare the apps for the ODC migration. This ensures that your future app portfolio benefits from ODC features like app-independent lifecycles, high scalability, library versions, and more. The migration process can automatically apply some best practices, especially code-related ones. However, app architecture best practices require thoughtful planning before the migration. This is because the architecture depends on each customer's app portfolio.
 
-### Step 1:  Adopt the architecture canvas best practices
+This document is intended for architects, leads, and developers planning and preparing the existing O11 application architecture to enable efficient migration to ODC in the future. You will learn what you need to create an ODC blueprint to help you plan your development work. Since architecture adjustments may take some time, OutSystems recommends that development teams start incorporating them into their regular sprint activities as technical debt reduction.
 
-Application [architecture canvas](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/the_architecture_canvas/#) is a framework to support application architecture design in OutSystems.
+### Requirements
 
-OutSystems recommends that you [design the architecture](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/) of your O11 apps based on the architecture canvas best practices. This allows you to organize your architecture into concepts that facilitate the creation of domains.
+The requirements for adapting O11 architecture and creating an ODC blueprint:
 
-### Step 2: Adopt domain-driven architecture
+* Discovery Tool. This is a Forge component to analyze and understand how to improve the O11 factory architecture and enable the instantiation and validation of domain-driven design architecture
+* AI Mentor Studio. OutSystems AI tool that helps you reduce the technical dept and implement best practices.
 
-[Domain-driven design](https://success.outsystems.com/documentation/best_practices/architecture/outsystems_domain_driven_architecture/domain_driven_design/) is a software engineering approach that aligns complex software applications with business problems they address.
-OutSystems recommends that you adopt [domain-driven architecture](https://success.outsystems.com/documentation/best_practices/architecture/outsystems_domain_driven_architecture/) where you decouple large monolith software applications into small, serviceable pieces, providing team isolation and lifecycle independence.
 
-By adopting domain-driven design principles, you can break down monolithic architecture into small, loosely-coupled apps. This helps to remove strong dependencies between apps and allows teams to work more independently.
+### Step 1: Map O11 domains to ODC apps and libraries
 
-Following the domain-driven architecture in O11 enables your business application architecture to get closer to the ODC architecture principles promoting application-independent lifecycles and strong ownership. This creates a smooth migration path into ODC cloud-native loosely coupled architecture composed of applications and libraries. For detailed information on ODC app architecture, refer to [app architecture](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/app_architecture/).
+The first step in preparing your apps for migration is creating your ODC blueprint. According to your business needs, select the factory you want to move to ODC and create a plan to prepare the apps for the next steps of the migration process.
 
-For detailed information on types of domains and domain architecture rules,  refer to [domain-driven design with OutSystems](https://success.outsystems.com/documentation/best_practices/architecture/outsystems_domain_driven_architecture/domain_driven_design_with_outsystems/).
+On the higher level, this entails understanding how O11 apps and modules map to the apps, libraries, and workflows in ODC. For more information refer to [Map O11 domains to ODC apps and libraries](plan-map-incremental.md).
 
-### Step 3: Validate your application architecture
+On a more granular level, creating an ODC blueprint entails analyzing your existing O11 app architecture blueprint. To finalize your blueprint, you need to:
 
-While the Assessment tool is still under development, you can use the Discovery Tool in the  OutSystems [Forge](https://www.outsystems.com/forge/component-overview/409/discovery) to validate your [Architecture Canvas and Domain-driven design rules](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/validating_your_application_architecture/).
+* Identify application concepts
+* Identify bounded contexts
+* Identify business owners and sponsors
+* Map bounded contexts to apps and libraries
 
-### Step 4: Map O11 domains to ODC apps and libraries 
+More information is available in [Convert O11 architecture to ODC architecture](plan-convert-arch-incrementale.md).
 
-Once you have designed your domain-driven architecture, you can map your O11 horizontal and vertical domains to ODC apps and libraries. This exercise helps you understand if your domain architecture is well designed, allowing you to iterate on the design before starting to refactor. 
-For detailed information, refer to [map O11 domains to ODC apps and libraries](plan-map-incremental.md).
 
-Next, you must analyze your existing O11 application architecture and perform additional and modifications to map the existing O11 architecture to ODC architecture.
-For detailed information, refer to [Convert O11 architecture blueprint to ODC architecture blueprint](plan-convert-arch-incrementale.md).
+### Step 2: Apply domain-driven architecture principles
 
-### Step 5: Refactor your architecture to adhere to architecture best practices
+[Domain-driven design](https://success.outsystems.com/documentation/best_practices/architecture/outsystems_domain_driven_architecture/domain_driven_design/) supports cloud-native app development by breaking down apps into loosely coupled and independently deployable components or services. This approach aligns with the cloud-native architecture of ODC, where apps are designed to solve specific business problems or automate processes. Domain-driven architecture in O11 enables your business apps to become closer to the ODC architecture, creating a migration path into the ODC loosely coupled architecture.
 
-As you assess your existing O11 domain architecture, you must refactor your O11 application to ensure that you follow the best practices of architecture canvas and domain-driven architecture.
+In ODC, each app can function as a standalone component, a microservice exposing APIs, or a single web or mobile user interface. This modularity enables independent scaling of each app, reducing the time and cost associated with scaling. It also ensures life-cycle independence among teams, enabling parallel development and deployment.
 
-Here are some guidelines for refactoring your O11 app:
+Adopting domain-driven design requires an iterative process between:
 
-* [Refactor server actions to service action](../code-patterns/arch-server-action.md)
+* Validating the architecture
+* Modifying the O11 apps
 
-To learn more about fundamentals of ODC architecture and architecture design patterns in ODC, refer to [architecture fundamentals](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/apps/odc/1) and [architecture patterns](https://learn.outsystems.com/training/journeys/architecture-patterns-581/odc) under ODC training.
+More resources:
 
-### Step 6: Refactor your application to make it ODC-compatible
+* For detailed information on ODC app architecture, refer to [App architecture](https://success.outsystems.com/documentation/outsystems_developer_cloud/app_architecture/).
+* For information on types of domains and domain architecture rules, refer to [Domain-driven design with OutSystems](https://success.outsystems.com/documentation/best_practices/architecture/outsystems_domain_driven_architecture/domain_driven_design_with_outsystems/).
+* [Architecture fundamentals training](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/apps/odc/1)
+* [Architecture patterns training](https://learn.outsystems.com/training/journeys/architecture-patterns-581/odc)
 
-As you build your ODC application architecture, you must perform additional refactoring of your O11 app to make it ODC-compatible to enable a smooth migration to ODC.
 
-Here are some procedures and guidelines for refactoring your O11 app:
+#### Validate the app architecture
 
-* [Refactor anonymous and registered roles](../code-patterns/refactor-anonymous-registered-roles.md)
-* [Refactor public roles](../code-patterns/arch-role.md)
-* [Refactor public structures](../code-patterns/arch-priv-struct.md)
-* [Refactor system entities](../code-patterns/arch-system-element.md#how-to-solve)
-* [Refactor site properties](../code-patterns/refactor-siteproperties.md)
-* [Refactor extensions](../code-patterns/arch-extension.md)
+If you're not part of the Early Access Program, you can use the [Discovery Tool](https://www.outsystems.com/forge/component-overview/409/discovery-o11) from Forge to validate your architecture. For more information about the validation, refer to [Architecture Canvas and Domain-driven design rules](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/validating_your_application_architecture/).
 
-### Step 7: Refactor code patterns
+The Early Access Program customers can use the Migration Assessment Tool, a set of O11 components to prepare for the ODC architecture and migration.
 
-Some features in O11 aren't supported in ODC. For example, ODC does not support SOAP and the O11 SOAP code cannot be automatically converted to ODC. 
 
-Here are some code patterns that you must transform in O11 before migrating to ODC or modify the ODC code after the migration is complete:
+### Step 3: Adapt your apps for better ODC compatibility
 
-* [Refactor SOAP](../code-patterns/elem-soap.md)
-* [Refactor BPT](../code-patterns/elem-bpt.md)
+As you prepare your app for the ODC architecture, adapt the O11 apps to make them ODC-compatible and enable a smoother migration to ODC. You need to consider the best practices and that some O11 features are not supported directly in ODC. 
+
+For more information about how to adapt your apps, refer to[ O11 to ODC migration code patterns](../code-patterns/intro.md).
+
 
 ## Additional resources
 
-Here's some additional resources and training materials that can help you understand ODC architecture better:
+Here are some additional resources and training materials that can help you understand ODC architecture better:
 
-* [O11 to ODC](https://learn.outsystems.com/training/journeys/from-o11-to-odc-569)
+* [O11 to ODC training](https://learn.outsystems.com/training/journeys/from-o11-to-odc-569)
 * [Architecture Fundamentals on ODC](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/)
 * [Architecture patterns in ODC training](https://learn.outsystems.com/training/journeys/architecture-patterns-581/)

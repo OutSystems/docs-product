@@ -1024,15 +1024,12 @@
         - href: setup-infra-platform/upgrade/upgrade-platform-module-prep.md
         - href: setup-infra-platform/upgrade/upgrade-platform-module-deploy.md
         - href: setup-infra-platform/upgrade/upgrade-platform-errors.md
-#Manage Oustsystems platform and app life cycle
+# Manage OutSystems platform and app lifecycle
 - href: manage-platform-app-lifecycle/intro.md
 - topics:
-    - href: manage-platform-app-lifecycle/database-replica.md
     - href: manage-platform-app-lifecycle/initial-setup-of-an-infrastructure.md
-    - href: manage-platform-app-lifecycle/environment-filters.md
-    - href: manage-platform-app-lifecycle/maintenance-mode.md
-    - href: manage-platform-app-lifecycle/configure-send-emails.md
     - href: manage-platform-app-lifecycle/data-protection.md
+    - href: manage-platform-app-lifecycle/configure-send-emails.md
     - href: manage-platform-app-lifecycle/manage-it-teams/intro.md
     - topics:
         - href: manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md
@@ -1057,7 +1054,13 @@
             - href: manage-platform-app-lifecycle/manage-it-teams/external-idp/external-idp-authentication-provider.md
             - href: manage-platform-app-lifecycle/manage-it-teams/external-idp/external-idp-errors.md
         - href: manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
-        - href: manage-platform-app-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
+        - href: manage-platform-app-lifecycle/manage-it-teams/implement-an-authentication-plugin.md    
+    - href: manage-platform-app-lifecycle/migrate-db-clone.md
+    - href: manage-platform-app-lifecycle/database-replica.md   
+    - href: manage-platform-app-lifecycle/environment-filters.md
+    - href: manage-platform-app-lifecycle/maintenance-mode.md
+
+
 # Migration to ODC
 - href: migration-to-odc/migration-intro.md
 - topics:

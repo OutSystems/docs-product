@@ -6,42 +6,27 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1019%3A6377&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
-# How to register SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 apps in the Azure Active Directory
+# How to register SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 apps in Microsoft Entra
 
-OutSystems owns and manages the Azure Active Directory application you are using for authentication and authorization. This provides another level of trust for our customers. Microsoft uses the Azure portal to authenticate and authorize services for your app and users. To use the authentication and authorization services, you must register your app in the Azure AD (Active Directory). Integration Builder can then access your Microsoft SharePoint. Microsoft Dataverse, or Microsoft Dynamics 365 environments through the Azure AD application.
-
+OutSystems owns and manages the Microsoft Entra application you are using for authentication and authorization. This provides another level of trust for our customers. Microsoft uses the Microsoft Entra portal to authenticate and authorize services for your app and users. To use the authentication and authorization services, you must register your app in Microsoft Entra. Integration Builder can then access your Microsoft SharePoint. Microsoft Dataverse, or Microsoft Dynamics 365 environments through the Microsoft Entra application.
 
 The procedure to register your application includes the following:
 
-* Registering your app
-* Adding and requesting API permissions
-* Managing certificates and secrets
-
-<div class="info" markdown="1">
-
-  If the left menu pane is not open, click the Hamburger icon. These procedures use the left menu pane to access the integration options.
-
-</div>
+* [Registering your app with Microsoft Entra](#registering-your-app)
+* [Adding and requesting API permissions](#adding-and-requesting-application-permissions)
+* [Managing certificates and secrets](#managing-certificates-and-secrets)
 
 ## Registering your app
 
-1. Sign into the [Microsoft Azure Portal](https://portal.azure.com/).
+1. Sign into the [Microsoft Entra admin center](https://entra.microsoft.com/#home) and [register your app](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory). 
 
-1. From the left menu pane, click **Azure Active Directory**.
-
-1. From the left menu pane, click **App registrations**.
-
-1. From the top menu bar, click **+ New Registration**.
-
-    ![Screenshot of the Azure Portal top menu bar with the 'New Registration' button highlighted](images/ms-azure-top-menu-bar.png "Azure Portal Top Menu Bar")
-
-1. In the name field, **copy and paste** one of the following:  
+1. In the **Name** field, enter one of the following:  
 
     * For **SharePoint Online**: `OutSystems SharePoint`
     * For **Microsoft Dataverse**:  `OutSystems Dataverse`
     * For **Microsoft Dynamics 365**: `OutSystems Dynamics 365`
 
-1. In the Supported account types section, select **Accounts in this organizational directory only (\<organization name\> only - Single tenant)**.
+1. In the **Supported account types** section, select **Accounts in this organizational directory only (\<organization name\> only - Single tenant)**.
 
     <div class="info" markdown="1">
 
@@ -49,97 +34,32 @@ The procedure to register your application includes the following:
 
     </div>
 
-1. Click **Register**.
-
 ## Adding and requesting application permissions
 
-To add and request application permissions for your environment, choose either the SharePoint Online, Microsoft Dataverse / Microsoft Dynamics 365 procedure.
+To add and request application permissions for your environment, choose either the SharePoint Online, Microsoft Dataverse/Microsoft Dynamics 365 procedure.
 
 ### Adding SharePoint Online permissions
 
-1. From the left menu pane, click **API permissions**.
+1. Add the [**Sites.ReadWrite.All**](https://learn.microsoft.com/en-us/graph/permissions-reference#sitesreadwriteall) application permissions.
 
-1. Below Configured permissions, click **Add a permission** to open the Request API permissions window.
-
-1. Click **SharePoint**.
-
-1. Select **Application Permissions**.
-
-1. From the list of permissions, continue to scroll, click **Sites** and select **Sites.ReadWrite.All**. Click **Add permissions**.
-
-    <div class="info" markdown="1">
-
-    A warning message may display in the Add a Permissions list, indicating the permission was not granted for OutSystems Integration team.
-
-    </div>
-
-1. Click the **Grant admin consent for `<your organization name>`** link.
+1. Grant admin consent for `<your organization name>`.
 
 ### Adding Microsoft Dataverse or Microsoft Dynamics 365 permissions
 
-1. From the left menu pane, click **API permissions**.
+1. Set the **user_impersonation** permissions for **Dynamics CRM**.
 
-1. Below Configured permissions, click **Add a permission** to open the Request API permissions window.
-
-   ![Screenshot showing the API permissions section in Azure Portal with 'Add a permission' button selected](images/ms-azure-permission-selected.png "Azure Portal API Permissions")
-
-1. Under Request API permission, click in the **Dynamics CRM** box.
-
-   ![Screenshot of the Dynamics CRM permission option in Azure Portal's Request API permissions window](images/ms-azure-dynamics-crm.png "Azure Portal Dynamics CRM Permission")
-
-1. Under Permissions, select **user_impersonation**.
-
-1. Scroll to the bottom of the list and click the **Add permissions** button again.
-
-    <div class="info" markdown="1">
-
-    A warning message may display in the Add a Permissions list, indicating the permission was not granted for OutSystems Integration team.
-
-    </div>
-
-1. Optionally, to grant permission, click the **Grant admin consent for `<your organization name>`** link.
-
-    ![Screenshot of the Azure Portal with the 'Grant admin consent for your organization' link highlighted](images/ms-azure-grant-permission.png "Azure Portal Grant Permission")
+1. Optionally, grant admin consent for `<your organization name>`.
 
 #### Adding Application Users in Power Apps
 
 After registering your application in Azure Active Directory, you must add Application Users for the same application in Power Apps. This step is mandatory in order to have Dataverse and Dynamics connections working in Integration Builder. This is not required for SharePoint connections.
 
-1. Sign into the [Microsoft Power Apps](https://make.powerapps.com/).
+1. Sign into the [Microsoft Power Apps](https://make.powerapps.com/) and [create application users](https://learn.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user) for your app.
 
-1. From the top bar, click **Settings** > **Admin Center**.
-
-1. From the menu, click **Environments**.
-
-1. From the list of **Environments**, select your environment.
-
-1. From the top menu, click **Settings**.
-
-1. Expand **Users + permissions** and click **Application** users.
-
-1. From the top menu, click **+ New App User**.
-
-1. From the right panel, click **+ Add an app**.
-
-1. Search for the application that you have previously created in Azure Active Directory, select it and click **Add**.
-
-1. Still in the right panel, select the **Business Unit**.
-
-1. In **Security Roles**, select **System Administrator** and click **Save**.
-    System Administrator role ensures that you are providing the required permissions. But other permissions may work as well.
+1. To ensure you are providing the required permissions, set the **System Administrator** security role. 
 
 ## Managing certificates and secrets
 
-<div class="info" markdown="1">
+1. Download the OutSystems certificate that Integration Builder emailed to you. (If you prefer you can use your own certificate.)
 
-Before beginning this procedure, make sure to download the OutSystems certificate that Integration Builder emailed to you. (If you prefer you can use your own certificate.)
-
-</div>
-
-1. From the left menu pane, click **Certificates & secrets**.
-
-1. Below Certificates, click **Upload Certificate**.
-
-1. Click the **File** button and navigate to the location in which you placed the certificate.
-
-1. Click **Open** and then click **Add**. The certificate is added to your app.  
+1. In the Microsoft Entra admin center, [upload that certificate](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal#option-1-recommended-upload-a-trusted-certificate-issued-by-a-certificate-authority).

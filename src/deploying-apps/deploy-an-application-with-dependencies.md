@@ -14,7 +14,7 @@ An application that is [deployed to another environment](<deploy-an-application.
 
 LifeTime validates these type of dependencies before deploying applications. 
 
-LifeTime detects all application dependencies that are not up-to-date in the destination environment and adds those dependencies to the deployment plan, highlighting them in red.
+LifeTime detects all application dependencies that are not compatible in the destination environment and adds those dependencies to the deployment plan, highlighting them in red.
 
 In this situation, do the following:
 

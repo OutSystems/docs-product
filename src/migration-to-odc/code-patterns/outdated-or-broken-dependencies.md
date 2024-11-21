@@ -18,4 +18,4 @@ You must solve this pattern in O11 before proceeding with the code migration to 
 
 ### Solve in O11
 
-To refresh the dependencies in your consumer model, refer to [Handle changes in exposed functionality](../../building-apps/reuse-and-refactor/handle-changes.md).
+To refresh the dependencies in your consumer model, refer to [Handle changes in exposed functionality](../../building-apps/reuse-and-refactor/handle-changes.md#refresh-dependencies).

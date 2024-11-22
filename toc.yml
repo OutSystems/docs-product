@@ -929,7 +929,6 @@
 # User management
 - href: user-management/intro.md
 - topics:
-    - href: user-management/end-user-manage/intro.md
     - href: user-management/end-user-manage/accessing-users.md
     - href: user-management/end-user-manage/configure-admin.md
     - href: user-management/end-user-manage/classify-internal-users.md

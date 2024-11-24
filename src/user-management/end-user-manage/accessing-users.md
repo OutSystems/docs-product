@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Applicati
 
 # Access the Users app
 
-The OutSystems **Users** app lets you create, update, and delete [End Users](intro.md) (the users of your apps) and their roles. You can also manage [User Roles](../user-roles/intro.md) individually or in bulk using groups.
+The OutSystems **Users** app lets you create, update, and delete [End Users](./add-delete-users.md) (the users of your apps) and their roles. You can also manage [User Roles](../user-roles/intro.md) individually or in bulk using groups.
 
 ## Navigate to the Users app
 

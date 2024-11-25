@@ -35,9 +35,13 @@ jobs:
         ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
 
     - name: Download Tools
-      run: |
-        curl ${{ secrets.TOOLS_URL }} --output toolkit.zip
-        unzip toolkit.zip -d toolkit
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ secrets.TOOLS_REPOSITORY }}
+        ref: master
+        token: ${{ secrets.TOOLS_PAT }}
+        path: toolkit
+        fetch-depth: 1
 
     - name: Add config.yml
       working-directory: docs

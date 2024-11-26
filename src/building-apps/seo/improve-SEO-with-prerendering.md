@@ -72,7 +72,7 @@ Lambda@Edge lets you run Node.js and Python Lambda functions to customize conten
 * After CloudFront receives the response from the origin (origin response)
 * Before CloudFront forwards the response to the viewer (viewer response)
 
-For more information, see [Using AWS Lambda with CloudFront Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html). 
+For more information, see [Customize at the edge with Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html). 
 
 You need to intercept both the viewer and the origin requests:
 

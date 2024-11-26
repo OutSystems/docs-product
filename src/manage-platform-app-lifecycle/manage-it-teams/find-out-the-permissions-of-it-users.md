@@ -37,11 +37,11 @@ In this example we want to understand the permissions that a specific user has, 
 
 1. In the **USERS** screen, find the user and click the Name of the user to go to the details page.  
 
-    ![Screenshot detailing specific user permissions within the LifeTime console, including roles and access levels across environments.](images/users-permissions-user-lt.png "IT User Permissions Detail")
+    ![Screenshot detailing specific user permissions within the LifeTime console, including roles and access levels across environments.](https://github.com/user-attachments/assets/cbad55df-28af-4fc6-a7e0-a8e50d19e6d8)
 
 On this page, we can see that:
 
-* The **default role** of the user grants them access to the Development environment, but no access to any application. Also, it grants No Access to Quality and Production environments.
+* The **default role** of the user grants them access to the Development and Quality environments, but no access to any application. Also, it grants No Access to the Production environment.
 
 * The user has Architect **role in the team** Intranet, which grants them Change and Deploy permission in the Development environment over the applications that the team manages, Directory and Fleet Management. Over the same applications, the user has Monitor and Add Dependencies permission in the Quality environment and No Access in the Production environment.
 

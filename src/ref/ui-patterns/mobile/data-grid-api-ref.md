@@ -10,8 +10,6 @@ figma:
 
 # Data Grid Reactive APIs
 
-[comment]: <> (2.2.0)
-
 Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](https://developer.mescius.com/wijmo/flexgrid-javascript-data-grid/), an Enterprise Grade Javascript Data Grid, that can be used for building applications, such as reporting, data analytics, and business workflow.
 
 ## Summary
@@ -135,9 +133,9 @@ TextFixed
 TextFromBinding
 :   Type: optional, Text.  
     Field to be displayed as text of the link from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-    For example: &quot;Product_Sample.Name&quot;  
-    **Note:** Field &quot;TextFixed&quot; is dominant.
+    Expected format: `{EntityName}.[FieldName]`. You can also use `EntityName.FieldName`.  
+    For example: `{Product_Sample}.[Name]`  
+    **Note:** Field `TextFixed` is dominant.
 
 ActionOptionalConfigs
 :   Type: optional, [ActionOptionalConfigs](<#Structure_ActionOptionalConfigs>).  

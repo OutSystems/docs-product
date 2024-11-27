@@ -28,9 +28,9 @@ If you have more than one Theme in your module, you can change the default modul
 
 1. Go to the **Interface** tab and select the module name at the top of the pane. The module properties show.
 
-2. In the module properties locate the **Defaults** section.
+1. In the module properties locate the **Defaults** section.
 
-3. In the **Default Theme** list select your Theme.
+1. In the **Default Theme** list select your Theme.
 
     ![Screenshot showing how to set the default module Theme in Service Studio](images/module-theme-ss.png "Module Properties and Theme Selection")
 
@@ -64,7 +64,7 @@ The Themes in the OutSystems UI framework follow a structure based on the Screen
 
 The following diagram shows how a new Theme inherits the layout from the base Theme, and how the platform uses the Blocks and Placeholders to generate a page. The main layout has Placeholders whose content are Blocks (the Header placeholder is replaced by the content generated in the Header block). The CSS is also inherited from the base Theme, but can be overridden by the application CSS.
 
-![Diagram illustrating the structure of an OutSystems UI Theme with Blocks and Placeholders](images/themes-concept.png "OutSystems UI Theme Structure")
+![Diagram illustrating the structure of an OutSystems UI Theme with Blocks and Placeholders](images/themes-concept-diag.png "OutSystems UI Theme Structure")
 
 ## Blocks
 

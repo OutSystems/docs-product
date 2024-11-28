@@ -252,7 +252,7 @@ Having the Platform Server upgraded in the environment, consider the following s
 
 * On the **Development environment**, the fastest way to upgrade all your applications is by [creating a Solution with all modules](https://success.outsystems.com/documentation/how_to_guides/devops/creating_and_using_an_all_components_solution/) and publish the "Current Running Version". If you get any errors publishing the solution, use the appropriate development tool to open the correspondent module and fix the problems. In the end, you can publish the whole solution again to make sure all issues and dependencies are properly resolved.
 
-* For all **non-development environments** (for example, Testing, Production, etc.), it’s recommended to stage the application modules from a previously upgraded environment. Use the LifeTime management console to stage applications, when the lifecycle of the applications is perfectly aligned with the upgrade.
+* For all **non-development environments** (for example, Testing, Production, and so on), it's recommended to stage the application modules from a previously upgraded environment. Use the LifeTime management console to stage applications, when the lifecycle of the applications is perfectly aligned with the upgrade.
 
     <div class="info" markdown="1">
 
@@ -270,8 +270,6 @@ After publishing your applications in the new version, create and run tests to e
 
 ## Doing maintenance while upgrading environments { #maintenance }
 
-While upgrading, if you need to do some bug fixing in an application that's running on an environment that hasn't been upgraded, you'll need to do it on that environment. It won't be possible to go through the usual development-production pipeline, because you can't stage applications between environments in different versions.
-
-The solution is to make the fix directly in the environment that hasn't yet been upgraded.
+While upgrading, if you need to fix a bug in an application running on an environment that hasn't been upgraded, you'll need to address it in that environment. Deployments between environments on different major platform versions (for example, O10 to O11) are not possible and must be moved manually. However, deployments between environments on different platform versions within the same major version are supported as long as the target environment includes all the features used by the application in the source environment.
 
 As an example, imagine that you already upgraded Development and Test environments. There are still Pre-Production and Production environments to upgrade. You have to do a critical fix on an application in Production. In this case, use the development tools in Pre-Production to do the fix, publish, and test. Then, move the application to Production. Don't forget to backport the fix to the other environments.

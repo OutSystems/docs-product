@@ -30,4 +30,4 @@ Custom application templates are the application templates you create. Check out
 
 ## Forge application templates
 
-Forge application templates are provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates). Once you install an application template from Forge, you can select it when you're creating a new app, just like other application templates.
+Forge application templates are provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates). Navigate to **Category** and install the app template. Once you install an app template from Forge, you can select it when you're creating a new app, just like other application templates.

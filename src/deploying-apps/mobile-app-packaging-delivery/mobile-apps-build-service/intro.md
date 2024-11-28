@@ -95,7 +95,7 @@ When your mobile app version 0.6 was tagged, MABS 4.0 had already been released,
 
 ## Enable the Mobile Apps Build Service for an Environment
 
-The Mobile Apps Build Service operation is optional. You can change its availability in the environment manager, thus allowing or avoiding the generation of new mobile application packages for that environment or specific front-end.
+The Mobile Apps Build Service operation is optional. You can change its availability in the environment manager, thus allowing or avoiding the generation of new mobile application packages for that environment.
 
 To enable the Mobile Apps Build Service for an environment:
 

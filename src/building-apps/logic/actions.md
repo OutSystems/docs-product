@@ -37,6 +37,8 @@ Some Screens may require fetching complex information from the database or other
 
 You can also create **Data Actions** in your Blocks.
 
+For detailed information about the properties of data actions, refer to the reference information for [Data action](../../ref/lang/auto/class-data-action.md).
+
 ## Client Actions { #client-actions}
 
 **Client Actions** run logic in the user device. You can create **Client Actions** in two different scopes: in the scope of a **Screen** and in the **client logic**.

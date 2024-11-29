@@ -55,24 +55,21 @@ Future revisions of OutSystems may require the installation of an update within 
 
 Use the same type of database engine for all the 3 databases in Platform Server (platform and apps, logs, session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
 
-* Microsoft SQL Server supported versions<sup>1, 2</sup> and respective supported compatibility levels:
-
-    |  2016                |  2017                 |  2019                 |  2022                   |
-    |----------------------|-----------------------|-----------------------|-------------------------|
-    |  130                 |  130, 140             |  130, 140, 150        |  130, 140, 150          |
-
+* Microsoft SQL Server 2022, with compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
+* Microsoft SQL Server 2019, with compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
+* Microsoft SQL Server 2017 <sup>1</sup>
+* Microsoft SQL Server 2016 <sup>1</sup>
+* Microsoft SQL Server 2014 <sup>1</sup> <sup>2</sup>
 * Azure SQL Database, with compatibility level between 130 and 150
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
-* Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2<sup>3</sup>
-* Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)<sup>3</sup>
+* Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2<sup>2</sup>
+* Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)<sup>2</sup>
 
 <div class="info" markdown="1">
 
 <sup>1</sup> Requires Web Edition or higher. Developer and Express editions of Microsoft SQL Server (any version) aren't supported.
 
-<sup>2</sup> Version 2014 stopped being supported from Platform Server version 11.33 onwards.
-
-<sup>3</sup> This version is no longer supported by the database engine provider, won't be supported by OutSystems starting Jan, 1st 2025.
+<sup>2</sup> This version is no longer supported by the database engine provider, won't be supported by OutSystems starting Jan, 1st 2025.
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
@@ -161,19 +158,22 @@ Azure SQL Managed Instances are not supported.
 
 The following systems are certified to integrate with OutSystems.
 
-### SQL Server database
+### SQL Server Database
 
-* Supported versions<sup>1</sup> and respective supported compatibility levels:
+* Microsoft SQL Server 2022, with compatibility level 150, since Platform Server 11.12.0
+* Microsoft SQL Server 2019, with compatibility level 150, since Platform Server 11.12.0
+* Microsoft SQL Server 2017
+* Microsoft SQL Server 2016
+* Microsoft SQL Server 2014 <sup>1</sup>
+* Microsoft SQL Server 2012 <sup>1</sup>
+* Microsoft SQL Server 2008 R2 <sup>1</sup>
+* Microsoft SQL Server 2008 <sup>1</sup>
 
-    |  2016    |  2017       |  2019           |  2022            |
-    |----------|-------------|-----------------|------------------|
-    |  130     |  130, 140   |  130, 140, 150  |  130, 140, 150   |
-
-<sup>1</sup> Versions 2008 to 2014 stopped being supported from Platform Server version 11.33 onwards.
+<sup>1</sup> This version is no longer supported by Microsoft, won't be supported by OutSystems starting Jan, 1st 2025.
 
 ### Azure SQL database
 
-* Azure SQL Database with compatibility level between 130 and 150
+* Azure SQL Database available in the cloud
 
 ### Oracle database
 

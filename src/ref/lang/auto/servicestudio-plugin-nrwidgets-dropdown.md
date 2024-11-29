@@ -200,3 +200,24 @@ With the Dropdown Widget you can implement two types of lists:
 </tbody>
 </table>
 
+## Special attributes
+
+<table markdown="1">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default value</th>
+<th>Observations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td title="Name">apply-to-child</td>
+<td> The Dropdown widget is a select element enclosed in a div. By default, its attributes are rendered in the div. apply-to-child is an attribute of the Dropdown that controls where other attributes are rendered. It lists the attribute names to render in the select element e.g. apply-to-child="aria-describedby,data-id" makes aria-described by and data-id attributes render in the select. Setting apply-to-child="*" renders all attributes in the select. </td>
+<td>If apply-to-child is not added to the Dropdown attribute list, all attributes are rendered in the enclosing div by default. </td>
+<td>This functionality only applies to Dropdowns with Options Content set to Text Only. "style" and "class" attributes are unaffected. </td>
+</tr>
+</tbody>
+</table>
+

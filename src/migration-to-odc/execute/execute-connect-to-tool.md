@@ -22,7 +22,7 @@ Before you can start migrating your O11 apps and data to ODC, you must connect t
 
 * You must have the **O11 Migrations** > **Manage migrations** role.
 
-* [Migration Assessment Tool version 1.3.1 has been set up in O11](../setup-assessement-tool.md).
+* [Migration Assessment Tool has been set up in O11](../setup-assessement-tool.md).
 
 ## Connect to Migration Assessment Tool
 

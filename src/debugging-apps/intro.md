@@ -122,3 +122,7 @@ Alternatively, manual distribution of users across front-ends or using DNS load 
 Proxy scenarios are supported in self-managed environments. However, there is no option to add Trusted proxy addresses in OutSystems Cloud installations.
 
 </div>
+
+## Debugging with redirect rules
+
+When debugging an app that has a redirect rule (e.g., `oldurl/module -> newurl/module`), always connect Service Studio to the **new URL** (`newurl`). Attempting to connect to the old URL may result in debugging issues.

@@ -10,7 +10,7 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:5
 
 # LifeTime API v2
 
-The Lifetime API allows you to manage applications, modules, environments, deployments, users, teams, and roles of your OutSystems infrastructure.
+The LifeTime API allows you to manage applications, modules, environments, deployments, users, teams, and roles of your OutSystems infrastructure.
 
 ## Version: v2
 
@@ -629,11 +629,34 @@ Returns information about the running versions of all applications in a given en
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Applications list for the given environment successfully retrieved. | [ [Application](#application) ] |
+| 200 | Applications list for the given environment successfully retrieved. | [Application](#application) |
 | 204 | No applications found in environment with key `<EnvironmentKey>`. |  |
 | 400 | Failed to retrieve applications published in environment because IncludeModules and IncludeEnvStatus parameters were incorrect, or Invalid request when getting running applications for environment with key `<EnvironmentKey>`. | [Exception](#exception) |
 | 403 | Failed to retrieve the running applications for environment with key `<EnvironmentKey>` because user has insufficient permissions. | [Exception](#exception) |
 | 404 | Failed to retrieve running applications for environment with key `<EnvironmentKey>` because it was not found. | [Exception](#exception) |
+
+#### POST { #post-environments-environmentkey-applications }
+
+##### Description:
+
+Creates a new application.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ---- |
+| EnvironmentKey | path | The key of the environment to create the application. | Yes | string |
+| ApplicationCreate | body | A structure holding the name, description and other attributes of the new application. | Yes | [ApplicationCreate](#applicationcreate) |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 201 | The key of the newly created application. | [ApplicationKey](#ApplicationKey) |
+| 400 | Failed to create the application in the environment with key `<EnvironmentKey>` because there are invalid parameters in the request. | [Exception](#exception) |
+| 403 | Failed to create the applicaton in the environment with key `<EnvironmentKey>` because the user has insufficient permissions. | [Exception](#exception) |
+| 404 | Failed to create a new application in the environment with key `<EnvironmentKey>` because it was not found. | [Exception](#exception) |
+| 500 | Failed to create the application in the environment with key `<EnvironmentKey>` because of an internal error. |  [Exception](#exception) |
 
 ### /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/
 
@@ -1245,6 +1268,30 @@ Creates a deployment of a binary to a target environment. This deployment won't 
 | 403 | Invalid user permissions. | [Exception](#exception) |
 | 404 | Target environment not found. | [Exception](#exception) |
 | 500 | Failed to create deployment to environment `<EnvironmentKey>`. | [Exception](#exception) |
+
+### /environments/&#123;EnvironmentKey&#125;/maintenancemode
+
+#### PUT { #put-environments-environmentkey-maintenancemode}
+##### Description:
+
+Sets the maintenance mode (true or false) of a given environment.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ---- |
+| EnvironmentKey | path | Key of the environment | Yes | string |
+| MaintenanceModeSetting | body | IsMaintenanceModeEnabled: value to the maintenance mode of an Environment.\n True: Changes the maintenance mode of the environment to enabled.\n False: Changes the maintenance mode of the to disabled.\n\nReason: The reason why the environment maintenance mode is being set to enabled or disabled. | Yes | [MaintenanceModeSetting](#MaintenanceModeSetting) |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | Maintenance mode status updated successfuly. | string |
+| 400 | Failed to update the maintenance mode status due to a bad request. | [Exception](#exception) |
+| 403 | User doesn't have permissions. | [Exception](#exception) |
+| 404 | Environment not found. | [Exception](#exception) |
+| 500 | Internal error raised. | [Exception](#exception) |
 
 ### /environments/dbconnection/permissionlevels/
 
@@ -2637,11 +2684,6 @@ Template of an environment.
 | ---- | ---- | ----------- | -------- |
 | ApplicationVersionKey | string | The key of the newly created application version. | Yes |
 
-#### TextRecord2
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| ApplicationKey | string |  | No |
 
 #### TextTextRecord
 
@@ -2715,11 +2757,11 @@ A structure holding the name, description and other attributes of the new applic
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| TemplateKey | string |  | Yes |
-| TeamKey | string |  | Yes |
-| Name | string |  | Yes |
-| Description | string |  | No |
-| Color | string |  | Yes |
+| TemplateKey | string | Key of the template used to bootstrap the application. The template needs to be published in the environment where the application is being created. The list of possible values is obtainable by making a request to GET /environments/&#123;EnvironmentKey&#125;/templates/. | Yes |
+| TeamKey | string | Key of the team to which the application belongs. | Yes |
+| Name | string | The name of the application. Must be unique. | Yes |
+| Description | string | A brief description of the application and its purpose. | No |
+| Color | string | The primary color of the application used for the theme. Must be in hexadecimal format. | Yes |
 
 #### Password
 
@@ -2747,9 +2789,16 @@ A structure holding the solution name, the application keys and a boolean to inc
 | ApplicationKeys | [string] | List of application keys. | Yes |
 | IncludeReferences | boolean | True to include references. | No |
 
+#### ApplicationKey
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| ApplicationKey | string | The key of the application | |
+
+
 #### ApplicationKeys
 
-Keys for the applications.
+A list of ApplicationKey.
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -2812,3 +2861,12 @@ The mapping to database connections for all the logical databases of an extensio
 | ---- | ---- | ----------- | -------- |
 | ExtensionKey | string | Extension unique identifier. | No |
 | DBMapping | [ [ExtensionDBMapping](#extensiondbmapping) ] |  | No |
+
+#### MaintenanceModeSetting { #MaintenanceModeSetting}
+
+Indicates whether or not an environment is in maintenance mode.
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| IsMaintenanceModeEnabled | boolean | Indicates whether or not an environment is in maintenance mode. | Yes |
+| Reason | string | The reason why the environment maintenance mode is being set to enabled or disabled. | Yes |

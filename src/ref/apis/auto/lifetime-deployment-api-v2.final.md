@@ -1286,7 +1286,7 @@ Sets the maintenance mode (true or false) of a given environment.
 | Name | Located in | Description | Required | Schema |
 | ---- | ---------- | ----------- | -------- | ---- |
 | EnvironmentKey | path | Key of the environment | Yes | string |
-| MaintenanceModeSetting | body | IsMaintenanceModeEnabled: value to the maintenance mode of an Environment.\n True: Changes the maintenance mode of the environment to enabled.\n False: Changes the maintenance mode of the to disabled.\n\nReason: The reason why the environment maintenance mode is being set to enabled or disabled. | Yes | [MaintenanceModeSetting](#MaintenanceModeSetting) |
+| MaintenanceModeSetting | body | `IsMaintenanceModeEnabled`: value to the maintenance mode of an environment. <br/> `True`: Changes the maintenance mode of the environment to enabled. <br/> `False`: Changes the maintenance mode of the to disabled.<br/>  <br/>  `Reason`: The reason why the environment maintenance mode is being set to enabled or disabled. | Yes | [MaintenanceModeSetting](#MaintenanceModeSetting) |
 
 ##### Responses
 
@@ -2128,9 +2128,9 @@ A deployment conflict.
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | Deployment | [Deployment_v2](#deployment_v2) |  | No |
-[ApplicationInBinary](#applicationinbinary-applicationinbinary)
+| ApplicationsToDeploy | [ApplicationInBinary](#applicationinbinary-applicationinbinary) | | No |
 | ApplicationsToRedeploy | string |  | No |
-[ApplicationConflict](#applicationconflict-applicationconflict)
+| ApplicationConflicts | [ApplicationConflict](#applicationconflict-applicationconflict) | | No |
 | ModulesToDelete | [ModuleToDelete](#moduletodelete) |  | No |
 
 #### ApplicationInBinary { #applicationinbinary }
@@ -2529,7 +2529,7 @@ Definition of a team
 | key | string |  | No |
 | name | string |  | No |
 | description | string |  | No |
-[UserRole](#userrole-userrole)
+| users | [UserRole](#userrole-userrole) | | No |
 | applications | [ApplicationShortInfo](#applicationshortinfo) |  | No |
 
 #### CSPDirectives

@@ -2128,9 +2128,9 @@ A deployment conflict.
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | Deployment | [Deployment_v2](#deployment_v2) |  | No |
-| ApplicationsToDeploy | [ApplicationInBinary](#applicationinbinary-applicationinbinary) | | No |
+| ApplicationsToDeploy | [ApplicationInBinary](#applicationinbinary) | | No |
 | ApplicationsToRedeploy | string |  | No |
-| ApplicationConflicts | [ApplicationConflict](#applicationconflict-applicationconflict) | | No |
+| ApplicationConflicts | [ApplicationConflict](#applicationconflict) | | No |
 | ModulesToDelete | [ModuleToDelete](#moduletodelete) |  | No |
 
 #### ApplicationInBinary { #applicationinbinary }
@@ -2529,7 +2529,7 @@ Definition of a team
 | key | string |  | No |
 | name | string |  | No |
 | description | string |  | No |
-| users | [UserRole](#userrole-userrole) | | No |
+| users | [UserRole](#userrole) | | No |
 | applications | [ApplicationShortInfo](#applicationshortinfo) |  | No |
 
 #### CSPDirectives
@@ -2867,7 +2867,7 @@ The mapping to database connections for all the logical databases of an extensio
 | ExtensionKey | string | Extension unique identifier. | No |
 | DBMapping | [ExtensionDBMapping](#extensiondbmapping) |  | No |
 
-#### MaintenanceModeSetting { #MaintenanceModeSetting }
+#### MaintenanceModeSetting
 
 Indicates whether or not an environment is in maintenance mode.
 

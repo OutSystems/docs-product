@@ -77,8 +77,9 @@ Scheme
 | [POST /environments/](#post-environments) | Registers an environment in LifeTime. This endpoint is available as of LifeTime version 11.11.0. |
 | [GET /environments/&#123;EnvironmentKey&#125;/](#get-environments-environmentkey) | Returns the details of a given environment. |
 | [DELETE /environments/&#123;EnvironmentKey&#125;/](#delete-environments-environmentkey) | Unregisters an environment from LifeTime. This endpoint is available as of LifeTime version 11.11.0. |
+| [PUT /environments/&#123;EnvironmentKey&#125;/maintenancemode](#put-environments-environmentkey-maintenancemode) | Sets the [maintenance mode](../../../manage-platform-app-lifecycle/maintenance-mode.md) (true or false) of a given environment. |
 | [GET /environments/&#123;EnvironmentKey&#125;/applications/](#get-environments-environmentkey-applications) | Returns information about the running versions of all applications in a given environment. |
-| [POST /environments/&#123;EnvironmentKey&#125;/applications/](#post-applications) | Creates a new application in the environment. This endpoint is available as of LifeTime version 11.5.0. |
+| [POST /environments/&#123;EnvironmentKey&#125;/applications/](#post-environments-environmentkey-applications) | Creates a new application in the environment. This endpoint is available as of LifeTime version 11.5.0. |
 | [GET /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/](#get-environments-environmentkey-applications) | Returns information about the running version of the specified application in a given environment. |
 | [GET /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/content/](#get-environments-environmentkey-applications-applicationkey-content) | Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes. |
 | [POST /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/sourcecodeaccess/](#post-environments-environmentkey-applications-applicationkey-sourcecodeaccess) | Request the creation of the source code package of the application to be downloaded. This endpoint requires LifeTime version 11.21.1 and Platform Server 11.27.0, or higher. |
@@ -366,7 +367,7 @@ Returns a list of deployments ordered by creation date, from newest to oldest.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Deployments list successfully retrieved. | [ [Deployment_v2](#deployment_v2) ] |
+| 200 | Deployments list successfully retrieved. | [Deployment_v2](#deployment_v2) |
 | 204 | There are no deployments created between `<MinDate>` and `<MaxDate>` for environment key `<TargetEnvironmentKey>`. |  |
 | 400 | Invalid request for list of deployments created between `<MinDate>` and `<MaxDate>`for environment key `<TargetEnvironmentKey>`. | [Exception](#exception) |
 | 403 | User doesn't have access to any environment. | [Exception](#exception) |
@@ -660,7 +661,7 @@ Creates a new application.
 
 ### /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/
 
-#### GET { #get-environments-environmentkey-applications-applicationkey}
+#### GET { #get-environments-environmentkey-applications-applicationkey }
 ##### Description:
 
 Returns information about the running version of the specified application in a given environment.
@@ -712,7 +713,7 @@ Returns a link where the binary file for a given application can be downloaded. 
 
 ### /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/sourcecodeaccess/
 
-#### POST { #post-environments-environmentkey-applications-applicationkey-sourcecodeaccess}
+#### POST { #post-environments-environmentkey-applications-applicationkey-sourcecodeaccess }
 ##### Description:
 
 Request the creation of the source code package of the application to be downloaded. This endpoint requires LifeTime version 11.21.1 and Platform Server 11.27.0, or higher.
@@ -737,6 +738,7 @@ Request the creation of the source code package of the application to be downloa
 ### /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/sourcecodeaccess/&#123;PackageKey&#125;/download/
 
 #### GET { #get-environments-environmentkey-applications-applicationkey-sourcecodeaccess-packagekey-download }
+
 ##### Description:
 
 Returns a link where the source code package can be downloaded. The link will expire in 60 minutes. This endpoint requires LifeTime version 11.21.1 and Platform Server 11.27.0, or higher.
@@ -762,6 +764,7 @@ Returns a link where the source code package can be downloaded. The link will ex
 ### /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/sourcecodeaccess/&#123;PackageKey&#125;/status/
 
 #### GET { #get-environments-environmentkey-applications-applicationkey-sourcecodeaccess-packagekey-status }
+
 ##### Description:
 
 Returns the details of a given source code packaging execution, including the status and messages. This endpoint requires LifeTime version 11.21.1 and Platform Server 11.27.0, or higher.
@@ -787,6 +790,7 @@ Returns the details of a given source code packaging execution, including the st
 ### /environments/&#123;EnvironmentKey&#125;/applications/&#123;ApplicationKey&#125;/versions/
 
 #### POST { #post-environments-environmentkey-applications-applicationkey-versions }
+
 ##### Description:
 
 Creates a new version of the application based on the current running application.
@@ -812,6 +816,7 @@ Creates a new version of the application based on the current running applicatio
 ### /environments/&#123;EnvironmentKey&#125;/modules/&#123;ModuleKey&#125;/sourcecodeaccess/
 
 #### POST { #post-environments-environmentkey-modules-modulekey-sourcecodeaccess }
+
 ##### Description:
 
 Request the creation of the source code package of the module to be downloaded.
@@ -860,7 +865,7 @@ Returns a link where the module&#39;s source code package can be downloaded. The
 
 ### /environments/&#123;EnvironmentKey&#125;/modules/&#123;ModuleKey&#125;/sourcecodeaccess/&#123;PackageKey&#125;/status/
 
-#### GET { #get-environments-environmentkey-modules-modulekey-sourcecodeaccess-packagekey-status}
+#### GET { #get-environments-environmentkey-modules-modulekey-sourcecodeaccess-packagekey-status }
 ##### Description:
 
 Returns the details of a given module&#39;s source code packaging execution, including the status and messages.
@@ -900,7 +905,7 @@ Returns information about the deployment zones available in a given environment.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Deployment zone information successfully retrieved. | [ [DeploymentZone_v2](#deploymentzone_v2) ] |
+| 200 | Deployment zone information successfully retrieved. | [DeploymentZone_v2](#deploymentzone_v2) |
 | 400 | Failed to access the deployment zones of environment. | [Exception](#exception) |
 | 403 | Failed to retrieve the deployment zones of environment `<EnvironmentName>` (key: `<EnvironmentKey>`). Error: The user does not have the required permissions, or Feature not Licensed. | [Exception](#exception) |
 | 404 | Failed to retrieve the deployment zones of environment with key: `<EnvironmentKey>`. | [Exception](#exception) |
@@ -923,7 +928,7 @@ Returns information about the templates available in a given environment.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Templates list successfully retrieved. | [ [Template](#template) ] |
+| 200 | Templates list successfully retrieved. | [Template](#template) |
 | 400 | Environment doesn't support list templates. | [Exception](#exception) |
 | 403 | User doesn't have permissions. | [Exception](#exception) |
 | 404 | Environment not found. | [Exception](#exception) |
@@ -976,7 +981,7 @@ Sets the Content Security Policies for a given environment.
 
 ### /environments/&#123;EnvironmentKey&#125;/dbconnections/
 
-#### GET { #get-environments-environmentkey-dbconnections}
+#### GET { #get-environments-environmentkey-dbconnections }
 ##### Description:
 
 Returns all the DB connections of a given environment.
@@ -991,7 +996,7 @@ Returns all the DB connections of a given environment.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | The list of DB conenctions for an environment. | [ [DBConnection_Response](#dbconnection_response) ] |
+| 200 | The list of DB conenctions for an environment. | [DBConnection_Response](#dbconnection_response) |
 | 400 | Failed to retrieve DB Connections due to missing parameters. | [Exception](#exception) |
 | 404 | Failed to retrieve DB Connections due to invalid environment key. | [Exception](#exception) |
 | 500 | Failed to retrieve DB Connections due to internal error. | [Exception](#exception) |
@@ -1062,7 +1067,7 @@ Updates a DB connection for an environment.
 | 404 | Failed to update DBConnection due to invalid environment key. | [Exception](#exception) |
 | 500 | Failed to update DBConnection due to internal error. | [Exception](#exception) |
 
-#### DELETE { #delete-environments-environmentkey-dbconnections-dbconnectionname}
+#### DELETE { #delete-environments-environmentkey-dbconnections-dbconnectionname }
 ##### Description:
 
 Deletes a DB connection for an environment.
@@ -1085,7 +1090,7 @@ Deletes a DB connection for an environment.
 
 ### /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/rolepermissionlevel/
 
-#### PUT { #put-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel}
+#### PUT { #put-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel }
 ##### Description:
 
 Sets the DB connection permission levels for a Role in a given environment.
@@ -1096,7 +1101,7 @@ Sets the DB connection permission levels for a Role in a given environment.
 | ---- | ---------- | ----------- | -------- | ---- |
 | EnvironmentKey | path | The key of the environment. | Yes | string |
 | DbConnectionName | path | The name of the DB connection. | Yes | string |
-| RolePermissionLevel | body | The value of the permission level: Full Control, No Access, Read-Only | Yes | [dbconnection_rolepermissionlevel](#dBConnection_RolePermissionLevel) |
+| RolePermissionLevel | body | The value of the permission level: Full Control, No Access, Read-Only | Yes | [dbconnection_rolepermissionlevel](#dbconnection_rolepermissionlevel) |
 
 ##### Responses
 
@@ -1107,7 +1112,7 @@ Sets the DB connection permission levels for a Role in a given environment.
 | 404 | Failed to update the permission level due to invalid environment key. | [Exception](#exception) |
 | 500 | Failed to update the permission level due to internal error. | [Exception](#exception) |
 
-#### DELETE { #delete-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel}
+#### DELETE { #delete-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel }
 ##### Description:
 
 Revokes the DB connection permissions for a Role in an environment.
@@ -1131,7 +1136,7 @@ Revokes the DB connection permissions for a Role in an environment.
 
 ### /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/rolepermissionlevel/&#123;Role&#125;/
 
-#### GET { #get-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel-Role}
+#### GET { #get-environments-environmentkey-dbconnections-dbconnectionname-rolepermissionlevel-role }
 ##### Description:
 
 Returns the DB connection permission level of a Role for a given environment.
@@ -1166,7 +1171,7 @@ Sets the DB connection permission levels for a User in a given environment.
 | ---- | ---------- | ----------- | -------- | ---- |
 | EnvironmentKey | path | The key of the environment. | Yes | string |
 | DbConnectionName | path | The name of the DB connection. | Yes | string |
-| UserPermissionLevel | body | The value of the permission level: Full Control, No Access, Read-Only | Yes | [dbconnection_userpermissionlevel](#dBConnection_UserPermissionLevel) |
+| UserPermissionLevel | body | The value of the permission level: Full Control, No Access, Read-Only | Yes | [dbconnection_userpermissionlevel](#dbconnection_userpermissionlevel) |
 
 ##### Responses
 
@@ -1199,7 +1204,7 @@ Revokes the DB connection permissions for a User in an environment.
 | 404 | Failed to revoke the permission level due to invalid environment key. | [Exception](#exception) |
 | 500 | Failed to revoke the permission level due to internal error. | [Exception](#exception) |
 
-### /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/userpermissionlevel/&#123;Username&#125;/
+### /environments/&#123;EnvironmentKey&#125;/dbconnections/&#123;DbConnectionName&#125;/userpermissionlevel/&#123;Username&#125;/ { #get-environments-environmentkey-dbconnections-dbconnectionname-userpermissionlevel-username }
 
 #### GET { get-environments-environmentkey-dbconnections-dbconnectionname-userpermissionlevel-username }
 ##### Description:
@@ -1240,14 +1245,14 @@ Returns the list of providers for all the DB connections in a given environment.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | The list of providers for the environment&#39;s DB connections. | [ [DbProvider](#dbprovider) ] |
+| 200 | The list of providers for the environment&#39;s DB connections. | [DbProvider](#dbprovider) |
 | 400 | Failed to retrieve the providers due to missing parameters. | [Exception](#exception) |
 | 404 | Failed to retrieve the providers due to invalid environment key. | [Exception](#exception) |
 | 500 | Failed to retrieve the providers due to internal error. | [Exception](#exception) |
 
 ### /environments/&#123;EnvironmentKey&#125;/deployment/
 
-#### POST { #post-environments-environmentkey-deployment}
+#### POST { #post-environments-environmentkey-deployment }
 ##### Description:
 
 Creates a deployment of a binary to a target environment. This deployment won't perform impact analysis. The modules in the binary to deploy must not be IPP protected or the deployment in the target will fail for the IPP protected modules. This endpoint requires LifeTime version 11.22.0 or higher.
@@ -1271,7 +1276,7 @@ Creates a deployment of a binary to a target environment. This deployment won't 
 
 ### /environments/&#123;EnvironmentKey&#125;/maintenancemode
 
-#### PUT { #put-environments-environmentkey-maintenancemode}
+#### PUT { #put-environments-environmentkey-maintenancemode }
 ##### Description:
 
 Sets the maintenance mode (true or false) of a given environment.
@@ -1304,12 +1309,12 @@ Returns the permission levels for the DB connections.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | The list of permission leels for the DB connection. | [ [DbConnectionPermissionLevelRecord](#dbconnectionpermissionlevelrecord) ] |
+| 200 | The list of permission leels for the DB connection. | [DbConnectionPermissionLevelRecord](#dbconnectionpermissionlevelrecord) |
 | 500 | Failed to retrieve permission levels due to internal error. | [Exception](#exception) |
 
 ### /environments/&#123;EnvironmentKey&#125;/testdbconnection/
 
-#### POST { #post-environments-environmentkey-testdbconnection}
+#### POST { #post-environments-environmentkey-testdbconnection }
 ##### Description:
 
 Tests the DB connection.
@@ -1347,7 +1352,7 @@ Gets the IP Addresses blocked login attempts.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | A list of login attempts for an IP address. | [ [PlatformLoginAttempt](#platformloginattempt) ] |
+| 200 | A list of login attempts for an IP address. | [PlatformLoginAttempt](#platformloginattempt) |
 | 403 | Failed to retrieve login attempts. | [Exception](#exception) |
 | 404 | Failed to retrieve login attempts due to invalid environment key. | [Exception](#exception) |
 | 500 | Failed to retrieve login attempts due to internal error. | [Exception](#exception) |
@@ -1379,7 +1384,7 @@ Unblocks a given IP Address
 
 ### /environments/&#123;EnvironmentKey&#125;/solution
 
-#### POST { #post-environments-environmentkey-solution}
+#### POST { #post-environments-environmentkey-solution }
 ##### Description:
 
 Creates a temporary solution
@@ -1401,7 +1406,7 @@ Creates a temporary solution
 | 405 | The requested resource does not exist | [Exception](#exception) |
 | 500 | Failed to create a solution. | [Exception](#exception) |
 
-### /environments/&#123;EnvironmentKey&#125;/solution/&#123;SolutionKey}
+### /environments/&#123;EnvironmentKey&#125;/solution/&#123;SolutionKey
 
 #### GET { #get-environments-environmentkey-solution-solutionkey }
 ##### Description:
@@ -1419,13 +1424,13 @@ Download the given solution
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Solution downloaded with success. | [ [DownloadSolutionLink](#downloadsolutionlink) ] |
+| 200 | Solution downloaded with success. | [DownloadSolutionLink](#downloadsolutionlink) |
 | 400 | Invalid request due to invalid input paramenters. | [Exception](#exception) |
 | 404 | No environment with key was found. | [Exception](#exception) |
 | 405 | The requested resource does not exist | [Exception](#exception) |
 | 500 | Failed to download solution key | [Exception](#exception) |
 
-### /environments/&#123;EnvironmentKey&#125;/solutionstatus/&#123;SolutionKey}
+### /environments/&#123;EnvironmentKey&#125;/solutionstatus/&#123;SolutionKey
 
 #### GET { #get-environments-environmentkey-solutionstatus-solutionkey }
 ##### Description:
@@ -1443,7 +1448,7 @@ Returns the status of the solution being created.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Solution status returned with success. | [ [SolutionStatus](#solutionstatus) ] |
+| 200 | Solution status returned with success. | [SolutionStatus](#solutionstatus) |
 | 400 | Invalid request due to invalid input paramenters. | [Exception](#exception) |
 | 404 | No environment with key was found. | [Exception](#exception) |
 | 405 | The requested resource does not exist | [Exception](#exception) |
@@ -1466,7 +1471,7 @@ Returns a list of modules that exist in the infrastructure.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Modules list successfully retrieved. | [ [Module](#module) ] |
+| 200 | Modules list successfully retrieved. | [Module](#module) |
 | 204 | No modules found in the infrastructure. |  |
 | 500 | Failed to list modules. | [Exception](#exception) |
 
@@ -1511,7 +1516,7 @@ Returns a list of versions of a given module.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | List of module versions successfully retrieved. | [ [ModuleVersion_v2](#moduleversion_v2) ] |
+| 200 | List of module versions successfully retrieved. | [ModuleVersion_v2](#moduleversion_v2) |
 | 400 | Invalid request due to invalid max versions to return (less than 0). | [Exception](#exception) |
 | 403 | Failed to retrieve the module with key: `<ModuleKey>`. The user does not have the required permissions. | [Exception](#exception) |
 | 404 | Failed to retrieve the module with key: `<ModuleKey>`. | [Exception](#exception) |
@@ -1519,7 +1524,7 @@ Returns a list of versions of a given module.
 
 ### /modules/&#123;ModuleKey&#125;/versions/&#123;ModuleVersionKey&#125;/
 
-#### GET { #modules-modulekey-versions-moduleversionkey }
+#### GET { #get-modules-modulekey-versions-moduleversionkey }
 ##### Description:
 
 Returns the details of a given module version.
@@ -1583,7 +1588,7 @@ Creates a role with the specified permissions.
 
 ### /roles/&#123;RoleKey&#125;/
 
-#### GET { #get-roles-RoleKey }
+#### GET { #get-roles-rolekey }
 ##### Description:
 
 Returns the details of a given role.
@@ -1681,7 +1686,7 @@ Lists all the teams.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | List of teams successfully retrieved. | [ [Team](#team) ] |
+| 200 | List of teams successfully retrieved. | [Team](#team) |
 | 204 | No teams defined |  |
 | 403 | User has no permissions to retrieve teams list. | [Exception](#exception) |
 | 500 | Internal error raised. | [Exception](#exception) |
@@ -1887,7 +1892,7 @@ Lists all the users. By default shows only active users.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | List of users successfully retrieved. | [ [User](#user) ] |
+| 200 | List of users successfully retrieved. | [User](#user) |
 | 204 | No Users defined |  |
 | 403 | User has no permissions to retrieve users list. | [Exception](#exception) |
 | 500 | Internal error raised. | [Exception](#exception) |
@@ -1976,7 +1981,7 @@ Gets the users blocked login attempts.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Blocked login attempts retrieved successfully. | [ [PlatformLoginAttempt](#platformloginattempt) ] |
+| 200 | Blocked login attempts retrieved successfully. | [PlatformLoginAttempt](#platformloginattempt) |
 | 403 | Failed to delete login attempts. | [Exception](#exception) |
 | 404 | Failed to delete login attempts due to invalid environment key. | [Exception](#exception) |
 | 500 | Failed to delete login attempts due to internal error. | [Exception](#exception) |
@@ -2056,7 +2061,7 @@ Grants a given role to the given application to the user.
 
 ### /users/&#123;UserKey&#125;/applications/&#123;ApplicationKey&#125;/
 
-#### DELETE { #delete-users-userkey-applications-applicationkey}
+#### DELETE { #delete-users-userkey-applications-applicationkey }
 ##### Description:
 
 Revokes user's role in application permission.
@@ -2096,7 +2101,7 @@ An application with its details and its status in the environments were it is ru
 | IconURL | string | The URL for the application icon. | No |
 | DetailsURL | string | The URL to access the application details in LifeTime. | No |
 | IsSystem | boolean | Indicates if the application is a built-in component of the AgilePlatform (e.g. ServiceCenter, LifeTime, ...). | No |
-| AppStatusInEnvs | [ [AppStatusInEnv_v2](#appstatusinenv_v2) ] | Information about the status of the application in each environment it is running. | No |
+| AppStatusInEnvs | [AppStatusInEnv_v2](#appstatusinenv_v2) | Information about the status of the application in each environment it is running. | No |
 
 #### ApplicationShortInfo
 
@@ -2107,7 +2112,7 @@ A simplification of application structure.
 | Key | string | Application unique identifier. | Yes |
 | Name | string | Name of the application. | No |
 
-#### ApplicationConflict
+#### ApplicationConflict { #applicationconflict}
 
 A deployment conflict.
 
@@ -2123,19 +2128,19 @@ A deployment conflict.
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | Deployment | [Deployment_v2](#deployment_v2) |  | No |
-| ApplicationsToDeploy | [ [ApplicationInBinary](#applicationInBinary) ] |  | No |
-| ApplicationsToRedeploy | [ string ] |  | No |
-| ApplicationConflicts | [ [ApplicationConflict](#applicationConflict) ] |  | No |
-| ModulesToDelete | [ [ModuleToDelete](#moduletodelete) ] |  | No |
+[ApplicationInBinary](#applicationinbinary-applicationinbinary)
+| ApplicationsToRedeploy | string |  | No |
+[ApplicationConflict](#applicationconflict-applicationconflict)
+| ModulesToDelete | [ModuleToDelete](#moduletodelete) |  | No |
 
-#### ApplicationInBinary
+#### ApplicationInBinary { #applicationinbinary }
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | ApplicationKey | string |  | No |
 | ApplicationName | string |  | No |
 | IsNew | boolean |  | No |
-| ModulesInBinary | [ [ModulesInBinary](#modulesinbinary) ] |  | No |
+| ModulesInBinary | [ModulesInBinary](#modulesinbinary) |  | No |
 
 #### ApplicationOperation
 
@@ -2170,10 +2175,10 @@ Information about a specific version of an application and the versions of its m
 | ChangeLog | string | Change Log associated to this Application Version. | No |
 | CreatedOn | dateTime | When was the Application Version created. | No |
 | InUse | boolean | Defines if the Application Version is being used. | No |
-| MobileVersions | [ [MobileVersion](#mobileversion) ] | List of mobile versions. | No |
+| MobileVersions | [MobileVersion](#mobileversion) | List of mobile versions. | No |
 | PrimaryColor | string | The primary color of the application interface. | No |
 | NativeHash | string | The native has relative to the mobile platform. | No |
-| ModuleVersions | [ [ModuleVersion_v2](#moduleversion_v2) ] | List of module versions. | No |
+| ModuleVersions | [ModuleVersion_v2](#moduleversion_v2) | List of module versions. | No |
 
 #### ApplicationVersionCreate
 
@@ -2183,8 +2188,8 @@ A structure holding the new version name for the application and for its native 
 | ---- | ---- | ----------- | -------- |
 | ChangeLog | string | Change log of the version to be created. | No |
 | Version | string | Version of the application. | No |
-| MobileVersions | [ [MobileVersion](#mobileversion) ] | List of mobile versions. | No |
-| ModuleVersionKeys | [ string ] | **DEPRECATED** List of module version keys to validate if the current state of the application is still the expected. This parameter was deprecated on LifeTime Feb 2019 Release, there is no need to pass the module version keys. If the module version keys are passed, they will still be validated. | No |
+| MobileVersions | [MobileVersion](#mobileversion) | List of mobile versions. | No |
+| ModuleVersionKeys | string | **DEPRECATED** List of module version keys to validate if the current state of the application is still the expected. This parameter was deprecated on LifeTime Feb 2019 Release, there is no need to pass the module version keys. If the module version keys are passed, they will still be validated. | No |
 
 #### ApplicationVersionKeyDeploymentZoneKeyRecordListTextTextTextRecord
 
@@ -2193,7 +2198,7 @@ A structure holding the new version name for the application and for its native 
 | Notes | string |  | Yes |
 | SourceEnvironmentKey | string |  | Yes |
 | TargetEnvironmentKey | string |  | Yes |
-| ApplicationOperations | [ [TextTextRecord](#texttextrecord) ] |  | Yes |
+| ApplicationOperations | [TextTextRecord](#texttextrecord) |  | Yes |
 
 #### AppStatusInEnv_v2
 
@@ -2208,8 +2213,8 @@ Status of application in a given environment.
 | IsModifiedMessage | string | Indicates the application status. | No |
 | ConsistencyStatus | string | Indicates the application consistency status. | No |
 | ConsistencyStatusMessages | string | Messages regarding the consistency status of the application. | No |
-| MobileAppsStatus | [ [MobileAppStatusInEnv](#mobileappstatusinenv) ] | Status of mobile apps in environment. | No |
-| ModuleStatusInEnvs | [ [ModuleStatusInEnv](#modulestatusinenv) ] | Status of modules in environment. | No |
+| MobileAppsStatus | [MobileAppStatusInEnv](#mobileappstatusinenv) | Status of mobile apps in environment. | No |
+| ModuleStatusInEnvs | [ModuleStatusInEnv](#modulestatusinenv) | Status of modules in environment. | No |
 | DeploymentZoneKey | string | Deployment Zone unique identifier | No |
 
 #### Deployment_v2
@@ -2235,7 +2240,7 @@ Deployment information with the operations executed.
 | AbortedOn | dateTime | The date and time when the deployment was aborted. | No |
 | AbortedBy | string | Name of the user who aborted the deployment. | No |
 | AbortedByUsername | string | Username of the user who aborted the deployment. | No |
-| ApplicationOperations | [ [ApplicationOperation_v2](#applicationoperation_v2) ] | List of Application Operations included in the deployment. | No |
+| ApplicationOperations | [ApplicationOperation_v2](#applicationoperation_v2) | List of Application Operations included in the deployment. | No |
 
 #### DeploymentData_v2
 
@@ -2259,7 +2264,7 @@ Deployment information with the operations executed.
 | AbortedOn | dateTime | The date and time when the deployment was aborted. | No |
 | AbortedBy | string | Name of the user who aborted the deployment. | No |
 | AbortedByUsername | string | Username of the user who aborted the deployment. | No |
-| ApplicationOperations | [ [TextTextRecord](#texttextrecord) ] | List of Application Operations included in the deployment. | No |
+| ApplicationOperations | [TextTextRecord](#texttextrecord) | List of Application Operations included in the deployment. | No |
 
 #### DeploymentMessage
 
@@ -2275,9 +2280,9 @@ Message from a deployment operation log.
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| DeploymentStatus | string | Type of deployment status: [aborted] Description: The staging was aborted. UI Representation: The staging is displayed as “Aborted”. [aborting] Description: The staging is in the process of being aborted. UI Representation: The staging is displayed as “Aborting”. [finished_successful] Description: The staging finished successfully. UI Representation: The staging is displayed as “Finished successfully”. [finished_with_errors] Description: The staging finished but encountered errors. UI Representation: The staging is displayed as “Finished with errors”. [finished_with_warnings] Description: The staging finished but encountered warnings. UI Representation: The staging is displayed as “Finished with warnings”. [force_finished] Description: The staging was forcefully finished. UI Representation: The staging is displayed as “Force finished”. [needs_user_intervention] Description: The staging requires user intervention to proceed. UI Representation: The staging is displayed as “Waiting configuration or confirmation”. [running] Description: The staging is currently running. UI Representation: The staging is displayed as “Running” or “Started”. [saved] Description: The staging has been saved but not yet started. UI Representation: The staging is displayed as “Saved”. The following UI statuses do not have a direct mapping from the API statuses but are part of the deployment plan: [Validated] Description: The staging has been validated and is ready for the next steps. [Review] Description: The staging is in review plan mode. [Prepared] Description:  The staging is prepared and ready to run. | Yes |
-| Info | string | When DeploymentStatus is needs_user_intervention, the following values can be returned: [business_process_impact] Description: Is requested to check the warning messages before continuing the deployment. [deployment_prepared] Description: Indicates that new application versions are ready for deployment when the two-step deployment is configured. [needs_configuration_or_confirmation]  Description: Is waiting for application settings in the plan or confirmation to continue. [deployment_suspended] Description: Deployment has been suspended. An error occurred in a step while deploying to the target environment. | Yes |
-| DeploymentLog | [ [DeploymentMessage](#deploymentmessage) ] |  | Yes |
+| DeploymentStatus | string | Type of deployment status: <br/> `[aborted]` Description: The staging was aborted. UI Representation: The staging is displayed as “Aborted”. <br/>  `[aborting]` Description: The staging is in the process of being aborted. UI Representation: The staging is displayed as “Aborting”. <br/>  `[finished_successful]` Description: The staging finished successfully. UI Representation: The staging is displayed as “Finished successfully”. <br/>  `[finished_with_errors]` Description: The staging finished but encountered errors. UI Representation: The staging is displayed as “Finished with errors”. <br/>  `[finished_with_warnings]` Description: The staging finished but encountered warnings. UI Representation: The staging is displayed as “Finished with warnings”. <br/>  `[force_finished]` Description: The staging was forcefully finished. UI Representation: The staging is displayed as “Force finished”. <br/> `[needs_user_intervention]` Description: The staging requires user intervention to proceed. UI Representation: The staging is displayed as “Waiting configuration or confirmation”. <br/>  `[running]` Description: The staging is currently running. UI Representation: The staging is displayed as “Running” or “Started”. <br/> `[saved]` Description: The staging has been saved but not yet started. UI Representation: The staging is displayed as “Saved”. The following UI statuses do not have a direct mapping from the API statuses but are part of the deployment plan: <br/> `[Validated]` Description: The staging has been validated and is ready for the next steps. <br/> `[Review]` Description: The staging is in review plan mode. <br/> `[Prepared]` Description:  The staging is prepared and ready to run. | Yes |
+| Info | string | When DeploymentStatus is needs_user_intervention, the following values can be returned: <br/> `[business_process_impact]` Description: Is requested to check the warning messages before continuing the deployment. <br/> `[deployment_prepared]` Description: Indicates that new application versions are ready for deployment when the two-step deployment is configured. <br/> `[needs_configuration_or_confirmation]`  Description: Is waiting for application settings in the plan or confirmation to continue. <br/> `[deployment_suspended]` Description: Deployment has been suspended. An error occurred in a step while deploying to the target environment. | Yes |
+| DeploymentLog | [DeploymentMessage](#deploymentmessage) |  | Yes |
 
 #### DeploymentTechnology_v2
 
@@ -2327,17 +2332,17 @@ An environment and its information.
 | ---- | ---- | ----------- | -------- |
 | Key | string | Unique identifier of the environment. | No |
 | Name | string | Name of the environment. | No |
-| OSVersion | string | Platform Server version. [X.X.X.X] | No |
+| OSVersion | string | Platform Server version. | No |
 | Order | integer | The order of the environment as registered in Lifetime. | No |
 | DetailsURL | string | The URL to access the environment details in LifeTime. | No |
 | HostName | string | Hostname of the environment as registered. | No |
 | UseHTTPS | boolean | Indicates if connections to the environment are made using HTTPS. | No |
 | EnvironmentType | string | Indicates the type of the environment. [Development | Test | Production] | No |
 | NumberOfFrontEnds | integer | Number of front-end servers in the environment. | No |
-| ApplicationServerType | string | Stack of the application server. [.NET | JAVA] | No |
-| ApplicationServer | string | Application server in use. [IIS | JBoss | WebLogic] | No |
-| DatabaseProvider | string | Type of database provider. [SqlServer | Oracle] | No |
-| IsCloudEnvironment | boolean | Indicates if the environment is running on a cloud service. | No |
+| ApplicationServerType | string | Stack of the application server. `.NET` or `JAVA` | No |
+| ApplicationServer | string | Application server in use. `IIS` or `JBoss` or `WebLogic` | No |
+| DatabaseProvider | string | Type of database provider. `SqlServer` or `Oracle` | No |
+| IsCloudEnvironment | boolean | Indicates if the environment is running on OutSystems Cloud. | No |
 
 #### EnvironmentRegistration
 
@@ -2352,7 +2357,7 @@ Environment information needed to registration process
 | LifeTimeAddress | string | Address that the environment will use to communicate with LifeTime | Yes |
 | EnvironmentPosition | integer | The staging position order of the environment in Lifetime | Yes |
 | OverridePreviousLifetime | boolean | If true, the environment registration will overrides the previous LifeTime of the environment (when the environment is already registered in another LifeTime) | No |
-| EnvironmentRolePermissions | [ [EnviromentRolePermissions](#enviromentrolepermissions) ] | List of roles and permissions | No |
+| EnvironmentRolePermissions | [EnviromentRolePermissions](#enviromentrolepermissions) | List of roles and permissions | No |
 
 #### EnvironmentPermission
 
@@ -2381,7 +2386,7 @@ List of imported users
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| Errors | [ string ] |  | No |
+| Errors | string |  | No |
 | StatusCode | integer | Status code raised with the error. | No |
 
 #### MobileAppStatusInEnv
@@ -2418,7 +2423,7 @@ Module information and the status in the environments where the modules are runn
 | Name | string | Name of the module. | No |
 | Description | string | Description of the module. | No |
 | Kind | string | Module type (eSpace or Extension). | No |
-| ModuleStatusInEnv | [ [ModuleStatusInEnv](#modulestatusinenv) ] | Status of the module in environments | No |
+| ModuleStatusInEnv | [ModuleStatusInEnv](#modulestatusinenv) | Status of the module in environments | No |
 
 #### ModulesInBinary
 
@@ -2513,7 +2518,7 @@ Full definition of a role.
 | name | string | Name of a role | No |
 | manageInfrastructure | boolean | In OutSystems Cloud, users with a role that has this attribute can manage IT users, roles, and teams. In self-managed infrastructures, it additionally includes permission to manage environments and their configurations. | No |
 | manageTeams | boolean | Allows to manage teams and roles. | No |
-| environmentPermissions | [ [EnvironmentPermission](#environmentpermission) ] | Definition of permission levels per environment. | No |
+| environmentPermissions | [EnvironmentPermission](#environmentpermission) | Definition of permission levels per environment. | No |
 
 #### Team
 
@@ -2524,8 +2529,8 @@ Definition of a team
 | key | string |  | No |
 | name | string |  | No |
 | description | string |  | No |
-| users | [ [UserRole](#userRole) ] |  | No |
-| applications | [ [ApplicationShortInfo](#applicationshortinfo) ] |  | No |
+[UserRole](#userrole-userrole)
+| applications | [ApplicationShortInfo](#applicationshortinfo) |  | No |
 
 #### CSPDirectives
 
@@ -2564,13 +2569,13 @@ Structure to hold environment CSP settings
 | ---- | ---- | ----------- | -------- |
 | Success | boolean |  | No |
 | EnvironmentKey | string |  | No |
-| ErrorDirectives | [ string ] |  | No |
+| ErrorDirectives | string |  | No |
 | ErrorMessage | string |  | No |
 | NeedsRecompilation | boolean |  | No |
-| AddedDataDirectives | [ string ] |  | No |
-| AddedSelfDirectives | [ string ] |  | No |
-| AddedInternalDirectives | [ string ] |  | No |
-| AddedGapDirectives | [ string ] |  | No |
+| AddedDataDirectives | string |  | No |
+| AddedSelfDirectives | string |  | No |
+| AddedInternalDirectives | string |  | No |
+| AddedGapDirectives | string |  | No |
 
 #### DBConnection_Request_POST
 
@@ -2597,7 +2602,7 @@ Body of the responde of the Get, List and Create methods for a DB Connection.
 | isAdvancedConfiguration | boolean | Boolean to define if it is an advance configuration for the DB connection. true when DB configuration parameters are set in the request. | No |
 | databaseConfiguration | string | The DB configuration values whens etting an advanced configuration. | No |
 
-#### DBConnection_RolePermissionLevel
+#### DBConnection_RolePermissionLevel { #dbconnection_rolepermissionlevel }
 
 Structure that holds the data to manipulate the permission level for DB connections for a role.
 
@@ -2606,7 +2611,7 @@ Structure that holds the data to manipulate the permission level for DB connecti
 | role | string | Role name. | No |
 | permissionLevel | integer | Identifier of the permission level. Permission levels: Full Control, No Access, Read-Only | No |
 
-#### DBConnection_UserPermissionLevel
+#### DBConnection_UserPermissionLevel { #dbconnection_userpermissionlevel }
 
 Structure that holds the data to manipulate the permission level for DB connections for a user.
 
@@ -2669,14 +2674,14 @@ Template of an environment.
 | Key | string | Template unique identifier. | No |
 | Name | string | Name of template. | No |
 | Description | string | Description of template. | No |
-| ApplicationKind | string | Type of the application [Web|Mobile|Service|Reactive]. | No |
+| ApplicationKind | string | Type of the application `Web` or `Mobile` or `Service` or `Reactive`. | No |
 
 #### TextEnvironmentRegistration_UsersListRecord
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | EnvironmentKey | string |  | No |
-| ImportedUsers | [ [EnvironmentRegistration_Users](#environmentregistration_users) ] |  | No |
+| ImportedUsers | [EnvironmentRegistration_Users](#environmentregistration_users) |  | No |
 
 #### TextRecord
 
@@ -2705,10 +2710,10 @@ Definition of a user. Also includes the teams to which the user belongs and the 
 | IsActive | boolean |  | No |
 | RoleKey | string |  | No |
 | RoleName | string | readonly | No |
-| ApplicationRoles | [ [ApplicationRole](#applicationrole) ] |  | No |
-| Teams | [ [TeamRole](#teamrole) ] |  | No |
+| ApplicationRoles | [ApplicationRole](#applicationrole) |  | No |
+| Teams | [TeamRole](#teamrole) |  | No |
 
-#### UserRole
+#### UserRole { #userrole }
 
 Pair User and Role information.
 
@@ -2777,7 +2782,7 @@ Definition of a password.
 | ---- | ---- | ----------- | -------- |
 | PackageKey | string |  | No |
 | Status | string |  | No |
-| Messages | [ [Platform_HEMessage](#platform_hemessage) ] |  | No |
+| Messages | [Platform_HEMessage](#platform_hemessage) |  | No |
 
 #### Solution_Request_POST
 
@@ -2786,10 +2791,10 @@ A structure holding the solution name, the application keys and a boolean to inc
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | SolutionName | string | Name for the solution to be created. | No |
-| ApplicationKeys | [string] | List of application keys. | Yes |
+| ApplicationKeys | string | List of application keys. | Yes |
 | IncludeReferences | boolean | True to include references. | No |
 
-#### ApplicationKey
+#### ApplicationKey { #ApplicationKey }
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -2860,9 +2865,9 @@ The mapping to database connections for all the logical databases of an extensio
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | ExtensionKey | string | Extension unique identifier. | No |
-| DBMapping | [ [ExtensionDBMapping](#extensiondbmapping) ] |  | No |
+| DBMapping | [ExtensionDBMapping](#extensiondbmapping) |  | No |
 
-#### MaintenanceModeSetting { #MaintenanceModeSetting}
+#### MaintenanceModeSetting { #MaintenanceModeSetting }
 
 Indicates whether or not an environment is in maintenance mode.
 

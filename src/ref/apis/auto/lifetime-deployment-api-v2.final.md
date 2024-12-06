@@ -563,7 +563,7 @@ Lists all the environments in the infrastructure.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | Environments list successfully retrieved. | [ [Environment](#environment) ] |
+| 200 | Environments list successfully retrieved. | [Environment](#environment) |
 | 204 | No environments found. |  |
 | 500 | Failed to list the environments. | [Exception](#exception) |
 

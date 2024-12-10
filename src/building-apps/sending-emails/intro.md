@@ -25,6 +25,7 @@ Create and send **Emails for Mobile and Reactive** along with **Attachments in M
 * You have configured the SMTP server. See [Configure OutSystems to Send Emails](../../manage-platform-app-lifecycle/configure-send-emails.md) for instructions.
 
 * You're using Platform Server 11.14.0 or later.
+* For the default sender email address or the actual from address, be sure to use your domain address (like example.com) or your email server domain name. OutSystems uses DMARC authentication, and adding *.outsystemsenteprise.com as the from field might cause email servers to flag your emails as spoofing.
 
 **Emails for Mobile and Reactive** along with **Attachments in Mobile and Reactive emails** are generally available in Platform Server 11.14.
 

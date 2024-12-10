@@ -11,7 +11,7 @@ figma:
 
 Preparing your apps for migration to OutSystems Developer Cloud (ODC) is essential to benefit the cloud-native architecture of ODC. ODC offers a modular, scalable environment that enhances app performance and resilience. Planning the migration early can ensure a smoother transition, minimize business disruption, and position your apps for long-term success in a modern, cloud-native infrastructure.
 
-The migration process consists of phases, including creating the ODC blueprint, mapping it from O11 apps, and preparing the O11 architecture. 
+The migration process consists of phases, including creating the ODC blueprint, mapping it from O11 apps, and preparing the O11 architecture.
 
 The ODC blueprint results from planning and focusing on your business goals and development team independence. It contains an overview of the future ODC architecture and the list of changes required for ODC. The blueprint evolves as you adapt your O11 apps for the migration and their mirroring functionalities in ODC. It captures all the necessary changes apps need during migration, especially once the code is in ODC. However, you do not need an ODC tenant in this preparatory phase.
 
@@ -19,13 +19,14 @@ Adapting the O11 apps means implementing best practices to prepare the apps for 
 
 This document is intended for architects, leads, and developers planning and preparing the existing O11 application architecture to enable efficient migration to ODC in the future. You will learn what you need to create an ODC blueprint to help you plan your development work. Since architecture adjustments may take some time, OutSystems recommends that development teams start incorporating them into their regular sprint activities as technical debt reduction.
 
+![Diagram showing the migration of O11 app components to ODC, illustrating the mapping of various modules such as Sales App, InBound_API, Data_Sync, Product_CS, Catalog_CS, Order_CS, Customer_CS, Product_IS, Order_IS, Customer_IS, and Theme_Th.](images/odc-blueprint-diag.png "O11 to ODC Migration Blueprint Diagram")
+
 ### Requirements
 
 The requirements for adapting O11 architecture and creating an ODC blueprint:
 
 * Discovery Tool. This is a Forge component to analyze and understand how to improve the O11 factory architecture and enable the instantiation and validation of domain-driven design architecture
 * AI Mentor Studio. OutSystems AI tool that helps you reduce the technical dept and implement best practices.
-
 
 ### Step 1: Map O11 domains to ODC apps and libraries
 
@@ -41,7 +42,6 @@ On a more granular level, creating an ODC blueprint entails analyzing your exist
 * Map bounded contexts to apps and libraries
 
 More information is available in [Convert O11 architecture to ODC architecture](plan-convert-arch-incrementale.md).
-
 
 ### Step 2: Apply domain-driven architecture principles
 
@@ -61,20 +61,17 @@ More resources:
 * [Architecture fundamentals training](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/apps/odc/1)
 * [Architecture patterns training](https://learn.outsystems.com/training/journeys/architecture-patterns-581/odc)
 
-
 #### Validate the app architecture
 
 If you're not part of the Early Access Program, you can use the [Discovery Tool](https://www.outsystems.com/forge/component-overview/409/discovery-o11) from Forge to validate your architecture. For more information about the validation, refer to [Architecture Canvas and Domain-driven design rules](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/validating_your_application_architecture/).
 
 The Early Access Program customers can use the Migration Assessment Tool, a set of O11 components to prepare for the ODC architecture and migration.
 
-
 ### Step 3: Adapt your apps for better ODC compatibility
 
-As you prepare your app for the ODC architecture, adapt the O11 apps to make them ODC-compatible and enable a smoother migration to ODC. You need to consider the best practices and that some O11 features are not supported directly in ODC. 
+As you prepare your app for the ODC architecture, adapt the O11 apps to make them ODC-compatible and enable a smoother migration to ODC. You need to consider the best practices and that some O11 features are not supported directly in ODC.
 
 For more information about how to adapt your apps, refer to[ O11 to ODC migration code patterns](../code-patterns/intro.md).
-
 
 ## Additional resources
 

@@ -258,6 +258,10 @@ The file used to import the redirect rules must comply with the following:
 If an import succeeds, all previous existent redirect rules in Service Center are replaced with the new ones imported.
 If the import fails, no redirect rules are deleted or added. In this scenario, Service Center shows a custom error message, pointing to the cause of the error.
 
+### Debugging when redirect rules are configured
+
+If a redirect rule is configured for a module (e.g., `oldurl/module -> newurl/module`), ensure that Service Studio is connected to the **new URL** (`newurl`) instead of the **old URL** (`oldurl`). This ensures proper debugging behavior.
+
 ## URL prioritization  
 
 Prioritization determines the order in which pages load in a browser. Search engines use this information when selecting between URLs on the same site, so use URL prioritization to increase the likelihood that your most important pages are present in a search index.  

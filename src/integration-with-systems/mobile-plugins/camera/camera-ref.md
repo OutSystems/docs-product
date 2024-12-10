@@ -255,4 +255,6 @@ OS-PLUG-CAMR-0027 (NEW)|Android|URI parameter cannot be empty.
 OS-PLUG-CAMR-0028 (NEW)|iOS|Couldn’t get video from the gallery.
 OS-PLUG-CAMR-0029 (NEW)|iOS|There's an issue with the plugin.
 OS-PLUG-CAMR-0030 (NEW)|Android|The selected file doesn't exist.
-
+OS-PLUG-CAMR-0031 (NEW)|iOS|Couldn't retrieve image from the URI.
+OS-PLUG-CAMR-0032 (NEW)|PWA|EditURIPicture is only available for Android and iOS.
+OS-PLUG-CAMR-0033 (NEW)|iOS, Android, PWA|Height and width values need to be greater than zero.

@@ -329,6 +329,16 @@ Returns a link where the binary file for a given application version can be down
 
 ### /deployments/
 
+This endpoint allows you to perform operations on deployments. Please note that there are a few unsupported scenario's. Currently it is not possible to: 
+
+- Set/edit database catalogs
+- Perform actions when a deployment has BPT process impact
+
+In these cases,the deployment will be paused, and the status will be: "needs_user_intervention", which forces you to open the ongoing deployment in lifetime and perform these actions manually.
+Please note that in order to pause the deployment when a database catalog needs to be set, the Service Account running the deployment must have rights on at least 1 database catalog. Otherwise the deployment will not pause to perform the manual intervention.
+
+
+
 #### POST { #post-deployments }
 ##### Description:
 

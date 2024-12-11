@@ -969,6 +969,7 @@
             - href: setup-infra-platform/setup/possible-setups/ha-scalability/intro.md
             - topics:
                 - href: setup-infra-platform/setup/possible-setups/ha-scalability/xrdr.md
+                - href: setup-infra-platform/setup/possible-setups/ha-scalability/disaster-recovery-test.md
             - href: setup-infra-platform/setup/possible-setups/cloud-architecture.md
         - href: setup-infra-platform/setup/system-requirements.md
         - href: setup-infra-platform/setup/limitations.md

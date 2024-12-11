@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# OutSystems APIs
+# OutSystems APIs 
 
 OutSystems provides APIs that allow you to extend the capabilities of your applications. With these APIs you can integrate your applications with external systems, and programmatically access OutSystems features.
 

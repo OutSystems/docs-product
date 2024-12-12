@@ -26,6 +26,7 @@ Check here our [online training videos ](https://learn.outsystems.com/training/j
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/874768910?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Many-to-Many Relationship [en-US / 11]"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
+
 ## Example
 
 You have a mobile application called GoOut, where end users can find and review places like restaurants, hotels, etc. An end user can review many places and a place can have reviews from many end users, i.e. a many-to-many relationship. We will call these two entities `Review` and `Place`. Besides the two foreign keys, a review has also other attributes: classification, comments, and submission date.

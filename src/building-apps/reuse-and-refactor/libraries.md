@@ -45,7 +45,7 @@ For example, use Libraries to implement:
 
     * **Logic** — encapsulate logic that can be called by several applications. For example, a `CipherUtils` Library to help encrypt/decrypt data.
 
-Due to their stateless and database agnostic desing, Libraries can only contain certain elements. The elements you can use in Libraries are enforced both in Service Studio editors, while you're editing your module, and in the **Manage Dependencies** window, when you're referencing elements from other modules. Follows a list of the availability of elements in a Library module:
+Due to their stateless and database agnostic design, Libraries can only contain certain elements. The elements you can use in Libraries are enforced both in Service Studio editors, while you're editing your module, and in the **Manage Dependencies** window, when you're referencing elements from other modules. Follows a list of the availability of elements in a Library module:
 
 | Service Studio element | Availability in Library modules |
 | :---: | :---: |

@@ -22,6 +22,9 @@ To create a many-to-many relationship, follow these steps:
 
 If you want to ensure that an entity has unique records (like a `Book` can only have one `Publisher`), then add a [unique index](../index-create.md) to the two foreign keys.
 
+Check here our [online training videos ](https://learn.outsystems.com/training/journeys/modeling-data-relationships-642/many-to-many-relationship/o11/448)on this topic:
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/874768910?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Many-to-Many Relationship [en-US / 11]"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Example
 

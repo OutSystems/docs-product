@@ -10,7 +10,7 @@ figma:
 
 # Assign
 
-Use the Assign Tool to assign values to variables. The Properties Pane shows assignments in the variable-value pairs, forming the assignment statements. The **Value** in the statement can be other variable, literal or a computed value.
+Use the Assign Tool to assign values to variables. The Properties Pane shows assignments in the variable-value pairs, forming the assignment statements. The **Value** in the statement can be other variable, literal or a computed value. When you define multiple assignments in a Assign node, the assignments are applied from top to bottom.
 
 To select a **Variable**, do any of the following in the field of Assign Tool within properties pane:
 
@@ -57,7 +57,8 @@ OutSystems assigns by value, with some exceptions for assignment by reference. T
 <td>Yes</td>
 <td></td>
 <td>The variables presented are only the ones that are visible in the scope of the action.<br/>
-        You can set the value of several variables at once (providing a pair Variable/Value for each) in the same Assign element.</td>
+You can set the value of several variables at once (providing a pair Variable/Value for each) in the same Assign element.<br/>
+The assignments are applied from top to bottom.</td>
 </tr>
 <tr>
 <td title="Value">Value</td>

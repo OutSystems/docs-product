@@ -272,6 +272,16 @@ To check the background job was successfully created, verify the value of **SetB
 
 Starting in Android 15, when setting a background job for the first time, the Health Connect permission to read data in the background will be requested.
 
+<div class="info" markdown="1">
+
+From Android 15 onwards, users can install an app in the [Private space](https://developer.android.com/about/versions/15/features#private-space). Users can lock their private space at any time. Once locked, all background jobs of the app inside the private space are stopped, and notifications are not shown until the user unlocks the private space.
+
+It is not possible to detect if an app is installed in the private space. Therefore, if your app shows any critical notifications, inform your users to avoid installing the app in the private space.
+
+For more information about the behavior changes of your app related to the private space, refer to [Android documentation](https://developer.android.com/about/versions/15/behavior-changes-all#private-space-changes).
+
+</div>
+
 Starting in Android 14, when setting a background job for the first time, for some variables, the permission to schedule exact alarms will be requested. More specifically, this permission will be requested when setting the first background job if the variable is one of the following: weight, height, sleep, blood glucose, or body fat percentage.
 
 With that said, it is a best practice to present a message to the user explaining why these permissions are necessary (e.g. to get notifications about health and fitness data), before calling the **SetBackgroundJob** client action.

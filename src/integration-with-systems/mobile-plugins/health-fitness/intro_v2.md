@@ -148,6 +148,17 @@ To check that writing the health or fitness data on the device is working, verif
 
 To define a background job you can use the **SetBackgroundJob** action. Set the parameters for the type of health or fitness variable you want to monitor, define the notification trigger condition and its frequency, and define the notification content.
 
+<div class="info" markdown="1">
+
+From Android 15 onwards, users can install an app in the [Private space](https://developer.android.com/about/versions/15/features#private-space). Users can lock their private space at any time. Once locked, all background jobs of the app inside the private space are stopped, and notifications are not shown until the user unlocks the private space.
+
+It is not possible to detect if an app is installed in the private space. Therefore, if your app shows any critical notifications, inform your users to avoid installing the app in the private space.
+
+For more information about the behavior changes of your app related to the private space, refer to [Android documentation](https://developer.android.com/about/versions/15/behavior-changes-all#private-space-changes).
+
+</div>
+
+
 Parameterization for two different use cases of a background job is shown below:
 
 #### Setting up a daily steps goal

@@ -10,7 +10,7 @@ figma:
 
 # Assign
 
-Use the Assign Tool to assign values to variables. The Properties Pane shows assignments in the variable-value pairs, forming the assignment statements. The **Value** in the statement can be other variable, literal or a computed value. When you define multiple assignments in a Assign node, the assignments are applied from top to bottom.
+Use the Assign Tool to assign values to variables. The Properties Pane shows assignments in the variable-value pairs, forming the assignment statements. The **Value** in the statement can be other variable, literal or a computed value. When you define multiple assignments in an Assign node, the assignments are applied from top to bottom.
 
 To select a **Variable**, do any of the following in the field of Assign Tool within properties pane:
 

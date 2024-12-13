@@ -36,7 +36,9 @@ If you don't clean up your BPT data after performing the specified operation, ev
 
 To check the current identity values in your BPT tables, you can run the following SQL statement:
 
-`DBCC CHECKIDENT(<!--table_name>, NORESEED);`
+```
+DBCC CHECKIDENT(<!--table_name>, NORESEED);
+```
 
 The expected output will look similar to this:
 

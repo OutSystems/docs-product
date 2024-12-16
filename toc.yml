@@ -46,6 +46,7 @@
           #Data operations  
         - href: building-apps/data/operations/intro.md
         - topics:
+            - href: building-apps/data/crud-wrappers.md
             - href: building-apps/data/operations/edit-data.md
             - href: building-apps/data/operations/how-edit-data.md
             - href: building-apps/data/operations/fetch-display.md

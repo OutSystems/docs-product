@@ -114,7 +114,7 @@ During Platform Server installation, OutSystems provides a script that simplifie
 
 OutSystems can run on Amazon EC2 instances. Each instance must fulfill one the following requirements:
 
-* The `Amazon EC2Launch` service must be running, available from Amazon EC2Launch v2 (starting with Platform Server 11.29.0)
+* The `Amazon EC2Launch` service must be running, available from Amazon EC2Launch v2 (starting with Platform Server 11.32.0)
 
 * Or, the `EC2Config` service must be running
 
@@ -193,9 +193,11 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 
 ### MySQL database
 
-* MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)
-* MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)
+* MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)<sup>1</sup>
+* MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)<sup>1</sup>
 * MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
+
+<sup>1</sup> This version is no longer supported by MySQL and isn't supported by OutSystems starting with Platform Server version 11.32.0.
 
 ### PostgreSQL database
 

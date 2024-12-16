@@ -290,7 +290,7 @@ Returns the details of a given version of the specified application.
 | Name | Located in | Description | Required | Schema |
 | ---- | ---------- | ----------- | -------- | ---- |
 | ApplicationKey | path | The key of the application whose version is being requested. | Yes | string |
-| IncludeModules | query | When set to true, the modules details are also retrieved. The default value is false. | Yes | boolean |
+| IncludeModules | query | When set to true, the modules details are also retrieved. | Yes | boolean |
 | VersionKey | path | The key of the desired application version. | Yes | string |
 
 ##### Responses

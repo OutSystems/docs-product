@@ -41,7 +41,7 @@ To update the AI Mentor Studio's probes, follow these steps:
 
 1. In the **Probes download and update** screen, select **Download Development probe**.
 
-1. In the Service Center console of the **Development environment** (`https://<development_environment>/ServiceCenter`), install the **Development Environment Probe** in your **Development environment** by following these steps:
+1. Go to the Service Center console of the **Development environment** (`https://<development_environment>/ServiceCenter`), and install the **Development Environment Probe** in your **Development environment** by following these steps:
 
     1. Go to **Factory**.
     1. Go to **Solutions**.
@@ -54,7 +54,7 @@ To update the AI Mentor Studio's probes, follow these steps:
 
 1. In the **Probes download and update** screen, select **Download LifeTime probe**.
 
-1. In the Service Center console of the **LifeTime environment** (`https://<LifeTime_environment>/ServiceCenter`), install the **LifeTime Environment Probe** in your **LifeTime environment** by following these steps:
+1. Go to the Service Center console of the **LifeTime environment** (`https://<LifeTime_environment>/ServiceCenter`), and install the **LifeTime Environment Probe** in your **LifeTime environment** by following these steps:
 
     1. Go to **Factory**.
     1. Go to **Solutions**.

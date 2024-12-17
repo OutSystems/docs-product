@@ -4,7 +4,15 @@ locale: en-us
 guid: ff542837-31ee-4773-a3b1-91f579fa73ba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: outsystems, application migration, best practices, architecture design, domain-driven design
+audience:
+  - architects
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Adapting O11 architecture and creating an ODC blueprint

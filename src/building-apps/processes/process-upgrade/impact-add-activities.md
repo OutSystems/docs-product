@@ -5,7 +5,19 @@ guid: b51a153e-2fe4-4721-ac98-8de123fdf804
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:29
+tags: process flows, process instance upgrade, outsystems platform, application lifecycle management, continuous deployment
+audience:
+  - full stack developers
+  - backend developers
+  - frontend developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
+
 # Impact of Adding Activities to Process Flows
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic lists some examples of the impact of newly added activities on executing process instances.

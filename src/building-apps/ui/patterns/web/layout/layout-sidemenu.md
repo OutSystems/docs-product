@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui development, custom ui components, web blocks, ui customization, css customization
 summary: Explore the Layout Side Menu web block in OutSystems 11 (O11) for customizable UI components in Traditional Web Apps.
 locale: en-us
 guid: a2d35777-96f1-42e8-b9b6-760eb59d24cd
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:17
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Layout Side Menu

@@ -1,11 +1,18 @@
 ---
 summary: OutSystems 11 (O11) facilitates mobile app packaging for iOS and Android through its cloud-based Mobile Apps Build Service (MABS).
-tags: runtime-mobile; support-mobile
+tags: cloud services, mobile application deployment, mobile sdks, mabs, outsystems platform
 locale: en-us
 guid: a5d92b93-40f7-418b-a2b3-40e81e820760
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:0
+audience:
+  - mobile developers
+  - full stack developers
+  - platform administrators
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Mobile Apps Build Service

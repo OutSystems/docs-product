@@ -5,6 +5,18 @@ locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2139-92
+tags: data migration, app migration, low-code platforms, migration process, migration tools
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+  - migration assessment tool
+coverage-type:
+  - apply
 ---
 
 # Execute one shot migration

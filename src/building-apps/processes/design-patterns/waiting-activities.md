@@ -5,7 +5,19 @@ guid: 6af5d9c9-a99e-4940-bc69-c847ef743f6b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=269:13
+tags: workflow management, database events, process automation, timeout handling, event-driven
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - evaluate
+  - apply
 ---
+
 # Designing Waiting Activities
 
 Use this pattern to design flow paths which, at some point, can only proceed the execution after some condition is verified. Use the [Wait](<../../../ref/lang/auto/class-wait.md>) activity to design this pattern.

@@ -1,11 +1,17 @@
 ---
-tags: runtime-traditionalweb; 
+tags: customization of ui, css, animation effects, web development, modal components
 summary: Explore advanced customization of modal animation speeds in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: a9618344-1b9f-4aa8-892b-456d7d7a75eb
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:525
+audience:
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Modal Reference

@@ -1,11 +1,13 @@
 ---
-tags: 
+tags:
 summary: OutSystems 11 (O11) features the Data Grid component for efficient data manipulation with sorting and virtual scrolling.
 guid: 7a4ea179-b360-4220-a0fc-627a6c751564
 locale: en-us
 app_type: reactive web apps
 platform-version: o11
 figma:
+coverage-type:
+  - understand
 ---
 
 # OutSystems Data Grid

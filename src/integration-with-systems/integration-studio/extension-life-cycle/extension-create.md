@@ -5,7 +5,21 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3387%3A2062&mode=design&t=187UAgmZTPxcY0ZG-1
 summary: OutSystems 11 (O11) enables the creation of extensions through Integration Studio, allowing integration with third-party technologies.
+tags: ide usage, reactive web apps, tutorials for beginners, extension development, third-party integration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - integration studio
+  - service center
+  - platform server
+coverage-type:
+  - apply
 ---
+
 # Create an Extension
 
 Integration Studio enables you to create an extension — a set of **Actions**, **Entities**, and **Structures** available in Service Studio but implemented in third-party technologies. An extension can be [used in any module](<../extension-life-cycle/extension-use.md>) after it's published in the Platform Server.

@@ -1,11 +1,17 @@
 ---
 summary: Explore mobile app configuration and management options for iOS and Android in OutSystems 11 (O11) via the Service Center's Native Platforms section.
-tags: runtime-mobile
+tags: native mobile configuration, ios configuration, android configuration, mobile build and deployment, mobile app distribution
 locale: en-us
 guid: 1ad36b43-1e0e-4efb-a701-651bf0b97e06
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=310:34
+audience:
+  - mobile developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Native Platforms Configuration

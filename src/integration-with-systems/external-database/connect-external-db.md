@@ -1,11 +1,23 @@
 ---
 summary: Learn how to integrate OutSystems 11 (O11) with external databases for app development without data migration concerns.
-tags:
+tags: database integration, service center, external databases, data migration, deployment
 locale: en-us
 guid: d5fdba1a-e46c-4c92-9d6b-81be94eed163
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:69
+audience:
+  - full stack developers
+  - backend developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+  - integration studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Integrate with an external database using Integration Studio

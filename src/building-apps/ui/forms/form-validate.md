@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) offers built-in and customizable form validation for enhanced user experience in web and mobile apps.
-tags:
+tags: form validation, user experience, data validation, client-side validation, low-code development
 locale: en-us
 guid: 5a4706ab-9f44-405a-a6fc-758b86c29d30
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:79
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Validate the fields of a form

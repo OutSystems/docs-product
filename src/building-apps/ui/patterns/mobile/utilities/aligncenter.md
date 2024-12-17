@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui design patterns, centering content, ui widgets, outsystems ui framework, dependency management
 summary: OutSystems 11 (O11) features the Align Center UI Pattern for centering content in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: 911674fa-b1b7-42e4-8e72-eb103d0294e4
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:74
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Align Center

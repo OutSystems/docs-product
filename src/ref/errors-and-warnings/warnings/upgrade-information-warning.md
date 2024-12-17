@@ -5,6 +5,16 @@ guid: ac6e349e-376b-4975-aac4-491d09f1a7a7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: version control, module management, application deployment, error handling, server upgrade
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+  - platform server
+coverage-type:
+  - unblock
 ---
 
 # Upgrade Information Warning

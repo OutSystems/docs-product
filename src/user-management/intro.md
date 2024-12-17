@@ -6,6 +6,8 @@ guid: b84f5da2-64c0-4efe-a51e-0990d3279bc5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+coverage-type:
+  - none
 ---
 
 # User management

@@ -1,11 +1,22 @@
 ---
-tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; Bussiness developers
+tags: cloud-based development, application deployment, user authentication, infrastructure configuration, environment setup
 summary: Explore the capabilities of OutSystems 11 (O11) with Workflow Builder, a cloud-based tool for app development.
 guid: 2168edce-7134-45ba-8219-a46c2a26f131
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:905
+audience:
+  - business analysts
+  - frontend developers
+  - full stack developers
+  - platform administrators
+  - tech leads
+outsystems-tools:
+  - workflow builder
+  - lifetime
+coverage-type:
+  - understand
 ---
 
 # Using Workflow Builder

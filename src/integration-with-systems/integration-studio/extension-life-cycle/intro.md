@@ -5,7 +5,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:58
 summary: Explore the extension life cycle in OutSystems 11 (O11) and third-party IDEs, detailing creation, coding, and publishing processes.
+tags: extension lifecycle, integration studio, database management systems (dbms), .net integration, code generation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - apply
 ---
+
 # Extension Life Cycle
 
 The integration process revolves around the extension life cycle. The process steps are executed in both OutSystems  and third party IDE component environments. The illustration below depicts the most significant steps, showing them next to the component where they are executed. 

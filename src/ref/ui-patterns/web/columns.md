@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css, web development, ui design patterns, responsive design, style guide
 summary: OutSystems 11 (O11) provides a detailed guide on CSS selectors for various column configurations in Traditional Web Apps.
 locale: en-us
 guid: 6ce39ef3-220e-4cc8-ac81-a96b73b8d259
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A435&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
 # Columns Reference

@@ -1,12 +1,21 @@
 ---
 summary: Learn how to optimize Prerender.io usage and configuration with OutSystems 11 (O11) to minimize costs and improve SEO.
-tags:
+tags: seo optimization, cdn configuration, lambda@edge, prerender.io, cost reduction
 locale: en-us
 guid: 4E680AB9-9BF6-41B2-9537-C3325FF673F5
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
 ---
+
 # Best practices - Prerender.io usage and configuration
 
 Prerender ensures that a cached page is served in response to the user agent's request.

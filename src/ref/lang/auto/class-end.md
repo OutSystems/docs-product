@@ -5,6 +5,16 @@ guid: c5b81b52-09ee-4eb6-be4b-b1854f2be1a2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process flow, process modeling, traditional web apps, service center, process automation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - remember
 ---
 
 # End

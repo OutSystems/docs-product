@@ -6,6 +6,15 @@ guid: 4afad349-3ae5-41cd-8a13-f9eb9efa20af
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, output parameters, api development, rest callbacks, api documentation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Output Parameter - REST API Callback

@@ -5,6 +5,18 @@ guid: a7187cf7-6f1d-4f7c-8141-03f856639f08
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: architecture dashboard, ai mentor studio, code analysis, module classification, best practices
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - ai mentor studio
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - unblock
 ---
 
 # Code Analysis Patterns

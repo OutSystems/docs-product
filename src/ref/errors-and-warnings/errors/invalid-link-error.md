@@ -1,13 +1,21 @@
 ---
 summary: Learn to fix 'Invalid Link Error' in OutSystems 11 (O11) by setting correct 'Method' and 'Destination' properties for the Link widget.
-tags:
+tags: error handling, widget configuration, screen navigation, web development, outsystems ide
 locale: en-us
 guid: 5debccff-1599-4aa2-9c84-3b2732758e6a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
- 
+
 # Invalid Link Error
 
 Message

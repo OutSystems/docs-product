@@ -5,6 +5,15 @@ guid: 44084317-714f-4fb8-bd35-dca72d292562
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: element properties, service action configuration, application modelling, user interface design
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Service Action

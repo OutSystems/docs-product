@@ -5,6 +5,17 @@ guid: c311f5c1-54b9-417e-9561-c39db45ac706
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: debugging, service center operations, platform version compatibility, error resolution, ide errors
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+  - platform server
+coverage-type:
+  - unblock
 ---
 
 # Debugger Not Started Warning

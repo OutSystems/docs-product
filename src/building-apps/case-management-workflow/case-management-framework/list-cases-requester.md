@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework;
+tags: outsystems, data actions, dependencies, case management, data retrieval
 summary: Learn how to display a list of cases created by a requester in OutSystems 11 (O11) using data actions and dependencies.
 guid: da294998-4af8-4fb5-acf8-939d4d2d5a06
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # How to get list of cases for a requester

@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) provides advanced debugging features in Service Studio for detailed app analysis and troubleshooting.
-tags: support-application_development; support-Application_Troubleshooting; support-Application_Troubleshooting-featured
+tags: debugging, breakpoints, native mobile app debugging, pwa (progressive web app), debugger ui
 locale: en-us
 guid: 78def0b5-863d-4d58-8ea0-bb9f28bf1ef8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:129
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Debugging apps

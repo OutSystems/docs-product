@@ -6,6 +6,15 @@ guid: 493e43c0-c626-4ffd-8a99-161132b90261
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ide usage, reactive web apps, variable assignment, expression editor, record data type
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Assign

@@ -1,11 +1,21 @@
 ---
-tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow
+tags: case management, saas, workflow automation, cloud deployment, user role configuration
 summary: Explore how OutSystems 11's Workflow Builder enables non-technical users to rapidly develop case management apps through simple workflows.
 guid: 03a05097-7984-4e88-86f2-c87418286674
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:904
+audience:
+  - business analysts
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - workflow builder
+  - case management framework
+coverage-type:
+  - understand
 ---
 
 # How Workflow Builder works

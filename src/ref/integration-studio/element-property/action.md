@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3066-140&t=0cuQUgeosMV2m0Kw-1
 summary: OutSystems 11 (O11) action properties include mandatory and optional settings, defaults, and customization options.
+tags: ide usage, reactive web apps, tutorials for beginners, extension management, action definition
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Action Properties
 
 The next table presents the properties of the [action](<../../../integration-with-systems/integration-studio/managing-extensions/action-define.md>) element.  

@@ -6,6 +6,15 @@ guid: 2e53abeb-cf9d-4231-808e-33e9b5c1d17e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web services, error handling, static entities, data integration, data modeling
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid SOAP Static Entity Usage Error

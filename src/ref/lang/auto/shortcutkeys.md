@@ -5,7 +5,17 @@ guid: d508b2f0-f667-4a03-8117-20292875c195
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: keyboard shortcuts, development efficiency, user interface, productivity tools, cross-platform development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Service Studio Shortcuts
 
 ## General

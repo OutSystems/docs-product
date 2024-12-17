@@ -1,11 +1,18 @@
 ---
 summary: OutSystems 11 (O11) addresses database compatibility issues by standardizing SQL features and behaviors across different DBMS types.
-tags: 
+tags: database compatibility, sql, oracle sql, cross-platform development, database functions
 locale: en-us
 guid: 9ae75fbb-3c7b-4307-9b9a-9e18bcb16017
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Database Compatibility Issues

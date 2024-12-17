@@ -1,11 +1,20 @@
 ---
 summary: Learn how to migrate O11 data and end users to ODC using the data  migration tool.
-tags: 
+tags: data migration, application migration, database queries, postgresql, user management
 guid: 0ae16d20-7ffc-4894-9e95-254bd89c4353
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Migrate data using the tool

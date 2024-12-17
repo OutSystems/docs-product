@@ -5,6 +5,15 @@ guid: b12fc7de-5897-4cf7-9e05-7b53cda233c0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, error handling, api development, service studio, outsystems
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Response Format Error

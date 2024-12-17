@@ -5,6 +5,17 @@ guid: a9efebcd-a811-4f57-ac3d-3ac58e920fe6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database configuration, oracle database, service studio configuration, database connection settings, unicode support
+audience:
+  - platform administrators
+  - backend developers
+  - full stack developers
+  - tech leads
+  - infrastructure managers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Platform Tab in Oracle

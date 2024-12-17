@@ -1,11 +1,19 @@
 ---
 summary: Explore mobile app generation and distribution features in OutSystems 11 (O11) for iOS and Android platforms.
-tags:
+tags: mobile app generation, mobile app distribution, app build configuration, ios app development, android app development
 locale: en-us
 guid: 1aacc771-f914-4f95-889a-31f1dde06a38
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:232
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Generate and distribute your mobile app

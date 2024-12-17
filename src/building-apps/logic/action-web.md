@@ -1,11 +1,18 @@
 ---
 summary: Explore the functionality of Preparation, Screen, and Server Actions in Traditional Web Apps using OutSystems 11 (O11).
-tags: runtime-traditionalweb; support-webapps; support-webapps-overview
+tags: traditional web development, action logic, data fetching, ui interaction, contact management
 locale: en-us
 guid: 8536c396-e702-492a-8a07-ab8c8bc0334c
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:0
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Actions in Web Applications

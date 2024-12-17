@@ -1,11 +1,18 @@
 ---
 summary: Explore how to customize the application status bar in mobile apps using OutSystems 11 (O11) without plugins.
-tags: runtime-mobile; support-Front_end_Development-featured
+tags: custom ui development, mobile app design, ui customization, application development, user experience enhancements
 locale: en-us
 guid: 3a9110d2-7128-413c-a6a4-3b2deed94d87
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:224
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Customize the Application Status Bar

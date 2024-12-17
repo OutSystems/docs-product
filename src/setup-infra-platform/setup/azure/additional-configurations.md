@@ -1,11 +1,20 @@
 ---
-tags: support-Installation_Configuration; support-installation;
+tags: azure, configuration, deployment, remote access, ssl
 summary: Explore advanced configurations for OutSystems 11 (O11) on Microsoft Azure, including remote access, SSL certificates, and scaling options.
 locale: en-us
 guid: 465ae50f-349c-4b1f-b082-565b3a653e7d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=352:1259
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Additional Configurations for OutSystems on Microsoft Azure

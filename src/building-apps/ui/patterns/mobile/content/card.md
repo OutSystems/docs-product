@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, outsystemsui
 summary: Learn how to use the Card UI Pattern in OutSystems 11 (O11) to effectively group and display information in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: a44ab647-aef4-44ba-b68b-d7a0d421a92c
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:15
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Card

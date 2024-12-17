@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb; 
+tags: ui patterns, ui design, notifications, user interface, service studio
 summary: OutSystems 11 (O11) supports the Badge UI Pattern for displaying numerical notifications in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: 4e759186-e8a8-416a-a1fc-505d2cdc8de8
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:21
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Badge

@@ -4,7 +4,18 @@ locale: en-us
 guid: d94495a3-acd0-4030-bc6c-acedbf794702
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: cloud migration, database mapping, application modernization, migration planning, outsystems development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Reference

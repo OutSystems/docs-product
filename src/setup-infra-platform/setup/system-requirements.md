@@ -1,11 +1,19 @@
 ---
 summary: Explore the comprehensive system requirements for deploying OutSystems 11 (O11) across various platforms and configurations.
-tags: 
+tags: system requirements, on-premises installation, windows server, hardware requirements, software compatibility
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - platform server
+coverage-type:
+  - understand
 ---
 
 # OutSystems system requirements

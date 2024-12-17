@@ -1,11 +1,19 @@
 ---
 summary: Explore user and group management functionalities in OutSystems 11 (O11) through its comprehensive Users API.
-tags: support-devOps; support-Security
+tags: api documentation, user management, security, group management, dependency management
 locale: en-us
 guid: ce2ac90a-1911-4fcf-8c8d-016110b3f8e2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Users API

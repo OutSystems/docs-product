@@ -1,11 +1,19 @@
 ---
 summary: Learn how to design, manage, and integrate business processes in your applications using OutSystems 11 (O11).
-tags: support-webapps-featured
+tags: business process technology, process flow design, entity events, process integration, business process management
 locale: en-us
 guid: ce023611-1cbc-4c61-a778-2a66167bc7ba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:24
+audience:
+  - full stack developers
+  - backend developers
+  - business analysts
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Using Processes - BPT

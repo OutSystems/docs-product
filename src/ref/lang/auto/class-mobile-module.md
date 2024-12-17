@@ -6,7 +6,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:327
 summary: Learn how to create and manage mobile modules in OutSystems 11 (O11) for enhanced app development.
+tags: ide usage, reactive web apps, mobile app development, service studio guide, application templates
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Mobile Module
 
 

@@ -1,11 +1,20 @@
 ---
-summary: This article provides an overview of log Streaming, its benefits and use cases, high-level architecture for streaming log data, supported log data, and the supported application performance monitoring tools. 
-tags: 
+summary: This article provides an overview of log Streaming, its benefits and use cases, high-level architecture for streaming log data, supported log data, and the supported application performance monitoring tools.
+tags: log streaming, application performance monitoring, opentelemetry, real-time analytics, cloud deployments
 locale: en-us
 guid: 75f48471-6193-4149-abf4-29c15e75c1f6
 app_type: traditional web apps, mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3139%3A324&mode=design&t=IIMVc2WTi7UxHv00-1
 platform-version: o11
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
+  - remember
 ---
 
 # Introduction to log streaming

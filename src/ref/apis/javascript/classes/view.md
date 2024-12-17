@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags: mobile development, state management, dom manipulation, view management, screen lifecycle
 summary: Explore methods for managing view components and states in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 5d68d556-eca2-4dad-a0e5-ba6decc5f22b
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # View

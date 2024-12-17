@@ -6,6 +6,15 @@ guid: 7fbaa379-bf8c-43e8-8352-f320768a330d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, basic authentication, parameter configuration, service studio, documentation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Input Parameter - REST Authentication

@@ -5,6 +5,16 @@ guid: dfd157ac-c6ce-4710-a022-3bd27f5fc8bc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web services, unsupported features, web service integration, service studio limitations, outsystems platform
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+  - unblock
 ---
 
 # Unsupported SOAP Use Cases

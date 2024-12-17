@@ -1,11 +1,21 @@
 ---
 summary: Explore how to manage and extend the capacity of BPT tables in SQL Server by reseeding identity values using OutSystems 11 (O11) tools and APIs.
-tags: 
+tags: sql server, database management, identity reseeding, bpt (business process technology), data archiving
 locale: en-us
 guid: b12b531a-097a-41c5-965b-7354fcdc2cef
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - backend developers
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
 ---
 
 # Avoid maximum ID limits in BPT tables

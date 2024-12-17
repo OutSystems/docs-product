@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, user experience, widget implementation, dependency management, design integration
 summary: Explore how to animate user input labels using the Animated Label UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 6b42f314-f637-444d-b908-f0609c1ba46f
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=205%3A92&mode=design&t=KpVEJMvnBwiukqql-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Animated Label

@@ -5,6 +5,15 @@ guid: 16bec1bb-e5d0-4920-823c-278166f38a8f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database management, error handling, entity definitions, database synchronization, data modeling
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Database Integrity Suggestion Warning

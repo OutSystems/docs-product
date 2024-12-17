@@ -4,7 +4,17 @@ locale: en-us
 guid: 19d82c11-dc9a-43e8-bce1-1767e48e58fd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: configuration management, site properties, application settings, runtime settings, api key management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
 
 # Refactor site properties to be ODC-compatible

@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) ensures HTTPS security for Mobile, Reactive, and Traditional Web Apps with built-in SSL and configurable settings.
-tags: support-Security-overview
+tags: https security, ssl configuration, secure communication, data encryption, certificate validation
 locale: en-us
 guid: a152ecbb-2419-489f-87c5-000918d502f0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:97
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Enforce HTTPS Security

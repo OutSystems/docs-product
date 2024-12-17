@@ -1,11 +1,21 @@
 ---
-tags: Case Management; Case Management framework;
+tags: case management, business process technology, framework architecture, api modules, core services
 summary: Explore the architecture and capabilities of the Case Management framework in OutSystems 11 (O11) for streamlined business process app development.
 guid: 8149ad32-7c20-458b-92d4-2e2dac78f781
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1916
+audience:
+  - full stack developers
+  - backend developers
+  - architects
+  - business analysts
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - remember
 ---
 
 # Case Management framework reference

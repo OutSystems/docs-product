@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui widgets, ui design, data binding, notifications, user interface
 summary: OutSystems 11 (O11) features the Icon Badge UI Pattern for displaying numerical notifications in Traditional Web Apps.
 locale: en-us
 guid: fa1815e9-06e0-4a60-bd56-135abbf03e0b
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=243%3A20&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Icon Badge

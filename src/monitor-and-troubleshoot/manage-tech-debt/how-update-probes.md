@@ -1,11 +1,20 @@
 ---
-tags: 
+tags: ide usage, reactive web apps, tutorials for beginners, probes update, permissions management
 summary: OutSystems 11 (O11) is not mentioned in the provided article, which focuses on updating AI Mentor Studio probes.
 locale: en-us
 guid: d11dd771-148b-49fd-8bfd-dfe0800620c5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:738
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - ai mentor studio
+coverage-type:
+  - apply
 ---
 
 # How to update the AI Mentor Studio probes

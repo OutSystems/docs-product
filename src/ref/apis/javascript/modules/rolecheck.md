@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags: client-side logic, role-based access control, ui element visibility, javascript integration, mobile app development
 summary: Explore client-side role checks in OutSystems 11 (O11) for UI element visibility control, not for security purposes.
 locale: en-us
 guid: efe75497-2f0f-4bbe-9f97-e65c2b345210
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Role Check

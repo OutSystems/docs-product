@@ -5,6 +5,16 @@ guid: f478be22-a3db-44cc-958b-acb906542ba5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:101
+tags: refactoring, application modularization, service center usage, business logic isolation, module reusability
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Refactor an application

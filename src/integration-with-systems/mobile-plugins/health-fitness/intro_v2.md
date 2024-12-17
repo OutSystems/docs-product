@@ -5,6 +5,15 @@ guid: 58915a48-1778-4182-b55f-77b91d6abb05
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3646%3A249&mode=design&t=7rMnksgyPaWb1FNL-1
+tags: api integration, healthkit, google fit, mobile app development, permissions management
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Health and Fitness Plugin using HealthKit and Google Fit

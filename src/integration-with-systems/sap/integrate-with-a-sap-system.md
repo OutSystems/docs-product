@@ -1,5 +1,5 @@
 ---
-tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
+tags: sap integration, data fetching, data updating, web services, enterprise integration
 locale: en-us
 helpids: 30084
 guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb
@@ -7,7 +7,15 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:49
 summary: OutSystems 11 (O11) enables integration with SAP systems, allowing data fetching and updating for application use.
+audience:
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
+
 # Integrate with a SAP System
 
 

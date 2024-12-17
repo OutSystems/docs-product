@@ -5,6 +5,16 @@ guid: 6c1dcebe-0c55-4fb3-b94b-21d162a23053
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3492-399&mode=design&t=POXL6zLzKO5sOwUF-0
+tags: security, compliance, pci dss, endpoint configuration, cloud security
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Configuring secure endpoints

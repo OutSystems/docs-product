@@ -5,7 +5,17 @@ guid: a941e1f8-94f8-400c-8e44-fa969cce59d8
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2218:14983
+tags: firebase cloud messaging, mobile notifications, push notifications, plugin integration, notification management
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
 ---
+
 # Firebase Cloud Messaging Plugin using server actions
 
 

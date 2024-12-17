@@ -5,6 +5,15 @@ guid: 2b8e15da-86d4-42c1-aa9f-9b29a80aab4d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, rest api, data formatting, outsystems service studio, api design
+audience:
+  - full stack developers
+  - frontend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Multiple Date Formats Error

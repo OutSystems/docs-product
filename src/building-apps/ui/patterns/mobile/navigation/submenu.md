@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui design patterns, user interface components, dependency management, ide usage, reactive web apps, tutorials for beginners
 summary: OutSystems 11 (O11) documentation explains the Submenu UI Pattern integration for Mobile and Reactive Web Apps.
 locale: en-us
 guid: a4d2d0a7-47cf-4816-a3a4-c0861a5b59d7
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=215:8
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Submenu

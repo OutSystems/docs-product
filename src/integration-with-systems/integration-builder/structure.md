@@ -5,7 +5,20 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=1019-6407&node-type=canvas&t=U3PEelBj0FHBpYxA-0
 summary: OutSystems 11 (O11) Integration Builder structures integrations into library and service modules for CRUD operations and external system interactions.
+tags: integration builder, crud operations, external systems integration, module configuration, authentication management
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - integration builder
+coverage-type:
+  - remember
+  - apply
 ---
+
 # Structure of generated integrations
 
 Integration Builder generates and publishes integrations, which are OutSystems applications composed of two modules:

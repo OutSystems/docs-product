@@ -1,11 +1,21 @@
 ---
 summary: Explore how to configure app authentication settings in OutSystems 11 (O11) to enhance security and user experience across different app types.
-tags: runtime-mobileandreactiveweb; support-Security-overview
+tags: security, authentication, single sign-on, configuration guide, platform server
 locale: en-us
 guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:109
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - platform server
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Configure app authentication
@@ -66,7 +76,7 @@ To configure the authentication settings for apps in your OutSystems environment
 
 In this page you can also generate new keys for authenticating and encrypting cookie values. This will force all the users of your apps to login again in the next server request. To generate new keys, press the Generate button in Authentication and Encryption Keys area:
 
-![Close-up of the Generate button for new Authentication and Encryption Keys in OutSystems Service Center.](images/configure-app-authentication-generate-keys-sc.png "Generate New Authentication and Encryption Keys")
+![Close-up screenshot of the Generate button for new Authentication and Encryption Keys in OutSystems Service Center.](images/configure-app-authentication-generate-keys-sc.png "Generate New Authentication and Encryption Keys")
 
 ## Authentication Types
 
@@ -106,7 +116,7 @@ The server validates the request by checking the following conditions:
 
 If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user or fails in case of tampering.
 
-![Diagram illustrating the authentication flow including cookie validation and session expiration in OutSystems.](images/authentication-1.png "Authentication Flow Diagram")
+![Diagram illustrating the authentication flow in OutSystems, including cookie validation and session expiration.](images/authentication-1.png "Authentication Flow Diagram")
 
 ### Authentication Cache
 

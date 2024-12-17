@@ -1,12 +1,21 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, chart creation, data visualization
 summary: Learn how to create line and area charts with fixed or variable data points using OutSystems 11 (O11).
 locale: en-us
 guid: 2b5fe8d2-2a3d-4957-bd07-951d20a824d7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:491
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Create Line and Area Charts
 
 Learn how to create a simple Line or Area chart in OutSystems.  

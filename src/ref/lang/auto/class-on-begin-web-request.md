@@ -5,6 +5,15 @@ guid: d11d552e-fcfc-42b8-8690-a058f4c74dae
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: server request handling, web applications, server-side logic, outsystems platform, lifecycle events
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # On Begin Web Request

@@ -5,6 +5,15 @@ guid: 87b4ecb6-b6c3-4c7b-b2ab-603bd95f36e2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process flow design, decision management, outsystems development, process flow toolbox, decision logic
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Decision

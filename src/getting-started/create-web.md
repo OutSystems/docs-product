@@ -1,11 +1,19 @@
 ---
 summary: Learn to build Traditional Web Apps with OutSystems 11 (O11) by importing Excel data and managing contacts.
-tags: runtime-traditionalweb; support-webapps
+tags: traditional web apps development, excel data import, database operation, data management, application publishing
 locale: en-us
 guid: f84888af-0987-4ec7-98f7-195f6e493292
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=67:35
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Create Your First Traditional Web App

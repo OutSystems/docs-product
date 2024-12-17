@@ -1,11 +1,21 @@
 ---
 summary: Explore how to create, publish, and manage integrations using Integration Builder in OutSystems 11 (O11).
-tags: article-page
+tags: integration management, deployment, security, sap integration, environment configuration
 locale: en-us
 guid: 6c59c61d-f34b-4ef4-8875-0ea760341cd5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6300
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration builder
+  - lifetime
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Use Integration Builder

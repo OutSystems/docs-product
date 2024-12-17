@@ -1,11 +1,20 @@
 ---
 summary: Learn how to apply and propagate a hotfix in OutSystems 11 (O11) to ensure seamless updates across environments without downtime.
-tags: support-Application_Lifecycle-featured
+tags: hotfix deployment, deployment best practices, version control, continuous deployment, application reliability
 locale: en-us
 guid: e79dfbfc-4c0b-4239-ae8d-824f5da95d2d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=257-90&t=IA5qe8nWseFfv5nx-1
+audience:
+  - full stack developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Apply a Hotfix

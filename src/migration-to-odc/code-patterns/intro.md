@@ -4,7 +4,19 @@ locale: en-us
 guid: 469bbfc7-8121-4cd8-8e4f-22b882f8e821
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: migration, outsystems developer cloud, code refactoring, application lifecycle management, outsystems platform
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - migration toolkit
+  - service studio
+coverage-type:
+  - none
 ---
 
 # O11 to ODC migration code patterns

@@ -5,6 +5,15 @@ guid: 8b291081-7322-4558-8b0a-c1ac18ba5218
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, date format, error resolution, web service integration, api development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Incompatible Date Formats Error

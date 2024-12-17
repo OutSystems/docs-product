@@ -1,11 +1,20 @@
 ---
 summary: Explore troubleshooting steps for downloading application source code in OutSystems 11 (O11).
-tags: 
+tags: troubleshooting guide, environment configuration, api usage, permissions management, service accounts
 locale: en-us
 guid: E542C662-6053-4758-A514-1A4117364DD0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - lifetime
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Unable to download the source code of an application

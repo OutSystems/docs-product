@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) features a SOAP Extensibility API for customizing SOAP Web Services using .NET code.
-tags: support-application_development; support-Integrations_Extensions
+tags: api, soap web services, .net, extensibility, integration
 locale: en-us
 guid: a0a29cc4-04dd-4d02-9a65-6a6f9474b45c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - remember
 ---
 
 # SOAP Extensibility API

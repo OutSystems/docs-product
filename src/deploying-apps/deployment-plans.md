@@ -5,6 +5,17 @@ guid: 13e13cb8-e058-4235-bead-06410a2b8c7d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:25
+tags: application deployment, environment management, deployment plans, version control, outsystems lifetime
+audience:
+  - platform administrators
+  - full stack developers
+  - architects
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
+  - understand
+  - apply
 ---
 
 # Deployment Plans

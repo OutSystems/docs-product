@@ -1,11 +1,20 @@
 ---
 summary: Explore how to create and utilize calculated attributes in aggregates using OutSystems 11 (O11).
-tags: support-application_development; support-Database; support-webapps
+tags: database operations, data modeling, ui dynamic content, data fetching, outsystems service studio
 locale: en-us
 guid: 802680cb-425f-4561-a353-56f582457b68
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:4
+audience:
+  - frontend developers
+  - full stack developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Create a Calculated Attribute in an Aggregate

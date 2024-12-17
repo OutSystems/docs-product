@@ -5,7 +5,18 @@ guid: 50a76d12-73cb-4924-b36f-e76b68a00cb5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1019%3A6377&mode=design&t=187UAgmZTPxcY0ZG-1
+tags: azure active directory, app registration, sharepoint integration, dataverse integration, dynamics 365 integration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - integration builder
+coverage-type:
+  - apply
 ---
+
 # How to register SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 apps in Microsoft Entra
 
 OutSystems owns and manages the Microsoft Entra application you are using for authentication and authorization. This provides another level of trust for our customers. Microsoft uses the Microsoft Entra portal to authenticate and authorize services for your app and users. To use the authentication and authorization services, you must register your app in Microsoft Entra. Integration Builder can then access your Microsoft SharePoint. Microsoft Dataverse, or Microsoft Dynamics 365 environments through the Microsoft Entra application.

@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) enables systematic conversion of logic, modules, and applications to services without data loss or versioning issues.
-tags: support-application_architecture
+tags: service conversion, service module, application modernization, version control, systematic conversion
 locale: en-us
 guid: a82f9d7f-70bf-43b2-a291-dd56905f35b2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Convert to Services

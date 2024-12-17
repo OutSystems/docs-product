@@ -5,6 +5,14 @@ guid: ed240efa-1b90-4ce9-9263-a9bbfee1c90b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, database design, data modeling, circular dependencies, sorting data
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Column Reference Error

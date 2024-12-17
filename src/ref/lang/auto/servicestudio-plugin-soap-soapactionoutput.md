@@ -5,6 +5,15 @@ guid: 56426f22-13b5-4e4f-a87a-dd37eba728cf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap integration, web services, data mapping, api documentation, service-oriented architecture
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Output Parameter - Consumed SOAP Method

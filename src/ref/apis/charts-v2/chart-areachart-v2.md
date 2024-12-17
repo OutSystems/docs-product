@@ -1,11 +1,19 @@
 ---
-tags:
+tags: chart visualization, data visualization, ui design, widget configuration, data binding
 summary: Learn how to create a stacked area chart in OutSystems 11 (O11) using the Area Chart widget and configuring data points and series properties.
 locale: en-us
 guid: BA3C3E2A-BFD3-454E-B527-00AAE44DEA8F
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2411:4149
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Area Chart

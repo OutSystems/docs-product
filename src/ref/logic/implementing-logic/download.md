@@ -5,6 +5,14 @@ guid: 5a57bbea-d8d7-44d5-921e-07aec6c1f705
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: client-side processing, file handling, performance considerations, browser compatibility, memory management
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Download

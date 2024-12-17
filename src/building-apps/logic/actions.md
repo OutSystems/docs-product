@@ -1,12 +1,20 @@
 ---
 summary: Explore how OutSystems 11 (O11) enhances Reactive Web and Mobile Apps through Data, Client, and Server Actions.
-tags: runtime-mobileandreactiveweb; support-Mobile_Apps; support-Mobile_Apps-overview
+tags: ide usage, reactive web apps, data actions, client actions, server actions
 locale: en-us
 guid: ce518c93-363b-485e-91b3-b4a402ec4579
 helpids: 30110
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=258:28
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Actions in Reactive Web and Mobile Apps

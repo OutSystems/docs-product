@@ -6,6 +6,15 @@ guid: f5811e56-3206-4621-a31a-74da90160dd2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1136
+tags: server actions, business logic, action flow, input parameters, output parameters
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Run Server Action

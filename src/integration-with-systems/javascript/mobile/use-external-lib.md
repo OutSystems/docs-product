@@ -1,11 +1,19 @@
 ---
 summary: Learn to integrate external JavaScript libraries in OutSystems 11 (O11) while avoiding DOM manipulation.
-tags: runtime-mobileandreactiveweb
+tags: integration, javascript, script management, external libraries, best practices
 locale: en-us
 guid: 8a9bb94e-0720-4c91-ae99-8ed14c8ed6cc
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:45
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Use JavaScript Code from an External Library

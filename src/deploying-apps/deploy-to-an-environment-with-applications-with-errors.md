@@ -5,6 +5,14 @@ guid: cf9598e3-f6e3-49c7-852d-c126b621afbc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:72
+tags: application deployment, incompatible references, environment management, error handling, outsystems platform
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
 ---
 
 # Deploy to an Environment with Applications with Errors

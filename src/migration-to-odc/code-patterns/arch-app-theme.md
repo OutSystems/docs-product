@@ -1,12 +1,23 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: a0d20758-4f63-49b9-9185-7c09bb5e27ed
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7993
 helpids: 30534
+tags: theme customization, odc libraries, migration strategies, app development best practices, architecture mapping
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming an Application Theme
 
 A dependency to a Theme is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.

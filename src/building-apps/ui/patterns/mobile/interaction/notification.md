@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, notification system, user experience, frontend development, mobile app development
 summary: Explore how to implement and customize the Notification UI Pattern in OutSystems 11 (O11) for effective user communication in mobile and reactive web apps.
 locale: en-us
 guid: 90ae661d-b0d0-4001-b2b1-efe5c50bb056
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:33
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Notification

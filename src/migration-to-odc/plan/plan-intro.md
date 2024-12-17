@@ -1,10 +1,22 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 788a3d99-a2fe-4fa2-b868-d2851cd2ffb8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=1-852
+tags: app migration, o11 to odc migration, application portfolio management, migration strategies, migration planning
+audience:
+  - full stack developers
+  - architects
+  - tech leads
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - migration kit
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Plan app migration

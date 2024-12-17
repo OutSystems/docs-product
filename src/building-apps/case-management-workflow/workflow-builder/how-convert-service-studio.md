@@ -1,11 +1,21 @@
 ---
-tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow; service-studio
+tags: workflow conversion, workflow builder, workflow management, outsystems platform, app development
 summary: Explore how to convert a Workflow Builder app to Service Studio in OutSystems 11 (O11).
 guid: d1b8c5b6-6844-42f6-91cb-0dd183c2eda4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:907
+audience:
+  - business analysts
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - workflow builder
+coverage-type:
+  - apply
 ---
 
 # Converting a Workflow Builder app to Service Studio

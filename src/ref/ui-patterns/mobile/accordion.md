@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, accordion component, api usage, ui design, outsystems patterns
 summary: Explore accordion management features and APIs in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: e1c30cdd-a7f1-4ce5-aae5-2dddb7a845b9
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1413%3A1728&mode=design&t=xOFe93sVU3cU3chE-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Accordion Reference

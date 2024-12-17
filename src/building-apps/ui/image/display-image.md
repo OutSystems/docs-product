@@ -1,11 +1,18 @@
 ---
 summary: Explore how to display database-stored images in applications using OutSystems 11 (O11).
-tags:
+tags: ide usage, reactive web apps, traditional web apps, binary data handling, image manipulation
 locale: en-us
 guid: 0e4fc725-6ba9-4e5e-8834-71ca8b4aa180
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:102
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Display an Image Stored in the Database

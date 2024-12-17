@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: ui component customization, css customization, web design, carousel customization, outsystems ui
 summary: Explore advanced customization options for Carousel UI components in OutSystems 11 (O11), including external arrow placement and dot styling.
 locale: en-us
 guid: d0b2bc8d-6a37-424d-8399-56e586304c93
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A420&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Carousel Reference

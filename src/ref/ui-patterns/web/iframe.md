@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: outsystems, iframe customization, responsive design, ui development, web development
 summary: Explore Iframe customization for traditional web apps in OutSystems 11 (O11), including responsive width adjustments based on device type.
 locale: en-us
 guid: d2e2b815-ef17-438b-b200-fe7ec9c1cd23
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:485
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Iframe Reference

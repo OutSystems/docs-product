@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, ui design, css customization, event handling, widget configuration
 summary: Explore the features and customization options of the Chat Message UI Pattern in OutSystems 11 for Traditional Web Apps.
 locale: en-us
 guid: 6a62f636-ac37-4f02-8dde-b125bbb18919
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A427&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Chat Message Reference

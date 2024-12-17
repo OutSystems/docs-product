@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3042-298&t=ndVLjp7PlMY2g9Hg-1
 summary: Explore the toolbar functionalities in OutSystems 11 (O11) for managing extensions in Integration Studio.
+tags: ide usage, reactive web apps, tutorials for beginners, extension development, integration studio
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Toolbar
 
 The Toolbar is the area of your [workspace](<workspace.md>) where you can execute the following operations:

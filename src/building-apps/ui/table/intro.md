@@ -1,11 +1,19 @@
 ---
 summary: Explore table creation and editing features in OutSystems 11 (O11) for Reactive Web Apps and Mobile/Progressive Web Apps.
-tags: runtime-reactiveweb;
+tags: ide usage, reactive web apps, tutorials for beginners, table widget, data presentation
 locale: en-us
 guid: 4fbaf92c-a4a3-4acd-9453-c8502ee36d8f
 app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:23
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Creating and editing tables

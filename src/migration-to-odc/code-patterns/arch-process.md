@@ -1,12 +1,22 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: a2ff3f16-e5b9-4ed0-ad63-341083e96101
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30526
+tags: process automation, bpt, process migration, rest apis, outsystems upgrades
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming a Process
 
 Currently in ODC. Processes, whether from [BPTs or Light BPTs, aren't available](elem-bpt.md). This means that ODC Assets can't consume Processes.

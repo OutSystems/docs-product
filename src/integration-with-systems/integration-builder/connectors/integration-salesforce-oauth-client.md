@@ -5,7 +5,18 @@ guid: 32131311-38a7-41ec-84ca-8bfaf82ec229
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: salesforce integration, api configuration, oauth settings, connected apps, digital certificates
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - integration builder
+coverage-type:
+  - apply
 ---
+
 # How to integrate with Salesforce
 
 Enable your OutSystems application to consume or share data with a Salesforce app. This process requires configuration steps in Integration Builder and in Salesforce. This article describes the steps a Salesforce admin takes to create a connected app. It also includes the information an OutSystems developer needs from the Salesforce admin to complete the setup process in Integration Builder.

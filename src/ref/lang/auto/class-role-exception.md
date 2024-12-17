@@ -5,6 +5,15 @@ guid: eba380ac-388a-493d-b166-f806e40a09f1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: role-based access control, user authentication, security, exception handling, permission management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Role Exception

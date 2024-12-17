@@ -6,6 +6,15 @@ guid: fe544d88-12d3-4de4-95b1-687bc64c34bc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data structures, api integration, data management, data modeling, consistency management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Structure

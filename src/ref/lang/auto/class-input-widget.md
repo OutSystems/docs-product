@@ -6,6 +6,15 @@ guid: 194c0eca-3e99-4ee0-9ffd-d153e14b2225
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: input widgets, form validation, user interface, web development, data binding
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Input Widget

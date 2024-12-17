@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb; 
+tags: ui patterns, css naming conventions, outsystems ui, progress bars, api
 summary: Explore the structured use and customization of the Progress Bar in OutSystems 11 (O11) for Mobile and Reactive Web Apps.
 locale: en-us
 guid: fdef91ac-b3e1-4e49-a652-7921c46c9b35
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1317%3A1554&mode=design&t=xOFe93sVU3cU3chE-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Progress Bar Reference

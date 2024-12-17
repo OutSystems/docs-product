@@ -1,11 +1,21 @@
 ---
-tags: 
+tags: technical debt management, code quality, best practices, application lifecycle management, software architecture
 summary: Learn how AI Mentor Studio calculates and displays technical debt in OutSystems 11 (O11).
 locale: en-us
 guid: 521CF7BD-3CE7-4448-8DDE-B5A751B08B82
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:724
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - ai mentor studio
+  - architecture dashboard
+coverage-type:
+  - understand
+  - remember
 ---
 
 # How AI Mentor Studio calculates and shows technical debt

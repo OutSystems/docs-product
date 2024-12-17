@@ -1,11 +1,21 @@
 ---
-tags: Case Management; Case Management framework; CMf;
+tags: configuration, data modeling, outsystems, case management applications, static entities
 summary: OutSystems 11 (O11) enables milestone definitions in case management apps through configuration and data setup modules.
 guid: f27173b5-6489-408e-8259-6d429d569cba
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - backend developers
+  - frontend developers
+  - architects
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # How to enable milestones

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, traditional web apps, content display, user interaction, outsystems ui
 summary: Explore the Flip Content UI Pattern in OutSystems 11 (O11) for interactive content display in Traditional Web Apps.
 locale: en-us
 guid: 859c44ea-109c-48e5-bddd-579f1b21e789
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A103&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Flip Content

@@ -5,6 +5,14 @@ guid: 69801bb7-6818-4061-acb2-4ee403966040
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: web development, security, best practices, html, app development
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Expression Should Be Escaped Warning

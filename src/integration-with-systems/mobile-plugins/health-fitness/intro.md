@@ -5,6 +5,16 @@ guid: 15541b1b-d214-4a3d-b37d-489f6ecd8815
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1265%3A86185&mode=design&t=187UAgmZTPxcY0ZG-1
+tags: mobile development, healthkit integration, health connect integration, plugins, access control
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - remember
+  - apply
 ---
 
 # Health and Fitness Plugin using HealthKit and Health Connect

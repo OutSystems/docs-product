@@ -1,11 +1,19 @@
 ---
 summary: Explore REST API integration and exposure capabilities in OutSystems 11 (O11) for enhanced application interoperability.
-tags: 
+tags: rest api, api integration, api exposure, application interoperability, service actions
 locale: en-us
 guid: e66f1a19-83df-4bb1-ad39-a61cfaaa6bbb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # REST

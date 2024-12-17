@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) enhances chatbot UI with interactive cards compatible with Azure Bot Framework.
-tags:
+tags: chatbots, azure bot service, ui components, json structures, webhooks
 locale: en-us
 guid: 01af56ec-fb0d-44ea-a78f-8323557ee6bf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=409:15
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Reply with cards

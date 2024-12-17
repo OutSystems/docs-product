@@ -1,12 +1,21 @@
 ---
 summary: Learn about cache invalidation using RabbitMQ in OutSystems 11 (O11) to manage data efficiently.
-tags: article-page; version-11
+tags: cache invalidation, performance optimization, message queue, rabbitmq, data management
 helpids: 30176
 locale: en-us
 guid: b3c02281-82f0-4f57-95f9-e357da5114db
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - understand
 ---
 
 # Cache Invalidation in OutSystems 11

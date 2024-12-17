@@ -1,11 +1,19 @@
 ---
 summary: Explore the scalable infrastructure setups for cloud and on-premises environments in OutSystems 11 (O11), covering development to deployment stages.
-tags: support-Infrastructure_Architecture; support-Infrastructure_Architecture-overview; support-installation; support-Installation_Configuration; support-Integrations_Extensions
+tags: cloud infrastructure, on-premises infrastructure, application lifecycle management, environment setup, performance analytics
 locale: en-us
 guid: e0be06cb-e6e3-4a67-8442-6cb74e246378
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=257:0
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - understand
 ---
 
 # Possible setups for an OutSystems infrastructure

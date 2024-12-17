@@ -6,6 +6,16 @@ guid: 4479919f-eabb-4cad-97d0-5e8e990d8524
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ui elements, widgets, boolean control, user interface design, property configuration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Switch

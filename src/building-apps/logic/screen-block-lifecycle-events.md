@@ -1,11 +1,19 @@
 ---
 summary: Explore lifecycle events in OutSystems 11 (O11) for effective management of Mobile and Reactive Web Apps.
-tags: runtime-mobileandreactiveweb; support-application_development; support-Application_Troubleshooting-featured; support-Mobile_Apps
+tags: mobile app development, screen lifecycle, block lifecycle, event handlers, lifecycle events
 locale: en-us
 guid: 9205fe77-5e90-402b-ba73-45cdc745515a
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:4
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Screen and Block Lifecycle Events

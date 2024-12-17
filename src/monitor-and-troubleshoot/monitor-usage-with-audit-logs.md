@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) features detailed audit logs for tracking IT user activities and ensuring infrastructure traceability.
-tags: support-Integrations_Extensions; support-monitoring;  support-monitoring-featured
+tags: audit logs, infrastructure management, security, it user activities, traceability
 locale: en-us
 guid: ff41a92e-5717-4a6c-9016-12acdb4de71f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:120
+audience:
+  - platform administrators
+  - tech leads
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
 ---
 
 # Monitor Usage with Audit Logs

@@ -6,6 +6,15 @@ guid: e2cc47cf-825c-475d-b989-952f2dbf90d3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: resource management, element properties, ide usage, reactive web apps, mobile app development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Resource

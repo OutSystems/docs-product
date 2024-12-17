@@ -1,11 +1,19 @@
 ---
-tags: Case Management; Case Management framework; Multilingual Case Management framework
+tags: localization, application scaling, outsystems development, framework configuration, service studio usage
 summary: Explore the multilingual capabilities of the Case Management framework in OutSystems 11 (O11), supporting multiple languages for application development.
 guid: 2e31ca9c-b4b9-4e3a-9ed3-81172a775fd4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1907
+audience:
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
+  - remember
 ---
 
 # Introduction to multilingual Case Management framework

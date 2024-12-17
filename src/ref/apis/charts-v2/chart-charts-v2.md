@@ -1,11 +1,19 @@
 ---
-tags:
+tags: charting libraries, data visualization, highcharts integration, drag-and-drop ui, service studio chart tools
 summary: Explore customizable charting options in OutSystems 11 (O11) with the enhanced Charts API v2 and Highcharts 11.4.8 integration.
 locale: en-us
 guid: CA58D796-3D68-4221-8DD8-33049ACEA9E5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Charts API v2

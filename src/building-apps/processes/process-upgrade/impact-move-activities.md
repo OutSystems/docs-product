@@ -5,7 +5,19 @@ guid: 64eb9856-d396-4d2b-8df4-a0b23f520787
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:38
+tags: process flows, process upgrade, service center, process instance management, outsystems best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - understand
 ---
+
 # Impact of Moving Activities in Process Flows
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic lists some examples of the impact of moved activities on executing process instances.

@@ -6,6 +6,15 @@ guid: 7a819ca9-6e8b-418a-9270-ad6a8546ea1a
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:332
+tags: traditional web apps, list box widget, user interface components, widget configuration, data binding
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # List Box Widget

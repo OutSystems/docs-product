@@ -4,7 +4,17 @@ locale: en-us
 guid: c0f22c7d-ac63-4704-b50f-97a3c697da44
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: api integration, static code analysis, security and compliance, source code retrieval, continuous deployment
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - platform server
+  - lifetime
+coverage-type:
+  - remember
 ---
 
 # Download source code

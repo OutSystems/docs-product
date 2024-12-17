@@ -1,11 +1,19 @@
 ---
 summary: Explore common data type errors and solutions in OutSystems 11 (O11) for expressions, REST API methods, and widgets.
-tags:
+tags: data types, error handling, troubleshooting, service studio, expressions
 locale: en-us
 guid: cc8e619d-18de-4b4a-a62a-d4058ce5e528
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Data Type Error

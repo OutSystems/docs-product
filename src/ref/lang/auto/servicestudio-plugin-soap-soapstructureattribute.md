@@ -5,6 +5,15 @@ guid: 990d2fb4-4286-477c-9efe-235431ef7833
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web services, structure attributes, data types, field validation, web service integration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Structure Attribute - Consumed SOAP

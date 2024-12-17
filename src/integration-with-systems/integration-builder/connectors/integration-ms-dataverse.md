@@ -5,6 +5,8 @@ guid: ea253851-f067-457e-81e9-8fe3e106decc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6368
+coverage-type:
+  - apply
 ---
 
 # Microsoft Dataverse integration

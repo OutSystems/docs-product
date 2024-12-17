@@ -1,11 +1,22 @@
 ---
 summary: Explore how to configure Active Directory Federation Services as an external identity provider for OutSystems 11 (O11) applications.
-tags: runtime-traditionalwebandreactiveweb
+tags: identity and access management, active directory, security, authentication, single sign-on
 locale: en-us
 guid: f57451e9-8f03-4b77-b895-8502bce6122b
 app_type: traditional web apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - lifetime
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Configuring Active Directory Federation Services as external identity provider

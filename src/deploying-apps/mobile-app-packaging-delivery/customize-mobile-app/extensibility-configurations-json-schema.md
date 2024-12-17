@@ -1,11 +1,19 @@
 ---
 summary: Explore JSON schema for mobile app extensibility configurations in OutSystems 11 (O11).
-tags: runtime-mobile
+tags: json schema, mobile app development, plugin management, mobile app configuration, outsystems platform
 locale: en-us
 guid: 232410a7-d16f-4258-9742-d9b6f294c600
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Extensibility configurations JSON schema

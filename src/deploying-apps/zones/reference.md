@@ -5,6 +5,17 @@ guid: 73511ea5-c2d6-493a-9d84-bbc699e84fc5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: deployment zones, on-premises, application management, environment configuration, internal communications
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - frontend developers
+  - architects
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
 # Deployment Zones Reference

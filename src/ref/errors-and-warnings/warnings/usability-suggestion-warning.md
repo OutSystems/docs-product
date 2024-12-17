@@ -5,6 +5,15 @@ guid: 8df1dab2-62e4-4d27-aa62-05c7a2fe8612
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ui patterns, error handling, user experience, data submission, validations
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Usability Suggestion Warning

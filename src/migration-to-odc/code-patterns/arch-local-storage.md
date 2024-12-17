@@ -1,12 +1,22 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 8639ad48-cd26-4273-8175-65db6a3f241d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7558
 helpids: 30525
+tags: local storage entities, architecture migration, outsystems development, code migration, app development best practices
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming a Local Storage Entity
 
 In ODC, Assets can't have dependencies to Local Storage Entities from other Assets. Furthermore, Libraries can't consume Entities.

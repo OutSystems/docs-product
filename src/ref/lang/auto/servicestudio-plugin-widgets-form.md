@@ -6,6 +6,14 @@ guid: 0e4bedbe-6a83-44f4-8c55-969878cb2fc4
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: web development, input validation, user interface design, form design, outsystems platform
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Form Widget

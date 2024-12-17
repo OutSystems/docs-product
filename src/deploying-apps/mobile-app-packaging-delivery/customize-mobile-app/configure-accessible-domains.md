@@ -1,11 +1,17 @@
 ---
 summary: OutSystems 11 (O11) allows configuring accessible domains for mobile apps to enhance security through allowlists.
-tags: runtime-mobile
+tags: security, configuration, extensibility, app deployment, access control
 locale: en-us
 guid: 0b12a757-5043-40ae-ac5f-4f009d2d5c5c
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:230
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Configure Accessible Domains for Your Mobile App

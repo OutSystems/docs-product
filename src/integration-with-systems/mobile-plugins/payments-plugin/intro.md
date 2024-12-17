@@ -1,11 +1,21 @@
 ---
 summary: Enable mobile payments in your apps using the OutSystems 11 (O11) Payments Plugin for Apple Pay and Google Pay integration.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+tags: mobile payments integration, outsystems, plugin configuration, mobile app development, payment gateways
 locale: en-us
 guid: 4a79c8ee-2a07-11ed-882b-00155da4f25e
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2407:15058
+audience:
+  - mobile developers
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - remember
+  - apply
 ---
 
 # Payments Plugin

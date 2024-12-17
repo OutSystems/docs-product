@@ -1,11 +1,20 @@
 ---
 summary: Explore SQL query functionalities within OutSystems 11 (O11) for optimized data manipulation and testing.
-tags: support-Database
+tags: sql queries, data manipulation, input parameters, output parameters, service studio sql tool
 locale: en-us
 guid: 17f9fae0-ed62-44a4-befb-788f5206fad0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:10
+audience:
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+  - remember
 ---
 
 # SQL Queries

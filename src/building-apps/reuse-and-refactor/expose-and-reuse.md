@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) enables the exposure and reuse of module functionalities, distinguishing between producer and consumer modules.
-tags: support-Mobile_Apps; support-webapps
+tags: module interactions, service architecture, application development, dependencies management, functionality exposure
 locale: en-us
 guid: 4b07ffa2-b09c-4ce8-a7b0-7b18aef4ca47
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:11
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Expose and reuse functionality between modules

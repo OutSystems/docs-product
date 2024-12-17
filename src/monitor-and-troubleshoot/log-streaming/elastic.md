@@ -1,11 +1,22 @@
 ---
 summary: Explore how to stream logs from OutSystems 11 (O11) applications to Elastic APM by configuring LifeTime with the necessary credentials.
-tags: 
+tags: log management, application monitoring, elastic stack, performance analysis, observability
 locale: en-us
 guid: 1b3c1db5-f89c-4ec8-a921-d91cbff3a4ea
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - backend developers
+  - full stack developers
+  - tech leads
+  - infrastructure managers
+outsystems-tools:
+  - lifetime
+  - platform server
+coverage-type:
+  - apply
 ---
 
 # Stream logs to Elastic 

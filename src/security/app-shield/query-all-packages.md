@@ -1,12 +1,19 @@
 ---
 summary: Learn how OutSystems 11 (O11) utilizes AppShield to manage the QUERY_ALL_PACKAGES permission in Android apps for compliance and security.
-tags: support-application_development; runtime-mobile; 
+tags: android development, app security, compliance, google play policies, permission handling
 locale: en-us
 guid: 3e8ca8cc-4c36-4948-8fdb-2ac789698b01
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+outsystems-tools:
+  - none
+coverage-type:
+  - apply
 ---
+
 # Query All Packages permission in Android apps using AppShield
 
 <div class="info" markdown="1">

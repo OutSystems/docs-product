@@ -5,6 +5,17 @@ guid: 089b0bf9-4ff6-462f-b6ec-43c2d10472e1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: security, ssl configuration, secure communication, https, ssl certificate
+audience:
+  - platform administrators
+  - full stack developers
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Use HTTPS by Enabling SSL

@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, page navigation, widget configuration, service studio guide, outsystems ui framework
 summary: Explore how to implement and customize the Section Index UI Pattern in OutSystems 11 (O11) for efficient on-page navigation in Traditional Web Apps.
 locale: en-us
 guid: f3a3a460-60ea-4f88-9eb2-0fda7bce73b3
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A38&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Section Index

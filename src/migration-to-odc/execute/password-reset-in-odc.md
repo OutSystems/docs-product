@@ -4,7 +4,16 @@ guid: ec56a386-83fb-44d9-8bf6-2210eaefa7f4
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
-figma: 
+figma:
+tags: password management, user authentication, security, email verification, account recovery
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Password reset in ODC

@@ -1,11 +1,21 @@
 ---
-tags: 
+tags: ide usage, reactive web apps, tutorials for beginners, outsystems platform, user authentication
 summary: Explore the setup and user association processes for AI Mentor Studio in OutSystems 11 (O11).
 locale: en-us
 guid: c9fd26ba-85ea-406d-834a-df6c0399d11a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:604
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - ai mentor studio
+  - lifetime
+  - architecture dashboard
+coverage-type:
+  - apply
 ---
 
 # How to set up AI Mentor Studio

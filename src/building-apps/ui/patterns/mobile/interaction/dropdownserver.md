@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, dropdown implementation, user experience, data handling, ui customization
 summary: Explore the customizable Dropdown Server Side UI pattern in OutSystems 11 (O11) for managing complex dropdown use cases.
 locale: en-us
 guid: 8B9A073C-74E8-4019-84DE-C686AAFAC59A
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3562:27976
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Dropdown Server Side

@@ -1,11 +1,19 @@
 ---
 summary: Explore how to integrate your own data into your use-case app in OutSystems 11 (O11) by replacing sample data with external sources.
-tags:
+tags: data integration, external data sources, data import, user interface development, app customization
 locale: en-us
 guid: 26564166-8c97-4176-a172-1a16703d86d7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=2318:1867
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Using your own data in your app

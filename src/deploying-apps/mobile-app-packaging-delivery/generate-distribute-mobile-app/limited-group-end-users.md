@@ -1,11 +1,20 @@
 ---
 summary: Learn how to generate and distribute your mobile app to a limited group of end users using OutSystems 11 (O11).
-tags: runtime-mobile; support-mobile
+tags: mobile app deployment, mobile app distribution, ios app distribution, apple developer, provisioning profile
 locale: en-us
 guid: bc8c19e3-512c-4be4-b900-f8f5c1880832
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - none
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Generate and Distribute Your Mobile App to a Limited Group of End Users

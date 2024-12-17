@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1:89
 summary: Explore the comprehensive guide to built-in functions, widgets, and plugins in OutSystems 11 (O11).
+tags: outsystems 11, widgets guide, built-in functions, ide usage, reactive web apps
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # OutSystems Language
 
 ## Index

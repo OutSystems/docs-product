@@ -1,11 +1,19 @@
 ---
 summary: Explore the capabilities of the RuntimePublic.Db API in OutSystems 11 (O11) for integrating with external databases through extension modules.
-tags: article-page; support-application_development; support-Database; support-Integrations_Extensions
+tags: api integration, external databases, .net development, database access, database transactions
 locale: en-us
 guid: 09f23dc2-a597-49ed-a083-21921deec622
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
 
 # RuntimePublic.Db API

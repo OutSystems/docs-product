@@ -1,11 +1,19 @@
 ---
 summary: Learn how to refresh and manually update REST web services in OutSystems 11 (O11) using Service Studio for improved API integration.
-tags: support-Integrations_Extensions
+tags: rest api integration, api consumption, service studio guide, updating services, integration best practices
 locale: en-us
 guid: 051817d3-80d3-4bdf-bdb7-af69b96f58eb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=716:388
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Refresh a REST web service

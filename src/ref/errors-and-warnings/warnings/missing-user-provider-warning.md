@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) troubleshooting guide for resolving missing User Provider module errors during application runtime.
-tags:
+tags: outsystems, troubleshooting, application runtime, platform server, user provider
 locale: en-us
 guid: 708e1290-d4e0-4877-96fa-19876fd8b685
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - unblock
 ---
 
 # Missing User Provider Warning

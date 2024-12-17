@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3065-134&t=0cuQUgeosMV2m0Kw-1
 summary: Explore how OutSystems 11 (O11) manages resource properties and deployment actions in its Resource Editor.
+tags: resource management, extension properties, deployment configuration, platform server directories, resource properties
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Resource Editor
 
 The Resource Editor allows you to edit the properties of a resource that belongs to your extension. This editor is displayed when a resource is selected in the [Resources tree](<../resources-tree.md>) or in the [Multi-tab Editor](<../multi-tab-editors.md>).

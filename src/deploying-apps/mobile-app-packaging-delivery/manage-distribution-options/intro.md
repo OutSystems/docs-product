@@ -1,11 +1,20 @@
 ---
 summary: Explore mobile app updates distribution options in OutSystems 11 (O11), including store-only and hybrid updates.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps
+tags: mobile app distribution, app updates, native builds, store updates, mobile apps configuration
 locale: en-us
 guid: c9f2e601-8b4c-4dc7-93d4-e456c058b6f4
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=310:36
+audience:
+  - mobile developers
+  - platform administrators
+outsystems-tools:
+  - platform server
+  - lifetime
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Technical Preview - Configure mobile apps updates distribution

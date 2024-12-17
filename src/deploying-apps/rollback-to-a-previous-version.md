@@ -1,11 +1,19 @@
 ---
 summary: Learn how to rollback to a previous application version using OutSystems 11 (O11) through tagging or republishing solutions.
-tags: support-Application_Lifecycle-featured
+tags: application lifecycle management, rollback strategies, deployment, version control, outsystems platform
 locale: en-us
 guid: 49b59373-a60e-4d93-8399-41084f083f51
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:105
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service center
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Rollback to a Previous Version

@@ -5,6 +5,15 @@ guid: bdac6bb2-8fa2-4c3b-b006-d30a08fa4566
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data dependencies, fetch properties, error handling, circular dependencies, application performance
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Data Dependency

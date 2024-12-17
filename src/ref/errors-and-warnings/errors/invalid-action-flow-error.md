@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) addresses common logic flow errors in application development, providing solutions and guidelines for corrective actions.
-tags:
+tags: error handling, logic flows, best practices, debugging, ide usage
 locale: en-us
 guid: b477089c-5ad9-4310-9978-a7367e20e7de
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:434
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Action Flow Error

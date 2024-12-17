@@ -6,6 +6,15 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1526:2630
 summary: Explore how OutSystems 11 (O11) utilizes site properties to manage global variables and integrate secure data handling in applications.
+tags: global variables, data management, application configuration, security, ide usage, reactive web apps
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Site property

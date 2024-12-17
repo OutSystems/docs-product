@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui design, customization
 summary: Explore how to use the Tag UI Pattern in OutSystems 11 (O11) to enhance user interfaces by styling texts with customizable colors, shapes, and sizes.
 locale: en-us
 guid: ad4f4ddf-d346-4347-b78d-8741dea7cb94
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:66
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Tag

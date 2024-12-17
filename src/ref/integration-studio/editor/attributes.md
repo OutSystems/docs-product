@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3063-4&t=0cuQUgeosMV2m0Kw-1
 summary: Explore how OutSystems 11 (O11) enhances attribute management in extensions through its Attributes Editor.
+tags: extension development, attribute management, ui design, service studio ide, entity management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Attributes Editor
 
 The Attributes Editor allows you to edit the properties of the [structure attributes](<../element-property/structure-attribute.md>) and [entity attributes](<../element-property/entity-attribute.md>) that belongs to your extension.

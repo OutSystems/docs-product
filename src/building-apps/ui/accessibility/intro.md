@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) integrates WCAG-compliant accessibility features, enabling developers to create universally usable apps.
-tags: article-page; runtime-mobileandreactiveweb
+tags: accessibility, ui design, wcag, ethical development, legal compliance
 locale: en-us
 guid: 845ea0d1-6110-4a9f-a4ca-19e53b178825
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:9
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
+  - evaluate
+  - apply
 ---
 
 # Accessibility

@@ -1,12 +1,20 @@
 ---
-tags: support-Integrations_Extensions
+tags: soap, web services, integration, wsdl, xml
 locale: en-us
 guid: ad3eafdc-ad10-415d-bcd6-21a2ef277cd1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A33&mode=design&t=8a1ub9syb4QKHbuk-1
 summary: Learn how to expose a SOAP Web Service in OutSystems 11 (O11) by setting properties, adding methods, and configuring namespaces.
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
+
 # Expose a SOAP Web Service
 
 To expose a SOAP Web Service, do the following:

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: progress bar, css customization, web development, ui components, dynamic styling
 summary: Explore progress bar customization in OutSystems 11 (O11) with layout options, CSS, and dynamic color changes.
 locale: en-us
 guid: e574e089-b093-408e-9ed1-6850d664a81d
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A535&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Progress Bar Reference

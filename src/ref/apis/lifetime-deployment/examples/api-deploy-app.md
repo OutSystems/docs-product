@@ -5,6 +5,16 @@ guid: e243c532-467c-428e-aa5a-79915621e280
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: api integration, deployment automation, continuous delivery, software lifecycle management, outsystems api
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - tech leads
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
 ---
 
 # Deploy an Application using the LifeTime API

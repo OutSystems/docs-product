@@ -1,11 +1,24 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates SAML 2.0 for federated authentication, enabling SSO and addressing current limitations and configuration steps.
-tags: runtime-traditionalwebandreactiveweb
+tags: saml 2.0, federated authentication, single sign-on, identity provider, security
 locale: en-us
 guid: 47803c16-1495-4db3-b9e5-10dbd77538a9
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:72
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - apply
+  - remember
+  - unblock
 ---
 
 # Configure SAML 2.0 Authentication

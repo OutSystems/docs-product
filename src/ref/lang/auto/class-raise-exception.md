@@ -5,6 +5,15 @@ guid: 28c483f0-bb37-4212-848b-dca6d34dad5c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=857:1418
+tags: exception handling, error management, service studio, user experience, application development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Raise Exception

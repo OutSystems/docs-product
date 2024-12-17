@@ -1,12 +1,23 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: f74beda0-279a-499c-932d-5ad57587c8f3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7805
 helpids: 30529
+tags: application development, application migration, app dependencies, outsystems best practices, dependency management
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming a Screen in mobile app
 
 A dependency to a Screen is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.

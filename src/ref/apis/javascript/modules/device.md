@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags: mobile development, cordova, device apis, javascript, event handling
 summary: Explore device capabilities in OutSystems 11 (O11) with the `whenReady` function, ensuring native API readiness.
 locale: en-us
 guid: cb9a46ef-3b0c-48e2-9307-8fa4d00567e3
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Device

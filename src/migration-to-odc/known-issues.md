@@ -1,10 +1,12 @@
 ---
-summary: Current technical issues and recommendations in the migration of the OutSystems O11 apps to ODC, with recommendations how to address the issues where possible. 
+summary: Current technical issues and recommendations in the migration of the OutSystems O11 apps to ODC, with recommendations how to address the issues where possible.
 locale: en-us
 guid: 84c331ff-513c-4e1f-ae7c-df9dfaac44f1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+coverage-type:
+  - remember
 ---
 
 # Known issues

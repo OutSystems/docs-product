@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3387%3A2058&mode=design&t=187UAgmZTPxcY0ZG-1
 summary: Learn how to ensure your extension is error-free using the Verify the Extension Definition operation in OutSystems 11 (O11).
+tags: error handling, extension validation, outsystems ide, outsystems platform, version control
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
+
 # Verify the Extension Definition
 
 The Verify the Extension Definition operation checks whether the extension is valid. An extension is valid if it does not have any errors, although warnings are allowed.

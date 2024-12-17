@@ -1,11 +1,19 @@
 ---
 summary: Explore how to manage and utilize Process Entities in OutSystems 11 (O11) for enhanced process runtime management.
-tags: support-application_development; support-webapps
+tags: process management, process entities, application logic, system actions, process runtime information
 locale: en-us
 guid: 8a78e373-ba94-47e7-94e2-0b7dad3296c2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Use Process Entities

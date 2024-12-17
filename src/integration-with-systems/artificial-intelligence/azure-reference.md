@@ -1,11 +1,21 @@
 ---
 summary: Explore the necessary Azure resources for OutSystems 11 (O11) AI components and connectors detailed in this reference guide.
-tags:
+tags: azure services, ai and ml, chatbots, cognitive services, luis
 locale: en-us
 guid: bff3062c-8092-4b41-abf7-b315d1035d39
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - backend developers
+  - architects
+  - platform administrators
+  - data engineers
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
 # The Azure resources reference

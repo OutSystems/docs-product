@@ -5,6 +5,15 @@ guid: 00c4300a-4dd9-4770-a540-ddec24bc8d79
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems, dependency management, application lifecycle management, application troubleshooting, best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Outdated Consumer Info

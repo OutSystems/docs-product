@@ -5,6 +5,14 @@ guid: d9b03ed2-6a7e-4674-8c03-fec66386a573
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sql query optimization, database performance, entity management, query wildcards, software maintenance
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Maintenance Suggestion Warning

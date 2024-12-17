@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) enhances application maintainability by allowing logic encapsulation within actions that can be reused across modules.
-tags: support-application_development; support-webapps-featured
+tags: ide usage, reactive web apps, tutorials for beginners, application maintenance, logic reusability
 locale: en-us
 guid: cd22e454-c0cf-4a69-809f-6d6463f67e4c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:6
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Use Actions to Encapsulate Logic

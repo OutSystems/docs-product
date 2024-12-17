@@ -1,12 +1,24 @@
 ---
 summary: OutSystems 11 (O11) enables SEO-friendly URLs for Reactive Web apps, requiring specific server and studio versions.
-tags: 
+tags: seo optimization, platform server, ssl configurations, infrastructure setup, seo best practices
 locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3329%3A27075&mode=design&t=vStGeN187wwjAjiU-1
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - understand
+  - apply
+  - evaluate
 ---
+
 # SEO-friendly URLs for Reactive Web apps  
 
 ## Prerequisites  

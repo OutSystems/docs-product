@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, responsive design, web development, cross-browser compatibility, customization
 summary: Explore the features and customization options of the Layout Popup in OutSystems 11 for Traditional Web Apps, including responsive breakpoint adjustments.
 locale: en-us
 guid: b363b2eb-6bee-41e0-a0a5-926d6a67f1dd
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:497
+audience:
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Layout Popup Reference

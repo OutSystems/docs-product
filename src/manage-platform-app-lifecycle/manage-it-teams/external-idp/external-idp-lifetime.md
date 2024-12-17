@@ -1,11 +1,19 @@
 ---
 summary: Learn to configure OIDC authentication in OutSystems 11 (O11) LifeTime, including local administrator setup and scope management.
-tags:
+tags: authentication, oidc, security, single sign-on, user management
 locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1914:7765
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Configuring LifeTime authentication

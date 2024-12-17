@@ -1,11 +1,21 @@
 ---
 summary: Learn more about configuring your app settings once they've been migrated to ODC
-tags: 
+tags: app migration, configuration management, cloud services, security, custom domains
 guid: 024212bc-2069-42b6-ac89-aa024b0e9410
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?m=auto&node-id=2150-444&t=HG8PieYurYat1wsj-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - portal
+coverage-type:
+  - apply
 ---
 
 # Configure migrated apps

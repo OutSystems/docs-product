@@ -1,11 +1,21 @@
 ---
 summary: Explore advanced PWA settings and customizations in OutSystems 11 (O11) for enhanced mobile app development.
-tags: support-application_development; runtime-mobile;
+tags: pwa, customization, extensibility configurations, json, mobile app development
 locale: en-us
 guid: 418aac4c-1cdc-40b2-9b69-ba4fd68527f7
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1818:838
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - apply
+  - remember
 ---
 
 # Advanced settings and customizations

@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) enhances app visibility and user experience through SEO, with considerations for performance during SEO rules synchronization.
-tags: runtime-traditionalweb
+tags: seo, web development, app production, traffic analytics, user experience
 locale: en-us
 guid: C07BCA11-7DB2-49FD-B01B-97EBFBDCF36F
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Search engine optimization in apps

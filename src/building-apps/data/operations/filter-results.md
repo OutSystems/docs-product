@@ -1,11 +1,19 @@
 ---
 summary: Learn how to filter query results in OutSystems 11 (O11) by adding conditions to Aggregates.
-tags: support-application_development; support-Database; support-webapps
+tags: database queries, aggregates, filters, data retrieval, query conditions
 locale: en-us
 guid: ed7fd28f-d0a7-4b18-bddc-6ee0521677bf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:0
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Filter Query Results

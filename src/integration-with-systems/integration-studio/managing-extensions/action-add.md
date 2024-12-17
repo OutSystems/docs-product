@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3739-243&t=0k6vqSszFayqzk9h-1
 summary: Explore how to manually add and configure actions in OutSystems 11 (O11) extensions for enhanced functionality.
+tags: extension development, integration studio, web services, extension properties, action configuration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - integration studio
+coverage-type:
+  - apply
 ---
+
 # Add an Action
 
 Once you have created your extension you may manually add the actions that you want to expose in the extension.

@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3063-7&t=0cuQUgeosMV2m0Kw-1
 summary: Learn how to manage and edit entity properties in OutSystems 11 (O11) using the Entity Editor.
+tags: entity management, database integration, ide usage, outsystems development, data modeling
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Entity Editor
 
 The Entity Editor allows you to edit the [properties](<../element-property/entity.md>) of an entity that belongs to your extension.

@@ -6,6 +6,15 @@ guid: 65e7dfbe-2def-4858-85fb-adaf71d7c774
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1477
+tags: data import, entity management, excel integration, workflow implementation, data transformation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Excel To Record List

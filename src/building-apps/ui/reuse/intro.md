@@ -1,11 +1,18 @@
 ---
 summary: Explore how OutSystems 11 (O11) enhances UI reusability and maintainability through the use of Blocks and Web Blocks.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps; support-Front_end_Development-overview
+tags: ui components, user interface design, application maintenance, reusability, screen design
 locale: en-us
 guid: 3c67d197-93c9-4620-8f3d-719e15405278
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:0
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Reuse UI

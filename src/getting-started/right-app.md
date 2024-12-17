@@ -1,11 +1,19 @@
 ---
 summary: Explore app development options in OutSystems 11 (O11) for various platforms, including Reactive Web Apps and Mobile Apps, to suit different project needs.
-tags: support-application_development; support-Mobile_Apps-overview; support-webapps-overview
+tags: app development platforms, cross-platform development, progressive web apps, outsystems development, visual development
 locale: en-us
 guid: 1945689d-cfc3-497f-b313-a8cf051a18d9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=1:89
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Choose the right app for your project

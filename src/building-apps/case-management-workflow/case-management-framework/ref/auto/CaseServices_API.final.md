@@ -5,6 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process management, case management, api, workflow automation, service apis
+audience:
+  - backend developers
+  - frontend developers
+  - full stack developers
+  - architects
+  - business analysts
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - remember
 ---
 
 # Case Services API

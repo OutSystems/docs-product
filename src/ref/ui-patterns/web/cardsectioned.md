@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, responsive design, css, accessibility, web development
 summary: Explore the Card Sectioned UI Pattern in OutSystems 11 (O11), detailing layout, CSS classes, and responsive orientation adjustments.
 locale: en-us
 guid: 31a87c67-318b-4a23-8ce5-f46cdca4a0ab
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:416
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Card Sectioned Reference

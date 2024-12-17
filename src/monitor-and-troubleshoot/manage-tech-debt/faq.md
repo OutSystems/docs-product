@@ -1,11 +1,20 @@
 ---
-tags:
+tags: technical debt management, code analysis, api integration, license management, outsystems platform
 summary: Explore the capabilities and integration options of OutSystems 11 (O11) with AI Mentor Studio for enhanced code analysis and technical debt management.
 locale: en-us
 guid: d7db51a1-9917-4baa-a36e-716dc0c75d96
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - ai mentor studio
+  - lifetime
+coverage-type:
+  - none
 ---
 
 # AI Mentor Studio FAQs

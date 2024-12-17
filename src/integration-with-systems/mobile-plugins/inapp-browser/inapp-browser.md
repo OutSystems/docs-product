@@ -5,6 +5,14 @@ locale: en-us
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3732-79&t=Ib80O7AL6sHpUAoc-0
+tags: plugin implementation, external url integration, webview customization, mobile app development, cordova api
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # InApp Browser plugin

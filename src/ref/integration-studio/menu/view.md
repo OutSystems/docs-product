@@ -5,6 +5,14 @@ guid: 208451d7-67e3-43f8-bf9d-8250f7d4e78c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ide customization, ui development, user interface configuration, extension development, development environment setup
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # View Menu

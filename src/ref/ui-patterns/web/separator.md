@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, separator pattern, web development, outsystems ui, css customization
 summary: Explore the Separator UI Pattern in Traditional Web Apps using OutSystems 11 (O11), detailing layout, CSS selectors, and advanced use cases.
 locale: en-us
 guid: fb3e8080-28b4-44a2-89dd-0c5c940c7e5a
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:570
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Separator Reference

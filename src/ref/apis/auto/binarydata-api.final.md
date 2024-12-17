@@ -1,11 +1,19 @@
 ---
 summary: Explore the BinaryData API in OutSystems 11 (O11) for manipulating binary content, including conversions and size calculations.
-tags: 
+tags: binary data manipulation, api documentation, data transformation, encoding, base64 encoding
 locale: en-us
 guid: 17494f81-67a9-4e24-833a-a4a7713e0255
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # BinaryData API

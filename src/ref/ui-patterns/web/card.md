@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui customization, css, web development, component customization, design systems
 summary: Explore card component customization in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 64b922a7-ca05-4d8f-bb40-2c75539b0bc2
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:405
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Card Reference

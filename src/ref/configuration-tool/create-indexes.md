@@ -5,6 +5,15 @@ guid: d70c93e7-404e-468d-b405-3711108e5311
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database performance, index management, database configuration, platform server, timeout settings
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - platform server
+coverage-type:
+  - remember
 ---
 
 # Creating indexes for platform database tables

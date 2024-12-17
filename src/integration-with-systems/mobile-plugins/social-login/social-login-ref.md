@@ -1,11 +1,19 @@
 ---
 summary: Explore the Social Login plugin functionalities and error handling for OutSystems 11 (O11).
-tags: runtime-mobile
+tags: social authentication, plugin integration, identity management, oauth, error handling
 locale: en-us
 guid: 126ae5a9-3ac9-4f2c-a40d-a1cd4f107b5a
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Social Login Plugin - Reference Page

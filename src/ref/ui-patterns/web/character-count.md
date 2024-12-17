@@ -1,11 +1,17 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, web development, traditional web, outsystems ui, design systems
 summary: Explore the layout and classes of the Character Count UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 0aff7fc0-9c0e-4ff5-9736-588beddc3335
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A433&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Character Count Reference

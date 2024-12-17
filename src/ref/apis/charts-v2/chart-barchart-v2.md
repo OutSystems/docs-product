@@ -1,11 +1,19 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, chart visualization, data binding
 summary: Learn how to create and customize a Bar Chart with a legend in OutSystems 11 (O11) using fixed or variable data.
 locale: en-us
 guid: 63FB9BE0-A9BA-4173-8BF2-8049B69DCC6B
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2453:4384
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Bar Chart

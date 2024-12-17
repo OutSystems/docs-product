@@ -1,12 +1,23 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: bf0d4524-95c4-477b-9254-1e369a3f1f80
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-6594
 helpids: 30519
+tags: code migration, server actions, service actions, dependency management, refactoring code
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming an ODC application Server Action
 
 A dependency to a Server Action is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.

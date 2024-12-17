@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: iframe integration, ui development, ui patterns, dependency management, web development
 summary: OutSystems 11 (O11) supports the integration of Iframe UI Pattern for displaying external app content in Traditional Web Apps.
 locale: en-us
 guid: e334605f-9e05-484e-b50e-5450497c2412
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:0
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Iframe

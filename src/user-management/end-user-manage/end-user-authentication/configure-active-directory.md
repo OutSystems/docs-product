@@ -5,6 +5,17 @@ guid: b4a590a6-d9e2-4f0a-80c4-d3ac9f3bd14b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:62
+tags: active directory, authentication, security, configuration, it administration
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+  - infrastructure managers
+outsystems-tools:
+  - service studio
+  - users application
+coverage-type:
+  - apply
 ---
 
 # Configure Active Directory authentication

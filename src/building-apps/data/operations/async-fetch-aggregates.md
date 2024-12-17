@@ -1,11 +1,13 @@
 ---
 summary: OutSystems 11 (O11) supports asynchronous data fetching in Mobile Apps and Reactive Web Apps using master-detail patterns with Aggregates.
-tags: support-application_development; support-Database; runtime-mobileandreactiveweb;
+tags: support-application_development, support-database, runtime-mobileandreactiveweb
 locale: en-us
 guid: dddc4580-fe09-42b7-8795-9fc35f3fd803
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:9
+coverage-type:
+  - apply
 ---
 
 # Implement asynchronous data fetching using Aggregates

@@ -5,6 +5,15 @@ guid: 4160f6d7-1bcd-4299-80b7-5ccd8bbc42d2
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: web development, outsystems development, ui components, web blocks
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Web Block Widget

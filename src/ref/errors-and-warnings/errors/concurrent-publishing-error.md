@@ -1,11 +1,19 @@
 ---
 summary: Explore how to resolve concurrent publishing errors in OutSystems 11 (O11) when modules are locked during simultaneous operations.
-tags:
+tags: concurrent publishing, deployment, error resolution, module locking, personal area
 locale: en-us
 guid: d16fc208-4a45-4e8e-a4d1-d271d33f00a4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - unblock
 ---
 
 # Concurrent Publishing Error

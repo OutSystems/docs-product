@@ -1,12 +1,24 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: d7657c47-7cd9-4bc1-a8be-54d25c20233d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30537
+tags: ide usage, reactive web apps, migration, integration, extensions
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - integration studio
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming an extension
 
 An [Extension](../../integration-with-systems/integration-studio/getting-started/extension.md) is a set of actions, structures, and entities, defined in Integration Studio, that allows integration with external systems and the usage of custom C# code.

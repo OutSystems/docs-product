@@ -5,6 +5,15 @@ guid: f4d76631-b342-403c-bbfc-516c9b53f250
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: email functionality, server-side logic, application development, platform-specific, email validation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Email

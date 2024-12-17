@@ -5,6 +5,15 @@ guid: 0306c69d-0c0d-440f-9016-34367cda685d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems development, best practices, entity management, process automation, error handling
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Missing Entity Filter Warning

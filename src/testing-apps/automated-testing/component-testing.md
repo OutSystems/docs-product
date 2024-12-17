@@ -5,6 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/9aIL4vSsuMMBfHMQDs8PLm/OutSystems%20Testing%20Guidelines?node-id=642:247
+tags: component testing, bddframework, gherkin syntax, test automation, quality assurance
+audience:
+  - frontend developers
+  - full stack developers
+  - test engineers
+outsystems-tools:
+  - service studio
+  - forge
+  - bddframework
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Component Testing

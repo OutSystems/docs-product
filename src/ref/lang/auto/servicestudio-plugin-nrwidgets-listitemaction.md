@@ -6,6 +6,15 @@ guid: 0cfabe1b-7274-404a-901d-e334b007fb26
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:344
+tags: mobile app development, user interface design, swipe gesture handling, design patterns
+audience:
+  - mobile developers
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # List Action

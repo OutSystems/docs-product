@@ -1,13 +1,22 @@
 ---
-tags: 
+tags: image optimization, performance enhancement, best practices, load times, image compression
 summary: OutSystems 11 (O11) addresses the challenge of optimizing image sizes for web and mobile applications to enhance load times and performance.
 locale: en-us
 guid: ea0f4bea-2a44-4d6d-bd9b-1ec11f8beffa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - unblock
+  - evaluate
 ---
-
 
 # Control image size
 

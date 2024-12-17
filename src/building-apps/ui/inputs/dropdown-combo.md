@@ -1,11 +1,19 @@
 ---
 summary: Explore how to implement Dropdown and Combo Box widgets for user selection in OutSystems 11 (O11) applications.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, ui components, user interface design
 locale: en-us
 guid: bc593b2b-0d5d-45ea-9f3d-4fb99df6dedb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:36
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Choose One Value from a List

@@ -5,6 +5,16 @@ guid: a5293dd0-7718-4b6e-a560-a807edb69083
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database design, data modeling, entity management, application development, data types
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Entity Attribute

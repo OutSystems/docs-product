@@ -1,11 +1,13 @@
 ---
-tags: 
+tags:
 summary: Learn how to enable and configure data editing in OutSystems 11 (O11) Data Grid by setting the AllowColumnEdit property to true and adding column widgets.
 guid: 2f8a50d1-be34-401b-bd4a-c27ba72b37f7
 locale: en-us
 app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?type=design&node-id=1168%3A0&mode=design&t=bneC7SMvNg6A2EZ4-1
+coverage-type:
+  - apply
 ---
 
 # How to edit data in the OutSystems Data Grid

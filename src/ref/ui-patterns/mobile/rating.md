@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb; 
+tags: component customization, ui design, outsystems ui, api documentation, events handling
 summary: Explore the features and API of the Rating component in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: cde868f5-0402-49de-8c91-0754724634cc
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1324%3A1568&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Rating

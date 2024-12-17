@@ -1,11 +1,21 @@
 ---
 summary: Explore how OutSystems 11 (O11) utilizes Site Properties to configure application behaviors dynamically at runtime without republishing.
-tags: support-Mobile_Apps; support-webapps
+tags: configuration management, environment management, global variables, runtime behavior, application deployment
 locale: en-us
 guid: cab950c5-aaec-4e83-a318-9d74a7e789b4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:22
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Use Site Properties to Configure Behaviors at Runtime

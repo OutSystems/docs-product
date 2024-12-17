@@ -6,7 +6,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=2836%3A4492&mode=design&t=Ix2yojgoXorQvo4C-1
 summary: OutSystems 11 (O11) includes Timers for scheduling and executing periodic application logic efficiently.
+tags: batch jobs, timers, scheduler service, system architecture, database management
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - remember
 ---
+
 # Timer
 
 A Timer is an OutSystems tool that allows executing application logic periodically on a scheduled time. These are also known as **batch jobs**.

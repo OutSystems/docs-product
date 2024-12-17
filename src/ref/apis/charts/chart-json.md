@@ -1,12 +1,21 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, chart customization, highcharts api
 summary: OutSystems 11 (O11) enables advanced chart customization through JSON snippets using the Highcharts API.
 locale: en-us
 guid: 92266737-d5de-4683-9446-57c1aff419f3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:504
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Advanced Charts customization with JSON
 
 Since OutSystems Charts uses the Highcharts API, you can customize and change your Chart by using [Highcharts configuration options](https://api.highcharts.com/highcharts/). These configuration options are defined as JSON snippets and can be used in the **AdvancedFormat** \> **HighchartsJSON** field of a Chart.

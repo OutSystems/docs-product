@@ -5,6 +5,17 @@ guid: c62b20a1-5cec-4050-9139-e46b4c55395f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: logging, performance monitoring, system administration, database queries, oracle sql
+audience:
+  - mobile developers
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Query log data

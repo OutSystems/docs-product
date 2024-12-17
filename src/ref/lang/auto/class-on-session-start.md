@@ -5,6 +5,15 @@ guid: 6b2deaab-c532-4326-9934-c042c42271de
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: session management, system events, authentication, permissions, multi-tenancy
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # On Session Start

@@ -1,13 +1,21 @@
 ---
-tags:
+tags: performance optimization, session management, data storage, best practices, database contention
 summary: Learn how to optimize performance in OutSystems 11 (O11) by avoiding large session variables and using best practices for data storage.
 locale: en-us
 guid: 6d74e154-6ca6-4b2b-9fb1-178d4dbff78d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
+  - unblock
+  - evaluate
 ---
-
 
 # Avoid large session variables
 

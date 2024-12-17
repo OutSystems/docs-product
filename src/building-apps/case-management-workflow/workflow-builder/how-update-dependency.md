@@ -1,12 +1,22 @@
 ---
-tags: Workflow Builder; Case Management; update dependencies;
+tags: outsystems, dependency management, service center, application deployment
 summary: Explore how to install or update dependencies in OutSystems 11 (O11) for Workflow Builder using the Case Management framework.
 guid: 456764c4-6370-4363-b576-8d399be303e3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - workflow builder
+  - service center
+  - case management framework
+coverage-type:
+  - apply
 ---
+
 # How to install or update dependencies
 
 [Workflow Builder](http://workflowbuilder.outsystems.com/) has one dependency, the Case Management framework.

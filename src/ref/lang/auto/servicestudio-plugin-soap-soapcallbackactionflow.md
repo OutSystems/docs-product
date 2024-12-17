@@ -6,6 +6,15 @@ guid: c0e4920c-99f4-41e1-995c-85a9ed120053
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap extensibility api, web services, api integration, soap callback, outsystems integration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # SOAP Callback - Consumed SOAP

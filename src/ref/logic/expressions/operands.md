@@ -1,11 +1,19 @@
 ---
 summary: Explore how operands, literals, variables, and functions are utilized in expressions within OutSystems 11 (O11).
-tags: 
+tags: expressions, data types, variable naming best practices, expression editor usage, service studio tips
 locale: en-us
 guid: 6f93f5d0-94ad-4ced-bd8c-ea8b7599ca05
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:460
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Operands

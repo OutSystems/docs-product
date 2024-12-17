@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) tutorial on creating many-to-many relationships using a junction entity.
-tags: support-application_development; support-Database; support-webapps
+tags: data modeling, database design, entity relationship, mobile app development, web application development
 locale: en-us
 guid: 9a7e1290-8439-4b9b-8471-ee1114d03024
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:12
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Create a Many-to-Many Relationship

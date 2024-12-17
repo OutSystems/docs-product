@@ -1,11 +1,21 @@
 ---
 summary: Explore how to configure Azure resources for OutSystems 11 (O11) chatbot integration, including creating services and channels.
-tags:
+tags: azure, cognitive services, chatbots, qna maker, cloud services
 locale: en-us
 guid: 2d4d86ce-b835-4fb6-9af8-ecee723d94a7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:5
+audience:
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - unblock
 ---
 
 # Create the chatbot resources in Azure

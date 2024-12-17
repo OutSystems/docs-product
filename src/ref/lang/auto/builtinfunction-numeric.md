@@ -5,6 +5,15 @@ guid: aace68aa-c3bc-4e37-85f1-ad8b6f204bf7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems, numeric functions, server-side logic, client-side logic, database functions
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Numeric

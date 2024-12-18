@@ -29,7 +29,7 @@ This article only applies to customers with access to the Migration Kit.
 
 One-shot migration is ideal for smaller, low-code projects with two or fewer business apps and up to 300 application objects. After completing the one-shot migration, you should have your:
 
-* O11 app code, data, and end users migrated to ODC.
+* O11 app code, data, and end users migrated to ODC. 
 
 * O11 entities mapped to their ODC counterparts.
 

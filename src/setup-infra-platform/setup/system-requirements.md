@@ -68,7 +68,7 @@ Use the same type of database engine for all the 3 databases in Platform Server 
 * Microsoft SQL Server 2017 <sup>1</sup>
 * Microsoft SQL Server 2016 <sup>1</sup>
 * Microsoft SQL Server 2014 <sup>1</sup> <sup>2</sup>
-* Azure SQL Database, with compatibility level between 130 and 150
+* Azure SQL Database (see [Microsoft Azure considerations](#microsoft-azure-considerations) for specific requirements and limitations)
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2<sup>2</sup>
 * Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)<sup>2</sup>

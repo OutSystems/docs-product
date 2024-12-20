@@ -82,7 +82,7 @@ Mobile apps come with two actions to detect network status and type. These are a
 
 ### GetNetworkStatus
 
-Returns a Boolean value. True for online, False for offline.
+Returns False if the browser cannot connect to a local area network (LAN) or a router. All other conditions return True.
 
 ### GetNetworkType
 

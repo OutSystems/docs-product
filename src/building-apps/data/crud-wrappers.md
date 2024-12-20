@@ -1,13 +1,17 @@
 ---
 summary: OutSystems O11 accelerates CRUD operations with CRUD wrappers, enabling efficient data handling and faster development.
-tags: 
+tags: crud operations, data handling, application development, outsystems studio, code reusability
 guid: 94115dec-64af-45bd-8580-65a6c42f2810
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5459-240
+audience:
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
 ---
-
 # Understanding CRUD operations in O11
 
 CRUD operations—Create, Read, Update, and Delete—are basic actions that let you work with data in applications. They’re a foundation of application development, making them critical for organizing, storing, and updating information. In OutSystems, CRUD operations are central because they help developers create and manage apps quickly and efficiently.

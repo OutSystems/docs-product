@@ -74,7 +74,7 @@ After the [Render](<#on-render>) event of the target screen, the transition betw
 
 ### On Changing the Data of a Screen or Block
 
-Every time you change the value of a data element of a Screen or Block, the application automatically reacts to it. Thus, the Render event is triggered and the UI elements that depend on the data automatically update. You don’t have to explicitly refresh the UI elements as you need to do for web apps.
+Every time you change the value of a data element of a Screen or Block, the application automatically reacts to it. Thus, the Render event is triggered and the UI elements that depend on the data automatically update. You don’t have to explicitly refresh the UI elements as you need to do for traditional web apps.
 
 For Screen or Block Aggregates and Data Actions, their new values are automatically updated in the UI elements, but you need to rerun the query explicitly. This can be done using the [Refresh Data](<../../ref/lang/auto/class-refresh-data.md>) flow element in the logic.
 

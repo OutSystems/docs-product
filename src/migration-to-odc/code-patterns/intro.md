@@ -56,7 +56,7 @@ As you plan and prepare your existing O11 app architecture to migrate late to OD
 
 <div class="info" markdown="1">
 
-The OutSystems Migration Toolkit will provide automation in the future to support some of the following patterns. Until then,manually refactor the apps so to unblock the migration.
+The OutSystems Migration Toolkit will provide automation in the future to support some of the following patterns. Until then, manually refactor the apps to proceed with the migration.
 
 </div>
 

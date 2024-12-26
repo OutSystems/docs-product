@@ -29,14 +29,14 @@ This document is intended for architects, leads, and developers planning and pre
 
 ![Diagram showing the migration of O11 app components to ODC, illustrating the mapping of various modules such as Sales App, InBound_API, Data_Sync, Product_CS, Catalog_CS, Order_CS, Customer_CS, Product_IS, Order_IS, Customer_IS, and Theme_Th.](images/odc-blueprint-diag.png "O11 to ODC Migration Blueprint Diagram")
 
-### Requirements
+## Requirements
 
 The requirements for adapting O11 architecture and creating an ODC blueprint:
 
 * Discovery Tool. This is a Forge component to analyze and understand how to improve the O11 factory architecture and enable the instantiation and validation of domain-driven design architecture
 * AI Mentor Studio. OutSystems AI tool that helps you reduce the technical dept and implement best practices.
 
-### Step 1: Map O11 domains to ODC apps and libraries
+## Step 1: Map O11 domains to ODC apps and libraries
 
 The first step in preparing your apps for migration is creating your ODC blueprint. According to your business needs, select the factory you want to move to ODC and create a plan to prepare the apps for the next steps of the migration process.
 
@@ -51,7 +51,7 @@ On a more granular level, creating an ODC blueprint entails analyzing your exist
 
 More information is available in [Convert O11 architecture to ODC architecture](plan-convert-arch-incrementale.md).
 
-### Step 2: Apply domain-driven architecture principles
+## Step 2: Apply domain-driven architecture principles
 
 [Domain-driven design](https://success.outsystems.com/documentation/best_practices/architecture/outsystems_domain_driven_architecture/domain_driven_design/) supports cloud-native app development by breaking down apps into loosely coupled and independently deployable components or services. This approach aligns with the cloud-native architecture of ODC, where apps are designed to solve specific business problems or automate processes. Domain-driven architecture in O11 enables your business apps to become closer to the ODC architecture, creating a migration path into the ODC loosely coupled architecture.
 
@@ -69,17 +69,25 @@ More resources:
 * [Architecture fundamentals training](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/apps/odc/1)
 * [Architecture patterns training](https://learn.outsystems.com/training/journeys/architecture-patterns-581/odc)
 
-#### Validate the app architecture
+### Validate the app architecture
 
 If you're not part of the Early Access Program, you can use the [Discovery Tool](https://www.outsystems.com/forge/component-overview/409/discovery-o11) from Forge to validate your architecture. For more information about the validation, refer to [Architecture Canvas and Domain-driven design rules](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/validating_your_application_architecture/).
 
 The Early Access Program customers can use the Migration Assessment Tool, a set of O11 components to prepare for the ODC architecture and migration.
 
-### Step 3: Adapt your apps for better ODC compatibility
+## Step 3: Adapt your apps for better ODC compatibility
 
 As you prepare your app for the ODC architecture, adapt the O11 apps to make them ODC-compatible and enable a smoother migration to ODC. You need to consider the best practices and that some O11 features are not supported directly in ODC.
 
-For more information about how to adapt your apps, refer to[ O11 to ODC migration code patterns](../code-patterns/intro.md).
+<div markdown="1" class="info">
+
+Most O11 plugins use the app Common Plugin. However, mobile plugins are libraries in ODC. Due to the architectural differences between O11 and ODC, it's not possible to migrate O11 apps to ODC libraries. If you want to migrate a plugin from O11 to an ODC library, the O11 plugin needs to be a library.
+
+When preparing your O11 mobile plugins to migrate to ODC, replace the **app** [Common Plugin](https://www.outsystems.com/forge/component-overview/1417/common-plugin-o11) with the [Common Plugin Library](https://www.outsystems.com/forge/component-overview/20521/common-plugin-library-o11). Then, migrate your plugin to an ODC library.
+
+</div>
+
+For more information about how to adapt your apps, refer to [O11 to ODC migration code patterns](../code-patterns/intro.md).
 
 ## Additional resources
 

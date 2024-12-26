@@ -1,5 +1,5 @@
 ---
-tags:
+tags: data grid, data manipulation, spreadsheet interface, enterprise interface, virtual scrolling
 summary: OutSystems 11 (O11) features the Data Grid component for efficient data manipulation with sorting and virtual scrolling.
 guid: 7a4ea179-b360-4220-a0fc-627a6c751564
 locale: en-us
@@ -8,8 +8,12 @@ platform-version: o11
 figma:
 coverage-type:
   - understand
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - forge
 ---
-
 # OutSystems Data Grid
 
 The OutSystems Data Grid component allows you to view, explore, and edit large amounts of data in a familiar spreadsheet interface.

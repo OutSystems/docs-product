@@ -8,8 +8,12 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:9
 coverage-type:
   - apply
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - none
 ---
-
 # Implement asynchronous data fetching using Aggregates
 
 <div class="info" markdown="1">

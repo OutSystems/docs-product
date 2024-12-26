@@ -156,6 +156,6 @@ Request: `GET /environments/{EnvironmentKey}/modules/{ModuleKey}/sourcecodeacces
 
 If you see an Error message such as **The resulting source code package has X Mb. The maximum size allowed is 150 Mb. Please refer to documentation on how to overcome this error.**, this means that the resulting source code archive is bigger than 150Mb. In such scenarios, because of scalability and performance reasons the API cannot store and send such big files.
 
-As a workaround, you can split the application to run the SAST in smaller apps and then call the API for these small applications, or you can call the [Module version of the API](api-request-code.md#get-the-source-code-of-a-module) to get the source code at the module level.
+As a workaround, you can call the [Module version of the API](api-request-code.md#get-the-source-code-of-a-module) to get the source code at the module level.
 
 If the above validations didn't help you solve the issue and you need further assistance, [open a support case](https://www.outsystems.com/SupportPortal/CaseOpen/) to get help from OutSystems Support.

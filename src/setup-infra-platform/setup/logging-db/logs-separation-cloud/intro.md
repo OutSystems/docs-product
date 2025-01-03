@@ -42,7 +42,12 @@ Each app writes its own log entries using an internal logging API, ensuring user
 
 ## Activate logs separation
 
-Open a support ticket requesting to change the log storage location.
+To request the activation of logs separation, [open a support ticket](https://www.outsystems.com/tk/redirect?g=A82EA0CB-B101-4F08-BCFB-77559EF63801). 
+
+After selecting your infrastructure, select **Configure the platform** > **Managing Environments** > **Change logs storage location**. 
+ 
+Once you submit your request, OutSystems support will plan the activation with you and inform you of all the steps.
+
 
 ### Prerequisites
 
@@ -57,13 +62,6 @@ To use the logs separation feature, make sure you meet the following requirement
 Once logs are separated, you'll be able to see the log storage location at [Customer Portal](https://www.outsystems.com/csportal/).
 
 ![Screenshot of the OutSystems Customer Portal displaying the log storage location for logs separation feature.](images/log-separation-portal.png "Customer Portal Log Separation")
-
-
-### Open a support ticket
-
-To request the activation of logs separation, [open a support ticket](https://www.outsystems.com/tk/redirect?g=A82EA0CB-B101-4F08-BCFB-77559EF63801).  
-After selecting your infrastructure, select **Configure the platform** > **Managing Environments** > **Change logs storage location**.  
-Once you submit your request, OutSystems support will plan the activation with you and inform you of all the steps.
 
 ## Impact on related capabilities
 

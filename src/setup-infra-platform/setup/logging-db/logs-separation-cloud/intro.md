@@ -42,7 +42,7 @@ Each app writes its own log entries using an internal logging API, ensuring user
 
 ## Activate logs separation
 
-If you're a new OutSystems Cloud customer, this feature will be activated for you during the onboarding process. If you're an existing customer, you need to open a support ticket and request to change the logs storage location.
+Open a support ticket requesting to change the log storage location.
 
 ### Prerequisites
 

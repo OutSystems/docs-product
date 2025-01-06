@@ -32,7 +32,7 @@ A general recommendation is to start thinking about accessibility **early in the
 
 Here are some guidelines to consider for meeting your accessibility needs:
 
-1. Ensure that your app meets the basic accessibility requirements. For more information, refer to [Enabling the built-in accessibility features](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Enabling_the_built-in_accessibility_features).
+1. Ensure that your app meets the basic accessibility requirements. For more information, refer to [Enabling the built-in accessibility features](#enable-the-built-in-accessibility-features).
 1. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. For more information, refer to [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
 1. Pay close attention to complex interactions and dynamic content. Fix the critical issues immediately. Use ARIA to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. Refer to [ARIA roles and attributes](aria-roles-and-attributes.md).
 1. Refer to [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md) for special notes about patterns you may be using on a page.

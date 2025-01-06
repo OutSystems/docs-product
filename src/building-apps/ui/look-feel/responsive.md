@@ -178,7 +178,7 @@ You can use actions in the following ways:
 
 ## Set responsive breakpoints
 
-On the OutSystems UI, there are default device breakpoints that identify **tablet** and **phone** devices. Screen resolutions between **1024px to 700px of width** are recognized as **tablets** and screen resolutions **lower than 700px of width** are recognized as **phones**.
+On the OutSystems UI, there are default device breakpoints that identify **tablet** and **phone** devices. Screen resolutions between **1024px and 768px of width** are recognized as **tablets** and screen resolutions **lower than 768px of width** are recognized as **phones**.
 
 To override these breakpoints, there is the  **SetDeviceBreakpoints client action** (on the **Logic** tab, inside the **DeviceDetection** folder) that you can on your **application ready**, setting the new breakpoints to be applied:
 

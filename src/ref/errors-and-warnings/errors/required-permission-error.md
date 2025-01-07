@@ -5,6 +5,16 @@ guid: f1dd1b03-de58-453d-a537-f17b73c72595
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: permissions, security, publishing, user management, service center administration
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - unblock
 ---
 
 # Required Permission Error

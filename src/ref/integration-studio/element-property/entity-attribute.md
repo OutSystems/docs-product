@@ -5,7 +5,16 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3066-143&t=0cuQUgeosMV2m0Kw-1
 summary: Explore the detailed properties of entity attributes in OutSystems 11 (O11), including mandatory and optional settings, data types, and default values.
+tags: entity management, database configuration, ide usage, reactive web apps, entity attributes
+audience:
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Entity Attribute Properties
 
 The next table presents the properties of the [entity attribute](<../../../integration-with-systems/integration-studio/managing-extensions/entity-attribute.md>) element.  

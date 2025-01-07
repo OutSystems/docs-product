@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3075-3&t=ngfUZsYain6dMjce-1
 summary: Explore the features of the 1-Click Publish window in OutSystems 11 (O11), facilitating error handling, progress tracking, and extension management.
+tags: error handling, progress tracking, extension management, ide features, deployment
+audience:
+  - full stack developers
+  - frontend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # 1-Click Publish Window
 
 The 1-Click Publish window ![Animated icon representing the 1-Click Publish feature](images/1-click-publish-icon.png "1-Click Publish Icon") is launched when you invoke the [1-Click Publish](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-1-cp.md>).

@@ -1,11 +1,21 @@
 ---
 summary: Learn how to authenticate REST API calls using service accounts and tokens in OutSystems 11 (O11).
-tags: support-application_development; support-Integrations_Extensions
+tags: api authentication, service accounts, security practices, rest api security, access control
 locale: en-us
 guid: 1f0c3b37-45b9-4a4d-b640-016dac5f5d6b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=609%3A509&mode=design&t=Ix2yojgoXorQvo4C-1
+audience:
+  - platform administrators
+  - backend developers
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - lifetime
+  - platform server
+coverage-type:
+  - remember
 ---
 
 # REST API Authentication

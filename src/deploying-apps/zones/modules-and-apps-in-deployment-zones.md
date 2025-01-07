@@ -1,11 +1,20 @@
 ---
 summary: Learn how OutSystems 11 (O11) now requires complete applications to be configured for specific deployment zones, deprecating mixed-mode configurations.
-tags: support-Application_Lifecycle; support-Infrastuture_Architecture
+tags: deployment zones, on-premises installations, application configuration, version upgrades, platform server
 locale: en-us
 guid: 5db23ee5-6b68-46f6-b6d4-dc771ebd3fcd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - architects
+outsystems-tools:
+  - platform server
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Modules and apps in deployment zones

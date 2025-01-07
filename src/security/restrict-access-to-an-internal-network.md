@@ -1,12 +1,22 @@
 ---
 summary: OutSystems 11 (O11) enables enhanced application security by allowing internal network access restrictions for UI flows, SOAP web services, and REST APIs.
-tags: support-devOps; support-Security; support-Security-featured
+tags: application security, access control, network configuration, service center, environment configuration
 locale: en-us
 guid: 110c2416-65b4-404d-8adc-e02219af4207
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:126
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
 ---
+
 # Restrict Access to an Internal Network
 
 <div class="info" markdown="1">

@@ -1,11 +1,18 @@
 ---
-tags: runtime-mobileandreactiveweb; 
+tags: ui patterns, range slider, css conventions, event handling, outsystems ui framework
 summary: Explore the technical functionalities and events of OutSystems 11 (O11) Range Slider for mobile and reactive web apps.
 locale: en-us
 guid: e4c1bddc-985a-4895-b74e-9fb7e406c8a9
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=612%3A373&mode=design&t=xOFe93sVU3cU3chE-1
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Range Slider Reference

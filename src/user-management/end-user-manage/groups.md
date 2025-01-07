@@ -1,11 +1,19 @@
 ---
 summary: Explore how to manage end users and organize roles using groups in OutSystems 11 (O11).
-tags: support-Mobile_Apps; support-webapps
+tags: user management, role assignment, group management, user permissions, access control
 locale: en-us
 guid: 17e0082a-7169-482d-a383-89eeab15b9df
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Manage End Users and Organize Roles using Groups

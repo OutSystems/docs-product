@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, input validation, ui patterns, widget implementation, data binding
 summary: Learn how to implement the Character Count UI Pattern in OutSystems 11 (O11) for Traditional Web Apps to manage text input limits.
 locale: en-us
 guid: 35ae7f29-b021-4f09-a081-66c668b816e4
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=245:91
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Character Count

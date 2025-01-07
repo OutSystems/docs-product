@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) enables the creation of Custom Application Templates to streamline app development with predefined functionalities and aesthetics.
-tags: support-Mobile_Apps; support-webapps
+tags: ide usage, reactive web apps, mobile app development, application templates, outsystems development
 locale: en-us
 guid: 54d15c8a-e72c-4732-a54e-9f4e0be1fe0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:17
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Create a Custom Application Template

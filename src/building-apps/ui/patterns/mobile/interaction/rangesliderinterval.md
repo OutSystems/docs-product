@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, mobile app development, web development, outsystems ui framework, nouislider library
 summary: Explore how to implement and configure the Range Slider Interval UI pattern in OutSystems 11 (O11) for selecting values within a specified range.
 locale: en-us
 guid: 69f1f6e5-318f-4da2-aa8f-912a7b8e66c2
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:55
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Range Slider Interval

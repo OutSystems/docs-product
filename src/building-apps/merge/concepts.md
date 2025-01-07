@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) features an advanced versioning and merge system for enhanced team collaboration on module development.
-tags:
+tags: version control, code collaboration, application lifecycle management, software development best practices
 locale: en-us
 guid: f48625c7-2bc5-42d9-b6aa-435630cf9b22
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1827:20283
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # The merge feature and team collaboration

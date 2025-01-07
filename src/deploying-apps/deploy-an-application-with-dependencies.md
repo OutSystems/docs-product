@@ -6,6 +6,16 @@ guid: 3bd09323-cb2b-454a-90b7-341f7c47936e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:44
+tags: deployment, application lifecycle management, dependency management, continuous integration, environment management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - lifetime
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Deploy an application with dependencies

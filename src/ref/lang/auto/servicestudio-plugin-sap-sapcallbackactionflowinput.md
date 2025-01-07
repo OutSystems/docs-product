@@ -6,6 +6,15 @@ guid: 03cdc256-d569-4d64-b280-eea6b54e24bb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sap integration, input parameters, service studio configuration, web services, outsystems development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Input Parameter - SAP Callback

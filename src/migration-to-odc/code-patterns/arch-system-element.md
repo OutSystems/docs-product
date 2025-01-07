@@ -1,12 +1,23 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 397c91b5-97d7-4184-8ab5-b9f42cb2dd66
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30538
+tags: cloud-native applications, system entities, api development, data integration, platform version migration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming O11 system elements
 
 Most of the functionality provided by O11 system elements is available in ODC, except for functionality that either doesn't work with the cloud-native architecture of ODC or that relates to functionality that isn't available in ODC.

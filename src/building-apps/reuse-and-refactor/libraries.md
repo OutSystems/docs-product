@@ -5,6 +5,18 @@ guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:40
+tags: application architecture, code reusability, module dependencies, stateless modules, database agnosticism
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - evaluate
+  - apply
 ---
 
 # Libraries
@@ -45,7 +57,7 @@ For example, use Libraries to implement:
 
     * **Logic** — encapsulate logic that can be called by several applications. For example, a `CipherUtils` Library to help encrypt/decrypt data.
 
-Due to their stateless and database agnostic desing, Libraries can only contain certain elements. The elements you can use in Libraries are enforced both in Service Studio editors, while you're editing your module, and in the **Manage Dependencies** window, when you're referencing elements from other modules. Follows a list of the availability of elements in a Library module:
+Due to their stateless and database agnostic design, Libraries can only contain certain elements. The elements you can use in Libraries are enforced both in Service Studio editors, while you're editing your module, and in the **Manage Dependencies** window, when you're referencing elements from other modules. Follows a list of the availability of elements in a Library module:
 
 | Service Studio element | Availability in Library modules |
 | :---: | :---: |

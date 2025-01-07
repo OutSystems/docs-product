@@ -1,11 +1,19 @@
 ---
-tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; Governance Model; Business developers
+tags: governance, lifetime, user management, access control, token authentication
 summary: Explore how to establish a users governance model in Workflow Builder using OutSystems 11 (O11).
 guid: b0e9d928-403a-4d65-b5bc-c945f78b8436
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:912
+audience:
+  - platform administrators
+  - business analysts
+outsystems-tools:
+  - lifetime
+  - workflow builder
+coverage-type:
+  - apply
 ---
 
 # How to set up the users governance model

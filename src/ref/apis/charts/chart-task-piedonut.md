@@ -1,12 +1,21 @@
 ---
-tags:
+tags: data visualization, chart creation, ui design, outsystems charts, outsystems platform
 summary: Explore how to create and customize Pie and Donut charts in OutSystems 11 (O11) for both mobile and web applications.
 locale: en-us
 guid: a5d2d3bd-c18c-4828-b099-a0ce4980fe1e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:467
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Create Pie and Donut Charts
 
 Learn how to create a simple Pie or Donut chart in OutSystems.  

@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) encounters a Locked Module Error during platform upgrades, preventing publishing or deleting modules until the upgrade completes.
-tags:
+tags: platform server upgrade, application publishing, error handling, platform maintenance, system administration
 locale: en-us
 guid: abc85ab7-84f6-4409-8e23-527447edf15b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - service center
+  - platform server
+coverage-type:
+  - unblock
 ---
 
 # Locked Module Error

@@ -1,11 +1,19 @@
 ---
 summary: Explore how to query data from an external database using the RuntimePublic.Db API in OutSystems 11 (O11).
-tags: 
+tags: database integration, api usage, c# development, external databases, data retrieval
 locale: en-us
 guid: 21dbc0f4-e74a-47aa-91fb-c2acc5252916
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Query data from an external database

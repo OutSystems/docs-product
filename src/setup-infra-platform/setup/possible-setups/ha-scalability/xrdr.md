@@ -1,11 +1,20 @@
 ---
 summary: Explore cross-regional disaster recovery
-tags: 
+tags: disaster recovery, cloud computing, data protection, business continuity, aws
 locale: en-us
 guid: fcbc5dc8-e119-4365-9ddd-d60ae481e2d8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
 ---
 
 # Cross-region disaster recovery

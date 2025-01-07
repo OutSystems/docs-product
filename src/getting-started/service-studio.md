@@ -1,11 +1,21 @@
 ---
 summary: Explore the capabilities of OutSystems 11 (O11) Service Studio, a low-code visual development environment for creating and managing applications.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, low-code development, application management
 locale: en-us
 guid: 23af05a7-9a06-4b73-ad98-3a9edee4ca0d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=64:0
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - remember
 ---
 
 # Service Studio Overview

@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, dropdown implementation, ui design, service studio widgets, dependency management
 summary: Explore the Dropdown Search UI Pattern in OutSystems 11 (O11) for enhanced user selection capabilities in mobile and reactive web apps.
 locale: en-us
 guid: 5dc860b5-4361-4991-8c3a-4ffba28c55ff
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=212:0
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Dropdown Search

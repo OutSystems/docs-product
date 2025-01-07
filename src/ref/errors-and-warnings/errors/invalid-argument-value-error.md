@@ -5,6 +5,15 @@ guid: c28f7649-b364-4139-86ae-5b71089813ac
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, web services, debugging, service studio, outsystems platform
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Argument Value Error

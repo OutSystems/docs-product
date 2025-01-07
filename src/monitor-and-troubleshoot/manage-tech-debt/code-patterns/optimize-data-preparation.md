@@ -1,11 +1,21 @@
 ---
-tags: 
+tags: performance optimization, server load reduction, data modeling, sql queries, asynchronous processing
 summary: Explore efficient data preparation strategies in OutSystems 11 (O11) to enhance user experience and reduce server load.
 locale: en-us
 guid: 9508496b-0e5a-4373-a0df-1c3dba6e9f5b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - unblock
+  - evaluate
 ---
 
 # Optimize data preparation

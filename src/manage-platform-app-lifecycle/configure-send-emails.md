@@ -5,6 +5,15 @@ guid: 85879015-1e65-424a-85cb-3405be3dafe9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A80&mode=design&t=8a1ub9syb4QKHbuk-1
+tags: email configuration, smtp, environmental configuration, email testing, service center
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Configure OutSystems to Send Emails
@@ -26,6 +35,12 @@ To check if the SMTP is properly configured, try sending an email from an existi
 <div class="info" markdown="1">
 
 Not sure how to access Service Center? If your environment URL is `outsystems.example.com`, try visiting `outsystems.example.com/ServiceCenter` and entering you sign in information from the Service Studio IDE.
+
+</div>
+
+<div class="warning" markdown="1">
+
+For the default sender email address or the actual from address, be sure to use your domain address (like example.com) or your email server domain name. OutSystems uses DMARC authentication, and adding *.outsystemsenteprise.com as the from field might cause email servers to flag your emails as spoofing.
 
 </div>
 

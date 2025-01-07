@@ -1,11 +1,19 @@
 ---
 summary: Explore how to create and reuse UI Blocks across different applications in OutSystems 11 (O11) to streamline user interface development.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags: ui design patterns, component-based development, user interface design, application development, dependency management
 locale: en-us
 guid: 6cd79d30-4d78-4fd5-8707-b4af2cbd5078
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:2
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Create and Reuse Screen Blocks

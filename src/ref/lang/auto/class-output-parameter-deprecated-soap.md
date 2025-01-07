@@ -6,6 +6,16 @@ guid: fa9d634f-e1d2-4ea0-a302-37f50b51365e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap, web services, wsdl, service orchestration, data mapping
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Output Parameter - Deprecated SOAP

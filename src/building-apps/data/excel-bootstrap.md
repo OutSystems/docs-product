@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) enables data bootstrapping from Excel files into entities for efficient application development and testing.
-tags: support-Database; support-database-featured
+tags: data import, entity management, excel integration, data bootstrapping, application development
 locale: en-us
 guid: b9f11658-2807-4efb-92ed-0413be0f2c63
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Bootstrap an Entity Using an Excel File

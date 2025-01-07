@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, web development, outsystems ui, design patterns, widgets
 summary: Explore the use of the Button Group UI Pattern in OutSystems 11 (O11) for efficiently displaying radio button choices in Traditional Web Apps.
 locale: en-us
 guid: a42977e0-825d-49b5-bc9b-49025bac70cb
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=226%3A22&mode=design&t=KpVEJMvnBwiukqql-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Button Group

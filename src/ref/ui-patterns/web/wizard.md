@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: ui patterns, css customization, web development, outsystems ui, user interface design
 summary: Explore the implementation and customization of the Wizard UI Pattern in OutSystems 11 (O11) for enhancing Traditional Web Apps.
 locale: en-us
 guid: 40d6949b-644d-4bc3-8ed9-83bdbe79fba2
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:633
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Wizard Reference

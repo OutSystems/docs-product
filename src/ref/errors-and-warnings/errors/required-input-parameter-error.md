@@ -5,6 +5,16 @@ guid: c0adb2a0-b45d-4ffe-b4c6-28a9f5c7484e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, rest api configuration, api development, data types, debugging
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Required Input Parameter Error

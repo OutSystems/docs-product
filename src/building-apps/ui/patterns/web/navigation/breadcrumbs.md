@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, navigation patterns, breadcrumbs, web blocks, dependency management
 summary: OutSystems 11 (O11) supports the Breadcrumbs UI Pattern for enhanced navigation in Traditional Web Apps.
 locale: en-us
 guid: 44158133-1d56-47d6-9a5b-f204828c0024
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A24&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Breadcrumbs

@@ -1,11 +1,19 @@
 ---
 summary: Learn how to use the Flip Content UI Pattern in OutSystems 11 (O11) to enhance interactive content display in mobile and reactive web apps.
-tags: runtime-mobileandreactiveweb;
+tags: ide usage, reactive web apps, tutorials for beginners, ui design, outsystems ui
 locale: en-us
 guid: 714b1496-4c20-47fd-afcb-a0f2007ad984
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:37
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Flip Content

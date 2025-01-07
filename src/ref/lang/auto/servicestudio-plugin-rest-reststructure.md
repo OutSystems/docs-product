@@ -6,6 +6,15 @@ guid: 87d9f1db-bf3a-40ac-a5a8-562243e035f2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, api development, outsystems platform, web services, application integration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Structure - REST API Method

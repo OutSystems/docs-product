@@ -1,11 +1,21 @@
 ---
 summary: Explore responsive UI features in OutSystems 11 (O11) for adaptive and responsive app development across devices.
-tags: runtime-mobileandreactiveweb;  
+tags: ui design, css customization, cross-platform development, adaptive design, screen size detection
 locale: en-us
 guid: 5d91a5b5-b07e-4858-af62-980f6a558b1d
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=1116%3A14411&mode=design&t=VUTD7oZE9xvPWlG0-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+  - apply
 ---
 
 # Responsive UI 
@@ -168,7 +178,7 @@ You can use actions in the following ways:
 
 ## Set responsive breakpoints
 
-On the OutSystems UI, there are default device breakpoints that identify **tablet** and **phone** devices. Screen resolutions between **1024px to 700px of width** are recognized as **tablets** and screen resolutions **lower than 700px of width** are recognized as **phones**.
+On the OutSystems UI, there are default device breakpoints that identify **tablet** and **phone** devices. Screen resolutions between **1024px and 768px of width** are recognized as **tablets** and screen resolutions **lower than 768px of width** are recognized as **phones**.
 
 To override these breakpoints, there is the  **SetDeviceBreakpoints client action** (on the **Logic** tab, inside the **DeviceDetection** folder) that you can on your **application ready**, setting the new breakpoints to be applied:
 

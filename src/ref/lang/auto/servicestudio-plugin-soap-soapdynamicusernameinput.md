@@ -5,6 +5,15 @@ guid: 21a8934d-1aa2-45a3-b899-b22589dd256f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web service, api authentication, outsystems platform, input parameters, security configuration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Username Input Parameter - Consumed SOAP

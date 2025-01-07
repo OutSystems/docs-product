@@ -5,6 +5,15 @@ guid: 1d0d90ba-aa79-4e09-ba87-12ce8ce0e4d4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: image handling, user interface components, application development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Image

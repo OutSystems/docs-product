@@ -1,11 +1,21 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates with a Web Application firewall.
-tags:
+tags: web application security, waf configuration, api protection, http/https traffic monitoring, compliance standards
 locale: en-us
 guid: 453F8846-CBCE-412D-8E59-2F12C1A5E489
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - tech leads
+  - infrastructure managers
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
 ---
 
 # Web Application Firewall in OutSystems

@@ -1,11 +1,20 @@
 ---
 summary: Explore how OutSystems 11 (O11) supports streaming log data in OTLP format to various APM tools for enhanced monitoring and troubleshooting.
-tags: 
+tags: apm integration, log streaming, opentelemetry, monitoring, troubleshooting
 locale: en-us
 guid: 0795de8e-20cc-4be0-8b51-883a46a9b84b
 app_type: traditional web apps, mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3139%3A1159&mode=design&t=IIMVc2WTi7UxHv00-1
 platform-version: o11
+audience:
+  - platform administrators
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - none
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Streaming log data

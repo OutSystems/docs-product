@@ -5,7 +5,19 @@ guid: 129863e4-4a6a-4315-8954-d07138692d0c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:28
+tags: process optimization, process management, database performance, application deployment, automation
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
 ---
+
 # Terminate Idle Processes
 
 When you design a [Process](../intro.md) that stays idle for a long time, it may have a negative impact on the deployment of applications. This is essentially due to:

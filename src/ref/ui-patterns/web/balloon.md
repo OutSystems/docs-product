@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, web development, web design, user interface components, ux design
 summary: Explore the Balloon UI Pattern features and advanced use-cases in OutSystems 11 (O11) for enhancing traditional web applications.
 locale: en-us
 guid: d95ffaba-85b3-4152-95f5-71804d0aa12b
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:387
+audience:
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Balloon Reference

@@ -6,6 +6,18 @@ guid: b3443ec2-7cb3-43e7-a8b9-1651890a5985
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: web services, soap protocol, security configuration, integration, application development
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+  - service center
+  - lifetime
+coverage-type:
+  - remember
 ---
 
 # SOAP Web Service

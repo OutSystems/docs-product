@@ -5,6 +5,15 @@ guid: 1522f7b9-bb8e-4ef3-b4c5-25e110e89a68
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: configuration management, database management, logging, application monitoring, performance optimization
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Log Tab

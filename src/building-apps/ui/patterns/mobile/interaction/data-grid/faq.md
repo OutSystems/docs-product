@@ -1,13 +1,21 @@
 ---
-tags: 
+tags: data grid, rest api, outsystems, web app interface, data management
 summary: Explore the capabilities of OutSystems 11 (O11) for creating dynamic data grid interfaces that allow viewing, editing, and saving data efficiently.
 guid: 80b3e393-53fa-40e3-b457-4cd8cc78fd71
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742:239
+coverage-type:
+  - apply
+audience:
+  - full stack developers
+  - backend developers
+  - ui designers
+outsystems-tools:
+  - forge
+  - service studio
 ---
-
 # How to use OutSystems Data Grid Web
 
 Before starting, make sure that the components [OutSystems Data Grid Web](https://www.outsystems.com/forge/component-overview/5554/) and [OutSystems Data Grid Web Sample](https://www.outsystems.com/forge/component-overview/5555/) are installed in your environment.

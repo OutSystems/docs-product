@@ -1,11 +1,22 @@
 ---
 summary: Explore automated installation and upgrade processes for OutSystems 11 (O11) Platform Server and LifeTime Management Console.
-tags: article-page; support-Installation_Configuration; support-Installation_Configuration-overview
+tags: automated installation, platform server upgrade, outsystems platform, configuration, licensing
 locale: en-us
 guid: 4f39d91e-bc2f-4eac-a4ca-b8c660d97d0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - platform server
+  - lifetime
+  - service studio
+  - configuration tool
+coverage-type:
+  - remember
 ---
 
 # Unattended Installation and Upgrade

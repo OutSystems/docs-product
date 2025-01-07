@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3760-255&t=IqoLFGa1lr8bJxvT-1
 summary: OutSystems 11 (O11) enables complex data type definitions through Structures in Integration Studio for enhanced data handling in applications.
+tags: ide usage, reactive web apps, tutorials for beginners, data integration, extension structures
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - apply
 ---
+
 # Define Extension Structures
 
 Integration Studio provides some base data types, such as Integer or Text, but you can define more complex data types using Structures. Once structures are defined, they can be used in the data type definition of parameters and attributes. In such cases, you should use the Record data type or the Record List data type.

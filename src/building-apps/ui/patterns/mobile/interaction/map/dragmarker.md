@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, mapping, ui components
 summary: Learn how to retrieve draggable marker coordinates in OutSystems 11 (O11) using the OutSystems Map component for Mobile and Reactive Web Apps.
 locale: en-us
 guid: b7dce067-3d75-4c88-8a92-9de144f97896
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - apply
 ---
 
 # How to get draggable marker coordinates  

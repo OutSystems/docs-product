@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6342
 summary: Explore how to obtain SAP service specifications for integration with OutSystems 11 (O11) using the SAP API Business Hub and custom service endpoints.
+tags: sap integration, api management, service specification, odata api, json, edmx
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration builder
+coverage-type:
+  - apply
 ---
+
 # Obtaining the SAP service specification
 
 The process of obtaining the SAP service specification that you must provide in Integration Builder depends on the type of service:

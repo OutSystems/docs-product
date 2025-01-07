@@ -4,7 +4,15 @@ guid: 42375e2b-c9a9-4a53-a7a6-910481be7547
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
-figma: 
+figma:
+tags: sql query migration, database compatibility, postgresql, aurora postgresql, cloud migration
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - none
 ---
 
 # Adapt SQL queries

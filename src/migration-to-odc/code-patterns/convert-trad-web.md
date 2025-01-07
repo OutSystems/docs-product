@@ -1,12 +1,14 @@
 ---
-summary: 
-tags: 
+summary:
+tags:
 guid: 5599ed1d-6b0e-4862-9fe5-0603ab025fa5
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2318-2
 helpids: 30549
+coverage-type:
+  - unblock
 ---
 
 # Asset consuming a reference to a Traditional Web element

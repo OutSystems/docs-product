@@ -1,11 +1,21 @@
 ---
 summary: Explore how to integrate Microsoft Azure's LUIS service with OutSystems 11 (O11) for enhanced language understanding in applications.
-tags: 
+tags: azure integration, language understanding, chatbots, luis, api integration
 locale: en-us
 guid: 958cb80b-87a3-4501-ad60-437b9cc71e8d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=407:103
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+  - remember
 ---
 
 # Use the Azure LUIS Connector in OutSystems apps

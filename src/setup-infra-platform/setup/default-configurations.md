@@ -5,6 +5,15 @@ guid: e7fb04c6-9cb6-48d9-a4e7-8d4ad3702613
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: server configuration, hardware requirements, installation checklist, software requirements, file system
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - platform server
+coverage-type:
+  - understand
 ---
 
 # Default Platform Server and database configurations

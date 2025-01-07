@@ -5,6 +5,14 @@ guid: 00999f64-7e94-4592-a8e1-a592ae2f677b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: module management, application deployment, configuration, application maintenance, compliance
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Module Name Changed Warning

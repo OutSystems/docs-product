@@ -1,11 +1,19 @@
 ---
 summary: Explore essential web accessibility resources and tools to enhance your OutSystems 11 (O11) applications' compliance with WCAG guidelines.
-tags:
+tags: web accessibility, wcag, screen readers, evaluation tools, color and contrast checking
 locale: en-us
 guid: ee0ffa43-b179-4214-bcd2-3b692817c51c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
 # Links to additional accessibility resources

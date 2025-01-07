@@ -1,13 +1,23 @@
 ---
 summary: Learn to develop a Reactive Web App using OutSystems 11 (O11) by importing data, creating screens, and implementing logic.
-tags: runtime-reactiveweb;
+tags: ide usage, reactive web apps, tutorials for beginners, database integration, ui development, lifecycle management
 locale: en-us
 guid: 795332a5-e1f3-40c0-886d-75b7bddf48af
 app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=67:2
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - platform server
+  - lifetime
+coverage-type:
+  - apply
+  - understand
 ---
-
 # Create Your First Reactive Web App
 
 <div class="info" markdown="1">
@@ -18,7 +28,7 @@ Check our training [Becoming a Reactive Web Developer](https://www.outsystems.co
 
 Developing Reactive Web Apps with OutSystems is fast. In this example, we will use a spreadsheet to create some database entries and then add user interface and logic to connect everything - into a ToDo app.
 
-This is the overview of what we are about to do:
+This is the overview of what we're about to do:
 
 1. Create a Reactive Web App, name it, and choose the primary color.
 1. Automatically create a database model by importing data from Excel.
@@ -180,13 +190,27 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 
      ![Screenshot of the 'SaveOnClick' action in the interface tab of Service Studio](images/save-on-click-ss.png "SaveOnClick Action")
 
-1. Navigate to the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If** (1). Set the **Task** property to `GetTaskById.List.Current.task` (2).
+1. Navigate to the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If** (1). Set the **Task** property to `GetTaskById.List.Current.Task` (2).
 
     ![Screenshot showing the dragging of the 'TaskCreateOrUpdate' server action to the 'True' branch of an 'If' condition](images/drag-server-action-ss.png "Drag Server Action to Logic Flow")
 
 1. Drag the **Task** Screen from the **Interface** tab to the **End** node so that the user is redirected back to the main screen after saving a task. 
 
     ![Screenshot of dragging the 'Task' screen to the 'End' node in a logic flow to redirect the user after saving](images/drag-task-screen-to-end-node-ss.png "Redirect to Task Screen After Save")
+
+    There's one step left for the edit feature to work correctly. When you click the title of the task in the **Task** screen, the id of the task needs to be passed to the **TaskDetail** screen:
+
+1. In the **Interface** tab, double-click the **Task** screen, and select the task title in the first row of the table.
+
+    ![Screenshot of selecting the title of the task in the table.](images/select-task-title-ss.png "Select the tast title")
+
+1. Switch to the **Widget Tree**, and select the **Link** to open its properties.
+
+    ![Screenshot of selecting the Link in the Widget Tree.](images/select-link-ss.png "Select the Link to open its properties")
+
+1. Set the **TaskId** argument of the **On Click** event as `GetTasks.List.Current.Task.Id`.
+
+    ![Screenshot of setting the TaskId argument of the On Click event.](images/link-taskid-ss.png "Set the TaskId argument of the On Click event")
 
 ## Allow completing tasks
 
@@ -242,7 +266,7 @@ We also want to enable the end users to add new tasks from the screen with all t
 
     ![Screenshot of dragging a 'Button' widget to the actions placeholder with the label 'Add Task'](images/drag-button-widget-from-toolbox-ss.png "Add Add Task Button to Task Screen")
 
-1. Right-click an empty area of the button and choose **Link** > **MainFlow\TaskDetail**.
+1. In the **Interface** tab, switch to the **Widget Tree**. Right-click the **Button** and choose **Link to** > **MainFlow\TaskDetail**.
 
     ![Screenshot showing the linking of the 'Add Task' button to the 'TaskDetail' screen](images/link-to-screen-ss.png "Link Add Task Button to TaskDetail Screen")
 

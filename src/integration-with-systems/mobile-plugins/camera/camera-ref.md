@@ -1,11 +1,18 @@
 ---
 summary: Explore the Camera Plugin functionalities in OutSystems 11 (O11), including client actions, web blocks, and error handling.
-tags: runtime-mobile
+tags: mobile app development, plugin integration, camera functionality, error handling, pwa compatibility
 locale: en-us
 guid: ce70e86c-de5e-413e-988e-d0dca05b30f0
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Camera Plugin - Reference Page
@@ -255,4 +262,6 @@ OS-PLUG-CAMR-0027 (NEW)|Android|URI parameter cannot be empty.
 OS-PLUG-CAMR-0028 (NEW)|iOS|Couldn’t get video from the gallery.
 OS-PLUG-CAMR-0029 (NEW)|iOS|There's an issue with the plugin.
 OS-PLUG-CAMR-0030 (NEW)|Android|The selected file doesn't exist.
-
+OS-PLUG-CAMR-0031 (NEW)|iOS|Couldn't retrieve image from the URI.
+OS-PLUG-CAMR-0032 (NEW)|PWA|EditURIPicture is only available for Android and iOS.
+OS-PLUG-CAMR-0033 (NEW)|iOS, Android, PWA|Height and width values need to be greater than zero.

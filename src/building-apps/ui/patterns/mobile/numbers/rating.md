@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, user experience, ui customization, application development, service studio
 summary: Explore how to implement and customize the Rating UI Pattern in OutSystems 11 (O11) for enhancing user interaction in mobile and reactive web apps.
 locale: en-us
 guid: f0a35dfd-ff8e-4e04-8a4b-2407efaca4f6
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=644:9
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Rating

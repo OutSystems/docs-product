@@ -5,7 +5,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3748-257&t=0k6vqSszFayqzk9h-1
 summary: Explore how to download and manage extensions in OutSystems 11 (O11) using the Platform Server and Integration Studio.
+tags: ide usage, reactive web apps, tutorials for beginners, extension management, outsystems platform
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - integration studio
+  - platform server
+coverage-type:
+  - apply
 ---
+
 # Download an Extension
 
 You can download to your work area any extension previously published in a Platform Server. When this operation is executed, the XIF (Extension and Integration Framework) file that corresponds to this extension will be stored where you specify. Afterwards, you can make the necessary changes in the extension and [publish](<../extension-life-cycle/extension-1-cp.md>) it again when it is ready.

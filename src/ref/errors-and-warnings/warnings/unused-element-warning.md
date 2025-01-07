@@ -5,6 +5,15 @@ guid: ffaf9e71-a423-4627-a3f5-75fec1f708ff
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: code optimization, ide usage, warning resolution, code maintenance, outsystems best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Unused Element Warning

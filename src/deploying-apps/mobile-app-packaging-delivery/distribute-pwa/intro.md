@@ -1,11 +1,20 @@
 ---
 summary: Learn how to distribute your mobile app as a progressive web app (PWA) using OutSystems 11 (O11) for a seamless, native-like experience across platforms.
-tags: support-application_development, article-page
+tags: progressive web apps, mobile app distribution, native-like experience, browser features, low-code development
 locale: en-us
 guid: 92faa93c-8b74-4d6d-9914-229c3fa33813
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:7
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Distribute as a progressive web app

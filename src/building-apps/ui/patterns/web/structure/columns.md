@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, layout management, web development, page structure, widget usage
 summary: Learn how to effectively use the Columns UI Pattern in OutSystems 11 (O11) to enhance content layout in Traditional Web Apps.
 locale: en-us
 guid: 0488b53b-190d-4467-83a4-76bae70bf4c2
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A67&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Columns

@@ -5,6 +5,15 @@ guid: d844068c-7299-46e1-80e4-6f7a6a0d8942
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, debugging, user interface, ide usage, reactive web apps
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Transition

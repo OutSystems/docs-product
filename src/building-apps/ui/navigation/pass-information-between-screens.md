@@ -1,11 +1,20 @@
 ---
 summary: Learn how to pass data between screens using Input Parameters in OutSystems 11 (O11).
-tags: support-application_development; support-Mobile_Apps; support-webapps
+tags: ide usage, reactive web apps, tutorials for beginners, ui flows, navigation, widgets, input parameters
 locale: en-us
 guid: abc236ca-9b9d-41ea-9694-7a0148c216b1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:20
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - unblock
 ---
 
 # Pass Data Between Screens With Input Parameters

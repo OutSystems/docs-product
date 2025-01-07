@@ -1,11 +1,20 @@
 ---
 summary: Explore the AI Mentor Studio API for managing technical debt in OutSystems 11 (O11).
-tags: article-page; support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
+tags: api documentation, technical debt management, integration guidelines, outsystems development, json schema styling
 locale: en-us
 guid: 29A5FD23-8A6E-4B2B-853F-58AD0A34C560
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1549:2853
+audience:
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - ui designers
+outsystems-tools:
+  - ai mentor studio
+coverage-type:
+  - remember
 ---
 
 # AI Mentor Studio API

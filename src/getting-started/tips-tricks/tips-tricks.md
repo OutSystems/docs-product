@@ -1,12 +1,21 @@
 ---
 summary: Explore essential features and enhancements in OutSystems 11 (O11) for efficient application development and management.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, dark theme configuration, keyboard shortcuts, service studio features, efficiency tips
 locale: en-us
 guid: 0a003300-3e48-41de-8b77-f08d464a9eb4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=69:4
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Service Studio Tips and Tricks
 
 ## Basics

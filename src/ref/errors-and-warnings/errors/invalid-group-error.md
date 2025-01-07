@@ -5,6 +5,15 @@ guid: 3a0036d4-b992-4050-a1eb-fccbccdd2e86
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, entity attributes, data modeling, ide error messages, outsystems development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Group Error

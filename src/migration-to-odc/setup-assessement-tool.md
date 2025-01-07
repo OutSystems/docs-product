@@ -5,6 +5,17 @@ guid: 29920fad-9efd-45ae-a4e4-212705fceb65
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2336-2236
+tags: migration, outsystems, cloud migration, database configuration, infrastructure management
+audience:
+  - platform administrators
+  - full stack developers
+  - architects
+  - tech leads
+outsystems-tools:
+  - lifetime
+  - platform server
+coverage-type:
+  - apply
 ---
 
 # Set up the Migration Assessment Tool

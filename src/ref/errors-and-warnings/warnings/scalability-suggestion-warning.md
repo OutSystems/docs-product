@@ -5,6 +5,15 @@ guid: 20338e6c-c39c-4b7a-9370-c40a6ebc5b48
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: performance optimization, best practices, variable management, data types, scalability
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Scalability Suggestion Warning

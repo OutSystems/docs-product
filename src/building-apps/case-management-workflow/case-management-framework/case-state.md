@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework;
+tags: case management, outsystems 11, application lifecycle management, status handling, workflow customization
 summary: Explore how OutSystems 11 (O11) manages case statuses within its Case Management framework.
 guid: fc30b404-7533-4e75-9e88-392cf3f454b6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # Case status

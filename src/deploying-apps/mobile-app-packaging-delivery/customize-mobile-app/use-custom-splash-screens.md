@@ -1,11 +1,21 @@
 ---
 summary: Learn how to customize the native splash screen in OutSystems 11 (O11) for a seamless user experience on mobile apps.
-tags: runtime-mobile; support-Front_end_Development-featured
+tags: mobile app development, ui customization, app launch experience, user experience, branding
 locale: en-us
 guid: f8dfa815-8c3e-4906-9378-e9d91ad6b4a4
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:220
+audience:
+  - mobile developers
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - remember
+  - understand
 ---
 
 # Use Custom Splash Screens

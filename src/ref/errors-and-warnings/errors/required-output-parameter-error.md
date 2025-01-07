@@ -5,6 +5,15 @@ guid: 7f2767bd-fc33-43f2-b074-0073230a18d6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, error handling, api configuration, service studio, outsystems
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Required Output Parameter Error

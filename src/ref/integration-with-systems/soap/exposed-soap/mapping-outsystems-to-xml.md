@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) maps its data types to XML Schema data types for SOAP Web Services integration.
-tags: support-application_development; support-Integrations_Extensions
+tags: data mapping, soap web services, xml schema, integration patterns, data types
 locale: en-us
 guid: 34ff136f-22c7-46a3-a32d-3725943ce880
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Mapping OutSystems Data Types to XML Data Types

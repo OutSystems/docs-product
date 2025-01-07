@@ -1,11 +1,20 @@
 ---
 summary: Explore how OutSystems 11 (O11) utilizes the APDEX metric to evaluate application performance and user satisfaction.
-tags: support-Integrations_Extensions; support-monitoring;  support-monitoring-featured
+tags: performance monitoring, user experience, application performance management, apdex, application optimization
 locale: en-us
 guid: 4322a32a-812e-4357-be20-ce1693dd2968
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:133
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - remember
 ---
 
 # The APDEX Performance Score

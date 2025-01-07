@@ -1,12 +1,21 @@
 ---
 summary: Removing unsafe directives from OutSystems CSP impacts JavaScript widgets and UI components by preventing the use of eval() and requiring updates to the logic
-tags: support-devOps; support-Security; support-Security-overview
+tags: content security policy, security best practices, javascript widgets, web application security
 locale: en-us
 guid: 657030e8-6825-492d-bfe4-e29a9610eafc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3265-714&t=D4PV7CTOyfcxYPJQ-0
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
+
 # Impacts of removing unsafe directives (Reactive Web Apps Only)
 
 A Content Security Policy (CSP) helps to prevent attacks from untrusted sources. Your policy should detect and mitigate these attacks.

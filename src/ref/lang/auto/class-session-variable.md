@@ -6,6 +6,14 @@ guid: ee806cae-33e4-4751-b49f-ddbd4aa5164c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: session management, server-side storage, data types, data modeling, performance optimization
+audience:
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Session Variable

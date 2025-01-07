@@ -5,6 +5,17 @@ guid: 13e13cb8-e058-4235-bead-06410a2b8c7d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:25
+tags: application deployment, environment management, deployment plans, version control, outsystems lifetime
+audience:
+  - platform administrators
+  - full stack developers
+  - architects
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
+  - understand
+  - apply
 ---
 
 # Deployment Plans
@@ -143,7 +154,7 @@ If you have independent delivery lines in your factory, you can create, edit, an
 
 * Deployments don't contain direct or indirect references (both as producers or as consumers) to any other module that is already being deployed for the same target environment in another deployment plan (otherwise, the deployment is blocked). 
 
-* Parallel deployments are enabled in LifeTime. By default, this is enabled for all environments.
+* Parallel deployments are enabled in LifeTime by default. At the environment level, it is possible to disable both the creation as well as the execution of parallel deployment plans. To disable the execution of parallel deployments, set the parallel deployment limit setting to 1.
 
 * Parallel deployment limit is defined for each environment in LifeTime. By default, the limit is 5. For OutSystems Cloud infrastructures, the limit cannot be increased above 5. For self-managed infrastructure, this limit can be increased above 5. 
 

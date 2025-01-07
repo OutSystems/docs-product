@@ -5,6 +5,14 @@ guid: cca76fc3-0b0e-45b7-8ce8-f3184592ed95
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, extension development, outsystems development, system integration, software troubleshooting
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - unblock
 ---
 
 # Missing Resource Error

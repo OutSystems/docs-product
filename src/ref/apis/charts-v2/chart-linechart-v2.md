@@ -1,11 +1,19 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, chart implementation, data visualization, design integration, spline charts, custom markers
 summary: Learn how to create a Line Chart with a Spline line and custom markers using OutSystems 11 (O11).
 locale: en-us
 guid: 0A9D1277-D008-4B96-8BCF-F559BEE3374C
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2421:4216
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Line Chart

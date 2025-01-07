@@ -1,11 +1,20 @@
 ---
 summary: Explore how to design and manage email content in OutSystems 11 (O11) using Service Studio's UI elements and templates.
-tags: support-application_development,
+tags: email design, ui flows, email templates, lightweight styles, ui elements
 locale: en-us
 guid: 455d5651-9b51-4de7-8f8a-5888ab78d78e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=855:1293
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
 ---
 
 # Managing emails

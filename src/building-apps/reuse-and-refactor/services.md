@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) supports scalable architecture through Service Modules and Service Applications for enhanced application reusability.
-tags: support-application_architecture-featured
+tags: service-oriented architecture, api development, application scalability, business logic abstraction, service modules
 locale: en-us
 guid: 9fe307cf-1687-41f6-9a5b-b8f1484f57ee
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:32
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - evaluate
 ---
 
 # Use Services to Expose Functionality

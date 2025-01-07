@@ -1,11 +1,21 @@
 ---
 summary: Explore troubleshooting tips and known issues for mobile apps in OutSystems 11 (O11), including PWA-specific challenges and solutions.
-tags: support-application_development; runtime-mobile;
+tags: progressive web apps, troubleshooting, platform server, extensibility configurations, lifetime
 locale: en-us
 guid: 894f3950-7424-4995-9f8b-4e7e9c2645d7
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1818:841
+audience:
+  - mobile developers
+  - frontend developers
+  - platform administrators
+outsystems-tools:
+  - lifetime
+  - platform server
+coverage-type:
+  - remember
+  - unblock
 ---
 
 # Troubleshooting and known issues

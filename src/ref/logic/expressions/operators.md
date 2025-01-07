@@ -1,11 +1,19 @@
 ---
 summary: Explore the comprehensive guide on using various operators in OutSystems 11 (O11) for numeric, logical, and comparison operations in expressions.
-tags: 
+tags: expression language, data types, arithmetic operations, expressions, operator overloading
 locale: en-us
 guid: bdb4b4a6-820c-47c3-8ade-fd593c7f6ef4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Operators

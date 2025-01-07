@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, web blocks, ui design, service studio, outsystemsui
 summary: Explore how to implement and customize the Navigation Bar UI Pattern in OutSystems 11 (O11) for effective app navigation.
 locale: en-us
 guid: 107b5610-cfdd-4186-b3ae-f513af891651
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:31
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Navigation Bar

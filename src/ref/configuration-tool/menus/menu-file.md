@@ -5,6 +5,16 @@ guid: c87ade70-83ff-4ba0-b333-9ce56da5c8f1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: configuration management, script generation, deployment, database setup, platform server configuration
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+  - infrastructure managers
+outsystems-tools:
+  - platform server
+coverage-type:
+  - remember
 ---
 
 # File Menu

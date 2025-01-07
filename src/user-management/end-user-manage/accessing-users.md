@@ -1,11 +1,21 @@
 ---
 summary: Manage end-user roles and access in OutSystems 11 (O11) using the Users app by visiting your specific environment URL.
-tags: support-Mobile_Apps; support-webapps
+tags: user management, access control, security, administrator configuration, environment setup
 locale: en-us
 guid: 2cbb2e7d-9936-4bb4-8791-240ade1d1ad6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=280%3A44&mode=design&t=vStGeN187wwjAjiU-1
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+  - service center
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Access the Users app

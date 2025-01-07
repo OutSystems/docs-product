@@ -6,6 +6,15 @@ guid: 9fc0da79-a220-4620-bcd5-b69331ec3b0c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems, user roles, security, role-based access control, exceptions handling
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Role

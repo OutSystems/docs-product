@@ -5,6 +5,15 @@ guid: 4ccf9451-f78a-4c45-8507-2e0fa2f7e4b2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: screen actions, user interaction, logic implementation, outsystems ui patterns, application development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Screen Action

@@ -1,13 +1,25 @@
 ---
 summary: Learn how to integrate and utilize the Barcode Plugin in OutSystems 11 (O11) for scanning various barcode formats in native mobile apps.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+tags: barcode scanning, native mobile development, mobile plugins, outsystems forge, demo applications
 locale: en-us
 guid: 22ea5600-8b2b-4ad3-8e64-06e512155c58
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=807:385
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
+  - remember
+  - unblock
 ---
- 
+
 # Barcode Plugin
 
 <div class="info" markdown="1">

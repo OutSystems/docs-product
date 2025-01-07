@@ -1,11 +1,18 @@
 ---
 summary: OutSystems 11 (O11) enables IT user management through a role-based permission model, supporting both simple and complex security policies.
-tags:
+tags: it user management, role-based permissions, security policies, authentication, team management
 locale: en-us
 guid: be9622e0-f844-42a6-8ca2-b4a486cfc4e0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:21
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - understand
 ---
 
 # Manage IT Users

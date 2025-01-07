@@ -1,11 +1,20 @@
 ---
 summary: Learn more about migrating O11 code to ODC
-tags: 
+tags: code migration, migration kit, migration assessment tool, version tagging, environment management
 guid: 4e0c455a-c243-4daa-aa69-16982558893b
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2119-4
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - migration assessment tool
+coverage-type:
+  - apply
 ---
 
 # Migrate code

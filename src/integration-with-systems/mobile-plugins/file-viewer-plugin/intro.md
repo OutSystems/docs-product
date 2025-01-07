@@ -1,11 +1,21 @@
 ---
 summary: Explore the capabilities of the File Viewer plugin in OutSystems 11 (O11) for opening and managing files in mobile and Progressive Web Apps.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+tags: plugin development, file handling, cross-platform compatibility, plugin integration, pwa support
 locale: en-us
 guid: 8f00b7c4-754a-4afd-86ac-740c255458b1
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1075:5150
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+  - remember
 ---
 
 # File Viewer Plugin

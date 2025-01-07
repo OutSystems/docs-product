@@ -5,6 +5,15 @@ guid: 3c3744ef-942f-49a1-b868-3f8498598a8e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, debugging, web development, software troubleshooting, best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Blocks Error

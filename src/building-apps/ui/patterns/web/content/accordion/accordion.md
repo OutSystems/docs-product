@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, accordion widget, web development, outsystems ui, service studio
 summary: Explore how to implement and customize the Accordion UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 6f52287b-c093-4b03-84f9-ac1e7ea57152
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A24&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Accordion

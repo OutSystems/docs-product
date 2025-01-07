@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) provides detailed logging for Service Actions to aid in troubleshooting, accessible via the Service Center's Monitoring section.
-tags:
+tags: service actions, logging, monitoring, troubleshooting, service center
 locale: en-us
 guid: e37fa5b3-0517-4c62-a0f6-ab2262e44a09
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:133
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
+  - remember
 ---
 
 # Troubleshoot Service Actions Using Logs

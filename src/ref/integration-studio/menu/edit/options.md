@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3072-13&t=wVzbD9aw4fUXUtiF-1
 summary: Explore customization options for development in Integration Studio with OutSystems 11 (O11).
+tags: ide usage, reactive web apps, tutorials for beginners, integration studio customization, .net development
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Options Window
 
 In the Options window, of the [Edit](<intro.md>) menu, you can customize some parameters related to the development in Integration Studio.

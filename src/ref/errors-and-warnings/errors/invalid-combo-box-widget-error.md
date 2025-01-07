@@ -5,6 +5,14 @@ guid: c8ac04ea-7e81-44be-b645-bf003af44f25
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, widget configuration, outsystems development, web development, data binding
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Combo Box Widget Error

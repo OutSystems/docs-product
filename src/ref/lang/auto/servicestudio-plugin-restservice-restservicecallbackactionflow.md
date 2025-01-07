@@ -5,6 +5,15 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: Learn how to preprocess requests and customize responses in OutSystems 11 (O11) using REST API Callback with OnRequest and OnResponse action flows.
+tags: rest api, api integration, api customization, outsystems api, rest api callback
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # REST API Callback

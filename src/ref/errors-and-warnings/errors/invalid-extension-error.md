@@ -5,6 +5,16 @@ guid: 0b8a546c-b037-4bc9-a9f0-ae936c88c951
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error resolution, extension management, parameter configuration, outsystems development, service studio integration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Extension Error

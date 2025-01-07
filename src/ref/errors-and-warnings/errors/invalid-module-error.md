@@ -5,6 +5,15 @@ guid: e1f2d221-fa69-4a47-bc46-5052d48ee60a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, multi-tenancy, security, traditional web apps, user management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Module Error

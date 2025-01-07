@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: notification systems, ui components, api usage, pattern libraries, web development
 summary: Explore the notification features and API methods of OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: 7505a6aa-329a-4f60-a1a6-e7d3bd727943
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1443:2027
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Notification Reference

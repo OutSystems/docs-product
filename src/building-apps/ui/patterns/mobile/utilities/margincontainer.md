@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, widgets, ui design, service studio tools, dependency management
 summary: Explore how to implement the Margin Container UI Pattern in OutSystems 11 (O11) for adding symmetrical padding in Mobile and Reactive Web Apps.
 locale: en-us
 guid: 8099782f-c5ac-4a8f-a70a-fa9946d834a3
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:95
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Margin Container

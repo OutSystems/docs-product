@@ -1,11 +1,19 @@
 ---
-summary: Learn more about how to adapt the login flow so that the users can set a new password. 
-tags: 
+summary: Learn more about how to adapt the login flow so that the users can set a new password.
+tags: authentication, password management, data migration, o11 to odc migration, user experience
 guid: 08ed0f80-3e5c-4a5d-9955-7658ea3aa344
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2216-288
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Adapt login and logout flow of migrated apps

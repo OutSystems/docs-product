@@ -6,6 +6,15 @@ guid: f4f5a9b7-d123-4438-a900-9ca289c4e339
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: javascript integration, custom code, application development, outsystems extensions, traditional web apps
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # JavaScript

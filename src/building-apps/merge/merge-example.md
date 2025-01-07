@@ -5,6 +5,15 @@ guid: a0c7450d-ca61-460a-9188-881adb2f40fb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:147
+tags: version control, conflict resolution, source control, collaboration, development best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Compare and merge example with conflicts

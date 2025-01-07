@@ -1,11 +1,19 @@
 ---
 summary: Explore application performance troubleshooting in OutSystems 11 (O11) using detailed analytics in the LifeTime console.
-tags: support-application_development; support-Application_Troubleshooting; support-devOps; support-monitoring;  support-monitoring-featured; runtime-traditionalweb
+tags: application performance analysis, analytics, performance troubleshooting, traditional web apps, outsystems
 locale: en-us
 guid: 8b6d4c19-e002-4a96-b043-766b1b7e4024
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:126
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Troubleshoot the Performance of an Application

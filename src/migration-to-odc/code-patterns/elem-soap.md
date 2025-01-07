@@ -1,19 +1,31 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 6c7adafe-3611-4fd7-86b8-156a3828a1a1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30540
+tags: api integration, rest services, soap migration, integration platforms, outsystems developer cloud
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - service studio
+  - integration builder
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # The Asset cannot contain SOAP
 
 SOAP is an integration technology that has seen a significant reduction in its use over time. so at this point, ODC does not support SOAP (consumption or exposure).
 
 ## How to solve
-
-This pattern isn't supported yet.
 
 If you want to proceed with the migration of other ODC assets without SOAP, follow the steps in the following sections.
 

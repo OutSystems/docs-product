@@ -5,7 +5,17 @@ guid: 9b0eabe2-5eb5-4e6b-bb17-b77edc2bb68f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3072-5&t=wVzbD9aw4fUXUtiF-1
+tags: user interface, clipboard operations, environment configuration, development tools, user experience
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Edit Menu
 
 In the Edit menu, on the [menu bar](<../../workspace.md>), you can perform the common commands of copying contents to and from the Clipboard, plus editing the environment options.

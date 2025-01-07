@@ -5,6 +5,16 @@ guid: b888bd38-658f-4d8d-b3c7-df225c1330b0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, extension management, platform server, integration studio, publishing apps
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Extension Name Conflict Error

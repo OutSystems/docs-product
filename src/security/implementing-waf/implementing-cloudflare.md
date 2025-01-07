@@ -1,11 +1,19 @@
 ---
 summary: Explore how to use Cloudflare WAF in an OutSystems 11 (O11) Web Application.
-tags:
+tags: web application security, cloudflare integration, domain management, ssl/tls configuration, dns configuration
 locale: en-us
 guid: 93FCB4CF-7822-46B0-96E4-32E17B91A24D
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5186-295
+audience:
+  - full stack developers
+  - frontend developers
+  - platform administrators
+outsystems-tools:
+  - none
+coverage-type:
+  - apply
 ---
 
 # Implementing a Cloudflare WAF in an OutSystems web app

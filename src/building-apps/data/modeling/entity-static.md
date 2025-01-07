@@ -1,11 +1,20 @@
 ---
 summary: Learn how to manage Static Entities in OutSystems 11 (O11) for predefined data sets with global scope and automatic persistence management.
-tags:
+tags: data modeling, entity management, database persistence, data integrity, service studio usage
 locale: en-us
 guid: a0ab595d-66a9-4bee-988a-d12ba224b0e5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1275:18338
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Static Entities

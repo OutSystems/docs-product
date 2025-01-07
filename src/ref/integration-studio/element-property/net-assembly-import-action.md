@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3067-146&t=0cuQUgeosMV2m0Kw-1
 summary: OutSystems 11 (O11) facilitates importing .NET assembly items as actions with specific properties and parameters.
+tags: ide usage, reactive web apps, .net integration, outsystems development, import actions
+audience:
+  - full stack developers
+  - backend developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Imported Actions Properties
 
 The Import Actions from .NET Assembly wizard allows you to import action definitions from a .NET assembly. Using introspection of a .NET assembly, this wizard will create an action for each method, property and public field you checked in step 3 of the [Import Actions from .NET Assembly](<../../../integration-with-systems/integration-studio/managing-extensions/net-assembly-import-action.md>) wizard. The properties of the imported actions depend on the type of the assembly item you select, as explained below.

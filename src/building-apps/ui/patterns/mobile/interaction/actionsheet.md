@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, widget implementation, dependency management, user interface design, service studio tips
 summary: Explore how to implement the Action Sheet UI Pattern in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 54f296bf-249a-425b-b54c-6d446248c228
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1295:18300
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Action Sheet

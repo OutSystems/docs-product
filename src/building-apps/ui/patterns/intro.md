@@ -5,6 +5,17 @@ guid: 8ba8f042-b63e-4dbf-b2b4-b05d61b7160c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4832%3A1884&mode=design&t=u4ANW5BJS7Flsdmg-1
+tags: ui design, css customization, ui framework, ui patterns, web development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Patterns

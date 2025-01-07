@@ -5,6 +5,16 @@ guid: 51e508a9-fe2f-4ea2-b545-9772a85628c6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: licensing, outsystems platform, server management, renewal process, resource management
+audience:
+  - platform administrators
+  - tech leads
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - unblock
 ---
 
 # Licensing Warning

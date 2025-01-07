@@ -5,6 +5,16 @@ guid: 2b5fc18e-70df-4b15-9046-7bb3de66b6c9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=6%3A249&mode=design&t=blNAbpnofC4dwbOh-1
+tags: outsystems, odc architecture, business domains, application lifecycle, component reusability
+audience:
+  - full stack developers
+  - architects
+  - backend developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Map O11 domains to ODC apps and libraries

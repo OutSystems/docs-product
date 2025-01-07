@@ -1,11 +1,19 @@
 ---
 summary: Explore how to pass data between blocks in OutSystems 11 (O11) to update UI components dynamically.
-tags:
+tags: event handling, block communication, ui dynamics, screen design, data binding
 locale: en-us
 guid: 77d2313f-f484-4581-825e-c198e4756a11
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:12
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Pass Data Between Blocks

@@ -1,11 +1,18 @@
 ---
-tags: runtime-mobileandreactiveweb; 
+tags: user interface design, user experience, data visualization, mobile development, web development
 summary: OutSystems 11 (O11) enhances user experience by offering diverse number patterns for displaying numerical data in mobile and reactive web apps.
 locale: en-us
 guid: 3ec6b9d0-a32e-4142-b4fc-700bb4835278
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3971:29170
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Numbers

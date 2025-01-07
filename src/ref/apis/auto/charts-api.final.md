@@ -1,11 +1,18 @@
 ---
 summary: Explore chart creation and customization with OutSystems 11 (O11) using Highcharts 11.4.8 for dynamic data visualization.
-tags: article-page; support-application_development; support-Front_end_Development
+tags: chart customization, data visualization, highcharts integration, ui components, interactive widgets
 locale: en-us
 guid: 868f8412-a29e-4c0b-9e37-3c75830502eb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Charts API

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, progress indicators, user interface design, widgets, dependency management
 summary: Explore how to implement and customize the Progress Bar in OutSystems 11 (O11) for Traditional Web Apps to visually represent task completion.
 locale: en-us
 guid: 2a589d5e-0cd8-4dab-b9fa-bc7d12cacf23
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=243%3A28&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Progress Bar

@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) emphasizes early testing and fixing of accessibility issues using tools like WAVE and Lighthouse to enhance app development.
-tags: runtime-reactiveweb
+tags: accessibility, web development, code quality, ui/ux design, testing tools
 locale: en-us
 guid: 4d847458-cdd8-40ec-848a-aa9af7e1d2ea
 app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:22
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Testing and fixing accessibility issues

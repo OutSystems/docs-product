@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, search functionality
 summary: Learn how to implement the Search UI Pattern in OutSystems 11 (O11) to enhance user experience by allowing content searches without navigation knowledge.
 locale: en-us
 guid: 583538cf-ffe1-4c39-9fe5-60667fd05f26
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:66
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Search

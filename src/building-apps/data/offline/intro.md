@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) enables offline access and data synchronization for mobile apps and PWAs.
-tags: support-application_development; support-Mobile_Apps
+tags: offline capabilities, data synchronization, progressive web apps, sqlite, indexeddb
 locale: en-us
 guid: ff508705-52d0-4d39-a319-fca0f74eb85f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:30
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Offline

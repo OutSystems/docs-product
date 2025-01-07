@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb; 
+tags: ui design, user interface components, user interaction, frontend development, event handling
 summary: Explore the technical functionalities and events of OutSystems 11 (O11) Range Slider Interval for enhanced UI control in mobile and reactive web apps.
 locale: en-us
 guid: 0a4c0ebb-4ee1-4443-9ab8-971329ca1541
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=612%3A381&mode=design&t=xOFe93sVU3cU3chE-1
+audience:
+  - mobile developers
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Range Slider Interval Reference

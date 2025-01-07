@@ -1,12 +1,21 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, chart visualization, data representation
 summary: Explore how to create column and bar charts in OutSystems 11 (O11) using fixed or variable data points and multiple series.
 locale: en-us
 guid: 7115204b-9a1e-42f8-87f8-d1d771608667
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:478
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Create Column and Bar Charts
 
 Learn how to create a simple Column or Bar chart in OutSystems.

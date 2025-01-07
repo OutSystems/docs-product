@@ -5,6 +5,16 @@ guid: A2F9928D-5F44-4DA0-B567-EDC9191E4A7B
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=2421:23528
+tags: natural language processing, data fetching, user experience, usability, ide features
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - evaluate
 ---
 
 # Fetch data using human language

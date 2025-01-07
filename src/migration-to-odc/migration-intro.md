@@ -5,6 +5,17 @@ guid: 0a6f2684-c594-4eca-9cbf-0780c9b3c5ae
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=20%3A241&mode=design&t=IqPW9GPcaNRalD3r-1
+tags: cloud migration, app modernization, cloud-native architecture, scaling strategies, automation tools
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - apply
+  - understand
 ---
 
 # OutSystems 11 to ODC migration

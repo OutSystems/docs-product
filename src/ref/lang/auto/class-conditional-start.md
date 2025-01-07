@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=848:1418
 summary: Explore how OutSystems 11 (O11) utilizes the Conditional Start process activity to initiate workflows based on entity record events.
+tags: workflow automation, event-driven processes, entity record events, process design, process flow
+audience:
+  - full stack developers
+  - frontend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Conditional Start
 
 When designing the process flow of your process, you can start a flow when an event occurs in an entity record. This behavior is implemented through the **Conditional Start** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../building-apps/processes/process-flow/process-flow-toolbox.md>).

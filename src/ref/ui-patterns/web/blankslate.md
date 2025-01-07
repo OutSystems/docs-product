@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, css customization, web design, ux patterns, design systems
 summary: Learn how to implement the Blank Slate UI Pattern in Traditional Web Apps using OutSystems 11 (O11) for optimal content alignment and conditional display.
 locale: en-us
 guid: 57108c14-9fcd-46a6-9604-489d54277361
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A391&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - ui designers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Blank Slate Reference

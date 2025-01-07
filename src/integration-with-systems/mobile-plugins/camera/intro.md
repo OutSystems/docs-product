@@ -1,11 +1,22 @@
 ---
 summary: Explore the Camera plugin in OutSystems 11 (O11) for capturing and managing media in mobile and progressive web apps.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+tags: plugin management, media capture, mobile application development, pwa (progressive web apps), camera api
 locale: en-us
 guid: 158347bc-c312-4499-9912-1f1dfeac7d50
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1088:5164
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
+  - remember
 ---
 
 # Camera Plugin

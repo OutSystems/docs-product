@@ -5,6 +5,15 @@ guid: a1d0e4e5-5910-479b-912f-4580537c97d4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error resolution, data modeling, ide usage, outsystems platform, troubleshooting
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Record Error 

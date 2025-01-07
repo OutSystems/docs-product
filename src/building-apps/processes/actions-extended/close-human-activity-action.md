@@ -5,6 +5,15 @@ guid: 249a28f9-965b-47b7-bbe1-6ba5d20032d5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process automation, workflow management, user task management, server-side logic, client-side interaction
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Close Human Activity Action

@@ -1,11 +1,19 @@
 ---
-tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow; template; new-initiative-request
+tags: workflow automation, project management, app development workflow, project initiation, application configuration
 summary: Learn how to create apps using the Project Request template in OutSystems 11 (O11).
 guid: 3571926d-eafe-4ced-a42f-9be2230a0639
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:918
+audience:
+  - business analysts
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - workflow builder
+coverage-type:
+  - apply
 ---
 
 # Using the Project Request template

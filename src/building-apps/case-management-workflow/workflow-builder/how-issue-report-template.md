@@ -1,11 +1,17 @@
 ---
-tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow; template; issue-report
+tags: workflow automation, app development, user interface customization, productivity tools, no-code/low-code development
 summary: OutSystems 11 (O11) enables users to create apps using the Issue Report template by following a step-by-step guide.
 guid: 2eb55ee1-3508-4c49-9303-3d968ef6b3a2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:920
+audience:
+  - frontend developers
+outsystems-tools:
+  - workflow builder
+coverage-type:
+  - apply
 ---
 
 # Using the Issue Report template

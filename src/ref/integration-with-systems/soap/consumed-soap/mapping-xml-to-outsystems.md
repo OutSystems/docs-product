@@ -1,12 +1,21 @@
 ---
-tags: support-application_development; support-Integrations_Extensions
+tags: web services, soap, data mapping, data types, xml
 locale: en-us
 guid: ac774bf3-82fc-480e-a633-7652e559d52a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: Learn how OutSystems 11 (O11) maps XML Data Types to OutSystems Data Types for SOAP Web Services integration.
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Mapping XML Data Types to OutSystems Data Types
 
 When consuming SOAP Web Services in your module, OutSystems maps the XML Data Types into OutSystems Data Types as follows:

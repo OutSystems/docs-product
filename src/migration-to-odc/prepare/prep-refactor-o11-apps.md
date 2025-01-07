@@ -5,6 +5,15 @@ guid: 99ad22b2-8292-4f3a-8d71-0d8ddc11402a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?m=auto&node-id=2041-594&t=yE9BxgtAPjxhELHt-1
+tags: migration, code assessment, compatibility, deployment environments, application architecture
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - migration assessment tool
+coverage-type:
+  - apply
 ---
 
 # Make O11 apps compatible with ODC

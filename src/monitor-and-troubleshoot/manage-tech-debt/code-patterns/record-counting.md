@@ -1,13 +1,22 @@
 ---
-tags: 
+tags: performance optimization, sql query optimization, application development, aggregate functions, platform efficiency
 summary: Explore how OutSystems 11 (O11) optimizes record counting in aggregates and addresses challenges in SQL queries.
 locale: en-us
 guid: 63b22fd8-b156-4c3e-b95a-16b5ace39c62
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:721
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - unblock
+  - evaluate
 ---
-
 
 # Appropriate record counting
 

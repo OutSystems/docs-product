@@ -1,11 +1,18 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags: mobile app development, navigation management, user interface, back button handling, animation effects
 summary: OutSystems 11 (O11) enhances navigation in mobile and reactive web apps with custom back handlers and transition animations.
 locale: en-us
 guid: c274f0ef-e0b8-4093-bd87-049cda15248d
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Navigation

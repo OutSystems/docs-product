@@ -6,6 +6,15 @@ guid: 45080b5d-e942-4a12-935b-ac0db428c0e2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: url handling, url parameters, external linking, web navigation, data encoding
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # External Site

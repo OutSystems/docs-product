@@ -1,11 +1,21 @@
 ---
 summary: Explore high availability and scalability strategies in OutSystems 11 (O11), focusing on vertical and horizontal scaling and distributed architecture.
-tags: 
+tags: high availability, scalability, cloud infrastructure, self-managed installations, redundancy
 locale: en-us
 guid: eaf6fefe-684a-42aa-b27f-a3ab234e8aac
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2576%3A3024&mode=design&t=uPq3qCZl7kqIKVy0-1
+audience:
+  - platform administrators
+  - infrastructure managers
+  - tech leads
+  - architects
+  - full stack developers
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
 ---
 
 # High availability and scalability strategies

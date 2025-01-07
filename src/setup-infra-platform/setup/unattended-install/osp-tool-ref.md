@@ -1,11 +1,20 @@
 ---
 summary: Learn how to use the Solution Pack Tool (OSPTool) for publishing solutions in OutSystems 11 (O11) environments.
-tags: support-Installation_Configuration; support-Installation_Configuration-overview
+tags: command line tools, deployment automation, environment configuration, application publishing, devops
 locale: en-us
 guid: dee8f358-e76a-4277-af9f-c18bd1a05616
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - tech leads
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
 # Solution Pack Tool Command Line Reference - OSPTool

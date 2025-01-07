@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, design systems
 summary: OutSystems 11 (O11) supports the Card Background UI Pattern for grouping and highlighting information in Mobile and Reactive Web Apps.
 locale: en-us
 guid: e34c8b4b-958b-498e-b8c8-459c60d5c98f
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:20
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Card Background

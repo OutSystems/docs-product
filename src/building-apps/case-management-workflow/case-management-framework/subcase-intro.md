@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework; Subcase.
+tags: business process technology, entity relationships, case hierarchy, process management, wait node implementation
 summary: Learn how to manage complex workflows with subcases in OutSystems 11 (O11), featuring hierarchical case relationships.
 guid: 7a4bf141-060b-4cd8-bf99-a381f4e37d73
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - architects
+  - business analysts
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - understand
 ---
 
 # Subcases introduction

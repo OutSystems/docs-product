@@ -1,11 +1,18 @@
 ---
 summary: Explore mobile app customization options in OutSystems 11 (O11) including interface configurations and environment-specific settings.
-tags: runtime-mobile
+tags: app customization, user experience, json configuration, plugins, interface design
 locale: en-us
 guid: 8e510d45-a9d0-44c9-b2c1-5f676be38a25
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1:89
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Customize Your Mobile App

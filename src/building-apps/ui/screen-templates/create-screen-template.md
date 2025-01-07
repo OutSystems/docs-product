@@ -1,11 +1,20 @@
 ---
 summary: Explore how to create and manage custom screen templates in OutSystems 11 (O11) using the Service Studio environment.
-tags: support-Mobile_Apps-featured; support-webapps-featured
+tags: ide usage, reactive web apps, tutorials for beginners, screen template customization, outsystems development
 locale: en-us
 guid: 874543f6-0021-47c7-9b10-28853b48d6a3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:47
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - apply
 ---
 
 # Creating Screen Templates

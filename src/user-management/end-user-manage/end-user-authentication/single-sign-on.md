@@ -1,11 +1,21 @@
 ---
 summary: Explore how OutSystems 11 (O11) enables default single sign-on capabilities across applications with unified user and session management.
-tags: support-Mobile_Apps; support-webapps
+tags: single sign-on, user management, security, authentication, user sessions
 locale: en-us
 guid: a15c9cd8-b90c-4c9a-aed5-9cfffd0e1b04
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - remember
+  - apply
 ---
 
 # Single Sign-On

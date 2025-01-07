@@ -1,11 +1,13 @@
 ---
 summary: Explore how to establish a secure site-to-site VPN connection between your on-premises network and OutSystems 11 (O11) Cloud hosted on AWS.
-tags: 
+tags:
 locale: en-us
 guid: f05c9cb8-7c15-4b9d-bf6c-c2da72993ff8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=620:3
+coverage-type:
+  - apply
 ---
 
 # Set up a VPN to your OutSystems Cloud

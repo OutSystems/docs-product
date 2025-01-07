@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) enhances IT user security by integrating authentication with external Identity Providers using OpenID Connect.
-tags:
+tags: it security, single sign-on, openid connect, identity providers, authentication
 locale: en-us
 guid: 595C5E6F-7C59-4314-9BDE-4EF1400A670F
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1913:2347
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - understand
 ---
 
 # IT Users Integration with External IdP via OpenId Connect

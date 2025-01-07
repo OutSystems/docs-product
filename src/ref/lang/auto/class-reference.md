@@ -5,6 +5,15 @@ guid: 766100da-d59c-466d-ab09-c95e11cb7d17
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems, element properties, ui design, application development, jquery
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Reference

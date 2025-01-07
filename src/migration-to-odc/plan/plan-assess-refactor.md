@@ -1,10 +1,21 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 0b89d709-a914-4f96-8869-3c653149576d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2168-1376
+tags: application migration, odc architecture, platform updates, migration process, architecture assessment
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - migration assessment tool
+coverage-type:
+  - apply
 ---
 
 # Assess app architecture and ODC readiness

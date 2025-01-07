@@ -1,11 +1,21 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 6901e523-4fa3-42bd-b37e-880e06d5cb62
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2047-1571
 helpids: 30544
+tags: migration, architecture, o11 conversion, migration kit, business apps
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - migration assessement tool
+  - architecture canvas
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Map O11 to ODC architecture for one shot migration

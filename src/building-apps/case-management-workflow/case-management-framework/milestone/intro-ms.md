@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework; CMf;
+tags: case management, dynamic case management, milestones, workflow management, outsystems
 summary: Learn how to define intermediate goals using milestones in dynamic case management with OutSystems 11 (O11).
 guid: 31c89686-510e-4586-ad31-d04f21c21154
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - business analysts
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - understand
 ---
 
 # Defining intermediate goals with milestones

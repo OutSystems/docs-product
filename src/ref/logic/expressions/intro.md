@@ -1,11 +1,19 @@
 ---
 summary: Explore how to create, edit, and display expressions in OutSystems 11 (O11) using various built-in tools and functions.
-tags: 
+tags: ide usage, reactive web apps, expressions, error handling, expression editor
 locale: en-us
 guid: 7d9ef917-ff30-4562-a5c6-9a21bd4318d8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:456
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Expressions

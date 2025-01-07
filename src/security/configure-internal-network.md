@@ -1,11 +1,19 @@
 ---
 summary: Learn to configure internal network settings in OutSystems 11 (O11) to restrict application access.
-tags: support-Security-overview
+tags: internal network configuration, security, access restrictions, network security, service center
 locale: en-us
 guid: 2326f357-2f2a-4a5c-a05d-fb20edd7be5f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:93
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Configure an Internal Network

@@ -1,12 +1,23 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 4732cbaa-a548-4c28-b2fb-081be0f1ecc3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7347
 helpids: 30524
+tags: odc, code migration, application development, dependency management, architecture
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming an Image from an Application
 
 A dependency to an Image is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.

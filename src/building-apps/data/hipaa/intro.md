@@ -1,12 +1,22 @@
 ---
 summary: OutSystems 11 (O11) integrates AWS Key Management Service for HIPAA-compliant encryption and decryption of PHI through its Cryptography Services app.
-tags: article-page
+tags: hipaa compliance, encryption, aws key management service, phi encryption, cryptography
 locale: en-us
 guid: 259aca31-dc2a-4eb1-8d5c-e322cefe5e66
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A521&mode=design&t=GF97AOUqsRf9tsAh-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
+
 # Implement encryption and decryption for HIPAA compliance
 
 When you subscribe to the OutSystems Cloud HIPAA offering your environments will include an app that you can reference to encrypt and decrypt PHI - **Cryptography Services**.

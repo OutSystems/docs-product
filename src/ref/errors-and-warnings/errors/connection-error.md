@@ -5,6 +5,17 @@ guid: 5d2f3341-b79d-4c02-9546-73d6d0878567
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: troubleshooting, server communication, error handling, connection issues, application development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - unblock
 ---
 
 # Connection Error

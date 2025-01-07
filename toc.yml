@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started 
 - href: getting-started/intro.md
 - topics:
     - href: getting-started/service-studio.md
@@ -46,6 +46,7 @@
           #Data operations  
         - href: building-apps/data/operations/intro.md
         - topics:
+            - href: building-apps/data/crud-wrappers.md
             - href: building-apps/data/operations/edit-data.md
             - href: building-apps/data/operations/how-edit-data.md
             - href: building-apps/data/operations/fetch-display.md
@@ -969,6 +970,7 @@
             - href: setup-infra-platform/setup/possible-setups/ha-scalability/intro.md
             - topics:
                 - href: setup-infra-platform/setup/possible-setups/ha-scalability/xrdr.md
+                - href: setup-infra-platform/setup/possible-setups/ha-scalability/disaster-recovery-test.md
             - href: setup-infra-platform/setup/possible-setups/cloud-architecture.md
         - href: setup-infra-platform/setup/system-requirements.md
         - href: setup-infra-platform/setup/limitations.md

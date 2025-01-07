@@ -1,12 +1,24 @@
 ---
 summary: Explore how OutSystems 11 (O11) automatically upgrades process flows and performs impact analysis to manage active process instances.
-tags: support-application_development; support-webapps
+tags: process upgrades, impact analysis, process flows, active process instances, automatic upgrades
 locale: en-us
 guid: 628316ec-b24f-422b-bafa-93bc8dd3bc07
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - mobile developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+  - lifetime
+coverage-type:
+  - understand
 ---
+
 # Upgrade Processes
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. However, the success of these upgrades depends on both the kind of changes you made to the process flow and the current execution state of process instances. An **impact analysis** determines whether a process instance is suspended or upgraded to execute the new process flow.

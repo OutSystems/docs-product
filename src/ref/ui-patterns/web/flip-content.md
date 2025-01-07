@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, css selectors, events handling, traditional web patterns, flip content pattern
 summary: Explore the advanced use cases and CSS selectors for the Flip Content UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 478229ef-fead-4fea-be67-f0fdd66c7209
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:466
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Flip Content Reference

@@ -1,11 +1,19 @@
 ---
 summary: Explore how OutSystems 11 (O11) provides tutorials and accelerators for creating customized apps across various use cases.
-tags:
+tags: app development, customized apps, personal environment, free trial, development accelerators
 locale: en-us
 guid: c7315436-17a6-49f5-a395-60b6da7bac46
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=2318:1865
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Getting started with your own app use case

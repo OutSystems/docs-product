@@ -1,11 +1,20 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates business processes into applications through process flows and various editing and execution tools.
-tags: support-webapps
+tags: business process management, process flows, process design, application development, workflow automation
 locale: en-us
 guid: 7f9ed2cf-c73b-467e-bdfa-cf4ba9655613
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Processes

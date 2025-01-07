@@ -5,7 +5,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A99&mode=design&t=187UAgmZTPxcY0ZG-1
 summary: OutSystems 11 (O11) enables log redaction for sensitive REST API input parameters.
+tags: security, privacy, logging, data protection, rest api
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
+
 # Redacting information from REST API logs
 
 You can redact sensitive input parameter values from the logs of a consumed

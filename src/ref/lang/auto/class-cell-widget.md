@@ -5,6 +5,15 @@ guid: c6a8d1ee-69f8-4864-b318-45e927008881
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: widget configuration, user interface design, web development, ui component properties, outsystems development
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Cell Widget

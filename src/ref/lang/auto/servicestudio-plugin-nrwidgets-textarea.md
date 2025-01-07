@@ -6,6 +6,16 @@ guid: 52c47131-75d8-4e4b-92c7-00b226933bbb
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ui component configuration, form design, input validation, user interface, data binding
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Text Area

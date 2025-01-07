@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, mobile development, web development, user interaction, outsystems ui framework
 summary: Explore the swipeable Stacked Cards UI Pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: c4e2edb1-3142-4f82-b34d-dab8d2356155
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:82
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Stacked Cards

@@ -1,11 +1,23 @@
 ---
 summary: Update SAML 2.0 login and logout flows in OutSystems 11 (O11) for Reactive Web Apps using older UI templates.
-tags: runtime-reactiveweb
+tags: saml 2.0, authentication, login flows, outsystems ui, upgrading
 locale: en-us
 guid: 11596936-2e31-4503-a83c-02513439f95d
 app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4502%3A1559&mode=design&t=vStGeN187wwjAjiU-1
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - platform server
+  - service center
+coverage-type:
+  - understand
+  - apply
+  - remember
 ---
 
 # Updating the login and logout flows of your Reactive Web App to support SAML 2.0

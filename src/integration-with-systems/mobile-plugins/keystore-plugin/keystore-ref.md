@@ -5,6 +5,8 @@ guid: 962724cd-01a8-4655-b8bf-9a0147387e77
 app_type: mobile apps
 platform-version: o11
 figma:
+coverage-type:
+  - remember
 ---
 
 # KeyStore Plugin reference

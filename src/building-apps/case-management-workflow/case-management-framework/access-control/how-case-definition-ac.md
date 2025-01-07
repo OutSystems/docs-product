@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework; Access control; CMf; AC;
+tags: access control, security configuration, user permissions, group permissions, case management implementation
 summary: Explore how to manage user and group access to case definitions in OutSystems 11 (O11) using server actions and permissions settings.
 guid: 32f3c433-fd1e-4bd3-861b-32e13f5d157d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # How to grant or revoke access to a case definition

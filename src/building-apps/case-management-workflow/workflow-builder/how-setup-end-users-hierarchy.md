@@ -1,11 +1,20 @@
 ---
-tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow;Users Hierarchy; Business developers
+tags: user management, role-based access control, workflow configuration, user roles, access management
 summary: Explore how to configure end user hierarchies in Workflow Builder with OutSystems 11 (O11).
 guid: 75bc63f9-8584-481e-8497-6775aa11b23e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:913
+audience:
+  - platform administrators
+  - full stack developers
+  - business analysts
+outsystems-tools:
+  - workflow builder
+  - users
+coverage-type:
+  - apply
 ---
 
 # How to set up the end users hierarchy

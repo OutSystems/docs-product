@@ -6,6 +6,15 @@ guid: b9f2d2f5-39f6-4709-936c-7518ac9d960a
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: html customization, html elements, web development, interface design, app customization
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # HTML Element

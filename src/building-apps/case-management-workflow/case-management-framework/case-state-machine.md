@@ -1,11 +1,21 @@
 ---
-tags: Case Management; Case Management framework;
+tags: case management framework, outsystems 11, application lifecycle management, workflow automation, state machines
 summary: Learn how to define allowed case status transitions using a case state machine in OutSystems 11 (O11).
 guid: 9afd417a-9688-49f3-a968-06dd8c96bfd9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1853
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Defining allowed case status transitions with a case state machine

@@ -1,11 +1,20 @@
 ---
 summary: Explore secure API authentication methods for AI Mentor Studio, integrated with OutSystems 11 (O11).
-tags: article-page; support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
+tags: api security, api key management, https, authentication, api integration
 locale: en-us
 guid: FDBC3311-C94C-4C9C-8CC1-E7F26FC76F02
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1607:3223
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - ai mentor studio
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # AI Mentor Studio API authentication

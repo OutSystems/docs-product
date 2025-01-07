@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, lazy loading, performance optimization, user experience, web development
 summary: Explore the Load on Visible UI pattern in OutSystems 11 (O11) to enhance application speed and user experience by loading content only when visible.
 locale: en-us
 guid: 768c98ad-bb82-496b-a311-1f577e2e221f
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A40&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Load on Visible 

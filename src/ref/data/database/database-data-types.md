@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) data types are mapped to corresponding SQL Server, SQL Azure, and Oracle database data types, as detailed in a comprehensive table.
-tags: support-Database
+tags: database integration, data mapping, data types, sql server, oracle
 locale: en-us
 guid: ee918919-4249-4a56-9ac3-a2ccedd30e54
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - data engineers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Database Data Types

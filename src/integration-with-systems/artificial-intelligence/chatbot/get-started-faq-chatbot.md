@@ -1,11 +1,20 @@
 ---
 summary: Explore how to create an FAQ chatbot using OutSystems 11 (O11) and Microsoft Azure, integrating knowledge bases and UI components.
-tags:
+tags: chatbots, azure integration, ai, user interface, wizard configuration
 locale: en-us
 guid: f48545b1-eda8-4c71-80a0-53b79a4e8d08
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=409:1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - apply
 ---
 
 # Get started: create an FAQ chatbot for your app

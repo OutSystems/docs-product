@@ -5,6 +5,15 @@ guid: 5d5ceec8-9d14-44c9-b289-57ae396f7409
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sql query, data structures, error resolution, data types, sql validation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Unexpected SQL Warning

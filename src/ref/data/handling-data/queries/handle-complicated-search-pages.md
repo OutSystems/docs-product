@@ -1,11 +1,18 @@
 ---
-tags:
+tags: sql optimization, performance tuning, database querying, server actions, advanced sql
 summary: Learn how to optimize complex search pages with multiple fields using Advanced SQL and server actions in OutSystems 11 (O11).
 guid: 1AF1558A-82D8-4081-B31C-1136215B4A2D
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=2755%3A3078&mode=design&t=Ix2yojgoXorQvo4C-1
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # How to handle complicated search pages with multiple search fields

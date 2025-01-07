@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, ui components, web development, css customization, outsystems web ui framework
 summary: Explore how OutSystems 11 (O11) leverages traditional web patterns and UI components for enhanced web app development.
 locale: en-us
 guid: 9439a883-2009-4f3f-b253-1c84a2e3407f
 app_type: traditional web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - none
 ---
 
 # Using Traditional Web Patterns

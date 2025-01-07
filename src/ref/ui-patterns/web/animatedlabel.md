@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: ui patterns, css customization, web development, design systems, outsystems ui
 summary: Explore the features and customization options of the Animated Label UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: eb80a9ee-c99a-4136-85b4-ec06d6b8e8d4
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:379
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Animated Label Reference

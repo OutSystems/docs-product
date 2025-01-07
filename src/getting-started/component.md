@@ -1,11 +1,21 @@
 ---
 summary: Explore how to enhance OutSystems 11 (O11) applications by integrating community-made Forge components for added functionality.
-tags: support-Integrations_Extensions
+tags: ide usage, reactive web apps, tutorials for beginners, component installation, open-source collaboration
 locale: en-us
 guid: 8dd13cd7-723f-456c-ac0d-e8981a266e2e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=69:2
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Use a Forge Component Made by the Community

@@ -5,6 +5,15 @@ guid: d53c74cf-c4dd-4756-a069-6751814f6005
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, data modeling, property validation, entity attributes, numeric data types
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Numeric Value Error

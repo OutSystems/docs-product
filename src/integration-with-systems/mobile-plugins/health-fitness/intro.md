@@ -5,6 +5,16 @@ guid: 15541b1b-d214-4a3d-b37d-489f6ecd8815
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1265%3A86185&mode=design&t=187UAgmZTPxcY0ZG-1
+tags: mobile development, healthkit integration, health connect integration, plugins, access control
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - remember
+  - apply
 ---
 
 # Health and Fitness Plugin using HealthKit and Health Connect
@@ -271,6 +281,16 @@ To check the background job was successfully created, verify the value of **SetB
 #### Setting a background job in Android
 
 Starting in Android 15, when setting a background job for the first time, the Health Connect permission to read data in the background will be requested.
+
+<div class="info" markdown="1">
+
+From Android 15 onwards, users can install an app in the [Private space](https://developer.android.com/about/versions/15/features#private-space). Users can lock their private space at any time. Once locked, all background jobs of the app inside the private space are stopped, and notifications are not shown until the user unlocks the private space.
+
+It is not possible to detect if an app is installed in the private space. Therefore, if your app shows any critical notifications, inform your users to avoid installing the app in the private space.
+
+For more information about the behavior changes of your app related to the private space, refer to [Android documentation](https://developer.android.com/about/versions/15/behavior-changes-all#private-space-changes).
+
+</div>
 
 Starting in Android 14, when setting a background job for the first time, for some variables, the permission to schedule exact alarms will be requested. More specifically, this permission will be requested when setting the first background job if the variable is one of the following: weight, height, sleep, blood glucose, or body fat percentage.
 

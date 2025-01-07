@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) offers comprehensive monitoring and troubleshooting tools for application performance and user experience.
-tags: support-devOps; support-monitoring
+tags: application monitoring, environment metrics, user experience analytics, error logging, it user auditing
 locale: en-us
 guid: 636a2bea-478d-4703-aaf8-e2f8ee514f2c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:112
+audience:
+  - full stack developers
+  - platform administrators
+  - frontend developers
+outsystems-tools:
+  - service center
+  - lifetime
+coverage-type:
+  - understand
 ---
 
 # Monitoring and troubleshooting apps

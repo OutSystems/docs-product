@@ -1,10 +1,20 @@
 ---
-summary: This article guides how you can refactor systems roles in O11 for compatiblity with ODC. 
+summary: This article guides how you can refactor systems roles in O11 for compatiblity with ODC.
 locale: en-us
 guid: 32736715-a9d2-4d94-9b20-47cc6039cbe8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: user management, role-based access control, application security, user roles, compatibility
+audience:
+  - frontend developers
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
 
 # Refactor anonymous and registered roles

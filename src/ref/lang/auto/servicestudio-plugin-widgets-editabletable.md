@@ -6,6 +6,14 @@ guid: 7f80f931-e1ac-4e99-a40e-70b31e30a6ce
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A323&mode=design&t=Ix2yojgoXorQvo4C-1
+tags: data management, entity manipulation, user interface components, web development
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Editable Table Widget

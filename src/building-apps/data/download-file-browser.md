@@ -1,11 +1,18 @@
 ---
 summary: Explore how to download a file through a browser in OutSystems 11 (O11) using the Download Tool for Traditional and Reactive Web Apps.
-tags: support-application_development; runtime-traditionalwebandreactiveweb;
+tags: file download, web development, binary data handling, browser compatibility, user interface interaction
 locale: en-us
 guid: c434b127-7855-4ec0-9c5d-e484eff41e63
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=443:365
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Download a file through browser

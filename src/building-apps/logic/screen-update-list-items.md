@@ -1,11 +1,18 @@
 ---
 summary: Learn how to efficiently update list items on a screen using OutSystems 11 (O11) for both Reactive Web and Traditional Web applications.
-tags: support-application_development; support-Front_end_Development;
+tags: list manipulation, ajax submit, client actions, system actions, ui update
 locale: en-us
 guid: 540f72cb-fa35-4bdb-8af4-c7637699eb3c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:11
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Update List Items on a Screen

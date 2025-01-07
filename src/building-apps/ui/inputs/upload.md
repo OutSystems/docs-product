@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) enables end users to upload files using the Upload widget in both Reactive Web and Mobile, as well as Traditional Web applications.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, file upload, user interface components
 locale: en-us
 guid: cf21f903-1b6f-4fe9-b0a0-622c45bac166
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:66
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Enable End Users to Upload Files

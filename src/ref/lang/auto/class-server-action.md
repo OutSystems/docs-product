@@ -6,6 +6,15 @@ guid: a6524deb-a27a-43d3-b958-a22ec97f1f8c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: server-side logic, server actions, action properties, web development
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Server Action

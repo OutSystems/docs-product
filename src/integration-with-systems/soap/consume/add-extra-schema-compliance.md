@@ -1,11 +1,21 @@
 ---
 summary: Enable extra schema compliance validations in OutSystems 11 (O11) for SOAP web services to ensure XML message compliance.
-tags: support-Installation_Configuration; version-11
+tags: soap web services, schema validation, service definition, runtime behavior, troubleshooting
 locale: en-us
 guid: 1062467B-0DCE-446E-B31C-584119C941A2
 app_type: traditional web apps, mobile apps, reactive web apps
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2220:14984
 platform-version: o11
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - platform server
+  - forge
+coverage-type:
+  - apply
 ---
 
 # Add extra schema compliance validations

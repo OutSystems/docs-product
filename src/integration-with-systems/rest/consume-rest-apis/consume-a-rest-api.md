@@ -1,11 +1,19 @@
 ---
 summary: Learn to consume REST API methods in OutSystems 11 (O11) using OpenAPI specifications or individual methods in Service Studio.
-tags: support-Integrations_Extensions-featured
+tags: rest api, openapi specification, api integration, service studio ide, integrations
 locale: en-us
 guid: b7ea1336-4e6b-49a8-8a61-fd56c2ae5f57
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Consume one or more REST API methods

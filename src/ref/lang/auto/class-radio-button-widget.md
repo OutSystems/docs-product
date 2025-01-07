@@ -6,6 +6,15 @@ guid: 5f9dcef2-c781-41b5-bc68-914d4cdaec29
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: traditional web development, ui components, widget implementation, radio button usage, form elements
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Radio Button Widget

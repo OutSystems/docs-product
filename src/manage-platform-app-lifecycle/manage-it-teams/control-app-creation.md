@@ -5,6 +5,15 @@ guid: f5ba93ec-ca75-43eb-a9ab-e0e83596927d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:73
+tags: application lifecycle management, permissions management, environment configuration, user roles, outsystems best practices
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Control Who Creates Applications

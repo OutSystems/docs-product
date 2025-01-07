@@ -1,11 +1,18 @@
 ---
 summary: Learn how OutSystems 11 (O11) handles auto number attributes in databases, ensuring unique values with SQL Server and Oracle configurations.
-tags: 
+tags: database configuration, entity modeling, auto number, sql server, oracle
 locale: en-us
 guid: 3a57d1cf-1b4f-4a9b-b1c3-29214eb15c14
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Auto Numbers on Database

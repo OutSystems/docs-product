@@ -5,6 +5,15 @@ guid: ce9e1f95-ff93-4bb2-95be-92752f3df2ce
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: workflow processes, email integration, process automation, user task management, process execution
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Process Flow Toolbox

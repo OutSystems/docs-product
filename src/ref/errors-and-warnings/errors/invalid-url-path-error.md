@@ -5,6 +5,15 @@ guid: c4e418eb-f299-41a2-a476-80ff44258482
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, error handling, best practices, debugging, api development
+audience:
+  - backend developers
+  - full stack developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid URL Path Error

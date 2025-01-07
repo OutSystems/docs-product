@@ -1,11 +1,19 @@
 ---
 summary: Guide on consuming SOAP Web Services in OutSystems 11 (O11), including WSDL configuration and method integration.
-tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
+tags: soap web services, wsdl configuration, service integration, logic tab, web service definition
 locale: en-us
 guid: 12679c35-25ab-4d32-a6f2-11a3b94ee3d7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A4&mode=design&t=8a1ub9syb4QKHbuk-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Consume a SOAP Web Service

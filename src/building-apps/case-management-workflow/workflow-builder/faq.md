@@ -1,11 +1,23 @@
 ---
-tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; FAQ; Business developers
+tags: user management, security, compliance, lifetime, service center
 summary: Explore user management, security, and compliance details for OutSystems 11's Workflow Builder.
 guid: d6e18346-5ecc-4178-9bf2-15e82ff891f6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - frontend developers
+  - full stack developers
+  - business analysts
+outsystems-tools:
+  - workflow builder
+  - lifetime
+  - service center
+coverage-type:
+  - unblock
+  - understand
 ---
 
 # Workflow Builder FAQs

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, web development, widget implementation, user interface patterns, outsystems development
 summary: OutSystems 11 (O11) supports the Panel UI Pattern for organizing information in Traditional Web Apps.
 locale: en-us
 guid: 8cbeefba-ff0a-4f0f-a9ef-eccd63af568b
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A113&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Panel

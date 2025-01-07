@@ -6,6 +6,15 @@ guid: 7378bd28-e563-4ca9-bede-731dca5fa49f
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: user interface components, swipe gestures, mobile user experience, widget configuration
+audience:
+  - mobile developers
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # List Item

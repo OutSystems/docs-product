@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: api documentation, business process technology, service level agreements (sla), process automation, activity management
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - remember
 ---
 
 # Case Process Configurations API

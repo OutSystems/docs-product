@@ -5,7 +5,18 @@ guid: b41e47d0-4d8d-4c37-84fb-b49af5783548
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process management, process instances, workflow automation, system behavior, parameter modification
+audience:
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
+
 # Impact of Changing Parameters
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic describes which changes to input and output parameters may suspend process instances.

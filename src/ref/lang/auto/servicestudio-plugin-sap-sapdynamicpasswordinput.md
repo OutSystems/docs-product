@@ -6,6 +6,15 @@ guid: 05055421-befe-428c-8f14-17ef09fe3126
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sap integration, security, parameter configuration, service studio, dynamic login
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Input Parameter - SAP Password

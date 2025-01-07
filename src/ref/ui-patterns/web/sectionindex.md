@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css customization, ui patterns, section index, sticky elements, web design
 summary: Explore the CSS customization and layout features of the Section Index UI Pattern in Traditional Web Apps with OutSystems 11 (O11).
 locale: en-us
 guid: fd1fc012-8659-4cd2-861e-220cfa3090ec
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:568
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Section Index Reference

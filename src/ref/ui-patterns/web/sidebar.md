@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, css, web development, layout patterns, style guide
 summary: Explore the sidebar UI pattern layout and CSS classes for traditional web apps in OutSystems 11 (O11).
 locale: en-us
 guid: 084bb303-c011-405d-adec-710e9227c8ae
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:573
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
 # Sidebar Reference

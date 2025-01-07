@@ -1,11 +1,19 @@
 ---
-tags: 
+tags: technical debt management, dashboard analysis, application lifecycle management, investment decision making, team communication
 summary: Explore technical debt management in OutSystems 11 (O11) using the AI Mentor Studio's Infrastructure Overview Dashboard.
 locale: en-us
 guid: 89bd155e-0d22-4262-a952-8f6de556ffda
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1305:613
+audience:
+  - architects
+  - tech leads
+outsystems-tools:
+  - ai mentor studio
+  - architecture dashboard
+coverage-type:
+  - understand
 ---
 
 # Get an overview of the overall technical debt

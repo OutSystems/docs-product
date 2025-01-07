@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, user interface patterns, user experience enhancements
 summary: Explore the Button Loading UI Pattern in OutSystems 11 (O11) for enhancing user experience by providing visual feedback during action execution.
 locale: en-us
 guid: 9117e011-39f7-442f-b00b-9ac846acab63
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:84
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Button Loading

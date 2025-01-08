@@ -26,13 +26,13 @@ The OutSystems Customer Portal allows you to conduct cross-region disaster recov
 
 <div class="info" markdown="1">
 
-Applies to OutSystem Cloud infrastructures only.
+Applies to OutSystems Cloud infrastructures only.
 
 </div>
 
 ## Prerequisites
 
-* You have the disaster recovery feature enabled in at least 1 environment in your infrastructure
+* You have the [cross region disaster recovery](xrdr.md) feature enabled in at least 1 environment in your infrastructure
 
 To perform a cross-region disaster recovery test that replicates a real-world scenario of a failover during a disaster, follow these steps:
 
@@ -72,7 +72,7 @@ When the test is finished, the system sends you an email confirming the failover
 
     * The new environment is created from scratch in the new region. Subsequently, you must set up the certificates in the new front-end instances.
 
-* Reinstall server-side certificates via Lifetime.
+* Reinstall server-side certificates via LifeTime.
 
     * The new environment is created with the default certificate (OutSystems Enterprise). If you're using a custom certificate, you must configure it LifeTime.
 

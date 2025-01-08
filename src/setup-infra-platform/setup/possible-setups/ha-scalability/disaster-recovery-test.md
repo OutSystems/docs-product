@@ -1,18 +1,28 @@
 ---
-summary: 
-tags: 
+summary: Conduct cross-region disaster recovery tests to ensure business continuity with OutSystems 11 (O11), validating backup and recovery procedures without production risks.
+tags: cross-region disaster recovery, backup and recovery, outsystems cloud, business continuity, disaster recovery tests
 guid: 69a181f4-dd86-4314-8deb-7d5f7333d76f
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=2919-812
+audience:
+  - infrastructure managers
+  - platform administrators
+outsystems-tools:
+  - service center
 ---
+# Perform a cross-region disaster recovery test
 
-# Perform a disaster recovery test
+<div class="info" markdown="1">
+
+OutSystems cross-region disaster recovery (XRDR) requires the subscription of an add-on. Please contact your OutSystems account team for more information.
+
+</div>
 
 A robust disaster recovery process is vital for business continuity, ensuring system availability and minimizing downtime during unexpected failures. Regular testing of these processes is crucial to verify their effectiveness and may be mandated by industry regulations. 
 
-The OutSystems Customer Portal allows you to conduct disaster recovery tests that validate your backup and recovery procedures at any time. The test is a controlled disaster recovery failover simulation conducted in a preproduction environment. Employing the same automated failover processes triggered during a real disaster provides a realistic evaluation of recovery capabilities. This approach ensures you can validate your disaster recovery procedures without risking disruptions to your production environment or business operations.
+The OutSystems Customer Portal allows you to conduct cross-region disaster recovery tests that validate your backup and recovery procedures at any time. The test is a controlled disaster recovery failover simulation conducted in a preproduction environment. Employing the same automated failover processes triggered during a real disaster provides a realistic evaluation of recovery capabilities. This approach ensures you can validate your disaster recovery procedures without risking disruptions to your production environment or business operations.
 
 <div class="info" markdown="1">
 
@@ -24,7 +34,7 @@ Applies to OutSystem Cloud infrastructures only.
 
 * You have the disaster recovery feature enabled in at least 1 environment in your infrastructure
 
-To perform a disaster recovery test that replicates a real-world scenario of a failover during a disaster, follow these steps:
+To perform a cross-region disaster recovery test that replicates a real-world scenario of a failover during a disaster, follow these steps:
 
 1. From the Customer Portal, go to **Disaster recovery** > **Tests**.
 

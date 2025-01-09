@@ -38,7 +38,7 @@ These could be the steps to resolve the conflicts.
 
     ![Arrow icon indicating the selection of CSS code to resolve conflicts in the merged version](images/conflicts-text-orange-arrow.png "Resolving CSS Conflicts")
 
-1. Click **Done and back** in the lower left corner to return to the **Compare and Merge** section.
+1. Click **Done and back** in the lower right corner to return to the **Compare and Merge** section.
 
     ![Compare and Merge window with the 'Style Sheet (merged with conflicts)' element highlighted](images/merge-example-compare-ss.png "Compare and Merge Section")
 
@@ -54,7 +54,7 @@ These could be the steps to resolve the conflicts.
 
     ![Checkbox selection in the 'Merged version (1 conflict)' pane to resolve a conflict in the module](images/text-changes-checkbox.png "Selecting Merged Version Value")
 
-1. Click **Done and back** in the lower left corner to return to the **Compare and Merge - ButtonOnClick** section.
+1. Click **Done and back** in the lower right corner to return to the **Compare and Merge - ButtonOnClick** section.
 
 1. Finally, click **Back** in the lower right corner to return to the main **Compare and Merge** window. If there are no conflicts (no elements highlighted red), you can continue to the next step to publish the module.
 

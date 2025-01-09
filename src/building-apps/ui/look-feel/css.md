@@ -50,9 +50,9 @@ You can also open the Style Sheet Editor by clicking the **CSS** button in the M
 
 ![Image showing the CSS Style Sheet Editor interface in OutSystems.](images/css-style-sheet-editor.png "CSS Style Sheet Editor")
 
-## CSS specificity
+## CSS precedence
 
-Specificity is the algorithm used by browsers to determine which style declaration is ultimately applied to an element. The styles have different priorities and the order Service Studio imports the style sheets affects how the browsers apply them. The last style to be applied has the highest priority.
+The styles have different priorities and the order Service Studio imports the style sheets affects how the browsers apply them. The last style to be applied has the highest priority.
 
 1. System style sheet for Container widgets in the Grid.
 1. Block style sheet.

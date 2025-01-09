@@ -54,8 +54,7 @@ A process can also be [executed](<../../ref/lang/auto/class-execute-process.md>)
 
 Service Studio provides you with mechanisms to reuse Processes among modules. You can expose your Processes to other modules or use Processes defined in another module.
 
-If you are using an Oracle, PostgreSQL or DB2 database, commit the transaction before launching a Process instance.
-
+If you are using an Oracle, PostgreSQL, or DB2 database and a Process needs access to specific data, commit any open transactions affecting this data before launching the Process instance. This ensures the data is accessible, as Process instances operate in a separate context and can't see uncommitted changes
 
 ## Process Execution
 

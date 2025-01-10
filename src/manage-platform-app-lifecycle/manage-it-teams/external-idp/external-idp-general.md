@@ -41,13 +41,13 @@ To integrate with OutSystems Consoles, follow these steps:
 
 1. **Sign-in redirect URIs**:
 
-    * For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center login page:
+    * In the external IdP, for each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center login page :
 
         * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
 1. **Sign-out redirect URIs**:
 
-    * For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center logout page:
+    * In the external IdP, for each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center logout page:
 
         * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
 

@@ -829,7 +829,7 @@
     - href: monitor-and-troubleshoot/troubleshoot-service.md
     - href: monitor-and-troubleshoot/trace-executed-queries.md
     - href: monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md
-    - href: monitor-and-troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md         
+    - href: monitor-and-troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md
     - href: monitor-and-troubleshoot/monitoring-an-environment.md
     - href: setup-infra-platform/setup/disable-registered-role-error.md
     - href: monitor-and-troubleshoot/monitor-env-activity.md
@@ -838,7 +838,6 @@
     - href: monitor-and-troubleshoot/troubleshoot-the-performance-of-an-application.md
     - href: monitor-and-troubleshoot/how-application-performance-is-measured.md
     - href: monitor-and-troubleshoot/the-apdex-performance-score.md
-    - href: monitor-and-troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md
     #Logging
     - href: monitor-and-troubleshoot/logging/intro.md
     - topics:

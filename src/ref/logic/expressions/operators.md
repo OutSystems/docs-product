@@ -31,9 +31,9 @@ Yields the negation of its numeric operand.
 
 The following are the data types allowed for the unary minus (\-) operator:
 
-\- (Unary minus) | Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time  
+Operator | Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time  
 ---|---|---|---|---|---|---|---|---  
- | No | Yes | Yes | Yes | No | No | No | No  
+| \- (Unary minus) | No | Yes | Yes | Yes | No | No | No | No  
   
 ### Arithmetic operators /, \-, \*
 

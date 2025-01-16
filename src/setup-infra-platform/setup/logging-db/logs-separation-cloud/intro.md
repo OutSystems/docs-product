@@ -38,6 +38,8 @@ Separated logs are stored for 7 weeks in the Data Platform, OutSystems' native c
 
 Each app writes its own log entries using an internal logging API, ensuring user requests aren't blocked while these logs are being written. This logging API collects log information produced by the app and sends it to the Data Platform. Data sent from your OutSystems Cloud to Data Platform is encrypted in transit using TLS 1.2 and at rest using an AES-256 algorithm. The logs can then be read using the [CentralizedPlatformLogs extension](centralized-platform-logs-extension.md). 
 
+The maximum log attributes length is - the `message body` can include up to 2,000 characters, and the `stack trace` can contain up to 32,000 characters
+
 ![Diagram illustrating the architecture of separated logs in OutSystems Cloud, showing how each app writes log entries to the Data Platform.](images/logs-architecture-overview-diag.png "Logs Architecture Overview")
 
 ## Activate logs separation

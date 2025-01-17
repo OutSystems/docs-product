@@ -20,19 +20,35 @@ coverage-type:
 
 Use Blocks to reuse parts of UI across your apps. With Blocks you can have part of the UI in one place, so changes to the Blocks are automatically visible in all Screens that use it.
 
-Here are notes about reusing Block across **different apps**:
+## Creating Blocks
 
-* Blocks must be public.
-* You can reuse Reactive Web Blocks in Reactive Web Apps and Mobile Apps.
-* You can reuse Traditional Web Blocks in Traditional Web Apps.
-* To reuse it, go to **Manage Dependencies** and search producers for our app or library.
-
-## Using Blocks
+To create a Block in your module:
 
 1. In a UI Flow, add a Block (in Reactive Web and Mobile Apps) or a Web Block (in Traditional Web Apps).
 1. Implement the user interface and logic in the new Block.
 1. Set the Block as public if you want to reuse it across apps.
-1. Drag it the Block to the Screen where you want to use it. If you want to use the Block in another App, you first need to reference the Block.
+
+## Reusing Blocks
+
+To reuse a Block, drag it from the elements tree to the Screen where you want to use it.
+
+When [reusing Blocks across different apps](../../reuse-and-refactor/expose-and-reuse.md#reuse), consider the following:
+
+* Blocks must be public.
+* You can reuse Reactive Web Blocks in Reactive Web Apps and Mobile Apps.
+* You can reuse Traditional Web Blocks in Traditional Web Apps.
+* The user adding a Block to a module must have at least [**Monitor and Add Dependencies** permission](../../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels) over the Block's producer module.
+* If the reused Block includes another Block from a different producer module, the user must also have at least **Monitor and Add Dependencies** permission over the producer module of that inner Block. 
+
+If you want to [reuse a Block from a different app](../../reuse-and-refactor/expose-and-reuse.md#reuse), first you need to add that Block to your module.
+
+![Screenshot of the Manage Dependencies dialog in OutSystems showing the selection of MyBlock from the MyReactiveApp](images/block-reuse-manage-dependencies.png "Manage Dependencies Dialog")
+
+<div class="info" markdown="1">
+
+If you don't have the required permissions over the producer modules of all inner Blocks within the Block you want to use, adding that Block to your module fails due to missing dependencies.
+
+</div>
 
 ### Advanced use cases to pass data between blocks
 

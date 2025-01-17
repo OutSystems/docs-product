@@ -29,6 +29,7 @@ Creation
 Usage
 :   You instantiate the block on screens or other blocks of your application.
 
+Refer to [Create and Reuse Screen Blocks](block-create-reuse.md) for further details. 
 
 ## Communication between Blocks
 

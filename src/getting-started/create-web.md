@@ -24,7 +24,7 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-Developing Traditional Web Apps with OutSystems is straightforward. If you have an Excel file containing your data, you can import it into a database and quickly create an enterprise-grade application to manage your data. Don't worry if you don't have an Excel file ready, we provide a sample file for you.
+Developing Traditional Web Apps with OutSystems is straightforward. If you have an Excel file containing your data, you can import it into a database and quickly create an enterprise-grade application to manage your data. Don't worry if you don't have an Excel file ready, we provide a sample file for you. 
 
 To create an application with data that's imported from an Excel file, you need to:
 

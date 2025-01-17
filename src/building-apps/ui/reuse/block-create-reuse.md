@@ -18,11 +18,11 @@ coverage-type:
 
 # Create and Reuse Screen Blocks
 
-Use Blocks to reuse parts of UI across your apps. With Blocks you can have part of the UI in one place, so changes to the Blocks are automatically visible in all Screens that use it.
+Blocks enable you to reuse parts of UI across your apps. With Blocks you can have part of the UI in one place, so changes to the Blocks are automatically visible in all Screens that use it.
 
 ## Creating Blocks
 
-To create a Block in your module:
+To create a Block in your module, do the following:
 
 1. In a UI Flow, add a Block (in Reactive Web and Mobile Apps) or a Web Block (in Traditional Web Apps).
 1. Implement the user interface and logic in the new Block.
@@ -40,7 +40,7 @@ When [reusing Blocks across different apps](../../reuse-and-refactor/expose-and-
 * The user adding a Block to a module must have at least [**Monitor and Add Dependencies** permission](../../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels) over the Block's producer module.
 * If the reused Block includes another Block from a different producer module, the user must also have at least **Monitor and Add Dependencies** permission over the producer module of that inner Block. 
 
-If you want to [reuse a Block from a different app](../../reuse-and-refactor/expose-and-reuse.md#reuse), first you need to add that Block to your module.
+To reuse a Block from a different app, first you need to add that Block to your module.
 
 ![Screenshot of the Manage Dependencies dialog in OutSystems showing the selection of MyBlock from the MyReactiveApp](images/block-reuse-manage-dependencies.png "Manage Dependencies Dialog")
 

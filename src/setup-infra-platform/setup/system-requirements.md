@@ -1,11 +1,19 @@
 ---
 summary: Explore the comprehensive system requirements for deploying OutSystems 11 (O11) across various platforms and configurations.
-tags: 
+tags: system requirements, on-premises installation, windows server, hardware requirements, software compatibility
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - platform server
+coverage-type:
+  - understand
 ---
 
 # OutSystems system requirements
@@ -114,7 +122,7 @@ During Platform Server installation, OutSystems provides a script that simplifie
 
 OutSystems can run on Amazon EC2 instances. Each instance must fulfill one the following requirements:
 
-* The `Amazon EC2Launch` service must be running, available from Amazon EC2Launch v2 (starting with Platform Server 11.29.0)
+* The `Amazon EC2Launch` service must be running, available from Amazon EC2Launch v2 (starting with Platform Server 11.32.0)
 
 * Or, the `EC2Config` service must be running
 
@@ -193,9 +201,11 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 
 ### MySQL database
 
-* MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)
-* MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)
+* MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)<sup>1</sup>
+* MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)<sup>1</sup>
 * MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
+
+<sup>1</sup> This version is no longer supported by MySQL and isn't supported by OutSystems starting with Platform Server version 11.32.0.
 
 ### PostgreSQL database
 
@@ -252,9 +262,9 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 **macOS (cross-platform Service Studio only):**
 
-* macOS Monterrey
 * macOS Ventura since Service Studio 11.54.60
 * macOS Sonoma since Service Studio 11.54.60
+* macOS Sequoia since Service Studio 11.55.0
 
 **Windows:**
 

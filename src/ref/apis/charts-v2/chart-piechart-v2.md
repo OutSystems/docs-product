@@ -1,11 +1,19 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, data visualization, chart configuration
 summary: Learn how to create a labeled Pie Chart without a legend in OutSystems 11 (O11) using the Pie Chart widget and data point customization.
 locale: en-us
 guid: 58AC97D9-F40C-4B66-825B-4E0D3F6CD41E
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2526:4533
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Pie Chart

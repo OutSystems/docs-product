@@ -5,6 +5,15 @@ guid: 036994b9-0656-4dc8-8b94-b0c4e9d71a1f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting-Started?type=design&node-id=1%3A2&mode=design&t=tf47BvyjuOfXlcZP-1
+tags: ide usage, reactive web apps, tutorials for beginners, app development, deployment
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Getting started

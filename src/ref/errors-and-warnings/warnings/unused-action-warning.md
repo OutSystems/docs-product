@@ -5,6 +5,15 @@ guid: f5a9f990-3540-4ad7-8623-ca43a8cbf201
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: application optimization, code cleanup, development best practices, efficiency improvement, ide usage
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Unused Action Warning

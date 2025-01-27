@@ -1,12 +1,20 @@
 ---
 summary: Explore SEO-friendly URL configurations for Traditional Web apps in OutSystems 11 (O11).
-tags: runtime-traditionalweb
+tags: seo, url configuration, user experience, search engine optimization, platform server administration
 helpids: 30374
 locale: en-us
 guid: 641c106a-d688-42a3-9b73-8fd9791a673b
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3329:27077
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service center
+coverage-type:
+  - apply
 ---
 
 # SEO-Friendly URLs for Traditional Web apps

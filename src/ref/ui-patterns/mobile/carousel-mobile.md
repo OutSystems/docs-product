@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: carousel component, ui components, carousel api, event handling, dom manipulation
 summary: Explore Carousel functionalities and API methods in OutSystems 11 (O11) for advanced customization and event handling.
 locale: en-us
 guid: fe0f0d5b-bd63-4ddd-a18c-16d9df1e200f
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:394
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Carousel Reference

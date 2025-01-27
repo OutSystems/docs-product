@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, interface design, web development, outsystems ui, ui components
 summary: Learn how to integrate the Button Group UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 42dbee79-dfe8-4f57-8fb7-d5a19e8bf87d
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:402
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Button Group Reference

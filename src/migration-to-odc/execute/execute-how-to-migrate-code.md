@@ -1,11 +1,21 @@
 ---
 summary: Learn how to migrate O11 code to ODC using the code migration tool.
-tags: 
+tags: code migration, migration kit, migration tool, environment setup, application lifecycle management
 guid: 4748549a-2df3-4763-bcfc-73be131cf9ff
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - lifetime
+  - migration assessment tool
+coverage-type:
+  - apply
 ---
 
 # Code migration using the tool

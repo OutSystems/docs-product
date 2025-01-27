@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: OutSystems 11 (O11) provides a comprehensive suite of string manipulation functions for server-side and client-side logic.
+tags: string manipulation, security, html encoding, javascript encoding, sql encoding
+audience:
+  - full stack developers
+  - frontend developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Text
 
 | Name | Description |

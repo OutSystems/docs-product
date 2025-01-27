@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) manages database indexes automatically and advises against manual index creation directly in the database.
-tags: support-Database
+tags: database index management, manual index creation, database optimization, entity management, performance improvement
 locale: en-us
 guid: d1757e12-d324-45d9-b019-992a4547af24
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Database Indexes

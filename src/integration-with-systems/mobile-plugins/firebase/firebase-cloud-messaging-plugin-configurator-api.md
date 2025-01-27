@@ -5,6 +5,17 @@ guid: d89ecb04-0232-407d-b5ea-9423ab57dc8b
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3653-5&mode=design&t=KKbqsgPPqdrPLkpd-0
+tags: firebase cloud messaging, notifications, cross-platform messaging, mobile app development, outsystems plugin
+audience:
+  - mobile developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - remember
+  - apply
+  - understand
 ---
 
 # Firebase Cloud Messaging Plugin using configurator APIs

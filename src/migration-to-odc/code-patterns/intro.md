@@ -4,7 +4,19 @@ locale: en-us
 guid: 469bbfc7-8121-4cd8-8e4f-22b882f8e821
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: migration, outsystems developer cloud, code refactoring, application lifecycle management, outsystems platform
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - migration toolkit
+  - service studio
+coverage-type:
+  - none
 ---
 
 # O11 to ODC migration code patterns
@@ -44,7 +56,7 @@ As you plan and prepare your existing O11 app architecture to migrate late to OD
 
 <div class="info" markdown="1">
 
-The OutSystems Migration Toolkit will provide automation in the future to support some of the following patterns. Until then,manually refactor the apps so to unblock the migration.
+The OutSystems Migration Toolkit will provide automation in the future to support some of the following patterns. Until then, manually refactor the apps to proceed with the migration.
 
 </div>
 

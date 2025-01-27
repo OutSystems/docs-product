@@ -5,6 +5,15 @@ guid: 249fbacb-2b93-4dd1-8675-e48bcccbd609
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web services, api integration, web service consumption, input parameters
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Input Parameter - Consumed SOAP Method

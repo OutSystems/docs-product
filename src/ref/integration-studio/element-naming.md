@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: OutSystems 11 (O11) Integration Studio enforces naming conventions and character limits for elements.
+tags: ide usage, reactive web apps, tutorials for beginners, integration studio, naming conventions, database compatibility
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Naming Elements in Integration Studio
 
 An **element name** is a sequence of characters [Aa-Zz], numbers, and/or the character "\_"; spaces are not allowed. The name of the element must start with a character [Aa-Zz]. Any character that is not allowed, for example "space" or "ç", is automatically translated, by Integration Studio, to "\_".

@@ -5,6 +5,15 @@ guid: 811f5c4c-11f5-4998-87c2-d5629a8fe0a2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data types, data modeling, application development, outsystems platform, data conversion
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Available Data Types

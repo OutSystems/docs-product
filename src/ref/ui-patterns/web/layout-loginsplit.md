@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: web development, ui customization, web blocks, outsystems ui patterns, visual development
 summary: Learn to customize the Login Split web block in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 804f282e-4480-4c8c-ba5a-4bc376436caa
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:493
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Layout Login Split Reference

@@ -5,6 +5,15 @@ guid: 16902581-2d4e-4919-b101-7db15909734f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database management, oracle errors, entity modeling, database compatibility, reserved words
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Unexpected Attribute Warning

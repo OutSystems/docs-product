@@ -1,11 +1,21 @@
 ---
 summary: Learn how to expose and customize REST APIs in OutSystems 11 (O11) to integrate with external systems effectively.
-tags: 
+tags: rest api integration, api development, api versioning, http methods, endpoint configuration
 locale: en-us
 guid: 28d56896-53c1-40c0-ac3d-84c757ac71d0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - remember
 ---
 
 # Expose a REST API

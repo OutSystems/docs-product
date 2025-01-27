@@ -1,13 +1,20 @@
 ---
-tags: 
+tags: outsystems data grid, data management, display data, reactive web apps, service studio
 summary: Learn how to display and manage data using the OutSystems Data Grid (O11) component in OutSystems 11.
 guid: cca0de21-e1fb-452f-9ff7-c73b55b3c287
 locale: en-us
 app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?type=design&node-id=1142%3A332&mode=design&t=bneC7SMvNg6A2EZ4-1
+coverage-type:
+  - apply
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
 ---
-
 # How to use the OutSystems Data Grid
 
 **Prerequisites** 

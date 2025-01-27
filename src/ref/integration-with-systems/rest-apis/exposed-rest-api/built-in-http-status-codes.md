@@ -1,11 +1,19 @@
 ---
 summary: Learn about the built-in HTTP status codes used in OutSystems 11 (O11) for handling REST API methods.
-tags: 
+tags: rest api, http status codes, api development, error handling, security
 locale: en-us
 guid: 9ad139dd-e6af-4245-8dba-9185b2317192
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Built-in HTTP Status Codes

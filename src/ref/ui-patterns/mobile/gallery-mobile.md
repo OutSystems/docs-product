@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, outsystems api, css modifiers, ui design, application development
 summary: Explore the structure and API of the Gallery UI pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: b48f442d-6ab3-47c9-96ad-2bae75f24bc8
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:353
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Gallery Reference

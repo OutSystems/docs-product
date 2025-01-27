@@ -5,6 +5,15 @@ guid: aae1e0e4-4838-4c23-9387-a7dda68cbb4f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, debugging, screen blocks, outsystems development, public entities
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Public Screen Block Error

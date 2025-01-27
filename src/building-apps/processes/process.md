@@ -1,11 +1,20 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates business processes into applications through process flows and various editing and execution tools.
-tags: support-webapps
+tags: business process management, process flows, process design, application development, workflow automation
 locale: en-us
 guid: 7f9ed2cf-c73b-467e-bdfa-cf4ba9655613
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Processes
@@ -45,8 +54,7 @@ A process can also be [executed](<../../ref/lang/auto/class-execute-process.md>)
 
 Service Studio provides you with mechanisms to reuse Processes among modules. You can expose your Processes to other modules or use Processes defined in another module.
 
-If you are using an Oracle, PostgreSQL or DB2 database, commit the transaction before launching a Process instance.
-
+If you are using an Oracle, PostgreSQL, or DB2 database and a Process needs access to specific data, commit any open transactions affecting this data before launching the Process instance. This ensures the data is accessible, as Process instances operate in a separate context and can't see uncommitted changes
 
 ## Process Execution
 

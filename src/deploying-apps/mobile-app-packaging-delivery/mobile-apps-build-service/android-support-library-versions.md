@@ -1,11 +1,19 @@
 ---
 summary: Explore Android support library version management in OutSystems 11 (O11) for MABS compatibility and plugin integration.
-tags: runtime-mobile
+tags: android sdk, mabs, plugin integration, version management, androidx
 locale: en-us
 guid: 8734c248-e81d-4d5b-a3a2-323a0373c188
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:3
+audience:
+  - mobile developers
+outsystems-tools:
+  - mabs
+  - service studio
+  - forge
+coverage-type:
+  - understand
 ---
 
 # Android Support Library Versions for MABS

@@ -49,7 +49,55 @@
             "pattern": "^https://www\\.figma\\.com"
           }
         ]
-      }
+      },
+    "coverage-type": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string",
+        "enum": [
+          "remember",
+          "understand",
+          "apply",
+          "evaluate",
+          "unblock",
+          "none"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "audience": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "string",
+          "enum": [
+            "mobile developers",
+            "frontend developers",
+            "backend developers",
+            "full stack developers",
+            "team lead",
+            "team manager",
+            "test engineers",
+            "architects",
+            "platform administrators",
+            "tech leads",
+            "infrastructure managers",
+            "ui designers",
+            "business analysts",
+            "data engineers",
+            "project managers",
+            "product owners",
+            "none"
+          ]
+        },
+        "uniqueItems": true
+      },
+      "outsystems-tools": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
     },
     "required": [
       "summary",

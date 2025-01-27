@@ -1,11 +1,17 @@
 ---
-tags: runtime-traditionalweb;
+tags: ui patterns, web development, css customization, layout design, event handling
 summary: Explore the Floating Actions UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, detailing layout, events, CSS selectors, and advanced use cases.
 locale: en-us
 guid: ada89c16-a9f3-45b5-b488-1dec777600c5
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A478&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Floating Actions Reference

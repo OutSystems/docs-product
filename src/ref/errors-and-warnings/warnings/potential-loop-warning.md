@@ -5,6 +5,15 @@ guid: 6a94d155-a80f-423c-95c5-5267e603a46d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems, infinite loops, event handling, application logic, best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Potential Loop at Runtime Warning

@@ -1,12 +1,23 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 4751d001-d519-4214-ae71-bec2e5b72f24
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7746
 helpids: 30528
+tags: role management, code migration, access control, user permissions, odc
+audience:
+  - full stack developers
+  - frontend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming a Role
 
 In ODC, Assets can't have dependencies to Roles from other Assets.

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css customization, ui design, web development, ui patterns, outsystems ui
 summary: Learn to customize the Light Box Image UI Pattern in OutSystems 11 (O11) with CSS for enhanced visuals.
 locale: en-us
 guid: 6b8b6bad-949d-4561-9cd9-a062b11fc20b
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A515&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Light Box Image Reference

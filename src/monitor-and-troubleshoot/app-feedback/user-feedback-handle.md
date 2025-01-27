@@ -1,11 +1,19 @@
 ---
-tags:
+tags: user feedback management, application lifecycle management, environment configuration, permissions management, user experience
 summary: OutSystems 11 (O11) streamlines user feedback management through its App Feedback application.
 locale: en-us
 guid: b8db2ed6-0551-41c8-b16d-3063670c0417
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:14
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Handle the submitted feedback

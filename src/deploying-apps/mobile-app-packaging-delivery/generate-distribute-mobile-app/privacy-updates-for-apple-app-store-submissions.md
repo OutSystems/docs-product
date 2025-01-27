@@ -5,6 +5,15 @@ guid: f9c0555e-6be6-4e50-be36-2111716aa879
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3586%3A281&mode=design&t=nAeh9FAOKTk5agGA-1
+tags: api compliance, apple app store integration, privacy compliance, app deployment, xml configuration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Privacy updates for Apple App Store submissions

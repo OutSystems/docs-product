@@ -1,12 +1,23 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 07ee973c-143e-44a5-9e3a-19b68cfdbfd5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7253
 helpids: 30523
+tags: entity exposure, code migration, service actions, architecture review, dependency management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Application consuming a non-read only Entity
 
 In ODC, only Apps can expose Entities. Furthermore, Apps can only expose weak dependencies.

@@ -5,6 +5,16 @@ guid: c1e911aa-f9af-45e6-b0b9-495695392881
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: action parameters, data types, input parameters, entity definitions, extension structures
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - integration studio
+coverage-type:
+  - remember
 ---
 
 # Action Parameter Properties

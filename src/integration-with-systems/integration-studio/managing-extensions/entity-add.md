@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3739-245&t=KH2Hic1Sntl2FDe9-1
 summary: OutSystems 11 (O11) allows manual addition of entities to extensions and offers a wizard for importing multiple entities from a database.
+tags: entity management, database integration, extensions, data modeling, entity properties
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+  - service center
+coverage-type:
+  - apply
 ---
+
 # Add an Entity
 
 You can manually [add an entity](<entity-define.md>) to your extension as explained below. Integration Studio also provides you the [Import Entities from Database wizard](<entity-import-from-database.md>), which, through introspection, allows you to add several entities with less effort.  

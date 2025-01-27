@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, web development, breadcrumbs integration, outsystems ui, ui design
 summary: Explore breadcrumb integration in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 4e6390a2-3d56-4b65-aabe-aa7588ff2253
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:395
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Breadcrumbs Reference

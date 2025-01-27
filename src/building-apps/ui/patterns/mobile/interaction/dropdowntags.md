@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, dropdown components, widget configuration, ui development, dependency management
 summary: Explore the Dropdown Tags UI Pattern in OutSystems 11 (O11) for enhanced dropdown search functionality in mobile and reactive web apps.
 locale: en-us
 guid: 6b79cc3c-d89b-40df-ba5f-c04038639d4b
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:0
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Dropdown Tags

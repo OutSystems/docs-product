@@ -1,11 +1,19 @@
 ---
 summary: Explore payload request examples for consuming a single REST method in OutSystems 11 (O11).
-tags: support-Integrations_Extensions-featured
+tags: rest apis, api consumption, json payload, service studio features, integration techniques
 locale: en-us
 guid: E7A21ACC-EC04-4FB8-A3CC-D121EF8A9963
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=2881%3A15271&mode=design&t=187UAgmZTPxcY0ZG-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Payload request examples when consuming a single REST method

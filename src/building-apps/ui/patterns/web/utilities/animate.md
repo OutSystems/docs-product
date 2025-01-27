@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui animation, usability enhancements, widget implementation, visual effects, user interface design
 summary: Learn how to enhance app usability with the Animate UI Pattern in OutSystems 11 (O11), enabling dynamic element animations in Traditional Web Apps.
 locale: en-us
 guid: 297aaf40-3584-4ed5-b1d4-7bfbbe3bbfaa
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A84&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Animate

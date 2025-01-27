@@ -1,11 +1,19 @@
 ---
 summary: Discover using over 600 built-in icons in OutSystems 11 (O11) for application interfaces.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, ui components, interface design
 locale: en-us
 guid: ae0d2c36-c50f-4084-b986-d19572b31cc5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:99
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Use Icons

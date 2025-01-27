@@ -6,6 +6,15 @@ guid: 15a7a421-2257-46eb-b995-caff2bf6404f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: dropdown widget, user interface components, html tags, data binding, custom ui elements
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Dropdown

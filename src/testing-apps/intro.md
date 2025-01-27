@@ -1,12 +1,21 @@
 ---
 summary: Explore automated testing strategies and tools in OutSystems 11 (O11) to enhance application delivery and reliability.
-tags: 
+tags: automated testing, application reliability, software testing tools, testing best practices, bddframework
 locale: en-us
 guid: 319b0b59-b9cc-48d8-a776-ea8c0b564711
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+coverage-type:
+  - understand
+  - apply
 ---
+
 # Testing apps
 
 As your applications grow in scale and complexity, validating them can take longer, especially if validation is manual. If not addressed, more time for testing can slow the pace of delivery. Automated testing is one way software teams can shorten delivery timelines and ensure application code works as designed.

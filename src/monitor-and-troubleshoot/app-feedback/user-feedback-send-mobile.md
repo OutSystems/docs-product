@@ -1,11 +1,18 @@
 ---
 summary: Learn how to send feedback in mobile apps using OutSystems 11 (O11) by long-pressing with two fingers and using voice recordings.
-tags: support-Mobile_Apps-featured; runtime-mobile
+tags: user feedback, mobile app development, app testing, user experience, voice recording
 locale: en-us
 guid: 9fd4d828-cf50-4d20-9531-e8514aa8a5a3
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:4
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Send feedback in mobile apps

@@ -6,6 +6,15 @@ guid: 193110a3-2fa3-45ae-9cdb-ae5ba20a7cef
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: widget properties, form submission, user interface development, ui components, web widgets
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Button

@@ -1,12 +1,24 @@
 ---
-summary: 
+summary:
 locale: en-us
 guid: 2c3844fb-f028-4d6c-8f8a-d6d0baf8f8e1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7899
 helpids: 30531
+tags: code migration, application development, script management, dependency management, outsystems development best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - understand
 ---
+
 # Asset consuming a Script
 
 In ODC, Assets can't have dependencies to Scripts from other Assets.

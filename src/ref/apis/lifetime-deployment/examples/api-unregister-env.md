@@ -1,11 +1,20 @@
 ---
 summary: This guide details how to unregister an environment from LifeTime using the OutSystems 11 (O11) API.
-tags:
+tags: api, environment management, unregister environment, infrastructure management, outsystems platform
 locale: en-us
 guid: a76f6a1e-6bab-459d-8d59-cec919610591
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - lifetime
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Unregister an Environment using the LifeTime API

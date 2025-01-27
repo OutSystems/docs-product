@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui design, customization
 summary: Explore how to use the Tag UI Pattern in OutSystems 11 (O11) to enhance user interfaces by styling texts with customizable colors, shapes, and sizes.
 locale: en-us
 guid: ad4f4ddf-d346-4347-b78d-8741dea7cb94
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:66
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Tag
@@ -56,6 +64,6 @@ After following these steps and publishing the module, you can test the pattern 
 |----|----|
 | Color (Color Identifier): Optional | Set the Tag's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available. <p>Examples <ul><li>_Blank_ - Displays the badge in the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The Tag's background is red.</li></ul></p> |
 | Shape (Shape Identifier): Optional | Set the Tag's shape. Rounded, soft rounded, and sharp are the predefined shapes available. <p>Examples <ul><li>_Blank_ - Displays a rounded shaped Tag (default value).</li><li>_Entities.Shape.Sharp_ - Displays a square shaped Tag.</li></ul></p> |
-| Size (Size Identifier): Optional   | Set the Tag's size. Small and medium are the predefined sizes available. <p>Examples <ul><li>_Entities.Size.Medium_ - Displays a medium-sized badge.</li><li>_Entities.Size.Small_ - Displays a small sized Tag.</li></ul></p> |
+| Size (Size Identifier): Optional   | Set the Tag's size. Small and medium are the predefined sizes available. <p>Examples <ul><li>_Entities.Size.Medium_ - Displays a medium-sized Tag.</li><li>_Entities.Size.Small_ - Displays a small sized Tag.</li></ul></p> |
 | IsLight (Boolean): Optional  | Specify the Tag's background color. <p>Examples <ul><li>_Blank_ - A darker hue of the color is applied to the Tag and a lighter color to the text (default value).</li><li>_True_ - A brighter hue of the color is applied to the Tag and a darker color to the text.</li><li>_False_ - A darker hue of the color is applied to the Tag and a lighter color to the text.</li></ul></p> |
 | ExtendedClass (Text): Optional  | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

@@ -5,6 +5,16 @@ guid: c3df3d40-fd98-48f6-8c63-0ec22f08f516
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A28&mode=design&t=8a1ub9syb4QKHbuk-1
+tags: authentication, soap web services, client certificates, outsystems service studio, security configuration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - apply
 ---
 
 # Authenticate using a client certificate

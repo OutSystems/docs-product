@@ -5,6 +5,15 @@ guid: b3d0a226-12a9-4e71-8d5e-059cf703bf99
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, data actions, output parameters, debugging, service studio
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Data Action

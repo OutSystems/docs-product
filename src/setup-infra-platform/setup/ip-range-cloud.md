@@ -1,11 +1,13 @@
 ---
 summary: OutSystems 11 (O11) utilizes an internal IP address range in the `a.b.c.0/24` format, derived from the front-end server's IP in the cloud environment.
-tags: 
+tags:
 locale: en-us
 guid: 4b1ae768-0a96-45b1-8eb5-b5590ac28274
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+coverage-type:
+  - apply
 ---
 
 # Find out internal IP address range of your OutSystems Cloud

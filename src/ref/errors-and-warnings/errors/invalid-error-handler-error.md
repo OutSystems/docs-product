@@ -5,6 +5,15 @@ guid: c2ae03b0-1005-4a66-a5c6-72b8387e779c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, security best practices, application development, access control, user experience
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Error Handler Error

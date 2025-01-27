@@ -6,6 +6,15 @@ guid: 6a3422fb-fc3c-429b-9a52-cd0054520ac5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ide usage, reactive web apps, tutorials for beginners, record lists, iterative processes
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # For Each

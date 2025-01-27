@@ -5,6 +5,15 @@ guid: 8afc6360-df8d-451d-81cd-fd499fa5bd15
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: security best practices, javascript security, code sanitization, input validation, vulnerability prevention
+audience:
+  - frontend developers
+  - full stack developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # JavaScript Injection Warning

@@ -1,11 +1,20 @@
 ---
-tags:
+tags: technical debt management, ai enhanced tools, application lifecycle management, team management, outsystems
 summary: Explore how OutSystems 11 (O11) enhances team lead capabilities in managing and reducing technical debt through AI Mentor Studio.
 locale: en-us
 guid: efc039d9-67e7-4824-a8fb-5e65418db58c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=928%3A595&mode=design&t=rzWSTBJIapfhmERp-1
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - ai mentor studio
+  - lifetime
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Getting started as a team lead

@@ -1,11 +1,18 @@
 ---
-tags: support-Installation_Configuration
+tags: configuration management, server setup, platform server configuration, installation procedures, environment management
 summary: Explore the Configuration Tool in OutSystems 11 (O11) for server setup and management in complex environments.
 locale: en-us
 guid: 3ccedde9-7f7c-4d04-8992-703b00953c15
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - infrastructure managers
+outsystems-tools:
+  - platform server
+coverage-type:
+  - remember
 ---
 
 # Configuration Tool

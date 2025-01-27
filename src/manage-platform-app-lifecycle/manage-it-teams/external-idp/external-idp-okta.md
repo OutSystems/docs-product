@@ -1,11 +1,21 @@
 ---
 summary: This guide details configuring Okta authentication for OutSystems 11 (O11) applications and development tools.
-tags:
+tags: authentication, okta, security, oidc, configuration
 locale: en-us
 guid: 5F1E1CC1-A4E7-497F-A176-7A8671CC5D8B
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1914:6837
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+  - backend developers
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Configuring Okta authentication

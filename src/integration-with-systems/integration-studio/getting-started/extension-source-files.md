@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3734-5&t=5Xy7sf3amevfps10-1
 summary: Learn how OutSystems 11 (O11) automates the generation of extension source files for streamlined development in Integration Studio.
+tags: ide usage, reactive web apps, tutorials for beginners, .net development, extension customization
+audience:
+  - backend developers
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - understand
 ---
+
 # Extension Source Files
 
 Once the extension is [created](<../extension-life-cycle/extension-create.md>), Integration Studio automatically generates, according to the [definition](<../extension-life-cycle/extension-define.md>) of the extension elements, the necessary template files for the development bootstrap of that extension. Once these templates are generated, the source files listed below are added as resources of your extension and you can start coding the behavior of your extension actions.

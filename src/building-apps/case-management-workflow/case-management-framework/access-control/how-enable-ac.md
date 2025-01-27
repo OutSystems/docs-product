@@ -1,11 +1,22 @@
 ---
-tags: Case Management; Case Management framework; Access control; CMf; AC;
+tags: outsystems, outsystems platform, security, application development, access control
 summary: Learn how to enable access control in OutSystems 11 (O11) for case definitions within the Case Management framework.
 guid: 6b9969e1-6771-4e7a-9c5b-d639b0d08d62
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1914
+audience:
+  - backend developers
+  - full stack developers
+  - tech leads
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # How to enable access control

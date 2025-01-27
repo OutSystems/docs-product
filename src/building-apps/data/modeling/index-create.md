@@ -1,11 +1,19 @@
 ---
 summary: Learn how to create and manage database indexes in OutSystems 11 (O11) to enhance search performance and enforce attribute uniqueness.
-tags: support-application_development; support-Database; support-webapps
+tags: database management, entity modeling, performance optimization, application development, data uniqueness
 locale: en-us
 guid: 0611c8e9-7cba-4812-8495-88165c39e20e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:21
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Create an Entity Index

@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework; CMf;
+tags: case management, milestone tracking, workflow automation, outsystems api, caseservices_api
 summary: Learn how to manage milestone instances in case management applications using OutSystems 11 (O11).
 guid: 34bb2be4-ccf7-4cff-81ee-b517dc31f5d0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # How to use milestones

@@ -1,11 +1,18 @@
 ---
 summary: Learn how to deploy a single module in OutSystems 11 (O11) to enhance deployment efficiency for Traditional Web apps.
-tags: runtime-traditionalweb
+tags: deployment strategy, version control, devops practices, efficiency optimization, deployment process
 locale: en-us
 guid: ee8de340-e9d3-4392-8c8e-a2f3d2c02340
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:54
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Deploy a Single Module

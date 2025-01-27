@@ -4,7 +4,18 @@ locale: en-us
 guid: 8abfd804-e5d3-4765-a33c-8030ee2327a2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: continuous deployment, application governance, outsystems platform, deployment automation, api integration
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+  - infrastructure managers
+outsystems-tools:
+  - lifetime
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Publish an app across infrastructures using the LifeTime API

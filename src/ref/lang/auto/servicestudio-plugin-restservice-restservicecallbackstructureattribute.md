@@ -6,6 +6,15 @@ guid: 44c5ae3d-131d-422d-b71b-a5e6598490f1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, api development, data modeling, system integrations, application development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Structure Attribute - REST API Callback

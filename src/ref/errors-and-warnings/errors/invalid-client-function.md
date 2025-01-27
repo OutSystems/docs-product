@@ -5,6 +5,15 @@ guid: ca17ad44-8f4c-4e6f-8744-8fb87aff9244
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, client actions, synchronous programming, asynchronous javascript, outsystems development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Client Function

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, sidebar implementation, user interface design, traditional web development, outsystemsui
 summary: Explore how to implement and customize the Sidebar UI Pattern in OutSystems 11 (O11) for enhanced user interface design in Traditional Web Apps.
 locale: en-us
 guid: e04f67a0-6c80-4d32-b519-55fb5ff7a04b
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A46&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Sidebar

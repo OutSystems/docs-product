@@ -1,12 +1,23 @@
 ---
 summary: Explore the benefits of environment filters in OutSystems 11 (O11) for managing complex infrastructures and CI/CD pipelines.
-tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps
+tags: ci/cd pipelines, environment management, application management, deployment, staging
 locale: en-us
 guid: 9A82CE12-91D7-45F3-9C28-0F2D00A486B4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=2186%3A6469&mode=design&t=rzWSTBJIapfhmERp-1
+audience:
+  - full stack developers
+  - platform administrators
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - apply
+  - understand
 ---
+
 # LifeTime environment filters
 
 <div class="info" markdown="1">

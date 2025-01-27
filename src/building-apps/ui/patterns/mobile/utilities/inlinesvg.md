@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, svg customization
 summary: OutSystems 11 (O11) supports the Inline SVG UI Pattern for customizing SVG properties and animations in mobile and reactive web apps.
 locale: en-us
 guid: e79dc731-c258-4920-8ec4-6d4245cfc24a
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=644:0
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Inline SVG

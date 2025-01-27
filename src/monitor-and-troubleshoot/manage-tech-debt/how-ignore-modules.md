@@ -1,11 +1,20 @@
 ---
-tags:
+tags: technical debt management, application lifecycle management, best practices, module management, portfolio management
 summary: OutSystems 11 (O11) allows selective ignoring of modules during technical debt analysis to provide a more accurate assessment in AI Mentor Studio.
 guid: 70460AD8-7C84-4D86-9E83-2274E9802B93
 locale: en-us
 platform-version: o11
 app_type: mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1573:1815
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - ai mentor studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Ignoring modules during tech debt analysis

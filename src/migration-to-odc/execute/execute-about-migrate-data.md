@@ -1,11 +1,18 @@
 ---
-summary: Learn more about how you can migrate your O11 application data and end-users to ODC 
-tags: 
+summary: Learn more about how you can migrate your O11 application data and end-users to ODC
+tags: data migration, user management, database configuration, migration process, application lifecycle management
 guid: 8073a9f1-f82c-4c11-991f-248ae59b09a9
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2148-27
+audience:
+  - full stack developers
+  - platform administrators
+  - tech leads
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Migrate data

@@ -1,12 +1,21 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, list management, data manipulation
 locale: en-us
 guid: 014b125f-f9e4-4681-bc53-52a4b6c4ea58
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1414:1770
 summary: OutSystems 11 (O11) provides comprehensive guidance on managing lists, including creation, manipulation, and mapping techniques.
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # List
 
 A List is a sequence of elements of the same data type, which may contain duplicate values. Elements can be inserted, fetched and removed from a list.

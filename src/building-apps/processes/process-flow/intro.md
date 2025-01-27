@@ -5,6 +5,15 @@ guid: ead753b9-93a1-468a-9949-0eca55faa765
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process flow design, process modeling, low-code development, outsystems platform, process automation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Create a Process Flow

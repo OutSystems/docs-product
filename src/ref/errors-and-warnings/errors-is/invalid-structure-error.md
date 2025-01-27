@@ -5,6 +5,16 @@ guid: 998774b6-35c3-4c5b-9284-590d998a302f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, data modeling, web development, outsystems best practices, software troubleshooting
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Structure Error

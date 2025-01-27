@@ -6,11 +6,20 @@ guid: 493e43c0-c626-4ffd-8a99-161132b90261
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ide usage, reactive web apps, variable assignment, expression editor, record data type
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Assign
 
-Use the Assign Tool to assign values to variables. The Properties Pane shows assignments in the variable-value pairs, forming the assignment statements. The **Value** in the statement can be other variable, literal or a computed value.
+Use the Assign Tool to assign values to variables. The Properties Pane shows assignments in the variable-value pairs, forming the assignment statements. The **Value** in the statement can be other variable, literal or a computed value. When you define multiple assignments in an Assign node, the assignments are applied from top to bottom.
 
 To select a **Variable**, do any of the following in the field of Assign Tool within properties pane:
 
@@ -57,7 +66,8 @@ OutSystems assigns by value, with some exceptions for assignment by reference. T
 <td>Yes</td>
 <td></td>
 <td>The variables presented are only the ones that are visible in the scope of the action.<br/>
-        You can set the value of several variables at once (providing a pair Variable/Value for each) in the same Assign element.</td>
+You can set the value of several variables at once (providing a pair Variable/Value for each) in the same Assign element.<br/>
+The assignments are applied from top to bottom.</td>
 </tr>
 <tr>
 <td title="Value">Value</td>

@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) integrates SAP data types into corresponding OutSystems data types, facilitating seamless data mapping and management.
-tags: 
+tags: sap integration, data mapping, data types, outsystems platform, application development
 locale: en-us
 guid: b494a3d0-48d5-4988-ac70-8e7df29cc0ce
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Mapping SAP Data Types to OutSystems Data Types

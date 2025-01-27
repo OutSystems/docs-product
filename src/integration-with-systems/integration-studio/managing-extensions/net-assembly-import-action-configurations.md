@@ -5,6 +5,15 @@ guid: 8196d55c-6aeb-47d5-a855-02b92e4244f4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: integration, .net, configuration, limitations, supported elements
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
 
 # Supported Configurations for Import Actions from .NET Assembly

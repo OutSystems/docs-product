@@ -5,6 +5,15 @@ guid: 8cb73d92-a60d-4133-9f95-67ef4505932d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:47
+tags: user management, licensing, capacity planning, domain configuration, end-user classification
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - remember
+  - apply
 ---
 
 # Classify Users as Internal Users

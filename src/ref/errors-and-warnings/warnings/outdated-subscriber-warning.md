@@ -5,6 +5,16 @@ guid: 7fa65fdc-8d24-4c0b-afba-67d556a0bbf9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, configuration management, user authentication, user management, authentication providers
+audience:
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Outdated Subscriber Warning

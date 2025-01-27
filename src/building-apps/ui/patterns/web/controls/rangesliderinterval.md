@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui components, web development, outsystems development, ui patterns, interactive elements
 summary: Implement the Range Slider Interval UI pattern in OutSystems 11 (O11) for value selection in web apps.
 locale: en-us
 guid: 94ed04bf-3e70-41d6-9d40-713927750c02
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=234%3A25&mode=design&t=KpVEJMvnBwiukqql-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Range Slider Interval

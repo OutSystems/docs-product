@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, navigation design, mobile app development, ui widgets, outsystems ui framework
 summary: Explore the Bottom Bar Item UI Pattern in OutSystems 11 (O11) for enhanced mobile and reactive web app navigation.
 locale: en-us
 guid: 68ecb55f-4372-4f1f-910e-46129f456bf8
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:96
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Bottom Bar Item

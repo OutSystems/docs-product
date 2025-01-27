@@ -6,6 +6,15 @@ guid: 45f3d12c-cd89-4141-be22-c0005c1a6530
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web services, error resolution, web service customization, api usage, outsystems platform
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Incompatible Action Error

@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A10&mode=design&t=KpVEJMvnBwiukqql-1
 summary: OutSystems 11 (O11) enhances app design consistency by utilizing Layout web blocks that integrate common elements across multiple screens.
+tags: app design, user interface, web blocks, application consistency, screen design
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - none
 ---
+
 # Layout
 
 The Layout web block helps you define the look and feel of your app. Layout blocks can contains pre-existing web blocks common to multiple screens. Designing an app with Screens that share elements provides users with a more consistent app.

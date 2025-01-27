@@ -1,11 +1,19 @@
 ---
 summary: Explore how to manage data with queries in OutSystems 11 (O11), covering data retrieval, manipulation, and complex searches.
-tags: 
+tags: data management, database queries, query optimization, data retrieval, entity relationships
 locale: en-us
 guid: e3ffd1e2-d1d0-42de-a67f-35796538eacc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Queries

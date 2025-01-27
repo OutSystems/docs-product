@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:103
 summary: OutSystems 11 (O11) enhances app UI with customizable CSS, themes, and responsive design tools.
+tags: user interface design, css customization, style guide, responsive design, right-to-left support
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
+
 # Look and Feel
 
 The OutSystems UI Framework is the base of all user interfaces. To enhance the look and feel of your app and provide a good user experience, the OutSystems UI Framework comes with [cascading style sheets (CSS)](css.md) that define how your HTML will look in the browser.  You can also [design the layout of your screens using placeholders](design-screens-layout.md) which help to define the position of the elements on the screen. The framework provides a [style editor](styles-editor.md) that allows you to change, for example, font color, margins or border thickness, as well as [themes](themes.md) and a [theme editor](theme-editor.md) that allow you to customize the overall style of your app. 

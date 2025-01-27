@@ -1,11 +1,18 @@
 ---
 summary: Explore how OutSystems 11 (O11) ensures compliance with third-party licenses in mobile apps by integrating licensing information.
-tags: runtime-mobile
+tags: license compliance, mobile app development, open source licenses, application compliance, outsystems ui
 locale: en-us
 guid: a1e335a8-d8f0-4039-bd89-67590def7910
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:25
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Compliance with Third Party Licenses

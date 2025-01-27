@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, user interface design, dependency management, widget implementation, outsystemsui
 summary: Explore how to implement the Blank Slate UI Pattern in OutSystems 11 (O11) for enhancing user interfaces in mobile and reactive web apps.
 locale: en-us
 guid: a8fd8afa-cb19-444b-a050-c83a4dc5d13a
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:11
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Blank Slate

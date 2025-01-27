@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) offers widgets like Check Box and Switch for boolean input in forms, available in different web and mobile environments.
-tags:
+tags: widget implementation, user interface, form inputs, boolean variables, community widgets
 locale: en-us
 guid: dc284a2a-904b-4d90-84c0-43cbd7dcd7a0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - apply
 ---
 
 # Switch or Toggle a Boolean Value

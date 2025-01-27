@@ -5,6 +5,15 @@ guid: ecaeecfd-158e-4c16-9111-5f1f3484616b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, deployment, troubleshooting, best practices, technical reference
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Errors

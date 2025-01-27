@@ -6,6 +6,15 @@ guid: f5811e56-3206-4621-a31a-74da90160dd2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1136
+tags: server actions, business logic, action flow, input parameters, output parameters
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Run Server Action
@@ -81,20 +90,6 @@ In the following example, we used the **Valid** output parameter of the **Valida
 <td>Yes</td>
 <td></td>
 <td>It might be necessary to specify additional action input arguments.</td>
-</tr>
-<tr>
-<td title="Animation Effect">Animation Effect</td>
-<td>Type of animation applied to the widget when refreshed.</td>
-<td>Yes</td>
-<td>None</td>
-<td>The possible values are: None, Highlight, Fade, Vertical Slide.</td>
-</tr>
-<tr>
-<td title="Server Request Timeout">Server Request Timeout</td>
-<td>Maximum time in seconds to wait for the Execute Action to complete before triggering a Communication Exception. Overrides the default timeout defined on the module.</td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </tbody>
 </table>

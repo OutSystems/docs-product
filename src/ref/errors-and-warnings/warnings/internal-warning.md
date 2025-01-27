@@ -5,6 +5,15 @@ guid: f63e49e4-9429-4a56-bb73-f3bfb9c05279
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, customer support, feedback submission, technical issues, platform troubleshooting
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Internal Warning

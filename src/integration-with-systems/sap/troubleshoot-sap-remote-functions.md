@@ -1,11 +1,20 @@
 ---
 summary: Explore how to troubleshoot SAP Remote Functions in OutSystems 11 (O11) by checking logs and debugging applications.
-tags: support-Integrations_Extensions
+tags: sap integration, sap troubleshooting, application logging, debugging, error handling
 locale: en-us
 guid: 5d7d9c99-085a-4e8e-9bf3-8f73c6da6b16
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service center
+coverage-type:
+  - apply
+  - unblock
 ---
 
 # Troubleshoot SAP Remote Functions

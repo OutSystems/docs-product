@@ -1,11 +1,20 @@
 ---
 summary: Learn how to configure the Deployment Zone for applications during deployment in OutSystems 11 (O11) for on-premises installations.
-tags: support-Application_Lifecycle; support-Infrastuture_Architecture
+tags: deployment, configuration, on-premises setup, application deployment, deployment zones
 locale: en-us
 guid: 69803bfd-3ebf-465a-b0cb-ee83e61cc233
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1272:613
+audience:
+  - platform administrators
+  - full stack developers
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - understand
 ---
 
 # Configure the Deployment Zone during the deployment

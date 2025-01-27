@@ -5,6 +5,15 @@ guid: 86c93d94-6b0e-4e83-8797-8b0bebe9f170
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: exception handling, application logic, customization, error management, traditional web apps
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # User Exception

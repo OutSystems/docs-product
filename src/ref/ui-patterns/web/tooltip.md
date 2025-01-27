@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: tooltip implementation, ui design, component customization, event handling, web development
 summary: Explore tooltip functionality in Traditional Web Apps using OutSystems 11 (O11), including layout, events, and advanced customization options.
 locale: en-us
 guid: 421bf73a-44ad-44ee-ba61-b2d234472c54
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:615
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Tooltip Reference

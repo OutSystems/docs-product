@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; support-devOps; support-Security; support-Security-featured
+tags: http security, ssl/tls, client certificates, web security, security configuration
 summary: Explore how to enhance HTTP request security in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 825d2aff-000b-4b0e-89ab-de54c816beb6
 app_type: traditional web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Secure HTTP Requests

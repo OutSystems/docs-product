@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui design patterns, layout management
 summary: Learn how to effectively use the Columns UI Pattern in OutSystems 11 (O11) to enhance content layout in mobile and reactive web apps.
 locale: en-us
 guid: 1c4edd42-f577-4475-ad7c-72fbe2a849a8
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:22
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Columns

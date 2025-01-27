@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, time input, service studio widgets, dependency management, user interface design
 summary: OutSystems 11 (O11) integrates a Time Picker UI Pattern allowing users to input time in various formats, based on the flatpickr library.
 locale: en-us
 guid: F51B0186-5CEB-4D5F-880D-A85C6E0AB6DF
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3248:26280
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Time Picker

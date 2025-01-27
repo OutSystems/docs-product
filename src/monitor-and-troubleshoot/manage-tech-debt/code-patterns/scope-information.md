@@ -1,11 +1,21 @@
 ---
-tags: 
+tags: performance optimization, viewstate management, best practices, page load improvement, traditional web apps
 summary: OutSystems 11 (O11) article discusses best practices for managing scope information to optimize viewstate size and enhance page load performance.
 locale: en-us
 guid: 4e82f1f2-b9bd-4a92-a033-e9ec9cfb32ee
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - unblock
+  - evaluate
 ---
 
 # Don't abuse scope information

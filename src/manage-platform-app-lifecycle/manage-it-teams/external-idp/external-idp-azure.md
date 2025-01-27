@@ -1,11 +1,21 @@
 ---
 summary: This guide details configuring Microsoft Azure AD authentication for OutSystems 11 (O11) as an identity provider.
-tags:
+tags: identity provider configuration, azure ad, authentication, security, sso
 locale: en-us
 guid: DA5BA9CA-066E-49E2-92C8-674CB644C370
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=1914%3A6373&mode=design&t=qy82U3bMoQChCp6y-1
+audience:
+  - platform administrators
+  - frontend developers
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Configuring Microsoft Entra authentication

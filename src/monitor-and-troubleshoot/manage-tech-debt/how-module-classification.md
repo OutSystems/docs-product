@@ -5,6 +5,16 @@ guid: 429d1c51-f248-425b-902e-2af8b6ec8a2e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:728
+tags: module reclassification, technical debt, architecture dashboard, permissions, outsystems
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - ai mentor studio
+  - architecture dashboard
+coverage-type:
+  - apply
 ---
 
 # How to change module classifications

@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, date selection
 summary: OutSystems 11 (O11) integrates the Date Picker Range UI Pattern for selecting date ranges in Mobile and Reactive Web Apps.
 locale: en-us
 guid: f130d36f-74c0-450f-99b8-6f5e986c555c
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=2613:24160
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Date Picker Range

@@ -1,11 +1,18 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: mobile development, reactive web development, touch interaction, user interface, event handling
 summary: OutSystems 11 (O11) supports touch events for Mobile and Reactive Web Apps, including Start, Move, and End events.
 locale: en-us
 guid: b6452069-3868-4dde-8e33-9a2392e8d548
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Touch Events Reference

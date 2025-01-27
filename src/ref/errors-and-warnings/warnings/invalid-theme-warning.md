@@ -1,11 +1,18 @@
 ---
 summary: OutSystems 11 (O11) requires specific placeholders in theme layouts to ensure proper functionality.
-tags:
+tags: theme layout, web block, application development, ui/ux design, error handling
 locale: en-us
 guid: 0b9c59a1-505b-4139-9567-c0f219b62ac8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Theme Warning

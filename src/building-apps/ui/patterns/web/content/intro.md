@@ -5,6 +5,14 @@ guid: 0b158172-2203-468c-8242-f48fcccc023c
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A23&mode=design&t=ANpsYvOCthr9AWot-1
+tags: ui components, user interface design, web development, ux patterns, information architecture
+audience:
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - none
+coverage-type:
+  - apply
 ---
 
 # Content

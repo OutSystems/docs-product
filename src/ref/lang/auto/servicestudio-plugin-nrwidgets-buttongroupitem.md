@@ -5,7 +5,16 @@ locale: en-us
 guid: a8b45f04-a2a6-459a-817a-308e933b9d71
 app_type: mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: component configuration, ui design, widget customization, service studio tutorial
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Button Group Item

@@ -5,7 +5,18 @@ guid: 0fa73852-d845-4c80-8b71-0b9c177a4f81
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:33
+tags: process flows, service center, decision logic, activity management, process upgrades
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - understand
 ---
+
 # Impact of Deleting Activities from Process Flows
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic lists some examples of the impact of removed activities on executing process instances.

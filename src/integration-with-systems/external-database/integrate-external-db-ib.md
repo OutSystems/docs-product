@@ -1,11 +1,22 @@
 ---
 summary: Learn how to integrate external databases with your apps using Integration Builder in OutSystems 11 (O11).
-tags:
+tags: database integration, external databases, data management, integration builder, outsystems platform
 locale: en-us
 guid: fcc67384-67da-41a3-b52b-e2491db85b0c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1208:5983
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - integration builder
+  - platform server
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Integrate with an external database using Integration Builder

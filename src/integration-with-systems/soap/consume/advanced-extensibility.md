@@ -5,7 +5,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:17
 summary: OutSystems 11 (O11) supports advanced SOAP web service extensibility through .NET code integration and a dedicated Forge component.
+tags: soap web services, .net integration, outsystems extensions, soap extensibility api, forge components
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+  - integration studio
+  - forge
+coverage-type:
+  - apply
 ---
+
 # Use Advanced Extensibility
 
 When consuming a SOAP web service you can use your own .NET code to change the connection or to customize the message in the request and/or response.

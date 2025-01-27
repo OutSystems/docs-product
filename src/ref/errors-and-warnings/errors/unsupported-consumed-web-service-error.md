@@ -5,6 +5,17 @@ guid: 03541b11-4b74-423c-8148-e3efaa1d8efd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web services, error handling, application integration, web service consumption, service orchestration
+audience:
+  - backend developers
+  - full stack developers
+  - frontend developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Unsupported Consumed Web Service Error

@@ -1,11 +1,20 @@
 ---
-tags: 
+tags: technical debt management, application lifecycle management, development best practices, code quality, software maintenance
 summary: Explore how OutSystems 11 (O11) leverages AI Mentor Studio to manage and resolve technical debt in application development.
 locale: en-us
 guid: 8b0d91f3-f1ee-48c2-8b7e-8a82aeb27ae3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:596
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - ai mentor studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Getting started as a developer

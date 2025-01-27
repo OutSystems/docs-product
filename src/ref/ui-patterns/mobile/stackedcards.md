@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: css customization, ui patterns, design systems, frontend development, web design
 summary: Explore CSS customization for the Stacked Cards UI Pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: 2b2b2437-d9dc-44bf-8d95-a0fb959fa61c
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=612%3A388&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - mobile developers
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Stacked Cards Reference

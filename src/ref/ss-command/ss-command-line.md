@@ -5,6 +5,14 @@ guid: 23c2945f-211b-438d-b8c1-0aae40cd316d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:462
+tags: ide usage, reactive web apps, tutorials for beginners, command line interface, module management
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Service Studio command line

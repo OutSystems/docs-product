@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) accelerators enable faster creation of reactive web and mobile apps with customizable screen components.
-tags: 
+tags: component-based development, app development acceleration, ui component customization, outsystems forge, online video tutorial
 locale: en-us
 guid: fc130f38-3ed2-46f5-a1d1-4319f3e37dfb
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=568%3A366&mode=design&t=VUTD7oZE9xvPWlG0-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Accelerators to compose a screen

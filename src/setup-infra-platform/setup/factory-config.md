@@ -1,11 +1,21 @@
 ---
-summary: 
-tags: 
+summary:
+tags: configuration management, service center, outsystems configurations, web.config, asp.net
 guid: 13ecad2b-bfc4-47c7-9aec-7f3e2e8c15c3
 locale: en-us
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=2900-240&t=yRiViRgFKESOuuYG-1
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+  - forge
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Factory Configuration

@@ -5,6 +5,16 @@ guid: 731fa171-3e4d-40e0-add4-8d9b16ed0d08
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: extension development, .net ide, integration studio, application development, outsystems 11
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - apply
 ---
 
 # Code the Extension

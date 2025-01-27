@@ -5,6 +5,16 @@ guid: 63b2c835-1d5e-4923-a61a-541bd5a16747
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:29
+tags: application dependencies, module management, outsystems development, software architecture, dependency management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Understand Strong and Weak Dependencies

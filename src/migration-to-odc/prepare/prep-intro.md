@@ -5,6 +5,18 @@ guid: 14a67d54-aa12-45bc-8262-48c9f2a2780c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: migration, application architecture, code refactoring, cloud migration, outsystems platform
+audience:
+  - architects
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - migration assessment tool
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Prepare O11 app

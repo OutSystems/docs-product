@@ -1,11 +1,18 @@
 ---
 summary: OutSystems 11 (O11) allows users to analyze exception logs via the management console by accessing the Monitoring section and filtering by application.
-tags: support-Application_Troubleshooting
+tags: error handling, logging, exception monitoring, management console, security permissions
 locale: en-us
 guid: 72005a6b-1250-49cd-83cc-24b6528b7a12
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Analyze the Logs of Exceptions

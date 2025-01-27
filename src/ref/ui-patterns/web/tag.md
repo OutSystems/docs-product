@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, customization, tag pattern, outsystems traditional web, styling
 summary: Explore the customization of the Tag UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, including border-only modifications.
 locale: en-us
 guid: 98676e02-fc12-46ea-a908-cf04568e7d09
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:584
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Tag Reference

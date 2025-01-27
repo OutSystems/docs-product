@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, widgets, web development, service studio usage, outsystems ui
 summary: Explore the Gallery UI Pattern in OutSystems 11 (O11) for displaying content groups in Traditional Web Apps.
 locale: en-us
 guid: fa8125c1-ec09-4d4f-8c84-41be51e007b8
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A73&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Gallery

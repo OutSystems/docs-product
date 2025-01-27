@@ -6,6 +6,15 @@ guid: 602fe7e6-6a83-449a-8d9f-4dff8831755b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sap integration, data retrieval, enterprise systems, technical documentation, software development
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # SAP Remote Function

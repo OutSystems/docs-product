@@ -5,6 +5,16 @@ guid: 92c4605e-5731-4f25-b18b-81e3318d575e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=1%3A853&mode=design
+tags: cloud migration, app architecture, outsystems, cloud-native, iterative development
+audience:
+  - full stack developers
+  - architects
+  - tech leads
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Convert O11 architecture to ODC architecture

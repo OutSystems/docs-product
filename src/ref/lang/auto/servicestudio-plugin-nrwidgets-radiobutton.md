@@ -6,6 +6,15 @@ guid: 9db2cbf8-bc7e-41b7-a94e-9be56ff81f3c
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: widget implementation, ui components, user interface design, outsystems ui, web development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Radio Button

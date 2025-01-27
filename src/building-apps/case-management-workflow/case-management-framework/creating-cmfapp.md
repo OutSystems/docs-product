@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework;
+tags: case management, case management framework, outsystems, application development, service studio
 summary: Learn how to develop a Case Management app using the Case Management App Starter on OutSystems 11 (O11).
 guid: 00c3322e-e53f-480d-977a-005b69f94549
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1837
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # Creating a case management app with App Starter

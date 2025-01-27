@@ -1,11 +1,19 @@
 ---
 summary: Learn about enhancing accessibility in OutSystems 11 (O11) UI patterns with ARIA roles and focus management.
-tags: runtime-reactiveweb
+tags: accessibility, ui patterns, aria, wcag 2.1, focus management
 locale: en-us
 guid: 41f4db30-ace4-4972-8cad-f954f43cd831
 app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:35
+audience:
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+  - apply
 ---
 
 # UI Patterns accessibility reference

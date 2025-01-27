@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1142:386
+tags: selenium testing, automated testing, web testing, testing best practices, outsystems integration
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # How to do UI testing with Selenium

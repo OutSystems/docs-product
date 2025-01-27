@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) network requirements include specific open ports, protocols, and configurations for optimal application accessibility and performance.
-tags: support-installation
+tags: network configuration, security, deployment, installation, performance optimization
 locale: en-us
 guid: 6238ecb9-6eaf-4406-a421-f4b01322052d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - frontend developers
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - configuration tool
+coverage-type:
+  - understand
 ---
 
 # OutSystems network requirements

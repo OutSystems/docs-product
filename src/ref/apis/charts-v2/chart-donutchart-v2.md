@@ -1,11 +1,19 @@
 ---
-tags:
+tags: data visualization, widgets, chart configuration, ui design, outsystems ui framework
 summary: Learn how to create a Donut Chart in OutSystems 11 (O11) using the Donut Chart widget and customizing data points and chart properties.
 locale: en-us
 guid: 728922B7-1DEF-4E55-AB59-7641DAA85C21
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2538:4910
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Donut Chart

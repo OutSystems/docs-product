@@ -1,11 +1,20 @@
 ---
 summary: Learn how to connect to the Migration Assessment Tool before migrating yourr O11 apps and data to ODC
-tags: 
+tags: migration, migration assessment tool, application deployment, configuration, authentication
 guid: a4a2aea6-eee3-4224-8f6f-8f84da3057b2
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2114-1320
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - lifetime
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Connect to Migration Assessment Tool

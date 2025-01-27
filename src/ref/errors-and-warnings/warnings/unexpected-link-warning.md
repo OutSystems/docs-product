@@ -5,6 +5,15 @@ guid: 509dbbc9-652c-44a5-b276-4df9cf8992fd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: web navigation, screen validation, ui/ux design, error handling, best practices
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Unexpected Link Warning

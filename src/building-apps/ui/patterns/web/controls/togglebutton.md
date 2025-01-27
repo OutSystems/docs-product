@@ -1,11 +1,17 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, ux/ui design, widget implementation, dependency management, service studio ide
 summary: Explore how to implement a Toggle Button in OutSystems 11 (O11) for Traditional Web Apps to manage two-state user interactions.
 locale: en-us
 guid: 77270b71-d3f8-4ae7-93a2-92dd501e7d21
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=237:7
+audience:
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Toggle Button

@@ -5,6 +5,16 @@ guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1092%3A5184&mode=design&t=VFCa3RHG3vFTaPWn-1
+tags: firebase, mobile app development, analytics, crash reporting, cloud messaging
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - apply
 ---
 
 # Firebase Plugins

@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, notifications, user interface design, data retrieval, action logic
 summary: OutSystems 11 (O11) features a Counter UI Pattern for displaying dynamic numerical notifications in Traditional Web Apps.
 locale: en-us
 guid: 91058e55-ccbb-494d-bc74-9bdeab106742
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=243%3A10&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Counter

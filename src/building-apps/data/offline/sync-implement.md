@@ -1,11 +1,18 @@
 ---
 summary: Explore how OutSystems 11 (O11) facilitates offline data synchronization in mobile apps using a structured framework.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps
+tags: offline data synchronization, mobile ui framework, entity management, client logic, server logic
 locale: en-us
 guid: 8680eeb4-f6ec-4c12-ae1d-1b228ed5de5b
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=174%3A37&mode=design&t=GF97AOUqsRf9tsAh-1
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Implementing Offline Sync

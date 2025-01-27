@@ -1,12 +1,20 @@
 ---
 summary: Learn about the structure and properties of REST API Multipart Requests in OutSystems 11 (O11).
-tags: 
+tags: rest apis, api integration, api development, web services, application integration
 locale: en-us
 guid: B8DBE1F9-981D-4CFC-9181-13470CA3ACB4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 helpids: 30451
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Structure - REST API Multipart Request

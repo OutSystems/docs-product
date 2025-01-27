@@ -5,6 +5,15 @@ guid: e0728a88-129e-4db8-98e2-56bf83c77246
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web services, web service integration, data mapping, wsdl, outsystems service studio
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Structure - Consumed SOAP

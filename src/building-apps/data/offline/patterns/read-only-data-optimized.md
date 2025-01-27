@@ -1,11 +1,19 @@
 ---
 summary: Explore the Read-Only Data Optimized pattern in OutSystems 11 (O11) for efficient data synchronization in mobile apps.
-tags: runtime-mobile
+tags: data synchronization, offline data handling, performance optimization, mobile app development
 locale: en-us
 guid: 1a81a250-78b5-4d79-b161-3b501049e46c
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:2
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Read-Only Data Optimized

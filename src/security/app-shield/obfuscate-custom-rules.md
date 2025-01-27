@@ -1,11 +1,18 @@
 ---
 summary: Learn how to create custom obfuscation rules for non-OutSystems plugins in OutSystems 11 (O11) to enhance mobile app security.
-tags: support-application_development; runtime-mobile; 
+tags: mobile app security, code obfuscation, appshield, custom plugins, mobile app configuration
 locale: en-us
 guid: 8fe53ff7-6928-4fa2-b80d-cef17d9da254
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1809:280
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - apply
 ---
 
 # Creating custom obfuscation rules

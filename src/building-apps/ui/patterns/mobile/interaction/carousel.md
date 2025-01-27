@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, carousel implementation
 summary: Explore the Carousel UI Pattern in OutSystems 11 (O11) for displaying multiple items in a horizontal slide using navigation controls.
 locale: en-us
 guid: a2167543-6fcc-4c6e-9ff5-ba4426722ed5
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:100
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Carousel

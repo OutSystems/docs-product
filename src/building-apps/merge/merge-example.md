@@ -5,6 +5,15 @@ guid: a0c7450d-ca61-460a-9188-881adb2f40fb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:147
+tags: version control, conflict resolution, source control, collaboration, development best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Compare and merge example with conflicts
@@ -29,7 +38,7 @@ These could be the steps to resolve the conflicts.
 
     ![Arrow icon indicating the selection of CSS code to resolve conflicts in the merged version](images/conflicts-text-orange-arrow.png "Resolving CSS Conflicts")
 
-1. Click **Done and back** in the lower left corner to return to the **Compare and Merge** section.
+1. Click **Done and back** in the lower right corner to return to the **Compare and Merge** section.
 
     ![Compare and Merge window with the 'Style Sheet (merged with conflicts)' element highlighted](images/merge-example-compare-ss.png "Compare and Merge Section")
 
@@ -45,7 +54,7 @@ These could be the steps to resolve the conflicts.
 
     ![Checkbox selection in the 'Merged version (1 conflict)' pane to resolve a conflict in the module](images/text-changes-checkbox.png "Selecting Merged Version Value")
 
-1. Click **Done and back** in the lower left corner to return to the **Compare and Merge - ButtonOnClick** section.
+1. Click **Done and back** in the lower right corner to return to the **Compare and Merge - ButtonOnClick** section.
 
 1. Finally, click **Back** in the lower right corner to return to the main **Compare and Merge** window. If there are no conflicts (no elements highlighted red), you can continue to the next step to publish the module.
 

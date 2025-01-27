@@ -5,6 +5,15 @@ guid: cfc99287-9b0a-46d6-9daf-b62d281dcbef
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: application monitoring, database views, platform logs, service studio, outsystems 11
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Log data reference

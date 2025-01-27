@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css customization, web development, ui components, design patterns, outsystems ui
 summary: Explore accordion customization options in OutSystems 11 (O11) for traditional web apps, including CSS modifications and advanced use cases.
 locale: en-us
 guid: 535efa42-703f-4913-a0e6-d452ac259513
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A353&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Accordion Reference

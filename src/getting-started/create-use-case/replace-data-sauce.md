@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) enables customization of app UIs by integrating and managing external data within various screen types.
-tags:
+tags: data integration, ui customization, screen templates, external data, app customization
 locale: en-us
 guid: efe8b43b-19cd-460b-951a-d6af460a1474
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Using your data in the UI

@@ -5,6 +5,16 @@ guid: 18443b28-3b50-4e2d-9731-a84aac8cdaf1
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:29
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, counter widget, web development, outsystems ui
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Counter

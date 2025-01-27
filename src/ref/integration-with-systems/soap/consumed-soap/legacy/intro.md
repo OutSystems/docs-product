@@ -5,6 +5,15 @@ guid: 60fb83ac-27ce-42b4-b803-654731710f4d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: web services, soap, api, deprecation, integration
+audience:
+  - backend developers
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Deprecated Implementation

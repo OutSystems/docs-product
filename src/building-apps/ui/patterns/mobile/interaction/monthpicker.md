@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, date handling
 summary: Explore the Month Picker UI Pattern in OutSystems 11 (O11) for user-friendly month selection based on the flatpickr library.
 locale: en-us
 guid: 81E3194C-9817-4A14-81C5-5E3F3CDDE4E3
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3248:26842
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Month Picker

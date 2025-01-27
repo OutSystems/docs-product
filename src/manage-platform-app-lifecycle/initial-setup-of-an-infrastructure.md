@@ -6,6 +6,16 @@ guid: 5f21d5c6-f612-4ac0-835d-3a468b82c45b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A0&mode=design&t=rzWSTBJIapfhmERp-1
+tags: infrastructure management, application lifecycle management, environment configuration, outsystems deployment, infrastructure setup
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Manage your OutSystems infrastructure

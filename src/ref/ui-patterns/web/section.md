@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css customization, ui design, ui patterns, web development, style customization
 summary: Explore advanced customization of Traditional Web Apps in OutSystems 11 (O11) by modifying CSS for UI patterns.
 locale: en-us
 guid: c7493358-7bab-4ebf-ada6-2f101c53db4e
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:564
+audience:
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Section Reference

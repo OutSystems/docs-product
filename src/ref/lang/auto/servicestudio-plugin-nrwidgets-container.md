@@ -6,6 +6,15 @@ guid: 71a7768d-6ce0-4e61-96b6-7bc5acaea194
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ide usage, reactive web apps, tutorials for beginners, widget configuration, screen design
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Container

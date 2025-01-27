@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) supports custom authentication for exposed REST APIs through configurable OnAuthentication actions.
-tags: 
+tags: api security, authentication, custom logic, rest apis, outsystems service studio
 locale: en-us
 guid: 844a1455-677f-4248-a50f-d6cd12bb4531
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=415:13
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+  - httprequesthandler
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Add Custom Authentication to an Exposed REST API

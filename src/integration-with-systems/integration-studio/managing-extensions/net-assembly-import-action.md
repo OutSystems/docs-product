@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3756-246&t=IqoLFGa1lr8bJxvT-1
 summary: Learn to import .NET assembly actions into OutSystems 11 (O11) using a step-by-step wizard.
+tags: .net integration, extensions, ide usage, reactive web apps, tutorials for beginners
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - apply
 ---
+
 # Import Actions from .NET Assembly
 
 The Import Actions from .NET Assembly wizard allows you to import the actions definitions from a .NET assembly. Using introspection into a .NET assembly, this wizard will create the actions you specified according to the signature of the .NET methods.

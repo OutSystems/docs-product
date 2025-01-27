@@ -6,6 +6,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30554
+coverage-type:
+  - unblock
 ---
 
 # Cannot open module

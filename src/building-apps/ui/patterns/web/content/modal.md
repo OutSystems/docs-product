@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, modal, user interface design, web development, dependency management
 summary: Explore how to implement and customize the Modal UI Pattern in OutSystems 11 (O11) for enhanced user interaction in Traditional Web Apps.
 locale: en-us
 guid: 64cf2199-6b69-480b-a63e-49b91965e777
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:101
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Modal

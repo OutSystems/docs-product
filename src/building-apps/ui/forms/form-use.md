@@ -1,11 +1,19 @@
 ---
 summary: Learn how to group input widgets using the Form widget in OutSystems 11 (O11) for Reactive Web, Mobile, and Traditional Web applications.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, forms, data binding, ui design, database operations
 locale: en-us
 guid: f204ca02-f2d1-4783-bc88-90934bc968b9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:76
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Use a Form to Group Input Widgets

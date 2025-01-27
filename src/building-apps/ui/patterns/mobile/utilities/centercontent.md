@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui design, ui patterns, centering content, outsystems ui, widget usage
 summary: Explore how to vertically center content in OutSystems 11 (O11) using the Center Content UI Pattern for mobile and reactive web apps.
 locale: en-us
 guid: 050c3c6c-4147-474f-b78b-eb143ef5ebb8
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:90
+audience:
+  - mobile developers
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Center Content

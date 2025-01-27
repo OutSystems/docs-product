@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags: form validation, widget validation, client-side validation, error handling, conditional logic
 summary: Explore validation methods for widgets in OutSystems 11 (O11), including checking validity and setting validation statuses.
 locale: en-us
 guid: 68b5f614-594d-4374-bde6-fc2f815c8b05
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Validation

@@ -1,11 +1,19 @@
 ---
 summary: Explore how OutSystems 11 (O11) enhances mobile and reactive web apps through its comprehensive JavaScript API for custom user experiences.
-tags: article-page; runtime-mobileandreactiveweb
+tags: javascript api, customization, user experience, api usage, application lifecycle management
 guid: f676f015-823b-4e39-8a35-23ec3973bbde
 locale: en-us
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # JavaScript API

@@ -5,6 +5,16 @@ guid: de70f6a6-f126-4ebd-85f3-b98d0a5d613c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4036:29260
+tags: debugging, watches feature, service studio, traditional web apps, mobile apps
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Watches

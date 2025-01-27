@@ -1,12 +1,23 @@
 ---
-tags:
+tags: database optimization, performance tuning, sql queries, pagination, data fetching strategies
 summary: OutSystems 11 (O11) emphasizes controlling the number of records fetched from databases to optimize resource usage and improve application performance.
 locale: en-us
 guid: 1aecc52f-daef-42a3-ab1b-12e31f086dcb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:599
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - unblock
+  - evaluate
 ---
+
 # Control the number of records fetched from the DB
 
 In an app usually only a fixed set of rows is returned when listing information. Additional records are fetched with the use of pagination or infinite scroll mechanism. Your Aggregates or SQL queries should always take into account the required number of records. 

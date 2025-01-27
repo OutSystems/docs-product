@@ -1,11 +1,20 @@
 ---
-tags: 
+tags: ui design, widgets, screen design, user interface, property configuration
 summary: Learn about the diverse range of widgets in OutSystems 11 (O11) that accelerate UI development by organizing and designing app screens effectively.
 locale: en-us
 guid: f230a3d9-8c51-4b1b-98d9-ada3c647d825
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Designing Screens

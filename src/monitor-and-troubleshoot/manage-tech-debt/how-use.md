@@ -1,11 +1,20 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, ai mentor studio, development best practices
 summary: Explore AI Mentor Studio in OutSystems 11 (O11) to enhance your development, architecture, and team leadership skills.
 locale: en-us
 guid: 115abc7a-0267-4497-868b-d3c09b1e92fa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - ai mentor studio
+coverage-type:
+  - none
 ---
 
 # Getting started with AI Mentor Studio

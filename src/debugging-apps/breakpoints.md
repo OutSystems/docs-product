@@ -5,6 +5,16 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 guid: b6478ecf-0592-4d5b-bbe6-87d1d9776833
 figma:
+tags: debugging, breakpoints, error handling, service studio features, outsystems development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Breakpoints

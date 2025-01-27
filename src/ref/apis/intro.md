@@ -1,14 +1,22 @@
 ---
 summary: OutSystems 11 (O11) provides a range of APIs for application integration, extension, and system management.
-tags: support-application_development; support-Integrations_Extensions
+tags: api integration, system management, application development, business process management, client-side scripting
 locale: en-us
 guid: f2cb6eb8-b4dc-437a-9838-0fca9cad116b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
-# OutSystems APIs
+# OutSystems APIs 
 
 OutSystems provides APIs that allow you to extend the capabilities of your applications. With these APIs you can integrate your applications with external systems, and programmatically access OutSystems features.
 

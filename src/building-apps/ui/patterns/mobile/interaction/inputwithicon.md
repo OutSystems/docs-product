@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui design, application development
 summary: OutSystems 11 (O11) features the Input with Icon UI Pattern for enhancing user input with visual hints in Mobile and Reactive Web Apps.
 locale: en-us
 guid: ec5ca995-0a63-4bc9-b5d9-9c22a0f34a5b
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:20
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Input with Icon

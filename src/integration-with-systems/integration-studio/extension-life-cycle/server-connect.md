@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3726-242&t=SuzzAhRaRDk17IMm-1
 summary: OutSystems 11 (O11) requires users to connect to an environment in Integration Studio to perform operations like 1-Click Publish and importing entities.
+tags: environment configuration, 1-click publish, extension management, entity import from database, outsystems development
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - understand
 ---
+
 # Connect to an environment
 
 When you launch **Integration Studio** you must connect to an environment before you can you execute the following operations: [1-Click Publish](<extension-1-cp.md>), [Download an Extension](<../managing-extensions/extension-download.md>), and [Import Entities from a Database](<../managing-extensions/entity-import-from-database.md>).

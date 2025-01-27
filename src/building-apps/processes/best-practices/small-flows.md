@@ -5,7 +5,18 @@ guid: ea9128f4-23b8-4eb6-9e6e-c9970f610634
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:24
+tags: process design, deployment efficiency, process flows, impact analysis, process upgrades
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - evaluate
 ---
+
 # Design Processes with Small Flows
 
 When you design a [Process](../intro.md) with too many activities, it may **reveal hard to maintain and with impact on the deployment of applications**. This is essentially due to:

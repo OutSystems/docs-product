@@ -5,6 +5,18 @@ locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2139-92
+tags: data migration, app migration, low-code platforms, migration process, migration tools
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+  - migration assessment tool
+coverage-type:
+  - apply
 ---
 
 # Execute one shot migration
@@ -17,7 +29,7 @@ This article only applies to customers with access to the Migration Kit.
 
 One-shot migration is ideal for smaller, low-code projects with two or fewer business apps and up to 300 application objects. After completing the one-shot migration, you should have your:
 
-* O11 app code, data, and end users migrated to ODC.
+* O11 app code, data, and end users migrated to ODC. 
 
 * O11 entities mapped to their ODC counterparts.
 

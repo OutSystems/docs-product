@@ -1,11 +1,18 @@
 ---
 summary: OutSystems 11 (O11) enables setting mobile app preferences through JSON in the Extensibility Configurations property.
-tags: runtime-mobile
+tags: json configuration, app customization, mobile app orientation, platform specific configurations, cordova preferences
 locale: en-us
 guid: 36e4b86b-db80-4a29-9c79-86cc1c4f7f66
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:214
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Set the Preferences for Your Mobile App

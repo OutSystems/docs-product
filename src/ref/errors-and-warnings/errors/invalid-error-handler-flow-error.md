@@ -5,6 +5,15 @@ guid: 0f83bb7e-3cc8-4134-938b-9f9194175dc7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, debugging, application development, outsystems platform, exception handling
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Error Handler Flow Error

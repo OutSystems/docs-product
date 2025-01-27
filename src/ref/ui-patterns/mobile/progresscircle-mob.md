@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: css customization, ui patterns, api usage, progress circle, outsystems ui framework
 summary: Explore the CSS class structure and API methods of the Progress Circle UI Pattern in OutSystems 11 (O11) for advanced customization and control.
 locale: en-us
 guid: 7541fb66-768c-42c8-9d92-636b17d9f2f1
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=2863%3A282&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Progress Circle Reference

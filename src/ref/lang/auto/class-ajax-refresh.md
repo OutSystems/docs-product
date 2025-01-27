@@ -5,6 +5,14 @@ guid: 7b8ee1bd-6f84-4af0-b6a4-ea2ff8aaa6e4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ajax, user interface, screen optimization, dynamic content loading, client-side rendering
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Ajax Refresh

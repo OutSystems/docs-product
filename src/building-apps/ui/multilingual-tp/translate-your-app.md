@@ -1,11 +1,19 @@
 ---
 summary: Explore multilingual app translation and language switching features in OutSystems 11 (O11) using Service Studio.
-tags: support-application_development
+tags: internationalization, localization, language support, user experience, application development
 locale: en-us
 guid: e664c563-cb0f-491c-bd05-8f1684d4a5a3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:45
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Translate your app

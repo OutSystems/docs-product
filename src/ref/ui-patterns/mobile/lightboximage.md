@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, mobile apps, rest api integration, image manipulation
 summary: Explore image manipulation and REST API integration in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: b0e2b293-97b8-47b4-abfe-d5b99df4bc3c
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:359
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Lightbox Image Reference

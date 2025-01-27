@@ -5,7 +5,17 @@ guid: 7f64b9e0-7746-416e-b32d-c770f1322f02
 locale: en-us
 platform-version: o11
 figma:
+tags: cross-platform compatibility, ide shortcuts, multilingual support, ux/ui design, widget properties
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
+
 # Features currently unavailable in the cross-platform Service Studio
 
 There are some feature differences between the cross-platform and Windows-only versions of Service Studio. The following features are currently unavailable in the cross-platform Service Studio:

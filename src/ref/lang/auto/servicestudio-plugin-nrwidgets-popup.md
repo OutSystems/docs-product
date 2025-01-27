@@ -6,6 +6,15 @@ guid: 8815652b-3b2f-47ee-81be-f58165e33a8c
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: popup implementation, ui components, user interaction design, web design, outsystems ui framework
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Popup

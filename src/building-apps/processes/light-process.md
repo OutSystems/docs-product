@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) enables scalable database queueing with light process execution for faster event processing.
-tags: support-webapps;
+tags: event processing, process automation, database queueing, performance optimization, process modeling
 locale: en-us
 guid: 99aedeaf-deb9-440c-b1e7-258b60875e00
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:45
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Design Scalable Database Queueing Using Light Processes

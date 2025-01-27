@@ -1,12 +1,26 @@
 ---
-tags: support-Integrations_Extensions
+tags: performance optimization, sap integration, extensions development, state management, transaction handling
 locale: en-us
 guid: 24e5b7ad-48f0-4656-b5d7-c834488bef98
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:51
 summary: Learn how to enhance performance in OutSystems 11 (O11) by managing stateless SAP calls using an extension module.
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - forge
+  - sap extensibility api
+coverage-type:
+  - understand
+  - apply
 ---
+
 # Execute SAP Stateless Calls
 
 Some SAP BAPI remote functions do not need to commit database changes. However, since there is no way for the OutSystems platform to detect if a given SAP remote function requires a commit or not, by default it creates a new transaction for each SAP remote function call and commits changes before closing it.

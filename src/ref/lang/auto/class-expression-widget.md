@@ -1,12 +1,19 @@
 ---
 summary: Learn how the Expression Widget in OutSystems 11 (O11) displays runtime text literals or expression evaluations in Traditional Web Apps.
 helpids: 4020
-tags: runtime-traditionalweb
+tags: expression evaluations, widget configuration, runtime behavior
 locale: en-us
 guid: bc4b0b1b-57cb-49ab-b9de-3d90a5f418c2
 app_type: traditional web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Expression Widget

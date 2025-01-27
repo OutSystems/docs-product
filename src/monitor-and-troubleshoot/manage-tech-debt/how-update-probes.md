@@ -1,11 +1,20 @@
 ---
-tags: 
+tags: ide usage, reactive web apps, tutorials for beginners, probes update, permissions management
 summary: OutSystems 11 (O11) is not mentioned in the provided article, which focuses on updating AI Mentor Studio probes.
 locale: en-us
 guid: d11dd771-148b-49fd-8bfd-dfe0800620c5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:738
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - ai mentor studio
+coverage-type:
+  - apply
 ---
 
 # How to update the AI Mentor Studio probes
@@ -41,7 +50,7 @@ To update the AI Mentor Studio's probes, follow these steps:
 
 1. In the **Probes download and update** screen, select **Download Development probe**.
 
-1. In the Service Center console of the **Development environment** (`https://<development_environment>/ServiceCenter`), install the **Development Environment Probe** in your **Development environment** by following these steps:
+1. Go to the Service Center console of the **Development environment** (`https://<development_environment>/ServiceCenter`), and install the **Development Environment Probe** in your **Development environment** by following these steps:
 
     1. Go to **Factory**.
     1. Go to **Solutions**.
@@ -54,7 +63,7 @@ To update the AI Mentor Studio's probes, follow these steps:
 
 1. In the **Probes download and update** screen, select **Download LifeTime probe**.
 
-1. In the Service Center console of the **LifeTime environment** (`https://<LifeTime_environment>/ServiceCenter`), install the **LifeTime Environment Probe** in your **LifeTime environment** by following these steps:
+1. Go to the Service Center console of the **LifeTime environment** (`https://<LifeTime_environment>/ServiceCenter`), and install the **LifeTime Environment Probe** in your **LifeTime environment** by following these steps:
 
     1. Go to **Factory**.
     1. Go to **Solutions**.

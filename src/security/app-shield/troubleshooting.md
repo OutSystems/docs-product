@@ -1,11 +1,13 @@
 ---
-summary: 
-tags: support-application_development; runtime-mobile;
+summary:
+tags: support-application_development, runtime-mobile
 locale: en-us
 guid: 51175e8a-0f68-472a-928b-96b81646011a
 app_type: mobile apps
 platform-version: o11
-figma: 
+figma:
+coverage-type:
+  - unblock
 ---
 
 # Troubleshooting AppShield crashes

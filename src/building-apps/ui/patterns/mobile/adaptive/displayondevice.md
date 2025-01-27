@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, mobile apps, ui design, cross-platform development
 summary: Explore how OutSystems 11 (O11) enhances UI flexibility with the Display on Device pattern for optimal content presentation across different devices.
 locale: en-us
 guid: cfb2d1db-e5a7-42ef-85d9-a4348e3f1895
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:31
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Display on Device

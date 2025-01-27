@@ -5,6 +5,17 @@ guid: 7a05fa08-e986-451f-8636-5cdc78aa5a10
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error resolution, runtime errors, module deployment, platform server, service center
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - unblock
 ---
 
 # Inconsistent Dependency Warning

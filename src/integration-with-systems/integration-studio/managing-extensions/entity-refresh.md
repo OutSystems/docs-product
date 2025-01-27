@@ -5,7 +5,18 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3743-259&t=0k6vqSszFayqzk9h-1
 summary: OutSystems 11 (O11) allows users to refresh an entity definition in Integration Studio by fetching updated table information from the database.
+tags: database integration, entity management, ide usage, platform server, tutorials for beginners
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+  - platform server
+coverage-type:
+  - understand
+  - apply
 ---
+
 # Refresh an Entity
 
 Once an entity is [added to your extension](<entity-define.md>), the definition of the corresponding table is copied into Integration Studio: columns, data types, and descriptions are imported into the extension. If the table definition changes, for example, if a new column is created, you can refresh the entity definition and retrieve it again from the database.

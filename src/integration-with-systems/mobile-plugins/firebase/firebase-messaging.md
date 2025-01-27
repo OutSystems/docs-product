@@ -5,7 +5,17 @@ guid: a941e1f8-94f8-400c-8e44-fa969cce59d8
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2218:14983
+tags: firebase cloud messaging, mobile notifications, push notifications, plugin integration, notification management
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
 ---
+
 # Firebase Cloud Messaging Plugin using server actions
 
 
@@ -402,6 +412,14 @@ Firebase SDKs for Android and iOS do not support subscribing to topics for which
 Starting on version 4.0.0 of the plugin, builds of your app can fail if:
 1. it contains a dependency to another app, mobile or web, that includes an asset from the Firebase Cloud Messaging plugin
 2. the app doesn't include the necessary configuration files for Firebase plugins (e.g. google-services.json).
+
+### On Changes in Android 15
+
+From Android 15 onwards, users can install an app in the [Private space](https://developer.android.com/about/versions/15/features#private-space). Users can lock their private space at any time, which means that push notifications are not shown until the user unlocks it.
+
+It is not possible to detect if an app is installed in the private space. Therefore, if your app shows any critical notifications, inform your users to avoid installing the app in the private space.
+
+For more information about the behavior changes of your app related to the private space, refer to [Android documentation](https://developer.android.com/about/versions/15/behavior-changes-all#private-space-changes).
 
 ## On Compatibility with Firebase Performance
 

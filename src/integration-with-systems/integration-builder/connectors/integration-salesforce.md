@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:59
 summary: Learn how to integrate Salesforce with OutSystems 11 (O11) using Integration Builder for secure data access and management.
+tags: salesforce integration, authorization processes, security, integration builder, oauth
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration builder
+coverage-type:
+  - apply
 ---
+
 # Salesforce integration
 
 ## Prerequisites

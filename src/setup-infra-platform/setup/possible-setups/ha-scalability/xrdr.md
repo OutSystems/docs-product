@@ -1,11 +1,20 @@
 ---
 summary: Explore cross-regional disaster recovery
-tags: 
+tags: disaster recovery, cloud computing, data protection, business continuity, aws
 locale: en-us
 guid: fcbc5dc8-e119-4365-9ddd-d60ae481e2d8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
 ---
 
 # Cross-region disaster recovery
@@ -17,6 +26,7 @@ OutSystems cross-region disaster recovery (XRDR) requires the subscription of an
 </div>
 
 OutSystems cross-region disaster recovery (XRDR) is a strategy that allows you to recover your OutSystems Cloud platform from the complete loss of an Amazon Web Services (AWS) or OutSystems Cloud region. The strategy involves backing up your data, apps, and cloud infrastructure across different geographic regions. With cross-region disaster recovery, you get business continuity and data protection against the most impactful natural or man-made disasters.
+To validate your backup and recovery procedures it's also possible to [perform a cross-region disaster recovery test](disaster-recovery-test.md).
 
 ## Key concepts of cross-region disaster recovery
 
@@ -24,17 +34,24 @@ The following are some of the key concepts of cross-region disaster recovery:
 
 * **Failover and failback**
 
-    * Failover: The operations switch from the primary site to the secondary site during a disaster.
+    * Failover: The switch of operations from the primary site to the secondary following a disaster.
 
     * Failback: The process of returning operations to the primary site once it's restored.
 
 * **Cross-region data backup**
 
-    * Regular data backups between different cloud regions to enable the full recovery of an OutSystems Cloud platform based on these backups.
+    * Regular data backups between different cloud regions that enable the full recovery of an OutSystems Cloud platform based on these backups.
 
 * **Recovery point objective (RPO)**
 
     * Defines the point in time to which data must be recovered after a disruption. For example, if an organization has an RPO of 4 hours, it means that the organization can tolerate losing up to 4 hours worth of data but no more.
+ 
+<div class="info" markdown="1">
+
+OutSystems XRDR support RPO values of 4 hours or 24 hours, that can be defined per production environment. Please contact your OutSystems account team for more information.
+
+</div>
+
 
 * **Recovery time objective (RTO)**
 
@@ -43,6 +60,12 @@ The following are some of the key concepts of cross-region disaster recovery:
     The following diagram illustrates the recovery point objective before the disaster and the recovery time objective after the disaster.
 
     ![Diagram illustrating the recovery point objective before the disaster and the recovery time objective after the disaster.](images/recovery-time-point-objective-diag.png "Recovery point objective and recovery time objective diagram")
+
+<div class="info" markdown="1">
+
+OutSystems XRDR has fixed values of RTO of 24 hours and 48 hours in case of Sentry infrastructures.
+
+</div>
 
 ## Benefits of cross-region disaster recovery
 

@@ -1,11 +1,22 @@
 ---
 summary: Explore how to integrate external identity providers using OIDC with OutSystems 11 (O11) for enhanced authentication across web and native applications.
-tags:
+tags: oidc integration, authentication, identity providers, openid connect discovery, token configuration
 locale: en-us
 guid: 7486CF76-C3FC-41E0-B2E9-F6C6512FAB44
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+  - service center
+  - lifetime
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Generic external identity provider supporting OIDC
@@ -30,13 +41,13 @@ To integrate with OutSystems Consoles, follow these steps:
 
 1. **Sign-in redirect URIs**:
 
-    * For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center login page:
+    * In the external IdP, for each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center login page :
 
         * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
 1. **Sign-out redirect URIs**:
 
-    * For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center logout page:
+    * In the external IdP, for each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center logout page:
 
         * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
 

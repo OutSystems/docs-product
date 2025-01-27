@@ -5,6 +5,16 @@ guid: 9e68edab-dc6e-4606-b3b8-ceb4f1c2d406
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: api usage, rollback strategy, deployment management, version control, environment configuration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
 ---
 
 # Rollback a Mobile App using the LifeTime API

@@ -5,6 +5,15 @@ guid: a63209c4-0f36-4c07-9a7a-e5c217b2b4d0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: performance optimization, data handling, server interaction, splash screen optimization, efficient server requests
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Performance Suggestion Warning

@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3042-288&t=EDoWHHiECWnNFXux-1
 summary: Explore the management of extension resources in OutSystems 11 (O11) using Integration Studio's Resources tree.
+tags: extension management, integration studio, version control, resource management, ide customization
+audience:
+  - backend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Resources Tree
 
 The **Resources** tree, in the extension [workspace](<workspace.md>), presents the resources associated with the current extension and provides the necessary operations to manage them. In Integration Studio, resources are files that implement the behavior of the extension actions or any files that support other aspects of the extension, such as action icons and help files.

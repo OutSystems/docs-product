@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: css customization, ui design, ui patterns, web design, frontend development
 summary: Explore CSS customization options for Dropdown Select UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 4d9ccb38-173c-42fa-9f2f-6ea73e338b52
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:456
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Dropdown Select Reference

@@ -1,11 +1,20 @@
 ---
 summary: Learn how OutSystems 11 (O11) simplifies REST API documentation by automatically generating it upon module publication.
-tags: 
+tags: rest api, documentation automation, api integration, swagger documentation, service studio
 locale: en-us
 guid: b125017d-f037-4a5f-bba4-cdc563e0a4bf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:0
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Document an exposed REST API

@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) integrates with SAP using the SAP Connector for Microsoft.NET, supporting standard and secure authentication options.
-tags: 
+tags: sap integration, sap connector, security, authentication mechanisms, encryption
 locale: en-us
 guid: 3c630499-23ad-4947-9600-ad9392538dd6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - platform server
+coverage-type:
+  - remember
 ---
 
 # SAP

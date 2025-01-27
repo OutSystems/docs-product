@@ -6,6 +6,15 @@ guid: 836cb2ad-86f5-4d9a-96ac-b7e34b4e82f7
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1718%3A3506&mode=design&t=R3Sasu7dM1Rm42Nj-1
+tags: list virtualization, performance optimization, ui components, app development, scroll management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # List
@@ -84,7 +93,7 @@ To prevent this issue, you can either disable the list virtualization or fetch a
 <td>Set to Custom to define a custom HTML tag to be used by the widget in runtime. Default mode sets tag as div.</td>
 <td>Yes</td>
 <td>Default</td>
-<td></td>
+<td> Setting the Mode property to Custom provides you with flexibility in styling and layout, giving you more control over how each item is presented. It allows you to choose the rendering mode that best suits your needs and presentation preferences for the list</td>
 </tr>
 <tr>
 <td title="Tag">Tag</td>

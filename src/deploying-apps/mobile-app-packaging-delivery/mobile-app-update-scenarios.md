@@ -1,11 +1,19 @@
 ---
 summary: Explore mobile app update mechanisms and scenarios in OutSystems 11 (O11), detailing seamless upgrades and conditions requiring new app builds.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps
+tags: mobile app deployment, update mechanisms, environment specific updates, user notifications, caching resources
 locale: en-us
 guid: ce4f8a4d-d473-4b92-a448-cf39fde1f64d
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Mobile App Update Scenarios

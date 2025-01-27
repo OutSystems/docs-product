@@ -5,6 +5,15 @@ guid: 7b6384db-c1de-4732-a61f-e6afe49c9e3d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, extension management, resource management, file system integration, outsystems best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - unblock
 ---
 
 # Missing File Warning

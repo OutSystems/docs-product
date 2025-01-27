@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui customization, css styling, outsystems ui patterns, web development, panel widget
 summary: Explore advanced UI customization in OutSystems 11 (O11) for Traditional Web Apps, including adding box-shadow effects to panels.
 locale: en-us
 guid: 14257aa5-1da9-4d49-b619-e89a5bd50936
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:530
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Panel Reference

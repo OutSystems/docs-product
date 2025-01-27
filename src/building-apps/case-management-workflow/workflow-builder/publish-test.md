@@ -1,11 +1,18 @@
 ---
-tags: Workflow Builder; Case Management; Business developers; Generting and testing workflow builder apps
+tags: workflow automation, app lifecycle management, user role testing, sample users, environment deployment
 summary: Learn how to publish and test your app using OutSystems 11 (O11) with Workflow Builder, including user role testing and app screen functionalities.
 guid: 326f1e4a-f451-480e-9e40-e068521784eb
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:915
+audience:
+  - full stack developers
+outsystems-tools:
+  - workflow builder
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Publishing and testing your app

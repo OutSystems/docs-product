@@ -5,6 +5,16 @@ guid: 00000ca7-49ce-4972-b801-0f992f61c16a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, extension development, outsystems platform, application integration, platform troubleshooting
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - unblock
 ---
 
 # Integration Studio Errors

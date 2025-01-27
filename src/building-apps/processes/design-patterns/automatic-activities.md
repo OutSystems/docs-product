@@ -5,7 +5,20 @@ guid: 19cbdea5-0bab-4d93-9e54-aa727f878b4b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process automation, transaction management, system integration, error handling, process flow
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - evaluate
 ---
+
 # Designing Automatic Activities
 
 Use this pattern to design action flows, adding automated business logic to your processes with the [Automatic Activity](<../../../ref/lang/auto/class-automatic-activity.md>) as, for example:

@@ -5,6 +5,15 @@ guid: dcf82210-2b59-420c-9014-81f80f0d907a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: api, application deployment, application versioning, environment management, database connection mapping
+audience:
+  - full stack developers
+  - platform administrators
+  - tech leads
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
 ---
 
 # LifeTime API Examples

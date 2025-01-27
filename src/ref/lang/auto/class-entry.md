@@ -1,12 +1,19 @@
 ---
 summary: Explore how OutSystems 11 (O11) defines the entry point for Traditional Web Apps, detailing URL structure and properties.
 helpids: 4001
-tags: 
+tags: url structure, web app configuration, traditional web apps, entry points, default pages
 locale: en-us
 guid: 0acbcb54-7356-46f3-9d36-90d30914abf4
 app_type: traditional web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Entry

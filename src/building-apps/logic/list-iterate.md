@@ -1,11 +1,19 @@
 ---
 summary: Explore how to iterate lists using the For Each logic node in OutSystems 11 (O11).
-tags: support-webapps
+tags: ide usage, reactive web apps, tutorials for beginners, list iteration, logic loops
 locale: en-us
 guid: 15a9d0fc-aef0-4d69-bfaa-edeefbecad36
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:9
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Use a For Each to Iterate a List

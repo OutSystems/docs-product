@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: ui design, ui patterns, widgets, usability, outsystemsui
 summary: Learn how to implement the Balloon UI Pattern in OutSystems 11 (O11) to display pop-up content on UI elements effectively.
 locale: en-us
 guid: 872dd221-b71e-4780-b7f0-141d2ab55db5
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A38&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Balloon

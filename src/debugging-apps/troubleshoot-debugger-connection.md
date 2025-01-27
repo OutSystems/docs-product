@@ -1,11 +1,20 @@
 ---
 summary: Explore common mobile app debugging issues and solutions in OutSystems 11 (O11) using Service Studio 11.5.44.2557 or later.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps
+tags: mobile app debugging, service studio configuration, debugging best practices, port configuration, android debugging
 locale: en-us
 guid: dc4e00b1-34e4-4bf0-9fa6-b63c6d4f6719
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4520%3A3279&mode=design&t=vStGeN187wwjAjiU-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
+  - apply
 ---
 
 # Troubleshoot Debugger Connection Issues

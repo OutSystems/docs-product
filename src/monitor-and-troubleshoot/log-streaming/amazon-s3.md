@@ -3,8 +3,20 @@ summary: Learn how to stream logs from OutSystems 11 (O11) to Amazon S3 by setti
 locale: en-us
 guid: af2b3f29-6c76-45f1-9d77-9dc20f774f9f
 app_type: traditional web apps, mobile apps, reactive web apps
-figma: 
+figma:
 platform-version: o11
+tags: cloud integration, aws s3, log management, opentelemetry, observability
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - platform server
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Stream logs to Amazon S3

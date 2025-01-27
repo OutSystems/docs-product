@@ -5,7 +5,19 @@ guid: e4f2b751-f68b-4d31-b018-a30bf5a7f61a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:20
+tags: process management, scalability, runtime execution, conditional start, process optimization
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - evaluate
 ---
+
 # Executing Multiple Instance Activities
 
 Use this pattern to execute multiple instances of the same flow of activities. It is specially useful in situations where the number of executed instances is only known at runtime.

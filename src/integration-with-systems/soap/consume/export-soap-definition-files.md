@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1815%3A9268&mode=design&t=8a1ub9syb4QKHbuk-1
 summary: OutSystems 11 (O11) enhances SOAP web service integration by allowing the export of definition files through Service Studio.
+tags: soap web service, wsdl, xml, service integration, web service definition
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
+
 # Export definition files in a SOAP web service
 
 Consuming a SOAP Web Service in **Service Studio** is generally a seamless and trouble-free experience. There are cases, however, when developers want more information about a particular web service or need to make some modifications in order to make it conform to **OutSystems** requirements, such as:

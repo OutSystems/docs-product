@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=543:318
+tags: ci/cd, devops, scalable development, delivery agility, domain-driven design
+audience:
+  - full stack developers
+  - architects
+  - tech leads
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - understand
 ---
 
 # Development and delivery at scale

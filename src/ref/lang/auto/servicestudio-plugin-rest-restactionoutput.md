@@ -6,6 +6,15 @@ guid: f27841f8-0506-40bf-a590-427215436a01
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, integration, api documentation, data types, security
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Output Parameter - REST API Method

@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ide usage, reactive web apps, mobile app development, ui patterns, tutorials for beginners
 summary: Learn how to organize content effectively in mobile and reactive web apps using the List Item Content UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 1c561d9b-7797-4365-b605-9c56261bfe04
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:49
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # List Item Content

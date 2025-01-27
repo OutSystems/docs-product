@@ -1,11 +1,18 @@
 ---
 summary: Explore how to use Ajax for partial screen refreshes in Traditional Web Apps with OutSystems 11 (O11).
-tags: support-Front_end_Development; support-webapps-featured; runtime-traditionalweb
+tags: ajax, web development, performance optimization, screen interactivity, user experience
 locale: en-us
 guid: cf447891-96c9-41a7-b624-455c180d4002
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=266%3A14&mode=design&t=GF97AOUqsRf9tsAh-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Use Ajax to Refresh Part of a Screen

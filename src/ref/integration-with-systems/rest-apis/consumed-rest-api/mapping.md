@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) automatically maps JSON data types to corresponding OutSystems data types when consuming REST API methods.
-tags:
+tags: rest api, data mapping, json, data types, integration
 locale: en-us
 guid: afc8d9b0-863d-4592-be88-c376d083f49a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Mapping REST Data Types to OutSystems Data Types

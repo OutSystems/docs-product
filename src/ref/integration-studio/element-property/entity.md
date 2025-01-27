@@ -5,6 +5,16 @@ guid: 0d31202a-6526-4903-a88d-4ed9b8e73ab2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database integration, entity management, naming conventions, default values, documentation practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Entity Properties

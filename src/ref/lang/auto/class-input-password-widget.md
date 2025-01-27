@@ -6,6 +6,14 @@ guid: e908d4d2-b3df-4e78-baf9-c105f9732869
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: web development, user interface components, data validation, security, user input
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Input Password Widget

@@ -1,11 +1,20 @@
 ---
 summary: This guide details how to integrate a chatbot UI block into an OutSystems 11 (O11) app, enhancing user interaction through a chat window.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, chatbot integration, user interface enhancement
 locale: en-us
 guid: 4d218bfe-d4ed-474f-bc58-2b4573911a31
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=409:21
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - unblock
 ---
 
 # Add a chatbot UI block to your app

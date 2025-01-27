@@ -1,11 +1,20 @@
 ---
 summary: Learn CSS customization in OutSystems 11 (O11) using its UI framework and Style Sheet Editor.
-tags: support-application_development; support-Front_end_Development
+tags: ide usage, reactive web apps, tutorials for beginners, css customization, ui design, theming
 locale: en-us
 guid: d9c9539a-bb5f-4775-9abc-86c9ba2c36ad
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=199%3A108&mode=design&t=VUTD7oZE9xvPWlG0-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Cascading Style Sheets - CSS
@@ -41,9 +50,9 @@ You can also open the Style Sheet Editor by clicking the **CSS** button in the M
 
 ![Image showing the CSS Style Sheet Editor interface in OutSystems.](images/css-style-sheet-editor.png "CSS Style Sheet Editor")
 
-## CSS specificity
+## CSS precedence
 
-Specificity is the algorithm used by browsers to determine which style declaration is ultimately applied to an element. The styles have different priorities and the order Service Studio imports the style sheets affects how the browsers apply them. The last style to be applied has the highest priority.
+The styles have different priorities and the order Service Studio imports the style sheets affects how the browsers apply them. The last style to be applied has the highest priority.
 
 1. System style sheet for Container widgets in the Grid.
 1. Block style sheet.

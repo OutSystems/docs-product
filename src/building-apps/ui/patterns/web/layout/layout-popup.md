@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, web development, application development, outsystems ui, web blocks
 summary: Explore the Layout Popup in OutSystems 11 (O11), a customizable web block for displaying off-canvas information in Traditional Web Apps.
 locale: en-us
 guid: 6e0a8f5c-f734-4478-913e-21c6e81e8f1e
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:15
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Layout Popup

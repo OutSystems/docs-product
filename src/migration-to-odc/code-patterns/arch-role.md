@@ -23,6 +23,12 @@ coverage-type:
 In ODC, Assets can't have dependencies to Roles from other Assets.
 This means that each App must define its own Roles and can't share them with other Apps.
 
+<div class="info" markdown="1">
+
+Public roles are available in ODC since November 2024. OutSystems is working on updating this documentation page. 
+
+</div>
+
 ## How to solve
 
 You must solve this pattern in O11, before proceeding with the code migration to ODC.

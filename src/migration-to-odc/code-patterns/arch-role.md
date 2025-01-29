@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Manage roles effectively in OutSystems platform by understanding the differences between O11 and ODC and ensuring proper role configuration to avoid migration issues.
 locale: en-us
 guid: 4751d001-d519-4214-ae71-bec2e5b72f24
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -17,7 +17,6 @@ coverage-type:
   - unblock
   - understand
 ---
-
 # Asset consuming a Role
 
 In ODC, Assets can't have dependencies to Roles from other Assets.

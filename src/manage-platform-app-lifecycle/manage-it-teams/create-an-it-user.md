@@ -41,7 +41,7 @@ For example, a new developer just joined the company. To create the new IT user,
 
 The user is now created. You can grant the user with **additional permissions** by assigning roles to the user [in teams](about-permission-levels.md#role-assigned-to-users-for-a-team) or [for specific applications](about-permission-levels.md#role-assigned-to-users-for-a-specific-application):
 
-![Screenshot of the LifeTime console with options to grant additional permissions to a user for teams or specific applications.](images/user-grant-additional-permissions.png "Granting Additional Permissions to a User")
+![Screenshot of the LifeTime console with options to grant additional permissions to a user for teams or specific applications.](images/user-grant-additional-permissions-lt.png "Granting Additional Permissions to a User")
 
 Check the OutSystems [permission model for IT users](about-permission-levels.md) to better understand which should be the user’s default role and how can you grant the user with additional permissions.
 

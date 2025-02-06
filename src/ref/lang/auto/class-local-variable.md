@@ -20,7 +20,7 @@ coverage-type:
 # Local Variable
 
 
-A Local Variable exists only in the scope of its parent element, for example, a Screen or an Action. A Local Variable can only be assigned and used locally inside that scope. Local variables are destroyed when execution leaves the scope of the parent element. The image below shows how to add a Local Variable inside a Screen.  
+A Local Variable exists only in the scope of its parent element, for example, a Screen, Action, Web Block, or Automatic Activity. A Local Variable can only be assigned and used locally inside that scope. Local variables are destroyed when execution leaves the scope of the parent element. The image below shows how to add a Local Variable inside a Screen.  
 
 ![Screenshot showing the process of adding a Local Variable inside a Screen in Service Studio](images/add-local-variable-inside-screen-ss.png "Adding a Local Variable in Service Studio")
 

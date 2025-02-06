@@ -23,19 +23,29 @@ coverage-type:
 
 This article explains how you can set up log streaming from OutSystems applications to the **Elastic** APM tool. 
 
-To set up the log streaming to Elastic, you need the **Elastic URL** and **Secret token** values. Once you have these, go to LifeTime and [configure the log streaming service](lifetime-streaming.md). 
-
 ## Prerequisites
 
-* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md).
+Before streaming logs to Elastic, ensure you have: 
+
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
+
+* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
+
+* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
+
+* Have subscription to log streaming. Contact your Account Manager for provisioning.
+
+## Set up log streaming
+
+<div class="info" markdown="1">
 
 * Native Elastic APM OpenTelemetry log ingestion is only available in version 8.0 onwards.
 
 * The Elastic Observability services and Kibana plugins must be deployed alongside the Elasticsearch cluster to complete the following steps.
 
-* Installed Platform Server version 11.23.1 or higher.
+</div>
 
-* Installed LifeTime version 11.19.0 or higher.
+To set up the log streaming to Elastic, you need the **Elastic URL** and **Secret token** values. Once you have these, go to LifeTime and [configure the log streaming service](lifetime-streaming.md).
 
 ## Additional resources
 

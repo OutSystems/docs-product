@@ -29,7 +29,7 @@ Following is an overview of the process for streaming log data to different APM 
 
 <div class="info" markdown="1">
 
-For detailed information on the prerequisites for log streaming, refer to the individual APM tool how-tos.
+For information about the prerequisites for log streaming, refer to [Requirements for use](./intro.md#requirements-for-use).
 
 </div>
 

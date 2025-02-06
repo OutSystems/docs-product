@@ -23,11 +23,17 @@ This article explains how to set up the OpenTelemetry collector for Application 
 
 ## Prerequisites
 
-* Installed Platform Server version 11.23.1 or higher.
+Before setting up the OpenTelemetry collector, ensure you have: 
 
-* Installed LifeTime version 11.19.0 or higher.
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
 
-* Enabled [Logs separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
+* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
+
+* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
+
+* Have subscription to log streaming. Contact your Account Manager for provisioning.
+
+## Set up OpenTelemetry collector
 
 To receive logs in Datadog, Splunk or Amazon S3, you must set up an OpenTelemetry Collector:
 

@@ -25,11 +25,15 @@ This article explains how you can set up log streaming from OutSystems applicati
 
 ## Prerequisites
 
-* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md).
+Before streaming logs to New Relic, ensure you have: 
 
-* Installed Platform Server version 11.23.1 or higher.
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
 
-* Installed LifeTime version 11.19.0 or higher.
+* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
+
+* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
+
+* Have subscription to log streaming. Contact your Account Manager for provisioning.
 
 ## Set up log streaming
 

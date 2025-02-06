@@ -20,7 +20,7 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-To configure log streaming in LifeTime, the user must have the Admin built-in role.
+To configure log streaming in LifeTime, the user must have the Admin built-in role. Before configuring log streaming service in LifeTime, refer to [Requirements for use](./intro.md#requirements-for-use).
 
 </div>
 

@@ -33,6 +33,18 @@ The following video gives you a quick overview about what log streaming is, the 
 
 <iframe src="https://player.vimeo.com/video/1020984471" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
 
+## Requirements for use
+
+Before you start streaming logs, ensure you have:
+
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
+
+* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
+
+* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
+
+* A subscription to log streaming. Contact your Account Manager for provisioning.
+
 ## Benefits of log streaming
 
 One of the main purpose of implementing log streaming support for OutSystems apps is to improve the usability and availability of application and platform log data. Here are some key benefits of this feature:
@@ -70,18 +82,6 @@ OutSystems uses [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/sp
 * APM tools may implement rules and limits to the ingestion, which are followed by OutSystems Log Streaming when adherent to the OpenTelemetry protocol, but unexpected changes and other restrictive limits may impact the streaming service and prevent data from being ingested in the APM tool.
 
 </div>
-
-## Requirements for use
-
-Before you start streaming logs, ensure you have:
-
-* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
-
-* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
-
-* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
-
-* A subscription to log streaming is required. Contact your Account Manager for provisioning.
 
 ## Supported tools
 

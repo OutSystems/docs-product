@@ -27,7 +27,7 @@ Here is the overview of the process for streaming log data to different APM tool
 
 ![Diagram illustrating the process flow for streaming log data to APM tools](images/log-streaming-process-flow-diag.png "Log Streaming Process Flow Diagram")
 
-For information about the prerequisites for log streaming, refer to [Requirements for use](./intro.md#requirements-for-use).
+For information about the prerequisites for log streaming, refer to [Requirements for use](intro.md#requirements-for-use).
 
 1. Retrieve the APM tool's server URL and the authentication credentials
 To establish a secured connection between your app and the APM tool, you require the APM tool's server URL and the authentication credentials. The steps to retrieve the server URL and the authentication information vary for each tool. For detailed information, refer to the corresponding APM tool documentation.

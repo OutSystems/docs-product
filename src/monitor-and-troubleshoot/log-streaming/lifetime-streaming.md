@@ -22,7 +22,7 @@ To enable log streaming from the O11 app to the corresponding APM tool,you must 
 
 ## Prerequisites
 
-* Before configuring log streaming service in LifeTime, refer to [Requirements for use](./intro.md#requirements-for-use).
+* Before configuring log streaming service in LifeTime, refer to [Requirements for use](intro.md#requirements-for-use).
 
 * Ensure that user have **Admin** built-in role.
 

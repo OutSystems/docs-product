@@ -26,6 +26,8 @@ This procedure applies only to **self-managed environments**. For OutSystems Clo
 
 </div>
 
+When configuring your internal network, ensure that you also add the IP addresses of any extended products you use (for example, AI mentor Studio, Workflow Builder). For more information, refer to [OutSystems network requirements](../setup-infra-platform/setup/network-requirements.md).
+
 To configure an internal network for your OutSystems environment, do the following:
 
 1. Go to the Service Center management console of your OutSystems environment.

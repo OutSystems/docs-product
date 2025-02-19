@@ -2639,7 +2639,7 @@ Structure that holds the data to manipulate the permission level for DB connecti
 | ---- | ---- | ----------- | -------- |
 | Id | integer |  | Yes |
 | Label | string | The label of the environment permission level. | Yes |
-| ShortLabel | string | A shorter label of the permission permission. | No |
+| ShortLabel | string | A shorter label of the permission level. | No |
 | Description | string | The full description of the permission level. | No |
 | Level | integer | An integer representing the permission level. | Yes |
 

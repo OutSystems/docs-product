@@ -56,6 +56,11 @@ Service Studio creates the following Attributes automatically:
 **Is_Active**
 :   Defines whether a record is available during runtime. For example, the records with **Is_Active** set to false aren't used when scaffolding uses the Static Entity.
 
+<div class="info" markdown="1">
+
+  If your static entity is public, you won't be able to use it as an Aggregate Source from the Library module. 
+
+</div>
 
 ## Convert Static Entity to Entity
 

@@ -34,7 +34,6 @@
             - href: building-apps/data/modeling/entity.md
             - href: building-apps/data/modeling/entity-create.md
             - href: building-apps/data/modeling/entity-static.md
-            - href: building-apps/data/modeling/enumerate-create.md
             - href: building-apps/data/modeling/index-create.md
             #Entity relationships
             - href: building-apps/data/modeling/relationship/intro.md

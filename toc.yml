@@ -534,12 +534,12 @@
 # Debugging apps
 - href: debugging-apps/intro.md
 - topics:
+    - href: debugging-apps/debugger-ui-reference.md
     - href: debugging-apps/breakpoints.md
     - href: debugging-apps/watches.md
     - href: debugging-apps/threads.md
     - href: debugging-apps/public-personal-areas.md
     - href: debugging-apps/debug-producer-modules.md
-    - href: debugging-apps/debugger-ui-reference.md
     - href: debugging-apps/troubleshoot-debugger-connection.md
 # Testing Apps
 - href: testing-apps/intro.md

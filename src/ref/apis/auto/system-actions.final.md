@@ -1088,12 +1088,6 @@ Url
 
 ### SetCurrentLocale { #Client_SetCurrentLocale }
 
-<div class="info" markdown="1">
-
-Available in Multilingual Technical Preview. See [Technical Preview features](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) for more information.
-
-</div>
-
 Set the locale to change your app's display language.
 
 *Inputs*

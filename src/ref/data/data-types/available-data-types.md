@@ -5,15 +5,6 @@ guid: 811f5c4c-11f5-4998-87c2-d5629a8fe0a2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data types, data modeling, application development, outsystems platform, data conversion
-audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-outsystems-tools:
-  - service studio
-coverage-type:
-  - remember
 ---
 
 # Available Data Types
@@ -66,7 +57,7 @@ If your application needs to store characters defined in higher Unicode ranges, 
 
 |Type|Comments|
 |--- |--- |
-|`<Entity>` or `<Structure>`|When an Entity or [Structure](../../../building-apps/data/structure-create-use.md) is created, a data type is also created with all the attributes of that Entity or Structure. For example, when the Customer entity is created, the Customer data type is created. To create a variable of this data type, simply set its **Data Type** property to `Customer`.<br/>To access an attribute of the variable, use the following syntax: `.`, for example `MyCustomerVar.Name`.|
+|`<Entity>` or `<Structure>`|When an Entity or [Structure](../../../building-apps/data/structure-create-use.md) is created, a data type is also created with all the attributes of that Entity or Structure. For example, when the Customer entity is created, the Customer data type is created. To create a variable of this data type, simply set its **Data Type** property to `Customer`.<br/>To access an attribute of the variable, use the following syntax: `<variable>.<attribute>`, for example `MyCustomerVar.Name`.|
 |Object|OutSystems supports the Object data type to allow to reuse your own .NET classes. The default value is NullObject().|
 |Record|A [Record](../../../building-apps/data/structure-create-use.md) is a data type that's composed of a fixed number of attributes, each one with its own data type. Use a Record to define a compound data type that is used for a single variable. If you need to define more than one variable with the same compound data type, use a Structure instead. Some use cases for using the Record data type are:<br/>• You need to return the result of an Aggregate on a User Action. In this case, you can define the user action output parameter using the record data type.<br/>• You need a user action that returns compound information, but don't want to define a new Structure.|
   

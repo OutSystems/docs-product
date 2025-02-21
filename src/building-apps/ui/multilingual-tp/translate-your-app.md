@@ -38,7 +38,7 @@ To add a new language and translate your app, do the following in Service Studio
 
     ![Screenshot showing how to add a new language for translation in Service Studio](images/add-new-language-translation-ss.png "Adding a New Language in Service Studio")
 
-2. Select a locale and then click **OK** to open the **translations editor**.
+1. Select a locale and then click **OK** to open the **translations editor**.
 
     ![Screenshot of the Select Locale window in Service Studio for choosing a new language](images/select-new-language-ss.png "Selecting a New Language")
 
@@ -48,13 +48,13 @@ To add a new language and translate your app, do the following in Service Studio
 
     </div>
 
-3. In the translations editor, select the **Translate** option in the behavior list to see all text that needs translation.
+1. In the translations editor, select the **Translate** option in the behavior list to see all text that needs translation.
 
     ![Screenshot displaying text that needs translation in the Service Studio translations editor](images/show-translatable-text-ss.png "Translatable Text in Service Studio")
 
     See [Translating with the translation editor](translation-editor.md) for more information on how to use the editor.
 
-4. Translate the text in the **Translation in (language code)** column. Click **Done** when you are finished.
+1. Translate the text in the **Translation in (language code)** column. Click **Done** when you are finished.
 
     ![Screenshot of the translation editor in Service Studio with a column for entering translations](images/enter-translation-ss.png "Entering Translations in Service Studio")
     
@@ -74,13 +74,13 @@ A language switcher lets your users change the language of the app. To create a 
 
     ![Screenshot showing a Link widget with a language name in Service Studio](images/link-with-language-name-ss.png "Link Widget with Language Name")
 
-    The example shows how to use the Link widget to change the app language. You can create the same action with other widgets, including Button and Dropdown.
+    The example shows how to use the **Link** widget to change the app language. You can create the same action with other widgets, including **Button** and **Dropdown**.
 
-2. Select the Link widget to view its properties. In the **On Click** list, select **New Client Action**. New Client Action opens for editing.
+1. Select the Link widget to view its properties. In the **On Click** list, select **New Client Action**. New Client Action opens for editing.
 
     ![Screenshot of Service Studio showing how to create a new client action for a language switcher link](images/new-client-action-for-link-ss.png "Creating a New Client Action for a Link")
 
-3. With the logic editor open, go to the **Logic** tab and expand the **(System)** section in **Client Actions**. Locate the **SetCurrentLocale** client action and drag it to the logic flow.
+1. With the logic editor open, go to the **Logic** tab and expand the **(System)** section in **Client Actions**. Locate the **SetCurrentLocale** client action and drag it to the logic flow.
 
     ![Screenshot of the Logic tab in Service Studio with the SetCurrentLocale client action highlighted](images/client-action-in-logic-tab.png "SetCurrentLocale Client Action in Logic Tab")
 
@@ -98,7 +98,9 @@ A language switcher lets your users change the language of the app. To create a 
 
     </div>
 
-4. In the **SetCurrentLocale Client Action**, enter the code of the language (for example, `"pt-BR"`) in the **Locale** property.
+1. In the **SetCurrentLocale Client Action**, enter the code of the language (for example, `"pt-BR"`) in the **Locale** property.
+
+    **Note**: For a locale to persist across client and server requests, you must define it at module level. 
 
     ![Screenshot of the SetCurrentLocale client action in Service Studio with the Locale property field highlighted](images/locale-in-client-action.png "Locale Property in SetCurrentLocale Client Action")
 
@@ -108,7 +110,7 @@ A language switcher lets your users change the language of the app. To create a 
 
     </div>
 
-5. Publish the app and select your link to change the language of the app.
+1. Publish the app and select your link to change the language of the app.
 
 ## Editing existing translations
 
@@ -134,7 +136,7 @@ Follow these steps to translate the text in Static Entities and show the transla
 
     ![Screenshot of the translation editor in Service Studio with a search for Static Entity text](images/static-entity-search-ss.png "Static Entity Search in Translation Editor")
 
-2. While still in the translation editor, enter the translation in the **Translation in (language code)** cell and click **Done**.
+1. While still in the translation editor, enter the translation in the **Translation in (language code)** cell and click **Done**.
 
     ![Screenshot of the translation editor in Service Studio showing the translation process for a Static Entity](images/static-entity-translate-ss.png "Translating Static Entity in Translation Editor")
     
@@ -145,7 +147,7 @@ Follow these steps to translate the text in Static Entities and show the transla
     
     </div>
 
-3. In the logic, to switch the locale, add **Refresh Data** just after the **SetCurrentLocale** action and select the Static Entity.
+1. In the logic, to switch the locale, add **Refresh Data** just after the **SetCurrentLocale** action and select the Static Entity.
 
     ![Screenshot showing the Refresh Data action for a Static Entity in Service Studio](images/static-entity-refresh-ss.png "Refreshing Static Entity Data")
 

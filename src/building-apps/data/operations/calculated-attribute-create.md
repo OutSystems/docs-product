@@ -25,6 +25,12 @@ There are situations when the data fetched from the database isn't enough and yo
 1. Open the attribute menu and select **Edit formula...**
 1. Define the expression to calculate the value.
 
+<div class="info" markdown="1">
+
+You can also calculate new attributes based on other calculated attributes.
+
+</div>
+
 ## Example
 
 StoreApp, a Reactive Web App to check the products in a store, has a screen to list products.

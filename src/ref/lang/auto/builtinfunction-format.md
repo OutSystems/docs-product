@@ -133,7 +133,7 @@ The Decimal value to be formatted.
 
 decimal_digits
 :    Type: Integer. Mandatory.  
-The number of decimal digitis.
+The number of decimal digits.
 
 decimal_separator
 :    Type: Text. Mandatory.  

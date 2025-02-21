@@ -93,7 +93,7 @@ To prevent this issue, you can either disable the list virtualization or fetch a
 <td>Set to Custom to define a custom HTML tag to be used by the widget in runtime. Default mode sets tag as div.</td>
 <td>Yes</td>
 <td>Default</td>
-<td></td>
+<td> Setting the Mode property to Custom provides you with flexibility in styling and layout, giving you more control over how each item is presented. It allows you to choose the rendering mode that best suits your needs and presentation preferences for the list</td>
 </tr>
 <tr>
 <td title="Tag">Tag</td>

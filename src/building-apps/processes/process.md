@@ -62,6 +62,11 @@ When a process is launched a process instance is created and executed starting a
 
 If you have a cycle in your process flow, each time the same process activity is found a new instance is created and executed.
 
+<div class= "info" markdown ="1">
+
+You should use cycles in processes with caution to avoid creating too many activity instances. There is a limit of 10000 activity instances per process, for performance and scalability reasons. Exceeding the limit suspends the process.
+</div>
+
 You may add business logic to validate your process instance execution, for example, when the process is launched, to validate whether the process instance can be executed.
 
 ### Process Activities Life Cycle

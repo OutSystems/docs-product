@@ -129,7 +129,7 @@ For example, to order search results by customer name when searching for records
 ![Screenshot illustrating an example of basic ordering setup in OutSystems Integration Builder](images/basicorderby-example-ss.png "Example of Basic OrderBy in Integration Builder")
 
 <div class="info" markdown="1">
-    
+
 The ACustomersAttributes Static Entity is available in the **library module** of the integration. By default, the name of this module has a "_DRV" suffix.
 
 The SortDirection Static Entity is available in the **IntegrationUtils_Lib module**.

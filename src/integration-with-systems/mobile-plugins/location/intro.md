@@ -1,6 +1,6 @@
 ---
 summary: Learn how to integrate GPS capabilities in your applications using the Location Plugin in OutSystems 11 (O11).
-tags:
+tags: location plugin, gps integration, mobile development, outsystems 11, ios permissions
 locale: en-us
 guid: 73ec27db-dfe0-4318-852f-7eb8790ffa7d
 app_type: mobile apps
@@ -8,8 +8,13 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-exte
 platform-version: o11
 coverage-type:
   - none
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
 ---
-
 # Location Plugin
 
 Use the Location Plugin to enable an application to access the GPS capabilities of the user device, like latitude, longitude, and altitude. This plugin works with native mobile apps, progressive web apps (PWAs), and web apps.
@@ -20,6 +25,29 @@ See [Adding plugins](../intro.md#adding-plugins) to learn how to install and ref
 
 </div> 
 
+## Adding necessary permissions (Property List Keys) for Location (iOS only)
+
+To use the Location Plugin on iOS, you should provide descriptions for two property list keys: **NSLocationWhenInUseUsageDescription** and **NSLocationAlwaysAndWhenInUseUsageDescription**.
+
+This can be done by setting two iOS preferences in your app's Extensibility Configurations file, as follows:
+
+```json
+        {
+            "preferences": {
+                "ios": [
+                    {
+                        "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
+                        "value": "This app accesses your location to give you the best restaurants near you."
+                    },
+                    {
+                        "name": "NSLocationWhenInUseUsageDescription",
+                        "value": "This app accesses your location to give you the best restaurants near you."
+                    }
+                ]
+            }
+        }
+```
+
 ## Creating logic to get the device location
 
 The Location Plugin actions are in the **Logic** tab of Service Studio, in **Client Actions** > **LocationPlugin**.
@@ -28,7 +56,7 @@ To prevent errors, it's a best practice to first check if the plugin is availabl
 
 Otherwise, you can use the **GetLocation** action to get the device current location (2). In the **GetLocation** action you can enable the high accuracy mode, define the timeout of the action and set the maximum age (in milliseconds) to use the cached location.
 
-Check if getting device location works by verifying the value of **GetLocation.Success** (3) is **True**. If yes, you can handle the device location data and apply any logic that you want. If **False**, you can show an **Error** to the user.
+Check if getting the device location works by verifying the value of **GetLocation.Success** (3) is **True**. If **True**, you can handle the device location data and apply any logic that you want. If **False**, you can show an **Error** to the user.
 
 ![Flowchart showing the logic to get device location using the Location Plugin in Service Studio](images/logic-to-get-device-location-ss.png "Logic to Get Device Location")
 
@@ -72,9 +100,9 @@ Here is the list of actions you can use to handle the errors. Use these actions 
 | Variable    | Action              | Description                                                                    |
 | ----------- | ------------------- | ------------------------------------------------------------------------------ |
 | IsAvailable | CheckLocationPlugin | True if the Location Plugin is available in the app.                           |
-| Success     | GetLocation         | True if there aren't errors while getting the device location.                 |
-| Success     | WatchPosition       | True if there aren't errors while updating the position in real time.          |
-| Success     | ClearWatch          | True if there aren't errors while stopping updating the position in real time. |
+| Success     | GetLocation         | True if there aren't errors while getting the device position.                 |
+| Success     | WatchPosition       | True if there aren't errors while receiving position updates in real time.          |
+| Success     | ClearWatch          | True if there aren't errors while canceling position updates in real time. |
 
 ![Flowchart demonstrating how to handle errors when using the Location Plugin in Service Studio](images/handling-errors-ss.png "Handling Errors")
 

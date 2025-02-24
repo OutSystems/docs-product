@@ -86,7 +86,9 @@ A language switcher lets your users change the language of the app. To create a 
 
     <div class="info" markdown="1">
 
-    If you can't find the **SetCurrentLocale Client Action**, you need to reference it first. Press **Ctrl+Q** to open the **Manage Dependencies** window and select **(System)**. In the right pane under **Client Actions**, select **SetCurrentLocale** and click **Apply** to confirm. You can now use **SetCurrentLocale Client Action** in your app logic.
+    If you can't find the **SetCurrentLocale Client Action**, you need to reference it first. Press **Ctrl+Q** to open the **Manage Dependencies** window and select **(System)**. In the right pane under **Client Actions**, select **SetCurrentLocale** and click **Apply** to confirm. You can now use **SetCurrentLocale Client Action** in your app logic. 
+    
+    **Note**: **SetCurrentLocale** and **GetCurrentLocale** can only be persisted across client and server actions when that locale is defined in the module.
 
     ![Screenshot showing the SetCurrentLocale client action in the Manage Dependencies window of Service Studio](images/set-current-locale-in-manage-dependencies.png "SetCurrentLocale in Manage Dependencies")
 
@@ -94,7 +96,7 @@ A language switcher lets your users change the language of the app. To create a 
 
     <div class="warning" markdown="1">
 
-    Keep in mind that SetCurrentLocale **Server** Action doesn't work offline. Use **SetCurrentLocale Client Action** whenever possible.
+    Keep in mind that SetCurrentLocale **Server** Action doesn't work offline. Use **SetCurrentLocale Client Action** whenever possible. 
 
     </div>
 

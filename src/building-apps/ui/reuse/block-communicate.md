@@ -32,7 +32,7 @@ When the date changes in the Child block the Parent block needs to be refreshed.
 The following is an overview of the communication between blocks:
 
 1. On the **Child** block, create and trigger an Event to notify the Parent screen or block and pass the necessary data;
-1. On the **Parent** screen or block, handle the event triggered by the Child block and update the input parameters of the TParent block;
+1. On the **Parent** screen or block, handle the event triggered by the Child block and update the input parameters of the Parent block;
 1. Finally, in Reactive Web and Mobile apps, execute logic in the OnParametersChanged event handler on the **Parent** block, if necessary. In Traditional Web apps, explicitly refresh the **Parent** block.
 
 Follow the steps below to implement this communication mechanism.

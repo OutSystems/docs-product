@@ -22,50 +22,50 @@ This article lists the data conversion functions.
 
 |Name|Description|
 |--- |--- |
-|[BooleanToInteger](#booleantointeger--booleantointeger)|Converts Boolean 'b' to an Integer value, either 1 if 'b' is True or 0 if 'b' is False.|
-|[BooleanToText](#booleantotext--booleantotext)|Converts Boolean 'b' to a Text value, either "True" or "False".|
-|[DateTimeToDate](#datetimetodate--datetimetodate)|Converts Date Time 'dt' to a Date value dropping the Time component.|
-|[DateTimeToText](#datetimetotext--datetimetotext)|Converts Date Time 'dt' to a Text value in the format specified in the environment configuration (by default, "yyyy-MM-dd HH:mm:ss").|
-|[DateTimeToTime](#datetimetotime--datetimetotime)|Converts Date Time 'dt' to a Time value dropping the Date component.|
-|[DateToDateTime](#datetodatetime--datetodatetime)|Converts Date 'd' to a Date Time value, adding the Time component (#00:00:00#).|
-|[DateToText](#datetotext--datetotext)|Converts Date 'd' to a Text value in the format specified in the environment configuration (by default, "yyyy-MM-dd").|
-|[DecimalToBoolean](#decimaltoboolean--decimaltoboolean)|Converts Decimal 'd' to a Boolean value. Decimal value of 0.0 is False. Any other value is True.|
-|[DecimalToInteger](#decimaltointeger--decimaltointeger)|Converts Decimal 'd' to an Integer value.In client-side and server-side logic, the function rounds the input using the round half to even method. In Aggregate expressions the function truncates to the integer part of the input.To check if the conversion is possible you can use the DecimalToIntegerValidate function.|
-|[DecimalToIntegerValidate](#decimaltointegervalidate--decimaltointegervalidate)|Returns true if Decimal 'd' can be converted to an Integer value.|
-|[DecimalToLongInteger](#decimaltolonginteger--decimaltolonginteger)|Converts Decimal 'd' to a Long Integer value.In client-side and server-side logic, the function rounds the input using the round half to even method. In Aggregate expressions the function truncates to the integer part of the input.To check if the conversion is possible you can use the DecimalToLongIntegerValidate function.|
-|[DecimalToLongIntegerValidate](#decimaltolongintegervalidate--decimaltolongintegervalidate)|Returns true if Decimal 'd' can be converted to a Long Integer value.|
-|[DecimalToText](#decimaltotext--decimaltotext)|Converts Decimal 'd' to a Text value.|
-|[LongIntegerToInteger](#longintegertointeger--longintegertointeger)|Converts Long Integer 'l' to an Integer value. If 'l' is outside the boundaries of the Integer values, the function will return the Integer default value. To check if the conversion is possible you can use the LongIntegerToIntegerValidate function.|
-|[LongIntegerToIntegerValidate](#longintegertointegervalidate--longintegertointegervalidate)|Returns true if Long Integer 'l' can be converted to an Integer value.|
-|[LongIntegerToIdentifier](#longintegertoidentifier--longintegertoidentifier)|Converts Long Integer 'l' to a Long Integer Identifier.|
-|[LongIntegerToText](#longintegertotext--longintegertotext)|Converts Long Integer 'l' to a Text value.|
-|[IdentifierToInteger](#identifiertointeger--identifiertointeger)|Converts Identifier 'Id' to an Integer value.|
-|[IdentifierToLongInteger](#identifiertolonginteger--identifiertolonginteger)|Converts Identifier 'Id' to a Long Integer value.|
-|[IdentifierToText](#identifiertotext--identifiertotext)|Converts Identifier 'Id' to a Text value.|
-|[IntegerToBoolean](#integertoboolean--integertoboolean)|Converts Integer 'i' to a Boolean value. Boolean value of 0 is False. Any other value is True.|
-|[IntegerToDecimal](#integertodecimal--integertodecimal)|Converts Integer 'i' to a Decimal value.|
-|[IntegerToIdentifier](#integertoidentifier--integertoidentifier)|Converts Integer 'i' to an Integer Identifier.|
-|[IntegerToText](#integertotext--integertotext)|Converts Integer 'i' to a Text value.|
-|[NullDate](#nulldate--nulldate)|Returns a null Date value.|
-|[NullIdentifier](#nullidentifier--nullidentifier)|Returns a null Identifier valid for Integer and Long Integer Identifiers.|
-|[NullObject](#nullobject--nullobject)|Returns a null Object value.|
-|[NullBinary](#nullbinary--nullbinary)|Returns a null Binary Data value.|
-|[NullTextIdentifier](#nulltextidentifier--nulltextidentifier)|Returns a null Text Identifier.|
-|[TextToDate](#texttodate--texttodate)|Converts Text 't' to a Date value.If 't' can't be converted to a valid Date value, the function will return the Date default value. To check if the conversion is possible you can use the TextToDateValidate function.You should check the limits of the Date data type. You should also ensure that the date you type in the argument complies with the default date format (yyyy-mm-dd, yyyy/mm/dd, and yyyy.mm.dd) or the server's environment configuration. Note that, when using the date format defined in the environment configuration, the function will only accept the separator character defined in that date format. For example, if the environment date format is set to 'DD-MM-YYYY', you cannot use '/' or '.' as separators in 't'.|
-|[TextToDateTime](#texttodatetime--texttodatetime)|Converts Text 't' to a Date Time value.If 't' can't be converted to a valid Date Time value, the function will return a Date Time default value. To check if the conversion is possible you can use the TextToDateTimeValidate function.You should check the limits of the Date Time data type. You should also ensure that the Date Time you type in the argument complies with the default Date Time format (yyyy-mm-dd hh:mm:ss, yyyy/mm/dd hh:mm:ss, and yyyy.mm.dd hh:mm:ss) or the server's environment configuration. Note that, when using the date format defined in the environment configuration, the function will only accept the separator character defined in that date format. For example, if the environment date format is set to 'DD-MM-YYYY', you cannot use '/' or '.' as separators in 't'.|
-|[TextToDateTimeValidate](#texttodatetimevalidate--texttodatetimevalidate)|Returns true if Text 't' can be converted to a Date Time value.|
-|[TextToDateValidate](#texttodatevalidate--texttodatevalidate)|Returns true if Text 't' can be converted to a Date value.|
-|[TextToDecimal](#texttodecimal--texttodecimal)|Converts Text 't' to a Decimal value. The only allowed decimal separator is "." (period).If 't' is outside the boundaries of Decimal values, the function returns the Decimal default value. However, if you use TextToDecimal in an Aggregate and 't' is outside the boundaries of Decimal values, the function throws an exception. To check if the conversion is possible, use the TextToDecimalValidate function.|
-|[TextToDecimalValidate](#texttodecimalvalidate--texttodecimalvalidate)|Returns true if Text 't' can be converted to a Decimal value.|
-|[TextToIdentifier](#texttoidentifier--texttoidentifier)|Converts Text 't' to a Text Identifier.|
-|[TextToInteger](#texttointeger--texttointeger)|Converts Text 't' to an Integer value.If 't' is outside the boundaries of Integer values, the function returns the Integer default value. However, if you use TextToInteger in an Aggregate and 't' is outside the boundaries of Integer values, the function throws an exception. To check if the conversion is possible, use the TextToIntegerValidate function.|
-|[TextToLongInteger](#texttolonginteger--texttolonginteger)|Converts Text 't' to a Long Integer value.If 't' is outside the boundaries of Long Integer values, the function returns the Long Integer default value. However, if you use TextToLongInteger in an Aggregate and 't' is outside the boundaries of Long Integer values, the function throws an exception. To check if the conversion is possible, use the TextToLongIntegerValidate function.|
-|[TextToIntegerValidate](#texttointegervalidate--texttointegervalidate)|Returns true if Text 't' can be converted to an Integer value.|
-|[TextToLongIntegerValidate](#texttolongintegervalidate--texttolongintegervalidate)|Returns true if Text 't' can be converted to a Long Integer value.|
-|[TextToTime](#texttotime--texttotime)|Converts Text 't' to a Time value.If 't' can't be converted to a valid Time value, the function will return the Time default value. To check if the conversion is possible you can use the TextToTimeValidate function.You should check the limits of the Time data type. You should also ensure that the Time you type in the argument complies with the Time format (hh:mm:ss).|
-|[TextToTimeValidate](#texttotimevalidate--texttotimevalidate)|Returns true if Text 't' can be converted to a Time value.|
-|[TimeToText](#timetotext--timetotext)|Converts Time 't' to a Text value in the format "HH:mm:ss".|
-|[ToObject](#toobject--toobject)|Converts expression 'exp' to an Object value.|
+|[BooleanToInteger](#BooleanToInteger)|Converts Boolean 'b' to an Integer value, either 1 if 'b' is True or 0 if 'b' is False.|
+|[BooleanToText](#BooleanToText)|Converts Boolean 'b' to a Text value, either "True" or "False".|
+|[DateTimeToDate](#DateTimeToDate)|Converts Date Time 'dt' to a Date value dropping the Time component.|
+|[DateTimeToText](#DateTimeToText)|Converts Date Time 'dt' to a Text value in the format specified in the environment configuration (by default, "yyyy-MM-dd HH:mm:ss").|
+|[DateTimeToTime](#DateTimeToTime)|Converts Date Time 'dt' to a Time value dropping the Date component.|
+|[DateToDateTime](#DateToDateTime)|Converts Date 'd' to a Date Time value, adding the Time component (#00:00:00#).|
+|[DateToText](#DateToText)|Converts Date 'd' to a Text value in the format specified in the environment configuration (by default, "yyyy-MM-dd").|
+|[DecimalToBoolean](#DecimalToBoolean)|Converts Decimal 'd' to a Boolean value. Decimal value of 0.0 is False. Any other value is True.|
+|[DecimalToInteger](#DecimalToInteger)|Converts Decimal 'd' to an Integer value.In client-side and server-side logic, the function rounds the input using the round half to even method. In Aggregate expressions the function truncates to the integer part of the input.To check if the conversion is possible you can use the DecimalToIntegerValidate function.|
+|[DecimalToIntegerValidate](#DecimalToIntegerValidate)|Returns true if Decimal 'd' can be converted to an Integer value.|
+|[DecimalToLongInteger](#DecimalToLongInteger)|Converts Decimal 'd' to a Long Integer value.In client-side and server-side logic, the function rounds the input using the round half to even method. In Aggregate expressions the function truncates to the integer part of the input.To check if the conversion is possible you can use the DecimalToLongIntegerValidate function.|
+|[DecimalToLongIntegerValidate](#DecimalToLongIntegerValidate)|Returns true if Decimal 'd' can be converted to a Long Integer value.|
+|[DecimalToText](#DecimalToText)|Converts Decimal 'd' to a Text value.|
+|[LongIntegerToInteger](#LongIntegerToInteger)|Converts Long Integer 'l' to an Integer value. If 'l' is outside the boundaries of the Integer values, the function will return the Integer default value. To check if the conversion is possible you can use the LongIntegerToIntegerValidate function.|
+|[LongIntegerToIntegerValidate](#LongIntegerToIntegerValidate)|Returns true if Long Integer 'l' can be converted to an Integer value.|
+|[LongIntegerToIdentifier](#LongIntegerToIntegerValidate)|Converts Long Integer 'l' to a Long Integer Identifier.|
+|[LongIntegerToText](#LongIntegerToText)|Converts Long Integer 'l' to a Text value.|
+|[IdentifierToInteger](#IdentifierToInteger)|Converts Identifier 'Id' to an Integer value.|
+|[IdentifierToLongInteger](#IdentifierToLongInteger)|Converts Identifier 'Id' to a Long Integer value.|
+|[IdentifierToText](#IdentifierToText)|Converts Identifier 'Id' to a Text value.|
+|[IntegerToBoolean](#IntegerToBoolean)|Converts Integer 'i' to a Boolean value. Boolean value of 0 is False. Any other value is True.|
+|[IntegerToDecimal](#IntegerToDecimal)|Converts Integer 'i' to a Decimal value.|
+|[IntegerToIdentifier](#IntegerToIdentifier)|Converts Integer 'i' to an Integer Identifier.|
+|[IntegerToText](#IntegerToText)|Converts Integer 'i' to a Text value.|
+|[NullDate](#NullDate)|Returns a null Date value.|
+|[NullIdentifier](#NullIdentifier)|Returns a null Identifier valid for Integer and Long Integer Identifiers.|
+|[NullObject](#NullObject)|Returns a null Object value.|
+|[NullBinary](#NullBinary)|Returns a null Binary Data value.|
+|[NullTextIdentifier](#NullTextIdentifier)|Returns a null Text Identifier.|
+|[TextToDate](#TextToDate)|Converts Text 't' to a Date value.If 't' can't be converted to a valid Date value, the function will return the Date default value. To check if the conversion is possible you can use the TextToDateValidate function.You should check the limits of the Date data type. You should also ensure that the date you type in the argument complies with the default date format (yyyy-mm-dd, yyyy/mm/dd, and yyyy.mm.dd) or the server's environment configuration. Note that, when using the date format defined in the environment configuration, the function will only accept the separator character defined in that date format. For example, if the environment date format is set to 'DD-MM-YYYY', you cannot use '/' or '.' as separators in 't'.|
+|[TextToDateTime](#TextToDateTime)|Converts Text 't' to a Date Time value.If 't' can't be converted to a valid Date Time value, the function will return a Date Time default value. To check if the conversion is possible you can use the TextToDateTimeValidate function.You should check the limits of the Date Time data type. You should also ensure that the Date Time you type in the argument complies with the default Date Time format (yyyy-mm-dd hh:mm:ss, yyyy/mm/dd hh:mm:ss, and yyyy.mm.dd hh:mm:ss) or the server's environment configuration. Note that, when using the date format defined in the environment configuration, the function will only accept the separator character defined in that date format. For example, if the environment date format is set to 'DD-MM-YYYY', you cannot use '/' or '.' as separators in 't'.|
+|[TextToDateTimeValidate](#TextToDateTimeValidate)|Returns true if Text 't' can be converted to a Date Time value.|
+|[TextToDateValidate](#TextToDateValidate)|Returns true if Text 't' can be converted to a Date value.|
+|[TextToDecimal](#TextToDecimal)|Converts Text 't' to a Decimal value. The only allowed decimal separator is "." (period).If 't' is outside the boundaries of Decimal values, the function returns the Decimal default value. However, if you use TextToDecimal in an Aggregate and 't' is outside the boundaries of Decimal values, the function throws an exception. To check if the conversion is possible, use the TextToDecimalValidate function.|
+|[TextToDecimalValidate](#TextToDecimalValidate)|Returns true if Text 't' can be converted to a Decimal value.|
+|[TextToIdentifier](#TextToIdentifier)|Converts Text 't' to a Text Identifier.|
+|[TextToInteger](#TextToInteger)|Converts Text 't' to an Integer value.If 't' is outside the boundaries of Integer values, the function returns the Integer default value. However, if you use TextToInteger in an Aggregate and 't' is outside the boundaries of Integer values, the function throws an exception. To check if the conversion is possible, use the TextToIntegerValidate function.|
+|[TextToLongInteger](#TextToLongInteger)|Converts Text 't' to a Long Integer value.If 't' is outside the boundaries of Long Integer values, the function returns the Long Integer default value. However, if you use TextToLongInteger in an Aggregate and 't' is outside the boundaries of Long Integer values, the function throws an exception. To check if the conversion is possible, use the TextToLongIntegerValidate function.|
+|[TextToIntegerValidate](#TextToIntegerValidate)|Returns true if Text 't' can be converted to an Integer value.|
+|[TextToLongIntegerValidate](#TextToLongIntegerValidate)|Returns true if Text 't' can be converted to a Long Integer value.|
+|[TextToTime](#TextToTime)|Converts Text 't' to a Time value.If 't' can't be converted to a valid Time value, the function will return the Time default value. To check if the conversion is possible you can use the TextToTimeValidate function.You should check the limits of the Time data type. You should also ensure that the Time you type in the argument complies with the Time format (hh:mm:ss).|
+|[TextToTimeValidate](#TextToTimeValidate)|Returns true if Text 't' can be converted to a Time value.|
+|[TimeToText](#TimeToText)|Converts Time 't' to a Text value in the format "HH:mm:ss".|
+|[ToObject](#ToObject)|Converts expression 'exp' to an Object value.|
 
 ## BooleanToInteger { #BooleanToInteger }
 

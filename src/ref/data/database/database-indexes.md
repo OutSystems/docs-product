@@ -44,7 +44,7 @@ See [Create an Entity Index](<../../../building-apps/data/modeling/index-create.
 
 ## Create indexes through SQL
 
-If you're creating indexes through SQL interface, make sure you **give them a custom prefix**. Here are some examples of queries.
+If you're creating indexes through any other database management tool such as SQL Server Management Studio (SSMS), make sure you **give them a custom prefix**. Here are some examples of queries.
 
 `CREATE UNIQUE INDEX MYINDEX_<internal name> ON <Entity>(<attributes>)`
 

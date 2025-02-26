@@ -42,4 +42,10 @@ The solution is to control the number of rows inside the query:
 
 ![Diagram illustrating how to limit the number of rows fetched in a SQL query](images/limit-rows-sql-diag.png "SQL Query Row Limit Diagram")
 
+<div class="warning" markdown="1">
+
+For SQL databases, make sure to add the `maxrows` query parameter inside parentheses so the value can be an **integer**. If you omit the parentheses, you need to set the query parameter's data type to text and therefore enable **Expand Inline** for the query to execute. Note that enabling **Expand Inline** can make your app vulnerable to [SQL injection](ref-code-patterns.md#sql-injection).
+
+</div>
+
 By changing your queries to limit the number of retrieved rows, you no longer rely on the **&lt;Query&gt;.Count** property to get the correct count of rows complying with the original query conditions and joins. If you need the total number of rows, you must make a separate query to do that count.

@@ -132,7 +132,7 @@ The Migration Assessment Tool setup includes the following steps:
 
 ### Optional - Deploy the Probe to other environments { #probe-other-env }
 
-1. In the LifeTime console, deploy the Migration Assessment Tool Probe from the Development environment to other Environments where you want to also check the ODC-readiness of apps. For example, you may want to deploy the probe to the QA environment, so you can later run the assessment on apps during the app testing phase.
+1. In the LifeTime console, deploy the Migration Assessment Tool Probe from the Development environment to other Environments where you want to also check the ODC-readiness of apps. For example, you may want to deploy the probe to the QA environment, so you can later run the assessment on apps during the app testing phase. Installing extra probes is not only for readiness but also to be able to migrate code and data from those environments.
 
 ### Configure the Migration Assessment Tool { #configure }
 

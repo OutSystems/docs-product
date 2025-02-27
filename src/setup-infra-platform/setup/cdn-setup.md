@@ -89,6 +89,17 @@ The following is a list of the most common static content on OutSystems apps. Ou
 
 ### Cache timeout
 
+<div class="info" markdown="1">
+
+
+Starting from Platform Server 11.30.0, a stale cache prevention mechanism is available, eliminating the need to change the cache timeout. 
+
+This mechanism ensures users always receive the latest version of resources without depending on cache expiration. Since new versions are automatically requested, you can maintain a long cache expiration time, reducing unnecessary origin requests, improving performance, and lowering CDN costs.
+
+Stale cache prevention can be enabled through Factory Configuration, check [Preventing stale cache](stale-cache.md) for more details.
+
+</div>
+
 When using a CDN, you must change the cached timeout on IIS to prevent an outage while pushing new code to production. 
 
 By default, the cached timeout is 30 days. This means that the CDN will refresh the content in 30 days. 

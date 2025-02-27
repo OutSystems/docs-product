@@ -990,6 +990,8 @@
         - href: setup-infra-platform/setup/change-db-authentication.md
         - href: setup-infra-platform/setup/load-balancing-apps/recommended-configs-load-balancing.md
         - href: setup-infra-platform/setup/cdn-setup.md
+        - topics:
+            - href: setup-infra-platform/setup/stale-cache.md
         - href: setup-infra-platform/setup/factory-config.md
         # Cache Invalidation Service
         - href: setup-infra-platform/setup/cache-invalidation/intro.md

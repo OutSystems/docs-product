@@ -88,6 +88,7 @@ These are the patterns that require modification in the O11 apps.
 * [Asset consuming an ODC application Client Action](arch-client-action.md)
 * [Asset consuming an ODC application Server Action](arch-server-action.md)
 * [Asset with outdated or broken dependencies](outdated-or-broken-dependencies.md)
+* [Asset consuming a reference to the Common Plugin](arch-common-plugin.md)
 * [Cannot open module](cannot-open-module.md)
 * [End users with no email](end-user-no-email.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)

@@ -624,6 +624,9 @@
             - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/advanced.md
             - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/troubleshooting-know-issues.md
         - href: deploying-apps/mobile-app-packaging-delivery/compliance-with-third-party-licenses.md
+    - href: deploying-apps/devops/devops-in-outsystems.md
+    - href: deploying-apps/cicd/cicd-in-outsystems.md
+    - href: deploying-apps/configuration-management/configuration-management-in-outsystems.md
 
 # Integration with external systems
 - href: integration-with-systems/intro.md

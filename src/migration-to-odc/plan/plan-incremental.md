@@ -79,14 +79,6 @@ The Early Access Program customers can use the Migration Assessment Tool, a set 
 
 As you prepare your app for the ODC architecture, adapt the O11 apps to make them ODC-compatible and enable a smoother migration to ODC. You need to consider the best practices and that some O11 features are not supported directly in ODC.
 
-<div markdown="1" class="info">
-
-Most O11 plugins use the app Common Plugin. However, mobile plugins are libraries in ODC. Due to the architectural differences between O11 and ODC, it's not possible to migrate O11 apps to ODC libraries. If you want to migrate a plugin from O11 to an ODC library, the O11 plugin needs to be a library.
-
-When preparing your O11 mobile plugins to migrate to ODC, replace the **app** [Common Plugin](https://www.outsystems.com/forge/component-overview/1417/common-plugin-o11) with the [Common Plugin Library](https://www.outsystems.com/forge/component-overview/20521/common-plugin-library-o11). Then, migrate your plugin to an ODC library.
-
-</div>
-
 For more information about how to adapt your apps, refer to [O11 to ODC migration code patterns](../code-patterns/intro.md).
 
 ## Additional resources

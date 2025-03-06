@@ -149,7 +149,7 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 
     ![Screenshot showing the action of dragging the 'Task' entity into a form widget to create a form](images/drag-task-entity-into-form-ss.png "Drag Task Entity into Form")
 
-    Now we will define the logic that runs when the end users press the **Save** button:
+    Service Studio shows an error: "On Click must be set". To fix that, we need to define the logic that runs when the end users press the **Save** button:
 
 1. Double-click an empty area of the **Save** button to define the logic associated with the button. This will create a new screen action named **SaveOnClick**.
 

@@ -72,7 +72,8 @@ The executable and configuration files are located in `C:\Program Files\OutSyste
 |Log|LogServer.exe|LogServer.exe.config|Local System account|
 |Scheduler Service|Scheduler.exe|Scheduler.exe.config|NT Service\OutSystems Scheduler Service|
 
-Note: When using SQL Server as the platform database with Windows Authentication, OutSystems services (OutSystems Deployment Controller Service, OutSystems Deployment Service, OutSystems Scheduler Service) run under the configured Windows account.
+Note: When using SQL Server as the platform database with Windows Authentication, the OutSystems Deployment Controller Service and OutSystems Deployment Service will run under the Windows account configured as Admin in Configuration Tool, and the OutSystems Scheduler Service will run under the one configured as Runtime.
+The Windows account configured as Admin in Configuration Tool will be granted local administrator permission (to deploy new applications and manage the IIS).
 
 The logs of these services are stored in Windows Event Viewer.
 

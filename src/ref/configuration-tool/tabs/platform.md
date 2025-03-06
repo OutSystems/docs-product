@@ -22,4 +22,4 @@ The **Platform** tab allows you to configure the database used by the platform. 
 
 Set the **Database Provider** property with the database you wish to use for OutSystems installation.
 
-![Screenshot of the Platform tab in the Configuration Tool](images/log-tab-ct.png "Platform tab")
+![Screenshot of the Platform tab in the Configuration Tool](images/platform-tab-ct.png "Platform tab")

@@ -14,9 +14,11 @@ coverage-type:
   - remember
 ---
 
-# Credentials Tab
+# Credentials tab
 
 The **Credentials** tab allows you to define or reset the password of the Platform Server admin user.
+
+![Screenshot of the Credentials tab in the Configuration Tool](images/credentials-tab-ct.png "Credentials tab")
 
 ## Platform Server Administrator section
 

@@ -17,9 +17,11 @@ coverage-type:
   - remember
 ---
 
-# Controller Tab
+# Controller tab
 
 In the **Controller** tab you define how front-end servers and the deployment controller server communicate.
+
+![Screenshot of the Controller tab in the Configuration Tool](images/controller-tab-ct.png "Controller tab")
 
 Configuration | Description  | Default value
 --------------|--------------|---------------

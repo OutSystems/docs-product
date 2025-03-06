@@ -15,9 +15,11 @@ coverage-type:
   - remember
 ---
 
-# Session Tab
+# Session tab
 
 The **Session** tab allows you to configure the database used by OutSystems to store the end user persistent sessions.
+
+![Screenshot of the Session tab in the Configuration Tool](images/session-tab-ct.png "Session tab")
 
 ## Database Section (for SQL Server / Azure SQL Database)
 

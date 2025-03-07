@@ -100,7 +100,7 @@ You can enable stale cache prevention in the Factory Configuration. For details
 
 <div class="os-accordion__title">
 
-Fallback option: configure cache timeout in IIS
+### Fallback option: configure cache timeout in IIS
 
 </div>
 

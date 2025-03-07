@@ -17,9 +17,11 @@ coverage-type:
   - remember
 ---
 
-# Cache Tab
+# Cache tab
 
 In the **Cache** tab you define the basic settings for connecting to the Cache Invalidation Service (RabbitMQ) from applications and OutSystems services.
+
+![Screenshot of the Cache tab in the Configuration Tool](images/cache-tab-ct.png "Cache tab")
 
 ## Cache Invalidation Service section
 

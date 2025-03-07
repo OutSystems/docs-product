@@ -20,14 +20,14 @@ coverage-type:
 
 |Name|Description|
 |--- |--- |
-|[GetApplicationServerType](#getapplicationservertype--getapplicationservertype)()|Returns ".Net".|
-|[GetCurrentLocale](#getcurrentlocale--getcurrentlocale)()|Returns the name of the current language locale of the user session. The name of the language locale is used for presentation purposes and follows the RFC 1766 standard format.|
-|[GetDatabaseProvider](#getdatabaseprovider--getdatabaseprovider)()|Returns the type of the Platform Database (SqlServer or Oracle) where the module is running.|
-|[GetUserAgent](#getuseragent--getuseragent)()|Returns the user agent, as indicated by the header of the HTTP message.|
-|[GetOwnerEspaceIdentifier](#getownerespaceidentifier--getownerespaceidentifier)()|Returns the identifier of the module that owns the element that is being processed.|
-|[GetEntryEspaceName](#getentryespacename--getentryespacename)()|Returns the name of the module that is processing the web request.|
-|[GetEntryEspaceId](#getentryespaceid--getentryespaceid)()|Returns the identifier of the module that is processing the web request.|
-|[GetObsoleteTenantId](#getobsoletetenantid--getobsoletetenantid)()|Method to return a fake tenant identifier for single-tenant modules in order to mimic Site.TenantId semantic from the 6.0 version|
+|[GetApplicationServerType](#GetApplicationServerType)()|Returns ".Net".|
+|[GetCurrentLocale](#GetCurrentLocale)()|Returns the name of the current language locale of the user session. The name of the language locale is used for presentation purposes and follows the RFC 1766 standard format.|
+|[GetDatabaseProvider](#GetDatabaseProvider)()|Returns the type of the Platform Database (SqlServer or Oracle) where the module is running.|
+|[GetUserAgent](#GetUserAgent)()|Returns the user agent, as indicated by the header of the HTTP message.|
+|[GetOwnerEspaceIdentifier](#GetOwnerEspaceIdentifier)()|Returns the identifier of the module that owns the element that is being processed.|
+|[GetEntryEspaceName](#GetEntryEspaceName)()|Returns the name of the module that is processing the web request.|
+|[GetEntryEspaceId](#GetEntryEspaceId)()|Returns the identifier of the module that is processing the web request.|
+|[GetObsoleteTenantId](#GetObsoleteTenantId)()|Method to return a fake tenant identifier for single-tenant modules in order to mimic Site.TenantId semantic from the 6.0 version|
 
 ## GetApplicationServerType { #GetApplicationServerType }
 

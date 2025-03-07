@@ -617,7 +617,6 @@
         - href: deploying-apps/mobile-app-packaging-delivery/manage-distribution-options/intro.md
         - href: deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/intro.md
         - topics:
-            - href: deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/android-support-library-versions.md
             - href: deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/androidx.md
         - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/intro.md
         - topics:

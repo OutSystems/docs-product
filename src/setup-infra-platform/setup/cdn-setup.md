@@ -35,7 +35,13 @@ OutSystems advises OutSystems Cloud and self-managed customers using  a CDN for:
 
 * B2C or B2B apps
 
-With a CDN, the hydration process (ability to update the mobile app without downloading a new version from the app store) is served from the CDN instead of front-end servers. This reduces front-end load and helps prevent outages and the need for hardware scale-up. 
+With a CDN, the hydration process (ability to update the mobile app without downloading a new version from the app store) is served from the CDN instead of front-end servers. This reduces front-end load and helps prevent the need for hardware scale-up. 
+
+<div class="info" markdown="1">
+
+If your Platform Server version is earlier than 11.30.0, we advise upgrading to ensure an optimal experience with CDN and stale cache.
+
+</div>
 
 Below is an example of a typical architecture:
 
@@ -84,14 +90,11 @@ OutSystems apps often include the following static files. We recommend caching t
 
 ## Prevent stale cache
 
-Preventing stale cache ensures users always receive the latest updates to your app, avoiding issues caused by outdated or incorrect content being served.
+Starting with Platform Server 11.30.0, a stale cache prevention mechanism ensures users always receive the latest application resources, preventing issues caused by outdated or incorrect content. 
 
+This mechanism automatically fetches new resource versions instead of waiting for caches to expire, allowing you to set long cache expiration times without risking stale content. As a result, it reduces unnecessary origin requests, improves performance, and lowers CDN costs. 
 
-From Platform Server 11.30.0 onward, a stale cache prevention mechanism is available, and we recommend enabling it to avoid manually adjusting the cache timeout.
-
-This mechanism ensures users always get the latest resources without relying on cache expiration. Since new versions are automatically fetched, you can set a long cache expiration time, reducing unnecessary origin requests, improving performance, and lowering CDN costs.
-
-You can enable stale cache prevention in Factory Configuration. For details, see [Preventing stale cache](stale-cache.md).
+You can enable stale cache prevention in the Factory Configuration. For details, see [Preventing stale cache](stale-cache.md).
 
 <div class="os-accordion__item">
 
@@ -103,7 +106,9 @@ Fallback option: configure cache timeout in IIS
 
 <div class="os-accordion__content">
 
-If you can't enable stale cache prevention in Factory Configuration, you must update the cached timeout on IIS to avoid outages when deploying new code. However, using stale cache prevention is the preferred approach.
+If upgrading to Platform Server 11.30.0 or higher isn't possible, you can use a less optimal fallback: configure the cache timeout in IIS. This option isn't available in the OutSystems Cloud.
+
+**Using stale cache prevention is the preferred approach.**
 
 By default, the cached timeout is set to 30 days, meaning the CDN will refresh the content only after that period.  
 

@@ -17,9 +17,11 @@ coverage-type:
   - remember
 ---
 
-# Network Tab
+# Network tab
 
 The **Network** taballows you to clear the current internal network settings, and allows you to define the IP address the front-end server registers in the deployment controller service.
+
+![Screenshot of the Network tab in the Configuration Tool](images/network-tab-ct.png "Network tab")
 
 ## Internal Network section
 

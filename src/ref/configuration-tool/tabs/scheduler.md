@@ -18,9 +18,11 @@ coverage-type:
   - remember
 ---
 
-# Scheduler Tab
+# Scheduler tab
 
 The **Scheduler** tab allows you to configure the OutSystems Scheduler Service.
+
+![Screenshot of the Scheduler tab in the Configuration Tool](images/scheduler-tab-ct.png "Scheduler tab")
 
 Configuration | Description | Default value  
 ---|---|---  

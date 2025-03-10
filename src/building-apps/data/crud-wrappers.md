@@ -23,6 +23,8 @@ OutSystems provides tools that simplify CRUD operations, saving time while ensur
 
 CRUD wrappers are actions that group together the default CRUD entity actions, such as creating or updating a record. They provide a way to add extra checks and rules to these actions, making development more efficient and promoting code reusability. With CRUD wrappers, developers can:
 
+![Diagram showing benefits of CRUD wrappers: validate data integrity, enforce data retention, and centralize error tracking.](images/crud-wrappers-benefits-diag.png "Benefits of CRUD Wrappers")
+
 * Verify the validity of data before saving it, ensuring high data quality.
 * Apply business rules, such as marking records as inactive rather than deleting them, to preserve data history.
 * Centralize error handling and change tracking, making applications easier to maintain and debug.
@@ -40,6 +42,8 @@ The accelerator creates four server action wrappers, which are visible in the Lo
 * `<Entity>Delete`
 * `<Entity>Update`
 
+![Diagram illustrating the creation of public and nonpublic server actions for entities in Service Studio.](images/crud-wrappers-actions-diag.png "CRUD Wrappers Actions Diagram")
+
 These server actions encapsulate the entity actions and include validations to ensure mandatory attributes are filled in. The accelerator only supports entities created in Service Studio and doesn't handle external entities. They also create the necessary input and output parameters. If the entity is public, the server actions are also created as public. Conversely, if the entity is not public, the created entity action wrappers are not public. However, it’s important to note that the accelerator simplifies the initial creation of CRUD wrappers but doesn’t automatically adjust to changes in the data model, like adding or removing attributes or modifying their properties.
 
 
@@ -48,7 +52,6 @@ To use the accelerator, right-click an entity in Service Studio and choose the o
 
 ![Service Studio interface showing the option to create entity action wrappers for the Products entity.](images/crud-wrappers-create-ss.png "Create Entity Actions Wrappers Option")
 
-![Service Studio interface displaying server actions for the Products entity, including create, create or update, delete, and update actions.](images/crud-wrappers-actions-ss.png "Server Actions for Products Entity")
 
 ## Best practices
 

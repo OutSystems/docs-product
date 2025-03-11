@@ -5,7 +5,6 @@
     - href: getting-started/right-app.md
     - href: getting-started/create-reactive-web.md
     - href: getting-started/create-mobile.md
-    - href: getting-started/create-web.md
     #Real world app
     - href: getting-started/create-use-case/intro.md
     - topics:

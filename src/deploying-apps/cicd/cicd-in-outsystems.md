@@ -4,7 +4,7 @@ guid: 51a5ebb6-5a65-41c0-8641-e2bd11799438
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=944:848
+figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3942-809&t=yFA2dg85pciiAiog-1
 tags: ci/cd, application lifecycle management, agile, devops, automation
 audience:
   - full stack developers

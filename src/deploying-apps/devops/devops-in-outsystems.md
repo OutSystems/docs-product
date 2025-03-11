@@ -4,7 +4,7 @@ guid: 17b6007b-d151-40bd-83b3-3e16ec524880
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=943:444
+figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3942-319&t=yFA2dg85pciiAiog-1
 tags: devops, alm integration, software development, legacy modernization, continuous integration/continuous deployment
 audience:
   - full stack developers

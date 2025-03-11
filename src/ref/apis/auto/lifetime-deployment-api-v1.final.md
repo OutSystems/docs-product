@@ -20,7 +20,7 @@ coverage-type:
 
 <div class="warning" markdown="1">
 
-This version of LifeTime API is **deprecated since February 2021**. Use [LifeTime API v2](<lifetime-deployment-api-v2.final.md>) instead.
+This version of LifeTime API has been **deprecated since February 2021** and was removed in LifeTime 11.26.0. Use [LifeTime API v2](<lifetime-deployment-api-v2.final.md>) instead.
 
 </div>
 

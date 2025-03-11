@@ -862,6 +862,7 @@
     #App quality and technical debt
     - href: monitor-and-troubleshoot/manage-tech-debt/intro.md
     - topics:
+        - href: monitor-and-troubleshoot/manage-tech-debt/handling-tech-debt/handling-tech-debt.md
         - href: monitor-and-troubleshoot/manage-tech-debt/how-works.md
         - href: monitor-and-troubleshoot/manage-tech-debt/how-setup.md
         - href: monitor-and-troubleshoot/manage-tech-debt/how-use.md

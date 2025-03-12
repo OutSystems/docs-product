@@ -1036,6 +1036,7 @@
 - topics:
     - href: manage-platform-app-lifecycle/initial-setup-of-an-infrastructure.md
     - href: manage-platform-app-lifecycle/data-protection.md
+    - href: manage-platform-app-lifecycle/clean-up-environment/clean-up-environment.md
     - href: manage-platform-app-lifecycle/configure-send-emails.md
     - href: manage-platform-app-lifecycle/manage-it-teams/intro.md
     - topics:
@@ -1067,8 +1068,12 @@
         - href: manage-platform-app-lifecycle/access-database-paas/temporary-access-database-backup.md
     - href: manage-platform-app-lifecycle/migrate-db-clone.md
     - href: manage-platform-app-lifecycle/database-replica.md   
+    - href: manage-platform-app-lifecycle/database-optimization.md
+    - href: manage-platform-app-lifecycle/best-practices-lifetime-plugins.md
     - href: manage-platform-app-lifecycle/environment-filters.md
     - href: manage-platform-app-lifecycle/maintenance-mode.md
+    - href: manage-platform-app-lifecycle/disk-space-usage-control.md
+    - href: manage-platform-app-lifecycle/best-practices-sql-server.md
 
 # Migration to ODC
 - href: migration-to-odc/migration-intro.md

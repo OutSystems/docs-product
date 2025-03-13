@@ -825,6 +825,12 @@
 # Monitor and troubleshoot
 - href: monitor-and-troubleshoot/intro.md
 - topics:
+    - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/intro.md   
+    - topics:
+        - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/troubleshooting-process.md
+        - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/standard-toolkit.md   
+        - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/extended-toolkit.md   
+        - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/debug-examples.md
     - href: monitor-and-troubleshoot/log-information-in-action-flows.md
     - href: monitor-and-troubleshoot/troubleshoot-service.md
     - href: monitor-and-troubleshoot/trace-executed-queries.md

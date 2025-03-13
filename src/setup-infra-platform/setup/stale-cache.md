@@ -1,16 +1,21 @@
 ---
-summary:
+summary: Prevent stale cache issues in OutSystems 11 (O11) for mobile and reactive web apps, improving performance and cache management in multi-front-end environments.
 locale: en-us
 guid: b251dda9-0aae-4bcd-b33f-972c2ad7fc5e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
-tags: 
+figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=2977-497&t=4Nlh3ezICaWHuIQq-1
+tags: caching, stale cache, performance optimization, mobile apps, reactive web apps
 audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+  - tech leads
+  - infrastructure managers
 outsystems-tools:
+  - platform server
 coverage-type:
 ---
-
 # Preventing stale cache
 
 <div class="info" markdown="1">
@@ -43,7 +48,7 @@ When a CDN or similar caching mechanism is placed between a client and the envir
 
 As for why it is possible to retrieve and cache a previous version of a file, this is due to the fact that while a caching mechanism looks at the entire URL, application servers ignore the hash that comes after the query string (‘?’) when serving static files. This means that, if the URL `http://app.outsystems.com/my-file.js?abc` represents the outdated file request and `http://app.outsystems.com/my-file.js?xyz` the new file request, although each URL would have their own cache entry, the application server interprets both URLs as a request to `my-file.js`.
 
-![Diagram illustrating stale cache with a CDN](images/ProblemStaleCache.png "Stale cache Diagram")  
+![Diagram illustrating stale cache with a CDN](images/stale-cache-problem-diag.png "Stale cache Diagram")  
 
 ## How did we tackle the problem
 
@@ -57,7 +62,7 @@ Should the maximum number of attempts be reached, the application fails to load 
 
 This feature is disabled by default and can be enabled via Factory Configuration, in option **“Enable Client Runtime Filename Versioning”** under the **Publish section** of the **Platform Configurations** tab.
 
-![Diagram illustrating how stale cache with a CDN is prevented](images/SolutionStaleCache.png "Stale cache solution Diagram")  
+![Diagram illustrating how stale cache with a CDN is prevented](images/stale-cache-solution-diag.png "Stale cache solution Diagram")  
 
 ## Caveats
 

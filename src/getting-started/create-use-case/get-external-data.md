@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - get-data-from-external-db
 ---
 
 # Get external data in your app

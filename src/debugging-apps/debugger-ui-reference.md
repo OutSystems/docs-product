@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - remember
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Debugger Tab Reference

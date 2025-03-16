@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - system-events
 ---
 
 # On Application Resume

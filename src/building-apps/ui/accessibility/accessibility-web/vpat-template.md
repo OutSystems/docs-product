@@ -16,6 +16,8 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - accessibility-screen-reader
 ---
 
 # VPAT - Voluntary Product Accessibility Template

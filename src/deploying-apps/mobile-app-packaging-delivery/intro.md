@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - app-distribution
 ---
 
 # Mobile apps packaging and delivery

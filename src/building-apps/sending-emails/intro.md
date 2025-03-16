@@ -14,6 +14,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - how-to-create-emails
 ---
 
 # Sending emails from apps

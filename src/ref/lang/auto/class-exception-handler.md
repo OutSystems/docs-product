@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - how-to-handle-exceptions
 ---
 
 # Exception Handler

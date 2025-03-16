@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - create-it-users-in-lt
 ---
 
 # Create an IT User

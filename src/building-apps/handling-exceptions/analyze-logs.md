@@ -13,6 +13,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - how-to-handle-exceptions
 ---
 
 # Analyze the Logs of Exceptions

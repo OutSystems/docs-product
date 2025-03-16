@@ -12,6 +12,8 @@ outsystems-tools:
   - none
 coverage-type:
   - evaluate
+topic:
+  - data-encryption
 ---
 
 # Secure the Data of your Mobile Apps

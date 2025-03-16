@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - webservice-authentication
 ---
 
 # Configure Web Service Authentication

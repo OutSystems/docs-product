@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - troubleshoot-webservices
 ---
 
 # Troubleshoot a REST API

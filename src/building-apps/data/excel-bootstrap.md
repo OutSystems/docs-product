@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-edit-entities
+  - bootstrap-test-data-excel
 ---
 
 # Bootstrap an Entity Using an Excel File

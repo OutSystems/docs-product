@@ -15,6 +15,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - hotfix-in-qa
+  - deploy-hotfix-production
+  - portback-hotfix
 ---
 
 # Apply a Hotfix

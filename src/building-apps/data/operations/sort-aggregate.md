@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - filter-data
 ---
 
 # Sort Results in an Aggregate

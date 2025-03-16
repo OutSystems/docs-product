@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - bind-data-to-a-ui-element
 ---
 
 # Fetch and display data from an integration

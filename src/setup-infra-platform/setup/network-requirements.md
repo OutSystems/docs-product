@@ -15,6 +15,8 @@ outsystems-tools:
   - configuration tool
 coverage-type:
   - understand
+topic:
+  - download-and-set-up
 ---
 
 # OutSystems network requirements

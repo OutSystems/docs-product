@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - process-decision-patterns
 ---
 
 # Designing Conditional Paths

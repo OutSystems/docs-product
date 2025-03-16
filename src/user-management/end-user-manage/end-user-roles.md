@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - assign-roles
 ---
 
 # Grant and Revoke End User Roles

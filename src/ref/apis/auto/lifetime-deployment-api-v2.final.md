@@ -17,6 +17,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - deployments-api-automation
 ---
 
 # LifeTime API v2

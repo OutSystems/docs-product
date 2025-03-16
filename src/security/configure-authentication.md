@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - built-in-mechanisms
 ---
 
 # Configure app authentication

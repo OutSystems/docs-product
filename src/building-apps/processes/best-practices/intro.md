@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - none
+topic:
+  - scalable-process-best-practices
 ---
 
 # Best Practices for Designing Processes

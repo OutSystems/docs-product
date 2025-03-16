@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - custom-request-response
 ---
 
 # Customize REST API Responses

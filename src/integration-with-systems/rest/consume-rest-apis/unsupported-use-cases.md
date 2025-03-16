@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - unblock
+topic:
+  - consume-refresh-methods
 ---
 
 # Unsupported REST Use Cases

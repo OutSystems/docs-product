@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - consume-refresh-methods
 ---
 
 # Refresh a REST web service

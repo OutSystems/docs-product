@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - screen-events
 ---
 
 # Screen and Block Lifecycle Events

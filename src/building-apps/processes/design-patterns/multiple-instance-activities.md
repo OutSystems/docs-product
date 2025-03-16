@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - evaluate
+topic:
+  - process-decision-patterns
 ---
 
 # Executing Multiple Instance Activities

@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - consume-refresh-methods
 ---
 
 # Mapping REST Data Types to OutSystems Data Types

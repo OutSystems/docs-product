@@ -14,6 +14,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+topic:
+  - deployments-api-automation
 ---
 
 # Create a new Application Version using the LifeTime API

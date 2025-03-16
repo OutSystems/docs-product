@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - chatbots
 ---
 
 # Create advanced logic for more AI functionalities

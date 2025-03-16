@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - remember
+topic:
+  - event-driven-processes
 ---
 
 # Close Wait Action

@@ -15,6 +15,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - translating-apps
 ---
 
 # Multilingual Reactive Web and Mobile Apps

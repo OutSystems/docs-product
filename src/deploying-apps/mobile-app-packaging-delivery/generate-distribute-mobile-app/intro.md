@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - app-distribution
 ---
 
 # Generate and distribute your mobile app

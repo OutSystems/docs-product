@@ -17,6 +17,8 @@ coverage-type:
   - understand
   - apply
   - remember
+topic:
+  - using-cordova-plugins
 ---
 
 # File Plugin

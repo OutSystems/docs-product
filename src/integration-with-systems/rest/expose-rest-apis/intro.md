@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - define-methods
 ---
 
 # Expose REST APIs

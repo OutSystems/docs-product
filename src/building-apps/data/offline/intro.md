@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - local-storage
+  - offline-synch
 ---
 
 # Offline

@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - aggregates
 ---
 
 # Get Distinct Values from the Database

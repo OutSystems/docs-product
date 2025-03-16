@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - agregating-data
 ---
 
 # Aggregate a Column into a Single Value

@@ -16,6 +16,8 @@ coverage-type:
   - remember
   - understand
   - apply
+topic:
+  - deployment-plan
 ---
 
 # Deployment Plans

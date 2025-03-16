@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+topic:
+  - event-driven-processes
 ---
 
 # Start Conditional Start Action

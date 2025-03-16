@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - trigger-processes
+  - event-driven-processes
 ---
 
 # Launch Process Action

@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - edit-data-service-studio
 ---
 
 # Edit data while developing

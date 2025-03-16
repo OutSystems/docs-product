@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - process-decision-patterns
 ---
 
 # Designing Automatic Activities

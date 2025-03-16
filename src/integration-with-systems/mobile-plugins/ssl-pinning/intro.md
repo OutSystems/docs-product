@@ -14,6 +14,8 @@ coverage-type:
   - understand
   - remember
   - apply
+topic:
+  - using-cordova-plugins
 ---
 
 # SSL Pinning Plugin

@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - changing-endpoints
 ---
 
 # Configure a Consumed REST API at Runtime

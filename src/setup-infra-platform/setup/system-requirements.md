@@ -14,6 +14,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - download-and-set-up
 ---
 
 # OutSystems system requirements

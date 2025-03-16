@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - site-properties-settings
 ---
 
 # Use Site Properties to Configure Behaviors at Runtime

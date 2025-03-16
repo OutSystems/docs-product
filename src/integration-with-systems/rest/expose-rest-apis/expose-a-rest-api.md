@@ -16,6 +16,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - remember
+topic:
+  - rest-webservice-data
+  - define-methods
 ---
 
 # Expose a REST API

@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - troubleshoot-webservices
 ---
 
 # Set the logging level of REST and SOAP integrations

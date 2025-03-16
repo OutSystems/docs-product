@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - zero-downtime-deployments
 ---
 
 # Deploy in a Short Deployment Window

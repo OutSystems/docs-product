@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - refactoring
 ---
 
 # Refactor an application

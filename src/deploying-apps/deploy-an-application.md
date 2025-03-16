@@ -14,6 +14,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - deploy-apps-in-lt-portal
+  - track-work-tag-deploy
 ---
 
 # Deploy an Application

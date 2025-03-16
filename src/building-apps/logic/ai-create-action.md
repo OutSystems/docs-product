@@ -15,6 +15,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - client-actions-when-use
 ---
 
 # Create a Client Action with Code Mentor

@@ -16,6 +16,8 @@ coverage-type:
   - understand
   - apply
   - remember
+topic:
+  - manage-roles
 ---
 
 # Create and Use Roles

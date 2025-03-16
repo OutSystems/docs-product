@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - evaluate
+topic:
+  - extend-processes-entities
+  - scalable-process-best-practices
 ---
 
 # Scale Queries over Process Entities

@@ -14,6 +14,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - data-syncronization
+  - offline-synch
 ---
 
 # Read-Only Data

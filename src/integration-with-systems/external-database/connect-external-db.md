@@ -18,6 +18,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - get-data-from-external-db
 ---
 
 # Integrate with an external database using Integration Studio

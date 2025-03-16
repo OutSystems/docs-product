@@ -16,6 +16,8 @@ outsystems-tools:
   - users application
 coverage-type:
   - apply
+topic:
+  - external-auth-mechanisms
 ---
 
 # Configure Active Directory authentication

@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - extend-processes-entities
 ---
 
 # Process Entities Attributes

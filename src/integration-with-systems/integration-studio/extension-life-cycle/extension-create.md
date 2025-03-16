@@ -18,6 +18,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - legacy-systems-integration
+  - custom-code-integration
 ---
 
 # Create an Extension

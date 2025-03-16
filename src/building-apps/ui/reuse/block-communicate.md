@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - adding-a-block
 ---
 
 # Pass Data Between Blocks

@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - error-codes
 ---
 
 # Throw a Custom Error in an Exposed REST API

@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - consume-refresh-methods
+  - webservice-authentication
 ---
 
 # Consume REST APIs

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Public and Personal Areas

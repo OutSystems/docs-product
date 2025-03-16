@@ -15,6 +15,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - chatbots
 ---
 
 # Get started: create an FAQ chatbot for your app

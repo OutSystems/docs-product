@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - customize-app-styles
 ---
 
 # Change the look of widgets with Styles Editor

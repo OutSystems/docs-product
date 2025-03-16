@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - data-encryption
 ---
 
 # Decrypting HIPAA compliant data

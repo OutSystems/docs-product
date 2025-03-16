@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - customize-app-styles
 ---
 
 # Customize the look of your app with Theme Editor

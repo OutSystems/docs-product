@@ -15,6 +15,9 @@ coverage-type:
   - understand
   - apply
   - remember
+topic:
+  - use-sql
+  - query-parameters
 ---
 
 # SQL Queries

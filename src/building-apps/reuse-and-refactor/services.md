@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - soa-and-microservices
+  - service-actions-when-use
 ---
 
 # Use Services to Expose Functionality

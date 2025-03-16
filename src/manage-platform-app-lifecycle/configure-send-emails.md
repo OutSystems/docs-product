@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - how-to-send-emails
 ---
 
 # Configure OutSystems to Send Emails

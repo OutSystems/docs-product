@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - external-auth-mechanisms
 ---
 
 # Configure Microsoft Entra authentication

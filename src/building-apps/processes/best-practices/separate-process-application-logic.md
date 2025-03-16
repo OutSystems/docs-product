@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - scalable-process-best-practices
 ---
 
 # Separate Process Logic from Application Logic

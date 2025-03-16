@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - evaluate
+topic:
+  - scalable-process-best-practices
 ---
 
 # Design Processes with Small Flows

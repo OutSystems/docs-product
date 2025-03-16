@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - process-data-timers
 ---
 
 # Create and Run Timers

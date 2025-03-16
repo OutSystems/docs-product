@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - install-forge-component
 ---
 
 # Use a Forge Component Made by the Community

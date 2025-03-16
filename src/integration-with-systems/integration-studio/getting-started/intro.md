@@ -15,6 +15,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - legacy-systems-integration
+  - custom-code-integration
 ---
 
 # Extend Logic with Your Own Code

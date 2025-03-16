@@ -16,6 +16,8 @@ coverage-type:
   - understand
   - unblock
   - evaluate
+topic:
+  - scope
 ---
 
 # Don't abuse scope information

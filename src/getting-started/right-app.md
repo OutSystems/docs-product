@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - choose-app-type
 ---
 
 # Choose the right app for your project

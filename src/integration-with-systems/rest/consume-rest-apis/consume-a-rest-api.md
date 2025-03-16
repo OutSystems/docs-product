@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - consume-refresh-methods
 ---
 
 # Consume one or more REST API methods

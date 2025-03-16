@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - compound-data
+  - how-to-create-structures
 ---
 
 # Use structures and records to create compound data types

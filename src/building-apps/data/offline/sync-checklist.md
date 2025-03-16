@@ -12,6 +12,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - data-syncronization
+  - offline-synch
 ---
 
 # Offline Sync Checklist

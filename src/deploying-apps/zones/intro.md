@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - selective-deploy-zones
 ---
 
 # Selective Deployment Using Deployment Zones

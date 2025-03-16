@@ -16,6 +16,8 @@ outsystems-tools:
   - architecture dashboard
 coverage-type:
   - understand
+topic:
+  - manage-tech-debt
 ---
 
 # Manage technical debt

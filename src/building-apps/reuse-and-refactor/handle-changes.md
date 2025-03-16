@@ -16,6 +16,8 @@ coverage-type:
   - understand
   - evaluate
   - apply
+topic:
+  - add-module-dependency
 ---
 
 # Handle Changes in Exposed Functionality

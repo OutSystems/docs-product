@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - adding-a-block
+  - ui-elements-events
 ---
 
 # Use Events to Propagate Changes From a Block to the Parent

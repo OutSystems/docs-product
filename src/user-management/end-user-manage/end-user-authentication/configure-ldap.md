@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - external-auth-mechanisms
 ---
 
 # Configure LDAP Authentication

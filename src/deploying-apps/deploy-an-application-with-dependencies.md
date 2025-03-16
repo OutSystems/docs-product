@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - deploy-dependency-management
 ---
 
 # Deploy an application with dependencies

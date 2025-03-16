@@ -14,6 +14,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - unblock
+topic:
+  - add-module-dependency
 ---
 
 # Missing Dependency Warning

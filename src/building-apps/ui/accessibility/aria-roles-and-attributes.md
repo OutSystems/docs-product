@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - design-for-accessibility
+  - accessibility-screen-reader
 ---
 
 # Accessible Rich Internet Applications roles and attributes

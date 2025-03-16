@@ -17,7 +17,13 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - creating-app-from-scratch
+  - publish-an-app
+  - test-share-app-users
+  - add-widget-ui-pattern
 ---
+
 # Create Your First Reactive Web App
 
 <div class="info" markdown="1">

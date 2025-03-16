@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - replace-ui-sample-data
 ---
 
 # Using your data in the UI

@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - process-decision-patterns
 ---
 
 # Designing Parallel Activities

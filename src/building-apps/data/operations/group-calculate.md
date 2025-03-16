@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - agregating-data
 ---
 
 # Calculate Values from Grouped Data

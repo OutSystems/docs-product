@@ -18,6 +18,8 @@ coverage-type:
   - apply
   - remember
   - unblock
+topic:
+  - using-cordova-plugins
 ---
 
 # Barcode Plugin

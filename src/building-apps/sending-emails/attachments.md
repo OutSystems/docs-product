@@ -16,6 +16,8 @@ coverage-type:
   - remember
   - apply
   - understand
+topic:
+  - how-to-create-emails
 ---
 
 # Adding email attachments

@@ -14,6 +14,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+topic:
+  - external-auth-mechanisms
 ---
 
 # Integrated Authentication

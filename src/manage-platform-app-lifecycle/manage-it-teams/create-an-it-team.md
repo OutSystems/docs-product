@@ -14,6 +14,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - create-a-team
 ---
 
 # Create an IT Team

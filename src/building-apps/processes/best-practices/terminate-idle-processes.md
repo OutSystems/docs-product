@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - scalable-process-best-practices
 ---
 
 # Terminate Idle Processes

@@ -16,6 +16,8 @@ coverage-type:
   - remember
   - apply
   - unblock
+topic:
+  - built-in-mechanisms
 ---
 
 # End Users Authentication

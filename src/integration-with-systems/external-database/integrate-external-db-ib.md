@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - get-data-from-external-db
 ---
 
 # Integrate with an external database using Integration Builder

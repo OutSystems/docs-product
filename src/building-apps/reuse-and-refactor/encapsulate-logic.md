@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - how-to-create-an-action
 ---
 
 # Use Actions to Encapsulate Logic

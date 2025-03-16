@@ -13,6 +13,9 @@ outsystems-tools:
   - forge
 coverage-type:
   - none
+topic:
+  - data-syncronization
+  - offline-synch
 ---
 
 # Offline Data Sync Patterns

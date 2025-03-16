@@ -16,6 +16,9 @@ coverage-type:
   - understand
   - remember
   - apply
+topic:
+  - how-roles-work
+  - anonymous
 ---
 
 # User Roles

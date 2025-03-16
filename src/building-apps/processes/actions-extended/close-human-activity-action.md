@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - event-driven-processes
 ---
 
 # Close Human Activity Action

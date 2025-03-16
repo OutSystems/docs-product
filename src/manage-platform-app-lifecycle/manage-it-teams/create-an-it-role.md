@@ -13,6 +13,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - create-a-role
 ---
 
 # Create and Assign Roles

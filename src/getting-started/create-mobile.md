@@ -15,6 +15,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - publish-an-app
+  - test-share-app-users
+  - add-widget-ui-pattern
 ---
 
 # Create Your First Mobile App

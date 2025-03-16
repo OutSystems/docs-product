@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - enforcing-data-integrity
+  - data-relationships
 ---
 
 # Delete Rules

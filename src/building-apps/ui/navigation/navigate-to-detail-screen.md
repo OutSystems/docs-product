@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - navigate-screens
 ---
 
 # Navigate to a Detail Screen

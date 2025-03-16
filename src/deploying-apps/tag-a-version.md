@@ -14,6 +14,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - tag-a-version
 ---
 
 # Tag a Version

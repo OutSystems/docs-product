@@ -13,6 +13,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - assign-team-role
 ---
 
 # Set Up the Permissions in a Team

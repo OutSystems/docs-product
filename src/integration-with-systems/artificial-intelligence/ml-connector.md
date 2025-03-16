@@ -15,6 +15,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - machine-learning
 ---
 
 # Use the Azure ML Connector in your OutSystems applications

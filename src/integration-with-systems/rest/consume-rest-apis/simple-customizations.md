@@ -16,6 +16,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - webservice-authentication
+  - customize-headers
+  - custom-request-response
 ---
 
 # Simple Customizations

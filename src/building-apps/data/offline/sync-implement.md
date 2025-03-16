@@ -13,6 +13,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - offline-synch
 ---
 
 # Implementing Offline Sync

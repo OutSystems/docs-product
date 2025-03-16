@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - assign-a-role-for-an-app
 ---
 
 # Grant Permissions for Specific Applications

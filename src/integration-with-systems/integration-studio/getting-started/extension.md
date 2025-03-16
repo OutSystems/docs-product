@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - legacy-systems-integration
+  - custom-code-integration
 ---
 
 # Extensions

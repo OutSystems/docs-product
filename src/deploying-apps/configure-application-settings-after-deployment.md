@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - config-app-after-deploy
 ---
 
 # Configure application settings after deployment

@@ -15,6 +15,8 @@ outsystems-tools:
   - httprequesthandler
 coverage-type:
   - apply
+topic:
+  - error-codes
 ---
 
 # Change the HTTP Status Code of a REST API

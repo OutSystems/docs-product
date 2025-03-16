@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - unblock
+topic:
+  - validate-app-architecture
 ---
 
 # Code Analysis Patterns

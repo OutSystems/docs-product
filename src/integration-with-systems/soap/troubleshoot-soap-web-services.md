@@ -14,6 +14,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - troubleshoot-webservices
 ---
 
 # Troubleshoot a SOAP Web Service

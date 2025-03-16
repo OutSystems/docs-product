@@ -14,6 +14,9 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+topic:
+  - design-for-accessibility
+  - accessibility-screen-reader
 ---
 
 # Links to additional accessibility resources

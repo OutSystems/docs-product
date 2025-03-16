@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - chatbots
 ---
 
 # Add a chatbot UI block to your app

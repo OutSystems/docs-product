@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - changing-data-with-ui
 ---
 
 # Validate the fields of a form

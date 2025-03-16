@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - document-apis
 ---
 
 # Document an exposed REST API

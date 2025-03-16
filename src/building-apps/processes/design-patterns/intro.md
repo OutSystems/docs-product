@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - none
+topic:
+  - process-decision-patterns
 ---
 
 # Patterns for Designing Processes

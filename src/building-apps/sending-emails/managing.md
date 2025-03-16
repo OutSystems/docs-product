@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - how-to-create-emails
 ---
 
 # Managing emails

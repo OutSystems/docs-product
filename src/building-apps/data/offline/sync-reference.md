@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - offline-synch
 ---
 
 # Sync Framework Reference

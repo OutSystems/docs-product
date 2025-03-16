@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - edit-data-service-studio
 ---
 
 # How to edit the data of an entity in Service Studio

@@ -16,6 +16,8 @@ coverage-type:
   - understand
   - unblock
   - evaluate
+topic:
+  - site-properties-settings
 ---
 
 # Avoid site property updates

@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - reuse-ui
+  - adding-a-block
 ---
 
 # Reuse UI

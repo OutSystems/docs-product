@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - outsystems-overview
+  - download-and-set-up
 ---
 
 # Getting started

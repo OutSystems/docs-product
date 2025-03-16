@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - accessibility-screen-reader
 ---
 
 # Testing and fixing accessibility issues

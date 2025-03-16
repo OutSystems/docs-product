@@ -16,6 +16,9 @@ coverage-type:
   - understand
   - remember
   - apply
+topic:
+  - design-for-accessibility
+  - accessibility-screen-reader
 ---
 
 # Accessibility in OutSystems Traditional Web Applications

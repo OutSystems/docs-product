@@ -14,6 +14,8 @@ outsystems-tools:
   - users application
 coverage-type:
   - apply
+topic:
+  - manage-users
 ---
 
 # Add and Delete End Users

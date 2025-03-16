@@ -16,6 +16,8 @@ coverage-type:
   - understand
   - evaluate
   - apply
+topic:
+  - process-decision-patterns
 ---
 
 # Communicating with a Process

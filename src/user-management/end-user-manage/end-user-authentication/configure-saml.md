@@ -19,6 +19,8 @@ coverage-type:
   - apply
   - remember
   - unblock
+topic:
+  - external-auth-mechanisms
 ---
 
 # Configure SAML 2.0 Authentication

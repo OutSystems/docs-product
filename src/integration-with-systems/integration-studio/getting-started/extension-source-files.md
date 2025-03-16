@@ -14,6 +14,9 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - understand
+topic:
+  - legacy-systems-integration
+  - custom-code-integration
 ---
 
 # Extension Source Files

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - translating-apps
 ---
 
 # Translating the app UI

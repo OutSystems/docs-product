@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Debugging apps

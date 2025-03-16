@@ -16,6 +16,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - built-in-roles
+  - permission-model-in-lt
+  - role-assignment
 ---
 
 # Understand the Permission Model for IT Users

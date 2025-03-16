@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - evaluate
+topic:
+  - aggregates
 ---
 
 # Fetch data using human language

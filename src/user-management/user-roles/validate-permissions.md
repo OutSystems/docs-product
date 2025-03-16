@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - secure-screen
+  - secure-ui-element
 ---
 
 # Validate End User Permissions in the Application

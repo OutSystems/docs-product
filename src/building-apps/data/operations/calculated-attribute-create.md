@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - compound-data
+  - create-edit-entities
 ---
 
 # Create a Calculated Attribute in an Aggregate

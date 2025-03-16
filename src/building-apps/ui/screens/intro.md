@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - create-screen-scratch
+  - screen-template
 ---
 
 # Screen

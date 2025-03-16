@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+topic:
+  - service-studio-overview
 ---
 
 # Service Studio Overview

@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - unblock
   - apply
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Troubleshoot Debugger Connection Issues

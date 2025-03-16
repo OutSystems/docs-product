@@ -15,6 +15,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - client-actions-when-use
+  - server-actions-when-use
+  - server-vs-client-logic
 ---
 
 # Actions in Reactive Web and Mobile Apps

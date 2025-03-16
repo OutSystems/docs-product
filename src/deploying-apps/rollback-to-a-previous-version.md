@@ -14,6 +14,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - rollback-app-version
 ---
 
 # Rollback to a Previous Version

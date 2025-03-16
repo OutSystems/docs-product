@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - creating-a-theme
+  - layouts
 ---
 
 # Themes

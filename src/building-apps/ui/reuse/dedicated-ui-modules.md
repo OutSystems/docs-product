@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - front-end-architecture
+  - reuse-ui
 ---
 
 # Maintain UI in dedicated modules

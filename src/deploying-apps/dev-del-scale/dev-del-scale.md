@@ -15,6 +15,14 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - hotfix-strategy-os
+  - lifecycle-independence-os
+  - progressive-release
+  - autonomous-team-structure
+  - scale-development-strategy
+  - canary-release-toggle
+  - domain-driven-design
 ---
 
 # Development and delivery at scale

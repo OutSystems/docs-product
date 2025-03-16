@@ -14,6 +14,8 @@ outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+topic:
+  - customize-headers
 ---
 
 # Add SOAP header

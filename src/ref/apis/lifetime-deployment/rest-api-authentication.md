@@ -16,6 +16,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+topic:
+  - service-accounts-deploy
 ---
 
 # REST API Authentication

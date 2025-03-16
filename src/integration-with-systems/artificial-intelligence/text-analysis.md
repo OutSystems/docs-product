@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - remember
+topic:
+  - sentiment-analysis
 ---
 
 # Use the AI Language Analysis component in your OutSystems apps

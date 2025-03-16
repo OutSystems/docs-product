@@ -15,6 +15,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - understand
+topic:
+  - chatbots
 ---
 
 # Create AI-powered chatbots 

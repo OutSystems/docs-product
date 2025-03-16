@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - server-vs-client-logic
 ---
 
 # Screen Action

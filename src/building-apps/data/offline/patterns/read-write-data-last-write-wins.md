@@ -13,6 +13,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - data-syncronization
+  - offline-synch
 ---
 
 # Read/Write Data Last Write Wins

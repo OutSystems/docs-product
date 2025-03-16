@@ -13,6 +13,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - it-user-management-in-lt
 ---
 
 # Manage IT Users

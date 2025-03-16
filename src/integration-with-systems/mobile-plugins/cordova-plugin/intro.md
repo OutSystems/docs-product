@@ -15,6 +15,8 @@ coverage-type:
   - understand
   - apply
   - remember
+topic:
+  - wrap-cordova-plugin
 ---
 
 # Using Cordova Plugins

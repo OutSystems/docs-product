@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Watches

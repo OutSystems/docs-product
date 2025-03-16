@@ -15,6 +15,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - server-actions-when-use
+  - server-vs-client-logic
 ---
 
 # Server Action

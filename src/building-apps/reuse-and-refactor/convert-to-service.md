@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - soa-and-microservices
 ---
 
 # Convert to Services

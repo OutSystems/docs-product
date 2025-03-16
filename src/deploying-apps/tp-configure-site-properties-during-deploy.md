@@ -16,6 +16,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - config-app-before-deploy
 ---
 
 # Configure site properties during deployment

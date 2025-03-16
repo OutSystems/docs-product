@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+topic:
+  - error-codes
 ---
 
 # Built-in HTTP Status Codes

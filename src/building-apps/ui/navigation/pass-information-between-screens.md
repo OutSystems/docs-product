@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - unblock
+topic:
+  - navigate-screens
+  - input-parameters
 ---
 
 # Pass Data Between Screens With Input Parameters

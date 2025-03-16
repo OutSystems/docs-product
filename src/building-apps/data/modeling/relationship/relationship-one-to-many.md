@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - data-relationships
 ---
 
 # Create a One-to-Many Relationship

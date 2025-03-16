@@ -16,6 +16,9 @@ coverage-type:
   - understand
   - evaluate
   - apply
+topic:
+  - design-for-accessibility
+  - accessibility-screen-reader
 ---
 
 # Accessibility

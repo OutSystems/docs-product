@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - translating-apps
 ---
 
 # Multilingual Web Applications

@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - layouts
 ---
 
 # Design the Layout of Screens Using Placeholders

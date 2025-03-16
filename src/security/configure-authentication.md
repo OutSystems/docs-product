@@ -44,9 +44,11 @@ The following setting applies to both persistent and session authentication:
 
 * **Cache Time In Minutes** – Number of minutes the authentication information sent by the device is considered valid by the server without the need to fetch it from the database. After this time, the server validates the authentication tokens against the information stored in the database and supplies new authentication tokens. Setting it to 0 disables the authentication cache mechanism.
 
-* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web apps, Mobile Apps, and Native Mobile Apps distributed as Progressive Web apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
+* **Single Sign-On Between App Types** – When enabled, this option allows you to switch between traditional web apps, reactive web apps, mobile apps, and Progressive Web Apps (PWAs) in the same browser without signing in again. However, if you sign in to a native mobile app with the same account,the session is not extended.Logging out from any app logs you out from all devices.
 
-**Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). 
+For example, If you sign in to a traditional web app and then switch to a reactive web app, mobile app, or PWA in the same browser or vice versa, your session continues to remain active and you don't need to sign in again. To enable this setting, you must enable HTTPS in the environment.
+
+To keep the session active, if you remain active in a reactive app, then the session for  traditional web app is not extended. As a result, the traditional web app session expires, requiring you sign in again. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). However, if you remain active in a traditional web app, the session is extended for all reactive apps.
 
 <div class="info" markdown="1">
 

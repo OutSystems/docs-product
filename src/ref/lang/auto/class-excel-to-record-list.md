@@ -22,8 +22,16 @@ coverage-type:
 
 Converts an Excel object to a Record List. Use this logic tool when you need to load data from an Excel file in your app at runtime.
 
+To use Excel To Record List, you need an Entity or Structure that matches the Excel (xlsx) file content you want to import. OutSystems matches the Entity/Structure specified in the **Record Definition** property and the Excel file using one of the following methods:
 
-To use Excel To Record List you need an Entity or Structure that matches the Excel (xlsx) file content you want to import. OutSystems matches the attribute labels of the Entity/Structure specified in the **Record Definition** property with column headings in the Excel file.
+*  **By Column name:** If the number of columns and record attributes differ, it matches column headers to attribute labels.
+*  **By Position:** If the number of columns and record attributes are identical, it maps sequentially, matching the first attribute to the first column, the second attribute to the second column, and so on. As such, ensure that the order and data types of the columns in the Excel file match the order and data types of the attributes in your Entity or Structure.
+
+<div class="info" markdown="1">
+
+Entities' identifier attributes are included in the attribute count.
+
+</div>
 
 Check the following example of an Entity named Address and a valid Excel file containing data to import:
 

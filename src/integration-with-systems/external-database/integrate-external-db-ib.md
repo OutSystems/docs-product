@@ -57,17 +57,14 @@ Once you establish a database connection, you can develop apps in Service Studio
 
 * If you use the [Internal Network configuration](../../security/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup-infra-platform/setup/network-requirements.md#integration-builder).
 
-## Known limitations
+## Known limitations and considerations
 
 * Previous external database extensions created in Integration Studio cannot be edited in Integration Builder.
-
 * External database extensions created in Integration Builder cannot be edited in Integration Studio.
-
 * An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables or collections from different databases, catalogs, or schemas, you must create several integrations.
-
-* It's not possible to define the following fields at attribute level: data types, length, mandatory, autonumber, delete rule, and description.
-
-* It's not possible to manually define identifiers.
+* It's not possible to define the following fields at attribute level: length, mandatory, autonumber, delete rule, and description.
+* It's only possible to change the data type mapping for Text and DateTime attributes. Text attributes can be changed to Currency, Decimal, Email and PhoneNumber. DateTime attributes can be changed to Date and Time.
+* It's only possible to change the Identifier, at the entity level, when the Primary Key is not defined at the external system. Only attributes of type Integer, LongInteger or Text can be selected as Identifier.
 
 ## Process overview
 

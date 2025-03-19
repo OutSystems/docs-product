@@ -64,17 +64,17 @@ To configure Akamai CDN/WAF:
 
            <div class="info" markdown="1">
             
-            Ensure you update the [Cache timeout values in IIS](https://success.outsystems.com/documentation/11/setup_outsystems_infrastructure_and_platform/setting_up_outsystems/using_a_cdn_with_outsystems/#cache-timeout). If you’re an OS Cloud customer open a support ticket ahead of time requesting this change, explaining you’re trying to implement a WAF/CDN.
+            To avoid stale cache issues, make sure you adopt the platform setup recommendations documented [here](https://success.outsystems.com/documentation/11/setup_outsystems_infrastructure_and_platform/setting_up_outsystems/using_a_cdn_with_outsystems/#cache-timeout).
 
            </div>
            
-    1. On Security Settings tab give a name for this configuration and click **Next**.
-    1. On Review and activate tab you can review the applied settings in the previous steps. If you’re happy with the settings click **Activate**.
-    1. On Verify step, perform the hosts files changes and test that your settings are working. Click **Next**.
+    1. On the **Security Settings** tab, give a name for this configuration and click **Next**.
+    1. On the **Review and activate** tab, you can review the applied settings in the previous steps. If you’re happy with the settings click **Activate**.
+    1. On the **Verify** step, perform the host file changes and test that your settings work. Click **Next**.
     1. Change your DNS settings to point your OutSystems environment hostname to Akamai Edge endpoint using a CNAME record. Click **Check Name** and verify that the DNS change got propagated. Click **Exit**.
 1. Test connecting to your OutSystems environment and applications. If you enable your browser Developer Tools and inspect the traffic you’ll notice the traffic going to Akamai endpoints.
 
-At this stage, Akamai will automatically enable some out of the box features for your OutSystems environment, namely:
+At this stage, Akamai will automatically enable some out-of-the-box features for your OutSystems environment, namely:
 
 * IP/Geo Firewall
 * DoS Protection
@@ -89,7 +89,7 @@ To customize the rules on your Akamai WAF, do the following:
 
     This will allow you to edit your security settings without impacting your existing configuration.
 1. Click on the **…** button next to the First Security Policy and click **View Security Policy**.
-1. On the left pane click on **Web Application Firewall**. Here you will see your protections by the attack group. You can also view this list by rule ID.
+1. On the left pane, click on **Web Application Firewall**. Here you will see your protections by the attack group. You can also view this list by rule ID.
 1. Here you will be able to decide what action you want to take place for each attack group type. As an example If I wanted to deny all SQL Injection attack type, I could select Deny in the dropdown:
     ![Screenshot of Akamai WAF rules definition interface showing various attack groups and their corresponding actions.](images/akamai-rules-definition.png "Akamai WAF Rules Definition")
     This option would serve a default 403 response to the client attempting this kind of attack.

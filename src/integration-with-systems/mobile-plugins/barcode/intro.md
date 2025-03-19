@@ -72,6 +72,23 @@ To create the logic to scan for barcodes, follow these steps in Service Studio:
 
 To prevent errors, it's a good practice to first check if the plugin is available using the action **CheckBarcodePlugin**. To confirm the device can read the barcodes, verify that the value of **ScanBarcode.Success** is True. See the [demo app](#demo-app) for the examples.
 
+## (Optional) Setting description for NSCameraUsageDescription (iOS only)
+
+By default, **NSCameraUsageDescription** will be set to "We access your camera to scan barcodes.". If you want to use different description, you can do it by adding an iOS preference to your app's Extensibility Configurations, as follows:
+
+```json
+        {
+            "preferences": {
+                "ios": [
+                    {
+                        "name": "NSCameraUsageDescription",
+                        "value": "This app accesses your camera to scan barcodes and QR codes."
+                    }
+                ]
+            }
+        }
+```
+
 ## Reference
 
 More information about the plugin.
@@ -126,7 +143,7 @@ Here is the list of parameters you can use in the plugin actions.
 | **ScannerFPS**    | **Only applies to PWA/Web**. A direct mapping to HTML5Qr-Code `fps`. This number represents the number of frames per second the scanner reads and thus scans a code. Values over (and including) 1000 are not recommended as they will break the app. |
 | **AndroidScanningLibrary**    | **Only applies to Android**. Defines which Android library to use when scanning - ML Kit or ZXing. |
 
-The Barcode Plugin uses a Cordova plugin. For more information, refer to [cordova-outsystems-barcodescanner](https://github.com/OutSystems/cordova-outsystems-barcodescanner).
+The Barcode Plugin uses a Cordova plugin. For more information, refer to [cordova-outsystems-barcode](https://github.com/OutSystems/cordova-outsystems-barcode).
 
 ## Known issues
 

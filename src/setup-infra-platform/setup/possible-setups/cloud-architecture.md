@@ -28,7 +28,7 @@ Each customer has a **dedicated set of virtual machines and database instances**
 
 OutSystems provides **segregated environments** for development, testing, and production, running on different virtual server instances.
 
-OutSystems Cloud uses a layer of [AWS Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html), acting as firewalls, to control the traffic allowed between the customer environments and the internet. The several Security Groups define a granular access control per environment and per asset.
+OutSystems Cloud uses a layer of [AWS Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html), acting as firewalls, to control the traffic allowed between the customer environments and the internet. The several Security Groups define a granular access control per environment and per asset. When you have infrastructures in different regions, the communication between OutSystems LifeTime and customer environments is securely routed over HTTPS.
 
 Additionally, OutSystems shields each environment using a **Web Application Firewall (WAF)**, which blocks malicious traffic from reaching the running web applications. To ensure that OutSystems keeps full flexibility on the reaction to evolving security threats, maximum availability, and compatibility with OutSystems product evolution, the same WAF's policies apply to all customers.
 

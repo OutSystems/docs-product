@@ -65,9 +65,9 @@ To take full advantage of ODC capabilities, you must first adjust the O11 app ar
 
 As you plan for the O11 app migration, you must:
 
-1. Identify the O11 apps to be migrated to ODC, and depending on the complexity of your infrastructure and your team capacity,  choose either one of the migration journey:
-    One-shot approach
-    O11-ODC app coexistence approach
+1. Identify the O11 apps to be migrated to ODC, and depending on the complexity of your infrastructure and your team capacity,  choose either one of the migration journeys:
+    * One-shot migration approach
+    * O11-ODC app coexistence approach
 
 1. Design the to-be ODC architecture blueprint.
 

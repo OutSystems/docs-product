@@ -1,6 +1,6 @@
 ---
 summary: OutSystems O11 accelerates CRUD operations with CRUD wrappers, enabling efficient data handling and faster development.
-tags: crud operations, data handling, application development, outsystems studio, code reusability
+tags: crud operations, data handling, application development, service studio, code reusability
 guid: 94115dec-64af-45bd-8580-65a6c42f2810
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
@@ -16,7 +16,7 @@ outsystems-tools:
 
 CRUD operations—Create, Read, Update, and Delete—are basic actions that let you work with data in applications. They’re a foundation of application development, making them critical for organizing, storing, and updating information. In OutSystems, CRUD operations are central because they help developers create and manage apps quickly and efficiently.
 
-OutSystems provides tools that simplify CRUD operations, saving time while ensuring consistency and scalability. These tools allow developers to design systems that grow as needed and maintain high standards for functionality. A key feature of these tools is CRUD wrappers. CRUD wrappers let developers add rules, validations, and custom logic to CRUD actions to ensure the application behaves as expected. While manually creating CRUD wrappers can take time, OutSystems Studio’s accelerator feature lets developers create them faster and more easily.
+OutSystems provides tools that simplify CRUD operations, saving time while ensuring consistency and scalability. These tools allow developers to design systems that grow as needed and maintain high standards for functionality. A key feature of these tools is CRUD wrappers. CRUD wrappers let developers add rules, validations, and custom logic to CRUD actions to ensure the application behaves as expected. While manually creating CRUD wrappers can take time, OutSystems Service Studio’s accelerator feature lets developers create them faster and more easily.
 
 
 ## Core concepts of CRUD wrappers in OutSystems

@@ -32,7 +32,7 @@ Applies to OutSystems Cloud infrastructures only.
 
 ## Prerequisites
 
-* You have the [cross region disaster recovery](xrdr.md) feature enabled in at least 1 environment in your infrastructure
+* You have the [cross region disaster recovery](xrdr.md) feature enabled in at least one non-production environment with a dedicated database in your infrastructure.
 
 To perform a cross-region disaster recovery test that replicates a real-world scenario of a failover during a disaster, follow these steps:
 

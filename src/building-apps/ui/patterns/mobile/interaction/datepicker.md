@@ -64,25 +64,15 @@ In this example, the user selects a date from the calendar, the date is saved in
 
     ![Creating a new variable for the Date Picker by selecting the Input widget and accessing the Properties tab](images/datepicker-var-ss.png "Creating a New Variable for Date Picker")
 
-1. Enter a name for the variable (in this example **DateTimeVar**) and select **Date Time** as the **Data Type**.
+1. Enter a name for the variable (in this example **DateTimeVar**) and select **Date Time** as the **Data Type**. This variable stores the date selected by the user.
 
     ![Entering a name for the Date Picker variable and selecting Date Time as the data type](images/datepicker-varname-ss.png "Naming the Date Picker Variable")
-
-1. Right-click your main screen and add another local variable.
-
-    This variable stores the date selected by the user.
-
-    ![Adding another local variable for storing the date selected by the user in the Date Picker](images/datepicker-localvar-ss.png "Adding Another Local Variable for Date Picker")
-
-1. Enter a name for the variable (in this example **DatePicked**) and select **Date Time** as the **Data Type**.
-
-    ![Entering a name for the local variable that stores the selected date and choosing Date Time as the data type](images/datepicker-locvarname-ss.png "Naming the Local Variable for Selected Date")
 
 1. To create an **OnSelect** event for the Date Picker, on the **Properties** tab, from the **Handler** dropdown, select New **Client Action**.
 
     ![Creating an OnSelect event for the Date Picker by selecting New Client Action in the Properties tab](images/datepicker-clientaction-ss.png "Creating OnSelect Event for Date Picker")
 
-1. To access the date selected by the user, create an **Assign** and set the **DatePicked** to **SelectedDateTime**.
+1. To access the date selected by the user, create an **Assign** and set the **DateTimeVar** to **SelectedDateTime**.
 
     ![Adding an assign action to set the DatePicked variable to the SelectedDateTime in the Date Picker](images/datepicker-assign-ss.png "Assigning Variable Value in Date Picker")
     
@@ -120,3 +110,4 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Initialized: Optional| Event triggered after the Date Picker instance is ready.| 
 |OnSelected: Mandatory| Event triggered each time a date is selected.| 
+

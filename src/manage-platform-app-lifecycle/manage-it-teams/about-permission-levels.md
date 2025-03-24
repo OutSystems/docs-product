@@ -22,9 +22,9 @@ topic:
   - role-assignment
 ---
 
-# Understand the Permission Model for IT Users
+# Understand the permission model for IT users
 
-In OutSystems, the policies that grant or revoke permissions to IT users are managed using a role-based permission model. This means that **permissions** to perform operations are configured in **roles** that are then assigned to users.
+In OutSystems, the policies that grant or revoke permissions to [IT users](create-an-it-user.md) are managed using a role-based permission model. This means that **permissions** to perform operations are configured in **roles** that are then assigned to users.
 
 ![Diagram showing the overview of permission levels in OutSystems](images/lt-about-permission-levels-1.png "OutSystems Permission Levels Overview")
 
@@ -57,7 +57,7 @@ Each role is defined by a set of permissions that determine which operations the
 
 Check the details for each permission in the [reference below](#outsystems-permissions-reference).
 
-## Assigning Roles to IT Users
+## Assigning roles to IT users
 
 To achieve the security policy required for your IT users and teams, you might need to combine several roles with different levels of permissions and [assign those roles to the users](create-an-it-role.md#assign-roles-to-users) in a specific way.
 
@@ -95,7 +95,7 @@ Roles assigned directly to a user on specific applications **override the defaul
 
 ![Image illustrating the assignment of roles to IT users for a specific application in OutSystems](images/about-permission-levels-4.png "Application-Specific Role Assignment in OutSystems")
 
-## OutSystems Permissions Reference
+## OutSystems permissions reference
 
 This section describes which operations are available to a user when a specific permission is granted to that user through a role. Those operations depend on how the role is assigned to the user.
 
@@ -105,15 +105,15 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 Full Control |  |
 ---------|----------
-Assigned as **Default Role** | The user can manage the **environment settings**, such as the date format, and external database catalogs and connections. The user can also manage the front-end servers for this environment, zones, email and certificate settings, OutSystems licensing, and see auditing information of the changes made to the infrastructure.
+Assigned as **Default Role** | The user can: <ul><li>Manage the **environment settings**, such as the date format, and external database catalogs and connections.</li><li>Manage the front-end servers for this environment, zones, email and certificate settings, OutSystems licensing, and see auditing information of the changes made to the infrastructure.</li></ul>
 Assigned for a **Team** | The user is set with **Change and Deploy** permission for the **team’s applications**, which is the highest permission that applies to applications.
 Assigned for an **Application** | The user is set with **Change and Deploy** permission for the **application**, which is the highest permission that applies to applications.
 
 Change and Deploy Applications | |
 ---------|----------
-Assigned as **Default Role** | The user can see all the **environment’s applications** in Service Studio, LifeTime and Service Center, as well as change and deploy them. The user can also change in LifeTime and Service Center the settings of all the **environment’s applications** (such as Site Properties).
-Assigned for a **Team** | The user can see the **team’s applications** in Service Studio,  LifeTime and Service Center, as well as change and deploy them. The user can also change in LifeTime and Service Center the settings of the **team’s applications** (such as Site Properties).
-Assigned for an **Application** | The user can see the **application** in Service Studio, LifeTime and Service Center, as well as change and deploy it. The user can also change in LifeTime and Service Center the settings of the **application** (such as Site Properties).
+Assigned as **Default Role** | The user can: <ul><li>See, change, and deploy all the **environment’s applications** in Service Studio, LifeTime and Service Center. </li><li> Change in LifeTime and Service Center the settings of all the **environment’s applications** (such as Site Properties).</li></ul>
+Assigned for a **Team** | The user can: <ul><li>See, change, and deploy the **team’s applications** in Service Studio,  LifeTime and Service Center.</li><li>Change in LifeTime and Service Center the settings of the **team’s applications** (such as Site Properties).</li></ul> 
+Assigned for an **Application** | The user can: <ul><li>See, change, and deploy  the **application** in Service Studio, LifeTime and Service Center.</li><li>Change in LifeTime and Service Center the settings of the **application** (such as Site Properties).</li></ul>  
 
 Open and Debug Applications | |
 ---------|----------
@@ -123,9 +123,9 @@ Assigned for an **Application** | The user can open and debug the **modules of t
 
 Monitor and Add Dependencies * | |
 ---------|----------
-Assigned as **Default Role** | From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of all the **environment’s applications**. The user can also monitor all the **environment’s applications** and the **environment’s performance**.
-Assigned for a **Team** | From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of the **team’s applications**. The user can also monitor the **team’s applications**.
-Assigned for an **Application** | From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of this **application**. The user can also monitor the **application**.
+Assigned as **Default Role** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of all the **environment’s applications**.</li><li>Monitor all the **environment’s applications** and the **environment’s performance**.</li></ul> 
+Assigned for a **Team** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of the **team’s applications**.</li><li>Monitor the **team’s applications**.</li></ul>
+Assigned for an **Application** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of this **application**.</li><li>Monitor the **application**.</li></ul>
 
 (*) **Monitor and Add Dependencies** permission level is available for environments with Platform Server Release Oct.2019 or later.
 
@@ -153,7 +153,7 @@ Assigned for an **Application** | The user can’t see the **application** liste
 
 Create Applications | |
 ---------|----------
-Assigned as **Default Role** | The user can create new applications in the **environment** through Service Studio and Service Center (by uploading and publishing). The user can also create new applications in **any team** through LifeTime.
+Assigned as **Default Role** | The user can: <ul><li>Create new applications in the **environment** through Service Studio and Service Center (by uploading and publishing).</li><li>Create new applications in **any team** through LifeTime.</li></ul>
 Assigned for a **Team** | The user can create new applications in the **team** through LifeTime.
 Assigned for an **Application** | Not applicable.
 
@@ -167,18 +167,18 @@ Assigned for an **Application** | Not applicable.
 
 Manage Users and Roles | (applies only to OutSystems Cloud)
 ---------|----------
-Assigned as **Default Role** | The user can add, edit and remove IT users, roles and teams. The user can also turn on/off features in Technical Preview. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".
+Assigned as **Default Role** | The user can: <ul><li>Add, edit and remove IT users, roles and teams.</li><li>Turn on/off features in Technical Preview.</li></ul>  Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".
 Assigned for a **Team** | Not applicable.
 Assigned for an **Application** | Not applicable.
 
 Manage Infrastructure and Users | (applies only to self-managed infrastructures)
 ---------|----------
-Assigned as **Default Role** | The user can add, edit, remove and switch infrastructure environments, as well as turn on/off features in Technical Preview. The user can also add, edit and remove IT users, roles and teams. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".
+Assigned as **Default Role** | The user can: <ul><li>Add, edit, remove and switch infrastructure environments.</li><li>Turn on/off features in Technical Preview.</li><li>Add, edit and remove IT users, roles and teams.</li></ul>   Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".
 Assigned for a **Team** | Not applicable.
 Assigned for an **Application** | Not applicable.
 
 Manage Teams and Application Roles | |
 ---------|----------
-Assigned as **Default Role** |The user can add and remove IT users from all the **environment’s teams**, as well as grant and revoke roles to IT users for all the **environment’s applications** (the user's role must have higher permission levels for the environments than the role being granted). The user can also edit all the **environment’s teams** and access the audit logs.
-Assigned for a **Team** | The user can add and remove IT users from the **team**, as well as grant and revoke roles to IT users for the **team’s applications** (the user's role must have higher permission levels for the environments than the role being granted). The user can also edit the **team** and access the team's audit logs.
-Assigned for an **Application** | The user can grant and revoke roles to IT users for the **application** (the user's role must have higher permission levels for the environments than the role being granted). The user can also access the application's audit logs.
+Assigned as **Default Role** |The user can: <ul><li>Add and remove IT users from all the **environment’s teams**.</li><li>Grant and revoke roles to IT users for all the **environment’s applications** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Edit all the **environment’s teams** and access the audit logs.</li></ul>  
+Assigned for a **Team** | The user can: <ul><li>Add and remove IT users from the **team**.</li><li>Grant and revoke roles to IT users for the **team’s applications** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Edit the **team** and access the team's audit logs.</li></ul>
+Assigned for an **Application** | The user can: <ul><li>Grant and revoke roles to IT users for the **application** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Access the application's audit logs.</li></ul>  

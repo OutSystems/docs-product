@@ -99,6 +99,12 @@ delete from ossys_Parameter where name = 'OutSystems.IdentityService.LoginClient
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.LoginClient.WebClientId';
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.Scopes';
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.ServiceUrl';
+delete from ossys_Parameter where name = 'OutSystems.Remoting.AuthenticationKey';
+delete from ossys_Parameter where name = 'OutSystems.Remoting.HashKey';
+delete from ossys_Parameter where name = 'OutSystems.SiteProperties.EncryptionKey'
+delete from ossys_Parameter where name = 'OutSystems.LifeTime.ServiceAccountsEncryptionKey'
+delete from ossys_Parameter where name = 'OutSystems.LifeTime.SitePropertiesEncryptionKey'
+delete from ossys_Parameter where name = 'PlatformServices.REST.AuthenticationKey'
 ```
 
 #### Clean up the configuration of mobile apps

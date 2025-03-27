@@ -629,6 +629,7 @@
 # Integration with external systems
 - href: integration-with-systems/intro.md
 - topics:
+    - href: integration-with-systems/integrate-ecosystem.md
     #AI
     - href: integration-with-systems/artificial-intelligence/intro.md
     - topics:

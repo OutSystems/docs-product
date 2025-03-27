@@ -23,7 +23,6 @@ coverage-type:
 Most of the functionality provided by O11 system elements is available in ODC, except for functionality that either doesn't work with the cloud-native architecture of ODC or that relates to functionality not yet supported in ODC.
 
 System elements include:
-
 * [System actions](../../ref/apis/auto/system-actions.final.md) or actions of other [OutSystem APIs](../../ref/apis/intro.md) 
 * [Built-in functions](../../ref/lang/auto/builtinfunctions.md)
 * [System Entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel)
@@ -43,7 +42,6 @@ Depending on the scenario, do one of the following:
   * If the functionality of the system element [isn't available in ODC](#not-available), revisit your code since it no longer has access to these O11 functionalities.
 
 The following sections list:
-
 * [Functionality available in ODC without changes](#no-changes)
 * [Functionality available in ODC with changes](#changes)
 * [Functionality not available in ODC](#not-available)

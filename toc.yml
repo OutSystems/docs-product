@@ -19,6 +19,7 @@
 - topics:
     - href: onboarding/dev-cheat-sheet.md
     - href: onboarding/os-language-concepts.md
+    - href: onboarding/outsystems-platform-best-practices.md
 # Building apps
 - href: building-apps/intro.md
 - topics:
@@ -530,6 +531,8 @@
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseServices_API.final.md
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseConfigurations_API.final.md
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseProcessConfigurations_API.final.md
+    # Mobile best practices
+    - href: building-apps/mobile-best-practices/mobile-best-practices.md
 # Debugging apps
 - href: debugging-apps/intro.md
 - topics:

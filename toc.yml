@@ -418,6 +418,7 @@
             - href: building-apps/processes/best-practices/scale-queries.md
         - href: building-apps/processes/reseed-bpt-tables.md
         - href: building-apps/processes/light-process.md
+        - href: building-apps/processes/reference-bpmn/notation-bpmn.md
     #Sending emails
     - href: building-apps/sending-emails/intro.md
     - topics:

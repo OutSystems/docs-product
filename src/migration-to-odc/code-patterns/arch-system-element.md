@@ -23,6 +23,7 @@ coverage-type:
 Most of the functionality provided by O11 system elements is available in ODC, except for functionality that either doesn't work with the cloud-native architecture of ODC or that relates to functionality not yet supported in ODC.
 
 System elements include:
+
 * [System actions](../../ref/apis/auto/system-actions.final.md) or actions of other [OutSystem APIs](../../ref/apis/intro.md) 
 * [Built-in functions](../../ref/lang/auto/builtinfunctions.md)
 * [System Entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel)
@@ -42,6 +43,7 @@ Depending on the scenario, do one of the following:
   * If the functionality of the system element [isn't available in ODC](#not-available), revisit your code since it no longer has access to these O11 functionalities.
 
 The following sections list:
+
 * [Functionality available in ODC without changes](#no-changes)
 * [Functionality available in ODC with changes](#changes)
 * [Functionality not available in ODC](#not-available)
@@ -160,13 +162,11 @@ The following actions were removed or changed. You can use the manual transforma
 The following list of actions in the RequestHandler extension require transformation.
 
 * **GetRawURL**: Replace with **GetRelativeURL** from the URL library, and enter the respective URL as input. You may need to call Request_GetUrl.
-* **URLEncode**: Replace with EncodeURL (part of the URL library)
+* **URLEncode**: Replace with EncodeURL (part of the URL library).
 * **PostRequest_AddBinaryArgument**: This transformation requires you to:
-  
-1. Create a Server Action with the same signature as PostRequest_AddBinaryArgument.
-1. Convert the **ArgumentsIn** and **Value** input parameters to Text using BinaryDataToText (BinaryData Library).
-1. Assign the ArgumentsOut to **If(Length(BinaryDataToTextArgumentsIn.Text) = 0, Name + "=" + BinaryDataToTextValue.Text, BinaryDataToTextArgumentsIn.Text + "&" + Name + "=" + BinaryDataToTextValue.Text)** and convert it to binary using the TextToBinaryData (BinaryData Library).
-
+    1. Create a Server Action with the same signature as PostRequest_AddBinaryArgument.
+    1. Convert the **ArgumentsIn** and **Value** input parameters to Text using BinaryDataToText (BinaryData Library).
+    1. Assign the ArgumentsOut to **If(Length(BinaryDataToTextArgumentsIn.Text) = 0, Name + "=" + BinaryDataToTextValue.Text, BinaryDataToTextArgumentsIn.Text + "&" + Name + "=" + BinaryDataToTextValue.Text)** and convert it to binary using the TextToBinaryData (BinaryData Library).
 * **Request_SUbmit**: Replace with REST Consume (POST request). Adapt the app logic taking into account that the REST Consume action returns only the Response with the respective type instead of TextContent, BinaryContent and BinaryContentType returned by PostRequest_Submit.
 
 #### PlatformRuntime_AppLogInfo
@@ -239,7 +239,50 @@ Under Text category, you can't use **Replace** built-in function inside an aggre
 
 Under Math category, you can't use **Round** built-in function inside an aggregate.
 
-## System Elements not available in ODC { #not-available }
+### System actions available in ODC with changes { #system-actions-available }
+
+The following system actions are mapped to similar functionality in ODC:
+
+<div class="info" markdown="1">
+
+If you are only preparing your code for the migration, at present, OutSystems recommends not making any changes to O11 BPTs. OutSystems is working on automating the migration capabilities to map existing O11 BPTs functionality to ODC Workflows.
+
+</div>
+
+* **ActivityOpen:** mapped to **HumanActivityOpen**
+* **ActivityReset:** mapped to **HumanActivityRelease**
+
+### System entities available in ODC with changes { #system-entities-available }
+
+In ODC, system entities are read-only views with no entity actions available.
+
+#### User system entity { #user-entity }
+
+In ODC, the **User** system entity is available as a cache with a simpler field structure when compared to the O11 User entity. If there's a dependency to this entity, check that your code works properly, as some attributes aren't available.
+
+#### Processes system entities { #bpt-entities }
+
+In ODC, business processes are available as [workflows](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/about_business_processes/workflows_in_odc/).
+
+<div class="info" markdown="1">
+
+If you are only preparing your code for the migration, at present, OutSystems recommends not making any changes to O11 BPTs. OutSystems is working on automating the migration capabilities to map existing O11 BPTs functionality to ODC Workflows.
+
+</div>
+
+The table below describes how the functionality available through the [Processes API](../../ref/apis/processes-api.md) entities is mapped in [ODC workflows](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/about_business_processes/workflows_in_odc/).
+
+| O11 Processes API Entity | Mapping in ODC workflows |
+|-----------------------------|-------------------------------|
+| Activity | ActivityInstance |
+| Activity_Definition | ActivityDefinition |
+| Activity_Kind | ActivityKind |
+| Activity_Status | ActivityStatus |
+| Process | ProcessInstance |
+| Process_Definition | ProcessDefinition |
+| Process_Status | ProcessStatus |
+
+## Functionality not available in ODC { #not-available }
 
 ### System extension actions incompatible with ODC Architecture
 
@@ -313,9 +356,23 @@ The following actions were deleted because ODC doesn't support SOAP.
 * SetWebReferenceURL
 * SetWebServiceSoapHeaders
 
+#### EPA_Taskbox API
+
+The following actions were deleted because ODC doesn't support Embedded Process Automation (EPA).
+
+* API_GetActivities
+* API_GetActivityGuidanceHTML
+* API_GetActivityPagination
+* API_GetActivityVisualization
+* API_GetDynamicHtml \[DEPRECATED]
+* API_GetNewOpenActivity
+* API_GetStaticHtml \[DEPRECATED]
+* API_MarkActivitiesAsSeen
+* API_SetActivityVisualization
+
 #### EPA_TaskboxExtension
 
-The following actions were deleted it applies only to traditional web apps.
+The following actions were deleted because they apply only to traditional web apps.
 
 * GetActivities
 * GetActivityCount
@@ -432,52 +489,48 @@ The following actions were deleted as ODC doesn't support SAML authentication.
 
 The following section provides details on system actions presented in alphabetical order that aren't available in ODC and why they can't be transformed. Therefore, you must revisit your code and delete these system actions without applying any transformation.
 
-**Action**
+The following actions were deleted because they're incompatible with the [ODC workflows](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/about_business_processes/workflows_in_odc/) implementation:
+
 * ActivityClose
 * ActivityGetUrl
-* ActivityOpen
-* ActivityReset
 * ActivitySchedule
 * ActivitySetGroup
 * ActivitySkip
 * ActivityStart
 * ProcessTerminate
-**Reason**
-ODC doesn't support BPTs.
 
-**Action:**
+The following actions were deleted because they don't apply to ODC, as they are used only on on-prem environments:
+
 * ClientCertificateGetDetails
 * ClientCertificateValue
-**Reason:**
-These actions are used only on on-prem environments and doesn't apply to ODC.
 
-**Action:**
+The following actions were deleted because they are already deprecated in O11:
+
 * Deprecated_Notify
 * Deprecated_NotifyGetMessage
 * Deprecated_NotifyWidget
 * InboundSmsGetDetails
-**Reason:** These actions are already deprecated in O11
 
-**Action:**
+The following actions were deleted because ODC doesn't support integrated authentication:
+
 * IntegratedSecurityCheckRole
 * IntegratedSecurityGetDetails
-**Reason:** ODC doesn't support integrated authentication
 
-**Action:**
+The following actions were deleted because the login and logout logic is different in ODC:
+
 * Login
 * LoginPassword
 * Logout
-**Reason:** The login and logout logic is different in ODC
 
-**Action:**
+The following actions were deleted because ODC doesn't support multi-tenant applications:
+
 * TenantCreate
 * TenantInvalidateCache
 * TenantSwitch
-**Reason:** ODC doesn't support multi-tenant applications.
 
 ### Built-in functions incompatible with ODC Architecture
 
-Following are actions that are no longer available in ODC. You must revisit your code and delete these built-in functions. The information is divided by category and lists the action name and why they can't be transformed.
+Following are built-in functions that are no longer available in ODC. You must revisit your code and delete these built-in functions. The information is divided by category and lists the action name and why they can't be transformed.
 
 #### Environment 
 The following list provides information on built-in actions in the environment category that aren't available in ODC. You can't apply manual transformations. 
@@ -494,3 +547,7 @@ The following list provides information on built-in actions in the URL category 
 
 * **AddPersonalAreaToURLPath:** ODC doesn't support personal areas.
 * **GetPersonalAreaName:** ODC doesn't support personal areas.
+
+### System entities not available in ODC
+
+Only a limited set of [systems entities is available in ODC](#system-entities-available). For any other dependency to a system entity that is not available in ODC, you need to refactor your code to avoid that dependency.

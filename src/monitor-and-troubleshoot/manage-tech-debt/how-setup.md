@@ -88,7 +88,7 @@ Before registering and setting up your infrastructure in AI Mentor Studio, make 
 
 * For self-managed infrastructures, LifeTime must be deployed in a dedicated environment.
 
-* Your code analisys environment uses **Platform Server 11.18.1** or later.
+* Your code analysis environment uses **Platform Server 11.18.1** or later.
 
 * Your LifeTime environment uses **LifeTime Management Console 11.16.1** or later.
 

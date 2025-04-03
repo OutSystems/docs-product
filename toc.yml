@@ -1036,6 +1036,9 @@
             - href: setup-infra-platform/setup/azure/quick-reference.md
             - href: setup-infra-platform/setup/azure/getting-setup-logs.md
             - href: setup-infra-platform/setup/azure/plan-associate.md
+        - href: setup-infra-platform/setup/iis-tuning.md
+        - href: setup-infra-platform/setup/fine-tune-app-pool.md
+        - href: setup-infra-platform/setup/infrastructure-best-practices.md
     # Designing OutSystems Infrastructures
     - href: setup-infra-platform/design-infrastructure/designing-infrastructures.md
     - topics:

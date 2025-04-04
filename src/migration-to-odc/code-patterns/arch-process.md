@@ -1,5 +1,5 @@
 ---
-summary:
+summary: The automatic migration of O11 BPTs to ODC Workflows isn't yet supported.
 locale: en-us
 guid: a2ff3f16-e5b9-4ed0-ad63-341083e96101
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -16,10 +16,9 @@ coverage-type:
   - unblock
   - understand
 ---
-
 # Asset consuming a Process
 
-Currently in ODC. Processes, whether from [BPTs or Light BPTs, aren't available](elem-bpt.md). This means that ODC Assets can't consume Processes.
+Currently, the Migration Kit doesn't support the automatic migration of O11 BPTs to [ODC Workflows](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/about_business_processes/workflows_in_odc/).
 
 ## How to solve
 

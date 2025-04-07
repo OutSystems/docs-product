@@ -100,7 +100,7 @@ For Native Mobile applications, OutSystems UI provides a layout to use on a tabl
 
 ## Adaptive Patterns
 
-Every app is different. The way your app adapts to a specific device is, therefore, unique. To address this, OutSystems UI offers a set of [adaptive patterns](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/PatternOverview). These patterns give you full control of how your application will look on different screen sizes, allowing for different settings for phones and tablets.
+Every app is different. The way your app adapts to a specific device is, therefore, unique. To address this, OutSystems UI offers a set of [adaptive patterns](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/PatternsOverview). These patterns give you full control of how your application will look on different screen sizes, allowing for different settings for phones and tablets.
 
 **Available adaptive patterns:** _Columns2, Columns3, Columns4, Columns5, Columns6, ColumnsMediumLeft, ColumnsMediumRight, ColumnsSmallLeft, ColumnsSmallRight, DisplayOnDevice, Gallery, and MasterDetail._
 

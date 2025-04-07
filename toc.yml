@@ -73,7 +73,7 @@
         - href: building-apps/data/share-client-var-between-app.md
         - href: building-apps/data/resources.md
         - href: building-apps/data/caching.md
-        # Offline
+        # Mobile performance strategies and offline optimization
         - href: building-apps/data/offline/intro.md
         - topics:
             - href: building-apps/data/offline/sync-implement.md
@@ -86,6 +86,7 @@
                 - href: building-apps/data/offline/patterns/read-write-data-with-conflict-detection.md
                 - href: building-apps/data/offline/patterns/read-write-data-one-to-many.md
             - href: building-apps/data/offline/sync-checklist.md
+            - href: building-apps/data/offline/mobile/complex-sync.md
     # Design UI
     - href: building-apps/ui/intro.md
     - topics:

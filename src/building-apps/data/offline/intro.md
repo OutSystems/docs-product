@@ -20,7 +20,7 @@ topic:
   - offline-synch
 ---
 
-# Offline
+# Mobile performance strategies and offline optimization
 
 OutSystems provides the necessary capabilities to implement use cases that require having offline access to some or even all of the functionality in your apps. Offline capabilities are available for apps running on mobile devices and on the browser (if you use PWAs - [Progressive Web Apps](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Distribute_as_a_progressive_web_app)). For example, a field service mobile app to support remote workers that may not always have a connection to the Internet on their mobile devices.
 

@@ -174,10 +174,12 @@ In the OutSystems Cloud, the process of upgrading the Platform Server is handled
         * [OutSystems Charts](https://www.outsystems.com/forge/component-overview/4141/outsystems-charts-o11)
         * [OutSystems Charts Web](https://www.outsystems.com/forge/component-overview/4142/outsystems-charts-web-o11)
         * [OutSystems Maps](https://www.outsystems.com/forge/component-overview/9909/outsystems-maps-o11)
+        * [Single Sign-On Mobile](https://www.outsystems.com/forge/component-overview/14284/single-sign-on-mobile-o11)
         * [OutSystems Templates Mobile](https://www.outsystems.com/forge/component-overview/4148/outsystems-templates-mobile-o11)
         * [OutSystems Templates Reactive](https://www.outsystems.com/forge/component-overview/6335/outsystems-templates-reactive-o11)
         * [OutSystems Screen Templates Traditional](https://www.outsystems.com/forge/component-overview/4146/outsystems-screen-templates-traditional-o11)
         * [OutSystems Sample Data](https://www.outsystems.com/forge/component-overview/4145/outsystems-sample-data-o11)
+   
     
     1. When upgrading to **Platform Server 11.12.0 or later**, you're reponsible for updating those components.
 

@@ -78,7 +78,6 @@ These are the patterns that require modification in the O11 apps.
 * [Asset consuming a reference that is not defined in any mapped ODC asset](arch-not-mapped.md)
 * [Asset consuming a reference to a Traditional Web element](convert-trad-web.md)
 * [Asset consuming a Resource](arch-resource.md)
-* [Asset consuming a Screen in mobile app](arch-mobile-screen.md)
 * [Asset consuming a Script](arch-script.md)
 * [Asset consuming an Application Theme](arch-app-theme.md)
 * [Asset consuming an Image from an Application](arch-image.md)

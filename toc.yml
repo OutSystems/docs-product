@@ -59,6 +59,9 @@
             - href: building-apps/data/operations/calculated-attribute-create.md
             - href: building-apps/data/operations/distinct.md
             - href: building-apps/data/operations/sql.md
+            - href: building-apps/data/operations/best-practices-fetch-data.md
+            - href: building-apps/data/operations/build-dynamic-sql-statements.md
+            - href: building-apps/data/operations/expand-inline-parameters.md
         - href: building-apps/data/hipaa/intro.md
         - topics:
             - href: building-apps/data/hipaa/encrypt-data-hipaa.md

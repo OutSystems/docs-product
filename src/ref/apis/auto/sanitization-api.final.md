@@ -62,7 +62,7 @@ BuildSafe_InClauseIntegerList(ListA) = "2,7"
 BuildSafe_InClauseIntegerList(ListB) = "0"
 ```
 
-For more information, check [Building Dynamic SQL Statements the Right Way](https://success.outsystems.com/Documentation/Best_Practices/Development/Building_Dynamic_SQL_Statements_the_Right_Way).
+For more information, check [Best practices for building dynamic SQL statements](../../../building-apps/data/operations/build-dynamic-sql-statements.md).
 
 ### BuildSafe_InClauseTextList { #BuildSafe_InClauseTextList }
 
@@ -99,7 +99,7 @@ BuildSafe_InClauseTextList(ListA) = "'John Doe','Mary O''Hara'"
 BuildSafe_InClauseTextList(ListB) = "''"
 ```
 
-For more information, check [Building Dynamic SQL Statements the Right Way](https://success.outsystems.com/Documentation/Best_Practices/Development/Building_Dynamic_SQL_Statements_the_Right_Way).
+For more information, check [Best practices for building dynamic SQL statements](../../../building-apps/data/operations/build-dynamic-sql-statements.md).
 
 ### SanitizeHtml { #SanitizeHtml }
 

@@ -169,7 +169,7 @@ If the **Database** property is set as **All**, Service Studio checks the querie
 
 ### Avoid Expand Inline property of query parameters
 
-Expanding inline parameters can be challenging since you need to make sure that any user input is properly escaped. If possible, avoid enabling this property altogether. OutSystems provides ways of implementing common use cases without enabling this property. For more information, see [Avoid expand inline parameters for dynamic values](https://success.outsystems.com/documentation/best_practices/performance_and_monitoring/avoid_expand_inline_parameters_for_dynamic_values/) and [Building dynamic SQL statements the right way](<https://success.outsystems.com/Documentation/Best_Practices/Building_dynamic_SQL_statements_the_right_way>).
+Expanding inline parameters can be challenging since you need to make sure that any user input is properly escaped. If possible, avoid enabling this property altogether. OutSystems provides ways of implementing common use cases without enabling this property. For more information, see [Avoid expand inline parameters for dynamic values](https://success.outsystems.com/documentation/best_practices/performance_and_monitoring/avoid_expand_inline_parameters_for_dynamic_values/) and [Best practices for building dynamic SQL statements](../operations/build-dynamic-sql-statements.md).
 
 ### SLOWSQL log messages
 

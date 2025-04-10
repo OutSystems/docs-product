@@ -39,7 +39,7 @@ You enabled the Expand Inline property for a SQL Query Parameter, meaning that y
 
 Avoid using Expand Inline.
 
-OutSystems provides ways of implementing common use cases without enabling this property. See [Building dynamic SQL statements the right way](<https://success.outsystems.com/Documentation/Best_Practices/Building_dynamic_SQL_statements_the_right_way>) to understand if you can change your implementation to avoid having the Expand Inline property enabled.
+OutSystems provides ways of implementing common use cases without enabling this property. See [Best practices for building dynamic SQL statements](../../../building-apps/data/operations/build-dynamic-sql-statements.md) to understand if you can change your implementation to avoid having the Expand Inline property enabled.
 
 If you **must** use Expand Inline to implement your use case, follow the [recommendations below](#recommendations).
 

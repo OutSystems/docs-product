@@ -92,6 +92,10 @@
     - topics:
         # Screens
         - href: building-apps/ui/screens/intro.md
+        - topics:
+            - href: building-apps/ui/screens/screen-block-lifecycle-events.md
+            - href: building-apps/ui/screens/data-load.md
+            - href: building-apps/ui/screens/data-rendering.md
         # Accessibility
         - href: building-apps/ui/accessibility/intro.md
         - topics:
@@ -367,7 +371,6 @@
         - href: building-apps/logic/ai-create-action.md
         - href: building-apps/logic/actions.md
         - href: building-apps/logic/action-web.md
-        - href: building-apps/logic/screen-block-lifecycle-events.md
         - href: building-apps/logic/list-iterate.md
         - href: building-apps/logic/screen-update-list-items.md
         - href: building-apps/logic/screen-partial-refresh.md

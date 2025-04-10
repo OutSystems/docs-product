@@ -68,7 +68,7 @@ Cause
 :   The rendering of the screen/block only starts after the OnInitialize action finishes. If you access the local storage or execute requests to the server during this stage, you may delay the rendering of the screen/block and make the app look unresponsive.
 
 Recommendation
-:   Move all logic that accesses local storage or server into Screen Aggregates or Data Actions. This way the rendering starts sooner and the fetching of the data or running other server operations runs concurrently, while the screen/block is rendering. For more information, see the [Screen and Block Lifecycle Events](<../../../building-apps/logic/screen-block-lifecycle-events.md>) documentation.
+:   Move all logic that accesses local storage or server into Screen Aggregates or Data Actions. This way the rendering starts sooner and the fetching of the data or running other server operations runs concurrently, while the screen/block is rendering. For more information, see the [Screen and Block Lifecycle Events](<../../../building-apps/ui/screens/screen-block-lifecycle-events.md>) documentation.
 
 ---
 

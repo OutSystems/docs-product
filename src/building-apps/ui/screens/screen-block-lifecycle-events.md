@@ -5,7 +5,7 @@ locale: en-us
 guid: 9205fe77-5e90-402b-ba73-45cdc745515a
 app_type: mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:4
+figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5635-240&t=xcQSQSso5jOwfdlo-1
 audience:
   - mobile developers
   - frontend developers
@@ -78,7 +78,7 @@ After the [Render](<#on-render>) event of the target screen, the transition betw
 
 Every time you change the value of a data element of a Screen or Block, the application automatically reacts to it. Thus, the Render event is triggered and the UI elements that depend on the data automatically update. You don’t have to explicitly refresh the UI elements as you need to do for traditional web apps.
 
-For Screen or Block Aggregates and Data Actions, their new values are automatically updated in the UI elements, but you need to rerun the query explicitly. This can be done using the [Refresh Data](<../../ref/lang/auto/class-refresh-data.md>) flow element in the logic.
+For Screen or Block Aggregates and Data Actions, their new values are automatically updated in the UI elements, but you need to rerun the query explicitly. This can be done using the [Refresh Data](<../../../ref/lang/auto/class-refresh-data.md>) flow element in the logic.
 
 After data is fetched, the [After Fetch](<#on-after-fetch>) event occurs and, since the data returned from the Aggregate or Data Action belongs to the screen or block data and has changed, the Render event also occurs.
 

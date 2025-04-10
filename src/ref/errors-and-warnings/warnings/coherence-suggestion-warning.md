@@ -103,7 +103,7 @@ Cause
 :   When the OnInitialize event occurs, the Aggregates and Data Actions of screens and blocks have not started to fetch data yet. Also, the OnReady event occurs right after the screen is ready and does not wait for the data to be fetched. Accessing Aggregates or Data Actions in OnInitialize or OnReady actions may cause inconsistencies, since the data may not be available by this time.
 
 Recommendation
-:   Move the logic that accesses the fetched data to the [OnAfterFetch](../../../building-apps/logic/screen-block-lifecycle-events.md#on-after-fetch) action of the Aggregate or Data Action. The OnAfterFetch of an Aggregate or Data Action is executed right after the data is fetched.
+:   Move the logic that accesses the fetched data to the [OnAfterFetch](../../../building-apps/ui/screens/screen-block-lifecycle-events.md#on-after-fetch) action of the Aggregate or Data Action. The OnAfterFetch of an Aggregate or Data Action is executed right after the data is fetched.
 
 ---
 
@@ -116,4 +116,4 @@ Cause
 :   Aggregates and Data Actions start to fetch data before the OnReady or the OnRender event occurs. If you assign the variables used in Aggregates and Data Actions in the OnReady or the OnRender actions, their value may not be the expected by the time the data is fetched, which will affect the resulting data.
 
 Recommendation
-:   Execute the Assign of the variables used in Aggregates or Data Actions in the [OnInitialize](../../../building-apps/logic/screen-block-lifecycle-events.md#on-initialize) action. This way you assure the variables are assigned with their values when the data is fetched.
+:   Execute the Assign of the variables used in Aggregates or Data Actions in the [OnInitialize](../../../building-apps/ui/screens/screen-block-lifecycle-events.md#on-initialize) action. This way you assure the variables are assigned with their values when the data is fetched.

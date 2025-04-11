@@ -127,7 +127,7 @@ To enable all the required settings do the following:
 
     </div>
 
-1. In **Session Login Settings**, ensure the **Max. Idle Time** has the same value as the **Session Timeout** for Traditional Web Apps (see [here](../../../building-apps/data/session.md#session-timeout) how to configure the session timeout for Traditional Web Apps).
+1. In **Session Login Settings**, ensure the **Max. Idle Time** has the same value as the **Session Timeout** for Traditional Web Apps (see [here](../../../building-apps/data/session/session.md#session-timeout) how to configure the session timeout for Traditional Web Apps).
 
 1. Click **Save and Apply Settings to the Factory** to apply all the new runtime settings.
 

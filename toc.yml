@@ -59,7 +59,11 @@
             - href: building-apps/data/operations/calculated-attribute-create.md
             - href: building-apps/data/operations/distinct.md
             - href: building-apps/data/operations/sql.md
-            - href: building-apps/data/operations/best-practices-fetch-data.md
+            - href: building-apps/data/operations/best-practices-fetch-data/best-practices-fetch-data.md
+            - topics:
+                - href: building-apps/data/operations/best-practices-fetch-data/limit-records-sql.md
+                - href: building-apps/data/operations/best-practices-fetch-data/record-counting.md
+                - href: building-apps/data/operations/best-practices-fetch-data/optimize-data-preparation.md
             - href: building-apps/data/operations/build-dynamic-sql-statements.md
             - href: building-apps/data/operations/expand-inline-parameters.md
         - href: building-apps/data/hipaa/intro.md
@@ -71,8 +75,12 @@
         - href: building-apps/data/download-file-browser.md
         - href: building-apps/data/excel-bootstrap.md
         - href: building-apps/data/structure-create-use.md
-        - href: building-apps/data/site.md
-        - href: building-apps/data/session.md
+        - href: building-apps/data/site/site.md
+        - topics:
+            - href: building-apps/data/site/avoid-site-property-updates.md
+        - href: building-apps/data/session/session.md
+        - topics:
+            - href: building-apps/data/session/avoid-large-session-variables.md
         - href: building-apps/data/share-client-var-between-app.md
         - href: building-apps/data/resources.md
         - href: building-apps/data/caching.md
@@ -99,6 +107,7 @@
             - href: building-apps/ui/screens/screen-block-lifecycle-events.md
             - href: building-apps/ui/screens/data-load.md
             - href: building-apps/ui/screens/data-rendering.md
+            - href: building-apps/ui/screens/scope-information.md
         # Accessibility
         - href: building-apps/ui/accessibility/intro.md
         - topics:
@@ -140,11 +149,13 @@
         - topics:
             - href: building-apps/ui/image/use-icons.md
             - href: building-apps/ui/image/display-image.md
+            - href: building-apps/ui/image/control-image-size.md
         # Look and Feel
         - href: building-apps/ui/look-feel/intro.md
         - topics:
             - href: building-apps/ui/look-feel/styles-editor.md
             - href: building-apps/ui/look-feel/css.md
+            - href: building-apps/ui/look-feel/avoid-inline-js-and-style.md
             - href: building-apps/ui/look-feel/design-screens-layout.md
             - href: building-apps/ui/look-feel/themes.md
             - href: building-apps/ui/look-feel/theme-editor.md
@@ -890,15 +901,6 @@
             - href: monitor-and-troubleshoot/manage-tech-debt/how-use-developer.md
         - href: monitor-and-troubleshoot/manage-tech-debt/overview-dashboard.md
         - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/ref-code-patterns.md
-        - topics:
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/avoid-large-session-variables.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/avoid-site-property-updates.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/control-image-size.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/limit-records-sql.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/optimize-data-preparation.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/record-counting.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/scope-information.md
         - href: monitor-and-troubleshoot/manage-tech-debt/tech-debt-formula.md
         - href: monitor-and-troubleshoot/manage-tech-debt/change-pattern-impact.md
         - href: monitor-and-troubleshoot/manage-tech-debt/how-enable-autoclass.md

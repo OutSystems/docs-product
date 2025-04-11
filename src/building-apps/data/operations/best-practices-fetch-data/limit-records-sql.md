@@ -5,7 +5,7 @@ locale: en-us
 guid: 1aecc52f-daef-42a3-ab1b-12e31f086dcb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:599
+figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5641-360&t=KasVv5hBxh8CXEO1-1
 audience:
   - backend developers
   - full stack developers
@@ -44,7 +44,7 @@ The solution is to control the number of rows inside the query:
 
 <div class="warning" markdown="1">
 
-For SQL databases, make sure to add the `maxrows` query parameter inside parentheses so the value can be an **integer**. If you omit the parentheses, you need to set the query parameter's data type to text and therefore enable **Expand Inline** for the query to execute. Note that enabling **Expand Inline** can make your app vulnerable to [SQL injection](ref-code-patterns.md#sql-injection).
+For SQL databases, make sure to add the `maxrows` query parameter inside parentheses so the value can be an **integer**. If you omit the parentheses, you need to set the query parameter's data type to text and therefore enable **Expand Inline** for the query to execute. Note that enabling **Expand Inline** can make your app vulnerable to [SQL injection](../../../../ref/errors-and-warnings/warnings/sql-injection-warning.md).
 
 </div>
 

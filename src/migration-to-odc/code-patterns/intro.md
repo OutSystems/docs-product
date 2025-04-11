@@ -21,55 +21,27 @@ coverage-type:
 
 # O11 to ODC migration code patterns
 
-<!--
-
-Index of the files in the patterns dir. Updated manually.
-
-A arch-app-theme.md - Asset consuming an Application Theme
-A arch-block.md - Asset consuming an ODC application Block
-A arch-client-action.md - Asset consuming an ODC application Client Action
-A arch-extension.md - Asset consuming an extension
-A arch-image.md - Asset consuming an Image from an Application
-A arch-local-storage.md - Asset consuming a Local Storage Entity
-A arch-mobile-screen.md - Asset consuming a Screen in mobile app
-A arch-non-read-only-entity.md - Application consuming a non-read only Entity
-A arch-not-mapped.md - Asset consuming a reference that is not defined in any mapped ODC asset
-A arch-priv-struct.md - Asset consuming a private Structure
-A arch-process.md - Asset consuming a Process
-A arch-resource.md - Asset consuming a Resource
-A arch-script.md - Asset consuming a Script
-A arch-server-action.md - Asset consuming an ODC application Server Action
-A arch-system-element.md - Asset consuming O11 system elements
-A cannot-open-module.md - Cannot open module
-A convert-trad-web.md - Asset consuming a reference to a Traditional Web element
-A elem-bpt.md - The Asset cannot contain BPTs
-A elem-soap.md - The Asset cannot contain SOAP
-A end-user-no-email.md - End users with no email
-A outdated-or-broken-dependencies.md - Asset with outdated or broken dependencies
-A refactor-anonymous-registered-roles.md - Refactor anonymous and registered roles
-A refactor-siteproperties.md - Refactor site properties to be ODC-compatible
-
--->
-
-As you plan and prepare your existing O11 app architecture to migrate late to ODC, you must refactor and adjust your O11 implementation for an efficient migration process.
+As you plan and prepare your existing O11 app architecture, there are code patterns that you should adapt or omit in your O11 apps to ensure a smooth migration to ODC.
 
 <div class="info" markdown="1">
 
-The OutSystems Migration Toolkit will provide automation in the future to support some of the following patterns. Until then, manually refactor the apps to proceed with the migration.
+OutSystems is working on migration automation capabilities to support some of these patterns. Until then, you can use this information to help you [plan your migration](../migration-intro.md#stage-1-plan-for-the-o11-app-migration).
 
 </div>
 
-Here are some guidelines to refactor your O11 app.
+If you have access to the Migration Kit, the Migration Assessment Tool identifies these code patterns for you. You need to address these code patterns to achieve a successful migration of your apps.
 
-## General
+You have to follow different approaches, depending on the pattern:
 
-General information about the language elements and architecture in O11 and ODC.
+* [Fix in O11](#fix-in-o11) - Requires changes in the O11 app before proceeding with the migration to ODC.
 
-* [Asset consuming O11 system elements](arch-system-element.md)
+* [Fix in ODC](#fix-in-odc) - Requires changes in the ODC app after the migration.
+
+* [Not yet supported](#not-supported) - ODC doesn't yet support the functionality, or the Migration Kit doesn't yet support the code pattern.
 
 ## Fix in O11
 
-These are the patterns that require modification in the O11 apps.
+These are the patterns that require changes in the O11 apps:
 
 * [Application consuming a non-read only Entity](arch-non-read-only-entity.md)
 * [Asset consuming a Local Storage Entity](arch-local-storage.md)
@@ -90,16 +62,17 @@ These are the patterns that require modification in the O11 apps.
 * [End users with no email](end-user-no-email.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
 
-## Not supported
+## Fix in ODC
 
-These are the patterns about elements that are not supported in ODC when compared to O11.
+These are the patterns that require changes in the ODC apps:
+
+* [Asset consuming O11 system elements](arch-system-element.md)
+* [Asset consuming an extension](arch-extension.md)
+* [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)
+
+## Not yet supported
+
+These are the patterns about elements that aren't supported in ODC, or that the Migration Kit doesn't yet support:
 
 * [The Asset cannot contain BPTs](elem-bpt.md)
 * [The Asset cannot contain SOAP](elem-soap.md)
-
-## Fix in ODC
-
-These are the patterns that require modification in the ODC apps.
-
-* [Asset consuming an extension](arch-extension.md)
-* [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)

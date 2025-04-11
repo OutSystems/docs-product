@@ -450,6 +450,7 @@
     - topics:
         - href: building-apps/handling-exceptions/analyze-logs.md
         - href: building-apps/handling-exceptions/handling-mechanism.md
+        - href: building-apps/handling-exceptions/customizing-unhandled-errors/customizing-outsystems-platform-pages-for-unhandled-errors.md   
     # Use Timers
     - href: building-apps/timers/intro.md
     - topics:

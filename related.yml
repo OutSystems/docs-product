@@ -399,7 +399,7 @@
 # On Session Start
 - ref/lang/auto/class-on-session-start.md:
     # Sessions in Web Applications
-    - building-apps/data/session.md
+    - building-apps/data/session/session.md
 
     
 # ------- Mobile Interfaces -------
@@ -651,7 +651,7 @@
 # Session Variable
 - ref/lang/auto/class-session-variable.md:
     # Sessions in Web Applications
-    - building-apps/data/session.md
+    - building-apps/data/session/session.md
 
 # Event
 - ref/lang/auto/class-event.md:

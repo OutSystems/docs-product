@@ -1,6 +1,6 @@
 ---
 summary: OutSystems 11 (O11) provides a detailed guide on cloning and migrating environment databases for effective application testing.
-tags:
+tags: environment migration, database cloning, application testing, sql server, oracle
 guid: 969DB4B1-51CF-4908-A638-A345D2AB841C
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,8 +8,13 @@ platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=618:342
 coverage-type:
   - apply
+audience:
+  - platform administrators
+  - test engineers
+  - infrastructure managers
+outsystems-tools:
+  - platform server
 ---
-
 # Migrate an environment using a database clone
 
 <div class="info" markdown="1">
@@ -99,6 +104,7 @@ delete from ossys_Parameter where name = 'OutSystems.IdentityService.LoginClient
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.LoginClient.WebClientId';
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.Scopes';
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.ServiceUrl';
+delete from ossys_Parameter where name = 'OutSystems.SiteProperties.EncryptionKey';
 ```
 
 #### Clean up the configuration of mobile apps
@@ -113,6 +119,32 @@ Do the following to clean up the existing mobile apps configuration:
 delete from ossys_App_Mobile_Config;
 delete from ossys_Mobile_Certificate;
 delete from ossys_Mobile_Config_Data;
+```
+
+#### Clean up secret site properties
+
+If the environment you cloned had modules with secret site properties, these must be reconfigured to work in the new environment. Because secret site properties are encrypted on a per-environment basis (i.e. different environments have different secret site property encryption keys), their values cannot be decrypted in the new environment and must be reassigned after the migration. However, before reassigning the values, the following query needs to be executed to reset all secret site properties to their default values.
+
+* Open SQL Server Management Studio (or another query editor), connect to the restored database and execute the following SQL statement on the newly restored database (if needed run `use <cloned database>` to use the appropriate database):
+
+```sql
+UPDATE sp
+    SET PROPERTY_VALUE = spd.DEFAULT_VALUE, USER_MODIFIED = 0
+FROM
+    OSSYS_SITE_PROPERTY sp
+    INNER JOIN OSSYS_SITE_PROPERTY_DEFINITION spd ON spd.ID = sp.SITE_PROPERTY_DEFINITION_ID
+    INNER JOIN OSSYS_SITE_PROPERTY_DEF_EXT spde ON spd.ID = spde.SITE_PROPERTY_DEFINITION_ID
+WHERE
+	spde.IS_SECRET = 1;
+
+UPDATE sps
+    SET PROPERTY_VALUE = spd.DEFAULT_VALUE, USER_MODIFIED = 0
+FROM
+    OSSYS_SITE_PROPERTY_SHARED sps
+    INNER JOIN OSSYS_SITE_PROPERTY_DEFINITION spd ON sps.SITE_PROPERTY_DEFINITION_ID = spd.ID 
+    INNER JOIN OSSYS_SITE_PROPERTY_DEF_EXT spde ON spd.ID = spde.SITE_PROPERTY_DEFINITION_ID
+WHERE
+	spde.IS_SECRET = 1;
 ```
 
 #### Clean up selective deployment zones
@@ -644,6 +676,7 @@ delete from ossys_Parameter where name = 'OutSystems.IdentityService.LoginClient
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.LoginClient.WebClientId';
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.Scopes';
 delete from ossys_Parameter where name = 'OutSystems.IdentityService.ServiceUrl';
+delete from ossys_Parameter where name = 'OutSystems.SiteProperties.EncryptionKey';
 COMMIT;
 ```
 
@@ -660,6 +693,42 @@ delete from ossys_Mobile_Certificate;
 delete from ossys_Mobile_Config_Data; 
 COMMIT;
 ```
+
+#### Clean up secret site properties
+
+If the environment you cloned had modules with secret site properties, these must be reconfigured to work in the new environment. Because secret site properties are encrypted on a per-environment basis (i.e. different environments have different secret site property encryption keys), their values cannot be decrypted in the new environment and must be reassigned after the migration. However, before reassigning the values, the following query needs to be executed to reset all secret site properties to their default values.
+
+* Open a query editor tool, connect to the restored Platform database and execute the following SQL statement on the newly restored database (if needed run `use <cloned database>` to use the appropriate database):
+
+```sql
+ALTER SESSION SET CURRENT_SCHEMA = OSADMIN;
+
+UPDATE (
+    SELECT
+        sp.PROPERTY_VALUE, spd.DEFAULT_VALUE, sp.USER_MODIFIED
+    FROM
+        OSSYS_SITE_PROPERTY sp
+        JOIN OSSYS_SITE_PROPERTY_DEFINITION spd ON sp.SITE_PROPERTY_DEFINITION_ID = spd.ID
+        JOIN OSSYS_SITE_PROPERTY_DEF_EXT spde ON spd.ID = spde.SITE_PROPERTY_DEFINITION_ID
+    WHERE spde.IS_SECRET = 1
+)
+SET PROPERTY_VALUE = DEFAULT_VALUE, USER_MODIFIED = 0;
+
+UPDATE (
+    SELECT
+        sps.PROPERTY_VALUE, spd.DEFAULT_VALUE, sps.USER_MODIFIED
+    FROM
+        OSSYS_SITE_PROPERTY_SHARED sps
+        JOIN OSSYS_SITE_PROPERTY_DEFINITION spd ON sps.SITE_PROPERTY_DEFINITION_ID = spd.ID
+        JOIN OSSYS_SITE_PROPERTY_DEF_EXT spde ON spd.ID = spde.SITE_PROPERTY_DEFINITION_ID
+    WHERE spde.IS_SECRET = 1
+)
+SET PROPERTY_VALUE = DEFAULT_VALUE, USER_MODIFIED = 0;
+
+COMMIT;
+```
+
+**Note**: Replace `OSADMIN` with your Admin user for the Platform database if you changed the default value.
 
 #### Clean up selective deployment zones
 

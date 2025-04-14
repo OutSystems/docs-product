@@ -377,6 +377,11 @@
             - href: building-apps/ui/multilingual-tp/translate-your-app.md
             - href: building-apps/ui/multilingual-tp/translation-editor.md
             - href: building-apps/ui/multilingual-tp/translation-management.md
+        # Front-end             
+        - href: building-apps/ui/front-end/front-end-journey.md
+        - href: building-apps/ui/front-end/front-end-best-practices.md   
+        # Performance        
+        - href: building-apps/ui/best-practices-ui/best-practices-user-interface.md 
     # Application Logic
     - href: building-apps/logic/intro.md
     - topics:

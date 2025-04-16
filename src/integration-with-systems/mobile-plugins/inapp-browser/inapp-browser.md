@@ -93,15 +93,22 @@ Here's the result of opening a URL in the external browser, on Android (Google C
 
 ## Handle browser events
 
+Your app can handle events triggered when the browser finishes loading a URL, when navigation occurs, and when the user closes the browser.
+
+To enable this functionality, use the **InAppBrowserEvents** block. This block allows you to handle the following events:
+
+- **OnBrowserPageLoaded**: Triggered when the browser finishes loading a page.
+- **OnBrowserPageNavigationCompleted**: Triggered when navigation within the browser is completed.
+- **OnBrowserClosed**: Triggered when the browser is closed by the user.
+
+Add the **InAppBrowserEvents** block to every screen where you want these events to be handled.
+
 <div class="info" markdown="1">
 
-Applies only to to OpenInWebView and OpenInSystemBrowser.
+- **OnBrowserPageLoaded** and **OnBrowserClosed** apply only to the **OpenInWebView** and **OpenInSystemBrowser** actions.
+- **OnBrowserPageNavigationCompleted** applies only to the **OpenInWebView** action.
 
 </div>
-
-Your app can handle events triggered when the browser finishes loading the URL and when the user closes the browser.
-
-To enable this you can use the **InAppBrowserEvents** block, which lets you handle the **OnBrowserPageLoaded** and **OnBrowserClosed** events. You should add this block to every screen that you want these events to be handled in.
 
 ## Close (only applies to OpenInWebView and OpenInSystemBrowser)
 

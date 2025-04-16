@@ -2113,7 +2113,7 @@ An application with its details and its status in the environments were it is ru
 | IconHash | string | Hash of the application icon. Can be used to detect changes in the application icon. | No |
 | IconURL | string | The URL for the application icon. | No |
 | DetailsURL | string | The URL to access the application details in LifeTime. | No |
-| IsSystem | boolean | Indicates if the application is a built-in component of the AgilePlatform (e.g. ServiceCenter, LifeTime, ...). | No |
+| IsSystem | boolean | Indicates if the application is a built-in component of the OutSystems platform (for example, Service Center or LifeTime). | No |
 | AppStatusInEnvs | [AppStatusInEnv_v2](#appstatusinenv_v2) | Information about the status of the application in each environment it is running. | No |
 
 #### ApplicationShortInfo

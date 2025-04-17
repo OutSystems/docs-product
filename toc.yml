@@ -23,6 +23,7 @@
 # App architecture
 - href: app-architecture/intro.md
 - topics: 
+    # Designing the Architecture of Your OutSystems Applications
     - href: app-architecture/design-architecture/intro.md
     - topics:
         - href: app-architecture/design-architecture/01-4-layer-canvas.md    
@@ -37,6 +38,16 @@
             - href: app-architecture/design-architecture/06-app-composition/isolating-app-theme.md                                 
         - href: app-architecture/design-architecture/07-designing-multi-tenant-apps.md
         - href: app-architecture/design-architecture/08-microservices-arch-outsystems.md
+    # From architecture to development            
+    - href: app-architecture/from-arch-to-dev/intro.md
+    - topics:
+        - href: app-architecture/from-arch-to-dev/arch-to-dev.md
+    # OutSystems Domain Driven Architecture
+    - href: app-architecture/domain-driven-design/intro.md
+    - topics:
+        - href: app-architecture/domain-driven-design/understanding-microservices.md
+        - href: app-architecture/domain-driven-design/domain-driven-design.md
+        - href: app-architecture/domain-driven-design/domain-driven-design-os.md
 # Building apps
 - href: building-apps/intro.md
 - topics:

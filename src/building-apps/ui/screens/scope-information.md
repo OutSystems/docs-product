@@ -22,6 +22,12 @@ topic:
 
 # Don't abuse scope information
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 All the local variables of a screen and the results of queries or actions from the preparation are kept in the scope of the entire screen. You can reference Local variables in the Preparation, in the screen itself and in  screen actions. 
 
 ## Impact - think Viewstate

@@ -112,6 +112,7 @@ To create a site rule, follow these steps:
 Remember the following when working with site rules:  
 * You can only have only one site rule per root application for domains with sub-paths.  
 * Creating or editing a site rule can temporarily slow down the app because the platform needs to reload its configuration.  
+* Each site rule will act as new hostname. Ensure network permissions account for modules being accessed via these new URLs.
 
 </div>  
 

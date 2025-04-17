@@ -20,6 +20,23 @@
     - href: onboarding/dev-cheat-sheet.md
     - href: onboarding/os-language-concepts.md
     - href: onboarding/outsystems-platform-best-practices.md
+# App architecture
+- href: app-architecture/intro.md
+- topics: 
+    - href: app-architecture/design-architecture/intro.md
+    - topics:
+        - href: app-architecture/design-architecture/01-4-layer-canvas.md    
+        - href: app-architecture/design-architecture/02-translating-business-app-modules.md  
+        - href: app-architecture/design-architecture/03-validating-app-architecture.md  
+        - href: app-architecture/design-architecture/04-soa-architectures.md  
+        - href: app-architecture/design-architecture/05-integration-patterns.md  
+        - href: app-architecture/design-architecture/06-app-composition/06-app-composition.md
+        - topics:
+            - href: app-architecture/design-architecture/06-app-composition/applying-4-layer-canvas-apps.md   
+            - href: app-architecture/design-architecture/06-app-composition/rules-correct-app-composition.md
+            - href: app-architecture/design-architecture/06-app-composition/isolating-app-theme.md                                 
+        - href: app-architecture/design-architecture/07-designing-multi-tenant-apps.md
+        - href: app-architecture/design-architecture/08-microservices-arch-outsystems.md
 # Building apps
 - href: building-apps/intro.md
 - topics:

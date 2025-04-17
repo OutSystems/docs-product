@@ -61,3 +61,13 @@ In a REST API method request, you are defining a parameter and setting it to the
 **Recommended action**
 
 Change the [data type](../../../ref/data/data-types/available-data-types.md) of the [parameter](../../../ref/lang/auto/servicestudio-plugin-rest-restactioninput.md) or the request format of the [REST API method](../../../ref/lang/auto/servicestudio-plugin-rest-restaction.md).
+
+## Cannot send a 'List' parameter in the request &lt;send in> of a method with &lt;request format> request format. Change the parameter data type or the method request format.
+
+**Cause**
+
+In a REST API method request, you are defining a parameter and setting it to the List data type, and the method request format does not support this.
+
+**Recommended action**
+
+Change the [data type](../../../ref/data/data-types/available-data-types.md) of the [parameter](../../../ref/lang/auto/servicestudio-plugin-rest-restactioninput.md) or the request format of the [REST API method](../../../ref/lang/auto/servicestudio-plugin-rest-restaction.md).

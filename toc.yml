@@ -48,12 +48,16 @@
         - href: app-architecture/domain-driven-design/understanding-microservices.md
         - href: app-architecture/domain-driven-design/domain-driven-design.md
         - href: app-architecture/domain-driven-design/domain-driven-design-os.md
+    # How to Create Customized Versions of a Base Application
+    - href: app-architecture/customizable-web-product.md
     # Building mobile apps with multiple independent teams
     - href: app-architecture/build-mobile-app-teams/intro.md
     - topics:
         - href: app-architecture/build-mobile-app-teams/bp-architecture.md
         - href: app-architecture/build-mobile-app-teams/bp-development.md
         - href: app-architecture/build-mobile-app-teams/bp-multiple.md
+    # Performance Best Practices - References
+    - href: app-architecture/references.md
 # Building apps
 - href: building-apps/intro.md
 - topics:

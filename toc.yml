@@ -56,6 +56,11 @@
         - href: app-architecture/build-mobile-app-teams/bp-architecture.md
         - href: app-architecture/build-mobile-app-teams/bp-development.md
         - href: app-architecture/build-mobile-app-teams/bp-multiple.md
+    # Audit Trail
+    - href: app-architecture/data/audit-trails.md
+    # Caching
+    - href: app-architecture/data/hot-cache.md     
+    - href: app-architecture/data/improving-performance-distributed-caching.md
     # Performance Best Practices - References
     - href: app-architecture/references.md
 # Building apps

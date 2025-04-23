@@ -95,6 +95,6 @@ You can check the logs and identify migration issues in Portal. Go to **MIGRATE 
 
 ## Next steps
 
-* If your apps use SQL queries, make sure you [adapt those SQL queries](execute-adapt-sql-queries.md).
+* If your apps use SQL queries, make sure you [adapt those SQL queries](../code-patterns/elem-sql-adapt.md).
 * You must [adapt login flow of your apps](execute-adapt-login-flow.md).
 * You may need to [configure some settings to ensure the apps work correctly](execute-configure-migrated-apps.md).

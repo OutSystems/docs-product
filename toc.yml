@@ -1180,7 +1180,6 @@
         - href: migration-to-odc/execute/execute-connect-to-tool.md
         - href: migration-to-odc/execute/execute-about-migrate-code.md
         - href: migration-to-odc/execute/execute-how-to-migrate-code.md
-        - href: migration-to-odc/execute/execute-adapt-sql-queries.md
         - href: migration-to-odc/execute/execute-adapt-login-flow.md
         - href: migration-to-odc/execute/password-reset-in-odc.md
         - href: migration-to-odc/execute/execute-configure-migrated-apps.md
@@ -1215,6 +1214,7 @@
         - href: migration-to-odc/code-patterns/cannot-open-module.md
         - href: migration-to-odc/code-patterns/outdated-or-broken-dependencies.md
         - href: migration-to-odc/code-patterns/arch-common-plugin.md
+        - href: migration-to-odc/code-patterns/elem-sql-adapt.md
     - href: migration-to-odc/prepare/reference.md
     - href: migration-to-odc/known-issues.md
 # Reference

@@ -69,6 +69,7 @@ These are the patterns that require changes in the ODC apps:
 * [Asset consuming O11 system elements](arch-system-element.md)
 * [Asset consuming an extension](arch-extension.md)
 * [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)
+* [Application with SQL Node](elem-sql-adapt.md)
 
 ## Not yet supported
 
@@ -76,3 +77,4 @@ These are the patterns about elements that aren't supported in ODC, or that the 
 
 * [The Asset cannot contain BPTs](elem-bpt.md)
 * [The Asset cannot contain SOAP](elem-soap.md)
+

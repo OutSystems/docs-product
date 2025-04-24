@@ -234,6 +234,7 @@ jobs:
             --user '${{ vars.JIRA_API_USER }}:${{ secrets.JIRA_API_USER_TOKEN }}' \
             --header 'Accept: application/json' \
             --header 'Content-Type: application/json' \
+            --header 'X-Atlassian-Token: no-check' \
             --data @jira.json >> create-issue.json
 
         cat create-issue.json

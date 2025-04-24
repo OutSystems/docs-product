@@ -250,7 +250,6 @@ jobs:
             --url 'https://${{ vars.JIRA_DOMAIN }}.atlassian.net/rest/api/3/issue/${{ steps.create-jira-issue.outputs.key }}/transitions' \
             --user '${{ vars.JIRA_API_USER }}:${{ secrets.JIRA_API_USER_TOKEN }}' \
             --header 'Accept: application/json' \
-            --header 'X-Atlassian-Token: no-check' \
             --header 'Content-Type: application/json' >> transitions.json
 
         cat transitions.json
@@ -262,7 +261,6 @@ jobs:
             --user '${{ vars.JIRA_API_USER }}:${{ secrets.JIRA_API_USER_TOKEN }}' \
             --header 'Accept: application/json' \
             --header 'Content-Type: application/json' \
-            --header 'X-Atlassian-Token: no-check' \
             --data "{ \"transition\": { \"id\": \"${transitionId}\" } }"
 
     - name: Update PR Title

@@ -26,7 +26,7 @@ Service Studio automatically creates Actions for sorting the columns in a Table.
 
 ### Add sorting to a Table
 
-1. In the **OnSort** drop-down list box of your Table Widget properties, select **New On Sort Client Action**. This automatically creates a new Client Action with the necessary logic to sort your table. This logic includes capturing the sort attribute and order, updating the TableSort local variable, and refreshing the data source of your table to display the sorted results.
+1. In the **OnSort** drop-down list box of your Table Widget properties, select **New On Sort Client Action**. This automatically creates a new Client Action with the necessary logic to sort your table. This logic includes capturing the sort attribute and order, updating the **TableSort** local variable, and refreshing the data source of your table to display the sorted results.
 1. At this step, all table columns are sortable, and you can publish the module.
 
 ### Change sorting Attribute 

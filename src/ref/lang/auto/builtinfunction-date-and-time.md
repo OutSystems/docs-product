@@ -119,6 +119,9 @@ coverage-type:
 </tbody>
 </table>
 
+## Daylight Saving Time 
+Date and Time manipulations on the client-side rely on the JavaScript Date object. During Daylight Saving Time (DST) transitions, adding/subtracting time units might lead to unexpected results. For instance, if you subtract 60 minutes from 2025-03-30 02:00:00 (a common DST start date), the expected result of 2025-03-30 01:00:00 might not exist in the local time zone. In such cases, because the Daylight Saving Time transition, means that 01:00:00 never actually occurs (the clock skips directly from 00:59:59 to 02:00:00), the JavaScript engine automatically adjusts the Date object, potentially resulting in the original time (2025-03-30 02:00:00) instead of the arithmetically expected 01:00:00, which doesn't exist in the local timezone.
+
 ## AddDays { #AddDays }
 
 Adds 'n' days to 'dt' and returns a valid Date Time.  

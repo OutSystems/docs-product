@@ -7,8 +7,12 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+tags: date manipulation, time manipulation, server-side functions, client-side functions, outsystems 11
+audience:
+  - full stack developers
+outsystems-tools:
+  - platform server
 ---
-
 # Date and Time
 
 
@@ -118,6 +122,10 @@ coverage-type:
 </tr>
 </tbody>
 </table>
+
+## Daylight Saving Time 
+
+Date and Time manipulations on the client-side rely on the JavaScript Date object. During Daylight Saving Time (DST) transitions, adding or subtracting time units can lead to unexpected results. For instance, if you subtract 60 minutes from `2025-03-30 02:00:00`, a common DST start date, the expected outcome of `2025-03-30 01:00:00` doesn't exist in the local time zone. In such cases, the JavaScript engine automatically adjusts the Date object, resulting in the original time `02:00:00` instead of the logically expected `01:00:00`, but a non-existent time.
 
 ## AddDays { #AddDays }
 

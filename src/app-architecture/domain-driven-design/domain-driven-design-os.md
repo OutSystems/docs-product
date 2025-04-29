@@ -69,15 +69,13 @@ Public interfaces need to be created by each team inside each domain, providing 
 
 ## Domain types
 
-There are 3 domain types, each one with its own defined purpose.
+There are 2 domain types, each one with its own defined purpose.
 
 ![Diagram showing the three types of domains in domain driven design: Orchestrator, Vertical, and Horizontal.](images/outsystems_domain_driven_architecture_16.png "Types of Domains in DDD")
 
-* **Orchestrator domain** - presented in the image as a Omnichannel, it provides the end user with a unified view of the independent business verticals.
+* **Vertical domains** - supports a line of business.
 
-* **Vertical domain** - supports a line of business.
-
-* **Horizontal domain** - provides reusable core business services shareable to multiple vertical domains.
+* **Horizontal domains** - provides reusable core business services shareable to multiple vertical domains.
 
 ## Retain the best of monoliths and microservices
 

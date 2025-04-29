@@ -437,6 +437,7 @@
         - href: building-apps/logic/screen-update-list-items.md
         - href: building-apps/logic/screen-partial-refresh.md
         - href: building-apps/logic/client-data-transfer-optimization-tp.md
+        - href: building-apps/logic/logic.md
     # Use Processes
     - href: building-apps/processes/intro.md
     - topics:
@@ -1029,6 +1030,7 @@
     - topics:
         - href: user-management/user-roles/create-a-custom-role.md
         - href: user-management/user-roles/validate-permissions.md
+        - href: user-management/user-roles/security-model/acl.md
 # Setup OutSystems infrastructure and platform
 - href: setup-infra-platform/intro.md
 - topics:

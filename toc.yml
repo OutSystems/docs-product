@@ -85,6 +85,7 @@
                 - href: building-apps/data/modeling/relationship/relationship-one-to-many.md
                 - href: building-apps/data/modeling/relationship/relationship-many-to-many.md
                 - href: building-apps/data/modeling/relationship/delete-rules.md
+            - href: building-apps/data/modeling/data-model-best-practices.md
           #Data operations  
         - href: building-apps/data/operations/intro.md
         - topics:
@@ -141,6 +142,9 @@
                 - href: building-apps/data/offline/patterns/read-write-data-one-to-many.md
             - href: building-apps/data/offline/sync-checklist.md
             - href: building-apps/data/offline/mobile/complex-sync.md
+        - href: building-apps/data/data-layer.md
+        - href: building-apps/data/archive.md
+        - href: building-apps/data/purge.md 
     # Design UI
     - href: building-apps/ui/intro.md
     - topics:

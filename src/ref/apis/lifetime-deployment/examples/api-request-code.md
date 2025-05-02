@@ -30,19 +30,17 @@ With this capability, you can extend OutSystems's built-in security capabilities
 
 <div class = "info" markdown="1">
 
-The code retrieved in the API is almost same as the one running on the server. For security and licensing reasons, some files with configurations, secrets and proprietary code are not shared by the API.
+Take into account the following notes:
 
-</div>
+* The code retrieved in the API is almost same as the one running on the server. For security and licensing reasons, some files with configurations, secrets and proprietary code are not shared by the API.
 
-<div class = "info" markdown="1">
+* The code in the package doesn't compile and is not executable.
 
-The code in the package does not compile and is not executable.
+* Extension code is not available through the API.
 
-</div>
+* There is a 150 MB size limit for the generated ZIP file. If an application's size exceeds this limit, it's possible to download the source code for each module of the application individually.
 
-<div class = "info" markdown="1">
-
-Extension code is not available through the API.
+* For mobile applications, it's not possible to download only the build source code or only the module source code. They are bundled together in the generated ZIP file.
 
 </div>
 

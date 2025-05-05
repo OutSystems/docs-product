@@ -37,6 +37,8 @@ You have to follow different approaches, depending on the pattern:
 
 * [Fix in ODC](#fix-in-odc) - Requires changes in the ODC app after the migration.
 
+* [Optional](#optional) - Requires changes in the O11 app or in the ODC app, depending on the approach you choose.
+
 * [Not yet supported](#not-supported) - ODC doesn't yet support the functionality, or the Migration Kit doesn't yet support the code pattern.
 
 ## Fix in O11
@@ -70,6 +72,12 @@ These are the patterns that require changes in the ODC apps:
 * [Asset consuming an extension](arch-extension.md)
 * [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)
 * [Application with SQL Node](elem-sql-adapt.md)
+
+## Optional
+
+These are the patterns that can be either solved in O11 or in ODC:
+
+* [Asset consuming a Forge component](arch-forge.md)
 
 ## Not yet supported
 

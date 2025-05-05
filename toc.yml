@@ -1221,6 +1221,7 @@
         - href: migration-to-odc/code-patterns/outdated-or-broken-dependencies.md
         - href: migration-to-odc/code-patterns/arch-common-plugin.md
         - href: migration-to-odc/code-patterns/elem-sql-adapt.md
+        - href: migration-to-odc/code-patterns/elem-multi-tenant.md
     - href: migration-to-odc/prepare/reference.md
     - href: migration-to-odc/known-issues.md
 # Reference

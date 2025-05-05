@@ -27,11 +27,11 @@ helpids: 30633
 ## How to solve
 
 <div class="info" markdown="1">
-    
+
 If you are only preparing your code for the migration, at present, OutSystems recommends not making any changes to modules with findings for this code pattern, while ODC lacks built-in multi-tenancy support.
 
 </div>
 
-This pattern isn't supported.
+This pattern isn't supported yet.
 
 You can only proceed with the migration of ODC assets without multi-tenant modules.

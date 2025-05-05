@@ -87,5 +87,6 @@ These are the patterns about elements that aren't supported in ODC, or that the 
 
 * [The Asset cannot contain BPTs](elem-bpt.md)
 * [The Asset cannot contain SOAP](elem-soap.md)
+* [The Asset cannot contain modules having a user provider different than Users](elem-user-provider.md)
 * [Asset consuming O11 Business Process (BPT) elements](arch-bpt-elements.md)
 * [The Asset cannot contain multi-tenant modules](elem-multi-tenant.md)

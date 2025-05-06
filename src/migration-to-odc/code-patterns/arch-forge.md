@@ -37,8 +37,6 @@ If the Forge component that your asset consumes **isn’t yet available in ODC**
 
 To solve this pattern in ODC:
 
-1. If you have access to the Migration Assessment Tool, set the **Where To Fix** for the finding as **ODC**.
-
 1. Remove the reference to the O11 Forge component from any ODC asset.
 
 1. Proceed with the migration. 
@@ -51,13 +49,11 @@ To solve this pattern in ODC:
 
 To solve this pattern in O11:
 
-1. If you have access to the Migration Assessment Tool, set the **Where To Fix** for the finding as **O11**. 
-
 1. Clone the Forge component.
 
-1. In the consumer modules, replace the O11 forge component usage with your clone.
+1. In the consumer modules, replace the O11 Forge component usage with your clone.
 
-1. In the Migration Assessment Tool, map your clone into an ODC asset and address any related findings.
+1. Map the clone into an ODC asset, so it is included in your O11 to ODC architecture mapping.
 
 1. Proceed with the migration.
 

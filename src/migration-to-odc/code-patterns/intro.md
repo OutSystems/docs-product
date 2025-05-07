@@ -49,7 +49,6 @@ These are the patterns that require changes in the O11 apps:
 * [Asset consuming a Local Storage Entity](arch-local-storage.md)
 * [Asset consuming a private Structure](arch-priv-struct.md)
 * [Asset consuming a Process](arch-process.md)
-* [Asset consuming a reference that is not defined in any mapped ODC asset](arch-not-mapped.md)
 * [Asset consuming a reference to a Traditional Web element](convert-trad-web.md)
 * [Asset consuming a Resource](arch-resource.md)
 * [Asset consuming a Script](arch-script.md)
@@ -82,6 +81,7 @@ These are the patterns that require changes in the ODC apps:
 These are the patterns that can be either solved in O11 or in ODC:
 
 * [Asset consuming a Forge component](arch-forge.md)
+* [Asset consuming an O11 app that is not mapped to any ODC asset](arch-not-mapped.md)
 
 ## Not yet supported
 

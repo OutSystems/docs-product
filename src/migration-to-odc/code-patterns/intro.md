@@ -72,6 +72,7 @@ These are the patterns that require changes in the ODC apps:
 * [Asset consuming O11 user management elements](arch-user-mng-elements.md)
 * [Asset consuming an extension](arch-extension.md)
 * [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)
+* [Asset using unsupported O11 built-in function](elem-built-in-function.md)
 * [Application with SQL Node](elem-sql-adapt.md)
 * [Asset contains REST APIs using built-in OAuth 2.0 authentication flow](elem-rest-oauth2.md)
 * [Asset with SAP BAPI connection](elem-sap.md)

@@ -1222,6 +1222,7 @@
         - href: migration-to-odc/code-patterns/cannot-open-module.md
         - href: migration-to-odc/code-patterns/outdated-or-broken-dependencies.md
         - href: migration-to-odc/code-patterns/arch-common-plugin.md
+        - href: migration-to-odc/code-patterns/elem-built-in-function.md
         - href: migration-to-odc/code-patterns/elem-sql-adapt.md
         - href: migration-to-odc/code-patterns/elem-user-provider.md
         - href: migration-to-odc/code-patterns/elem-rest-oauth2.md

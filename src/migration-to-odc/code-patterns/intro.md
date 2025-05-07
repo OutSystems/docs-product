@@ -67,7 +67,7 @@ These are the patterns that require changes in the O11 apps:
 
 These are the patterns that require changes in the ODC apps:
 
-* [Asset consuming O11 system elements](arch-system-element.md)
+* [Asset consuming O11 platform system elements](arch-system-element.md)
 * [Asset consuming O11 user management elements](arch-user-mng-elements.md)
 * [Asset consuming an extension](arch-extension.md)
 * [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)

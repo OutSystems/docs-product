@@ -1211,6 +1211,7 @@
         - href: migration-to-odc/code-patterns/arch-not-mapped.md
         - href: migration-to-odc/code-patterns/arch-extension.md
         - href: migration-to-odc/code-patterns/arch-system-element.md
+        - href: migration-to-odc/code-patterns/arch-user-mng-elements.md
         - href: migration-to-odc/code-patterns/arch-bpt-elements.md
         - href: migration-to-odc/code-patterns/end-user-no-email.md
         - href: migration-to-odc/code-patterns/elem-bpt.md

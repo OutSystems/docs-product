@@ -27,23 +27,21 @@ This article only applies to customers with access to the Migration Kit.
 
 </div>
 
-The preparation stage is a period of refactoring your O11 apps so that they're ready for migration to the ODC platform. This document is intended for O11 application architects who are planning and preparing the existing O11 application architecture to enable smooth migration to ODC in the future.
-
-As you plan and prepare your existing O11 app architecture to migrate smoothly to ODC, you must refactor and adjust your O11 code and architecture in Service Studio to facilitate the migration process.
+The preparation stage is a period of refactoring and adjusting your O11 apps so that they're ready for a smooth migration to the ODC platform.
 
 ## Prerequisites
 
-Before your refactor your O11 apps to be ODC-compatible, ensure you have:
+Before you refactor your O11 apps to be ODC-compatible, ensure you have:
 
-* Designed the ODC to be architecture
-* Mapped O11 apps to ODC asset.
-* Identified any architectural inconsistencies in the O11 app and adjusted the architecture based on the findings.
+* [Designed your future ODC architecture](../plan/plan-map-apps.md#design-arch)
+* [Mapped your O11 apps to ODC assets](../plan/plan-map-apps.md#map-in-tool)
+* [Identified and adjusted any inconsistencies in the mapping of your O11 apps to ODC architecture](../plan/plan-assess-refactor.md#adjust-mapping)
 
 ## Prepare O11 app migration
 
-Here’s the high-level process on how you can prepare your O11 app to be  ODC-compatible:
+Here’s the high-level process on how you can prepare your O11 app to be ODC-compatible:
 
-1. [Adapt O11 apps to make them compatible with ODC](prep-refactor-o11-apps.md)
+1. [Adjust O11 apps to make them compatible with ODC](prep-refactor-o11-apps.md)
 
 1. Deploy O11 apps to QA
 

@@ -32,7 +32,8 @@ In Service Studio, you can:
 
 * OutSystems attempts to use the charset specified in the `Content-Type` header of the response.
 * If no charset is specified, ISO-8859-1 is used as the default encoding.
-**Note**: When using Service Studio Test to preview REST responses, the behavior differs. It uses UTF-8 as the default encoding when no charset is specified.
+
+    **Note**: When using Service Studio Test to preview REST responses, the behavior differs. It uses UTF-8 as the default encoding when no charset is specified.
 
 ## Consume several methods of a REST API { #all-methods }
 

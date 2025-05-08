@@ -19,6 +19,14 @@ coverage-type:
 
 # Monitoring and troubleshooting apps
 
+OutSystems provides built-in monitoring and analytics tools that enable proactive management of application performance to make it easier to detect, identify, and troubleshoot issues in real time.
+
+These tools are automatically available through the platform, and all OutSystems applications are instrumented to collect logs and performance events and store them in a standard relational database. These metrics are collected by default, requiring no extra work on the part of developers and adding no overhead to the runtime environment.
+
+OutSystems makes more than a dozen monitoring logs available for analysis and troubleshooting. Aside from providing comprehensive reports by type and time window, developers can also use analytics dashboards to spot bottlenecks on the client, network, and server that negatively impact [APDEX](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/The_APDEX_Performance_Score) values. Once these issues are identified they can be followed up for resolution. 
+
+A great number of monitoring and troubleshooting use cases can be served by the out-of-the-box tools. However, OutSystems demonstrates its strength as a development platform by making it easy to integrate this wealth of logged data with leading industry-strength monitoring and analysis platforms provided by third-party vendors.
+
 To understand the current state of an environment and monitor problems impacting end users, OutSystems allows you to:
 
 * [View analytics](troubleshoot-the-performance-of-an-application.md) about the user experience of your applications.
@@ -58,6 +66,14 @@ Also, OutSystems exposes the collected data and shares monitoring points that en
 * Use the [PerformanceMonitoring API](../ref/apis/performancemonitoring-api.md) to integrate with custom or third-party monitoring tools that you may already be using.
 
 * Use your custom-built APIs in your integrations.
+
+### OutSystems-supported components
+
+OutSystems supports quick and easy integration with monitoring and analysis dashboards available through [Firebase plugins](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=4991&ProjectName=firebase-mobile) for the following services:
+
+* [Firebase Crashlytics](https://firebase.google.com/products/crashlytics), a real-time crash reporting tool for prioritizing and fixing crashes based on the impact on real users.
+* [Google Analytics for Firebase](https://firebase.google.com/products/analytics) provides free, unlimited reporting on key events and user properties.
+* [Firebase Performance Monitoring](https://firebase.google.com/products/performance) gives insight into app performance from the user point of view with detailed trace and network data.
 
 ## Monitoring Responsibilities
 

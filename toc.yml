@@ -920,6 +920,7 @@
     - href: monitor-and-troubleshoot/enable-analytics-for-an-environment.md
     - href: monitor-and-troubleshoot/troubleshoot-the-performance-of-an-application.md
     - href: monitor-and-troubleshoot/how-application-performance-is-measured.md
+    - href: monitor-and-troubleshoot/use-cases.md
     - href: monitor-and-troubleshoot/the-apdex-performance-score.md
     #Logging
     - href: monitor-and-troubleshoot/logging/intro.md

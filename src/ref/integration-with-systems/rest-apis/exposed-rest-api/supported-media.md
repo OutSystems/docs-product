@@ -16,7 +16,7 @@ coverage-type:
   - remember
 ---
 
-# Supported Media Types in REST API Requests
+# Supported media types in REST API requests
 
 OutSystems supports many media types in the Content-Type header of REST API requests. However, depending on the input parameter's data type, the following rules apply:
 
@@ -36,3 +36,11 @@ If you send a request with a Content-Type header that the method doesn't support
     "StatusCode": 415
 }
 ```
+## Default encoding when exposing REST APIs
+
+When exposing REST APIs, the default character decoding behavior depends on the content type:
+* Text-based content (text/plain, text/html): Decoded using ISO-8859-1 by default, unless charset=utf-8 is specified in the request header.
+* JSON (application/json): Always decoded using UTF-8, regardless of charset specification.
+* Query and Path Parameters: Always decoded using UTF-8 URL-encoding rules.
+
+All responses from OutSystems REST services are UTF-8 encoded, regardless of input encoding.

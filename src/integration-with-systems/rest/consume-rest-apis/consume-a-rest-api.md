@@ -20,13 +20,19 @@ topic:
 
 # Consume one or more REST API methods
 
-Make sure you gather all the information you need from the REST API documentation before starting. You can also take a quick video tour about [Consuming a REST API in 10 minutes with OutSystems](https://youtu.be/gNyWIeJYfG0).
+Before starting, make sure you gather all the information you need from the REST API documentation. You can also take a quick video tour about [Consuming a REST API in 10 minutes with OutSystems](https://youtu.be/gNyWIeJYfG0).
 
-In Service Studio you can:
+In Service Studio, you can:
 
-* consume several REST API methods (all methods or just the methods you select) described in a OpenAPI specification file, provided either by entering a URL or by selecting a specification file from the local file system.
+* consume several REST API methods (all methods or just the methods you select) described in an OpenAPI specification file, provided either by entering a URL or by selecting a specification file from the local file system.
 
 * Consume a single REST API method.
+
+## Default encoding when consuming REST APIs
+
+* OutSystems attempts to use the charset specified in the `Content-Type` header of the response.
+* If no charset is specified, ISO-8859-1 is used as the default encoding.
+**Note**: When using Service Studio Test to preview REST responses, the behavior differs. It uses UTF-8 as the default encoding when no charset is specified.
 
 ## Consume several methods of a REST API { #all-methods }
 
@@ -67,7 +73,7 @@ When importing the REST API, Service Studio does the following:
 
 ## Consume a single method of a REST API { #single-method }
 
-In OutSystems you can consume a **single method** of a REST API, based on example content for the request and/or response. You may need to specify input parameters in the URL and/or a body for manipulation methods like `POST` or `PUT`.
+In OutSystems, you can consume a **single method** of a REST API, based on example content for the request and/or response. You may need to specify input parameters in the URL and/or a body for manipulation methods like `POST` or `PUT`.
 
 Do the following:
 
@@ -96,11 +102,11 @@ Do the following:
 
     </div>
 
-1. If the REST API you are consuming requires specific headers or uses HTTP Basic Authentication, open the **Headers / Auth** tab and fill the necessary information.
+1. If the REST API you are consuming requires specific headers or uses HTTP Basic Authentication, open the **Headers / Auth** tab and fill in the necessary information.
 
     ![Configuration of headers and authentication for a REST API in Service Studio](images/ss-rest-consume-headers-auth.png "Headers and Authentication Configuration in Service Studio")
 
-1. Fill the information about the Request and the Response. The easiest way to do this is to perform a test to the API and use the test result.
+1. Fill in the information about the Request and the Response. The easiest way to do this is to perform a test on the API and use the test result.
 
     Alternatively, you can add the JSON structure or text/plain example directly in the **Request** and **Response** fields in the **Body** tab. Open the **Test** tab. If you have parameters in your **Method URL**, you need to insert the parameter values to execute the test:
 
@@ -110,7 +116,7 @@ Do the following:
 
     ![Filling the request body content for testing a REST API method in Service Studio](images/ss-rest-consume-test-request.png "Request Body Content for REST API Method Test")
 
-1. Click **Test**. If the test is successful, you see the method's response in the Response area of **Test** tab.
+1. Click **Test**. If the test is successful, you see the method's response in the Response area of the **Test** tab.
 
     Use that information to fill in the Response in the **Body** tab by clicking **Copy to Response body** in the **Response** area. Leave only the needed fields.
 
@@ -139,7 +145,7 @@ When importing the REST API method, Service Studio does the following:
 
 OutSystems translates the methods exposed by a REST API into **OutSystems actions**, with the same semantics as any action created by you in Service Studio.
 
-You can now use the newly created methods in your application the same way you use any Server Action:
+You can now use the newly created methods in your application, the same way you use any Server Action:
 
 1. Go to the action flow where you want to use the REST API Method.
   
@@ -157,7 +163,7 @@ You can now use the newly created methods in your application the same way you u
 
 ## Using parameters in the URL query string { #using-params-query-string }
 
-OutSystems supports using input parameters in URL query string as name/value pairs, like in `key={value}`, where `value` is an input parameter. The URL query string is the part of the URL after the `?` (question mark) character.
+OutSystems supports using input parameters in the URL query string as name/value pairs, like in `key={value}`, where `value` is an input parameter. The URL query string is the part of the URL after the `?` (question mark) character.
 
 For example, you can use the following URLs:
 

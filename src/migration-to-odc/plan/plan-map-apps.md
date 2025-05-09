@@ -102,40 +102,38 @@ After adapting your O11 architecture, you are ready to start using the Migration
 
 ![Diagram showing the Map O11 apps to ODC architecture step in the migration process.](images/prep-map-o11-odc-arch-diag.png "Map O11 apps to ODC architecture")
 
-Now, it’s time to define each of the future ODC Assets (apps and libraries) and map your O11 apps in the Migration Assessment Tool. The mapping is always based on the O11 Apps available in your Development Environment.
+Now, it’s time to define each of the future ODC Assets (apps and libraries) and map your O11 apps in the Migration Assessment Tool.
 
 <div class="info" markdown="1">
 
+* The mapping is always based on the O11 Apps available in your **Development Environment**.
 * Currently, you can’t map an O11 **Extension** into any ODC Asset type.
-* For **ODC Libraries**, you can only map O11 Apps that only contain O11 Library Modules. Make sure you convert all O11 Modules of O11 Apps you want to map to an ODC Library to O11 Library Modules.
+* For **ODC Libraries**, you can only map O11 Apps that contain only O11 Library Modules. Thus, for the O11 Apps that you want to map to an ODC Library, make sure you convert all O11 Modules to O11 Library Modules.
 
 </div>
 
 To map your O11 Apps into ODC Assets, follow these steps:
 
-1. In the Assessment Tool, create each of the future ODC Apps and Libraries, and map them to your O11 apps. For now you aren't able to map Extensions. Do the following:
+1. Log into the Migration Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.
 
-    1. Log into the Migration Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.
+1. In the **ODC Blueprint** tab, click **Map O11 apps (Development)**.
 
-    1. In the **ODC Blueprint** tab, select Map O11 apps.
+1. Create an ODC asset to map your O11 apps:
+    * Set the **Asset name**. Make sure you follow the [ODC naming best practices](https://www.outsystems.com/tk/redirect?g=4f33c44e-316d-43b3-9929-221138d053be)
+    * Set the **Asset type**.
+    * Optionally, set the **Asset description**.
 
-    1. Create an ODC asset to map your O11 apps:
-        * Set the **Asset name**. Make sure you follow the [ODC naming best practices](https://www.outsystems.com/tk/redirect?g=4f33c44e-316d-43b3-9929-221138d053be)
-        * Set the **Asset type**.
-        * Optionally, set the **Asset description**.
+    ![Create ODC asset for O11 mapping in the Migration Assessment Tool.](images/map-o11-to-odc-set-asset-at.png "Create ODC asset for O11 mapping")
 
-        ![Create ODC asset for O11 mapping in the Migration Assessment Tool.](images/map-o11-to-odc-set-asset-at.png "Create ODC asset for O11 mapping")
+    <div class="info" markdown="1">
 
+    The Icon is inherited from the first O11 app you map in the next step.
 
-        <div class="info" markdown="1">
+    </div>
 
-        The Icon is inherited from the first O11 app you map in the next step.
+1. Select all the O11 apps that you want to map to your ODC asset.
 
-        </div>
-
-    1. Select all the O11 apps that you want to map to your ODC asset.
-
-    1. Click **Save mapping**.
+1. Click **Save mapping**.
 
 Every time you create or update a mapping, the Migration Assessment Tool automatically queues an assessment for that asset. When the assessment finishes, you can go through the report to [assess the app architecture and ODC readiness](plan-assess-refactor.md) for that ODC asset.
 

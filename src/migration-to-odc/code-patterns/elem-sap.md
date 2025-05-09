@@ -21,9 +21,9 @@ helpids: 30632
 
 # Asset with SAP BAPI connection
 
-In ODC, you can use [OutSystems Data Fabric](https://success.outsystems.com/documentation/outsystems_developer_cloud/integration_with_external_systems/integrate_with_external_data_sources_using_data_fabric/) to integrate with SAP using a SAP BAPI connector.
+The Business Application Programming Interface (BAPI) is a standard SAP API designed to seamlessly connect non-SAP applications with SAP business processes.
 
-However, the Migration Kit doesn't migrate your O11 SAP BAPI connections to ODC automatically.
+In ODC, you can use [OutSystems Data Fabric](https://success.outsystems.com/documentation/outsystems_developer_cloud/integration_with_external_systems/integrate_with_external_data_sources_using_data_fabric/) to integrate with SAP using a SAP BAPI connector.
 
 ## How to solve
 
@@ -34,4 +34,5 @@ You must solve this pattern in ODC, after proceeding with the code migration to 
 Recreate your SAP integration in ODC using [OutSystems Data Fabric](https://success.outsystems.com/documentation/outsystems_developer_cloud/integration_with_external_systems/integrate_with_external_data_sources_using_data_fabric/):
 
 1. In the ODC Portal, [create your SAP BAPI connection](https://success.outsystems.com/documentation/outsystems_developer_cloud/integration_with_external_systems/integrate_with_external_data_sources_using_data_fabric/create_connections_to_external_data_sources/) and select the specific BAPIs relevant to your use case.
+
 1. In ODC Studio, use Aggregates to fetch the data in your app.

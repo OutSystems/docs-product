@@ -29,7 +29,7 @@ OutSystems is working on migration automation capabilities to support some of th
 
 </div>
 
-If you have access to the Migration Kit, the Migration Assessment Tool identifies these code patterns for you. You need to address these code patterns to achieve a successful migration of your apps.
+If you have access to the Migration Kit, the Migration Assessment Tool identifies some of the code patterns that you need to handle to achieve a successful migration of your apps.
 
 You have to follow different approaches, depending on the pattern:
 

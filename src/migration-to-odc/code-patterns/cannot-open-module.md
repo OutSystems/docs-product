@@ -8,6 +8,13 @@ figma:
 helpids: 30554
 coverage-type:
   - unblock
+tags: migration issues, module troubleshooting, error resolution, outsystems 11, service studio
+audience:
+  - platform administrators
+  - tech leads
+outsystems-tools:
+  - service studio
+  - service center
 ---
 
 # Cannot open module
@@ -18,7 +25,7 @@ The Assessment Migration Toolkit cannot access and analyze the module, which blo
 
 You must solve this pattern in O11 before proceeding with the code migration to ODC.
 
-## **Solve in O11**
+### Solve in O11
 
 1. Try opening the module in Service Studio.
 

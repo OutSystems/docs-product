@@ -1,6 +1,6 @@
 ---
-summary:
-tags:
+summary: This article provides guidelines for handling Traditional Web apps consumption before migrating O11 apps to OutSystems Developer Cloud (ODC).
+tags: reactive web apps, module conversion, migration guide, outsystems 11, traditional web apps
 guid: 5599ed1d-6b0e-4862-9fe5-0603ab025fa5
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
@@ -9,6 +9,12 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 helpids: 30549
 coverage-type:
   - unblock
+audience:
+  - frontend developers
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - service studio
 ---
 
 # Asset consuming a reference to a Traditional Web element
@@ -19,7 +25,7 @@ In ODC, all Web apps are reactive. Traditional Web apps aren't supported. This m
 
 You must solve this pattern in O11 before proceeding with the code migration to ODC.
 
-### **Solve in O11**
+### Solve in O11
 
 Depending on your scenario, solve this pattern in one of the following ways:
 

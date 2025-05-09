@@ -18,7 +18,9 @@ coverage-type:
 ---
 # Asset consuming a Process
 
-Currently, the Migration Kit doesn't support the automatic migration of O11 BPTs to [ODC Workflows](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/about_business_processes/workflows_in_odc/).
+In ODC, business processes are available as [workflows](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/about_business_processes/workflows_in_odc/), which have a different architecture and may still have limited support when compared to [O11 BPTs](../../building-apps/processes/intro.md).
+
+Thus, currently, ODC Assets can't consume Processes.
 
 ## How to solve
 
@@ -36,4 +38,4 @@ If you have access to the Migration Kit, and want to unblock the migration of th
 
 * If you are doing a one-shot migration, replace the Process consumption with a placeholder Action. Once it's possible to automatically migrate O11 BPTs to ODC Workflows, you'll be able to migrate the missing Processes and BPT functionality.
 
-* If you are doing an incremental migration, in the Producer app, create a REST Expose that wraps the Process. Then in the consuming asset replace the process consumption with a Consume REST that consumes the Process REST Expose.
+* If you are doing an incremental migration, in the Producer app, create a REST Expose that wraps the Process. Then, in the consumer asset, replace the Process consumption with a Consume REST that consumes the Process REST Expose.

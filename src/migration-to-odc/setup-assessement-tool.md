@@ -98,7 +98,7 @@ To set up the Migration Assessment Tool, follow these steps:
 
 ### Step 1. Install the Engine in the LifeTime environment { #engine }
 
-1. Download the [Migration Assessment Tool Engine solution pack](resources/Migration_Assessment_Engine_v1_5_11_5.osp).
+1. Download the [Migration Assessment Tool Engine solution pack](resources/Migration_Assessment_Engine_v1_5_11_6.osp).
 
 1. Go to the Service Center console of your LifeTime environment (`https://<lifetime_environment>/ServiceCenter`).
 
@@ -106,7 +106,7 @@ To set up the Migration Assessment Tool, follow these steps:
 
 ### Step 2. Install the Console in the Development environment { #console }
 
-1. Download the [Migration Assessment Tool Console solution pack](resources/Migration_Assessment_Console_v1_5_11_5.osp).
+1. Download the [Migration Assessment Tool Console solution pack](resources/Migration_Assessment_Console_v1_5_11_6.osp).
 
 1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
 
@@ -116,7 +116,7 @@ To set up the Migration Assessment Tool, follow these steps:
 
 ### Step 3. Install the development Probe in the Development environment { #probe-dev }
 
-1. Download the [Migration Assessment Tool Probe solution pack](resources/Migration_Assessment_Probe_v1_5_11_5.osp).
+1. Download the [Migration Assessment Tool Probe solution pack](resources/Migration_Assessment_Probe_v1_5_11_6.osp).
 
 1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
 

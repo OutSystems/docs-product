@@ -63,6 +63,7 @@
     - href: app-architecture/data/improving-performance-distributed-caching.md
     # Performance Best Practices - References
     - href: app-architecture/references.md
+    - href: app-architecture/performance-top-10-rules.md
 # Building apps
 - href: building-apps/intro.md
 - topics:

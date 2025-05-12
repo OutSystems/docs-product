@@ -48,7 +48,7 @@ The following are some of the key concepts of cross-region disaster recovery:
  
 <div class="info" markdown="1">
 
-OutSystems XRDR support RPO values of 4 hours or 24 hours, that can be defined per production environment. Please contact your OutSystems account team for more information.
+OutSystems XRDR supports RPO of either 4 hours or 24 hours, depending on the XRDR add-on selected for the production environment. For more information, please contact your OutSystems account team.
 
 </div>
 
@@ -63,7 +63,7 @@ OutSystems XRDR support RPO values of 4 hours or 24 hours, that can be defined p
 
 <div class="info" markdown="1">
 
-OutSystems XRDR has fixed values of RTO of 24 hours and 48 hours in case of Sentry infrastructures.
+OutSystems XRDR supports a standard RTO of 24 hours. For production environments that include Sentry, the RTO is 48 hours.
 
 </div>
 

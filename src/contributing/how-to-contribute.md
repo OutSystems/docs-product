@@ -4,7 +4,12 @@ guid: 54551f96-1028-45cf-9206-1677d00e0389
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary:
+summary: Collaborate with the OutSystems 11 (O11) community by contributing to our documentation through GitHub to improve and update product content and how-tos.
+tags: outsystems documentation, github contributions, product documentation, how-tos, community collaboration
+audience:
+  - none
+outsystems-tools:
+  - none
 ---
 # How to Collaborate with our Documentation
  
@@ -28,7 +33,6 @@ Don't have a GitHub account? Sign up [here](https://github.com/join).
 All of our documentation is available in the following GitHub repositories:
  
 - [Product Documentation](https://github.com/OutSystems/docs-product/)
-- [Best Practices](https://github.com/OutSystems/docs-bestpractices/)
 - [How-tos](https://github.com/OutSystems/docs-howtos/)
  
 In these repositories, you can make the following types of contributions:

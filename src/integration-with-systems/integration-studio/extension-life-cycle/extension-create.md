@@ -27,9 +27,13 @@ topic:
 
 Integration Studio enables you to create an extension — a set of **Actions**, **Entities**, and **Structures** available in Service Studio but implemented in third-party technologies. An extension can be [used in any module](<../extension-life-cycle/extension-use.md>) after it's published in the Platform Server.
 
-To publish a new extension you must be granted the "Change & Deploy Applications" permission.
+To publish a new extension you must be granted the **Change & Deploy Applications** permission.
 
-If you don't have LifeTime installed in your infrastructure, User Management is done in Service Center. In this case, to publish a new extension you must be granted the "Allow Extensions" permission. The "Allow Foreign Entities" permission is also required if your extension exports entities.
+If you don't have LifeTime installed in your infrastructure, User Management is done in Service Center. In this case, to publish a new extension you must be granted the following permissions:
+
+* **Allow Extensions**
+* **Allow Foreign Entities**, if your extension exports entities
+* **Allow New Database Connection**, if your extension defines new database connections
 
 ## How to create an extension
 

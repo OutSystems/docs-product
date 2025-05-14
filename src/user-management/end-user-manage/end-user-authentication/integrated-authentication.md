@@ -22,7 +22,7 @@ topic:
 
 <div class="info" markdown="1">
 
-Applies to both Traditional Web Apps and Reactive Web Apps. For Reactive Web Apps, you need to activate single sign-on between app types.
+Applies only to Traditional Web Apps.
 
 </div>
 

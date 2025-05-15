@@ -49,5 +49,5 @@ This example shows how to create a simple Column Chart with data labels.
 
 After following these steps, you can publish your module:
 
-![Image of the final result showing a published Column Chart with data labels](images/chartcolumn-result.png "Final Column Chart Result")
+![Image of the final result showing a published Column Chart with data labels](images/chart-column-result.png "Final Column Chart Result")
 

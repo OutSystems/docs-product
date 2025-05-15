@@ -17,7 +17,7 @@ coverage-type:
   - apply
   - remember
 topic:
-  - manage-roles
+  - create-app-role
 ---
 
 # Create and Use Roles

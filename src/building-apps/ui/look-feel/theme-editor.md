@@ -92,7 +92,7 @@ Background color gradient
 :   Change the type of gradient applied to the color of the Login Screen background. This gradient doesn't apply to a background image.
 
 Background image
-:   Select an image to use as the background of the Login Screen. If the background image has transparent areas
+:   Select an image to use as the background of the Login Screen. If the background image has transparent areas, those areas appear with the selected background color.
 
 ## Resetting your Theme Editor customization
 

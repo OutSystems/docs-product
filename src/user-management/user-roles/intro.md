@@ -17,7 +17,7 @@ coverage-type:
   - remember
   - apply
 topic:
-  - how-roles-work
+  - app-roles
   - anonymous
 ---
 

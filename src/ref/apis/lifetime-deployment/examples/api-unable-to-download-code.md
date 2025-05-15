@@ -1,11 +1,20 @@
 ---
 summary: Explore troubleshooting steps for downloading application source code in OutSystems 11 (O11).
-tags: 
+tags: troubleshooting guide, environment configuration, api usage, permissions management, service accounts
 locale: en-us
 guid: E542C662-6053-4758-A514-1A4117364DD0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - lifetime
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Unable to download the source code of an application
@@ -147,6 +156,6 @@ Request: `GET /environments/{EnvironmentKey}/modules/{ModuleKey}/sourcecodeacces
 
 If you see an Error message such as **The resulting source code package has X Mb. The maximum size allowed is 150 Mb. Please refer to documentation on how to overcome this error.**, this means that the resulting source code archive is bigger than 150Mb. In such scenarios, because of scalability and performance reasons the API cannot store and send such big files.
 
-As a workaround, you can split the application to run the SAST in smaller apps and then call the API for these small applications, or you can call the [Module version of the API](api-request-code.md#get-the-source-code-of-a-module) to get the source code at the module level.
+As a workaround, you can call the [Module version of the API](api-request-code.md#get-the-source-code-of-a-module) to get the source code at the module level.
 
 If the above validations didn't help you solve the issue and you need further assistance, [open a support case](https://www.outsystems.com/SupportPortal/CaseOpen/) to get help from OutSystems Support.

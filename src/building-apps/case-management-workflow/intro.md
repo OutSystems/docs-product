@@ -1,12 +1,23 @@
 ---
-tags:
+tags: case management, application development, visual workflows, no-code development, decision making
 summary: OutSystems 11 (O11) offers tools like Workflow Builder and Case Management Framework for developing case management apps.
 guid: 464c3478-171b-4f7f-bad6-2e11c4252e5b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:798
+audience:
+  - full stack developers
+  - frontend developers
+  - business analysts
+outsystems-tools:
+  - service studio
+  - workflow builder
+  - case management framework
+coverage-type:
+  - understand
 ---
+
 # Create case management and workflow apps
 
 Case Management Framework (CMf) allows you to leverage a common set of features helping you build powerful Case Management applications faster and easier in Service Studio. CMf also supports case management application development in the web application Workflow Builder (WB). WB enables anyone in the business to build their own apps in minutes by simply creating visual workflows, and without the need of coding.

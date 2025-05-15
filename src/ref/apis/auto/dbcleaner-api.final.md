@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) DbCleaner API facilitates database space management by allowing deletion of unused entities, attributes, and module versions.
-tags: support-application_development; support-Database
+tags: database management, api, data cleanup, application lifecycle management, environment management
 locale: en-us
 guid: 9fdba27d-69ca-46b4-9a7b-6dee299c8084
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - remember
 ---
 
 # DbCleaner API
@@ -140,11 +148,11 @@ OlderThan
 
 ModuleId
 :   Type: optional, Integer.  
-    The module identifier. If not specified, returns module versions of all modules.
+    The module identifier. If not specified, deletes module versions of all modules.
 
 MaxNumberOfVersions
 :   Type: optional, Integer.  
-    The maximum number of versions to get. If not specified, returns the oldest 100 module versions. Set to 0 (zero) to get all the module versions.
+    The maximum number of versions to get. If not specified, deletes the oldest 100 module versions. Set to 0 (zero) to get all the module versions.
 
 *Outputs*
 

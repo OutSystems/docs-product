@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework;
+tags: ui development, data handling, outsystems development, case activities management, application development
 summary: Learn how to display a list of activities assigned to a case worker in OutSystems 11 (O11) using UI module dependencies and data actions.
 guid: 826bbac1-ea6d-46e0-9e43-3581d214331c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1903
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # How to get list of activities assigned to a case worker
@@ -32,7 +41,7 @@ To get a list of activities assigned to a case worker logged in to your app, fol
 
 1. In the properties pane of the **Case_GetActivities** action, click on **Expand ActivityScope**.
 
-![Screenshot showing the properties pane with the Expand ActivityScope option for the Case_GetActivities action](images/list-activ-expand-ss.png "Expand ActivityScope Properties")
+    ![Screenshot showing the properties pane with the Expand ActivityScope option for the Case_GetActivities action](images/list-activ-expand-ss.png "Expand ActivityScope Properties")
 
 1. To get activities that the logged in user can work on, set **ActivityAssigneeType** as `Entities.ActivityAssigneeType.MyActivities`.
 

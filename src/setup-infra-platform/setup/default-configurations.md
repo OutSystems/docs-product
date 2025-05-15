@@ -5,6 +5,15 @@ guid: e7fb04c6-9cb6-48d9-a4e7-8d4ad3702613
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: server configuration, hardware requirements, installation checklist, software requirements, file system
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - platform server
+coverage-type:
+  - understand
 ---
 
 # Default Platform Server and database configurations
@@ -63,10 +72,17 @@ The executable and configuration files are located in `C:\Program Files\OutSyste
 |Log|LogServer.exe|LogServer.exe.config|Local System account|
 |Scheduler Service|Scheduler.exe|Scheduler.exe.config|NT Service\OutSystems Scheduler Service|
 
-Note: When using SQL Server as the platform database with Windows Authentication, OutSystems services (OutSystems Deployment Controller Service, OutSystems Deployment Service, OutSystems Scheduler Service) run under the configured Windows account.
+<div class="info" markdown="1">
 
-The logs of these services are stored in Windows Event Viewer.
+When using SQL Server as the platform database with Windows Authentication:
 
+* The Deployment Controller and Deployment services run under the Windows account configured as Admin in Configuration Tool.
+* The Scheduler service runs under the Windows account configured as Runtime in Configuration Tool.
+* The Windows account configured as Admin in Configuration Tool is granted local administrator permission (to deploy new applications and manage the IIS).
+
+The logs for the Deployment Controller, Deployment, and Scheduler services are stored in Windows Event Viewer.
+
+</div>
 
 ## Database configurations
 

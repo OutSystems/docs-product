@@ -5,17 +5,28 @@ guid: d89ecb04-0232-407d-b5ea-9423ab57dc8b
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3653-5&mode=design&t=KKbqsgPPqdrPLkpd-0
+tags: firebase cloud messaging, notifications, cross-platform messaging, mobile app development, outsystems plugin
+audience:
+  - mobile developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - remember
+  - apply
+  - understand
 ---
 
-# Firebase Cloud Messaging plugin using configurator APIs
+# Firebase Cloud Messaging Plugin using configurator APIs
 
 <div class="info" markdown="1">
 
-This article applies only to Firebase Cloud Message plugin version 3.0.1 and older. These old versions use Cloud Messaging Configurator REST APIs to manage the notifications. 
+This article applies only to Firebase Cloud Messaging plugin version 3.0.1 and older. These old versions use Cloud Messaging Configurator REST APIs to manage the notifications. 
 
 The Cloud Messaging Configurator REST APIs, version 3.0.1 and older, are deprecated. This means that the **v2** and **v1** endpoints are no longer functional. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref). 
 
-OutSystems recommends that you migrate to [Firebase Cloud Messaging plugin](firebase-messaging.md) version 4.0.0  and newer by June 2024.  
+OutSystems recommends that you migrate to [Firebase Cloud Messaging plugin](firebase-messaging.md) version 4.0.0 and newer by June 2024.  
 
 </div>
 
@@ -155,6 +166,12 @@ As part of the notification experience, the developer might want to control the 
 * For iOS you can use the **GetBadgeNumber** action to retrieve the current badge number and the **SetBadgeNumber** to specify a given number to be shown on the app icon badge.
 
 * For Android you can only specify a given badge number after receiving a notification. Thus, you can use the **SendLocalNotification** action and set the badge number through the action parameter *BadgeNumber*.
+
+<div class="info" markdown="1">
+
+Starting on Android 14, most devices do not show the badge number when long-pressing the app's icon.
+
+</div>
 
 ![Screenshot of the action to set the badge number in Firebase Messaging](images/firebase-messaging-set-badge-old-ss.png "Firebase Messaging Set Badge Number")
 

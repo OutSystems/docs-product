@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) enables the exposure of methods via REST APIs, incorporating security validations and customizable request and response handling.
-tags: support-application_development; support-Integrations_Extensions
+tags: rest apis, security, authentication, api development, rest api integration
 locale: en-us
 guid: 08e6c830-5f88-4645-b86f-412e1c399a1f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:100
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - define-methods
 ---
 
 # Expose REST APIs

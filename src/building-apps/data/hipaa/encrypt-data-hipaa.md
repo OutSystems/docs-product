@@ -5,6 +5,18 @@ guid: 4b9ff75f-4e89-4a94-85bc-f6c7c3cc3f9c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A524&mode=design&t=GF97AOUqsRf9tsAh-1
+tags: data encryption, cloud security, hipaa compliance, outsystems cloud, entity management
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - data-encryption
 ---
 
 # Encrypting data for HIPAA compliance
@@ -15,10 +27,13 @@ After subscribing to the OutSystems Cloud HIPAA offering, you can enable the enc
 
 1. Start by [creating a CRUD wrapper action for the creation or updating of records from that entity](#crud-wrapper).
 
-1. Then, for each attribute you need to encrypt, understand if the data must be saved as unsearchable or as searchable. The previous diagram helps with that decision.
+1. Then, for each attribute you need to encrypt, determine whether the data needs to be searchable or unsearchable. For more information about searchable and unsearchable data refer to [About searchable and unsearchable data](intro.md#about-searchable-and-unsearchable-data)
 
-    * If an attribute holds PHI data, like the name or address of a patient, you must [encrypt the data as unsearchable (using EncryptEntityText)](#encrypt-no-search).
-    * For attributes that hold other type of data that can't be used by itself to identify a patient, like the blood type of a patient, decide if you need that attribute to be [searchable (using EncryptIndexText)](#encrypt-search) or [unsearchable (using EncryptEntityText)](#encrypt-no-search).
+<div class="info" markdown="1">
+
+You have the control to decide which encrypted data remains searchable.
+
+</div>
 
 ## Create a wrapper action to save data { #crud-wrapper }
 

@@ -1,11 +1,21 @@
 ---
 summary: Learn how to manage and translate multilingual web applications in OutSystems 11 (O11) for diverse locales using various resources and tools.
-tags: runtime-traditionalweb; support-application_development
+tags: localization, internationalization, application translation, language support, locale management
 locale: en-us
 guid: e4525653-9e57-4bb3-8426-a74a898addd0
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:35
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - translating-apps
 ---
 
 # Multilingual Web Applications

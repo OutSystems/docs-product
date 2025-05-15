@@ -1,11 +1,19 @@
 ---
 summary: Learn to configure OIDC authentication in OutSystems 11 (O11) LifeTime, including local administrator setup and scope management.
-tags:
+tags: authentication, oidc, security, single sign-on, user management
 locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1914:7765
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Configuring LifeTime authentication
@@ -49,12 +57,12 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
     * **Client ID**: Client ID for both desktop and web tools.
         
     * **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
-
-        <div class="warning" markdown="1">
-
-         For Azure and OKTA you must use ``preferred_username`` as the **Username Claim** value.
-
-         </div>
+  
+    <div class="warning" markdown="1">
+      
+    For Microsoft Entra and OKTA you must use ``preferred_username`` as the **Username Claim** value.
+         
+    </div>
        
     * **Scopes**: Clicking the **Test** button after you enter the well-known configuration URL fetches all the scopes supported and enabled in the identity provider. The scopes are displayed on the **Configuration details** section. Any required scope for the user authentication process can be added and saved for the configuration.
   
@@ -88,8 +96,8 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
         **Recommended Additional Scopes**:
                     The following are some recommendations for additional scope selection based on commonly used identity providers:
 
-         *  **Azure AD**:
-                    For Azure AD, it is recommended to add the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
+         *  **Microsoft Entra**:
+                    For Microsoft Entra, it is recommended to add the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
 
          *  **Okta**:
                     For Okta, it is recommended to add the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.

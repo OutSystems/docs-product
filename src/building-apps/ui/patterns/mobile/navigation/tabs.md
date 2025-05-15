@@ -1,11 +1,18 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, mobile app development, service studio widgets, content organization, ui design
 summary: Learn how to implement and customize the Tabs UI Pattern in OutSystems 11 (O11) for effective content organization in mobile and reactive web apps.
 locale: en-us
 guid: a5e72a7a-870d-46e7-b2be-a15ac6948b97
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=215:13
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Tabs
@@ -26,7 +33,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Tabs UI Pattern to divide content into meaningful sections. This pattern is useful when you want the user to be able to switch between sections within the same context while not having to not to navigate to different areas.
 
-![Animated demonstration of switching between different tabs in the Tabs UI Pattern](images/tab-gif1.gif "Tabs UI Pattern Interaction")
+<iframe src="https://player.vimeo.com/video/977630907" width="750" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Switching between different tabs in the Tabs UI Pattern.</iframe>
 
 ## How to use the Tabs UI Pattern
 
@@ -114,6 +121,12 @@ The following CSS code is an example of how to change the style of selected item
 | Property| Description|
 |---|---|
 | ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+<div class="info" markdown="1">
+
+To ensure predictable behavior and avoid runtime issues, the Tabs component is designed to include at least one TabsHeaderItem and one TabsContentItem.
+
+</div>
 
 ## Events
 

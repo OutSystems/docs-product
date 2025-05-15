@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, range slider
 summary: Explore the Range Slider UI Pattern in OutSystems 11 (O11) for selecting values within a defined range in mobile and reactive web apps.
 locale: en-us
 guid: 788ee1a3-fd00-43dc-afc9-1cf6d25a1805
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:41
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Range Slider
@@ -82,7 +90,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     ![Image depicting the creation of a local variable of type decimal for the Range Slider in Service Studio](images/rangeslider-locvar-ss.png "Creating a Local Variable for Range Slider")
 
-1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
+1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Close**.
 
     ![Screenshot showing how to bind a newly created variable to the expression widget for the Range Slider](images/rangeslider-expression-ss.png "Binding Variable to Range Slider Expression")
 

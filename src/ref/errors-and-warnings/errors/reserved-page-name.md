@@ -1,11 +1,18 @@
 ---
 summary: Explore how OutSystems 11 (O11) handles reserved page names to ensure SEO-friendly URLs in Reactive Web Apps.
-tags:
+tags: ide usage, reactive web apps, seo, url management, error handling
 locale: en-us
 guid: 44bfd373-e10e-44d6-be07-daaaa05e0c98
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Reserved Page Name

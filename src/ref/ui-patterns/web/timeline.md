@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, css customization, web development, traditional web, outsystems ui
 summary: Explore how to integrate the Timeline UI Pattern with ListRecords in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: c0cdbad2-39c2-434e-afc5-6f05acf4901d
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:589
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Timeline Reference

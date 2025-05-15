@@ -6,6 +6,15 @@ guid: 4d0eddfa-fe0b-4811-8493-51c59d434c3e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: boolean variables, checkbox properties, ui design, outsystems ui components
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Checkbox

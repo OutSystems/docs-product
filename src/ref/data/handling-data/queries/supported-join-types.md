@@ -1,12 +1,23 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, data modeling, aggregates, entity relationships, database queries
 locale: en-us
 guid: d2ac8884-a37b-423d-9655-b235291485cd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=843:1507
 summary: Explore the supported join types in OutSystems 11 (O11) for efficiently querying and combining data from multiple entities.
+audience:
+  - frontend developers
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - joins
 ---
+
 # Supported Join Types
 
 Usually your data is not stored in a single Entity. So, when performing queries on the data, you need to combine the records that is stored in multiple Entities. This is also known as joining records from multiple Entities.

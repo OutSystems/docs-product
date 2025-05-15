@@ -5,6 +5,15 @@ guid: ef21f07a-0b80-4be3-84c6-e99bcc2093ef
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: cell widget, editable tables, ui components, web development, ui customization
+audience:
+  - frontend developers
+  - mobile developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Cell Widget

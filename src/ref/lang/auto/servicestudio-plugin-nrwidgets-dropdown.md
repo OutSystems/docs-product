@@ -6,6 +6,15 @@ guid: 15a7a421-2257-46eb-b995-caff2bf6404f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: dropdown widget, user interface components, html tags, data binding, custom ui elements
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Dropdown
@@ -196,6 +205,27 @@ With the Dropdown Widget you can implement two types of lists:
 <td></td>
 <td>Text</td>
 <td></td>
+</tr>
+</tbody>
+</table>
+
+## Special attributes
+
+<table markdown="1">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default value</th>
+<th>Observations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td title="Name">apply-to-child</td>
+<td> The Dropdown widget is a select element enclosed in a div. By default, its attributes are rendered in the div. apply-to-child is an attribute of the Dropdown that controls where other attributes are rendered. It lists the attribute names to render in the select element e.g. apply-to-child="aria-describedby,data-id" makes aria-described by and data-id attributes render in the select. Setting apply-to-child="*" renders all attributes in the select. </td>
+<td>If apply-to-child is not added to the Dropdown attribute list, all attributes are rendered in the enclosing div by default. </td>
+<td>This functionality only applies to Dropdowns with Options Content set to Text Only. "style" and "class" attributes are unaffected. </td>
 </tr>
 </tbody>
 </table>

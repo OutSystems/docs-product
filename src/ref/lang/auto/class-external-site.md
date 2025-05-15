@@ -6,13 +6,22 @@ guid: 45080b5d-e942-4a12-935b-ac0db428c0e2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: url handling, url parameters, external linking, web navigation, data encoding
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # External Site
 
 Navigates to a given URL, which can be defined during development time or runtime. During the development time the URL is entered in the **URL** property of the External Site Tool. To supply the URL dynamically you need the URL input parameter which you can create by right-clicking the External Site in the tree and selecting **Add Input Parameter**. The name `URL` of the input parameter must not change.
 
-Encode the URL by using the [EncodeURL()](<builtinfunction-text.md#EncodeUrl>) built-in function.
+When constructing URLs dynamically, only input parameters should be encoded using the [EncodeURL()](<builtinfunction-text.md#EncodeUrl>) built-in function. The base URL itself shouldn't be encoded, as this can lead to incorrect results.
 
 ## Properties
 

@@ -399,7 +399,7 @@
 # On Session Start
 - ref/lang/auto/class-on-session-start.md:
     # Sessions in Web Applications
-    - building-apps/data/session.md
+    - building-apps/data/session/session.md
 
     
 # ------- Mobile Interfaces -------
@@ -641,7 +641,7 @@
     # Blocks in Themes
     - building-apps/ui/look-feel/themes.md#blocks
     # Lifecycle Events
-    - one-way: building-apps/logic/screen-block-lifecycle-events.md
+    - one-way: building-apps/ui/screens/screen-block-lifecycle-events.md
 
 # Client Variable
 - ref/lang/auto/class-client-variable.md:
@@ -651,12 +651,12 @@
 # Session Variable
 - ref/lang/auto/class-session-variable.md:
     # Sessions in Web Applications
-    - building-apps/data/session.md
+    - building-apps/data/session/session.md
 
 # Event
 - ref/lang/auto/class-event.md:
     # Screen and Block Lifecycle Events
-    - building-apps/logic/screen-block-lifecycle-events.md
+    - building-apps/ui/screens/screen-block-lifecycle-events.md
     - building-apps/ui/reuse/propagate-changes-from-a-reusable-screen-element.md
     
 # Screen
@@ -666,7 +666,7 @@
     # Navigate to Another Screen
     - building-apps/ui/navigation/navigate-to-detail-screen.md
     # Lifecycle Events
-    - one-way: building-apps/logic/screen-block-lifecycle-events.md
+    - one-way: building-apps/ui/screens/screen-block-lifecycle-events.md
 
 # -------- Logic ---------
 # Built-in Functions

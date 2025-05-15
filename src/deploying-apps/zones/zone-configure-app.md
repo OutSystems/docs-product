@@ -1,11 +1,18 @@
 ---
 summary: This guide explains how to configure an application in OutSystems 11 (O11) to use a specific deployment zone.
-tags: support-Application_Lifecycle; support-Infrastuture_Architecture
+tags: deployment, configuration, service center, deployment zones, on-premises
 locale: en-us
 guid: eed19a98-c672-43ac-90c9-70b9f33d921a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Configure an Application to Use a Deployment Zone

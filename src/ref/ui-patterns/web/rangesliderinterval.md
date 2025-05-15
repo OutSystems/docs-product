@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: component customization, css styling, web development, ui components, outsystems ui framework
 summary: Explore the features and customization options of the Range Slider Interval component in OutSystems 11 (O11).
 locale: en-us
 guid: 3c86ec87-d4c6-441b-adf1-bdb30f056a62
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A549&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Range Slider Interval Reference

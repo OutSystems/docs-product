@@ -5,7 +5,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: OutSystems 11 (O11) enables block events to interact with parent elements by triggering notifications and handling data through input parameters.
+tags: ide usage, reactive web apps, tutorials for beginners, block events, data handling
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - how-to-use-events
 ---
+
 # Event
 
 An event is an element that allows a block to interact with its parent element by notifying it that a particular event has occurred. Essentially, the block triggers an event and then the parent element handles it.

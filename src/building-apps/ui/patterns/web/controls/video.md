@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, multimedia content, video embedding, application design, dependency management
 summary: Explore how to embed a native video player in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 23431108-d3aa-4c10-9307-c8ad925dc9f1
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A1&mode=design&t=KpVEJMvnBwiukqql-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Video

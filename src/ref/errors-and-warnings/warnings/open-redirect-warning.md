@@ -5,6 +5,15 @@ guid: 8e3aa9ec-bcb4-4d64-b16c-1a0a77110b8b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: security practices, application security, vulnerability management, web security, httprequesthandler
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Open Redirect Warning

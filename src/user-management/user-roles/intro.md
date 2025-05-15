@@ -1,11 +1,24 @@
 ---
 summary: Explore user role management in OutSystems 11 (O11) for controlling access to application screens and operations.
-tags: 
+tags: user role management, access control, authentication, role-based access control, security
 locale: en-us
 guid: d3fe610b-9bf9-4695-b516-01820a33abba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:114
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - remember
+  - apply
+topic:
+  - app-roles
+  - anonymous
 ---
 
 # User Roles
@@ -31,7 +44,7 @@ Besides the System Roles already provided, you can define your own custom Roles 
 
 ## Persistency in Roles
 
-Granting and revoking Roles during runtime (using the Grant&lt;Role name&gt;Role and Revoke&lt;Role name&gt;Role actions) can be persistent across multiple sessions or only be active for a single session. You can only change this setting for Traditional Web Apps.
+Granting and revoking Roles during runtime (using the Grant&lt;Role name&gt;Role and Revoke&lt;Role name&gt;Role actions) can be persistent across multiple sessions or only be active for a single session. You can only change this setting for Traditional Web Apps and Service Modules.
 
 ![Screenshot showing the 'Is Persistent' property settings for Roles in Service Studio](images/role-ispersistent-ss.png "Role Persistence Setting in Service Studio")
 

@@ -1,23 +1,37 @@
 ---
 summary: This article details how to configure log streaming from OutSystems 11 (O11) to Dynatrace, including prerequisites and setup instructions.
-tags:
+tags: application performance management, logging, configuration management, outsystems platform, cloud infrastructure
 locale: en-us
 guid: 7e46389e-dc1f-42cc-9225-929bed3b82a1
 app_type: traditional web apps, mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3139%3A322&mode=design&t=IIMVc2WTi7UxHv00-1
 platform-version: o11
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - lifetime
+  - platform server
+coverage-type:
+  - apply
 ---
+
 # Stream logs to Dynatrace
 
 This article explains how you can set up log streaming from OutSystems applications to the **Dynatrace** APM tool.
 
 ## Prerequisites
 
-* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md).
+Before streaming logs to Dynatrace, ensure you have: 
 
-* Installed Platform Server version 11.23.1 or higher.
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
 
-* Installed LifeTime version 11.19.0 or higher.
+* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
+
+* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
+
+* Have subscription to log streaming. Contact your Account Manager for provisioning.
 
 ## Set up log streaming
 
@@ -57,7 +71,7 @@ Once you've completed these steps, go to LifeTime and [configure the log streami
 
 <div class="info" markdown="1">
 
-The streaming follows the limits of Dynatrace's ingestion API. For more information, refer to Dynatrace's documentation on [Ingest OpenTelemetry logs](https://docs.dynatrace.com/docs/extend-dynatrace/opentelemetry/getting-started/logs/ingest#ingestion-limits).   
+Large 'content' and 'exception.stacktrace' attribute values are truncated to 4,000 characters before streaming. For more information regarding limits followed while streaming to Dynatrace's ingestion API, refer to Dynatrace's documentation on [Ingest OpenTelemetry logs](https://docs.dynatrace.com/docs/extend-dynatrace/opentelemetry/getting-started/logs/ingest#ingestion-limits).   
 
 </div>
 

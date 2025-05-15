@@ -5,11 +5,19 @@ guid: 7b8ee1bd-6f84-4af0-b6a4-ea2ff8aaa6e4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ajax, user interface, screen optimization, dynamic content loading, client-side rendering
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Ajax Refresh
 
-Use the **Ajax Refresh** element in your flow to refresh parts of the screen without reloading the entire page.
+Use the [**Ajax Refresh**](../../../building-apps/logic/screen-partial-refresh.md) element in your flow to refresh parts of the screen without reloading the entire page.
 
 Keep the following key points in mind when using **Ajax Refresh**:
 

@@ -1,11 +1,22 @@
 ---
 summary: Learn how to configure operational, runtime, and compile-time settings in OutSystems 11 (O11) via the Service Center to optimize application behavior.
-tags: support-Installation_Configuration; version-11
+tags: configuration management, service center usage, platform optimization, application deployment, cache management
 locale: en-us
 guid: fd03d085-fcb8-4b45-939e-1931252ade2c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3164%3A321&mode=design&t=98kL4vRdGIKpuwQm-1
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - tech leads
+outsystems-tools:
+  - service center
+coverage-type:
+  - understand
+  - remember
 ---
 
 # Applying Configurations in Service Center
@@ -20,7 +31,7 @@ Settings can be grouped into three categories, based on their impact (ordered fr
 
 ## Operation Settings
 
-**Operation** settings are stored in the database. When you save changes to operation settings, those changes are effective immediately after clearing the cache for the setting (for example, the schedule of a timer).
+**Operation** settings are stored in the database. When you save changes to operation settings, those changes are effective immediately.
 
 ## Runtime Settings
 

@@ -1,11 +1,21 @@
 ---
 summary: Explore how OutSystems 11 (O11) facilitates application version tagging and deployment through its LifeTime interface.
-tags: support-Application_Lifecycle-featured
+tags: application deployment, version control, application tagging, deployment strategies, mobile app packaging
 locale: en-us
 guid: d97b99fb-75a2-453c-a20d-d4270e09c8ed
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:3
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - apply
+topic:
+  - tag-a-version
 ---
 
 # Tag a Version
@@ -54,6 +64,12 @@ To tag the mobile app, do the following:
     ![Screenshot of the OutSystems LifeTime interface confirming that the mobile app 'MyApp' has been successfully tagged with version 0.2.](images/tag-a-version-4.png "Mobile App Tagged")
 
 The mobile app is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.
+
+<div class="warning" markdown="1">
+
+Note that the mobile version will only be updated in other environments if the application  **is deployed through LifeTime**. Publishing the same version in other environments directly in Service Center or Service Studio will not update the mobile version.
+
+</div>
 
 If you need to install and test the tagged application version in a mobile device still in the Development environment, you can [generate a new mobile package](mobile-app-packaging-delivery/generate-distribute-mobile-app/intro.md) before proceeding with the deploy to Quality. Otherwise, OutSystems generates a new mobile package during the deployment process.
 

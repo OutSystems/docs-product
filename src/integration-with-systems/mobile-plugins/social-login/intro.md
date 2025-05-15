@@ -1,14 +1,24 @@
 ---
 summary: OutSystems 11 (O11) features a Social Login plugin for mobile apps, supporting authentication via Google, Apple, Facebook, and LinkedIn.
-tags: 
+tags: authentication, social media integration, plugin implementation, mobile application development, user experience
 locale: en-us
 guid: 834dcc40-0b87-4161-bcd0-db32053044c7
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1948%3A9454&mode=design&t=187UAgmZTPxcY0ZG-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - remember
+  - apply
 ---
 
-# Social Login plugin
+# Social Login Plugin
 
 <div class="info" markdown="1">
 
@@ -259,7 +269,7 @@ Token | Text | User's access token stored by the social login provider. |
 
 ### Create logic to map users to OutSystems end users { #map-users }
 
-Ensure you map social login users to [OutSystems end users](../../../user-management/end-user-manage/intro.md).
+Ensure you map social login users to [OutSystems end users](../../../user-management/end-user-manage/add-delete-users.md).
 Note that users that sign in using the social login count as non-anonymous end users.
 This means that they count towards the user limits established in your subscription.
 

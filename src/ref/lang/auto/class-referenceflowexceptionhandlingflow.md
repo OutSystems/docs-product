@@ -5,6 +5,17 @@ guid: 76f416af-ffea-48be-aa8c-417d130d33d5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, element identification, web development, software documentation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - how-to-handle-exceptions
 ---
 
 # ReferenceFlowExceptionHandlingFlow

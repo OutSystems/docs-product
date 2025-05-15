@@ -3,9 +3,19 @@ locale: en-us
 guid: a3688c1a-0d04-4d07-a22e-deb8a36862db
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3061-2&t=0cuQUgeosMV2m0Kw-1
 summary: Explore the features of the Action Editor in OutSystems 11 (O11) for editing action properties and managing extensions.
+tags: ide usage, reactive web apps, extensions management, action editing, user interface customization
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Action Editor
 
 The Action Editor allows you to edit the [properties](<../element-property/action.md>) of an action that belongs to your extension.
@@ -28,7 +38,7 @@ To manage the action parameters, see [Action Parameters Editor](<action-paramete
 
 You can change the properties of the action, at any time. Simply double-click in the action in the [Multi-tree navigator](<../workspace.md>) or select the action in the [Multi-tab editor](<../workspace.md>).
 
-![Animated GIF showing a warning icon, indicating a cautionary note about setting actions as functions in Integration Studio](images/warning.gif "Warning Icon") Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, changing this property to Yes could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function by creating an output parameter, if the action has none and you're trying to set property Function to `Yes`.
+![Animated GIF showing a warning icon, indicating a cautionary note about setting actions as functions in Integration Studio](images/warning-icon.png "Warning Icon") Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, changing this property to Yes could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function by creating an output parameter, if the action has none and you're trying to set property Function to `Yes`.
 
 ## Import Details
 

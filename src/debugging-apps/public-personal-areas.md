@@ -5,6 +5,16 @@ guid: 4c1e3298-79aa-4d28-83d1-36c9b4b27cd7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: version control, publishing workflows, debugging, team collaboration, development best practices
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Public and Personal Areas
@@ -13,7 +23,7 @@ A Traditional Web module can be executed and debugged in two different areas: th
 
 <div class="info" markdown="1">
 
-Reactive Web and Mobile modules are always published and debugged in the Public Area.
+Applies only to Traditional Web Apps.
 
 </div>
 

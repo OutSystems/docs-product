@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, search functionality, ux design, web applications, real-time data
 summary: Learn how to implement the Search Balloon UI Pattern in OutSystems 11 (O11) for real-time search results in Traditional Web Apps.
 locale: en-us
 guid: b50125b9-419e-42f0-a55e-1deb3cfe5fc9
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=234%3A36&mode=design&t=KpVEJMvnBwiukqql-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Search Balloon
@@ -80,7 +87,7 @@ In this use case, we create a search balloon for a list of employees.
 
 1. Double-click the Preparation action and then double-click the **GetEmployees** aggregate.
 
-1. Click **Filters**, then click **Add Filter** and in the **Filter Condition** field, enter the relevant logic and click **Done**. In this example, we enter the following condition:
+1. Click **Filters**, then click **Add Filter** and in the **Filter Condition** field, enter the relevant logic and click **Close**. In this example, we enter the following condition:
 
      `Employee.FirstName like "%" + SearchText + "%" or Employee.LastName like "%" + SearchText + "%" or SearchText = ""`.
 
@@ -92,7 +99,7 @@ In this use case, we create a search balloon for a list of employees.
 
     ![Deleting the Text placeholder from the Search Balloon Widget in Service Studio](images/searchballoon-13-ss.png "Delete Text Placeholder")
 
-1. Drag an Expression Widget to the list and enter the relevant expression value, and click **Done**. In this example, we enter the following:
+1. Drag an Expression Widget to the list and enter the relevant expression value, and click **Close**. In this example, we enter the following:
 
     `ListRecords1.List.Current.Employee.Name + " "`
 

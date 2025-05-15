@@ -5,6 +5,15 @@ guid: 554085e9-ccc7-4e7a-8b41-a7dcb7f84429
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error resolution, excel integration, data types handling, best practices, system troubleshooting
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Excel Handling Error

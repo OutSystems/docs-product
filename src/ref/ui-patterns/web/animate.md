@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css animations, ui patterns, web development, user interface design, frontend interactions
 summary: Explore animation features in Traditional Web Apps using OutSystems 11 (O11) for dynamic UI interactions.
 locale: en-us
 guid: 1aad8f7f-9da7-417a-9cfd-3c159905fc99
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:372
+audience:
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
 # Animate Reference
@@ -41,7 +48,6 @@ Applies only to Traditional Web Apps.
 | .animate | .animate-slow | The animation will reach the end in 1500ms |
 | .animate | .animate-fast | The animation will reach the end in 500ms |
 
-
 ## Advanced use case
 
 ### Use the Toggle Animate server action
@@ -56,11 +62,11 @@ It is possible to hide elements in the screen using an Animation.
 
 1. In the Action created, drag the ToggleAnimate Action and set the Widget ID.
 
-    ![Screenshot demonstrating how to set the Widget ID for the ToggleAnimate action in a Traditional Web App](images/animate-5-ss.png "Setting Widget ID for ToggleAnimate Action")
+   ![Screenshot demonstrating how to set the Widget ID for the ToggleAnimate action in a Traditional Web App](images/animate-5-ss.png "Setting Widget ID for ToggleAnimate Action")
 
 1. Publish and test.
 
-    ![Animated demonstration of the Toggle Animate action in a Traditional Web App](images/animate-6-ss.gif "Toggle Animate Action Demonstration")
+    <iframe src="https://player.vimeo.com/video/996204020" width="750" height="416" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the flickering issue with a screen element in a mobile app.</iframe>
 
 ### Use animations on scroll
 
@@ -72,4 +78,4 @@ It is possible to load and animate the elements when they are not visible in the
 
 1. Publish and test.
 
-    ![Animated demonstration of elements loading and animating on scroll in a Traditional Web App](images/animate-8-ss.gif "LoadOnVisible and Animate Patterns Demonstration")
+    <iframe src="https://player.vimeo.com/video/996212943" width="750" height="424" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Animated demonstration of elements loading and animating on scroll in a Traditional Web App.</iframe>

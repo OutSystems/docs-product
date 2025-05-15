@@ -5,6 +5,16 @@ guid: c5e5c6fd-fba7-4be6-ba09-d1b028c8a1c1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: extension entities, database integration, entity management, user permissions, external database
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Define Extension Entities

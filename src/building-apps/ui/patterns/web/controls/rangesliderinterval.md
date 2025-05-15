@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui components, web development, outsystems development, ui patterns, interactive elements
 summary: Implement the Range Slider Interval UI pattern in OutSystems 11 (O11) for value selection in web apps.
 locale: en-us
 guid: 94ed04bf-3e70-41d6-9d40-713927750c02
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=234%3A25&mode=design&t=KpVEJMvnBwiukqql-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Range Slider Interval
@@ -66,7 +74,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     ![Image showing how to add an Ajax Refresh action to a screen action and select the DisplayValue Container widget](images/rangesliderinterval-12-ss.png "Ajax Refresh Action in Service Studio")
 
-1. To bind the **SelectedMinValue** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
+1. To bind the **SelectedMinValue** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Close**.
 
     ![Screenshot of the Expression Value editor with a variable selected for binding to an expression](images/rangesliderinterval-9-ss.png "Binding Variables to Expressions")
 

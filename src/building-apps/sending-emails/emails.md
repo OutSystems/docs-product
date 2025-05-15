@@ -1,11 +1,23 @@
 ---
 summary: Explore how OutSystems 11 (O11) enables sending emails from traditional web applications, including dynamic content composition and asynchronous delivery.
-tags: runtime-traditionalweb; support-application_development
+tags: email integration, web application development, email templates, asynchronous processing, email api
 locale: en-us
 guid: fcef1ee7-5f7d-4c00-a92c-14f0a0039ac0
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:16
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - how-to-create-emails
+  - how-to-send-emails
 ---
 
 # Send an Email From a Traditional Web Application
@@ -24,11 +36,11 @@ This article is about emails in Traditional Web Apps. For Reactive Web Apps, see
 
 OutSystems provides you with tools that allow you to use built-in emails in your web applications: create an email, compose the email content, send emails, send emails with attached files, use emails logging, and even extend email functionality or adapt emails to your needs through the [Emails API](<../../ref/apis/emails-api.md>).
 
-![Screenshot of the email creation interface in OutSystems Traditional Web Apps](images/emails-1.png "Email Creation Interface")
+![Screenshot of the email creation interface in OutSystems Traditional Web Apps](images/emails-1-ss.png "Email Creation Interface")
 
 Emails are very similar to Web Screens. They are created and designed using a Web Block from the Email layout of the [Theme](<../ui/look-feel/themes.md>).
 
-![Example of designing an email using a Web Block from the Email layout in OutSystems](images/emails-2.png "Email Design Using Web Block")
+![Example of designing an email using a Web Block from the Email layout in OutSystems](images/emails-2-ss.png "Email Design Using Web Block")
 
 
 ## Compose the Email
@@ -39,7 +51,7 @@ To compose an Email, do the following:
 
 1. Drag the Email element from the Web Flow Toolbox and drop it in the Web Flow. Alternatively, right-click the Web Flow in the elements tree and select 'Add Email'.
 
-    ![Process of dragging an Email element into the Web Flow in OutSystems](images/emails-3.png "Adding an Email Element to Web Flow")
+    ![Process of dragging an Email element into the Web Flow in OutSystems](images/emails-3-ss.png "Adding an Email Element to Web Flow")
 
 1. Compose the Email content using widgets, in the same way you do for designing a Web Screen:    
 
@@ -49,10 +61,9 @@ To compose an Email, do the following:
     * You can customize the email subject using the input parameters value.
     * To attach files to your Email, use the **Attach File** tool, which you can drag from the Action Flow Toolbox within the **Preparation** action.
 
-![Illustration of composing email content using widgets and input parameters in OutSystems](images/emails-4.png "Email Content Composition Widgets")
+![Illustration of composing email content using widgets and input parameters in OutSystems](images/emails-4-ss.png "Email Content Composition Widgets")
 
 For advanced usages, where you want further control over the email header, you can set specific Extended Properties for your email.
-
 
 ## Send the Email
 
@@ -60,9 +71,9 @@ To send an email within the logic of your action or process, do the following:
 
 1. Drag the **Send Email** tool from the Flow Toolbox into the action flow or process flow, depending on the type of flow you're designing:
 
-    ![Animated GIF showing the action of dragging the Send Email tool into the flow in OutSystems](images/emails-5.gif "Sending an Email in OutSystems")
+    ![Animated GIF showing the action of dragging the Send Email tool into the flow in OutSystems](images/emails-5-ss.png "Sending an Email in OutSystems")
 
-1. Set the runtime data for the message header fields using **Expressions** in the **Send Email** arguments:    
+1. Set the runtime data for the message header fields using **Expressions** in the **Send Email** arguments:
     * **From**: the email address of the sender
     * **To**: the email address(es) of the recipient(s)
     * **CC**: the email address(es) of the recipient(s) of the carbon copy

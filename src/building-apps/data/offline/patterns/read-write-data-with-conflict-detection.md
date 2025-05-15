@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) supports advanced data synchronization and conflict detection for mobile apps, ensuring data integrity across offline scenarios.
-tags: runtime-mobile
+tags: data synchronization, conflict detection, offline data handling, local storage, database synchronization
 locale: en-us
 guid: 9440e4f9-b77c-44ab-9b9a-f5cc985fbfbb
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:4
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - data-syncronization
+  - offline-synch
 ---
 
 # Read/Write Data with Conflict Detection

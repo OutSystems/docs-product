@@ -1,12 +1,24 @@
 ---
 summary: OutSystems 11 (O11) integrates AWS Key Management Service for HIPAA-compliant encryption and decryption of PHI through its Cryptography Services app.
-tags: article-page
+tags: hipaa compliance, encryption, aws key management service, phi encryption, cryptography
 locale: en-us
 guid: 259aca31-dc2a-4eb1-8d5c-e322cefe5e66
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A521&mode=design&t=GF97AOUqsRf9tsAh-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - data-encryption
 ---
+
 # Implement encryption and decryption for HIPAA compliance
 
 When you subscribe to the OutSystems Cloud HIPAA offering your environments will include an app that you can reference to encrypt and decrypt PHI - **Cryptography Services**.
@@ -19,7 +31,13 @@ The Cryptography Services app interfaces with the Key Management Service (KMS) a
 
 It exposes actions that work with the KMS to encrypt and decrypt PHI. Those are divided into two groups of actions, depending on whether you need to search on the encrypted data: **actions for searchable attributes** and **actions for unsearchable attributes**.
 
-For example, you may want to both encrypt `email address` and `blood type`, but you only want `blood type` to be searcheable. You may have a screen that filters a search by `blood type` but you won't be able to search by `email address`.
+## About searchable and unsearchable data
+
+Searchable data allows you to perform searches while unsearchable data does not. For example, you may encrypt both `email address` and `blood type`, but you only want `blood type` to be searcheable. This means, you can design a screen that filters a search by `blood type` but not by `email address`.
+
+Searchable data encryption uses unsalted, predictable encryption, meaning that the same plaintext input with the same key  always produces the same ciphertext. While this approach is less secure, it allows for easier searching.
+
+On the other hand, unsearchable data encryption employs salted encryption, where additional random data, known as a "salt," is added to the plaintext. This ensures that even with the same plaintext and key, the resulting ciphertext will be different each time, providing stronger security at the cost of searchability.
 
 ## Actions for searchable attributes
 

@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui pattern implementation, step-by-step guides
 summary: OutSystems 11 (O11) features a Wizard UI Pattern for simplifying complex tasks into manageable steps.
 locale: en-us
 guid: 133fb7c1-4365-4a44-85d0-a81abe22458e
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:5
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Wizard
@@ -91,7 +99,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     ![Selecting the status of the first Wizard Item in the Properties tab](images/wizard-9-ss.png "Selecting Wizard Item Status")
 
-1. In the expression editor, enter the following expression and click **DONE**:
+1. In the expression editor, enter the following expression and click **Close**:
 
     `If(CurrentStep = 1, Entities.Steps.Active,If(CurrentStep > 1, Entities.Steps.Past, Entities.Steps.Next))`
 
@@ -111,7 +119,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     ![Dragging an If widget onto the main content area below the Wizard Pattern](images/wizard-11-ss.png "Adding an If Widget Below the Wizard Pattern")
 
-1. On the **Properties** tab, from the **Condition** dropdown, select Expression Editor, enter the following logic and click **DONE**:
+1. On the **Properties** tab, from the **Condition** dropdown, select Expression Editor, enter the following logic and click **Close**:
 
     `CurrentStep = 1`
 

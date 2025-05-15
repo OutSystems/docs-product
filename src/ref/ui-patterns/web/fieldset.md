@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css customization, ui design, web development, outsystems ui, outsystems traditional web apps
 summary: Learn how to customize the Fieldset UI Pattern in Traditional Web Apps using custom CSS in OutSystems 11 (O11).
 locale: en-us
 guid: 6a58d000-dd26-489f-ae56-94a4ad3dd6a2
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:460
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Fieldset Reference

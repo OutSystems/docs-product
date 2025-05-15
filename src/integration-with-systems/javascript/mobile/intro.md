@@ -1,12 +1,21 @@
 ---
-tags: runtime-mobileandreactiveweb; article-page
+tags: javascript integration, client side scripting, drag-and-drop ui, error handling, extensibility
 locale: en-us
 guid: 191c6d17-5089-4d2e-9848-19e81f69476a
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A38&mode=design&t=187UAgmZTPxcY0ZG-1
 summary: Explore how OutSystems 11 (O11) enhances mobile and reactive apps by integrating JavaScript for extended functionality.
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Extend Your Mobile and Reactive Apps Using JavaScript
 
 <div class="info" markdown="1">
@@ -24,6 +33,12 @@ The JavaScript element allows extending the OutSystems capabilities by using Jav
 * Declare variables and assign values to them
 * Invoke user-defined or built-in functions
 * Call client actions, either synchronously or asynchronously, etc.
+
+<div class="info" markdown="1">
+
+There are no restrictions on which versions of Javascript or ECMAScript can be used with Mobile Apps and Reactive Web Apps. However, older browsers may have limitations because they don't support the latest Javascript/ECMAScript features.
+
+</div>
 
 The code editor window, opened by double-clicking the element or the element's "JavaScript" property, has auto-complete support for JavaScript keywords and predefined JavaScript objects, as well as for OutSystems available client actions and roles. It also has syntax highlighting and checks the JavaScript code for errors and warnings. The TrueChange pane displays eventual JavaScript syntax errors:
 

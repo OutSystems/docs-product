@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) supports creating one-to-many relationships between entities using foreign keys.
-tags: support-application_development; support-Database; support-webapps
+tags: entity relationships, data modeling, foreign keys, entity diagrams, deletion rules
 locale: en-us
 guid: b6ccd0f3-6d0c-4628-bb6a-b9c9e40bc3a0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:9
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - data-relationships
 ---
 
 # Create a One-to-Many Relationship

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, web development, ui patterns, application development, outsystems platform
 summary: Explore the Card Sectioned UI pattern in OutSystems 11 (O11) for organizing and highlighting information in Traditional Web Apps.
 locale: en-us
 guid: 1ba59808-a9ca-45c3-8f9c-3b68edccaef4
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A65&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Card Sectioned

@@ -5,11 +5,21 @@ guid: edfd47cf-ac05-450b-8823-ebc389345dc8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database configuration, session management, sql server, azure sql database, oracle database
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
-# Session Tab
+# Session tab
 
 The **Session** tab allows you to configure the database used by OutSystems to store the end user persistent sessions.
+
+![Screenshot of the Session tab in the Configuration Tool](images/session-tab-ct.png "Session tab")
 
 ## Database Section (for SQL Server / Azure SQL Database)
 

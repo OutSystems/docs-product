@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) supports consuming REST APIs with multipart/form-data, allowing multiple data types in a single request.
-tags: support-Integrations_Extensions-featured
+tags: rest api, file upload, integration, configuration, api development
 locale: en-us
 guid: F6D1AF42-2DF2-43D8-9700-75335D0A7302
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - apply
 ---
 
 # Consuming a REST API with a multipart or form data method

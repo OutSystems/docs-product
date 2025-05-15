@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, widgets, web development, user interface patterns, outsystems development
 summary: Explore how to effectively utilize the Cards UI Pattern in Traditional Web Apps with OutSystems 11 (O11).
 locale: en-us
 guid: a332f63f-d4ca-400d-ab27-d29455ba5b29
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A55&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Card

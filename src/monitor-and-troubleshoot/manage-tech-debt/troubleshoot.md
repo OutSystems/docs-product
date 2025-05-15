@@ -1,11 +1,22 @@
 ---
-tags:
+tags: troubleshooting, synchronization issues, ai mentor studio, service center, technical support
 summary: Explore troubleshooting tips for OutSystems 11 (O11) focusing on AI Mentor Studio synchronization, code discrepancies, and login issues.
 locale: en-us
 guid: e2eb38b8-b3b6-42dd-9389-232ef2ba6226
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:753
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+  - service center
+  - lifetime
+  - ai mentor studio
+coverage-type:
+  - unblock
 ---
 
 # Troubleshooting

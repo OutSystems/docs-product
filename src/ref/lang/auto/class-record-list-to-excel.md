@@ -6,6 +6,15 @@ guid: d1e3abef-bbf3-4455-87b2-3c19acc594bb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data export, excel integration, data management, application development, outsystems best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Record List To Excel

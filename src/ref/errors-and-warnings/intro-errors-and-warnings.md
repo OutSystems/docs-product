@@ -4,7 +4,16 @@ locale: en-us
 guid: 1193ec37-21ef-45e2-b1a2-cd4cf1d8b3a7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: ide usage, reactive web apps, tutorials for beginners, error handling, development best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Errors and Warnings

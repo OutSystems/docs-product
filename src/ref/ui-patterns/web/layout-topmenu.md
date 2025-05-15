@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: responsive design, layout customization, web design, ui components, breakpoints
 summary: Explore the responsive design and customization options of the Layout Top Menu in OutSystems 11 (O11).
 locale: en-us
 guid: 32bd92fb-5665-45a8-ac9c-69d26270cb75
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:508
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Layout Top Menu Reference
@@ -28,7 +36,7 @@ This layout comes with a default responsive behavior. On tablets it remains the 
 
 The menu also adapts to mobile, moving the navigation to a sidebar, toggled by a hamburger icon.
 
-![Animated GIF demonstrating the Layout Top Menu's responsive behavior on mobile devices with a sidebar navigation](images/layout-tm-4-ss.gif "Layout Top Menu Responsive Behavior on Mobile")
+<iframe src="https://player.vimeo.com/video/1002731447" width="344" height="750" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the Layout Top Menu's responsive behavior on mobile devices with a sidebar navigation.</iframe>
 
 On a mobile phone and tablet:
 

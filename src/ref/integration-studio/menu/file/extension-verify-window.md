@@ -3,12 +3,23 @@ locale: en-us
 guid: 426b3956-f51e-4d01-a743-33fcb462fce6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3077-8&t=ngfUZsYain6dMjce-1
 summary: Learn about the Verify window in OutSystems 11 (O11), essential for extension verification and error handling.
+tags: ide usage, reactive web apps, tutorials for beginners, error handling, extension verification
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Verify Window
 
-The Verify window ![Animated GIF showing the Verify window process in action](images/validate.gif "Verify Window Animation") is launched when you are [verifying](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify.md>) your extension.
+The Verify window ![Animated GIF showing the Verify window process in action](images/validate-icon.png "Verify Window Animation") is launched when you are [verifying](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify.md>) your extension.
 
 The areas and buttons available in the Verify window are presented below.
 

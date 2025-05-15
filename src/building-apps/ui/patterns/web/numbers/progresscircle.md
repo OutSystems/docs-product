@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb
+tags: ui patterns, user interface design, progress tracking, outsystems ui, widget implementation
 summary: OutSystems 11 (O11) features a Progress Circle UI Pattern for visually representing operation flow progress in Traditional Web Apps.
 locale: en-us
 guid: 8f2233e3-6e6d-46b0-bdb9-ea3fa1d813b3
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A12&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Progress Circle
@@ -64,13 +71,13 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
 1. On the aggregate screen, click **Filters**, then **Add Filter**.
 
-1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **DONE**. In this example, to get all of the shipped orders, we add the following logic:
+1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **Close**. In this example, to get all of the shipped orders, we add the following logic:
 
     `Order.Status = Entities.OrderStatus.Shipped`
 
     ![Screenshot showing the addition of a filter condition to the GetShippedOrders aggregate](images/progresscircle-14-ss.png "Adding Filter to Aggregate")
 
-1. Double-click your screen name, and on the **Properties** tab, from the **Progress** drop-down, select **Expression Editor**. Enter the logic for the progress circle and click **DONE**. This displays the percentage value as the stroke on the Progress Circle.
+1. Double-click your screen name, and on the **Properties** tab, from the **Progress** drop-down, select **Expression Editor**. Enter the logic for the progress circle and click **Close**. This displays the percentage value as the stroke on the Progress Circle.
 
     In this example, to show the percentage of shipped orders, we add the following:
 
@@ -80,7 +87,7 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
 1. From the Toolbox, drag an Expression widget into the Progress Circle's **Content** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the same logic as in step 11 (`GetShippedOrders.Count / GetTotalOrders.Count * 100`), and click **DONE**. This displays the percentage value inside the Progress Circle.
+1. In the Expression Editor, enter the same logic as in step 11 (`GetShippedOrders.Count / GetTotalOrders.Count * 100`), and click **Close**. This displays the percentage value inside the Progress Circle.
 
     ![Screenshot of an Expression widget inside the Progress Circle showing the percentage of shipped orders](images/progresscircle-15-ss.png "Displaying Percentage Value Inside Progress Circle")
 

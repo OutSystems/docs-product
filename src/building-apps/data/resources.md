@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) allows users to manage and deploy various types of resources within their applications, enhancing functionality and user interaction.
-tags: support-application_development
+tags: resource management, deployment, file management, design considerations, performance optimization
 locale: en-us
 guid: a27b2277-218f-4439-8ea7-6884e0d1eaa3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:26
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Use Resources
@@ -22,6 +30,14 @@ Any Resource you add to your module is saved in the module's OML file. When you 
 
 * **Deploy to Target Directory**: The resource is deployed to the sub-directory set in the Target Directory property, which is created under the deploy directory of the module.  
     **Note:** Deploying to Target Directory is not applicable if you are using Library Modules.
+
+
+## Security considerations
+
+* Some resource files deployed to the Target Directory may be executed by IIS. This depends on how IIS is configured.
+
+* It's your responsibility to ensure that the included resource comes from a trustworthy source.
+
 
 <div class="info" markdown="1">
 

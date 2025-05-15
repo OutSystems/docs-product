@@ -1,11 +1,23 @@
 ---
 summary: Learn how to configure site properties in OutSystems 11 (O11) during deployment to enhance application settings management.
-tags: 
+tags: deployment, site properties, environment configuration, permissions, application lifecycle management
 locale: en-us
 guid: 4acf3283-61b0-4409-a357-cb2ef63f1a5e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A33&mode=design&t=98kL4vRdGIKpuwQm-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - apply
+topic:
+  - config-app-before-deploy
 ---
 
 # Configure site properties during deployment

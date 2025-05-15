@@ -1,11 +1,10 @@
-# Getting Started
+# Getting Started 
 - href: getting-started/intro.md
 - topics:
     - href: getting-started/service-studio.md
     - href: getting-started/right-app.md
     - href: getting-started/create-reactive-web.md
     - href: getting-started/create-mobile.md
-    - href: getting-started/create-web.md
     #Real world app
     - href: getting-started/create-use-case/intro.md
     - topics:
@@ -20,6 +19,51 @@
 - topics:
     - href: onboarding/dev-cheat-sheet.md
     - href: onboarding/os-language-concepts.md
+    - href: onboarding/outsystems-platform-best-practices.md
+# App architecture
+- href: app-architecture/intro.md
+- topics: 
+    # Designing the Architecture of Your OutSystems Applications
+    - href: app-architecture/design-architecture/intro.md
+    - topics:
+        - href: app-architecture/design-architecture/01-4-layer-canvas.md    
+        - href: app-architecture/design-architecture/02-translating-business-app-modules.md  
+        - href: app-architecture/design-architecture/03-validating-app-architecture.md  
+        - href: app-architecture/design-architecture/04-soa-architectures.md  
+        - href: app-architecture/design-architecture/05-integration-patterns.md  
+        - href: app-architecture/design-architecture/06-app-composition/06-app-composition.md
+        - topics:
+            - href: app-architecture/design-architecture/06-app-composition/applying-4-layer-canvas-apps.md   
+            - href: app-architecture/design-architecture/06-app-composition/rules-correct-app-composition.md
+            - href: app-architecture/design-architecture/06-app-composition/isolating-app-theme.md                                 
+        - href: app-architecture/design-architecture/07-designing-multi-tenant-apps.md
+        - href: app-architecture/design-architecture/08-microservices-arch-outsystems.md
+    # From architecture to development            
+    - href: app-architecture/from-arch-to-dev/intro.md
+    - topics:
+        - href: app-architecture/from-arch-to-dev/arch-to-dev.md
+    # OutSystems Domain Driven Architecture
+    - href: app-architecture/domain-driven-design/intro.md
+    - topics:
+        - href: app-architecture/domain-driven-design/understanding-microservices.md
+        - href: app-architecture/domain-driven-design/domain-driven-design.md
+        - href: app-architecture/domain-driven-design/domain-driven-design-os.md
+    # How to Create Customized Versions of a Base Application
+    - href: app-architecture/customizable-web-product.md
+    # Building mobile apps with multiple independent teams
+    - href: app-architecture/build-mobile-app-teams/intro.md
+    - topics:
+        - href: app-architecture/build-mobile-app-teams/bp-architecture.md
+        - href: app-architecture/build-mobile-app-teams/bp-development.md
+        - href: app-architecture/build-mobile-app-teams/bp-multiple.md
+    # Audit Trail
+    - href: app-architecture/data/audit-trails.md
+    # Caching
+    - href: app-architecture/data/hot-cache.md     
+    - href: app-architecture/data/improving-performance-distributed-caching.md
+    # Performance Best Practices - References
+    - href: app-architecture/references.md
+    - href: app-architecture/performance-top-10-rules.md
 # Building apps
 - href: building-apps/intro.md
 - topics:
@@ -34,7 +78,6 @@
             - href: building-apps/data/modeling/entity.md
             - href: building-apps/data/modeling/entity-create.md
             - href: building-apps/data/modeling/entity-static.md
-            - href: building-apps/data/modeling/enumerate-create.md
             - href: building-apps/data/modeling/index-create.md
             #Entity relationships
             - href: building-apps/data/modeling/relationship/intro.md
@@ -43,9 +86,11 @@
                 - href: building-apps/data/modeling/relationship/relationship-one-to-many.md
                 - href: building-apps/data/modeling/relationship/relationship-many-to-many.md
                 - href: building-apps/data/modeling/relationship/delete-rules.md
+            - href: building-apps/data/modeling/data-model-best-practices.md
           #Data operations  
         - href: building-apps/data/operations/intro.md
         - topics:
+            - href: building-apps/data/crud-wrappers.md
             - href: building-apps/data/operations/edit-data.md
             - href: building-apps/data/operations/how-edit-data.md
             - href: building-apps/data/operations/fetch-display.md
@@ -59,6 +104,13 @@
             - href: building-apps/data/operations/calculated-attribute-create.md
             - href: building-apps/data/operations/distinct.md
             - href: building-apps/data/operations/sql.md
+            - href: building-apps/data/operations/best-practices-fetch-data/best-practices-fetch-data.md
+            - topics:
+                - href: building-apps/data/operations/best-practices-fetch-data/limit-records-sql.md
+                - href: building-apps/data/operations/best-practices-fetch-data/record-counting.md
+                - href: building-apps/data/operations/best-practices-fetch-data/optimize-data-preparation.md
+            - href: building-apps/data/operations/build-dynamic-sql-statements.md
+            - href: building-apps/data/operations/expand-inline-parameters.md
         - href: building-apps/data/hipaa/intro.md
         - topics:
             - href: building-apps/data/hipaa/encrypt-data-hipaa.md
@@ -68,12 +120,16 @@
         - href: building-apps/data/download-file-browser.md
         - href: building-apps/data/excel-bootstrap.md
         - href: building-apps/data/structure-create-use.md
-        - href: building-apps/data/site.md
-        - href: building-apps/data/session.md
+        - href: building-apps/data/site/site.md
+        - topics:
+            - href: building-apps/data/site/avoid-site-property-updates.md
+        - href: building-apps/data/session/session.md
+        - topics:
+            - href: building-apps/data/session/avoid-large-session-variables.md
         - href: building-apps/data/share-client-var-between-app.md
         - href: building-apps/data/resources.md
         - href: building-apps/data/caching.md
-        # Offline
+        # Mobile performance strategies and offline optimization
         - href: building-apps/data/offline/intro.md
         - topics:
             - href: building-apps/data/offline/sync-implement.md
@@ -86,11 +142,20 @@
                 - href: building-apps/data/offline/patterns/read-write-data-with-conflict-detection.md
                 - href: building-apps/data/offline/patterns/read-write-data-one-to-many.md
             - href: building-apps/data/offline/sync-checklist.md
+            - href: building-apps/data/offline/mobile/complex-sync.md
+        - href: building-apps/data/data-layer.md
+        - href: building-apps/data/archive.md
+        - href: building-apps/data/purge.md 
     # Design UI
     - href: building-apps/ui/intro.md
     - topics:
         # Screens
         - href: building-apps/ui/screens/intro.md
+        - topics:
+            - href: building-apps/ui/screens/screen-block-lifecycle-events.md
+            - href: building-apps/ui/screens/data-load.md
+            - href: building-apps/ui/screens/data-rendering.md
+            - href: building-apps/ui/screens/scope-information.md
         # Accessibility
         - href: building-apps/ui/accessibility/intro.md
         - topics:
@@ -132,11 +197,13 @@
         - topics:
             - href: building-apps/ui/image/use-icons.md
             - href: building-apps/ui/image/display-image.md
+            - href: building-apps/ui/image/control-image-size.md
         # Look and Feel
         - href: building-apps/ui/look-feel/intro.md
         - topics:
             - href: building-apps/ui/look-feel/styles-editor.md
             - href: building-apps/ui/look-feel/css.md
+            - href: building-apps/ui/look-feel/avoid-inline-js-and-style.md
             - href: building-apps/ui/look-feel/design-screens-layout.md
             - href: building-apps/ui/look-feel/themes.md
             - href: building-apps/ui/look-feel/theme-editor.md
@@ -153,8 +220,6 @@
             - href: building-apps/ui/reuse/create-a-custom-application-template.md
         # Accelerators
         - href: building-apps/ui/accelerators/intro.md
-        - topics:
-            - href: building-apps/ui/accelerators/accelerator-google.md
         # Patterns
         - href: building-apps/ui/patterns/intro.md
         - topics:
@@ -193,6 +258,12 @@
                     - href: building-apps/ui/patterns/mobile/interaction/animatedlabel.md
                     - href: building-apps/ui/patterns/mobile/interaction/bottomsheet.md
                     - href: building-apps/ui/patterns/mobile/interaction/carousel.md
+                    - href: building-apps/ui/patterns/mobile/interaction/data-grid/intro.md
+                    - topics:
+                        - href: building-apps/ui/patterns/mobile/interaction/data-grid/faq.md
+                        - href: building-apps/ui/patterns/mobile/interaction/data-grid/how-to-view-data.md
+                        - href: building-apps/ui/patterns/mobile/interaction/data-grid/how-to-edit-data.md
+                        - href: building-apps/ui/patterns/mobile/interaction/data-grid/how-to-save-data.md
                     - href: building-apps/ui/patterns/mobile/interaction/datepicker.md
                     - href: building-apps/ui/patterns/mobile/interaction/datepickerrange.md
                     - href: building-apps/ui/patterns/mobile/interaction/dropdownsearch.md
@@ -354,6 +425,11 @@
             - href: building-apps/ui/multilingual-tp/translate-your-app.md
             - href: building-apps/ui/multilingual-tp/translation-editor.md
             - href: building-apps/ui/multilingual-tp/translation-management.md
+        # Front-end             
+        - href: building-apps/ui/front-end/front-end-journey.md
+        - href: building-apps/ui/front-end/front-end-best-practices.md   
+        # Performance        
+        - href: building-apps/ui/best-practices-ui/best-practices-user-interface.md 
     # Application Logic
     - href: building-apps/logic/intro.md
     - topics:
@@ -362,11 +438,11 @@
         - href: building-apps/logic/ai-create-action.md
         - href: building-apps/logic/actions.md
         - href: building-apps/logic/action-web.md
-        - href: building-apps/logic/screen-block-lifecycle-events.md
         - href: building-apps/logic/list-iterate.md
         - href: building-apps/logic/screen-update-list-items.md
         - href: building-apps/logic/screen-partial-refresh.md
         - href: building-apps/logic/client-data-transfer-optimization-tp.md
+        - href: building-apps/logic/logic.md
     # Use Processes
     - href: building-apps/processes/intro.md
     - topics:
@@ -414,6 +490,7 @@
             - href: building-apps/processes/best-practices/scale-queries.md
         - href: building-apps/processes/reseed-bpt-tables.md
         - href: building-apps/processes/light-process.md
+        - href: building-apps/processes/reference-bpmn/notation-bpmn.md
     #Sending emails
     - href: building-apps/sending-emails/intro.md
     - topics:
@@ -427,6 +504,7 @@
     - topics:
         - href: building-apps/handling-exceptions/analyze-logs.md
         - href: building-apps/handling-exceptions/handling-mechanism.md
+        - href: building-apps/handling-exceptions/customizing-unhandled-errors/customizing-outsystems-platform-pages-for-unhandled-errors.md   
     # Use Timers
     - href: building-apps/timers/intro.md
     - topics:
@@ -464,36 +542,6 @@
         - href: building-apps/seo/prerender-io-usage-and-configuration.md
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
-    # Experience Builder
-    - href: building-apps/experience-builder/intro.md
-    - topics:
-        - href: building-apps/experience-builder/how-works.md
-        - href: building-apps/experience-builder/how-setup.md
-        - href: building-apps/experience-builder/how-use.md
-        - href: building-apps/experience-builder/ref/error-ref.md
-        - href: building-apps/experience-builder/extend-app-in-ss.md
-        - href: building-apps/experience-builder/import-flow/intro-if.md
-        - topics:
-            - href: building-apps/experience-builder/import-flow/import-if.md
-            - href: building-apps/experience-builder/import-flow/edit-if.md
-            - href: building-apps/experience-builder/import-flow/theme-structure-if.md
-            - href: building-apps/experience-builder/import-flow/metadata-if.md
-            - href: building-apps/experience-builder/import-flow/error-ref-if.md
-            - href: building-apps/experience-builder/import-flow/faq-if.md
-        - href: building-apps/experience-builder/ref/intro.md
-        - topics:
-            - href: building-apps/experience-builder/ref/ExBuilder_Authentication_MCS.md
-            - href: building-apps/experience-builder/ref/ExBuilder_Configs_CS.md
-            - href: building-apps/experience-builder/ref/ExBuilder_Configs_MCS.md
-            - href: building-apps/experience-builder/ref/ExBuilder_MobileLookups.md
-            - href: building-apps/experience-builder/ref/ExBuilder_PluginsWrapper_MLib.md
-            - href: building-apps/experience-builder/ref/ExBuilder_Sync.md
-            - href: building-apps/experience-builder/ref/ExBuilder_Utils_Lib.md
-            - href: building-apps/experience-builder/ref/ExBuilder_Utils_MLib.md
-            - href: building-apps/experience-builder/ref/ExBuilder_MPat.md
-        - href: building-apps/experience-builder/how-update-dependency.md
-        - href: building-apps/experience-builder/faq.md
-        - href: building-apps/experience-builder/troubleshoot.md
     # Case management and workflow apps
     - href:  building-apps/case-management-workflow/intro.md
     - topics:
@@ -557,15 +605,17 @@
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseServices_API.final.md
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseConfigurations_API.final.md
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseProcessConfigurations_API.final.md
+    # Mobile best practices
+    - href: building-apps/mobile-best-practices/mobile-best-practices.md
 # Debugging apps
 - href: debugging-apps/intro.md
 - topics:
+    - href: debugging-apps/debugger-ui-reference.md
     - href: debugging-apps/breakpoints.md
     - href: debugging-apps/watches.md
     - href: debugging-apps/threads.md
     - href: debugging-apps/public-personal-areas.md
     - href: debugging-apps/debug-producer-modules.md
-    - href: debugging-apps/debugger-ui-reference.md
     - href: debugging-apps/troubleshoot-debugger-connection.md
 # Testing Apps
 - href: testing-apps/intro.md
@@ -584,6 +634,7 @@
 # Deploying apps
 - href: deploying-apps/intro.md
 - topics:
+    - href: deploying-apps/dev-del-scale/dev-del-scale.md
     - href: deploying-apps/tag-a-version.md
     - href: deploying-apps/deploy-an-application.md
     - href: deploying-apps/deployment-plans.md
@@ -642,17 +693,20 @@
         - href: deploying-apps/mobile-app-packaging-delivery/manage-distribution-options/intro.md
         - href: deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/intro.md
         - topics:
-            - href: deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/android-support-library-versions.md
             - href: deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/androidx.md
         - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/intro.md
         - topics:
             - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/advanced.md
             - href: deploying-apps/mobile-app-packaging-delivery/distribute-pwa/troubleshooting-know-issues.md
         - href: deploying-apps/mobile-app-packaging-delivery/compliance-with-third-party-licenses.md
+    - href: deploying-apps/devops/devops-in-outsystems.md
+    - href: deploying-apps/cicd/cicd-in-outsystems.md
+    - href: deploying-apps/configuration-management/configuration-management-in-outsystems.md
 
 # Integration with external systems
 - href: integration-with-systems/intro.md
 - topics:
+    - href: integration-with-systems/integrate-ecosystem.md
     #AI
     - href: integration-with-systems/artificial-intelligence/intro.md
     - topics:
@@ -679,9 +733,11 @@
     - href: integration-with-systems/mobile-plugins/intro.md
     - topics:
         - href: integration-with-systems/mobile-plugins/barcode/intro.md
+        - href: integration-with-systems/mobile-plugins/location/intro.md
         - href: integration-with-systems/mobile-plugins/camera/intro.md
         - topics:  
             - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
+        - href: integration-with-systems/mobile-plugins/inapp-browser/inapp-browser.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-transfer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-viewer-plugin/intro.md
@@ -693,13 +749,15 @@
         - href: integration-with-systems/mobile-plugins/health-fitness/intro.md
         - topics:
             - href: integration-with-systems/mobile-plugins/health-fitness/intro_v2.md
+        - href: integration-with-systems/mobile-plugins/keystore-plugin/intro.md
+        - topics:
+            - href: integration-with-systems/mobile-plugins/keystore-plugin/keystore-ref.md
+        - href: integration-with-systems/mobile-plugins/payments-plugin/intro.md 
         - href: integration-with-systems/mobile-plugins/social-login/intro.md
         - topics:
-            - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md
+            - href: integration-with-systems/mobile-plugins/social-login/social-login-ref.md                 
         - href: integration-with-systems/mobile-plugins/ssl-pinning/intro.md
-        - href: integration-with-systems/mobile-plugins/payments-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/cordova-plugin/intro.md
-        - href: integration-with-systems/mobile-plugins/keystore-plugin/intro.md
     #Javascript
     - href: integration-with-systems/javascript/intro.md
     - topics:
@@ -845,11 +903,17 @@
 # Monitor and troubleshoot
 - href: monitor-and-troubleshoot/intro.md
 - topics:
+    - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/intro.md   
+    - topics:
+        - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/troubleshooting-process.md
+        - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/standard-toolkit.md   
+        - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/extended-toolkit.md   
+        - href: monitor-and-troubleshoot/troubleshoot-debugging-mobile/debug-examples.md
     - href: monitor-and-troubleshoot/log-information-in-action-flows.md
     - href: monitor-and-troubleshoot/troubleshoot-service.md
     - href: monitor-and-troubleshoot/trace-executed-queries.md
     - href: monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md
-    - href: monitor-and-troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md         
+    - href: monitor-and-troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md
     - href: monitor-and-troubleshoot/monitoring-an-environment.md
     - href: setup-infra-platform/setup/disable-registered-role-error.md
     - href: monitor-and-troubleshoot/monitor-env-activity.md
@@ -857,8 +921,8 @@
     - href: monitor-and-troubleshoot/enable-analytics-for-an-environment.md
     - href: monitor-and-troubleshoot/troubleshoot-the-performance-of-an-application.md
     - href: monitor-and-troubleshoot/how-application-performance-is-measured.md
+    - href: monitor-and-troubleshoot/use-cases.md
     - href: monitor-and-troubleshoot/the-apdex-performance-score.md
-    - href: monitor-and-troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md
     #Logging
     - href: monitor-and-troubleshoot/logging/intro.md
     - topics:
@@ -878,10 +942,12 @@
             - href: monitor-and-troubleshoot/log-streaming/elastic.md                            
             - href: monitor-and-troubleshoot/log-streaming/new-relic.md
             - href: monitor-and-troubleshoot/log-streaming/splunk.md
+            - href: monitor-and-troubleshoot/log-streaming/amazon-s3.md
             - href: monitor-and-troubleshoot/log-streaming/configure-collector.md
     #App quality and technical debt
     - href: monitor-and-troubleshoot/manage-tech-debt/intro.md
     - topics:
+        - href: monitor-and-troubleshoot/manage-tech-debt/handling-tech-debt/handling-tech-debt.md
         - href: monitor-and-troubleshoot/manage-tech-debt/how-works.md
         - href: monitor-and-troubleshoot/manage-tech-debt/how-setup.md
         - href: monitor-and-troubleshoot/manage-tech-debt/how-use.md
@@ -891,15 +957,6 @@
             - href: monitor-and-troubleshoot/manage-tech-debt/how-use-developer.md
         - href: monitor-and-troubleshoot/manage-tech-debt/overview-dashboard.md
         - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/ref-code-patterns.md
-        - topics:
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/avoid-large-session-variables.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/avoid-site-property-updates.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/control-image-size.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/limit-records-sql.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/optimize-data-preparation.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/record-counting.md
-            - href: monitor-and-troubleshoot/manage-tech-debt/code-patterns/scope-information.md
         - href: monitor-and-troubleshoot/manage-tech-debt/tech-debt-formula.md
         - href: monitor-and-troubleshoot/manage-tech-debt/change-pattern-impact.md
         - href: monitor-and-troubleshoot/manage-tech-debt/how-enable-autoclass.md
@@ -910,7 +967,7 @@
         - href: monitor-and-troubleshoot/manage-tech-debt/how-proxy.md
         - href: monitor-and-troubleshoot/manage-tech-debt/faq.md
         - href: monitor-and-troubleshoot/manage-tech-debt/troubleshoot.md
-            #Collecting feedback from apps
+    #Collecting feedback from apps
     - href: monitor-and-troubleshoot/app-feedback/intro.md
     - topics:
         - href: monitor-and-troubleshoot/app-feedback/user-feedback-enable.md
@@ -939,10 +996,19 @@
         - href: security/app-shield/obfuscate-custom-rules.md
         - href: security/app-shield/ExitOnUrl.md
         - href: security/app-shield/query-all-packages.md
+        - href: security/app-shield/troubleshooting.md
+    - href: security/implementing-waf/implementing-waf-os.md
+    - topics:
+        - href: security/implementing-waf/waf-outsystems.md
+        - href: security/implementing-waf/implementing-cloudflare.md
+        - href: security/implementing-waf/implementing-akamai.md
+    - href: security/injection-XSS/Injection-and-Cross-Site-Script-XSS.md
+    - href: security/ext-rd-reactive-security-best-practices/ext-rd-reactive-security-best-practices.md
+    - href: security/data-security-rest/data-security-rest.md
+    
 # User management
 - href: user-management/intro.md
 - topics:
-    - href: user-management/end-user-manage/intro.md
     - href: user-management/end-user-manage/accessing-users.md
     - href: user-management/end-user-manage/configure-admin.md
     - href: user-management/end-user-manage/classify-internal-users.md
@@ -970,6 +1036,7 @@
     - topics:
         - href: user-management/user-roles/create-a-custom-role.md
         - href: user-management/user-roles/validate-permissions.md
+        - href: user-management/user-roles/security-model/acl.md
 # Setup OutSystems infrastructure and platform
 - href: setup-infra-platform/intro.md
 - topics:
@@ -981,6 +1048,9 @@
             - href: setup-infra-platform/setup/possible-setups/infra-architecture/infra-architecture.md
             - href: setup-infra-platform/setup/possible-setups/infra-architecture/deploy-cloud.md
             - href: setup-infra-platform/setup/possible-setups/ha-scalability/intro.md
+            - topics:
+                - href: setup-infra-platform/setup/possible-setups/ha-scalability/xrdr.md
+                - href: setup-infra-platform/setup/possible-setups/ha-scalability/disaster-recovery-test.md
             - href: setup-infra-platform/setup/possible-setups/cloud-architecture.md
         - href: setup-infra-platform/setup/system-requirements.md
         - href: setup-infra-platform/setup/limitations.md
@@ -988,16 +1058,23 @@
         - topics:
             - href: setup-infra-platform/setup/mobile-builder-connectivity-requirements.md
             - href: setup-infra-platform/setup/configure-http-proxy.md
+            - href: setup-infra-platform/setup/ip-range-cloud.md
         - href: setup-infra-platform/setup/default-configurations.md
         - href: setup-infra-platform/setup/environment-config.md
         - href: setup-infra-platform/setup/lifetime-configure.md
         - href: setup-infra-platform/setup/ssl-domain-cloud/ssl-domain-cloud.md
+        - href: setup-infra-platform/setup/vpn/vpn-support.md
+        - href: setup-infra-platform/setup/aws-direct-connect/aws-direct-connect-os-cloud.md
+        - href: setup-infra-platform/setup/connect-tgw/connect-tgw.md
         - href: setup-infra-platform/setup/install-ssl-platform.md
         - href: setup-infra-platform/setup/install-client-side-certificate-paas.md
         - href: setup-infra-platform/setup/install-client-side-cert-on-premise.md
         - href: setup-infra-platform/setup/change-db-authentication.md
         - href: setup-infra-platform/setup/load-balancing-apps/recommended-configs-load-balancing.md
         - href: setup-infra-platform/setup/cdn-setup.md
+        - topics:
+            - href: setup-infra-platform/setup/stale-cache.md
+        - href: setup-infra-platform/setup/factory-config.md
         # Cache Invalidation Service
         - href: setup-infra-platform/setup/cache-invalidation/intro.md
         - topics:
@@ -1025,6 +1102,18 @@
             - href: setup-infra-platform/setup/azure/quick-reference.md
             - href: setup-infra-platform/setup/azure/getting-setup-logs.md
             - href: setup-infra-platform/setup/azure/plan-associate.md
+        - href: setup-infra-platform/setup/iis-tuning.md
+        - href: setup-infra-platform/setup/fine-tune-app-pool.md
+        - href: setup-infra-platform/setup/infrastructure-best-practices.md
+    # Designing OutSystems Infrastructures
+    - href: setup-infra-platform/design-infrastructure/designing-infrastructures.md
+    - topics:
+        - href: setup-infra-platform/design-infrastructure/server-roles.md
+        - href: setup-infra-platform/design-infrastructure/sizing-platform.md
+        - href: setup-infra-platform/design-infrastructure/scaling-ha-servers.md
+        - href: setup-infra-platform/design-infrastructure/disaster-recovery-high-availability.md
+        - href: setup-infra-platform/design-infrastructure/exposing-your-apps.md
+        - href: setup-infra-platform/design-infrastructure/infra-design-examples.md
     # Upgrading
     - href: setup-infra-platform/upgrade/upgrade-platform.md
     - topics:
@@ -1033,13 +1122,12 @@
         - href: setup-infra-platform/upgrade/upgrade-platform-module-prep.md
         - href: setup-infra-platform/upgrade/upgrade-platform-module-deploy.md
         - href: setup-infra-platform/upgrade/upgrade-platform-errors.md
-#Manage Oustsystems platform and app life cycle
+# Manage OutSystems platform and app lifecycle
 - href: manage-platform-app-lifecycle/intro.md
 - topics:
-    - href: manage-platform-app-lifecycle/database-replica.md
     - href: manage-platform-app-lifecycle/initial-setup-of-an-infrastructure.md
-    - href: manage-platform-app-lifecycle/environment-filters.md
-    - href: manage-platform-app-lifecycle/maintenance-mode.md
+    - href: manage-platform-app-lifecycle/data-protection.md
+    - href: manage-platform-app-lifecycle/clean-up-environment/clean-up-environment.md
     - href: manage-platform-app-lifecycle/configure-send-emails.md
     - href: manage-platform-app-lifecycle/manage-it-teams/intro.md
     - topics:
@@ -1066,25 +1154,85 @@
             - href: manage-platform-app-lifecycle/manage-it-teams/external-idp/external-idp-errors.md
         - href: manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
         - href: manage-platform-app-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
-# Migration to ODC
-- href: migration-to-odc/intro.md
-- topics:
-    # Preparation
-    - href: migration-to-odc/preparation/process.md
-    - href: migration-to-odc/preparation/map-o11-to-odc-domains.md
-    - href: migration-to-odc/preparation/o11architecture-to-odc-architecture.md
-    - href: migration-to-odc/preparation/refactoring-o11-application/intro.md
+    - href: manage-platform-app-lifecycle/access-database-paas/access-database-paas.md
     - topics:
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-serveraction-to-serviceaction.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-roles.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-structures.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-systementities.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-siteproperties.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-extensions.md       
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-soap.md
-        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-bpt.md        
-    - href: migration-to-odc/reference.md
+        - href: manage-platform-app-lifecycle/access-database-paas/temporary-access-database-backup.md
+    - href: manage-platform-app-lifecycle/migrate-db-clone.md
+    - href: manage-platform-app-lifecycle/database-replica.md   
+    - href: manage-platform-app-lifecycle/database-optimization.md
+    - href: manage-platform-app-lifecycle/best-practices-lifetime-plugins.md
+    - href: manage-platform-app-lifecycle/environment-filters.md
+    - href: manage-platform-app-lifecycle/maintenance-mode.md
+    - href: manage-platform-app-lifecycle/disk-space-usage-control.md
+    - href: manage-platform-app-lifecycle/best-practices-sql-server.md
+
+# Migration to ODC
+- href: migration-to-odc/migration-intro.md
+- topics:
+    #Plan
+    - href: migration-to-odc/plan/plan-intro.md
+    - topics:
+        - href: migration-to-odc/setup-assessement-tool.md
+        - href: migration-to-odc/plan/plan-map-apps.md
+        - href: migration-to-odc/plan/plan-define-migration-plans.md
+        - href: migration-to-odc/plan/plan-assess-refactor.md
+        - href: migration-to-odc/plan/plan-incremental.md
+        - href: migration-to-odc/plan/plan-map-incremental.md
+        - href: migration-to-odc/plan/plan-convert-arch-incrementale.md
+    # Preparation
+    - href: migration-to-odc/prepare/prep-intro.md
+    - topics:
+        - href: migration-to-odc/prepare/prep-refactor-o11-apps.md
+    # Execute
+    - href: migration-to-odc/execute/execute-intro.md
+    - topics:
+        - href: migration-to-odc/execute/execute-connect-to-tool.md
+        - href: migration-to-odc/execute/execute-about-migrate-code.md
+        - href: migration-to-odc/execute/execute-how-to-migrate-code.md
+        - href: migration-to-odc/execute/execute-adapt-login-flow.md
+        - href: migration-to-odc/execute/execute-configure-migrated-apps.md
+        - href: migration-to-odc/execute/execute-about-migrate-data.md
+        - href: migration-to-odc/execute/execute-how-to-migrate-data.md
+            
+    # Code patterns
+    - href: migration-to-odc/code-patterns/intro.md
+    - topics:
+        - href: migration-to-odc/code-patterns/arch-server-action.md
+        - href: migration-to-odc/code-patterns/arch-client-action.md
+        - href: migration-to-odc/code-patterns/arch-block.md
+        - href: migration-to-odc/code-patterns/arch-non-read-only-entity.md
+        - href: migration-to-odc/code-patterns/arch-image.md
+        - href: migration-to-odc/code-patterns/arch-local-storage.md
+        - href: migration-to-odc/code-patterns/arch-process.md
+        - href: migration-to-odc/code-patterns/arch-resource.md
+        - href: migration-to-odc/code-patterns/arch-role.md
+        - href: migration-to-odc/code-patterns/arch-mobile-screen.md
+        - href: migration-to-odc/code-patterns/arch-script.md
+        - href: migration-to-odc/code-patterns/arch-priv-struct.md
+        - href: migration-to-odc/code-patterns/arch-app-theme.md
+        - href: migration-to-odc/code-patterns/arch-not-mapped.md
+        - href: migration-to-odc/code-patterns/arch-extension.md
+        - href: migration-to-odc/code-patterns/arch-system-element.md
+        - href: migration-to-odc/code-patterns/arch-user-mng-elements.md
+        - href: migration-to-odc/code-patterns/arch-bpt-elements.md
+        - href: migration-to-odc/code-patterns/end-user-no-email.md
+        - href: migration-to-odc/code-patterns/elem-bpt.md
+        - href: migration-to-odc/code-patterns/elem-soap.md
+        - href: migration-to-odc/code-patterns/refactor-anonymous-registered-roles.md
+        - href: migration-to-odc/code-patterns/refactor-siteproperties.md
+        - href: migration-to-odc/code-patterns/convert-trad-web.md
+        - href: migration-to-odc/code-patterns/cannot-open-module.md
+        - href: migration-to-odc/code-patterns/outdated-or-broken-dependencies.md
+        - href: migration-to-odc/code-patterns/arch-common-plugin.md
+        - href: migration-to-odc/code-patterns/elem-built-in-function.md
+        - href: migration-to-odc/code-patterns/elem-sql-adapt.md
+        - href: migration-to-odc/code-patterns/elem-user-provider.md
+        - href: migration-to-odc/code-patterns/elem-rest-oauth2.md
+        - href: migration-to-odc/code-patterns/elem-sap.md
+        - href: migration-to-odc/code-patterns/arch-forge.md
+        - href: migration-to-odc/code-patterns/elem-multi-tenant.md
+    - href: migration-to-odc/prepare/reference.md
+    - href: migration-to-odc/known-issues.md
 # Reference
 - href: ref/intro.md
 - topics:
@@ -1868,15 +2016,15 @@
             - topics:
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
+                - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md 
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-infrastructure.md
                 - href: ref/apis/lifetime-deployment/examples/api-map-database-connections.md
-                - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md
-                - href: ref/apis/lifetime-deployment/examples/api-register-env.md                
-                - href: ref/apis/lifetime-deployment/examples/api-register-env.md
-                - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
                 - href: ref/apis/lifetime-deployment/examples/api-request-code.md
                 - topics:
-                    - href: ref/apis/lifetime-deployment/examples/api-unable-to-download-code.md
+                    - href: ref/apis/lifetime-deployment/examples/api-unable-to-download-code.md                
+                - href: ref/apis/lifetime-deployment/examples/api-register-env.md
+                - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
+
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
         - href: ref/apis/auto/lifetime-sdk.final.md
@@ -1901,4 +2049,3 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
-

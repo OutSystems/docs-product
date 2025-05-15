@@ -5,6 +5,13 @@ guid: 3b354b39-f6fa-46a2-9ee0-95f82dedbff1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process design, workflow development, visual modeling, drag and drop interface, process automation
+audience:
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Process Flow Editor

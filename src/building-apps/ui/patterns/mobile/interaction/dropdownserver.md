@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, dropdown implementation, user experience, data handling, ui customization
 summary: Explore the customizable Dropdown Server Side UI pattern in OutSystems 11 (O11) for managing complex dropdown use cases.
 locale: en-us
 guid: 8B9A073C-74E8-4019-84DE-C686AAFAC59A
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3562:27976
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Dropdown Server Side
@@ -134,7 +142,7 @@ After following these steps and publishing the module, you can test the pattern 
 |Property| Description| 
 |---|---|
 |ItemId (Text): Mandatory|DropdownServerSide item identifier. | 
-|IsSelected (Boolean): Optional| Set to True to allow users to select more than one option.  | 
+|IsSelected (Boolean): Optional| Set to True to display this dropdown option as selected. By default, False.  | 
 |ExtendedClass (Text): Optional  | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
 
 ## Events

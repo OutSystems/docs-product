@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) integrates with prerender.io to enhance SEO for reactive applications by pre-rendering content for better indexing by search engines.
-tags: 
+tags: seo optimization, prerender.io integration, single page applications, core web vitals, client-side rendering
 locale: en-us
 guid: 528FED29-0646-431E-98D1-9BDF5471068A
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4239:737
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Improve SEO of OutSystems reactive apps with prerendering
@@ -72,7 +80,7 @@ Lambda@Edge lets you run Node.js and Python Lambda functions to customize conten
 * After CloudFront receives the response from the origin (origin response)
 * Before CloudFront forwards the response to the viewer (viewer response)
 
-For more information, see [Using AWS Lambda with CloudFront Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html). 
+For more information, see [Customize at the edge with Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html). 
 
 You need to intercept both the viewer and the origin requests:
 

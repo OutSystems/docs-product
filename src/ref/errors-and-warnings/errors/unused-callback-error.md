@@ -5,6 +5,15 @@ guid: a6f3ed0c-94af-4c2a-9083-80ff50ca3083
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems, error handling, rest api, api callbacks, outsystems service studio
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Unused Callback Error

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css customization, ui design, style customization, css selectors, web development
 summary: Explore the CSS customization options for the Tabs UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 1acd4b94-2c08-48ab-9ad6-9c64bcf4d5de
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A581&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Tabs Reference

@@ -46,7 +46,7 @@ jobs:
 
     - name: 'Download markdown-figma'
       if: inputs.files == '' || steps.count.outputs.number > 0
-      uses: MiguelDomingues/markdown-figma-action@v1.0.4
+      uses: MiguelDomingues/markdown-figma-action@v1.05
 
     - name: 'Validate visual assets for changed files'
       if: steps.count.outputs.number > 0

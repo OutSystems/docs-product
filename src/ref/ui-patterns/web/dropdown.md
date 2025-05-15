@@ -1,11 +1,17 @@
 ---
-tags: runtime-traditionalweb; 
+tags: component customization, dropdown menus, web development, css selectors, frontend engineering
 summary: Explore dropdown component customization in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 53de8e92-e178-4967-a3cc-e36407f71669
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:452
+audience:
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Dropdown Reference
@@ -41,7 +47,4 @@ Applies only to Traditional Web Apps.
 
     ![Screenshot showing the use of ListRecords with a dropdown to create a list of links](images/dropdown-image-3.png "Dropdown ListRecords Example")
 
-    ![Animated GIF demonstrating the interaction with a dropdown in a traditional web app](images/dropdown-gif-1.gif "Interactive Dropdown Example")
-
-
-
+    <iframe src="https://player.vimeo.com/video/996245584" width="458" height="658" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with a dropdown in a traditional web app.</iframe>

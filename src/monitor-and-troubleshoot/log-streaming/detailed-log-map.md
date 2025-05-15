@@ -1,11 +1,21 @@
 ---
 summary: Explore the integration of OpenTelemetry standards in OutSystems 11 (O11) for enhanced log data management across various modules and applications.
-tags: article-page; support-Installation_Configuration; version-11; cloud_configuration; conceptual
+tags: opentelemetry, logging, data management, application performance monitoring (apm), cloud configuration
 locale: en-us
 guid: 83602415-028e-4bd2-937f-99ff473939c0
 app_type: traditional web apps, mobile apps, reactive web apps
-figma: 
+figma:
 platform-version: o11
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+  - tech leads
+  - infrastructure managers
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
 ---
 
 # Logged data fields
@@ -80,6 +90,16 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |RequestEventName|log.attributes.outsystems.log.event.type|Text|The name of the event.|
 |RequestKey|log.attributes.outsystems.request.key|GUID|Correlation field of the several log types to a single request.|
 |N/A|log.attributes.outsystems.log.type|Text|Type of log: RequestEvent. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
+|N/A|log.attributes.outsystems.request.event.details.d|Int|The total duration of query, integration, extension, client or server request. Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.ec|Int|The number of errors that occurred during the request. Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.lt|Int|The time, in milliseconds, that the browser took to process the response. The load time includes for example the page rendering and the JavaScript execution. Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.sat|Int|The time spent, in milliseconds, retrieving the session from the database. Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.tcie|Int|The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP). Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.tcit|Int|The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP). Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.tee|Int|The total number of calls to actions provided by extensions. Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.tet|Int|The total time spent, in milliseconds, calling actions provided by extensions. Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.tqe|Int|The total number of executed queries (Aggregates and Advanced Queries). Available from Dec 18th 2024|
+|N/A|log.attributes.outsystems.request.event.details.tqt|Int|The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). Available from Dec 18th 2024|
 
 ## CyclicJob logs
 

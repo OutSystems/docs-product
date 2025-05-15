@@ -5,6 +5,16 @@ guid: 590a02ff-3c8a-442a-a6af-a18205dbe1d8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: module management, entity references, permissions, environment management, troubleshooting
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - unblock
 ---
 
 # Missing Entity Association Warning

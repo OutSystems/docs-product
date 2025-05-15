@@ -1,11 +1,21 @@
 ---
 summary: Explore translation management features in OutSystems 11 (O11) using the translation editor in Service Studio.
-tags: support-application_development
+tags: localization, internationalization, application development, user interface, translation management
 locale: en-us
 guid: 507ea92c-761e-4ad0-aeee-ce029328c6b9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:56
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - translating-apps
 ---
 
 # Translating with the translation editor

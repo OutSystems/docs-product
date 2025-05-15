@@ -1,11 +1,22 @@
 ---
 summary: Learn how to implement fixed and dynamic sorting in aggregates using OutSystems 11 (O11) to enhance data presentation in applications.
-tags: support-application_development; support-webapps
+tags: data sorting, aggregates, dynamic sorting, fixed sorting, data presentation
 locale: en-us
 guid: 1a92a987-8550-4f9c-9772-177373a40e2f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:2
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - filter-data
 ---
 
 # Sort Results in an Aggregate
@@ -77,4 +88,4 @@ In the following Sorting Example, a reactive application displays a list of empl
 
 1. Publish and test. Verify the list sorting changes after clicking the **Sort ASC** or **Sort DESC** buttons.  
 
-    ![Animated GIF demonstrating the sorting functionality in the SortingExample Reactive Web App after clicking Sort ASC and Sort DESC buttons.](images/sort-aggregate-ex5-ss.gif "Testing Sort Functionality")
+    <iframe src="https://player.vimeo.com/video/973090257" width="750" height="454" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the sorting functionality.</iframe>

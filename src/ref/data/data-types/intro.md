@@ -1,12 +1,21 @@
 ---
-tags: support-Database
+tags: data types, .net integration, lists, structures, data modeling
 locale: en-us
 guid: 686e3c25-4aaf-4507-9c51-aaf8f05954f7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1414:1769
 summary: Explore the range of data types in OutSystems 11 (O11), including lists and structures, and their integration with .NET at runtime.
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Data Types
 
 A data type is a classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be applied to it without causing an error. 

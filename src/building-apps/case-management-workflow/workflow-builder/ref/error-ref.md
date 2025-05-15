@@ -1,11 +1,18 @@
 ---
-tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; Errors; Business developers
+tags: error handling, platform server, outsystems 11, personal environments, technical troubleshooting
 summary: This document details error handling for OutSystems 11 (O11) Workflow Builder, including platform, publishing, and network issues.
 guid: 71f53a62-0c7d-499b-8772-7990c58ee9d2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:909
+audience:
+  - platform administrators
+outsystems-tools:
+  - workflow builder
+  - platform server
+coverage-type:
+  - unblock
 ---
 
 # Workflow Builder error reference

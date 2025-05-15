@@ -1,11 +1,23 @@
 ---
 summary: Explore how to configure app authentication settings in OutSystems 11 (O11) to enhance security and user experience across different app types.
-tags: runtime-mobileandreactiveweb; support-Security-overview
+tags: security, authentication, single sign-on, configuration guide, platform server
 locale: en-us
 guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:109
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - platform server
+coverage-type:
+  - understand
+  - apply
+topic:
+  - built-in-mechanisms
 ---
 
 # Configure app authentication
@@ -34,9 +46,11 @@ The following setting applies to both persistent and session authentication:
 
 * **Cache Time In Minutes** – Number of minutes the authentication information sent by the device is considered valid by the server without the need to fetch it from the database. After this time, the server validates the authentication tokens against the information stored in the database and supplies new authentication tokens. Setting it to 0 disables the authentication cache mechanism.
 
-* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web apps, and Mobile Apps distributed as Progressive Web apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
+* **Single Sign-On Between App Types** – When enabled, this option allows you to switch between traditional web apps, reactive web apps, mobile apps, and Progressive Web Apps (PWAs) in the same browser without signing in again. However, if you sign in to a native mobile app with the same account,the session is not extended.Logging out from any app logs you out from all devices.
 
-**Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). 
+For example, If you sign in to a traditional web app and then switch to a reactive web app, mobile app, or PWA in the same browser or vice versa, your session continues to remain active and you don't need to sign in again. To enable this setting, you must enable HTTPS in the environment.
+
+To keep the session active, if you remain active in a reactive app, then the session for  traditional web app is not extended. As a result, the traditional web app session expires, requiring you sign in again. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). However, if you remain active in a traditional web app, the session is extended for all reactive apps.
 
 <div class="info" markdown="1">
 
@@ -66,7 +80,7 @@ To configure the authentication settings for apps in your OutSystems environment
 
 In this page you can also generate new keys for authenticating and encrypting cookie values. This will force all the users of your apps to login again in the next server request. To generate new keys, press the Generate button in Authentication and Encryption Keys area:
 
-![Close-up of the Generate button for new Authentication and Encryption Keys in OutSystems Service Center.](images/configure-app-authentication-generate-keys-sc.png "Generate New Authentication and Encryption Keys")
+![Close-up screenshot of the Generate button for new Authentication and Encryption Keys in OutSystems Service Center.](images/configure-app-authentication-generate-keys-sc.png "Generate New Authentication and Encryption Keys")
 
 ## Authentication Types
 
@@ -106,7 +120,7 @@ The server validates the request by checking the following conditions:
 
 If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user or fails in case of tampering.
 
-![Diagram illustrating the authentication flow including cookie validation and session expiration in OutSystems.](images/authentication-1.png "Authentication Flow Diagram")
+![Diagram illustrating the authentication flow in OutSystems, including cookie validation and session expiration.](images/authentication-1.png "Authentication Flow Diagram")
 
 ### Authentication Cache
 
@@ -118,7 +132,7 @@ Keep this behavior in mind when the session Max Idle Time is low or when Max Idl
 
 ### Logging out of the application
 
-When an end user logs out of an app, all sessions are terminated. This prevents any invalid persistent authenticated session from staying alive.
+When an end user logs out of an app, all sessions in that browser are terminated. This prevents any invalid persistent authenticated session from staying alive.
 
 When the single sign-on between app types (SSO) is configured, if the end user logs out of a Reactive or Mobile app, all Traditional web apps in the same browser scope, regardless of the user provider, are also be logged out.
 

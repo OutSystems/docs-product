@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) features a robust exception handling mechanism that manages errors through various handlers and flows within application modules.
-tags: support-Application_Troubleshooting; support-webapps
+tags: exception handling, error management, flow management, application development, debugging
 locale: en-us
 guid: aa97807f-3db5-4d86-a746-7fe2506481a6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - backend developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - how-to-handle-exceptions
 ---
 
 # Exception Handling Mechanism
@@ -39,3 +49,7 @@ You should have, at least, one Exception Handler in your application flow to inf
 When you are handling exceptions raised by an integration you are consuming (such as an action of an Extension or a method of a REST API) you won't be able to determine the type of exception. In these situations, you should handle the exception with an All Exceptions Handler. Then, you can use the **ExceptionMessage** property of the Exception Handler element to identify the exception.
 
 For more information on handling errors in consumed REST APIs, check [Handling REST Errors](../../integration-with-systems/rest/consume-rest-apis/handling-rest-errors.md).
+
+## Handling exceptions in WebBlocks
+
+Imagine you have two flows, UIFlow1 and UIFlow2. In UIFlow1, there’s a Screen that includes a WebBlock from UIFlow2. If an exception occurs within this WebBlock, the `OnException` handler in UIFlow1 will handle it, not the one in UIFlow2. This is because, when you use components from another flow (like UIFlow2) within a Screen in UIFlow1, UIFlow1 takes on the responsibility for handling any exceptions those components might raise. This behavior is expected, as UIFlow1 acts as the primary flow and has precedence in exception handling for any elements it contains, regardless of their origin.

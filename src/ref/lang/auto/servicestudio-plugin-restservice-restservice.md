@@ -6,6 +6,17 @@ guid: 57616b45-1a96-4752-aa4a-dff3dd159a86
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest api, api security, http requests, web services, ssl/tls
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # REST API

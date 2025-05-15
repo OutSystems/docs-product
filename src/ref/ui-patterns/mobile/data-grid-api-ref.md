@@ -1,16 +1,21 @@
 ---
-tags: runtime-reactiveweb;
+tags: enterprise grade javascript data grid, grid functionalities, outsystems widgets, data grid api
 summary: Explore advanced grid functionalities in OutSystems 11 (O11) for building dynamic, data-driven reactive web applications.
 locale: en-us
 guid: 1bd5d5c4-98f6-4b5f-a463-865bfccb7339
 app_type: reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Data Grid Reactive APIs
-
-[comment]: <> (2.2.0)
 
 Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](https://developer.mescius.com/wijmo/flexgrid-javascript-data-grid/), an Enterprise Grade Javascript Data Grid, that can be used for building applications, such as reporting, data analytics, and business workflow.
 
@@ -135,9 +140,9 @@ TextFixed
 TextFromBinding
 :   Type: optional, Text.  
     Field to be displayed as text of the link from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-    For example: &quot;Product_Sample.Name&quot;  
-    **Note:** Field &quot;TextFixed&quot; is dominant.
+    Expected format: `"{EntityName}.[FieldName]"`. You can also use `"EntityName.FieldName"`.  
+    For example: `"{Product_Sample}.[Name]"`  
+    **Note:** Field `TextFixed` is dominant.
 
 ActionOptionalConfigs
 :   Type: optional, [ActionOptionalConfigs](<#Structure_ActionOptionalConfigs>).  
@@ -158,8 +163,8 @@ Header
 Binding
 :   Type: mandatory, Text.  
     Field to be displayed from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-    For example: &quot;Product_Sample.IsFavourite&quot;
+    Expected format: `"{EntityName}.[FieldName]"`. You can also use `"EntityName.FieldName"`.  
+    For example: `"{Product_Sample}.[IsFavourite]"`
 
 ColumnOptionalConfigs
 :   Type: optional, [ColumnOptionalConfigs](<#Structure_ColumnOptionalConfigs>).  
@@ -184,8 +189,8 @@ Header
 Binding
 :   Type: mandatory, Text.  
     Field to be displayed from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-        For example: &quot;Product_Sample.Price&quot;
+    Expected format: `"{EntityName}.[FieldName]"`.You can also use `"EntityName.FieldName"`.   
+        For example: `"{Product_Sample}.[Price]"`
 
 Mandatory
 :   Type: optional, [Mandatory](<#Structure_Mandatory>).  
@@ -214,8 +219,8 @@ Header
 Binding
 :   Type: mandatory, Text.  
     Field to be displayed from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-    For example: &quot;Product_Sample.CreatedOn&quot;
+    Expected format: `"{EntityName}.[FieldName]"`. You can also use `"EntityName.FieldName"`.
+    For example: `"{Product_Sample}.[CreatedOn]"`
 
 Mandatory
 :   Type: optional, [Mandatory](<#Structure_Mandatory>).  
@@ -244,8 +249,8 @@ Header
 Binding
 :   Type: mandatory, Text.  
     Field to be displayed from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-        For example: &quot;Product_Sample.CreatedOn&quot;
+    Expected format: `"{EntityName}.[FieldName]"`. You can also use `"EntityName.FieldName"`. 
+        For example: `"{Product_Sample}.[CreatedOn]`
 
 Mandatory
 :   Type: optional, [Mandatory](<#Structure_Mandatory>).  
@@ -274,8 +279,8 @@ Header
 Binding
 :   Type: mandatory, Text.  
     Field to be displayed from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-    For example: &quot;Product_Sample.Category&quot;
+    Expected format: `{EntityName}.[FieldName]`. You can also use `"EntityName.FieldName"`. 
+    For example: `"{Product_Sample}.[Category]"`
 
 Mandatory
 :   Type: optional, [Mandatory](<#Structure_Mandatory>).  
@@ -304,7 +309,7 @@ Data
 IsDataFetched
 :   Type: mandatory, Boolean.  
     Defines if an empty state should be displayed while data is loading.  
-    For example: DataAction.IsDataFetched
+    For example: `DataAction.IsDataFetched`
 
 GridHeight
 :   Type: optional, Integer.  
@@ -333,15 +338,13 @@ Header
 
 ImageUrlFromBinding
 :   Type: optional, Text.  
-    Field to be displayed as image url from your data. Expected format: &quot;{EntityName}.[FieldName]&quot;. The field must be a URL.  
-    For example: &quot;Product_Sample.ImageURL&quot;
+    Field to be displayed as image url from your data. Expected format: `"{EntityName}.[FieldName]"`. You can also use `"EntityName.FieldName"`. The field must be a URL.  
+    For example: `"{Product_Sample}.[ImageURL]"`
     Note: Field "ImageUrlFixed" is dominant.
 
 ImageOptionalConfigs
 :   Type: optional, [ImageOptionalConfigs](<#Structure_ImageOptionalConfigs>).  
     Set additional parameters to customize the column's behavior and functionality.
-
-
 
 ### MenuItem_Column_Freeze { #MenuItem_Column_Freeze }
 
@@ -532,8 +535,8 @@ Header
 Binding
 :   Type: mandatory, Text.  
     Field to be displayed from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-    For example: &quot;Product_Sample.Stock&quot;
+    Expected format: `"{EntityName}.[FieldName]"`. You can also use `"EntityName.FieldName"`.
+    For example: `"{Product_Sample}.[Stock]`
 
 Mandatory
 :   Type: optional, [Mandatory](<#Structure_Mandatory>).  
@@ -571,7 +574,7 @@ GridWidgetId
 
 PromptMessage
 :   Type: optional, Text.  
-    Message that appears in the search input (Default: &quot;Search for data in the Grid&quot;).
+    Message that appears in the search input (Default: `Search for data in the Grid`).
 
 ### TextColumn { #TextColumn }
 
@@ -588,8 +591,8 @@ Header
 Binding
 :   Type: mandatory, Text.  
     Field to be displayed from your data.  
-    Expected format: &quot;{EntityName}.[FieldName]&quot;  
-    For example: &quot;Product_Sample.Name&quot;
+    Expected format: `"{EntityName}.[FieldName]"`. You can also use `"EntityName.FieldName"`.
+    For example: `"{Product_Sample}.[Name]"`
 
 Mandatory
 :   Type: optional, [Mandatory](<#Structure_Mandatory>).  
@@ -612,7 +615,7 @@ You should use this action in the Data Action after you fetch the data from the 
 Data
 :   Type: mandatory, Object.  
     Data to be displayed in the datagrid. Use the method ToObject() to pass your data.  
-    For example: ToObject(GetProducts.List)
+    For example: `ToObject(GetProducts.List)`
 
 **Outputs**
 
@@ -980,7 +983,7 @@ IsValid
 
 ErrorMessage
 :   Type: optional, Text.  
-    Message shown to the user when the value introduced is not valid. By default: &quot;Invalid [ColumnName]&quot;
+    Message shown to the user when the value introduced is not valid. By default: `Invalid [ColumnName]`
 
 ### SetViewLayout { #Client_SetViewLayout }
 
@@ -1057,7 +1060,7 @@ Binding
 
 FilterTypeId
 :   Type: Filter_Type Identifier.  
-    Type of filter applied can be either &quot;condition&quot; or &quot;value&quot;.
+    Type of filter applied can be either `condition` or `value`.
 
 FilterConditions
 :   Type: [Filter_Condition](<#Structure_Filter_Condition>) List.  
@@ -1098,7 +1101,6 @@ LeftColumnIndex
 
 BottomRowIndex
 :   Type: Integer.  
-      
     Bottom row index.
 
 RightColumnIndex
@@ -1114,7 +1116,7 @@ Information about the lines that were added/changed/removed by the user.
 HasChanges
 :   Type: Boolean.  
     Checks if there was any change made to the data grid by the user.  
-    If &quot;false&quot;, then no change was made to the data.
+    If `false`, then no change was made to the data.
 
 AddedLines
 :   Type: Text.  
@@ -1318,11 +1320,11 @@ Represents a filter condition
 
 And
 :   Type: Boolean.  
-    Operator to be used between conditions. If true &quot;and&quot;, else &quot;or&quot;.
+    Operator to be used between conditions. If true `and`, else `or`.
 
 OperatorTypeId
 :   Type: Filter_OperatorType Identifier.  
-    Filter operator to be used in the condition (e.g. &quot;Is Greater than&quot;, ...)
+    Filter operator to be used in the condition (e.g. `Is Greater than`, ...)
 
 Value
 :   Type: Text.  
@@ -1342,8 +1344,8 @@ AltTextFixed
 AltTextFromBinding
 :   Type: Text.
     Field to be displayed as alternative text for column images, if images cannot be displayed. 
-    Expected format: &quot;{EntityName}.[FieldName]&quot;.
-    For example: &quot;Product_Sample.Name&quot;
+    Expected format: `{EntityName}.[FieldName]`.
+    For example: `Product_Sample.Name`
     Note: Field "AltTextFixed" is dominant.
 
 Align

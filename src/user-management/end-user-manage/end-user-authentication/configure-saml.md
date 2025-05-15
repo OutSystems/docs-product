@@ -1,11 +1,26 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates SAML 2.0 for federated authentication, enabling SSO and addressing current limitations and configuration steps.
-tags: runtime-traditionalwebandreactiveweb
+tags: saml 2.0, federated authentication, single sign-on, identity provider, security
 locale: en-us
 guid: 47803c16-1495-4db3-b9e5-10dbd77538a9
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:72
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - apply
+  - remember
+  - unblock
+topic:
+  - external-auth-mechanisms
 ---
 
 # Configure SAML 2.0 Authentication
@@ -32,7 +47,7 @@ The current SAML 2.0 implementation in OutSystems has some limitations outlined 
 
 * To implement single logout you may need to change the authentication flows of your OutSystems application. Check below for details.
 
-* Though the Users application is multi-tenant, multi-tenancy isn't supported when using SAML 2.0, Azure AD or Okta authentication methods.
+* Though the Users application is multi-tenant, multi-tenancy isn't supported when using SAML 2.0, Microsoft Entra or Okta authentication methods.
   
 * Supports only flows initiated by the Service Provider.
 
@@ -81,7 +96,7 @@ For more information, check the following topics according to your application t
 
 ### Enable single sign-on between app types to use SAML 2.0 in Reactive Web Apps { #enable-sso-between-app-types }
 
-To use SAML 2.0 authentication in Reactive Web Apps, you must enable **Single Sign-On Between App Types** in the environment configuration. This also applies to SAML-based authentication methods like Azure AD and Okta.
+To use SAML 2.0 authentication in Reactive Web Apps, you must enable **Single Sign-On Between App Types** in the environment configuration. This also applies to SAML-based authentication methods like Microsoft Entra and Okta.
 
 Additionally, this configuration requires you to enable some additional security settings at the environment level.
 
@@ -112,7 +127,7 @@ To enable all the required settings do the following:
 
     </div>
 
-1. In **Session Login Settings**, ensure the **Max. Idle Time** has the same value as the **Session Timeout** for Traditional Web Apps (see [here](../../../building-apps/data/session.md#session-timeout) how to configure the session timeout for Traditional Web Apps).
+1. In **Session Login Settings**, ensure the **Max. Idle Time** has the same value as the **Session Timeout** for Traditional Web Apps (see [here](../../../building-apps/data/session/session.md#session-timeout) how to configure the session timeout for Traditional Web Apps).
 
 1. Click **Save and Apply Settings to the Factory** to apply all the new runtime settings.
 
@@ -124,7 +139,7 @@ You can configure the **Groups** claim in the "Configure Authentication" screen 
 
 When there is a match, the Users application associates the user logging in to the existing OutSystems group. If there's no match, OutSystems first creates a new group with the same name as the Identity Provider Server group and then associates the user to that group.
 
-_Known limitation:_ In Azure AD, group names received from the Identity Provider Server consist only of a globally unique identifier (GUID). This means that to have a match between Azure AD groups and OutSystems groups you must name the OutSystems groups using these GUID values.
+_Known limitation:_ In Microsoft Entra, group names received from the Identity Provider Server consist only of a globally unique identifier (GUID). This means that to have a match between Microsoft Entra groups and OutSystems groups you must name the OutSystems groups using these GUID values.
 
 ## Troubleshooting SAML authentication issues
 

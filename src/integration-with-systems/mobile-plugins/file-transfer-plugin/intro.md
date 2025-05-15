@@ -1,11 +1,23 @@
 ---
 summary: Explore advanced file transfer capabilities in mobile and Reactive Web Apps with the File Transfer Plugin in OutSystems 11 (O11).
-tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+tags: plugin implementation, progressive web apps, file management, background processing, installation guides
 locale: en-us
 guid: 0bb071a1-f602-4d6b-9b4e-ca0c9c044c06
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+  - remember
+topic:
+  - using-cordova-plugins
 ---
 
 # File Transfer Plugin

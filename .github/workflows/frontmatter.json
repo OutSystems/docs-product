@@ -1,53 +1,124 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "object",
-    "properties": {
-      "helpids": {},
-      "summary": {},
-      "tags": {},
-      "guid": {
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
-      },
-      "locale": {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "helpids": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "pattern": "^\\d+(,\\s*\\d+)*$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "summary": {},
+    "tags": {},
+    "guid": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+    },
+    "locale": {
+      "type": "string",
+      "enum": [
+        "en-us"
+      ]
+    },
+    "app_type": {
+      "type": "string",
+      "pattern": "^(mobile apps|reactive web apps|traditional web apps)(,\\s*(mobile apps|reactive web apps|traditional web apps))*$"
+  },
+    "platform-version": {
+      "type": "string",
+      "enum": [
+        "o11"
+      ]
+    },
+    "figma": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^$"
+        },
+        {
+          "type": "string",
+          "pattern": "^https://www\\.figma\\.com"
+        }
+      ]
+    },
+  "coverage-type": {
+    "type": ["array", "null"],
+    "items": {
+      "type": "string",
+      "enum": [
+        "remember",
+        "understand",
+        "apply",
+        "evaluate",
+        "unblock",
+        "none"
+      ]
+    },
+    "uniqueItems": true
+  },
+  "audience": {
+      "type": ["array", "null"],
+      "items": {
         "type": "string",
         "enum": [
-          "en-us"
+          "mobile developers",
+          "frontend developers",
+          "backend developers",
+          "full stack developers",
+          "team lead",
+          "team manager",
+          "test engineers",
+          "architects",
+          "platform administrators",
+          "tech leads",
+          "infrastructure managers",
+          "ui designers",
+          "business analysts",
+          "data engineers",
+          "project managers",
+          "product owners",
+          "none"
         ]
       },
-      "app_type": {
-        "type": "string",
-        "pattern": "^(mobile apps|reactive web apps|traditional web apps)(,\\s*(mobile apps|reactive web apps|traditional web apps))*$"
+      "uniqueItems": true
     },
-      "platform-version": {
-        "type": "string",
-        "enum": [
-          "o11"
-        ]
-      },
-      "figma": {
-        "oneOf": [
-          {
-            "type": "null"
-          },
-          {
-            "type": "string",
-            "pattern": "^$"
-          },
-          {
-            "type": "string",
-            "pattern": "^https://www\\.figma\\.com"
-          }
-        ]
-      }
+    "outsystems-tools": {
+    "type": ["array", "null"],
+    "items": {
+      "type": "string"
     },
-    "required": [
-      "summary",
-      "locale",
-      "app_type",
-      "guid",
-      "platform-version",
-      "figma"
+    "uniqueItems": true
+  },
+  "topic": {
+    "type": [
+      "array",
+      "null"
     ],
-    "additionalProperties": false
+    "items": {
+      "type": "string"
+    },
+    "uniqueItems": true
+  }
+  },
+  "required": [
+    "summary",
+    "locale",
+    "app_type",
+    "guid",
+    "platform-version",
+    "figma"
+  ],
+  "additionalProperties": false
 }

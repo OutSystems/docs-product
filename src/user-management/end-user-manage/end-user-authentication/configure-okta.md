@@ -1,11 +1,23 @@
 ---
 summary: Learn how to configure Okta authentication for end users in OutSystems 11 (O11) applications, including setup in both the Users app and Okta portal.
-tags: runtime-traditionalwebandreactiveweb
+tags: authentication, security, saml 2.0, okta, configuration
 locale: en-us
 guid: acab4979-21b8-47ef-8618-48af0944b3a6
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:92
+audience:
+  - platform administrators
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - users app
+coverage-type:
+  - apply
+  - unblock
+topic:
+  - external-auth-mechanisms
 ---
 
 # Configure Okta Authentication

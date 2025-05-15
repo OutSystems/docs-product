@@ -1,11 +1,23 @@
 ---
 summary: OutSystems 11 (O11) enables control over end-user access to app screens, data, and actions based on user IDs or roles.
-tags: support-Security; support-Security-featured
+tags: access control, security best practices, role-based access control, user permissions, security warnings
 locale: en-us
 guid: 68463867-fb0c-4e54-9fe5-d0e117dbf9bb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:120
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - secure-screen
+  - secure-ui-element
 ---
 
 # Validate End User Permissions in the Application

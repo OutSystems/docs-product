@@ -1,11 +1,19 @@
 ---
 summary: Explore how to convert Mobile or Reactive modules to a Library in OutSystems 11 (O11), including handling specific constraints and TrueChange errors.
-tags: runtime-mobileandreactiveweb
+tags: library module conversion, outsystems development, error handling, truechange, module management
 locale: en-us
 guid: 08e6258e-4543-4232-b5dc-1fd3707a0ecf
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Convert to Library

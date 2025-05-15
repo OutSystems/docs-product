@@ -5,6 +5,15 @@ guid: a857c31f-3b44-4cbd-9630-985e56bf06be
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: deployment, warnings resolution, best practices, outsystems development, software quality assurance
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Warnings

@@ -5,6 +5,15 @@ guid: c16aaff5-3030-44bf-bae7-1c2a0960dd00
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, data types, debugging, list operations, ide usage
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Record List Indexer Error

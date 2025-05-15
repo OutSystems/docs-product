@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) accelerators enable faster creation of reactive web and mobile apps with customizable screen components.
-tags: 
+tags: component-based development, app development acceleration, ui component customization, outsystems forge, online video tutorial
 locale: en-us
 guid: fc130f38-3ed2-46f5-a1d1-4319f3e37dfb
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=568%3A366&mode=design&t=VUTD7oZE9xvPWlG0-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Accelerators to compose a screen
@@ -32,9 +42,9 @@ In Service Studio, open a Screen for editing and follow these steps:
 
 1. Publish your app and preview the screen.
 
-![Animated GIF demonstrating how to drag and drop an accelerator into a screen within OutSystems Service Studio](images/acc-drag-drop-ss.gif "Drag and Drop Accelerator in Service Studio")
+<iframe src="https://player.vimeo.com/video/973090137" width="750" height="395" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video displaying how to drag and drop an accelerator into a screen within OutSystems Service Studio.</iframe>
 
-Once you've published your app, you can customize it by, for example, [replacing sample data with your own data](#replace-sample-data-with-real-data) and [adapting the UI and logic](#adapt-the-UI-and-logic) to match the user experience you want to achieve. You can also use the [Map](../patterns/mobile/interaction/map/map.md) and [Login with Google](accelerator-google.md) accelerators in your app.
+Once you've published your app, you can customize it by, for example, [replacing sample data with your own data](#replace-sample-data-with-real-data) and [adapting the UI and logic](#adapt-the-UI-and-logic) to match the user experience you want to achieve. You can also use the [Map](../patterns/mobile/interaction/map/map.md) accelerator in your app.
 
 ### Replace sample data with real data
 

@@ -1,11 +1,21 @@
 ---
 summary: Learn how to customize REST API responses in OutSystems 11 (O11) by setting the On Response property and using the OnResponse callback.
-tags: 
+tags: rest api, api integration, outsystems service studio, api customization, json handling
 locale: en-us
 guid: e8e058c7-435f-4c70-8073-afd4ac5b451a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=415:20
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - custom-request-response
 ---
 
 # Customize REST API Responses

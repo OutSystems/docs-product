@@ -6,6 +6,15 @@ guid: b2bb3ce3-6403-4a1a-80d9-c5d34e509048
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sap integration, data modeling, application development, software documentation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Structure Attribute - SAP Remote Function

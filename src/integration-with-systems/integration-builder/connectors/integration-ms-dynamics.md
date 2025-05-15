@@ -5,6 +5,20 @@ guid: 5c9afbf6-6035-4da8-8d08-77c1503c0dcf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6371
+tags: microsoft dynamics 365, data management, application development, https, microsoft powerapps
+audience:
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - integration builder
+  - service studio
+coverage-type:
+  - unblock
+  - understand
+  - apply
 ---
 
 # Microsoft Dynamics 365 integration
@@ -37,7 +51,7 @@ Integration Builder uses this authorization to retrieve the metadata from Micros
 
 If you have several Microsoft Dynamics 365 environment instances in your Microsoft account, Integration Builder asks you which environment you want to use when connecting to Microsoft Dynamics 365.
 
-According to Microsoft, an environment instance in Microsoft Dynamics 365 is "a space to store, manage, and share your organization's business data, apps, and flows". When you're creating a Microsoft Dynamics 365 integration, Integration Builder registers an Azure application in the environment you choose.
+According to Microsoft, an environment instance in Microsoft Dynamics 365 is "a space to store, manage, and share your organization's business data, apps, and flows". When you're creating a Microsoft Dynamics 365 integration, Integration Builder registers a Mircosoft Entra app in the environment you choose.
 
 ## Authorizing a Microsoft Dynamics 365 connection { #authorize-integration }
 
@@ -45,18 +59,17 @@ Microsoft Dynamics 365 integrations generated with Integration Builder use a cer
 
 Request authentication is handled transparently when you call Server Actions exposed by the service module (the module with a "_IS" suffix, by default). The Server Actions obtain the certificate info from the connection that you previously associated with the integration in Integration Manager. Therefore, you don't need to provide any authentication information as input parameters.
 
-### If you have administrator permissions in Azure Active Directory
+### If you have administrator permissions in Microsoft Entra
 
-You can select the `Create automatically` option to have the Integration Manager create the connection on your behalf.
-Integration Manager generates a certificate and connects to Integration Builder, which requests the creation of an Azure AD app that uses the certificate for authentication and authorization.
+You can select the `Create automatically` option to have the Integration Manager create the connection on your behalf. Integration Manager generates a certificate and connects to Integration Builder, which requests the creation of a Microsoft Entra app that uses the certificate for authentication and authorization.
 
 ![Image depicting the authorization step in Integration Manager for connecting to Microsoft Dynamics 365.](images/dataverse-im-authorization.png "Authorization in Integration Manager")
 
-### If you don't have administrator permissions in Azure Active Directory
+### If you don't have administrator permissions in Microsoft Entra
 
-If you don't have administrator permission in Azure AD or prefer not to grant Integration Builder permission to create apps in Azure AD, then you should select the `Create manually` option.
+If you don't have administrator permission in Microsoft Entra or prefer not to grant Integration Builder permission to create apps in Microsoft, then you should select the `Create manually` option.
 
-Creating a connection without administrator credentials requires parameters from the Azure AD platform. The Azure AD account administrator needs to create a new Azure app to obtain these parameters.
+Creating a connection without administrator credentials requires parameters from the Microsoft Entra platform. The Microsoft Entra account administrator needs to create a new Microsoft Entra app to obtain these parameters.
 
 Integration Builder can send an email to the administrator requesting the information you need. The email includes a unique authorization certificate, and [instructions on how the administrator proceeds](how-register-ib-ms-sp-dv-d360.md).
 
@@ -64,7 +77,7 @@ Once you receive the information, enter it into Integration Builder, and select 
 
 ### Editing a connection in Integration Manager
 
-Each connection to Microsoft Dynamics 365 you create in Integration Manager is tied to an application registered in Azure AD. To edit the connection, you must use a Microsoft account that has access to Azure AD and must authorize Integration Builder to connect on this user's behalf.
+Each connection to Microsoft Dynamics 365 you create in Integration Manager is tied to an application registered in Microsoft Entra. To edit the connection, you must use a Microsoft account that has access to Microsoft Entra and must authorize Integration Builder to connect on this user's behalf.
 
 This authorization is only valid for a specific user. If another user wants to edit a connection or integration, they also need to authorize Integration Builder.
 

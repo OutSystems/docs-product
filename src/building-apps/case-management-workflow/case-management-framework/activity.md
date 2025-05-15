@@ -1,11 +1,22 @@
 ---
-tags: Case Management; Case Management framework;
+tags: case management framework, human activities, api, assignment control, access control
 summary: OutSystems 11 (O11) provides APIs for managing human activities in case management, including assignments and access controls.
 guid: 3dd527f3-1678-47ac-bf40-c86b8116b5b3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+  - business analysts
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - remember
 ---
 
 # Activities

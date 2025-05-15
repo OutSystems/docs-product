@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, widget implementation, data retrieval, badge notification, dependency management
 summary: OutSystems 11 (O11) supports the Badge UI Pattern for displaying dynamic numerical notifications in Traditional Web Apps.
 locale: en-us
 guid: 4e5ea285-0422-4cb1-9f36-1e49d7422fb7
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=243%3A2&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Badge
@@ -62,7 +69,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. Select the Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the following expression and click **Done**.
+1. In the Expression Editor, enter the following expression and click **Close**.
 
     ``LongIntegerToInteger(GetUsers.Count)``
 

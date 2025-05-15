@@ -6,6 +6,15 @@ guid: acb357eb-4100-486a-a9ba-e610ce1b52b2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest apis, api integration, parameter configuration, input validation, web service development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Input Parameter - REST API Callback

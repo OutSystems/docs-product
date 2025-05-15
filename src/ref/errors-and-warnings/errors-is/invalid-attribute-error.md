@@ -5,6 +5,15 @@ guid: 81b14a73-9d6c-443d-8ef8-22819129e350
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ide usage, reactive web apps, tutorials for beginners, error handling, data modeling, entity management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Attribute Error

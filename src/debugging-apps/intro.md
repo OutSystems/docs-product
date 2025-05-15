@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) provides advanced debugging features in Service Studio for detailed app analysis and troubleshooting.
-tags: support-application_development; support-Application_Troubleshooting; support-Application_Troubleshooting-featured
+tags: debugging, breakpoints, native mobile app debugging, pwa (progressive web app), debugger ui
 locale: en-us
 guid: 78def0b5-863d-4d58-8ea0-bb9f28bf1ef8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:129
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Debugging apps
@@ -122,3 +133,7 @@ Alternatively, manual distribution of users across front-ends or using DNS load 
 Proxy scenarios are supported in self-managed environments. However, there is no option to add Trusted proxy addresses in OutSystems Cloud installations.
 
 </div>
+
+## Debugging with redirect rules
+
+When debugging an app that has a redirect rule (e.g., `oldurl/module -> newurl/module`), always connect Service Studio to the **new URL** (`newurl`). Attempting to connect to the old URL may result in debugging issues.

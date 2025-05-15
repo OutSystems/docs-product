@@ -1,11 +1,22 @@
 ---
 summary: Explore REST API logging and troubleshooting features in OutSystems 11 (O11).
-tags: 
+tags: rest api, logging, troubleshooting, service center, integrations
 locale: en-us
 guid: 60a9bcc9-9841-40ba-b6be-95dc14831c47
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3518%3A268&mode=design&t=RWYtMZdGkE4SlpO3-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service center
+coverage-type:
+  - unblock
+topic:
+  - troubleshoot-webservices
 ---
 
 # Troubleshoot a REST API
@@ -38,7 +49,7 @@ To access the logs of your REST API, do the following:
 
 ## View REST API Logs directly from the database
 
-Customers with access to the database cab also query related to an action and see all related details by doing the following:
+Customers with access to the database can also see all related details by doing the following:
 
 1. Access the database on the selected environment.
 

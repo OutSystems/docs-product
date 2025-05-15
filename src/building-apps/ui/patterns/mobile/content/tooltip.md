@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;   
+tags: ui design, user experience, ui patterns, mobile development, web development
 summary: Explore how to implement and customize the Tooltip UI Pattern in OutSystems 11 (O11) for enhanced user interface interactions.
 locale: en-us
 guid: 44f1bcc8-d2bd-4174-ae3d-8813092a4bac
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:71
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Tooltip

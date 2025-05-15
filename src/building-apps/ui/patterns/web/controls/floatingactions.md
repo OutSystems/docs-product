@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, ui patterns, web development, outsystems, widget implementation
 summary: Learn how to implement the Floating Actions UI Pattern in OutSystems 11 (O11) for enhanced user interface design in Traditional Web Apps.
 locale: en-us
 guid: 2d4b31df-c2f5-46c6-945b-8fd711f22542
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=232%3A4&mode=design&t=KpVEJMvnBwiukqql-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Floating Actions

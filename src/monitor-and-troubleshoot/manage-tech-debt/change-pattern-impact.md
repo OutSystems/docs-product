@@ -1,11 +1,19 @@
 ---
-tags: 
+tags: technical debt management, code patterns, ai-assisted development, best practices, configuration
 summary: OutSystems 11 (O11) allows customization of code pattern impact levels on technical debt through AI Mentor Studio.
 locale: en-us
 guid: EB77F9BF-FA60-4B26-9E19-FA17C6B70EF1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=3052:321
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - ai mentor studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Change the impact level of a code pattern on your technical debt

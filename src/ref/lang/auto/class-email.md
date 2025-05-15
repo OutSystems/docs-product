@@ -5,6 +5,14 @@ guid: 35c72b23-7903-43b0-be96-1e10933d3f17
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: email configuration, user interface design, web development, web applications, styling
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Email

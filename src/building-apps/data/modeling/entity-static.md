@@ -1,16 +1,27 @@
 ---
 summary: Learn how to manage Static Entities in OutSystems 11 (O11) for predefined data sets with global scope and automatic persistence management.
-tags:
+tags: data modeling, entity management, database persistence, data integrity, service studio usage
 locale: en-us
 guid: a0ab595d-66a9-4bee-988a-d12ba224b0e5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1275:18338
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - static-entities
 ---
 
 # Static Entities
 
-A **Static Entity** consists of a set of named values. Think of Static Entities as literal values stored in a database whose scope is always global. The **Records** folder of the Static Entity holds the data, and the Attributes define the structure of the data.
+A [**Static Entity**](../../../ref/lang/auto/class-static-entity.md) consists of a set of named values. Think of Static Entities as literal values stored in a database whose scope is always global. The **Records** folder of the Static Entity holds the data, and the Attributes define the structure of the data.
 
 The only action available for the Static Entities is the **Get&lt;StaticEntity&gt;** action, because OutSystems manages the data persistence for you.
 
@@ -47,6 +58,11 @@ Service Studio creates the following Attributes automatically:
 **Is_Active**
 :   Defines whether a record is available during runtime. For example, the records with **Is_Active** set to false aren't used when scaffolding uses the Static Entity.
 
+<div class="info" markdown="1">
+
+  If your static entity is public, you won't be able to use it as an Aggregate Source from the Library module. 
+
+</div>
 
 ## Convert Static Entity to Entity
 

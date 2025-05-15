@@ -5,7 +5,19 @@ guid: b89718c6-8e22-4481-a4ea-6481e349e206
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:322
+tags: application initialization, screen rendering, system events, client actions, ide usage
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - system-events
 ---
+
 # On Application Ready
 
 <div class="info" markdown="1">

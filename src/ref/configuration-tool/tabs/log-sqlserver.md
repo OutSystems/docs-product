@@ -5,6 +5,16 @@ guid: 09712708-bd45-4271-9005-9b19e43d29dc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sql server, azure sql database, database configuration, logging, security
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Log tab in SQL Server and Azure SQL Database

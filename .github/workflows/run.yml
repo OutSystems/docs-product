@@ -55,8 +55,6 @@ jobs:
     secrets: inherit
     with:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
-      pull-request-title: ${{ needs.pr-info.outputs.pull-request-title }}
-      ignore: ${{ needs.pr-info.outputs.skip-jira == 'true' }}
 
   visual-assets:
     name: "Visual Assets"
@@ -67,6 +65,19 @@ jobs:
     with:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
       files: ${{ needs.pr-info.outputs.changed-files }}
+  
+  auto-fill:
+    if: github.event_name == 'pull_request'
+    uses: OutSystems/tk-cicd/.github/workflows/autofill-frontmatter.yml@main
+    with:
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
+      ACTION_TYPE: ${{ github.event.action }}  # Pass the action type (opened or synchronize)
+      BEFORE_SHA: ${{ github.event.before }}   # Pass the SHA of the commit before the synchronization
+      AFTER_SHA: ${{ github.event.after }}
+      BASE_BRANCH: ${{ github.event.pull_request.base.ref }}  # Base branch of the pull request
+      HEAD_BRANCH: ${{ github.event.pull_request.head.ref }}  # Head branch of the pull request 
+    secrets: inherit
 
   frontmatter:
     name: Frontmatter

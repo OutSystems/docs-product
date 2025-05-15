@@ -7,14 +7,6 @@ on:
         description: "The Pull Request number"
         type: string
         required: true
-      pull-request-title:
-        description: "The Pull Request title"
-        type: string
-        required: true
-      ignore:
-        description: "Skip check"
-        type: boolean
-        required: true
 
 concurrency: 
   group: jira-pr-${{ github.ref }}
@@ -31,29 +23,266 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Check PR Label
+      id: check-pr-label
+      run: |
+        if [[ $( gh pr view ${{ inputs.pull-request }} --repo ${{ github.repository }} --json labels --jq ".labels[].name" | grep "skip-jira") != *skip-jira* ]]; then
+          echo "ignore=false" >> "$GITHUB_OUTPUT"
+        else
+          echo "ignore=true" >> "$GITHUB_OUTPUT"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: 'Skip JIRA check'
-      if: inputs.ignore != false
+      if: steps.check-pr-label.outputs.ignore != 'false'
       run: |
         echo "::warning title=JIRA::JIRA issue check skipped for Pull Request https://github.com/${{ github.repository }}/pull/${{ inputs.pull-request }}." 
 
+    - name: PR title
+      id: pr-info
+      if: steps.check-pr-label.outputs.ignore == 'false'
+      run: |
+        echo "title<<EOF" >> $GITHUB_OUTPUT
+        gh pr view ${{ inputs.pull-request }} --repo ${{ github.repository }} --json title --jq .title >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+        echo "author<<EOF" >> $GITHUB_OUTPUT
+        gh pr view ${{ inputs.pull-request }} --repo ${{ github.repository }} --json author --jq .author.login >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: JIRA
       id: jira
-      if: inputs.ignore == false
-      uses: phorest/regex-action@v1.0.3
+      if: steps.check-pr-label.outputs.ignore == 'false'
+      uses: svenk-ct/regex-action@v3
       with:
         regex_pattern: ${{ vars.JIRA_REGEX_PATTERN }}
         regex_flags: 'gim'
-        search_string: ${{ inputs.pull-request-title }}
+        search_string: ${{ steps.pr-info.outputs.title }}
 
     - name: 'Print JIRA issue'
       if: steps.jira.outputs.first_match != ''
       run: |
         echo "::notice title=JIRA issue ${{ steps.jira.outputs.first_match }}::${{ vars.JIRA_URL }}${{ steps.jira.outputs.first_match }}" 
 
+    - name: Check is Techical Knowledge
+      id: check-membership
+      run: |
+        if [[ $( gh api "orgs/${{ vars.TK_ORG_SLUG }}/teams/${{ vars.TK_TEAM_SLUG }}/memberships/${{ steps.pr-info.outputs.author }}" --jq .state ) != *active* ]]; then
+          echo "is-member=false" >> "$GITHUB_OUTPUT"
+        else
+          echo "is-member=true" >> "$GITHUB_OUTPUT"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOOLS_PAT }}
+
+    - name: Notify membership
+      if: ${{ steps.check-membership.outputs.is-member == 'true' }}
+      run: |
+        echo "::notice title=Technical Knowledge::${{ steps.pr-info.outputs.author }} is a member of ${{ vars.TK_TEAM_SLUG }} team. Please add the JIRA issue to the pull request title." 
+
     - name: 'Missing JIRA issue'
       uses: actions/github-script@v7
-      if: inputs.ignore == false && steps.jira.outputs.first_match == ''
+      if: steps.check-pr-label.outputs.ignore == 'false' && steps.jira.outputs.first_match == '' && (steps.check-membership.outputs.is-member == 'true' || vars.ENABLE_PR_JIRA_ISSUE_CREATION != 'true')
       with:
         script: |
             core.setFailed('Pull Request #${{ inputs.pull-request }} title does not contain a JIRA issue.');
-  
+
+    outputs:
+      skip-jira: ${{ steps.check-pr-label.outputs.ignore != 'false' }}
+      jira-issue: ${{ steps.jira.outputs.first_match }}
+      is-tk-member: ${{ steps.check-membership.outputs.is-member == 'true' }}
+      pr-title: ${{ steps.pr-info.outputs.title }}
+      pr-author: ${{ steps.pr-info.outputs.author }}
+
+  create-jira-issue:
+    name: Create JIRA issue
+
+    needs: [find-jira-issue]
+
+    if: inputs.pull-request != '' && vars.ENABLE_PR_JIRA_ISSUE_CREATION == 'true' && needs.find-jira-issue.outputs.skip-jira == 'false' && needs.find-jira-issue.outputs.jira-issue == '' && needs.find-jira-issue.outputs.is-tk-member == 'false'
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Generate JIRA .json request
+      shell: bash
+      run: |
+        title=$(echo ${{ needs.find-jira-issue.outputs.pr-title }} | tr -d '"')
+
+        echo '{' >> jira.json
+        echo '  "fields": {' >> jira.json
+        echo '     "parent": {' >> jira.json
+        echo '       "key": "${{ vars.EXTERNAL_CONTRIBUTIONS_TK_EPIC }}"' >> jira.json
+        echo '     },' >> jira.json
+        echo '     "priority": {' >> jira.json
+        echo '       "name": "Normal"' >> jira.json
+        echo '     },' >> jira.json
+        echo '     "customfield_10004": 1,' >> jira.json
+        echo '     "customfield_15720": {' >> jira.json
+        echo '       "value": "O11"' >> jira.json
+        echo '     },' >> jira.json
+        echo '     "description": {' >> jira.json
+        echo '       "content": [' >> jira.json
+        echo '         {' >> jira.json
+        echo '           "content": [' >> jira.json
+        echo '             {' >> jira.json
+        echo '               "text": "This JIRA issue was automatically created from an external contribution made via GitHub:",' >> jira.json
+        echo '               "type": "text"' >> jira.json
+        echo '             }' >> jira.json
+        echo '           ],' >> jira.json
+        echo '           "type": "paragraph"' >> jira.json
+        echo '         },' >> jira.json
+        echo '         {' >> jira.json
+        echo '           "content": [' >> jira.json
+        echo '             {' >> jira.json
+        echo '               "type": "listItem",' >> jira.json
+        echo '               "content": [' >> jira.json
+        echo '                 {' >> jira.json
+        echo '                   "type": "paragraph",' >> jira.json
+        echo '                   "content": [' >> jira.json
+        echo '                     {' >> jira.json
+        echo '                       "type": "text",' >> jira.json
+        echo '                       "text": "Repository: ${{ github.repository }}"' >> jira.json
+        echo '                     }' >> jira.json
+        echo '                   ]' >> jira.json
+        echo '                 }' >> jira.json
+        echo '               ]' >> jira.json
+        echo '             },' >> jira.json
+        echo '             {' >> jira.json
+        echo '               "type": "listItem",' >> jira.json
+        echo '               "content": [' >> jira.json
+        echo '                 {' >> jira.json
+        echo '                   "type": "paragraph",' >> jira.json
+        echo '                   "content": [' >> jira.json
+        echo '                     {' >> jira.json
+        echo '                       "type": "text",' >> jira.json
+        echo '                       "text": "Contributor: ${{ needs.find-jira-issue.outputs.pr-author }}"' >> jira.json
+        echo '                     }' >> jira.json
+        echo '                   ]' >> jira.json
+        echo '                 }' >> jira.json
+        echo '               ]' >> jira.json
+        echo '             },' >> jira.json
+        echo '             {' >> jira.json
+        echo '               "type": "listItem",' >> jira.json
+        echo '               "content": [' >> jira.json
+        echo '                 {' >> jira.json
+        echo '                   "type": "paragraph",' >> jira.json
+        echo '                   "content": [' >> jira.json
+        echo '                     {' >> jira.json
+        echo '                       "type": "text",' >> jira.json
+        echo '                       "text": "Pull Request: "' >> jira.json
+        echo '                     },' >> jira.json
+        echo '                     {' >> jira.json
+        echo '                       "type": "text",' >> jira.json
+        echo '                       "text": "https://github.com/${{ github.repository }}/pull/${{ inputs.pull-request }}",' >> jira.json
+        echo '                       "marks": [' >> jira.json
+        echo '                         {' >> jira.json
+        echo '                           "type": "link",' >> jira.json
+        echo '                           "attrs": {' >> jira.json
+        echo '                             "href": "https://github.com/${{ github.repository }}/pull/${{ inputs.pull-request }}"' >> jira.json
+        echo '                           }' >> jira.json
+        echo '                         }' >> jira.json
+        echo '                       ]' >> jira.json
+        echo '                     }' >> jira.json
+        echo '                   ]' >> jira.json
+        echo '                 }' >> jira.json
+        echo '               ]' >> jira.json
+        echo '             }' >> jira.json
+        echo '           ],' >> jira.json
+        echo '           "type": "bulletList"' >> jira.json
+        echo '         }' >> jira.json
+        echo '       ],' >> jira.json
+        echo '       "type": "doc",' >> jira.json
+        echo '       "version": 1' >> jira.json
+        echo '     },' >> jira.json
+        echo '     "issuetype": {' >> jira.json
+        echo '      "name": "Story"' >> jira.json
+        echo '     },' >> jira.json
+        echo '     "project": {' >> jira.json
+        echo '       "key": "TK"' >> jira.json
+        echo '     },' >> jira.json
+        echo '     "labels": [' >> jira.json
+        echo '       "ExternalContribution",' >> jira.json
+        echo '       "Documentation",' >> jira.json
+        echo '       "support-maintenance",' >> jira.json
+        echo '       "github"' >> jira.json
+        echo '     ],' >> jira.json
+        echo "     \"summary\": \"${title}\"" >> jira.json
+        echo '   },' >> jira.json
+        echo '   "update": {}' >> jira.json
+        echo '}' >> jira.json
+
+    - name: Upload jira.json
+      uses: actions/upload-artifact@v4
+      with:
+        name: jira.json
+        path: |
+          jira.json
+
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create JIRA isue
+      id: create-jira-issue
+      shell: bash
+      run: |
+        curl --request POST \
+            --url 'https://${{ vars.JIRA_DOMAIN }}.atlassian.net/rest/api/3/issue' \
+            --user '${{ vars.JIRA_API_USER }}:${{ secrets.JIRA_API_USER_TOKEN }}' \
+            --header 'Accept: application/json' \
+            --header 'Content-Type: application/json' \
+            --data @jira.json >> create-issue.json
+
+        cat create-issue.json
+
+        echo "key=$(jq -r .key create-issue.json)" >> "$GITHUB_OUTPUT"
+        echo "::notice title=JIRA issue created::$(jq -r .key create-issue.json)" 
+
+    - name: Transition to Ready
+      id: transition-jira-issue
+      shell: bash
+      run: |
+        curl --request GET \
+            --url 'https://${{ vars.JIRA_DOMAIN }}.atlassian.net/rest/api/3/issue/${{ steps.create-jira-issue.outputs.key }}/transitions' \
+            --user '${{ vars.JIRA_API_USER }}:${{ secrets.JIRA_API_USER_TOKEN }}' \
+            --header 'Accept: application/json' \
+            --header 'Content-Type: application/json' >> transitions.json
+
+        cat transitions.json
+
+        transitionId=$(jq -r '.transitions[] | select(.name=="Ready") | .id' transitions.json)
+
+        curl --request POST \
+            --url 'https://${{ vars.JIRA_DOMAIN }}.atlassian.net/rest/api/3/issue/${{ steps.create-jira-issue.outputs.key }}/transitions' \
+            --user '${{ vars.JIRA_API_USER }}:${{ secrets.JIRA_API_USER_TOKEN }}' \
+            --header 'Accept: application/json' \
+            --header 'Content-Type: application/json' \
+            --data "{ \"transition\": { \"id\": \"${transitionId}\" } }"
+
+    - name: Update PR Title
+      run: |
+        title=$(sed 's/"//g'  <<-EOF
+        ${{ needs.find-jira-issue.outputs.pr-title }}
+        EOF
+        )
+        gh pr edit ${{ inputs.pull-request }} --repo ${{ github.repository }} --title "${{ steps.create-jira-issue.outputs.key }} $(echo $title)"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 'Add comment to Pull Request'
+      uses: marocchino/sticky-pull-request-comment@v2
+      with:
+        number: ${{ inputs.pull-request }}
+        header: AUTOMATIC JIRA ISSUE CREATION
+        message: |
+            Hello @${{ needs.find-jira-issue.outputs.pr-author }} :wave:
+
+            The Technical Knowledge team has been notified of your Pull Request, and the corresponding JIRA issue (${{ steps.create-jira-issue.outputs.key }}) has been created.
+            The team will review it shortly, and get back to you if needed.
+
+            Thank you for your contribution on the ${{ github.repository }} repository.
+
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

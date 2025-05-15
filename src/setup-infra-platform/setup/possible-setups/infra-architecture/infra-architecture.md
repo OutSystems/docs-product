@@ -1,11 +1,21 @@
 ---
 summary: Explore the scalable and flexible infrastructure architecture and deployment options of OutSystems 11 (O11) for optimized application development.
-tags: article-page
+tags: infrastructure architecture, deployment options, scalable infrastructure, application development, sdlc management
 locale: en-us
 guid: 59f6b703-30bd-4143-8af8-aac2f6e82ae0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=1567:1051
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - platform server
+coverage-type:
+  - understand
 ---
 
 # Infrastructure architecture and deployment options
@@ -271,9 +281,6 @@ best practices.
 
 * [Workflow Builder](https://www.outsystems.com/blog/posts/workflow-builder-workflow-app-minutes/):
 creates workflows to build apps for task management and automation.
-
-* [Experience Builder](https://www.outsystems.com/platform/experience-builder/): prototype
-pixel-perfect mobile applications and turn them into production-ready apps.
 
 ![Diagram illustrating various SaaS tools provided by OutSystems for application development](images/outsystems-saas-tools-diag.png "OutSystems SaaS Tools Diagram")
 

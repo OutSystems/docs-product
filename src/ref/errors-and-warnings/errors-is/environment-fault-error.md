@@ -5,6 +5,14 @@ guid: 0da9d6af-49d3-4ddf-a728-5984516ccf04
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, extension development, integrated development environment, file system errors, troubleshooting
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - unblock
 ---
 
 # Environment Fault Error

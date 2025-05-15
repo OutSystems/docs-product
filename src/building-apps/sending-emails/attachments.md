@@ -1,11 +1,23 @@
 ---
 summary: Learn how to add email attachments in OutSystems 11 (O11) using the Send Email node in Service Studio.
-tags: support-application_development
+tags: email integration, file management, application development, service studio how-to, outsystems development
 locale: en-us
 guid: 33f25da2-2cd8-4016-a12d-3b6ebfd12fc2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=1062%3A13342&mode=design&t=GF97AOUqsRf9tsAh-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+  - apply
+  - understand
+topic:
+  - how-to-create-emails
 ---
 
 # Adding email attachments
@@ -101,7 +113,7 @@ In the following example, Service Studio fetches images from a database with an 
 
     ![Screenshot of the expression editor for selecting the output List from an Aggregate for email attachments](images/email-attachments-list.png "Email Attachments List Expression Editor")
 
-1. In the expression editor, select the output List from your Aggregate, for example, `GetSampleProductImages.List`. Service Studio shows an error with a message that you need to use the Attachment List data type. Click **Done** to close the editor and move on to the next step to map the values and resolve the error.
+1. In the expression editor, select the output List from your Aggregate, for example, `GetSampleProductImages.List`. Service Studio shows an error with a message that you need to use the Attachment List data type. Click **Close** to close the editor and move on to the next step to map the values and resolve the error.
 
 1. In the Attachment section of Send Email, map the attributes so Service Studio knows which values pass to the attachments. You must specify binary content and the file name. The MIME type is optional, but providing it lets more email clients handle the attachment.
 

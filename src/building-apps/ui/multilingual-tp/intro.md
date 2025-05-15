@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) supports multilingual reactive web and mobile apps with user-selectable language options.
-tags: support-application_development;
+tags: internationalization, localization, language switching, user experience, platform server
 locale: en-us
 guid: d92eca43-e46e-4db0-8445-4dfb51e0b73d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - apply
+topic:
+  - translating-apps
 ---
 
 # Multilingual Reactive Web and Mobile Apps

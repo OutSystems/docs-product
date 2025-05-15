@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, widgets, web development, outsystems ui, dependency management
 summary: OutSystems 11 (O11) includes a customizable Chat Message UI Pattern for displaying conversational posts.
 locale: en-us
 guid: 2ee63ee6-02cf-4a5a-a348-92e5b46b3946
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A77&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Chat Message
@@ -48,7 +55,7 @@ For the purposes of this example, our app already contains a [form](../../../for
 
 1. Add the relevant content to the placeholders.
 
-    * In this example, so that the name the user enters in the form is displayed, we convert the Name placeholder to an expression and enter the relevant logic. To do this, we right-click the Name placeholder, select **Convert to Expression**, and in the **Expression Value** pop-up, navigate to the Name attribute, and click **Done**.
+    * In this example, so that the name the user enters in the form is displayed, we convert the Name placeholder to an expression and enter the relevant logic. To do this, we right-click the Name placeholder, select **Convert to Expression**, and in the **Expression Value** pop-up, navigate to the Name attribute, and click **Close**.
 
         ![Converting the Name placeholder to an expression in the Chat Message widget](images/chatmessage-4-ss.png "Converting Name Placeholder to Expression")
 

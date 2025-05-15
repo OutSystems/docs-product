@@ -1,11 +1,20 @@
 ---
 summary: Explore developer onboarding and IDE navigation for OutSystems 11 (O11) to enhance learning and productivity.
-tags:
+tags: developer onboarding, ide navigation, visual development, learning curve, developer transition
 locale: en-us
 guid: 023dfb7e-0d99-4596-867e-14cb3e768142
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+  - understand
 ---
 
 # Onboarding developers
@@ -27,7 +36,7 @@ To assist with the "initial learning hump" that many traditional developers enco
 
 ## Related information
 
-* [OutSystems for .NET Developers](https://learn.outsystems.com/training/journeys/outsystems-for-dotnet-developers-661)
+* [OutSystems for .NET Developers](https://www.outsystems.com/tk/redirect?g=f519b44e-35ac-4c34-a8ec-91d6fa6fea92)
 * [Getting Started with OutSystems for SQL Developers](https://learn.outsystems.com/training/journeys/outsystems-for-sql-developers-458)
 * [OutSystems for Front-end Developers](https://learn.outsystems.com/training/journeys/outsystems-for-front-end-developers-455)
 * [OutSystems for Java Developers](https://learn.outsystems.com/training/journeys/outsystems-for-java-developers-456)

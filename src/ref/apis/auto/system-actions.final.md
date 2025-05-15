@@ -1,11 +1,19 @@
 ---
 summary: Explore the comprehensive guide on using System Actions in OutSystems 11 (O11) for server and client-side operations in application development.
-tags: 
+tags: server actions, client-side logic, system module, action management, expression editor
 locale: en-us
 guid: 15b8a38f-a4cc-4bb7-b496-520824990340
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:513
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # System Actions
@@ -1079,12 +1087,6 @@ Url
 
 
 ### SetCurrentLocale { #Client_SetCurrentLocale }
-
-<div class="info" markdown="1">
-
-Available in Multilingual Technical Preview. See [Technical Preview features](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) for more information.
-
-</div>
 
 Set the locale to change your app's display language.
 

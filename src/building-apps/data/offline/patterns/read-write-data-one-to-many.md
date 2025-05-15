@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) facilitates a Read/Write Data One-to-Many synchronization pattern for mobile apps, ensuring data consistency with a "last write wins" approach.
-tags: runtime-mobile
+tags: data synchronization, offline data handling, database management, mobile app development, data consistency
 locale: en-us
 guid: 26530521-14df-4bb6-82d4-e087f6566a05
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:5
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - data-syncronization
+  - offline-synch
 ---
 
 # Read/Write Data One-to-Many

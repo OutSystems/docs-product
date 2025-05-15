@@ -5,6 +5,19 @@ guid: 359c1979-6708-47f4-a628-4f66bb4ef56d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:18
+tags: module dependencies, impact analysis, runtime behavior, producer and consumer modules, dependency management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - evaluate
+  - apply
+topic:
+  - add-module-dependency
 ---
 
 # Handle Changes in Exposed Functionality

@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) tutorial on creating many-to-many relationships using a junction entity.
-tags: support-application_development; support-Database; support-webapps
+tags: data modeling, database design, entity relationship, mobile app development, web application development
 locale: en-us
 guid: 9a7e1290-8439-4b9b-8471-ee1114d03024
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:12
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - data-relationships
 ---
 
 # Create a Many-to-Many Relationship
@@ -21,6 +32,10 @@ To create a many-to-many relationship, follow these steps:
 1. Add another attribute and set the data type to the identifier of the second entity.
 
 If you want to ensure that an entity has unique records (like a `Book` can only have one `Publisher`), then add a [unique index](../index-create.md) to the two foreign keys.
+
+Check here our [online training videos ](https://learn.outsystems.com/training/journeys/modeling-data-relationships-642/many-to-many-relationship/o11/448)on this topic:
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/874768910?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Many-to-Many Relationship [en-US / 11]"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
 ## Example

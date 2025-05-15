@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) allows customization of HTTP Status Codes in REST API responses by using the SetStatusCode action.
-tags: 
+tags: rest apis, http status codes, api development, web development, outsystems platform
 locale: en-us
 guid: c0c56e61-281f-410c-8fb2-a07561bbca46
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=415:26
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - httprequesthandler
+coverage-type:
+  - apply
+topic:
+  - error-codes
 ---
 
 # Change the HTTP Status Code of a REST API

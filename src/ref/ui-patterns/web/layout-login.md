@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: web development, user interface design, theme customization, web blocks, design patterns
 summary: Explore the layout and customization options for the Layout Login web block in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 61a76744-2261-4ea2-9b6a-a4de711177a7
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:490
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Layout Login Reference

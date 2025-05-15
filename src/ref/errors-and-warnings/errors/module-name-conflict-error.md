@@ -5,6 +5,15 @@ guid: 8cac607a-6ba3-4392-825c-59d9eeaae525
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error resolution, platform server, outsystems development, application deployment, tenant management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # module Name Conflict Error

@@ -1,11 +1,23 @@
 ---
 summary: Explore SQL query functionalities within OutSystems 11 (O11) for optimized data manipulation and testing.
-tags: support-Database
+tags: sql queries, data manipulation, input parameters, output parameters, service studio sql tool
 locale: en-us
 guid: 17f9fae0-ed62-44a4-befb-788f5206fad0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:10
+audience:
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+  - remember
+topic:
+  - use-sql
+  - query-parameters
 ---
 
 # SQL Queries
@@ -49,7 +61,6 @@ To learn more about SQL in OutSystems, check out the following free courses:
 * [SQL Queries](https://www.outsystems.com/training/courses/146/sql-queries/). Write your SQL queries to interact with data in OutSystems.
 * [Getting Started with OutSystems for SQL Developers](https://www.outsystems.com/training/courses/169/getting-started-with-outsystems-for-sql-developers/). Learn how to create a data model, fetch data, and how to use an existing external database in an OutSystems app.
 
-
 </div>
 
 ## Write your own SQL query
@@ -80,7 +91,7 @@ You can test your work by clicking the `TEST` button located at the bottom of th
 
 1. Click **TEST**.
 
-![Animated GIF showing the process of testing a SQL query in the OutSystems platform](images/test-sql-ss.gif "Testing SQL Query in OutSystems")
+    <iframe src="https://player.vimeo.com/video/973090415" width="750" height="501" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video testing a SQL query in the OutSystems platform.</iframe>
 
 ## Convert an Aggregate to SQL
 
@@ -112,7 +123,7 @@ To convert an existing Aggregate to a SQL element follow these steps:
 
 1. Click **PROCEED**.
 
-![Animated GIF demonstrating how to convert an Aggregate to a SQL element in OutSystems](images/convert-to-sql-ss.gif "Converting Aggregate to SQL Element")
+    <iframe src="https://player.vimeo.com/video/973090206" width="750" height="501" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing hot to convert an Aggregate to a SQL element.</iframe>
 
 Your action flow now includes a **SQL** element based on the original Aggregate. Service Studio disables and keeps the original Aggregate in the action flow. After you validate the query results of the new **SQL** element, delete the Aggregate.
 
@@ -130,6 +141,10 @@ In Reactive Web and Mobile apps, this feature isn't available for Aggregates in 
 ## Notes and guidelines
 
 Consider the following when using the SQL element:
+
+### Syntax
+
+SQL queries have some syntax differences depending on the database provider being used. Write your queries according to the syntax of your database provider.
 
 ### Avoid Data Definition Language
 
@@ -154,7 +169,7 @@ If the **Database** property is set as **All**, Service Studio checks the querie
 
 ### Avoid Expand Inline property of query parameters
 
-Expanding inline parameters can be challenging since you need to make sure that any user input is properly escaped. If possible, avoid enabling this property altogether. OutSystems provides ways of implementing common use cases without enabling this property. Check [Building dynamic SQL statements the right way](<https://success.outsystems.com/Documentation/Best_Practices/Building_dynamic_SQL_statements_the_right_way>).
+Expanding inline parameters can be challenging since you need to make sure that any user input is properly escaped. If possible, avoid enabling this property altogether. OutSystems provides ways of implementing common use cases without enabling this property. For more information, see [Avoid expand inline parameters for dynamic values](https://success.outsystems.com/documentation/best_practices/performance_and_monitoring/avoid_expand_inline_parameters_for_dynamic_values/) and [Best practices for building dynamic SQL statements](../operations/build-dynamic-sql-statements.md).
 
 ### SLOWSQL log messages
 

@@ -5,6 +5,15 @@ guid: a63209c4-0f36-4c07-9a7a-e5c217b2b4d0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: performance optimization, data handling, server interaction, splash screen optimization, efficient server requests
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Performance Suggestion Warning
@@ -31,7 +40,7 @@ Cause
 :   Each time a Server Action is executed in a Client Action there is a request going from the user device to the server. Having several Server Actions in the same Client Action will result in multiple requests to the server, which can slower the application.
 
 Recommendation
-:   Group all the Server Actions executed in your Client Action in a single Server Action and use that Server Action insted. This will reduce the number of requests to the server to one single request.
+:   Group all the Server Actions executed in your Client Action in a single Server Action and use that Server Action instead. This will reduce the number of requests to the server to one single request.
 
 ---
 
@@ -59,7 +68,7 @@ Cause
 :   The rendering of the screen/block only starts after the OnInitialize action finishes. If you access the local storage or execute requests to the server during this stage, you may delay the rendering of the screen/block and make the app look unresponsive.
 
 Recommendation
-:   Move all logic that accesses local storage or server into Screen Aggregates or Data Actions. This way the rendering starts sooner and the fetching of the data or running other server operations runs concurrently, while the screen/block is rendering. For more information, see the [Screen and Block Lifecycle Events](<../../../building-apps/logic/screen-block-lifecycle-events.md>) documentation.
+:   Move all logic that accesses local storage or server into Screen Aggregates or Data Actions. This way the rendering starts sooner and the fetching of the data or running other server operations runs concurrently, while the screen/block is rendering. For more information, see the [Screen and Block Lifecycle Events](<../../../building-apps/ui/screens/screen-block-lifecycle-events.md>) documentation.
 
 ---
 

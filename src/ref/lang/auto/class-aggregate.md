@@ -6,7 +6,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:333
 summary: Learn how to efficiently fetch and manage data using Aggregates in OutSystems 11 (O11), supporting both client-side and server-side operations.
+tags: data management, entity modeling, database queries, screen preparation, ide usage, reactive web apps
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - aggregates
 ---
+
 # Aggregate
 
 Aggregates allow you to fetch data using an optimized query, tailored to your usage. Aggregates automatically absorb changes in the data model and can load the local database's data from the server. They support combining several entities and advanced filtering, and bring only the attributes that are used on the screen or action. Attributes also abstract the underlying model for the developer, allowing attribute renaming and changes to the data type.  

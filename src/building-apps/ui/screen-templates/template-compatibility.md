@@ -5,6 +5,15 @@ guid: 40469935-043c-4248-b54d-61e119ee9b2b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:45
+tags: theme customization, screen templates, ui design, application development, outsystems ui framework
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Theme compatibility in Screen Templates

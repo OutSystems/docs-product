@@ -1,11 +1,21 @@
 ---
 summary: Explore common data synchronization patterns for mobile apps with OutSystems 11 (O11), including sample modules for implementation.
-tags: runtime-mobile; support-application_development; support-Application_Troubleshooting-featured; support-Mobile_Apps
+tags: data synchronization, local storage, server database, sample modules, forge components
 locale: en-us
 guid: ed285ef6-c4cc-4d6b-925a-fddb12c4205d
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - none
+topic:
+  - data-syncronization
+  - offline-synch
 ---
 
 # Offline Data Sync Patterns

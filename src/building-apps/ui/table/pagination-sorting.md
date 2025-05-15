@@ -1,11 +1,19 @@
 ---
 summary: Learn how to manually implement table pagination and sorting in OutSystems 11 (O11) with detailed instructions for enhancing user interface functionality.
-tags: runtime-reactiveweb;
+tags: ide usage, reactive web apps, tutorials for beginners, user interface, pagination, sorting, table widgets, outsystems development
 locale: en-us
 guid: c85c1a3d-327a-49e1-af6d-bd99a67b4ebc
 app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:30
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Table pagination and sorting
@@ -18,7 +26,8 @@ Service Studio automatically creates Actions for sorting the columns in a Table.
 
 ### Add sorting to a Table
 
-In the **OnSort** drop-down list box of your Table Widget properties, select **New On Sort Client Action**. A new Action is created with the sorting logic. At this step all table columns are sortable and you can publish the module.
+1. In the **OnSort** drop-down list box of your Table Widget properties, select **New On Sort Client Action**. This automatically creates a new Client Action with the necessary logic to sort your table. This logic includes capturing the sort attribute and order, updating the **TableSort** local variable, and refreshing the data source of your table to display the sorted results.
+1. At this step, all table columns are sortable, and you can publish the module.
 
 ### Change sorting Attribute 
 

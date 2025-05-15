@@ -6,6 +6,15 @@ guid: 41d66ab0-f67a-49f8-adf1-931415c3047e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ide usage, reactive web apps, tutorials for beginners, ui component usage, outsystems ui framework
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Popover Menu

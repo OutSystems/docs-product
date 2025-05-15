@@ -5,6 +5,14 @@ guid: bad56419-c238-4adc-971c-c4b30c9a2af5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, debugging, web development, performance optimization, troubleshooting techniques
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Screen Error

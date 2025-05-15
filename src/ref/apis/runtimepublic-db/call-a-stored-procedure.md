@@ -1,11 +1,20 @@
 ---
 summary: Explore how to call a stored procedure using .NET native objects in OutSystems 11 (O11).
-tags: 
+tags: database integration, stored procedures, .net framework, external databases, ado.net
 locale: en-us
 guid: 7b30a0ca-ff76-47b2-8183-6f0974bbf2d1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - stored-procedures
 ---
 
 # Call a stored procedure

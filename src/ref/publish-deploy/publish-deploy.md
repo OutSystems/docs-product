@@ -1,11 +1,20 @@
 ---
 summary: Explore the processes of publishing, deploying, republishing, and redeploying apps in OutSystems 11 (O11).
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, application lifecycle management
 locale: en-us
 guid: 0C021138-FA51-4A62-97E2-EC6C030FFDA4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2322:3941
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - remember
 ---
 
 # Publishing and deploying an OutSystems app

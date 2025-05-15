@@ -1,160 +1,72 @@
 ---
 summary: This guide details configuring Microsoft Azure AD authentication for OutSystems 11 (O11) as an identity provider.
-tags:
+tags: identity provider configuration, azure ad, authentication, security, sso
 locale: en-us
 guid: DA5BA9CA-066E-49E2-92C8-674CB644C370
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=1914%3A6373&mode=design&t=qy82U3bMoQChCp6y-1
+audience:
+  - platform administrators
+  - frontend developers
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
-# Configuring Microsoft Azure AD authentication
+# Configuring Microsoft Entra authentication
 
-To configure Microsoft Azure AD authentication, follow these steps:
+To configure Microsoft Entra authentication, follow these steps:
 
-1. [Register an application](#register-an-application)
+1. [Register and name your app with Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#register-an-application)
 
-1. [Configure the platform - Web apps](#configure-the-platform---web-apps)
+1. [Configure the platform settings for Web apps](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=client-secret#configure-platform-settings) using the following settings:
 
-1. [Configure the platform - Mobile and desktop apps](#configure-the-platform---mobile-and-desktop-apps)
+    * Set the **Redirect URI** to the Service Center login page from the LifeTime environment:
 
-1. [Configure the client secret](#configure-the-client-secret)
+        * ``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
-1. [Configure Azure AD Open ID permissions](#configure-azure-ad-open-id-permissions)
+    * For each of the environments in your infrastructure, add a new URI for the Service Center login page:
 
-1. [Configure Azure AD as OutSystems' Identity Provider](#configure-azure-ad-as-outsystems-identity-provider)
+        * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
-## Register an application
+       
+1. [Configure the platform settings for Mobile and Desktop apps](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=client-secret#configure-platform-settings) using the following settings:
+    
+    * Set the **Custom redirect URIs** to the following Service Studio protocol:
 
-1. Access the Microsoft Azure portal.
+        * ``servicestudio://auth``
 
-1. Go to **Azure Active Directory** -> **App registrations**.
+    * Add the following URIs:
 
-1. Click  **+ New registration**.
+        * ``integrationstudio://auth``
 
-    ![Screenshot highlighting the '+ New registration' button in the Azure Active Directory App registrations section.](images/new-reg-az.png "Azure AD New Registration Button")
+        * ``servicestudiox11://auth``
 
-1. Enter the **Name** and **Supported account type**.
+        * ``https://experiencebuilder.outsystems.com/Authentication/OIDC_Callback``
 
-    Example:
+        * ``https://workflowbuilder.outsystems.com/Authentication/OIDC_Callback``
 
-    * **Name**: OutSystems Platform
+        * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
 
-    * **Supported account type**: Accounts in this organizational directory only
+        * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
 
-1. Click **Register**.
-
-## Configure the platform - Web apps
-
-1. Go to **Authentication** and click **+ Add a platform**.
-
-    ![Screenshot showing the '+ Add a platform' button in the Authentication section of an Azure AD application.](images/add-platform-az.png "Azure AD Add a Platform Button")
-
-1. From the **Configure platforms** screen, click **Web**.
-
-    ![Screenshot highlighting the 'Web' option in the 'Configure platforms' screen in Azure AD.](images/web-az.png "Azure AD Web Platform Selection")
-
-1. Set the **Redirect URI** to the Service Center login page from the LifeTime environment:
-
-    * ``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
-
-    ![Screenshot showing the field for setting the Redirect URI to the Service Center login page in the Azure AD application configuration.](images/redirect-az.png "Set Redirect URI")
-
-
-1. Click **Configure**.
-
-1. For each of the environments in your infrastructure, add a new URI for the Service Center login page:
-
-    * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
-
-    ![Screenshot displaying multiple fields for adding new Redirect URIs for different environments in Azure AD.](images/redirect-uri-az.png "Azure AD Redirect URIs for Environments")
-
-1. Click **Save**.
-
-## Configure the platform - Mobile and desktop apps
-
-1. Go to **Authentication** and click **+ Add a platform**.
-
-    ![Screenshot showing the '+ Add a platform' button in the Authentication section of an Azure AD application.](images/add-platform-az.png "Azure AD Add a Platform Button")
-
-1. From the **Configure platforms** screen, click **Mobile and desktop applications**.
-
-    ![Screenshot highlighting the 'Mobile and desktop applications' option in the 'Configure platforms' screen in Azure AD.](images/mob-desktop-az.png "Azure AD Mobile and Desktop Applications Selection")
-
-1. Set the **Custom redirect URIs** to the following Service Studio protocol:
-
-    * ``servicestudio://auth``
-
-    ![Screenshot showing the field to set custom redirect URIs for desktop applications in Azure AD.](images/custom-uri-az.png "Azure AD Custom Redirect URIs for Desktop Applications")
-
-1. Click **Configure**.
-
-1. Add the following URIs to the **Mobile and desktop applications** section:
-
-    * ``integrationstudio://auth``
-
-    * ``servicestudiox11://auth``
-
-    * ``https://experiencebuilder.outsystems.com/Authentication/OIDC_Callback``
-
-    * ``https://workflowbuilder.outsystems.com/Authentication/OIDC_Callback``
-
-    * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
-
-    * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
-
-    * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager’s URI:
+    * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager's URI:
 
         * ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
 
-1. Click **Save**.
-
-## Configure the client secret
-
-1. Go to the **Certificates & Secrets** > **Client  secrets** and click **+ New client secret**.
-
-    ![Screenshot highlighting the '+ New client secret' button in the Certificates & Secrets section of an Azure AD application.](images/add-secret-az.png "Azure AD New Client Secret Button")
-
-1. On the **Add a client secret** screen, enter the following details:
-
-    * **Description**: Platform Consoles
-
-    * **Expires**: Recommended: 6 months
-
-    ![Screenshot showing the 'Add a client secret' dialog with fields for description and expiration in Azure AD.](images/secret-details-az.png "Azure AD Add a Client Secret Dialog")
-
-1. Click **Add**.
-
-1. On the **Client secrets** tab, copy the secret in the **Value** column and store it somewhere safe.
+1. [Configure the client secret](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=client-secret#add-credentials)
 
     <div class="warning" markdown="1">
 
-     You need this information when configuring the provider in LifeTime. **This value won't be displayed again, so ensure you save it now.**
+    Remember to copy the client secret value. You need this information when configuring the provider in LifeTime. **This value won't be displayed again, so ensure you save it now.**
 
     </div>
 
-    ![Screenshot displaying a newly created client secret value in the 'Client secrets' tab of an Azure AD application.](images/secret-value-az.png "Azure AD Client Secret Value")
+1. [Add delegated permissions to access Microsoft Graph](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-microsoft-graph)
 
-## Configure Azure AD Open ID permissions
-
-1. Go to **API Permissions** and click **+ Add a permission**.
-
-    ![Screenshot showing the '+ Add a permission' button in the API Permissions section of an Azure AD application.](images/add-permission-az.png "Azure AD Add API Permission Button")
-
-1. From the **Request API permissions** screen, go to **Microsoft APIs** and select **Microsoft Graph**.
-
-    ![Screenshot highlighting the 'Microsoft Graph' option in the 'Request API permissions' screen in Azure AD.](images/graph-az.png "Azure AD Microsoft Graph API Selection")
-
-1. Select **Delegated permissions**.
-
-    ![Screenshot showing the 'Delegated permissions' option in the 'Request API permissions' screen for Microsoft Graph in Azure AD.](images/delegated-permissions-az.png "Azure AD Delegated Permissions Selection")
-
-1. Select all **OpenId permissions**.
-
-    ![Screenshot displaying the selection of OpenID permissions in the 'Request API permissions' screen for Microsoft Graph in Azure AD.](images/openid-permissions-az.png "Azure AD OpenID Permissions Selection")
-
-1. Click **Add Permissions**.
-
-## Configure Azure AD as OpenId connect provider in LifeTime
-
-Follow the steps mentioned [here](external-idp-lifetime.md).
+1. [Configure Microsoft Entra as OpenId connect provider in LifeTime](external-idp-lifetime.md)

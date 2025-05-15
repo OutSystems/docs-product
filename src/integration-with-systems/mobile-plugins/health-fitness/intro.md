@@ -5,9 +5,19 @@ guid: 15541b1b-d214-4a3d-b37d-489f6ecd8815
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1265%3A86185&mode=design&t=187UAgmZTPxcY0ZG-1
+tags: mobile development, healthkit integration, health connect integration, plugins, access control
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - remember
+  - apply
 ---
 
-# Health and Fitness Plugin HealthKit and Google Health Connect
+# Health and Fitness Plugin using HealthKit and Health Connect
 
 <div class="info" markdown="1">
 
@@ -268,11 +278,23 @@ After you have created your background job you can update or delete it using the
 
 To check the background job was successfully created, verify the value of **SetBackgroundJob.Success** is **True**.
 
-#### Setting a background job in Android 14
+#### Setting a background job in Android
 
-When setting a background job for the first time in Android 14, for some variables, the permission to schedule exact alarms will be requested. More specifically, this permission will be requested when setting the first background job if the variable is one of the following: weight, height, sleep, blood glucose, or body fat percentage.
+Starting in Android 15, when setting a background job for the first time, the Health Connect permission to read data in the background will be requested.
 
-With that said, it is a best practice to present a message to the user explaining why the permission is necessary (e.g. to get notifications about health and fitness data), before calling the **SetBackgroundJob** client action.
+<div class="info" markdown="1">
+
+From Android 15 onwards, users can install an app in the [Private space](https://developer.android.com/about/versions/15/features#private-space). Users can lock their private space at any time. Once locked, all background jobs of the app inside the private space are stopped, and notifications are not shown until the user unlocks the private space.
+
+It is not possible to detect if an app is installed in the private space. Therefore, if your app shows any critical notifications, inform your users to avoid installing the app in the private space.
+
+For more information about the behavior changes of your app related to the private space, refer to [Android documentation](https://developer.android.com/about/versions/15/behavior-changes-all#private-space-changes).
+
+</div>
+
+Starting in Android 14, when setting a background job for the first time, for some variables, the permission to schedule exact alarms will be requested. More specifically, this permission will be requested when setting the first background job if the variable is one of the following: weight, height, sleep, blood glucose, or body fat percentage.
+
+With that said, it is a best practice to present a message to the user explaining why these permissions are necessary (e.g. to get notifications about health and fitness data), before calling the **SetBackgroundJob** client action.
 
 #### (Optional) Opt-out of permissions for background jobs (Android only)
 
@@ -293,7 +315,7 @@ By default, all necessary background job Android permissions (e.g. "android.perm
 
 #### Additional information about background jobs in Android
 
-When using the **SetBackgroundJob** client action, the **IMMEDIATE** option for the **JobFrequency** field of the **Variable** input parameter only applies to the following variables: steps, heart rate, calories burned, blood pressure, basal metabolic rate, walking speed, and distance. For the other variables (weight, height, sleep, blood glucose, body fat percentage and oxygen saturation), the **IMMEDIATE** option will run every minute, as it is the minimum recommended frequency for alarms on Android.
+When using the **SetBackgroundJob** client action, the **IMMEDIATE** option for the **JobFrequency** field of the **Variable** input parameter only applies to the following variables: steps, heart rate, calories burned, blood pressure, basal metabolic rate, walking speed, and distance. For the other variables (weight, height, sleep, blood glucose, body fat percentage, oxygen saturation and body temperature), the **IMMEDIATE** option will run every minute, as it is the minimum recommended frequency for alarms on Android.
 
 Background jobs run using foreground services, which results in a temporary notification being shown to the user. In most cases, as the background job processing is fast, the temporary notification won't be presented to the user. Nevertheless, you can define the **title** and **description** of this notification, in case it is shown. By default, we already set a title and description, but you can define your own values as follows:
 
@@ -369,5 +391,6 @@ Following is the full list of health and fitness variables our plugin supports, 
 | **Walking Speed**        | Meters per second (m/s)          | Meters per second (m/s)          |
 | **Distance**             | Meters (m)                       | Meters (m)                       |
 | **Oxygen Saturation**    | Percentage                       | Percentage                       |
+| **Body Temperature**     | Celsius (ºC)                     | Celsius (ºC)                     |
 
 Note that the **Workout** variable isn't on the list because it doesn't have a single unit for measure, as iOS supports different types of workouts. Also, this variable is currently not available on Android.

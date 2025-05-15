@@ -5,6 +5,15 @@ guid: 8faa36bf-6acf-423b-9fc7-9e365c55697e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ui design, user experience, responsive design, grid system, technical troubleshooting
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Grid Dimensions Overflow Warning

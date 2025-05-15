@@ -1,12 +1,24 @@
 ---
 summary: OutSystems 11 (O11) enables SEO-friendly URLs for Reactive Web apps, requiring specific server and studio versions.
-tags: 
+tags: seo optimization, platform server, ssl configurations, infrastructure setup, seo best practices
 locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3329%3A27075&mode=design&t=vStGeN187wwjAjiU-1
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - understand
+  - apply
+  - evaluate
 ---
+
 # SEO-friendly URLs for Reactive Web apps  
 
 ## Prerequisites  
@@ -100,6 +112,7 @@ To create a site rule, follow these steps:
 Remember the following when working with site rules:  
 * You can only have only one site rule per root application for domains with sub-paths.  
 * Creating or editing a site rule can temporarily slow down the app because the platform needs to reload its configuration.  
+* Each site rule will act as new hostname. Ensure network permissions account for modules being accessed via these new URLs.
 
 </div>  
 
@@ -257,6 +270,10 @@ The file used to import the redirect rules must comply with the following:
 
 If an import succeeds, all previous existent redirect rules in Service Center are replaced with the new ones imported.
 If the import fails, no redirect rules are deleted or added. In this scenario, Service Center shows a custom error message, pointing to the cause of the error.
+
+### Debugging when redirect rules are configured
+
+If a redirect rule is configured for a module (e.g., `oldurl/module -> newurl/module`), ensure that Service Studio is connected to the **new URL** (`newurl`) instead of the **old URL** (`oldurl`). This ensures proper debugging behavior.
 
 ## URL prioritization  
 

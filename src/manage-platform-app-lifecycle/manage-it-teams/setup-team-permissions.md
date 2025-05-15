@@ -5,6 +5,16 @@ guid: 4817e9c4-cab5-4d89-ba2a-b7bf0ba260b9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=267%3A55&mode=design&t=qy82U3bMoQChCp6y-1
+tags: access control, permission settings, security best practices, team management, role management
+audience:
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - assign-team-role
 ---
 
 # Set Up the Permissions in a Team

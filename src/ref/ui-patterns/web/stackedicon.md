@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, css customization, web design, iconography, tooltips
 summary: Explore the Stacked Icon UI Pattern in OutSystems 11 (O11) for enhancing Traditional Web Apps with scalable icons and tooltips.
 locale: en-us
 guid: fb849376-d199-4131-af7d-fb890d688676
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:575
+audience:
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Stacked Icon UI Pattern Reference
@@ -52,7 +59,7 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-![Animated GIF demonstrating the interaction with the Stacked Icon UI Pattern](images/stackedicon-1.gif "Stacked Icon Interaction Demonstration")
+<iframe src="https://player.vimeo.com/video/998188456" width="750" height="417" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with the Stacked Icon UI Pattern.</iframe>
 
 ## Notes
 

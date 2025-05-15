@@ -1,18 +1,25 @@
 ---
-tags: Workflow Builder; Case Management; Business developers; App lifecycle
+tags: app lifecycle management, user management, deployment, permissions, collaboration
 summary: Explore app lifecycle management and user group handling in OutSystems 11 (O11) with Workflow Builder for efficient production deployment.
 guid: 816ecd33-ab29-49d0-ae42-648840ac1251
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:916
+audience:
+  - platform administrators
+outsystems-tools:
+  - workflow builder
+  - outsystems users tool
+coverage-type:
+  - understand
 ---
 
 # App lifecycle management
 
 Once you are comfortable with the generated app and want to evolve the app created in [Workflow Builder](http://workflowbuilder.outsystems.com/) to a production environment to make it available to your app end users, you have to contact your IT team.
 
-<div class="info" markdown=1>
+<div class="info" markdown="1">
 Note: Always make sure that you involve the IT team so that the overall experience with the Workflow Builder is as frictionless as possible.
 </div>
 

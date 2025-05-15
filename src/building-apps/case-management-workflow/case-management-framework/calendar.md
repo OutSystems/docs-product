@@ -1,11 +1,19 @@
 ---
-tags: Case Management; Case Management framework;
+tags: sla calculation, calendar configuration, work schedules, case management integration, due dates management
 summary: OutSystems 11 (O11) enables the definition of working schedules using calendars to calculate SLA due dates.
 guid: 75fd28ce-c038-42e4-bbd0-1f5abe2e6c79
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1901
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # Defining working schedules with calendars

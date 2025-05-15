@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) uses AppShield's ExitOnURL feature to redirect users when an app is blocked for security.
-tags: support-application_development; runtime-mobile;
+tags: mobile app security, configuration management, app lifecycle management, json extensibility
 locale: en-us
 guid: ff593156-92ef-4947-86f1-e3d2dfb58908
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1809:271
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
+  - remember
 ---
 
 # Configuring an exit URL for a blocked app
@@ -108,47 +116,8 @@ The app includes the following parameter information in the generated **Exit URL
 
 | Query Parameter | Description                                                                                 |
 | --------------- | ------------------------------------------------------------------------------------------- |
-| %reason%        | The reason for the shutdown, in decimal. See other tables for explanations of these values. |
+| %reason%        | The reason for the shutdown, in decimal. Refer to [Troubleshooting AppShield Crashes](troubleshooting.md#shutdown-reasons) for explanations of these values. |
 | %manufacturer%  | The manufacturer of the device                                                              |
 | %model%         | The model name of the device                                                                |
 | %android%       | The Android API level of the device                                                         |
 | %ios%           | The iOS API level of the device                                                             |
-
-### Shutdown reasons for iOS
-
-A list of reasons for app shutdown in iOS devices.
-
-| Decimal | Explanation                                       |
-| ------- | ------------------------------------------------- |
-| 00      | Device is jailbroken/rooted                       |
-| 01      | Application is being debugged                     |
-| 02      | Application is modified or repackaged             |
-| 03      | A screenshot of the application was taken         |
-| 04      | An injected library was found in the process      |
-| 05      | A hooking framework was found in the process      |
-| 06      | A screen recording of the application was started |
-| 08      | Running on emulator                               |
-| 09      | Running with Developer Mode enabled               |
-
-### Shutdown reasons for Android
-
-A list of reasons for app shutdown in Android devices.
-
-| Decimal | Explanation                                                               |
-| ------- | ------------------------------------------------------------------------- |
-| 00      | Device is rooted                                                          |
-| 01      | Application is modified or repackaged<br />**Note**: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered.|
-| 02      | Application is being run in an emulator<br />**Note**: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered.|
-| 03      | Java debugger attached to app                                             |
-| 04      | Untrusted keyboard detected                                               |
-| 05      | Untrusted screen reader detected                                          |
-| 06      | Native code hooks, possibly inserted by malicious app                     |
-| 08      | Shield could not read configuration file                                  |
-| 09      | Problem with Native Debugger Protection                                   |
-| 19      | Problem initializing Shield                                               |
-| 1a      | Developer Options enabled on device                                       |
-| 1b      | Untrusted Installer found on device                                       |
-| 20      | App received termination signal                                           |
-| 21      | Application crashed outside of Java-code, either native library or Shield |
-| 22      | Hooking frameworks detected                                               |
-| 23      | Native debugger prevention not possible on this device                    |

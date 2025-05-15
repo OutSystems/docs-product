@@ -5,6 +5,14 @@ guid: 0c7eda5f-bb0f-4514-9add-a0fcd23b364e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: soap web services, outsystems platform, static entities, data modeling, web service integration
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Static Entity Attribute - Consumed SOAP

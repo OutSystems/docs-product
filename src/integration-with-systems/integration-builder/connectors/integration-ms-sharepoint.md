@@ -5,6 +5,19 @@ guid: db18157f-d949-4143-ab29-29376e8a2d77
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6374
+tags: sharepoint online integration, integration builder, outsystems application development, https outbound requests, list view threshold
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - integration builder
+coverage-type:
+  - unblock
+  - understand
+  - apply
 ---
 
 # SharePoint Online integration
@@ -35,18 +48,18 @@ SharePoint Online integrations generated with Integration Builder use a certific
 
 Request authentication is handled transparently when you call Server Actions exposed by the service module (the module with a "_IS" suffix, by default). The Server Actions obtain the certificate info from the connection that you previously associated with the integration in Integration Manager. Therefore, you don't need to provide any authentication information as input parameters.
 
-### If you have administrator permissions in Azure Active Directory
+### If you have administrator permissions in Microsoft Entra
 
 You can select the `Create automatically` option to have the Integration Manager create the connection on your behalf.
-Integration Manager generates a certificate and connects to Integration Builder, which requests the creation of an Azure AD app that uses the certificate for authentication and authorization.
+Integration Manager generates a certificate and connects to Integration Builder, which requests the creation of an Microsoft Entra app that uses the certificate for authentication and authorization.
 
 ![Image depicting the process of authorizing a SharePoint Online connection via Integration Manager.](images/sharepoint-im-authorization.png "SharePoint Integration Manager Authorization")
 
-### If you don't have administrator permissions in Azure Active Directory
+### If you don't have administrator permissions in Microsoft Entra
 
-If you don't have administrator permission in Azure AD or prefer not to grant Integration Builder permission to create apps in Azure AD, then you should select the "Create manually" option.
+If you don't have administrator permission in Microsoft Entra or prefer not to grant Integration Builder permission to create apps in Microsoft Entra, then you should select the "Create manually" option.
 
-Creating a connection without administrator credentials requires parameters from the Azure AD platform. The Azure AD account administrator needs to create a new Azure app to obtain these parameters.
+Creating a connection without administrator credentials requires parameters from the Microsoft Entra platform. The Microsoft Entra account administrator needs to create a new Microsoft Entra app to obtain these parameters.
 
 Integration Builder can send an email to the administrator requesting the information you need. The email includes a unique authorization certificate, and [instructions on how the administrator proceeds](how-register-ib-ms-sp-dv-d360.md).
 
@@ -54,7 +67,7 @@ Once you receive the information, enter it into Integration Builder, and select 
 
 ### Editing a connection in Integration Manager
 
-Each connection to SharePoint Online you create in Integration Manager is tied to an application registered in Azure AD. To edit the connection, you must use a Microsoft account that has access to Azure AD and must authorize Integration Builder to connect on this user's behalf.
+Each connection to SharePoint Online you create in Integration Manager is tied to an application registered in Microsoft Entra. To edit the connection, you must use a Microsoft account that has access to Microsoft Entra and must authorize Integration Builder to connect on this user's behalf.
 
 This authorization is only valid for a specific user. If another user wants to edit a connection or integration, they also need to authorize Integration Builder.
 

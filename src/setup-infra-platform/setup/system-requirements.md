@@ -1,19 +1,28 @@
 ---
 summary: Explore the comprehensive system requirements for deploying OutSystems 11 (O11) across various platforms and configurations.
-tags: 
+tags: system requirements, on-premises installation, windows server, hardware requirements, software compatibility
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - platform server
+coverage-type:
+  - understand
+topic:
+  - download-and-set-up
 ---
 
 # OutSystems system requirements
 
 <div class="info" markdown="1">
 
-This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_system_requirements)&#8195;[9.1](https://www.outsystems.com/Downloads/ScreenDetails.aspx?MajorVersion=9&ReleaseId=18346&ComponentName=Platform+Server)&#8195;[9.0](https://www.outsystems.com/Downloads/ScreenDetails.aspx?MajorVersion=9&ReleaseId=19270&ComponentName=Platform+Server)
-
+This article applies to: **OutSystems 11**&#8195;&#8195;Other version available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_system_requirements)
 </div>
 
 Before installing OutSystems on-premises, check if your set up meets the hardware and software requirements listed in this article. To start the installation, refer to [Setting Up OutSystems](intro.md).
@@ -30,14 +39,19 @@ The following are the requirements for installing the Platform Server in your da
 
 ### Operating system
 
+* Microsoft Windows Server 2025 (Standard Edition or higher edition), since Platform Server 11.35.0<sup>1</sup>
 * Microsoft Windows Server 2022 (Standard Edition or higher edition), since Platform Server 11.20.0<sup>1</sup>
 * Microsoft Windows Server 2019 (Standard Edition or higher edition), since Platform Server Release Jul.2019
 * Microsoft Windows Server 2016 (Standard Edition or higher edition)
 
+<div class="info" markdown="1">
+
+<sup>1</sup> When installing the Platform Server on Windows Server 2022/2025, or upgrading an existing installation to Windows Server 2022/2025, consider increasing the CPU and memory of the machines as the Operating System itself requires more resources.
+<br/>
+<br/>
 OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 
-<sup>1</sup> When installing the Platform Server on Windows Server 2022, or upgrading an existing installation to Windows Server 2022, consider increasing the CPU and memory of the machines as the Operating System itself requires more resources.
-
+</div>
 
 The supported Operating System configurations must be deployed on bare metal or hardware virtualization technologies (for example, VMware or KVM).
 
@@ -51,25 +65,44 @@ Future revisions of OutSystems may require the installation of an update within 
 
 Use the same type of database engine for all the 3 databases in Platform Server (platform and apps, logs, session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
 
-* Microsoft SQL Server 2019 or higher, with compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
-* Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
-* Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
-* Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
-* Azure SQL Database V12
-* Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
-* Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2
-* Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)
+* Microsoft SQL Server supported versions<sup>1, 2</sup> and respective supported compatibility levels:
 
-<sup>1</sup> Developer and Express editions of Microsoft SQL Server (any version) aren't supported.
+    |  2016                |  2017                 |  2019                 |  2022                   |
+    |----------------------|-----------------------|-----------------------|-------------------------|
+    |  130                 |  130, 140             |  130, 140, 150        |  130, 140, 150          |
+
+* Azure SQL Database, with compatibility level between 130 and 150
+* Oracle<sup>3, 4</sup> 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
+
+<div class="info" markdown="1">
+
+<sup>1</sup> Requires Web Edition or higher. Developer and Express editions of Microsoft SQL Server (any version) aren't supported.
+<br/>
+<br/>
+<sup>2</sup> SQL Server 2014 stopped being supported from Platform Server version 11.33 onwards.
+<br/>
+<br/>
+<sup>3</sup> Oracle 18c stopped being supported from Platform Server version 11.33 onwards. It was initially supported from Platform Server 11 – Release Oct.2019 CP2.
+<br/>
+<br/>
+<sup>4</sup> Oracle 12c stopped being supported from Platform Server version 11.33 onwards.
+<br/>
+<br/>
+ OutSystems only supports Database versions that are supported by their respective vendor.
+<br/>
+<br/>
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
-Apart from standard Oracle Database setups, OutSystems platform 8.0 and onwards works with [Oracle Exadata Database Machines](http://www.oracle.com/us/products/database/exadata/overview/index.html) running with Oracle Linux 5.5 or higher.
+</div>
 
 ### Additional software requirements
 
-* Microsoft .NET Framework 4.8 (supported since Platform Server 11 – Release Oct.2019 CP2) or Microsoft .NET Framework 4.7.2
-* Microsoft Build Tools 2015
+* Microsoft .NET Framework, one of the following, depending on the Platform Server version:
+    * 4.8.1<sup>1</sup> : supported since Platform Server 11.35.0
+    * 4.8 : supported since Platform Server 11 – Release Oct.2019 CP2
+    * 4.7.2 : supported by all Platform Server 11 versions
+* Microsoft Build Tools 2015<sup>2</sup>
 * .NET Runtime & Hosting Bundle for Windows in the following versions, depending on the Platform Server version:
     * .NET 8.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.27.0 or newer
     * .NET 6.0 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.17.1 and 11.26.0
@@ -79,6 +112,13 @@ Apart from standard Oracle Database setups, OutSystems platform 8.0 and onwards 
 * Microsoft Visual C++ 2015-2022 Redistributable (x64) (only for Platform Server version 11.21.0 or above)
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
+
+<div class="info" markdown="1">
+
+<sup>1</sup> Using Microsoft .NET Framework 4.8.1 implies a slightly higher memory usage for OutSystems applications, consider increasing the memory of Frontends.
+<sup>2</sup> Microsoft Build Tools is no longer required starting on Platform Server versions 11.35.0.
+
+</div>
 
 ## Cache invalidation service
 
@@ -93,7 +133,7 @@ You can upgrade to the latest Patch of RabbitMQ Server, and the latest Minor of 
 The following are the minimum Patch versions of RabbitMQ Server and Erlang per Platform Server version:
 
 * For Platform Server 11.27.0 and higher: RabbitMQ Server 3.13.0 and Erlang version 26.2.2
-* For Platform Server 11.19.0 and higher: RabbitMQ Server 3.10.14 and Erlang version 25.1.2
+* From Platform Server 11.19.0 to 11.26.0: RabbitMQ Server 3.10.14 and Erlang version 25.1.2
 * From Platform Server 11.15.0 to 11.18.1: RabbitMQ Server 3.9.11 and Erlang version 24.2
 * From Platform Server 11.13.2 to 11.14.1: RabbitMQ Server 3.8.21 and Erlang version 23.2
 * From Platform Server 11.9.0 to 11.13.1: RabbitMQ Server 3.8.3 and Erlang version 22.3
@@ -103,15 +143,19 @@ During Platform Server installation, OutSystems provides a script that simplifie
 
 ## Amazon EC2 considerations
 
-OutSystems can run on Amazon EC2 instances. Each instance must fulfill the following requirements:
+OutSystems can run on Amazon EC2 instances. Each instance must fulfill one the following requirements:
 
-* The EC2Config service must be running
+* The `Amazon EC2Launch` service must be running, available from Amazon EC2Launch v2 (starting with Platform Server 11.32.0)
 
-For more information on how to enable this service, refer to [Amazon EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
+* Or, the `EC2Config` service must be running
+
+For more information on how to enable `Amazon EC2Launch` service, refer to [Amazon EC2Launch v2 service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2.html).
+
+For more information on how to enable `EC2Config` service, refer to [Amazon EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
 
 ## Amazon RDS considerations
 
-OutSystems supports Microsoft SQL Server 2019 or higher and compatibility level 150 (since Platform Server 11.12.0), Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. 
+OutSystems supports Microsoft SQL Server 2019 or higher and compatibility level 150 (since Platform Server 11.12.0), Microsoft SQL Server 2016, Microsoft SQL Server 2017 and Oracle 19c on Amazon RDS.
 
 The database instance class must fulfill the following requirements:
 
@@ -122,15 +166,23 @@ The database instance class must fulfill the following requirements:
 
 Example of a DB instance class fulfilling these requirements: "db.t2.medium".
 
-Oracle 18c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP2.
 Oracle 19c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP3.
+
+<div class="info" markdown="1">
+
+* Oracle 18c stopped being supported from Platform Server version 11.33 onwards. It was initially supported from Platform Server 11 – Release Oct.2019 CP2.
+
+* Oracle 12c stopped being supported from Platform Server version 11.33 onwards.
+
+</div>
 
 For more information on the available DB instance classes, refer to [Amazon's DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html).To learn more about Amazon RDS limitations, refer to [Amazon RDS System Requirements](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html).
 
 ## Microsoft Azure considerations
 
-OutSystems supports Microsoft Azure SQL Database V12 with the following considerations:
+OutSystems supports Microsoft Azure SQL Database with the following considerations:
 
+* The compatibility level must be between 130 and 150.
 * The database service tier must be at least "S3".
 * The MDC (Multiple Database Catalogs) feature isn't supported.
 * Connecting to Azure SQL database using Windows authentication isn't supported.
@@ -143,40 +195,45 @@ OutSystems also supports SQL Server running on an Azure virtual machine.
 
 The following systems are certified to integrate with OutSystems.
 
-### SQL Server Database
+### SQL Server database
 
-* Microsoft SQL Server 2019 or higher, with compatibility level 150, since Platform Server 11.12.0
-* Microsoft SQL Server 2017
-* Microsoft SQL Server 2016
-* Microsoft SQL Server 2014
-* Microsoft SQL Server 2012
-* Microsoft SQL Server 2008 R2
-* Microsoft SQL Server 2008
+* Supported versions<sup>1</sup> and respective supported compatibility levels:
+
+    |  2016    |  2017       |  2019           |  2022            |
+    |----------|-------------|-----------------|------------------|
+    |  130     |  130, 140   |  130, 140, 150  |  130, 140, 150   |
+
+<sup>1</sup> Versions 2008 to 2014 stopped being supported from Platform Server version 11.33 onwards.
 
 ### Azure SQL database
 
-* Azure SQL Database available in the cloud
+* Azure SQL Database with compatibility level between 130 and 150
 
 ### Oracle database
 
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
-* Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2
-* Oracle 12c (12.1 and 12.2, Standard Edition or Enterprise Edition)
-* Oracle 11g R2 (Standard Edition or Enterprise Edition). From Platform Server 11.25.0, Oracle 11g R2 is no longer supported.
 
 The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 <div class="info" markdown="1">
 
-From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integrations with Oracle databases earlier than 11g R2.
+* Oracle 18c stopped being supported from Platform Server version 11.33 onwards. It was initially supported from Platform Server 11 – Release Oct.2019 CP2.
+
+* Oracle 12c stopped being supported from Platform Server version 11.33 onwards.
+
+* Oracle 11g R2 stopped being supported from Platform Server version 11.25 onwards.
+
+* Oracle versions earlier than 11g R2 stopped being supported from OutSystems 11 Platform Server Release Oct.2019 onwards.
 
 </div>
 
 ### MySQL database
 
-* MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)
-* MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)
+* MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)<sup>1</sup>
+* MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)<sup>1</sup>
 * MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
+
+<sup>1</sup> This version is no longer supported by MySQL and isn't supported by OutSystems starting with Platform Server version 11.32.0.
 
 ### PostgreSQL database
 
@@ -233,9 +290,9 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 **macOS (cross-platform Service Studio only):**
 
-* macOS Monterrey
 * macOS Ventura since Service Studio 11.54.60
 * macOS Sonoma since Service Studio 11.54.60
+* macOS Sequoia since Service Studio 11.55.0
 
 **Windows:**
 
@@ -248,7 +305,7 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 #### Required software
 
-* Google Chrome version 54 or later, or Microsoft Edge
+* Google Chrome version 54 or later, or Microsoft Edge (Edge is only available for Service Studio running on Windows)
 :   To perform client-side debugging in Service Studio using a  desktop browser 
 * Android device drivers
 :   To perform client-side debugging on an Android mobile device if the device isn't recognized automatically

@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) enables the extraction of distinct values from database tables by using aggregates with grouped columns.
-tags: support-application_development; support-Database; support-webapps
+tags: database operations, data aggregation, entity modeling, data manipulation, aggregate functions
 locale: en-us
 guid: 4ceecc67-9976-48c7-bcdb-fa895a141d81
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:7
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - aggregates
 ---
 
 # Get Distinct Values from the Database

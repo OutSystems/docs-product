@@ -5,6 +5,8 @@ guid: f4b0e6fd-f612-4773-8e37-d2693ef6a005
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+coverage-type:
+  - remember
 ---
 
 # Map logical database to database connections using the LifeTime API

@@ -1,30 +1,57 @@
 ---
 summary: Explore how to create and reuse UI Blocks across different applications in OutSystems 11 (O11) to streamline user interface development.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags: ui design patterns, component-based development, user interface design, application development, dependency management
 locale: en-us
 guid: 6cd79d30-4d78-4fd5-8707-b4af2cbd5078
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:2
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - reuse-ui
+  - adding-a-block
 ---
 
 # Create and Reuse Screen Blocks
 
-Use Blocks to reuse parts of UI across your apps. With Blocks you can have part of the UI in one place, so changes to the Blocks are automatically visible in all Screens that use it.
+Blocks enable you to reuse parts of UI across your apps. With Blocks you can have part of the UI in one place, so changes to the Blocks are automatically visible in all Screens that use it.
 
-Here are notes about reusing Block across **different apps**:
+## Creating Blocks
 
-* Blocks must be public.
-* You can reuse Reactive Web Blocks in Reactive Web Apps and Mobile Apps.
-* You can reuse Traditional Web Blocks in Traditional Web Apps.
-* To reuse it, go to **Manage Dependencies** and search producers for our app or library.
-
-## Using Blocks
+To create a Block in your module, do the following:
 
 1. In a UI Flow, add a Block (in Reactive Web and Mobile Apps) or a Web Block (in Traditional Web Apps).
 1. Implement the user interface and logic in the new Block.
 1. Set the Block as public if you want to reuse it across apps.
-1. Drag it the Block to the Screen where you want to use it. If you want to use the Block in another App, you first need to reference the Block.
+
+## Reusing Blocks
+
+To reuse a Block, drag it from the elements tree to the Screen where you want to use it.
+
+When [reusing Blocks across different apps](../../reuse-and-refactor/expose-and-reuse.md#reuse), consider the following:
+
+* Blocks must be public.
+* You can reuse Reactive Web Blocks in Reactive Web Apps and Mobile Apps.
+* You can reuse Traditional Web Blocks in Traditional Web Apps.
+* The user adding a Block to a module must have at least [**Monitor and Add Dependencies** permission](../../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels) over the Block's producer module.
+* If the reused Block includes another Block from a different producer module, the user must also have at least **Monitor and Add Dependencies** permission over the producer module of that inner Block. 
+
+To reuse a Block from a different app, first you need to add that Block to your module.
+
+![Screenshot of the Manage Dependencies dialog in OutSystems showing the selection of MyBlock from the MyReactiveApp](images/block-reuse-manage-dependencies.png "Manage Dependencies Dialog")
+
+<div class="info" markdown="1">
+
+If you don't have the required permissions over the producer modules of all inner Blocks within the Block you want to use, adding that Block to your module fails due to missing dependencies.
+
+</div>
 
 ### Advanced use cases to pass data between blocks
 

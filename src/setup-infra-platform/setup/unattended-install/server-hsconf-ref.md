@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) uses the `server.hsconf` XML file for detailed platform configuration across various database systems.
-tags: support-Installation_Configuration; support-Installation_Configuration-overview
+tags: configuration management, xml configuration, outsystems platform, database systems, installation & setup
 locale: en-us
 guid: dcc55c5d-8cd5-4850-9e88-fa385badc663
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - tech leads
+  - infrastructure managers
+outsystems-tools:
+  - configuration tool
+  - platform server
+coverage-type:
+  - remember
 ---
 
 # server.hsconf Configuration File Reference
@@ -228,9 +239,12 @@ The following are the available configurations:
 |Key|Value|Description|
 |---|-----|-----------|
 |CompilerServerHostname|Hostname or IP address of the Deployment Controller Server.|To make it easier to add a front-end server later, we do not recommend using the value localhost as the hostname.|
-|CompilerServerPort|Numeric value.|Port used by the Deployment Controller Service, in the Deployment Controller Server.|
-|DeploymentServerPort|Numeric value.|Port used by the Deployment Service, in the Front-End Servers.|
-|SchedulerServerPort|Numeric value.|Port used by the Scheduler Service, in the Front-End Servers.|
+|CompilerServiceRESTPort|Numeric value.|Primary port used by the Deployment Controller Service, in the Deployment Controller Server. Applies to Platform Server 11.25.0 and higher.|
+|CompilerServerPort|Numeric value.|Secondary port used by the Deployment Controller Service, in the Deployment Controller Server.|
+|DeployServiceRESTPort|Numeric value.|Primary port used by the Deployment Service, in the Front-End Servers. Applies to Platform Server 11.24.0 and higher.|
+|DeploymentServerPort|Numeric value.|Secondary port used by the Deployment Service, in the Front-End Servers.|
+|SchedulerRESTPort|Numeric value.|Primary port used by the Scheduler Service, in the Front-End Servers. Applies to Platform Server 11.21.0 and higher.|
+|SchedulerServerPort|Numeric value.|Secondary port used by the Scheduler Service, in the Front-End Servers.|
 |SupportAsynchronousLog|"true" or "false".<br/>**Internal**, do not customize.||
 |ServiceInitializationTimeoutInSeconds|Numeric value.|Timeout for services to restart. The default value is 180 seconds.|
 

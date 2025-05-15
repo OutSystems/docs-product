@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: ui patterns, web development, outsystems, user interface design, application development
 summary: Explore the integration of the User Initials UI Pattern in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 02ba4227-0341-4645-8202-58dcb3119d8d
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:618
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # User Initials Reference

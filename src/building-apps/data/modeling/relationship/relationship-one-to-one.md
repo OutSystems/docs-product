@@ -1,11 +1,22 @@
 ---
 summary: Explore how to create a one-to-one relationship in OutSystems 11 (O11) to extend entities with additional attributes.
-tags: support-application_development; support-Database; support-webapps
+tags: entity relationships, database modeling, entity extension, data management, system entities
 locale: en-us
 guid: 31531e0f-7653-48b1-810e-027d4586bef3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:7
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - data-relationships
 ---
 
 # Create a One-to-One Relationship

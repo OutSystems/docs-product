@@ -1,11 +1,22 @@
 ---
 summary: Explore how to consume REST APIs using OutSystems 11 (O11), including authentication methods and advanced customizations.
-tags: support-application_development; support-Integrations_Extensions; support-Integrations_Extensions-overview
+tags: api integration, rest api, security implementation, rest api authentication, api consumption
 locale: en-us
 guid: 5a949da9-dd60-4ea9-a05b-70c27bc53655
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - consume-refresh-methods
+  - webservice-authentication
 ---
 
 # Consume REST APIs

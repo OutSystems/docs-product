@@ -1,11 +1,21 @@
 ---
-tags: 
+tags: ide usage, reactive web apps, tutorials for beginners, outsystems platform, user authentication
 summary: Explore the setup and user association processes for AI Mentor Studio in OutSystems 11 (O11).
 locale: en-us
 guid: c9fd26ba-85ea-406d-834a-df6c0399d11a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:604
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - ai mentor studio
+  - lifetime
+  - architecture dashboard
+coverage-type:
+  - apply
 ---
 
 # How to set up AI Mentor Studio
@@ -78,7 +88,7 @@ Before registering and setting up your infrastructure in AI Mentor Studio, make 
 
 * For self-managed infrastructures, LifeTime must be deployed in a dedicated environment.
 
-* Your code analisys environment uses **Platform Server 11.18.1** or later.
+* Your code analysis environment uses **Platform Server 11.18.1** or later.
 
 * Your LifeTime environment uses **LifeTime Management Console 11.16.1** or later.
 

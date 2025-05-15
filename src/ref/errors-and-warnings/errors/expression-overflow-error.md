@@ -5,6 +5,15 @@ guid: f5218ef6-23d9-441f-8003-1789c839edaf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, data types, application development, debugging, best practices
+audience:
+  - full stack developers
+  - frontend developers
+  - backend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Expression Overflow Error

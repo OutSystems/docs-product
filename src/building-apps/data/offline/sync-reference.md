@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) provides a detailed sync framework for mobile apps, covering data synchronization between client and server actions.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps
+tags: data synchronization, offline support, mobile app development, client-server architecture, sync configuration
 locale: en-us
 guid: 4bdbcec9-3e7a-4701-a2e8-4bd6166e7bb0
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:43
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - offline-synch
 ---
 
 # Sync Framework Reference
@@ -74,7 +84,7 @@ Mobile apps come with two actions to detect network status and type. These are a
 
 ### GetNetworkStatus
 
-Returns a Boolean value. True for online, False for offline.
+Returns False if the browser cannot connect to a local area network (LAN) or a router. All other conditions return True.
 
 ### GetNetworkType
 

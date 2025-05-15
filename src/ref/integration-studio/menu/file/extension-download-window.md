@@ -3,12 +3,22 @@ locale: en-us
 guid: 72128f41-26f1-43f5-b5be-fd06451c1624
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3075-6&t=ngfUZsYain6dMjce-1
 summary: OutSystems 11 (O11) features a Download from Server window in Integration Studio, facilitating the download of the latest extension versions.
+tags: ide usage, reactive web apps, tutorials for beginners, integration studio, extension management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
+
 # Download from Server Window
 
-The ![Animated GIF icon representing download from server](images/download-icon.gif "Download Icon") Download from server window is launched when you are [downloading an extension](<../../../../integration-with-systems/integration-studio/managing-extensions/extension-download.md>), in Integration Studio and allows you to download the latest extension version of a given extension.
+The ![Animated GIF icon representing download from server](images/download-icon.png "Download Icon") Download from server window is launched when you are [downloading an extension](<../../../../integration-with-systems/integration-studio/managing-extensions/extension-download.md>), in Integration Studio and allows you to download the latest extension version of a given extension.
 
 The information and buttons available in the Download from Server window are presented below.
 

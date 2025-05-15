@@ -5,6 +5,15 @@ guid: 75d5ed76-ed3d-405c-a3a5-e497af70434c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: rest apis, api integration, callback handling, api customization, action flows
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # REST API Callback

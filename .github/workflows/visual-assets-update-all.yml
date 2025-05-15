@@ -21,7 +21,7 @@ jobs:
     steps:
     - name: Acknowledge Comment - Start
       id: check
-      uses: shanegenschaw/pull-request-comment-trigger@v2.1.0
+      uses: shanegenschaw/pull-request-comment-trigger@v3.0.0
       if: github.event_name == 'issue_comment'
       with:
         trigger: 'Update'
@@ -64,7 +64,7 @@ jobs:
   
     - name: 'Setup markdown-figma'
       if: (github.event_name == 'issue_comment' && needs.ignore-list.outputs.triggered == 'true') || github.event_name != 'issue_comment'
-      uses: MiguelDomingues/markdown-figma-action@v1.0.4
+      uses: MiguelDomingues/markdown-figma-action@v1.05
 
     - name: Download artifact ignore-list
       uses: actions/download-artifact@v4
@@ -105,7 +105,7 @@ jobs:
 
     - name: Create Pull Request
       if: (github.event_name == 'issue_comment' && needs.ignore-list.outputs.triggered == 'true') || github.event_name != 'issue_comment'
-      uses: peter-evans/create-pull-request@v6
+      uses: peter-evans/create-pull-request@v7
       with:
         token: ${{ secrets.TOOLS_PAT }}
         commit-message: Update visual assets in ${{ github.ref_name }}

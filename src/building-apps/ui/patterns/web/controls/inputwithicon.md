@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, user interface design, frontend development, web development, outsystems
 summary: OutSystems 11 (O11) features the Input with Icon UI Pattern for enhanced data entry in Traditional Web Apps.
 locale: en-us
 guid: 28c2a35c-1fad-450b-bb5f-a31926f49c1a
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=234%3A2&mode=design&t=KpVEJMvnBwiukqql-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Input with Icon

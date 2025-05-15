@@ -1,11 +1,18 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags: user interface, user feedback, javascript apis, message handling, ui components
 summary: OutSystems 11 (O11) provides functions to display and manage feedback messages in Mobile and Reactive Web Apps.
 locale: en-us
 guid: 97a72928-f041-46ef-b4c9-2574f67d986e
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # FeedbackMessage

@@ -5,11 +5,23 @@ guid: f224026f-76d6-4b2b-b750-a0d2f52f609a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: cache invalidation, service configuration, rabbitmq, security, deployment & operations
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - service center
+coverage-type:
+  - remember
 ---
 
-# Cache Tab
+# Cache tab
 
 In the **Cache** tab you define the basic settings for connecting to the Cache Invalidation Service (RabbitMQ) from applications and OutSystems services.
+
+![Screenshot of the Cache tab in the Configuration Tool](images/cache-tab-ct.png "Cache tab")
 
 ## Cache Invalidation Service section
 

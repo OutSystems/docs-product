@@ -1,11 +1,19 @@
 ---
 summary: Learn how to customize SAP connections in OutSystems 11 (O11) using the SAP Extensibility API for enhanced integration capabilities.
-tags: support-application_development; support-Integrations_Extensions
+tags: sap integration, extension development, .net framework, sap connector, api customization
 locale: en-us
 guid: 3a9b8612-fe81-4c45-94be-804398a3c28a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - remember
 ---
 
 # SAP Extensibility API

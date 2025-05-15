@@ -1,14 +1,21 @@
 ---
 summary: Explore the Camera Plugin functionalities in OutSystems 11 (O11), including client actions, web blocks, and error handling.
-tags: runtime-mobile
+tags: mobile app development, plugin integration, camera functionality, error handling, pwa compatibility
 locale: en-us
 guid: ce70e86c-de5e-413e-988e-d0dca05b30f0
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
-# Camera plugin - reference page
+# Camera Plugin - Reference Page
 
 ## Plugin Elements
 
@@ -111,7 +118,7 @@ SaveToPhotoAlbum|Input|Boolean|Sets if the media captured can be saved in the de
 CameraDirection|Input|Structure|Select the front or back camera as default when taking a new picture. Default value: BackCamera.
 AllowEdit|Input|Boolean|Sets if the media captured must be sent to an edit screen right after the capturing.
 AllowMultiplePictures|Input|Boolean|Sets if the user can select multiple pictures.
-ImageCaptured|Output|Structure|Returns the captured image binary. information.
+ImageCaptured|Output|Structure|Returns the captured image binary information.
 Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
 Error|Output|Error|Displays detailed information of an error, if applicable.
 
@@ -251,7 +258,10 @@ OS-PLUG-CAMR-0023 (NEW)|iOS, Android|Couldn’t choose media from the gallery be
 OS-PLUG-CAMR-0024 (NEW)|Android|Couldn't get media file path.
 OS-PLUG-CAMR-0025 (NEW)|iOS, Android|Cordova is not available.
 OS-PLUG-CAMR-0026 (NEW)|iOS, Android|Couldn’t play video.
-OS-PLUG-CAMR-0027 (NEW)|Android|The selected file doesn’t exist.
+OS-PLUG-CAMR-0027 (NEW)|Android|URI parameter cannot be empty.
 OS-PLUG-CAMR-0028 (NEW)|iOS|Couldn’t get video from the gallery.
 OS-PLUG-CAMR-0029 (NEW)|iOS|There's an issue with the plugin.
-
+OS-PLUG-CAMR-0030 (NEW)|Android|The selected file doesn't exist.
+OS-PLUG-CAMR-0031 (NEW)|iOS|Couldn't retrieve image from the URI.
+OS-PLUG-CAMR-0032 (NEW)|PWA|EditURIPicture is only available for Android and iOS.
+OS-PLUG-CAMR-0033 (NEW)|iOS, Android, PWA|Height and width values need to be greater than zero.

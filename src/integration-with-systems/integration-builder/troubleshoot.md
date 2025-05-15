@@ -5,7 +5,19 @@ guid: f10a765a-8c75-4ddd-8c80-c0deae442e94
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: troubleshooting, salesforce integration, connectivity issues, permission issues, outsystems 11
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - integration builder
+coverage-type:
+  - unblock
 ---
+
 # Troubleshooting Integration Builder
 
 Check the list of possible issues you may face when using Integration Builder and their corresponding solutions.

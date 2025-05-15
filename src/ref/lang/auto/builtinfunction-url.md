@@ -5,6 +5,14 @@ guid: ee8d9725-b38d-4d95-8294-71e7d838ee7b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: url management, error handling, module personalization, outsystems development, traditional web apps
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # URL

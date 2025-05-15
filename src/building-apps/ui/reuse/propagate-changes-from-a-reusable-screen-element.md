@@ -1,11 +1,22 @@
 ---
 summary: Explore how to use events for communication between Blocks and parent elements in OutSystems 11 (O11).
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags: event handling, parent-child communication, ui components, block development, outsystems ui patterns
 locale: en-us
 guid: 6140a263-aa35-45e6-92a7-dc4453dae1c6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:6
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - adding-a-block
+  - ui-elements-events
 ---
 
 # Use Events to Propagate Changes From a Block to the Parent

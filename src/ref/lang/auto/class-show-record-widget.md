@@ -6,6 +6,14 @@ guid: d570d3e9-60ad-40d8-a87b-df968ff67d2a
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: outsystems widgets, traditional web development, entity management, ui components, form layout
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Show Record Widget

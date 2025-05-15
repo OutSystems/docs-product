@@ -5,6 +5,14 @@ guid: f62c6f07-cf7c-4ccd-b3a4-61d72b1f062a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, styling issues, ui design best practices, theme customization
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Use of Grid Units Error

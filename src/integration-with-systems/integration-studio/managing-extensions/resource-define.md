@@ -3,12 +3,22 @@ locale: en-us
 guid: e7143ce0-e179-48f5-a85c-91a174f36eba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3783-247
 summary: Explore how to define and manage resources in OutSystems 11 (O11) using Integration Studio, including adding files and setting properties.
+tags: extension management, integration studio, resource management, extensions, outsystems development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - apply
 ---
+
 # Define Resources
 
-Once you have created your extension, you can define the resources that your extension requires. Integration Studio displayes the resources of your extension in the [Resources tree](<../../../ref/integration-studio/resources-tree.md>).
+Once you have created your extension, you can define the resources that your extension requires. Integration Studio displays the resources of your extension in the [Resources tree](<../../../ref/integration-studio/resources-tree.md>).
 
 All these resources are packed in the XIF (Extension and Integration Framework) file when the extension is saved.
 
@@ -18,11 +28,11 @@ When creating a new extension or updating the extension source code, Integration
 
 To add a resource do the following:
 
-1. Copy the file you want to add to the resources directory. Once the file is copied, the status of the resource, in the [Resources tree](<../../../ref/integration-studio/resources-tree.md>), is ![Icon indicating the status of a resource as Excluded in the Resources tree](images/resource-faded.gif "Excluded Resource Status") **Excluded**.
+1. Copy the file you want to add to the resources directory. Once the file is copied, the status of the resource, in the [Resources tree](<../../../ref/integration-studio/resources-tree.md>), is ![Icon indicating the status of a resource as Excluded in the Resources tree](images/resource-faded.png "Excluded Resource Status") **Excluded**.
 
     **Tip:** To determine the resources directory, right-click the **Resources** icon and select **Open**.
 
-1. Right-click this file and select ![Icon for the action to Include a resource in the extension](images/resource-include.gif "Include Resource in Extension") **Include in Extension**. Once the file is added as resource, the status is ![Icon indicating the status of a resource as Included in the Resources tree](images/resource-add.gif "Included Resource Status") **Included**.
+1. Right-click this file and select ![Icon for the action to Include a resource in the extension](images/resource-include.png "Include Resource in Extension") **Include in Extension**. Once the file is added as resource, the status is ![Icon indicating the status of a resource as Included in the Resources tree](images/resource-add.png "Included Resource Status") **Included**.
 
 1. Specify the following properties:
 
@@ -31,7 +41,7 @@ To add a resource do the following:
     * **Deploy Action**: Indicates where, in the Platform Server, the resource is stored when the module that added the extension is published.
     * **Description**: Description of the resource.
 
-![Lightbulb icon representing a tip or helpful information](images/tip.gif "Tip Information") The [Resource editor](<../../../ref/integration-studio/editor/resource.md>) allows you to later change the resource properties.
+![Lightbulb icon representing a tip or helpful information](images/tip.png "Tip Information") The [Resource editor](<../../../ref/integration-studio/editor/resource.md>) allows you to later change the resource properties.
 
 <div class="info" markdown="1">
 

@@ -5,6 +5,19 @@ guid: a779877f-c993-4609-9b15-12216cd263c7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: process management, system actions, database interactions, application logic, workflow automation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - evaluate
+  - apply
+topic:
+  - process-decision-patterns
 ---
 
 # Communicating with a Process

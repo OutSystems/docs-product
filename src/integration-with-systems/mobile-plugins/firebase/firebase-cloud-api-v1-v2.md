@@ -5,6 +5,15 @@ guid: 612389e2-3fb0-455c-8506-eebc7627615b
 app_type: mobile apps
 platform-version: o11
 figma:
+tags: api, deprecated features, notification management, outsystems platform, firebase cloud messaging
+audience:
+  - mobile developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Cloud Messaging Configurator APIs
@@ -23,7 +32,7 @@ Use OutSystems' Cloud Messaging Configurator REST APIs to do the following:
 
 * Send a notification (normal or silent) to a user or group of users.
 
-Following are the versions of the Cloud Message Configurator REST API in OutSystem:
+Following are the versions of the Cloud Messaging Configurator REST API in OutSystem:
 
 * [v1 endpoint](#v1)
 

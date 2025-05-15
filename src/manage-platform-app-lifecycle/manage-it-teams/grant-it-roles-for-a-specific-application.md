@@ -5,6 +5,19 @@ guid: 00796575-6a6e-40dc-a4a8-88ff5d4a549a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:68
+tags: permissions management, application lifecycle management, user roles, business user enablement, monitoring applications
+audience:
+  - platform administrators
+  - business analysts
+  - full stack developers
+outsystems-tools:
+  - lifetime
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - assign-a-role-for-an-app
 ---
 
 # Grant Permissions for Specific Applications

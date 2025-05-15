@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: migration guide, outsystems maps, deprecated features, component structure, mobile app development
 summary: Explore the migration guide for deprecated functionalities in OutSystems Maps version 1.1.0 on OutSystems 11 (O11).
 locale: en-us
 guid: fda9408b-4043-4e53-aff2-96e241be9716
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - none
 ---
 
 # Migration Path

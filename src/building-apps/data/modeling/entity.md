@@ -5,6 +5,17 @@ guid: 5a13a09e-6e8f-40b2-8ca3-eb7af13e3b40
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database modeling, data persistence, entity management, primary keys, indexes
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - create-edit-entities
 ---
 
 # Entities
@@ -49,7 +60,16 @@ When you set an entity attribute as mandatory it is automatically validated on t
 
 When you delete an entity or an entity attribute, the platform is permissive and lets you do it whether it is being used or not, but you must fix the elements where it is being used. In the database, the entity or entity attribute is not deleted by the platform.
 
-## Convert an entity to a static entity
+## Choosing between entities and static entities
+
+Use Entities and Static Entities based on the type of data you need to manage.
+
+* Use Entities to store data that can change over time. Entities support Create, Read, Update, and Delete (CRUD) operations at runtime.
+* Use Static Entities for constant, predefined data that doesn't change at runtime. Static Entities only support read operations and function as enums. To learn more, refer to [Static Entities](entity-static.md).
+
+For example, in a finance app, you need to store user details. Since this data can change frequently, store it in an Entity. But to store the PaymentStatus field with predefined values like Pending, Completed, and Failed. You need to use Static Entity since they are constant.
+
+### Convert an entity to a static entity
 
 To convert an existing entity to a static entity right-click the entity and select **Convert to Static Entity** from the **Advanced** menu.
 
@@ -60,4 +80,3 @@ After converting an entity to a static entity the records from the database can 
 To convert an existing static entity to an entity right-click the static entity and select **Convert to Entity** from the **Advanced** menu.
 
 </div>
-

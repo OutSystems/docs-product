@@ -6,6 +6,17 @@ guid: b5b035e8-ea51-41bb-ab1a-92dcb8db2013
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:341
+tags: expression widgets, user interface development, runtime display, service studio editor
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - write-expressions-guide
 ---
 
 # Expression
@@ -17,7 +28,7 @@ The expression widget displays text or the result of an expression at runtime. I
 
     ![Screenshot of the Expression widget being selected in Service Studio](images/expression-widget-ss.png "Expression Widget in Service Studio")
 
-1. Enter an expression in the expression editor and click **Done**.
+1. Enter an expression in the expression editor and click **Close**.
 
     ![Screenshot of the Expression editor with an example expression in Service Studio](images/expression-editor-ss.png "Expression Editor in Service Studio")
     

@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, widget implementation, notifications, dependency management, service studio
 summary: OutSystems 11 (O11) features the Icon Badge UI Pattern for displaying numerical notifications in Mobile and Reactive Web Apps.
 locale: en-us
 guid: 085bea26-5d10-41b4-a31b-9e840315b759
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:38
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Icon Badge
@@ -60,7 +68,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen name.
 
-1. Select the Icon Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**, and in the Expression Editor enter the following expression and click **Done**.
+1. Select the Icon Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**, and in the Expression Editor enter the following expression and click **Close**.
 
     `GetUsers.Count`
 

@@ -1,11 +1,19 @@
 ---
 summary: Explore how to install client-side certificates in OutSystems 11 (O11) cloud environments for secure webservice consumption.
-tags: 
+tags: client-side certificates, web service consumption, cloud environments, authentication, security
 locale: en-us
 guid: 7c93c0ac-8de4-412f-8c80-37179170f1d8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service center
+coverage-type:
+  - understand
 ---
 
 # Requesting to install client-side certificates on OutSystems cloud

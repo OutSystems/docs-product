@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, mobile apps, rest api integration, image manipulation
 summary: Explore image manipulation and REST API integration in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: b0e2b293-97b8-47b4-abfe-d5b99df4bc3c
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:359
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Lightbox Image Reference
@@ -22,7 +30,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 **Result**:
 
-![Animated GIF demonstrating the result of adding a filter to an image in Lightbox](images/Lightbox_filter.gif "Result of Adding Filter to Lightbox Image")
+<iframe src="https://player.vimeo.com/video/996193965" width="368" height="604" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the result of adding a filter to an image in Lightbox.</iframe>
 
 ## Loading Binary Images After Click on Lightbox Image (images from database)
 

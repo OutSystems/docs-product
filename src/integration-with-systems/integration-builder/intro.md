@@ -5,6 +5,16 @@ guid: 7d1ada04-3931-44d4-9dc1-654ed40f16f2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:58
+tags: enterprise integration, systems of records, data flow, saas, connectors
+audience:
+  - full stack developers
+  - backend developers
+  - architects
+  - tech leads
+outsystems-tools:
+  - integration builder
+coverage-type:
+  - understand
 ---
 
 # Create connectors with Integration Builder

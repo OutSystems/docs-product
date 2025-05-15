@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, user interface patterns, web development, visual organization, ui components
 summary: Learn how to use the Separator UI Pattern in OutSystems 11 (O11) to enhance visual organization in Traditional Web Apps.
 locale: en-us
 guid: c2f627d5-7dbf-4c75-a18e-43635917c6e6
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=249%3A5&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Separator

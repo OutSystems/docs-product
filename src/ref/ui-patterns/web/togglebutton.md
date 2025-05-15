@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: ui patterns, traditional web development, css customization, toggle button, web design
 summary: Explore the detailed guide on using and styling the Toggle Button UI pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 0a3ed4d0-92d8-42d3-8cb5-076de9b5752a
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:610
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Toggle Button Reference

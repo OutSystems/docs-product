@@ -6,6 +6,15 @@ guid: a1cf5074-f5ba-48cf-a229-206358fd55c0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1914:3490
+tags: json serialization, data serialization, data conversion, data types, runtime behavior
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # JSON Serialize

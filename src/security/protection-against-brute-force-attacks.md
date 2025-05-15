@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) features integrated protection against brute force attacks, blocking suspicious user and IP activity.
-tags: support-Security-overview
+tags: security, brute force attack protection, dos prevention, authentication security, access control
 locale: en-us
 guid: 12783fed-7ac1-41f3-8d46-544892ff8b58
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=267%3A99&mode=design&t=wnuT61gSaBFQZ5jn-1
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+  - backend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Protection against Brute Force Attacks
@@ -33,11 +44,7 @@ The countermeasure OutSystems provides consists of a two-step backoff mechanism:
 
 <div class="info" markdown="1">
 
-## Protecting Application Users and IT Users
-
 The protection against brute force attacks for **application users**, for instance, end users of your applications, is available for all applications configured with Users as their User Provider or when using a custom User Provider cloned from Users.
-
-To learn how to configure this protection for IT users, refer to [Configure Brute Force Protection for Application Users](<#configure-brute-force-protection>).
 
 The same brute force attack protection is available by default for **IT users** when logging in to Service Center and LifeTime. To learn how to configure this protection for IT users, refer to [Configure Brute Force Protection for IT Users](#configure-brute-force-protection-it-users).
 

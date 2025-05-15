@@ -5,7 +5,20 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: This article explains how to configure the logging level for REST and SOAP integrations in OutSystems 11 (O11).
+tags: web services, api configuration, logging, troubleshooting, security
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
+topic:
+  - troubleshoot-webservices
 ---
+
 # Set the logging level of REST and SOAP integrations
 
 You can customize the logging level for consumed/exposed REST APIs and consumed SOAP Web Services to adjust the amount of stored information about requests/responses.

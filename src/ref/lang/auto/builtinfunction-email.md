@@ -5,15 +5,24 @@ guid: f4d76631-b342-403c-bbfc-516c9b53f250
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: email functionality, server-side logic, application development, platform-specific, email validation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Email
 
 |Name|Description|
-|--- |--- |
-|[EmailAddressCreate](#emailaddresscreate--emailaddresscreate)(​Text, Text)|Returns a full email address string containing the display name (usually it's the name of the email address owner) and the email address itself. The resulting full email address may then be used in the Send Email element (action flows) or in the Send Email activity (process flows).To build a list of email addresses use the EmailAddressesConcatenate built-in function.|
-|[EmailAddressesConcatenate](#emailaddressesconcatenate--emailaddressesconcatenate)(​Text, Text)|Returns the concatenation of email addresses, or list of email addresses, into a new list of email addresses separated by a comma (','). The resulting list may then be used in the Send Email element (action flows) or in the Send Email activity (process flows).|
-|[EmailAddressValidate](#emailaddressvalidate--emailaddressvalidate)(​Text)|Returns true if Text 'address' is a valid email address. Note that EmailAddressValidate("") returns True.This built-in function implements the validation specified by HTML5 (https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address) which has a practical approach to RFC 5322.|
+|--- |---|
+|[EmailAddressCreate](#EmailAddressCreate)(​Text, Text)|Returns a full email address string containing the display name (usually it's the name of the email address owner) and the email address itself. The resulting full email address may then be used in the Send Email element (action flows) or in the Send Email activity (process flows).To build a list of email addresses use the EmailAddressesConcatenate built-in function.|
+|[EmailAddressesConcatenate](#EmailAddressesConcatenate)(​Text, Text)|Returns the concatenation of email addresses, or list of email addresses, into a new list of email addresses separated by a comma (','). The resulting list may then be used in the Send Email element (action flows) or in the Send Email activity (process flows).|
+|[EmailAddressValidate](#EmailAddressValidate)(​Text)|Returns true if Text 'address' is a valid email address. Note that EmailAddressValidate("") returns True.This built-in function implements the validation specified by HTML5 (https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address) which has a practical approach to RFC 5322.|
 
 ## EmailAddressCreate { #EmailAddressCreate }
 

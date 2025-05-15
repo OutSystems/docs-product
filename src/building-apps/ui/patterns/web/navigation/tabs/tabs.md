@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, service studio, outsystems ui, dependency management, widgets
 summary: Explore the Tabs UI Pattern in OutSystems 11 (O11) for efficiently managing and displaying large sets of information in Traditional Web Apps.
 locale: en-us
 guid: 61ddaa14-5f08-44b8-95a5-9527a7649449
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A55&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Tabs
@@ -18,7 +25,7 @@ Applies only to Traditional Web Apps.
 
 You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away.
 
-![Animated GIF showing the interaction with the Tabs UI Pattern in a Traditional Web App](images/tabs-1.gif "Tabs UI Pattern Interaction")
+<iframe src="https://player.vimeo.com/video/977630954" width="750" height="231" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the interaction with the Tabs UI Pattern in a Traditional Web App.</iframe>
 
 **How to use the Tabs UI Pattern**
 

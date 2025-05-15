@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, ui design, service studio, outsystems ui, fieldset pattern
 summary: Explore how OutSystems 11 (O11) enhances Traditional Web Apps by utilizing the Fieldset UI Pattern for grouping related information.
 locale: en-us
 guid: b22dd0ca-8b9a-4d0f-a848-384bec9e6bc9
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=245:97
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Fieldset

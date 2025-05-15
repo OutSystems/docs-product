@@ -5,9 +5,22 @@ guid: a864addf-9175-49f9-905e-e90013c7d238
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=184:0
+tags: ui design, screen templates, user interaction, widgets, ui flows
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - create-screen-scratch
+  - screen-template
 ---
 
-# Screen
+# Screens
 
 A Screen is a user interface (UI) element that contains other UI elements for users to interact. An empty Screen contains a basic layout for you to add widgets. A Screen based on a Screen Template has predefined content that works as a demo.
 

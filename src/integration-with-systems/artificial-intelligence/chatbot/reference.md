@@ -1,11 +1,20 @@
 ---
 summary: Explore the OutSystems 11 (O11) chatbot demo app and configuration details for integrating with Azure, available on Forge with complete setup instructions.
-tags:
+tags: azure integration, chatbots, forge components, outsystems forge, chatbot configuration
 locale: en-us
 guid: 1368591d-1ec5-40e1-b9a1-60064fa6726b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A17&mode=design&t=FkbdYRavup74pIRn-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - remember
 ---
 
 # Reference

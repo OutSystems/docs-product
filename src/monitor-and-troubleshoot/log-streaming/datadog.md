@@ -1,11 +1,21 @@
 ---
 summary: Learn how to stream logs from OutSystems 11 (O11) to Datadog by setting up the OpenTelemetry Collector and configuring the log streaming service.
-tags: 
+tags: log management, application performance monitoring, opentelemetry, api integration, cloud infrastructure
 locale: en-us
 guid: 2812b9bc-ca11-436f-ac4e-2fc596b9dd61
 app_type: traditional web apps, mobile apps, reactive web apps
-figma: 
+figma:
 platform-version: o11
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - tech leads
+outsystems-tools:
+  - platform server
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Stream logs to Datadog
@@ -14,12 +24,15 @@ This article explains how you can set up log streaming from OutSystems applicati
 
 ## Prerequisites
 
-* Enabled [log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md).
+Before streaming logs to Datadog, ensure you have: 
 
-* Installed Platform Server version 11.23.1 or higher.
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
 
-* Installed LifeTime version 11.19.0 or higher.
+* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
 
+* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
+
+* Have subscription to log streaming. Contact your Account Manager for provisioning.
 
 ## Set up log streaming
 

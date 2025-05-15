@@ -1,11 +1,18 @@
 ---
 summary: This article provides a detailed guide on publishing your mobile Android application developed with OutSystems 11 (O11) to the Google Play Store.
-tags: runtime-mobile; support-mobile
+tags: android app publishing, google play store, pre-requirements for android app, release build, developer account
 locale: en-us
 guid: 49613761-0f66-4d87-b41a-bf600081e654
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=310:17
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Publish Your Mobile Android Application to the Google Play Store

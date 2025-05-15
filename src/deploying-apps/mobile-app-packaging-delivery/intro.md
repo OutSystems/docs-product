@@ -1,11 +1,19 @@
 ---
 summary: Learn how OutSystems 11 (O11) supports mobile app packaging and delivery through native builds and progressive web app (PWA) distribution.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-overview
+tags: mobile app distribution, native mobile builds, progressive web apps, ios deployment, android deployment
 locale: en-us
 guid: b6da547f-4ef6-4bd3-bffc-365d5630da64
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - app-distribution
 ---
 
 # Mobile apps packaging and delivery

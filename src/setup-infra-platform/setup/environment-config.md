@@ -1,11 +1,21 @@
 ---
 summary: Learn how to configure your OutSystems 11 (O11) environment, including setting the hostname, purpose, and debug mode in the Service Center console.
-tags: support-Installation_Configuration
+tags: installation, configuration, service center, environment setup, platform server
 locale: en-us
 guid: 34e53ab0-1ab2-429a-81c0-dd29cf99a549
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2635%3A727&mode=design&t=PPL7U8XyNSIpuC5w-1
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+  - infrastructure managers
+outsystems-tools:
+  - service center
+  - platform server
+coverage-type:
+  - understand
 ---
 
 # Configure your OutSystems environment
@@ -60,7 +70,7 @@ Management (LifeTime)
 
 :   This is where LifeTime, the infrastructure management console, lives. An environment with this purpose requires stability, and that’s why they also behave similarly to environments with Production purpose, with no optimizations being done.
 
-The **Purpose** you can configure for the environment is subject to the environment's license.
+The **Purpose** you can configure for the environment is subject to the environment's license. A license with the Development type only allows Development and Non-Production purposes.
 
 #### Feature availability for different Purposes
 
@@ -138,6 +148,13 @@ The **Purpose** you can configure for the environment is subject to the environm
 <td style="align:center;background-color:#dddddd;">No</td>
 <td style="align:center;background-color:#dddddd;">No</td>
 <td style="align:center;background-color:#dddddd;">No</td>
+</tr>
+<tr>
+<td>Debug</td>
+<td style="align:center;background-color:#2ecc71;">Yes</td>
+<td style="align:center;background-color:#2ecc71;">Yes</td>
+<td style="align:center;background-color:#2ecc71;">Yes</td>
+<td style="align:center;background-color:#2ecc71;">Yes</td>
 </tr>
 </tbody>
 </table>

@@ -5,11 +5,23 @@ guid: 34809e50-82d5-4e93-a02e-a3bab8811b5d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: configuration, deployment, outsystems platform, server settings, application deployment
+audience:
+  - platform administrators
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service center
+  - platform server
+coverage-type:
+  - remember
 ---
 
-# Controller Tab
+# Controller tab
 
 In the **Controller** tab you define how front-end servers and the deployment controller server communicate.
+
+![Screenshot of the Controller tab in the Configuration Tool](images/controller-tab-ct.png "Controller tab")
 
 Configuration | Description  | Default value
 --------------|--------------|---------------

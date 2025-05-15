@@ -1,11 +1,21 @@
 ---
-tags:
+tags: saas, platform security, data communication, lifetime plugin, environment monitoring
 summary: OutSystems 11 (O11) introduces AI Mentor Studio, a SaaS and plugin system enhancing data communication and security for OutSystems users.
 locale: en-us
 guid: f6f9f871-5f0c-4991-a47e-91fa20033627
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:592
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - lifetime
+  - ai mentor studio
+coverage-type:
+  - understand
+  - remember
 ---
 
 # How does AI Mentor Studio work

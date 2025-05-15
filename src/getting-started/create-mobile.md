@@ -1,11 +1,24 @@
 ---
 summary: Learn to build and test a mobile app with OutSystems 11 (O11) by importing Excel data into a database.
-tags: runtime-mobile; support-Mobile_Apps; support-Mobile_Apps-overview
+tags: data import, excel integration, database operations, mobile app development, testing mobile apps
 locale: en-us
 guid: 0ee5a8f6-0c94-4316-818f-49cc25f92283
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=67:19
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
+topic:
+  - publish-an-app
+  - test-share-app-users
+  - add-widget-ui-pattern
 ---
 
 # Create Your First Mobile App
@@ -115,7 +128,7 @@ This links the title of the tasks to a newly created screen. We will use this ne
 
 Now we will define the logic that runs when the end users press the Save button:
 
-1. Double-click an empty area of the **Save** button to define the logic associated with the button. This will create a new screen action named **SaveOnClick**.
+1. Double-click the **Save** button, ensure you click outside of the button text area, to define the logic associated with the button. This creates a new screen action named **SaveOnClick**.
 
 1. In the Logic tab create a server action named **TaskCreateOrUpdate**.
 

@@ -1,11 +1,21 @@
 ---
 summary: Explore app customization options in OutSystems 11 (O11) using the Theme Editor for style adjustments in Service Studio.
-tags: support-application_development; support-Front_end_Development
+tags: ui customization, style guide, design systems, color schemes, branding
 locale: en-us
 guid: 5ee100a0-6f04-4289-8f48-5ceff38331e7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:119
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - customize-app-styles
 ---
 
 # Customize the look of your app with Theme Editor
@@ -82,7 +92,7 @@ Background color gradient
 :   Change the type of gradient applied to the color of the Login Screen background. This gradient doesn't apply to a background image.
 
 Background image
-:   Select an image to use as the background of the Login Screen. If the background image has transparent areas
+:   Select an image to use as the background of the Login Screen. If the background image has transparent areas, those areas appear with the selected background color.
 
 ## Resetting your Theme Editor customization
 

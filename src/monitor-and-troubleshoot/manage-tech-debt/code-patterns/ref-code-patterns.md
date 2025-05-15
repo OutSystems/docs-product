@@ -5,6 +5,20 @@ guid: a7187cf7-6f1d-4f7c-8141-03f856639f08
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: architecture dashboard, ai mentor studio, code analysis, module classification, best practices
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - ai mentor studio
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - unblock
+topic:
+  - validate-app-architecture
 ---
 
 # Code Analysis Patterns
@@ -381,6 +395,12 @@ Ensure that the default timeout has a short time defined (no more than 10 second
 
 ### Inline JavaScript
 
+<div class="info" markdown="1">
+
+Applies to **Traditional Web** apps only.
+
+</div>
+
 Inline JavaScript defined in an unescaped Expression.
 
 **Impact**  
@@ -706,6 +726,12 @@ Otherwise, ensure that all data sent from the app to the server is re-validated 
 
 ### SQL injection
 
+<div class="info" markdown="1">
+
+Applies to **Traditional Web** apps only.
+
+</div>
+
 Avoid enabling the Expand Inline property of a SQL Query Parameter since it could make your application vulnerable to SQL injection.
 
 **Impact**  
@@ -738,6 +764,30 @@ If you must enable Expand Inline, take the following recommendations into accoun
 ``values = EncodeSql(name1 + "","" + name2 + "","" + name).``
 
     This approach will not protect you from SQL injection. Instead, use the ``BuildSafe_InClauseIntegerList() and BuildSafe_InClauseTextList()`` functions to build ``""WHERE column IN (@values)""`` clauses.
+
+### Vulnerable SQL Injection
+
+<div class="info" markdown="1">
+
+Applies to **Reactive Web** and **Mobile** apps only.
+
+</div>
+
+SQL query parameters with expand inline consume unsafe inputs from the client side or external modules, making your app or module vulnerable to SQL injection.
+
+**Impact**  
+
+Enabling the expand inline property of a SQL query parameter can make your app vulnerable to SQL injection.
+
+SQL queries contain parameters for which you can define pre-defined value types. If you turn the expand inline property of a query parameter on, its value isn't handled as a SQL parameter and instead included in the SQL statement with no evaluation and turned into a literal. This allows you to use the query parameter to insert SQL fragments dynamically but also allows end-users to exploit this fact if you don’t take precautions.
+
+End-users can exploit exposed SQL parameters by interfering with a client variable, input or parameter in an exposed public action. Check the new Data Flow explanation in the findings tree view details to see this source input highlighted.
+
+**How to fix**  
+
+SQL parameters are used for every query parameter that has the expand inline property turned off, which is the default value to protect you against SQL injection attacks. Avoid turning it on entirely.
+
+If you can't turn the inline property off, apply sanitization procedures to avoid vulnerability to SQL injection attacks. Ensure all steps are applied safely on the server side and within your module control scope. Learn more about it on the [SQL Injection Warning ](../../../ref/errors-and-warnings/warnings/sql-injection-warning.md) documentation.
 
 ### Visible disabled Button
 

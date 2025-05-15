@@ -5,6 +5,18 @@ guid: 76cb90a0-8399-4aab-a5de-279278094c1e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: logging, database optimization, data management, error handling, performance tuning
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+  - tech leads
+  - data engineers
+outsystems-tools:
+  - service center
+coverage-type:
+  - understand
+  - remember
 ---
 
 # The log tables and views
@@ -64,7 +76,7 @@ Rotation means that:
 
 * Log writing automatically begins to happen in the tables from the new cycle. This part is made algorithmically in the Deployment Controller Service — no changes to the database happen for this purpose.
 
-* Old log tables are cleaned after their retention period passes, preparing them for later use. For self-managed environments, you configure the retention period in the OutSystems Configuration Tool > Log tab > Advanced settings. For OutSystems Cloud, the retention period is 9 weeks and it cannot be changed.
+* Old log tables are cleaned after their retention period passes, preparing them for later use. For self-managed environments, you configure the retention period in the OutSystems Configuration Tool > Log tab > Advanced settings. For OutSystems Cloud, the retention period is 9 weeks and it cannot be changed. When Log separation is activated, this retention period is 7 weeks.
 
 <div class="info" markdown="1">
 

@@ -5,11 +5,23 @@ guid: 8a4e8da5-fdb0-4112-a474-c1781f35d12c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: network configuration, service center, ip configuration, security, deployment
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+  - infrastructure managers
+outsystems-tools:
+  - service center
+coverage-type:
+  - remember
 ---
 
-# Network Tab
+# Network tab
 
 The **Network** taballows you to clear the current internal network settings, and allows you to define the IP address the front-end server registers in the deployment controller service.
+
+![Screenshot of the Network tab in the Configuration Tool](images/network-tab-ct.png "Network tab")
 
 ## Internal Network section
 

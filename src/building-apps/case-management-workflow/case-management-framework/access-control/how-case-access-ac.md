@@ -1,11 +1,20 @@
 ---
-tags: Case Management; Case Management framework; Access control; CMf; AC;
+tags: access control, user permissions, server action, traditional web apps, case definition
 summary: Learn how to grant user or group access to a case instance in OutSystems 11 (O11) by configuring permissions and publishing changes.
 guid: 7409d714-7beb-4222-acc6-9310bba1477a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - backend developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # How to grant access to a case instance to a user

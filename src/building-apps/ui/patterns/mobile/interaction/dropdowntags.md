@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, dropdown components, widget configuration, ui development, dependency management
 summary: Explore the Dropdown Tags UI Pattern in OutSystems 11 (O11) for enhanced dropdown search functionality in mobile and reactive web apps.
 locale: en-us
 guid: 6b79cc3c-d89b-40df-ba5f-c04038639d4b
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:0
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Dropdown Tags
@@ -24,7 +32,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 </div>
 
-The Dropdown Tags UI Pattern offers multiple choice options to the user when when using a dropdown search.
+The Dropdown Tags UI Pattern offers multiple choice options to the user when using a dropdown search.
 
 **How to use the Dropdown Tags UI Pattern**
 
@@ -62,11 +70,11 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
     ![GetEmployees aggregate automatically created after selecting a database entity for Dropdown Tags](images/dropdowntags-aggregate-ss.png "Automatically Created Aggregate for Dropdown Tags")
 
-1. Return to your screen by double-clicking the screen name, select the **Dropdown Tags** widget, and on the **Properties** tab, set the mandatory properties (**ItemList**, **Value**, **Text**).
+1. Return to your screen by double-clicking the screen name, select the **Dropdown Tags** widget, and on the **Properties** tab, set the mandatory properties (**OptionsList**, **Value**, **Label**).
 
-    ![Setting the ItemList, Value, and Text mandatory properties for the Dropdown Tags widget](images/dropdowntags-mandprops-ss.png "Setting Mandatory Properties for Dropdown Tags")
+    ![Setting the OptionsList, Value, and Label mandatory properties for the Dropdown Tags widget](images/dropdowntags-mandprops-ss.png "Setting Mandatory Properties for Dropdown Tags")
 
-1. Staying on the **Properties** tab, from the **Handler** dropdown, select **New Client Action**.
+1. From the **Handler** dropdown of the OnChanged event, select **New Client Action**.
 
     ![Creating a new client action for the Dropdown Tags widget from the properties tab](images/dropdowntags-handler-ss.png "Creating New Client Action for Dropdown Tags")
 
@@ -81,11 +89,11 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
     1. Click **Close**. 
     
-        This displays the number of selected items selected.
+        This displays the number of selected items.
 
         ![Adding logic to display the number of selected items in the Dropdown Tags client action](images/dropdowntags-message-ss.png "Adding Logic to Client Action in Dropdown Tags")
 
-1. You can configure the Dropdown Tags by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
+1. To configure the Dropdown Tags, select the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 
     ![Setting optional properties for the Dropdown Tags widget in the properties tab](images/dropdowntags-properties-ss.png "Configuring Optional Properties for Dropdown Tags")
 
@@ -98,14 +106,14 @@ After following these steps and publishing the module, you can test the pattern 
 |Property|Description|
 |---|---|
 |OptionsList (DropdownOption List): Mandatory| Defines the list of options to show in dropdown.|
-|OptionsList.Value (Text): Mandatory|Defines the items's value.|
-|OptionsList.Label (Text): Mandatory|Defines the items's text.|
+|OptionsList.Value (Text): Mandatory|Defines the item's value, which specifies the value submitted from the dropdown when you select an option. Examples of what you can define as the item's value are the item's ID, the item's index, etc.|
+|OptionsList.Label (Text): Mandatory|Defines the item's label, which is the text displayed on the dropdown.|
 |OptionsList.ImageUrlOrIconClass (Text): Optional|Defines an image URL or a CSS class. If you define a an image URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
 |OptionsList.GroupName (Text): Optional|Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
 |OptionsList.Description (Text): Optional|Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|
 |StartingSelection (DropdownOption List): Optional|Defines the list of options that appears pre-selected in the Dropdown Tags.<br/>The property is static. It is only valid for the initial Dropdown Tags state and is not updated dynamically.|
-|StartingSelection.Value (Text): Mandatory|Defines the items's value.|
-|StartingSelection.Label (Text): Mandatory|Defines the items's text.|
+|StartingSelection.Value (Text): Mandatory|Defines the item's value.|
+|StartingSelection.Label (Text): Mandatory|Defines the item's text.|
 |StartingSelection.ImageUrlOrIconClass (Text): Optional|Defines an image URL or a CSS class. If you define a an image URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
 |StartingSelection.GroupName (Text): Optional|Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
 |StartingSelection.Description (Text): Optional| Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: outsystems ui, ui customization, web development, video control customization, ui patterns
 summary: Explore advanced customization of video controls in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: cd532674-6556-4684-bdd5-fcff4e6c422e
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:625
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Video Reference
@@ -48,4 +56,4 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the interaction with custom Play and Pause buttons in the Video UI Pattern](images/video-gif-1.gif "Video Pattern Interaction Demonstration")
+    <iframe src="https://player.vimeo.com/video/1002739137" width="750" height="469" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with custom Play and Pause buttons in the Video UI Pattern.</iframe>

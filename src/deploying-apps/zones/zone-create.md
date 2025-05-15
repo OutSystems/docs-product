@@ -5,6 +5,14 @@ guid: bcb24adb-f56c-4be3-afcc-6305fe0f0e4e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:764
+tags: deployment management, configuration, on-premises installations, environment setup, service center
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Create a New Deployment Zone

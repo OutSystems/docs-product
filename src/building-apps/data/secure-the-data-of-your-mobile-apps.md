@@ -1,11 +1,19 @@
 ---
 summary: Explore best practices for securing mobile app data with OutSystems 11 (O11), focusing on data storage and encryption methods.
-tags: runtime-mobile; support-Security; support-Security-featured
+tags: security best practices, data encryption, https, local storage, keystore
 locale: en-us
 guid: 5b81d4aa-2da0-4e88-9d14-c17a753a79fa
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
+topic:
+  - data-encryption
 ---
 
 # Secure the Data of your Mobile Apps

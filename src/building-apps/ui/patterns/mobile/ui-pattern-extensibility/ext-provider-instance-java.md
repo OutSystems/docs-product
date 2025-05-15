@@ -1,12 +1,21 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ide usage, reactive web apps, tutorials for beginners, event handling, javascript interop
 summary: Explore how to access and manipulate provider instances using the Initialized event in OutSystems 11 (O11).
 locale: en-us
 guid: CD21A754-068E-4DA7-9B74-A5122B1AEC7D
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4647%3A10005&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
+
 # Provider instance and JavaScript
 
 ## Initialized event

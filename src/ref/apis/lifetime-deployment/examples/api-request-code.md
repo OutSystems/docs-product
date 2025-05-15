@@ -4,7 +4,17 @@ locale: en-us
 guid: c0f22c7d-ac63-4704-b50f-97a3c697da44
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+tags: api integration, static code analysis, security and compliance, source code retrieval, continuous deployment
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - platform server
+  - lifetime
+coverage-type:
+  - remember
 ---
 
 # Download source code
@@ -20,19 +30,17 @@ With this capability, you can extend OutSystems's built-in security capabilities
 
 <div class = "info" markdown="1">
 
-The code retrieved in the API is almost same as the one running on the server. For security and licensing reasons, some files with configurations, secrets and proprietary code are not shared by the API.
+Take into account the following notes:
 
-</div>
+* The code retrieved in the API is almost same as the one running on the server. For security and licensing reasons, some files with configurations, secrets and proprietary code are not shared by the API.
 
-<div class = "info" markdown="1">
+* The code in the package doesn't compile and is not executable.
 
-The code in the package does not compile and is not executable.
+* Extension code is not available through the API.
 
-</div>
+* There is a 150 MB size limit for the generated ZIP file. If an application's size exceeds this limit, it's possible to download the source code for each module of the application individually.
 
-<div class = "info" markdown="1">
-
-Extension code is not available through the API.
+* For mobile applications, it's not possible to download only the build source code or only the module source code. They are bundled together in the generated ZIP file.
 
 </div>
 
@@ -40,8 +48,8 @@ Extension code is not available through the API.
 
 To download the source code of an app or a module, ensure that the environment from where you want to get the source code has:
 
-* Platform Server version 11.27.0 or higher
-* LifeTime version 11.21.1 or higher
+* Platform Server version 11.28.0 or higher
+* LifeTime version 11.22.0 or higher
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
     * Service Account needs Open and Debug on the environment
 

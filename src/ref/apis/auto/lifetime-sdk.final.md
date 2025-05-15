@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) LifeTime SDK enables the development of custom plug-ins to extend LifeTime functionality using provided APIs and layout components.
-tags: support-application_development; support-Integrations_Extensions
+tags: plugin development, api usage, application lifecycle management, outsystems sdk, web blocks
 locale: en-us
 guid: 03fe77b6-1b3d-4114-84da-0bb10e3ead6c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - platform administrators
+  - backend developers
+outsystems-tools:
+  - lifetime
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # LifeTime SDK

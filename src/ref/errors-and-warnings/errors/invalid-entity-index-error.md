@@ -5,6 +5,15 @@ guid: 072552a6-e5f9-42cf-9335-aa58681bea15
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error resolution, database management, entity modeling, index configuration, data types
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Entity Index Error

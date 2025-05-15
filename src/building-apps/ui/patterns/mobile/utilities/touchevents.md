@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ui patterns, mobile development, web development, touch interaction, user interface design
 summary: Learn how to enable and customize touch events in mobile and reactive web apps using the Touch Events UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 543a0aea-546e-48ce-92e6-dcc08e9fd2be
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:10
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Touch Events
@@ -55,13 +63,13 @@ After following these steps and publishing the module, you can test the pattern 
   
 **Result**
 
-![Animated GIF demonstrating the end result of using Touch Events to hide a header during scroll](images/TouchEvents_EndResult.gif "Touch Events End Result")
+<iframe src="https://player.vimeo.com/video/991471309" width="492" height="750" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the end result of using Touch Events to hide a header during scroll.</iframe>
 
 ## Properties
 
 |**Property** | **Description** |
 |---|---| 
-| WidgetId | This is the element that responds to the touch you configure.| 
+| WidgetId | This is the element that responds to the touch you configure.|
 
 ## Compatibility with other patterns
 
@@ -72,3 +80,4 @@ There might be conflicts with any pattern with touch events (unless the code is 
 The following sample uses the Touch Events pattern:
 
 ![Sample image of a mobile or reactive web app using the Touch Events pattern](images/TouchEvents-Sample-1.png "Touch Events Sample")
+

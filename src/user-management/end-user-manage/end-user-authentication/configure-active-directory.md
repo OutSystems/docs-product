@@ -5,13 +5,26 @@ guid: b4a590a6-d9e2-4f0a-80c4-d3ac9f3bd14b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:62
+tags: active directory, authentication, security, configuration, it administration
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+  - infrastructure managers
+outsystems-tools:
+  - service studio
+  - users application
+coverage-type:
+  - apply
+topic:
+  - external-auth-mechanisms
 ---
 
 # Configure Active Directory authentication
 
 <div class="info" markdown="1">
 
-Only available in OutSystems self-managed installations. In the OutSystems Cloud you can use [LDAP](configure-ldap.md), [Azure AD](configure-azuread.md), [Okta](configure-okta.md), or [SAML 2.0](configure-saml.md).
+Only available in OutSystems self-managed installations. In the OutSystems Cloud you can use [LDAP](configure-ldap.md), [Microsoft Entra](configure-azuread.md), [Okta](configure-okta.md), or [SAML 2.0](configure-saml.md).
 
 </div>
 
@@ -52,10 +65,8 @@ To use Active Directory domain authentication:
 
     </div>
 
-1. To enable Integrated Windows Authentication for all applications, select **Windows Integrated Authentication** (only available in Traditional Web applications).
-
-    Alternatively, you can enable Integrated Windows Authentication for a just [a selected number of elements](integrated-authentication.md) in Service Studio (for example, just for some web screens, web flows or web services).
-    
     <div class="info" markdown="1">
-    Security best practices strongly advise that you avoid using the Windows Integrated Authentication when a workstation is shared between several users.
+
+    Security best practices strongly advise against using the Windows Integrated Authentication when a workstation is shared between several users.
+
     </div>

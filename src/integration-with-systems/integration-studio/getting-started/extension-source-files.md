@@ -3,9 +3,22 @@ locale: en-us
 guid: b45e7737-81b3-441d-9baf-641f310c262d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3734-5&t=5Xy7sf3amevfps10-1
 summary: Learn how OutSystems 11 (O11) automates the generation of extension source files for streamlined development in Integration Studio.
+tags: ide usage, reactive web apps, tutorials for beginners, .net development, extension customization
+audience:
+  - backend developers
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - understand
+topic:
+  - legacy-systems-integration
+  - custom-code-integration
 ---
+
 # Extension Source Files
 
 Once the extension is [created](<../extension-life-cycle/extension-create.md>), Integration Studio automatically generates, according to the [definition](<../extension-life-cycle/extension-define.md>) of the extension elements, the necessary template files for the development bootstrap of that extension. Once these templates are generated, the source files listed below are added as resources of your extension and you can start coding the behavior of your extension actions.
@@ -28,7 +41,7 @@ By default, your extension has the following source files, stored under the `Sou
 
     * Actions are implemented in the  `<ExtensionName>.cs` file, which contains a .NET method for each action defined by your extension: the method name is `Mss<ActionName>` and parameters names are `ss<ParameterName>`.
 
-        ![Warning icon indicating important information about .NET method signatures in the extension source files](images/warning.gif "Warning Icon") This file contains the signature of the methods that correspond to the actions exposed by your extension. You must not change these signatures. Any action, either [defined](<../managing-extensions/action-add.md>) in Integration Studio or [imported](<../managing-extensions/net-assembly-import-action.md>) from an assembly, must be defined in this file.
+        ![Warning icon indicating important information about .NET method signatures in the extension source files](images/warning.png "Warning Icon") This file contains the signature of the methods that correspond to the actions exposed by your extension. You must not change these signatures. Any action, either [defined](<../managing-extensions/action-add.md>) in Integration Studio or [imported](<../managing-extensions/net-assembly-import-action.md>) from an assembly, must be defined in this file.
 
         Actions are declared in the `Interface.cs` file in the same way as explained above for `<ExtensionName>.cs` file.
 
@@ -55,3 +68,4 @@ The extension source files are added as resources of the extension with the foll
 * **Deploy Action**: For the files stored under the `Binaries` folder, this property has the value `Copy to Binaries directory`. For the rest of the files, this property has the value `Ignore`.
 
 For more information about the Deploy Action property, see [Resource Properties](<../../../ref/integration-studio/element-property/resource.md>).
+

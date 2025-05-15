@@ -1,11 +1,18 @@
 ---
 summary: Explore how OutSystems 11 (O11) facilitates collaborative deployment planning between development and operations teams.
-tags: support-Application_Lifecycle-featured
+tags: deployment planning, enterprise security policies, permission model, application lifecycle management, operations collaboration
 locale: en-us
 guid: 89d88d9f-f70a-491a-9265-e02c5b93b85a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:60
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Plan a Deployment for the Operations Team

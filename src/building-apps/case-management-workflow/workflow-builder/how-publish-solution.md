@@ -1,11 +1,19 @@
 ---
-tags: 
+tags: solution deployment, service center, deployment process, outsystems service studio, outsystems deployment
 summary: Explore how to publish a solution in an environment using OutSystems 11 (O11).
 guid: 375789e9-8e68-42e9-abf8-731bc1fdc1c1
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service center
+  - case management framework
+coverage-type:
+  - apply
 ---
 
 # How to publish a Solution in an Environment

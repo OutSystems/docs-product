@@ -1,11 +1,21 @@
 ---
 summary: Explore common OIDC configuration and troubleshooting issues in OutSystems 11 (O11) for effective identity management integration.
-tags:
+tags: oidc, identity management, configuration, troubleshooting, single sign-on
 locale: en-us
 guid: 6AE899A4-F0F6-4977-AE00-2DBEFD989E69
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - service studio
+  - service center
+  - lifetime
+coverage-type:
+  - unblock
 ---
 
 # Troubleshooting

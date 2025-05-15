@@ -5,6 +5,17 @@ guid: 17ffefde-81fc-4aff-af1e-b99a12347194
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:104
+tags: ui design, customization, visual properties, widget styling, style guide
+audience:
+  - ui designers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - customize-app-styles
 ---
 
 # Change the look of widgets with Styles Editor
@@ -57,7 +68,7 @@ How to change the style of a widget.
 1. Adjust outer and inner spacing in **Layout/Margin** and **Layout/Padding**.
 1. Add borders in the **Borders** section and adjust the roundness.
 
-![Animated GIF demonstrating how to change the style of a widget using the Styles Editor](images/styles-editor-animation.gif "Styles Editor Animation")
+<iframe src="https://player.vimeo.com/video/973090389" width="750" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing how to change the style of a widget using the Styles Editor.</iframe>
 
 ### Save a style
 

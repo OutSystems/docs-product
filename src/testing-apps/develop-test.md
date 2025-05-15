@@ -1,11 +1,21 @@
 ---
 summary: Explore best practices for developing testable applications with OutSystems 11 (O11), focusing on domain isolation, anti-patterns, and UI simulation.
-tags:
+tags: best practices, automated testing, architecture, domain-driven design, testability
 locale: en-us
 guid: a04eb23a-d3fe-4967-875b-02d15033b8cd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=286%3A18&mode=design&t=vStGeN187wwjAjiU-1
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - understand
+  - evaluate
 ---
 
 # Develop for Testability

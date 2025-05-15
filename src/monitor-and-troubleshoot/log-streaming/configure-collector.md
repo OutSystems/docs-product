@@ -1,27 +1,43 @@
 ---
 summary: Learn how to set up the OpenTelemetry Collector for APM tools with OutSystems 11 (O11) for enhanced application performance monitoring.
-tags:
+tags: opentelemetry, application performance monitoring, platform version 11, configuration, logging
 locale: en-us
 guid: ded295b9-7894-4192-a7df-9bf89f1eca25
 app_type: traditional web apps, mobile apps, reactive web apps
-figma: 
+figma:
 platform-version: o11
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - platform server
+  - lifetime
+coverage-type:
+  - apply
 ---
+
 # Set up the OpenTelemetry Collector
 
 This article explains how to set up the OpenTelemetry collector for Application Performance Monitoring (APM) tools that don't support native ingestion of OpenTelemetry data.
 
 ## Prerequisites
 
-* Enabled [Logs separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
+Before setting up the OpenTelemetry collector, ensure you have: 
 
-* Installed Platform Server version 11.23.1 or higher.
+* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
 
-* Installed LifeTime version 11.19.0 or higher.
+* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
 
-To receive logs in Datadog or Splunk, you must set up an OpenTelemetry Collector:
+* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
 
-1. Download the latest release of the OpenTelemetry Collector Contrib distribution, from [OpenTelemetry’s GitHub repository](https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.87.0).
+* Have subscription to log streaming. Contact your Account Manager for provisioning.
+
+## Set up OpenTelemetry collector
+
+To receive logs in Datadog, Splunk or Amazon S3, you must set up an OpenTelemetry Collector:
+
+1. Download the latest release of the OpenTelemetry Collector Contrib distribution, from [OpenTelemetry’s GitHub repository](https://github.com/open-telemetry/opentelemetry-collector-releases/releases).
 
 1. Install and deploy the OpenTelemetry Collector.
 

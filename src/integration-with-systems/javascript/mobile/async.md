@@ -1,11 +1,20 @@
 ---
 summary: Explore asynchronous JavaScript code handling in OutSystems 11 (O11) for efficient non-blocking operations in mobile and reactive web apps.
-tags: runtime-mobileandreactiveweb
+tags: asynchronous javascript, promises, api handling, javascript best practices, code optimization
 locale: en-us
 guid: 38ba49e3-f93e-45b2-9e51-83e8b52b353e
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:43
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Defining Asynchronous JavaScript Code

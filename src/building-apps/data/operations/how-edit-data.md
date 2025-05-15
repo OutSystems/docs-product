@@ -1,11 +1,22 @@
 ---
 summary: Explore how to manage entity data in OutSystems 11 (O11) using Service Studio, including adding, modifying, and deleting records.
-tags: 
+tags: entity management, data operations, database editing, service studio features, outsystems development
 locale: en-us
 guid: f83e9afb-de9b-4b5e-9564-24490bc762e5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=668:425
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - edit-data-service-studio
 ---
 
 # How to edit the data of an entity in Service Studio

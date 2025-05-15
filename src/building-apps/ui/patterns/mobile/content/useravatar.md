@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ide usage, reactive web apps, tutorials for beginners, ui components, uidesign
 summary: Learn how to display user initials or images in a circular badge using the User Avatar UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: ca179aae-31fe-4032-b523-167c3ba531e5
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:77
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # User Avatar
@@ -61,7 +69,7 @@ The following example demonstrates how you can display the initials of the regis
 
 1. Select the User Avatar widget, and on the **Properties** tab, from the **Name** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the following expression and click **DONE**.
+1. In the Expression Editor, enter the following expression and click **Close**.
 
     `GetUsers.List.Current.User.Name`
 

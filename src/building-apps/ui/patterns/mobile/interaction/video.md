@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, video embedding, ui patterns
 summary: Explore how to embed a native video player in your application using OutSystems 11 (O11).
 locale: en-us
 guid: 48653c19-7ef1-44ca-b625-226ca4af35d0
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1295:18325
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Video
@@ -18,13 +26,9 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Video UI pattern to embed a native video player into your application.
 
-<div class="info" markdown="1">
- 
-Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How to Add Video to Your Applications](https://success.outsystems.com/Documentation/Development_FAQs/How_to_Add_Video_to_Your_Applications) article. 
- 
-</div>
+**Note:** If you want to stream videos from YouTube, Vimeo, or others, refer to the [How to Add Video to Your Applications](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_add_video_to_your_applications/) article.
 
-**How to use the Video UI Pattern**
+## How to use the Video UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Video`.
 

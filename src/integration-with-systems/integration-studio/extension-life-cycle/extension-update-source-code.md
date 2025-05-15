@@ -5,7 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 summary: Learn how to synchronize and update extension source code in OutSystems 11 (O11) using Integration Studio's automated operations.
+tags: ide usage, extension development, source code management, outsystems, .net development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+coverage-type:
+  - apply
 ---
+
 # Update the Extension Source Code
 
 The Update Source Code operation synchronizes the source code you added in the .NET IDE with the definition of the extension elements. This operation involves the following steps:

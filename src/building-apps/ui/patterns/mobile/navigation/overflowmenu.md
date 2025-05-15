@@ -1,11 +1,19 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, database handling
 summary: Learn how to implement the Overflow Menu in OutSystems 11 (O11) to manage UI space constraints effectively.
 locale: en-us
 guid: 82d11a7a-6ee9-4f81-a7a6-36a8950f0de3
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4267:1290
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Overflow Menu

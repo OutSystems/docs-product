@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: css customization, web development, ui design, outsystems traditional web apps, css selectors
 summary: Explore navigation bar customization options in OutSystems 11 (O11) for traditional web apps, including CSS selectors and advanced use cases.
 locale: en-us
 guid: 7eec386c-a22e-4f3a-a6cd-2509360fadfc
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:527
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Navigation Bar Reference

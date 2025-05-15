@@ -5,6 +5,19 @@ guid: 7b9e403c-8006-43db-902d-21e239f1b25d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:64
+tags: ldap, active directory, authentication, security, cloud infrastructure
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - users application
+coverage-type:
+  - understand
+  - apply
+topic:
+  - external-auth-mechanisms
 ---
 
 # Configure LDAP Authentication

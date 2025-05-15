@@ -1,11 +1,21 @@
 ---
 summary: Explore how to log and manage debug information in action flows using OutSystems 11 (O11).
-tags: support-application_development; support-Application_Troubleshooting
+tags: debugging, action flow, logging, environment management, service center
 locale: en-us
 guid: 2ebf3be6-b46a-4276-94f6-af76e4b07ff0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Log Information in Action Flows

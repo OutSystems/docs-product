@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: responsive design, customization, ux/ui design, web development, front-end frameworks
 summary: Explore the responsive design and customization options of the Layout Side Menu in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 4d5d4869-2345-4646-a8b0-5c24c0f6a8cd
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:500
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Layout Side Menu Reference
@@ -30,7 +38,7 @@ This layout comes with a default responsive behavior. On tablets it remains the 
 
 The menu also adapts to mobile, hiding the navigation sidebar, which can be toggled by a hamburger icon.
 
-![Animated GIF demonstrating the toggle of the navigation sidebar in the Layout Side Menu on a mobile device](images/layout-sm-4-ss.gif "Layout Side Menu Mobile Navigation Toggle")
+<iframe src="https://player.vimeo.com/video/1002680199" width="344" height="750" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the toggle of the navigation sidebar in the Layout Side Menu on a mobile device.</iframe>
 
 ![Screenshot showing the Layout Side Menu's adaptation to mobile devices with a hidden navigation sidebar](images/layout-sm-8-ss.png "Layout Side Menu Mobile Adaptation")
 

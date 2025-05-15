@@ -3,12 +3,22 @@ locale: en-us
 guid: 7ece2478-a4fe-4f05-8f53-3053d04f30e8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3075-3&t=ngfUZsYain6dMjce-1
 summary: Explore the features of the 1-Click Publish window in OutSystems 11 (O11), facilitating error handling, progress tracking, and extension management.
+tags: error handling, progress tracking, extension management, ide features, deployment
+audience:
+  - full stack developers
+  - frontend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # 1-Click Publish Window
 
-The 1-Click Publish window ![Animated icon representing the 1-Click Publish feature](images/1-click-publish-icon.gif "1-Click Publish Icon") is launched when you invoke the [1-Click Publish](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-1-cp.md>).
+The 1-Click Publish window ![Animated icon representing the 1-Click Publish feature](images/1-click-publish-icon.png "1-Click Publish Icon") is launched when you invoke the [1-Click Publish](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-1-cp.md>).
 
 The areas and buttons available in the 1-Click Publish window are presented below.
 
@@ -25,7 +35,7 @@ Details
 Progress bar
 :   Presents five stage markers, one for each operation involved in the 1-Click Publish, with the one that is highlighted corresponding to the operation currently being executed.
 
-    ![Note icon next to the progress bar indicating additional information about the Verify process](images/note.gif "Progress Bar Note") The Verify includes three steps: [Verify the Extension Definition](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify-definition.md>), [Update the Extension Source Code](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-update-source-code.md>) and [Compile the Extension](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-compile.md>).
+    ![Note icon next to the progress bar indicating additional information about the Verify process](images/note-icon.png "Progress Bar Note") The Verify includes three steps: [Verify the Extension Definition](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify-definition.md>), [Update the Extension Source Code](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-update-source-code.md>) and [Compile the Extension](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-compile.md>).
 
 Verify Again
 :   Verifies your extension again. This button is available when the extension has errors and,therefore, you cannot proceed with the 1-Click Publish. When you press this button, the extension is validated again. For more details, see [Verify the Extension](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify.md>).

@@ -5,6 +5,15 @@ guid: 6af39380-3f07-4666-bd86-865b63ed4703
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sap integration, error handling, configuration, debugging, troubleshooting
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid SAP Connection Error

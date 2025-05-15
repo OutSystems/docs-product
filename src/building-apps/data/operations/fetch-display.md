@@ -1,11 +1,23 @@
 ---
 summary: Explore how to fetch and display database data using Aggregates in OutSystems 11 (O11).
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, database operations, data display
 locale: en-us
 guid: c1c2a735-0768-4e33-8e42-73329e7944ae
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:24
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - aggregates
+  - bind-data-to-a-ui-element
 ---
 
 # Fetch and display data from the database in OutSystems

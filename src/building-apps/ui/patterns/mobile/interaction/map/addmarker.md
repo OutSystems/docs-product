@@ -1,11 +1,20 @@
 ---
-tags: runtime-mobileandreactiveweb;  
+tags: ide usage, reactive web apps, tutorials for beginners, maps integration, ui components
 summary: Learn how to add a marker on a map click in OutSystems 11 (O11) using the OutSystems Map component for Mobile and Reactive Web Apps.
 locale: en-us
 guid: 64103ccc-9190-4483-8145-3f063dd1b823
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - apply
 ---
 
 # How to add a marker on map click 

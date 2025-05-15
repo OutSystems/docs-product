@@ -1,11 +1,19 @@
 ---
-tags: 
+tags: proxy configuration, saas, lifetime, ai mentor studio, configuration procedure
 summary: Explore how to configure a forward proxy for AI Mentor Studio in OutSystems 11 (O11).
 locale: en-us
 guid: 06af3d66-f6c3-4827-aa17-36b1124f321b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=929%3A747&mode=design&t=rzWSTBJIapfhmERp-1
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - ai mentor studio
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # How to use a proxy to connect to AI Mentor Studio

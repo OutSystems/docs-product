@@ -5,6 +5,16 @@ guid: 7679b3a4-2a80-4ddf-9e85-e470c8af8428
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:0
+tags: user feedback, application lifecycle management, quality assurance, environment configuration, user suggestions
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # Enable user feedback for apps

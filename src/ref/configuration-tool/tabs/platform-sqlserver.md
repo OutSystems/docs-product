@@ -5,6 +5,16 @@ guid: 50bd26cf-d24f-4027-b172-46a02e30c0d6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database configuration, sql server, azure sql, application deployment, database management
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+  - tech leads
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Platform Tab in Azure SQL Database / SQL Server database
@@ -64,7 +74,7 @@ For advanced settings, click on the **Advanced Settings** link.
 </tr>
 </tbody>
 </table>
-  
+
 ## Administrator section
 
 The Administrator section allows you to configure the database user that manages the platform. This user owns the OutSystems metamodel tables, views, and indexes.

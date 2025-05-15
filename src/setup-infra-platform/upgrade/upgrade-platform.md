@@ -1,11 +1,20 @@
 ---
 summary: Explore the process of upgrading to OutSystems 11 (O11) with a focus on Platform Server enhancements and independent LifeTime upgrades.
-tags: support-devOps; support-upgrade
 locale: en-us
 guid: 617e2ef6-9fca-4cf0-9840-a0277670083e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=1561:962
+tags: platform server, upgrade process, lifetime, application deployment, release cycles
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - lifetime
+  - platform server
+coverage-type:
+  - apply
 ---
 
 # Upgrade OutSystems platform
@@ -160,15 +169,15 @@ In the OutSystems Cloud, the process of upgrading the Platform Server is handled
     
     1. When upgrading the **Development environment** of your infrastructure to **Platform Server 11.11.3 or earlier**, OutSystems also installs the latest version of the following components:
 
-        * [OutSystems UI](https://www.outsystems.com/forge/component-overview/1385/silk-ui-mobile)
-        * [OutSystems UI Web](https://www.outsystems.com/forge/4143/)
-        * [OutSystems Charts](https://www.outsystems.com/forge/4141/)
-        * [OutSystems Charts Web](https://www.outsystems.com/forge/4142/)
-        * [OutSystems Maps](https://www.outsystems.com/forge/component-overview/9909/)
-        * [OutSystems UI Templates Mobile](https://www.outsystems.com/forge/4148/)
-        * [OutSystems UI Templates Reactive](https://www.outsystems.com/forge/6335/)
-        * [OutSystems UI Web Screen Templates](https://www.outsystems.com/forge/4146/)
-        * [OutSystems Sample Data](https://www.outsystems.com/forge/4145/)
+        * [OutSystems UI](https://www.outsystems.com/forge/component-overview/1385/outsystems-ui-o11)
+        * [OutSystems UI Web](https://www.outsystems.com/forge/component-overview/4143/outsystems-ui-web-o11)
+        * [OutSystems Charts](https://www.outsystems.com/forge/component-overview/4141/outsystems-charts-o11)
+        * [OutSystems Charts Web](https://www.outsystems.com/forge/component-overview/4142/outsystems-charts-web-o11)
+        * [OutSystems Maps](https://www.outsystems.com/forge/component-overview/9909/outsystems-maps-o11)
+        * [OutSystems Templates Mobile](https://www.outsystems.com/forge/component-overview/4148/outsystems-templates-mobile-o11)
+        * [OutSystems Templates Reactive](https://www.outsystems.com/forge/component-overview/6335/outsystems-templates-reactive-o11)
+        * [OutSystems Screen Templates Traditional](https://www.outsystems.com/forge/component-overview/4146/outsystems-screen-templates-traditional-o11)
+        * [OutSystems Sample Data](https://www.outsystems.com/forge/component-overview/4145/outsystems-sample-data-o11)
     
     1. When upgrading to **Platform Server 11.12.0 or later**, you're reponsible for updating those components.
 
@@ -253,7 +262,7 @@ Having the Platform Server upgraded in the environment, consider the following s
 
 * On the **Development environment**, the fastest way to upgrade all your applications is by [creating a Solution with all modules](https://success.outsystems.com/documentation/how_to_guides/devops/creating_and_using_an_all_components_solution/) and publish the "Current Running Version". If you get any errors publishing the solution, use the appropriate development tool to open the correspondent module and fix the problems. In the end, you can publish the whole solution again to make sure all issues and dependencies are properly resolved.
 
-* For all **non-development environments** (for example, Testing, Production, etc.), it’s recommended to stage the application modules from a previously upgraded environment. Use the LifeTime management console to stage applications, when the lifecycle of the applications is perfectly aligned with the upgrade.
+* For all **non-development environments** (for example, Testing, Production, and so on), it's recommended to stage the application modules from a previously upgraded environment. Use the LifeTime management console to stage applications, when the lifecycle of the applications is perfectly aligned with the upgrade.
 
     <div class="info" markdown="1">
 
@@ -271,8 +280,6 @@ After publishing your applications in the new version, create and run tests to e
 
 ## Doing maintenance while upgrading environments { #maintenance }
 
-While upgrading, if you need to do some bug fixing in an application that's running on an environment that hasn't been upgraded, you'll need to do it on that environment. It won't be possible to go through the usual development-production pipeline, because you can't stage applications between environments in different versions.
-
-The solution is to make the fix directly in the environment that hasn't yet been upgraded.
+While upgrading, if you need to fix a bug in an application running on an environment that hasn't been upgraded, you'll need to address it in that environment. Deployments between environments on different major platform versions (for example, O10 to O11) are not possible and must be moved manually. However, deployments between environments on different platform versions within the same major version are supported as long as the target environment includes all the features used by the application in the source environment.
 
 As an example, imagine that you already upgraded Development and Test environments. There are still Pre-Production and Production environments to upgrade. You have to do a critical fix on an application in Production. In this case, use the development tools in Pre-Production to do the fix, publish, and test. Then, move the application to Production. Don't forget to backport the fix to the other environments.

@@ -1,11 +1,22 @@
 ---
 summary: Explore how to manage end user roles in OutSystems 11 (O11) through granting and revoking access in the Users application.
-tags: support-Mobile_Apps; support-webapps
+tags: user management, application security, role-based access control, access provisioning
 locale: en-us
 guid: 0aa8f19f-5429-4b1d-bd3e-48575eb4ffc7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - assign-roles
 ---
 
 # Grant and Revoke End User Roles

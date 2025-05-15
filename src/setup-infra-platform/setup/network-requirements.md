@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) network requirements include specific open ports, protocols, and configurations for optimal application accessibility and performance.
-tags: support-installation
+tags: network configuration, security, deployment, installation, performance optimization
 locale: en-us
 guid: 6238ecb9-6eaf-4406-a421-f4b01322052d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - frontend developers
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - configuration tool
+coverage-type:
+  - understand
+topic:
+  - download-and-set-up
 ---
 
 # OutSystems network requirements
@@ -42,14 +53,14 @@ The table below details the ports that need to be accessible in each server of a
 
 <div class="info" markdown="1">
 
-**Security best practice:** TCP ports 12000, 12001, and 12002 shouldn't be open to the internet.
+**Security best practice:** TCP ports 12000, 12001, 12002, 12100, 12101 and 12102 shouldn't be open to the internet.
 
 </div>
 
 |Source|Destination|Port|Protocol|Notes|
 |------|-----------|----|--------|-----|
 |SysOps|Server|22/3389|TCP|Access the server through SSH or Remote Desktop|
-|Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
+|Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps with MABS ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
 |Front-End|Controller (by default)<br/>— Depends on where the Cache Invalidation Service/RabbitMQ is installed.|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
 |Front-End|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
@@ -61,11 +72,16 @@ The following table lists the ports that should be open to correctly **monitor**
 |Source|Destination|Port|Protocol|Notes|
 |------|-----------|----|--------|-----|
 |Front-End|Front-End|80|TCP|IIS Monitoring|
+|Front-End|Controller|12100|TCP|OutSystems Deployment Controller Service Monitoring. Applies to Platform Server 11.25.0 and higher.|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service Monitoring|
+|Front-End|Front-End|12101|TCP|OutSystems Deployment Service Monitoring. Applies to Platform Server 11.24.0 and higher.|
 |Front-End|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
+|Front-End|Front-End|12102|TCP|OutSystems Scheduler Service Monitoring. Applies to Platform Server 11.21.0 and higher.|
 |Front-End|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
 |Controller|Front-End|80|TCP|IIS Monitoring|
+|Controller|Front-End|12101|TCP|OutSystems Deployment Service Monitoring. Applies to Platform Server 11.24.0 and higher.|
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
+|Controller|Front-End|12102|TCP|OutSystems Scheduler Service Monitoring. Applies to Platform Server 11.21.0 and higher.|
 |Controller|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
 |Front-End and Controller|\*.outsystems.com<br/>outsystems.com|443|TCP|Telemetry|
 
@@ -95,18 +111,6 @@ The following table lists the necessary connectivity between the developers work
 Even though OutSystems is built to scale horizontally, you need to consider the network latency between the database server, the Platform Server, and the front-end servers. For this reason, it’s advisable to have all servers that make up an environment, running under the same provider.
 
 As an example, if you are using Amazon RDS as your database server and running the Platform Server on your own infrastructure, the application’s performance will be degraded.
-
-### Experience Builder
-
-[Experience Builder](https://experiencebuilder.outsystems.com/) must be able to connect to the environment where you want Experience Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
-
-Alternatively, ensure that the front ends of the environment used with Experience Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
-
-The Experience Builder uses the environment's public DNS hostname to communicate.
-
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-experiencebuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
 ### Integration Builder
 
@@ -160,7 +164,7 @@ You need to have bidirectional secure communication between the front-end of the
 
 ### AI Mentor Studio
 
-To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../building-apps/experience-builder/how-works.md). 
+To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../monitor-and-troubleshoot/manage-tech-debt/how-works.md). 
 
 The network requirements depend on the authentication method and Probe version you use to access AI Mentor Studio.
 

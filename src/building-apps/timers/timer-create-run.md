@@ -5,6 +5,18 @@ guid: 133d8c46-b36b-47de-9ad3-ca8e6460bb20
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=279:1
+tags: task automation, scheduled tasks, server actions, application deployment, process automation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - apply
+topic:
+  - process-data-timers
 ---
 
 # Create and Run Timers
@@ -23,6 +35,8 @@ To create a Timer in your module, do the following:
 If the Action you specify has input parameters, when creating the Timer you need to specify the values that are passed as parameters when the Timer wakes. However, if the action has output parameters, there is no way of accessing them after the action is finished executing.
 
 You can set a schedule to run the Timer automatically or you can force the Timer to run without waiting for the scheduled time.
+
+To learn more about setting up timers in tenants, take a look at [Setting up Timers](https://success.outsystems.com/documentation/how_to_guides/development/how_to_build_a_multi_tenant_application/#setting-up-timers).
 
 ## Set the Timer Schedule
 

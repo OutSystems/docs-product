@@ -1,11 +1,24 @@
 ---
 summary: Learn how to expose and customize REST APIs in OutSystems 11 (O11) to integrate with external systems effectively.
-tags: 
+tags: rest api integration, api development, api versioning, http methods, endpoint configuration
 locale: en-us
 guid: 28d56896-53c1-40c0-ac3d-84c757ac71d0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - remember
+topic:
+  - rest-webservice-data
+  - define-methods
 ---
 
 # Expose a REST API
@@ -43,19 +56,33 @@ If you want to expose methods to allow other systems to retrieve or manipulate i
 
 Your REST API endpoints are accessible after deploying the application.
 
+The URL is of the format:
+
+`https://<server name>/<module name>/rest/<api name>/<method name>`
+
+The endpoint is of the format:
+
+`<HTTP METHOD> /<module name>/rest/<api name>/<method name>`
+
+<div class="info" markdown="1">
+
+OutSystems defines the default endpoints based on the HTTP Method (`GET`, `POST`, `PUT`, `DELETE`) and the name of the REST API Methods, but you can [customize the endpoints](<customize-rest-urls.md>) according to your needs.
+
+</div>
+
 Examples:
+
+Here are some example of default REST API endpoints:
 
 Default Endpoint | Description  
 ---|---  
-`GET https://<server>/PhoneAPI/rest/v1/GetContacts` | Gets all contacts.
-`GET https://<server>/PhoneAPI/rest/v1/GetContact` | Gets a contact.
-`POST https://<server>/PhoneAPI/rest/v1/CreateContact` | Creates a contact.
-`PUT https://<server>/PhoneAPI/rest/v1/UpdateContact` | Updates a contact.
-`DELETE https://<server>/PhoneAPI/rest/v1/DeleteContact` | Deletes a contact.
-`GET https://<server>/PhoneAPI/rest/v1/GetContactAddresses` | Gets all addresses of a contact.
+`GET /PhoneAPI/rest/v1/GetContacts` | Gets all contacts.
+`GET /PhoneAPI/rest/v1/GetContact` | Gets a contact.
+`POST /PhoneAPI/rest/v1/CreateContact` | Creates a contact.
+`PUT /PhoneAPI/rest/v1/UpdateContact` | Updates a contact.
+`DELETE /PhoneAPI/rest/v1/DeleteContact` | Deletes a contact.
+`GET /PhoneAPI/rest/v1/GetContactAddresses` | Gets all addresses of a contact.
   
-OutSystems defines the default endpoints based on the HTTP Method (`GET`, `POST`, `PUT`, `DELETE`) and on the name of the REST API Methods, but you can [customize the endpoints](<customize-rest-urls.md>) according to your needs.
-
 You can test your REST API Method using several available tools, such as [curl](https://curl.haxx.se/) or [Postman](https://www.postman.com), or building an OutSystems application for that effect. 
 
 For manipulation methods where the input parameter is a Record (such as `POST` or `PUT`), you must add the **Content-Type** header to the request with the value `application/json`.

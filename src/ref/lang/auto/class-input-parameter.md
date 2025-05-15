@@ -6,6 +6,17 @@ guid: 6b4c779a-b8ce-482d-a842-1b2eedc84785
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1116
+tags: client actions, data passing, application development, outsystems best practices, parameters
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - input-parameters
 ---
 
 # Input Parameter
@@ -39,6 +50,8 @@ You define the Input Parameter values in the properties of the Run Client Action
 
 To set an Input Parameter value, enter an expression in the corresponding property.
 
+Check this [training lesson](https://www.outsystems.com/tk/redirect?g=fa37b77b-cb56-4aa4-9dda-6136be4a6ae4) to learn more with an example.
+
 ## Input Parameters availability
 
 The following elements displayed in the element tree can have Input Parameters:
@@ -53,6 +66,7 @@ The following elements displayed in the element tree can have Input Parameters:
 * Emails
 * External Sites
 * JavaScript elements (available on Client Actions)
+* Advanced SQL
 
 The Input Parameters of the following elements have additional properties:
 

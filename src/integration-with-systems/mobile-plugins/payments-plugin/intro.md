@@ -1,14 +1,24 @@
 ---
 summary: Enable mobile payments in your apps using the OutSystems 11 (O11) Payments Plugin for Apple Pay and Google Pay integration.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+tags: mobile payments integration, outsystems, plugin configuration, mobile app development, payment gateways
 locale: en-us
 guid: 4a79c8ee-2a07-11ed-882b-00155da4f25e
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2407:15058
+audience:
+  - mobile developers
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - remember
+  - apply
 ---
 
-# Payments plugin
+# Payments Plugin
 
 <div class="info" markdown="1">
 
@@ -82,7 +92,7 @@ Configurator](https://www.outsystems.com/forge/component-overview/13679/payments
 
 You need the following information:
 
-* Access to the Payments Configurator at `https://<your-environment>/PaymentsConfigurator/`, where replace `<your-environment>` with your development environment address.
+* Access to the Payments Configurator at `https://<your-environment>/PaymentsConfigurator/`, where you should replace `<your-environment>` with your development environment address.
 
 * Access to a mobile PSP by either configuring a new mobile payment service or editing an existing one. To configure PSP details, add the following information (depending on the PSP):
 

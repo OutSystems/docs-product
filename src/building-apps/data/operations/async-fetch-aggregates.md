@@ -1,13 +1,19 @@
 ---
 summary: OutSystems 11 (O11) supports asynchronous data fetching in Mobile Apps and Reactive Web Apps using master-detail patterns with Aggregates.
-tags: support-application_development; support-Database; runtime-mobileandreactiveweb;
+tags: support-application_development, support-database, runtime-mobileandreactiveweb
 locale: en-us
 guid: dddc4580-fe09-42b7-8795-9fc35f3fd803
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:9
+coverage-type:
+  - apply
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - none
 ---
-
 # Implement asynchronous data fetching using Aggregates
 
 <div class="info" markdown="1">
@@ -63,7 +69,7 @@ Let's create a "master" UI populated by the records from the Aggregate that fetc
 
     ![Properties panel of the Tag Widget in Service Studio showing style adjustments](images/master-detail-tag-props.png "Properties of the Tag Widget")
 
-1. Drag an Expression Widget to the Tag Widget. **Expression Value** editor opens. Enter `GetEmployees.List.Current.Sample_Employee.FirstName + " " + GetEmployees.List.Current.Sample_Employee.LastName` and click **Done**. The tags now show the employees' first and last names. Run the app, and you should see a Screen with the list of employees.
+1. Drag an Expression Widget to the Tag Widget. **Expression Value** editor opens. Enter `GetEmployees.List.Current.Sample_Employee.FirstName + " " + GetEmployees.List.Current.Sample_Employee.LastName` and click **Close**. The tags now show the employees' first and last names. Run the app, and you should see a Screen with the list of employees.
 
 ## Get the details of one employee
 

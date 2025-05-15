@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) supports maintaining UI in dedicated modules to enhance reuse and reduce merge conflicts.
-tags: support-application_development; support-Front_end_Development; runtime-reactiveweb;
+tags: ui module management, screen reuse, block reuse, merge conflict reduction, theme compatibility
 locale: en-us
 guid: 04f7cedb-d02b-42e9-b9f4-f7cbf2cb8506
 app_type: reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+topic:
+  - front-end-architecture
+  - reuse-ui
 ---
 
 # Maintain UI in dedicated modules

@@ -1,11 +1,19 @@
 ---
 summary: Explore how OutSystems 11 (O11) maps its data types to .NET data types at runtime.
-tags: 
+tags: data mapping, .net integration, data types, application development, outsystems best practices
 locale: en-us
 guid: 671a69c4-3fe2-4a6a-9627-2eae9526aece
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Data Types at Runtime

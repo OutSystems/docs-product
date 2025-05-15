@@ -1,11 +1,21 @@
 ---
 summary: Comprehensive guide to using the Configuration Tool command line for OutSystems 11 (O11), detailing syntax, parameters, and usage examples.
-tags: support-Installation_Configuration; support-Installation_Configuration-overview
+tags: configuration management, server administration, automation, license management, command line interface
 locale: en-us
 guid: 7c953aae-e0ef-4034-afcf-84960d18ad3b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - tech leads
+  - infrastructure managers
+  - backend developers
+outsystems-tools:
+  - platform server
+coverage-type:
+  - remember
 ---
 
 # Configuration Tool Command Line Reference
@@ -48,71 +58,66 @@ ConfigurationTool.com
     | /UpgradePublishedApplications
     | /DeployPreparedApplications
     | /ApplySettingsFactory
+    | /WithWindowsAuthentication <integrated_auth_admin_password>
 ```
 
 ## Parameters
+`/ApplySettingsFactory`
 
-`/SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]`
+:   Restarts OutSystems services in the current server
 
-:   Creates or upgrades the OutSystems platform and logging database model using the `server.hsconf` configuration file.
+    When executed from the server with the Deployment Controller role, also triggers the [Apply Settings to the Factory](../../../deploying-apps/apply-configurations.md) operation to update the configurations of all published modules.
 
-    For Azure SQL Database or SQL Server databases, you must provide the credentials needed to create or upgrade the platform database. Furthermore, if you specify separate platform and logging databases in `server.hsconf`, you also need to provide the credentials needed to create or upgrade the logging database.
-
-    For Oracle databases, you do not need to provide the admin usernames and passwords.
-    
-    If you provide the optional `/SetPlatformServerAdminPassword` parameter with a password, sets the password for the Platform Server `admin` user.
-
-`/UpgradeInstall [<integrated_auth_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]`
-
-:   Upgrades the OutSystems platform and logging database models, without validating if the database exists or if the permissions are correct.
-
-    The `<integrated_auth_admin_password>` parameter corresponds to the Platform Administrator user password that is configured when enabling Integrated Authentication. This password is optional and is only used for integrated authentication purposes where the password isn't stored in the server configuration file.
-    
-    If you provide the optional `/SetPlatformServerAdminPassword` parameter with a password, sets the password for the Platform Server `admin` user.
-
-`/RebuildSession <session_db_admin_username> <session_db_admin_password>`
-
-:   Upgrades the session database model. The username and password provided must belong to a user with permissions to execute these operations.
-
-`/InstallServiceCenter `
-
-:   Forces the Service Center installation to run after finishing Configuration Tool.
-
-`/InstallSystemComponents`
-
-:   Forces the System Components installation or upgrade to run after applying the configuration settings.
-
-`/GenerateTemplates`
-
-:   Generates server configuration file (`.hsconf`) templates for each supported database engine in `Platform Server\docs`.
+Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This only generates output in case of errors and cannot be used with other parameters.
 
 `/ClearInternalNetwork`
 
 :   Resets the internal network settings so that internal applications become accessible from any origin.
 
-`/UploadLicense <license_file> <platform_server_admin_user> <platform_server_admin_password>`
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
-:   Uploads the license file and checks if the license is valid.
+`/CreateUpgradeCacheInvalidationService`
 
-    You must provide valid Service Center admin user credentials to execute this operation.  
-    The Service Center application must be running.
+:   Installs cache invalidation service or reconfigures the service given in the configuration file (`server.hsconf`).
 
-`/RegenerateSettingsKey`
+`/DeployPreparedApplications`
 
-:   Generates a new private.key file.
+:   Deploys all the successfully prepared modules from your current Platform Server version to the latest version, except for those modules already deployed in the latest version. Read more about this feature in [Modules deployment step during Platform Server upgrade](../../upgrade/upgrade-platform-module-deploy.md).
+
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+
+`/GenerateTemplates`
+
+:   Generates server configuration file (`.hsconf`) templates for each supported database engine in `Platform Server\docs`.
+
+Note: This cannot be used with other parameters.
+
+`/GetDeploymentZones`
+
+:   Lists the configured deployment zones for the current installation. The data is presented in JSON format, limited to the relevant settings that can be manipulated with `/ModifyDeploymentZone`, namely: the Configuration Name and Address, and its Enable HTTPS status.
+
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This cannot be used with other parameters.
 
 `/GetSerial`
 
 :   Prints the serial number of this installation.
 
-`/SetPlatformServerAdminPassword <platform_server_admin_password>`
+Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This cannot be used with other parameters.
 
-:   Defines the password for the Platform Server Admin user, if the user is active.  
-    Note: This command doesn't work when using Integrated Authentication.
-    
-`/GetDeploymentZones`
+`/InstallServiceCenter`
 
-:   Lists the configured deployment zones for the current installation. The data is presented in JSON format, limited to the relevant settings that can be manipulated with `/ModifyDeploymentZone`, namely: the Configuration Name and Address, and it's Enable HTTPS status.
+:   Forces the Service Center installation to run after finishing Configuration Tool.
+
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+
+`/InstallSystemComponents`
+
+:   Forces the System Components installation or upgrade to run after applying the configuration settings.
+
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
 `/ModifyDeploymentZone <deployment_zone_name> <deployment_zone_address> [<enable_https>]`
 
@@ -124,26 +129,85 @@ ConfigurationTool.com
 
     `[<enable_https>]` is an optional boolean argument; if this argument is not provided the setting will remain unchanged. If the string "true" (case insensitive) is provided, the Enable HTTPS setting is set to "true"; if any other string is provided the setting Enable HTTPS is set to "false". The applied value of the Enable HTTPS setting is displayed.
 
-`/CreateUpgradeCacheInvalidationService`
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
-:   Installs cache invalidation service or reconfigures the service given in the configuration file (`server.hsconf`).
+`/RebuildSession <session_db_admin_username> <session_db_admin_password>`
+
+:   Upgrades the session database model. The username and password provided must belong to a user with permissions to execute these operations.
+
+     `<session_db_admin_username>` is the username for the session database superuser.
+
+     `<session_db_admin_password>` is the password for the session database superuser.
+     
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+
+`/RegenerateSettingsKey`
+
+:   Generates a new private.key file.
+
+Note: After invoking this parameter, in a separate call, `/UpgradeInstall` needs to be invoked with `/InstallServiceCenter`. 
+In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This cannot be used with other parameters.
+
+`/SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]`
+
+:   Creates or upgrades the OutSystems platform and logging database model using the `server.hsconf` configuration file.
+
+Note: For Azure SQL Database or SQL Server databases, you must provide the credentials needed to create or upgrade the platform database. 
+Furthermore, if you specify separate platform and logging databases in `server.hsconf`, you also need to provide the credentials needed to create or upgrade the logging database. For Oracle databases, you do not need to provide the admin usernames and passwords. 
+If this parameter is invoked after the first install then it requires `/WithWindowsAuthentication` with integrated authentication password in order to execute properly in integrated authentication.
     
+    `<platform_db_admin_username>` is the username for the platform database superuser.
+    
+    `<platform_db_admin_password>` is the passsword for the platform database superuser.
+
+    `<logging_db_admin_username>` is the username for the logging database superuser.
+
+    `<logging_db_admin_password>` is the password for the logging database superuser.
+    
+    If you provide the optional `/SetPlatformServerAdminPassword` parameter with a password, sets the password for the Platform Server `admin` user.
+
+`/SetPlatformServerAdminPassword <platform_server_admin_password>`
+
+:   Defines the password for the Platform Server administrator account, if the account is active.
+
+Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+
+`/UploadLicense <license_file> <platform_server_admin_user> <platform_server_admin_password>`
+
+:   Uploads the license file and checks if the license is valid.
+
+    You must provide valid Service Center admin user credentials to execute this operation.
+    
+    The Service Center application must be running.
+
+Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+This cannot be used with other parameters.
+
+
 `/UpgradeEnvironment`
 
 :   Installs the core components (Service Center and the System Components), and starts [preparing your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version. Skips any of these steps if they were previously executed.
+
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
+
+`/UpgradeInstall [<integrated_auth_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]`
+
+:   Upgrades the OutSystems platform and logging database models, without validating if the database exists or if the permissions are correct.
+
+    The `<integrated_auth_admin_password>` parameter corresponds to the Platform database administrator user password that is configured when enabling integrated authentication. This password is optional and is only used for integrated authentication purposes where the password isn't stored in the server configuration file.
+    
+    If you provide the optional `/SetPlatformServerAdminPassword` parameter with a password, sets the password for the Platform Server `admin` account.
 
 `/UpgradePublishedApplications`
 
 :   Forces the [preparation of your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version.
 
-`/DeployPreparedApplications`
+Note:  In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 
-:   Deploys all the successfully prepared modules from your current Platform Server version to Platform Server 11.19.0 or later, except for those modules already deployed in the latest version. Read more about this feature in [Modules deployment step during Platform Server upgrade](../../upgrade/upgrade-platform-module-deploy.md).
+`/WithWindowsAuthentication <integrated_auth_admin_password>`
 
-`/ApplySettingsFactory`
-
-:   Applies the current `server.hsconf` settings to the factory.  
-    Note: This command only generates output in case of errors.
+:   Sets the password for Platform database administrator user password that is configured when enabling integrated authentication. This parameter is only used while in combination with others, otherwise it doesn't do anything.
 
 ## Example
 

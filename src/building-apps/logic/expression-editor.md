@@ -1,11 +1,21 @@
 ---
 summary: Explore the expression editor in OutSystems 11 (O11) for editing and validating expressions within Service Studio.
-tags: support-application_development
+tags: ide usage, reactive web apps, tutorials for beginners, expression editing, service studio features
 locale: en-us
 guid: b42ff2da-f3fb-4900-9643-60c293c26f55
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=258:18
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - write-expressions-guide
 ---
 
 # Edit expressions

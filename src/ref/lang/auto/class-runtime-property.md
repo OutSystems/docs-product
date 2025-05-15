@@ -5,6 +5,15 @@ guid: 5a9cfc54-42b5-408f-8d00-bf66f0f6cabd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: application development, outsystems platform, data types, input validation
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Runtime Property

@@ -5,6 +5,15 @@ guid: cb5587c1-009b-4ef4-bf65-297a48c62902
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: text formatting, string manipulation, data types, localization, server-side logic, client-side logic
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Format
@@ -124,7 +133,7 @@ The Decimal value to be formatted.
 
 decimal_digits
 :    Type: Integer. Mandatory.  
-The number of decimal digitis.
+The number of decimal digits.
 
 decimal_separator
 :    Type: Text. Mandatory.  

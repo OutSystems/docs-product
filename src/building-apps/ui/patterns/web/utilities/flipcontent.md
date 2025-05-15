@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, traditional web apps, content display, user interaction, outsystems ui
 summary: Explore the Flip Content UI Pattern in OutSystems 11 (O11) for interactive content display in Traditional Web Apps.
 locale: en-us
 guid: 859c44ea-109c-48e5-bddd-579f1b21e789
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A103&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Flip Content
@@ -18,7 +26,7 @@ Applies only to Traditional Web Apps.
 
  You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
 
-![Animated GIF showing the Flip Content UI Pattern in action, where content flips to reveal additional information when clicked.](images/flipcontent-1.gif "Flip Content Interaction Example")
+<iframe src="https://player.vimeo.com/video/977630439" width="750" height="303" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the Flip Content UI Pattern in action, where content flips to reveal additional information when clicked.</iframe>
 
 **How to use the Flip content UI Pattern**
 
@@ -33,9 +41,9 @@ Applies only to Traditional Web Apps.
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Flip Content widget into the Main Content area of your application's screen.

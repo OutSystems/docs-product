@@ -5,11 +5,19 @@ guid: 4238af98-49f2-480c-b837-43bcadba9053
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: test automation, devops, agile methodology, application lifecycle management, quality assurance
+audience:
+  - full stack developers
+outsystems-tools:
+  - none
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Test Automation in the Delivery Lifecycle
 
-Introducing automated testing as part of the development-and-release lifecycles can mean changes in the way the application are developed and delivered. Some of these changes come from DevOps culture, which incorporates vertical teams. Vertical teams participate from the point of the business idea through to application deployment and monitoring in production. Tasks in the release cycle are automated to accelerate lead times. 
+Introducing automated testing as part of the development-and-release lifecycles can mean changes in the way the application are developed and delivered. Some of these changes come from DevOps culture, which incorporates vertical teams. Vertical teams participate from the point of the business idea through to application deployment and monitoring in production. Tasks in the release cycle are automated to accelerate lead times.
 
 ## Putting a Team Together
 

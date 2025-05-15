@@ -5,6 +5,8 @@ guid: fb2fd6a6-56d0-4b27-a119-65eab40c0d45
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+coverage-type:
+  - remember
 ---
 
 # Auto-generated API Reference

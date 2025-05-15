@@ -5,7 +5,21 @@ guid: 812f03f1-00fa-4d03-b4af-7b7e580a5fc5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:31
+tags: process optimization, application deployment, best practices, process flow management, conditional logic
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+  - unblock
+topic:
+  - scalable-process-best-practices
 ---
+
 # Limit the Use of Conditional Starts
 
 When you add [Conditional Starts](<../../../ref/lang/auto/class-conditional-start.md>) to a [Process](../intro.md) you should consider well the business case you are addressing, or else you may be **introducing unnecessary complexity to the deployment of applications**. This is essentially due to:

@@ -1,11 +1,20 @@
 ---
 summary: OutSystems 11 (O11) includes LifeTime, a dedicated console for centralized infrastructure management.
-tags: support-Application_Lifecycle; support-Installation_Configuration; version-11
+tags: infrastructure management, environment configuration, it security, centralized management, application lifecycle management
 locale: en-us
 guid: 581ba434-6216-4005-8974-44c44285d933
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2636%3A769&mode=design&t=PPL7U8XyNSIpuC5w-1
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Configure the infrastructure management console

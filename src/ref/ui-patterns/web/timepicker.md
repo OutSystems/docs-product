@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui components, css customization, event handling, ui patterns, time management
 summary: Explore the features and advanced use cases of the Time Picker UI component in OutSystems 11 (O11).
 locale: en-us
 guid: 19d186e8-664b-4066-9e83-e866c45cbba7
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:592
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Time Picker Reference
@@ -69,7 +77,7 @@ Applies only to Traditional Web Apps.
 
     ![Image illustrating the addition of an Ajax refresh for the Timepicker_Container in the TimePatternOnSelect action](images/timepicker-image-8.png "Ajax Refresh Setup")
 
-![Animated GIF demonstrating interaction with the Time Picker UI component](images/timepicker-gif-2.gif "Time Picker Interaction")
+<iframe src="https://player.vimeo.com/video/998212683" width="750" height="388" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating interaction with the Time Picker UI component.</iframe>
 
 ### Disable specific times
 
@@ -93,7 +101,7 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-    ![Animated GIF showing the Time Picker with specific times disabled](images/timepicker-gif-3.gif "Time Picker Disabled Times")
+    <iframe src="https://player.vimeo.com/video/998212655" width="750" height="388" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the Time Picker with specific times disabled.</iframe>
 
 ### Start Input as Empty
 

@@ -5,6 +5,17 @@ guid: 434dc1fc-9589-4251-a23b-11c52ace8f69
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data management, widget configuration, screen design, data binding, automatic data replacement
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - replace-ui-sample-data
 ---
 
 # Replace data in screens

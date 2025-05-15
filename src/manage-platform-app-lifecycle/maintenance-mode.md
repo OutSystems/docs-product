@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) introduces maintenance mode in LifeTime version 11.9.0 to manage environment synchronization during maintenance activities.
-tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps
+tags: environment synchronization, platform server upgrade, application deployment, environment settings configuration, external authentication providers
 locale: en-us
 guid: 373a27f2-990b-4257-bc8d-4d6d33c41ff0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=656%3A500&mode=design&t=rzWSTBJIapfhmERp-1
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - lifetime
+  - platform server
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Environment in maintenance mode

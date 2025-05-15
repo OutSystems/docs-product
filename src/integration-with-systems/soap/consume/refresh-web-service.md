@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) provides a method to refresh SOAP Web Services in Service Studio by updating the consumed methods and services.
-tags: support-Integrations_Extensions
+tags: web services, soap, wsdl, service integration, api management
 locale: en-us
 guid: 68e18433-b490-4ba2-9269-0261f6b656fd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:14
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Refresh a SOAP Web Service

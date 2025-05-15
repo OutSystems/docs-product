@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: outsystems ui, web development, user interface design, authentication, web blocks
 summary: Explore the pre-built Login Form web block in OutSystems 11 (O11) for efficient customization and integration into Traditional Web Apps.
 locale: en-us
 guid: 57c2167c-5a87-43c7-aa6d-69c1d8d4c82b
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:21
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Login Form

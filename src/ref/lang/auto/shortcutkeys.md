@@ -5,7 +5,17 @@ guid: d508b2f0-f667-4a03-8117-20292875c195
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: keyboard shortcuts, development efficiency, user interface, productivity tools, cross-platform development
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Service Studio Shortcuts
 
 ## General
@@ -33,13 +43,13 @@ figma:
 |Look for help, by telling us what you want to do|F1||
 |Rename selected element|F2||
 |Open selected dropdwon|F4|F4|
-|Open Preferences||Cmd+comma||
+|Open Preferences||Cmd+comma|
 
 ## Basic Development
 
 |Description|Windows|macOS|
 |---|---|---|
-||F5|1-Click Publish|
+|1-Click Publish|F5|F5|
 |Hide/show warning in TrueChange tab|Ctrl+H|Shift+Cmd+H|
 |Enable/disable Styles Editor|Ctrl+J||
 |Refresh Aggregate's data preview|Ctrl+L|Cmd+R|
@@ -58,8 +68,8 @@ figma:
 |---|---|---|
 |Go back|Alt+Left||
 |Go forward|Alt+Right||
-|Move forward through window tabs|Ctrl+Tab|Ctrl+Right|
-|Move back through window tabs|Ctrl+Shift+Tab|Ctrl+Shift+Right|
+|Move forward through window tabs|Ctrl+Tab||
+|Move back through window tabs|Ctrl+Shift+Tab||
 |Move to the Processes tab|Ctrl+1|Cmd+1|
 |Move to the Interface tab|Ctrl+2|Cmd+2|
 |Move to the Logic tab|Ctrl+3|Cmd+3|
@@ -114,7 +124,7 @@ figma:
 |---|---|---|
 |Run and Debug in Personal Area|F6|Cmd+F6|
 |Debug in Public Area|F7|Cmd+F7|
-|Stop Debug|Shift+F6 (Shift+F7)|Shift+Cmd+F6 (Shift+Cmd+F7)||
+|Stop Debug|Shift+F6 (Shift+F7)|Shift+Cmd+F6 (Shift+Cmd+F7)|
 |Add/remove breakpoint|F8|Cmd+F8|
 |Disable/enable breakpoint|Ctrl+F8|Shift+Cmd+F8|
 |Step into|F11|Cmd+F11|

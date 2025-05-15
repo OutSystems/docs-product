@@ -1,11 +1,19 @@
 ---
 summary: Learn to create apps with no prior knowledge using OutSystems 11 (O11), featuring tutorials, accelerators, and UI patterns.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, application development, ui patterns
 locale: en-us
 guid: f30b6d10-f57f-48ac-98e4-1425ae8c72d5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=2318:1866
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # Understanding how to create an app

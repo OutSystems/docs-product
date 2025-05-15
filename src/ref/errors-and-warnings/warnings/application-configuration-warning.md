@@ -5,6 +5,14 @@ guid: 7f61abb9-ec5a-47ae-9e7e-d98dc926e78f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, application management, outsystems service center, shared configuration issues, runtime errors
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - service center
+coverage-type:
+  - unblock
 ---
 
 # Application Configuration Warning

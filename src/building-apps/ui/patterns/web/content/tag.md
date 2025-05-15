@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui component customization, styling interfaces, ui patterns, web design, user experience
 summary: Explore how to use the Tag UI Pattern in OutSystems 11 (O11) to enhance user interfaces by styling texts with customizable colors, sizes, and shapes.
 locale: en-us
 guid: b448e71a-760c-46b3-9fed-b3b97229d351
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=226%3A0&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Tag

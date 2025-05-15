@@ -6,6 +6,15 @@ guid: 3cbb4a7d-817e-4709-b696-fae09de3d45d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ui components, data presentation, pagination, sorting, widgets
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Table

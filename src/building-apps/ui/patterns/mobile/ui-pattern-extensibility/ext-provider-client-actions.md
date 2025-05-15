@@ -1,12 +1,21 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui patterns, client actions, event handling, extensibility, outsystems ui framework
 summary: Explore the extensibility client actions for UI Patterns in OutSystems 11 (O11), including event and configuration management for various UI components.
 locale: en-us
 guid: 6265028A-3331-417B-80BC-3E91A1E7B12C
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4647%3A10996&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
+
 # Provider client actions
 
 The following extensibility client actions are available for UI Patterns:

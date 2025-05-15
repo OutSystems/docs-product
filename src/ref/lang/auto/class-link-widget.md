@@ -6,6 +6,14 @@ guid: ecc756d6-3965-4b19-a3e8-309fd3b87b0d
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: web development, ui components, hyperlinking, user interface, user experience
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Link Widget

@@ -5,6 +5,18 @@ guid: 036994b9-0656-4dc8-8b94-b0c4e9d71a1f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting-Started?type=design&node-id=1%3A2&mode=design&t=tf47BvyjuOfXlcZP-1
+tags: ide usage, reactive web apps, tutorials for beginners, app development, deployment
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - outsystems-overview
+  - download-and-set-up
 ---
 
 # Getting started
@@ -41,7 +53,6 @@ There are several prebuilt elements that you can use to build your apps faster. 
 You can also use OutSystems builder to prototype the front end of mobile apps or create workflows, if your product license includes these tools. With the builders you can start creating your apps without Service Studio.
 
 * [Workflow Builder](../building-apps/case-management-workflow/workflow-builder/intro.md) lets you create fully functional web apps to automate and manage simple workflows.
-* [Experience Builder](../building-apps/experience-builder/intro.md) lets you create the front end of mobile apps, that you can test right away, and then continue developing in Service Studio.
 
 ## Extensions
 

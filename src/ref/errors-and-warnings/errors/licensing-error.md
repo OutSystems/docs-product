@@ -5,6 +5,16 @@ guid: de5bd7ca-83d5-45be-b0b3-ee9f729a9931
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: licensing, server management, outsystems platform, error handling, troubleshooting
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service center
+  - platform server
+coverage-type:
+  - unblock
 ---
 
 # Licensing Error

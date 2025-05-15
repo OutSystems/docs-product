@@ -1,11 +1,21 @@
 ---
 summary: Explore debugging producer modules in OutSystems 11 (O11) with specific steps for handling public and service actions.
-tags:
+tags: debugging, service actions, producer modules, consumer modules, breakpoints
 locale: en-us
 guid: 8876a767-5845-47e4-9c93-bdec76114e0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Debugging Producer Modules

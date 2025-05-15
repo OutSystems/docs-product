@@ -1,14 +1,27 @@
 ---
 summary: Explore the Camera plugin in OutSystems 11 (O11) for capturing and managing media in mobile and progressive web apps.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+tags: plugin management, media capture, mobile application development, pwa (progressive web apps), camera api
 locale: en-us
 guid: 158347bc-c312-4499-9912-1f1dfeac7d50
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1088:5164
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
+  - remember
+topic:
+  - using-cordova-plugins
 ---
 
-# Camera plugin
+# Camera Plugin
 
 <div class="info" markdown="1">
 
@@ -123,7 +136,7 @@ Otherwise, open the camera with **RecordVideo** to let users capture a video (2)
 In the **RecordVideo** action, you can set the parameters for saving the recorded media to the device’s gallery.
 
 Check if recording videos on the device works by verifying the value of **RecordVideo.Success** is **True** (3).
-If yes, handle the picture data in **RecordVideo.MediaResult** by assigning it to a variable of the **MediaResult** data type (4).
+If yes, handle the video data in **RecordVideo.MediaResult** by assigning it to a variable of the **MediaResult** data type (4).
 
 ![Flowchart screenshot outlining the logic to record a video using the Camera plugin, including checking plugin availability, capturing the video, and handling the video data.](images/capture-video-logic-2-ss.png "Camera Flow for Recording a Video")
 
@@ -256,7 +269,8 @@ The table shows the compatibility of the Camera plugin with the Mobile Apps Buil
 
 |Plugin version|Compatible with MABS version|Notes|
 |-|-|-|
-|7.2.0 and later|MABS 8.1 and later.||
+|7.5.0 and later|MABS 10.0 and later.||
+|7.2.0 and later|MABS 9.0 and later.||
 |7.1.0 and later|MABS 7.0 and later.||
 |5.1.0 and later|All MABS versions.||
 |5.0.0 and later|MABS 5.0 and later.|For Android P with Support Library 28.|

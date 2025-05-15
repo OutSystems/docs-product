@@ -1,11 +1,20 @@
 ---
 summary: Explore OAuth 2.0 client flow authorization for REST API web services in OutSystems 11 (O11).
-tags: support-Integrations_Extensions-featured
+tags: oauth 2.0, rest api, security, authorization, api integration
 locale: en-us
 guid: beb761a2-ef08-44e6-aa0c-ee11bada5baa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A79&mode=design&t=187UAgmZTPxcY0ZG-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - apply
 ---
 
 # Use OAuth 2.0 client flow authorization in consumed REST API web services

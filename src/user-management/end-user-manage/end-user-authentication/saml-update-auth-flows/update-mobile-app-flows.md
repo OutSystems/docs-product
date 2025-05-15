@@ -1,11 +1,25 @@
 ---
 summary: Learn how to update the login and logout flows in your mobile app to support SAML 2.0 using OutSystems 11 (O11).
-tags:
+tags: saml 2.0, authentication, security, mobile app development, single sign-on
 locale: en-us
 guid: 8b7802cb-bd7b-47e4-a3d1-bc8124ca4856
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3684:28525
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+  - ui designers
+outsystems-tools:
+  - service studio
+  - service center
+  - mabs
+coverage-type:
+  - understand
+  - apply
+  - remember
 ---
 
 # Updating the login and logout flows of your Mobile App to support SAML 2.0

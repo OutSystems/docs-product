@@ -1,12 +1,24 @@
 ---
 summary: OutSystems 11 (O11) allows users to configure their own SSL domain in the OutSystems Cloud by uploading and assigning their SSL certificate.
-tags:
+tags: ssl certificate configuration, cloud infrastructure, domain management, endpoint configuration, application deployment
 locale: en-us
 guid: 75f71e55-19e7-4a6a-bd44-f730385acf52
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2580%3A4785&mode=design&t=uPq3qCZl7kqIKVy0-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - understand
+  - apply
 ---
+
 # Use your SSL domain in OutSystems Cloud
 
 Your OutSystems cloud environment includes a valid SSL certificate with the `outsystemsenterprise.com` domain. You can also use your own domain by assigning your SSL certificate to the environment. To use your own domain, you must upload your SSL certificate that replaces the `outsystemsenterprise.com` default certificate.
@@ -37,6 +49,8 @@ To configure SSL for your domain, do the following:
 **Multi-domain (SAN) certificates:** While you can only have one certificate at a time applied to your environment, it's possible to use multiple domains. To use multiple domains,you can opt for a multi-domain (SAN) certificate.
 
 </div>
+
+Certificates follow a chain structure that includes the root, intermediate, and domain certificate. You must provide a certificate that contains the complete chain. Some CAs provide the full chain, while others only provide the domain certificate, requiring you to assemble the chain. Before upload, validate that your certificate contains the complete chain.
 
 ## Upload the certificate in LifeTime { #upload-certificate }
 
@@ -153,9 +167,9 @@ If the certificate isn't validated you'll see the **Status** as loading:
 
 ![Screenshot indicating a loading status for SSL certificate validation in OutSystems Cloud](images/ssl-domain-cloud-lt-6.png "Loading Status for SSL Certificate Validation")
 
- You can only assign the certificate to an environment once the validation process is complete.
+You can only assign the certificate to an environment once the validation process is complete.
  
-OutSystems Support will only contact you if the certificate is missing any information. You can assign the certificate to an environment only once this process is complete.
+OutSystems Support will only contact you if the certificate is missing any information.
 
 ## Assigning the certificate to an environment
 
@@ -169,7 +183,7 @@ You can now assign the certificate to an environment, directly from the **Enviro
     
     ![Screenshot of selecting an SSL certificate for an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-10.png "Selecting SSL Certificate for Environment")
 
-1. Chose the hostname for the environment and tick "I have created a CNAME record on my chosen hostname".
+1. Choose the hostname for the environment and tick "I have created a CNAME record on my chosen hostname".
 1. Click **Update Secure Endpoint**.
 
     ![Screenshot of the option to update the secure endpoint for an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-11.png "Update Secure Endpoint Option in OutSystems Cloud")

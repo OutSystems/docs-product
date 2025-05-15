@@ -5,6 +5,15 @@ guid: ccb19e76-042b-4861-8822-dcaedc912d5b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: error handling, database design, data modeling, outsystems development, entity management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Entity Error

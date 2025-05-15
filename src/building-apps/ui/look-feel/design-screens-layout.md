@@ -1,11 +1,21 @@
 ---
 summary: Learn how to design screen layouts using placeholders in OutSystems 11 (O11) for consistent and dynamic content distribution.
-tags: support-application_development; support-Front_end_Development; support-Front_end_Development-featured; support-webapps
+tags: screen layout design, ui/ux design, placeholder usage, layout reusability, front-end patterns
 locale: en-us
 guid: 1ac298ad-4931-46ba-bc63-5e27536c0603
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:112
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - layouts
 ---
 
 # Design the Layout of Screens Using Placeholders

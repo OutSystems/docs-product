@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) enables data bootstrapping from Excel files into entities for efficient application development and testing.
-tags: support-Database; support-database-featured
+tags: data import, entity management, excel integration, data bootstrapping, application development
 locale: en-us
 guid: b9f11658-2807-4efb-92ed-0413be0f2c63
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - create-edit-entities
+  - bootstrap-test-data-excel
 ---
 
 # Bootstrap an Entity Using an Excel File
@@ -50,4 +61,4 @@ When you publish the module, it executes the action to bootstrap the data. If th
 
 Check this demo on how to bootstrap your data from an Excel file, and [download the Sample](resources/BootstrapFromExcel.oml) and the [sample data](resources/SampleData.xls) used in it.
 
-<iframe width="750" height="500" src="https://www.youtube.com/embed/-8o-d_xrxbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://player.vimeo.com/video/874767575" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video displaying how to bootstrap Entity data from Excel.</iframe>

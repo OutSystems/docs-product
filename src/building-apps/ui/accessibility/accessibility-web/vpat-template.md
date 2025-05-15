@@ -1,11 +1,23 @@
 ---
 summary: OutSystems 11 (O11) supports the development of Section 508 compliant applications, as detailed in its Voluntary Product Accessibility Template (VPAT).
-tags: runtime-traditionalweb
+tags: accessibility, section 508 compliance, vpat, federal contracting, application development
 locale: en-us
 guid: c61481b5-bfd8-4d06-9024-e3185659b455
 app_type: traditional web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+  - platform administrators
+  - business analysts
+outsystems-tools:
+  - none
+coverage-type:
+  - remember
+topic:
+  - accessibility-screen-reader
 ---
 
 # VPAT - Voluntary Product Accessibility Template

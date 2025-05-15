@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb;
+tags: css customization, responsive design, user interface development, web development practices
 summary: Learn how to configure responsive tables in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 7b507cb7-8c2c-4705-a564-69e0bda38397
 app_type: traditional web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Responsive Table Reference

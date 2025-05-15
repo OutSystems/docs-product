@@ -1,11 +1,19 @@
 ---
 summary: Explore mobile app generation and distribution for iOS and Android using OutSystems 11 (O11), including developer enrollment and certificate management.
-tags: runtime-mobile; support-mobile
+tags: ios app distribution, android app generation, apple developer enrollment, certificate management, provisioning profiles
 locale: en-us
 guid: 952b6539-a884-4fed-bcdd-90d4145d41b7
 app_type: mobile apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+outsystems-tools:
+  - none
+coverage-type:
+  - apply
+  - evaluate
+  - understand
 ---
 
 # More Information on Generating and Distributing Mobile Apps

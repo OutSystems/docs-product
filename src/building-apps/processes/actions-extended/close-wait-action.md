@@ -5,6 +5,18 @@ guid: 9b85a078-cdb8-467d-8fca-001f5f88b4a0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems 11, workflow processes, process automation, action flow control, wait activity management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - remember
+topic:
+  - event-driven-processes
 ---
 
 # Close Wait Action

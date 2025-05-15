@@ -1,24 +1,31 @@
 ---
 summary: Removing unsafe directives from OutSystems CSP impacts JavaScript widgets and UI components by preventing the use of eval() and requiring updates to the logic
-tags: support-devOps; support-Security; support-Security-overview
+tags: content security policy, security best practices, javascript widgets, web application security
 locale: en-us
 guid: 657030e8-6825-492d-bfe4-e29a9610eafc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3265-714&t=D4PV7CTOyfcxYPJQ-0
+audience:
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
-# Impacts of removing unsafe directives
+
+# Impacts of removing unsafe directives (Reactive Web Apps Only)
 
 A Content Security Policy (CSP) helps to prevent attacks from untrusted sources. Your policy should detect and mitigate these attacks.
 
-For OutSystems to adhere to security guidelines, the forced usage of these directives was removed. These changes in behavior are controlled by Factory Configuration settings. By default the settings are enabled and set to True, meaning the platform enforces the usage of the following directives:
+For OutSystems to adhere to security guidelines, the use of unsafe-inline and unsafe-eval directives is now optional. This change applies to OutSystems Platform version 11.28.0 and higher and Factory Configuration version 11.2.1 and higher. The change in behavior of the directives are controlled by Factory Configuration settings. By default the settings are enabled and set to True, meaning the platform adds these directives.
 
-* unsafe-inline
-* unsafe-eval
 
 <div class="warning" markdown="1">
 
-Users can disable the use of these directives.  The impacts identified in this document only occur if you change the factory configuration settings from True to False.
+Disabling the use of these directives is done through configuration settings. The impacts identified in this document only occur if you change the factory configuration settings from True to False.
 
 </div>
 

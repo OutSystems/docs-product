@@ -1,11 +1,19 @@
 ---
 summary: Learn how to generate and publish your mobile app to app stores using OutSystems 11 (O11).
-tags: runtime-mobile; support-mobile
+tags: mobile publishing, app stores distribution, mobile app metadata, application screenshots, mobile app versioning
 locale: en-us
 guid: f33d65af-6f6e-4425-9db3-7c8a206a71c3
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=310:13
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Generate and Publish Your Mobile App to the Mobile App Stores

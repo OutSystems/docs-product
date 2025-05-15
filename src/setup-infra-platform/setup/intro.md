@@ -5,6 +5,20 @@ guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=255%3A60&mode=design&t=PPL7U8XyNSIpuC5w-1
+tags: cloud infrastructure, self-managed infrastructure, application deployment, application management, outsystems components
+audience:
+  - full stack developers
+  - platform administrators
+  - infrastructure managers
+outsystems-tools:
+  - service studio
+  - platform server
+  - lifetime
+  - service center
+  - integration studio
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Setting Up OutSystems
@@ -197,14 +211,19 @@ Do the following:
         1\. [Download the .NET 8.0 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) from Microsoft.  
         2\. Rename the .NET Installer to `DotNet_WindowsHosting_8.exe`
 
-    * **.NET Uninstall Tool v1.5.255402 (Optional)** 
+    * **.NET Uninstall Tool v1.5.255402 (Optional)**
 
         1\. [Download the .NET Uninstall Tool v1.5.255402](https://github.com/dotnet/cli-lab/releases/download/1.5.255402/dotnet-core-uninstall-1.5.255402.msi) from Microsoft.  
         2\. Rename the .NET Uninstall Tool Installer to `DotNetCore_Uninstall_15.msi`.
 
-    * **Build Tools 2015**  
+    * **Build Tools 2015 (Optional)** 
+
         1\. [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft.  
         2\. Rename the Build Tools Installer to `BuildTools_Full.exe`.
+
+<div class="info" markdown="1">
+*Build Tools is no longer a mandatory system requirement starting on Platform Server versions 11.35.0. Build Tools will no longer be installed by the Platform Server installer on these versions.
+</div>
 
 1. Additionally, for Platform Server version 11.21.0 or above, you need to manually install the following binary in the server to ensure the correct behavior of the SEO feature:
     

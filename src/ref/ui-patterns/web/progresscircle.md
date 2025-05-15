@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, web development, css customization, component customization, ui components
 summary: Explore UI customization options for the Progress Circle in OutSystems 11 (O11).
 locale: en-us
 guid: 26092480-0d4f-441c-aeca-c82f31a3df51
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A541&mode=design&t=Cx8ecjAITJrQMvRn-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Progress Circle Reference
@@ -37,15 +45,15 @@ Applies only to Traditional Web Apps.
 
 1. Set the Value of the Progress Circle's Progress parameter.
 
-1. To change the color of the Progress Circle based on values, create a condition and set limits. 
+1. To change the color of the Progress Circle based on values, create a condition and set limits.
 
     In this example, 3 colors represent different states of progress. Set the value of the ProgressColor parameter to `If(Progress <= 50, Entities.Color.Red, If( Progress > 50 and Progress < 75,  Entities.Color.Yellow ,  Entities.Color.Green))`.
-    
+
     ![Screenshot showing how to set the Progress Circle color based on value conditions in Traditional Web Apps](images/progresscircle-4-ss.png "Progress Circle Color Change Example")
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the color change in the Progress Circle based on different value conditions](images/progresscircle-5-ss.gif "Progress Circle Color Change Demonstration")
+    <iframe src="https://player.vimeo.com/video/998126828" width="292" height="304" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the color change in the Progress Circle based on different value conditions.</iframe>
 
 ### Remove the round corners of the Progress Circle
 

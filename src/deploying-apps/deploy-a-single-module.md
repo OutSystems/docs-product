@@ -1,11 +1,18 @@
 ---
 summary: Learn how to deploy a single module in OutSystems 11 (O11) to enhance deployment efficiency for Traditional Web apps.
-tags: runtime-traditionalweb
+tags: deployment strategy, version control, devops practices, efficiency optimization, deployment process
 locale: en-us
 guid: ee8de340-e9d3-4392-8c8e-a2f3d2c02340
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:54
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Deploy a Single Module
@@ -34,7 +41,7 @@ In the MyBigWebApp application, click the **Do Nothing** dropdown menu, and sele
 
 A pop-up opens, displaying all modules of the MyBigWebApp application. Notice the modules with a '+'(plus) sign, signaling that they have been changed.
 
-Check the MyBigWebApp4 module to deploy its latest version to Quality. Confirm the choice by pressing **Done**.
+Check the MyBigWebApp4 module to deploy its latest version to Quality. Confirm the choice by pressing **Close**.
 
 ![Pop-up window displaying all modules of MyBigWebApp with the MyBigWebApp4 module checked for deployment](images/deploy-a-single-module-2.png "Module Selection Pop-up")
 

@@ -6,6 +6,14 @@ guid: 3be54d9f-15c8-4e78-8a14-350f5d1f2845
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: client-side logic, action flow, drag-and-drop interface, logic execution, client actions
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Run Client Action

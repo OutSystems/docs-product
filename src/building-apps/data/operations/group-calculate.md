@@ -1,11 +1,22 @@
 ---
 summary: Explore how to calculate values from grouped data using aggregate functions in OutSystems 11 (O11).
-tags: support-application_development; support-Database; support-webapps
+tags: database operations, data aggregation, aggregate functions, data analysis, data grouping
 locale: en-us
 guid: d2578f60-c7a2-40fe-8e74-382aecad9b2f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:5
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - agregating-data
 ---
 
 # Calculate Values from Grouped Data

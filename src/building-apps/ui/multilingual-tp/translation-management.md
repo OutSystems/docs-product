@@ -1,11 +1,22 @@
 ---
 summary: Learn how to manage translations in OutSystems 11 (O11) by exporting and importing language resources using Excel or .resX formats.
-tags: 
+tags: localization, internationalization, export and import data, excel, .resx
 locale: en-us
 guid: f5ec781d-b346-4f47-b4cc-1ccb94a50312
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - translating-apps
 ---
 
 # Translation management

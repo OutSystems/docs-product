@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) addresses Invalid Variable Errors by requiring valid values for the Variable property in various widgets and tools.
-tags:
+tags: error handling, debugging, widgets, variables, truechange
 locale: en-us
 guid: 0eb3292f-592a-4301-a9ee-7ac3c598e70a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=737:321
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Invalid Variable Error

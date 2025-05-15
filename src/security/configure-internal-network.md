@@ -1,11 +1,19 @@
 ---
 summary: Learn to configure internal network settings in OutSystems 11 (O11) to restrict application access.
-tags: support-Security-overview
+tags: internal network configuration, security, access restrictions, network security, service center
 locale: en-us
 guid: 2326f357-2f2a-4a5c-a05d-fb20edd7be5f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:93
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - service center
+coverage-type:
+  - apply
 ---
 
 # Configure an Internal Network
@@ -17,6 +25,8 @@ OutSystems applications can set the access to specific elements (Web UI Flows (*
 This procedure applies only to **self-managed environments**. For OutSystems Cloud installations, contact [OutSystems Support](https://www.outsystems.com/SupportPortal/CaseOpen/) and provide the desired internal network addresses.
 
 </div>
+
+When configuring your internal network, ensure that you also add the IP addresses of any extended products you use (for example, AI mentor Studio, Workflow Builder). For more information, refer to [OutSystems network requirements](../setup-infra-platform/setup/network-requirements.md).
 
 To configure an internal network for your OutSystems environment, do the following:
 
@@ -39,6 +49,7 @@ When you define an internal network for a specific OutSystems environment, it wi
 * The Service Center console of the environment
 * The LifeTime console of the environment, if the environment where the configuration was applied is a LifeTime environment
 * Connections from Service Studio, Integration Studio and OSP Tool to the environment
+* System Components that are meant to be used by the development tools, like RESTDevService
 
 In the case you inadvertently define an internal network configuration that blocks you from accessing Service Center, you can:
 

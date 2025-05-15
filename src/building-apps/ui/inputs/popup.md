@@ -1,11 +1,19 @@
 ---
 summary: Explore how to effectively implement and manage popups in OutSystems 11 (O11) for both Reactive Web and Mobile as well as Traditional Web applications.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, ui components, user experience
 locale: en-us
 guid: f43cd1e1-13d3-4960-b025-4f75f9383ee8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:49
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Create and use a Popup
@@ -14,6 +22,8 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 You can use a popup to show information to users or ask them to enter information. Correctly used popups help you create a good user experience, because the users remain on the same page.
 
 ## Reactive Web and Mobile
+
+Here's a [video tutorial about using Popup in Reactive Web and Mobile App](https://www.youtube.com/watch?v=RrMARHvJBXU).
 
 To create and use a popup in Reactive Web and Mobile Apps:
 
@@ -55,11 +65,13 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
 1. Repeat steps 6 and 7 for the Open Popup button, substituting the variable value to True. Clicking the **Open Popup** button sets the ShowPopup variable to **True** and opens the popup.
 
-After following these steps and publishing the module, you can test the pattern in your app.
+After following these steps and publishing the module, you can test the pattern in your app. 
+
 
 <div class="info" markdown="1">
 
-Here's a [video tutorial about using Popup in Reactive Web and Mobile App](https://www.youtube.com/watch?v=RrMARHvJBXU).
+To enable the Accessibility Features offered by the **EnableAccessibilityFeatures** layout parameter in a popup, you must manually add the class "has-accessible-features" to the **Style Classes** parameter of the popup widget. Also, if you want to change the pop-up's size or other look and feel parameters, use the [Styles tab](../look-feel/styles-editor.md) to define your customizations.
+
 
 </div>
 

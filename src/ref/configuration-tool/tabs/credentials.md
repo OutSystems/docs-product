@@ -5,11 +5,20 @@ guid: 065a2e85-acf4-4895-87fd-5f176f406932
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: security, password management, configuration management, platform administration, system settings
+audience:
+  - platform administrators
+outsystems-tools:
+  - platform server
+coverage-type:
+  - remember
 ---
 
-# Credentials Tab
+# Credentials tab
 
 The **Credentials** tab allows you to define or reset the password of the Platform Server admin user.
+
+![Screenshot of the Credentials tab in the Configuration Tool](images/credentials-tab-ct.png "Credentials tab")
 
 ## Platform Server Administrator section
 

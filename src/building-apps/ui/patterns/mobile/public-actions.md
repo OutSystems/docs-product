@@ -1,12 +1,21 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: ui components, accordion widget, ui patterns, mobile app development, web app development
 summary: Learn to manage UI components in OutSystems 11 (O11) for enhanced web and mobile app functionality.
 locale: en-us
 guid: e4899a53-ca9e-4c13-b021-06518a34fba2
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:18
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
+
 # Public Actions
 
 <div class="info" markdown="1">

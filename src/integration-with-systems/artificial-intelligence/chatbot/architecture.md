@@ -1,11 +1,19 @@
 ---
 summary: Explore chatbot architecture and integration using OutSystems 11 (O11) and Azure services for enhanced app functionality.
-tags:
+tags: chatbot development, azure integration, azure bot service, azure bot framework, ai & machine learning
 locale: en-us
 guid: b7b3693d-5efc-4f7e-bef5-472a07175945
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=407:148
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
 ---
 
 # The chatbot architecture

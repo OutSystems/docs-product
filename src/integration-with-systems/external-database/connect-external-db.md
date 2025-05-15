@@ -1,11 +1,25 @@
 ---
 summary: Learn how to integrate OutSystems 11 (O11) with external databases for app development without data migration concerns.
-tags:
+tags: database integration, service center, external databases, data migration, deployment
 locale: en-us
 guid: d5fdba1a-e46c-4c92-9d6b-81be94eed163
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:69
+audience:
+  - full stack developers
+  - backend developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+  - integration studio
+coverage-type:
+  - apply
+  - understand
+topic:
+  - get-data-from-external-db
 ---
 
 # Integrate with an external database using Integration Studio
@@ -112,7 +126,13 @@ After configuring a database connection in Service Center, use Integration Studi
 
 1. In the **1-Click Publish** summary window, select the **Missing Configuration** warning and then select **Configure**.
 
-    ![1-Click Publish summary window in Integration Studio with a warning for missing configuration](images/connect-external-db-5.png "1-Click Publish Summary Window")  
+    ![1-Click Publish summary window in Integration Studio with a warning for missing configuration](images/connect-external-db-5.png "1-Click Publish Summary Window")
+
+<div class="info" markdown="1">
+
+When you import entities from an external database using this process, OutSystems **doesn't** copy the data into the Platform Database. Instead, the created entities act as references to the original tables or views in your external database. This means that all data reads and writes performed using these entities directly interact with the external database. There is no data migration involved. To learn more about how OutSystems integrates with external databases and the concept of data referencing, refer to [Integrating with External Databases](https://www.outsystems.com/tk/redirect?g=e4ba9d44-e8ef-43ad-9702-7a773e8d1afc).
+
+</div>
 
 ## Configure the extension to use a database connection
 

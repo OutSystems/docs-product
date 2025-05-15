@@ -1,11 +1,20 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates business processes into applications through process flows and various editing and execution tools.
-tags: support-webapps
+tags: business process management, process flows, process design, application development, workflow automation
 locale: en-us
 guid: 7f9ed2cf-c73b-467e-bdfa-cf4ba9655613
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Processes
@@ -45,14 +54,18 @@ A process can also be [executed](<../../ref/lang/auto/class-execute-process.md>)
 
 Service Studio provides you with mechanisms to reuse Processes among modules. You can expose your Processes to other modules or use Processes defined in another module.
 
-If you are using an Oracle, PostgreSQL or DB2 database, commit the transaction before launching a Process instance.
-
+If you are using an Oracle, PostgreSQL, or DB2 database and a Process needs access to specific data, commit any open transactions affecting this data before launching the Process instance. This ensures the data is accessible, as Process instances operate in a separate context and can't see uncommitted changes
 
 ## Process Execution
 
 When a process is launched a process instance is created and executed starting at the **Start** element of its flow. The process flow is then followed and each process activity found in the path has an **activity instance** created and executed.
 
 If you have a cycle in your process flow, each time the same process activity is found a new instance is created and executed.
+
+<div class= "info" markdown ="1">
+
+You should use cycles in processes with caution to avoid creating too many activity instances. There is a limit of 10000 activity instances per process, for performance and scalability reasons. Exceeding the limit suspends the process.
+</div>
 
 You may add business logic to validate your process instance execution, for example, when the process is launched, to validate whether the process instance can be executed.
 

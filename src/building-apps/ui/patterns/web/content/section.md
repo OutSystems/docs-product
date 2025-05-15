@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design, web development, outsystems, ui patterns, best practices
 summary: Explore how to effectively use the Section UI Pattern in OutSystems 11 (O11) to organize content in Traditional Web Apps.
 locale: en-us
 guid: 838dea96-eace-422c-8430-3a86522d2449
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4762%3A22956&mode=design&t=ANpsYvOCthr9AWot-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Section

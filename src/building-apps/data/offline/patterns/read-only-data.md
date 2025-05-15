@@ -1,11 +1,22 @@
 ---
 summary: Explore the Read-Only Data synchronization pattern in OutSystems 11 (O11) for efficient mobile app data management.
-tags: runtime-mobile
+tags: data synchronization, offline data handling, local storage, performance optimization, outsystems patterns
 locale: en-us
 guid: b671dd23-9977-4a68-97f4-82cd56bc6b4d
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:1
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
+  - apply
+topic:
+  - data-syncronization
+  - offline-synch
 ---
 
 # Read-Only Data

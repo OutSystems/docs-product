@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui design patterns, visibility control, cross-platform development, conditional content display, outsystems ui
 summary: Learn how to use the Display on Device UI pattern in OutSystems 11 (O11) to control element visibility across different devices.
 locale: en-us
 guid: cb68aaf9-4836-4eeb-b3f2-0a9fcc5164a4
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A34&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Display on Device

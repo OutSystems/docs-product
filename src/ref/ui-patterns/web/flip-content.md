@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, css selectors, events handling, traditional web patterns, flip content pattern
 summary: Explore the advanced use cases and CSS selectors for the Flip Content UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 478229ef-fead-4fea-be67-f0fdd66c7209
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:466
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Flip Content Reference
@@ -62,7 +70,7 @@ It is possible to interact with other patterns or trigger actions with FlipConte
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the interaction with the Flip Content pattern](images/flipcontent-11.gif "Flip Content Interaction Demonstration")
+    <iframe src="https://player.vimeo.com/video/1001631534" width="428" height="386" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with the Flip Content pattern.</iframe>
 
 ### Use the Toggle server action on Flip Content Pattern
 
@@ -94,4 +102,4 @@ It is possible to use a button or containers to interact with FlipContent by usi
 
 1. Publish and test.
 
-    ![Animated GIF demonstrating the toggle action on Flip Content pattern](images/flipcontent-image-10.gif "Flip Content Toggle Action Demonstration")
+    <iframe src="https://player.vimeo.com/video/1001631555" width="428" height="386" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the interaction with the Flip Content pattern.</iframe>

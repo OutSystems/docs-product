@@ -6,6 +6,15 @@ guid: 3d3bc1b9-9937-4e08-b4ce-f935022fc6dc
 app_type: traditional web apps
 platform-version: o11
 figma:
+tags: traditional web development, table widget, screen design, ui components, web development best practices
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Table Widget

@@ -1,11 +1,18 @@
 ---
 summary: OutSystems 11 (O11) provides a comprehensive HTTPRequestHandler API for managing HTTP requests and responses across various application types.
-tags: 
+tags: http, api management, web development, header manipulation, response customization
 locale: en-us
 guid: 762585b4-510c-4749-b5d9-646e1c46f2e0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # HTTPRequestHandler API
@@ -20,13 +27,13 @@ Action | Description | App type
 [AddAttributeToHtmlTag](<#AddAttributeToHtmlTag>) | Adds an attribute to the outermost HTML tag of the document (e.g. xmlns, manifest...).<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. 
 [AddFaviconTag](<#AddFaviconTag>) | Allows setting the favicon for the current page. You can use &quot;omlresources&quot; to add an icon file to your oml.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.  
 [AddHeader](<#AddHeader>) | Adds a header to the current HTTP response.<br/>This method has no effect in Ajax Requests. |Applies to all app types.
-[AddJavaScriptTag](<#AddJavaScriptTag>) | Adds a &lt;script&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.   
-[AddLinkTag](<#AddLinkTag>) | Adds a &lt;link&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.| Applies to Traditional Web apps only.  
-[AddMetaHttpEquivTag](<#AddMetaHttpEquivTag>) | Adds a &lt;meta&gt; tag with the http-equiv attribute to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.  
-[AddMetaTag](<#AddMetaTag>) | Adds a &lt;meta&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.| Applies to Traditional Web apps only.
+[AddJavaScriptTag](<#AddJavaScriptTag>) | Adds a `<script>` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.
+[AddLinkTag](<#AddLinkTag>) | Adds a `<link>` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.| Applies to Traditional Web apps only.  
+[AddMetaHttpEquivTag](<#AddMetaHttpEquivTag>) | Adds a `<meta>` tag with the http-equiv attribute to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.  
+[AddMetaTag](<#AddMetaTag>) | Adds a `<meta>` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.| Applies to Traditional Web apps only.
 [AddPostProcessingFilter](<#AddPostProcessingFilter>) | This method has no effect in Ajax Requests.<br/>Not implemented in Java. | Applies to Traditional Web apps only.  
 [AddSessionToURL](<#AddSessionToURL>) | Adds the current session identifier to a specified URL. | Applies to Traditional Web apps only.  
-[AddStyleSheetTag](<#AddStyleSheetTag>) | Adds a &lt;link rel=&quot;stylesheet&quot;&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.  
+[AddStyleSheetTag](<#AddStyleSheetTag>) | Adds a `<link rel="stylesheet">` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.  
 [GetCookie](<#GetCookie>) | Gets a cookie value. | Applies to all app types.
 [GetEntryURL](<#GetEntryURL>) | Returns the URL of an Entry. Includes the Personal Area and the session identifier if applicable. | Applies to Traditional Web apps only.  
 [GetFormValue](<#GetFormValue>) | Gets the value of a form field of the current HTTP request.<br/>If the field does not exist in the request an empty String will be returned. The same applies when the field exists but has an empty string as a value. | Applies to Traditional Web apps only.  
@@ -121,7 +128,7 @@ Value
 
 ### AddJavaScriptTag { #AddJavaScriptTag }
 
-Adds a &lt;script&gt; tag to the HTML of the current HTTP response.  
+Adds a `<script>` tag to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
@@ -132,15 +139,15 @@ JavaScriptURL
 
 Defer
 :   Type: Boolean. Default: False.  
-    Defines if the defer attribute is added to the &lt;script&gt; tag. Defaults to False.
+    Defines if the defer attribute is added to the `<script>` tag. Defaults to False.
 
 Charset
 :   Type: Text. Default: "UTF-8".  
-    The charset attribute of the &lt;script&gt; tag. Defaults to UTF-8.
+    The charset attribute of the `<script>` tag. Defaults to UTF-8.
 
 ### AddLinkTag { #AddLinkTag }
 
-Adds a &lt;link&gt; tag to the HTML of the current HTTP response.  
+Adds a `<link>` tag to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
@@ -159,7 +166,7 @@ Type
 
 ### AddMetaHttpEquivTag { #AddMetaHttpEquivTag }
 
-Adds a &lt;meta&gt; tag with the http-equiv attribute to the HTML of the current HTTP response.  
+Adds a `<meta>` tag with the http-equiv attribute to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
@@ -174,7 +181,7 @@ Content
 
 ### AddMetaTag { #AddMetaTag }
 
-Adds a &lt;meta&gt; tag to the HTML of the current HTTP response.  
+Adds a `<meta>` tag to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
@@ -220,7 +227,7 @@ URLWithSession
 
 ### AddStyleSheetTag { #AddStyleSheetTag }
 
-Adds a &lt;link rel=&quot;stylesheet&quot;&gt; tag to the HTML of the current HTTP response.  
+Adds a `<link rel="stylesheet">` tag to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
@@ -231,7 +238,7 @@ StyleSheetURL
 
 Charset
 :   Type: Text. Default: "UTF-8".  
-    The charset attribute of the &lt;script&gt; tag. Defaults to UTF-8.
+    The charset attribute of the `<script>` tag. Defaults to UTF-8.
 
 ### GetCookie { #GetCookie }
 
@@ -398,7 +405,7 @@ Value
 
 ArgumentsOut
 :   Type: Text.  
-    Inputed arguments string concatenated with the pair &lt;argument name&gt; = &lt;argument value&gt;.
+    Inputed arguments string concatenated with the pair `<argument name> = <argument value>`.
 
 ### GetRequest_Submit { #GetRequest_Submit }
 
@@ -653,7 +660,7 @@ Value
 
 ArgumentsOut
 :   Type: BinaryData.  
-    Inputed arguments list concatenated with the pair &lt;argument name&gt; = &lt;argument value&gt; in binary format.
+    Inputed arguments list concatenated with the pair `<argument name> = <argument value>` in binary format.
 
 ### PostRequest_AddBinaryArgument { #PostRequest_AddBinaryArgument }
 
@@ -677,7 +684,7 @@ Value
 
 ArgumentsOut
 :   Type: BinaryData.  
-    Inputed arguments list concatenated with the pair &lt;argument name&gt; = &lt;argument value&gt; in binary format.
+    Inputed arguments list concatenated with the pair `<argument name> = <argument value>` in binary format.
 
 ### PostRequest_Submit { #PostRequest_Submit }
 

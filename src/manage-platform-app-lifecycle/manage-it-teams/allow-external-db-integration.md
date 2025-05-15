@@ -5,6 +5,18 @@ guid: 2bac9add-33d1-4240-8cc7-d23a897f0415
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:84
+tags: security, it roles, permissions, service center, external database integration
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - integration studio
+  - service center
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Allow Integrations With External Databases
@@ -19,7 +31,13 @@ To do this:
 
     ![Screenshot showing the creation of a new IT role with Change and Deploy Applications permission](images/external-db-integration-new-role-lt.png "Creating a New IT Role")
 
-1. [Set the developer's default role](create-an-it-role.md#set-the-user-default-role) to the new role. Make sure you edit the user and set the user's **Default Role**. Setting the **Change and Deploy** role to the user at the Application level can also be applied. Assigning the new role to the user in a team doesn't grant the necessary permissions.  
+1. [Set the developer's default role](create-an-it-role.md#set-the-user-default-role) to the new role. Make sure you edit the user and set the user's **Default Role**.
+
+    <div class="info" markdown="1">
+
+    Assigning the new role to the user in a team or for a specific application doesn't grant the necessary permissions, as the default role takes precedence. If the permission level of the user's default role is lower than **Change and Deploy Applications**, the user will only be able to deploy changes that are limited to updating an existing entity's attributes or creating new attributes. Any other type of change will be restricted.
+
+    </div>
 
     ![Screenshot depicting how to set a developer's default role to a newly created IT role](images/external-db-integration-set-default-role-lt.png "Setting Developer's Default Role")
 
@@ -29,7 +47,7 @@ To do this:
 
     ![Screenshot of the Service Center console showing the security settings for a database connection](images/external-db-integration-connection-security-sc.png "Database Connection Security Settings")
 
-Granting the security level **Publish** to the **Integrator** role on the database connection or setting the **Change and Deploy** role to the developer at the Application level and granting the security level **Publish** on the database connection, allows the developers assigned with these settings to publish extensions, through Integration Studio, that use this database connection. This security level doesn't allow the developers to change the settings of the database connection.
+Granting the security level **Publish** to the **Integrator** role on the database connection, allows the developers assigned with this role as **Default Role** to publish extensions, through Integration Studio, that use this database connection. This security level doesn't allow the developers to change the settings of the database connection.
 
 Other developers will then be able to use those extensions to access the data on the external database.
 

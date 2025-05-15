@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) provides detailed logging for both exposed and consumed SOAP Web Services, accessible via the Service Center management console.
-tags: support-application_development; support-Integrations_Extensions
+tags: soap web services, error handling, logging configuration, monitoring, integrations
 locale: en-us
 guid: ddb0cd62-4de7-48c2-9f44-3a9240a4ae66
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:40
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service center
+coverage-type:
+  - apply
+topic:
+  - troubleshoot-webservices
 ---
 
 # Troubleshoot a SOAP Web Service

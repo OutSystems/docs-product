@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) enables integration with external databases, allowing application development using existing data without migration.
-tags: 
+tags: external database integration, database engines, integration techniques, service studio, system requirements
 locale: en-us
 guid: 3d24ee9a-d0c6-40ce-a2e0-daae72b67327
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - integration builder
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Integrate with an External Database

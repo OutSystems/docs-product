@@ -1,11 +1,18 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, user interface design, widget implementation, dependency management, user profile display
 summary: OutSystems 11 (O11) supports the User Initials UI Pattern for displaying user initials or images in a circular badge within Traditional Web Apps.
 locale: en-us
 guid: 079fe985-0d1e-435c-984a-cbd125908f13
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=245:23
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # User Initials
@@ -62,7 +69,7 @@ The following example demonstrates how you can display the initials of the regis
 
 1. Select the User Initials widget, and on the **Properties** tab, from the **Name** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the following expression and click **Done**.
+1. In the Expression Editor, enter the following expression and click **Close**.
 
     `GetUsers.List.Current.User.Name`
 

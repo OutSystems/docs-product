@@ -1,11 +1,21 @@
 ---
 summary: Explore how to navigate to a detail screen in OutSystems 11 (O11) for both Reactive Web and Mobile, and Traditional Web applications.
-tags:
+tags: ui navigation, list item interaction, web development, user interface, event handling
 locale: en-us
 guid: 407dfc26-80f5-440c-b3e1-56d8e7d27ce8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:17
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+topic:
+  - navigate-screens
 ---
 
 # Navigate to a Detail Screen

@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; 
+tags: ui patterns, progress indicators, user interface design, widgets, dependency management
 summary: Explore how to implement and customize the Progress Bar in OutSystems 11 (O11) for Traditional Web Apps to visually represent task completion.
 locale: en-us
 guid: 2a589d5e-0cd8-4dab-b9fa-bc7d12cacf23
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=243%3A28&mode=design&t=u4ANW5BJS7Flsdmg-1
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Progress Bar
@@ -68,14 +76,14 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
 1. On the aggregate screen, click **Filters**, then **Add Filter**.
 
-1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **DONE**. In this example, to get all of the shipped orders, we add the following logic:
+1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **Close**. In this example, to get all of the shipped orders, we add the following logic:
 
     `Order.Status = Entities.OrderStatus.Shipped`
 
     ![Adding a filter to the GetShippedOrders aggregate in Service Studio](images/progressbar-13-ss.png "Adding Filter to Aggregate")
 
 1. Double-click your screen name, and on the **Properties** tab, from the **Percentage** drop-down, select **Expression Editor**.
-Enter the logic for the Progress Bar and click **DONE**.  This displays the percentage value as the stroke on the Progress Bar.
+Enter the logic for the Progress Bar and click **Close**.  This displays the percentage value as the stroke on the Progress Bar.
 
     In this example, to show the percentage of shipped orders, we add the following:
 
@@ -85,7 +93,7 @@ Enter the logic for the Progress Bar and click **DONE**.  This displays the perc
 
 1. From the Toolbox, drag an Expression widget into the **Value** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the same logic as in step 11 (`GetShippedOrders.Count / GetTotalOrders.Count * 100`), and click **DONE**. This displays the percentage value on the Progress Bar.
+1. In the Expression Editor, enter the same logic as in step 11 (`GetShippedOrders.Count / GetTotalOrders.Count * 100`), and click **Close**. This displays the percentage value on the Progress Bar.
 
     ![Adding an expression widget to display the percentage value on the Progress Bar](images/progressbar-15-ss.png "Expression Widget for Progress Bar Value")
 

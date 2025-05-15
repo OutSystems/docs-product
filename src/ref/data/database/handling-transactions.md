@@ -5,6 +5,17 @@ guid: cb6c0a9e-1714-484f-90ed-74f2afa98f67
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database transactions, error handling, data consistency, transaction management, isolation levels
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
+topic:
+  - data-isolation
 ---
 
 # Handling transactions

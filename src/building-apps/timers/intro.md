@@ -5,6 +5,18 @@ guid: 7b104f5a-3077-4eab-9dd0-90c28ade4b67
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: asynchronous tasks, batch processing, scheduler service, exception handling, application configuration
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+topic:
+  - process-data-timers
 ---
 
 # Using Timers

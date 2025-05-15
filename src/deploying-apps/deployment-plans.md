@@ -5,6 +5,19 @@ guid: 13e13cb8-e058-4235-bead-06410a2b8c7d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:25
+tags: application deployment, environment management, deployment plans, version control, outsystems lifetime
+audience:
+  - platform administrators
+  - full stack developers
+  - architects
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
+  - understand
+  - apply
+topic:
+  - deployment-plan
 ---
 
 # Deployment Plans
@@ -58,19 +71,32 @@ To reuse a deployment plan from the Deployment Plans screen, do the following:
 
 1. In the pop-up window, choose the **source** and the **target** environments for the new plan.
 
+   <div class="info" markdown="1">
+   
+   From LifeTime 11.24.0 onwards, the **source** environment is pre-selected with the target environment from the original plan. You only need to select the **target** environment for the new plan.
+   You can also choose to keep the tags from the source plan by selecting **Keep the tags used in the original plan**.
+
+   </div>
+
     ![Screenshot of the popup window for reusing a deployment plan with options for source and target environments in LifeTime](images/deployment-plans-reuse-popup-lt.png "Reuse Deployment Plan Popup in LifeTime")
 
-You can choose to keep the tags that were in the source plan by selecting **Keep the tags used in the original plan**.  
+
 
 In this case, if some of the tagged versions of the original plan are not available for deployment (for example, if the version is not available in the selected source environment or if there's a more recent version of an application in the selected target environment), you will get a feedback message stating this situation, and you will be able to adjust the new deployment plan accordingly.  
 
 If you don't select this option, the plan will contain the same applications but with the latest tags available for deployment.
 
+<div class="info" markdown="1">
+
+From LifeTime 11.24 onwards, this option is **ON** by default. You can deploy different versions by turning it off.
+
+</div>
+
 **Notes:**
 
 * The Reuse Plan operation is only available for finished deployment plans that weren't aborted. For aborted plans, use the [Retry Plan](#retry) operation.
 
-* You can select any source and target environments, as long as the source environment has at least **one** application contained in the source plan. When you select a source environment that doesn't contain **any application** from the source plan, the pop-up shows a warning, and you cannot to move forward.
+* You can select any source and target environments, as long as the source environment has at least **one** application contained in the source plan. When you select a source environment that doesn't contain **any application** from the source plan, the pop-up shows a warning, and you can't move forward.
 
 * When you select a source environment that doesn't contain **some** of the applications in the source plan, the pop-up shows a message telling you that those applications will not be available in the new plan.
 
@@ -118,6 +144,7 @@ To create and edit deployment plans in parallel for the same target environment:
 
 To execute deployment plans in parallel for the same target environment:
 * **OutSystems Cloud infrastructures**: LifeTime 11.21.0 and higher
+* **Self-managed infrastructures**: LifeTime 11.24.0 and higher
 
 </div>
 
@@ -129,7 +156,7 @@ If you have independent delivery lines in your factory, you can create, edit, an
 
 * Deployments don't contain direct or indirect references (both as producers or as consumers) to any other module that is already being deployed for the same target environment in another deployment plan (otherwise, the deployment is blocked). 
 
-* Parallel deployments are enabled in LifeTime. By default, this is enabled for all environments.
+* Parallel deployments are enabled in LifeTime by default. At the environment level, it is possible to disable both the creation as well as the execution of parallel deployment plans. To disable the execution of parallel deployments, set the parallel deployment limit setting to 1.
 
 * Parallel deployment limit is defined for each environment in LifeTime. By default, the limit is 5. For OutSystems Cloud infrastructures, the limit cannot be increased above 5. For self-managed infrastructure, this limit can be increased above 5. 
 

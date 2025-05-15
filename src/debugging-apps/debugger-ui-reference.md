@@ -5,6 +5,18 @@ guid: ed50314c-7355-4233-9466-03fcf751bd1c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1354:19871
+tags: ide usage, reactive web apps, tutorials for beginners, debugging techniques, runtime analysis
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - remember
+topic:
+  - debug-troubleshoot-app-logic
 ---
 
 # Debugger Tab Reference

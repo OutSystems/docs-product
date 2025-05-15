@@ -1,11 +1,20 @@
 ---
 summary: Explore various application templates including built-in, custom, and Forge options in OutSystems 11 (O11) to accelerate app development.
-tags: support-application_development; support-Front_end_Development; support-Front_end_Development-overview; support-Mobile_Apps; support-webapps
+tags: application templates, outsystems ui, custom templates, forge community, service studio guide
 guid: 5a669286-c41f-49c6-afe6-00a911f5f162
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=157:17
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - understand
 ---
 
 # Application Templates
@@ -30,4 +39,4 @@ Custom application templates are the application templates you create. Check out
 
 ## Forge application templates
 
-Forge application templates are provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates). Once you install an application template from Forge, you can select it when you're creating a new app, just like other application templates.
+Forge application templates are provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates). Navigate to **Category** and install the app template. Once you install an app template from Forge, you can select it when you're creating a new app, just like other application templates.

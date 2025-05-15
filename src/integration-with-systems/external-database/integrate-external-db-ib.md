@@ -1,11 +1,24 @@
 ---
 summary: Learn how to integrate external databases with your apps using Integration Builder in OutSystems 11 (O11).
-tags:
+tags: database integration, external databases, data management, integration builder, outsystems platform
 locale: en-us
 guid: fcc67384-67da-41a3-b52b-e2491db85b0c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1208:5983
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - integration builder
+  - platform server
+coverage-type:
+  - understand
+  - apply
+topic:
+  - get-data-from-external-db
 ---
 
 # Integrate with an external database using Integration Builder
@@ -44,17 +57,14 @@ Once you establish a database connection, you can develop apps in Service Studio
 
 * If you use the [Internal Network configuration](../../security/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup-infra-platform/setup/network-requirements.md#integration-builder).
 
-## Known limitations
+## Known limitations and considerations
 
 * Previous external database extensions created in Integration Studio cannot be edited in Integration Builder.
-
 * External database extensions created in Integration Builder cannot be edited in Integration Studio.
-
 * An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables or collections from different databases, catalogs, or schemas, you must create several integrations.
-
-* It's not possible to define the following fields at attribute level: data types, length, mandatory, autonumber, delete rule, and description.
-
-* It's not possible to manually define identifiers.
+* It's not possible to define the following fields at attribute level: length, mandatory, autonumber, delete rule, and description.
+* It's only possible to change the data type mapping for Text and DateTime attributes. Text attributes can be changed to Currency, Decimal, Email and PhoneNumber. DateTime attributes can be changed to Date and Time.
+* It's only possible to change the Identifier, at the entity level, when the Primary Key is not defined at the external system. Only attributes of type Integer, LongInteger or Text can be selected as Identifier.
 
 ## Process overview
 
@@ -120,7 +130,7 @@ You can connect an integration in the following ways:
 
     * You're integrating with MongoDB.
 
-* [**Request a new connection 3**](#option-3): If you need a new connection to a relational database but don't have the required permissions, you can **request a new connection**. This option is only available for integrations with relational databases.
+* [**Request a new connection**](#option-3): If you need a new connection to a relational database but don't have the required permissions, you can **request a new connection**. This option is only available for integrations with relational databases.
 
 #### Use an existing connection { #option-1 }
 

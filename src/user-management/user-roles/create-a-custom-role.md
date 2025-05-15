@@ -1,11 +1,23 @@
 ---
 summary: Learn how to create and manage custom roles in OutSystems 11 (O11) to control user access to application screens and operations.
-tags: support-Security; 
+tags: security, access control, user management, role management, application development
 locale: en-us
 guid: 53e7e31f-233a-4495-8d3c-5f931cb35ccd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:117
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+  - remember
+topic:
+  - create-app-role
 ---
 
 # Create and Use Roles

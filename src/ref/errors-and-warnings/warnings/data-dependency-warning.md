@@ -5,6 +5,15 @@ guid: 85799d04-70f9-41a2-8f2e-fb4f457747c5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data fetching, client actions, ui population, data management, debugging
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Data Dependency Warning

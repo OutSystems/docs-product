@@ -5,6 +5,16 @@ guid: 23c1ff9e-cfa0-4efc-9406-f7bec7187f24
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:29
+tags: user management, security policy, it user permissions, roles and permissions, environment configuration
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - apply
+topic:
+  - create-a-role
 ---
 
 # Create and Assign Roles

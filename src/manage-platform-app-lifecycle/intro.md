@@ -1,16 +1,26 @@
 ---
 summary: Explore application lifecycle management in OutSystems 11 (O11) using LifeTime for deployment, security, and IT user management across all environments.
-tags: support-Application_Lifecycle; support-Application_Lifecycle-overview
+tags: application_lifecycle_management, deployment_processes, impact_analysis, hotfix_deployment, it_user_management, security
 locale: en-us
 guid: e9f6f711-2df2-42a0-90c1-3b9bc8b3926b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: 
+figma:
+audience:
+  - platform administrators
+  - full stack developers
+outsystems-tools:
+  - lifetime
+coverage-type:
+  - remember
+  - understand
 ---
 
 # Managing OutSystems platform and application lifecycle
 
 Application Lifecycle Management (ALM) is the continuous process of managing applications throughout their entire lifecycle: from development to maintenance.
+
+## LifeTime Management Console
 
 **LifeTime** is a unified console with visibility of all environments in your infrastructure. It manages the deployment of applications, IT users, and security across all environments.  
 
@@ -30,9 +40,17 @@ Security
 
 In LifeTime you have visibility over all environments in your infrastructure. To configure and monitor a specific environment, you can use the management console of the environment (Service Center).
 
+### Daily synchronization
+
 To keep LifeTime and your environments in sync, LifeTime automatically performs a daily synchronization operation. This operation includes the following data:
 
 * IT Users, IT Roles and IT Teams
 * Permissions
 * Environment status
 * Version information of Applications and Modules and their configurations
+
+The synchronization should run while the infrastructure is on low activity. To change the starting time for the daily sync process in LifeTime:
+
+* **Self-managed infrastructures**: Go to **Infrastructure** > **LifeTime Settings**. Then, edit the **Daily Synchronization schedule**.
+
+* **OutSystems Cloud infrastructures**: Go to **Environments**, select **Options** on the right of the screen, and choose **LifeTime Settings**. Then, edit the **Daily Synchronization schedule**.

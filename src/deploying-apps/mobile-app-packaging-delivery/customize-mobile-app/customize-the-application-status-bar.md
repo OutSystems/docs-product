@@ -1,11 +1,18 @@
 ---
 summary: Explore how to customize the application status bar in mobile apps using OutSystems 11 (O11) without plugins.
-tags: runtime-mobile; support-Front_end_Development-featured
+tags: custom ui development, mobile app design, ui customization, application development, user experience enhancements
 locale: en-us
 guid: 3a9110d2-7128-413c-a6a4-3b2deed94d87
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:224
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Customize the Application Status Bar
@@ -16,7 +23,9 @@ Applies only to Mobile Apps.
 
 </div>
 
-The app status bar in mobile apps is black by default and it's always visible. This behavior is customizable without using any plugin by following the instructions presented in the next section.
+Since MABS 11, the native status bar in mobile apps has been transparent and appears in front of the app content by default. This behavior can be customized without using any plugin by following the instructions presented in the next section.
+
+For previous MABS versions, the status bar is black and above the app content by default.
 
 ## Customizing the Status Bar
 
@@ -35,10 +44,10 @@ The app status bar in mobile apps is black by default and it's always visible. T
 
 Property  |  Values  |  Description  
 ---|---|---  
-StatusBarOverlaysWebView  | `true`  <br/> `false` |  Defines whether the content of your app starts after the status bar or can appear behind the status bar.<br/>If set to `true` , the content will appear behind the status bar.  
-StatusBarBackgroundColor  |`#000000` to `#FFFFFF` |  The background color of the status bar. To have the status bar transparent, don't set this property.<br/>Expected color format: `#RRGGBB`.  
-StatusBarStyle  | `default` <br/>`lightcontent` |  Defines the style of the status bar text. When set to`default` (or **not set**), the status bar text appears with the mobile platform's default color.<br/>When set to `lightcontent`, the status bar text shows in a light color defined by the mobile platform (usually white).  
-  
+StatusBarOverlaysWebView  |  `true` <br/> `false` |  Defines whether the content of your app starts after the status bar or can appear behind the status bar.<br/>If set to `true` or **not set** in MABS 11 or newer, the content will appear behind the status bar.<br/>If set to `false` or **not set** in MABS 10, the content will start after the status bar.
+StatusBarBackgroundColor  |  `#000000` to `#FFFFFF` |  The background color of the status bar. This is only used when the app content starts after the status bar.<br/>Expected color format: `#RRGGBB`.  
+StatusBarStyle  |  `default` <br/> `lightcontent` <br/> `darkcontent` |  Defines the style of the status bar text and icons.<br/>When set to `default` (or **not set**), the status bar text and icons appear with the mobile platform's default color.<br/>When set to `lightcontent` or `darkcontent`, the status bar text and icons appear in a light or dark color defined by the mobile platform.
+
 ## Status Bar JSON Template
 
 Use the following template as a reference for defining a custom behavior for the application status bar. Depending on your use case, you can include just one of the properties in your extensibility configurations:

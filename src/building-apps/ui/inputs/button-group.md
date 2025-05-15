@@ -1,11 +1,19 @@
 ---
 summary: Explore how to implement single-choice selection using radio buttons and button groups in OutSystems 11 (O11).
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, ui design, form inputs
 locale: en-us
 guid: 3eb6105e-2157-472f-972f-f3cc133043a5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:40
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
 ---
 
 # Pick Only One Option in a Group of Choices

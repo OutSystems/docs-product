@@ -1,11 +1,22 @@
 ---
 summary: Explore how to design and manage email content in OutSystems 11 (O11) using Service Studio's UI elements and templates.
-tags: support-application_development,
+tags: email design, ui flows, email templates, lightweight styles, ui elements
 locale: en-us
 guid: 455d5651-9b51-4de7-8f8a-5888ab78d78e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=855:1293
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
+topic:
+  - how-to-create-emails
 ---
 
 # Managing emails
@@ -96,7 +107,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
 1. Drag an **Expression** widget to the Email. The expression editor opens.
 
-1. Enter `"Hello, " + Handle + "!"` and click **Done**.
+1. Enter `"Hello, " + Handle + "!"` and click **Close**.
 
     ![Preview of an Email in Service Studio showing a personalized greeting using an Expression widget](images/expression-preview-ss.png "Email Preview")
 

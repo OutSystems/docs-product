@@ -1,11 +1,18 @@
 ---
 summary: Explore error handling in OutSystems 11 (O11) by implementing error handlers in web flows or adjusting theme settings for improved application robustness.
-tags:
+tags: error handling, web flows, theme customization, exception handling, application robustness
 locale: en-us
 guid: 1515b96c-fb4b-463c-836b-976a822b00fa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # No Error Handling Warning

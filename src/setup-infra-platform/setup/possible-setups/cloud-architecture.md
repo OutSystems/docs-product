@@ -1,11 +1,21 @@
 ---
 summary: OutSystems 11 (O11) features a secure, AWS-hosted cloud network architecture with dedicated environments and advanced security controls.
-tags:
+tags: cloud architecture, amazon web services, security, virtual private cloud, web application firewall
 locale: en-us
 guid: b6b4709a-59b4-45e4-b29d-2f78d8bb8f19
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=352:86
+audience:
+  - platform administrators
+  - tech leads
+  - infrastructure managers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - none
+coverage-type:
+  - understand
 ---
 
 # OutSystems Cloud network architecture
@@ -18,7 +28,7 @@ Each customer has a **dedicated set of virtual machines and database instances**
 
 OutSystems provides **segregated environments** for development, testing, and production, running on different virtual server instances.
 
-OutSystems Cloud uses a layer of [AWS Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html), acting as firewalls, to control the traffic allowed between the customer environments and the internet. The several Security Groups define a granular access control per environment and per asset.
+OutSystems Cloud uses a layer of [AWS Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html), acting as firewalls, to control the traffic allowed between the customer environments and the internet. The several Security Groups define a granular access control per environment and per asset. When you have infrastructures in different regions, the communication between OutSystems LifeTime and customer environments is securely routed over HTTPS.
 
 Additionally, OutSystems shields each environment using a **Web Application Firewall (WAF)**, which blocks malicious traffic from reaching the running web applications. To ensure that OutSystems keeps full flexibility on the reaction to evolving security threats, maximum availability, and compatibility with OutSystems product evolution, the same WAF's policies apply to all customers.
 
@@ -33,7 +43,7 @@ Depending on the [OutSystems Cloud edition](https://www.outsystems.com/legal/suc
 
 ### Communications with OutSystems tools
 
-Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/intro.md), [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md), [Integration Builder](../../../integration-with-systems/integration-builder/intro.md),[Workflow Builder](../../../building-apps/case-management-workflow/workflow-builder/intro.md), and [Experience Builder](../../../building-apps/experience-builder/intro.md):
+Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/intro.md), [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md), [Integration Builder](../../../integration-with-systems/integration-builder/intro.md), and [Workflow Builder](../../../building-apps/case-management-workflow/workflow-builder/intro.md). 
 
 ![Diagram showing the communication flow between OutSystems Cloud environments and various OutSystems tools](images/communication-between-environments-tools-diag.png "Communication Flow with OutSystems Tools")
 

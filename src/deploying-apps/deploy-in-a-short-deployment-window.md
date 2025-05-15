@@ -5,6 +5,18 @@ guid: d51c949d-d74e-4754-a9ff-ae8c83013ebb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:65
+tags: deployment strategies, database updates, application lifecycle management, continuous deployment, environment management
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - lifetime
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - zero-downtime-deployments
 ---
 
 # Deploy in a Short Deployment Window

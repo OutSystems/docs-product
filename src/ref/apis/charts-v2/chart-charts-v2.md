@@ -1,11 +1,19 @@
 ---
-tags:
-summary: Explore customizable charting options in OutSystems 11 (O11) with the enhanced Charts API v2 and Highcharts 11.2.0 integration.
+tags: charting libraries, data visualization, highcharts integration, drag-and-drop ui, service studio chart tools
+summary: Explore customizable charting options in OutSystems 11 (O11) with the enhanced Charts API v2 and Highcharts 11.4.8 integration.
 locale: en-us
 guid: CA58D796-3D68-4221-8DD8-33049ACEA9E5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - remember
 ---
 
 # Charts API v2
@@ -16,7 +24,7 @@ Available from OutSystems Charts v3.0.0. For more information on how to use the 
 
 </div>
 
-The Charts API v2 allows you to create, populate, and customize charts. OutSystems uses Highcharts 11.2.0 to generate the charts. For more information about implementation and the API, see the [Highcharts documentation](https://api.highcharts.com/highcharts/).
+The Charts API v2 allows you to create, populate, and customize charts. OutSystems uses Highcharts 12.1.2 to generate the charts. For more information about implementation and the API, see the [Highcharts documentation](https://api.highcharts.com/highcharts/).
 
 ## Charts
 
@@ -56,8 +64,8 @@ Collection of all client actions that trigger the API methods to customize and e
 
 |Widget|Description|
 |---|---|
-|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/).|
-|SetHighchartsXAxisConfigs|Extend the x-axis properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis).|
-|SetHighchartsYAxisConfigs|Extend the y-axis properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis).|
-|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/series).|
-|UpdateChartColorScheme|A list of color values to use for the chart. Some of the formats accepted are: HTML, rgb, rgba and hex. |
+|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/).|
+|SetHighchartsXAxisConfigs|Extend the x-axis properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis).|
+|SetHighchartsYAxisConfigs|Extend the y-axis properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis).|
+|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/series).|
+|UpdateChartColorScheme|A list of color values to use for the chart. Some of the formats accepted are HTML, RGB, rgba, and hex. |

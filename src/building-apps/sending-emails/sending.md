@@ -1,11 +1,22 @@
 ---
 summary: Explore email sending and triggering functionalities in OutSystems 11 (O11) with detailed steps and examples for creating server actions and UI triggers.
-tags: support-application_development,
+tags: email integration, server-side logic, ui implementation, email automation, service studio usage
 locale: en-us
 guid: c24bedc2-2f7b-4275-b3af-58b08b4a5b2e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=857:0
+audience:
+  - full stack developers
+  - frontend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - apply
+  - understand
+topic:
+  - how-to-send-emails
 ---
 
 # Sending emails

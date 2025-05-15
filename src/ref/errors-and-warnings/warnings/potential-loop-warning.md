@@ -5,6 +5,15 @@ guid: 6a94d155-a80f-423c-95c5-5267e603a46d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: outsystems, infinite loops, event handling, application logic, best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - unblock
 ---
 
 # Potential Loop at Runtime Warning
@@ -18,7 +27,7 @@ Cause
 :   The OnRender event occurs every time the screen or block data changes. If you change the screen or block data inside the OnRender action, you will trigger the OnRender action again, causing an infinite loop.
 
 Recommendation
-:   Don't change screen or block data in the [OnRender](<../../../building-apps/logic/screen-block-lifecycle-events.md#on-render>) action.
+:   Don't change screen or block data in the [OnRender](<../../../building-apps/ui/screens/screen-block-lifecycle-events.md#on-render>) action.
 
 ---
 
@@ -31,4 +40,4 @@ Cause
 :   The OnAfterFetch action of an Aggregate or Data Action runs right after it finishes fetching data. If you refresh the Aggregate or Data Action inside its own OnAfterFetch action, it will start fetching data again and run the OnAfterFetch action afterwards, causing an infinite loop.
 
 Recommendation
-:   Remove the Aggregate or Data Action refresh from its own [OnAfterFetch](<../../../building-apps/logic/screen-block-lifecycle-events.md#on-after-fetch>) action.
+:   Remove the Aggregate or Data Action refresh from its own [OnAfterFetch](<../../../building-apps/ui/screens/screen-block-lifecycle-events.md#on-after-fetch>) action.

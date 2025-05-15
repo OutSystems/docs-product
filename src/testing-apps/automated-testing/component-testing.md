@@ -5,13 +5,25 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/9aIL4vSsuMMBfHMQDs8PLm/OutSystems%20Testing%20Guidelines?node-id=642:247
+tags: component testing, bddframework, gherkin syntax, test automation, quality assurance
+audience:
+  - frontend developers
+  - full stack developers
+  - test engineers
+outsystems-tools:
+  - service studio
+  - forge
+  - bddframework
+coverage-type:
+  - understand
+  - apply
 ---
 
 # Component Testing
 
 For component testing, we recommend using the [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework), which is available on OutSystems Forge. This framework provides a set of web blocks and actions that enable the creation of tests in the Gherkin **Given-When-Then syntax**. Tests are built in a UI screen where the structure of the test is defined by the web blocks provided by the framework, and its logic is implemented through screen actions.
 
-![](images/component-bdd-create.gif?width=750)
+<iframe src="https://player.vimeo.com/video/1003104425" width="750" height="499" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the four different web blocks available to build your tests.</iframe>
 
 <!-- Test Creation Example -->
 
@@ -39,16 +51,16 @@ Consider the example architecture below. We can clearly see that for each OutSys
 
 * If End-User App #1 has strong coupling with the core app (for example, references public actions), then it is okay for the End-User Test App #1 to be strongly coupled to the core test app as well.
 * For OutSystems 11 or higher, if it's loosely coupled to the core app and only references service actions and entities, then the test app must be loosely coupled as well.
-* If it only references the core app through REST/SOAP APIs, then the test application may only reference REST/SOAP from the core test app too. 
+* If it only references the core app through REST/SOAP APIs, then the test application may only reference REST/SOAP from the core test app too.
 
 ![Diagram illustrating the separation between OutSystems applications and their corresponding test applications.](images/component-test-code-isolation-1.png "Component Test Code Isolation")
 
-In terms of dependencies between a test application and OutSystems applications, the test application should only reference: 
+In terms of dependencies between a test application and OutSystems applications, the test application should only reference:
 
 * Public Entities/Actions/Services/SOAP/RESTs from the corresponding OutSystems application
 * Entities from any other OutSystems application that are also referenced from the corresponding OutSystems application
 
-Complying to these rules ensures that the developed tests do not introduce any unwanted dependencies that could potentially impact the deployment plans when promoting new application and/or test code to other environments. 
+Complying to these rules ensures that the developed tests do not introduce any unwanted dependencies that could potentially impact the deployment plans when promoting new application and/or test code to other environments.
 
 ![Diagram showing the allowed dependencies between a test application and OutSystems applications.](images/component-test-code-isolation-2.png "Test Application Dependencies")
 
@@ -60,7 +72,7 @@ This means that if you need to change it, you'll only do it once, and all tests 
 
 Experienced developers may already know to identify such patterns upfront. Others may identify them only at a later stage, after implementing the first tests. The important thing is to keep extracting patterns as you identify them and resist the urge to copy-paste. Test code maintenance will benefit greatly as the test base grows bigger.
 
-Notice that it is perfectly fine, and even sometimes desirable, to reuse common patterns from other test applications, as long as the dependency rules mentioned above are followed. 
+Notice that it is perfectly fine, and even sometimes desirable, to reuse common patterns from other test applications, as long as the dependency rules mentioned above are followed.
 
 ## Component Test Design Patterns
 
@@ -70,4 +82,4 @@ For simplicity sake, we earlier described that you start defining a test scenari
 
 By following this approach, each test implements in its own separate web block instead of directly in the test screen. After each test web block is implemented, they can enter the test screen along with the FinalResult web block. When you access the screen, all tests included run just as if they were defined directly on the screen.
 
-This will increase test execution speed, which is a key factor when tests run in the scope of a CI/CD pipeline. It also decreases the consumption of AOs in the OutSystems environment. Furthermore, it promotes the centralization of tests that are somehow related, which will make their management easier. Besides, you can always add more tests to the screen, if it makes sense to do so. 
+This will increase test execution speed, which is a key factor when tests run in the scope of a CI/CD pipeline. It also decreases the consumption of AOs in the OutSystems environment. Furthermore, it promotes the centralization of tests that are somehow related, which will make their management easier. Besides, you can always add more tests to the screen, if it makes sense to do so.

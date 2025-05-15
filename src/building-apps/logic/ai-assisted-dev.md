@@ -1,11 +1,21 @@
 ---
 summary: Explore AI-driven logic development enhancements in OutSystems 11 (O11) with the Code Mentor feature for streamlined app creation.
-tags: support-application_development;
+tags: ide usage, reactive web apps, tutorials for beginners, ai and machine learning integration, logic development
 locale: en-us
 guid: 9ca5abbb-ff2d-4aaf-9437-a6565e9df8f6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4482%3A3215&mode=design&t=GF97AOUqsRf9tsAh-1
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+  - unblock
 ---
 
 # Code Mentor - Logic suggestions

@@ -5,6 +5,18 @@ guid: be5be9b1-2021-4aef-919c-4b36b930255d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:27
+tags: ui design, user interface, service studio, outsystems, app development
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - apply
+topic:
+  - navigate-screens
 ---
 
 # UI Flows

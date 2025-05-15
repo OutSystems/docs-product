@@ -5,6 +5,15 @@ guid: 0a549110-5a84-4c90-ae2a-adc8fd30b31d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2333:4131
+tags: ide usage, reactive web apps, tutorials for beginners, extension development, technical setup
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+  - platform server
+coverage-type:
+  - remember
 ---
 
 # Integration Studio

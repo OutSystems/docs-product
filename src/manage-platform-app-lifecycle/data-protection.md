@@ -1,11 +1,22 @@
 ---
 summary: Explore lifecycle management and data protection features in OutSystems 11 (O11), including personal data handling and security mechanisms.
-tags:
+tags: data protection, it user management, security, personal data management, brute force attack protection
 locale: en-us
 guid: 9a5711af-7947-4f71-9569-ae016863db49
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service center
+  - lifetime
+coverage-type:
+  - understand
+  - remember
 ---
 
 # Lifecycle Management and Data Protection
@@ -32,7 +43,7 @@ In order to manage IT Users, both Service Center and LifeTime store the followin
 
 Service Center and LifeTime have a system that protects against brute force attacks that systematically try to guess user passwords.
 
-This system offers protection against two levels of attacks, user-level attacks and IP-level attacks (more details [here](../security/protection-against-brute-force-attacks.md)); and needs to store some personal user data in order to be functional. The personal information stored in **LoginAttempt** system entity (physical table name: **OSSYS\_LOGIN\_ATTEMPT**) is:
+This system offers protection against two levels of attacks, user-level attacks and IP-level attacks (more details [here](../security/protection-against-brute-force-attacks.md)); and needs to store some personal user data to be functional. The personal information stored in **LoginAttempt** system entity (physical table name: **OSSYS\_LOGIN\_ATTEMPT**) is:
 
 * Username (for example, Amos Tesen)
 * IP Address (for example, 192.0.2.0)

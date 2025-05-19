@@ -21,7 +21,7 @@ topic:
   - add-widget-ui-pattern
 ---
 
-# Create Your First Mobile App
+# Create your first Mobile App
 
 <div class="info" markdown="1">
 
@@ -128,9 +128,9 @@ This links the title of the tasks to a newly created screen. We will use this ne
 
 Now we will define the logic that runs when the end users press the Save button:
 
-1. Double-click the **Save** button, ensure you click outside of the button text area, to define the logic associated with the button. This creates a new screen action named **SaveOnClick**.
+1. Double-click the **Save** button, ensure you click outside of the button text area, to define the logic associated with the button. This creates a new client action named **SaveOnClick**.
 
-1. In the Logic tab create a server action named **TaskCreateOrUpdate**.
+1. In the Logic tab, create a server action named **TaskCreateOrUpdate**.
 
 1. Add an input parameter and set its name to **Task**. Set the data type to **Task**.
 
@@ -138,19 +138,15 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. Set the **Source** to the input parameter **Task**.
 
-1. Next, we'll need to assign value of the output parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id`.
+1. Next, we'll need to set the value of the output parameter **TaskId** to the Id returned by **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to `TaskId`, and the **Value** to `CreateOrUpdateTask.Id`.
     
     ![Screenshot of the logic flow for creating or updating a task in the OutSystems Service Studio](images/wrapper-create-ss.png "Task Create or Update Logic")
 
-<!---1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the **True** branch of the **If**. Set the **Source** property to `GetTaskById.List.Current`.
-
-1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task.-->
-
 1. Navigate to the **Interface** tab and double-click the **SaveOnClick** action.
 
-1. In the **Logic** tab, drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If**. Set the **Task** property to `GetTaskById.List.Current.task`.
+1. In the **Logic** tab, drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If**. Set the **Task** parameter to `GetTaskById.List.Current.Task`.
 
-1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task. 
+1. Drag the screen **Tasks** from the **Interface** tab to the **End** node so that the user is redirected back to the main screen after saving a task. 
 
    ![Screenshot showing the Save button logic in the TaskDetail screen for saving task changes](images/create-mobile-11.png "Save Button Logic")
 
@@ -164,21 +160,21 @@ Now let's add the functionality to mark tasks as complete. Let's implement that 
 
     ![Screenshot of the Swipe Left Action being configured to mark tasks as done](images/create-mobile-14.png "Swipe Left Action for Task Completion")
 
-1. Double-click an empty area of the List Action to define the logic associated with the Swipe Left Action.
+1. Double-click an empty area of the List Action to define the logic associated with the Swipe Left Action. This creates a new client action named **DoneOnClick**.
 
 1. Click the **Logic** tab and add a a Server Action. Name it *TaskDelete*. 
 
 1. Add an input parameter to the *TaskDelete* to receive the Task identifier. Set its name to *TaskId* and the Data Type to *Task Identifier*.
 
-1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
+1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the *Id* parameter to the input parameter *TaskId*.
 
     ![Screenshot depicting the logic for deleting a task in the OutSystems Service Studio](images/wrapper-delete-ss.png "Task Delete Logic")
 
-1. Go back to the **Interface** tab and double click the action **DeleteTask**. Drag the **TaskDelete** server action to the flow. and set the TaskId to the input parameter *TaskId*.
+1. Go back to the **Interface** tab and double click the **DoneOnClick** action. Drag the **TaskDelete** server action to the flow. Set the TaskId parameter to ```GetTasks.List.Current.Task.Id```.
 
 1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
 
-    ![Screenshot showing the Refresh Data action after deleting a task to update the task list](images/reactive-new-app-delete-refresh.png "Refresh Data After Task Deletion")
+    ![Screenshot showing the Refresh Data action after deleting a task to update the task list](images/reactive-new-app-delete-refresh-ss.png "Refresh Data After Task Deletion")
 
 
 ## Allow adding tasks
@@ -190,7 +186,7 @@ Drag an **Icon** widget from the Toolbox to the Actions placeholder in the top r
 
     ![Screenshot of adding a plus icon to the Actions placeholder for creating new tasks](images/create-mobile-12.png "Adding New Task Icon")
 
-1. Right-click the **plus** icon and choose **Link** > **MainFlow\TaskDetail**.
+1. Right-click the **plus** icon and choose **Link to** > **MainFlow\TaskDetail**.
 
     ![Screenshot showing the plus icon linked to the TaskDetail screen for adding new tasks](images/create-mobile-13.png "Linking Plus Icon to TaskDetail Screen")
 

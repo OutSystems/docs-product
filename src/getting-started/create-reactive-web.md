@@ -24,7 +24,7 @@ topic:
   - add-widget-ui-pattern
 ---
 
-# Create Your First Reactive Web App
+# Create your first Reactive Web App
 
 <div class="info" markdown="1">
 

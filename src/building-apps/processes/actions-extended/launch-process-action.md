@@ -34,6 +34,12 @@ The input parameters must be in the same order and of the same type as what is d
 
 </div>
 
+<div class="info" markdown="1">
+
+Text input parameters are limited to 2000 characters. See [performance best practices for data modeling](../../data/modeling/data-model-best-practices.md#isolate-large-text-and-binary-data).
+
+</div>
+
 ## Output parameters
 
 * **Id**: Identifier of the created process. The `Id` argument is of type Process Identifier.

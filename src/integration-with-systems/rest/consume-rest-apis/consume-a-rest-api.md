@@ -37,7 +37,7 @@ In Service Studio, you can:
 
 ## Consume several methods of a REST API { #all-methods }
 
-You can consume several methods of a REST API (all API methods or just the methods you select) if that API is compliant with the [OpenAPI specification](https://swagger.io/resources/open-api/). REST APIs exposed by OutSystems are compliant with this specification.  
+You can consume several methods of a REST API (all API methods or just the methods you select) if that API is compliant with the [OpenAPI specification](https://swagger.io/resources/open-api/) up to OAS 3.0. REST APIs exposed by OutSystems are compliant with this specification.  
 
 You can import OpenAPI specifications either by providing a URL or by selecting a specification file from the local file system.
 

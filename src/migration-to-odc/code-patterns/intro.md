@@ -75,6 +75,7 @@ These are the patterns that require changes in the ODC apps:
 * [Application with SQL Node](elem-sql-adapt.md)
 * [Asset contains REST APIs using built-in OAuth 2.0 authentication flow](elem-rest-oauth2.md)
 * [Asset with SAP BAPI connection](elem-sap.md)
+* [Adapt login and logout flow of migrated apps](execute-adapt-login-flow.md)
 
 ## Optional
 

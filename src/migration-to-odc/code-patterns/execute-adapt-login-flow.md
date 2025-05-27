@@ -3,7 +3,7 @@ summary: Learn more about how to adapt the login flow so that the users can set 
 tags: authentication, password management, data migration, o11 to odc migration, user experience
 guid: 08ed0f80-3e5c-4a5d-9955-7658ea3aa344
 locale: en-us
-app_type: mobile apps, reactive web apps, traditional web apps
+app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2216-288
 audience:
@@ -18,50 +18,38 @@ coverage-type:
 
 # Adapt login and logout flow of migrated apps
 
-After migrating the O11 code to ODC, you must modify the login and logout flow for ODC:
+The built-in authentication flow of apps is different in O11 and ODC, including the following:
 
-* During code migration, the login and logout actions of your migrated apps aren't automatically converted to ODC login and logout actions. This means you must manually replace the O11 login and logout flows with ODC flows in your migrated app. To do this, follow these steps:
+* The **Login** screen, the **Login** action, and the **UserInfo** block and its actions are different. Learn more about [these authentication flow elements in ODC](https://www.outsystems.com/tk/redirect?g=49853077-9937-4865-8183-3f1f9ff224c2).
+* By default, O11 apps don't include a built-in [reset password flow](https://success.outsystems.com/documentation/outsystems_developer_cloud/user_management/passwords/#reset) and email. If you intend to migrate user data, you shouldn't migrate user passwords. This means you must allow end users to set a new password before their first login in the migrated app.
 
-    * Adapt the Login actions and Login screen.
+## How to solve
 
-    * Adapt the UserInfo block and associated actions, like the Logout action.
+You must solve this pattern in ODC, after proceeding with the code migration to ODC.
 
-* During data migration, only the end users' email addresses are migrated to ODC, but their passwords are not. Therefore, you must adapt the login process to allow end users to set a new password. To do this, follow these steps:
-
-    * Add or replace the reset password actions, ensuring they're linked to the Login screen, and add the password reset email.
-
-Once the end users have set a new password, they can log in to the ODC app using their email address and the new password. For detailed information about password reset, refer to [Password reset in ODC](https://www.outsystems.com/tk/redirect?g=41b86768-295e-4aeb-98ed-9a0f6db4cfd2).
+### Solve in ODC
 
 <div class="info" markdown="1">
 
-The following steps guide you in adapting your migrated app's login and logout flows. The steps use non-customized O11 Login actions and non-customized UserInfo block and actions as a basis.
+The following steps apply only to migrated apps that use the built-in authentication flow.
+The steps use non-customized O11 Login actions and non-customized UserInfo block and actions as a basis.
 Make sure to check for differences in your app, and that you include your customizations after completing these steps.
 
 </div>
 
-## Prerequisites
+After migrating your app to ODC, adapt the login and logout flows by following these steps:
 
-Before modifying the login and logout flows, ensure the following:
+![Displaying the process for adapting login flow in the migrated app in ODC Studio](images/adapt-login-flow.png "Adapting login flow in the migrated app in ODC Studio")
 
-* You have [migrated code from O11 to ODC](execute-how-to-migrate-code.md).
+* [Step 1. Create a boilerplate ODC app](#step-1)
 
-* Your migrated app uses the built-in authentication.
+* [Step 2. Adapt Login screen and actions](#step-2)
 
-## Adapt login and logout flows
+* [Step 3. Adapt UserInfo block and related actions](#step-3)
 
-After migrating your app to ODC, you can adapt the login and logout flows by following these steps:
+* [Step 4. Add reset password flow and email](#step-4)
 
-![Displaying the process for adapting login flow in the migrated app in ODC Studio](images/adapt-login-flow.png "Adapting login flow in the migrated appin ODC Studio")
-
-1. [Create a boilerplate ODC app](#step-0). 
-
-1. [Adapt Login screen and actions](#step-1).
-
-1. [Adapt UserInfo block and related actions](#step-2).
-
-1. [Add reset password flow and email](#step-3).
-
-### Create boilerplate ODC app { #step-0 }
+#### Step 1. Create boilerplate ODC app { #step-1 }
 
 To create a boilerplate ODC app to get the ODC elements you need, follow these steps:
 
@@ -69,7 +57,7 @@ To create a boilerplate ODC app to get the ODC elements you need, follow these s
 
 2. Ensure both the migrated app and this new boilerplate ODC app are open in ODC Studio.
 
-### Adapt Login screen and actions { #step-1 }
+#### Step 2. Adapt Login screen and actions { #step-2 }
 
 To adapt the Login actions and Login screen of your migrated app, follow these steps:
 
@@ -93,11 +81,11 @@ In your **migrated app**, change the following:
     1. Rename the **Username** local variable to `UserEmail`. 
         This helps ODC Studio auto-heal some TrueChange errors.
 
-    ![Screenshot showing the UserEmail local variable in the DoLogin action in ODC Studio.](images/rename-UserEmail-odcs.png "Screenshot of renaming local variable to UserEmail")
+    ![Screenshot showing the UserEmail local variable in the Login screen in ODC Studio.](images/rename-UserEmail-odcs.png "Screenshot of renaming local variable to UserEmail")
 
 1. In **migrated app** > **Interface** > **UI Flows** > **Common** UI flow, replace the **OnException** exception action with the **OnException** from **boilerplate app** > **Interface** > **UI Flows** > **Common** .
 
-### Adapt UserInfo block and related actions { #step-2 }
+#### Step 3. Adapt UserInfo block and related actions { #step-3 }
 
 To change the UserInfo block, follow these steps in your **migrated app**:
 
@@ -123,7 +111,7 @@ To change the UserInfo block, follow these steps in your **migrated app**:
 
 1. In **migrated app** > **Data** > **Client Variables** folder, paste the **UserPhotoURL** client variable from **boilerplate app** > **Data** > **Client Variables**.
 
-### Add reset password flow and email { #step-3 }
+#### Step 4. Add reset password flow and email { #step-4 }
 
 To add the reset password flow and email, follow these steps in your **migrated app**:
 
@@ -133,7 +121,7 @@ To add the reset password flow and email, follow these steps in your **migrated 
 
 1. Add the **StartResetPassword** system server action, by selecting **Add public elements**.  
 
-   This action sends the verification code to the email address entered by the user in the **RecoverPasswordRequest** screen. For more information about the system server and client actions, refer to[ User system actions](https://success.outsystems.com/documentation/outsystems_developer_cloud/outsystems_language_and_elements/system_actions/user/).
+   This action sends the verification code to the email address entered by the user in the **RecoverPasswordRequest** screen. For more information about the system server and client actions, refer to [User system actions](https://success.outsystems.com/documentation/outsystems_developer_cloud/outsystems_language_and_elements/system_actions/user/).
 
     ![Screenshot showing the StartResetPassword server action in the Server Actions folder in ODC Studio.](images/start-reset-password-odcs.png "Start Reset Password Action in ODC")
 

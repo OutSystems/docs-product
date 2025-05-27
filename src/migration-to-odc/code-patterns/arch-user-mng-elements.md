@@ -33,7 +33,7 @@ After migrating your apps, you need to redesign how your applications support us
 
 * Adjust your user management logic to [comply with ODC architecture](#changes).
 
-* If you have access to the Migration Kit, [adapt the login and logout flows of your migrated apps](https://success.outsystems.com/documentation/11/outsystems_11_to_odc_migration/execute_one_shot_migration/adapt_login_and_logout_flow_of_migrated_apps/) to ODC.
+* [Adapt the login and logout flows of your migrated apps](execute-adapt-login-flow.md) to ODC.
 
 ## User management functionality changes in ODC { #changes }
 

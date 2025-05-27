@@ -117,5 +117,7 @@ If you are unable to fix the issue, contact the OutSystems Support for guideline
 ## Next steps
 
 * If your apps use SQL queries, make sure you [adapt those SQL queries](../code-patterns/elem-sql-adapt.md).
-* You must [adapt login flow of your apps](execute-adapt-login-flow.md).
+* You must [adapt login flow of your apps](../code-patterns/execute-adapt-login-flow.md):
+    * During code migration, the login and logout actions of your migrated apps aren't automatically converted to ODC login and logout actions. This means you must manually replace the O11 login and logout flows with ODC flows in your migrated app.
+    * During data migration, only the end users' email addresses are migrated to ODC, but their passwords are not. Therefore, you must adapt the login process to allow end users to set a new password.
 * You may need to [configure some settings to ensure the apps work correctly](execute-configure-migrated-apps.md).

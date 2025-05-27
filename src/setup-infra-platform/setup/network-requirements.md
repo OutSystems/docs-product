@@ -59,7 +59,6 @@ The table below details the ports that need to be accessible in each server of a
 
 |Source|Destination|Port|Protocol|Notes|
 |------|-----------|----|--------|-----|
-|SysOps|Server|22/3389|TCP|Access the server through SSH or Remote Desktop|
 |Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps with MABS ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
 |Front-End|Controller (by default)<br/>— Depends on where the Cache Invalidation Service/RabbitMQ is installed.|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|

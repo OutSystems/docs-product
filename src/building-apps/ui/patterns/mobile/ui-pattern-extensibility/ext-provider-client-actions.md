@@ -155,5 +155,4 @@ In the following example, the Date Picker Pattern is set to appear flat on the s
 <div class="info" markdown="1">
 
 Everytime the **SetFlatpickerConfigs** client action is called, a destroy/init cycle of the provider is triggered, to update the Pattern in runtime. To mitigate a possible impact on performance, OutSystems recommend you only call this client action once.
-
 </div>

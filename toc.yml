@@ -739,6 +739,10 @@
             - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
         - href: integration-with-systems/mobile-plugins/inapp-browser/inapp-browser.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md
+        - topics:
+            - href: integration-with-systems/mobile-plugins/file-plugin/file-plugin-ref.md
+            - href: integration-with-systems/mobile-plugins/file-plugin/file-plugin-migration-guide.md
+            - href: integration-with-systems/mobile-plugins/file-plugin/file-plugin-version-3.md
         - href: integration-with-systems/mobile-plugins/file-transfer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/file-viewer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/firebase/intro.md
@@ -2049,3 +2053,4 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
+

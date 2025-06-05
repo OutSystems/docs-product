@@ -88,6 +88,12 @@ FormattedDateTime
 
 Replaces all occurrences of a specified regular expression pattern with a replacement string.
 
+<div class="warning" markdown="1">
+
+The Regex server actions shouldn't be used directly in client actions of reactive apps. Doing so exposes the regex pattern to the client side, allowing users to inspect or even change the pattern. As a security best practice, always wrap the Regex actions inside a server action to keep the regex pattern secure on the server.
+
+</div>
+
 *Inputs*
 
 Text
@@ -123,6 +129,12 @@ Result
 ### Regex_Search { #Regex_Search }
 
 Searches the input string for an occurrence of a regular expression.
+
+<div class="warning" markdown="1">
+
+The Regex server actions shouldn't be used directly in client actions of reactive apps. Doing so exposes the regex pattern to the client side, allowing users to inspect or even change the pattern. As a security best practice, always wrap the Regex actions inside a server action to keep the regex pattern secure on the server.
+
+</div>
 
 *Inputs*
 

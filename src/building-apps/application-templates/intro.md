@@ -19,7 +19,8 @@ coverage-type:
 
 # Application Templates
 
-An OutSystems app consists of modules that Service Studio bootstraps from the application template you select. Thanks to the application templates, the apps have many predefined elements that save you development time, like login screens, a theme, layouts.
+An OutSystems app consists of modules that Service Studio bootstraps from the application template you select.
+Thanks to the application templates, the apps have many predefined elements that save you development time, like login screens, a theme, layouts.
 
 There the following types of application templates:
 

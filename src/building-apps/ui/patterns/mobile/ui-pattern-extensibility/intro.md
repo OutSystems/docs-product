@@ -20,11 +20,13 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-This article refers to the latest version of each UI Pattern only. Some deprecated patterns use different providers and a different extensibility solution through the **AdvancedFormat** parameter.
+This article refers to the latest version of each UI Pattern only.
+Some deprecated patterns use different providers and a different extensibility solution through the **AdvancedFormat** parameter.
 
 </div>
 
-Some of  OutSystems UI Patterns are based on external providers. Although these providers have many different extensibility options available, OutSystems only offers a curated list of them using input parameters and client actions.
+Some of  OutSystems UI Patterns are based on external providers.
+Although these providers have many different extensibility options available, OutSystems only offers a curated list of them using input parameters and client actions.
 
 However, you can access all of the extensibility options offered by the providers by using the following OutSystems extensibility features: 
 
@@ -37,8 +39,8 @@ UI Pattern | Provider | Library version
 ---|---|---
 Carousel | [Splide](https://splidejs.com/) | 4.1.3  
 Date Picker | [Flatpickr](https://flatpickr.js.org/)| 4.6.13
-Date Picker Range | [Flatpickr](https://flatpickr.js.org/)| 4.6.13 
+Date Picker Range | [Flatpickr](https://flatpickr.js.org/)| 4.6.13
 Dropdown Search | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37
-Dropdown Tags | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37 
+Dropdown Tags | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37
 Range Slider | [noUiSlider](https://refreshless.com/nouislider/) | 15.6.1  
 Range Slider Interval | [noUiSlider](https://refreshless.com/nouislider/)| 15.6.1  

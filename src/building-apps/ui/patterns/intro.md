@@ -26,7 +26,8 @@ Check <a href="https://outsystemsui.outsystems.com/OutsystemsUiWebsite/PatternsO
 
 </div>
 
-In OutSystems you can use the pre-built patterns, which implement common UI patterns and components. Patterns cover the most used UI patterns and interactions in mobile and web apps, to distance developers as much a possible from the need to program CSS.
+In OutSystems you can use the pre-built patterns, which implement common UI patterns and components.
+Patterns cover the most used UI patterns and interactions in mobile and web apps, to distance developers as much a possible from the need to program CSS.
 
 ## Customization
 

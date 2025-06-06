@@ -29,8 +29,8 @@ Content patterns allow you to highlight and display important information to use
 
 ![Diagram illustrating various content patterns such as accordion, alert, card, and tooltip](images/content-patterns-diag.png "Content Patterns Diagram")
 
- The available content patterns include the following:
- 
+The available content patterns include the following:
+
 * [Accordion](accordion.md)
 * [Alert](alert.md)
 * [Blank Slate](blankslate.md)

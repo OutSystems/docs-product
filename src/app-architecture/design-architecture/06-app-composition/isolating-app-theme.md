@@ -25,15 +25,10 @@ In an enterprise installation, applications usually share the same corporate loo
 A Theme module includes the following components:
 
 * The theme itself (the CSS)
-
 * Layout *Blocks,* to define screen or screen section patterns
-
 * Logo images
-
 * ![Diagram illustrating login flow and exception handling components in an application theme.](images/isolating-app-theme_0.png "Login Flow and Exception Handling Components") Login flow and exception handling
-
 * ![Diagram showing menu and navigation support logic within an application theme.](images/isolating-app-theme_1.png "Menu and Navigation Support Logic") Menu and navigation support logic
-
 * Transversal roles (normally job roles like Manager or Employee) that can be reused in any application. This roles may influence the menu entries to be displayed.
 
 <div class="warning" markdown="1">

@@ -981,6 +981,10 @@
 #security
 - href: security/intro.md
 - topics:
+    - href: security/pci-compliance.md
+    - href: security/hipaa/intro.md
+    - topics:
+        - href: security/hipaa/hipaa-tech-safeguards.md
     - href: security/restrict-access-to-an-internal-network.md
     - href: security/secure-http-requests.md
     - href: security/secure-cookies-enable-secure-session.md

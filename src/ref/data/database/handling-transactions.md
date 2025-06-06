@@ -67,4 +67,4 @@ to, namely:
 
 * The transactions are always sequential, they cannot be nested.
 * After committing or rolling back a transaction, all database locks eventually being held are released.
-* When using Multiple Database Catalogs, or when integrating with external systems, OutSystems opens separate connections and transactions for each system, which are committed separately; there is no distributed transaction mechanism. In these cases, transaction handling might need some extra care.
+When using Multiple Database Catalogs with different runtime users (a deprecated configuration) or when integrating with external systems, OutSystems opens separate connections and transactions for each system. These transactions are committed independently, as there is no distributed transaction mechanism. In such cases, you must handle transactions carefully to maintain data consistency.

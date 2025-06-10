@@ -53,6 +53,9 @@
         }
       ]
     },
+        "api-render": {
+      "type": "boolean"
+    },
   "coverage-type": {
     "type": ["array", "null"],
     "items": {

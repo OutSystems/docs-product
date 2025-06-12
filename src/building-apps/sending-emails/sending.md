@@ -21,9 +21,9 @@ topic:
 
 # Sending emails
 
-When designing an app to send emails to your users, you must consider the following types of actions:
+Email is a fundamental component of app development, serving as a channel for communicating directly with your users. In OutSystems, you can design, build, and send emails to handle communication workflows. When designing an app to send emails to your users, consider the following types of actions:
 
-* **Sending emails.** This is a generic action. The platform takes an Email you created in Service Studio, renders it as an email, and then sends it to the user inbox.
+* **Sending emails.** This is a generic action. The platform takes an Email you created in Service Studio, renders it as an email, and then sends it to the user's inbox.
 * **Triggering emails.** This is an event that initiates the sending of an email. This is usually an automated action, but you can trigger sending an email manually in the UI.
 
 <div class="info" markdown="1">
@@ -51,7 +51,7 @@ To create logic that sends an email, follow these steps in Service Studio:
     * All parameters that the Email requires
     * The input parameter for the **To** field of the **Send Email** action
 
-1. Go to the **Send Email** action properties in the flow and set **To** property and the required values from the Email you selected in the **Email** list.
+1. Go to the **Send Email** action properties in the flow and set the **To** property and the required values from the Email you selected in the **Email** list.
 
     ![Screenshot of Service Studio showing the Send Email action with all parameters set, ready to send an email](images/logic-send-email-ready-ss.png "Send Email with all parameters set")
 
@@ -61,11 +61,16 @@ To create logic that sends an email, follow these steps in Service Studio:
 
     </div>
 
-    Your module is now ready for sending the email. The next step is to create logic to trigger sending the email.
+    Your module is now ready to send the email. The next step is to create logic to trigger the sending of the email.
 
 ## Triggering emails
 
-Depending on the use case, you can use different mechanisms to tell the platform to render and send the email. Your app can have a feature that lets users email each other by clicking a send button. Some other use cases require automated email sending, such as generating onboarding emails.
+Apps often need to send emails automatically. This automation typically falls into two categories:
+
+* **Transactional emails**: Sent immediately in response to a user's action (for example, a registration confirmation, password reset, or purchase receipt).
+* **Batch or scheduled emails**: Sent by a background process without any user present (for example, a daily report or a weekly newsletter).
+
+This guide focuses on the first category: transactional emails. A common example is the app automatically sending a confirmation email as soon as a user fills out an event registration form.
 
 ### Trigger emails manually
 
@@ -73,16 +78,22 @@ You can manually trigger the sending of an email when you test the app and when 
 
 ![User interface in Service Studio with a Button widget indicating the manual trigger for sending an email](images/trigger-email-manually-ui-ss.png "Triggering emails manually via UI")
 
-In the client action, you can call the server action that sends the email (3). You must provide the input parameters required by the action. The feedback message from the UI (4) is there to let the user know the app called the logic to send the message. 
+In the client action, you can call the server action that sends the email (3). You must provide the input parameters required by the action. The feedback message from the UI (4) lets the user know the app called the logic to send the message. 
 
 ![Screenshot of Service Studio showing the client action logic for manually triggering the sending of an email](images/trigger-email-manually-logic-ss.png "Logic for manually triggering emails")
 
-### Trigger emails automatically
+### Triggering transactional emails in response to user actions
 
-There are many use cases where you might want to sends an email automatically, for example, when you send an email to users after a registration. Consider an event registration, where users who want to attend the event, need to fill in the registration details in a form.
+There are many use cases where you might want to send an email automatically, for example, when you send an email to users after registration. Consider event registration, where users who want to attend the event need to fill in the registration details in a form.
 
 ![Example of a user interface screen in Service Studio for event registration](images/sample-screen-ss.png "Sample event registration screen")
 
 The logic for new registrations checks if the user entered valid information (1). If the information is valid, the logic handles the registration request (2) and then triggers the sending of the confirmation email (3).
+
+<div class="info" markdown="1">
+
+The pattern shown here is simplified for demonstration. It is best practice to avoid calling multiple server actions from a single client action. Instead, create one wrapper server action that contains both the registration and email logic. This improves performance and maintainability.
+
+</div>
 
 ![Screenshot of Service Studio showing the logic flow for handling new event registrations and triggering confirmation emails](images/sample-logic-new-registration-ss.png "Logic for handling new registrations")

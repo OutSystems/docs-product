@@ -48,10 +48,9 @@ The following are some of the key concepts of cross-region disaster recovery:
  
 <div class="info" markdown="1">
 
-OutSystems XRDR support RPO values of 4 hours or 24 hours, that can be defined per production environment. Please contact your OutSystems account team for more information.
+OutSystems XRDR supports RPO of either 4 hours or 24 hours, depending on the XRDR add-on selected for the production environment. For more information, please contact your OutSystems account team.
 
 </div>
-
 
 * **Recovery time objective (RTO)**
 
@@ -63,7 +62,7 @@ OutSystems XRDR support RPO values of 4 hours or 24 hours, that can be defined p
 
 <div class="info" markdown="1">
 
-OutSystems XRDR has fixed values of RTO of 24 hours and 48 hours in case of Sentry infrastructures.
+OutSystems XRDR supports a standard RTO of 24 hours. For production environments that include Sentry, the RTO is 48 hours.
 
 </div>
 
@@ -89,8 +88,6 @@ The following are some of the benefits of cross-region disaster recovery:
 
 1. Primary region: This is the main operational site where applications are running and data is stored. It is fully functional and serves end-users.
 
-2. Disaster recovery region: A recovery site is located in a different geographic region. When the primary site is healthy, this site only contains regular data backups, stored and updated with a frequency dependent on the contracted RPO.
+1. Disaster recovery region: A recovery site is located in a different geographic region. When the primary site is healthy, this site only contains regular data backups, stored and updated with a frequency dependent on the contracted RPO.
 
-3. Cross-region backup: Data from the primary site is copied to the recovery site, using backups, on a fixed schedule of no more than 24 hours, depending on the contracted RPO.
-
-
+1. Cross-region backup: Data from the primary site is copied to the recovery site, using backups, on a fixed schedule of no more than 24 hours, depending on the contracted RPO.

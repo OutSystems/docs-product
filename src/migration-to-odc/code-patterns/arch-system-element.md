@@ -122,7 +122,7 @@ If your logic in O11 required a connection to the email server to manage an acco
 
 #### XML
 
-If you want to implement the same logic in ODC, you can create an external library with the actions logic and consume it. YOu can also use a JSON serialization to cover data migration use cases.
+If you want to implement the same logic in ODC, you can create an external library with the actions logic and consume it. You can also use a JSON serialization to cover data migration use cases.
 
 * Serialization_ObjectToXml
 * Serialization_RecordListToXml

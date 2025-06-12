@@ -78,21 +78,21 @@ Setting the Max Records property in SQL elements **doesn't** change its SQL stat
 
 ### Description
 
-When performing massive operations use SQL queries instead of using a Foreach loop with Aggregates (keep in mind that Aggregates are always more built to change, though). Also updates and massive deletes are faster in SQL queries than using Entity Actions. Write queries that update as many rows as possible in a single statement rather than using multiple queries to update the same rows.
+When performing massive operations, use SQL queries instead of using a For Each loop with Aggregates (keep in mind that Aggregates are always more built to change, though). Also, updates and massive deletes are faster in SQL queries than using entity actions. Write queries that update as many rows as possible in a single statement rather than using multiple queries to update the same rows.
 
 ### Solution
 
-1. If you don't need to retrieve all Entity Attributes, consider replacing the Get invocation by an Aggregate using an Identifier parameter. OutSystems optimizes the query to retrieve the required attributes.
+1. If you don't need to retrieve all entity attributes, consider replacing the Get entity action with an Aggregate using an Identifier parameter. OutSystems optimizes the query to retrieve the required attributes.
 
-1. If you don't need to update all Entity Attributes, consider replacing the Update invocation by an SQL Query using an UPDATE SET statement, setting just the required attributes. The Platform also uses an UPDATE SET statement, but always updates every attribute.
+1. If you don't need to update all entity attributes, consider replacing the Update entity action with an SQL Query using an UPDATE SET statement, setting just the required attributes. Opposite to the UPDATE SET statement, the Update entity action updates all attributes—the ones you don't need to update are set to the same value they already have in the database.
 
 1. If you need to delete multiple records, use an SQL Query with a single Delete instead of a For Each followed with a Delete operation for each record.
 
-1. Use Update instead of a Delete followed by a Create .
+1. Use Update instead of a Delete followed by a Create.
 
 1. Use a CreateOrUpdate instead of a Select followed by a Delete and a Create.
 
-1. Use an SQL query with a sub query instead of an Aggregate, followed by a for-each loop over the query result with another simple query for each record.
+1. Use an SQL query with a sub query instead of an Aggregate, followed by a For Each loop over the query result with another simple query for each record.
 
 ### Importance
 

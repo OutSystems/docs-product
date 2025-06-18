@@ -18,7 +18,7 @@ coverage-type:
 topic:
   - deployments-api-automation
 ---
-## Block an app using the LifeTime API
+# Block an app using the LifeTime API
 
 To block an app using the APIs, follow these steps:
 

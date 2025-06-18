@@ -18,9 +18,9 @@ coverage-type:
 topic:
   - deployments-api-automation
 ---
-# Block an app using the LifeTime API
+# Block an app from deployment using the LifeTime API
 
-To block an app using the APIs, follow these steps:
+To block an app from deployment using the APIs, follow these steps:
 
 1. Get the **environment key** of the environment where you want to block the app. _(optional if you already have this information)_;
 

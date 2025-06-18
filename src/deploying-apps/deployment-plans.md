@@ -31,6 +31,12 @@ A deployment plan can contain:
 * Deployment notes, including the release notes
 * Settings like [Site Property values](tp-configure-site-properties-during-deploy.md)
 
+<div class="info" markdown="1">
+
+You can also [add a blocked app](block-app-from-deployment.md#add-a-blocked-app-to-the-deployment-plan) to a deployment plan.
+
+</div>
+
 You create deployment plans in LifeTime, on the **Deployment Plans** screen under the **Applications** area.
 
 You can also create a deployment plan by [reusing a finished plan](#reuse) or [retrying an aborted plan](#retry).

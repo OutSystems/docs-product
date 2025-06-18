@@ -638,6 +638,7 @@
     - href: deploying-apps/tag-a-version.md
     - href: deploying-apps/deploy-an-application.md
     - href: deploying-apps/deployment-plans.md
+    - href: deploying-apps/block-app-from-deployment.md
     - href: deploying-apps/tp-configure-site-properties-during-deploy.md
     - href: deploying-apps/configure-application-settings-after-deployment.md
     - href: deploying-apps/apply-configurations.md
@@ -2024,6 +2025,7 @@
             - topics:
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
+                - href: ref/apis/lifetime-deployment/examples/api-block-app-deploy.md
                 - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md 
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-infrastructure.md
                 - href: ref/apis/lifetime-deployment/examples/api-map-database-connections.md

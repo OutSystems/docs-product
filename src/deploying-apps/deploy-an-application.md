@@ -23,6 +23,8 @@ topic:
 
 In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>) takes a version of the application from one environment and deploys it in another. Just select the tagged version of the application and LifeTime deploys it in the exact development state in which it was tagged.
 
+To prevent accidental deployments to incorrect environments, Lifetime 11.70.0 version onwards supports [blocking specific apps from being deployed](block-app-from-deployment.md) to an environment.
+
 **Note:** Application and module names must be unique within each environment and as you stage, name changes are propagated to the target environments. It is important to keep all environments up to date when changing application or module names to avoid the following scenarios:
 
 - [LifeTime staging aborts after renaming an app or module](https://success.outsystems.com/Support/Troubleshooting/Application_lifecycle/LifeTime_staging_aborts_after_renaming_an_app_or_module)
@@ -142,3 +144,9 @@ The refresh operation does the following:
 * Applications with the "Tag & Deploy" option selected will be deployed with the most recent code.
 * Any new tags created outside the plan are shown in the deployment options and can be selected for deployment.
 * All deployment options previously selected are kept, except if they are no longer available.
+
+## Additional resources
+
+* [Block an app from deployment](block-app-from-deployment.md)
+
+* [Block newly created apps from deployement](block-app-from-deployment.md#block-a-newly-created-app-from-deployment)

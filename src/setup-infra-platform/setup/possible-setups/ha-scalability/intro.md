@@ -26,13 +26,13 @@ Download the whitepaper version of this document [here](https://www.outsystems.c
 </div>
 
 
-For enterprise applications, OutSystems believe that customers should have as much control as possible. That’s why OutSystems is designed not to be a *deep void* where you cannot see or control what lies beneath the interface. Instead, it simplifies all operations, while still providing several extension points and control options over the underlying infrastructure.
+For enterprise applications, OutSystems believes that customers should have as much control as possible. That’s why OutSystems is designed not to be a *deep void* where you cannot see or control what lies beneath the interface. Instead, it simplifies all operations, while still providing several extension points and control options over the underlying infrastructure.
 
 When you use OutSystems in the Cloud, OutSystems manages your environments to guarantee availability while still maintaining the flexibility you need to carry out operations on your self-managed installations.
 
 When you have OutSystems as a self-managed installation, it sits on top of the preferred application server and database management system (DBMS). Your IT team controls the entire underlying infrastructure and defines its own policies and processes to access it.
 
-**High availability** (HA) is all about uptime even in the presence of individual component faults. The goal is to create a redundancy in your infrastructure that can respond to, for example, server failure and increased loads, preventing it from impacting your business. Depending on your configuration, having a redundancy in your infrastructure can respond to component faults at a server level and at an entire data center level.
+**High availability** (HA) is all about uptime even in the presence of individual component faults. The goal is to create a redundancy in your infrastructure that can respond to, for example, server failure and increased loads, preventing it from impacting your business. Depending on your configuration, having redundancy in your infrastructure can respond to component faults at a server level and at an entire data center level.
 
 **Scalability** is a system's capability to handle an increasing number of users or an increase in server requests without adversely affecting response time and throughput. OutSystems is designed with a strong focus on scalability and an architecture that supports a wide range of options including **vertical scalability** and **horizontal scalability**. Vertical scaling provides growth of computational power within one operating environment whereas horizontal scaling leverages multiple systems to work together on a common problem in parallel.
 
@@ -46,13 +46,13 @@ The OutSystems distributed architecture consists of a deployment server that per
 
 A **load balancer** automatically distributes incoming application traffic across multiple front-end servers to spread the request load. The load balancer also detects any unhealthy front-end servers in the production environment and automatically reroute traffic to healthy instances until health is restored, increasing the fault tolerance of all applications. OutSystems stores mobile and web user sessions in the session database, allowing multiple requests from the same user to be handled by any front-end server in a farm environment. For improved performance and operation, the session database elements are configured on a dedicated database schema. OutSystems uses the native session management services of the application server stack.
 
-To sustain scalability, Outsystems also uses **automated resource optimization and management**. The risk of creating highly scalable applications with traditional technology is human error. If an application handles millions of hits, a small mistake, such as forgetting to close a reader, can take the whole system down. OutSystems avoids human error by assuring that no reader, connection, or transaction is left open. It optimizes the source code it generates to ensure that applications use as few resources as possible. Enterprises, large or small, don't need expensive distributed systems or technical knowledge to get the best performance. 
+To sustain scalability, Outsystems also uses **automated resource optimization and management**. The risk of creating highly scalable applications with traditional technology is human error. If an application handles millions of hits, a small mistake, such as forgetting to close a reader, can take the whole system down. OutSystems avoids human error by ensuring that no reader, connection, or transaction is left open. It optimizes the source code it generates to ensure that applications use as few resources as possible. Enterprises, large or small, don't need expensive distributed systems or technical knowledge to get the best performance. 
 
 ## Vertical scaling
 
 Self-managed and OutSystems Cloud installations allow you to **scale vertically** by increasing the computing power of front-ends and databases. This helps with the following:
 
-* Better support for developers as a team grows
+* Better support for developers as the team grows
 * Temporarily increase the computing power of front-ends to finish processing computation-intensive jobs
 * Enhance the processing power of the database as an application portfolio grows to handle an increased load
 
@@ -75,7 +75,7 @@ OutSystems also allows you to **scale horizontally** (in any hosting option) by 
 
 The following section outlines some common use cases of how both horizontal and vertical scalability can help achieve high availability when facing an increased load or server failure.
 
-### Responding to an increased demand or users on your apps
+### Responding to an increased demand of users on your apps
 
 Both vertical and horizontal scaling can be used, either separately or in combination, to respond to an increase in demand.
 
@@ -111,7 +111,7 @@ To scale horizontally in the OutSystems Cloud, OutSystems deploys additional fro
 
 When considering a high availability infrastructure, there are different layers to keep in mind. Each layer serves a different function and requires distinct technologies to handle redundancy. 
 
-An infrastructure is composed of several environments, and you can decide to have redundancy on all of them or just some of them. For example, production environments are critical to be readily available while non-production environments, like development and testing, may not. It all depends on your specific needs.
+An infrastructure is composed of several environments, and you can decide to have redundancy on all of them or just some of them. For example, production environments are critical to be readily available, while non-production environments, like development and testing, may not be. It all depends on your specific needs.
 
 
 The following diagram depicts all the layers in the scope of a single environment.
@@ -122,7 +122,7 @@ For more information about the layers and components outlined in this graphic, s
 
 ### App access
 
-The app access layer routes and distributes incoming requests of end users to the applications' servers. At this top layer, load balancers and reverse proxies can be used along with their redundancy capabilities.
+The app access layer routes and distributes incoming requests from end users to the applications' servers. At this top layer, load balancers and reverse proxies can be used along with their redundancy capabilities.
 
 The following considerations are important when configuring the app access layer.
 
@@ -136,7 +136,7 @@ The following are the load balancer policies:
 
 * **Least connections**: Front-end machines have the same hardware configuration. The connection requests are sent to the server with the least connection requests.
 
-* **Ratio**: The load balancing is based on a ratio where the more powerful server receives a larger number of connection requests. The ratio load balancer can also be dynamic, where several monitoring checks are actively carried out to gather server performance information and decide on the next node to serve the connection request. Because OutSystems recommend maintaining the same hardware specifications across the front-end servers of an environment, this policy is not recommended.
+* **Ratio**: The load balancing is based on a ratio where the more powerful server receives a larger number of connection requests. The ratio load balancer can also be dynamic, where several monitoring checks are actively carried out to gather server performance information and decide on the next node to serve the connection request. Because OutSystems recommends maintaining the same hardware specifications across the front-end servers of an environment, this policy is not recommended.
 
 To learn more about how to load balance your OutSystems platform, see [Load Balancing OutSystems Applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Load_Balancing_OutSystems_Applications) guide.
 
@@ -158,15 +158,15 @@ Additionally, when the back-end of one or more OutSystems mobile or reactive app
 
 For additional information, see [Using OutSystems in Reverse Proxy Scenarios](https://success.outsystems.com/Documentation/How-to_Guides/Infrastructure/Using_OutSystems_in_Reverse_Proxy_Scenarios) guide.
 
-### Application deliver
+### Application delivery
 
-This layer is responsible for hosting the applications and is composed of the several front-end servers of an environment.
+This layer is responsible for hosting the applications and is composed of several front-end servers in an environment.
 
 In a cluster scenario, the front-end role scales best horizontally. Depending on the implementation, balancing the load across nodes provides a failover and several levels of disaster recovery. The design can range from a segmented distribution of front ends that contain small incidents, to a geographical distribution aimed at containing high-risk events.
 
 To properly scale your front-end horizontally, OutSystems recommends that you decide on a suitable set of hardware specs for the front-end server and replicate that configuration on subsequent front-end machines.
 
-Several front-ends comprise a farm environment. Applications are deployed in every front-end by a controller server, which must be up to receive compiled application.
+Several front-ends comprise a farm environment. Applications are deployed in every front-end by a controller server, which must be up to receive compiled applications.
 
 ### Platform core
 
@@ -180,9 +180,9 @@ The RabbitMQ executes cache invalidation across the environment. It can be place
 
 #### Controller
 
-The controller server has no cluster capability so it can only grow vertically. Adding CPU cores, memory, and increasing disk I/O provides faster compile times for large and very active teams.
+The controller server has no cluster capability, so it can only grow vertically. Adding CPU cores, memory, and increasing disk I/O provides faster compile times for large and very active teams.
 
-In an environment, the controller is responsible for compiling the application’s code and is only in use when new application versions are published. Runtime isn't affected for a period in the case of a fault.
+In an environment, the controller is responsible for compiling the application’s code and is only used when new application versions are published. Runtime isn't affected for a period in the case of a fault.
 
 Because the controller isn't clusterable nor can it be set in a farm configuration, there’s no out-of-the-box recovery automation. However, manual or semi-automated steps can be taken to [promote one of the front ends to the controller role](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/OutSystems_Platform_Server_failover_procedures#Move_controller_and_front-end_roles_to_a_different_server).
 
@@ -194,7 +194,7 @@ Database updates are made concurrently on the primary and standby databases to p
 
 OutSystems on self-managed servers supports SQL Server and Oracle as database options and allows the flexibility of any high-availability database solution that guarantees the following:
 
-* Single end point configured in the OutSystems configuration tool on each server
+* Single endpoint configured in the OutSystems configuration tool on each server
 * Data consistency independent of the side on which the replica is active
 * Data integrity
 
@@ -241,7 +241,7 @@ The following are the OutSystems Cloud network redundancy options available for 
 
 * **VPN**: If your VPN gateway supports asymmetric routing, you can configure the two VPN tunnels to ensure high-availability of the VPN connection. Amazon performs routine maintenance on the virtual private gateways, which can disable one of the VPN tunnels for a brief period. Having two VPN tunnels configured ensures the failover to the second VPN tunnel if the first VPN tunnel goes down. It’s also possible to achieve redundancy in a private network connection by using other networking solutions such as Direct Connect and Transit Gateway.
 
-* **Direct Connect**: [AWS Direct Connect](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/AWS_Direct_Connect_on_OutSystems_Cloud) is a highly available service that links an internal network to an AWS account over a dedicated circuit. For scenarios which require the use of high bandwidth and a steady connection without network congestion, you can use AWS Direct Connect to link your private network to your OutSystems Cloud over a dedicated line. 
+* **Direct Connect**: [AWS Direct Connect](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/AWS_Direct_Connect_on_OutSystems_Cloud) is a highly available service that links an internal network to an AWS account over a dedicated circuit. For scenarios that require the use of high bandwidth and a steady connection without network congestion, you can use AWS Direct Connect to link your private network to your OutSystems Cloud over a dedicated line. 
 
 * **Transit Gateway**: For seamless integration with your corporate systems, OutSystems allows you to connect to your OutSystems Cloud VPC using your own [AWS Transit Gateway](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Connect_to_your_OutSystems_Cloud_using_AWS_Transit_Gateway#:~:text=AWS%20Transit%20Gateway%20and%20your,networks%20to%20a%20single%20gateway.). This service enables you to connect your multiple AWS accounts, Virtual Private Clouds (VPCs), and your on-premises networks to a single gateway. AWS Transit Gateway is a service with high availability by design.
 
@@ -272,7 +272,7 @@ Typically, two scenarios are considered in this process:
 
 #### Scenario 1: Base VM image has OutSystems installed
 
-OutSystems recommend this setup as the provisioning of new front-end servers is **up to twice as quick** as when OutSystems is not installed. In this scenario, the base VM image already has OutSystems Platform Server and the development tools (Service Studio and Integration Studio) installed.
+OutSystems recommends this setup as the provisioning of new front-end servers is **up to twice as quick** as when OutSystems is not installed. In this scenario, the base VM image already has the OutSystems Platform Server and the development tools (Service Studio and Integration Studio) installed.
 
 ![Diagram showing the elasticity setup process for OutSystems with the Platform Server pre-installed on the base VM image.](images/ha-scalability-auto_1.png "Elasticity Setup with OutSystems Installed")
 
@@ -294,7 +294,7 @@ For **VM provisioning**, you’ll need to ensure the following:
 
 * It’s also recommended that the same hardware specifications (CPU, RAM, disk space) are maintained across all the front ends of an environment.
 
-To automate **installing the pre-requirements and Platform Server**, you can have the necessary binaries readily available on a storage account. By running the PowerShell scripts created from the commands of the [unattended installation of a new front end](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade#Adding_a_Front-End) steps, the **server is associated to the environment**. 
+To automate **installing the pre-requirements and Platform Server**, you can have the necessary binaries readily available on a storage account. By running the PowerShell scripts created from the commands of the [unattended installation of a new front end](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade#Adding_a_Front-End) steps, the **server is associated with the environment**. 
 
 #### Example with Azure scale sets
 

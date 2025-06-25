@@ -20,7 +20,7 @@ helpids:
 
 From LifeTime 11.27.0 version, you can block an app from being deployed to specific environments. This prevents accidental deployments to incorrect environments. For example, you can block sandbox or test apps from reaching production. Later, when necessary, you can [unblock the app](#unblock-an-app) to allow deployment to other environments. You can also use [LifeTime APIs](../ref/apis/lifetime-deployment/examples/api-block-app-deploy.md) to block and unblock an app from deploying to specific environments.
 
-However, you can still deploy a blocked app directly from the **Service Center** or **Service Studio**. In such scenarios, LifeTime bypasses the restriction and automatically unblocks the app.
+However, you can still deploy a blocked app directly from the **Service Center** or **Service Studio**. In such scenarios, LifeTime detects the deployment of blocked apps and automatically unblocks the app.
 
 As an infrastructure manager, you can also [block all newly created apps](#block-a-newly-created-app-from-deployment) from being deployed to all environments.
 

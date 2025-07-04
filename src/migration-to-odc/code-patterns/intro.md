@@ -62,6 +62,7 @@ These are the patterns that require changes in the O11 apps:
 * [Cannot open module](cannot-open-module.md)
 * [End users with no email](end-user-no-email.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
+* [Align persistent login timeout](persistent-login-timeout.md)
 
 ## Fix in ODC
 

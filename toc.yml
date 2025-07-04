@@ -1242,6 +1242,7 @@
         - href: migration-to-odc/code-patterns/execute-adapt-login-flow.md
         - href: migration-to-odc/code-patterns/update-url-consumed-rest-endpoint.md
         - href: migration-to-odc/code-patterns/aggregate-sql-scope.md
+        - href: migration-to-odc/code-patterns/persistent-login-timeout.md
     - href: migration-to-odc/prepare/reference.md
     - href: migration-to-odc/known-issues.md
 # Reference

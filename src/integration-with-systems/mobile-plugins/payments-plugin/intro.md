@@ -96,7 +96,7 @@ You need the following information:
 
 * Access to a mobile PSP by either configuring a new mobile payment service or editing an existing one. To configure PSP details, add the following information (depending on the PSP):
 
-    * Merchant ID: The merchant id.
+    * Merchant ID: The merchant ID. **This field is only required for Apple Pay**. You can get this identifier from Apple Developer, where you configured the Apple Pay Payment Processing capability for your app.
       
     * Name: The merchant name.
       
@@ -131,12 +131,11 @@ To process payments with Stripe using an OutSystems implementation, complete the
 
 1. Navigate to **Logic** > **Integrations** > **REST** > **Stripe**.
 
-1. In the Basic authentication section, fill the **Username** field with the **secret key** value you obtained from the Stripe dashboard [Configure your account in the provider's dashboard](intro.md#configure-your-account-in-the-providers-dashboard).
-
+1. In the Basic authentication section, in the **Username** field, enter the **secret key** value you obtained from the Stripe dashboard [Configure your account in the provider's dashboard](intro.md#configure-your-account-in-the-providers-dashboard). The **Password** field won't be used by Stripe, so if required, you can enter any value.
 
 ### Create logic to set up the plugin
 
-Follow these steps, to verify the plugin’s availability, trigger the payment by adding an action, and then set up the plugin:
+Follow these steps to verify the plugin’s availability, trigger the payment by adding an action, and then set up the plugin:
 
 1. Verify the plugin’s availability and add an action to trigger the payment.
 

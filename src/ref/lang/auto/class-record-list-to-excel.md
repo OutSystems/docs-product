@@ -19,7 +19,7 @@ coverage-type:
 
 # Record List To Excel
 
-Converts a Record List to an Excel file. You can use the output file for download or you can send it as an email attachment, for example.
+Converts a Record List to an Excel file. You can use the output file for download or you can send it as an email attachment, for example. The Record List to Excel action executes exclusively on the server-side and must be used within a Server Action.
 
 ## Properties
 

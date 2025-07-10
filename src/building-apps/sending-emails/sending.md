@@ -97,3 +97,13 @@ The pattern shown here is simplified for demonstration. It is best practice to a
 </div>
 
 ![Screenshot of Service Studio showing the logic flow for handling new event registrations and triggering confirmation emails](images/sample-logic-new-registration-ss.png "Logic for handling new registrations")
+
+### How OutSystems Handles the Email Sending
+
+At runtime, the **Send Email** tool renders the email content, adds it to a sending queue, and continues execution, thus not sending it right away. It is another OutSystems process, the OutSystems Scheduler Service, that picks queued emails and effectively sends them, i.e. emails are **asynchronously sent** by OutSystems.
+
+As emails are sent asynchronously in a different session you cannot rely in session data to render emails.
+
+OutSystems tries to send failed emails for a period of days (default period is 2 days). When an email continues to fail after this period, OutSystems quits trying to send it.
+
+All emails you send through an OutSystems web application are logged and you are allowed to check up on them in **Service Center**.

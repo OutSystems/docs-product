@@ -157,6 +157,13 @@ Starting with iOS 14.5, apps on the App Store must request the user’s permissi
 ![Shows the Firebase request tracking authorization prompt in a mobile application](images/firebase-request-tracking-authorization.png "Firebase Request Tracking Authorization")
 
 To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin. Apple recommends triggering this prompt as soon as the app loads.
+
+<div class="info" markdown="1">
+
+This Client action is only available on iOS, since the AppTrackingTransparency framework is an iOS-only feature. 
+
+</div> 
+
 If you want to present an alert before the iOS tracking permission dialog, enable the parameter **ShowInformation** on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
 
 By default, the **NSUserTrackingUsageDescription** field is set to `AppName needs your attention.`. As explained by Apple [here](https://developer.apple.com/documentation/apptrackingtransparency), this property must contain "a message that informs the user why an app is requesting permission to use data for tracking the user or the device.". You can set your custom description by including an iOS-specific preference (`USER_TRACKING_DESCRIPTION_IOS`) in the Extensibility Configurations of the application, as follows:

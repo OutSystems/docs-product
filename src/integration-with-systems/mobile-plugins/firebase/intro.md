@@ -58,7 +58,7 @@ Install [Firebase Mobile Sample App](https://www.outsystems.com/forge/component_
 
 To add a Firebase plugin to your mobile app, complete the following steps:
 
-1. Install the **Firebase** plugin and reference it in your mobile app. For detailed instruction, see [Adding plugins](../intro.md#adding-plugins) for detailed instructions.
+1. Install the **Firebase** plugin and reference it in your mobile app. For detailed instructions, see [Adding plugins](../intro.md#adding-plugins).
 
 1. Add the [Google services configuration files](#adding-google-services-configuration-files) to the mobile app.
 
@@ -196,19 +196,30 @@ By default, an app using the Firebase Analytics plugin is able to trigger the na
 
 <div class="info" markdown="1">
 
-If your app collects user data for advertising purposes, also known as Attribution, within Firebase Analytics context, it must prompt the AppTrackingTransparency framework.
+If your app collects user data for advertising purposes, also known as Attribution, within the Firebase Analytics context, it must prompt the AppTrackingTransparency framework.
 
 </div>
 
 ### Additional information for Firebase Analytics
 
+#### Custom events
+
+Starting with version **2.3.0**, a new client action named `LogEvent` is available and should be used instead of the deprecated `DEPRECATED_LogEvent`. This new version introduces support for passing event parameters as a list, providing better structure and flexibility when logging events.
+
+Each event must include an `EventName` and can optionally include a list of key–value pairs via the `EventParameters` input. A maximum of 25 parameters is allowed per event. If more than 25 parameters are provided, only 25 will be sent to Firebase Analytics, and the rest will be discarded. Note that since parameter order is not guaranteed, any of the extra parameters may be ignored.
+
+To further illustrate this example, the following shows a typical usage of the `LogEvent` client action:
+
+![Shows the Firebase Analytics LogEvent client action for a custom event](images/firebase-analytics-log-event-example-ss.png "Firebase Analytics LogEvent client action example")
+
+
 #### Ecommerce events
 
 Starting in version **2.0.1**, Firebase Analytics plugin users can log ecommerce events, which are specifically tailored to collect information about your user's shopping behavior.
 
-It's important to note that Google's ecommerce API enforces a set of constraints for each event. For example, the API ensures you include a `item_list_id` parameter when logging a `view_item_list` event.
+It's important to note that Google's e-commerce API enforces a set of constraints for each event. For example, the API ensures you include an `item_list_id` parameter when logging a `view_item_list` event.
 
-The Firebase Analytics plugin performs the validations when `LogECommerceEvent` is invoked. You can find the details of the validations for each event, by following the Google's documentation link, in the list below.
+The Firebase Analytics plugin performs the validations when `LogECommerceEvent` is invoked. The details of the validations for each event are listed below, following Google's documentation link.
 
 To further illustrate this example, the following shows a typical usage of the `LogECommerceEvent client action`:
 

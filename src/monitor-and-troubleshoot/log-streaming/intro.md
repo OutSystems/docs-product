@@ -105,8 +105,6 @@ Other tools compatible with the OpenTelemetry protocol and OTLP logs format are 
 
 The OpenTelemetry collector is an app that runs separately and must be launched/supported by customers. For more information, refer to [How to set up an OpenTelemetry collector](configure-collector.md).
 
-IP allowlisting is not supported as the OutSystems origin IPs might change.
-
 </div>
 
 ## Supported log data

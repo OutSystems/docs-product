@@ -41,7 +41,7 @@ Action | Description | App type
 [GetPageExtension](<#GetPageExtension>) | Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;. | Applies to Traditional Web apps only.  
 [GetPageName](<#GetPageName>) | Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur. | Applies to Traditional Web apps only.
 [GetRawURL](<#GetRawURL>) | Returns the current relative requested URL, without the http://[server] part and without the session identifier.<br/>If SEO rules are being applied, the URL displayed in the user's browser is returned, and not the final URL after the rule is applied. | Applies to all app types.
-[GetReferrerURL](<#GetReferrerURL>) | |Applies to all app types.
+[GetReferrerURL](<#GetReferrerURL>) | Gets the URL of the page that referred the user to the current page (HTTP referer header). Returns an empty string if no referer is available. |Applies to all app types.
 [GetRequest_AddArgument](<#GetRequest_AddArgument>) | Builds the arguments string for an HTTP request with method GET, adding a new parameter to the arguments string. | Applies to all app types.
 [GetRequest_Submit](<#GetRequest_Submit>) | Submit an HTTP GET request given the GET arguments and the URL. Returns the response content as a string and as binary data. | Applies to all app types.
 [GetRequestContent](<#GetRequestContent>) | Gets the content of the current HTTP request. | Applies to all app types.
@@ -76,8 +76,8 @@ Action | Description | App type
 
 Structure | Description
 ---|---
-[RequestFile](<#Structure_RequestFile>) | 
-[UserLanguage](<#Structure_UserLanguage>) | 
+[RequestFile](<#Structure_RequestFile>) | Represents a file submitted in an HTTP request, containing file metadata and binary content.
+[UserLanguage](<#Structure_UserLanguage>) | Represents a client language preference with its priority value.
 
 ## Actions
 
@@ -375,13 +375,13 @@ RawURL
 
 ### GetReferrerURL { #GetReferrerURL }
 
-
+Gets the URL of the page that referred the user to the current page (HTTP referer header). Returns an empty string if no referer is available.
 
 *Outputs*
 
 ReferrerURL
 :   Type: Text.  
-    
+    The URL of the referring page, or an empty string if no referer is available.
 
 ### GetRequest_AddArgument { #GetRequest_AddArgument }
 
@@ -584,7 +584,6 @@ InputId
 Value
 :   Type: Text.  
     
-
 ### GetValueFromInputIdDecoded { #GetValueFromInputIdDecoded }
 
 Gets the decoded value from an input form. Not compatible with reactive web and mobile apps.
@@ -600,7 +599,6 @@ InputId
 Value
 :   Type: Text.  
     
-
 ### IsAjaxRequest { #IsAjaxRequest }
 
 Returns true if this is running in an AJAX request.  
@@ -773,7 +771,6 @@ HREF
 Target
 :   Type: Text. Default: "".  
     
-
 ### SetCookie { #SetCookie }
 
 Sets a cookie.
@@ -833,7 +830,6 @@ This method has no effect in Ajax Requests. Not compatible with reactive web and
 Title
 :   Type: Text. Mandatory.  
     
-
 ### SetRequestTimeout { #SetRequestTimeout }
 
 Sets the timeout of the current HTTP request.
@@ -900,34 +896,25 @@ RequestOrigin
 :   Type: Text.  
     The request source IP or Hostname.
 
-
 ## Structures
 
 ### RequestFile { #Structure_RequestFile }
-
-
 
 *Attributes*
 
 FileName
 :   Type: Text (50). Mandatory.  
     
-
 FileType
 :   Type: Text (50). Mandatory.  
     
-
 FileSize
 :   Type: Integer. Mandatory.  
     
-
 BinaryContent
 :   Type: BinaryData. Mandatory.  
     
-
 ### UserLanguage { #Structure_UserLanguage }
-
-
 
 *Attributes*
 

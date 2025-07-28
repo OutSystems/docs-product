@@ -34,11 +34,24 @@ You may have security policies in place and want to limit, as much as possible, 
 
 If you have any questions on whether a specific approach would work in your case, feel free to reach out to [OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support).
 
-## Use a proxy
+## Use a forward proxy
 
 Amazon CloudFront, which MABS uses, is a distributed service with the endpoint IP addresses that can change over time. You may allow access to an external service in your organization by opening an exception to a specific IP in the firewall, but this approach isn't viable with Amazon CloudFront.
 
-The simplest, and potentially most secure way, of meeting this requirement is a proxy. When using a proxy to mediate the access with the internet, ensure it allows access to the **nativebuilder.api.outsystems.com** URL and any other URL the MABS service might require from the Internet for normal functioning.
+The simplest, and potentially most secure way, of meeting this requirement is a forward proxy. When using a proxy to mediate the access with the internet, ensure it allows access to the **nativebuilder.api.outsystems.com** URL and any other URL the MABS service might require from the Internet for normal functioning.
+
+For the platform to use the proxy to connect to MABS, it needs to be configured in IIS with the following:
+
+1. Open `IIS Manager`, select `Default Web Site` on the left pane and open **Configuration Editor** in the center
+2. Go to the `system.net/defaultProxy` section and enter the proxy address in the **proxy/defaultProxy** setting with the HTTP URL scheme (http://proxy-hostname:8080, as an example)
+3. Add to **proxy/bypassonlocal** any addresses to where traffic should not go through the proxy.
+4. If the proxy requires authentication, configure the username and password in Service Center, in **Environment Configuration** under `Administration`.
+
+<div class="info" markdown="1">
+
+This setting will apply the proxy configuration to all applications running in the server. If you want to restrict it only to `Service Center` for access to MABS, select **Service Center** instead of the **Default Web Site**, but take in consideration that you will need to reapply these settings whenever Service Center is republished.
+
+</div>
 
 ## Use a firewall to limit access to a domain
 

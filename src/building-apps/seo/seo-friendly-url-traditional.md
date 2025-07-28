@@ -275,3 +275,6 @@ Open the ‘OsISAPIConf.cache‘ file with a simple text editor like NotePad or 
 …
 ```
 
+The OsISAPIConf.cache file functions solely as an input source for the ISAPI filters installed on IIS. The logging level specified in this file is applied manually and remains active until a new input is provided(a direct change inside the server) or an IIS reset occurs.
+Be aware that after an IIS reset, the ISAPI filters automatically revert the logging level to "Refresh", regardless of the value displayed in the OsISAPIConf.cache file, this may lead to a mismatch between the file content and the actual active logging level.
+

@@ -35,7 +35,7 @@ Before you refactor your O11 apps to be ODC-compatible, ensure you have:
 
 * [Designed your future ODC architecture](../plan/plan-map-apps.md#design-arch)
 * [Mapped your O11 apps to ODC assets](../plan/plan-map-apps.md#map-in-tool)
-* [Identified and adjusted any inconsistencies in the mapping of your O11 apps to ODC architecture](../plan/plan-assess-refactor.md#adjust-mapping)
+* [Identified and adjusted any inconsistencies in the mapping of your O11 apps to ODC architecture](../plan/plan-assess-refactor.md)
 
 ## Prepare O11 app migration
 

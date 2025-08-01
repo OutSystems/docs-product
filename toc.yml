@@ -1225,12 +1225,12 @@
         - href: migration-to-odc/code-patterns/arch-system-element.md
         - href: migration-to-odc/code-patterns/arch-user-mng-elements.md
         - href: migration-to-odc/code-patterns/arch-bpt-elements.md
-        - href: migration-to-odc/code-patterns/end-user-no-email.md
         - href: migration-to-odc/code-patterns/elem-bpt.md
         - href: migration-to-odc/code-patterns/elem-soap.md
         - href: migration-to-odc/code-patterns/refactor-anonymous-registered-roles.md
         - href: migration-to-odc/code-patterns/refactor-siteproperties.md
         - href: migration-to-odc/code-patterns/convert-trad-web.md
+        - href: migration-to-odc/code-patterns/elem-trad-web.md
         - href: migration-to-odc/code-patterns/cannot-open-module.md
         - href: migration-to-odc/code-patterns/outdated-or-broken-dependencies.md
         - href: migration-to-odc/code-patterns/arch-common-plugin.md
@@ -1245,6 +1245,10 @@
         - href: migration-to-odc/code-patterns/update-url-consumed-rest-endpoint.md
         - href: migration-to-odc/code-patterns/aggregate-sql-scope.md
         - href: migration-to-odc/code-patterns/persistent-login-timeout.md
+        - href: migration-to-odc/code-patterns/data-user-email-validation.md
+        - href: migration-to-odc/code-patterns/data-large-binaries-validation.md
+        - href: migration-to-odc/code-patterns/infra-self-managed.md
+        - href: migration-to-odc/code-patterns/infra-additional-pipelines.md
     - href: migration-to-odc/prepare/reference.md
     - href: migration-to-odc/known-issues.md
 # Reference

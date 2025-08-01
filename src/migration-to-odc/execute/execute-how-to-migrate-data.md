@@ -33,7 +33,7 @@ Before migrating O11 application data and end users, ensure you:
 
 * Have gained an understanding [About migrating end users](execute-about-migrate-data.md), and have done the following:
 
-    * [In O11, validate end user emails](execute-about-migrate-data.md#validate-end-user-emails)
+    * In the Migration Assessment Tool, solve all the findings related to [data patterns](../code-patterns/intro.md#data-patterns) 
 
     * (Optional) [In O11, create and populate user extension table](execute-about-migrate-data.md#create-and-populate-user-extension-table). In ODC, by default the user table consists of Id, Name, Email, and PhotoUrl. You can skip this section if you don't want to migrate any additional user details
 

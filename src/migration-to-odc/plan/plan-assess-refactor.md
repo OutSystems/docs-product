@@ -34,7 +34,7 @@ When an analysis finishes, you can [go through the assessment report](#report) t
 
 The assessment report helps you plan your migration to ODC, by supporting you with the following:
 
-* [Adjust the mapping](#adjust-mapping) of your O11 apps to ODC architecture.
+* Adjust the mapping of your O11 apps to ODC architecture.
 
 * Understand and decide on what adjustments your team needs to make in O11 before migrating the apps to ODC. This information is important for your development team, so they can estimate the refactoring effort and [prepare for the app migration](../prepare/prep-refactor-o11-apps.md).
 
@@ -56,34 +56,18 @@ If you already created [migration plans](plan-define-migration-plans.md), follow
 
 ![Screen showing an assessment report in the Migration Assessment Tool.](images/assess-report-at.png "Assessment report in Migration Assessment Tool")
 
-Then, go through the assessment report to validate its findings:
+## Validate findings { #validate-findings }
 
-1. Select a pattern from the **Code Patterns** list.
+Go through the assessment report to validate its findings:
+
+1. Select a pattern from the **Code**, **Data**, or **Infrastructure** patterns lists.
 
     The list of findings of that pattern displays on the right side. 
 
 1. Select **Learn more** to access the code pattern documentation that guides you on how to solve it.
 
-## Adjust the mapping of O11 apps to ODC architecture { #adjust-mapping }
-
-The assessment report helps you validate if the [mapping of your O11 apps into ODC assets](plan-map-apps.md) is compatible with ODC architecture by identifying **Architecture** code patterns that you can adjust in your mapping.
-
-To validate the mapping of your O11 apps to ODC architecture, follow these steps:
-
-1. In the **Category** filter, select **Architecture**.
-
-    The architecture patterns and findings are displayed.
-
-1. Select a pattern from the **Code Patterns** list.
-
-1. Select **Learn more** to understand the code pattern and how to solve it.
-
-1. If the code pattern can only be solved by adjusting the [mapping into ODC architecture](plan-map-apps.md), make the necessary changes for each **Finding**.
-
 1. As you make the changes to solve each finding, rerun the assessment, to ensure you resolved the issue.
 
     If you don’t run a new assessment manually, the Migration Assessment Tool automatically queues a new assessment every 15 minutes to check for changes.
 
-1. Repeat steps 2 to 5 for each code pattern that can only be solved by adjusting your mapping to ODC architecture.
-
-After ensuring the mapping of your O11 apps is compatible with ODC architecture, clean up the **Category** filter to focus on the findings for the remaining categories and assess the refactoring effort to [prepare for the app migration](../prepare/prep-refactor-o11-apps.md).
+Repeat these steps for each pattern, assessing the refactoring effort to [prepare for the app migration](../prepare/prep-refactor-o11-apps.md).

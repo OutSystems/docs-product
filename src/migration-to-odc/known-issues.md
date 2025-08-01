@@ -7,23 +7,18 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+tags: migration, technical issues, odc, o11, forge components
+audience:
+  - platform administrators
+  - full stack developers
+  - architects
+outsystems-tools:
+  - lifetime
+  - forge
 ---
-
 # Known issues
 
 This page outlines the current technical limitations of migrating the OutSystems 11 apps to ODC. OutSystems development teams are actively working to address the issues.
-
-## Data is truncated for attributes larger than 100 MB
-
-A validation process checks the size of each binary data attribute in the database. The migration process truncates the data if an attribute exceeds the maximum allowed size of 100 MB. This mechanism is in place to unblock the migration process, but it requires careful data preparation before migration to a production environment.
-
-### Impact
-
-The truncation of attributes leads to data loss.
-
-### How to fix
-
-When **migrating to a production environment**, ensure that the attributes in your OutSystems 11 apps are smaller than 100 MB.
 
 ## Dependency warnings for Forge components after migration to ODC
 

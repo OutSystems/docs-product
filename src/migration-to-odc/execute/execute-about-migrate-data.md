@@ -13,8 +13,9 @@ audience:
 coverage-type:
   - apply
   - understand
+outsystems-tools:
+  - none
 ---
-
 # Migrate data
 
 <div class="info" markdown="1">
@@ -96,17 +97,7 @@ For detailed information about how to migrate end users using the data migration
 
 #### Validate end user emails
 
-To migrate end users from a source O11 environment, ensure the following:
-
-* All end users in that O11 environment have an email address defined.
-* The end user's email address is valid. Since OutSystems does not migrate passwords for security reasons, users need a valid email to receive password reset instructions after their first login. If any email addresses are invalid, update or remove them in the Users app.
-* All end users have a unique email address since in ODC an end user's email address is used to login to ODC app.  
-
-To check if all end users have email addresses defined, follow these steps:
-
-1. In the Users app, export your end users to an Excel file.
-1. Filter the Excel file to find users without emails.
-1. In the Users app, modify emails or deactivate users without emails.
+Before you migrate end users from a source O11 environment, ensure all active and inactive end users of the O11 apps you want to migrate [have a valid and unique email address](../code-patterns/data-user-email-validation.md).
 
 #### Create and populate user extension table
 

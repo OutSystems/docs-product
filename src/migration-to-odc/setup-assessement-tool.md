@@ -81,8 +81,6 @@ Before setting up the Migration Assessment Tool, make sure the following require
 
 * You are part of the early access program and have access to the Migration Kit.
 
-* Your O11 infrastructure uses SQL Server databases.
-
 * Your O11 environments use Platform Server 11.18.1 or later.
 
 * The environment where you publish the Migration Assessment Tool Console has [Single Sign-On Between App Types enabled](../security/configure-authentication.md).

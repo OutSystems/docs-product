@@ -34,7 +34,7 @@ In the Migration Assessment Tool you can:
 
 * Design your ODC architecture blueprint by [mapping your O11 apps to ODC assets](plan/plan-map-apps.md) - Use your O11 apps as building blocks for future ODC apps, where an ODC app can be composed of one or multiple existing O11 apps.
 
-* [Define migration plans](plan/plan-define-migration-plans.md) for small sets of apps based on your different app domains and your teams' development lifecycle.
+* [Define migration plans](plan/plan-define-migration-plans.md) - Group a set of O11 apps that you want to migrate independently.
 
 * [Assess your apps’ architecture and ODC readiness](plan/plan-assess-refactor.md) - The Migration Assessment Tool assesses your O11 apps and identifies any technical challenges that may occur during the migration process, for example, O11-specific features that need to be implemented differently in ODC, or adapting the app architecture. These technical challenges are outlined in findings that guide you through the steps on how to adjust your apps for a smooth migration to ODC's modern cloud-native framework.
 
@@ -42,11 +42,20 @@ In the Migration Assessment Tool you can:
 
 The Migration Assessment Tool consists of the following components:
 
-* Console
-* Engine
+* Installer  
+* Console  
+* Engine  
 * Probe
 
 ![Diagram showing the architecture of the Migration Assessment Tool, including the Console, Engine, and Probes in different environments (DEV, Q&A, PROD) and their interactions.](images/assessment-tool-architecture-diag.png "Migration Assessment Tool Architecture Diagram")
+
+### Installer
+
+The **Installer** enables you to do the initial set up of the Migration Assessment Tool, [update it to the latest version](?tab=t.0#heading=h.9uoquem0cfrk), and [install additional probes](?tab=t.0#heading=h.ufan44qkf7w2), if needed.
+
+During the setup process, the installer gets the O11 environments’ details from LifeTime, and connects to each environment to install the several tool components. When all the components are installed, the installer passes the configuration information to the engine.
+
+The installer component is typically **installed in the Development environment** of your O11 infrastructure.
 
 ### Console
 
@@ -56,11 +65,9 @@ The console must be **installed in the Development environment** of your O11 inf
 
 ### Probe
 
-The first **Probe** to install is the development probe, which must be **installed in the Development environment** of your O11 infrastructure. Optionally, you can install additional probes in other environments to check the ODC-readiness of the apps, except the LifeTime environment. For example, you may want to install a probe in the QA environment, so you can run the assessment on apps during the app testing phase.
+The first **Probe** to install is the development probe, which must be **installed in the Development environment** of your O11 infrastructure. Optionally, you can install an additional non-production probe to check the ODC-readiness of the apps. For example, you may want to install a probe in the QA environment, so you can run the assessment on apps during the app testing phase.
 
-Each probe runs the assessment of the apps in the environment where it's installed and returns the findings to the engine. The assessments run sequentially, only one at a time while the remaining are queued.
-
-At a later phase, when you [execute the migration](execute/execute-intro.md) of your apps to ODC, the O11 environments running a probe can be selected as the source for code or data migration.
+Each probe runs the assessment of the apps in the environment where it's installed and returns the findings to the engine. The assessments run sequentially, only one ODC Asset at a time while the remaining are queued.
 
 ### Engine
 
@@ -78,105 +85,177 @@ Before setting up the Migration Assessment Tool, make sure the following require
 
 * Your O11 environments use Platform Server 11.18.1 or later.
 
-* One of your non-LifeTime environments, where you publish the Migration Assessment Tool Console, has [Single Sign-On Between App Types enabled](../security/configure-authentication.md). Please note that to enable this setting, you must also [toggle the Enable HTTP Strict Transport Security (HSTS)](../security/enforce-https-security.md) and [enable secure session cookies](../security/secure-cookies-enable-secure-session.md) in that environment.
+* The environment where you publish the Migration Assessment Tool Console has [Single Sign-On Between App Types enabled](../security/configure-authentication.md).
 
-* Your IT User has the **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
+    <div class="info" markdown="1">
+
+    To enable single sign-on between app types, you must also [toggle the Enable HTTP Strict Transport Security (HSTS)](../security/enforce-https-security.md) and [enable secure session cookies](../security/secure-cookies-enable-secure-session.md) in that environment.
+
+    </div>
 
 ## Set up the tool
 
 To set up the Migration Assessment Tool, follow these steps:
 
-* [Step 1. Install the Engine in the LifeTime environment](#engine)
+* [Step 1. Install the Migration Assessment Tool Installer app](#mat-installer)
 
-* [Step 2. Install the Console in the Development environment](#console)
+* [Step 2. Follow the installation wizard](#install-wizard)
 
-* [Step 3. Install the development Probe in the Development environment](#probe-dev)
+### Step 1. Install the Migration Assessment Tool Installer app { #mat-installer }
 
-* [Step 4. Install the Probe in other environments](#probe-other-env)
+<div class="info" markdown="1">
 
-* [Step 5. Configure the Migration Assessment Tool](#configure)
-
-### Step 1. Install the Engine in the LifeTime environment { #engine }
-
-1. Download the [Migration Assessment Tool Engine solution pack](resources/Migration_Assessment_Engine_v1_5_11_8.osp).
-
-1. Go to the Service Center console of your LifeTime environment (`https://<lifetime_environment>/ServiceCenter`).
-
-1. [Upload and publish the Migration Assessment Engine solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
-
-### Step 2. Install the Console in the Development environment { #console }
-
-1. Download the [Migration Assessment Tool Console solution pack](resources/Migration_Assessment_Console_v1_5_11_8.osp).
-
-1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
-
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Console solution pack.
-
-1. Still in the Service Center console, ensure [Single Sign-On Between App Types](../security/configure-authentication.md) is enabled.
-
-### Step 3. Install the development Probe in the Development environment { #probe-dev }
-
-1. Download the [Migration Assessment Tool Probe solution pack](resources/Migration_Assessment_Probe_v1_5_11_8.osp).
-
-1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
-
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Probe solution pack.
-
-### Step 4. Install the Probe in other environments { #probe-other-env }
-
-Optionally, you can install additional probes in the environments where you also want to assess the ODC-readiness of your apps (for example, the QA environment), or the environments that you will later select as the source for code or data migration (for example, the Production environment).
-
-<div class="warning" markdown="1">
-
-Don’t install the Probe in the LifeTime environment.
+This step requires **Create Applications** and **Change and Deploy Applications** permissions for the O11 environment where you install the installer app, typically the Development environment.
 
 </div>
 
-1. Go to the Service Center console of the environment where you want to install an additional probe (`https://<environment>/ServiceCenter`).
+Follow these instructions to install the Migration Assessment Tool Installer in your Development environment: 
 
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Probe solution pack you downloaded in the previous step.
+1. Download the [Migration Assessment Tool Installer app file](resources/Migration_Assessment_Tool_Installer_v1_1_3_1.oap).
 
-Installing extra probes is important not only for assessing ODC readiness but also for migrating code and data from those environments.
+1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
 
-### Step 5. Configure the Migration Assessment Tool { #configure }
+1. Under **Factory > Applications**, select **Publish an Application**.
 
-1. Go to the LifeTime management console (`https://<lifetime_environment>/lifetime`).
+1. Upload and publish the Migration Assessment Tool Installer app file.
 
-1. [Create a service account](../ref/apis/lifetime-deployment/rest-api-authentication.md) with the [Administrator role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
+### Step 2. Follow the installation wizard { #install-wizard }u
 
-1. Copy the authentication token.
+<div class="info" markdown="1">
 
-1. Go to the Migration Assessment console (`https://<mat_console_environment>/MigrationAssessment/`).
+This step requires:
+
+* The **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).  
+* A [service account in LifeTime](../ref/apis/lifetime-deployment/rest-api-authentication.md) with the **Administrator** role, and the corresponding authentication token.
+
+</div>
+
+Follow the installer wizard to set up the Migration Assessment Tool components:
+
+1. Open the Migration Assessment Tool Installer app (`https://<dev_environment>/MigrationAssessmentInstaller/`).
 
 1. Log in using your IT User credentials.
 
-1. Go to the **Maintenance** tab.
+1. Set the **Authentication token** of the [service account](../ref/apis/lifetime-deployment/rest-api-authentication.md) you’ll use to access the LifeTime environment.
 
-1. Configure the **Access to LifeTime**, where the Engine component is installed:
+    ![Screenshot of the Migration Assessment Tool Installer wizard to configure access to LifeTime, showing fields for LifeTime URL and authentication token.](images/setup-mat-wizard-access-lt-mati.png "Configure access to LifeTime in Migration Assessment Tool Installer")
 
-   * Set the **Engine URL (LifeTime)** field to the LifeTime address.
-   * Paste the authentication token for the LifeTime Service Account into the **Authentication token** field.
+1. Click **Access LifeTime** to validate the connection.
 
-1. Click **Save** to save and test the connection to LifeTime.
+    You can only proceed if the provided service account can successfully access LifeTime.
 
-    ![Screenshot of the Migration Assessment Tool configuration page for accessing LifeTime, showing fields for Engine URL and authentication token.](images/assessment-tool-setup-access-lt-at.png "Configure access to LifeTime in Migration Assessment Tool")
+1. Click **Continue**.
 
-9. To configure access to the development probe, in the **Probe connection** area, set the **Analysis environment URL** to your Development environment address, and click **Connect**.
+1. Choose the O11 environments where you want to install the [probes](#probe) and the [console](#console) components.
 
-    <div class="info" markdown="1">
-
-    It's mandatory to configure access to the **Development** probe.
-
-    </div>
-
-    ![Screenshot of the Migration Assessment Tool configuration page for probe connections, showing the status and URLs for different environments.](images/assessment-tool-setup-probe-connection-at.png "Configure probes connection in Migration Assessment Tool")
-
-10. If you installed the Probe component in other environments, configure the connection to those environment probes.
+    The installer provides you the list of environments registered in LifeTime. If you want to use an alternative URL for a specific environment, choose the environment from the list and click the pencil icon to edit the environment URL. 
 
     <div class="info" markdown="1">
 
-    Later, when you [execute the migration](execute/execute-intro.md) of your apps to ODC, you will select which O11 environment probes will be the source for code and data migration.
+    * The installation of the **Development probe** and the **Migration Assessment Tool console** is mandatory. Outsystems recommends the installation of these components in your O11 Development environment.
+
+    * Optionally, you can install additional probes in the environments where you also want to assess the ODC-readiness of your apps, for example, the QA environment. You can opt to [install additional probes](#additional-probes) at a later phase. Code and data migration is only available from O11 environments with installed probes.
 
     </div>
 
-After configuring the Migration Assessment Tool, you can start [mapping your O11 apps to ODC assets](plan/plan-map-apps.md).
+    ![Screenshot of the Migration Assessment Tool Installer wizard to configure the O11 environments where the tool components are installed.](images/setup-mat-wizard-011-env-mati.png "Configure O11 environments in Migration Assessment Tool Installer")
+
+1. Click **Validate URLs** to validate the connection with the chosen environments.
+
+    You can only proceed if the installer can successfully connect with the chosen environments.
+
+1. Click **Continue**.
+
+1. The last step of the wizard shows a summary of the Migration Assessment Tool components that will be installed in each environment. Click **Install**.
+
+    ![Screenshot of the Migration Assessment Tool Installer wizard showing a summary of the components to install.](images/setup-mat-wizard-summary-mati.png "See the installation summary in Migration Assessment Tool Installer")
+
+After setting up the Migration Assessment Tool, you can start [mapping your O11 apps to ODC assets](plan/plan-map-apps.md).
+
+## Update to the latest Migration Assessment Tool version
+
+<div class="info" markdown="1">
+
+This step requires the **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
+
+</div>
+
+The Migration Assessment Tool will show a notification when a new version is available.
+
+![Screenshot of the Migration Assessment Tool showing a notification of update availability.](images/mat-update-available-at.png "Migration Assessment Tool update available")
+
+Follow these steps to update the Migration Assessment Tool:
+
+1. Click **Open Migration Assessment Tool Installer** to open the installer.
+
+    The installer takes you to the last step of the setup wizard.
+
+1. Click **Update** to install the latest version of the Migration Assessment Tool in each component.
+
+    ![Screenshot of the Migration Assessment Tool Installer wizard showing a summary of the components to update.](images/update-mat-wizard-summary-mati.png "See the update summary in Migration Assessment Tool Installer")
+
+## Install an additional probe
+
+After the initial setup, you can always install an additional probe in another O11 environment of your infrastructure. For example, when you are ready to execute the migration of your apps to ODC, you need to have a probe running in the O11 environment that will be the source for code or data migration (for example, the Production environment).
+
+Follow these steps to install an additional probe using the Migration Assessment Tool Installer:
+
+1. Open the Migration Assessment Tool Installer app (`https://<dev_environment>/MigrationAssessmentInstaller/`).
+
+1. Log in using your IT User credentials.
+
+    As you already set up the Migration Assessment Tool, the installer takes you to the last step of the setup wizard.
+
+1. Click **Go back** to go to the **Choose O11 environments** step.
+
+1. Select the O11 environment for the additional probe.
+
+1. Click **Continue**.
+
+1. Click **Update** to install an additional probe in the new environment.
+
+    The Migration Assessment Tool Installer uses the latest version available to install the new probe and updates all the remaining components if they are not up to date.
+
+## Troubleshooting
+
+This section describes some common issues you may encounter during the setup of the Migration Assessment Tool, and how to solve them.
+
+If you encounter any other limitation or issue using the Migration Assessment Tool Installer, try the [manual setup process](manual-setup-assessement-tool.md).
+
+Please also tell us about the issue you faced using the **Give feedback** option. This will help us improve the installer tool and support more scenarios.
+
+### Can't log in to the Migration Assessment Tool Installer app
+
+After [installing the Migration Assessment Tool Installer app](#mat-installer), you are not able to log in to follow the installation wizard.
+
+#### Recommended action
+
+Make sure:
+
+* You log in with your IT users credentials.
+
+* Your IT user has the **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
+
+If [IT users authentication with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md) is enabled for your O11 infrastructure, add the following redirect URI to your IdP configuration, where `<mati_environment>` is the environment where you installed the Migration Assessment Tool Installer:
+
+* `https://<mati_environment>/MigrationAssessmentInstaller/OIDC_Callback`
+
+### Setup process fails
+
+<!--TODO: Add screenshot of the setup process error-->
+
+In some scenarios, the Migration Assessment Tool Installer is not able to connect to one or more of the remaining O11 environments and the setup fails. Possible reasons are:
+
+* There’s no communication between the Migration Assessment Tool Installer environment and another O11 environment.
+
+* The O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection. 
+
+#### Recommended action
+
+Make sure your O11 infrastructure follows the [OutSystems 11 network requirements](../setup-infra-platform/setup/network-requirements.md).
+
+In case the O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection, you can edit the environment URL to the alternative URL when choosing the O11 environments in the [setup wizard](#install-wizard). 
+
+If you have other communication restrictions applied to your O11 environments, [install the Migration Assessment Tool Installer](#mat-installer) in your LifeTime environment instead, and repeat the [setup wizard](#install-wizard).
+
+If the problem persists, try the [manual setup process](manual-setup-assessement-tool.md).

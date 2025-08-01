@@ -230,9 +230,9 @@ After [installing the Migration Assessment Tool Installer app](#mat-installer), 
 
 Make sure:
 
-* You log in with your IT users credentials.
+* You log in with your IT users credentials
 
-* Your IT user has the **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
+* Your IT user has the **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles)
 
 If [IT users authentication with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md) is enabled for your O11 infrastructure, add the following redirect URI to your IdP configuration, where `<mati_environment>` is the environment where you installed the Migration Assessment Tool Installer:
 

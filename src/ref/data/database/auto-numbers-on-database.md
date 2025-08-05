@@ -17,15 +17,15 @@ coverage-type:
 
 # Auto Numbers on Database
 
+<div class="warning" markdown="1">
+
+OutSystems advises against using the AutoNumber property for Static Entity identifiers. Database-generated numbers aren't guaranteed to be the same across different environments (Development, QA, Production), which can lead to data inconsistency, broken foreign key relationships, and deployment failures.
+
+</div>
+
 When modeling Entities to store data on the database, you can make Integer attributes auto numbers to ensure they have unique values for each record.
 
 This page explains what happens on the database when setting an attribute's IsAutoNumber property to `Yes`.
-
-<div class="warning" markdown="1">
-
-OutSystems advises against using the AutoNumber property for Static Entity identifiers. Database-generated numbers are not guaranteed to be the same across different environments (Development, QA, Production), which can lead to data inconsistency, broken foreign key relationships, and deployment failures.
-
-</div>
 
 ## SQL Server
 

@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Integrate external systems with custom C# code in OutSystems 11 (O11) and OutSystems Developer Cloud (ODC), optimizing database connections and code migration.
 locale: en-us
 guid: d7657c47-7cd9-4bc1-a8be-54d25c20233d
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -18,7 +18,6 @@ coverage-type:
   - unblock
   - understand
 ---
-
 # Asset consuming an extension
 
 An [Extension](../../integration-with-systems/integration-studio/getting-started/extension.md) is a set of actions, structures, and entities, defined in Integration Studio, that allows integration with external systems and the usage of custom C# code.
@@ -49,4 +48,4 @@ If you want to manually implement your Extension's functionality in ODC, solve t
 
 * If you Extension connects to an [external data source that's supported in ODC](https://success.outsystems.com/documentation/outsystems_developer_cloud/integration_with_external_systems/integrate_with_external_data_sources/#supported-systems), create the [integration with external data sources in ODC](https://success.outsystems.com/documentation/outsystems_developer_cloud/integration_with_external_systems/integrate_with_external_data_sources/).
 
-* If you Extension extends your apps with custom C# code, create and release an ODC Library that [extend your apps with external logic using custom code](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/extend_your_apps_with_external_logic_using_custom_code/). You must use the external SDK libraries to port your extension code to be [compatible with .NET 8.0 libraries](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/extend_your_apps_with_external_logic_using_custom_code/external_libraries_sdk_readme/#prerequisites).
+* If you Extension extends your apps with custom C# code, create and release an ODC Library that [extend your apps with external logic using custom code](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/extend_your_apps_with_external_logic_using_custom_code/). You must use the external SDK libraries to port your extension code to be [compatible with .NET 8.0 libraries](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/extend_your_apps_with_external_logic_using_custom_code/external_libraries_sdk_readme/#prerequisites). Check out the [Extending Apps with External Logic Custom Code](https://www.outsystems.com/tk/redirect?g=A7E04701-A3EE-409A-81A9-2133340E78E9) online training course to learn how to integrate with custom code in ODC.

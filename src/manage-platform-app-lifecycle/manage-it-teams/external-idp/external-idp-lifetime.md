@@ -125,6 +125,13 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
     ![Log out confirmation dialog in LifeTime after activating OpenID Connect provider](images/log-out-lt.png "Log Out Confirmation")
 
+    
+    <div class="info" markdown="1">
+     
+    For Microsoft Entra, when a new **Client Secret** is generated (due to expiration), you must delete the current OIDC configuration and recreate it entirely.
+
+    </div>
+
 Once activated, you are logged out of the current session and redirected to the login page of the currently active OIDC provider login page.
 
 **Note**: Once the OpenId Connect provider is activated, users  can no longer use the fallback built-in authentication mechanism. In the case of any issues with the external IdP, designated break-glass users, also known as local admins, can login using a username and password to deactivate the OpenID Connect provider and enable any alternative authentication mechanism.

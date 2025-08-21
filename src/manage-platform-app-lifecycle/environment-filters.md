@@ -48,6 +48,8 @@ To deal with this increased complexity, as of **LifeTime version 11.15.0**, OutS
 
 An environment filter is a subset of the infrastructure environments that you define, which helps you to focus on specific business cases, as opposed to the whole infrastructure. Create, edit, and delete as many environment filters as you need, and switch between them on the **Applications** list screen in LifeTime. Examples include creating a filter for your internal environments and another for your external ones. 
 
+Environment filters are user-specific, allowing each individual to create and manage their own filters independently. These filters are exclusive to each user and don't impact other users’ settings. Administrators can't modify or control the filters created by users. This ensures that every user has complete autonomy over their filter preferences, providing a personalised and consistent experience tailored to their needs.
+
 ## Real-life examples of using environment filters
 
 Here are 2 business cases that showcase the benefits of the new filters feature:
@@ -83,3 +85,10 @@ Each time you switch filters, the view is automatically updated to the selected 
 ## Conclusion
 
 Ultimately, environment filters provide you with a customized view of your environments, thus giving you better visibility and oversight of your environments to better manage your pipelines and application lifecycle within each pipeline. Futhermore, using smaller environment filters can provide better response times for loading the applications list screen.
+
+### Extended functionality
+
+Environment filter settings are also applied on the Application Details screen and in the list of available environments in the **Create deployment plan** popup. This allows users to have consistent visibility over the available environments for the active filter.
+Additionally, there is a section in the Lifetime Settings menu, allowing platform administrators to enable or disable the environment filter feature specifically for these screens. This provides more granular control over how the feature is utilized across different parts of LifeTime.
+
+![LifeTime Settings menu showing options to enable environment filters on the Create deployment plan popup and the Infrastructures screen](images/env-filters-lt.png "Environment Filters Settings")

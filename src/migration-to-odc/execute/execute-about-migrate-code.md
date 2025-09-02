@@ -27,24 +27,20 @@ This article only applies to customers with access to the Migration Kit.
 
 ![Diagram showing the current migrate code step in the migration process](images/execute-migrate-code-diag.png "Migrate code")
 
-Once you have mapped the O11 apps to ODC in the Migration Assessment Tool and resolved the findings highlighted in the assessment tool on the O11 app, you are ready to migrate the O11 code.
+Once the O11 apps in your [migration plan](../plan/plan-define-migration-plans.md) are [prepared for ODC](../prepare/prep-intro.md), you are ready to migrate their O11 code using the migration console in ODC Portal.
 
-In the ODC portal, you can use the code migration console to do the following:
+The migration console enables you to:
 
-* Convert O11 code patterns into ODC-compatible patterns.
+* Automatically convert and merge your O11 modules into ODC apps and libraries based on the [mapping defined in the Migration Assessment tool](../plan/plan-map-apps.md).
 
-* Merge O11 modules into ODC applications based on the mapping defined in the Assessment tool.
-
-* Open the ODC app in ODC Studio to fix any outstanding issues and publish the app.
+* Download the migrated ODC apps so you can edit them in ODC Studio to fix the identified issues and get them ready to publish.
 
 For detailed information about how to migrate code using the tool, refer to [Code migration using the tool](execute-how-to-migrate-code.md).
 
 ## Tagging your apps
 
-When migrating apps from O11 to ODC, the latest tagged version of the app is fetched from the source environment. This is the version that's migrated to ODC. Ensure that, after you've made all the changes to your app and before you start the code migration process, you have tagged your app in the environment from where you want to migrate the app. It can be DEV, QA,or PROD.
+When migrating apps from O11 to ODC, the latest tagged version of the app is fetched from the source environment. This is the version that's migrated to ODC.
 
-For more information about tagging your apps, refer to [Tag a Version](../../deploying-apps/tag-a-version.md)
+After you've made all the changes to your app and before you start the code migration process, ensure that you have tagged your app in the environment from where you want to migrate the app.
 
-## See also
-
-[Migrate code using the tool](execute-how-to-migrate-code.md)
+For more information about tagging your apps, refer to [Tag a Version](../../deploying-apps/tag-a-version.md).

@@ -53,6 +53,4 @@ You may need to configure the following:
 * Test your apps before deploying them to the QA and Production stages.
 * Deploy your apps to the stages where you want to migrate data to.
 * Delete any testing app data you added to the migrated ODC apps.
-* [Migrate data](execute-how-to-migrate-data.md).
-
-
+* [Migrate data](execute-about-migrate-data.md).

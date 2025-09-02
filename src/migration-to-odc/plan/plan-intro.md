@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Plan and prepare app migration from OutSystems 11 (O11) to OutSystems Developer Cloud (ODC).
 locale: en-us
 guid: 788a3d99-a2fe-4fa2-b868-d2851cd2ffb8
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -29,7 +29,7 @@ Depending on the size of your app portfolio, you may follow different migration 
 
     ![Diagram showing the one-shot migration process for small app portfolios from O11 to ODC](images/one-shot-migration-diag.png "One-Shot Migration Diagram")
 
-* **Coexistence**  is suitable for larger app portfolios (infrastructures with more than 2 apps) where it is essential to continue providing business value and, at the same time, work on the migration activities. With this migration journey, new apps can be created in ODC while you independently migrate apps from O11. Check the [Prepare O11 application architecture](#coexistence) to start your incremental migration.
+* **Coexistence** is suitable for larger app portfolios (infrastructures with more than 2 apps) where it is essential to continue providing business value and, at the same time, work on the migration activities. With this migration journey, new apps can be created in ODC while you independently migrate apps from O11. Check the [Prepare O11 application architecture](#coexistence) to start your incremental migration.
 
     ![Diagram depicting the phased approach for migrating larger app portfolios from O11 to ODC](images/migration-phased-approach-diag.png "Phased Approach to Migration Diagram")
 

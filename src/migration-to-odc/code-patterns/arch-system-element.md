@@ -305,6 +305,8 @@ The following actions don’t exist in ODC because ODC doesn't currently support
 * TenantInvalidateCache
 * TenantSwitch
 
-### System entities not available in ODC
+### System entities not available in ODC { #system-entities }
 
-Except the **User** system entity, which is available in ODC as a cache with a simpler field structure, and a limited set of workflow-related entities, all the remaining [O11 system entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel/) are no longer available in ODC. For any dependency to a system entity that is not available in ODC, you need to refactor your code to use ODC capabilities instead of direct system entity access.
+Except the **User** system entity, which is available in ODC as a cache with a simpler field structure, and a limited set of workflow-related entities, all the remaining [O11 system entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel/) are no longer available in ODC.
+
+For any dependency to a system entity that is not available in ODC, you need to remove the reference to that system entity and refactor your code to use ODC capabilities instead.

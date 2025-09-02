@@ -18,19 +18,7 @@ outsystems-tools:
 ---
 # Known issues
 
-This page outlines the current technical limitations of migrating the OutSystems 11 apps to ODC. OutSystems development teams are actively working to address the issues.
-
-## Dependency warnings for Forge components after migration to ODC
-
-Some apps referencing Forge components show errors due to different identifiers in ODC and O11. This happens with the Forge components that don't have an equivalent and compatible version in ODC.
-
-### Impact
-
-After migration from O11, you can't publish the apps in ODC due to invalid and outdated references to the Forge components.
-
-### How to fix
-
-Install a compatible Forge component in ODC, change the references, and publish the app. Alternatively, if there are no compatible components, consider removing their functionalities to publish the app.
+This page outlines the current known issues of the Migration Kit. OutSystems development teams are actively working to address these issues.
 
 ## Discrepancies with the latest app version in development only
 
@@ -59,15 +47,3 @@ Reset the service account for the Assessment Tool.
 1. Go to LifeTime Access and access the page `https://<LifeTime_server>/lifetime/troubleshoot.aspx`. 
 1. In the **Effective Permission Status** section, find the **AssessmentTool**(`service_account_name`).
 1. Select the button **Clean up** in the same line.
-
-## Static entities with auto-number not supported
-
-After conversion, you might receive the error message "StaticEntity Auto Number not supported in this version." This issue occurs because the system hides static entities with auto numbers in references.
-
-### Impact
-
-The migration process cannot migrate data in the static entities.
-
-### How to fix
-
-Remove the hidden references that contain static entities with auto numbers. This requires a trial-and-error approach until the references containing the hidden entities are no longer present. You can also contact Early Access Program representatives and open a Support ticket requesting more information about the hidden entities.

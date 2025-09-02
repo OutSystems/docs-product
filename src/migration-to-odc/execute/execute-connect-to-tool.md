@@ -25,13 +25,13 @@ This article only applies to customers with access to the Migration Kit.
 
 </div>
 
-Before you can start migrating your O11 apps and data to ODC, you must connect to the Migration Assessment Tool. By doing this, the apps and data you've mapped in the Migration Assessment Tool are available to migrate to ODC.
+Before you can start migrating your O11 apps and data to ODC, you must connect to the Migration Assessment Tool. By doing this, the [migration plans](../plan/plan-define-migration-plans.md) you've defined in the Migration Assessment Tool are available in the ODC migration console.
 
 ## Prerequisites
 
-* You must have the **O11 Migrations** > **Manage migrations** role.
+* You must have the **O11 Migrations** > **Manage configurations** permission in your ODC tenant.
 
-* [Migration Assessment Tool has been set up in O11](../setup-assessement-tool.md).
+* The [Migration Assessment Tool has been set up in O11](../setup-assessement-tool.md).
 
 ## Connect to Migration Assessment Tool
 
@@ -39,30 +39,24 @@ Before you can start migrating your O11 apps and data to ODC, you must connect t
 
 To connect to the Migration Assessment Tool, follow these steps:
 
-1. Log into ODC Portal.
+1. Log in to the ODC Portal.
 
-1. Go to **Migrate O11** > **Configurations**.
+1. Under **MIGRATE O11**, click **Configurations**.
 
-1. Click **Configure migrations**.
+1. Click **Edit**.
 
-1. Enter the following Migration Assessment Tool values:
+1. Enter the following values for **O11 LifeTime**:
 
-    * **URL**:  The LifeTime environment URL of where you installed the Migration Assessment Tool engine.
+    * **URL**: The URL of the LifeTime environment where you installed the Migration Assessment Tool engine.
 
-    * **Auth Token**:  LifeTime  Service Account authentication token.
-
-      **Note**: The Service Account must have the Administrator role. For more information about understanding the permission model in OutSystems, refer to [Roles](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
+    * **Authentication Token**: The authentication token of the service account used to access the LifeTime environment.
 
     For more information about the Migration Assessment Tool and these values, refer to [Set up the Migration Assessment Tool](../setup-assessement-tool.md).
 
-1. Click **Save**
-
-## Troubleshooting
-
-You can export logs from the Migration Assessment Tool. Go to **Maintenance** > **View troubleshoot** > select **Export**.
+1. Click **Save**.
 
 ## Next steps
 
-* Ensure the IT user migrating the code has the **O11 Migrations** > **Migrate O11 code** role.
+* Ensure the IT users migrating the code have the **O11 Migrations** > **Migrate O11 code** permission in the ODC tenant.
 
-* [Migrate code](execute-how-to-migrate-code.md).
+* [Migrate code](execute-about-migrate-code.md).

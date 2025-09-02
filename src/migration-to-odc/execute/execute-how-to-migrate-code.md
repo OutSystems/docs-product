@@ -26,47 +26,45 @@ This article only applies to customers with access to the Migration Kit.
 
 </div>
 
-This article explains how to migrate O11 code to ODC using the code migration tool available in the ODC portal.
+This article explains how to migrate O11 code to ODC using the migration console available in the ODC portal.
 
 ## Prerequisites
 
-Before you migrate your O11 code, do the following:
+Before you migrate the code of the O11 apps in a [migration plan](../plan/plan-define-migration-plans.md), ensure the following:
 
-* [Map O11 apps to ODC apps](../plan/plan-map-apps.md) in the Assessment tool.
+* The O11 apps in the plan are [prepared for ODC](../prepare/prep-intro.md).
 
-* [Identify and fix any issues highlighted in the Assessment Tool until all apps are marked as ](../prepare/prep-refactor-o11-apps.md) **Ready for ODC** status.
+* The migration console is [connected to the Migration Assessment Tool](execute-connect-to-tool.md).
 
-* [Tag O11 apps in LifeTime](execute-about-migrate-code.md#tagging-your-apps) after mapping the O11 apps to ODC in the Migration Assessment tool.
+* The source environment for code migration is correctly configured on the **Migration Assessment Tool > Maintenance** tab.
 
-* [Connect to the Migration Assessment Tool](execute-connect-to-tool.md).
+* The O11 apps to migrate have a [tag in LifeTime](execute-about-migrate-code.md#tagging-your-apps).
 
-* Ensure you have the **O11 Migrations** > **Migrate O11 code** role in ODC.
+* You have the **O11 Migrations** > **Migrate O11 code** permission in ODC.
 
 ## Code migration
 
 To migrate O11 code to ODC, follow these steps:
 
-1. Log into ODC portal.
+1. Log in to the ODC portal.
 
-1. Go to  **Migrate O11** >  **Code Migrations**.
+1. Under **MIGRATE O11**, click **Migrations**.
 
-1. Select the environment from where you want to migrate the O11 app.
+1. Select the plan you want to migrate. Validate the status of the **Last assessment** to ensure that all O11 apps in the plan are [prepared for ODC](../prepare/prep-intro.md).
 
-1. Verify that the status of all O11 apps is **Ready for ODC**. If not, you must [modify and refactor your O11 implementation](../prepare/prep-refactor-o11-apps.md).
+    You cannot migrate until the status of all Assets in the plan is **Change in ODC**.
 
-    You cannot migrate until the status of all apps is **Ready for ODC**.
-
-1. Click **Migrate**.
+1. Click **Migrate code**.
 
     A list of O11 apps is displayed. You can click each app to review its corresponding modules and their revision number.
 
-1. To confirm the migration, again Click **Migrate**.
+1. To confirm the migration, click **Migrate**.
 
     The migration process begins, and the status of apps moves to **Migrating**.
 
 If the migration is successful, the process ends with **Finished** status. The O11 apps mapped in the Assessment tool are converted to ODC apps and libraries. These ODC apps and libraries are still **Unpublished**.
 
-Now, in ODC, you must [publish the ODC apps and libraries](#publish-odc-apps-and-libraries).
+Now, in ODC, you must [publish the ODC apps and libraries](#publish-odc-apps-and-libraries).
 
 If the migration is unsuccessful, the process ends with a **Finished with errors** status, and you cannot open the app or the library in ODC Studio. See how to [troubleshoot migration issues](#troubleshooting).
 
@@ -76,33 +74,31 @@ The tool displays a list of apps and libraries, with producers at the top and co
 
 To publish an ODC app or a library, follow these steps:
 
-1. Select an app or library with the Unpublished status and click **Download** in the order as in the list. The file is downloaded to your local machine. 
+1. Following the order in the list, Select an app or library with the **Unpublished** status and click **Download**. The file is downloaded to your local machine.
 
 1. Open the file in **ODC Studio**.
 
 1. Select **App** > **Check for dependency updates**.
 
-1. Modify the app or library until no TrueChange errors exist.
+1. Fix all the TrueChange errors.
 
 1. Publish the app or library to the target ODC stage.
 
-1. If it's a Library, [release that library](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/libraries/#release-library). 
+1. If it's a library, [release that library](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/libraries/#release-library).
 
 1. Repeat steps 1 to 6 until all apps and libraries are published in ODC.
 
 ## Troubleshooting
 
-To check the logs and identify migration issues, follow these steps:
+To check the logs and identify code migration issues, follow these steps:
 
-1. In the ODC Portal, go to **MIGRATE O11** > **Code migrations**.
+1. Under **MIGRATE O11**, click **Migrations**.
 
-1. Select the tab **Migrations**.
+1. Select a plan and click the migration row that you want to troubleshoot in the **Code migration** history.
 
-1. Select an entry > select an app > open the **Logs** tab.
+1. Select an app and open the corresponding **Logs** tab.
 
-If you are unable to fix the issue, contact the OutSystems Support for guidelines. Make sure you include the following information in your support request:
-
-* The date and time the migration was started.
+If you are unable to fix the issue, contact OutSystems Support for guidelines. Make sure you include the following information in your support request:
 
 * The troubleshooting data file, **troubleshooting.zip**, that you can obtain by clicking the ellipsis menu (**...**) > **Export source files** on the migration details page:
 

@@ -29,7 +29,6 @@ Firebase is a Google mobile development platform that speeds up the mobile app c
 
 * [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)
 * [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
-* [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase) (Deprecated)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
 * [Firebase Cloud Messaging](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase)
 
@@ -125,32 +124,6 @@ You must provide the plugin configuration file as settings in the Service Studio
 1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each environment. For details on pointing the mobile application to the correct configuration files in each environment, see [Override Mobile Extensibility Configurations](../../../deploying-apps/override-extensibility-configurations.md).
 
     ![Shows the process of adding multiple Firebase configuration files for different environments in Service Studio](images/firebase-multiple-configurations-ss.png "Multiple Firebase Configurations in Service Studio")
-
-### Additional setup for the Dynamic Links plugin (Deprecated)
-
-<div class="warning" markdown="1">
-
-Firebase has announced the end of life for Firebase Dynamic Links, August 25, 2025 ([source](https://firebase.google.com/support/dynamic-links-faq#when_will_firebase_dynamic_links_stop_working)). This plugin should not be used for new projects and we recommend moving off of this plugin to a different service for application links.
-
-</div>
-
-The Firebase Dynamic Links Plugin requires the following additional setup steps to work correctly:
-
-* Include a global preference in the Extensibility Configurations of the application using the plugin. Ensure that the value for this preference matches the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
-```JSON
-{
-     "preferences": {
-         "global": [
-            {
-                "name": "FIREBASE_DOMAIN_URL_PREFIX",
-                "value": "outsystemsfirebase.page.link"
-            },
-        ]
-    }
-}
-```
-
-* For iOS, use a provisioning profile from Apple that contains the Associated Domains capability. For more information, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple. Ensure that the app is compliant with Apple’s Data Use and Sharing guidelines.
 
 Starting with iOS 14.5, apps on the App Store must request the user’s permission to collect tracking data through the AppTrackingTransparency framework. For more information, see [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency).
 

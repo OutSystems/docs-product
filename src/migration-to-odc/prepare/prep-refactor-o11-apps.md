@@ -42,6 +42,12 @@ Before you start, ensure the following:
 
 ![Diagram showing the Adapt O11 apps for ODC migration step in the migration process.](images/prepare-adapt-o11-apps-diag.png "Adapt O11 apps for ODC migration diagram")
 
+<div class="info" markdown="1">
+
+The patterns and findings available to you through the Migration Assessment Tool depend on your [LifeTime permissions for the Development environment](../plan/mat-permissions.md#assessment-findings).
+
+</div>
+
 To adjust your O11 apps and make them ODC-compatible, follow these steps:
 
 1. Log into the Migration Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.

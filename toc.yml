@@ -1184,6 +1184,7 @@
         - href: migration-to-odc/setup-assessement-tool.md
         - topics:
             - href: migration-to-odc/manual-setup-assessement-tool.md
+            - href: migration-to-odc/plan/mat-permissions.md
         - href: migration-to-odc/plan/plan-map-apps.md
         - href: migration-to-odc/plan/plan-define-migration-plans.md
         - href: migration-to-odc/plan/plan-assess-refactor.md

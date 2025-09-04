@@ -38,6 +38,12 @@ The assessment report helps you plan your migration to ODC, by supporting you wi
 
 * Understand and decide on what adjustments your team needs to make in O11 before migrating the apps to ODC. This information is important for your development team, so they can estimate the refactoring effort and [prepare for the app migration](../prepare/prep-refactor-o11-apps.md).
 
+<div class="info" markdown="1">
+
+The assessment operations and findings available to you through the Migration Assessment Tool depend on your [LifeTime permissions for the Development environment](mat-permissions.md#assessment-findings).
+
+</div>
+
 ## View the assessment report { #report }
 
 To view the assessment report of an [ODC asset already mapped from your O11 apps](plan-map-apps.md), follow these steps:

@@ -106,7 +106,7 @@ Now, it’s time to define each of the future ODC Assets (apps and libraries) an
 
 <div class="info" markdown="1">
 
-* The mapping is always based on the O11 Apps available in your **Development Environment**.
+* The mapping is always based on the O11 Apps of the O11 environment where the [development probe](../setup-assessement-tool.md#probe) is installed. The mapping operations, O11 apps and ODC assets available to you through the Migration Assessment Tool depend on your [LifeTime permissions for that environment](mat-permissions.md#map).
 * You can only map up to 20 O11 modules per ODC Asset.
 * Currently, you can’t map an O11 **Extension** into any ODC Asset type.
 * For **ODC Libraries**, you can only map O11 Apps that contain only O11 Library Modules. Thus, for the O11 Apps that you want to map to an ODC Library, make sure you convert all O11 Modules to O11 Library Modules.

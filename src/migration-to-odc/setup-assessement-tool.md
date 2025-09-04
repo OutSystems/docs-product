@@ -38,6 +38,8 @@ In the Migration Assessment Tool you can:
 
 * [Assess your apps’ architecture and ODC readiness](plan/plan-assess-refactor.md) - The Migration Assessment Tool assesses your O11 apps and identifies any technical challenges that may occur during the migration process, for example, O11-specific features that need to be implemented differently in ODC, or adapting the app architecture. These technical challenges are outlined in findings that guide you through the steps on how to adjust your apps for a smooth migration to ODC's modern cloud-native framework.
 
+As you navigate the Migration Assessment Tool, the apps and details available to you are based on your O11 permissions. For a complete overview of permissions by tool operation, refer to the [Migration Assessment Tool permission model](plan/mat-permissions.md).
+
 ## Tool components
 
 The Migration Assessment Tool consists of the following components:
@@ -103,7 +105,7 @@ To set up the Migration Assessment Tool, follow these steps:
 
 <div class="info" markdown="1">
 
-This step requires **Create Applications** and **Change and Deploy Applications** permissions for the O11 environment where you install the installer app, typically the Development environment.
+This step [requires **Create Applications** and **Change and Deploy Applications** permissions](plan/mat-permissions.md#setup-update) for the O11 environment where you install the installer app, typically the Development environment.
 
 </div>
 
@@ -117,14 +119,14 @@ Follow these instructions to install the Migration Assessment Tool Installer in 
 
 1. Upload and publish the Migration Assessment Tool Installer app file.
 
-### Step 2. Follow the installation wizard { #install-wizard }u
+### Step 2. Follow the installation wizard { #install-wizard }
 
 <div class="info" markdown="1">
 
 This step requires:
 
-* The **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).  
-* A [service account in LifeTime](../ref/apis/lifetime-deployment/rest-api-authentication.md) with the **Administrator** role, and the corresponding authentication token.
+* The [**Administrator** role](plan/mat-permissions.md#setup-update).
+* A [service account in LifeTime](../ref/apis/lifetime-deployment/rest-api-authentication.md) with the [**Administrator** role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles), and the corresponding authentication token.
 
 </div>
 
@@ -146,7 +148,7 @@ Follow the installer wizard to set up the Migration Assessment Tool components:
 
 1. Choose the O11 environments where you want to install the [probes](#probe) and the [console](#console) components.
 
-    The installer provides you the list of environments registered in LifeTime. If you want to use an alternative URL for a specific environment, choose the environment from the list and click the pencil icon to edit the environment URL. 
+    The installer provides you the list of environments registered in LifeTime. If you want to use an alternative URL for a specific environment, choose the environment from the list and click the pencil icon to edit the environment URL.
 
     <div class="info" markdown="1">
 
@@ -174,7 +176,7 @@ After setting up the Migration Assessment Tool, you can start [mapping your O11 
 
 <div class="info" markdown="1">
 
-This step requires the **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
+This step [requires the **Administrator** role](plan/mat-permissions.md#setup-update).
 
 </div>
 
@@ -232,7 +234,7 @@ Make sure:
 
 * You log in with your IT users credentials
 
-* Your IT user has the **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles)
+* Your IT user [has the **Administrator** role](plan/mat-permissions.md#setup-update).
 
 If [IT users authentication with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md) is enabled for your O11 infrastructure, add the following redirect URI to your IdP configuration, where `<mati_environment>` is the environment where you installed the Migration Assessment Tool Installer:
 
@@ -246,13 +248,13 @@ In some scenarios, the Migration Assessment Tool Installer is not able to connec
 
 * There’s no communication between the Migration Assessment Tool Installer environment and another O11 environment.
 
-* The O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection. 
+* The O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection.
 
 #### Recommended action
 
 Make sure your O11 infrastructure follows the [OutSystems 11 network requirements](../setup-infra-platform/setup/network-requirements.md).
 
-In case the O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection, you can edit the environment URL to the alternative URL when choosing the O11 environments in the [setup wizard](#install-wizard). 
+In case the O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection, you can edit the environment URL to the alternative URL when choosing the O11 environments in the [setup wizard](#install-wizard).
 
 If you have other communication restrictions applied to your O11 environments, [install the Migration Assessment Tool Installer](#mat-installer) in your LifeTime environment instead, and repeat the [setup wizard](#install-wizard).
 

@@ -38,6 +38,12 @@ After [mapping a set of O11 apps into ODC assets](plan-map-apps.md), you can gro
 
 ![Diagram showing the Define migration plans step in the migration process.](images/prep-define-plans-diag.png "Define migration plans")
 
+<div class="info" markdown="1">
+
+The migration plan operations and ODC assets available to you through the Migration Assessment Tool depend on your [LifeTime permissions for the Development environment](mat-permissions.md#plans).
+
+</div>
+
 ## Create a migration plan
 
 To create a migration plan, follow these steps:

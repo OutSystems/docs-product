@@ -74,6 +74,6 @@ Go through the assessment report to validate its findings:
 
 1. As you make the changes to solve each finding, rerun the assessment, to ensure you resolved the issue.
 
-    If you don’t run a new assessment manually, the Migration Assessment Tool automatically queues a new assessment every 15 minutes to check for changes.
+    If you don’t run a new assessment manually, the Migration Assessment Tool automatically queues a new assessment to check for changes based on the defined [code assessment cycle](../setup-assessement-tool.md#cycles).
 
 Repeat these steps for each pattern, assessing the refactoring effort to [prepare for the app migration](../prepare/prep-refactor-o11-apps.md).

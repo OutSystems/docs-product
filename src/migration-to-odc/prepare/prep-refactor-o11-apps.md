@@ -88,7 +88,7 @@ To adjust your O11 apps and make them ODC-compatible, follow these steps:
 
             <div class="info" markdown="1">
 
-            To ensure you've solved the issue, republish your app and rerun the assessment. If you don’t run a new assessment manually, the Migration Assessment Tool automatically queues a new assessment every 15 minutes to check for changes.
+            To ensure you've solved the issue, republish your app and rerun the assessment. If you don’t run a new assessment manually, the Migration Assessment Tool automatically queues a new assessment to check for changes based on the defined [code assessment cycle](../setup-assessement-tool.md#cycles).
 
             </div>
 

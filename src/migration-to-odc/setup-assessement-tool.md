@@ -75,7 +75,19 @@ Each probe runs the assessment of the apps in the environment where it's install
 
 The **Engine** is the communication entry point between your O11 infrastructure and your ODC tenant. It must be **installed in the LifeTime environment** of your O11 infrastructure.
 
-The engine manages the assessment queues of the probes installed in the O11 environments, and keeps a record of all the findings. By default, the engine queues new assessments for each probe every 15 minutes to check for app changes in the environment.
+The engine manages the assessment queues of the probes installed in the O11 environments, and keeps a record of all the findings. The engine [queues new assessments periodically](#cycles) for each probe to check for app and environment changes.
+
+## Assessment cycles { #cycles }
+
+The Migration Assessment Tool runs different types of assessments, each with its own frequency:
+
+* By default, a **code assessment** runs every 15 minutes for the O11 apps mapped to ODC assets in an environment with a probe installed, but you can [change this interval per environment](#change-cycle). Possible values are 15 minutes, 1 hour, 8 hours, or 24 hours. A code assessment also runs for the mapped O11 apps when an ODC asset is created or updated.
+
+* A **data assessment** runs daily for the O11 apps mapped to ODC assets in all environments with a probe installed. This interval is not configurable. It also runs every time an ODC asset is created or updated.
+
+* An **infrastructure assessment** runs daily in all environments with a probe installed. This interval is not configurable.
+
+Additionally, you can trigger an assessment at any time in the Migration Assessment Tool console.
 
 ## Prerequisites
 
@@ -215,6 +227,26 @@ Follow these steps to install an additional probe using the Migration Assessment
 1. Click **Update** to install an additional probe in the new environment.
 
     The Migration Assessment Tool Installer uses the latest version available to install the new probe and updates all the remaining components if they are not up to date.
+
+## Change the code assessment cycle { #change-cycle }
+
+<!--TODO: Add required permissions after MAT governance update-->
+
+You can adjust how frequently the Migration Assessment Tool assesses your O11 apps in a specific environment by changing the code assessment cycle for the environment probe. By default, the code assessment cycle is 15 minutes.
+
+Follow these steps to change the code assessment cycle for an environment:
+
+1. Log into the Migration Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.
+
+1. Go to the **Maintenance** tab.
+
+1. In the **Probe connection** area, identify the probe installed in the environment you want to configure.
+
+1. Change the **Code assessment cycle** value for that probe using the dropdown.
+
+    The change is automatically saved.
+
+    ![Screenshot of the Probe connection area in the Maintenance area of the Migration Assessment Tool showing the code assessment cycle dropdown.](images/change-code-assessment-cycle-mat.png "Change the code assessment cycle")
 
 ## Troubleshooting
 

@@ -188,7 +188,7 @@ After setting up the Migration Assessment Tool, you can start [mapping your O11 
 
 <div class="info" markdown="1">
 
-This step [requires the **Administrator** role](plan/mat-permissions.md#setup-update).
+This operation [requires the **Administrator** role](plan/mat-permissions.md#setup-update).
 
 </div>
 
@@ -207,6 +207,12 @@ Follow these steps to update the Migration Assessment Tool:
     ![Screenshot of the Migration Assessment Tool Installer wizard showing a summary of the components to update.](images/update-mat-wizard-summary-mati.png "See the update summary in Migration Assessment Tool Installer")
 
 ## Install an additional probe
+
+<div class="info" markdown="1">
+
+This operation [requires the **Administrator** role](plan/mat-permissions.md#setup-update).
+
+</div>
 
 After the initial setup, you can always install an additional probe in another O11 environment of your infrastructure. For example, when you are ready to execute the migration of your apps to ODC, you need to have a probe running in the O11 environment that will be the source for code or data migration (for example, the Production environment).
 
@@ -230,7 +236,11 @@ Follow these steps to install an additional probe using the Migration Assessment
 
 ## Change the code assessment cycle { #change-cycle }
 
-<!--TODO: Add required permissions after MAT governance update-->
+<div class="info" markdown="1">
+
+This operation [requires **Full Control** permission](plan/mat-permissions.md#maintenance) for the O11 environment running the [development probe](#probe).
+
+</div>
 
 You can adjust how frequently the Migration Assessment Tool assesses your O11 apps in a specific environment by changing the code assessment cycle for the environment probe. By default, the code assessment cycle is 15 minutes.
 

@@ -37,15 +37,15 @@ The following video gives you a quick overview about what log streaming is, the 
 
 Before you configure log streaming, ensure that you meet the following requirements:
 
-* **Licensing and platform version:**
+**Licensing and platform version:**
     * You must have a valid log streaming subscription. To get a subscription, contact your account manager.
     * Install Platform Server version `11.23.1` or higher. We recommend version `11.30.0` or higher.
     * Install LifeTime version `11.19.0` or higher. We recommend version `11.25.0` or higher.
 
-* **User permissions:**
+**User permissions:**
     * The user configuring the log streaming service in LifeTime must have the **Admin** built-in role.
 
-* **Connectivity:**
+**Connectivity:**
     * Enable log separation in your environment.
     * If your environment has network restrictions, you may need to add IP addresses to your allow list. Contact OutSystems Support for the necessary IP addresses.
 

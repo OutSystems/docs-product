@@ -33,17 +33,21 @@ The following video gives you a quick overview about what log streaming is, the 
 
 <iframe src="https://player.vimeo.com/video/1020984471" width="750" height="422" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Tutorial demonstrating the process of retrieving data from a database.</iframe>
 
-## Requirements for use
+## Prerequisites
 
-Before you start streaming logs, ensure you have:
+Before you configure log streaming, ensure that you meet the following requirements:
 
-* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
+* **Licensing and platform version:**
+    * You must have a valid log streaming subscription. To get a subscription, contact your account manager.
+    * Install Platform Server version `11.23.1` or higher. We recommend version `11.30.0` or higher.
+    * Install LifeTime version `11.19.0` or higher. We recommend version `11.25.0` or higher.
 
-* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
+* **User permissions:**
+    * The user configuring the log streaming service in LifeTime must have the **Admin** built-in role.
 
-* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
-
-* A subscription to log streaming. Contact your Account Manager for provisioning.
+* **Connectivity:**
+    * Enable log separation in your environment.
+    * If your environment has network restrictions, you may need to add IP addresses to your allow list. Contact OutSystems Support for the necessary IP addresses.
 
 ## Benefits of log streaming
 

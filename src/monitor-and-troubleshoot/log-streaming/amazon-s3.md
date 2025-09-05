@@ -23,10 +23,6 @@ coverage-type:
 
 This article explains how you can set up log streaming from OutSystems applications to Amazon S3.
 
-## Prerequisites
-
-For a complete list of prerequisites, refer to [Introduction to log streaming](intro.md#prerequisites).
-
 <div class="info" markdown="1">
 
 Stream to Amazon S3 requires an [OpenTelemetry Collector](configure-collector.md) with a specific [AWS S3 contrib exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/awss3exporter#aws-s3-exporter-for-opentelemetry-collector/). 
@@ -34,6 +30,10 @@ As of June 2024, the [AWS S3 contrib exporter](https://github.com/open-telemetry
 Customers are advised to assess their use case and learn more before adopting it.
 
 </div>
+
+## Prerequisites
+
+For a complete list of prerequisites, refer to [Introduction to log streaming](intro.md#prerequisites).
 
 ## Set up log streaming
 

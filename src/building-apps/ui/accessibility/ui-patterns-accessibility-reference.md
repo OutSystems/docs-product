@@ -56,7 +56,7 @@ Make sure that the focus switches to the detail pane of the pattern. Use the act
 
 ### Configuration instructions
 
-To configure the Mater Detail pattern for accessibility, proceed with the following steps:
+To configure the Master Detail pattern for accessibility, proceed with the following steps:
 
 1. Open the **ListItem** pattern you are using.
 1. Create an action on ListItem click, for example, **ListItemOnClick** with two input parameters:

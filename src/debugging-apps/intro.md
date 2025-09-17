@@ -47,7 +47,7 @@ To debug your app, do the following in Service Studio:
 
 1. Do some tasks in the module, up to a point when the execution runs into a breakpoint and suspends.
 
-1. When you switch to the Service Studio window, the flow or screen containing the element with the breakpoint shows on the canvas. Service Studio selects the element with the breakpoint and marks is with the ![Icon indicating an active debug request in OutSystems Service Studio](images/overlay-active-request.png "Debug Icon") debug icon.
+1. When you switch to the Service Studio window, the flow or screen containing the element with the breakpoint shows on the canvas. Service Studio selects the element with the breakpoint and marks it with the ![Icon indicating an active debug request in OutSystems Service Studio](images/overlay-active-request.png "Debug Icon") debug icon.
 
 1. The execution context shows in the **Threads** tab of the **Debugger** tab, marked with the ![Icon indicating an active debug request in OutSystems Service Studio](images/overlay-active-request.png "Debug Icon") current thread icon, showing the current execution stack of the module elements. The **Debugger** tab also shows additional information you can explore.
 

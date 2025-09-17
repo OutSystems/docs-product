@@ -91,3 +91,47 @@ The following are some of the benefits of cross-region disaster recovery:
 1. Disaster recovery region: A recovery site is located in a different geographic region. When the primary site is healthy, this site only contains regular data backups, stored and updated with a frequency dependent on the contracted RPO.
 
 1. Cross-region backup: Data from the primary site is copied to the recovery site, using backups, on a fixed schedule of no more than 24 hours, depending on the contracted RPO.
+
+## Failover triggering
+
+Triggering a cross-region disaster recovery process results in several hours of downtime. OutSystems works with your team to assess the situation and determine the best course of action before initiating failover procedures.
+
+### Automated failover process
+
+OutSystems triggers an automated failover only after receiving explicit approval from at least two designated platform administrators. This ensures the decision aligns with your business needs and operational priorities. While OutSystems may notify you of potential threats or disruptions, you make the final decision to initiate failover.
+
+Alternatively, you can request a failover through a support ticket if the following conditions are met:
+
+* At least two designated platform administrators submit or explicitly approve the request.
+* You provide a valid business justification.
+* You have conducted at least one successful failover test.
+
+OutSystems assesses whether failover is the most appropriate solution based on the available information.
+
+### Recovery process
+
+The recovery of your infrastructure components, runtime services, and data is fully automated and adheres to the applicable RPOs and RTOs. No manual intervention is required during this process. OutSystems ensures that the following configurations are preserved in the recovery cloud region:
+
+* **Sentry**: Security and monitoring configurations
+* **HIPAA compliance**: Ensuring adherence to healthcare data protection standards
+* **Log separation**: Maintaining log integrity and separation
+* **WAF IP filtering rules**: Preserving web app firewall configurations
+* **External connections**: Retaining configurations such as database connections in Service Center
+
+The new environment will mirror the source environment's configuration, including:
+
+* Relational database service (RDS) instance engine version, instance type (class), and storage parameters.
+* Front-end count, instance type (class), and storage parameters.
+
+OutSystems notifies you once your platform is back online and operational.
+
+### Post-failover steps
+
+After the failover process is complete, you should take the following steps to ensure stability and optimal performance:
+
+1. **Republish apps or the factory**: This ensures that all apps are running correctly in the new environment.
+2. **Reapply configurations**: Depending on your setup, you may need to reapply minor configurations. For example, you might need to update external integrations, adjust logging settings, or verify database connections.
+
+## Related resources
+
+[Perform a cross-region disaster recovery test](disaster-recovery-test.md)

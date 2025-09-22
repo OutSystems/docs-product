@@ -92,13 +92,17 @@ The following are some of the benefits of cross-region disaster recovery:
 
 1. Cross-region backup: Data from the primary site is copied to the recovery site, using backups, on a fixed schedule of no more than 24 hours, depending on the contracted RPO.
 
-## Failover triggering
+## Recovery process
 
-Triggering a cross-region disaster recovery process results in several hours of downtime. OutSystems works with your team to assess the situation and determine the best course of action before initiating failover procedures.
+The cross-region recovery process ensures that your platform's critical components, including infrastructure, runtime services, and data, are restored in the designated recovery region with minimal manual intervention. This automated process adheres to stringent RPO and RTO requirements, ensuring seamless business continuity during a disaster.
 
-### Automated failover process
+### Failover triggering
 
-OutSystems triggers an automated failover only after receiving explicit approval from at least two designated platform administrators. This ensures the decision aligns with your business needs and operational priorities. While OutSystems may notify you of potential threats or disruptions, you make the final decision to initiate failover.
+Triggering a cross-region disaster recovery process may result in several hours of downtime. Before initiating a failover process, OutSystems works with your team to assess the situation and determine the best course of action.
+
+Preparing for a failover requires a comprehensive disaster recovery plan. This plan clearly documents all steps required to restore your apps, including any dependencies on external systems. Additionally, performing at least one failover test in advance is essential to validate the plan's effectiveness and ensure readiness for a seamless recovery process.
+
+OutSystems only initiates an automated failover after receiving explicit approval from at least two designated platform administrators. This safeguard ensures the decision aligns with your business needs and operational priorities. While OutSystems may notify you of potential threats or disruptions, you make the final decision to initiate failover.
 
 Alternatively, you can request a failover through a support ticket if the following conditions are met:
 
@@ -108,7 +112,7 @@ Alternatively, you can request a failover through a support ticket if the follow
 
 OutSystems assesses whether failover is the most appropriate solution based on the available information.
 
-### Recovery process
+### Automated failover process
 
 The recovery of your infrastructure components, runtime services, and data is fully automated and adheres to the applicable RPOs and RTOs. No manual intervention is required during this process. OutSystems ensures that the following configurations are preserved in the recovery cloud region:
 
@@ -130,7 +134,7 @@ OutSystems notifies you once your platform is back online and operational.
 After the failover process is complete, you should take the following steps to ensure stability and optimal performance:
 
 1. **Republish apps or the factory**: This ensures that all apps are running correctly in the new environment.
-2. **Reapply configurations**: Depending on your setup, you may need to reapply minor configurations. For example, you might need to update external integrations, adjust logging settings, or verify database connections.
+1. **Reapply configurations**: Depending on your setup, you may need to reapply minor configurations. For example, you might need to update external integrations, adjust logging settings, or verify database connections.
 
 ## Related resources
 

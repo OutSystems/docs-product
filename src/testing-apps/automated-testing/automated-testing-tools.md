@@ -81,6 +81,18 @@ Test implementation using katalon is keyword-driven and requires some coding/scr
 
 This tool fits very well with OutSystems applications, for UI and API test implementation. As it makes it possible to easily use/build API test objects, it can also be used, together with BDD Framework API, to steer your BDD Framework component tests.
 
+### Cerberus Testing®
+
+Cerberus Testing is a low-code test automation platform that aligns with Outsystems, fully available in open-source. The solution enables all actors to collaborate on the same web interface along the software lifecycle on test definition, execution and reporting. It integrates with DevOps environment with your test referential and CI/CD pipelines with automated notifications to support fast cycles of iteration.
+
+The platform supports web, mobile, API, desktop and data components test in a repeatable way. The tests are build with reusable modules with plain languages and keywords that allow non-technical profiles to adopt the solution in a few hours. Succesful deployments on application enable to rapidly deploy 250+ non-regresion automated tests.
+
+Advanced features like a data library lets you variabilize the data, whetever from file, APIs or a dynamic list. You can easily build and schedule your test campaigns to leverage your non-regression test in multiple environments, including in production. The platform is open, allowing you to connect to multiple solutions for test execution or test reporting. Open bugs and replay tests in 1-click in Atlassian JIRA for instance.
+
+* [Cerberus Testing on GitHub](https://github.com/cerberustesting/cerberus-core)
+* [Implementing Continuous Testing as the Guardian of Quality](https://cerberus-testing.com/blog/implementing-continuous-testing-as-the-guardian-of-quality/)
+* [How To Test Web Applications using Selenium with Cerberus Testing](https://cerberus-testing.com/blog/how-to-test-web-applications-using-selenium-with-cerberus-testing/)
+
 ### Tricentis Tosca® 
 
 Tricentis Tosca is a full-fledged automated testing platform that offers a comprehensive technology support portfolio for technologies such as Web, SAP, API, ServiceNow®, and Oracle®. It can map the entire testing process, which means test planning, requirements mapping, test coverage, test case definition, test data management, and test execution.

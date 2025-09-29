@@ -1,7 +1,7 @@
 ---
 guid: 4a785cf2-70c2-4085-9923-7d5ac1d1eb6f
 locale: en-us
-summary: Learn how to handle SAP connections after migrating from O11 to ODC.
+summary: Learn how to handle SAP connections after converting from O11 to ODC.
 figma: 
 coverage-type:
   - unblock
@@ -27,7 +27,7 @@ In ODC, you can use [OutSystems Data Fabric](https://success.outsystems.com/docu
 
 ## How to solve
 
-You must solve this pattern in ODC, after proceeding with the code migration to ODC.
+You must solve this pattern in ODC, after proceeding with the code conversion to ODC.
 
 ### Solve in ODC
 

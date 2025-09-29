@@ -1,6 +1,6 @@
 ---
-summary: Learn more about how to fix Aggregates and SQL nodes not identified after migrating to ODC.
-tags: o11 service modules, aggregate, sql, logic flow, o11 to odc migration
+summary: Learn more about how to fix Aggregates and SQL nodes not identified after converting to ODC.
+tags: o11 service modules, aggregate, sql, logic flow, o11 to odc conversion
 guid: a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d
 locale: en-us
 app_type: traditional web apps, reactive web apps, mobile apps
@@ -29,14 +29,14 @@ In ODC apps' logic, an aggregate or SQL node only exists in the scope where it w
 
 ![Screenshot of a logic flow on an ODC app showing that an aggregate declared inside an If is not available outside that scope.](images/aggregate-scope-odcs.png "Logic flow on an ODC app showing that an aggregate declared inside an If is not available outside that scope.")
 
-Therefore, after migrating to ODC an O11 Service module that uses this pattern, you'll get a TrueChange error: "Can't identify &#39;&lt;aggregate or SQL node&gt;&#39; element in expression".
+Therefore, after converting to ODC an O11 Service module that uses this pattern, you'll get a TrueChange error: "Can't identify &#39;&lt;aggregate or SQL node&gt;&#39; element in expression".
 
 ## How to solve
 
-You must solve this pattern in ODC after proceeding with the code migration to ODC.
+You must solve this pattern in ODC after proceeding with the code conversion to ODC.
 
 ### Solve in ODC
 
-After migrating your app to ODC, inspect the Invalid Expression errors in TrueChange to find out where you're using aggregates or SQL nodes that cannot be identified. If you confirm your asset has those errors because it uses the pattern described on this page, adjust your logic to ensure the aggregate or SQL node runs before it is referenced. Make sure aggregates and SQL nodes are only referenced in the same scope where they're declared. 
+After converting your app to ODC, inspect the Invalid Expression errors in TrueChange to find out where you're using aggregates or SQL nodes that cannot be identified. If you confirm your asset has those errors because it uses the pattern described on this page, adjust your logic to ensure the aggregate or SQL node runs before it is referenced. Make sure aggregates and SQL nodes are only referenced in the same scope where they're declared. 
 
 ![Screenshot of a logic flow on an ODC app showing an aggregate used inside its scope.](images/aggregate-scope-fixed-odcs.png "Logic flow on an ODC app showing an aggregate used inside its scope.")

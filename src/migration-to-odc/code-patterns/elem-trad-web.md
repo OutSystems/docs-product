@@ -1,7 +1,7 @@
 ---
 guid: e0247801-d291-4da0-8a7a-f20098ade92b
 locale: en-us
-summary: This article provides guidelines for handling Traditional Web modules before migrating O11 apps to OutSystems Developer Cloud (ODC).
+summary: This article provides guidelines for handling Traditional Web modules before converting O11 apps to OutSystems Developer Cloud (ODC).
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2993-53
 coverage-type: 
   - unblock
@@ -12,7 +12,7 @@ audience:
   - frontend developers
   - full stack developers
   - tech leads
-tags: reactive web apps, module conversion, migration guide, outsystems 11, traditional web apps
+tags: reactive web apps, module conversion, conversion guide, outsystems 11, traditional web apps
 outsystems-tools: 
   - service studio
 helpids: 
@@ -24,7 +24,7 @@ In ODC, all Web apps are reactive. Traditional Web apps aren't supported. This m
 
 ## How to solve
 
-You must solve this pattern in O11 before proceeding with the code migration to ODC.
+You must solve this pattern in O11 before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

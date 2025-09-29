@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article provides guidance on refactoring dependencies to Local Storage Entities in O11 apps to ensure compatibility with ODC.
 locale: en-us
 guid: 8639ad48-cd26-4273-8175-65db6a3f241d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7558
 helpids: 30525
-tags: local storage entities, architecture migration, outsystems development, code migration, app development best practices
+tags: local storage entities, app architecture conversion, outsystems development, code conversion, app development best practices
 audience:
   - full stack developers
   - architects
@@ -19,12 +19,11 @@ coverage-type:
 
 # Asset consuming a Local Storage Entity
 
-In ODC, Assets can't have dependencies to Local Storage Entities from other Assets. Furthermore, Libraries can't consume Entities.
-This means that each App must define its own Local Storage Entities and can't share them with other Apps.
+In ODC, Assets can't have dependencies to Local Storage Entities from other Assets. Furthermore, Libraries can't consume Entities. This means that each App must define its own Local Storage Entities and can't share them with other Apps.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

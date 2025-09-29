@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article provides guidance on refactoring dependencies to Scripts in O11 apps to ensure compatibility with ODC.
 locale: en-us
 guid: 2c3844fb-f028-4d6c-8f8a-d6d0baf8f8e1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7899
 helpids: 30531
-tags: code migration, application development, script management, dependency management, outsystems development best practices
+tags: code conversion, application development, script management, dependency management, outsystems development best practices
 audience:
   - mobile developers
   - frontend developers
@@ -21,12 +21,11 @@ coverage-type:
 
 # Asset consuming a Script
 
-In ODC, Assets can't have dependencies to Scripts from other Assets.
-This means that each Asset must define its own Script and can't share them with other Assets.
+In ODC, Assets can't have dependencies to Scripts from other Assets. This means that each Asset must define its own Script and can't share them with other Assets.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

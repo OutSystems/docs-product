@@ -1,7 +1,7 @@
 ---
 guid: 1986c6da-443a-438a-b144-f4db01b20a42
 locale: en-us
-summary: Learn how to solve the findings for the migration code pattern "Asset consuming a Forge component".
+summary: Learn how to solve the findings for the conversion code pattern "Asset consuming a Forge component".
 figma: 
 coverage-type:
   - unblock
@@ -39,9 +39,9 @@ To solve this pattern in ODC:
 
 1. Remove the reference to the O11 Forge component from any ODC asset.
 
-1. Proceed with the migration. 
+1. Proceed with the conversion. 
 
-1. Once the consumer asset is migrated to ODC, add the reference to the ODC Forge asset that offers the same functionality as the O11 Forge component your asset was consuming.
+1. Once the consumer asset is converted to ODC, add the reference to the ODC Forge asset that offers the same functionality as the O11 Forge component your asset was consuming.
 
 1. After adding the reference, fix any outstanding issues.
 
@@ -55,14 +55,14 @@ To solve this pattern in O11:
 
 1. Map the clone into an ODC asset, so it is included in your O11 to ODC architecture mapping.
 
-1. Proceed with the migration.
+1. Proceed with the conversion.
 
 By doing the above, your asset is no longer consuming an O11 Forge component. Instead, it is consuming the clone, which is also mapped to an ODC asset.
 
-After migrating the component, consider [submitting the asset to ODC Forge](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/forge/submit_assets_to_forge/).
+After converting the component, consider [submitting the asset to ODC Forge](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/forge/submit_assets_to_forge/).
 
 <div class="info" markdown="1">
 
-Note that, by cloning and migrating the Forge component yourself, you’ll own it after the migration. This means you'll have to consider any further improvements or bug fixing.
+Note that, by cloning and converting the Forge component yourself, you’ll own it after the conversion. This means you'll have to consider any further improvements or bug fixing.
 
 </div>

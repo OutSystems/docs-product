@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article explains how to refactor an O11 Application Block dependency to be compatible with OutSystems Developer Cloud (ODC).
 locale: en-us
 guid: 2ae09af8-26ba-452b-b757-e18d189b64d4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7042
 helpids: 30521
-tags: architecture migration, dependency management, code migration, app development, outsystems platform
+tags: app architecture conversion, dependency management, code conversion, app development, outsystems platform
 audience:
   - frontend developers
   - full stack developers
@@ -21,12 +21,11 @@ coverage-type:
 
 # Asset consuming an ODC application Block
 
-A dependency to a Block is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.
-This means that the Block must either be part of the consumer ODC asset, or the Block must be shared by an ODC Library.
+A dependency to a Block is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies. This means that the Block must either be part of the consumer ODC asset, or the Block must be shared by an ODC Library.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

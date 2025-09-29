@@ -13,7 +13,7 @@ audience:
   - full stack developers
   - frontend developers
   - mobile developers
-tags: cloud-native applications,system entities,api development,data integration,platform version migration
+tags: cloud-native applications, system entities, api development, data integration, app conversion
 outsystems-tools:
   - service studio
 helpids: 30628
@@ -27,12 +27,12 @@ In ODC, business processes are available as [workflows](https://success.outsyste
 
 <div class="info" markdown="1">
 
-If you are only preparing your code for the migration, at present, OutSystems recommends not making any changes to O11 BPTs. OutSystems is working on automating the migration capabilities to map existing O11 BPTs functionality to ODC Workflows.
+If you are only preparing your code for the conversion, at present, OutSystems recommends not making any changes to O11 BPTs. OutSystems is working on automating the conversion capabilities to map existing O11 BPTs functionality to ODC Workflows.
 
 </div>
 
 This pattern isn't supported yet.
 
-You can only proceed with the migration of ODC assets that don’t consume O11 BPT elements.
+You can only proceed with the conversion of ODC assets that don’t consume O11 BPT elements.
 
 In the meantime, rethink how you can comply with the ODC architecture using [ODC workflows](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/about_business_processes/workflows_in_odc/) to implement your business processes.

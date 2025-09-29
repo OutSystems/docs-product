@@ -1,7 +1,7 @@
 ---
 guid: 279b1c31-1194-4d52-920e-6a950ed056f3
 locale: en-us
-summary: Learn more about handling the URLs of consumed REST API endpoints after migrating to ODC.
+summary: Learn more about handling the URLs of consumed REST API endpoints after converting to ODC.
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?m=auto&node-id=2861-240&t=sgPICOBjMsyBDjny-1
 coverage-type:
   - unblock
@@ -12,33 +12,34 @@ audience:
   - backend developers
   - full stack developers
   - tech leads
-tags: rest api, url handling, code migration, odc, backend development
+tags: rest api, url handling, code conversion, odc, backend development
 outsystems-tools:
   - service studio
   - odc studio
 helpids:
 ---
+
 # Update the URLs of consumed REST API endpoints
 
-When migrating simultaneously O11 modules that expose and consume REST API endpoints between themselves, the URL of the exposed endpoint automatically updates to reflect the migrated asset's name. However, the Base URL of the consumed endpoint and the URL Path of consumed methods aren't automatically updated to reflect the name change in the migrated assets.
+When converting simultaneously O11 modules that expose and consume REST API endpoints between themselves, the URL of the exposed endpoint automatically updates to reflect the converted asset's name. However, the Base URL of the consumed endpoint and the URL Path of consumed methods aren't automatically updated to reflect the name change in the converted assets.
 
 ![Screenshot of the properties of a consumed REST API in ODC Studio](images/rest-consume-odcs.png "Properties of a consumed REST API in ODC Studio")
 
 <div class="info" markdown="1">
 
-This behavior applies both to modules of the same app and modules of different apps that are migrated to ODC at the same time.
+This behavior applies both to modules of the same app and modules of different apps that are converted to ODC at the same time.
 
 </div>
 
 ## How to solve
 
-You must solve this in ODC after proceeding with the code migration.
+You must solve this in ODC after proceeding with the code conversion.
 
 ### Solve in ODC
 
-After migrating your assets to ODC, check the properties of the consumed REST API and its methods in ODC Studio:
+After converting your assets to ODC, check the properties of the consumed REST API and its methods in ODC Studio:
 
-1. Update the **Base URL** of the consumed REST API to reflect the exposed REST API after migration.
+1. Update the **Base URL** of the consumed REST API to reflect the exposed REST API after conversion.
 
     ![Screenshot of the properties of a consumed REST API in ODC Studio](images/rest-consume-url-odcs.png "Properties of a consumed REST API in ODC Studio")
 

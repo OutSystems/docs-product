@@ -25,7 +25,7 @@ Most of the [O11 built-in functions](../../ref/lang/auto/builtinfunctions.md) ar
 
 ## How to solve
 
-You must solve this pattern in ODC, after proceeding with the code migration to ODC.
+You must solve this pattern in ODC, after proceeding with the code conversion to ODC.
 
 ### Solve in ODC
 

@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article provides guidance on refactoring dependencies to non read-only Entities in O11 apps to ensure compatibility with ODC.
 locale: en-us
 guid: 07ee973c-143e-44a5-9e3a-19b68cfdbfd5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7253
 helpids: 30523
-tags: entity exposure, code migration, service actions, architecture review, dependency management
+tags: entity exposure, code conversion, service actions, architecture review, dependency management
 audience:
   - mobile developers
   - frontend developers
@@ -20,12 +20,11 @@ coverage-type:
 
 # Application consuming a non-read only Entity
 
-In ODC, only Apps can expose Entities. Furthermore, Apps can only expose weak dependencies.
-These restrictions mean that Entities can only be exposed as read-only.
+In ODC, only Apps can expose Entities. Furthermore, Apps can only expose weak dependencies. These restrictions mean that Entities can only be exposed as read-only.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

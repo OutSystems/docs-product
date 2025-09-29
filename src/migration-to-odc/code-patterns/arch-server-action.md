@@ -1,12 +1,12 @@
 ---
-summary: Refactor strong dependencies to weak in OutSystems 11 (O11) before migrating to OutSystems Developer Cloud (ODC), especially focusing on server actions and service actions.
+summary: This article provides guidance on refactoring dependencies to Server Actions in O11 apps to ensure compatibility with ODC.
 locale: en-us
 guid: bf0d4524-95c4-477b-9254-1e369a3f1f80
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-6594
 helpids: 30519
-tags: code migration, server actions, service actions, dependency management, refactoring code
+tags: code conversion, server actions, service actions, dependency management, refactoring code
 audience:
   - frontend developers
   - full stack developers
@@ -20,12 +20,11 @@ coverage-type:
 
 # Asset consuming an ODC application server action
 
-A dependency to a server action is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.
-This means that it isn't possible to consume Server actions from other apps, only from libraries.
+A dependency to a server action is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies. This means that it isn't possible to consume Server actions from other apps, only from libraries.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

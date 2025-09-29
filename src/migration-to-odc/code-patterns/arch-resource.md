@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article provides guidance on refactoring dependencies to Resources in O11 apps to ensure compatibility with ODC.
 locale: en-us
 guid: 22c50ae1-0e53-45c1-a60e-417311bca7ba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7652
 helpids: 30527
-tags: code migration, architecture review, dependency management, asset management, platform version upgrade
+tags: code conversion, architecture review, dependency management, asset management, platform version upgrade
 audience:
   - mobile developers
   - frontend developers
@@ -25,7 +25,7 @@ In ODC, Assets can't have dependencies to Resources from other Assets.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

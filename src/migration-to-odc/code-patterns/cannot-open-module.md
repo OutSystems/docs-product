@@ -1,5 +1,5 @@
 ---
-summary: Recommendation to solve the issue where Migration Assessment Tool can't open the module for analysis.
+summary: Recommendation to solve the issue where Conversion Assessment Tool can't open the module for analysis.
 locale: en-us
 guid: e7f28e4a-0568-4062-9a3a-3495e4dc212f
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,7 +8,7 @@ figma:
 helpids: 30554
 coverage-type:
   - unblock
-tags: migration issues, module troubleshooting, error resolution, outsystems 11, service studio
+tags: conversion issues, module troubleshooting, error resolution, outsystems 11, service studio
 audience:
   - platform administrators
   - tech leads
@@ -19,11 +19,11 @@ outsystems-tools:
 
 # Cannot open module
 
-The Assessment Migration Toolkit cannot access and analyze the module, which blocks its preparation for the migration to ODC. This error can occur for several reasons, such as a corrupted module.
+The Conversion Assessment Tool cannot access and analyze the module, which blocks its preparation for the conversion to ODC. This error can occur for several reasons, such as a corrupted module.
 
 ## How to solve
 
-You must solve this pattern in O11 before proceeding with the code migration to ODC.
+You must solve this pattern in O11 before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

@@ -1,12 +1,12 @@
 ---
-summary: Integrate external systems with custom C# code in OutSystems 11 (O11) and OutSystems Developer Cloud (ODC), optimizing database connections and code migration.
+summary: This article provides guidance on how to handle custom code when converting your OutSystems 11 apps to OutSystems Developer Cloud (ODC).
 locale: en-us
 guid: d7657c47-7cd9-4bc1-a8be-54d25c20233d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30537
-tags: ide usage, reactive web apps, migration, integration, extensions
+tags: ide usage, reactive web apps, app conversion, integration, extensions
 audience:
   - full stack developers
   - platform administrators
@@ -24,7 +24,7 @@ An [Extension](../../integration-with-systems/integration-studio/getting-started
 
 <div class="info" markdown="1">
 
-If you are only preparing your code for the migration, at present, OutSystems recommends not making any changes to O11 extensions. OutSystems is working on automating the conversion of O11 Custom Code to ODC Custom Code.
+If you are only preparing your code for the conversion, at present, OutSystems recommends not making any changes to O11 extensions. OutSystems is working on automating the conversion of O11 Custom Code to ODC Custom Code.
 
 For Extensions with external database connections, in order to take full benefit of ODC data fabric it's highly recommended that all external database connections are reviewed.
 
@@ -34,13 +34,13 @@ For Extensions with Custom C# code, ODC custom code runs under different premise
 
 ## How to solve
 
-You must solve this pattern in ODC, after proceeding with the code migration to ODC.
+You must solve this pattern in ODC, after proceeding with the code conversion to ODC.
 
 ### Solve in ODC
 
 <div class="info" markdown="1">
 
-If you are only preparing your code for the migration, at present, OutSystems recommends not making any changes to O11 extensions. OutSystems is working on automating the conversion of O11 Extensions to ODC custom code or external data connections.
+If you are only preparing your code for the conversion, at present, OutSystems recommends not making any changes to O11 extensions. OutSystems is working on automating the conversion of O11 Extensions to ODC custom code or external data connections.
 
 </div>
 

@@ -1,6 +1,6 @@
 ---
-summary: This article provides guidelines for handling Traditional Web apps consumption before migrating O11 apps to OutSystems Developer Cloud (ODC).
-tags: reactive web apps, module conversion, migration guide, outsystems 11, traditional web apps
+summary: This article provides guidelines for handling Traditional Web apps consumption before converting O11 apps to OutSystems Developer Cloud (ODC).
+tags: reactive web apps, module conversion, conversion guide, outsystems 11, traditional web apps
 guid: 5599ed1d-6b0e-4862-9fe5-0603ab025fa5
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
@@ -33,11 +33,11 @@ Depending on your scenario, you can solve this pattern in O11 or in ODC:
 
 To solve this pattern in ODC, follow these steps:
 
-1. Proceed with the migration.
+1. Proceed with the conversion.
 
-    If you have access to the Migration Kit, you must set the **Where To Fix** for this finding as **ODC** in the Migration Assessment Tool.
+    If you have access to the App Conversion Kit, you must set the **Where To Fix** for this finding as **ODC** in the Conversion Assessment Tool.
 
-1. Once the consumer asset is migrated to ODC, update it in ODC Studio to consume the ODC component that offers the same functionality.
+1. Once the consumer asset is converted to ODC, update it in ODC Studio to consume the ODC component that offers the same functionality.
 
 ### Solve in O11
 

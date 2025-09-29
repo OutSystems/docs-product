@@ -1,7 +1,7 @@
 ---
 guid: a77ed222-6660-413d-b16d-b399acb6bc82
 locale: en-us
-summary: Learn how to ensure all O11 end users have valid and unique email addresses before migrating to ODC.
+summary: Learn how to ensure all O11 end users have valid and unique email addresses before converting to ODC.
 figma:
 coverage-type:
   - unblock
@@ -16,6 +16,7 @@ outsystems-tools:
   - users app
 helpids: 30661
 ---
+
 # User email validation
 
 This pattern identifies end users in the assessed environment with duplicate email addresses or no email defined.
@@ -26,7 +27,7 @@ You must solve this pattern in the O11 source environment before proceeding with
 
 ### Solve in O11
 
-Ensure that all active and inactive end users of the OutSystems 11 apps you want to migrate have a valid and unique email address defined in the data source environment. Otherwise, you can’t proceed with the data migration to ODC.
+Ensure that all active and inactive end users of the OutSystems 11 apps you want to convert have a valid and unique email address defined in the data source environment. Otherwise, you can’t proceed with the data migration to ODC.
 
 Follow these steps to fix the end users' email addresses:
 
@@ -38,6 +39,6 @@ Follow these steps to fix the end users' email addresses:
 
 <div class="info" markdown="1">
 
-If you have access to the Migration Kit, the Migration Assessment Tool identifies this pattern for you and provides you with a JSON-format file containing the users with duplicate or empty email addresses.
+If you have access to the App Conversion Kit, the Conversion Assessment Tool identifies this pattern for you and provides you with a JSON-format file containing the users with duplicate or empty email addresses.
 
 </div>

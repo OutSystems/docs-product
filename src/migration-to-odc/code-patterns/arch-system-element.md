@@ -6,7 +6,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30538
-tags: cloud-native applications, system entities, api development, data integration, platform version migration
+tags: cloud-native applications, system entities, api development, data integration, app conversion
 audience:
   - mobile developers
   - frontend developers
@@ -26,7 +26,7 @@ Platform system elements include [system actions](../../ref/apis/auto/system-act
 
 ## How to solve
 
-You must solve this pattern in ODC, after proceeding with the code migration to ODC.
+You must solve this pattern in ODC, after proceeding with the code conversion to ODC.
 
 ### Solve in ODC
 

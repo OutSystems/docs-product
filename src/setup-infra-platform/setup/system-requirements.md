@@ -124,15 +124,21 @@ Future revisions of OutSystems may require the installation of an update within 
 
 RabbitMQ Server and Erlang versions numbers follow the format: Major.Minor.Patch. OutSystems Platform Server versions require minimum Patch versions of RabbitMQ Server and Erlang.
 
-You can upgrade to the latest Patch of RabbitMQ Server, and the latest Minor of Erlang provided that:
+You can upgrade to the latest Patch of RabbitMQ Server provided that:
 
-* The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 3.10.25 for environments using Platform Server 11.19.0.
-* The Minor version of Erlang is higher than the one listed for the Platform Server version. For example, you can upgrade Erlang version to 25.2 for environments using Platform Server 11.19.0.
-* You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html). For example, when upgrading for RabbitMQ Server 3.10.25 you can upgrade Erlang to 25.2
+* The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 4.1.5 for environments using Platform Server 11.38.0.
+
+Depending on the RabbitMQ used by the Platform Server, you can upgrade to either the latest Minor or Patch of Erlang provided that:
+
+* The Minor/Patch version of Erlang is higher than the one listed for the Platform Server version. For example, you can upgrade Erlang:
+    * to 27.4 (Minor) for environments using Platform Server 11.38.0.
+    * to 26.2.5 (Patch) for environments using Platform Server 11.37.0.
+* You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html).
 
 The following are the minimum Patch versions of RabbitMQ Server and Erlang per Platform Server version:
 
-* For Platform Server 11.27.0 and higher: RabbitMQ Server 3.13.0 and Erlang version 26.2.2
+* For Platform Server 11.38.0 and higher: RabbitMQ Server 4.1.2 and Erlang version 27.3.4
+* From Platform Server 11.27.0 to 11.37.0: RabbitMQ Server 3.13.0 and Erlang version 26.2.2
 * From Platform Server 11.19.0 to 11.26.0: RabbitMQ Server 3.10.14 and Erlang version 25.1.2
 * From Platform Server 11.15.0 to 11.18.1: RabbitMQ Server 3.9.11 and Erlang version 24.2
 * From Platform Server 11.13.2 to 11.14.1: RabbitMQ Server 3.8.21 and Erlang version 23.2

@@ -245,8 +245,11 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 ### PostgreSQL database
 
-* PostgreSQL 12.x.x, since Platform Server 11.15.0
+* PostgreSQL 12.x.x, since Platform Server 11.15.0<sup>1</sup>
 * PostgreSQL 13.x.x, since Platform Server 11.15.0
+* PostgreSQL 17.x.x, since Platform Server 11.38.0
+
+<sup>1</sup> This version is no longer supported by PostgreSQL and isn't supported by OutSystems starting with Platform Server version 11.38.0.
 
 ### Aurora PostgreSQL database
 

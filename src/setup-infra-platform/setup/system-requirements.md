@@ -100,9 +100,9 @@ Future revisions of OutSystems may require the installation of an update within 
 
 * Microsoft .NET Framework, one of the following, depending on the Platform Server version:
     * 4.8.1<sup>1</sup> : supported since Platform Server 11.35.0
-    * 4.8 : supported since Platform Server 11 – Release Oct.2019 CP2
+    * 4.8<sup>2</sup> : supported since Platform Server 11 – Release Oct.2019 CP2
     * 4.7.2 : supported by all Platform Server 11 versions
-* Microsoft Build Tools 2015<sup>2</sup>
+* Microsoft Build Tools 2015<sup>3</sup>
 * .NET Runtime & Hosting Bundle for Windows in the following versions, depending on the Platform Server version:
     * .NET 8.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.27.0 or newer
     * .NET 6.0 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.17.1 and 11.26.0
@@ -116,7 +116,28 @@ Future revisions of OutSystems may require the installation of an update within 
 <div class="info" markdown="1">
 
 <sup>1</sup> Using Microsoft .NET Framework 4.8.1 implies a slightly higher memory usage for OutSystems applications, consider increasing the memory of Frontends.
-<sup>2</sup> Microsoft Build Tools is no longer required starting on Platform Server versions 11.35.0.
+<br/>
+<br/>
+<sup>2</sup> This version of .NET or later is required to ensure a FIPS-compliant environment.
+<br/>
+<br/>
+<sup>3</sup> Microsoft Build Tools is no longer required starting from Platform Server versions 11.35.0.
+
+</div>
+
+### FIPS-compliance
+
+From version 11.38.0 onwards, the Platform Server can be installed on FIPS-compliant systems.
+
+To be able to achieve FIPS-compliance, customers must:
+
+- Install Platform Server 11.38.0 or higher
+- Use .NET 4.8 Framework or higher
+- Purchase and install the commercial version of RabbitMQ<sup>1</sup>
+
+<div class="info" markdown="1">
+
+<sup>1</sup> Platform Server includes the Open Source version of RabbitMQ, which is not FIPS-compliant.
 
 </div>
 
@@ -126,6 +147,10 @@ RabbitMQ Server and Erlang versions numbers follow the format: Major.Minor.Patch
 
 You can upgrade to the latest Patch of RabbitMQ Server provided that:
 
+
+* The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 3.10.25 for environments using Platform Server 11.19.0
+* The Minor version of Erlang is higher than the one listed for the Platform Server version. For example, you can upgrade Erlang version to 25.2 for environments using Platform Server 11.19.0
+* You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html). For example, when upgrading for RabbitMQ Server 3.10.25 you can upgrade Erlang to 25.2
 * The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 4.1.5 for environments using Platform Server 11.38.0.
 
 Depending on the RabbitMQ used by the Platform Server, you can upgrade to either the latest Minor or Patch of Erlang provided that:
@@ -134,6 +159,7 @@ Depending on the RabbitMQ used by the Platform Server, you can upgrade to either
     * to 27.4 (Minor) for environments using Platform Server 11.38.0.
     * to 26.2.5 (Patch) for environments using Platform Server 11.37.0.
 * You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html).
+
 
 The following are the minimum Patch versions of RabbitMQ Server and Erlang per Platform Server version:
 
@@ -145,7 +171,9 @@ The following are the minimum Patch versions of RabbitMQ Server and Erlang per P
 * From Platform Server 11.9.0 to 11.13.1: RabbitMQ Server 3.8.3 and Erlang version 22.3
 * For Platform Server 11.8.2 and lower: RabbitMQ Server 3.7.7 and Erlang version 20.3
 
-During Platform Server installation, OutSystems provides a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation if it fulfills the same version requirements.
+During Platform Server installation, OutSystems provides a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Platform Server includes the Open Source version of RabbitMQ. The commercial version of RabbitMQ is required for full FIPS compliance.
+
+Alternatively, you can use an existing RabbitMQ Server and Erlang installation if it fulfills the same version requirements.
 
 ## Amazon EC2 considerations
 
@@ -293,8 +321,8 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 ### Hardware (minimum requirements)
 
-* 1.8 GHz dual-core processor or better.
-* 2 GB of RAM (4 GB recommended).
+* 1.8 GHz dual-core processor or better
+* 2 GB of RAM (4 GB recommended)
 * 1 GB of free disk space
 
 #### Operating System

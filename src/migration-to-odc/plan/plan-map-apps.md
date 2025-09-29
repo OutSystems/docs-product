@@ -1,17 +1,17 @@
 ---
-summary: Learn how to design your future ODC architecture and map your O11 apps to ODC assets using the Migration Assessment Tool.
+summary: Learn how to design your future ODC architecture and map your O11 apps to ODC assets using the Conversion Assessment Tool.
 locale: en-us
 guid: 6901e523-4fa3-42bd-b37e-880e06d5cb62
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2047-1571
 helpids: 30544
-tags: migration, architecture, o11 conversion, migration kit, business apps
+tags: app conversion, architecture, o11 conversion, app conversion kit, business apps
 audience:
   - full stack developers
   - architects
 outsystems-tools:
-  - migration assessement tool
+  - conversion assessement tool
   - architecture canvas
 coverage-type:
   - understand
@@ -22,19 +22,19 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-This article only applies to customers with access to the Migration Kit.
+This article only applies to customers with access to the App Conversion Kit.
 
 </div>
 
-This step of the [Plan app migration](plan-intro.md) stage enables you to start assessing the required adjustment needs of your O11 apps. You can focus on small sets of apps based on your different app domains and your teams' development lifecycle.
+This step of the [Plan app conversion](plan-intro.md) stage enables you to start assessing the required adjustment needs of your O11 apps. You can focus on small sets of apps based on your different app domains and your teams' development lifecycle.
 
-Before you start, make sure you have an inventory of your O11 apps and modules that you want to migrate. OutSystems recommends that you classify your apps with the [Architecture Canvas](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/the_architecture_canvas/), as this helps with some of the upcoming steps.
+Before you start, make sure you have an inventory of your O11 apps and modules that you want to convert. OutSystems recommends that you classify your apps with the [Architecture Canvas](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/the_architecture_canvas/), as this helps with some of the upcoming steps.
 
 As an example, consider the following O11 app and modules inventory.
 
 ![Diagram showing the inventory of O11 apps and modules.](images/map-apps-0-diag.png "O11 App and Modules Inventory")
 
-To map your O11 apps architecture to ODC architecture, start by [designing your ODC architecture](#design-arch) and then do the [O11 to ODC mapping in the Migration Assessment Tool](#map-in-tool).
+To map your O11 apps architecture to ODC architecture, start by [designing your ODC architecture](#design-arch) and then do the [O11 to ODC mapping in the Conversion Assessment Tool](#map-in-tool).
 
 ## Design ODC architecture { #design-arch }
 
@@ -66,7 +66,7 @@ The following steps help you with that mapping:
 
     In the example, there's three integration wrappers (Product_IS, Order_IS, and Customer_IS), and two themes (MobTheme_MTh and Theme_Th). Now, in addition to the two future ODC apps, there are five new future ODC libraries.
 
-1. For your future ODC app, identify Forge components. These need to exist in ODC or be ported to ODC before you conclude your migration, so make sure you plan for that. Move each Forge component to its own future ODC library.
+1. For your future ODC app, identify Forge components. These need to exist in ODC or be ported to ODC before you conclude your conversion, so make sure you plan for that. Move each Forge component to its own future ODC library.
 
     ![Diagram showing the identification of Forge components in the future ODC app.](images/map-apps-4-diag.png "Identifying Forge Components")
 
@@ -96,17 +96,17 @@ The following steps help you with that mapping:
 
     </div>
 
-After adapting your O11 architecture, you are ready to start using the Migration Assessment Tool to map it to your future ODC architecture.
+After adapting your O11 architecture, you are ready to start using the Conversion Assessment Tool to map it to your future ODC architecture.
 
-## Map O11 to ODC architecture in the Migration Assessment Tool { #map-in-tool }
+## Map O11 to ODC architecture in the Conversion Assessment Tool { #map-in-tool }
 
-![Diagram showing the Map O11 apps to ODC architecture step in the migration process.](images/prep-map-o11-odc-arch-diag.png "Map O11 apps to ODC architecture")
+![Diagram showing the Map O11 apps to ODC architecture step in the conversion process.](images/prep-map-o11-odc-arch-diag.png "Map O11 apps to ODC architecture")
 
-Now, it’s time to define each of the future ODC Assets (apps and libraries) and map your O11 apps in the Migration Assessment Tool.
+Now, it’s time to define each of the future ODC Assets (apps and libraries) and map your O11 apps in the Conversion Assessment Tool.
 
 <div class="info" markdown="1">
 
-* The mapping is always based on the O11 Apps of the O11 environment where the [development probe](../setup-assessement-tool.md#probe) is installed. The mapping operations, O11 apps and ODC assets available to you through the Migration Assessment Tool depend on your [LifeTime permissions for that environment](mat-permissions.md#map).
+* The mapping is always based on the O11 Apps of the O11 environment where the [development probe](../setup-assessement-tool.md#probe) is installed. The mapping operations, O11 apps and ODC assets available to you through the Conversion Assessment Tool depend on your [LifeTime permissions for that environment](mat-permissions.md#map).
 * You can only map up to 20 O11 modules per ODC Asset.
 * Currently, you can’t map an O11 **Extension** into any ODC Asset type.
 * For **ODC Libraries**, you can only map O11 Apps that contain only O11 Library Modules. Thus, for the O11 Apps that you want to map to an ODC Library, make sure you convert all O11 Modules to O11 Library Modules.
@@ -115,7 +115,7 @@ Now, it’s time to define each of the future ODC Assets (apps and libraries) an
 
 To map your O11 Apps into ODC Assets, follow these steps:
 
-1. Log into the Migration Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.
+1. Log into the Conversion Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.
 
 1. In the **ODC Blueprint** tab, click **Map O11 apps (Development)**.
 
@@ -124,7 +124,7 @@ To map your O11 Apps into ODC Assets, follow these steps:
     * Set the **Asset type**.
     * Optionally, set the **Asset description**.
 
-    ![Create ODC asset for O11 mapping in the Migration Assessment Tool.](images/map-o11-to-odc-set-asset-at.png "Create ODC asset for O11 mapping")
+    ![Create ODC asset for O11 mapping in the Conversion Assessment Tool.](images/map-o11-to-odc-set-asset-at.png "Create ODC asset for O11 mapping")
 
     <div class="info" markdown="1">
 
@@ -136,9 +136,9 @@ To map your O11 Apps into ODC Assets, follow these steps:
 
 1. Click **Save mapping**.
 
-Every time you create or update a mapping, the Migration Assessment Tool automatically queues an assessment for that asset. When the assessment finishes, you can go through the report to [assess the app architecture and ODC readiness](plan-assess-refactor.md) for that ODC asset.
+Every time you create or update a mapping, the Conversion Assessment Tool automatically queues an assessment for that asset. When the assessment finishes, you can go through the report to [assess the app architecture and ODC readiness](plan-assess-refactor.md) for that ODC asset.
 
-After mapping a set of O11 apps into ODC assets, you can group those ODC assets in [migration plans](plan-define-migration-plans.md). This enables you to focus only on the assessment of a specific app domain.
+After mapping a set of O11 apps into ODC assets, you can group those ODC assets in [conversion plans](plan-define-migration-plans.md). This enables you to focus only on the assessment of a specific app domain.
 
 ### Example
 
@@ -146,7 +146,7 @@ Consider the O11 to ODC architecture mapping example used in the previous sectio
 
 ![Diagram showing the final ODC architecture with mapped O11 apps.](images/map-apps-7-diag.png "Example of final ODC Architecture")
 
-For this ODC architecture design, create the following mapping in the Migration Assessment Tool:
+For this ODC architecture design, create the following mapping in the Conversion Assessment Tool:
 
 * One **ODC Web App** asset, with seven O11 Apps mapped to it.
 * One **ODC Mobile App** asset, with one O11 App mapped to it.

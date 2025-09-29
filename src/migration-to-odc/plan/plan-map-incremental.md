@@ -27,18 +27,18 @@ For detailed information on ODC apps and libraries, refer to [ODC application ar
 
 O11 domains have similar characteristics to ODC apps since they are both loosely coupled by definition and have a close match, with most of the referencing rules. ODC Libraries share  similarities with O11 Foundation apps and can be extracted from these foundation apps. Based on these principles, here are some recommendations to map O11 vertical and horizontal domains to ODC apps and libraries:
 
-* Migrate vertical domains to an ODC app, as both represent a business domain and have loosely coupled properties with the same type of possible dependencies.
+* Convert vertical domains to an ODC app, as both represent a business domain and have loosely coupled properties with the same type of possible dependencies.
 
-    ![Diagram illustrating the migration of vertical domains to an ODC application](images/vertical-domain-to-application-diag.png "Mapping Vertical Domains to ODC Application")
+    ![Diagram illustrating the conversion of vertical domains to an ODC application](images/vertical-domain-to-application-diag.png "Mapping Vertical Domains to ODC Application")
 
-* Migrate vertical domains with foundation apps consumed only in a vertical to an ODC app and one or more libraries from the foundation app(s).
+* Convert vertical domains with foundation apps consumed only in a vertical to an ODC app and one or more libraries from the foundation app(s).
 
-    ![Diagram showing the migration of vertical domains with foundation apps to an ODC app and libraries](images/vertical-domain-to-library-diag.png "Mapping Vertical Domains to ODC Libraries")
+    ![Diagram showing the conversion of vertical domains with foundation apps to an ODC app and libraries](images/vertical-domain-to-library-diag.png "Mapping Vertical Domains to ODC Libraries")
 
-* Migrate horizontal domains containing shared business logic, shared technical services, and data to ODC apps.
+* Convert horizontal domains containing shared business logic, shared technical services, and data to ODC apps.
 
-    ![Diagram depicting the migration of horizontal domains containing shared services to ODC apps](images/horizontal-to-application-diag.png "Mapping Horizontal Domains to ODC Apps")
+    ![Diagram depicting the conversion of horizontal domains containing shared services to ODC apps](images/horizontal-to-application-diag.png "Mapping Horizontal Domains to ODC Apps")
 
-*  Migrate horizontal domains with foundation apps consumed across multiple verticals to one or more ODC libraries.
+*  Convert horizontal domains with foundation apps consumed across multiple verticals to one or more ODC libraries.
 
-    ![Diagram representing the migration of horizontal domains with foundation apps to ODC libraries](images/horizontal-to-library-diag.png "Mapping Horizontal Domains to ODC Libraries")
+    ![Diagram representing the conversion of horizontal domains with foundation apps to ODC libraries](images/horizontal-to-library-diag.png "Mapping Horizontal Domains to ODC Libraries")

@@ -1,7 +1,7 @@
 ---
 guid: fac3a513-0173-496c-b617-17df271fe978
 locale: en-us
-summary: This article describes the permission model of the Migration Assessment Tool.
+summary: This article describes the permission model of the Conversion Assessment Tool.
 figma: 
 coverage-type:
   - understand
@@ -13,21 +13,21 @@ audience:
   - platform administrators
   - tech leads
   - full stack developers
-tags: application migration, cloud migration, migration process, application assessment
+tags: app conversion, cloud conversion, conversion process, application assessment
 outsystems-tools:
-  - migration assessment tool
+  - conversion assessment tool
 helpids: 
 ---
 
-# Understand the permission model for Migration Assessment Tool
+# Understand the permission model for Conversion Assessment Tool
 
 <div class="info" markdown="1">
 
-This article only applies to customers with access to the Migration Kit.
+This article only applies to customers with access to the App Conversion Kit.
 
 </div>
 
-The permissions that IT users have while using the **Migration Assessment Tool** depend on their [permissions set in LifeTime](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#permissions) for the O11 environment where the [development probe](../setup-assessement-tool.md#probe) is installed.
+The permissions that IT users have while using the **Conversion Assessment Tool** depend on their [permissions set in LifeTime](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#permissions) for the O11 environment where the [development probe](../setup-assessement-tool.md#probe) is installed.
 
 <div class="info" markdown="1">
 
@@ -35,15 +35,15 @@ The set of permissions that an IT user has over the **development probe environm
 
 </div>
 
-While navigating through the Migration Assessment Tool, logged in users only get the information they have permission to, and they are notified whenever the visible information is limited due to lack of permissions.
+While navigating through the Conversion Assessment Tool, logged in users only get the information they have permission to, and they are notified whenever the visible information is limited due to lack of permissions.
 
 ![Notification indicating LifeTime permissions are limiting the view of ODC assets.](images/lack-lt-permissions-at.png "Limited View Due to LifeTime Permissions")
 
 ## Permissions by tool operation
 
-To log in the Migration Assessment Tool, users must have **Access** permission at least for one O11 app in the environment.
+To log in the Conversion Assessment Tool, users must have **Access** permission at least for one O11 app in the environment.
 
-The tables below describe the required permissions to perform the main operations in the Migration Assessment Tool. Each permission level is cumulative with the permissions of the previous levels.
+The tables below describe the required permissions to perform the main operations in the Conversion Assessment Tool. Each permission level is cumulative with the permissions of the previous levels.
 
 ### Mapping O11 apps to ODC assets { #map }
 
@@ -204,7 +204,7 @@ The tables below describe the required permissions to perform the main operation
   </tbody>
 </table>
 
-### Migration plans { #plans }
+### Conversion plans { #plans }
 
 <table>
   <thead>
@@ -218,27 +218,27 @@ The tables below describe the required permissions to perform the main operation
   <tbody>
     <tr>
       <td>Access</td>
-      <td colspan="3">The user can’t see any migration plan.</td>
+      <td colspan="3">The user can’t see any conversion plan.</td>
     </tr>
     <tr>
       <td>List Application</td>
       <td rowspan="2">
         <p>The user can:</p>
         <ul>
-          <li>See all the migration plans, the number of ODC assets in the plan and the assessment status.</li>
+          <li>See all the conversion plans, the number of ODC assets in the plan and the assessment status.</li>
         </ul>
       </td>
       <td rowspan="2">
         <p>The user can:</p>
         <ul>
-          <li>See in the Migration plans list the plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
+          <li>See in the Conversion plans list the plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
           <li>See, in the details of those plans, the number of ODC assets in the plan and the assessment status.</li>
         </ul>
       </td>
       <td rowspan="2">
         <p>The user can:</p>
         <ul>
-          <li>See in the Migration plans list the plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>See in the Conversion plans list the plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
           <li>See, in the details of that plan, the number of ODC assets in the plan and the assessment status.</li>
         </ul>
       </td>
@@ -251,26 +251,26 @@ The tables below describe the required permissions to perform the main operation
       <td rowspan="2">
         <p>The user can:</p>
         <ul>
-          <li>See the dependencies of the <strong>environment’s migration plans</strong>.</li>
-          <li>Create, edit and delete migration plans with ODC assets that include any <strong>environment’s O11 app</strong>.</li>
+          <li>See the dependencies of the <strong>environment’s conversion plans</strong>.</li>
+          <li>Create, edit and delete conversion plans with ODC assets that include any <strong>environment’s O11 app</strong>.</li>
         </ul>
       </td>
       <td rowspan="2">
         <p>The user can:</p>
         <ul>
-          <li>See the dependencies of migration plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
-          <li>Create migration plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
-          <li>Edit migration plans with ODC assets that include the <strong>Team’s O11 apps</strong> and add/remove ODC assets to/from the plan, only when having the same or higher permission over all apps in the ODC asset.</li>
-          <li>Delete migration plans with ODC assets that include the <strong>Team’s O11 apps</strong>, only when having the same or higher permission over all apps in the ODC assets in the plan.</li>
+          <li>See the dependencies of conversion plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
+          <li>Create conversion plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
+          <li>Edit conversion plans with ODC assets that include the <strong>Team’s O11 apps</strong> and add/remove ODC assets to/from the plan, only when having the same or higher permission over all apps in the ODC asset.</li>
+          <li>Delete conversion plans with ODC assets that include the <strong>Team’s O11 apps</strong>, only when having the same or higher permission over all apps in the ODC assets in the plan.</li>
         </ul>
       </td>
       <td rowspan="2">
         <p>The user can:</p>
         <ul>
-          <li>See the dependencies of the migration plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
-          <li>Create a migration plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
-          <li>Edit the migration plan with the ODC asset that includes the <strong>O11 app</strong> and remove the ODC asset from the plan, only when having the same or higher permission over all apps in the ODC asset.</li>
-          <li>Delete the migration plan with the ODC asset that includes the <strong>O11 app</strong>, only when having the same or higher permission over all apps in the ODC assets in the plan.</li>
+          <li>See the dependencies of the conversion plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>Create a conversion plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>Edit the conversion plan with the ODC asset that includes the <strong>O11 app</strong> and remove the ODC asset from the plan, only when having the same or higher permission over all apps in the ODC asset.</li>
+          <li>Delete the conversion plan with the ODC asset that includes the <strong>O11 app</strong>, only when having the same or higher permission over all apps in the ODC assets in the plan.</li>
         </ul>
       </td>
     </tr>
@@ -290,5 +290,5 @@ The tables below describe the required permissions to perform the main operation
 
 | LifeTime permissions/Roles | Assigned as **Default role** | Assigned for a **Team** | Assigned for an **App** |
 | :--- | :--- | :--- | :--- |
-| **Create Applications** and **Change and Deploy Applications** permissions | The user can install the Migration Assessment Tool Installer app in the environment. | - | - |
-| **Administrator** [role](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles) | The user can [setup and update the Migration Assessment Tool](../setup-assessement-tool.md) using the Migration Assessment Tool Installer app. | - | - |
+| **Create Applications** and **Change and Deploy Applications** permissions | The user can install the Conversion Assessment Tool Installer app in the environment. | - | - |
+| **Administrator** [role](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles) | The user can [setup and update the Conversion Assessment Tool](../setup-assessement-tool.md) using the Conversion Assessment Tool Installer app. | - | - |

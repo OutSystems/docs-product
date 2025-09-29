@@ -5,7 +5,7 @@ guid: 92c4605e-5731-4f25-b18b-81e3318d575e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=1%3A853&mode=design
-tags: cloud migration, app architecture, outsystems, cloud-native, iterative development
+tags: app architecture, outsystems, cloud-native, iterative development
 audience:
   - full stack developers
   - architects
@@ -21,7 +21,7 @@ coverage-type:
 
 To map the existing O11 architecture to ODC architecture, OutSystems recommends that you analyze your existing O11 app architecture blueprint and perform additional refactoring and modifications. Keep iterating the architecture until you arrive at the final ODC architecture blueprint.
 
-Targeting an ODC architecture ensures that once the O11 app is migrated to ODC apps and libraries, you can immediately benefit from ODC cloud-native capabilities.
+Targeting an ODC architecture ensures that once the O11 app is converted to ODC apps and libraries, you can immediately benefit from ODC cloud-native capabilities.
 
 You can follow these steps as you analyze and map your existing O11 app architecture to the ODC architecture blueprint:
 
@@ -78,7 +78,7 @@ Step 4: Map bounded contexts to apps and libraries
 
 Next, you map the bounded contexts to ODC apps and libraries.
 
-![Diagram mapping bounded contexts to ODC apps and libraries in the migration process](images/map-to-odc-applications-libraries-diag.png "Map Bounded Contexts to ODC Apps and Libraries Diagram")
+![Diagram mapping bounded contexts to ODC apps and libraries in the conversion process](images/map-to-odc-applications-libraries-diag.png "Map Bounded Contexts to ODC Apps and Libraries Diagram")
 
 In this use case, the B2C domain must be mapped to two ODC apps due to the presence of a mobile app. Hence, further decoupling of the architecture is required.
 

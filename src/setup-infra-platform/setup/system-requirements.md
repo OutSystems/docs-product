@@ -238,6 +238,8 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 * MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)<sup>1</sup>
 * MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)<sup>1</sup>
 * MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
+* MySQL 8.4 (8.4.3 or later within the 8.3 version, all editions), since Platform Server 11.38.0
+
 
 <sup>1</sup> This version is no longer supported by MySQL and isn't supported by OutSystems starting with Platform Server version 11.32.0.
 

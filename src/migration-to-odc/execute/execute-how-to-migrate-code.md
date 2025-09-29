@@ -1,6 +1,6 @@
 ---
-summary: Learn how to migrate O11 code to ODC using the code migration tool.
-tags: code migration, migration kit, migration tool, environment setup, application lifecycle management
+summary: Learn how to convert O11 code to ODC using the code conversion tool.
+tags: code conversion, app conversion kit, conversion tool, environment setup, application lifecycle management
 guid: 4748549a-2df3-4763-bcfc-73be131cf9ff
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
@@ -13,60 +13,60 @@ audience:
   - platform administrators
 outsystems-tools:
   - lifetime
-  - migration assessment tool
+  - conversion assessment tool
 coverage-type:
   - apply
 ---
 
-# Code migration using the tool
+# Code conversion using the tool
 
 <div class="info" markdown="1">
 
-This article only applies to customers with access to the Migration Kit.
+This article only applies to customers with access to the App Conversion Kit.
 
 </div>
 
-This article explains how to migrate O11 code to ODC using the migration console available in the ODC portal.
+This article explains how to convert O11 code to ODC using the app conversion console available in the ODC portal.
 
 ## Prerequisites
 
-Before you migrate the code of the O11 apps in a [migration plan](../plan/plan-define-migration-plans.md), ensure the following:
+Before you convert the code of the O11 apps in a [conversion plan](../plan/plan-define-migration-plans.md), ensure the following:
 
 * The O11 apps in the plan are [prepared for ODC](../prepare/prep-intro.md).
 
-* The migration console is [connected to the Migration Assessment Tool](execute-connect-to-tool.md).
+* The app conversion console is [connected to the Conversion Assessment Tool](execute-connect-to-tool.md).
 
-* The source environment for code migration is correctly configured on the **Migration Assessment Tool > Maintenance** tab.
+* The source environment for code conversion is correctly configured on the **Conversion Assessment Tool > Maintenance** tab.
 
-* The O11 apps to migrate have a [tag in LifeTime](execute-about-migrate-code.md#tagging-your-apps).
+* The O11 apps to convert have a [tag in LifeTime](execute-about-migrate-code.md#tagging-your-apps).
 
-* You have the **O11 Migrations** > **Migrate O11 code** permission in ODC.
+* You have the **OutSystems 11** > **Convert O11 code** permission in ODC.
 
-## Code migration
+## Code conversion
 
-To migrate O11 code to ODC, follow these steps:
+To convert O11 code to ODC, follow these steps:
 
 1. Log in to the ODC portal.
 
-1. Under **MIGRATE O11**, click **Migrations**.
+1. Under **OUTSYSTEMS 11**, click **App Conversion**.
 
-1. Select the plan you want to migrate. Validate the status of the **Last assessment** to ensure that all O11 apps in the plan are [prepared for ODC](../prepare/prep-intro.md).
+1. Select the plan you want to convert. Validate the status of the **Last assessment** to ensure that all O11 apps in the plan are [prepared for ODC](../prepare/prep-intro.md).
 
-    You cannot migrate until the status of all Assets in the plan is **Change in ODC**.
+    You cannot convert until the status of all Assets in the plan is **Change in ODC**.
 
-1. Click **Migrate code**.
+1. Click **Convert code**.
 
     A list of O11 apps is displayed. You can click each app to review its corresponding modules and their revision number.
 
-1. To confirm the migration, click **Migrate**.
+1. To confirm the conversion, click **Convert**.
 
-    The migration process begins, and the status of apps moves to **Migrating**.
+    The code conversion process begins, and the status of apps moves to **Converting**.
 
-If the migration is successful, the process ends with **Finished** status. The O11 apps mapped in the Assessment tool are converted to ODC apps and libraries. These ODC apps and libraries are still **Unpublished**.
+If the conversion is successful, the process ends with **Finished** status. The O11 apps mapped in the Assessment tool are converted to ODC apps and libraries. These ODC apps and libraries are still **Unpublished**.
 
 Now, in ODC, you must [publish the ODC apps and libraries](#publish-odc-apps-and-libraries).
 
-If the migration is unsuccessful, the process ends with a **Finished with errors** status, and you cannot open the app or the library in ODC Studio. See how to [troubleshoot migration issues](#troubleshooting).
+If the conversion is unsuccessful, the process ends with a **Finished with errors** status, and you cannot open the app or the library in ODC Studio. See how to [troubleshoot conversion issues](#troubleshooting).
 
 ### Publish ODC apps and libraries
 
@@ -90,23 +90,23 @@ To publish an ODC app or a library, follow these steps:
 
 ## Troubleshooting
 
-To check the logs and identify code migration issues, follow these steps:
+To check the logs and identify code conversion issues, follow these steps:
 
-1. Under **MIGRATE O11**, click **Migrations**.
+1. Under **OUTSYSTEMS 11**, click **App Conversion**.
 
-1. Select a plan and click the migration row that you want to troubleshoot in the **Code migration** history.
+1. Select a plan and click the conversion row that you want to troubleshoot in the **Code conversion** history.
 
 1. Select an app and open the corresponding **Logs** tab.
 
 If you are unable to fix the issue, contact OutSystems Support for guidelines. Make sure you include the following information in your support request:
 
-* The troubleshooting data file, **troubleshooting.zip**, that you can obtain by clicking the ellipsis menu (**...**) > **Export source files** on the migration details page:
+* The troubleshooting data file, **troubleshooting.zip**, that you can obtain by clicking the ellipsis menu (**...**) > **Export source files** on the conversion details page:
 
-    ![Downloading the troubleshooting data from the Migration tool](images/execute-tool-export-src-files.png "Export source files")
+    ![Downloading the troubleshooting data from the App Conversion console](images/execute-tool-export-src-files.png "Export source files")
 
     <div class="info" markdown="1">
 
-    The **troubleshooting.zip** file is generated after the migration finishes, and you can export it some moments later. The file will be available for 60 days, and should be used exclusively for troubleshooting purposes.
+    The **troubleshooting.zip** file is generated after the code conversion finishes, and you can export it some moments later. The file will be available for 60 days, and should be used exclusively for troubleshooting purposes.
 
     </div>
 
@@ -114,6 +114,6 @@ If you are unable to fix the issue, contact OutSystems Support for guidelines. M
 
 * If your apps use SQL queries, make sure you [adapt those SQL queries](../code-patterns/elem-sql-adapt.md).
 * You must [adapt login flow of your apps](../code-patterns/execute-adapt-login-flow.md):
-    * During code migration, the login and logout actions of your migrated apps aren't automatically converted to ODC login and logout actions. This means you must manually replace the O11 login and logout flows with ODC flows in your migrated app.
+    * During code conversion, the login and logout actions of your converted apps aren't automatically converted to ODC login and logout actions. This means you must manually replace the O11 login and logout flows with ODC flows in your converted app.
     * During data migration, only the end users' email addresses are migrated to ODC, but their passwords are not. Therefore, you must adapt the login process to allow end users to set a new password.
 * You may need to [configure some settings to ensure the apps work correctly](execute-configure-migrated-apps.md).

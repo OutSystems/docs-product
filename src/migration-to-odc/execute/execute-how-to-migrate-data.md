@@ -1,6 +1,6 @@
 ---
-summary: Learn how to migrate O11 data and end users to ODC using the data  migration tool.
-tags: data migration, application migration, database queries, postgresql, user management
+summary: Learn how to migrate O11 data and end users to ODC using the app conversion tool.
+tags: data migration, app conversion, database queries, postgresql, user management
 guid: 0ae16d20-7ffc-4894-9e95-254bd89c4353
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
@@ -21,25 +21,25 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-This article only applies to customers with access to the Migration Kit.
+This article only applies to customers with access to the App Conversion Kit.
 
 </div>
 
-This article explains how to migrate O11 data and end users to ODC using the migration console available in the ODC portal.
+This article explains how to migrate O11 data and end users to ODC using the app conversion console available in the ODC portal.
 
 ## Prerequisites
 
-Before you migrate the data and end users of the O11 apps in a [migration plan](../plan/plan-define-migration-plans.md), ensure you:
+Before you migrate the data and end users of the O11 apps in a [conversion plan](../plan/plan-define-migration-plans.md), ensure you:
 
 * Have gained an understanding about [migrating end users](execute-about-migrate-data.md#end-users), and ensured the end users are [ready to migrate](execute-about-migrate-data.md#ready).
 
-* In the Migration Assessment Tool, solve all the findings related to [data patterns](../code-patterns/intro.md#data-patterns) 
+* In the Conversion Assessment Tool, solve all the findings related to [data patterns](../code-patterns/intro.md#data-patterns) 
 
-* [Migrated the O11 apps code to ODC](execute-about-migrate-code.md).
+* [Converted the O11 apps code to ODC](execute-about-migrate-code.md).
 
-* Modified your converted SQL queries on each migrated ODC asset to ODC equivalent Aurora PostgreSQL queries. For detailed information, refer to [SQL queries compared to OutSystems 11](https://success.outsystems.com/documentation/outsystems_developer_cloud/onboarding_developers/sql_queries_compared_to_outsystems_11/).
+* Modified your converted SQL queries on each converted ODC asset to ODC equivalent Aurora PostgreSQL queries. For detailed information, refer to [SQL queries compared to OutSystems 11](https://success.outsystems.com/documentation/outsystems_developer_cloud/onboarding_developers/sql_queries_compared_to_outsystems_11/).
 
-* In ODC, have the **O11 Migrations** > **Migrate O11 data** permission for the target stage of the data migration.
+* In ODC, have the **OutSystems 11** > **Migrate O11 data** permission for the target stage of the data migration.
 
 ## Data migration
 
@@ -47,13 +47,13 @@ To migrate O11 app data and end-users to ODC, follow these steps:
 
 1. Log in to the ODC portal.
 
-1. Under **MIGRATE O11**, click **Migrations**.
+1. Under **OUTSYSTEMS 11**, click **App Conversion**.
 
-1. Select the plan you want to migrate. The selected plan must have completed the code migration.
+1. Select the plan you want to migrate data for. The selected plan must have completed the code conversion.
 
 1. To start a new data migration, click **Migrate data**.
 
-1. Select the **Migration type**. App downtime depends on the [type of migration](execute-about-migrate-data.md#types-of-migration) that you choose.
+1. Select the **Migration type**. App downtime depends on the [type of data migration](execute-about-migrate-data.md#types-of-migration) that you choose.
 
 1. Select the **O11** source environment to migrate data from.
 
@@ -77,6 +77,6 @@ Once the migration is complete, you can view a list of migrated entities for eve
 
 <div class="info" markdown=1>
 
-If you selected the **Production final** migration type with app downtime, but you still want your end users to keep using any of the O11 apps after the data migration concludes, you must enable those apps in the Service Center console.
+If you selected the **Production final** data migration type with app downtime, but you still want your end users to keep using any of the O11 apps after the data migration concludes, you must enable those apps in the Service Center console.
 
 </div>

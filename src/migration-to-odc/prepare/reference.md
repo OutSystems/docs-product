@@ -1,11 +1,11 @@
 ---
-summary: This article provides detailed reference tables comparing code elements and database type mappings between O11 and OutSystems Developer Cloud (ODC) apps and libraries, aiding in migration planning.
+summary: This article provides detailed reference tables comparing code elements and database type mappings between O11 and OutSystems Developer Cloud (ODC) apps and libraries, aiding in conversion planning.
 locale: en-us
 guid: d94495a3-acd0-4030-bc6c-acedbf794702
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: cloud migration, database mapping, application modernization, migration planning, outsystems development
+tags: app conversion, database mapping, application modernization, conversion planning, outsystems development
 audience:
   - mobile developers
   - frontend developers

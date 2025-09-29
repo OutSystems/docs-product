@@ -1,6 +1,6 @@
 ---
 summary: Learn more about how you can migrate your O11 application data and end-users to ODC
-tags: data migration, user management, database configuration, migration process, application lifecycle management
+tags: data migration, user management, database configuration, conversion process, application lifecycle management
 guid: 8073a9f1-f82c-4c11-991f-248ae59b09a9
 locale: en-us
 app_type: mobile apps, reactive web apps, traditional web apps
@@ -20,17 +20,17 @@ outsystems-tools:
 
 <div class="info" markdown="1">
 
-This article only applies to customers with access to the Migration Kit. 
+This article only applies to customers with access to the App Conversion Kit. 
 
 </div>
 
-![Diagram showing the current migrate data step in the migration process](images/execute-migrate-data-diag.png "Migrate data")
+![Diagram showing the current migrate data step in the conversion process](images/execute-migrate-data-diag.png "Migrate data")
 
-After migrating the code of the O11 apps in your [migration plan](../plan/plan-define-migration-plans.md) to ODC and publishing those ODC apps and libraries in the ODC target stage, you are ready to migrate the corresponding O11 app data and end users to ODC.
+After converting the code of the O11 apps in your [conversion plan](../plan/plan-define-migration-plans.md) to ODC and publishing those ODC apps and libraries in the ODC target stage, you are ready to migrate the corresponding O11 app data and end users to ODC.
 
 The scope of a data migration from the source O11 environment to the target ODC stage includes the following:
 
-* The entire volume of data within all entities of the O11 apps in your [migration plan](../plan/plan-define-migration-plans.md).
+* The entire volume of data within all entities of the O11 apps in your [conversion plan](../plan/plan-define-migration-plans.md).
 * The end users of the default user provider **Users**. See [About migrating end users](#end-users) for further details.
 
 <div class="info" markdown="1">
@@ -47,7 +47,7 @@ You can perform data migration multiple times at each stage. Each time you execu
 
     <div class="info" markdown="1">
 
-    Except the [removal of foreign keys to O11 system entities](../code-patterns/arch-system-element.md#system-entities) that are no longer available in ODC, any other change to the entities definition in your O11 apps after executing a data migration requires the execution of a new **code migration** before you can perform another data migration.
+    Except the [removal of foreign keys to O11 system entities](../code-patterns/arch-system-element.md#system-entities) that are no longer available in ODC, any other change to the entities definition in your O11 apps after executing a data migration requires the execution of a new **code conversion** before you can perform another data migration.
 
     </div>
 
@@ -64,15 +64,15 @@ On successful data migration:
 * The ODC apps can use the migrated app data without further adjustments.
 * The end users can log in to the ODC app using their existing O11 email address. However, they must first set a new password.
 
-## Types of migration
+## Types of data migration
 
 You can choose a different type of data migration depending on your migration phase. For example, when your are still testing the migration, you probably don't need to ensure data consistency. However, if you are executing the final data migration to production, you might want to enforce app downtime to prevent changes to the data while the migration runs, ensuring data consistency.
 
-You can choose one of the following migration types:
+You can choose one of the following data migration types:
 
 * **Non-Production** or **Test production** - No app downtime. Keeps the O11 apps available to end users during the data migration and they may use the app to change data. These changes aren't migrated if they are done during the data migration.
 
-* **Production final** - Includes app downtime. Makes the O11 and ODC apps in the [migration plan](../plan/plan-define-migration-plans.md) inaccessible to end users. This prevents changes to the app data during the data migration. This option increases the duration of the data migration.
+* **Production final** - Includes app downtime. Makes the O11 and ODC apps in the [conversion plan](../plan/plan-define-migration-plans.md) inaccessible to end users. This prevents changes to the app data during the data migration. This option increases the duration of the data migration.
 
     <div class="info" markdown="1">
 
@@ -125,7 +125,7 @@ To migrate additional user details such as MobilePhone, CreationDate, follow the
 1. Create a new user extension table in O11. OutSystems recommends creating a dedicated app to hold the user extension table.
 1. Expose the user extension table for read and write operations using Service or Server actions.
 1. Populate the user extension table with data from the O11 Users table.
-1. [Map the app](../plan/plan-map-apps.md) that holds the user extension table in the assessment tool and migrate it to ODC.
+1. [Map the app](../plan/plan-map-apps.md) that holds the user extension table in the assessment tool and convert it to ODC.
 
 OutSystems recommends creating the following new field in the user extension table:
 

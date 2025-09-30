@@ -49,7 +49,7 @@ Before you start converting your apps, ensure the following:
 
 The following diagram shows the steps involved in the conversion process.
 
-![Diagram showing the steps involved in the conversion process](images/execute-one-shot-migration-diag.png "Conversion process")
+![Diagram showing the steps involved in the conversion process](images/execute-conversion-diag.png "Conversion process")
 
 To convert your apps, follow these steps:
 

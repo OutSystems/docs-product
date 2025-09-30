@@ -105,3 +105,8 @@ After following these steps and publishing the module, you can test the pattern 
 |RowItemsPhone (Integer): Optional|Defines the number of items that are shown simultaneously per row on a phone. The number must be greater than 0. The default value is 1.|
 |ItemsGap(Space Identifier): Optional |Defines the space between the Gallery items. <br/><br/> The predefined sizes are the following:<ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base (default value)</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul>|
 |ExtendedClass (Text): Optional|Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/> Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

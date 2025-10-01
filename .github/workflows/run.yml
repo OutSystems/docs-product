@@ -41,6 +41,15 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Check auto-merge
+      uses: reitermarkus/automerge@v2
+      if: vars.ENABLE_AUTO_MERGE && steps.PR.outputs.number != ''
+      with:
+        pull-request: ${{ steps.PR.outputs.number }}
+        token: ${{ secrets.TOOLS_PAT }}
+        do-not-merge-labels: never-merge,do not merge
+        required-labels: auto-merge
+
     outputs:
       changed-files: ${{ steps.changed-files.outputs.files }}
       pull-request: ${{ steps.PR.outputs.number }}

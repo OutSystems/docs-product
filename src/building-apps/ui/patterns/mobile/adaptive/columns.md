@@ -82,3 +82,8 @@ ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You d
 **Entities.ColumnBreak.BreakFirst**
 
 ![Illustration of column break behavior with a break in the first column](images/Column_break_first.png "Column Break First Behavior")
+
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

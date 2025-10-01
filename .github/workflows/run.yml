@@ -75,6 +75,13 @@ jobs:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
       files: ${{ needs.pr-info.outputs.changed-files }}
   
+  style-guide-validation:
+    name: Run style guide validation
+    needs: [pr-info]
+    if: needs.pr-info.outputs.changed-files != ''
+    uses: ./.github/workflows/style-guide-validation.yml
+    secrets: inherit
+  
   auto-fill:
     if: github.event_name == 'pull_request'
     uses: OutSystems/tk-cicd/.github/workflows/autofill-frontmatter.yml@main

@@ -51,6 +51,12 @@ Shorter timers reduce the risk of data inconsistency and system strain.
 
 ## Simplify screen preparations
 
+<div class="info" markdown="1">
+ 
+Applies only to Traditional Web apps.
+ 
+</div>
+
 ### Description
 
 Streamline screen preparation actions to speed up loading times.
@@ -79,6 +85,12 @@ Constant changes to Site Properties can increase database overhead and result in
 
 ## Limit session variables
 
+<div class="info" markdown="1">
+ 
+Applies only to Traditional Web apps.
+ 
+</div>
+
 ### Description
 
 Minimize the use of large session variables.
@@ -106,6 +118,12 @@ Isolating Aggregates prevents the platform from optimizing field retrieval, lead
 Fetching the entire entity from the database occurs even if not all fields are used.
 
 ## Avoid queries inside ‘If’ branches in preparation
+
+<div class="info" markdown="1">
+ 
+Applies only to Traditional Web apps.
+ 
+</div>
 
 ### Description
 

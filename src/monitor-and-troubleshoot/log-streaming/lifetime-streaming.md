@@ -65,9 +65,7 @@ This example uses **Elastic Cloud** as the destination tool.
 
 <div class="info" markdown="1">
     
-When sending logs from multiple environments to the same destination, create one connection while selecting multiple environments.
-
-A maximum of five log streaming connections can exist simultaneously.
+When sending logs from multiple environments to the same destination, create one connection while selecting multiple environments. A maximum of five log streaming connections can exist simultaneously.
 
 </div>
 

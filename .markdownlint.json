@@ -43,7 +43,11 @@
     },
     "no-inline-html": {
         "allowed_elements": [
-            "div"
+            "div",
+            "br",
+            "tr",
+            "th",
+            "td"
         ]
     }
 }

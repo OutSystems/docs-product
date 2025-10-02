@@ -63,10 +63,8 @@ This example uses **Elastic Cloud** as the destination tool.
 
     ![Screenshot showing a failed log streaming connection with retry option in LifeTime](images/log-streaming-failedconnection-lt.png "Failed Log Streaming Connection")
 
-<div class="info" markdown="1">
-    
+<div class="info" markdown="1">    
 When sending logs from multiple environments to the same destination, create one connection while selecting multiple environments. A maximum of five log streaming connections can exist simultaneously.
-
 </div>
 
 ## Next steps

@@ -52,9 +52,9 @@ Shorter timers reduce the risk of data inconsistency and system strain.
 ## Simplify screen preparations
 
 <div class="info" markdown="1">
- 
+
 Applies only to Traditional Web apps.
- 
+
 </div>
 
 ### Description
@@ -86,9 +86,9 @@ Constant changes to Site Properties can increase database overhead and result in
 ## Limit session variables
 
 <div class="info" markdown="1">
- 
+
 Applies only to Traditional Web apps.
- 
+
 </div>
 
 ### Description
@@ -120,9 +120,9 @@ Fetching the entire entity from the database occurs even if not all fields are u
 ## Avoid queries inside ‘If’ branches in preparation
 
 <div class="info" markdown="1">
- 
+
 Applies only to Traditional Web apps.
- 
+
 </div>
 
 ### Description

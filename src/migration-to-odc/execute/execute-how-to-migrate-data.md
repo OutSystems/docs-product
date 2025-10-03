@@ -12,7 +12,7 @@ audience:
   - full stack developers
   - platform administrators
 outsystems-tools:
-  - service studio
+  - odc portal
 coverage-type:
   - apply
 ---

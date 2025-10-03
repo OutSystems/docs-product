@@ -17,7 +17,7 @@ coverage-type:
 
 # Adapting O11 architecture and creating an ODC blueprint
 
-Preparing your apps for conversion to OutSystems Developer Cloud (ODC) is essential to benefit the cloud-native architecture of ODC. ODC offers a modular, scalable environment that enhances app performance and resilience. Planning the conversion early can ensure a smoother transition, minimize business disruption, and position your apps for long-term success in a modern, cloud-native infrastructure.
+Preparing your apps for conversion to OutSystems Developer Cloud (ODC) is essential to benefit from the cloud-native architecture of ODC. ODC offers a modular, scalable environment that enhances app performance and resilience. Planning the conversion early can ensure a smoother transition, minimize business disruption, and position your apps for long-term success in a modern, cloud-native infrastructure.
 
 The conversion process consists of phases, including creating the ODC blueprint, mapping it from O11 apps, and preparing the O11 architecture.
 

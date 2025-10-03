@@ -14,7 +14,7 @@ coverage-type:
   - apply
   - understand
 outsystems-tools:
-  - none
+  - odc portal
 ---
 # Migrate data
 

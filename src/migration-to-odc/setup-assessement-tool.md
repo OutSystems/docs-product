@@ -54,7 +54,7 @@ The Conversion Assessment Tool consists of the following components:
 
 ### Installer
 
-The **Installer** enables you to do the initial set up of the Conversion Assessment Tool, [update it to the latest version](?tab=t.0#heading=h.9uoquem0cfrk), and [install additional probes](?tab=t.0#heading=h.ufan44qkf7w2), if needed.
+The **Installer** enables you to do the initial set up of the Conversion Assessment Tool, [update it to the latest version](#update), and [install additional probes](#additional-probes), if needed.
 
 During the setup process, the installer gets the O11 environments’ details from LifeTime, and connects to each environment to install the several tool components. When all the components are installed, the installer passes the configuration information to the engine.
 
@@ -185,7 +185,7 @@ Follow the installer wizard to set up the Conversion Assessment Tool components:
 
 After setting up the Conversion Assessment Tool, you can start [mapping your O11 apps to ODC assets](plan/plan-map-apps.md).
 
-## Update to the latest Conversion Assessment Tool version
+## Update to the latest Conversion Assessment Tool version { #update }
 
 <div class="info" markdown="1">
 
@@ -207,7 +207,7 @@ Follow these steps to update the Conversion Assessment Tool:
 
     ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to update.](images/update-mat-wizard-summary-mati.png "See the update summary in Conversion Assessment Tool Installer")
 
-## Install an additional probe
+## Install an additional probe { #additional-probes }
 
 <div class="info" markdown="1">
 

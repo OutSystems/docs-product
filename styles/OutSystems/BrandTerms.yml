@@ -1,0 +1,23 @@
+extends: substitution
+message: Use '%s' instead of '%s'.
+level: warning
+ignorecase: true
+swap:
+  'out ?systems': OutSystems
+  'service ?studio': Service Studio
+  'integration ?studio': Integration Studio
+  Lifetime: LifeTime
+  'service ?center': Service Center
+  'platform ?server': Platform Server
+  mabs: MABS
+  'mobile apps? build(?:er)? service': Mobile Apps Build Service
+  forge: Forge
+  'factory ?config(?:uration)?': Factory Configuration
+  'os ?ui|outsystems ?sui': OutSystems UI
+  apis: APIs
+  urls: URLs
+  javascript: JavaScript
+  SS: Service Studio
+  KeyCloak: Keycloak
+  'paas': OutSystems Cloud
+  'o11': OutSystems 11

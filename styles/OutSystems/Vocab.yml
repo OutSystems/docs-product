@@ -1,0 +1,29 @@
+# Based on Microsoft.Vocab
+# Changed: tokens
+# Adapted to OutSystems word list.
+# Previous link: https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/a/abort-abortion
+extends: existence
+message: "Verify your use of '%s' with the OutSystems word list."
+level: suggestion
+ignorecase: true
+tokens:
+#  - above
+# used in "accessible domains" topic
+#  - accessible
+  - actionable
+  - against
+  - alarm
+#  - alert
+# used in "accessible domains" topic
+#  - alias
+#  - allows?
+  - assure
+#  - author
+  - avg
+#  - ensure
+# There's a separate rule for checking 'he'/'she'
+#  - he
+  - insure
+#  - she
+#  - sample
+#  - beta

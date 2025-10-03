@@ -1,0 +1,7 @@
+extends: existence
+message: "Consider adding content for summary."
+level: warning
+scope: raw
+raw:
+  - '^summary:$'
+

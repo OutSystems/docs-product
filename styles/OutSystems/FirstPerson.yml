@@ -1,0 +1,17 @@
+# Adapted from Microsoft.FirstPerson
+# Changed: ignorecase, tokens
+# Doesn't ignore capitalization because we allow "i" as an input parameter in Reference and UI labels like **My Settings** (in bold).
+# Previous link: https://docs.microsoft.com/en-us/style-guide/grammar/person
+extends: existence
+message: "Use first person (such as '%s') sparingly."
+ignorecase: false
+level: warning
+nonword: true
+tokens:
+  - (?:^|\s)I\s
+  - (?:^|\s)I,\s
+  - \bI'm\b
+  - \bme\b
+  - \bmy\b
+  - (?:\s|[^*])My\b
+  - \bmine\b

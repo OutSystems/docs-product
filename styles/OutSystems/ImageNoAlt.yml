@@ -1,0 +1,6 @@
+extends: existence
+message: "Consider adding alt description for non-decorative images."
+level: suggestion
+scope: raw
+raw:
+  - '\!\[\]'

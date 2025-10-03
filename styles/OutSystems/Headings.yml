@@ -1,0 +1,117 @@
+# Adapted from Microsoft.Headings
+# Changed: exceptions
+# Previous link: https://docs.microsoft.com/en-us/style-guide/capitalization
+extends: capitalization
+message: "'%s' should use sentence-style capitalization."
+level: warning
+scope: heading
+match: $sentence
+indicators:
+  - ':'
+  - '.'
+exceptions:
+# Product
+  - Service
+  - Studio
+  - Center
+  - LifeTime
+  - Technical Preview
+# Concepts
+  - Action
+  - Activity
+  - Aggregate
+  - Ajax
+  - App
+  - Application
+  - Area
+  - Attribute
+  - Block
+  - Callback
+  - Client
+  - Email
+  - Entity
+  - Entities
+  - Exception
+  - Identifier
+  - Library
+  - Local
+  - Method
+  - Mobile
+  - Mobile Apps Build Service
+  - Module
+  - OpenID Connect
+  - Parameter
+  - Personal
+  - Process
+  - Progressive
+  - Public
+  - Reactive
+  - Record
+  - Refresh
+  - Resource
+  - Role
+  - Screen
+  - Server
+  - Service
+  - Session
+  - Site Property
+  - SQL
+  - Static
+  - Structure
+  - Taskbox
+  - Template
+  - Theme
+  - Timer
+  - Traditional
+  - Variable
+  - Web
+# Events
+  - On Initialize
+  - On Ready
+  - On Render
+  - On After Fetch
+  - On Parameters Changed
+  - On Destroy
+# UI Patterns and Widgets
+  - Pattern
+  - Columns
+  - Carousel
+  - Checkbox
+  - Columns
+  - Date Picker
+  - Gallery
+  - Lightbox Image
+  - Master Detail
+  - Range Slider
+  - Range Slider Interval
+  - Split Screen
+  - Stacked Cards
+  - Swipe Events
+  - Switch
+  - Touch Events
+# Widgets
+  - Widget
+  - Link
+  - List Item
+# Third Party
+  - Active Directory
+  - Android
+  - Apple Developer
+  - Azure
+  - Cascading Style Sheets
+  - Chrome
+  - Code
+  - Docker
+  - Excel
+  - Git
+  - Google Play
+  - iOS
+  - Integrated Authentication
+  - Kubernetes
+  - Package
+  - Store
+  - Tips
+  - Tricks
+  - TypeScript
+  - Windows
+  - Visual Studio

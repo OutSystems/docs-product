@@ -1,0 +1,10 @@
+# Based on Openly.FutureTense
+# Changed: tokens
+# Previous link: https://github.com/testthedocs/Openly/blob/master/FutureTense.yml
+extends: existence
+message: "Possible future tense."
+ignorecase: true
+level: warning
+tokens:
+  - will
+  - we are going

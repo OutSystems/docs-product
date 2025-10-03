@@ -1,0 +1,6 @@
+extends: existence
+message: "Alt value wrong. Describe the image properly."
+level: warning
+scope: raw
+raw:
+  - '\!\[\s+\]'

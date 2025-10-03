@@ -1,0 +1,7 @@
+extends: existence
+message: Do not write '%s'
+scope: sentence
+level: warning
+ignorecase: false
+raw:
+  - "(?:OutSystems'|OutSystems Platform)"

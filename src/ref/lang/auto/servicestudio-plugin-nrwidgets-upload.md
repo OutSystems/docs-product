@@ -26,7 +26,7 @@ Notes:
 
 * Users can drag a file to the Upload widget in most **modern browsers**. However, they can't do it in Internet Explorer 11, as that browser doesn't support drag-and-drop.
 * The widget can handle files up to 250MB. Larger files might not be loaded properly and end up empty with a file size of 0 bytes.
-* Applies to mobile apps. Starting with [MABS 11.1](https://success.outsystems.com/support/release_notes/mobile_apps_build_service_versions/mabs_11_release_notes/#mabs-version-11-1), the Upload widget no longer offers to capture media from the device camera by default on Android devices. Add a property with the name **capture** and the value **environment** to enable media capture. This has no effect when **Accept** is set to **File**.
+* Applies to mobile apps. Starting with [MABS 11.1](https://success.outsystems.com/support/release_notes/mobile_apps_build_service_versions/mabs_11_release_notes/#mabs-version-11-1), the Upload widget no longer captures media from the device camera by default on Android devices. Add a property **capture** with the value **environment** to enable media capture. This applies when **Accept** is set to **Image** or **Video**.
 
 </div>
 

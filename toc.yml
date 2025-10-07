@@ -1222,6 +1222,7 @@
         - href: migration-to-odc/code-patterns/arch-priv-struct.md
         - href: migration-to-odc/code-patterns/arch-app-theme.md
         - href: migration-to-odc/code-patterns/arch-not-mapped.md
+        - href: migration-to-odc/code-patterns/arch-internal-service-action.md
         - href: migration-to-odc/code-patterns/arch-extension.md
         - href: migration-to-odc/code-patterns/arch-system-element.md
         - href: migration-to-odc/code-patterns/arch-user-mng-elements.md
@@ -1235,6 +1236,7 @@
         - href: migration-to-odc/code-patterns/cannot-open-module.md
         - href: migration-to-odc/code-patterns/outdated-or-broken-dependencies.md
         - href: migration-to-odc/code-patterns/arch-common-plugin.md
+        - href: migration-to-odc/code-patterns/arch-lib-cyclic.md
         - href: migration-to-odc/code-patterns/elem-built-in-function.md
         - href: migration-to-odc/code-patterns/elem-sql-adapt.md
         - href: migration-to-odc/code-patterns/elem-user-provider.md

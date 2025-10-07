@@ -55,9 +55,11 @@ These are the patterns that require changes in the O11 apps before proceeding wi
 * [Asset consuming an ODC application Client Action](arch-client-action.md)
 * [Asset consuming an ODC application Server Action](arch-server-action.md)
 * [Asset consuming a reference to the Common Plugin](arch-common-plugin.md)
+* [Library with cyclic dependency to another ODC library](arch-lib-cyclic.md)
 * [Asset consuming a Traditional Web module](convert-trad-web.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
 * [Asset consuming a Forge component](arch-forge.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
 * [Asset consuming an O11 app that is not mapped to any ODC asset](arch-not-mapped.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
+* [Asset consuming its own service action](arch-internal-service-action.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
 * [Asset cannot contain Traditional Web modules](elem-trad-web.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
 

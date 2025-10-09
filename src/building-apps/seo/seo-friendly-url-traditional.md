@@ -6,7 +6,7 @@ locale: en-us
 guid: 641c106a-d688-42a3-9b73-8fd9791a673b
 app_type: traditional web apps
 platform-version: o11
-figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3329:27077
+figma:  https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3329:27077
 audience:
   - frontend developers
   - full stack developers
@@ -59,9 +59,9 @@ Use Page Rules to transform your URLs trailing information such as, page names a
 
 The platform compares all incoming URLs with your rules, one by one, following the order you defined in the **SEO Friendly URLs - Page Rules** screen. The rule that's part of the app **Module** that matches the **URL Pattern** is the first applied. The app displays the **Web Screen** page and the parameter placeholders in the URL path. The Web Screen parameter name are enclosed in {} and the platform passes them to the page with their runtime values.
 
-When there's Web Screen names ambiguity, prefix the Web Screen name with its Web flow name and a dot (‘.’). 
+When there's Web Screen names ambiguity, prefix the Web Screen name with its Web flow name and a dot (‘.’).
 
-At runtime, the platform assures that clicking on links to the Web Screens that have entries on any of these rules, have their destination URL transformed to use the **URL Pattern**. 
+At runtime, the platform assures that clicking on links to the Web Screens that have entries on any of these rules, have their destination URL transformed to use the **URL Pattern**.
 
 ![Example of SEO friendly URL pattern configuration in OutSystems](images/seo-url-pattern-sc.png "SEO Friendly URL Pattern Configuration")
 
@@ -77,7 +77,7 @@ Shows the following URL:
 http://www.example.com/InsterstateBuses/From-Lisbon-To-Faro
 ```
 
-However, if there's only the 'To' parameter in the URL, the last rule applies, because the From parameter isn't defined to apply the previous rule. 
+However, if there's only the 'To' parameter in the URL, the last rule applies, because the From parameter isn't defined to apply the previous rule.
 
 ![Screenshot of SEO URL pattern focusing on 'To' parameter in OutSystems Service Center](images/seo-url-pattern-to-parameter-sc.png "SEO URL Pattern with 'To' Parameter")
 
@@ -109,6 +109,7 @@ To check or add module aliases, select the **Module Alias List**.
 Each module can only have one alias. You can still use the original module name in URLs.
 
 With the above settings, you may simply use Assets or Emails words in your URLs instead of using AssetsManager or EmailCampaignManager, for example, use:
+
 ```
 http://www.example.com/Assets 
 ```
@@ -116,7 +117,9 @@ http://www.example.com/Assets
 ```
 http://www.example.com/Emails
 ```
+
 Instead of:
+
 ```
 http://www.example.com/AssetsManager 
 ```
@@ -124,19 +127,6 @@ http://www.example.com/AssetsManager
 ```
 http://www.example.com/EmailCampaignManager 
 ```
-### Site Rules
-
-Use Site Rules to simplify and organize URLs to better highlight site structure as, for example, www.myCompany.com/Site/ or www.myGallery.com/GallerySite/ where the Site and GallerySite parts are disposable. Another possibility is for you to automatically set the application’s working language depending on the existence of these disposable parts in the URL.
-
-Implement this kind of configurations selecting the **Site Rules List** option.
-
-![Screenshot showing SEO site rules configuration in OutSystems Service Center](images/seo-site-rules-sc.png "SEO Site Rules Configuration")
-
-The platform compares all incoming URLs with your rules, one by one, following the order defined in the Site Rules screen. The first rule matching its **Base URL** value with the beginning of the URL path (excluding the protocol prefix) is the one applied: if there's a language **Locale** defined it gets set in the application. If there’s a **Root Application** defined, it's executed instead of the default application for the IIS site pointed at by the URL.
-
-With the above settings use the simplified www.myCompany.com URL to access myCompany’s website instead of the www.myCompany.com/Site URL. The same applies to myGallery’s website, where the www.myGallery.com/GallerySite URL is simplified to www.myGallery.com.
-
-On the other hand, the site for Taxi Anywhere displays the application default web page with the language locale automatically set according to the URL.
 
 ### Redirect Rules {redirect-rules}
 
@@ -157,13 +147,17 @@ All incoming URLs are compared with your rules, one by one, following the order 
 ![Example of URL redirection rule replacement in OutSystems Service Center](images/seo-redirect-rules-replace-sc.png "SEO Redirect Rules Replacement Example")
 
 With the above settings, when navigating to:
+
 ```
 http://uk.example.com/Home.aspx?TaxiType=Van 
 ```
+
 The browser is redirected to:
+
 ```
 http://www.example.com/uk/Home.aspx?TaxiType=Van
 ```
+
 ## Other Search Engine Optimization Techniques
 
 Besides using the SEO Friendly URLs feature, there are other techniques you can apply when designing your web sites such as: setting unique and accurate page titles, adding meta tags to your HTML, etc. [Learn more about SEO techniques](https://support.google.com/webmasters/answer/7451184?hl=en&ref_topic=9268559).
@@ -176,11 +170,11 @@ You need to follow the instructions in this section if you're installing the pla
 
 </div>
 
-To start using the SEO Friendly URLs on OutSystems on-premises environments, you have to install ISAPI Filters in your Internet Information Services (IIS). For that, follow the steps described in the ‘Installing ISAPI Filters’ section. Regarding logging, useful for you to detect errors or malfunctions, check the ‘Logging’ section to see how to turn logging on (and off).
+To start using the SEO Friendly URLs on OutSystems on-premises environments, you have to install ISAPI Filters in your Internet Information Services (IIS). For that, follow the steps described in the **Installing ISAPI Filters** section. Regarding logging, useful for you to detect errors or malfunctions, check the **Logging** section to see how to turn logging on (and off).
 
 If you are using the OutSystems Cloud, the necessary configurations are already active by default.
 
-### Installing ISAPI Filters 
+### Installing ISAPI Filters
 
 <!-- Help id 30374 links to this section. Edit the URL mapping if you change the title / URL of the doc. -->
 
@@ -193,7 +187,6 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 1. Launch Internet Information Services (IIS) Manager. In the Windows Start Menu, select **Server Manager**, select **Tools**, and then select the **Internet Information Services (IIS) Manager’ application**.
 
     ![Screenshot of selecting Internet Information Services (IIS) Manager application in Windows](images/seo-friendly-urls_12.png "Selecting IIS Manager Application")
-
 
 1. In the IIS Manager tree, under the **Sites** folder, select **Default Web Site**;
 
@@ -208,10 +201,10 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
     * 32-bit Operating Systems: `<your_OutSystems_Installation_Directory>\OutSystems\Platform Server\OsISAPIFilter.dll`
 
     * 64-bit Operating Systems: `<your_OutSystems_Installation_Directory>\OutSystems\Platform Server\OsISAPIFilterx64.dll`
-    
+
     ![Screenshot showing the configuration of OutSystems ISAPI Filter in IIS Manager](images/seo-friendly-urls_10.png "Configuring OutSystems ISAPI Filter")
 
-    * Press ‘OK’ button to finish adding the 'OutSystems ISAPI Filter'
+    * Press **OK** button to finish adding the 'OutSystems ISAPI Filter'
 
 1. In the IIS Manager tree, under the **Application Pools** folder, select the **DefaultAppPool** pool and then click on **View Applications** on the **Actions** pane on the right side:
 
@@ -233,7 +226,7 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
 ### Logging
 
-Turn on detailed logging of your SEO Friendly URLs to keep track of detailed information about URLs transformations and ISAPI Filters status. The log information is written into a file named **‘OsISAPI.log’** that is located under the ‘logs’ directory on each of your Front-end servers. The ‘logs’ directory can be found inside the **Platform Server** installation folder (for example, `C:\Program Files\OutSystems\Platform Server\logs`).
+Turn on detailed logging of your SEO Friendly URLs to keep track of detailed information about URLs transformations and ISAPI Filters status. The log information is written into a file named **‘OsISAPI.log’** that is located under the **logs** directory on each of your Front-end servers. The **logs** directory can be found inside the **Platform Server** installation folder (for example, `C:\Program Files\OutSystems\Platform Server\logs`).
 
 Depending on your ISAPI Filters configuration and the number of accesses to transformed URLs, logging may involve writing large amounts of data into the log file, and it may lead to degradation of your Platform Server’s performance. As such, before turning on the logging, try to evaluate the impact on your Platform Server’s performance.
 
@@ -241,7 +234,8 @@ To switch detailed logging on and off you must edit a file in all Front-end serv
 
 #### Turning On the Detailed Logging
 
-Open the ‘OsISAPIConf.cache‘ file with a simple text editor like NotePad or WordPad. Change the file content to the word ‘Verbose’, and save the file. The log starts being written verbosely: 
+Open the ‘OsISAPIConf.cache‘ file with a simple text editor like NotePad or WordPad. Change the file content to the word ‘Verbose’, and save the file. The log starts being written verbosely:
+
 ```
 … 
 
@@ -260,7 +254,8 @@ Open the ‘OsISAPIConf.cache‘ file with a simple text editor like NotePad or 
 
 #### Turning Off the Detailed Logging
 
-Open the ‘OsISAPIConf.cache‘ file with a simple text editor like NotePad or WordPad. Change the file content to the word ‘Quiet’, and save the file. The log stops being written verbosely: 
+Open the ‘OsISAPIConf.cache‘ file with a simple text editor like NotePad or WordPad. Change the file content to the word ‘Quiet’, and save the file. The log stops being written verbosely:
+
 ```
 … 
 
@@ -274,4 +269,3 @@ Open the ‘OsISAPIConf.cache‘ file with a simple text editor like NotePad or 
 
 …
 ```
-

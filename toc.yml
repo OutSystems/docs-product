@@ -536,6 +536,7 @@
             - href: building-apps/seo/seo-friendly-url-reactive.md
             - href: building-apps/seo/improved-crawl-reactive.md
             - href: building-apps/seo/seo-friendly-url-traditional.md
+            - href: building-apps/seo/site-rules.md
             - href: building-apps/seo/errors-troubleshooting-seo.md
     - topics:
         - href: building-apps/seo/improve-SEO-with-prerendering.md

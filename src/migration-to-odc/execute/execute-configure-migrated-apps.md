@@ -34,6 +34,10 @@ You must have [converted your apps](execute-about-migrate-code.md).
 
 You may need to configure the following:
 
+* Review the [ODC app and library properties](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/libraries/edit_app_and_library_properties/). The code conversion merges multiple O11 modules into a single ODC app or library. Although most properties are inherited from the main O11 module into which the others are merged, there isn't a deterministic way to decide which O11 module's properties should take precedence in the resulting ODC app or library.
+
+* Review the [On Application Ready](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/application_logic/on_application_ready/) and the [On Application Resume](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/application_logic/on_application_resume/) actions of your ODC apps. During the code conversion, when merging multiple O11 modules into a single ODC app, only one instance of each of these system event actions is preserved in the converted ODC app. The instance is chosen from one of the O11 modules. All other instances from the remaining O11 modules are deleted during the conversion.
+
 * If the O11 apps used Site Properties (Settings in ODC) and Timers, configure them in Portal, refer to [Configuration management](https://success.outsystems.com/documentation/outsystems_developer_cloud/managing_outsystems_platform_and_apps/configuration_management/).
 
 * In O11, Site Properties that are set as **secret** are converted as non-secret values. You must set these values as Settings in ODC and manually set them as Secret. To set app Configurations as secrets, refer to [Set as a secret](https://success.outsystems.com/documentation/outsystems_developer_cloud/security_of_outsystems_developer_cloud/set_as_secret/).

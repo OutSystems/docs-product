@@ -50,7 +50,7 @@ The patterns and findings available to you through the Conversion Assessment Too
 
 To adjust your O11 apps and make them ODC-compatible, follow these steps:
 
-1. Log into the Conversion Assessment Tool console (`https://<mat_console_environment>/ConversionAssessment/`) using your IT User credentials.
+1. Log into the Conversion Assessment Tool console (`https://<cat_console_environment>/ConversionAssessment/`) using your IT User credentials.
 
 1. Open the assessment for all assets or for a specific asset.
 

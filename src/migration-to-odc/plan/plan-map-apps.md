@@ -115,7 +115,7 @@ Now, it’s time to define each of the future ODC Assets (apps and libraries) an
 
 To map your O11 Apps into ODC Assets, follow these steps:
 
-1. Log into the Conversion Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.
+1. Log into the Conversion Assessment Tool console (`https://<cat_console_environment>/ConversionAssessment/`) using your IT User credentials.
 
 1. In the **ODC Blueprint** tab, click **Map O11 apps (Development)**.
 

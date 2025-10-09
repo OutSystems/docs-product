@@ -48,7 +48,7 @@ The assessment operations and findings available to you through the Conversion A
 
 To view the assessment report of an [ODC asset already mapped from your O11 apps](plan-map-apps.md), follow these steps:
 
-1. Log into the Conversion Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.
+1. Log into the Conversion Assessment Tool console (`https://<cat_console_environment>/ConversionAssessment/`) using your IT User credentials.
 
 1. Go to the **ODC Blueprint** tab.
 

@@ -52,7 +52,7 @@ The Conversion Assessment Tool consists of the following components:
 
 ![Diagram showing the architecture of the Conversion Assessment Tool, including the Console, Engine, and Probes in different environments (DEV, Q&A, PROD) and their interactions.](images/assessment-tool-architecture-diag.png "Conversion Assessment Tool Architecture Diagram")
 
-### Installer
+### Installer { #installer }
 
 The **Installer** enables you to do the initial set up of the Conversion Assessment Tool, [update it to the latest version](#update), and [install additional probes](#additional-probes), if needed.
 
@@ -98,23 +98,15 @@ Before setting up the Conversion Assessment Tool, make sure the following requir
 
 * Your O11 environments use Platform Server 11.18.1 or later.
 
-* The environment where you publish the Conversion Assessment Tool Console has [Single Sign-On Between App Types enabled](../security/configure-authentication.md).
-
-    <div class="info" markdown="1">
-
-    To enable single sign-on between app types, you must also [toggle the Enable HTTP Strict Transport Security (HSTS)](../security/enforce-https-security.md) and [enable secure session cookies](../security/secure-cookies-enable-secure-session.md) in that environment.
-
-    </div>
-
 ## Set up the tool
 
 To set up the Conversion Assessment Tool, follow these steps:
 
-* [Step 1. Install the Conversion Assessment Tool Installer app](#mat-installer)
+* [Step 1. Install the Conversion Assessment Tool Installer app](#cat-installer)
 
 * [Step 2. Follow the installation wizard](#install-wizard)
 
-### Step 1. Install the Conversion Assessment Tool Installer app { #mat-installer }
+### Step 1. Install the Conversion Assessment Tool Installer app { #cat-installer }
 
 <div class="info" markdown="1">
 
@@ -122,15 +114,23 @@ This step [requires **Create Applications** and **Change and Deploy Applications
 
 </div>
 
-Follow these instructions to install the Conversion Assessment Tool Installer in your Development environment: 
+Follow these instructions to install the Conversion Assessment Tool Installer in your Development environment:
 
-1. Download the [Conversion Assessment Tool Installer app file](resources/Migration_Assessment_Tool_Installer_v1_1_3_1.oap).
+1. Download the [Conversion Assessment Tool Installer app file](resources/Conversion_Assessment_Tool_Installer_v1_1_4_2.oap).
 
 1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
 
 1. Under **Factory > Applications**, select **Publish an Application**.
 
 1. Upload and publish the Conversion Assessment Tool Installer app file.
+
+<div class="info" markdown="1">
+
+If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), add the following redirect URI to your IdP configuration:
+
+* `https://<dev_environment>/ConversionAssessmentInstaller/OIDC_Callback`
+
+</div>
 
 ### Step 2. Follow the installation wizard { #install-wizard }
 
@@ -145,7 +145,7 @@ This step requires:
 
 Follow the installer wizard to set up the Conversion Assessment Tool components:
 
-1. Open the Conversion Assessment Tool Installer app (`https://<dev_environment>/MigrationAssessmentInstaller/`).
+1. Open the Conversion Assessment Tool Installer app (`https://<dev_environment>/ConversionAssessmentInstaller/`).
 
 1. Log in using your IT User credentials.
 
@@ -183,6 +183,14 @@ Follow the installer wizard to set up the Conversion Assessment Tool components:
 
     ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to install.](images/setup-mat-wizard-summary-mati.png "See the installation summary in Conversion Assessment Tool Installer")
 
+<div class="info" markdown="1">
+
+If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), add the following redirect URI to your IdP configuration:
+
+* `https://<cat_console_environment>/ConversionAssessment/OIDC_Callback`, where `<cat_console_environment>` is the environment where you installed the [Conversion Assessment Tool console](#console)
+
+</div>
+
 After setting up the Conversion Assessment Tool, you can start [mapping your O11 apps to ODC assets](plan/plan-map-apps.md).
 
 ## Update to the latest Conversion Assessment Tool version { #update }
@@ -219,7 +227,7 @@ After the initial setup, you can always install an additional probe in another O
 
 Follow these steps to install an additional probe using the Conversion Assessment Tool Installer:
 
-1. Open the Conversion Assessment Tool Installer app (`https://<dev_environment>/MigrationAssessmentInstaller/`).
+1. Open the Conversion Assessment Tool Installer app (`https://<dev_environment>/ConversionAssessmentInstaller/`).
 
 1. Log in using your IT User credentials.
 
@@ -247,7 +255,7 @@ You can adjust how frequently the Conversion Assessment Tool assesses your O11 a
 
 Follow these steps to change the code assessment cycle for an environment:
 
-1. Log into the Conversion Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment/`) using your IT User credentials.
+1. Log into the Conversion Assessment Tool console (`https://<cat_console_environment>/ConversionAssessment/`) using your IT User credentials.
 
 1. Go to the **Maintenance** tab.
 
@@ -267,21 +275,23 @@ If you encounter any other limitation or issue using the Conversion Assessment T
 
 Please also tell us about the issue you faced using the **Give feedback** option. This will help us improve the installer tool and support more scenarios.
 
-### Can't log in to the Conversion Assessment Tool Installer app
+### Can't log in to the Conversion Assessment tools { #cannot-login }
 
-After [installing the Conversion Assessment Tool Installer app](#mat-installer), you are not able to log in to follow the installation wizard.
+You are not able to log in to the Conversion Assessment Tool Installer app or to the Conversion Assessment Tool Console.
 
 #### Recommended action
 
-Make sure:
+Validate the following:
 
-* You log in with your IT users credentials
+* You are using your IT user credentials to log in.
 
-* Your IT user [has the **Administrator** role](plan/mat-permissions.md#setup-update).
+* If you are trying to log in to the Conversion Assessment Tool Installer app, make sure your IT user [has the **Administrator** role](plan/mat-permissions.md#setup-update).
 
-If [IT users authentication with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md) is enabled for your O11 infrastructure, add the following redirect URI to your IdP configuration, where `<mati_environment>` is the environment where you installed the Conversion Assessment Tool Installer:
+* If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), make sure you added the following redirect URIs to your IdP configuration:
 
-* `https://<mati_environment>/MigrationAssessmentInstaller/OIDC_Callback`
+    * `https://<cati_environment>/ConversionAssessmentInstaller/OIDC_Callback`, where `<cati_environment>` is the environment running the [Conversion Assessment Tool Installer](#installer)
+
+    * `https://<cat_console_environment>/ConversionAssessment/OIDC_Callback`, where `<cat_console_environment>` is the environment running the [Conversion Assessment Tool Console](#console)
 
 ### Setup process fails
 
@@ -299,6 +309,6 @@ Make sure your O11 infrastructure follows the [OutSystems 11 network requirement
 
 In case the O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection, you can edit the environment URL to the alternative URL when choosing the O11 environments in the [setup wizard](#install-wizard).
 
-If you have other communication restrictions applied to your O11 environments, [install the Conversion Assessment Tool Installer](#mat-installer) in your LifeTime environment instead, and repeat the [setup wizard](#install-wizard).
+If you have other communication restrictions applied to your O11 environments, [install the Conversion Assessment Tool Installer](#cat-installer) in your LifeTime environment instead, and repeat the [setup wizard](#install-wizard).
 
 If the problem persists, try the [manual setup process](manual-setup-assessement-tool.md).

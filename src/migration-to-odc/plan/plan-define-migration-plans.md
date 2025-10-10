@@ -40,7 +40,7 @@ After [mapping a set of O11 apps into ODC assets](plan-map-apps.md), you can gro
 
 <div class="info" markdown="1">
 
-The conversion plan operations and ODC assets available to you through the Conversion Assessment Tool depend on your [LifeTime permissions for the Development environment](mat-permissions.md#plans).
+Your [LifeTime permissions for the Development environment](mat-permissions.md#plans) determine which conversion plan operations and ODC assets are available to you in the Conversion Assessment Tool.
 
 </div>
 
@@ -48,7 +48,7 @@ The conversion plan operations and ODC assets available to you through the Conve
 
 To create a conversion plan, follow these steps:
 
-1. Log into the Conversion Assessment Tool console (`https://<mat_console_environment>/MigrationAssessment`) using your IT User credentials.
+1. Log into the Conversion Assessment Tool console (`https://<cat_console_environment>/ConversionAssessment`) using your IT User credentials.
 
 1. In the **Conversion plans** tab, click **Create plan**.
 

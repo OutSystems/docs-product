@@ -32,7 +32,7 @@ If you don't have access to the App Conversion Kit, please reach out to your Out
 The main steps in the planning phase of your O11 to ODC conversion are the following:
 
 1. [Set up the Conversion Assessment Tool](../setup-assessement-tool.md).  
-1. [Design the to-be ODC architecture blueprint](plan-map-apps.md#design-arch) for the O11 apps you want to convert.  
-1. [Map the O11 apps to ODC assets](plan-map-apps.md#map-in-tool).  
+1. [Design the to-be ODC architecture blueprint](plan-design-odc-arch.md) for the O11 apps you want to convert.  
+1. [Map the O11 apps to ODC assets](plan-map-in-tool.md).  
 1. [Define conversion plans](plan-define-migration-plans.md) to group sets of apps that you want to  convert independently.  
 1. [Assess the ODC-readiness](plan-assess-refactor.md) of your O11 apps.

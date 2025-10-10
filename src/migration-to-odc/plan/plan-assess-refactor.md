@@ -40,7 +40,7 @@ The assessment report helps you plan your conversion to ODC, by supporting you w
 
 <div class="info" markdown="1">
 
-The assessment operations and findings available to you through the Conversion Assessment Tool depend on your [LifeTime permissions for the Development environment](mat-permissions.md#assessment-findings).
+Your [LifeTime permissions for the Development environment](mat-permissions.md#assessment-findings) determine which assessment operations and findings are available to you in the Conversion Assessment Tool.
 
 </div>
 

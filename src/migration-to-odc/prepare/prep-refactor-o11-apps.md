@@ -44,7 +44,7 @@ Before you start, ensure the following:
 
 <div class="info" markdown="1">
 
-The patterns and findings available to you through the Conversion Assessment Tool depend on your [LifeTime permissions for the Development environment](../plan/mat-permissions.md#assessment-findings).
+Your [LifeTime permissions for the Development environment](../plan/mat-permissions.md#assessment-findings) determine which patterns and findings are available to you in the Conversion Assessment Tool.
 
 </div>
 

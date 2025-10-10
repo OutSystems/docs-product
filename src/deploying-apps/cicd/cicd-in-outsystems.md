@@ -17,7 +17,7 @@ coverage-type:
   - understand
 ---
 
-# Application Lifecycle Management in OutSystems CI/CD
+# Application Lifecycle Management in O11 CI/CD
 
 As with Agile methodology and DevOps culture, the concept of continuous integration/continuous delivery (CI/CD) gradually developed to answer specific business needs and meet demands for innovation, new features, and a frictionless user experience. At the same time, it allows developers to move quickly—with the confidence not to break anything.
 

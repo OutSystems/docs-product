@@ -1573,7 +1573,7 @@
         - topics:
             - href: ref/lang/auto/class-mobile-module.md
             - href: ref/lang/auto/class-reference.md
-        # Traditional Web
+        # Traditional web
         - href: ref/traditional-web/intro.md
         - topics:
             # Web Interfaces

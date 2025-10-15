@@ -164,7 +164,7 @@ Following up on your support case, OutSystems:
 
 Depending on your database management system, check below the permissions granted for **read-only** or **read and write** set of credentials.
 
-### Read-only credentials { #read }
+### Read-only credentials {#read}
 
 For SQL Server:
 
@@ -180,7 +180,7 @@ For Oracle:
 
 All database tables and views include all OutSystems tables (both metamodel tables and application tables), and the database management system tables.
 
-### Read and write credentials { #read-write }
+### Read and write credentials {#read-write}
 
 Read and write database credentials grant all the permissions of read-only and add the below credentials.
 

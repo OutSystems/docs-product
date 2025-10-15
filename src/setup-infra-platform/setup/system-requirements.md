@@ -25,7 +25,7 @@ topic:
 This article applies to: **OutSystems 11**&#8195;&#8195;Other version available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_system_requirements)
 </div>
 
-Before installing OutSystems on-premises, check if your set up meets the hardware and software requirements listed in this article. To start the installation, refer to [Setting Up OutSystems](intro.md).
+Before installing OutSystems on-premises, verify that your setup meets the hardware and software requirements outlined in this article. To start the installation, refer to [Setting Up OutSystems](intro.md).
 
 ## Platform server
 
@@ -46,7 +46,7 @@ The following are the requirements for installing the Platform Server in your da
 
 <div class="info" markdown="1">
 
-<sup>1</sup> When installing the Platform Server on Windows Server 2022/2025, or upgrading an existing installation to Windows Server 2022/2025, consider increasing the CPU and memory of the machines as the Operating System itself requires more resources.
+<sup>1</sup> When using the Platform Server on Windows Server 2022/2025, consider increasing the CPU and memory of the machines, as the operating system itself requires more resources.
 <br/>
 <br/>
 OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
@@ -59,11 +59,11 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ### Application server
 
-* Microsoft Internet Information Services (IIS) 10.0 or higher configured with a valid SSL certificate emitted by a public certificate authority. The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.
+* Microsoft Internet Information Services (IIS) 10.0 or higher configured with a valid SSL certificate issued by a public certificate authority. The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.
 
 ### Database management system
 
-Use the same type of database engine for all the 3 databases in Platform Server (platform and apps, logs, session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
+Use the same type of database engine for all three 3 databases in Platform Server (platform and apps, logs, and session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
 
 * Microsoft SQL Server supported versions<sup>1, 2</sup> and respective supported compatibility levels:
 
@@ -101,7 +101,7 @@ Future revisions of OutSystems may require the installation of an update within 
 * Microsoft .NET Framework, one of the following, depending on the Platform Server version:
     * 4.8.1<sup>1</sup> : supported since Platform Server 11.35.0
     * 4.8<sup>2</sup> : supported since Platform Server 11 – Release Oct.2019 CP2
-    * 4.7.2 : supported by all Platform Server 11 versions
+    * 4.7.2: supported by all Platform Server 11 versions
 * Microsoft Build Tools 2015<sup>3</sup>
 * .NET Runtime & Hosting Bundle for Windows in the following versions, depending on the Platform Server version:
     * .NET 8.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.27.0 or newer
@@ -115,7 +115,7 @@ Future revisions of OutSystems may require the installation of an update within 
 
 <div class="info" markdown="1">
 
-<sup>1</sup> Using Microsoft .NET Framework 4.8.1 implies a slightly higher memory usage for OutSystems applications, consider increasing the memory of Frontends.
+<sup>1</sup> Using Microsoft .NET Framework 4.8.1 implies a slightly higher memory usage for OutSystems apps, consider increasing the memory of Frontends.
 <br/>
 <br/>
 <sup>2</sup> This version of .NET or later is required to ensure a FIPS-compliant environment.
@@ -143,7 +143,7 @@ To be able to achieve FIPS-compliance, customers must:
 
 ## Cache invalidation service
 
-RabbitMQ Server and Erlang versions numbers follow the format: Major.Minor.Patch. OutSystems Platform Server versions require minimum Patch versions of RabbitMQ Server and Erlang.
+RabbitMQ Server and Erlang version numbers follow the format: Major.Minor.Patch. OutSystems Platform Server versions require minimum Patch versions of RabbitMQ Server and Erlang.
 
 You can upgrade to the latest Patch of RabbitMQ Server provided that:
 
@@ -171,13 +171,13 @@ The following are the minimum Patch versions of RabbitMQ Server and Erlang per P
 * From Platform Server 11.9.0 to 11.13.1: RabbitMQ Server 3.8.3 and Erlang version 22.3
 * For Platform Server 11.8.2 and lower: RabbitMQ Server 3.7.7 and Erlang version 20.3
 
-During Platform Server installation, OutSystems provides a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Platform Server includes the Open Source version of RabbitMQ. The commercial version of RabbitMQ is required for full FIPS compliance.
+During Platform Server installation, OutSystems provides a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Platform Server includes the open-source version of RabbitMQ. The commercial version of RabbitMQ is required for full FIPS compliance.
 
 Alternatively, you can use an existing RabbitMQ Server and Erlang installation if it fulfills the same version requirements.
 
 ## Amazon EC2 considerations
 
-OutSystems can run on Amazon EC2 instances. Each instance must fulfill one the following requirements:
+OutSystems can run on Amazon EC2 instances. Each instance must fulfill one of the following requirements:
 
 * The `Amazon EC2Launch` service must be running, available from Amazon EC2Launch v2 (starting with Platform Server 11.32.0)
 
@@ -340,7 +340,7 @@ Before setting up Service Studio make sure that your computer meets the followin
 * Microsoft Windows Server 2019
 * Microsoft Windows Server 2016
 
- OutSystems only supports Windows and macOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple respectively.
+ OutSystems only supports Windows and macOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple, respectively.
 
 #### Required software
 
@@ -363,7 +363,7 @@ The installation requirements for Integration Studio are as follows:
 
 Limitations:
 
-* The touch feature of touch screen devices isn't supported, however, you can use touch screen devices with keyboard and mouse.
+* The touch feature of touch screen devices isn't supported. However, you can use touch screen devices with a keyboard and mouse.
 
 #### Operating System
 
@@ -395,8 +395,8 @@ Use the most current stable version of the following browsers:
 
 ### Progressive Web Apps
 
-* Default browser for latest stable version of Android
-* Default browser for latest stable version of iOS
+* Default browser for the latest stable version of Android
+* Default browser for the latest stable version of iOS
 
 ### Mobile App packages
 

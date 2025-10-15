@@ -20,3 +20,8 @@ swap:
   SS: Service Studio
   KeyCloak: Keycloak
   'paas': OutSystems Cloud
+# Per-rule ignores: URLs, inline code, fenced code blocks.
+ignore:
+  - 'https?://\S+'          # URLs
+  - '`[^`]+`'               # inline code
+  - '```[\s\S]*?```'        # fenced code blocks with backticks

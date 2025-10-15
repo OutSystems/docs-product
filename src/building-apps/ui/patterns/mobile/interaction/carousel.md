@@ -68,7 +68,7 @@ The Carousel Pattern is based on the Splide.js library (v3). For more informatio
 
 1. Add your content to the **Carousel Items** placeholder. 
 
-    In this example, the List is deleted and 3 Image widgets are added.  
+    In this example, the List is deleted, and 3 Image widgets are added.  
 
     ![Example of adding three Image widgets to the Carousel Items placeholder in Service Studio](images/carousel-addimages-ss.png "Adding Image Widgets to Carousel") 
 
@@ -105,11 +105,160 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Carousel
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|Initialized: Optional | Event triggered after the Carousel is initialized. | 
-|OnSlideMoved: Optional | Event triggered after the Carousel slides move.  | 
+|Initialized: Optional | Event triggered after the Carousel is initialized. |
+|OnSlideMoved: Optional | Event triggered after the Carousel slides move.  |
 
 ## Compatibility with other patterns
 
-Avoid using the Carousel inside patterns with swipe events, such as the Tabs and Stacked Cards Patterns.
+Avoid using the Carousel inside patterns with swipe events, such as the **Tabs** and **Stacked Cards** patterns.
+
+## Accessibility – WCAG 2.2 AA compliance
+
+By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. You must manually update it to fix the following issues:
+
+* **Pagination controls** must meet the minimum target size of 24 px, making them easier to use for people with motor impairments or situational challenges.
+
+* **Images can’t have the `tabpanel` role**. This role is only valid on containers, such as `<div>` or `<section>`, associated with a tab in a tablist.
+
+* **Lists inside the Carousel** must have the correct roles so that screen readers interpret them properly.
+
+Updating the Carousel ensures the pattern is more accessible for everyone, including people with visual or motor impairments.
+
+### Fix pagination controls
+
+1. In **Service Studio**, go to the **Interface** tab.
+
+1. In the **Themes** folder, double-click the **Style Sheet** of your theme.
+
+    ![Example of selecting a Theme in Interface tab in Service Studio](images/carousel-theme-ss.png "Selecting Theme in Interface Tab")
+
+1. Add the following CSS code to **`.splide__pagination__page`** selector:
+
+    ```css
+    .splide__pagination__page {
+        height: 12px;
+        margin: 6px;
+        width: 12px;
+    }
+    ```
+    
+    ![Example of adding the CSS inside the Theme in Service Studio](images/carousel-theme-cssfix-ss.png "Adding the CSS inside the Theme")
+
+1. Adjust the values if needed to change the dot size, but make sure the clickable area is **at least 24px**.
+
+    <div class="info" markdown="1">
+
+     The original width and height of the dots was **8px**. In this update, the dots are enlarged to improve visibility and reduce extra spacing between them.
+
+     </div>
+
+1. Publish the module.
+
+### Remove the incorrect role from images
+
+<div class="info" markdown="1">
+
+This issue occurs **only when you use static images directly inside the Carousel**, such as in the example provided in the OutSystems UI Style Guide Preview. The Carousel script assigns roles to its direct child elements. By enclosing each image in a container, the image is no longer a direct child, preventing the incorrect role from being applied.
+
+</div>
+
+1. In **Service Studio**, go to the **Interface** tab, and select **Widget Tree**.
+
+1. In the **Carousel** pattern, search for the **CarouselItems** placeholder.
+
+   ![Screenshot of how Carousel structures is shown Widget Tree in Service Studio](images/carousel-search-carouselitemsplaceholder-ss.png "Searching for CarouselItems placeholcer")
+
+1. Right-click an **Image** widget, and select **Enclose in Container**.
+
+   ![Example of how to enclose Image in Container in Service Studio](images/carousel-encloseimagecontainer-ss.png "Enclosing Image in Container")
+
+1. Repeat step 3 for every **Image** inside the Carousel.
+
+1. Publish the module.
+
+### Assign list roles in the Carousel
+
+1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the Carousel with a list.
+
+1. In the **Screen/Block** properties, select the **OnReady** event. A client action is created.
+
+    ![Example of how to add an OnReady Event to Widget/Block in Service Studio](images/carousel-addonready-ss.png "Adding OnReady Event")
+
+1. In the **OnReady** client action, drag a **JavaScript** node to the flow, from the left panel.
+
+   ![Example of how to add a JS node to Client Action in Service Studio](images/carousel-draganddropjs-ss.png "Adding a JS node to Client Action")
+
+1. In the **JavaScript** node, add an input parameter named **WidgetId** (type **Text**).
+
+   ![Example of how to create an input parameter in Service Studio](images/carousel-createwidgetid-ss.png "Creating a WidgetId input parameter")
+
+1. Set **WidgetId** to the Carousel block/widget ID (for example, `Carousel.Id`).
+
+    ![Example of how to set the WidgetId parameter to Carousel widget/block Id in Service Studio](images/carousel-setwidgetid-ss.png "Setting WidgetId to the Carousel block widget Id")
+
+1. Add the following script to assign the correct roles:
+
+    ```javascript
+    // Setup variables
+    const carouselObj = document.getElementById($parameters.WidgetId);
+    if (!carouselObj) {
+        return;
+    }
+    let listEl = carouselObj.querySelector('.osui-carousel .list');
+    let retryHandle;
+
+    function applyRoles(currListEl) {
+        if (!currListEl) return;
+        currListEl.setAttribute('role', 'list');
+
+        // Apply to direct children only
+        const items = currListEl.querySelectorAll(':scope > *');
+        items.forEach((item) => {
+            item.setAttribute('role', 'listitem');
+        });
+    }
+
+    function waitListRender() {
+        if (listEl && !listEl.classList.contains('list-loading') && listEl.children.length) {
+            applyRoles(listEl);
+            if (retryHandle) {
+                clearTimeout(retryHandle);
+            }
+        } else {
+            retryHandle = setTimeout(waitListRender, 100);
+        }
+    }
+
+    // First try the OutSystems List
+    if (listEl) {
+        waitListRender();
+    } else {
+        // Fallback to static Splide list
+        listEl = carouselObj.querySelector('.osui-carousel .splide__list');
+        if (listEl) {
+            applyRoles(listEl);
+        }
+    }
+    ```
+
+1. Confirm the **List** has `disable-virtualization` set to `True`.
+
+1. Confirm the **List** applies the `list-loading` class based on the query’s `IsDataFetched` state.
+
+   ![Example of how to set the list-loading class and disable-virtualization to List element in Service Studio](images/carousel-listsettings-ss.png "Setting list-loading class and disable-virtualization to List element")
+
+1. Click **Done**, then publish the module and test it.
+
+### Result
+
+* The Carousel pagination dots now have a minimum **24px** clickable area.
+
+* The Carousel script applies the `tabpanel` role only to containers. Images don’t receive a role, as expected.
+
+* If you use a list in the Carousel, it now has the correct roles assigned.
+
+* Lists inside the Carousel are announced correctly by screen readers with **list** and **listitem** roles.
+
+Test the pattern in your app to confirm the update.

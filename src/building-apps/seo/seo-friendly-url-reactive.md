@@ -54,7 +54,7 @@ There are many strategies for optimizing your Web app for search engines. At Out
 
 <div class="info" markdown="1">
 
-Different OutSystems tools enable you to complete different tasks. For example, use **Service Center** to create SEO-friendly versions of URLs, and manage site rules and redirects. Use **Service Studio** to edit custom URLs in the properties of each screen.
+Different OutSystems tools enable you to complete different tasks. For example, use **Service Center** to create SEO-friendly versions of URLs, and manage [site rules](site-rules.md) and redirects. Use **Service Studio** to edit custom URLs in the properties of each screen.
 
 </div>  
 

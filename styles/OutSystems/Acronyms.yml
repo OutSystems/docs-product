@@ -74,3 +74,4 @@ exceptions:
   - ZIP
   - VPN
   - IIS
+scope: ~text.frontmatter.figma

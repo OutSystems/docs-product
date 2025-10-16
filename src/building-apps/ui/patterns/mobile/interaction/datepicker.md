@@ -54,7 +54,7 @@ In this example, the user selects a date from the calendar, the date is saved in
 
 1. From the Toolbox, drag the Date Picker widget into the Main Content area of your application's screen.
 
-    By default, the Date Picker contains an **Input** widget (type Text).
+    By default, the Date Picker contains an **Input** widget (type Date Time).
 
     ![Dragging the Date Picker widget from the toolbox into the main content area of the application screen](images/datepicker-drag-ss.png "Dragging Date Picker Widget to Screen")
 
@@ -64,7 +64,7 @@ In this example, the user selects a date from the calendar, the date is saved in
 
     ![Creating a new variable for the Date Picker by selecting the Input widget and accessing the Properties tab](images/datepicker-var-ss.png "Creating a New Variable for Date Picker")
 
-1. Enter a name for the variable (in this example **DateTimeVar**) and select **Date Time** as the **Data Type**. This variable stores the date selected by the user.
+1. Enter a name for the variable (in this example **DateTimeVar**). This variable stores the date selected by the user.
 
     ![Entering a name for the Date Picker variable and selecting Date Time as the data type](images/datepicker-varname-ss.png "Naming the Date Picker Variable")
 

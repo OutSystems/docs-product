@@ -11,16 +11,20 @@ indicators:
   - '.'
 exceptions:
 # Product
+  - Center
+  - Conversion Assessment Tool
+  - Integration Builder
   - Service
   - Studio
-  - Center
   - LifeTime
   - Technical Preview
   - O11
   - ODC
   - OutSystems
   - Portal
-  - Conversion Assessment Tool
+  - Workflow Builder
+  - AI Mentor Studio
+  - AIMS
 # Concepts
   - Action
   - Activity
@@ -38,6 +42,7 @@ exceptions:
   - Entities
   - Exception
   - Identifier
+  - IT
   - Library
   - Local
   - Method

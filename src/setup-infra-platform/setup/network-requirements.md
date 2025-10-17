@@ -92,7 +92,7 @@ In case you are using a hybrid infrastructure where some part is in OutSystems C
 
 <div class="info" markdown="1">
 
-Check [here](configure-http-proxy.md) the necessary configurations if you're working on a network where communications to the Internet need to go through an HTTP proxy.
+Check the [HTTP proxy configuration guide](configure-http-proxy.md) for the necessary configurations if you're working on a network where communications to the Internet need to go through an HTTP proxy.
 
 </div>
 
@@ -103,7 +103,7 @@ The following table lists the necessary connectivity between the developers work
 |Service Studio and Integration Studio|Front-End|443|TCP|<ul>Deploy applications to the environment</ul>|
 |Service Studio|\*.outsystems.com<br/>outsystems.com|443|TCP| Service Studio connects to `outsystems.com` and several sub-domains to achieve the following: <ul><li>[AI-Assisted Development](../../building-apps/logic/ai-assisted-dev.md) </li><li> What's New! - The What's New dialog shows you the latest features added.</li> <li>Update Service Studio automatically</li><li>Telemetry</li><li>Submit feedback and errors via Service Studio</li> <li>Forge - The Forge bell icon lets you know if there are updates for installed components. </li><li>Application creation when creating from an existing sample app</li><li>Shows related documentation links when using help.</li></ul>|
 |Service Studio|s3.amazonaws.com |443|TCP|<ul><li>Forge components - To install Forge components from the Forge tab or from the Forge website.</li><li>Access app templates while creating apps from scratch.</li></ul>|
-|Service Studio| fonts.googleapis.com |443|TCP|<ul>Used when changing the theme when using the Theme Editor both at development and runtime.</ul>
+|Service Studio| fonts.googleapis.com |443|TCP|<ul>Used when changing the theme when using the Theme Editor both at development and runtime.</ul>|
 |Service Studio| outsystems.eu.qualtrics.com|443|TCP|<ul>Used to run surveys inside Service Studio. This applies when connecting to a personal environment only and to free editions.</ul>|
 
 ### Network latency
@@ -120,10 +120,10 @@ Alternatively, ensure that the front ends of the environments used with Integrat
 
 The Integration Builder uses the environments' public DNS hostname to communicate.
 
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-integrationbuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
-Environment Front-End|integrationbuilder.outsystems.com|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+|Source|Destination|Port|Protocol|Notes|
+|---|---|---|---|---|
+|integrationbuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221|
+|Environment Front-End|integrationbuilder.outsystems.com|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221|
 
 It's not mandatory to have Integration Builder connected to **all your environments**. Only a development environment is mandatory. However, there are a few limitations on environments that are not connected to Integration Builder:
 
@@ -145,9 +145,9 @@ Alternatively, ensure that the front ends of the environment used with Workflow 
 
 The Workflow Builder uses the environment's public DNS hostname to communicate.
 
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-workflowbuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+|Source|Destination|Port|Protocol|Notes|
+|---|---|---|---|---|
+|workflowbuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221|
 
 To use [IT user governance based on LifeTime teams](https://success.outsystems.com/Documentation/Workflow_Builder/How_to_set_up_Workflow_Builder/How_to_set_up_the_users_governance_model), Workflow Builder needs to be able to connect directly to LifeTime via TCP using HTTPS, port 443.
 
@@ -164,28 +164,50 @@ You need to have bidirectional secure communication between the front-end of the
 
 ### AI Mentor Studio
 
-To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../monitor-and-troubleshoot/manage-tech-debt/how-works.md). 
+To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../monitor-and-troubleshoot/manage-tech-debt/how-works.md).
 
 The network requirements depend on the authentication method and Probe version you use to access AI Mentor Studio.
 
-**OutSystems account authentication**
+#### OutSystems account authentication
 
 If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable, depending on the Probe version:
 
-Probe version|Source|Destination|Port|Protocol
----|---|---|---|---
-Probes 4.2 and above | LifeTime Front-End | aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP|
-Probes 4.0 and 4.1 | LifeTime Front-End | architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard |443 | TCP|
+|Probe version|Source|Destination|Port|Protocol|
+|---|---|---|---|---|
+|Probes 4.2 and above | LifeTime Front-End | aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP|
+|Probes 4.0 and 4.1 | LifeTime Front-End | architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard |443 | TCP|
 
-**IT User authentication**  
+#### IT User authentication
 
 If you access AI Mentor Studio using IT User authentication, AI Mentor Studio must be able to connect to the environment where you want to perform code analysis. Hence, besides ensuring the destination endpoint (LifeTime Front-End) is reachable, you also need to ensure that the front ends of the environment where you want to perform code analysis accept inbound connections from `aimentorstudio.outsystems.com`.  
 
 Alternatively, ensure that the front ends of the environment used with AI Mentor Studio accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Outbound communication** 
-aimentorstudio.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
-aimentorstudio.outsystems.com|LifeTime Front-End|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
+|Source|Destination|Port|Protocol|Notes|
+|---|---|---|---|---|
+|LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Outbound communication**|
+|aimentorstudio.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145|
+|aimentorstudio.outsystems.com|LifeTime Front-End|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145|
 
+### Log streaming { #log-streaming }
+
+For environments with [log streaming](../../monitor-and-troubleshoot/log-streaming/intro.md) enabled, logs are streamed from OutSystems to your APM tool through the OutSystems Data platform.
+
+When your APM tool is hosted in a private network or behind a firewall, you can allowlist the Data platform egress IP addresses to restrict inbound traffic, removing the need to make your APM tool publicly accessible. For more information, refer to [log streaming prerequisites](../../monitor-and-troubleshoot/log-streaming/intro.md#prerequisites).
+
+Use the following table to identify the Data platform region that serves your environment's region and the corresponding IP addresses to allowlist in your firewall or reverse proxy.
+
+| Customer regions | Data platform region | Data platform IPs |
+| --- | --- | --- |
+| US East (North Virginia), US West (Oregon), US East (Ohio), CA (Canada Central) | US East (North Virginia) | 54.89.107.154, 54.84.58.61, 35.172.177.93 |
+| South America (São Paulo) | South America (São Paulo) | 54.94.69.128, 18.229.244.40, 15.229.64.9 |
+| Europe (Frankfurt), Europe (Ireland), Europe (London), Africa (Cape Town), Middle East (Bahrain) | Europe (Frankfurt) | 3.73.166.181, 52.59.51.255, 18.194.166.197 |
+| Asia Pacific (Singapore), Asia Pacific (Hong Kong), Asia Pacific (Seoul), Asia Pacific (Jakarta), Asia Pacific (Sydney), Asia Pacific (Mumbai) | Asia Pacific (Singapore) | 52.76.74.134, 18.143.210.11, 52.74.33.192 |
+
+<div class="info" markdown="1">
+
+OutSystems tries to ensure that these IP addresses remain unchanged as much as possible, however, the list of public IPs may change over time due to infrastructure updates, though such changes would be rare and unexpected.
+
+If you'd like to be informed of any IP address changes, please subscribe to updates to the [OutSystems status page](https://status.outsystems.com/).
+
+</div>

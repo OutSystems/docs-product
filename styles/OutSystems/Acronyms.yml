@@ -21,6 +21,7 @@ exceptions:
   - CSV
   - CRUD
   - DEV
+  - DNS
   - DOM
   - FAQ
   - GDB

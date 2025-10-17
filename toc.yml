@@ -1227,6 +1227,7 @@
         - href: migration-to-odc/code-patterns/arch-app-theme.md
         - href: migration-to-odc/code-patterns/arch-not-mapped.md
         - href: migration-to-odc/code-patterns/arch-internal-service-action.md
+        - href: migration-to-odc/code-patterns/elem-unsupported-delete-rule.md
         - href: migration-to-odc/code-patterns/arch-extension.md
         - href: migration-to-odc/code-patterns/arch-system-element.md
         - href: migration-to-odc/code-patterns/arch-user-mng-elements.md

@@ -28,6 +28,7 @@ exceptions:
 # Concepts
   - Action
   - Activity
+  - Agents
   - Aggregate
   - Ajax
   - App
@@ -109,6 +110,7 @@ exceptions:
   - Apple Developer
   - Azure
   - Cascading Style Sheets
+  - CSS
   - Chrome
   - Code
   - Docker
@@ -128,4 +130,7 @@ exceptions:
 # Industry
   - IP
   - FAQ
+  - TLS
+  - AI
+  - DNS
   - TLS

@@ -1257,7 +1257,6 @@
         - href: migration-to-odc/code-patterns/data-large-binaries-validation.md
         - href: migration-to-odc/code-patterns/infra-self-managed.md
         - href: migration-to-odc/code-patterns/infra-additional-pipelines.md
-    - href: migration-to-odc/prepare/reference.md
     - href: migration-to-odc/known-issues.md
 # Reference
 - href: ref/intro.md

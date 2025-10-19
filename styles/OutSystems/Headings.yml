@@ -106,6 +106,7 @@ exceptions:
   - List Item
 # Third Party
   - Active Directory
+  - Amazon Kendra
   - Android
   - Apple Developer
   - Azure

@@ -15,6 +15,7 @@ exceptions:
   - APK
   - ASP
   - AWS
+  - BAPI
   - CDN
   - CPU
   - CSS
@@ -31,6 +32,7 @@ exceptions:
   - HTML
   - HTTP
   - HTTPS
+  - IAM
   - IDE
   - IPA
   - JSON
@@ -39,6 +41,7 @@ exceptions:
   - MABS
   - NET
   - NTLM
+  - NULL
   - ODC
   - OKTA
   - OML
@@ -68,6 +71,7 @@ exceptions:
   - URL
   - USB
   - UTF
+  - UUID
   - WSDL
   - XML
   - XSS

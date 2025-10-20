@@ -164,11 +164,17 @@ Currency | Phone Number | Converts both operands to Text.
 
 ## Like
 
-This operator is only valid in the Filter Condition Editor of an aggregate and allows you to compare results. It has the same semantic as the `LIKE` keyword in SQL. You can use the `LIKE` operator to compare with an expression. The advantage of `LIKE` is the fact that it allows you to use the wildcard character `%` that represents one or more characters.
+The `Like` operator compares a text string to a pattern using the following wildcard characters:
 
-For example, if you want to select the Identifier for every Customer that contains "James" in its name, in any position of the string, the following filter condition allows you to get this information:
+`%` (percent sign): Matches zero or more characters.
 
-`name LIKE '%James%'`
+`_` (underscore): Matches a single character.
+
+Examples:
+
+`User.Name Like "%James%"`
+
+`Product.Code Like "A_01"`
 
 The following are the data types allowed for LIKE operator:
 

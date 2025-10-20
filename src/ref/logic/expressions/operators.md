@@ -20,7 +20,6 @@ topic:
 
 # Operators
 
-
 This is the reference document for the operators you can use in an OutSystems [expression](intro.md).
 
 ## Numeric
@@ -166,15 +165,13 @@ Currency | Phone Number | Converts both operands to Text.
 
 The `Like` operator compares a text string to a pattern using the following wildcard characters:
 
-`%` (percent sign): Matches zero or more characters.
-
-`_` (underscore): Matches a single character.
+* `%` (percent sign): Matches zero or more characters.
+* `_` (underscore): Matches a single character.
 
 Examples:
 
-`User.Name Like "%James%"`
-
-`Product.Code Like "A_01"`
+* `User.Name Like "%James%"`
+* `Product.Code Like "A_01"`
 
 The following are the data types allowed for LIKE operator:
 

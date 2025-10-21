@@ -84,8 +84,6 @@ When performing massive operations, use SQL queries instead of using a For Each 
 
 1. If you don't need to retrieve all entity attributes, consider replacing the Get entity action with an Aggregate using an Identifier parameter. OutSystems optimizes the query to retrieve the required attributes.
 
-1. If you don't need to update all entity attributes, consider replacing the Update entity action with an SQL Query using an UPDATE SET statement, setting just the required attributes. Opposite to the UPDATE SET statement, the Update entity action updates all attributes—the ones you don't need to update are set to the same value they already have in the database.
-
 1. If you need to delete multiple records, use an SQL Query with a single Delete instead of a For Each followed with a Delete operation for each record.
 
 1. Use Update instead of a Delete followed by a Create.

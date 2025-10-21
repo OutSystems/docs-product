@@ -27,6 +27,8 @@ This article only applies to customers with access to the App Conversion Kit.
 
 </div>
 
+![Diagram showing the steps to execute code conversion using the tool.](images/execute-code-conversion-diag.png "Code Conversion Process Diagram")
+
 This article explains how to convert O11 code to ODC using the app conversion console available in the ODC portal.
 
 ## Prerequisites
@@ -103,7 +105,7 @@ If you are unable to fix the issue, contact OutSystems Support for guidelines. M
 
 * The troubleshooting data file, **troubleshooting.zip**, that you can obtain by clicking the ellipsis menu (**...**) > **Export source files** on the conversion details page:
 
-    ![Downloading the troubleshooting data from the App Conversion console](images/execute-tool-export-src-files.png "Export source files")
+    ![Screenshot of the option to export source files in the conversion process with errors.](images/execute-tool-export-src-files.png "Export Source Files")
 
     <div class="info" markdown="1">
 

@@ -19,6 +19,8 @@ coverage-type:
 
 # Convert O11 architecture to ODC architecture
 
+![Diagram showing the preparation steps for converting O11 app architecture to ODC architecture.](images/prep-convert-app-arch-diag.png "Preparation for Converting O11 to ODC Architecture")
+
 To map the existing O11 architecture to ODC architecture, OutSystems recommends that you analyze your existing O11 app architecture blueprint and perform additional refactoring and modifications. Keep iterating the architecture until you arrive at the final ODC architecture blueprint.
 
 Targeting an ODC architecture ensures that once the O11 app is converted to ODC apps and libraries, you can immediately benefit from ODC cloud-native capabilities.
@@ -44,7 +46,7 @@ Identify your application's bounded contexts by grouping related business concep
 * Concepts cohesion or clustering due to dependencies between concepts
 * Common language of concepts
 
-![Diagram illustrating the process of identifying bounded contexts in an O11 app architecture](images/identify-bounded-contexts-diag.png "Identify Bounded Contexts Diagram")
+![Diagram illustrating the process of identifying bounded contexts in an O11 app architecture.](images/identify-bounded-contexts-diag.png "Identify Bounded Contexts Diagram")
 
 You must also identify reusable components and integration with external components.
 
@@ -60,7 +62,7 @@ Before building your architecture, you must understand your organizational struc
 * ensure release cycle independence for different teams, and
 * reduce complexity for developers, reducing cognitive load.
 
-![Diagram showing how to identify business owners and sponsors for ODC app architecture](images/identify-business-owners-sponsors-diag.png "Identify Business Owners and Sponsors Diagram")
+![Diagram showing how to identify business owners and sponsors for ODC app architecture.](images/identify-business-owners-sponsors-diag.png "Identify Business Owners and Sponsors Diagram")
 
 Follow these best practices as you build your ODC app architecture:
 
@@ -78,29 +80,29 @@ Step 4: Map bounded contexts to apps and libraries
 
 Next, you map the bounded contexts to ODC apps and libraries.
 
-![Diagram mapping bounded contexts to ODC apps and libraries in the conversion process](images/map-to-odc-applications-libraries-diag.png "Map Bounded Contexts to ODC Apps and Libraries Diagram")
+![Diagram mapping bounded contexts to ODC apps and libraries in the conversion process.](images/map-to-odc-applications-libraries-diag.png "Map Bounded Contexts to ODC Apps and Libraries Diagram")
 
 In this use case, the B2C domain must be mapped to two ODC apps due to the presence of a mobile app. Hence, further decoupling of the architecture is required.
 
-![Diagram depicting the separation of a B2C domain into mobile and web apps for ODC](images/split-into-web-app-mobile-diag.png "Split into Mobile and Web App Diagram")
+![Diagram depicting the separation of a B2C domain into mobile and web apps for ODC.](images/split-into-web-app-mobile-diag.png "Split into Mobile and Web App Diagram")
 
 For mapping the core services to libraries, you must decouple the architecture further as different bounded contexts have different business owners and sponsors, and the domains are strongly coupled together.
 
-![Diagram indicating the need for further refactoring of core services for ODC architecture](images/additional-refactoring-needed-diag.png "Further Refactor Core Services Diagram")
+![Diagram indicating the need for further refactoring of core services for ODC architecture.](images/additional-refactoring-needed-diag.png "Further Refactor Core Services Diagram")
 
 Now, redesign the architecture so that the domains are loosely coupled.
 
-![Diagram illustrating loosely coupled domains after refactoring for ODC architecture](images/loosely-related-domains-diag.png "Loosely Coupled Domains Diagram")
+![Diagram illustrating loosely coupled domains after refactoring for ODC architecture.](images/loosely-related-domains-diag.png "Loosely Coupled Domains Diagram")
 
 Next, map the foundation apps web theme, mobile theme, and patterns to libraries.
 
-![Diagram showing the mapping of foundation apps to libraries in ODC architecture](images/foundation-apps-to-libraries-diag.png "Foundation Apps to Libraries Diagram")
+![Diagram showing the mapping of foundation apps to libraries in ODC architecture.](images/foundation-apps-to-libraries-diag.png "Foundation Apps to Libraries Diagram")
 
 Step 5: Design the ODC architecture blueprint
 
 Here's the final ODC architecture blueprint where the bounded contexts are mapped to apps and libraries:
 
-![Diagram of the final ODC architecture blueprint with bounded contexts mapped to apps and libraries](images/final-odc-architecture-diag.png "Final ODC Architecture Blueprint Diagram")
+![Diagram of the final ODC architecture blueprint with bounded contexts mapped to apps and libraries.](images/final-odc-architecture-diag.png "Final ODC Architecture Blueprint Diagram")
 
 ## Additional resources
 

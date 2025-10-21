@@ -40,7 +40,7 @@ Before you start, ensure the following:
 
 ## Adjust O11 apps for ODC conversion
 
-![Diagram showing the Adapt O11 apps for ODC conversion step in the conversion process.](images/prepare-adapt-o11-apps-diag.png "Adapt O11 apps for ODC conversion diagram")
+![Diagram showing the Adapt O11 apps for ODC conversion step in the conversion process.](images/prepare-make-o11-apps-diag.png "Adapt O11 apps for ODC conversion diagram")
 
 <div class="info" markdown="1">
 

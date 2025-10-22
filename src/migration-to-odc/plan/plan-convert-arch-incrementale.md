@@ -19,8 +19,6 @@ coverage-type:
 
 # Convert O11 architecture to ODC architecture
 
-![Diagram showing the preparation steps for converting O11 app architecture to ODC architecture.](images/prep-convert-app-arch-diag.png "Preparation for Converting O11 to ODC Architecture")
-
 To map the existing O11 architecture to ODC architecture, OutSystems recommends that you analyze your existing O11 app architecture blueprint and perform additional refactoring and modifications. Keep iterating the architecture until you arrive at the final ODC architecture blueprint.
 
 Targeting an ODC architecture ensures that once the O11 app is converted to ODC apps and libraries, you can immediately benefit from ODC cloud-native capabilities.

@@ -19,9 +19,7 @@ coverage-type:
 
 # Map O11 domains to ODC apps and libraries
 
-![Diagram showing the steps to plan app conversion from O11 to ODC architecture.](images/prep-map-app-arch-diag.png "Plan App Conversion Steps")
-
-In ODC, you can create apps or libraries. An app can be a web, tablet, or mobile app. An ODC app encapsulates business concepts, UI, logic, and data of a specific business context. The ODC apps are loosely coupled and have independent lifecycles. 
+In ODC, you can create apps or libraries. An app can be a web, tablet, or mobile app. An ODC app encapsulates business concepts, UI, logic, and data of a specific business context. The ODC apps are loosely coupled and have independent lifecycles.
 
 Libraries are a collection of reusable components used across multiple apps. They are used to implement business-agnostic components such as themes, integration wrappers, and logic utilities. They are strongly coupled with ODC apps and are packaged into a version included inside the application container.
 

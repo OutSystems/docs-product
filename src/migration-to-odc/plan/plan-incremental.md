@@ -17,8 +17,6 @@ coverage-type:
 
 # Adapting O11 architecture and creating an ODC blueprint
 
-![Diagram showing the conversion of O11 app components to ODC, illustrating the mapping of various modules such as Sales App, InBound_API, Data_Sync, Product_CS, Catalog_CS, Order_CS, Customer_CS, Product_IS, Order_IS, Customer_IS, and Theme_Th.](images/prep-adapting-app-arch-diag.png "Adapting O11 Architecture for ODC")
-
 Preparing your apps for conversion to OutSystems Developer Cloud (ODC) is essential to benefit from the cloud-native architecture of ODC. ODC offers a modular, scalable environment that enhances app performance and resilience. Planning the conversion early can ensure a smoother transition, minimize business disruption, and position your apps for long-term success in a modern, cloud-native infrastructure.
 
 The conversion process consists of phases, including creating the ODC blueprint, mapping it from O11 apps, and preparing the O11 architecture.

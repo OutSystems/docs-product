@@ -96,3 +96,4 @@ If you are validating an identified weak dependency on a producer asset in a dif
 ![Dependency details with Resolve in ODC option.](images/migration-plan-dependency-details-at.png "Dependency details")
 
 The **Resolve in ODC** option is only available when validating producer assets, and is not available when validating consumer assets.
+

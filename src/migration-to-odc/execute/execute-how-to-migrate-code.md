@@ -27,8 +27,6 @@ This article only applies to customers with access to the App Conversion Kit.
 
 </div>
 
-![Diagram showing the steps to execute code conversion using the tool.](images/execute-code-conversion-diag.png "Code Conversion Process Diagram")
-
 This article explains how to convert O11 code to ODC using the app conversion console available in the ODC portal.
 
 ## Prerequisites

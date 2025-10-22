@@ -77,3 +77,4 @@ Go through the assessment report to validate its findings:
     If you don’t run a new assessment manually, the Conversion Assessment Tool automatically queues a new assessment to check for changes based on the defined [code assessment cycle](../setup-assessement-tool.md#cycles).
 
 Repeat these steps for each pattern, assessing the refactoring effort to [prepare for the app conversion](../prepare/prep-refactor-o11-apps.md).
+

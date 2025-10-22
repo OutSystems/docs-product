@@ -20,7 +20,7 @@ outsystems-tools:
 
 <div class="info" markdown="1">
 
-This article only applies to customers with access to the App Conversion Kit. 
+This article only applies to customers with access to the App Conversion Kit.
 
 </div>
 

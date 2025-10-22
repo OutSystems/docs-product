@@ -23,6 +23,8 @@ coverage-type:
 
 This article only applies to customers with access to the App Conversion Kit.
 
+![Diagram showing the steps to migrate data using the tool.](images/execute-migrate-data-tool-diag.png "Migrate data using the tool Diagram")
+
 </div>
 
 This article explains how to migrate O11 data and end users to ODC using the app conversion console available in the ODC portal.

@@ -42,7 +42,7 @@ You may need to configure the following:
 
 * In O11, Site Properties that are set as **secret** are converted as non-secret values. You must set these values as Settings in ODC and manually set them as Secret. To set app Configurations as secrets, refer to [Set as a secret](https://success.outsystems.com/documentation/outsystems_developer_cloud/security_of_outsystems_developer_cloud/set_as_secret/).
 
-* To configure custom domains, refer to [Configure custom domains](https://success.outsystems.com/documentation/outsystems_developer_cloud/managing_outsystems_platform_and_apps/configure_custom_domains_for_apps/). 
+* To configure custom domains, refer to [Configure custom domains](https://success.outsystems.com/documentation/outsystems_developer_cloud/managing_outsystems_platform_and_apps/configure_custom_domains_for_apps/).
 
 * Configure the access to external databases by referring to [Integrate with external data sources](https://success.outsystems.com/documentation/outsystems_developer_cloud/integration_with_external_systems/integrate_with_external_data_sources/).
 

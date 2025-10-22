@@ -60,7 +60,7 @@ If you already created [conversion plans](plan-define-migration-plans.md), follo
 
 1. Select the plan you want to assess from the **Conversion plans** filter.
 
-![Screen showing an assessment report in the Conversion Assessment Tool.](images/assess-report-at.png "Assessment report in Conversion Assessment Tool")
+    ![Screen showing an assessment report in the Conversion Assessment Tool.](images/assess-report-at.png "Assessment report in Conversion Assessment Tool")
 
 ## Validate findings { #validate-findings }
 
@@ -68,7 +68,7 @@ Go through the assessment report to validate its findings:
 
 1. Select a pattern from the **Code**, **Data**, or **Infrastructure** patterns lists.
 
-    The list of findings of that pattern displays on the right side. 
+    The list of findings of that pattern displays on the right side.
 
 1. Select **Learn more** to access the code pattern documentation that guides you on how to solve it.
 

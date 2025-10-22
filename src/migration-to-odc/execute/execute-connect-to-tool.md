@@ -51,6 +51,8 @@ To connect to the Conversion Assessment Tool, follow these steps:
 
     * **Authentication Token**: The authentication token of the service account used to access the LifeTime environment.
 
+      ![Configuration screen for O11 LifeTime with fields for URL and Authentication Token](images/configuration-lifetime-pl.png "O11 LifeTime Configuration")
+
     For more information about the Conversion Assessment Tool and these values, refer to [Set up the Conversion Assessment Tool](../setup-assessement-tool.md).
 
 1. Click **Save**.

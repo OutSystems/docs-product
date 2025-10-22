@@ -2,7 +2,7 @@
 guid: fac3a513-0173-496c-b617-17df271fe978
 locale: en-us
 summary: This article describes the permission model of the Conversion Assessment Tool.
-figma: 
+figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?m=auto&node-id=3238-3629&t=ESjXytEWWy55qiqt-1
 coverage-type:
   - understand
 topic: 

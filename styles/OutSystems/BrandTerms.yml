@@ -20,3 +20,4 @@ swap:
   SS: Service Studio
   KeyCloak: Keycloak
   'paas': OutSystems Cloud
+scope: ~text.frontmatter.theme

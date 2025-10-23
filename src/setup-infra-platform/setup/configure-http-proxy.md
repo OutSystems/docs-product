@@ -22,6 +22,7 @@ coverage-type:
 This article explains how to configure a HTTP proxy server on your local computer to be used by Service Studio. This applies when developers are working on a network where communications to the Internet need to go through an HTTP proxy.
 
 To configure a HTTP proxy server:
+
 1. [Configure the proxy server in the operating system](#configure-proxy-OS)
 1. [Configure the proxy authentication in Service Studio](#configure-proxy-ss)
 
@@ -31,7 +32,7 @@ Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in 
 
 ### Windows setup
 
-1. Click the **Start** icon and select **Settings**. 
+1. Click the **Start** icon and select **Settings**.
 
     ![Start menu with Settings option highlighted for configuring HTTP proxy in Windows](images/windows-http-proxy-settings.png "Windows HTTP Proxy Settings")
 
@@ -45,7 +46,7 @@ Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in 
 
     1. Enable the **Use a proxy server** toggle.
 
-    1. In the **Address** field, enter ``http=example.net:9090;https=example.net:9090``replacing ``example.net`` with your proxy server name or IP address and ``9090`` with your proxy server port. 
+    1. In the **Address** field, enter ``http=example.net:9090;https=example.net:9090``replacing ``example.net`` with your proxy server name or IP address and ``9090`` with your proxy server port.
 
     1. Leave the **Port** field empty.
 

@@ -32,7 +32,6 @@ If you have modules ready for deployment, you can use the Deploy All feature in 
 
 ![Screenshot of the Deploy All feature in the OutSystems Service Center](images/deploy-sc.png "Service Center Deploy All Feature")
 
-
 ## Modules deployment improvements
 
 After upgrading to Platform Server 11.19.0 or later, you have the option to  use the Deploy All feature, which includes the following key improvements:
@@ -43,7 +42,6 @@ After upgrading to Platform Server 11.19.0 or later, you have the option to  use
 
 * As you take advantage of Progressive Upgrades to reduce the Platform Server upgrades times, this feature allows you to upgrade more frequently, enabling you to use the most recent features and improvements.
 
-
 ## During the modules deployment step
 
 The  modules deployment process must be complete before you perform the following operations for the modules being deployed:
@@ -52,14 +50,13 @@ The  modules deployment process must be complete before you perform the followin
 * Apply configurations
 * Delete module
 
-If you try to perform any of the above operations for a module while the deployment is in progress, an error occurs. See below an example of an attempt to publish a module while the deployment is in progress: 
+If you try to perform any of the above operations for a module while the deployment is in progress, an error occurs. See below an example of an attempt to publish a module while the deployment is in progress:
 
 ![Error message displayed when attempting to publish a module during deployment in Service Center](images/error-deploy-sc.png "Error During Module Deployment")
 
-
 ## Checking the progress of the modules deployment
 
-After selecting **Deploy** to start the modules deployment, Service Center automatically shows the progress of the deployment. 
+After selecting **Deploy** to start the modules deployment, Service Center automatically shows the progress of the deployment.
 
 ![Service Center screen showing the progress of modules deployment](images/deploy-progress-sc.png "Modules Deployment Progress")
 
@@ -67,16 +64,12 @@ If you leave that page and want to access it again, go to **Factory** > **Upgrad
 
 ![Navigation to the deployment details in Service Center after initiating modules deployment](images/select-deploy-details-sc.png "Accessing Deployment Details")
 
-
 ## After the modules deployment finishes
 
-After the modules deployment finishes successfully, your environment is fully upgraded to the new version. To see the upgrades report, go to **Factory** > **Upgrades**. 
+After the modules deployment finishes successfully, your environment is fully upgraded to the new version. To see the upgrades report, go to **Factory** > **Upgrades**.
 
 The report table displays all the previous deployment executions and the corresponding status. To access the deployment details of each execution, select **Deployment** on the corresponding row.
 
 ![Upgrades report table in Service Center showing the status of modules deployment](images/select-deploy-finished-sc.png "Deployment Finished Report")
 
 If an error occurs during the modules deployment, relaunch the deployment operation by selecting the **Deploy** button again. Subsequent module deployments will only deploy the modules that failed during the previous run. If the error keeps occurring, publish your solution instead of using the Deploy All feature.
-
-
-

@@ -97,9 +97,9 @@ After assuring the above requirements are met, do the following to upgrade the L
 OutSystems hybrid infrastructures have the LifeTime environment running in OutSystems Cloud, therefore the upgrade process is the same as [OutSystems Cloud upgrade process](#cloud).
 
 <div class="warning" markdown="1">
- 
+
 Hybrid configuration is only supported in OutSystems licenses purchased before January 2020.
- 
+
 </div>
 
 ## After the upgrade { #after-upgrade }

@@ -53,7 +53,7 @@ The RabbitMQ version needs to fulfill your OutSystems [system requirements](../s
 
 </div>
 
-During upgrades, it's helpful to do a HealthCheck at various moments. The management UI enables this. A [management plugin](https://www.rabbitmq.com/management.html) installation is required. A HealthCheck is done at http://localhost:15672 (15672 is the default port, you may have configured it differently). Alternatively, go to the `sbin` folder under the RabbitMQ installation directory and use the command `rabbitmqctl cluster_status`.
+During upgrades, it's helpful to do a HealthCheck at various moments. The management UI enables this. A [management plugin](https://www.rabbitmq.com/management.html) installation is required. A HealthCheck is done at <http://localhost:15672> (15672 is the default port, you may have configured it differently). Alternatively, go to the `sbin` folder under the RabbitMQ installation directory and use the command `rabbitmqctl cluster_status`.
 
 ## Cluster Full-Stop upgrade strategy
 

@@ -75,7 +75,6 @@ Applies only to Traditional Web Apps.
 
     <iframe src="https://player.vimeo.com/video/1002673080" width="238" height="276" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the change of position for Floating Actions in a Traditional Web App.</iframe>
 
-
 ### Use Floating Actions with List Records
 
 1. Drag the Floating Actions Pattern into the preview.

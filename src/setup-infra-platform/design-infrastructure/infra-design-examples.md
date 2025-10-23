@@ -66,5 +66,3 @@ This example shows an environment with isolated zones for public access, for par
 ## More information
 
 To learn more about how to set up your OutSystems Platform check the [Designing OutSystems infrastructures guide](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures).
-
-

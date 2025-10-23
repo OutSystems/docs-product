@@ -33,12 +33,12 @@ Applies only to Traditional Web Apps.
 ### Change background color
 
 1. Write the following classes in the ExtendedClass property of the card.
-    `background-yourcolor text-neutral-0 border-size-none `
+    `background-yourcolor text-neutral-0 border-size-none`
 
     ![Screenshot showing how to change the background color of a card by adding classes in the ExtendedClass property](images/card-3-ss.png "Card Background Color Change")
-    
+
     The class `text-neutral-0` is to set the text-color to white, in contrast with the new background. The `border-size-none` class is to remove the border.
-    
+
 1. Publish and test.
 
     **Before**

@@ -34,7 +34,7 @@ When a browser requests a file, first the cache is consulted to check if the fil
 
 ## What causes a “stale cache”?
 
-A stale cache is one that has outdated files. 
+A stale cache is one that has outdated files.
 
 In environments with multiple front-ends, if the application being served becomes outdated in one or more front-ends, it may happen that when the browser is requesting the application files, that one of their requests hits an outdated server. This may cause an outdated file version to be served and cached. From then on, all requests for that file will be answered by the cache, which can cause the application to not work properly.
 
@@ -67,6 +67,7 @@ This feature is disabled by default and can be enabled via Factory Configuration
 ## Caveats
 
 Before enabling the feature, the following caveats should be taken into consideration:
+
 * Mobile applications will download most of their files again when the application is first republished or staged. This happens because the application sees the renamed files as new ones, even if their content has not changed. We recommend generating a new mobile build and distributing it to the end-users, especially in Production environments.
 * Most of the files will be duplicated in the OutSystems Platform `share` and `BAR` folders, upon republishing or staging an application, since we keep both the original files and the ones that contain the hash suffix in the filename.
 * Filenames will contain up to 24 more characters, so ensure that the windows [max path length of 255](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry) is not reached.
@@ -75,7 +76,6 @@ Before enabling the feature, the following caveats should be taken into consider
 * The double underscore `__` becomes a reserved keyword. To ensure the correct application behavior, two or more consecutive underscores should not be used in any of the application's component or asset names.
 * Application resource files with the same name but different extensions and located in the same folder **should be renamed**, as they are currently not supported.
     * The URL built to request that resource might be incorrectly generated.
-
 
 ## Breaking change
 

@@ -33,12 +33,12 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Structure
 
-OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introduction/) for naming CSS classes and structures: 
+OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introduction/) for naming CSS classes and structures:
 
 * ``osui-§{pattern-name}__§{pattern-element}``
 * ``osui-§{pattern-name}__§{pattern-element}--is/has-§{pattern-modifier}``
 
-These rules don’t apply to Patterns based on providers, as is the case with the Range Slider Interval Pattern. In this case, the HTML created by the provider, follows the provider’s own conventions. 
+These rules don’t apply to Patterns based on providers, as is the case with the Range Slider Interval Pattern. In this case, the HTML created by the provider, follows the provider’s own conventions.
 
 In the diagram below, gray denotes the classes added by OutSystems UI and green denotes the classes added by the provider.
 
@@ -47,20 +47,20 @@ In the diagram below, gray denotes the classes added by OutSystems UI and green 
 ### Modifiers
 
 |**Modifier** | **Attribute** |  **Element**  |
-|---|---|---| 
-|IsVertical | .osui-range-slider–is-vertical | .osui-range-slider | 
-|Orientation|.noUi-horizontal <br/>.noUi-vertical|.noUi-target| 
-|Direction|.noUi-ltr <br/>.noUi-rtl|.noUi-target| 
+|---|---|---|
+|IsVertical | .osui-range-slider–is-vertical | .osui-range-slider |
+|Orientation|.noUi-horizontal <br/>.noUi-vertical|.noUi-target|
+|Direction|.noUi-ltr <br/>.noUi-rtl|.noUi-target|
 |Size| --range-slider-size|.osui-range-slider|
-|Handler Size|--range-slider-handle-size|.osui-range-slider| 
-|Slider Thickness|--range-slider-thickness|| 
+|Handler Size|--range-slider-handle-size|.osui-range-slider|
+|Slider Thickness|--range-slider-thickness||
 
 ## Client actions
 
 |**Modifier** | **Attribute** |  **Element**  |
 |---|---|---|
-|SetRangeSliderIntervalChangeOnDragEnd|Use this action on the **RangeSliderIntervalInitialized** event or on the screen's **OnReady** event.<p>By using this action, the change event is only triggered when the user releases the slider.</p><p>**Tip:** if you're refreshing a query based on the value of the slider, we recommend using this action.</p>| WidgetId: string| 
- 
+|SetRangeSliderIntervalChangeOnDragEnd|Use this action on the **RangeSliderIntervalInitialized** event or on the screen's **OnReady** event.<p>By using this action, the change event is only triggered when the user releases the slider.</p><p>**Tip:** if you're refreshing a query based on the value of the slider, we recommend using this action.</p>| WidgetId: string|
+
 ## API
 
 If you are an advanced user, you might want to use our Range Slider API (OutSystems.OSUI.Patterns.RangeSliderAPI) for more advanced use cases.
@@ -93,7 +93,6 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
     By using this action, the change event is only triggered when the user releases the slider.
 
     **Note:** If you're refreshing a query based on the value of the slider, we recommend using this action.
-
 
 ### Change the decimal format on the tooltip when the ShowFloatingLabel parameter is True
 

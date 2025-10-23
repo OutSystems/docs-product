@@ -36,7 +36,6 @@ Applies to Mobile Apps and Reactive Web Apps only
 ## CSS Selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-|---|---|---  
-| td | .is-selected  | Clicked day. | 
+|---|---|--- |
+| td | .is-selected  | Clicked day. |
 | td | .is-startrange  | If SelectInterval is True , this class will be the start range value.  |
-

@@ -22,21 +22,21 @@ coverage-type:
 
 Apps can produce a high volume of logs. Storing such a large volume along with the application data in the Database Server can place a high strain on an environment, as both the apps and logs share the same resources (such as database storage and CPU, for example). The high logging volume can even cause outages.
 
-From Platform Server 11.23.1, OutSystems Cloud customers can store the log data in a different location, as was already possible for [self-managed infrastructures](../configure-separate-db.md). This way, the platform app logs don't share the same resources as the application data. When storing the log data in a different location, the types of logs and their information remain the same. 
+From Platform Server 11.23.1, OutSystems Cloud customers can store the log data in a different location, as was already possible for [self-managed infrastructures](../configure-separate-db.md). This way, the platform app logs don't share the same resources as the application data. When storing the log data in a different location, the types of logs and their information remain the same.
 
-By using the separated logs feature, you can: 
+By using the separated logs feature, you can:
 
-* Reduce database usage in an app environment. This improves the stability and performance of the environment. 
+* Reduce database usage in an app environment. This improves the stability and performance of the environment.
 
-* Have all the performance capacity in an environment dedicated to the app. 
+* Have all the performance capacity in an environment dedicated to the app.
 
 * Improve your observability and monitoring capabilities by using appropriate tools that won't impact the ongoing performance of app environments.
 
 ## Architecture
 
-Separated logs are stored for 7 weeks in the Data Platform, OutSystems' native cloud service. Data Platform is a pipeline for all observability data. It uses [Open Telemetry](https://opentelemetry.io/docs/) data standards to ensure that all observability data is properly structured and tagged, and can be correlated across services. 
+Separated logs are stored for 7 weeks in the Data Platform, OutSystems' native cloud service. Data Platform is a pipeline for all observability data. It uses [Open Telemetry](https://opentelemetry.io/docs/) data standards to ensure that all observability data is properly structured and tagged, and can be correlated across services.
 
-Each app writes its own log entries using an internal logging API, ensuring user requests aren't blocked while these logs are being written. This logging API collects log information produced by the app and sends it to the Data Platform. Data sent from your OutSystems Cloud to Data Platform is encrypted in transit using TLS 1.2 and at rest using an AES-256 algorithm. The logs can then be read using the [CentralizedPlatformLogs extension](centralized-platform-logs-extension.md). 
+Each app writes its own log entries using an internal logging API, ensuring user requests aren't blocked while these logs are being written. This logging API collects log information produced by the app and sends it to the Data Platform. Data sent from your OutSystems Cloud to Data Platform is encrypted in transit using TLS 1.2 and at rest using an AES-256 algorithm. The logs can then be read using the [CentralizedPlatformLogs extension](centralized-platform-logs-extension.md).
 
 The maximum log attributes length is - the `message body` can include up to 2,000 characters, and the `stack trace` can contain up to 32,000 characters
 
@@ -44,18 +44,17 @@ The maximum log attributes length is - the `message body` can include up to 2,00
 
 ## Activate logs separation
 
-To request the activation of logs separation, [open a support ticket](https://www.outsystems.com/tk/redirect?g=A82EA0CB-B101-4F08-BCFB-77559EF63801). 
+To request the activation of logs separation, [open a support ticket](https://www.outsystems.com/tk/redirect?g=A82EA0CB-B101-4F08-BCFB-77559EF63801).
 
-After selecting your infrastructure, select **Configure the platform** > **Managing Environments** > **Change logs storage location**. 
- 
+After selecting your infrastructure, select **Configure the platform** > **Managing Environments** > **Change logs storage location**.
+
 Once you submit your request, OutSystems support will plan the activation with you and inform you of all the steps.
-
 
 ### Prerequisites
 
 To use the logs separation feature, make sure you meet the following requirements:
 
-* Your infrastructure is on the OutSystems Cloud. 
+* Your infrastructure is on the OutSystems Cloud.
 
 * You use Platform Server version 11.23.1 or higher.
 
@@ -86,4 +85,3 @@ You'll no longer be able to [query the database directly to access the log datab
 * Use the [CentralizedPlatformLogs extension](centralized-platform-logs-extension.md).
 
 * Use [Log Streaming](https://www.outsystems.com/tk/redirect?g=75f48471-6193-4149-abf4-29c15e75c1f6).
-

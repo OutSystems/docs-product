@@ -24,12 +24,10 @@ coverage-type:
 
 </div>
 
-ASP.Net allows system administrators to manage aspects of the ASP.NET worker process. Examples include the size of the CLR thread pool to service requests, and the number of instances created at a time. 
-
+ASP.Net allows system administrators to manage aspects of the ASP.NET worker process. Examples include the size of the CLR thread pool to service requests, and the number of instances created at a time.
 
 The element to configure these behaviors is the **processModel** element, present in the machine.config.
 All configurations should start with the parametrization `<processModel autoConfig="true" />`
-
 
 This is set by the OutSystems platform when running the configuration tool. By setting the **autoConfig** to true, IIS worker process will manage the following attributes:
 
@@ -39,7 +37,7 @@ This is set by the OutSystems platform when running the configuration tool. By s
 * minLocalRequestFreeThreads;
 * maxConnection.
 
-IIS worker process will manage these attributes by controlling their values. Therefore, the values assigned to these attributes will be irrelevant once autoConfig is set to true. 
+IIS worker process will manage these attributes by controlling their values. Therefore, the values assigned to these attributes will be irrelevant once autoConfig is set to true.
 
 The values of the attributes above are set based on the following rules:
 
@@ -49,13 +47,12 @@ The values of the attributes above are set based on the following rules:
 * minLocalRequestFreeThreads = 76 x `<Number of CPUs>`
 * maxConnection = `Int32.MaxValue`
 
-Even though setting autoconfig to true is the recommended setting, this doesn't work well with bursts of requests. IIS worker process analyses its state in a period of time too slow for it to react to handle a burst of requests. This configuration works better in steady increases in the workload. 
+Even though setting autoconfig to true is the recommended setting, this doesn't work well with bursts of requests. IIS worker process analyses its state in a period of time too slow for it to react to handle a burst of requests. This configuration works better in steady increases in the workload.
 
 * **minIoThreads**: to a value between `89` and `<maxIoThreads>`
 * and **minWorkerThreads**: to a value between `89` and `<maxWorkerThreads>`
 
-
-To further explain these values: 
+To further explain these values:
 
 * The minimum should be `89` because we shouldn't have fewer threads configured than the 88 in the **minFreeThreads**
 * The maximum values should be `<maxIoThreads>` and `<maxWorkerThreads>` (set by default to 100 per CPU) because it's the maximum value for the number of Io and worker threads.

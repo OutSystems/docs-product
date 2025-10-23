@@ -27,7 +27,7 @@ To enable TLS communication do the following:
 
 1. Open the `%ALLUSERSPROFILE%\RabbitMQ\rabbitmq.conf` configuration file.  
 **Note**: If they do not exist, create the `RabbitMQ` folder and the `rabbitmq.conf` file.
- 
+
 1. Add the following lines:
 
         ## Disable non-TLS listeners for AMQP connections
@@ -39,7 +39,7 @@ To enable TLS communication do the following:
         ssl_options.certfile = C:\\path\\to\\server\\cert.pem
         ssl_options.keyfile = C:\\path\\to\\server\\key.pem
 
-This configuration does the following: 
+This configuration does the following:
 
 1. Disables all non-TLS listeners (`listeners.tcp`)
 
@@ -69,11 +69,11 @@ Do the following:
 
 1. Open the `server.hsconf` file and check if there's a section named `CacheInvalidationConfiguration` in the file.  
     If the section **does not** exist, you can add it automatically by doing the following:
-    
+
     1. Open Configuration Tool.
     1. Open the **Cache** tab and fill in the configuration values for the RabbitMQ service.
     1. Close the Configuration Tool and, in the **Configuration changed** dialog box, confirm that you wish to save your changes by clicking **Yes**.
-    
+
     The `CacheInvalidationConfiguration` section should now exist in `server.hsconf`.
 
 1. In `server.hsconf`, set the value of the `TlsServerCanonicalName` parameter in the `CacheInvalidationConfiguration` section to the certificate canonical name.

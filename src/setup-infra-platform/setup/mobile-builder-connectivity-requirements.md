@@ -49,5 +49,3 @@ If you have a firewall which allows limiting access by domain, use the firewall 
 If you don't have a proxy or a firewall to restrict access to a specific domain, you need to get the list of relevant Amazon CloudFront IPs and allow access to it on your firewall.
 
 Amazon provides a JSON with the [list of IP ranges their services use](http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html). You only need to provide access to the ones used by the CloudFront service. Search in the JSON for CLOUDFRONT, as mentioned in [Locations and IP address ranges of CloudFront edge servers](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html).
-
-

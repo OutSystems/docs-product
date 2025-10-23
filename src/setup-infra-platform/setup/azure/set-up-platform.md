@@ -91,7 +91,7 @@ To apply your OutSystems license to the **development** environment, do the foll
 1. Using the DNS name from the previous step, access the Service Center management console of the environment with the following URL: `http://<DNS_name>/ServiceCenter`.
 
 1. Log on using the following user credential:
-    
+
     * Username = `admin`
     * Password =  password set in step 3. of the ["Run the Solution Template Wizard" section](#run-the-solution-template-wizard)
 
@@ -103,9 +103,7 @@ To apply your OutSystems license to the **development** environment, do the foll
 
 1. Follow the steps at [Get a license file for an environment](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Manage_and_Upgrade/03_Get_a_license_file_for_an_environment#Self-managed_environments) to register the Serial Number and download the license file.
 
-
 1. Once you have the license file (`*.lic`), go back to the Licensing tab of Service Center and follow the steps to [install a license file](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Manage_and_Upgrade/04_How_to_install_a_license_file).
-
 
 1. Repeat the same procedure to apply the license to the remaining environments - Test, Production, and LifeTime.
 

@@ -129,7 +129,6 @@ So, how do you decide which tests to automate? Well, we like the approach Angie 
 
     ![](images/guidelines-score-example-diag.png?width=500)
 
-
 ## Segregating automated tests
 
 Test automation greatly reduces regression testing on increasingly complex or mission-critical systems. It is also a critical part of any continuous delivery approach. When choosing which tests to automate, it’s highly advisable to adopt the [Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) approach, which states that test automation effort should be distributed according to a pyramid shape, with component tests on the bottom layer and moving all the way up to E2E tests. The reason for this is that component tests are easy to write and maintain, as well as very fast to run, whereas E2E tests are typically unstable, hard to maintain, and very time consuming to execute.

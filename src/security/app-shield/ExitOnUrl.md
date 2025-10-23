@@ -90,7 +90,6 @@ You may incorporate these generated query parameters into your informative messa
 
 _We're sorry! We had to shut your app down because we detected native code hooks, possibly inserted by a malicious app, on your Android Pixel device. This is a security feature designed to protect your data and money. We suggest scanning your phone, and, in the meantime, please use our web portal._
 
-
 ## Considerations
 
 AppShield can't guarantee that the **Exit URL** page loads in all instances if an attacker is probing the app's defenses.

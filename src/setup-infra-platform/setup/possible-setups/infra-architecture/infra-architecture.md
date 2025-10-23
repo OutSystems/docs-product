@@ -34,7 +34,6 @@ guesswork involved in application development, security, code generation, and
 logging. The runtime layer offers the option of deployment either in the
 OutSystems Cloud or on your systems.
 
-
 ## Standard, reliable technologies
 
 OutSystems runs on standard and scalable technology and doesn't need particular
@@ -58,7 +57,6 @@ For more information about the supported software versions, check [OutSystems
 system
 requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_system_requirements).
 
-
 ## Environment architecture
 
 An OutSystems environment provides all the necessary infrastructure to allow
@@ -80,7 +78,6 @@ Environment deployment uses several underlying infrastructure components.
 
 ![Diagram illustrating the architecture of an OutSystems environment with application servers and databases](images/outsystems-environment-architecture-diag.png "OutSystems Environment Architecture Diagram")
 
-
 ### Application Server
 
 Each environment has dedicated application servers running multiple
@@ -90,7 +87,6 @@ applications. App deployment is on Microsoft IIS and Windows Server.
 
 At runtime, virtual directories map onto application domains. Multiple
 application domains run in a worker process.
-
 
 ### Database
 
@@ -115,7 +111,6 @@ servers in production environments:
 
 ![Diagram highlighting the use of dedicated database servers in production environments](images/environment-dedicated-database-diag.png "Environment Dedicated Database Diagram")
 
-
 #### Integration with external databases
 
 To build applications using existing data sources, use OutSystems [Integration
@@ -132,13 +127,11 @@ Supported databases are:
 Developers can combine local and external data sources without spending
 unnecessary time on complex integration projects.
 
-
 ### Platform Server
 
 The Platform Server in each environment orchestrates compilation, deployment,
 and management activities for all applications. Platform Server installation is
 on all application servers that compose an environment.
-
 
 #### OutSystems services
 
@@ -161,7 +154,6 @@ as services.
 * **Server.Identity:** responsible for authenticating users and access control
 for the APIs exposed by the Server API.
 
-
 ### Standalone and server farm configurations
 
 As load increases and high availability needs become apparent, it’s possible to
@@ -176,7 +168,6 @@ layer, support for load balancing removes single points of failure.
 Two configurations, standalone and server farm, accommodate the differing needs
 of each environment.
 
-
 #### Standalone
 
 The usual architecture for non-production environments is standalone. In this
@@ -188,7 +179,6 @@ configuration:
 
 * The database installation can reside on the same physical server as the
 application server or a dedicated physical server.
-
 
 #### Server farm
 
@@ -213,7 +203,6 @@ database server.
 Visit [this page](https://success.outsystems.com/Support/Enterprise_Customers/Availability_and_scalability)
 for in-depth information about scalability and availability in
 OutSystems environments
-
 
 ## Infrastructure architecture
 
@@ -287,7 +276,6 @@ creates workflows to build apps for task management and automation.
 The complete OutSystems network requirements are
 [here](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_network_requirements).
 
-
 ### Infrastructure architecture examples { #infra-examples }
 
 OutSystems provides the flexibility to start with simple infrastructure.
@@ -301,7 +289,6 @@ Read more about OutSystems editions and pricing
 Addons are available in addition to the default configurations. Information on
 add-ons is available
 [here](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/Cloud_services_catalog).
-
 
 #### Basic edition infrastructure
 
@@ -329,7 +316,6 @@ LifeTime, Development, and Test environments.
 * 1 for Development
 * 1 for Test
 * 1 for Production
-
 
 #### Standard edition infrastructure
 
@@ -365,7 +351,6 @@ As a result, this factory required:
 * One for Test
 * One for UAT
 * Four for Production with a load balancer
-
 
 #### Enterprise edition infrastructure
 
@@ -409,7 +394,6 @@ the pipeline on the right
 * Four for the Production environment comprising the mission-critical external
 facing apps.
 
-
 ## Deployment options
 
 OutSystems builds on reliable technologies, and its scalable architecture allows
@@ -432,4 +416,3 @@ technology and components described in this document.
 Learn more about deploying infrastructure on OutSystems Cloud here:
 
 [![Clickable image linking to information about deploying infrastructure on OutSystems Cloud](images/infra-options-cloud.png "OutSystems Cloud Infrastructure Options")](https://success.outsystems.com/Support/Enterprise_Customers/Infrastructure_architecture_and_deployment_options/Deploy_an_infrastructure_on_OutSystems_Cloud)
-

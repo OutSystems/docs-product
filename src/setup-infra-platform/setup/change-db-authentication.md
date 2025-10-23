@@ -17,7 +17,7 @@ coverage-type:
   - apply
 ---
 
-# Change SQL Server database authentication mode 
+# Change SQL Server database authentication mode
 
 <div class="info" markdown="1">
 
@@ -55,7 +55,7 @@ To reduce downtime during the process, you can execute the steps of the Database
 
     If you changed the authentication to Database Authentication, we recommend that you restore the Application Pools **Identity** to the NetworkService or ApplicationPoolIdentity.
 
-1. On the **Session** tab, click **Create Session Database**. 
+1. On the **Session** tab, click **Create Session Database**.
 
 1. Click **Apply and Exit**.  
 A message to publish the latest version of Service Center displays. Click **OK**.
@@ -69,12 +69,12 @@ A message to publish the latest version of Service Center displays. Click **OK**
 
         <div class="info" markdown="1">
 
-        Notes:   
+        Notes:
         <ul>
         <li> If the Catalog was configured before Platform Server 7.0 with a specific Runtime user, we recommend changing it to the same user configured in the Configuration Tool. </li>
         <li> Using specific users is only allowed for backward compatibility. </li>
         </ul>
-        
+
         </div>
 
     1. Test the connection of each database catalog using a tool like SQL Server Management Studio.
@@ -114,7 +114,7 @@ Notes:
     1. If you changed the authentication to Windows Authentication, and if you have machines with Application Pools configured to run OutSystems apps besides the OutSystemsApplications pool:  
         1. Go to the **IIS Management Console**.
         1. For each pool running OutSystems apps, set the **Identity** in **Advanced Settings** to match the Runtime user, and click **Ok**.  
-          
+
         If you changed the authentication to Database Authentication, we recommend that you restore the Application Pools **Identity** to the NetworkService or ApplicationPoolIdentity.
 
 1. On the Configuration Tool in the controller machine, go to the **Session** tab.
@@ -145,7 +145,7 @@ A message to publish the latest version of Service Center displays. Click **OK**
 
         <div class="info" markdown="1">
 
-        Notes:   
+        Notes:
         <ul>
         <li> If the catalog was configured before Platform Server 7.0 with a specific Runtime user, we recommend changing it to the same user configured in the Configuration Tool. </li>
         <li> Using specific users is only allowed for backward compatibility. </li>
@@ -155,7 +155,6 @@ A message to publish the latest version of Service Center displays. Click **OK**
 
     1. Test the connection of each database catalog using a tool like SQL Server Management Studio.
     1. Republish all modules.
-
 
 ## Impact on OutSystems Services and Application Pools
 
@@ -185,5 +184,3 @@ Application Pool identities change as follows:
 Reverting to Database Authentication doesn’t revert the changes done to Application Pools identities and OutSystems Windows services Log-On accounts.
 
 </div>
-
-

@@ -31,7 +31,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .table-records-responsive |  .table-records-responsive.scrollable-row|  When the ResponsiveBehavior parameter is set to scrollable  |
 | .table-records-responsive |  .table-records-responsive.expandable-row|  When the ResponsiveBehavior parameter is set to expandable  |
 | table tbody tr |  .TableRecords_ExpandedRow |  When using the expandable-row option, identifies when the row is expanded  |

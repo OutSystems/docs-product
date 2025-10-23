@@ -29,7 +29,7 @@ Applies only to Traditional Web Apps.
 ## CSS Selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
+| ---|---|--- |
 | .dropdown |  .is--hidden |  Defines if the dropdown list is closed  |
 | .dropdown |  .is--visible |  Defines if the dropdown list is open  |
 

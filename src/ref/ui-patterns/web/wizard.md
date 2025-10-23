@@ -31,7 +31,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .wizard |  .wizard.wizard-vertical|  When the wizard orientation is vertical  |
 | .wizard-item |  .wizard-item.active|  Defines the current active step  |
 | .wizard-item |  .wizard-item.past|  Defines the previous step  |
@@ -78,7 +78,7 @@ Use this example to create a three steps Wizard with continue and back buttons.
 1. Set the OnClick of the Continue Button to the action WizardNavigation with Ajax Submit as the Method. Set the IsNext parameter to True.
 
 1. Do the same for the Back button, but set the parameter to False.
-    
+
     ![Screenshot of the Wizard UI with Continue and Back buttons configured for navigation](images/wizard-6-ss.png "Wizard Continue and Back Buttons")
 
 1. In each WizardItem, add this If condition: `If(WizardStepIndex = 1, Entities.Step.Active, If(WizardStepIndex = 0, Entities.Step.Next, Entities.Step.Past))` to the Step parameter.

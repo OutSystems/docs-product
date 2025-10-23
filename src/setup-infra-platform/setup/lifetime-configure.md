@@ -42,7 +42,7 @@ If you are upgrading from a previous OutSystems version, you may use Service Cen
 When you login in LifeTime for the first time, you will be redirected to the **INFRASTRUCTURE** tab, where you can set up your infrastructure by registering your OutSystems environments.
 
 ![Screenshot of the LifeTime Infrastructure tab showing the initial setup interface](images/lifetime-configure-1.png "LifeTime Infrastructure Tab")
- 
+
 ### Prerequisites
 
 To successfully register an OutSystems environment in LifeTime, make sure the following requirements are met:
@@ -108,7 +108,6 @@ In this step, you will validate the list of IT users that will be imported to Li
 If you are installing OutSystems for the first time, there are no users in the environment to be imported, so you can click the **NEXT** button to proceed.
 
 ![Step 4 of registering an OutSystems environment in LifeTime, importing existing users from the environment](images/lifetime-configure-5.png "Import Existing Users from Environment Step")
-
 
 The environment users that already exist in LifeTime will not be imported. You can check the list of these users in section **Existing LifeTime Users**.
 

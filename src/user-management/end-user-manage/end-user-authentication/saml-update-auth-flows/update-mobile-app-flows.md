@@ -37,6 +37,7 @@ For apps that comply with these prerequisites, to enable single sign-on, continu
 For new apps that don’t comply with the two first prerequisites and are using a Platform Server version 11.18 or later, you must perform the [Configuration and activation](#configuration-and-activation) step and the [Updating the login and logout flows](#updating-the-login-and-logout-flows) step.
 
 ## Configuration and activation
+
 To enable single sign-on on your Mobile App, you must configure an identity provider with SAML 2.0 Authentication and activate single sign-on between app types settings.
 
 To configure SAML 2.0 and add your identity provider, see the  [Configure SAML 2.0 Authentication](../configure-saml.md) documentation.
@@ -113,13 +114,11 @@ To use a Data Action to check if SSO is available and adapt the screen according
 
 1. Set an action for the **OnAfterFetch** event to get the result of the server action and assign it to **IsSSOAuthConfigured**.
 
-
     ![Flowchart depicting the logic to check if SSO is available in a mobile app](images/update-mobile-app-flows-logic-ss.png "Check SSO availability logic")
 
 1. Assign **ShowSSOView** to the value of **IsSSOAuthConfigured**.
 
     ![Screenshot showing the assignment of the IsSSOAuthConfigured value to ShowSSOView in OutSystems](images/update-mobile-app-flows-assign-ss.png "Assign SSO configuration value")
-
 
 ### Update the **OnClick** action for the **LoginSSO** button
 
@@ -135,11 +134,11 @@ For SSO authentication in both PWA and Native applications, create logic to upda
 
 1. Add the **IsNative** client action and upon checking that it returns TRUE:
 
-    1. Run the **GetCallbackURL** client action. 
+    1. Run the **GetCallbackURL** client action.
         This action returns a URL.
 
-    1. Add the **User_GetUnifiedLoginURL** server action, setting its **OriginalUrl** parameter as: 
-    
+    1. Add the **User_GetUnifiedLoginURL** server action, setting its **OriginalUrl** parameter as:
+
     ``GetCallbackUrl.Url (the output of the GetCallbackURL action)``
 
     1. Verify that the URL exists. You can use the following condition:
@@ -151,8 +150,8 @@ For SSO authentication in both PWA and Native applications, create logic to upda
     1. If the URL exists add the **StartSSOAuthentication** client action and verify if it runs successfully.
 
     1. If so, create a new **DoLoginMobile** server action with the input parameter **Token** and add it to the logic flow, passing the value of the parameter **Token** (output of StartSSOAuthentication).
-    
-    1. In this new server action, call **User_Login_Mobile** and pass the **Token** value. 
+
+    1. In this new server action, call **User_Login_Mobile** and pass the **Token** value.
         **Note**: Remember that the login property of the **User_Login_Mobile** server action must be set to TRUE to allow the session to persist.
 
     1. Finally, use the **OfflineDataSyncConfiguration** client action and if it returns **OfflineDataSyncConfiguration.SyncOnLogin == True**, then add the **SyncOnLogin** client action. This is an action available on the default Login screen of the Common UI flow.
@@ -177,10 +176,10 @@ In this step you update the **ClientLogout** client action of the **UserInfo blo
 
     1. Create a new **SSOLogoutMobile** client action and add it to the flow. Inside this new client action:
 
-        1.  Call User_IsExternaluser and if User_IsExternalUser.IsExternal is TRUE, run DoLogout server action;
+        1. Call User_IsExternaluser and if User_IsExternalUser.IsExternal is TRUE, run DoLogout server action;
 
         1. If User_IsExternalUser.IsExternal is FALSE, run the GetCallbackURL client action. This action will return a URL;
-        
+
         1. Add the User_GetUnifiedLogoutURL server action, setting the OriginalUrl parameter as: GetCallbackUrl.Url
 
         1. Verify that the URL exists. You can use the condition:

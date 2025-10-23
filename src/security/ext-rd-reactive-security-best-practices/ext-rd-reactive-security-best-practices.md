@@ -44,7 +44,7 @@ When you need data, don’t fetch all fields. Only fetch the data that is needed
 
 ### Securing server calls
 
-When you **fetch data from the server** (queries or API calls), don’t use input parameters that have impact on the data that is returned. An attacker can change these values and fetch some other data. 
+When you **fetch data from the server** (queries or API calls), don’t use input parameters that have impact on the data that is returned. An attacker can change these values and fetch some other data.
 
 For instance, if retrieving data about the current logged-in user, instead of using client-specific details consider using server-side logic to get that same information.
 
@@ -102,9 +102,8 @@ When you compare Traditional Web with Reactive Web there are more security angle
 
 1. Take the warnings in [TrueChange](http://gemoc.org/pub/20190625-MLE19/paper9.pdf)™ at heart. They will guide you through the biggest mistakes and help you improve the Client Code Quality.
 
-2. As an extra option, you can also look into the [AI Mentor Studio](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/), because this tool also has several [code analysis patterns](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/).
+1. As an extra option, you can also look into the [AI Mentor Studio](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/), because this tool also has several [code analysis patterns](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/).
 
-3. Don’t deploy test screens to other environments than the development environment. They are normally Public screens with quite some functionality which you can use to tamper with the database.
+1. Don’t deploy test screens to other environments than the development environment. They are normally Public screens with quite some functionality which you can use to tamper with the database.
 
-4. Keep track of the 3rd party plugins you are using. They can also contain vulnerabilities. When you don’t check regularly or update the components on a regular basis, you have the chance to get attacked via known vulnerabilities.
-
+1. Keep track of the 3rd party plugins you are using. They can also contain vulnerabilities. When you don’t check regularly or update the components on a regular basis, you have the chance to get attacked via known vulnerabilities.

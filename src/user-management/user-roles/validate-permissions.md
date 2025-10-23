@@ -30,7 +30,7 @@ By validating their user ID or Roles you can control access to screens, screen e
 
 To restrict access to a screen of an app, in the **Roles** property of the screen select the end user Roles that can view the screen.
 
-**Note**: **Anonymous screens** generate public endpoints which is a  security risk as it can lead to cross-site request forgery attacks. For more information, see [Security Warning](../../ref/errors-and-warnings/warnings/security-warning.md). 
+**Note**: **Anonymous screens** generate public endpoints which is a  security risk as it can lead to cross-site request forgery attacks. For more information, see [Security Warning](../../ref/errors-and-warnings/warnings/security-warning.md).
 
 ![Screenshot showing how to validate end user permissions for a screen in an application](images/valdiate-screen-ss.png "Screen Roles Validation")
 

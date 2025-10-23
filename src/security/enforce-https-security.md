@@ -23,7 +23,7 @@ coverage-type:
 
 OutSystems provides developers with HTTPS security in Mobile Apps and Reactive Web Apps.
 
-All HTTP requests in Mobile Apps (distributed as the native builds or PWA) and Reactive Web Apps are secure because they are served via HTTPS. All requests made to the back-end of these apps (the server part of the OutSystems generated code for your app) are always made over HTTPS. 
+All HTTP requests in Mobile Apps (distributed as the native builds or PWA) and Reactive Web Apps are secure because they are served via HTTPS. All requests made to the back-end of these apps (the server part of the OutSystems generated code for your app) are always made over HTTPS.
 
 This means that you don't need to configure the security of HTTP requests in your application, or in application elements such as UI Flows and Screens. Also, SSL (Secure Socket Layer) is already configured and activated in the environments of your infrastructure.
 

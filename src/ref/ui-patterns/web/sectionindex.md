@@ -31,7 +31,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
+| ---|---|--- |
 | .section-index |  .section-index.is--sticky|  Defines if the SectionIndex position is fixed or not  |
 | .section-index-item |  .section-index-item.is--active|  Defines the current active link  |
 

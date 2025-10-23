@@ -31,7 +31,6 @@ The Users application does not support Group hierarchies by default so it's not 
 1. Use a database management tool to connect to the OutSystems database.
 1. Edit the records in the `OSSYS_Group` table and, for each group that has these customizations, set its `HasCustomManagement` attribute to `True`. These groups will no longer be visible in the Users application.
 
-
 ## Using external custom Group management
 
 1. Use a database management tool to connect to the OutSystems database.

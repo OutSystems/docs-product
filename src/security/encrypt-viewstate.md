@@ -27,7 +27,7 @@ Applies only to Traditional Web Apps.
 </div>
 
 The view state is used by the OutSystems underlying technology for traditional web applications (ASP.NET). This mechanism is used to preserve the client-side state of a web page when a postback occurs. The view state stores the values and controls of the page between requests.
- 
+
 The view state is a hidden field in the HTML of the web page. Its value property stores the view state encoded information. Because a page's view state can contain sensitive information (such as a users inputs in a form) **the view state is encrypted by default**.
 
 ![Screenshot of the encryption settings for viewstate in the console](images/encrypt-viewstate-console.png "Viewstate Encryption in Console")
@@ -36,15 +36,15 @@ Check the [Microsoft documentation](https://docs.microsoft.com/en-us/dotnet/api/
 
 ## Toggling view state encryption using Factory Configuration
 
-You can confirm or toggle the view state encryption using the supported Forge component [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration). 
+You can confirm or toggle the view state encryption using the supported Forge component [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration).
 
 1. Open Factory Configuration in the browser and login using your LifeTime/Service Center credentials.
 
-1. Navigate to the **Platform Configurations** tab and toggle **Encrypt Viewstate**. 
-    
+1. Navigate to the **Platform Configurations** tab and toggle **Encrypt Viewstate**.
+
     ![Screenshot showing the Factory Configuration interface with the Encrypt Viewstate option toggled](images/encrypt-viewstate-factory-config-fc.png "Factory Configuration for Viewstate Encryption")
 
-    For an extra level of protection, it's also possible to enable the **Use Session Token to Encrypt View State** option. This will include an extra session generated token in the encrypted view state. This token changes after a login to a different user, and ensures every requested page is only valid in the context of that same user session. 
+    For an extra level of protection, it's also possible to enable the **Use Session Token to Encrypt View State** option. This will include an extra session generated token in the encrypted view state. This token changes after a login to a different user, and ensures every requested page is only valid in the context of that same user session.
 
     <div class="warning" markdown="1">
 

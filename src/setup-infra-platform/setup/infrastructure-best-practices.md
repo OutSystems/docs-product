@@ -28,7 +28,7 @@ This page applies only to self-managed installations.
 
 Having applications designed to perform fast, running slower than a crawl due to bad configuration or inadequate/undersized hardware, is absolutely frustrating for any software developer.
 
-Make sure to apply the best practices listed below during the OutSystems Platform installation and always involve your DBA in the process. 
+Make sure to apply the best practices listed below during the OutSystems Platform installation and always involve your DBA in the process.
 
 ## Setup database maintenance plans
 
@@ -90,7 +90,7 @@ Don't forget to involve the resident DBA. Please note that this should target al
 
 Place database data files and log files in separate physical storage and correctly configure file growths.
 
-### Solution 
+### Solution
 
 Apply recommended tuning settings for the database; for example: (a) set absolute and large file growth of the data and log files (like 512 MB); (b) isolate data files and log files in different disks (not just partition on the same disk, but a physically different disk or different storage partitions), etc.
 
@@ -148,7 +148,7 @@ If available and for high load environments, use 64-bit architecture servers and
 
 64-bit architectures allow managing the server's memory resources more efficiently, overcoming the short limits of memory usage of the 32-bit architecture environments.
 
-### Importance 
+### Importance
 
 Memory management in 32-bit architecture environments limits each worker process to a maximum of 2 GB of user Virtual Address Space (VAS) and another 2 GB for the kernel Virtual Address Space. This means that even if the server has more than 2GB of physical RAM, OutOfMemory exceptions are bound to happen due to VAS memory fragmentation which rapidly reaches the 2GB limit even when there's enough free memory on the system. The 64-bit architecture considerably increases the VAS memory limit (to 16 TB) allowing the worker process will take full advantage of every GB of memory available.
 
@@ -180,7 +180,6 @@ If Windows Defender is active, or any other antivirus protection, disable the re
 
 The real-time scanning feature of antivirus software monitors file system for changes and access. The server can generate and access numerous files during a process, triggering antivirus scanning which in return consumes the system resources and severely reduces the server performance.
 
-### Remarks 
+### Remarks
 
 You can occasionally run the antivirus manually to scan the excluded folders. For more details about .NET Framework and antivirus software, you can read the article [Folders to exclude from antivirus scanning in ASP.NET apps](https://support.microsoft.com/en-us/help/3126034/folders-to-exclude-from-antivirus-scanning-in-asp-net-apps) at the Microsoft Support website.
-

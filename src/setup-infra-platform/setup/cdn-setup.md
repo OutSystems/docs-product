@@ -35,7 +35,7 @@ OutSystems advises OutSystems Cloud and self-managed customers using  a CDN for:
 
 * B2C or B2B apps
 
-With a CDN, the hydration process (ability to update the mobile app without downloading a new version from the app store) is served from the CDN instead of front-end servers. This reduces front-end load and helps prevent the need for hardware scale-up. 
+With a CDN, the hydration process (ability to update the mobile app without downloading a new version from the app store) is served from the CDN instead of front-end servers. This reduces front-end load and helps prevent the need for hardware scale-up.
 
 <div class="info" markdown="1">
 
@@ -50,7 +50,6 @@ Below is an example of a typical architecture:
 OutSystems lets you integrate a CDN of your choice to improve asset delivery. You'll need to set it up and configure it properly to ensure seamless performance. The following diagram breaks down the necessary steps, and this article provides detailed guidance for each.
 
 ![Diagram showing the steps to set up and configure a CDN, define content to cache, prevent stale cache, and avoid false brute-force triggers](images/cdn-process-diag.png "CDN Integration Process")
-
 
 ## Setup and configure your CDN
 
@@ -90,9 +89,9 @@ OutSystems apps often include the following static files. We recommend caching t
 
 ## Prevent stale cache
 
-Starting with Platform Server 11.30.0, a stale cache prevention mechanism ensures users always receive the latest application resources, preventing issues caused by outdated or incorrect content. 
+Starting with Platform Server 11.30.0, a stale cache prevention mechanism ensures users always receive the latest application resources, preventing issues caused by outdated or incorrect content.
 
-This mechanism automatically fetches new resource versions instead of waiting for caches to expire, allowing you to set long cache expiration times without risking stale content. As a result, it reduces unnecessary origin requests, improves performance, and lowers CDN costs. 
+This mechanism automatically fetches new resource versions instead of waiting for caches to expire, allowing you to set long cache expiration times without risking stale content. As a result, it reduces unnecessary origin requests, improves performance, and lowers CDN costs.
 
 You can enable stale cache prevention in the Factory Configuration. For details, see [Preventing stale cache](stale-cache.md).
 
@@ -121,7 +120,7 @@ To apply this change, follow these steps:
 1. Open Internet Information Services (IIS) Manager.
 1. Go to **Sites**, and then **Default Web Site**.
 1. Double-click **HTTP Response Headers**.
-1. Under the **Actions** section, click **Set Common Headers…** 
+1. Under the **Actions** section, click **Set Common Headers…**
 1. In the dialog box, select the **Expire Web content** checkbox and set the **After** value to **120 Second(s)**.
 
 ![Screenshot showing the process of setting the cache timeout in IIS Manager for CDN](images/cdn-cache-timeout-usr.png "CDN Cache Timeout Configuration")
@@ -146,6 +145,4 @@ To prevent this, set the EnableBruteForceProtectionPerIP site property to False.
 1. Change the **Effective Value** to **False**.
 1. Click **Apply**.
 
-
 To compensate for disabling this setting, consider implementing additional protection measures, such as a firewall.
-

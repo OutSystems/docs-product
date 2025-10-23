@@ -35,11 +35,9 @@ OutSystems handles all server and database maintenance, server and system upgrad
 
 In the OutSystems Cloud deployment, all servers, physical infrastructure, and data are hosted in the secure data centers of Amazon Web Services (AWS). AWS is the market leader and the most mature public cloud infrastructure as a service (IaaS). It has enterprise-grade availability with guaranteed service levels of 99.9%, and it is the IaaS technology that has been accredited by the largest number of security compliance standards.
 
-
 OutSystems Cloud benefits from the multiple layers of operational and physical security implemented by AWS. OutSystems Cloud Infrastructure Security relies both on the AWS security controls and on the secure configuration standards that OutSystems applies to all infrastructure components: network, operating system, database, and application servers. These defend the integrity of customer data and protect systems against unauthorized access and malware.
 
 Both OutSystems and AWS adopt a proactive approach to security, with carefully designed  Security Processes run by specialized security teams. These processes defend the OutSystems Cloud from rogue employees, enforce secure practices, and ensure that the OutSystems Cloud is ready to respond to any type of security event.
-
 
 ## Setting up your OutSystems Cloud
 
@@ -78,11 +76,8 @@ Upgrades of the OutSystems software are coordinated with you every step of the w
 The OutSystems Cloud high-availability option allows customers to deploy Front-Ends across different availability zones, and to set up a database replica in a different availability zone than the primary database. Each availability zone is designed as an independent failure zone.
 This means that availability zones are physically separated within a typical metropolitan region and are located in lower risk floodplains (specific flood zone categorization varies by region). In addition to utilizing discrete uninterruptible power supply (UPS) and onsite backup generators, they are each fed via different grids from independent utilities to further reduce single points of failure. Availability zones are all redundantly connected to multiple tier-1 transit providers.
 
-
 AWS infrastructure has a high level of availability, enabling the deployment of resilient IT architectures. AWS has designed its systems to tolerate system or hardware failures with minimal customer impact.
 Data centers are built in clusters in various global regions. All data centers are online and serving customers; no data center is “cold.” In case of failure, automated processes move customer data traffic away from the affected area. Core AWS applications are deployed in an N+1 configuration. In the event of a data center failure, there is sufficient capacity to enable traffic to be load-balanced to the remaining sites.
-
-
 
 The OutSystems Cloud high-availability option provides the ability to remain resilient in the face of most failure scenarios, including natural disasters or system failures.
 **OutSystems Sentry always includes the high-availability option.**
@@ -90,12 +85,10 @@ OutSystems doesn’t replicate customer data between regions, thus allowing cust
 
 Read more about high availability and scalability strategies [here](https://success.outsystems.com/Support/Enterprise_Customers/High_availability_and_scalability_strategies).
 
-
 ## Built-in infrastructure security
 
 OutSystems applies security best practices and manages security to allow customers to focus primarily on their business. OutSystems Cloud inherently protects customers from threats by making sure security controls are applied at every layer, while ensuring that customer applications and data are isolated.
 OutSystems allows any customer to conduct security audits and penetration tests within the OutSystems Cloud, as long as they are limited to the customer’s own cloud infrastructure.
-
 
 ### Data security
 
@@ -159,7 +152,6 @@ A layer of AWS Security Groups, acting as firewalls, control the traffic between
 OutSystems shields each environment using a Web Application Firewall (WAF), which blocks malicious traffic from reaching the running web applications. To ensure that OutSystems keeps full flexibility on the reaction to evolving security threats, maximum availability, and compatibility with OutSystems product evolution, the same WAF's policies apply to all customers.
 
 Read [here](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure/OutSystems_Cloud_network_architecture) more about OutSystems Cloud network architecture.
-
 
 #### Secure connection to your systems
 

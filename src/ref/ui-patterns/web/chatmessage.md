@@ -37,10 +37,9 @@ Applies only to Traditional Web Apps.
 ## CSS Selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .chat-message-actions |  is--hidden|  When the server action ToggleChatActions hides the content  |
 | .chat-message-actions |  is--visible|  When the server action ToggleChatActions shows the content  |
-
 
 ## Advanced use case
 

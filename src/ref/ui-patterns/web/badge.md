@@ -36,6 +36,6 @@ Applies only to Traditional Web Apps.
 
 1. On the **Properties** tab, set the **Color** to transparent (`Entities.Color.Transparent`).
 
-1. In the ExtendedClass property, set the text color and the border size of the badge. 
+1. In the ExtendedClass property, set the text color and the border size of the badge.
 
     ![Screenshot showing how to set the text color and border size in the Badge's ExtendedClass property](images/badge-4-ss.png "Badge Properties Configuration")

@@ -31,7 +31,5 @@ Applies only to Traditional Web Apps.
 ## CSS Selectors
 
 | Element |  CSS Class |  Description  |
-| ---|---|---
+| ---|---|--- |
 | .file-upload | .active |  When the icon to delete is visible |
-
-

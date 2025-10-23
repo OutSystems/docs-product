@@ -62,6 +62,7 @@ ConfigurationTool.com
 ```
 
 ## Parameters
+
 `/ApplySettingsFactory`
 
 :   Restarts OutSystems services in the current server
@@ -145,7 +146,7 @@ Note:  In order to execute properly in integrated authentication scenarios, this
 
 :   Generates a new private.key file.
 
-Note: After invoking this parameter, in a separate call, `/UpgradeInstall` needs to be invoked with `/InstallServiceCenter`. 
+Note: After invoking this parameter, in a separate call, `/UpgradeInstall` needs to be invoked with `/InstallServiceCenter`.
 In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 This cannot be used with other parameters.
 
@@ -153,10 +154,10 @@ This cannot be used with other parameters.
 
 :   Creates or upgrades the OutSystems platform and logging database model using the `server.hsconf` configuration file.
 
-Note: For Azure SQL Database or SQL Server databases, you must provide the credentials needed to create or upgrade the platform database. 
-Furthermore, if you specify separate platform and logging databases in `server.hsconf`, you also need to provide the credentials needed to create or upgrade the logging database. For Oracle databases, you do not need to provide the admin usernames and passwords. 
+Note: For Azure SQL Database or SQL Server databases, you must provide the credentials needed to create or upgrade the platform database.
+Furthermore, if you specify separate platform and logging databases in `server.hsconf`, you also need to provide the credentials needed to create or upgrade the logging database. For Oracle databases, you do not need to provide the admin usernames and passwords.
 If this parameter is invoked after the first install then it requires `/WithWindowsAuthentication` with integrated authentication password in order to execute properly in integrated authentication.
-    
+
     `<platform_db_admin_username>` is the username for the platform database superuser.
     
     `<platform_db_admin_password>` is the passsword for the platform database superuser.
@@ -183,7 +184,6 @@ Note: In order to execute properly in integrated authentication scenarios, this 
 
 Note: In order to execute properly in integrated authentication scenarios, this requires passing the integrated authentication password with the `/WithWindowsAuthentication` parameter.
 This cannot be used with other parameters.
-
 
 `/UpgradeEnvironment`
 

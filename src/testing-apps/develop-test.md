@@ -26,7 +26,7 @@ When introducing automated tests in OutSystems (UI, integration, or component te
 
 You should develop every application to facilitate tests that validate its correctness. This overarching concept is completely independent of the technology involved.
 
-In this article, we'll review some best practices to consider when implementing testable OutSystems applications. 
+In this article, we'll review some best practices to consider when implementing testable OutSystems applications.
 
 ## Domain Isolation
 
@@ -61,11 +61,11 @@ Core level testing should focus on validating business rules:
 
 * Is the option selected from autocomplete a valid one in the current context?
 
-* Is the value submitted for the mandatory input valid in the current context? 
+* Is the value submitted for the mandatory input valid in the current context?
 
 ### Anti-Pattern #2: Business Logic at the UI Level
 
-The Screen Action to submit changes on a page has embedded business logic in its flow. In the example image, it creates a master record, then it creates or updates child records, and finally creates some notification. 
+The Screen Action to submit changes on a page has embedded business logic in its flow. In the example image, it creates a master record, then it creates or updates child records, and finally creates some notification.
 
 ![Screenshot depicting embedded business logic within a screen action in OutSystems](images/test-biz-logic-ui-ss.png "Business Logic in UI")
 
@@ -88,6 +88,7 @@ This decision about whether to directly reference Public entities between domain
 There are a couple of things you can do to sort it out. If cross-domain entities are referenced directly, that means there’s no possibility to mock data from the other domain. As a result, it is acceptable for test setup activities in the local domain to create any required data directly in the external domain.
 
 However, if those entities are only referenced through APIs or Service Actions, that opens up the possibility to use mock services to simulate data from the external domain. This approach promotes test independence and reliability. In this scenario, it isn’t acceptable for test setup activities in the local domain to directly create any required data in the external domain. Instead, use mock services to get the data.
+
 ## Service API Isolation
 
 Whenever an API service external to the current domain needs to be consumed, it should be done so in a wrapper module. This wrapper module should then expose a set of public actions to use that API, and all modules needing to access the API must go through the wrapper module.
@@ -133,7 +134,6 @@ And what if there is a need to have multiple instances of the same block on the 
 Testing tools usually use XPath or CSS selectors to identify each UI element. When following the approach mentioned above for UI element identification, these UI widgets will all have IDs, but the OutSystems platform will generate a "composed" ID that will only end with the actual name given to the widget inside Service Studio.
 
 The following is a simple example of how you can identify these IDs that end with a given unique name. Remember, the name represents both CSS selectors and XPath selectors for an input with the name "UserNameInput" in Service Studio:
-
 
 CSS Selector
 :   `input[id$=UserNameInput]`
@@ -202,7 +202,7 @@ Example:
 
 #### Functionalities
 
-User interfaces and processes, reusing Core and Library services to implement the user stories. 
+User interfaces and processes, reusing Core and Library services to implement the user stories.
 
 #### Tests
 

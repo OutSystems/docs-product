@@ -45,7 +45,7 @@ The following are some of the key concepts of cross-region disaster recovery:
 * **Recovery point objective (RPO)**
 
     * Defines the point in time to which data must be recovered after a disruption. For example, if an organization has an RPO of 4 hours, it means that the organization can tolerate losing up to 4 hours worth of data but no more.
- 
+
 <div class="info" markdown="1">
 
 OutSystems XRDR supports RPO of either 4 hours or 24 hours, depending on the XRDR add-on selected for the production environment. For more information, please contact your OutSystems account team.
@@ -54,7 +54,7 @@ OutSystems XRDR supports RPO of either 4 hours or 24 hours, depending on the XRD
 
 * **Recovery time objective (RTO)**
 
-    * Refers to the maximum acceptable amount of time that a system, app, or process can be down after a failure or disruption. For example, if an organization has an RTO of 2 hours, it means that the system or process must be up and running within 2 hours of an outage. 
+    * Refers to the maximum acceptable amount of time that a system, app, or process can be down after a failure or disruption. For example, if an organization has an RTO of 2 hours, it means that the system or process must be up and running within 2 hours of an outage.
 
     The following diagram illustrates the recovery point objective before the disaster and the recovery time objective after the disaster.
 
@@ -80,7 +80,7 @@ The following are some of the benefits of cross-region disaster recovery:
 
 * **Compliance**
 
-    * For many industries (for example, healthcare and government), a business continuity disaster recovery plan that is compliant with disasters that may affect a region within a 100-kilometer radius is mandatory. OutSystems XRDR allows you to choose the recovery region from any of the available OutSystems Cloud regions. 
+    * For many industries (for example, healthcare and government), a business continuity disaster recovery plan that is compliant with disasters that may affect a region within a 100-kilometer radius is mandatory. OutSystems XRDR allows you to choose the recovery region from any of the available OutSystems Cloud regions.
 
     * Data sovereignty: With OutSystems XRDR, you can choose the recovery region from any of the available OutSystems Cloud regions.
 

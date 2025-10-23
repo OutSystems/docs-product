@@ -46,9 +46,8 @@ Do the following:
 
 1. Open a command-line console (run as Administrator) and change to the RabbitMQ batch scripts folder;
 
-2. Execute the following command:
+1. Execute the following command:
 `rabbitmqctl.bat status`
-
 
 ## Troubleshooting
 
@@ -194,7 +193,7 @@ Applications cannot reach the RabbitMQ service. The "Test Connection" operation 
     1. Run the following command:
     `rabbitmqctl.bat status`
 
-    3. If the `rabbitmq@<machine_name>` node is not running, run the following command to start it:
+    1. If the `rabbitmq@<machine_name>` node is not running, run the following command to start it:
     `rabbitmqctl.bat start_app`
 
     D) Check if the RabbitMQ user was successfully created by following these steps:
@@ -212,7 +211,7 @@ Applications cannot reach the RabbitMQ service. The "Test Connection" operation 
     1. Run the following command:
     `rabbitmqctl.bat list_permissions -p /<virtual_host>`
 
-    2. If the user doesn't have permissions, run the following command:
+    1. If the user doesn't have permissions, run the following command:
     `rabbitmqctl.bat set_permissions -p /<virtual_host> <admin_username> ".*" ".*" ".*"`
 
     F) Make sure that the password of the user of the cache invalidation service doesn't contain any special characters (for example, `?`, `&`, `^`, `"`, `'`, `*`, `(`, `)`).

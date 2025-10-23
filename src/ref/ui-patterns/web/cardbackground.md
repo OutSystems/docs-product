@@ -30,7 +30,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .card-background-content | .bottom-center | Vertically aligns the content to Bottom and Horizontally align it to Center. |
 | .card-background-content | .bottom-left |  Vertically aligns the content to Bottom and Horizontally align it to Left. |
 | .card-background-content | .bottom-right |  Vertically aligns the content to Bottom and Horizontally align it to Right. |
@@ -48,10 +48,10 @@ Applies only to Traditional Web Apps.
 1. Drag the Counter pattern into the preview.
 
 1. Set the Input Parameters to the following values:
-    - Color: `Entities.Color.Neutral10`
-    - Position: `Entities.PositionExtended.BottomCenter`
-    - Height: `400`
-    - ExtendedClass: `shadow-xl`
+    * Color: `Entities.Color.Neutral10`
+    * Position: `Entities.PositionExtended.BottomCenter`
+    * Height: `400`
+    * ExtendedClass: `shadow-xl`
 
     ![Screenshot of the Counter pattern configuration with specific input parameters for color, position, height, and extended class](images/cardbackground-7-ss.png "Counter Pattern Style Configuration")
 
@@ -70,5 +70,3 @@ Applies only to Traditional Web Apps.
 ## Notes
 
 The object-fit property is not supported in Internet Explorer.
-
-

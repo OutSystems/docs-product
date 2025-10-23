@@ -46,7 +46,6 @@ OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introductio
 |Thickness|--thickness|.osui-progress-bar|
 |Shape|–shape|.osui-progress-bar|
 
-
 ## Client actions
 
 |**Client action**|**Description**|**Parameters**|
@@ -68,4 +67,3 @@ For advanced users, you can use the Progress Bar API (OutSystems.OSUI.Patterns.P
 |GetProgressById|Gets the instance of Progress, by a given ID.|<ul><li>progressId: string</li></ul>|
 |Initialize|Initializes the pattern instance.|<ul><li>progressId: string</li></ul>|
 |SetProgressBarValue|Sets a value on the progress bar.|<ul><li>progressId: string</li><li>progress: number</li></ul>|
-

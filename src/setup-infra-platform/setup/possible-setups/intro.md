@@ -65,12 +65,14 @@ For more information about network architecture, see Recommended Network Archite
 This section details scenarios that can be achieved by manipulating the hostname configuration (Service Center > Administration > Environment Configuration > Hostname).
 
 The hostname configuration is used in the following scenarios:
+
 * Mobile applications' code and configuration files
 * Links in email screens
 * Service Studio **Distribute** tab (in some platform versions)
 * When LifeTime needs to redirect the user to configurations in the environment
 
 The following scenarios are unaffected by the hostname configuration in Service Center. However, they require that the network addresses and routes are correctly configured (This configuration is completely independent of the platform):
+
 * Address that end-users enter when they access the application, for example ``http(s)://servername/MyApp``
 * Address that developers use to connect to the server to publish/debug the applications via Service Studio
 
@@ -92,9 +94,10 @@ In this scenario,you must change the hostname configuration to match ``www.examp
 
 ### Deployment zone configurations
 
-[Selective Deployment Using Deployment Zones](../../../deploying-apps/zones/intro.md) is a feature that allows you to define the distribution of apps by servers on farm environments, ensuring that servers can have different purposes. 
+[Selective Deployment Using Deployment Zones](../../../deploying-apps/zones/intro.md) is a feature that allows you to define the distribution of apps by servers on farm environments, ensuring that servers can have different purposes.
 
 Each deployment zone has an address, which is used in the following scenario:
+
 * Internal communication between apps deployed into different zones, including service APIs
 
 #### Scenario 3: Multiple servers and a load balancer
@@ -138,6 +141,7 @@ In this scenario, you must think carefully about the environment configurations.
 As mentioned in previous scenarios, the address of each deployment zone must be the same address as its load balancer. Additionally, the reverse proxy must map requests from a given external URL to the address of the load balancer.
 
 You can only **define one value for the hostname configuration**. In doing so,  this impacts a few use cases (as described in the [Environment-level configurations](#environment-level-configurations) section), so you need to understand what each of the apps in each deployment zone does and pick one of the following:
+
 * Address of reverse proxy 1 (``intranet.exampledomain.net``)
 * Address of reverse proxy 2 (``www.exampledomain.com``)
 

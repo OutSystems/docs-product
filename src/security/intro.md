@@ -43,12 +43,12 @@ You can guarantee confidentiality by controlling access to information, making s
     You can attain this by following good authentication practices, like strong passwords, multi-factor authentications, security tokens, and digital certificates. You should limit the access to sensitive information and only appear when it's necessary. It must also be subject to Role validation. Common means used to manage confidentiality include access control lists, volume, file encryption, and data permissions.
 
 * **Integrity** – Integrity means the trustworthiness of data or resources in terms of preventing improper and unauthorized changes.
-Data and resources must not be compromised or tampered with, and it must be reliable. You can verify data integrating by using checksums as a practice. 
+Data and resources must not be compromised or tampered with, and it must be reliable. You can verify data integrating by using checksums as a practice.
 
     If the data had modifications, backup or redundancy should exist to guarantee data recovery, which also ensures that  when an authorized person makes a foul change in the data, you can reverse the damage.
 
 * **Availability** – Availability assures that the systems responsible for delivering, storing, and processing information are accessible every time authorized users require them.
-High availability (HA) systems are the computing resources that have architectures specifically designed to improve availability, with hardware and software ready to ensure that sensitive data is always available. 
+High availability (HA) systems are the computing resources that have architectures specifically designed to improve availability, with hardware and software ready to ensure that sensitive data is always available.
 
     Deploying specific HA system architectures can prevent target hardware failures, upgrades, or power outages to support availability, or it may manage several network connections to route around various network outages.
 
@@ -64,7 +64,7 @@ The OSI Model is a shared responsibility model that serves as a standard for def
 
 ![Diagram of the OSI Model showing its seven layers: Application, Presentation, Session, Transport, Network, Data Link, and Physical.](images/osi_model.png "OSI Model Layers")
 
-The security of the applications developed in OutSystems is of utmost importance. OutSystems continuously works to provide and improve the built-in security protection in the host layers, by applying the latest security features in the platform. 
+The security of the applications developed in OutSystems is of utmost importance. OutSystems continuously works to provide and improve the built-in security protection in the host layers, by applying the latest security features in the platform.
 
 This is one of the main reasons why you should keep your OutSystems platform updated to the latest version (Platform Server, LifeTime, Service Studio, and Integration Studio).
 

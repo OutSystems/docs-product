@@ -52,9 +52,9 @@ Message
 Cause
 :   The [modules preparation step](upgrade-platform-module-prep.md) of the upgrade failed. Possible causes are:
 
-  * **[Self-managed installations only]** An unattended upgrade process triggered the modules preparation step manually, using the `ConfigurationTool.com /UpgradePublishedApplications` parameter, but the installation of the Service Center or the System Components hasn't run yet.
-    
-  * An internal error occurred during the process.
+* **[Self-managed installations only]** An unattended upgrade process triggered the modules preparation step manually, using the `ConfigurationTool.com /UpgradePublishedApplications` parameter, but the installation of the Service Center or the System Components hasn't run yet.
+
+* An internal error occurred during the process.
 
 Recommendation
 :   Click the link **Click here for more details** to see the details of the error. This link takes you to the **Error Log** screen:

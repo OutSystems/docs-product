@@ -64,6 +64,7 @@ You'll need to restart the RabbitMQ service for the configuration changes to tak
 </div>
 
 To restart the RabbitMQ service and detect config changes on windows do the following:
+
 1. Open a command-line in the `<RabbitMQ installation folder>\sbin` folder.  
 If you installed RabbitMQ via Configuration Tool, the install folder is located in `<OutSystems install folder>\Platform Server\thirdparty\RabbitMQ Server\rabbitmq_server-<version>`.
 
@@ -79,10 +80,11 @@ _Note:_ There are alternatives to the `autoheal` strategy and you have the abili
 
 ### Step 3. Aggregate the two nodes into a single cluster
 
-RabbitMQ nodes and CLI Tools use a cookie to determine whether they are allowed to communicate with each other. 
-For a CLI tool and a node to be able to communicate they must have the same shared secret called the Erlang cookie. Therefore before you aggregate the nodes into a single cluster it is necessary to have the same secret across all the nodes in the cluster. 
+RabbitMQ nodes and CLI Tools use a cookie to determine whether they are allowed to communicate with each other.
+For a CLI tool and a node to be able to communicate they must have the same shared secret called the Erlang cookie. Therefore before you aggregate the nodes into a single cluster it is necessary to have the same secret across all the nodes in the cluster.
 See [Command Line Tools](https://www.rabbitmq.com/cli.html#erlang-cookie) from the official RabbitMQ documentation for more information on the Erlang cookie and file location.
 Make sure all machines can communicate with each other by confirming:
+
 1. The DNS of the hostnames used resolve correctly.
 1. The TCP ports required for RabbitMQ clustering are open in each node. See [Networking and RabbitMQ](https://www.rabbitmq.com/networking.html#epmd-port) from the official RabbitMQ documentation for more information about the port requirements.
 

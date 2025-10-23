@@ -31,7 +31,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .animated-label | .animated-label-inline |  When IsInline Input Parameter is true |
 
 ## Advanced use case
@@ -46,10 +46,10 @@ Applies only to Traditional Web Apps.
 
 1. Publish and test.
 
-**Before** 
+**Before**
 
 ![Screenshot of the Animated Label UI Pattern before activation](images/animatedlabel-5-ss.png "Animated Label Before Activation")
 
-**After** 
+**After**
 
 ![Screenshot of the Animated Label UI Pattern after activation, with the label positioned 50px from the top](images/animatedlabel-6-ss.png "Animated Label After Activation")

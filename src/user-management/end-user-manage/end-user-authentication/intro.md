@@ -70,7 +70,7 @@ To configure how the platform authenticates end users do the following:
 
     ![Screenshot of LDAP authentication configuration options in OutSystems Users application](images/ldap-2.png "LDAP Authentication Configuration")
 
-1. If you choose **Active Directory**, **LDAP**, **SAML 2.0**, **Microsoft Entra** or **Okta**, you must fill in other configuration fields specific to the authentication method. 
+1. If you choose **Active Directory**, **LDAP**, **SAML 2.0**, **Microsoft Entra** or **Okta**, you must fill in other configuration fields specific to the authentication method.
 
 For more information about configuring the authentication methos, refer to the other topics in this section.
 
@@ -125,4 +125,3 @@ Note that this process does not create any new users in the OutSystems database.
 If a user is deactivated in the active directory, the user's status is synchronized by the `SynchronizeDomainUsers` timer. However, when the user is reactivated in the active directory, the user's status is **not updated to active**. This prevents the user from logging in.
 
 **Workaround:** Log into the Users module using Administrator credentials and update the user's status to active.
-

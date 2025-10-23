@@ -131,9 +131,9 @@ From version 11.38.0 onwards, the Platform Server can be installed on FIPS-compl
 
 To be able to achieve FIPS-compliance, customers must:
 
-- Install Platform Server 11.38.0 or higher
-- Use .NET 4.8 Framework or higher
-- Purchase and install the commercial version of RabbitMQ<sup>1</sup>
+* Install Platform Server 11.38.0 or higher
+* Use .NET 4.8 Framework or higher
+* Purchase and install the commercial version of RabbitMQ<sup>1</sup>
 
 <div class="info" markdown="1">
 
@@ -147,7 +147,6 @@ RabbitMQ Server and Erlang version numbers follow the format: Major.Minor.Patch.
 
 You can upgrade to the latest Patch of RabbitMQ Server provided that:
 
-
 * The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 3.10.25 for environments using Platform Server 11.19.0
 * The Minor version of Erlang is higher than the one listed for the Platform Server version. For example, you can upgrade Erlang version to 25.2 for environments using Platform Server 11.19.0
 * You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html). For example, when upgrading for RabbitMQ Server 3.10.25 you can upgrade Erlang to 25.2
@@ -159,7 +158,6 @@ Depending on the RabbitMQ used by the Platform Server, you can upgrade to either
     * to 27.4 (Minor) for environments using Platform Server 11.38.0.
     * to 26.2.5 (Patch) for environments using Platform Server 11.37.0.
 * You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html).
-
 
 The following are the minimum Patch versions of RabbitMQ Server and Erlang per Platform Server version:
 
@@ -268,7 +266,6 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 * MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
 * MySQL 8.4 (8.4.3 or later within the 8.3 version, all editions), since Platform Server 11.38.0
 
-
 <sup>1</sup> This version is no longer supported by MySQL and isn't supported by OutSystems starting with Platform Server version 11.32.0.
 
 ### PostgreSQL database
@@ -345,7 +342,7 @@ Before setting up Service Studio make sure that your computer meets the followin
 #### Required software
 
 * Google Chrome version 54 or later, or Microsoft Edge (Edge is only available for Service Studio running on Windows)
-:   To perform client-side debugging in Service Studio using a  desktop browser 
+:   To perform client-side debugging in Service Studio using a  desktop browser
 * Android device drivers
 :   To perform client-side debugging on an Android mobile device if the device isn't recognized automatically
 * iTunes 12.1.3 or later
@@ -388,10 +385,10 @@ Running an OutSystems app on a browser is supported for 6 months after the end-o
 
 Use the most current stable version of the following browsers:
 
-* Edge 
-* Firefox 
-* Google Chrome 
-* Safari 
+* Edge
+* Firefox
+* Google Chrome
+* Safari
 
 ### Progressive Web Apps
 
@@ -408,9 +405,9 @@ For more information on the supported Android and iOS platform versions, refer t
 
 Use the most current stable version of the following browsers:
 
-* Internet Explorer 
-* Edge 
-* Firefox 
+* Internet Explorer
+* Edge
+* Firefox
 * Google Chrome
 * Safari
 

@@ -31,7 +31,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .columns | .columns2 |  When is the Columns2 Pattern  |
 | .columns | .columns3 |  When is the Columns3 Pattern  |
 | .columns | .columns4 |  When is the Columns4 Pattern  |
@@ -59,5 +59,3 @@ Applies only to Traditional Web Apps.
 | .columns | .phone-break-last | When Columns will break the last column item in phone |
 | .columns | .phone-break-middle | When Columns will break in the middle of column item in phone |
 | .columns | .phone-break-none | When Columns will not break in phone |
-
-

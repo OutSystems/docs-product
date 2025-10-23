@@ -25,8 +25,7 @@ coverage-type:
 Download the whitepaper version of this document [here](https://www.outsystems.com/1/high-availability-scalability/).
 </div>
 
-
-For enterprise applications, OutSystems believes that customers should have as much control as possible. That’s why OutSystems is designed not to be a *deep void* where you cannot see or control what lies beneath the interface. Instead, it simplifies all operations, while still providing several extension points and control options over the underlying infrastructure.
+For enterprise applications, OutSystems believes that customers should have as much control as possible. That’s why OutSystems is designed not to be a _deep void_ where you cannot see or control what lies beneath the interface. Instead, it simplifies all operations, while still providing several extension points and control options over the underlying infrastructure.
 
 When you use OutSystems in the Cloud, OutSystems manages your environments to guarantee availability while still maintaining the flexibility you need to carry out operations on your self-managed installations.
 
@@ -46,7 +45,7 @@ The OutSystems distributed architecture consists of a deployment server that per
 
 A **load balancer** automatically distributes incoming application traffic across multiple front-end servers to spread the request load. The load balancer also detects any unhealthy front-end servers in the production environment and automatically reroute traffic to healthy instances until health is restored, increasing the fault tolerance of all applications. OutSystems stores mobile and web user sessions in the session database, allowing multiple requests from the same user to be handled by any front-end server in a farm environment. For improved performance and operation, the session database elements are configured on a dedicated database schema. OutSystems uses the native session management services of the application server stack.
 
-To sustain scalability, Outsystems also uses **automated resource optimization and management**. The risk of creating highly scalable applications with traditional technology is human error. If an application handles millions of hits, a small mistake, such as forgetting to close a reader, can take the whole system down. OutSystems avoids human error by ensuring that no reader, connection, or transaction is left open. It optimizes the source code it generates to ensure that applications use as few resources as possible. Enterprises, large or small, don't need expensive distributed systems or technical knowledge to get the best performance. 
+To sustain scalability, Outsystems also uses **automated resource optimization and management**. The risk of creating highly scalable applications with traditional technology is human error. If an application handles millions of hits, a small mistake, such as forgetting to close a reader, can take the whole system down. OutSystems avoids human error by ensuring that no reader, connection, or transaction is left open. It optimizes the source code it generates to ensure that applications use as few resources as possible. Enterprises, large or small, don't need expensive distributed systems or technical knowledge to get the best performance.
 
 ## Vertical scaling
 
@@ -57,7 +56,6 @@ Self-managed and OutSystems Cloud installations allow you to **scale vertically*
 * Enhance the processing power of the database as an application portfolio grows to handle an increased load
 
 ![Diagram showing vertical scaling in OutSystems infrastructure by increasing computing power within a single environment.](images/ha-scalability-vertical-scaling-diag.png "Vertical Scaling Diagram")
-
 
 ## Horizontal scaling
 
@@ -89,13 +87,14 @@ For this use case, you can **scale horizontally** by adding more servers, distri
 
 Using the horizontal scalability cloud service, OutSystems places additional front ends in separate and isolated availability zones (but always in the organization-specified region). This has no major performance impact on applications since all availability zones in the same region are connected by special low-latency links. In the rare scenario of a data center disaster or failure, the availability of other front-end servers isn't likely to be affected.
 
-For the high-availability configuration, an organization's production database instance has a *standby* replica in a different availability zone, which automatically fails over to the up-to-date standby. Database operations can resume quickly after a failure or planned maintenance.
+For the high-availability configuration, an organization's production database instance has a _standby_ replica in a different availability zone, which automatically fails over to the up-to-date standby. Database operations can resume quickly after a failure or planned maintenance.
 
 ## High availability design
 
-High availability solutions can be divided into two basic designs: 
-1. **Localized** high availability design 
-2. **Geographic** high availability design.
+High availability solutions can be divided into two basic designs:
+
+1. **Localized** high availability design
+1. **Geographic** high availability design.
 
 **Localized high availability design** prevents localized hazardous events. By having redundancy, you can balance your load to respond to any existing events.
 
@@ -109,16 +108,15 @@ To scale horizontally in the OutSystems Cloud, OutSystems deploys additional fro
 
 ## High availability infrastructure overview
 
-When considering a high availability infrastructure, there are different layers to keep in mind. Each layer serves a different function and requires distinct technologies to handle redundancy. 
+When considering a high availability infrastructure, there are different layers to keep in mind. Each layer serves a different function and requires distinct technologies to handle redundancy.
 
 An infrastructure is composed of several environments, and you can decide to have redundancy on all of them or just some of them. For example, production environments are critical to be readily available, while non-production environments, like development and testing, may not be. It all depends on your specific needs.
-
 
 The following diagram depicts all the layers in the scope of a single environment.
 
 ![Comprehensive diagram outlining the different layers of a high availability infrastructure in an OutSystems environment.](images/ha-scalability-infrastructure-diag.png "High Availability Infrastructure Overview Diagram")
 
-For more information about the layers and components outlined in this graphic, see the corresponding App Access, Application Delivery, Platform Core, and Data Access sections below. 
+For more information about the layers and components outlined in this graphic, see the corresponding App Access, Application Delivery, Platform Core, and Data Access sections below.
 
 ### App access
 
@@ -176,8 +174,6 @@ The platform core layer is composed of services necessary for the platform serve
 
 The RabbitMQ executes cache invalidation across the environment. It can be placed in any server but is typically located in the controller server. This service [supports clustered configuration](../../cache-invalidation/high-availability.md).
 
-
-
 #### Controller
 
 The controller server has no cluster capability, so it can only grow vertically. Adding CPU cores, memory, and increasing disk I/O provides faster compile times for large and very active teams.
@@ -188,7 +184,7 @@ Because the controller isn't clusterable nor can it be set in a farm configurati
 
 ### Data Access
 
-OutSystems Cloud offers a high availability configuration for production databases on select editions, whereby the production database instance has a *standby* replica in a different availability zone. 
+OutSystems Cloud offers a high availability configuration for production databases on select editions, whereby the production database instance has a _standby_ replica in a different availability zone.
 
 Database updates are made concurrently on the primary and standby databases to prevent replication lag. Should there be a database instance failure, planned database maintenance, or an availability zone failure, OutSystems automatically fails over to the up-to-date standby, so that database operations can resume quickly without administrative intervention. (Prior to failover, it isn’t possible to directly access the standby database, nor can it be used to serve read traffic.)
 
@@ -226,7 +222,6 @@ Oracle has the following solutions to provide the minimum downtime depending on 
 
 For more information, see the [Oracle documentation](http://docs.oracle.com/cd/B19306_01/server.102/b14210/hafeatures.htm).
 
-
 #### Database storage
 
 OutSystems allows you to scale the storage resources of your database as they grow, which eliminates huge upfront investments and the need to plan costly database migrations. In the OutSystems Cloud, additional database storage capacity is added as needed, while maintaining database availability and with minimal impact to your running applications.
@@ -241,10 +236,9 @@ The following are the OutSystems Cloud network redundancy options available for 
 
 * **VPN**: If your VPN gateway supports asymmetric routing, you can configure the two VPN tunnels to ensure high-availability of the VPN connection. Amazon performs routine maintenance on the virtual private gateways, which can disable one of the VPN tunnels for a brief period. Having two VPN tunnels configured ensures the failover to the second VPN tunnel if the first VPN tunnel goes down. It’s also possible to achieve redundancy in a private network connection by using other networking solutions such as Direct Connect and Transit Gateway.
 
-* **Direct Connect**: [AWS Direct Connect](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/AWS_Direct_Connect_on_OutSystems_Cloud) is a highly available service that links an internal network to an AWS account over a dedicated circuit. For scenarios that require the use of high bandwidth and a steady connection without network congestion, you can use AWS Direct Connect to link your private network to your OutSystems Cloud over a dedicated line. 
+* **Direct Connect**: [AWS Direct Connect](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/AWS_Direct_Connect_on_OutSystems_Cloud) is a highly available service that links an internal network to an AWS account over a dedicated circuit. For scenarios that require the use of high bandwidth and a steady connection without network congestion, you can use AWS Direct Connect to link your private network to your OutSystems Cloud over a dedicated line.
 
 * **Transit Gateway**: For seamless integration with your corporate systems, OutSystems allows you to connect to your OutSystems Cloud VPC using your own [AWS Transit Gateway](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Connect_to_your_OutSystems_Cloud_using_AWS_Transit_Gateway#:~:text=AWS%20Transit%20Gateway%20and%20your,networks%20to%20a%20single%20gateway.). This service enables you to connect your multiple AWS accounts, Virtual Private Clouds (VPCs), and your on-premises networks to a single gateway. AWS Transit Gateway is a service with high availability by design.
-
 
 #### Self managed network redundancy
 
@@ -262,7 +256,7 @@ In OutSystems Cloud, [new front-ends](https://success.outsystems.com/Support/Ent
 
 For self-managed installations, OutSystems allows you to perform unattended or [automated Platform Server installations to add new front-end servers](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade#Adding_a_Front-End). OutSystems provides built-in command lines that you can use to create automated installation PowerShell scripts that assist with Platform Server setup tasks. These can be used after auto scaling mechanisms to ensure a consistent OutSystems installation. The OutSystems distributed architecture also ensures that all applications are automatically deployed to new front ends.
 
-To avoid over- or under-provisioning, cloud computing elasticity features can be used, along with OutSystems automated installation scripts, to adapt to workload changes by provisioning and de-provisioning resources in an automatic manner. 
+To avoid over- or under-provisioning, cloud computing elasticity features can be used, along with OutSystems automated installation scripts, to adapt to workload changes by provisioning and de-provisioning resources in an automatic manner.
 
 ### Elasticity setup
 
@@ -294,7 +288,7 @@ For **VM provisioning**, you’ll need to ensure the following:
 
 * It’s also recommended that the same hardware specifications (CPU, RAM, disk space) are maintained across all the front ends of an environment.
 
-To automate **installing the pre-requirements and Platform Server**, you can have the necessary binaries readily available on a storage account. By running the PowerShell scripts created from the commands of the [unattended installation of a new front end](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade#Adding_a_Front-End) steps, the **server is associated with the environment**. 
+To automate **installing the pre-requirements and Platform Server**, you can have the necessary binaries readily available on a storage account. By running the PowerShell scripts created from the commands of the [unattended installation of a new front end](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade#Adding_a_Front-End) steps, the **server is associated with the environment**.
 
 #### Example with Azure scale sets
 
@@ -304,7 +298,7 @@ The deployed OutSystems infrastructure is summarized in the following diagram:
 
 ![Diagram of the OutSystems infrastructure deployed on Microsoft Azure, ready for horizontal scaling with Azure scale sets.](images/outsystems-infrastructure.png "OutSystems Infrastructure on Azure")
 
-Production environments, when deployed in farm mode, are ready for **horizontal scaling** with [Azure scale sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview). This scaling operation is exclusively done in the Azure Portal, so you don’t have to make any changes in OutSystems to register the new front-end servers. This allows your farm to distribute the workload evenly across the scale set servers. 
+Production environments, when deployed in farm mode, are ready for **horizontal scaling** with [Azure scale sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview). This scaling operation is exclusively done in the Azure Portal, so you don’t have to make any changes in OutSystems to register the new front-end servers. This allows your farm to distribute the workload evenly across the scale set servers.
 
 In Azure, even when you’re not using the OutSystems solution template for Microsoft Azure Marketplace, elasticity can still be accomplished by using Virtual Machine Scale Sets (VMSS). VMSS allows you to create and manage a group of load-balanced virtual machines (VM). The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
 

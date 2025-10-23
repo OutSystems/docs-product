@@ -34,7 +34,7 @@ The certificate needs to be installed through Microsoft Management Console (MMC)
 1. Install the certificate on the Personal Store:
     1. Open the Microsoft Management Console (Start > MMC);
     1. go to **File** >  **Add/Remove Snap-in**;
-    1. on the left list, select **Certificates** and click **Add**; 
+    1. on the left list, select **Certificates** and click **Add**;
     1. on the certificates snap-in window, select **Computer Account**. Click next;
     1. select **Local Computer**. Click **Finish**;
     1. click **OK**;
@@ -46,8 +46,8 @@ The certificate needs to be installed through Microsoft Management Console (MMC)
         1. click **Next**;
         1. make sure that **Automatically select the certificate store based on the type of certificate** is selected;
         1. click **Next**;
-        1. click on **Finish**.       
-1.   Verify if the certificate and the CAs are installed in the correct stores and the Root Certification Authority (CA) is trusted:
+        1. click on **Finish**.
+1. Verify if the certificate and the CAs are installed in the correct stores and the Root Certification Authority (CA) is trusted:
 
 * Go back to the location where the certificate file is (under **MMC** > **Certificates** > **Personal** > **Certificates**);
 * right-click on the certificate and select **Open**;
@@ -63,10 +63,9 @@ The certificate needs to be installed through Microsoft Management Console (MMC)
 
     If any are missing, you can import them (similarly to the previous step, but choose the **Intermediate Certification Authorities** store); you can also copy and paste or drag the certificates in MMC to move them to the correct location.
 
-
 ## Configure  the certificate permissions
 
-This step is only necessary if the certificate *isn't* a CER type certificate.
+This step is only necessary if the certificate _isn't_ a CER type certificate.
 
 For certificates that aren't of CER type, configure the certificate's security to grant read permissions for the following groups/users:
 
@@ -114,10 +113,8 @@ If you are having trouble using client-side authentication, besides double check
 
 * Verify that the certificate's permissions for the private key are [correctly configured](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Installing_client_side_certificates_on_on-premises_environments#Configure__the_certificate_permissions).
 
-* Confirm that no CA or certificate is missing. 
+* Confirm that no CA or certificate is missing.
 
     You might have more than one certificate file. They can contain the same certificate in different file formats or each certificate/CA might be separated. They should be imported such that the certification path is included in the certificate store.
 
     Note: re-importing a certificate containing a private key resets the private key permissions to the default.
-
-

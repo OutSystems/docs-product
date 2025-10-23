@@ -46,7 +46,6 @@ Applies only to Traditional Web Apps.
 | onOpen | Event that will be triggered once you open the date picker.  |  False  |
 | OnSelect | Event will be triggered when a date is selected returning it.  |  False  |
 
-
 ## Advanced Use Case
 
 ### Start with a blank input
@@ -57,8 +56,7 @@ Applies only to Traditional Web Apps.
 
     ![Illustration of the Advanced Format property expansion in the Date Picker settings](images/datepicker-image-9.png "Advanced Format Property")
 
-1. Add `{ BeginEmpty: true }` in the AdvancedFormatJSON. 
-
+1. Add `{ BeginEmpty: true }` in the AdvancedFormatJSON.
 
     ![Configuration setting for starting with a blank input in the Date Picker](images/datepicker-image-11.png "Blank Input Configuration")
 
@@ -70,7 +68,7 @@ Applies only to Traditional Web Apps.
 
     ![Illustration of the Advanced Format property expansion in the Date Picker settings](images/datepicker-image-9.png "Advanced Format Property")
 
-1. Add `{ bound: false }` in the AdvancedFormatJSON. 
+1. Add `{ bound: false }` in the AdvancedFormatJSON.
 
 1. To use events to pick the chosen date, use OnSelect instead of OnClose.
 
@@ -90,9 +88,8 @@ Applies only to Traditional Web Apps.
 
 1. Drag the DatePicker to the preview.
 
-1. Set the format of the date (for instance, `"DD MMM of YYYY"` will be displayed as 12 Dec of 2018). 
+1. Set the format of the date (for instance, `"DD MMM of YYYY"` will be displayed as 12 Dec of 2018).
 
 1. Create an onClose or OnSelect event and use the date for your logic.
 
     ![Example of setting a custom date format in the Date Picker component](images/datepicker-image-12.png "Date Format Configuration")
-

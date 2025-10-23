@@ -31,7 +31,7 @@ Applies only to Traditional Web Apps.
 ## CSS Selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .blank-slate | .bottom-center | Vertically aligns the content to Bottom and Horizontally align it to Center. |
 | .blank-slate | .bottom-left |  Vertically aligns the content to Bottom and Horizontally align it to Left. |
 | .blank-slate | .bottom-right |  Vertically aligns the content to Bottom and Horizontally align it to Right. |

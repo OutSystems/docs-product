@@ -44,23 +44,25 @@ Additionally, a dedicated management environment is provisioned by OutSystems co
 
 * [Adding new front-end servers to an environment](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Add_a_new_front-end_server_to_your_environment)
 
-The following diagram illustrates the concepts described above: 
+The following diagram illustrates the concepts described above:
 
 ![Diagram showing the structure of OutSystems Cloud environments with dedicated AWS account, customer VPC, and isolated DEV, TEST/QA, and PRD environments.](images/data-security-rest-1.png "OutSystems Cloud Environment Structure")
 
 ### Data location and sovereignty
+
 OutSystems keeps cloud environment data in the AWS Region you select, which enables you to maintain compliance with data residency regulations.
 
 Learn more in [Choosing the AWS Regions for an OutSystems Cloud deployment](https://www.outsystems.com/evaluation-guide/choosing-the-region-for-an-outsystems-cloud-deployment/).
 
 ## Data storage stack responsibilities
+
 In the OutSystems cloud environments provisioned in your infrastructure, data will be stored and managed in the assets as follows:
 
 * By default, application data produced in the application flows created by your development teams will be stored in the database of that environment.
 
 * Application data cannot be stored in the front-end servers, apart from a specific directory (D:\User) that can be used to store temporary files. Sentry offer contains security controls that apply countermeasures when uploading malware. Malicious files are removed after upload but note that no notification is shown at runtime.
 
-In the following table, you can find the retention period and responsibilities for the cloud environment assets. 
+In the following table, you can find the retention period and responsibilities for the cloud environment assets.
 
 **Note**: The retention periods listed assume an active, paid-up subscription to the applicable OutSystems products. If your subscription has terminated, the retention periods no longer apply. In this case, the terms of the Master Subscription Agreement with OutSystems apply.
 
@@ -213,7 +215,7 @@ Dedicated encryption keys are used to encrypt each asset delivered to customers.
 This is available by default on all Sentry offer Front-end servers. It's not available in any other editions.
 </div>
 
-## Securing data at rest on OutSystems Cloud databases 
+## Securing data at rest on OutSystems Cloud databases
 
 ### Database encryption at rest
 
@@ -226,7 +228,7 @@ The encryption of database server at rest:
 * Uses the industry-standard AES-256 encryption algorithm to encrypt the data on the server that hosts the virtualized database server used in the environment.
 
 * Encrypts the database servers' volumes by default upon asset creation.
- 
+
 OutSystems manages the database server encryption keys with the following policies:
 
 * Dedicated encryption keys are used to encrypt each database server delivered to the cloud environments provisioned for your usage.
@@ -283,6 +285,7 @@ Regarding data at rest, OutSystems recommends that you:
 We have already detailed how data is encrypted at rest at the storage level. Since your sensitive data should also be encrypted at the application layer, this section explains how you can encrypt sensitive data, e.g. Personal Identifiable Information (PII), with illustrative examples.
 
 #### Use envelope encryption techniques
+
 One of the best approaches for encrypting data at the application level is to apply envelope encryption. Envelope encryption can be better defined as a way to secure the data and the keys that protect that data, and it is agnostic to the encryption algorithm used. When using envelope encryption at least two distinct keys need to be used:
 
 **Data encryption key** ![Icon representing a Data Encryption Key (DEK) used in envelope encryption.](images/data-key.png "Data Encryption Key Icon")
@@ -308,6 +311,7 @@ The Key Encryption Key (KEK) is the key used to encrypt (or wrap) the DEK. This 
 Although envelope encryption is agnostic to the encryption algorithm, OutSystems recommends that you use the Advanced Encryption Standard in Galois Counter Mode with 256-bit strength.
 
 #### How to use envelope encryption to encrypt data
+
 The following picture shows how to encrypt data using envelope encryption and a DEK.
 
 If you haven’t done it already, start by generating a DEK, then feed the clear text data and the DEK to the encryption algorithm that is obtaining the encrypted data that can be stored. The DEK should then be fed to a function that is responsible for wrapping (encrypting) the DEK and then stores it in the database alongside the encrypted data.
@@ -323,6 +327,7 @@ The encryption of the DEK can be done in two ways:
 In the case of the illustration, the DEK is sent to an external system that returns the wrapped DEK.
 
 #### How to use envelope encryption to decrypt data
+
 The following picture describes how to decrypt data using envelope encryption.
 
 Retrieve both the encrypted data and the wrapped DEK from storage. Start by unwrapping (decrypting) the DEK. Feed both the DEK and the encrypted data to the decryption function and obtain clear text data.
@@ -340,17 +345,20 @@ In the case of illustration, the wrapped DEK is sent to an external system that 
 By using enveloped encryption as described here, it is possible to protect data at the application layer and ensure that only authorized users, processes, or both are allowed to access the sensitive data.
 
 #### How to apply envelope encryption
-For the following examples, we used the CryptoAPI Forge component. The CryptoAPI is a community-driven component that provides strong encryption functions as well as the generation of encryption keys. 
+
+For the following examples, we used the CryptoAPI Forge component. The CryptoAPI is a community-driven component that provides strong encryption functions as well as the generation of encryption keys.
 
 Here are the ways you can use the platform's unique secret key as KEK and store the wrapped DEK in the database.
 
 ![Flowchart demonstrating the OutSystems envelope encryption process, including generating and storing the DEK.](images/os-encription-envelope.png "OutSystems Envelope Encryption Process")
 
 ##### Encrypting data
+
 Generate a DEK
 Since we are going to use the Advanced Encryption Standard (AES), we start by creating an action that generates an AES key. We generate an AES key, then the key is wrapped using the platform app unique secret key, and finally, it is saved as a site property.
 
 ##### Encrypt data
+
 Next, we use a function that receives the clear text data, reads the DEK, encrypts the data using the DEK, and returns the encrypted data to be stored.
 
 ![Detailed flowchart showing the steps for encrypting data in OutSystems using envelope encryption.](images/os-encription-envelope-detail.png "OutSystems Data Encryption Detail")
@@ -358,13 +366,15 @@ Next, we use a function that receives the clear text data, reads the DEK, encryp
 The data is now ready to be stored in an encrypted format.
 
 #### Decrypting data
+
 Decrypting the data is as simple as retrieving the DEK, feeding it alongside the encrypted data to the decryption function, and obtaining the clear text data.
 
- ![Detailed flowchart showing the steps for decrypting data in OutSystems using envelope encryption.](images/os-decription-envelope-detail.png "OutSystems Data Decryption Detail") 
+ ![Detailed flowchart showing the steps for decrypting data in OutSystems using envelope encryption.](images/os-decription-envelope-detail.png "OutSystems Data Decryption Detail")
 
 The function AES_ReadKey retrieves the wrapped DEK, performs the unwrap operation, and returns the DEK. Both the DEK and the encrypted data are then fed to the decryption algorithm that returns the clear text data.
 
 ## Conclusion
+
 By combining infrastructure-level encryption with application-level encryption, it is possible to protect any data at rest from unauthorized access.
 
 ## References and further reading

@@ -29,7 +29,6 @@ The OutSystems Cloud environments include valid SSL certificates, by default, wi
 
 </div>
 
-
 An SSL certificate binds a cryptographic key to an organization’s details. When such a certificate is installed in an application server, the HTTPS protocol is activated. This creates an encrypted channel between your web server and your visitor’s web browser, allowing the transmission of private information without being eavesdropped or tampered.
 
 This article contains instructions on how to request and install a certificate in your application server so that your OutSystems applications can be used over secure connections via HTTPS. It applies to .NET/Windows stacks.
@@ -48,13 +47,11 @@ Reach out to your network, system or infrastructure administrator if you need he
 
 A typical step before requesting a new certificate or renew an existing one, is to generate a CSR to be provided to the Certificate Authority. If you need instructions on how to generate a CSR, refer to [this article](https://www.outsystems.com/tk/redirect?g=98e7f6a1-508c-4d53-9ac9-1de52829e137). If you already have a CSR, proceed to the next section.
 
-
 ## Acquiring the SSL certificate
 
 After you have created your Certificate Signing Request (the .txt file), you need to acquire the certificate before installing it in your application server.
 
 To obtain a certificate contact a Certification Authority.
-
 
 <div class="info" markdown="1">
 
@@ -68,11 +65,11 @@ Check the [OutSystems System Requirements](system-requirements.md) for more info
 
 ## Installing the SSL certificate
 
-
 <div class="info" markdown="1">
 
 **Important Note:**
 Certificates have a chain comprised of the following:
+
 * Root > Intermediate > Final server (domain) certificate
 
 ​​Some Certificate Authorities issue the certificate with the complete chain, and others issue the final server (domain) certificate only, instructing the users to create the remaining parts of the chain.
@@ -81,7 +78,6 @@ Before proceeding with the installation, check the integrity of your certificate
 </div>
 
 Once you have acquired your certificate, you need to install it in your application server. The following sections include instructions on how to do it, for each of the application servers supported by OutSystems. These instructions assume that you have OutSystems installed, already. For instructions on how to install OutSystems, refer to [Setting Up OutSystems](intro.md).
-
 
 The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.
 
@@ -92,7 +88,6 @@ The SSL Certificate can alternatively be installed at a load balancer or reverse
 You must run all commands as a user with Administrator privileges.
 
 </div>
-
 
 ### Importing the root and intermediate certificates
 
@@ -112,7 +107,7 @@ If your certification authority provided you with a root certificate and/or one 
     ![Add/Remove Snap-in option highlighted in the Microsoft Management Console](images/install-ssl-platform-mmc_3.png "Adding Snap-in to MMC")
 
 1. Select **Certificates** and click **Add**. The **Certificate snap-in** window opens.
-    
+
     ![Certificates option selected in the Add/Remove Snap-in window of MMC](images/install-ssl-platform-mmc_4.png "Selecting Certificates Snap-in")
 
 1. Select **Computer Account** and click **Next >**.
@@ -136,7 +131,7 @@ If your certification authority provided you with a root certificate and/or one 
     ![Certificate Import Wizard window prompting to click Next to continue](images/install-ssl-platform-mmc_8.png "Certificate Import Wizard")
 
 1. In the Certificate Import Wizard, click **Next**.
-1. In the **File to Import** section, browse the location of your root or intermediate certificate (for example, *MyCA_Root_or_Intermediate.cer*), select it, and click **Next**.
+1. In the **File to Import** section, browse the location of your root or intermediate certificate (for example, _MyCA_Root_or_Intermediate.cer_), select it, and click **Next**.
 
     ![File browser window to select the root or intermediate certificate file for import](images/install-ssl-platform-mmc_9.png "Selecting Certificate File to Import")
 
@@ -153,8 +148,7 @@ If your certification authority provided you with a root certificate and/or one 
 1. Click **Finish** to complete the Certificate Import Wizard.
 1. Repeat steps **13** to **15** to install the other certificate (intermediate, in case you installed the root, or vice-versa). You must have both certificates installed.
 
-
-### Importing the server (domain) certificate 
+### Importing the server (domain) certificate
 
 After importing the root and intermediate certificates, you need to import the server certificate (final domain certificate). Perform the following actions to accomplish this:
 
@@ -206,7 +200,7 @@ After importing the root and intermediate certificates, you need to import the s
         ![SSL Certificate drop-down menu with a friendly name selected in the Add Site Binding window](images/install-ssl-platform-iis_8.png "Selecting SSL Certificate for Binding")
 
     * Click **OK**.
-    
+
         ![Add Site Binding window with all fields filled out ready to confirm the new binding](images/install-ssl-platform-iis_9.png "Confirming New Site Binding")
 
 1. Your SSL Certificate is now installed and the website configured to accept secure connections. You may have to restart the IIS or the server for it to recognize the new certificate.
@@ -222,23 +216,3 @@ If you can force HTTPS redirection of all accesses via HTTP. You can control thi
 HTTP requests are always secure in mobile apps (HTTPS), therefore this configuration doesn't apply to mobile apps.
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

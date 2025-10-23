@@ -36,7 +36,7 @@ You must configure the platform so applications can reach this service. You can 
 
 ## When do I need High Availability? { #when-ha }
 
-Every time a cache invalidation occurs for a module or a tenant, all applications watching for changes on these elements are notified, and they flag their local copies as dirty. When the Cache Invalidation Service is down or unavailable (for example, during configuration changes on this service), applications aren't notified of any cache invalidations that might have occurred. This may cause some inconsistent behavior until either these applications can reach the service again or new service configurations are applied. 
+Every time a cache invalidation occurs for a module or a tenant, all applications watching for changes on these elements are notified, and they flag their local copies as dirty. When the Cache Invalidation Service is down or unavailable (for example, during configuration changes on this service), applications aren't notified of any cache invalidations that might have occurred. This may cause some inconsistent behavior until either these applications can reach the service again or new service configurations are applied.
 
 If your application makes use of [Object caching](https://success.outsystems.com/Documentation/11_x_platform/Developing_an_Application/Use_Data/Caching) or [Site Properties](https://success.outsystems.com/Documentation/11_x_platform/Developing_an_Application/Use_Data/Use_Site_Properties_to_Configure_Behaviors_at_Runtime) and has no tolerance to stale values of those objects or global variables in the case the Cache Invalidation Service is down or unavailable, you should consider configuring for high availability.
 

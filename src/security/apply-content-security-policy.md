@@ -224,4 +224,3 @@ If you want to use both CSP directives and iframes in your iOS apps, add the fol
 Failure to do so prevents content from rendering. You can identify the issue by searching for the **Interrupting main resource load due to CSP frame-ancestors or X-Frame-Options** error log.
 
 For additional information about using iframes in iOS devices, refer to [Troubleshooting OutSystems apps on iOS devices](https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Troubleshooting_OutSystems_apps_on_iOS_devices).
-

@@ -53,9 +53,9 @@ Applies only to Traditional Web Apps.
 1. Drag another container into Counter placeholder.
 
 1. Drag an Icon Widget into the container and set the Name property to `Entities.IconName.check` and Size to `Entities.IconSize.Size_3x`.
-    
+
     ![Screenshot showing the Counter pattern with a number, text label 'Completed Requests', and a check icon widget](images/counter-4-ss.png "Counter Pattern with Icon Widget")
 
 1. Publish and test.
-    
+
     ![Screenshot of the published Counter pattern in a Traditional Web App interface](images/counter-5-ss.png "Published Counter Pattern")

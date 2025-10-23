@@ -42,7 +42,7 @@ When developing apps in OutSystems 11 that require PCI compliance, it’s impera
 
 * **HSTS** (HTTP Strict Transport Security) is implemented in OutSystems by default to protect websites. If you decide to turn it off, your app is no longer compliant. For more information, see the [Enforce HTTPS Security](enforce-https-security.md) document.
 
-* **Enable secure endpoints**: An additional layer of security to validate the host header of all your incoming requests. [In LifeTime, secure endpoints can be configured](host-header-protection.md) to prevent requests from unintended sources. 
+* **Enable secure endpoints**: An additional layer of security to validate the host header of all your incoming requests. [In LifeTime, secure endpoints can be configured](host-header-protection.md) to prevent requests from unintended sources.
   
 * **CSP** (Content Security Policy) isn't turned on by default. This provides another level of security that helps detect certain types of attacks. With CSP, you define rules that help protect your users and apps from web attacks. For more information, see [Apply Content Security Policy](apply-content-security-policy.md).
 

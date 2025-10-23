@@ -45,21 +45,16 @@ High Availability is all about uptime when facing hazardous events. The goal is 
 
 Keep in mind that this examples are technology agnostic. They just show a simple layout on how to achieve High Availability.
 
- 
-
 **Example 1 - Localized High Availability Design**
 
 This design example prevents localized system events. By having redundancy you are able to balance your load to respond to any existing events.
 
  ![Diagram illustrating a localized high availability design with redundant servers for load balancing.](images/disaster-recovery-high-availability_0.png "Localized High Availability Design")
 
- 
-
 **Example 2 - Geographic High Availability Design**
 
 This design example prevents geographic system events. By having redundancy both at the datacenter level and within the datacenter you can cope with geographical system events:
 
- 
 ![Diagram showing a geographic high availability design with redundancy across datacenters and within a datacenter.](images/disaster-recovery-high-availability_1.png "Geographic High Availability Design")
 
 ## Disaster Recovery
@@ -90,36 +85,30 @@ List of people/departments that take part in the plan.
 
 | Responsibility        | Name          | E-mail                  | Contact      | Department 24/7 contact |
 |-----------------------|---------------|-------------------------|--------------|-------------------------|
-| Network               | Diane Man     | diane.man@acme.corp     | +1 432 7434  | +1 432 7434             |
-| Database              | Jack Lang     | jack.lang@ext.acme.corp | +1 378 4320  | +1 479 4321             |
-| Server Operations     | Lee Connan    | lee.conan@ext.acme.corp | +62 444 9254 | +62 229 5478            |
-| Global Infrastructure | Rob Roy       | rob.roy@acme.corp       | +1 334 7845  | +1 334 3402             |
-| Applications          | Audrey Branch | audrey.branch@acme.corp | +1 434 1121  | +1 432 001              |
-| Backups               | Cindy Krall   | cindy.krall@acme.corp   | +1 432 5009  | +1 332 887              |
-
- 
+| Network               | Diane Man     | <diane.man@acme.corp>     | +1 432 7434  | +1 432 7434             |
+| Database              | Jack Lang     | <jack.lang@ext.acme.corp> | +1 378 4320  | +1 479 4321             |
+| Server Operations     | Lee Connan    | <lee.conan@ext.acme.corp> | +62 444 9254 | +62 229 5478            |
+| Global Infrastructure | Rob Roy       | <rob.roy@acme.corp>       | +1 334 7845  | +1 334 3402             |
+| Applications          | Audrey Branch | <audrey.branch@acme.corp> | +1 434 1121  | +1 432 001              |
+| Backups               | Cindy Krall   | <cindy.krall@acme.corp>   | +1 432 5009  | +1 332 887              |
 
 #### Systems
 
 List of devices that directly take part of the OutSystems Factory
 
-
-| System                | Hostname      | IP Address              | Responsibility| 
+| System                | Hostname      | IP Address              | Responsibility|
 |-----------------------|---------------|-------------------------|--------------      |
-| Load Balancer 1       | syslb1        | 81.253.167.3            | Network            | 
-| Frontend 1            | srvappout1    | 10.56.1.11              | Server Operations  | 
-| Frontend 2            | srvappout2    | 10.56.1.12              | Server Operations  | 
-| Frontend 3            | srvappout3    | 10.56.1.13              | Server Operations  | 
-| Frontend 4            | srvappout4    | 10.56.1.14              | Server Operations  | 
+| Load Balancer 1       | syslb1        | 81.253.167.3            | Network            |
+| Frontend 1            | srvappout1    | 10.56.1.11              | Server Operations  |
+| Frontend 2            | srvappout2    | 10.56.1.12              | Server Operations  |
+| Frontend 3            | srvappout3    | 10.56.1.13              | Server Operations  |
+| Frontend 4            | srvappout4    | 10.56.1.14              | Server Operations  |
 | Database1             | oradbout1     | 10.80.1.33              | Database           |
-
- 
 
 ##### Support Contracts
 
 Information regarding supplier’s support and SLA over the systems.
 
-  
 | System           | Quantity | Brand      | Support Type | Support Contact |
 |------------------|----------|------------|--------------|-----------------|
 | OutSystems       |     -    | OutSystems |     24/7     | +1 888 707 2957 |
@@ -127,7 +116,6 @@ Information regarding supplier’s support and SLA over the systems.
 | Virtual Machines |     6    | Microsoul  |     24*7     | +1 378 4320     |
 | Database         |     3    | Oracle     |     24*7     | +62 444 9254    |
 | Loadbalancer     |     2    | RapidFire  |      8*5     | +1 434 1121     |
- 
 
 #### Backups
 
@@ -148,7 +136,6 @@ You must configure the following automatic backups for both Servers and Database
 * Weekly Full at 1am
 
 * Monthly Full at 1am
- 
 
 #### Front-End Recovery
 
@@ -161,8 +148,6 @@ Action items required to recover from an hazard event affecting a server or serv
 | 3 | Access the server and start all OutSystems services.                                                   | Server Operations  | 15m |
 | 4 | Verify OutSystems status by accessing [http://localhost/ServiceCenter](http://localhost/ServiceCenter) | Server Operations  | 5m  |
 | 5 | Confirm internal application access                                                                    | Applications       | 15m |
-
-
 
 #### Database Restore
 
@@ -177,9 +162,6 @@ Action items required to recover from a database hazard event.
 | 5 | Access each frontend and start all OutSystems services | Server Operations | 1h  |
 | 6 | Verify runtime of applications and execute smoke tests | Applications      | 1h  |
 | 7 | Unset maintenance web page and internet access test.   | Server Operations | 15m |
-
-
- 
 
 #### Full Recovery
 
@@ -196,8 +178,6 @@ Action items required to achieve full recovery.
 | 7 | Verify runtime of applications and execute smoke tests                                                                           | Applications      | 1h  |
 | 8 | Unset maintenance web page and internet access test.                                                                             | Server Operations | 15m |
 
-
 ## More Information
 
 To learn more about how to set up your OutSystems Platform check the [Designing OutSystems infrastructures guide](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures).
-

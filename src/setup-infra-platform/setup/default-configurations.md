@@ -49,9 +49,10 @@ Also, the OutSystems installers creates registry entries to store some configura
 During the installation, OutSystems registers a set of services on the server. You can start and stop these services using the Windows Management Console.
 
 The executable and configuration files are located in `C:\Program Files\OutSystems\Platform Server\` with some exceptions:
-- For Scheduler Service, since Platform Server version 11.11.1, they're located in `C:\Program Files\OutSystems\Platform Server\Scheduler\`.
-- For Deployment Service, since Platform Server version 11.24.0, they're located in `C:\Program Files\OutSystems\Platform Server\DeployService\`.
-- For Deployment Controller Service, since Platform Server version 11.25.0, they're located in `C:\Program Files\OutSystems\Platform Server\CompilerService\`.
+
+* For Scheduler Service, since Platform Server version 11.11.1, they're located in `C:\Program Files\OutSystems\Platform Server\Scheduler\`.
+* For Deployment Service, since Platform Server version 11.24.0, they're located in `C:\Program Files\OutSystems\Platform Server\DeployService\`.
+* For Deployment Controller Service, since Platform Server version 11.25.0, they're located in `C:\Program Files\OutSystems\Platform Server\CompilerService\`.
 
 ### For platform versions prior to 11.18:
 
@@ -60,7 +61,6 @@ The executable and configuration files are located in `C:\Program Files\OutSyste
 |Deployment Controller Service|CompilerService.exe|CompilerService.exe.config|OSControllerUser|
 |Deployment Service|DeployService.exe|DeployService.exe.config|Local System account|
 |Scheduler Service|Scheduler.exe|Scheduler.exe.config|OSSchedulerUser|
-
 
 ### For platform versions 11.18 or later:
 
@@ -124,7 +124,7 @@ OutSystems applications are always deployed to the Default Web Site (identifier 
 
 In case of having multiple address entries in Default Web Site, the configuration 127.0.0.1:80 with no host headers must be on top of all other entries.
 
-The Server.API component of the platform exposes REST endpoints that are consumed by other components like the Development Environment and LifeTime. Some of these endpoints expect PATCH requests, i.e. HTTP requests using the PATCH method. 
+The Server.API component of the platform exposes REST endpoints that are consumed by other components like the Development Environment and LifeTime. Some of these endpoints expect PATCH requests, i.e. HTTP requests using the PATCH method.
 Make sure that any proxies and the IIS running in front-end servers are configured to allow the HTTP 'PATCH' method. Some OutSystems components will not work properly without it.
 
 ## Deployed applications

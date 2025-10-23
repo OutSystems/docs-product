@@ -63,9 +63,9 @@ When using Oracle, you will need to create the log database objects using an SQL
 Do the following:
 
 1. Run the SQL database creation script located in the Deployment Controller machine under the OutSystems Platform Server installation directory: `db\logging_creation_oracle.sql`.  
-    Check with your Database Administrator how to execute this script according to your database environment. 
+    Check with your Database Administrator how to execute this script according to your database environment.
 
-    This SQL script contains instructions to create users and tablespaces and to grant the necessary permissions for the log database. 
+    This SQL script contains instructions to create users and tablespaces and to grant the necessary permissions for the log database.
 
     By default, when executing this file, the following objects will be created:
 

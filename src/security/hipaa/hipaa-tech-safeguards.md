@@ -21,10 +21,9 @@ coverage-type:
 # Checklist of HIPAA safeguards
 
 The HIPAA requirements and controls are sometimes by numbers and letters.
-The alphanumeric combinations refer to a specific HIPAA control. Capital letters refer to whether a control is (R) required or (A) addressable by a covered entity and their BA. 
+The alphanumeric combinations refer to a specific HIPAA control. Capital letters refer to whether a control is (R) required or (A) addressable by a covered entity and their BA.
 
 For example, (R)164.312(a)(2)(i) means this control is required and the numbers and letter that followed are the control number and section/subsection. More details on the various HIPAA technical safeguards, controls and their numbers system are addressed in this [US government publication](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/techsafeguards.pdf).
-
 
 ## Technical safeguards
 
@@ -36,12 +35,12 @@ Highlights of how OutSystems accelerates HIPAA Technical safeguards:
 * Applications can use role checks on specific screens of your apps to control who can alter and destroy EPHI.
 * Auditing trails of IT and end-users' actions.
 * Session mechanism with a default timeout that can be customised.
-* Extensive support for data encryption at rest and in transit. 
+* Extensive support for data encryption at rest and in transit.
 * Emergency failover of data for all the supported databases.
 
 ### Access control { #access-control }
 
-This HIPAA regulation requires the following controls to implement technical policies and procedures for electronic information systems that maintain electronic protected health information to allow access only to those persons or software programs that have been granted access rights as specified in 164.308(a)(4). 
+This HIPAA regulation requires the following controls to implement technical policies and procedures for electronic information systems that maintain electronic protected health information to allow access only to those persons or software programs that have been granted access rights as specified in 164.308(a)(4).
 
 #### Develop access control policies and procedures
 
@@ -57,9 +56,9 @@ OutSystems management console, LifeTime, makes it easy to manage IT team permiss
 
 ###### For OutSystems end users
 
-We provide a default module for end-user management with a set of capabilities. Considering OutSystems is a development platform the access control is dependent on the application development itself (its logic and data accessed). When developing an application, make sure to define the requirements correctly and clearly for access control so they can be easily implemented. 
+We provide a default module for end-user management with a set of capabilities. Considering OutSystems is a development platform the access control is dependent on the application development itself (its logic and data accessed). When developing an application, make sure to define the requirements correctly and clearly for access control so they can be easily implemented.
 
-You can restrict or allow end users access to specific screens and operations of OutSystems applications using OutSystems own custom roles. The default user module provides the capability of user and group management, assigning any role (default or custom) to each of these entities. Groups allow you to manage the permissions of many users over all OutSystems applications. 
+You can restrict or allow end users access to specific screens and operations of OutSystems applications using OutSystems own custom roles. The default user module provides the capability of user and group management, assigning any role (default or custom) to each of these entities. Groups allow you to manage the permissions of many users over all OutSystems applications.
 
 OutSystems also offers the [Users API](../../ref/apis/auto/users-api.final.md) to perform end user management programmatically. Use the API to write your own applications for managing registered users or for exposing APIs to external systems through Web Services.
 
@@ -80,7 +79,6 @@ IT user authentication can also be extended to use an [external authentication p
 ###### For OutSystems end users
 
 When developing custom applications, implement a unique identifier for any entity that identifies a user. The default [Users](../../user-management/intro.md) management app, automatically assigns a unique identifier on the database for each user and enforces distinct usernames.
-
 
 #### Implement an Emergency Access Procedure (R) 164.312(a)(2)(ii)
 
@@ -118,7 +116,7 @@ The OutSystems Platform uses several mechanisms that allow the server to maintai
 
 #### Implement encryption and decryption (A) 164.312(a)(2)(iv)
 
-This section also includes the measures for *Implement Encryption Controls (A) 164.312(e)(2)(ii)*
+This section also includes the measures for _Implement Encryption Controls (A) 164.312(e)(2)(ii)_
 
 ##### What you need to have and do
 
@@ -152,7 +150,6 @@ The default end user module supports deactivating users. Deactivated users will 
 
 Develop operations that immediately ensure the access termination of a user, while developing your custom applications.
 
-
 ### Audit controls § 164.312(b)
 
 This HIPAA regulation requires the following controls to implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems containing or using ePHI.
@@ -165,7 +162,6 @@ You define the scope of the audit controls for systems that store or process ePH
 
 You develop and formally approve an audit policy establishing:
 
-
 * Which systems, applications, or processes are vulnerable to tampering, inappropriate uses, or unauthorized disclosure?
 * Which activities shall be audited?
 * What the audit record will include, for example UserID, event type, timestamp, IP address
@@ -175,11 +171,9 @@ You develop and formally approve an audit policy establishing:
 
 OutSystems has defined internal policies and procedures regarding systems monitoring and logging, aligned with ISO 27001 - Annex A. These policies protect any data excerpts (possibly containing ePHI) you may need to send us in the context of receiving customer support from Outsystems.
 
-
 ##### On your or your business associate’s premises
 
-You and your BA are responsible for implementing Audit policies and procedures covering applications developed using OutSystems platform. 
-
+You and your BA are responsible for implementing Audit policies and procedures covering applications developed using OutSystems platform.
 
 #### Implement the audit process
 
@@ -192,7 +186,7 @@ You need to evaluate existing system capabilities regarding audit logging and mo
 ##### For OutSystems IT users
 
 Our management consoles do not contain ePHI. Permissions for OutSystems IT users are according to the principle of least privilege (PoLP), separately and uniquely for each production environment they need to access to perform their roles.
-We audit the development of every screen, operation and any other logic. 
+We audit the development of every screen, operation and any other logic.
 
 The databases are equipped with an audit feature that logs the IT user’s access and activity on the database. If an IT user has direct access to the database and queries the data, an audit trail will be generated. Any auditing native mechanism of the database management system can be used with OutSystems.
 
@@ -204,13 +198,12 @@ You can use OutSystems development capabilities to build an audit trail of the e
 
 As an added protection, the OutSystems platform supports the export of audit logs for specific developed applications, to a specific storage with anti-tampering mechanisms.
 
-
 ### Integrity § 164.312(c)(1) and Person or Entity Authentication § 164.312(d)
 
 HIPAA requires you to implement policies and procedures to protect electronic protected health information from improper alteration or destruction.
 You’ll need to implement procedures to verify that a person or entity seeking access to electronic protected health information is the one claimed.
 
-#### Develop Information Classification Policies 
+#### Develop Information Classification Policies
 
 ##### What you need to have and do
 
@@ -239,18 +232,15 @@ Best practice is to integrate the authentication of the management consoles and 
 
 The access management consoles include a built-in authentication mechanism.
 
-OutSystems also supports end user authentication with external identity management providers by [changing the authentication provider](../../manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md). In such cases, the platform delegates authentication to an assigned plugin, which validates user credentials and returns a unique user identifier. That unique identifier maps the authenticated user to an OutSystems IT user. [More details here](https://success.outsystems.com/support/security/outsystems_platform_server_hardening/#external-authentication-provider). 
-
+OutSystems also supports end user authentication with external identity management providers by [changing the authentication provider](../../manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md). In such cases, the platform delegates authentication to an assigned plugin, which validates user credentials and returns a unique user identifier. That unique identifier maps the authenticated user to an OutSystems IT user. [More details here](https://success.outsystems.com/support/security/outsystems_platform_server_hardening/#external-authentication-provider).
 
 ###### For OutSystems End Users
 
 When you start developing a new module it has the built-in logic for end user authentication and respective configuration. Other than the built-in logic, OutSystems offers the four above commonly used methods for end user authentication. [More details here.](https://success.outsystems.com/support/security/outsystems_platform_server_hardening/#improving-end-user-authentication)
 
-
 ### Transmission Security § 164.312(e)(1) and Implement Integrity Controls (A) 164.312(e)(2)(i)
 
 Implement technical security measures to guard against unauthorized access to electronic protected health information that is being transmitted over an electronic communications network.
-
 
 #### Develop network security policies and procedures
 
@@ -260,9 +250,9 @@ Develop and formally approve a set of policies and procedures regarding Network 
 
 Identify:
 
-* All approved parties who can transmit ePHI, if reasonable and appropriate, following your [access control policy](#access-control). 
+* All approved parties who can transmit ePHI, if reasonable and appropriate, following your [access control policy](#access-control).
 
-* Scenarios that may result in modification or disclosure of ePHI by unauthorized parties, while in transit.   
+* Scenarios that may result in modification or disclosure of ePHI by unauthorized parties, while in transit.
 
 Implement security mechanisms to ensure that electronically transmitted ePHI is not improperly modified by unauthorized parties.
 

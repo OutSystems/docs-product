@@ -34,7 +34,7 @@ To fix the error, change the Page Names so it's different from the names of the 
 Avoid duplicate page names in your modules when adding custom Screen URLs and Site Rules. When choosing a page name for a Screen, consider the following:
 
 * Does the module have Screens with Page Names?
-* Have you set Page Names to an app name or module name in the environment? 
+* Have you set Page Names to an app name or module name in the environment?
 * Is there a Site Rule in the environment that redirects to that module?
 
 If yes, there's a risk of creating duplicate redirects pointing to different places.

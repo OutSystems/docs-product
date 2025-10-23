@@ -26,7 +26,7 @@ Double-click on the error line in TrueChange to take you directly to the express
 
 **Cause**
 
-You are using data types with an operator which are not compatible with it. 
+You are using data types with an operator which are not compatible with it.
 
 **Recommended action**
 

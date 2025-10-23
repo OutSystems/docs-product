@@ -25,11 +25,11 @@ In the **Database** tab, once you set the **Database Provider** property to `SQL
 
 This section contains general configurations for the SQL Server / Azure SQL database.
 
-Configuration | Description | Default value  
---------------|-------------|---------------  
-Server | The hostname or IP address to the database server. | `localhost`
-Database | The database catalog used by OutSystems. | `outsystems`  
-Authentication | Authentication protocol to use. | `Database Authentication`  
+| Configuration | Description | Default value |
+| --------------|-------------|--------------- |
+| Server | The hostname or IP address to the database server. | `localhost` |
+| Database | The database catalog used by OutSystems. | `outsystems` |
+| Authentication | Authentication protocol to use. | `Database Authentication` |
 
 For advanced settings, click on the **Advanced Settings** link.
 
@@ -79,19 +79,19 @@ For advanced settings, click on the **Advanced Settings** link.
 
 The Administrator section allows you to configure the database user that manages the platform. This user owns the OutSystems metamodel tables, views, and indexes.
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-User | Name of the user that's the owner of OutSystems metamodel tables. | `OSADMIN`  
-Password | Password for the user. |
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| User | Name of the user that's the owner of OutSystems metamodel tables. | `OSADMIN` |
+| Password | Password for the user. | |
   
 ## Runtime section
 
 The Runtime section allows you to configure the database user used by the applications at runtime. This user owns the tables created by developers in the development environment.
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-User | Name of the user that's the owner of tables created in the development environment. | `OSRUNTIME`
-Password | Password for the user. |
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| User | Name of the user that's the owner of tables created in the development environment. | `OSRUNTIME` |
+| Password | Password for the user. | |
 
 ## Create/Upgrade Database button
 

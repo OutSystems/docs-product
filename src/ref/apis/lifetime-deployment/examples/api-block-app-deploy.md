@@ -30,7 +30,7 @@ To block an app from deployment using the APIs, follow these steps:
 
 Here’s an example of API calls with requests and responses.
 
-### Get environment key
+## Get environment key
 
 If you do not know the environment key, then call the API method that returns all the environments available on your infrastructure.
 
@@ -72,6 +72,7 @@ Response:
 ]
 
 ```
+
 Retrieve the environment key of the environment where you want to block the app from being deployed.
 
 Example:
@@ -82,7 +83,7 @@ Production environment key: **849515f2-b4ff-4aca-a9d6-9407bea655f4**
 
 ### Get application key
 
-If you do not know the application key, then call the API method that returns all the available applications in the infrastructure to retrieve the app key 
+If you do not know the application key, then call the API method that returns all the available applications in the infrastructure to retrieve the app key
 
 Request: `GET /lifetimeapi/rest/v2/applications/`
 
@@ -107,12 +108,12 @@ Response body:
 ]
 
 ```
-Retrieve the app key of the app you want to block from deployment. 
 
-Example: To block the EmployeeBackoffice app from deployment to production, retrieve 
+Retrieve the app key of the app you want to block from deployment.
+
+Example: To block the EmployeeBackoffice app from deployment to production, retrieve
 
 EmployeeBackoffice application key: **c9a7a82e-0eee-4a3d-8e22-2a19c69c766f**
-
 
 ### Block or unblock the app from deployment
 
@@ -120,7 +121,7 @@ Call the API method that updates the app configurations to block or unblock the 
 
 API endpoint: `PUT /lifetimeapi/rest/v2/applications/{ApplicationKey}/configurations/`
 
-Where {ApplicationKey} is the application key retrieved in the previous step. 
+Where {ApplicationKey} is the application key retrieved in the previous step.
 
 Configure the following in the PUT request body:
 
@@ -144,6 +145,5 @@ Request body:
 }
 
 ```
-The request should return a **204 No content** in order to be successful. 
 
-
+The request should return a **204 No content** in order to be successful.

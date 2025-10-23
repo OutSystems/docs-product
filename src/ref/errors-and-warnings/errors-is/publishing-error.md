@@ -23,5 +23,5 @@ Message
 Cause
 :   This is a generic error, caused by various reasons.
 
-Recommendation 
+Recommendation
 :   Contact your OutSystems System Administrator.

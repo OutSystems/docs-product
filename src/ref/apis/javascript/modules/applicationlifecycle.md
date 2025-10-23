@@ -74,4 +74,3 @@ Parameters:
 * **eventHandlers**: [ApplicationLoadEventHandlers](../intro.md#applicationloadeventhandlers)<br/> Object containing callbacks for the application loading events you want to listen to.
 
 Returns: void
-

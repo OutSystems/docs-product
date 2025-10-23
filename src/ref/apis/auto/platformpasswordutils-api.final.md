@@ -20,7 +20,6 @@ coverage-type:
 
 # PlatformPasswordUtils API
 
-
 The PlatformPasswordUtils API provides actions for validating and securely storing passwords in the database, compliant with established cryptographic practices. This is accomplished through actions that enable you to:
 
 * generate a salted password and hash it using the MD5 hash algorithm (deprecated)
@@ -29,11 +28,11 @@ The PlatformPasswordUtils API provides actions for validating and securely stori
 
 ## Summary
 
-Action | Description
----|---
-[GenerateSaltedMD5Hash](<#GenerateSaltedMD5Hash>) | Salts the password with a fixed number and hashes it using the MD5 hash algorithm.
-[GenerateSaltedSHA512Hash](<#GenerateSaltedSHA512Hash>) | Salts the password with a 32 bytes random number and hashes it using the SHA512 hash algorithm.
-[ValidatePassword](<#ValidatePassword>) | Validates a password against the expected salted password hash.
+| Action | Description |
+| ---|--- |
+| [GenerateSaltedMD5Hash](<#GenerateSaltedMD5Hash>) | Salts the password with a fixed number and hashes it using the MD5 hash algorithm. |
+| [GenerateSaltedSHA512Hash](<#GenerateSaltedSHA512Hash>) | Salts the password with a 32 bytes random number and hashes it using the SHA512 hash algorithm. |
+| [ValidatePassword](<#ValidatePassword>) | Validates a password against the expected salted password hash. |
 
 ## Actions
 
@@ -41,31 +40,29 @@ Action | Description
 
 Salts the password with a fixed number and hashes it using the MD5 hash algorithm.
 
-*Inputs*
+_Inputs_
 
 PlainTextPassword
 :   Type: Text. Mandatory.  
     The password to salt and hash.  
-    
 
-*Outputs*
+_Outputs_
 
 SaltedMD5HashPassword
 :   Type: Text.  
     The password salted and hashed with MD5.  
-    
 
 ### GenerateSaltedSHA512Hash { #GenerateSaltedSHA512Hash }
 
 Salts the password with a 32 bytes random number and hashes it using the SHA512 hash algorithm.
 
-*Inputs*
+_Inputs_
 
 PlainTextPassword
 :   Type: Text. Mandatory.  
     The password to salt and hash.
 
-*Outputs*
+_Outputs_
 
 SaltedSHA512HashPassword
 :   Type: Text.  
@@ -75,7 +72,7 @@ SaltedSHA512HashPassword
 
 Validates a password against the expected salted password hash.
 
-*Inputs*
+_Inputs_
 
 PlainTextPassword
 :   Type: Text. Mandatory.  
@@ -85,11 +82,8 @@ SaltedHashedPassword
 :   Type: Text. Mandatory.  
     The expected password, salted and hashed.
 
-*Outputs*
+_Outputs_
 
 IsValid
 :   Type: Boolean.  
     Returns true if the password matches the given salted and hashed password.  
-    
-
-

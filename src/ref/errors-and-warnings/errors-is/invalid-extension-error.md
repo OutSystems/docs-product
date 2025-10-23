@@ -23,4 +23,3 @@ Message
 
 Cause
 :   Integration Studio only supports Microsoft .NET integration.
-

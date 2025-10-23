@@ -30,8 +30,7 @@ Check the examples of correct and incorrect **Page Names**:
 | --------- | --------------------------- |
 | `Buy`     | `Buy!`                      |
 | `About`   | `\\About`                   |
-| `Product` | ` Product` (space at start) |
-
+| `Product` | `Product` (space at start) |
 
 <div class="info" markdown="1">
 

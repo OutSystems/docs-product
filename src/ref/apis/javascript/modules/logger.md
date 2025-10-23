@@ -86,4 +86,3 @@ Parameters:
 * **message**: string<br/> Log message.
 
 Returns: void
-

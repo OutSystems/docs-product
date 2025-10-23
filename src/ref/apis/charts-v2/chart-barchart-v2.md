@@ -28,7 +28,7 @@ This example shows how you can create a simple Bar Chart with a customized legen
 
     ![Screenshot of the Properties tab with the DataPointList property expanded to show options](images/chartbar-expand-ss.png "Expanding DataPointList Property")
 
-1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data).
 
     This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the bar chart.
 
@@ -51,5 +51,3 @@ This example shows how you can create a simple Bar Chart with a customized legen
 After following these steps, you can publish your module:
 
 ![Image of the final result of the Bar Chart with customized legend after publishing the module](images/chartbar-result.png "Final Bar Chart Result")
-
-

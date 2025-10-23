@@ -81,6 +81,7 @@ Response body:
   }
 ]
 ```
+
 As we want to unregister the "Production" environment, we take note of its key so that we can use it in the next API call:
 
 "Production" environment key: **1ee9297b-edfc-4826-ad95-2a8a6e40957f**

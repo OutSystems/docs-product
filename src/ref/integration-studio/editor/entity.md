@@ -48,7 +48,7 @@ This button is enabled when this entity is [imported from a database](<../../../
 
     `Entity <entity_name>: <entity_status>`
 
-* **Database Connection**: Name of the database connection and its Database Management System (DBMS). If the entity is imported without using a Database Connection this line is omitted. The syntax is as follows: 
+* **Database Connection**: Name of the database connection and its Database Management System (DBMS). If the entity is imported without using a Database Connection this line is omitted. The syntax is as follows:
 
     `Database Connection <Database_Connection_Name> ( <DBMS> )`
 

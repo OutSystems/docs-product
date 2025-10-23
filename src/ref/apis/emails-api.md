@@ -18,12 +18,12 @@ coverage-type:
 
 # Emails API
 
-The Emails API allows you to get information from the OutSystems data model to customize and extend the design of your Emails. The Emails API is exposed in the form of an OutSystems system entity. 
+The Emails API allows you to get information from the OutSystems data model to customize and extend the design of your Emails. The Emails API is exposed in the form of an OutSystems system entity.
 
 With this API your can, for example, do the following:
 
 * **Extend the Data Model**: Extend the OutSystems data model to better adapt Emails to your needs.
-* **Build Email Reports**: Build reports about your Emails from the extracted information. 
+* **Build Email Reports**: Build reports about your Emails from the extracted information.
 
 The information about your emails is obtained by querying System entities. As such, you must add references to those entities to your module, using the Manage Dependencies dialog box.
 

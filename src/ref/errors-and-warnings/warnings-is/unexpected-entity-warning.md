@@ -48,4 +48,4 @@ Cause
 :   The physical table name you specified has an invalid table for SQL Server and/or Oracle databases.
 
 Recommendation
-:   [Edit this entity](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) and specify the Table Name property. 
+:   [Edit this entity](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) and specify the Table Name property.

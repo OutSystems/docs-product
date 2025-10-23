@@ -17,7 +17,7 @@ coverage-type:
 
 # Database reference
 
-The following articles contain reference information on database data handling, for example, creating indexes, ensuring your queries are compatible with the database, and changing the data type of an attribute. For more information, see: 
+The following articles contain reference information on database data handling, for example, creating indexes, ensuring your queries are compatible with the database, and changing the data type of an attribute. For more information, see:
 
 * [Auto numbers on database](auto-numbers-on-database.md)
 * [Database compatibility issues](database-compatibility-issues.md)
@@ -27,4 +27,3 @@ The following articles contain reference information on database data handling, 
 * [Default values on database](default-values-on-database.md)
 * [Handling transactions](handling-transactions.md)
 * [How data model changes are handled](how-data-model-changes-are-handled.md)
-

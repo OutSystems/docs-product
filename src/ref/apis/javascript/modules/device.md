@@ -67,4 +67,3 @@ if (cordova) {
 Returns: Promise&lt;void&gt;
 
 A `Promise` object that is fulfilled when the 'deviceready' event is caught.
-

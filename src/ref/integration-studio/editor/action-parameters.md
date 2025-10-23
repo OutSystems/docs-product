@@ -36,7 +36,7 @@ By default, the parameter is an input parameter. To define an Output parameter, 
 
 ![Warning icon indicating a potential issue when removing or toggling parameters in the Action Parameter Editor](images/warning-icon.png "Warning Icon") Since actions set as functions (property Function equal to `Yes`) must have exactly one output parameter, this "toggle" operation could cause a violation of this rule. Integration Studio prevents it but allows you to automatically change the action to meet the requirements to be a function:
 
-* By setting the property Function to `No`, if you're adding another output parameter to a function action. 
+* By setting the property Function to `No`, if you're adding another output parameter to a function action.
 
 * By setting the property Function to `No`, if you're deleting a single output parameter of a function action.
 
@@ -44,12 +44,12 @@ By default, the parameter is an input parameter. To define an Output parameter, 
 
 The order of the parameters must be the same in both the extension action and in the corresponding C# method. The Action Parameter Editor contains the necessary buttons to define the order of the parameters:
 
-Button | Description
-:-----:|:-----------
-![Button to move the selected parameter down one position in the Action Parameter Editor](images/bottom-one-icon.png "Move Parameter Down Button") | Move the selected parameter down.
-![Button to move the selected parameter to the bottom of the list in the Action Parameter Editor](images/bottom-all-icon.png "Move Parameter to Bottom Button") | Move the selected parameter to the bottom of the list.
-![Button to move the selected parameter up one position in the Action Parameter Editor](images/top-one-icon.png "Move Parameter Up Button") | Move the selected parameter up.
-![Button to move the selected parameter to the top of the list in the Action Parameter Editor](images/top-all-icon.png "Move Parameter to Top Button") | Move the selected parameter to the top of the list.
+| Button | Description |
+| :-----:|:----------- |
+| ![Button to move the selected parameter down one position in the Action Parameter Editor](images/bottom-one-icon.png "Move Parameter Down Button") | Move the selected parameter down. |
+| ![Button to move the selected parameter to the bottom of the list in the Action Parameter Editor](images/bottom-all-icon.png "Move Parameter to Bottom Button") | Move the selected parameter to the bottom of the list. |
+| ![Button to move the selected parameter up one position in the Action Parameter Editor](images/top-one-icon.png "Move Parameter Up Button") | Move the selected parameter up. |
+| ![Button to move the selected parameter to the top of the list in the Action Parameter Editor](images/top-all-icon.png "Move Parameter to Top Button") | Move the selected parameter to the top of the list. |
 
 ## Change the Parameter Properties
 

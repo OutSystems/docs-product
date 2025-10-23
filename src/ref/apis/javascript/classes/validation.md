@@ -78,4 +78,3 @@ Parameters:
 * **widgetId**: string<br/> The id of the widget to set as valid.
 
 Returns: void
-

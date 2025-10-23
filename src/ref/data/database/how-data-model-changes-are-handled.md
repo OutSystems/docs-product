@@ -53,7 +53,7 @@ When you add an Attribute to an Entity, OutSystems checks the database to see if
 If the Entity previously had an Attribute with the same name but you deleted it at some point in time, OutSystems kept the associated database column and data. In this case, OutSystems tries to reuse the existing database column. If the data type of the new attribute is different than the one that exists on the database, OutSystems converts it when deploying the application:
 
 * If it’s possible to convert the data type without losing data, the deployment is successful.
-* If it’s not possible to convert the data type, OutSystems displays an error and does not publish the application. This ensures that your data is always safe. 
+* If it’s not possible to convert the data type, OutSystems displays an error and does not publish the application. This ensures that your data is always safe.
 
 Check the [Changing the Data Type of an Attribute](<#changing-the-data-type-of-an-attribute>) section to learn more.
 

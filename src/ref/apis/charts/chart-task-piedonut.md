@@ -62,7 +62,7 @@ To create a Pie or Donut Chart with a variable number of slices follow these ste
     In **Web** applications, drag a **Pie Chart** from the Toolbox to the Screen, even if you want to create a Donut Chart. At the end of the procedure [Convert the Pie Chart to a Donut Chart in a Web application](#convert-a-pie-chart-to-a-donut-chart-in-a-web-application)
 
     ![Screenshot showing how to add a Pie or Donut Chart from the Toolbox to the Screen in OutSystems.](images/pie-01.png "Adding a Pie or Donut Chart to the Screen")
-    
+
 1. On the properties of the chart, set the **SourceDataPointList** to a List containing the data points for the chart.
 
     ![Image depicting how to set the SourceDataPointList to a List for a Pie or Donut Chart with variable slices.](images/pie-a02.png "Setting the SourceDataPointList for Variable Slices")

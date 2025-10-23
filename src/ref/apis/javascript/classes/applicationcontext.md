@@ -63,4 +63,3 @@ var context = $public.ApplicationContext.getCurrentContext();
 Returns: object
 
 Returns an object with the following attributes: `applicationKey`, `applicationName`, `moduleKey`, `moduleName`, `screenKey`, `screenName`.
-

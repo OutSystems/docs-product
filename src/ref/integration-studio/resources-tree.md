@@ -22,9 +22,9 @@ The **Resources** tree, in the extension [workspace](<workspace.md>), presents t
 
 The resources of your extension can be added [explicitly](<../../integration-with-systems/integration-studio/managing-extensions/resource-define.md>) or automatically by Integration Studio in the following situations:
 
-  * When the extension is [created](<../../integration-with-systems/integration-studio/extension-life-cycle/extension-create.md>), Integration Studio adds as resources the necessary [source files](<../../integration-with-systems/integration-studio/getting-started/extension-source-files.md>) for the development of the extension.
+* When the extension is [created](<../../integration-with-systems/integration-studio/extension-life-cycle/extension-create.md>), Integration Studio adds as resources the necessary [source files](<../../integration-with-systems/integration-studio/getting-started/extension-source-files.md>) for the development of the extension.
 
-  * When you [import actions from a .NET assembly](<../../integration-with-systems/integration-studio/managing-extensions/net-assembly-import-action.md>), the assembly and its dependencies are added as resources, as well as the ![Icon representing an imported .NET action in Integration Studio](images/imported-action-icon.png "Imported .NET Action Icon") `DotNetAction.ico`, if it hasn't been added before.
+* When you [import actions from a .NET assembly](<../../integration-with-systems/integration-studio/managing-extensions/net-assembly-import-action.md>), the assembly and its dependencies are added as resources, as well as the ![Icon representing an imported .NET action in Integration Studio](images/imported-action-icon.png "Imported .NET Action Icon") `DotNetAction.ico`, if it hasn't been added before.
 
 ## Resource Status
 
@@ -54,9 +54,9 @@ To open the directory that contains the resources, simply right-click in the Res
 
 In the Resources tree, the following operations are available to handle your resources:
 
-Operation | Description
-:--------:|:-----------
-![Icon for the operation to include a resource in the extension in Integration Studio](images/resource-include-icon.png "Include Resource Icon") Include in Extension | Adds the resource to the extension.<br/>For more information, see [Add a Resource](<../../integration-with-systems/integration-studio/managing-extensions/resource-define.md>).
-![Icon for the operation to exclude a resource from the extension in Integration Studio](images/resource-exclude-icon.png "Exclude Resource Icon") Exclude from Extension | Removes the resource from the extension. The next time the extension is saved, this resource file is not packed in the XIF file.
-Open | Opens the item you selected on the Resources tree.<br/>If a folder is selected, then Windows Explorer is launched in the corresponding folder.<br/>If a file is selected, the default program associated with that file type is launched and the file is opened.
-![Icon for the operation to compare a resource with a template in Integration Studio](images/resource-compare-icon.png "Compare Resource Icon") Compare with Template | Allows you to compare the differences between the resource file, stored in the file systems, and the template file.<br/>For more information, see [Resources Editor](<editor/resource.md>).
+| Operation | Description |
+| :--------:|:----------- |
+| ![Icon for the operation to include a resource in the extension in Integration Studio](images/resource-include-icon.png "Include Resource Icon") Include in Extension | Adds the resource to the extension.<br/>For more information, see [Add a Resource](<../../integration-with-systems/integration-studio/managing-extensions/resource-define.md>). |
+| ![Icon for the operation to exclude a resource from the extension in Integration Studio](images/resource-exclude-icon.png "Exclude Resource Icon") Exclude from Extension | Removes the resource from the extension. The next time the extension is saved, this resource file is not packed in the XIF file. |
+| Open | Opens the item you selected on the Resources tree.<br/>If a folder is selected, then Windows Explorer is launched in the corresponding folder.<br/>If a file is selected, the default program associated with that file type is launched and the file is opened. |
+| ![Icon for the operation to compare a resource with a template in Integration Studio](images/resource-compare-icon.png "Compare Resource Icon") Compare with Template | Allows you to compare the differences between the resource file, stored in the file systems, and the template file.<br/>For more information, see [Resources Editor](<editor/resource.md>). |

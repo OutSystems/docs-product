@@ -20,7 +20,7 @@ coverage-type:
 
 **Cause**
 
-Unfortunately, an unexpected situation has arisen in your application or environment. 
+Unfortunately, an unexpected situation has arisen in your application or environment.
 
 **Recommended action**
 

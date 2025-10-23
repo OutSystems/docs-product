@@ -22,9 +22,9 @@ To add data to your chart you must input **DataPoint** labels and values for the
 
 There are two different ways to add data to the **DataPointList** property: **Fixed data** and **Variable data**.
 
-## Populate your chart with fixed data {#populate-your-chart-with-fixed-data} 
+## Populate your chart with fixed data {#populate-your-chart-with-fixed-data}
 
-1. From the Toolbox, drag a Chart to the Screen. 
+1. From the Toolbox, drag a Chart to the Screen.
 
     This example uses the Line Chart.
 
@@ -35,7 +35,7 @@ There are two different ways to add data to the **DataPointList** property: **Fi
     ![Screenshot showing the expansion of the DataPointList property in the chart's properties tab](images/chartline-expand-ss.png "Expanding the DataPointList Property")
 
 1. To create a list with one data point, click **+[0]** and set the **Label** and **Value** properties.
-    
+
     These properties define the first data point of the chart. Each data point corresponds to a point on the chart. Optionally, you can also set the **SeriesName**, **Tooltip**, and **Color** for the data points.
 
     ![Screenshot of setting the Label and Value properties for a data point in a Line Chart](images/chartline-datapoint-ss.png "Setting Label and Value for Data Points")
@@ -46,7 +46,7 @@ After following these steps, you can publish your module.
 
 ![Line Chart displayed on the screen with fixed data points added](images/chartline-result-data.png "Line Chart with Fixed Data")
 
-## Populate your chart with variable data {#populate-your-chart-with-variable-data} 
+## Populate your chart with variable data {#populate-your-chart-with-variable-data}
 
 Before you start, make sure you have a List of data points to use in your chart. Each data point must include a label and a numerical value.
 
@@ -66,7 +66,7 @@ Before you start, make sure you have a List of data points to use in your chart.
 
     ![Screenshot of mapping the Value and Label of the DataPointList to attributes from a list in a Column Chart](images/chart-data-mapping-ss.png "Mapping Data Points to List Attributes")
 
-After following these steps, you can publish your module. 
+After following these steps, you can publish your module.
 
 ![Column Chart displayed on the screen with variable data points added](images/chart-data-result.png "Column Chart with Variable Data")
 
@@ -77,6 +77,6 @@ To create a Chart with multiple series, follow one of the previous procedures an
 ![Screenshot showing the process of adding multiple series to a chart by setting the SeriesName property](images/chart-data-addseries-ss.png "Adding Multiple Series to a Chart")
 ![Screenshot of a chart's properties with multiple series added](images/chart-data-multiple-series-ss.png "Chart with Multiple Series")
 
-After following these steps, you can publish your module. 
+After following these steps, you can publish your module.
 
 ![Example chart displayed on the screen with multiple data series represented](images/chart-example-multiple-series.png "Example of a Chart with Multiple Series")

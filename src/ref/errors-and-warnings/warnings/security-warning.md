@@ -23,7 +23,7 @@ Message
 :   `You're exposing a database operation in the client side. Validate the data in a Server Action before changing the database.`
 
 Cause
-:   There's client-side logic in your app that can access and write changes to the server database. 
+:   There's client-side logic in your app that can access and write changes to the server database.
 
 Recommendation
 :   You must validate the data on the server before you perform a database operation that can modify data or change the permissions. From the security and data integrity point of view, you must implement this validation on the server. A client-side validation isn't enough, as its purpose is to provide fast feedback to the users.
@@ -51,7 +51,6 @@ Recommendation
 
 :    * Ensure that all data sent from the app to the server is re-validated in the server action in a way that prevents unauthorized access to read or edit data.
 
-:    * Redesign your logic so that the screen doesn’t fetch data from sources with sensitive data. 
+:    * Redesign your logic so that the screen doesn’t fetch data from sources with sensitive data.
 
 :    ![Screenshot showing the process of unchecking the Anonymous checkbox to convert a screen to a Registered screen for enhanced security](images/security-warning-2-ss.png "Anonymous Role Removal Example")
-

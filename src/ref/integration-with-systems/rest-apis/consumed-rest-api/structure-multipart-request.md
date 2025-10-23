@@ -57,4 +57,3 @@ Structure used in input arguments of REST API Multipart Requests. For more infor
 </tr>
 </tbody>
 </table>
-

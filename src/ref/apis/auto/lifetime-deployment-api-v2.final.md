@@ -36,7 +36,7 @@ Follow the guidelines presented in [REST API Authentication](<../lifetime-deploy
 
 Check [LifeTime API Examples](<../lifetime-deployment/api-use-cases.md>) to learn how to perform common tasks using the LifeTime API.
 
-</div> 
+</div>
 
 You can download the Swagger file for the LifeTime API v2 in the download page of LifeTime Management Console binaries (available from LifeTime version 11.5.0). Go to the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), and select your LifeTime version:
 
@@ -46,7 +46,7 @@ You can download the Swagger file for the LifeTime API v2 in the download page o
 
 The LifeTime API is available through your LifeTime environment, with the API base URL determined by your LifeTime environment's domain. For instance, if your LifeTime address is `example-lt.example.com/lifetime`, then the LifeTime API base URL is `example-lt.example.com/lifetimeapi/rest/v2`.
 
-You can also find and test [LifeTime API v2 in Postman](https://www.postman.com/outsystems-official). 
+You can also find and test [LifeTime API v2 in Postman](https://www.postman.com/outsystems-official).
 
 Base URL
 :    `<lifetime-domain>/lifetimeapi/rest/v2`

@@ -45,28 +45,27 @@ This object provides access to the SOAP client object implementing the ISOAPClie
 
 ### Methods
 
-Name  |  Description  
----|---  
-static <br/>[ISOAPClient](<#isoapclient-interface>) GetCurrentClient() | Returns the client used for the request. Should only be used inside the On Before Request callback, otherwise it returns `null`.
-static void RegisterEndpointBehavior([IEndpointBehavior](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.iendpointbehavior?view=netframework-4.6.1>) behavior) | Registers a callback to modify the request message or/and response message.
-static string GetActionName() | Returns the name of the SOAP method that invoked the extension. 
-
+| Name  |  Description |
+| ---|--- |
+| static <br/>[ISOAPClient](<#isoapclient-interface>) GetCurrentClient() | Returns the client used for the request. Should only be used inside the On Before Request callback, otherwise it returns `null`. |
+| static void RegisterEndpointBehavior([IEndpointBehavior](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.iendpointbehavior?view=netframework-4.6.1>) behavior) | Registers a callback to modify the request message or/and response message. |
+| static string GetActionName() | Returns the name of the SOAP method that invoked the extension. |
 
 ## ISOAPClient Interface
 
 ISOAPClient is an OutSystems interface providing an abstraction over Windows Communication Foundation (WCF) client implementations that can be used to call web services.
 
-### Properties 
+### Properties
 
-Name | Type |  Description  
----|---|---  
-ClientCredentials | [ClientCredentials](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.clientcredentials?view=netframework-4.6.1>)<br/>(from WCF) | Ready-only property that returns an object representing the client credentials used to call an operation.
-Endpoint | [ServiceEndpoint](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.serviceendpoint?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the target endpoint for the service to which the WCF client can connect.
-InnerChannel | [IClientChannel](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.iclientchannel?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the client channel for the WCF client object.
-State | [CommunicationState](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.communicationstate?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the enum value of the current state of the System.ServiceModel.ClientBase object.
+| Name | Type |  Description |
+| ---|---|--- |
+| ClientCredentials | [ClientCredentials](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.clientcredentials?view=netframework-4.6.1>)<br/>(from WCF) | Ready-only property that returns an object representing the client credentials used to call an operation. |
+| Endpoint | [ServiceEndpoint](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.serviceendpoint?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the target endpoint for the service to which the WCF client can connect. |
+| InnerChannel | [IClientChannel](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.iclientchannel?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the client channel for the WCF client object. |
+| State | [CommunicationState](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.communicationstate?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the enum value of the current state of the System.ServiceModel.ClientBase object. |
 
 ### Methods
 
-Name  |  Description  
----|---  
-[ChannelFactory](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.channelfactory?view=netframework-4.6.1>) GetChannelFactory() | Returns the inner channel used to send messages to variously configured service endpoints.
+| Name  |  Description |
+| ---|--- |
+| [ChannelFactory](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.channelfactory?view=netframework-4.6.1>) GetChannelFactory() | Returns the inner channel used to send messages to variously configured service endpoints. |

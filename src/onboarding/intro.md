@@ -42,4 +42,3 @@ To assist with the "initial learning hump" that many traditional developers enco
 * [OutSystems for Java Developers](https://learn.outsystems.com/training/journeys/outsystems-for-java-developers-456)
 * [Getting Started with OutSystems for PHP Developers](https://learn.outsystems.com/training/journeys/outsystems-for-php-developers-457)
 * [Hello World (on Steroids)](https://learn.outsystems.com/training/journeys/hello-world-699)
-

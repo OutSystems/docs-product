@@ -29,12 +29,3 @@ See some real-world scenarios of using a set of LifeTime API methods to perform 
 * [Register an environment](examples/api-register-env.md)
 * [Unregister an environment](examples/api-unregister-env.md)
 * [Block an app from deployment](examples/api-block-app-deploy.md)
-
-
-
-
-
-
-
-
-

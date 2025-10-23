@@ -36,8 +36,8 @@ The `Invalid Public Screen Block` error is issued in the following situations:
   
     You have a public screen block containing a link (screen reference, Link, or Button widget) with a Destination property using input parameters of either the Binary Data, Record, or List data type.
 
-    Depending on your requirements, do one of the following: 
-    
+    Depending on your requirements, do one of the following:
+
     * Edit the link and, if the input parameter is optional, do not map the respective Destination argument.
     * Do not expose the screen block.
     * Change the Destination input parameter data type.

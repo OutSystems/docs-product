@@ -31,30 +31,28 @@ See [Using Taskbox in Reactive Web Apps](https://success.outsystems.com/Document
 
 </div>
 
-
 ## Summary
 
-Action | Description
----|---
-[API_GetActivities](<#API_GetActivities>) | Returns the activities of a user.<br/>Activity filtering and pagination are allowed.
-[API_GetActivityGuidanceHtml](<#API_GetActivityGuidanceHtml>) | Encodes the activity guidance instructions in HTML format.
-[API_GetActivityPagination](<#API_GetActivityPagination>) | Returns the pagination information of all activities currently displayed in the Taskbox of the user.
-[API_GetActivityVisualization](<#API_GetActivityVisualization>) | Returns information on how an open activity is displayed in the Taskbox.
-[API_GetDynamicHtml](<#API_GetDynamicHtml>) | [Deprecated] Returns the JavaScript code for the Taskbox and its current content.
-[API_GetNewOpenActivity](<#API_GetNewOpenActivity>) | Returns the activity that is currently open by the user and has the indicated activity as one of the previous activities in the process flow.
-[API_GetStaticHtml](<#API_GetStaticHtml>) | [Deprecated] Returns the HTML of the Taskbox with absolute URLs, i.e., starting with &quot;http://&lt;Server Name&gt;/&quot;.
-[API_MarkActivitiesAsSeen](<#API_MarkActivitiesAsSeen>) | Displays all Taskbox activities for the user as already seen, i.e., only new activities will be displayed as not seen in the Taskbox.
-[API_SetActivityVisualization](<#API_SetActivityVisualization>) | Sets how an open activity is displayed in the Taskbox.
-[Inbox_DisableInServer](<#Inbox_DisableInServer>) | Disables the Taskbox in the environment.
-[Inbox_EnableInServer](<#Inbox_EnableInServer>) | Enables the Taskbox in the environment.
+| Action | Description |
+| ---|--- |
+| [API_GetActivities](<#API_GetActivities>) | Returns the activities of a user.<br/>Activity filtering and pagination are allowed. |
+| [API_GetActivityGuidanceHtml](<#API_GetActivityGuidanceHtml>) | Encodes the activity guidance instructions in HTML format. |
+| [API_GetActivityPagination](<#API_GetActivityPagination>) | Returns the pagination information of all activities currently displayed in the Taskbox of the user. |
+| [API_GetActivityVisualization](<#API_GetActivityVisualization>) | Returns information on how an open activity is displayed in the Taskbox. |
+| [API_GetDynamicHtml](<#API_GetDynamicHtml>) | [Deprecated] Returns the JavaScript code for the Taskbox and its current content. |
+| [API_GetNewOpenActivity](<#API_GetNewOpenActivity>) | Returns the activity that is currently open by the user and has the indicated activity as one of the previous activities in the process flow. |
+| [API_GetStaticHtml](<#API_GetStaticHtml>) | [Deprecated] Returns the HTML of the Taskbox with absolute URLs, i.e., starting with &quot;http://&lt;Server Name&gt;/&quot;. |
+| [API_MarkActivitiesAsSeen](<#API_MarkActivitiesAsSeen>) | Displays all Taskbox activities for the user as already seen, i.e., only new activities will be displayed as not seen in the Taskbox. |
+| [API_SetActivityVisualization](<#API_SetActivityVisualization>) | Sets how an open activity is displayed in the Taskbox. |
+| [Inbox_DisableInServer](<#Inbox_DisableInServer>) | Disables the Taskbox in the environment. |
+| [Inbox_EnableInServer](<#Inbox_EnableInServer>) | Enables the Taskbox in the environment. |
 
-Structure | Description
----|---
-[Inbox_FilterCriteria](<#Structure_Inbox_FilterCriteria>) | 
-[Inbox_PaginationCriteria](<#Structure_Inbox_PaginationCriteria>) | 
-[Activity](<#Structure_Activity>) | The structure with the information of an activity in the TaskBox.
-[PaginationInfo](#Structure_PaginationInfo) | The structure with information of the number of activities in the TaskBox.
-
+| Structure | Description |
+| ---|--- |
+| [Inbox_FilterCriteria](<#Structure_Inbox_FilterCriteria>) | |
+| [Inbox_PaginationCriteria](<#Structure_Inbox_PaginationCriteria>) | |
+| [Activity](<#Structure_Activity>) | The structure with the information of an activity in the TaskBox. |
+| [PaginationInfo](#Structure_PaginationInfo) | The structure with information of the number of activities in the TaskBox. |
 
 ## Actions
 
@@ -63,7 +61,7 @@ Structure | Description
 Returns the activities of a user.  
 Activity filtering and pagination are allowed.
 
-*Inputs*
+_Inputs_
 
 UserId
 :   Type: mandatory, User Identifier.  
@@ -79,7 +77,7 @@ PaginationCriteria
     The pagination criteria for displaying the activities in the Taskbox of the user.  
     Leave it empty for no pagination.
 
-*Outputs*
+_Outputs_
 
 ActivityList
 :   Type: [Activity](#Structure_Activity) Record List.  
@@ -93,13 +91,13 @@ PaginationInfo
 
 Encodes the activity guidance instructions in HTML format.
 
-*Inputs*
+_Inputs_
 
 Guidance
 :   Type: mandatory, Text.  
     The activity guidance instructions.
 
-*Outputs*
+_Outputs_
 
 GuidanceHtml
 :   Type: Text.  
@@ -109,7 +107,7 @@ GuidanceHtml
 
 Returns the pagination information of all activities currently displayed in the Taskbox of the user.
 
-*Inputs*
+_Inputs_
 
 UserId
 :   Type: mandatory, User Identifier.  
@@ -120,7 +118,7 @@ FilterCriteria
     The criteria for filtering activities.  
     Leave it empty for no filtering.
 
-*Outputs*
+_Outputs_
 
 PaginationInfo
 :   Type: [PaginationInfo](#Structure_PaginationInfo).  
@@ -130,13 +128,13 @@ PaginationInfo
 
 Returns information on how an open activity is displayed in the Taskbox.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
     The identifier of the activity.
 
-*Outputs*
+_Outputs_
 
 HideDone
 :   Type: Boolean.  
@@ -155,7 +153,7 @@ CustomInstructions
 
 [Deprecated] Returns the JavaScript code for the Taskbox and its current content.
 
-*Inputs*
+_Inputs_
 
 EspaceId
 :   Type: mandatory, Espace Identifier.  
@@ -173,7 +171,7 @@ Data
 :   Type: mandatory, Text.  
     [Deprecated]
 
-*Outputs*
+_Outputs_
 
 Html
 :   Type: Text.  
@@ -183,7 +181,7 @@ Html
 
 Returns the activity that is currently open by the user and has the indicated activity as one of the previous activities in the process flow.
 
-*Inputs*
+_Inputs_
 
 UserId
 :   Type: mandatory, User Identifier.  
@@ -193,7 +191,7 @@ PreviousActivityId
 :   Type: mandatory, Activity Identifier.  
     The identifier of one of the previous activities in the process flow.
 
-*Outputs*
+_Outputs_
 
 ActivityId
 :   Type: Activity Identifier.  
@@ -203,7 +201,7 @@ ActivityId
 
 [Deprecated] Returns the HTML of the Taskbox with absolute URLs, i.e., starting with &quot;http://&lt;Server Name&gt;/&quot;.
 
-*Inputs*
+_Inputs_
 
 EspaceId
 :   Type: mandatory, Espace Identifier.  
@@ -221,7 +219,7 @@ Data
 :   Type: mandatory, Text.  
     [Deprecated]
 
-*Outputs*
+_Outputs_
 
 Html
 :   Type: Text.  
@@ -231,7 +229,7 @@ Html
 
 Displays all Taskbox activities for the user as already seen, i.e., only new activities will be displayed as not seen in the Taskbox.
 
-*Inputs*
+_Inputs_
 
 UserId
 :   Type: mandatory, User Identifier.  
@@ -241,7 +239,7 @@ UserId
 
 Sets how an open activity is displayed in the Taskbox.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -268,30 +266,24 @@ Disables the Taskbox in the environment.
 
 Enables the Taskbox in the environment.
 
-
 ## Structures
 
 ### Inbox_FilterCriteria { #Structure_Inbox_FilterCriteria }
 
-
-*Attributes*
+_Attributes_
 
 ActivityLabel
 :   Type: Text (50).  
-    
 
 ### Inbox_PaginationCriteria { #Structure_Inbox_PaginationCriteria }
 
-
-*Attributes*
+_Attributes_
 
 StartIndex
 :   Type: Integer.  
-    
 
 LineCount
 :   Type: Integer.  
-    
 
 ### Activity { #Structure_Activity }
 
@@ -326,7 +318,6 @@ IsOpened
 IsSeen
 :   Type: Boolean.
     Is False if the activity is not visible in the TaskBox due to pagination.
- 
 
 ### PaginationInfo { #Structure_PaginationInfo }
 
@@ -341,4 +332,3 @@ Total
 Unseen
 :   Type: Integer.
     The number of unseen activities due to pagination.
-

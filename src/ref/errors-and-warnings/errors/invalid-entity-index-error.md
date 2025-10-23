@@ -30,8 +30,8 @@ The `Invalid Entity Index` error is issued in the following situations:
   
     You have a Text attribute indexed with a size greater then 2000 and this situation is not allowed by some of the databases supported by OutSystems.
 
-    You have to select what best suits your needs: 
-    
+    You have to select what best suits your needs:
+
     * Reducing the size of the Text attribute
     * Do not have this attribute indexed
 

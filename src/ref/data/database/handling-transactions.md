@@ -32,7 +32,7 @@ You can manage transactions explicitly through the CommitTransaction and AbortTr
 
 * **CommitTransaction**: Issues a database COMMIT statement that makes effective all changes done on the database since the beginning of the current transaction. It also ends the current transaction and starts a new one. After a CommitTransaction, the action flow continues.
 
-* **AbortTransaction**: Issues a ROLLBACK statement that undoes all changes performed on the database since the beginning of the current transaction. It also ends the current transaction and starts a new one. After an AbortTransaction, the action flow continues. 
+* **AbortTransaction**: Issues a ROLLBACK statement that undoes all changes performed on the database since the beginning of the current transaction. It also ends the current transaction and starts a new one. After an AbortTransaction, the action flow continues.
 
 ## Isolation levels
 
@@ -54,7 +54,6 @@ The following table shows the isolation level OutSystems uses in the different d
 | PostgreSQL | | X |
 | Aurora PostgreSQL | | X |
 
-  
 When using SQL Server, Azure SQL, and MySQL databases you're working at **Read Uncommitted** isolation level. You have multiple transactions per web request: one for writes, one for each read.
 
 When using a DB2, Oracle, PostgreSQL, and Aurora PostgreSQL database, you're working at **Read Committed** isolation level. All queries, inserts, updates, etc. happen in the same database transaction. The data is stored to the database only when the transaction is committed.  

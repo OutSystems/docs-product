@@ -18,7 +18,7 @@ coverage-type:
 
 # Invalid Action Flow Error
 
-The Invalid Action Flow Error is issued, for example, when you create logic flows for Screen Actions, Client Actions, Server Actions, or Data Actions. 
+The Invalid Action Flow Error is issued, for example, when you create logic flows for Screen Actions, Client Actions, Server Actions, or Data Actions.
 
 Double-click on the error line in TrueChange to take you directly to the Action that is issuing the error.
 
@@ -30,7 +30,7 @@ You have a For Each element with a Cycle loop path that does not return to the F
 
 **Recommended action**
 
-Update the Cycle loop to return to the [For Each](../../../ref/lang/auto/class-for-each.md) element in your Action. 
+Update the Cycle loop to return to the [For Each](../../../ref/lang/auto/class-for-each.md) element in your Action.
 
 For example, for a [list](../../../building-apps/logic/list-iterate.md), you need to create a connection from the last step in your logic to the For Each node to close the cycle.
 
@@ -55,9 +55,9 @@ Alternatively, there are missing paths in a node of your Action. For example, yo
 
 **Recommended action**
 
-Edit the Action flow and update the ambiguous paths. Add any paths that are missing, for example, from a [For Each](../../../ref/lang/auto/class-for-each.md) node. 
+Edit the Action flow and update the ambiguous paths. Add any paths that are missing, for example, from a [For Each](../../../ref/lang/auto/class-for-each.md) node.
 
-Check [Exception Handler](../../../ref/lang/auto/class-exception-handler.md) for information about how to add an Exception Handler element and its logic in your Action flow. 
+Check [Exception Handler](../../../ref/lang/auto/class-exception-handler.md) for information about how to add an Exception Handler element and its logic in your Action flow.
 
 **More info**
 

@@ -19,24 +19,23 @@ coverage-type:
 
 # BPT API
 
-
 The BPT API provides functionality to manage processes and activities.
 
 To use this API, first reference the **BPT_API** extension by using the **Manage Dependencies** (**Ctrl+Q**) window in Service Studio.
 
 ## Summary
 
-Action | Description
----|---
-[Activity_Discard](<#Activity_Discard>) | Discards an Activity and the execution of the current Process flow stops, that is, none of the following activities in the flow is executed.<br/>Remarks:<br/>This action commits the current transaction.
-[Activity_IsValidId](<#Activity_IsValidId>) | Checks whether an Activity Identifier is valid for a Kind of activity.
-[HumanActivity_AssignToUser](<#HumanActivity_AssignToUser>) | Assigns a Human Activity to a User and sets the activity status to Ready. The human activity is only shown in that user's Taskbox.<br/>Remarks:<br/>This action commits the current transaction.
-[HumanActivity_CheckRole](<#HumanActivity_CheckRole>) | Checks whether a User has the role for executing a Human Activity.
-[HumanActivity_FlushPendingEvents](<#HumanActivity_FlushPendingEvents>) | Forces a Human Activity to handle immediately all its pending events.<br/>Remarks:<br/>This action commits the current transaction.
-[HumanActivity_SetDueDate](<#HumanActivity_SetDueDate>) | Sets the due date for a Human Activity.<br/>Remarks:<br/>This action commits the current transaction.
-[Process_BulkDelete](<#Process_BulkDelete>) | Deletes all the logged information of instances of top level Processes that have terminated or closed before the given date.<br/>The information that is deleted is all the logging of: process instances, activities instances, input parameters values, output parameters values, process instances executed within other process instances, etc.<br/>This action finds all top level process instances and recursively deletes all its subprocess instances, ensuring the meta-model remains consistent.<br/>In the meta-model, a top level process instance is identified in the Process entity by the condition: Top_Process_Id = Id.<br/>Remarks:<br/>This action does NOT commit the current transaction.
-[Process_Delete](<#Process_Delete>) | Deletes all the logged information of an instance of a top level Process, which must be either terminated or closed.<br/>The information that is deleted is all the logging of: process instance, activities instances, input parameters values, output parameters values, processes instances executed within other process instance, etc.<br/>This action finds the specified top level process instance and recursively deletes all its subprocess instances, ensuring the meta-model remains consistent.<br/>In the meta-model, a top level process instance is identified in the Process entity by the condition: Top_Process_Id = Id.<br/>This action will raise an exception in the following situations:<br/>\- The process instance does not exist;<br/>\- The process instance is not a top level process instance;<br/>\- The process instance is not terminated or closed.<br/>Remarks:<br/>This action does NOT commit the current transaction.
-[Taskbox_Hide](<#Taskbox_Hide>) | Add this action to a Preparation to disable the TaskBox on a screen.
+| Action | Description |
+| ---|--- |
+| [Activity_Discard](<#Activity_Discard>) | Discards an Activity and the execution of the current Process flow stops, that is, none of the following activities in the flow is executed.<br/>Remarks:<br/>This action commits the current transaction. |
+| [Activity_IsValidId](<#Activity_IsValidId>) | Checks whether an Activity Identifier is valid for a Kind of activity. |
+| [HumanActivity_AssignToUser](<#HumanActivity_AssignToUser>) | Assigns a Human Activity to a User and sets the activity status to Ready. The human activity is only shown in that user's Taskbox.<br/>Remarks:<br/>This action commits the current transaction. |
+| [HumanActivity_CheckRole](<#HumanActivity_CheckRole>) | Checks whether a User has the role for executing a Human Activity. |
+| [HumanActivity_FlushPendingEvents](<#HumanActivity_FlushPendingEvents>) | Forces a Human Activity to handle immediately all its pending events.<br/>Remarks:<br/>This action commits the current transaction. |
+| [HumanActivity_SetDueDate](<#HumanActivity_SetDueDate>) | Sets the due date for a Human Activity.<br/>Remarks:<br/>This action commits the current transaction. |
+| [Process_BulkDelete](<#Process_BulkDelete>) | Deletes all the logged information of instances of top level Processes that have terminated or closed before the given date.<br/>The information that is deleted is all the logging of: process instances, activities instances, input parameters values, output parameters values, process instances executed within other process instances, etc.<br/>This action finds all top level process instances and recursively deletes all its subprocess instances, ensuring the meta-model remains consistent.<br/>In the meta-model, a top level process instance is identified in the Process entity by the condition: Top_Process_Id = Id.<br/>Remarks:<br/>This action does NOT commit the current transaction. |
+| [Process_Delete](<#Process_Delete>) | Deletes all the logged information of an instance of a top level Process, which must be either terminated or closed.<br/>The information that is deleted is all the logging of: process instance, activities instances, input parameters values, output parameters values, processes instances executed within other process instance, etc.<br/>This action finds the specified top level process instance and recursively deletes all its subprocess instances, ensuring the meta-model remains consistent.<br/>In the meta-model, a top level process instance is identified in the Process entity by the condition: Top_Process_Id = Id.<br/>This action will raise an exception in the following situations:<br/>\- The process instance does not exist;<br/>\- The process instance is not a top level process instance;<br/>\- The process instance is not terminated or closed.<br/>Remarks:<br/>This action does NOT commit the current transaction. |
+| [Taskbox_Hide](<#Taskbox_Hide>) | Add this action to a Preparation to disable the TaskBox on a screen. |
 
 ## Actions
 
@@ -47,7 +46,7 @@ Discards an Activity and the execution of the current Process flow stops, that i
 Remarks:  
 This action commits the current transaction.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: EntityReference. Mandatory.  
@@ -57,7 +56,7 @@ ActivityId
 
 Checks whether an Activity Identifier is valid for a Kind of activity.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: EntityReference. Mandatory.  
@@ -67,7 +66,7 @@ Kind
 :   Type: EntityReference. Mandatory.  
     The kind of the Activity.
 
-*Outputs*
+_Outputs_
 
 IsValid
 :   Type: Boolean.  
@@ -80,7 +79,7 @@ Assigns a Human Activity to a User and sets the activity status to Ready. The hu
 Remarks:  
 This action commits the current transaction.
 
-*Inputs*
+_Inputs_
 
 HumanActivityId
 :   Type: EntityReference. Mandatory.  
@@ -94,7 +93,7 @@ UserId
 
 Checks whether a User has the role for executing a Human Activity.
 
-*Inputs*
+_Inputs_
 
 HumanActivityId
 :   Type: EntityReference. Mandatory.  
@@ -104,7 +103,7 @@ UserId
 :   Type: EntityReference. Mandatory.  
     The identifier of the User.
 
-*Outputs*
+_Outputs_
 
 HasPermission
 :   Type: Boolean.  
@@ -117,13 +116,13 @@ Forces a Human Activity to handle immediately all its pending events.
 Remarks:  
 This action commits the current transaction.
 
-*Inputs*
+_Inputs_
 
 HumanActivityId
 :   Type: EntityReference. Mandatory.  
     The identifier of the Human Activity.
 
-*Outputs*
+_Outputs_
 
 ProcessedEvents
 :   Type: Integer.  
@@ -136,7 +135,7 @@ Sets the due date for a Human Activity.
 Remarks:  
 This action commits the current transaction.
 
-*Inputs*
+_Inputs_
 
 HumanActivityId
 :   Type: EntityReference. Mandatory.  
@@ -157,7 +156,7 @@ In the meta-model, a top level process instance is identified in the Process ent
 Remarks:  
 This action does NOT commit the current transaction.
 
-*Inputs*
+_Inputs_
 
 ProcessesOlderThan
 :   Type: DateTime. Mandatory.  
@@ -171,7 +170,7 @@ MaxDeletedProcesses
 :   Type: Integer. Default: 1000.  
     The maximum number of processes to be deleted. The default is 1000. Set to 0 (zero) for unlimited deletes.
 
-*Outputs*
+_Outputs_
 
 HasMoreToDelete
 :   Type: Boolean.  
@@ -193,7 +192,7 @@ This action will raise an exception in the following situations:
 Remarks:  
 This action does NOT commit the current transaction.
 
-*Inputs*
+_Inputs_
 
 ProcessId
 :   Type: EntityReference. Mandatory.  
@@ -202,5 +201,3 @@ ProcessId
 ### Taskbox_Hide { #Taskbox_Hide }
 
 Add this action to a Preparation to disable the TaskBox on a screen.
-
-

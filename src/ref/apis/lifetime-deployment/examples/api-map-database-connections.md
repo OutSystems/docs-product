@@ -7,17 +7,23 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+tags: api usage, database mapping, deployment status, lifetime api, outsystems 11
+audience:
+  - platform administrators
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - lifetime
 ---
-
 # Map logical database to database connections using the LifeTime API
 
 In this example, perform the following generic steps using API calls:
 
 1. Get the deployment status.
 
-2. Get the extensions and database connections to map.
+1. Get the extensions and database connections to map.
 
-3. Map the missing database connections.
+1. Map the missing database connections.
 
 <div class="info" markdown="1">
 
@@ -40,6 +46,7 @@ After replacing the `{DeploymentKey}` placeholder with the correct key, you get 
 Request: `GET /lifetimeapi/rest/v2/deployments/dce64ad4-2ddf-4e54-a639-3524bcd5b9a1/status`
 
 Response body:
+
 ```JavaScript
 {
     "DeploymentStatus": "needs_user_intervention",
@@ -90,6 +97,7 @@ Again, you must replace the `{DeploymentKey}` placeholder with the correct key. 
 Request: `GET /lifetimeapi/rest/v2/deployments/dce64ad4-2ddf-4e54-a639-3524bcd5b9a1/getmissingdbmappings`
 
 Response body:
+
 ```JavaScript
 [
   {

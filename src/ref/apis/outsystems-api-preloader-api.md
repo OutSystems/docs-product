@@ -35,12 +35,12 @@ The following files are prefetched:
 
 * CSS styles and JavaScript code added to Web Blocks, Screens, and Themes
 * Image files used in the application module
-* Module resources with their 'Deploy Action' property set to 'Deploy to Target Directory', and that have the following file formats: 
-    * css 
-    * js    
-    * gif, png, jpg, jpeg 
-    * woff 
-* If your module has a dependency to other modules: 
+* Module resources with their 'Deploy Action' property set to 'Deploy to Target Directory', and that have the following file formats:
+    * css
+    * js
+    * gif, png, jpg, jpeg
+    * woff
+* If your module has a dependency to other modules:
     * CSS of referenced Web Blocks and Themes
     * All referenced images
 
@@ -48,8 +48,8 @@ The following files are prefetched:
 
 Include the _preloader.js file in your application. It needs to be added to the screen where you want to use the API. To do so, follow these steps:
 
-1. Reference the [AddJavaScriptTag](<auto/httprequesthandler-api.final.md#AddJavaScriptTag>) of the [HTTPRequestHandler](<auto/httprequesthandler-api.final.md>) extension in your application. 
-1. Use the 'AddJavaScriptTag' action in your application to import the `_preloader.js` file.   
+1. Reference the [AddJavaScriptTag](<auto/httprequesthandler-api.final.md#AddJavaScriptTag>) of the [HTTPRequestHandler](<auto/httprequesthandler-api.final.md>) extension in your application.
+1. Use the 'AddJavaScriptTag' action in your application to import the `_preloader.js` file.
 Set the 'JavaScriptURL' parameter to `_preloader.js`.
 
 ## preloadApp Method

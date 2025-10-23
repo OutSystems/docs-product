@@ -114,7 +114,6 @@ To combine two different data series types in one chart follow these steps:
 
 ![Example of a combined chart with Column and Spline types showing two different data series](images/adv-comb-01.png "Combined Column and Spline Chart")
 
-
 ## Adding JSON from Highcharts demos to OutSystems Charts
 
 Besides the simple examples and JSON snippets provided in this topic, you can also check out the [Highcharts demo page](https://www.highcharts.com/demo) for a list of other examples of chart customization.  

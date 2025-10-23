@@ -28,14 +28,14 @@ This example shows how you can create a simple Pie Chart showing the labels of t
 
     ![Screenshot of the Properties tab with the DataPointList property expanded to add data points.](images/chartpie-expand-ss.png "Expanding DataPointList Property")
 
-1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data).
 
-    This example uses fixed data. These properties define the first data point. Each data point corresponds to a slice on the pie chart. 
+    This example uses fixed data. These properties define the first data point. Each data point corresponds to a slice on the pie chart.
 
     ![Screenshot illustrating how to set the Label and Value properties for a data point in the Pie Chart.](images/chartpie-datapointlist-ss.png "Setting Data Point Properties")
 
 1. To add more data points, repeat steps 2 and 3.
-    
+
     ![Screenshot showing the process of adding additional data points to the Pie Chart.](images/chartpie-extrapoints-ss.png "Adding Additional Data Points")
 
 1. To show each of the data point values, in the **AddOns** placeholder, click **SeriesStyling**, and on the **Properties** tab, set the **ShowDataPointValues** property to **True**.
@@ -51,4 +51,3 @@ This example shows how you can create a simple Pie Chart showing the labels of t
 After following these steps, you can publish your module:
 
 ![Image of the final Pie Chart with labels on data points and without a legend, as seen in the published module.](images/chartpie-result.png "Final Pie Chart Result")
-

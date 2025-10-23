@@ -20,7 +20,6 @@ coverage-type:
 
 # PlatformRuntime API
 
-
 The OutSystems PlatformRuntime API provides actions to:
 
 * switch the database connection in runtime
@@ -30,15 +29,15 @@ To use this API, add a dependency to your application on the PlatformRuntime_API
 
 ## Summary
 
-Action | Description
----|---
-[Audit_CreateAuditLog](<#Audit_CreateAuditLog>) | Creates an audit log record in a secure auditing storage. This action waits until the audit log is successfully stored, otherwise an exception is raised.<br/>If the secure auditing storage is unsupported or not configured in the current environment, the creation of the audit log record is skipped.
-[Database_WriteInParallelTransaction](<#Database_WriteInParallelTransaction>) | Write a record as a generic object that uses a different transaction of the original request. A parallel transaction that runs asynchronously and independently of the original transaction.
-[DatabaseConnection_SetConnectionStringForSession](<#DatabaseConnection_SetConnectionStringForSession>) | Switches a Database Connection from one database to another at runtime and in the current Session.<br/>There are some conditions to which you have to pay attention to when using this action:<br/>\- The Connection String must connect to a database with the same type (e.g. Oracle, SQL Server, MySQL) as the one configured in Service Center for the Database Connection.<br/>\- For Traditional Web apps, if you run any Aggregate or SQL using the Database Connection with the previous database before executing this action, the switch to the new database becomes effective only in the next request.<br/>\- For Mobile and Reactive Web apps, you need to execute this action in the beginning of a Data Action, before running any Aggregate or SQL to fetch the records. As the session is not persistent between server requests, this needs to be done for each server request that you need to switch the database connection string.<br/>\- Your license must include the Platform Extensibility APIs feature.
-[Request_GetKey](<#Request_GetKey>) | Provides the RequestKey that uniquely identifies the current request.<br/>If there is no RequestKey available in the current context, an empty string is returned.
-[Session_GetMobileAppLoginId](<#Session_GetMobileAppLoginId>) | Gets the token that uniquely identifies the authenticated session for a Mobile Application.<br/>This method can be used in when managing server side session stores where you need to uniquely identify a user authenticated session.
-[Session_GetMobileAppLoginInfo](<#Session_GetMobileAppLoginInfo>) | Gets User information of the authenticated user for a Mobile Application.<br/>This method is designed for interoperability scenarios where you need to embed a Responsive screen in your mobile application.
-[Session_GetWebAppLoginInfo](<#Session_GetWebAppLoginInfo>) | Gets User information of the authenticated user for a Web Application.<br/>This method is designed for interoperability scenarios where you need to access session information in sessionless endpoints like REST methods.
+| Action | Description |
+| ---|--- |
+| [Audit_CreateAuditLog](<#Audit_CreateAuditLog>) | Creates an audit log record in a secure auditing storage. This action waits until the audit log is successfully stored, otherwise an exception is raised.<br/>If the secure auditing storage is unsupported or not configured in the current environment, the creation of the audit log record is skipped. |
+| [Database_WriteInParallelTransaction](<#Database_WriteInParallelTransaction>) | Write a record as a generic object that uses a different transaction of the original request. A parallel transaction that runs asynchronously and independently of the original transaction. |
+| [DatabaseConnection_SetConnectionStringForSession](<#DatabaseConnection_SetConnectionStringForSession>) | Switches a Database Connection from one database to another at runtime and in the current Session.<br/>There are some conditions to which you have to pay attention to when using this action:<br/>\- The Connection String must connect to a database with the same type (e.g. Oracle, SQL Server, MySQL) as the one configured in Service Center for the Database Connection.<br/>\- For Traditional Web apps, if you run any Aggregate or SQL using the Database Connection with the previous database before executing this action, the switch to the new database becomes effective only in the next request.<br/>\- For Mobile and Reactive Web apps, you need to execute this action in the beginning of a Data Action, before running any Aggregate or SQL to fetch the records. As the session is not persistent between server requests, this needs to be done for each server request that you need to switch the database connection string.<br/>\- Your license must include the Platform Extensibility APIs feature. |
+| [Request_GetKey](<#Request_GetKey>) | Provides the RequestKey that uniquely identifies the current request.<br/>If there is no RequestKey available in the current context, an empty string is returned. |
+| [Session_GetMobileAppLoginId](<#Session_GetMobileAppLoginId>) | Gets the token that uniquely identifies the authenticated session for a Mobile Application.<br/>This method can be used in when managing server side session stores where you need to uniquely identify a user authenticated session. |
+| [Session_GetMobileAppLoginInfo](<#Session_GetMobileAppLoginInfo>) | Gets User information of the authenticated user for a Mobile Application.<br/>This method is designed for interoperability scenarios where you need to embed a Responsive screen in your mobile application. |
+| [Session_GetWebAppLoginInfo](<#Session_GetWebAppLoginInfo>) | Gets User information of the authenticated user for a Web Application.<br/>This method is designed for interoperability scenarios where you need to access session information in sessionless endpoints like REST methods. |
 
 ## Actions
 
@@ -47,7 +46,7 @@ Action | Description
 Creates an audit log record in a secure auditing storage. This action waits until the audit log is successfully stored, otherwise an exception is raised.  
 If the secure auditing storage is unsupported or not configured in the current environment, the creation of the audit log record is skipped.
 
-*Inputs*
+_Inputs_
 
 Operation
 :   Type: Text. Mandatory.  
@@ -65,7 +64,7 @@ Extra
 
 Write a record as a generic object that uses a different transaction of the original request. A parallel transaction that runs asynchronously and independently of the original transaction.
 
-*Inputs*
+_Inputs_
 
 Record
 :   Type: Object. Mandatory.  
@@ -80,8 +79,7 @@ There are some conditions to which you have to pay attention to when using this 
 \- For Mobile and Reactive Web apps, you need to execute this action in the beginning of a Data Action, before running any Aggregate or SQL to fetch the records. As the session is not persistent between server requests, this needs to be done for each server request that you need to switch the database connection string.  
 \- Your license must include the Platform Extensibility APIs feature.
 
-
-*Inputs*
+_Inputs_
 
 connectionName
 :   Type: Text. Mandatory.  
@@ -100,18 +98,17 @@ databaseIdentifier
 Provides the RequestKey that uniquely identifies the current request.  
 If there is no RequestKey available in the current context, an empty string is returned.
 
-*Outputs*
+_Outputs_
 
 RequestKey
 :   Type: Text.  
-    
 
 ### Session_GetMobileAppLoginId { #Session_GetMobileAppLoginId }
 
 Gets the token that uniquely identifies the authenticated session for a Mobile Application.  
 This method can be used in when managing server side session stores where you need to uniquely identify a user authenticated session.
 
-*Outputs*
+_Outputs_
 
 loginId
 :   Type: Text.  
@@ -122,7 +119,7 @@ loginId
 Gets User information of the authenticated user for a Mobile Application.  
 This method is designed for interoperability scenarios where you need to embed a Responsive screen in your mobile application.
 
-*Outputs*
+_Outputs_
 
 userId
 :   Type: Integer.  
@@ -132,15 +129,13 @@ isPersistent
 :   Type: Boolean.  
     True if the login is persistent.
 
-
 ### Session_GetWebAppLoginInfo { #Session_GetWebAppLoginInfo }
 
 Gets User information of the authenticated user for a Web Application.  
 This method is designed for interoperability scenarios where you need to access session information in sessionless endpoints like REST methods.
 
-*Outputs*
+_Outputs_
 
 userId
 :   Type: Integer.  
     Returns the user identifier, or NullIdentifier() (userId = 0) if user is not logged in.
-

@@ -20,13 +20,13 @@ coverage-type:
 
 # Debugging and troubleshooting mobile and reactive web apps
 
-OutSystems provides rich capabilities to develop Mobile Applications and Reactive Web applications. These two application types each have a few unique characteristics, but they also share a common modern technology stack and development model. 
+OutSystems provides rich capabilities to develop Mobile Applications and Reactive Web applications. These two application types each have a few unique characteristics, but they also share a common modern technology stack and development model.
 
 Applications consist on a combination of client-side code and server-side code, which are both key to a great user experience, but can also make investigating and correcting unexpected behavior a bit more involved in certain scenarios.
 
-The OutSystems platform comes with a very powerful debugger (integrated with Service Studio) and detailed, configurable built-in logging right out of the box. Application logs are accessible via the monitoring section of Service Center. 
+The OutSystems platform comes with a very powerful debugger (integrated with Service Studio) and detailed, configurable built-in logging right out of the box. Application logs are accessible via the monitoring section of Service Center.
 
-These Tools, combined with the Developer Tools offered by modern browsers like Chrome and Safari, provide an excellent starting point for applications troubleshooting and debugging. 
+These Tools, combined with the Developer Tools offered by modern browsers like Chrome and Safari, provide an excellent starting point for applications troubleshooting and debugging.
 
 Ample documentation on how to take advantage of this Toolset is available in the [Troubleshooting Applications](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications) and [Monitor and Troubleshoot](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot) (Note that the monitoring capabilities of LifeTime **aren't available** for Reactive and Mobile Apps) sections of the [public platform documentation](https://success.outsystems.com/Documentation/11/New_in_OutSystems_11).
 
@@ -36,7 +36,7 @@ This section's articles address the following topics:
 
 * [A general discussion of the troubleshooting and debugging **process**.](troubleshooting-process.md)
 
-* [A quick refresher on the main capabilities of the standard troubleshooting and debugging **Toolkit**](standard-toolkit.md) 
+* [A quick refresher on the main capabilities of the standard troubleshooting and debugging **Toolkit**](standard-toolkit.md)
     (For example: Service Studio and its integrated debugger + Service Center logs & reports + Chrome / Safari Developer Tools).
 
 * [A list of **additional Tools** that can help you when the standard Toolkit isn't enough.](extended-toolkit.md)

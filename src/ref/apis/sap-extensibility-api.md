@@ -24,9 +24,9 @@ The OutSystems SAP Extensibility API is a .NET API that enables you to customize
 
 To be able to use this API, you need to have these files in your extension:
 
-* `OutSystems.SAP.API.dll`: File with the OutSystems SAP Extensibility API methods. You can find it in your Platform installation folder under '\Integration Studio\Extensibility\SAP\NET'. 
+* `OutSystems.SAP.API.dll`: File with the OutSystems SAP Extensibility API methods. You can find it in your Platform installation folder under '\Integration Studio\Extensibility\SAP\NET'.
 
-* `sapnco.dll` and `sapnco_utils.dll`: Drivers to communicate with SAP. You can find them in the [SAP Connector for Microsoft .NET](<https://support.sap.com/en/product/connectors/msnet.html>). Download and install the driver. When asked to install assemblies to GAC, choose 'None'. Remember the installation path, it will be needed. 
+* `sapnco.dll` and `sapnco_utils.dll`: Drivers to communicate with SAP. You can find them in the [SAP Connector for Microsoft .NET](<https://support.sap.com/en/product/connectors/msnet.html>). Download and install the driver. When asked to install assemblies to GAC, choose 'None'. Remember the installation path, it will be needed.
 
 Optional: to access elements defined in namespaces, without having to write the whole namespace, you can include the following namespaces into your extension classes: `OutSystems.RuntimePublic.SAP` and `SAP.Middleware.Connector`.
 
@@ -34,32 +34,32 @@ Optional: to access elements defined in namespaces, without having to write the 
 
 Setup the extension:
 
-1. Create the extension in Integration Studio. 
-2. Create the actions your need. 
-3. Open Visual Studio in button 'Edit Source Code .NET'. 
-4. Edit project properties and set the project target framework to '.NET Framework 4.5.1'. 
-5. Copy files `sapnco.dll` and `sapnco_utils.dll` to directory `\Source\NET\Bin\` of the extension. 
-6. In Visual Studio, add `\Source\NET\Bin\sapnco.dll`, `\Source\NET\Bin\sapnco_utils.dll`, and `\Source\NET\Bin\OutSystems.SAP.API.dll` references to the project. 
+1. Create the extension in Integration Studio.
+1. Create the actions your need.
+1. Open Visual Studio in button 'Edit Source Code .NET'.
+1. Edit project properties and set the project target framework to '.NET Framework 4.5.1'.
+1. Copy files `sapnco.dll` and `sapnco_utils.dll` to directory `\Source\NET\Bin\` of the extension.
+1. In Visual Studio, add `\Source\NET\Bin\sapnco.dll`, `\Source\NET\Bin\sapnco_utils.dll`, and `\Source\NET\Bin\OutSystems.SAP.API.dll` references to the project.
 
 Implement the .NET code:
 
-1. In Visual Studio, implement the logic of the actions and use functionality you need from the SAP Extensibility API. 
-2. Close Visual Studio. 
-3. In Integration Studio, go to Resources tab. If `sapnco.dll` and `sapnco_utils.dll` are not grayed out, double-click on them and set their Deploy Action to 'Ignore'. 
-4. Publish the extension. 
+1. In Visual Studio, implement the logic of the actions and use functionality you need from the SAP Extensibility API.
+1. Close Visual Studio.
+1. In Integration Studio, go to Resources tab. If `sapnco.dll` and `sapnco_utils.dll` are not grayed out, double-click on them and set their Deploy Action to 'Ignore'.
+1. Publish the extension.
 
 Use the extension:
 
 1. In Service Studio, add a dependency to the actions you need from the extension.
-2. Use SAP callback actions to call the actions implemented in the extension. 
+1. Use SAP callback actions to call the actions implemented in the extension.
 
 ## API Class Reference
 
 The available classes in the SAP Extensibility API are:
 
-* [SAPConnection](#sapconnection-class): Provides access and control over the connection parameters of the SAP connection. 
-* [SAPContext](#sapcontext-class): Enables you to take control over the flow when calling an SAP remote function. 
-* [SAPRequest](#saprequest-class): Allows to access parameter values sent and received when calling an SAP remote function. 
+* [SAPConnection](#sapconnection-class): Provides access and control over the connection parameters of the SAP connection.
+* [SAPContext](#sapcontext-class): Enables you to take control over the flow when calling an SAP remote function.
+* [SAPRequest](#saprequest-class): Allows to access parameter values sent and received when calling an SAP remote function.
 
 ### SAPConnection Class
 
@@ -69,17 +69,16 @@ To handle the connection configurations, create an extension module, and use its
 
 #### Methods
 
-Method  |  Description  
----|---  
-static <br/>SAPConnection GetCurrent()  |  Returns the object with the configurations used to establish the connection to call an SAP remote function, when invoked inside the 'OnBeforeConnection' callback action of the SAP connection. Otherwise, returns null.  
-SAP.Middleware.Connector.RfcConfigParameters GetRfcConfigParameters()  | Returns the SAP connector SAP.Middleware.Connector.RfcConfigParameters object, with the configurations used in the connection established to call an SAP remote function.  
-void <br/>SetRfcConfigParameters(SAP.Middleware.Connector.RfcConfigParameters rfcConfigParameters)  |  Sets the SAP connector object SAP.Middleware.Connector.RfcConfigParameters object, with configurations used in the connection established to call an SAP remote function.  
+| Method  |  Description |
+| ---|--- |
+| static <br/>SAPConnection GetCurrent()  |  Returns the object with the configurations used to establish the connection to call an SAP remote function, when invoked inside the 'OnBeforeConnection' callback action of the SAP connection. Otherwise, returns null. |
+| SAP.Middleware.Connector.RfcConfigParameters GetRfcConfigParameters()  | Returns the SAP connector SAP.Middleware.Connector.RfcConfigParameters object, with the configurations used in the connection established to call an SAP remote function. |
+| void <br/>SetRfcConfigParameters(SAP.Middleware.Connector.RfcConfigParameters rfcConfigParameters)  |  Sets the SAP connector object SAP.Middleware.Connector.RfcConfigParameters object, with configurations used in the connection established to call an SAP remote function. |
   
 #### Example
 
 The following example shows how you can use the SAPConnection class to change the configuration of your connection to the SAP in order to call the remote functions, with the logon ticket instead of a username and password.
-    
-    
+
 ```csharp
 using OutSystems.RuntimePublic.SAP;
 using SAP.Middleware.Connector;
@@ -103,7 +102,7 @@ namespace OutSystems.SAPLogonTicketExtension {
     }
 }
 
-```    
+```
 
 ### SAPContext Class
 
@@ -113,18 +112,17 @@ To handle the connection's context, create an extension module, and use its meth
 
 #### Methods
 
-Method  |  Description  
----|---  
-static void BeginContext()  |  Begins a stateful call sequence allowing the user to orchestrate two or more remote function calls in the same context.  
-static void Commit()  |  Commits the changes made so far in the stateful call sequence by calling the remote function 'BAPI_TRANSACTION_COMMIT'.  
-static void EndContext()  |  Ends a stateful call sequence. Must be placed after a beginContext() method.  
-static void Rollback()  |  Rolls back any changes made so far in the stateful call sequence by calling the remote function 'BAPI_TRANSACTION_ROLLBACK'.  
+| Method  |  Description |
+| ---|--- |
+| static void BeginContext()  |  Begins a stateful call sequence allowing the user to orchestrate two or more remote function calls in the same context. |
+| static void Commit()  |  Commits the changes made so far in the stateful call sequence by calling the remote function 'BAPI_TRANSACTION_COMMIT'. |
+| static void EndContext()  |  Ends a stateful call sequence. Must be placed after a beginContext() method. |
+| static void Rollback()  |  Rolls back any changes made so far in the stateful call sequence by calling the remote function 'BAPI_TRANSACTION_ROLLBACK'. |
   
 #### Example
 
 This example shows how you can have a stateful connection with SAP using the SAPContext class. It defines the begin and end of the context, as the commit and rollback of the changes made so far.
-    
-    
+
 ```csharp
 using OutSystems.RuntimePublic.SAP;
 
@@ -159,7 +157,7 @@ namespace OutSystems.SAPStatefulConnectionExtension {
         }
     }
 }
-```    
+```
 
 ### SAPRequest Class
 
@@ -169,16 +167,15 @@ To handle the remote function parameters, create an extension module, and use it
 
 #### Methods
 
-Method  |  Description  
----|---  
-static <br/>SAPRequest GetCurrent()  |  Returns the object with information about the current SAP remote function call, when invoked inside the 'OnBeforeCall', or 'OnAfterCall' callback actions of the SAP connection. Otherwise, returns null.  
-SAP.Middleware.Connector.IRfcFunction GetIRfcFunction()  |  Returns the SAP connector SAP.Middleware.Connector.IRfcFunction object, with the metadata and the parameters value for the current SAPRequest.  
+| Method  |  Description |
+| ---|--- |
+| static <br/>SAPRequest GetCurrent()  |  Returns the object with information about the current SAP remote function call, when invoked inside the 'OnBeforeCall', or 'OnAfterCall' callback actions of the SAP connection. Otherwise, returns null. |
+| SAP.Middleware.Connector.IRfcFunction GetIRfcFunction()  |  Returns the SAP connector SAP.Middleware.Connector.IRfcFunction object, with the metadata and the parameters value for the current SAPRequest. |
   
 #### Example
 
 This example shows how you can adjust the input parameters values when calling an SAP remote function. For that we will get the remote function metadata of the 'Bapi\_Customer\_Getlist', and ensure that the customer id we are sending to SAP has 9 digits as the SAP internal value for this parameter. If not, we will add trailing zeros to the parameter value till it has the 9 digits.
-    
-    
+
 ```csharp
 using System;
 using OutSystems.RuntimePublic.SAP;

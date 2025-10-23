@@ -19,7 +19,6 @@ coverage-type:
 
 # Asynchronous Logging API
 
-
 The Asynchronous Logging API provides actions to perform the following asynchronously:
 
 * insert records into the database
@@ -33,11 +32,11 @@ To use this API, simply reference the AsynchronousLogging module in your applica
 
 ## Summary
 
-Action | Description
----|---
-[LogError](<#LogError>) | Asynchronously inserts a error into the database. Errors are kept in a queue and inserted into the database in bulk after a short period.
-[LogRecord](<#LogRecord>) | Asynchronously inserts a record into the database. Records are kept in a queue and inserted into the database in bulk after a short period.
-[LogRequestEvent](<#LogRequestEvent>) | Asynchronously logs a request event. The events are kept in a queue and inserted in bulk after a short period.
+| Action | Description |
+| ---|--- |
+| [LogError](<#LogError>) | Asynchronously inserts a error into the database. Errors are kept in a queue and inserted into the database in bulk after a short period. |
+| [LogRecord](<#LogRecord>) | Asynchronously inserts a record into the database. Records are kept in a queue and inserted into the database in bulk after a short period. |
+| [LogRequestEvent](<#LogRequestEvent>) | Asynchronously logs a request event. The events are kept in a queue and inserted in bulk after a short period. |
 
 ## Actions
 
@@ -45,7 +44,7 @@ Action | Description
 
 Asynchronously inserts a error into the database. Errors are kept in a queue and inserted into the database in bulk after a short period. Note that the queue is non-persistent.
 
-*Inputs*
+_Inputs_
 
 Instant
 :   Type: DateTime. Mandatory.  
@@ -71,7 +70,7 @@ Detail
 
 Asynchronously inserts a record into the database. Records are kept in a queue and inserted into the database in bulk after a short period. Note that the queue is non-persistent.
 
-*Inputs*
+_Inputs_
 
 Record
 :   Type: Object. Mandatory.  
@@ -81,7 +80,7 @@ Record
 
 Asynchronously logs a request event. The events are kept in a message queue and inserted in bulk after a short period.
 
-*Inputs*
+_Inputs_
 
 Instant
 :   Type: DateTime. Mandatory.  
@@ -114,5 +113,3 @@ ApplicationName
 RequestEventDetails
 :   Type: Text.  
     A text with event details in JSON format. It is a regular JSON object with the fields ‘Key’ and ‘Value’.
-
-

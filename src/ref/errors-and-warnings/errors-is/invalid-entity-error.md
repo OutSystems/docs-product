@@ -25,7 +25,7 @@ Cause
 :   You have an entity with no attributes.
 
 Recommendation
-:   You must [add attributes](<../../../integration-with-systems/integration-studio/managing-extensions/entity-attribute.md>) to this entity. 
+:   You must [add attributes](<../../../integration-with-systems/integration-studio/managing-extensions/entity-attribute.md>) to this entity.
 
 ---
 
@@ -58,7 +58,7 @@ Cause
 :   You have an entity with more than one sequential attribute and this situation is not allowed; you can have only one sequential attribute per entity.
 
 Recommendation
-:   Check your entity and choose which attribute must be sequential. In the other attribute, you have to [un-check](<../../../integration-with-systems/integration-studio/managing-extensions/entity-attribute.md>) the Auto Number property. 
+:   Check your entity and choose which attribute must be sequential. In the other attribute, you have to [un-check](<../../../integration-with-systems/integration-studio/managing-extensions/entity-attribute.md>) the Auto Number property.
 
 ---
 
@@ -69,7 +69,7 @@ Cause
 :   You have an entity with no physical table name.
 
 Recommendation
-:   [Edit this entity](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) and specify the Table Name property. 
+:   [Edit this entity](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) and specify the Table Name property.
 
 ---
 
@@ -80,4 +80,4 @@ Cause
 :   You have more than one entity using the same physical table name.
 
 Recommendation
-:   [Edit one of these entities](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) and change the Table Name property. 
+:   [Edit one of these entities](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) and change the Table Name property.

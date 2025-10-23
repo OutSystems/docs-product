@@ -18,7 +18,7 @@ coverage-type:
 
 # Integration Studio
 
-Integration Studio is a desktop tool that allows you to create and manage your [extensions](<../../integration-with-systems/integration-studio/getting-started/extension.md>). To install Integration Studio, use the installer on the [Software Downloads](https://www.outsystems.com/Downloads/) page. 
+Integration Studio is a desktop tool that allows you to create and manage your [extensions](<../../integration-with-systems/integration-studio/getting-started/extension.md>). To install Integration Studio, use the installer on the [Software Downloads](https://www.outsystems.com/Downloads/) page.
 
 <div class="info" markdown="1">
 

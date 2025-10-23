@@ -26,7 +26,6 @@ The extension properties are explained below.
 Name
 :   Name of the extension. See [rules for naming elements](<../element-naming.md>).
 
-
 DBMS
 :   Indicates the Database Management System (DBMS) type that the extension is prepared to work with. This property is used during the validation of the extension to, for example, check whether the physical table name associated with an entity is valid or not.
 

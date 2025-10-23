@@ -26,6 +26,6 @@ Message
 
 Cause
 :   The `<file>` is empty and therefore cannot be copied to the `Binaries` folder in the Platform Server. See [Resource Editor](<../../integration-studio/editor/resource.md>)
-    
-Recommendation    
+
+Recommendation
 :   You should [verify](<../../../integration-with-systems/integration-studio/extension-life-cycle/extension-verify.md>) your extension again in order to generate the DLL or JAR correctly.

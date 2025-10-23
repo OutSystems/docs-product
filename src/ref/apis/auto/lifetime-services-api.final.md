@@ -29,14 +29,14 @@ This API, composed of a set of SOAP Web Services, provides functionality to mana
 
 ## Summary
 
-Web Service | Description
----|---
-[RoleManagementService](<#RoleManagementService>) | The API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul>
-[AuthenticationService](<#AuthenticationService>) | The API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires.
-[TeamManagementService](<#TeamManagementService>) | The API to manage teams in the platform.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul>
-[SecurityManagementService](<#SecurityManagementService>) | The API for getting security information about users and addresses who login to the platform.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul>
-[DbConnectionManagementService](<#DbConnectionManagementService>) | This API provides methods to create, change, and delete connections to external databases. It also allows managing users permissions.
-[UserManagementService](<#UserManagementService>) | The API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul>
+| Web Service | Description |
+| ---|--- |
+| [RoleManagementService](<#rolemanagementservice>) | The API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul> |
+| [AuthenticationService](<#authenticationservice>) | The API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires. |
+| [TeamManagementService](<#teammanagementservice>) | The API to manage teams in the platform.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul> |
+| [SecurityManagementService](<#securitymanagementservice>) | The API for getting security information about users and addresses who login to the platform.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul> |
+| [DbConnectionManagementService](<#dbconnectionmanagementservice>) | This API provides methods to create, change, and delete connections to external databases. It also allows managing users permissions. |
+| [UserManagementService](<#usermanagementservice>) | The API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul> |
 
 ## RoleManagementService
 
@@ -44,21 +44,21 @@ The API to manage IT roles: roles created in the platform. The authenticated use
 To use this API, authenticate in one of the following ways:
 
 * Specify a valid platform username and password.
-* Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+* Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.
 * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/RoleManagementService.asmx?WSDL`
 
-Action | Description
----|---
-[Role_ChangeName](<#Role_ChangeName>) | Updates the name of a platform role.
-[Role_CreateOrUpdate](<#Role_CreateOrUpdate>) | Creates a new platform role or updates a platform role that already exists.
-[Role_Delete](<#Role_Delete>) | Deletes a platform role that already exists. Since the platform requires IT users to have a single platform role, you need to specify a new platform role to grant to the users that are currently set with the role you want to delete.<br/>
-[Role_GetEnvironmentPermissionsLevels](<#Role_GetEnvironmentPermissionsLevels>) | Lists the permission levels that a platform user has over the environments.
-[Role_GetPermissions](<#Role_GetPermissions>) | Returns the list of permissions a platform role has in the environments registered in the platform.
-[Role_List](<#Role_List>) | Returns all platform roles with their information.
-[Role_UpdatePermission](<#Role_UpdatePermission>) | Updates the permissions a platform role has in a specified environment.
+| Action | Description |
+| ---|--- |
+| [Role_ChangeName](<#Role_ChangeName>) | Updates the name of a platform role. |
+| [Role_CreateOrUpdate](<#Role_CreateOrUpdate>) | Creates a new platform role or updates a platform role that already exists. |
+| [Role_Delete](<#Role_Delete>) | Deletes a platform role that already exists. Since the platform requires IT users to have a single platform role, you need to specify a new platform role to grant to the users that are currently set with the role you want to delete.<br/> |
+| [Role_GetEnvironmentPermissionsLevels](<#Role_GetEnvironmentPermissionsLevels>) | Lists the permission levels that a platform user has over the environments. |
+| [Role_GetPermissions](<#Role_GetPermissions>) | Returns the list of permissions a platform role has in the environments registered in the platform. |
+| [Role_List](<#Role_List>) | Returns all platform roles with their information. |
+| [Role_UpdatePermission](<#Role_UpdatePermission>) | Updates the permissions a platform role has in a specified environment. |
 
 ### Actions
 
@@ -66,7 +66,7 @@ Action | Description
 
 Updates the name of a platform role.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -84,7 +84,7 @@ NewRoleName
 :   Type: mandatory, Text.  
     The new name of the platform role.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -98,7 +98,7 @@ Status
 
 Creates a new platform role or updates a platform role that already exists.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -111,7 +111,6 @@ Authentication
 RoleName
 :   Type: mandatory, Text.  
     The name of a platform role. If this role does not exist in the platform it is created, otherwise it is updated.  
-    
 
 CanConfigureInfrastructure
 :   Type: mandatory, Boolean.  
@@ -121,7 +120,7 @@ RoleDescription
 :   Type: mandatory, Text.  
     The description for the platform role.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -139,8 +138,7 @@ PlatformRole
 
 Deletes a platform role that already exists. Since the platform requires IT users to have a single platform role, you need to specify a new platform role to grant to the users that are currently set with the role you want to delete.  
 
-
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -158,7 +156,7 @@ UsersNewRoleName
 :   Type: mandatory, Text.  
     A platform role to grant to the users that had the platform role that is going to be deleted.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -176,7 +174,7 @@ AffectedPlatformUsers
 
 Lists the permission levels that a platform user has over the environments.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -186,7 +184,7 @@ Authentication
     * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
     * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -204,7 +202,7 @@ RolePermissionLevels
 
 Returns the list of permissions a platform role has in the environments registered in the platform.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -218,7 +216,7 @@ RoleName
 :   Type: mandatory, Text.  
     The name of a platform role.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -236,7 +234,7 @@ PlatformRolePermissions
 
 Returns all platform roles with their information.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -246,7 +244,7 @@ Authentication
     * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
     * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -255,7 +253,6 @@ Success
 Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.  
-    
 
 PlatformRoles
 :   Type: [PlatformRole](<#Structure_PlatformRole>) List.  
@@ -265,7 +262,7 @@ PlatformRoles
 
 Updates the permissions a platform role has in a specified environment.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -287,7 +284,7 @@ NewPermissionLevelId
 :   Type: mandatory, EnvironmentPermissionLevel Identifier.  
     A reference to the new permission level the platform role will have.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -297,7 +294,6 @@ Status
 :   Type: APIStatus.  
     The status of invoking this API action. In case of error, contains the error code and human-readable error messages.
 
-
 ## AuthenticationService
 
 The API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires.
@@ -305,9 +301,9 @@ The API to acquire an authentication token to be used when invoking other OutSys
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/AuthenticationService.asmx?WSDL`
 
-Action | Description
----|---
-[Authentication_GetToken](<#Authentication_GetToken>) | Returns an authentication token that is valid for 5 minutes.
+| Action | Description |
+| ---|--- |
+| [Authentication_GetToken](<#Authentication_GetToken>) | Returns an authentication token that is valid for 5 minutes. |
 
 ### Actions
 
@@ -315,7 +311,7 @@ Action | Description
 
 Returns an authentication token that is valid for 5 minutes.
 
-*Inputs*
+_Inputs_
 
 Username
 :   Type: mandatory, Text.  
@@ -325,7 +321,7 @@ Password
 :   Type: mandatory, Text.  
     A platform password.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -334,12 +330,10 @@ Success
 Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.  
-    
 
 Token
 :   Type: Text.  
     A session token. This token expires 5 minutes after it has been created.
-
 
 ## TeamManagementService
 
@@ -347,22 +341,22 @@ The API to manage teams in the platform.
 To use this API, authenticate in one of the following ways:
 
 * Specify a valid platform username and password.
-* Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+* Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.
 * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/TeamManagementService.asmx?WSDL`
 
-Action | Description
----|---
-[Team_AddUser](<#Team_AddUser>) | Adds a user to a team with a specified role.
-[Team_AssignApplication](<#Team_AssignApplication>) | Assigns an application to a team, replacing a previous assignment, if any. An application can only be assigned to a team a time.
-[Team_CreateOrUpdate](<#Team_CreateOrUpdate>) | Creates a new team or updates an already existent team.
-[Team_Delete](<#Team_Delete>) | Deletes a team.
-[Team_GetDetails](<#Team_GetDetails>) | Returns the details of a team, with its users and applications.
-[Team_List](<#Team_List>) | Returns a list of the teams.
-[Team_RemoveApplication](<#Team_RemoveApplication>) | Removes an application from a team.
-[Team_RemoveUser](<#Team_RemoveUser>) | Removes a user from a team.
+| Action | Description |
+| ---|--- |
+| [Team_AddUser](<#Team_AddUser>) | Adds a user to a team with a specified role. |
+| [Team_AssignApplication](<#Team_AssignApplication>) | Assigns an application to a team, replacing a previous assignment, if any. An application can only be assigned to a team a time. |
+| [Team_CreateOrUpdate](<#Team_CreateOrUpdate>) | Creates a new team or updates an already existent team. |
+| [Team_Delete](<#Team_Delete>) | Deletes a team. |
+| [Team_GetDetails](<#Team_GetDetails>) | Returns the details of a team, with its users and applications. |
+| [Team_List](<#Team_List>) | Returns a list of the teams. |
+| [Team_RemoveApplication](<#Team_RemoveApplication>) | Removes an application from a team. |
+| [Team_RemoveUser](<#Team_RemoveUser>) | Removes a user from a team. |
 
 ### Actions
 
@@ -370,7 +364,7 @@ Action | Description
 
 Adds a user to a team with a specified role.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -392,7 +386,7 @@ RoleName
 :   Type: mandatory, Text.  
     The name of the role to assign to the user.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -406,7 +400,7 @@ Status
 
 Assigns an application to a team, replacing a previous assignment, if any. An application can only be assigned to a team a time.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -424,7 +418,7 @@ ApplicationKey
 :   Type: mandatory, Text.  
     The application unique identifier.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -438,7 +432,7 @@ Status
 
 Creates a new team or updates an already existent team.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -456,7 +450,7 @@ Description
 :   Type: mandatory, Text.  
     The description of the team.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -474,7 +468,7 @@ PlatformTeam
 
 Deletes a team.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -488,7 +482,7 @@ TeamName
 :   Type: mandatory, Text.  
     The name of the team.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -502,7 +496,7 @@ Status
 
 Returns the details of a team, with its users and applications.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -516,7 +510,7 @@ TeamName
 :   Type: mandatory, Text.  
     The name of the team.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -534,7 +528,7 @@ PlatformTeam
 
 Returns a list of the teams.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -544,7 +538,7 @@ Authentication
     * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
     * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -562,7 +556,7 @@ PlatformTeams
 
 Removes an application from a team.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -580,7 +574,7 @@ ApplicationKey
 :   Type: mandatory, Text.  
     The application unique identifier.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -594,7 +588,7 @@ Status
 
 Removes a user from a team.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -612,7 +606,7 @@ Username
 :   Type: mandatory, Text.  
     The username of the user.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -622,33 +616,30 @@ Status
 :   Type: APIStatus.  
     The status of invoking this API action. In case of error, contains the error code and human-readable error messages.
 
-
 ## SecurityManagementService
 
 The API for getting security information about users and addresses who login to the platform.  
 To use this API, authenticate in one of the following ways:
 
 * Specify a valid platform username and password.
-* Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+* Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.
 * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/SecurityManagementService.asmx?WSDL`
 
-Action | Description
----|---
-[IPAddress_GetLockedStatus](<#IPAddress_GetLockedStatus>) | 
-[IPAddress_Unlock](<#IPAddress_Unlock>) | 
-[User_GetLockedStatus](<#User_GetLockedStatus>) | 
-[User_Unlock](<#User_Unlock>) | 
+| Action | Description |
+| ---|--- |
+| [IPAddress_GetLockedStatus](<#IPAddress_GetLockedStatus>) | |
+| [IPAddress_Unlock](<#IPAddress_Unlock>) | |
+| [User_GetLockedStatus](<#User_GetLockedStatus>) | |
+| [User_Unlock](<#User_Unlock>) | |
 
 ### Actions
 
 #### IPAddress_GetLockedStatus { #IPAddress_GetLockedStatus }
 
-
-
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -666,7 +657,7 @@ EnvironmentKey
 :   Type: optional, Text.  
     The environment unique identifier in which the lock information should be searched. If the parameter is empty, it returns the pertaining information regarding all active environments.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -682,9 +673,7 @@ PlatformLoginAttempts
 
 #### IPAddress_Unlock { #IPAddress_Unlock }
 
-
-
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -702,7 +691,7 @@ EnvironmentKey
 :   Type: optional, Text.  
     The environment unique identifier in which the IP address should be unlocked.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -714,9 +703,7 @@ Status
 
 #### User_GetLockedStatus { #User_GetLockedStatus }
 
-
-
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -734,7 +721,7 @@ EnvironmentKey
 :   Type: optional, Text.  
     The environment unique identifier in which the lock information should be searched. If the parameter is empty, it returns the pertaining information regarding all active environments.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -750,9 +737,7 @@ PlatformLoginAttempts
 
 #### User_Unlock { #User_Unlock }
 
-
-
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -774,7 +759,7 @@ EnvironmentKey
 :   Type: optional, Text.  
     The environment unique identifier in which the Username should be unlocked.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -784,7 +769,6 @@ Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.
 
-
 ## DbConnectionManagementService
 
 This API provides methods to create, change, and delete connections to external databases. It also allows managing users permissions.
@@ -792,23 +776,23 @@ This API provides methods to create, change, and delete connections to external 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/DbConnectionManagementService.asmx?WSDL`
 
-Action | Description
----|---
-[DbConnection_Create](<#DbConnection_Create>) | Creates a new database connection.
-[DbConnection_Delete](<#DbConnection_Delete>) | Deletes the database connection given by the name.
-[DbConnection_Edit](<#DbConnection_Edit>) | Updates the configuration of the database connection.
-[DbConnection_Get](<#DbConnection_Get>) | Returns the database connection.
-[DbConnection_GetRoleAccess](<#DbConnection_GetRoleAccess>) | Returns the role permissions to use a database connection.
-[DbConnection_GetUserAccess](<#DbConnection_GetUserAccess>) | Returns the user permissions to use a database connection.
-[DbConnection_GrantRoleAccess](<#DbConnection_GrantRoleAccess>) | Grants a role with a permission level to use the database connection.
-[DbConnection_GrantUserAccess](<#DbConnection_GrantUserAccess>) | Grants a user with a permission level to use the database connection.
-[DbConnection_ListAll](<#DbConnection_ListAll>) | Returns a list with all database connections.
-[DbConnection_ListProviders](<#DbConnection_ListProviders>) | The list of database providers that a user can associate to a database connection.
-[DbConnection_PermissionLevel_List](<#DbConnection_PermissionLevel_List>) | Returns the list of permission levels.
-[DbConnection_Rename](<#DbConnection_Rename>) | Renames an database connection. This may have impact on all running application that use this database connection.
-[DbConnection_RevokeRoleAccess](<#DbConnection_RevokeRoleAccess>) | Revokes the role permissions to use the database connection.
-[DbConnection_RevokeUserAccess](<#DbConnection_RevokeUserAccess>) | Revokes the user permissions to use the database connection.
-[DbConnection_TestConnection](<#DbConnection_TestConnection>) | Tests a database connection with the given parameters.
+| Action | Description |
+| ---|--- |
+| [DbConnection_Create](<#DbConnection_Create>) | Creates a new database connection. |
+| [DbConnection_Delete](<#DbConnection_Delete>) | Deletes the database connection given by the name. |
+| [DbConnection_Edit](<#DbConnection_Edit>) | Updates the configuration of the database connection. |
+| [DbConnection_Get](<#DbConnection_Get>) | Returns the database connection. |
+| [DbConnection_GetRoleAccess](<#DbConnection_GetRoleAccess>) | Returns the role permissions to use a database connection. |
+| [DbConnection_GetUserAccess](<#DbConnection_GetUserAccess>) | Returns the user permissions to use a database connection. |
+| [DbConnection_GrantRoleAccess](<#DbConnection_GrantRoleAccess>) | Grants a role with a permission level to use the database connection. |
+| [DbConnection_GrantUserAccess](<#DbConnection_GrantUserAccess>) | Grants a user with a permission level to use the database connection. |
+| [DbConnection_ListAll](<#DbConnection_ListAll>) | Returns a list with all database connections. |
+| [DbConnection_ListProviders](<#DbConnection_ListProviders>) | The list of database providers that a user can associate to a database connection. |
+| [DbConnection_PermissionLevel_List](<#DbConnection_PermissionLevel_List>) | Returns the list of permission levels. |
+| [DbConnection_Rename](<#DbConnection_Rename>) | Renames an database connection. This may have impact on all running application that use this database connection. |
+| [DbConnection_RevokeRoleAccess](<#DbConnection_RevokeRoleAccess>) | Revokes the role permissions to use the database connection. |
+| [DbConnection_RevokeUserAccess](<#DbConnection_RevokeUserAccess>) | Revokes the user permissions to use the database connection. |
+| [DbConnection_TestConnection](<#DbConnection_TestConnection>) | Tests a database connection with the given parameters. |
 
 ### Actions
 
@@ -816,7 +800,7 @@ Action | Description
 
 Creates a new database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -858,7 +842,7 @@ TestConnection
 :   Type: mandatory, Boolean.  
     If True, the database connection is only created after being tested with success.
 
-*Outputs*
+_Outputs_
 
 DbConnection
 :   Type: .  
@@ -876,7 +860,7 @@ Status
 
 Deletes the database connection given by the name.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -894,7 +878,7 @@ DbConnectionName
 :   Type: mandatory, Text.  
     The name of the database connection .
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -908,7 +892,7 @@ Status
 
 Updates the configuration of the database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -950,7 +934,7 @@ TestConnection
 :   Type: mandatory, Boolean.  
     If True, the database connection is only updated after being tested with sucess.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -964,7 +948,7 @@ Status
 
 Returns the database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -982,7 +966,7 @@ DbConnectionName
 :   Type: mandatory, Text.  
     The name of the database connection.
 
-*Outputs*
+_Outputs_
 
 DbConnection
 :   Type: .  
@@ -1000,7 +984,7 @@ Status
 
 Returns the role permissions to use a database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1022,7 +1006,7 @@ RoleName
 :   Type: mandatory, Text.  
     The name of the role.
 
-*Outputs*
+_Outputs_
 
 PermissionLevel
 :   Type: .  
@@ -1040,7 +1024,7 @@ Status
 
 Returns the user permissions to use a database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1062,7 +1046,7 @@ Username
 :   Type: mandatory, Text.  
     The username of the user.
 
-*Outputs*
+_Outputs_
 
 PermissionLevel
 :   Type: .  
@@ -1080,7 +1064,7 @@ Status
 
 Grants a role with a permission level to use the database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1106,7 +1090,7 @@ PermissionLevelId
 :   Type: mandatory, DbConnectionPermissionLevel Identifier.  
     The permission level to be granted. See method DbConnection_PermissionLevel_List.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1120,7 +1104,7 @@ Status
 
 Grants a user with a permission level to use the database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1146,7 +1130,7 @@ PermissionLevelId
 :   Type: mandatory, DbConnectionPermissionLevel Identifier.  
     The permission level to be granted. See method DbConnection_PermissionLevel_List.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1160,7 +1144,7 @@ Status
 
 Returns a list with all database connections.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1174,7 +1158,7 @@ EnvironmentKey
 :   Type: mandatory, Text.  
     An environment unique identifier.
 
-*Outputs*
+_Outputs_
 
 DbConnections
 :   Type: DatabaseConnection List.  
@@ -1192,7 +1176,7 @@ Status
 
 The list of database providers that a user can associate to a database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1202,7 +1186,7 @@ Authentication
     * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
     * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
-*Outputs*
+_Outputs_
 
 Providers
 :   Type: DbProvider List.  
@@ -1220,7 +1204,7 @@ Status
 
 Returns the list of permission levels.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1230,7 +1214,7 @@ Authentication
     * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
     * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1248,7 +1232,7 @@ DbConnectionPermissionLevels
 
 Renames an database connection. This may have impact on all running application that use this database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1270,7 +1254,7 @@ NewName
 :   Type: mandatory, Text.  
     The new name for the database connection.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1284,7 +1268,7 @@ Status
 
 Revokes the role permissions to use the database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1306,7 +1290,7 @@ RoleName
 :   Type: mandatory, Text.  
     The name of the role to revoke permissions.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1320,7 +1304,7 @@ Status
 
 Revokes the user permissions to use the database connection.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1342,7 +1326,7 @@ Username
 :   Type: mandatory, Text.  
     The username of the user to revoke permissions.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1356,7 +1340,7 @@ Status
 
 Tests a database connection with the given parameters.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1386,7 +1370,7 @@ DBConfigParams
 :   Type: mandatory, Text.  
     Parameters for the connection string. Separate them using ';'.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1396,31 +1380,30 @@ Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.
 
-
 ## UserManagementService
 
 The API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.  
 To use this API, authenticate in one of the following ways:
 
 * Specify a valid platform username and password.
-* Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+* Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.
 * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/UserManagementService.asmx?WSDL`
 
-Action | Description
----|---
-[User_ChangePassword](<#User_ChangePassword>) | Changes the password of a platform user.
-[User_ChangeUsername](<#User_ChangeUsername>) | Changes the username of a platform user.
-[User_CreateOrUpdate](<#User_CreateOrUpdate>) | Creates a new platform user or updates an existing one. The operation activates the user in the platform.
-[User_DeleteApplicationPermission](<#User_DeleteApplicationPermission>) | Deletes the permission a platform user has for a specific application. After executing this operation, the user permissions for the application are defined by the platform roles the platform user has.
-[User_GetAllPermissions](<#User_GetAllPermissions>) | Returns the permissions a platform user has over each existing application and the permissions of the platform role, in each environment of the infrastructure.
-[User_GetApplicationPermissions](<#User_GetApplicationPermissions>) | Returns the permissions a platform user has over an application, in each environment of the infrastructure, or the permissions from the platform role in case of specific permissions for the application were not specified.
-[User_List](<#User_List>) | Returns the list of platform users, with their information, such as username, email and platform role.
-[User_SetActive](<#User_SetActive>) | Activates a user in the platform, restoring all permissions the platform user has associated.
-[User_SetApplicationRole](<#User_SetApplicationRole>) | Updates the role a platform user has for an application with the given key.
-[User_SetInactive](<#User_SetInactive>) | Deactivates a user in the platform. The user stops having access to all operations that require authentication.
+| Action | Description |
+| ---|--- |
+| [User_ChangePassword](<#User_ChangePassword>) | Changes the password of a platform user. |
+| [User_ChangeUsername](<#User_ChangeUsername>) | Changes the username of a platform user. |
+| [User_CreateOrUpdate](<#User_CreateOrUpdate>) | Creates a new platform user or updates an existing one. The operation activates the user in the platform. |
+| [User_DeleteApplicationPermission](<#User_DeleteApplicationPermission>) | Deletes the permission a platform user has for a specific application. After executing this operation, the user permissions for the application are defined by the platform roles the platform user has. |
+| [User_GetAllPermissions](<#User_GetAllPermissions>) | Returns the permissions a platform user has over each existing application and the permissions of the platform role, in each environment of the infrastructure. |
+| [User_GetApplicationPermissions](<#User_GetApplicationPermissions>) | Returns the permissions a platform user has over an application, in each environment of the infrastructure, or the permissions from the platform role in case of specific permissions for the application were not specified. |
+| [User_List](<#User_List>) | Returns the list of platform users, with their information, such as username, email and platform role. |
+| [User_SetActive](<#User_SetActive>) | Activates a user in the platform, restoring all permissions the platform user has associated. |
+| [User_SetApplicationRole](<#User_SetApplicationRole>) | Updates the role a platform user has for an application with the given key. |
+| [User_SetInactive](<#User_SetInactive>) | Deactivates a user in the platform. The user stops having access to all operations that require authentication. |
 
 ### Actions
 
@@ -1428,7 +1411,7 @@ Action | Description
 
 Changes the password of a platform user.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1450,7 +1433,7 @@ EncryptPassword
 :   Type: mandatory, Boolean.  
     Specifies if the password of the platform user will be encrypted.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1459,13 +1442,12 @@ Success
 Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.  
-    
 
 #### User_ChangeUsername { #User_ChangeUsername }
 
 Changes the username of a platform user.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1483,7 +1465,7 @@ NewUsername
 :   Type: mandatory, Text.  
     The new username.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1497,7 +1479,7 @@ Status
 
 Creates a new platform user or updates an existing one. The operation activates the user in the platform.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1530,9 +1512,8 @@ Email
 RoleName
 :   Type: mandatory, Text.  
     The platform role to grant to a platform user.  
-    
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1550,7 +1531,7 @@ PlatformUser
 
 Deletes the permission a platform user has for a specific application. After executing this operation, the user permissions for the application are defined by the platform roles the platform user has.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1568,7 +1549,7 @@ ApplicationKey
 :   Type: mandatory, Text.  
     An application unique identifier.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1582,7 +1563,7 @@ Status
 
 Returns the permissions a platform user has over each existing application and the permissions of the platform role, in each environment of the infrastructure.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1596,21 +1577,18 @@ Username
 :   Type: mandatory, Text.  
     The username of a platform user.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
-    
 
 Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.  
-    
 
 ApplicationPermissions
 :   Type: [ApplicationPermissions](<#Structure_ApplicationPermissions>), [ApplicationShortInfo](<#Structure_ApplicationShortInfo>) List.  
     The list of permissions a platform user has over each application in each environment registered in platform.  
-    
 
 PlatformRolePermissions
 :   Type: [ApplicationPermissions](<#Structure_ApplicationPermissions>).  
@@ -1620,7 +1598,7 @@ PlatformRolePermissions
 
 Returns the permissions a platform user has over an application, in each environment of the infrastructure, or the permissions from the platform role in case of specific permissions for the application were not specified.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1638,7 +1616,7 @@ ApplicationKey
 :   Type: mandatory, Text.  
     An application unique identifier.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1647,7 +1625,6 @@ Success
 Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.  
-    
 
 ArePlatformRolePermissions
 :   Type: Boolean.  
@@ -1661,7 +1638,7 @@ ApplicationPermissions
 
 Returns the list of platform users, with their information, such as username, email and platform role.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1674,9 +1651,8 @@ Authentication
 ShowInactive
 :   Type: mandatory, Boolean.  
     If True returns users that are set to inactive. If False, only returns active users.  
-    
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1694,7 +1670,7 @@ PlatformUsers
 
 Activates a user in the platform, restoring all permissions the platform user has associated.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1708,7 +1684,7 @@ Username
 :   Type: mandatory, Text.  
     The username of a platform user.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1717,13 +1693,12 @@ Success
 Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.  
-    
 
 #### User_SetApplicationRole { #User_SetApplicationRole }
 
 Updates the role a platform user has for an application with the given key.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1745,7 +1720,7 @@ RoleName
 :   Type: mandatory, Text.  
     The role name.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1759,7 +1734,7 @@ Status
 
 Deactivates a user in the platform. The user stops having access to all operations that require authentication.
 
-*Inputs*
+_Inputs_
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
@@ -1773,7 +1748,7 @@ Username
 :   Type: mandatory, Text.  
     The username of a platform user.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1783,14 +1758,13 @@ Status
 :   Type: APIStatus.  
     The status of invoking this API. This status contains an error code and human-readable error messages.
 
-
 ## Structures
 
 ### ApplicationPermissions { #Structure_ApplicationPermissions }
 
 Represents a set of permissions of an application with respect each one of the available environments.
 
-*Attributes*
+_Attributes_
 
 ApplicationPermissions
 :   Type: [EnvironmentPermissionForApplication](<#Structure_EnvironmentPermissionForApplication>) List.  
@@ -1800,7 +1774,7 @@ ApplicationPermissions
 
 Few details about an application managed by the platform.
 
-*Attributes*
+_Attributes_
 
 Name
 :   Type: Text (50).  
@@ -1818,7 +1792,7 @@ Description
 
 Permissions an IT user or role has over an application running on a specified environment.
 
-*Attributes*
+_Attributes_
 
 EnvironmentKey
 :   Type: Text (50).  
@@ -1844,7 +1818,7 @@ ApplicationPermissionLevelId
 
 Permissions an IT role has over an environment.
 
-*Attributes*
+_Attributes_
 
 EnvironmentKey
 :   Type: Text (50).  
@@ -1868,76 +1842,59 @@ EnvironmentPermissionLevelId
 
 ### PlatformLoginAttempt { #Structure_PlatformLoginAttempt }
 
-
-
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Long Integer.  
-    
 
 UserId
 :   Type: Integer.  
-    
 
 Username
 :   Type: Text (250).  
-    
 
 Success
 :   Type: Boolean.  
-    
 
 Instant
 :   Type: Date Time.  
-    
 
 IPAddress
 :   Type: Text (45).  
-    
 
 UsernameFailureCount
 :   Type: Integer.  
-    
 
 OriginAddressFailureCount
 :   Type: Integer.  
-    
 
 UserAgent
 :   Type: Text (200).  
-    
 
 Visitor
 :   Type: Text (36).  
-    
 
 RequestKey
 :   Type: Text (36).  
-    
 
 Result
 :   Type: Text (50).  
-    
 
 EnvironmentId
 :   Type: Environment Identifier.  
-    
 
 EnvironmentName
 :   Type: Text.  
-    
 
 ### PlatformRole { #Structure_PlatformRole }
 
 Details about a role.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: InfrastructureRole Identifier.  
     Role unique identifier.  
-
 
 Name
 :   Type: Text (50).  
@@ -1967,7 +1924,7 @@ PermissionsPerEnvironment
 
 The information about a platform team.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
@@ -1993,7 +1950,7 @@ UserList
 
 The information about a user.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
@@ -2020,10 +1977,10 @@ RoleName
 Represents the fields to authenticate an OutSystems IT user. You can do one of the following:
 
 * Specify a valid platform Username and Password.
-* Set the Token to a session token acquired with the [AuthenticationService API](<#AuthenticationService>).
+* Set the Token to a session token acquired with the [AuthenticationService API](<#authenticationservice>).
 * Set the Token to a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
-*Attributes*
+_Attributes_
 
 Username
 :   Type: Text (50).  
@@ -2036,5 +1993,3 @@ Password
 Token
 :   Type: Text (50).  
     An authentication token.
-
-

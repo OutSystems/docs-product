@@ -28,9 +28,9 @@ This example shows how you can create a simple Area Chart with a Stacked Series.
 
     ![Screenshot of the Properties tab with the DataPointList property expanded in OutSystems](images/chartarea-expand-ss.png "Expanding DataPointList Property")
 
-1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data).
 
-    This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the area chart. 
+    This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the area chart.
 
     ![Screenshot illustrating how to set the Label and Value properties for a data point in an Area Chart in OutSystems](images/chartarea-datapointlist-ss.png "Setting Data Point Properties")
 

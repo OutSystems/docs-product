@@ -57,7 +57,7 @@ Depending on the type of [operand element](../../logic/expressions/operands.md),
     ![Screenshot showing an example of an invalid expression error in Service Studio](images/invalid-expression-01.png "Invalid Expression Error Example")
 
 * If you are writing a literal value in the expression, ensure you use the correct format:
-    
+
     Text
     :   Wrap the literal in quotation marks ("). For example `"Amazing text"`.
 
@@ -78,9 +78,9 @@ Service Studio cannot determine the structure of the expression and how the unex
 **Recommended action**
 
 Check out the following examples that cause syntax errors in [expressions](../../../ref/logic/expressions/intro.md) and how to solve them:
-    
+
 * Missing an operator:  
-    Incorrect: `1 2`   
+    Incorrect: `1 2`
     Correct:  `1 + 2`
 
 * Missing a dot (.) between an element and a property:  
@@ -147,10 +147,10 @@ The syntax of the expression is correct, but it has an argument for a parameter 
 
 **Recommended action**
 
-Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.md) or the User function definition to validate its arguments. 
+Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.md) or the User function definition to validate its arguments.
 
 If you deleted a [parameter](../../../ref/lang/auto/class-input-parameter.md), update the [expression](../../../building-apps/logic/expression-editor.md) to remove the errors. Right-click the error line to see the fixing suggestions OutSystems provides you for this error:
-    
+
 * `Create <function> Input Parameter`  
     Creates the argument in the function.
 * `Delete Argument`  

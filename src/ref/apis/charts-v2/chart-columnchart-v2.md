@@ -27,9 +27,9 @@ This example shows how to create a simple Column Chart with data labels.
 
     ![Screenshot of the Properties tab with the DataPointList property expanded to show its options](images/chartcolumn-expand-ss.png "Expanding DataPointList Property")
 
-1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data).
 
-    This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the column chart. 
+    This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the column chart.
 
     ![Screenshot illustrating how to set the Label and Value properties for a data point in the Column Chart](images/chartcolumn-datapointlist-ss.png "Setting Data Point Properties")
 
@@ -50,4 +50,3 @@ This example shows how to create a simple Column Chart with data labels.
 After following these steps, you can publish your module:
 
 ![Image of the final result showing a published Column Chart with data labels](images/chart-column-result.png "Final Column Chart Result")
-

@@ -29,9 +29,9 @@ In this situations developers use the `Dual` table in the `From` clause of the q
 
 To ensure the compatibility of your queries that use the `Dual` table, OutSystems creates a `Dual` table in all supported databases, with the same definition as Oracle databases.
 
-For All DBMS  |  SQL Server  |  Oracle
----|---|---
-SELECT 2 + 2 FROM Dual  |  SELECT 2 + 2  |  SELECT 2 + 2 FROM Dual
+| For All DBMS  |  SQL Server  |  Oracle |
+| ---|---|--- |
+| SELECT 2 + 2 FROM Dual  |  SELECT 2 + 2  |  SELECT 2 + 2 FROM Dual |
   
 ## Using the getdate() Function
 
@@ -39,9 +39,9 @@ SQL Server and MySQL make a function available for you that returns the current 
 
 The following table contains of how to use this function.
 
-For All DBMS  |  SQL Server  |  Oracle
----|---|---
-SELECT getdate() FROM Dual  |  SELECT getdate()  |  SELECT sysdate FROM Dual
+| For All DBMS  |  SQL Server  |  Oracle |
+| ---|---|--- |
+| SELECT getdate() FROM Dual  |  SELECT getdate()  |  SELECT sysdate FROM Dual |
   
 The result of this query can be handled as a Date Time, so you can use [Format built-in functions](<../../lang/auto/builtinfunction-format.md#FormatDateTime>) to format the result.
 
@@ -51,9 +51,9 @@ When performing text comparisons in the database, you should be aware that due t
 
 The following table contains an example in how to design the query with an empty string for the supported databases.
 
-For All DBMS  |  SQL Server  |  Oracle  |  MySQL  
----|---|---|---  
-SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = ''  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = ''  
+| For All DBMS  |  SQL Server  |  Oracle  |  MySQL |
+| ---|---|---|--- |
+| SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = ''  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '' |
   
 Note that foreign keys for text attributes are stored with a text value if a reference exists, or NULL if there is no reference to a row in another entity.
 

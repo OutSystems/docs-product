@@ -29,4 +29,3 @@ Cause
 
 Recommendation
 :   The consumer module must be republished in Service Studio or Service Center in order to validate the compatibility of your changes. If your changes are compatible, the consumer has no need to refresh the dependency to your producer module. On the other hand, if your changes are incompatible, the consumer module needs to [refresh the dependency](../../../building-apps/reuse-and-refactor/handle-changes.md#refresh-dependencies) to your producer module in Service Studio, adapt the logic to your changes, and be republished.
-

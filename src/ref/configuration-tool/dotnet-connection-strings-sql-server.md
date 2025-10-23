@@ -12,8 +12,9 @@ audience:
   - full stack developers
 coverage-type:
   - remember
+outsystems-tools:
+  - configuraton tool
 ---
-
 # Using custom .NET connection string parameters with the OutSystems Platform on SQL Server
 
 ## Overview
@@ -49,5 +50,3 @@ Don't change the connection string in a way that affects the behavior of the con
 ## Final notes
 
 As with any tuning or reconfiguration of a software system, changes to the connection string parameters should be correctly tested to ensure they produce the expected improvements without any unforeseen side effects. If in doubt, go back to the defaults.
-
-

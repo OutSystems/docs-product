@@ -43,10 +43,9 @@ Each use case describes a sample best-practices path toward optimal monitoring a
 
 While the workflows shown below may not include a perfect template for your own monitoring and analytics needs, the variety of challenges presented and the flexibility of implementation described should allow you to mix and match solutions in order to achieve optimal results.
 
-
 ## Workgroup apps { #workgroup-apps }
 
-A workgroup app is designed for, and used by, company employees, for a wide variety of internal activities, from browsing through an office directory to choosing a take-in entree for lunch. Because less than optimal performance has low impact on revenue or on the organization brand, such apps are often classified as non-critical. 
+A workgroup app is designed for, and used by, company employees, for a wide variety of internal activities, from browsing through an office directory to choosing a take-in entree for lunch. Because less than optimal performance has low impact on revenue or on the organization brand, such apps are often classified as non-critical.
 
 However, non-critical doesn't mean unimportant. And though a workgroup app is designed for employees, that person is also a user—and as such deserves a good user experience. So this means that they require monitoring and performance analysis. The question is only how much, and how fast:  how many resources and how big of a budget should be allocated for this task.
 The following workgroup app use cases are considered:
@@ -99,7 +98,6 @@ In addition, the **Request Key** can be used to correlate all log and performanc
 Here you can see that a particular web screen request generated two different errors, both in the same module. You have identified a probable source for this particular error; now your developers know where to go to begin fixing it.
 Other Service Center monitoring logs include:
 
-
 * **General**: System and application activity
 * **Traditional Web Requests** and **Screen Requests**: Server delays
 * **Service Actions**: Service action delays
@@ -138,13 +136,13 @@ So, in addition to the monitoring steps described above, daily checking of LifeT
 While Service Center presents monitoring logs and analysis reports by way of numbers, which can make it difficult to parse, [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Troubleshoot_the_Performance_of_an_Application) provides much the same data in a unified graphic console for analytics across all of your environments.
 
 For the **TLC** app LifeTime is consulted daily for all aspects of the user experience.
-Log into LifeTime to view the Applications dashboard. 
+Log into LifeTime to view the Applications dashboard.
 
 Log into LifeTime and click the **Analytics** menu to view the analytics dashboard. It covers all aspects of the [end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), a metric based on industry standard indicators of user satisfaction.
 
 ![Screenshot of the OutSystems LifeTime Analytics Dashboard showing the Application Performance Index and response time distribution for the TLC application.](images/tlc-apdex.png "OutSystems LifeTime Analytics Dashboard")
 
-The analytics dashboard gives a view of all of your applications by environment. By regularly checking LifeTime developers can detect, troubleshoot, and solve performance issues even before end users report them. 
+The analytics dashboard gives a view of all of your applications by environment. By regularly checking LifeTime developers can detect, troubleshoot, and solve performance issues even before end users report them.
 
 The **End User Experience** tab displayed above shows the execution times of all queries, web service invocations, screen renderings, schedulers and invocations to adapters, external systems and custom APIs, which are all tracked asynchronously.
 
@@ -185,7 +183,6 @@ Each built-in request event has the following details:
 Some OutSystems developers want to get a closer look at the logs, understand how they're constructed, and even make a direct query to the OutSystems database.
 
 You can read more about how OutSystems developers can take advantage of these assets at [Logging database and architecture](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture).
-
 
 ##### Asynchronous Logging
 
@@ -296,12 +293,12 @@ In the example above, **logstash** monitors all queries from every environment s
 
 #### Other RUM and APM integrations
 
-The example above describes only one of the many monitoring and analysis tools and workflows that can easily be integrated into your OutSystems apps. 
+The example above describes only one of the many monitoring and analysis tools and workflows that can easily be integrated into your OutSystems apps.
 
 Moreover, the choice of third-party tools is often based on what an enterprise is already using.
 These tools increase the level of monitoring, providing more information regarding client and server performance for your applications. Most of them require a user license, and application instrumentation for them to function.
 
-The [Forge](https://www.outsystems.com/forge/) includes many pre-built extensions for the most popular RUM and APM third-party tools that can be used as-is or as accelerators to create a custom connector to suit your particular needs. 
+The [Forge](https://www.outsystems.com/forge/) includes many pre-built extensions for the most popular RUM and APM third-party tools that can be used as-is or as accelerators to create a custom connector to suit your particular needs.
 
 Below are some popular extensions for third-party tools that you can use to accelerate integration of your OutSystems installation:
 
@@ -323,4 +320,3 @@ Below are some popular extensions for third-party tools that you can use to acce
 * Datadog:
     * [Traditional Web](https://www.outsystems.com/forge/component-overview/7330/datadog-rum-for-web)
     * [Reactive Web / Mobile](https://www.outsystems.com/forge/component-overview/7328/datadog-rum)
-

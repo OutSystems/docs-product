@@ -36,7 +36,7 @@ OutSystems provides a collection of charts that allow you to build your screens 
 |Bar Chart|The Bar Chart is a simple, two-dimensional chart where rectangular bars are placed along the X-Axis with bar length representing the value for a specific category.|
 |Column Chart|The Column Chart is a two-dimensional chart where rectangular bars are placed along the Y-Axis with bar height representing the value for a specific category.|
 |Donut Chart|The Donut Chart is a circular graph that displays data in rings, where each ring represents a category and the size of the ring corresponds to the value of the data being presented.|
-|Line Chart|The Line Chart is a simple, two-dimensional chart where each point represents a single value. The data points are joined by a line to depict a trend, usually a period of time.
+|Line Chart|The Line Chart is a simple, two-dimensional chart where each point represents a single value. The data points are joined by a line to depict a trend, usually a period of time. |
 |Pie Chart|The Pie Chart is a circular graph that displays data in sections, where each section represents a category and the size of the section corresponds to the value of the data being presented.|
 |Radar Chart|The Radar Chart, also known as a polar chart, illustrates multivariate data in a two-dimensional chart, plotted along a radial axis.|
 

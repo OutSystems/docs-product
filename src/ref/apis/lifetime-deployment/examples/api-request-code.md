@@ -53,7 +53,7 @@ To download the source code of an app or a module, ensure that the environment f
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
     * Service Account needs Open and Debug on the environment
 
-## Get the source code of an app 
+## Get the source code of an app
 
 To request the source code of an application, follow these steps:
 
@@ -66,7 +66,7 @@ To request the source code of an application, follow these steps:
 
 ### Step 1: Get the environment key
 
-This step is optional and call the API only if you don't know the environment key. 
+This step is optional and call the API only if you don't know the environment key.
 
 This API returns all the environments available on your infrastructure.
 
@@ -96,7 +96,7 @@ Response body:
 ]
 ```
 
-In this request example, the source code of an application is requested from the **Testing** environment. 
+In this request example, the source code of an application is requested from the **Testing** environment.
 
 <div class = "info" markdown="1">
 
@@ -181,7 +181,7 @@ Get the status of the application source code package.
 
 `GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/status`
 
-Replace the `{EnvironmentKey}`, `{ApplicationKey}`, and `{PackageKey}` with values retrieved from Step 1, Step 2, and Step 3 and make a request: 
+Replace the `{EnvironmentKey}`, `{ApplicationKey}`, and `{PackageKey}` with values retrieved from Step 1, Step 2, and Step 3 and make a request:
 
 `GET /lifetimeapi/rest/v2/environments/849515f2-b4ff-4aca-a9d6-9407bea655f4/applications/c9a7a82e-0eee-4a3d-8e22-2a19c69c766f/sourcecodeaccess/bc354abb-6691-41ee-9ed3-9454747e2d4d/status`
 
@@ -246,9 +246,9 @@ Replace the `{DownloadKey}` with the value on the download URL or call the full 
 
 `GET /lifetimeapi/rest/v2/downloads/f4ee541b-5791-4997-a56d-360d80c24821`
 
-If you are unable to download the source code of the application, refer to [Unable to download the source code of an application article](api-unable-to-download-code.md). 
+If you are unable to download the source code of the application, refer to [Unable to download the source code of an application article](api-unable-to-download-code.md).
 
-## Get the source code of a module 
+## Get the source code of a module
 
 To request the source code of a module, follow these steps:
 
@@ -261,7 +261,7 @@ To request the source code of a module, follow these steps:
 
 ### Step 1: Get the environment key
 
-This step is optional and call the API only if you don't know the environment key. 
+This step is optional and call the API only if you don't know the environment key.
 
 This API returns all the environments available on your infrastructure.
 
@@ -291,7 +291,7 @@ Response body:
 ]
 ```
 
-In this request example, the source code of a module is requested from the **Testing** environment. 
+In this request example, the source code of a module is requested from the **Testing** environment.
 
 <div class = "info" markdown="1">
 
@@ -371,7 +371,7 @@ Get the status of the source code package.
 
 `GET /environments/{EnvironmentKey}/modules/{ModuleKey}/sourcecodeaccess/{PackageKey}/status`
 
-Replace the `{EnvironmentKey}`, `{ModuleKey}`, and `{PackageKey}` with values retrieved from Step 1, Step 2, and Step 3 and make a request: 
+Replace the `{EnvironmentKey}`, `{ModuleKey}`, and `{PackageKey}` with values retrieved from Step 1, Step 2, and Step 3 and make a request:
 
 `GET /lifetimeapi/rest/v2/environments/849515f2-b4ff-4aca-a9d6-9407bea655f4/modules/c9a7a82e-0eee-4a3d-8e22-2a19c69c766f/sourcecodeaccess/bc354abb-6691-41ee-9ed3-9454747e2d4d/status`
 
@@ -427,7 +427,7 @@ Replace the `{DownloadKey}` with the value on the download URL or call the full 
 
 `GET /lifetimeapi/rest/v2/downloads/f4ee541b-5791-4997-a56d-360d80c24821`
 
-If you are unable to download source code, refer to [Unable to download the source code article](api-unable-to-download-code.md). 
+If you are unable to download source code, refer to [Unable to download the source code article](api-unable-to-download-code.md).
 
 ## Review results
 

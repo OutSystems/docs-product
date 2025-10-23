@@ -64,9 +64,9 @@ Response body:
         ]
     },
     {
-		(...)
-	},
-	{
+      (...)
+    },
+    {
         "Key": "001c45e7-0cb6-41d1-85ba-8f0377453200",
         "name": "ExternalDev",
         "description": "External developer",
@@ -93,6 +93,7 @@ Response body:
     }
 ]
 ```
+
 We take note of all the role keys so that we can use them in the next API call:
 
 "Administrator" role key: **c4c49f62-ff68-42bf-9dc9-a023182f7ec9**  
@@ -153,6 +154,7 @@ Request body:
 }
 
 ```
+
 If the operation is successful, the response body will contain the key of the registered environment and the users imported from that environment.
 
 Response body:

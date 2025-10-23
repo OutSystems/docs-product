@@ -73,10 +73,10 @@ Converts Boolean 'b' to an Integer value, either 1 if 'b' is True or 0 if 'b' is
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -101,10 +101,10 @@ Converts Boolean 'b' to a Text value, either "True" or "False".
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -129,10 +129,10 @@ Converts Date Time 'dt' to a Date value dropping the Time component.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -156,10 +156,10 @@ Converts Date Time 'dt' to a Text value in the format specified in the environme
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -185,10 +185,10 @@ Converts Date Time 'dt' to a Time value dropping the Date component.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -212,10 +212,10 @@ Converts Date 'd' to a Date Time value, adding the Time component (#00:00:00#).
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -239,10 +239,10 @@ Converts Date 'd' to a Text value in the format specified in the environment con
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -267,10 +267,10 @@ Converts Decimal 'd' to a Boolean value. Decimal value of 0.0 is False. Any othe
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -297,10 +297,10 @@ To check if the conversion is possible you can use the DecimalToIntegerValidate 
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -338,10 +338,10 @@ Returns true if Decimal 'd' can be converted to an Integer value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -372,10 +372,10 @@ To check if the conversion is possible you can use the DecimalToLongIntegerValid
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -413,10 +413,10 @@ Returns true if Decimal 'd' can be converted to a Long Integer value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -445,10 +445,10 @@ Converts Decimal 'd' to a Text value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -473,10 +473,10 @@ Converts Long Integer 'l' to an Integer value. If 'l' is outside the boundaries 
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -501,10 +501,10 @@ Returns true if Long Integer 'l' can be converted to an Integer value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -529,10 +529,10 @@ Converts Long Integer 'l' to a Long Integer Identifier.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -556,10 +556,10 @@ Converts Long Integer 'l' to a Text value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -583,10 +583,10 @@ Converts Identifier 'Id' to an Integer value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -610,10 +610,10 @@ Converts Identifier 'Id' to a Long Integer value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -637,10 +637,10 @@ Converts Identifier 'Id' to a Text value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -664,10 +664,10 @@ Converts Integer 'i' to a Boolean value. Boolean value of 0 is False. Any other 
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -693,10 +693,10 @@ Converts Integer 'i' to a Decimal value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -720,10 +720,10 @@ Converts Integer 'i' to an Integer Identifier.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -747,10 +747,10 @@ Converts Integer 'i' to a Text value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -774,10 +774,10 @@ Returns a null Date value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Output
 
@@ -795,10 +795,10 @@ Returns a null Identifier valid for Integer and Long Integer Identifiers.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Output
 
@@ -816,10 +816,10 @@ Returns a null Object value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -837,10 +837,10 @@ Returns a null Binary Data value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -858,10 +858,10 @@ Returns a null Text Identifier.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Output
 
@@ -881,10 +881,10 @@ You should check the limits of the Date data type. You should also ensure that t
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -915,10 +915,10 @@ You should check the limits of the Date Time data type. You should also ensure t
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -949,10 +949,10 @@ Returns true if Text 't' can be converted to a Date Time value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -983,10 +983,10 @@ Returns true if Text 't' can be converted to a Date value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -1016,10 +1016,10 @@ If 't' is outside the boundaries of Decimal values, the function returns the Dec
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -1048,10 +1048,10 @@ Returns true if Text 't' can be converted to a Decimal value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -1066,7 +1066,7 @@ Type: Boolean
 ### Examples
 
 ```
-TextToDecimalValidate("200")	= True
+TextToDecimalValidate("200") = True
 TextToDecimalValidate("-200") = True
 TextToDecimalValidate("200.482") = True
 TextToDecimalValidate("-200.482") = True
@@ -1080,10 +1080,10 @@ Converts Text 't' to a Text Identifier.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -1108,10 +1108,10 @@ If 't' is outside the boundaries of Integer values, the function returns the Int
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -1139,10 +1139,10 @@ If 't' is outside the boundaries of Long Integer values, the function returns th
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -1169,10 +1169,10 @@ Returns true if Text 't' can be converted to an Integer value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -1199,10 +1199,10 @@ Returns true if Text 't' can be converted to a Long Integer value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -1231,10 +1231,10 @@ You should check the limits of the Time data type. You should also ensure that t
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -1261,10 +1261,10 @@ Returns true if Text 't' can be converted to a Time value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -1291,10 +1291,10 @@ Converts Time 't' to a Text value in the format "HH:mm:ss".
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -1319,10 +1319,10 @@ Converts expression 'exp' to an Object value.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -1333,4 +1333,3 @@ The element to be converted
 ### Output
 
 Type: Object  
-

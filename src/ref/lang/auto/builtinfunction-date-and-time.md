@@ -15,7 +15,6 @@ outsystems-tools:
 ---
 # Date and Time
 
-
 <table markdown="1">
 <thead>
 <tr>
@@ -123,7 +122,7 @@ outsystems-tools:
 </tbody>
 </table>
 
-## Daylight Saving Time 
+## Daylight Saving Time
 
 Date and Time manipulations on the client-side rely on the JavaScript Date object. During Daylight Saving Time (DST) transitions, adding or subtracting time units can lead to unexpected results. For instance, if you subtract 60 minutes from `2025-03-30 02:00:00`, a common DST start date, the expected outcome of `2025-03-30 01:00:00` doesn't exist in the local time zone. In such cases, the JavaScript engine automatically adjusts the Date object, resulting in the original time `02:00:00` instead of the logically expected `01:00:00`, but a non-existent time.
 
@@ -133,10 +132,10 @@ Adds 'n' days to 'dt' and returns a valid Date Time.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -167,10 +166,10 @@ Adds 'n' hours to 'dt' and returns a valid Date Time.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -199,10 +198,10 @@ Adds 'n' minutes to 'dt' and returns a valid Date Time.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -231,10 +230,10 @@ Adds 'n' months to 'dt' and returns a valid Date Time.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -265,10 +264,10 @@ Adds 'n' seconds to 'dt' and returns a valid Date Time.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -297,10 +296,10 @@ Adds 'n' years to 'dt' and returns a valid Date Time.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -330,10 +329,10 @@ Returns a Date Time made up of the Date 'd' and Time 't'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -343,7 +342,6 @@ The Date to build the Date Time from.
 
 t
 :    Type: Time. Mandatory.  
-
 
 ### Output
 
@@ -363,10 +361,10 @@ In query calls, it returns the platform server date.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -383,10 +381,10 @@ Conversely, date times in the server are converted in the device to the device t
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -400,10 +398,10 @@ In query calls, it returns the platform server time.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -415,10 +413,10 @@ Returns the day of 'dt'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -442,10 +440,10 @@ Returns the week day of 'dt', ranging from 0 (Sunday) to 6 (Saturday).
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -467,9 +465,9 @@ DayOfWeek(#2001-09-14#) = 5
 
 Returns the difference in days between 'dt1' and 'dt2'; i.e. how many days have passed between these two dates:  
   
-- Returns a positive number if 'dt1' is smaller than 'dt2';  
-- Returns a negative number if 'dt1' is bigger than 'dt2';  
-- Returns 0 if the two dates are equal.  
+* Returns a positive number if 'dt1' is smaller than 'dt2';  
+* Returns a negative number if 'dt1' is bigger than 'dt2';  
+* Returns 0 if the two dates are equal.  
   
 The Time component you provide in the parameters is ignored. The DiffDays function receives two Date Time parameters, and then replaces the Time component with 00:00:00. It calculates the elapsed time in milliseconds from the first date at 00:00:00 to the second date at 00:00:00, and then converts the difference in milliseconds into days.  
   
@@ -479,10 +477,10 @@ The maximum supported value is (2<sup>31</sup>)-1 days. This corresponds to appr
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -515,9 +513,9 @@ DiffDays(#2014-10-25 00:00:00#, #2014-10-26 00:00:00#) = 1, assuming the GMT+1 t
 
 Returns the difference in hours between 'dt1' and 'dt2'; i.e. how many hours have passed between these two dates:  
   
-- Returns a positive number if 'dt1' is smaller than 'dt2';  
-- Returns a negative number if 'dt1' is bigger than 'dt2'.  
-- Returns 0 if the two dates are equal.  
+* Returns a positive number if 'dt1' is smaller than 'dt2';  
+* Returns a negative number if 'dt1' is bigger than 'dt2'.  
+* Returns 0 if the two dates are equal.  
   
 Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.  
   
@@ -525,10 +523,10 @@ The maximum supported value is (2<sup>31</sup>)-1 hours. This corresponds to app
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -560,9 +558,9 @@ DiffHours(#2006-10-28 15:00:00#, #2006-10-29 15:00:00#) = 24, assuming the GMT+1
 
 Returns the difference in minutes between 'dt1' and 'dt2'; i.e. how many minutes have passed between these two dates:  
   
-- Returns a positive number if 'dt1' is smaller than 'dt2';  
-- Returns a negative number if 'dt1' is bigger than 'dt2'.  
-- Returns 0 if the two dates are equal.  
+* Returns a positive number if 'dt1' is smaller than 'dt2';  
+* Returns a negative number if 'dt1' is bigger than 'dt2'.  
+* Returns 0 if the two dates are equal.  
   
 Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.  
   
@@ -570,10 +568,10 @@ The maximum supported value is (2<sup>31</sup>)-1 minutes. This corresponds to a
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -606,9 +604,9 @@ DiffMinutes(#2006-10-28 15:00:00#, #2006-10-29 15:00:00#) = 1440, assuming the G
 
 Returns the difference in seconds between 'dt1' and 'dt2'; i.e. how many seconds have passed between these two dates:  
   
-- Returns a positive number if 'dt1' is smaller than 'dt2';  
-- Returns a negative number if 'dt1' is bigger than 'dt2'.  
-- Returns 0 if the two dates are equal.  
+* Returns a positive number if 'dt1' is smaller than 'dt2';  
+* Returns a negative number if 'dt1' is bigger than 'dt2'.  
+* Returns 0 if the two dates are equal.  
   
 Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.  
   
@@ -616,10 +614,10 @@ The maximum supported value is (2<sup>31</sup>)-1 seconds. This corresponds to a
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -651,10 +649,10 @@ Returns the hour of 'dt'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -678,10 +676,10 @@ Returns the minute of 'dt'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -705,10 +703,10 @@ Returns the month of 'dt'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -732,10 +730,10 @@ Returns a Date made up of year 'y', month 'm' and day 'd'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -773,10 +771,10 @@ Returns a Date Time made up of year 'y', month 'mo', day 'd', hour 'h', minute '
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -820,10 +818,10 @@ Returns a Time made up of hour 'h', minute 'm' and second 's'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -855,10 +853,10 @@ Returns the seconds of 'dt'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -882,10 +880,10 @@ Returns the year of 'dt'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -902,4 +900,3 @@ Type: Integer
 ```
 Year(#2015-07-14#) = 2015
 ```
-

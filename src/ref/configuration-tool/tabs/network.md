@@ -39,6 +39,6 @@ However, you may inadvertently define an Internal Network configuration that blo
 
 You can configure the IP address that the front-end server registers in the deployment controller service. This setting is useful for servers with multiple network adapters, allowing you to select on which network the OutSystems services communicate with each other.
 
-Configuration  |  Description  |  Default value  
----|---|---  
-Local IP Address | The list displays all IPs available for the front-end server you are configuring. | `(automatic)`
+| Configuration  |  Description  |  Default value |
+| ---|---|--- |
+| Local IP Address | The list displays all IPs available for the front-end server you are configuring. | `(automatic)` |

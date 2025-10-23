@@ -19,7 +19,7 @@ coverage-type:
 
 # Monitor Usage with Audit Logs
 
-OutSystems logs every task performed by IT users in the infrastructure management, and keeps an audit log made available to consult. This ensures you have traceability in your infrastructure, and can follow up when problems arise, since no interaction goes unnoticed. 
+OutSystems logs every task performed by IT users in the infrastructure management, and keeps an audit log made available to consult. This ensures you have traceability in your infrastructure, and can follow up when problems arise, since no interaction goes unnoticed.
 
 By default, LifeTime audit logs are kept for 365 days. It's possible to adjust the number of retention days in the site property `TimeToKeepAuditsInDays` of the **LifeTimeAudit** module. You can find this module by accessing Service Center of your LifeTime environment and navigating to **Factory** > **Modules**.  
 
@@ -34,7 +34,6 @@ IT users have access to the audit log and can check:
     * Roles
     * Environments
     * Infrastructure
-
 
 ## See the Tasks a User has Performed
 
@@ -61,7 +60,6 @@ As an example, let's see the audit logs related to the "Developer" role. Go to t
 Sometimes it's also useful to see all changes made in the infrastructure, and be able to filter them. For this, go to the **INFRASTRUCTURE** tab, or to the **ENVIRONMENTS** tab in OutSystems Cloud, and click the link **View Audit Logs**.
 
 ![Screenshot showing the Infrastructure tab in OutSystems with the View Audit Logs link highlighted.](images/monitor-usage-with-audit-logs-3.png "Infrastructure Audit Logs in OutSystems")
-
 
 ## Permissions Required to Access the Audit Logs
 

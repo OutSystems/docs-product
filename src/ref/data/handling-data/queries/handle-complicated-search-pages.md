@@ -21,7 +21,6 @@ Handling complex search pages with multiple search fields where most of them are
 
 ![Screenshot of a complex search page with multiple search fields](images/complex-search-ss.png "Complex Search Page Screenshot")
 
-
 ## Steps to handle complicated search pages
 
 1. You must aim to return the fewest number of records possible. Always set the **Max Records value**.
@@ -41,7 +40,7 @@ You can make these changes and see if the impact is acceptable. If not, you must
 
 OutSystems recommends that you use a Server Action instead of an Aggregate. Either build a SQL statement with a dynamic WHERE clause, based on whether or not a search field is used, or build multiple statements with a combination of search fields and choose the right one based on the search fields used. For more information, see [tuning dynamic SQL](https://www.brentozar.com/archive/2019/01/tuning-dynamic-sql-by-hand-with-short-circuits/).
 
-You can use Server Action to write queries based on the search fields. 
+You can use Server Action to write queries based on the search fields.
 
 ![Screenshot showing the use of aggregates in search functionality](images/search-with-aggrigate-ss.png "Search with Aggregate Screenshot")
 
@@ -53,6 +52,6 @@ Using server action is the best option for improved performance, but this approa
 
 ![Screenshot illustrating the use of Advanced SQL in search operations](images/search-with-adSQL-ss.png "Search with Advanced SQL Screenshot")
 
-If you use Advanced SQL, then you must handle paging manually. Manual-coded paging improves performance, but it is slightly more complicated. 
+If you use Advanced SQL, then you must handle paging manually. Manual-coded paging improves performance, but it is slightly more complicated.
 
 For more information, you may refer to this [OutSystems community forum discussion](https://www.outsystems.com/forums/discussion/56770/sql-offset-and-os-pagination/).

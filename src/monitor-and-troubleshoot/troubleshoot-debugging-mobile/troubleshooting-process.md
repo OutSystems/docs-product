@@ -19,19 +19,19 @@ coverage-type:
 
 # The troubleshooting, debugging and monitoring process
 
-In this article you can find detailed information on the differences between troubleshooting, debugging, and monitoring. Also, some best practices on how to proceed when you need to troubleshoot or debbug. 
+In this article you can find detailed information on the differences between troubleshooting, debugging, and monitoring. Also, some best practices on how to proceed when you need to troubleshoot or debbug.
 
 ## Definitions
 
 While ‘monitoring’ is a term that seldom strikes discord, ‘troubleshooting’ and ‘debugging’ are sometimes used interchangeably. For the purpose of this article, they're defined as follows:
 
-* **Monitoring** is a set of Tools and processes that aim to observe and keep track of the evolution of user and application activities, system events and abnormalities. Typically, this information is available through reports, visually rich dashboards, and alerts with varying degrees of granularity. 
+* **Monitoring** is a set of Tools and processes that aim to observe and keep track of the evolution of user and application activities, system events and abnormalities. Typically, this information is available through reports, visually rich dashboards, and alerts with varying degrees of granularity.
 
-    Ultimately, these tools allow their users to make decisions regarding improvements of a system’s security, reliability, and performance, or to pinpoint abnormalities in an application’s behavior. These are also critical in understanding how fruitful the improvement/correction activities were. 
+    Ultimately, these tools allow their users to make decisions regarding improvements of a system’s security, reliability, and performance, or to pinpoint abnormalities in an application’s behavior. These are also critical in understanding how fruitful the improvement/correction activities were.
 
     It’s fairly easy to understand that monitoring plays a pivotal role in supporting the troubleshooting and debugging efforts.
 
-    One example of a monitoring activity is analyzing a report that shows information regarding the slowest queries of an application and observing that one in particular is providing a subpar experience to the end users (for example, Screen timeouts). 
+    One example of a monitoring activity is analyzing a report that shows information regarding the slowest queries of an application and observing that one in particular is providing a subpar experience to the end users (for example, Screen timeouts).
 
     This finding would trigger a troubleshoot/debugging activity that would, eventually, result in a fix. The query would be monitored and the extraction of the same report at a different time would validate that the fix was successful.
 
@@ -40,9 +40,8 @@ While ‘monitoring’ is a term that seldom strikes discord, ‘troubleshooting
     Examples of troubleshooting activities include:
 
     * Researching the possible reason for a slow reactive Web App Screen response to user input, by generating a page/Screen activity recording and examining the recording output in the Timeline tab of the Chrome Developer Tools.
-    
-    * Investigating why data isn't showing up in a Mobile App by running SQL queries on the local storage in the Application tab of the Chrome Developer Tools.
 
+    * Investigating why data isn't showing up in a Mobile App by running SQL queries on the local storage in the Application tab of the Chrome Developer Tools.
 
 * **Debugging** is a subset of the troubleshooting activities specifically geared toward the step-by-step examination of the execution of a piece of code, and the related input and output data, typically leading to the modification of a portion of the code, to implement a fix and eliminate the unwanted behavior.
 
@@ -50,7 +49,7 @@ While ‘monitoring’ is a term that seldom strikes discord, ‘troubleshooting
 
 ## Best practices
 
-Troubleshooting and debugging are akin to detective work in a sense; they're supported by specialized tools and may require server-side, client-side and mobile-specific investigation. 
+Troubleshooting and debugging are akin to detective work in a sense; they're supported by specialized tools and may require server-side, client-side and mobile-specific investigation.
 
 Troubleshooting and debugging might look complex, but they're very much exercises that you should approach with a scientific mindset. That being said, a number of factors can make you more effective:
 
@@ -59,20 +58,20 @@ Troubleshooting and debugging might look complex, but they're very much exercise
     Be selective about testing scenarios most relevant to the issue in investigation, and proceed one step at a time (Example: make a single change to the code or perform a single, targeted test).
 
 * **Collecting information is a cornerstone of troubleshooting and debugging.**
-    
+
     Having access to  monitoring Tools and investing in instrumenting applications ahead of time (for example by building a custom on-device logging component for a Mobile App expected to work in offline mode), can make a significant difference.
 
 * **Collecting metrics/snapshots of the behavior before and after taking any actions.**
 
     This allows you to effectively measure the evolution of the behavior that prompted the troubleshooting and debugging in the first place.
 
-* **Understanding the underlying technologies (OS Mobile applications leverage [Apache Cordova](https://cordova.apache.org/docs/en/latest/guide/overview/)) is an advantage when investigating complex scenarios.** 
+* **Understanding the underlying technologies (OS Mobile applications leverage [Apache Cordova](https://cordova.apache.org/docs/en/latest/guide/overview/)) is an advantage when investigating complex scenarios.**
 
     For example, understanding that Cordova Plugins aren't available when you run your Mobile App directly in Chrome on your computer helps you understand why it's best practice to wrap Plugin calls inside Client Actions that test for Plugin availability and implement a graceful fallback when needed.
 
 * **Knowing what Tools are available to you and picking the best one for the job can save you considerable time and effort.**
 
-* **Following a consistent process helps build good habits and make you more effective.** 
+* **Following a consistent process helps build good habits and make you more effective.**
 
     A recommended high-level process looks like the one depicted in the following diagram:
 
@@ -93,7 +92,6 @@ Troubleshooting and debugging might look complex, but they're very much exercise
     * Test your changes (including, ideally, running a suite of regression tests).
 
     * Release your new-and-improved application to the world.
-
 
 ### Post-mortem
 

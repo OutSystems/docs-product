@@ -24,7 +24,7 @@ Service Studio shows the **Invalid Parameter Order** error:
 When you have a Screen with custom URLs, put the mandatory Input Parameters first. You can place optional Input Parameters only after the mandatory ones. You can fix the error by:
 
 * Reordering the Input Parameters. Drag the Input Parameters under the Screen where the error shows, and reorder them by putting the mandatory parameters on the top of the parameter list.
-* Changing the **Is Mandatory** property of Input Parameters. Check the properties of the Input Parameters under the Screen that reports the error. If there's a Parameter that should be mandatory instead of optional, set **Is Mandatory** to **Yes**.   
+* Changing the **Is Mandatory** property of Input Parameters. Check the properties of the Input Parameters under the Screen that reports the error. If there's a Parameter that should be mandatory instead of optional, set **Is Mandatory** to **Yes**.
 
 <div class="info" markdown="1">
 

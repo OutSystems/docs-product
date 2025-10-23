@@ -22,11 +22,11 @@ topic:
 
 The Processes API allows you to get information from the OutSystems data model to customize and extend the design of your Processes. With this API your can, for example, do the following:
 
-* **Build Your Taskbox**: Build your custom Taskbox to display the tasks to end users. 
+* **Build Your Taskbox**: Build your custom Taskbox to display the tasks to end users.
 
-* **Extend the Data Model**: Extend the OutSystems data model to better adapt Processes to your needs. 
+* **Extend the Data Model**: Extend the OutSystems data model to better adapt Processes to your needs.
 
-* **Build Process Reports**: Build reports about your Process and KPIs (Key Performance Indicators) from the extracted information. 
+* **Build Process Reports**: Build reports about your Process and KPIs (Key Performance Indicators) from the extracted information.
 
 The information about your processes is obtained by querying System entities. As such, you must add references to those entities to your module, using the Manage Dependencies dialog box.
 

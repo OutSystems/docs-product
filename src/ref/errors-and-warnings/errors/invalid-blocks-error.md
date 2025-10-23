@@ -29,7 +29,7 @@ The `Invalid Blocks` error is issued in the following situations:
     Review the web blocks include sequence in order to break the loop.
 
     To help you identify the problematic web blocks, the error message lists the include sequence. Here you can identify which web blocks include which web blocks.
-    
+
     Take note that the web block name detail depends on the module operation being done:
 
     **In the TrueChange tab**

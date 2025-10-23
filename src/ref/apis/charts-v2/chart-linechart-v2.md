@@ -28,9 +28,9 @@ This example shows how you can create a simple Line Chart with a Spline line and
 
     ![Screenshot showing the expansion of the DataPointList property in OutSystems](images/chartline-expand-ss.png "Expanding DataPointList Property")
 
-1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data).
 
-    This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the line chart. 
+    This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the line chart.
 
     ![Screenshot of setting Label and Value properties for a data point in OutSystems Line Chart](images/chartline-datapoint-ss.png "Setting Data Point Properties")
 

@@ -5,29 +5,33 @@ guid: 811f5c4c-11f5-4998-87c2-d5629a8fe0a2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data types, default values, data constraints, conversion functions, outsystems 11
+audience:
+  - full stack developers
+outsystems-tools:
+  - none
 ---
-
 # Available Data Types
 
 This page describes the data types available in OutSystems, their default values and constraints, and the built-in functions to convert them into another data type.
 
 ## Basic data types
 
-Type | Default Value | Example | Comment
----|---|---|---
-Binary Data | Byte array with no elements | n/a |
-Boolean | false | true or false |
-Currency | 0.0 | 545870.025 | See Decimal type.
-Date | #1900-01-01# | #1988-08-28# | The  supported range is [#1900-01-01#, #3000-12-31#]
-Time | #00:00:00# | #12:20:56# | Minimum value: #00:00:00# <br/><br/>Maximum value: #23:59:59#
-Date Time | #1900-01-01 00:00:00# | #1988-08-28 23:59:59# | The supported range is [#1900-01-01 00:00:00#, #3000-12-31 23:59:59#]<br/><br/>Refer to the [additional notes](<#date-time-notes>) about the time zone conversions.
-Integer | 0 | 2147483600 | Minimum value: -2^31^, which is -2147483648.<br/><br/>Maximum value: 2^31^-1, which is 2147483647.
-Long Integer | 0 | 5645245584135987412 | Minimum value: -2^63^<br/>Maximum value: 2^63^-1
-Decimal | 0.0 | -158121.025 <br/>4000.0 | Integer and decimal parts must be separated by a period. <br/><br/>Minimum value: -2^96^ <br/><br/>Maximum value: 2^96^-1<br/><br/>The maximum number of digits in the decimal part is 8.
-Email | "" (empty string) | "fran.wilson@example.com" |
-Phone Number | "" (empty string) | "+1 555 565 3730" |
-Text | "" (empty string) | "My name is Christina Sharp." |
-&lt;Entity&gt; Identifier | When an Entity is created, the &lt;Entity&gt; identifier data type is created for the identifier attribute. | |
+| Type | Default Value | Example | Comment |
+| ---|---|---|--- |
+| Binary Data | Byte array with no elements | n/a | |
+| Boolean | false | true or false | |
+| Currency | 0.0 | 545870.025 | See Decimal type. |
+| Date | #1900-01-01# | #1988-08-28# | The  supported range is [#1900-01-01#, #3000-12-31#] |
+| Time | #00:00:00# | #12:20:56# | Minimum value: #00:00:00# <br/><br/>Maximum value: #23:59:59# |
+| Date Time | #1900-01-01 00:00:00# | #1988-08-28 23:59:59# | The supported range is [#1900-01-01 00:00:00#, #3000-12-31 23:59:59#]<br/><br/>Refer to the [additional notes](<#date-time-notes>) about the time zone conversions. |
+| Integer | 0 | 2147483600 | Minimum value: -2^31^, which is -2147483648.<br/><br/>Maximum value: 2^31^-1, which is 2147483647. |
+| Long Integer | 0 | 5645245584135987412 | Minimum value: -2^63^<br/>Maximum value: 2^63^-1 |
+| Decimal | 0.0 | -158121.025 <br/>4000.0 | Integer and decimal parts must be separated by a period. <br/><br/>Minimum value: -2^96^ <br/><br/>Maximum value: 2^96^-1<br/><br/>The maximum number of digits in the decimal part is 8. |
+| Email | "" (empty string) | "<fran.wilson@example.com>" | |
+| Phone Number | "" (empty string) | "+1 555 565 3730" | |
+| Text | "" (empty string) | "My name is Christina Sharp." | |
+| &lt;Entity&gt; Identifier | When an Entity is created, the &lt;Entity&gt; identifier data type is created for the identifier attribute. | | |
 
 <a id="date-time-notes"></a>**Date Time Notes**
 
@@ -79,19 +83,19 @@ OutSystems enables the conversion between different data types. This can be made
 
 OutSystems automatically converts values of the following types:
 
-Expected Type | Accepted Types | Obs.
----|---|---
-Boolean | - |
-Currency | Decimal, Integer, Boolean, Entity Identifier(Integer) |
-Date | Date Time |
-Date Time | Date, Text, Time |
-Integer | Decimal, Boolean, Currency, Entity Identifier(Integer) | When converting Decimal to Integer implicitly, the decimals are truncated.
-Long Integer | Long Integer, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Long Integer) |
-Decimal | Integer, Boolean, Currency, Entity Identifier(Integer) |
-Entity Identifier | Entity Identifier |  A certain Entity Identifier can be converted into another Entity's Identifier, but a warning is displayed.
-Email | Text, Phone Number, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Text), Date Time, Date, Time |
-Phone Number | Text, Email, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Text), Date Time, Date, Time |
-Text | Integer, Decimal, Boolean, Currency, Phone Number, Email, Entity Identifier(Integer), Entity Identifier(Text) |
+| Expected Type | Accepted Types | Obs. |
+| ---|---|--- |
+| Boolean | - | |
+| Currency | Decimal, Integer, Boolean, Entity Identifier(Integer) | |
+| Date | Date Time | |
+| Date Time | Date, Text, Time | |
+| Integer | Decimal, Boolean, Currency, Entity Identifier(Integer) | When converting Decimal to Integer implicitly, the decimals are truncated. |
+| Long Integer | Long Integer, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Long Integer) | |
+| Decimal | Integer, Boolean, Currency, Entity Identifier(Integer) | |
+| Entity Identifier | Entity Identifier |  A certain Entity Identifier can be converted into another Entity's Identifier, but a warning is displayed. |
+| Email | Text, Phone Number, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Text), Date Time, Date, Time | |
+| Phone Number | Text, Email, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Text), Date Time, Date, Time | |
+| Text | Integer, Decimal, Boolean, Currency, Phone Number, Email, Entity Identifier(Integer), Entity Identifier(Text) | |
 
 ### Explicit conversion functions
 
@@ -99,17 +103,17 @@ To convert values from one data type to another use [data type conversion functi
 
 Here is a summary about the possible explicit conversions:
 
-From | To | Function
----|---|---
- Boolean | Integer<br/>Text | [BooleanToInteger](<../../lang/auto/builtinfunction-data-conversion.md#BooleanToInteger>)<br/>[BooleanToText](<../../lang/auto/builtinfunction-data-conversion.md#BooleanToText>)
-Date | Date Time<br/>Text | [DateToDateTime](<../../lang/auto/builtinfunction-data-conversion.md#DateToDateTime>)<br/>[DateToText](<../../lang/auto/builtinfunction-data-conversion.md#DateToText>)
-Date Time | Date<br/>Text<br/>Time | [DateTimeToDate](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToDate>)<br/>[DateTimeToText](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToText>)<br/>[DateTimeToTime](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToTime>)
-Integer | Boolean<br/>Decimal<br/>Text<br/>Integer Identifier | [IntegerToBoolean](<../../lang/auto/builtinfunction-data-conversion.md#IntegerToBoolean>)<br/>[IntegerToDecimal](<../../lang/auto/builtinfunction-data-conversion.md#IntegerToDecimal>)<br/>[IntegerToText](<../../lang/auto/builtinfunction-data-conversion.md#IntegerToText>)<br/>[IntegerToIdentifier](<../../lang/auto/builtinfunction-data-conversion.md#IntegerToIdentifier>)
-Long Integer | Long Integer Identifier<br/>Integer<br/>Text | [LongIntegerToIdentifier](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToIdentifier>)<br/>[LongIntegerToInteger](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToInteger>)<br/>[LongIntegerToText](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToText>)
-Decimal | Boolean<br/>Integer<br/>Text | [DecimalToBoolean](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToBoolean>)<br/>[DecimalToInteger](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToInteger>)<br/>[DecimalToText](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToText>)
-Entity Identifier (Integer) | Integer | [IdentifierToInteger](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToInteger>)
-Entity Identifier (Long Integer) |  Long Integer  | [IdentifierToLongInteger](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToLongInteger>)
-Entity Identifier (Text) | Text | [IdentifierToText](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToText>)
-Text | Date<br/>Date Time<br/>Decimal<br/>Integer<br/>Time<br/>Text Identifier | [TextToDate](<../../lang/auto/builtinfunction-data-conversion.md#TextToDate>)<br/>[TextToDateTime](<../../lang/auto/builtinfunction-data-conversion.md#TextToDateTime>)<br/>[TextToDecimal](<../../lang/auto/builtinfunction-data-conversion.md#TextToDecimal>)<br/>[TextToInteger](<../../lang/auto/builtinfunction-data-conversion.md#TextToInteger>)<br/>[TextToTime](<../../lang/auto/builtinfunction-data-conversion.md#TextToTime>)<br/>[TextToIdentifier](<../../lang/auto/builtinfunction-data-conversion.md#TextToIdentifier>)
-Time | Text | [TimeToText](<../../lang/auto/builtinfunction-data-conversion.md#TimeToText>)
-Any data type | Object | [ToObject](<../../lang/auto/builtinfunction-data-conversion.md#ToObject>)
+| From | To | Function |
+| ---|---|--- |
+| Boolean | Integer<br/>Text | [BooleanToInteger](<../../lang/auto/builtinfunction-data-conversion.md#BooleanToInteger>)<br/>[BooleanToText](<../../lang/auto/builtinfunction-data-conversion.md#BooleanToText>) |
+| Date | Date Time<br/>Text | [DateToDateTime](<../../lang/auto/builtinfunction-data-conversion.md#DateToDateTime>)<br/>[DateToText](<../../lang/auto/builtinfunction-data-conversion.md#DateToText>) |
+| Date Time | Date<br/>Text<br/>Time | [DateTimeToDate](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToDate>)<br/>[DateTimeToText](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToText>)<br/>[DateTimeToTime](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToTime>) |
+| Integer | Boolean<br/>Decimal<br/>Text<br/>Integer Identifier | [IntegerToBoolean](<../../lang/auto/builtinfunction-data-conversion.md#IntegerToBoolean>)<br/>[IntegerToDecimal](<../../lang/auto/builtinfunction-data-conversion.md#IntegerToDecimal>)<br/>[IntegerToText](<../../lang/auto/builtinfunction-data-conversion.md#IntegerToText>)<br/>[IntegerToIdentifier](<../../lang/auto/builtinfunction-data-conversion.md#IntegerToIdentifier>) |
+| Long Integer | Long Integer Identifier<br/>Integer<br/>Text | [LongIntegerToIdentifier](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToIdentifier>)<br/>[LongIntegerToInteger](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToInteger>)<br/>[LongIntegerToText](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToText>) |
+| Decimal | Boolean<br/>Integer<br/>Text | [DecimalToBoolean](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToBoolean>)<br/>[DecimalToInteger](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToInteger>)<br/>[DecimalToText](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToText>) |
+| Entity Identifier (Integer) | Integer | [IdentifierToInteger](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToInteger>) |
+| Entity Identifier (Long Integer) |  Long Integer  | [IdentifierToLongInteger](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToLongInteger>) |
+| Entity Identifier (Text) | Text | [IdentifierToText](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToText>) |
+| Text | Date<br/>Date Time<br/>Decimal<br/>Integer<br/>Time<br/>Text Identifier | [TextToDate](<../../lang/auto/builtinfunction-data-conversion.md#TextToDate>)<br/>[TextToDateTime](<../../lang/auto/builtinfunction-data-conversion.md#TextToDateTime>)<br/>[TextToDecimal](<../../lang/auto/builtinfunction-data-conversion.md#TextToDecimal>)<br/>[TextToInteger](<../../lang/auto/builtinfunction-data-conversion.md#TextToInteger>)<br/>[TextToTime](<../../lang/auto/builtinfunction-data-conversion.md#TextToTime>)<br/>[TextToIdentifier](<../../lang/auto/builtinfunction-data-conversion.md#TextToIdentifier>) |
+| Time | Text | [TimeToText](<../../lang/auto/builtinfunction-data-conversion.md#TimeToText>) |
+| Any data type | Object | [ToObject](<../../lang/auto/builtinfunction-data-conversion.md#ToObject>) |

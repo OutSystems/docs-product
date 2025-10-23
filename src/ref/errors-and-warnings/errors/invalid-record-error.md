@@ -16,7 +16,7 @@ coverage-type:
   - unblock
 ---
 
-# Invalid Record Error 
+# Invalid Record Error
 
 The `Invalid Record` error is issued in the following situations:
 

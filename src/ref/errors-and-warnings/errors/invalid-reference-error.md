@@ -34,5 +34,4 @@ The `Invalid Reference` error is issued in the following situations:
 
     You have a Screen that links to a Screen that is not part of your application. To fix this error you can: a) Use an external link; or b) move the module to keep it all in the same application.
 
-
 Double-click on the error line to take you directly to the element where this situation was detected.

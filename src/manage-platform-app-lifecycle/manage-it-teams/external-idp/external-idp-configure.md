@@ -19,7 +19,7 @@ coverage-type:
 
 To use the **IT Users Authentication with External IdP (OIDC)** feature in the OutSystems platform, you must configure the external IdP first, then configure it in Lifetime. The IdP must comply with the [OIDC Protocol](https://openid.net/connect/) and support the [Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html#IssuerDiscovery) feature that defines how clients dynamically discover information about OpenID providers.
 
-Step 1. Configuring External IdP. 
+Step 1. Configuring External IdP.
 
 See the following articles for configuration instructions:
 

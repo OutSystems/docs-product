@@ -21,8 +21,7 @@ coverage-type:
 
 # PATCH method on exposed REST services
 
-
-The PATCH method is part of the HTTP protocol and contemplated in REST specifications since the start. 
+The PATCH method is part of the HTTP protocol and contemplated in REST specifications since the start.
 
 Due to compliance and interoperability reasons, some APIs might require the use of PATCH in some operations. In those cases, using PUT is not an acceptable alternative.
 
@@ -60,16 +59,18 @@ To create a PATCH method, do the following:
     ![Screenshot of the OutSystems interface showing the process of adding a PATCH method to a REST API](images/patch-add-ss.png "Adding a PATCH Method in OutSystems")
 
 ## Constraint with the PATCH method
+
 Due to the simplification and abstraction provided by OutSystems to accelerate development, there's a constraint in the PATCH semantics that may result in patterns that are not supported by OutSystems language, like null values or dynamic structures. The following sections help you overcome this constraint if you need to do it.
 
 ### Ensuring PATCH semantics
+
 If you need to ensure that your PATCH fully obeys the semantics, you must find a way to distinguish which attributes were indeed sent, assuming that the ones that were not sent will be received with the default values.
 
 Thus, the suggested approach is to define uncommon default values for each attribute of the input data type structure (in our case called "ContactDTO").
 
 #### Integers, Long Integers, Text and Email data types
 
-To implement a correct PATCH, define default values in your structure attribute that aren't commonly used. To do it: 
+To implement a correct PATCH, define default values in your structure attribute that aren't commonly used. To do it:
 
 1. Inside the Data tab, open the Structures folder.
 
@@ -80,12 +81,11 @@ To implement a correct PATCH, define default values in your structure attribute 
     1. For Integers and Long Interger data types, use `-999999999`:
 
         ![Screenshot showing the setting of default values for integer and long integer data types in OutSystems](images/add-filename-1-ss.png "Setting Default Values for Integer Types")
-    
+
     1. For Text and Email data types use `"undefined"`:
 
         ![Screenshot showing the setting of default values for text and email data types in OutSystems](images/add-filename-2-ss.png "Setting Default Values for Text and Email Types")
-    
-	
+
 #### Boolean data type
 
 Booleans are a particular case, since there are only two possible values, making it difficult to distinguish between unsent and sent values. To overcome this situation, do the following:
@@ -118,7 +118,7 @@ Check the following example to guide you in this operation:
 
 ### Converting a Text to a Boolean
 
-When you do a PATCH, you may need to convert a Text to Boolean. Since there is no Built-in function to perform this data conversion, it is necessary to do it manually. 
+When you do a PATCH, you may need to convert a Text to Boolean. Since there is no Built-in function to perform this data conversion, it is necessary to do it manually.
 
 To do it, create a server action that receives a text input and returns a respective boolean value:
 

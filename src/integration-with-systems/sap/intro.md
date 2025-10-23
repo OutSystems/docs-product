@@ -19,7 +19,7 @@ coverage-type:
 
 # SAP
 
-The connection between OutSystems and SAP relies on sapnco **SAP Connector for Microsoft.NET 3.0.x for Windows 64bit (Compiled with .NET Framework 4.0)** which is fully documented **[here](https://support.sap.com/content/dam/support/en_us/library/ssp/products/connectors/msnet/dotnet_connector_30_programming_guide.pdf)**. Therefore, it uses the regular username and password in the connection string. 
+The connection between OutSystems and SAP relies on sapnco **SAP Connector for Microsoft.NET 3.0.x for Windows 64bit (Compiled with .NET Framework 4.0)** which is fully documented **[here](https://support.sap.com/content/dam/support/en_us/library/ssp/products/connectors/msnet/dotnet_connector_30_programming_guide.pdf)**. Therefore, it uses the regular username and password in the connection string.
 
 <div class="info" markdown="1">
 

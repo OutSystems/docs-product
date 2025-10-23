@@ -24,7 +24,7 @@ Enable your OutSystems application to consume or share data with a Salesforce ap
 ## Prerequisites
 
 * You need Salesforce administrator rights to complete these steps.
-* This article assumes an OutSystems developer sent a request to the Salesforce admin through Integration Builder. The email request includes a unique authorization certificate. Alternatively, the Salesforce admin can use a private certificate. 
+* This article assumes an OutSystems developer sent a request to the Salesforce admin through Integration Builder. The email request includes a unique authorization certificate. Alternatively, the Salesforce admin can use a private certificate.
 
 ## Create a connected app in Salesforce
 
@@ -56,33 +56,33 @@ Enable your OutSystems application to consume or share data with a Salesforce ap
 
 1. On the Manage Connected Apps summary page, in **API (Enable OAuth Settings)**, copy the **Consumer Key**.
 
-1. Send the  **Consumer Key** to the developer who requested the connected app. 
+1. Send the  **Consumer Key** to the developer who requested the connected app.
 
     If you used a private certificate, rather than the one attached to the email request, send the certificate as well, as the developer needs to upload it to Integration Manager.  
- 
+
 ## Assign pre-authorized users
- 
+
 **Prerequisite:** Choose a dedicated user account for executing your application's requests. Using a user account solely for this purpose is advisable to avoid conflicts. Ensure this account is granted sufficient privileges to read, write, and manage data across Salesforce business objects. Once this is set up, proceed with the following steps.
- 
+
 1. **Create a Permission Set:**
-   - In Salesforce, navigate to **Service Setup** > **Administration** > **Users** > **Permissions Sets**.
-   - Click **New**, fill in the required fields (Label and API Name), and set the **License** to **None**.
-   - Click **Save**.
+   * In Salesforce, navigate to **Service Setup** > **Administration** > **Users** > **Permissions Sets**.
+   * Click **New**, fill in the required fields (Label and API Name), and set the **License** to **None**.
+   * Click **Save**.
 
 1. **Manage Assignments:**
-   - On the created **Permission Set** page, click **Manage Assignments** and then **Add Assignments**.
-   - Select and assign the dedicated user account.
+   * On the created **Permission Set** page, click **Manage Assignments** and then **Add Assignments**.
+   * Select and assign the dedicated user account.
 
 1. **Configure Connected App Access:**
-   - Return to the **Permission Set** page, click **Assigned Connected Apps**, and click **Edit**.
-   - Add the previously created Connected App to the Enabled list and save.
+   * Return to the **Permission Set** page, click **Assigned Connected Apps**, and click **Edit**.
+   * Add the previously created Connected App to the Enabled list and save.
 
 1. **Edit App Policies:**
-   - Navigate back to **App Manager**.
-   - Find your connected app, select **Manage** from the options, and then click **Edit Policies**.
-   - Under **Permitted Users**, choose **Admin approved users are pre-authorized**.
-   - Save your changes.
+   * Navigate back to **App Manager**.
+   * Find your connected app, select **Manage** from the options, and then click **Edit Policies**.
+   * Under **Permitted Users**, choose **Admin approved users are pre-authorized**.
+   * Save your changes.
 
 1. **Finalize Permission Set:**
-   - Under **Permissions Sets**, click **Manage Permission Sets**.
-   - Select the Permission Set created earlier and click **Save**.
+   * Under **Permissions Sets**, click **Manage Permission Sets**.
+   * Select the Permission Set created earlier and click **Save**.

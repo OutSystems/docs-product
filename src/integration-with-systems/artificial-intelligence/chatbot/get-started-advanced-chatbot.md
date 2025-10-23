@@ -38,7 +38,7 @@ Open your webhook module and go to **Logic** > **Server Actions** > **Utilities*
 
 ## Reply with an answer from a knowledge base
 
-You can query the knowledge base in Azure directly from the webhook module. This is useful when you're building a more complex logic, and you want to combine several chatbot features. For example, you may send user questions to the knowledge base first, and if there is no valid answer, you can show static options. 
+You can query the knowledge base in Azure directly from the webhook module. This is useful when you're building a more complex logic, and you want to combine several chatbot features. For example, you may send user questions to the knowledge base first, and if there is no valid answer, you can show static options.
 
 See [Use the Azure QnA Maker Connector in OutSystems apps](../qna-connector.md) for instructions on how to configure, reference, and use the connector.
 

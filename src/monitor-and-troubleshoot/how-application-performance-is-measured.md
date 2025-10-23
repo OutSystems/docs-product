@@ -59,7 +59,7 @@ Besides metrics, the WebScreenClientExecuted event contains additional client de
 
 ## Network Metrics
 
-The platform computes the network time based on metrics collected on client and server sides, namely: 
+The platform computes the network time based on metrics collected on client and server sides, namely:
 
 Network Duration = Client Duration – Client Load Time – Server Duration
 

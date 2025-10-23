@@ -32,7 +32,6 @@ When you're done developing your integration with an external database and you w
 
 </div>
 
-
 The creation of an integration with an external database involves the following general steps:
 
 1. In Service Center, define a connection to the external database.
@@ -44,7 +43,7 @@ The following sections go throught each one of these general steps in detail.
 
 ## Define a connection to the external database { #define-connection }
 
-To use tables and views from external databases, create a database connection: 
+To use tables and views from external databases, create a database connection:
 
 1. Open the **Service Center** management console of your OutSystems environment.
 
@@ -84,9 +83,9 @@ To use tables and views from external databases, create a database connection:
 
 1. Click **Create** to create the database connection.
 
-If your extension to an external database includes the fully qualified table name, such as database.schema.table, changing the database connection in Service Center does not impact your extension. 
+If your extension to an external database includes the fully qualified table name, such as database.schema.table, changing the database connection in Service Center does not impact your extension.
 
-If the extension entities display `Northwind.dbo.customers` using the logical database Integration1, and you change the logical database to `Northwind_test`, your extension still points to `Northwind` unless you change every entity in the Effective Physical Table name field. 
+If the extension entities display `Northwind.dbo.customers` using the logical database Integration1, and you change the logical database to `Northwind_test`, your extension still points to `Northwind` unless you change every entity in the Effective Physical Table name field.
 
 ## Map tables or views to Entities in an extension module
 
@@ -107,11 +106,11 @@ After configuring a database connection in Service Center, use Integration Studi
 1. Follow the steps of the wizard.
 
     ![Wizard interface in Integration Studio for mapping an external table or view to an entity](images/connect-external-db-4.png "External Table or View Mapping Wizard")
-    
+
     <div class="info" markdown="1">
 
-    Make sure that you: 
-    
+    Make sure that you:
+
     * Select the database connection configured previously.
     * Select the necessary tables and views.
     * Define a logical database name that you will use to connect the extension to a physical database connection in the next section.
@@ -147,7 +146,6 @@ After mapping the tables or views, use Service Center to configure which databas
 In some cases you need to select the database based on runtime data. Typically, the applicable databases share the same schema but they contain different data.
 
 In these scenarios, you can use the action [DatabaseConnection_SetConnectionStringForSession](<../../ref/apis/auto/platformruntime-api.final.md#DatabaseConnection_SetConnectionStringForSession>) of the [PlatformRuntime API](<../../ref/apis/auto/platformruntime-api.final.md>).
-
 
 ## Use the extension in your app
 

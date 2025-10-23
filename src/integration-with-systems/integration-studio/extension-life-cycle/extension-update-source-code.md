@@ -29,7 +29,7 @@ The Update Source Code operation synchronizes the source code you added in the .
     <div class="info" markdown="1">
 
     Any changes you have made directly in these files are overridden in this step.
-    
+
     </div>
 
 1. **Merge** the `<extension_name>.cs` file. This operation updates the signatures of the methods with the action definition, but it is applied only to the signatures: the body of the methods remains as is.
@@ -37,7 +37,7 @@ The Update Source Code operation synchronizes the source code you added in the .
     <div class="info" markdown="1">
 
     Any changes you have made in the signatures of the methods directly in the IDE are overridden in this step.  
-    
+
     </div>
   
 ## How to update the extension source code

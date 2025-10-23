@@ -36,5 +36,3 @@ After converting your application to ODC, you need to manually implement the OAu
 1. **Manage the tokens:** Implement logic to securely store the retrieved access token (and refresh token, if applicable) for reuse in subsequent API calls.
 1. **Inject the Authorization header:** Implement the logic to add the `Authorization` header to outgoing requests using the **OnBeforeRequest** callback for the consumed REST API. Check this example on [how to add a header for token-based authentication](../../integration-with-systems/rest/consume-rest-apis/simple-customizations.md#example-use-case-adding-a-header-for-token-based-authentication).
 1. **Handle token expiration:** Add logic to manage token expiration based on the provider's specifications, either by requesting a new token proactively or using a refresh token (if supported by the API) to obtain a new access token when needed.
-
-

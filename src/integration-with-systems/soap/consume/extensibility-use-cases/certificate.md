@@ -21,7 +21,7 @@ coverage-type:
 
 In this example scenario we will add support for authenticating SOAP requests using a client certificate.
 
-**Notes:** 
+**Notes:**
 
 * The binary contents of the client certificate can be retrieved in several ways: from a disk file (for example, a `*.pfx` file), directly from the machine certificate store, from the database, from a blob on cloud storage, etc. The extension action presented in this example assumes that the binary data of the certificate is already available in an OutSystems application, such as in a local variable or as an output parameter of a function call.
 
@@ -74,7 +74,7 @@ public void MssSetupCertificateAuth(byte[] ssClientCertificateContent, string ss
 
 5\. In Service Studio, add a reference to the "SetupCertificateAuth" action of your extension in your application module.  
 
-6\. In the flow of the SOAP callback of your SOAP Web Service (the flow of "OnBeforeRequestAdvanced"), drag the "SetupCertificateAuth" action to the flow. 
+6\. In the flow of the SOAP callback of your SOAP Web Service (the flow of "OnBeforeRequestAdvanced"), drag the "SetupCertificateAuth" action to the flow.
 
 7\. Provide the binary contents of the certificate in the "ClientCertificateContent" parameter and the certificate password in the "CertificatePassword" input parameter.  
 _Note:_ The certificate used to authenticate the client must include a private key, and will likely be protected by a password.

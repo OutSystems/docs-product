@@ -32,11 +32,11 @@ You must solve this pattern in ODC, after proceeding with the code conversion to
 
 Depending on the scenario, do one of the following:
 
-  * If the functionality of the system element is [available in ODC without changes](#no-changes), ensure the dependencies are defined correctly.
+* If the functionality of the system element is [available in ODC without changes](#no-changes), ensure the dependencies are defined correctly.
   
-  * If the functionality of the system element is [available in ODC with changes](#changes), implement the changes in your ODC Assets.
+* If the functionality of the system element is [available in ODC with changes](#changes), implement the changes in your ODC Assets.
   
-  * If the functionality of the system element [isn't available in ODC](#not-available), adapt your code in alignment with ODC architecture.
+* If the functionality of the system element [isn't available in ODC](#not-available), adapt your code in alignment with ODC architecture.
 
 The following sections list:
 

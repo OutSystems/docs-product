@@ -24,7 +24,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 </div>
 
-The AI Mentor Studio plugin can use a forward proxy while connecting to the AI Mentor Studio Software as a Service (SaaS). 
+The AI Mentor Studio plugin can use a forward proxy while connecting to the AI Mentor Studio Software as a Service (SaaS).
 
 ## Prerequisites
 

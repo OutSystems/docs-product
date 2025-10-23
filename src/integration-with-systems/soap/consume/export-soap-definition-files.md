@@ -20,13 +20,11 @@ coverage-type:
 
 Consuming a SOAP Web Service in **Service Studio** is generally a seamless and trouble-free experience. There are cases, however, when developers want more information about a particular web service or need to make some modifications in order to make it conform to **OutSystems** requirements, such as:
 
-
 * An unsupported SOAP use case in the service definition
 * A pattern that leads to an internal error in **Service Studio** or in the **Platform Server**
 * An XML response that is not compliant with the service definition
 
 A SOAP Web Service is defined by a WSDL, a Web Service Description Language .xml file. A WSDL may reference other WSDL files and schema files (.xsd files). This article describes how to use the SOAP **Export Definition Files** option of **Service Studio** to download all of the files of a consumed SOAP web service.
-
 
 ## Examining local SOAP WSDL files
 
@@ -34,7 +32,7 @@ SOAP web services are generally consumed by specifying the URL of the Web Servic
 
 * The user deleted the files
 * The developer does not have internet access
-* The developer no longer has access to a private network where the service is available 
+* The developer no longer has access to a private network where the service is available
 
 A developer who doesn’t have access to the web service can use the SOAP **Export Definition Files** option to examine the SOAP web service in order get more information about how it works, as described in the section below.
 
@@ -46,27 +44,25 @@ A developer who doesn’t have access to the web service can use the SOAP **Expo
 
 1. Choose a folder to place the definition files. Aside from the .WSDL file itself, you may see an XSDs folder with schema files and an Imports folder with imported WSDL files.
 
-
     ![Image displaying the folder structure after exporting WSDL files, including XSDs and Imports folders](images/wsdl-folder-structure.png "WSDL Folder Structure")
 
 1. Examine the files using a text editor. When you are done you may continue to use the SOAP web service in the design of your app.
-
 
 When you export definition files to your local drive all schema locations are converted from URLs to relative paths.
 
 For example, the original SOAP definition file might include the following code for the schema location:
 
-```xml 
+```xml
     <xs:schema targetNamespace="http://example/simpleTest">
         <xs:import namespace="http://example/SchemasimpleTest" schemaLocation="http://example/simpleTest?xsd" />
-``` 
+```
 
 After the export the locations have been converted to relative paths, as in the schema location below.
 
-```xml 
+```xml
     <xs:schema targetNamespace="http://example/simpleTest">
         <xs:import namespace="http://example/SchemasimpleTest" schemaLocation="XSDs\simpleTest.xsd" />
-``` 
+```
 
 ## Unsupported use cases
 

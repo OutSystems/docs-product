@@ -42,4 +42,3 @@ Depending on your scenario, solve this pattern in one of the following ways:
 
   1. Map that new O11 app to a new ODC library.  
      The original modules can then both depend on this new shared library, breaking the circular reference.
-

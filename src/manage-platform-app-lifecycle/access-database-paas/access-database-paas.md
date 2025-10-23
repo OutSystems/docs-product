@@ -7,8 +7,14 @@ platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=304:0
 coverage-type:
   - apply
+tags: outsystems cloud, database access, direct access, temporary user, permanent user
+audience:
+  - platform administrators
+  - infrastructure managers
+  - backend developers
+outsystems-tools:
+  - lifetime
 ---
-
 # Access the database of your OutSystems Cloud
 
 This topic details how you request direct access to the OutSystems Cloud databases of your subscription using OutSystems 11.
@@ -32,7 +38,7 @@ You can then use tools such as SQL Server Management Studio or Oracle SQL Develo
 
 <div class="info" markdown="1">
 
-The direct database access user does not have backup privileges. 
+The direct database access user does not have backup privileges.
 
 </div>
 

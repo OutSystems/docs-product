@@ -39,6 +39,6 @@ O11 domains have similar characteristics to ODC apps since they are both loosely
 
     ![Diagram depicting the conversion of horizontal domains containing shared services to ODC apps.](images/horizontal-to-application-diag.png "Mapping Horizontal Domains to ODC Apps")
 
-*  Convert horizontal domains with foundation apps consumed across multiple verticals to one or more ODC libraries.
+* Convert horizontal domains with foundation apps consumed across multiple verticals to one or more ODC libraries.
 
     ![Diagram representing the conversion of horizontal domains with foundation apps to ODC libraries.](images/horizontal-to-library-diag.png "Mapping Horizontal Domains to ODC Libraries")

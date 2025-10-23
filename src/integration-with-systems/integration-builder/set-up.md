@@ -57,7 +57,6 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
 </div>
 
-
 <div class="info" markdown="1">
 
 Keep in mind:

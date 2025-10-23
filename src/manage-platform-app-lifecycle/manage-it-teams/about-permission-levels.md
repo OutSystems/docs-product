@@ -103,82 +103,82 @@ This section describes which operations are available to a user when a specific 
 
 Except for the lowest one, "No Access", each permission level is cumulative with the permissions of the levels below.
 
-Full Control |  |
----------|----------
-Assigned as **Default Role** | The user can: <ul><li>Manage the **environment settings**, such as the date format, and external database catalogs and connections.</li><li>Manage the front-end servers for this environment, zones, email and certificate settings, OutSystems licensing, and see auditing information of the changes made to the infrastructure.</li></ul>
-Assigned for a **Team** | The user is set with **Change and Deploy** permission for the **team’s applications**, which is the highest permission that applies to applications.
-Assigned for an **Application** | The user is set with **Change and Deploy** permission for the **application**, which is the highest permission that applies to applications.
+| Full Control |  |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can: <ul><li>Manage the **environment settings**, such as the date format, and external database catalogs and connections.</li><li>Manage the front-end servers for this environment, zones, email and certificate settings, OutSystems licensing, and see auditing information of the changes made to the infrastructure.</li></ul> |
+| Assigned for a **Team** | The user is set with **Change and Deploy** permission for the **team’s applications**, which is the highest permission that applies to applications. |
+| Assigned for an **Application** | The user is set with **Change and Deploy** permission for the **application**, which is the highest permission that applies to applications. |
 
-Change and Deploy Applications | |
----------|----------
-Assigned as **Default Role** | The user can: <ul><li>See, change, and deploy all the **environment’s applications** in Service Studio, LifeTime and Service Center. </li><li> Change in LifeTime and Service Center the settings of all the **environment’s applications** (such as Site Properties).</li></ul>
-Assigned for a **Team** | The user can: <ul><li>See, change, and deploy the **team’s applications** in Service Studio,  LifeTime and Service Center.</li><li>Change in LifeTime and Service Center the settings of the **team’s applications** (such as Site Properties).</li></ul> 
-Assigned for an **Application** | The user can: <ul><li>See, change, and deploy  the **application** in Service Studio, LifeTime and Service Center.</li><li>Change in LifeTime and Service Center the settings of the **application** (such as Site Properties).</li></ul>  
+| Change and Deploy Applications | |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can: <ul><li>See, change, and deploy all the **environment’s applications** in Service Studio, LifeTime and Service Center. </li><li> Change in LifeTime and Service Center the settings of all the **environment’s applications** (such as Site Properties).</li></ul> |
+| Assigned for a **Team** | The user can: <ul><li>See, change, and deploy the **team’s applications** in Service Studio,  LifeTime and Service Center.</li><li>Change in LifeTime and Service Center the settings of the **team’s applications** (such as Site Properties).</li></ul> |
+| Assigned for an **Application** | The user can: <ul><li>See, change, and deploy  the **application** in Service Studio, LifeTime and Service Center.</li><li>Change in LifeTime and Service Center the settings of the **application** (such as Site Properties).</li></ul> |
 
-Open and Debug Applications | |
----------|----------
-Assigned as **Default Role** | The user can open and debug all the **modules of the environment’s applications** in Service Studio by using the **Environment > Open in Environment** menu.
-Assigned for a **Team** |The user can open and debug the **modules of the team’s applications** in Service Studio by using the **Environment > Open in Environment** menu.
-Assigned for an **Application** | The user can open and debug the **modules of the application** in Service Studio by using the **Environment > Open in Environment** menu.
+| Open and Debug Applications | |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can open and debug all the **modules of the environment’s applications** in Service Studio by using the **Environment > Open in Environment** menu. |
+| Assigned for a **Team** |The user can open and debug the **modules of the team’s applications** in Service Studio by using the **Environment > Open in Environment** menu. |
+| Assigned for an **Application** | The user can open and debug the **modules of the application** in Service Studio by using the **Environment > Open in Environment** menu. |
 
-Monitor and Add Dependencies * | |
----------|----------
-Assigned as **Default Role** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of all the **environment’s applications**.</li><li>Monitor all the **environment’s applications** and the **environment’s performance**.</li></ul> 
-Assigned for a **Team** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of the **team’s applications**.</li><li>Monitor the **team’s applications**.</li></ul>
-Assigned for an **Application** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of this **application**.</li><li>Monitor the **application**.</li></ul>
+| Monitor and Add Dependencies * | |
+| ---------|---------- |
+| Assigned as **Default Role** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of all the **environment’s applications**.</li><li>Monitor all the **environment’s applications** and the **environment’s performance**.</li></ul> |
+| Assigned for a **Team** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of the **team’s applications**.</li><li>Monitor the **team’s applications**.</li></ul> |
+| Assigned for an **Application** | From the applications for which the user has Change and Deploy permission, the user can: <ul><li>Add dependencies to the public elements of this **application**.</li><li>Monitor the **application**.</li></ul> |
 
 (*) **Monitor and Add Dependencies** permission level is available for environments with Platform Server Release Oct.2019 or later.
 
-List Applications | |
----------|----------
-Assigned as **Default Role** | The user can see all the **environment’s applications** listed in LifeTime and Service Center, but not in Service Studio.
-Assigned for a **Team** | The user can see the **team’s applications** listed in LifeTime and Service Center, but not in Service Studio.
-Assigned for an **Application** | The user can see the **application** listed in LifeTime and Service Center, but not in Service Studio.
+| List Applications | |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can see all the **environment’s applications** listed in LifeTime and Service Center, but not in Service Studio. |
+| Assigned for a **Team** | The user can see the **team’s applications** listed in LifeTime and Service Center, but not in Service Studio. |
+| Assigned for an **Application** | The user can see the **application** listed in LifeTime and Service Center, but not in Service Studio. |
 
-Access * | |
----------|----------
-Assigned as **Default Role** | The user can log in the **environment** but can’t see any of the environment’s applications listed in LifeTime, Service Center or Service Studio.
-Assigned for a **Team** | Same behavior as **No Access** permission level for teams: The user can’t see the **team’s applications** listed in LifeTime, Service Center or Service Studio.
-Assigned for an **Application** | Same behavior as **No Access** permission level for applications: The user can’t see the **application** listed in LifeTime, Service Center or Service Studio.
+| Access * | |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can log in the **environment** but can’t see any of the environment’s applications listed in LifeTime, Service Center or Service Studio. |
+| Assigned for a **Team** | Same behavior as **No Access** permission level for teams: The user can’t see the **team’s applications** listed in LifeTime, Service Center or Service Studio. |
+| Assigned for an **Application** | Same behavior as **No Access** permission level for applications: The user can’t see the **application** listed in LifeTime, Service Center or Service Studio. |
 
 (*) **Access** permission level is available for environments with Platform Server Release Oct.2019 or later.
 
-No Access | |
----------|----------
-Assigned as **Default Role** | The user can’t log in the **environment**. You can't grant application-specific permissions to users that have this permission level in the default role.
-Assigned for a **Team** | The user can’t see the **team’s applications** listed in LifeTime, Service Center or Service Studio, although the user can login in the environment.
-Assigned for an **Application** | The user can’t see the **application** listed in LifeTime, Service Center or Service Studio, although the user can login in the environment.
+| No Access | |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can’t log in the **environment**. You can't grant application-specific permissions to users that have this permission level in the default role. |
+| Assigned for a **Team** | The user can’t see the **team’s applications** listed in LifeTime, Service Center or Service Studio, although the user can login in the environment. |
+| Assigned for an **Application** | The user can’t see the **application** listed in LifeTime, Service Center or Service Studio, although the user can login in the environment. |
 
 ### Specific permissions for an environment
 
-Create Applications | |
----------|----------
-Assigned as **Default Role** | The user can: <ul><li>Create new applications in the **environment** through Service Studio and Service Center (by uploading and publishing).</li><li>Create new applications in **any team** through LifeTime.</li></ul>
-Assigned for a **Team** | The user can create new applications in the **team** through LifeTime.
-Assigned for an **Application** | Not applicable.
+| Create Applications | |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can: <ul><li>Create new applications in the **environment** through Service Studio and Service Center (by uploading and publishing).</li><li>Create new applications in **any team** through LifeTime.</li></ul> |
+| Assigned for a **Team** | The user can create new applications in the **team** through LifeTime. |
+| Assigned for an **Application** | Not applicable. |
 
-Add System Dependencies | |
----------|----------
-Assigned as **Default Role** | In the applications for which the user has Change and Deploy permission, the user can add new dependencies to the public entities of System module. Once these dependencies are added, any user, even without permission to add system dependencies, can use them. The permission doesn't apply to the Users entity. This behavior can be changed using Factory Configuration on Platform Server 11.31.0 or above.
-Assigned for a **Team** | Not applicable.
-Assigned for an **Application** | Not applicable.
+| Add System Dependencies | |
+| ---------|---------- |
+| Assigned as **Default Role** | In the applications for which the user has Change and Deploy permission, the user can add new dependencies to the public entities of System module. Once these dependencies are added, any user, even without permission to add system dependencies, can use them. The permission doesn't apply to the Users entity. This behavior can be changed using Factory Configuration on Platform Server 11.31.0 or above. |
+| Assigned for a **Team** | Not applicable. |
+| Assigned for an **Application** | Not applicable. |
 
 ### Infrastructure-wide permissions
 
-Manage Users and Roles | (applies only to OutSystems Cloud)
----------|----------
-Assigned as **Default Role** | The user can: <ul><li>Add, edit and remove IT users, roles and teams.</li><li>Turn on/off features in Technical Preview.</li></ul>  Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".
-Assigned for a **Team** | Not applicable.
-Assigned for an **Application** | Not applicable.
+| Manage Users and Roles | (applies only to OutSystems Cloud) |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can: <ul><li>Add, edit and remove IT users, roles and teams.</li><li>Turn on/off features in Technical Preview.</li></ul>  Setting this permission ON also sets ON the permission "Manage Teams and Application Roles". |
+| Assigned for a **Team** | Not applicable. |
+| Assigned for an **Application** | Not applicable. |
 
-Manage Infrastructure and Users | (applies only to self-managed infrastructures)
----------|----------
-Assigned as **Default Role** | The user can: <ul><li>Add, edit, remove and switch infrastructure environments.</li><li>Turn on/off features in Technical Preview.</li><li>Add, edit and remove IT users, roles and teams.</li></ul>   Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".
-Assigned for a **Team** | Not applicable.
-Assigned for an **Application** | Not applicable.
+| Manage Infrastructure and Users | (applies only to self-managed infrastructures) |
+| ---------|---------- |
+| Assigned as **Default Role** | The user can: <ul><li>Add, edit, remove and switch infrastructure environments.</li><li>Turn on/off features in Technical Preview.</li><li>Add, edit and remove IT users, roles and teams.</li></ul>   Setting this permission ON also sets ON the permission "Manage Teams and Application Roles". |
+| Assigned for a **Team** | Not applicable. |
+| Assigned for an **Application** | Not applicable. |
 
-Manage Teams and Application Roles | |
----------|----------
-Assigned as **Default Role** |The user can: <ul><li>Add and remove IT users from all the **environment’s teams**.</li><li>Grant and revoke roles to IT users for all the **environment’s applications** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Edit all the **environment’s teams** and access the audit logs.</li></ul>  
-Assigned for a **Team** | The user can: <ul><li>Add and remove IT users from the **team**.</li><li>Grant and revoke roles to IT users for the **team’s applications** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Edit the **team** and access the team's audit logs.</li></ul>
-Assigned for an **Application** | The user can: <ul><li>Grant and revoke roles to IT users for the **application** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Access the application's audit logs.</li></ul>  
+| Manage Teams and Application Roles | |
+| ---------|---------- |
+| Assigned as **Default Role** |The user can: <ul><li>Add and remove IT users from all the **environment’s teams**.</li><li>Grant and revoke roles to IT users for all the **environment’s applications** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Edit all the **environment’s teams** and access the audit logs.</li></ul> |
+| Assigned for a **Team** | The user can: <ul><li>Add and remove IT users from the **team**.</li><li>Grant and revoke roles to IT users for the **team’s applications** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Edit the **team** and access the team's audit logs.</li></ul> |
+| Assigned for an **Application** | The user can: <ul><li>Grant and revoke roles to IT users for the **application** (the user's role must have higher permission levels for the environments than the role being granted).</li><li>Access the application's audit logs.</li></ul> |

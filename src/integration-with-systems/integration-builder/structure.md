@@ -62,7 +62,7 @@ You can filter, define the sort order, and paginate results from invoking Server
 
 Result filtering is available in `Search*` and `Count*` Server Actions. These are the following ways filtering is available:
 
-**BasicFilters (List of BasicFilter)** 
+**BasicFilters (List of BasicFilter)**
 
 You can define simple criteria for filtering. Define each basic filter in the following manner:  
 
@@ -76,7 +76,7 @@ For SharePoint Online, use the `FolderFilter` parameter to filter files by folde
 
 All basic filter parameters are Static Entities, except for the value to search. The available attributes are the attribute names of the external system entity available in a Static Entity. Check the following examples of entity attribute types and operators:
 
-* EntityAttributeType = `DateTime`, `Number`, `Text` 
+* EntityAttributeType = `DateTime`, `Number`, `Text`
 * FilterOperator = `Equal`, `GreaterThan`, `StringContains`, `EndsWith`, `EndsWith_CaseInsensitive`, etc.
 
 <div class="warning" markdown="1">

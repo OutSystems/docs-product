@@ -21,7 +21,6 @@ coverage-type:
 
 # Add Custom Authentication to an Exposed REST API
 
-
 OutSystems allows you to customize the authentication logic used in your exposed REST APIs.
 
 For that, do the following:
@@ -83,9 +82,9 @@ Create an APIKey entity that holds pairs of AppId and Key values. All API reques
 
 1. Create an Excel file to boostrap this Entity with (at least) one record, with the following content:
 
-    AppId | Key
-    ------|-----
-    ghjfxdfAvs596vcGfsvf0ef1 | 6tsdgdjl9fsKDd5zsvnwmdjosDmrufbs93susadLHDvjfhbnwtTRbsnucnrb
+| AppId | Key |
+| ------|----- |
+| ghjfxdfAvs596vcGfsvf0ef1 | 6tsdgdjl9fsKDd5zsvnwmdjosDmrufbs93susadLHDvjfhbnwtTRbsnucnrb |
 
 1. Back in the **Data** tab of Service Studio, right-click the **APIKey** Entity and select **Advanced** > **Update Action to Bootstrap Data from Excel...**
 

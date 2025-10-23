@@ -27,7 +27,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 As a team lead, **AI Mentor Studio** provides you with an overview of the technical debt of organization's technical debt as well as detailed overview of the technical debt of your teams's apps.
 
-From the Apps canvas, you can drill down into the team's problematic modules, and take the necessary steps to reduce the technical debt score for these areas. 
+From the Apps canvas, you can drill down into the team's problematic modules, and take the necessary steps to reduce the technical debt score for these areas.
 
 This guide assumes the following:
 
@@ -94,9 +94,9 @@ The **Findings** section displays all the occurrences of the code pattern. To se
 
 ![Screenshot of the 'Findings' section displaying occurrences of code patterns in AI Mentor Studio](images/use-findings-ams.png "Findings Section")
 
-You can change the status of the findings individually or in bulk. 
+You can change the status of the findings individually or in bulk.
 
-![Screenshot showing how to select multiple findings for bulk status change in AI Mentor Studio](images/bulk-selection-ams.png "Bulk Selection of Findings") 
+![Screenshot showing how to select multiple findings for bulk status change in AI Mentor Studio](images/bulk-selection-ams.png "Bulk Selection of Findings")
 
 After selecting one or multiple findings, you can change the status of the findings depending on your action:
 

@@ -42,7 +42,7 @@ public void MssChangeEndpoint(string ssUri) {
     var client = SoapRequest.GetCurrentClient();
     client.Endpoint.Address = new EndpointAddress(ssUri);
 }
-```        
+```
 
 3\. Quit Visual Studio .NET and, back in Integration Studio, publish the extension by clicking the "1-Click Publish" toolbar icon or by pressing `F5`.
 

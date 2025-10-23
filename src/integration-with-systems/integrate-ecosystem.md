@@ -24,7 +24,6 @@ coverage-type:
 Download the whitepaper version of this document [here](https://www.outsystems.com/1/integrating-outsystems-ecosystem/).
 </div>
 
-
 Developers need the ability to create seamless integration with the full range and scope of the business process management tools, including data sources and core business systems, that your enterprise has developed over the years—as well as keep pace with future developments.
 
 OutSystems provides out-of-the-box capabilities to integrate with external databases such as SQL Server, Oracle, MySQL, PostgreSQL and iDB2, as well as a myriad of enterprise systems of record (SoR), including SAP, Salesforce, Microsoft Dynamics 365, Microsoft Dataverse, and Sharepoint Online. In addition, [OutSystems-supported](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs/Curating_Projects#What_is_a_supported_project.3F) modules, connectors, UI components, and business solutions, are available from the OutSystems [Forge](https://www.outsystems.com/forge/), a repository of reusable, open code.
@@ -37,18 +36,18 @@ In all cases, once an integration has been created and added to your environment
 
 The available integrations include:
 
-*   Enterprise SoR (System of Record) for managing sales and collaboration, including SAP, Salesforce, Microsoft Dynamics, Microsoft Dataverse, and Sharepoint Online 
-*   Web services to both consume and expose [REST](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/REST/Consume_REST_APIs) and [SOAP](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services)
-*   External databases
-*   End-user authentication
-*   DevOps and CI/CD processes and tools for building, deploying, automating, testing, monitoring, and logging
-*   AI and chatbots
+* Enterprise SoR (System of Record) for managing sales and collaboration, including SAP, Salesforce, Microsoft Dynamics, Microsoft Dataverse, and Sharepoint Online
+* Web services to both consume and expose [REST](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/REST/Consume_REST_APIs) and [SOAP](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services)
+* External databases
+* End-user authentication
+* DevOps and CI/CD processes and tools for building, deploying, automating, testing, monitoring, and logging
+* AI and chatbots
 
 There are many other integrations that don’t exactly fit into any particular category, including
 
-*   Augmented reality frameworks
-*   Messaging formats and protocols
-*   IoT gateways
+* Augmented reality frameworks
+* Messaging formats and protocols
+* IoT gateways
 
 This document discusses the wide range of integrations made possible by OutSystems.
 
@@ -78,16 +77,16 @@ Developers provide the location of the Web Services Description Language (WSDL) 
 
 When you consume a SOAP Web Service, OutSystems does the following:
 
-*   Connects to the web service and analyses the methods and structures
-*   Creates the OutSystems actions matching the consumed Web Service methods with the corresponding input and output parameters
-*   Creates the data structures to hold the complex types defined in the WSDL
-*   Maps the XML data types into OutSystems data types
+* Connects to the web service and analyses the methods and structures
+* Creates the OutSystems actions matching the consumed Web Service methods with the corresponding input and output parameters
+* Creates the data structures to hold the complex types defined in the WSDL
+* Maps the XML data types into OutSystems data types
 
 OutSystems translates the methods exposed by a SOAP Web Service into OutSystems actions, with the same semantics as any action created in Service Studio. From a developer’s perspective, there is no difference between invoking a OutSystem action or a method exposed by an external service.
 
 Authentication options are provided without the need of complex extensibility such as basic authentication (a static username and password) or dynamic login for credentials specific to each method that can be specified at runtime.
 
-Once a SOAP web service has been integrated into your app, it can be [exposed](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Exposing_SOAP_Web_Services/Expose_a_SOAP_Web_Service) to make it available to other apps in your OutSystems environment or external web applications. 
+Once a SOAP web service has been integrated into your app, it can be [exposed](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Exposing_SOAP_Web_Services/Expose_a_SOAP_Web_Service) to make it available to other apps in your OutSystems environment or external web applications.
 
 ### Integration extensions for SOAP Web Services
 
@@ -101,10 +100,10 @@ You can integrate your OutSystems applications with REST APIs provided by other 
 
 When importing the REST API, Service Studio does the following:
 
-*   Connects to the web service and analyzes the methods and structures
-*   Creates REST API methods with the corresponding input and output parameters
-*   Creates the structures to hold the corresponding input and output parameters under a new tree element with the REST API name
-*   Maps the REST data types into OutSystems data types
+* Connects to the web service and analyzes the methods and structures
+* Creates REST API methods with the corresponding input and output parameters
+* Creates the structures to hold the corresponding input and output parameters under a new tree element with the REST API name
+* Maps the REST data types into OutSystems data types
 
 OutSystems translates the methods exposed by a REST API into OutSystems actions, with the same semantics as any action created in Service Studio. From a developer’s perspective, there is no difference between invoking an OutSystems method or a method exposed by an external service.
 
@@ -152,18 +151,17 @@ If developers need to customize a SAP connection, calls to SAP remote functions,
 
 Other extensions that use the SAP Extensibility API are also available for download from OutSystems Forge.
 
-
 ## End-user authentication integration
 
-OutSystems automatically includes built-in logic for the following [end-user authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication) methods: 
+OutSystems automatically includes built-in logic for the following [end-user authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication) methods:
 
-*   **Internal** authentication, the default method, stores end user information in the OutSystems database, but not the credentials. Instead, a cryptographic hash function is computed using the credentials—and only its result is stored. When the end user attempts to log in, the hash function is computed again and its result is compared with the database.
-*   **[Active Directory](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_Active_Directory_authentication)** uses your Active Directory to authenticate end users, is available only in self-managed installations.
-*   **[LDAP](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_LDAP_Authentication)**, the Lightweight Directory Access Protocol method, authenticates the end user against your LDAP server, using either LDAP configured for Active Directory or standard LDAP.
-*   **[SAML 2.0](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_SAML_2.0_Authentication)**, Security Assertion Markup Language, is used in both traditional web apps and reactive web apps to authenticate end users with Single Sign-On (SSO) provided by commercial identity provider companies, such as OneLogin and PingFederated. 
-*   **[Azure AD](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_Azure_AD_Authentication)** uses SAML-based authentication to authenticate end users with Single Sign-On (SSO) provided by the Azure AD Identity Provider.
-*   **[Okta](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_Okta_Authentication)** uses SAML-based authentication to authenticate the end users with Single Sign-On (SSO) provided by Okta.
-*   **[IdP Connector](https://www.outsystems.com/forge/component-overview/599/idp)** and[ IdP Mobile](https://www.outsystems.com/forge/component-overview/2044/idp-mobile), community-supported connectors available from the Forge, can be downloaded and modified for use in mobile applications.
+* **Internal** authentication, the default method, stores end user information in the OutSystems database, but not the credentials. Instead, a cryptographic hash function is computed using the credentials—and only its result is stored. When the end user attempts to log in, the hash function is computed again and its result is compared with the database.
+* **[Active Directory](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_Active_Directory_authentication)** uses your Active Directory to authenticate end users, is available only in self-managed installations.
+* **[LDAP](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_LDAP_Authentication)**, the Lightweight Directory Access Protocol method, authenticates the end user against your LDAP server, using either LDAP configured for Active Directory or standard LDAP.
+* **[SAML 2.0](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_SAML_2.0_Authentication)**, Security Assertion Markup Language, is used in both traditional web apps and reactive web apps to authenticate end users with Single Sign-On (SSO) provided by commercial identity provider companies, such as OneLogin and PingFederated.
+* **[Azure AD](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_Azure_AD_Authentication)** uses SAML-based authentication to authenticate end users with Single Sign-On (SSO) provided by the Azure AD Identity Provider.
+* **[Okta](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_Okta_Authentication)** uses SAML-based authentication to authenticate the end users with Single Sign-On (SSO) provided by Okta.
+* **[IdP Connector](https://www.outsystems.com/forge/component-overview/599/idp)** and[IdP Mobile](https://www.outsystems.com/forge/component-overview/2044/idp-mobile), community-supported connectors available from the Forge, can be downloaded and modified for use in mobile applications.
 
 ### Integration extensions for authentication and identity management
 
@@ -179,18 +177,17 @@ OutSystems supports the continuous process of managing applications throughout t
 
 [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle), the OutSystems unified console, provides visibility of all environments in your infrastructure, allowing increased control in the following areas:
 
-*   [IT user and team management](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_IT_Users)
-*   [Security](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Secure_the_Applications)
-*   [Application deployment and configuration](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications)
-*   [Performance monitoring](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot)
-*   [Hotfix development and deployment](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Apply_a_Hotfix)
+* [IT user and team management](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_IT_Users)
+* [Security](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Secure_the_Applications)
+* [Application deployment and configuration](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications)
+* [Performance monitoring](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot)
+* [Hotfix development and deployment](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Apply_a_Hotfix)
 
 #### Performance monitoring
 
 Comprehensive analytics and monitoring tools, built into OutSystems, enable proactive management of application performance to make it easier to detect problems by allowing the identification of performance issues in real-time.
 
 The analytics dashboard in LifeTime covers all aspects of the [end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), based on industry standard indicators of user satisfaction. Developers can detect, troubleshoot, and solve performance issues even before end users report them.
-
 
 ![Screenshot of the Performance Monitoring dashboard in OutSystems showing various performance metrics.](images/performance-monitoring.png "Performance Monitoring Dashboard")
 
@@ -214,20 +211,20 @@ The [Business Activity Monitoring](http://www.outsystems.com/forge/component/132
 
 #### Logging
 
-OutSystems logs everything. Applications are automatically instrumented to create over a dozen types of error logs. LifeTime uses this data for its analytics dashboards, and developers have access to all of these logs, in Service Center, without having to write a single line of code. 
+OutSystems logs everything. Applications are automatically instrumented to create over a dozen types of error logs. LifeTime uses this data for its analytics dashboards, and developers have access to all of these logs, in Service Center, without having to write a single line of code.
 
 ![Screenshot of the Screens Performance report in OutSystems Service Center with detailed metrics.](images/screens-performance-report.png "Screens Performance Report")
 
 These metrics are captured asynchronously at run time, so application performance isn't compromised while creating a constant stream of metrics. Events captured include:
 
-*   Errors in all application layers
-*   Batch processing executions
-*   Web services invocations, both inbound and outbound
-*   Adapters, integration and custom API invocations
-*   Page accesses
-*   Database accesses
-*   External database accesses
-*   Client side screen access times
+* Errors in all application layers
+* Batch processing executions
+* Web services invocations, both inbound and outbound
+* Adapters, integration and custom API invocations
+* Page accesses
+* Database accesses
+* External database accesses
+* Client side screen access times
 
 These logs are stored in a standard database that users can access to build their own dashboards.
 
@@ -239,7 +236,7 @@ For instance, the API can be used to extend the dashboard with business data, su
 
 #### Deployment
 
-LifeTime provides [automated deployment](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications) processes across all environments, from development to production, which simplifies processes and increases overall IT efficiency. 
+LifeTime provides [automated deployment](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications) processes across all environments, from development to production, which simplifies processes and increases overall IT efficiency.
 
 If a problem pops up in a deployed app, it can be debugged in a pre-production environment. When the [hotfix](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Apply_a_Hotfix) has been tested it can then then be deployed to production, with no downtime, and then propagated backwards to previous environments.
 
@@ -247,21 +244,19 @@ If a problem pops up in a deployed app, it can be debugged in a pre-production e
 
 OutSystems built-in monitoring and logging features can be complimented by such third party platforms as Zabbix and HP OpenView.
 
-
 ### CI/CD
 
 Thorough testing is key for any type of software development, and reliable automated testing is crucial for the continual integration/continual deployment paradigm, which requires many tests, frequently performed, all along the CI/CD pipeline.
 
 Every enterprise must find a testing solution for each stage of development, as seen in the figure below.
 
-Typical stages and testing types 
+Typical stages and testing types
 
 ![Diagram illustrating the typical stages and types of testing in a software development lifecycle.](images/typical-stages-and-testing.png "Typical Stages and Testing Types")
 
-OutSystems supports a modern development approach that automatically performs validations regarding factor analysis and impact analysis, alerting developers about conflicts with existing code before new features can be merged. When staging an application to the next environment OutSystems provides feedback about missing dependencies that might cause runtime issues after deployment. 
+OutSystems supports a modern development approach that automatically performs validations regarding factor analysis and impact analysis, alerting developers about conflicts with existing code before new features can be merged. When staging an application to the next environment OutSystems provides feedback about missing dependencies that might cause runtime issues after deployment.
 
 All this is provided automatically, with no need for any scripting.
-
 
 ![Illustration of OutSystems built-in testing capabilities across different stages of development.](images/built-in-testing.png "Built-in Testing Capabilities")
 
@@ -289,9 +284,9 @@ The **[AI Mentor Studio](../monitor-and-troubleshoot/manage-tech-debt/intro.md)*
 
 The **[BDD Testing Framework](https://www.outsystems.com/forge/component-overview/1201/bddframework)**, an OutSystems-supported component available through the Forge, facilitates test automation using [Gherkin](https://www.guru99.com/gherkin-test-cucumber.html) syntax, a human-readable language for structuring and describing an app's expected behaviors in order to perform component tests, including:
 
-*   Unit level tests to map lower-level actions, like core concepts for your application
-*   Service level tests to map higher level actions, where the action itself can either represent or use an API call within your application
-*   End-to-end level tests to map higher-level end-to-end actions, where the action itself can have a tree of dependencies, like a complex business action of your application
+* Unit level tests to map lower-level actions, like core concepts for your application
+* Service level tests to map higher level actions, where the action itself can either represent or use an API call within your application
+* End-to-end level tests to map higher-level end-to-end actions, where the action itself can have a tree of dependencies, like a complex business action of your application
 
 <!-- #### OutSystems automated acceptance testing
 
@@ -313,7 +308,7 @@ These test are handled within the AI Mentor Studio, the BDD framework.
 
 OutSystems provides deployment without any need for scripting. Every time an application is staged to another environment an impact analysis gives feedback about problems that might lead to runtime issues when the app is deployed, such as missing dependencies.
 
-OutSystems [AppShield](https://www.outsystems.com/forge/component-overview/9379/outsystems-appshield), an additional cost add-on, automatically adds additional layers of security during deployment to make mobile applications more resistant to intrusion, tampering, and reverse engineering. AppShield makes it more difficult for attackers to spoof your app, meddle with its security controls, inject malicious code, and run in an insecure environment. 
+OutSystems [AppShield](https://www.outsystems.com/forge/component-overview/9379/outsystems-appshield), an additional cost add-on, automatically adds additional layers of security during deployment to make mobile applications more resistant to intrusion, tampering, and reverse engineering. AppShield makes it more difficult for attackers to spoof your app, meddle with its security controls, inject malicious code, and run in an insecure environment.
 
 #### CI/CD Extensions
 
@@ -323,19 +318,19 @@ The figure below shows the built-in test automation provided by OutSystems and t
 
 Popular third-party automation tools can be integrated into your OutSystems CI/CD workflow, including:
 
-*   [Jenkins](https://www.jenkins.io/), a CI/CD automation tool for monitoring the execution of repeated tasks. It is an open-source software that you can use to run with any operating system, and it offers several built-in plugins for building CI/CD pipelines. With Jenkins CI/CD server, you can automate the various stages of your delivery pipeline.
-*   [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), a CI/CD automation tool that covers the entire application lifecycle, providing version control, reporting, requirements management, project management, automated builds, testing, and release management capabilities.
-*   [Selenium](https://www.selenium.dev/), a portable software testing framework for web applications that provides a record/playback tool for authoring tests without learning a test scripting language. It also provides a test domain-specific language (Selenese) to write tests in many popular programming languages, including Java, C#, Groovy, Perl, PHP, Python, and Ruby.
-*   [Applitools](https://applitools.com/), software designed to test and monitor your app's UI as part of your CI/CD process. It monitors critical functional and visual aspects of any web, mobile, and native app in a fully automated way.
-*   [Browserstack](https://www.browserstack.com/), a cloud web and mobile testing platform that enables developers to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices, without requiring users to install or maintain an internal lab of virtual machines, devices or emulators.
-*   [Appium](http://appium.io/), an open-source automation tool, where you can run scripts and test native, mobile, web, and hybrid applications on Android or iOS using a web driver.
-*   [Tricentis Tosca](https://www.tricentis.com/) used to automate end-to-end testing for applications. It combines multiple aspects of software testing, such as test case design, test automation, test data design and generation, and analytics to test GUIs and APIs.
-*   [SauceLabs](https://saucelabs.com/), allows users to run tests in the cloud, providing a comprehensive test infrastructure for automated and manual testing of desktop and mobile applications using Selenium, Appium, and JavaScript unit testing frameworks. It also provides a secure testing protocol, Sauce Connect, for testing applications behind customer firewalls.
-*   [ElasticSearch](https://www.elastic.co/pt/), for monitoring and analytics, ElasticSearch is the most popular enterprise search engine that provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
+* [Jenkins](https://www.jenkins.io/), a CI/CD automation tool for monitoring the execution of repeated tasks. It is an open-source software that you can use to run with any operating system, and it offers several built-in plugins for building CI/CD pipelines. With Jenkins CI/CD server, you can automate the various stages of your delivery pipeline.
+* [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), a CI/CD automation tool that covers the entire application lifecycle, providing version control, reporting, requirements management, project management, automated builds, testing, and release management capabilities.
+* [Selenium](https://www.selenium.dev/), a portable software testing framework for web applications that provides a record/playback tool for authoring tests without learning a test scripting language. It also provides a test domain-specific language (Selenese) to write tests in many popular programming languages, including Java, C#, Groovy, Perl, PHP, Python, and Ruby.
+* [Applitools](https://applitools.com/), software designed to test and monitor your app's UI as part of your CI/CD process. It monitors critical functional and visual aspects of any web, mobile, and native app in a fully automated way.
+* [Browserstack](https://www.browserstack.com/), a cloud web and mobile testing platform that enables developers to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices, without requiring users to install or maintain an internal lab of virtual machines, devices or emulators.
+* [Appium](http://appium.io/), an open-source automation tool, where you can run scripts and test native, mobile, web, and hybrid applications on Android or iOS using a web driver.
+* [Tricentis Tosca](https://www.tricentis.com/) used to automate end-to-end testing for applications. It combines multiple aspects of software testing, such as test case design, test automation, test data design and generation, and analytics to test GUIs and APIs.
+* [SauceLabs](https://saucelabs.com/), allows users to run tests in the cloud, providing a comprehensive test infrastructure for automated and manual testing of desktop and mobile applications using Selenium, Appium, and JavaScript unit testing frameworks. It also provides a secure testing protocol, Sauce Connect, for testing applications behind customer firewalls.
+* [ElasticSearch](https://www.elastic.co/pt/), for monitoring and analytics, ElasticSearch is the most popular enterprise search engine that provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
 
 ### OutSystems CI/CD pipeline accelerator
 
-With the [outsystems-pipeline](https://github.com/OutSystems/outsystems-pipeline), an open-source accelerator developed on top of real world experience, your developers can extend the built-in capabilities of LifeTime, with such features as governance over which applications and environments you are authorized to manipulate or the built-in impact analysis that simplifies correctly deploying complex application portfolios across environments. 
+With the [outsystems-pipeline](https://github.com/OutSystems/outsystems-pipeline), an open-source accelerator developed on top of real world experience, your developers can extend the built-in capabilities of LifeTime, with such features as governance over which applications and environments you are authorized to manipulate or the built-in impact analysis that simplifies correctly deploying complex application portfolios across environments.
 
 This accelerator includes Python scripts built on top of the LifeTime APIs, pipeline templates, and documentation to simplify integration with any CI/CD platform, including [Jenkins](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Jenkins) and [Azure DevOps](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Azure-DevOps), to build an OutSystems pipeline.
 
@@ -347,9 +342,9 @@ Developers and architects can use OutSystems to create new products and services
 
 OutSystems users and developers can enhance applications with three main aspects of AI:
 
-*   **[Conversational experiences](https://www.outsystems.com/evaluation-guide/how-do-i-create-chat-and-voice-enabled-apps/)** to improve engagement in applications by allowing users to interact in their own natural language. These experiences are part of multi-channel chat and voice interfaces and in-device voice assistant integration.
-*   **[Cognitive services](https://www.outsystems.com/evaluation-guide/how-do-i-use-cognitive-services-to-create-ai-enabled-apps/)** to use intelligent algorithms that see, hear, speak, understand, and interpret language and voice. These cognitive services operate on unstructured data to provide a solution to business problems that regular development algorithms can’t solve. 
-*   **[Custom machine learning](https://www.outsystems.com/evaluation-guide/how-do-i-add-predictive-capabilities-powered-by-custom-machine-learning-models/)** use existing data to provide predictive capabilities, automating decisions in business processes, or improving application logic. Unlike cognitive services, which rely on prebuilt models for predefined use cases, custom machine learning models need to be trained and tested with business data. 
+* **[Conversational experiences](https://www.outsystems.com/evaluation-guide/how-do-i-create-chat-and-voice-enabled-apps/)** to improve engagement in applications by allowing users to interact in their own natural language. These experiences are part of multi-channel chat and voice interfaces and in-device voice assistant integration.
+* **[Cognitive services](https://www.outsystems.com/evaluation-guide/how-do-i-use-cognitive-services-to-create-ai-enabled-apps/)** to use intelligent algorithms that see, hear, speak, understand, and interpret language and voice. These cognitive services operate on unstructured data to provide a solution to business problems that regular development algorithms can’t solve.
+* **[Custom machine learning](https://www.outsystems.com/evaluation-guide/how-do-i-add-predictive-capabilities-powered-by-custom-machine-learning-models/)** use existing data to provide predictive capabilities, automating decisions in business processes, or improving application logic. Unlike cognitive services, which rely on prebuilt models for predefined use cases, custom machine learning models need to be trained and tested with business data.
 
 With pre-built AI components for common use cases and connectors available from the Forge, OutSystems makes it easy for developers to add AI to their apps.
 
@@ -357,12 +352,12 @@ With pre-built AI components for common use cases and connectors available from 
 
 Through OutSystems Forge, you can access connectors to multiple cognitive  services that reduce the time and effort required to build chatbots, add  language analysis to apps, and weave decision optimization, predictive intelligence, and machine learning and AI models throughout your final products. Among the available OutSystems-supported connectors are:
 
-*   **[Azure QnA Maker Connector](https://www.outsystems.com/forge/component-overview/6181/azure-qna-maker-connector)** to a cloud-based API service that answers natural language questions by matching them with the best possible answer from an organization’s knowledge base for a virtual assistant or a chatbot, among others
-*   **[Azure LUIS Connector](https://www.outsystems.com/forge/component-overview/5737/azure-luis-connector)** to a cloud-based API service using the cloud-based Azure Language Understanding (LUIS) to apply custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning and pull out relevant, detailed information
-*   **[Azure Cognitive Services Connector](https://www.outsystems.com/forge/component-overview/1428/azure-cognitive-services-connector)** to enable users to have natural and contextual interactions with applications using Azure Cognitive Services
-*   **[Azure Bot Framework Connector](https://www.outsystems.com/forge/component-overview/5570/azure-bot-framework-connector)** to build bots that interact with users on websites, apps, Cortana, Microsoft Teams, Skype, Slack, and Facebook Messenger
-*   **[Dialogflow Connector](https://www.outsystems.com/forge/component-overview/2306/dialogflow-connector)** to the Google Cloud platform to build voice and text-based conversational apps for user interaction for chatbots and IoT devices, among others
-*   **[Azure ML Connector](https://www.outsystems.com/forge/component-overview/5657/azure-ml-connector)** to enables communication with an Azure Machine Learning Score Model in real time to return prediction results obtained from predictive experiments created with the tools provided by Microsoft Azure Machine Learning.
+* **[Azure QnA Maker Connector](https://www.outsystems.com/forge/component-overview/6181/azure-qna-maker-connector)** to a cloud-based API service that answers natural language questions by matching them with the best possible answer from an organization’s knowledge base for a virtual assistant or a chatbot, among others
+* **[Azure LUIS Connector](https://www.outsystems.com/forge/component-overview/5737/azure-luis-connector)** to a cloud-based API service using the cloud-based Azure Language Understanding (LUIS) to apply custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning and pull out relevant, detailed information
+* **[Azure Cognitive Services Connector](https://www.outsystems.com/forge/component-overview/1428/azure-cognitive-services-connector)** to enable users to have natural and contextual interactions with applications using Azure Cognitive Services
+* **[Azure Bot Framework Connector](https://www.outsystems.com/forge/component-overview/5570/azure-bot-framework-connector)** to build bots that interact with users on websites, apps, Cortana, Microsoft Teams, Skype, Slack, and Facebook Messenger
+* **[Dialogflow Connector](https://www.outsystems.com/forge/component-overview/2306/dialogflow-connector)** to the Google Cloud platform to build voice and text-based conversational apps for user interaction for chatbots and IoT devices, among others
+* **[Azure ML Connector](https://www.outsystems.com/forge/component-overview/5657/azure-ml-connector)** to enables communication with an Azure Machine Learning Score Model in real time to return prediction results obtained from predictive experiments created with the tools provided by Microsoft Azure Machine Learning.
 
 ### Chatbots and voice-enabled apps
 
@@ -370,18 +365,18 @@ OutSystems offers chatbot components and language analysis for building and addi
 
 #### Chatbots
 
-*   **[OutSystems.AI Chatbot](https://www.outsystems.com/forge/component-overview/5886/chatbot-web)**, an OutSystems-supported component available from the Forge, can be used by developers to build, connect, deploy, and manage intelligent bots that interact naturally with users, making it much easier to implement rich conversational experiences in an app. OutSystems.AI uses Azure services to implement common patterns for chatbots, and includes a chatbot interface, a webhook template that allows quicker customization of the bot response logic, interactive cards for adding clickable thumbnail images, attachments, and buttons to automatic responses, and integration with text and speech analysis.
-*   **[Azure Bot Framework Connector](https://www.outsystems.com/forge/component-overview/5570/azure-bot-framework-connector)**, an OutSystems-supported connector available from the Forge, enables easy connections to the Microsoft LUIS Connector, Azure QnA Maker, and the [Azure Bot Framework](https://www.outsystems.com/forge/component-overview/5570/azure-bot-framework-connector), allowing developers to use these capabilities in the OutSystems IDE and using the OutSystems visual language.  
-*   **[Dialogflow](https://www.outsystems.com/forge/component-overview/2306/api-ai-connector)**,  an OutSystems-supported connector available from the Forge, is used to build engaging voice and text-based conversational interfaces, such as voice apps and chatbots. It can be integrated with multiple channels to increase interactions and reach more customers. Some of the available channels are Google Assistant, Amazon Alexa, Facebook Messenger, and other popular platforms and devices.
+* **[OutSystems.AI Chatbot](https://www.outsystems.com/forge/component-overview/5886/chatbot-web)**, an OutSystems-supported component available from the Forge, can be used by developers to build, connect, deploy, and manage intelligent bots that interact naturally with users, making it much easier to implement rich conversational experiences in an app. OutSystems.AI uses Azure services to implement common patterns for chatbots, and includes a chatbot interface, a webhook template that allows quicker customization of the bot response logic, interactive cards for adding clickable thumbnail images, attachments, and buttons to automatic responses, and integration with text and speech analysis.
+* **[Azure Bot Framework Connector](https://www.outsystems.com/forge/component-overview/5570/azure-bot-framework-connector)**, an OutSystems-supported connector available from the Forge, enables easy connections to the Microsoft LUIS Connector, Azure QnA Maker, and the [Azure Bot Framework](https://www.outsystems.com/forge/component-overview/5570/azure-bot-framework-connector), allowing developers to use these capabilities in the OutSystems IDE and using the OutSystems visual language.  
+* **[Dialogflow](https://www.outsystems.com/forge/component-overview/2306/api-ai-connector)**,  an OutSystems-supported connector available from the Forge, is used to build engaging voice and text-based conversational interfaces, such as voice apps and chatbots. It can be integrated with multiple channels to increase interactions and reach more customers. Some of the available channels are Google Assistant, Amazon Alexa, Facebook Messenger, and other popular platforms and devices.
 
 ### Virtual private assistants
 
 OutSystems provides developers with tools to integrate the following VPAs into their applications:
 
-*   **Siri**, Apple’s virtual assistant, can be integrated into OutSystems apps using the community-supported [Siri Shortcuts](https://www.outsystems.com/evaluation-guide/how-do-i-create-chat-and-voice-enabled-apps/#5) plug-in, available from the Forge, to develop seamless interaction with Apple devices and their built-in applications.
-*   **Google Assistant** uses a user's voice to trigger and complete activities. [Dialogflow](https://www.outsystems.com/forge/component-overview/2306/api-ai-connector), an OutSystems-supported connector available from the Forge, can be used to build Google-based voice interaction.
-*   **Alexa**, Amazon’s cloud-based voice service, can be integrated into OutSystems apps using the community-supported [Alexa](https://www.outsystems.com/forge/component-overview/2203/alexa) component, available from the Forge, to build natural voice experiences and intuitive interactions with the Alexa-equipped devices.
-*   **Cortana,** Microsoft’s digital assistant, can be integrated into OutSystems apps using the OutSystems-supported [Azure Bot Framework](https://www.outsystems.com/forge/component-overview/5570/azure-bot-framework-connector), available from the Forge, to build a speech bot, register it, and define your Cortana channel.
+* **Siri**, Apple’s virtual assistant, can be integrated into OutSystems apps using the community-supported [Siri Shortcuts](https://www.outsystems.com/evaluation-guide/how-do-i-create-chat-and-voice-enabled-apps/#5) plug-in, available from the Forge, to develop seamless interaction with Apple devices and their built-in applications.
+* **Google Assistant** uses a user's voice to trigger and complete activities. [Dialogflow](https://www.outsystems.com/forge/component-overview/2306/api-ai-connector), an OutSystems-supported connector available from the Forge, can be used to build Google-based voice interaction.
+* **Alexa**, Amazon’s cloud-based voice service, can be integrated into OutSystems apps using the community-supported [Alexa](https://www.outsystems.com/forge/component-overview/2203/alexa) component, available from the Forge, to build natural voice experiences and intuitive interactions with the Alexa-equipped devices.
+* **Cortana,** Microsoft’s digital assistant, can be integrated into OutSystems apps using the OutSystems-supported [Azure Bot Framework](https://www.outsystems.com/forge/component-overview/5570/azure-bot-framework-connector), available from the Forge, to build a speech bot, register it, and define your Cortana channel.
 
 ### Cognitive services to create AI-enabled apps
 
@@ -391,19 +386,19 @@ Connectors from the OutSystems Forge enable developers and users access to cogni
 
 Language services are used for speech recognition, intent recognition, transcription, synthesization, and content and sentiment analysis. These connectors and components are available from OutSystems Forge for accessing language analysis:
 
-*   **[OutSystems.AI Language Analysis](https://www.outsystems.com/forge/component-overview/5877/outsystems-ai-language-analysis)**, an OutSystems-supported connector available from the Forge, is a set of pre-built services that developers can add to applications to determine customer sentiment, needs, and issues, and to accelerate business processes by receiving text as an input parameter for sentiment analysis, key phrase extraction, entities detection, translation, language detection, spell check, and speech-to-text conversion.
-*   **[Azure Cognitive Services Connector](https://www.outsystems.com/forge/component-overview/1428/azure-cognitive-services-connector)**, an OutSystems-supported connector available from the Forge, is used to access services for speech and text from the OutSystems IDE and add them to their apps, including speech transcription, custom speech service, speaker verification, speaker identification, and text to speech conversion.
-*   **[IBM Watson Services](https://www.outsystems.com/forge/component-overview/2300/ibm-watson-services)**, an OutSystems-supported connector available from the Forge, converts spoken audio into text or written text into natural sounding audio, enabling the use of voice for verification, or adding speaker recognition to an app, all in a variety of languages and voices.
-*   **[OutSystems.AI Document Processor](https://www.outsystems.com/forge/component-overview/8615/outsystems-ai-document-processor-reactive)**, a community-supported component available from the Forge, is used to quickly capture and qualify document data, identify and classify important account-related documents, and transform forms into usable data, including form recognition to identify and extract text, key/value pairs and table data from form documents, receipt analyzer to identify and extract key information from sales receipts (using the [Azure Cognitive Services Connector](https://www.outsystems.com/forge/component-overview/1428/azure-cognitive-services-connector)), and layout analysis, (using [this service](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/form-recognizer/)) to extract text and table structure using high-definition optical character recognition (OCR). 
+* **[OutSystems.AI Language Analysis](https://www.outsystems.com/forge/component-overview/5877/outsystems-ai-language-analysis)**, an OutSystems-supported connector available from the Forge, is a set of pre-built services that developers can add to applications to determine customer sentiment, needs, and issues, and to accelerate business processes by receiving text as an input parameter for sentiment analysis, key phrase extraction, entities detection, translation, language detection, spell check, and speech-to-text conversion.
+* **[Azure Cognitive Services Connector](https://www.outsystems.com/forge/component-overview/1428/azure-cognitive-services-connector)**, an OutSystems-supported connector available from the Forge, is used to access services for speech and text from the OutSystems IDE and add them to their apps, including speech transcription, custom speech service, speaker verification, speaker identification, and text to speech conversion.
+* **[IBM Watson Services](https://www.outsystems.com/forge/component-overview/2300/ibm-watson-services)**, an OutSystems-supported connector available from the Forge, converts spoken audio into text or written text into natural sounding audio, enabling the use of voice for verification, or adding speaker recognition to an app, all in a variety of languages and voices.
+* **[OutSystems.AI Document Processor](https://www.outsystems.com/forge/component-overview/8615/outsystems-ai-document-processor-reactive)**, a community-supported component available from the Forge, is used to quickly capture and qualify document data, identify and classify important account-related documents, and transform forms into usable data, including form recognition to identify and extract text, key/value pairs and table data from form documents, receipt analyzer to identify and extract key information from sales receipts (using the [Azure Cognitive Services Connector](https://www.outsystems.com/forge/component-overview/1428/azure-cognitive-services-connector)), and layout analysis, (using [this service](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/form-recognizer/)) to extract text and table structure using high-definition optical character recognition (OCR).
 
 #### Vision Services
 
 Vision services include image-processing algorithms that intelligently identify, caption, index, and moderate pictures and videos. With the help of the following Forge components and connectors, developers can make it possible to understand the content of an image, classify it, detect individual objects and faces within images, and read printed words within the images (OCR):
 
-*   **[Azure Cognitive Services Connector](https://www.outsystems.com/forge/component-overview/1428/azure-cognitive-services-connector)**, an OutSystems-supported component available from the Forge, can be used to add Microsoft Azure Vision Services into the OutSystems IDE for image analysis, recognition of handwritten or printed text in image, recognition of celebrities and landmarks, thumbnail generation, face verification, face detection, emotion recognition, and custom model for image recognition.
-*   **[Google Cloud Vision OCR](https://www.outsystems.com/forge/component-overview/1572/googlecloudvisionocr)**, a community-supported component available from the Forge, enables developers to use Google Cloud Vision in the OutSystems IDE to extract text, identify text in an image, and get specific data types in image.
-*   **[IBM Watson Services](https://www.outsystems.com/forge/component-overview/2300/ibm-watson-services)**, a community-supported component available from the Forge, enables developers to use IBM Watson Visual Recognition Services for facial analysis and image recognition.
-*   **[Amazon Rekognition Face Matching](https://www.outsystems.com/forge/component-overview/4113/amazon-rekognition-face-matching)**, a community-supported component available from the Forge, enables developers to use AWS Recognition capabilities in the OutSystems IDE for face matching and adding faces to collections.
+* **[Azure Cognitive Services Connector](https://www.outsystems.com/forge/component-overview/1428/azure-cognitive-services-connector)**, an OutSystems-supported component available from the Forge, can be used to add Microsoft Azure Vision Services into the OutSystems IDE for image analysis, recognition of handwritten or printed text in image, recognition of celebrities and landmarks, thumbnail generation, face verification, face detection, emotion recognition, and custom model for image recognition.
+* **[Google Cloud Vision OCR](https://www.outsystems.com/forge/component-overview/1572/googlecloudvisionocr)**, a community-supported component available from the Forge, enables developers to use Google Cloud Vision in the OutSystems IDE to extract text, identify text in an image, and get specific data types in image.
+* **[IBM Watson Services](https://www.outsystems.com/forge/component-overview/2300/ibm-watson-services)**, a community-supported component available from the Forge, enables developers to use IBM Watson Visual Recognition Services for facial analysis and image recognition.
+* **[Amazon Rekognition Face Matching](https://www.outsystems.com/forge/component-overview/4113/amazon-rekognition-face-matching)**, a community-supported component available from the Forge, enables developers to use AWS Recognition capabilities in the OutSystems IDE for face matching and adding faces to collections.
 
 ### Custom machine learning
 

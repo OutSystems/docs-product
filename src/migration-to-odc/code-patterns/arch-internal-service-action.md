@@ -61,4 +61,3 @@ Solve this pattern by doing the following:
 1. Publish the module.
 
 1. In the consuming module, replace the reference to the original Service action with the new Server action.
-

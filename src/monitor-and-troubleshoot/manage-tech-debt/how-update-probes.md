@@ -25,7 +25,7 @@ To check the current version of your AI Mentor Studio probes, click the **Help**
 
 </div>
 
-If you have [**Full Control** permissions assigned as a default role](how-works.md#update-probes) for the code analysis environment, the following message is displayed when an updated version of the probes is available: 
+If you have [**Full Control** permissions assigned as a default role](how-works.md#update-probes) for the code analysis environment, the following message is displayed when an updated version of the probes is available:
 
 ![Notification message in AI Mentor Studio indicating an update is available for users with Full Control permissions](images/probes-update-full-ams.png "AI Mentor Studio Full Control Update Notification")
 
@@ -71,4 +71,3 @@ To update the AI Mentor Studio's probes, follow these steps:
     1. Select **Choose File** and select the Probe file.
     1. Select **1-Click Publish**.
     1. Validate if the Solution is successfully published by checking for a `Done: The solution was successfully published message`.
-

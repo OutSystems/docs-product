@@ -39,7 +39,7 @@ To configure Okta authentication, follow these steps:
 1. On the **Create a new app integration** screen, select the following options and click **Next**.
 
     * **Sign-in method**: OIDC - OpenID Connect
-    
+
     * **Application type**: Web Application
 
     ![Screenshot of Okta's 'Create a new app integration' screen with 'OIDC - OpenID Connect' and 'Web Application' selected](images/select-app-type-ok.png "Selecting Application Type in Okta")

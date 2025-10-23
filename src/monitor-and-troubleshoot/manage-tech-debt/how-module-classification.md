@@ -25,7 +25,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 </div>
 
-You can change a module's classification in the canvas. However, by changing the classification of a module, the classification of the app may be affected. OutSystems AI model receives this reclassification. 
+You can change a module's classification in the canvas. However, by changing the classification of a module, the classification of the app may be affected. OutSystems AI model receives this reclassification.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ To change a module’s classification, follow these steps:
 
     ![Screenshot of AI Mentor Studio canvas showing module classification options](images/module-classification-ams.png "AI Mentor Studio Canvas")
 
-1. Select the module you want to reclassify, and in the module details area, from the dropdown, select the new architecture layer. 
+1. Select the module you want to reclassify, and in the module details area, from the dropdown, select the new architecture layer.
 
     ![Image depicting the selection of a module for reclassification in AI Mentor Studio](images/select-module-to-reclassifiy-ams.png "Selecting a Module to Reclassify")
 
@@ -51,6 +51,6 @@ To change a module’s classification, follow these steps:
 
       ![Popup window in AI Mentor Studio confirming the change of module classification](images/change-module-classification-ams.png "Change Module Classification Popup")
 
-1. Click **Yes, change it**. 
+1. Click **Yes, change it**.
 
 When you reclassify a module, the technical debt score related to architecture code patterns is recalculated immediately.

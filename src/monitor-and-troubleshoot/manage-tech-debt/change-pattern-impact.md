@@ -26,7 +26,7 @@ Before changing a code pattern's impact level, consider the impact on your infra
 
 AI Mentor Studio calculates your technical debt considering each code pattern's specific weight and the number of findings of that pattern. For more information, see [how AI Mentor Studio calculates and shows technical debt](tech-debt-formula.md).
 
-The predefined weight for each code pattern may not always fit your organization's needs. To allow you to manage your specific technical debt priorities and best practices, you can customize the weight each code pattern has on your total technical debt. 
+The predefined weight for each code pattern may not always fit your organization's needs. To allow you to manage your specific technical debt priorities and best practices, you can customize the weight each code pattern has on your total technical debt.
 
 The weight of a code pattern is defined by the **Impact** level you choose in the **Maintenance** area of AI Mentor Studio. The impact levels go from None to Highest. A code pattern whose impact is defined as None will not be considered for the overall technical debt calculation, but the findings will still be counted. The **Status** of a code pattern tells you if its weight has been customized or not. If the status is set as Customized, the pattern's predefined impact level has been changed; If the status is set as Default, the pattern has the impact level predefined by AI Mentor Studio.
 
@@ -34,7 +34,7 @@ The weight of a code pattern is defined by the **Impact** level you choose in th
 
 ## Change the impact level of a code pattern
 
-To change the impact level of a code pattern on your total technical debt, follow these steps:	
+To change the impact level of a code pattern on your total technical debt, follow these steps:
 
 1. Access AI Mentor Studio, and go to **Maintenance** > **Code Patterns**.
 
@@ -46,7 +46,7 @@ To change the impact level of a code pattern on your total technical debt, follo
 
     <div class="info" markdown="1">
 
-    Select the magnifying glass icon on the left of each code pattern name to know more about that pattern. 
+    Select the magnifying glass icon on the left of each code pattern name to know more about that pattern.
 
     </div>
 
@@ -61,5 +61,3 @@ To change the impact level of a code pattern on your total technical debt, follo
 You can change the impact level of a code pattern at any point. To revert to the default option, select the default level from the **Impact** dropdown.
 
 </div>
-
-

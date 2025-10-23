@@ -63,15 +63,15 @@ To rename an environment on an OutSystems Cloud infrastructure, follow these ste
 
     ![Screenshot of the Customer Portal with the Platform menu item selected](images/platform-cp.png "Customer Portal")
 
-1. On the **Environments** tab, select the **Edit Name** option for the environment you want to rename. 
+1. On the **Environments** tab, select the **Edit Name** option for the environment you want to rename.
 
     ![Screenshot of the Environments section displaying all environments](images/environments-cp.png "Environments Customer Portal")
 
-1. In the **Edit Environment** popup, enter the new environment name and click **Save**. 
+1. In the **Edit Environment** popup, enter the new environment name and click **Save**.
 
     ![Screenshot of the Edit Environments popup](images/edit-environ-cp.png "Edit Environments popup")
 
-1. In the **Action Confirmation** popup, enter the reason for the change and click **Confirm Action**. 
+1. In the **Action Confirmation** popup, enter the reason for the change and click **Confirm Action**.
 
     ![Screenshot of the Action Confirmation popup](images/action-confirm-cp.png "Action Confirmation popup")
 
@@ -79,21 +79,21 @@ The new environment name is updated in your Customer Portal and Lifetime.
 
 ### Rename an environment in an OutSystems self-managed infrastructure { #rename-environments-self-mng }
 
-To rename an environment on a self-managed infrastructure, follow these steps: 
+To rename an environment on a self-managed infrastructure, follow these steps:
 
 1. Log into the Customer Portal and select the **Platform** menu item.
 
     ![Screenshot of the Customer Portal with the Platform menu item selected](images/platform-self-man-cp.png "Customer Portal")
 
-1. On the **Environments** tab, select the **Edit Name** option for the environment you want to rename. 
+1. On the **Environments** tab, select the **Edit Name** option for the environment you want to rename.
 
     ![Screenshot of the Environments section displaying all environments](images/edit-name-cp.png "Environments Customer Portal")
 
-1. In the **Edit Environment** popup, enter the new environment name and click **Save**. 
+1. In the **Edit Environment** popup, enter the new environment name and click **Save**.
 
     ![Screenshot of the Edit Environments popup](images/edit-envir-self-cp.png "Edit Environments popup")
 
-1. In the **Action Confirmation** popup, enter the reason for the change and click **Confirm Action**. 
+1. In the **Action Confirmation** popup, enter the reason for the change and click **Confirm Action**.
 
     ![Screenshot of the Action Confirmation popup](images/action-confirm-self-cp.png "Action Confirmation popup")
 

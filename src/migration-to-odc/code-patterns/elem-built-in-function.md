@@ -31,9 +31,9 @@ You must solve this pattern in ODC, after proceeding with the code conversion to
 
 Depending on the scenario, do one of the following:
 
-  * If the built-in function functionality can be [achieved with a manual transformation](#manual-transformation), implement the changes in your ODC assets.
+* If the built-in function functionality can be [achieved with a manual transformation](#manual-transformation), implement the changes in your ODC assets.
 
-  * If the built-in function functionality is [incompatible with ODC architecture](#incompatible), rethink your use case considering ODC architecture.
+* If the built-in function functionality is [incompatible with ODC architecture](#incompatible), rethink your use case considering ODC architecture.
 
 ## Built-in functions changes in ODC { #changes }
 
@@ -91,18 +91,19 @@ Under the **Math** category, you can't use the **Round** built-in function insid
 
 Following are built-in functions that are no longer available in ODC. You must revisit your code and delete these built-in functions. The information is divided by category and lists the action name and why they can't be transformed.
 
-##### Environment 
-The following list provides information on built-in actions in the environment category that aren't available in ODC. You can't apply manual transformations. 
+##### Environment
 
-*  **GetApplicationServerType:** This function was used in O10 or earlier to check whether the server was .NET or Java but the server type in ODC is always the same. So this action is not necessary.
-*  **GetDatabaseProvider:** In ODC, the DB engine is always Aurora Postgres so this function is no longer required.
+The following list provides information on built-in actions in the environment category that aren't available in ODC. You can't apply manual transformations.
+
+* **GetApplicationServerType:** This function was used in O10 or earlier to check whether the server was .NET or Java but the server type in ODC is always the same. So this action is not necessary.
+* **GetDatabaseProvider:** In ODC, the DB engine is always Aurora Postgres so this function is no longer required.
 * **GetEntryEspaceId:** In ODC, apps are run in containers so this function is not needed.
 * **GetObsoleteTenantId:** ODC doesn't support multi-tenant applications so this function is not needed.
-*  **GetOwnerEspaceIdentifier:** ODC doesn't have system tables so this function is not needed.
+* **GetOwnerEspaceIdentifier:** ODC doesn't have system tables so this function is not needed.
 
 ##### URL
 
-The following list provides information on built-in actions in the URL category that aren't available in ODC. However, you can't apply manual transformations. 
+The following list provides information on built-in actions in the URL category that aren't available in ODC. However, you can't apply manual transformations.
 
 * **AddPersonalAreaToURLPath:** ODC doesn't support personal areas.
 * **GetPersonalAreaName:** ODC doesn't support personal areas.

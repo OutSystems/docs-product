@@ -37,6 +37,6 @@ You must solve this pattern in ODC after proceeding with the code conversion to 
 
 ### Solve in ODC
 
-After converting your app to ODC, inspect the Invalid Expression errors in TrueChange to find out where you're using aggregates or SQL nodes that cannot be identified. If you confirm your asset has those errors because it uses the pattern described on this page, adjust your logic to ensure the aggregate or SQL node runs before it is referenced. Make sure aggregates and SQL nodes are only referenced in the same scope where they're declared. 
+After converting your app to ODC, inspect the Invalid Expression errors in TrueChange to find out where you're using aggregates or SQL nodes that cannot be identified. If you confirm your asset has those errors because it uses the pattern described on this page, adjust your logic to ensure the aggregate or SQL node runs before it is referenced. Make sure aggregates and SQL nodes are only referenced in the same scope where they're declared.
 
 ![Screenshot of a logic flow on an ODC app showing an aggregate used inside its scope.](images/aggregate-scope-fixed-odcs.png "Logic flow on an ODC app showing an aggregate used inside its scope.")

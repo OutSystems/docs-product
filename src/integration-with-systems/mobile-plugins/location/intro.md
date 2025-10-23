@@ -23,7 +23,7 @@ Use the Location Plugin to enable an application to access the GPS capabilities 
 
 See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
 
-</div> 
+</div>
 
 ## Adding necessary permissions (Property List Keys) for Location (iOS only)
 
@@ -78,9 +78,9 @@ To check if the device location changed, you can drag the **LocationTracker** bl
 
 ## Use the WatchPosition action to update location in real time
 
-After adding the **LocationTracker** block in your app, you need to use the **WatchPosition** action to trigger and start monitoring the device position (5). Use the **WatchPosition** action in the flow that suits your app use case. The inputs are the same as in **GetLocation** action to update the device location in real time. 
+After adding the **LocationTracker** block in your app, you need to use the **WatchPosition** action to trigger and start monitoring the device position (5). Use the **WatchPosition** action in the flow that suits your app use case. The inputs are the same as in **GetLocation** action to update the device location in real time.
 
-As an output, this **WatchPosition** action returns a **WatchId**, an identifier that you can use in the **ClearWatch** action to stop the process of actively updating the device position. 
+As an output, this **WatchPosition** action returns a **WatchId**, an identifier that you can use in the **ClearWatch** action to stop the process of actively updating the device position.
 
 ![Illustration of using the WatchPosition action to update device location in real time in Service Studio](images/watch-position-action-ss.png "WatchPosition Action")
 
@@ -95,7 +95,6 @@ At last, you need to create a custom action and use it as the **Handler** of the
 The app with the Location Plugin can run on many Android or iOS devices, with different hardware and configurations. To ensure a good user experience and prevent the app from crashing, handle the errors within the app.
 
 Here is the list of actions you can use to handle the errors. Use these actions with the **If** nodes to check for errors and control how the app works.
-
 
 | Variable    | Action              | Description                                                                    |
 | ----------- | ------------------- | ------------------------------------------------------------------------------ |

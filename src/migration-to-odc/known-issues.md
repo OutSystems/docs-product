@@ -44,6 +44,6 @@ You can't initiate the conversion because ODC cannot connect to O11 LifeTime.
 
 Reset the service account for the Assessment Tool.
 
-1. Go to LifeTime Access and access the page `https://<LifeTime_server>/lifetime/troubleshoot.aspx`. 
+1. Go to LifeTime Access and access the page `https://<LifeTime_server>/lifetime/troubleshoot.aspx`.
 1. In the **Effective Permission Status** section, find the **AssessmentTool**(`service_account_name`).
 1. Select the button **Clean up** in the same line.

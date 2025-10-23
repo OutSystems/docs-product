@@ -48,7 +48,7 @@ To create the logic to open a URL in a web view, follow these steps in Service S
     ![Screenshot showing the OpenInWebView action in Service Studio's client actions for the InAppBrowser Plugin](images/open-in-web-view-ss.png "Service Studio Client Actions for InAppBrowser Plugin")
 
 1. Pass in the URL you want to open, as a **Text**, in the **URL** input parameter of the **OpenInWebView**.
-   
+
 1. Optionally, you can set the **Options** input parameter, passing in a structure of type **WebViewOptions**.
 
 1. As a good practice, you should handle the result of calling the action by checking the **Success** output parameter. If any errors or warnings occur, you can check them using the **Error** and **Warning** output parameters.
@@ -66,7 +66,7 @@ To create the logic to open a URL in a system browser (SafariViewController for 
     ![Screenshot showing the OpenInSystemBrowser action in Service Studio's client actions for the InAppBrowser Plugin](images/open-in-system-browser-ss.png "Service Studio Client Actions for InAppBrowser Plugin")
 
 1. Pass in the URL you want to open, as a **Text**, in the **URL** input parameter of the **OpenInSystemBrowser**.
-   
+
 1. Optionally, you can set the **Options** input parameter, passing in a structure of type **SystemBrowserOptions**.
 
 1. As a good practice, you should handle the result of calling the action by checking the **Success** output parameter. If any errors or warnings occur, you can check them using the **Error** and **Warning** output parameters.
@@ -97,16 +97,16 @@ Your app can handle events triggered when the browser finishes loading a URL, wh
 
 To enable this functionality, use the **InAppBrowserEvents** block. This block allows you to handle the following events:
 
-- **OnBrowserPageLoaded**: Triggered when the browser finishes loading a page.
-- **OnBrowserPageNavigationCompleted**: Triggered when navigation within the browser is completed.
-- **OnBrowserClosed**: Triggered when the browser is closed by the user.
+* **OnBrowserPageLoaded**: Triggered when the browser finishes loading a page.
+* **OnBrowserPageNavigationCompleted**: Triggered when navigation within the browser is completed.
+* **OnBrowserClosed**: Triggered when the browser is closed by the user.
 
 Add the **InAppBrowserEvents** block to every screen where you want these events to be handled.
 
 <div class="info" markdown="1">
 
-- **OnBrowserPageLoaded** and **OnBrowserClosed** apply only to the **OpenInWebView** and **OpenInSystemBrowser** actions.
-- **OnBrowserPageNavigationCompleted** applies only to the **OpenInWebView** action.
+* **OnBrowserPageLoaded** and **OnBrowserClosed** apply only to the **OpenInWebView** and **OpenInSystemBrowser** actions.
+* **OnBrowserPageNavigationCompleted** applies only to the **OpenInWebView** action.
 
 </div>
 
@@ -120,7 +120,7 @@ To create the logic to close an open browser, follow these steps in Service Stud
 
     ![Screenshot showing the Close action in Service Studio's client actions for the InAppBrowser Plugin](images/close-browser-ss.png "Service Studio Client Actions for InAppBrowser Plugin")
 
-3. As a good practice, you should handle the result of calling the action by checking the **Success** output parameter. If errors or warnings occur, you can check them using the **Error** and **Warning** output parameters.
+1. As a good practice, you should handle the result of calling the action by checking the **Success** output parameter. If errors or warnings occur, you can check them using the **Error** and **Warning** output parameters.
 
 ## Opening HTTP URLs with OpenInWebView on Android
 
@@ -138,4 +138,3 @@ To enable your app to open HTTP URLs in the web view, set the **InAppBrowserClea
             }
         }
 ```
-

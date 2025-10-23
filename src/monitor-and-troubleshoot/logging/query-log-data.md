@@ -28,7 +28,7 @@ Also available: [Query log data in OutSystems 10](https://success.outsystems.com
 
 </div>
 
-# Examples of queries
+## Examples of queries
 
 These examples are written for the databases running the Oracle SQL database management system.
 
@@ -55,10 +55,10 @@ Here is a sample result set of the query.
 |REQUEST_KEY|LOG_TYPE|INSTANT|INFORMATION|DURATION|
 |--- |--- |--- |--- |--- |
 |9c35b89a-2ec3-4716-bb96-4e3ea41b664c|MOBILE REQUEST|01-AUG-18 01.22.01.378236000 PM|eSpace ID: 1234; Screen: Synchronize; Endpoint: LoginData_Sync; User ID: 123456|3015|
-|9c35b89a-2ec3-4716-bb96-4e3ea41b664c|INTEGRATION|01-AUG-18 01.22.00.253199000 PM|Type: REST (Consume); Endpoint: https://internalapi.example.com/v1/userData/Get; Action: UserData.GetDate|328|
-|9c35b89a-2ec3-4716-bb96-4e3ea41b664c|INTEGRATION|01-AUG-18 01.22.00.628220000 PM|Type: REST (Consume); Endpoint: https://internalapi.example.com/v1/UserDetails/Get; Action: UserData.GetDetails|375|
-|9c35b89a-2ec3-4716-bb96-4e3ea41b664c|INTEGRATION|01-AUG-18 01.22.00.940738000 PM|Type: REST (Consume); Endpoint: https://internalapi.example.com/v1/SaveChanges; Action: UserData.SaveUserProfile|296|
-|9c35b89a-2ec3-4716-bb96-4e3ea41b664c|INTEGRATION|01-AUG-18 01.22.01.331361000 PM|Type: REST (Consume); Endpoint: https://internalapi.example.com/v1/Refresh; Action: UserData.RefreshInRepository|390|
+|9c35b89a-2ec3-4716-bb96-4e3ea41b664c|INTEGRATION|01-AUG-18 01.22.00.253199000 PM|Type: REST (Consume); Endpoint: <https://internalapi.example.com/v1/userData/Get>; Action: UserData.GetDate|328|
+|9c35b89a-2ec3-4716-bb96-4e3ea41b664c|INTEGRATION|01-AUG-18 01.22.00.628220000 PM|Type: REST (Consume); Endpoint: <https://internalapi.example.com/v1/UserDetails/Get>; Action: UserData.GetDetails|375|
+|9c35b89a-2ec3-4716-bb96-4e3ea41b664c|INTEGRATION|01-AUG-18 01.22.00.940738000 PM|Type: REST (Consume); Endpoint: <https://internalapi.example.com/v1/SaveChanges>; Action: UserData.SaveUserProfile|296|
+|9c35b89a-2ec3-4716-bb96-4e3ea41b664c|INTEGRATION|01-AUG-18 01.22.01.331361000 PM|Type: REST (Consume); Endpoint: <https://internalapi.example.com/v1/Refresh>; Action: UserData.RefreshInRepository|390|
 
 ## Mobile app calls server-side logic to invoke custom code (Extensions)
 

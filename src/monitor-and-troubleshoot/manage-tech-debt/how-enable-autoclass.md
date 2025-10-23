@@ -42,9 +42,9 @@ To enable or disable auto-classification, follow these steps:
 
     ![Screenshot showing the Maintenance tab selection in AI Mentor Studio](images/select-maintenance-ams.png "Selecting the Maintenance Tab in AI Mentor Studio")
 
-1. On the **Maintenance** screen click **Configurations** and, do one of the following: 
+1. On the **Maintenance** screen click **Configurations** and, do one of the following:
 
-    * To enable the AI auto-classification, turn the **AI auto-classification** toggle on, and in the **Enable AI auto-classification** popup, click **Yes, enable it**. 
+    * To enable the AI auto-classification, turn the **AI auto-classification** toggle on, and in the **Enable AI auto-classification** popup, click **Yes, enable it**.
 
         ![Popup window with an option to enable AI auto-classification in AI Mentor Studio](images/enable-ai-auto-classification-ams.png "Enabling AI Auto-Classification in AI Mentor Studio")
 

@@ -21,7 +21,7 @@ coverage-type:
 
 As your factory of applications grows, it consumes more resources (for example: disk space, database, etc.). It’s important that you keep your environments tidy and clean so it doesn’t slow down your devops performance. Although you can always improve the processing power and infrastructure capacity, this usually brings additional costs.
 
-With a clean environment, you can eliminate a: 
+With a clean environment, you can eliminate a:
 
 * Performance degradation in deployment and publishing.
 * Slow down in your teams performance
@@ -121,7 +121,7 @@ Application data is basically all the information that's stored in the database 
 
 ### Test data
 
-Especially in the development environment is common to have test/dummy data. This is the result of the developers’ tests during the development of different features. Although this data isn't critical for the application to run, it’s common that this data to grow and sometimes may even have some inconsistencies, being useful to clean it from time to time. 
+Especially in the development environment is common to have test/dummy data. This is the result of the developers’ tests during the development of different features. Although this data isn't critical for the application to run, it’s common that this data to grow and sometimes may even have some inconsistencies, being useful to clean it from time to time.
 With OutSystems, you don’t need to have access to the database to perform these cleaning operations. Check [How to delete data from Entities](https://success.outsystems.com/documentation/how_to_guides/data/how_to_delete_data_from_entities/) to implement your own delete data logic.
 
 ### Entities and Attributes
@@ -133,7 +133,6 @@ When you delete Entities and Attributes in your applications, OutSystems doesn't
 * [Entity_ListDeleted](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#entity_listdeleted): Returns a list of entities, with their information, that have been deleted from module’s meta model but are still physically present in the database.
 * [Entity_DropTable](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#entity_droptable): Physically deletes the database table associated to the specified entity. If the entity still exists in a module's meta model, the delete operation isn't performed.
 
-
 ## Processes
 
 Business Process Technology (BPT) Processes can also be consuming unnecessary database space. It’s common that you launch some processes to test the functionality when you are developing.
@@ -144,7 +143,7 @@ To clean all the logged information of old processes, OutSystems provides the [B
 
 Add them as references on your application and invoke them to delete old instances.
 
-In cases where large amounts of data is consistently generated in the database through the use of BPT processes, it may come to a point that remedial action is necessary to ensure smooth, continued functionality.For self-managed infrastructures using SQL Server, refer to [Reseeding identity values in BPT tables - SQL Server](https://success.outsystems.com/documentation/11/developing_an_application/use_processes_bpt/reseeding_identity_values_in_bpt_tables_sql_server/). 
+In cases where large amounts of data is consistently generated in the database through the use of BPT processes, it may come to a point that remedial action is necessary to ensure smooth, continued functionality.For self-managed infrastructures using SQL Server, refer to [Reseeding identity values in BPT tables - SQL Server](https://success.outsystems.com/documentation/11/developing_an_application/use_processes_bpt/reseeding_identity_values_in_bpt_tables_sql_server/).
 
 ## Emails
 
@@ -161,7 +160,7 @@ To clean email information, OutSystems provides the [Emails API](https://success
 The design of the log model aims to have minimal interference in the application runtime and even in the Development environment their impact is somehow controlled with the [rotation of the logs](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/monitor_and_troubleshoot/logging_database_and_architecture/the_log_tables_and_views/).
 Every week the Log Service truncates one of the weekly tables to clear space from the database and allow new logs to be inserted when the time for that table to be used again comes.
 
-While delete logs isn't a supported action, from OutSystems 11 you can [store log data in a separate database](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/keep_outsystems_log_data_in_a_separate_database/), reducing the impact that log-writing operations could have on running applications while application data is being accessed. 
+While delete logs isn't a supported action, from OutSystems 11 you can [store log data in a separate database](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/keep_outsystems_log_data_in_a_separate_database/), reducing the impact that log-writing operations could have on running applications while application data is being accessed.
 
 ## Additional considerations
 
@@ -184,9 +183,9 @@ If you don’t want to create your clean-up solution from scratch, you can explo
 
 ## Other common issues
 
-Not every issue you have is data related. In this section you can find other common issues that you should make sure to have in control. 
+Not every issue you have is data related. In this section you can find other common issues that you should make sure to have in control.
 
-### Control LifeTime users 
+### Control LifeTime users
 
 Over time, developers come and go to an from your team or organization. Without even noticing, you may end up at a point where you don’t even know which of your LifeTime Users are still there, which aren't, and which you should deactivate.
 
@@ -208,11 +207,12 @@ You can check the last stable version of the OutSystems development tools in the
 
 ### Keep all your Forge components and versions documented
 
-With more than 3000 apps available on OutSystems Forge, you likely have several of these components installed in your environment. Most probably, you have dozens of them. Managing all these components all the time may be a huge pain. 
+With more than 3000 apps available on OutSystems Forge, you likely have several of these components installed in your environment. Most probably, you have dozens of them. Managing all these components all the time may be a huge pain.
 
 Along the way, you release several versions of the apps, while the number of your business apps dependent on these components increases. In this situation, it becomes very difficult to update a component to the latest version, as it impacts several applications, and you begin to lose track of which applications are using a component.
 
 So, it's extremely important to have all these different components documented with some relevant information, such as, but not limited to:
+
 * Date of Installation
 * Version installed
 * Owner of that component - the person or team in your organization accountable for its lifecycle
@@ -256,6 +256,6 @@ Keep in mind that, as good practice, you should always validate if the component
 
 ### Clean up log tables after upgrade to OS11
 
-In OS11, log tables no longer live inside the same database catalog as all other tables. From the moment you upgrade, log information is written to a different catalog, leaving the old log tables with the data they had. 
+In OS11, log tables no longer live inside the same database catalog as all other tables. From the moment you upgrade, log information is written to a different catalog, leaving the old log tables with the data they had.
 
 If you don't truncate those tables, they can keep consuming useless disk space from your database. You can truncate the tables by using a simple SQL query or by accessing directly to the database.

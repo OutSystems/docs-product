@@ -265,7 +265,6 @@ Following is an example of a request.
 }
 ```
 
-
 ## v2
 
 Following are the v2 versions of the Cloud Messaging Configurator REST API:

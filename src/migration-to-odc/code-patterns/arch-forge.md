@@ -23,13 +23,13 @@ helpids: 30555
 
 # Asset consuming a Forge component
 
-[Forge](https://www.outsystems.com/forge/) components are reusable software assets that help overcome technical challenges and solve business use cases. Forge is available in ODC via the ODC Portal. However, not all O11 Forge components are yet available in the ODC version. 
+[Forge](https://www.outsystems.com/forge/) components are reusable software assets that help overcome technical challenges and solve business use cases. Forge is available in ODC via the ODC Portal. However, not all O11 Forge components are yet available in the ODC version.
 
 ## How to solve
 
 This pattern can be solved in O11 or in ODC. Start by checking if the Forge component is already [available in ODC](https://www.outsystems.com/forge/list?q=&t=&o=latest-submitted&tr=False&oss=False&c=%20&a=&v=odc&hd=False&tn=&scat=forge).
 
-If the Forge component that your asset consumes is **already available in ODC**, you can choose to [solve this pattern in ODC](#solve-in-odc). 
+If the Forge component that your asset consumes is **already available in ODC**, you can choose to [solve this pattern in ODC](#solve-in-odc).
 
 If the Forge component that your asset consumes **isn’t yet available in ODC**, you should [solve this pattern in O11](#solve-in-o11).
 
@@ -39,7 +39,7 @@ To solve this pattern in ODC:
 
 1. Remove the reference to the O11 Forge component from any ODC asset.
 
-1. Proceed with the conversion. 
+1. Proceed with the conversion.
 
 1. Once the consumer asset is converted to ODC, add the reference to the ODC Forge asset that offers the same functionality as the O11 Forge component your asset was consuming.
 

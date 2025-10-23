@@ -135,7 +135,7 @@ FROM
     INNER JOIN OSSYS_SITE_PROPERTY_DEFINITION spd ON spd.ID = sp.SITE_PROPERTY_DEFINITION_ID
     INNER JOIN OSSYS_SITE_PROPERTY_DEF_EXT spde ON spd.ID = spde.SITE_PROPERTY_DEFINITION_ID
 WHERE
-	spde.IS_SECRET = 1;
+    spde.IS_SECRET = 1;
 
 UPDATE sps
     SET PROPERTY_VALUE = spd.DEFAULT_VALUE, USER_MODIFIED = 0
@@ -144,7 +144,7 @@ FROM
     INNER JOIN OSSYS_SITE_PROPERTY_DEFINITION spd ON sps.SITE_PROPERTY_DEFINITION_ID = spd.ID 
     INNER JOIN OSSYS_SITE_PROPERTY_DEF_EXT spde ON spd.ID = spde.SITE_PROPERTY_DEFINITION_ID
 WHERE
-	spde.IS_SECRET = 1;
+    spde.IS_SECRET = 1;
 ```
 
 #### Clean up selective deployment zones
@@ -179,7 +179,7 @@ The restored database will bring the list of Front-Ends from the source environm
 
 As an example, if you are restoring a clone of a Production environment into the Pre-Production environments and they are in the same network, not executing this cleanup will cause a deployment in Pre-Production to try to deploy applications to the Front-Ends of the Production environment, potentially causing application downtime and eventually runtime errors in that environment.
 
-To avoid this you must always clean up the Front-End listing from the cloned database. This list is automatically populated when you reinstall the platform later on. 
+To avoid this you must always clean up the Front-End listing from the cloned database. This list is automatically populated when you reinstall the platform later on.
 
 * Open SQL Server Management Studio (or another query editor), connect to the restored database and execute the following SQL statement on the newly restored database (if needed run `use <cloned database>` to use the appropriate database):
 
@@ -277,7 +277,7 @@ When an environment is managed by LifeTime and its database is restored, LifeTim
 
 As an example, imagine you have cloned the Production database into a Pre-Production environment. LifeTime already has a unique identifier for the Production environment. However, when you clone the database to Pre-Production you will have both environments, Production, and Pre-Production, with the same identifier, thus causing LifeTime to misbehave.
 
-As such, you must always clean up that information and re-register the cloned environment in LifeTime. 
+As such, you must always clean up that information and re-register the cloned environment in LifeTime.
 
 1. Open SQL Server Management Studio (or another query editor), connect to the restored database and execute the following SQL statement on the newly restored database (if needed run `use <cloned_database>` to use the appropriate database):
 
@@ -312,7 +312,7 @@ If the environment you cloned is running Lifetime all of its configurations must
 
 As an example, if you have LifeTime running in the Production environment and you are copying the Production database to a Pre-Production environment, when restoring the database in Pre-Production LifeTime will be brought along too and it could be used by mistake.
 
-To prevent this you must always clean up all LifeTime configuration in the cloned Platform database. 
+To prevent this you must always clean up all LifeTime configuration in the cloned Platform database.
 
 1. Open SQL Server Management Studio (or another query editor), connect to the restored database and execute the following SQL statement on the newly restored database (if needed run `use <cloned_database>`  to use the appropriate database):
 
@@ -326,14 +326,14 @@ To prevent this you must always clean up all LifeTime configuration in the clone
 
 This section focuses on scenarios in which you have to install a new OutSystems Platform from scratch on a single-node server (a server with both the Deployment Controller and Front-End services). The new installation is to use the restored database catalog.
 
-1. **Install the pre-requirements. **[Check the OutSystems Platform Installation guide.](../setup-infra-platform/setup/intro.md). This will ensure software pre-requirements installation and correct configuration of the Platform Server
+1. **Install the pre-requirements.**[Check the OutSystems Platform Installation guide.](../setup-infra-platform/setup/intro.md). This will ensure software pre-requirements installation and correct configuration of the Platform Server
 
 1. **Install OutSystems Platform Server.** Run OutSystems Platform installer to install OutSystems Platform.
 
 1. **Configure the platform database**
 
     1. Run the Configuration Tool and in the Database tab configure the following properties according to the restored catalog:
-    
+
         * The hostname of the database server (and instance name if required,for example `mydbserver.mydomain\\CORP`);
         * The database name of the restored catalog;
         * For each login account (Platform Admin, Runtime and Log), set a new username and password;
@@ -360,22 +360,22 @@ This section focuses on scenarios in which you have to install a new OutSystems 
 1. **Configure the platform session database**
 
     In the Session tab of the Configuration Tool proceed as follows:
-    
+
     1. Set the hostname of the database server;
     1. Set the catalog to a new ASPState catalog (or an existing one);
     1. Set the Session User username and password to new values or existing ones;
     1. Press the **Configure Session Database** button. If you’re using an existing session database, all sessions in that database will be lost.
-    1. Finally, press **Apply and Exit** in the Configuration Tool to apply all changes and exit. 
+    1. Finally, press **Apply and Exit** in the Configuration Tool to apply all changes and exit.
 
 1. **Install Service Center**
 
     1. In the dialog that shows up for installing Service Center, choose **Yes** to make sure you will be running a fully compatible version of Service Center.
 
-    1. If a dialog asking to start the OutSystems Scheduler service and OutSystems SMS Connector service shows up, answer **No** and proceed. 
+    1. If a dialog asking to start the OutSystems Scheduler service and OutSystems SMS Connector service shows up, answer **No** and proceed.
 
 1. **Upload your new environment license**
 
-    In the Administration section of Service Center, open the Licensing page, and request a new license for this environment, which should have a different serial number. Upon receiving the license, upload it in the Licensing page. 
+    In the Administration section of Service Center, open the Licensing page, and request a new license for this environment, which should have a different serial number. Upon receiving the license, upload it in the Licensing page.
 
 1. **In Service Center, set the server to the desired purpose (Development, Non-Production or Production)**
 
@@ -411,7 +411,7 @@ This section focuses on scenarios in which you have to install a new OutSystems 
 
     Open a query editor tool, connect to the restored Platform database and execute the following SQL statement:
 
-        	delete from ossys_dbconnection where NAME <>'$OS_LOG_DB_7e3e8ce0';
+         delete from ossys_dbconnection where NAME <>'$OS_LOG_DB_7e3e8ce0';
 
 1. **Install Service Studio and Integration Sutdio**
 
@@ -429,18 +429,17 @@ This section focuses on scenarios in which you have to install a new OutSystems 
 
 1. **Republish the entire factory**
 
-    Since the database brings its own factory, you should publish all modules to properly deploy them to the application server. Create a whole content solution (with all of the factory’s components) and publish it. 
+    Since the database brings its own factory, you should publish all modules to properly deploy them to the application server. Create a whole content solution (with all of the factory’s components) and publish it.
 
 1. **Start the Remaining OutSystems Services (optional)**
 
     After all changes to the applications configuration are done, ensuring that connections to wrong environments don't occur, you may start OutSystems Scheduler Service.
 
-    Please note that to avoid timers to run in this environment, the OutSystems Scheduler Service should be stopped and disabled which is done in the Services console of the Administrative Tools, or this front-end must have the ‘Execute Timers’ option disabled in the Front-End Lists in Service Center. 
-
+    Please note that to avoid timers to run in this environment, the OutSystems Scheduler Service should be stopped and disabled which is done in the Services console of the Administrative Tools, or this front-end must have the ‘Execute Timers’ option disabled in the Front-End Lists in Service Center.
 
 ### Reconfigure an installation to use a restored database
 
-This section focuses on scenarios in which you’ll have to reconfigure an existing OutSystems platform installation to use the newly restored database on a single-node server (server with both the Deployment Controller and Front-End services). 
+This section focuses on scenarios in which you’ll have to reconfigure an existing OutSystems platform installation to use the newly restored database on a single-node server (server with both the Deployment Controller and Front-End services).
 
 1. **Stop the OutSystems Services**
 
@@ -545,19 +544,19 @@ This section focuses on scenarios in which you’ll have to reconfigure an exist
 
     Open a query editor tool, connect to the restored Platform database and execute the following SQL statement:
 
-        	delete from ossys_dbconnection where NAME <>'$OS_LOG_DB_7e3e8ce0';
+         delete from ossys_dbconnection where NAME <>'$OS_LOG_DB_7e3e8ce0';
 
 1. **Multiple database schemas**
 
     In case your applications are deployed in multiple catalogs, you need to change Service Center configurations to start using the cloned catalogs.
 
-    In Service Center, go to ‘Administration’, and click ‘Database Catalogs’. For each catalog listed, change its configurations. 
+    In Service Center, go to ‘Administration’, and click ‘Database Catalogs’. For each catalog listed, change its configurations.
 
 1. **Application configurations changes**
 
-    In case of environment replication, check the effective value of each Web Reference (in the module details page) and all Site Properties containing URLs or values pointing to other environments. If pointing to invalid or other environments, then update them accordingly. 
+    In case of environment replication, check the effective value of each Web Reference (in the module details page) and all Site Properties containing URLs or values pointing to other environments. If pointing to invalid or other environments, then update them accordingly.
 
-1.	**Republish the entire factory**
+1. **Republish the entire factory**
 
     Since the database brings its own factory, you should publish all modules to properly deploy them to the application server. Create a solution with the whole content (with all of the factory’s components) and publish it.
 
@@ -575,8 +574,7 @@ This section focuses on scenarios in which you’ll have to reconfigure an exist
 
 It's recommended to use Oracle Data Pump to export the platform schemas and import them back on an existing database. You can find further information on how to use the Oracle Data Pump technology in the following white papers: [Data Pump in Oracle Database 11g Release2](http://download.oracle.com/otndocs/products/database/enterprise_edition/utilities/pdf/datapump11gr2_techover_1009.pdf)
 
-
-1. 	Find out the schemas that need to be cloned
+1. Find out the schemas that need to be cloned
 
     Before using the expdp Data Pump client, you need to find out which schemas need to be cloned.
     In the ‘Platform and Log’ tabs of the Configuration Tool you can find out the users that OutSystems uses for both Application and Log data. By default these are:
@@ -587,8 +585,7 @@ It's recommended to use Oracle Data Pump to export the platform schemas and impo
     * OSRUNTIME_LOG
 
     If you're deploying your applications to multiple schemas, you'll also need to find out the schemas containing the application data.
-    Go to the ‘Administration’ > ‘Database Schemas’ area in Service Center to find out what schemas need to be cloned. 
-
+    Go to the ‘Administration’ > ‘Database Schemas’ area in Service Center to find out what schemas need to be cloned.
 
 1. **Clone the schemas**
 
@@ -637,18 +634,17 @@ If you're importing the schema to the same database instance that you exported t
 
     If you're deploying your applications to multiple schemas, you'll also need to create the necessary tablespaces, schemas and grants in the destination database. Go to the ‘Administration’ > ‘Database Schemas’ area in Service Center and click ‘Download Creation Script’ to download the necessary schemas creation scripts. Customize the creation scripts and execute them in the destination database.
 
-    Please check with your Database Administrator how to do this according to your database environment. At the very least, you should make sure the file paths, tablespaces and users don't clash with existing objects in the database. You'll need the usernames, passwords and tablespaces used in this script to configure Platform Server later on. 
+    Please check with your Database Administrator how to do this according to your database environment. At the very least, you should make sure the file paths, tablespaces and users don't clash with existing objects in the database. You'll need the usernames, passwords and tablespaces used in this script to configure Platform Server later on.
 
 1. **Import the schemas**
 
     Import all schemas and tablespaces at the same time, using the impdp Data Pump client. In this command you need to indicate how the cloned tablespaces and schemas are mapped in the destination database.
 
-    As an example, the following command imports the cloned schemas, and remaps the old table spaces and schemas into new ones. 
+    As an example, the following command imports the cloned schemas, and remaps the old table spaces and schemas into new ones.
 
         impdp \"/ as sysdba\" DUMPFILE=production.dmp REMAP_SCHEMA=OSADMIN:NEW_OSADMIN REMAP_SCHEMA=OSRUNTIME:NEW_OSRUNTIME REMAP_SCHEMA=OSLOG:NEW_OSLOG REMAP_TABLESPACE=OSUSR:NEW_OSUSR REMAP_TABLESPACE=OSSYS:NEW_OSSYS REMAP_TABLESPACE=OSIDX:NEW_OSIDX REMAP_TABLESPACE=OSLOG:NEW_OSLOG
 
     Notice that since the tablespaces and schemas were already created in the previous step, the impdb Data Pump client will display a warning, but succeeds in restoring the schemas.
-
 
 #### Clean up the environment security context
 
@@ -684,7 +680,6 @@ COMMIT;
 
 If the environment you cloned had mobile apps already configured for iOS or Android, you will need to perform a cleanup and configure the mobile apps again. You will only be able to generate the mobile apps after you [configure their specific iOS and/or Android settings](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App), which you can do when it best suits your needs.
 
-	
 Open a query editor tool, connect to the restored Platform database and execute the following SQL statement on the newly restored database (if needed run use < cloned database >  to use the appropriate database):
 
 ```sql
@@ -740,7 +735,7 @@ Therefore, after restoring the schemas to set up the Quality environment, the Zo
 
 As such, the Zones configurations must be cleaned up from the restored database schemas, to make sure that applications are deployed to the right Front-Ends in the target environment.
 
-Open a query editor tool, connect to the restored Platform database and execute the following SQL statement: 
+Open a query editor tool, connect to the restored Platform database and execute the following SQL statement:
 
 ```sql
 ALTER SESSION SET NLS_COMP=LINGUISTIC NLS_SORT=BINARY_AI; 
@@ -758,7 +753,6 @@ COMMIT;
 ```
 
 **Note**: Replace `OSADMIN` with your Admin user for the Platform database if you changed the default value.
-
 
 #### Clean up the front-ends listing
 
@@ -783,7 +777,7 @@ COMMIT;
 
 In case your applications are being deployed in multiple schemas, you need to clean up the multiple schemas configurations. This will prevent your applications to connect to a wrong database once OutSystems Platform is installed.
 
-Open a query editor tool, connect to the restored Platform database and execute the following SQL statement: 
+Open a query editor tool, connect to the restored Platform database and execute the following SQL statement:
 
 ```sql
 ALTER SESSION SET NLS_COMP=LINGUISTIC NLS_SORT=BINARY_AI; 
@@ -940,7 +934,7 @@ As such, you must always clean up that information and re-register the cloned en
 
 Since the restored database schema may bring configurations of a LifeTime installation, configurations must be cleaned up to avoid the usage of the incorrect LifeTime instance. As an example, suppose you have LifeTime running in the Production environment and you are migrating that Production environment to a Pre-Production environment. When restoring the database in PreProduction, LifeTime will be brought along too and it could be used by mistake.
 
-As such, you must always clean up the cloned LifeTime. 
+As such, you must always clean up the cloned LifeTime.
 
 1. Open a query editor tool, connect to the restored Platform database and execute the following SQL statement:
 
@@ -953,14 +947,13 @@ As such, you must always clean up the cloned LifeTime.
 
     **Note**: Replace `OSADMIN` with your Admin user for the Platform database if you changed the default value.
 
-1. 	Copy the result of the previous SQL statement and run it.
+1. Copy the result of the previous SQL statement and run it.
 
-1. 	Optionally, you can disable LifeTime from the environment to ensure it's no longer accessible. Simply go to Service Center, click the ‘Factory’ tab and in the application list click on the ‘LifeTime’ application. Once you are in the LifeTime details, click the **Disable** button.
-
+1. Optionally, you can disable LifeTime from the environment to ensure it's no longer accessible. Simply go to Service Center, click the ‘Factory’ tab and in the application list click on the ‘LifeTime’ application. Once you are in the LifeTime details, click the **Disable** button.
 
 ### Fresh installation using a restored database
 
-This section focuses on scenarios in which you have to install a new OutSystems platform from scratch on a single-node server (a server with both the Deployment Controller and Front-End services running). The new installation is to use the restored database schemas. 
+This section focuses on scenarios in which you have to install a new OutSystems platform from scratch on a single-node server (a server with both the Deployment Controller and Front-End services running). The new installation is to use the restored database schemas.
 
 1. **Install the pre-requirements**
 
@@ -975,7 +968,7 @@ This section focuses on scenarios in which you have to install a new OutSystems 
 1. **Configure the platform database**
 
     Run the Configuration Tool and in the Platform tab configure the following properties according to the restored database:
-    
+
     * Set **Oracle Database** in the drop-down list **DBMS**.
     * Set the Oracle database to be used by configuring the **Server Instance field**.
     * Fill in **Admin user** in the Admin section using the database login previously created for the Admin role in the Platform database
@@ -998,7 +991,7 @@ This section focuses on scenarios in which you have to install a new OutSystems 
     * Fill in **Runtime user** in the Runtime section using the database login previously created for the Runtime role in the Log database.
     * Fill in **Tablespace** field in the Runtime section with the Runtime Tablespace previously created.
     * Test all users to confirm correct connectivity. For this, click Test Connection for each of the users configured.
-    * Create the Log Database schema by clicking the **Create/Upgrade Database** button. 
+    * Create the Log Database schema by clicking the **Create/Upgrade Database** button.
 
     **Do not close the Configuration Tool at this point** - further tasks are to be performed.
 
@@ -1016,7 +1009,7 @@ This section focuses on scenarios in which you have to install a new OutSystems 
 
     In the dialog that shows up for installing Service Center, choose **Yes** to make sure you will be running a fully compatible version of Service Center.
 
-    If a dialog asking to start the OutSystems Scheduler service and OutSystems SMS Connector service shows up, answer **No** and proceed. 
+    If a dialog asking to start the OutSystems Scheduler service and OutSystems SMS Connector service shows up, answer **No** and proceed.
 
 1. **Upload your new environment license**
 
@@ -1056,7 +1049,7 @@ This section focuses on scenarios in which you have to install a new OutSystems 
 
     Open a query editor tool, connect to the restored Platform database and execute the following SQL statement:
 
-        	ALTER SESSION SET NLS_COMP=LINGUISTIC NLS_SORT=BINARY_AI;
+            ALTER SESSION SET NLS_COMP=LINGUISTIC NLS_SORT=BINARY_AI;
             ALTER SESSION SET CURRENT_SCHEMA = OSADMIN;
 
             delete from ossys_dbconnection where NAME <>'$OS_LOG_DB_7e3e8ce0';
@@ -1068,13 +1061,13 @@ This section focuses on scenarios in which you have to install a new OutSystems 
 
     In case your applications are deployed in multiple catalogs, you need to change Service Center configurations to start using the cloned catalogs.
 
-    In Service Center, go to ‘Administration’, and click ‘Database Catalogs’. For each catalog listed, change its configurations. 
+    In Service Center, go to ‘Administration’, and click ‘Database Catalogs’. For each catalog listed, change its configurations.
 
 1. **Application configurations changes**
 
-    In case of environment replication, check the effective value of each Web Reference (in the module details page) and all Site Properties containing URLs or values pointing to other environments. If pointing to invalid or other environments, then update them accordingly. 
+    In case of environment replication, check the effective value of each Web Reference (in the module details page) and all Site Properties containing URLs or values pointing to other environments. If pointing to invalid or other environments, then update them accordingly.
 
-1.	**Republish the entire factory**
+1. **Republish the entire factory**
 
     Since the database brings its own factory, you should publish all modules to properly deploy them to the application server. Create a solution with the whole content (with all of the factory’s components) and publish it.
 
@@ -1084,10 +1077,9 @@ This section focuses on scenarios in which you have to install a new OutSystems 
 
     **Please note that to avoid the timer to run in this environment the OutSystems Scheduler Service should be stopped and disabled which is done in the Services console of the Administrative Tools, or this front-end must have the ‘Execute Timers’ option disabled in the Front-End Lists in Service Center.**
 
-
 ### Reconfigure an installation to use a restored database
 
-This section focuses on scenarios in which you’ll have to reconfigure an existing OutSystems platform installation to use the newly restored database on a single-node server (server with both the Deployment Controller and Front-End services). 
+This section focuses on scenarios in which you’ll have to reconfigure an existing OutSystems platform installation to use the newly restored database on a single-node server (server with both the Deployment Controller and Front-End services).
 
 1. **Stop the OutSystems services**
 
@@ -1139,7 +1131,7 @@ This section focuses on scenarios in which you’ll have to reconfigure an exist
     * Set the Session User username and password for the imported users
     * Set the Tablespace to use
     * Press the **Configure Session Database** button. If you’re using an existing session database, all sessions in that database will be lost.
-    
+
     **Don’t close the configuration tool yet.**
 
 1. **Start IIS**
@@ -1201,13 +1193,13 @@ This section focuses on scenarios in which you’ll have to reconfigure an exist
 
     In case your applications are deployed in multiple catalogs, you need to change Service Center configurations to start using the cloned catalogs.
 
-    In Service Center, go to ‘Administration’, and click ‘Database Catalogs’. For each catalog listed, change its configurations. 
+    In Service Center, go to ‘Administration’, and click ‘Database Catalogs’. For each catalog listed, change its configurations.
 
 1. **Application configurations changes**
 
-    In case of environment replication, check the effective value of each Web Reference (in the module details page) and all Site Properties containing URLs or values pointing to other environments. If pointing to invalid or other environments, then update them accordingly. 
+    In case of environment replication, check the effective value of each Web Reference (in the module details page) and all Site Properties containing URLs or values pointing to other environments. If pointing to invalid or other environments, then update them accordingly.
 
-1.	**Republish the entire factory**
+1. **Republish the entire factory**
 
     Since the database brings its own factory, you should publish all modules to properly deploy them to the application server. Create a solution with the whole content (with all of the factory’s components) and publish it.
 

@@ -29,7 +29,7 @@ For a complete list of prerequisites, refer to [Introduction to log streaming](i
 
 To configure the OutSystems log streaming service, using **Dynatrace** as the destination tool, follow these steps:
 
-1. Get the Dynatrace SaaS endpoint. 
+1. Get the Dynatrace SaaS endpoint.
 
 1. Get the Dynatrace API token (must have the ingest logs permissions).
 
@@ -53,7 +53,7 @@ Once you've completed these steps, go to LifeTime and [configure the log streami
 
     You can select ``Other`` as the **Destination** with the following parameters:
 
-    * **Destination**: ``Other`` 
+    * **Destination**: ``Other``
     * **Protocol**: ``OTLP/HTTP`` (**Note**: gRPC is not supported)
     * **Endpoint**: Dynatrace SaaS Endpoint  ``https://{your-environment-id}.live.dynatrace.com/api/v2/otlp/v1/logs``
     * **API key header name**: ``Authorization``
@@ -63,7 +63,7 @@ Once you've completed these steps, go to LifeTime and [configure the log streami
 
 <div class="info" markdown="1">
 
-Large 'content' and 'exception.stacktrace' attribute values are truncated to 4,000 characters before streaming. For more information regarding limits followed while streaming to Dynatrace's ingestion API, refer to Dynatrace's documentation on [Ingest OpenTelemetry logs](https://docs.dynatrace.com/docs/extend-dynatrace/opentelemetry/getting-started/logs/ingest#ingestion-limits).   
+Large 'content' and 'exception.stacktrace' attribute values are truncated to 4,000 characters before streaming. For more information regarding limits followed while streaming to Dynatrace's ingestion API, refer to Dynatrace's documentation on [Ingest OpenTelemetry logs](https://docs.dynatrace.com/docs/extend-dynatrace/opentelemetry/getting-started/logs/ingest#ingestion-limits).
 
 </div>
 

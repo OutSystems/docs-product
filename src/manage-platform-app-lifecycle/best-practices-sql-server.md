@@ -20,7 +20,7 @@ coverage-type:
 
 # Best practices for SQL Server
 
-This article presents the current best practices recommended when operating OutSystems Platform Server with a SQL Server database. 
+This article presents the current best practices recommended when operating OutSystems Platform Server with a SQL Server database.
 
 ## Hardware recommendations
 
@@ -48,7 +48,7 @@ There are several levels of RAID to choose from when configuring your server's I
 
 Regardless of which RAID level you choose, the recommended stripe size for SQL Server is 64Kb.
 
-Below we'll discuss briefly each of the most common levels as they pertain to SQL Server performance. 
+Below we'll discuss briefly each of the most common levels as they pertain to SQL Server performance.
 
 | **Raid Level** | **Description** |
 |----------------|------|
@@ -80,9 +80,8 @@ We can divide storage needs in three parts, by looking at the I/O requirements o
 | **File Type** | **Description** |
 |--------------|-----------------|
 | System Files | System files are the files for Windows, including your pagefile, as well as the SQL Server binaries. This subsystem is mostly oriented towards read operations. However your main concern is ensuring integrity and fault tolerance, than I/O performance. RAID levels 1, 5, and 10 are appropriate, although RAID 1 is the most common. |
-| Data Files (*.mdf, *.ndf) | Data files (*.mdf, *.ndf) are the files where SQL stores all of your database data and schema information.The load placed on these files will depend on whether your database is mostly transaction oriented, create a higher write load, or if it has a more analytical role which usually mean a higher read load.RAID 10 is the recommended level as it provides the best fault tolerance as well as the best speed |
+| Data Files (*.mdf,*.ndf) | Data files (*.mdf,*.ndf) are the files where SQL stores all of your database data and schema information.The load placed on these files will depend on whether your database is mostly transaction oriented, create a higher write load, or if it has a more analytical role which usually mean a higher read load.RAID 10 is the recommended level as it provides the best fault tolerance as well as the best speed |
 | Log Files (*.ldf) | Transaction Log files (*.ldf) are where the database journaling takes place and is critical to ensuring proper database recovery. Except for database recovery actions, the load is mostly write oriented. RAID 1 or RAID 10 are recommended.|
-
 
 To get the maximum performance, with these set of files, you should use the NTFS block size of 64k (recommended). For 64-bit systems this can be set higher, but note that when going beyond 64k you should try it first on a test system.
 
@@ -152,7 +151,7 @@ Depending on how often your data changes you should rebuild the statistics with 
 
 SQL Server places some restrictions on the kind of backups available to you depending on which database you are using. Namely, the MASTER database does not support Differential Backups.
 
-It's a good idea to have separate maintenance plans for your system and user databases. This enables you to fine tune each maintenance plan to your specific database needs. It also prevents a maintenance plan from failing for one database and then not running for all the others. Master database is critical for recovery procedures and it's recommended that you keep a separate maintenance plan for it. 
+It's a good idea to have separate maintenance plans for your system and user databases. This enables you to fine tune each maintenance plan to your specific database needs. It also prevents a maintenance plan from failing for one database and then not running for all the others. Master database is critical for recovery procedures and it's recommended that you keep a separate maintenance plan for it.
 
 | **Database**                        | **Recommended Initial Backup Strategy**           | **Optional Backup Strategy**                                            |
 |-------------------------------------|---------------------------------------------------|-------------------------------------------------------------------------|
@@ -160,16 +159,14 @@ It's a good idea to have separate maintenance plans for your system and user dat
 | Model, MSDB, other system databases | Weekly full backup, daily transaction log backups | Weekly full backup, daily transaction log backups                       |
 | OutSystems Platform database        | Weekly full backup, daily transaction log backups | Weekly full backups, daily differential, hourly transaction log backups |
 
-
 If you have a high number of transactions per day, you may wish to introduce a differential backup for the OutSystems platform database in the middle of the backup week. This may provide you with a lower recovery time since it could be faster to simply restore the last full backup, restore the last partial and restore only the transaction log backups that occurred after the last partial.
 
 You could also consider making more frequent transaction log backups. You could have a smaller data loss window, by making transaction log backups every three hours for instance.
 
-Having more frequent full backups would also decrease the amount of space needed for you transaction logs. 
+Having more frequent full backups would also decrease the amount of space needed for you transaction logs.
 
 #### Database shrink
 
 Maintenance plans shouldn't perform database shrink operations. Shrinking the database will cause it to release diskspace, this will result in SQL Server having to grow the files later. Over time this will result in large scale file fragmentation.
 
 When needed the DBA should evaluate the free space of the database and perform a manual shrink operation. After such operations, rebuilding your indexes and updating statistics is recommended.
-

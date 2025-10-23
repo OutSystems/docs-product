@@ -33,33 +33,33 @@ The table shows the OutSystems-supported mobile plugins that you can find in the
 
 You may also create mobile plugins by [wrapping an Apache Cordova plugin into a module](./cordova-plugin/intro.md).
 
-Plugin | Description | Supported in PWA
--------|-------------|---
-[Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin) | Firebase-based plugin that lets you gather information about app use. | No
-[AppShield](<https://www.outsystems.com/forge/component-overview/9379//>) | Protect your mobile apps from tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse. | No
-[Barcode](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | Yes
-[Calendar](<https://www.outsystems.com/forge/component/1566/calendar-plugin/>) | Access the calendar of your device. | No
-[Camera](<https://www.outsystems.com/forge/component-overview/1390/camera-plugin>) | Enable your application to access the camera capabilities of the device. | Yes
-[Card IO](<https://www.outsystems.com/forge/component/1438/card-io-plugin/>) | Automatically get the details of a credit card by taking a picture. | No
-[Ciphered Local Storage](<https://www.outsystems.com/forge/component-details/1500/ciphered-local-storage-plugin/>) | Keep your mobile application's sensitive data safe using a ciphered local storage database. | No
-[Cloud Messaging](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) | Firebase-based plugin to give your app users a state-of-the-art notifications experience. | No
-[Contacts](<https://www.outsystems.com/forge/component-overview/1394/contacts-plugin>) | Access the contacts of your device. | No
-[Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705) | Firebase-based plugin that provides realtime crash reporting to help you track, prioritize, and fix stability issues.  | No
-[Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase) | Firebase-based plugin that lets you manage links outside of your app. | No
-[File](<https://www.outsystems.com/forge/component-overview/1633/file-plugin>) | Lets you manage files and folders on a mobile device within the app sandbox. | No
-[File Transfer](<https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin>) | Lets users upload and download files in the background. | Yes
-[File Viewer](<https://www.outsystems.com/forge/component-overview/1606/file-viewer-plugin>) | Lets users view remote or app resource files. | Yes
-[Health & Fitness](<https://www.outsystems.com/forge/component-overview/11715/health-fitness-plugin>) | Provides access to health and fitness data. Uses HealthKit API for iOS and Health Connect API for Android. | No
-[InAppBrowser](<https://www.outsystems.com/forge/component/1558/inappbrowser-plugin/>) | Open external URLs directly in your application. | No
-[Key Store](<https://www.outsystems.com/forge/component/1550/Key+Store+Plugin/>) | Store small amounts of sensitive information on your device. Key Store secures data by encrypting the data before storing it, and the platform itself carefully controls access to stored items. | No
-[Local Notifications](<http://www.outsystems.com/forge/component/1541/local-notifications-plugin/>) | Send app notifications to the device when the application isn't running in the foreground. | No
-[Location](<https://www.outsystems.com/forge/component/1395/location-plugin/>) | Access the GPS capabilities of the user's device to show, for example, the present latitude, longitude, and  altitude. | Yes
-[OneSignal Notifications](<http://www.outsystems.com/forge/component/2119/onesignal-plugin/>) | Push notifications using OneSignal, with deep-linking and actions. | No
-[Payments](https://www.outsystems.com/forge/component-overview/13678/payments-plugin) | Allows the addition of a payments experience using Apple Pay and Google Pay. | No
-[Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706) | Firebase-based plugin that lets you understand how you can improve the performance of your app.  | No
-[Social Login Mobile](<https://www.outsystems.com/forge/component-overview/7895/social-login-mobile>) | Lets you set a login experience that resorts to an external provider, namely Google, Apple, Facebook, or LinkedIn. | Yes
-[SSL Pinning](<https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin>) | Provide an extra layer of security to HTTPS communications by adding a verification of the server certificate against hashes of public keys. | No
-[Touch ID](<https://www.outsystems.com/forge/component-details/1431/Touch+ID+Plugin/>) | Use authentication with biometrics in your application. | No
+| Plugin | Description | Supported in PWA |
+| -------|-------------|--- |
+| [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin) | Firebase-based plugin that lets you gather information about app use. | No |
+| [AppShield](<https://www.outsystems.com/forge/component-overview/9379//>) | Protect your mobile apps from tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse. | No |
+| [Barcode](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | Yes |
+| [Calendar](<https://www.outsystems.com/forge/component/1566/calendar-plugin/>) | Access the calendar of your device. | No |
+| [Camera](<https://www.outsystems.com/forge/component-overview/1390/camera-plugin>) | Enable your application to access the camera capabilities of the device. | Yes |
+| [Card IO](<https://www.outsystems.com/forge/component/1438/card-io-plugin/>) | Automatically get the details of a credit card by taking a picture. | No |
+| [Ciphered Local Storage](<https://www.outsystems.com/forge/component-details/1500/ciphered-local-storage-plugin/>) | Keep your mobile application's sensitive data safe using a ciphered local storage database. | No |
+| [Cloud Messaging](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) | Firebase-based plugin to give your app users a state-of-the-art notifications experience. | No |
+| [Contacts](<https://www.outsystems.com/forge/component-overview/1394/contacts-plugin>) | Access the contacts of your device. | No |
+| [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705) | Firebase-based plugin that provides realtime crash reporting to help you track, prioritize, and fix stability issues.  | No |
+| [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase) | Firebase-based plugin that lets you manage links outside of your app. | No |
+| [File](<https://www.outsystems.com/forge/component-overview/1633/file-plugin>) | Lets you manage files and folders on a mobile device within the app sandbox. | No |
+| [File Transfer](<https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin>) | Lets users upload and download files in the background. | Yes |
+| [File Viewer](<https://www.outsystems.com/forge/component-overview/1606/file-viewer-plugin>) | Lets users view remote or app resource files. | Yes |
+| [Health & Fitness](<https://www.outsystems.com/forge/component-overview/11715/health-fitness-plugin>) | Provides access to health and fitness data. Uses HealthKit API for iOS and Health Connect API for Android. | No |
+| [InAppBrowser](<https://www.outsystems.com/forge/component/1558/inappbrowser-plugin/>) | Open external URLs directly in your application. | No |
+| [Key Store](<https://www.outsystems.com/forge/component/1550/Key+Store+Plugin/>) | Store small amounts of sensitive information on your device. Key Store secures data by encrypting the data before storing it, and the platform itself carefully controls access to stored items. | No |
+| [Local Notifications](<http://www.outsystems.com/forge/component/1541/local-notifications-plugin/>) | Send app notifications to the device when the application isn't running in the foreground. | No |
+| [Location](<https://www.outsystems.com/forge/component/1395/location-plugin/>) | Access the GPS capabilities of the user's device to show, for example, the present latitude, longitude, and  altitude. | Yes |
+| [OneSignal Notifications](<http://www.outsystems.com/forge/component/2119/onesignal-plugin/>) | Push notifications using OneSignal, with deep-linking and actions. | No |
+| [Payments](https://www.outsystems.com/forge/component-overview/13678/payments-plugin) | Allows the addition of a payments experience using Apple Pay and Google Pay. | No |
+| [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706) | Firebase-based plugin that lets you understand how you can improve the performance of your app.  | No |
+| [Social Login Mobile](<https://www.outsystems.com/forge/component-overview/7895/social-login-mobile>) | Lets you set a login experience that resorts to an external provider, namely Google, Apple, Facebook, or LinkedIn. | Yes |
+| [SSL Pinning](<https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin>) | Provide an extra layer of security to HTTPS communications by adding a verification of the server certificate against hashes of public keys. | No |
+| [Touch ID](<https://www.outsystems.com/forge/component-details/1431/Touch+ID+Plugin/>) | Use authentication with biometrics in your application. | No |
 
 ### Notes
 
@@ -115,18 +115,17 @@ Referencing an [installed plugin](#installing-a-plugin) lets you use the plugin 
 
 All mobile apps generated by OutSystems include a native shell with the following built-in plugins that are used internally, handling a variety of housekeeping and infrastructure tasks.
 
-Plugin | Description
--------|-----------------
-OS Auth           | Handles OAuth flows and ensures compliance with the guidelines for SSO using the right WebView instances types for Android and iOS.
-OS Cache       | Lets your application to run offline or with bad network conditions.
-OS Cordova Loader | Loads the Cordova engine on your app.
-OS Deeplinks   | Opens hyperlinks to specific screens of your app.
-OS DB Upgrader | Manages the local storage of your app.
-OS Manifest    | Provides a parser for the app manifest.
-OS Pre-Bundle  | Handles the content of the app pre-bundled resources.
-OS Security    | Provides the APIs for the security layer.
-Mobile AppFeedback | Enables the user to invoke App Feedback for submitting feedback about the app.
-NetworkStatus  | Lets your app know when the device is online/offline and informs of the type of network available (for example, WiFi, 3G, 4G).
+| Plugin | Description |
+| -------|----------------- |
+| OS Auth           | Handles OAuth flows and ensures compliance with the guidelines for SSO using the right WebView instances types for Android and iOS. |
+| OS Cache       | Lets your application to run offline or with bad network conditions. |
+| OS Cordova Loader | Loads the Cordova engine on your app. |
+| OS Deeplinks   | Opens hyperlinks to specific screens of your app. |
+| OS DB Upgrader | Manages the local storage of your app. |
+| OS Manifest    | Provides a parser for the app manifest. |
+| OS Pre-Bundle  | Handles the content of the app pre-bundled resources. |
+| OS Security    | Provides the APIs for the security layer. |
+| Mobile AppFeedback | Enables the user to invoke App Feedback for submitting feedback about the app. |
+| NetworkStatus  | Lets your app know when the device is online/offline and informs of the type of network available (for example, WiFi, 3G, 4G). |
 
 While you may see the names of these built-in plugins in the [native mobile shell logs](<../../monitor-and-troubleshoot/monitoring-an-environment.md>) they're not user-configurable. The only exception is [Mobile AppFeedback](<../../monitor-and-troubleshoot/app-feedback/user-feedback-enable.md>), which is present in the native shell if you enable the App Feedback feature.
-

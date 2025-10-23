@@ -36,7 +36,7 @@ To set up the OutSystems log streaming service, using Datadog as the destination
 
 1. Get the OpenTelemetry Collector endpoint and authentication credentials.
 
-Once you've completed these steps, go to LifeTime and [configure the log streaming service](lifetime-streaming.md). 
+Once you've completed these steps, go to LifeTime and [configure the log streaming service](lifetime-streaming.md).
 
 ## Additional resources
 

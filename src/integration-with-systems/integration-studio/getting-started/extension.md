@@ -26,7 +26,6 @@ An **extension** is a set of actions, structures, and entities, defined in Integ
 
 An extension can be used by any module that has access to it and can be published in multiple installations of the platform.
 
-
 ## Extension Elements
 
 An extension is composed by actions, structures, entities, and resources as presented below.

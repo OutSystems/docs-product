@@ -42,15 +42,15 @@ You can use the **OsAlertExceptionHandler** function to handle the JavaScript er
 The arguments are:
 
 * **event:** jQuery event.
-* **exception:** JavaScript exception instance that raised the error. For more details about the error use the `exception.name` and `exception.message` properties. 
-* **errorCode:** Integer that identifies the type of the error (optional argument). 
+* **exception:** JavaScript exception instance that raised the error. For more details about the error use the `exception.name` and `exception.message` properties.
+* **errorCode:** Integer that identifies the type of the error (optional argument).
 * **origin:** JavaScript function where the error was trapped (optional argument).
 
 The following error codes are predefined and you can use them in the logic of your function:
 
-* **outsystems.osErrorCodes.UserJavascriptError:** Occurs during the execution of the **RunJavaScript** action of the **HTTPRequestHandler** extension in an Action Flow or during an Ajax refresh of an unescaped expression with '&lt;script&gt;' tags. 
-* **outsystems.osErrorCodes.ConnectionError:** This is a connection error and can occur at the beginning or during an Ajax request to the server. 
-* **outsystems.osErrorCodes.SystemJavascriptError:** Occurs when an unexpected exception is raised while executing an OutSystems' Ajax JavaScript. 
+* **outsystems.osErrorCodes.UserJavascriptError:** Occurs during the execution of the **RunJavaScript** action of the **HTTPRequestHandler** extension in an Action Flow or during an Ajax refresh of an unescaped expression with '&lt;script&gt;' tags.
+* **outsystems.osErrorCodes.ConnectionError:** This is a connection error and can occur at the beginning or during an Ajax request to the server.
+* **outsystems.osErrorCodes.SystemJavascriptError:** Occurs when an unexpected exception is raised while executing an OutSystems' Ajax JavaScript.
 
 ## How to Register the Error Handler Function
 

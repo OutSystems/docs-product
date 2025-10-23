@@ -47,7 +47,7 @@ All the remaining [O11 user management system entities](https://success.outsyste
 
 ### User management functionality not available in ODC { #not-available }
 
-Following are O11 user management system actions, extensions and APIs that aren't available in ODC because they are incompatible with ODC architecture. 
+Following are O11 user management system actions, extensions and APIs that aren't available in ODC because they are incompatible with ODC architecture.
 
 #### System actions incompatible with ODC architecture
 

@@ -22,14 +22,14 @@ topic:
 
 When you consume REST API methods in your module, OutSystems automatically creates the Structures that define the information held by the input and output parameters. The name of each Structure is generated from:
 
-* The HTTP Request type 
-* The method name 
+* The HTTP Request type
+* The method name
 * If it will hold a Request or a Response
 
 The data type of each input or output parameter is [mapped into an OutSystems data type](<../../../ref/integration-with-systems/rest-apis/consumed-rest-api/mapping.md>).
 
 For example, consider the following consumed REST API Method from Twitter:
-    
+
 HTTP Request type: `POST`  
 URL: `https://api.twitter.com/1.1/account/settings.json?lang={mylanguage}`  
 Response:  
@@ -60,7 +60,7 @@ For example, the Structure name might change and get new attributes. The methods
 ### Reusing a Structure Example
 
 Considering the previous Twitter's REST API example, we will now add the GetSettings method of the same REST API, keeping only some relevant response parameters:
-    
+
 HTTP Request type: `GET`  
 URL: `https://api.twitter.com/1.1/account/settings.json`  
 Response:
@@ -83,7 +83,7 @@ As the existing "PostSettingsResponse" Structure is compatible with the new meth
 ### Creating a New Structure Example
 
 The following example adds a larger number of parameters to the Response example of the "GetSettings" method and removes one parameter that was already there:
-    
+
 ```json
 {
     "language": "en",

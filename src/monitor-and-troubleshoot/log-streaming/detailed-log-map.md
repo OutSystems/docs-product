@@ -165,7 +165,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |Type|log.attributes.http.method|Text|One of: SOAP (Consume); SOAP (Expose); REST (Consume); REST (Expose).|
 |N/A|log.attributes.outsystems.log.type|Text|Type of log: Integration. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
-## Integration detail 
+## Integration detail
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
@@ -226,7 +226,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |Espace_Name|resource.attributes.service.name|Text|The name of the modulee.|
 |Executed_by|resource.attributes.host.name|Text|Front-end server that originated the log.|
 |Instant|@timestamp|Date Time|Time of log generation in the front end (server log) or time of log generation in the mobile device (client log).|
-|Msisdn|Msisdn||Text|Cell phone number if screen belongs to a SMS flow.|
+|Msisdn|Msisdn|Text|Cell phone number if screen belongs to a SMS flow.|
 |Request_key|log.attributes.outsystems.request.key|GUID|Key of the request that originated the log. Correlation field of the several log types to a single request.|
 |Screen|log.attributes.outsystems.log.screen.name|Text|Name of the screen as declared in the eSpace where it's present. For SMS Flows, name of the SMS Node.|
 |Screen_Type|log.attributes.outsystems.log.screen.type|Text|Type of screen (WEB, MOBILE).|

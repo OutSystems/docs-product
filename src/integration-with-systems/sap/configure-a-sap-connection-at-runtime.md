@@ -23,11 +23,11 @@ When developing an application integrated with SAP, you define a default connect
 
 The steps to configure a SAP connection in an environment at runtime are the following:
 
-1. Go to the management console of your OutSystems environment (Service Center). 
-1. Go to Factory section and open your application. 
-1. Open the module containing your SAP integration. 
-1. Select the Integrations tab and click on the SAP connection name to edit it. 
-1. Configure the SAP connection to point to the SAP system you want. 
-1. Click Apply. 
+1. Go to the management console of your OutSystems environment (Service Center).
+1. Go to Factory section and open your application.
+1. Open the module containing your SAP integration.
+1. Select the Integrations tab and click on the SAP connection name to edit it.
+1. Configure the SAP connection to point to the SAP system you want.
+1. Click Apply.
 
 Your SAP integration will start using the SAP connection you have just configured.

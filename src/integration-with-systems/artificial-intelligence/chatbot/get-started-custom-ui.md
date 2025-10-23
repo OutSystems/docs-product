@@ -20,7 +20,7 @@ topic:
 
 # Create custom chatbot UI
 
-The OutSystems.AI Chatbot component comes with ChatbotAdvanced block that lets you create a custom user interface, if the pre-built UI in Chatbot Block and cards don't fit your use case. 
+The OutSystems.AI Chatbot component comes with ChatbotAdvanced block that lets you create a custom user interface, if the pre-built UI in Chatbot Block and cards don't fit your use case.
 
 The ChatbotAdvanced integrates data structures and actions from the OutSystems.AI Chatbot component, but you need to create local variables, actions, and logic to handle the UI interactions and requests to Azure. Here is an example:
 
@@ -34,7 +34,7 @@ Here is a step-by-step example guide to create a custom user interface for a cha
 
     ![Service Studio window showing how to add Chatbot Advanced Block and SendMessage Action as dependencies](images/chatbot-add-reference-advanced-block.png "Adding Chatbot Advanced Block Reference")
 
-2. Go to **Interface** > **UI Flows** > **Chatbot** > **Components** and drag the **ChatbotAdvanced** Block to the Screen. Then, go to the Block properties and enter your secret key in the **DirectLineSecret**. If you're having difficulties locating the bloc, use the widget three to navigate to **Components\ChatbotAdvanced**.
+1. Go to **Interface** > **UI Flows** > **Chatbot** > **Components** and drag the **ChatbotAdvanced** Block to the Screen. Then, go to the Block properties and enter your secret key in the **DirectLineSecret**. If you're having difficulties locating the bloc, use the widget three to navigate to **Components\ChatbotAdvanced**.
 
     ![Screenshot of the Chatbot Block properties with DirectLineSecret field highlighted](images/chatbot-advanced-ui-direct-line-ss.png "Chatbot Block Properties")
 
@@ -44,9 +44,9 @@ Here is a step-by-step example guide to create a custom user interface for a cha
 
     </div>
 
-4. Create two new Screen Actions, one to handle the **Initialize** event and another to handle the **MessageReceive** event. Do this by going to the ChatBotAdvanced Block properties, and selecting **Events** > **Handler** > **New Client Action** for both **Initialize** and **MessageReceived**. You now have actions **ChatbotAdvancedInitialize** and **ChatbotAdvancedMessageReceived**.
+1. Create two new Screen Actions, one to handle the **Initialize** event and another to handle the **MessageReceive** event. Do this by going to the ChatBotAdvanced Block properties, and selecting **Events** > **Handler** > **New Client Action** for both **Initialize** and **MessageReceived**. You now have actions **ChatbotAdvancedInitialize** and **ChatbotAdvancedMessageReceived**.
 
-5. Add the following local variables to the Screen:
+1. Add the following local variables to the Screen:
 
     * **DLConversation** of the DLConversation data type.
     * **ChannelAccount** of the ChannelAccount data type.
@@ -54,13 +54,13 @@ Here is a step-by-step example guide to create a custom user interface for a cha
     * **MessageSent** of the text data type.
     * **MessageReceived** of the text data type.
 
-5. In the Screen Action handling Initialize, add an **Assign** tool. Assign **DLConversation = Conversation** and **ChannelAccount = User**. 
+1. In the Screen Action handling Initialize, add an **Assign** tool. Assign **DLConversation = Conversation** and **ChannelAccount = User**.
 
     ![Service Studio screen showing the initialization setup with DLConversation and ChannelAccount assignments](images/chatbot-advanced-ui-init-config-ss.png "Chatbot Initialization Configuration")
 
-6. In the **ChatbotAdvancedMessageReceived** action, use a **ListAppend** to append the received message (the input parameter **Message**) to the list of messages. Also, add an Assign tool to the flow and assign **MessageReceived = Message.Text**, as **Message.Text** is the latest reply from the chatbot you want to show in the user interface.
+1. In the **ChatbotAdvancedMessageReceived** action, use a **ListAppend** to append the received message (the input parameter **Message**) to the list of messages. Also, add an Assign tool to the flow and assign **MessageReceived = Message.Text**, as **Message.Text** is the latest reply from the chatbot you want to show in the user interface.
 
-7. Create logic to send the message to the Azure bot service. Start by adding a new Client Action to the Screen. In the example this Client Action is **SendMessageToAzure**. Then, navigate to **Logic** > **Client Actions** > **Chatbot** and drag the **SendMessage** Client Action to the flow. In the properties of the **SendMessage** action, set the values for:
+1. Create logic to send the message to the Azure bot service. Start by adding a new Client Action to the Screen. In the example this Client Action is **SendMessageToAzure**. Then, navigate to **Logic** > **Client Actions** > **Chatbot** and drag the **SendMessage** Client Action to the flow. In the properties of the **SendMessage** action, set the values for:
 
     * **ConversationId**. Use the **ConversationId** from previously created local variable **DLConversation** and assign **ConversationId = DLConversation.ConversationId**.
     * **DirectLineSecret**. Use the same value as for the **DirectLineSecret** in **ChatbotAdvanced** Block properties.
@@ -69,8 +69,8 @@ Here is a step-by-step example guide to create a custom user interface for a cha
 
     ![Service Studio screen displaying the configuration of SendMessage action for Azure bot service](images/chatbot-advanced-ui-sendmessage-config-ss.png "Configuring SendMessage Action")
 
-8. Add the user interface. In the example there are the following elements:
-    
+1. Add the user interface. In the example there are the following elements:
+
     * A text area field to enter a message that you send to the bot service, with the variable set to **MessageSent**.
     * A text area field to show the reply, with the variable set to **MessageReceived**.
     * A button to send the message to the bot service by triggering the **SendMessageToAzure** action.

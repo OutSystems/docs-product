@@ -18,7 +18,6 @@ coverage-type:
 
 # Handle the submitted feedback
 
-
 When you [enable user feedback for your apps](user-feedback-enable.md), the App Feedback application collects all the feedback your users send for each app. To act upon the feedback received, follow the steps below.
 
 1. Open the LifeTime console at `https://<your environment>/Lifetime`.
@@ -35,7 +34,7 @@ When you [enable user feedback for your apps](user-feedback-enable.md), the App 
 
 1. Sign in with the credentials of a user account defined in the Users app (`https://<your environment>/Users`), that has Administrator or FeedbackManager permissions.
 
-1. Click the **Feedback** section, to see a list of all the feedback submitted by users. 
+1. Click the **Feedback** section, to see a list of all the feedback submitted by users.
 
 1. On the right side of the screen, ensure the selection of the drop-down menu is **Open**. This option allows you to display open requests, closed ones, or both.
 
@@ -44,7 +43,7 @@ When you [enable user feedback for your apps](user-feedback-enable.md), the App 
 1. Select one of the listed feedbacks to check the information provided by the user, and click **Open**.
 
     A window with the details opens, providing the feedback from the user and screenshot of the app screen.
-    
+
     ![Detailed view of user feedback with screenshot in the App Feedback application](images/app-handle-feedback-details.png "Feedback Details")
 
 1. To open the screen directly in Service Studio for acting upon the users' feedback, click **CHANGE THIS SCREEN**.

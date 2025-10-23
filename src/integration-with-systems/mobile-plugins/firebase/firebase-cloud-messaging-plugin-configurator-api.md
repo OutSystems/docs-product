@@ -22,9 +22,9 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-This article applies only to Firebase Cloud Messaging plugin version 3.0.1 and older. These old versions use Cloud Messaging Configurator REST APIs to manage the notifications. 
+This article applies only to Firebase Cloud Messaging plugin version 3.0.1 and older. These old versions use Cloud Messaging Configurator REST APIs to manage the notifications.
 
-The Cloud Messaging Configurator REST APIs, version 3.0.1 and older, are deprecated. This means that the **v2** and **v1** endpoints are no longer functional. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref). 
+The Cloud Messaging Configurator REST APIs, version 3.0.1 and older, are deprecated. This means that the **v2** and **v1** endpoints are no longer functional. For more information, see [Firebase Cloud Messaging HTTP protocol](https://firebase.google.com/docs/cloud-messaging/http-server-ref).
 
 OutSystems recommends that you migrate to [Firebase Cloud Messaging plugin](firebase-messaging.md) version 4.0.0 and newer by June 2024.  
 
@@ -165,7 +165,7 @@ As part of the notification experience, the developer might want to control the 
 
 * For iOS you can use the **GetBadgeNumber** action to retrieve the current badge number and the **SetBadgeNumber** to specify a given number to be shown on the app icon badge.
 
-* For Android you can only specify a given badge number after receiving a notification. Thus, you can use the **SendLocalNotification** action and set the badge number through the action parameter *BadgeNumber*.
+* For Android you can only specify a given badge number after receiving a notification. Thus, you can use the **SendLocalNotification** action and set the badge number through the action parameter _BadgeNumber_.
 
 <div class="info" markdown="1">
 
@@ -192,17 +192,18 @@ OutSystems offers two versions for Cloud Messaging Configurator REST APIs based 
 We have 3 types of custom actions:
 
 1. **Internal route** - Sends an event to be handled by the app, similar to a basic notification click.
-* For this you must check the Manage the experience of custom actions. 
 
-2. **Web route** - Opens a given URL in the device’s browser.
+* For this you must check the Manage the experience of custom actions.
 
-3. **App route** - Opens a route in an external app.
+1. **Web route** - Opens a given URL in the device’s browser.
 
-4. **Reply field** - Opens a text field that allows the user to send a text directly to the app.
+1. **App route** - Opens a route in an external app.
+
+1. **Reply field** - Opens a text field that allows the user to send a text directly to the app.
 
 ## Enable notifications with custom sound { #custom-sounds }
 
-To enhance your notification with custom sounds, you must put the .wav files you want to use as notification sounds into a .zip file called **sounds.zip**. Then, upload the .zip file to the app’s Resources folder. Additionally, you must use the **v2 REST API**, using the *Sound* parameter inside the *Notification* parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** methods.
+To enhance your notification with custom sounds, you must put the .wav files you want to use as notification sounds into a .zip file called **sounds.zip**. Then, upload the .zip file to the app’s Resources folder. Additionally, you must use the **v2 REST API**, using the _Sound_ parameter inside the _Notification_ parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** methods.
 
 It is important to note the following requirements for custom sounds:
 
@@ -274,4 +275,3 @@ Firebase SDKs for Android and iOS do not support subscribing to topics for which
 For both iOS and Android.
 
 Using the Firebase Cloud Messaging in combination with Firebase Performance requires v1.0.4 (or higher) of the latter.
-

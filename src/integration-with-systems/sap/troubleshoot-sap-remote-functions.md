@@ -44,7 +44,7 @@ If you need more details on what is sent and received from SAP, change the loggi
 1. Go to the management console of your OutSystems environment (Service Center).
 1. Go to Factory section and open your application.
 1. Open the module containing your SAP integration.
-1. Select the Integrations tab and click on the SAP connection name to edit it. 
+1. Select the Integrations tab and click on the SAP connection name to edit it.
 1. Set the Logging Level to `Full`.
 1. Click Apply.
 

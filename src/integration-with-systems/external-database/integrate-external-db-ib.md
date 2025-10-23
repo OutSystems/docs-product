@@ -252,8 +252,6 @@ If you are integrating with MongoDB, follow these steps:
 
     </div>
 
-
-
 1. Click **Next**.
 
 <div class="info" markdown="1">
@@ -290,18 +288,18 @@ To help you decide which default behavior is best for your new integration with 
 
 |Type | Platform default value | Integration Builder default value |
 |---|---|---|
-|Binary Data|Byte array with no elements|Byte array with no elements|N/A|
-|Boolean|False|False|
-|Currency|0.0|N/A|
-|Date|#1900-01-01#|#1900-01-01#|
+|Binary Data|Byte array with no elements|Byte array with no elements |
+|Boolean|False|False |
+|Currency|0.0|N/A |
+|Date|#1900-01-01#|#1900-01-01# |
 |Time|#00:00:00#|#00:00:00#|#12:20:56#|
-|Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00#|
-|Integer|0|-1999999991|
-|Long Integer|0|-8999999999999998|
-|Decimal|0.0|99999993.14159356|
-|Email|"" (empty string)|`"<ib>NULL</ib>"`|
-|Phone Number|"" (empty string)|`"<ib>NULL</ib>"`|
-|Text|"" (empty string)|`"<ib>NULL</ib>"`|
+|Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00# |
+|Integer|0|-1999999991 |
+|Long Integer|0|-8999999999999998 |
+|Decimal|0.0|99999993.14159356 |
+|Email|"" (empty string)|`"<ib>NULL</ib>"` |
+|Phone Number|"" (empty string)|`"<ib>NULL</ib>"` |
+|Text|"" (empty string)|`"<ib>NULL</ib>"` |
 
 ### Structure of generated integrations
 

@@ -20,7 +20,7 @@ coverage-type:
 
 # Extension Life Cycle
 
-The integration process revolves around the extension life cycle. The process steps are executed in both OutSystems  and third party IDE component environments. The illustration below depicts the most significant steps, showing them next to the component where they are executed. 
+The integration process revolves around the extension life cycle. The process steps are executed in both OutSystems  and third party IDE component environments. The illustration below depicts the most significant steps, showing them next to the component where they are executed.
 
 ![Diagram illustrating the extension life cycle in OutSystems and third-party IDE environments](images/extension-life-cycle.png "Extension Life Cycle Diagram")
 

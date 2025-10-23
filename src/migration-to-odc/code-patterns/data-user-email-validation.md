@@ -33,9 +33,9 @@ Follow these steps to fix the end users' email addresses:
 
 1. In the [Users app](../../user-management/end-user-manage/accessing-users.md), export your end users to an Excel file.  
 
-2. Identify the users with empty or duplicate email addresses.  
+1. Identify the users with empty or duplicate email addresses.  
 
-3. Go back to the Users app and add or modify the identified users to ensure their email addresses are valid and unique.
+1. Go back to the Users app and add or modify the identified users to ensure their email addresses are valid and unique.
 
 <div class="info" markdown="1">
 

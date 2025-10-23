@@ -91,7 +91,7 @@ Your browser may ask you to confirm that you want to open **Service Studio**. In
 
 You can change the status of the findings individually or in bulk.
 
-![Screenshot showing the bulk selection feature for managing findings status in AI Mentor Studio](images/bulk-selection-ams.png "Bulk Selection of Findings in AI Mentor Studio") 
+![Screenshot showing the bulk selection feature for managing findings status in AI Mentor Studio](images/bulk-selection-ams.png "Bulk Selection of Findings in AI Mentor Studio")
 
 After selecting one or multiple findings, you can change the status of the findings depending on your action:
 

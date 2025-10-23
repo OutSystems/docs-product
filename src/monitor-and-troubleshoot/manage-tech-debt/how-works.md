@@ -26,7 +26,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 </div>
 
-AI Mentor Studio includes the following components: 
+AI Mentor Studio includes the following components:
 
 AI Mentor Studio SaaS
 :   A "Software as a Service" that processes and shows all data collected by the AI Mentor Studio LifeTime Plugin.
@@ -34,7 +34,7 @@ AI Mentor Studio SaaS
 AI Mentor Studio LifeTime Plugin
 :   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the AI Mentor Studio SaaS.  
 
-## Communication 
+## Communication
 
 The communication between AI Mentor Studio's components differs depending on your authentication method.
 
@@ -169,8 +169,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
 
 **<sup>1</sup>Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
-
-#### View apps and modules 
+#### View apps and modules
 
 <table>
   <thead>
@@ -394,7 +393,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
   </tr>
   <tr>
    <td><b>List Application</b>
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Monitor and Add Dependencies</b>
@@ -402,7 +401,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
   </tr>
   <tr>
    <td><b>Open and Debug Applications </b>
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
@@ -450,7 +449,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
    <td><b>No Access</b>
    </td>
    <td rowspan="4" colspan="3">No
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Access</b>
@@ -492,7 +491,6 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
 
 ### Maintenance and operations permissions { #maint-op-permissions }
 
-
 #### Ignore modules
 
 <table>
@@ -517,7 +515,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
    <td><b>Open and Debug Applications or lower</b>
    </td>
    <td colspan="3">No
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
@@ -561,11 +559,11 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
    <td><b>Open and Debug Applications or lower</b>
    </td>
    <td rowspan="2" colspan="3">No
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Full Control</b>
@@ -577,7 +575,6 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
   </tr>
     </tbody>
 </table>
-
 
 #### Override module AI auto-classification
 
@@ -603,7 +600,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
    <td><b>Open and Debug Applications or lower</b>
    </td>
    <td rowspan="2" colspan="3">No
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
@@ -647,7 +644,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
    <td><b>Open and Debug Applications or lower</b>
    </td>
    <td rowspan="2" colspan="3">No
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
@@ -688,7 +685,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
    <td><b>Open and Debug Applications or lower</b>
    </td>
    <td rowspan="2" colspan="3">No
-   </td>   
+   </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
@@ -704,4 +701,3 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
   </tr>
   </tbody>
 </table>
-

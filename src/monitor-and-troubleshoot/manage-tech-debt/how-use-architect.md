@@ -28,7 +28,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 As an architect, the AI Mentor Studio provides you with an overview of your organization’s technical debt.
 
-From the Apps canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problematic areas. 
+From the Apps canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problematic areas.
 
 This guide assumes the following:
 
@@ -83,7 +83,7 @@ To get more details, click the mini chart.
 
 ![Detailed chart in AI Mentor Studio showing the technical debt trendline and trend value over time.](images/use-chart-ams.png "Detailed Technical Debt Chart")
 
-The technical debt chart is a 100% stacked chart with a trend value (X axis) indicating the level of technical debt and a trendline (Y axis) that tells you whether your technical debt is increasing or decreasing with time. 
+The technical debt chart is a 100% stacked chart with a trend value (X axis) indicating the level of technical debt and a trendline (Y axis) that tells you whether your technical debt is increasing or decreasing with time.
 
 Ideally, you want your technical debt chart all green with a horizontal trendline. Or, a chart that's not so green but has a high negative trendline which indicates that the technical debt is being actively worked on.
 

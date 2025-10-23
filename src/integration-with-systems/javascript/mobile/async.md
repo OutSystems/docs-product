@@ -105,12 +105,12 @@ The "result" parameter is an object that contains the output parameters of the c
 
 You can also act upon an unhandled error or a call to "$reject()" occurred in the asynchronous client action. To do that, do one of the following:
 
-1. Add a second argument to the "then()" method. Its full signature is "then(onFullfilled, onRejected)", and the "onRejected" is a callback function called when "$reject()" is called in the asynchronous action, or 
+1. Add a second argument to the "then()" method. Its full signature is "then(onFullfilled, onRejected)", and the "onRejected" is a callback function called when "$reject()" is called in the asynchronous action, or
 1. Chain the return value of the "then()" method, which is also a promise, with a "catch(onRejected)" method, that will handle the error case – this chaining process is called _composition_.
 
 Example using "catch(onRejected)":
 
-```javascript 
+```javascript
 // Using this approach, success/failure is signaled through the "Success" output parameter
 $actions.GlobalAsyncAction().then(function(result) {
   $parameters.Success = result.Success;

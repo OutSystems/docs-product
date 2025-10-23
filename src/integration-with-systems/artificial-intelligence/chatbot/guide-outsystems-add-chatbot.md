@@ -21,7 +21,7 @@ topic:
 
 # Add a chatbot UI block to your app
 
-This is a step-by-step guide to add the chatbot UI block to an OutSystems app. This adds a chat window to your app. 
+This is a step-by-step guide to add the chatbot UI block to an OutSystems app. This adds a chat window to your app.
 
 <div class="info" markdown="1">
 
@@ -29,11 +29,10 @@ Just starting? Check the [chatbot configuration wizard](configuration-wizard.md)
 
 </div>
 
-
 1. Create a new Reactive Web App and add a module of the same type to it. You can also use an existing Reactive Web App.
 
 1. Open the **Manage Dependencies** dialog (press **Ctrl+Q**). Search for `Chatbot`. Select **Chatbot** in the producers pane, and then select all elements in the elements pane. Click **Apply**.
-       
+
     ![Screenshot showing how to add Chatbot references in the Manage Dependencies dialog](images/chatbot-add-references-ss.png "Chatbot References")
 
     With this you add elements from the Chatbot component to create UI and configure the chatbot.
@@ -41,7 +40,7 @@ Just starting? Check the [chatbot configuration wizard](configuration-wizard.md)
 1. Add a Screen to the module. Alternatively, if you're using an existing app, open a Screen.
 
 1. Add the chatbot block to the Screen. Navigate to **Interface** > **(you app)** > **UI Flows** > **Chatbot** > **Components**. Drag the **Chatbot** Block to the Screen. The Chatbot preview now shows in the Screen.
-   
+
     ![Screenshot illustrating the process of dragging the Chatbot block to a Screen in the app interface](images/chatbot-drag-chatbot-block-ss.png "Adding Chatbot Block to Screen")
 
 1. Select the Chatbot component Block. In the properties, locate **DirectLineSecret**. Paste the direct line key from Azure, surrounded by the quotation marks.
@@ -70,7 +69,7 @@ Just starting? Check the [chatbot configuration wizard](configuration-wizard.md)
 
     </div>
 
-To have a functional chatbot, you also need a logic to handle the responses. [Create an FAQ chatbot for your app](get-started-faq-chatbot.md) provides detailed instructions for an FAQ bot. If you're implementing advanced use cases, check 
+To have a functional chatbot, you also need a logic to handle the responses. [Create an FAQ chatbot for your app](get-started-faq-chatbot.md) provides detailed instructions for an FAQ bot. If you're implementing advanced use cases, check
 [Create advanced logic for more AI functionalities](get-started-advanced-chatbot.md).
 
 ## Troubleshooting

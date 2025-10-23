@@ -24,7 +24,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 </div>
 
-The **Infrastructure overview** dashboard gives architects and development team leaders a better understanding of the technical debt across their factory: 
+The **Infrastructure overview** dashboard gives architects and development team leaders a better understanding of the technical debt across their factory:
 
 * What is the current status
 * How is the technical debt distributed
@@ -126,7 +126,7 @@ For example, for a specific date:
 
 * If the number of findings is much higher than the technical debt for the same date, it means that those findings have a low weight on the overall technical debt.
 
-* A technical debt variation with values around 0% doesn’t mean that you don’t have technical debt. It means that it didn’t vary from the previous day. 
+* A technical debt variation with values around 0% doesn’t mean that you don’t have technical debt. It means that it didn’t vary from the previous day.
 
 ### Check the applications with the highest technical debt { #highest-apps }
 

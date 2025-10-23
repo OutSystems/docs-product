@@ -56,9 +56,9 @@ In runtime, JavaScript in O11 apps is executed in a specific order depending on 
 
 1. Module required scripts
 
-2. Block required scripts
+1. Block required scripts
 
-3. Screen required scripts
+1. Screen required scripts
 
 ## Demo
 

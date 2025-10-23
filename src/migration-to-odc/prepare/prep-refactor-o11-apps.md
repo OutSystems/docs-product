@@ -77,7 +77,7 @@ To adjust your O11 apps and make them ODC-compatible, follow these steps:
     1. To open the pattern documentation,  select **Learn more**.
 
     1. Go back to the Conversion Assessment Tool console. For each finding:
-    
+
         1. Click the **Open in Service Studio** icon.
 
             ![Screenshot of how to open the finding in Service Studio.](images/open-finding-at.png "Open Service Studio from the list of findings")
@@ -99,5 +99,3 @@ To adjust your O11 apps and make them ODC-compatible, follow these steps:
 * Perform acceptance tests for the updated O11 apps in QA
 
 After deploying and testing your O11 apps, you can validate if the apps in your conversion plan [have dependencies on apps in other plans](../plan/plan-define-migration-plans.md#dependencies), so you can better coordinate their [conversion to ODC](../execute/execute-intro.md).
-
-

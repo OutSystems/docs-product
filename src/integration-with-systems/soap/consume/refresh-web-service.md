@@ -30,9 +30,9 @@ To change the services consumed  from a SOAP Web Service or to modify the list o
 
 1. Select all methods you want to consume. Note that:
 
-    * The list of methods you select replaces the list you consumed previously; be sure to select all methods you want to consume, even if they haven't changed. 
+    * The list of methods you select replaces the list you consumed previously; be sure to select all methods you want to consume, even if they haven't changed.
     * Refreshing does NOT wipe out authentication and On Before Request settings. These settings are not impacted when.
     * Methods no longer in the WSDL have an **(Deleted)** label; these will no longer exist in the service.  
-    * New methods include a **(New)** label. 
+    * New methods include a **(New)** label.
 
 1. Click **Confirm** to consume the selected methods.

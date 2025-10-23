@@ -101,7 +101,6 @@ You must provide the plugin configuration file as settings in the Service Studio
 
     ![Shows how to add Firebase configuration files to a mobile app in Service Studio](images/firebase-resources-ss.png "Firebase Configuration Files in Service Studio")
 
-
 1. In your app's Extensibility Configurations, add the following:
 
         {
@@ -133,9 +132,9 @@ To trigger the native AppTrackingTransparency framework, use the **RequestTracki
 
 <div class="info" markdown="1">
 
-This Client action is only available on iOS, since the AppTrackingTransparency framework is an iOS-only feature. 
+This Client action is only available on iOS, since the AppTrackingTransparency framework is an iOS-only feature.
 
-</div> 
+</div>
 
 If you want to present an alert before the iOS tracking permission dialog, enable the parameter **ShowInformation** on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
 
@@ -184,7 +183,6 @@ Each event must include an `EventName` and can optionally include a list of keyâ
 To further illustrate this example, the following shows a typical usage of the `LogEvent` client action:
 
 ![Shows the Firebase Analytics LogEvent client action for a custom event](images/firebase-analytics-log-event-example-ss.png "Firebase Analytics LogEvent client action example")
-
 
 #### Ecommerce events
 

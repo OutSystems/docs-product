@@ -33,7 +33,7 @@ To configure Active Directory Federation Services (AD FS) as an external IdP, fo
 * Users exist in the server’s active directory’s user store.
 * The IdP initiated sign-on is activated on the AD FS server.You can check this using the following URL: ``https://<ADFShostname>/adfs/ls/idpinitiatedsignon``
 
-## Create applications in AD FS 
+## Create applications in AD FS
 
 To log into web tools such as LifeTime and Service Center using an external IdP, you must create a combination of [server apps](#create-a-server-app) and a Web API app in AD FS. Additionally, to log into desktop tools such as Service Studio and Integration Studio using an external IdP, you must create a combination of [native apps](#create-a-native-app) and a [Web API app](#create-a-web-api-for-the-native-app) in AD FS.
 
@@ -71,15 +71,15 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
     ![Screenshot showing the configuration of application permissions and scopes in AD FS](images/scopes-usr.png "Configuring Application Permissions in AD FS")
 
-1. Click **Next** and complete the setup. 
+1. Click **Next** and complete the setup.
 
     The application is created in Application Groups.
 
 1. Add the following **Issuance Transform Rules** for the newly created application to map the outgoing claims.
 
-    a. Right-click the app you just created and select **Properties**. 
+    a. Right-click the app you just created and select **Properties**.
 
-    b. Select the Web API application and click **Edit**. 
+    b. Select the Web API application and click **Edit**.
 
     ![Screenshot of the option to add issuance transform rules for a Web API app in AD FS](images/add-rulespweb-usr.png "Adding Issuance Transform Rules in AD FS")
 
@@ -93,7 +93,7 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
 ### Create a native app
 
-1. To set up the native application, right-click on the newly created app and select **Properties**. 
+1. To set up the native application, right-click on the newly created app and select **Properties**.
 
 1. Select the Server application and click **Add application**.
 
@@ -103,7 +103,7 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
 1. Add the following Redirect URIs for Mobile and Desktop applications:
     * ``integrationstudio://auth``
-    * ``servicestudiox11://auth``   
+    * ``servicestudiox11://auth``
     * ``https://experiencebuilder.outsystems.com/Authentication/OIDC_Callback``
     * ``https://workflowbuilder.outsystems.com/Authentication/OIDC_Callback``
     * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
@@ -115,13 +115,13 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
 ### Create a Web API for the native app
 
-1. Right-click on the  app and select **Properties**. 
+1. Right-click on the  app and select **Properties**.
 
     Three applications are displayed. A native application, a server application, and a Web API application.
 
 1. Click **Add application** to add a new Web API to map the native application and click **Next**.
 
-1. Set the **Identifier** as the native **Client Identifier** that was copied in step 5 of [Create a native app](#create-a-native-app). Click **Next**. 
+1. Set the **Identifier** as the native **Client Identifier** that was copied in step 5 of [Create a native app](#create-a-native-app). Click **Next**.
 
     Repeat step 7 to step 10 of the [Create a server app](#create-a-server-app) for this newly created Web API application.
 
@@ -129,7 +129,7 @@ The AD FS setup is now complete.
 
 **Note**: The following is an example of a well-known URL of the AD FS server:
 
- ``https://<ADFShostname>/adfs/.well-known/openid-configuration``. 
+ ``https://<ADFShostname>/adfs/.well-known/openid-configuration``.
 
 You can find your AD FS server endpoints by going to **Windows Administrative Tools** > **AD FS Management**> **Service > Endpoints**.
 
@@ -137,7 +137,7 @@ You can find your AD FS server endpoints by going to **Windows Administrative To
 
 1. Login to LifeTime and navigate to **User Management** > **Users** and click **New User**.
 
-1. Complete the user creation form. 
+1. Complete the user creation form.
 
     The **Username** must be as per the claim rule set in AD FS, for example, email.
 

@@ -30,7 +30,7 @@ Those responsible for planning, defining, and maintaining architectures for an o
 
 Fourth-generation language technology platforms boast a low code replacement for software development with drag-and-drop interface design and push-button database integration using pre-built components. However, [4GL](https://en.wikipedia.org/wiki/Fourth-generation_programming_language) also comes with pre-built drawbacks, not the least of which include sluggish operational performance, cybersecurity risks, and inaccessible support for third-party components.
 
-OutSystems is based on a visual domain specific language that is built on top of standard third generation language (3GL) programming elements. 
+OutSystems is based on a visual domain specific language that is built on top of standard third generation language (3GL) programming elements.
 
 It’s suited to develop anything from simple departmental applications to more complex enterprise applications, containing all of the necessary building blocks to implement sophisticated use cases from rich engaging UI experiences (mobile or web), headless backend services, workflows, or batch processing mechanisms. All this without the need to write a single line of code, only using drag and drop visual elements to build UI, business processes workflows, database modeling, or intricate logic to support your use case.
 
@@ -44,7 +44,7 @@ OutSystems provides out-of-the-box capabilities to integrate with external datab
 
 For other external systems OutSystems provides [Integration Studio](https://success.outsystems.com/Documentation/11/Reference/Integration_Studio), a design environment where developers with programming skills can create [extensions](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Extend_Logic_with_Your_Own_Code/Extension_Life_Cycle/Create_an_Extension) to bridge custom C# and .NET to OutSystems, expanding and enhancing its existing functionality and data model.
 
-An extension, as the term is used in Outsystems, is a specific set of actions, structures, entities, and resources that developers create in order to: 
+An extension, as the term is used in Outsystems, is a specific set of actions, structures, entities, and resources that developers create in order to:
 
 * Use custom-built .NET components to extend module functionality
 * Integrate with external systems to extend module functionality
@@ -66,7 +66,7 @@ The look and feel of the app is set in the OutSystems theme, which is part of th
 
 <iframe src="https://player.vimeo.com/video/997661972" width="750" height="547" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the OutSystems Theme Editor interface where users can customize application themes.</iframe>
 
-[Screen templates](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=2) for both web, mobile, and reactive apps provide theme-consistent UI and for such functions as dashboards, details, forms, galleries, lists, and onboarding. Each screen is populated with widgets and containers that can be modified and rearranged as required, including sample data that developers can use for testing on a computer or mobile phone. 
+[Screen templates](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=2) for both web, mobile, and reactive apps provide theme-consistent UI and for such functions as dashboards, details, forms, galleries, lists, and onboarding. Each screen is populated with widgets and containers that can be modified and rearranged as required, including sample data that developers can use for testing on a computer or mobile phone.
 
 ![Screenshot of OutSystems Service Studio displaying a variety of screen templates for web and mobile applications.](images/screen-templates-service-studio.png "OutSystems Screen Templates in Service Studio")
 
@@ -112,7 +112,7 @@ By [importing a library into an application](https://success.outsystems.com/Docu
 
 ## Extending the back-end
 
-OutSystems provides out-of-the-box capabilities to integrate with SQL Server, SQL Azure, Oracle, MySQL, PostgreSQL, Aurora PostgreSQL and DB2 iSeries so developers can combine local and external data sources in minutes. And, by invoking [Integration Builder](https://www.outsystems.com/platform/integration-builder/) from Service Studio, developers click through a configuration process to connect with external systems of reccord such as SAP, Salesforce, Microsoft Dynamics, Microsoft Dataverse, and Sharepoint Online. 
+OutSystems provides out-of-the-box capabilities to integrate with SQL Server, SQL Azure, Oracle, MySQL, PostgreSQL, Aurora PostgreSQL and DB2 iSeries so developers can combine local and external data sources in minutes. And, by invoking [Integration Builder](https://www.outsystems.com/platform/integration-builder/) from Service Studio, developers click through a configuration process to connect with external systems of reccord such as SAP, Salesforce, Microsoft Dynamics, Microsoft Dataverse, and Sharepoint Online.
 
 OutSystems simplifies the task of consuming and exposing functionality as standard SOAP web services and REST APIs without any hand-coding. More complex enterprise integration scenarios that require MQSeries, TIBCO, BizTalk, and other middleware ESBs, can be accomplished using web services.
 

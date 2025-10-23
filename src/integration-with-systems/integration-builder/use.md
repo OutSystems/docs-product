@@ -69,7 +69,7 @@ On your first login, Integration Builder greets you with an onboarding guide. To
 
     <div class="info" markdown="1">
 
-    If you are integrating with an **external database**, check out [how to Integrate with an external database using Integration Builder ](../external-database/integrate-external-db-ib.md)
+    If you are integrating with an **external database**, check out [how to Integrate with an external database using Integration Builder](../external-database/integrate-external-db-ib.md)
 
     </div>
 
@@ -112,9 +112,9 @@ To create a connection do the following:
     ![Dialog box for creating a new connection to an external system in Integration Manager](images/create-connection-im.png "Creating a Connection in Integration Manager")
 
 1. To connect the external system select one the following:
-    
+
     * For **SAP OData** **with administrator permissions**, enter a connection name and the basic elements for accessing the external system, then select **Create connection**.
-    
+
     * For **Salesforce**, **SharePoint Online**, **Microsoft Dataverse** or **Microsoft Dynamics 365** **with administrator permissions** in the external system, enter a connection name and the basic elements for accessing the external system, then select **Create connection**.
 
     * For **Salesforce**, **SharePoint Online**, or **Microsoft Dataverse** **without administrator permissions** in the external system, Integration Builder can send an email to the administrator requesting the information you need. Once you have the information, enter it into Integration Builder, and select **Create connection**.
@@ -123,11 +123,11 @@ To create a connection do the following:
 
     For more information on this step, review the articles for each integration:
 
-    *   [Salesforce integration](connectors/integration-salesforce.md#authorize-integration)
-    *   [SharePoint Online integration](connectors/integration-ms-sharepoint.md#authorize-integration)
-    *   [Microsoft Dynamics 365 integration](connectors/integration-ms-dynamics.md#authorize-integration)
-    *   [Microsoft Dataverse integration](connectors/integration-ms-dataverse.md#authorize-integration)
-    *   [SAP OData integration](connectors/integration-sap.md#authorize-integration)
+    * [Salesforce integration](connectors/integration-salesforce.md#authorize-integration)
+    * [SharePoint Online integration](connectors/integration-ms-sharepoint.md#authorize-integration)
+    * [Microsoft Dynamics 365 integration](connectors/integration-ms-dynamics.md#authorize-integration)
+    * [Microsoft Dataverse integration](connectors/integration-ms-dataverse.md#authorize-integration)
+    * [SAP OData integration](connectors/integration-sap.md#authorize-integration)
 
     </div>
 

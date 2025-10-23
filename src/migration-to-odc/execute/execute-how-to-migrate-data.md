@@ -33,7 +33,7 @@ Before you migrate the data and end users of the O11 apps in a [conversion plan]
 
 * Have gained an understanding about [migrating end users](execute-about-migrate-data.md#end-users), and ensured the end users are [ready to migrate](execute-about-migrate-data.md#ready).
 
-* In the Conversion Assessment Tool, solve all the findings related to [data patterns](../code-patterns/intro.md#data-patterns) 
+* In the Conversion Assessment Tool, solve all the findings related to [data patterns](../code-patterns/intro.md#data-patterns)
 
 * [Converted the O11 apps code to ODC](execute-about-migrate-code.md).
 
@@ -67,11 +67,11 @@ To migrate O11 app data and end-users to ODC, follow these steps:
 
 The data migration begins, and you can view the following details as the migration runs in the background:
 
-  * Migration logs as the data migration occurs.
+* Migration logs as the data migration occurs.
 
-  * The total number of migrated entities.
+* The total number of migrated entities.
 
-  * The time elapsed since the migration started.
+* The time elapsed since the migration started.
 
 Once the migration is complete, you can view a list of migrated entities for every ODC app.
 

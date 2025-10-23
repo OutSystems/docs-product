@@ -36,7 +36,7 @@ After a successful login in the IdP, Service Center displays an invalid login me
 
 In the case of an Invalid login SSO error, one possible reason could be a mismatch between the **username claim value** and **username** entered in the user profile. For example, if **preferred_username** is entered as a **username claim value** which contains an email, then the **username** field must also contain an email in the user profile.
 
-### 4. External IdP is not activated for all the environments configured in Lifetime 
+### 4. External IdP is not activated for all the environments configured in Lifetime
 
 When proxy settings exist for some, but not all environments in the infrastructure, OIDC activation might fail for the environments that don't have proxy setting. You must maintain the same proxy settings throughout all enviornments configured in Lifetime.
 
@@ -48,7 +48,8 @@ If the SS or IS log displays FailedToFetchServerIdentityTokens or FailedToRenewA
 
 ## Both username/password and SSO login options are available
 
-When you activate OIDC, and both username/password and SSO login options are available, this can be due to one of the following: 
+When you activate OIDC, and both username/password and SSO login options are available, this can be due to one of the following:
+
 * The factory configurations are not up to date.
 * All environments in the infrastructure are not up to date.
 * OIDC was activated before Lifetime upgrade v11.16.1. In this case, the user must deactivate and activate OIDC again.
@@ -90,4 +91,3 @@ If the **OpenID Connect metadata document** field is wrongly configured, an erro
 This error is often associated with the Client Secret configuration issue. Either there is a mismatch in the configured secret or the secret is deprecated and is therefore no longer valid.
 
 Also, when redirecting back to the Service Center, an internal error is displayed. This typically happens when there is an issue with the Client Secret configuration that prevents Service Center from exchanging tokens with the IdP.
-

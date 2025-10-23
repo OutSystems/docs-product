@@ -24,7 +24,7 @@ topic:
 
 <div class="info" markdown="1">
 
-Before you start using Service Studio, you need to have an OutSystems environment. See the available OutSystems Editions on the [Pricing and Editions](https://www.outsystems.com/pricing-and-editions/) document. 
+Before you start using Service Studio, you need to have an OutSystems environment. See the available OutSystems Editions on the [Pricing and Editions](https://www.outsystems.com/pricing-and-editions/) document.
 
 </div>
 
@@ -99,7 +99,7 @@ Contains the tools and widgets to develop the screens and logic of your applicat
 ### Development tabs
 
 This area displays the following tabs:
-    
+
 * TrueChange tab: displays the existing errors and warnings of your module. Double-clicking a specific error or warning takes you directly to that occurrence.
 
 * Debugger tab: use this tab to debug your application. Here you can start the debugger and see the content of your variables step by step.

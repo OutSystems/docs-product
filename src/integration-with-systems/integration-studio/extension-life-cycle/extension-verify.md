@@ -27,7 +27,6 @@ The Verify operation checks whether the extension is valid and ready to be publi
 
 1. **Compile the extension.** This step will generate the main DLL (Dynamic Link Library). For more information, see [Compile the extension](<extension-compile.md>).
 
-
 ## Verifying an Extension
 
 To verify your extension do the following:

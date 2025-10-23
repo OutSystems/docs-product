@@ -25,7 +25,7 @@ OutSystems facilitates documenting your SOAP Web Service by automatically genera
 Do the following:
 
 1. Fill in the "Description" property of the SOAP Web Service and the SOAP Web Service Methods.
-2. Publish the module. 
+1. Publish the module.
 
 After publishing, the documentation is available under the module URL at `<ModuleName>/<WebServiceName>.asmx`.
 
@@ -34,4 +34,3 @@ To open the SOAP Web Service documentation, right-click the tree element of your
 ![Right-clicking the SOAP Web Service in Service Studio to select 'Open Documentation'](images/soap-open-documentation-ss.png "Open SOAP Web Service Documentation")
 
 Note: The description of the Input and Output Parameters of the Web Service Methods is not used for documentation purposes.
-

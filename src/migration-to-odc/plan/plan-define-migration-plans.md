@@ -54,7 +54,7 @@ To create a conversion plan, follow these steps:
 
 1. Enter a **Name** for your conversion plan.
 
-1. Select the **ODC assets** to include in the plan. 
+1. Select the **ODC assets** to include in the plan.
 
     You can only select assets that aren’t included in other conversion plans yet.
 

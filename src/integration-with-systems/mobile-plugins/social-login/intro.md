@@ -55,7 +55,6 @@ This sample app shows you how to do the following:
 
 <div class="info" markdown="1">
 
-
 The next step in the development of a mobile app is to use the profile information (name, email, and profile picture) returned by the provider.
 Use these to create a user or manage a session on the OutSystems Users service.
 This isn't shown in the sample app but is possible by using the User systems database and its entity actions.
@@ -78,7 +77,6 @@ The following steps show how to enable your users to log in to your app using an
 
 ### Set up social login providers for your app { #set-providers }
 
-
 Before being able to provide the option for social login in an app, you need to configure the providers used in that app.
 For that, you **must** use the Social Login Configurator, a Reactive Web app that lets you set up a new provider to use with your app.
 
@@ -88,12 +86,12 @@ To configure a new provider or edit an existing one you need to add the followin
 
 #### Apple
 
-Relevant Information | Description
----|---
-Identifier | A public identifier your app on the provider side. It's a string type value available to any registered developer on Apple Developer. You can access the Identifier value on the Certificates, Identifiers, and Profiles pages of your app.
-Key ID | Key ID corresponding to your Secret (`.p8`).
-Team ID | Identifier of your team on Apple Developer.
-Secret (`.p8`) | A confidential code known only to your app and the authorization server. It's a string type value type value available to any registered developer on Apple Developer. You can access the Secret value during the configuration creation on Apple Developer.
+| Relevant Information | Description |
+| ---|--- |
+| Identifier | A public identifier your app on the provider side. It's a string type value available to any registered developer on Apple Developer. You can access the Identifier value on the Certificates, Identifiers, and Profiles pages of your app. |
+| Key ID | Key ID corresponding to your Secret (`.p8`). |
+| Team ID | Identifier of your team on Apple Developer. |
+| Secret (`.p8`) | A confidential code known only to your app and the authorization server. It's a string type value type value available to any registered developer on Apple Developer. You can access the Secret value during the configuration creation on Apple Developer. |
 
 Check the information on the OAuth configuration of Apple login in [Getting Started - Sign in with Apple - Apple Developer](https://developer.apple.com/sign-in-with-apple/get-started/).
 
@@ -103,10 +101,10 @@ You need to create a configuration for the different ways you want to distribute
 This is in the **Define your App Type** field.
 For example, if your app is distributed both as an Android app and as a PWA, you need two provider configurations.
 
-Relevant Information | Description
----|---
-Client ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on the Google Cloud Platform. You can access the ClientID value on the OAuth Consent tab on your app's Credentials screen.
-Client Secret | A confidential code known only to your app and the authorization server. It's a string type value type value available to any registered developer on the Google Cloud Platform. You can access the ClientSecret value on the OAuth Consent tab on your app's Credentials screen.
+| Relevant Information | Description |
+| ---|--- |
+| Client ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on the Google Cloud Platform. You can access the ClientID value on the OAuth Consent tab on your app's Credentials screen. |
+| Client Secret | A confidential code known only to your app and the authorization server. It's a string type value type value available to any registered developer on the Google Cloud Platform. You can access the ClientSecret value on the OAuth Consent tab on your app's Credentials screen. |
 
 While developing and testing your app, you can use the debug certificate fingerprint (SHA-1) that you obtain from your debug keystore file.
 Then use it for the Android OAuth client configuration on the Google Cloud Console.
@@ -124,19 +122,19 @@ You need to create a configuration for the different ways you want to distribute
 Define configuration in the **Define your App Type** field.
 Note that, for example, if your app is distributed both as an Android app and as a PWA, you need to create two provider configurations.
 
-Relevant Information | Description
----|---
-App ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on Meta for Developers. You can access the AppID value in your app's settings.
-App Secret | A confidential code known only to your app and the authorization server. It's a string type value available to any registered developer on Meta for Developers. You can access the AppSecret value in your app's settings.
+| Relevant Information | Description |
+| ---|--- |
+| App ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on Meta for Developers. You can access the AppID value in your app's settings. |
+| App Secret | A confidential code known only to your app and the authorization server. It's a string type value available to any registered developer on Meta for Developers. You can access the AppSecret value in your app's settings. |
 
 Check the information on the OAuth configuration of Facebook login in [Facebook Login - Documentation - Facebook for Developers](https://developers.facebook.com/docs/facebook-login/).
 
 #### Linkedin
 
-Relevant Information | Description
----|---
-Client ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on LinkedIn Developer. You can access the Identifier value on the "Authentication" side navigation link, underneath the header "Authentication Keys".
-Client Secret | A confidential code known only to your app and the authorization server. It's a string type value available to any registered developer on LinkedIn Developer. You can access the Identifier value on the "Authentication" side navigation link, underneath the header "Authentication Keys".
+| Relevant Information | Description |
+| ---|--- |
+| Client ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on LinkedIn Developer. You can access the Identifier value on the "Authentication" side navigation link, underneath the header "Authentication Keys". |
+| Client Secret | A confidential code known only to your app and the authorization server. It's a string type value available to any registered developer on LinkedIn Developer. You can access the Identifier value on the "Authentication" side navigation link, underneath the header "Authentication Keys". |
 
 Check the information on the OAuth configuration of LinkedIn login in [Sign In with LinkedIn documentation](https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/sign-in-with-linkedin?context=linkedin/consumer/context)
 
@@ -202,12 +200,12 @@ When you deploy your app to another environment make sure you set its value to t
 
 1. For the following social login providers and app type combinations:
 
-    Social Login provider | App Type
-    ---|---
-    Apple | Android
-    Google | iOS
-    Facebook | Android, iOS
-    LinkedIn | Android, iOS
+| Social Login provider | App Type |
+| ---|--- |
+| Apple | Android |
+| Google | iOS |
+| Facebook | Android, iOS |
+| LinkedIn | Android, iOS |
 
     you'll need to add configurations to your app's Extensibility Configurations:
 
@@ -258,14 +256,14 @@ After setting up your block handler, you can use the login scope by passing the 
 
 The login scope includes the following variables:
 
-Scope | Variable type | Description | Additional Info
----|---|---|---
-ID | Text | User's ID stored by the social login provider. |
-FirstName | Text | User's first name stored by the social login provider. |
-LastName | Text | User's last name stored by the social login provider. |
-Email | Text | User's email stored by the social login provider. |
-Picture | URL | User's profile picture stored by the social login provider. | Not available for Social Logins with Apple
-Token | Text | User's access token stored by the social login provider. |
+| Scope | Variable type | Description | Additional Info |
+| ---|---|---|--- |
+| ID | Text | User's ID stored by the social login provider. | |
+| FirstName | Text | User's first name stored by the social login provider. | |
+| LastName | Text | User's last name stored by the social login provider. | |
+| Email | Text | User's email stored by the social login provider. | |
+| Picture | URL | User's profile picture stored by the social login provider. | Not available for Social Logins with Apple |
+| Token | Text | User's access token stored by the social login provider. | |
 
 ### Create logic to map users to OutSystems end users { #map-users }
 

@@ -34,7 +34,6 @@ AI Mentor Studio uses a color code to help you visualize technical debt. Apps wi
 
 ![Screenshot showing the color-coded representation of apps based on their technical debt levels in AI Mentor Studio](images/apps-colors-ams.png "Color Coding of Apps by Technical Debt in AI Mentor Studio")
 
-
 ## Technical debt formula
 
 To translate the technical debt into the color code, the technical debt value must be calculated first. The technical debt value for each module, app, and the overall Factory Application Portfolio is calculated by summing up the number of findings per pattern, taking their defined weight into account. AI Mentor Studio uses the following formula to calculate the technical debt value:
@@ -63,7 +62,7 @@ AI Mentor Studio’s Apps area has a birds-eye view of your factory that shows a
 
 ### Report area
 
-In the Report area, you see each app’s technical debt level when filtering by app. This helps you focus on the apps that have the highest technical debt. 
+In the Report area, you see each app’s technical debt level when filtering by app. This helps you focus on the apps that have the highest technical debt.
 
 ![Report area in AI Mentor Studio showing different apps with their technical debt levels indicated by color coding](images/report-apps-color-ams.png "Technical Debt Levels by App in AI Mentor Studio Report Area")
 

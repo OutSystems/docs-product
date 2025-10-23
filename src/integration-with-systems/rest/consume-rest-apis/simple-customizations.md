@@ -27,10 +27,10 @@ topic:
 When consuming a REST API, you can add logic to customize the information sent in requests or received in responses. Use the following callbacks for this purpose:
 
 **OnBeforeRequest**
-:   Use to modify the information of the original request, such as the URL, the request text or the headers. 
+:   Use to modify the information of the original request, such as the URL, the request text or the headers.
 
 **OnAfterResponse**
-:   Use to modify the information of the original response, such as the status code or the response text. 
+:   Use to modify the information of the original response, such as the status code or the response text.
 
 In these callbacks you can access the information from the original request or response, manipulate it and assign a modified value to the customized request or response.
 
@@ -64,7 +64,7 @@ To customize specific parts of a [multipart/form-data request](consume-multipart
 
 ![Screenshot of the RequestParts attribute in the REST API editor](images/requestparts-ss.png "RequestParts Attribute")
 
-The following example shows the logic flow of an **OnBeforeRequest** callback that appends, removes, and edits a part from the request. In this example, you are editing the **Request.RequestParts** list. 
+The following example shows the logic flow of an **OnBeforeRequest** callback that appends, removes, and edits a part from the request. In this example, you are editing the **Request.RequestParts** list.
 
 ![Example logic flow in an OnBeforeRequest callback showing how to append, remove, and edit parts of a request](images/requestparts-action-ss.png "OnBeforeRequest Callback Logic Flow")
 
@@ -133,6 +133,3 @@ To customize the response after it has arrived:
     Review the API documentation to understand the expected response formats before making the API call.
 
     </div>
-
-
-

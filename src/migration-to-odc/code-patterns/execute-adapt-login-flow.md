@@ -55,7 +55,7 @@ To create a boilerplate ODC app to get the ODC elements you need, follow these s
 
 1. Create a new ODC app of the same type as your converted app.
 
-2. Ensure both the converted app and this new boilerplate ODC app are open in ODC Studio.
+1. Ensure both the converted app and this new boilerplate ODC app are open in ODC Studio.
 
 #### Step 2. Adapt Login screen and actions { #step-2 }
 
@@ -75,10 +75,10 @@ In your **converted app**, change the following:
 
     1. Replace the **OnInitialize** action with the **OnInitialize** action from **boilerplate app** > **Interface** > **UI Flows** > **Common** > **Login**.
 
-    1. Rename the **LoginOnClick** action to `Login`. 
+    1. Rename the **LoginOnClick** action to `Login`.
         This helps ODC Studio auto-heal some TrueChange errors.
 
-    1. Rename the **Username** local variable to `UserEmail`. 
+    1. Rename the **Username** local variable to `UserEmail`.
         This helps ODC Studio auto-heal some TrueChange errors.
 
     ![Screenshot showing the UserEmail local variable in the Login screen in ODC Studio.](images/rename-UserEmail-odcs.png "Screenshot of renaming local variable to UserEmail")
@@ -130,4 +130,3 @@ To add the reset password flow and email, follow these steps in your **converted
 1. In **converted app** > **Interface** > **UI Flows** folder, paste the **Email** UI flow, including the **ResetPassword** email, from **boilerplate app** > **Interface** > **UI Flows**.
 
 Once you adapt the login flows for the converted app, the end-users can reset the password on their first login and then log into the app.
-

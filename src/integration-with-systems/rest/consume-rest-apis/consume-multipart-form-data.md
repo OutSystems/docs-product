@@ -23,7 +23,7 @@ coverage-type:
 
 * Platform Server 11.19.0
 
-* Service Studio 11.53.40 
+* Service Studio 11.53.40
 
 Multipart/form-data allows you to submit binary data and multiple data types in a single request. For example, you can use these requests for file uploads and transferring a file with a JSON object.
 
@@ -32,13 +32,13 @@ For more information, see [Altering file upload limits in OutSystems apps](https
 
 Multipart requests combine one or more data sets into the body of a single request, separated by boundaries. A boundary is a unique string used to distinguish between these different data sets known as parts. Each part has its own section in the payload with internal HTTP headers.
 
-Consuming a multipart/form-data is a commonly used functionality in REST services. OutSystems supports this functionality as part of its native support of REST services. This means you can set the request format of a REST method to multipart/form-data. 
+Consuming a multipart/form-data is a commonly used functionality in REST services. OutSystems supports this functionality as part of its native support of REST services. This means you can set the request format of a REST method to multipart/form-data.
 
 When the **Request Format**property of a method is set to **Multipart/form-data**, the method can receive multiple inputs sent in the body of the request. For each part defined in the OpenAPI specification of the REST API method you are consuming, Service Studio creates an input, with its **Send In** property set to **Body**. Each one of the input data types correspond to the data type of the part specified in the specification.  
 
 For example, the OpenAPI specification below has the request set to multipart/form data with a list of parts (address, profileImage, and id) that have their content-type defined.
 
-![Example of an OpenAPI specification defining multipart form data with parts for address, profile image, and ID](images/api-spec-usr.png "OpenAPI Specification for Multipart/Form Data") 
+![Example of an OpenAPI specification defining multipart form data with parts for address, profile image, and ID](images/api-spec-usr.png "OpenAPI Specification for Multipart/Form Data")
 
 When you consume a REST API method, the corresponding fields, **Name**, **Data Type**, **Send In**, **Name in Request**, and **Content-Type in Multipart** for each part are automatically populated in Service Studio.
 
@@ -54,7 +54,7 @@ If no content-type is specified for a part, the **Content-Type in Multipart** fi
 
 **Note**: You can set the data type of each input, **overriding** whatever value was originally there. This means that, in the case of a multipart/form-data method, you can, for example, change the data type of an input from **Integer** to **RequestPart**.
 
-The **Content-Disposition** header associated with each part specifies  the name of the form field and the name of the file (if a file is being uploaded). Its format is **Content-Disposition: form-data; name="field_name"; filename="file_name"**. To avoid interoperability issues, both **"field_name"** and **"file_name"** must be in the ASCII encoding. Non-ASCII characters in headers are encoded using the MIME encoded-word syntax,  This format allows for the use of non-ASCII characters in headers if necessary. For more information, see the [TCP/IP Guide](http://www.tcpipguide.com/free/t_MIMEExtensionforNonASCIIMailMessageHeaders-2.htm). 
+The **Content-Disposition** header associated with each part specifies  the name of the form field and the name of the file (if a file is being uploaded). Its format is **Content-Disposition: form-data; name="field_name"; filename="file_name"**. To avoid interoperability issues, both **"field_name"** and **"file_name"** must be in the ASCII encoding. Non-ASCII characters in headers are encoded using the MIME encoded-word syntax,  This format allows for the use of non-ASCII characters in headers if necessary. For more information, see the [TCP/IP Guide](http://www.tcpipguide.com/free/t_MIMEExtensionforNonASCIIMailMessageHeaders-2.htm).
 
 ## RequestPart data structure
 
@@ -64,12 +64,11 @@ You can use this structure if you want an arbitrary number of parts in the reque
 
 The following is an auxiliary data structure that represents a part and has a **Name**, **PartText**, **PartBinary**, **Filename**, and **Content-Type** properties.
 
-![Service Studio representation of the RequestPart data structure with properties for name, text, binary, filename, and content-type](images/data-structure-ss.png "RequestPart Data Structure in Service Studio") 
+![Service Studio representation of the RequestPart data structure with properties for name, text, binary, filename, and content-type](images/data-structure-ss.png "RequestPart Data Structure in Service Studio")
 
 These properties are useful if you want greater flexibility to modify the parts (Name, Filename, and Content-Type). Sending a dynamic number of files with different extensions is the typical scenario for using multipart/form-data. The following image demonstrates this scenario.
 
-![Example of modifying parts in Service Studio for a multipart form data request with different file extensions](images/modify-parts-ss.png "Modifying Parts in Service Studio") 
-
+![Example of modifying parts in Service Studio for a multipart form data request with different file extensions](images/modify-parts-ss.png "Modifying Parts in Service Studio")
 
 ## Updating a multipart/form-data REST API method
 
@@ -87,7 +86,7 @@ You can test a multipart/form-data method under the **Test** tab on the same win
 
 * Invalid request format (for example, changing from a multipart request with multiple parts to JSON)
 
-* Multipart request with zero parts 
+* Multipart request with zero parts
 
 * Multipart request with a single basic part
 
@@ -106,4 +105,3 @@ When consuming a REST API with callbacks, you can add logic to customize the inf
 Service Center log redaction is not supported when the request text property is changed inside the **OnBeforeRequest** callback.
 
 </div>
-

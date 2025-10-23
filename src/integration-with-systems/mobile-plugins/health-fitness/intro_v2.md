@@ -167,7 +167,6 @@ For more information about the behavior changes of your app related to the priva
 
 </div>
 
-
 Parameterization for two different use cases of a background job is shown below:
 
 #### Setting up a daily steps goal

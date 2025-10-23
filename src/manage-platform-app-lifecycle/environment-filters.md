@@ -44,9 +44,9 @@ With time, you might add new environments to your growing infrastructures and ha
 
 Infrastructure growth makes it difficult to monitor different CI/CD pipelines efficiently when the console displays the whole infrastructure, as opposed to a segmented one that suits your business needs.
 
-To deal with this increased complexity, as of **LifeTime version 11.15.0**, OutSystems allows you to create custom views of the infrastructure, or environment filters. 
+To deal with this increased complexity, as of **LifeTime version 11.15.0**, OutSystems allows you to create custom views of the infrastructure, or environment filters.
 
-An environment filter is a subset of the infrastructure environments that you define, which helps you to focus on specific business cases, as opposed to the whole infrastructure. Create, edit, and delete as many environment filters as you need, and switch between them on the **Applications** list screen in LifeTime. Examples include creating a filter for your internal environments and another for your external ones. 
+An environment filter is a subset of the infrastructure environments that you define, which helps you to focus on specific business cases, as opposed to the whole infrastructure. Create, edit, and delete as many environment filters as you need, and switch between them on the **Applications** list screen in LifeTime. Examples include creating a filter for your internal environments and another for your external ones.
 
 Environment filters are user-specific, allowing each individual to create and manage their own filters independently. These filters are exclusive to each user and don't impact other users’ settings. Administrators can't modify or control the filters created by users. This ensures that every user has complete autonomy over their filter preferences, providing a personalised and consistent experience tailored to their needs.
 
@@ -60,7 +60,7 @@ Here are 2 business cases that showcase the benefits of the new filters feature:
 
 ### Creating an environment filter
 
-**Prerequisite**: IT users require read access to the environment they want to create a filter for. 
+**Prerequisite**: IT users require read access to the environment they want to create a filter for.
 
 To create an environment filter, follow these steps in LifeTime:
 

@@ -138,20 +138,20 @@ Speed up your Entity/Structure creation by helping Service Studio automatically 
 
 Name your Attribute/Variable according to the following rules and Service Studio will set the Data Type for you.
 
-Attribute/Variable<br/>Data Type | Attribute/Variable<br/>Name | Example
----|---|---
-Integer|`x`, `y`, `z`, `*Count`, `*Number`| `HeadCount`, `Number`
-Date|`*Date`|`BirthDate`
-DateTime|`*DateTime`, `*On`, `*Instant`|`ExitDateTime`, `CreatedOn`, `LogInstant`
-Time|`*Time`|`ExitTime`
-Boolean|`Is*`, `Has*`| `IsCompleted`, `HasDocument`
-Email|`*Email`|`UserEmail`
-PhoneNumber|`*Phone`, `*Mobile`|`HomePhone`, `WorkMobile`
-Currency|`*Price`, `*Amount`|`Price`, `DollarAmount`
-User Identifier|`*By`|`CreatedBy`
-Entity Identifier|`<Entity>Id`|`CustomerId`
-Entity Record|`<Entity>`|`Customer`
-Entity Record List|`<Entity>s`,`<Entity>es`,`<Entity>ies`|`Customers`
+| Attribute/Variable<br/>Data Type | Attribute/Variable<br/>Name | Example |
+| ---|---|--- |
+| Integer|`x`, `y`, `z`, `*Count`, `*Number`| `HeadCount`, `Number` |
+| Date|`*Date`|`BirthDate` |
+| DateTime|`*DateTime`, `*On`, `*Instant`|`ExitDateTime`, `CreatedOn`, `LogInstant` |
+| Time|`*Time`|`ExitTime` |
+| Boolean|`Is*`, `Has*`| `IsCompleted`, `HasDocument` |
+| Email|`*Email`|`UserEmail` |
+| PhoneNumber|`*Phone`, `*Mobile`|`HomePhone`, `WorkMobile` |
+| Currency|`*Price`, `*Amount`|`Price`, `DollarAmount` |
+| User Identifier|`*By`|`CreatedBy` |
+| Entity Identifier|`<Entity>Id`|`CustomerId` |
+| Entity Record|`<Entity>`|`Customer` |
+| Entity Record List|`<Entity>s`,`<Entity>es`,`<Entity>ies`|`Customers` |
 
 ### Quickly add a dependency in any module
 

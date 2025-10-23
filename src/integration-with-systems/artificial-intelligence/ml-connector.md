@@ -70,7 +70,7 @@ To create data structures from the Request and Response JSON strings, do the fol
 
     ![Screenshot of the Swagger API tab in Azure ML Web Services with the 'Submit Request' section expanded to show JSON strings](images/ml-connector-image9.png "Azure ML Swagger API Tab")
 
-1. In Service Studio, go to the Data tab, right-click the **Structures** folder and select **Add Structure from JSON**.       
+1. In Service Studio, go to the Data tab, right-click the **Structures** folder and select **Add Structure from JSON**.
 
     ![Screenshot of the OutSystems Service Studio with the 'Add Structure from JSON' option in the Structures folder context menu](images/ml-connector-image1.png "OutSystems Add Structure from JSON")
 
@@ -94,7 +94,7 @@ To add a reference to the connector in your application, you need to do the foll
 
 To use the connector in your logic flow, do the following:
 
-1. Create two local variables TestValues and Request_Example. Set the data type of TestValues as Input1Item and of Request_Example as the **Execution request** structure. 
+1. Create two local variables TestValues and Request_Example. Set the data type of TestValues as Input1Item and of Request_Example as the **Execution request** structure.
 
     * TestValues holds the values to be set.
 

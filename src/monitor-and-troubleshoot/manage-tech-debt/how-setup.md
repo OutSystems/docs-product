@@ -25,8 +25,8 @@ coverage-type:
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
- 
-This topic shows you how to add an infrastructure to AI Mentor Studio and how to associate your IT user with AI Mentor Studio. 
+
+This topic shows you how to add an infrastructure to AI Mentor Studio and how to associate your IT user with AI Mentor Studio.
 
 <div class="info" markdown="1">
 
@@ -38,7 +38,7 @@ To change the language of AI Mentor Studio, select your user name, then select a
 
 ## Log in for the first time {#first-login}
 
-You can log into [AI Mentor Studio](https://aimentorstudio.outsystems.com/) with your **OutSystems account** or with your **IT user account**. 
+You can log into [AI Mentor Studio](https://aimentorstudio.outsystems.com/) with your **OutSystems account** or with your **IT user account**.
 
 <div class="info" markdown="1">
 
@@ -55,7 +55,7 @@ If you log in with your **OutSystems account**, AI Mentor Studio shows you the f
 Select one of the options shown on the welcome screen:
 
 [Register and set up my infrastructure](#register)
-:   Choose this option if your infrastructure isn't registered in AI Mentor Studio. You must have a LifeTime administrator role. If you don't have a LifeTime administrator role, you won't have this option available and you must ask your administrator to complete the setup.    
+:   Choose this option if your infrastructure isn't registered in AI Mentor Studio. You must have a LifeTime administrator role. If you don't have a LifeTime administrator role, you won't have this option available and you must ask your administrator to complete the setup.
 
 [Associate my IT user](#associate-os-login)
 :   Choose this option if your infrastructure is already registered in AI Mentor Studio.  
@@ -148,14 +148,14 @@ Depending on your authentication method, the interface might differ slightly fro
 
 1. After being redirected to LifeTime, log in with your IT user.
 
-1. Configure the **code analysis probe** by selecting the development environment as the **Target environment**. 
+1. Configure the **code analysis probe** by selecting the development environment as the **Target environment**.
 
     ![Configuring the target environment for the code analysis probe in LifeTime](images/setup-probe-environment-lt.png "Setting Up Probe Environment in LifeTime")
 
     <div class="info" markdown="1">
 
     To change the target environment of a code analysis probe, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data from AI Mentor Studio. Do this before installing probes in a new environment or deleting probes from an existing environment to avoid data inconsistencies. Once existing data is deleted from AI Mentor Studio, follow the setup procedure in this article to configure a new target environment.
-    
+
     </div>
 
 1. Optional: If you want the AI Mentor Studio plugin to use a forward proxy while connecting to the AI Mentor Studio SaaS, in the **Proxy configuration** section, select **show request information**, and enter the proxy URL and the credentials.

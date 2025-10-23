@@ -46,7 +46,6 @@ This section is for you if you prefer following documentation. You can also use 
 
 ![Diagram illustrating the overview of creating an FAQ chatbot with steps including preparing data, creating a knowledge base, QnA Maker Service, publishing, and configuring the chatbot UI.](images/faq-chatbot-overview-dia.png "FAQ Chatbot Overview Diagram")
 
-
 1. Prepare your questions and answers. You first need to put your questions and answers in a spreadsheet. See: [Prepare data for knowledge base](guide-azure-kb.md#prepare-data-kb)
 
 1. Create a knowledge base and test it. Once you have your questions and answers, you submit them to QnA Maker. QnA Maker uses natural language processing to expand possible questions and answers, which means more conversational variety for your users. See how to [create a knowledge base](guide-azure-kb.md#create-kb).

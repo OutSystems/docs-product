@@ -17,7 +17,7 @@ outsystems-tools:
 
 This example shows how to edit the Grid data and save those changes to the database.
 
-**Prerequisites:** 
+**Prerequisites:**
 
 * Complete [How to edit data in the Grid component](how-to-edit-data.md).
 
@@ -33,7 +33,6 @@ This example shows how to edit the Grid data and save those changes to the datab
 
     This button saves the changed data in the grid  to the server's database.
 
-
     ![Screenshot depicting the addition of a Save button to the Actions placeholder on the screen.](images/grid-save-button-ss.png "Adding a Save Button to the Screen")
 
 1. On the **Properties** tab, from the **On Click** dropdown, select **New Client Action**.
@@ -45,18 +44,18 @@ This example shows how to edit the Grid data and save those changes to the datab
     ![Screenshot showing the process of adding a 'Run Client Action' to the flow and selecting 'GetChangedLines' from the API_Data folder.](images/grid-save-runaction-ss.png "Adding Run Client Action to the Flow")
 
 1. Enter the **GridWidgetId**.
-    
+
     In this example, ProductGrid.Id is entered.
 
     ![Screenshot displaying the entry of 'ProductGrid.Id' into the GridWidgetId field.](images/grid-save-gridid-ss.png "Entering the GridWidgetId")
-    
+
 1. Add a **JSON Deserialize** to the flow.
 
     The JSON Deserialize node is added because any data changed in the Grid is in JSON format.
 
     ![Screenshot showing the JSON Deserialize node added to the flow to handle data in JSON format.](images/grid-save-json-ss.png "Adding JSON Deserialize to the Flow")
- 
-1.  From the **JSON String** dropdown, select **ChangedLines.EditedLines** of the client action **GetChangedLines**.
+
+1. From the **JSON String** dropdown, select **ChangedLines.EditedLines** of the client action **GetChangedLines**.
 
     ![Screenshot highlighting the selection of 'ChangedLines.EditedLines' from the GetChangedLines client action for JSON deserialization.](images/grid-save-jsonstring-ss.png "Selecting JSON String for Deserialization")
 
@@ -72,14 +71,14 @@ This example shows how to edit the Grid data and save those changes to the datab
 
     ![Screenshot illustrating the creation of a Server Action with an input parameter of type 'Sample_Product List'.](images/grid-save-serveraction-ss.png "Creating a Server Action with an Input Parameter")
 
-1. Add the logic that updates the data in the database. 
+1. Add the logic that updates the data in the database.
 
     In this example the following is added:
 
     | **Logic** | **Property** | **Value** |
     |---|---|---|
     | **For Each**  | Record List | EditedProducts (Input Parameter) |
-    | **Run Server Action** | Source | EditedProducts.Current | 
+    | **Run Server Action** | Source | EditedProducts.Current |
 
     ![Screenshot showing the logic added to update data in the database using a For Each loop and Run Server Action.](images/grid-save-logic-ss.png "Adding Logic to Update Data in the Database")
 

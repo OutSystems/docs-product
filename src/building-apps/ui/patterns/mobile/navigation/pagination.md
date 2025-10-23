@@ -41,9 +41,9 @@ You can use the Pagination UI pattern to help users find a specific item on long
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Pagination widget into the Main Content area of your application's screen.
@@ -81,8 +81,6 @@ You can use the Pagination UI pattern to help users find a specific item on long
 1. So that we only fetch the data we need for each page, select the aggregate and set the **Start Index** and **Max. Records** properties to the the variables we created earlier, **StartIndex** and **MaxRecords**.
 
     ![Configuring the aggregate's Start Index and Max. Records properties for efficient data fetching](images/pagination-14-ss.png "Setting Aggregate Properties for Pagination")
-
-
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

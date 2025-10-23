@@ -50,9 +50,9 @@ In this example, we create a button that increments the progress circle each tim
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Progress Circle widget into the Main Content area of your application's screen.
@@ -63,11 +63,11 @@ In this example, we create a button that increments the progress circle each tim
 
     ![Screenshot illustrating how to add a local variable for the Progress Circle in OutSystems Service Studio](images/progresscircle-variable-ss.png "Adding a Local Variable for Progress Circle")
 
-1. Select the Progress Circle widget, and on the **Properties** tab, in the **Progress** property, enter the **Count** variable. 
+1. Select the Progress Circle widget, and on the **Properties** tab, in the **Progress** property, enter the **Count** variable.
 
     ![Image showing where to set the Progress property for the Progress Circle widget in the Properties tab](images/progresscircle-logic-ss.png "Setting Progress Property for Progress Circle")
 
-1. Select the **Expression** widget inside the Progress Circle, and on the **Properties** tab, in the **Value** property, enter the relevant logic for the progress. In this example, enter the local variable **Count**. 
+1. Select the **Expression** widget inside the Progress Circle, and on the **Properties** tab, in the **Value** property, enter the relevant logic for the progress. In this example, enter the local variable **Count**.
 
     ![Screenshot demonstrating how to add expression logic to the Progress Circle widget for displaying progress](images/progresscircle-expression-ss.png "Adding Expression Logic to Progress Circle")
 
@@ -79,7 +79,7 @@ In this example, we create a button that increments the progress circle each tim
 
     ![Screenshot showing how to add an expression widget for the denominator in the Progress Circle pattern](images/progresscircle-denominator-ss.png "Adding Denominator Expression to Progress Circle")
 
-1. From the Toolbox, drag the Button widget into the Main Content area of your application's screen. 
+1. From the Toolbox, drag the Button widget into the Main Content area of your application's screen.
 
     In this example, we call the button **Increment** and set the **On Click** event to a  **New Client Action** that assigns the **Count** variable to `Count + 1`.
 

@@ -35,10 +35,9 @@ The data of a screen or block are the following:
 * Aggregates and Data Actions
 * Validation messages
 
-While implementing a Mobile or Reactive Web App, the developer can act upon those stages by using a set of event handler actions. These event handlers give the developer visibility over the screen and block lifecycle and the opportunity to implement logic when certain events occur. 
+While implementing a Mobile or Reactive Web App, the developer can act upon those stages by using a set of event handler actions. These event handlers give the developer visibility over the screen and block lifecycle and the opportunity to implement logic when certain events occur.
 
 You can see and define the event handlers in the Events section of the properties editor of Screens and Blocks, or for the event handler triggered when data finished being fetched, in the properties editor of Aggregates or Data Actions.
-
 
 ## Lifecycle Stages
 
@@ -94,14 +93,14 @@ Since the input parameter is part of the data of the Block, the [Render](<#on-re
 
 ## Lifecycle Event Handlers
 
-Event | Description
-------|------------
-[On Initialize](<#on-initialize>) | Occurs after checking the permission of the user to access the Screen, but before navigating to the Screen and fetching data. In Blocks, it occurs after the navigation. You can use it to initialize the Screen or Block by setting its default data.
-[On Ready](<#on-ready>) | Occurs after the Screen or Block DOM is ready, before the transition starts.
-[On Render](<#on-render>) | Occurs right after the Screen or Block On Ready event handler and every time the data of a Screen or Block changes. You can use it to update some third-party component.
-[On After Fetch](<#on-after-fetch>) | Occurs after an Aggregate or Data Action has finished fetching data but before this data is rendered on the Screen or Block. You can use it to act upon the retrieved data.
-[On Parameters Changed](<#on-parameters-changed>) | Occurs in a Block anytime the parent Screen or Block changes one of its input parameters. Changes to the input value inside the block do not trigger this event handler. You can use it to react to changes in the Block parameters, such as to update variables.
-[On Destroy](<#on-destroy>) | Occurs before destroying a Screen or Block and removing it from the DOM. You can use it to implement logic when the component is disposed, such as to remove event listeners.
+| Event | Description |
+| ------|------------ |
+| [On Initialize](<#on-initialize>) | Occurs after checking the permission of the user to access the Screen, but before navigating to the Screen and fetching data. In Blocks, it occurs after the navigation. You can use it to initialize the Screen or Block by setting its default data. |
+| [On Ready](<#on-ready>) | Occurs after the Screen or Block DOM is ready, before the transition starts. |
+| [On Render](<#on-render>) | Occurs right after the Screen or Block On Ready event handler and every time the data of a Screen or Block changes. You can use it to update some third-party component. |
+| [On After Fetch](<#on-after-fetch>) | Occurs after an Aggregate or Data Action has finished fetching data but before this data is rendered on the Screen or Block. You can use it to act upon the retrieved data. |
+| [On Parameters Changed](<#on-parameters-changed>) | Occurs in a Block anytime the parent Screen or Block changes one of its input parameters. Changes to the input value inside the block do not trigger this event handler. You can use it to react to changes in the Block parameters, such as to update variables. |
+| [On Destroy](<#on-destroy>) | Occurs before destroying a Screen or Block and removing it from the DOM. You can use it to implement logic when the component is disposed, such as to remove event listeners. |
 
 ### On Initialize
 
@@ -112,15 +111,15 @@ In Blocks, including any server action calls or local storage operations in this
 Notes:
 
 * Keep this event handler action simple and avoid slow actions such as local storage operations, since it may delay the rendering of the Screen or Block.
-* Avoid accessing the data of the Screen or Block since this action runs before the data is fetched. 
+* Avoid accessing the data of the Screen or Block since this action runs before the data is fetched.
 
 Use cases you can implement with this event handler:
 
-* Assign a variable based on inputs. 
-* Assign a variable based on some computation in JavaScript, such as a random number. 
-* Redirect the application to another Screen if the user doesn’t have the authorization to see the Screen (only possible if the event handler belongs to a Screen). 
-* Assign the parameters of a child Block based on the inputs of the Screen. 
-* Access variables of the JavaScript window object. 
+* Assign a variable based on inputs.
+* Assign a variable based on some computation in JavaScript, such as a random number.
+* Redirect the application to another Screen if the user doesn’t have the authorization to see the Screen (only possible if the event handler belongs to a Screen).
+* Assign the parameters of a child Block based on the inputs of the Screen.
+* Access variables of the JavaScript window object.
 
 ### On Ready
 
@@ -128,16 +127,16 @@ The On Ready event handler runs when the Screen or Block is ready, i.e. when the
 
 Notes:
 
-* The DOM of the previous and current Screens are loaded when this event is triggered. To ensure that you are operating on the screen being created, execute logic only for the HTML `div` element with the class `active-screen`. 
+* The DOM of the previous and current Screens are loaded when this event is triggered. To ensure that you are operating on the screen being created, execute logic only for the HTML `div` element with the class `active-screen`.
 * Keep this event handler action simple and avoid using Screen Aggregates or Data Actions, which run in parallel, to manipulate data that might not be available.
-* Avoid accessing the data of the Screen or Block since this action runs before the data is fetched. If you need to develop some logic on these data, use the On After Fetch event handler of the respective Aggregate or Data Action. 
+* Avoid accessing the data of the Screen or Block since this action runs before the data is fetched. If you need to develop some logic on these data, use the On After Fetch event handler of the respective Aggregate or Data Action.
 
 Use cases you can implement with this event handler:
 
 * Initialize a third-party component that needs the DOM.
 * Add listeners to a DOM element.
 * Set the focus on an input widget.
-* Add listeners to the JavaScript window object. 
+* Add listeners to the JavaScript window object.
 
 ### On Render
 
@@ -145,14 +144,14 @@ The On Render event handler runs after each time the Screen or Block is rendered
 
 Notes:
 
-* Avoid changing Screen or Block data since every time this data changes the On Render event is triggered again and the app might run in an infinite loop. 
-* Keep this event handler action simple and avoid slow actions such as server requests, since it may delay the render of the Screen or Block. 
-* On the first render of the Screen or Block avoid accessing the data of the Screen or Block since there is no guarantee that the data is already fetched. If you need to develop some logic on these data, use the On After Fetch event handler of the respective Aggregate or Data Action. 
+* Avoid changing Screen or Block data since every time this data changes the On Render event is triggered again and the app might run in an infinite loop.
+* Keep this event handler action simple and avoid slow actions such as server requests, since it may delay the render of the Screen or Block.
+* On the first render of the Screen or Block avoid accessing the data of the Screen or Block since there is no guarantee that the data is already fetched. If you need to develop some logic on these data, use the On After Fetch event handler of the respective Aggregate or Data Action.
 
 Use cases you can implement with this event handler:
 
 * Act upon a change in the data of the Screen or Block to update a third-party component.
-* The same use cases as for the On Ready event handler. 
+* The same use cases as for the On Ready event handler.
 
 ### On After Fetch
 
@@ -160,7 +159,7 @@ The On After Fetch event handler executes right after an Aggregate or Data Actio
 
 Notes:
 
-* When the On After Fetch event handler runs, the data has arrived and is available but it isn't bound to widgets. This means that the widgets haven't updated yet. 
+* When the On After Fetch event handler runs, the data has arrived and is available but it isn't bound to widgets. This means that the widgets haven't updated yet.
 
 Use cases you can implement with this event handler:
 
@@ -175,7 +174,7 @@ The On Parameters Changed is an event handler only for Blocks that runs after th
 Use cases you can implement with this event handler:
 
 * Refresh an Aggregate or Data Action that depends on that input parameter.
-* Recalculate a variable that depends on the input parameter. 
+* Recalculate a variable that depends on the input parameter.
 
 ### On Destroy
 
@@ -183,11 +182,11 @@ The On Destroy event handler executes when the Screen or Block is going to be de
 
 Notes:
 
-* The DOM of the present and target screens is loaded when this event is triggered. To ensure that you are operating on the screen being destroyed, execute logic only for the HTML `div` element with the class `active-screen`. 
-* Keep this event handler action simple and avoid slow actions such as server requests, since it may delay the removal of the Screen or Block and, in the case of exiting a screen, the loading of the next screen. 
+* The DOM of the present and target screens is loaded when this event is triggered. To ensure that you are operating on the screen being destroyed, execute logic only for the HTML `div` element with the class `active-screen`.
+* Keep this event handler action simple and avoid slow actions such as server requests, since it may delay the removal of the Screen or Block and, in the case of exiting a screen, the loading of the next screen.
 
 Use cases you can implement with this event handler:
 
 * Call the destroy action of third-party components.
 * Clean the DOM to run a plugin again.
-* Remove JavaScript listeners. 
+* Remove JavaScript listeners.

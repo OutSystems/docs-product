@@ -42,7 +42,7 @@ To create a Screen, follow these steps in Service Studio:
     ![Context menu in Service Studio with the option to Add Screen selected](images/add-screen-ss.png "Adding a New Screen")
 
 1. Select one of the following:
-    
+
     * **Empty**, to create an empty Screen
     * A Screen Template, to create a Screen based on a template
 

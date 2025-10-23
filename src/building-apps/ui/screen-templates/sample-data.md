@@ -19,7 +19,7 @@ coverage-type:
 
 # Sample data
 
-Sample data consists of example records from domains related to several industries. **Screen Templates** use this sample data to create screen instances which are useful to create a prototype, a proof of concept, or to follow a tutorial that requires it. 
+Sample data consists of example records from domains related to several industries. **Screen Templates** use this sample data to create screen instances which are useful to create a prototype, a proof of concept, or to follow a tutorial that requires it.
 
 ## Referencing sample data in apps
 
@@ -29,7 +29,7 @@ To reference sample data, include the **OutSystemsSampleDataDB** module in your 
 
     ![Screenshot of the Manage Dependencies window in OutSystems Service Studio](images/manage-dependencies-ss.png "Manage Dependencies in Service Studio")
 
-2. Search for **OutSystemsSampleDataDB** and select it in the results pane. In the right pane select all **Entities** of the module, then click **Apply** to confirm and close the **Manage Dependencies** window.
+1. Search for **OutSystemsSampleDataDB** and select it in the results pane. In the right pane select all **Entities** of the module, then click **Apply** to confirm and close the **Manage Dependencies** window.
 
     ![Selecting entities from the OutSystemsSampleDataDB module in the Manage Dependencies window](images/manage-dependencies-sample-data-module-ss.png "Selecting OutSystemsSampleDataDB Module")
 
@@ -52,7 +52,7 @@ Sample data entities are public, so you can create a custom back office.
 You may create entities to suit your own business requirements by changing the sample data used in your **Screen Templates**.
 
 1. Create download logic by referencing **DownloadOriginalData**  and adding it to a server action.
-1. In the **Logic** tab expand **Server Actions**  and then expand **OutSystemsSampleDataDB**.   
+1. In the **Logic** tab expand **Server Actions**  and then expand **OutSystemsSampleDataDB**.
 1. Expand **Export** and **DownloadOriginalData** Server Action from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Export** to save the original source files in a zip archive. You need to create a logic flow to download a file by adding a **Download** element at the end of the flow.  
 
     ![OutSystems Service Studio logic flow for exporting original sample data](images/sample-data-export-ss.png "Exporting Sample Data")
@@ -71,16 +71,16 @@ If any app extends the provided entities, the **Foreign Key** constraint will no
 
 </div>
 
-1. Access `http://<yourserver>/ServiceCenter/` and, from the **Factory** > **Application** area, search for **OutSystems Sample Data** and click it. 
-    
+1. Access `http://<yourserver>/ServiceCenter/` and, from the **Factory** > **Application** area, search for **OutSystems Sample Data** and click it.
+
     ![Searching for the OutSystems Sample Data application in Service Center](images/search-for-sample-data-app-sc.png "Searching for OutSystems Sample Data Application")
-    
+
 1. Click **OutSystemsSampleDataDB** in the **Application OutSystems Sample Data** window.
-   
+
     ![OutSystems Sample Data application details in Service Center](images/application-outsystems-sample-data-sc.png "OutSystems Sample Data Application Details")
 
 1. In the **Timers** tab in the module details window, select **Reset_SampleData**, and then click **Run Now**.
-    
+
     ![Reset Sample Data timer option in the OutSystems Service Center module details window](images/reset-sample-data-timer-sc.png "Reset Sample Data Timer")
 
 Other timers that may be reset in the same way are described in the list below:

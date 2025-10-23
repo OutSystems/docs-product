@@ -28,7 +28,7 @@ topic:
 # Development and delivery at scale
 
 As you start having more developers, teams, and applications, it’s important to keep development and delivery agility, ensuring you can keep delivering at the high pace of a modern development platform.
-        
+
 At OutSystems, we aim for high productivity, even in mission critical scenarios. As such, our vision is to enable organizations to be elite software delivery performers, always ready to answer business demand. We believe the best way to achieve this goal is to promote an effective continuous integration/continuous delivery (CI/CD) approach ensuring you reduce the lead time and deploy on demand.
 
 Developing and delivering at scale poses challenges regardless of the technology stack. Dealing with concurrent releases and maintaining multiple environments at different paces can bring their own challenges. There can be too many dependencies between teams and applications, a lack of collaboration between teams working at different paces, and a slow feedback loop on validations in the development and delivery process. Additionally, with multiple applications reaching production at the same time, there can be an excessive amount of merging problems and emergency fixes. Physical branching is the traditional industry response to these challenges, but has several drawbacks which are amplified in long-lived branching scenarios. What empirical data shows ([The State of DevOps Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf)) is that the best answer to these challenges is applying a CI/CD approach and DevOps practices.
@@ -37,29 +37,27 @@ For an organization to deliver quality at a high pace, opting for short or logic
 
 According to our research, the following sections outline the challenges organizations can face when scaling a development team and the various ways OutSystems can tackle them.
 
-## Team structure and architecture 
+## Team structure and architecture
 
-A team's  productivity is highly dependent on its ability to be independently aligned with business goals. Having independent, isolated teams, increases delivery speed and is beneficial in terms of independent development, independent delivery, aligning with business goals, as well as maintaining a loosely coupled architecture. For effective team isolation to take place, the following aspects of the factory architecture and organization must be in place. 
+A team's  productivity is highly dependent on its ability to be independently aligned with business goals. Having independent, isolated teams, increases delivery speed and is beneficial in terms of independent development, independent delivery, aligning with business goals, as well as maintaining a loosely coupled architecture. For effective team isolation to take place, the following aspects of the factory architecture and organization must be in place.
 
 ### Domain-driven design
 
-With the growth of a software factory, it becomes more difficult to isolate developments and deployments, as they become more and more complex and slow, small change requests become harder to implement, planning becomes hard, resulting in the teams playing with odds. The teams start facing growing pains to cope with the interests of the business because everything becomes interdependent, impacts on other businesses becomes harder to address as more decision makers are involved. Therefore, the need to decouple the large monolith into small serviceable pieces becomes imperative, providing team isolation and lifecycle independence. 
+With the growth of a software factory, it becomes more difficult to isolate developments and deployments, as they become more and more complex and slow, small change requests become harder to implement, planning becomes hard, resulting in the teams playing with odds. The teams start facing growing pains to cope with the interests of the business because everything becomes interdependent, impacts on other businesses becomes harder to address as more decision makers are involved. Therefore, the need to decouple the large monolith into small serviceable pieces becomes imperative, providing team isolation and lifecycle independence.
 
 [Domain-driven-design](https://www.outsystems.com/tk/redirect?g=0ed36ce5-66fe-4507-ba42-a554c522e0ca) (DDD) is a recommended approach for building **loosely coupled architectures**. A loosely coupled architecture **isolates different pieces of software** (self-contained domains) by reducing the dependencies between them to a minimum. Building and deploying apps using a loosely coupled architecture provides benefits such as, more **scalability**, **resilience**, **maintainability**, and **less dependencies between development teams**. A DDD approach to architecture structures a software system as a set of business-domain-aligned components. Also aligning the ownership model with business domains, means each domain is owned by one team (and one team may own several systems or components related to the same domain). This allows each business domain to evolve at a different speed, based on the change rate appropriate for that domain.
 
 ![Diagram illustrating domain-driven design with vertical and horizontal domains, showing business verticals and foundation services.](images/domain-definition.png "Domain-Driven Design Architecture")
 
-
 OutSystems [AI Mentor Studio](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) provides a bird-eye-view of the entire application’s architecture, facilitating the correct domain assessment by detecting unexpected dependencies between applications and wrong architecture patterns.
 
-### Team structure 
+### Team structure
 
-The way teams communicate and establish relations and dependencies is reflected in the teams architecture, independence, and consequently speed of delivery. According to **Conway’s Law**, organizations tend to mirror their communication structure with the systems they design, therefore, if an organization is structured as a set of technical departments, this leads to a **technically-focused architecture**. A technically-focused organization, is made up of a set of teams that each have a technical specialty who tend to create applications with a technically-focused architecture, that is, each part of the architecture is its own silo, and implementing changes requested by the business often means touching every architecture area and requires tremendous communication and coordination overhead between the technical teams. A technically-focused team, can for example, have separate teams for building UIs, APIs, and data models (within the same functional domain). 
+The way teams communicate and establish relations and dependencies is reflected in the teams architecture, independence, and consequently speed of delivery. According to **Conway’s Law**, organizations tend to mirror their communication structure with the systems they design, therefore, if an organization is structured as a set of technical departments, this leads to a **technically-focused architecture**. A technically-focused organization, is made up of a set of teams that each have a technical specialty who tend to create applications with a technically-focused architecture, that is, each part of the architecture is its own silo, and implementing changes requested by the business often means touching every architecture area and requires tremendous communication and coordination overhead between the technical teams. A technically-focused team, can for example, have separate teams for building UIs, APIs, and data models (within the same functional domain).
 
-By reversing Conway's Law in favor of building a good **business-oriented** architecture, the structure of the organization needs to be set-up with teams that are specialized in business domains instead of technology topics. This type of organization prevents silos and removes communication overhead through the added autonomy brought about by having all the skills it needs. A business-centric type of organization produces business-oriented architecture designs, better aligned with business goals, and better prepared to grow and scale with the business. For this approach to work effectively, **cross-functional teams** are required. 
+By reversing Conway's Law in favor of building a good **business-oriented** architecture, the structure of the organization needs to be set-up with teams that are specialized in business domains instead of technology topics. This type of organization prevents silos and removes communication overhead through the added autonomy brought about by having all the skills it needs. A business-centric type of organization produces business-oriented architecture designs, better aligned with business goals, and better prepared to grow and scale with the business. For this approach to work effectively, **cross-functional teams** are required.
 
 Having cross-functional teams benefits communication, quality, speed, and innovation and contributes to autonomy and independence. A cross-functional team contains all the roles and profiles necessary to cover the entire lifecycle of the application or component.  As such, **a cross-functional team is fully independent and autonomous to promote code changes from development to production**, and quickly act upon any feedback collected along the way. This is in stark contrast to mono/single-functional teams, where there are silos containing each of the lifecycle functions, that require multiple handovers for a single change and that rely on formal communication channels that end up creating queues that impact lead time.
-
 
 ![Comparison diagram between functional teams with siloed roles and cross-functional teams with integrated roles.](images/functional-teams-vs-cross-functional-teams.png "Functional Teams vs Cross-Functional Teams")
 
@@ -71,23 +69,23 @@ Team ownership models can be adopted according to the business organization, fac
 
 ![Diagram showing the ownership and governance model with different teams responsible for various domains.](images/ownership-governance-model.png "Ownership and Governance Model")
 
-## Collaboration 
+## Collaboration
 
-As the application portfolio, number of teams, and the number of developers grow, finding the right balance between work isolation (develop and test without impact) and collaboration is key to keeping a high pace of delivery, while managing different releases. One common practice for handling this challenge is branching. While branching enables a complete isolation of ongoing work and allows you to keep maintaining major releases, it can also bring other tasks, such as managing extra environments to get runtime isolation for testing different releases. On the other hand, branching potentials the merge hell by reducing the frequency of code integration. *"We used to draw branching as parallel lines, but actually we should redraw as diverging lines to show the effective merge pain over time…"* ([Jonny LeRoy](https://twitter.com/jahnnie/status/937917022247120898))
+As the application portfolio, number of teams, and the number of developers grow, finding the right balance between work isolation (develop and test without impact) and collaboration is key to keeping a high pace of delivery, while managing different releases. One common practice for handling this challenge is branching. While branching enables a complete isolation of ongoing work and allows you to keep maintaining major releases, it can also bring other tasks, such as managing extra environments to get runtime isolation for testing different releases. On the other hand, branching potentials the merge hell by reducing the frequency of code integration. _"We used to draw branching as parallel lines, but actually we should redraw as diverging lines to show the effective merge pain over time…"_ ([Jonny LeRoy](https://twitter.com/jahnnie/status/937917022247120898))
 
 ![Illustration contrasting parallel lines representing traditional branching with diverging lines indicating merge challenges over time.](images/branching-parallel-lines-diverging-lines.png "Branching Strategies: Parallel vs Diverging Lines")
 
 Part of OutSystems’ vision is to provide capabilities that remove developers' effort of managing different feature branches, avoid merging problems, while ensuring a true **continuous integration** approach. This includes providing a short-lived branching capability where developers can work and test in isolation before sharing, ensuring that only small batches of completed code are shared. Feature isolation allows developers to manage work in progress. Incomplete features can be safely promoted to the next stage using trunk-based development patterns (such as, feature toggling mechanism)  which manage incomplete features that are merged, increasing the collaboration between  developers and the feedback from business, while experimenting with new incomplete solutions.
 
-### Small batch approach 
+### Small batch approach
 
-The small batch approach allows developers to decompose complex solutions into smaller components that can be deployed incrementally and tested independently. Instead of months of coding that requires months of testing, small batches of code, such as a single user story, can be tested and released quickly. Developing in small batches lowers the risk in development and means less waste as you can get quick feedback from the customer and adjust accordingly. 
+The small batch approach allows developers to decompose complex solutions into smaller components that can be deployed incrementally and tested independently. Instead of months of coding that requires months of testing, small batches of code, such as a single user story, can be tested and released quickly. Developing in small batches lowers the risk in development and means less waste as you can get quick feedback from the customer and adjust accordingly.
 
-Working in small batches is one of a set of capabilities that drives higher software delivery and organizational performance. These capabilities were discovered by the [DORA State of DevOps research program](https://www.devops-research.com/research.html), an independent, academically rigorous investigation into the practices and capabilities that drive high performance. As per the [The State of DevOps Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf), the following image shows how higher performers compare to low performers: 
+Working in small batches is one of a set of capabilities that drives higher software delivery and organizational performance. These capabilities were discovered by the [DORA State of DevOps research program](https://www.devops-research.com/research.html), an independent, academically rigorous investigation into the practices and capabilities that drive high performance. As per the [The State of DevOps Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf), the following image shows how higher performers compare to low performers:
 
 ![Infographic comparing elite performers with low performers in terms of throughput and stability metrics.](images/elite-performers-vs-low-performers.png "Comparison of Elite Performers vs Low Performers")
 
-Working in small batches helps anticipate failures. At the same time it lowers the deployment risk since the amount of change applied in each deployment is smaller and therefore less likely to go wrong. Smaller parts can be tested immediately after they are merged into the code base. It allows issues to be spotted and solved straight away. Consistently integrating code to the code base for deployment  **accelerates the release rate which helps realize business value faster** (in contrast to an infrequent release rate). Additionally, it helps **enhance productivity** by ensuring fewer errors. Less errors means less time spent fixing them and more time on developing a quality product. 
+Working in small batches helps anticipate failures. At the same time it lowers the deployment risk since the amount of change applied in each deployment is smaller and therefore less likely to go wrong. Smaller parts can be tested immediately after they are merged into the code base. It allows issues to be spotted and solved straight away. Consistently integrating code to the code base for deployment  **accelerates the release rate which helps realize business value faster** (in contrast to an infrequent release rate). Additionally, it helps **enhance productivity** by ensuring fewer errors. Less errors means less time spent fixing them and more time on developing a quality product.
 
 ### Trunk-based development patterns
 
@@ -95,7 +93,7 @@ Trunk-based development is more than just a branching strategy, it is a set of t
 
 #### API/UI versioning
 
-Versioning is helpful in specific scenarios, namely when you want to introduce a breaking change (changing core modules/producers) in an API or a UI component, and you don't want to impact consumers straightaway. Most of the time, this applies when you cannot sync the release of a producer change and consumers, or it can be a lack of ensuring consumer quality on time for its release (probably due to lack of automated regression testing to ensure the new change will not impact the previous behavior). 
+Versioning is helpful in specific scenarios, namely when you want to introduce a breaking change (changing core modules/producers) in an API or a UI component, and you don't want to impact consumers straightaway. Most of the time, this applies when you cannot sync the release of a producer change and consumers, or it can be a lack of ensuring consumer quality on time for its release (probably due to lack of automated regression testing to ensure the new change will not impact the previous behavior).
 
 API/UI versioning applies when a change is restricted to a specific code element, (for example, a new authentication service or a new product catalog widget) and you want to ensure that any breaking changes (in the signature or the expected behavior) don't immediately impact existing consumers (each consumer can opt to switch to the new version when it makes sense to them).
 
@@ -111,22 +109,22 @@ Technical feature toggling applies when you're implementing a feature or behavio
 
 ![Flowchart demonstrating how feature flags or toggles control the release of new features to end users.](images/feature-flags.png "Feature Flags Mechanism")
 
-You can find the [Feature Toggle Library](https://www.outsystems.com/forge/component-overview/9663/feature-toggle-library) component in the OutSystems Community. To learn more about how to implement and use feature toggles, see [Feature toggle in OutSystems](https://www.outsystems.com/tk/redirect?g=4de797a5-dc79-459a-9244-8eab786b0fcf). 
+You can find the [Feature Toggle Library](https://www.outsystems.com/forge/component-overview/9663/feature-toggle-library) component in the OutSystems Community. To learn more about how to implement and use feature toggles, see [Feature toggle in OutSystems](https://www.outsystems.com/tk/redirect?g=4de797a5-dc79-459a-9244-8eab786b0fcf).
 
 #### Branching by abstraction
 
-When various parts of a software system are dependent on a module, library, or framework that you want to replace, you can branch by abstraction by creating an abstraction layer that captures the interaction between one section of the client code and the current supplier. You start by building a wrapper around the component you want to replace which allows you to route-call from the old implementation to the new one, for example, replacing a connector that integrates with JIRA with another one that integrates with Azure DevOps. Or, you might want to keep the same signature/interface for your customers but change the implementation radically, for example switching between different DLL versions, or switching between different CRM systems. The key benefit of branching by abstraction is that your code is working at all times throughout the refactoring, enabling continuous delivery. 
+When various parts of a software system are dependent on a module, library, or framework that you want to replace, you can branch by abstraction by creating an abstraction layer that captures the interaction between one section of the client code and the current supplier. You start by building a wrapper around the component you want to replace which allows you to route-call from the old implementation to the new one, for example, replacing a connector that integrates with JIRA with another one that integrates with Azure DevOps. Or, you might want to keep the same signature/interface for your customers but change the implementation radically, for example switching between different DLL versions, or switching between different CRM systems. The key benefit of branching by abstraction is that your code is working at all times throughout the refactoring, enabling continuous delivery.
 
 For a more in depth example of branching by abstraction, see [Integration Patterns for Core Services Abstraction](https://www.outsystems.com/tk/redirect?g=94c591a5-e7a6-4015-af21-ad87c1012fc7), which creates an abstraction layer around an external system.
 
-## Quality validations 
+## Quality validations
 
-One of the principles that’s at the heart of continuous delivery is the **build in quality**. 
+One of the principles that’s at the heart of continuous delivery is the **build in quality**.
 
 According to W. Edwards Deming, "[it’s much cheaper to fix problems and defects if we find them immediately - ideally before they are ever checked into version control, by running automated tests locally. Finding defects downstream through inspection (such as manual testing) is time-consuming, requiring significant triage. Then we must fix the defect, trying to recall what we were thinking when we introduced the problem days or perhaps even weeks ago.](https://continuousdelivery.com/principles/#build-quality-in)"
 The build in quality principle is all about catching and fixing defects early during development stages to lower maintenance costs and prevent undesirable impacts for end-users (if reaches production). As development scales, it also increases the possibility of introducing defects (or technical debt) into your codebase.
 
-Part of OutSystems vision is to keep providing capabilities that empower easy code validations at early stages while reducing effort, supported by high traceability of code. A good deployment pipeline has numerous feedback loops. At each stage of the pipeline, tests are run. If the tests are passed, the pipeline continues, but if they fail or fall under a certain threshold, the pipeline stops and the team responds to the feedback. This fast feedback in a well-designed pipeline prevents poor quality code reaching production. 
+Part of OutSystems vision is to keep providing capabilities that empower easy code validations at early stages while reducing effort, supported by high traceability of code. A good deployment pipeline has numerous feedback loops. At each stage of the pipeline, tests are run. If the tests are passed, the pipeline continues, but if they fail or fall under a certain threshold, the pipeline stops and the team responds to the feedback. This fast feedback in a well-designed pipeline prevents poor quality code reaching production.
 
 ### Code quality
 
@@ -136,7 +134,7 @@ TrueChange is a Service Studio built-in analysis engine that provides real-time 
 
 #### AI Mentor Studio
 
-The AI Mentor Studio can detect potential issues in the areas of architecture, performance, security, and maintainability. The maintainability analysis flags complex undocumented code and missing descriptions of reusable elements to help teams produce well-documented code that other developers can quickly understand and enhance in the future. The AI Mentor Studio validates technical debt,  ensures the delivery of quality code, and limits the risk of issues slipping through into the application code. 
+The AI Mentor Studio can detect potential issues in the areas of architecture, performance, security, and maintainability. The maintainability analysis flags complex undocumented code and missing descriptions of reusable elements to help teams produce well-documented code that other developers can quickly understand and enhance in the future. The AI Mentor Studio validates technical debt,  ensures the delivery of quality code, and limits the risk of issues slipping through into the application code.
 
 #### Static-code analysis (automated)
 
@@ -144,10 +142,10 @@ For an independent analysis of OutSystems code, (for example, for advanced secur
 
 #### Code review (manual)
 
-Code reviews help teams build a maintainable code base and gather feedback quickly. 
+Code reviews help teams build a maintainable code base and gather feedback quickly.
 To ensure adherence to coding best practices and technical standards, senior developers or technical leads should perform regular code reviews. During these reviews the technical design is validated, the code is checked to ensure that it meets the business requirements, and that it is aligned with the architecture design. Code reviews can also be carried out by other developers and conducted on-the-fly as code is being written. The technical solution and code are validated and checks are carried out to ensure that the code complies with best practices. While AI Mentor Studio validates code quality, a code review validates code correctness and is a great way to ensure the ‘four eyes principle’, where the code gets checked by a couple of people before it gets approved. Code reviews are also a great way to share responsibility among the team and are also a good way to disseminate knowledge within the team about the technical solution.
 
-### Functional quality 
+### Functional quality
 
 #### Automated testing
 
@@ -155,11 +153,11 @@ The most common feedback loop in any deployment pipeline is the execution of aut
 
 By defining an automated testing strategy, it helps the efficiency of the overall software delivery and it ensures robust software quality. Automated tests run significantly faster than manual tests done by human users which will help ensure **quick feedback** even as your systems grow and scale.  Automated tests can run virtually unattended as many times you want and whenever you need. Although it has an initial setup cost, you’ll achieve a sharp drop in the amount of time used for your testing activities. This enables **faster validation**, **shorter lead times** for changes and more **frequent deploys to production**. Additionally, automated testing ensures **delivery quality** and provides actionable data to help improve applications and reduce the number of issues that reach production.
 
-There are many different types of **functional testing** that can be automated and help ensure that application code is working as expected, for example, and regression testing. Regression tests are any tests that validate a previously accepted behavior, regardless of test scope (unit, integration, or E2E). **Unit/component tests** verify your application at the most granular level, typically actions. They are fast, easy to maintain, and support rapid change of your application. [Unit tests](https://success.outsystems.com/documentation/11/testing_apps/component_testing/) should be the foundation of your automation strategy. A **regression test** collection verifies that your entire application still works as intended after being changed. This suite adds value to the deployment pipeline. 
+There are many different types of **functional testing** that can be automated and help ensure that application code is working as expected, for example, and regression testing. Regression tests are any tests that validate a previously accepted behavior, regardless of test scope (unit, integration, or E2E). **Unit/component tests** verify your application at the most granular level, typically actions. They are fast, easy to maintain, and support rapid change of your application. [Unit tests](https://success.outsystems.com/documentation/11/testing_apps/component_testing/) should be the foundation of your automation strategy. A **regression test** collection verifies that your entire application still works as intended after being changed. This suite adds value to the deployment pipeline.
 
 For more information about automated testing guidelines and tools, see [OutSystems Testing Guidelines](../../testing-apps/automated-testing/testing-guidelines.md).
 
-## Production hotfixes 
+## Production hotfixes
 
 Anytime software is released, the risk of vulnerabilities, issues, and bugs are introduced. If a serious bug appears in production, then it might need to be fixed as soon as possible. By applying the practices described above you may be in a position where production hotfixes are effectively emergency fixes; they are rare and don’t represent a new urgent feature from the business (where the release pace is in months and not in days or weeks). Nevertheless, because it depends on how you've applied the previous practices, there’s no silver bullet on this topic, and we recommend adapting to your scenario while taking the following topics into consideration.
 

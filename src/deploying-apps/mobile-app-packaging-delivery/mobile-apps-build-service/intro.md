@@ -13,8 +13,9 @@ audience:
 coverage-type:
   - understand
   - apply
+outsystems-tools:
+  - platform server
 ---
-
 # Mobile Apps Build Service
 
 <div class="info" markdown="1">
@@ -27,13 +28,13 @@ OutSystems allows you to generate mobile application packages for iOS and Androi
 
 <div class="info" markdown="1">
 
-You **do not** need to install any Platform Server updates to benefit from new versions of MABS, since this is a cloud service provided by OutSystems. 
+You **do not** need to install any Platform Server updates to benefit from new versions of MABS, since this is a cloud service provided by OutSystems.
 
 </div>
 
 ## Understanding MABS Versions { #understanding-mabs-versions }
 
-OutSystems regularly releases new versions of this cloud service with support for new mobile stacks, and therefore newer mobile platform versions. 
+OutSystems regularly releases new versions of this cloud service with support for new mobile stacks, and therefore newer mobile platform versions.
 
 However, this means that support for older mobile operating systems might be dropped in newer versions of the service. You may want to keep supporting older devices, at the cost of not having access to the latest mobile features and eventually being prevented from publishing the app to the mobile app stores, depending on rules dictated by Apple and Google. For this, you will need to specify that you want your mobile app packages for a given mobile app to be built with an older MABS version.
 
@@ -47,7 +48,7 @@ The MABS version selection is done in Service Center for **each application** an
 
 The MABS version used to build a mobile package is **saved along with the application version tag**, i.e. when you tag an application version OutSystems saves the MABS version information.
 
-Usually, you perform the MABS version selection in the **Development environment**, and this MABS version will be propagated in every deployment up to Production unless you manually change it in some specific environment using Service Center. 
+Usually, you perform the MABS version selection in the **Development environment**, and this MABS version will be propagated in every deployment up to Production unless you manually change it in some specific environment using Service Center.
 
 For example, if you deploy your mobile app from Development to  Pre-Production (PP), change the MABS version in PP and tag a new version of the mobile app in PP, the new MABS version selected in PP will also be used in Production when you deploy the mobile app from PP to Production.
 
@@ -69,7 +70,7 @@ In the following sections, you can find examples of the impact of selecting one 
 
 If a new MABS version is released between two tagged versions in the current environment and you have the "Always use the latest version"  selected, when you tag the second version of the application the mobile app package is generated with the new MABS version and this information is saved along with the version tag.
 
-#### Example 
+#### Example
 
 Consider an infrastructure with 3 environments: DEV, PP and PROD. In the DEV environment we configured the mobile app to always consider the latest MABS version available.
 
@@ -99,7 +100,6 @@ There were two application versions tagged in DEV, and the application was subse
 
 When your mobile app version 0.6 was tagged, MABS 4.0 had already been released, but since the mobile app was configured to use a specific MABS version, **the mobile app package was still generated with MABS version 3.3**. This MABS version was saved along with the version tag information, and the packages generated in other environments also used MABS 3.3 for mobile app package generation.
 
-
 ## Enable the Mobile Apps Build Service for an Environment
 
 The Mobile Apps Build Service operation is optional. You can change its availability in the environment manager, thus allowing or avoiding the generation of new mobile application packages for that environment.
@@ -108,7 +108,7 @@ To enable the Mobile Apps Build Service for an environment:
 
 1. Access the Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
 1. Go to **Administration** and click on the **Environment Configuration** tab.
-1. Check the **Enable Mobile Apps Build Service** option. 
+1. Check the **Enable Mobile Apps Build Service** option.
 
 From now on, every time there is a request for a new mobile application package this service is called.
 
@@ -122,4 +122,4 @@ To check the status of the Mobile Apps Build Service:
 
 1. Access the Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
 1. Go to **Monitoring** and click on the  Environment Health  tab.
-1. In the **Front-end Servers** table you can see the status of the Mobile Apps Build Service. Click **Details** to see the status of the service for each mobile platform and the log of the applications currently being generated. 
+1. In the **Front-end Servers** table you can see the status of the Mobile Apps Build Service. Click **Details** to see the status of the service for each mobile platform and the log of the applications currently being generated.

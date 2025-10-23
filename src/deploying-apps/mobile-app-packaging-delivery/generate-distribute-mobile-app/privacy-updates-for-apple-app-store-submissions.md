@@ -24,7 +24,7 @@ Your app or third-party SDK must declare one or more approved reasons that accur
 
 ## Privacy manifest file
 
-You must provide a PrivacyInfo.xcprivacy file in your OutSystems app, where the APIs used are detailed. Provided is a default file that can be used. Ensure you've installed a new app build after adding the privacy manifest file. 
+You must provide a PrivacyInfo.xcprivacy file in your OutSystems app, where the APIs used are detailed. Provided is a default file that can be used. Ensure you've installed a new app build after adding the privacy manifest file.
 
      <?xml version="1.0" encoding="UTF-8"?>
      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -144,4 +144,3 @@ In Service Studio add and upload the privacy manifest file:
         }
     }
     ```
-

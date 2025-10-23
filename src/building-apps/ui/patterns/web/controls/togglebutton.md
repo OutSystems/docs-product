@@ -41,9 +41,9 @@ In this example, we create a toggle button to activate a widget that can is acti
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Toggle Button widget into the Main Content area of your application's screen.
@@ -64,15 +64,15 @@ In this example, we create a toggle button to activate a widget that can is acti
 
 1. Select the Checkbox widget, and on the **Properties** tab, from the **Variable** drop-down, select the local variable you just created (in this example, **IsToggled**).
 
-    ![Selecting the local variable 'IsToggled' for the Checkbox widget in the Properties tab](images/togglebutton-10-ss.png "Selecting Checkbox Variable") 
+    ![Selecting the local variable 'IsToggled' for the Checkbox widget in the Properties tab](images/togglebutton-10-ss.png "Selecting Checkbox Variable")
 
 1. From the OnChange **Destination** drop-down, select **New Screen Action**.
 
-    ![Setting the OnChange destination to a new screen action for the Toggle Button](images/togglebutton-12-ss.png "Setting OnChange Destination") 
+    ![Setting the OnChange destination to a new screen action for the Toggle Button](images/togglebutton-12-ss.png "Setting OnChange Destination")
 
 1. From the Toolbox, add the **Ajax Refresh** to the screen action, and in the **Select Widget** pop-up, navigate to and select the Submit button name (in this example, SubmitButton), and click **OK**.
 
-    ![Adding an Ajax Refresh to the screen action and selecting the Submit button for refresh](images/togglebutton-13-ss.png "Adding Ajax Refresh to Screen Action") 
+    ![Adding an Ajax Refresh to the screen action and selecting the Submit button for refresh](images/togglebutton-13-ss.png "Adding Ajax Refresh to Screen Action")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

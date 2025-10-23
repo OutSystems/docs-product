@@ -32,9 +32,9 @@ Before generating your mobile app for the first time, you have to configure spec
 
 To generate Android App Bundle you need to use the following:
 
-*  Platform Server version 11.12.0 or later
-*  MABS 7 or later
-*  Up-to-date Service Studio
+* Platform Server version 11.12.0 or later
+* MABS 7 or later
+* Up-to-date Service Studio
 
 </div>
 
@@ -42,7 +42,7 @@ The following sections show how to configure and generate iOS and Android app pa
 
 <div class="warning" markdown="1">
 
-Don't tamper with the iOS or Android mobile builds once the platform generates them. For example, don't use a third-party tool to add new functionality like performance monitoring. If you modify a mobile build, you're risking having an app that doesn't run correctly and that fails to pass integrity checks. 
+Don't tamper with the iOS or Android mobile builds once the platform generates them. For example, don't use a third-party tool to add new functionality like performance monitoring. If you modify a mobile build, you're risking having an app that doesn't run correctly and that fails to pass integrity checks.
 
 </div>
 
@@ -50,13 +50,13 @@ Don't tamper with the iOS or Android mobile builds once the platform generates t
 
 To configure or generate your mobile app package (iOS or Android) in Service Studio, do the following:
 
-1. Navigate to the app detail screen of your mobile app. 
+1. Navigate to the app detail screen of your mobile app.
 
 1. Select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
 
-1. When configuring your mobile app for the first time for a given platform (iOS or Android), click the **Generate Android app** or **Generate iOS app** button, according to the platform. Follow the configuration steps for your desired scenario: distribute for [development tests](development-tests.md), distributing your app to a [limited group of end users](limited-group-end-users.md), or publishing your app in [Mobile App Stores](publish-app-stores.md). If you have previously defined your mobile app's iOS or Android configuration settings, click on the cog icon for the correct platform to change your configuration. 
+1. When configuring your mobile app for the first time for a given platform (iOS or Android), click the **Generate Android app** or **Generate iOS app** button, according to the platform. Follow the configuration steps for your desired scenario: distribute for [development tests](development-tests.md), distributing your app to a [limited group of end users](limited-group-end-users.md), or publishing your app in [Mobile App Stores](publish-app-stores.md). If you have previously defined your mobile app's iOS or Android configuration settings, click on the cog icon for the correct platform to change your configuration.
 
-1. After defining or changing your mobile app iOS or Android settings, click **Generate Android app** or **Generate iOS app**. 
+1. After defining or changing your mobile app iOS or Android settings, click **Generate Android app** or **Generate iOS app**.
 
     ![Screenshot of the native mobile settings tab in Service Studio for configuring mobile app packages](images/native-platforms-tab-ss.png "Native app settings in Service Studio")
 
@@ -102,7 +102,7 @@ To define a different domain name for your mobile app, do the following:
 
     ![Screenshot depicting the process of changing the hostname for mobile apps in Service Center](images/change-hostname-sc.png "Hostname settings for mobile apps")
 
-1. Enter the new domain name for the mobile app and click **Apply**. 
+1. Enter the new domain name for the mobile app and click **Apply**.
 
 1. **Regenerate the mobile app** for the changes to take effect.
 
@@ -126,7 +126,7 @@ The next time you generate a new app package, the version code increments by one
 
 ### Choosing the MABS version to build your mobile packages { #choose-mabs-version }
 
-The [Mobile Apps Build Service (MABS)](../mobile-apps-build-service/intro.md) is a **cloud service** used by OutSystems to generate the mobile packages of your mobile apps developed in OutSystems for iOS and Android. 
+The [Mobile Apps Build Service (MABS)](../mobile-apps-build-service/intro.md) is a **cloud service** used by OutSystems to generate the mobile packages of your mobile apps developed in OutSystems for iOS and Android.
 
 MABS is continuously improved and OutSystems regularly makes available new versions of this cloud service. However, you might not want to use the latest version, since different MABS versions support different mobile stacks and therefore different ranges of devices and mobile platform versions.
 

@@ -29,18 +29,17 @@ Using watches, you can inspect the following:
 * Variables
 * Screen widgets
 
-
 ## Add a Watch
 
 To watch a module element, follow these steps:
 
 1. Run the module in Debug mode.
 1. Right-click the element you want to watch.
-1. Select the **Add To Debug Watches** option. 
+1. Select the **Add To Debug Watches** option.
 
     ![Screenshot showing how to add a watch to a module element in Service Studio](images/watches-add-ss.png "Adding a Watch in Service Studio")
 
-All watched module elements are alphabetically listed in the **Watches** tab. 
+All watched module elements are alphabetically listed in the **Watches** tab.
 
 ![Screenshot of the Watches tab in Service Studio displaying a list of watched module elements](images/watches-tab-ss.png "Watches Tab in Service Studio")
 
@@ -53,15 +52,13 @@ To remove a watch from a module element, follow these steps:
 
     ![Screenshot illustrating the removal of a watch from a module element in Service Studio](images/watches-remove-ss.png "Removing a Watch in Service Studio")
 
-
 ## Remove All Watches
 
 To remove all watches, follow these steps:
 
 1. Right-click anywhere in the **Watches** tab area.
-1. Select the **Remove All Watches** option. 
+1. Select the **Remove All Watches** option.
 
     ![Screenshot showing the option to remove all watches at once in Service Studio](images/watches-removeall-ss.png "Removing All Watches in Service Studio")
 
 Alternatively, you can select the **Remove All Watches** option available in the **Debugger** menu.
-

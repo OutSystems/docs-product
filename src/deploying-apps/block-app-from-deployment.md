@@ -34,9 +34,9 @@ Before blocking an app from being deployed, ensure that:
 
 * The app is not published in the target environment.
 
-* The app is not included in a deployment for that target environment.    
+* The app is not included in a deployment for that target environment.
 
-## Block an app 
+## Block an app
 
 To block an app from being deployed to an environment, follow these steps:
 
@@ -65,7 +65,7 @@ If the blocked app is added to the [deployment plan](deployment-plans.md), the a
 
 If an app in the deployment plan has a dependency on a blocked app, you cannot proceed with the deployment. However, you can opt for **Continue with errors** that results in broken references in the target environment. To successfully proceed with the deployment, you must [unblock](#unblock-an-app) the dependent app.
 
-## Block a newly created app from deployment 
+## Block a newly created app from deployment
 
 As an infrastructure manager if your factory needs a stricter governance model where each new app should only be deployed to specific environments then you can block all newly created apps from being deployed to all environments. To configure this setting you need **infrastructure** permissions. By default, newly created apps can be deployed to any environment in the infrastructure.
 
@@ -75,7 +75,7 @@ To block newly created apps from being deployed to all environments, toggle OFF.
 
 For self-managed infrastructures, you can find the setting in **Infrastructure > LifeTime Settings > Deployment**.
 
-For cloud environments, go to  **Environment > Options** and select **LifeTime Settings**. 
+For cloud environments, go to  **Environment > Options** and select **LifeTime Settings**.
 
 By turning off this setting, all the new apps that are created from the time the setting was turned off are blocked by default in all the environments. To deploy them, you must first unblock them.
 

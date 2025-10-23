@@ -73,9 +73,9 @@ You can use the Overflow Menu pattern to show additional options when there is a
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the **Overflow Menu** widget into the **Row Cell** of the row you just created.
@@ -90,11 +90,11 @@ You can use the Overflow Menu pattern to show additional options when there is a
 
     In this example, this link is used to remove the table row.
 
-1. To add the **Trash** icon to the link, click on the icon inside the **Link** element, and select the **Trash** icon. 
+1. To add the **Trash** icon to the link, click on the icon inside the **Link** element, and select the **Trash** icon.
 
     ![Adding the Trash icon to the link inside the Overflow Menu widget in Service Studio](images/overflow-trash-ss.png "Adding Trash Icon to Link")
 
-1. Replace the text on the link to **Remove Employee**. 
+1. Replace the text on the link to **Remove Employee**.
 
     ![Replacing the link text with 'Remove Employee' in the Overflow Menu widget in Service Studio](images/overflow-removeemployee-ss.png "Remove Employee Link Text")
 
@@ -119,6 +119,7 @@ You can use the Overflow Menu pattern to show additional options when there is a
 After following these steps and publishing the module, you can test the pattern in your app.  The results from this example should look something like the following:
 
 ![Resulting user interface showing the Overflow Menu implementation in a published application](images/overflow-result.png "Overflow Menu Implementation Result")
+
 ## Properties
 
 | Property| Description |

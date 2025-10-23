@@ -47,7 +47,7 @@ Check the MyBigWebApp4 module to deploy its latest version to Quality. Confirm t
 
 ### Deploy the Module
 
-Back to the deployment screen, click **Validate Now** to validate if just deploying module MyBigWebApp4 from MyBigWebApp has no impact on other applications in Quality. All it's OK, so click on the **Continue** button to review the deployment plan. 
+Back to the deployment screen, click **Validate Now** to validate if just deploying module MyBigWebApp4 from MyBigWebApp has no impact on other applications in Quality. All it's OK, so click on the **Continue** button to review the deployment plan.
 
 ![Deployment screen with Validate Now and Continue buttons highlighted, indicating the process to deploy module MyBigWebApp4](images/deploy-a-single-module-3.png "Deployment Validation and Execution")
 

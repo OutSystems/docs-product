@@ -24,7 +24,7 @@ The following extensibility client actions are available for UI Patterns:
 
 * [Provider configuration](#provider-configuration)
 
-### Provider events
+## Provider events
 
 To add further events beyond the ones the Patterns have by default, there’s a set of two client actions per provider that can be used to add or remove a new event and an associated callback.
 
@@ -42,7 +42,7 @@ The following table shows each provider based UI Pattern with its associated eve
 |<ul><li>Range Slider</li><li>Range Slider Interval</li></ul>|UnsetNoUISliderEvent|<ul><li>WidgetId (string)</li><li>NoUiSliderEventId (string)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>|[noUiSlider events](https://refreshless.com/nouislider/events-callbacks/)|
 
 ## How to set a provider event
- 
+
 In the following example, the **noUiSlider** provider event is added to the Range Slider Pattern.
 
 1. In Service Studio, in the Toolbox, search for the **Range Slider** Pattern.
@@ -55,7 +55,7 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
     * **MaxValue:** 100
 
-    * **StartingValue**: 50 
+    * **StartingValue**: 50
 
     ![Dragging the Range Slider widget to the screen and setting mandatory properties in Service Studio](images/rangeslider-drag-ss.png "Setting Properties for Range Slider")
 
@@ -63,7 +63,7 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
     ![Creating a new client action for Initialized and OnValueChange events in Service Studio](images/initialized-ss.png "Creating New Client Action for Events")
 
-1. Create a new **OnSlide** client action and add the relevant logic. 
+1. Create a new **OnSlide** client action and add the relevant logic.
 
     **Note**: The client action acts as a callback for the event.
 
@@ -81,7 +81,7 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
         ![Creating an output parameter and assigning it to the OnSlide client action in Service Studio](images/callback-ss.png "Assigning Client Action to Callback")
 
-    **Note**: By default, the **SetNoUiSliderEvent** client action has a **Handler** input parameter of type **Object**. As you can’t directly pass client actions using parameters, you must change the **OnSlide** client action to an Object variable that can be passed to the **Handler** input parameter. 
+    **Note**: By default, the **SetNoUiSliderEvent** client action has a **Handler** input parameter of type **Object**. As you can’t directly pass client actions using parameters, you must change the **OnSlide** client action to an Object variable that can be passed to the **Handler** input parameter.
 
 1. On the **Logic** tab, go to **Client Actions** -> **OutSystemsUI**, expand the **Range Slider** folder and drag the **SetNoUiSliderEvent** client action to the action flow.
 
@@ -122,7 +122,7 @@ The following table shows each provider based UI Pattern with its associated con
 
 ### How to set a provider configuration
 
-In the following example, the Date Picker Pattern is set to appear flat on the screen by using the **SetFlatpickrConfig** client action. 
+In the following example, the Date Picker Pattern is set to appear flat on the screen by using the **SetFlatpickrConfig** client action.
 
 1. In Service Studio, in the Toolbox, search for the **Date Picker** Pattern.
 
@@ -133,7 +133,7 @@ In the following example, the Date Picker Pattern is set to appear flat on the s
     ![Dragging the Date Picker widget to the screen in Service Studio](images/drag-datepicker-ss.png "Dragging Date Picker to the Screen")
 
 1. On the **Properties** tab,  in the **Events** section, select **New Client Action** for the **Initialized** event.
-    
+
     ![Creating a new client action for Initialized and OnValueChange events in Service Studio](images/initialized-ss.png "Creating New Client Action for Events")
 
 1. On the **Logic** tab, go to **Client Actions** -> **OutSystems UI**, expand the **Date Pickers** folder, and drag the **SetFlatpickerConfigs** client action inside the **Initialized** action flow.

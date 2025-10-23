@@ -41,9 +41,9 @@ In this example, we create a button that opens and closes the Bottom Sheet widge
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Bottom Sheet widget into the Main Content area of your application's screen and on the **Properties** tab, in the **Name** field, enter a name for the Bottom Sheet widget.
@@ -54,7 +54,7 @@ In this example, we create a button that opens and closes the Bottom Sheet widge
 
     ![Screenshot of the Bottom Sheet widget's default placeholders for TopBar and Content in Service Studio](images/bottomsheet-placeholder-ss.png "Bottom Sheet Widget Placeholder")
 
-1. Add the relevant content to the TopBar and Content placeholders. 
+1. Add the relevant content to the TopBar and Content placeholders.
 
     ![Example of adding text, an icon, and a close button to the Bottom Sheet widget placeholders](images/bottomsheet-content-ss.png "Adding Content to Bottom Sheet")
 
@@ -88,7 +88,7 @@ In this example, we create a button that opens and closes the Bottom Sheet widge
 
     ![Image displaying the customization options for the Bottom Sheet pattern in the properties tab](images/bottomsheet-properties-ss.png "Customizing Bottom Sheet Properties")
 
-After following these steps and publishing the module, you can test the pattern in your app. 
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ![Screenshot of the Bottom Sheet UI pattern as it appears in a mobile app after implementation](images/bottomsheet-resultapp.png "Bottom Sheet in Mobile App")
 
@@ -104,6 +104,6 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Bottom Sheet
 
-|Event| Description| 
+|Event| Description|
 |---|---|
-|OnToggle: Optional|Event is triggered when the Bottom Sheet is opened or closed.| 
+|OnToggle: Optional|Event is triggered when the Bottom Sheet is opened or closed.|

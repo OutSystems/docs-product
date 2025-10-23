@@ -78,15 +78,13 @@ To reuse a deployment plan from the Deployment Plans screen, do the following:
 1. In the pop-up window, choose the **source** and the **target** environments for the new plan.
 
    <div class="info" markdown="1">
-   
+
    From LifeTime 11.24.0 onwards, the **source** environment is pre-selected with the target environment from the original plan. You only need to select the **target** environment for the new plan.
    You can also choose to keep the tags from the source plan by selecting **Keep the tags used in the original plan**.
 
    </div>
 
     ![Screenshot of the popup window for reusing a deployment plan with options for source and target environments in LifeTime](images/deployment-plans-reuse-popup-lt.png "Reuse Deployment Plan Popup in LifeTime")
-
-
 
 In this case, if some of the tagged versions of the original plan are not available for deployment (for example, if the version is not available in the selected source environment or if there's a more recent version of an application in the selected target environment), you will get a feedback message stating this situation, and you will be able to adjust the new deployment plan accordingly.  
 
@@ -145,10 +143,12 @@ When you're retrying a deployment plan the following situations may arise due to
 **Feature availability**
 
 To create and edit deployment plans in parallel for the same target environment:
+
 * **OutSystems Cloud infrastructures**: LifeTime 11.18.0 and higher
 * **Self-managed infrastructures**: LifeTime 11.21.0 and higher
 
 To execute deployment plans in parallel for the same target environment:
+
 * **OutSystems Cloud infrastructures**: LifeTime 11.21.0 and higher
 * **Self-managed infrastructures**: LifeTime 11.24.0 and higher
 
@@ -160,11 +160,11 @@ If you have independent delivery lines in your factory, you can create, edit, an
 
 * Deployments don't contain a module that is already being deployed or redeployed for the same target environment in another deployment plan (otherwise, the deployment is blocked).
 
-* Deployments don't contain direct or indirect references (both as producers or as consumers) to any other module that is already being deployed for the same target environment in another deployment plan (otherwise, the deployment is blocked). 
+* Deployments don't contain direct or indirect references (both as producers or as consumers) to any other module that is already being deployed for the same target environment in another deployment plan (otherwise, the deployment is blocked).
 
 * Parallel deployments are enabled in LifeTime by default. At the environment level, it is possible to disable both the creation as well as the execution of parallel deployment plans. To disable the execution of parallel deployments, set the parallel deployment limit setting to 1.
 
-* Parallel deployment limit is defined for each environment in LifeTime. By default, the limit is 5. For OutSystems Cloud infrastructures, the limit cannot be increased above 5. For self-managed infrastructure, this limit can be increased above 5. 
+* Parallel deployment limit is defined for each environment in LifeTime. By default, the limit is 5. For OutSystems Cloud infrastructures, the limit cannot be increased above 5. For self-managed infrastructure, this limit can be increased above 5.
 
 To create and execute a new deployment in parallel with other deployment plans targeting the same environment, follow these steps:
 
@@ -178,7 +178,6 @@ To create and execute a new deployment in parallel with other deployment plans t
 
     ![Screenshot of theCreate a deployment plan popup with the source and target environments selected](images/deployment-plans-source-target-lt.png "Select the source and target environments")
 
-    **Note**: This example assumes that there are other deployment plans being executed against this target environment simultaneously. 
+    **Note**: This example assumes that there are other deployment plans being executed against this target environment simultaneously.
 
-1. [Edit and execute the deployment.](plan-a-deployment-for-the-operations-team.md#edit-a-deployment-plan) 
-
+1. [Edit and execute the deployment.](plan-a-deployment-for-the-operations-team.md#edit-a-deployment-plan)

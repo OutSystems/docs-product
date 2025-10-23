@@ -26,7 +26,7 @@ Your team can benefit from having Screens and Blocks in separate UI Modules and 
 To reuse Screens and Blocks between Modules, you need to meet the following requirements in your App.
 
 * The Themes need to be the same. This guarantees that UI looks the same. If the Themes are different, you get the Theme compatibility warning.
-* The UI elements (Screens, Blocks) need to be public. By setting these elements as public you make them available for referencing in other Modules. 
+* The UI elements (Screens, Blocks) need to be public. By setting these elements as public you make them available for referencing in other Modules.
 
 ## Current limitations
 
@@ -34,4 +34,3 @@ Because of the architectural differences between Apps, there are some limitation
 
 * Reusing Screens and Blocks is not available in Mobile Apps.
 * System Event **On Application Ready** runs every time you navigate between Screens in different Modules.
-

@@ -17,11 +17,11 @@ outsystems-tools:
 ---
 # How to use the OutSystems Data Grid
 
-**Prerequisites** 
+**Prerequisites**
 
 * Download and install the [OutSystems Data Grid (O11)](https://www.outsystems.com/forge/component-overview/9764/data-grid-reactive) component from Forge.
 
-This example fetches data from a database and displays it in the grid. (This example does not define any column structure.) 
+This example fetches data from a database and displays it in the grid. (This example does not define any column structure.)
 
 1. In Service Studio, in the Toolbox, search for Grid.
 
@@ -58,7 +58,7 @@ This example fetches data from a database and displays it in the grid. (This exa
 
     ![Screenshot showing the process of dragging a data source entity onto the flow in Service Studio.](images/grid-drag-entity-ss.png "Dragging Data Source Entity")
 
-    An aggregate (in this example, GetProducts) is automatically created. 
+    An aggregate (in this example, GetProducts) is automatically created.
 
 1. On the **Logic** tab, drag the **ArrangeData** Server Action onto the flow.
 
@@ -66,7 +66,7 @@ This example fetches data from a database and displays it in the grid. (This exa
 
     ![Screenshot depicting the ArrangeData Server Action being dragged onto the flow to format data for the grid.](images/grid-arrange-data-ss.png "ArrangeData Server Action in Flow")
 
-1. Set the **Data Action** property to the aggregate result. 
+1. Set the **Data Action** property to the aggregate result.
 
     All of the aggregate data is passed to the action.
 
@@ -97,18 +97,17 @@ After following these steps and publishing the module, you can test the componen
 | **Properties** | **Description** |
 |---|---|
 | Data (Text): Mandatory  | The data displayed in the Grid.  |
-| IsDataFetched (Boolean): Mandatory | Defines what is displayed while data is loading. | 
+| IsDataFetched (Boolean): Mandatory | Defines what is displayed while data is loading. |
 | GridHeight (Integer): Optional  |  Sets the Grid's height in pixels. Default height is 400 pixels. |  
 | HasGroupPanel (Boolean): Optional  | Enables the group panel to allow dragging columns and apply the grouping by the fields corresponding to the dragged columns. Default value is True. |  
-| AllowColumnEdit (Boolean): Optional  | Allows columns to be edited. Default value is False.  |   
-| AllowColumnReorder (Boolean): Optional  | Allows columns to be reordered. Default value is True. | 
+| AllowColumnEdit (Boolean): Optional  | Allows columns to be edited. Default value is False.  |
+| AllowColumnReorder (Boolean): Optional  | Allows columns to be reordered. Default value is True. |
 | AllowColumnResize (Boolean): Optional  | Allows column width to be resized. Default value is True. |  
-| AllowColumnSort (Boolean): Optional  | Allows sorting data by column. Default value is True. | 
-| KeyBinding (Text): Optional  | Set the primary key field of the data. Expected format: 'Entity.Attribute'. <br/>Use this field when doing Server-side validations. <br/>Don’t want to refresh the grid after adding lines. Combine with UpdateAddedLineKey and GetRowNumberByKey actions. | 
-| RowHeight (Integer): Optional  | Sets the row height in pixels. Default height is 48 pixels. | 
-| RowsPerPage (Integer): Optional  | Sets the number of rows displayed per page. Default value is 50.| 
-| ShowAggregateValues (Boolean): Optional  | Set to True to display a line below the grid with the column values aggregated (sum, min, max, etc.). <br/>By default, the parameter is set to False. <br/>To define the aggregation function of a given numeric (Number or Currency) column, use the SetColumnAggregate client action.| 
-| SanitizeInputValues (Boolean): Optional  | Set True to assure the values inputed in the grid will be sanitized or False if you want to explicitly allow custom code to run.| 
-| ServerSidePagination (Boolean): Optional  | Set to True if you want to enable server-side pagination. By default, False.| 
-| RowHeader (RowHeader Identifier): Optional  | Defines what is shown on the first column of the grid. Default value is *Entities.RowHeader.RowNumber*.| 
-
+| AllowColumnSort (Boolean): Optional  | Allows sorting data by column. Default value is True. |
+| KeyBinding (Text): Optional  | Set the primary key field of the data. Expected format: 'Entity.Attribute'. <br/>Use this field when doing Server-side validations. <br/>Don’t want to refresh the grid after adding lines. Combine with UpdateAddedLineKey and GetRowNumberByKey actions. |
+| RowHeight (Integer): Optional  | Sets the row height in pixels. Default height is 48 pixels. |
+| RowsPerPage (Integer): Optional  | Sets the number of rows displayed per page. Default value is 50.|
+| ShowAggregateValues (Boolean): Optional  | Set to True to display a line below the grid with the column values aggregated (sum, min, max, etc.). <br/>By default, the parameter is set to False. <br/>To define the aggregation function of a given numeric (Number or Currency) column, use the SetColumnAggregate client action.|
+| SanitizeInputValues (Boolean): Optional  | Set True to assure the values inputed in the grid will be sanitized or False if you want to explicitly allow custom code to run.|
+| ServerSidePagination (Boolean): Optional  | Set to True if you want to enable server-side pagination. By default, False.|
+| RowHeader (RowHeader Identifier): Optional  | Defines what is shown on the first column of the grid. Default value is _Entities.RowHeader.RowNumber_.|

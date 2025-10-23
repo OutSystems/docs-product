@@ -28,8 +28,8 @@ If you are using one of the [built-in Application Templates](<../../application-
 * [Create your Screen Templates](<intro.md>) and use your (custom) Theme as the base.
 
 If the Screen Template was compatible with your module, but now it's not:
- 
-* Revert the changes you did to the module Theme. 
+
+* Revert the changes you did to the module Theme.
 * Check if you set the correct Theme in the **Default Theme** property field of your module or UI Flow.
 
 ![Screenshot of a warning message indicating theme incompatibility with screen templates in Service Studio](images/template-layout-theme-mismatch.png "Theme Compatibility Warning")

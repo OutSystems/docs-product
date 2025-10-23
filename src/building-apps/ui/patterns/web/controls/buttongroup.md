@@ -38,9 +38,9 @@ You can use the Button Group UI Pattern to display radio button choices to the u
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Button Group widget into the Main Content area of your application's screen.
@@ -49,7 +49,7 @@ You can use the Button Group UI Pattern to display radio button choices to the u
 
     By default, the pattern contains 3 Button Group Items. You can add or delete as many Button Group Items as required.
 
-1. From the Widget Tree, select the **radio-button** element, and on the **Properties** tab, set the **Variable** and **Value** properties. 
+1. From the Widget Tree, select the **radio-button** element, and on the **Properties** tab, set the **Variable** and **Value** properties.
 
     ![Interface showing the properties tab for setting the variable and value properties of a radio-button element](images/buttongroup-image-3.png "Setting Properties for Radio Button Element")
 

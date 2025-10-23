@@ -29,17 +29,17 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 * Download and install the [OutSystems Map component](https://www.outsystems.com/forge/component-overview/9909/outsystems-maps) from Forge.
 
-You can use the Map component to provide an interactive satellite map to your users. 
+You can use the Map component to provide an interactive satellite map to your users.
 
 <div class="info" markdown="1" >
 
-Currently, Google Maps and Leaflet are supported. Google Maps isn't free. You must always buy an API key. 
+Currently, Google Maps and Leaflet are supported. Google Maps isn't free. You must always buy an API key.
 
 For more information on getting an API Key, refer to [Using API Keys](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
 </div>
 
-This example demonstrates how to highlight OutSystems office locations worldwide on the OutSystems Map component using Markers. 
+This example demonstrates how to highlight OutSystems office locations worldwide on the OutSystems Map component using Markers.
 
 1. In Service Studio, in the Toolbox, search for `Map`.
 
@@ -52,16 +52,16 @@ This example demonstrates how to highlight OutSystems office locations worldwide
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Map widget into the Main Content area of your application's screen.
 
     ![Dragging the Map widget onto the screen in Service Studio](images/map-drag-ss.png "Dragging Map Widget")
 
-1. On the **Properties** tab, enter an API key so that the "For development purposes" watermark is removed. 
+1. On the **Properties** tab, enter an API key so that the "For development purposes" watermark is removed.
 
     ![Entering the API key in the Properties tab for the Map widget](images/map-apikey-ss.png "Entering API Key")
 
@@ -69,7 +69,7 @@ This example demonstrates how to highlight OutSystems office locations worldwide
 
     ![Creating an aggregate to fetch office location data in Service Studio](images/map-aggregate-ss.png "Creating an Aggregate")
 
-1. Drag the **List** widget onto the **Drag markers here** screen area and on the **Properties** tab, enter the List widget source (the list of offices). 
+1. Drag the **List** widget onto the **Drag markers here** screen area and on the **Properties** tab, enter the List widget source (the list of offices).
 
     ![Dragging the List widget onto the screen area designated for markers](images/map-list-ss.png "List Widget on Screen")
 
@@ -103,5 +103,3 @@ After following these steps and publishing the module, you can test the componen
 | ShowTraffic (Boolean): Optional    | If True, traffic mode is enabled on the map. If False, traffic mode is not enabled. (False is the default.)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | AdvancedFormat (Text): Optional    | Allows for more options beyond what's provided through the input parameters. For more information, see [Google Controls](https://developers.google.com/maps/documentation/javascript/controls).                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ExtendedClass                      | Adds custom style classes to the component. You define your [custom style classes](../../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).               |
-
-

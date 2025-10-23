@@ -43,9 +43,9 @@ The following use case adds the Breadcrumbs UI Pattern to one screen. If you wan
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Breadcrumbs widget into the Main Content area of your application's screen.
@@ -59,7 +59,7 @@ The following use case adds the Breadcrumbs UI Pattern to one screen. If you wan
 1. From the Toolbox, drag another Breadcrumbs Item into your Breadcrumbs Pattern.
 
     ![Screenshot showing the process of adding another Breadcrumb Item to the Breadcrumbs Pattern](images/breadcrumbs-10-ss.png "Adding Breadcrumb Item")
-        
+
 1. In the Title placeholder, enter the breadcrumb title (in this example, **More Details**) and drag an Icon widget into the Icon placeholder.
 
     ![Image depicting the entry of a breadcrumb title and the addition of an Icon widget to the Breadcrumb Item](images/breadcrumbs-11-ss.png "Breadcrumb Item Title and Icon")

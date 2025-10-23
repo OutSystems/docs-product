@@ -27,7 +27,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 <div class="info" markdown="1">
 
 **This documentation is not valid for deprecated components.** To check if your component is deprecated and how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
-                            
+
 </div>
 
 You can use the Sidebar UI Pattern to display additional information in the margin of the main content. The additional information supports the user's understanding of the main content.
@@ -55,9 +55,9 @@ In this example, we create a button that opens and closes the Sidebar widget.
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Sidebar widget into the Main Content area of your application's screen.
@@ -86,10 +86,10 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     ![Screenshot showing the configuration of the StartsOpen property of the Sidebar widget to the 'IsSidebarOpen' variable in Service Studio](images/sidebar-isopen-ss.png "Setting the StartsOpen Property of Sidebar")
 
-1. Add your content to the **Header** and **Content** placeholders, for example, forms, images and text. 
-    
+1. Add your content to the **Header** and **Content** placeholders, for example, forms, images and text.
+
     In this example we add some text.
-   
+
     ![Screenshot demonstrating how to add content to the Header and Content placeholders of the Sidebar widget in Service Studio](images/sidebar-content-ss.png "Adding Content to Sidebar Placeholders")
 
 1. From the Toolbox, drag the **Button** widget just below the **Sidebar** widget and on the **Properties** tab, in the **Text** field, enter the text you want to appear on the button.
@@ -113,7 +113,7 @@ In this example, we create a button that opens and closes the Sidebar widget.
     d. On the **False** branch, add the **SidebarOpen** client action and set the **WidgetId** parameter to the Sidebar Id.
 
     e. Drag an **Assign** to the screen action and set **IsSidebarOpen** variable to ``not IsSidebarOpen``.
-    
+
     ![Screenshot depicting an Assign action to toggle the 'IsSidebarOpen' variable in Service Studio](images/sidebar-assign-ss.png "Assigning the Sidebar Open State")
 
 1. You can customize the Sidebar by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties.
@@ -134,6 +134,6 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|OnToggle: Optional  | Event triggered when the Sidebar is toggled. | 
+|OnToggle: Optional  | Event triggered when the Sidebar is toggled. |

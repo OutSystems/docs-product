@@ -25,8 +25,8 @@ Tagging an application version in LifeTime means that a snapshot of the developm
 A typical situation of tagging an application is when it reaches a development milestone:
 
 1. The application is tagged
-2. The development continues
-3. The tagged version of the application is deployed to another environment for tests
+1. The development continues
+1. The tagged version of the application is deployed to another environment for tests
 
 When tagging a mobile app, there is an extra section called Mobile Versions that allows tagging the mobile package. That operation isn't frequently needed because the platform automatically updates the app without generating new packages. In some [update scenarios](<mobile-app-packaging-delivery/mobile-app-update-scenarios.md>) new packages have to be tagged and generated.
 
@@ -50,17 +50,17 @@ The plus ('+') sign means the applications have changed since their last tag.
 To tag the mobile app, do the following:
 
 1. Click on **MyApp** to show its details.
-    
+
     ![Screenshot of the OutSystems LifeTime interface displaying details for the mobile app 'MyApp' with the 'TAG VERSION' button highlighted.](images/tag-a-version-2.png "MyApp Details")
 
 1. Click the **TAG VERSION** button for the Development environment.
 
 1. Set the Version to **0.2** and type a description. In the Mobile Versions section, there's also a plus ('+') sign for the Android platform, meaning that the [changes in the app](mobile-app-packaging-delivery/mobile-app-update-scenarios.md) require the tagging and generation of a new mobile package. Set also the mobile version for the native platform. Make sure the mobile version [is higher than any previous version](#mobile-package-version).
-    
+
     ![Screenshot of the OutSystems LifeTime interface with the 'TAG VERSION' dialog for 'MyApp' where the version is set to 0.2 and a description is added.](images/tag-a-version-3.png "Tagging Mobile App Version")
 
 1. Click the **TAG VERSION** button to finish.
-    
+
     ![Screenshot of the OutSystems LifeTime interface confirming that the mobile app 'MyApp' has been successfully tagged with version 0.2.](images/tag-a-version-4.png "Mobile App Tagged")
 
 The mobile app is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.
@@ -101,7 +101,7 @@ To tag the web application, do the following:
 
 1. Click the **TAG VERSION** button for the Development environment.
 
-1. Set the Version to **0.3** and type a description. 
+1. Set the Version to **0.3** and type a description.
 
     ![Screenshot of the OutSystems LifeTime interface with the 'TAG VERSION' dialog for 'MyWebApp' where the version is set to 0.3 and a description is added.](images/tag-a-version-6.png "Tagging Web Application Version")
 

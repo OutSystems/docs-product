@@ -16,7 +16,7 @@ coverage-type:
   - apply
 ---
 
-# Wizard 
+# Wizard
 
 <div class="info" markdown="1">
 
@@ -49,9 +49,9 @@ The following example demonstrates how you can create a four-step Wizard with na
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Wizard widget into the Main Content area of your application's screen.
@@ -60,7 +60,7 @@ The following example demonstrates how you can create a four-step Wizard with na
 
     By default, the Wizard widget contains three Wizard Item widgets. Each Wizard Item represents a step. You can add or delete Wizard Items as required.
 
-1. From the Toolbox, drag another Wizard Item into your Wizard Pattern. 
+1. From the Toolbox, drag another Wizard Item into your Wizard Pattern.
 
     ![Screenshot showing the process of adding a new Wizard Item to the Wizard Pattern](images/wizard-28-ss.png "Adding a Wizard Item")
 
@@ -72,7 +72,6 @@ The following example demonstrates how you can create a four-step Wizard with na
 
     ![Setting the icon for a new Wizard Item to number 4 in Service Studio](images/wizard-27-ss.png "Setting Wizard Item Icon")
 
-
 1. Rename each of the Wizard Items to the following:
 
     * Shopping Details
@@ -81,7 +80,6 @@ The following example demonstrates how you can create a four-step Wizard with na
     * Confirm Order
 
     ![Renaming Wizard Items to Shopping Details, Payment Details, Review Order, and Confirm Order](images/wizard-20-ss.png "Renaming Wizard Items")
-
 
 1. From the Element tree, create an Input Parameter by right-clicking on your screen, and from the drop-down, select **Add Input Parameter**.
 
@@ -95,7 +93,7 @@ The following example demonstrates how you can create a four-step Wizard with na
     * Data Type: Integer
     * Is Mandatory: No
     * Default Value: 1
-   
+
     ![Configuring properties of an Input Parameter with name CurrentStep and default value 1](images/wizard-13-ss.png "Setting Input Parameter Properties")
 
      By setting the **Default Value** to 1, you ensure that the  Wizard always starts on step 1.
@@ -127,7 +125,7 @@ The following example demonstrates how you can create a four-step Wizard with na
 1. On the **Properties** tab, in the **Condition** property, enter the following:
 
     `CurrentStep = 1`
-   
+
     ![Service Studio expression editor showing logic for Wizard step status based on CurrentStep](images/wizard-19-ss.png "Wizard Step Expression Logic")
 
     You have now created a condition that controls what's displayed on the screen when the step is active.
@@ -140,14 +138,13 @@ The following example demonstrates how you can create a four-step Wizard with na
 
     ![Example content for Shipping Details step with labels and input boxes in a Wizard Pattern](images/wizard-18-ss.png "Shipping Details Step Content")
 
-
 **Create the wizard navigation**
 
 1. From the Toolbox, drag two Button widgets onto your screen.
 
 1. On the **Properties** tab, define the button names and the button behavior (previous and next).
 
-    | Property | Button 1 | Button 2
+    | Property | Button 1 | Button 2 |
     |---|---|---|
     | Label | "Previous" | "Next" |
     | Method | Navigate/Submit | Navigate/Submit |
@@ -156,7 +153,6 @@ The following example demonstrates how you can create a four-step Wizard with na
 
 1. On the **Properties** tab, from the **Destination** drop-down, select **New Screen Action**.
   
-
 1. From the Toolbox, drag the Assign block onto your screen and set the **Variable** property to `CurrentStep` and the **Value** property to `CurrentStep + 1`. This ensures that user inputs are passed from step to step.
 
     ![Creating a new screen action for the Next button in a Wizard Pattern](images/wizard-22-ss.png "Creating a Screen Action")
@@ -200,9 +196,8 @@ After following all of the steps in each of the sections, you can publish the mo
 | UseTopLabel (Boolean): Optional   | If True, label is placed above the icon. If False, label is placed below the icon. The text describing the step is either placed above or below the step icon.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ExtendedClass (Text): Optional    | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-
 <div class="info" markdown="1">
-    
+
 To ensure that all elements in the list are correctly fetched, for any List used inside a Wizard with WizardItems you must deactivate the [virtualization](../../../../../ref/lang/auto/servicestudio-plugin-nrwidgets-list.md#list). To do this, set the List attribute value to ``disable-virtualization=True``.
-    
+
 </div>

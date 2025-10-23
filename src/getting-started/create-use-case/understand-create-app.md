@@ -46,7 +46,7 @@ The tutorials use accelerators, Screen Templates, and UI patterns. Completing a 
 
 OutSystems provides sample data so you can see how your screens look once instantiated. When you publish your app, it's available from your personal environment.
 
-Each application use case has a tutorial. As you progress through this journey you’ll learn how to make changes and add functionality to automate your business solution. At the end of each tutorial, you can open your app in a browser.    
+Each application use case has a tutorial. As you progress through this journey you’ll learn how to make changes and add functionality to automate your business solution. At the end of each tutorial, you can open your app in a browser.
 
 The tutorials use the following common features to speed up the development of your app:
 
@@ -73,7 +73,7 @@ Following is a list of application use cases including a short description of th
     * **Work Orders** - displays information about the work order including the order title and type, the name of the customer, expected during, current status, name of the technician, and the schedule date for the work. Users can search by order or customer name, status, technician name or all, and the from and to dates.
     * **Work Order detail** - displays information that includes the company name, the date you expect the service to complete, the amount, the name of the person who created the work order, and the date the work order was received. In addition, the work order shows the products, unit price and number of units, any discounts, and the amount.
 * **Retail catalog**
-    * **Product Gallery** - displays a picture of the product, along with a short description and the price. When users click on the image, another page opens with a larger image and more detail. 
+    * **Product Gallery** - displays a picture of the product, along with a short description and the price. When users click on the image, another page opens with a larger image and more detail.
     * **Product Details** - displays more information about the product including additional image views, consumer ratings, specifications,and features.
 * **Sales CRM**
     * **Opportunities** - displays information about the opportunity. Users can search by opportunity or account, to whom the opportunity is assigned, the current stage, and the amount of money this opportunity might be worth.
@@ -88,4 +88,3 @@ Following is a list of application use cases including a short description of th
 ## Next step
 
 After creating your app by following the tutorial, make the app your own, by using your own data from an Excel file, an external database, or an external system of record (SoR). Check [this article describes the main external data sources you can use in your app](use-own-data.md).
-

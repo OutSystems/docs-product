@@ -34,16 +34,16 @@ You can use the Section UI Pattern to organize on-screen content into different 
   
     The Section widget is displayed.
 
-    ![Screenshot of the Section widget in the Service Studio toolbox](images/section-1-ss.png "Section Widget in Service Studio") 
+    ![Screenshot of the Section widget in the Service Studio toolbox](images/section-1-ss.png "Section Widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. To From the Toolbox, drag the Section widget into the Main Content area of your application's screen.

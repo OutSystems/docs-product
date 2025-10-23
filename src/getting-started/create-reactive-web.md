@@ -28,7 +28,7 @@ topic:
 
 <div class="info" markdown="1">
 
-Check our training [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) for a guided introduction into Reactive Web App. 
+Check our training [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) for a guided introduction into Reactive Web App.
 
 </div>
 
@@ -49,7 +49,7 @@ You should satisfy the following requirements to develop, run, and deploy a Reac
 
 * Service Studio 11.53.7 or later
 * Platform Server 11 - Release Oct.2019.CP1 or later
-* LifeTime Management Console - Release Sep.2019 version 11.0.321.0 or later 
+* LifeTime Management Console - Release Sep.2019 version 11.0.321.0 or later
 
 We also recommend that you update the following components:
 
@@ -72,16 +72,16 @@ Let's create a sample "ToDo" app.
 
     ![Screenshot displaying the selection of 'Reactive Web App' option during the new application setup](images/select-reactive-web-app-ss.png "Select Reactive Web App Option")
 
-1. In the properties for your new app, set up the following: 
-    
+1. In the properties for your new app, set up the following:
+
     1. Name your app "ToDo".  
-    
+
     1. Add a description.
-    
+
     1. Change the primary color of your app by picking one of the suggested colors, or using the color picker.
-    
+
     1. Upload an icon by clicking **Upload icon**.
-    
+
     1. Click **Create App** to advance to the next step.
 
     ![Screenshot showing the application properties setup with fields for name, description, primary color, and icon upload](images/app-info-ss.png "Application Information Setup")
@@ -89,7 +89,6 @@ Let's create a sample "ToDo" app.
 1. In the application properties screen, make sure **Reactive Web App** is selected in the **Choose module type** dropdown. Click **Create Module** to create the first module and open it for editing.
 
     ![Screenshot of the application properties screen with 'Reactive Web App' selected in the 'Choose module type' dropdown](images/module-type-ss.png "Module Type Selection")
-
 
 ## Create a database table from an Excel file { #create-entity-from-excel }
 
@@ -115,11 +114,11 @@ Behind the scenes, OutSystems also creates logic to import each row in the Excel
 
 Now we can create a Screen that shows all of the tasks.
 
-1. Switch to the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**. 
+1. Switch to the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**.
 
     ![Screenshot showing the action of double-clicking 'MainFlow' under 'UI Flows' in Service Studio](images/click-mainflow-ss.png "Accessing MainFlow in Service Studio")
 
-1. Drag a **Screen** from the Toolbox to an empty area in the Main Editor window. 
+1. Drag a **Screen** from the Toolbox to an empty area in the Main Editor window.
 
     ![Screenshot of dragging a 'Screen' widget from the Toolbox to the main editor window in Service Studio](images/drag-screen-widget-ss.png "Drag Screen Widget to Main Editor")
 
@@ -161,10 +160,10 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 
     ![Screenshot of double-clicking the 'Save' button to define the logic associated with the button](images/double-click-save-button-ss.png "Define Save Button Logic")
 
-1. In the **Logic** tab, right-click **Server Actions** and select **Add Server Action**. Set its name to **TaskCreateOrUpdate**. 
+1. In the **Logic** tab, right-click **Server Actions** and select **Add Server Action**. Set its name to **TaskCreateOrUpdate**.
 
     ![Screenshot showing the creation of a new server action named 'TaskCreateOrUpdate' in Service Studio](images/create-server-action-ss.png "Create Server Action")
-    
+
 1. Right-click the newly created action and select **Add Input Parameter**. Set its name to **Task**.
 
     ![Screenshot illustrating the addition of an input parameter named 'Task' to a server action](images/add-input-parameter-ss.png "Add Input Parameter to Action")
@@ -175,12 +174,11 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 
 1. Right-click the **TaskCreateOrUpdate** action and select **Add Output Parameter**. Set its name to **TaskId**.
 
-
-1. In the Output Parameter properties, set the Data Type to **Task Identifier**. 
+1. In the Output Parameter properties, set the Data Type to **Task Identifier**.
 
     ![Screenshot displaying the properties of an output parameter with the data type set to 'Task Identifier'](images/output-data-type-ss.png "Set Output Parameter Data Type")
 
-1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. 
+1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action.
 
     ![Screenshot of dragging the 'CreateOrUpdateTask' entity action to the flow of the 'TaskCreateOrUpdate' server action](images/drag-entity-action-ss.png "Drag Entity Action to Server Action Flow")
 
@@ -200,7 +198,7 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 
     ![Screenshot showing the dragging of the 'TaskCreateOrUpdate' server action to the 'True' branch of an 'If' condition](images/drag-server-action-ss.png "Drag Server Action to Logic Flow")
 
-1. Drag the **Task** Screen from the **Interface** tab to the **End** node so that the user is redirected back to the main screen after saving a task. 
+1. Drag the **Task** Screen from the **Interface** tab to the **End** node so that the user is redirected back to the main screen after saving a task.
 
     ![Screenshot of dragging the 'Task' screen to the 'End' node in a logic flow to redirect the user after saving](images/drag-task-screen-to-end-node-ss.png "Redirect to Task Screen After Save")
 
@@ -222,7 +220,7 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 
 Now let's add the functionality to mark tasks as complete. We can implement that by adding a feature to delete the completed task:
 
-1. In the **Interface** tab, double-click the **Task** Screen. 
+1. In the **Interface** tab, double-click the **Task** Screen.
 
 1. Right-click the Checkbox in the **Is Active** column and select **Delete**.
 
@@ -236,13 +234,13 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
     ![Screenshot showing the definition of logic for a 'Done' button when clicked](images/define-button-logic-ss.png "Define Done Button Logic")
 
-1. In the **Logic** tab, right-click the **Server Actions** and select **Add Server Action**. Name it **TaskDelete**. 
+1. In the **Logic** tab, right-click the **Server Actions** and select **Add Server Action**. Name it **TaskDelete**.
 
 1. Add an Input Parameter to the **TaskDelete** to receive the Task identifier. Set its name to **TaskId** and the Data Type to **Task Identifier**.
 
     ![Screenshot illustrating the addition of an input parameter named 'TaskId' to the 'TaskDelete' server action](images/add-an-input-parameter-ss.png "Add Input Parameter to TaskDelete Action")
 
-1. In the **Data** tab, expand the **Task** Entity. Drag the **DeleteTask** Entity Action to the flow. 
+1. In the **Data** tab, expand the **Task** Entity. Drag the **DeleteTask** Entity Action to the flow.
 
     ![Screenshot of dragging the 'DeleteTask' entity action to the flow of the 'TaskDelete' server action](images/drag-entity-action-to-flow-ss.png "Drag DeleteTask Action to Flow")
 
@@ -250,7 +248,7 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
     ![Screenshot showing the setting of the 'Id' property to the input parameter 'TaskId' in the delete action](images/set-id-property-ss.png "Set Id Property for Delete Action")
 
-1. Go back to the **Interface** tab and double-click the **DoneOnClick** action under the **Task** screen. 
+1. Go back to the **Interface** tab and double-click the **DoneOnClick** action under the **Task** screen.
 
     ![Screenshot of the 'DoneOnClick' action under the 'Task' screen in the interface tab](images/click-button-on-click-ss.png "DoneOnClick Action Definition")
 

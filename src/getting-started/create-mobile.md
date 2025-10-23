@@ -34,10 +34,10 @@ Developing mobile apps with OutSystems is fast. If you have an Excel file contai
 To create a mobile app with data that's imported from an Excel file, you need to:
 
 1. Create a database model, and import the data from the Excel file into the database
-2. Create a screen that lists the data from the database
-3. Create a screen that enables you to create new records, and update existing ones
-4. Implement functionality to delete records from the database
-5. Test the application on your mobile device.
+1. Create a screen that lists the data from the database
+1. Create a screen that enables you to create new records, and update existing ones
+1. Implement functionality to delete records from the database
+1. Test the application on your mobile device.
 
 Let's do this! In this example we'll use a sample Excel file with to-do task information, and we'll create a simple task management mobile app.
 
@@ -62,7 +62,7 @@ Let's create a new task management mobile app. Do the following in Service Studi
     ![Screenshot where the name 'To Do' is entered for the new mobile app](images/name-of-app-ss.png "Naming the Mobile App")
 
 1. In the app detail screen, confirm the following and click **Create Module**:
-    
+
     * The name of the module is `ToDo`
     * The module type is **Phone App**.
 
@@ -139,14 +139,14 @@ Now we will define the logic that runs when the end users press the Save button:
 1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. Set the **Source** to the input parameter **Task**.
 
 1. Next, we'll need to set the value of the output parameter **TaskId** to the Id returned by **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to `TaskId`, and the **Value** to `CreateOrUpdateTask.Id`.
-    
+
     ![Screenshot of the logic flow for creating or updating a task in the OutSystems Service Studio](images/wrapper-create-ss.png "Task Create or Update Logic")
 
 1. Navigate to the **Interface** tab and double-click the **SaveOnClick** action.
 
 1. In the **Logic** tab, drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If**. Set the **Task** parameter to `GetTaskById.List.Current.Task`.
 
-1. Drag the screen **Tasks** from the **Interface** tab to the **End** node so that the user is redirected back to the main screen after saving a task. 
+1. Drag the screen **Tasks** from the **Interface** tab to the **End** node so that the user is redirected back to the main screen after saving a task.
 
    ![Screenshot showing the Save button logic in the TaskDetail screen for saving task changes](images/create-mobile-11.png "Save Button Logic")
 
@@ -162,11 +162,11 @@ Now let's add the functionality to mark tasks as complete. Let's implement that 
 
 1. Double-click an empty area of the List Action to define the logic associated with the Swipe Left Action. This creates a new client action named **DoneOnClick**.
 
-1. Click the **Logic** tab and add a a Server Action. Name it *TaskDelete*. 
+1. Click the **Logic** tab and add a a Server Action. Name it _TaskDelete_.
 
-1. Add an input parameter to the *TaskDelete* to receive the Task identifier. Set its name to *TaskId* and the Data Type to *Task Identifier*.
+1. Add an input parameter to the _TaskDelete_ to receive the Task identifier. Set its name to _TaskId_ and the Data Type to _Task Identifier_.
 
-1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the *Id* parameter to the input parameter *TaskId*.
+1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the _Id_ parameter to the input parameter _TaskId_.
 
     ![Screenshot depicting the logic for deleting a task in the OutSystems Service Studio](images/wrapper-delete-ss.png "Task Delete Logic")
 
@@ -175,7 +175,6 @@ Now let's add the functionality to mark tasks as complete. Let's implement that 
 1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
 
     ![Screenshot showing the Refresh Data action after deleting a task to update the task list](images/reactive-new-app-delete-refresh-ss.png "Refresh Data After Task Deletion")
-
 
 ## Allow adding tasks
 
@@ -190,7 +189,6 @@ Drag an **Icon** widget from the Toolbox to the Actions placeholder in the top r
 
     ![Screenshot showing the plus icon linked to the TaskDetail screen for adding new tasks](images/create-mobile-13.png "Linking Plus Icon to TaskDetail Screen")
 
-
 ## Test your Mobile App
 
 At this stage we test the mobile app. Click the **1-Click Publish** button to publish the application to your environment.
@@ -198,6 +196,5 @@ At this stage we test the mobile app. Click the **1-Click Publish** button to pu
 ![Screenshot of the 1-Click Publish button to deploy the mobile app to the environment](images/create-mobile-17.png "Publishing the Mobile App")
 
 When the application is deployed, click the **Open in Browser** button to test your application in a browser (Chrome and Safari are supported).
-
 
 To try out the app on your mobile device see [Distribute as a progressive web app (PWA)](../deploying-apps/mobile-app-packaging-delivery/distribute-pwa/intro.md).

@@ -41,9 +41,9 @@ The Dropdown Select is a pattern that you can apply to other patterns to impleme
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Dropdown Select widget into the Main Content area of your application's screen.
@@ -58,7 +58,7 @@ The Dropdown Select is a pattern that you can apply to other patterns to impleme
 
     ![Adding a new local variable named 'SelectedRecord' to the screen in Service Studio](images/dropdownselect-8-ss.png "Adding Local Variable")
 
-1. Select the Combo Box widget, and on the **Properties** tab, enter the values for the **Variable** and **Source Entity** properties. In this example, we select **SelectedRecord** for the **Variable** property and drag the **Employees** entity into the Combo Box widget. This automatically becomes the **Source Entity** property value. 
+1. Select the Combo Box widget, and on the **Properties** tab, enter the values for the **Variable** and **Source Entity** properties. In this example, we select **SelectedRecord** for the **Variable** property and drag the **Employees** entity into the Combo Box widget. This automatically becomes the **Source Entity** property value.
 
     ![Setting the Variable and Source Entity properties for the Combo Box widget in Service Studio](images/dropdownselect-11-ss.png "Setting Combo Box Properties")
 

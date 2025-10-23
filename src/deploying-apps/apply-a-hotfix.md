@@ -25,7 +25,7 @@ topic:
 
 In OutSystems, you can implement and resolve issues immediately using Hotfix. This helps you maintain your apps' reliability and performance while minimizing downtime.
 
-OutSystems recommends publishing hotfixes to a Pre-Production environment fully synchronized with a Production environment rather than directly to the Production environment. Ensure that both environments have the same app version and that replicated data. This way, you can test and debug the Hotfix and then deploy it to Production without downtime. 
+OutSystems recommends publishing hotfixes to a Pre-Production environment fully synchronized with a Production environment rather than directly to the Production environment. Ensure that both environments have the same app version and that replicated data. This way, you can test and debug the Hotfix and then deploy it to Production without downtime.
 
 Finally, the Hotfix is propagated backward to previous stages. The following example describes how a hotfix is applied to fix a bug in the eCommerce app.
 
@@ -56,7 +56,7 @@ To apply a hotfix, propagate all changes to the app back to previous environment
 
 1. Click on the eCommerce app: the modules are listed and the ones with the hotfix are marked with a red '+'.
 
-    ![Screenshot of the eCommerce application modules list with hotfix changes marked by a red '+' sign.](images/apply-a-hotfix-3.png "eCommerce Application Modules with Hotfix")   
+    ![Screenshot of the eCommerce application modules list with hotfix changes marked by a red '+' sign.](images/apply-a-hotfix-3.png "eCommerce Application Modules with Hotfix")
 
 1. Merge all the modules with the hotfix changes in Pre-Production to Quality Assurance: click on the compare button (the difference sign) between the environments and select the specific changes you have done to implement the hotfix.
 

@@ -40,9 +40,9 @@ You can use the Move on Device UI Pattern to define the placement of information
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen.
@@ -53,7 +53,7 @@ You can use the Move on Device UI Pattern to define the placement of information
 
     ![Screenshot showing the Properties tab where the container name is being entered in Service Studio](images/moveondevice-9-ss.png "Setting Container Properties")
 
-1. Repeat steps 2 and 3 for as many containers as you need in your app. 
+1. Repeat steps 2 and 3 for as many containers as you need in your app.
 
 1. From the Toolbox, drag the Move on Device widget into the Main Content area of your application's screen.
 

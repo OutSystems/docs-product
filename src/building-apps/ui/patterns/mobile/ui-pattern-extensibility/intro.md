@@ -28,19 +28,19 @@ Some deprecated patterns use different providers and a different extensibility s
 Some of  OutSystems UI Patterns are based on external providers.
 Although these providers have many different extensibility options available, OutSystems only offers a curated list of them using input parameters and client actions.
 
-However, you can access all of the extensibility options offered by the providers by using the following OutSystems extensibility features: 
+However, you can access all of the extensibility options offered by the providers by using the following OutSystems extensibility features:
 
 * [Provider client actions](ext-provider-client-actions.md)
 * [Provider instance and JavaScript](ext-provider-instance-java.md)
 
 The following table shows the list of OutSystems UI Patterns that use external providers:
 
-UI Pattern | Provider | Library version  
----|---|---
-Carousel | [Splide](https://splidejs.com/) | 4.1.3  
-Date Picker | [Flatpickr](https://flatpickr.js.org/)| 4.6.13
-Date Picker Range | [Flatpickr](https://flatpickr.js.org/)| 4.6.13
-Dropdown Search | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37
-Dropdown Tags | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37
-Range Slider | [noUiSlider](https://refreshless.com/nouislider/) | 15.6.1  
-Range Slider Interval | [noUiSlider](https://refreshless.com/nouislider/)| 15.6.1  
+| UI Pattern | Provider | Library version |
+| ---|---|--- |
+| Carousel | [Splide](https://splidejs.com/) | 4.1.3 |
+| Date Picker | [Flatpickr](https://flatpickr.js.org/)| 4.6.13 |
+| Date Picker Range | [Flatpickr](https://flatpickr.js.org/)| 4.6.13 |
+| Dropdown Search | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37 |
+| Dropdown Tags | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37 |
+| Range Slider | [noUiSlider](https://refreshless.com/nouislider/) | 15.6.1 |
+| Range Slider Interval | [noUiSlider](https://refreshless.com/nouislider/)| 15.6.1 |

@@ -43,9 +43,9 @@ This example shows you how to center align a user's name and initials.
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Align Center widget into the Main Content area of your application's screen.
@@ -72,7 +72,7 @@ This example shows you how to center align a user's name and initials.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
-**Without Align Center UI Pattern** 
+**Without Align Center UI Pattern**
 
 ![Screenshot showing user interface without the use of Align Center UI Pattern](images/aligncenter-7-ss.png "Without Align Center UI Pattern")
 

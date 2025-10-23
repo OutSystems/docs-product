@@ -46,7 +46,7 @@ When there's a Form widget on the screen, the message about the required update 
 
 <div class="info" markdown="1">
 
-The technical preview [Configure mobile apps updates distribution](manage-distribution-options/intro.md) lets you select between **hybrid updates**, described in this document, and **store-only updates**. 
+The technical preview [Configure mobile apps updates distribution](manage-distribution-options/intro.md) lets you select between **hybrid updates**, described in this document, and **store-only updates**.
 
 </div>
 
@@ -76,9 +76,9 @@ You need a new app build when you **change** one of the following:
 * Plugin or plugin configuration
 * Configurations for a mobile platform
 * Entry module or the name of the entry module
-* Extensibility Configurations property (for example: modification, addition or removal of mobile plugins, changes to status bar transparency, custom icons or splash screens, and similar) 
+* Extensibility Configurations property (for example: modification, addition or removal of mobile plugins, changes to status bar transparency, custom icons or splash screens, and similar)
 
-These changes may negatively affect the user experience in the outdated apps, but the issues are automatically fixed when the user upgrades to the latest app package. In the case of plugins, it's a good practice to include fallbacks in the apps to avoid crashing until the latest app version is on the device. 
+These changes may negatively affect the user experience in the outdated apps, but the issues are automatically fixed when the user upgrades to the latest app package. In the case of plugins, it's a good practice to include fallbacks in the apps to avoid crashing until the latest app version is on the device.
 
 <div class="warning" markdown="1">
 

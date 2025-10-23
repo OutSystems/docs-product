@@ -51,7 +51,6 @@ When you change a runtime setting for an application, module, or extension, you 
 
 By clicking the **Apply** button, you are saving and applying the new runtime setting, causing the reload of the affected modules. From this moment, your changes will be effective (for example, the Effective URL of a consumed SOAP web service).
 
-
 ### Change Runtime Settings for the Environment
 
 When you change runtime settings for the environment, those changes are not applied automatically, due to the impact that the reload of all applications would cause in your environment. You can choose to save the changes first and apply them afterward (for example, the Environment Name setting) when you consider it's the best time to perform that operation.
@@ -102,68 +101,68 @@ The tables below list the existing platform settings, the Service Center screen 
 
 ### Application Settings
 
-Setting                     | Service Center Screen     | Type
-----------------------------|---------------------------|--------------
-Disable/Enable Application        | Application detail screen | Runtime
-Prefetch Resources                | Application detail screen > Operation tab        | Compile-time
-Deployment Zone                   | Application detail screen > Operation tab        | Compile-time
-Server Request Timeout            | Application detail screen > Operation tab        | Runtime
-Security settings                 | Application detail screen > Security tab         | Compile-time
-Mobile Apps Generation settings   | Application detail screen > Native Platforms tab | Operations<br/>Requires regeneration of mobile apps
+| Setting                     | Service Center Screen     | Type |
+| ----------------------------|---------------------------|-------------- |
+| Disable/Enable Application        | Application detail screen | Runtime |
+| Prefetch Resources                | Application detail screen > Operation tab        | Compile-time |
+| Deployment Zone                   | Application detail screen > Operation tab        | Compile-time |
+| Server Request Timeout            | Application detail screen > Operation tab        | Runtime |
+| Security settings                 | Application detail screen > Security tab         | Compile-time |
+| Mobile Apps Generation settings   | Application detail screen > Native Platforms tab | Operations<br/>Requires regeneration of mobile apps |
 
 ### Module Settings
 
-Setting                     | Service Center Screen     | Type
-----------------------------|---------------------------|--------------
-Integration configurations - SOAP, REST and SAP | Module detail screen > Integrations tab | Runtime<br/>Also applies to all its consumers
-Auditing                | Module detail screen > Operation tab       | Runtime
-Remote Stack Display    | Module detail screen > Operation tab       | Runtime
-Debug mode              | Module detail screen > Operation tab       | Compile-time
-Light process execution | Module detail screen > Operation tab       | Compile-time
-Activity Logging        | Module detail screen > Operation tab       | Runtime
-Screen Requests logging | Module detail screen > Operation tab       | Runtime
-Service Actions logging | Module detail screen > Operation tab       | Runtime
-Deployment Zone         | Module detail screen > Operation tab       | Compile-time
-Catalog                 | Module detail screen > Operation tab       | Compile-time
-Run As                  | Module detail screen > Operation tab       | Compile-time
-Site Properties         | Module detail screen > Site Properties tab | Operations
-Timers                  | Module detail screen > Timers tab          | Operations
-Tenants                 | Module detail screen > Tenants tab         | Operations
+| Setting                     | Service Center Screen     | Type |
+| ----------------------------|---------------------------|-------------- |
+| Integration configurations - SOAP, REST and SAP | Module detail screen > Integrations tab | Runtime<br/>Also applies to all its consumers |
+| Auditing                | Module detail screen > Operation tab       | Runtime |
+| Remote Stack Display    | Module detail screen > Operation tab       | Runtime |
+| Debug mode              | Module detail screen > Operation tab       | Compile-time |
+| Light process execution | Module detail screen > Operation tab       | Compile-time |
+| Activity Logging        | Module detail screen > Operation tab       | Runtime |
+| Screen Requests logging | Module detail screen > Operation tab       | Runtime |
+| Service Actions logging | Module detail screen > Operation tab       | Runtime |
+| Deployment Zone         | Module detail screen > Operation tab       | Compile-time |
+| Catalog                 | Module detail screen > Operation tab       | Compile-time |
+| Run As                  | Module detail screen > Operation tab       | Compile-time |
+| Site Properties         | Module detail screen > Site Properties tab | Operations |
+| Timers                  | Module detail screen > Timers tab          | Operations |
+| Tenants                 | Module detail screen > Tenants tab         | Operations |
 
 ### Extension Settings
 
-Setting                     | Service Center Screen     | Type
-----------------------------|---------------------------|--------------
-Activity Logging | Extension detail screen > Operation tab | Runtime<br/>Also applies to all its consumers
-Logical Database | Extension detail screen > Operation tab | Compile-time
+| Setting                     | Service Center Screen     | Type |
+| ----------------------------|---------------------------|-------------- |
+| Activity Logging | Extension detail screen > Operation tab | Runtime<br/>Also applies to all its consumers |
+| Logical Database | Extension detail screen > Operation tab | Compile-time |
 
 ### Environment Settings
 
-Setting                     | Service Center Screen     | Type
-----------------------------|---------------------------|--------------
-Environment Name  | Administration > Environment Configurations | Runtime
-Hostname          | Administration > Environment Configurations | Runtime<br/>Requires regeneration of mobile apps
-Purpose           | Administration > Environment Configurations | Operations
-Debug mode        | Administration > Environment Configurations | Compile-time
-Date Format       | Administration > Environment Configurations | Compile-time
-Administration Email | Administration > Environment Configurations | Runtime
-Show Email on Login Screen | Administration > Environment Configurations | Operations
-Timer Execution Attempts | Administration > Environment Configurations | Runtime
-Enable 2-Stage Deploy | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime
-Enable Mobile Apps Build Service | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime
-Use Proxy Authentication for Mobile Apps Build Service | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime
-Enable Reports    | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime
-Enable HSTS | Administration > Security > Environment Security | Compile-time
-Force HTTPS Settings | Administration > Security > Environment Security | Runtime
-Cookies Settings | Administration > Security > Environment Security | Runtime
-CSP Settings | Administration > Security > Environment Security | Compile-time
-Network Security  | Administration > Security > Network Security | Runtime
-Applications Authentication | Administration > Security > Applications Authentication | Runtime
-Database Catalogs | Administration > Database Catalogs | Compile-time
-Database Connections – DBMS | Administration > Database Connections | Compile-time
-Database Connections – Other configurations | Administration > Database Connections | Runtime<br/>Also applies to all its consumers
-Default Sender Email | Administration > Email | Runtime
-Default Sender Name  | Administration > Email | Runtime
-Redirect Emails To Test List | Administration > Email | Runtime
-Test List Addresses  | Administration > Email | Runtime
-Certificates      | Administration > Certificates | Runtime<br/>Also applies to all its consumers
+| Setting                     | Service Center Screen     | Type |
+| ----------------------------|---------------------------|-------------- |
+| Environment Name  | Administration > Environment Configurations | Runtime |
+| Hostname          | Administration > Environment Configurations | Runtime<br/>Requires regeneration of mobile apps |
+| Purpose           | Administration > Environment Configurations | Operations |
+| Debug mode        | Administration > Environment Configurations | Compile-time |
+| Date Format       | Administration > Environment Configurations | Compile-time |
+| Administration Email | Administration > Environment Configurations | Runtime |
+| Show Email on Login Screen | Administration > Environment Configurations | Operations |
+| Timer Execution Attempts | Administration > Environment Configurations | Runtime |
+| Enable 2-Stage Deploy | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime |
+| Enable Mobile Apps Build Service | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime |
+| Use Proxy Authentication for Mobile Apps Build Service | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime |
+| Enable Reports    | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime |
+| Enable HSTS | Administration > Security > Environment Security | Compile-time |
+| Force HTTPS Settings | Administration > Security > Environment Security | Runtime |
+| Cookies Settings | Administration > Security > Environment Security | Runtime |
+| CSP Settings | Administration > Security > Environment Security | Compile-time |
+| Network Security  | Administration > Security > Network Security | Runtime |
+| Applications Authentication | Administration > Security > Applications Authentication | Runtime |
+| Database Catalogs | Administration > Database Catalogs | Compile-time |
+| Database Connections – DBMS | Administration > Database Connections | Compile-time |
+| Database Connections – Other configurations | Administration > Database Connections | Runtime<br/>Also applies to all its consumers |
+| Default Sender Email | Administration > Email | Runtime |
+| Default Sender Name  | Administration > Email | Runtime |
+| Redirect Emails To Test List | Administration > Email | Runtime |
+| Test List Addresses  | Administration > Email | Runtime |
+| Certificates      | Administration > Certificates | Runtime<br/>Also applies to all its consumers |

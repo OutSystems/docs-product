@@ -41,10 +41,10 @@ Here are some additional notes:
 
 Use the values in the fields to enable the developers to browse and find the templates in the **New Screen** window. Enter the values in the **Metadata** section of the Properties Pane.
 
-Property | Description | Value | Notes  
----|---|---|---  
-Title | The Screen Template name | Has no specific syntax. For better readability use camel case with separated words. | The title of the template in the **New Screen** window. Mention the main feature of the Screen Template. For example, join information about the data the Screen Template shows and a hint about the UI - like Directory List.  
-Tags | The Screen Template tags | Separate by commas, no spaces, and in lowercase. Example: `graph,finance,cash,eating` | The tags help developers find the Screen Template when they search in the **New Screen** window.  
-Category | The Screen Template categories | Separate by commas and use no spaces. For better readability use the camel case. Example: `Dashboards,Lists` | The categories are automatically populated in the sidebar of the **New Screen** window.
-Description | The Screen Template description| Has no specific syntax. Aim for a short, clear description. | Used when developers search for a Screen Template in **New Screen** window. Include information about the general purpose of the Screen Template, the UI / UX and the logic.
-Preview | Preview image | Select **Default image** to use the generic image or **Change image** to upload a new image. | We recommend that you set a preview image for all Screen Templates you design.
+| Property | Description | Value | Notes |
+| ---|---|---|--- |
+| Title | The Screen Template name | Has no specific syntax. For better readability use camel case with separated words. | The title of the template in the **New Screen** window. Mention the main feature of the Screen Template. For example, join information about the data the Screen Template shows and a hint about the UI - like Directory List. |
+| Tags | The Screen Template tags | Separate by commas, no spaces, and in lowercase. Example: `graph,finance,cash,eating` | The tags help developers find the Screen Template when they search in the **New Screen** window. |
+| Category | The Screen Template categories | Separate by commas and use no spaces. For better readability use the camel case. Example: `Dashboards,Lists` | The categories are automatically populated in the sidebar of the **New Screen** window. |
+| Description | The Screen Template description| Has no specific syntax. Aim for a short, clear description. | Used when developers search for a Screen Template in **New Screen** window. Include information about the general purpose of the Screen Template, the UI / UX and the logic. |
+| Preview | Preview image | Select **Default image** to use the generic image or **Change image** to upload a new image. | We recommend that you set a preview image for all Screen Templates you design. |

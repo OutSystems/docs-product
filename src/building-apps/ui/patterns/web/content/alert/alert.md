@@ -41,9 +41,9 @@ You can use the Alert UI Pattern to highlight and display important information,
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Alert widget into the Main Content area of your application's screen.
@@ -51,16 +51,16 @@ You can use the Alert UI Pattern to highlight and display important information,
     ![Process of dragging the Alert widget into the Main Content area of an application's screen](images/alert-image-8.png "Dragging Alert Widget into Main Content")
 
 1. Select the Text placeholder, and enter the Alert message you want to display.
-    
+
     ![Entering the Alert message text into the Text placeholder of the Alert widget](images/alert-image-11.png "Setting Alert Message Text")
 
-1. On the **Property** tab, set the mandatory **AlertType** property. In this example, the alert type is set to error which changes the message to display in red. Additionally, the (optional) **ShowCloseButton** property is set to True. This enables a Close button for the Alert. 
-    
+1. On the **Property** tab, set the mandatory **AlertType** property. In this example, the alert type is set to error which changes the message to display in red. Additionally, the (optional) **ShowCloseButton** property is set to True. This enables a Close button for the Alert.
+
     ![Property tab showing the AlertType property set to error in the Alert widget](images/alert-image-9.png "AlertType Property Settings")
 
     ![Property tab showing the ShowCloseButton property enabled in the Alert widget](images/alert-image-10.png "ShowCloseButton Property Settings")
 
-1. After following these steps and publishing the module, you can test the pattern in your app. 
+1. After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Demo
 

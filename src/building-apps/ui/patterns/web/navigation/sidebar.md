@@ -32,7 +32,7 @@ You can use the Sidebar UI Pattern to display additional information in the marg
 
 In this example, we create a button that opens and closes the Sidebar widget.
 
-1. In Service Studio, in the Toolbox, search for `Sidebar`. 
+1. In Service Studio, in the Toolbox, search for `Sidebar`.
 
     The Sidebar widget is displayed.
 
@@ -43,9 +43,9 @@ In this example, we create a button that opens and closes the Sidebar widget.
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Sidebar widget into the Main Content area of your application's screen.
@@ -56,8 +56,8 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     ![Properties tab in Service Studio with the Name field filled as 'MySidebar'](images/sidebar-9-ss.png "Naming the Sidebar Widget")
 
-1. Add your content to the Header and Content placeholders, for example, forms, images, text etc. In this example we add some text. 
-   
+1. Add your content to the Header and Content placeholders, for example, forms, images, text etc. In this example we add some text.
+
     ![Adding text content to the Header and Content placeholders of the Sidebar widget](images/sidebar-8-ss.png "Adding Content to Sidebar")
 
 1. From the Toolbox, drag the Button widget just below the Sidebar widget and on the **Properties** tab, in the **Label** field, enter the text you want to appear on the button (in this example, we enter **Open**) and from the **Method** drop-down, select **Ajax Submit**.
@@ -72,7 +72,7 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     ![Properties tab in Service Studio with the WidgetId drop-down selecting 'MySidebar.Id'](images/sidebar-11-ss.png "Setting WidgetId for Sidebar")
 
-After following these steps and publishing the module, you can test the pattern in your app. 
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 

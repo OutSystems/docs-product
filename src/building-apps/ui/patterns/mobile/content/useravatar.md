@@ -30,7 +30,6 @@ You can use the User Avatar UI Pattern to display a user's initials or their ima
 
 **How to use the User Avatar UI Pattern**
 
-
 The following example demonstrates how you can display the initials of the registered users on your platform.
 
 1. In Service Studio, in the Toolbox, search for `User Avatar`.
@@ -44,9 +43,9 @@ The following example demonstrates how you can display the initials of the regis
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the User Avatar widget into the Main Content area of your application's screen.

@@ -21,7 +21,7 @@ topic:
 
 # Breakpoints
 
-A **breakpoint** in Service Studio marks an element where the execution of a [thread](<threads.md>) is going to be suspended for debugging. 
+A **breakpoint** in Service Studio marks an element where the execution of a [thread](<threads.md>) is going to be suspended for debugging.
 
 Breakpoints can be added to all of the following elements (except for Comment elements):
 
@@ -37,33 +37,31 @@ While it is a common practice to add breakpoints before running a module, you ma
 
 Breakpoints are stored in your user settings. They will be available in Service Studio, even between restarts, as long as you keep working in the same computer.
 
-
 ## Add or Remove a Breakpoint
 
 To add or remove a breakpoint in an element:
 
 1. Right-click on that element (either in the canvas or in the module tree).
-1. Select the "Add Breakpoint" or "Remove Breakpoint" option in the pop-up menu. 
+1. Select the "Add Breakpoint" or "Remove Breakpoint" option in the pop-up menu.
 
 Or:
 
-1. Click on that element to select it and press `F8`. This shortcut toggles between add/remove breakpoint. 
+1. Click on that element to select it and press `F8`. This shortcut toggles between add/remove breakpoint.
 
 The element where the breakpoint was set will show a small red circle.
 
 You can remove all breakpoints at once by selecting the "Remove All Breakpoints" option in the Debugger menu or in the context menu displayed by right-clicking anywhere in the Breakpoints Tab area.
-
 
 ## Disable a Breakpoint
 
 To temporarily disable a breakpoint without removing it, do the following:
 
 1. Right-click on that element (either in the canvas or in the module tree).
-1. Select the "Disable Breakpoint" option in the pop-up menu. 
+1. Select the "Disable Breakpoint" option in the pop-up menu.
 
 Or:
 
-1. Click on that element to select it and press `Ctrl+F8`. This shortcut toggles between enable/disable breakpoint. 
+1. Click on that element to select it and press `Ctrl+F8`. This shortcut toggles between enable/disable breakpoint.
 
 The element where the breakpoint was disabled will show a hollowed red circle.
 

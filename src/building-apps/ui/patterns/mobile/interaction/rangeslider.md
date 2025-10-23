@@ -57,17 +57,17 @@ In this example, we create a Range Slider that allows the user select the number
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Range Slider widget into the Main Content area of your application's screen.
 
     ![Demonstration of dragging the Range Slider widget into the Main Content area of an application screen in Service Studio](images/rangeslider-dragwidget-ss.png "Dragging Range Slider Widget to Application Screen")
 
-1. On the **Properties** tab, enter the mandatory minimum, maximum, and starting values. 
-    
+1. On the **Properties** tab, enter the mandatory minimum, maximum, and starting values.
+
     In this example, we add static values.
 
     ![Screenshot showing how to add mandatory minimum, maximum, and starting values to the Range Slider properties in Service Studio](images/rangeslider-prop-vals-ss.png "Setting Mandatory Values for Range Slider")
@@ -98,7 +98,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     ![Image demonstrating how to set the assign variables and values for the Range Slider's Value parameter in Service Studio](images/rangeslider-assign-ss.png "Assigning Variables and Values for Range Slider")
 
-1.  You can configure the Range Slider by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, the size. For more configurations, expand the **OptionalConfigs** property.
+1. You can configure the Range Slider by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, the size. For more configurations, expand the **OptionalConfigs** property.
 
     ![Screenshot of setting optional properties for the Range Slider pattern in Service Studio](images/rangeslider-properties-ss.png "Configuring Optional Properties of Range Slider")
 
@@ -123,7 +123,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|Initialized: Optional | Event triggered after the RangerSlider instance is ready.<br/>With this event, you get the element ID that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` | 
-|OnValueChange: Mandatory  | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSlider handler.<br/>You can use the SetRangeSliderChangeOnDragEnd to trigger the event only after the user releases it. | 
+|Initialized: Optional | Event triggered after the RangerSlider instance is ready.<br/>With this event, you get the element ID that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` |
+|OnValueChange: Mandatory  | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSlider handler.<br/>You can use the SetRangeSliderChangeOnDragEnd to trigger the event only after the user releases it. |

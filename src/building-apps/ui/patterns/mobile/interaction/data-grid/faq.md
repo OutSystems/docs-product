@@ -27,11 +27,11 @@ Follow these steps to create a grid interface where users can view and filter da
 1. Create a new Web App and add the references. Search for **DataGridComponent** and add all elements. Then search for **DataGridWebExample** and add only elements under the **Entities** tree.
 
 1. Create a REST endpoint to return a JSON required by Data Grid. Right-click on **Logic** > **Integrations** > **REST** and select **Expose REST API**. Name this REST API "Suppliers". Create a new REST API Method, name it "GetAll" and design it so it returns all entries from the Supplier Entity (find it in **Data** > **DataGridWebExample**). The data type of the Suppliers Output Parameter should be Supplier List.
-    
+
     ![Screenshot of OutSystems Service Studio showing the logic flow for the GetAll REST API in the Data Grid Sample module.](images/data-grid-rest-getall.png "OutSystems Logic Flow for GetAll REST API")
 
 1. Create a Server Action to get the REST URI. Right-click **Logic** > **Server Actions** and select **Add Server Action**. Name the action "GetAllSuppliers" and design it so it returns a URL parameter with the value **GetOwnerURLPath()** + `"rest/Suppliers/GetAll"`.
- 
+
     ![Screenshot of OutSystems Service Studio showing the logic flow for the GetAllSuppliers server action with URL assignment.](images/data-grid-rest-geturl.png "OutSystems Logic Flow for GetAllSuppliers Server Action")
 
 1. Create a new empty Screen and add a Preparation. Name the Screen "ScreenDataGridRead", and in Preparation add GetAllSuppliers to the Action logic.
@@ -40,18 +40,18 @@ Follow these steps to create a grid interface where users can view and filter da
 
 1. Provide data to the Data Grid. With "MyDataGrid" selected, locate **RestURL** property and select GetAllSuppliers.URL.
 
-1. Insert some columns. To add a column, navigate to **Interface** > **DataGridComponent** > **Columns**, drag **GridColumnText** and drop it in "MyDataGrid". Name the column "ColumnSupplierCode", and in its **JSONField** property enter `"SupplierCode"` (with quotes). Repeat for the Supplier Name field, with the **JSONField** property `"SupplierName"`. 
- 
+1. Insert some columns. To add a column, navigate to **Interface** > **DataGridComponent** > **Columns**, drag **GridColumnText** and drop it in "MyDataGrid". Name the column "ColumnSupplierCode", and in its **JSONField** property enter `"SupplierCode"` (with quotes). Repeat for the Supplier Name field, with the **JSONField** property `"SupplierName"`.
+
     ![Screenshot of OutSystems Service Studio interface showing the process of adding columns to the Data Grid component.](images/data-grid-columns.png "OutSystems Interface for Adding Columns to Data Grid")
 
-1. Publish the app and visit the page in a browser. You should see a Data Grid and be able to use the features enabled by default, for example, show/hide columns and contextual filters.   
+1. Publish the app and visit the page in a browser. You should see a Data Grid and be able to use the features enabled by default, for example, show/hide columns and contextual filters.
 
     ![Web browser view of the Data Grid component displaying data with options for filtering and sorting.](images/data-grid-in-browser.png "Data Grid Displayed in Web Browser")
 
 ## Create interface to view, edit, and save data
 
 Continue with these steps to create a grid interface where users can edit and save data, not only view it.
- 
+
 1. Create a Server Action to get the REST URI. Right-click **Logic** > **Server Actions** and select **Add Server Action**. Name the action "SaveAllSuppliers" and design it so it returns a URL parameter with the value **GetOwnerURLPath()** + `"rest/Suppliers/SaveAll"`.
 
 1. Create a REST endpoint to receive the JSON required by the app. Go to **Logic** > **Integrations** > **REST** > "Suppliers" and create a REST API Method with the name "SaveAll". Set the **HTTP Method** of "SaveAll" to **POST**.
@@ -59,7 +59,6 @@ Continue with these steps to create a grid interface where users can edit and sa
 1. Design the API Method so it receives a Text data type parameter and name it "JSON". Set the **Receive In** property of this Input Parameter to **Body**.
 
 1. Edit the logic of "SaveAll" to save the data. Drag the **JSON Deserialize** Tool to the Action logic and in the tool properties set: **JSON String** to "JSON" input parameter and **Data Type** to "Supplier List". Finalize the Action logic so it saves the received records (you can use CreateOrUpdateSupplier Action of the Supplier Entity).
-
 
     ![Screenshot of OutSystems Service Studio showing the logic flow for the SaveAll REST API method in the Data Grid Sample module.](images/data-grid-save-logic.png "OutSystems Logic Flow for SaveAll REST API")
 
@@ -70,8 +69,8 @@ Continue with these steps to create a grid interface where users can edit and sa
 1. Add the save button. Navigate to **Interface** > **DataGridComponent** > **Actions**, drag **SendSelectedRowsButton** and place it in the Screen. Enter "Save selected" as the Button label. With the Button still selected, find the **RestURL** property and set it to SaveAllSuppliers.URL.
     ![Screenshot of OutSystems Service Studio interface showing the Data Grid component with a 'Save selected' button for saving data.](images/data-grid-save-web.png "OutSystems Interface for Data Grid Save Feature")
 
-8. Publish the app and visit the page in a browser. Edit some cells, select the check boxes of the rows you want to save and click Save Selected. The message "Data updated successfully" shows.
-     
+1. Publish the app and visit the page in a browser. Edit some cells, select the check boxes of the rows you want to save and click Save Selected. The message "Data updated successfully" shows.
+
     ![Web browser view of the Data Grid component with editable cells and a 'Save selected' button for saving changes.](images/data-grid-in-browser-save.png "Data Grid with Save Feature in Web Browser")
 
 ## Implementing the server-side validation
@@ -81,11 +80,11 @@ After the client-side validation, the rows with errors are not sent to the serve
 These are some suggested steps to implement server-side validation and saving data in a Server Action.
 
   1. In your Data Grid widget, use **SendDirtyRowsButton** or **SendSelectedRowsButton** and set the **CanSendErrorFreeRow** property to true.
-  2. In the Server Action that validates and saves the data, set an output parameter of the JSONResponse data type. JSONResponse is a structure from the Data Grid component.
-  3. Parse the JSON from your Data Grid, process the data and check for your error conditions.
-  4. In the true branch of the error condition (when there's an error) append the error to the list of the errors.
-  5. In the false branch of the error condition (when there's no error), update the data in the database.
-  6. Return the JSONResponse with the data and feedback message back to you Data Grid widget.
+  1. In the Server Action that validates and saves the data, set an output parameter of the JSONResponse data type. JSONResponse is a structure from the Data Grid component.
+  1. Parse the JSON from your Data Grid, process the data and check for your error conditions.
+  1. In the true branch of the error condition (when there's an error) append the error to the list of the errors.
+  1. In the false branch of the error condition (when there's no error), update the data in the database.
+  1. Return the JSONResponse with the data and feedback message back to you Data Grid widget.
 
 ### Example
 
@@ -97,7 +96,7 @@ On the Server Action there's an output parameter with the data type JSONResponse
 
 ![Screenshot of OutSystems Service Studio displaying the JSONResponse structure used for server-side validation feedback.](images/data-grid-structure.png "OutSystems Data Grid JSONResponse Structure")
 
-The `os_RowID` row identification is set to identify where in the UI to show the error. 
+The `os_RowID` row identification is set to identify where in the UI to show the error.
 
 ![Screenshot of OutSystems Service Studio showing the assignment of the os_RowId property in the DataRow structure.](images/data-grid-rowid.png "OutSystems Assignment for DataRow.os_RowId")
 
@@ -112,7 +111,6 @@ The info about the error is appended to `DataRow.ErrorCells` list of errors. The
 When the Data Grid widget receives the data and if there is an error, the cell with the error is shown with a red border. The error message pops up when you move the mouse pointer over the cell.
 
 ![Screenshot of a Data Grid cell outlined in red to indicate a validation error, with a tooltip showing the error message.](images/data-grid-ui-error.png "Data Grid UI Indicating Validation Error")
-
 
 ## Use of Data Grid
 

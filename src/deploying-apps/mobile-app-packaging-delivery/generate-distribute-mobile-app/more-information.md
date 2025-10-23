@@ -26,8 +26,8 @@ Applies only to Mobile Apps.
 
 In this article you can find more information about tasks associated with generating and publishing iOS and Android mobile apps:
 
-* For iOS, check how you can enroll as an Apple Developer, and learn more about creating certificates and provisioning profiles. 
-* For Android, check how to create a keystore and some of the best practices for managing one. 
+* For iOS, check how you can enroll as an Apple Developer, and learn more about creating certificates and provisioning profiles.
+* For Android, check how to create a keystore and some of the best practices for managing one.
 
 ## For iOS
 
@@ -35,13 +35,13 @@ In this article you can find more information about tasks associated with genera
 
 The first step to generate an iOS app package (IPA) is to register as an [Apple Developer](https://developer.apple.com/programs/). You have two types of developer programs that you can choose according to your requirements:
 
-* **Apple Developer Program** &#8211; The standard Apple Developer account allows you to build applications and distribute them on the public App Store, potentially reaching millions of end users all over the world. Your applications must follow specific guidelines in order to get approved by Apple. 
+* **Apple Developer Program** &#8211; The standard Apple Developer account allows you to build applications and distribute them on the public App Store, potentially reaching millions of end users all over the world. Your applications must follow specific guidelines in order to get approved by Apple.
 
     [Learn more about the Apple Developer Program](https://developer.apple.com/programs/).
 
     [Learn more about App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/).
 
-* **Apple Developer Enterprise Program** &#8211; With the Enterprise Developer Account, you are not obliged to follow the App Store Guidelines, but you can only distribute your applications to employees within your organization. The apps cannot be submitted to the public App Store, they should be distributed by an internal enterprise store or an MDM (Mobile Device Management) solution. 
+* **Apple Developer Enterprise Program** &#8211; With the Enterprise Developer Account, you are not obliged to follow the App Store Guidelines, but you can only distribute your applications to employees within your organization. The apps cannot be submitted to the public App Store, they should be distributed by an internal enterprise store or an MDM (Mobile Device Management) solution.
 
     [Learn more about the Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/).
 
@@ -57,8 +57,8 @@ Log in your [Apple Developer account](https://developer.apple.com/account) and s
 
 The certificates you can use:
 
-* For a development certificate, use the `iOS App Development` certificate type. 
-* For a production certificate, select the `App Store and Ad Hoc` (for Apple Developer Program) or the `In-House and Ad Hoc` certificate type (for Apple Developer Enterprise Program). 
+* For a development certificate, use the `iOS App Development` certificate type.
+* For a production certificate, select the `App Store and Ad Hoc` (for Apple Developer Program) or the `In-House and Ad Hoc` certificate type (for Apple Developer Enterprise Program).
 
 To create the certificate (`.p12` extension format):
 
@@ -66,15 +66,15 @@ To create the certificate (`.p12` extension format):
 
 To create your certificate you need to provide a CSR file. Apple will provide you with instructions on how to create one if you have an Apple machine, but if you don't have a Mac here's how you can do it on a Windows machine:
 
-1. Download the latest release of [OpenSSL v3](http://slproweb.com/products/Win32OpenSSL.html). 
-1. Start a new command prompt (Start > Run > `cmd.exe`). 
-1. Execute the command to set the folder used on the OpenSSL installation: 
+1. Download the latest release of [OpenSSL v3](http://slproweb.com/products/Win32OpenSSL.html).
+1. Start a new command prompt (Start > Run > `cmd.exe`).
+1. Execute the command to set the folder used on the OpenSSL installation:
 
         set OPENSSL_CONF=<path_to_openssl_bin>\openssl.cfg
 
     where `<path_to_openssl_bin>` can be `C:\OpenSSL-Win32\bin` or `C:\OpenSSL-Win64\bin`.
 
-1. Now call the OpenSSL to create the CSR and the private key: 
+1. Now call the OpenSSL to create the CSR and the private key:
 
         <path_to_openssl_bin>\openssl.exe req -out <CSR_file_name>.csr -new -newkey rsa:2048 -nodes -keyout <privateKey_name>.key 
 
@@ -116,13 +116,13 @@ A provisioning profile allows your application to be launched on Apple devices a
 
 The provisioning profiles you can use are:
 
-* **iOS App Development**: this Development Provision Profile allows you to generate a development version (containing debug information) of your mobile app that can be installed and launched in a given set of devices for development tests. Only the devices specified for the provisioning profile will be able install and launch the app. If a given user's device is not authorized to install the app, the user will get an "Unable to Download App" alert message. 
+* **iOS App Development**: this Development Provision Profile allows you to generate a development version (containing debug information) of your mobile app that can be installed and launched in a given set of devices for development tests. Only the devices specified for the provisioning profile will be able install and launch the app. If a given user's device is not authorized to install the app, the user will get an "Unable to Download App" alert message.
 
-* **Ad Hoc**: this Distribution Provisioning Profile allows you to generate a release version of your mobile app that can only be used in a limited list of devices. Use this profile to distribute your application to a limited group of end users. Only the devices specified for the provisioning profile will be able install and launch the app. If a given user's device is not authorized to install the app, the user will get an "Unable to Download App" alert message. 
+* **Ad Hoc**: this Distribution Provisioning Profile allows you to generate a release version of your mobile app that can only be used in a limited list of devices. Use this profile to distribute your application to a limited group of end users. Only the devices specified for the provisioning profile will be able install and launch the app. If a given user's device is not authorized to install the app, the user will get an "Unable to Download App" alert message.
 
-* **App Store**: this Distribution Provisioning Profile, available for the Apple Developer Program, allows you to generate a release version of your mobile app that can be published and distributed through the App Store. Use this profile when your application has been thoroughly tested and is ready to be made available to everyone through the App Store. 
+* **App Store**: this Distribution Provisioning Profile, available for the Apple Developer Program, allows you to generate a release version of your mobile app that can be published and distributed through the App Store. Use this profile when your application has been thoroughly tested and is ready to be made available to everyone through the App Store.
 
-* **In-House**: this Distribution Provisioning Profile, available for the Apple Developer Enterprise Program, allows you to generate a release version of your mobile app with no limitations on which devices it will run. Use this profile when your mobile app will only be distributed inside your company. It will not be subject to review by Apple because you will not be able to submit it to the App Store. However, you will have to handle the app distribution on your own. 
+* **In-House**: this Distribution Provisioning Profile, available for the Apple Developer Enterprise Program, allows you to generate a release version of your mobile app with no limitations on which devices it will run. Use this profile when your mobile app will only be distributed inside your company. It will not be subject to review by Apple because you will not be able to submit it to the App Store. However, you will have to handle the app distribution on your own.
 
 To create a provisioning profile (`.mobileprovision` extension format):
 
@@ -134,7 +134,7 @@ To create a provisioning profile (`.mobileprovision` extension format):
 
 1. Provide the information requested during the generation process. You will have to enter an App ID, which certificates to include in the profile and, for some types of provisioning profiles, which specific iOS devices will be allowed to launch mobile apps associated with the provisioning profile being generated. Note that if you later register additional devices in your Developer Account or add any app services, you will need to create a new provisioning profile and generate the mobile app again to propagate your changes.
 
-1. At the end of the generation process, you will be able to download the generated provisioning profile for later use. 
+1. At the end of the generation process, you will be able to download the generated provisioning profile for later use.
 
 In order to generate iOS mobile apps in OutSystems you will be asked to provide a provisioning profile along with one of the certificates that you associated with it in the steps described above.
 
@@ -155,7 +155,6 @@ To renew your provisioning profile, follow these steps:
 1. Select the certificate(s) you want to associate with the profile.
 1. Click **Generate**.
 1. Download the renewed provisioning profile.
-    
 
 ## For Android
 
@@ -166,7 +165,7 @@ A keystore is a file that stores a security key. You can use it to sign your And
 To create a new keystore, you can use the [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/keytool.html) command interface. Ensure that you have [Java](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) installed since this command interface is available in the "bin" directory of your Java installation.
 
 After you verify the availability of the keytool command, open a computer command prompt (Start > Run > `cmd.exe`) and, if the keytool command is not available in the path, navigate to the Java "bin" directory. Execute:
-    
+
     keytool -genkey -v -keystore <keystore_name>.keystore -alias <alias_name> -keyalg RSA -keysize 2048 -validity 10000 -storetype jks
 
 where:
@@ -180,10 +179,10 @@ After the command executes, a new file named `<keystore_name>.keystore` is going
 
 ### Keystore File Recommended Practices
 
-* Store the keystore file in a place where you'll remember it because you'll need to use the same keystore to sign the app when updating it to publish to the Google Play store. 
+* Store the keystore file in a place where you'll remember it because you'll need to use the same keystore to sign the app when updating it to publish to the Google Play store.
 
-* Create your keystore with a long validity (in the command example we are extending the validity of the keystore till 2044). If your keystore expires, you can't renew it and so you won't be able to update your app. 
+* Create your keystore with a long validity (in the command example we are extending the validity of the keystore till 2044). If your keystore expires, you can't renew it and so you won't be able to update your app.
 
-* Keep your keystore file in a safe place. In case a third-party has it can sign and distribute apps under your identity. 
+* Keep your keystore file in a safe place. In case a third-party has it can sign and distribute apps under your identity.
 
 For more information, check the [Android official documentation](https://developer.android.com/studio/publish/app-signing.html#considerations).

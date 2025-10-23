@@ -40,20 +40,20 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Section Index widget into the Main Content area of your application's screen.
 
-    In this example, we drag the Section Index widget into a column. 
+    In this example, we drag the Section Index widget into a column.
 
     ![Example of dragging the Section Index widget into a column in the main content area.](images/sectionindex-2-ss.png "Dragging Section Index Widget into Main Content Area")
 
 1. In the Toolbox, search for and drag the Section widget into the Main Content area of your application's screen. Add as many sections as you require for your app.
 
-    In this example, we drag 4 Section widgets [into a column](../../../../../building-apps/ui/patterns/web/structure/columns.md). Each section widget contains Title, Actions, and Content placeholders. 
+    In this example, we drag 4 Section widgets [into a column](../../../../../building-apps/ui/patterns/web/structure/columns.md). Each section widget contains Title, Actions, and Content placeholders.
 
     ![Screenshot showing the addition of multiple Section widgets into a column.](images/sectionindex-5-ss.png "Adding Multiple Section Widgets")
 

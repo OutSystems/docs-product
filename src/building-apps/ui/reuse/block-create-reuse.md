@@ -41,7 +41,7 @@ When [reusing Blocks across different apps](../../reuse-and-refactor/expose-and-
 * You can reuse Reactive Web Blocks in Reactive Web Apps and Mobile Apps.
 * You can reuse Traditional Web Blocks in Traditional Web Apps.
 * The user adding a Block to a module must have at least [**Monitor and Add Dependencies** permission](../../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels) over the Block's producer module.
-* If the reused Block includes another Block from a different producer module, the user must also have at least **Monitor and Add Dependencies** permission over the producer module of that inner Block. 
+* If the reused Block includes another Block from a different producer module, the user must also have at least **Monitor and Add Dependencies** permission over the producer module of that inner Block.
 
 To reuse a Block from a different app, first you need to add that Block to your module.
 

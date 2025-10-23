@@ -47,8 +47,8 @@ In this example, the user selects a date from the calendar, the date is saved in
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
 
     1. In the Toolbox, search for the widget again.
 
@@ -75,7 +75,6 @@ In this example, the user selects a date from the calendar, the date is saved in
 1. To access the date selected by the user, create an **Assign** and set the **DateTimeVar** to **SelectedDateTime**.
 
     ![Adding an assign action to set the DatePicked variable to the SelectedDateTime in the Date Picker](images/datepicker-assign-ss.png "Assigning Variable Value in Date Picker")
-    
 
 1. You can configure the Datepicker by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 
@@ -106,8 +105,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Date Picker
 
-|Event| Description | 
+|Event| Description |
 |---|---|
-|Initialized: Optional| Event triggered after the Date Picker instance is ready.| 
-|OnSelected: Mandatory| Event triggered each time a date is selected.| 
-
+|Initialized: Optional| Event triggered after the Date Picker instance is ready.|
+|OnSelected: Mandatory| Event triggered each time a date is selected.|

@@ -32,7 +32,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 </div>
 
-The Dropdown Search UI Pattern offers a choice of available options that the user can search. 
+The Dropdown Search UI Pattern offers a choice of available options that the user can search.
 
 **How to use the Dropdown Search UI Pattern**
 
@@ -49,9 +49,9 @@ In this example, we create a dropdown search for a list of employees. When the u
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Dropdown Search widget into the Main Content area of your application's screen.
@@ -64,7 +64,7 @@ In this example, we create a dropdown search for a list of employees. When the u
 
 1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant database entity and click **Select**.
 
-    In this example, the **Sample_Employee** entity is selected. 
+    In this example, the **Sample_Employee** entity is selected.
 
     ![Selecting the Sample_Employee database entity for the Dropdown Search data source](images/dropdownsearch-source-ss.png "Selecting Database Entity for Dropdown Search")
 
@@ -80,11 +80,11 @@ In this example, we create a dropdown search for a list of employees. When the u
 
     ![Creating a new client action from the OnChanged event handler dropdown for Dropdown Search](images/dropdownsearch-handler-ss.png "Creating a New Client Action for Dropdown Search")
 
-    The **DropdownWidgetId** and **SelectedOptionList** input parameters are automatically generated. 
+    The **DropdownWidgetId** and **SelectedOptionList** input parameters are automatically generated.
 
     ![Automatic generation of DropdownWidgetId and SelectedOptionList input parameters for Dropdown Search](images/dropdownsearch-inputparams-ss.png "Dropdown Search Input Parameters")
 
-1. Add the relevant logic to the client action. 
+1. Add the relevant logic to the client action.
 
     For this example:
     1. Add a **Message** to the client action.
@@ -92,8 +92,8 @@ In this example, we create a dropdown search for a list of employees. When the u
 
         `SelectedOptionList.Current.Label + "(Employee ID: " + SelectedOptionList.Current.Value + ")"`
 
-    1. Click **Close**. 
-    
+    1. Click **Close**.
+
         This displays the selected employee's name and ID.
 
         ![Adding a message to display the selected employee's name and ID in the Dropdown Search client action](images/dropdownsearch-message-ss.png "Adding Message Logic to Dropdown Search")
@@ -109,7 +109,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | Property| Description|
-|---|---| 
+|---|---|
 |OptionsList (DropdownOption List): Mandatory|Defines the list of options to show in dropdown.|
 |OptionsList.Value (Text): Mandatory|Defines the items's value.|
 |OptionsList.Label (Text): Mandatory |Defines the items's text.|
@@ -134,7 +134,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-|Event| Description| 
+|Event| Description|
 |---|---|
-|Initialized: Optional| Event triggered after the Dropdown Search instance is ready.| 
-|OnChanged: Mandatory| Event triggered each time an option is selected.| 
+|Initialized: Optional| Event triggered after the Dropdown Search instance is ready.|
+|OnChanged: Mandatory| Event triggered each time an option is selected.|

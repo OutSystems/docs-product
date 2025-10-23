@@ -26,7 +26,6 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Wizard UI Pattern to split large complex tasks and processes into smaller manageable steps. A wizard presents a series of steps or conditions that the user needs to complete in order to accomplish a goal. Additionally, wizards usually include explicit button navigation to move a step forward or backward. Some wizard examples include software installation wizards and sign-up screens.
 
-
 ![Screenshot of the Wizard UI Pattern in OutSystems Service Studio](images/wizard-2-ss.png "Wizard UI Pattern in Service Studio")
 
 **How to use the Wizard UI Pattern**
@@ -50,9 +49,9 @@ The following example demonstrates how you can create a four step Wizard with na
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Wizard widget into the Main Content area of your application's screen.
@@ -61,7 +60,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     By default, the Wizard widget contains three Wizard Item widgets. Each Wizard Item represents a step. You can add or delete Wizard Items as required.
 
-1. From the Toolbox, drag another Wizard Item into your Wizard Pattern. 
+1. From the Toolbox, drag another Wizard Item into your Wizard Pattern.
 
     ![Dragging a new Wizard Item into the Wizard Pattern in Service Studio](images/wizard-4-ss.png "Adding a Wizard Item to the Wizard Pattern")
 

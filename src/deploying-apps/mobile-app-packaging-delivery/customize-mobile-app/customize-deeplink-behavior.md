@@ -27,12 +27,14 @@ Prior to MABS 9, all deeplinks that were handled by a mobile app caused a reload
 ## Customizing the behavior
 
 This behavior can be changed by using the `DeepLinksHandlerType` preference in the [extensibility configurations](./extensibility-configurations-json-schema.md). The preference can have 4 different values:
-* `default`: performs a screen navigation to the URL *(the default behavior)*
-* `event`: fires an event to the `OSDeepLinksHandlerChannel` *(does not navigate)*
-* `function`: calls the `handleOpenURL` function *(does not navigate)*
-* `legacy`: loads the URL in the webview directly, which performs a page reload *(the behavior from MABS 8 and earlier)*
+
+* `default`: performs a screen navigation to the URL _(the default behavior)_
+* `event`: fires an event to the `OSDeepLinksHandlerChannel` _(does not navigate)_
+* `function`: calls the `handleOpenURL` function _(does not navigate)_
+* `legacy`: loads the URL in the webview directly, which performs a page reload _(the behavior from MABS 8 and earlier)_
 
 Example using `function`:
+
 ```
 {
     "preferences": {
@@ -49,6 +51,7 @@ Example using `function`:
 In order to use the `event` and `function` options, the specific handler must be defined in a script that's loaded by the app module.
 
 Example for `event`:
+
 ```
 var channel = cordova.require("cordova/channel");
 if (channel) {
@@ -59,6 +62,7 @@ if (channel) {
 ```
 
 Example for `function`:
+
 ```
 window.handleOpenURL = function (url) {
     ...

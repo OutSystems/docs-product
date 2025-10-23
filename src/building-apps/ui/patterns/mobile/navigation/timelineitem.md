@@ -42,7 +42,7 @@ You can use the Timeline Item UI Pattern to show related events in a chronologic
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
 
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
 
     1. In the Toolbox, search for the widget again.
 

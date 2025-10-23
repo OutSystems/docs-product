@@ -41,9 +41,9 @@ The following example shows how you can use the Mouse Events UI pattern to displ
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Mouse Events widget into the Main Content area of your application's screen.
@@ -51,7 +51,7 @@ The following example shows how you can use the Mouse Events UI pattern to displ
     ![Screenshot of dragging the Mouse Events widget into the Main Content area in Service Studio.](images/mouseevents-2-ss.png "Dragging Mouse Events Widget")
 
 1. From the Toolbox, drag the Center Content widget into the Main Content area of your screen.
- 
+
     ![Screenshot showing the Center Content widget being dragged into the Main Content area in Service Studio.](images/mouseevents-3-ss.png "Center Content Widget")
 
 1. On the **Properties** tab, enter a name in the **Name** property. In this example, we enter `card`.
@@ -64,9 +64,9 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
     ![Screenshot showing the addition of two local variables named 'Drag' and 'Distance' in Service Studio.](images/mouseevents-5-ss.png "Adding Local Variables")
 
-1. Add the relevant content to the Center Content widget placeholders. 
+1. Add the relevant content to the Center Content widget placeholders.
 
-   In this example, we add text and 2 expressions to the Center placeholder, and text to the Bottom placeholder. 
+   In this example, we add text and 2 expressions to the Center placeholder, and text to the Bottom placeholder.
 
    ![Screenshot displaying text and expressions added to the Center placeholder of the Center Content widget.](images/mouseevents-6-ss.png "Content in Center Placeholder")
 
@@ -90,7 +90,7 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
     ![Screenshot of the logic flow for the 'MouseEventsMove' client action in Service Studio.](images/mouseevents-10-ss.png "Client Action Logic")
 
-1. Select the Mouse Events widget and set the **WidgetId**, **PreventDefaults**, and the **Handler** properties. 
+1. Select the Mouse Events widget and set the **WidgetId**, **PreventDefaults**, and the **Handler** properties.
 
     In this example, the **WidgetId** is set to **card.Id**, the **PreventDefaults** to **False**, **OfFsetX** to **OffsetX**, and **OffsetY** to **OffsetY**.
 

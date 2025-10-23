@@ -66,4 +66,3 @@ The key steps for creating a working use-case app that uses your data are the fo
 1. Next, make the app your own, by using your own data from an Excel file, an external database, or an external system of record (SoR). Check [this article describes the main external data sources you can use in your app](use-own-data.md).
 
 1. Evolve your app by adding more screens using development accelerators specific to your app's use case.
-

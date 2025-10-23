@@ -4,14 +4,20 @@ guid: d1334c25-ec8f-4567-8f8a-6f2e26b2d41f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-summary:
+summary: Learn to format headers, images, and links in Markdown for OutSystems 11 (O11), aiding documentation editing with clear examples and guidelines.
+tags: markdown, documentation, headers, images, links
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - none
 ---
 # Markdown language hints
 
 The following hints cover the basics of markdown making you able to edit almost everything in our documentation. If you need/want to know about markdown extensively, check this guide.
 
-
 ## Headers
+
 To create headers just use the following syntax:
 Level 1 heading - # your H1 title
 Level 2 heading - ## your H2 title
@@ -19,6 +25,7 @@ Level 3 heading - ### your H3 title
 …
 
 ## Images
+
 Use the inline syntax to add images to your topic:
 
 `![alt text](image_path/image_name)`
@@ -31,20 +38,18 @@ Note: Currently, we don’t use the reference-style syntax for including images.
 
 Where “id” is a string of your choosing that identifies this image in the current topic.
 
-
 **Notes:**
 > Put all the images related to a given topic under an images/ folder inside the topic folder.
-
 > Name the images, if any, [topic name]-n (with n starting in 0 for the first image in the topic and finishing in the highest digit needed for the last image in the topic).
 
- 
-*Example:*
+_Example:_
 
 For an image called “hello-world-0.png” the right way to put it in the topic is:
 
 `![Hello World](images/hello-world-0.png)`
 
 ## Cross references/links
+
 Add links using the inline syntax:
 
 This is [an example](http://success.outsystems.com/Documentation/11/Developing_an_Application) link to an absolute URL.
@@ -56,6 +61,7 @@ Use Linux-like relative paths (i.e. paths using forward slashes ‘/’ when nee
 Use absolute URLs pointing to the final topic location (after publishing) when linking to topics whose source is not stored in the same Git repository as the current topic.
 
 ## Code Samples
+
 To highlight a line of code in the middle of a sentence do the following:
 
 `code line`
@@ -69,7 +75,7 @@ Code lines
 ```
 
 Note: This second syntax only works when not indented. When inside a list, indent the code one more level than the list level to turn it into a code block.
-Example: 
+Example:
 
 1. My numbered list item here.
 
@@ -98,6 +104,7 @@ To add a table, use three or more hyphens (---) to create each column’s header
 | Text 12 | Text 22 |
 
 ## Infos/Warnings
+
 Create Info and Warning sections using HTML. Use HTML tags directly in the Markdown file, leaving a blank line above and below the DIV tags:
 
 Info:
@@ -119,6 +126,7 @@ Warning text
 **Note:** By including the markdown="1" attribute you can use Markdown syntax inside the DIV element.
 
 ## Definition Lists
+
 Even though Markdown doesn’t support definition lists by default, we use an extension to add support for rendering this HTML element.
 
 Example:
@@ -130,7 +138,6 @@ Second term
 :   Another definition here.
 
     It can have a second paragraph, as long as it’s indented with 4 spaces after a blank line.
-
 
 This is rendered as:
 

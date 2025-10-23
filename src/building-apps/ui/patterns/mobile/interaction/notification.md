@@ -59,22 +59,22 @@ The Notification UI Pattern is a contextual short message that provides importan
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Notification widget into the Main Content area of your application's screen and on the **Properties** tab, enter a **Name**.
 
     ![Dragging the Notification widget into the Main Content area of the application screen](images/notification-dragwidget-ss.png "Drag Notification Widget to Screen")
 
- 1. Add the relevant content to the Content placeholder. 
+1. Add the relevant content to the Content placeholder.
 
-    In this example, an icon and some text are added. 
+    In this example, an icon and some text are added.
 
     ![Example of adding an icon and text to the Content placeholder of the Notification widget](images/notification-content-ss.png "Add Content to Notification Placeholder")
 
-1. From the Toolbox, drag 2 **Button** widgets into the Main Content area of your application's screen to **Open** and **Close** the Notification. 
+1. From the Toolbox, drag 2 **Button** widgets into the Main Content area of your application's screen to **Open** and **Close** the Notification.
 
     ![Open and Close buttons added to the Main Content area for the Notification widget](images/notification-buttons-ss.png "Notification Open and Close Buttons")
 
@@ -108,12 +108,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|Initialized: Optional  | Event triggered when the Notification instance is ready. | 
-|OnToggle: Optional  | Triggered when the Notification is toggled.  | 
-
-
-
-
-
+|Initialized: Optional  | Event triggered when the Notification instance is ready. |
+|OnToggle: Optional  | Triggered when the Notification is toggled.  |

@@ -33,14 +33,14 @@ In OutSystems, you can generate a mobile application package for your mobile app
 
 ### Before You Start
 
-* To generate your iOS mobile app you must be enrolled as an Apple Developer. If you haven’t enrolled yet, learn [how to enroll as an Apple developer](<more-information.md#enroll-as-an-apple-developer>). 
+* To generate your iOS mobile app you must be enrolled as an Apple Developer. If you haven’t enrolled yet, learn [how to enroll as an Apple developer](<more-information.md#enroll-as-an-apple-developer>).
 
 * To test your app, you must have a certificate generated and configured in your Apple Developer account. The exact type of certificate depends on the developer program you enrolled in:  
 — `App Store and Ad Hoc` certificate for the Apple Developer Program, or  
 — `In-House and Ad Hoc` certificate for the Apple Developer Enterprise Program  
 If you don’t have one, learn [how you can create a certificate](<more-information.md#create-a-certificate>).
 
-* To allow launching your app in the devices of the end users group, you must: 
+* To allow launching your app in the devices of the end users group, you must:
     * Set up the `Ad Hoc` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information.md#create-a-provisioning-profile>).
     * To run on iOS devices apps that were generated using the Build Types `Ad-Hoc`, _Development Mode_ needs to be enabled on mobile devices. Please check the official documentation [here](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
 
@@ -53,26 +53,26 @@ You can generate your iOS app package in Service Studio or in Service Center.
 To use Service Studio, do the following:
 
 1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#config-generate-service-studio>) tab, and check out the **Native Platforms** section.
-1. Click on the **Configure iOS App** button or the iOS cog icon if you've already generated a previous iOS app. 
-1. In the **Build type** dropdown, select the **Ad-Hoc** option. 
-1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). You have to register the same app identifier in your Apple Developer Account. 
-1. Provide a certificate of the correct type (see "Before You Start") and its password. The certificate should have a .p12 file extension. 
-1. Provide an `Ad Hoc` provisioning profile that matches the certificate you provided. The provisioning profile should have a .mobileprovision extension. 
-1. Click **Generate App** . 
+1. Click on the **Configure iOS App** button or the iOS cog icon if you've already generated a previous iOS app.
+1. In the **Build type** dropdown, select the **Ad-Hoc** option.
+1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). You have to register the same app identifier in your Apple Developer Account.
+1. Provide a certificate of the correct type (see "Before You Start") and its password. The certificate should have a .p12 file extension.
+1. Provide an `Ad Hoc` provisioning profile that matches the certificate you provided. The provisioning profile should have a .mobileprovision extension.
+1. Click **Generate App** .
 
 When the app generation completes, scan the QR code or copy the created installation link using your device to install the generated iOS app.
 
 To use Service Center, do the following:
 
-1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`). 
-1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list. 
+1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
+1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list.
 1. Select the [Distribute](<intro.md#config-generate-service-center>) tab and click on the **Configure** link for the iOS entry, in the **Native Platforms** section.
-1. In the **Build type** dropdown, select the **Ad-Hoc** option. 
-1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
-1. Provide a certificate of the correct type (see "Before You Start") and its password. The certificate should have a .p12 file extension. 
-1. Provide an `Ad Hoc` provisioning profile that matches the certificate you provided. The provisioning profile should have a .mobileprovision extension. 
-1. Click **Save** to save your settings. 
-1. Click **Generate** and wait a few moments while the app is being generated. 
+1. In the **Build type** dropdown, select the **Ad-Hoc** option.
+1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`).
+1. Provide a certificate of the correct type (see "Before You Start") and its password. The certificate should have a .p12 file extension.
+1. Provide an `Ad Hoc` provisioning profile that matches the certificate you provided. The provisioning profile should have a .mobileprovision extension.
+1. Click **Save** to save your settings.
+1. Click **Generate** and wait a few moments while the app is being generated.
 
 After the app is generated, click the download icon near the version information to download the iOS app package (IPA).
 
@@ -82,8 +82,7 @@ There are several ways to distribute your iOS mobile app to a selected group of 
 
 * Send the end users the Service Studio generated QR code, the installation link or the mobile app package (IPA) itself. Have in mind that only selected devices specified for the provisioning profile will be able install and launch the app. If a given user’s device is not authorized to install the app, the user will get a "Unable to Download App" alert message. For more information on registering devices associated with a given provisioning profile, check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>).
 
-* Use the TestFlight Beta Testing program available in [iTunes Connect](<https://itunesconnect.apple.com>). After you upload your mobile app package to TestFlight in iTunes Connect, you will be able to invite internal and external testers. If you invite external testers, your app will temporarily be held for Beta App Review. For more information on using TestFlight, check the [TestFlight help topic](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingYourAppUsingTestFlight/DistributingYourAppUsingTestFlight.html>) in the Apple Developer website. 
-
+* Use the TestFlight Beta Testing program available in [iTunes Connect](<https://itunesconnect.apple.com>). After you upload your mobile app package to TestFlight in iTunes Connect, you will be able to invite internal and external testers. If you invite external testers, your app will temporarily be held for Beta App Review. For more information on using TestFlight, check the [TestFlight help topic](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingYourAppUsingTestFlight/DistributingYourAppUsingTestFlight.html>) in the Apple Developer website.
 
 ## For Android
 
@@ -98,26 +97,26 @@ You can generate your mobile app package in Service Studio or in Service Center.
 To use Service Studio, do the following:
 
 1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#config-generate-service-studio>) tab, and check out the **Native Platforms** section.
-2. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app. 
-3. In the **Build type** dropdown, select the **Release** option. 
-4. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
-5. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information.md#create-a-keystore>). 
-6. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore. 
-7. Click **Generate App**. 
+1. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app.
+1. In the **Build type** dropdown, select the **Release** option.
+1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`).
+1. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information.md#create-a-keystore>).
+1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
+1. Click **Generate App**.
 
 After the generation has been completed, scan the QR code or copy the created installation link using your device to download the Android build.
 
 To use Service Center, do the following:
 
-1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`). 
-2. Go to **Factory**, click on the  Applications  tab and open your application from the applications list. 
-3. Select the [Distribute](<intro.md#config-generate-service-center>) tab and click on the **Configure**  link for the Android entry, in the **Native Platforms** section.
-4. In the **Build type** dropdown, select the **Release** option. 
-5. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
-6. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information.md#create-a-keystore>). 
-7. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore. 
-8. Click **Save** to save your settings. 
-9. Click **Generate** and wait a few moments while the app is being generated. 
+1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
+1. Go to **Factory**, click on the  Applications  tab and open your application from the applications list.
+1. Select the [Distribute](<intro.md#config-generate-service-center>) tab and click on the **Configure**  link for the Android entry, in the **Native Platforms** section.
+1. In the **Build type** dropdown, select the **Release** option.
+1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`).
+1. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information.md#create-a-keystore>).
+1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
+1. Click **Save** to save your settings.
+1. Click **Generate** and wait a few moments while the app is being generated.
 
 After the app is generated, click the download icon near the version information to download the Android build.
 

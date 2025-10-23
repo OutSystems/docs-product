@@ -125,4 +125,3 @@ An Entity Attribute represents a column in a database table.
 </tr>
 </tbody>
 </table>
-

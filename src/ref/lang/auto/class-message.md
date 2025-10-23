@@ -55,7 +55,6 @@ The available predefined message types are as follows:
 
     ![Example of an 'Error' type feedback message in Service Studio](images/message-class-5-ss.png "Error Message Type")
 
-
 ## Properties
 
 <table markdown="1">
@@ -96,4 +95,3 @@ The available predefined message types are as follows:
 </tr>
 </tbody>
 </table>
-

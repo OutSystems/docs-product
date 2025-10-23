@@ -18,7 +18,6 @@ coverage-type:
 
 # Miscellaneous
 
-
 <table markdown="1">
 <thead>
 <tr>
@@ -52,10 +51,10 @@ Generates and returns a password string of length 'l'. If 'alpha' is True the st
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -86,10 +85,10 @@ When there's no implicit type conversion an invalid data type error will occur.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -125,10 +124,10 @@ Returns true only when invoked within a screen Preparation execution and only if
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -140,12 +139,11 @@ Returns true when the current web screen is using a mobile theme.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
 Type: Boolean  
-

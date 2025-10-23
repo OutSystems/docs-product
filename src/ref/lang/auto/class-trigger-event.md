@@ -56,4 +56,3 @@ Triggers an event defined in the block.
 </tr>
 </tbody>
 </table>
-

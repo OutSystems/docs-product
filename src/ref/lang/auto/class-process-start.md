@@ -29,6 +29,3 @@ Whenever an entity record is **created** or **updated** with an Entity Action yo
 ### Example
 
 When a process is using an entity record that, at some moment in time, is updated in the application and becomes invalid for the process; handle this in your process by adding a **Conditional Start** to start in the event of updating the entity record, and then design a flow to take an action in the process when the entity record is invalid.
-
-
-

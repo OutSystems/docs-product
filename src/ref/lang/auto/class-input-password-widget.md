@@ -170,4 +170,3 @@ At runtime, the value typed by the user will be validated against the variable d
 </tr>
 </tbody>
 </table>
-

@@ -19,7 +19,6 @@ coverage-type:
 
 # Link
 
-
 Displays a hyperlink that users can click or tap to trigger an action, submit data or navigate to another screen.
 
 ## Properties
@@ -157,4 +156,3 @@ Displays a hyperlink that users can click or tap to trigger an action, submit da
 </tr>
 </tbody>
 </table>
-

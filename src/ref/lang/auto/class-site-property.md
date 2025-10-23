@@ -53,7 +53,7 @@ In this example, there's a screen with an aggregate named **GetEmployees**. This
 
     ![Service Studio option highlighted for accessing Module Management in Service Center.](images/module-management-ss.png "Module Management in Service Center")
 
-1. In **Service Center**, make sure you're on the correct module. If you're not, click **Factory** and then **Modules**, and select your module. 
+1. In **Service Center**, make sure you're on the correct module. If you're not, click **Factory** and then **Modules**, and select your module.
 
 1. Click **Site Properties** and check that it lists the **MaxRecords** site property.
 
@@ -72,6 +72,7 @@ In this example, there's an integration with an external service, where the serv
 <div class="info" markdown="1">
 
 To avail of the secret site property functionality, the following is required:
+
 * LifeTime 11.20.1
 * Platform Server 11.25.0
 * Service Studio 11.54.35
@@ -80,7 +81,7 @@ To avail of the secret site property functionality, the following is required:
 
 1. On the **Data** tab, right-click **Site Properties** and select **Add Site Property**.
 
-1. Set the site property's **Name** to **ServicePassword** and the **Data Type** to **String**. 
+1. Set the site property's **Name** to **ServicePassword** and the **Data Type** to **String**.
 
 1. Set the **Is Secret** property to **Yes**.
 
@@ -98,7 +99,7 @@ To avail of the secret site property functionality, the following is required:
 
     ![Service Center displaying the Site Properties tab with the ServicePassword site property listed.](images/site-prop-tab-serpass-sc.png "ServicePassword Site Property in Service Center")
 
-1. Click **ServicePassword** and change the **Effective Value** to the service password. 
+1. Click **ServicePassword** and change the **Effective Value** to the service password.
 
     By doing this, you enforce the password value for that site property. No other users can see the value.
 
@@ -108,7 +109,7 @@ To avail of the secret site property functionality, the following is required:
 
 <div class="info" markdown="1">
 
-If you change a site property from secret to non-secret or vice-versa, the effective value is cleared, and the new value must be set in Service Studio or in Service Center. 
+If you change a site property from secret to non-secret or vice-versa, the effective value is cleared, and the new value must be set in Service Studio or in Service Center.
 
 </div>
 
@@ -172,4 +173,3 @@ If you change a site property from secret to non-secret or vice-versa, the effec
 </tr>
 </tbody>
 </table>
-

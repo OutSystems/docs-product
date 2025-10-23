@@ -70,4 +70,3 @@ Use the Download Tool to send a file to a user. This is an element that ends the
 </tr>
 </tbody>
 </table>
-

@@ -32,7 +32,7 @@ In Traditional Web Apps, Aggregates can only be server-side. To load data on a s
 
 ## How to create an Aggregate
 
-You can create Aggregates in Screens, Blocks, or Action flows. 
+You can create Aggregates in Screens, Blocks, or Action flows.
 
 ### Create an Aggregate in a Screen or Block
 
@@ -45,11 +45,11 @@ There are cases when you always need to fetch all records from the database, for
 
 ### Create an Aggregate in an Action
 
-To add an Aggregate to an Action, drag an **Aggregate** from the toolbox to the flow. 
+To add an Aggregate to an Action, drag an **Aggregate** from the toolbox to the flow.
 
 ![Screenshot demonstrating the addition of a server-side Aggregate to an Action in Service Studio](images/aggregate-server-side-ss.png "Adding an Aggregate to an Action")
 
-There are cases when you always need to fetch all records from the database, for example, to populate drop-down box lists. If you fetch all records using a Data Action, leave the **Max. Records** field empty. In Data Actions, the **Max. Records** value is optional. If you don't provide a value, the Data Action fetches all records from the database. 
+There are cases when you always need to fetch all records from the database, for example, to populate drop-down box lists. If you fetch all records using a Data Action, leave the **Max. Records** field empty. In Data Actions, the **Max. Records** value is optional. If you don't provide a value, the Data Action fetches all records from the database.
 
 ## How to add a data source to an Aggregate
 
@@ -227,4 +227,3 @@ For more information, see the [How To Create Calculated Attributes in Aggregates
 </tr>
 </tbody>
 </table>
-

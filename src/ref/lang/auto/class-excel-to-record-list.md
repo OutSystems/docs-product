@@ -19,13 +19,12 @@ coverage-type:
 
 # Excel To Record List
 
-
 Converts an Excel object to a Record List. Use this logic tool when you need to load data from an Excel file in your app at runtime.
 
 To use Excel To Record List, you need an Entity or Structure that matches the Excel (xlsx) file content you want to import. OutSystems matches the Entity/Structure specified in the **Record Definition** property and the Excel file using one of the following methods:
 
-*  **By Column name:** If the number of columns and record attributes differ, it matches column headers to attribute labels.
-*  **By Position:** If the number of columns and record attributes are identical, it maps sequentially, matching the first attribute to the first column, the second attribute to the second column, and so on. As such, ensure that the order and data types of the columns in the Excel file match the order and data types of the attributes in your Entity or Structure.
+* **By Column name:** If the number of columns and record attributes differ, it matches column headers to attribute labels.
+* **By Position:** If the number of columns and record attributes are identical, it maps sequentially, matching the first attribute to the first column, the second attribute to the second column, and so on. As such, ensure that the order and data types of the columns in the Excel file match the order and data types of the attributes in your Entity or Structure.
 
 <div class="info" markdown="1">
 
@@ -112,4 +111,3 @@ Excel To Record List is only available in **Server Actions**. In Reactive Web an
 </tr>
 </tbody>
 </table>
-

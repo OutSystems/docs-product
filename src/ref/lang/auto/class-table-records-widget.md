@@ -28,7 +28,6 @@ You can use the Table Records widget to display the records of an entity or a st
 
 ![Screenshot of the Table Records widget in a Traditional Web App](images/tablerecords-1-ss.png "Table Records Widget Overview")
 
-
 ## How to use the Table Records widget
 
 In this example, user data is fetched from the User entity and displayed on screen using the Table Records widget.
@@ -43,9 +42,9 @@ In this example, user data is fetched from the User entity and displayed on scre
 
     ![Dragging the Table Records widget into the Main Content area in Service Studio](images/tablerecords-3-ss.png "Dragging Table Records Widget")
 
-1. Add the relevant content to the Table Records widget. 
+1. Add the relevant content to the Table Records widget.
 
-    In this example, from the **Data** tab, we drag the **User** entity into the Table Records widget. 
+    In this example, from the **Data** tab, we drag the **User** entity into the Table Records widget.
 
     ![Adding the User entity to the Table Records widget in Service Studio](images/tablerecords-4-ss.png "Adding User Entity to Table Records")
 
@@ -74,7 +73,6 @@ After following these steps and publishing the module, you can test the widget i
 ### How to add a new column
 
 1. Select and right-click the Table Records widget, and select **Table** > **Insert Column to the Left** or **Insert column to the Right**.
-
 
     ![Adding a new column to the Table Records widget in Service Studio](images/tablerecords-10-ss.png "Adding New Column to Table Records")
 
@@ -253,7 +251,6 @@ The layout of this widget follows these rules:
 
     **Other rows:** The value of the attribute for each record shows as a Expression widget and, therefore, you can use the Expression editor to modify the content. You can also use the input widgets to allow editing. Set different styles in odd and even lines with **Odd Line style** and **Even Line style** properties.
 
-
 ## Iterating the widget
 
 Set the source data (entity and/or structure records) in the **Source Record List** property of Table Records. The data must be of the List type, and each item of the list shows on a different line. The first record that shows in the widget corresponds to the **Start Index** position on the list. The number of records that the table shows depends on the **Line Count** property.
@@ -263,6 +260,5 @@ To iterate over the Source Record List, you have to update the **Start Index** p
 ## Additional notes
 
 * The widget **Id** runtime property is only available in the screen scope when the widget property **Name** isn't empty.
-* **LineCount** and **StartIndex** are useful when you want to implement the previous/next behavior of a Table Records widget, because the parameters control how many records you show in the table and from which record number. Scaffold a screen by dragging an Entity to a web flow to get a table with pagination. You can then check out how **LineCount** and **StartIndex** work. 
+* **LineCount** and **StartIndex** are useful when you want to implement the previous/next behavior of a Table Records widget, because the parameters control how many records you show in the table and from which record number. Scaffold a screen by dragging an Entity to a web flow to get a table with pagination. You can then check out how **LineCount** and **StartIndex** work.
 * If you have an Aggregate in the Preparation that provides a list of records to Table Records and you leave empty the value **Max. Records** of the Aggregate, the platform calculates the value of **Max. Records** for you according to the following formula: **Start Index** of the Table Records + **Line Count** of the table + 1. A workaround is to set a static **Line Count** in the Table Records widget that's at least equal to the maximum number of records your query can retrieve.
-

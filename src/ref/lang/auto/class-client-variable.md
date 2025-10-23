@@ -19,7 +19,6 @@ coverage-type:
 
 # Client Variable
 
-
 In Mobile and Reactive Web apps, use Client Variables to store data client-side in a key-value format. For example, use these variables to store configurations and app context data.
 
 Client Variables can only store [basic data types](<../../data/data-types/available-data-types.md>). The one exception is **Binary** data, which is a basic data type, but can't be stored in these variables.
@@ -57,17 +56,17 @@ This example shows how to use a Client Variable to keep the value of a Search wi
 
 1. On the **Filter** tab, click **Add filter**.
 
-1. Insert the filter condition. 
+1. Insert the filter condition.
 
     ```
     Employee.FirstName like "%" + Client.SearchKeyword + "%"
     ```
 
-1. To save the filter, click **Close**. 
+1. To save the filter, click **Close**.
 
-    ![Screenshot of a filtered aggregate with a condition using the Client Variable in the Filter tab](images/client-var-filtered-aggregate-ss.png "Client Variable in Filtered Aggregate") 
+    ![Screenshot of a filtered aggregate with a condition using the Client Variable in the Filter tab](images/client-var-filtered-aggregate-ss.png "Client Variable in Filtered Aggregate")
 
-After you follow these steps and publish your module, you can test the functionality of the filter in your browser. The text inserted in the Input of the Search widget is stored in the defined Client Variable and is then used to filter the aggregate. When you change to another screen or close your browser, the value is kept and the filter still applies according to that value. 
+After you follow these steps and publish your module, you can test the functionality of the filter in your browser. The text inserted in the Input of the Search widget is stored in the defined Client Variable and is then used to filter the aggregate. When you change to another screen or close your browser, the value is kept and the filter still applies according to that value.
 
 ## Properties
 
@@ -112,4 +111,3 @@ After you follow these steps and publish your module, you can test the functiona
 </tr>
 </tbody>
 </table>
-

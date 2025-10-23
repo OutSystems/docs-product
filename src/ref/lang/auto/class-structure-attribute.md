@@ -101,4 +101,3 @@ Stores part of the information that concerns a structure. Examples of attributes
 </tr>
 </tbody>
 </table>
-

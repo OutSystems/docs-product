@@ -96,4 +96,3 @@ Cell of an editable table.
 </tr>
 </tbody>
 </table>
-

@@ -67,4 +67,3 @@ Converts a Record List to an Excel file. You can use the output file for downloa
 </tr>
 </tbody>
 </table>
-

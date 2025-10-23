@@ -123,4 +123,3 @@ Allows you to add a custom HTML element to the screen. You can use nested HTML E
 </tr>
 </tbody>
 </table>
-

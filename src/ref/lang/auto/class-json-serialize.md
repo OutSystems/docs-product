@@ -122,7 +122,6 @@ If you set **Serialize Default Values** to **Yes**, and you leave the default va
 * Empty Integer converts to **0**
 * Empty DateTime converts to **1900-01-01T00:00:00**
 
-
 ## JSON Serialize consistency opt-in { #json_serialize_opt-in }
 
 With Platform Server 11.17.0, there is a configurable opt-in for Factory
@@ -138,23 +137,23 @@ as **No** in a JSON Serialize action node. In this scenario, there is an
 inconsistency in the client and server-side specifically related to null and
 default values. For example:
 
-- Integer Array where 0 is the default value:
+* Integer Array where 0 is the default value:
 
-  - Server-side output after serialization: "BinaryArray":[0,1]
+    * Server-side output after serialization: "BinaryArray":[0,1]
 
-  - Client-side output after serialization: "BinaryArray":[null,1]
+    * Client-side output after serialization: "BinaryArray":[null,1]
 
-- Nested Structures with empty Objects:
+* Nested Structures with empty Objects:
 
-  - Server-side output after serialization: "NestedStructure":{"textAttribute":"Test"}
+    * Server-side output after serialization: "NestedStructure":{"textAttribute":"Test"}
 
-  - Client-side output after serialization: "NestedStructure":{"textAttribute":"Test","object":{}}
+    * Client-side output after serialization: "NestedStructure":{"textAttribute":"Test","object":{}}
 
-- Empty Arrays:
+* Empty Arrays:
 
-  - The server-side doesn't serialize empty arrays, returning an empty string
+    * The server-side doesn't serialize empty arrays, returning an empty string
 
-  - Client-side output after serialization: "EmptyArray":[]
+    * Client-side output after serialization: "EmptyArray":[]
 
 ### Adapting existing workaround code
 
@@ -186,9 +185,9 @@ var originalObject = $parameters.JsonObject.EmptyObject;
 // originalObject is undefined due to the empty object
 // deserialization behavior
 if (originalObject) {
-	var objectName = originalObject.name;
+ var objectName = originalObject.name;
 } else {
-	var objectName = “ExampleName”;
+ var objectName = “ExampleName”;
 }
 ```
 

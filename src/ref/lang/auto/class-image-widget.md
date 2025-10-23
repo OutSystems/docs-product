@@ -26,7 +26,7 @@ Applies only to Traditional Web Apps.
 
 Displays an image in the screen or block. The image source can be one of the following:
 
-* A static image included in the module as a resource. The image is uploaded to the server when you upload the module. 
+* A static image included in the module as a resource. The image is uploaded to the server when you upload the module.
 
 * An external image stored outside the platform that is accessible through a URL. When the screen is rendered, the image URL is processed, the image is fetched and displayed on the screen.
 
@@ -176,4 +176,3 @@ The supported image formats are GIF, JPEG, PNG and SVG. Please note that the ima
 </tr>
 </tbody>
 </table>
-

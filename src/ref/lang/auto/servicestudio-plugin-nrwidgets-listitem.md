@@ -151,4 +151,3 @@ You can use it for example to display an entity record.
 </tr>
 </tbody>
 </table>
-

@@ -140,4 +140,3 @@ A Theme defines the look and feel of the application, including what layouts are
 </tr>
 </tbody>
 </table>
-

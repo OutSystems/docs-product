@@ -110,4 +110,3 @@ Fetches data from the database using your own SQL statement.
 </tr>
 </tbody>
 </table>
-

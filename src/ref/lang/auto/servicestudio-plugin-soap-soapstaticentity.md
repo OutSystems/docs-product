@@ -112,4 +112,3 @@ Static entity belonging to a consumed SOAP Web Service. It can be related with a
 </tr>
 </tbody>
 </table>
-

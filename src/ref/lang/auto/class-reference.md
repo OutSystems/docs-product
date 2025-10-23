@@ -18,7 +18,6 @@ coverage-type:
 
 # Reference
 
-
 ## Properties
 
 <table markdown="1">
@@ -62,4 +61,3 @@ coverage-type:
 </tr>
 </tbody>
 </table>
-

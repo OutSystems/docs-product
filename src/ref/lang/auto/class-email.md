@@ -82,4 +82,3 @@ Allows defining the content to send by email.
 </tr>
 </tbody>
 </table>
-

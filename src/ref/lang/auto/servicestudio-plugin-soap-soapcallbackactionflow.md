@@ -52,4 +52,3 @@ Check how to [use the advanced SOAP extensibility in your application](<../../..
 </tr>
 </tbody>
 </table>
-

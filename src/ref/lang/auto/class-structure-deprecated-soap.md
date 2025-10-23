@@ -82,4 +82,3 @@ Structure used in input or output parameters of consumed SOAP Web Service Method
 </tr>
 </tbody>
 </table>
-

@@ -73,4 +73,3 @@ Method of a Consumed SOAP Web Service.
 </tr>
 </tbody>
 </table>
-

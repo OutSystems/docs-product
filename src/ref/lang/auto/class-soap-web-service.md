@@ -84,4 +84,3 @@ Exposed Web Service based on the SOAP protocol.
 </tr>
 </tbody>
 </table>
-

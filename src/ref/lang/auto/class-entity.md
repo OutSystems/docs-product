@@ -169,4 +169,3 @@ An exposed entity can have its records protected from modifications by setting t
 </tr>
 </tbody>
 </table>
-

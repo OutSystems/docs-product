@@ -18,7 +18,6 @@ coverage-type:
 
 # Service Action
 
-
 ## Properties
 
 <table markdown="1">
@@ -55,4 +54,3 @@ coverage-type:
 </tr>
 </tbody>
 </table>
-

@@ -24,9 +24,6 @@ Besides the functions listed below, you also have another built-in function avai
 
 Check [Role Functions](../../../user-management/user-roles/create-a-custom-role.md#role-functions) for more information.
 
-
-
-
 <table markdown="1">
 <thead>
 <tr>
@@ -52,10 +49,10 @@ Returns true when the given user has the specific role.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -77,12 +74,11 @@ Returns the identifier of the user that is currently authenticated with the serv
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
 Type: UserId  
-

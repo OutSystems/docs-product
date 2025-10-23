@@ -18,7 +18,7 @@ coverage-type:
 
 # Logic Elements
 
-Logic in OutSystems can be defined through Actions. An Action is a logic element that allows you to define logic flows that run on the server or client-side of your app. You can use logic elements in your reactive web and mobile apps to define custom algorithms. Some of OutSystems logic elements include [Screen Actions](../../lang/auto/class-screen-action.md) that contain logic specific to a single screen, [Client Actions](../../lang/auto/class-client-action.md) that run logic on the device, and [Server Actions](../../lang/auto/class-server-action.md) that  run logic on the server. 
+Logic in OutSystems can be defined through Actions. An Action is a logic element that allows you to define logic flows that run on the server or client-side of your app. You can use logic elements in your reactive web and mobile apps to define custom algorithms. Some of OutSystems logic elements include [Screen Actions](../../lang/auto/class-screen-action.md) that contain logic specific to a single screen, [Client Actions](../../lang/auto/class-client-action.md) that run logic on the device, and [Server Actions](../../lang/auto/class-server-action.md) that  run logic on the server.
 
 ![Diagram illustrating the different logic elements in OutSystems, including Screen Actions, Client Actions, and Server Actions](images/logic-elements-diag.png "OutSystems Logic Elements Diagram")
 

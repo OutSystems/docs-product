@@ -72,4 +72,3 @@ Method of an exposed REST API.
 </tr>
 </tbody>
 </table>
-

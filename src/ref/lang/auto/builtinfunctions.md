@@ -33,5 +33,3 @@ When designing the business logic of your application, you can use the following
 * [URL](<builtinfunction-url.md>)
 * [Miscellaneous](<builtinfunction-miscellaneous.md>)
 * [Roles](<builtinfunction-roles.md>)
-
-

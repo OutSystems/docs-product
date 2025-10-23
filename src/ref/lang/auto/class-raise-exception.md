@@ -20,7 +20,6 @@ topic:
 
 # Raise Exception
 
-
 Use Raise Exception to throw an exception and stop the currently running action flow. Set the **Exception** property to the exception you want to raise. You can select an existing exception or create a new User Exception.
 
 When raising a User Exception, you must define the message to send as part of the exception in the **Message** property. The message is useful for logging purposes and eventually to display in the UI, informing the end user of the exception that occurred.
@@ -66,4 +65,3 @@ When you raise an exception, OutSystems follows an algorithm to determine what's
 </tr>
 </tbody>
 </table>
-

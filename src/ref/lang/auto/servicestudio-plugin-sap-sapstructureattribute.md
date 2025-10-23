@@ -109,4 +109,3 @@ Attribute of structure used in input and output arguments of SAP remote function
 </tr>
 </tbody>
 </table>
-

@@ -42,4 +42,3 @@ Ends the decision flow returning the decision outcome. For a matter of organizat
 </tr>
 </tbody>
 </table>
-

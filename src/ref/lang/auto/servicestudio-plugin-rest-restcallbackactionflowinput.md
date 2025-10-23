@@ -71,4 +71,3 @@ Input parameter of a consumed REST API Callback action.
 </tr>
 </tbody>
 </table>
-

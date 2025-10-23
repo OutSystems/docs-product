@@ -103,4 +103,3 @@ Attribute of structure used in input and output arguments of REST API Methods.
 </tr>
 </tbody>
 </table>
-

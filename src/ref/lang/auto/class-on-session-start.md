@@ -57,4 +57,3 @@ To define the logic of the OnSessionStart action in your module, click **Logic**
 </tr>
 </tbody>
 </table>
-

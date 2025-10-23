@@ -121,4 +121,3 @@ An image resource. The supported image formats are GIF, JPEG, and PNG.
 </tr>
 </tbody>
 </table>
-

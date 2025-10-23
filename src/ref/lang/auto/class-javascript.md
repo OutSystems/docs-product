@@ -57,4 +57,3 @@ Adds JavaScript flow element for [extending](<../../../integration-with-systems/
 </tr>
 </tbody>
 </table>
-

@@ -30,20 +30,18 @@ Returns the largest number of 'n' and 'm'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
 n
 :    Type: Decimal. Mandatory.  
 
-
 m
 :    Type: Decimal. Mandatory.  
-
 
 ### Output
 
@@ -62,20 +60,18 @@ Returns the smallest number of 'n' and 'm'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
 n
 :    Type: Decimal. Mandatory.  
 
-
 m
 :    Type: Decimal. Mandatory.  
-
 
 ### Output
 
@@ -94,10 +90,10 @@ Returns -1 if 'n' is negative; 1 if 'n' is positive; 0 if 'n' is 0.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -116,4 +112,3 @@ Sign(-10.89) = -1
 Sign(2.3) = 1
 Sign(0.0) = 0
 ```
-

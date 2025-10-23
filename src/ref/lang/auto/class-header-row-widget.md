@@ -74,4 +74,3 @@ For example, in a Table Records Widget where you added two attributes, this is t
 </tr>
 </tbody>
 </table>
-

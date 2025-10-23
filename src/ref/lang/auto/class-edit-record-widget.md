@@ -173,4 +173,3 @@ Use the [Form widget](<servicestudio-plugin-widgets-form.md>) instead of the Edi
 </tr>
 </tbody>
 </table>
-

@@ -28,16 +28,16 @@ Events can only be defined inside blocks.
 
 Input parameters can be added to events. This allows data to pass from the scope of a block to the outer scope of the parent element. This is necessary since the block and parent element have different scopes.
 
-If the **Is Mandatory** property of an event is set to **Yes**, you must define an event handler in the parent element where the block with the event is used. 
+If the **Is Mandatory** property of an event is set to **Yes**, you must define an event handler in the parent element where the block with the event is used.
 
 ![Screenshot illustrating the IsMandatory property set to True, indicating the need to define an event handler in OutSystems Service Studio](images/mandatory-event-ss.png "Mandatory Event Property Set to True")
 
-
 ## Trigger event
 
-A trigger event defines what action in a block can trigger an event. To learn more about how trigger events work, refer to the [Demo: How To Trigger Block Events](https://learn.outsystems.com/training/journeys/blocks-and-events-635/demo-how-to-trigger-block-events/o11/90). 
+A trigger event defines what action in a block can trigger an event. To learn more about how trigger events work, refer to the [Demo: How To Trigger Block Events](https://learn.outsystems.com/training/journeys/blocks-and-events-635/demo-how-to-trigger-block-events/o11/90).
 
 ## Related information
+
 [Block events](https://learn.outsystems.com/training/journeys/blocks-and-events-635/block-events/o11/78)
 
 ## Properties
@@ -76,4 +76,3 @@ A trigger event defines what action in a block can trigger an event. To learn mo
 </tr>
 </tbody>
 </table>
-

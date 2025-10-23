@@ -25,16 +25,16 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-List Records widget displays the records in a list layout. After you drag this widget to the Screen, you need to supply data to it and set up how records show. 
+List Records widget displays the records in a list layout. After you drag this widget to the Screen, you need to supply data to it and set up how records show.
 
 ![Screenshot of the List Records widget in a Traditional Web App showing full names separated by new lines](images/list-records.png "List Records Widget Example")
 
 Here are some additional notes.
 
 1. Find List Records in the widget toolbox and drag it to the main editor, just like other widgets.
-2. Use the **Line Separator** property to set up how the list shows in the Screen. You can separate the records by a new line, bullets, or not separate them at all.
-3. The **Preparation** Action is often used to supply data to the widgets in Traditional Web App.
-4. In our example, we dragged the FirstName and LastName Attributes from the related Entity to the List Widget to get a full name in one line. We set the **Line Separator** to **New Line**. The main editor shows a preview of the list, but make sure you try it out by publishing your app as well. 
+1. Use the **Line Separator** property to set up how the list shows in the Screen. You can separate the records by a new line, bullets, or not separate them at all.
+1. The **Preparation** Action is often used to supply data to the widgets in Traditional Web App.
+1. In our example, we dragged the FirstName and LastName Attributes from the related Entity to the List Widget to get a full name in one line. We set the **Line Separator** to **New Line**. The main editor shows a preview of the list, but make sure you try it out by publishing your app as well.
 
 ## Properties
 
@@ -168,4 +168,3 @@ Here are some additional notes.
 </tr>
 </tbody>
 </table>
-

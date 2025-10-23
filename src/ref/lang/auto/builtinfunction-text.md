@@ -26,7 +26,7 @@ coverage-type:
 | [EncodeJavaScript](#EncodeJavaScript)(​Text) | Replaces special characters in a string so that you can use it in JavaScript literals. Use this function when using un-escaped expressions that contain content provided by end users.<br/>**Warning**: Since this function only encodes strings that will be used in JavaScript literals, **it does not protect** from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. **Do not** use this function to encode text that might get executed as JavaScript code, only to encode JavaScript literals. |
 | [EncodeSql](#EncodeSql)(​Text) | Replaces special characters in a string literal so that you can use it in a SQL statement. Use this function when the Expand Inline property of a Query Parameter is enabled to escape content provided by end users.<br/>**Warning**: Since this function only encodes string literals, **it does not protect** from SQL injection vulnerabilities on its own. **Do not** use this function to encode text that might get executed as part of the SQL statement. Check the OutSystems documentation for more information on [Best practices for building dynamic SQL statements](../../../building-apps/data/operations/build-dynamic-sql-statements.md). |
 | [EncodeUrl](#EncodeUrl)(​Text) | Replaces all non-alphanumeric characters in a string (characters outside of the `[0-9a-zA-Z]` range), so that you can safely use it in URL parameter values. Use this function to build URLs in your application that may contain content provided by end users, for example, when dynamically building URLs to an external site. |
-| [Index](#Index)(​Text, Text, Integer, Boolean, Boolean) | 	Returns the zero-based position in Text 't' where 'search' Text can be found. Returns -1 if 'search' is not found or if 'search' is empty. |
+| [Index](#Index)(​Text, Text, Integer, Boolean, Boolean) |  Returns the zero-based position in Text 't' where 'search' Text can be found. Returns -1 if 'search' is not found or if 'search' is empty. |
 | [Length](#Length)(​Text) | Returns the number of characters in Text 't'. |
 | [NewLine](#NewLine)() | Returns a string containing the New Line (Return) character. |
 | [Replace](#Replace)(​Text, Text, Text) | Returns Text 't' after replacing all Text occurrences of 'search' with 'replace'. |
@@ -34,7 +34,7 @@ coverage-type:
 | [ToLower](#ToLower)(​Text) | Converts Text 't' to the equivalent lowercase text. |
 | [ToUpper](#ToUpper)(​Text) | Converts Text 't' to the equivalent uppercase text. |
 | [Trim](#Trim)(​Text) | Removes all leading and trailing space characters (' ') from Text 't'. |
-| [TrimEnd](#TrimEnd)(​Text) | 	Removes all trailing space characters (' ') from Text 't'. |
+| [TrimEnd](#TrimEnd)(​Text) |  Removes all trailing space characters (' ') from Text 't'. |
 | [TrimStart](#TrimStart)(​Text) | Removes all leading space characters (' ') from Text 't'. |
 
 ## Chr { #Chr }
@@ -43,10 +43,10 @@ Returns a single-character string corresponding to the 'c' character code.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -70,10 +70,10 @@ Returns the concatenation of two Texts: 't1' and 't2'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -104,10 +104,10 @@ Warning: Since this function only encodes strings that will be used in HTML lite
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -139,10 +139,10 @@ Warning: Since this function only encodes strings that will be used in JavaScrip
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -173,10 +173,10 @@ Warning: Since this function only encodes string literals, it does not protect y
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -206,10 +206,10 @@ Replaces all non-alphanumeric characters in a string, i.e. characters outside of
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -240,10 +240,10 @@ Returns the zero-based position in Text 't' where 'search' Text can be found. Re
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -296,10 +296,10 @@ Returns the number of characters in Text 't'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -324,10 +324,10 @@ Returns a string containing the New Line (Return) character.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -339,10 +339,10 @@ Returns Text 't' after replacing all Text occurrences of 'search' with 'replace'
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -376,10 +376,10 @@ Returns a sub-string of 't' beginning at 'start' zero-based position and with 'l
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -415,10 +415,10 @@ Converts Text 't' to the equivalent lowercase text.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -442,10 +442,10 @@ Converts Text 't' to the equivalent uppercase text.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -469,10 +469,10 @@ Removes all leading and trailing space characters (' ') from Text 't'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -497,10 +497,10 @@ Removes all trailing space characters (' ') from Text 't'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -525,10 +525,10 @@ Removes all leading space characters (' ') from Text 't'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -546,4 +546,3 @@ Type: Text
 TrimStart(" First string ") = "First string "
 TrimStart("First string ") = "First string "
 ```
-

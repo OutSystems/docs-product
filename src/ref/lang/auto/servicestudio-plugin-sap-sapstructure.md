@@ -67,4 +67,3 @@ Structure used in input and output arguments of SAP remote functions.
 </tr>
 </tbody>
 </table>
-

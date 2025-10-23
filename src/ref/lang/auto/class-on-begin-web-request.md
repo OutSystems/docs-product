@@ -42,4 +42,3 @@ Action to be executed on each request to the server.
 </tr>
 </tbody>
 </table>
-

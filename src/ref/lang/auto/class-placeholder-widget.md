@@ -19,7 +19,6 @@ coverage-type:
 
 # Placeholder Widget
 
-
 Reserves space in your block for filling when the block is used.
 
 ## Properties
@@ -112,4 +111,3 @@ Reserves space in your block for filling when the block is used.
 </tr>
 </tbody>
 </table>
-

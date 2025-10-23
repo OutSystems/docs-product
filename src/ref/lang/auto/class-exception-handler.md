@@ -20,7 +20,6 @@ topic:
 
 # Exception Handler
 
-
 The Exception Handler element starts an action flow for handling all exceptions or exceptions of a certain type. You can define logic to handle exceptions pre-defined exceptions (like Database Exceptions), or custom exceptions (called User Exceptions) raised by your application logic.
 
 Set the Exception Handler's **Exception** property to the exception type you want to handle in the flow of the Exception Handler. To handle all types of exceptions, set the **Exception** property to `All Exceptions`.
@@ -61,10 +60,10 @@ In Reactive Web and Mobile apps, the **Abort Transaction** property isn't availa
 
 | Name | Description | Mandatory | Default value | Observations |
 |---|---|---|---|---|
-| Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes |
-| Exception | Type of exception to handle. | Yes | There is a call hierarchy for exceptions that determines the error handler behavior. For more info see [Exception Handling Mechanism](../../../building-apps/handling-exceptions/handling-mechanism.md). |
+| Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes | | |
+| Exception | Type of exception to handle. | Yes | There is a call hierarchy for exceptions that determines the error handler behavior. For more info see [Exception Handling Mechanism](../../../building-apps/handling-exceptions/handling-mechanism.md). | |
 | Abort Transaction | Set to Yes to abort the transaction and rollback changes. | Yes | Yes | This property is only available in Traditional Web Apps or in a server-side context (for all apps). |
-| Log Error | Set to Yes to log an error when the exception occurs. | Yes | Yes |
+| Log Error | Set to Yes to log an error when the exception occurs. | Yes | Yes | |
 
 ## Runtime Properties
 
@@ -88,4 +87,3 @@ In Reactive Web and Mobile apps, the **Abort Transaction** property isn't availa
 </tr>
 </tbody>
 </table>
-

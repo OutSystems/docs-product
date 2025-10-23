@@ -20,7 +20,7 @@ topic:
 
 # Entities
 
-Entities are elements that allow you to persist information in the database and to implement your database model. You can think of them as database tables or views. 
+Entities are elements that allow you to persist information in the database and to implement your database model. You can think of them as database tables or views.
 
 An Entity is defined through Entity Attributes that store the information related to it. Examples of entity attributes are: Name, Address, Zip Code, City and so on.
 
@@ -28,7 +28,7 @@ An Entity is defined through Entity Attributes that store the information relate
 
 In OutSystems, a primary key is called Entity Identifier.
 
-When an Entity is created, an attribute called Id is automatically added as Entity Identifier. By default, it is of data type Long Integer and its value is automatically calculated in sequence (an AutoNumber in OutSystems). This way, you don't have to implement any specific logic to uniquely identify each entity record. 
+When an Entity is created, an attribute called Id is automatically added as Entity Identifier. By default, it is of data type Long Integer and its value is automatically calculated in sequence (an AutoNumber in OutSystems). This way, you don't have to implement any specific logic to uniquely identify each entity record.
 
 You can use other data types as Entity Identifiers or switch off the AutoNumber in an attribute. In these cases, you have to implement the logic to uniquely identify each entity record.
 
@@ -38,9 +38,9 @@ In OutSystems, it is not possible to have composite keys because only one attrib
 
 ## Sequential Attributes
 
-Sequential attributes are useful for Entity Identifier attributes. It is an easy way to ensure that each record has a unique primary key. 
+Sequential attributes are useful for Entity Identifier attributes. It is an easy way to ensure that each record has a unique primary key.
 
-When creating new records in the database with Entity Actions, the platform automatically calculates a new sequential and unique value. 
+When creating new records in the database with Entity Actions, the platform automatically calculates a new sequential and unique value.
 
 There can be only one sequential attribute per Entity.
 
@@ -48,7 +48,7 @@ There can be only one sequential attribute per Entity.
 
 Like in relational databases, OutSystems provides indexes for faster access to data in the entity. If you usually search or sort by one or more attributes of the entity, you can create an index based on those attributes to make it faster.
 
-Indexes can also be used to create alternate and composite keys. 
+Indexes can also be used to create alternate and composite keys.
 
 When creating an index there is always a relevant trade-off between fetching and inserting data as it may bring some overhead to the latter.
 

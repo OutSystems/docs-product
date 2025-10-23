@@ -46,17 +46,15 @@ Follow the steps to create a form with three options.
 1. Drag an Expression widget below the Form and enter `"You selected " + Color.Color + " color."`.
 
 1. Publish the app and try it out in your browser.
-    
+
     ![Preview of Radio Buttons as they appear in a web browser](images/radio-button-preview.png "Radio Button Preview in Browser")
-
-
 
 ### Button Group
 
 You can also use Button Group in Reactive Web and Mobile:
 
-1. Drag and drop the Button Group from the toolbox and bind it to the variable that will store the selected value. 
-1. For each Button Group Item, define the value to assign to the variable when the Button Group Item is selected and edit the corresponding text label. 
+1. Drag and drop the Button Group from the toolbox and bind it to the variable that will store the selected value.
+1. For each Button Group Item, define the value to assign to the variable when the Button Group Item is selected and edit the corresponding text label.
 
 ![Screenshot of a Button Group widget in the Service Studio interface for Reactive Web and Mobile](images/button-group-1.png "Button Group in Reactive Web and Mobile")
 
@@ -64,7 +62,7 @@ You can also use Button Group in Reactive Web and Mobile:
 
 To use Radio Buttons in Traditional Web:
 
-1. Drag and drop the Radio Buttons from the widgets toolbox. 
-1. For each Radio Button, bind it to the variable that will store the selected value and define the value to assign to the variable when the Radio Button is selected. 
+1. Drag and drop the Radio Buttons from the widgets toolbox.
+1. For each Radio Button, bind it to the variable that will store the selected value and define the value to assign to the variable when the Radio Button is selected.
 
 ![Screenshot of Radio Buttons widget in the Service Studio interface for Traditional Web applications](images/button-group-2.png "Radio Buttons in Traditional Web")

@@ -54,7 +54,7 @@ To fetch a list of records of an entity, &lt;Entity&gt;, from an integration in 
 1. In the **Interface tab** of your module, create a Data Action in the screen. Open the context menu for the Screen, and select **Fetch Data from Other Sources**.
 
 1. In the element tree, select the **Out1** output parameter, and set its **Data Type** to **&lt;Entity&gt; List** by doing the following:
-    
+
     1. In the **Data Type** property menu select **List...**.
 
     1. In the **List Element Type** dialog, go to the **Structures** section, select **&lt;Entity&gt;\\&lt;Entity&gt;**, and then click **OK**. &lt;Entity&gt; is the name of your entity, for example `Products`.

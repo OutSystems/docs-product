@@ -78,9 +78,9 @@ Let's create an app, then create a core services module for your case, and final
     </div>
 
 1. In **&lt;business-entity&gt;_CS**, open **Manage Dependencies**, and add the following dependencies:
-    
+
     * From the **CM_Case_CS** producer, add the **Case** entity.
-    
+
     * From the **CaseConfigurations_API** producer, add the **SetupCaseManagementApplication** service action.
 
     * From the **CaseServices_API** producer, add the **Case_Initialize** action.
@@ -110,9 +110,9 @@ Next, let's create a static entity to keep the case definition and then create a
 1. Add a new attribute named `Description`, with the **Data Type** set as **Text**.
 
 1. Add a new attribute named `HasAccessControl`, with the **Data Type** set as **Boolean**.
- 
+
 1. Add a new attribute named `PurgeTypeId`, with the **Data Type** set as **PurgeTypeId**.
- 
+
 1. Add a new attribute named `DaysToPurgeCase`, with the **Data Type** set as **Integer**.
 
 1. Add a new attribute named `DaysToPurgeProcess`, with the **Data Type** set as **Integer**.
@@ -246,7 +246,7 @@ Follow these steps:
 1. In the &lt;app-name&gt;_WF module, open **Manage Dependencies**, add the following dependencies:
 
     * From the **&lt;business-entity&gt;_CS** producer, add the business entity you created in Step 1.
-    
+
     * From the **CaseServices_API** producer, add the **Case_AssociateProcess** action.
 
 1. In the **Process** tab, create a new **Process**.

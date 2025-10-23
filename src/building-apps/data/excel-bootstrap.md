@@ -25,7 +25,7 @@ You can import data from an Excel file to load data to an entity. This is useful
 
 <div class="info" markdown="1">
 
-If you're using Google Sheets, download your document as an .xlsx file (File > Download > Microsoft Excel), and then bootstrap the data. 
+If you're using Google Sheets, download your document as an .xlsx file (File > Download > Microsoft Excel), and then bootstrap the data.
 </div>
 
 ## Validate the Excel file
@@ -40,7 +40,7 @@ If your spreadsheet has blank cells and you're getting import errors, check [thi
 
 To bootstrap data from the first sheet of an Excel file to an existing entity, follow these steps:
 
-1. In Service Studio, go to the Data tab, right-click on the entity and in the Advanced menu, choose 'Create Action to Bootstrap data from an Excel...'. 
+1. In Service Studio, go to the Data tab, right-click on the entity and in the Advanced menu, choose 'Create Action to Bootstrap data from an Excel...'.
 
 1. Select the Excel file, check the mappings to see if they're correct and click on **Proceed**.
     Service Studio creates:

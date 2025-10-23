@@ -18,7 +18,7 @@ coverage-type:
   - understand
 ---
 
-# Creating a case management app with subcases 
+# Creating a case management app with subcases
 
 <div class="warning" markdown="1">
 

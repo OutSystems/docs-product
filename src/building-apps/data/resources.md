@@ -31,13 +31,11 @@ Any Resource you add to your module is saved in the module's OML file. When you 
 * **Deploy to Target Directory**: The resource is deployed to the sub-directory set in the Target Directory property, which is created under the deploy directory of the module.  
     **Note:** Deploying to Target Directory is not applicable if you are using Library Modules.
 
-
 ## Security considerations
 
 * Some resource files deployed to the Target Directory may be executed by IIS. This depends on how IIS is configured.
 
 * It's your responsibility to ensure that the included resource comes from a trustworthy source.
-
 
 <div class="info" markdown="1">
 
@@ -55,7 +53,6 @@ In the table below there are some example of how you can use the Resources path 
 |'Conditions.pdf'   |'Documents'       |'Documents\Conditions.pdf'|
 |'Statement.pdf'    |'' (application root directory)|'Statement.pdf'|
 
-
 ## Use Resources to Display a PDF Document
 
 Imagine you want to display a 'Conditions.pdf'  document after clicking on a 'See Conditions' link in your web screen. Proceed as follows:
@@ -66,7 +63,6 @@ Imagine you want to display a 'Conditions.pdf'  document after clicking on a 'Se
 1. Set the External Site `URL` property with the Resource path,  'Documents\Conditions.pdf'.
 1. Set the 'Conditions' External Site as destination of the 'See Conditions' link.
 1. Publish the module.
-
 
 ## Use Resources to Play a Video
 
@@ -91,7 +87,6 @@ Imagine you want to play a 'Tutorial1.wmv' video in your web screen. Proceed as 
 Depending on the file type, you may have to configure the application server (IIS or Apache) to serve static files with a specific MIME type. Learn [here](https://en.wikipedia.org/wiki/Media_type) more about MIME types for situations like the one above where the resource file is embedded with its MIME type.
 
 </div>
-
 
 ## Use Resources to Allow Downloading a File
 

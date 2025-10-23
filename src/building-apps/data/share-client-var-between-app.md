@@ -40,10 +40,10 @@ Follow these steps to create a Client Variable and initialize its value when the
 The following steps show how to share the Client Variable between apps by reusing the block created in the previous section.
 
 1. Create another sample **Reactive Web App**, name it **ReactiveAppB**, and add a **Web Module** to it. Again, add a Screen to the app.
-2. Open **Manage Dependencies**, search for **ReactiveAppA** in Producers and select **BlockWithClientVariable**. Click **Apply** to add references and close the dialog.
-3. Drag the **BlockWithClientVariable** to the Screen.
-4. Publish the app and open it in a browser.
+1. Open **Manage Dependencies**, search for **ReactiveAppA** in Producers and select **BlockWithClientVariable**. Click **Apply** to add references and close the dialog.
+1. Drag the **BlockWithClientVariable** to the Screen.
+1. Publish the app and open it in a browser.
 
-## Sharing values in Traditional Web Apps 
+## Sharing values in Traditional Web Apps
 
 In Traditional Web Apps, you can use Session Variables to keep configurations and app context data.

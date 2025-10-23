@@ -49,7 +49,7 @@ The Library module type was designed with the following principles in mind:
 For example, you can use Libraries to build the following:
 
 * **UI elements and style guides**: Used to enforce reusability and standardization throughout a factory. For example, use libraries to implement components like [TinyMCE](https://www.outsystems.com/forge/component-overview/1263/inputtotinymce) or [CKEditor](https://www.outsystems.com/forge/component-overview/97/ckeditor).
-    
+
 * **Reusable utilities**: Used to group functionalities while adhering to a sound architecture.  
 For example, use Libraries to implement:
 
@@ -82,14 +82,12 @@ Due to their stateless and database agnostic design, Libraries can only contain 
 | Timers | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon") |
 | Roles | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon")|
 
-
-
 ## Restrictions
 
 Considering the architectural philosophy behind Libraries, some concepts must be approached differently. Take the following into account when creating a Library:
 
 * Libraries can only reference elements from other Libraries or from Extensions. However, you can still reference System actions.
-      
+
 * Static Entities can be created and referenced in Libraries but can't be used in queries, as dropdown sources, or as foreign keys for entities. However, you cannot reference Static Entities from (System) in Libraries.
 * Though you can reference both public Server Actions and public Structures made available by Libraries in a Traditional Web App, you cannot reference the following elements from a Library in a Traditional Web App:
     * Blocks

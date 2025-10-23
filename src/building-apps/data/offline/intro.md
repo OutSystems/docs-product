@@ -44,7 +44,6 @@ Modeling the local storage can be accelerated by copying just the necessary serv
 
 If you are considering storing sensitive data in local storage, you should use the best practices to [secure the data of your mobile apps](<../../data/secure-the-data-of-your-mobile-apps.md>).
 
-
 ## Implementing Offline Data Sync
 
 The following are the recommended steps for implementing your offline data sync mechanism.

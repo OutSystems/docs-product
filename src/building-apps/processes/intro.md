@@ -26,13 +26,11 @@ To implement your process flow, use the Process Flow Editor which has a set of p
 
 Integrate your processes in your application through Entity Actions that issue events to your processes or use [Process Extended Actions](actions-extended/intro.md) and Process System Actions in your application's action flows.
 
-
 ## Entity Actions Events
 
 In your application, if you set an Entity Action to issue process events each time it creates or updates an entity record, an event is issued to all executing instances of processes and activities. So, at design time, you should set which processes or activities are to handle and react to which entity events.
 
 Example: in an application that manages invoices, this allows you to automatically launch an invoice handling process for each new invoice that is created in your application, or to put the process execution on hold before the invoice payment task, and wait for the invoice to be updated as "cleared for payment" by the chief officer.
-
 
 ## Process Extended Actions and System Actions
 
@@ -54,7 +52,6 @@ Use Sample Reactive Taskbox component from Forge to implement the Taskbox in Rea
 
 ![Screenshot of a browser showing an opened process task with details in a Reactive Web App](images/browser-process-task-opened.png "Browser Process Task Opened")
 
-
 #### In Traditional Web Apps
 
 In Traditional Web Apps, the UI of the Taskbox is available by default.
@@ -68,7 +65,6 @@ When the end user clicks on a listed task, it is opened and the task instruction
 ### Using the Processes API
 
 To customize and extend the design of your Processes, you can use the [Processes API](<../../ref/apis/processes-api.md>) which allows extracting information from the platform data model.
-
 
 ## Light Process Execution
 

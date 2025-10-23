@@ -39,11 +39,11 @@ This document applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-F
 
 ## Configuring URL Rules
 
-In Service Center, the console of Platform Server, a set of configurations let you to define rules by which incoming URLs are handled and transformed in the platform. Find these configuration options under the **Administration** tab, in the **SEO URLs** option. 
+In Service Center, the console of Platform Server, a set of configurations let you to define rules by which incoming URLs are handled and transformed in the platform. Find these configuration options under the **Administration** tab, in the **SEO URLs** option.
 
 ![Screenshot of SEO configuration URL rules in OutSystems Service Center](images/seo-config-url-rules-sc.png "SEO Configuration URL Rules in Service Center")
 
-At runtime, when clicking on a link on a page of your application, OutSystems optimizes the destination URL, and changes it to the best path that takes the most of your SEO-friendly URLs configuration. 
+At runtime, when clicking on a link on a page of your application, OutSystems optimizes the destination URL, and changes it to the best path that takes the most of your SEO-friendly URLs configuration.
 
 ### Page Rules
 
@@ -92,6 +92,7 @@ Shows the following URL:
 ```
 http://www.example.com/InsterstateBuses/To-Faro
 ```
+
 ### Modules aliases
 
 <div class="info" markdown="1">
@@ -100,7 +101,7 @@ This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Fr
 
 </div>
 
-A module Alias is an alternative module name to be used in URLs: normally a simpler, friendlier, and keyword relevant name. 
+A module Alias is an alternative module name to be used in URLs: normally a simpler, friendlier, and keyword relevant name.
 
 To check or add module aliases, select the **Module Alias List**.
 
@@ -142,7 +143,7 @@ To transform incoming URLs and force client-side redirects select the **Redirect
 
 ![Screenshot of SEO redirect rules in OutSystems Service Center](images/seo-redirect-rules-sc.png "SEO Redirect Rules in Service Center")
 
-All incoming URLs are compared with your rules, one by one, following the order defined in the 'Redirect Rules' screen. The first rule matching its **Base URL** value with the beginning of the URL path (excluding the protocol prefix) is the one applied: the matching part in the URL path is replaced by the rule’s **Replace With** value, remaining the rest of the URL path unchanged. The browser is then redirected to the new URL. 
+All incoming URLs are compared with your rules, one by one, following the order defined in the 'Redirect Rules' screen. The first rule matching its **Base URL** value with the beginning of the URL path (excluding the protocol prefix) is the one applied: the matching part in the URL path is replaced by the rule’s **Replace With** value, remaining the rest of the URL path unchanged. The browser is then redirected to the new URL.
 
 ![Example of URL redirection rule replacement in OutSystems Service Center](images/seo-redirect-rules-replace-sc.png "SEO Redirect Rules Replacement Example")
 
@@ -218,7 +219,7 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
     1. Execute the IISReset command.
 
-    1. After the reset is complete, try accessing the URL again to be sure everything is working. 
+    1. After the reset is complete, try accessing the URL again to be sure everything is working.
 
 1. Finally, check that the ISAPI Filter is working properly: open Windows Event Viewer, in the Application logs look for entries with ‘OutSystems ISAPI Filter’ as Source, and check that no errors occurred;
 
@@ -230,7 +231,7 @@ Turn on detailed logging of your SEO Friendly URLs to keep track of detailed inf
 
 Depending on your ISAPI Filters configuration and the number of accesses to transformed URLs, logging may involve writing large amounts of data into the log file, and it may lead to degradation of your Platform Server’s performance. As such, before turning on the logging, try to evaluate the impact on your Platform Server’s performance.
 
-To switch detailed logging on and off you must edit a file in all Front-end servers you want to change that setting: the file name is **‘OsISAPIConf.cache‘** and it is located in the same directory as the log file (described above). 
+To switch detailed logging on and off you must edit a file in all Front-end servers you want to change that setting: the file name is **‘OsISAPIConf.cache‘** and it is located in the same directory as the log file (described above).
 
 #### Turning On the Detailed Logging
 

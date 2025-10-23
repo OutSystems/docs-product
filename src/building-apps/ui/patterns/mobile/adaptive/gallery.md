@@ -16,7 +16,7 @@ coverage-type:
   - apply
 ---
 
-# Gallery 
+# Gallery
 
 <div class="info" markdown="1">
 
@@ -47,9 +47,9 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
@@ -85,7 +85,7 @@ After following these steps and publishing the module, you can test the pattern 
 ![Gallery UI pattern displaying four items per row on a mobile device](images/gallerymob-14-ss.png "Gallery with 4 Items Per Row")
 
 **3 items per row**
-    
+
 ![Gallery UI pattern displaying three items per row on a mobile device](images/gallerymob-15-ss.png "Gallery with 3 Items Per Row")
 
 **2 items per row**
@@ -98,14 +98,13 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-|Property|Description|     
+|Property|Description|
 |---|---|
 |RowItemsDesktop (Integer): Optional|Defines the number of items that are shown simultaneously per row on a desktop. The number must be greater than 0. The default value is 4.|
 |RowItemsTablet (Integer): Optional|Defines the number of items that are shown simultaneously per row on a tablet. The number must be greater than 0. The default value is 3.|
 |RowItemsPhone (Integer): Optional|Defines the number of items that are shown simultaneously per row on a phone. The number must be greater than 0. The default value is 1.|
 |ItemsGap(Space Identifier): Optional |Defines the space between the Gallery items. <br/><br/> The predefined sizes are the following:<ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base (default value)</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul>|
 |ExtendedClass (Text): Optional|Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/> Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
-
 
 ## Accessibility – WCAG 2.2 AA compliance
 

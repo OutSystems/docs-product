@@ -20,11 +20,11 @@ coverage-type:
 
 # Right-to-Left
 
-Most applications are designed and created with all content displaying from left to right (LTR). However, to accommodate languages from the Middle East, for example, Arabic, the written content and layout must be swapped so that it displays from right to left (RTL). All patterns on the OutSystems UI framework support RTL by default. 
+Most applications are designed and created with all content displaying from left to right (LTR). However, to accommodate languages from the Middle East, for example, Arabic, the written content and layout must be swapped so that it displays from right to left (RTL). All patterns on the OutSystems UI framework support RTL by default.
 
 ## Using the Multilingual feature
 
-To translate your application to, for example, Arabic, you just need to set the locale **"ar"** and the RTL is applied by default. 
+To translate your application to, for example, Arabic, you just need to set the locale **"ar"** and the RTL is applied by default.
 
 When you use the Multilingual feature, the RTL is automatically applied based on the language applied to the HTML and the platform adds the CSS class **"is-rtl"** to the body, changing the direction of this content.
 
@@ -48,7 +48,7 @@ The multilingual feature is available from [Platform Server version 11.11.1 onwa
 
 <div class="warning" markdown="1">
 
-For environments that have a Platform server lower than **version 11.11.1**, you can apply the RTL manually by adding a class directly to the body element. 
+For environments that have a Platform server lower than **version 11.11.1**, you can apply the RTL manually by adding a class directly to the body element.
 
 </div>
 
@@ -66,7 +66,7 @@ Here's the final result:
 
 ## Changing the application’s content based on RTL
 
-OutSystems UI provides an **IsRTL** action that checks if RTL is applied or not (boolean value). This action also works like a function. You can find it in the **Utilities** folder. 
+OutSystems UI provides an **IsRTL** action that checks if RTL is applied or not (boolean value). This action also works like a function. You can find it in the **Utilities** folder.
 
 |![Image of the IsRTL action located in the Utilities folder of OutSystems UI](images/rtl-isrtl-ss.png "IsRTL Action in Utilities")
 
@@ -95,16 +95,19 @@ The following are some useful utilities that you can use during your app develop
 ### Selectors and code snippets
 
 Selector to get the **is-rtl** class:
+
 ```
 document.querySelector('.is-rtl')
 ```
 
 Selector to check if the **is-rtl** class is applied:
+
 ```
 document.body.classList.contains('is-rtl')
 ```
 
 Selector to get the HTML lang:
+
 ```
 document.documentElement.lang
 ```

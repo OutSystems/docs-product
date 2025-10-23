@@ -62,7 +62,7 @@ There is a balance that needs to be taken into account between maintainability a
 
 Keep the Max Records property of Aggregates consistent with the amount of data that you're displaying.
 
-### Solution 
+### Solution
 
 When there are limitations to the amount of records that are fetched from a query, you should fill in the Max Records property of an Aggregate accordingly to optimize the query execution time. This is especially useful in table records or when an Aggregate is used to get a single record.
 

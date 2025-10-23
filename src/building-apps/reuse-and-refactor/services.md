@@ -47,7 +47,7 @@ Based on the nature of a core service, it is not possible to have UI related ele
 * Local Storage Entities
 * Session Variables
 
-You should use Reactive Web, Mobile, or Traditional Web modules to implement UI related elements. 
+You should use Reactive Web, Mobile, or Traditional Web modules to implement UI related elements.
 
 ## Implement the Logic of Your Service
 
@@ -69,7 +69,7 @@ Each time the implementation of an exposed Server Action changes, the consumer m
 
 ### Exposing Service Actions
 
-In OutSystems, a **Service Action** is a REST based remote call to another process, but its usage is very similar to public Server Actions. 
+In OutSystems, a **Service Action** is a REST based remote call to another process, but its usage is very similar to public Server Actions.
 
 ![Conceptual illustration of service actions in OutSystems](images/services-2.png "Service Actions Conceptual Illustration")
 
@@ -83,10 +83,9 @@ When making a remote call to a Service Action, OutSystems passes the following i
 
 * **UserId** and **TenantId**, which enables the usage of built-in functions such as GetUserId() and CheckRole() within the implementation of the Service Action.
 
-* **Locale**, which enables the usage the built-in function GetCurrentLocale() within the implementation of the Service Action. 
+* **Locale**, which enables the usage the built-in function GetCurrentLocale() within the implementation of the Service Action.
 
 * **Request Key**, which enables the correlation of all logs in Service Center from the same top level request.
-
 
 Service Actions mix the advantages of loosely-coupled REST API methods with the Rapid Application Delivery (RAD) capabilities of tightly-coupled Server Actions:
 
@@ -114,16 +113,16 @@ Since Service Actions don’t share the same process and transaction with the co
 
 If the operation executed in a Service Action fails, the consumer logic must handle the failure and evaluate the undo of that operation. Any rollback in a consumer will not rollback the logic executed in the Service Action. Also, a rollback within a Service Action does not rollback the logic executed in other Service Actions previously called by the consumer.
 
-Using Service Actions implies executing logic through remote calls, which can have significant performance penalties when compared to running the same logic in a single process. Therefore, your logic must take into account the amount of data passed through the remote requests. 
-Also, if there is a communication failure, the consumer logic must be prepared to handle the communication exceptions. 
+Using Service Actions implies executing logic through remote calls, which can have significant performance penalties when compared to running the same logic in a single process. Therefore, your logic must take into account the amount of data passed through the remote requests.
+Also, if there is a communication failure, the consumer logic must be prepared to handle the communication exceptions.
 
-The remote address used when calling Service Actions is determined by the [Deployment Zone Address](<../../deploying-apps/zones/reference.md>) of the producer. If the producer is in a different deployment zone from the consumer, then the consumer must be able to reach the producer. For more information check [Communication between applications in different Deployment Zones](<../../deploying-apps/zones/intro.md#communication-between-applications-in-different-deployment-zones>). 
+The remote address used when calling Service Actions is determined by the [Deployment Zone Address](<../../deploying-apps/zones/reference.md>) of the producer. If the producer is in a different deployment zone from the consumer, then the consumer must be able to reach the producer. For more information check [Communication between applications in different Deployment Zones](<../../deploying-apps/zones/intro.md#communication-between-applications-in-different-deployment-zones>).
 
 ### Choose Between Server Actions and Service Actions
 
 Both Server Actions and Service Actions have their own characteristics and should be used depending on the use case.
 
-The table below compares the most relevant differences between Server Actions and Service Actions: 
+The table below compares the most relevant differences between Server Actions and Service Actions:
 
 |   | Server Actions | Service Actions |
 | - | -------------- | --------------- |
@@ -132,8 +131,7 @@ The table below compares the most relevant differences between Server Actions an
 | **DB transactions** | All transactions in a single process. |Multiple processes require multiple transactions. |
 | **Development effort** | Simpler logic and faster development. | Requires additional logic to handle transactionality and networking. |
 
-
-During the lifecycle of your application, you will typically start with a small tightly-coupled application. When your application begins to evolve to a large portfolio, you should decide when is the right time to start decoupling your modules, using Service Actions to expose functionality instead of Server Actions. 
+During the lifecycle of your application, you will typically start with a small tightly-coupled application. When your application begins to evolve to a large portfolio, you should decide when is the right time to start decoupling your modules, using Service Actions to expose functionality instead of Server Actions.
 
 OutSystems provides you with a set of features that help you [converting existing modules and logic to services](convert-to-service.md).
 
@@ -153,7 +151,7 @@ Then your system evolves and you have more applications using your service, for 
 
 ![Diagram depicting server actions in applications with similar release cycles](images/services-5-diag.png "Server Actions in Applications with Similar Release Cycles")
 
-Keeping the modules tightly-coupled, using **Server Actions** to expose Customer functionality, will now require that Order Management and Shipping applications are both deployed together with Customer service whenever this module changes, increasing the deployment effort. On the other hand, the logic of Order Management and Shipping applications is still simple to develop and maintain. 
+Keeping the modules tightly-coupled, using **Server Actions** to expose Customer functionality, will now require that Order Management and Shipping applications are both deployed together with Customer service whenever this module changes, increasing the deployment effort. On the other hand, the logic of Order Management and Shipping applications is still simple to develop and maintain.
 
 Since both applications belong to Sales department and have **similar release cycles**, the deployment effort is still acceptable. This way, you can still take the advantage of a faster development.
 
@@ -167,6 +165,6 @@ At this point you should consider exposing the functionality of your service in 
 
 ![Diagram illustrating loosely-coupled service actions in large applications with independent release cycles](images/services-7-diag.png "Loosely-Coupled Service Actions in Large Applications Diagram")
 
-In this case, using Service Actions to expose functionality will increase business value by enabling several consumers to have **independent release cycles**. On the other hand, you will have additional development effort, since the developer must implement additional logic to handle multiple processes and transactions. 
+In this case, using Service Actions to expose functionality will increase business value by enabling several consumers to have **independent release cycles**. On the other hand, you will have additional development effort, since the developer must implement additional logic to handle multiple processes and transactions.
 
 To decide for using Service Actions to expose functionality, you must evaluate if the additional development effort pays off the increased business value of having independent release cycles.

@@ -25,7 +25,7 @@ In OutSystems, a database table is an Entity, and the table columns are Entity A
 
 To create an Entity you need to:
 
-1. Double click in the Entity Diagram created by default in the Data tab. 
+1. Double click in the Entity Diagram created by default in the Data tab.
 1. Right-click anywhere on the canvas and select **Add Entity to Database**. By default, it will be named "Entity1" and it can be renamed.
 1. Expand the **Entities** tree and note the entity has the Id attribute created as Entity Identifier (primary key).
 1. Right-click the Entity and the other attributes by selecting **Add Entity Attribute**.
@@ -58,7 +58,7 @@ We have an application called Go Out, that allows you to read and write reviews 
     1. Create the `Name` attribute. By default the data type is set to `Text` and the length is `50`, change it to `100`;
     1. Make the attribute mandatory by setting the Is Mandatory property to `Yes`.
     1. Create the `Address` attribute as a mandatory Text attribute with 200 characters of length.
-    1. Create the `PhoneNumber` attribute. The data type of the attribute changes to `Phone Number`. Leave this attribute optional. 
+    1. Create the `PhoneNumber` attribute. The data type of the attribute changes to `Phone Number`. Leave this attribute optional.
     1. Create the `Latitude` and `Longitude` attributes as optional Decimal attributes. Use the default length (37) and decimals (8) to define the precision of the numbers stored in the database.
 
 1. Publish your application.

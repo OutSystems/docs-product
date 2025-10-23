@@ -19,7 +19,7 @@ coverage-type:
 
 # How to set up Workflow Builder
 
-The goal of this document is to guide [IT users](../../../manage-platform-app-lifecycle/manage-it-teams/intro.md) through the [Workflow Builder](http://workflowbuilder.outsystems.com/) installation process. 
+The goal of this document is to guide [IT users](../../../manage-platform-app-lifecycle/manage-it-teams/intro.md) through the [Workflow Builder](http://workflowbuilder.outsystems.com/) installation process.
 
 ## Prerequisites { #prerequisites }
 
@@ -68,7 +68,7 @@ To log in to Workflow Builder, perform the following steps.
 
     Use a **non-production environment** with Workflow Builder, preferably your **development environment**.  
     When you publish an app in Workflow Builder, it publishes the app in the environment you entered in the login.
-    
+
     </div>
 
 1. Enter your username and password.
@@ -138,7 +138,6 @@ At this stage, you need to set up the governance model according to the instruct
 #### Governance model setup
 
 You can invite business developers to leverage the Workflow Builder to build workflow apps for their everyday needs. Setting up the governance model defines what users can do, and what shared services or components they can use. Check [How to set up the users governance model](how-setup-governance.md) for more information.
- 
 
 #### End user hierarchy setup
 
@@ -147,4 +146,3 @@ When building the workflow app, Workflow Builder users can assign tasks in the w
 ![Workflow Builder setup completion screen with 'Go to Workflow Builder' button](images/wfb-setup-register-complete.png "Workflow Builder Registration Complete")
 
 Click **Go to Workflow Builder button** to go to the Workflow Builder home screen.
-

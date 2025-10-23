@@ -26,7 +26,7 @@ Once you identify your concepts, you must translate them into application module
 
 1. Not having to handle too many modules and;
 
-2. Having a manageable complexity and life cycle independence for each module. 
+1. Having a manageable complexity and life cycle independence for each module.
 
 ## Finding the right concept granularity
 

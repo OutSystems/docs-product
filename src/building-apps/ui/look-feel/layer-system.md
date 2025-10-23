@@ -28,7 +28,6 @@ Applies to Mobile Apps and Reactive Web Apps only.
 
 On version 2.16.0 of OutSystems UI, we released a new way to manage z-index values across all the UI Patterns, which offers better maintainability and easier customization.
 
-
 ## The Layer System
 
 There are four main categories of variables that compose the new Layer System:
@@ -37,9 +36,9 @@ There are four main categories of variables that compose the new Layer System:
 
 * **layer-scale:** 5
 * **layer-above:** 5
-  * This defines both the scale being used, but also helps in making the CSS calc() more human-readable (as you can see on the code snippet below and how the global variables are set). A scale of 5 is used, as a compromise between keeping the overall values low, while giving space to exceptions, if needed, between levels, by using the local-layers.
+    * This defines both the scale being used, but also helps in making the CSS calc() more human-readable (as you can see on the code snippet below and how the global variables are set). A scale of 5 is used, as a compromise between keeping the overall values low, while giving space to exceptions, if needed, between levels, by using the local-layers.
 * **layer-below:** -5
-  * Negative modifier, opposed to layer-above.
+    * Negative modifier, opposed to layer-above.
 
 ### Global Layers
 
@@ -52,7 +51,6 @@ Main global layers define the patterns hierarchy in the main Stacking Context. T
 * **layer-global-instant-interaction:** 20
 
 ![Diagram illustrating the OutSystems UI Layer System with global and local layers](images/layer-system.png "OutSystems UI Layer System Diagram")
- 
 
 ### Auxiliary
 
@@ -60,7 +58,6 @@ Auxiliary values are meant to be used in very specific situations.
 
 * **layer-global-negative:** -1
 * **layer-global-auto:** auto
-
 
 ### Local Layers
 
@@ -72,15 +69,13 @@ Local values are supposed to be used on child elements of Global Layers. As the 
 * **layer-local-tier-4:** 4;
 * **layer-local-tier-5:** 5;
 
-
 ## Using the Layer System
 
 All these are mapped to CSS Variables on the **:root** of the **OutSystems UI.css**. If you want to take a closer look at the code, check it on [OutSystems UI public repository](https://github.com/OutSystems/outsystems-ui/blob/dev/src/scss/01-foundations/_root.scss).
 
-
 If you want to incorporate your element/Pattern into the Layer System, here’re some suggestions:
 
-The usage of the Global Layers should always be prioritized first. By using the description above and the visual aid, check the best layer where it would fit. 
+The usage of the Global Layers should always be prioritized first. By using the description above and the visual aid, check the best layer where it would fit.
 
 ```
 .my-custom-dropdown {
@@ -106,12 +101,10 @@ The combined usage of Global Layers and Local Tiers, should be enough for all th
 
 All the Global Layer will now adapt to this new value, and be separated on intervals of 10.
 
-
-
 ## Impact and Mitigation
 
 <div class="info" markdown="1">
-    
+
 This section only applies, if you have custom CSS or custom patterns, that use z-index. If not, the new layer system won't impact your applications.
 
 </div>
@@ -121,4 +114,3 @@ This new system meant changing the values of all z-index on the framework, which
 In this situation, you might want to review those values, considering where they might fit better in the new Layers.
 
 If you prefer to keep using the old values, you can add the following CSS on your theme, or keep it as a separate Theme, on top of the OutSystems UI. This theme simply overrides all the new values with the old ones: **[legacy-z-index.min.css](resources/legacy-z-index.min.css).**
-

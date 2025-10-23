@@ -118,4 +118,3 @@ You can permanently discard changes in one of the following ways:
 * To discard all your changes, select **Discard** and then confirm that you really want to permanently discard all the changes.
 
     ![Confirmation dialog to discard all changes in Service Studio](images/confirm-discard-changes-ss.png "Confirm Discard Changes")
-

@@ -25,11 +25,11 @@ A section with links to additional information.
 
 ## Introductory resources
 
-* [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) 
+* [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 * [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
 * [How to Meet WCAG (Quickref Reference)](https://www.w3.org/WAI/WCAG21/quickref/)
-* [Getting started with ARIA](https://a11yproject.com/posts/getting-started-aria/) 
- 
+* [Getting started with ARIA](https://a11yproject.com/posts/getting-started-aria/)
+
 ## Evaluation tools
 
 To evaluate the accessibility of your content, you can use the following tools:
@@ -49,7 +49,6 @@ To test if your application is completely readable, you can use the following te
 * [Apple VoiceOver](https://www.apple.com/accessibility/mac/vision/) for macOS
 * [ORCA](https://help.gnome.org/users/orca/stable/), [BRLTTY](http://mielke.cc/brltty/), and [Emacspeak](http://emacspeak.sourceforge.net/) for Linux
 
- 
 ## Color and contrast checkers
 
 WCAG has guidelines for [contrast accessibility](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) to help UI / UX designers and developers to achieve different [levels of accessibility](http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-levels-head). You can use the following checkers to validate the implementation of those guidelines in your applications.

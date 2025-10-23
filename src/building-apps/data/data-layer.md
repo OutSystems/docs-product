@@ -23,7 +23,6 @@ topic:
 
 You need to be a [Mobile Web Developer](https://learn.outsystems.com/training/journeys/mobile-developer-679).
 
-
 ## Storing Data
 
 This article introduces the Best Practices for storing data in the device’s local storage.
@@ -92,4 +91,3 @@ A common scenario to avoid consists of replicating the server data model on the 
 ## Additional Information
 
 To learn more about storing data in the device’s local storage read the [Offline data usage](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Offline) documentation.
-

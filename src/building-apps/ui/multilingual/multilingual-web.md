@@ -53,7 +53,7 @@ Text Identifiers in Static Entities cannot be translated.
 
 </div>
 
-From the translation process view, these elements will be considered **translatable resources**. You can select how each translatable resource in your Module is handled - whether it should effectively be translated (text or images that should be different in different languages) or not (for instance, a brand name that is the same across different languages) - using the [Translations Behavior Editor](./translations-editor.md). 
+From the translation process view, these elements will be considered **translatable resources**. You can select how each translatable resource in your Module is handled - whether it should effectively be translated (text or images that should be different in different languages) or not (for instance, a brand name that is the same across different languages) - using the [Translations Behavior Editor](./translations-editor.md).
 
 <div class="info" markdown="1">
 
@@ -94,11 +94,11 @@ To export your translatable resources follow these steps:
         OutSystems Platform exports all translatable resources to a single Excel file listed in lines and columns as follows:
 
         **Key**: the key of the translatable resource. It's unique within the module and it doesn't change. New translatable resources get a different key.
-        
+
         **Location**: the location of the translatable resource in the module.
-        
+
         **Text to be translated**: the text to be translated.
-        
+
         **Locale(s)**: columns for each language locale in your module. Set the translated text here, however, if you want to keep using the original text just leave the translation text empty.
 
     * **.resX (.NET resource format)**
@@ -106,9 +106,9 @@ To export your translatable resources follow these steps:
         OutSystems exports all translatable resources to .resX files, one file **for each language locale** in your Module and one more file for the Module default language. The translatable resources information is organized in a XML way consisting basically in pairs of `<name, value>`, although a comment is also added:
 
         **Name**: The name (key) of the translatable resource. It's unique within the module and it doesn't change. New translatable resources get a different name.
-        
+
         **Value**: This is the field where you should put the translated text replacing the existing one.
-        
+
         **Comment**: The location of the translatable resource in the Module.
 
         Note: Depending on the .NET Framework you are using, the translatable resource files can have more attributes than these; these extra attributes are ignored by Service Studio.
@@ -121,8 +121,8 @@ To export your translatable resources follow these steps:
 
     </div>
 
-1. Select the folder where you want to save the files. 
-    
+1. Select the folder where you want to save the files.
+
     Notice that no file name is asked and this is because Service Studio uses fixed names for its language translatable resource files, as follows:
 
     Excel Files
@@ -139,9 +139,9 @@ Name your translated images using the convention: `<image name> + '.' + <languag
 
 ### Import the Translations of the Resources
 
-To import the translations of your translatable resources back to the Module follow these steps: 
+To import the translations of your translatable resources back to the Module follow these steps:
 
-1. Open the Module menu, point to **Import** and select **Language Resources**. 
+1. Open the Module menu, point to **Import** and select **Language Resources**.
 
     <div class="info" markdown="1">
 

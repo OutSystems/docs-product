@@ -32,7 +32,6 @@ In OutSystems, a **Session** is created in the first request the end user makes 
 
 The session is created on the server and can be shared by several modules if you are using the Single Sign-On feature that enables an unified view of users and sessions by a set of modules.
 
-
 ## OutSystems session Lifecycle
 
 Sessions are automatically managed by OutSystems and depend on the channel used for the user interaction, as described below.
@@ -46,11 +45,9 @@ Web Services Session
 Timer Session
 :   The session is created when the Timer is invoked and lasts only for this request, which means that there is no persistency of the session between Timer executions.
 
-
 ## Session start
 
 When the end user makes the first request to the server, a new session is created. When this happens the **OnSessionStart** event is triggered, and the action that handles it's executed.
-
 
 ## Session timeout { #session-timeout }
 
@@ -68,13 +65,11 @@ For OutSystems Cloud use [Factory Configuration](https://www.outsystems.com/foru
 
 When using actions from a referenced module, a session is created with all the producer module session variables. This ensures that the referenced actions can maintain the session variables state between invocations.
 
-
 ## Session variables
 
 Session variables hold data that's persisted during the session and can be used to save information during the end user interaction. Each application has several session variables automatically created, but you can define new ones.
 
 The session variables are initiated automatically by Service Studio when the Platform Server session is created. While the session exists, you can use these variables in your business logic. When the session ends, the session variables are set to their default value.
-
 
 ## Session variables in asynchronous logic
 
@@ -89,7 +84,6 @@ Username
 
 TerminalType
 :   Indicates the type of terminal that's being used to make the request. The possible values are: Web or SMS. These values are instantiated when the session starts.
-
 
 ## User-defined session variables
 

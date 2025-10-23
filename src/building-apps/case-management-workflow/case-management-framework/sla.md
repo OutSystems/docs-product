@@ -30,7 +30,7 @@ You can set the start of the SLA time at the creation of a case instance or at t
 
 To enforce SLA time limits at the case level, you must also ensure an event is triggered when that SLA time limit runs out by setting the **GenerateEvent** input parameter as **True** in the **Case_AssociateProcess** action.
 
-If the **OverrideMinutesForCompletion** parameter is set it overrides any previously configured SLA for that process and this value can be used to calculate the SLA. 
+If the **OverrideMinutesForCompletion** parameter is set it overrides any previously configured SLA for that process and this value can be used to calculate the SLA.
 
 An option to use a [calendar](calendar.md) is also available with the **CalendarId** input parameter. Setting this input ensures the SLA calculation takes into account the working days, working hours, and holidays for that calendar.
 

@@ -31,7 +31,6 @@ In this overview we use the read-only sync mechanism as an example, but the proc
 
 For the local entities that were created by **Add Entity from Database** command you can use accelerators. Some parts of the logic can be generated automatically by right-clicking such local entities and selecting one of the **Create Action to Sync Data** commands.
 
-
 ## 1. Create both client and server logic
 
 The business logic for updating records for the individual entities is implemented in the client OfflineDataSync folder. The complexity of the client and server logic for data sync varies depending on the business needs and implementation. These are the common implementation parts:
@@ -52,7 +51,6 @@ In the example there's only one action (**SyncProducts**) and we placed it, as r
 
 ![Flowchart demonstrating the placement of the local entity action within the OfflineDataSync action](images/step-2-offline.png "Local Entity Action Placement")
 
-
 ## 3. Configure manual start of the sync
 
 The manual sync should be started by **TriggerOfflineDataSync** from **Logic** > **Client Actions** > **OfflineDataSync** folder. Place the TriggerOfflineDataSync into the flow at the point where the sync should start. Don't start the sync by placing OfflineDataSync directly in a flow, as this doesn't run the sync in the background and may cause the UI to freeze.
@@ -69,7 +67,6 @@ In our example we decided not to start the sync automatically regardless of the 
 
 ![Interface showing the configuration settings for automatic start of data synchronization](images/step-4-offline.png "Automatic Sync Configuration")
 
-
 ## Sync Logic Flow
 
 This is the flow of the sync execution stages. Note that they do not map to the steps in which we created the actual sync logic.
@@ -77,13 +74,13 @@ This is the flow of the sync execution stages. Note that they do not map to the 
 ![Illustration of the stages involved in the execution flow of data synchronization logic](images/sync-stages.png "Sync Logic Execution Flow")
 
 Stage 1
-:   OfflineDataSync runs, in the background, the actions for updating the local storage. This action can be started manually by the TriggerOfflineDataSync action or automatically by an event configured in the OfflineDataSyncConfiguration action. 
+:   OfflineDataSync runs, in the background, the actions for updating the local storage. This action can be started manually by the TriggerOfflineDataSync action or automatically by an event configured in the OfflineDataSyncConfiguration action.
 
 Stage 2
 :   The actions initiated by OfflineDataSync collect the records changed locally and send them to the server.
 
 Stage 3
-:   Server processes the requests and returns the updated data. 
+:   Server processes the requests and returns the updated data.
 
 Stage 4
 :   The actions in OfflineDataSync update the local storage with the data received from the server.

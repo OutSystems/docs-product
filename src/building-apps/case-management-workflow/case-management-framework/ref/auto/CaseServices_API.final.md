@@ -38,229 +38,229 @@ You can also use this API to check information for a case, for example:
 
 ## Summary
 
-Action | Description
----|---
-[Activity_AddComments](<#Activity_AddComments>) | Adds a comment to an existing acitivity
-[Activity_AssignToGroup](<#Activity_AssignToGroup>) | Assigns an Activity to an existing group.%%If access control is switched on, automatically grants write access to the group for the case the activity is associated with.%%It performs a COMMIT on the transaction.
-[Activity_AssignToGroupAndUser](<#Activity_AssignToGroupAndUser>) | Assigns an Activity to an existing group and user.%%If access control is switched on, automatically grants write access to the group and user for the case the activity is associated with.
-[Activity_AssignToUser](<#Activity_AssignToUser>) | Assigns an Activity to an existing user.%%If access control is switched on, automatically grants write access to the user for the case the activity is associated with.
-[Activity_CalculateAndSetDueDate](<#Activity_CalculateAndSetDueDate>) | Calculate and set the due DateTime for an Activity, based on the Activity configured SLA and Calendar (if set). Creates an event if SetEvent field is set to True, that can be captured and execute some logic.
-[Activity_CalculateExecutionTime](<#Activity_CalculateExecutionTime>) | Calculate and set the execution time for an Activity based on the Activity configured SLA
-[Activity_CheckIsBlocked](<#Activity_CheckIsBlocked>) | Check if an activity is blocked
-[Activity_CheckUserAccess](<#Activity_CheckUserAccess>) | Checks if the user is assigned to the activity, or has access to it under delegation.
-[Activity_SetDueDate](<#Activity_SetDueDate>) | Set the due date for an Activity
-[Activity_SetStartDate](<#Activity_SetStartDate>) | Schedules a start date for the Activity to be available.
-[Activity_ValidateUserAccess](<#Activity_ValidateUserAccess>) | Validate user authorization to access the activity (directly assigned to the activity, or under delegation). If the user is not authorized an exception is raised.
-[ActivityEvent_Set](<#ActivityEvent_Set>) | Creates an activity event
-[Calendar_CheckWorkingDay](<#Calendar_CheckWorkingDay>) | Checks if the date is a working day (for a specific calendar)
-[Calendar_GetAll](<#Calendar_GetAll>) | Gets the list of calendars
-[Calendar_GetById](<#Calendar_GetById>) | Gets the details for a specific calendar
-[Calendar_GetEndDate](<#Calendar_GetEndDate>) | Calculate the end date based on the working hours and holidays/non working days. Also perform the calculation based on the TimeZone associated to the Calendar.
-[Case_AddComments](<#Case_AddComments>) | Add comments to an existing case.
-[Case_AddTags](<#Case_AddTags>) | Enables to add an existing tag (or tags) to a particular case instance
-[Case_AssociateProcess](<#Case_AssociateProcess>) | Enables to associate an existing case instance with a proccess, based on an existing process identifier
-[Case_BlockActivity](<#Case_BlockActivity>) | Enables to block an existing activity associated to an existing case.
-[Case_CheckActiveActivity](<#Case_CheckActiveActivity>) | For a given case and activity definition returns the activity instance, if it exists and the user has permissions on it
-[Case_CheckActivityAccess](<#Case_CheckActivityAccess>) | Check if a user has access (directly assigned) to an activity (open or closed)
-[Case_CheckActivityIsActive](<#Case_CheckActivityIsActive>) | Checks if the given activity belongs to the current OutSystems BPT process that is active for this Case, and if the activity itself is also active.
-[Case_CheckProcessIsActive](<#Case_CheckProcessIsActive>) | Checks if the current associated bpt process  is active for this Case
-[Case_CloseActivity](<#Case_CloseActivity>) | Close an activity and validates that only the correct user can close it. Will try to close it in a synchronous way (bpt default behavior) so it performs a COMMIT in the current transition.
-[Case_CloseActivityAsync](<#Case_CloseActivityAsync>) | Close an activity and validates that only the correct user can close it (will try to close the activity in an asynchronous way). Enhanced activity close funtionality in opposing the default syncronous bpt close behavior).
-[Case_Complete](<#Case_Complete>) | Enables to close an existing case instance based on an existing process identifier
-[Case_Delete](<#Case_Delete>) | Deletes a case instance
-[Case_Discard](<#Case_Discard>) | Discard a case instance%%%%Note: All associated running processes/activities will be terminated.
-[Case_DiscardActivity](<#Case_DiscardActivity>) | Discards an activity (discarded status), stopping the execution of the current process flow. Calls the Activity_Discard action from the BPT API which commits the current transaction.
-[Case_GetIdByProcessId](<#Case_GetIdByProcessId>) | Gets the case identifier based on the process identifier
-[Case_GrantAccessToGroup](<#Case_GrantAccessToGroup>) | Grants a given group access to a given Case
-[Case_GrantAccessToUser](<#Case_GrantAccessToUser>) | Grants a given user access to a given Case
-[Case_Initialize](<#Case_Initialize>) | Enables to initialize a new case instance based on an existing case definition identifier
-[Case_IsMilestoneAchieved](<#Case_IsMilestoneAchieved>) | Checks whether a given Milestone has been achieved or not for a given Case
-[Case_OpenActivity](<#Case_OpenActivity>) | Opens an acitivity and validates that only the correct user can open it
-[Case_PerformActionActivity](<#Case_PerformActionActivity>) | Perform an action to an existing activity associated to a case, taking into account the action specifc validations.
-[Case_PickupActivity](<#Case_PickupActivity>) | Assigns the activity to the user, if it is not assigned. The user needs to belong to the group assigned to the activity (if the group activity is set), or have an active delegation.
-[Case_ReleaseActivity](<#Case_ReleaseActivity>) | Releases the activity assigned to a specific user. Can only be released by the user that has the activity assigned.
-[Case_RemoveTag](<#Case_RemoveTag>) | Removes a Tag from a Case
-[Case_RevokeAccessFromGroup](<#Case_RevokeAccessFromGroup>) | Revokes access to a given Case for a given group
-[Case_RevokeAccessFromUser](<#Case_RevokeAccessFromUser>) | Revokes access to a given Case for a given user
-[Case_SkipActivity](<#Case_SkipActivity>) | Skips the current activity assigned to a specific user. Can only be skipped by the user that has the activity assigned (or under a valid delegation).
-[Case_TakeoverActivity](<#Case_TakeoverActivity>) | Reassigns the case activity to the user. The user needs to belong to the group assigned to the activity (if the activity group is set)
-[Case_UnblockActivity](<#Case_UnblockActivity>) | Enables to unblock an existing blocked activity associated to an existing case
-[Case_UpdateGroupAccess](<#Case_UpdateGroupAccess>) | Updates Group access to a given Case
-[Case_UpdatePriority](<#Case_UpdatePriority>) | Updates the priority for an existing case
-[Case_UpdateStatus](<#Case_UpdateStatus>) | Updates the status for an existing case
-[Case_UpdateStatusByActivityId](<#Case_UpdateStatusByActivityId>) | Updates the Status for an existing case from an exisiting activity
-[Case_UpdateUserAccess](<#Case_UpdateUserAccess>) | Updates User access to a given Case
-[Case_ValidateAccess](<#Case_ValidateAccess>) | Validates if a User has access to a given Case (either by himself or under an active delegation)
-[CaseActivityAction_Get](<#CaseActivityAction_Get>) | Get the Action chosen by the user for a specified activity
-[CaseDefinition_GrantAccessToGroup](<#CaseDefinition_GrantAccessToGroup>) | Grants a given group access to all cases from a given Case Definition
-[CaseDefinition_GrantAccessToUser](<#CaseDefinition_GrantAccessToUser>) | Grants a given user access to all cases from a given Case Definition
-[CaseDefinition_RevokeAccessFromGroup](<#CaseDefinition_RevokeAccessFromGroup>) | Revokes access to cases from a given Case Definition (from a group)
-[CaseDefinition_RevokeAccessFromUser](<#CaseDefinition_RevokeAccessFromUser>) | Revokes access to cases fom a given CaseDefinition (from a user)
-[CaseDefinition_UpdateGroupAccess](<#CaseDefinition_UpdateGroupAccess>) | Updates Group access permissions to a given Case definition
-[CaseDefinition_UpdateUserAccess](<#CaseDefinition_UpdateUserAccess>) | Updates User access permissions to a given Case definition
-[Delegation_GetAll](<#Delegation_GetAll>) | Get all delegations which current user has access to.
-[Delegation_GetById](<#Delegation_GetById>) | Get a delegation by Identifier, if the user has access to it
-[Delegation_GetByUser](<#Delegation_GetByUser>) | Gets the active delegations for the specified user in which the Timestamp is between the Delegation's From and To Dates
-[Delegation_IsValid](<#Delegation_IsValid>) | Checks if there is an active delegation from user (optional group) for destination user
-[DEPRECATED_Case_AddAccessToGroup](<#DEPRECATED_Case_AddAccessToGroup>) | Give access control to a group associated to an exisitng case instance
-[DEPRECATED_Case_AddAccessToUser](<#DEPRECATED_Case_AddAccessToUser>) | Give access control to a user associated to an exisitng case instance
-[DEPRECATED_Case_CheckUserPermission](<#DEPRECATED_Case_CheckUserPermission>) | Checks if the currently logged in user has access to the specified case
-[DEPRECATED_Case_RemoveAccessFromGroup](<#DEPRECATED_Case_RemoveAccessFromGroup>) | Remove access control from a group to an existing case instance
-[DEPRECATED_Case_RemoveAccessFromUser](<#DEPRECATED_Case_RemoveAccessFromUser>) | Remove access control from a user to an existing case instance
-[DEPRECATED_Case_SetAccessControlToActivity](<#DEPRECATED_Case_SetAccessControlToActivity>) | Will check and assign/unassign access control to a case instance
-[Email_Send](<#Email_Send>) | Sends an email in the context of a case. DO NOT call this action to send test emails or preview emails.
-[Group_GetUsersById](<#Group_GetUsersById>) | Gets the list of users for an existing group. The role is an optional search criteria.
-[Group_GetUsersToAssociate](<#Group_GetUsersToAssociate>) | Gets the list of users that can be assoicated to an existing group
-[GroupExtended_CheckUserAssociation](<#GroupExtended_CheckUserAssociation>) | Checks if the group contains the user association
-[GroupExtended_GetAll](<#GroupExtended_GetAll>) | Gets all Group Matrix
-[GroupExtended_GetByGroupId](<#GroupExtended_GetByGroupId>) | Gets sepecific group details
-[GroupExtended_GetByGroupName](<#GroupExtended_GetByGroupName>) | Gets sepecific group details by group name (exact match)
-[GroupExtended_GetById](<#GroupExtended_GetById>) | Gets sepecific group details
-[GroupExtended_GetGroupIdById](<#GroupExtended_GetGroupIdById>) | Gets the Group Identifier by the Group extended  Identifier
-[GroupExtended_GetGroupsByUser](<#GroupExtended_GetGroupsByUser>) | Gets the list of groups that the user belongs to
-[GroupExtended_GetGroupsToAssociate](<#GroupExtended_GetGroupsToAssociate>) | Returns the list of possible groups to be associated
-[Holiday_GetById](<#Holiday_GetById>) | Get a Holiday record
-[Milestone_SetAchieved](<#Milestone_SetAchieved>) | Updates the IsAchieved field to True and the AchievedOn date and AchievedBy user from a given Milestone Definition of a Case
-[Milestone_SetUnachieved](<#Milestone_SetUnachieved>) | Updates the IsAchieved field to False and resets the AchievedOn and AchievedBy fields from a given Milestone Definition of a Case
-[NonWorkingDay_GetById](<#NonWorkingDay_GetById>) | Get a NonWorkingDay record
-[Process_CalculateAndSetDueDate](<#Process_CalculateAndSetDueDate>) | Calculate and set the due date time for an existing process.
-[Process_CalculateExecutionTime](<#Process_CalculateExecutionTime>) | Calculate and set the execution time for a process based on the Process.
-[Process_CheckIsPriorityValid](<#Process_CheckIsPriorityValid>) | Checks if the priority has a valid value for an existing process
-[Process_GetIdByActivityId](<#Process_GetIdByActivityId>) | Gets the process identifier for an existing activity
-[Process_ResumeSuspendedFromImpactAnalysis](<#Process_ResumeSuspendedFromImpactAnalysis>) | Will try to resume the processes that were suspended due Impact Analysis after a deployment
-[Process_SetCalendar](<#Process_SetCalendar>) | Enables to modify the calendar of an existing process
-[Process_SetDueDate](<#Process_SetDueDate>) | Sets the due date and time for an existing process
-[ProcessEvent_Set](<#ProcessEvent_Set>) | Creates a process event
-[Purge_AllCases](<#Purge_AllCases>) | Will purge all cases that are closed and meet the conditions to be purged.%%The purge will be asynchronous.
-[Purge_CaseId](<#Purge_CaseId>) | Purges a specific case Id, if already closed.
-[Rule_ExecuteActivityConditon](<#Rule_ExecuteActivityConditon>) | Exceutes a rule associated to an activity to return a customized output  (as Text)%%To identify the rule, use RuleId or RuleName/CaseDefinitionId.
-[Rule_ExecuteCustom](<#Rule_ExecuteCustom>) | Exceutes a rule associated to an object/activity to return a customized output  (as Text)%%To identify the rule, use RuleId or RuleName/CaseDefinitionId.
-[Rule_ExecuteGroup](<#Rule_ExecuteGroup>) | Exceutes a rule associated to an object/activity to return a specific group identifier.%%To identify the rule, use RuleId or RuleName/CaseDefinitionId.
-[Rule_ExecuteLogic](<#Rule_ExecuteLogic>) | Exceutes a rule associated to an object/activity to return true if the rule is applicable and valid, false otherwise.%%To identify the rule, use RuleId or RuleName/CaseDefinitionId.
-[Rule_ExecuteStatus](<#Rule_ExecuteStatus>) | Exceutes a rule associated to an object/activity to return a list of existing status (one or more).%%To identify the rule, use RuleId or RuleName/CaseDefinitionId.
-[Rule_ExecuteUser](<#Rule_ExecuteUser>) | Exceutes a rule associated to an object/activity to return a specific user identifier.%%To identify the rule, use RuleId or RuleName/CaseDefinitionId.
-[SampleUser_GetList](<#SampleUser_GetList>) | Retrieves the list of sample users
-[SampleUser_Login](<#SampleUser_Login>) | Login for sample users
-[Timezone_ConvertFromServerTime](<#Timezone_ConvertFromServerTime>) | Converts a server's timezone DateTime to a specific timezone.
-[Timezone_ConvertToServerTime](<#Timezone_ConvertToServerTime>) | Converts a specific timezone DateTime to the server's timezone.
-[User_GetIdByUsername](<#User_GetIdByUsername>) | Gets the user identifier from the username.
-[UserExtended_GetById](<#UserExtended_GetById>) | Gets an user extended details
+| Action | Description |
+| ---|--- |
+| [Activity_AddComments](<#Activity_AddComments>) | Adds a comment to an existing acitivity |
+| [Activity_AssignToGroup](<#Activity_AssignToGroup>) | Assigns an Activity to an existing group.%%If access control is switched on, automatically grants write access to the group for the case the activity is associated with.%%It performs a COMMIT on the transaction. |
+| [Activity_AssignToGroupAndUser](<#Activity_AssignToGroupAndUser>) | Assigns an Activity to an existing group and user.%%If access control is switched on, automatically grants write access to the group and user for the case the activity is associated with. |
+| [Activity_AssignToUser](<#Activity_AssignToUser>) | Assigns an Activity to an existing user.%%If access control is switched on, automatically grants write access to the user for the case the activity is associated with. |
+| [Activity_CalculateAndSetDueDate](<#Activity_CalculateAndSetDueDate>) | Calculate and set the due DateTime for an Activity, based on the Activity configured SLA and Calendar (if set). Creates an event if SetEvent field is set to True, that can be captured and execute some logic. |
+| [Activity_CalculateExecutionTime](<#Activity_CalculateExecutionTime>) | Calculate and set the execution time for an Activity based on the Activity configured SLA |
+| [Activity_CheckIsBlocked](<#Activity_CheckIsBlocked>) | Check if an activity is blocked |
+| [Activity_CheckUserAccess](<#Activity_CheckUserAccess>) | Checks if the user is assigned to the activity, or has access to it under delegation. |
+| [Activity_SetDueDate](<#Activity_SetDueDate>) | Set the due date for an Activity |
+| [Activity_SetStartDate](<#Activity_SetStartDate>) | Schedules a start date for the Activity to be available. |
+| [Activity_ValidateUserAccess](<#Activity_ValidateUserAccess>) | Validate user authorization to access the activity (directly assigned to the activity, or under delegation). If the user is not authorized an exception is raised. |
+| [ActivityEvent_Set](<#ActivityEvent_Set>) | Creates an activity event |
+| [Calendar_CheckWorkingDay](<#Calendar_CheckWorkingDay>) | Checks if the date is a working day (for a specific calendar) |
+| [Calendar_GetAll](<#Calendar_GetAll>) | Gets the list of calendars |
+| [Calendar_GetById](<#Calendar_GetById>) | Gets the details for a specific calendar |
+| [Calendar_GetEndDate](<#Calendar_GetEndDate>) | Calculate the end date based on the working hours and holidays/non working days. Also perform the calculation based on the TimeZone associated to the Calendar. |
+| [Case_AddComments](<#Case_AddComments>) | Add comments to an existing case. |
+| [Case_AddTags](<#Case_AddTags>) | Enables to add an existing tag (or tags) to a particular case instance |
+| [Case_AssociateProcess](<#Case_AssociateProcess>) | Enables to associate an existing case instance with a proccess, based on an existing process identifier |
+| [Case_BlockActivity](<#Case_BlockActivity>) | Enables to block an existing activity associated to an existing case. |
+| [Case_CheckActiveActivity](<#Case_CheckActiveActivity>) | For a given case and activity definition returns the activity instance, if it exists and the user has permissions on it |
+| [Case_CheckActivityAccess](<#Case_CheckActivityAccess>) | Check if a user has access (directly assigned) to an activity (open or closed) |
+| [Case_CheckActivityIsActive](<#Case_CheckActivityIsActive>) | Checks if the given activity belongs to the current OutSystems BPT process that is active for this Case, and if the activity itself is also active. |
+| [Case_CheckProcessIsActive](<#Case_CheckProcessIsActive>) | Checks if the current associated bpt process  is active for this Case |
+| [Case_CloseActivity](<#Case_CloseActivity>) | Close an activity and validates that only the correct user can close it. Will try to close it in a synchronous way (bpt default behavior) so it performs a COMMIT in the current transition. |
+| [Case_CloseActivityAsync](<#Case_CloseActivityAsync>) | Close an activity and validates that only the correct user can close it (will try to close the activity in an asynchronous way). Enhanced activity close funtionality in opposing the default syncronous bpt close behavior). |
+| [Case_Complete](<#Case_Complete>) | Enables to close an existing case instance based on an existing process identifier |
+| [Case_Delete](<#Case_Delete>) | Deletes a case instance |
+| [Case_Discard](<#Case_Discard>) | Discard a case instance%%%%Note: All associated running processes/activities will be terminated. |
+| [Case_DiscardActivity](<#Case_DiscardActivity>) | Discards an activity (discarded status), stopping the execution of the current process flow. Calls the Activity_Discard action from the BPT API which commits the current transaction. |
+| [Case_GetIdByProcessId](<#Case_GetIdByProcessId>) | Gets the case identifier based on the process identifier |
+| [Case_GrantAccessToGroup](<#Case_GrantAccessToGroup>) | Grants a given group access to a given Case |
+| [Case_GrantAccessToUser](<#Case_GrantAccessToUser>) | Grants a given user access to a given Case |
+| [Case_Initialize](<#Case_Initialize>) | Enables to initialize a new case instance based on an existing case definition identifier |
+| [Case_IsMilestoneAchieved](<#Case_IsMilestoneAchieved>) | Checks whether a given Milestone has been achieved or not for a given Case |
+| [Case_OpenActivity](<#Case_OpenActivity>) | Opens an acitivity and validates that only the correct user can open it |
+| [Case_PerformActionActivity](<#Case_PerformActionActivity>) | Perform an action to an existing activity associated to a case, taking into account the action specifc validations. |
+| [Case_PickupActivity](<#Case_PickupActivity>) | Assigns the activity to the user, if it is not assigned. The user needs to belong to the group assigned to the activity (if the group activity is set), or have an active delegation. |
+| [Case_ReleaseActivity](<#Case_ReleaseActivity>) | Releases the activity assigned to a specific user. Can only be released by the user that has the activity assigned. |
+| [Case_RemoveTag](<#Case_RemoveTag>) | Removes a Tag from a Case |
+| [Case_RevokeAccessFromGroup](<#Case_RevokeAccessFromGroup>) | Revokes access to a given Case for a given group |
+| [Case_RevokeAccessFromUser](<#Case_RevokeAccessFromUser>) | Revokes access to a given Case for a given user |
+| [Case_SkipActivity](<#Case_SkipActivity>) | Skips the current activity assigned to a specific user. Can only be skipped by the user that has the activity assigned (or under a valid delegation). |
+| [Case_TakeoverActivity](<#Case_TakeoverActivity>) | Reassigns the case activity to the user. The user needs to belong to the group assigned to the activity (if the activity group is set) |
+| [Case_UnblockActivity](<#Case_UnblockActivity>) | Enables to unblock an existing blocked activity associated to an existing case |
+| [Case_UpdateGroupAccess](<#Case_UpdateGroupAccess>) | Updates Group access to a given Case |
+| [Case_UpdatePriority](<#Case_UpdatePriority>) | Updates the priority for an existing case |
+| [Case_UpdateStatus](<#Case_UpdateStatus>) | Updates the status for an existing case |
+| [Case_UpdateStatusByActivityId](<#Case_UpdateStatusByActivityId>) | Updates the Status for an existing case from an exisiting activity |
+| [Case_UpdateUserAccess](<#Case_UpdateUserAccess>) | Updates User access to a given Case |
+| [Case_ValidateAccess](<#Case_ValidateAccess>) | Validates if a User has access to a given Case (either by himself or under an active delegation) |
+| [CaseActivityAction_Get](<#CaseActivityAction_Get>) | Get the Action chosen by the user for a specified activity |
+| [CaseDefinition_GrantAccessToGroup](<#CaseDefinition_GrantAccessToGroup>) | Grants a given group access to all cases from a given Case Definition |
+| [CaseDefinition_GrantAccessToUser](<#CaseDefinition_GrantAccessToUser>) | Grants a given user access to all cases from a given Case Definition |
+| [CaseDefinition_RevokeAccessFromGroup](<#CaseDefinition_RevokeAccessFromGroup>) | Revokes access to cases from a given Case Definition (from a group) |
+| [CaseDefinition_RevokeAccessFromUser](<#CaseDefinition_RevokeAccessFromUser>) | Revokes access to cases fom a given CaseDefinition (from a user) |
+| [CaseDefinition_UpdateGroupAccess](<#CaseDefinition_UpdateGroupAccess>) | Updates Group access permissions to a given Case definition |
+| [CaseDefinition_UpdateUserAccess](<#CaseDefinition_UpdateUserAccess>) | Updates User access permissions to a given Case definition |
+| [Delegation_GetAll](<#Delegation_GetAll>) | Get all delegations which current user has access to. |
+| [Delegation_GetById](<#Delegation_GetById>) | Get a delegation by Identifier, if the user has access to it |
+| [Delegation_GetByUser](<#Delegation_GetByUser>) | Gets the active delegations for the specified user in which the Timestamp is between the Delegation's From and To Dates |
+| [Delegation_IsValid](<#Delegation_IsValid>) | Checks if there is an active delegation from user (optional group) for destination user |
+| [DEPRECATED_Case_AddAccessToGroup](<#DEPRECATED_Case_AddAccessToGroup>) | Give access control to a group associated to an exisitng case instance |
+| [DEPRECATED_Case_AddAccessToUser](<#DEPRECATED_Case_AddAccessToUser>) | Give access control to a user associated to an exisitng case instance |
+| [DEPRECATED_Case_CheckUserPermission](<#DEPRECATED_Case_CheckUserPermission>) | Checks if the currently logged in user has access to the specified case |
+| [DEPRECATED_Case_RemoveAccessFromGroup](<#DEPRECATED_Case_RemoveAccessFromGroup>) | Remove access control from a group to an existing case instance |
+| [DEPRECATED_Case_RemoveAccessFromUser](<#DEPRECATED_Case_RemoveAccessFromUser>) | Remove access control from a user to an existing case instance |
+| [DEPRECATED_Case_SetAccessControlToActivity](<#DEPRECATED_Case_SetAccessControlToActivity>) | Will check and assign/unassign access control to a case instance |
+| [Email_Send](<#Email_Send>) | Sends an email in the context of a case. DO NOT call this action to send test emails or preview emails. |
+| [Group_GetUsersById](<#Group_GetUsersById>) | Gets the list of users for an existing group. The role is an optional search criteria. |
+| [Group_GetUsersToAssociate](<#Group_GetUsersToAssociate>) | Gets the list of users that can be assoicated to an existing group |
+| [GroupExtended_CheckUserAssociation](<#GroupExtended_CheckUserAssociation>) | Checks if the group contains the user association |
+| [GroupExtended_GetAll](<#GroupExtended_GetAll>) | Gets all Group Matrix |
+| [GroupExtended_GetByGroupId](<#GroupExtended_GetByGroupId>) | Gets sepecific group details |
+| [GroupExtended_GetByGroupName](<#GroupExtended_GetByGroupName>) | Gets sepecific group details by group name (exact match) |
+| [GroupExtended_GetById](<#GroupExtended_GetById>) | Gets sepecific group details |
+| [GroupExtended_GetGroupIdById](<#GroupExtended_GetGroupIdById>) | Gets the Group Identifier by the Group extended  Identifier |
+| [GroupExtended_GetGroupsByUser](<#GroupExtended_GetGroupsByUser>) | Gets the list of groups that the user belongs to |
+| [GroupExtended_GetGroupsToAssociate](<#GroupExtended_GetGroupsToAssociate>) | Returns the list of possible groups to be associated |
+| [Holiday_GetById](<#Holiday_GetById>) | Get a Holiday record |
+| [Milestone_SetAchieved](<#Milestone_SetAchieved>) | Updates the IsAchieved field to True and the AchievedOn date and AchievedBy user from a given Milestone Definition of a Case |
+| [Milestone_SetUnachieved](<#Milestone_SetUnachieved>) | Updates the IsAchieved field to False and resets the AchievedOn and AchievedBy fields from a given Milestone Definition of a Case |
+| [NonWorkingDay_GetById](<#NonWorkingDay_GetById>) | Get a NonWorkingDay record |
+| [Process_CalculateAndSetDueDate](<#Process_CalculateAndSetDueDate>) | Calculate and set the due date time for an existing process. |
+| [Process_CalculateExecutionTime](<#Process_CalculateExecutionTime>) | Calculate and set the execution time for a process based on the Process. |
+| [Process_CheckIsPriorityValid](<#Process_CheckIsPriorityValid>) | Checks if the priority has a valid value for an existing process |
+| [Process_GetIdByActivityId](<#Process_GetIdByActivityId>) | Gets the process identifier for an existing activity |
+| [Process_ResumeSuspendedFromImpactAnalysis](<#Process_ResumeSuspendedFromImpactAnalysis>) | Will try to resume the processes that were suspended due Impact Analysis after a deployment |
+| [Process_SetCalendar](<#Process_SetCalendar>) | Enables to modify the calendar of an existing process |
+| [Process_SetDueDate](<#Process_SetDueDate>) | Sets the due date and time for an existing process |
+| [ProcessEvent_Set](<#ProcessEvent_Set>) | Creates a process event |
+| [Purge_AllCases](<#Purge_AllCases>) | Will purge all cases that are closed and meet the conditions to be purged.%%The purge will be asynchronous. |
+| [Purge_CaseId](<#Purge_CaseId>) | Purges a specific case Id, if already closed. |
+| [Rule_ExecuteActivityConditon](<#Rule_ExecuteActivityConditon>) | Exceutes a rule associated to an activity to return a customized output  (as Text)%%To identify the rule, use RuleId or RuleName/CaseDefinitionId. |
+| [Rule_ExecuteCustom](<#Rule_ExecuteCustom>) | Exceutes a rule associated to an object/activity to return a customized output  (as Text)%%To identify the rule, use RuleId or RuleName/CaseDefinitionId. |
+| [Rule_ExecuteGroup](<#Rule_ExecuteGroup>) | Exceutes a rule associated to an object/activity to return a specific group identifier.%%To identify the rule, use RuleId or RuleName/CaseDefinitionId. |
+| [Rule_ExecuteLogic](<#Rule_ExecuteLogic>) | Exceutes a rule associated to an object/activity to return true if the rule is applicable and valid, false otherwise.%%To identify the rule, use RuleId or RuleName/CaseDefinitionId. |
+| [Rule_ExecuteStatus](<#Rule_ExecuteStatus>) | Exceutes a rule associated to an object/activity to return a list of existing status (one or more).%%To identify the rule, use RuleId or RuleName/CaseDefinitionId. |
+| [Rule_ExecuteUser](<#Rule_ExecuteUser>) | Exceutes a rule associated to an object/activity to return a specific user identifier.%%To identify the rule, use RuleId or RuleName/CaseDefinitionId. |
+| [SampleUser_GetList](<#SampleUser_GetList>) | Retrieves the list of sample users |
+| [SampleUser_Login](<#SampleUser_Login>) | Login for sample users |
+| [Timezone_ConvertFromServerTime](<#Timezone_ConvertFromServerTime>) | Converts a server's timezone DateTime to a specific timezone. |
+| [Timezone_ConvertToServerTime](<#Timezone_ConvertToServerTime>) | Converts a specific timezone DateTime to the server's timezone. |
+| [User_GetIdByUsername](<#User_GetIdByUsername>) | Gets the user identifier from the username. |
+| [UserExtended_GetById](<#UserExtended_GetById>) | Gets an user extended details |
 
-Service Action | Description
----|---
-[Activity_GetActionList](<#Service_Activity_GetActionList>) | Returns the list of available actions for an existing activity based on its current details
-[Activity_GetExtraFieldValue](<#Service_Activity_GetExtraFieldValue>) | Gets the actual value of an extra field for a specific activity
-[Case_GetActivities](<#Service_Case_GetActivities>) | Gets all activities that match the provided scope and search criteria
-[Case_GetActivitiesTimeline](<#Service_Case_GetActivitiesTimeline>) | Gets the list of completed and ongoing activities for a given case
-[Case_GetActivityCounters](<#Service_Case_GetActivityCounters>) | Gets the counters for each activity progress status that match the provided scope and search criteria
-[Case_GetAllByExternalRequester](<#Service_Case_GetAllByExternalRequester>) | Gets all the Case instances requested by the specified external requester details
-[Case_GetAllHistoryByIdAndDate](<#Service_Case_GetAllHistoryByIdAndDate>) | Get the list of all case operations associated to an existing case instance
-[Case_GetAllPossibleStatus](<#Service_Case_GetAllPossibleStatus>) | Gets the list of valid status for a given case, based on the current case status and on the defined state machine (otherwise no status will be returned)
-[Case_GetAllStatus](<#Service_Case_GetAllStatus>) | Gets the list of all active status for a given case
-[Case_GetAllSubcases](<#Service_Case_GetAllSubcases>) | Gets the list of all child cases for a given parent case
-[Case_GetAllTags](<#Service_Case_GetAllTags>) | Gets all the tags associated to a specific case instance
-[Case_GetByTagId](<#Service_Case_GetByTagId>) | Gets the list of case details that have matching tags with the input tag id list (exact match)
-[Case_GetByTagLabel](<#Service_Case_GetByTagLabel>) | Gets the list of case details that have matching tags with the input tag label (partial match)
-[Case_GetCases](<#Service_Case_GetCases>) | Gets all cases that meet the filter criteria
-[Case_GetCasesByActivity](<#Service_Case_GetCasesByActivity>) | Gets all cases that meet the filter criteria based on their activities
-[Case_GetCasesByActivityCounters](<#Service_Case_GetCasesByActivityCounters>) | Gets the Case state counters (Active, Closed, All) for the selected filters
-[Case_GetCounters](<#Service_Case_GetCounters>) | Gets the Case state counters (Active, Closed, All) for the selected filters
-[Case_GetDefinitionDetails](<#Service_Case_GetDefinitionDetails>) | Gets information about activity statistics for a Case Definition
-[Case_GetDetailsByCaseId](<#Service_Case_GetDetailsByCaseId>) | Gets details for an exisiting case identifier
-[Case_GetExtraFieldValue](<#Service_Case_GetExtraFieldValue>) | Gets the actual value of an extra field for a specific case
-[Case_GetGroupsUsersWithAccess](<#Service_Case_GetGroupsUsersWithAccess>) | Gets all Users and Groups that have access to this Case instance
-[Case_GetHistory](<#Service_Case_GetHistory>) | Get the list of all case operations associated to an existing case instance
-[Case_GetMilestones](<#Service_Case_GetMilestones>) | Gets the details of the Milestones associated with a given Case
-[Case_GetStatusTimeline](<#Service_Case_GetStatusTimeline>) | Gets the status timeline (past and current) for a given case
-[DEPRECATED_Case_GetActivities](<#Service_DEPRECATED_Case_GetActivities>) | Gets all activities associated with cases
-[DEPRECATED_Case_GetActivitiesByCaseId](<#Service_DEPRECATED_Case_GetActivitiesByCaseId>) | Gets all activities associated with specific cases
-[DEPRECATED_Case_GetActivityCounters](<#Service_DEPRECATED_Case_GetActivityCounters>) | Get activities count by each activity filter type
-[DEPRECATED_Case_GetCases](<#Service_DEPRECATED_Case_GetCases>) | Gets all cases that meets the filter criterias
-[DEPRECATED_Case_GetCasesCounters](<#Service_DEPRECATED_Case_GetCasesCounters>) | Get requests (Case) count by each case filter type
-[Tag_GetAllByLabel](<#Service_Tag_GetAllByLabel>) | Gets all Tags for a given Case Definition that match the specified label. If no label is specified all tags are returned up to the MaxResults input parameter value
+| Service Action | Description |
+| ---|--- |
+| [Activity_GetActionList](<#Service_Activity_GetActionList>) | Returns the list of available actions for an existing activity based on its current details |
+| [Activity_GetExtraFieldValue](<#Service_Activity_GetExtraFieldValue>) | Gets the actual value of an extra field for a specific activity |
+| [Case_GetActivities](<#Service_Case_GetActivities>) | Gets all activities that match the provided scope and search criteria |
+| [Case_GetActivitiesTimeline](<#Service_Case_GetActivitiesTimeline>) | Gets the list of completed and ongoing activities for a given case |
+| [Case_GetActivityCounters](<#Service_Case_GetActivityCounters>) | Gets the counters for each activity progress status that match the provided scope and search criteria |
+| [Case_GetAllByExternalRequester](<#Service_Case_GetAllByExternalRequester>) | Gets all the Case instances requested by the specified external requester details |
+| [Case_GetAllHistoryByIdAndDate](<#Service_Case_GetAllHistoryByIdAndDate>) | Get the list of all case operations associated to an existing case instance |
+| [Case_GetAllPossibleStatus](<#Service_Case_GetAllPossibleStatus>) | Gets the list of valid status for a given case, based on the current case status and on the defined state machine (otherwise no status will be returned) |
+| [Case_GetAllStatus](<#Service_Case_GetAllStatus>) | Gets the list of all active status for a given case |
+| [Case_GetAllSubcases](<#Service_Case_GetAllSubcases>) | Gets the list of all child cases for a given parent case |
+| [Case_GetAllTags](<#Service_Case_GetAllTags>) | Gets all the tags associated to a specific case instance |
+| [Case_GetByTagId](<#Service_Case_GetByTagId>) | Gets the list of case details that have matching tags with the input tag id list (exact match) |
+| [Case_GetByTagLabel](<#Service_Case_GetByTagLabel>) | Gets the list of case details that have matching tags with the input tag label (partial match) |
+| [Case_GetCases](<#Service_Case_GetCases>) | Gets all cases that meet the filter criteria |
+| [Case_GetCasesByActivity](<#Service_Case_GetCasesByActivity>) | Gets all cases that meet the filter criteria based on their activities |
+| [Case_GetCasesByActivityCounters](<#Service_Case_GetCasesByActivityCounters>) | Gets the Case state counters (Active, Closed, All) for the selected filters |
+| [Case_GetCounters](<#Service_Case_GetCounters>) | Gets the Case state counters (Active, Closed, All) for the selected filters |
+| [Case_GetDefinitionDetails](<#Service_Case_GetDefinitionDetails>) | Gets information about activity statistics for a Case Definition |
+| [Case_GetDetailsByCaseId](<#Service_Case_GetDetailsByCaseId>) | Gets details for an exisiting case identifier |
+| [Case_GetExtraFieldValue](<#Service_Case_GetExtraFieldValue>) | Gets the actual value of an extra field for a specific case |
+| [Case_GetGroupsUsersWithAccess](<#Service_Case_GetGroupsUsersWithAccess>) | Gets all Users and Groups that have access to this Case instance |
+| [Case_GetHistory](<#Service_Case_GetHistory>) | Get the list of all case operations associated to an existing case instance |
+| [Case_GetMilestones](<#Service_Case_GetMilestones>) | Gets the details of the Milestones associated with a given Case |
+| [Case_GetStatusTimeline](<#Service_Case_GetStatusTimeline>) | Gets the status timeline (past and current) for a given case |
+| [DEPRECATED_Case_GetActivities](<#Service_DEPRECATED_Case_GetActivities>) | Gets all activities associated with cases |
+| [DEPRECATED_Case_GetActivitiesByCaseId](<#Service_DEPRECATED_Case_GetActivitiesByCaseId>) | Gets all activities associated with specific cases |
+| [DEPRECATED_Case_GetActivityCounters](<#Service_DEPRECATED_Case_GetActivityCounters>) | Get activities count by each activity filter type |
+| [DEPRECATED_Case_GetCases](<#Service_DEPRECATED_Case_GetCases>) | Gets all cases that meets the filter criterias |
+| [DEPRECATED_Case_GetCasesCounters](<#Service_DEPRECATED_Case_GetCasesCounters>) | Get requests (Case) count by each case filter type |
+| [Tag_GetAllByLabel](<#Service_Tag_GetAllByLabel>) | Gets all Tags for a given Case Definition that match the specified label. If no label is specified all tags are returned up to the MaxResults input parameter value |
 
-Structure | Description
----|---
-[Activity_AssignDetails](<#Structure_Activity_AssignDetails>) | Details about activity assignment details
-[Activity_CaseView](<#Structure_Activity_CaseView>) | For specific case, holds the activity view details
-[Activity_Details](<#Structure_Activity_Details>) | Activity details
-[Activity_Details2](<#Structure_Activity_Details2>) | Holds information for a case activity details
-[ActivityAction_Details](<#Structure_ActivityAction_Details>) | Activity Action Detail
-[ActivityActionOutput_View](<#Structure_ActivityActionOutput_View>) | Structure that a represents output action condition from a condition activity from the builder
-[ActivityCounter](<#Structure_ActivityCounter>) | Counter for a specific activity progress status
-[ActivityDetails](<#Structure_ActivityDetails>) | 
-[ActivityDueDate](<#Structure_ActivityDueDate>) | Structure that defines the considered time range of an Activity due date
-[ActivityEvent_Create](<#Structure_ActivityEvent_Create>) | Public structure to create a new activity event
-[ActivityHistory](<#Structure_ActivityHistory>) | 
-[ActivityResult](<#Structure_ActivityResult>) | 
-[ActivityScope](<#Structure_ActivityScope>) | 
-[ActivityScopeCounters](<#Structure_ActivityScopeCounters>) | 
-[ActivitySearchCriteria](<#Structure_ActivitySearchCriteria>) | Input parameter with Activity filters. When values for different filter criteria types are sent, returned activities will match all filters (&quot;AND&quot; condition). Inside each criteria attribute list, the returned cases will match at least one of those values (&quot;OR&quot; condition).
-[ActivitySort](<#Structure_ActivitySort>) | Activity fields to sort for
-[Calendar_Detail](<#Structure_Calendar_Detail>) | Public structure with the calendar deailts
-[Calendar_FilterResults](<#Structure_Calendar_FilterResults>) | Generic Filter Serch Structure
-[Case_ActivityCount](<#Structure_Case_ActivityCount>) | Count of each activity filter type
-[Case_DefinitionDetails](<#Structure_Case_DefinitionDetails>) | Holds activities statistics about a case definition
-[Case_Details](<#Structure_Case_Details>) | Details for an existing case
-[Case_Details2](<#Structure_Case_Details2>) | Holds information for a case details
-[Case_ExecutionDetails](<#Structure_Case_ExecutionDetails>) | Holds information for case sla details
-[Case_FilterResults](<#Structure_Case_FilterResults>) | Case Filter Search Structure
-[Case_Identifier](<#Structure_Case_Identifier>) | Case Identifier
-[Case_Information](<#Structure_Case_Information>) | Case Information Details
-[Case_RequestCount](<#Structure_Case_RequestCount>) | Count of each case filter type
-[CaseAccess](<#Structure_CaseAccess>) | Information about the read/write access of a Case
-[CaseAccessControl_GroupDetails](<#Structure_CaseAccessControl_GroupDetails>) | Public  structure with Group Details
-[CaseActivities_FilterResults](<#Structure_CaseActivities_FilterResults>) | Case Activities Filter Search Structure
-[CaseActivity_Details](<#Structure_CaseActivity_Details>) | Holds details for a case definition activities statistics
-[CaseActivity_View](<#Structure_CaseActivity_View>) | Represents an Activity Detail associated with a Case
-[CaseActivityScope](<#Structure_CaseActivityScope>) | Structure that defines how Cases are filtered by Activities
-[CaseActivitySearchField](<#Structure_CaseActivitySearchField>) | Holds a field to search for
-[CaseActivitySortField](<#Structure_CaseActivitySortField>) | Holds a field to sort for
-[CaseCounter](<#Structure_CaseCounter>) | Count of each case filter type
-[CaseDetails](<#Structure_CaseDetails>) | Case intance details
-[CaseDetails_Lite](<#Structure_CaseDetails_Lite>) | Details for an existing case (Case identifier and Case number)
-[CaseExternalRequest_Create](<#Structure_CaseExternalRequest_Create>) | Public structure that enables to create case external request instances
-[CaseExternalRequest_Details](<#Structure_CaseExternalRequest_Details>) | Public structure with CaseExternalRequest details
-[CaseRequest_View](<#Structure_CaseRequest_View>) | Represents a Case Detail
-[CaseScope](<#Structure_CaseScope>) | Structure that defines how Cases are filtered by Requester Scope and Case State Filter
-[CaseSearchCriteria](<#Structure_CaseSearchCriteria>) | Possible Case filters. Note: the result of mixing values for filters of different types works as an &quot;AND&quot; and inside filters of the same type as an &quot;OR&quot;, for the list of cases to return.
-[CaseSearchField](<#Structure_CaseSearchField>) | Holds a field to search for
-[CaseSort](<#Structure_CaseSort>) | Case fields to sort for
-[CaseSortField](<#Structure_CaseSortField>) | Holds a field to sort for
-[CaseStatus_Details](<#Structure_CaseStatus_Details>) | Case Status Detail
-[Delegation_Details](<#Structure_Delegation_Details>) | Structure that contains the Delegation Details
-[Delegation_User](<#Structure_Delegation_User>) | Delegation User Details
-[Delegation_UserDetails](<#Structure_Delegation_UserDetails>) | User Information
-[Delegation_View](<#Structure_Delegation_View>) | Holds a Delegation&#180;
-[ExtraFieldValue](<#Structure_ExtraFieldValue>) | Public structure with that holds the value for a setting
-[FilterHistoryResults](<#Structure_FilterHistoryResults>) | Filter for case history list
-[FilterResults](<#Structure_FilterResults>) | Filter Search Structure
-[FilterResults2](<#Structure_FilterResults2>) | Filter Serch Structure
-[Group_Details](<#Structure_Group_Details>) | Group Information
-[Group_Details2](<#Structure_Group_Details2>) | Public structure with system entity group details
-[GroupExtended_Detail](<#Structure_GroupExtended_Detail>) | Public structure to create a new Group Extended
-[Holiday_Detail](<#Structure_Holiday_Detail>) | Public structure with the calendar holiday details
-[HumanActivityTimelineDetails](<#Structure_HumanActivityTimelineDetails>) | 
-[InformationGroupAccess](<#Structure_InformationGroupAccess>) | Holds the flags for each group type access
-[MilestoneDetails](<#Structure_MilestoneDetails>) | Holds the details of a Milestone
-[NonWorkingDay_Detail](<#Structure_NonWorkingDay_Detail>) | Public structure with the non working details
-[Notification_Details](<#Structure_Notification_Details>) | Holds information for a notification case details
-[NotificationEmail_Details](<#Structure_NotificationEmail_Details>) | Holds information for an email notification
-[OrderHistoryResult](<#Structure_OrderHistoryResult>) | Order history results
-[Process_Details](<#Structure_Process_Details>) | Process details
-[Process_Details2](<#Structure_Process_Details2>) | Holds information for a case process details
-[ProcessEvent_Create](<#Structure_ProcessEvent_Create>) | Public structure to create a new process event
-[RuleExecution_Details](<#Structure_RuleExecution_Details>) | Holds information for a rule execution case details
-[SampleUser](<#Structure_SampleUser>) | SampleUser
-[Search_CaseDetails](<#Structure_Search_CaseDetails>) | Represents the details of a Case instance
-[SearchCriteria](<#Structure_SearchCriteria>) | Result set filter criteria
-[SLA_Details](<#Structure_SLA_Details>) | Holds information for sla details
-[StatusDetails](<#Structure_StatusDetails>) | Case Status Details
-[TagDetails](<#Structure_TagDetails>) | Public structure with Tag details
-[TagIdentifier](<#Structure_TagIdentifier>) | Tag Identifier
-[User_Details](<#Structure_User_Details>) | Generic structure with user details
-[User_SearchResults](<#Structure_User_SearchResults>) | Public structure to return the search results for Group extended
-[UserExtended_Details](<#Structure_UserExtended_Details>) | Details about user
+| Structure | Description |
+| ---|--- |
+| [Activity_AssignDetails](<#Structure_Activity_AssignDetails>) | Details about activity assignment details |
+| [Activity_CaseView](<#Structure_Activity_CaseView>) | For specific case, holds the activity view details |
+| [Activity_Details](<#Structure_Activity_Details>) | Activity details |
+| [Activity_Details2](<#Structure_Activity_Details2>) | Holds information for a case activity details |
+| [ActivityAction_Details](<#Structure_ActivityAction_Details>) | Activity Action Detail |
+| [ActivityActionOutput_View](<#Structure_ActivityActionOutput_View>) | Structure that a represents output action condition from a condition activity from the builder |
+| [ActivityCounter](<#Structure_ActivityCounter>) | Counter for a specific activity progress status |
+| [ActivityDetails](<#Structure_ActivityDetails>) | |
+| [ActivityDueDate](<#Structure_ActivityDueDate>) | Structure that defines the considered time range of an Activity due date |
+| [ActivityEvent_Create](<#Structure_ActivityEvent_Create>) | Public structure to create a new activity event |
+| [ActivityHistory](<#Structure_ActivityHistory>) | |
+| [ActivityResult](<#Structure_ActivityResult>) | |
+| [ActivityScope](<#Structure_ActivityScope>) | |
+| [ActivityScopeCounters](<#Structure_ActivityScopeCounters>) | |
+| [ActivitySearchCriteria](<#Structure_ActivitySearchCriteria>) | Input parameter with Activity filters. When values for different filter criteria types are sent, returned activities will match all filters (&quot;AND&quot; condition). Inside each criteria attribute list, the returned cases will match at least one of those values (&quot;OR&quot; condition). |
+| [ActivitySort](<#Structure_ActivitySort>) | Activity fields to sort for |
+| [Calendar_Detail](<#Structure_Calendar_Detail>) | Public structure with the calendar deailts |
+| [Calendar_FilterResults](<#Structure_Calendar_FilterResults>) | Generic Filter Serch Structure |
+| [Case_ActivityCount](<#Structure_Case_ActivityCount>) | Count of each activity filter type |
+| [Case_DefinitionDetails](<#Structure_Case_DefinitionDetails>) | Holds activities statistics about a case definition |
+| [Case_Details](<#Structure_Case_Details>) | Details for an existing case |
+| [Case_Details2](<#Structure_Case_Details2>) | Holds information for a case details |
+| [Case_ExecutionDetails](<#Structure_Case_ExecutionDetails>) | Holds information for case sla details |
+| [Case_FilterResults](<#Structure_Case_FilterResults>) | Case Filter Search Structure |
+| [Case_Identifier](<#Structure_Case_Identifier>) | Case Identifier |
+| [Case_Information](<#Structure_Case_Information>) | Case Information Details |
+| [Case_RequestCount](<#Structure_Case_RequestCount>) | Count of each case filter type |
+| [CaseAccess](<#Structure_CaseAccess>) | Information about the read/write access of a Case |
+| [CaseAccessControl_GroupDetails](<#Structure_CaseAccessControl_GroupDetails>) | Public  structure with Group Details |
+| [CaseActivities_FilterResults](<#Structure_CaseActivities_FilterResults>) | Case Activities Filter Search Structure |
+| [CaseActivity_Details](<#Structure_CaseActivity_Details>) | Holds details for a case definition activities statistics |
+| [CaseActivity_View](<#Structure_CaseActivity_View>) | Represents an Activity Detail associated with a Case |
+| [CaseActivityScope](<#Structure_CaseActivityScope>) | Structure that defines how Cases are filtered by Activities |
+| [CaseActivitySearchField](<#Structure_CaseActivitySearchField>) | Holds a field to search for |
+| [CaseActivitySortField](<#Structure_CaseActivitySortField>) | Holds a field to sort for |
+| [CaseCounter](<#Structure_CaseCounter>) | Count of each case filter type |
+| [CaseDetails](<#Structure_CaseDetails>) | Case intance details |
+| [CaseDetails_Lite](<#Structure_CaseDetails_Lite>) | Details for an existing case (Case identifier and Case number) |
+| [CaseExternalRequest_Create](<#Structure_CaseExternalRequest_Create>) | Public structure that enables to create case external request instances |
+| [CaseExternalRequest_Details](<#Structure_CaseExternalRequest_Details>) | Public structure with CaseExternalRequest details |
+| [CaseRequest_View](<#Structure_CaseRequest_View>) | Represents a Case Detail |
+| [CaseScope](<#Structure_CaseScope>) | Structure that defines how Cases are filtered by Requester Scope and Case State Filter |
+| [CaseSearchCriteria](<#Structure_CaseSearchCriteria>) | Possible Case filters. Note: the result of mixing values for filters of different types works as an &quot;AND&quot; and inside filters of the same type as an &quot;OR&quot;, for the list of cases to return. |
+| [CaseSearchField](<#Structure_CaseSearchField>) | Holds a field to search for |
+| [CaseSort](<#Structure_CaseSort>) | Case fields to sort for |
+| [CaseSortField](<#Structure_CaseSortField>) | Holds a field to sort for |
+| [CaseStatus_Details](<#Structure_CaseStatus_Details>) | Case Status Detail |
+| [Delegation_Details](<#Structure_Delegation_Details>) | Structure that contains the Delegation Details |
+| [Delegation_User](<#Structure_Delegation_User>) | Delegation User Details |
+| [Delegation_UserDetails](<#Structure_Delegation_UserDetails>) | User Information |
+| [Delegation_View](<#Structure_Delegation_View>) | Holds a Delegation&#180; |
+| [ExtraFieldValue](<#Structure_ExtraFieldValue>) | Public structure with that holds the value for a setting |
+| [FilterHistoryResults](<#Structure_FilterHistoryResults>) | Filter for case history list |
+| [FilterResults](<#Structure_FilterResults>) | Filter Search Structure |
+| [FilterResults2](<#Structure_FilterResults2>) | Filter Serch Structure |
+| [Group_Details](<#Structure_Group_Details>) | Group Information |
+| [Group_Details2](<#Structure_Group_Details2>) | Public structure with system entity group details |
+| [GroupExtended_Detail](<#Structure_GroupExtended_Detail>) | Public structure to create a new Group Extended |
+| [Holiday_Detail](<#Structure_Holiday_Detail>) | Public structure with the calendar holiday details |
+| [HumanActivityTimelineDetails](<#Structure_HumanActivityTimelineDetails>) | |
+| [InformationGroupAccess](<#Structure_InformationGroupAccess>) | Holds the flags for each group type access |
+| [MilestoneDetails](<#Structure_MilestoneDetails>) | Holds the details of a Milestone |
+| [NonWorkingDay_Detail](<#Structure_NonWorkingDay_Detail>) | Public structure with the non working details |
+| [Notification_Details](<#Structure_Notification_Details>) | Holds information for a notification case details |
+| [NotificationEmail_Details](<#Structure_NotificationEmail_Details>) | Holds information for an email notification |
+| [OrderHistoryResult](<#Structure_OrderHistoryResult>) | Order history results |
+| [Process_Details](<#Structure_Process_Details>) | Process details |
+| [Process_Details2](<#Structure_Process_Details2>) | Holds information for a case process details |
+| [ProcessEvent_Create](<#Structure_ProcessEvent_Create>) | Public structure to create a new process event |
+| [RuleExecution_Details](<#Structure_RuleExecution_Details>) | Holds information for a rule execution case details |
+| [SampleUser](<#Structure_SampleUser>) | SampleUser |
+| [Search_CaseDetails](<#Structure_Search_CaseDetails>) | Represents the details of a Case instance |
+| [SearchCriteria](<#Structure_SearchCriteria>) | Result set filter criteria |
+| [SLA_Details](<#Structure_SLA_Details>) | Holds information for sla details |
+| [StatusDetails](<#Structure_StatusDetails>) | Case Status Details |
+| [TagDetails](<#Structure_TagDetails>) | Public structure with Tag details |
+| [TagIdentifier](<#Structure_TagIdentifier>) | Tag Identifier |
+| [User_Details](<#Structure_User_Details>) | Generic structure with user details |
+| [User_SearchResults](<#Structure_User_SearchResults>) | Public structure to return the search results for Group extended |
+| [UserExtended_Details](<#Structure_UserExtended_Details>) | Details about user |
 
 ## Actions
 
@@ -268,7 +268,7 @@ Structure | Description
 
 Adds a comment to an existing acitivity
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -288,7 +288,7 @@ Assigns an Activity to an existing group.
 If access control is switched on, automatically grants write access to the group for the case the activity is associated with.  
 It performs a COMMIT on the transaction.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -303,7 +303,7 @@ GroupId
 Assigns an Activity to an existing group and user.  
 If access control is switched on, automatically grants write access to the group and user for the case the activity is associated with.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -322,7 +322,7 @@ UserId
 Assigns an Activity to an existing user.  
 If access control is switched on, automatically grants write access to the user for the case the activity is associated with.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -336,7 +336,7 @@ UserId
 
 Calculate and set the due DateTime for an Activity, based on the Activity configured SLA and Calendar (if set). Creates an event if SetEvent field is set to True, that can be captured and execute some logic.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -358,7 +358,7 @@ SetEvent
 :   Type: optional, Boolean.  
     If True, an event will be triggered when the activity exceeds the SLA time. It can be used to perform specific tasks (ex: send an email)
 
-*Outputs*
+_Outputs_
 
 DueDate
 :   Type: Date Time.  
@@ -368,7 +368,7 @@ DueDate
 
 Calculate and set the execution time for an Activity based on the Activity configured SLA
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -378,13 +378,13 @@ ActivityId
 
 Check if an activity is blocked
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
     Activity Identifier
 
-*Outputs*
+_Outputs_
 
 IsBlocked
 :   Type: Boolean.  
@@ -394,7 +394,7 @@ IsBlocked
 
 Checks if the user is assigned to the activity, or has access to it under delegation.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -404,7 +404,7 @@ UserId
 :   Type: mandatory, User Identifier.  
     User Identifier
 
-*Outputs*
+_Outputs_
 
 IsValid
 :   Type: Boolean.  
@@ -418,7 +418,7 @@ ActivityAssignmentDetails
 
 Set the due date for an Activity
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -436,7 +436,7 @@ SetEvent
 
 Schedules a start date for the Activity to be available.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -450,7 +450,7 @@ StartDate
 
 Validate user authorization to access the activity (directly assigned to the activity, or under delegation). If the user is not authorized an exception is raised.
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -460,7 +460,7 @@ UserId
 :   Type: mandatory, User Identifier.  
     User Identifier
 
-*Outputs*
+_Outputs_
 
 ActivityAssignmentDetails
 :   Type: [Activity_AssignDetails](<#Structure_Activity_AssignDetails>).  
@@ -470,7 +470,7 @@ ActivityAssignmentDetails
 
 Creates an activity event
 
-*Inputs*
+_Inputs_
 
 ActivityEventCreateRec
 :   Type: mandatory, [ActivityEvent_Create](<#Structure_ActivityEvent_Create>).  
@@ -480,7 +480,7 @@ ActivityEventCreateRec
 
 Checks if the date is a working day (for a specific calendar)
 
-*Inputs*
+_Inputs_
 
 CalendarId
 :   Type: mandatory, Calendar Identifier.  
@@ -490,7 +490,7 @@ Date
 :   Type: mandatory, Date.  
     Date to check
 
-*Outputs*
+_Outputs_
 
 IsWorkingDay
 :   Type: Boolean.  
@@ -500,13 +500,13 @@ IsWorkingDay
 
 Gets the list of calendars
 
-*Inputs*
+_Inputs_
 
 Filter
 :   Type: mandatory, [Calendar_FilterResults](<#Structure_Calendar_FilterResults>).  
     Filter conditions
 
-*Outputs*
+_Outputs_
 
 CalendarDetailList
 :   Type: [Calendar_Detail](<#Structure_Calendar_Detail>) List.  
@@ -520,7 +520,7 @@ TotalResults
 
 Gets the details for a specific calendar
 
-*Inputs*
+_Inputs_
 
 CalendarId
 :   Type: mandatory, Calendar Identifier.  
@@ -534,7 +534,7 @@ OnlyActive
 :   Type: optional, Boolean.  
     Filter only active holidays and non working days?
 
-*Outputs*
+_Outputs_
 
 CalendarDetail
 :   Type: [Calendar_Detail](<#Structure_Calendar_Detail>).  
@@ -544,7 +544,7 @@ CalendarDetail
 
 Calculate the end date based on the working hours and holidays/non working days. Also perform the calculation based on the TimeZone associated to the Calendar.
 
-*Inputs*
+_Inputs_
 
 CalendarId
 :   Type: mandatory, Calendar Identifier.  
@@ -558,7 +558,7 @@ Minutes
 :   Type: mandatory, Integer.  
     Number of minutes (it must be always a positive value)
 
-*Outputs*
+_Outputs_
 
 EndDate
 :   Type: Date Time.  
@@ -568,7 +568,7 @@ EndDate
 
 Add comments to an existing case.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -590,7 +590,7 @@ IsVisibleToRequester
 
 Enables to add an existing tag (or tags) to a particular case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -604,7 +604,7 @@ TagsList
 
 Enables to associate an existing case instance with a proccess, based on an existing process identifier
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -634,7 +634,7 @@ Comments
 
 Enables to block an existing activity associated to an existing case.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -656,7 +656,7 @@ Comments
 
 For a given case and activity definition returns the activity instance, if it exists and the user has permissions on it
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -677,7 +677,7 @@ IncludeGroupCheck
     If true, the user must belong to the group assigned to the activity or the activity is assigned to the user.  
     If false then the activity must be assigned to the user.
 
-*Outputs*
+_Outputs_
 
 ActivityId
 :   Type: Activity Identifier.  
@@ -687,7 +687,7 @@ ActivityId
 
 Check if a user has access (directly assigned) to an activity (open or closed)
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -701,7 +701,7 @@ UserId
 :   Type: optional, User Identifier.  
     User Identifier (if empty, current user will be assumed)
 
-*Outputs*
+_Outputs_
 
 HasAccessToActivity
 :   Type: Boolean.  
@@ -719,7 +719,7 @@ IsBlocked
 
 Checks if the given activity belongs to the current OutSystems BPT process that is active for this Case, and if the activity itself is also active.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -729,7 +729,7 @@ ActivityId
 :   Type: mandatory, Activity Identifier.  
     Activity Id
 
-*Outputs*
+_Outputs_
 
 IsActive
 :   Type: Boolean.  
@@ -739,13 +739,13 @@ IsActive
 
 Checks if the current associated bpt process  is active for this Case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
     Case Identifier
 
-*Outputs*
+_Outputs_
 
 IsActive
 :   Type: Boolean.  
@@ -755,7 +755,7 @@ IsActive
 
 Close an activity and validates that only the correct user can close it. Will try to close it in a synchronous way (bpt default behavior) so it performs a COMMIT in the current transition.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -789,7 +789,7 @@ IsVisibleToRequester
 
 Close an activity and validates that only the correct user can close it (will try to close the activity in an asynchronous way). Enhanced activity close funtionality in opposing the default syncronous bpt close behavior).
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -823,7 +823,7 @@ IsVisibleToRequester
 
 Enables to close an existing case instance based on an existing process identifier
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -845,11 +845,10 @@ UserId
 
 Deletes a case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
-    
 
 ### Case_Discard { #Case_Discard }
 
@@ -857,7 +856,7 @@ Discard a case instance
   
 Note: All associated running processes/activities will be terminated.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -867,7 +866,7 @@ CaseId
 
 Discards an activity (discarded status), stopping the execution of the current process flow. Calls the Activity_Discard action from the BPT API which commits the current transaction.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -885,7 +884,7 @@ Comments
 :   Type: optional, Text.  
     Additional comments for the Discard action (optional)
 
-*Outputs*
+_Outputs_
 
 IsSuccess
 :   Type: Boolean.  
@@ -895,13 +894,13 @@ IsSuccess
 
 Gets the case identifier based on the process identifier
 
-*Inputs*
+_Inputs_
 
 ProcessId
 :   Type: mandatory, Process Identifier.  
     Process Identifier
 
-*Outputs*
+_Outputs_
 
 CaseId
 :   Type: Case Identifier.  
@@ -911,7 +910,7 @@ CaseId
 
 Grants a given group access to a given Case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -929,7 +928,7 @@ HasWritePermission
 
 Grants a given user access to a given Case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -947,7 +946,7 @@ HasWritePermission
 
 Enables to initialize a new case instance based on an existing case definition identifier
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -985,7 +984,7 @@ Tags
 :   Type: optional, Text.  
     List of comma separated tags to add to the Case instance
 
-*Outputs*
+_Outputs_
 
 CaseId
 :   Type: Case Identifier.  
@@ -995,7 +994,7 @@ CaseId
 
 Checks whether a given Milestone has been achieved or not for a given Case
 
-*Inputs*
+_Inputs_
 
 MilestoneDefinitionId
 :   Type: mandatory, MilestoneDefinition Identifier.  
@@ -1005,7 +1004,7 @@ CaseId
 :   Type: mandatory, Case Identifier.  
     Case Identifier
 
-*Outputs*
+_Outputs_
 
 IsAchieved
 :   Type: Boolean.  
@@ -1015,7 +1014,7 @@ IsAchieved
 
 Opens an acitivity and validates that only the correct user can open it
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1033,7 +1032,7 @@ Comments
 :   Type: optional, Text.  
     Additional description for open action (optional)
 
-*Outputs*
+_Outputs_
 
 HandlingURL
 :   Type: Text.  
@@ -1043,7 +1042,7 @@ HandlingURL
 
 Perform an action to an existing activity associated to a case, taking into account the action specifc validations.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1065,7 +1064,7 @@ Comments
 :   Type: optional, Text.  
     Additional description (optional)
 
-*Outputs*
+_Outputs_
 
 IsSuccess
 :   Type: Boolean.  
@@ -1079,7 +1078,7 @@ HandlingURL
 
 Assigns the activity to the user, if it is not assigned. The user needs to belong to the group assigned to the activity (if the group activity is set), or have an active delegation.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1097,7 +1096,7 @@ Comments
 :   Type: optional, Text.  
     Additional description for pickup action (optional)
 
-*Outputs*
+_Outputs_
 
 IsSuccess
 :   Type: Boolean.  
@@ -1111,7 +1110,7 @@ HandlingURL
 
 Releases the activity assigned to a specific user. Can only be released by the user that has the activity assigned.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1129,7 +1128,7 @@ Comments
 :   Type: optional, Text.  
     Additional description for release action (optional)
 
-*Outputs*
+_Outputs_
 
 IsSuccess
 :   Type: Boolean.  
@@ -1139,7 +1138,7 @@ IsSuccess
 
 Removes a Tag from a Case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1153,7 +1152,7 @@ TagId
 
 Revokes access to a given Case for a given group
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1167,7 +1166,7 @@ GroupId
 
 Revokes access to a given Case for a given user
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1181,7 +1180,7 @@ UserId
 
 Skips the current activity assigned to a specific user. Can only be skipped by the user that has the activity assigned (or under a valid delegation).
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1199,7 +1198,7 @@ Comments
 :   Type: optional, Text.  
     Additional comments for the Skip action (optional)
 
-*Outputs*
+_Outputs_
 
 IsSuccess
 :   Type: Boolean.  
@@ -1209,7 +1208,7 @@ IsSuccess
 
 Reassigns the case activity to the user. The user needs to belong to the group assigned to the activity (if the activity group is set)
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1227,7 +1226,7 @@ Comments
 :   Type: optional, Text.  
     Additional description for takeover action (optional)
 
-*Outputs*
+_Outputs_
 
 IsSuccess
 :   Type: Boolean.  
@@ -1237,7 +1236,7 @@ IsSuccess
 
 Enables to unblock an existing blocked activity associated to an existing case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1259,7 +1258,7 @@ Comments
 
 Updates Group access to a given Case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1277,7 +1276,7 @@ HasWritePermission
 
 Updates the priority for an existing case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1303,7 +1302,7 @@ DelegatedBy
 
 Updates the status for an existing case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1329,7 +1328,7 @@ DelegatedBy
 
 Updates the Status for an existing case from an exisiting activity
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -1351,7 +1350,7 @@ DelegatedBy
 
 Updates User access to a given Case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1369,7 +1368,7 @@ HasWritePermission
 
 Validates if a User has access to a given Case (either by himself or under an active delegation)
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1379,7 +1378,7 @@ UserId
 :   Type: optional, User Identifier.  
     User Identifier (if not filled it assumes the user currently logged in)
 
-*Outputs*
+_Outputs_
 
 CaseAccessDetails
 :   Type: [CaseAccess](<#Structure_CaseAccess>).  
@@ -1389,7 +1388,7 @@ CaseAccessDetails
 
 Get the Action chosen by the user for a specified activity
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1399,7 +1398,7 @@ ActivityId
 :   Type: mandatory, Activity Identifier.  
     Activity Identifier
 
-*Outputs*
+_Outputs_
 
 ActionId
 :   Type: Text.  
@@ -1413,7 +1412,7 @@ UserId
 
 Grants a given group access to all cases from a given Case Definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -1431,7 +1430,7 @@ HasWritePermission
 
 Grants a given user access to all cases from a given Case Definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -1449,7 +1448,7 @@ HasWritePermission
 
 Revokes access to cases from a given Case Definition (from a group)
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -1463,7 +1462,7 @@ GroupId
 
 Revokes access to cases fom a given CaseDefinition (from a user)
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -1477,7 +1476,7 @@ UserId
 
 Updates Group access permissions to a given Case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -1495,7 +1494,7 @@ HasWritePermission
 
 Updates User access permissions to a given Case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -1513,7 +1512,7 @@ HasWritePermission
 
 Get all delegations which current user has access to.
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: mandatory, [FilterResults2](<#Structure_FilterResults2>).  
@@ -1523,7 +1522,7 @@ Timestamp
 :   Type: optional, Date Time.  
     Delegations that are within in this date
 
-*Outputs*
+_Outputs_
 
 Delegations
 :   Type: [Delegation_View](<#Structure_Delegation_View>) List.  
@@ -1537,13 +1536,13 @@ TotalResults
 
 Get a delegation by Identifier, if the user has access to it
 
-*Inputs*
+_Inputs_
 
 DelegationId
 :   Type: mandatory, Delegation Identifier.  
     Delegation Identifier
 
-*Outputs*
+_Outputs_
 
 Delegation
 :   Type: [Delegation_View](<#Structure_Delegation_View>).  
@@ -1553,7 +1552,7 @@ Delegation
 
 Gets the active delegations for the specified user in which the Timestamp is between the Delegation's From and To Dates
 
-*Inputs*
+_Inputs_
 
 Timestamp
 :   Type: optional, Date Time.  
@@ -1563,7 +1562,7 @@ ToUserId
 :   Type: optional, User Identifier.  
     User identifier (if not set current user will be used)
 
-*Outputs*
+_Outputs_
 
 Delegations
 :   Type: [Delegation_User](<#Structure_Delegation_User>).  
@@ -1573,7 +1572,7 @@ Delegations
 
 Checks if there is an active delegation from user (optional group) for destination user
 
-*Inputs*
+_Inputs_
 
 FromUserId
 :   Type: mandatory, User Identifier.  
@@ -1591,7 +1590,7 @@ ToUserId
 :   Type: mandatory, User Identifier.  
     Delegated User Identifier
 
-*Outputs*
+_Outputs_
 
 IsValid
 :   Type: Boolean.  
@@ -1601,7 +1600,7 @@ IsValid
 
 Give access control to a group associated to an exisitng case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1623,7 +1622,7 @@ CanEdit
 
 Give access control to a user associated to an exisitng case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1645,7 +1644,7 @@ CanEdit
 
 Checks if the currently logged in user has access to the specified case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1655,7 +1654,7 @@ CanEdit
 :   Type: optional, Boolean.  
     If true, Access Control must include CanEdit and not only CanView
 
-*Outputs*
+_Outputs_
 
 HasAccess
 :   Type: Boolean.  
@@ -1665,7 +1664,7 @@ HasAccess
 
 Remove access control from a group to an existing case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1679,7 +1678,7 @@ GroupId
 
 Remove access control from a user to an existing case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1693,7 +1692,7 @@ UserId
 
 Will check and assign/unassign access control to a case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1715,7 +1714,7 @@ IsAssign
 
 Sends an email in the context of a case. DO NOT call this action to send test emails or preview emails.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -1736,7 +1735,6 @@ From
 To
 :   Type: optional, Text.  
     If more than one, separate email addresses with a comma (,). The To or GroupMatrix must be filled in.  
-    
 
 ToGroupId
 :   Type: optional, Group Identifier.  
@@ -1763,7 +1761,7 @@ UserId
 :   Type: optional, User Identifier.  
     User identifier for the user to send the email (optional)
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -1777,7 +1775,7 @@ Error
 
 Gets the list of users for an existing group. The role is an optional search criteria.
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: optional, [FilterResults](<#Structure_FilterResults>).  
@@ -1791,7 +1789,7 @@ RoleId
 :   Type: optional, Role Identifier.  
     Role Identifier
 
-*Outputs*
+_Outputs_
 
 SearchResults
 :   Type: [User_SearchResults](<#Structure_User_SearchResults>).  
@@ -1801,13 +1799,13 @@ SearchResults
 
 Gets the list of users that can be assoicated to an existing group
 
-*Inputs*
+_Inputs_
 
 GroupId
 :   Type: mandatory, Group Identifier.  
     Group Identifier
 
-*Outputs*
+_Outputs_
 
 SearchResults
 :   Type: [User_SearchResults](<#Structure_User_SearchResults>).  
@@ -1817,7 +1815,7 @@ SearchResults
 
 Checks if the group contains the user association
 
-*Inputs*
+_Inputs_
 
 GroupId
 :   Type: mandatory, Group Identifier.  
@@ -1827,7 +1825,7 @@ UserId
 :   Type: mandatory, User Identifier.  
     User Identifier
 
-*Outputs*
+_Outputs_
 
 IsSuccess
 :   Type: Boolean.  
@@ -1837,13 +1835,13 @@ IsSuccess
 
 Gets all Group Matrix
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: optional, [FilterResults](<#Structure_FilterResults>).  
     Filter options for the group matrix
 
-*Outputs*
+_Outputs_
 
 GroupExtendedDetails
 :   Type: [GroupExtended_Detail](<#Structure_GroupExtended_Detail>) List.  
@@ -1857,13 +1855,13 @@ TotalResults
 
 Gets sepecific group details
 
-*Inputs*
+_Inputs_
 
 GroupId
 :   Type: mandatory, Group Identifier.  
     Group Identifier
 
-*Outputs*
+_Outputs_
 
 GroupExtendedDetails
 :   Type: [GroupExtended_Detail](<#Structure_GroupExtended_Detail>).  
@@ -1873,13 +1871,13 @@ GroupExtendedDetails
 
 Gets sepecific group details by group name (exact match)
 
-*Inputs*
+_Inputs_
 
 GroupName
 :   Type: mandatory, Text.  
     Group Name
 
-*Outputs*
+_Outputs_
 
 GroupExtendedDetails
 :   Type: [GroupExtended_Detail](<#Structure_GroupExtended_Detail>).  
@@ -1889,13 +1887,13 @@ GroupExtendedDetails
 
 Gets sepecific group details
 
-*Inputs*
+_Inputs_
 
 Id
 :   Type: mandatory, GroupExtended Identifier.  
     Group Matrix Id
 
-*Outputs*
+_Outputs_
 
 GroupExtendedDetails
 :   Type: [GroupExtended_Detail](<#Structure_GroupExtended_Detail>).  
@@ -1905,13 +1903,13 @@ GroupExtendedDetails
 
 Gets the Group Identifier by the Group extended  Identifier
 
-*Inputs*
+_Inputs_
 
 Id
 :   Type: mandatory, GroupExtended Identifier.  
     Groups Matrix identifier
 
-*Outputs*
+_Outputs_
 
 GroupId
 :   Type: Group Identifier.  
@@ -1921,7 +1919,7 @@ GroupId
 
 Gets the list of groups that the user belongs to
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: optional, [FilterResults](<#Structure_FilterResults>).  
@@ -1931,7 +1929,7 @@ UserId
 :   Type: mandatory, User Identifier.  
     User Identifier
 
-*Outputs*
+_Outputs_
 
 GroupExtendedDetails
 :   Type: [GroupExtended_Detail](<#Structure_GroupExtended_Detail>) List.  
@@ -1945,13 +1943,13 @@ TotalResults
 
 Returns the list of possible groups to be associated
 
-*Inputs*
+_Inputs_
 
 GroupExtendedId
 :   Type: mandatory, GroupExtended Identifier.  
     Group Matrix Identifier
 
-*Outputs*
+_Outputs_
 
 GroupExtendedDetails
 :   Type: [GroupExtended_Detail](<#Structure_GroupExtended_Detail>) List.  
@@ -1965,13 +1963,13 @@ TotalResults
 
 Get a Holiday record
 
-*Inputs*
+_Inputs_
 
 HolidayId
 :   Type: mandatory, Holiday Identifier.  
     Holiday Identifier
 
-*Outputs*
+_Outputs_
 
 HolidayDetail
 :   Type: [Holiday_Detail](<#Structure_Holiday_Detail>).  
@@ -1981,7 +1979,7 @@ HolidayDetail
 
 Updates the IsAchieved field to True and the AchievedOn date and AchievedBy user from a given Milestone Definition of a Case
 
-*Inputs*
+_Inputs_
 
 MilestoneDefinitionId
 :   Type: mandatory, MilestoneDefinition Identifier.  
@@ -1999,7 +1997,7 @@ AchievementDate
 
 Updates the IsAchieved field to False and resets the AchievedOn and AchievedBy fields from a given Milestone Definition of a Case
 
-*Inputs*
+_Inputs_
 
 MilestoneDefinitionId
 :   Type: mandatory, MilestoneDefinition Identifier.  
@@ -2013,13 +2011,13 @@ CaseId
 
 Get a NonWorkingDay record
 
-*Inputs*
+_Inputs_
 
 NonWorkingDayId
 :   Type: mandatory, NonWorkingDay Identifier.  
     NonWorkingDay Identifier
 
-*Outputs*
+_Outputs_
 
 NonWorkingDayDetail
 :   Type: [NonWorkingDay_Detail](<#Structure_NonWorkingDay_Detail>).  
@@ -2029,7 +2027,7 @@ NonWorkingDayDetail
 
 Calculate and set the due date time for an existing process.
 
-*Inputs*
+_Inputs_
 
 ProcessId
 :   Type: mandatory, Process Identifier.  
@@ -2051,7 +2049,7 @@ SetEvent
 :   Type: optional, Boolean.  
     If True, an event will be triggered when the process exceeds the SLA to perform specific tasks (ex: send an email).
 
-*Outputs*
+_Outputs_
 
 DueDate
 :   Type: Date Time.  
@@ -2061,7 +2059,7 @@ DueDate
 
 Calculate and set the execution time for a process based on the Process.
 
-*Inputs*
+_Inputs_
 
 ProcessId
 :   Type: mandatory, Process Identifier.  
@@ -2071,7 +2069,7 @@ ProcessId
 
 Checks if the priority has a valid value for an existing process
 
-*Inputs*
+_Inputs_
 
 ProcessId
 :   Type: mandatory, Process Identifier.  
@@ -2081,7 +2079,7 @@ ProcessDefinitionPriorityId
 :   Type: mandatory, ProcessDefinitionPriority Identifier.  
     Priority Definition Identifier
 
-*Outputs*
+_Outputs_
 
 IsValid
 :   Type: Boolean.  
@@ -2091,23 +2089,22 @@ IsValid
 
 Gets the process identifier for an existing activity
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
     Gets the process identifier associated to an existing activity
 
-*Outputs*
+_Outputs_
 
 ProcessId
 :   Type: Process Identifier.  
-    
 
 ### Process_ResumeSuspendedFromImpactAnalysis { #Process_ResumeSuspendedFromImpactAnalysis }
 
 Will try to resume the processes that were suspended due Impact Analysis after a deployment
 
-*Inputs*
+_Inputs_
 
 ProcessDefinitionId
 :   Type: mandatory, Process_Definition Identifier.  
@@ -2117,7 +2114,7 @@ ProcessDefinitionId
 
 Enables to modify the calendar of an existing process
 
-*Inputs*
+_Inputs_
 
 ProcessId
 :   Type: mandatory, Process Identifier.  
@@ -2131,7 +2128,7 @@ CalendarId
 
 Sets the due date and time for an existing process
 
-*Inputs*
+_Inputs_
 
 ProcessId
 :   Type: mandatory, Process Identifier.  
@@ -2149,7 +2146,7 @@ SetEvent
 
 Creates a process event
 
-*Inputs*
+_Inputs_
 
 ProcessEventCreateRec
 :   Type: mandatory, [ProcessEvent_Create](<#Structure_ProcessEvent_Create>).  
@@ -2164,18 +2161,17 @@ The purge will be asynchronous.
 
 Purges a specific case Id, if already closed.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
-    
 
 ### Rule_ExecuteActivityConditon { #Rule_ExecuteActivityConditon }
 
 Exceutes a rule associated to an activity to return a customized output  (as Text)  
 To identify the rule, use RuleId or RuleName/CaseDefinitionId.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -2185,7 +2181,7 @@ RuleId
 :   Type: mandatory, Rule Identifier.  
     Rule Id
 
-*Outputs*
+_Outputs_
 
 ActivityActionOutput
 :   Type: [ActivityActionOutput_View](<#Structure_ActivityActionOutput_View>).  
@@ -2196,7 +2192,7 @@ ActivityActionOutput
 Exceutes a rule associated to an object/activity to return a customized output  (as Text)  
 To identify the rule, use RuleId or RuleName/CaseDefinitionId.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -2206,7 +2202,7 @@ RuleId
 :   Type: mandatory, Rule Identifier.  
     Rule Id
 
-*Outputs*
+_Outputs_
 
 Value
 :   Type: Text.  
@@ -2217,7 +2213,7 @@ Value
 Exceutes a rule associated to an object/activity to return a specific group identifier.  
 To identify the rule, use RuleId or RuleName/CaseDefinitionId.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -2227,7 +2223,7 @@ RuleId
 :   Type: mandatory, Rule Identifier.  
     Rule Id
 
-*Outputs*
+_Outputs_
 
 GroupId
 :   Type: Group Identifier.  
@@ -2238,7 +2234,7 @@ GroupId
 Exceutes a rule associated to an object/activity to return true if the rule is applicable and valid, false otherwise.  
 To identify the rule, use RuleId or RuleName/CaseDefinitionId.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -2248,7 +2244,7 @@ RuleId
 :   Type: mandatory, Rule Identifier.  
     Ruke Id
 
-*Outputs*
+_Outputs_
 
 IsValid
 :   Type: Boolean.  
@@ -2259,7 +2255,7 @@ IsValid
 Exceutes a rule associated to an object/activity to return a list of existing status (one or more).  
 To identify the rule, use RuleId or RuleName/CaseDefinitionId.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -2269,7 +2265,7 @@ RuleId
 :   Type: mandatory, Rule Identifier.  
     Rule Id
 
-*Outputs*
+_Outputs_
 
 CaseStatusList
 :   Type: CaseStatus Identifier List.  
@@ -2280,7 +2276,7 @@ CaseStatusList
 Exceutes a rule associated to an object/activity to return a specific user identifier.  
 To identify the rule, use RuleId or RuleName/CaseDefinitionId.
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -2290,7 +2286,7 @@ RuleId
 :   Type: mandatory, Rule Identifier.  
     Rule Id
 
-*Outputs*
+_Outputs_
 
 UserId
 :   Type: User Identifier.  
@@ -2300,13 +2296,13 @@ UserId
 
 Retrieves the list of sample users
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     Case Definition Id
 
-*Outputs*
+_Outputs_
 
 IsDevelopment
 :   Type: Boolean.  
@@ -2320,21 +2316,19 @@ ListSampleUsers
 
 Login for sample users
 
-*Inputs*
+_Inputs_
 
 UserId
 :   Type: mandatory, User Identifier.  
-    
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
-    
 
 ### Timezone_ConvertFromServerTime { #Timezone_ConvertFromServerTime }
 
 Converts a server's timezone DateTime to a specific timezone.
 
-*Inputs*
+_Inputs_
 
 TimezoneId
 :   Type: mandatory, Timezone Identifier.  
@@ -2344,7 +2338,7 @@ DateTimeToConvert
 :   Type: mandatory, Date Time.  
     DateTime to convert.
 
-*Outputs*
+_Outputs_
 
 TimezoneDateTime
 :   Type: Date Time.  
@@ -2354,7 +2348,7 @@ TimezoneDateTime
 
 Converts a specific timezone DateTime to the server's timezone.
 
-*Inputs*
+_Inputs_
 
 TimezoneId
 :   Type: mandatory, Timezone Identifier.  
@@ -2364,7 +2358,7 @@ DateTimeToConvert
 :   Type: mandatory, Date Time.  
     DateTime to convert.
 
-*Outputs*
+_Outputs_
 
 ServerDateTime
 :   Type: Date Time.  
@@ -2374,13 +2368,13 @@ ServerDateTime
 
 Gets the user identifier from the username.
 
-*Inputs*
+_Inputs_
 
 Username
 :   Type: mandatory, Text.  
     User username
 
-*Outputs*
+_Outputs_
 
 UserId
 :   Type: User Identifier.  
@@ -2390,18 +2384,17 @@ UserId
 
 Gets an user extended details
 
-*Inputs*
+_Inputs_
 
 UserId
 :   Type: mandatory, User Identifier.  
     UserId
 
-*Outputs*
+_Outputs_
 
 UserDetail
 :   Type: [UserExtended_Details](<#Structure_UserExtended_Details>).  
     User detail
-
 
 ## Service Actions
 
@@ -2409,11 +2402,10 @@ UserDetail
 
 Returns the list of available actions for an existing activity based on its current details
 
-*Inputs*
+_Inputs_
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
-    
 
 UserId
 :   Type: mandatory, User Identifier.  
@@ -2423,7 +2415,7 @@ ExcludeActivityActionIds
 :   Type: optional, ActivityAction Identifier List.  
     ActivitiesActions to exclude
 
-*Outputs*
+_Outputs_
 
 ActivityActionDetailsList
 :   Type: [ActivityAction_Details](<#Structure_ActivityAction_Details>) List.  
@@ -2433,7 +2425,7 @@ ActivityActionDetailsList
 
 Gets the actual value of an extra field for a specific activity
 
-*Inputs*
+_Inputs_
 
 ActivityExtraFieldId
 :   Type: mandatory, ActivityExtraField Identifier.  
@@ -2447,7 +2439,7 @@ ReturnKeyLabel
 :   Type: optional, Boolean.  
     If true, the label/name of target entity will be returned instead of the value itself.
 
-*Outputs*
+_Outputs_
 
 ExtraFieldValue
 :   Type: [ExtraFieldValue](<#Structure_ExtraFieldValue>).  
@@ -2457,7 +2449,7 @@ ExtraFieldValue
 
 Gets all activities that match the provided scope and search criteria
 
-*Inputs*
+_Inputs_
 
 ActivityScope
 :   Type: mandatory, [ActivityScope](<#Structure_ActivityScope>).  
@@ -2483,7 +2475,7 @@ MaxResultsPerPage
 :   Type: optional, Integer.  
     Number of results per page
 
-*Outputs*
+_Outputs_
 
 ActivityResults
 :   Type: [ActivityResult](<#Structure_ActivityResult>) List.  
@@ -2501,23 +2493,21 @@ ActivityCounters
 
 Gets the list of completed and ongoing activities for a given case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
-    
 
-*Outputs*
+_Outputs_
 
 ActivityTimelineList
 :   Type: [HumanActivityTimelineDetails](<#Structure_HumanActivityTimelineDetails>) List.  
-    
 
 ### Case_GetActivityCounters { #Service_Case_GetActivityCounters }
 
 Gets the counters for each activity progress status that match the provided scope and search criteria
 
-*Inputs*
+_Inputs_
 
 ActivityScope
 :   Type: optional, [ActivityScopeCounters](<#Structure_ActivityScopeCounters>).  
@@ -2527,7 +2517,7 @@ SearchCriteria
 :   Type: optional, [SearchCriteria](<#Structure_SearchCriteria>).  
     Defines how the Activities are filtered base on their attributes.
 
-*Outputs*
+_Outputs_
 
 ActivityCounterList
 :   Type: [ActivityCounter](<#Structure_ActivityCounter>) List.  
@@ -2537,13 +2527,13 @@ ActivityCounterList
 
 Gets all the Case instances requested by the specified external requester details
 
-*Inputs*
+_Inputs_
 
 ExternalRequesterDetails
 :   Type: mandatory, [CaseExternalRequest_Details](<#Structure_CaseExternalRequest_Details>).  
     External Requester Details
 
-*Outputs*
+_Outputs_
 
 CaseDetailsList
 :   Type: [CaseDetails](<#Structure_CaseDetails>) List.  
@@ -2553,7 +2543,7 @@ CaseDetailsList
 
 Get the list of all case operations associated to an existing case instance
 
-*Inputs*
+_Inputs_
 
 FilterHistoryResults
 :   Type: mandatory, [FilterHistoryResults](<#Structure_FilterHistoryResults>).  
@@ -2567,7 +2557,7 @@ SearchDate
 :   Type: mandatory, Date.  
     Date to search
 
-*Outputs*
+_Outputs_
 
 CaseHistoryList
 :   Type: [Case_Information](<#Structure_Case_Information>) List.  
@@ -2581,13 +2571,13 @@ TotalResults
 
 Gets the list of valid status for a given case, based on the current case status and on the defined state machine (otherwise no status will be returned)
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
     Case Identifier
 
-*Outputs*
+_Outputs_
 
 CaseStatusDetailsList
 :   Type: [CaseStatus_Details](<#Structure_CaseStatus_Details>) List.  
@@ -2597,13 +2587,13 @@ CaseStatusDetailsList
 
 Gets the list of all active status for a given case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
     Case Identifier
 
-*Outputs*
+_Outputs_
 
 CaseStatusDetailsList
 :   Type: [CaseStatus_Details](<#Structure_CaseStatus_Details>) List.  
@@ -2613,13 +2603,13 @@ CaseStatusDetailsList
 
 Gets the list of all child cases for a given parent case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
     Parent Case Identifier
 
-*Outputs*
+_Outputs_
 
 CaseDetailsList
 :   Type: [Case_Details](<#Structure_Case_Details>) List.  
@@ -2629,13 +2619,13 @@ CaseDetailsList
 
 Gets all the tags associated to a specific case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
     Case identifier
 
-*Outputs*
+_Outputs_
 
 TagsList
 :   Type: [TagDetails](<#Structure_TagDetails>) List.  
@@ -2645,13 +2635,13 @@ TagsList
 
 Gets the list of case details that have matching tags with the input tag id list (exact match)
 
-*Inputs*
+_Inputs_
 
 TagIdList
 :   Type: mandatory, [TagIdentifier](<#Structure_TagIdentifier>) List.  
     Tag Identifier List
 
-*Outputs*
+_Outputs_
 
 CaseDetailsList
 :   Type: [CaseDetails_Lite](<#Structure_CaseDetails_Lite>) List.  
@@ -2661,13 +2651,13 @@ CaseDetailsList
 
 Gets the list of case details that have matching tags with the input tag label (partial match)
 
-*Inputs*
+_Inputs_
 
 Label
 :   Type: mandatory, Text.  
     Tag label
 
-*Outputs*
+_Outputs_
 
 CaseDetailsList
 :   Type: [CaseDetails_Lite](<#Structure_CaseDetails_Lite>) List.  
@@ -2677,7 +2667,7 @@ CaseDetailsList
 
 Gets all cases that meet the filter criteria
 
-*Inputs*
+_Inputs_
 
 CaseScope
 :   Type: mandatory, [CaseScope](<#Structure_CaseScope>).  
@@ -2689,7 +2679,6 @@ CaseSearchCriteria
 
 SortFieldList
 :   Type: optional, [CaseSort](<#Structure_CaseSort>) List.  
-    
 
 IncludeCounters
 :   Type: optional, Boolean.  
@@ -2703,7 +2692,7 @@ MaxResultsPerPage
 :   Type: optional, Integer.  
     Number of results per page
 
-*Outputs*
+_Outputs_
 
 CaseResults
 :   Type: [Search_CaseDetails](<#Structure_Search_CaseDetails>) List.  
@@ -2711,7 +2700,6 @@ CaseResults
 
 TotalResults
 :   Type: Long Integer.  
-    
 
 CaseCounters
 :   Type: [CaseCounter](<#Structure_CaseCounter>) List.  
@@ -2721,7 +2709,7 @@ CaseCounters
 
 Gets all cases that meet the filter criteria based on their activities
 
-*Inputs*
+_Inputs_
 
 CaseActivityScope
 :   Type: mandatory, [CaseActivityScope](<#Structure_CaseActivityScope>).  
@@ -2733,7 +2721,6 @@ SearchCriteria
 
 SortFieldList
 :   Type: optional, [CaseSort](<#Structure_CaseSort>) List.  
-    
 
 IncludeCounters
 :   Type: optional, Boolean.  
@@ -2747,7 +2734,7 @@ MaxResultsPerPage
 :   Type: optional, Integer.  
     Number of results per page
 
-*Outputs*
+_Outputs_
 
 CaseResults
 :   Type: [Search_CaseDetails](<#Structure_Search_CaseDetails>) List.  
@@ -2755,7 +2742,6 @@ CaseResults
 
 TotalResults
 :   Type: Long Integer.  
-    
 
 CaseCounters
 :   Type: [CaseCounter](<#Structure_CaseCounter>) List.  
@@ -2765,7 +2751,7 @@ CaseCounters
 
 Gets the Case state counters (Active, Closed, All) for the selected filters
 
-*Inputs*
+_Inputs_
 
 CaseActivityScope
 :   Type: mandatory, [CaseActivityScope](<#Structure_CaseActivityScope>).  
@@ -2775,7 +2761,7 @@ SearchCriteria
 :   Type: optional, [SearchCriteria](<#Structure_SearchCriteria>).  
     Defines how the Activities are filtered base on their attributes.
 
-*Outputs*
+_Outputs_
 
 CaseRequestCounts
 :   Type: [CaseCounter](<#Structure_CaseCounter>) List.  
@@ -2785,7 +2771,7 @@ CaseRequestCounts
 
 Gets the Case state counters (Active, Closed, All) for the selected filters
 
-*Inputs*
+_Inputs_
 
 RequesterScopeId
 :   Type: optional, RequesterScope Identifier.  
@@ -2796,7 +2782,7 @@ CaseSearchCriteria
 :   Type: optional, [CaseSearchCriteria](<#Structure_CaseSearchCriteria>).  
     Possible Case filters. Note: the result of mixing values for filters of different types works as an &quot;AND&quot; and inside filters of the same type as an &quot;OR&quot;, for the list of cases to return.
 
-*Outputs*
+_Outputs_
 
 CaseRequestCounts
 :   Type: [CaseCounter](<#Structure_CaseCounter>) List.  
@@ -2806,13 +2792,13 @@ CaseRequestCounts
 
 Gets information about activity statistics for a Case Definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     CaseDefinition Id
 
-*Outputs*
+_Outputs_
 
 Case_DefinitionDetails
 :   Type: [Case_DefinitionDetails](<#Structure_Case_DefinitionDetails>).  
@@ -2822,13 +2808,13 @@ Case_DefinitionDetails
 
 Gets details for an exisiting case identifier
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
     Case Identifier
 
-*Outputs*
+_Outputs_
 
 CaseDetails
 :   Type: [Case_Details](<#Structure_Case_Details>).  
@@ -2838,7 +2824,7 @@ CaseDetails
 
 Gets the actual value of an extra field for a specific case
 
-*Inputs*
+_Inputs_
 
 CaseExtraFieldId
 :   Type: mandatory, CaseExtraField Identifier.  
@@ -2852,7 +2838,7 @@ ReturnKeyLabel
 :   Type: optional, Boolean.  
     If true, the label/name of target entity will be returned instead of the value itself.
 
-*Outputs*
+_Outputs_
 
 ExtraFieldValue
 :   Type: [ExtraFieldValue](<#Structure_ExtraFieldValue>).  
@@ -2862,7 +2848,7 @@ ExtraFieldValue
 
 Gets all Users and Groups that have access to this Case instance
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -2876,7 +2862,7 @@ OnlyCanEdit
 :   Type: optional, Boolean.  
     If true, only write Access Control permissions are returned
 
-*Outputs*
+_Outputs_
 
 UsersList
 :   Type: [User_Details](<#Structure_User_Details>) List.  
@@ -2890,7 +2876,7 @@ GroupDetailsList
 
 Get the list of all case operations associated to an existing case instance
 
-*Inputs*
+_Inputs_
 
 FilterHistoryResults
 :   Type: mandatory, [FilterHistoryResults](<#Structure_FilterHistoryResults>).  
@@ -2900,7 +2886,7 @@ OrderByAscending
 :   Type: optional, Boolean.  
     Orders the history events by ascending execution order. Default is descending order.
 
-*Outputs*
+_Outputs_
 
 CaseHistoryList
 :   Type: [Case_Information](<#Structure_Case_Information>) List.  
@@ -2914,29 +2900,27 @@ TotalResults
 
 Gets the details of the Milestones associated with a given Case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
-    
 
-*Outputs*
+_Outputs_
 
 MilestoneDetails
 :   Type: [MilestoneDetails](<#Structure_MilestoneDetails>) List.  
-    
 
 ### Case_GetStatusTimeline { #Service_Case_GetStatusTimeline }
 
 Gets the status timeline (past and current) for a given case
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
     Case Identifier
 
-*Outputs*
+_Outputs_
 
 StatusDetailsList
 :   Type: [StatusDetails](<#Structure_StatusDetails>) List.  
@@ -2946,13 +2930,13 @@ StatusDetailsList
 
 Gets all activities associated with cases
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: mandatory, [CaseActivities_FilterResults](<#Structure_CaseActivities_FilterResults>).  
     Filter Results
 
-*Outputs*
+_Outputs_
 
 CaseActivityViewList
 :   Type: [CaseActivity_View](<#Structure_CaseActivity_View>) List.  
@@ -2970,7 +2954,7 @@ CaseActivityCounts
 
 Gets all activities associated with specific cases
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: mandatory, [CaseActivities_FilterResults](<#Structure_CaseActivities_FilterResults>).  
@@ -2980,7 +2964,7 @@ CaseIdentifierList
 :   Type: mandatory, [Case_Identifier](<#Structure_Case_Identifier>) List.  
     List of case identifier
 
-*Outputs*
+_Outputs_
 
 CaseActivityViewList
 :   Type: [CaseActivity_View](<#Structure_CaseActivity_View>) List.  
@@ -2990,7 +2974,7 @@ CaseActivityViewList
 
 Get activities count by each activity filter type
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -3009,7 +2993,7 @@ RequesterUserId
 :   Type: optional, User Identifier.  
     To have in mind only tasks regarding this given requester
 
-*Outputs*
+_Outputs_
 
 CaseActivityCounts
 :   Type: [Case_ActivityCount](<#Structure_Case_ActivityCount>) List.  
@@ -3019,13 +3003,13 @@ CaseActivityCounts
 
 Gets all cases that meets the filter criterias
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: mandatory, [Case_FilterResults](<#Structure_Case_FilterResults>).  
     Filter Results
 
-*Outputs*
+_Outputs_
 
 CaseRequestViewList
 :   Type: [CaseRequest_View](<#Structure_CaseRequest_View>) List.  
@@ -3043,7 +3027,7 @@ CaseRequestCounts
 
 Get requests (Case) count by each case filter type
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: optional, CaseDefinition Identifier.  
@@ -3061,7 +3045,7 @@ RequesterUserId
 :   Type: optional, User Identifier.  
     To have in mind only cases regarding this given requester
 
-*Outputs*
+_Outputs_
 
 CaseRequestCounts
 :   Type: [Case_RequestCount](<#Structure_Case_RequestCount>) List.  
@@ -3071,7 +3055,7 @@ CaseRequestCounts
 
 Gets all Tags for a given Case Definition that match the specified label. If no label is specified all tags are returned up to the MaxResults input parameter value
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -3089,12 +3073,11 @@ MaxResults
 :   Type: optional, Integer.  
     Max number of returned results
 
-*Outputs*
+_Outputs_
 
 TagList
 :   Type: [TagDetails](<#Structure_TagDetails>) List.  
     List with Tag details that match the input criteria
-
 
 ## Structures
 
@@ -3102,7 +3085,7 @@ TagList
 
 Details about activity assignment details
 
-*Attributes*
+_Attributes_
 
 ActivityUserId
 :   Type: User Identifier.  
@@ -3132,7 +3115,7 @@ ProcessIsBlocked
 
 For specific case, holds the activity view details
 
-*Attributes*
+_Attributes_
 
 Activity_Details
 :   Type: [Activity_Details](<#Structure_Activity_Details>).  
@@ -3158,11 +3141,10 @@ Delegation_Details
 
 Activity details
 
-*Attributes*
+_Attributes_
 
 ActivityId
 :   Type: Activity Identifier.  
-    
 
 Name
 :   Type: Text (100).  
@@ -3256,7 +3238,7 @@ ClosedActionName
 
 Holds information for a case activity details
 
-*Attributes*
+_Attributes_
 
 ActivityId
 :   Type: Activity Identifier.  
@@ -3302,7 +3284,7 @@ SLADetails
 
 Activity Action Detail
 
-*Attributes*
+_Attributes_
 
 ActivityActionId
 :   Type: ActivityAction Identifier.  
@@ -3316,7 +3298,7 @@ Description
 
 Structure that a represents output action condition from a condition activity from the builder
 
-*Attributes*
+_Attributes_
 
 ActionId
 :   Type: Text.  
@@ -3338,7 +3320,7 @@ NextActivityId
 
 Counter for a specific activity progress status
 
-*Attributes*
+_Attributes_
 
 ActivityProgressStatusId
 :   Type: ActivityProgressStatus Identifier.  
@@ -3358,9 +3340,7 @@ Order
 
 ### ActivityDetails { #Structure_ActivityDetails }
 
-
-
-*Attributes*
+_Attributes_
 
 IsBlocked
 :   Type: Boolean.  
@@ -3400,7 +3380,6 @@ IsResponseTimeExceeded
 
 ProcessId
 :   Type: Process Identifier.  
-    
 
 ActivityDefinitionId
 :   Type: Activity_Definition Identifier.  
@@ -3442,7 +3421,7 @@ ClosedStatusNameLang
 
 Structure that defines the considered time range of an Activity due date
 
-*Attributes*
+_Attributes_
 
 FromDate
 :   Type: Date Time.  
@@ -3456,7 +3435,7 @@ ToDate
 
 Public structure to create a new activity event
 
-*Attributes*
+_Attributes_
 
 ActivityId
 :   Type: Activity Identifier.  
@@ -3472,9 +3451,7 @@ EventOn
 
 ### ActivityHistory { #Structure_ActivityHistory }
 
-
-
-*Attributes*
+_Attributes_
 
 ActivityId
 :   Type: Activity Identifier.  
@@ -3498,47 +3475,35 @@ CurrentAssignmentDate
 
 ### ActivityResult { #Structure_ActivityResult }
 
-
-
-*Attributes*
+_Attributes_
 
 ActivityId
 :   Type: Activity Identifier.  
-    
 
 ActivityLabel
 :   Type: Text.  
-    
 
 ActivityLabelLang
 :   Type: Text.  
-    
 
 ActivityStatusId
 :   Type: Activity_Status Identifier.  
-    
 
 ActivityDetails
 :   Type: [ActivityDetails](<#Structure_ActivityDetails>).  
-    
 
 AssignedUserDetails
 :   Type: [User_Details](<#Structure_User_Details>).  
-    
 
 AssignedGroupDetails
 :   Type: [Group_Details](<#Structure_Group_Details>).  
-    
 
 CaseDetails
 :   Type: [Search_CaseDetails](<#Structure_Search_CaseDetails>).  
-    
 
 ### ActivityScope { #Structure_ActivityScope }
 
-
-
-*Attributes*
+_Attributes_
 
 ActivityAssigneeTypeId
 :   Type: ActivityAssigneeType Identifier.  
@@ -3572,9 +3537,7 @@ ActivityProgressStatusId
 
 ### ActivityScopeCounters { #Structure_ActivityScopeCounters }
 
-
-
-*Attributes*
+_Attributes_
 
 ActivityAssigneeTypeId
 :   Type: ActivityAssigneeType Identifier.  
@@ -3598,7 +3561,7 @@ ActivityAssignmentStatusId
 
 Input parameter with Activity filters. When values for different filter criteria types are sent, returned activities will match all filters (&quot;AND&quot; condition). Inside each criteria attribute list, the returned cases will match at least one of those values (&quot;OR&quot; condition).
 
-*Attributes*
+_Attributes_
 
 AssignedUserIdList
 :   Type: [User Identifier](<#Structure_User Identifier>) List.  
@@ -3624,7 +3587,7 @@ DueDate
 
 Activity fields to sort for
 
-*Attributes*
+_Attributes_
 
 ActivitySortFieldTypeId
 :   Type: ActivitySortFieldType Identifier.  
@@ -3638,7 +3601,7 @@ Ascending
 
 Public structure with the calendar deailts
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Calendar Identifier.  
@@ -3684,7 +3647,7 @@ NonWorkingDayDetailList
 
 Generic Filter Serch Structure
 
-*Attributes*
+_Attributes_
 
 PageNumber
 :   Type: Integer.  
@@ -3702,7 +3665,7 @@ OnlyActive
 
 Count of each activity filter type
 
-*Attributes*
+_Attributes_
 
 ActivityFilterCriteriaId
 :   Type: ActivityFilterCriteria2 Identifier.  
@@ -3724,7 +3687,7 @@ Order
 
 Holds activities statistics about a case definition
 
-*Attributes*
+_Attributes_
 
 CaseDefinitionId
 :   Type: CaseDefinition Identifier.  
@@ -3750,7 +3713,7 @@ ActivityList
 
 Details for an existing case
 
-*Attributes*
+_Attributes_
 
 CaseId
 :   Type: Case Identifier.  
@@ -3804,7 +3767,7 @@ CompletedOn
 
 Holds information for a case details
 
-*Attributes*
+_Attributes_
 
 CaseDefinitionId
 :   Type: CaseDefinition Identifier.  
@@ -3870,7 +3833,7 @@ ExecutionDetails
 
 Holds information for case sla details
 
-*Attributes*
+_Attributes_
 
 StartDate
 :   Type: Date Time.  
@@ -3892,7 +3855,7 @@ CreatedName
 
 Case Filter Search Structure
 
-*Attributes*
+_Attributes_
 
 CaseFilterCriteriaId
 :   Type: CaseFilterCriteria Identifier.  
@@ -3946,7 +3909,7 @@ MaxResultsPerPage
 
 Case Identifier
 
-*Attributes*
+_Attributes_
 
 CaseId
 :   Type: Case Identifier.  
@@ -3956,7 +3919,7 @@ CaseId
 
 Case Information Details
 
-*Attributes*
+_Attributes_
 
 EventTypeId
 :   Type: EventType Identifier.  
@@ -4014,7 +3977,7 @@ RuleExecutionDetails
 
 Count of each case filter type
 
-*Attributes*
+_Attributes_
 
 CaseFilterCriteriaId
 :   Type: CaseFilterCriteria Identifier.  
@@ -4036,21 +3999,19 @@ Order
 
 Information about the read/write access of a Case
 
-*Attributes*
+_Attributes_
 
 CanRead
 :   Type: Boolean.  
-    
 
 CanWrite
 :   Type: Boolean.  
-    
 
 ### CaseAccessControl_GroupDetails { #Structure_CaseAccessControl_GroupDetails }
 
 Public  structure with Group Details
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: GroupExtended Identifier.  
@@ -4080,7 +4041,7 @@ IsActive
 
 Case Activities Filter Search Structure
 
-*Attributes*
+_Attributes_
 
 ActivityFilterCriteriaId
 :   Type: ActivityFilterCriteria2 Identifier.  
@@ -4130,7 +4091,7 @@ MaxResultsPerPage
 
 Holds details for a case definition activities statistics
 
-*Attributes*
+_Attributes_
 
 ActivityDefinitionId
 :   Type: Activity_Definition Identifier.  
@@ -4152,7 +4113,7 @@ AverageDuration
 
 Represents an Activity Detail associated with a Case
 
-*Attributes*
+_Attributes_
 
 Case_Details
 :   Type: [Case_Details](<#Structure_Case_Details>).  
@@ -4186,7 +4147,7 @@ Delegation_Details
 
 Structure that defines how Cases are filtered by Activities
 
-*Attributes*
+_Attributes_
 
 CaseStateFilterId
 :   Type: CaseStateFilter Identifier.  
@@ -4230,7 +4191,7 @@ IncludeMyCases
 
 Holds a field to search for
 
-*Attributes*
+_Attributes_
 
 CaseActivityFieldSearchTypeId
 :   Type: CaseActivityFieldSearchType Identifier.  
@@ -4248,7 +4209,7 @@ FieldValue
 
 Holds a field to sort for
 
-*Attributes*
+_Attributes_
 
 CaseActivityFieldSortTypeId
 :   Type: CaseActivityFieldSortType Identifier.  
@@ -4266,7 +4227,7 @@ Ascending
 
 Count of each case filter type
 
-*Attributes*
+_Attributes_
 
 CaseStateFilterId
 :   Type: CaseStateFilter Identifier.  
@@ -4288,11 +4249,10 @@ Order
 
 Case intance details
 
-*Attributes*
+_Attributes_
 
 CaseId
 :   Type: Case Identifier.  
-    
 
 CaseDefinitionId
 :   Type: CaseDefinition Identifier.  
@@ -4330,7 +4290,7 @@ CreatedBy
 
 Details for an existing case (Case identifier and Case number)
 
-*Attributes*
+_Attributes_
 
 CaseId
 :   Type: Case Identifier.  
@@ -4344,7 +4304,7 @@ CaseNumber
 
 Public structure that enables to create case external request instances
 
-*Attributes*
+_Attributes_
 
 RequesterName
 :   Type: Text (256).  
@@ -4366,7 +4326,7 @@ RequesterExternalId
 
 Public structure with CaseExternalRequest details
 
-*Attributes*
+_Attributes_
 
 RequesterName
 :   Type: Text (256).  
@@ -4388,7 +4348,7 @@ RequesterExternalId
 
 Represents a Case Detail
 
-*Attributes*
+_Attributes_
 
 Case_Details
 :   Type: [Case_Details](<#Structure_Case_Details>).  
@@ -4396,13 +4356,12 @@ Case_Details
 
 Activity_CaseViewList
 :   Type: [Activity_CaseView](<#Structure_Activity_CaseView>) List.  
-    
 
 ### CaseScope { #Structure_CaseScope }
 
 Structure that defines how Cases are filtered by Requester Scope and Case State Filter
 
-*Attributes*
+_Attributes_
 
 RequesterScopeId
 :   Type: RequesterScope Identifier.  
@@ -4416,7 +4375,7 @@ CaseStateFilterId
 
 Possible Case filters. Note: the result of mixing values for filters of different types works as an &quot;AND&quot; and inside filters of the same type as an &quot;OR&quot;, for the list of cases to return.
 
-*Attributes*
+_Attributes_
 
 CaseDefinitionIdList
 :   Type: [CaseDefinition Identifier](<#Structure_CaseDefinition Identifier>) List.  
@@ -4454,7 +4413,7 @@ TagIdList
 
 Holds a field to search for
 
-*Attributes*
+_Attributes_
 
 CaseFieldSearchTypeId
 :   Type: CaseFieldSearchType Identifier.  
@@ -4472,7 +4431,7 @@ FieldValue
 
 Case fields to sort for
 
-*Attributes*
+_Attributes_
 
 CaseFieldSortId
 :   Type: CaseFieldSort Identifier.  
@@ -4486,7 +4445,7 @@ Ascending
 
 Holds a field to sort for
 
-*Attributes*
+_Attributes_
 
 CaseFieldSortTypeId
 :   Type: CaseFieldSortType Identifier.  
@@ -4504,7 +4463,7 @@ Ascending
 
 Case Status Detail
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseStatus Identifier.  
@@ -4534,7 +4493,7 @@ IsActive
 
 Structure that contains the Delegation Details
 
-*Attributes*
+_Attributes_
 
 UserDetails
 :   Type: [Delegation_UserDetails](<#Structure_Delegation_UserDetails>).  
@@ -4548,7 +4507,7 @@ GroupDetails
 
 Delegation User Details
 
-*Attributes*
+_Attributes_
 
 UserDetails
 :   Type: [Delegation_UserDetails](<#Structure_Delegation_UserDetails>).  
@@ -4562,7 +4521,7 @@ Delegations
 
 User Information
 
-*Attributes*
+_Attributes_
 
 UserId
 :   Type: User Identifier.  
@@ -4584,7 +4543,7 @@ Email
 
 Holds a Delegation&#180;
 
-*Attributes*
+_Attributes_
 
 DelegationId
 :   Type: Delegation Identifier.  
@@ -4618,7 +4577,7 @@ ToUser
 
 Public structure with that holds the value for a setting
 
-*Attributes*
+_Attributes_
 
 SettingTypeId
 :   Type: SettingType Identifier.  
@@ -4632,7 +4591,7 @@ Value
 
 Filter for case history list
 
-*Attributes*
+_Attributes_
 
 CaseId
 :   Type: Case Identifier.  
@@ -4666,7 +4625,7 @@ ExcludeEventTypes
 
 Filter Search Structure
 
-*Attributes*
+_Attributes_
 
 PageNumber
 :   Type: Integer.  
@@ -4688,7 +4647,7 @@ GroupName
 
 Filter Serch Structure
 
-*Attributes*
+_Attributes_
 
 PageNumber
 :   Type: Integer.  
@@ -4702,7 +4661,7 @@ MaxResultsPerPage
 
 Group Information
 
-*Attributes*
+_Attributes_
 
 GroupExtendedId
 :   Type: GroupExtended Identifier.  
@@ -4724,7 +4683,7 @@ Description
 
 Public structure with system entity group details
 
-*Attributes*
+_Attributes_
 
 GroupId
 :   Type: Group Identifier.  
@@ -4738,7 +4697,7 @@ Name
 
 Public structure to create a new Group Extended
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: GroupExtended Identifier.  
@@ -4784,7 +4743,7 @@ HasCustomManagement
 
 Public structure with the calendar holiday details
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Holiday Identifier.  
@@ -4821,27 +4780,22 @@ IsActive
 
 ### HumanActivityTimelineDetails { #Structure_HumanActivityTimelineDetails }
 
-
-
-*Attributes*
+_Attributes_
 
 UserDetail
 :   Type: [User_Details](<#Structure_User_Details>).  
-    
 
 GroupDetail
 :   Type: [Group_Details2](<#Structure_Group_Details2>).  
-    
 
 ActivityHistory
 :   Type: [ActivityHistory](<#Structure_ActivityHistory>).  
-    
 
 ### InformationGroupAccess { #Structure_InformationGroupAccess }
 
 Holds the flags for each group type access
 
-*Attributes*
+_Attributes_
 
 RequesterAccess
 :   Type: Boolean.  
@@ -4855,37 +4809,31 @@ OperatorAccess
 
 Holds the details of a Milestone
 
-*Attributes*
+_Attributes_
 
 MilestoneDefinitionId
 :   Type: MilestoneDefinition Identifier.  
-    
 
 Name
 :   Type: Text.  
-    
 
 Description
 :   Type: Text.  
-    
 
 IsAchieved
 :   Type: Boolean.  
-    
 
 AchievedOn
 :   Type: Date Time.  
-    
 
 AchievedBy
 :   Type: User Identifier.  
-    
 
 ### NonWorkingDay_Detail { #Structure_NonWorkingDay_Detail }
 
 Public structure with the non working details
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: NonWorkingDay Identifier.  
@@ -4897,7 +4845,6 @@ CalendarId
 
 WeekDayId
 :   Type: WeekDay Identifier.  
-    
 
 IsActive
 :   Type: Boolean.  
@@ -4911,7 +4858,7 @@ WeekDay
 
 Holds information for a notification case details
 
-*Attributes*
+_Attributes_
 
 NotificationTypeId
 :   Type: NotificationType Identifier.  
@@ -4937,7 +4884,7 @@ NotificationEmail
 
 Holds information for an email notification
 
-*Attributes*
+_Attributes_
 
 IsToRequester
 :   Type: Boolean.  
@@ -4991,7 +4938,7 @@ Bcc
 
 Order history results
 
-*Attributes*
+_Attributes_
 
 OrderFieldId
 :   Type: OrderField Identifier.  
@@ -5005,7 +4952,7 @@ OrderByAscending
 
 Process details
 
-*Attributes*
+_Attributes_
 
 ProcessId
 :   Type: Process Identifier.  
@@ -5031,7 +4978,7 @@ CreatedOn
 
 Holds information for a case process details
 
-*Attributes*
+_Attributes_
 
 ProcessId
 :   Type: Process Identifier.  
@@ -5045,7 +4992,7 @@ SLADetails
 
 Public structure to create a new process event
 
-*Attributes*
+_Attributes_
 
 ProcessId
 :   Type: Process Identifier.  
@@ -5063,7 +5010,7 @@ EventOn
 
 Holds information for a rule execution case details
 
-*Attributes*
+_Attributes_
 
 RuleId
 :   Type: Text (36).  
@@ -5089,7 +5036,7 @@ OutputLabel
 
 SampleUser
 
-*Attributes*
+_Attributes_
 
 UserId
 :   Type: User Identifier.  
@@ -5115,7 +5062,7 @@ GroupName
 
 Represents the details of a Case instance
 
-*Attributes*
+_Attributes_
 
 CaseId
 :   Type: Case Identifier.  
@@ -5167,7 +5114,6 @@ PriorityName
 
 CreatedBy
 :   Type: User Identifier.  
-    
 
 CreatedByName
 :   Type: Text.  
@@ -5197,7 +5143,7 @@ CompletedOn
 
 Result set filter criteria
 
-*Attributes*
+_Attributes_
 
 ActivitySearchCriteria
 :   Type: [ActivitySearchCriteria](<#Structure_ActivitySearchCriteria>).  
@@ -5211,7 +5157,7 @@ CaseSearchCriteria
 
 Holds information for sla details
 
-*Attributes*
+_Attributes_
 
 StartExecutionDate
 :   Type: Date Time.  
@@ -5237,7 +5183,7 @@ CompletedExecutionDate
 
 Case Status Details
 
-*Attributes*
+_Attributes_
 
 CaseStatusId
 :   Type: CaseStatus Identifier.  
@@ -5263,7 +5209,7 @@ UserId
 
 Public structure with Tag details
 
-*Attributes*
+_Attributes_
 
 TagId
 :   Type: Tag Identifier.  
@@ -5297,7 +5243,7 @@ LastUpdatedOn
 
 Tag Identifier
 
-*Attributes*
+_Attributes_
 
 TagId
 :   Type: Tag Identifier.  
@@ -5307,7 +5253,7 @@ TagId
 
 Generic structure with user details
 
-*Attributes*
+_Attributes_
 
 UserId
 :   Type: User Identifier.  
@@ -5329,7 +5275,7 @@ Email
 
 Public structure to return the search results for Group extended
 
-*Attributes*
+_Attributes_
 
 ListUserDetails
 :   Type: [UserExtended_Details](<#Structure_UserExtended_Details>) List.  
@@ -5343,7 +5289,7 @@ NumberResults
 
 Details about user
 
-*Attributes*
+_Attributes_
 
 UserId
 :   Type: User Identifier.  
@@ -5368,5 +5314,3 @@ ManagerUserId
 DefaultGroupExtendedId
 :   Type: GroupExtended Identifier.  
     Default user group
-
-

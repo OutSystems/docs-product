@@ -35,12 +35,12 @@ For web applications, you can use [Ajax](../../ref/lang/auto/class-ajax-refresh.
 
 To refresh only part of a screen on a web app:
 
-1. Add a button or link to the screen and set the property Method to 'Ajax Submit' so that the request to the server is performed asynchronously. 
+1. Add a button or link to the screen and set the property Method to 'Ajax Submit' so that the request to the server is performed asynchronously.
 
-2. Associate a new screen action with the button or link. 
+1. Associate a new screen action with the button or link.
 
-3. In the new screen action, update the data displayed on the screen. For example, assign screen variables or refresh data from the database using the Refresh Data tool. 
+1. In the new screen action, update the data displayed on the screen. For example, assign screen variables or refresh data from the database using the Refresh Data tool.
 
-4. Drag the Ajax Refresh from the toolbox to the action flow and select the widget that displays the updated data on the screen. The Ajax Refresh can only refresh widgets that have the property Name defined. 
+1. Drag the Ajax Refresh from the toolbox to the action flow and select the widget that displays the updated data on the screen. The Ajax Refresh can only refresh widgets that have the property Name defined.
 
 ![Flow diagram showing the process of refreshing part of a screen using Ajax in a Traditional Web App](images/screen-partial-refresh-flow.png "Ajax Screen Partial Refresh Flow")

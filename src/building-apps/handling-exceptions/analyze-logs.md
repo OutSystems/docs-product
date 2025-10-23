@@ -26,7 +26,7 @@ To access the logs of the exceptions handled in your application, do the followi
 1. Go to the management console of your OutSystems environment.
 1. Go to Monitoring section and select Errors.
 1. Select your application.
-1. Click Filter. 
+1. Click Filter.
 
 You can view only the log information of the modules for which you have permissions.
 

@@ -84,7 +84,7 @@ To add case information that's stored in the case business entity, make sure you
     1. Select **Add attribute to &lt;output-name&gt;**, and add the following attributes:
         * `ActivityResult` with **NewCaseSearch\ActivityResult** structure data type.
         * `<business-entity>` with **&lt;business-entity&gt;** entity data type.
-    
+
     ![Screenshot showing the process of adding ActivityResult and business entity attributes to the output parameter](images/list-activ-add-case-ss.png "Add Attributes to Output Parameter")
 
 1. If you followed the [procedure to get list of activities assigned to logged user](#basic-list), delete the **Assign** from the flow.

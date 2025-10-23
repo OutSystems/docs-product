@@ -19,7 +19,7 @@ coverage-type:
 
 This document contains a reference to errors that users may face in [Workflow Builder](http://workflowbuilder.outsystems.com/).
 
-## Personal environment error 
+## Personal environment error
 
 This error occurs if you try to connect Workflow Builder to a Personal Environment.
 

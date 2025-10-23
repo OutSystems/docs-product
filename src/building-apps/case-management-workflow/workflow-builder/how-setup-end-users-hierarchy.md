@@ -37,7 +37,6 @@ Workflow Builder generates for each app a set of groups, roles, and sample users
 |&lt;**AppName**&gt;Operator  |
 |&lt;**AppName**&gt;Administrator|
 
-
 |Groups |Roles in group |Sample users in group |
 |-----------------------|-------------------|-----------|
 |WB \| &lt;**AppName**&gt; \| Requesters | &lt;**AppName**&gt;Requester | Requester  |
@@ -63,7 +62,7 @@ Using the example of an **Expense Approval** app with validation with the procur
 |WB \| **Expense Approval** \| Requester            |**ExpenseApproval**Requester |Requester   |
 |WB \| **Expense Approval** \| Procurement  |**ExpenseApproval**Operator  |Procurement |
 |WB \| **Expense Approval** \| Finance      |**ExpenseApproval**Operator  |Finance     |
-|WB \| **Expense Approval** \| Administrator | **ExpenseApproval**Administrator | Administrator
+|WB \| **Expense Approval** \| Administrator | **ExpenseApproval**Administrator | Administrator |
 
 ## Configuring the hierarchy integration
 

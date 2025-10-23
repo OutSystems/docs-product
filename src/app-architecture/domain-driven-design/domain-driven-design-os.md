@@ -26,12 +26,11 @@ With OutSystems 11, several features were introduced allowing users to create a 
 
 So when's the right time to adopt or leverage the power of Domain Driven Design? That's a good question and normally one with a hard answer because each case has its own particularities.
 
-You might decide to leverage it from day one, while others might tend to leverage it later on when things start to become more complex and convoluted. 
+You might decide to leverage it from day one, while others might tend to leverage it later on when things start to become more complex and convoluted.
 
 Be aware that sometimes, DDD would be a great fit, but in others it won’t. DDD is less useful when the applications have marginal domain complexity but conversely have a great deal of technical complexity.
 
 ![Graphic representation of the balance between monolithic and domain-driven design approaches.](images/outsystems_domain_driven_architecture_10.png "Domain Driven Design Overview")
-
 
 ## Shaping Domain Driven Design
 
@@ -39,7 +38,7 @@ Shaping a DDD architecture in OutSystems follows 3 major steps:
 
 ### Design process
 
-When designing the architecture of a complex system, the best approach is "*divide to conquer*", decomposing business into smaller blocks. This decomposition bases itself on lines of businesses or product lines. Since this is an iterative process, it should only stop when you find the right granularity for the block.
+When designing the architecture of a complex system, the best approach is "_divide to conquer_", decomposing business into smaller blocks. This decomposition bases itself on lines of businesses or product lines. Since this is an iterative process, it should only stop when you find the right granularity for the block.
 
 The iterative decomposition process has 3 steps:
 
@@ -47,13 +46,13 @@ The iterative decomposition process has 3 steps:
 
 1. Identify the business’s macro processes and criteria
 
-2. Decompose each macro process using predefined criteria:
+1. Decompose each macro process using predefined criteria:
 
     a. Line of Business
 
     b. Other functional criteria
 
-3. Ask if the desired level of granularity has been achieved. If not, continue decomposing.
+1. Ask if the desired level of granularity has been achieved. If not, continue decomposing.
 
 ### Dedicate a multidisciplinary team
 
@@ -97,7 +96,7 @@ This benefits tight processes, by enforcing:
 
 Across domains, keep loose coupling relationships, providing domain APIs divided in two parts:
 
-* **Public entities** 
+* **Public entities**
 
 Read-only entities to allow consumers to list, search or mashup with other entities
 
@@ -111,7 +110,7 @@ Strong relationships between horizontal domains can be made as an exception to o
 
 ### With foundation applications in horizontals
 
-Strong coupling with foundation applications in horizontals with non-functional requirements can be referenced directly by other domains. This is useful for themes, UI patterns, and plugins. 
+Strong coupling with foundation applications in horizontals with non-functional requirements can be referenced directly by other domains. This is useful for themes, UI patterns, and plugins.
 
 ## Domain architecture
 
@@ -147,7 +146,7 @@ Reference objects between domains **are allowed within the following rules**:
 
 * Weak references like Service Actions, Structures and Entities (optionally references to Server Actions are allowed depending on configuration)
 
-* Weak downward reference between a Vertical and Horizontal Domain Service Actions, Structures and Entities 
+* Weak downward reference between a Vertical and Horizontal Domain Service Actions, Structures and Entities
 
 **Allowed references vertical to horizontal domains**
 
@@ -169,7 +168,7 @@ The same Architecture Canvas principles are applicable both within and across do
 
 ### Advanced Architecture Patterns
 
-In some situations, it is necessary to implement advanced patterns that will support business use cases. 
+In some situations, it is necessary to implement advanced patterns that will support business use cases.
 
 In this section, we will cover the most important ones related to domain architecture.
 
@@ -187,7 +186,7 @@ When the need arises to mash up data that do not change often, a query model pat
 
 ![Diagram explaining the query model pattern for mashing up data with minimal changes and synchronization requirements.](images/outsystems_domain_driven_architecture_25.png "Mashing Up Data Pattern")
 
-The query model should only expose a subset of data, the only data needed to provide list and search capabilities, and so avoiding the need to expose the entire database model and avoiding complex synchronizations. For the remaining operations like get record details or update a record, a Service Action or Rest API are to be used. 
+The query model should only expose a subset of data, the only data needed to provide list and search capabilities, and so avoiding the need to expose the entire database model and avoiding complex synchronizations. For the remaining operations like get record details or update a record, a Service Action or Rest API are to be used.
 
 ### How to validate the domain architecture
 

@@ -44,7 +44,7 @@ To define a case state machine, follow these steps:
     * `FromCaseStatusId`, with the **Data Type** set to **CaseStatusConfiguration Identifier**.
 
     * `ToCaseStatusId`, with CaseStatusConfiguration Identifier data type.
-    
+
     * `IsActive`, with boolean data type.
 
     ![Screenshot of the CaseStateMachineConfiguration static entity with attributes in the development environment](images/case-st-mac-csmcstatic-ss.png "CaseStateMachineConfiguration Static Entity")

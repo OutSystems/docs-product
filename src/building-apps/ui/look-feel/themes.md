@@ -268,13 +268,13 @@ A mobile Theme can have these placeholders in the layout block:
 * Content
 * Bottom
 
-The mobile Themes have the block-specific events and actions, which are later compiled into JavaScript/React event listeners and functions. Do not delete default events and actions relevant for the screen purpose. 
+The mobile Themes have the block-specific events and actions, which are later compiled into JavaScript/React event listeners and functions. Do not delete default events and actions relevant for the screen purpose.
 
 ## Placeholders
 
 What placeholders to use depends on the type of screen. Here is an overview for the web applications:
 
-|Type of Screen/<br/> Placeholder|Title|MainContent	|Actions|Header|Menu|Footer|
+|Type of Screen/<br/> Placeholder|Title|MainContent |Actions|Header|Menu|Footer|
 |---|---|---|---|---|---|---|
 |**Blank Screen**||Required||Optional|Optional|Optional|
 |**List Screen**|Required|Required|Optional|Optional|Optional|Optional|

@@ -28,7 +28,6 @@ In Reactive Web and Mobile apps, you can only use the Close&lt;Human Activity Na
 
 In Traditional Web apps, you can call the Close&lt;Human Activity Name&gt; action directly from server and screen actions.
 
-
 ## Input Parameters of the Close Human Activity Action
 
 The Close&lt;Human Activity Name&gt; action has the following input parameters:
@@ -85,7 +84,6 @@ To close a Human Activity from a client action:
 
     ![Screenshot showing the setting of the input parameter of the Close Human Activity Action.](images/close-human-activity-set-parameter-ss.png "Set input parameter of the Close Human Activity Action")
 
-
 ## Close Human Activity in a Screen Action
 
 <div class="info" markdown="1">
@@ -104,7 +102,7 @@ To close a Human Activity in a screen action:
 
     ![Screenshot showing the definition of the input parameter of the destination screen in the human activity.](images/human-activity-set-parameter-ss.png "Define input parameter of the destination screen in the human activity")
 
-1. Open the screen action flow. 
+1. Open the screen action flow.
 
 1. In the **Processes** tab, expand the human activity and drag the Close&lt;Human Activity Name&gt; action to the screen action flow.
 

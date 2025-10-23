@@ -24,7 +24,7 @@ topic:
 
 The best practice for mobile application development is to have a single End-User module with all the application's screens.
 
-This doesn't mean that all the content and logic associated with screens needs to be done on that module, nor that the developers work in the same module if they want to change the screens. 
+This doesn't mean that all the content and logic associated with screens needs to be done on that module, nor that the developers work in the same module if they want to change the screens.
 
 The way to minimize the impact of this single End-User module is to make sure screens only act as placeholders of information and the actual content (and eventual logic) is developed inside blocks that will be part of the Mobile Core Widgets (MCW) modules.
 
@@ -34,7 +34,7 @@ This way, the developers only need to develop the content/logic inside these par
 
 ## Separate modules by their concepts
 
-We can have Mobile Core Widgets modules and Mobile UI modules with the blocks that will have the content/logic associated with the screens of our application. 
+We can have Mobile Core Widgets modules and Mobile UI modules with the blocks that will have the content/logic associated with the screens of our application.
 
 **Doesn’t that mean that the developers will have problems in this Core Business layer instead of having them in the End-User layer?**
 
@@ -52,7 +52,6 @@ The following image shows us a real example of this. This example belongs to a c
 
 This means that developers working on the customer blocks will not clash into developers working into the common blocks or the product blocks.
 
-
 ## Communication, Communication, Communication
 
 Even with all of this best practices there’s still a chance that we’ll have developers clashing into each other if they are working in the same concept.
@@ -60,7 +59,6 @@ Even with all of this best practices there’s still a chance that we’ll have 
 For that we have the visual merging tool, similar to the one that you might be familiar with from the traditional web development.
 
 ![Screenshot of the visual merging tool interface showing two versions of a project for comparison and merging.](images/how_to_build_mobile_app_9.png "Visual Merging Tool Interface")
-
 
 This tool allows you to merge your work with another developer and is a great way to identify changes and see what has been affected in each one of the versions, allowing you to select one of the versions to keep.
 
@@ -70,7 +68,6 @@ If a conflict occurs, you’ll still need to select one of the versions to keep,
 
 ![Screenshot of a visual merge conflict resolution interface highlighting changes between two versions of a project.](images/how_to_build_mobile_app_10.png "Visual Merge Conflict Resolution")
 
-
 **That’s why good communication is crucial when dealing with these scenarios.**
 
 Let’s imagine the above-mentioned scenario. If both developers had communicated well, the visual merge that we see could have been completely avoided.
@@ -78,7 +75,6 @@ Let’s imagine the above-mentioned scenario. If both developers had communicate
 The first developer simply needed to say something in the lines of, "I’ll be working on the contacts screen, please let me publish before changing anything." After the first developer publishes, the second developer would open the current running version and make the changes he needed to make to this screen, avoiding the conflict we see.
 
 Obviously, this scenario also applies to blocks, as we’ve been analyzing.
-
 
 ## Denormalize your local storage
 
@@ -126,5 +122,5 @@ Here are two examples on how to do it:
     ![Flowchart showing a new Integration environment in the deployment lifecycle of sandbox applications for end-to-end testing.](images/how_to_build_mobile_app_13.png "Sandbox Deployment with New Integration Environment")
 
    In this scenario, there's a new environment, called Integrations, that has the responsibility of converting the screens and logic of the sandbox applications into the actual mobile application.
-   
+
    This example has the advantage of having an additional environment similar to production (pre-production), allowing for easier troubleshooting and hot-fixing.

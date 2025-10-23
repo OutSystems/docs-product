@@ -36,7 +36,6 @@ Have you called a TriggerOfflineDataSync inside a OnSyncComplete action?
 :   If you are using OnSyncComplete to trigger multiple syncs, don't call TriggerOfflineDataSync inside the OnSyncComplete, since this creates a synchronization loop.
 Instead, if you want to synchronize sequentially, call OnSyncComplete one after the other, as they get queued and processed sequentially.
 
-
 ## Performance
 
 Follow these items to validate that your mobile app does not suffer from performance and usability issues that degrade the end user experience.
@@ -59,10 +58,9 @@ If you need to react to a network status change, do you use the NetworkStatusCha
 Do you use SyncUnit of the OfflineDataSync to sync only the entities that need an update?
 :   The string parameter SyncUnit should be passed to the OfflineDataSync so the execution flow can branch and only sync the necessary entities.
 
-
 ## Application Design
 
-These items will assist you in creating a maintainable mobile application and deliver improvements over time. 
+These items will assist you in creating a maintainable mobile application and deliver improvements over time.
 
 Did you consider an app design that avoids conflicts during sync?
 :   Sometimes the app can be improved so that conflicts between the local and server data never happen. Consider whether conflicts are essential to the use case. For example, maybe the last-write-wins is a pattern that suits most of the needs or editing can be locked while the device is offline.
@@ -78,8 +76,6 @@ Does the app clear the pending sync requests when needed?
 
 Have you received the  syncWrapper is not a function error?
 :   The TriggerOfflineDataSync action calls the OfflineDataSyncEvents web block, which is required to be on the same screen. OutSystems templates include OfflineDataSyncEvents by default on the layout blocks. However, if this error occurs, ensure that the OfflineDataSyncEvents web block in the same screen where the TriggerOfflineDataSync action is called.
-
-
 
 ## End User Experience
 

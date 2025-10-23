@@ -26,7 +26,6 @@ The **SQL** element lets you run, test, and review SQL queries in your apps. SQL
 
 ![Screenshot of SQL element being used in an action flow within OutSystems development environment](images/sql-in-flow-ss.png "SQL Element in Action Flow")
 
-
 ## Accessing data
 
 **SQL** accesses data through the input parameters only, and other logic can access only what the SQL query returns through its Outputs.

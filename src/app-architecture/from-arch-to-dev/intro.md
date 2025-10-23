@@ -60,7 +60,7 @@ This article exemplifies a simple application and makes a single iteration only.
 
 ### Disclose (business concepts and integration needs)
 
-First of all, let's understand the functional and non-functional requirements. In this step, you need to find out all the user stories as you can, understand the integration needs, and the UX expectations. 
+First of all, let's understand the functional and non-functional requirements. In this step, you need to find out all the user stories as you can, understand the integration needs, and the UX expectations.
 
 **Functional Requirements**
 
@@ -82,7 +82,7 @@ First of all, let's understand the functional and non-functional requirements. I
 
 ### Organize (concepts on architecture canvas)
 
-Let's have a quick recap of the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) principles: 
+Let's have a quick recap of the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) principles:
 
 | Layer | Description |
 |---|---|

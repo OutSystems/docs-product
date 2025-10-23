@@ -144,15 +144,15 @@ The following is an example of the archiving process logic:
 
 1. **Set Archive Threshold** - Sets the number of records to archive by iteration. This threshold can be defined using a Site Property, so it can be adjusted without redeploying the module.
 
-2. **CheckRecordsToArchive** - Validates if there are records left to archive.
+1. **CheckRecordsToArchive** - Validates if there are records left to archive.
 
-3. **Has Records to Archive?** - Validates the output of the previous query and executes the archive branch if there are records to archive.
+1. **Has Records to Archive?** - Validates the output of the previous query and executes the archive branch if there are records to archive.
 
-4. **MoveIntoArchiveCatalog_InBulk** - Executes a bulk INSERT INTO SELECT statement from the main catalog to the archive catalog, combined with a clause to limit the amount of archived records (using the Archive Threshold set in step 1). It implements the archive condition.
+1. **MoveIntoArchiveCatalog_InBulk** - Executes a bulk INSERT INTO SELECT statement from the main catalog to the archive catalog, combined with a clause to limit the amount of archived records (using the Archive Threshold set in step 1). It implements the archive condition.
 
-5. **MainCatalog_SetArchivedFlag_InBulk** - Executes a bulk UPDATE to set the IsArchived flag of the records archived in the previous step.
+1. **MainCatalog_SetArchivedFlag_InBulk** - Executes a bulk UPDATE to set the IsArchived flag of the records archived in the previous step.
 
-6. **WakeArchiveData** - Re-wakes the Timer to check if there are still records to archive.
+1. **WakeArchiveData** - Re-wakes the Timer to check if there are still records to archive.
 
 Make sure the Timer:
 

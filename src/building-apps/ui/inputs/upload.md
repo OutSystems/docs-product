@@ -18,7 +18,6 @@ coverage-type:
 
 # Enable End Users to Upload Files
 
-
 Use the Upload widget to allow users to upload files, such as photos to your application.
 
 ## Reactive Web and Mobile

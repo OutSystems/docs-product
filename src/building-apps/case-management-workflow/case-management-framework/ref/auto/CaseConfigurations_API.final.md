@@ -32,202 +32,202 @@ For example, this API is used to configure the following entities related to the
 
 ## Summary
 
-Action | Description
----|---
-[BootstrapCaseConfiguration](<#BootstrapCaseConfiguration>) | Bootstraps the case configuration
-[Calendar_Create](<#Calendar_Create>) | Action to create a new calendar
-[Calendar_CreateOrUpdate](<#Calendar_CreateOrUpdate>) | Action to create or update a calendar
-[Calendar_Delete](<#Calendar_Delete>) | Deletes an existiing calendar
-[Calendar_Update](<#Calendar_Update>) | Update an existing calendar
-[CaseAction_Bootstrap](<#CaseAction_Bootstrap>) | Bootstraps the list of Case Workflow Actions
-[CaseDefinition_CheckValidStatus](<#CaseDefinition_CheckValidStatus>) | Checks if the status is valid for a specific case definition
-[CaseDefinition_Create](<#CaseDefinition_Create>) | Creates a new case definition
-[CaseDefinition_CreateOrUpdate](<#CaseDefinition_CreateOrUpdate>) | Creates or updates a case definition
-[CaseDefinition_Delete](<#CaseDefinition_Delete>) | Deletes an existing case definition
-[CaseDefinition_GetActions](<#CaseDefinition_GetActions>) | Gets the actions associated to a case definition
-[CaseDefinition_GetAll](<#CaseDefinition_GetAll>) | Gets the list of active CaseDefinitions
-[CaseDefinition_GetById](<#CaseDefinition_GetById>) | Gets a specific Case Definition by case identifier
-[CaseDefinition_GetDetailByProcessDefinitionId](<#CaseDefinition_GetDetailByProcessDefinitionId>) | Gets the Case Definition details
-[CaseDefinition_GetEligibleToPurge](<#CaseDefinition_GetEligibleToPurge>) | Get the case definitions that are eligible to purge, ie, without any case instance and which application is also deleted
-[CaseDefinition_GetEntityId](<#CaseDefinition_GetEntityId>) | Gets the associated entity identifier
-[CaseDefinition_GetInitialStatus](<#CaseDefinition_GetInitialStatus>) | Gets the initial status for a given case definition.
-[CaseDefinition_GetProcessDefinitionId](<#CaseDefinition_GetProcessDefinitionId>) | Gets the associated process definition identifier
-[CaseDefinition_GetProcessDefinitionList](<#CaseDefinition_GetProcessDefinitionList>) | Gets the list of process definitions associated with case definitions
-[CaseDefinition_GetStatusList](<#CaseDefinition_GetStatusList>) | Gets the list of all valid statuses for a given case definition.
-[CaseDefinition_LinkToMilestoneDefinition](<#CaseDefinition_LinkToMilestoneDefinition>) | Sets a relation between a CaseDefinition and a MilestoneDefinition
-[CaseDefinition_PreviewByProcessDefinition](<#CaseDefinition_PreviewByProcessDefinition>) | Previews the keys for the CaseDefinition based on a ProcessDefinition
-[CaseDefinition_Purge](<#CaseDefinition_Purge>) | Purges a Case Definition
-[CaseDefinition_UnlinkFromMilestoneDefinition](<#CaseDefinition_UnlinkFromMilestoneDefinition>) | Removes a relation between a CaseDefinition and a MilestoneDefinition
-[CaseDefinition_Update](<#CaseDefinition_Update>) | Updates an existing case definition
-[CaseStateMachine_Create](<#CaseStateMachine_Create>) | Creates a new State Machine entry
-[CaseStateMachine_CreateOrUpdate](<#CaseStateMachine_CreateOrUpdate>) | Creates or updates a State Machine entry
-[CaseStateMachine_GetByTransition](<#CaseStateMachine_GetByTransition>) | Gets the case state machine record by status transition
-[CaseStateMachine_Purge](<#CaseStateMachine_Purge>) | Purge a Case State Machine
-[CaseStateMachine_Update](<#CaseStateMachine_Update>) | Updates an existing State Machine entry
-[CaseStatus_Bootstrap](<#CaseStatus_Bootstrap>) | Will replace the existing case definiton statuses (or create if new) for a specific CaseDefinition
-[CaseStatus_Create](<#CaseStatus_Create>) | Creates a new Case Status
-[CaseStatus_CreateOrUpdate](<#CaseStatus_CreateOrUpdate>) | Creates or updates a Case Status
-[CaseStatus_Delete](<#CaseStatus_Delete>) | Deletes a Case Status
-[CaseStatus_GetById](<#CaseStatus_GetById>) | Gets the status details by identifier
-[CaseStatus_Update](<#CaseStatus_Update>) | Updates an existing Case Status
-[CaseTag_Create](<#CaseTag_Create>) | Enables to create a CaseTag instance in the CaseTag entity
-[CheckApplicationStatus](<#CheckApplicationStatus>) | Check the status of an application
-[Delegation_Create](<#Delegation_Create>) | Creates a new Delegation
-[Delegation_CreateOrUpdate](<#Delegation_CreateOrUpdate>) | Creates or updates a delegation
-[Delegation_Delete](<#Delegation_Delete>) | Deletes an existing Delegation. Can only be removed by the user that created the delegation, if not it will raise an exception.
-[Delegation_Update](<#Delegation_Update>) | Updates an existing Delegation. Can only be updated by the user that created the delegation, if not it will raise an exc
-[DEPRECATED_SetupCaseManagementApplication](<#DEPRECATED_SetupCaseManagementApplication>) | Sets up the basic configurations for a case management application
-[Email_ProcessPlaceholders](<#Email_ProcessPlaceholders>) | It will replace the placeholders by the actual case data
-[EmailTemplate_Create](<#EmailTemplate_Create>) | Creates an EmailTemplate object
-[EmailTemplate_CreateOrUpdate](<#EmailTemplate_CreateOrUpdate>) | Creates or updates an EmailTemplate object
-[EmailTemplate_GetAll](<#EmailTemplate_GetAll>) | Gets all EmailTemplates that matches the search criteria
-[EmailTemplate_GetById](<#EmailTemplate_GetById>) | Gets a EmailTemplate by Id
-[EmailTemplate_Update](<#EmailTemplate_Update>) | Updates an EmailTemplate object
-[EntityAttr_GetByGlobalKey](<#EntityAttr_GetByGlobalKey>) | Gets the AttributeId based on it's GlobalKey
-[Espace_GetForActivityScreen](<#Espace_GetForActivityScreen>) | Gets list of espaces that can have screens to an activity can be opened by
-[GetBusinessEntities](<#GetBusinessEntities>) | Gets the list of business entities based on a case definition
-[GetBusinessEntityAttributes](<#GetBusinessEntityAttributes>) | Gets the list of business entities attributes based on an entity
-[GetSystemDefaultDaysToPurge](<#GetSystemDefaultDaysToPurge>) | Gets the system sefault days to purge the case data
-[GlobalKey_Parse](<#GlobalKey_Parse>) | Parses a GlobalKey
-[Group_AssignGroupToUser](<#Group_AssignGroupToUser>) | Assigns a user to a group
-[Group_GetGroupsToAssociate](<#Group_GetGroupsToAssociate>) | Gets existing groups not associated with group extended that can be associated
-[Group_UnassignGroupFromUser](<#Group_UnassignGroupFromUser>) | Removes the user association fromo a group
-[GroupExtended_CreateOrUpdate](<#GroupExtended_CreateOrUpdate>) | Creates or updates an existing Group Matrix
-[GroupExtended_Delete](<#GroupExtended_Delete>) | Removes an existing Group Matrix. Can only be removed if no association exists to the group (activity, role or user association)
-[Holiday_Create](<#Holiday_Create>) | Create a new calendar holiday associated to an existing calendar.
-[Holiday_CreateOrUpdate](<#Holiday_CreateOrUpdate>) | Action to create or update an event of a calendar
-[Holiday_Delete](<#Holiday_Delete>) | Deletes an existing calendar holiday
-[Holiday_Update](<#Holiday_Update>) | Updates an existing calendar holiday
-[Hostname_Get](<#Hostname_Get>) | Gets Server Hostname
-[ImportUserHierarchy_GetSample](<#ImportUserHierarchy_GetSample>) | Get a sample of the file content to perform an import
-[ImportUserHierarchy_GetStatus](<#ImportUserHierarchy_GetStatus>) | Check the status of an import request
-[Lookup_GetEntityRecords](<#Lookup_GetEntityRecords>) | Lookup an Entity
-[Lookup_GetExtraFieldRecords](<#Lookup_GetExtraFieldRecords>) | Lookup an Extra field value
-[MilestoneDefinition_Create](<#MilestoneDefinition_Create>) | Creates a new milestone definition
-[MilestoneDefinition_CreateOrUpdate](<#MilestoneDefinition_CreateOrUpdate>) | Creates or updates a milestone definition
-[MilestoneDefinition_Delete](<#MilestoneDefinition_Delete>) | Inactivates an existing milestone definition
-[MilestoneDefinition_Update](<#MilestoneDefinition_Update>) | Updates an existing milestone definition
-[NonWorkingDay_Create](<#NonWorkingDay_Create>) | Create a new calendar non working day associated to an existing calendar
-[NonWorkingDay_CreateOrUpdate](<#NonWorkingDay_CreateOrUpdate>) | Action to create or update a non working day associated to an existing calendar
-[NonWorkingDay_Delete](<#NonWorkingDay_Delete>) | Deletes an existing calendar non working day
-[NonWorkingDay_Update](<#NonWorkingDay_Update>) | Updates an existiing calendar non working day
-[NotificationsEngine_InitializeStaging](<#NotificationsEngine_InitializeStaging>) | It will mark all entries as deleted for the staging process after only import the active ones
-[PreDefinedTemplate_Create](<#PreDefinedTemplate_Create>) | Creates a PredefinedTemplate object
-[PreDefinedTemplate_CreateOrUpdate](<#PreDefinedTemplate_CreateOrUpdate>) | Creates or updates a PredefinedTemplate object
-[PreDefinedTemplate_GetAll](<#PreDefinedTemplate_GetAll>) | Gets all predefined templates
-[PreDefinedTemplate_GetById](<#PreDefinedTemplate_GetById>) | Gets a predefined template
-[PreDefinedTemplate_Update](<#PreDefinedTemplate_Update>) | Updates a PredefinedTemplate object
-[Resource_CreateOrUpdate](<#Resource_CreateOrUpdate>) | Creates or Updates a Resource
-[Resource_Delete](<#Resource_Delete>) | Deletes a Resource
-[Resource_GetById](<#Resource_GetById>) | Gets a Resource by Id
-[Resource_Purge](<#Resource_Purge>) | Resource hard delete
-[Resources_GetAll](<#Resources_GetAll>) | Gets All Resources
-[Resources_InitializeStaging](<#Resources_InitializeStaging>) | It will mark all entries as deleted for the staging process after only import the active ones
-[Rule_Create](<#Rule_Create>) | Create a Rule record
-[Rule_CreateOrUpdate](<#Rule_CreateOrUpdate>) | Create or update a Rule record
-[Rule_Delete](<#Rule_Delete>) | Deletes a whole rule
-[Rule_Update](<#Rule_Update>) | Update a Rule record
-[RuleGroup_Create](<#RuleGroup_Create>) | Create a Rule Group record
-[RuleGroup_CreateOrUpdate](<#RuleGroup_CreateOrUpdate>) | Create or update a Rule Group record
-[RuleGroup_Delete](<#RuleGroup_Delete>) | Deletes a Rule Group
-[RuleGroup_DeleteAllByRuleId](<#RuleGroup_DeleteAllByRuleId>) | Deletes all Rule Group from a Rule
-[RuleGroup_Update](<#RuleGroup_Update>) | Update a Rule Group record
-[RuleGroupOutput_CreateOrUpdate](<#RuleGroupOutput_CreateOrUpdate>) | Create or update a Rule Group Output record
-[RuleLine_CreateOrUpdate](<#RuleLine_CreateOrUpdate>) | Creates or updates a Rule Line
-[RuleLine_Delete](<#RuleLine_Delete>) | Deletes a RuleLine
-[Rules_GetAll](<#Rules_GetAll>) | Get all rules available
-[Rules_GetById](<#Rules_GetById>) | Get a rule by Id
-[Rules_InitializeStaging](<#Rules_InitializeStaging>) | It will mark all entries as deleted for the staging process after only import the active ones
-[RulesGroup_GetAll](<#RulesGroup_GetAll>) | Get all RuleGroups from a Rule
-[RulesOperator_GetBySettingType](<#RulesOperator_GetBySettingType>) | Returns the operations available for the respective setting type
-[SampleUser_CreateOrUpdate](<#SampleUser_CreateOrUpdate>) | Create sample users (verifiy if is a second publish and disable all users before create news) and associate to its role and to its group (if applicable).
-[Setting_ConvertSetting](<#Setting_ConvertSetting>) | Converts a Setting value to an CreateOrUpdate structure
-[Setting_CreateOrUpdate](<#Setting_CreateOrUpdate>) | Public action that enables to create or update a setting
-[Setting_Delete](<#Setting_Delete>) | Public action that deletes a setting
-[Setting_DeleteList](<#Setting_DeleteList>) | Public action that deletes a list of settings
-[Setting_GetById](<#Setting_GetById>) | Gets a Setting by it's Id
-[Setting_Purge](<#Setting_Purge>) | Public action to hard delete a setting
-[SettingType_GetByColumnType](<#SettingType_GetByColumnType>) | Gets the attribute setting type
-[Tag_Create](<#Tag_Create>) | Enables to create a Tag instance in the Tag entity
-[Tag_Delete](<#Tag_Delete>) | Asynchronously deletes all CaseTag records for a given Tag before deleting the Tag itself. Saves in each case's History each tag deletion.
-[Tag_Update](<#Tag_Update>) | Enables to update a Tag instance in the Tag entity
-[UserExtended_CreateOrUpdate](<#UserExtended_CreateOrUpdate>) | Creates or updates an User extended record
-[UserHierarchy_Import](<#UserHierarchy_Import>) | Submits a requests to import user's hierarchy
+| Action | Description |
+| ---|--- |
+| [BootstrapCaseConfiguration](<#BootstrapCaseConfiguration>) | Bootstraps the case configuration |
+| [Calendar_Create](<#Calendar_Create>) | Action to create a new calendar |
+| [Calendar_CreateOrUpdate](<#Calendar_CreateOrUpdate>) | Action to create or update a calendar |
+| [Calendar_Delete](<#Calendar_Delete>) | Deletes an existiing calendar |
+| [Calendar_Update](<#Calendar_Update>) | Update an existing calendar |
+| [CaseAction_Bootstrap](<#CaseAction_Bootstrap>) | Bootstraps the list of Case Workflow Actions |
+| [CaseDefinition_CheckValidStatus](<#CaseDefinition_CheckValidStatus>) | Checks if the status is valid for a specific case definition |
+| [CaseDefinition_Create](<#CaseDefinition_Create>) | Creates a new case definition |
+| [CaseDefinition_CreateOrUpdate](<#CaseDefinition_CreateOrUpdate>) | Creates or updates a case definition |
+| [CaseDefinition_Delete](<#CaseDefinition_Delete>) | Deletes an existing case definition |
+| [CaseDefinition_GetActions](<#CaseDefinition_GetActions>) | Gets the actions associated to a case definition |
+| [CaseDefinition_GetAll](<#CaseDefinition_GetAll>) | Gets the list of active CaseDefinitions |
+| [CaseDefinition_GetById](<#CaseDefinition_GetById>) | Gets a specific Case Definition by case identifier |
+| [CaseDefinition_GetDetailByProcessDefinitionId](<#CaseDefinition_GetDetailByProcessDefinitionId>) | Gets the Case Definition details |
+| [CaseDefinition_GetEligibleToPurge](<#CaseDefinition_GetEligibleToPurge>) | Get the case definitions that are eligible to purge, ie, without any case instance and which application is also deleted |
+| [CaseDefinition_GetEntityId](<#CaseDefinition_GetEntityId>) | Gets the associated entity identifier |
+| [CaseDefinition_GetInitialStatus](<#CaseDefinition_GetInitialStatus>) | Gets the initial status for a given case definition. |
+| [CaseDefinition_GetProcessDefinitionId](<#CaseDefinition_GetProcessDefinitionId>) | Gets the associated process definition identifier |
+| [CaseDefinition_GetProcessDefinitionList](<#CaseDefinition_GetProcessDefinitionList>) | Gets the list of process definitions associated with case definitions |
+| [CaseDefinition_GetStatusList](<#CaseDefinition_GetStatusList>) | Gets the list of all valid statuses for a given case definition. |
+| [CaseDefinition_LinkToMilestoneDefinition](<#CaseDefinition_LinkToMilestoneDefinition>) | Sets a relation between a CaseDefinition and a MilestoneDefinition |
+| [CaseDefinition_PreviewByProcessDefinition](<#CaseDefinition_PreviewByProcessDefinition>) | Previews the keys for the CaseDefinition based on a ProcessDefinition |
+| [CaseDefinition_Purge](<#CaseDefinition_Purge>) | Purges a Case Definition |
+| [CaseDefinition_UnlinkFromMilestoneDefinition](<#CaseDefinition_UnlinkFromMilestoneDefinition>) | Removes a relation between a CaseDefinition and a MilestoneDefinition |
+| [CaseDefinition_Update](<#CaseDefinition_Update>) | Updates an existing case definition |
+| [CaseStateMachine_Create](<#CaseStateMachine_Create>) | Creates a new State Machine entry |
+| [CaseStateMachine_CreateOrUpdate](<#CaseStateMachine_CreateOrUpdate>) | Creates or updates a State Machine entry |
+| [CaseStateMachine_GetByTransition](<#CaseStateMachine_GetByTransition>) | Gets the case state machine record by status transition |
+| [CaseStateMachine_Purge](<#CaseStateMachine_Purge>) | Purge a Case State Machine |
+| [CaseStateMachine_Update](<#CaseStateMachine_Update>) | Updates an existing State Machine entry |
+| [CaseStatus_Bootstrap](<#CaseStatus_Bootstrap>) | Will replace the existing case definiton statuses (or create if new) for a specific CaseDefinition |
+| [CaseStatus_Create](<#CaseStatus_Create>) | Creates a new Case Status |
+| [CaseStatus_CreateOrUpdate](<#CaseStatus_CreateOrUpdate>) | Creates or updates a Case Status |
+| [CaseStatus_Delete](<#CaseStatus_Delete>) | Deletes a Case Status |
+| [CaseStatus_GetById](<#CaseStatus_GetById>) | Gets the status details by identifier |
+| [CaseStatus_Update](<#CaseStatus_Update>) | Updates an existing Case Status |
+| [CaseTag_Create](<#CaseTag_Create>) | Enables to create a CaseTag instance in the CaseTag entity |
+| [CheckApplicationStatus](<#CheckApplicationStatus>) | Check the status of an application |
+| [Delegation_Create](<#Delegation_Create>) | Creates a new Delegation |
+| [Delegation_CreateOrUpdate](<#Delegation_CreateOrUpdate>) | Creates or updates a delegation |
+| [Delegation_Delete](<#Delegation_Delete>) | Deletes an existing Delegation. Can only be removed by the user that created the delegation, if not it will raise an exception. |
+| [Delegation_Update](<#Delegation_Update>) | Updates an existing Delegation. Can only be updated by the user that created the delegation, if not it will raise an exc |
+| [DEPRECATED_SetupCaseManagementApplication](<#DEPRECATED_SetupCaseManagementApplication>) | Sets up the basic configurations for a case management application |
+| [Email_ProcessPlaceholders](<#Email_ProcessPlaceholders>) | It will replace the placeholders by the actual case data |
+| [EmailTemplate_Create](<#EmailTemplate_Create>) | Creates an EmailTemplate object |
+| [EmailTemplate_CreateOrUpdate](<#EmailTemplate_CreateOrUpdate>) | Creates or updates an EmailTemplate object |
+| [EmailTemplate_GetAll](<#EmailTemplate_GetAll>) | Gets all EmailTemplates that matches the search criteria |
+| [EmailTemplate_GetById](<#EmailTemplate_GetById>) | Gets a EmailTemplate by Id |
+| [EmailTemplate_Update](<#EmailTemplate_Update>) | Updates an EmailTemplate object |
+| [EntityAttr_GetByGlobalKey](<#EntityAttr_GetByGlobalKey>) | Gets the AttributeId based on it's GlobalKey |
+| [Espace_GetForActivityScreen](<#Espace_GetForActivityScreen>) | Gets list of espaces that can have screens to an activity can be opened by |
+| [GetBusinessEntities](<#GetBusinessEntities>) | Gets the list of business entities based on a case definition |
+| [GetBusinessEntityAttributes](<#GetBusinessEntityAttributes>) | Gets the list of business entities attributes based on an entity |
+| [GetSystemDefaultDaysToPurge](<#GetSystemDefaultDaysToPurge>) | Gets the system sefault days to purge the case data |
+| [GlobalKey_Parse](<#GlobalKey_Parse>) | Parses a GlobalKey |
+| [Group_AssignGroupToUser](<#Group_AssignGroupToUser>) | Assigns a user to a group |
+| [Group_GetGroupsToAssociate](<#Group_GetGroupsToAssociate>) | Gets existing groups not associated with group extended that can be associated |
+| [Group_UnassignGroupFromUser](<#Group_UnassignGroupFromUser>) | Removes the user association fromo a group |
+| [GroupExtended_CreateOrUpdate](<#GroupExtended_CreateOrUpdate>) | Creates or updates an existing Group Matrix |
+| [GroupExtended_Delete](<#GroupExtended_Delete>) | Removes an existing Group Matrix. Can only be removed if no association exists to the group (activity, role or user association) |
+| [Holiday_Create](<#Holiday_Create>) | Create a new calendar holiday associated to an existing calendar. |
+| [Holiday_CreateOrUpdate](<#Holiday_CreateOrUpdate>) | Action to create or update an event of a calendar |
+| [Holiday_Delete](<#Holiday_Delete>) | Deletes an existing calendar holiday |
+| [Holiday_Update](<#Holiday_Update>) | Updates an existing calendar holiday |
+| [Hostname_Get](<#Hostname_Get>) | Gets Server Hostname |
+| [ImportUserHierarchy_GetSample](<#ImportUserHierarchy_GetSample>) | Get a sample of the file content to perform an import |
+| [ImportUserHierarchy_GetStatus](<#ImportUserHierarchy_GetStatus>) | Check the status of an import request |
+| [Lookup_GetEntityRecords](<#Lookup_GetEntityRecords>) | Lookup an Entity |
+| [Lookup_GetExtraFieldRecords](<#Lookup_GetExtraFieldRecords>) | Lookup an Extra field value |
+| [MilestoneDefinition_Create](<#MilestoneDefinition_Create>) | Creates a new milestone definition |
+| [MilestoneDefinition_CreateOrUpdate](<#MilestoneDefinition_CreateOrUpdate>) | Creates or updates a milestone definition |
+| [MilestoneDefinition_Delete](<#MilestoneDefinition_Delete>) | Inactivates an existing milestone definition |
+| [MilestoneDefinition_Update](<#MilestoneDefinition_Update>) | Updates an existing milestone definition |
+| [NonWorkingDay_Create](<#NonWorkingDay_Create>) | Create a new calendar non working day associated to an existing calendar |
+| [NonWorkingDay_CreateOrUpdate](<#NonWorkingDay_CreateOrUpdate>) | Action to create or update a non working day associated to an existing calendar |
+| [NonWorkingDay_Delete](<#NonWorkingDay_Delete>) | Deletes an existing calendar non working day |
+| [NonWorkingDay_Update](<#NonWorkingDay_Update>) | Updates an existiing calendar non working day |
+| [NotificationsEngine_InitializeStaging](<#NotificationsEngine_InitializeStaging>) | It will mark all entries as deleted for the staging process after only import the active ones |
+| [PreDefinedTemplate_Create](<#PreDefinedTemplate_Create>) | Creates a PredefinedTemplate object |
+| [PreDefinedTemplate_CreateOrUpdate](<#PreDefinedTemplate_CreateOrUpdate>) | Creates or updates a PredefinedTemplate object |
+| [PreDefinedTemplate_GetAll](<#PreDefinedTemplate_GetAll>) | Gets all predefined templates |
+| [PreDefinedTemplate_GetById](<#PreDefinedTemplate_GetById>) | Gets a predefined template |
+| [PreDefinedTemplate_Update](<#PreDefinedTemplate_Update>) | Updates a PredefinedTemplate object |
+| [Resource_CreateOrUpdate](<#Resource_CreateOrUpdate>) | Creates or Updates a Resource |
+| [Resource_Delete](<#Resource_Delete>) | Deletes a Resource |
+| [Resource_GetById](<#Resource_GetById>) | Gets a Resource by Id |
+| [Resource_Purge](<#Resource_Purge>) | Resource hard delete |
+| [Resources_GetAll](<#Resources_GetAll>) | Gets All Resources |
+| [Resources_InitializeStaging](<#Resources_InitializeStaging>) | It will mark all entries as deleted for the staging process after only import the active ones |
+| [Rule_Create](<#Rule_Create>) | Create a Rule record |
+| [Rule_CreateOrUpdate](<#Rule_CreateOrUpdate>) | Create or update a Rule record |
+| [Rule_Delete](<#Rule_Delete>) | Deletes a whole rule |
+| [Rule_Update](<#Rule_Update>) | Update a Rule record |
+| [RuleGroup_Create](<#RuleGroup_Create>) | Create a Rule Group record |
+| [RuleGroup_CreateOrUpdate](<#RuleGroup_CreateOrUpdate>) | Create or update a Rule Group record |
+| [RuleGroup_Delete](<#RuleGroup_Delete>) | Deletes a Rule Group |
+| [RuleGroup_DeleteAllByRuleId](<#RuleGroup_DeleteAllByRuleId>) | Deletes all Rule Group from a Rule |
+| [RuleGroup_Update](<#RuleGroup_Update>) | Update a Rule Group record |
+| [RuleGroupOutput_CreateOrUpdate](<#RuleGroupOutput_CreateOrUpdate>) | Create or update a Rule Group Output record |
+| [RuleLine_CreateOrUpdate](<#RuleLine_CreateOrUpdate>) | Creates or updates a Rule Line |
+| [RuleLine_Delete](<#RuleLine_Delete>) | Deletes a RuleLine |
+| [Rules_GetAll](<#Rules_GetAll>) | Get all rules available |
+| [Rules_GetById](<#Rules_GetById>) | Get a rule by Id |
+| [Rules_InitializeStaging](<#Rules_InitializeStaging>) | It will mark all entries as deleted for the staging process after only import the active ones |
+| [RulesGroup_GetAll](<#RulesGroup_GetAll>) | Get all RuleGroups from a Rule |
+| [RulesOperator_GetBySettingType](<#RulesOperator_GetBySettingType>) | Returns the operations available for the respective setting type |
+| [SampleUser_CreateOrUpdate](<#SampleUser_CreateOrUpdate>) | Create sample users (verifiy if is a second publish and disable all users before create news) and associate to its role and to its group (if applicable). |
+| [Setting_ConvertSetting](<#Setting_ConvertSetting>) | Converts a Setting value to an CreateOrUpdate structure |
+| [Setting_CreateOrUpdate](<#Setting_CreateOrUpdate>) | Public action that enables to create or update a setting |
+| [Setting_Delete](<#Setting_Delete>) | Public action that deletes a setting |
+| [Setting_DeleteList](<#Setting_DeleteList>) | Public action that deletes a list of settings |
+| [Setting_GetById](<#Setting_GetById>) | Gets a Setting by it's Id |
+| [Setting_Purge](<#Setting_Purge>) | Public action to hard delete a setting |
+| [SettingType_GetByColumnType](<#SettingType_GetByColumnType>) | Gets the attribute setting type |
+| [Tag_Create](<#Tag_Create>) | Enables to create a Tag instance in the Tag entity |
+| [Tag_Delete](<#Tag_Delete>) | Asynchronously deletes all CaseTag records for a given Tag before deleting the Tag itself. Saves in each case's History each tag deletion. |
+| [Tag_Update](<#Tag_Update>) | Enables to update a Tag instance in the Tag entity |
+| [UserExtended_CreateOrUpdate](<#UserExtended_CreateOrUpdate>) | Creates or updates an User extended record |
+| [UserHierarchy_Import](<#UserHierarchy_Import>) | Submits a requests to import user's hierarchy |
 
-Service Action | Description
----|---
-[SetupCaseManagementApplication](<#Service_SetupCaseManagementApplication>) | Sets up the basic configurations for a case management application
+| Service Action | Description |
+| ---|--- |
+| [SetupCaseManagementApplication](<#Service_SetupCaseManagementApplication>) | Sets up the basic configurations for a case management application |
 
-Structure | Description
----|---
-[BusinessEntity_View](<#Structure_BusinessEntity_View>) | View for business entities
-[BusinessEntityAttr_View](<#Structure_BusinessEntityAttr_View>) | View for business entities attributes
-[Calendar_Create](<#Structure_Calendar_Create>) | Public structure to create a new Calendar
-[Calendar_Update](<#Structure_Calendar_Update>) | Public structure to update an existing Calendar
-[CaseAction_CreateOrUpdate](<#Structure_CaseAction_CreateOrUpdate>) | Public structure to create or update a Case Workflow Action
-[CaseAction_Translation](<#Structure_CaseAction_Translation>) | Translation structure for Case action
-[CaseAction_View](<#Structure_CaseAction_View>) | View for Case Workflow Action
-[CaseConfigurationBootstrap](<#Structure_CaseConfigurationBootstrap>) | Holds the bootstrap data
-[CaseDefinition_Create](<#Structure_CaseDefinition_Create>) | Public structure to create a new case definition
-[CaseDefinition_CreateOrUpdate](<#Structure_CaseDefinition_CreateOrUpdate>) | Public structure to create a new case definition or to update an existing case definition
-[CaseDefinition_Details](<#Structure_CaseDefinition_Details>) | Public structure that contains the case defintion details
-[CaseDefinition_FilterResults](<#Structure_CaseDefinition_FilterResults>) | Filter Serch Structure
-[CaseDefinition_Translation](<#Structure_CaseDefinition_Translation>) | Translation structure for Case definition
-[CaseDefinitionMilestoneDefinition_Create](<#Structure_CaseDefinitionMilestoneDefinition_Create>) | Public structure for the Creation of a CaseDefinitionMilestoneDefinition record
-[CaseStateMachine_Create](<#Structure_CaseStateMachine_Create>) | Public structure for state machine creation
-[CaseStateMachine_CreateOrUpdate](<#Structure_CaseStateMachine_CreateOrUpdate>) | Structure to enable case state machine creation or update
-[CaseStateMachine_Details](<#Structure_CaseStateMachine_Details>) | Case State Machine Details
-[CaseStatus_Create](<#Structure_CaseStatus_Create>) | Public structure to create a new status
-[CaseStatus_CreateOrUpdate](<#Structure_CaseStatus_CreateOrUpdate>) | Public structure to create or update a status
-[CaseStatus_Details](<#Structure_CaseStatus_Details>) | Case Status Detail
-[CaseStatus_Translation](<#Structure_CaseStatus_Translation>) | Translation structure for Case status
-[CaseTag_Create](<#Structure_CaseTag_Create>) | Public structure that enables to create CaseTage instances
-[Delegation_Create](<#Structure_Delegation_Create>) | Holds a Delegation entry to be created
-[Delegation_Update](<#Structure_Delegation_Update>) | Holds a Delegation details for update
-[DEPRECATED_SetupData](<#Structure_DEPRECATED_SetupData>) | Holds the basic setup data for a case management application
-[EmailTemplate_CreateOrUpdate](<#Structure_EmailTemplate_CreateOrUpdate>) | Represents a EmailTemplate object to be updated
-[EmailTemplate_View](<#Structure_EmailTemplate_View>) | Represents a EmailTemplate object
-[Entity_Lookup](<#Structure_Entity_Lookup>) | Entity to lookup FK
-[Espace_Detail](<#Structure_Espace_Detail>) | Public structure to hold espace details
-[FilterResults](<#Structure_FilterResults>) | Filter Search Structure
-[FilterResults_Espace](<#Structure_FilterResults_Espace>) | Filter Search Structure
-[FilterResults2](<#Structure_FilterResults2>) | Filter Search Structure
-[Group_Details](<#Structure_Group_Details>) | Public structure with system entity group details
-[GroupExtended_CreateOrUpdate](<#Structure_GroupExtended_CreateOrUpdate>) | Public structure to update an existing Group extended
-[Holiday_Create](<#Structure_Holiday_Create>) | Public structure to create a new Calendar Holiday
-[Holiday_Update](<#Structure_Holiday_Update>) | Public structure to update an existing Calendar Holiday
-[MilestoneDefinition_CreateOrUpdate](<#Structure_MilestoneDefinition_CreateOrUpdate>) | Public structure to create a new milestone definition or to update an existing one
-[MilestoneDefinition_Translation](<#Structure_MilestoneDefinition_Translation>) | Translation structure for Milestone definition
-[NonWorkingDay_Create](<#Structure_NonWorkingDay_Create>) | Public structure to create a new Calendar Non Working Day
-[NonWorkingDay_Update](<#Structure_NonWorkingDay_Update>) | Public structure to update an existing Calendar Non Working Day
-[PreDefinedTemplate_CreateOrUpdate](<#Structure_PreDefinedTemplate_CreateOrUpdate>) | View to create or update a PreDefined Template
-[PreDefinedTemplate_View](<#Structure_PreDefinedTemplate_View>) | View of a PreDefined Template
-[ProcessDefinition_Details](<#Structure_ProcessDefinition_Details>) | Contains the generic details for process definition
-[Resource_CreateOrUpdate](<#Structure_Resource_CreateOrUpdate>) | Structure to create or update a Resource
-[Resource_View](<#Structure_Resource_View>) | Represents a Resource
-[Rule_CreateOrUpdate](<#Structure_Rule_CreateOrUpdate>) | Structure to create/update a rule
-[Rule_View](<#Structure_Rule_View>) | Structure with Rules fields
-[RuleAttribute_CreateOrUpdate](<#Structure_RuleAttribute_CreateOrUpdate>) | Structure to create or update a Rule Attribute
-[RuleAttribute_View](<#Structure_RuleAttribute_View>) | Structure with Rule Attribute fields
-[RuleConfig](<#Structure_RuleConfig>) | Represents a Rule configuration
-[RuleGroup_CreateOrUpdate](<#Structure_RuleGroup_CreateOrUpdate>) | Public structure to create or update a rule group
-[RuleGroup_View](<#Structure_RuleGroup_View>) | Structure with Rule Groups fields
-[RuleGroupOutput_CreateOrUpdate](<#Structure_RuleGroupOutput_CreateOrUpdate>) | Structure to create or update a Rule Group Output
-[RuleGroupOutput_View](<#Structure_RuleGroupOutput_View>) | Structure with RuleGroupOutput fields
-[RuleLine_CreateOrUpdate](<#Structure_RuleLine_CreateOrUpdate>) | Structure to create or update a Rule Line
-[RuleLine_View](<#Structure_RuleLine_View>) | Structure with Rule Line fields
-[Setting_CreateOrUpdate](<#Structure_Setting_CreateOrUpdate>) | Public structure to create or update a setting
-[Setting_Value](<#Structure_Setting_Value>) | Public structure with the possible values for a setting
-[Setup_CaseAction](<#Structure_Setup_CaseAction>) | Public structure to set up case actions
-[Setup_CaseDefinition](<#Structure_Setup_CaseDefinition>) | Public structure to set up a case definition
-[Setup_CaseStateMachine](<#Structure_Setup_CaseStateMachine>) | Public structure to set up case state machine transitions
-[Setup_CaseStatus](<#Structure_Setup_CaseStatus>) | Public structure to set up case statuses
-[Setup_EmailTemplate](<#Structure_Setup_EmailTemplate>) | Public structure to set up email templates
-[Setup_MilestoneDefinition](<#Structure_Setup_MilestoneDefinition>) | Public structure to set up a milestone definition
-[SetupData](<#Structure_SetupData>) | Holds the basic setup data for a case management application
-[Tag_Create](<#Structure_Tag_Create>) | Public structure that enables to create tag instances
-[Tag_Update](<#Structure_Tag_Update>) | Public structure that enables to update tag instances
-[UserExtended_CreateOrUpdate](<#Structure_UserExtended_CreateOrUpdate>) | User extended create or update structure
+| Structure | Description |
+| ---|--- |
+| [BusinessEntity_View](<#Structure_BusinessEntity_View>) | View for business entities |
+| [BusinessEntityAttr_View](<#Structure_BusinessEntityAttr_View>) | View for business entities attributes |
+| [Calendar_Create](<#Structure_Calendar_Create>) | Public structure to create a new Calendar |
+| [Calendar_Update](<#Structure_Calendar_Update>) | Public structure to update an existing Calendar |
+| [CaseAction_CreateOrUpdate](<#Structure_CaseAction_CreateOrUpdate>) | Public structure to create or update a Case Workflow Action |
+| [CaseAction_Translation](<#Structure_CaseAction_Translation>) | Translation structure for Case action |
+| [CaseAction_View](<#Structure_CaseAction_View>) | View for Case Workflow Action |
+| [CaseConfigurationBootstrap](<#Structure_CaseConfigurationBootstrap>) | Holds the bootstrap data |
+| [CaseDefinition_Create](<#Structure_CaseDefinition_Create>) | Public structure to create a new case definition |
+| [CaseDefinition_CreateOrUpdate](<#Structure_CaseDefinition_CreateOrUpdate>) | Public structure to create a new case definition or to update an existing case definition |
+| [CaseDefinition_Details](<#Structure_CaseDefinition_Details>) | Public structure that contains the case defintion details |
+| [CaseDefinition_FilterResults](<#Structure_CaseDefinition_FilterResults>) | Filter Serch Structure |
+| [CaseDefinition_Translation](<#Structure_CaseDefinition_Translation>) | Translation structure for Case definition |
+| [CaseDefinitionMilestoneDefinition_Create](<#Structure_CaseDefinitionMilestoneDefinition_Create>) | Public structure for the Creation of a CaseDefinitionMilestoneDefinition record |
+| [CaseStateMachine_Create](<#Structure_CaseStateMachine_Create>) | Public structure for state machine creation |
+| [CaseStateMachine_CreateOrUpdate](<#Structure_CaseStateMachine_CreateOrUpdate>) | Structure to enable case state machine creation or update |
+| [CaseStateMachine_Details](<#Structure_CaseStateMachine_Details>) | Case State Machine Details |
+| [CaseStatus_Create](<#Structure_CaseStatus_Create>) | Public structure to create a new status |
+| [CaseStatus_CreateOrUpdate](<#Structure_CaseStatus_CreateOrUpdate>) | Public structure to create or update a status |
+| [CaseStatus_Details](<#Structure_CaseStatus_Details>) | Case Status Detail |
+| [CaseStatus_Translation](<#Structure_CaseStatus_Translation>) | Translation structure for Case status |
+| [CaseTag_Create](<#Structure_CaseTag_Create>) | Public structure that enables to create CaseTage instances |
+| [Delegation_Create](<#Structure_Delegation_Create>) | Holds a Delegation entry to be created |
+| [Delegation_Update](<#Structure_Delegation_Update>) | Holds a Delegation details for update |
+| [DEPRECATED_SetupData](<#Structure_DEPRECATED_SetupData>) | Holds the basic setup data for a case management application |
+| [EmailTemplate_CreateOrUpdate](<#Structure_EmailTemplate_CreateOrUpdate>) | Represents a EmailTemplate object to be updated |
+| [EmailTemplate_View](<#Structure_EmailTemplate_View>) | Represents a EmailTemplate object |
+| [Entity_Lookup](<#Structure_Entity_Lookup>) | Entity to lookup FK |
+| [Espace_Detail](<#Structure_Espace_Detail>) | Public structure to hold espace details |
+| [FilterResults](<#Structure_FilterResults>) | Filter Search Structure |
+| [FilterResults_Espace](<#Structure_FilterResults_Espace>) | Filter Search Structure |
+| [FilterResults2](<#Structure_FilterResults2>) | Filter Search Structure |
+| [Group_Details](<#Structure_Group_Details>) | Public structure with system entity group details |
+| [GroupExtended_CreateOrUpdate](<#Structure_GroupExtended_CreateOrUpdate>) | Public structure to update an existing Group extended |
+| [Holiday_Create](<#Structure_Holiday_Create>) | Public structure to create a new Calendar Holiday |
+| [Holiday_Update](<#Structure_Holiday_Update>) | Public structure to update an existing Calendar Holiday |
+| [MilestoneDefinition_CreateOrUpdate](<#Structure_MilestoneDefinition_CreateOrUpdate>) | Public structure to create a new milestone definition or to update an existing one |
+| [MilestoneDefinition_Translation](<#Structure_MilestoneDefinition_Translation>) | Translation structure for Milestone definition |
+| [NonWorkingDay_Create](<#Structure_NonWorkingDay_Create>) | Public structure to create a new Calendar Non Working Day |
+| [NonWorkingDay_Update](<#Structure_NonWorkingDay_Update>) | Public structure to update an existing Calendar Non Working Day |
+| [PreDefinedTemplate_CreateOrUpdate](<#Structure_PreDefinedTemplate_CreateOrUpdate>) | View to create or update a PreDefined Template |
+| [PreDefinedTemplate_View](<#Structure_PreDefinedTemplate_View>) | View of a PreDefined Template |
+| [ProcessDefinition_Details](<#Structure_ProcessDefinition_Details>) | Contains the generic details for process definition |
+| [Resource_CreateOrUpdate](<#Structure_Resource_CreateOrUpdate>) | Structure to create or update a Resource |
+| [Resource_View](<#Structure_Resource_View>) | Represents a Resource |
+| [Rule_CreateOrUpdate](<#Structure_Rule_CreateOrUpdate>) | Structure to create/update a rule |
+| [Rule_View](<#Structure_Rule_View>) | Structure with Rules fields |
+| [RuleAttribute_CreateOrUpdate](<#Structure_RuleAttribute_CreateOrUpdate>) | Structure to create or update a Rule Attribute |
+| [RuleAttribute_View](<#Structure_RuleAttribute_View>) | Structure with Rule Attribute fields |
+| [RuleConfig](<#Structure_RuleConfig>) | Represents a Rule configuration |
+| [RuleGroup_CreateOrUpdate](<#Structure_RuleGroup_CreateOrUpdate>) | Public structure to create or update a rule group |
+| [RuleGroup_View](<#Structure_RuleGroup_View>) | Structure with Rule Groups fields |
+| [RuleGroupOutput_CreateOrUpdate](<#Structure_RuleGroupOutput_CreateOrUpdate>) | Structure to create or update a Rule Group Output |
+| [RuleGroupOutput_View](<#Structure_RuleGroupOutput_View>) | Structure with RuleGroupOutput fields |
+| [RuleLine_CreateOrUpdate](<#Structure_RuleLine_CreateOrUpdate>) | Structure to create or update a Rule Line |
+| [RuleLine_View](<#Structure_RuleLine_View>) | Structure with Rule Line fields |
+| [Setting_CreateOrUpdate](<#Structure_Setting_CreateOrUpdate>) | Public structure to create or update a setting |
+| [Setting_Value](<#Structure_Setting_Value>) | Public structure with the possible values for a setting |
+| [Setup_CaseAction](<#Structure_Setup_CaseAction>) | Public structure to set up case actions |
+| [Setup_CaseDefinition](<#Structure_Setup_CaseDefinition>) | Public structure to set up a case definition |
+| [Setup_CaseStateMachine](<#Structure_Setup_CaseStateMachine>) | Public structure to set up case state machine transitions |
+| [Setup_CaseStatus](<#Structure_Setup_CaseStatus>) | Public structure to set up case statuses |
+| [Setup_EmailTemplate](<#Structure_Setup_EmailTemplate>) | Public structure to set up email templates |
+| [Setup_MilestoneDefinition](<#Structure_Setup_MilestoneDefinition>) | Public structure to set up a milestone definition |
+| [SetupData](<#Structure_SetupData>) | Holds the basic setup data for a case management application |
+| [Tag_Create](<#Structure_Tag_Create>) | Public structure that enables to create tag instances |
+| [Tag_Update](<#Structure_Tag_Update>) | Public structure that enables to update tag instances |
+| [UserExtended_CreateOrUpdate](<#Structure_UserExtended_CreateOrUpdate>) | User extended create or update structure |
 
 ## Actions
 
@@ -235,7 +235,7 @@ Structure | Description
 
 Bootstraps the case configuration
 
-*Inputs*
+_Inputs_
 
 CaseConfigurationBootstrap
 :   Type: mandatory, [CaseConfigurationBootstrap](<#Structure_CaseConfigurationBootstrap>).  
@@ -245,13 +245,13 @@ CaseConfigurationBootstrap
 
 Action to create a new calendar
 
-*Inputs*
+_Inputs_
 
 CalendarCreateRec
 :   Type: mandatory, [Calendar_Create](<#Structure_Calendar_Create>).  
     The calendar entity record.
 
-*Outputs*
+_Outputs_
 
 CalendarId
 :   Type: Calendar Identifier.  
@@ -261,13 +261,13 @@ CalendarId
 
 Action to create or update a calendar
 
-*Inputs*
+_Inputs_
 
 CalendarRec
 :   Type: mandatory, [Calendar_Update](<#Structure_Calendar_Update>).  
     The calendar entity record.
 
-*Outputs*
+_Outputs_
 
 CalendarId
 :   Type: Calendar Identifier.  
@@ -277,7 +277,7 @@ CalendarId
 
 Deletes an existiing calendar
 
-*Inputs*
+_Inputs_
 
 CalendarId
 :   Type: mandatory, Calendar Identifier.  
@@ -287,7 +287,7 @@ CalendarId
 
 Update an existing calendar
 
-*Inputs*
+_Inputs_
 
 CalendarUpdateRec
 :   Type: mandatory, [Calendar_Update](<#Structure_Calendar_Update>).  
@@ -297,7 +297,7 @@ CalendarUpdateRec
 
 Bootstraps the list of Case Workflow Actions
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -311,7 +311,7 @@ CaseAction_CreateOrUpdateLst
 
 Checks if the status is valid for a specific case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -321,7 +321,7 @@ StatusId
 :   Type: mandatory, CaseStatus Identifier.  
     Case Status Identifier
 
-*Outputs*
+_Outputs_
 
 IsValid
 :   Type: Boolean.  
@@ -331,13 +331,13 @@ IsValid
 
 Creates a new case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionCreateRec
 :   Type: mandatory, [CaseDefinition_Create](<#Structure_CaseDefinition_Create>).  
     Case Definition Details
 
-*Outputs*
+_Outputs_
 
 CaseDefinitionId
 :   Type: CaseDefinition Identifier.  
@@ -347,13 +347,13 @@ CaseDefinitionId
 
 Creates or updates a case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionRec
 :   Type: mandatory, [CaseDefinition_CreateOrUpdate](<#Structure_CaseDefinition_CreateOrUpdate>).  
     Case Definition Details
 
-*Outputs*
+_Outputs_
 
 CaseDefinitionId
 :   Type: CaseDefinition Identifier.  
@@ -363,7 +363,7 @@ CaseDefinitionId
 
 Deletes an existing case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: optional, CaseDefinition Identifier.  
@@ -373,13 +373,13 @@ CaseDefinitionId
 
 Gets the actions associated to a case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     Case Definition Identifier
 
-*Outputs*
+_Outputs_
 
 CaseAction_ViewList
 :   Type: [CaseAction_View](<#Structure_CaseAction_View>) List.  
@@ -389,13 +389,13 @@ CaseAction_ViewList
 
 Gets the list of active CaseDefinitions
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: mandatory, [CaseDefinition_FilterResults](<#Structure_CaseDefinition_FilterResults>).  
     Filter Results
 
-*Outputs*
+_Outputs_
 
 CaseDefinitionDetailsList
 :   Type: [CaseDefinition_Details](<#Structure_CaseDefinition_Details>) List.  
@@ -409,13 +409,13 @@ TotalResults
 
 Gets a specific Case Definition by case identifier
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     Case Definition Identifier
 
-*Outputs*
+_Outputs_
 
 CaseDefinitionDetail
 :   Type: [CaseDefinition_Details](<#Structure_CaseDefinition_Details>).  
@@ -425,13 +425,13 @@ CaseDefinitionDetail
 
 Gets the Case Definition details
 
-*Inputs*
+_Inputs_
 
 ProcessDefinitionId
 :   Type: mandatory, Process_Definition Identifier.  
     Process Definition Identifier
 
-*Outputs*
+_Outputs_
 
 CaseDefinitionDetail
 :   Type: [CaseDefinition_Details](<#Structure_CaseDefinition_Details>).  
@@ -441,7 +441,7 @@ CaseDefinitionDetail
 
 Get the case definitions that are eligible to purge, ie, without any case instance and which application is also deleted
 
-*Outputs*
+_Outputs_
 
 CaseDefinitionDetailsList
 :   Type: [CaseDefinition_Details](<#Structure_CaseDefinition_Details>) List.  
@@ -451,13 +451,13 @@ CaseDefinitionDetailsList
 
 Gets the associated entity identifier
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     Case Definition Identifier
 
-*Outputs*
+_Outputs_
 
 EntityId
 :   Type: Entity Identifier.  
@@ -467,13 +467,13 @@ EntityId
 
 Gets the initial status for a given case definition.
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     Case Definition Identifier
 
-*Outputs*
+_Outputs_
 
 CaseStatusId
 :   Type: CaseStatus Identifier.  
@@ -483,13 +483,13 @@ CaseStatusId
 
 Gets the associated process definition identifier
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     Case Definition Identifier
 
-*Outputs*
+_Outputs_
 
 ProcessDefinitionId
 :   Type: Process_Definition Identifier.  
@@ -499,13 +499,13 @@ ProcessDefinitionId
 
 Gets the list of process definitions associated with case definitions
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: mandatory, [FilterResults](<#Structure_FilterResults>).  
     Filter Results
 
-*Outputs*
+_Outputs_
 
 ProcessDefinitionDetailsList
 :   Type: [ProcessDefinition_Details](<#Structure_ProcessDefinition_Details>) List.  
@@ -519,13 +519,13 @@ TotalResults
 
 Gets the list of all valid statuses for a given case definition.
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     Case Definition Identifier
 
-*Outputs*
+_Outputs_
 
 CaseStatusDetailsList
 :   Type: [CaseStatus_Details](<#Structure_CaseStatus_Details>) List.  
@@ -535,13 +535,13 @@ CaseStatusDetailsList
 
 Sets a relation between a CaseDefinition and a MilestoneDefinition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionMilestoneDefinitionCreateRec
 :   Type: mandatory, [CaseDefinitionMilestoneDefinition_Create](<#Structure_CaseDefinitionMilestoneDefinition_Create>).  
     CaseDefinitionMilestoneDefinition creation details
 
-*Outputs*
+_Outputs_
 
 CaseDefinitionMilestoneDefinitionId
 :   Type: CaseDefinitionMilestoneDefinition Identifier.  
@@ -551,13 +551,13 @@ CaseDefinitionMilestoneDefinitionId
 
 Previews the keys for the CaseDefinition based on a ProcessDefinition
 
-*Inputs*
+_Inputs_
 
 ProcessDefinitionId
 :   Type: mandatory, Process_Definition Identifier.  
     Process Definition Identifier
 
-*Outputs*
+_Outputs_
 
 ProcessName
 :   Type: Text.  
@@ -571,7 +571,7 @@ EntityId
 
 Purges a Case Definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -581,7 +581,7 @@ CaseDefinitionId
 
 Removes a relation between a CaseDefinition and a MilestoneDefinition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionMilestoneDefinitionCreateRec
 :   Type: mandatory, [CaseDefinitionMilestoneDefinition_Create](<#Structure_CaseDefinitionMilestoneDefinition_Create>).  
@@ -591,7 +591,7 @@ CaseDefinitionMilestoneDefinitionCreateRec
 
 Updates an existing case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionUpdateRec
 :   Type: mandatory, [CaseDefinition_CreateOrUpdate](<#Structure_CaseDefinition_CreateOrUpdate>).  
@@ -601,13 +601,13 @@ CaseDefinitionUpdateRec
 
 Creates a new State Machine entry
 
-*Inputs*
+_Inputs_
 
 CaseStateMachineCreateRec
 :   Type: mandatory, [CaseStateMachine_Create](<#Structure_CaseStateMachine_Create>).  
     Case State Machine Details
 
-*Outputs*
+_Outputs_
 
 CaseStateMachineId
 :   Type: CaseStateMachine Identifier.  
@@ -617,13 +617,13 @@ CaseStateMachineId
 
 Creates or updates a State Machine entry
 
-*Inputs*
+_Inputs_
 
 CaseStateMachineRec
 :   Type: mandatory, [CaseStateMachine_CreateOrUpdate](<#Structure_CaseStateMachine_CreateOrUpdate>).  
     Case State Machine Details
 
-*Outputs*
+_Outputs_
 
 CaseStateMachineId
 :   Type: CaseStateMachine Identifier.  
@@ -633,13 +633,13 @@ CaseStateMachineId
 
 Gets the case state machine record by status transition
 
-*Inputs*
+_Inputs_
 
 CaseStateMachineTransitionRec
 :   Type: mandatory, [CaseStateMachine_Create](<#Structure_CaseStateMachine_Create>).  
     Case status transition
 
-*Outputs*
+_Outputs_
 
 CaseStateMachineDetails
 :   Type: [CaseStateMachine_Details](<#Structure_CaseStateMachine_Details>).  
@@ -649,7 +649,7 @@ CaseStateMachineDetails
 
 Purge a Case State Machine
 
-*Inputs*
+_Inputs_
 
 CaseStateMachineId
 :   Type: mandatory, CaseStateMachine Identifier.  
@@ -659,7 +659,7 @@ CaseStateMachineId
 
 Updates an existing State Machine entry
 
-*Inputs*
+_Inputs_
 
 CaseStateMachineRec
 :   Type: mandatory, [CaseStateMachine_CreateOrUpdate](<#Structure_CaseStateMachine_CreateOrUpdate>).  
@@ -669,11 +669,10 @@ CaseStateMachineRec
 
 Will replace the existing case definiton statuses (or create if new) for a specific CaseDefinition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
-    
 
 CaseStatusList
 :   Type: mandatory, [CaseStatus_CreateOrUpdate](<#Structure_CaseStatus_CreateOrUpdate>) List.  
@@ -683,13 +682,13 @@ CaseStatusList
 
 Creates a new Case Status
 
-*Inputs*
+_Inputs_
 
 CaseStatusCreateRec
 :   Type: mandatory, [CaseStatus_Create](<#Structure_CaseStatus_Create>).  
     Case Status Details
 
-*Outputs*
+_Outputs_
 
 CaseStatusId
 :   Type: CaseStatus Identifier.  
@@ -699,13 +698,13 @@ CaseStatusId
 
 Creates or updates a Case Status
 
-*Inputs*
+_Inputs_
 
 CaseStatusRec
 :   Type: mandatory, [CaseStatus_CreateOrUpdate](<#Structure_CaseStatus_CreateOrUpdate>).  
     Case Status Details
 
-*Outputs*
+_Outputs_
 
 CaseStatusId
 :   Type: CaseStatus Identifier.  
@@ -715,7 +714,7 @@ CaseStatusId
 
 Deletes a Case Status
 
-*Inputs*
+_Inputs_
 
 CaseStatusId
 :   Type: mandatory, CaseStatus Identifier.  
@@ -725,13 +724,13 @@ CaseStatusId
 
 Gets the status details by identifier
 
-*Inputs*
+_Inputs_
 
 Id
 :   Type: mandatory, CaseStatus Identifier.  
     Status Identifier
 
-*Outputs*
+_Outputs_
 
 CaseStatusDetail
 :   Type: [CaseStatus_Details](<#Structure_CaseStatus_Details>).  
@@ -745,7 +744,7 @@ CaseStateMachineDetailList
 
 Updates an existing Case Status
 
-*Inputs*
+_Inputs_
 
 CaseStatusUpdateRec
 :   Type: mandatory, [CaseStatus_CreateOrUpdate](<#Structure_CaseStatus_CreateOrUpdate>).  
@@ -755,13 +754,13 @@ CaseStatusUpdateRec
 
 Enables to create a CaseTag instance in the CaseTag entity
 
-*Inputs*
+_Inputs_
 
 CaseTagCreateRec
 :   Type: mandatory, [CaseTag_Create](<#Structure_CaseTag_Create>).  
     Details for the creation of a new CaseTag record
 
-*Outputs*
+_Outputs_
 
 CaseTagId
 :   Type: CaseTag Identifier.  
@@ -771,13 +770,13 @@ CaseTagId
 
 Check the status of an application
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     CaseDefinition Id
 
-*Outputs*
+_Outputs_
 
 StatusId
 :   Type: CaseDefinitionStatus Identifier.  
@@ -791,13 +790,13 @@ Message
 
 Creates a new Delegation
 
-*Inputs*
+_Inputs_
 
 DelegationCreateRec
 :   Type: mandatory, [Delegation_Create](<#Structure_Delegation_Create>).  
     Delegation creation details
 
-*Outputs*
+_Outputs_
 
 DelegationId
 :   Type: Delegation Identifier.  
@@ -807,13 +806,13 @@ DelegationId
 
 Creates or updates a delegation
 
-*Inputs*
+_Inputs_
 
 DelegationRec
 :   Type: mandatory, [Delegation_Update](<#Structure_Delegation_Update>).  
     Delegation Record
 
-*Outputs*
+_Outputs_
 
 DelegationId
 :   Type: Delegation Identifier.  
@@ -823,7 +822,7 @@ DelegationId
 
 Deletes an existing Delegation. Can only be removed by the user that created the delegation, if not it will raise an exception.
 
-*Inputs*
+_Inputs_
 
 DelegationId
 :   Type: mandatory, Delegation Identifier.  
@@ -833,7 +832,7 @@ DelegationId
 
 Updates an existing Delegation. Can only be updated by the user that created the delegation, if not it will raise an exc
 
-*Inputs*
+_Inputs_
 
 DelegationUpdateRec
 :   Type: mandatory, [Delegation_Update](<#Structure_Delegation_Update>).  
@@ -843,7 +842,7 @@ DelegationUpdateRec
 
 Sets up the basic configurations for a case management application
 
-*Inputs*
+_Inputs_
 
 SetupData
 :   Type: mandatory, [DEPRECATED_SetupData](<#Structure_DEPRECATED_SetupData>).  
@@ -853,7 +852,7 @@ SetupData
 
 It will replace the placeholders by the actual case data
 
-*Inputs*
+_Inputs_
 
 CaseId
 :   Type: mandatory, Case Identifier.  
@@ -871,7 +870,7 @@ IsPreviewMode
 :   Type: optional, Boolean.  
     If is preview mode and CaseId empty sample values will be used
 
-*Outputs*
+_Outputs_
 
 TextProcessed
 :   Type: Text.  
@@ -881,13 +880,13 @@ TextProcessed
 
 Creates an EmailTemplate object
 
-*Inputs*
+_Inputs_
 
 EmailTemplate_CreateOrUpdate
 :   Type: mandatory, [EmailTemplate_CreateOrUpdate](<#Structure_EmailTemplate_CreateOrUpdate>).  
     EmailTemplate record
 
-*Outputs*
+_Outputs_
 
 EmailTemplateId
 :   Type: EmailTemplate Identifier.  
@@ -897,13 +896,13 @@ EmailTemplateId
 
 Creates or updates an EmailTemplate object
 
-*Inputs*
+_Inputs_
 
 EmailTemplate_CreateOrUpdate
 :   Type: mandatory, [EmailTemplate_CreateOrUpdate](<#Structure_EmailTemplate_CreateOrUpdate>).  
     EmailTemplate record
 
-*Outputs*
+_Outputs_
 
 EmailTemplateId
 :   Type: EmailTemplate Identifier.  
@@ -913,7 +912,7 @@ EmailTemplateId
 
 Gets all EmailTemplates that matches the search criteria
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: mandatory, [FilterResults2](<#Structure_FilterResults2>).  
@@ -927,7 +926,7 @@ FetchBody
 :   Type: optional, Boolean.  
     Is True, body content will also be retrieved
 
-*Outputs*
+_Outputs_
 
 EmailTemplateDetailsList
 :   Type: [EmailTemplate_View](<#Structure_EmailTemplate_View>) List.  
@@ -941,13 +940,13 @@ TotalResults
 
 Gets a EmailTemplate by Id
 
-*Inputs*
+_Inputs_
 
 EmailTemplateId
 :   Type: mandatory, EmailTemplate Identifier.  
     Email Template Id
 
-*Outputs*
+_Outputs_
 
 EmailTemplateDetailsList
 :   Type: [EmailTemplate_View](<#Structure_EmailTemplate_View>).  
@@ -957,7 +956,7 @@ EmailTemplateDetailsList
 
 Updates an EmailTemplate object
 
-*Inputs*
+_Inputs_
 
 EmailTemplate_CreateOrUpdate
 :   Type: mandatory, [EmailTemplate_CreateOrUpdate](<#Structure_EmailTemplate_CreateOrUpdate>).  
@@ -967,13 +966,13 @@ EmailTemplate_CreateOrUpdate
 
 Gets the AttributeId based on it's GlobalKey
 
-*Inputs*
+_Inputs_
 
 GlobalKey
 :   Type: mandatory, Text.  
     GlobalKey
 
-*Outputs*
+_Outputs_
 
 AttributeId
 :   Type: Entity_Attr Identifier.  
@@ -983,13 +982,13 @@ AttributeId
 
 Gets list of espaces that can have screens to an activity can be opened by
 
-*Inputs*
+_Inputs_
 
 FilterResults
 :   Type: mandatory, [FilterResults_Espace](<#Structure_FilterResults_Espace>).  
     Filter Results
 
-*Outputs*
+_Outputs_
 
 EspaceDetailList
 :   Type: [Espace_Detail](<#Structure_Espace_Detail>) List.  
@@ -1003,13 +1002,13 @@ TotalResults
 
 Gets the list of business entities based on a case definition
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     CaseDefinition Id
 
-*Outputs*
+_Outputs_
 
 BusinessEntities
 :   Type: [BusinessEntity_View](<#Structure_BusinessEntity_View>) List.  
@@ -1019,7 +1018,7 @@ BusinessEntities
 
 Gets the list of business entities attributes based on an entity
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: optional, CaseDefinition Identifier.  
@@ -1045,7 +1044,7 @@ IncludeRelated
 :   Type: optional, Boolean.  
     If true, attributes from entities that have a FK to the biz entity will also be returned.
 
-*Outputs*
+_Outputs_
 
 BusinessEntityAttrs
 :   Type: [BusinessEntityAttr_View](<#Structure_BusinessEntityAttr_View>) List.  
@@ -1055,7 +1054,7 @@ BusinessEntityAttrs
 
 Gets the system sefault days to purge the case data
 
-*Outputs*
+_Outputs_
 
 Days
 :   Type: Integer.  
@@ -1065,13 +1064,13 @@ Days
 
 Parses a GlobalKey
 
-*Inputs*
+_Inputs_
 
 GlobalKey
 :   Type: mandatory, Text.  
     GlobalKey
 
-*Outputs*
+_Outputs_
 
 EspaceSSKey
 :   Type: Text.  
@@ -1085,7 +1084,7 @@ ObjectSSKey
 
 Assigns a user to a group
 
-*Inputs*
+_Inputs_
 
 GroupId
 :   Type: mandatory, Group Identifier.  
@@ -1099,7 +1098,7 @@ UserId
 
 Gets existing groups not associated with group extended that can be associated
 
-*Outputs*
+_Outputs_
 
 ListGroupDetails
 :   Type: [Group_Details](<#Structure_Group_Details>) List.  
@@ -1113,7 +1112,7 @@ TotalResults
 
 Removes the user association fromo a group
 
-*Inputs*
+_Inputs_
 
 GroupId
 :   Type: mandatory, Group Identifier.  
@@ -1127,29 +1126,28 @@ UserId
 
 Creates or updates an existing Group Matrix
 
-*Inputs*
+_Inputs_
 
 GroupExtendedRec
 :   Type: mandatory, [GroupExtended_CreateOrUpdate](<#Structure_GroupExtended_CreateOrUpdate>).  
     Group Extended Details
 
-*Outputs*
+_Outputs_
 
 GroupExtendedId
 :   Type: GroupExtended Identifier.  
-    
 
 ### GroupExtended_Delete { #GroupExtended_Delete }
 
 Removes an existing Group Matrix. Can only be removed if no association exists to the group (activity, role or user association)
 
-*Inputs*
+_Inputs_
 
 GroupExtendedId
 :   Type: mandatory, GroupExtended Identifier.  
     Group Extended Identifier
 
-*Outputs*
+_Outputs_
 
 IsSuccess
 :   Type: Boolean.  
@@ -1159,13 +1157,13 @@ IsSuccess
 
 Create a new calendar holiday associated to an existing calendar.
 
-*Inputs*
+_Inputs_
 
 HolidayCreateRec
 :   Type: mandatory, [Holiday_Create](<#Structure_Holiday_Create>).  
     Calendar Holiday Creation Details
 
-*Outputs*
+_Outputs_
 
 HolidayId
 :   Type: Holiday Identifier.  
@@ -1175,13 +1173,13 @@ HolidayId
 
 Action to create or update an event of a calendar
 
-*Inputs*
+_Inputs_
 
 CalendarHolidaytRec
 :   Type: mandatory, [Holiday_Update](<#Structure_Holiday_Update>).  
     Calendar Holiday Details
 
-*Outputs*
+_Outputs_
 
 CalendarHolidayId
 :   Type: Holiday Identifier.  
@@ -1191,7 +1189,7 @@ CalendarHolidayId
 
 Deletes an existing calendar holiday
 
-*Inputs*
+_Inputs_
 
 HolidayId
 :   Type: mandatory, Holiday Identifier.  
@@ -1201,7 +1199,7 @@ HolidayId
 
 Updates an existing calendar holiday
 
-*Inputs*
+_Inputs_
 
 HolidayUpdateRec
 :   Type: mandatory, [Holiday_Update](<#Structure_Holiday_Update>).  
@@ -1211,7 +1209,7 @@ HolidayUpdateRec
 
 Gets Server Hostname
 
-*Outputs*
+_Outputs_
 
 Hostaname
 :   Type: Text.  
@@ -1221,13 +1219,13 @@ Hostaname
 
 Get a sample of the file content to perform an import
 
-*Inputs*
+_Inputs_
 
 TypeId
 :   Type: mandatory, ImportFileType Identifier.  
     Type
 
-*Outputs*
+_Outputs_
 
 Content
 :   Type: Binary Data.  
@@ -1241,7 +1239,7 @@ Filename
 
 Check the status of an import request
 
-*Inputs*
+_Inputs_
 
 ImportId
 :   Type: mandatory, Text.  
@@ -1251,7 +1249,7 @@ ReturnErrors
 :   Type: optional, Boolean.  
     If true, a list of errors for each record that failed will be returned.
 
-*Outputs*
+_Outputs_
 
 StatusId
 :   Type: ImportDataStatus Identifier.  
@@ -1273,7 +1271,7 @@ ListOfErrors
 
 Lookup an Entity
 
-*Inputs*
+_Inputs_
 
 EntityId
 :   Type: mandatory, Entity Identifier.  
@@ -1283,7 +1281,7 @@ PkValue
 :   Type: optional, Text.  
     PK value
 
-*Outputs*
+_Outputs_
 
 Entity_Lookups
 :   Type: [Entity_Lookup](<#Structure_Entity_Lookup>) List.  
@@ -1293,7 +1291,7 @@ Entity_Lookups
 
 Lookup an Extra field value
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -1303,7 +1301,7 @@ ExtraFieldId
 :   Type: mandatory, ExtraField Identifier.  
     Extra Field Identifier
 
-*Outputs*
+_Outputs_
 
 Entity_Lookups
 :   Type: [Entity_Lookup](<#Structure_Entity_Lookup>) List.  
@@ -1313,13 +1311,13 @@ Entity_Lookups
 
 Creates a new milestone definition
 
-*Inputs*
+_Inputs_
 
 MilestoneDefinitionCreateRec
 :   Type: mandatory, [MilestoneDefinition_CreateOrUpdate](<#Structure_MilestoneDefinition_CreateOrUpdate>).  
     Milestone Definition Details
 
-*Outputs*
+_Outputs_
 
 MilestoneDefinitionId
 :   Type: MilestoneDefinition Identifier.  
@@ -1329,13 +1327,13 @@ MilestoneDefinitionId
 
 Creates or updates a milestone definition
 
-*Inputs*
+_Inputs_
 
 MilestoneDefinitionRec
 :   Type: mandatory, [MilestoneDefinition_CreateOrUpdate](<#Structure_MilestoneDefinition_CreateOrUpdate>).  
     Milestone Definition Details
 
-*Outputs*
+_Outputs_
 
 MilestoneDefinitionId
 :   Type: MilestoneDefinition Identifier.  
@@ -1345,7 +1343,7 @@ MilestoneDefinitionId
 
 Inactivates an existing milestone definition
 
-*Inputs*
+_Inputs_
 
 MilestoneDefinitionId
 :   Type: optional, MilestoneDefinition Identifier.  
@@ -1355,7 +1353,7 @@ MilestoneDefinitionId
 
 Updates an existing milestone definition
 
-*Inputs*
+_Inputs_
 
 MilestoneDefinitionUpdateRec
 :   Type: mandatory, [MilestoneDefinition_CreateOrUpdate](<#Structure_MilestoneDefinition_CreateOrUpdate>).  
@@ -1365,13 +1363,13 @@ MilestoneDefinitionUpdateRec
 
 Create a new calendar non working day associated to an existing calendar
 
-*Inputs*
+_Inputs_
 
 NonWorkingDayCreateRec
 :   Type: mandatory, [NonWorkingDay_Create](<#Structure_NonWorkingDay_Create>).  
     Calendar Non Working Day Creation Details
 
-*Outputs*
+_Outputs_
 
 NonWorkingDayId
 :   Type: NonWorkingDay Identifier.  
@@ -1381,13 +1379,13 @@ NonWorkingDayId
 
 Action to create or update a non working day associated to an existing calendar
 
-*Inputs*
+_Inputs_
 
 CalendarNonWorkingDaytRec
 :   Type: mandatory, [NonWorkingDay_Update](<#Structure_NonWorkingDay_Update>).  
     The calendar non working day record
 
-*Outputs*
+_Outputs_
 
 CalendarNonWorkingDayId
 :   Type: NonWorkingDay Identifier.  
@@ -1397,7 +1395,7 @@ CalendarNonWorkingDayId
 
 Deletes an existing calendar non working day
 
-*Inputs*
+_Inputs_
 
 NonWorkingDayId
 :   Type: mandatory, NonWorkingDay Identifier.  
@@ -1407,7 +1405,7 @@ NonWorkingDayId
 
 Updates an existiing calendar non working day
 
-*Inputs*
+_Inputs_
 
 NonWorkingDayUpdateRec
 :   Type: mandatory, [NonWorkingDay_Update](<#Structure_NonWorkingDay_Update>).  
@@ -1417,7 +1415,7 @@ NonWorkingDayUpdateRec
 
 It will mark all entries as deleted for the staging process after only import the active ones
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: optional, CaseDefinition Identifier.  
@@ -1427,13 +1425,13 @@ CaseDefinitionId
 
 Creates a PredefinedTemplate object
 
-*Inputs*
+_Inputs_
 
 PreDefinedTemplate_CreateOrUpdate
 :   Type: mandatory, [PreDefinedTemplate_CreateOrUpdate](<#Structure_PreDefinedTemplate_CreateOrUpdate>).  
     PreDefinedTemplate record
 
-*Outputs*
+_Outputs_
 
 PreDefinedTemplateId
 :   Type: PreDefinedTemplate Identifier.  
@@ -1443,13 +1441,13 @@ PreDefinedTemplateId
 
 Creates or updates a PredefinedTemplate object
 
-*Inputs*
+_Inputs_
 
 PreDefinedTemplate_CreateOrUpdate
 :   Type: mandatory, [PreDefinedTemplate_CreateOrUpdate](<#Structure_PreDefinedTemplate_CreateOrUpdate>).  
     PreDefinedTemplate record
 
-*Outputs*
+_Outputs_
 
 PreDefinedTemplateId
 :   Type: PreDefinedTemplate Identifier.  
@@ -1459,13 +1457,13 @@ PreDefinedTemplateId
 
 Gets all predefined templates
 
-*Inputs*
+_Inputs_
 
 LoadBody
 :   Type: mandatory, Boolean.  
     Is True, body content will also be retrieved
 
-*Outputs*
+_Outputs_
 
 PreDefinedTemplateDetailList
 :   Type: [PreDefinedTemplate_View](<#Structure_PreDefinedTemplate_View>) List.  
@@ -1475,13 +1473,13 @@ PreDefinedTemplateDetailList
 
 Gets a predefined template
 
-*Inputs*
+_Inputs_
 
 PreDefinedTemplateId
 :   Type: mandatory, PreDefinedTemplate Identifier.  
     PreDefinedTemplate Id
 
-*Outputs*
+_Outputs_
 
 PreDefinedTemplateDetail
 :   Type: [PreDefinedTemplate_View](<#Structure_PreDefinedTemplate_View>).  
@@ -1491,7 +1489,7 @@ PreDefinedTemplateDetail
 
 Updates a PredefinedTemplate object
 
-*Inputs*
+_Inputs_
 
 PreDefinedTemplate_CreateOrUpdate
 :   Type: mandatory, [PreDefinedTemplate_CreateOrUpdate](<#Structure_PreDefinedTemplate_CreateOrUpdate>).  
@@ -1501,13 +1499,13 @@ PreDefinedTemplate_CreateOrUpdate
 
 Creates or Updates a Resource
 
-*Inputs*
+_Inputs_
 
 ResourceCreateOrUpdate
 :   Type: mandatory, [Resource_CreateOrUpdate](<#Structure_Resource_CreateOrUpdate>).  
     Resource to create or update
 
-*Outputs*
+_Outputs_
 
 Id
 :   Type: Resource Identifier.  
@@ -1517,7 +1515,7 @@ Id
 
 Deletes a Resource
 
-*Inputs*
+_Inputs_
 
 Id
 :   Type: mandatory, Resource Identifier.  
@@ -1527,13 +1525,13 @@ Id
 
 Gets a Resource by Id
 
-*Inputs*
+_Inputs_
 
 Id
 :   Type: mandatory, Resource Identifier.  
     Id
 
-*Outputs*
+_Outputs_
 
 ResourceDetail
 :   Type: [Resource_View](<#Structure_Resource_View>).  
@@ -1543,7 +1541,7 @@ ResourceDetail
 
 Resource hard delete
 
-*Inputs*
+_Inputs_
 
 Id
 :   Type: mandatory, Resource Identifier.  
@@ -1553,7 +1551,7 @@ Id
 
 Gets All Resources
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: optional, Text.  
@@ -1567,7 +1565,7 @@ OnlyActive
 :   Type: optional, Boolean.  
     Only Active
 
-*Outputs*
+_Outputs_
 
 ResourceDetailsList
 :   Type: [Resource_View](<#Structure_Resource_View>) List.  
@@ -1577,7 +1575,7 @@ ResourceDetailsList
 
 It will mark all entries as deleted for the staging process after only import the active ones
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: optional, Text.  
@@ -1587,13 +1585,13 @@ CaseDefinitionId
 
 Create a Rule record
 
-*Inputs*
+_Inputs_
 
 RuleRec
 :   Type: mandatory, [Rule_CreateOrUpdate](<#Structure_Rule_CreateOrUpdate>).  
     Rule record
 
-*Outputs*
+_Outputs_
 
 Rule
 :   Type: [Rule_View](<#Structure_Rule_View>).  
@@ -1603,13 +1601,13 @@ Rule
 
 Create or update a Rule record
 
-*Inputs*
+_Inputs_
 
 RuleRec
 :   Type: mandatory, [Rule_CreateOrUpdate](<#Structure_Rule_CreateOrUpdate>).  
     Rule record
 
-*Outputs*
+_Outputs_
 
 Rule
 :   Type: [Rule_View](<#Structure_Rule_View>).  
@@ -1619,7 +1617,7 @@ Rule
 
 Deletes a whole rule
 
-*Inputs*
+_Inputs_
 
 RuleId
 :   Type: mandatory, Rule Identifier.  
@@ -1629,13 +1627,13 @@ RuleId
 
 Update a Rule record
 
-*Inputs*
+_Inputs_
 
 RuleRec
 :   Type: mandatory, [Rule_CreateOrUpdate](<#Structure_Rule_CreateOrUpdate>).  
     Rule record
 
-*Outputs*
+_Outputs_
 
 Rule
 :   Type: [Rule_View](<#Structure_Rule_View>).  
@@ -1645,13 +1643,13 @@ Rule
 
 Create a Rule Group record
 
-*Inputs*
+_Inputs_
 
 RuleGroup_Record
 :   Type: mandatory, [RuleGroup_CreateOrUpdate](<#Structure_RuleGroup_CreateOrUpdate>).  
     RuleGroup record
 
-*Outputs*
+_Outputs_
 
 Id
 :   Type: RuleGroup Identifier.  
@@ -1661,13 +1659,13 @@ Id
 
 Create or update a Rule Group record
 
-*Inputs*
+_Inputs_
 
 RuleGroup_Record
 :   Type: mandatory, [RuleGroup_CreateOrUpdate](<#Structure_RuleGroup_CreateOrUpdate>).  
     RuleGroup record
 
-*Outputs*
+_Outputs_
 
 Id
 :   Type: RuleGroup Identifier.  
@@ -1677,7 +1675,7 @@ Id
 
 Deletes a Rule Group
 
-*Inputs*
+_Inputs_
 
 RuleGroupId
 :   Type: mandatory, RuleGroup Identifier.  
@@ -1687,7 +1685,7 @@ RuleGroupId
 
 Deletes all Rule Group from a Rule
 
-*Inputs*
+_Inputs_
 
 RuleId
 :   Type: mandatory, Rule Identifier.  
@@ -1697,7 +1695,7 @@ RuleId
 
 Update a Rule Group record
 
-*Inputs*
+_Inputs_
 
 RuleGroup_Record
 :   Type: mandatory, [RuleGroup_CreateOrUpdate](<#Structure_RuleGroup_CreateOrUpdate>).  
@@ -1707,13 +1705,13 @@ RuleGroup_Record
 
 Create or update a Rule Group Output record
 
-*Inputs*
+_Inputs_
 
 RuleGroupOutputRec
 :   Type: mandatory, [RuleGroupOutput_CreateOrUpdate](<#Structure_RuleGroupOutput_CreateOrUpdate>).  
     RuleGroupOutput record
 
-*Outputs*
+_Outputs_
 
 RuleGroupOutput_View
 :   Type: [RuleGroupOutput_View](<#Structure_RuleGroupOutput_View>).  
@@ -1723,13 +1721,13 @@ RuleGroupOutput_View
 
 Creates or updates a Rule Line
 
-*Inputs*
+_Inputs_
 
 RuleLineRec
 :   Type: mandatory, [RuleLine_CreateOrUpdate](<#Structure_RuleLine_CreateOrUpdate>).  
     RuleLine record
 
-*Outputs*
+_Outputs_
 
 RuleLine_View
 :   Type: [RuleLine_View](<#Structure_RuleLine_View>).  
@@ -1739,7 +1737,7 @@ RuleLine_View
 
 Deletes a RuleLine
 
-*Inputs*
+_Inputs_
 
 RuleLineId
 :   Type: mandatory, RuleLine Identifier.  
@@ -1749,13 +1747,13 @@ RuleLineId
 
 Get all rules available
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
     Case Definition Id
 
-*Outputs*
+_Outputs_
 
 RulesLst
 :   Type: [Rule_View](<#Structure_Rule_View>) List.  
@@ -1765,13 +1763,13 @@ RulesLst
 
 Get a rule by Id
 
-*Inputs*
+_Inputs_
 
 RuleId
 :   Type: mandatory, Rule Identifier.  
     Rule Id
 
-*Outputs*
+_Outputs_
 
 Rule
 :   Type: [Rule_View](<#Structure_Rule_View>).  
@@ -1781,7 +1779,7 @@ Rule
 
 It will mark all entries as deleted for the staging process after only import the active ones
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: optional, CaseDefinition Identifier.  
@@ -1791,7 +1789,7 @@ CaseDefinitionId
 
 Get all RuleGroups from a Rule
 
-*Inputs*
+_Inputs_
 
 RuleId
 :   Type: optional, Rule Identifier.  
@@ -1801,7 +1799,7 @@ RuleGroupId
 :   Type: optional, RuleGroup Identifier.  
     RuleGroup Id
 
-*Outputs*
+_Outputs_
 
 RuleGroups
 :   Type: [RuleGroup_View](<#Structure_RuleGroup_View>) List.  
@@ -1811,13 +1809,13 @@ RuleGroups
 
 Returns the operations available for the respective setting type
 
-*Inputs*
+_Inputs_
 
 SettingTypeId
 :   Type: mandatory, SettingType Identifier.  
     SettingType Id
 
-*Outputs*
+_Outputs_
 
 RuleOperators
 :   Type: [RuleOperator](<#Structure_RuleOperator>) List.  
@@ -1827,7 +1825,7 @@ RuleOperators
 
 Create sample users (verifiy if is a second publish and disable all users before create news) and associate to its role and to its group (if applicable).
 
-*Inputs*
+_Inputs_
 
 CaseDefinitionId
 :   Type: mandatory, CaseDefinition Identifier.  
@@ -1857,13 +1855,13 @@ CreateAdministrator
 
 Converts a Setting value to an CreateOrUpdate structure
 
-*Inputs*
+_Inputs_
 
 SettingValue
 :   Type: mandatory, [Setting_Value](<#Structure_Setting_Value>).  
     Setting properties
 
-*Outputs*
+_Outputs_
 
 SettingCreateOrUpdate
 :   Type: [Setting_CreateOrUpdate](<#Structure_Setting_CreateOrUpdate>).  
@@ -1873,13 +1871,13 @@ SettingCreateOrUpdate
 
 Public action that enables to create or update a setting
 
-*Inputs*
+_Inputs_
 
 SettingRec
 :   Type: mandatory, [Setting_CreateOrUpdate](<#Structure_Setting_CreateOrUpdate>).  
     Details to create or update a setting
 
-*Outputs*
+_Outputs_
 
 SettingId
 :   Type: Setting Identifier.  
@@ -1889,7 +1887,7 @@ SettingId
 
 Public action that deletes a setting
 
-*Inputs*
+_Inputs_
 
 SettingId
 :   Type: mandatory, Setting Identifier.  
@@ -1899,7 +1897,7 @@ SettingId
 
 Public action that deletes a list of settings
 
-*Inputs*
+_Inputs_
 
 SettingIds
 :   Type: mandatory, Setting Identifier List.  
@@ -1909,13 +1907,13 @@ SettingIds
 
 Gets a Setting by it's Id
 
-*Inputs*
+_Inputs_
 
 SettingId
 :   Type: mandatory, Setting Identifier.  
     Setting Id
 
-*Outputs*
+_Outputs_
 
 SettingValue
 :   Type: [Setting_Value](<#Structure_Setting_Value>).  
@@ -1925,7 +1923,7 @@ SettingValue
 
 Public action to hard delete a setting
 
-*Inputs*
+_Inputs_
 
 SettingId
 :   Type: mandatory, Setting Identifier.  
@@ -1935,7 +1933,7 @@ SettingId
 
 Gets the attribute setting type
 
-*Inputs*
+_Inputs_
 
 AttributeId
 :   Type: optional, Entity_Attr Identifier.  
@@ -1949,7 +1947,7 @@ EvaluateFKTargetType
 :   Type: mandatory, Boolean.  
     If true, when the Attribute it's a FK will check the basic type of the Attribute
 
-*Outputs*
+_Outputs_
 
 SettingTypeId
 :   Type: SettingType Identifier.  
@@ -1967,13 +1965,13 @@ TargetEntityId
 
 Enables to create a Tag instance in the Tag entity
 
-*Inputs*
+_Inputs_
 
 TagCreateRec
 :   Type: mandatory, [Tag_Create](<#Structure_Tag_Create>).  
     Details for the creation of a new Tag record
 
-*Outputs*
+_Outputs_
 
 TagId
 :   Type: Tag Identifier.  
@@ -1983,7 +1981,7 @@ TagId
 
 Asynchronously deletes all CaseTag records for a given Tag before deleting the Tag itself. Saves in each case's History each tag deletion.
 
-*Inputs*
+_Inputs_
 
 TagId
 :   Type: mandatory, Tag Identifier.  
@@ -1993,13 +1991,13 @@ TagId
 
 Enables to update a Tag instance in the Tag entity
 
-*Inputs*
+_Inputs_
 
 TagUpdateRec
 :   Type: mandatory, [Tag_Update](<#Structure_Tag_Update>).  
     Details for the update of a Tag record
 
-*Outputs*
+_Outputs_
 
 TagId
 :   Type: Tag Identifier.  
@@ -2009,7 +2007,7 @@ TagId
 
 Creates or updates an User extended record
 
-*Inputs*
+_Inputs_
 
 UserExtendedRec
 :   Type: mandatory, [UserExtended_CreateOrUpdate](<#Structure_UserExtended_CreateOrUpdate>).  
@@ -2019,7 +2017,7 @@ UserExtendedRec
 
 Submits a requests to import user's hierarchy
 
-*Inputs*
+_Inputs_
 
 IsIgnoreEmpty
 :   Type: optional, Boolean.  
@@ -2033,12 +2031,11 @@ ContentTypeId
 :   Type: mandatory, ImportFileType Identifier.  
     ContentTypeId
 
-*Outputs*
+_Outputs_
 
 ImportId
 :   Type: Text.  
     Import request Guid
-
 
 ## Service Actions
 
@@ -2046,12 +2043,11 @@ ImportId
 
 Sets up the basic configurations for a case management application
 
-*Inputs*
+_Inputs_
 
 SetupData
 :   Type: mandatory, [SetupData](<#Structure_SetupData>).  
     Setup Data
-
 
 ## Structures
 
@@ -2059,7 +2055,7 @@ SetupData
 
 View for business entities
 
-*Attributes*
+_Attributes_
 
 EntityId
 :   Type: Entity Identifier.  
@@ -2073,7 +2069,7 @@ Name
 
 View for business entities attributes
 
-*Attributes*
+_Attributes_
 
 AttributeName
 :   Type: Text.  
@@ -2115,7 +2111,7 @@ IsFromBusinessEntity
 
 Public structure to create a new Calendar
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Calendar Identifier.  
@@ -2145,7 +2141,7 @@ TimezoneId
 
 Public structure to update an existing Calendar
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Calendar Identifier.  
@@ -2179,7 +2175,7 @@ IsActive
 
 Public structure to create or update a Case Workflow Action
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseAction Identifier.  
@@ -2199,17 +2195,15 @@ CaseStatusId
 
 IsActive
 :   Type: Boolean.  
-    
 
 TranslationList
 :   Type: [CaseAction_Translation](<#Structure_CaseAction_Translation>) List.  
-    
 
 ### CaseAction_Translation { #Structure_CaseAction_Translation }
 
 Translation structure for Case action
 
-*Attributes*
+_Attributes_
 
 Locale
 :   Type: Text (10).  
@@ -2223,7 +2217,7 @@ Label
 
 View for Case Workflow Action
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Text (36).  
@@ -2249,7 +2243,7 @@ IsActive
 
 Holds the bootstrap data
 
-*Attributes*
+_Attributes_
 
 CaseDefinition
 :   Type: [CaseDefinition_CreateOrUpdate](<#Structure_CaseDefinition_CreateOrUpdate>).  
@@ -2277,7 +2271,6 @@ EmailNotificationList
 
 CaseResourceList
 :   Type: [Resource_CreateOrUpdate](<#Structure_Resource_CreateOrUpdate>) List.  
-    
 
 EspaceId
 :   Type: Espace Identifier.  
@@ -2307,7 +2300,7 @@ Admin_RoleId
 
 Public structure to create a new case definition
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseDefinition Identifier.  
@@ -2354,13 +2347,12 @@ StatusId
 
 TranslationList
 :   Type: [CaseDefinition_Translation](<#Structure_CaseDefinition_Translation>) List.  
-    
 
 ### CaseDefinition_CreateOrUpdate { #Structure_CaseDefinition_CreateOrUpdate }
 
 Public structure to create a new case definition or to update an existing case definition
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseDefinition Identifier.  
@@ -2411,13 +2403,12 @@ IsActive
 
 TranslationList
 :   Type: [CaseDefinition_Translation](<#Structure_CaseDefinition_Translation>) List.  
-    
 
 ### CaseDefinition_Details { #Structure_CaseDefinition_Details }
 
 Public structure that contains the case defintion details
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseDefinition Identifier.  
@@ -2482,7 +2473,7 @@ IsActive
 
 Filter Serch Structure
 
-*Attributes*
+_Attributes_
 
 PageNumber
 :   Type: Integer.  
@@ -2504,7 +2495,7 @@ CaseName
 
 Translation structure for Case definition
 
-*Attributes*
+_Attributes_
 
 Locale
 :   Type: Text (10).  
@@ -2522,7 +2513,7 @@ Description
 
 Public structure for the Creation of a CaseDefinitionMilestoneDefinition record
 
-*Attributes*
+_Attributes_
 
 CaseDefinitionId
 :   Type: CaseDefinition Identifier.  
@@ -2536,7 +2527,7 @@ MilestoneDefinitionId
 
 Public structure for state machine creation
 
-*Attributes*
+_Attributes_
 
 CaseStatusId
 :   Type: CaseStatus Identifier.  
@@ -2550,7 +2541,7 @@ NextCaseStatusId
 
 Structure to enable case state machine creation or update
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseStateMachine Identifier.  
@@ -2572,7 +2563,7 @@ IsActive
 
 Case State Machine Details
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseStateMachine Identifier.  
@@ -2594,7 +2585,7 @@ IsActive
 
 Public structure to create a new status
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseStatus Identifier.  
@@ -2618,13 +2609,12 @@ IsInitial
 
 TranslationList
 :   Type: [CaseStatus_Translation](<#Structure_CaseStatus_Translation>) List.  
-    
 
 ### CaseStatus_CreateOrUpdate { #Structure_CaseStatus_CreateOrUpdate }
 
 Public structure to create or update a status
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseStatus Identifier.  
@@ -2652,13 +2642,12 @@ IsActive
 
 TranslationList
 :   Type: [CaseStatus_Translation](<#Structure_CaseStatus_Translation>) List.  
-    
 
 ### CaseStatus_Details { #Structure_CaseStatus_Details }
 
 Case Status Detail
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: CaseStatus Identifier.  
@@ -2688,7 +2677,7 @@ IsActive
 
 Translation structure for Case status
 
-*Attributes*
+_Attributes_
 
 Locale
 :   Type: Text (10).  
@@ -2706,7 +2695,7 @@ Alias
 
 Public structure that enables to create CaseTage instances
 
-*Attributes*
+_Attributes_
 
 CaseId
 :   Type: Case Identifier.  
@@ -2720,7 +2709,7 @@ TagId
 
 Holds a Delegation entry to be created
 
-*Attributes*
+_Attributes_
 
 From
 :   Type: Date Time.  
@@ -2754,7 +2743,7 @@ IsActive
 
 Holds a Delegation details for update
 
-*Attributes*
+_Attributes_
 
 DelegationId
 :   Type: Delegation Identifier.  
@@ -2792,7 +2781,7 @@ IsActive
 
 Holds the basic setup data for a case management application
 
-*Attributes*
+_Attributes_
 
 BusinessEntityEspaceId
 :   Type: Espace Identifier.  
@@ -2822,7 +2811,7 @@ EmailTemplateList
 
 Represents a EmailTemplate object to be updated
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: EmailTemplate Identifier.  
@@ -2860,7 +2849,7 @@ EmailBody
 
 Represents a EmailTemplate object
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: EmailTemplate Identifier.  
@@ -2914,7 +2903,7 @@ UpdatedOn
 
 Entity to lookup FK
 
-*Attributes*
+_Attributes_
 
 Key
 :   Type: Text.  
@@ -2928,7 +2917,7 @@ Value
 
 Public structure to hold espace details
 
-*Attributes*
+_Attributes_
 
 EspaceId
 :   Type: Espace Identifier.  
@@ -2946,7 +2935,7 @@ Name
 
 Filter Search Structure
 
-*Attributes*
+_Attributes_
 
 PageNumber
 :   Type: Integer.  
@@ -2972,7 +2961,7 @@ OnlyWithCaseDefinition
 
 Filter Search Structure
 
-*Attributes*
+_Attributes_
 
 PageNumber
 :   Type: Integer.  
@@ -2990,7 +2979,7 @@ OnlyActive
 
 Filter Search Structure
 
-*Attributes*
+_Attributes_
 
 PageNumber
 :   Type: Integer.  
@@ -3008,7 +2997,7 @@ OnlyActive
 
 Public structure with system entity group details
 
-*Attributes*
+_Attributes_
 
 GroupId
 :   Type: Group Identifier.  
@@ -3026,7 +3015,7 @@ Description
 
 Public structure to update an existing Group extended
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: GroupExtended Identifier.  
@@ -3072,7 +3061,7 @@ HasCustomManagement
 
 Public structure to create a new Calendar Holiday
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Holiday Identifier.  
@@ -3099,7 +3088,7 @@ IsRecurrent
 
 Public structure to update an existing Calendar Holiday
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Holiday Identifier.  
@@ -3130,7 +3119,7 @@ IsActive
 
 Public structure to create a new milestone definition or to update an existing one
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: MilestoneDefinition Identifier.  
@@ -3150,13 +3139,12 @@ IsActive
 
 TranslationList
 :   Type: [MilestoneDefinition_Translation](<#Structure_MilestoneDefinition_Translation>) List.  
-    
 
 ### MilestoneDefinition_Translation { #Structure_MilestoneDefinition_Translation }
 
 Translation structure for Milestone definition
 
-*Attributes*
+_Attributes_
 
 Locale
 :   Type: Text (10).  
@@ -3174,7 +3162,7 @@ Description
 
 Public structure to create a new Calendar Non Working Day
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: NonWorkingDay Identifier.  
@@ -3192,7 +3180,7 @@ WeekDayId
 
 Public structure to update an existing Calendar Non Working Day
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: NonWorkingDay Identifier.  
@@ -3214,7 +3202,7 @@ IsActive
 
 View to create or update a PreDefined Template
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: PreDefinedTemplate Identifier.  
@@ -3240,7 +3228,7 @@ IsActive
 
 View of a PreDefined Template
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: PreDefinedTemplate Identifier.  
@@ -3266,7 +3254,7 @@ IsActive
 
 Contains the generic details for process definition
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Process_Definition Identifier.  
@@ -3280,7 +3268,7 @@ Label
 
 Structure to create or update a Resource
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Resource Identifier.  
@@ -3314,7 +3302,7 @@ Data
 
 Represents a Resource
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Resource Identifier.  
@@ -3348,7 +3336,7 @@ Data
 
 Structure to create/update a rule
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Rule Identifier.  
@@ -3382,7 +3370,7 @@ ExternalURL
 
 Structure with Rules fields
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Rule Identifier.  
@@ -3432,7 +3420,7 @@ NumRulesGroup
 
 Structure to create or update a Rule Attribute
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: RuleAttribute Identifier.  
@@ -3444,7 +3432,6 @@ AttributeId
 
 ExtraFieldId
 :   Type: ExtraField Identifier.  
-    
 
 RuleAttributeTypeId
 :   Type: RuleAttributeType Identifier.  
@@ -3458,7 +3445,7 @@ Setting_CreateOrUpdate
 
 Structure with Rule Attribute fields
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: RuleAttribute Identifier.  
@@ -3470,7 +3457,6 @@ AttributeId
 
 ExtraFieldId
 :   Type: ExtraField Identifier.  
-    
 
 RuleAttributeTypeId
 :   Type: RuleAttributeType Identifier.  
@@ -3488,7 +3474,7 @@ Setting_Value
 
 Represents a Rule configuration
 
-*Attributes*
+_Attributes_
 
 RuleView
 :   Type: [Rule_View](<#Structure_Rule_View>).  
@@ -3502,7 +3488,7 @@ RuleGroups
 
 Public structure to create or update a rule group
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: RuleGroup Identifier.  
@@ -3524,7 +3510,7 @@ Description
 
 Structure with Rule Groups fields
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: RuleGroup Identifier.  
@@ -3554,7 +3540,7 @@ RuleGroupOutput
 
 Structure to create or update a Rule Group Output
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: RuleGroupOutput Identifier.  
@@ -3572,7 +3558,7 @@ Setting_CreateOrUpdate
 
 Structure with RuleGroupOutput fields
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: RuleGroupOutput Identifier.  
@@ -3590,7 +3576,7 @@ Setting
 
 Structure to create or update a Rule Line
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: RuleLine Identifier.  
@@ -3620,7 +3606,7 @@ RightAttribute
 
 Structure with Rule Line fields
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: RuleLine Identifier.  
@@ -3646,7 +3632,7 @@ RuleOperator
 
 Public structure to create or update a setting
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Setting Identifier.  
@@ -3696,7 +3682,7 @@ IsActive
 
 Public structure with the possible values for a setting
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Setting Identifier.  
@@ -3742,7 +3728,7 @@ Boolean
 
 Public structure to set up case actions
 
-*Attributes*
+_Attributes_
 
 CaseActionId
 :   Type: CaseAction Identifier.  
@@ -3768,7 +3754,7 @@ TranslationList
 
 Public structure to set up a case definition
 
-*Attributes*
+_Attributes_
 
 CaseDefinitionId
 :   Type: CaseDefinition Identifier.  
@@ -3809,7 +3795,7 @@ TranslationList
 
 Public structure to set up case state machine transitions
 
-*Attributes*
+_Attributes_
 
 FromCaseStatusId
 :   Type: CaseStatus Identifier.  
@@ -3827,7 +3813,7 @@ IsActive
 
 Public structure to set up case statuses
 
-*Attributes*
+_Attributes_
 
 CaseStatusId
 :   Type: CaseStatus Identifier.  
@@ -3857,7 +3843,7 @@ TranslationList
 
 Public structure to set up email templates
 
-*Attributes*
+_Attributes_
 
 EmailTemplateId
 :   Type: EmailTemplate Identifier.  
@@ -3891,7 +3877,7 @@ IsActive
 
 Public structure to set up a milestone definition
 
-*Attributes*
+_Attributes_
 
 MilestoneDefinitionId
 :   Type: MilestoneDefinition Identifier.  
@@ -3917,7 +3903,7 @@ TranslationList
 
 Holds the basic setup data for a case management application
 
-*Attributes*
+_Attributes_
 
 BusinessEntityEspaceId
 :   Type: Espace Identifier.  
@@ -3951,7 +3937,7 @@ MilestoneDefinitionList
 
 Public structure that enables to create tag instances
 
-*Attributes*
+_Attributes_
 
 Label
 :   Type: Text (50).  
@@ -3965,7 +3951,7 @@ CaseDefinitionId
 
 Public structure that enables to update tag instances
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Tag Identifier.  
@@ -3979,7 +3965,7 @@ Label
 
 User extended create or update structure
 
-*Attributes*
+_Attributes_
 
 UserId
 :   Type: User Identifier.  
@@ -3992,5 +3978,3 @@ ManagerUserId
 GroupExtendedId
 :   Type: GroupExtended Identifier.  
     Default user group
-
-

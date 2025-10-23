@@ -104,7 +104,7 @@ When building your form, you can choose to make fields visible depending on your
 
 1. Click **Save**.
 
-1. Check if the new fields setting you set are correct. To edit the visibility rule again, click **Edit rule**. To close the field definitions, click **Save**. 
+1. Check if the new fields setting you set are correct. To edit the visibility rule again, click **Edit rule**. To close the field definitions, click **Save**.
 
     ![Image of a defined conditional field in Workflow Builder with visibility rules applied.](images/wfb-form-visibility-rule-final.png "Conditional field defined")
 
@@ -150,7 +150,7 @@ To use an Entity in a form field, follow these steps:
 
 The default status of a form when you complete designing it in the workflow is **Submitted**. If you want change the form status, perform the following steps:
 
-1. Click on the **Status** workflow block below the form. 
+1. Click on the **Status** workflow block below the form.
 
     The Change status window is displayed.
 
@@ -160,7 +160,7 @@ The default status of a form when you complete designing it in the workflow is *
 
     * **Submitted** - default status.
     * **Create new status** — add a new status to the list, for example, **Pending**.
-    * **Manage status** — create and manage all the statuses your request has. 
+    * **Manage status** — create and manage all the statuses your request has.
 
     ![Screenshot of the drop-down menu for selecting the status of a form in Workflow Builder.](images/wfb-design-select-form-status.png "Select the form status")
 
@@ -168,9 +168,9 @@ The default status of a form when you complete designing it in the workflow is *
 
     ![Image of an email preview in Workflow Builder that is sent to the requester upon form status change.](images/wfb-design-email-preview.png "Email preview")
 
-1. To edit the email, click **Edit email**. 
+1. To edit the email, click **Edit email**.
 
-    You can edit the email by directly typing in the **Subject** and **Message** fields. You can also edit the dynamic fields by choosing a value from the **Dynamic field** drop-down. 
+    You can edit the email by directly typing in the **Subject** and **Message** fields. You can also edit the dynamic fields by choosing a value from the **Dynamic field** drop-down.
 
     ![Screenshot showing the email editing interface in Workflow Builder with options to customize the subject and message.](images/wfb-design-edit-email.png "Email edit")
 
@@ -188,7 +188,6 @@ Once you have your form created, start adding steps to your workflow.
 To add a step, click on the **+ Add step** button.
 There are two kinds of steps: Manual task and Condition.
 ![Workflow Builder showing two types of steps available for adding to the workflow: manual task and condition.](images/wfb-design-step-types.png "Two kinds of steps: manual task and condition")
-
 
 ## Manual tasks { #manual-tasks }
 
@@ -236,12 +235,12 @@ To define a manual task, perform the following steps:
 
     ![Screenshot of an email preview in Workflow Builder that notifies a group about a new request assigned to them.](images/wfb-design-email-preview-new-request.png "Manual task - email preview")
 
-1. To edit the email, click **Edit email**. 
+1. To edit the email, click **Edit email**.
 
     You can edit the email by directly typing in the **Subject** and **Message** fields. You can also edit the dynamic fields by choosing a value from the **Dynamic field** drop-down.  
 
     ![Image of the email editing interface in Workflow Builder for customizing the notification sent to a group about a new request.](images/wfb-design-email-edit-new-request.png "Email edit")
-   
+
 ### Create assignment rule
 
 While assigning manual tasks to user groups you can set an assignment rule to assign groups at runtime based on form and case fields.
@@ -364,7 +363,7 @@ A sequential flow ends when all tasks in the process are complete.
 
 ![Diagram illustrating the concept of sequential and parallel flows in Workflow Builder.](images/sequential-parallel-flow-wb.png "Sequential parallel flow diagram")
 
-When a parallel flow is executed, the sequence of activities in each parallel path is executed independently. 
+When a parallel flow is executed, the sequence of activities in each parallel path is executed independently.
 
 ![Diagram showing a parallel flow with independent paths being executed simultaneously in Workflow Builder.](images/parallel-flow-wb.png "Parallel flow diagram")  
 
@@ -372,7 +371,7 @@ You can define when a parallel flow ends, for example, when all branches are com
 
 ![Workflow Builder interface with options to select when a parallel flow ends.](images/branch-ends-wb.png "Select when parallel flow ends")
 
-Workflow Builder allows you to create parallel flows. The following diagram shows parallel branches being used for an employee onboarding request where the IT manager and the facilities manager have parallel tasks to complete at the same time. 
+Workflow Builder allows you to create parallel flows. The following diagram shows parallel branches being used for an employee onboarding request where the IT manager and the facilities manager have parallel tasks to complete at the same time.
 
 ![Workflow Builder diagram showing parallel branches used for an employee onboarding request.](images/parallel-branches-employee-onboarding-wb.png "Example employee onboarding example")
 

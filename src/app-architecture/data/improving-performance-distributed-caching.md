@@ -24,7 +24,7 @@ topic:
 
 ## What is Distributed Caching
 
-A cache is a component that stores data so future requests for that data can be served faster. This provides high throughput and low-latency access to commonly used application data, by storing the data in memory. 
+A cache is a component that stores data so future requests for that data can be served faster. This provides high throughput and low-latency access to commonly used application data, by storing the data in memory.
 
 By avoiding the high latency data access of a persistent data store, caching can dramatically improve application responsiveness, if it's well used.
 
@@ -97,8 +97,6 @@ The following Action flow depicts the steps involved in this strategy:
 ![Action flow for the Background Data Push strategy, illustrating data being pushed to the cache by a Timer action.](images/Improving-performance-with-distributed-caching_5.png "Background Data Push Implementation Flow")
 
 ![Screenshot of the Timer configuration interface used for scheduling background data push to the cache.](images/Improving-performance-with-distributed-caching_6.png "Timer Configuration for Background Data Push") ![Flowchart showing the process of searching for products using data from the distributed cache.](images/Improving-performance-with-distributed-caching_7.png "Product Search Using Distributed Cache")
-
- 
 
 If your application can get data that is slightly out-of-date, you should rely on a configurable expiration time parameter (per cache entry) to set a limit on how old the cache entry can be. As a best practice, this limit should be set when the cache entry is created or updated.
 

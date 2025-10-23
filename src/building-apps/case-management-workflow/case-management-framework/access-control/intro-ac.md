@@ -27,4 +27,3 @@ Let’s take an example of an app created for a banking institution where two di
 When [Access Control is enabled](how-enable-ac.md), restriction to the cases is the default setting and users can only gain access by being granted permission to do so.
 
 You can select between a single user, or all users that belong to a particular group. Permissions granted can either be read-only or write. Write enables a user to perform changes to the case.
-

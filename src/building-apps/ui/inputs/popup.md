@@ -18,7 +18,6 @@ coverage-type:
 
 # Create and use a Popup
 
-
 You can use a popup to show information to users or ask them to enter information. Correctly used popups help you create a good user experience, because the users remain on the same page.
 
 ## Reactive Web and Mobile
@@ -33,7 +32,7 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
     ![Screenshot showing the Popup widget in the Service Studio toolbox](images/popup-1-ss.png "Popup Widget in Service Studio Toolbox")
 
-1. Drag the **Popup** widget into the **Main Content** area of your screen. 
+1. Drag the **Popup** widget into the **Main Content** area of your screen.
 
     ![Screenshot of dragging the Popup widget into the Main Content area of the screen](images/popup-2-ss.png "Dragging Popup Widget into Main Content")
 
@@ -65,13 +64,11 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
 1. Repeat steps 6 and 7 for the Open Popup button, substituting the variable value to True. Clicking the **Open Popup** button sets the ShowPopup variable to **True** and opens the popup.
 
-After following these steps and publishing the module, you can test the pattern in your app. 
-
+After following these steps and publishing the module, you can test the pattern in your app.
 
 <div class="info" markdown="1">
 
 To enable the Accessibility Features offered by the **EnableAccessibilityFeatures** layout parameter in a popup, you must manually add the class "has-accessible-features" to the **Style Classes** parameter of the popup widget. Also, if you want to change the pop-up's size or other look and feel parameters, use the [Styles tab](../look-feel/styles-editor.md) to define your customizations.
-
 
 </div>
 

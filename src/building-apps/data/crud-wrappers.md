@@ -19,7 +19,6 @@ CRUD operations—Create, Read, Update, and Delete—are basic actions that let 
 
 OutSystems provides tools that simplify CRUD operations, saving time while ensuring consistency and scalability. These tools allow developers to design systems that grow as needed and maintain high standards for functionality. A key feature of these tools is CRUD wrappers. CRUD wrappers let developers add rules, validations, and custom logic to CRUD actions to ensure the application behaves as expected. While manually creating CRUD wrappers can take time, OutSystems Service Studio’s accelerator feature lets developers create them faster and more easily.
 
-
 ## Core concepts of CRUD wrappers in OutSystems
 
 CRUD wrappers are actions that group together the default CRUD entity actions, such as creating or updating a record. They provide a way to add extra checks and rules to these actions, making development more efficient and promoting code reusability. With CRUD wrappers, developers can:
@@ -32,9 +31,9 @@ CRUD wrappers are actions that group together the default CRUD entity actions, s
 
 While CRUD wrappers are extremely useful, they can be tedious to create manually, especially in applications with many entities or complex requirements.
 
-### Service Studio accelerator 
+### Service Studio accelerator
 
-OutSystems Service Studio offers an accelerator feature designed to simplify CRUD wrapper creation for entities created in Service Studio. The accelerator automates repetitive tasks like adding validations and parameters, streamlining the initial setup process. 
+OutSystems Service Studio offers an accelerator feature designed to simplify CRUD wrapper creation for entities created in Service Studio. The accelerator automates repetitive tasks like adding validations and parameters, streamlining the initial setup process.
 
 The accelerator creates four server action wrappers, which are visible in the Logic tab under a folder with the same name as the entity:
 
@@ -64,7 +63,6 @@ OutSystems entities typically have an ID attribute as their primary key, configu
 However, you may want to disable AutoNumber in scenarios where you need manual control over record IDs. This includes cases like integrating with external systems that rely on predefined IDs or implementing a custom ID generation strategy. If you choose to disable AutoNumber, your application must have a mechanism to generate and assign unique IDs to maintain data integrity.
 
 For entities where the ID attribute is not AutoNumber, the CRUD wrappers include specific logic. In the `Create` and `CreateOrUpdate` wrappers, a validation checks if the Identifier is set, since the platform won't automatically generate one. Therefore, you must ensure your logic provides a unique identifier, such as using the `GenerateGuid()` system action or another suitable method.
-
 
 ### Enable auditing for data changes
 
@@ -107,5 +105,3 @@ Even with the accelerator, it's important to follow best practices to ensure rob
     * Add role validations.
     * Add logic to update related tables, for example, updating the stock when an order is fulfilled.
     * Write into auditing tables.
-
-

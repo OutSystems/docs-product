@@ -32,7 +32,7 @@ Keep client-side information as simple as possible. Execute complex data process
 
 **Choose OutSystems low-code over JavaScript**
 
-OutSystems automatically optimizes the code for the best runtime performance. Use JavaScript only if it cannot be done with the OutSystems low-code language or in advanced extensibility scenarios. 
+OutSystems automatically optimizes the code for the best runtime performance. Use JavaScript only if it cannot be done with the OutSystems low-code language or in advanced extensibility scenarios.
 
 **Test your app in real world scenarios**
 
@@ -74,13 +74,13 @@ By default, OutSystems mobile apps fetch screen data without a specific priority
 
 Delay the rendering of the secondary content so that the main content is rendered first. To do this:
 
-1. Place the secondary content in a Block inside the *True* branch of a*n If w*idget. The Block must enclose all the logic to fetch the secondary content so that data fetching of the secondary content only runs when the Block is rendered.
+1. Place the secondary content in a Block inside the _True_ branch of a*n If w*idget. The Block must enclose all the logic to fetch the secondary content so that data fetching of the secondary content only runs when the Block is rendered.
 
-2. On the* False *branch of the *If* widget, place [an empty state](#design-an-empty-state-for-content-being-fetched) to avoid content from moving around when the secondary content is fetched.
+1. On the*False*branch of the _If_ widget, place [an empty state](#design-an-empty-state-for-content-being-fetched) to avoid content from moving around when the secondary content is fetched.
 
-3. Set the *If* condition to a variable holding *False* by default.
+1. Set the _If_ condition to a variable holding _False_ by default.
 
-4. In the On Render event of the screen, add logic to set the variable to *True* so that the secondary content starts to render.
+1. In the On Render event of the screen, add logic to set the variable to _True_ so that the secondary content starts to render.
 
 ![Illustration of prioritizing content rendering in an OutSystems mobile app using conditional blocks.](images/OutSystems-Mobile-Best-Practices-1.png "Content Rendering Priority in OutSystems")
 
@@ -100,7 +100,7 @@ Handling data or implementing logic specifically for mobile scenarios can have a
 
 ### Fix the Performance Warnings
 
-OutSystems automatically detects potential performance issues while you are developing your mobile app in Development Environment. Not paying attention to them may result in a bad performance of the application. 
+OutSystems automatically detects potential performance issues while you are developing your mobile app in Development Environment. Not paying attention to them may result in a bad performance of the application.
 
 ![OutSystems development environment interface displaying performance warnings.](images/OutSystems-Mobile-Best-Practices-3.png "OutSystems Performance Warnings")
 
@@ -185,7 +185,7 @@ Do not design list items with content that can be expanded, such as a descriptio
 
 **Fine tune how lists fetch data on demand**
 
-Adjust the number of records that are initially loaded, the increment when scrolling down and the scroll threshold to trigger the On Scroll Ending event. It will provide a better user experience when using lists by avoiding visual glitches and slow list scrolls. 
+Adjust the number of records that are initially loaded, the increment when scrolling down and the scroll threshold to trigger the On Scroll Ending event. It will provide a better user experience when using lists by avoiding visual glitches and slow list scrolls.
 
 The values to use depend on the size of the records:
 
@@ -343,4 +343,3 @@ Client-side issues can be hard to troubleshoot, especially when they seem to occ
 **Recommendation**
 
 OutSystems provides [a way for you to log information](https://success.outsystems.com/documentation/11/developing_an_application/troubleshooting_applications/log_information_in_action_flows/) in a mobile app. However, you can also create your client-side logging system that stores log entries in local storage. Then provide a way for the user to upload these logs in case of errors. This will allow you to analyze what might have caused an issue in that specific user's device.
-

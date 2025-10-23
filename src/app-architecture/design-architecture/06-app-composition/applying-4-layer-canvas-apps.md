@@ -33,9 +33,9 @@ Applications are subject to the same validation rules, respecting the relations 
 
 1. No upward references
 
-2. No side references among **End-User** applications or **Orchestration** applications
+1. No side references among **End-User** applications or **Orchestration** applications
 
-3. No cyclic references between two applications
+1. No cyclic references between two applications
 
 The same rationale applies for modules and for applications. **Orchestration** and **End-user** applications should not provide reusable services to ensure their life cycle independence. For example, an **End-User** application can contain reusable **Core** and **Library** modules, as long as they are consumed only by other modules of the same application.
 
@@ -45,7 +45,7 @@ To better understand the dependencies among applications, consider the following
 
 ### First project
 
-Commonly, people don’t start thinking about defining several applications, starting with one application per project. 
+Commonly, people don’t start thinking about defining several applications, starting with one application per project.
 
 In the first project, a new application is created to hold all the modules that were conceived at the architecture design stage. This application results from the blending of components that will eventually be versioned and deployed to a Quality Assurance environment.
 
@@ -79,13 +79,12 @@ Validation of the application architecture can also be done with the [Discovery 
 
 ## Correctly composing applications
 
-There are [four rules ](rules-correct-app-composition.md)that will help you make sure that you address the critical points when composing your applications.
+There are [four rules](rules-correct-app-composition.md)that will help you make sure that you address the critical points when composing your applications.
 
-Another common aspect you need to take into account is [isolating an application Theme ](isolating-app-theme.md)to share the same look & feel among your applications.
+Another common aspect you need to take into account is [isolating an application Theme](isolating-app-theme.md)to share the same look & feel among your applications.
 
 ## More information
 
 To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](../intro.md) guide.
 
 You can also check for further recommendations on how you should [compose your application landscape](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/Application_composition).
-

@@ -24,7 +24,7 @@ topic:
 
 # Developing from the architecture blueprint
 
-This article focus on putting into action the final architecture blueprint. 
+This article focus on putting into action the final architecture blueprint.
 
 The [previous article](intro.md) explained the use case of a fictitious client. The Soccer Fields Fictitious client wants to build a web application to allow their clients to reserve soccer fields online.
 
@@ -48,10 +48,9 @@ An external system provides the list of soccer fields, meaning it’s not in the
 
 </div>
 
-
 ## Architecture design
 
-In the [previous article](intro.md), you ended up with a final architecture blueprint. The image below shows it and sets the starting point of the development phase. 
+In the [previous article](intro.md), you ended up with a final architecture blueprint. The image below shows it and sets the starting point of the development phase.
 
 ![Diagram of the final architecture blueprint for the Soccer Fields application.](images/architecture-blueprint-starting-points.png "Architecture Blueprint Starting Points")
 
@@ -61,7 +60,7 @@ The following sections explain the process of translating a blueprint into an ac
 
 This is the first step. To understand what you are looking at:
 
-* You need to be able to identify which elements are modules and which elements are applications. 
+* You need to be able to identify which elements are modules and which elements are applications.
 
 * You need to understand the nature and goal of each element, so you can place your code in the right place.
 
@@ -74,13 +73,13 @@ The following table shows some conventions:
 
 The architecture design must document the nature of each element. The architect is responsible for adding such details.
 
-To proceed, you must think about the business requirements, and try to understand the goal and the scope of each module. 
+To proceed, you must think about the business requirements, and try to understand the goal and the scope of each module.
 
 In this example, there are two applications:
 
 * **Soccer Fields App**: this is the main application that contains the code to interact with the users and book the fields
 
-* **Field Core Services**: this is a supporting application, that allows you to connect and obtain field information coming from an external source. 
+* **Field Core Services**: this is a supporting application, that allows you to connect and obtain field information coming from an external source.
 
 ## Identify module dependencies
 
@@ -94,14 +93,13 @@ Here are some insights:
 
 1. **Booking_BL** works by the composition of two core concepts, fields, and players. These two core concepts are independent, meaning that when a player books a field, the **Booking_BL** module keeps that association.
 
-2. **Field_CS** contains a local replica of the existing fields, for performance reasons. The **Field_Sync** module synchronizes this local replica, and reads the information from **Field_IS** and writes it into **Field_CS**.
+1. **Field_CS** contains a local replica of the existing fields, for performance reasons. The **Field_Sync** module synchronizes this local replica, and reads the information from **Field_IS** and writes it into **Field_CS**.
 
 * Writing operations into the external system uses the connection between **Field_CS** and **Field_IS**: when the user books the fields, it informs the external system.
 
-* Note that **Field_IS** is the only module that connects to the external REST API, normalizing the retrieved information into an internal format. This level of abstraction is crucial for your system to evolve independently of the external systems. 
+* Note that **Field_IS** is the only module that connects to the external REST API, normalizing the retrieved information into an internal format. This level of abstraction is crucial for your system to evolve independently of the external systems.
 
 The architecture blueprints must contain this information. If not, the recommendation is that you make this exercise and validate the results with your architect.
-
 
 ## Creating the modules and applications
 
@@ -112,16 +110,15 @@ This section goes through the development of modules and applications. The first
 Following your architecture design let’s create the first application and modules:
 
 1. In Service Studio, choose **New Application**, select **Web App**, and pick the **Liverpool** theme. Name the application "Soccer Fields" and click on **CREATE APP**.
- 
-1. Now that you created the first application, it’s time to create the first module. 
 
-    Note that the first module to create in an end-user application is a theme module. The theme module allows you to isolate and customize the style of your application, following the best practices. 
+1. Now that you created the first application, it’s time to create the first module.
+
+    Note that the first module to create in an end-user application is a theme module. The theme module allows you to isolate and customize the style of your application, following the best practices.
 
     * By default, it's a good practice to create the module with the application name without spaces. Therefore you need to rename it to **SF_Th**, select the **Responsive** module type, and then click on the **CREATE MODULE** button:
 
     ![Screenshot of the module creation interface in Service Studio with the module name 'SF_Th' and module type options.](images/creating-a-module.png "Creating a Module in Service Studio")
 
- 
 1. Before publishing your application, you may want to delete the **Emails** and the **MainFlow** UI flows. After this, you are ready to Publish your application by clicking on the **1-Click Publish** button:
 
     1. Delete "Emails" and “MainFlow” UI flows:
@@ -157,30 +154,29 @@ Following your architecture design let’s create the first application and modu
 
 1. Now that you have your Core Application and your first module create the remaining modules: **Field_CS** and **Field_Sync**. For each module, click on the **New Module** button, rename the module accordingly, and select the **Blank** module type. Click on the **CREATE MODULE** button and publish it.
 
-
 ### The foundation application
 
 For this sample, it's not necessary to have a foundation application due to the simplicity of this example and reusability needs.
- 
+
 #### Implementation
 
-Now that you have your applications and modules created, let’s start programming. 
+Now that you have your applications and modules created, let’s start programming.
 
-To simulate the fields API that your application consumes, this example bases on an OutSystems pre-created simple fake API module that exposes only what you need. Other technology could apply because you are going to use REST to communicate with it. 
+To simulate the fields API that your application consumes, this example bases on an OutSystems pre-created simple fake API module that exposes only what you need. Other technology could apply because you are going to use REST to communicate with it.
 
 <div class="info" markdown="1">
- 
+
  Remember: this article refers to the OutSystems architecture and how to put it into action. It doesn't discuss the best approach to implement an API using OutSystems.
 
 </div>
 
-The API is very simple, as there's only one resource: the fields. Every request needs to send the **API_KEY** request header with a valid key. Since this is a sample, the valid **API_KEY** is "*outsystems_is_awesome*".
- 
+The API is very simple, as there's only one resource: the fields. Every request needs to send the **API_KEY** request header with a valid key. Since this is a sample, the valid **API_KEY** is "_outsystems_is_awesome_".
+
 #### Architecture patterns
 
 As referred before, the architect has to document the architecture patterns in the architecture design.
 
-For this use case, there is an important integration pattern, to retrieve the soccer field information. 
+For this use case, there is an important integration pattern, to retrieve the soccer field information.
 
 ![Diagram showing the architectural patterns for retrieving soccer field information.](images/retrieving-soccer-field-info.png "Retrieving Soccer Field Information Diagram")
 
@@ -193,16 +189,16 @@ In this partner, focus on 3 architectural patterns:
 1. Synchronization of data
 
 #### Translating the pattern into code.
- 
+
 1. **Integrating with an External Service**
 
     Start your implementation by the integration with the external API. The **Field_IS** module is the right place to do this since it's your technical wrapper for consuming and normalizing the data from the external API. This module is responsible for abstracting and isolating all the particularities of the external API.
-    
+
     1. Consume the external API
 
         Open the **Field_IS** module, click on the **Logic** tab, and under the **Integrations** folder, right-click on the REST node and select **Consume REST API…**. Let’s assume the team that developed the external API provided you with a swagger spec. In this case, you're using the sample fake service already mentioned. So, you just need to click on **ADD ALL METHODS** and fill the URL of the swagger file.
-        After clicking **OK** , the external API should look like this: 
-    
+        After clicking **OK** , the external API should look like this:
+
         ![Screenshot of the REST API methods in Service Studio after consuming an external API.](images/consuming-external-api.png "Consuming External API in Service Studio")
 
     1. Send the API Key
@@ -229,34 +225,31 @@ In this partner, focus on 3 architectural patterns:
 
         ![Screenshot of the logic flow for creating the 'Field_IS_GetSummaryFields' server action in Service Studio.](images/creating-field-is-getsummaryfields-action.png "Creating Field_IS_GetSummaryFields Action in Service Studio")
 
-
 1. **Local Replica of data**
 
     To increase performance and provide a better user experience to the end user, create a local replica of data on the application side. To accomplish this, create a local entity where you're going to store the data that's going to get from the external system.
 
     1. Public Local Entity Read only
 
-        On the Field CS, create a new entity Field entity. Add all the fields that the Field IS summary structure is going to return. Remember to set some fields mandatory (like Name and Dimension), required to identify a field record. 
+        On the Field CS, create a new entity Field entity. Add all the fields that the Field IS summary structure is going to return. Remember to set some fields mandatory (like Name and Dimension), required to identify a field record.
 
         Set the Public property, and also the Expose Read-only property to **yes**. You want to avoid that other external modules can change data directly. The following screen shows how the entity should look like.
-        
-        ![Screenshot of the 'Field' entity properties in Service Studio with attributes like Name, Dimension, and City.](images/field-entity.png "Field Entity in Service Studio")
 
- 
+        ![Screenshot of the 'Field' entity properties in Service Studio with attributes like Name, Dimension, and City.](images/field-entity.png "Field Entity in Service Studio")
 
     1. Creation of CRUD (Create, read, update and delete) actions
 
         Because you're exposing the entities as read-only, you need to set actions that are going to centralize the creation of the data in these entities. One other advantage of this approach is that this way you can also centralize any general operations (like logging) on a central action. Avoiding any sort of duplicated code.
-        
+
         For this scenario, create actions for the 2 major operations that are normally used for creating any type of field records. Create a new folder on the server actions and add the **Field_Create** action. Add a Field as an input parameter and an **id** as a Field identifier as an output parameter. On the body of the action just drag the **CreateOrUpdateField** internal action, and add one assignment at the end for returning the created **id**.  
-        
+
         ![Screenshot showing the creation of CRUD actions for the 'Field' entity in Service Studio.](images/creating-crud.png "Creating CRUD Actions in Service Studio")
-        
+
         Repeat the same receipt for creating the **Field_CreateOrUpdate** action.  
 
 1. **Synchronization of data**
 
-The **Field_Sync** module is going to make the asynchronous synchronization logic from the external system into the local cached one. This module holds the timers and the logic, referencing the **Field_IS** and **Field_CS**. 
+The **Field_Sync** module is going to make the asynchronous synchronization logic from the external system into the local cached one. This module holds the timers and the logic, referencing the **Field_IS** and **Field_CS**.
 
 At a specific time, the sync timer triggers. Then, the sync algorithm gets a subset of data fields from the external system using the **Field_IS_GetSummaryFields**"** created on step 1. The following screen and the described steps exemplify the sync field data algorithm.
 
@@ -270,7 +263,7 @@ At a specific time, the sync timer triggers. Then, the sync algorithm gets a sub
 
 1. On this loop, cycle through all the results and insert/update them on your Field Entity;
 
-1. At the start of this condition, check if you're reaching the logic timeout (best practice) defined on step 1, and if you still have any more records to process. 
+1. At the start of this condition, check if you're reaching the logic timeout (best practice) defined on step 1, and if you still have any more records to process.
 
     1. If you didn’t reach the 10 minutes timeout and you still have records to process, continue cycling the algorithm once more;
 

@@ -20,5 +20,4 @@ coverage-type:
 
 Once you have fetched data for an app, either as an aggregate or an SQL element, you can view and display returned records by using database queries or custom SQL queries.
 
-The articles in this section give examples about how to edit data, use filters, sorting, calculating aggregated data, and other operations to manipulate your data sets according to your business needs. 
-
+The articles in this section give examples about how to edit data, use filters, sorting, calculating aggregated data, and other operations to manipulate your data sets according to your business needs.

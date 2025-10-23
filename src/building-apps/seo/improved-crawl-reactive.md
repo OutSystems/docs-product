@@ -32,11 +32,11 @@ This diagram explains the connection between crawlers, sitemaps, and robots:
 
 ![Diagram illustrating how crawlers interact with sitemaps and robots.txt files for SEO optimization](images/connection-between-crawlers-sitemaps-robots-diag.png "Diagram of Connection Between Crawlers, Sitemaps, and Robots")
 
-### Sitemap.xml 
+### Sitemap.xml
 
 A sitemap is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them. Having a sitemap speeds up content discovery by enabling search engines to identify your website structure and crawl your site more efficiently. A sitemap informs the search engines about what pages and files you think are important on your site, and also provides valuable information about them. For example, the sitemap can provide information like the timepoint when the page was last updated and any alternate language versions of the page.
 
-#### Sitemap.xml formatting 
+#### Sitemap.xml formatting
 
 <div class="info" markdown="1">
 
@@ -44,7 +44,7 @@ A sitemap is a file where you provide information about the pages, videos, and o
 
 </div>
 
-A sitemap is valid if its location attribute (URL) is in an XML format that follows the formatting rules and can be parsed by crawlers. When an app is under frequent development, the sitemap becomes outdated. As a solution, because most addresses can be valid locations for a sitemap, use a REST API to create a sitemap for your applications. This REST API computes and returns a plan of your website following the XML formatting rules. 
+A sitemap is valid if its location attribute (URL) is in an XML format that follows the formatting rules and can be parsed by crawlers. When an app is under frequent development, the sitemap becomes outdated. As a solution, because most addresses can be valid locations for a sitemap, use a REST API to create a sitemap for your applications. This REST API computes and returns a plan of your website following the XML formatting rules.
 
 #### Create a static sitemap.xml file
 
@@ -52,7 +52,7 @@ To create a static sitemap, follow these steps:
 
 **Prerequisite:** If you haven't already, consider [creating a site rule](seo-friendly-url-reactive.md#creating-a-site-rule) to make your module the root app of the domain.  
 
-1. [Create a REST endpoint](#create-a-REST-endpoint) that lists URLs in your app.  
+1. [Create a REST endpoint](#create-a-rest-endpoint) that lists URLs in your app.  
 1. Create a local sitemap.xml file using a text editor of your choice.  
 1. [Reference the created REST endpoint to your sitemap.xml](#expose-the-rest-api-endpoint).  
 1. [Deploy the sitemap.xml as a static file](#adding-sitemapxml-to-the-root-directory-of-a-domain).  
@@ -66,12 +66,11 @@ If you use [custom URLs](seo-friendly-url-reactive.md#custom-screen-urls) on any
 
 <div class="info" markdown="1">
 
-To see an example of an app with a REST endpoint implemented, you can download the [Sitemap-and-robots sample app](resources/sitemap-and-robots.oap). 
+To see an example of an app with a REST endpoint implemented, you can download the [Sitemap-and-robots sample app](resources/sitemap-and-robots.oap).
 
 **Note**: The sample app is a reference only and is not to be used to generate a REST endpoint. You can copy and paste the REST logic and adapt it in your app.
 
 </div>
-
 
 1. In **Service Studio**, go to the **Logic** tab and expand the **Integrations** folder.
 
@@ -89,17 +88,17 @@ To see an example of an app with a REST endpoint implemented, you can download t
 
     ![Screenshot showing the process of adding a new REST API method in Service Studio](images/method-ss.png "Adding REST API Method in Service Studio")
 
-1. Enter a name for the method. 
+1. Enter a name for the method.
 
-1. Add a text output parameter. 
+1. Add a text output parameter.
 
     The output parameter is used to iteratively build the sitemap.
 
     ![Screenshot illustrating how to add an output parameter to a REST API method in Service Studio](images/output-parameter-ss.png "Adding Output Parameter in Service Studio")
 
-    The REST method’s output is an XML formatted list that includes all URL endpoints that are relevant for the search engine crawlers. 
+    The REST method’s output is an XML formatted list that includes all URL endpoints that are relevant for the search engine crawlers.
 
-    ###### **Example XML formatted list**
+   ###### **Example XML formatted list**
 
     ```
             <?xml version='1.0' encoding='UTF-8'?>
@@ -107,13 +106,13 @@ To see an example of an app with a REST endpoint implemented, you can download t
                     <url>
                         <loc>https://example.com/Home</loc>
                     </url>
-    	            <url>
+                    <url>
                         <loc>https://example.com/Login</loc>
                     </url>
                 </urlset>
 
     ```
-     
+
     To achieve the XML formatted list that includes all URL endpoints, there must be a hostname that's the same for all URLs. Consider having a local variable to easily reuse this hostname across every screen.
 
 1. Add URLs for screens without input parameters (static screens).
@@ -152,7 +151,7 @@ The robots.txt is stored in the root directory of a domain. Thus it is the first
 
 For search engine crawlers to find a robots.txt for your app, you need to make sure your app is available from the root of your website. This is possible through [site rules](seo-friendly-url-reactive.md#site-rules). When you set your app to live at the root of your website, whenever someone accesses your main endpoint, it will show the app right away. This means that the entry module for your app, `<environment>/MyApp`, will now be the root of your site, `example.com`. Since the robots.txt file is under `<environment>/MyApp/robots.txt`, after setting a site rule for MyApp, the file will be accessible under `example.com/robots.txt`, which is the first place the crawlers look for it.  
 
-Robots.txt files follow the [Robots Exclusion Protocol](https://datatracker.ietf.org/doc/html/draft-koster-rep) and this is an example of how they look like: 
+Robots.txt files follow the [Robots Exclusion Protocol](https://datatracker.ietf.org/doc/html/draft-koster-rep) and this is an example of how they look like:
 
 ```
 Sitemap: https://example.com/sitemap.xml
@@ -176,7 +175,6 @@ To create a static robots.txt file, follow these steps:
 
 1. In the robots.txt file, reference the sitemap.xml endpoint and other directives that you need, following the structure of the [Robots Exclusion Protocol](https://datatracker.ietf.org/doc/html/draft-koster-rep).  
 
-
 #### Add robots.txt to the root directory of a domain
 
 After [creating the robots.txt file](#create-robots), add it to the root of your domain:
@@ -185,11 +183,11 @@ After [creating the robots.txt file](#create-robots), add it to the root of your
 
 If you haven't already, [create a site rule](seo-friendly-url-reactive.md#creating-a-site-rule) to make your module the root app of the domain, thus making this file the entry point on your domain for search engine crawlers.
 
-</div> 
+</div>
 
 1. In **Service Studio**, go to the **Data** tab.  
 
-1. Right-click the **Resources** folder and select **Import Resource**. 
+1. Right-click the **Resources** folder and select **Import Resource**.
 
     ![Screenshot demonstrating how to import a resource into Service Studio](images/import-resource-ss.png "Importing Resource to Service Studio")
 
@@ -221,28 +219,28 @@ The **developer** and **deployer** collaborate to generate a sitemap.
 
 1. In **Service Studio**, the developer:
 
-	1. Creates a REST endpoint that lists URLs in the app.
-        
+    1. Creates a REST endpoint that lists URLs in the app.
+
     1. Asks the deployer to create the site rule.
 
         **Note:** The developer doesn’t have the permissions to create a site rule.
 
-1. In **Service Center**, the deployer: 
+1. In **Service Center**, the deployer:
 
-    1. Creates the site rule. 
+    1. Creates the site rule.
 
     1. Makes the module the root app of the domain.
 
-1. In **Service Studio**, the developer: 
+1. In **Service Studio**, the developer:
 
     1. Creates, imports, and deploys the sitemap.xml and robots.txt files.
 
         **Note**: Deploy the sitemap.xml and robots.txt as static files.
-    
+
     1. Publishes and validates the app.
 
-        To validate the app, go to the robots.txt file at the root of the domain (domain.com/robots.txt), follow the sitemap reference and ensure that it points to the expected sitemap.xml resource. Go to the REST method inside the sitemap.xml and ensure that it includes all the expected URL endpoints. 
-        
+        To validate the app, go to the robots.txt file at the root of the domain (domain.com/robots.txt), follow the sitemap reference and ensure that it points to the expected sitemap.xml resource. Go to the REST method inside the sitemap.xml and ensure that it includes all the expected URL endpoints.
+
         After all of these changes are deployed to the production environment, validation tools such as Google console can be used to identify any problems with the sitemap format or invalid screen endpoints.
 
         **Note**: You may need to validate the app again after site rule, application changes, and deployments are complete.
@@ -261,7 +259,7 @@ The **developer** and **deployer** collaborate to generate a sitemap.
 
 1. In **Service Center**, the deployer:
 
-    1. Creates the site rule. 
+    1. Creates the site rule.
 
         Usually, the site rule is created in the production environment only. However, they can also be created in the development  environment for validation purposes. If a site rule is set up for a development environment, upon deploying the application, the site rule is not automatically set up for the production environment as it is a configuration specific to the environment.
 
@@ -271,7 +269,7 @@ The **developer** and **deployer** collaborate to generate a sitemap.
 
 1. In **Service Studio**, the deployer:
 
-    1. Opens the module. 
+    1. Opens the module.
 
         **Note**: For multi-module apps, the deployer may need to open several modules to find the sitemap and robot files.
 
@@ -284,5 +282,3 @@ The **developer** and **deployer** collaborate to generate a sitemap.
 1. In **LifeTime**, the deployer marks the hotfix as solved, and then submits the sitemap to search engines.
 
     **Note**: This occurs only when the changes are in the Production environment (must be a public facing environment).
-
-

@@ -79,7 +79,7 @@ Doing so ensures the pattern is accessible for all users, including people with 
 
 1. Select the **Screen/Block** where the Blank Slate is used.
 
-1. In the **Screen/Block** properties, select the **OnReady** event. 
+1. In the **Screen/Block** properties, select the **OnReady** event.
 
     A client action is created.
 
@@ -101,7 +101,6 @@ Doing so ensures the pattern is accessible for all users, including people with 
 
     If the Blank Slate is used to represent an empty list of results (for example, an inbox or item list with no entries), set the role to **region**.
 
-
     ```javascript
     // Set role on the first Blank Slate element
     const blankSlate = document.getElementById($parameters.WidgetId);
@@ -111,7 +110,7 @@ Doing so ensures the pattern is accessible for all users, including people with 
     ```
 
     ![Adding the script to the JavaScript node in Service Studio](images/blankslate-addrolescript-ss.png "Add the script to the JavaScript node")
-    
+
     **b) Blank Slate updates dynamically**
 
     If the Blank Slate updates dynamically (for example, search results: **No results found** or a shopping cart: **Your cart is empty**), set the role to **status**.

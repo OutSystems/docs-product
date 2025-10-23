@@ -35,12 +35,12 @@ To export the translatable text from your module follow these steps in Service S
 
 1. Go to the **Data** tab, right-click **Multilingual Locales**, and then hover the move over **Export Language Resources** to show a new menu.
 
-2. In the menu select one of the options to export in the format you want:
+1. In the menu select one of the options to export in the format you want:
 
     * **To Excel**. Exports all translatable text to a single Excel file.
     * **To .resX (.NET resource format)**. Exports all translatable text to the .resX files ([not available in the cross-platform Service Studio](../../../setup-infra-platform/setup/limitations.md)).
 
-3. Select the export location and click **OK**.
+1. Select the export location and click **OK**.
 
 For more information about the translation files, see [Translation resource file formats](#translation-resource-file-formats).
 
@@ -52,7 +52,7 @@ To control which text Service Studio exports, see more information about **trans
 
 ## Import the translation
 
-To import the translation back to the module, follow these steps in Service Studio: 
+To import the translation back to the module, follow these steps in Service Studio:
 
 1. Go to the **Data** tab and right-click **Multilingual Locales** and select **Import Language Resources**. A dialog opens.
 
@@ -87,5 +87,5 @@ All translatable text is in the .resX files, one file **for each language locale
 * **Comment**: The location of the translatable text in the module
 
 Some .NET Framework versions may have more attributes in the translatable resource files than those described here. The extra attributes have no effect on the app interface.
-    
+
 The name of the .resX files is in the following format: `<module name>` + `Language` + `.<Language locale>.resX'`. For example, if your module name is **Recruitment** with the locales being French (France) (fr-FR) and French (Canada) (fr-CA), then the three generated files are: **RecruitmentLanguage.fr-FR.resX**, **RecruitmentLanguage.fr-CA.resX**, and **RecruitmentLanguage.resX** for the default language.

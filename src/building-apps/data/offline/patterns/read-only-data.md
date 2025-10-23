@@ -29,9 +29,9 @@ Applies only to Mobile Apps.
 
 This data synchronization pattern is recommended for mobile apps where the end users only need to read data while the apps are offline and the amount of data is small, as follows:
 
-* The server database holds the master data which can change over time. 
-* Synchronization downloads all data from the server database and stores it on the local storage of the device. 
-* Data modifications performed on the device are not propagated to the server. 
+* The server database holds the master data which can change over time.
+* Synchronization downloads all data from the server database and stores it on the local storage of the device.
+* Data modifications performed on the device are not propagated to the server.
 
 The following is an overview of the Read-Only Data pattern logic:
 
@@ -48,7 +48,6 @@ Download and store locally only the minimum subset of data relevant to the user 
 </div>
 
 Download the [sample module for the Read-Only Data pattern](http://www.outsystems.com/forge/component/1638/Offline+Data+Sync+Patterns/), that uses companies as an example of data to synchronize. The following sections explain how to automatically generate this synchronization pattern and provide detailed descriptions of the data model and logic used in the sample module.
-
 
 ## Automatically Generate the Pattern for an Entity
 
@@ -74,13 +73,11 @@ Sync&lt;Entity&gt;
 
 If you want this pattern to run in the [synchronization template mechanism](<../sync-implement.md>), add a call to the SyncLocal&lt;Entity&gt; in the OfflineDataSync client action.
 
-
 ## Data Model
 
 This sample defines a Database entity `Company` and its Local Storage counterpart `LocalCompany`.
 
 ![Diagram of the Read-Only Data model showing the Database entity 'Company' and its Local Storage counterpart 'LocalCompany'](images/read-only-data-data-model.png "Read-Only Data Model")
-
 
 ## OfflineDataSync Logic
 
@@ -93,7 +90,6 @@ The following is a description of the logic of the `OfflineDataSync` client acti
 1. Recreates the Company records in the local storage using the list of records returned by the server.
 
 `DeleteAllLocalCompanies` and `CreateOrUpdateAllLocalCompanies` are entity actions created automatically for the `LocalCompany` local storage entity. This is a local storage feature to help you handle records.
-
 
 ## ServerDataSync Logic
 

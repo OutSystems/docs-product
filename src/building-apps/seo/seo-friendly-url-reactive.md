@@ -72,9 +72,9 @@ Some best practices include:
 * Aiming for shorter URLs:  
     Most URLs automatically use the page or post title as the default URL, but sometimes the title can be an unnecessarily long string of characters. The shorter the URL, the better. Moreover, short URLs tend to rank higher.
 * Using hyphens as word breaks:  
-    SEO best practices use hyphens between words because this *tells* search engines and users where the breaks between words are and make it easier to read. 
+    SEO best practices use hyphens between words because this _tells_ search engines and users where the breaks between words are and make it easier to read.
 
-## Custom screen URLs 
+## Custom screen URLs
 
 <div class="info" markdown="1">
 
@@ -112,7 +112,7 @@ Remember the following when working with custom screen URLs:
 
 To add a custom screen URL, follow these steps:  
 
-1. Go to **Service Studio** and select the screen you want to rename. 
+1. Go to **Service Studio** and select the screen you want to rename.
 1. In the **Advanced** section of the screen properties, set the **Custom URL** to **Yes** and edit the URL structure.
 
 <div class="info" markdown="1">
@@ -139,12 +139,12 @@ All page names must be unique. Otherwise, some URLs won't work.
 
 </div>  
 
-*Reserved strings*  
+_Reserved strings_  
 
 These are the reserved strings that you can’t use in the <b>Page Name</b> property:  
 
 * `screenservices`  
-* `moduleservices` 
+* `moduleservices`
 * `img`  
 * `Blocks`  
 * `rest`  
@@ -159,7 +159,7 @@ The following strings aren't supported because of the / symbol:
 Set this property to **Path** to pass the parameters separated by / in the URL (for example, `/Product/1`). Set it to **Query string** to pass the parameters as a string (for example, `Products?Id=1`).  
 
 **URL Pattern**  
-This is a preview of the transformed URL (for example, the Product screen has the ProductId input parameter and its URL Structure set as **Query string**. So the URL Pattern value will be `Product?ProductId={ProductId}`). 
+This is a preview of the transformed URL (for example, the Product screen has the ProductId input parameter and its URL Structure set as **Query string**. So the URL Pattern value will be `Product?ProductId={ProductId}`).
 
 ## Redirect rules  
 
@@ -263,9 +263,9 @@ Ensure that your page title reflects the content of your page. Page titles show 
 
 ### Creating dynamic page titles  
 
-
 To create a dynamic title for a screen, follow these steps:  
-1. Go to **Service Studio** and identify the screen that you want to create a dynamic title for. 
+
+1. Go to **Service Studio** and identify the screen that you want to create a dynamic title for.
 1. In the screen properties, double-click the **Title** property.
 1. In the opened **Expression** editor, enter an expression that sets the title value during runtime. For example, `"More about" + ProductTitle`.  
 

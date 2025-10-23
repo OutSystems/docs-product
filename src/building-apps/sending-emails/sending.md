@@ -78,7 +78,7 @@ You can manually trigger the sending of an email when you test the app and when 
 
 ![User interface in Service Studio with a Button widget indicating the manual trigger for sending an email](images/trigger-email-manually-ui-ss.png "Triggering emails manually via UI")
 
-In the client action, you can call the server action that sends the email (3). You must provide the input parameters required by the action. The feedback message from the UI (4) lets the user know the app called the logic to send the message. 
+In the client action, you can call the server action that sends the email (3). You must provide the input parameters required by the action. The feedback message from the UI (4) lets the user know the app called the logic to send the message.
 
 ![Screenshot of Service Studio showing the client action logic for manually triggering the sending of an email](images/trigger-email-manually-logic-ss.png "Logic for manually triggering emails")
 

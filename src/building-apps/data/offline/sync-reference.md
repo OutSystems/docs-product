@@ -61,7 +61,6 @@ OfflineDataSync is the default action that can be used for creating logic execut
 SyncUnit
 :   String input parameter that can be passed from business logic to the sync actions. Useful for deciding which entity to sync.
 
-
 ## Logic tab > Server Actions > OfflineDataSync folder
 
 OfflineDataSync folder in **Server Actions** should contain all actions that run on the server to update server entities and exchange data with the corresponding actions in the client side of the logic.
@@ -75,8 +74,7 @@ ServerDataSync is the default action that can be used for creating logic execute
 SyncUnit
 :   String input parameter that can be passed from business logic to the sync actions. Useful for deciding which entity to sync.
 
-
-## Logic tab > Client Actions > MobilePatterns 
+## Logic tab > Client Actions > MobilePatterns
 
 Mobile apps come with two actions to detect network status and type. These are also accessible as functions in expressions.
 
@@ -89,7 +87,6 @@ Returns False if the browser cannot connect to a local area network (LAN) or a r
 ### GetNetworkType
 
 Returns a text value. Describes the type of network, for example, `wifi`, `4g`, `undefined` (if in the browser preview).
-
 
 ## Interface tab > UI Flows > Common > Layout and LayoutBlank
 
@@ -122,7 +119,6 @@ Event triggered when the sync starts.
 
 SyncUnit
 :   String input parameter that can be passed from business logic to the sync actions. Useful for deciding which entity to sync.
-
 
 ## Interface tab > UI Flows > MobilePatterns > Private
 

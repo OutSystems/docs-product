@@ -25,7 +25,7 @@ In an enterprise installation, applications usually share the same corporate loo
 A Theme module includes the following components:
 
 * The theme itself (the CSS)
-* Layout *Blocks,* to define screen or screen section patterns
+* Layout _Blocks,_ to define screen or screen section patterns
 * Logo images
 * ![Diagram illustrating login flow and exception handling components in an application theme.](images/isolating-app-theme_0.png "Login Flow and Exception Handling Components") Login flow and exception handling
 * ![Diagram showing menu and navigation support logic within an application theme.](images/isolating-app-theme_1.png "Menu and Navigation Support Logic") Menu and navigation support logic
@@ -45,9 +45,9 @@ The following example shows a Global theme that is reused by several application
 
 It is based on one of the built-in themes supplied in OutSystems UI.
 
-If the Common services supply UI components (*Blocks*), they should be based on the built-in base theme, since they are reusable by other applications that might be using a different look & feel.
+If the Common services supply UI components (_Blocks_), they should be based on the built-in base theme, since they are reusable by other applications that might be using a different look & feel.
 
-A *Block* will assume the CSS of the consuming module, thus adapting to the look & feel of the final application.
+A _Block_ will assume the CSS of the consuming module, thus adapting to the look & feel of the final application.
 
 Services inside each application are specific for that application, hence they can safely use the Global theme.
 

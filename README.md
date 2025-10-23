@@ -1,6 +1,6 @@
 # Documentation
 
-This repository holds the source files of the [OutSystems product documentation](https://success.outsystems.com/Documentation). 
+This repository holds the source files of the [OutSystems product documentation](https://success.outsystems.com/Documentation).
 
 Check [how you can contribute](https://github.com/OutSystems/docs-product/wiki/How-to-contribute-to-OutSystems-Documentation).
 
@@ -10,13 +10,13 @@ All documentation present in this repository should be written in Markdown (chec
 
 The Markdown-to-HTML conversion process is done through the Python Markdown package. The following Markdown extensions are currently being used in the conversion step:
 
-Extension | Description
-----------|------------
-[markdown.extensions.extra](https://python-markdown.github.io/extensions/extra/) | Meta-extension adding support to a series of smaller extensions (check documentation). Currently supports the definition lists syntax.
-[markdown.extensions.meta](https://python-markdown.github.io/extensions/meta_data/) | Read metadata from each Markdown front-matter section (discarded in HTML output). Can be used for specifying custom page titles, for example (not used by the default template).
-[markdown.extensions.toc](https://python-markdown.github.io/extensions/toc/) | Only used to get automatic bookmarks in headings.
-[markdown.blankline](https://github.com/ribalba/markdown.blankline) | Adds Markdown syntax so it is possible to add a blank line (by writing `%%`). Currently used inside table cells.
-[markdown-include](https://github.com/cmacmackin/markdown-include) | Include other Markdown files in a given file. [Currently not used]
+| Extension | Description |
+| ----------|------------ |
+| [markdown.extensions.extra](https://python-markdown.github.io/extensions/extra/) | Meta-extension adding support to a series of smaller extensions (check documentation). Currently supports the definition lists syntax. |
+| [markdown.extensions.meta](https://python-markdown.github.io/extensions/meta_data/) | Read metadata from each Markdown front-matter section (discarded in HTML output). Can be used for specifying custom page titles, for example (not used by the default template). |
+| [markdown.extensions.toc](https://python-markdown.github.io/extensions/toc/) | Only used to get automatic bookmarks in headings. |
+| [markdown.blankline](https://github.com/ribalba/markdown.blankline) | Adds Markdown syntax so it is possible to add a blank line (by writing `%%`). Currently used inside table cells. |
+| [markdown-include](https://github.com/cmacmackin/markdown-include) | Include other Markdown files in a given file. [Currently not used] |
 
 ## Editor settings
 
@@ -49,7 +49,7 @@ In the same pane (**User Settings**), make sure the following settings are defin
         "editor.wordWrap": "bounded"
     }
 
-*Note:* For some reason, Markdown documents do not automatically assume these settings. You will have to define a `[markdown]` language definition section with the same settings:
+_Note:_ For some reason, Markdown documents do not automatically assume these settings. You will have to define a `[markdown]` language definition section with the same settings:
 
     {
         (These are the 2 settings described above. Mind the new trailing comma after "bounded"!)
@@ -64,9 +64,9 @@ In the same pane (**User Settings**), make sure the following settings are defin
 
 **Install a spell checker**
 
-1. Open *View > Extensions*.
-2. Search and install the offline spell checker by Michael Vernier, called SpellChecker.
-3. Reload the window.
+1. Open _View > Extensions_.
+1. Search and install the offline spell checker by Michael Vernier, called SpellChecker.
+1. Reload the window.
 
 ### Visual Studio 2017 (with Markdown Editor extension)
 
@@ -80,7 +80,7 @@ Visual Studio 2017 supports EditorConfig out of the box.
 
 Check the [markdown_npp](https://github.com/Edditoria/markdown_npp) language definition. There's no preview available.
 
-*Note:* it has a few syntax highlighting limitations, when compared with more powerful implementations.
+_Note:_ it has a few syntax highlighting limitations, when compared with more powerful implementations.
 
 #### Settings
 
@@ -90,6 +90,4 @@ Install the [EditorConfig Notepad++ plugin](https://github.com/editorconfig/edit
 
 If you use Vim, install the [vim-markdown](https://github.com/plasticboy/vim-markdown) plugin and get a load of new features related to Markdown editing.
 
-*Note:* Mentioning Vim here just for completeness. :)
-
-
+_Note:_ Mentioning Vim here just for completeness. :)

@@ -62,6 +62,7 @@ These are the patterns that require changes in the O11 apps before proceeding wi
 * [Unsupported Delete Rule to an entity from another app](elem-unsupported-delete-rule.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
 * [Library with cyclic dependency to another ODC library](arch-lib-cyclic.md)
 * [Asset cannot contain Traditional Web modules](elem-trad-web.md)
+* [Asset consuming REST API with multipart request](elem-rest-consume-multipart.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
 
 ### Data { #data-patterns }

@@ -1238,6 +1238,7 @@
         - href: migration-to-odc/code-patterns/refactor-siteproperties.md
         - href: migration-to-odc/code-patterns/convert-trad-web.md
         - href: migration-to-odc/code-patterns/elem-trad-web.md
+        - href: migration-to-odc/code-patterns/elem-rest-consume-multipart.md
         - href: migration-to-odc/code-patterns/cannot-open-module.md
         - href: migration-to-odc/code-patterns/outdated-or-broken-dependencies.md
         - href: migration-to-odc/code-patterns/arch-common-plugin.md

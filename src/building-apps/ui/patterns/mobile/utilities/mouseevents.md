@@ -104,3 +104,7 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 | WidgetId (Text): Mandatory | The element that responds to the mouse event you configure. |
 | PreventDefaults (Boolean): Optional | If True, events propagation to the screen and other widgets is stopped. This is the default. If False, event propagation to the screen and other widgets is enabled. |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

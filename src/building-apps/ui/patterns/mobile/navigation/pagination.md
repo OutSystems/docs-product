@@ -93,3 +93,7 @@ After following these steps and publishing the module, you can test the pattern 
 | TotalCount (Integer): Mandatory  | Total number of records in the list.|
 | ShowGoToPage (Boolean): Optional | If True, there's an input box that allows the user to enter and jump to a specific page. If False, there is no functionality to jump to a specific page. This is the default.|
 | ExtendedClass (Text): Optional   | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

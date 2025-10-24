@@ -101,3 +101,8 @@ After following these steps and publishing the module, you can test the pattern 
 ## Compatibility with other patterns
 
 Avoid using the Stacked Cards Pattern inside patterns with swipe events / touch events, like [Tabs](<../navigation/tabs.md>) or [Carousel](<carousel.md>).
+ |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

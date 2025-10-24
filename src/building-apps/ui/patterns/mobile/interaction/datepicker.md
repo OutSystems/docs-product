@@ -109,3 +109,9 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Initialized: Optional| Event triggered after the Date Picker instance is ready.|
 |OnSelected: Mandatory| Event triggered each time a date is selected.|
+
+ |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

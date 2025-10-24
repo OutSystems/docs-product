@@ -127,3 +127,8 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Initialized: Optional | Event triggered after the RangerSlider instance is ready.<br/>With this event, you get the element ID that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` |
 |OnValueChange: Mandatory  | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSlider handler.<br/>You can use the SetRangeSliderChangeOnDragEnd to trigger the event only after the user releases it. |
+ |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

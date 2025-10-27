@@ -316,17 +316,17 @@ If you're introducing a cross-reference with "For more information..." phrasing,
 
 ### Use task-based headings for procedural content
 
-* Start with a verb in the imperative mood (e.g., "Create a screen" or "Install a Forge app").
-* Avoid gerunds (e.g., "Creating a screen").
+* Start with a verb in the imperative mood (for example, "Create a screen" or "Install a Forge app").
+* Avoid gerunds (for example "Creating a screen").
 
 ### Include an introduction
 
 * Provide a brief overview of the procedure, explaining what the user will achieve and why it is important.
-* Identify the audience or skill level (e.g., beginner or experienced developer).
+* Identify the audience or skill level (for example, beginner or experienced developer).
 
 ### Place prerequisites at the top
 
-* List any requirements (e.g., tools, permissions, or prior steps) before the procedure begins.
+* List any requirements (for example, tools, permissions, or prior steps) before the procedure begins.
 * Ensure prerequisites are clear and concise.
 
 ### Use numbered steps
@@ -346,16 +346,16 @@ If you're introducing a cross-reference with "For more information..." phrasing,
 
 ### Add content after headings
 
-* Include at least one sentence after a heading to introduce the content that follows (e.g., images, tables, or steps).
+* Include at least one sentence after a heading to introduce the content that follows (for example, images, tables, or steps).
 
 ### Use infoboxes sparingly
 
-* Highlight critical information (e.g., warnings or tips) only when necessary to avoid overuse.
+* Highlight critical information (for example, warnings or tips) only when necessary to avoid overuse.
 
 ### Use links judiciously
 
 * Limit the number of links in the procedure to avoid distractions.
-* Place additional resources in a "Related Resources" section at the end.
+* Place additional resources in a **Related Resources** section at the end.
 
 ### Add a summary
 

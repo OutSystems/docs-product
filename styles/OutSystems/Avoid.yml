@@ -8,7 +8,7 @@ level: suggestion
 tokens:
   - abortion
   - and so on
-#  - and/or
+  - and/or
 #  - app developer
 #  - app(?:lication)? file
 #  - application developer
@@ -16,5 +16,3 @@ tokens:
 #  - applications developer
   - as well as
 #  - ask
-  - backbone
-  - backend

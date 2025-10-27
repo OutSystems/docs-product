@@ -138,3 +138,16 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Initialized: Optional| Event triggered after the Dropdown Search instance is ready.|
 |OnChanged: Mandatory| Event triggered each time an option is selected.|
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+**Note:**  
+When using the **NVDA** screen reader, users may notice that pressing **Esc** twice is required to close the dropdown.  
+This is the expected behavior in NVDA, as the first **Esc** exits focus mode and the second collapses the control.  
+For more details, see the [NVDA GitHub discussion on this behavior](https://github.com/nvaccess/nvda/issues/4428).
+
+</div>

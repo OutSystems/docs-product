@@ -29,15 +29,19 @@ This article only applies to customers with access to the App Conversion Kit.
 
 The permissions that IT users have while using the **Conversion Assessment Tool** depend on their [permissions set in LifeTime](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#permissions) for the O11 environment where the [development probe](../setup-assessement-tool.md#probe) is installed.
 
-<div class="info" markdown="1">
-
-The set of permissions that an IT user has over the **development probe environment** and the applications is determined by [the several roles that the user is assigned](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#assigning-roles-to-it-users).
-
-</div>
-
-While navigating through the Conversion Assessment Tool, logged in users only get the information they have permission to, and they are notified whenever the visible information is limited due to lack of permissions.
+While navigating through the Conversion Assessment Tool, logged in users only get the information they have permission to. They are notified whenever the visible information is limited due to lack of permissions.
 
 ![Notification indicating LifeTime permissions are limiting the view of ODC assets.](images/lack-lt-permissions-at.png "Limited View Due to LifeTime Permissions")
+
+<div class="info" markdown="1">
+
+Remarks:
+
+* The set of permissions that an IT user has over the **development probe environment** and the applications is determined by [the several roles that the user is assigned](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#assigning-roles-to-it-users).
+
+* If there's an ODC asset that you have permission to but it's not visible, try to log out and log in the Conversion Assessment Tool again. This forces LifeTime to synchronize the environments and their permissions.
+
+</div>
 
 ## Permissions by tool operation
 

@@ -42,7 +42,7 @@ With this introduction to the principles of DDD, you may notice some common pitf
 
 ### Anti-Pattern #1: Validations at the UI Level Only
 
-In the following image, the screen in the UI module displays a form to edit a concept owned by the Core module. When submitting the changes, all validations take place in the corresponding Screen Action, which then calls the action from the Core modimages/ule to save the record. The Core Action itself doesn't  perform any validation on the given input and serves mostly as a wrapper for the Create Action of the entity.
+In the following image, the screen in the UI module displays a form to edit a concept owned by the Core module. When submitting the changes, all validations take place in the corresponding Screen Action, which then calls the action from the Core module to save the record. The Core Action itself doesn't  perform any validation on the given input and serves mostly as a wrapper for the Create Action of the entity.
 
 ![Screenshot showing a form in the UI module with validations occurring at the screen action level in OutSystems](images/test-validation-only-ui-ss.png "UI Level Validations")
 

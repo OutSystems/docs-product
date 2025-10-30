@@ -42,6 +42,13 @@ If you don’t have one, learn [how you can create a certificate](<more-informat
 
 * To allow launching your app in the devices of the end users group, you must:
     * Set up the `Ad Hoc` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information.md#create-a-provisioning-profile>).
+
+    <div class="info" markdown="1">
+
+    If you already have a provisioning profile make sure it has a valid expiring date. Don't forget to rebuild and redistribute your app when the provisioning profile is renewed.
+
+    </div>
+
     * To run on iOS devices apps that were generated using the Build Types `Ad-Hoc`, _Development Mode_ needs to be enabled on mobile devices. Please check the official documentation [here](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
 
 For more information on registering devices on your Apple Developer account, check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>). For more information on the different provisioning profiles check the Medium blog post "[Cruising through the Complexities of Signing Native Mobile Apps](https://medium.com/outsystems-engineering/cruising-through-the-complexities-of-signing-native-mobile-apps-cc123eb2814b)" by OutSystems.

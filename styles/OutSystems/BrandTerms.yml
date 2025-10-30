@@ -2,6 +2,9 @@ extends: substitution
 message: Use '%s' instead of '%s'.
 level: warning
 ignorecase: true
+scope:
+  - ~text.frontmatter
+  - text.frontmatter.summary
 swap:
   'out ?systems': OutSystems
   'service ?studio': Service Studio
@@ -20,4 +23,3 @@ swap:
   SS: Service Studio
   KeyCloak: Keycloak
   'paas': OutSystems Cloud
-scope: ~text.frontmatter.theme

@@ -36,11 +36,16 @@ exceptions:
   - Area
   - Attribute
   - Block
+  - BPT
+  - BPT_API
+  - Business Process
   - Callback
   - Client
   - Email
   - Entity
   - Entities
+  - EPA_Taskbox
+  - EPA_TaskboxExtension
   - Exception
   - Identifier
   - IT

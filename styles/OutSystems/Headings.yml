@@ -134,6 +134,7 @@ exceptions:
   - Windows
   - Visual Studio
 # Industry
+  - API
   - IP
   - FAQ
   - TLS

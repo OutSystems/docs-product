@@ -35,7 +35,7 @@ If you are only preparing your code for the conversion, at present, OutSystems r
 
 </div>
 
-If you have access to the App Conversion Kit, and want to unblock the conversion of this ODC asset, you can consider one of the following:
+If you have access to the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/), and want to unblock the conversion of this ODC asset, you can consider one of the following:
 
 * Replace the Process consumption with a placeholder Action. Once it's possible to automatically convert O11 BPTs to ODC Workflows, you'll be able to convert the missing Processes and BPT functionality.
 

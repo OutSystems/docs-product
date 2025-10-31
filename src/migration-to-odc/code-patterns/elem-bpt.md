@@ -32,4 +32,4 @@ If you are only preparing your code for the conversion, at present, OutSystems r
 
 This pattern isn't supported yet.
 
-If you have access to the App Conversion Kit, and want to proceed with the conversion of other ODC assets without BPT, ensure the O11 modules with findings for this code pattern aren't mapped to any ODC Assets.
+If you have access to the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/), and want to proceed with the conversion of other ODC assets without BPT, ensure the O11 modules with findings for this code pattern aren't mapped to any ODC Assets.

@@ -1199,15 +1199,6 @@
     - href: migration-to-odc/prepare/prep-intro.md
     - topics:
         - href: migration-to-odc/prepare/prep-refactor-o11-apps.md
-    # Execute
-    - href: migration-to-odc/execute/execute-intro.md
-    - topics:
-        - href: migration-to-odc/execute/execute-connect-to-tool.md
-        - href: migration-to-odc/execute/execute-about-migrate-code.md
-        - href: migration-to-odc/execute/execute-how-to-migrate-code.md
-        - href: migration-to-odc/execute/execute-configure-migrated-apps.md
-        - href: migration-to-odc/execute/execute-about-migrate-data.md
-        - href: migration-to-odc/execute/execute-how-to-migrate-data.md
             
     # Code patterns
     - href: migration-to-odc/code-patterns/intro.md

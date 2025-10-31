@@ -98,4 +98,10 @@ To adjust your O11 apps and make them ODC-compatible, follow these steps:
 
 * Perform acceptance tests for the updated O11 apps in QA
 
-After deploying and testing your O11 apps, you can validate if the apps in your conversion plan [have dependencies on apps in other plans](../plan/plan-define-migration-plans.md#dependencies), so you can better coordinate their [conversion to ODC](../execute/execute-intro.md).
+After deploying and testing your O11 apps, you can validate if the apps in your conversion plan [have dependencies on apps in other plans](../plan/plan-define-migration-plans.md#dependencies).
+
+<div class="info" markdown="1">
+
+The capabilities to convert your O11 apps and migrate their data and end users to ODC will be released at a future date.
+
+</div>

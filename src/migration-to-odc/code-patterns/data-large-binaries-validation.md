@@ -19,7 +19,7 @@ helpids: 30660
 
 # Large binaries validation
 
-This pattern identifies an entity in the assessed environment with a **binary data** record exceeding 20 MB, which is the maximum allowed size for data migration using the App Conversion Kit.
+This pattern identifies an entity in the assessed environment with a **binary data** record exceeding 20 MB, which is the maximum allowed size for data migration using the [O11 to ODC App Conversion Kit EAP](https://www.outsystems.com/o11-odc-migration/)
 
 ## How to solve
 

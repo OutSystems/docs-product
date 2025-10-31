@@ -1,3 +1,6 @@
 {
-    "git.rebaseWhenSync": true
+  "git.rebaseWhenSync": true,
+  "markdownlint.customRules": [
+    "./scripts/md025_with_pagebreaks.cjs"
+  ]
 }

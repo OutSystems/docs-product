@@ -18,7 +18,8 @@
     "no-duplicate-heading": {
         "siblings_only": true
     },
-    "single-h1": {
+    "single-h1": false,
+    "single-h1-page-breaks":{
         "front_matter_title": ""
     },
     "no-trailing-punctuation": false,

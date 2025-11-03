@@ -23,12 +23,6 @@ helpids:
 
 To [map O11 to ODC architecture](plan-map-apps.md), you first need to fit your existing O11 app architecture into the ODC architecture. For this, you must design the **future** ODC apps that map your existing O11 apps and modules.
 
-<div class="info" markdown="1">
-
-This section describes how to design your ODC architecture for a small set of apps in one business domain. If your O11 factory has more than two business apps, follow the best practices for [adapting your O11 architecture and creating an ODC blueprint](plan-incremental.md).
-
-</div>
-
 The following steps help you with that mapping:
 
 1. Identify the O11 apps and modules belonging to a business app and group them together. This group represents a future ODC app.

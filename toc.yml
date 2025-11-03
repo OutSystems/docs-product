@@ -1192,9 +1192,6 @@
             - href: migration-to-odc/plan/plan-map-in-tool.md
         - href: migration-to-odc/plan/plan-define-migration-plans.md
         - href: migration-to-odc/plan/plan-assess-refactor.md
-        - href: migration-to-odc/plan/plan-incremental.md
-        - href: migration-to-odc/plan/plan-map-incremental.md
-        - href: migration-to-odc/plan/plan-convert-arch-incrementale.md
     # Preparation
     - href: migration-to-odc/prepare/prep-intro.md
     - topics:

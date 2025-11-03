@@ -22,12 +22,6 @@ helpids:
 
 # Define conversion plans
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 The Conversion Assessment Tool enables you to plan the conversion of sets of apps based on your different app domains and your teams' development lifecycle.
 
 After [mapping a set of O11 apps into ODC assets](plan-map-apps.md), you can group those ODC assets in conversion plans. With conversion plans, you can:
@@ -96,4 +90,3 @@ If you are validating an identified weak dependency on a producer asset in a dif
 ![Dependency details with Resolve in ODC option.](images/migration-plan-dependency-details-at.png "Dependency details")
 
 The **Resolve in ODC** option is only available when validating producer assets, and is not available when validating consumer assets.
-

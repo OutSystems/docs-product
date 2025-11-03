@@ -32,11 +32,9 @@ If the functionality is **already available in ODC**, for example, because it wa
 
 To solve this pattern in ODC:
 
-* Remove any reference to the functionality provided by the O11 app from your consumer asset.
+1. In the Conversion Assessment Tool, set the **Where To Fix** for this finding as **ODC**.
 
-* Proceed with the conversion of the consumer asset.
-
-* Once your consumer asset is converted to ODC, add the reference to the ODC app or component that offers the same functionality as the O11 app your asset was consuming.
+1. Once the consumer asset is converted to ODC, update it in ODC Studio to consume the ODC app or component that offers the same functionality as the O11 app your asset was consuming.
 
 ### Solve in O11 { #solve-o11 }
 

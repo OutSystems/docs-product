@@ -37,13 +37,11 @@ If the Forge component that your asset consumes **isn’t yet available in ODC**
 
 To solve this pattern in ODC:
 
-1. Remove the reference to the O11 Forge component from any ODC asset.
+1. In the Conversion Assessment Tool, set the **Where To Fix** for this finding as **ODC**.
 
-1. Proceed with the conversion.
+1. Once the consumer asset is converted to ODC, update it in ODC Studio to consume the ODC Forge component that offers the same functionality as the O11 Forge component your asset was consuming.
 
-1. Once the consumer asset is converted to ODC, add the reference to the ODC Forge asset that offers the same functionality as the O11 Forge component your asset was consuming.
-
-1. After adding the reference, fix any outstanding issues.
+1. Fix any outstanding issues.
 
 ### Solve in O11
 

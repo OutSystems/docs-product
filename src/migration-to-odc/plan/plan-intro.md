@@ -23,12 +23,6 @@ coverage-type:
 
 In the planning phase of the [app conversion process](../migration-intro.md), you get an understanding of the future ODC architecture for the O11 apps you want to convert, and assess their ODC-readiness.
 
-<div class="info" markdown="1">
-
-If you don't have access to the App Conversion Kit, please reach out to your OutSystems account team to get more information.
-
-</div>
-
 The main steps in the planning phase of your O11 to ODC conversion are the following:
 
 1. [Set up the Conversion Assessment Tool](../setup-assessement-tool.md).  

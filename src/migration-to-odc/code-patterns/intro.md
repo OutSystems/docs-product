@@ -27,7 +27,7 @@ This page describes the app patterns you need to consider to ensure a smooth con
 
 OutSystems is working on conversion automation capabilities to support some of these patterns. Until then, you can use this information to help you [plan your conversion](../migration-intro.md#stage-1-plan-for-the-o11-app-migration).
 
-If you have access to the App Conversion Kit, the Conversion Assessment Tool identifies some of the code patterns that you need to handle to achieve a successful conversion of your apps.
+The Conversion Assessment Tool identifies some of the code patterns that you need to handle to achieve a successful conversion of your apps.
 
 </div>
 

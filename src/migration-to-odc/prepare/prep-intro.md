@@ -21,12 +21,6 @@ coverage-type:
 
 # Prepare O11 app
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 The preparation stage is a period of refactoring and adjusting your O11 apps so that they're ready for a smooth conversion to the ODC platform.
 
 ## Prerequisites

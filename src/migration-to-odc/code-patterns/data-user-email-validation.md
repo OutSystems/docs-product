@@ -39,6 +39,6 @@ Follow these steps to fix the end users' email addresses:
 
 <div class="info" markdown="1">
 
-If you have access to the App Conversion Kit, the Conversion Assessment Tool identifies this pattern for you and provides you with a JSON-format file containing the users with duplicate or empty email addresses.
+The Conversion Assessment Tool identifies this pattern for you and provides you with a JSON-format file containing the users with duplicate or empty email addresses.
 
 </div>

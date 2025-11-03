@@ -20,12 +20,6 @@ coverage-type:
 
 # Assess app architecture and ODC readiness
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 After [mapping a set of O11 apps into ODC assets](plan-map-apps.md), the Conversion Assessment Tool automatically queues the assessment for those assets to run. A new assessment is also queued when there are application changes in the environment or when you choose to run a new assessment manually on the console.
 
 When an analysis finishes, you can [go through the assessment report](#report) to assess the app architecture and ODC readiness for the mapped ODC assets.
@@ -77,4 +71,3 @@ Go through the assessment report to validate its findings:
     If you don’t run a new assessment manually, the Conversion Assessment Tool automatically queues a new assessment to check for changes based on the defined [code assessment cycle](../setup-assessement-tool.md#cycles).
 
 Repeat these steps for each pattern, assessing the refactoring effort to [prepare for the app conversion](../prepare/prep-refactor-o11-apps.md).
-

@@ -21,19 +21,7 @@ helpids:
 
 # Manual setup of the Conversion Assessment Tool
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
-This article describes the manual setup process for the Conversion Assessment Tool.
-
-<div class="info" markdown="1">
-
-For most environments, we recommend [using the Conversion Assessment Tool Installer](setup-assessement-tool.md) for a faster and more streamlined setup. Use this manual setup process only if you encounter any limitation or issue while using the Conversion Assessment Tool Installer.
-
-</div>
+For a faster and more streamlined setup of the Conversion Assessment Tool, start by [using the Conversion Assessment Tool Installer](setup-assessement-tool.md). Use this manual setup process only if you encounter any limitation or issue while using the installer.
 
 ## Set up the tool manually
 
@@ -47,43 +35,61 @@ Ensure the [necessary requirements](setup-assessement-tool.md#prerequisites) are
 
 To set up the Conversion Assessment Tool, follow these steps:
 
-* [Step 1. Install the Engine in the LifeTime environment](#engine)
+* [Step 1. Download the solution packs for the tool components](#download)
 
-* [Step 2. Install the Console in the Development environment](#console)
+* [Step 2. Install the Engine in the LifeTime environment](#engine)
 
-* [Step 3. Install the development Probe in the Development environment](#probe-dev)
+* [Step 3. Install the Console in the Development environment](#console)
 
-* [Step 4. Install the Probe in other environments](#probe-other-env)
+* [Step 4. Install the development Probe in the Development environment](#probe-dev)
 
-* [Step 5. Configure the Conversion Assessment Tool](#configure)
+* [Step 5. Install the Probe in other environments](#probe-other-env)
 
-### Step 1. Install the Engine in the LifeTime environment { #engine }
+* [Step 6. Configure the Conversion Assessment Tool](#configure)
 
-1. Download the [Conversion Assessment Tool Engine solution pack](resources/Conversion_Assessment_Engine_v1_9_4_3.osp).
+### Step 1. Download the solution packs for the tool components { #download }
+
+Download the solution packs for the tool components from the [Conversion Assessment Tool Installer](setup-assessement-tool.md#cat-installer):
+
+1. Open the Conversion Assessment Tool Installer app (`https://<dev_environment>/ConversionAssessmentInstaller/`).
+
+1. Log in using your IT User credentials.
+
+1. Click the download link to get the `*.zip` file containing the solution packs for each component:
+
+    * `Conversion_Assessment_Engine_v*.osp`
+    * `Conversion_Assessment_Console_v*.osp`
+    * `Conversion_Assessment_Probe_v*.osp`
+
+    Ignore the remaining `*.manifest` files.
+
+    ![Screenshot of the download link on the Conversion Assessment Tool Installer.](images/manual-setup-download-mati.png "Download the solution packs for the Conversion Assessment Tool components")
+
+### Step 2. Install the Engine in the LifeTime environment { #engine }
+
+Follow these instructions to install the [Engine](setup-assessement-tool.md#engine) in the LifeTime environment:
 
 1. Go to the Service Center console of your LifeTime environment (`https://<lifetime_environment>/ServiceCenter`).
 
-1. [Upload and publish the Migration Assessment Engine solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
+1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the `Conversion_Assessment_Engine_v*.osp` solution pack that you downloaded in Step 1.
 
-### Step 2. Install the Console in the Development environment { #console }
+### Step 3. Install the Console in the Development environment { #console }
 
-1. Download the [Conversion Assessment Tool Console solution pack](resources/Conversion_Assessment_Console_v1_9_4_3.osp).
-
-1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
-
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Console solution pack.
-
-1. Still in the Service Center console, ensure [Single Sign-On Between App Types](../security/configure-authentication.md) is enabled.
-
-### Step 3. Install the development Probe in the Development environment { #probe-dev }
-
-1. Download the [Conversion Assessment Tool Probe solution pack](resources/Conversion_Assessment_Probe_v1_9_4_3.osp).
+Follow these instructions to install the [Console](setup-assessement-tool.md#console) in the Development environment:
 
 1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
 
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Probe solution pack.
+1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the `Conversion_Assessment_Console_v*.osp` solution pack that you downloaded in Step 1.
 
-### Step 4. Install the Probe in other environments { #probe-other-env }
+### Step 4. Install the development Probe in the Development environment { #probe-dev }
+
+Follow these instructions to install the [Probe](setup-assessement-tool.md#probe) in the Development environment:
+
+1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
+
+1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the `Conversion_Assessment_Probe_v*.osp` solution pack that you downloaded in Step 1.
+
+### Step 5. Install the Probe in other environments { #probe-other-env }
 
 Optionally, you can install additional probes in the environments where you also want to assess the ODC-readiness of your apps (for example, the QA environment), or the environments that you will later select as the source for code conversion or data migration (for example, the Production environment).
 
@@ -95,11 +101,11 @@ Don’t install the Probe in the LifeTime environment.
 
 1. Go to the Service Center console of the environment where you want to install an additional probe (`https://<environment>/ServiceCenter`).
 
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Probe solution pack you downloaded in the previous step.
+1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the `Conversion_Assessment_Probe_v*.osp` solution pack that you downloaded in Step 1.
 
 Installing extra probes is important not only for assessing ODC readiness but also for converting code and migrating data from those environments.
 
-### Step 5. Configure the Conversion Assessment Tool { #configure }
+### Step 6. Configure the Conversion Assessment Tool { #configure }
 
 1. Go to the LifeTime management console (`https://<lifetime_environment>/lifetime`).
 

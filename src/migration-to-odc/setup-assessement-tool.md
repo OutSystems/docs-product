@@ -21,12 +21,6 @@ coverage-type:
 
 # Set up the Conversion Assessment Tool
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 The Conversion Assessment Tool helps you evaluate the readiness of O11 apps for the ODC conversion and guides you through the necessary code adjustments to ensure that your apps can be converted.
 
 ![Screenshot of the Conversion Assessment Tool showing the ODC blueprint and assessment findings for various apps.](images/assessment-tool-setup-overview-at.png "Conversion Assessment Tool overview")
@@ -60,19 +54,19 @@ During the setup process, the installer gets the O11 environments’ details fro
 
 The installer component is typically **installed in the Development environment** of your O11 infrastructure.
 
-### Console
+### Console { #console }
 
 The **Console** is the user interface app for the Conversion Assessment Tool. It’s where you map your O11 apps to ODC architecture, create conversion plans, and see the assessment reports. It’s also where you configure the connections between the several components of the tool.
 
 The console must be **installed in the Development environment** of your O11 infrastructure.
 
-### Probe
+### Probe { #probe }
 
 The first **Probe** to install is the development probe, which must be **installed in the Development environment** of your O11 infrastructure. Optionally, you can install an additional non-production probe to check the ODC-readiness of the apps. For example, you may want to install a probe in the QA environment, so you can run the assessment on apps during the app testing phase.
 
 Each probe runs the assessment of the apps in the environment where it's installed and returns the findings to the engine. The assessments run sequentially, only one ODC Asset at a time while the remaining are queued.
 
-### Engine
+### Engine { #engine }
 
 The **Engine** is the communication entry point between your O11 infrastructure and your ODC tenant. It must be **installed in the LifeTime environment** of your O11 infrastructure.
 
@@ -94,8 +88,6 @@ Additionally, you can trigger an assessment at any time in the Conversion Assess
 
 Before setting up the Conversion Assessment Tool, make sure the following requirements are met:
 
-* You are part of the early access program and have access to the App Conversion Kit.
-
 * Your O11 environments use Platform Server 11.18.1 or later.
 
 ## Set up the tool
@@ -114,15 +106,15 @@ This step [requires **Create Applications** and **Change and Deploy Applications
 
 </div>
 
-Follow these instructions to install the Conversion Assessment Tool Installer in your Development environment:
+The [Conversion Assessment Tool Installer](https://www.outsystems.com/forge/component-overview/22569/o11-to-odc-conversion-assessment-tool-installer) is available in the OutSystems Forge. Follow these instructions to install it in your Development environment:
 
-1. Download the [Conversion Assessment Tool Installer app file](resources/Conversion_Assessment_Tool_Installer_v1_1_4_2.oap).
+1. Open [Service Studio](../getting-started/service-studio.md) and connect to your O11 Development environment.
 
-1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
+1. In the Environment tab, click **Install from Forge**.
 
-1. Under **Factory > Applications**, select **Publish an Application**.
+1. Search for the **Conversion Assessment Tool Installer** component.
 
-1. Upload and publish the Conversion Assessment Tool Installer app file.
+1. Click **Install**.
 
 <div class="info" markdown="1">
 
@@ -294,8 +286,6 @@ Validate the following:
     * `https://<cat_console_environment>/ConversionAssessment/OIDC_Callback`, where `<cat_console_environment>` is the environment running the [Conversion Assessment Tool Console](#console)
 
 ### Setup process fails
-
-<!--TODO: Add screenshot of the setup process error-->
 
 In some scenarios, the Conversion Assessment Tool Installer is not able to connect to one or more of the remaining O11 environments and the setup fails. Possible reasons are:
 

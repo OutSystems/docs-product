@@ -21,12 +21,6 @@ helpids:
 
 # Map O11 to ODC architecture in the Conversion Assessment Tool
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 After [designing your ODC architecture](plan-design-odc-arch.md), it’s time to define each of the future ODC Assets (apps and libraries) and map your O11 apps in the [Conversion Assessment Tool](../setup-assessement-tool.md).
 
 <div class="info" markdown="1">

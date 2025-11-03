@@ -33,9 +33,7 @@ Depending on your scenario, you can solve this pattern in O11 or in ODC:
 
 To solve this pattern in ODC, follow these steps:
 
-1. Proceed with the conversion.
-
-    If you have access to the App Conversion Kit, you must set the **Where To Fix** for this finding as **ODC** in the Conversion Assessment Tool.
+1. In the Conversion Assessment Tool, set the **Where To Fix** for this finding as **ODC**.
 
 1. Once the consumer asset is converted to ODC, update it in ODC Studio to consume the ODC component that offers the same functionality.
 

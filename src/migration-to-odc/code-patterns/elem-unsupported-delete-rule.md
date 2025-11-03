@@ -55,9 +55,7 @@ To solve this pattern in O11, follow these steps:
 
 To solve this pattern in ODC, follow these steps:
 
-1. Proceed with the conversion.
-
-    If you have access to the App Conversion Kit, you must set the **Where To Fix** for this finding as **ODC** in the Conversion Assessment Tool.
+1. In the Conversion Assessment Tool, set the **Where To Fix** for this finding as **ODC**.
 
     <div class="info" markdown="1">
 
@@ -65,6 +63,6 @@ To solve this pattern in ODC, follow these steps:
 
     </div>
 
-1. Adjust the logic of your converted ODC app, as described above.
+1. Once your asset is converted to ODC, adjust the logic of your converted app, as described above.
 
 1. Test all scenarios related to data deletion to ensure the converted ODC app behaves as expected and data integrity is maintained.

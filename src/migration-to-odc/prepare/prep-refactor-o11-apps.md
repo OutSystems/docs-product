@@ -18,12 +18,6 @@ coverage-type:
 
 # Make O11 apps compatible with ODC
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 Once you've mapped your O11 apps into your future ODC architecture, you can use the Conversion Assessment Tool to understand which code adjustments are required to make them ready for ODC.
 
 Grouping small sets of apps in [conversion plans](../plan/plan-define-migration-plans.md) enables development teams of different app domains to focus only on the adjustments of their apps.

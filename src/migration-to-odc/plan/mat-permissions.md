@@ -21,12 +21,6 @@ helpids:
 
 # Understand the permission model for Conversion Assessment Tool
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 The permissions that IT users have while using the **Conversion Assessment Tool** depend on their [permissions set in LifeTime](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#permissions) for the O11 environment where the [development probe](../setup-assessement-tool.md#probe) is installed.
 
 While navigating through the Conversion Assessment Tool, logged in users only get the information they have permission to. They are notified whenever the visible information is limited due to lack of permissions.

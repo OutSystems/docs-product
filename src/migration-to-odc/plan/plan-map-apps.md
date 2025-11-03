@@ -20,12 +20,6 @@ coverage-type:
 
 # Map O11 to ODC architecture
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 The mapping step of the [Plan app conversion](plan-intro.md) stage enables you to start assessing the required adjustment needs of your O11 apps. You can focus on small sets of apps based on your different app domains and your teams' development lifecycle.
 
 ![Diagram showing the Map O11 apps to ODC architecture step in the conversion process.](images/prep-map-o11-odc-arch-diag.png "Map O11 apps to ODC architecture")

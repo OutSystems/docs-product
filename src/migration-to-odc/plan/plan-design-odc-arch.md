@@ -21,12 +21,6 @@ helpids:
 
 # Design your ODC architecture
 
-<div class="info" markdown="1">
-
-This article only applies to customers with access to the App Conversion Kit.
-
-</div>
-
 To [map O11 to ODC architecture](plan-map-apps.md), you first need to fit your existing O11 app architecture into the ODC architecture. For this, you must design the **future** ODC apps that map your existing O11 apps and modules.
 
 <div class="info" markdown="1">

@@ -326,9 +326,10 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 **macOS (cross-platform Service Studio only):**
 
-* macOS Ventura since Service Studio 11.54.60
-* macOS Sonoma since Service Studio 11.54.60
+* macOS Tahoe since Service Studio 11.55.45
 * macOS Sequoia since Service Studio 11.55.0
+* macOS Sonoma since Service Studio 11.54.60
+* macOS Ventura since Service Studio 11.54.60
 
 **Windows:**
 

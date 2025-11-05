@@ -25,6 +25,8 @@ exceptions:
   - Workflow Builder
   - AI Mentor Studio
   - AIMS
+  - MABS
+  - Mobile Apps Builder Service
 # Concepts
   - Action
   - Activity

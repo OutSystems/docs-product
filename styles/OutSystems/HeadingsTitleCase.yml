@@ -1,0 +1,41 @@
+# Adapted from OutSystems.Headings
+extends: capitalization
+message: "'%s' should use title-style capitalization."
+level: warning
+scope: heading
+match: $title
+style: Chicago
+indicators:
+  - ':'
+  - '.'
+exceptions:
+# Hyphenated words (second lower case)
+  - "[A-Z][a-z]+-[a-z]+"
+# Product
+  - O11
+  - ODC
+  - OutSystems
+  - AI Mentor Studio
+  - AIMS
+# Concepts
+  - MABS
+  - BPT
+  - BPT_API
+  - EPA_Taskbox
+  - EPA_TaskboxExtension
+  - IT
+  - OpenID Connect
+  - SQL
+# Third Party
+  - CSS
+  - iOS
+  - TypeScript
+  - SAP
+# Industry
+  - API
+  - IP
+  - FAQ
+  - TLS
+  - AI
+  - DNS
+  - TLS

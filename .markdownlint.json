@@ -42,13 +42,36 @@
     "table-pipe-style": {
         "style": "leading_and_trailing"
     },
-    "no-inline-html": {
+    "no-inline-html": false,
+    "no-inline-or-nested-html": {
         "allowed_elements": [
             "div",
             "br",
             "tr",
             "th",
-            "td"
-        ]
+            "td",
+            "table",
+            "thead",
+            "tbody"
+        ],
+        "table_allowed_elements": [
+            "strong"
+        ],
+        "nested_allowed_elements": {
+            "td": [
+                "strong",
+                "b",
+                "a",
+                "sup",
+                "code"
+            ],
+            "th": [
+                "strong",
+                "b",
+                "a",
+                "sup",
+                "code"
+            ]
+        }
     }
 }

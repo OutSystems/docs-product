@@ -150,7 +150,7 @@ The Performance Monitoring system is documented [here](../../ref/apis/performanc
 
 | Field | Description | Data type | Mapped Entity |
 | -----|-----------|---------|------------- |
-| Instant | Time of log generation in the front-end (server log) or of log generation in the mobile device (client log). | Date Time | |
+| Instant | Time when the screen request started in the front-end (server log) or in the mobile device (client log). | Date Time | |
 | Duration | Duration of the request, as measured on the server side, in milliseconds. | Int | |
 | Screen | Name of the screen as declared in the eSpace where it is present. For SMS Flows, name of the SMS Node. | Text | |
 | Session_Id | User Session Identifier | Text | |
@@ -182,7 +182,7 @@ The Performance Monitoring system is documented [here](../../ref/apis/performanc
 | Field | Description | Data type | Mapped Entity |
 | -----|-----------|---------|------------- |
 | Id | Unique identifier. | Text | |
-| Instant | Time of log generation in the front-end (server log) or of log generation in the mobile device (client log). | Date Time | |
+| Instant | Time when the integration execution completed in the front-end (server log) or in the mobile device (client log). | Date Time | |
 | Duration | Duration of the execution of the integration, in milliseconds. For CONSUME type, this is the time from the beginning of the request to the external system until the response finished transmission to the platform, including the time it takes to create the connection/request and the time spent executing any OnBeforeRequest callback. For EXPOSE type, this is the time from the beginning of execution on the platform until end of transmission to the external system. | Int | |
 | Source | Empty / meaningless for CONSUME type; for EXPOSE type this is the source IP of the external system. | Text | |
 | Endpoint | For CONSUME type this is the URL of the external system; empty / meaningless for EXPOSE type. | Text | |
@@ -261,7 +261,7 @@ The Performance Monitoring system is documented [here](../../ref/apis/performanc
 
 | Field | Description | Data type | Mapped Entity |
 | -----|-----------|---------|------------- |
-| Instant | Time of log generation in the front-end (server log) or of log generation in the mobile device (client log). | Date Time | |
+| Instant | Time when the timer execution started in the front-end server. | Date Time | |
 | Duration | Duration, in seconds, of the execution of the job. | Int | |
 | Cyclic_Job_Key | Unique identifier of the cyclic job that was executed. | GUID | (System).Cyclic_Job |
 | Espace_Id | Module from where the log was originated. 0 if the message originates from an OutSystems service. | Int | (System).Espace |
@@ -313,7 +313,7 @@ The Performance Monitoring system is documented [here](../../ref/apis/performanc
 | -----|-----------|---------|------------- |
 | Tenant_Id | Id of the tenant where the message was logged. 0 if message originates from an OutSystems service. | Int | (System).Tenant |
 | Id | Unique identifier of the log entry. | GUID | |
-| Instant | Time of log generation in the front-end (server log) or of log generation in the mobile device (client log). | Date Time | |
+| Instant | Time when the mobile request completed in the front-end (server log) or in the mobile device (client log). | Date Time | |
 | Espace_Id | Module from where the log was originated. 0 if the message originates from an OutSystems service. | Int | (System).Espace |
 | Screen | Application screen mobile request took place. | Text | |
 | Source | Source IP address | Text | |

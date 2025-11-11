@@ -41,7 +41,7 @@ There is also a downloadable compact PDF of this content:
 
 | Process Actions | Description                                | Traditional |
 |-----------------|--------------------------------------------|-------------|
-| Launch&ltProcess&gt | Explicitly launch an instance of a process |             |
+| Launch&lt;Process&gt; | Explicitly launch an instance of a process |             |
 
 | Timer Actions | Description                                    | Traditional |
 |---------------|------------------------------------------------|-------------|

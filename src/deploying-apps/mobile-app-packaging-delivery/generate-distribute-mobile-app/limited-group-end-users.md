@@ -27,7 +27,7 @@ Applies only to Mobile Apps.
 
 A way of to start the distribution of your production-ready mobile app is by making it initially available to a limited group of users.
 
-In OutSystems, you can generate a mobile application package for your mobile app to be installed by the selected end users.
+In OutSystems, you can generate a mobile application package for your mobile app to be installed by selected end users.
 
 ## For iOS
 

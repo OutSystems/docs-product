@@ -1,0 +1,13 @@
+name: Style Guide Metrics
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  style-guide-metrics:
+    name: Run Style Guide Metrics
+    uses: OutSystems/tk-cicd/.github/workflows/style-guides-metrics.yml@main
+    with:
+      runner-type: "ubuntu-latest"
+    secrets: inherit

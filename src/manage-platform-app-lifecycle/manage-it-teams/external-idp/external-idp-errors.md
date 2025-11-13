@@ -40,11 +40,11 @@ In the case of an Invalid login SSO error, one possible reason could be a mismat
 
 When proxy settings exist for some, but not all environments in the infrastructure, OIDC activation might fail for the environments that don't have proxy setting. You must maintain the same proxy settings throughout all enviornments configured in Lifetime.
 
-You must ensure SS proxy configurations are up to date in the machine.config file. For instructions on how to (confiure the SS proxy configurations?? or to update them??), refer to the [this article.](https:https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)
+You must ensure Service Studio proxy configurations are up to date in the machine.config file. Refer to [this article.](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)
 
 ### 5. Authentication error in Service studio and Integration studio
 
-If the SS or IS log displays FailedToFetchServerIdentityTokens or FailedToRenewAccessToken error, please reconfigure the OIDC connection in Lifetime. Otherwise raise a support case if the issue persists.
+If the Service Studio or Integration Studio log displays FailedToFetchServerIdentityTokens or FailedToRenewAccessToken error, please reconfigure the OIDC connection in Lifetime. Otherwise raise a support case if the issue persists.
 
 ## Both username/password and SSO login options are available
 

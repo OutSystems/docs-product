@@ -127,7 +127,7 @@ Next, let’s customize the **CaseStatusConfiguration** static entity to define 
 
 1. Delete the original **Open_ExampleToCopyAndDelete** record.
 
-1. In the Closed record set the IsInitial attribute to True and the **IsInitial** attribute on the **Open** to `False`.
+1. In the Closed record set the **IsInitial** attribute to `False` and the **IsInitial** attribute on the **Open** to `True`.
 
     <div class='info' markdown='1'>
 

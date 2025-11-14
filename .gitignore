@@ -4,3 +4,11 @@ rules/
 .vs/*
 config.yml
 .aider*
+# Ignore all .vale.ini files anywhere in the repo
+**/.vale.ini
+
+# Ignore all .markdownlint.json files anywhere in the repo
+**/.markdownlint.json
+
+# Ignore all files inside the 'styles' folder
+styles/*

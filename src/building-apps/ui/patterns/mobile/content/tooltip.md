@@ -55,9 +55,9 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Tooltip widget into the Main Content area of your application's screen.
@@ -66,12 +66,12 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 
     By default, the Tooltip widget contains Content and Tooltip placeholders.
 
-1. Add your content to the placeholders. 
-    
+1. Add your content to the placeholders.
+
     In this example, we add a **Save** button to the Content placeholder and enter the tooltip text ``Save your details`` in the Tooltip placeholder.
 
     ![Example of adding a Save button to the Content placeholder and entering tooltip text in the Tooltip placeholder](images/tooltip-content-ss.png "Adding Content to Tooltip")
-    
+
 1. Select the **Save** button and add the relevant **On Click** event.
 
     ![Illustration of selecting the Save button and adding an On Click event in Service Studio](images/tooltip-onclick-ss.png "Adding OnClick Event to Save Button")
@@ -93,11 +93,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|Initialized: Optional|Event triggered after the Tooltip instance is ready.| 
-|OnToggle: Mandatory|Event triggered each time a Tooltip opens or closes.| 
-
+|Initialized: Optional|Event triggered after the Tooltip instance is ready.|
+|OnToggle: Mandatory|Event triggered each time a Tooltip opens or closes.|
 
 <div class="info" markdown="1">
 
@@ -105,4 +104,3 @@ To include clickable elements inside the Tooltip component, add ``data-allow-eve
 Applies to OutSystems UI version 2.14.0 and higher.
 
 </div>
-

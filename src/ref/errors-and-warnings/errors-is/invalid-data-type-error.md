@@ -24,5 +24,5 @@ Message
 Cause
 :   You have the wrong data type in a property being used.
 
-Recommendation   
+Recommendation
 :   Check the allowed data types of the property.

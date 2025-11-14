@@ -38,4 +38,3 @@ To learn about these topics in more detail, check the following guides:
 ## More Information
 
 To learn more about how to set up your OutSystems Platform check the [Designing OutSystems infrastructures guide](https://success.outsystems.com/Documentation/Best_Practices/Infrastructure_management/Designing_OutSystems_Infrastructures).
-

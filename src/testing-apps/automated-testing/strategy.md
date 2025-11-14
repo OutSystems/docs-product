@@ -64,6 +64,7 @@ In the end, we should always plan a refactoring on the parts that should be more
 If you take into account OutSystems' "True change" capabilities, refactoring becomes much easier to perform. So refactoring should become a part of developers' practices as a way to continuously improve testability and ensure a reduced technical debt.
 
 For more information about refactoring an application, please refer to the following links:
+
 * [Refactor an Application in OutSystems 10](https://success.outsystems.com/Documentation/10/Managing_the_Applications_Lifecycle/Deploy_Applications/Refactor_an_Application)
 * [Refactor an Application in OutSystems 11](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Refactor_an_Application)
 

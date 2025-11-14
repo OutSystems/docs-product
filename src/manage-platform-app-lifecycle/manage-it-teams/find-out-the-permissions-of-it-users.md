@@ -38,7 +38,7 @@ On this page, we can see:
 
 * Which **teams** have access to this application. Clicking on the team, we will have the visibility of the different roles and permissions the members of that team have over the application. The permissions given through the team have precedence over the permissions given by the default role of a user.
 
-## Permissions of a specific IT user 
+## Permissions of a specific IT user
 
 In this example we want to understand the permissions that a specific user has, to ensure the company security policy is being enforced:
 

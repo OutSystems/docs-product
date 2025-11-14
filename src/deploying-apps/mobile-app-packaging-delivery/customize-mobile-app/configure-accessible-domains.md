@@ -22,11 +22,11 @@ Applies only to Mobile Apps.
 
 </div>
 
-To enhance your mobile app's security, you can create a allowlist of domains that your mobile app can access. The `access` extended configuration entry allows you to define the allowlist. After this, when using HTTP connections, all non-allowlisted domains will be blocked. 
+To enhance your mobile app's security, you can create a allowlist of domains that your mobile app can access. The `access` extended configuration entry allows you to define the allowlist. After this, when using HTTP connections, all non-allowlisted domains will be blocked.
 
 To define the list of accessible domains for your mobile app do the following:
 
-1. In Service Studio, select the module element (root item in the module tree), next in the properties editor, double-click on Extensibility Configurations. This opens the property editor window: 
+1. In Service Studio, select the module element (root item in the module tree), next in the properties editor, double-click on Extensibility Configurations. This opens the property editor window:
 
     ![Screenshot of Service Studio showing the path to access Extensibility Configurations for a mobile app module.](images/extensibility-configurations-ss.png "Service Studio Extensibility Configurations")
 
@@ -42,7 +42,7 @@ To define the list of accessible domains for your mobile app do the following:
             }]
         }
 
-1. After defining the domains that are accessible, users must install an [updated build of the mobile app](<../mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build>) on their devices for the changes to take effect. 
+1. After defining the domains that are accessible, users must install an [updated build of the mobile app](<../mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build>) on their devices for the changes to take effect.
 
 ## Default Configuration
 
@@ -58,7 +58,7 @@ When no `access` JSON extensibility configuration entry is defined, the accessib
 
 In other words, by default all domains are accessible, regardless of the exact protocol (HTTP or HTTPS) and domain name.
 
-## Blocking HTTP Connections 
+## Blocking HTTP Connections
 
 Using extended configuration entries to limit the domains that are accessible is useful when using **HTTP connections**. Since all domains accessed through HTTPS are already using a secure transport channel, when using HTTPS your application will be able to access any domains. To define limitations to the content that is loaded when using HTTPS connections, consider using [Content Security Policy directives](<../../../security/apply-content-security-policy.md>).
 
@@ -74,7 +74,7 @@ To block **all** HTTP connections (to any domain), use a configuration similar t
 
 In the previous example, by declaring that the only allowed origin must have an HTTPS protocol (regardless of the exact domain and URL), you will be effectively blocking all HTTP connections to every domain.
 
-## Optional Fields 
+## Optional Fields
 
 <div class="info" markdown="1">
 
@@ -86,14 +86,14 @@ The only mandatory field in each list element (for both iOS and Android) is the 
 
 The following table lists the other available optional fields, for specific iOS configurations:
 
-Field Name                              | Applies to | Allowed Origin Values | Default Value
-----------------------------------------|:----------:|:---------------------:|-------------- 
-`minimum-tls-version`                   | iOS 9+     | Any | `TLSv1.2`
-`requires-forward-secrecy`              | iOS 9+     | Any | `true`
-`requires-certificate-transparency`     | iOS 10+    | Any | `false`
-`allows-arbitrary-loads-for-media`      | iOS 10+    | `*` | `false` 
-`allows-arbitrary-loads-in-web-content` | iOS 10+    | `*` | `false`
-`allows-local-networking`               | iOS 10+    | `*` | `false`
+| Field Name                              | Applies to | Allowed Origin Values | Default Value |
+| ----------------------------------------|:----------:|:---------------------:|-------------- |
+| `minimum-tls-version`                   | iOS 9+     | Any | `TLSv1.2` |
+| `requires-forward-secrecy`              | iOS 9+     | Any | `true` |
+| `requires-certificate-transparency`     | iOS 10+    | Any | `false` |
+| `allows-arbitrary-loads-for-media`      | iOS 10+    | `*` | `false` |
+| `allows-arbitrary-loads-in-web-content` | iOS 10+    | `*` | `false` |
+| `allows-local-networking`               | iOS 10+    | `*` | `false` |
 
 Note that the last three fields can only be included in an `access` list element whose `origin` field contains an `*` value.
 

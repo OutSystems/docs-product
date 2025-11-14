@@ -26,13 +26,13 @@ Applies only to Traditional Web Apps.
 
 The Editable Table widget displays the records of an Entity or a Structure in a tabular layout and allows the user to create new records, update, or delete existing records.
 
-# How to use the Editable Table widget
+## How to use the Editable Table widget
 
 The following example demonstrates how you can display the registered users on your platform in an editable table.
 
 1. In Service Studio, in the Toolbox, search for `Editable Table`.
 
-    The **Editable Table** widget is displayed. 
+    The **Editable Table** widget is displayed.
 
     ![Screenshot of the Editable Table widget in the Service Studio toolbox](images/editabletable-1-ss.png "Editable Table Widget in Service Studio")
 
@@ -44,13 +44,13 @@ The following example demonstrates how you can display the registered users on y
 
     ![Selecting the User entity from the Data tab to add to the Editable Table widget](images/editabletable-3-ss.png "Selecting User Entity for Editable Table")
 
-1. To return to your screen, select the **Interface** tab, and select the Editable Table widget. 
+1. To return to your screen, select the **Interface** tab, and select the Editable Table widget.
 
-1. On the **Properties** tab, from the **Source Record List** dropdown, select the automatically created aggregate. In this example, we select **New Aggregate 'GetUsers'**. 
+1. On the **Properties** tab, from the **Source Record List** dropdown, select the automatically created aggregate. In this example, we select **New Aggregate 'GetUsers'**.
 
     ![Choosing the Source Record List for the Editable Table widget from the Properties tab](images/editabletable-4-ss.png "Setting Source Record List for Editable Table")
 
-After following these steps, and publishing the module, you can test the widget in your app. 
+After following these steps, and publishing the module, you can test the widget in your app.
 
 **Result**
 
@@ -236,4 +236,3 @@ All of the registered users are displayed in an editable table. The Editable Tab
 </tr>
 </tbody>
 </table>
-

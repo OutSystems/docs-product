@@ -18,14 +18,14 @@
     "no-duplicate-heading": {
         "siblings_only": true
     },
-    "single-h1": {
+    "single-h1": false,
+    "single-h1-page-breaks":{
         "front_matter_title": ""
     },
     "no-trailing-punctuation": false,
     "ol-prefix": {
         "style": "one"
     },
-    "no-inline-html": false,
     "fenced-code-language": false,
     "first-line-h1": {
         "front_matter_title": ""
@@ -35,5 +35,43 @@
     "code-block-style": false,
     "code-fence-style": {
         "style": "backtick"
+    },
+    "emphasis-style": {
+        "style": "underscore"
+    },
+    "table-pipe-style": {
+        "style": "leading_and_trailing"
+    },
+    "no-inline-html": false,
+    "no-inline-or-nested-html": {
+        "allowed_elements": [
+            "div",
+            "br",
+            "tr",
+            "th",
+            "td",
+            "table",
+            "thead",
+            "tbody"
+        ],
+        "table_allowed_elements": [
+            "strong"
+        ],
+        "nested_allowed_elements": {
+            "td": [
+                "strong",
+                "b",
+                "a",
+                "sup",
+                "code"
+            ],
+            "th": [
+                "strong",
+                "b",
+                "a",
+                "sup",
+                "code"
+            ]
+        }
     }
 }

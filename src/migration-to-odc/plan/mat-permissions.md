@@ -1,0 +1,292 @@
+---
+guid: fac3a513-0173-496c-b617-17df271fe978
+locale: en-us
+summary: This article describes the permission model of the Conversion Assessment Tool.
+figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?m=auto&node-id=3238-3629&t=ESjXytEWWy55qiqt-1
+coverage-type:
+  - understand
+topic: 
+app_type: reactive web apps,mobile apps
+platform-version: o11
+audience:
+  - architects
+  - platform administrators
+  - tech leads
+  - full stack developers
+tags: app conversion, cloud conversion, conversion process, application assessment
+outsystems-tools:
+  - conversion assessment tool
+helpids: 
+---
+
+# Understand the permission model for Conversion Assessment Tool
+
+The permissions that IT users have while using the **Conversion Assessment Tool** depend on their [permissions set in LifeTime](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#permissions) for the O11 environment where the [development probe](../setup-assessement-tool.md#probe) is installed.
+
+While navigating through the Conversion Assessment Tool, logged in users only get the information they have permission to. They are notified whenever the visible information is limited due to lack of permissions.
+
+![Notification indicating LifeTime permissions are limiting the view of ODC assets.](images/lack-lt-permissions-at.png "Limited View Due to LifeTime Permissions")
+
+<div class="info" markdown="1">
+
+Remarks:
+
+* The set of permissions that an IT user has over the **development probe environment** and the applications is determined by [the several roles that the user is assigned](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#assigning-roles-to-it-users).
+
+* If there's an ODC asset that you have permission to but it's not visible, try to log out and log in the Conversion Assessment Tool again. This forces LifeTime to synchronize the environments and their permissions.
+
+</div>
+
+## Permissions by tool operation
+
+To log in the Conversion Assessment Tool, users must have **Access** permission at least for one O11 app in the environment.
+
+The tables below describe the required permissions to perform the main operations in the Conversion Assessment Tool. Each permission level is cumulative with the permissions of the previous levels.
+
+### Mapping O11 apps to ODC assets { #map }
+
+<table>
+  <thead>
+    <tr>
+      <th>LifeTime permissions</th>
+      <th>Assigned as <strong>Default role</strong></th>
+      <th>Assigned for a <strong>Team</strong></th>
+      <th>Assigned for an <strong>App</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Access</td>
+      <td colspan="3">The user can’t see any ODC asset on the ODC Blueprint screen nor any O11 apps and modules in the Map O11 apps list.</td>
+    </tr>
+    <tr>
+      <td>List Application</td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See all ODC assets on the ODC Blueprint screen.</li>
+          <li>See all the <strong>environment’s O11 apps</strong> and modules in the Map O11 apps list.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See on the ODC Blueprint screen the ODC assets that include at least one of the <strong>Team’s O11 apps</strong>.</li>
+          <li>See in the Map O11 apps list the <strong>Team’s O11 apps</strong> and modules.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See on the ODC Blueprint screen the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>See in the Map O11 apps list the <strong>O11 app</strong> and modules.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Monitor and Add Dependencies</td>
+    </tr>
+    <tr>
+      <td>Open and Debug applications</td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>Create, edit and delete ODC assets and map the <strong>environment’s O11 apps</strong>.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>Create ODC assets and map the <strong>Team’s O11 apps</strong>.</li>
+          <li>Edit ODC assets that include the <strong>Team’s O11 apps</strong> and update the mapping for the <strong>Team’s O11 apps</strong>.</li>
+          <li>Delete ODC assets that include the <strong>Team’s O11 apps</strong>, only when having the same or higher permission over all apps in the ODC asset.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>Create an ODC asset and map the <strong>O11 app</strong>.</li>
+          <li>Edit the ODC asset that includes the <strong>O11 app</strong> and remove the mapping for the <strong>O11 app</strong>.</li>
+          <li>Delete the ODC asset that includes the <strong>O11 app</strong>, only when having the same or higher permission over all apps in the ODC asset.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Change and Deploy Applications</td>
+    </tr>
+  </tbody>
+</table>
+
+### Assessment and findings { #assessment-findings }
+
+<table>
+  <thead>
+    <tr>
+      <th>LifeTime permissions</th>
+      <th>Assigned as <strong>Default role</strong></th>
+      <th>Assigned for a <strong>Team</strong></th>
+      <th>Assigned for an <strong>App</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Access</td>
+      <td colspan="3">
+        <p>The user can:</p>
+        <ul>
+          <li>See data patterns that apply across all applications (for example, end-user related patterns) and export their findings.</li>
+          <li>See and export infrastructure findings.</li>
+          <li>Run code, data, and infrastructure assessment for the environment.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>List Application</td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See the assessment status and total number for all ODC assets on the ODC Blueprint screen.</li>
+          <li>See the code and data patterns, total number of findings, and all findings for the <strong>environment’s ODC assets</strong>.</li>
+          <li>Change the <strong>Where To Fix</strong> setting of the findings for the <strong>environment’s ODC assets</strong>, when applicable.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See on the ODC Blueprint screen the assessment status and total number of findings for the ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
+          <li>See the code and data patterns and total number of findings for the ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
+          <li>See the code and data findings for the <strong>Team’s O11 apps</strong>.</li>
+          <li>Change the <strong>Where To Fix</strong> setting of the findings for the <strong>Team’s O11 apps</strong>, when applicable.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See on the ODC Blueprint screen the assessment status and total number of findings for the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>See the code and data patterns and total number of findings for the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>See the code and data findings for the <strong>O11 app</strong>.</li>
+          <li>Change the <strong>Where To Fix</strong> setting of the findings for the <strong>O11 app</strong>, when applicable.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Monitor and Add Dependencies</td>
+    </tr>
+    <tr>
+      <td>Open and Debug applications</td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>Run a code assessment for each <strong>environment’s ODC asset</strong> on the ODC Blueprint screen.</li>
+          <li>Export code findings for the <strong>environment’s ODC assets</strong>.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>Run a code assessment for each ODC asset that includes the <strong>Team’s O11 apps</strong> on the ODC Blueprint screen.</li>
+          <li>Export code findings for the <strong>Team’s O11 apps</strong>.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>Run a code assessment for the ODC asset that includes the <strong>O11 app</strong> on the ODC Blueprint screen.</li>
+          <li>Export code findings for the <strong>O11 app</strong>.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Change and Deploy Applications</td>
+    </tr>
+  </tbody>
+</table>
+
+### Conversion plans { #plans }
+
+<table>
+  <thead>
+    <tr>
+      <th>LifeTime permissions</th>
+      <th>Assigned as <strong>Default role</strong></th>
+      <th>Assigned for a <strong>Team</strong></th>
+      <th>Assigned for an <strong>App</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Access</td>
+      <td colspan="3">The user can’t see any conversion plan.</td>
+    </tr>
+    <tr>
+      <td>List Application</td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See all the conversion plans, the number of ODC assets in the plan and the assessment status.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See in the Conversion plans list the plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
+          <li>See, in the details of those plans, the number of ODC assets in the plan and the assessment status.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See in the Conversion plans list the plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>See, in the details of that plan, the number of ODC assets in the plan and the assessment status.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Monitor and Add Dependencies</td>
+    </tr>
+    <tr>
+      <td>Open and Debug applications</td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See the dependencies of the <strong>environment’s conversion plans</strong>.</li>
+          <li>Create, edit and delete conversion plans with ODC assets that include any <strong>environment’s O11 app</strong>.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See the dependencies of conversion plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
+          <li>Create conversion plans with ODC assets that include the <strong>Team’s O11 apps</strong>.</li>
+          <li>Edit conversion plans with ODC assets that include the <strong>Team’s O11 apps</strong> and add/remove ODC assets to/from the plan, only when having the same or higher permission over all apps in the ODC asset.</li>
+          <li>Delete conversion plans with ODC assets that include the <strong>Team’s O11 apps</strong>, only when having the same or higher permission over all apps in the ODC assets in the plan.</li>
+        </ul>
+      </td>
+      <td rowspan="2">
+        <p>The user can:</p>
+        <ul>
+          <li>See the dependencies of the conversion plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>Create a conversion plan with the ODC asset that includes the <strong>O11 app</strong>.</li>
+          <li>Edit the conversion plan with the ODC asset that includes the <strong>O11 app</strong> and remove the ODC asset from the plan, only when having the same or higher permission over all apps in the ODC asset.</li>
+          <li>Delete the conversion plan with the ODC asset that includes the <strong>O11 app</strong>, only when having the same or higher permission over all apps in the ODC assets in the plan.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Change and Deploy Applications</td>
+    </tr>
+  </tbody>
+</table>
+
+### Maintenance and configuration { #maintenance }
+
+| LifeTime permissions | Assigned as **Default role** | Assigned for a **Team** | Assigned for an **App** |
+| :--- | :--- | :--- | :--- |
+| **Full Control** | The user can see and update the configuration settings on the Maintenance screen. | - | - |
+
+### Setup and update { #setup-update }
+
+| LifeTime permissions/Roles | Assigned as **Default role** | Assigned for a **Team** | Assigned for an **App** |
+| :--- | :--- | :--- | :--- |
+| **Create Applications** and **Change and Deploy Applications** permissions | The user can install the Conversion Assessment Tool Installer app in the environment. | - | - |
+| **Administrator** [role](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles) | The user can [setup and update the Conversion Assessment Tool](../setup-assessement-tool.md) using the Conversion Assessment Tool Installer app. | - | - |

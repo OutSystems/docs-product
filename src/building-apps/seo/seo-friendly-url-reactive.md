@@ -23,7 +23,7 @@ coverage-type:
 
 ## Prerequisites  
 
-SEO-friendly URLs for Reactive Web apps require the following: 
+SEO-friendly URLs for Reactive Web apps require the following:
 
 * Your environments must use Platform Server 11.14.0 or later.  
 
@@ -41,20 +41,20 @@ For **Platform Server** versions 11.12.0 to 11.14.0 enable the technical preview
 
 </div>  
 
-Friendly URLs provide both humans and machines with an indication of the search engine results. 
+Friendly URLs provide both humans and machines with an indication of the search engine results.
 
 There are many strategies for optimizing your Web app for search engines. At OutSystems, optimize your apps by doing the following:  
 
-* Applying best practices for an effective URL structure. 
+* Applying best practices for an effective URL structure.
 * Managing site rules.
 * Customizing SEO-friendly URLs for your screens.
 * Managing redirect rules.
 * Identifying URL prioritization.
-* Creating dynamic page titles. 
+* Creating dynamic page titles.
 
 <div class="info" markdown="1">
 
-Different OutSystems tools enable you to complete different tasks. For example, use **Service Center** to create SEO-friendly versions of URLs, and manage site rules and redirects. Use **Service Studio** to edit custom URLs in the properties of each screen. 
+Different OutSystems tools enable you to complete different tasks. For example, use **Service Center** to create SEO-friendly versions of URLs, and manage [site rules](site-rules.md) and redirects. Use **Service Studio** to edit custom URLs in the properties of each screen.
 
 </div>  
 
@@ -65,58 +65,16 @@ To better manage your content and help users find it easily, you need to have an
 Simple URLs provide the best user experience. So, optimize URLs with descriptive keywords that give a clear understanding of what the page content is about. This helps search engines deliver relevant results to searchers, and searchers know exactly what they’ll find when they click a URL link.  
 
 There’s no set rule for the best URL structure, and URLs can be different depending on your app use case. Nonetheless, a URL structure should be simple, logical, easy to remember, and contain clear descriptive keywords. OutSystems recommends that you create a URL structure that’s intuitive so that both users and search engines quickly and easily understand the connections between different screens on your app.  
- 
+
 Some best practices include:
+
 * Using meaningful keywords
 * Aiming for shorter URLs:  
     Most URLs automatically use the page or post title as the default URL, but sometimes the title can be an unnecessarily long string of characters. The shorter the URL, the better. Moreover, short URLs tend to rank higher.
 * Using hyphens as word breaks:  
-    SEO best practices use hyphens between words because this *tells* search engines and users where the breaks between words are and make it easier to read.
+    SEO best practices use hyphens between words because this _tells_ search engines and users where the breaks between words are and make it easier to read.
 
-## Site rules
-
-<div class="info" markdown="1">
-
-To create and manage site rules, go to **Service Center**.
-
-</div>  
-
-A site rule is a configuration at the application level. Site rules enable you to customize the domain URL and app name using keywords that your audience might use to search in a browser. The domain is essential to an effective URL structure and impacts how users find and consume your app. 
-
-For example, use site rules to map the apps in your production environment with the domain of your company or product, thus showcasing your own brand using OutSystems apps. 
-
-Under the `production-environment.devexample.com` environment, map your `MyAppHomeModule` app to a new URL, such as `example.com/myapp`. So, when you enter `www.example.com/myapp` in the browser, the platform loads the `MyAppHomeModule` home screen.  
-
-### Creating a site rule
-
-To create a site rule, follow these steps:
-
-1. Go to **Service Center** > **Administration** > **SEO URLs** > **Site Rules List**.  
-
-    ![Screenshot of Service Center interface showing the first step in creating site rules](images/create-site-rules-1-sc.png "Creating Site Rules Step 1")  
-
-
-1. Select **New Site Rule**.  
-
-    ![Screenshot of Service Center interface showing the second step in creating site rules](images/create-site-rules-2-sc.png "Creating Site Rules Step 2")  
-
-1. Enter the **Base URL** and the **Root Application**, and select **Create**.  
-
-    ![Screenshot of Service Center interface showing the third step in creating site rules](images/create-site-rules-3-sc.png "Creating Site Rules Step 3")  
-
-    As a result, you've enabled a new site rule.  
-    You also have the option to select a site rule and edit, delete, or disable the **Base URL**.  
-
-<div class="info" markdown="1">
-
-Remember the following when working with site rules:  
-* You can only have only one site rule per root application for domains with sub-paths.  
-* Creating or editing a site rule can temporarily slow down the app because the platform needs to reload its configuration.  
-* Each site rule will act as new hostname. Ensure network permissions account for modules being accessed via these new URLs.
-
-</div>  
-
-## Custom screen URLs 
+## Custom screen URLs
 
 <div class="info" markdown="1">
 
@@ -144,15 +102,17 @@ The following table includes more examples of custom screen URLs:
 <div class="info" markdown="1">
 
 Remember the following when working with custom screen URLs:  
+
 * You can add custom URLs to all screens except for the Default Screen.  
 * When copying screens with custom URLs from a Reactive Web app module to a Mobile app module, **Service Studio** removes the custom URL configurations in the Mobile app module because SEO works differently for mobile apps.  
- 
+
 </div>  
 
 ### Managing custom screen URLs  
 
 To add a custom screen URL, follow these steps:  
-1. Go to **Service Studio** and select the screen you want to rename. 
+
+1. Go to **Service Studio** and select the screen you want to rename.
 1. In the **Advanced** section of the screen properties, set the **Custom URL** to **Yes** and edit the URL structure.
 
 <div class="info" markdown="1">
@@ -169,7 +129,7 @@ Here is a list of considerations for the screen properties:
 
 **Custom URL**  
 Set the **Custom URL** property to **Yes** to activate custom screen URLs and edit the redirect settings.  
- 
+
 **Page Name**  
 Set the name of the page you want to show in the URL. Use only alphabetical characters and numbers. You have the option to use the following special characters, but not at the beginning or at the end of the page name: _, -, /, and ~.  
 
@@ -179,16 +139,18 @@ All page names must be unique. Otherwise, some URLs won't work.
 
 </div>  
 
-*Reserved strings*  
+_Reserved strings_  
 
 These are the reserved strings that you can’t use in the <b>Page Name</b> property:  
+
 * `screenservices`  
-* `moduleservices` 
+* `moduleservices`
 * `img`  
 * `Blocks`  
 * `rest`  
 
 The following strings aren't supported because of the / symbol:  
+
 * `screenservices/list`  
 * `List/screenservices/List`  
 * `List/screenservices`  
@@ -197,7 +159,7 @@ The following strings aren't supported because of the / symbol:
 Set this property to **Path** to pass the parameters separated by / in the URL (for example, `/Product/1`). Set it to **Query string** to pass the parameters as a string (for example, `Products?Id=1`).  
 
 **URL Pattern**  
-This is a preview of the transformed URL (for example, the Product screen has the ProductId input parameter and its URL Structure set as **Query string**. So the URL Pattern value will be `Product?ProductId={ProductId}`). 
+This is a preview of the transformed URL (for example, the Product screen has the ProductId input parameter and its URL Structure set as **Query string**. So the URL Pattern value will be `Product?ProductId={ProductId}`).
 
 ## Redirect rules  
 
@@ -216,13 +178,15 @@ To create and manage redirect rules, go to **Service Center**.
 Use redirect rules to ensure users and crawlers don’t come across broken links. Redirect rules inform users and crawlers that a screen URL has changed and a new destination is available elsewhere.  
 
 Choosing a redirect depends on how long you expect the redirect to be in place and what page you want the search engine to show in search results. So, you have the following options:  
+
 * Permanent redirects, which show the new redirect target in search results.  
 * Temporary redirects, which show the source page in search results.  
 
 To use a redirect rule, you should consider the following redirect rules used by the OutSystems platform:  
+
 1. HTTP 301 (permanent):  
 
-    A 301 redirect signals a permanent redirect from one URL to another, meaning all users who request an old URL are automatically sent to a new URL. A 301 redirect passes all ranking power from the old URL to the new URL, and is most commonly used when a page has been permanently moved or removed from a website. While a 301 redirect can load the new URL faster on the next visit, if you want to revert this redirect, it may take months for the search engines to recognize the changes.   
+    A 301 redirect signals a permanent redirect from one URL to another, meaning all users who request an old URL are automatically sent to a new URL. A 301 redirect passes all ranking power from the old URL to the new URL, and is most commonly used when a page has been permanently moved or removed from a website. While a 301 redirect can load the new URL faster on the next visit, if you want to revert this redirect, it may take months for the search engines to recognize the changes.
 
 1. HTTP 302 (temporary):  
 
@@ -231,6 +195,7 @@ To use a redirect rule, you should consider the following redirect rules used by
 ### Managing redirect rules  
 
 To manage redirect rules you need to know the following:  
+
 * **Old URL**, which is the string to match the rule (for example, `old.example.com`).
 * **New URL**, which is the replacement string for the URL (for example, `new.example.com`).
 
@@ -280,6 +245,7 @@ If a redirect rule is configured for a module (e.g., `oldurl/module -> newurl/mo
 Prioritization determines the order in which pages load in a browser. Search engines use this information when selecting between URLs on the same site, so use URL prioritization to increase the likelihood that your most important pages are present in a search index.  
 
 Here are some considerations for URL prioritization:  
+
 * Static URLs have priority over dynamic URLs.  
 * The priority for dynamic URLs is based on the number of parameters. Rules with fewer parameters have priority over rules with more parameters.  
 
@@ -298,8 +264,9 @@ Ensure that your page title reflects the content of your page. Page titles show 
 ### Creating dynamic page titles  
 
 To create a dynamic title for a screen, follow these steps:  
-1. Go to **Service Studio** and identify the screen that you want to create a dynamic title for. 
-1. In the screen properties, double-click the **Title** property. 
+
+1. Go to **Service Studio** and identify the screen that you want to create a dynamic title for.
+1. In the screen properties, double-click the **Title** property.
 1. In the opened **Expression** editor, enter an expression that sets the title value during runtime. For example, `"More about" + ProductTitle`.  
 
 ![Screenshot of Service Studio showing how to set a dynamic title property for a screen](images/dynamic-title-property-ss.png "Dynamic Title Property in Service Studio")  

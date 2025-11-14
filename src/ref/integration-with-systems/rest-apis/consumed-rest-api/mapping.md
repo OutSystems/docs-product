@@ -31,7 +31,4 @@ When [consuming REST API Methods](<../../../../integration-with-systems/rest/con
 | `{"createdon": "2014-12-24"}`                                                        | Date                 | Format: YYYY-MM-DD                                                                                                                                      |
 | `{"canupdate": true}`                                                                | Boolean              |                                                                                                                                                         |
 | `{"image-png": "data:image/png;base64,sample-base64-data"}`                          | Binary               | The platform sends binary data as base64, and converts received base64 to binary when the attribute is set to binary.                                       |
-| `{"name": "Christine Sharp"}`                                                        | Text                 |
-
-Data that can't be converted to one of the above data types is converted to
-Text.
+| `{"name": "Christine Sharp"}`                                                        | Text                 | Data that can't be converted to one of the above data types is converted to Text. |

@@ -41,7 +41,7 @@ Package of Last Tagged Version
     **Note:** You will only have information in this column (and the operations described above) will  only be available if the version number of the latest mobile app package **matches the version number being displayed** for the current mobile platform in the Version > "Number" column.  
     E.g. if you did changes to the app or to its configuration, the version number will (in most cases) contain a "+" stating that the last tagged version was changed. Since there is no mobile package available for this changed version, the "Package of Last Tagged Version" column will be empty.
 
-Version	
+Version
 :   Version information and package status for the current mobile platform.
     Contains the following sub-columns:  
 

@@ -78,4 +78,3 @@ The assignments are applied from top to bottom.</td>
 </tr>
 </tbody>
 </table>
-

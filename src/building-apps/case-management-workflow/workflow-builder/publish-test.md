@@ -63,10 +63,10 @@ This section explains the screens available to the users with the **Requester** 
 
 ![Example of a requester screen for submitting new requests in Workflow Builder](images/wfb-new-request-sample-screen.png "Requester Screen Example")
 
-You also have the option to cancel a request. However, this option is only possible while the request is not assigned to a user and the task details have not been opened. Once a request is assigned and opened, it cannot be canceled. When you cancel a request, it becomes a **Closed** request. It can not be reopened or resubmitted. 
+You also have the option to cancel a request. However, this option is only possible while the request is not assigned to a user and the task details have not been opened. Once a request is assigned and opened, it cannot be canceled. When you cancel a request, it becomes a **Closed** request. It can not be reopened or resubmitted.
 
 **Requests list** - a screen that allows managers, the ones that deal with the requests, to move them forward through the designed process. This screen allows users with the **manager** role, and belonging to the right user group, to see all the requests that are in the stage that follows. Managers have two view options:
-   
+
 * **My tasks** - screen view that shows all the tasks assigned to a specific group of managers (a group to which the logged-in user belongs to).
 
     ![Screenshot of the 'My Tasks' screen showing tasks assigned to a manager](images/wfb-my-tasks-screen.png "My Tasks Screen")
@@ -86,7 +86,7 @@ You also have the option to cancel a request. However, this option is only possi
 * **Requests** - screen view that shows all the active requests. A request can have one or more tasks, and so this view can help you to understand the overall progress of a specific request.
 
     ![Screenshot of the 'Requests' screen displaying active and closed requests](images/wfb-requests-screen.png "Requests Screen")
- 
+
     Within the **Requests** screen view - displays the requests, organized per the following buckets:
 
     * **Active** - lists all requests assigned to a group of active users, meaning that the request didn't follow all the required steps of the workflow yet. This might mean that there are pending tasks from other user groups.
@@ -178,9 +178,3 @@ On the **My Apps** screen, each app has a menu with the options described below.
 * **Delete** - the delete action allows you to delete an app. You need to be the owner of that app to be able to delete it.
 
 To learn about your app lifecycle information, open [App lifecycle management](app-lifecycle.md).
-
-
-
-
-
-

@@ -78,4 +78,3 @@ The credentials provided to log in aren't valid, or the user is blocked. The pos
 * Ask your **LifeTime** administrator to unblock your username.
 
 For more information, check also [Protection against brute force attacks](../../security/protection-against-brute-force-attacks.md).
-

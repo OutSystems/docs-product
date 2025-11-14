@@ -6,7 +6,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30538
-tags: cloud-native applications, system entities, api development, data integration, platform version migration
+tags: cloud-native applications, system entities, api development, data integration, app conversion
 audience:
   - mobile developers
   - frontend developers
@@ -26,17 +26,17 @@ Platform system elements include [system actions](../../ref/apis/auto/system-act
 
 ## How to solve
 
-You must solve this pattern in ODC, after proceeding with the code migration to ODC.
+You must solve this pattern in ODC, after proceeding with the code conversion to ODC.
 
 ### Solve in ODC
 
 Depending on the scenario, do one of the following:
 
-  * If the functionality of the system element is [available in ODC without changes](#no-changes), ensure the dependencies are defined correctly.
+* If the functionality of the system element is [available in ODC without changes](#no-changes), ensure the dependencies are defined correctly.
   
-  * If the functionality of the system element is [available in ODC with changes](#changes), implement the changes in your ODC Assets.
+* If the functionality of the system element is [available in ODC with changes](#changes), implement the changes in your ODC Assets.
   
-  * If the functionality of the system element [isn't available in ODC](#not-available), adapt your code in alignment with ODC architecture.
+* If the functionality of the system element [isn't available in ODC](#not-available), adapt your code in alignment with ODC architecture.
 
 The following sections list:
 
@@ -122,7 +122,7 @@ If your logic in O11 required a connection to the email server to manage an acco
 
 #### XML
 
-If you want to implement the same logic in ODC, you can create an external library with the actions logic and consume it. YOu can also use a JSON serialization to cover data migration use cases.
+If you want to implement the same logic in ODC, you can create an external library with the actions logic and consume it. You can also use a JSON serialization to cover data migration use cases.
 
 * Serialization_ObjectToXml
 * Serialization_RecordListToXml
@@ -305,6 +305,8 @@ The following actions don’t exist in ODC because ODC doesn't currently support
 * TenantInvalidateCache
 * TenantSwitch
 
-### System entities not available in ODC
+### System entities not available in ODC { #system-entities }
 
-Except the **User** system entity, which is available in ODC as a cache with a simpler field structure, and a limited set of workflow-related entities, all the remaining [O11 system entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel/) are no longer available in ODC. For any dependency to a system entity that is not available in ODC, you need to refactor your code to use ODC capabilities instead of direct system entity access.
+Except the **User** system entity, which is available in ODC as a cache with a simpler field structure, and a limited set of workflow-related entities, all the remaining [O11 system entities](https://success.outsystems.com/documentation/how_to_guides/data/data_migration_from_production_to_non_production_environment/outsystems_platform_metamodel/) are no longer available in ODC.
+
+For any dependency to a system entity that is not available in ODC, you need to remove the reference to that system entity and refactor your code to use ODC capabilities instead.

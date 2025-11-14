@@ -31,25 +31,25 @@ To refresh a REST API service:
 
     ![Screenshot showing how to select the Refresh REST API option in Service Studio](images/select-refresh-rest-api-ss.png "Select Refresh REST API Option")
 
-1. In the Refresh REST API popup, click **Yes**. 
+1. In the Refresh REST API popup, click **Yes**.
 
     When you click **Yes**, any changes made to the previous version are lost.  
 
     ![Popup confirmation dialog for refreshing REST API in Service Studio](images/confirm-refresh-rest-api-ss.png "Confirm Refresh REST API")
 
-1. Enter the REST API URL or upload a new file, and click **Refresh Methods**. 
+1. Enter the REST API URL or upload a new file, and click **Refresh Methods**.
 
     In this example, the URL points to a JSON file that contains the complete list of REST methods.
 
     ![Entering the REST API URL in the Refresh REST API popup in Service Studio](images/enter-rest-api-url-ss.png "Enter REST API URL")
 
-1. Select the methods you would like to consume. 
-    
+1. Select the methods you would like to consume.
+
     Note that:
-    
+
     * The methods you select overwrite previously consumed methods for the service. Ensure you select all methods you want to consume, even if they haven't changed.
     * The following settings are **not** overridden when you refresh:
-            
+
         * Basic authentication
         * Advanced settings (Date Format, On Before Request and On After Response)
         * HTTP headers
@@ -57,10 +57,10 @@ To refresh a REST API service:
     The method format displays as **method name/relative endpoint** and, if applicable, **(Deleted)** or **(outdated)**.
 
     Where:
-    
+
     * method name = the method you may select to consume or update
-    *  /relative endpoint = endpoint relative to the base URL
-    *  (Deleted) or (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
+    * /relative endpoint = endpoint relative to the base URL
+    * (Deleted) or (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
 
     This example shows all available methods selected. **GetCustomersWithOrders** shows as **Deleted**, which means you can't select it.
 
@@ -84,9 +84,9 @@ To manually update a REST method:
 
 1. Update the REST API Method information to reflect the change you want to execute, such as adding new parameters to the request structure:
 
-    ![Adding a new parameter to the request structure of a REST API method in Service Studio](images/adding-new-parameter-request-structure-ss.png "Add New Parameter to Request Structure") 
+    ![Adding a new parameter to the request structure of a REST API method in Service Studio](images/adding-new-parameter-request-structure-ss.png "Add New Parameter to Request Structure")
 
-1. Click **Finish**. 
+1. Click **Finish**.
 
 ### Manually update a multipart/form-data REST API method { #multipart }
 

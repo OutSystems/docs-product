@@ -124,4 +124,4 @@ Cause
 :   You have a Table Records widget or List Records widget that displays a set of records different from the ones iterated in the For Each.
 
 Recommendation
-:   Check the Start Index and Maximum Iterations properties of the For Each element. Update the properties with the values suggested respectively in `<start index>` and `<maximum iterations>`, based on the properties of Table Records widget or the List Records widget: either the value of the LineCount property, if StartIndex is 0, or the value StartIndex + LineCount + 1, otherwise. In this situation, you have the guarantee that you are iterating as many records as you need to display. 
+:   Check the Start Index and Maximum Iterations properties of the For Each element. Update the properties with the values suggested respectively in `<start index>` and `<maximum iterations>`, based on the properties of Table Records widget or the List Records widget: either the value of the LineCount property, if StartIndex is 0, or the value StartIndex + LineCount + 1, otherwise. In this situation, you have the guarantee that you are iterating as many records as you need to display.

@@ -43,7 +43,7 @@ To manage how mobile apps update on user devices, you need to meet the following
 * LifeTime 11.6.0 or later.
 * MABS 6.2 or later.
 * You activated the [technical preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
-* You create and distribute the native mobile builds of your apps to submit them to the app stores. This means you created and app based on **Phone App** or **Tablet App** in Service Studio. 
+* You create and distribute the native mobile builds of your apps to submit them to the app stores. This means you created and app based on **Phone App** or **Tablet App** in Service Studio.
 * Ensure you can follow the steps in [How to develop an app that updates only through the app stores](#how-to-develop-an-app-that-updates-only-through-the-app-stores).
 
 ### Deactivating the feature
@@ -54,7 +54,6 @@ You can deactivate this technical preview only after you meet both of these cond
 1. You turned off the store-only updates **in all environments**. You can do this in the [Technical Preview settings](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features).
 
 These steps ensure that the deployment in LifeTime works correctly and that the apps continue working for your users.
-
 
 ## How LifeTime manages the configuration of mobile apps updates { #about }
 
@@ -81,7 +80,6 @@ When you create a new deployment plan in LifeTime, you can change the update pre
 
 ![Screenshot of the Distribution tab in a LifeTime deployment plan showing mobile application update preferences](images/distribution-tab-deployment-plan-lt.png "Distribution Tab in Deployment Plan")
 
-
 ## Configure a mobile app to update through the stores only { #set-store-only-updates}
 
 Edit the distribution settings in the deployment plan. In LifeTime, locate **Configure application settings** screen of the deployment configuration, and then click the **DISTRIBUTION** tab. Here are the instructions with more details.
@@ -100,14 +98,14 @@ To configure all environments for store-only updates, you need to configure the 
 
     <div class="warning" markdown="1">
 
-    To ensure the users receive automatic updates after you submit a new version to an app store, tag your app with a valid native build version number. See [Tag a version](<../../tag-a-version.md>) for more information on how to properly increment the app version. 
+    To ensure the users receive automatic updates after you submit a new version to an app store, tag your app with a valid native build version number. See [Tag a version](<../../tag-a-version.md>) for more information on how to properly increment the app version.
 
     </div>
 
 1. Click the **DEPLOY** button on the left side of your target environment.
 
     ![Screenshot highlighting the Deploy button on the Applications screen in LifeTime](images/applications-deploy-button-lt.png "Deploy Command in LifeTime")
- 
+
 1. If the deployment plan contains no apps, the **Choose one or more Applications** dialog opens. Select your app, click **Add to Deployment Plan** and close the dialog.
 
     ![Dialog window for adding an application to a deployment plan in LifeTime](images/add-app-to-deployment-plan-lt.png "Add App to Deployment Plan")
@@ -130,7 +128,6 @@ To configure all environments for store-only updates, you need to configure the 
 
     ![Screenshot showing the configuration of multiple apps for updates through the app stores only](images/configure-updates-distribution-app-store-only-multiple-lt.png "Configure Multiple Apps for Updates Through App Stores Only")
 
-
 1. Click **Deploy Now**, and then confirm the deployment plan. The deployment overview screen opens, showing the deployment running in the background. Once LifeTime finishes deploying your app to the target environment, a confirmation message shows.
 
 If your app is ready for distribution, generate the native build and submit the app to the app stores. See the **See Also** section in this document for further instructions.
@@ -141,7 +138,7 @@ Read this section for instructions on how to turn off the store-only updates and
 
 <div class="info" markdown="1">
 
-For more details about the steps, see the section about configuring the [store-only updates](#set-store-only-updates). 
+For more details about the steps, see the section about configuring the [store-only updates](#set-store-only-updates).
 
 </div>
 
@@ -167,7 +164,6 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
 
     ![Screenshot of the environment selection list in LifeTime app settings](images/app-settings-select-environment-lt.png "Environment Selection in LifeTime App Settings")
 
-
 1. Scroll down to the **Advanced** section and check the text next to **Native Mobile Application Updates**:
 
     * **Automatically pushed through your servers.** The app receives hybrid updates.
@@ -181,8 +177,8 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
 1. Before you change the app updates setting, define a minimum app version and generate the new version with Platform Server 11.10. You need to ensure that the **users have the version of the app that recognizes the new distribution configuration**. Check out the community-contributed plugins [App BuildInfo Plugin](https://www.outsystems.com/forge/component-overview/5580/app-buildinfo-plugin) and [Mobile Force Install Manager](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=3493) to assist you in meeting this requirement.
 
-1. Create logic that's resistant to breaking changes. Here are the two key guidelines. 
-    
+1. Create logic that's resistant to breaking changes. Here are the two key guidelines.
+
     * If you're changing the logic on the server side, **change the server logic without breaking the resulting API hash signatures**. Avoid changing elements like Server Action or Aggregates by adding or removing new parameters. Instead, create a new API version, and leave the old logic to work on the old app versions.
 
     * **Avoid removing the logic on the client side**; instead, add If nodes to prevent the new version from using the old logic. This makes the app logic more resilient to breaking changes.
@@ -203,7 +199,7 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
 1. Test your app extensively. With the store-only updates, your users may update the apps less frequently, and you need to ensure that the native shell, the client side, and the server side of your app work correctly for all existing and new users.
 
-1. Manually start the generation of a native mobile build in the target environment. In the current version of this technical preview, you need to start the build process manually. 
+1. Manually start the generation of a native mobile build in the target environment. In the current version of this technical preview, you need to start the build process manually.
 
 1. Submit the build to the app stores.
 

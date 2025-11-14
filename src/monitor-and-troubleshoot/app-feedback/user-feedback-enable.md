@@ -41,7 +41,6 @@ Use the App Feedback system app to configure the user feedback feature. You can 
 
 You can deactivate user feedback for an app the same way, this time turning the feedback switch off. Again. If you're deactivating user feedback for a **mobile app**, you must **regenerate the app to remove the feedback feature**.
 
-
 ## Restrict who can submit feedback
 
 When you enable user feedback for an app, by default all users can submit feedback. If you want to restrict the feedback to a specific group of users, select the name of the group in the drop-down list next to the feedback switch.

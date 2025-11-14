@@ -129,7 +129,7 @@ The automatic cleanup process of the running directory is performed periodically
 
 * On production environments (server mode = Production) it will clear any folder older than 24 hours
 
-The same service also deletes any compiled application files within `<platformserver>\repository\` that aren't being used by any application in that Front-End and that are older than 30 minutes.
+The same service also deletes, every 30 minutes, any compiled application files within `<platformserver>\repository\` that are older than 24 hours and are not in use by any application on that Front-End.
 
 If you have the need to tweak these values, you may reach out to OutSystems support for solutions on how to change the defaults.
 

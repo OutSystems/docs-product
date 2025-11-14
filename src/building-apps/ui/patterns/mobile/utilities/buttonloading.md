@@ -47,11 +47,11 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
-    
+
 1. From the Toolbox, drag the Button Loading widget into the Main Content area of your application's screen.
 
     In this example, we drag the widget onto a form that is already in the Main Content area.
@@ -64,13 +64,13 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
 
     ![Creating a new local Boolean variable named CreatingNewUser in Service Studio](images/buttonloading-variable-ss.png "Creating a New Local Variable")
 
-1. In this example, we also set the **ShowLabelOnLoading** property to **False**. 
+1. In this example, we also set the **ShowLabelOnLoading** property to **False**.
 
     This displays the loading spinner only (not the Button label) while the button logic is being executed.
 
     ![Setting the ShowLabelOnLoading property of the Button Loading widget to False in Service Studio](images/buttonloading-setprop-ss.png "Setting ShowLabelOnLoading Property")
 
-1. Double-click the **Button** widget and add the necessary logic. 
+1. Double-click the **Button** widget and add the necessary logic.
 
     In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **True**. (This is so the spinner shows the loading state.) The second Assign has the **CreatingNewUser** set       to **False**. (The logic is added between the two Assigns.)
 
@@ -78,7 +78,7 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
-### Result
+## Result
 
 ![Example of the Button Loading pattern result in an application](images/buttonloading-result-ss.png "Button Loading Pattern Result")
 
@@ -89,3 +89,7 @@ After following these steps and publishing the module, you can test the pattern 
 |IsLoading (Boolean): Mandatory| If True, the button shows the loading spinner. If False, the button doesn't show the loading spinner.|
 |ShowLabelOnLoading (Boolean): Optional | If True, the loading spinner displays beside the label. If False, only the loading spinner is displayed. This is the default.|
 |ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

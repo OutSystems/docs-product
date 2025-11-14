@@ -25,7 +25,7 @@ There are 3 rules you **must always** comply with in order to achieve a well-des
 
 ![Diagram illustrating the three main rules for application architecture compliance: no upward references, no side references, and no circular references.](images/validating-app-architecture-rules-diag.png "Application Architecture Compliance Rules Diagram")
 
-The compliance of the implemented modules with these architecture rules can be automatically verified using the [Discovery tool](http://www.outsystems.com/forge/component/409/discovery/). It analyzes the actual dependencies among modules, identifying violations and pinpointing the elements (actions, screens, entities) that are assembled in the wrong place. 
+The compliance of the implemented modules with these architecture rules can be automatically verified using the [Discovery tool](http://www.outsystems.com/forge/component/409/discovery/). It analyzes the actual dependencies among modules, identifying violations and pinpointing the elements (actions, screens, entities) that are assembled in the wrong place.
 
 ## Rule #1 - No upward references
 
@@ -102,4 +102,3 @@ If that merge results in a too large module, it may be necessary to create a thi
 ## More information
 
 To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](intro.md) guide.
-

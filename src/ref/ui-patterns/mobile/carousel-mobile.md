@@ -28,8 +28,8 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 |Event|Output|Description|
 |---|---|---|  
-|OnSlideMoved: Optional|ItemIndex (Integer)|Event triggered when the carousel slide moves.| 
-|Initialized: Optional|WidgetId (Text)|Event triggered when the Carousel is initialized.| 
+|OnSlideMoved: Optional|ItemIndex (Integer)|Event triggered when the carousel slide moves.|
+|Initialized: Optional|WidgetId (Text)|Event triggered when the Carousel is initialized.|
 
 ## Structure
 
@@ -52,23 +52,24 @@ The differences between the structure and the Carousel element that receives the
 </div>
 
 ## API
+
 If you are an advanced user, you might want to use the Carousel API (OutSystems.OSUI.Patterns.CarouselAPI) for more complex use cases.
 
 ### Methods
 
 |Function|Description|Parameters|
-|---|---|---| 
-|ChangeProperty|Changes the property of the Carousel.|<ul><li>carouselId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul>| 
-|Create|Creates the new Carousel instance and adds it to the CarouselsMap.|<ul><li>carouselId: string</li><li>configs: string</li><li>provider: string</li></ul>| 
-|Dispose|Destroys the instance of the given Carousel.|<ul><li>carouselId: string</li></ul>| 
-|GetAllCarouselItemsMap|Returns the Map with all the Carousel instances at the page.|<ul><li>Returns array of IDs</li></ul>| 
-|GetCarouselItemById|Gets the Carousel instance ID.|<ul><li>carouselId: string</li></ul>| 
-|Initialize|Initializes the pattern instance.|<ul><li>carouselId: string</li></ul>| 
-|GoTo|Goes to a specific page index.|<ul><li>carouselId: string</li><li>index: number</li></ul>| 
-|Next|Goes to the next page.|<ul><li>carouselId: string</li></ul>| 
-|Previous|Goes to the previous page|<ul><li>carouselId: string</li></ul>| 
-|ToggleDrag|Toggles the drag events on the Carousel.|<ul><li>carouselId: string</li><li>hasDrag: boolean</li></ul>| 
-|UpdateOnRender|Updates on DOM changes inside the Carousel.|<ul><li>carouselId: string</li></ul>|   
+|---|---|---|
+|ChangeProperty|Changes the property of the Carousel.|<ul><li>carouselId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul>|
+|Create|Creates the new Carousel instance and adds it to the CarouselsMap.|<ul><li>carouselId: string</li><li>configs: string</li><li>provider: string</li></ul>|
+|Dispose|Destroys the instance of the given Carousel.|<ul><li>carouselId: string</li></ul>|
+|GetAllCarouselItemsMap|Returns the Map with all the Carousel instances at the page.|<ul><li>Returns array of IDs</li></ul>|
+|GetCarouselItemById|Gets the Carousel instance ID.|<ul><li>carouselId: string</li></ul>|
+|Initialize|Initializes the pattern instance.|<ul><li>carouselId: string</li></ul>|
+|GoTo|Goes to a specific page index.|<ul><li>carouselId: string</li><li>index: number</li></ul>|
+|Next|Goes to the next page.|<ul><li>carouselId: string</li></ul>|
+|Previous|Goes to the previous page|<ul><li>carouselId: string</li></ul>|
+|ToggleDrag|Toggles the drag events on the Carousel.|<ul><li>carouselId: string</li><li>hasDrag: boolean</li></ul>|
+|UpdateOnRender|Updates on DOM changes inside the Carousel.|<ul><li>carouselId: string</li></ul>|
 
 ## Advanced use cases
 

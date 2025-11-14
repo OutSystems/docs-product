@@ -128,7 +128,7 @@ If you change the SSL Pinning resource file **pinning.json**, you need to manual
 
 Add the configuration file to the mobile app, so that the build service can bundle the configuration in the native app build.
 
-In Service Studio, complete the following steps in the mobile app: 
+In Service Studio, complete the following steps in the mobile app:
 
 1. Add a resource with the configuration file. Only use 1 JSON configuration file as a resource otherwise the pinning may not work as expected.
 
@@ -140,7 +140,7 @@ In Service Studio, complete the following steps in the mobile app:
 
 ### Implement additional verification of the server certificate
 
-To add the SSL Pinning verification, you must install the [SSL Pinning Plugin](https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin) from Forge in your environment. 
+To add the SSL Pinning verification, you must install the [SSL Pinning Plugin](https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin) from Forge in your environment.
 
   ![Screenshot of the SSL Pinning Plugin being added to a mobile app in Service Studio](images/sslplugin-1-ss.png "SSL Pinning Plugin in Service Studio")
 
@@ -148,7 +148,7 @@ In Service Studio, complete the following steps in your mobile app:
 
 1. Go to **Manage dependencies** (Ctrl+Q) and add the reference to SSLPinningPlugin.
 
-1. Drag the **RequireSSLPinning** block to one of your screens. SSL Pinning works for all HTTPS requests in the mobile app. 
+1. Drag the **RequireSSLPinning** block to one of your screens. SSL Pinning works for all HTTPS requests in the mobile app.
 
     You can add the block in the **Splash** screen.
 
@@ -156,7 +156,7 @@ In Service Studio, complete the following steps in your mobile app:
 
 Calls to server actions stop working if there's a hash mismatch. It's a good practice to check for hash validity. If there's a mismatch, inform users that they must get the new version of the app. Use the client action **CheckCertificateForUrl** to check if a hash from the configuration list is valid or not. If the check doesn't pass, display a notification informing the users to install a new version of the app.
 
-By default, the **CheckCertificateForUrl** action evaluates the current environment URL. Optionally, you can enter a value for the URL parameter. 
+By default, the **CheckCertificateForUrl** action evaluates the current environment URL. Optionally, you can enter a value for the URL parameter.
 
 The action returns the following two values:
 
@@ -172,7 +172,7 @@ To test the mobile app with SSL Pinning, do the following:
 
 1. Publish and generate the new version of your Mobile app with SSL Pinning.
 
-1. Install and run the app on your smartphone. 
+1. Install and run the app on your smartphone.
 
 1. Verify that the app works (it has the right certificate and hash keys).
 
@@ -240,7 +240,6 @@ If you want your mobile app to perform SSL Pinning validations while connecting 
 
     }
 
-
 1. Bundle the configuration file and implement the verification in your mobile app (as explained for a single server).
 
 ## Plan for the certificate renewal
@@ -251,6 +250,5 @@ If you're planning to update your certificate soon, release a new version of the
 
 When working with [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob), remember the following:
 
-* Blob works with apps generated for Android 7 and later if you use SSL Pinning 6.0.0 and later. 
+* Blob works with apps generated for Android 7 and later if you use SSL Pinning 6.0.0 and later.
 * Blob doesn't work in the Android apps with SSL Pinning 5.1.1 and earlier.
-    

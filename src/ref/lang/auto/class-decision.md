@@ -122,4 +122,3 @@ When you're editing your decision flow, all of the elements available in the sco
 </tr>
 </tbody>
 </table>
-

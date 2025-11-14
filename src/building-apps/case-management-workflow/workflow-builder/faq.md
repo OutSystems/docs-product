@@ -122,7 +122,7 @@ Users can unsubscribe from Workflow Builder, at any time, by creating a ticket i
 
 ### If an OutSystems Customer wants to prevent a developer from accessing Workflow Builder what should the user do?
 
-When a user is deactivated in LifeTime, it will stop having access to that infrastructure in Workflow Builder once that information is synchronized from LifeTime to Workflow Builder. The user will regain access to Workflow Builder if the LifeTime user is reactivated. 
+When a user is deactivated in LifeTime, it will stop having access to that infrastructure in Workflow Builder once that information is synchronized from LifeTime to Workflow Builder. The user will regain access to Workflow Builder if the LifeTime user is reactivated.
 In any case, unless the user requests to have its data erased from Workflow Builder, all of its  findings will continue to be identified associated with the user.
 
 ## Disclaimers

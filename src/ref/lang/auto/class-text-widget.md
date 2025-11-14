@@ -19,7 +19,6 @@ coverage-type:
 
 # Text Widget
 
-
 Encloses the text that you type in your screen or block.
 
 ## Properties
@@ -98,4 +97,3 @@ Encloses the text that you type in your screen or block.
 </tr>
 </tbody>
 </table>
-

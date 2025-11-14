@@ -74,7 +74,7 @@ Here are some examples of how to use File Plugin.
 
 ### Store some text in a file
 
-The **WriteFile** requires a binary input, so you need to convert the text to binary first. Use the **TextToBinaryData** (1) action from the **BinaryData** extension (you need to reference the **BinaryData** extension first). 
+The **WriteFile** requires a binary input, so you need to convert the text to binary first. Use the **TextToBinaryData** (1) action from the **BinaryData** extension (you need to reference the **BinaryData** extension first).
 
 You can then use the **WriteFile** action from **Logic** > **Client Actions** > **FilePlugin** to create a file and save text (2). Set the **PathDirectory** and relative path to the file, along with the **Binary Data** (3).
 

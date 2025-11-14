@@ -49,9 +49,9 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Section Index widget into the Main Content area of your application's screen.
@@ -62,23 +62,23 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
 1. In the Toolbox, search for and drag the Section widget onto the screen. Add as many sections as you require for your app.
 
-    In this example, we drag 4 Section widgets (to match the number of Section Index Items) onto the screen (Column2). Each section widget contains a **Title** and **Content** placeholder. 
+    In this example, we drag 4 Section widgets (to match the number of Section Index Items) onto the screen (Column2). Each section widget contains a **Title** and **Content** placeholder.
 
     ![Dragging Section widgets onto the screen to match the number of Section Index Items](images/sectionindex-section-ss.png "Adding Section Widgets to Screen")
 
 1. Add the relevant content to Section widget's **Title** and **Content** placeholders.
 
-    In this example, we add employee names to the **Title** placeholders, and Card Sectioned widgets with some text and images to the **Content** placeholder. 
+    In this example, we add employee names to the **Title** placeholders, and Card Sectioned widgets with some text and images to the **Content** placeholder.
 
     ![Adding employee names and Card Sectioned widgets to the Section widget's placeholders](images/sectionindex-card-ss.png "Adding Content to Section Widget")
 
 1. Enter a name for each of the Card Sectioned widgets.
-    
+
     This is so you can link them to each of the Section Index Items.
 
     ![Entering names for Card Sectioned widgets to link with Section Index Items](images/sectionindex-cardname-ss.png "Naming Card Sectioned Widgets")
-   
-1.  In the Toolbox, search for and drag the Text widget into the first Section Index Item and enter a title (in this example, the employee's name). 
+
+1. In the Toolbox, search for and drag the Text widget into the first Section Index Item and enter a title (in this example, the employee's name).
 
     ![Entering a title for the first Section Index Item in Service Studio](images/sectionindex-item-ss.png "Entering Section Index Item Title")
 
@@ -104,7 +104,6 @@ After following these steps and publishing the module, you can test the pattern 
 |IsFixed (Text): Optional | If True, the Section Index Pattern is always in the same position on the screen. This is the default.<br/>If False, the Section Index Pattern scrolls with the page content. The default value is False.|
 |ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-
 ### Section Index Item
 
 | **Property** | **Description** |
@@ -112,5 +111,6 @@ After following these steps and publishing the module, you can test the pattern 
 |ScrollToWidgetId (Text): Mandatory | The element the page navigates to.  |
 | ExtendedClass (Text): Optional|Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
+## Accessibility – WCAG 2.2 AA compliance
 
-
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

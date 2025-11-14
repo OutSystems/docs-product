@@ -23,7 +23,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 </div>
 
-Synchronization of data between the AI Mentor Studio LifeTime probe and the AI Mentor Studio SaaS occurs every 12 hours, but you may also request unscheduled synchronizations. 
+Synchronization of data between the AI Mentor Studio LifeTime probe and the AI Mentor Studio SaaS occurs every 12 hours, but you may also request unscheduled synchronizations.
 
 <div class="info" markdown="1">
 

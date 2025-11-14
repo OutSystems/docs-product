@@ -26,13 +26,13 @@ When you design a [Process](../intro.md) that stays idle for a long time, it may
 
   1. Process instances that stay active for a long time cause accumulation of information in the database.
 
-  2. During the deployment, the [impact analysis](../process-upgrade/intro.md) goes over all the information about active process instances, thus taking more time.
+  1. During the deployment, the [impact analysis](../process-upgrade/intro.md) goes over all the information about active process instances, thus taking more time.
 
 In this case, we recommend that you do the following:
 
   1. Analyze the process flow and identify points where the process stays idle for a long time.
   
-  2. Use the [Decision](<../../../ref/lang/auto/class-decision.md>) tool to control the process execution at these points:
+  1. Use the [Decision](<../../../ref/lang/auto/class-decision.md>) tool to control the process execution at these points:
 
       * **First Execution**: end the process, and save information for resuming it like, for example, the date and time for it to be resumed and information to know where to resume.
 
@@ -40,10 +40,9 @@ In this case, we recommend that you do the following:
 
 Set a way of launching the resuming processes using one of the following techniques:
 
-  * A Timer
-  * Another process
-  * An action on the screen
-
+* A Timer
+* Another process
+* An action on the screen
 
 ## Example
 
@@ -57,7 +56,7 @@ The process stays active and idle for 6 months in the **WaitForClaim** activity.
 
 1. The **PrepareTimeout** automatic activity is added to store all necessary information to resume the process.
 
-2. The **RedirectReport** decision is added to control the flow in the following way:
+1. The **RedirectReport** decision is added to control the flow in the following way:
 
     * **First Execution**: the path followed by the first execution of the process.
 
@@ -65,6 +64,6 @@ The process stays active and idle for 6 months in the **WaitForClaim** activity.
 
     * **Timeout**: the path followed by the resuming process if there are no claims while the process was stopped.
 
-3. This is an improvement to the process due to the fact that "Most of the times customers make a claim in the first 3 days after receiving the e-mail." This way, the process waits for 3 days (a short time) and if the customer makes a claim in the meanwhile, the process follows on normally without having to be stopped and resumed later on.
+1. This is an improvement to the process due to the fact that "Most of the times customers make a claim in the first 3 days after receiving the e-mail." This way, the process waits for 3 days (a short time) and if the customer makes a claim in the meanwhile, the process follows on normally without having to be stopped and resumed later on.
 
-4. Create and set the **ProcessWaitingReports** timer to launch the processes to resume stopped processes.
+1. Create and set the **ProcessWaitingReports** timer to launch the processes to resume stopped processes.

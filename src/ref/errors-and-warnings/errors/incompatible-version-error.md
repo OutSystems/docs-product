@@ -27,6 +27,6 @@ You are trying to publish your module in a Platform Server whose version is not 
 
 **Recommended action**
 
-Check with your Service Center administrator to determine which version is being used and to find out what needs to be upgraded. 
+Check with your Service Center administrator to determine which version is being used and to find out what needs to be upgraded.
 
 Also, check information about [OutSystems Product Releases](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/OutSystems_Release_Cycle).

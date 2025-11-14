@@ -19,7 +19,7 @@ coverage-type:
 
 # Inputs
 
-When designing your UI, OutSystems provides you with various different ways to allow users input information. 
+When designing your UI, OutSystems provides you with various different ways to allow users input information.
 
 ![Diagram illustrating different input options available in OutSystems for user interface design](images/inputs-diag.png "Input Options Diagram")
 

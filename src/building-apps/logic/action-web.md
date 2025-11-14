@@ -41,7 +41,6 @@ You don't have to explicitly invoke the **Preparation** action because it is aut
 
 You can also add a **Preparation** action to your Web Blocks.
 
-
 ## Screen Actions
 
 In a web screen to update a Contact, for example, you will need to define an action that reacts to the user interaction of clicking the "Save" button and execute the logic to update the Contact. In OutSystems web applications you do this in a **Screen Action**:
@@ -52,11 +51,10 @@ In a web screen to update a Contact, for example, you will need to define an act
 
 You can also add **Screen Actions** to your Web Blocks.
 
-
 ## Server Actions
 
 An application typically has its own business rules. In OutSystems you can create **Server Actions** to encapsulate the logic that implements the business rules of your application and use them in other actions, such as Preparation actions, Screen Actions or other **Server Actions**:
 
 ![Visual representation of a Server Action in OutSystems, used to encapsulate business logic for reuse in various parts of the application.](images/server-action-web.png "Server Action in OutSystems")
 
-You can set a **Server Action** as a function and use it directly in expressions. 
+You can set a **Server Action** as a function and use it directly in expressions.

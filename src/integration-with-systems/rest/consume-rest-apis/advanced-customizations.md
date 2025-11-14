@@ -67,4 +67,3 @@ Do the following:
 1. Use the referenced extension actions in the action flow to customize the request or response.
 
     ![Service Studio action flow with extension actions used to customize REST requests or responses](images/rest-use-extension-action-ss.png "Using Extension Actions in Service Studio")
-    

@@ -32,7 +32,7 @@ The `Database Upgrade` error is issued in the following situations:
     Attribute `<attribute>` was deleted or changed directly in the database and the entity definition does not match the table as defined in the database.
   
     Do one of the following:
-    
+
     * Delete the attribute from your entity definition.
     * Add the column to the database table as specified in your module.
 

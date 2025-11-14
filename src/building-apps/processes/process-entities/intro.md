@@ -44,7 +44,6 @@ When you **delete** a process, its process entity is automatically deleted.
 
 In a scenario of having millions of records in the process entity, consider using the best practice for [scaling queries over process entities](../best-practices/scale-queries.md).
 
-
 ## Using Process Entity References
 
 OutSystems provides you with mechanisms to reuse Process Entities among modules. When you expose your Process its Process Entity is automatically exposed or when you use a Process defined in another module its Process Entity can also be used.

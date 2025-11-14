@@ -48,9 +48,9 @@ You can use the Tabs UI Pattern to divide content into meaningful sections. This
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Tabs widget into the Main Content area of your application's screen.
@@ -59,7 +59,7 @@ You can use the Tabs UI Pattern to divide content into meaningful sections. This
 
     By default, the Tabs widget contains 3 Header Items (tab titles) and 3 Content Items (tab content). You can add or delete as many as required.
 
-1. Add the relevant content to the Header Item and Content Item placeholders, for example, forms, images, link, and text. 
+1. Add the relevant content to the Header Item and Content Item placeholders, for example, forms, images, link, and text.
 
     In this example, text is added.
 
@@ -93,6 +93,7 @@ The following CSS code is an example of how to change the style of selected item
     font-stretch: condensed;
 }
 ```
+
 ## Properties
 
 ### Tabs
@@ -108,13 +109,11 @@ The following CSS code is an example of how to change the style of selected item
 |OptionalConfigs.JustifyHeaders (Boolean): Optional| Set to True to evenly distribute the items in the space available. The default value is False.|
 |ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-
 ### Tabs Content Item
 
 | Property| Description|
 |---|---|
 | ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
-
 
 ### Tabs Header Item
 
@@ -132,9 +131,9 @@ To ensure predictable behavior and avoid runtime issues, the Tabs component is d
 
 ### Tabs
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|OnTabChange: Optional| Event triggered when switching Tabs. | 
+|OnTabChange: Optional| Event triggered when switching Tabs. |
 
 ## Device and pattern compatibility
 

@@ -42,9 +42,9 @@ The following use case adds the Navigation Bar UI Pattern to **one** screen. If 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Navigation Bar widget into the Main Content area of your application's screen.

@@ -20,7 +20,7 @@ coverage-type:
 
 Icons are small pictograms or symbols to help end users identify functionality or information on screens. OutSystems provides more than 600 Icons on a built-in collection of icons that can be used on the interface of applications.
 
-You can use Icons together with other patterns. For example, you can add an Icon as a button label. 
+You can use Icons together with other patterns. For example, you can add an Icon as a button label.
 
 Also, you can add actions to your icons, for example, you can add an Folder icon and associate an Onclick action, that with the right client action enables your users to navigate in your file system and select a file.
 
@@ -38,7 +38,7 @@ To use an icon in Reactive Web and Mobile:
 
 To use an icon in Traditional Web:
 
-1. In the Interface tab, go to Rich Widgets and drag an Icon block to the screen. 
-1. Expand the drop-down list in the Name property and select the icon to be displayed. 
+1. In the Interface tab, go to Rich Widgets and drag an Icon block to the screen.
+1. Expand the drop-down list in the Name property and select the icon to be displayed.
 
 ![Screenshot illustrating the process of adding an icon in Traditional Web applications using OutSystems](images/use-icons-web.png "Adding an Icon in Traditional Web")

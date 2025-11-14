@@ -23,7 +23,7 @@ coverage-type:
 
 If you store the app logs in the Database Server, you can use the [PlatformLogs extension](../../../../monitor-and-troubleshoot/logging/reference.md) to query data from the database. However, when you use the [logs separation feature](intro.md), the logs are no longer stored in the database, and you can’t use the PlatformLogs extension to access them. In that case, you must use the CentralizedPlatformLogs extension to retrieve the log data from an API.
 
-When querying data from the database, you build your queries based on the log properties, which match the names of the database table columns for each log type. Similarly, when requesting data from the API, you need to provide the input parameters to the extension server actions. 
+When querying data from the database, you build your queries based on the log properties, which match the names of the database table columns for each log type. Similarly, when requesting data from the API, you need to provide the input parameters to the extension server actions.
 
 ## Prerequisites
 
@@ -33,7 +33,6 @@ To use the CentralizedPlatformLogs extension, make sure you meet the following r
 * You use Platform Server version 11.23.0 or higher.
 * You use Service Studio version 11.54.0 or higher.
   
-
 ## Transition from using the PlatformLogs extension to the CentralizedPlatformLogs extension
 
 If you have apps using the [PlatformLogs extension](../../../../monitor-and-troubleshoot/logging/reference.md), and you activate the [logs separation feature](intro.md), you need to update your apps, migrating from the PlatformLogs extension to the CentralizedPlatformLogs extension:
@@ -107,7 +106,7 @@ Additionally, each action has also the parameters represented in the following t
 | Duration | Text | Integer |
 | Error_Id | Text | Text |
 | Espace_Id | Text | Integer |
-| Espace_Name | Text | Text | 
+| Espace_Name | Text | Text |
 | Executed_By | Text | Text |
 | Next_Run | Text | Date Time |
 | Request_Key | Text | Text |
@@ -188,7 +187,7 @@ Additionally, each action has also the parameters represented in the following t
 | Endpoint | Text | Text |
 | Error_Id | Text | Text |
 | Espace_Id | Text | Integer |
-| Espace_Name | Text | Text | 
+| Espace_Name | Text | Text |
 | Executed_by | Text | Text |
 | Id | Text | Text |
 | Is_Expose | Text | Boolean |
@@ -207,7 +206,7 @@ Additionally, each action has also the parameters represented in the following t
 | Endpoint | Text | Text |
 | Error_Id | Text | Text |
 | Espace_Id | Text | Integer |
-| Espace_Name | Text | Text | 
+| Espace_Name | Text | Text |
 | Executed_by | Text | Text |
 | Id | Text | Text |
 | Login_Id | Text | Text |
@@ -241,7 +240,7 @@ Additionally, each action has also the parameters represented in the following t
 | Client_IP | Text | Text |
 | Duration | Text | Integer |
 | Espace_Id | Text | Integer |
-| Espace_Name | Text | Text | 
+| Espace_Name | Text | Text |
 | Executed_by | Text | Text |
 | Request_Key | Text | Text |
 | Screen | Text | Text |

@@ -18,7 +18,6 @@ coverage-type:
 
 # Role Exception
 
-
 Role Exception is a custom exception created automatically by OutSystems from each role available in your module.
 
 The name of a Role Exception takes the following form:
@@ -55,4 +54,3 @@ Raise a Role Exception in your logic when a user without the appropriate role tr
 </tr>
 </tbody>
 </table>
-

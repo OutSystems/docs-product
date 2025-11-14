@@ -20,9 +20,9 @@ coverage-type:
 
 # Converting a Workflow Builder app to Service Studio
 
-If you want to evolve your app by adding features unavailable in Workflow Builder, you need to convert the app to Service Studio. 
+If you want to evolve your app by adding features unavailable in Workflow Builder, you need to convert the app to Service Studio.
 Once you convert your app to Service Studio, you can no longer use Workflow Builder to edit it.
- 
+
 To convert your app you must be a [**Workflow Builder administrator**](how-works.md#workflow-builder-administrator) and follow these steps:
 
 1. On the **My Apps** screen, click the three dots (**...**) in your app.

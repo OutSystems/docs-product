@@ -34,18 +34,17 @@ Espace name, application key, application name, username.
     _If it is_ — These attributes were added to log entities and you can now obtain their values from them.
 
     _If it's not_ — Do the following:
-    
+
     1. Create an entity to hold log information;
     1. Store the log information in the new entity;
     1. Create an aggregate joining the new entity with the entity containing the desired attribute, correlating records accordingly;
     1. Use the returned result set.
 
-
 ## Example use case
 
 To better understand the exact steps that should be taken to change an application making it compatible with the OutSystems 11 log model, let's go through a real world scenario.
 
-Consider AdoptionMonitor, an OutSystems component providing insights into a factory's application adoption statistics — who accessed what screen, when and how often — for a selected period of time, including trends over time. 
+Consider AdoptionMonitor, an OutSystems component providing insights into a factory's application adoption statistics — who accessed what screen, when and how often — for a selected period of time, including trends over time.
 
 To gather this statistical data, a cyclic job periodically performs the following:
 
@@ -76,4 +75,3 @@ To make the application valid again, the developers took the following steps:
 Note that, instead of having a server action to obtain the application identifier, the AdoptionMonitor application could have been changed to start using application keys throughout the application, dropping the need for knowning the application identifier value.  
 
 However, along with the database performance issues that we could have for using a GUID value (a string used as the application key) instead of a number (the data type of the application identifier), in this specific case the change would be so significant that it would imply changes all the way up to the application UI. As such, the number of changes was minimized by obtaining the application identifier through a server action.
-

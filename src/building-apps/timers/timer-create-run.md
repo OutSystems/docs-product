@@ -54,7 +54,6 @@ You can set the schedule of a Timer in one of the following ways:
 
 When you define a schedule for your Timer, the Timer will run at the predefined time.
 
-
 ## Force the Timer to run
 
 There are two ways of forcing a Timer to run without waiting for the scheduled time:
@@ -84,8 +83,6 @@ To use the `Wake<Timer Name>` built-in action in your logic, do the following:
     ![Screenshot illustrating how to use the WakeTimer built-in action in OutSystems](images/wake-timer-ss.png "Using the WakeTimer Built-in Action")
 
 1. Drag the `Wake<Timer Name>` action and use it in your logic.
-
-
 
 ### Run a Timer in Service Center
 

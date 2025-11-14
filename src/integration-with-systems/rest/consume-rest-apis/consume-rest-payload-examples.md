@@ -24,9 +24,9 @@ Service Studio uses the text you add in the **Request** field of the **Body** ta
 
 The format of the request example can be JSON, form URL Encoded, multipart/form-data, or text/plain. This article provides examples of each request format. For more information about consuming a single method API, see [Consume a single method of a REST API](consume-a-rest-api.md#single-method).
 
-![Screenshot showing examples of requests in Service Studio](images/request-examples-ss.png "Service Studio Request Examples") 
+![Screenshot showing examples of requests in Service Studio](images/request-examples-ss.png "Service Studio Request Examples")
 
-## JSON 
+## JSON
 
 If you use the JSON request format, you must insert a JSON payload. The following request payload example shows a JSON payload that represents a structure with the fields and values.
 
@@ -41,9 +41,9 @@ If you use the JSON request format, you must insert a JSON payload. The followin
 
 Using this payload, the system creates the following input parameter and the corresponding structure:
 
-![Image displaying the input parameters generated from a JSON payload in Service Studio](images/payload-input-parameters-ss.png "Payload Input Parameters in Service Studio") ![Image showing the structure created from a JSON payload in Service Studio](images/payload-structure-ss.png "Payload Structure in Service Studio") 
+![Image displaying the input parameters generated from a JSON payload in Service Studio](images/payload-input-parameters-ss.png "Payload Input Parameters in Service Studio") ![Image showing the structure created from a JSON payload in Service Studio](images/payload-structure-ss.png "Payload Structure in Service Studio")
 
-## Form URL Encoded 
+## Form URL Encoded
 
 If you use the Form URL Encoded format, the payload must be in a query string format with key-value pairs. Each key and value pair is separated by an equal sign ``(name=value)`` and every pair is separated by the ampersand sign ``(name1=value1&name2=value2)``.
 
@@ -56,13 +56,14 @@ The following request payload example contains three key-value pairs, ``name``, 
 name={name}&age={age}&email={email} 
 
 ```
+
 ![Screenshot of a form URL encoded sample payload in Service Studio](images/post-url-sample-ss.png "Form URL Encoded Sample in Service Studio")
 
 ## Multipart/form-data
 
 To create a valid request with different parts, the following rules must be adhered to:
 
-* Each part of the payload must be separated by a boundary. A boundary is a string that defines the start and end of each part. 
+* Each part of the payload must be separated by a boundary. A boundary is a string that defines the start and end of each part.
 
 * Each part of the payload must include its own **Content-Disposition** header. The header  specifies the name of the part and its type.
 
@@ -96,7 +97,7 @@ In this example, there are two parts - the first part is a JSON payload and the 
 
 Using this payload example, the system can infer the data structures involved. The metadata input parameter with two fields **Name** and **Created_at** and a second input parameter document of type **Binary Data**.
 
-![Image illustrating the input parameters for multipart/form-data in Service Studio](images/metadata-inputs-ss.png "Multipart Form Data Inputs in Service Studio") 
+![Image illustrating the input parameters for multipart/form-data in Service Studio](images/metadata-inputs-ss.png "Multipart Form Data Inputs in Service Studio")
 
 For more information about multipart/form-data structure, see the [standard specifications (RFC 2388)](https://www.ietf.org/rfc/rfc2388.txt).
 
@@ -104,7 +105,7 @@ For more information about multipart/form-data structure, see the [standard spec
 
 When systems can’t recognize the payload request format, text/plain request is the default option used.
 
-In the following payload request example, the payload is simply the string "Hello World!" encoded as text/plain. 
+In the following payload request example, the payload is simply the string "Hello World!" encoded as text/plain.
 
 **Hello World!**
 

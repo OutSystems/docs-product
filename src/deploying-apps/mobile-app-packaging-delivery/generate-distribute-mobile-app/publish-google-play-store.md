@@ -61,7 +61,7 @@ To generate an Android build in the Service Studio, perform the following steps:
 
 1. Click **Generate Android app**.
 
-    ![Screenshot of the Service Studio interface for configuring Android app settings including Build type, App identifier, and Keystore information](images/ss-native_platforms-configure-android-app.png "Configure Android App Settings in Service Studio")    
+    ![Screenshot of the Service Studio interface for configuring Android app settings including Build type, App identifier, and Keystore information](images/ss-native_platforms-configure-android-app.png "Configure Android App Settings in Service Studio")
 
 #### Service Center
 
@@ -103,7 +103,7 @@ After the generation has been completed, scan the QR code or copy the created in
 
 You need now to access the [Google Play Console](https://play.google.com/apps/publish) to upload your mobile app.
 
-You have to provide the following information: 
+You have to provide the following information:
 
 * To create the application:
     * The name
@@ -127,7 +127,7 @@ You have to provide the following information:
     * By default, OutSystems apps collect the following data:
 
         | Category | Data Type | Description |
-        |---|---|---| 
+        |---|---|---|
         | App info and performance | Crash logs | Crash logs are collected in the Service center for troubleshoot purposes|
         | Device or other IDs | Device or other IDs | We’re using the DeviceUUID which is solely respective to the current application installation and we're collecting it for troubleshoot purposes |
 

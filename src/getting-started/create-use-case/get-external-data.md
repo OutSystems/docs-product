@@ -28,7 +28,7 @@ Only applies to Windows-only Service Studio.
 
 </div>
 
-OutSystems provides a number of ways to access external data and use it in your apps. It provides native support for integrations with standard databases and systems of record (SoRs). You can also import data from Excel. 
+OutSystems provides a number of ways to access external data and use it in your apps. It provides native support for integrations with standard databases and systems of record (SoRs). You can also import data from Excel.
 
 Connecting to an external database or System of Record (SoR) allows you to leverage your investment in existing systems and to avoid data migration.
 
@@ -42,13 +42,13 @@ See [Integrate with an External Database](../../integration-with-systems/externa
 
 ## Connect to an external system of record (SoR)
 
-OutSystems allows you to connect your apps to external SoRs, such as SAP ODATA, Salesforce, SharePoint Online, Microsoft Dataverse, and Microsoft Dynamics 365.  An OutSystems tool called Integration Builder walks you through the process of securely connecting apps to external SoRs. Integration Builder also simplifies the process of calling an external system by handling the authentication flow, encoding, and parsing. 
+OutSystems allows you to connect your apps to external SoRs, such as SAP ODATA, Salesforce, SharePoint Online, Microsoft Dataverse, and Microsoft Dynamics 365.  An OutSystems tool called Integration Builder walks you through the process of securely connecting apps to external SoRs. Integration Builder also simplifies the process of calling an external system by handling the authentication flow, encoding, and parsing.
 
-See [How to use Integration Builder ](../../integration-with-systems/integration-builder/use.md) for detailed steps.
+See [How to use Integration Builder](../../integration-with-systems/integration-builder/use.md) for detailed steps.
 
 ## Import data from Excel
 
-You can import data from an Excel file, which allows you to import both an entity structure and the data to populate that structure. For example, if you have a product name column in your spreadsheet, product name becomes an entity in OutSystems, and the data in that column (the product names themselves) become the data associated with that entity. When developing an app, importing sample data from Excel allows you to test your app's behavior with data similar to what you expect in production. 
+You can import data from an Excel file, which allows you to import both an entity structure and the data to populate that structure. For example, if you have a product name column in your spreadsheet, product name becomes an entity in OutSystems, and the data in that column (the product names themselves) become the data associated with that entity. When developing an app, importing sample data from Excel allows you to test your app's behavior with data similar to what you expect in production.
 
 See [Bootstrap an entity using an Excel file](../../building-apps/data/excel-bootstrap.md) for detailed steps.
 
@@ -59,4 +59,3 @@ You can also build custom integrations using REST or SOAP webservices, or use co
 ## Next step
 
 Now that you have your data available in your app, use your data in the screens of the app. Check [this article to learn how to use your data in the UI of your app](replace-data-sauce.md)
-

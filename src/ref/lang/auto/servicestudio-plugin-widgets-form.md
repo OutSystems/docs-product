@@ -158,4 +158,3 @@ All enabled inputs inside the form will have the following behaviors:
 </tr>
 </tbody>
 </table>
-

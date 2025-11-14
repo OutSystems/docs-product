@@ -27,7 +27,6 @@ The only action available for the Static Entities is the **Get&lt;StaticEntity&g
 
 When modeling your data, keep in mind that Static Entities can only contain foreign keys of other Static Entities. For more information check out [Entity Relationships](relationship/intro.md).
 
-
 ## Create a Static Entity
 
 To add a Static Entity to your app, do the following in Service Studio:
@@ -60,17 +59,17 @@ Service Studio creates the following Attributes automatically:
 
 <div class="info" markdown="1">
 
-  If your static entity is public, you won't be able to use it as an Aggregate Source from the Library module. 
+  If your static entity is public, you won't be able to use it as an Aggregate Source from the Library module.
 
 </div>
 
 ## Convert Static Entity to Entity
 
-You can convert existing Static Entities to Entities. To convert a Static Entity to Entity, right-click on the Static Entity, navigate to the **Advanced** help menu and then select **Convert to Entity**. 
+You can convert existing Static Entities to Entities. To convert a Static Entity to Entity, right-click on the Static Entity, navigate to the **Advanced** help menu and then select **Convert to Entity**.
 
 After converting a Static Entity to an Entity:
 
-* The records from the Static Entity become available through database queries, via Aggregate or SQL Query 
+* The records from the Static Entity become available through database queries, via Aggregate or SQL Query
 * The **Records** folder is no longer available in Service Studio
 
 Note that it's also possible to convert an Entity to Static Entity.

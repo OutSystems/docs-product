@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article explains how to refactor an O11 Application Theme dependency to be compatible with OutSystems Developer Cloud (ODC).
 locale: en-us
 guid: a0d20758-4f63-49b9-9185-7c09bb5e27ed
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7993
 helpids: 30534
-tags: theme customization, odc libraries, migration strategies, app development best practices, architecture mapping
+tags: theme customization, odc libraries, conversion strategies, app development best practices, architecture mapping
 audience:
   - frontend developers
   - full stack developers
@@ -20,12 +20,11 @@ coverage-type:
 
 # Asset consuming an Application Theme
 
-A dependency to a Theme is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.
-This means that the Theme must either be part of the consumer ODC asset, or the Theme must be shared by an ODC Library.
+A dependency to a Theme is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies. This means that the Theme must either be part of the consumer ODC asset, or the Theme must be shared by an ODC Library.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

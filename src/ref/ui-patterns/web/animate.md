@@ -30,7 +30,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .animate-wrapper | .is--visible |  When the animation will enter in the screen  |
 | .animate-wrapper | .is--hidden |  When the animation will leave in the screen |
 | .animate | .enter-bottom |  When the animation will enter in the screen from bottom |

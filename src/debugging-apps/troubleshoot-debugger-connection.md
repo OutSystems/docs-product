@@ -67,7 +67,7 @@ For the device to be detected by Service Studio, you should start by having the 
 
     ![Screenshot showing how to enable USB Debugging in the Developer options of an Android device settings](images/device-usb-debugging.png "USB Debugging Option in Android Device Settings")
 
-    *Note:* If you don't have the **Developer options** section in **Settings**, check how to [enable **Developer options**](<https://developer.android.com/studio/debug/dev-options.html#enable>) on your device.
+    _Note:_ If you don't have the **Developer options** section in **Settings**, check how to [enable **Developer options**](<https://developer.android.com/studio/debug/dev-options.html#enable>) on your device.
 
 ### Device not recognized by Windows { #device-not-recognized-by-windows }
 
@@ -150,7 +150,7 @@ If you get a pop-up on your device like the one below, just tap **OK** and try a
 
 ### More than one Android device is connected to your PC { #more-than-one-android-device-is-connected-to-your-pc }
 
-Only one device from each platform (Android/iOS) can be connected to the PC for the device discovery process to run successfully. 
+Only one device from each platform (Android/iOS) can be connected to the PC for the device discovery process to run successfully.
 
 Ensure that you only have one Android device connected to your PC.
 
@@ -179,7 +179,7 @@ For checking network requests in iOS apps built with MABS 6.0 and later, use the
 
 </div>
 
-To ensure that your device is correctly detected you should make sure that the Web Inspector is enabled. 
+To ensure that your device is correctly detected you should make sure that the Web Inspector is enabled.
 
 Do the following:
 
@@ -202,7 +202,6 @@ Check [Apple Support](<https://support.apple.com/en-us/HT202778>) for more infor
 You can only connect one device from each platform (Android/iOS) to the PC for the device discovery process to run successfully.
 
 Ensure that you only have one iOS device connected to your PC.
-
 
 ## Issues During App Detection by Service Studio
 

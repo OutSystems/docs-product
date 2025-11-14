@@ -7,8 +7,14 @@ platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=304:0
 coverage-type:
   - apply
+tags: outsystems cloud, database access, direct access, temporary user, permanent user
+audience:
+  - platform administrators
+  - infrastructure managers
+  - backend developers
+outsystems-tools:
+  - lifetime
 ---
-
 # Access the database of your OutSystems Cloud
 
 This topic details how you request direct access to the OutSystems Cloud databases of your subscription using OutSystems 11.
@@ -32,7 +38,7 @@ You can then use tools such as SQL Server Management Studio or Oracle SQL Develo
 
 <div class="info" markdown="1">
 
-The direct database access user does not have backup privileges. 
+The direct database access user does not have backup privileges.
 
 </div>
 
@@ -164,7 +170,7 @@ Following up on your support case, OutSystems:
 
 Depending on your database management system, check below the permissions granted for **read-only** or **read and write** set of credentials.
 
-### Read-only credentials { #read }
+### Read-only credentials {#read}
 
 For SQL Server:
 
@@ -180,7 +186,7 @@ For Oracle:
 
 All database tables and views include all OutSystems tables (both metamodel tables and application tables), and the database management system tables.
 
-### Read and write credentials { #read-write }
+### Read and write credentials {#read-write}
 
 Read and write database credentials grant all the permissions of read-only and add the below credentials.
 

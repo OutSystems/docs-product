@@ -60,6 +60,6 @@ To help with that task, we will create a template to be the base of all planned 
 
     ![Screenshot of the OutSystems development environment showing the properties of the Template_BrandTwee module with fields for Name, Description, and Icon.](images/Create_a_Template_for_an_Application_-_template.png "OutSystems Template Module Properties")
 
-1. Now we can develop what you want to provide with this template, such as the form screens, its validations, and adjust the base theme to follow the company's brand image. 
+1. Now we can develop what you want to provide with this template, such as the form screens, its validations, and adjust the base theme to follow the company's brand image.
 
 1. Publish. Once published, it becomes available in the templates list when we create a new application.

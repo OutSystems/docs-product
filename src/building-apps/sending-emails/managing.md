@@ -32,7 +32,7 @@ Before following the guides in this article, make sure you meet the [prerequisit
 ## Creating a new Email
 
 To create a new Email in Service Studio, follow these steps:
- 
+
 1. Go to **Interface** > **UI Flows** and do one of the following:
 
     * In you're adding the first email in the module, right-click any UI Flow and select **Add Email**.
@@ -62,7 +62,7 @@ To create a new Email in Service Studio, follow these steps:
 To add content to your emails, follow these steps in Service Studio:
 
 1. Go to **Interface** > **UI Flows** > **your Emails UI Flow** and double-click the Email you want to edit. The Email opens for editing. The widget list shows the widgets that Emails currently support.
-    
+
     ![Service Studio interface showing an Email open for editing with a list of supported widgets](images/edit-email-open-ss.png "Email for Editing")
 
     <div class="info" markdown="1">
@@ -77,7 +77,7 @@ To add content to your emails, follow these steps in Service Studio:
 
     <div class="info" markdown="1">
 
-    To learn more about what elements you can use in Emails, see [Widgets available in Emails](widgets.md#widgets-available-in-emails). 
+    To learn more about what elements you can use in Emails, see [Widgets available in Emails](widgets.md#widgets-available-in-emails).
 
     </div>
 
@@ -111,9 +111,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
     ![Preview of an Email in Service Studio showing a personalized greeting using an Expression widget](images/expression-preview-ss.png "Email Preview")
 
-
 When you open this email in the email client, the expression displays "Hello, John!" when the value of **Handle** is `"John"`.
-
 
 <div class="warning" markdown="1">
 
@@ -125,8 +123,7 @@ When you open this email in the email client, the expression displays "Hello, Jo
 
 If the content of an email is too big, some email readers clip the content. For example, Gmail shows **[Message clipped] View entire message** for all emails larger than 102KB. This can happen if you're generating content in your emails with a Theme that has a lot of CSS not designed for emails.
 
-To reduce the size of the email content, use a blank Theme or a dedicated email Theme. When you add email based on one of the email templates, Service Studio applies an email theme automatically for you. You can also [create UI Flow without styles](../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) and then add your emails under this UI Flow. 
-
+To reduce the size of the email content, use a blank Theme or a dedicated email Theme. When you add email based on one of the email templates, Service Studio applies an email theme automatically for you. You can also [create UI Flow without styles](../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) and then add your emails under this UI Flow.
 
 ## Email templates
 
@@ -139,5 +136,3 @@ You can get email templates from Forge. Go to [OutSystems Email Templates](https
 **Create your templates**
 
 You can also create your email templates by following the instructions for [creating screen templates](../ui/screen-templates/intro.md). The process and user experience for creating email templates is similar to creating screen templates. Due to the intended use, email templates, just like emails, don't support logic or non-email themes.
-
-

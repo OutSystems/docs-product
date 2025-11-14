@@ -28,8 +28,6 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 This example shows you how to add styles to elements in the Pattern:
 
-    
-    
     .stackedcards-bottom, .stackedcards-top, .stackedcards-none {
          border-bottom: 1px solid #ebebeb; // Add a border-bottom to all elements
         background-color: #000; // Set a background-color to all elements
@@ -40,8 +38,6 @@ This example shows you how to add styles to elements in the Pattern:
 
 To set the full height of your elements in the Pattern, so that they fill the entire screen, use this CSS code:
 
-    
-    
     .stackedcards-container,
     .stackedcards {
         height: 100vh;
@@ -53,8 +49,6 @@ To set the full height of your elements in the Pattern, so that they fill the en
 
 The height of the first element defines the height of each element in the Pattern. To set a specific height, use the following CSS code:
 
-    
-    
     .stackedcards-container {
         height: 500px; // set your height
     }
@@ -72,8 +66,6 @@ The overlays are enabled by default and have default colors in the Pattern. If y
 
 You can set other colors either by adding a container to **OverlayTop** , **OverlayRight** or **OverlayLeft** , and set your class. Or by using the following CSS code:
 
-    
-    
     .stackedcards-overlay.top {
          background-color: #2980b9; //set your background-color
     }
@@ -96,12 +88,12 @@ Create an “OnListRemove” action and drag the ListRemoveNode and the UpdateSt
 
 ## Events
 
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
-OnItemChange  |  Return the active card's position.  |  False  
-OnLeftSwipe  |  Triggered when swiping left.  |  False
-OnRightSwipe  |  Triggered when swiping right.  |  False  
-OnTopSwipe  |  Triggered when swiping top.  |  False  
+| **Event Name** |  **Description** |  **Mandatory** |
+| ---|---|--- |
+| OnItemChange  |  Return the active card's position.  |  False |
+| OnLeftSwipe  |  Triggered when swiping left.  |  False |
+| OnRightSwipe  |  Triggered when swiping right.  |  False |
+| OnTopSwipe  |  Triggered when swiping top.  |  False |
   
 ## Layout
 
@@ -109,10 +101,10 @@ OnTopSwipe  |  Triggered when swiping top.  |  False
 
 ## CSS Selectors
 
-**Element** |  **CSS Class** |  **Description**  
----|---|---  
-Stacked Cards Wrapper  |  .stackedcards  |  Container that wraps all Stacked cards elements.  
-Selected Active Element  |  .stackedcards-active  |  Represents the currently active element.  
-Overlay Top  |  .stackedcards-overlay top  |  Represents the overlay top with the content placed.  
-Overlay Right  |  .stackedcards-overlay right  |  Represents the overlay right with the content placed.  
-Overlay Left  |  .stackedcards-overlay left  |  Represents the overlay left with the content placed.  
+| **Element** |  **CSS Class** |  **Description** |
+| ---|---|--- |
+| Stacked Cards Wrapper  |  .stackedcards  |  Container that wraps all Stacked cards elements. |
+| Selected Active Element  |  .stackedcards-active  |  Represents the currently active element. |
+| Overlay Top  |  .stackedcards-overlay top  |  Represents the overlay top with the content placed. |
+| Overlay Right  |  .stackedcards-overlay right  |  Represents the overlay right with the content placed. |
+| Overlay Left  |  .stackedcards-overlay left  |  Represents the overlay left with the content placed. |

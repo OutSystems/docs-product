@@ -20,7 +20,7 @@ topic:
 
 # Replace data in screens
 
-Once you’ve built an app that contains screen templates or accelerators, you may want to replace the data in your screens with your own data. Data can be replaced [manually](#replace-data-manually) or [automatically](#replace-data-automatically). 
+Once you’ve built an app that contains screen templates or accelerators, you may want to replace the data in your screens with your own data. Data can be replaced [manually](#replace-data-manually) or [automatically](#replace-data-automatically).
 
 ## Replace data automatically
 
@@ -36,9 +36,9 @@ Automatic replacement works in Form, Table, List, and Gallery widgets. You can a
 
 1. Verify that the widget labels correspond to the data and edit the labels or expressions if necessary.
 
-    For example, when using the Table widget, check that the information of each Header Cell corresponds to the information displayed in the related cell. 
+    For example, when using the Table widget, check that the information of each Header Cell corresponds to the information displayed in the related cell.
 
-1. Check any logic associated with the widget, for example, a dropdown filter in a Table, and replace the data (List property) manually. 
+1. Check any logic associated with the widget, for example, a dropdown filter in a Table, and replace the data (List property) manually.
 
 1. Check the **TrueChange** tab for errors and warnings and fix them.
 
@@ -46,9 +46,9 @@ When replacing data inside a **Mobile App** screen that has been created from a 
 
 ## Replace data manually
 
-Manually replacing data allows you to have full control over the changes you make on the screen. To replace data, follow these steps: 
+Manually replacing data allows you to have full control over the changes you make on the screen. To replace data, follow these steps:
 
-1. Compare the screen with your data model and remove the UI elements you don't need. 
+1. Compare the screen with your data model and remove the UI elements you don't need.
 
     Removing these UI elements reduces the number of warnings and errors in the later steps.
 

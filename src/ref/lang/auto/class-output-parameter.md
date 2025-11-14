@@ -21,7 +21,6 @@ topic:
 
 # Output Parameter
 
-
 An Output Parameter allows you to return computed values from an action, process, or process flow element.
 
 In the following example, the `GetWeatherData` Client Action has two Input Parameters (`City` and `Country`) and one Output Parameter (`WeatherInfo`):
@@ -121,4 +120,3 @@ Check their reference topics for more information.
 </tr>
 </tbody>
 </table>
-

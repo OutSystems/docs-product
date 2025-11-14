@@ -57,25 +57,23 @@ You need to implement a mechanism, either automatic or manual, to resolve the de
 
 Download the [sample module for the Read/Write Data with Conflict Detection pattern](http://www.outsystems.com/forge/component/1638/Offline+Data+Sync+Patterns/), that uses companies as an example of data to synchronize. The following sections provide detailed descriptions of the data model and logic used in the sample module.
 
-
 ## Data Model
 
 This sample defines a database entity `Company` and its local storage counterpart `LocalCompany` . Additionally, the `LocalCompany` entity defines three metadata attributes to keep track of the synchronization status of the records, the `SyncProperties` local storage entity keeps the date and time of the last synchronization, and the `ConflictingCompany` local storage entity holds the conflicting records.
 
 ![Diagram illustrating the data model for the Read/Write Data with Conflict Detection pattern](images/read-write-data-with-conflict-detection-data-model.png "Data Model Diagram")
 
-1. Tracks changed records by storing the timestamp when the record was last updated or created. 
-1. Tracks deleted records. 
-1. Metadata attributes that track the synchronization status of the records. 
-1. Holds conflicting records. 
-1. Timestamp of the last synchronization. Note that this timestamp is established by the server to avoid problems due to clock differences between client and server. 
+1. Tracks changed records by storing the timestamp when the record was last updated or created.
+1. Tracks deleted records.
+1. Metadata attributes that track the synchronization status of the records.
+1. Holds conflicting records.
+1. Timestamp of the last synchronization. Note that this timestamp is established by the server to avoid problems due to clock differences between client and server.
 
 The application logic must update the metadata attributes `IsFromServer`, `IsModified` and `IsActive` of the local entity according to the following:
 
 * `IsFromServer`: If True, the record exists on the server.
 * `IsModified`: If True, the record has been modified locally.
 * `IsActive`: If False, the record was deleted locally but may not yet have been removed from the server.
-
 
 ## OfflineDataSync Logic
 
@@ -113,7 +111,6 @@ The following is a description of the logic of the `OfflineDataSync` client acti
 1. Recreates the Company records in the local storage and adds the records with conflicts returned by the server to the entity `ConflictingCompany`.
 
 1. Updates the entity attribute `SyncProperties.LastSync` with the timestamp of this synchronization returned by the server.
-
 
 ## ServerDataSync Logic
 

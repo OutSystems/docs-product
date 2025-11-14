@@ -26,6 +26,7 @@ This article describes the generic configuration points to integrate with other 
 The external IdP must implement the [OpenID Connect Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html). This enables the retrieval of configuration information from a well-known location as a JSON document (also known as a well-known URI).
 
 The external IdP must support the following scopes:
+
 * email
 * openid
 * profile
@@ -34,8 +35,7 @@ You must configure the authorization and refresh tokens in the external IdP. By 
 
 The redirect URIs configuration is split into Web Applications (Consoles) and Native Application (Development Tools), but depending on the external provider, the redirects configuration can be configured together, like on Microsoft Entra, or separately, like on Okta.
 
-
-##  Integrating with OutSystems Consoles
+## Integrating with OutSystems Consoles
 
 To integrate with OutSystems Consoles, follow these steps:
 
@@ -67,13 +67,12 @@ To integrate OutSystems Development Tools, follow these steps:
 
     * ``https://workflowbuilder.outsystems.com/Authentication/OIDC_Callback``
 
-    * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback`` 
+    * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
 
     * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
 
     * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager’s URI:
-        *   ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
-
+        * ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
 
 1. **Sign-out redirect URIs**:
 
@@ -84,4 +83,3 @@ To integrate OutSystems Development Tools, follow these steps:
     * ``servicestudiox11://auth``
 
     * ``https://www.outsystems.com``
-

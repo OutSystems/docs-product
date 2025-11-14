@@ -37,7 +37,7 @@ Then, for each step inside the test scenario, use a **BDDStep** web block by dra
 
 The **FinalResult** gives you stats about all the scenarios run on the web screen and should always be included at the end to count successful or failed tests, for example.
 
-The **SetupOrTeardownStep** can be included before or after the actual test logic in scenarios to perform setup/cleanup operations outside the scope of the scenario from a functional or business perspective. For instance, it can delete test data that was generated during the test. 
+The **SetupOrTeardownStep** can be included before or after the actual test logic in scenarios to perform setup/cleanup operations outside the scope of the scenario from a functional or business perspective. For instance, it can delete test data that was generated during the test.
 
 ## Component Test Architecture
 
@@ -64,7 +64,7 @@ Complying to these rules ensures that the developed tests do not introduce any u
 
 ![Diagram showing the allowed dependencies between a test application and OutSystems applications.](images/component-test-code-isolation-2.png "Test Application Dependencies")
 
-### Reusability 
+### Reusability
 
 As you start implementing more tests, it's likely that you'll start to identify common patterns among different tests inside your test application. For example, you might realize that you are creating the same record in the setup step for three different scenarios. As you identify these common patterns, you should extract them and put them into a reusable pattern defined in a SharedTestPatterns module and import it into each of your tests.
 

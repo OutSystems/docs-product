@@ -20,7 +20,7 @@ coverage-type:
 
 # Single Sign-On
 
-By default, OutSystems provides single sign-on capabilities for apps that have cookies enabled. After users are authenticated in one application, they can access all other applications without having to log in again. 
+By default, OutSystems provides single sign-on capabilities for apps that have cookies enabled. After users are authenticated in one application, they can access all other applications without having to log in again.
 
 **Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/).
 

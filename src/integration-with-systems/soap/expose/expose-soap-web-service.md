@@ -21,21 +21,21 @@ To expose a SOAP Web Service, do the following:
 
 1. In the **Logic** tab, open the **Integrations** folder.
 
-1. Right-click the SOAP element and select **Expose SOAP Web Service**. 
+1. Right-click the SOAP element and select **Expose SOAP Web Service**.
 
-    ![Screenshot showing the option to expose a SOAP Web Service in the Integrations folder](images/soap-expose-add-web-service.png "Expose SOAP Web Service") 
+    ![Screenshot showing the option to expose a SOAP Web Service in the Integrations folder](images/soap-expose-add-web-service.png "Expose SOAP Web Service")
 
-1. Set the name of your SOAP Web Service and the remaining properties. 
+1. Set the name of your SOAP Web Service and the remaining properties.
 
-1. If you want to set a specific namespace for your SOAP Web Service, set it in the "Web Services Namespace" property of the module. 
+1. If you want to set a specific namespace for your SOAP Web Service, set it in the "Web Services Namespace" property of the module.
 
-1. Right-click your new SOAP Web Service and select **Add Web Service Method**. 
+1. Right-click your new SOAP Web Service and select **Add Web Service Method**.
 
     ![Screenshot demonstrating how to add a new Web Service Method to a SOAP Web Service](images/soap-add-method-ss.png "Add Web Service Method")
 
-1. Set the name of your method. 
+1. Set the name of your method.
 
-1. Design the logic of your Web Service Method. 
+1. Design the logic of your Web Service Method.
 
 When you publish your module, the following happens:
 

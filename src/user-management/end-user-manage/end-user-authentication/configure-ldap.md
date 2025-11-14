@@ -100,7 +100,6 @@ To configure OutSystems end user authentication with standard LDAP (that is, LDA
 
     **Note:** Some LDAP servers, especially non-AD ones, only allow you to login with the **LDAP Distinguished Name (DN)** of the user. Using a search filter allows the platform to take an OutSystems username and search for its distinguished name in the LDAP server before attempting to log in the user.
 
-
 1. Test your configurations by entering your credentials in the respective fields for testing:
 
 ![Screenshot showing fields to test LDAP configuration with user credentials](images/users-auth-test-configuration.png "Test LDAP Configuration")
@@ -150,7 +149,7 @@ If you're using a computer that's **part of the Active Directory domain** used f
     These are addresses for Active Directory domain controllers. Choose one of the server addresses to include in the **LDAP URL** field.  
     For more information check [How to verify that SRV DNS records have been created for a domain controller](<https://support.microsoft.com/en-us/help/816587/how-to-verify-that-srv-dns-records-have-been-created-for-a-domain-cont>) in Microsoft's documentation.
 
-    _Tip:_ If you get more than one address, check with your network administrator which is the most appropriate one. 
+    _Tip:_ If you get more than one address, check with your network administrator which is the most appropriate one.
 
     **B)** Alternatively, open a command-line console and run the following command, replacing `DOMAINNAME.mycompany.com` with your own domain name:
 

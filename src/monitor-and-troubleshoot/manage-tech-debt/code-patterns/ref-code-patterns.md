@@ -30,7 +30,7 @@ Architecture Dashboard is now AI Mentor Studio.
 </div>
 
 This topic includes the list of code patterns analyzed by the current version of AI Mentor Studio.
-The patterns that only apply to a subset of the type of apps, include that information. 
+The patterns that only apply to a subset of the type of apps, include that information.
 
 ## Architecture
 
@@ -77,7 +77,7 @@ Core module providing services to Foundation modules.
 **Impact**  
 
 Foundation modules are not supposed to consume services from a core module. They need to be fully isolated with no business logic or reference to a business module. Otherwise, consuming a foundation might bring unexpected impacts.
-    
+
 **How to fix**  
 
 To get more details on each finding, select "Consumed elements". If a consumed element isn't business logic, move the element to a Foundation module. If a consumed element is business logic, reevaluate if you should move the logic in the Foundation module that is consuming the element to another module.
@@ -271,7 +271,6 @@ To promote team autonomy, OutSystems recommends you use loose coupling to consum
 If loose coupling isn’t an option, check the nature of the consumed elements and move them to the appropriate app. For example, move business-agnostic modules to a foundation app, and business-related modules to a core app.  
 
 Foundation apps are stable and rarely modified. They are allowed to expose elements through tight coupling to other teams' apps, enabling the reusability of business-agnostic elements. To allow foundation apps to expose elements to other teams, select the magnifying glass icon to open the **Consumed elements** and switch the toggle; In the same window, select **Allow all apps** to allow all apps from a team to expose elements to other teams. This sets the status of the findings as "Won't fix".
-
 
 ## Performance
 
@@ -525,7 +524,7 @@ Server calls should be avoided on client events (On Initialize, On Ready, On Ren
 
 A mobile app should rely on local storage for performance and offline. Server-side requests should be limited to synchronization requests (typically performed on business events fired in screen actions, session start or online events) and online transactions (typically performed in screen actions).
 
-### Non-optimized local data fetch 
+### Non-optimized local data fetch
 
 <div class="info" markdown="1">
 
@@ -746,7 +745,7 @@ The use of expanded inline parameters that change too often also increases your 
 
 OutSystems will use an SQL parameter for every Query Parameter that has the Expand Inline property disabled. This property is disabled by default, providing you default protection against SQL injection attacks. It's difficult to use properly expanded parameters inline since you need to make sure that any user input is properly escaped before using it in an SQL statement. If you can, avoid enabling this property altogether.  
 
-OutSystems provides ways of implementing common use cases without enabling the Expand Inline property and provides recommendations when using the Expand Inline. For more information, see [SQL Injection Warning ](../../../ref/errors-and-warnings/warnings/sql-injection-warning.md).
+OutSystems provides ways of implementing common use cases without enabling the Expand Inline property and provides recommendations when using the Expand Inline. For more information, see [SQL Injection Warning](../../../ref/errors-and-warnings/warnings/sql-injection-warning.md).
 
 If you must enable Expand Inline, take the following recommendations into account:
 
@@ -755,9 +754,9 @@ If you must enable Expand Inline, take the following recommendations into accoun
 * Use **EncodeSql()** to encode string literals. The **EncodeSql** function encodes string literals to be used in SQL statements when the **Expand Inline** property is enabled. Make sure you avoid the following bad practices when using **EncodeSql()**:
 
     * Do not use **EncodeSql()** to encode the full contents of an SQL parameter. For example:
-    ``myparameter = EncodeSql(""WHERE surname = "" + @myVariable1 + "" OR name = "" + @myVariable2).``    
+    ``myparameter = EncodeSql(""WHERE surname = "" + @myVariable1 + "" OR name = "" + @myVariable2).``
     This pattern is wrong on most occasions, so you will get a warning if you use it.
-        
+
     * Use **EncodeSql** only to encode string literals, not complete fragments of an SQL statement.
 
 * Do not build ``""WHERE column IN (@values)""`` clauses by wrapping all the values in an EncodeSql call:
@@ -787,7 +786,7 @@ End-users can exploit exposed SQL parameters by interfering with a client variab
 
 SQL parameters are used for every query parameter that has the expand inline property turned off, which is the default value to protect you against SQL injection attacks. Avoid turning it on entirely.
 
-If you can't turn the inline property off, apply sanitization procedures to avoid vulnerability to SQL injection attacks. Ensure all steps are applied safely on the server side and within your module control scope. Learn more about it on the [SQL Injection Warning ](../../../ref/errors-and-warnings/warnings/sql-injection-warning.md) documentation.
+If you can't turn the inline property off, apply sanitization procedures to avoid vulnerability to SQL injection attacks. Ensure all steps are applied safely on the server side and within your module control scope. Learn more about it on the [SQL Injection Warning](../../../ref/errors-and-warnings/warnings/sql-injection-warning.md) documentation.
 
 ### Visible disabled Button
 
@@ -881,11 +880,11 @@ Passing identity information as a server action parameter is extremely insecure.
 
 **How to fix**  
 
-Identity information should be obtained on server calls using functions like GetUserId, executed on the server, and never sent as a regular action parameter. GetUserId executed on the server ensures proper identity flow, is secure and cannot be manipulated. 
+Identity information should be obtained on server calls using functions like GetUserId, executed on the server, and never sent as a regular action parameter. GetUserId executed on the server ensures proper identity flow, is secure and cannot be manipulated.
 
 Remove any usages of GetUserId on the client side, and replace them with the same function on the server side. In this way, you’ll avoid passing identity information from the client side to the server side as an action parameter.
 
-For more information, refer to [Reactive web security best practices: Securing server calls](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices#Securing_server_calls). 
+For more information, refer to [Reactive web security best practices: Securing server calls](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices#Securing_server_calls).
 
 ### Screen Aggregates exposing System Entities on Anonymous screens
 
@@ -901,9 +900,9 @@ A Screen Aggregate exposes System Entity data on a screen using the Anonymous Ro
 
 If the screen can be accessed by the Anonymous role, any end user, including users that are not logged in, can access sensitive system data (for example, user data).  
 
-**How to fix** 
+**How to fix**
 
-Remove the exposed information or use a more restricted custom role for the screen.   
+Remove the exposed information or use a more restricted custom role for the screen.
 
 ### Screen Aggregates exposing System Entities on Registered screens
 
@@ -919,7 +918,7 @@ A Screen Aggregate exposes System Entity data on a screen using the Registered R
 
 If the screen can be accessed by the Registered role, any user with a valid OutSystems session, that is, any user that has logged into an app running in the same Platform Server, can access sensitive system data (for example, user data).  
 
-**How to fix** 
+**How to fix**
 
 Remove the exposed information or use a more restricted custom role for the screen.  
 
@@ -939,9 +938,9 @@ Avoid passing identity information in a Block widget parameter.
 
 Passing identity information through a Block widget parameter allows manipulating that identity information on the client side. This creates an insecure identity flow to any existing backend server actions or queries using this parameter, meaning that the authenticated user might be manipulated at any time.  
 
-Since the execution of GetUserId on reactive client components depends on client cookies, any user can easily change parameters by manipulating server calls or changing client session ID identifiers. Malicious users can exploit the ability to change identity-related parameters and impersonate other users and access sensitive data. Users can also bypass role checks, which, even though done on the server, become vulnerable due to insecure parameters received from the client.    
+Since the execution of GetUserId on reactive client components depends on client cookies, any user can easily change parameters by manipulating server calls or changing client session ID identifiers. Malicious users can exploit the ability to change identity-related parameters and impersonate other users and access sensitive data. Users can also bypass role checks, which, even though done on the server, become vulnerable due to insecure parameters received from the client.
 
-**How to fix** 
+**How to fix**
 
 Get identity information only on server calls, using functions like GetUserId, executed on the server, and never sent as a Block widget parameter. Executing GetUserId on the server ensures the identity flow is secure and cannot be manipulated.  
 
@@ -964,7 +963,7 @@ Repeating the same logic in different action flows makes it more difficult to ma
 For each pattern found, select the magnifying glass to get more details.
 
 In the details dialog, check the list of actions that include duplicated logic on the left side, and check the representation of the duplicated logic on the right side. The duplicated logic is highlighted and shown in the context of each action flow.
-    
+
 If possible, refactor the actions where the duplicated logic exists by extracting the duplicated logic into a single action that can be reused.
 
 ### Missing descriptions on public element or parameter
@@ -1045,7 +1044,7 @@ An Aggregate or SQL query isn't used.
 
 **Impact**  
 
-Unused data queries (Aggregates or SQL queries) can waste resources and degrade performance, as they might run even if not referenced. Unused data queries also bloat your code base, making maintenance and debugging difficult.   
+Unused data queries (Aggregates or SQL queries) can waste resources and degrade performance, as they might run even if not referenced. Unused data queries also bloat your code base, making maintenance and debugging difficult.
 
 **How to fix**  
 
@@ -1053,7 +1052,7 @@ Check whether the Aggregate or the SQL query is necessary and consider deleting 
 
 ### Reminder comments
 
-Reminder comments are remarks or reminders for yourself or team members. Some keywords may set a comment as a reminder. For more information, refer to the [Comment documentation](../../../ref/lang/auto/class-comment.md). AIMS will flag Comments set as reminders. 
+Reminder comments are remarks or reminders for yourself or team members. Some keywords may set a comment as a reminder. For more information, refer to the [Comment documentation](../../../ref/lang/auto/class-comment.md). AIMS will flag Comments set as reminders.
 
 **Impact**  
 

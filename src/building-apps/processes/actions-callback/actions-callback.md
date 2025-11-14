@@ -22,7 +22,6 @@ topic:
 
 When designing the process flow of your process, you can add business rules to validate the execution of your process. This allows you to block or quit the process execution if a specified condition is not verified. This behavior is implemented through **Process Callback actions**.
 
-
 ## Add a Process Callback Action
 
 1. From the **Processes** tab, right-click the process element and select **Add Callback Action**.

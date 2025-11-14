@@ -55,8 +55,8 @@ This approach comes very naturally to people. Our human brains really know how t
 
 The Given-When-Then format obviously has three main sections, explained further here:
 
-* **Given** — Inputs/Preconditions. Describes the state of the world before you begin the behavior you're specifying in this scenario. You can think of it as the preconditions to the test. 
-* **When** — Functionality. Runs the behavior that you're specifying. 
+* **Given** — Inputs/Preconditions. Describes the state of the world before you begin the behavior you're specifying in this scenario. You can think of it as the preconditions to the test.
+* **When** — Functionality. Runs the behavior that you're specifying.
 * **Then** — Assertions. Describes the changes you expect due to the specified behavior.
 
 You can string together multiple preconditions, actions, and assertion by using Chaining, or **And**.
@@ -93,28 +93,28 @@ In the DoR, consider adding a clear definition of quality test data required for
 #### Definition of Ready
 
 * It's written down in the form: "As a &lt;user role&gt; I want to &lt;activity&gt; so that &lt;benefit&gt;".
-* [INVEST](https://www.agilealliance.org/glossary/invest/) principles are achieved: Independent, Negotiable, Valuable, Estimable, Small, and Testable. 
-* It's mapped as a step in a business process diagram. 
-* Business context and value are clear. 
+* [INVEST](https://www.agilealliance.org/glossary/invest/) principles are achieved: Independent, Negotiable, Valuable, Estimable, Small, and Testable.
+* It's mapped as a step in a business process diagram.
+* Business context and value are clear.
 * It's prioritized, based on MoSCoW for example.
-* Conversations have happened to clarify the User Story so Business, IT, DEV, and QA teams (including everyone) are aligned on what exactly to build. 
+* Conversations have happened to clarify the User Story so Business, IT, DEV, and QA teams (including everyone) are aligned on what exactly to build.
 * Details are captured in acceptance criteria, both functional and nonfunctional.
-* Everyone's involved in the Acceptance Criteria definition. 
-* Wireframes/mockups are drawn or reviewed for major US. 
-* It's validated by business. 
-* Test cases/scenarios are captured. 
-* Meaningful and comprehensive test data is available. 
+* Everyone's involved in the Acceptance Criteria definition.
+* Wireframes/mockups are drawn or reviewed for major US.
+* It's validated by business.
+* Test cases/scenarios are captured.
+* Meaningful and comprehensive test data is available.
 * New manual or automated tests are clearly identified and categorized (UI, API, Component, and so on.)
-* Existing tests potentially impacted by the User Story are identified for review. 
-* It's estimated at a high level and fits in a Sprint. 
+* Existing tests potentially impacted by the User Story are identified for review.
+* It's estimated at a high level and fits in a Sprint.
 
 #### Definition of Done
 
-* Code is complete and adheres to IT guidelines, so it's published. 
-* Unit tests are completed successfully by developers and confirmed by DM. 
-* Test cases for acceptance criteria are executed with success. 
+* Code is complete and adheres to IT guidelines, so it's published.
+* Unit tests are completed successfully by developers and confirmed by DM.
+* Test cases for acceptance criteria are executed with success.
 * Reviewed and approved by EM.
-* Usability and performance tests are performed. 
-* Intermediate demo (preview) is done, and a plan is in place to address its feedback during stabilization, before demo to business. 
-* All existing tests that required revision were updated and eventually passed. 
-* The new code does not break any regression tests. 
+* Usability and performance tests are performed.
+* Intermediate demo (preview) is done, and a plan is in place to address its feedback during stabilization, before demo to business.
+* All existing tests that required revision were updated and eventually passed.
+* The new code does not break any regression tests.

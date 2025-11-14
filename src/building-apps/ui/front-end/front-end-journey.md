@@ -29,7 +29,6 @@ This journey goes through 3 different stages:
 
 ![Diagram illustrating the front-end development journey from UX with low-fidelity wireframes, to UI with high-fidelity mockups, to front-end with a live style guide including HTML, CSS, and JS.](images/front-end-journey.png "Front-End Development Journey")
 
-
 ## UX/UI: Design for OutSystems
 
 In the following session you will be guided through this journey, from the gathering of the requirements to the creation of the Live Style Guide (the base component of the Front-End Development phase) that will accelerate, guide and facilitate your front-end developers job.
@@ -41,4 +40,3 @@ src="https://www.youtube.com/embed/8ih45xQm8Gs">
 ## Your custom live style guide
 
 The design of a live style guide is an essential part of the transition from Hi-Fi mockup to code. To help you creating your custom live style guide, you can take as a good quick start, the [OutSystems UI Reactive Style Guide Template](https://www.outsystems.com/forge/component-overview/7526/outsystems-ui-reactive-style-guide-template) and the [OutSystems UI Web Style Guide](https://www.outsystems.com/forge/component-overview/5119/outsystems-ui-style-guide), available in the OutSystems Forge.
-

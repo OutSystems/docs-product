@@ -25,7 +25,6 @@ This topic describes how to refactor an application by moving some modules to a 
 
 In this example, the modules that integrate with PayPal are going to be decoupled from the eCommerce application to be autonomous and widely used by other applications. This way, the PayPal extension and PayPalGateway modules are going to be moved to a new application, the one which will provide PayPal services to other applications.
 
-
 ## Refactor the business logic
 
 Open the detail of the eCommerce application in Service Center and look for the implementation of PayPal integration which is already separated in the following modules: PaypalGateway and PayPal (extension).
@@ -42,7 +41,6 @@ The refactoring of applications depends on how they're designed, but it usually 
 
 In the above procedure Service Center and TrueChange assist you in refactoring by providing real-time analysis and guiding you through the process.
 
-
 ## Create a new application
 
 Once the business logic is isolated in new modules and separated from the rest of the business logic, you can move those new modules to a new application to attain an autonomous development cycle.
@@ -50,9 +48,8 @@ Once the business logic is isolated in new modules and separated from the rest o
 Create a new application as follows:
 
 1. Open Service Studio and log into a development environment.
-2. Click on the **New Application** button.
-3. Change the application name to **PayPal Services** and save it.
-
+1. Click on the **New Application** button.
+1. Change the application name to **PayPal Services** and save it.
 
 ## Move modules to the new application
 
@@ -63,7 +60,6 @@ Hover the mouse over the PayPalGateway, click on the ▼ button, click on the **
 Follow the same procedure to move the PayPal extension to the PayPal Services application.
 
 ![Process of moving PayPalGateway and PayPal extension modules to the PayPal Services application in the Service Studio interface](images/refactor-an-application-2.png "Moving modules to a new application")
-
 
 ## Deploy to Quality Assurance
 

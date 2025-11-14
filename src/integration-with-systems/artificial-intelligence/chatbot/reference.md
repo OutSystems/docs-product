@@ -23,7 +23,7 @@ This is a reference document that provides more information about components and
 
 ## The chatbot demo app
 
-The chatbot demo app is available in Forge. Go to the [OutSystems.AI Chatbot Reactive](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive), click **Download** and then **Download component + demo**. 
+The chatbot demo app is available in Forge. Go to the [OutSystems.AI Chatbot Reactive](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive), click **Download** and then **Download component + demo**.
 
 ![Screenshot of the OutSystems.AI Chatbot Reactive component download page on Forge](images/chatbot-demo-download-forge.png "Chatbot Demo App Download")
 
@@ -69,12 +69,12 @@ For more information about the cards structure, see these pages in Microsoft Dev
 
 ## Versions
 
-The chatbot component, with the UI blocks and the webhook module, is available in two versions. Which version you need to use depends on the type of app you already have. We recommend Reactive Web App and the compatible version of the component for all new and existing Reactive Web projects. 
+The chatbot component, with the UI blocks and the webhook module, is available in two versions. Which version you need to use depends on the type of app you already have. We recommend Reactive Web App and the compatible version of the component for all new and existing Reactive Web projects.
 
 | App type | Component |
 | --- | --- |
-| Reactive Web App, Mobile App | [Chatbot component for Reactive Web App](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive) |   
-| Traditional Web App | [Chatbot component for Traditional Web App](https://www.outsystems.com/forge/component-overview/5886/) |   
+| Reactive Web App, Mobile App | [Chatbot component for Reactive Web App](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive) |
+| Traditional Web App | [Chatbot component for Traditional Web App](https://www.outsystems.com/forge/component-overview/5886/) |
 
 ### Component differences for Traditional Web App
 

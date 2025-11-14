@@ -26,4 +26,4 @@ The `Multiple Date Formats` error is issued in the following situation:
 
     Follow the instructions in the error message to solve it.
 
-Double-click on the error line to take you directly to the REST API method's request and response examples where the problem was detected. 
+Double-click on the error line to take you directly to the REST API method's request and response examples where the problem was detected.

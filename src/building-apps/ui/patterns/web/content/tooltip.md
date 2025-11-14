@@ -40,9 +40,9 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Tooltip widget into the Main Content area of your application's screen.
@@ -51,8 +51,8 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 
     By default, the Tooltip widget contains Widget and Content placeholders.
 
-1. Add your content to the placeholders. 
-    
+1. Add your content to the placeholders.
+
     In this example, we add a Save button to the Widget placeholder and enter the tooltip text 'Save your details' in the Content placeholder.
 
     ![Adding a Save button to the Widget placeholder and tooltip text 'Save your details' in Service Studio](images/tooltip-4-ss.png "Adding Content to Tooltip Placeholders")

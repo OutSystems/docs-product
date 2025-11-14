@@ -18,20 +18,19 @@ coverage-type:
 
 # BinaryData API
 
-
 Provides Actions to manipulate BinaryData contents, such as retrieving the length or transforming binary content into Text or Base64.
 
 ## Summary
 
-Action | Description
----|---
-[Base64ToBinary](<#Base64ToBinary>) | Converts Base64 Text into BinaryData.
-[BinaryDataSize](<#BinaryDataSize>) | Returns the size in bytes of a binary content.
-[BinaryDataToText](<#BinaryDataToText>) | Reads the content of a text file using a given encoding. If no encoding is supplied, the system's default ANSI encoding will be used.
-[BinaryToBase64](<#BinaryToBase64>) | Converts BinaryData into Base64 Text.
-[Compare](<#Compare>) | Performs a binary comparison between two Binary Data contents.
-[ConvertEncoding](<#ConvertEncoding>) | Converts a range of bytes in a BinaryData from one encoding to another.
-[TextToBinaryData](<#TextToBinaryData>) | Converts a Text into binary content. If no encoding is supplied, the system's default ANSI encoding will be used.
+| Action | Description |
+| ---|--- |
+| [Base64ToBinary](<#Base64ToBinary>) | Converts Base64 Text into BinaryData. |
+| [BinaryDataSize](<#BinaryDataSize>) | Returns the size in bytes of a binary content. |
+| [BinaryDataToText](<#BinaryDataToText>) | Reads the content of a text file using a given encoding. If no encoding is supplied, the system's default ANSI encoding will be used. |
+| [BinaryToBase64](<#BinaryToBase64>) | Converts BinaryData into Base64 Text. |
+| [Compare](<#Compare>) | Performs a binary comparison between two Binary Data contents. |
+| [ConvertEncoding](<#ConvertEncoding>) | Converts a range of bytes in a BinaryData from one encoding to another. |
+| [TextToBinaryData](<#TextToBinaryData>) | Converts a Text into binary content. If no encoding is supplied, the system's default ANSI encoding will be used. |
 
 ## Actions
 
@@ -39,13 +38,13 @@ Action | Description
 
 Converts Base64 Text into BinaryData.
 
-*Inputs*
+_Inputs_
 
 Base64
 :   Type: Text. Mandatory.  
     Base64 Text to convert to BinaryData.
 
-*Outputs*
+_Outputs_
 
 Binary
 :   Type: BinaryData.  
@@ -55,13 +54,13 @@ Binary
 
 Returns the size in bytes of a binary content.
 
-*Inputs*
+_Inputs_
 
 BinaryData
 :   Type: BinaryData. Mandatory.  
     Binary content.
 
-*Outputs*
+_Outputs_
 
 Size
 :   Type: Integer.  
@@ -71,7 +70,7 @@ Size
 
 Reads the content of a text file using a given encoding. If no encoding is supplied, the system's default ANSI encoding will be used.
 
-*Inputs*
+_Inputs_
 
 BinaryData
 :   Type: BinaryData. Mandatory.  
@@ -81,7 +80,7 @@ Encoding
 :   Type: Text.  
     Encoding used when reading text from a binary content. Possible values are: unicode, utf-8, utf-16, ascii.
 
-*Outputs*
+_Outputs_
 
 Text
 :   Type: Text.  
@@ -91,13 +90,13 @@ Text
 
 Converts BinaryData into Base64 Text.
 
-*Inputs*
+_Inputs_
 
 Binary
 :   Type: BinaryData. Mandatory.  
     Binary content to convert to Base64 Text.
 
-*Outputs*
+_Outputs_
 
 Base64
 :   Type: Text.  
@@ -107,7 +106,7 @@ Base64
 
 Performs a binary comparison between two Binary Data contents.
 
-*Inputs*
+_Inputs_
 
 BinaryData1
 :   Type: BinaryData. Mandatory.  
@@ -117,7 +116,7 @@ BinaryData2
 :   Type: BinaryData. Mandatory.  
     Second content in comparison.
 
-*Outputs*
+_Outputs_
 
 Equal
 :   Type: Boolean.  
@@ -127,7 +126,7 @@ Equal
 
 Converts a range of bytes in a BinaryData from one encoding to another.
 
-*Inputs*
+_Inputs_
 
 BytesToConvert
 :   Type: BinaryData. Mandatory.  
@@ -141,7 +140,7 @@ DestinationEncoding
 :   Type: Text. Mandatory.  
     The destination of encoding. Possible values are: unicode, utf-8, utf-16, ascii.
 
-*Outputs*
+_Outputs_
 
 ConvertedBytes
 :   Type: BinaryData.  
@@ -151,7 +150,7 @@ ConvertedBytes
 
 Converts a Text into binary content. If no encoding is supplied, the system's default ANSI encoding will be used.
 
-*Inputs*
+_Inputs_
 
 Text
 :   Type: Text. Mandatory.  
@@ -161,10 +160,8 @@ Encoding
 :   Type: Text.  
     Character encoding of the text. Possible values are: unicode, utf-8, utf-16, ascii.
 
-*Outputs*
+_Outputs_
 
 BinaryData
 :   Type: BinaryData.  
     Result of conversion from Text to BinaryData.
-
-

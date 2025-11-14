@@ -35,4 +35,4 @@ Cause
 :   It is not possible to access the URL of your SOAP Web Service.
 
 Recommendation
-:   Check whether the URL is correct and the consumed SOAP Web Service is still available. If both conditions are valid and you still cannot refresh the Web Service definition, you should contact your Systems Administrator.    
+:   Check whether the URL is correct and the consumed SOAP Web Service is still available. If both conditions are valid and you still cannot refresh the Web Service definition, you should contact your Systems Administrator.

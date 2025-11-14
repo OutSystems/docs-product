@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article provides guidance on refactoring strong dependencies on Images in O11 apps to ensure compatibility with ODC.
 locale: en-us
 guid: 4732cbaa-a548-4c28-b2fb-081be0f1ecc3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7347
 helpids: 30524
-tags: odc, code migration, application development, dependency management, architecture
+tags: odc, code conversion, application development, dependency management, architecture
 audience:
   - frontend developers
   - full stack developers
@@ -20,12 +20,11 @@ coverage-type:
 
 # Asset consuming an Image from an Application
 
-A dependency to an Image is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.
-This means that the Image must either be part of the consumer ODC asset, or the Image must be shared by an ODC Library.
+A dependency to an Image is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies. This means that the Image must either be part of the consumer ODC asset, or the Image must be shared by an ODC Library.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

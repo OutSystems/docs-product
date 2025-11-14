@@ -25,7 +25,6 @@ Note: Always make sure that you involve the IT team so that the overall experien
 
 During the development process, you defined groups of users. As the next step, and before the app is available to your end users, you need to share with your IT team the name of the groups you added to the workflow process. Also, you need to identify which users are part of each group. Your app is only ready for your users to access it after your IT adds this information in the OutSystems Users tools.
 
-
 ## Users and user group management
 
 To manage users and groups the IT user needs to have access to the  [OutSystems Users tool](../../../user-management/end-user-manage/accessing-users.md), provided by OutSystems, that allows you to manage users.
@@ -34,7 +33,7 @@ To have access to this tool, OutSystems users need to have administrator privile
 When publishing an app to your development environment, the Workflow Builder adds to the **OutSystems Users** the groups that your business users created in the apps they built in Workflow Builder.
 
  These groups have the following nomenclature when created by the Workflow Builder:
- 
+
  The group requesters for each app have the following naming convention on the entity Group:
 
 `[WB | App Name | Requesters]`
@@ -42,7 +41,7 @@ When publishing an app to your development environment, the Workflow Builder add
  Although the Workflow Builder user on the app sees the **Requesters** name, each group associated with a manual activity has the following naming convention on the entity Group:
 
 `[WB | App Name | Group name]`
- 
+
  For example, a group Managers of an **Expenses Approval** app would be called `WB | Expenses Approval | Managers`. The Workflow Builder user only sees the name **Managers** within the Workflow Builder app.
 
 ![Screenshot showing how user groups are named and managed in Workflow Builder](images/wfb-users-groups.png "Workflow Builder User Groups")

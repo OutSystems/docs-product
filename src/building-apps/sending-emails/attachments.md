@@ -42,7 +42,7 @@ Before following the guides in this article, make sure you meet the [prerequisit
 
 To attach a file to an email, complete the following steps in Service Studio:
 
-1. On the **Logic** tab, open the action that sends the email and select the **Send Email** node. 
+1. On the **Logic** tab, open the action that sends the email and select the **Send Email** node.
 
     <div class="info" markdown="1">
 
@@ -50,7 +50,7 @@ To attach a file to an email, complete the following steps in Service Studio:
 
     </div>
 
-1. In the **Send Email** properties, locate the **Attachments** section and move your pointer over the **Attachments** list. 
+1. In the **Send Email** properties, locate the **Attachments** section and move your pointer over the **Attachments** list.
 
     Service Studio shows a plus icon with the "add list item" tooltip.
 
@@ -67,7 +67,7 @@ To attach a file to an email, complete the following steps in Service Studio:
 1. Enter the information to define the file name, content, and media type of the email attachment.
 
     For more information about the Attachment properties, see [Attachment data structure](#attachment-data-structure).
-    
+
     ![Screenshot displaying fields for FileName, FileContent, and MimeType in the Attachment properties](images/email-attachment-properties.png "Defining Attachment Properties")
 
     The following are example properties to attach a PDF file from the module resources:
@@ -78,10 +78,9 @@ To attach a file to an email, complete the following steps in Service Studio:
 
     <div class="info" markdown="1">
 
-    To add a file to the module resources, go to the **Data** tab, right-click **Resources**, and select **Import Resources**. 
+    To add a file to the module resources, go to the **Data** tab, right-click **Resources**, and select **Import Resources**.
 
     </div>
-
 
 ## Attaching multiple files
 
@@ -89,7 +88,7 @@ To attach several files to an email, create a List with the Attachment data stru
 
 <div class="info" markdown="1">
 
-The following example references the **Sample_ProductImage** Entity from **OutSystemsSampleDataDB**, a standard sample data module in the OutSystems cloud. The text attribute **FileName** is the file name of the image attachment. The binary attribute **FileContent** is the content of the image.   
+The following example references the **Sample_ProductImage** Entity from **OutSystemsSampleDataDB**, a standard sample data module in the OutSystems cloud. The text attribute **FileName** is the file name of the image attachment. The binary attribute **FileContent** is the content of the image.
 
 </div>
 
@@ -118,7 +117,6 @@ In the following example, Service Studio fetches images from a database with an 
 1. In the Attachment section of Send Email, map the attributes so Service Studio knows which values pass to the attachments. You must specify binary content and the file name. The MIME type is optional, but providing it lets more email clients handle the attachment.
 
     ![Screenshot showing the mapping of attributes to the Attachment data structure in Service Studio](images/email-attachment-mapping.png "Mapping Values to the Attachment Data Structure")
-
 
 ## Reference
 

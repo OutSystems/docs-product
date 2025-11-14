@@ -8,8 +8,12 @@ platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=3215:891
 coverage-type:
   - apply
+audience:
+  - platform administrators
+  - infrastructure managers
+outsystems-tools:
+  - none
 ---
-
 # AWS Direct Connect on OutSystems Cloud
 
 This topic details how you can connect to your OutSystems Cloud using AWS Direct Connect.
@@ -64,11 +68,11 @@ The following steps are required in order to conclude the Direct Connect integra
 
 1. After establishing the link between the customer network and the AWS Direct Connect location, associate the OutSystems Cloud AWS account ID with the newly created connection. This information shall be requested [by opening a support case](https://success.outsystems.com/Support) with OutSystems.
 
-2. Create a [hosted virtual interface](http://docs.aws.amazon.com/directconnect/latest/UserGuide/createhostedvirtualinterface.html) using the account ID provided by OutSystems. In case you are under scenario **B**, this step is performed by the AWS partner, to whom you need to provide the OutSystems Cloud AWS account ID.
+1. Create a [hosted virtual interface](http://docs.aws.amazon.com/directconnect/latest/UserGuide/createhostedvirtualinterface.html) using the account ID provided by OutSystems. In case you are under scenario **B**, this step is performed by the AWS partner, to whom you need to provide the OutSystems Cloud AWS account ID.
 
-3. After this, [submit a new support case](https://success.outsystems.com/Support) requesting OutSystems to accept the newly created hosted connection.
+1. After this, [submit a new support case](https://success.outsystems.com/Support) requesting OutSystems to accept the newly created hosted connection.
 
-4. OutSystems accepts the newly created hosted connection. Customers can download configuration at their end and establish connectivity.
+1. OutSystems accepts the newly created hosted connection. Customers can download configuration at their end and establish connectivity.
 
 <div class="info" markdown="1">
 

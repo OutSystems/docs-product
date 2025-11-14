@@ -32,9 +32,9 @@ Customers have been reporting an error in the Directory application, that is pre
 
 ![Error report indicating an issue in the Directory application preventing profile updates](images/troubleshoot-application-errors-2.png "Error Report for Directory App")
 
-Check if there are any errors logged for the Directory app. 
+Check if there are any errors logged for the Directory app.
 
-1. In the Production environment, open the Service Center management console, and navigate to the **Monitoring** tab. 
+1. In the Production environment, open the Service Center management console, and navigate to the **Monitoring** tab.
 1. Filter by the 'Directory' application.
 
 ![Service Center management console with filters applied to show error logs for the Directory application](images/troubleshoot-application-errors-3.png "Filtering Error Logs")

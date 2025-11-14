@@ -19,7 +19,7 @@ coverage-type:
 
 # Performance Top 10 Rules
 
-Good applications have at least one thing in common – they are really fast. Beyond built-in OutSystems Platform optimizations, keep these best practices in mind. 
+Good applications have at least one thing in common – they are really fast. Beyond built-in OutSystems Platform optimizations, keep these best practices in mind.
 
 ## Index your entities
 
@@ -55,9 +55,8 @@ Screen preparation processing affects the user experience and therefore should b
 
 ## Avoid using preparation data in screen actions
 
-Don't use preparation data in screen actions because it increases the network traffic between the server and the browser. This in turn increases network usage and degrades server request processing performance. This applies only to Traditional Web Apps. 
+Don't use preparation data in screen actions because it increases the network traffic between the server and the browser. This in turn increases network usage and degrades server request processing performance. This applies only to Traditional Web Apps.
 
 ## Minimize the number of fields fetched from the database
 
-Use specific structures with the necessary attributes, instead of returning the whole database entity as I/O parameters of actions. This allows the platform to optimize the queries, improving database performance. 
-
+Use specific structures with the necessary attributes, instead of returning the whole database entity as I/O parameters of actions. This allows the platform to optimize the queries, improving database performance.

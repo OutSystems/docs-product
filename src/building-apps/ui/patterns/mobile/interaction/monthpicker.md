@@ -23,7 +23,7 @@ You can use the Month Picker UI Pattern to allow users input a month of the year
 ## How to use the Month Picker UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Month Picker`.
-    
+
     The Month Picker widget is displayed.
 
     ![Screenshot of the Month Picker widget in the Service Studio toolbox](images/monthpicker-widget-ss.png "Month Picker Widget in Service Studio")
@@ -33,8 +33,8 @@ You can use the Month Picker UI Pattern to allow users input a month of the year
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
 
     1. In the Toolbox, search for the widget again.
 
@@ -82,17 +82,17 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property  | Description  | 
+| Property  | Description  |
 |---|---|
-|DateFormat (Text): Optional | Defines the input date format. If empty, the date format will be the same as the server format.<br/>When using formats with time, make sure to set the TimeFormat property.<br/><br/>Here are some of the examples that you can use: <ul><li>"MM/YYYY" -> 03/2022</li><li>"MMM YYYY" -> Mar 2022</li><li>"MMM-YYYY" -> Mar-2022</li><li>"MMM.YYYY" -> Mar.2022</li><li>"MMM, YY" -> Mar, 22</li></ul>| 
+|DateFormat (Text): Optional | Defines the input date format. If empty, the date format will be the same as the server format.<br/>When using formats with time, make sure to set the TimeFormat property.<br/><br/>Here are some of the examples that you can use: <ul><li>"MM/YYYY" -> 03/2022</li><li>"MMM YYYY" -> Mar 2022</li><li>"MMM-YYYY" -> Mar-2022</li><li>"MMM.YYYY" -> Mar.2022</li><li>"MMM, YY" -> Mar, 22</li></ul>|
 |InitialMonth (MonthYear): Optional | Defines the initial selected month and year for the Month Picker. If not set, no initial month is selected.|  
-|MinMonth (MonthYear): Optional| Defines the minimum month that can be selected. Any month before this is disabled and cannot be selected.| 
-|MaxMonth (MonthYear): Optional | Defines the maximum month that can be selected. Any month after this is disabled and cannot be selected.| 
+|MinMonth (MonthYear): Optional| Defines the minimum month that can be selected. Any month before this is disabled and cannot be selected.|
+|MaxMonth (MonthYear): Optional | Defines the maximum month that can be selected. Any month after this is disabled and cannot be selected.|
 |ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples: <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).  |
 
 ## Events
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|Initialized: Optional  | Event triggered after the MonthPicker instance is ready. | 
-|OnSelected: Mandatory  | Event triggered when the user selects a month.  | 
+|Initialized: Optional  | Event triggered after the MonthPicker instance is ready. |
+|OnSelected: Mandatory  | Event triggered when the user selects a month.  |

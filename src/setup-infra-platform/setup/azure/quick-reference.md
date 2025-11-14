@@ -24,7 +24,7 @@ coverage-type:
 
 This article describes the Azure resources deployed by [OutSystems on Microsoft Azure](intro.md "OutSystems on Microsoft Azure Overview") solution template, which contains the OutSystems Development, Test, Production, and [LifeTime deployment management console](../../../manage-platform-app-lifecycle/intro.md) environments.
 
-## Azure Resources 
+## Azure Resources
 
 The Azure resources that the OutSystems on Microsoft Azure solution template deploys follow naming conventions based on the general [Azure naming conventions](https://docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions). You can identify the deployed resources by the following:
 
@@ -47,12 +47,12 @@ You can choose the size of the virtual machines during the setup, in the solutio
 
 The main features of the proposed sizes are:
 
- | |  **F4s_v2** (default)
----|---  
-vCPUs  |  4  
-Memory (GB)  |  8  
-Temp Storage (GB)  |  32  
-Max IOPS  |  8000
+| |  **F4s_v2** (default) |
+| ---|--- |
+| vCPUs  |  4 |
+| Memory (GB)  |  8 |
+| Temp Storage (GB)  |  32 |
+| Max IOPS  |  8000 |
   
 Check the [official Azure documentation](<https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes>) for detailed information on the different virtual machine sizes.
 
@@ -95,7 +95,7 @@ The following Azure resources are also deployed for each OutSystems environment 
 
 The table below shows examples of some of the Azure resources deployed for each environment, mapped into the main OutSystems components when applicable:
 
-|OutSystems Component|Azure Resource Type|Azure Resource Name|Example|  
+|OutSystems Component|Azure Resource Type|Azure Resource Name|Example|
 |:------------------:|:-----------------:|:-----------------:|:-----:|
 |Non-production Platform Server|Virtual machine|`<sol_id>-<environment>-vm`|myid-dev-vm|
 |Production Platform Server|Virtual machine|`<sol_id>-prod-vm`|myid-prod-vm|

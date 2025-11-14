@@ -20,7 +20,7 @@ topic:
 
 # Query Parameter
 
-The SQL tool doesn't have direct access to variables or parameters defined outside its scope. To use input parameters or local variables in a SQL query, you need to define query parameters. Then, you need to map the input parameters or local variables to the query parameters. 
+The SQL tool doesn't have direct access to variables or parameters defined outside its scope. To use input parameters or local variables in a SQL query, you need to define query parameters. Then, you need to map the input parameters or local variables to the query parameters.
 
 ## How to use
 
@@ -63,7 +63,7 @@ the query. In this example, there is already a structure named EmployeeStructure
 
 1. In the **Test Inputs** tab, set a value for the QuerySearch parameter, then click **Test** again to make sure the filter is working.
 
-1. Click **Close** to return to the flow. 
+1. Click **Close** to return to the flow.
 
 1. Select the **SQL** node in the action flow, and in the properties, set the **QuerySearch** to the search input variable. In this example, there is a local variable named SearchFilter, which keeps the value entered by the user in a Search widget.
 
@@ -114,4 +114,3 @@ the query. In this example, there is already a structure named EmployeeStructure
 </tr>
 </tbody>
 </table>
-

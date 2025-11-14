@@ -37,7 +37,7 @@ Applies only to Traditional Web Apps.
 ## CSS Selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .time-option | .time-option-selected |  When the time option is selected  |
 | .time-option | .time-picker .dropdown-content-list .time-option[disabled="disabled"] |  When the time option is disabled  |
 
@@ -55,7 +55,7 @@ Applies only to Traditional Web Apps.
 
     ![Screenshot demonstrating how to set the StartTime parameter to a variable of type Time](images/timepicker-image-3.png "Setting StartTime Parameter")
 
-1. In the preparation, set the Time variable to the start time you want for the picker. 
+1. In the preparation, set the Time variable to the start time you want for the picker.
 
     ![Image showing the setting of the Time variable to the start time in preparation for the Time Picker](images/timepicker-image-4.png "Preparation Time Variable")
 
@@ -63,13 +63,13 @@ Applies only to Traditional Web Apps.
 
     ![Screenshot of setting the OnSelect event to the TimePatternOnSelect function in the Time Picker configuration](images/timepicker-image-5.png "OnSelect Event Setup")
 
-1. In the TimePatternOnSelect action, assign  TimeSelected to the Time variable. 
+1. In the TimePatternOnSelect action, assign  TimeSelected to the Time variable.
 
     ![Image depicting the assignment of TimeSelected to the Time variable in the TimePatternOnSelect action](images/timepicker-image-6.png "TimePatternOnSelect Action")
 
 1. Set a Feedback_Message action and show the Timein the message.
 
-1. Create a container Timepicker_Container around the TimePicker. 
+1. Create a container Timepicker_Container around the TimePicker.
 
     ![Screenshot showing the creation of a container around the TimePicker UI component](images/timepicker-image-7.png "TimePicker Container")
 

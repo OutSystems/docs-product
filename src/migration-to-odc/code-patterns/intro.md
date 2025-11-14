@@ -1,11 +1,11 @@
 ---
-summary: This article provides guidelines for refactoring O11 apps to ensure compatibility with OutSystems Developer Cloud (ODC), highlighting various specific areas for manual refactoring in preparation for future automated migration support.
+summary: This article provides guidelines for refactoring O11 apps to ensure compatibility with OutSystems Developer Cloud (ODC), highlighting various specific areas for manual refactoring in preparation for future automated conversion to ODC.
 locale: en-us
 guid: 469bbfc7-8121-4cd8-8e4f-22b882f8e821
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: migration, outsystems developer cloud, code refactoring, application lifecycle management, outsystems platform
+tags: app conversion, outsystems developer cloud, code refactoring, application lifecycle management, outsystems platform
 audience:
   - mobile developers
   - frontend developers
@@ -13,43 +13,40 @@ audience:
   - backend developers
   - architects
 outsystems-tools:
-  - migration toolkit
+  - app conversion kit
   - service studio
 coverage-type:
   - none
 ---
 
-# O11 to ODC migration code patterns
+# O11 to ODC conversion patterns
 
-As you plan and prepare your existing O11 app architecture, there are code patterns that you should adapt or omit in your O11 apps to ensure a smooth migration to ODC.
+This page describes the app patterns you need to consider to ensure a smooth conversion of your O11 apps to ODC.
 
 <div class="info" markdown="1">
 
-OutSystems is working on migration automation capabilities to support some of these patterns. Until then, you can use this information to help you [plan your migration](../migration-intro.md#stage-1-plan-for-the-o11-app-migration).
+OutSystems is working on conversion automation capabilities to support some of these patterns. Until then, you can use this information to help you [plan your conversion](../migration-intro.md#stage-1-plan-for-the-o11-app-migration).
+
+The Conversion Assessment Tool identifies some of the code patterns that you need to handle to achieve a successful conversion of your apps.
 
 </div>
 
-If you have access to the Migration Kit, the Migration Assessment Tool identifies some of the code patterns that you need to handle to achieve a successful migration of your apps.
+You must handle different patterns during the several conversion phases:
 
-You have to follow different approaches, depending on the pattern:
+* [Before the conversion](#handle-o11), you must prepare your O11 apps to be ODC compatible and ready to convert.  
 
-* [Fix in O11](#fix-in-o11) - Requires changes in the O11 app before proceeding with the migration to ODC.
+* [After the conversion](#handle-odc), you must make some adjustments to ensure your new ODC apps can be published.
 
-* [Fix in ODC](#fix-in-odc) - Requires changes in the ODC app after the migration.
+## Patterns to handle in O11 { #handle-o11 }
 
-* [Optional](#optional) - Requires changes in the O11 app or in the ODC app, depending on the approach you choose.
+These are the patterns that require changes in the O11 apps before proceeding with the conversion to ODC.
 
-* [Not yet supported](#not-supported) - ODC doesn't yet support the functionality, or the Migration Kit doesn't yet support the code pattern.
-
-## Fix in O11
-
-These are the patterns that require changes in the O11 apps:
+### Code
 
 * [Application consuming a non-read only Entity](arch-non-read-only-entity.md)
 * [Asset consuming a Local Storage Entity](arch-local-storage.md)
 * [Asset consuming a private Structure](arch-priv-struct.md)
 * [Asset consuming a Process](arch-process.md)
-* [Asset consuming a reference to a Traditional Web element](convert-trad-web.md)
 * [Asset consuming a Resource](arch-resource.md)
 * [Asset consuming a Script](arch-script.md)
 * [Asset consuming an Application Theme](arch-app-theme.md)
@@ -57,39 +54,59 @@ These are the patterns that require changes in the O11 apps:
 * [Asset consuming an ODC application Block](arch-block.md)
 * [Asset consuming an ODC application Client Action](arch-client-action.md)
 * [Asset consuming an ODC application Server Action](arch-server-action.md)
-* [Asset with outdated or broken dependencies](outdated-or-broken-dependencies.md)
 * [Asset consuming a reference to the Common Plugin](arch-common-plugin.md)
-* [Cannot open module](cannot-open-module.md)
-* [End users with no email](end-user-no-email.md)
+* [Asset consuming a Traditional Web module](convert-trad-web.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
+* [Asset consuming a Forge component](arch-forge.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
+* [Asset consuming an O11 app that is not mapped to any ODC asset](arch-not-mapped.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
+* [Asset consuming its own service action](arch-internal-service-action.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
+* [Unsupported Delete Rule to an entity from another app](elem-unsupported-delete-rule.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
+* [Library with cyclic dependency to another ODC library](arch-lib-cyclic.md)
+* [Asset cannot contain Traditional Web modules](elem-trad-web.md)
+* [Asset consuming REST API with multipart request](elem-rest-consume-multipart.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
 
-## Fix in ODC
+### Data { #data-patterns }
 
-These are the patterns that require changes in the ODC apps:
+* [Large binaries validation](data-large-binaries-validation.md)
+* [User email validation](data-user-email-validation.md)
+
+### App configuration
+
+* [Align persistent login timeout](persistent-login-timeout.md)
+
+## Patterns to handle in ODC { #handle-odc }
+
+These are the patterns that require changes in the converted ODC apps before you publish them.
+
+### Code
 
 * [Asset consuming O11 platform system elements](arch-system-element.md)
 * [Asset consuming O11 user management elements](arch-user-mng-elements.md)
 * [Asset consuming an extension](arch-extension.md)
-* [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)
 * [Asset using unsupported O11 built-in function](elem-built-in-function.md)
 * [Application with SQL Node](elem-sql-adapt.md)
 * [Asset contains REST APIs using built-in OAuth 2.0 authentication flow](elem-rest-oauth2.md)
 * [Asset with SAP BAPI connection](elem-sap.md)
-* [Adapt login and logout flow of migrated apps](execute-adapt-login-flow.md)
+* [Adapt login and logout flow of converted apps](execute-adapt-login-flow.md)
+* [Aggregate or SQL node referenced outside its scope](aggregate-sql-scope.md)
 
-## Optional
+### App configuration
 
-These are the patterns that can be either solved in O11 or in ODC:
+* [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)
+* [Update the URLs of consumed REST API endpoints](update-url-consumed-rest-endpoint.md)
 
-* [Asset consuming a Forge component](arch-forge.md)
-* [Asset consuming an O11 app that is not mapped to any ODC asset](arch-not-mapped.md)
+## Limitations
 
-## Not yet supported
+Conversion to ODC isn't yet supported for the following patterns.
 
-These are the patterns about elements that aren't supported in ODC, or that the Migration Kit doesn't yet support:
+### Code
 
-* [The Asset cannot contain BPTs](elem-bpt.md)
-* [The Asset cannot contain SOAP](elem-soap.md)
-* [The Asset cannot contain modules having a user provider different than Users](elem-user-provider.md)
-* [Asset consuming O11 Business Process (BPT) elements](arch-bpt-elements.md)
-* [The Asset cannot contain multi-tenant modules](elem-multi-tenant.md)
+* [SOAP](elem-soap.md)
+* [Apps containing BPT elements](elem-bpt.md) or [consuming BPT elements](arch-bpt-elements.md)
+* [Modules having a user provider different than Users](elem-user-provider.md)
+* [Multi-tenant modules](elem-multi-tenant.md)
+
+### Infrastructure
+
+* [Self-managed infrastructures](infra-self-managed.md)
+* [Additional pipelines](infra-additional-pipelines.md)

@@ -34,6 +34,6 @@ When the process is executed the following occurs:
 
 1. The [Automatic Activity](<../../../ref/lang/auto/class-automatic-activity.md>) submits the invoice to SAP.
 
-2. The **Wait** activity holds the execution of the process.
+1. The **Wait** activity holds the execution of the process.
 
-3. When the timeout occurs, the **Wait** activity is tentatively ended by executing the **OnClose** callback action: it only ends when the invoice is ok, otherwise the waiting continues until the next timeout (one more day from the current date and time).
+1. When the timeout occurs, the **Wait** activity is tentatively ended by executing the **OnClose** callback action: it only ends when the invoice is ok, otherwise the waiting continues until the next timeout (one more day from the current date and time).

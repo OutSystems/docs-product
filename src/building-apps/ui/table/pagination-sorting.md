@@ -29,7 +29,7 @@ Service Studio automatically creates Actions for sorting the columns in a Table.
 1. In the **OnSort** drop-down list box of your Table Widget properties, select **New On Sort Client Action**. This automatically creates a new Client Action with the necessary logic to sort your table. This logic includes capturing the sort attribute and order, updating the **TableSort** local variable, and refreshing the data source of your table to display the sorted results.
 1. At this step, all table columns are sortable, and you can publish the module.
 
-### Change sorting Attribute 
+### Change sorting Attribute
 
 You can change the Attribute used for sorting.
 
@@ -37,7 +37,7 @@ You can change the Attribute used for sorting.
 1. In the **Sort Attribute** drop-down combo box select the Attribute for sorting.
 
     ![Screenshot showing how to change the sort attribute in a table widget within Service Studio](images/table-sort-attribute-ss.png "Table Sort Attribute Selection")
-    
+
     **Note.** With nested structure as the table **Source** variable, to select a nested item as **Sort Attribute**, the **Data Type** of the **Source** needs to be a **List of Record** with your structure. Also, when using a structure **List** instead of **Record List**, you can only select the first level attributes as the **Sort Attribute**.
 
 1. Publish the module.
@@ -45,7 +45,6 @@ You can change the Attribute used for sorting.
 ### Remove sorting
 
 To remove the sorting feature from the table column, delete the value of the **Sort Attribute** parameter of the **Header Cell** element.
-
 
 ## Pagination
 

@@ -49,7 +49,7 @@ Instead of consuming the microservice directly, Extended Services augment the co
 
 ![Illustration of extended services augmenting core services in a microservices architecture.](images/Microservices-Architecture-in-OutSystems_1.png "Extended Services in Microservices Architecture")
 
-### Multiple Microservice Infrastructures
+## Multiple Microservice Infrastructures
 
 Usually in a microservices approach, each microservice resides in its own infrastructure. This allows each infrastructure to scale independently and not be impacted by the load of other microservices.
 
@@ -91,7 +91,7 @@ Consumers that don’t need the new method are not impacted, as they don’t hav
 
 ![Diagram illustrating a forced signature change in a microservices API and its impact on consumers.](images/Microservices-Architecture-in-OutSystems_6.png "Forcing a Signature Change in Microservices")
 
-2. Create new API version, if a method signature changed and it can’t be forced to every consumer, so the previous version needs to be kept to preserve backward compatibility. There are two situations:
+1. Create new API version, if a method signature changed and it can’t be forced to every consumer, so the previous version needs to be kept to preserve backward compatibility. There are two situations:
 
 * Non-disruptive change of method signature.
 
@@ -124,4 +124,3 @@ To isolate different microservices, simply add more microservices infrastructure
 #### Comparing Scenarios
 
 ![Comparative diagram of single and multiple infrastructure scenarios for microservices.](images/Microservices-Architecture-in-OutSystems_11.png "Comparison of Single vs Multiple Infrastructure Scenarios")
-

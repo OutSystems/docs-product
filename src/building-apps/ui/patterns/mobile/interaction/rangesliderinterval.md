@@ -35,9 +35,9 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track increases or decreases the value.
 
 <div class="info" markdown="1">
- 
+
 The Range Slider Interval Pattern is based on v15.5.1 of the [noUiSlider library](https://refreshless.com/nouislider/). For more information about the Range Slider Interval’s behaviors and extensibility methods, see the provider’s documentation.  
- 
+
 </div>
 
 ## How to use the Range Slider Interval UI Pattern
@@ -55,12 +55,12 @@ In this example, we create a Range Slider Interval that allows the user to selec
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the **Range Slider Interval** widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **StartingValueFrom**, and **StartingValueTo** values. 
+1. From the Toolbox, drag the **Range Slider Interval** widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **StartingValueFrom**, and **StartingValueTo** values.
 
     In this example, we add static values.
 
@@ -74,7 +74,7 @@ In this example, we create a Range Slider Interval that allows the user to selec
 
     ![Screenshot displaying the default IntervalStart and IntervalEnd input parameters for the Range Slider Interval](images/rangesliderinterval-inputparameters-ss.png "Default Input Parameters for Range Slider Interval")
 
-1. From the Toolbox, drag the **Container** widget into the Main Content area of your application's screen, and add your content to the Container placeholder. 
+1. From the Toolbox, drag the **Container** widget into the Main Content area of your application's screen, and add your content to the Container placeholder.
 
     In this example, we add some text and an expression for each of the input parameters.
 
@@ -94,7 +94,7 @@ In this example, we create a Range Slider Interval that allows the user to selec
 
     ![Screenshot of assigning values to variables in a client action for the Range Slider Interval](images/rangesliderinterval-assign-ss.png "Assigning Values in Range Slider Interval Client Action")
 
-1. You can configure the  Range Slider Interval by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, the orientation. For more configurations, expand the **OptionalConfigs** property.   
+1. You can configure the  Range Slider Interval by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, the orientation. For more configurations, expand the **OptionalConfigs** property.
 
     ![Screenshot showing the properties configuration for the Range Slider Interval in Service Studio](images/rangesliderinterval-properties-ss.png "Configuring Properties of Range Slider Interval")
 
@@ -120,7 +120,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|Initialized: Optional  | Event triggered after the RangerSliderInterval instance is ready.<br/>With this event, you get the element Id that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` | 
-|OnValueChange: Mandatory  | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSliderInterval handler. You can use the SetRangeSliderIntervalChangeOnDragEnd to trigger the event only after the user releases it.  | 
+|Initialized: Optional  | Event triggered after the RangerSliderInterval instance is ready.<br/>With this event, you get the element Id that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` |
+|OnValueChange: Mandatory  | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSliderInterval handler. You can use the SetRangeSliderIntervalChangeOnDragEnd to trigger the event only after the user releases it.  |

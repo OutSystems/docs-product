@@ -56,12 +56,12 @@ These are the built-in actions that support setting ARIA attributes. Use them to
 
 Use the **SetAriaHidden** action to hide an element and all content inside it from the assistive technology tools. It's equivalent to setting **aria-hidden="true"** explicitly for an element.
 
-To find the **SetAriaHidden** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility.** 
+To find the **SetAriaHidden** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility.**
 
 ### Change the role of the Alert pattern
 
-To change the ARIA role of the Alert pattern, use the **SetAccessibilityRole** action. 
-To find the **SetAccessibilityRole** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility** 
+To change the ARIA role of the Alert pattern, use the **SetAccessibilityRole** action.
+To find the **SetAccessibilityRole** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility**
 For more information, refer to [Alert pattern](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Alert_pattern) section in this document.
 
 <div class="info" markdown="1">
@@ -130,4 +130,3 @@ To add an **aria-label**, do the following:
 1. Enter the descriptive text you want screen readers to say.
 
     ![Screenshot showing how to add detailed descriptions to short labels using ARIA in OutSystems UI](images/adding-detailed-descriptions-short-labels-ss.png "Adding Detailed Descriptions to Short Labels")
-

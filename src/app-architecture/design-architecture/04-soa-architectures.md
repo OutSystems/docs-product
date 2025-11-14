@@ -58,7 +58,7 @@ No business logic should be added at this level.
 
 </div>
 
-Several versions of the API may be kept at this level to comply with different consumer specifications. For example, a consumer may be sending an input as a Record collection, while another consumer sends the same information via a XML input. Both versions must translate the different types of inputs into an *OutSystems Record List* before calling the actual service.
+Several versions of the API may be kept at this level to comply with different consumer specifications. For example, a consumer may be sending an input as a Record collection, while another consumer sends the same information via a XML input. Both versions must translate the different types of inputs into an _OutSystems Record List_ before calling the actual service.
 
 You can add integration audits at this level to keep track of external consumption of the service.
 
@@ -66,16 +66,15 @@ You can add integration audits at this level to keep track of external consumpti
 
 This level implements the services, with all the business rules and core entities.
 
-**Core Services** should be system-agnostic: 
+**Core Services** should be system-agnostic:
 
 * **External APIs**
 Knowledge of external systems consuming the services is limited to the **External API** level. Any change, addition or removal of an external consumer should only impact the **External API**.
- 
 
 * **Integration Services**
 If the **Core Service** extends an external system of records (an external producer), this should also be abstracted by the **Integration Services** level. If an external producer changes or is replaced, as long as that change is abstracted by the **Integration Services**, the Core Services are not impacted.
 
-When integrating with legacy systems it is common to synchronize data (through **Integration Services**) into *OutSystems entities* (a local cache) in the **Core Services**. The approach enables:
+When integrating with legacy systems it is common to synchronize data (through **Integration Services**) into _OutSystems entities_ (a local cache) in the **Core Services**. The approach enables:
 
 * Coping with performance issues.
 
@@ -112,4 +111,3 @@ Check some OutSystems architecture patterns to get further details on how you ca
 ## More information
 
 To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](intro.md)) guide.
-

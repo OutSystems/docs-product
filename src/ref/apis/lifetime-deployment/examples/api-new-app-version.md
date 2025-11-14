@@ -40,7 +40,7 @@ Request: `GET /lifetimeapi/rest/v2/environments/`
 
 Response body:
 
-```javascript      
+```javascript
 [
   {
     "Key": "f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e",
@@ -73,7 +73,7 @@ Response body:
 ]
 ```
 
-Since we want to create an application version in our environment of type "Development" — coincidentally, the environment is also called "Development" —, we take note of its key so that we can use it in the upcoming API calls: 
+Since we want to create an application version in our environment of type "Development" — coincidentally, the environment is also called "Development" —, we take note of its key so that we can use it in the upcoming API calls:
 
 Environment key: **f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e**
 
@@ -104,7 +104,7 @@ Response body:
 ]
 ```
 
-We want to create an application version for the "EmployeeBackoffice" application. We take note of its key so that we can use it in the next API calls: 
+We want to create an application version for the "EmployeeBackoffice" application. We take note of its key so that we can use it in the next API calls:
 
 "EmployeeBackoffice" application key: **c9a7a82e-0eee-4a3d-8e22-2a19c69c766f**
 

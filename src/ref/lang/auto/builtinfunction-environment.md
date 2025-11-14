@@ -35,10 +35,10 @@ Returns ".Net".
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -56,10 +56,10 @@ Returns the name of the current language locale of the user session. The name of
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -77,10 +77,10 @@ Returns the type of the Platform Database (SqlServer or Oracle) where the module
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -100,10 +100,10 @@ Returns the user agent, as indicated by the header of the HTTP message.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -122,10 +122,10 @@ Returns the identifier of the module that owns the element that is being process
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -143,10 +143,10 @@ Returns the name of the module that is processing the web request.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -164,10 +164,10 @@ Returns the identifier of the module that is processing the web request.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -185,10 +185,10 @@ Method to return a fake tenant identifier for single-tenant modules in order to 
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: No
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: No
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Output
 
@@ -199,4 +199,3 @@ Type: TenantId
 ```
 GetObsoleteTenantId() = 30
 ```
-

@@ -74,4 +74,3 @@ Connection pools enable you to maintain and reuse a “pool” of open database 
 ### Remarks
 
 Note that this also applies when connecting to the OutSystems database from extensions.
-

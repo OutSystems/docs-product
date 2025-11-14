@@ -19,7 +19,7 @@ coverage-type:
 
 # Mobile app troubleshooting and debugging scenarios examples
 
-In this article, you can find information on a few possible Mobile Application scenarios requiring troubleshooting and debugging. You can find a summary of the most common causes and the suggested Tools and techniques to apply for each one of the scenarios. 
+In this article, you can find information on a few possible Mobile Application scenarios requiring troubleshooting and debugging. You can find a summary of the most common causes and the suggested Tools and techniques to apply for each one of the scenarios.
 
 ## Mobile app fails to upgrade
 
@@ -109,7 +109,7 @@ The screenshot below shows an example of using the Logcat module of Android Stud
 
 ![Logcat output in Android Studio showing a plugin causing the mobile app to crash.](images/OutSystems_provides_rich_18.png "Logcat Output in Android Studio")
 
-Note how the Native App Shell handler generates an additional log message that provides more details, including the network connection type and status, version numbers for Cordova, Native App Shell, and device Operating System, Device Model, and UUID. 
+Note how the Native App Shell handler generates an additional log message that provides more details, including the network connection type and status, version numbers for Cordova, Native App Shell, and device Operating System, Device Model, and UUID.
 
 If the mobile device was online when the crash occurred, then this log record gets sent to the OS platform and is visible in Service Center:
 
@@ -142,10 +142,10 @@ If the mobile device was online when the crash occurred, then this log record ge
 * **Useful Tools and techniques**
 
     Any Tool that allows to profile memory usage as the app is running is helpful in this scenario. Start with the easiest Tool, typically the Developer Tools of Chrome or Safari. In the screenshot below, the Timeline feature of Chrome Developer Tools is used to generate a recording while navigating between a few Screens in the application. The recording clearly shows how allocated memory grows significantly as we move from one Screen to another:
- 
+
     ![Memory timeline from Chrome Developer Tools showing increasing JavaScript heap size during page transitions.](images/OutSystems_provides_rich_21.png "Chrome Developer Tools Memory Timeline")
 
-    The Memory Tool of Chrome Developer Tools also allows to take snapshots of the memory usage at different points in time, compare snapshots, and force the Garbage Collector to run to help confirm there is a memory leak 
+    The Memory Tool of Chrome Developer Tools also allows to take snapshots of the memory usage at different points in time, compare snapshots, and force the Garbage Collector to run to help confirm there is a memory leak
 
     ![Memory snapshot comparison in Chrome Developer Tools indicating a potential memory leak.](images/OutSystems_provides_rich_22.png "Memory Snapshot Comparison in Chrome Developer Tools")
 
@@ -154,4 +154,3 @@ If the mobile device was online when the crash occurred, then this log record ge
 A typical symptom reported by users of abnormal memory consumption might be that the application gets sluggish as the user keeps interacting with it over an extended period of time.
 
 </div>
-

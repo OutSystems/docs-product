@@ -13,7 +13,7 @@ audience:
   - full stack developers
   - mobile developers
   - frontend developers
-tags: cloud-native applications,system entities,api development,data integration,platform version migration
+tags: cloud-native applications,system entities,api development,data integration,app conversion
 outsystems-tools:
   - service studio
 helpids: 30629
@@ -25,15 +25,15 @@ In ODC, [user management and authentication](https://success.outsystems.com/docu
 
 ## How to solve
 
-You must solve this pattern in ODC, after proceeding with the code migration to ODC.
+You must solve this pattern in ODC, after proceeding with the code conversion to ODC.
 
 ### Solve in ODC
 
-After migrating your apps, you need to redesign how your applications support user management and authentication:
+After converting your apps, you need to redesign how your applications support user management and authentication:
 
 * Adjust your user management logic to [comply with ODC architecture](#changes).
 
-* [Adapt the login and logout flows of your migrated apps](execute-adapt-login-flow.md) to ODC.
+* [Adapt the login and logout flows of your converted apps](execute-adapt-login-flow.md) to ODC.
 
 ## User management functionality changes in ODC { #changes }
 
@@ -47,7 +47,7 @@ All the remaining [O11 user management system entities](https://success.outsyste
 
 ### User management functionality not available in ODC { #not-available }
 
-Following are O11 user management system actions, extensions and APIs that aren't available in ODC because they are incompatible with ODC architecture. 
+Following are O11 user management system actions, extensions and APIs that aren't available in ODC because they are incompatible with ODC architecture.
 
 #### System actions incompatible with ODC architecture
 

@@ -73,13 +73,13 @@ For more information, refer to [Defining an access token management instance](ht
 
 To define how access tokens are created, use the **Access Token Manager Mapping** tab to associate one or more access token manager instances with the connection.
 
-For more information, refer to [Configuring access token manager mappings](https://docs.pingidentity.com/r/en-us/pingfederate-112/help_oauthsamlgrantattributemappingtasklet_oauthsaml2targetmappingliststate). 
+For more information, refer to [Configuring access token manager mappings](https://docs.pingidentity.com/r/en-us/pingfederate-112/help_oauthsamlgrantattributemappingtasklet_oauthsaml2targetmappingliststate).
 
 ## 7. Configure OpenID Connect policy management
 
 This configuration allows you to define OpenID Connect policies for client access to attributes mapped according to OpenID specifications. Ensure "INCLUDE USER INFO IN ID TOKEN" and "RETURN ID TOKEN ON REFRESH GRANT" are selected.
 
-For more information, refer to [Configuring OpenID Connect policies](https://docs.pingidentity.com/r/en-us/pingfederate-101/help_policiesmanagementtasklet_policiesmanagementstate). 
+For more information, refer to [Configuring OpenID Connect policies](https://docs.pingidentity.com/r/en-us/pingfederate-101/help_policiesmanagementtasklet_policiesmanagementstate).
 
 ## 8. Configure IdP adapters
 
@@ -89,11 +89,11 @@ For more information, refer to [Configuring the IdP adapter](https://docs.pingid
 
 For more information, refer to [Managing IdP adapter grant mapping](https://docs.pingidentity.com/r/en-us/pingfederate-100/help_oauthsource2targetmappingtasklet_oauthidpadapter2targetmappingsstate).
 
-## 10. Create clients (Web and Desktop) 
+## 10. Create clients (Web and Desktop)
 
-#### Web client
+### Web client
 
-**Redirect URIs**: 
+**Redirect URIs**:
 For each of the environments on your infrastructure (including Lifetime), add a new URI for the Service Center login page: ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
   
 **Allowed Grant Types**: Select Authorization Code, Refresh Token, Client Credentials.
@@ -101,6 +101,7 @@ For each of the environments on your infrastructure (including Lifetime), add a 
 #### Native client
 
 **Redirect URIs**: Add the following redirect URIs for mobile and desktop applications:
+
 * ``integrationstudio://auth``
 * ``servicestudiox11://auth``
 * ``https://experiencebuilder.outsystems.com/Authentication/OIDC_Callback``

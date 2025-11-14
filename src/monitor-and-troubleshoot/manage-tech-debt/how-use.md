@@ -25,7 +25,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 </div>
 
-After [Setting up AI Mentor Studio](how-setup.md) and after the first data synchronization occurs, you are ready to use AI Mentor Studio. 
+After [Setting up AI Mentor Studio](how-setup.md) and after the first data synchronization occurs, you are ready to use AI Mentor Studio.
 
 The following guides help you get started on your journey as an AI Mentor Studio user:
 

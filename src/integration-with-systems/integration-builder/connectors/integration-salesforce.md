@@ -58,10 +58,9 @@ Once you receive the information, enter it into Integration Builder, and select 
 
 * **Email address of the app administrator** — The email address that Salesforce uses to contact you or your support team.
 
-* **Salesforce username** — The username of the Salesforce account that you want to associate with all requests that Integration Builder sends to the Salesforce API. Salesforce usernames look like email addresses (for example, john@example.com) but don't have to be an actual email address.  
+* **Salesforce username** — The username of the Salesforce account that you want to associate with all requests that Integration Builder sends to the Salesforce API. Salesforce usernames look like email addresses (for example, <john@example.com>) but don't have to be an actual email address.  
     If you're not sure, search your inbox for the following emails that include your username: "Subject: Welcome to Salesforce: Verify your account", or "Subject: Finish resetting your Salesforce".
 
 ### Use the integration in Service Studio
 
 Check out [how to use the integration in Service Studio](../use.md#use).
-

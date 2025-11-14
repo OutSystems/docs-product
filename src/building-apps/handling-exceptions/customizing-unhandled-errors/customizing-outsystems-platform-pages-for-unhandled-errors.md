@@ -54,7 +54,6 @@ These errors occur when an application is unavailable for one the following reas
 * The application was taken offline in Service Center.
 OutSystems displays the following page:
 ![Screenshot of the default application unavailable error page in OutSystems for an offline application.](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_3.png "Default Application Unavailable Error Page - Offline")
- 
 
 * The application was automatically shut down by the OutSystems Platform due to licensing issues as, for example, the license has expired.
 OutSystems displays the following page:![Screenshot of the default application unavailable error page in OutSystems due to a licensing error.](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_4.png "Default Application Unavailable Error Page - Licensing Error")
@@ -106,4 +105,3 @@ In case of the **Application Unavailable Errors** page some request parameters a
 Changes made to the file of an error handling page take immediate effect on what is displayed by the OutSystems Platform to end users. This means that you should be very careful when working directly on the file and saving unfinished versions; we advise you to (1) copy the file to another directory, (2) work on it, (3) and then copy it back again when finished.
 
 On a farm environment, files of your customized pages must be **manually copied to all of the Front-end nodes**.
-

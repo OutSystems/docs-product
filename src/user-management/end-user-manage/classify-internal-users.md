@@ -26,11 +26,10 @@ By default, all end users are considered internal until you configure specific d
 
 1. Navigate to **Administration** > **Licensing** and click the "End-Users Configuration" link.
 
-1. Under **User Classification Rules**, select **Only users registered with these domains count as Internal** and enter the domain names that you own. 
+1. Under **User Classification Rules**, select **Only users registered with these domains count as Internal** and enter the domain names that you own.
 
     ![Screenshot of Service Center showing the User Classification Rules section where domains are configured to classify internal users](images/sc-user-classification-rules.png "Service Center User Classification Rules Configuration")
 
 1. Click **Save**.
 
 After saving your changes, OutSystems starts the process of calculating the current internal and external end users, which might take a few minutes. The totals are recalculated periodically using a timer process. The **Last update on** indicates the last time the user counts were calculated.
-

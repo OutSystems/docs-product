@@ -34,7 +34,6 @@ If you need your application to work offline, make an informed decision on what 
 
 A good approach is to find the minimum subset of data your users will need to accomplish their tasks while in offline. This will help you trim down the data and remove all sensitive data.
 
-
 ## Store small snippets of sensitive information
 
 In scenarios where you need to store small amounts of information, like a password or your user’s social security number, you can use the keystore of the device ("keychain" on iOS).
@@ -42,7 +41,6 @@ In scenarios where you need to store small amounts of information, like a passwo
 The keystore is an app provided by the device that stores small bits of sensitive information. The keystore secures data by encrypting the data before storing it, and the platform itself carefully controls access to stored items.
 
 To safely store information in the keystore, you can use the [KeyStore Plugin](https://www.outsystems.com/forge/component-details/1550/Key+Store+Plugin/) available in the Forge.
-
 
 ## Store sensitive attributes in Local Storage Entities
 
@@ -57,7 +55,6 @@ If you have a lot of information on your Local Storage that is considered sensit
 To cipher the Local Storage database, you can use the [Ciphered Local Storage Plugin](https://www.outsystems.com/forge/component-details/1500/Ciphered+Local+Storage+Plugin/) available in the Forge, and this will ensure secure 256-bit AES encryption of your data on the device.
 
 Note that this extra security level may introduce a few performance overheads when reading and writing data to the Local Storage, so be sure to take this in consideration when using this approach.
-
 
 ## Re-validate data in the Server
 

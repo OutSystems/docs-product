@@ -75,7 +75,7 @@ Before using groups in your case management app, follow these steps:
     <div class="info" markdown="1">
 
     Ensure the following mapping is set:
-        
+
     * **Name** = `Name`
     * **SystemName** = `SystemName`
     * **Description** = `Description`
@@ -108,4 +108,3 @@ After Set up the extended case management groups, add a group to your case manag
 1. Publish the module by selecting **1-Click Publish**.
 
 After these steps the new group is created in the **Group** and **GroupExtended** entities.
-

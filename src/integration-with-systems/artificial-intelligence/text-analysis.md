@@ -37,7 +37,7 @@ These are the requirements you need to meet to use the Language Analysis compone
     * **Text Analytics**
     * **Bing Spell Check**
     * **Speech to Text**
-    
+
     See [Create resources](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account#create-a-new-azure-cognitive-services-resource) by Microsoft for guidance.
 
 * You installed [OutSystems.AI Language Analysis for Reactive Web App](https://www.outsystems.com/forge/component-overview/7316/outsystems-ai-language-analysis-reactive) in your environment.
@@ -71,8 +71,8 @@ Configure the module in Service Center with the settings from your Azure resourc
 
 1. Skip this step if you're using **westus** location in Azure. If you're using another Azure location, you need to edit the URL of the API.
 
-    * Continue by clicking the **Integrations** tab. Scroll to the **Consumed REST APIs** section and click the property name corresponding to the Azure service to enter a new **Effective URL** value. 
-    
+    * Continue by clicking the **Integrations** tab. Scroll to the **Consumed REST APIs** section and click the property name corresponding to the Azure service to enter a new **Effective URL** value.
+
     * In the **Effective URL** fields of **TextAnalyticsAPI**, **SpellCheckAPI**, and **SpeechAPI**, enter the respective values of **ENDPOINT** from Azure. Before saving, delete the version number of the **ENDPOINT** value, for example `/v2.1`.
 
 ## Language Analysis features
@@ -86,9 +86,9 @@ Drag the **KeyPhrasesHighlight** Block to your screen and enter the two mandator
 * **Text** – The text in which to detect key phrases.
 * **Language** – A two-letter code representing the language that follows the ISO 639-1 standard of [language codes](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support#language-list-and-status).
 
-![Image of the Key Phrases Detection block in the OutSystems UI](images/text-analysis-key-phrases.png "Key Phrases Detection Block") 
+![Image of the Key Phrases Detection block in the OutSystems UI](images/text-analysis-key-phrases.png "Key Phrases Detection Block")
 
-The **GetKeyPhrasesInText** action analyzes the text using the Text Analytics API KeyPhrases action from the Azure Cognitive Services Connector. The results of the detection show bold with a yellow background color. 
+The **GetKeyPhrasesInText** action analyzes the text using the Text Analytics API KeyPhrases action from the Azure Cognitive Services Connector. The results of the detection show bold with a yellow background color.
 
 ![Example showing key phrases detection with highlighted text in the OutSystems application](images/text-analysis-key-phrases-example.png "Example of Key Phrases Detection")
 
@@ -100,12 +100,12 @@ To use the Server Action, drag the **GetKeyPhrasesInText** action to your flow a
 
 Drag the **SentimentDetection** Block to your screen. The Block has three placeholders and the action that performs the sentiment detection (DetectSentimentInText Server Action).
 
-![Image of the Sentiment Detection block with placeholders in the OutSystems UI](images/text-analysis-sentiment-detection.png "Sentiment Detection Block") 
+![Image of the Sentiment Detection block with placeholders in the OutSystems UI](images/text-analysis-sentiment-detection.png "Sentiment Detection Block")
 
 Then, customize these placeholders to show the result of the sentiment detection of a text depending on the score. The placeholders match an interval of a scale that ranges from 0% to 100% where:
 
-* **Negative**: 0% – 39% 
-* **Neutral**: 40% – 69% 
+* **Negative**: 0% – 39%
+* **Neutral**: 40% – 69%
 * **Positive**: 70% – 100%
 
 The percentage is the indicator of the sentiment of the text in each scale interval. By default, the following emojis are indicators of the text sentiment.
@@ -132,12 +132,12 @@ Spell-checking is currently not available in Reactive Apps. The team is working 
 
 The spell-check feature has a Block and a Server Action.
 
-1. Drag the **SpellCheck** Block to a screen in the application. 
-2. In the **TextArea** placeholder, drag an Input widget and bind it to a variable. 
+1. Drag the **SpellCheck** Block to a screen in the application.
+1. In the **TextArea** placeholder, drag an Input widget and bind it to a variable.
 
 ![Image of the Spell Check block in the OutSystems UI with TextArea placeholder](images/text-analysis-image12.png "Spell Check Block")
 
-The **SpellCheck** Block has server-side logic to analyze text and retrieve suggestions for the detected errors. It also has client-side logic that highlights and enables end users to choose what they want to do with the error. 
+The **SpellCheck** Block has server-side logic to analyze text and retrieve suggestions for the detected errors. It also has client-side logic that highlights and enables end users to choose what they want to do with the error.
 
 The user can either select a suggestion or ignore it. Once ignored, the suggestion no longer shows.
 
@@ -219,15 +219,15 @@ To find the Language Analysis Blocks and Actions in Service Studio, look for:
 * Actions: **Logic\Server Actions\LanguageAnalysisReactive**
 * Blocks: **Interface\UI Flows\LanguageAnalysisReactive**
 
-This is the overview of what you can do with the component, as well and the Azure APIs they're based on. 
+This is the overview of what you can do with the component, as well and the Azure APIs they're based on.
 
 | Feature | Action | Block | Azure API type |
-| ---- | ---- | --- | ---- | 
-| Key phrases detection | GetKeyPhrasesInText | TextAnalysis\KeyPhrasesHighlight | Text Analytics | 
+| ---- | ---- | --- | ---- |
+| Key phrases detection | GetKeyPhrasesInText | TextAnalysis\KeyPhrasesHighlight | Text Analytics |
 | Sentiment detection | DetectSentimentInText | TextAnalysis\SentimentDetection | Text Analytics |
 | Entities detection | EntitiesHighlight |  TextAnalysis\GetEntitiesInText | Text Analytics |
 | Spellchecking | RunSpellChecker | NA | Bing Spell Check |
-| Translation | GetTextTranslation | NA | Translator | 
+| Translation | GetTextTranslation | NA | Translator |
 
 ## Language Analysis for Traditional Web App
 

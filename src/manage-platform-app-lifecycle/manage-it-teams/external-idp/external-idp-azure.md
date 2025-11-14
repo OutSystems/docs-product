@@ -34,9 +34,8 @@ To configure Microsoft Entra authentication, follow these steps:
 
         * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
-       
 1. [Configure the platform settings for Mobile and Desktop apps](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=client-secret#configure-platform-settings) using the following settings:
-    
+
     * Set the **Custom redirect URIs** to the following Service Studio protocol:
 
         * ``servicestudio://auth``

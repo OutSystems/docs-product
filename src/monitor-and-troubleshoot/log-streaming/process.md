@@ -32,13 +32,13 @@ For information about the prerequisites for log streaming, refer to [Requirement
 1. Retrieve the APM tool's server URL and the authentication credentials
 To establish a secured connection between your app and the APM tool, you require the APM tool's server URL and the authentication credentials. The steps to retrieve the server URL and the authentication information vary for each tool. For detailed information, refer to the corresponding APM tool documentation.
 
-2. (Optional) [Set up OpenTelemetry collector](configure-collector.md)
+1. (Optional) [Set up OpenTelemetry collector](configure-collector.md)
 If your tool does not support native ingestion of OpenTelemetry data, then you must install and deploy OpenTelemetry collector.
 
-3. [Configure LifeTime](lifetime-streaming.md)  
+1. [Configure LifeTime](lifetime-streaming.md)  
 To enable log streaming from the OutSystems app to the corresponding APM tool, you must configure the APM server URL or OpenTelemetry collector URL and the authentication credentials.  
 
-4. Test and validate the connection
+1. Test and validate the connection
 In LifeTime, test if your app has established a connection with the APM tool and validate if the test data is sent to the destination tool. If the connection fails, then refer to the [troubleshooting guide](https://success.outsystems.com/support/errors/log_streaming_errors/) to understand why and how you can resolve the errors and retest the connection.
 
 ## What's next

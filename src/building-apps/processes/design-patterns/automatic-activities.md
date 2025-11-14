@@ -31,13 +31,11 @@ Use this pattern to design action flows, adding automated business logic to your
 
 * Manage the activities in the process flow or even launch other processes using [Process Extended Actions](../actions-extended/intro.md).
 
-
 ## Handling Transactions
 
 A transaction begins when the **Automatic Activity** starts and is committed when the activity ends.
 
 If the activity has elements of integration with external systems, the transaction handling may require extra care to ensure coherency.
-
 
 ## Assuring Safe Re-Execution
 

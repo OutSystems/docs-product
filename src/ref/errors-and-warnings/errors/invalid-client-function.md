@@ -28,11 +28,11 @@ The `Invalid Client Function` error is issued in the following situations:
 
 * `'<Local Storage Aggregate>' cannot be used in '<Client Action>' because local storage is not available in client functions. Change the 'Function' property of the action '<Client Action>' to 'No'.`
   
-    Client Actions marked as functions must be synchronous and cannot execute Local Storage Aggregates. 
+    Client Actions marked as functions must be synchronous and cannot execute Local Storage Aggregates.
   
     Change the Function property of the Client Action to `No` or avoid executing the Aggregate.
 
-  * `'<JavaScript Node>' cannot be used in '<Client Action>' because the execution of an asynchronous JavaScript node is not available in client functions. Change the 'Function' property of the action '<Client Action>' to 'No'.`
+* `'<JavaScript Node>' cannot be used in '<Client Action>' because the execution of an asynchronous JavaScript node is not available in client functions. Change the 'Function' property of the action '<Client Action>' to 'No'.`
   
     Client Actions marked as functions must be synchronous and cannot execute JavaScript nodes that include the function `$resolve()`.
   

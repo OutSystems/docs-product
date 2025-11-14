@@ -41,9 +41,9 @@ You can use the Alert UI Pattern to highlight and display important information,
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Alert widget into the Main Content area of your application's screen.
@@ -51,15 +51,14 @@ You can use the Alert UI Pattern to highlight and display important information,
     ![Dragging the Alert widget into the Main Content area in Service Studio](images/alert-8-ss.png "Dragging Alert Widget")
 
 1. Select the MessageText placeholder, and enter the Alert message you want to display.
-    
+
     ![Selecting the MessageText placeholder to enter an Alert message](images/alert-11-ss.png "Setting Alert Message")
 
-1. On the **Property** tab, set the **AlertType** property. In this example, the alert type is set to error which changes the message to display in red. 
-    
+1. On the **Property** tab, set the **AlertType** property. In this example, the alert type is set to error which changes the message to display in red.
+
     ![Setting the AlertType property to error in the Property tab](images/alert-9-ss.png "Alert Type Property")
 
-After following these steps and publishing the module, you can test the pattern in your app. 
-
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 

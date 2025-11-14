@@ -31,7 +31,7 @@ If you are creating your first chart, start with [a Line Chart with a fixed numb
 
     ![Screenshot of the Property pane in OutSystems with the '+' button to add a SourceDataPointList](images/line-02.png "Creating a Data Point List")
 
-1. Click **+** to the left of data point **\[0\]** and set the **Label** and **Value** properties to define the first data point. 
+1. Click **+** to the left of data point **\[0\]** and set the **Label** and **Value** properties to define the first data point.
   
     ![Screenshot illustrating the process of setting the Label and Value properties for the first data point in OutSystems](images/line-03.png "Setting Label and Value for the First Data Point")
     ![Screenshot showing additional property settings for the first data point in OutSystems](images/line-04.png "Defining Properties for the First Data Point")
@@ -55,7 +55,7 @@ To create a Line or Area Chart with a variable number of data points follow thes
 1. Drag a **Line Chart** or **Area Chart** from the Toolbox to the Screen.
 
     ![Screenshot showing how to drag a Line Chart or Area Chart from the Toolbox to the Screen in OutSystems](images/line-01.png "Adding a Line or Area Chart to the Screen")
-    
+
 1. On the Property pane of the chart, set the **SourceDataPointList** property to a List containing the data points for the chart.
 
     ![Screenshot showing the Property pane where SourceDataPointList is set to a List for a variable number of data points in OutSystems](images/line-a02.png "Setting SourceDataPointList for Variable Data Points")
@@ -63,7 +63,7 @@ To create a Line or Area Chart with a variable number of data points follow thes
 1. Map the **Label** and **Value** of the **SourceDataPointList** to the correct Attributes from the List containing the data points for the chart.
 
     ![Screenshot of the process of mapping Label and Value of SourceDataPointList to the correct Attributes in OutSystems](images/line-a03.png "Mapping Label and Value for Data Points")
-    
+
     Optionally, you can also set **DataSeriesName**, **Tooltip** and **Color** for the [data points](../auto/charts-api.final.md#Structure_DataPoint).
 
 After publishing your module you can check your chart by opening the screen in browser or device.

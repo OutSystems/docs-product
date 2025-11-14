@@ -28,7 +28,7 @@ You can use the Card Item UI Pattern to list items with multiple content types, 
 
 ![Example of a Card Item UI Pattern with multiple content types](images/carditem-1.png "Card Item UI Pattern Example")
 
-**How to use the Card UI Pattern**
+## How to use the Card UI pattern
 
 1. In Service Studio, in the Toolbox, search for `Card Item`.
 
@@ -41,22 +41,22 @@ You can use the Card Item UI Pattern to list items with multiple content types, 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Card widget into the Main Content area of your application's screen.
 
-    In this example, we drag the widget into the Card widget that's already in the Main Content area of the screen. You can add as many Card Item widgets as required (we add 4). 
+    In this example, we drag the widget into the Card widget that's already in the Main Content area of the screen. You can add as many Card Item widgets as required (we add 4).
 
     ![Process of dragging the Card Item widget into the Main Content area in Service Studio](images/carditem-3-ss.png "Adding Card Item to Main Content Area")
 
-    By default, the Card Item widget contains a Left, Title, Content, and Right placeholder. 
+    By default, the Card Item widget contains a Left, Title, Content, and Right placeholder.
 
-1. Add your content to each of the placeholders. 
+1. Add your content to each of the placeholders.
 
-    In this example, we add an icon to the Left placeholder, text to the Title and Content placeholders, and a phone icon to the Right placeholder. 
+    In this example, we add an icon to the Left placeholder, text to the Title and Content placeholders, and a phone icon to the Right placeholder.
 
     ![Example of adding content to the placeholders of the Card Item widget in Service Studio](images/carditem-4-ss.png "Customizing Card Item Content")
 
@@ -69,3 +69,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Property                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied. </li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

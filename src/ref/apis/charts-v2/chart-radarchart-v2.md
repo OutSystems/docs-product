@@ -28,7 +28,7 @@ This example shows how you can create a simple Radar Chart with multiple series 
 
     ![Screenshot of the Properties tab with the DataPointList property expanded to show options](images/chartradar-expand-ss.png "Expanding DataPointList Property")
 
-1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data).
 
     This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the radar chart.  
 
@@ -38,7 +38,7 @@ This example shows how you can create a simple Radar Chart with multiple series 
 
     ![Screenshot showing the SeriesName property field in the Radar Chart widget's Properties tab](images/chartradar-seriesname-ss.png "Setting SeriesName Property")
 
-1. To add more data points, repeat steps 2 and 3. 
+1. To add more data points, repeat steps 2 and 3.
 
     ![Screenshot demonstrating how to add more data points to the Radar Chart by repeating previous steps](images/chartradar-extra-datapoints-ss.png "Adding Additional Data Points")
 
@@ -53,4 +53,3 @@ This example shows how you can create a simple Radar Chart with multiple series 
 After following these steps, you can publish your module:
 
 ![Image of the final Radar Chart result after publishing the module](images/chartradar-result.png "Final Radar Chart Result")
-

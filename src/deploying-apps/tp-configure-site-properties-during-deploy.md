@@ -38,7 +38,7 @@ When deploying apps, after you add the apps to your deployment plan, the deploym
 
 If there are application modules in the plan with new site properties that were never set in the target environment, you can define the **Effective value** for those site properties in the target environment in this step.
 
-Additionally, if you make any changes to the **IsSecret** property of the site property, you must define the effective value for the site property. To learn more about how to use site properties and secret site properties, refer to [Site property](../ref/lang/auto/class-site-property.md#example-2). 
+Additionally, if you make any changes to the **IsSecret** property of the site property, you must define the effective value for the site property. To learn more about how to use site properties and secret site properties, refer to [Site property](../ref/lang/auto/class-site-property.md#example-2).
 
 ![Screenshot of the deployment plan wizard where the user defines the Effective value for new Site Properties.](images/cfg-site-prop-stg-lt.png "Effective Value for Site Properties")
 
@@ -63,5 +63,3 @@ To update the site properties value in the target environment after the deployme
 This feature doesn't apply to multi-tenant site properties.
 
 </div>
-
-

@@ -24,20 +24,20 @@ The `Invalid Combo Box Widget` error is issued in the following situations:
     You have a Combo Box widget with no values to populate.
 
     Edit the Combo Box widget and, depending on your requirements, define one of the following properties:
-    
+
     * Source Entity/Struct, if you want to display all the rows of an entity or structure
 
     * Source Record List, if you want to filter some of the entity rows to display
-    
+
     * Special List, if you want to display generic values
 
 * `'Variable' cannot be set if 'Source Entity/Struct' is not set`
   
     Either you have a Combo Box widget to display generic values (i.e.: not using a Source Entity or Source Structure) with the Variable property is set. Or you have set the variable that gathers the end user input but no Source Entity or Source Structure is defined.
 
-    Edit this Combo Box widget and do one of the following operations: 
-    
-    * If you are using a special list for generic values, you have to use the Special Variable property to gather end user input and, therefore, unset the Variable property. 
+    Edit this Combo Box widget and do one of the following operations:
+
+    * If you are using a special list for generic values, you have to use the Special Variable property to gather end user input and, therefore, unset the Variable property.
 
     * If you want to use Entities or Structures, set the Variable property accordingly with, the Identifier of the Entity or the Source Identifier Attribute property.
 
@@ -58,11 +58,11 @@ The `Invalid Combo Box Widget` error is issued in the following situations:
     You haven't defined the attribute to display in a Combo Box widget. This attribute must be compliant with the definition of the records presented in this widget.
 
     Edit the Combo Box widget and specify the Source Attribute property:
-    
+
     * If you are displaying the content of an Entity, you have to select an Entity Attribute
-    
-    * If you are displaying the content of a Structure, you have to select a Structure Attribute. 
-    
+
+    * If you are displaying the content of a Structure, you have to select a Structure Attribute.
+
     This property is not mandatory if you are displaying generic values, through the Special List property.
 
 * `Use of 'Source Record List' requires 'Source Entity/Struct' and 'Attribute' to be set`

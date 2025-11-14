@@ -53,7 +53,6 @@ In the following sections you can find general instructions to perform the neces
 
 To implement a workaround for an unsupported use case begin with the procedure in [Exporting SOAP definition files](#exporting).
 
-
 ## Multidimensional arrays
 
 Although SOAP arrays are generally supported, the particular case of multidimensional arrays isn't currently supported in OutSystems.
@@ -270,7 +269,7 @@ Example:
 
 ### Use case workaround
 
-If the element actually represents a property of a simple type then it can always be represented as a string. In this case a possible workaround is to add a `type="xsd:string"` attribute to the element before importing. 
+If the element actually represents a property of a simple type then it can always be represented as a string. In this case a possible workaround is to add a `type="xsd:string"` attribute to the element before importing.
 If the element can represent complex types then there is no generic workaround.
 
 ## Any types - AnySimpleType and AnyAtomicType
@@ -433,8 +432,8 @@ When the definition files have been exported continue as follows:
 
 1. Modify definition files according to the workaround.
 1. Save the file or files and return to **Service Studio**.
-1. Delete the old SOAP web service. 
-1. Right-click SOAP in the Logic tab, and select **Consume SOAP Web Service…** 
+1. Delete the old SOAP web service.
+1. Right-click SOAP in the Logic tab, and select **Consume SOAP Web Service…**
 1. Click **Upload file**, navigate to where you saved the exported definition files, select the WSDL file in the root of the folder, and then click **Consume**.
 
 If you do not receive another error message the SOAP web service should work as expected.

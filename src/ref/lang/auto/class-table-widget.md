@@ -27,7 +27,7 @@ Applies only to Traditional Web Apps.
 
 Table lets you organize the content of the screen in a table. You can also drag other widgets to the cells of the table.
 
-Edit the table layout by these actions from the table toolbox bar: 
+Edit the table layout by these actions from the table toolbox bar:
 
 * Insert, delete and order rows or columns
 * Merge and split table cells
@@ -124,4 +124,3 @@ Note that [Row](class-row-widget.md) and [Cell](class-cell-widget.md) are part o
 </tr>
 </tbody>
 </table>
-

@@ -17,48 +17,47 @@ coverage-type:
 
 # Charts API
 
-
 The OutSystems API for plotting charts.
 
 You can create a chart by dragging a chart widget to the screen. The widget property `SourceDataPointList` is the list consisting of the `DataPoint` elements. The `DataPoint` element defines the drawing of the chart: `Label`, `Value`, `DataSeriesName`, `Tooltip` and `Color`. You need to provide values to the `DataPoint`, and in charts with more than one series, you need to specify each series you want to represent in the chart.
 
-OutSystems uses Highcharts 12.1.2 to generate the charts, and you should consult the [Highcharts documentation](https://api.highcharts.com/highcharts/) for implementation and the API.
+OutSystems uses Highcharts 12.4.0 to generate the charts, and you should consult the [Highcharts documentation](https://api.highcharts.com/highcharts/) for implementation and the API.
 
 ## Summary
 
-Widget | Description
----|---
-[AreaChart](<#AreaChart>) | Area charts illustrate the contribution of values to a total over time.
-[BarChart](<#BarChart>) | Bar charts compare multiple values using horizontal bars.<br/>In this chart, the X-axis runs vertically and the Y-axis runs horizontally.
-[ColumnChart](<#ColumnChart>) | Column charts compare multiple values using vertical bars.
-[LineChart](<#LineChart>) | Line charts illustrate trends of values over time.
-[PieChart](<#PieChart>) | Pie charts illustrate the proportions of values.
+| Widget | Description |
+| ---|--- |
+| [AreaChart](<#AreaChart>) | Area charts illustrate the contribution of values to a total over time. |
+| [BarChart](<#BarChart>) | Bar charts compare multiple values using horizontal bars.<br/>In this chart, the X-axis runs vertically and the Y-axis runs horizontally. |
+| [ColumnChart](<#ColumnChart>) | Column charts compare multiple values using vertical bars. |
+| [LineChart](<#LineChart>) | Line charts illustrate trends of values over time. |
+| [PieChart](<#PieChart>) | Pie charts illustrate the proportions of values. |
 
-Action | Description
----|---
-[AdvancedFormat_Init](<#AdvancedFormat_Init>) | Initializes an AdvancedFormat record with the values passed as arguments. The record is returned by the action.
-[ChartFormat_Init](<#ChartFormat_Init>) | Initializes a ChartFormat record with the values passed as arguments. The record is returned by the action.
-[DataPoint_GetClicked](<#DataPoint_GetClicked>) | Returns the data point that was clicked on the chart.<br/>Execute this action in the On Click action of a chart.
-[DataPoint_Init](<#DataPoint_Init>) | Initializes a DataPoint record with the values passed as arguments. The record is returned by the action.
-[DataPoint_InitMissing](<#DataPoint_InitMissing>) | Initializes a DataPoint to plot a gap on the chart. The record is returned by the action.
-[XAxisFormat_Init](<#XAxisFormat_Init>) | Initializes an XAxisFormat record with the values passed as arguments. The record is returned by the action.
-[YAxisFormat_Init](<#YAxisFormat_Init>) | Initializes a YAxisFormat record with the values passed as arguments. The record is returned by the action.
+| Action | Description |
+| ---|--- |
+| [AdvancedFormat_Init](<#AdvancedFormat_Init>) | Initializes an AdvancedFormat record with the values passed as arguments. The record is returned by the action. |
+| [ChartFormat_Init](<#ChartFormat_Init>) | Initializes a ChartFormat record with the values passed as arguments. The record is returned by the action. |
+| [DataPoint_GetClicked](<#DataPoint_GetClicked>) | Returns the data point that was clicked on the chart.<br/>Execute this action in the On Click action of a chart. |
+| [DataPoint_Init](<#DataPoint_Init>) | Initializes a DataPoint record with the values passed as arguments. The record is returned by the action. |
+| [DataPoint_InitMissing](<#DataPoint_InitMissing>) | Initializes a DataPoint to plot a gap on the chart. The record is returned by the action. |
+| [XAxisFormat_Init](<#XAxisFormat_Init>) | Initializes an XAxisFormat record with the values passed as arguments. The record is returned by the action. |
+| [YAxisFormat_Init](<#YAxisFormat_Init>) | Initializes a YAxisFormat record with the values passed as arguments. The record is returned by the action. |
 
-Structure | Description
----|---
-[AdvancedDataPointFormat](<#Structure_AdvancedDataPointFormat>) | Information to format a data point using Highcharts JSON.
-[AdvancedDataSeriesFormat](<#Structure_AdvancedDataSeriesFormat>) | Information to format a data series using Highcharts JSON.
-[AdvancedFormat](<#Structure_AdvancedFormat>) | Information to format chart elements using Highcharts JSON.
-[ChartFormat](<#Structure_ChartFormat>) | Information to format the chart.
-[DataPoint](<#Structure_DataPoint>) | Information to plot a data point on the chart.
-[XAxisFormat](<#Structure_XAxisFormat>) | Information to format the X-axis on the chart.
-[YAxisFormat](<#Structure_YAxisFormat>) | Information to format the Y-axis on the chart.
+| Structure | Description |
+| ---|--- |
+| [AdvancedDataPointFormat](<#Structure_AdvancedDataPointFormat>) | Information to format a data point using Highcharts JSON. |
+| [AdvancedDataSeriesFormat](<#Structure_AdvancedDataSeriesFormat>) | Information to format a data series using Highcharts JSON. |
+| [AdvancedFormat](<#Structure_AdvancedFormat>) | Information to format chart elements using Highcharts JSON. |
+| [ChartFormat](<#Structure_ChartFormat>) | Information to format the chart. |
+| [DataPoint](<#Structure_DataPoint>) | Information to plot a data point on the chart. |
+| [XAxisFormat](<#Structure_XAxisFormat>) | Information to format the X-axis on the chart. |
+| [YAxisFormat](<#Structure_YAxisFormat>) | Information to format the Y-axis on the chart. |
 
-Static Entity | Description
----|---
-[LegendPosition](<#StaticEntity_LegendPosition>) | The position where the legend is displayed on charts.
-[StackingType](<#StaticEntity_StackingType>) | The way to plot multiple data series on Area, Bar, or Column charts:<br/>- ‘NoStacking’: plot data series side by side to compare them;<br/>- ‘Stacked’: plot data series stacked to show their contribution to a total;<br/>- ‘Stacked100Percent’: plot data series stacked to show their percentage in a total.
-[XAxisValuesType](<#StaticEntity_XAxisValuesType>) | The data type of labels displayed on the X-axis to format them.<br/>Using ‘Auto’ means the type is inferred from the label of the first data point.
+| Static Entity | Description |
+| ---|--- |
+| [LegendPosition](<#StaticEntity_LegendPosition>) | The position where the legend is displayed on charts. |
+| [StackingType](<#StaticEntity_StackingType>) | The way to plot multiple data series on Area, Bar, or Column charts:<br/>- ‘NoStacking’: plot data series side by side to compare them;<br/>- ‘Stacked’: plot data series stacked to show their contribution to a total;<br/>- ‘Stacked100Percent’: plot data series stacked to show their percentage in a total. |
+| [XAxisValuesType](<#StaticEntity_XAxisValuesType>) | The data type of labels displayed on the X-axis to format them.<br/>Using ‘Auto’ means the type is inferred from the label of the first data point. |
 
 ## Widgets
 
@@ -66,7 +65,7 @@ Static Entity | Description
 
 Area charts illustrate the contribution of values to a total over time.
 
-*Inputs*
+_Inputs_
 
 SourceDataPointList
 :   Type: mandatory, [DataPoint](<#Structure_DataPoint>) List.  
@@ -119,7 +118,7 @@ AdvancedFormat
 Bar charts compare multiple values using horizontal bars.  
 In this chart, the X-axis runs vertically and the Y-axis runs horizontally.
 
-*Inputs*
+_Inputs_
 
 SourceDataPointList
 :   Type: mandatory, [DataPoint](<#Structure_DataPoint>) List.  
@@ -171,7 +170,7 @@ AdvancedFormat
 
 Column charts compare multiple values using vertical bars.
 
-*Inputs*
+_Inputs_
 
 SourceDataPointList
 :   Type: mandatory, [DataPoint](<#Structure_DataPoint>) List.  
@@ -223,7 +222,7 @@ AdvancedFormat
 
 Line charts illustrate trends of values over time.
 
-*Inputs*
+_Inputs_
 
 SourceDataPointList
 :   Type: mandatory, [DataPoint](<#Structure_DataPoint>) List.  
@@ -267,7 +266,7 @@ AdvancedFormat
 
 Pie charts illustrate the proportions of values.
 
-*Inputs*
+_Inputs_
 
 SourceDataPointList
 :   Type: mandatory, [DataPoint](<#Structure_DataPoint>) List.  
@@ -296,14 +295,13 @@ AdvancedFormat
     Highcharts JSON to format elements displayed on the chart.  
     Action AdvancedOptions_Init helps to create and initialize this parameter.
 
-
 ## Actions
 
 ### AdvancedFormat_Init { #AdvancedFormat_Init }
 
 Initializes an AdvancedFormat record with the values passed as arguments. The record is returned by the action.
 
-*Inputs*
+_Inputs_
 
 DataPointFormats
 :   Type: optional, [AdvancedDataPointFormat](<#Structure_AdvancedDataPointFormat>) List.  
@@ -316,23 +314,23 @@ DataSeriesFormats
 XAxisJSON
 :   Type: optional, Text.  
     Advanced JSON formatting for the X-axis.  
-    Refer to Highcharts API (http://api.highcharts.com/highcharts#xAxis) for all available options.  
+    Refer to Highcharts API (<http://api.highcharts.com/highcharts#xAxis>) for all available options.  
     As an example, format the dates on the X-axis to &quot;MMM YYYY&quot; using the following Highcharts JSON:  
     &quot;labels:{ formatter: function() { return Highcharts.dateFormat('%b %Y', this.value); } }&quot;
 
 YAxisJSON
 :   Type: optional, Text.  
     Advanced JSON formatting for the Y-axis.  
-    Refer to Highcharts API (http://api.highcharts.com/highcharts#yAxis) for all available options.  
+    Refer to Highcharts API (<http://api.highcharts.com/highcharts#yAxis>) for all available options.  
     As an example, prevent using decimals in the axis values using the following Highcharts JSON:  
     &quot;allowDecimals: false&quot;
 
 HighchartsJSON
 :   Type: optional, Text.  
     Advanced JSON formatting for any element of the chart.  
-    Refer to Highcharts API (http://api.highcharts.com/highcharts) for all available options.
+    Refer to Highcharts API (<http://api.highcharts.com/highcharts>) for all available options.
 
-*Outputs*
+_Outputs_
 
 AdvancedFormat
 :   Type: [AdvancedFormat](<#Structure_AdvancedFormat>).  
@@ -342,7 +340,7 @@ AdvancedFormat
 
 Initializes a ChartFormat record with the values passed as arguments. The record is returned by the action.
 
-*Inputs*
+_Inputs_
 
 ShowDataPointValues
 :   Type: optional, Boolean.  
@@ -352,7 +350,7 @@ UseAnimation
 :   Type: optional, Boolean.  
     Set to True to plot the chart with animation.
 
-*Outputs*
+_Outputs_
 
 ChartFormat
 :   Type: [ChartFormat](<#Structure_ChartFormat>).  
@@ -363,7 +361,7 @@ ChartFormat
 Returns the data point that was clicked on the chart.  
 Execute this action in the On Click action of a chart.
 
-*Outputs*
+_Outputs_
 
 DataPoint
 :   Type: [DataPoint](<#Structure_DataPoint>).  
@@ -373,7 +371,7 @@ DataPoint
 
 Initializes a DataPoint record with the values passed as arguments. The record is returned by the action.
 
-*Inputs*
+_Inputs_
 
 Label
 :   Type: mandatory, Text.  
@@ -396,7 +394,7 @@ Color
 :   Type: optional, Text.  
     Custom color for the data point.
 
-*Outputs*
+_Outputs_
 
 DataPoint
 :   Type: [DataPoint](<#Structure_DataPoint>).  
@@ -406,7 +404,7 @@ DataPoint
 
 Initializes a DataPoint to plot a gap on the chart. The record is returned by the action.
 
-*Inputs*
+_Inputs_
 
 Label
 :   Type: mandatory, Text.  
@@ -417,7 +415,7 @@ DataSeriesName
 :   Type: optional, Text.  
     Name of the series where the data point belongs.
 
-*Outputs*
+_Outputs_
 
 DataPoint
 :   Type: [DataPoint](<#Structure_DataPoint>).  
@@ -427,7 +425,7 @@ DataPoint
 
 Initializes an XAxisFormat record with the values passed as arguments. The record is returned by the action.
 
-*Inputs*
+_Inputs_
 
 Title
 :   Type: optional, Text.  
@@ -450,7 +448,7 @@ ValuesType
     The data type of labels displayed on the X-axis to format them.  
     Using ‘Auto’ means the type is inferred from the label of the first data point.
 
-*Outputs*
+_Outputs_
 
 XAxisFormat
 :   Type: [XAxisFormat](<#Structure_XAxisFormat>).  
@@ -460,7 +458,7 @@ XAxisFormat
 
 Initializes an YAxisFormat record with the values passed as arguments. The record is returned by the action.
 
-*Inputs*
+_Inputs_
 
 Title
 :   Type: optional, Text.  
@@ -486,12 +484,11 @@ GridLineStep
 :   Type: optional, Decimal.  
     The step by which grid lines are displayed on the Y-axis.
 
-*Outputs*
+_Outputs_
 
 YAxisFormat
 :   Type: [YAxisFormat](<#Structure_YAxisFormat>).  
     The initialized YAxisFormat record.
-
 
 ## Structures
 
@@ -499,7 +496,7 @@ YAxisFormat
 
 Information to format a data point using Highcharts JSON.
 
-*Attributes*
+_Attributes_
 
 DataPoint
 :   Type: [DataPoint](<#Structure_DataPoint>).  
@@ -508,7 +505,7 @@ DataPoint
 DataPointJSON
 :   Type: Text (50).  
     Highcharts JSON to format the data point.  
-    Refer to Highcharts API (http://api.highcharts.com/highcharts#series) for all available options.  
+    Refer to Highcharts API (<http://api.highcharts.com/highcharts#series>) for all available options.  
     As an example, show a custom data label in this point, using the following Highcharts JSON:  
     &quot;dataLabels: { enabled: true, formatter: function () { return 'top value' } }&quot;
 
@@ -516,7 +513,7 @@ DataPointJSON
 
 Information to format a data series using Highcharts JSON.
 
-*Attributes*
+_Attributes_
 
 DataSeriesName
 :   Type: Text (50).  
@@ -526,7 +523,7 @@ DataSeriesJSON
 :   Type: Text (50).  
     Highcharts JSON to format the data series.  
     All data points belonging to the data series are affected by this formatting.  
-    Refer to Highcharts API (http://api.highcharts.com/highcharts#series and http://api.highcharts.com/highcharts#plotOptions.series) for all available options.  
+    Refer to Highcharts API (<http://api.highcharts.com/highcharts#series> and <http://api.highcharts.com/highcharts#plotOptions.series>) for all available options.  
     As an example, plot a series with a thicker line in a Line chart using the following Highcharts JSON:  
     &quot;lineWidth: 5&quot;
 
@@ -534,7 +531,7 @@ DataSeriesJSON
 
 Information to format chart elements using Highcharts JSON.
 
-*Attributes*
+_Attributes_
 
 DataPointFormats
 :   Type: [AdvancedDataPointFormat](<#Structure_AdvancedDataPointFormat>) List.  
@@ -547,27 +544,27 @@ DataSeriesFormats
 XAxisJSON
 :   Type: Text (50).  
     Highcharts JSON to format the X-axis.  
-    Refer to Highcharts API (http://api.highcharts.com/highcharts#xAxis) for all available options.  
+    Refer to Highcharts API (<http://api.highcharts.com/highcharts#xAxis>) for all available options.  
     As an example, format the dates on the X-axis to &quot;MMM YYYY&quot; using the following Highcharts JSON:  
     &quot;labels:{ formatter: function() { return Highcharts.dateFormat('%b %Y', this.value); } }&quot;
 
 YAxisJSON
 :   Type: Text (50).  
     Highcharts JSON to format the Y-axis.  
-    Refer to Highcharts API (http://api.highcharts.com/highcharts#yAxis) for all available options.  
+    Refer to Highcharts API (<http://api.highcharts.com/highcharts#yAxis>) for all available options.  
     As an example, prevent using decimals in the axis values using the following Highcharts JSON:  
     &quot;allowDecimals: false&quot;
 
 HighchartsJSON
 :   Type: Text (50).  
     Highcharts JSON to format any element of the chart.  
-    Refer to Highcharts API (http://api.highcharts.com/highcharts) for all available options.
+    Refer to Highcharts API (<http://api.highcharts.com/highcharts>) for all available options.
 
 ### ChartFormat { #Structure_ChartFormat }
 
 Information to format the chart.
 
-*Attributes*
+_Attributes_
 
 ShowDataPointValues
 :   Type: Boolean.  
@@ -581,7 +578,7 @@ UseAnimation
 
 Information to plot a data point on the chart.
 
-*Attributes*
+_Attributes_
 
 Label
 :   Type: Text (50).  
@@ -609,7 +606,7 @@ Color
 
 Information to format the X-axis on the chart.
 
-*Attributes*
+_Attributes_
 
 Title
 :   Type: Text (50).  
@@ -636,7 +633,7 @@ ValuesType
 
 Information to format the Y-axis on the chart.
 
-*Attributes*
+_Attributes_
 
 Title
 :   Type: Text (50).  
@@ -662,28 +659,24 @@ GridLineStep
 :   Type: Decimal (37, 0).  
     The step by which grid lines are displayed on the Y-axis.
 
-
 ## Static Entities
 
 ### LegendPosition { #StaticEntity_LegendPosition }
 
 The position where the legend is displayed on charts.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
-    
 
 Order
 :   Type: Integer.  
-    
 
 Is_Active
 :   Type: Boolean.  
-    
 
-*Records*
+_Records_
 
 * Bottom
 * Top
@@ -695,25 +688,23 @@ Is_Active
 ### StackingType { #StaticEntity_StackingType }
 
 The way to plot multiple data series on Area, Bar, or Column charts:  
-- ‘NoStacking’: plot data series side by side to compare them;  
-- ‘Stacked’: plot data series stacked to show their contribution to a total;  
-- ‘Stacked100Percent’: plot data series stacked to show their percentage in a total.
 
-*Attributes*
+* ‘NoStacking’: plot data series side by side to compare them;  
+* ‘Stacked’: plot data series stacked to show their contribution to a total;  
+* ‘Stacked100Percent’: plot data series stacked to show their percentage in a total.
+
+_Attributes_
 
 Id
 :   Type: Integer.  
-    
 
 Order
 :   Type: Integer.  
-    
 
 Is_Active
 :   Type: Boolean.  
-    
 
-*Records*
+_Records_
 
 * NoStacking
 * Stacked100Percent
@@ -724,23 +715,18 @@ Is_Active
 The data type of labels displayed on the X-axis to format them.  
 Using ‘Auto’ means the type is inferred from the label of the first data point.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
-    
 
 Label
 :   Type: Text (50).  
-    
 
 Order
 :   Type: Integer.  
-    
 
-*Records*
+_Records_
 
 * Text
 * Auto
-
-

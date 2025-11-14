@@ -62,44 +62,44 @@ Check the following examples on the best way to ask for data, depending on your 
 
 #### Get all data
 
-You want | You ask
----|---
-**All employees** | `Find employees`
-**All orders and their descriptions**.<br/>Here, orders and their descriptions are in two different entities, Order and Order Details. | `Show Order and Order Details`
+| You want | You ask |
+| ---|--- |
+| **All employees** | `Find employees` |
+| **All orders and their descriptions**.<br/>Here, orders and their descriptions are in two different entities, Order and Order Details. | `Show Order and Order Details` |
 
 #### Get filtered data
 
-You want | You ask
----|---
-**Employees who live in London** | `Find employees who live in London`
-**Sales managers in London** | `Employees who live in London and whose title is sales manager`
-**Orders that cost more than $10** | `Show orders with a minimum price of $10`
-**Open orders** | `Get open orders`
-**Orders over a variable minimum price.**<br/>The minimum price is in the OrderPriceVar variable. | `Show Order with a TotalAmount (in Order) bigger than OrderPriceVar`
-**Total number of Orders shipped until the current day.** | `How many Orders were delivered until today?`
-**Show the Employee name that is currently logged in the application.** | `Show Employee with GetUserId()`
+| You want | You ask |
+| ---|--- |
+| **Employees who live in London** | `Find employees who live in London` |
+| **Sales managers in London** | `Employees who live in London and whose title is sales manager` |
+| **Orders that cost more than $10** | `Show orders with a minimum price of $10` |
+| **Open orders** | `Get open orders` |
+| **Orders over a variable minimum price.**<br/>The minimum price is in the OrderPriceVar variable. | `Show Order with a TotalAmount (in Order) bigger than OrderPriceVar` |
+| **Total number of Orders shipped until the current day.** | `How many Orders were delivered until today?` |
+| **Show the Employee name that is currently logged in the application.** | `Show Employee with GetUserId()` |
 
 #### Get sorted data
 
-You want | You ask
----|---
-**Employees ordered by the city they live in** | `Get employees ordered by City (in Employee)`
-**Orders sorted by price from highest to lowest** | `Show orders sorted by Price (in Order) from high to low`
+| You want | You ask |
+| ---|--- |
+| **Employees ordered by the city they live in** | `Get employees ordered by City (in Employee)` |
+| **Orders sorted by price from highest to lowest** | `Show orders sorted by Price (in Order) from high to low` |
 
 #### Get grouped data
 
-You want | You ask
----|---
-**All employees grouped by the city they live in** | `Get Employee grouped by CityName (in City)`
+| You want | You ask |
+| ---|--- |
+| **All employees grouped by the city they live in** | `Get Employee grouped by CityName (in City)` |
 
 #### Get the count or average
 
-You want | You ask
----|---
-**How many employees exist** | `Count employees`
-**How many users exist** | `Total number of users`
-**How many orders have shipped to London** | `How many orders shipped to London`
-**The average unit price of orders** | `What is the average order price`
+| You want | You ask |
+| ---|--- |
+| **How many employees exist** | `Count employees` |
+| **How many users exist** | `Total number of users` |
+| **How many orders have shipped to London** | `How many orders shipped to London` |
+| **The average unit price of orders** | `What is the average order price` |
 
 ## Validate data
 

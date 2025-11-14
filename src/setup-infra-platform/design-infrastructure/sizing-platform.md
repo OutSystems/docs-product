@@ -96,4 +96,3 @@ On the other hand, a farm architecture guarantees reliability and uptime in fail
 ## More information
 
 To learn more about how to set up your OutSystems infrastructure, check the [Designing OutSystems infrastructures guide](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures).
-

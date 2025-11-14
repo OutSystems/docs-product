@@ -30,7 +30,7 @@ Use the Card Sectioned pattern to group short pieces of information and highligh
 
 ![Example of a Card Sectioned pattern in a mobile app or reactive web app](images/cardsection-3.png "Card Sectioned Example")
 
-**How to use the Card Sectioned UI Pattern**
+## How to use the Card Sectioned UI pattern
 
 1. In Service Studio, in the Toolbox, search for `Card Sectioned`.
 
@@ -43,9 +43,9 @@ Use the Card Sectioned pattern to group short pieces of information and highligh
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Card Sectioned widget into the Main Content area of your application's screen.
@@ -74,3 +74,7 @@ After following these steps and publishing the module, you can test the pattern 
 | IsVertical (Boolean): Optional   | If True, the Card Sectioned pattern displays vertically. This is the default. If false, the pattern displays horizontally.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ImagePadding (Boolean): Optional | If True, a padding of 24px is applied to the image. This is the default. If False, no padding is applied to the image.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ExtendedClass (Text): Optional   | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

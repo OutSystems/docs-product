@@ -37,13 +37,13 @@ Using Service Studio you can easily define custom data structures.
 
 1. From the **Data** tab ![Small icon representing the Data Tab in Service Studio.](images/Tab_Data.png "Data Tab Icon"), right-click the **Structures** folder and select **Add Structure**.
 
-2. Right-click the new structure, select **Add Attributes**, and set its properties (**Data Type**, for example) using the properties panel located in the bottom right.
+1. Right-click the new structure, select **Add Attributes**, and set its properties (**Data Type**, for example) using the properties panel located in the bottom right.
 
 ### Create a screen
 
 There are two methods to create a screen in Service Studio.
 
-#### Method 1 
+#### Method 1
 
 From the **Interface** tab![Small icon representing the Interface Tab in Service Studio.](images/Tab_Interface.png "Interface Tab Icon"), right-click the **MainFlow** flow in the **UI Flows** folder and select **Add Screen**.
 
@@ -57,9 +57,9 @@ From the **Interface** tab![Small icon representing the Interface Tab in Service
 In Service Studio, you can define reusable methods, known as actions. There are two scopes for these actions: module and screen scope.
 
 * **Module scope:**
-  * From the **Logic** tab ![Small icon representing the Logic Tab in Service Studio.](images/Tab_Logic.png "Logic Tab Icon"), right-click either the **Client Actions** or **Server Actions** folder and choose **Add Client/Server Action**.
+    * From the **Logic** tab ![Small icon representing the Logic Tab in Service Studio.](images/Tab_Logic.png "Logic Tab Icon"), right-click either the **Client Actions** or **Server Actions** folder and choose **Add Client/Server Action**.
 * **Screen scope:**
-  * From the **Interface** tab ![Small icon representing the Interface Tab in Service Studio.](images/Tab_Interface.png "Interface Tab Icon"), right-click a screen ![Small icon representing a screen in Service Studio.](images/Icon_Screen.png "Screen Icon") and select **Add Client Action**.
+    * From the **Interface** tab ![Small icon representing the Interface Tab in Service Studio.](images/Tab_Interface.png "Interface Tab Icon"), right-click a screen ![Small icon representing a screen in Service Studio.](images/Icon_Screen.png "Screen Icon") and select **Add Client Action**.
 
 After selecting the scope, follow these steps:
 
@@ -71,12 +71,11 @@ After selecting the scope, follow these steps:
 
     </div>
 
-2. Right-click on the new client ![Small icon representing a Client Action in Service Studio.](images/Action_Client_sm.png "Client Action Icon") or server ![Small icon representing a Server Action in Service Studio.](images/Action_Server_sm.png "Server Action Icon") action to add **Input/Output Parameters** or **Local Variables**.
+1. Right-click on the new client ![Small icon representing a Client Action in Service Studio.](images/Action_Client_sm.png "Client Action Icon") or server ![Small icon representing a Server Action in Service Studio.](images/Action_Server_sm.png "Server Action Icon") action to add **Input/Output Parameters** or **Local Variables**.
 
-3. Double-click on the action to define its logic. Drag and drop **Logic** widgets from the Toolbox into the flow and set their properties.
+1. Double-click on the action to define its logic. Drag and drop **Logic** widgets from the Toolbox into the flow and set their properties.
 
-4. To make the action accessible as a function in an [expression](../ref/logic/expressions/intro.md), set the action's **Function** parameter to `Yes`.
-
+1. To make the action accessible as a function in an [expression](../ref/logic/expressions/intro.md), set the action's **Function** parameter to `Yes`.
 
 ### Define variables
 
@@ -183,11 +182,11 @@ If calling from a UI element, first double-click on the UI element to edit the *
 
 1. In an action![Small icon representing a Server Action in Service Studio.](images/Action_Server_sm.png "Server Action Icon")![Small icon representing a Client Action in Service Studio.](images/Action_Client_sm.png "Client Action Icon"), drag the aggregate![Small icon representing a Server-side Aggregate widget in Service Studio.](images/Aggregate_Server_sm.png "Server Aggregate Widget")![Small icon representing a Client-side Aggregate widget in Service Studio.](images/Aggregate_Client_sm.png "Client Aggregate Widget") widget into the logic flow, then double-click on it to bring up the Agggregate Editor.
 
-2. Drag any entities you need for this query from the **Data** tab![Small icon representing the Data Tab in Service Studio.](images/Tab_Data.png "Data Tab Icon") onto the Aggregate Editor. Each one will be added to the **Sources** list under the **Sources** tab in the Aggregate Editor, and any relationships will automatically appear under the **Joins** column, which can also be customized. If a join needs to be manually added, click on **Add join**.
+1. Drag any entities you need for this query from the **Data** tab![Small icon representing the Data Tab in Service Studio.](images/Tab_Data.png "Data Tab Icon") onto the Aggregate Editor. Each one will be added to the **Sources** list under the **Sources** tab in the Aggregate Editor, and any relationships will automatically appear under the **Joins** column, which can also be customized. If a join needs to be manually added, click on **Add join**.
 
-3. Add any **Filters** (WHERE) under the **Filters** tab (May say "No Filters") in the Aggregate Editor.
+1. Add any **Filters** (WHERE) under the **Filters** tab (May say "No Filters") in the Aggregate Editor.
 
-4. Add any **Sorts** (SORT BY) under the **Sorting** tab (May say "No Sorts") in the Aggregate Editor.
+1. Add any **Sorts** (SORT BY) under the **Sorting** tab (May say "No Sorts") in the Aggregate Editor.
 
 ### Integrations via REST API
 
@@ -250,4 +249,3 @@ From the **Interface** tab![Small icon representing the Interface Tab in Service
 Select the Form element widget, and configure the Variable property to bind it to in the properties panel (bottom right).
 
 It may require data conversion (see guidance above).
-

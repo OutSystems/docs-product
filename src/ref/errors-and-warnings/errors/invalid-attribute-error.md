@@ -46,9 +46,9 @@ The `Invalid Attribute` error is issued in the following situations:
 
 * `'<attribute>' is an invalid attribute name in <entity>`
   
-    You are using an Oracle database and the name of the entity attribute is a reserved word. 
-    The reserved words are: 
-    
+    You are using an Oracle database and the name of the entity attribute is a reserved word.
+    The reserved words are:
+
     * timestamp
     * number
     * blob
@@ -60,13 +60,13 @@ The `Invalid Attribute` error is issued in the following situations:
 * `'Delete Rule' of attribute <entity>.<attribute> must be set to 'Ignore' since <referenced entity> producer is an extension`
   
     You've created a relationship between an Entity and a Foreign Entity (an entity defined in an Extension). In this situation, it is not possible to guarantee the referential integrity
-    
+
     Set the Delete Rule property of the attribute to Ignore.
 
 * `'Delete Rule' of attribute <entity>.<attribute> must be set to 'Ignore' since <referenced entity> is not a reference of this module`
   
     You've created a relationship between an Entity and an Entity that is not a reference of your module. In this situation, it is not possible to guarantee the referential integrity.
-    
+
     Set the Delete Rule property of the attribute to Ignore.
 
 Double-click on the error line to select the attribute that was left with an invalid attribute.

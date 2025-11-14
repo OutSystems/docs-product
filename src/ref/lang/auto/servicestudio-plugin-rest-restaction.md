@@ -85,4 +85,3 @@ Method of a consumed REST API.
 </tr>
 </tbody>
 </table>
-

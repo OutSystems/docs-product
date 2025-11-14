@@ -29,7 +29,7 @@ In **Service Studio**, click the **1 Publish** button to compile the code and pu
 
 ![Screenshot of the Service Studio interface with the '1 Publish' button highlighted](images/1-publish-ss.png "Publishing in Service Studio")
 
-In **Service Center**, click the **Publish** button. 
+In **Service Center**, click the **Publish** button.
 
 ![Screenshot of the Service Center interface with the 'Publish' button highlighted](images/publish-sc.png "Publishing in Service Center")
 
@@ -57,8 +57,3 @@ When redeploying an app, the compiled code is redistributed to the application s
 You can only redeploy an app in **Service Center**. Go to **Factory** > **Modules**, then select the module you want to redeploy and select **Redeploy Published Version**.
 
 ![Screenshot of the Service Center interface with the 'Redeploy Published Version' option for a module](images/redeploy-sc.png "Redeploying in Service Center")
-
-
-
-
-

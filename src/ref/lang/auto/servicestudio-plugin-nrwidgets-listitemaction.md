@@ -146,4 +146,3 @@ To insert a new List Action, select the List Item and then click on the toolbar 
 </tr>
 </tbody>
 </table>
-

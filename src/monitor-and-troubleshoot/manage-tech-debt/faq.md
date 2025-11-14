@@ -45,7 +45,7 @@ No, this isn't currently planned.
 
 ### Are there APIs to integrate AI Mentor Studio with third-party tools?
 
-Yes, you can use [AI Mentor Studio API](../../ref/apis/auto/ai-mentor-studio-api.final.md) to integrate technical debt data with other technical debt and BI tools you already use. 
+Yes, you can use [AI Mentor Studio API](../../ref/apis/auto/ai-mentor-studio-api.final.md) to integrate technical debt data with other technical debt and BI tools you already use.
 
 ### Do I need to give access to the developers in LifeTime so they can associate their users with AI Mentor Studio?
 
@@ -69,11 +69,11 @@ Snooze it with the "False Positive" reason and explain in the comments why you b
 
 ### How do I check the current version of my AI Mentor Studio probes?
 
-To check the version of your probes, click the **Help** icon on the top-right corner of AI Mentor Studio and then select **About AI Mentor Studio**. 
+To check the version of your probes, click the **Help** icon on the top-right corner of AI Mentor Studio and then select **About AI Mentor Studio**.
 
 ### How do I know if the AI Mentor Studio probes need to be updated?
 
-If an environment has outdated probes, AI Mentor Studio displays a warning message and users with [**Full Control** permissions assigned as a default role](how-works.md#update-probes) can update them autonomously. Users without Full Control permissions must contact their infrastructure administrator to update the AI Mentor Studio's probes. 
+If an environment has outdated probes, AI Mentor Studio displays a warning message and users with [**Full Control** permissions assigned as a default role](how-works.md#update-probes) can update them autonomously. Users without Full Control permissions must contact their infrastructure administrator to update the AI Mentor Studio's probes.
 
 Check out [how to update the AI Mentor Studio probes](how-update-probes.md).
 
@@ -95,8 +95,7 @@ Uninstalling AI Mentor Studio probes won't unregister your infrastructure from A
 
 ### Can I change the target environment of a code analysis probe?
 
-You can change the target environment, but before doing so contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data from AI Mentor Studio. Otherwise, data inconsistencies may occur. After data is deleted, follow the [setup procedure](how-setup.md) to configure a new target environment. 
-
+You can change the target environment, but before doing so contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data from AI Mentor Studio. Otherwise, data inconsistencies may occur. After data is deleted, follow the [setup procedure](how-setup.md) to configure a new target environment.
 
 ## Security, legal and compliance - registration in AI Mentor Studio {#data-faq}
 
@@ -135,7 +134,7 @@ As explained previously, AI Mentor Studio doesn't deal with any sensitive data.
 AI Mentor Studio follows the  same backup/restore procedures as other OutSystems cloud Customers, the procedure and timeframe can be found [here - OutSystems cloud access to database backup](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Access_the_database_of_your_PaaS/Temporary_Access_to_Database_Backup).
 
 If a database restore is necessary, there will be some data loss. The synchronization processes between AI Mentor Studio and the registered infrastructure are executed based on synchronization timestamps. Therefore, all the changes since the last synchronization stored in AI Mentor Studio will be sent back and hence the technical debt information will be recreated accordingly.
- 
+
 ## Security, legal and compliance - personal information {#personal-data-faq}
 
 ### When a user agrees to share personal information are they doing it on behalf of all users of that infrastructure?
@@ -176,7 +175,7 @@ Users can unsubscribe from AI Mentor Studio, at any time, by creating a ticket i
 
 ### If an OutSystems Customer wants to prevent a developer from accessing AI Mentor Studio what should the user do?
 
-When a user is deactivated in LifeTime, it will stop having access to that infrastructure in AI Mentor Studio once that information is synchronized from LifeTime to AI Mentor Studio. The user will regain access to AI Mentor Studio if the LifeTime user is reactivated. 
+When a user is deactivated in LifeTime, it will stop having access to that infrastructure in AI Mentor Studio once that information is synchronized from LifeTime to AI Mentor Studio. The user will regain access to AI Mentor Studio if the LifeTime user is reactivated.
 In any case, unless the user requests to have its data erased from AI Mentor Studio, all of its  findings will continue to be identified and associated with the user.
 
 ## Disclaimers
@@ -198,9 +197,9 @@ AI Mentor Studio collects the following data from the Customer’s infrastructur
 Data of each installation is kept isolated from all other installations using the platform's multi-tenant mechanisms. This ensures data from one installation is not accessible by users of other installations.
 
 This data is used exclusively for the operation of the tool, and to provide the reports and dashboards that the user can access, and for nothing else. Aggregated, sanitized information can also be used for statistical purposes. Under no circumstances will specific personal or Customer data be used for any other purposes besides platform usage.
- 
-Should you have any questions or wish to exercise any rights regarding privacy/data protection laws, contact us at dpo@outsystems.com.
- 
+
+Should you have any questions or wish to exercise any rights regarding privacy/data protection laws, contact us at <dpo@outsystems.com>.
+
 ### GDPR consent form
 
 By ticking this box, you agree and give your express consent to OutSystems to process your IT user data in these infrastructures (including name, username, email, creation date, and identifier) and your OutSystems account data (including name, username, email, creation date and identifier), to inform you about best practices you should be following regarding code and architecture in OutSystems. This personal information is only required for this purpose, and without it, OutSystems is not able to provide you the aforementioned service. We’ll keep your data while it’s needed to deliver the service, and for an additional two years in case you make any further queries. We’ll process such personal data according to our privacy policy. [Open the privacy policy](https://www.outsystems.com/legal/terms-of-use/privacy-statement/). You can unsubscribe from this Service at any time by creating a ticket on the support portal. [Open Support Portal](https://www.outsystems.com/goto/submit-support-case).

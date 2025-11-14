@@ -77,7 +77,8 @@ Response body:
     }
 ]
 ```
-We take note of the environment keys of the Development and Production environments so that we can use them in the next API calls: 
+
+We take note of the environment keys of the Development and Production environments so that we can use them in the next API calls:
 
 Development environment key: **f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e**  
 Production environment key: **849515f2-b4ff-4aca-a9d6-9407bea655f4**
@@ -222,7 +223,6 @@ Adapting the template above to our example:
 Request: `POST /lifetimeapi/rest/v2/deployments/dce64ad4-2ddf-4e54-a639-3524bcd5b9a1/start/`
 
 If the "start" command is successful, OutSystems will return a `202 Accepted` HTTP status code, with an empty response body.
-
 
 ## 6. Check deployment execution status
 

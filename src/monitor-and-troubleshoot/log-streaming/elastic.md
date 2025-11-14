@@ -19,21 +19,13 @@ coverage-type:
   - apply
 ---
 
-# Stream logs to Elastic 
+# Stream logs to Elastic
 
-This article explains how you can set up log streaming from OutSystems applications to the **Elastic** APM tool. 
+This article explains how you can set up log streaming from OutSystems applications to the **Elastic** APM tool.
 
 ## Prerequisites
 
-Before streaming logs to Elastic, ensure you have: 
-
-* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
-
-* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
-
-* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
-
-* Have subscription to log streaming. Contact your Account Manager for provisioning.
+For a complete list of prerequisites, refer to [Introduction to log streaming](intro.md#prerequisites).
 
 ## Set up log streaming
 
@@ -51,7 +43,6 @@ To set up the log streaming to Elastic, you need the **Elastic URL** and **Secre
 
 * [Elastic Observability](https://www.elastic.co/observability)
 
-* [OpenTelemetry integration in Elastic](https://www.elastic.co/guide/en/apm/guide/8.6/open-telemetry.html) 
+* [OpenTelemetry integration in Elastic](https://www.elastic.co/guide/en/apm/guide/8.6/open-telemetry.html)
 
 * [OpenTelemetry Collector configuration](https://opentelemetry.io/docs/collector/configuration/)
-

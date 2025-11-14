@@ -42,16 +42,16 @@ The File Upload pattern is commonly used in a form, but it can also be used as a
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the File Upload widget into the Main Content area of your application's screen.
 
     ![Illustration of dragging the File Upload widget into the Main Content area of an application screen](images/fileupload-image-4.png "Dragging File Upload Widget")
 
-1. After following these steps and publishing the module, you can test the pattern in your app. 
+1. After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Demo
 

@@ -206,7 +206,7 @@ Do the following:
         1\. [Download the Offline Installer for the Runtime](https://go.microsoft.com/fwlink/?LinkID=863265) from Microsoft.  
         2\. Rename the Microsot .NET Framework Installer to `DotNet.exe`.  
         _Note:_ If you're installing a Platform Server version earlier than 11.9, rename the installer to `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` instead.
-    
+
     * **.NET 8.0 Runtime & Hosting Bundle for Windows**  
         1\. [Download the .NET 8.0 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) from Microsoft.  
         2\. Rename the .NET Installer to `DotNet_WindowsHosting_8.exe`
@@ -216,7 +216,7 @@ Do the following:
         1\. [Download the .NET Uninstall Tool v1.5.255402](https://github.com/dotnet/cli-lab/releases/download/1.5.255402/dotnet-core-uninstall-1.5.255402.msi) from Microsoft.  
         2\. Rename the .NET Uninstall Tool Installer to `DotNetCore_Uninstall_15.msi`.
 
-    * **Build Tools 2015 (Optional)** 
+    * **Build Tools 2015 (Optional)**
 
         1\. [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft.  
         2\. Rename the Build Tools Installer to `BuildTools_Full.exe`.
@@ -226,7 +226,7 @@ Do the following:
 </div>
 
 1. Additionally, for Platform Server version 11.21.0 or above, you need to manually install the following binary in the server to ensure the correct behavior of the SEO feature:
-    
+
     **Microsoft Visual C++ 2015-2022 Redistributable (x64)** ([Download the Installer](https://aka.ms/vs/17/release/vc_redist.x64.exe) from Microsoft)
 
 1. Run the installation package as usual. The binaries you downloaded from Microsoft will be detected by the installation package.

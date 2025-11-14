@@ -19,14 +19,13 @@ coverage-type:
 
 In an environment where many developers work on the same module, you often need to incorporate other people's changes to the module. If there are no conflicting changes, Service Studio first tries to automatically integrate the differences. If conflicting changes are detected, you are prompted to manually resolve them. To publish the module, you will need to update your local module, save it locally with conflicts resolved, and then publish it.
 
-The merge capabilities are designed with OutSystems visual language in mind, which enables you to review changes for both visual and textual elements. 
+The merge capabilities are designed with OutSystems visual language in mind, which enables you to review changes for both visual and textual elements.
 
 ![Screenshot showing the conflicts detected during the merge process in Service Studio](images/conflicts-detected.png "Conflicts Detected in Service Studio")
 
 What follows is an overview of the merge feature. For the step by step instructions for conflict resolution, check [Compare and merge example](<merge-example.md>). The document about [the merge feature and team collaboration](<concepts.md>) outlines the merge operations in OutSystems.
 
 ## Modified version detected
-
 
 You can see the **Modified version detected** window when you try publishing your module and Service Studio detects differences between your version and the version on the server. These are the most relevant buttons and their actions.
 
@@ -43,7 +42,7 @@ Publish my version
 
 ## Compare and Merge window
 
-You can open the **Compare and Merge** window by clicking **Compare** in the **Modified version detected** window. The **Compare and Merge window** shows the local and the server version side by side and enables you to select and incorporate both textual and visual elements. Elements with the conflicting changes are labeled "**(merged with conflicts)**". Double-click an element to navigate to the details screen. 
+You can open the **Compare and Merge** window by clicking **Compare** in the **Modified version detected** window. The **Compare and Merge window** shows the local and the server version side by side and enables you to select and incorporate both textual and visual elements. Elements with the conflicting changes are labeled "**(merged with conflicts)**". Double-click an element to navigate to the details screen.
 
 ## Editing the textual elements
 
@@ -79,12 +78,12 @@ The highlights in different colors help identify the differences between the ver
 Here are the color descriptions.
 
 | Color | Name | Meaning |
- --- | --- | --- | 
-![Color reference indicating a gray highlight for a deleted line in the merge comparison](images/color-modifed-deleted.png "Color Reference for Deleted Line") | Gray | Deleted line
-![Color reference indicating a green highlight for an inserted line in the merge comparison](images/color-modifed-added.png "Color Reference for Inserted Line") | Green| Inserted line
-![Color reference indicating a light blue highlight for a modified line without conflicts in the merge comparison](images/color-modifed-light.png "Color Reference for Modified Line Without Conflicts") | Light blue | Modified line with no conflicts, no changes in this version
-![Color reference indicating a dark blue highlight for a modified line with changes in the merge comparison](images/color-modifed-dark.png "Color Reference for Modified Line With Changes") | Dark blue | Modified line with no conflicts, this version was changed
-![Color reference indicating a red highlight for a line with conflicts in the merge comparison](images/color-modifed-conflict.png "Color Reference for Line With Conflicts") | Red | Modified in both versions, has conflicts
+| --- | --- | --- |
+| ![Color reference indicating a gray highlight for a deleted line in the merge comparison](images/color-modifed-deleted.png "Color Reference for Deleted Line") | Gray | Deleted line |
+| ![Color reference indicating a green highlight for an inserted line in the merge comparison](images/color-modifed-added.png "Color Reference for Inserted Line") | Green| Inserted line |
+| ![Color reference indicating a light blue highlight for a modified line without conflicts in the merge comparison](images/color-modifed-light.png "Color Reference for Modified Line Without Conflicts") | Light blue | Modified line with no conflicts, no changes in this version |
+| ![Color reference indicating a dark blue highlight for a modified line with changes in the merge comparison](images/color-modifed-dark.png "Color Reference for Modified Line With Changes") | Dark blue | Modified line with no conflicts, this version was changed |
+| ![Color reference indicating a red highlight for a line with conflicts in the merge comparison](images/color-modifed-conflict.png "Color Reference for Line With Conflicts") | Red | Modified in both versions, has conflicts |
 
 ### "Merge and publish" vs "Merge"
 

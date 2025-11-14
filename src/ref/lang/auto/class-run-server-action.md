@@ -21,7 +21,6 @@ topic:
 
 # Run Server Action
 
-
 Executes a Server Action that runs logic on the server. Server Actions usually encapsulate logic that implements the business rules of your application.
 
 You can use the Run Server Action element in the logic flow of actions such as:
@@ -95,4 +94,3 @@ In the following example, we used the **Valid** output parameter of the **Valida
 </tr>
 </tbody>
 </table>
-

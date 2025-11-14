@@ -23,8 +23,8 @@ In the **Controller** tab you define how front-end servers and the deployment co
 
 ![Screenshot of the Controller tab in the Configuration Tool](images/controller-tab-ct.png "Controller tab")
 
-Configuration | Description  | Default value
---------------|--------------|---------------
-Deployment Controller Server | The hostname or IP address of the deployment controller server. | `localhost`
-Deployment Controller Service Port | Port used by the Deployment Controller Service, in the Deployment Controller Server. | `12000`
-Deployment Service Port | Port used by the Deployment Service, in the Front-end Servers. | `12001`
+| Configuration | Description  | Default value |
+| --------------|--------------|--------------- |
+| Deployment Controller Server | The hostname or IP address of the deployment controller server. | `localhost` |
+| Deployment Controller Service Port | Port used by the Deployment Controller Service, in the Deployment Controller Server. | `12000` |
+| Deployment Service Port | Port used by the Deployment Service, in the Front-end Servers. | `12001` |

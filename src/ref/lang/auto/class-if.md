@@ -49,4 +49,3 @@ The If Tool executes a branch of the action flow if the condition is evaluated a
 </tr>
 </tbody>
 </table>
-

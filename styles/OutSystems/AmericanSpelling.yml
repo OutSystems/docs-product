@@ -1,0 +1,15 @@
+extends: substitution
+message: Use the American spelling '%s' instead of '%s'.
+level: error
+ignorecase: true
+swap:
+  colour: color
+  behaviour: behavior
+  analise: analyze
+  analised: analyzed
+  analising: analyzing
+  centre: center
+  travelling: traveling
+  organise: organize
+  organizing: organizing
+  fortnight: two weeks

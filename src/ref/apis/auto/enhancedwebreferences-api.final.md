@@ -18,7 +18,6 @@ coverage-type:
 
 # EnhancedWebReferences API
 
-
 API to dynamically change Web Service and Web Reference URLs, SOAP headers, credentials, and proxies.
 
 Use this API to customize requests of:
@@ -36,20 +35,20 @@ To customize requests of consumed SOAP web services that were created in OutSyst
 
 ## Summary
 
-Action | Description
----|---
-[ClearWebReferenceHeaders](<#ClearWebReferenceHeaders>) | Use this action after a call to SetWebReferenceSoapHeaders to make a new Web Reference request without SOAP headers.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios.
-[GetWebReferenceSoapHeaders](<#GetWebReferenceSoapHeaders>) | Obtain the SOAP headers sent in the response of a Web Reference call. Use this action after invoking a Web Reference action.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios.
-[GetWebServiceSoapHeaders](<#GetWebServiceSoapHeaders>) | Gets the SOAP headers sent to the Web Service. Use this action inside the Web Service logic.
-[SetWebReferenceCredencials](<#SetWebReferenceCredencials>) | Sets Web Reference HTTP credentials. The username can be used in the form of DOMAIN\USER.<br/>The HTTP credentials persist for the request duration: all Web Reference calls placed during the same request use the specified credentials.<br/>To invoke Web References in the same request without the credentials, use this action without specifying the Username and Password.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios.
-[SetWebReferenceProxy](<#SetWebReferenceProxy>) | Specifies a proxy through which a Web Reference action can be invoked.<br/>This action allows specifying the credentials to authenticate in the proxy. The specified proxy persists for the request duration: all Web Reference calls placed during the same request use that proxy.<br/>To invoke Web References in the same request using the default internet configurations, use this action without specifying the ProxyURL.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios.
-[SetWebReferenceSoapHeaders](<#SetWebReferenceSoapHeaders>) | Sets SOAP headers to be used in Web Reference calls.<br/>The SOAP headers persist for the request duration: all Web Reference calls placed during the same request use the specified headers.<br/>To invoke Web References in the same request without the SOAP headers, use the ClearWebReferenceHeaders action.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios.
-[SetWebReferenceURL](<#SetWebReferenceURL>) | Sets another effective URL for the Web Reference<br/>The specified URL persists for the request duration: all Web Reference calls placed during the same request use the URL.<br/>To invoke Web References in the same request using the default URL, use this action without specifying the URL.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios.
-[SetWebServiceSoapHeaders](<#SetWebServiceSoapHeaders>) | Sets the SOAP headers to be sent by the Web Service in the response. Use this action inside the Web Service Logic.
+| Action | Description |
+| ---|--- |
+| [ClearWebReferenceHeaders](<#ClearWebReferenceHeaders>) | Use this action after a call to SetWebReferenceSoapHeaders to make a new Web Reference request without SOAP headers.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios. |
+| [GetWebReferenceSoapHeaders](<#GetWebReferenceSoapHeaders>) | Obtain the SOAP headers sent in the response of a Web Reference call. Use this action after invoking a Web Reference action.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios. |
+| [GetWebServiceSoapHeaders](<#GetWebServiceSoapHeaders>) | Gets the SOAP headers sent to the Web Service. Use this action inside the Web Service logic. |
+| [SetWebReferenceCredencials](<#SetWebReferenceCredencials>) | Sets Web Reference HTTP credentials. The username can be used in the form of DOMAIN\USER.<br/>The HTTP credentials persist for the request duration: all Web Reference calls placed during the same request use the specified credentials.<br/>To invoke Web References in the same request without the credentials, use this action without specifying the Username and Password.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios. |
+| [SetWebReferenceProxy](<#SetWebReferenceProxy>) | Specifies a proxy through which a Web Reference action can be invoked.<br/>This action allows specifying the credentials to authenticate in the proxy. The specified proxy persists for the request duration: all Web Reference calls placed during the same request use that proxy.<br/>To invoke Web References in the same request using the default internet configurations, use this action without specifying the ProxyURL.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios. |
+| [SetWebReferenceSoapHeaders](<#SetWebReferenceSoapHeaders>) | Sets SOAP headers to be used in Web Reference calls.<br/>The SOAP headers persist for the request duration: all Web Reference calls placed during the same request use the specified headers.<br/>To invoke Web References in the same request without the SOAP headers, use the ClearWebReferenceHeaders action.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios. |
+| [SetWebReferenceURL](<#SetWebReferenceURL>) | Sets another effective URL for the Web Reference<br/>The specified URL persists for the request duration: all Web Reference calls placed during the same request use the URL.<br/>To invoke Web References in the same request using the default URL, use this action without specifying the URL.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios. |
+| [SetWebServiceSoapHeaders](<#SetWebServiceSoapHeaders>) | Sets the SOAP headers to be sent by the Web Service in the response. Use this action inside the Web Service Logic. |
 
-Structure | Description
----|---
-[SOAPHeader](<#Structure_SOAPHeader>) | 
+| Structure | Description |
+| ---|--- |
+| [SOAPHeader](<#Structure_SOAPHeader>) | |
 
 ## Actions
 
@@ -60,7 +59,7 @@ Use this action after a call to SetWebReferenceSoapHeaders to make a new Web Ref
 NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.  
 This only occurs in Consumer/Producer scenarios.
 
-*Inputs*
+_Inputs_
 
 WebReferenceName
 :   Type: Text. Mandatory.  
@@ -73,13 +72,13 @@ Obtain the SOAP headers sent in the response of a Web Reference call. Use this a
 NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.  
 This only occurs in Consumer/Producer scenarios.
 
-*Inputs*
+_Inputs_
 
 WebReferenceName
 :   Type: Text. Mandatory.  
     The Name of the WebReference In Service Studio.
 
-*Outputs*
+_Outputs_
 
 SoapHeaders
 :   Type: RecordList of [SOAPHeader](<#Structure_SOAPHeader>).  
@@ -89,7 +88,7 @@ SoapHeaders
 
 Gets the SOAP headers sent to the Web Service. Use this action inside the Web Service logic.
 
-*Outputs*
+_Outputs_
 
 SoapHeaders
 :   Type: RecordList of [SOAPHeader](<#Structure_SOAPHeader>).  
@@ -104,7 +103,7 @@ To invoke Web References in the same request without the credentials, use this a
 NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.  
 This only occurs in Consumer/Producer scenarios.
 
-*Inputs*
+_Inputs_
 
 WebReferenceName
 :   Type: Text. Mandatory.  
@@ -112,11 +111,9 @@ WebReferenceName
 
 UserName
 :   Type: Text. Mandatory.  
-    
 
 Password
 :   Type: Text. Mandatory.  
-    
 
 ### SetWebReferenceProxy { #SetWebReferenceProxy }
 
@@ -127,7 +124,7 @@ To invoke Web References in the same request using the default internet configur
 NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.  
 This only occurs in Consumer/Producer scenarios.
 
-*Inputs*
+_Inputs_
 
 WebReferenceName
 :   Type: Text. Mandatory.  
@@ -135,15 +132,12 @@ WebReferenceName
 
 ProxyURL
 :   Type: Text. Mandatory.  
-    
 
 ProxyUserName
 :   Type: Text.  
-    
 
 ProxyPassword
 :   Type: Text.  
-    
 
 ### SetWebReferenceSoapHeaders { #SetWebReferenceSoapHeaders }
 
@@ -154,7 +148,7 @@ To invoke Web References in the same request without the SOAP headers, use the C
 NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.  
 This only occurs in Consumer/Producer scenarios.
 
-*Inputs*
+_Inputs_
 
 WebReferenceName
 :   Type: Text. Mandatory.  
@@ -173,7 +167,7 @@ To invoke Web References in the same request using the default URL, use this act
 NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.  
 This only occurs in Consumer/Producer scenarios.
 
-*Inputs*
+_Inputs_
 
 WebReferenceName
 :   Type: Text. Mandatory.  
@@ -189,20 +183,17 @@ URL
 
 Sets the SOAP headers to be sent by the Web Service in the response. Use this action inside the Web Service Logic.
 
-*Inputs*
+_Inputs_
 
 SoapHeaders
 :   Type: RecordList of [SOAPHeader](<#Structure_SOAPHeader>). Mandatory.  
     Structure representing the SOAP headers.
 
-
 ## Structures
 
 ### SOAPHeader { #Structure_SOAPHeader }
 
-
-
-*Attributes*
+_Attributes_
 
 Actor
 :   Type: Text (500).  
@@ -239,4 +230,3 @@ Relay
 Role
 :   Type: Text (500).  
     Recipient of the SOAP header.
-

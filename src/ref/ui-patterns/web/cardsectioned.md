@@ -31,7 +31,7 @@ Applies only to Traditional Web Apps.
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
+| ---|---|--- |
 | .card-sectioned |  .flex-direction-row |  When the parameter Orientation of the card is set to horizontal |
 | .card-sectioned |  .flex-direction-column | When the parameter Orientation of the card is set to vertical  |
 | .card-image |  .padding-none | When the parameter ImagePadding of the card is set to False  |
@@ -56,4 +56,5 @@ Applies only to Traditional Web Apps.
 ![Example of the Card Sectioned Pattern displayed on a phone device](images/cardsectioned-4.png "Card Sectioned on Phone")
 
 ## Notes
+
 The parameter IsRight only works if the parameter Orientation is Not Vertical.

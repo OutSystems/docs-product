@@ -65,7 +65,7 @@ File Plugin in some actions requires parameters of the binary data type. To conv
 
 Here are some examples of how to use File Plugin.
 
-#### Store some text in a file
+### Store some text in a file
 
 The **SaveFile** requires a binary input, so you need to convert the text to binary first. Use the **TextToBinaryData** (1) action from the **BinaryData** extension (you need to reference the **BinaryData** extension first). You can then use the **SaveFile** action from **Logic** > **Client Actions** > **FilePlugin** to create a file and save text (2). Set the file name and the path in the properties (3).
 
@@ -109,7 +109,7 @@ Here is the reference of the actions you can use from the File Plugin. File Plug
 
 ## Storage type
 
-Information about the **StorageTypeId** property, which tells the app where to store the files. This property is available in some of the actions of the plugin. 
+Information about the **StorageTypeId** property, which tells the app where to store the files. This property is available in some of the actions of the plugin.
 
 | StorageTypeId                     | Description                                                                                                     |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------- |

@@ -38,13 +38,12 @@ The short answer is no; the long answer is yes.
 
     ![Diagram illustrating the layers of mobile application architecture, including orchestration, end-user, core business, and foundation modules.](images/how_to_build_mobile_app_2.png "Mobile Application Architecture Layers")
 
-
 * Yes, there are some differences in the way we create the modules for a mobile application:
-    
+
     * First of all, we don’t use orchestration modules, as it doesn’t make sense in a mobile context since we won’t have cross-application processes or dashboards.
-    
+
     * Secondly, we have slight changes on the naming conventions we use. For instance, instead of using the regular Core Services nomenclature, we try to prefix these with Mobile, so a Core Services (_CS) module would become a Mobile Core Services (_MCS) module in mobile.
-    
+
     We have a dedicated module (or modules) for local storage, usually following the Mobile Database (_MDB) naming convention.
 
 **But the biggest difference is that we only have one End-User Module.**
@@ -73,8 +72,7 @@ This allows each team responsible for their own Mobile Core Widgets to have thei
 
 There’s still a factory theme (in this case it’s the module called Mobile App Theme), but there are more specialized modules for each business line approached in the Mobile Core Widgets Modules.
 
-
-# A real scenario Example
+## A real scenario Example
 
 In more complex scenarios, we can use another type of module, the MUI (Mobile UI) that allows the composition of more than one MCW module.
 
@@ -93,4 +91,3 @@ In this example, we will use the aforementioned MUI modules to compose the block
 So, as previously mentioned, the goal for the MCW modules is to provide blocks that will act as building blocks for the MUI modules. They should be separated into concepts, but for the sake of this example we will use a single MCW module.
 
 ![Structure of a single MCW module showing how it provides blocks for the MUI modules in a mobile application.](images/how_to_build_mobile_app_7.png "MCW Module Structure")
-

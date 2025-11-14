@@ -26,7 +26,7 @@ Site rules are not functionally equivalent to module aliases, which define alter
 
 </div>
 
-For site and redirect rules, the setup process is the same between app types. You can set this process up in the SEO URLs section of Service Center. Page rules are only configurable through Service Center for Traditional Web apps. 
+For site and redirect rules, the setup process is the same between app types. You can set this process up in the SEO URLs section of Service Center. Page rules are only configurable through Service Center for Traditional Web apps.
 
 ![Screenshot showing the SEO page rules configuration in the Service Center for Traditional Web apps](images/page-rules-sc.png "SEO Page Rules in Service Center")
 

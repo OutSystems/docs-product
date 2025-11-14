@@ -33,7 +33,7 @@ If you are creating your first chart, start with [a Column Chart with a fixed nu
 
     Each data point corresponds to one column or bar of the chart.
 
-1. Click **+** to the left of data point **\[0\]** and set the **Label** and **Value** properties to define the first data point. 
+1. Click **+** to the left of data point **\[0\]** and set the **Label** and **Value** properties to define the first data point.
   
     ![Screenshot of the OutSystems interface where the Label property for a data point is being set.](images/col-03.png "Setting the Label Property for a Data Point")
     ![Screenshot of the OutSystems interface where the Value property for a data point is being set.](images/col-04.png "Setting the Value Property for a Data Point")
@@ -57,7 +57,7 @@ To create a Column or Bar Chart with a variable number of columns or bars follow
 1. Drag a **Column Chart** or **Bar Chart** from the Toolbox to the Screen.
 
     ![Screenshot showing how to drag a Column Chart or Bar Chart from the Toolbox to the Screen in OutSystems.](images/col-01.png "Adding a Column or Bar Chart to the Screen")
-    
+
 1. On the Property pane of the chart, set the **SourceDataPointList** property to a List containing the data points for the chart.
 
     ![Image depicting the setting of the SourceDataPointList property to a list of data points in the chart's Property pane.](images/col-a02.png "Setting the SourceDataPointList Property")
@@ -65,7 +65,7 @@ To create a Column or Bar Chart with a variable number of columns or bars follow
 1. Map the **Label** and **Value** of the **SourceDataPointList** to the correct Attributes from the List containing the data points for the chart.
 
     ![Screenshot showing the mapping of Label and Value attributes from the SourceDataPointList to the chart in OutSystems.](images/col-a03.png "Mapping Label and Value for Data Points")
-    
+
     Optionally, you can also set **DataSeriesName**, **Tooltip** and **Color** for the [data points](../auto/charts-api.final.md#Structure_DataPoint).
 
 After publishing your module you can check your chart by opening the screen in browser or device.

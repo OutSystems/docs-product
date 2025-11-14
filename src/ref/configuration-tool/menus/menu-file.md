@@ -28,7 +28,7 @@ The **File menu** contains entires for import/export of the settings and configu
 
 You can store the exported configuration file in a shared folder, so it can be accessed by all front-end servers.
 
-The **Import/Export Configuration...** options are very useful in environments with a Deployment Controller server and several front-end servers, as it is required that all front-end servers have the same configuration. 
+The **Import/Export Configuration...** options are very useful in environments with a Deployment Controller server and several front-end servers, as it is required that all front-end servers have the same configuration.
 
 1. Configure your Deployment Controller server.
 1. Export the configuration of the Deployment Controller server using the **Export Configuration...** option.

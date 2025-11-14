@@ -31,11 +31,11 @@ The [Debugger tab](<debugger-ui-reference.md>) shows app information like variab
 
 To debug your app, do the following in Service Studio:
 
-1. Click the 1-Click Publish button to save the latest changes in the module before debugging. 
+1. Click the 1-Click Publish button to save the latest changes in the module before debugging.
 
 1. Set one or more [breakpoints](<breakpoints.md>) in the module you're debugging.
 
-1. Before debugging a **native mobile app**, choose a debugging target in the [Debugger tab](<debugger-ui-reference.md>): Android, iOS, or Google Chrome which emulates a device. The section [Mobile Debugging Scenarios](<#mobile-debugging-scenarios>) includes further details about the different targets. If you're debugging a **mobile app distributed as a PWA**, select **Emulate using Google Chrome** in **Debugger** > **Debug Setup**. 
+1. Before debugging a **native mobile app**, choose a debugging target in the [Debugger tab](<debugger-ui-reference.md>): Android, iOS, or Google Chrome which emulates a device. The section [Mobile Debugging Scenarios](<#mobile-debugging-scenarios>) includes further details about the different targets. If you're debugging a **mobile app distributed as a PWA**, select **Emulate using Google Chrome** in **Debugger** > **Debug Setup**.
 
     ![Debugger tab in Service Studio showing options for native mobile app debugging](images/debugger-tab.png "Debugger Tab in Service Studio")
 
@@ -47,7 +47,7 @@ To debug your app, do the following in Service Studio:
 
 1. Do some tasks in the module, up to a point when the execution runs into a breakpoint and suspends.
 
-1. When you switch to the Service Studio window, the flow or screen containing the element with the breakpoint shows on the canvas. Service Studio selects the element with the breakpoint and marks is with the ![Icon indicating an active debug request in OutSystems Service Studio](images/overlay-active-request.png "Debug Icon") debug icon.
+1. When you switch to the Service Studio window, the flow or screen containing the element with the breakpoint shows on the canvas. Service Studio selects the element with the breakpoint and marks it with the ![Icon indicating an active debug request in OutSystems Service Studio](images/overlay-active-request.png "Debug Icon") debug icon.
 
 1. The execution context shows in the **Threads** tab of the **Debugger** tab, marked with the ![Icon indicating an active debug request in OutSystems Service Studio](images/overlay-active-request.png "Debug Icon") current thread icon, showing the current execution stack of the module elements. The **Debugger** tab also shows additional information you can explore.
 
@@ -74,11 +74,11 @@ There are different ways of debugging a mobile app that help you discover, under
     Test the mobile app directly on a device as your users would run it. It's the best place to test the performance and experience of your app. You can do it on an iOS or Android device. Generate the native app package for your app in Service Studio using the Debug (Android) or Development (iOS) build type, install it on the device, and follow the steps below according to your mobile device platform and computer operating system.
 
     * **To test a mobile app on an iOS device running on Service Studio:**
-    
+
         1. On your **Windows computer**, install [iTunes](<https://www.apple.com/itunes/download/>) (this step is not necessary if you're running Service Studio on a MacOS computer).
 
-        1. On your **device**, turn the **Web Inspector** option **On**. 
-        
+        1. On your **device**, turn the **Web Inspector** option **On**.
+
             For detailed instructions, refer to [Troubleshoot Debugger Connection Issues](<troubleshoot-debugger-connection.md#web-inspector-is-not-enabled-on-your-device>).
 
         1. Connect your device to the computer using a USB cable.
@@ -86,9 +86,9 @@ There are different ways of debugging a mobile app that help you discover, under
             The **Trust This Computer** popup is displayed on your device.
 
         1. Click **Trust** to allow debugging on the device.
-    
+
     * **To test a mobile app on an Android device**:
-    
+
         1. On your **device**, turn [USB debugging On](<https://developer.android.com/studio/debug/dev-options.html#enable>).
 
         1. Connect your mobile device to the computer using a USB cable.
@@ -125,7 +125,7 @@ For Traditional Web Applications, adding the proxy IP address to the Trusted Pro
 
 It's important to note that debugger functionality remains unaffected for Mobile and Reactive Applications, as breakpoints are honored regardless of origin IP addresses.
 
-In farm setups, debugging can be challenging as user connections to specific front-ends cannot be guaranteed. This necessitates ensuring that the load balancer redirects users based on immutable criteria for effective debugging. 
+In farm setups, debugging can be challenging as user connections to specific front-ends cannot be guaranteed. This necessitates ensuring that the load balancer redirects users based on immutable criteria for effective debugging.
 Alternatively, manual distribution of users across front-ends or using DNS load balancing can also help manage debugging challenges.
 
 <div class="info" markdown="1">

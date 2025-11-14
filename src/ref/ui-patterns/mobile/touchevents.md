@@ -16,7 +16,7 @@ coverage-type:
 ---
 
 # Touch Events Reference
- 
+
 <div class="info" markdown="1">
 
 Applies to Mobile Apps and Reactive Web Apps only
@@ -25,10 +25,8 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Events
 
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
-End  |  The event is triggered after the movement event finishes.  |  False
-Move  |  The event is triggered after the movement starts.  |  False
-Start  |  The event is triggered as the touch movement starts.  |  False 
-  
-
+| **Event Name** |  **Description** |  **Mandatory** |
+| ---|---|--- |
+| End  |  The event is triggered after the movement event finishes.  |  False |
+| Move  |  The event is triggered after the movement starts.  |  False |
+| Start  |  The event is triggered as the touch movement starts.  |  False |

@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article provides guidance on refactoring dependencies to private Structures in O11 apps to ensure compatibility with ODC.
 locale: en-us
 guid: a9064f2d-eb97-450c-8053-8c543087c3c0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30533
-tags: service actions, data migration, code migration, outsystems development, outsystems platform
+tags: service actions, data migration, code conversion, outsystems development, outsystems platform
 audience:
   - backend developers
   - full stack developers
@@ -23,7 +23,7 @@ In ODC, Structures are private by default, and can't be explicitly shared betwee
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

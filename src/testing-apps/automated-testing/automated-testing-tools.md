@@ -57,7 +57,7 @@ For instance, you may need your testing tools to work across your whole software
 
 Recording features will allow you to start automating your UI tests quickly. However, you'll soon understand that they do not promote reusability, and you'll have a hard time maintaining your tests as your test base grows bigger.
 
-## Testing Tools 
+## Testing Tools
 
 There are many  tools available for test automation. But we recommend [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework) for component or integration testing.
 
@@ -69,19 +69,19 @@ We want to share with you the results from rehearsing a few tools with different
 
 ### Ghost Inspector®
 
-Ghost Inspector is a SaaS Web UI-only test automation tool. It offers an easy-to-use interface, with the possibility to create test cases manually or with a recorder utility that scans the user interaction with the application screens and saves that interaction as a test case. Although behind the scenes it uses Selenium® to steer the test cases, one of its best features is that it abstracts the user from the actual script. Instead, the tester can select the interactions from dropdown lists (i.e. click, type, drag) and type some CSS selectors to build tests. 
+Ghost Inspector is a SaaS Web UI-only test automation tool. It offers an easy-to-use interface, with the possibility to create test cases manually or with a recorder utility that scans the user interaction with the application screens and saves that interaction as a test case. Although behind the scenes it uses Selenium® to steer the test cases, one of its best features is that it abstracts the user from the actual script. Instead, the tester can select the interactions from dropdown lists (i.e. click, type, drag) and type some CSS selectors to build tests.
 
-It does allow for test reusability, but it doesn't follow a page object model-based approach, and hence may not be an advisable option if you need a lot of UI test scenarios. Because it is a SaaS, it's probably also not a good choice if there are strict security restrictions in allowing access to OutSystems applications from outside the organization. It is for UI tests only, so BDDFramework tests would need to be integrated into another tool. 
+It does allow for test reusability, but it doesn't follow a page object model-based approach, and hence may not be an advisable option if you need a lot of UI test scenarios. Because it is a SaaS, it's probably also not a good choice if there are strict security restrictions in allowing access to OutSystems applications from outside the organization. It is for UI tests only, so BDDFramework tests would need to be integrated into another tool.
 
-### Katalon® 
+### Katalon®
 
 Katalon is a free tool that provides a complete web testing solution. The tool allows setting up test projects and creates test suites and test suite collections, test cases, test objects for UI or API testing, custom keywords, test data files, and reporting. It easily integrates with Git for versioning and has plugins for integration with other tools like Jira®, Jenkins®, and Slack®.
 
-Test implementation using katalon is keyword-driven and requires some coding/scripting skills. You can build custom keywords and reusable test cases to accelerate test design and ease test framework scalability. The tool also allows you to set up your test project data files to enable data-driven testing for both UI and API tests. 
+Test implementation using katalon is keyword-driven and requires some coding/scripting skills. You can build custom keywords and reusable test cases to accelerate test design and ease test framework scalability. The tool also allows you to set up your test project data files to enable data-driven testing for both UI and API tests.
 
 This tool fits very well with OutSystems applications, for UI and API test implementation. As it makes it possible to easily use/build API test objects, it can also be used, together with BDD Framework API, to steer your BDD Framework component tests.
 
-### Tricentis Tosca® 
+### Tricentis Tosca®
 
 Tricentis Tosca is a full-fledged automated testing platform that offers a comprehensive technology support portfolio for technologies such as Web, SAP, API, ServiceNow®, and Oracle®. It can map the entire testing process, which means test planning, requirements mapping, test coverage, test case definition, test data management, and test execution.
 
@@ -97,15 +97,15 @@ BDDFramework is particularly suitable for exercising, on the business logic laye
 
 BDDFramework is recommended when automating the delivery pipeline. It provides a REST API for running tests and obtaining results that can be easily integrated with an external CI/CD orchestrator, such as Jenkins®. Read [Component Testing](component-testing.md)​ for usage guidelines.
 
-Major benefits of using this tool for component testing include: 
+Major benefits of using this tool for component testing include:
 
-* **Test suite capability** — a way of logically grouping tests, on a single test screen 
-* **Faster execution** — this can be achieved leveraging test suite capabilities. 
+* **Test suite capability** — a way of logically grouping tests, on a single test screen
+* **Faster execution** — this can be achieved leveraging test suite capabilities.
 * **Reduced consumption of AOs** — especially compared to other ways of component testing implementation in OutSystems, like using UTF or exposing dedicated services
-* **Visual test representation** — easy-to-read test definition and execution, based on Gherkin syntax (Given, When, Then) 
-* **Faster error analysis** — errors in BDDFramework assertion can be easily identified either in the screen execution or via API. 
-* **CI/CD integration** — easy integration with CI/CD best practice for OutSystems 
-* **Community support** — the component testing tool used as part of OutSystems platform development process, which is widely used by OutSystems customers 
+* **Visual test representation** — easy-to-read test definition and execution, based on Gherkin syntax (Given, When, Then)
+* **Faster error analysis** — errors in BDDFramework assertion can be easily identified either in the screen execution or via API.
+* **CI/CD integration** — easy integration with CI/CD best practice for OutSystems
+* **Community support** — the component testing tool used as part of OutSystems platform development process, which is widely used by OutSystems customers
 
 ### Test Framework® (Forge component)
 
@@ -113,7 +113,7 @@ Provides simple management and automated execution of OutSystems component and i
 
 Using Test Framework, delivery teams can specify their own test suites and execute them manually or periodically, on a given schedule. It grants them an automated regression-testing capability to incorporate in their delivery cycles.
 
-Additionally, Test Framework acts as a factory quality monitor by providing a dashboard where IT teams can monitor the execution of test suites. It can give them a clear understanding of whether their tests are designed for maintainability, or if applications increasingly have more quality and fewer regressions. 
+Additionally, Test Framework acts as a factory quality monitor by providing a dashboard where IT teams can monitor the execution of test suites. It can give them a clear understanding of whether their tests are designed for maintainability, or if applications increasingly have more quality and fewer regressions.
 
 ### JMeter
 
@@ -122,7 +122,7 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 * [How to set up a load test in 5 minutes](https://learn.outsystems.com/training/journeys/tester-654/how-to-set-up-a-load-test-in-5-minutes/o11/2467)
 * [Load testing applications expert talk](https://www.outsystems.com/training/courses/161/load-testing-applications-expert-talk/)
 
-### AppFeedback 
+### AppFeedback
 
 To improve the quality of the information when doing functional tests, developers and/or business users can use the [OutSystems AppFeeback​](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Gather_user_feedback) feature.
 
@@ -136,7 +136,7 @@ Collected feedback can be managed directly in the AppFeedback back-office. It ca
 
 The [AppFeedback Connector](https://www.outsystems.com/forge/Component_Details.aspx?ProjectId=1966) Forge component provides the engine to synchronize AppFeedack data. On top of this, there are several connectors to other ticketing tools:
 
-* [App Feedback to JIRA](https://www.outsystems.com/forge/component-overview/2153/app-feedback-to-jira) 
-* [App Feedback to VSTS](https://www.outsystems.com/forge/component-overview/3081/app-feedback-to-vsts) 
-* [App Feedback to Asana](https://www.outsystems.com/forge/component-overview/2107/app-feedback-to-asana) 
-* [ECT Trello Connector](https://www.outsystems.com/forge/component-overview/1514/ect-trello-connector) 
+* [App Feedback to JIRA](https://www.outsystems.com/forge/component-overview/2153/app-feedback-to-jira)
+* [App Feedback to VSTS](https://www.outsystems.com/forge/component-overview/3081/app-feedback-to-vsts)
+* [App Feedback to Asana](https://www.outsystems.com/forge/component-overview/2107/app-feedback-to-asana)
+* [ECT Trello Connector](https://www.outsystems.com/forge/component-overview/1514/ect-trello-connector)

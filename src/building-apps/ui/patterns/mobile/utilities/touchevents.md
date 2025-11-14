@@ -59,7 +59,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Element | Code |
 |---|---|
 |![JavaScript code snippet to hide a header during a scroll action using Touch Events](images/JS_hide.png "JavaScript Code to Hide Header") |  var header = document.querySelector(".header");<br/>header.classList.add("hide");<br/>header.classList.add("header-on-scroll"); |
-|![JavaScript code snippet to show a header during a scroll action using Touch Events](images/JS_show.png "JavaScript Code to Show Header") |  var header = document.querySelector(".header");<br/>header.classList.remove("hide");<br/>header.classList.remove("header-on-scroll"); | 
+|![JavaScript code snippet to show a header during a scroll action using Touch Events](images/JS_show.png "JavaScript Code to Show Header") |  var header = document.querySelector(".header");<br/>header.classList.remove("hide");<br/>header.classList.remove("header-on-scroll"); |
   
 **Result**
 
@@ -68,7 +68,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 |**Property** | **Description** |
-|---|---| 
+|---|---|
 | WidgetId | This is the element that responds to the touch you configure.|
 
 ## Compatibility with other patterns
@@ -81,3 +81,6 @@ The following sample uses the Touch Events pattern:
 
 ![Sample image of a mobile or reactive web app using the Touch Events pattern](images/TouchEvents-Sample-1.png "Touch Events Sample")
 
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

@@ -42,7 +42,6 @@ Consider the following requirements for Database Replica:
 
 * Your primary database server must meet a minimum scalability requirement of Class 3.
 
-
 ## Request a Database Replica user
 
 To request a Database Replica user, open a support case. You must be a **company administrator** or an **infrastructure administrator** for your company's account.
@@ -53,9 +52,9 @@ Make sure you include the following information in the support case description:
 
 * Indicate **how you want to connect** to the database:
 
-  * Via VPN - You can request a new VPN or use one that's already active.
+    * Via VPN - You can request a new VPN or use one that's already active.
 
-  * Via AWS Transit Gateway - If you already connect to your OutSystems Cloud using this service.
+    * Via AWS Transit Gateway - If you already connect to your OutSystems Cloud using this service.
 
 * Provide a contact number that can receive the SMS to retrieve the password.
 

@@ -153,4 +153,3 @@ Attribute of structure used in input or output parameters of consumed SOAP Web S
 </tr>
 </tbody>
 </table>
-

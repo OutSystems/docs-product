@@ -25,7 +25,7 @@ coverage-type:
 
 This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade/server.hsconf_Configuration_File_Reference)
 
-</div> 
+</div>
 
 The `server.hsconf` is an XML file with all necessary configurations for the OutSystems platform. The settings in the `server.hsconf` configuration file correspond to the settings that are available on the [user interface of the Configuration Tool](../../../ref/configuration-tool/intro.md).
 
@@ -107,7 +107,7 @@ The following are the configurations that are specific to Oracle:
 |NLS_Territory|NLS_LANG Territory Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
 |AdminTablespace|Table space where the system tables are stored.||
 |IndexTablespace|Table space where all the indexes of the platform are stored.||
-|RuntimeTablespace|Table space where the tables created in the Development Environment are stored.|
+|RuntimeTablespace|Table space where the tables created in the Development Environment are stored.| |
 
 ## Logging Database Configuration
 
@@ -166,7 +166,7 @@ The following are the configurations that are specific to Oracle:
 |NLS_Territory|NLS_LANG Territory Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
 |AdminTablespace|Table space where the system tables are stored.||
 |IndexTablespace|Table space where all the indexes of the platform are stored.||
-|RuntimeTablespace|Table space where the tables created in the Development Environment are stored.|
+|RuntimeTablespace|Table space where the tables created in the Development Environment are stored.| |
 |LogTablespace|Table space where the logging tables are stored.||
 
 ## Session Database Configuration
@@ -191,11 +191,12 @@ The following are the configurations that do not depend on the database manageme
 |SessionUser|Name of the owner of the OutSystems session metamodel tables.||
 |SessionPassword*|Password of the owner of the OutSystems session metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
 |SessionAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
-|DeleteExpiredSessionsAvoidLockRowCount|Numeric value.<br/>**Internal**, do not customize.|
+|DeleteExpiredSessionsAvoidLockRowCount|Numeric value.<br/>**Internal**, do not customize.| |
 
 (*) Ignored for systems configured with SQL Server as the platform database, when using Windows Authentication.
 
-### SQL Server/Azure SQL Database 
+### SQL Server/Azure SQL Database
+
 The following are the configurations that are specific to SQL Server and Azure SQL Database:
 
 |Key|Value|Description|

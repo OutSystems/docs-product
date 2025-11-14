@@ -79,7 +79,7 @@ Once you run the example logic, the chatbot replies with the following message:
 
 ## Reply with a card that has an image and a button
 
-Here is another example, which focuses on the logic overview and tha data structure. The bot logic usually has multiple branches, but this short example uses only one flow for better overview. 
+Here is another example, which focuses on the logic overview and tha data structure. The bot logic usually has multiple branches, but this short example uses only one flow for better overview.
 
 ![Screenshot of chatbot logic for creating a thumbnail card with a button in OutSystems](images/webhook-card-download-thumbnail-sample-ss.png "Chatbot Logic for Thumbnail Card")
 

@@ -46,7 +46,7 @@ For example, the condition may be to delete all records whose update timestamps 
 Here are some examples of possible control columns. Select those that make sense according to your use case and add any other that may also apply:
 
 * **LastUpdatedOn** (DateTime): Tracks the last time the record was updated. Used to purge records based on a timestamp (defined using a Site Property, for example).
- 
+
 * **IsActive** (Boolean): Marks the record as active or inactive. Inactive records can be purged later on.
 
 * **IsDeleted** (Boolean): Marks the record for later deletion (soft-delete). The record can be effectively deleted (purged) or restored later.
@@ -63,13 +63,13 @@ The following is an example of the purge process logic:
 
 1. **Set Purge Threshold** - Sets the number of records to purge by iteration. This threshold can be defined using a Site Property, so it can be adjusted without redeploying the module.
 
-2. **CheckRecordsToPurge** - Validates if there are records left to purge.
+1. **CheckRecordsToPurge** - Validates if there are records left to purge.
 
-3. **Has Records to Purge?** - Validates the output of the previous query and executes the purge branch if there are records to purge.
+1. **Has Records to Purge?** - Validates the output of the previous query and executes the purge branch if there are records to purge.
 
-4. **PurgeRecordsInBulk** - Executes a bulk DELETE statement, combined with a clause to limit the amount of purged records (using the Purge Threshold set in step 1). It implements the purge condition.
+1. **PurgeRecordsInBulk** - Executes a bulk DELETE statement, combined with a clause to limit the amount of purged records (using the Purge Threshold set in step 1). It implements the purge condition.
 
-5. **WakePurgeData** - Re-wakes the Timer to check if there are still records to purge.
+1. **WakePurgeData** - Re-wakes the Timer to check if there are still records to purge.
 
 The whole system may require multiple Timers to purge data from different entities. Each Timer will have its purge condition, aligned with the use case associated with that Entity.
 

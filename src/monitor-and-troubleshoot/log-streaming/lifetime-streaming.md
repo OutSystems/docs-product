@@ -22,9 +22,7 @@ To enable log streaming from the O11 app to the corresponding APM tool,you must 
 
 ## Prerequisites
 
-* Before configuring log streaming service in LifeTime, refer to [Requirements for use](intro.md#requirements-for-use).
-
-* Ensure that user have **Admin** built-in role.
+For a complete list of prerequisites, refer to [Introduction to log streaming](intro.md#prerequisites).
 
 ## Configure LifeTime
 
@@ -44,26 +42,31 @@ This example uses **Elastic Cloud** as the destination tool.
 
     ![Screenshot of environment selection for log streaming in LifeTime](images/log-streaming-environment-lt.png "Selecting Environment for Log Streaming")
 
-1. Select the destination tool and click **Continue**. 
+1. Select the destination tool and click **Continue**.
 
     ![Screenshot of destination tool selection for log streaming in LifeTime](images/log-streaming-destination-lt.png "Choosing Destination Tool for Log Streaming")
 
 1. Enter the URL and the secret token and click **Continue**.
-    
-    The connection is tested, and the test data is sent to the destination tool.
-    
-    ![Screenshot of Elastic Cloud configuration fields for log streaming in LifeTime](images/log-streaming-elastic-lt.png "Configuring Elastic Cloud as Log Streaming Destination")
 
+    The connection is tested, and the test data is sent to the destination tool.
+
+    ![Screenshot of Elastic Cloud configuration fields for log streaming in LifeTime](images/log-streaming-elastic-lt.png "Configuring Elastic Cloud as Log Streaming Destination")
 
 1. If the connection is successful, click **Complete set up**.
 
     **Note**: Before you complete the setup, validate that the test data has arrived at the destination tool.  For Elastic Cloud, see [View Logs](elastic.md#view-logs)
 
     ![Screenshot indicating a successful log streaming connection in LifeTime](images/log-streaming-successfulconnection-lt.png "Successful Log Streaming Connection")
-       
+
     If the connection is not successful, you can retry the test connection or review the destination information to ensure it’s correct.
 
     ![Screenshot showing a failed log streaming connection with retry option in LifeTime](images/log-streaming-failedconnection-lt.png "Failed Log Streaming Connection")
+
+<div class="info" markdown="1">
+
+When sending logs from multiple environments to the same destination, create one connection while selecting multiple environments. A maximum of five log streaming connections can exist simultaneously.
+
+</div>
 
 ## Next steps
 

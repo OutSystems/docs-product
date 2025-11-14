@@ -25,10 +25,10 @@ The following configurations are available in the **Log** tab when the **Databas
 
 This section contains general configurations for the Azure SQL Database / SQL Server database connection to the logging database.
 
-Configuration | Description | Default value  
---------------|-------------|---------------  
-Server | The hostname or IP address to the database server. | `localhost`
-Database | The database catalog used for the logging database. | `outsystems_log`  
+| Configuration | Description | Default value |
+| --------------|-------------|--------------- |
+| Server | The hostname or IP address to the database server. | `localhost` |
+| Database | The database catalog used for the logging database. | `outsystems_log` |
 
 For advanced settings, click the **Advanced Settings** link.
 
@@ -48,10 +48,10 @@ These configurations are read-only when Authentication is set to `Windows Authen
 
 </div>
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-User | Name of the user that's the owner of log tables and associated objects. | `OSADMIN_LOG`  
-Password | Password for the user. |
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| User | Name of the user that's the owner of log tables and associated objects. | `OSADMIN_LOG` |
+| Password | Password for the user. | |
 
 ## Runtime section
 
@@ -63,10 +63,10 @@ These configurations are read-only when Authentication is set to `Windows Authen
 
 </div>
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-User | Name of the user used by the applications at runtime for logging purposes. | `OSRUNTIME_LOG`
-Password | Password of the specified user. |
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| User | Name of the user used by the applications at runtime for logging purposes. | `OSRUNTIME_LOG` |
+| Password | Password of the specified user. | |
   
 ## Create/Upgrade Database button
 

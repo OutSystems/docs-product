@@ -71,13 +71,13 @@ To ignore **Forge** components in technical debt analysis:
 1. Click **Ignored Modules**.
 1. Select **Forge components** from the **Types** dropdown.
     ![AI Mentor Studio's Ignored Modules page with Forge components selected from the Types dropdown](images/ignore-forge-components-ams.png "Ignoring Forge Components in AI Mentor Studio")
-1. Click the select all box in the header. 
+1. Click the select all box in the header.
     This selects all of the components on the current page.
     ![Select all checkbox for bulk ignoring modules in AI Mentor Studio](images/bulk-actions-ams.png "Bulk Actions for Ignoring Modules in AI Mentor Studio")
 1. The information area under the filters tells you how many modules have been selected on the current page. Click **Select all &lt;n> items on this list** to add **Forge** components on all pages to the selection.
     ![Information area indicating the number of modules selected to ignore in AI Mentor Studio](images/select-all-ams.png "Select All Items for Ignoring in AI Mentor Studio")
 
-1. The information area now tells you that all components on all pages have been selected. Click **Change to Ignored**. 
+1. The information area now tells you that all components on all pages have been selected. Click **Change to Ignored**.
     ![Button to change selected modules to Ignored status in AI Mentor Studio](images/change-to-ignored-ams.png "Changing Modules to Ignored Status in AI Mentor Studio")
 1. Click **Change to Ignored** in the popup window that asks you to confirm that you want to ignore all of the selected components, including those beyond the displayed page.
     ![Confirmation popup for changing selected modules to Ignored status in AI Mentor Studio](images/bulk-actions-confirm-ams.png "Confirm Bulk Actions in AI Mentor Studio")
@@ -97,5 +97,5 @@ In some cases you may wish to fine-tune your selections. As one example, you may
     <div class="info" markdown="1">
 
     When all modules in an app are changed to **Ignored**, the app itself is also ignored during analysis. In a like manner, if one or more modules of a previously ignored app is changed to **Analyzed** the app itself will also be analyzed.
-    
+
     </div>

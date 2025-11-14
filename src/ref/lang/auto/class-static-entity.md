@@ -116,4 +116,3 @@ A static entity is an entity that has static data associated to it. This static 
 </tr>
 </tbody>
 </table>
-

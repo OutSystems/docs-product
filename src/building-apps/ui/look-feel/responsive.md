@@ -18,7 +18,7 @@ coverage-type:
   - apply
 ---
 
-# Responsive UI 
+# Responsive UI
 
 <div class="info" markdown="1">
 
@@ -26,7 +26,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-On the OutSystems UI, everything is responsive — themes, layouts, and patterns. By default, OutSystems provides a set of adaptive and responsive behaviors that allow developers to easily create applications to work with all browsers, devices, and resolutions. 
+On the OutSystems UI, everything is responsive — themes, layouts, and patterns. By default, OutSystems provides a set of adaptive and responsive behaviors that allow developers to easily create applications to work with all browsers, devices, and resolutions.
 
 ## Device Detection
 
@@ -76,7 +76,7 @@ Depending on screen size and resolution, OutSystems UI captures device type (des
 
 ![Illustration of OutSystems UI responsive layouts for different devices](images/responsive-layout.png "OutSystems UI Responsive Layouts")
 
-On Reactive applications, the OutSystems UI provides the following fully responsive layouts:   
+On Reactive applications, the OutSystems UI provides the following fully responsive layouts:
 
 * LayoutSideMenu
 * LayoutTopMenu
@@ -118,7 +118,7 @@ OutSystems UI provides a set of client-side actions that allow developers to dec
 
 ## Columns Responsive Behavior
 
-OutSytems UI provides a set of structure patterns that allow dividing content in columns that follow the underlying grid. The structure patterns are blocks with specific responsive parameters, which allow the developer to configure how they react on each mobile device. 
+OutSytems UI provides a set of structure patterns that allow dividing content in columns that follow the underlying grid. The structure patterns are blocks with specific responsive parameters, which allow the developer to configure how they react on each mobile device.
 
 ![Screenshot displaying responsive structure patterns in OutSystems UI](images/responsive-structpatt-ss.png "Responsive Structure Patterns Screenshot")
 
@@ -193,6 +193,7 @@ Recently, the inclusion of notch displays has become dominant on mobile devices,
 The safe areas are automatically applied to OutSystems UI layouts and patterns, with full support to notch, adapting the content on your application. If you want to create your own custom content, you can use the CSS variables provided by the OutSystems UI theme:
 
 ### iOS devices
+
 ```
 /* iOS Safe Areas (Notch Support) */
 var(--os-safe-area-top);

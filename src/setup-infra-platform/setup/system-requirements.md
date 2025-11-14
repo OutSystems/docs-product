@@ -25,7 +25,7 @@ topic:
 This article applies to: **OutSystems 11**&#8195;&#8195;Other version available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_system_requirements)
 </div>
 
-Before installing OutSystems on-premises, check if your set up meets the hardware and software requirements listed in this article. To start the installation, refer to [Setting Up OutSystems](intro.md).
+Before installing OutSystems on-premises, verify that your setup meets the hardware and software requirements outlined in this article. To start the installation, refer to [Setting Up OutSystems](intro.md).
 
 ## Platform server
 
@@ -46,7 +46,7 @@ The following are the requirements for installing the Platform Server in your da
 
 <div class="info" markdown="1">
 
-<sup>1</sup> When installing the Platform Server on Windows Server 2022/2025, or upgrading an existing installation to Windows Server 2022/2025, consider increasing the CPU and memory of the machines as the Operating System itself requires more resources.
+<sup>1</sup> When using the Platform Server on Windows Server 2022/2025, consider increasing the CPU and memory of the machines, as the operating system itself requires more resources.
 <br/>
 <br/>
 OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
@@ -59,11 +59,11 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ### Application server
 
-* Microsoft Internet Information Services (IIS) 10.0 or higher configured with a valid SSL certificate emitted by a public certificate authority. The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.
+* Microsoft Internet Information Services (IIS) 10.0 or higher configured with a valid SSL certificate issued by a public certificate authority. The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.
 
 ### Database management system
 
-Use the same type of database engine for all the 3 databases in Platform Server (platform and apps, logs, session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
+Use the same type of database engine for all three 3 databases in Platform Server (platform and apps, logs, and session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
 
 * Microsoft SQL Server supported versions<sup>1, 2</sup> and respective supported compatibility levels:
 
@@ -100,9 +100,9 @@ Future revisions of OutSystems may require the installation of an update within 
 
 * Microsoft .NET Framework, one of the following, depending on the Platform Server version:
     * 4.8.1<sup>1</sup> : supported since Platform Server 11.35.0
-    * 4.8 : supported since Platform Server 11 – Release Oct.2019 CP2
-    * 4.7.2 : supported by all Platform Server 11 versions
-* Microsoft Build Tools 2015<sup>2</sup>
+    * 4.8<sup>2</sup> : supported since Platform Server 11 – Release Oct.2019 CP2
+    * 4.7.2: supported by all Platform Server 11 versions
+* Microsoft Build Tools 2015<sup>3</sup>
 * .NET Runtime & Hosting Bundle for Windows in the following versions, depending on the Platform Server version:
     * .NET 8.0 Runtime & Hosting Bundle for Windows for Platform Server version 11.27.0 or newer
     * .NET 6.0 Runtime & Hosting Bundle for Windows for Platform Server versions between 11.17.1 and 11.26.0
@@ -115,35 +115,67 @@ Future revisions of OutSystems may require the installation of an update within 
 
 <div class="info" markdown="1">
 
-<sup>1</sup> Using Microsoft .NET Framework 4.8.1 implies a slightly higher memory usage for OutSystems applications, consider increasing the memory of Frontends.
-<sup>2</sup> Microsoft Build Tools is no longer required starting on Platform Server versions 11.35.0.
+<sup>1</sup> Using Microsoft .NET Framework 4.8.1 implies a slightly higher memory usage for OutSystems apps, consider increasing the memory of Frontends.
+<br/>
+<br/>
+<sup>2</sup> This version of .NET or later is required to ensure a FIPS-compliant environment.
+<br/>
+<br/>
+<sup>3</sup> Microsoft Build Tools is no longer required starting from Platform Server versions 11.35.0.
+
+</div>
+
+### FIPS-compliance
+
+From version 11.38.0 onwards, the Platform Server can be installed on FIPS-compliant systems.
+
+To be able to achieve FIPS-compliance, customers must:
+
+* Install Platform Server 11.38.0 or higher
+* Use .NET 4.8 Framework or higher
+* Purchase and install the commercial version of RabbitMQ<sup>1</sup>
+
+<div class="info" markdown="1">
+
+<sup>1</sup> Platform Server includes the Open Source version of RabbitMQ, which is not FIPS-compliant.
 
 </div>
 
 ## Cache invalidation service
 
-RabbitMQ Server and Erlang versions numbers follow the format: Major.Minor.Patch. OutSystems Platform Server versions require minimum Patch versions of RabbitMQ Server and Erlang.
+RabbitMQ Server and Erlang version numbers follow the format: Major.Minor.Patch. OutSystems Platform Server versions require minimum Patch versions of RabbitMQ Server and Erlang.
 
-You can upgrade to the latest Patch of RabbitMQ Server, and the latest Minor of Erlang provided that:
+You can upgrade to the latest Patch of RabbitMQ Server provided that:
 
-* The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 3.10.25 for environments using Platform Server 11.19.0.
-* The Minor version of Erlang is higher than the one listed for the Platform Server version. For example, you can upgrade Erlang version to 25.2 for environments using Platform Server 11.19.0.
+* The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 3.10.25 for environments using Platform Server 11.19.0
+* The Minor version of Erlang is higher than the one listed for the Platform Server version. For example, you can upgrade Erlang version to 25.2 for environments using Platform Server 11.19.0
 * You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html). For example, when upgrading for RabbitMQ Server 3.10.25 you can upgrade Erlang to 25.2
+* The Patch RabbitMQ Server is higher than the one listed for the Platform Server version. For example, you can upgrade to RabbitMQ Server 4.1.5 for environments using Platform Server 11.38.0.
+
+Depending on the RabbitMQ used by the Platform Server, you can upgrade to either the latest Minor or Patch of Erlang provided that:
+
+* The Minor/Patch version of Erlang is higher than the one listed for the Platform Server version. For example, you can upgrade Erlang:
+    * to 27.4 (Minor) for environments using Platform Server 11.38.0.
+    * to 26.2.5 (Patch) for environments using Platform Server 11.37.0.
+* You keep the combination with the Erlang compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html).
 
 The following are the minimum Patch versions of RabbitMQ Server and Erlang per Platform Server version:
 
-* For Platform Server 11.27.0 and higher: RabbitMQ Server 3.13.0 and Erlang version 26.2.2
+* For Platform Server 11.38.0 and higher: RabbitMQ Server 4.1.2 and Erlang version 27.3.4
+* From Platform Server 11.27.0 to 11.37.0: RabbitMQ Server 3.13.0 and Erlang version 26.2.2
 * From Platform Server 11.19.0 to 11.26.0: RabbitMQ Server 3.10.14 and Erlang version 25.1.2
 * From Platform Server 11.15.0 to 11.18.1: RabbitMQ Server 3.9.11 and Erlang version 24.2
 * From Platform Server 11.13.2 to 11.14.1: RabbitMQ Server 3.8.21 and Erlang version 23.2
 * From Platform Server 11.9.0 to 11.13.1: RabbitMQ Server 3.8.3 and Erlang version 22.3
 * For Platform Server 11.8.2 and lower: RabbitMQ Server 3.7.7 and Erlang version 20.3
 
-During Platform Server installation, OutSystems provides a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation if it fulfills the same version requirements.
+During Platform Server installation, OutSystems provides a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Platform Server includes the open-source version of RabbitMQ. The commercial version of RabbitMQ is required for full FIPS compliance.
+
+Alternatively, you can use an existing RabbitMQ Server and Erlang installation if it fulfills the same version requirements.
 
 ## Amazon EC2 considerations
 
-OutSystems can run on Amazon EC2 instances. Each instance must fulfill one the following requirements:
+OutSystems can run on Amazon EC2 instances. Each instance must fulfill one of the following requirements:
 
 * The `Amazon EC2Launch` service must be running, available from Amazon EC2Launch v2 (starting with Platform Server 11.32.0)
 
@@ -232,13 +264,17 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 * MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)<sup>1</sup>
 * MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)<sup>1</sup>
 * MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
+* MySQL 8.4 (8.4.3 or later within the 8.3 version, all editions), since Platform Server 11.38.0
 
 <sup>1</sup> This version is no longer supported by MySQL and isn't supported by OutSystems starting with Platform Server version 11.32.0.
 
 ### PostgreSQL database
 
-* PostgreSQL 12.x.x, since Platform Server 11.15.0
+* PostgreSQL 12.x.x, since Platform Server 11.15.0<sup>1</sup>
 * PostgreSQL 13.x.x, since Platform Server 11.15.0
+* PostgreSQL 17.x.x, since Platform Server 11.38.0
+
+<sup>1</sup> This version is no longer supported by PostgreSQL and isn't supported by OutSystems starting with Platform Server version 11.38.0.
 
 ### Aurora PostgreSQL database
 
@@ -282,17 +318,17 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 ### Hardware (minimum requirements)
 
-* 1.8 GHz dual-core processor or better.
-* 2 GB of RAM (4 GB recommended).
+* 1.8 GHz dual-core processor or better
+* 2 GB of RAM (4 GB recommended)
 * 1 GB of free disk space
 
 #### Operating System
 
 **macOS (cross-platform Service Studio only):**
 
-* macOS Ventura since Service Studio 11.54.60
-* macOS Sonoma since Service Studio 11.54.60
+* macOS Tahoe since Service Studio 11.55.45
 * macOS Sequoia since Service Studio 11.55.0
+* macOS Sonoma since Service Studio 11.54.60
 
 **Windows:**
 
@@ -301,12 +337,12 @@ Before setting up Service Studio make sure that your computer meets the followin
 * Microsoft Windows Server 2019
 * Microsoft Windows Server 2016
 
- OutSystems only supports Windows and macOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple respectively.
+ OutSystems only supports Windows and macOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple, respectively.
 
 #### Required software
 
 * Google Chrome version 54 or later, or Microsoft Edge (Edge is only available for Service Studio running on Windows)
-:   To perform client-side debugging in Service Studio using a  desktop browser 
+:   To perform client-side debugging in Service Studio using a  desktop browser
 * Android device drivers
 :   To perform client-side debugging on an Android mobile device if the device isn't recognized automatically
 * iTunes 12.1.3 or later
@@ -324,7 +360,7 @@ The installation requirements for Integration Studio are as follows:
 
 Limitations:
 
-* The touch feature of touch screen devices isn't supported, however, you can use touch screen devices with keyboard and mouse.
+* The touch feature of touch screen devices isn't supported. However, you can use touch screen devices with a keyboard and mouse.
 
 #### Operating System
 
@@ -349,15 +385,15 @@ Running an OutSystems app on a browser is supported for 6 months after the end-o
 
 Use the most current stable version of the following browsers:
 
-* Edge 
-* Firefox 
-* Google Chrome 
-* Safari 
+* Edge
+* Firefox
+* Google Chrome
+* Safari
 
 ### Progressive Web Apps
 
-* Default browser for latest stable version of Android
-* Default browser for latest stable version of iOS
+* Default browser for the latest stable version of Android
+* Default browser for the latest stable version of iOS
 
 ### Mobile App packages
 
@@ -369,9 +405,9 @@ For more information on the supported Android and iOS platform versions, refer t
 
 Use the most current stable version of the following browsers:
 
-* Internet Explorer 
-* Edge 
-* Firefox 
+* Internet Explorer
+* Edge
+* Firefox
 * Google Chrome
 * Safari
 

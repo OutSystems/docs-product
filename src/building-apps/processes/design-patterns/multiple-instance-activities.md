@@ -30,7 +30,6 @@ The **advantage** of using a new **Process** is that it **clarifies the structur
 
 The **disadvantage** is that **further design has to be done** to [communicate with the new process](process-communicate.md) and also to make sure all child processes are terminated when a parent process is terminated.
 
-
 ## Example
 
 As an example, think of a recruitment process for candidates who apply for a job. At some point in the process interviews are scheduled, each one to be held by an interviewer. The number of scheduled interviews depends on the job position. The recruitment process only continues after all interviews are finished.
@@ -43,11 +42,11 @@ When the **CandidateSelection** process is executed the following occurs:
 
 1. In the [Human Activity](<../../../ref/lang/auto/class-human_activity.md>) interviews are scheduled (created).
 
-2. One instance of the **CandidateInterview** process is executed per scheduled interview (the process is configured that way in its `Launch On` property).
+1. One instance of the **CandidateInterview** process is executed per scheduled interview (the process is configured that way in its `Launch On` property).
 
-3. The **Wait** activity holds the execution of the **CandidateSelection** process.
+1. The **Wait** activity holds the execution of the **CandidateSelection** process.
 
-4. Every time an interview is updated, the **Wait** activity is tentatively ended by executing the **OnClose** callback action: it only ends when all interviews have the feedback filled in.
+1. Every time an interview is updated, the **Wait** activity is tentatively ended by executing the **OnClose** callback action: it only ends when all interviews have the feedback filled in.
 
 ### Using a Conditional Start
 
@@ -57,8 +56,8 @@ When the process is executed the following occurs:
 
 1. In the [ScheduleInterviews](<../../../ref/lang/auto/class-human_activity.md>) human activity interviews are scheduled (created).
 
-2. One instance of the [Conditional Start](<../../../ref/lang/auto/class-conditional-start.md>) is executed per scheduled interview (it is configured that way in its `Start On` property).
+1. One instance of the [Conditional Start](<../../../ref/lang/auto/class-conditional-start.md>) is executed per scheduled interview (it is configured that way in its `Start On` property).
 
-3. The **WaitForInterview** wait activity holds the execution of the process.
+1. The **WaitForInterview** wait activity holds the execution of the process.
 
-4. Every time an interview is updated, the **Wait** activity is tentatively ended by executing the **OnClose** callback action: it only ends when all interviews have the feedback filled in.
+1. Every time an interview is updated, the **Wait** activity is tentatively ended by executing the **OnClose** callback action: it only ends when all interviews have the feedback filled in.

@@ -21,7 +21,6 @@ topic:
 
 # Add and Delete End Users
 
-
 In the Users application, click the **Users** tab to view the list of all the end users currently active in your environment.
 
 ## Create a new end user { #create }

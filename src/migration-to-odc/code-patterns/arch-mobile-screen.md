@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article provides guidance on refactoring dependencies to Screens in O11 mobile apps to ensure compatibility with ODC.
 locale: en-us
 guid: f74beda0-279a-499c-932d-5ad57587c8f3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7805
 helpids: 30529
-tags: application development, application migration, app dependencies, outsystems best practices, dependency management
+tags: application development, app conversion, app dependencies, outsystems best practices, dependency management
 audience:
   - frontend developers
   - full stack developers
@@ -20,13 +20,13 @@ coverage-type:
 
 # Asset consuming a Screen in mobile app
 
-A dependency to a Screen is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.
-This means that it's not possible to consume Screens from other Apps.
+A dependency to a Screen is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies. This means that it's not possible to consume Screens from other Apps.
+
 Libraries can't share Screens, nor consume Screens from Apps.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

@@ -32,7 +32,7 @@ Using extensions you can, for example:
 
 Integration Studio environment provides several features that accelerate and automate the development of integration components and add-ons:
 
-* A fully **integrated visual environment** that allows you to rapidly and efficiently [create extensions](<../extension-life-cycle/extension-create.md>) to integrate with core or legacy systems. 
+* A fully **integrated visual environment** that allows you to rapidly and efficiently [create extensions](<../extension-life-cycle/extension-create.md>) to integrate with core or legacy systems.
 
 * **Automatic wizards** that [reverse engineer external databases](<../managing-extensions/entity-import-from-database.md>) (also called introspection) and [translate .NET assemblies](<../managing-extensions/net-assembly-import-action.md>) into extension Actions, Entities and Structures.
 

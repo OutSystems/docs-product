@@ -27,14 +27,14 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Events - Accordion
 
-|**Event** |**Description**| 
+|**Event** |**Description**|
 |---|---|
 | AccordionCollapseAll: Optional |<ul><li>Function that collapses all the expanded items of a given accordion.</li><li>WidgetId (text): The accordion's ID to perform the action.</li></ul>|
 | AccordionExpandAll |<ul><li>Function to expand all the collapsed items of a given accordion.</li><li>WidgetId (text): The accordion's ID to perform the action.</li></ul>|
 
 ## Events - Accordion Item
 
-|**Event** |**Description**| 
+|**Event** |**Description**|
 |---|---|
 | AccordionCollapseAll: Optional |<ul><li>Closes an AccordionItem with a given identifier.</li><li>WidgetId (text): Identifier of the AccordionItem block.</li></ul>|
 | AccordionExpandAll |<ul><li>Opens an AccordionItem with a given identifier.</li><li>WidgetId (text): Identifier of the AccordionItem block.</li></ul>|

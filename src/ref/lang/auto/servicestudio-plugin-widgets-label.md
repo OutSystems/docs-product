@@ -8,8 +8,12 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+tags: label widget, traditional web apps, usability, accessibility, widget properties
+audience:
+  - frontend developers
+outsystems-tools:
+  - none
 ---
-
 # Label Widget
 
 <div class="info" markdown="1">
@@ -133,4 +137,3 @@ Both Label and Text widgets can be used as a caption for the inputs. However, th
 </tr>
 </tbody>
 </table>
-

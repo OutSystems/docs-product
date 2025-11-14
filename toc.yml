@@ -536,6 +536,7 @@
             - href: building-apps/seo/seo-friendly-url-reactive.md
             - href: building-apps/seo/improved-crawl-reactive.md
             - href: building-apps/seo/seo-friendly-url-traditional.md
+            - href: building-apps/seo/site-rules.md
             - href: building-apps/seo/errors-troubleshooting-seo.md
     - topics:
         - href: building-apps/seo/improve-SEO-with-prerendering.md
@@ -638,6 +639,7 @@
     - href: deploying-apps/tag-a-version.md
     - href: deploying-apps/deploy-an-application.md
     - href: deploying-apps/deployment-plans.md
+    - href: deploying-apps/block-app-from-deployment.md
     - href: deploying-apps/tp-configure-site-properties-during-deploy.md
     - href: deploying-apps/configure-application-settings-after-deployment.md
     - href: deploying-apps/apply-configurations.md
@@ -981,6 +983,10 @@
 #security
 - href: security/intro.md
 - topics:
+    - href: security/pci-compliance.md
+    - href: security/hipaa/intro.md
+    - topics:
+        - href: security/hipaa/hipaa-tech-safeguards.md
     - href: security/restrict-access-to-an-internal-network.md
     - href: security/secure-http-requests.md
     - href: security/secure-cookies-enable-secure-session.md
@@ -1177,25 +1183,19 @@
     - href: migration-to-odc/plan/plan-intro.md
     - topics:
         - href: migration-to-odc/setup-assessement-tool.md
+        - topics:
+            - href: migration-to-odc/manual-setup-assessement-tool.md
+            - href: migration-to-odc/plan/mat-permissions.md
         - href: migration-to-odc/plan/plan-map-apps.md
+        - topics:
+            - href: migration-to-odc/plan/plan-design-odc-arch.md
+            - href: migration-to-odc/plan/plan-map-in-tool.md
         - href: migration-to-odc/plan/plan-define-migration-plans.md
         - href: migration-to-odc/plan/plan-assess-refactor.md
-        - href: migration-to-odc/plan/plan-incremental.md
-        - href: migration-to-odc/plan/plan-map-incremental.md
-        - href: migration-to-odc/plan/plan-convert-arch-incrementale.md
     # Preparation
     - href: migration-to-odc/prepare/prep-intro.md
     - topics:
         - href: migration-to-odc/prepare/prep-refactor-o11-apps.md
-    # Execute
-    - href: migration-to-odc/execute/execute-intro.md
-    - topics:
-        - href: migration-to-odc/execute/execute-connect-to-tool.md
-        - href: migration-to-odc/execute/execute-about-migrate-code.md
-        - href: migration-to-odc/execute/execute-how-to-migrate-code.md
-        - href: migration-to-odc/execute/execute-configure-migrated-apps.md
-        - href: migration-to-odc/execute/execute-about-migrate-data.md
-        - href: migration-to-odc/execute/execute-how-to-migrate-data.md
             
     # Code patterns
     - href: migration-to-odc/code-patterns/intro.md
@@ -1214,19 +1214,23 @@
         - href: migration-to-odc/code-patterns/arch-priv-struct.md
         - href: migration-to-odc/code-patterns/arch-app-theme.md
         - href: migration-to-odc/code-patterns/arch-not-mapped.md
+        - href: migration-to-odc/code-patterns/arch-internal-service-action.md
+        - href: migration-to-odc/code-patterns/elem-unsupported-delete-rule.md
         - href: migration-to-odc/code-patterns/arch-extension.md
         - href: migration-to-odc/code-patterns/arch-system-element.md
         - href: migration-to-odc/code-patterns/arch-user-mng-elements.md
         - href: migration-to-odc/code-patterns/arch-bpt-elements.md
-        - href: migration-to-odc/code-patterns/end-user-no-email.md
         - href: migration-to-odc/code-patterns/elem-bpt.md
         - href: migration-to-odc/code-patterns/elem-soap.md
         - href: migration-to-odc/code-patterns/refactor-anonymous-registered-roles.md
         - href: migration-to-odc/code-patterns/refactor-siteproperties.md
         - href: migration-to-odc/code-patterns/convert-trad-web.md
+        - href: migration-to-odc/code-patterns/elem-trad-web.md
+        - href: migration-to-odc/code-patterns/elem-rest-consume-multipart.md
         - href: migration-to-odc/code-patterns/cannot-open-module.md
         - href: migration-to-odc/code-patterns/outdated-or-broken-dependencies.md
         - href: migration-to-odc/code-patterns/arch-common-plugin.md
+        - href: migration-to-odc/code-patterns/arch-lib-cyclic.md
         - href: migration-to-odc/code-patterns/elem-built-in-function.md
         - href: migration-to-odc/code-patterns/elem-sql-adapt.md
         - href: migration-to-odc/code-patterns/elem-user-provider.md
@@ -1235,8 +1239,13 @@
         - href: migration-to-odc/code-patterns/arch-forge.md
         - href: migration-to-odc/code-patterns/elem-multi-tenant.md
         - href: migration-to-odc/code-patterns/execute-adapt-login-flow.md
-    - href: migration-to-odc/prepare/reference.md
-    - href: migration-to-odc/known-issues.md
+        - href: migration-to-odc/code-patterns/update-url-consumed-rest-endpoint.md
+        - href: migration-to-odc/code-patterns/aggregate-sql-scope.md
+        - href: migration-to-odc/code-patterns/persistent-login-timeout.md
+        - href: migration-to-odc/code-patterns/data-user-email-validation.md
+        - href: migration-to-odc/code-patterns/data-large-binaries-validation.md
+        - href: migration-to-odc/code-patterns/infra-self-managed.md
+        - href: migration-to-odc/code-patterns/infra-additional-pipelines.md
 # Reference
 - href: ref/intro.md
 - topics:
@@ -1552,7 +1561,7 @@
         - topics:
             - href: ref/lang/auto/class-mobile-module.md
             - href: ref/lang/auto/class-reference.md
-        # Traditional Web
+        # Traditional web
         - href: ref/traditional-web/intro.md
         - topics:
             # Web Interfaces
@@ -2020,6 +2029,7 @@
             - topics:
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
+                - href: ref/apis/lifetime-deployment/examples/api-block-app-deploy.md
                 - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md 
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-infrastructure.md
                 - href: ref/apis/lifetime-deployment/examples/api-map-database-connections.md
@@ -2041,6 +2051,7 @@
         - href: ref/apis/processes-api.md
         - href: ref/apis/rest-extensibility-api.md
         
+
         # RuntimePublic.Db API
         - href: ref/apis/runtimepublic-db/intro.md
         - topics:

@@ -29,7 +29,6 @@ There are two ways of doing this:
 * **Explicitly**: the communication is made through explicit call to process-specific actions.
 * **Implicitly**: the communication is made through actions over records in the database.
 
-
 ## Explicit Communication
 
 The communication to a process is made through [process extended actions](../actions-extended/intro.md) or process system actions/functions.
@@ -59,7 +58,6 @@ The other way is to use extended actions, which are directly bound to the activi
 Once the activity is closed, the process follows on to the next activity in the flow.
 
 You may use the **On Close** callback action to add specific logic to validate whether to close the activity or not.
-
 
 ## Implicit Communication
 

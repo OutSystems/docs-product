@@ -20,7 +20,7 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-Applies to Mobile Apps and Reactive Web Apps only
+Applies to Mobile Apps and Reactive Web Apps only.
 
 </div>
 
@@ -28,7 +28,7 @@ You can use the List Item Content UI Pattern to quickly organize critical conten
 
 ![Screenshot of the List Item Content UI Pattern in use](images/listitemcontent-1-ss.png "List Item Content UI Pattern Example")
 
-**How to use the List Item Content UI Pattern**
+## How to use the List Item Content UI pattern
 
 1. In Service Studio, in the Toolbox, search for `List Item Content`.
 
@@ -41,9 +41,9 @@ You can use the List Item Content UI Pattern to quickly organize critical conten
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the List Item Content widget into the Main Content area of your application's screen.
@@ -52,7 +52,7 @@ You can use the List Item Content UI Pattern to quickly organize critical conten
 
 1. Add the relevant content to the placeholders.
 
-    In this example, we add some texts and icons. 
+    In this example, we add some texts and icons.
 
     ![Example of adding texts and icons to the List Item Content widget placeholders](images/listitemcontent-4-ss.png "Adding Content to List Item Content Widget")
 
@@ -63,3 +63,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Property                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

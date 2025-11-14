@@ -56,7 +56,7 @@ You can use the Date Picker UI Pattern to allow the user to select a single or a
 
 1. From the Toolbox, drag the Date Picker widget into the Main Content area of your application's screen.
 
-1. Set the **InputWidgetId** to the input Id. 
+1. Set the **InputWidgetId** to the input Id.
 
     ![Screenshot showing how to set the InputWidgetId for the Date Picker widget](images/datepicker-image-2.png "Linking the Date Picker to an Input Widget")
 
@@ -89,7 +89,7 @@ For advanced options, you can check the official documentation of the [Pikaday l
 ### Date Picker advanced format information
 
 | **Property** | **Description** |
-|---|---
+|---|--- |
 | EventsList (DateTime List): Optional | A list of events (type Date Time) |
 | AdvancedFormatJSON (DateTime List): Optional | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: <https://github.com/dbushell/Pikaday> |
 

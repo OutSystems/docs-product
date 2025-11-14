@@ -51,6 +51,12 @@ Shorter timers reduce the risk of data inconsistency and system strain.
 
 ## Simplify screen preparations
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web apps.
+
+</div>
+
 ### Description
 
 Streamline screen preparation actions to speed up loading times.
@@ -63,7 +69,7 @@ Avoid overly complex queries, pre-process data during write operations, and mini
 
 Faster page loads improve user experience, so minimize database queries and avoid write operations during screen prep unless necessary.
 
-## Use Site Properties efficiently 
+## Use Site Properties efficiently
 
 ### Description
 
@@ -79,6 +85,12 @@ Constant changes to Site Properties can increase database overhead and result in
 
 ## Limit session variables
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web apps.
+
+</div>
+
 ### Description
 
 Minimize the use of large session variables.
@@ -87,7 +99,7 @@ Minimize the use of large session variables.
 
 Reduce session data by storing user-specific information in the database, limiting the need to load large session variables on each request.
 
-### Key point 
+### Key point
 
 Large session variables increase load times, especially with AJAX requests, impacting application performance.
 
@@ -106,6 +118,12 @@ Isolating Aggregates prevents the platform from optimizing field retrieval, lead
 Fetching the entire entity from the database occurs even if not all fields are used.
 
 ## Avoid queries inside ‘If’ branches in preparation
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web apps.
+
+</div>
 
 ### Description
 

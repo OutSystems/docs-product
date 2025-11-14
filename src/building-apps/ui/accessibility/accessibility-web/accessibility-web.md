@@ -43,8 +43,8 @@ The following set of guidelines along, with the [standards and best practices gu
 
 Font size, text color and background color have a huge impact on applications if they don't follow the [WCAG guidelines for contrast accessibility](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). When [starting a style guide](https://www.outsystems.com/learn/courses/71/style-guide-architectures/) or building stylesheet rules for a pattern, make sure that:
 
-  * Text under 24px should have a **minimum** color contrast ratio of 4.5:1
-  * Text 24px or higher should have a **minimum** color contrast ratio of 3:1
+* Text under 24px should have a **minimum** color contrast ratio of 4.5:1
+* Text 24px or higher should have a **minimum** color contrast ratio of 3:1
 
 To have WCAG-compliant color contrast ratio of text in your OutSystems application:
 
@@ -53,14 +53,14 @@ To have WCAG-compliant color contrast ratio of text in your OutSystems applicati
     ![Screenshot of OutSystems Styles Editor showing how to set color contrast ratio for text](images/accessibility-color-contrast.png "Setting Color Contrast Ratio in Styles Editor")
 
 1. In the Font section, set the Size and Color.
-1. In the Layout section, set the Color to change the color of that element's background. 
+1. In the Layout section, set the Color to change the color of that element's background.
 1. Use a [color contrast checker tool](https://contrast-ratio.com/) to check if the contrast ratio is acceptable.
 
 Learn more about [accessible colors](http://accessible-colors.com/) or how to generate a color palette based only on background color and level of accessibility on the [Color Safe Website](http://colorsafe.co/).
 
-**WCAG rules achieved:** 
+**WCAG rules achieved:**
 
-1.4.1 - Use of Color (Level A) 
+1.4.1 - Use of Color (Level A)
 
 1.4.3 - Contrast (Minimum) (Level AA)
 
@@ -76,13 +76,13 @@ For example, use the condition `OSTagName = "h1"` in the Extended Properties of 
 
 Learn more about [heading markup](https://www.w3.org/WAI/tutorials/page-structure/headings/).
 
-**WCAG rules achieved:** 
+**WCAG rules achieved:**
 
-1.3.1 - Info and Relationships(Level A) 
+1.3.1 - Info and Relationships(Level A)
 
 2.4.1 - Bypass Blocks (Level A)
 
-2.4.6 - Headings and Labels (Level AA) 
+2.4.6 - Headings and Labels (Level AA)
 
 2.4.10 - Section Headings (Level AAA)
 
@@ -97,6 +97,7 @@ The resultant HTML is as follows:
 ```html
 <img src="sample_image3.png" alt="Clear Coded Programming" title="Clear Coded Programming" width="150" height="150">
 ```
+
 If an image is only present for decorative purposes, hide it from screen readers by leaving the Label property empty.
 
 The resultant HTML is as follows:
@@ -109,9 +110,9 @@ To use images inside a link or as buttons, set the alternative text to describe 
 
 Learn more about [making images accessible](https://www.w3.org/WAI/tutorials/images/).
 
-**WCAG rules achieved:** 
+**WCAG rules achieved:**
 
-1.1 - Text Alternatives (Level A) 
+1.1 - Text Alternatives (Level A)
 
 1.4.5 - Images of Text (Level AA)  
 
@@ -119,7 +120,7 @@ Learn more about [making images accessible](https://www.w3.org/WAI/tutorials/ima
 
 ### Group widgets inside forms
 
-To group and organize widgets in forms, use the Fieldset pattern from OutSystems UI. 
+To group and organize widgets in forms, use the Fieldset pattern from OutSystems UI.
 
 1. Drag the Form widget to the screen.
 
@@ -139,11 +140,11 @@ To group and organize widgets in forms, use the Fieldset pattern from OutSystems
 
 You can learn more about [concepts to make forms fully accessible](https://www.w3.org/WAI/tutorials/forms/).
 
-**WCAG rules achieved:** 
+**WCAG rules achieved:**
 
 1.3.1 - Info and Relationships (Level A)
 
-2.4.6 - Headings and Labels (Level AA) 
+2.4.6 - Headings and Labels (Level AA)
 
 3.3.2 - Labels or Instructions (Level A)
 
@@ -151,13 +152,13 @@ You can learn more about [concepts to make forms fully accessible](https://www.w
 
 ### Check that the outline of the link in focus is visible
 
-Removing the outline using `:focus { outline: none; }` violates accessibility rules. If you must remove the outline, always provide alternative styling. 
+Removing the outline using `:focus { outline: none; }` violates accessibility rules. If you must remove the outline, always provide alternative styling.
 
 To style the outline of a link in focus:
 
 1. Click the CSS button in the Main Editor toolbar.
 1. Select the tab with the application name.
-1. Add the required style. The following CSS snippet has several options that you can use to provide alternative styling. 
+1. Add the required style. The following CSS snippet has several options that you can use to provide alternative styling.
 
 ```css
 :focus { outline: thin dotted; } /* Style the outline */
@@ -169,7 +170,7 @@ To style the outline of a link in focus:
 
 Learn more about [outline: none](http://www.outlinenone.com/).
 
-**WCAG rules achieved:** 
+**WCAG rules achieved:**
 
 2.1.2 - No Keyboard Trap (Level A)
 
@@ -184,12 +185,12 @@ The two types of default application templates in OutSystems—the TopMenu and t
 HTML Semantics used:
 `<header>, <nav>, <aside>, <main>, <footer>`
 
-ARIA Roles used: 
+ARIA Roles used:
 `role="banner"` (header), `role="navigation"` (nav), `role="complementary"` (aside), `role="main"` (main), `role="contentinfo"` (footer)
 
 ### Have accessible keyboard interaction
 
-One important aspect of accessibility is keyboard accessibility. It's essential for people with disabilities and useful for all. 
+One important aspect of accessibility is keyboard accessibility. It's essential for people with disabilities and useful for all.
 
 OutSystems UI implements accessible keyboard interaction in the UI Web Patterns. The keycodes used in the OutSystems UI Web Patterns are Space(32), Enter(13), ArrowLeft(37), ArrowTop(38), ArrowRight(39), ArrowDown(40) and Escape(27).
 
@@ -199,7 +200,6 @@ For custom interactive elements, you can implement accessible keyboard interacti
 
         element.addEventListener('keydown', myKeyboardInteractionFunction);
         element.addEventListener('keyup', myKeyboardInteractionFunction);
-
 
 1. Set the `keycodes` to enable interaction.
 
@@ -218,8 +218,8 @@ For custom interactive elements, you can implement accessible keyboard interacti
             e.preventDefault();
             e.stopPropagation();
         }
-    
-**WCAG rules achieved:** 
+
+**WCAG rules achieved:**
 
 2.1.1 - Keyboard (Level A)
 
@@ -256,7 +256,7 @@ setAriaState(elementItem, 'aria-hidden', false);
 
 You can use the **Tab** key to navigate across elements in a web page. The `tabindex` attribute specifies the tab order or the navigation order of the elements.
 
-You should fix the navigation order in the HTML code instead of using positive `tabindex` values. But there may be instances when the default tab order is misleading. If reordering elements and/or changing the stylesheet can't alter it, you can set specific `tabindex` values. Note that using `tabindex` to compensate for poorly organized source code is bad practice. 
+You should fix the navigation order in the HTML code instead of using positive `tabindex` values. But there may be instances when the default tab order is misleading. If reordering elements and/or changing the stylesheet can't alter it, you can set specific `tabindex` values. Note that using `tabindex` to compensate for poorly organized source code is bad practice.
 
 If you have to set the navigation order using the `tabindex`, set the `tabindex` in the Extended Properties of the required element.
 
@@ -264,7 +264,7 @@ If you have to set the navigation order using the `tabindex`, set the `tabindex`
 
 Learn more about accessible [usage of tabindex](https://webaim.org/techniques/keyboard/tabindex).
 
-**WCAG rules achieved:** 
+**WCAG rules achieved:**
 
 2.1.1 - Keyboard (Level A)
 
@@ -293,14 +293,13 @@ WCAG 2.0 and WCAG 2.1 are sets of stable guidelines that developers need to foll
 * [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20) (published on December 11, 2008)
 * [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG21) (published on June 5, 2018)
 
-
 ### HTML and ARIA extensions
 
 The use of non-semantic elements such as `<div>` and `<span>` with a class attribute isn't understandable by accessibility tools. Using HTML semantics clearly describes the meaning to browsers, developers and screen readers, and guarantees the accessibility of the content.
 
 ![Examples of HTML semantics used to improve accessibility in web content](images/accessibility-image9.jpg "HTML Semantics for Accessibility")
 
-These are a few examples of HTML semantics: 
+These are a few examples of HTML semantics:
 
 `<aside>, <figure>, <figcaption>, <footer>, <header>, <main>, <nav> , <section>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>`
 
@@ -353,4 +352,3 @@ WCAG has guidelines for [contrast accessibility](https://www.w3.org/TR/UNDERSTAN
 * [Contrast-Finder](http://contrast-finder.tanaguru.com/)
 
 For more accessibility tools, check out [the W3 evaluation tools list](https://www.w3.org/WAI/ER/tools/) and this [collection of web accessibility tools](https://github.com/collections/web-accessibility).
-

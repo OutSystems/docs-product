@@ -25,7 +25,7 @@ When you subscribe to the OutSystems Cloud HIPAA offering your environments will
 
 In its core, AWS Key Management Service provides a secure and resilient service to create and manage cryptographic keys.
 
-The Cryptography Services app interfaces with the Key Management Service (KMS) abstracting from the complexity of having and managing a KMS. 
+The Cryptography Services app interfaces with the Key Management Service (KMS) abstracting from the complexity of having and managing a KMS.
 
 ![Diagram illustrating the Cryptography Services app interfacing with AWS Key Management Service for encrypting and decrypting PHI in OutSystems Cloud HIPAA offering](images/hipaa-crypto-diag.png "Cryptography Services Diagram")
 
@@ -52,7 +52,6 @@ EncryptIndexText
 DecryptIndexText
 :   Decrypts searchable attributes.
 
-
 ## Actions for unsearchable attributes
 
 These actions use the same underlying cryptographic processes with two additional protections: it's salted with the **EntityId** input and the keys are rotated periodically.
@@ -67,7 +66,6 @@ EncryptEntityText
 
 DecryptEntityText
 :   Decrypts into text/plain the cyphered text of unsearchable attributes using a KeyId and a salt (EntityId).
-
 
 Check the following articles for detailed guides of the implementation of:
 

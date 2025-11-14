@@ -31,7 +31,7 @@ The App Starter contains the following modules:
 
 ### Process
 
-Firstly you need to install the Sample App in Service Studio and then configure and adjust each of the three modules in preparation for building your own CM app. 
+Firstly you need to install the Sample App in Service Studio and then configure and adjust each of the three modules in preparation for building your own CM app.
 
 ### Prerequisites
 
@@ -60,7 +60,7 @@ Before you proceed, make sure that:
 
 ## Reconfiguring the Core Services (CS) module
 
-The core services module is where the core business entities and the corresponding public actions are defined and held. It is where the configurations are made for the case definition that you need while developing your app with the Case Management framework. 
+The core services module is where the core business entities and the corresponding public actions are defined and held. It is where the configurations are made for the case definition that you need while developing your app with the Case Management framework.
 
 You now need to make some minor changes to the CS Module.
 
@@ -127,7 +127,7 @@ Next, let’s customize the **CaseStatusConfiguration** static entity to define 
 
 1. Delete the original **Open_ExampleToCopyAndDelete** record.
 
-1. In the Closed record set the IsInitial attribute to True and the **IsInitial** attribute on the **Open** to `False`.
+1. In the Closed record set the **IsInitial** attribute to `False` and the **IsInitial** attribute on the **Open** to `True`.
 
     <div class='info' markdown='1'>
 

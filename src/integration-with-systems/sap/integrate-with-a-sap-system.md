@@ -18,30 +18,28 @@ coverage-type:
 
 # Integrate with a SAP System
 
-
 OutSystems allows you to fetch or update data in a SAP system and use it in your applications.
 
 ## Prerequisites
 
-* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition. 
+* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition.
 * For self-managed infrastructures, SAP Connector Libraries must be installed. See the installation checklist of your [Platform Server version](https://www.outsystems.com/Downloads/search/Platform+Server/11/) for further instructions.
-
 
 ## Create a connection to an SAP system from your application
 
-1. On the **Logic** tab, open the **Integrations** folder. 
+1. On the **Logic** tab, open the **Integrations** folder.
 
-1. Right-click **SAP** and select **Consume SAP Remote Functions (BAPI)**. 
+1. Right-click **SAP** and select **Consume SAP Remote Functions (BAPI)**.
 
-    A window to configure the SAP connection is displayed. 
+    A window to configure the SAP connection is displayed.
 
-1. Fill in **Connection details** and **Login** parameters of your SAP system. 
+1. Fill in **Connection details** and **Login** parameters of your SAP system.
 
-    These will be the default credentials of your SAP connection, which can be redefined later. 
+    These will be the default credentials of your SAP connection, which can be redefined later.
 
     ![Screenshot of SAP connection configuration window with fields for Connection details and Login parameters](images/sapintegrate-remotefunc-ss.png "SAP Connection Configuration")
 
-1. Click **Connect to choose functions**. 
+1. Click **Connect to choose functions**.
 
     Your connection details and login parameters are tested:
 
@@ -50,20 +48,20 @@ OutSystems allows you to fetch or update data in a SAP system and use it in your
         ![Screenshot showing a successful connection to SAP with the Select remote functions screen](images/sapintegrate-successconnect-ss.png "Successful SAP Connection")
 
     1. If your connection fails, an error dialog is displayed. You can expand the dialog to find out more about what's causing the error.
-        
+
         ![Error dialog screenshot indicating a failed connection to SAP with an option to expand for more details](images/sapintegrate-failconnect-ss.png "Failed SAP Connection")
 
 ## Import SAP remote functions
 
-Once you've established a connection to SAP, you can now import SAP functions to use in your application. The remote functions are grouped by business use case and SAP functionality. 
+Once you've established a connection to SAP, you can now import SAP functions to use in your application. The remote functions are grouped by business use case and SAP functionality.
 
 1. On the **Select remote functions** screen, select the SAP functions you want to use in your app.
 
-    Clicking on the function name displays the description, input, and output parameter details on the right-hand panel. 
+    Clicking on the function name displays the description, input, and output parameter details on the right-hand panel.
 
     ![Screenshot of the Select remote functions screen with options to choose SAP functions for import](images/sapintegrate-selectfunc-ss.png "Select SAP Remote Functions")
 
-1. Click **Complete setup**. 
+1. Click **Complete setup**.
 
     When you complete the setup, the following is created:
 
@@ -83,12 +81,12 @@ When a SAP Remote Function is called from your OutSystems application, the follo
 
 ![Flow diagram illustrating the process of calling a SAP Remote Function from an OutSystems application](images/sap-remote-function-flow-diag.png "SAP Remote Function Call Flow Diagram")
 
-1. **OnBeforeConnection():** This callback allows you to implement different SAP authentication methods using the [SAP Extensibility API](<../../ref/apis/sap-extensibility-api.md>), such as Logon Tickets or certificates. 
-1. **Connect to SAP & Begin Context:** The connection to SAP is established using the default credentials (if no different authentication is defined), and a context for calling the SAP remote function is started in SAP. 
-1. **OnBeforeCall():** This callback allows you to customize the values to be sent to SAP. 
-1. **Call SAP Remote Function:** Executes the remote function in the SAP System. 
-1. **OnAfterCall():** This callback allows you to customize the values returned by SAP. 
-1. **Commit/Rollback & End Context:** The changes executed in the SAP system are committed and the context in SAP is ended. If an error occurs, changes are rolled back. 
+1. **OnBeforeConnection():** This callback allows you to implement different SAP authentication methods using the [SAP Extensibility API](<../../ref/apis/sap-extensibility-api.md>), such as Logon Tickets or certificates.
+1. **Connect to SAP & Begin Context:** The connection to SAP is established using the default credentials (if no different authentication is defined), and a context for calling the SAP remote function is started in SAP.
+1. **OnBeforeCall():** This callback allows you to customize the values to be sent to SAP.
+1. **Call SAP Remote Function:** Executes the remote function in the SAP System.
+1. **OnAfterCall():** This callback allows you to customize the values returned by SAP.
+1. **Commit/Rollback & End Context:** The changes executed in the SAP system are committed and the context in SAP is ended. If an error occurs, changes are rolled back.
 
 To call multiple SAP remote functions and have all changes committed only at the end, use [SAP Stateful Calls](<execute-sap-stateful-calls.md>).
 
@@ -102,4 +100,4 @@ You can also use different credentials using one of the following authentication
 
 * **Dynamic Login:** Specify the authentication credentials at runtime through the application logic. All SAP remote functions under the connection will require user credentials. A possible use case is, for example, when modifying data in the SAP system. To implement dynamic login, select **Add Dynamic Login** from the context menu of the SAP Connection.
 
-* **Custom:** Use [SAP Extensibility API](<../../ref/apis/sap-extensibility-api.md>) to implement other authentication methods, for example, SAP Logon Tickets or certificates. This method uses the 'OnBeforeConnection()' callback to customize the connection. 
+* **Custom:** Use [SAP Extensibility API](<../../ref/apis/sap-extensibility-api.md>) to implement other authentication methods, for example, SAP Logon Tickets or certificates. This method uses the 'OnBeforeConnection()' callback to customize the connection.

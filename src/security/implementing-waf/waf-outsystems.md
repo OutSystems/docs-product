@@ -20,10 +20,10 @@ coverage-type:
 
 # Implementing a WAF for your applications on OutSystems Cloud
 
-Following the initial deployment of your cloud infrastructure and the development of your first application, the next critical step should be to enhance the security of your apps. 
+Following the initial deployment of your cloud infrastructure and the development of your first application, the next critical step should be to enhance the security of your apps.
 For each OutSystems Cloud environment, an Application Load Balancer with WAF capabilities exists to protect your applications from a wide range of attack types. Our OutSystems Cloud team is committed to reviewing and managing some of these protections and thrive to keep them updated to the latest security threats.
 
-![Diagram showing the standard architecture of OutSystems Cloud with load balancers and WAF for different environments including Lifetime, Development, Non-Production, and Production.](images/cloud-architecture-standard-diag.png "OutSystems Cloud Architecture Diagram") 
+![Diagram showing the standard architecture of OutSystems Cloud with load balancers and WAF for different environments including Lifetime, Development, Non-Production, and Production.](images/cloud-architecture-standard-diag.png "OutSystems Cloud Architecture Diagram")
 
 On top of this out of the box protection, you can have your own WAF to enhance the security of your applications with tailored WAF rules for your applications needs.
 
@@ -69,6 +69,7 @@ Web Application Firewalls (WAF) have a set of rules that you can configure. In t
 ## Mobile apps integrity protection
 
 If your WAF service is protecting or serving mobile apps built with MABS, using features that modify mobile app files (such as bot protection, file compression, or code injection) will cause errors with the MABS Over-the-Air update capability. This is because the update feature relies on file integrity validation through checksums to determine if the client app is eligible for an update. To avoid this issue, configure your WAF to prevent changes to specific artifacts for all mobile apps. For each mobile app OS, you can access a document listing the resources and paths to exclude via the URL ``<environment_url>/<app>/moduleservices/moduleinfo``. Typically, you should exclude the following paths:
+
 * ``/<app path>/css/``
 * ``/<app path>/img/``
 * ``/<app path>/scripts/``

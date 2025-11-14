@@ -31,15 +31,15 @@ This guide use the “[Cases](https://www.outsystems.com/forge/component/584/cas
 
 For effective testing, 5 main elements should be in place. These are:
 
-* A good **test strategy** that defines the types and amount of testing 
+* A good **test strategy** that defines the types and amount of testing
 
-* A **test plan** that indicates the tasks to be done to implement the test strategy 
+* A **test plan** that indicates the tasks to be done to implement the test strategy
 
-* **Test cases** with detailed usage examples that will be used to check that the software meets the requirements 
+* **Test cases** with detailed usage examples that will be used to check that the software meets the requirements
 
-* **Test data** definition, that includes both input data and existing “production like” data, used during the test execution activities; 
+* **Test data** definition, that includes both input data and existing “production like” data, used during the test execution activities;
 
-* **Test environment** where the application to be tested is deployed, and where testing cycles are carried out without external interference that may impact testing activities. 
+* **Test environment** where the application to be tested is deployed, and where testing cycles are carried out without external interference that may impact testing activities.
 
 If one of these elements is missing, testing efficiency will be dramatically reduced.
 
@@ -51,9 +51,9 @@ Software systems are built using layers of functionality. It’s impossible for 
 
 There are many testing “types”: in this guide we shall create:
 
-* Unit tests (tests for small independent pieces of functionality), 
+* Unit tests (tests for small independent pieces of functionality),
 
-* API tests (for component APIs), 
+* API tests (for component APIs),
 
 The application that is being tested is designated as the AUT (Application Under Test).
 
@@ -79,17 +79,17 @@ Once you have categorized all of the application functionality it is time to des
 
 Just keep in mind that every test case has the following attributes:
 
-* Title 
+* Title
 
-* Understandable description 
+* Understandable description
 
-* Assumptions and/or pre-conditions 
+* Assumptions and/or pre-conditions
 
-* A set of test steps 
+* A set of test steps
 
-* Test data to be used to execute the functionality 
+* Test data to be used to execute the functionality
 
-* Expected result 
+* Expected result
 
 All information should be simple and precise. Keep test cases as simple and small as possible.
 
@@ -113,17 +113,17 @@ Before we get to test creation, let’s introduce Test Framework, a tool built w
 
 Test Framework supports two types of test cases:
 
-* [Unit tests](#unit-testing-approach), for fast feedback on small pieces of code (server actions) 
+* [Unit tests](#unit-testing-approach), for fast feedback on small pieces of code (server actions)
 
-* [API tests](#api-testing-approach), for feedback on REST or SOAP APIs 
+* [API tests](#api-testing-approach), for feedback on REST or SOAP APIs
 
 Test Framework structures testing according to the following hierarchy:
 
-* Test Suites, a group of related Test Cases; 
+* Test Suites, a group of related Test Cases;
 
-* Test Cases are the actual tests; each Test Case is contained inside one Test Suite and can have one or more Test Steps; 
+* Test Cases are the actual tests; each Test Case is contained inside one Test Suite and can have one or more Test Steps;
 
-* Test Steps are testing actions that are executed by a “test engine”. 
+* Test Steps are testing actions that are executed by a “test engine”.
 
 It is possible to create variables for Test Suites. These may be used to provide data to the tests being executed. Test Suite variables have a default value, but it is also possible to redefine the value at the Test Case level, or even at the Test Step level.
 
@@ -183,13 +183,13 @@ Open the **Given** screen action. Create the code that checks the system is in t
 
 ![Logic flow diagram for the Given action in a test scenario, checking initial state conditions.](images/creategiven.png "Given Action Logic Flow")
 
-* Assure a Contact exists 
+* Assure a Contact exists
 
-* Verify that the Cases history is in the correct state 
+* Verify that the Cases history is in the correct state
 
-* Get information to validate afterwards - the number of open Cases for example 
+* Get information to validate afterwards - the number of open Cases for example
 
-* Etc. 
+* Etc.
 
 In the Case_Create test case, the given action gets and stores the Id of a contact named “Antonio Moreno” and the number of Cases opened by him.
 
@@ -204,10 +204,9 @@ Only one test should be performed, that is, only one call to one server action.
 
 If the application usually calls other server actions in sequence, for instance, create a “Case” and increment a global counter, then some alternatives should be explored:
 
+* Either change the application to encapsulate all calls into another “higher level” server action or
 
-* Either change the application to encapsulate all calls into another “higher level” server action or 
-
-* Create an “integration test” that tests the possible sequences of server actions invoked 
+* Create an “integration test” that tests the possible sequences of server actions invoked
 
 Absolutely no validation should be performed in the **When** action.
 
@@ -253,12 +252,12 @@ Unit tests are actually OutSystems code. This matches other development platform
 
 The same language structures are available when building tests, including table records. When validating combinations between multiple variables, you may create a list of records with the data for the different test cases, and provide that list to a table record widget. By placing a BDD scenario in the row, multiple test cases are actually executed with minimal effort. Take a look at the next example from the Test Framework unit tests, where the “scenario” is placed inside a “table records”.
 
-Below is the code; notice the scenario inside a Table Records <br/>![Screenshot showing a table records widget with multiple BDD scenarios for executing various test cases.](images/unit04.png "Table Records with BDD Scenarios") | Below is the result of the execution; notice that many scenarios were executed <br/>![Screenshot showing the results of executing multiple BDD scenarios within a table records widget.](images/unit04_result.png "BDD Scenarios Execution Results") 
----|---  
+| Below is the code; notice the scenario inside a Table Records <br/>![Screenshot showing a table records widget with multiple BDD scenarios for executing various test cases.](images/unit04.png "Table Records with BDD Scenarios") | Below is the result of the execution; notice that many scenarios were executed <br/>![Screenshot showing the results of executing multiple BDD scenarios within a table records widget.](images/unit04_result.png "BDD Scenarios Execution Results") |
+| ---|--- |
   
 ### Adding Unit Tests to Test Framework
 
-Now let’s add the unit tests to Test Framework. 
+Now let’s add the unit tests to Test Framework.
 
 1. The first thing to do is create a new Test Suite for regression tests. To do so, press “Define” on the topmost menu and then press the “New Test Suite” on the right side; the following screen appears.
 
@@ -400,8 +399,8 @@ API tests may be created using the BDD Framework in a very similar way to unit t
 
 Here is the **Given**, **When** and **Then** actions for the Case Create Test, using the REST API, to see how similar this approach is to unit testing:
 
-![Screenshot showing the Given action logic flow for a REST API test scenario.](images/creategivenrest.png "Given Action for REST API Test") | ![Screenshot showing the When action logic flow for a REST API test scenario.](images/createwhenrest.png "When Action for REST API Test") | ![Screenshot showing the Then action logic flow for a REST API test scenario.](images/createthenrest.png "Then Action for REST API Test")  
----|---|---  
+| ![Screenshot showing the Given action logic flow for a REST API test scenario.](images/creategivenrest.png "Given Action for REST API Test") | ![Screenshot showing the When action logic flow for a REST API test scenario.](images/createwhenrest.png "When Action for REST API Test") | ![Screenshot showing the Then action logic flow for a REST API test scenario.](images/createthenrest.png "Then Action for REST API Test") |
+| ---|---|--- |
   
 ## Test Framework Overview screen
 
@@ -419,10 +418,10 @@ The bottom graph presents the total number of test steps executed and their clas
 
 The following trends may appear on this graph:
 
-* The higher the number of test steps that pass, the more exhaustive the test project. 
+* The higher the number of test steps that pass, the more exhaustive the test project.
 
-* The higher the number of test steps unclassified, the higher the work that will be required from testers to classify executions: “testing technical debt”. 
+* The higher the number of test steps unclassified, the higher the work that will be required from testers to classify executions: “testing technical debt”.
 
-* The higher the number of test steps broken, the higher the work that is required to fix tests and make them useful again. 
+* The higher the number of test steps broken, the higher the work that is required to fix tests and make them useful again.
 
-* The higher the number of test steps that found defects, the lower the quality of the application. 
+* The higher the number of test steps that found defects, the lower the quality of the application.

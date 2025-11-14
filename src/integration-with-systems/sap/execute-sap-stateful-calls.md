@@ -40,4 +40,4 @@ To implement stateful calls in your application do the following:
     * **EndContext**: ends the stateful connection in SAP
     * **Commit**: commits changes inside a stateful connection in SAP
     * **Rollback**: rolls back changes inside a stateful connection in SAP
-2. Use SAP remote functions together with the actions from the extension to implement a stateful call. 
+1. Use SAP remote functions together with the actions from the extension to implement a stateful call.

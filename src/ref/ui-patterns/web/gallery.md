@@ -29,5 +29,3 @@ Applies only to Traditional Web Apps.
 ## Layout and classes
 
 ![Diagram illustrating the layout and classes of the Gallery UI pattern in Traditional Web Apps](images/gallery-3-diag.png "Gallery Layout Diagram")
-
-

@@ -89,6 +89,12 @@ When the deployment finishes, you will see in the Service Center console for you
 
 ## Update Azure Scale Sets to a Newer Platform Version
 
+<div class="info" markdown="1">
+
+The OutSystems solution template for Microsoft Azure Marketplace is updated with new Platform Server and LifeTime versions twice a year.
+
+</div>
+
 Follow these steps to update a Platform Server deployed on Microsoft Azure scale sets.
 
 1. Go to **Service Center** > **Administration** > **Servers** and disable the servers that are part of the scale set. Deleting is optional, but advised, to ensure you stay within the limit of the front-ends your license permits.

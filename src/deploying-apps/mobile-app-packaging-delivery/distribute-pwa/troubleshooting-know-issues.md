@@ -50,7 +50,7 @@ If you haven't done it already, republish the apps in the factory and then turn 
 
 ### I'm getting an invalid home URL for PWA
 
-If the PWA can't load because you're getting the URL that matches the URL of the environment, for example ` https://example.com/`, check if you set a home module for your app.
+If the PWA can't load because you're getting the URL that matches the URL of the environment, for example `https://example.com/`, check if you set a home module for your app.
 
 Open the app details screen. If the **Test in browser button** is deactivated, the app doesn't have a module defined. Click the curly arrow icon on the right side of the module name to set that module as the home module. Try loading the PWA again.
 
@@ -69,7 +69,7 @@ If you're using Platform Server 11.7 or earlier **and** iOS 13 and later, you sh
 * Upgrade to Platform Server 11.8 or later.
 
 * Disable Web SQL. Go to **Settings** > **Safari** > **Advanced** > **Experimental Features** > and make sure **Disable Web SQL** is off.
-    
+
     ![Screenshot of disabling Web SQL in Safari's Experimental Features settings on iOS](images/pwa-ios-websql-settings.png "WebSQL Settings in Safari on iOS")
 
 ### PWA isn't working in iOS 13.0 to 13.2

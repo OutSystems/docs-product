@@ -155,4 +155,3 @@ Parameters:
 * **id**: number<br/> Id of the callback to be unregistered.
 
 Returns: void
-

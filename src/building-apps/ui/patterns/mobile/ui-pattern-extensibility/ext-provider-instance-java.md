@@ -35,7 +35,7 @@ The following example demonstrates how to use the Date Picker Pattern to access 
     ![Screenshot illustrating how to drag the Date Picker pattern onto the screen in OutSystems Service Studio](images/drag-datepicker-ss.png "Dragging Date Picker to the Screen")
 
 1. On the **Properties** tab,  in the **Events** section, select **New Client Action** for the **Initialized** event.
-    
+
     ![Screenshot depicting the process of creating a new client action for the Initialized event in OutSystems Service Studio](images/initialized-ss.png "Creating a New Client Action for Initialized Event")
 
 1. Drag a JavaScript node to the **Initialized** event flow.
@@ -66,9 +66,9 @@ This is a direct communication between the developer and the provider, so from t
 
 ## SetProviderConfigs Javascript API
 
-If there’s some configuration  not represented in the ``Set[ProviderName]Configs`` client actions, or you just prefer to set the options using JavaScript, you can do so using the OutSystems API method. 
+If there’s some configuration  not represented in the ``Set[ProviderName]Configs`` client actions, or you just prefer to set the options using JavaScript, you can do so using the OutSystems API method.
 
-The API method receives the configuration and passes them to the provider which updates the Pattern in runtime. 
+The API method receives the configuration and passes them to the provider which updates the Pattern in runtime.
 
 **Note:** This may result in a destroy/init cycle every time this API is called.
 
@@ -87,4 +87,3 @@ The API method receives the configuration and passes them to the provider which 
 This is a direct communication between the developer and the provider, so from this step on, OutSystems does not support any issues or features and the developer should be conscious of the code it produces.
 
 </div>
-

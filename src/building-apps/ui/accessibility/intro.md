@@ -153,7 +153,7 @@ On setting these steps for each input field and publishing the module, you can t
 
 <div class="info" markdown="1">
 
-Use the `aria-labelledby` attribute for more control when setting up relationships between objects and their text labels. For more information, refer to [Examples of ARIA](aria-roles-and-attributes.md#examples-of-aria). 
+Use the `aria-labelledby` attribute for more control when setting up relationships between objects and their text labels. For more information, refer to [Examples of ARIA](aria-roles-and-attributes.md#examples-of-aria).
 
 </div>
 

@@ -19,7 +19,7 @@ coverage-type:
 
 # Look and Feel
 
-The OutSystems UI Framework is the base of all user interfaces. To enhance the look and feel of your app and provide a good user experience, the OutSystems UI Framework comes with [cascading style sheets (CSS)](css.md) that define how your HTML will look in the browser.  You can also [design the layout of your screens using placeholders](design-screens-layout.md) which help to define the position of the elements on the screen. The framework provides a [style editor](styles-editor.md) that allows you to change, for example, font color, margins or border thickness, as well as [themes](themes.md) and a [theme editor](theme-editor.md) that allow you to customize the overall style of your app. 
+The OutSystems UI Framework is the base of all user interfaces. To enhance the look and feel of your app and provide a good user experience, the OutSystems UI Framework comes with [cascading style sheets (CSS)](css.md) that define how your HTML will look in the browser.  You can also [design the layout of your screens using placeholders](design-screens-layout.md) which help to define the position of the elements on the screen. The framework provides a [style editor](styles-editor.md) that allows you to change, for example, font color, margins or border thickness, as well as [themes](themes.md) and a [theme editor](theme-editor.md) that allow you to customize the overall style of your app.
 
 ![Diagram illustrating the components of the OutSystems UI Framework, including CSS, placeholders, style editor, themes, and UI patterns.](images/outsystems-ui-framework-diag.png "OutSystems UI Framework Diagram")
 

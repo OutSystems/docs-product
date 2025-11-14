@@ -48,7 +48,7 @@ Then, configure the architects:
 
     ![Screenshot of the architect role configuration with create applications permission enabled in OutSystems](images/control-app-creation-architect-role-lt.png "Architect Role Configuration")
 
-2. [Add the architects to their respective teams](create-an-it-team.md#add-it-users-to-the-team) with the role Architect.  
+1. [Add the architects to their respective teams](create-an-it-team.md#add-it-users-to-the-team) with the role Architect.  
 
     ![Screenshot depicting the process of adding an architect to a team in OutSystems](images/control-app-creation-add-architect-to-team-lt.png "Adding Architect to Team")
 

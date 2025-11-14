@@ -20,7 +20,7 @@ topic:
 
 # Operands
 
-An operand tells the platform which data to use to manipulate an expression. For example, in the expression `MyValue + 1`, `MyValue` and `1` are the operands. 
+An operand tells the platform which data to use to manipulate an expression. For example, in the expression `MyValue + 1`, `MyValue` and `1` are the operands.
 
 Use the [expression editor](../../../building-apps/logic/expression-editor.md) to see which operands are available in the current scope. The expression editor checks what variables, parameters, functions, and other values, you can use for an operation in, for example, a screen or an action.
 
@@ -54,8 +54,8 @@ Use smart names to set the data type automatically. For example, if you create a
 
 You can use functions as operands. The following are some examples:
 
-* In `Sqrt(9) + 3`, **Sqrt()** is one of the built-in functions. 
-* In `MyFunction(1000) * 100`, **MyFunction()** is a user-defined function. 
+* In `Sqrt(9) + 3`, **Sqrt()** is one of the built-in functions.
+* In `MyFunction(1000) * 100`, **MyFunction()** is a user-defined function.
 
 See [Built-in Functions](<../../lang/auto/builtinfunctions.md>) for more information.
 

@@ -78,4 +78,3 @@ Attribute belonging to a structure used in input and output arguments of REST AP
 </tr>
 </tbody>
 </table>
-

@@ -28,22 +28,22 @@ You can use the Display on Device UI pattern to select what elements are display
 
 ![Overview of Display on Device pattern showing different device types](images/displayondevice-1.png "Display on Device Pattern Overview")
 
-**How to use the Display on Device UI Pattern**
+## How to use the Display on Device UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Display on Device`.
 
     The Display on Device widget is displayed.
 
     ![Service Studio interface with Display on Device widget highlighted](images/displayondevice-2-ss.png "Display on Device Widget in Service Studio")
-  
+
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Display on Device widget into the Main Content area of your application's screen.
@@ -59,3 +59,7 @@ You can use the Display on Device UI pattern to select what elements are display
     ![Adding images to OnDesktop, OnTablet, and OnPhone placeholders in Display on Device widget](images/displayondevice-4-ss.png "Configuring Display on Device Placeholders")
 
 After following these steps and publishing the module, you can test the pattern in your app.
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

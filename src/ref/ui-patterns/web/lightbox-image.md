@@ -26,7 +26,7 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-![Diagram showing the layout of the Light Box Image UI Pattern in a traditional web app](images/lightboximage-3-diag.png "Light Box Image Layout Diagram") 
+![Diagram showing the layout of the Light Box Image UI Pattern in a traditional web app](images/lightboximage-3-diag.png "Light Box Image Layout Diagram")
 
 ![Diagram illustrating the CSS classes associated with the Light Box Image UI Pattern](images/lightboximage-4-diag.png "Light Box Image Classes Diagram")
 
@@ -60,4 +60,3 @@ To add rounded corners to images inside Light Box Image, add the following custo
 ```
 
 ![Screenshot showing CSS code to add rounded corners to images in the Light Box Image Pattern](images/lightboximage-6-ss.png "CSS for Rounded Corners in Light Box Image")
-    

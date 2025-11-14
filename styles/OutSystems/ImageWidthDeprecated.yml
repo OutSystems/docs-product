@@ -1,0 +1,6 @@
+extends: existence
+message: "Width tag is deprecated. Edit the image and use the full width instead."
+level: suggestion
+scope: raw
+raw:
+  - '\?width\='

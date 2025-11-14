@@ -31,7 +31,6 @@ To create a one-to-one relationship to an existing entity:
 1. Change the `Id` attribute to be the identifier of the entity you want to extend.
 1. Add the attributes.
 
-
 ## Example
 
 The GoOutWeb application allows to rate and review places like restaurants and hotels. The application saves some end users information like the email, the phone number or Twitter account.
@@ -59,4 +58,3 @@ Since we are using the `User` system entity to store the end users it is not pos
 ![Diagram illustrating how to create a one-to-one relationship between User and Profile entities in the GoOutWeb application data model](images/one-to-one-relationship-1.png "One-to-One Relationship Diagram")
 
 As a result, you have the `Profile` entity extending the `User` entity. Every time a `Profile` record is created its identifier should have the value of the `User` record identifier it belongs to.
-

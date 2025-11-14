@@ -30,7 +30,7 @@ The **On Application Ready** action runs when navigating to a module. Use **On A
 
 **On Application Ready** action runs synchronously and blocks the screen render. This means that when navigating to a module for the first time, the accessed screen will render only after **On Application Ready** completes.
 
-After the first execution, navigations between screens from the same module don't trigger **On Application Ready**. This includes navigating to other screens using 
+After the first execution, navigations between screens from the same module don't trigger **On Application Ready**. This includes navigating to other screens using
 [External Site](class-external-site.md) or [Destination](class-destination.md), navigating back to a previous screen, etc. However, if you navigate to a screen of a different module, the **On Application Ready** of that module is executed.
 
 Note that **On Application Ready** is executed if the user types or refreshes the url of a screen directly in the browser address bar. This causes the corresponding module to reload.

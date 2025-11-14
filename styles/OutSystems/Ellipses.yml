@@ -1,0 +1,11 @@
+# Adapted from Microsoft.Ellipses
+# Changed: tokens, level
+# Previous link: https://docs.microsoft.com/en-us/style-guide/punctuation/ellipses
+extends: existence
+message: "In general, don't use an ellipsis."
+nonword: true
+level: suggestion
+action:
+  name: remove
+tokens:
+  - '\.\.\.[^*]'

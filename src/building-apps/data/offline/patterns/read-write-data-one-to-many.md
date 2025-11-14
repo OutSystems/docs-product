@@ -39,23 +39,21 @@ The following is an overview of the Read/Write Data One-to-Many pattern:
 
 1. ![Icon representing the server in data synchronization](images/icon-server.png "Server Icon") Updates database data with the one sent from local storage, taking the necessary steps to maintain the relationship between the records of the master and detail entities. For example, a dictionary can be used to track the IDs of the local records and the IDs of the corresponding records on the server.
 
-1. ![Icon representing the server in data synchronization](images/icon-server.png "Server Icon") Sends updated database data. 
+1. ![Icon representing the server in data synchronization](images/icon-server.png "Server Icon") Sends updated database data.
 
 1. ![Icon representing the client in data synchronization](images/icon-client.png "Client Icon") Deletes and recreates data in the local storage with the data received from the server.
-
 
 **About the mapping**
 
 In this sample pattern, we use a dictionary to maintain the relationship between the records of the parent and child entities. When syncing new parent entity records with the server, the dictionary keeps track of the correspondence between the original ID on the local storage and the new ID on the server database as shown below. This is needed because the parent and the child records are not created in the server database at the same time, so the dictionary mapping is used to update the unsynced child records with the foreign keys generated on the main server database.
 
-Key: local record ID | Value: server record ID
----------------------|------------------------
-5                    | 135
-6                    | 136
-7                    | 150
+| Key: local record ID | Value: server record ID |
+| ---------------------|------------------------ |
+| 5                    | 135 |
+| 6                    | 136 |
+| 7                    | 150 |
 
 You can download the [sample module for the Read/Write Data One-to-Many pattern](http://www.outsystems.com/forge/component/1638/Offline+Data+Sync+Patterns/) explained here and examine the logic in your own environment.
-
 
 ## Data Model
 
@@ -67,8 +65,7 @@ The application logic must update the metadata attributes `IsFromServer`, `IsMod
 
 * `IsFromServer`: If True, the record exists on the server.
 * `IsModified`: If True, the record has been modified locally.
-* `IsActive`: If False, the record was deleted locally but may not yet have been removed from the server. 
-
+* `IsActive`: If False, the record was deleted locally but may not yet have been removed from the server.
 
 ## OfflineDataSync Logic
 
@@ -81,7 +78,6 @@ The following is a description of the logic of the `OfflineDataSync` client acti
 1. Calls the `ServerDataSync` server action with the lists of locally added, updated, and deleted Company and Contact records as inputs. The server updates the data in the database and returns the list of updated Company and Contact records.
 1. Deletes all Company records in the local storage and recreates the Company records in the local storage using the list of records returned by the server.
 1. Deletes all Contact records in the local storage and recreates the Contact records in the local storage using the list of records returned by the server.
-
 
 ## ServerDataSync Logic
 
@@ -96,7 +92,6 @@ The following is a description of the logic of the `ServerDataSync` server actio
 1. Calls the `SyncContacts` server action with the lists of locally added, updated, and deleted Contact records as inputs. The action updates the data in the database and returns the list of updated Contact records.
 
 1. Assigns the lists of updated Company and Contact records to the output parameters of the action.
-
 
 ## SyncCompanies Logic
 
@@ -117,7 +112,6 @@ The following is a description of the logic of the `SyncCompanies` server action
     IsFromServer = True  
     IsModified = False  
     IsActive = True
-
 
 ## SyncContacts Logic
 

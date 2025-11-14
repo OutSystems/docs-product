@@ -48,22 +48,22 @@ The Theme of the target module is determined by the Theme defined in the App Tem
 When a developer confirms the creation of a Screen based on a Screen Template, Service Studio does the following:
 
   1. If the Layout Blocks are the same in the Screen Template and the target module, a blank Screen with the root Layout Block is created in the target module. If the Layout Blocks are not the same, the Layout set in Theme Layout Property is selected as the root Layout Block.
-  2. The Placeholders are compared. If the Placeholders have the same names, the content of the target Placeholders is replaced by the content of the source Placeholders. The Placeholders that do not exist in the target Layout Block are ignored.
-  3. The references from the Screen Template are added to the target module, while local content is copied to the target module.
-  4. The Screen becomes available in the target module. The developer can proceed with data replacement and further adjustments.
+  1. The Placeholders are compared. If the Placeholders have the same names, the content of the target Placeholders is replaced by the content of the source Placeholders. The Placeholders that do not exist in the target Layout Block are ignored.
+  1. The references from the Screen Template are added to the target module, while local content is copied to the target module.
+  1. The Screen becomes available in the target module. The developer can proceed with data replacement and further adjustments.
 
 Here is a simplified overview of the Screen Template instantiation:
 
   1. Developers are developing an app and decide to insert the About page.
-  2. They open a **New Screen** dialog, select "About Company" Screen Template and confirm the selection. In the background, Service Studio changes the structure of this Screen to match the app structure.
-  3. A new About Screen is available for the developers in the app.
+  1. They open a **New Screen** dialog, select "About Company" Screen Template and confirm the selection. In the background, Service Studio changes the structure of this Screen to match the app structure.
+  1. A new About Screen is available for the developers in the app.
 
 ![Diagram illustrating the process of instantiating a Screen Template in OutSystems Service Studio](images/template-instantiation.png "Screen Template Instantiation Process")
 
 ## The Replace Data feature
 
 Screen Templates come with the feature that enables the developers to replace the sample data with the business data in the Screen by dragging and dropping. The following Widgets support the Data Replacement by default:  
-    
+
 * Chart
 * Form
 * Table
@@ -71,7 +71,7 @@ Screen Templates come with the feature that enables the developers to replace th
 
 If you want other UI containers to support the Data Replacement, add the `servicestudio-showRecord` Property and set it to **True** in the **Extended Properties** pane.
 
-The Replace Data algorithm works with data sources in the Screen Template, and this data can originate from OutSystems Sample Data modules or your data modules. This dictates the level of logic you can implement to edit the data in Screens. In general, knowing the data model in the target module enables you to create business logic that can support some advanced features.    
+The Replace Data algorithm works with data sources in the Screen Template, and this data can originate from OutSystems Sample Data modules or your data modules. This dictates the level of logic you can implement to edit the data in Screens. In general, knowing the data model in the target module enables you to create business logic that can support some advanced features.
 
 ## Sample Data
 

@@ -20,7 +20,6 @@ topic:
 
 # Operators
 
-
 This is the reference document for the operators you can use in an OutSystems [expression](intro.md).
 
 ## Numeric
@@ -33,8 +32,8 @@ Yields the negation of its numeric operand.
 
 The following are the data types allowed for the unary minus (\-) operator:
 
-| Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time  
-|---|---|---|---|---|---|---|---| 
+| Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time |
+|---|---|---|---|---|---|---|---|
 | No | Yes | Yes | Yes | No | No | No | No  |
   
 ### Arithmetic operators /, \-, \*
@@ -43,16 +42,16 @@ Perform common arithmetic operations.
 
 The following are the data types allowed for the arithmetic operators /, \-, \*:
 
-/, \*, \- | Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time  
----|---|---|---|---|---|---|---|---  
-**Text** | No | No | No | No | No | No | No | No  
-**Long Integer** | No | Yes(a) | Yes(a) | Yes(a) | No | No | No | No  
-**Integer** | No | Yes(a) | Yes(a) | Yes(a) | No | No | No | No  
-**Decimal** | No | Yes(a) | Yes(a) | Yes | No | No | No | No  
-**Boolean** | No | No | No | No | No | No | No | No  
-**DateTime** | No | No | No | No | No | No | No | No  
-**Date** | No | No | No | No | No | No | No | No  
-**Time** | No | No | No | No | No | No | No | No  
+| /, \*, \- | Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time |
+| ---|---|---|---|---|---|---|---|--- |
+| **Text** | No | No | No | No | No | No | No | No |
+| **Long Integer** | No | Yes(a) | Yes(a) | Yes(a) | No | No | No | No |
+| **Integer** | No | Yes(a) | Yes(a) | Yes(a) | No | No | No | No |
+| **Decimal** | No | Yes(a) | Yes(a) | Yes | No | No | No | No |
+| **Boolean** | No | No | No | No | No | No | No | No |
+| **DateTime** | No | No | No | No | No | No | No | No |
+| **Date** | No | No | No | No | No | No | No | No |
+| **Time** | No | No | No | No | No | No | No | No |
 
 (a) The result of a division operation is always converted to a `Decimal`.
 
@@ -62,16 +61,16 @@ Performs sum operation. When one of the operands is `Text`, the other operand is
 
 The following are the data types allowed for the arithmetic operator `+`:
 
-\+ | Text | Long Integer | Integer | Decimal | Boolean | DateTime | Date | Time  
----|---|---|---|---|---|---|---|---  
-**Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a)  
-**Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No  
-**Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No  
-**Decimal** | Yes(a) | Yes | Yes | Yes | No | No | No | No  
-**Boolean** | Yes(a) | No | No | No | No | No | No | No  
-**DateTime** | Yes(a) | No | No | No | No | No | No | No  
-**Date** | Yes(a) | No | No | No | No | No | No | No  
-**Time** | Yes(a) | No | No | No | No | No | No | No
+| \+ | Text | Long Integer | Integer | Decimal | Boolean | DateTime | Date | Time |
+| ---|---|---|---|---|---|---|---|--- |
+| **Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) |
+| **Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No |
+| **Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No |
+| **Decimal** | Yes(a) | Yes | Yes | Yes | No | No | No | No |
+| **Boolean** | Yes(a) | No | No | No | No | No | No | No |
+| **DateTime** | Yes(a) | No | No | No | No | No | No | No |
+| **Date** | Yes(a) | No | No | No | No | No | No | No |
+| **Time** | Yes(a) | No | No | No | No | No | No | No |
 
 (a) The non-text side is converted to `Text` and then concatenated.
 
@@ -97,20 +96,20 @@ Common comparison operations. When one of the operands is Text, the other operan
 
 The following are the data types allowed for comparison operators:
 
-&lt;, &gt;, &lt;=, &gt;= | Text | Integer | Long Integer | Decimal | Boolean | Date Time | Date | Time | Email | Phone Number | Currency | Binary Data  
----|---|---|---|---|---|---|---|---|---|---|---|---  
-**Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | No | No  
-**Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | No | No | Yes(c) | No  
-**Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | No | No | Yes(c) | No  
-**Decimal** | Yes(a) | Yes | Yes | Yes | No | No | No | No | No | No | Yes(c) | No  
-**Boolean** | Yes(a) | No | No | No | No | No | No | No | No | No | No | No  
-**Date Time** | Yes(a) | No | No | No | No | Yes | No | No | No | No | No | No 
-**Date** | Yes(a) | No | No | No | No | No | Yes | No | No | No | No | No  
-**Time** | Yes(a) | No | No | No | No | No | No | Yes | No | No | No | No  
-**Email** | Yes(a) | No | No | No | No | No | No | No | Yes | Yes(b) | No | No  
-**Phone Number** | Yes(a) | No | No | No | No | No | No | No | Yes(b) | Yes | No | No  
-**Currency** | No | Yes | Yes | Yes | No | No | No | No | No | No | Yes | No  
-**Binary Data** | No | No | No | No | No | No | No | No | No | No | No | No  
+| &lt;, &gt;, &lt;=, &gt;= | Text | Integer | Long Integer | Decimal | Boolean | Date Time | Date | Time | Email | Phone Number | Currency | Binary Data |
+| ---|---|---|---|---|---|---|---|---|---|---|---|--- |
+| **Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | No | No |
+| **Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | No | No | Yes(c) | No |
+| **Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | No | No | Yes(c) | No |
+| **Decimal** | Yes(a) | Yes | Yes | Yes | No | No | No | No | No | No | Yes(c) | No |
+| **Boolean** | Yes(a) | No | No | No | No | No | No | No | No | No | No | No |
+| **Date Time** | Yes(a) | No | No | No | No | Yes | No | No | No | No | No | No |
+| **Date** | Yes(a) | No | No | No | No | No | Yes | No | No | No | No | No |
+| **Time** | Yes(a) | No | No | No | No | No | No | Yes | No | No | No | No |
+| **Email** | Yes(a) | No | No | No | No | No | No | No | Yes | Yes(b) | No | No |
+| **Phone Number** | Yes(a) | No | No | No | No | No | No | No | Yes(b) | Yes | No | No |
+| **Currency** | No | Yes | Yes | Yes | No | No | No | No | No | No | Yes | No |
+| **Binary Data** | No | No | No | No | No | No | No | No | No | No | No | No |
 
 (a) The non-text side is converted to `Text` and the length of both texts are compared.
 
@@ -125,23 +124,23 @@ Performs equality operations. When one of operands is `Text`, the other operand 
 
 The following are the data types allowed for equality operators:
 
-=, &lt;&gt; | Text | Integer | Long Integer | Decimal | Boolean | Date Time | Date | Time | Email | Phone Number | Currency | Binary Data | Entity / Structure / Record | Integer Identifier | Text Identifier  
----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---  
-**Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | No | No | No | No  
-**Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | Yes* | Yes* | Yes* | No | No | No | No  
-**Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | Yes* | Yes* | Yes* | No | No | No | No  
-**Decimal** | Yes(a) | Yes | Yes | Yes | No | No | No | No | Yes* | Yes* | Yes* | No | No | No | No  
-**Boolean** | Yes(a) | No | No | No | Yes | No | No | No | No | No | No | No | No | No | No  
-**Date Time** | Yes(a) | No | No | No | No | Yes | Yes* | Yes* | Yes* | Yes* | No | No | No | No | No  
-**Date** | Yes(a) | No | No | No | No | Yes* | Yes | No | Yes* | Yes* | No | No | No | No | No  
-**Time** | Yes(a) | No | No | No | No | Yes* | No | Yes | Yes* | Yes* | No | No | No | No | No  
-**Email** | Yes(a) | Yes* | Yes* | Yes* | No | Yes* | Yes* | Yes* | Yes | Yes* | No | No | No | No | No  
-**Phone Number** | Yes(a) | Yes* | Yes* | Yes* | No | Yes* | Yes* | Yes* | Yes* | Yes | Yes* | No | No | No | No  
-**Currency** | Yes(a) | Yes* | Yes* | Yes* | No | No | No | No | No | Yes* | Yes | No | No | No | No  
-**Binary Data** | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No  
-**Entity / Structure / Record** | No | No | No | No | No | No | No | No | No | No | No | No | Yes(b) | No | No  
-**Integer Identifier** | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes(c) | No  
-**Text Identifier** | No | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes(c)
+| =, &lt;&gt; | Text | Integer | Long Integer | Decimal | Boolean | Date Time | Date | Time | Email | Phone Number | Currency | Binary Data | Entity / Structure / Record | Integer Identifier | Text Identifier |
+| ---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|--- |
+| **Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | No | No | No | No |
+| **Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | Yes* | Yes* | Yes* | No | No | No | No |
+| **Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | Yes* | Yes* | Yes* | No | No | No | No |
+| **Decimal** | Yes(a) | Yes | Yes | Yes | No | No | No | No | Yes* | Yes* | Yes* | No | No | No | No |
+| **Boolean** | Yes(a) | No | No | No | Yes | No | No | No | No | No | No | No | No | No | No |
+| **Date Time** | Yes(a) | No | No | No | No | Yes | Yes* | Yes* | Yes* | Yes* | No | No | No | No | No |
+| **Date** | Yes(a) | No | No | No | No | Yes* | Yes | No | Yes* | Yes* | No | No | No | No | No |
+| **Time** | Yes(a) | No | No | No | No | Yes* | No | Yes | Yes* | Yes* | No | No | No | No | No |
+| **Email** | Yes(a) | Yes* | Yes* | Yes* | No | Yes* | Yes* | Yes* | Yes | Yes* | No | No | No | No | No |
+| **Phone Number** | Yes(a) | Yes* | Yes* | Yes* | No | Yes* | Yes* | Yes* | Yes* | Yes | Yes* | No | No | No | No |
+| **Currency** | Yes(a) | Yes* | Yes* | Yes* | No | No | No | No | No | Yes* | Yes | No | No | No | No |
+| **Binary Data** | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No |
+| **Entity / Structure / Record** | No | No | No | No | No | No | No | No | No | No | No | No | Yes(b) | No | No |
+| **Integer Identifier** | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes(c) | No |
+| **Text Identifier** | No | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes(c) |
 
 (a) The non-text side is converted to `Text` and then compared.
 
@@ -151,36 +150,40 @@ The following are the data types allowed for equality operators:
 
 ***Equality between different types:**
 
-Type of Operand 1 | Type of Operand 2 | Result  
----|---|---  
- Date | Date Time | Converts Date Time operand type to Date type by dropping the time component.  
-Date Time | Date | Converts Date operand type to Date Time type by adding the time component (#00:00:00#).  
-Time or Date Time | Time or Date Time | Converts Time operand type to Date Time type by adding the date component (#01-01-1900#).  
-Currency | Integer, Long Integer, or Decimal | Converts the Currency variable to Integer data type.  
-Email or Phone Number | Integer, Long Integer, or Decimal | Converts Decimal, Long Integer or Integer operand type to Text.  
-Email | Phone Number | Converts both operands to Text.  
-Date Time, Date, or Time | Email or Phone Number | Converts both operands to Text.  
-Currency | Phone Number | Converts both operands to Text.  
+| Type of Operand 1 | Type of Operand 2 | Result |
+| ---|---|--- |
+| Date | Date Time | Converts Date Time operand type to Date type by dropping the time component. |
+| Date Time | Date | Converts Date operand type to Date Time type by adding the time component (#00:00:00#). |
+| Time or Date Time | Time or Date Time | Converts Time operand type to Date Time type by adding the date component (#01-01-1900#). |
+| Currency | Integer, Long Integer, or Decimal | Converts the Currency variable to Integer data type. |
+| Email or Phone Number | Integer, Long Integer, or Decimal | Converts Decimal, Long Integer or Integer operand type to Text. |
+| Email | Phone Number | Converts both operands to Text. |
+| Date Time, Date, or Time | Email or Phone Number | Converts both operands to Text. |
+| Currency | Phone Number | Converts both operands to Text. |
 
 ## Like
 
-This operator is only valid in the Filter Condition Editor of an aggregate and allows you to compare results. It has the same semantic as the `LIKE` keyword in SQL. You can use the `LIKE` operator to compare with an expression. The advantage of `LIKE` is the fact that it allows you to use the wildcard character `%` that represents one or more characters.
+The `Like` operator compares a text string to a pattern using the following wildcard characters:
 
-For example, if you want to select the Identifier for every Customer that contains "James" in its name, in any position of the string, the following filter condition allows you to get this information:
+* `%` (percent sign): Matches zero or more characters.
+* `_` (underscore): Matches a single character.
 
-`name LIKE '%James%'`
+Examples:
+
+* `User.Name Like "%James%"`
+* `Product.Code Like "A_01"`
 
 The following are the data types allowed for LIKE operator:
 
-LIKE | Text | Integer | Decimal | Boolean | DateTime | Date | Time  
----|---|---|---|---|---|---|---  
-**Text** | Yes | (a) | (a) | (a) | (a) | (a) | (a)  
-**Integer** | (a) | No | No | No | No | No | No  
-**Decimal** | (a) | No | No | No | No | No | No  
-**Boolean** | (a) | No | No | No | No | No | No  
-**DateTime** | (a) | No | No | No | No | No | No  
-**Date** | (a) | No | No | No | No | No | No  
-**Time** | (a) | No | No | No | No | No | No
+| LIKE | Text | Integer | Decimal | Boolean | DateTime | Date | Time |
+| ---|---|---|---|---|---|---|--- |
+| **Text** | Yes | (a) | (a) | (a) | (a) | (a) | (a) |
+| **Integer** | (a) | No | No | No | No | No | No |
+| **Decimal** | (a) | No | No | No | No | No | No |
+| **Boolean** | (a) | No | No | No | No | No | No |
+| **DateTime** | (a) | No | No | No | No | No | No |
+| **Date** | (a) | No | No | No | No | No | No |
+| **Time** | (a) | No | No | No | No | No | No |
 
 (a) The non-text side is converted to `Text` and then compared.
 
@@ -206,14 +209,14 @@ You can use an expression inside the indexer operator as long as it returns an i
 
 The next table presents the precedence of the operators, highest precedence first:
 
-Operator | Description  
----|---  
- \- | Numeric negation  
-NOT | Logical negation
-/, \* | Multiplicative operators 
-\-, \+ | Additive operators  
-&lt;, &gt;, &lt;=, &gt;= | Relational operators 
-=, &lt;&gt; | Equality operators  
-LIKE | Similarity operator
-AND | Logical AND
-OR | Logical OR
+| Operator | Description |
+| ---|--- |
+| \- | Numeric negation |
+| NOT | Logical negation |
+| /, \* | Multiplicative operators |
+| \-, \+ | Additive operators |
+| &lt;, &gt;, &lt;=, &gt;= | Relational operators |
+| =, &lt;&gt; | Equality operators |
+| LIKE | Similarity operator |
+| AND | Logical AND |
+| OR | Logical OR |

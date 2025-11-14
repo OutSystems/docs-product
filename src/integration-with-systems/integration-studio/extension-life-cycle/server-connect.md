@@ -24,4 +24,4 @@ When you launch **Integration Studio** you must connect to an environment before
 
 In the **File** menu or in the toolbar click ![Animated GIF showing the Connect to Environment button in Integration Studio](images/connect-server.png "Connect to Environment button") **Connect to Environment...** In the **Connect to Environment...** window select the environment from the dropdown list, give your user name and password, and then click **Connect**.
 
-Once you have connected to your environment the **Context information** pane at the bottom of the **Integration Studio** workspace displays the name of the environment server and your user name. 
+Once you have connected to your environment the **Context information** pane at the bottom of the **Integration Studio** workspace displays the name of the environment server and your user name.

@@ -249,6 +249,6 @@ public void MssSetEncoding(string ssEncoding) {
 
 6\. In Service Studio, add a reference to the "SetEncoding" action of your extension in your application module.  
 
-7\. In the flow of the SOAP callback of your SOAP Web Service, i.e. the flow of "OnBeforeRequestAdvanced", drag the "SetEncoding" action to the flow and enter the desired encoding value in the "Encoding" input parameter. 
+7\. In the flow of the SOAP callback of your SOAP Web Service, i.e. the flow of "OnBeforeRequestAdvanced", drag the "SetEncoding" action to the flow and enter the desired encoding value in the "Encoding" input parameter.
 
 8\. Publish the application module and test the application, checking that the requests made to the consumed SOAP Web Service are done with the correct encoding and that no runtime errors occur due to encoding mismatch.

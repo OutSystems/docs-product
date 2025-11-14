@@ -32,10 +32,10 @@ This allows your application to consume a REST API with different configurations
 
 To configure the runtime settings of a REST API you are consuming, do the following:
 
-1. Go to the Service Center management console of your OutSystems environment. 
-1. Go to Factory section and open your application. 
-1. Open the module where you are consuming the REST API. 
-1. Select the Integrations tab and click on the consumed REST API name to edit it. 
-1. Set the **effective URL** and/or **effective authentication credentials** for the current environment and click apply.   
+1. Go to the Service Center management console of your OutSystems environment.
+1. Go to Factory section and open your application.
+1. Open the module where you are consuming the REST API.
+1. Select the Integrations tab and click on the consumed REST API name to edit it.
+1. Set the **effective URL** and/or **effective authentication credentials** for the current environment and click apply.
   
 ![Screenshot of the Service Center interface showing where to configure the runtime settings for a consumed REST API](images/rest-runtime-configuration-sc.png "Service Center REST API Runtime Configuration")

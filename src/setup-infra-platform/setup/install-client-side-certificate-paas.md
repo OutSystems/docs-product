@@ -25,7 +25,7 @@ When consuming webservices external to the OutSystems servers and considering th
 When the server-side requires authentication via a certificate, the client-side needs to be configured so that it bears the certificate to be able to send it on it’s requests to the server.
 
  All the front-ends of the environment need to have the certificate configured.
-For OutSystems cloud environments, this operation is performed by OutSystems support. 
+For OutSystems cloud environments, this operation is performed by OutSystems support.
 
 This option is available depending on your subscription, check here for more details about [Cloud service delivery requiring direct assistance from OutSystems Support](https://www.outsystems.com/legal/success/cloud-services-catalog/).
 
@@ -39,16 +39,15 @@ You’ll need to [open a support case](https://success.outsystems.com/Support/Ou
 
 * Make sure to be clear about what environments should the certificate be installed in.
 
-## What will OutSystems deliver 
+## What will OutSystems deliver
 
-OutSystems staff installs the certificate in all the front-ends and notifies you once the operation is complete. 
-The path to the certificate is provided so that you can use it in your integrations. 
-
+OutSystems staff installs the certificate in all the front-ends and notifies you once the operation is complete.
+The path to the certificate is provided so that you can use it in your integrations.
 
 ## Using the certificate on integrations
+
 For instructions on how to secure your integrations with client side certificates authentication check:
 
 [Secure Rest APIs with client side authentication](https://success.outsystems.com/Support/Security/Secure_Rest_APIs_with_client_side_authentication)
 
 [SOAP: Authenticate using a client certificate](../../integration-with-systems/soap/consume/extensibility-use-cases/certificate.md)
-

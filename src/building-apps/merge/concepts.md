@@ -33,10 +33,10 @@ This document outlines the merge operations in OutSystems. For a more detailed e
 
 This merge is automatic if there are no conflicts, and applies to both visual elements (screens, widgets, etc.) and textual elements (CSS, JavaScript).
 
-1. The other developers open the version 4 of the module. They start developing. 
-1. You open the version 4 of the module. You also start developing. 
+1. The other developers open the version 4 of the module. They start developing.
+1. You open the version 4 of the module. You also start developing.
 1. The other developers publish their changes.
-1. You publish your changes. OutSystems detects there are changes to be merged, based on the version from where both started developing (V4). The **Modified Version Detected** window is displayed and you choose **Merge and Publish**. OutSystems automatically merges and publishes the module for you. 
+1. You publish your changes. OutSystems detects there are changes to be merged, based on the version from where both started developing (V4). The **Modified Version Detected** window is displayed and you choose **Merge and Publish**. OutSystems automatically merges and publishes the module for you.
 
 ![Diagram illustrating the automatic merge process of module versions in OutSystems](images/automatic-merge-module-versions-diag.png "Automatic Merge of Module Versions")
 
@@ -47,7 +47,7 @@ elements, OutSystems cannot automatically merge the work. It's not possible to a
 
 1. The other developers open version 4 of the module in Service Studio. They start developing.
 1. You open version 4 of the module in Service Studio. You start developing.
-1. The other developers publish their changes. 
+1. The other developers publish their changes.
 1. You publish your changes. OutSystems determines that there are changes to be merged based on the version from where both parties started developing (V4). The  **Modified Version Detected**  window is displayed, and you choose **Merge and Publish**. There are conflicts because you have changed some elements that the other developers also changed. Service Studio displays the **Compare and Merge** window. The non-conflicting changes are selected for you, but you have to decide which conflicting changes you want to keep.
 
 ![Diagram showing the steps to resolve merge conflicts in OutSystems Service Studio](images/resolve-merge-conflicts-diag.png "Resolve Merge Conflicts")

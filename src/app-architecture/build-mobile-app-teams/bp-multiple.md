@@ -44,13 +44,13 @@ From bottom to top we will have:
 
 * **Sync Common (Common Synchronization process for all Business Lines)**
 
-    This can be seen as the synchronization orchestrator. 
+    This can be seen as the synchronization orchestrator.
 
     It will define a SyncUnit for each team (Business Line). At this level will be a BusinessUnit, and according to that, it will synchronize the requested SyncUnit for a specific team.
 
     ![Flowchart illustrating the common synchronization process across different business lines in a mobile app.](images/how_to_build_mobile_app_16.png "Common Synchronization Process")
 
-    In the architecture above we could define the SyncUnits at this level as BL1, BL2, and BL3. If the application requests the **login synchronization **moment for only the **BL1 team**, we would have for instance **"Login,BL1"** to identify it and the OfflineDataSync action of this module would call the OfflineDataSync action from the BL1 Sync module with "Login_BL1" as sync unit. 
+    In the architecture above we could define the SyncUnits at this level as BL1, BL2, and BL3. If the application requests the **login synchronization** moment for only the **BL1 team**, we would have for instance **"Login,BL1"** to identify it and the OfflineDataSync action of this module would call the OfflineDataSync action from the BL1 Sync module with "Login_BL1" as sync unit.
 
     ![Diagram showing the definition of SyncUnits for different business lines in a mobile app.](images/how_to_build_mobile_app_17.png "Synchronization Unit Definition")
 
@@ -59,14 +59,14 @@ From bottom to top we will have:
     Where the layouts are defined, each can define their own layout here. The layout will use the OfflineDataSyncEvents from the Sync_Common module and manage the events in order to trigger them to the upper level.
 
     The blocks used to build each screen are also placed in this module. If a specific action triggers a navigation to another screen, an event for that will have to be triggered and pushed until the final layer, which then will perform the navigation between screens.
-    
+
     ![Screenshot of the mobile core widgets layer interface with layout and event management for a mobile app.](images/how_to_build_mobile_app_18.png "Mobile Core Widgets Layer")
 
     This module will also define the specific theme for each team. That way, each team can have their own stylesheet with CSS that is not shared with the other teams and limit the merge between themes.
 
     ![Illustration of the theme definition for a specific business line in a mobile app.](images/how_to_build_mobile_app_19.png "Theme Definition for Business Line")
 
-* **BL MUI (Mobile User Interface for each Business Line) **
+* **BL MUI (Mobile User Interface for each Business Line)**
 
     Used to create main blocks as wrappers for the screens. These blocks will use the layout and content blocks from the **BL MCW** module. Basically, these main blocks will be your screen.
 
@@ -88,11 +88,11 @@ From bottom to top we will have:
 
 * **Major App**
 
-    This is the main application that will make each Business Line work. 
+    This is the main application that will make each Business Line work.
 
     Each Business Line will be separated by its own UI flow that will use a specific theme. You can think of this module as the one that connects the UI from each team and will be the actual application.
 
-    ![Diagram of the Major App module showing the connection of UI flows from different business lines in a mobile app.](images/how_to_build_mobile_app_23.png "Major Mobile App Module") 
+    ![Diagram of the Major App module showing the connection of UI flows from different business lines in a mobile app.](images/how_to_build_mobile_app_23.png "Major Mobile App Module")
 
     The Major Application module will have as default theme the common theme defined at the BL Common level. Each Business Line theme also depends on that common theme, so we can isolate the different Business Lines in flows with different themes, all depending on the same one.
 

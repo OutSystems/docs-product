@@ -1,0 +1,7 @@
+extends: readability
+message: "Readability score (grade level %s) might be too high."
+level: suggestion
+grade: 13
+metrics:
+  - Flesch-Kincaid
+#  - Gunning Fog

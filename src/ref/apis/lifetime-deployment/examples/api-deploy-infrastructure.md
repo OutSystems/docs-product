@@ -31,7 +31,7 @@ To publish an app across infrastructures using the LifeTime API you need LifeTim
 Follow the API calls outlined below:
 
 1. Get the binary file from the source environment
-    * [ Get the binary file (.oap) for an app](#get-the-binary-file-oap-from-the-source-environment)
+    * [Get the binary file (.oap) for an app](#get-the-binary-file-oap-from-the-source-environment)
         1. Get the `source environment key` (only necessary if you still need to get this information).
         1. Get the `application key` (only necessary if you still need to get this information).
         1. Request the link to download the binary file.
@@ -50,7 +50,7 @@ Follow the API calls outlined below:
     1. Start the created deployment.
     1. Get the deployment execution status to know when the execution finishes. A terminal deployment status is one of the following - needs_user_intervention, aborted, finished_successful, finished_with_warnings, finished_with_errors.
 
-#### Important notes
+## Important notes
 
 For the use-case of publishing apps from one infrastructure to another, consider the following:
 
@@ -137,9 +137,10 @@ Response body:
     {...}
 ]
 ```
+
 Please note that the app modules must not be IPP protected. IPP protected modules will fail to publish successfully when targeting an environment of a different infrastructure.
 
-### Request the link to download the app’s binary file 
+### Request the link to download the app’s binary file
 
 Call the API method that returns the link to download the app's binary (.oap file).
 
@@ -262,7 +263,7 @@ Request body:
 }
 ```
 
-If the operation is successful, the response body contains the solution key. 
+If the operation is successful, the response body contains the solution key.
 
 Response body: `Ae1ef38a-f4cf-47be-b1c3-5df4417a1b94`
 
@@ -277,13 +278,13 @@ After replacing the `{EnvironmentKey}` and `{SolutionKey}` placeholders with the
 Request: `GET /lifetimeapi/rest/v2/environments/f3582e43-43c7-4bb4-8cbb-d9f6cbcbd35e/solutionstatus/Ae1ef38a-f4cf-47be-b1c3-5df4417a1b94`
 
 If the operation is successful, the response body contains the actual status of the solution and the status reason (when the solution status is aborted), which can be:
-- Gathering Dependencies: The process is calculating all the dependencies for the solution.
-- Getting Binaries: The process is getting the binaries for each module included in the solution.
-- Generating Meta Model: Building the solution package manifest.
-- Generating Solution: Creating the solution file.
-- Completed: This is the final step. It indicates that the solution is completed and is ready for download.
-- Aborted: This is a final step. It indicates that there was a problem generating the solution.
 
+* Gathering Dependencies: The process is calculating all the dependencies for the solution.
+* Getting Binaries: The process is getting the binaries for each module included in the solution.
+* Generating Meta Model: Building the solution package manifest.
+* Generating Solution: Creating the solution file.
+* Completed: This is the final step. It indicates that the solution is completed and is ready for download.
+* Aborted: This is a final step. It indicates that there was a problem generating the solution.
 
 Response body:
 
@@ -294,7 +295,7 @@ Response body:
 }
 ```
 
-### Request the link to download the solution’s binary file 
+### Request the link to download the solution’s binary file
 
 Call the API method that returns the link to download the solution's binary (.osp file).
 

@@ -41,22 +41,22 @@ You can use the Action Sheet UI Patterns to add a menu that slides from the bott
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Action Sheet widget into the Main Content area of your application's screen.
 
     ![Dragging the Action Sheet widget into the Main Content area of an application's screen](images/actionsheet-3-ss.png "Dragging Action Sheet Widget")
 
-    By default, the Action Sheet widget contains 5 button placeholders. 
+    By default, the Action Sheet widget contains 5 button placeholders.
 
-1. Add the relevant content to the Button placeholders. In this example, we add buttons that navigate to other pages when clicked. 
+1. Add the relevant content to the Button placeholders. In this example, we add buttons that navigate to other pages when clicked.
 
     ![Action Sheet widget with button placeholders for adding navigation buttons](images/actionsheet-5-ss.png "Adding Buttons to Action Sheet")
 
-1. Add a local variable. In this example, we call the variable **IsOpened**. 
+1. Add a local variable. In this example, we call the variable **IsOpened**.
 
 1. Select the Action Sheet pattern, and on the **Properties** tab, set the **IsOpen** property to the new local variable (in this example, **IsOpened**).
 
@@ -66,20 +66,20 @@ You can use the Action Sheet UI Patterns to add a menu that slides from the bott
 
     ![Adding a button to open the Action Sheet menu with the OnClick event in the Properties tab](images/actionsheet-6-ss.png "Creating OnClick Event")
 
-1. Add an Assign to the client action and set the **IsOpened** local variable to **True**. 
+1. Add an Assign to the client action and set the **IsOpened** local variable to **True**.
 
     ![Assign action in Service Studio setting the IsOpened local variable to True](images/actionsheet-7-ss.png "Assigning True to IsOpened Variable")
 
 1. To close the Action Sheet menu, on the **Properties** tab, from the **Handler** dropdrown of the **OnClose** event, select **New Client Action**.
-    
+
     ![Setting up the OnClose event handler in the Properties tab to close the Action Sheet menu](images/actionsheet-8-ss.png "Creating OnClose Handler")
 
-1. Add an Assign to the client action and set the **IsOpened** local variable to **False**. 
+1. Add an Assign to the client action and set the **IsOpened** local variable to **False**.
 
     ![Assign action in Service Studio setting the IsOpened local variable to False](images/actionsheet-9-ss.png "Assigning False to IsOpened Variable")
 
-After following these steps and publishing the module, you can test the pattern in your app. 
-       
+After following these steps and publishing the module, you can test the pattern in your app.
+
 ## Properties
 
 | Property                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |

@@ -42,4 +42,3 @@ Navigates to a screen.
 </tr>
 </tbody>
 </table>
-

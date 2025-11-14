@@ -51,14 +51,15 @@ The service module includes the following server actions:
     DocumentId
     :    The **DocumentId** input is the identifier of the document you want to fetch and you must ensure it uses the correct data type in a supported format.
         For example, if the data type of the structure identifier,**_id**, is ObjectId, then DocumentId must have one the following formats:
-        * `"ObjectId(<hexadecimal>)"` (Shell format)
-        * `"{ $oid: ""<hexadecimal>"" }"` (both for Canonical and Relaxed Extended JSON Format)
+        *`"ObjectId(<hexadecimal>)"` (Shell format)
+        *`"{ $oid: ""<hexadecimal>"" }"` (both for Canonical and Relaxed Extended JSON Format)
 
     Projection
     :   Use this input to limit the amount of data that MongoDB sends, by including a projection document to specify or restrict fetched fields. Check [MongoDB documentation](https://docs.mongodb.com/manual/reference/glossary/#std-term-projection) for more details.
-        The **Projection** input includes two attributes:
-        * **IsExclude** - When set to `True`, the fields in **Field List** are excluded from the response. When set to `False`, only the fields in **Field List** and the _id are included in the response.
-        * **Fields list** - The fields to use with the projection.
+    The **Projection** input includes two attributes:
+
+    * **IsExclude** - When set to `True`, the fields in **Field List** are excluded from the response. When set to `False`, only the fields in **Field List** and the _id are included in the response.
+    * **Fields list** - The fields to use with the projection.
 
 * **Count&lt;collection-name&gt;Documents** - Counts the documents in the MongoDB collection that match the given filters.
 

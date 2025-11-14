@@ -19,7 +19,6 @@ coverage-type:
 
 # Image
 
-
 Displays an image in the screen or block. The image source can be one of the following:
 
 * A local image included in the module as a resource
@@ -159,4 +158,3 @@ The supported image formats are GIF, JPEG, and PNG. Please note that the images 
 </tr>
 </tbody>
 </table>
-

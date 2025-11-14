@@ -1,0 +1,7 @@
+extends: existence
+message: Do not write '%s'. Write "OutSystems" as a modifier (for example, "OutSystems APIs") and use lowercase "platform" when referencing the product generically. This supports consistent branding and avoids confusing possessive constructions.
+scope: sentence
+level: error
+ignorecase: false
+raw:
+  - "(?:OutSystems'|OutSystems Platform)"

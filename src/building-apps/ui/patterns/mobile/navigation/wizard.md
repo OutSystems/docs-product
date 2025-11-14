@@ -26,7 +26,6 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Wizard UI Pattern to split large complex tasks and processes into smaller manageable steps. A wizard presents a series of steps or conditions that the user needs to complete in order to accomplish a goal. Additionally, wizards usually include explicit button navigation to move a step forward or backward. Some wizard examples include software installation wizards and sign-up screens.
 
-
 ![Screenshot of the Wizard UI Pattern in OutSystems Service Studio](images/wizard-2-ss.png "Wizard UI Pattern in Service Studio")
 
 **How to use the Wizard UI Pattern**
@@ -50,9 +49,9 @@ The following example demonstrates how you can create a four step Wizard with na
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Wizard widget into the Main Content area of your application's screen.
@@ -61,7 +60,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     By default, the Wizard widget contains three Wizard Item widgets. Each Wizard Item represents a step. You can add or delete Wizard Items as required.
 
-1. From the Toolbox, drag another Wizard Item into your Wizard Pattern. 
+1. From the Toolbox, drag another Wizard Item into your Wizard Pattern.
 
     ![Dragging a new Wizard Item into the Wizard Pattern in Service Studio](images/wizard-4-ss.png "Adding a Wizard Item to the Wizard Pattern")
 
@@ -189,3 +188,119 @@ After following all of the steps in each of the sections, you can publish the mo
 To ensure that all elements in the list are correctly fetched, for any List used inside a Wizard with WizardItems you must deactivate the [virtualization](../../../../../ref/lang/auto/servicestudio-plugin-nrwidgets-list.md). To do this, set the List attribute value to ``disable-virtualization=True``.
 
 </div>
+
+## Accessibility – WCAG 2.2 AA compliance
+
+By default, the Wizard UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. You must manually update it to fix the following issues:
+
+* Incorrect use of `aria-label` on Wizard items, and missing `aria-hidden` on icon wrappers.  
+
+* Wizard steps don’t have the correct roles when navigating panels. Each step should be associated with a container that has the `tabpanel` role.  
+
+* Wizard steps used as a progress tracker don’t expose the active state properly. The current step should use `aria-current="step"` to inform assistive technologies.  
+
+Updating the Wizard ensures accessible names and roles are correctly exposed, improving support for screen readers and voice commands.
+
+### Fix redundant labels and icon exposure
+
+1. In Service Studio, go to the **Interface** tab.  
+
+1. Select the Screen or Block where the Wizard is used.  
+
+1. In the **Screen** or **Block** properties, select the **OnReady** event. A Client Action is created.
+
+    ![Screenshot showing how to create an OnReady action](images/wizard-onready-ss.png "Selecting OnReady Event")
+
+1. In the **OnReady** Client Action, drag a **JavaScript** node to the flow, from the left panel.  
+
+    ![Screenshot showing how to add a Javascript nodean OnReady action](images/wizard-addemptyjsnode-ss.png "Selecting OnReady Event")
+
+1. Add the following script to remove `aria-label` from Wizard items and hide the icon wrapper from screen readers:  
+
+    ```
+    const wizardItems = document.querySelectorAll(".wizard-wrapper-item");
+
+    wizardItems.forEach(item => {
+        item.removeAttribute("aria-label");
+
+        const wizardItemIcon = item.querySelector(".wizard-item-icon-wrapper");
+        if (wizardItemIcon) {
+            wizardItemIcon.setAttribute("aria-hidden", "true");
+        }
+    });
+
+    ```
+
+1. Click **Done**, then publish the module, and test it.
+
+### Fix Wizard roles and states
+
+There are two ways to fix the Wizard, depending on how it’s used.
+
+### Option 1 Wizard steps navigate between panels
+
+1. In Service Studio, go to the **Interface** tab.  
+
+1. Select the Screen or Block where the Wizard is used.  
+
+1. In the **Screen** or **Block** properties, select the **OnReady** event. A Client Action is created.  
+
+1. In the **OnReady** Client Action, drag a **JavaScript** node to the flow, from the left panel.
+
+1. Add the following script to assign the `tabpanel` role to each Wizard item:  
+
+    ```
+    const wizardItems = document.querySelectorAll(".wizard-wrapper-item");
+
+    wizardItems.forEach(item => {
+        item.setAttribute("role", "tabpanel");
+    });
+    ```
+
+    ![Screenshot showing how to add code in JS node](images/wizard-addroletabpanel-ss.png "Adding code to JS node")
+
+1. Click **Done**, then publish the module, and test it.
+
+### Option 2 Wizard steps act as a progress tracker
+
+If the Wizard is only a progress tracker, it should be implemented as a non-interactive list.
+
+1. In Service Studio, go to the **Interface** tab.  
+
+1. Select the Screen or Block where the Wizard is used.  
+
+1. In the **Screen** or **Block** properties, select the **OnReady** event. A Client Action is created.
+
+1. In the **OnReady** Client Action, drag a **JavaScript** node to the flow, from the left panel.
+
+1. Add the following script to assign `aria-current="step"` to the active Wizard item:  
+
+    ```javascript
+    const wizardItems = document.querySelectorAll(".wizard-wrapper-item");
+    wizardItems.forEach(item => item.removeAttribute("aria-current"));
+    const activeItem = document.querySelector(".wizard-wrapper-item.active");
+    if (activeItem) {
+        activeItem.setAttribute("aria-current", "step");
+    }
+    ```
+
+1. Click **Done**, publish the module, and test the Wizard.
+
+<div class="info" markdown="1">
+
+This example uses the OnReady action for simplicity.  
+If the step changes dynamically, for example, when clicking a button and the page doesn’t reload, extend this logic to run both OnReady and on the OnClick or Event that triggers the change.
+
+</div>
+
+### Result
+
+After you apply these updates, the Wizard becomes more accessible and works correctly with screen readers:
+
+* Screen readers no longer announce redundant or incorrect labels, since `aria-label` is removed from Wizard items and the icon wrapper is hidden.
+
+* For navigational Wizards, each panel is announced correctly with the **tabpanel** role.
+
+* For progress-only Wizards, the current step is announced correctly using **aria-current="step"**.
+
+Test the Wizard in your app to confirm the update.

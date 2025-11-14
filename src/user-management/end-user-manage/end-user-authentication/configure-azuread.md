@@ -65,7 +65,7 @@ The following sections describe these steps in detail.
 1. Check the settings values in **Service Provider Connector Settings**.  
 
     ![Screenshot showing the Service Provider Connector Settings in the Users app](images/azuread-config-auth-usr.png "Service Provider Connector Settings")
-        
+
     OutSystems provides default values for the required options and also an auto-generated keystore.
 
 1. Download the Service Provider metadata file by clicking **Download SP Metadata XML**.
@@ -76,11 +76,11 @@ The following sections describe these steps in detail.
 
 1. From the [Microsoft Entra admin center](https://entra.microsoft.com/#home), create a new OutSystems Microsoft Entra ID enterprise application.
 
-1. Configure SAML as the single sign-on method. 
+1. Configure SAML as the single sign-on method.
 
     **Note**:  If you only want to accept signed login responses, set the **Signing Option** to **Sign SAML response and assertion**.
 
-1. Upload the XML metadata file you downloaded from the Users app. 
+1. Upload the XML metadata file you downloaded from the Users app.
 
 For more information on how to create a new application in Microsoft Entra, refer to [Add an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal#add-an-enterprise-application)
 
@@ -103,7 +103,7 @@ Back in the Users app:
     ![Screenshot showing a warning message about enabling SSO between app types in the Users app](images/azuread-warning.png "SSO Warning Message")
 
     To enable IdP in Reactive Apps, do the following:
-    
+
     1. Go to the Service Center management console of your OutSystems environment.
 
     1. Go to the **Administration** section and select the **Security** tab.
@@ -112,7 +112,7 @@ Back in the Users app:
 
         ![Screenshot of the Service Center management console with the Single Sign-On Between App Types checkbox highlighted](images/azuread-sso.png "Applications Authentication")
 
-    For more information about application authentication, see [Configure App Authentication](../../../security/configure-authentication.md). 
+    For more information about application authentication, see [Configure App Authentication](../../../security/configure-authentication.md).
 
 ### Assign user or group to Microsoft Entra application { #assign-user-entra-app }
 
@@ -122,7 +122,7 @@ For more information about assigning groups to an app, refer to  [Manage users a
 
 ### Test your configuration
 
-In the Microsoft Entra admin center, navigate back to your application's single sign-on settings and test the connection. 
+In the Microsoft Entra admin center, navigate back to your application's single sign-on settings and test the connection.
 
 For information on how to test the configuration, refer to [Test SSO](https://learn.microsoft.com/en-us/entra/identity/saas-apps/outsystems-tutorial#test-sso). If the authentication is **successful**, the browser redirects you back to the Users app and you get an error message about not having permissions to view the screen.
 
@@ -150,9 +150,9 @@ Do the following:
 
 You now have the permissions to grant OutSystems roles to users. Refer to [Grant a role to an end user](../end-user-roles.md#grant-role) for detailed instructions.
 
-### Configure group roles 
+### Configure group roles
 
-If you want to leverage the groups that exist in Microsoft Entra to assign OutSystems roles and control the permissions in your OutSystems apps, you first need to configure Microft Entra so that the security roles are sent in the SAML response. 
+If you want to leverage the groups that exist in Microsoft Entra to assign OutSystems roles and control the permissions in your OutSystems apps, you first need to configure Microft Entra so that the security roles are sent in the SAML response.
 
 For more information on how to configure group roles, refer to [Add group claims to tokens for SAML applications using SSO configuration](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-fed-group-claims#add-group-claims-to-tokens-for-saml-applications-using-sso-configuration).
 
@@ -162,7 +162,7 @@ Because group names in Microsoft Entra are not unique, they cannot be sent for m
 
 <div class="info" markdown="1">
 
-Microsoft Entra limits the number of groups it will emit in a token to 150 for SAML assertions. The [IdP Forge component](https://www.outsystems.com/forge/component-overview/599/idp) can be used for installations with more than 150 groups. 
+Microsoft Entra limits the number of groups it will emit in a token to 150 for SAML assertions. The [IdP Forge component](https://www.outsystems.com/forge/component-overview/599/idp) can be used for installations with more than 150 groups.
 
 </div>
 
@@ -186,7 +186,7 @@ Since the Microsoft Entra authentication method is very similar to the SAML 2.0 
 
 ## Renew Microsoft Entra certificate
 
-To renew a SAML signing certificate that is about to expire, complete the following steps: 
+To renew a SAML signing certificate that is about to expire, complete the following steps:
 
 1. Create the new signing certificate or upload your own in **Microsoft Entra admin center**.
 
@@ -194,7 +194,7 @@ To renew a SAML signing certificate that is about to expire, complete the follow
 
 1. Set the new certificate as **Active** in **Microsoft Entra admin center**.
 
-For more information about renewing SAML signing certificates, refer to the [Tutorial: Manage certificates for federated single sign-on](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/tutorial-manage-certificates-for-federated-single-sign-on#create-a-new-certificate). 
+For more information about renewing SAML signing certificates, refer to the [Tutorial: Manage certificates for federated single sign-on](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/tutorial-manage-certificates-for-federated-single-sign-on#create-a-new-certificate).
 
 <div class="info" markdown="1">
 
@@ -203,6 +203,3 @@ Restarting the service is unnecessary once you renew the SAML signing certificat
 </div>
 
 When updating a SAML signing certificate, there is always some downtime. This happens because there are two simultaneously **active** signing certificates. From the moment you upload the new certificate to the Users page and set the new certificate as **Active** in **Microsoft admin center**, there will be a short period when SAML requests fail due to an invalid signature. However, you can significantly minimize downtime if you already have the new certificate in **Microsoft Entra admin center**. This only applies if you upload your own certificate. If you use an Microsoft Entra certificate, this does not apply as you create the certificate in **Microsoft Entra admin center**.
-
-
-

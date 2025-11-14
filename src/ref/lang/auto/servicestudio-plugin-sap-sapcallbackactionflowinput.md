@@ -71,4 +71,3 @@ Input parameter of a SAP Callback action (named FunctionName). Added automatical
 </tr>
 </tbody>
 </table>
-

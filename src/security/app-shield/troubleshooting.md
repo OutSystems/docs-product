@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Troubleshoot AppShield crashes for mobile apps on OutSystems 11 (O11) by analyzing crash logs for Android and configuring ExitOnURL for iOS.
 tags: support-application_development, runtime-mobile
 locale: en-us
 guid: 51175e8a-0f68-472a-928b-96b81646011a
@@ -8,8 +8,11 @@ platform-version: o11
 figma:
 coverage-type:
   - unblock
+audience:
+  - mobile developers
+outsystems-tools:
+  - none
 ---
-
 # Troubleshooting AppShield crashes
 
 <div class="info" markdown="1">
@@ -27,13 +30,13 @@ When AppShield detects a security threat to the app, it either blocks it or, in 
 When a crash occurs on **Android**, the device log should contain an entry that can help identify the reason of the crash.
 These crash logs are usually in the following format:
 
-``` 
+```
 --------- beginning of crash
 E  FATAL EXCEPTION: 
 Process: com.outsystems.myapp, PID: 25983
 i.aw: 1a
-	at i.ap.b(Unknown Source:69)
-	at i.ap.a(Unknown Source:0)
+ at i.ap.b(Unknown Source:69)
+ at i.ap.a(Unknown Source:0)
 ```
 
 In the scenario, the line `i.aw: 1a` includes the reason for the crash which has the code `1a` - `Developer Options enabled on device`.
@@ -71,11 +74,11 @@ A list of reasons for app shutdown in Android devices.
 | 35      | 23      | Native debugger prevention not possible on this device                    |
 | 50      | 32      | App started from a private space or work profile                          |
 
-### iOS 
+### iOS
 
 A list of reasons for app shutdown in iOS devices.
 
-| ExitOnUrl (Decimal)| Explanation   						  |
+| ExitOnUrl (Decimal)| Explanation           |
 | ------- | ------------------------------------------------- |
 | 00      | Device is jailbroken/rooted                       |
 | 01      | Application is being debugged                     |
@@ -84,6 +87,6 @@ A list of reasons for app shutdown in iOS devices.
 | 04      | An injected library was found in the process      |
 | 05      | A hooking framework was found in the process      |
 | 06      | A screen recording of the application was started |
+| 07      | iOS app running on macOS.         |
 | 08      | Running on emulator                               |
 | 09      | Running with Developer Mode enabled               |
-

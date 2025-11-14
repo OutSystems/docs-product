@@ -24,14 +24,14 @@ A SOAP web service is defined by a service definition, which includes WSDL and s
 
 When you consume a SOAP web service in Service Studio, several validations are performed at runtime to verify the compliance of the exchanged SOAP messages. However, by default, some validations aren't performed on the consumer side. If you consume a SOAP web service in Service Studio, and after that the exposed service is modified (or sends a non-compliant response), then the XML responses it sends might not comply with the service definition initially used to import the SOAP web service. This might lead to unexpected runtime behavior.  
 
-In this case, for troubleshooting purposes, you might want to enable an environment setting to perform extra schema compliance validations on all SOAP responses. 
+In this case, for troubleshooting purposes, you might want to enable an environment setting to perform extra schema compliance validations on all SOAP responses.
 
 ## Prerequisites
 
 To enable and use the extra schema compliance validations, make sure you meet the following requirements:
 
-- You're using Platform Server 11.19.0.
-- You installed the [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) from Outsystems Forge.
+* You're using Platform Server 11.19.0.
+* You installed the [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) from Outsystems Forge.
 
 ## How to enable extra schema compliance validations
 
@@ -45,14 +45,14 @@ To enable these validations, follow these steps:
 
 1. Install the [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) from Outsystems Forge.
 
-1. Access the **Factory Configuration** application (available in **https://your-domain/FactoryConfiguration/**).
+1. Access the **Factory Configuration** application (available in **<https://your-domain/FactoryConfiguration/>**).
 
 1. Go the **Platform Configurations** tab.  
 
-1. Under the **Runtime** section, select the **Enable extra schema compliance in SOAP** checkbox and click **Apply**.   
+1. Under the **Runtime** section, select the **Enable extra schema compliance in SOAP** checkbox and click **Apply**.
 
     ![Screenshot showing the 'Enable extra schema compliance in SOAP' checkbox within the Factory Configuration application](images/enable-extra-schema-compliance-fc.png "Enabling Extra Schema Compliance in Factory Configuration")
-    
+
     With this option enabled, whenever a response message is non-compliant, an exception is thrown and logged, and the following error message displays at runtime:
 
     ![Error message displayed when a SOAP response message is non-compliant with the service definition](images/compliance-error.png "SOAP Compliance Error Message")
@@ -65,7 +65,7 @@ To enable these validations, follow these steps:
 
 Note that this is an environment configuration, which will impact all applications that are published after enabling the setting.
 
-## What to do when the response is non-compliant 
+## What to do when the response is non-compliant
 
 If you enabled the extra schema compliance validations and concluded that a response is non-compliant, you can do the following:  
 
@@ -107,4 +107,3 @@ Notice that, in the response, the elements elementNumber1_out, elementNumber2_ou
 If the extra schema compliance validations are disabled, the runtime behavior can be unexpected. In this case, only the elementNumber2_out would be filled with the correct value, Lorem. The elementNumber1_out and elementNumber3_out elements would hold empty strings, their default value.  
 
 When extra schema compliance validations are enabled, the response is invalid because it doesn't comply with the schema types imported in the service definition.
-

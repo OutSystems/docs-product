@@ -19,7 +19,6 @@ coverage-type:
 
 # Container
 
-
 Container "box" where you can drag and drop other widgets, including other containers, to organize the layout of the screen.
 
 Containers allow you to:
@@ -138,4 +137,3 @@ Containers allow you to:
 </tr>
 </tbody>
 </table>
-

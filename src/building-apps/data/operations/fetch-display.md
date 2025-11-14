@@ -46,7 +46,7 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 1. Add a Screen to your app. Go to **Interface** > **UI Flows**, right-click **MainFlow** and select **Add Screen**. In the **New Screen** window select **Empty** (1), enter **Home** as the Screen name (2), then click **CREATE SCREEN** (3). Service Studio adds an empty Screen to your app.
 
     ![Screenshot of the New Screen creation process in OutSystems Service Studio](images/new-screen-ss.png "Creating a New Screen in OutSystems")
-   
+
 1. Add data sources to your app by referencing some Entities in the **Manage Dependencies** window (**Ctrl+Q**). This example app [references OutSystems sample data](../../ui/screen-templates/sample-data.md#referencing-sample-data-in-apps). Once you reference Entities, they're available in Service Studio under **Data** > **Entities** > **Database**.
 
     ![Screenshot showing how to reference database entities in OutSystems Service Studio](images/database-entities-ss.png "Referencing Database Entities in OutSystems")
@@ -64,7 +64,7 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
     ![Screenshot of the Aggregate edit screen in OutSystems Service Studio with a notice to add data](images/fetch-data-aggregate-open-ss.png "Opening an Aggregate to Fetch Data in OutSystems")
 
 1. With the Aggregate still open, navigate to **Data** > **Entities** > **Database** > **OutSystemsSampleDataDB**. Drag the **Sample_Employee** Entity to the Aggregate window. If you're using your data instead of OutSystems sample data, then drag some other Entity. Service Studio shows the data preview in columns, and uses the Entity name to name the Aggregate.
-   
+
     ![Screenshot of dragging the Sample_Employee entity to the Aggregate window in OutSystems Service Studio](images/fetch-data-aggregate-with-entity-ss.png "Adding an Entity to an Aggregate in OutSystems")
 
     <div class="info" markdown="1">
@@ -106,4 +106,3 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 1. Publish your app and load it in the browser. There's a list widget listing the last names of the employees.
 
     ![Browser preview of a list widget displaying employee last names in an OutSystems application](images/fetch-data-browser.png "Preview of Data Display in OutSystems")
-

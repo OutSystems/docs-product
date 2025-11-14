@@ -56,4 +56,3 @@ Input parameter that allows you to define the password for authenticating the cu
 </tr>
 </tbody>
 </table>
-

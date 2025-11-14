@@ -58,9 +58,9 @@ OutSystems provides authentication mechanisms that can be selected by using the 
 
 Configuring OAuth 2.0 requires the following information, which must be obtained from your email provider (e.g. Azure Active Directory):
 
-*   **Tenant:** The ID of your organization's tenant/directory.
-*   **Client ID:** The application (client) ID of the provider with permissions to use Exchange Online.
-*   **Client Secret:** The application confidential key.
+* **Tenant:** The ID of your organization's tenant/directory.
+* **Client ID:** The application (client) ID of the provider with permissions to use Exchange Online.
+* **Client Secret:** The application confidential key.
 
 <div class="info" markdown="1">
 
@@ -70,7 +70,7 @@ The Exchange Online (OAuth 2.0) authentication method is configured in Service C
 
 ## OutSystems SMTP port options
 
-OutSystems supports SMTP ports 25, 465, and 587. To avoid potential throttling issues with port 25,  OutSystems recommends using port 587 for encrypted email transmissions using SMTP Secure (SMTPS). Port 465 is also used sometimes for SMTPS. However, this is an outdated implementation, and port 587 should be used if possible. 
+OutSystems supports SMTP ports 25, 465, and 587. To avoid potential throttling issues with port 25,  OutSystems recommends using port 587 for encrypted email transmissions using SMTP Secure (SMTPS). Port 465 is also used sometimes for SMTPS. However, this is an outdated implementation, and port 587 should be used if possible.
 
 ## Redirecting emails when testing
 
@@ -82,7 +82,6 @@ To redirect all emails to a list of test users, check the **Redirect Emails to T
 
 In this example, all emails sent from this environment are redirected to an internal mailing list, instead of their original address.
 Note that all emails are redirected, including emails addressed using the CC and BCC fields.
-
 
 ## Configure the Environment Hostname
 

@@ -37,7 +37,7 @@ In order to manage IT Users, both Service Center and LifeTime store the followin
 * Name (for example, Amos Tesen)
 * Username (for example, amos.tesen)
 * Mobile Phone [only in Service Center] (for example, +1-800-555-0000)
-* Email (for example, amos.tesen@example.com)
+* Email (for example, <amos.tesen@example.com>)
 
 ### Protection against brute force attacks
 
@@ -84,7 +84,7 @@ This information may be present in all General log tables (**oslog\_General\_0**
 * Name (for example, Amos Tesen)
 * Username (for example, amos.tesen)
 * Mobile Phone (for example, +1-800-555-0000)
-* Email (for example, amos.tesen@example.com)
+* Email (for example, <amos.tesen@example.com>)
 
 The entity where this information is stored is the same entity used by Service Center and LifeTime (**User** system entity), but uses a different tenant identifier.
 
@@ -99,7 +99,7 @@ Also, **Users** uses the previously described brute force attack protection syst
 
 ## App Feedback
 
-**App Feedback** is a system application for gathering user feedback by allowing users to share written and oral feedback while using your mobile and/or web applications. 
+**App Feedback** is a system application for gathering user feedback by allowing users to share written and oral feedback while using your mobile and/or web applications.
 Furthermore, when feedback is submitted the tool captures a screenshot of what is being displayed on the user's screen at that moment.
 Therefore, the tool may capture sensitive information depending on the type of application.
 

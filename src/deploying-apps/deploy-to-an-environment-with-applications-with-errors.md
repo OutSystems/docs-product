@@ -27,7 +27,7 @@ However, the action has changed, it has a new mandatory input parameter, and is 
 
 ## Deploying to an Environment with Incompatible References
 
-When selecting an application to deploy to an environment with incompatible references, it is always important to validate whether the application depends on any application with incompatible references. 
+When selecting an application to deploy to an environment with incompatible references, it is always important to validate whether the application depends on any application with incompatible references.
 
 ### The Deployed Application Depends on Applications with Incompatible References
 

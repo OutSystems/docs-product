@@ -29,7 +29,7 @@ The procedure to register your application includes the following:
 
 ## Registering your app
 
-1. Sign into the [Microsoft Entra admin center](https://entra.microsoft.com/#home) and [register your app](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory). 
+1. Sign into the [Microsoft Entra admin center](https://entra.microsoft.com/#home) and [register your app](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory).
 
 1. In the **Name** field, enter one of the following:  
 
@@ -67,7 +67,7 @@ After registering your application in Azure Active Directory, you must add Appli
 
 1. Sign into the [Microsoft Power Apps](https://make.powerapps.com/) and [create application users](https://learn.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user) for your app.
 
-1. To ensure you are providing the required permissions, set the **System Administrator** security role. 
+1. To ensure you are providing the required permissions, set the **System Administrator** security role.
 
 ## Managing certificates and secrets
 

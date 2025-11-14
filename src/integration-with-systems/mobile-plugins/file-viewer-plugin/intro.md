@@ -60,8 +60,8 @@ This function uses Regex to validate the name/url passed to it and **this value 
 To let users view files in the mobile apps, create logic with one of these three client actions:
 
 1. **OpenDocumentFromLocalPath** - Provide a local file path in the **FilePath** argument.
-2. **OpenDocumentFromResources** - If you want to open a file from the app resources see [Working with app resources](#working-with-app-resources).
-3. **OpenDocumentFromUrl** - Provide the url poiting to a remote file in the **URL** argument.
+1. **OpenDocumentFromResources** - If you want to open a file from the app resources see [Working with app resources](#working-with-app-resources).
+1. **OpenDocumentFromUrl** - Provide the url poiting to a remote file in the **URL** argument.
 
 For an example of how to use the plugin check the demo app or refer to [the example in this document](#example-of-using-file-viewer-plugin).
 
@@ -89,7 +89,6 @@ Here is how to add a file as a resource and open the file with the plugin.
     ![Screenshot of adding a file as a resource in the File Viewer plugin](images/resources-file-viewer-ss.png "Adding Resources in File Viewer Plugin")
 
 1. In the **OpenDocumentFromResources** action enter `"resources\<file name>"` in the **ResourcePath** property. For example, if you add **sample.pdf** to **Resources**, the value of  **FilePath** is `"resources\sample.pdf"`.
-
 
 <div class="info" markdown="1">
 

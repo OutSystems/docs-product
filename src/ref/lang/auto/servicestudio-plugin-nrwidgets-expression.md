@@ -21,7 +21,6 @@ topic:
 
 # Expression
 
-
 The expression widget displays text or the result of an expression at runtime. It's similar to the **print** command in other programming languages. To use the expression widget:
 
 1. In the widget toolbar, search for **expression** and drag the widget to a screen, block or placeholder. The expression editor opens.
@@ -31,15 +30,14 @@ The expression widget displays text or the result of an expression at runtime. I
 1. Enter an expression in the expression editor and click **Close**.
 
     ![Screenshot of the Expression editor with an example expression in Service Studio](images/expression-editor-ss.png "Expression Editor in Service Studio")
-    
+
     You can use one of these examples as the expression:
-   
+
     * `"Hello, world!"`
     * `"1 + 2 = " + (1 + 2)`
     * `"The square root of 3 is " + Sqrt(3)`
-    * `"Today is " + CurrDate() + "!" `
+    * `"Today is " + CurrDate() + "!"`
     * `ToUpper("this is text in uppercase")`
-
 
 1. Publish the app and open the screen.
 
@@ -48,9 +46,8 @@ The expression widget displays text or the result of an expression at runtime. I
     * **Hello, world!**
     * **1 + 2 = 3**
     * **The square root of 3 is 1.73205080756887729352744634151**
-    * **Today is 2020-10-08!!** 
+    * **Today is 2020-10-08!!**
     * **THIS IS TEXT IN UPPERCASE**
-
 
 ## Properties
 
@@ -162,4 +159,3 @@ The expression widget displays text or the result of an expression at runtime. I
 </tr>
 </tbody>
 </table>
-

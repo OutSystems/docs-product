@@ -193,7 +193,7 @@ Here is the list of actions you can use to handle the errors.
 
 |Variable|Action|Description|
 |-|-|-|
-|**IsAvailable** **CheckCameraPlugin**| True if the camera plugin is available in the app.|
+|**IsAvailable**|**CheckCameraPlugin**| True if the camera plugin is available in the app.|
 |**Success**|**TakePicture**|True if there aren't errors while taking a picture.|
 |**Success**|**ChooseGalleryPicture**|True if there aren't errors while opening a picture from the gallery.|
 |**Success**|**EditPicture**| True if there aren't errors while editing a picture.|
@@ -237,8 +237,7 @@ Change the properties of the **TakePicture** action to adjust how the app handle
 
 |Property|Description|
 |-|-|
-|**Quality**|The quality of the picture, in percentage.
-See also the [notes about Quality](#image-quality-and-app-responsiveness).|
+|**Quality**|The quality of the picture, in percentage. See also the [notes about Quality](#image-quality-and-app-responsiveness).|
 |**Width**|The width of the picture, in pixels.|
 |**Height**|The height of the picture, in pixels.|
 |**CorrectOrientation**|If **True**, the plugin fixes the orientation if users take a photo and rotate the device.|
@@ -246,7 +245,7 @@ See also the [notes about Quality](#image-quality-and-app-responsiveness).|
 |**SaveToPhotoAlbum**|If **True**, the app saves the image to the device.|
 |**CameraDirection**|Select the front or back camera as the default when taking a new picture.|
 |**AllowEdit**|If **True**, an Edit step is added after the take or choose picture step.|
-|**AllowMultiplePictures**| PWA only. Allows multiple pictures to be taken. To ensure this feature works, add the **CameraPlugin** theme to your app.|      
+|**AllowMultiplePictures**| PWA only. Allows multiple pictures to be taken. To ensure this feature works, add the **CameraPlugin** theme to your app.|
 
 <div class="info" markdown="1">
 

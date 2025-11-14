@@ -27,7 +27,7 @@ AndroidX is an improved Android support library. The Android developers no longe
 
 <div class="info" markdown="1">
 
-To build your apps and custom mobile plugins with AndroidX, you need to be using MABS 6.3 Beta or later. MABS releases after 6.3 Beta have AndroidX enabled by default. 
+To build your apps and custom mobile plugins with AndroidX, you need to be using MABS 6.3 Beta or later. MABS releases after 6.3 Beta have AndroidX enabled by default.
 
 </div>
 
@@ -43,7 +43,7 @@ The content in this document applies only to the native Android apps.
 
 </div>
 
-## How to enable AndroidX 
+## How to enable AndroidX
 
 <div class="warning" markdown="1">
 
@@ -57,13 +57,13 @@ You need to enable AndroidX if you're using MABS 6.3 Beta. AndroidX is **enabled
 
 </div>
 
-To build a mobile app with AndroidX enabled, do the following: 
+To build a mobile app with AndroidX enabled, do the following:
 
 1. Open your mobile app in Service Studio.
-   
+
 1. Open the **main module** of the app. You need to open the main module because MABS ignores the AndroidX setting in a dependency module.
 
-1. Go to the mobile properties and edit the **Extensibility Configurations**. Add a new key-value pair in the Android section, and set **AndroidXEnabled** to **true**. 
+1. Go to the mobile properties and edit the **Extensibility Configurations**. Add a new key-value pair in the Android section, and set **AndroidXEnabled** to **true**.
 
         {
             "preferences": {
@@ -75,5 +75,5 @@ To build a mobile app with AndroidX enabled, do the following:
         }
 
 1. Publish the app in your environment so MABS can acquire the updated resources.
-   
+
 1. Create native mobile builds of the app.

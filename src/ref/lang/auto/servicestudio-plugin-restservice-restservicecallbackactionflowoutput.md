@@ -57,4 +57,3 @@ Output parameter of an exposed REST API Callback action (OnRequest or OnResponse
 </tr>
 </tbody>
 </table>
-

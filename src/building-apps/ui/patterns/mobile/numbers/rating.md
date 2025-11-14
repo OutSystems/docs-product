@@ -42,9 +42,9 @@ You can use the Rating UI Pattern to allow users rate, for example, products and
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
+
     1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the **Rating** widget into the Main Content area of your application's screen.
@@ -54,7 +54,7 @@ You can use the Rating UI Pattern to allow users rate, for example, products and
     By default, the pattern is already prepared to work as a 5-Star rating pattern. However, you can change the icons to hearts, smiles, thumbs, or any other content.
 
 1. On the **Properties** tab, from the **RatingValue** dropdown, enter the rating number you want displayed. In this example, we enter `3`.  
-    
+
     ![Screenshot showing the RatingValue property being set to 3 in the properties tab](images/rating-value-ss.png "Setting the Rating Value Property")
 
 1. You can customize the Rating's look and feel by setting any of the optional properties.
@@ -75,7 +75,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
 |OnSelect: Optional  | Event that returns the current rating value. | 
 
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

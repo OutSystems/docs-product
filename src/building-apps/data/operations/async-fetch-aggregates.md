@@ -117,7 +117,7 @@ The "detail" UI that loads data only when requested must be triggered. In this e
 
 ## Example from Screen Templates
 
-To see a working example, you can also create a Screen from one of the Screen Templates that are built around the master-detail pattern. 
+To see a working example, you can also create a Screen from one of the Screen Templates that are built around the master-detail pattern.
 
 ![Preview of a Screen Template implementing the master-detail pattern in Service Studio](images/master-detail-template.png "Master detail pattern Screen Template")
 

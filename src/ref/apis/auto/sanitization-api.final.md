@@ -18,18 +18,17 @@ coverage-type:
 
 # Sanitization API
 
-
 API that provides server actions to help you avoid code injection in HTML, JavaScript, and SQL snippets that need to include untrusted content, for example, content gathered from end users. To use the server actions from Sanitization API, add the **Sanitization (extension)** as a dependency.
 
 ## Summary
 
-Action | Description
----|---
-[BuildSafe_InClauseIntegerList](<#BuildSafe_InClauseIntegerList>) | Returns a comma-delimited text value containing all the integer values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause.
-[BuildSafe_InClauseTextList](<#BuildSafe_InClauseTextList>) | Returns a comma-delimited text value with the encoded version of all the text values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause. This method should only be used in queries against the Platform's main database. Behavior can be unexpected when used against external databases.
-[SanitizeHtml](<#SanitizeHtml>) | Sanitizes the provided HTML using [HtmlSanitizer NuGet package](https://github.com/mganss/HtmlSanitizer).
-[VerifyJavascriptLiteral](<#VerifyJavascriptLiteral>) | **Deprecated**. Ensures the provided JavaScript only contains JavaScript/JSON literals such as string, array, or Object literals. If it contains anything else, an INVALID JAVASCRIPT LITERAL exception is thrown. Learn more about JavaScript literals in the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Literals).
-[VerifySqlLiteral](<#VerifySqlLiteral>) | **Deprecated**. Ensure the provided SQL only contains literals. If it contains anything else, an INVALID SQL LITERAL exception is thrown.
+| Action | Description |
+| ---|--- |
+| [BuildSafe_InClauseIntegerList](<#BuildSafe_InClauseIntegerList>) | Returns a comma-delimited text value containing all the integer values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause. |
+| [BuildSafe_InClauseTextList](<#BuildSafe_InClauseTextList>) | Returns a comma-delimited text value with the encoded version of all the text values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause. This method should only be used in queries against the Platform's main database. Behavior can be unexpected when used against external databases. |
+| [SanitizeHtml](<#SanitizeHtml>) | Sanitizes the provided HTML using [HtmlSanitizer NuGet package](https://github.com/mganss/HtmlSanitizer). |
+| [VerifyJavascriptLiteral](<#VerifyJavascriptLiteral>) | **Deprecated**. Ensures the provided JavaScript only contains JavaScript/JSON literals such as string, array, or Object literals. If it contains anything else, an INVALID JAVASCRIPT LITERAL exception is thrown. Learn more about JavaScript literals in the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Literals). |
+| [VerifySqlLiteral](<#VerifySqlLiteral>) | **Deprecated**. Ensure the provided SQL only contains literals. If it contains anything else, an INVALID SQL LITERAL exception is thrown. |
 
 ## Actions
 
@@ -37,13 +36,13 @@ Action | Description
 
 Returns a comma-delimited text value containing all the integer values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause.
 
-*Inputs*
+_Inputs_
 
 ValueList
 :   Type: RecordList of [IntegerLiteral](<#Structure_IntegerLiteral>). Mandatory.  
     List of integer values to include in the returned value.
 
-*Outputs*
+_Outputs_
 
 Output
 :   Type: Text.  
@@ -74,13 +73,13 @@ This method should only be used in queries against the Platform's main database.
 
 </div>
 
-*Inputs*
+_Inputs_
 
 ValueList
 :   Type: RecordList of [TextLiteral](<#Structure_TextLiteral>). Mandatory.  
     List of text values to include in the returned value.
 
-*Outputs*
+_Outputs_
 
 Output
 :   Type: Text.  
@@ -105,13 +104,13 @@ For more information, check [Best practices for building dynamic SQL statements]
 
 Sanitizes the provided HTML using [HtmlSanitizer NuGet package](https://github.com/mganss/HtmlSanitizer).
 
-*Inputs*
+_Inputs_
 
 Html
 :   Type: Text. Mandatory.  
     The HTML to sanitize.
 
-*Outputs*
+_Outputs_
 
 SanitizedHtml
 :   Type: Text.  
@@ -121,13 +120,13 @@ SanitizedHtml
 
 **Deprecated**. Ensures the provided JavaScript only contains JavaScript/JSON literals such as string, array, or Object literals. If it contains anything else, an INVALID JAVASCRIPT LITERAL exception is thrown. Learn more about JavaScript literals in the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Literals).
 
-*Inputs*
+_Inputs_
 
 JavascriptLiteral
 :   Type: Text. Mandatory.  
     The JavaScript literal to sanitize.
 
-*Outputs*
+_Outputs_
 
 SanitizedJavascriptLiteral
 :   Type: Text.  
@@ -138,6 +137,7 @@ SanitizedJavascriptLiteral
 **Deprecated**. Ensures the provided SQL only contains literals. If it contains anything else, an INVALID SQL LITERAL exception is thrown.
 
 The following items are considered valid literals:
+
 * Non-Unicode and Unicode (prefix it with an uppercase N) strings surrounded by single quotes,'. For example `'1900-01-01'`; `'true'`).
 * Integers and decimals, for example: `2.5`; `-4`.
 * Null, for example: `null`; `NULL`; `Null`.
@@ -145,18 +145,17 @@ The following items are considered valid literals:
 * Lists containing the previous literals, for example: `'fact'`; `12,0`; `('apple','banana','orange')`.
 * Any combination of the previous literals.
 
-*Inputs*
+_Inputs_
 
 SqlLiteral
 :   Type: Text. Mandatory.  
     The SQL to sanitize.
 
-*Outputs*
+_Outputs_
 
 SanitizedSqlLiteral
 :   Type: Text.  
     The sanitized SQL.
-
 
 ## Structures
 
@@ -164,7 +163,7 @@ SanitizedSqlLiteral
 
 Simple structure holding a long integer value. Used as a record definition when providing a list of IntegerLiteral records to include in a SQL &quot;IN&quot; clause.
 
-*Attributes*
+_Attributes_
 
 Value
 :   Type: LongInteger. Mandatory.  
@@ -174,11 +173,8 @@ Value
 
 Simple structure holding a text value. Used as a record definition when providing a list of TextLiteral records to include in a SQL &quot;IN&quot; clause.
 
-*Attributes*
+_Attributes_
 
 Value
 :   Type: Text (2000). Mandatory.  
     A text value to consider when creating a SQL &quot;IN&quot; clause.
-
-
-

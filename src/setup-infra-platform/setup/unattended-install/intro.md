@@ -203,7 +203,6 @@ The automatic prerequisites installation has a timeout of 15 minutes. This ensur
 
 * If you are installing or upgrading to OutSystems Platform Server 11.17.0 or earlier, run the OutSystems Development Environment installation package as follows:
 
-
     * ``DevelopmentEnvironment-<version>.exe /S [/D=<development_environment_path>]``
 
     The optional `/D` switch specifies the path where the  Service Studio and Integration Studio is installed. If this switch is provided, it must be the last one in the command line and the provided path must not contain quotes (`""`) even if the path contains spaces.
@@ -279,7 +278,6 @@ In major upgrades, the module preparation is skipped, thus you are required to r
 
 #### 5.3 Deployment { #deployment }
 
-
 Starting from Platform Server 11.18.0, after the modules are prepared, you can use the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) functionality, to deploy all previously successfully compiled modules.
 
 If you want to deploy your modules, run the Configuration Tool as follows:
@@ -330,7 +328,6 @@ Run the following:
 Starting from Platform Server 11.19.0, a new [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) feature is available.
 
 </div>
-
 
 ## Adding a Front-End
 

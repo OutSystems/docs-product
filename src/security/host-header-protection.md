@@ -39,7 +39,6 @@ The following are important notes regarding secure endpoints:
 * [Managing the list of secure endpoints](#manage-secure-endpoints) is available for all environments except LifeTime. To manage secure endpoints for the LifeTime environment, open a support case.
 * When requests are blocked, users will see an error in the browser. See [Troubleshooting error 503 - Host header does not match](https://www.outsystems.com/tk/redirect?g=c9a42528-9c9c-471c-aded-e5c2a0aef08e) for more details.
 
-
 ## Prerequisites { #prerequisites }
 
 To configure additional secure endpoints, you first need to ensure the following conditions:
@@ -47,7 +46,6 @@ To configure additional secure endpoints, you first need to ensure the following
 * Your infrastructure is in the OutSystems Cloud.
 * The LifeTime version is 11.21.1 or higher.
 * To manage secure endpoints, you need to have Admin built-in role in LifeTime.
-
 
 ## Enabling and managing secure endpoints { #enable-secure-endpoints }
 
@@ -57,15 +55,13 @@ The following diagram shows an overview of the process.
 
 ![Process overview diagram for enabling and managing secure endpoints, with steps including checking endpoint configurations, checking redirect rules, enabling secure endpoints, and managing secure endpoints.](images/hh-protect-process-diag.png "Host Header Protection Process Overview")
 
-
 ### Check your endpoint configurations { #check-endpoint-configurations }
 
 <div class="warning" markdown="1">
 
-Before enabling secure endpoints you must list all the hostnames used to access your environment. You'll need this list to configure the allowed hosts. Otherwise, you'll start losing access, impacting your app’s normal operation. 
+Before enabling secure endpoints you must list all the hostnames used to access your environment. You'll need this list to configure the allowed hosts. Otherwise, you'll start losing access, impacting your app’s normal operation.
 
 </div>
-
 
 * **Check your DNS configuration:**
 
@@ -91,7 +87,6 @@ Before enabling secure endpoints you must list all the hostnames used to access 
 
     Note all your valid domains. You'll need them to compile the list of secure endpoints to configure in LifeTime.
 
-
     </div>
 
 ### Check redirect rules in Service Center { #check-redirect-rules }
@@ -102,12 +97,9 @@ With [redirect rules](../building-apps/seo/seo-friendly-url-traditional.md#redir
 
 Note all your redirect rules destination domains. You'll need them to compile the list of secure endpoints to configure in LifeTime.
 
-
 </div>
 
-
 After you’ve checked the endpoint configurations and the redirect rules, you should have a compiled list.
-
 
 ## Enabling secure endpoints { #enable-secure-endpoints }
 
@@ -117,7 +109,6 @@ You can enable secure endpoints in any environment. OutSystems Support must perf
 1. In the support case, provide the environments to enable the feature and the compiled list of endpoints per environment. This is a fundamental step, if no list is provided, only the environment address will be allowed in the host header.
 1. Wait for a confirmation in the support case.
 
-
 Once OutSystems support confirms secure endpoints have been enabled for the first time, you’ll be able to manage them as needed.
 
 <div class="warning" markdown="1">
@@ -126,7 +117,7 @@ When you change the endpoint configurations or redirect rules, especially when a
 
 </div>
 
-## Managing the list of secure endpoints { #manage-secure-endpoints } 
+## Managing the list of secure endpoints { #manage-secure-endpoints }
 
 When you enable the feature, LifeTime displays **Additional Secure Endpoints**. These endpoints form the allow list for validating host headers. Any request with a host header that differs from those in the allow list will be blocked.
 
@@ -137,6 +128,4 @@ To manage secure endpoints follow these steps:
 1. Add or remove endpoints.
 1. Confirm by clicking **Update Additional Secure Endpoints**. Your changes will be applied automatically.
 
-
 ![Screenshot of the LifeTime interface for managing additional secure endpoints, showing where to add or remove endpoints and update settings.](images/manage-endpoints-lt.png "Managing Secure Endpoints in LifeTime")
-

@@ -17,7 +17,7 @@ coverage-type:
   - understand
 ---
 
-# Application Lifecycle Management in OutSystems CI/CD
+# Application Lifecycle Management in O11 CI/CD
 
 As with Agile methodology and DevOps culture, the concept of continuous integration/continuous delivery (CI/CD) gradually developed to answer specific business needs and meet demands for innovation, new features, and a frictionless user experience. At the same time, it allows developers to move quickly—with the confidence not to break anything.
 
@@ -72,7 +72,7 @@ OutSystems thus eliminates a whole slew of tests that are required by traditiona
 
 Just as OutSystems increases productivity with [AI-assisted development](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/AI-assisted_development),  it also frees the DevOps team from many rote testing tasks and mechanical automation setups. They can then concentrate on designing useful tests and incorporating them into a reliable automated system.
 
-The ultimate success of CI/CD is based on automation, and, for testing, the success of automation depends on writing testable code. In OutSystems, this means distributing self-contained modules into discrete layers. Adopting an[ architecture canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) promotes the correct abstraction of reusable services and components so they can be modified independently—a crucial factor for an accelerated release cycle. Moreover, segregating functionality and services also makes it easier to write a comprehensive set of easily automatable tests to cover critical business functionality.
+The ultimate success of CI/CD is based on automation, and, for testing, the success of automation depends on writing testable code. In OutSystems, this means distributing self-contained modules into discrete layers. Adopting an[architecture canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) promotes the correct abstraction of reusable services and components so they can be modified independently—a crucial factor for an accelerated release cycle. Moreover, segregating functionality and services also makes it easier to write a comprehensive set of easily automatable tests to cover critical business functionality.
 
 <div class="info" markdown="1">
 
@@ -107,20 +107,18 @@ A typical BDD test script uses the following syntax:
 * **When**: A specific action/event
 * **Then**: The expected outcome of conducting the action/event in the system
 
-Because BDD tests are based on a human-readable language,[ such as Gherkin](https://www.guru99.com/gherkin-test-cucumber.html), all participants in a software project can collaborate on defining a common understanding of how the software should behave.
+Because BDD tests are based on a human-readable language,[such as Gherkin](https://www.guru99.com/gherkin-test-cucumber.html), all participants in a software project can collaborate on defining a common understanding of how the software should behave.
 
 Two OutSystems components for creating BDD tests are available for free download from the Forge:
 
 * [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework) (for server-side tests)
-* [BDDFramework Client Side](https://www.outsystems.com/forge/component-overview/10917/bddframework-client-side) (for client-side tests) 
+* [BDDFramework Client Side](https://www.outsystems.com/forge/component-overview/10917/bddframework-client-side) (for client-side tests)
 
 Using these components, developers use **Service Studio** to create a testing app in parallel to the module to be tested. The screen below illustrates a typical BDD scenario for a business rule that has successfully passed.
 
 ![Screenshot of a BDD test scenario indicating all steps have passed successfully.](images/bdd-test-passed.png "BDD Test Passed Example")
 
-
-See [The Complete Guide To BDD Testing In OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) for full instructions about setting up a BDD framework. 
-
+See [The Complete Guide To BDD Testing In OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) for full instructions about setting up a BDD framework.
 
 ### Integration tests
 
@@ -134,14 +132,13 @@ For this example, the BDD test framework, described above, is also used to write
 
 Among the leading tools for E2E tests is [Selenium](https://www.selenium.dev/), a portable software testing framework for web applications that provides a record/playback tool for authoring tests without learning a test scripting language. Complete instructions about how to set up Selenium in an OutSystems factory can be found [here](https://success.outsystems.com/Documentation/How-to_Guides/DevOps/How_to_do_UI_testing_with_Selenium).
 
-
 ## Continuous delivery
 
 Continuous delivery is the principle of building applications that can be safely released on demand, at any time. This requires a method to rapidly move applications from development to production, testing functionality, assessing the impact of changes on other applications, and making them available for release with the least amount of intervention by a human operator. This is commonly called a delivery pipeline.
 
 Among its many roles in the application lifecycle, [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle) handles deployment processes across all environments, analyzing the exact impact an application will have in production. When a suite of tests is in place and a release candidate is ready for promotion, all that is missing is a way to automate the journey.
 
-The [OutSystems-pipeline](https://github.com/OutSystems/outsystems-pipeline), an open-source accelerator developed and maintained by OutSystems, is a Python package[ distributed on PyPI.org](https://pypi.org/project/outsystems-pipeline/). It allows you to extend the built-in capabilities of **LifeTime** and [LifeTime APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/LifeTime_API_Examples?_gl=1%2A143xumj%2A_ga%2AMjA1MDQ1MDcwLjE2MDE1MzExNjY.%2A_ga_ZD4DTMHWR2%2AMTYyNTU2OTU0MC41ODYuMS4xNjI1NTY5NTc1LjI1) to trigger automatic testing and deployment in complex application portfolios, and can be used to create an OutSystems CI/CD pipeline using any DevOps automation tool that can read Python scripts.
+The [OutSystems-pipeline](https://github.com/OutSystems/outsystems-pipeline), an open-source accelerator developed and maintained by OutSystems, is a Python package[distributed on PyPI.org](https://pypi.org/project/outsystems-pipeline/). It allows you to extend the built-in capabilities of **LifeTime** and [LifeTime APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/LifeTime_API_Examples?_gl=1%2A143xumj%2A_ga%2AMjA1MDQ1MDcwLjE2MDE1MzExNjY.%2A_ga_ZD4DTMHWR2%2AMTYyNTU2OTU0MC41ODYuMS4xNjI1NTY5NTc1LjI1) to trigger automatic testing and deployment in complex application portfolios, and can be used to create an OutSystems CI/CD pipeline using any DevOps automation tool that can read Python scripts.
 
 The OutSystems-pipeline project comes with example scripts and pipeline templates, including detailed instructions for building an Outsystems pipeline with [Jenkins](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Jenkins)<span style="text-decoration:underline;"> </span>or [Azure DevOps](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Azure-DevOps).
 
@@ -185,8 +182,7 @@ When the information has been keyed in the developer clicks **Tag Version**.
 
 ![Screenshot showing the 'Tag Version' screen in OutSystems LifeTime with fields for version number and description.](images/tag-in-lifetime.png "Tagging a Version in LifeTime")
 
-
-In the screen below you can see that the BDD test app (**App_Tests**) has already been tagged and is also being promoted to **Regression**. 
+In the screen below you can see that the BDD test app (**App_Tests**) has already been tagged and is also being promoted to **Regression**.
 
 <div class="info" markdown="1">
 
@@ -196,25 +192,15 @@ Since BDD apps are only used for regression testing, they are not promoted beyon
 
 In the **Plugins** menu select **Trigger Pipeline** to open the **Pipeline** screen.
 
-
-
 ![Screenshot of the OutSystems LifeTime interface with the 'Trigger Pipeline' option highlighted.](images/trigger-pipeline.png "Triggering a Pipeline in LifeTime")
   
-
-The screen below shows all of the pipelines that have been created for the OutSystems factory. **Pipelines/App-Pipeline@Jenkins** indicates that both the app and BDD test app have newer versions available. Click **Trigger Pipeline**. 
-
-
+The screen below shows all of the pipelines that have been created for the OutSystems factory. **Pipelines/App-Pipeline@Jenkins** indicates that both the app and BDD test app have newer versions available. Click **Trigger Pipeline**.
 
 ![Screenshot showing the pipeline plugin interface in OutSystems LifeTime with options to trigger pipelines.](images/pipeline-plugin.png "Pipeline Plugin in LifeTime")
 
-
 In the Jenkins pipeline screen you can track the progress of the actions specified for the deployment as they run.
 
-
-
 ![Screenshot of the Jenkins pipeline interface showing the initial stages of the deployment process.](images/jenkins-stage-1.png "Jenkins Pipeline Stage 1")
-
-
 
 ### Regression
 
@@ -272,7 +258,7 @@ The testing and automation platforms used in this example are easily available a
 
 <div class="info" markdown="1">
 
-The[ OutSystems Forge](http://www.outsystems.com/Forge/) includes accelerators to integrate many of these tools into your OutSystems installation.
+The[OutSystems Forge](http://www.outsystems.com/Forge/) includes accelerators to integrate many of these tools into your OutSystems installation.
 
 </div>
 

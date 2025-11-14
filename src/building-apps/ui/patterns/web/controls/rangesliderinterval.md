@@ -41,9 +41,9 @@ In this example, we create a Range Slider Interval that allows the user select a
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Range Slider Interval widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **InitialIntervalStart**, and **InitialIntervalEnd** values. In this example, we add static values.
@@ -60,11 +60,11 @@ In this example, we create a Range Slider Interval that allows the user select a
 
 1. To create a variable for each of the expressions, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type. In this example we create the **LowerPrice** and **HighestPrice** variables with the **Currency** data type.
 
-    ![Screenshot showing the process of adding LowerPrice and HighestPrice local variables with Currency data type](images/rangesliderinterval-8-ss.png "Adding Local Variables for Price Range") 
+    ![Screenshot showing the process of adding LowerPrice and HighestPrice local variables with Currency data type](images/rangesliderinterval-8-ss.png "Adding Local Variables for Price Range")
 
-1. So that the parameters read the range slider selections, double-click your screen action, from the Toolbox, add the **Assign** action to the screen action, and set the variable and value assignments for the Assign action. 
+1. So that the parameters read the range slider selections, double-click your screen action, from the Toolbox, add the **Assign** action to the screen action, and set the variable and value assignments for the Assign action.
 
-    ![Image illustrating how to set variable and value assignments for the Assign action in a screen action](images/rangesliderinterval-7-ss.png "Assign Action in Service Studio") 
+    ![Image illustrating how to set variable and value assignments for the Assign action in a screen action](images/rangesliderinterval-7-ss.png "Assign Action in Service Studio")
 
 1. To display your selection, go back to your screen, and from the Toolbox, drag the Container widget into the Main Content area of your application's screen, enter a name and add your content to the Container placeholder. In this example, we enter ``DisplayValue`` for the name and add some text and an expression for each of the input parameters.
 
@@ -84,7 +84,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     ![Image showing the Properties tab with optional properties for customizing the Range Slider Interval's appearance](images/rangesliderinterval-13-ss.png "Optional Properties for Range Slider Interval")
 
-After following these steps and publishing the module, you can test the pattern in your app. 
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
@@ -92,9 +92,9 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 | MinValue (Decimal): Mandatory | Slider's minimum value. <p>Examples <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul></p> |
 | MaxValue (Decimal): Mandatory | Slider's maximum value. <p>Examples <ul><li>100 - The slider's maximum value is 100.</li></ul></p> |
-|InitialIntervalStart | Start value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul></p> 
-|InitialIntervalEnd | End value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default end value when the page is rendered is 10.</li></ul></p> 
-|Step (Decimal): Optional | The slider moves in increments of steps.<p>Examples <ul><li>Blank - The slider increases in steps of 1. This is the default value. </li><li>10 - The slider increases in steps of 10.</li></ul></p>
+|InitialIntervalStart | Start value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul></p> |
+|InitialIntervalEnd | End value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default end value when the page is rendered is 10.</li></ul></p> |
+|Step (Decimal): Optional | The slider moves in increments of steps.<p>Examples <ul><li>Blank - The slider increases in steps of 1. This is the default value. </li><li>10 - The slider increases in steps of 10.</li></ul></p> |
 |ShowPips (Boolean): Optional | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. |
 |PipsStepNumber (Integer): Optional | Sets the number of Pip steps. This property is only applicable if the ShowPips property is set to True. |
 |IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. |

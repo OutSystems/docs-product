@@ -28,7 +28,6 @@ Applies only to Mobile Apps.
 
 When you create a mobile application, the icon for the app is generated automatically in the app creation wizard. This icon is then used to identify the app in the devices, being automatically adapted to all aspects of the device or context as the density or screen size of the device’s screen or the size of the place where the icon is displayed.
 
-
 ## Define Custom Icons for Your App
 
 To change the default icon and use your own icon image, providing multiple versions regarding the icon's context, device screen size or density:
@@ -60,37 +59,37 @@ For each mobile platform, specify the size (iOS) and density (Android) and the c
 
 ### For iOS
 
-Width | Height | Displayed on
-:----:|:------:|-------------
-48    | 48     | Apple Watch Notification Center
-55    | 55     | Apple Watch Notification Center
-58    | 58     | iPhone Spotlight <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
-76    | 76     | iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
-80    | 80     | iPhone Spotlight (iOS 7–11) <br/> iPad Spotlight (iOS 7–11)
-87    | 87     | iPhone Spotlight <br/> iPhone Settings (iOS 5–11)
-88    | 88     | Apple Watch Long Look
-100   | 100    | iPad Spotlight 
-114   | 114    | iPhone App 
-120   | 120    | iPhone Spotlight (iOS 7–11) <br/> iPhone App (iOS 7–11)
-152   | 152    | iPad App (iOS 7–11)
-167   | 167    | iPad Pro App (iOS 9–11)
-172   | 172    | Apple Watch Short Look
-180   | 180    | iPhone App (iOS 7–11)
-196   | 196    | Apple Watch Short Look
-1024  | 1024   | App Store iOS
+| Width | Height | Displayed on |
+| :----:|:------:|------------- |
+| 48    | 48     | Apple Watch Notification Center |
+| 55    | 55     | Apple Watch Notification Center |
+| 58    | 58     | iPhone Spotlight <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11) |
+| 76    | 76     | iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11) |
+| 80    | 80     | iPhone Spotlight (iOS 7–11) <br/> iPad Spotlight (iOS 7–11) |
+| 87    | 87     | iPhone Spotlight <br/> iPhone Settings (iOS 5–11) |
+| 88    | 88     | Apple Watch Long Look |
+| 100   | 100    | iPad Spotlight |
+| 114   | 114    | iPhone App |
+| 120   | 120    | iPhone Spotlight (iOS 7–11) <br/> iPhone App (iOS 7–11) |
+| 152   | 152    | iPad App (iOS 7–11) |
+| 167   | 167    | iPad Pro App (iOS 9–11) |
+| 172   | 172    | Apple Watch Short Look |
+| 180   | 180    | iPhone App (iOS 7–11) |
+| 196   | 196    | Apple Watch Short Look |
+| 1024  | 1024   | App Store iOS |
 
 To know more about icon sizes and densities for iOS, refer to [App icon sizes](https://developer.apple.com/design/human-interface-guidelines/app-icons#App-icon-sizes).
 
 ### For Android
 
-Width | Height | Density | Displayed on
-:----:|:------:|:-------:|-------------
-36    | 36     | ldpi    | Notification icons
-48    | 48     | mdpi    | Launcher icons <br/> Action bar, Dialog and Tab icons <br/> Small Contextual Icons
-72    | 72     | hdpi    | Launcher icons <br/> Notification icons
-96    | 96     | xhdpi   | Launcher icons <br/> Action bar, Dialog and Tab icons <br/> Notification icons
-144   | 144    | xxhdpi  | Launcher icons
-192   | 192    | xxxhdpi | Launcher icons
+| Width | Height | Density | Displayed on |
+| :----:|:------:|:-------:|------------- |
+| 36    | 36     | ldpi    | Notification icons |
+| 48    | 48     | mdpi    | Launcher icons <br/> Action bar, Dialog and Tab icons <br/> Small Contextual Icons |
+| 72    | 72     | hdpi    | Launcher icons <br/> Notification icons |
+| 96    | 96     | xhdpi   | Launcher icons <br/> Action bar, Dialog and Tab icons <br/> Notification icons |
+| 144   | 144    | xxhdpi  | Launcher icons |
+| 192   | 192    | xxxhdpi | Launcher icons |
   
 ## Icons JSON Template { #icons-json-template }
 

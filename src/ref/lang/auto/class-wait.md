@@ -25,11 +25,17 @@ The Wait process activity allows you to put your process flow execution on hold 
 * **A timeout**: a specified timeout date is reached.
 * **An entity action**: when an Entity Action that **creates** or **updates** an entity is executed and it matches the conditions to close the wait activity.
 
-    <div class="info" markdown="1">
+<div class="info" markdown="1">
 
-    When the timeout occurs, the Wait activity is tentatively ended by executing the **OnClose** callback action. If the entity action has not been executed, waiting continues until the next timeout.
+When the timeout occurs, the Wait activity is tentatively ended by executing the **OnClose** callback action. If the entity action has not been executed, waiting continues until the next timeout.
 
-    </div>
+</div>
+
+<div class="info" markdown="1">
+
+If an exception occurs inside the **OnClose** callback, this exception isn't shown on Service Center's Process Monitoring page, only on the Errors page.
+  
+</div>
 
 A Wait process activity can have input parameters, output parameters and [callback actions](<../../../building-apps/processes/actions-callback/actions-activities-callback.md>).
 
@@ -57,10 +63,10 @@ Changing the `Close On` property to listen to events from another entity only ha
 | Label | Text displayed in the back-office when an instance of this Wait activity is executed. | | If not defined, the displayed text will be the Wait process activity name. |
 | Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes | |
 | Public | Indicates whether this process activity can be used by other modules. | Yes | This property is only available for process activities that were created in the current module. When a process activity is public its process must also be public. |
-| Close On | Entity action that automatically ends the Wait Activity execution. | | The event that automatically closes (ends) the process activity execution: <br/><br/> `Create <entity>`: the Wait is ended when a record is created for the specified entity. <br/><br/> `Update <entity>`: the Wait is ended when a record is updated for the specified entity.
+| Close On | Entity action that automatically ends the Wait Activity execution. | | The event that automatically closes (ends) the process activity execution: <br/><br/> `Create <entity>`: the Wait is ended when a record is created for the specified entity. <br/><br/> `Update <entity>`: the Wait is ended when a record is updated for the specified entity. |
 | Original Name | Name of the element as defined in the module which implements it (producer module). This property is read-only. | Yes | This property is only visible for referenced elements. |
-| Timeout | Date and time until the Wait activity pauses the process flow execution. | | You may set the timeout date in two ways: <br/><br/> **Absolute**: the timeout date is fixed. For example: `#2015-01-01 00:00:00#` <br/><br/> **Relative**: the timeout date depends on the current moment. For example, if you want to wait a day then define your timeout date as: `AddDays(CurrDateTime(),1)`. This value is defined as a Date Time.
-| Allow Skip | If set to True, the activity execution may be skipped. | Yes | When allowed, skip can be triggered programmatically using the **ActivitySkip** system action under the **(System)** reference.
+| Timeout | Date and time until the Wait activity pauses the process flow execution. | | You may set the timeout date in two ways: <br/><br/> **Absolute**: the timeout date is fixed. For example: `#2015-01-01 00:00:00#` <br/><br/> **Relative**: the timeout date depends on the current moment. For example, if you want to wait a day then define your timeout date as: `AddDays(CurrDateTime(),1)`. This value is defined as a Date Time. |
+| Allow Skip | If set to True, the activity execution may be skipped. | Yes | When allowed, skip can be triggered programmatically using the **ActivitySkip** system action under the **(System)** reference. |
 
 ## Runtime Properties
 
@@ -70,5 +76,3 @@ Changing the `Close On` property to listen to events from another entity only ha
 | Expired | True if the process activity instance ended because of a timeout. | Yes | Boolean |
 | Skipped | True if the process activity instance ended because it was skipped. | Yes | Boolean |
 | ActivityId | Identifier of the process activity instance at runtime. | Yes | |
-
-

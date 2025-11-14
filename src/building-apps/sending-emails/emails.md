@@ -42,7 +42,6 @@ Emails are very similar to Web Screens. They are created and designed using a We
 
 ![Example of designing an email using a Web Block from the Email layout in OutSystems](images/emails-2-ss.png "Email Design Using Web Block")
 
-
 ## Compose the Email
 
 The email content is rendered at runtime, before sending, which makes possible to compose dynamic content, such as a personalized introduction like `Dear <client name>` at the beginning of your email.
@@ -53,7 +52,7 @@ To compose an Email, do the following:
 
     ![Process of dragging an Email element into the Web Flow in OutSystems](images/emails-3-ss.png "Adding an Email Element to Web Flow")
 
-1. Compose the Email content using widgets, in the same way you do for designing a Web Screen:    
+1. Compose the Email content using widgets, in the same way you do for designing a Web Screen:
 
     * Add **input parameters** to the Email to pass runtime values.
     * In the **Preparation** action of the  Email, use the input parameters to get the data you need.

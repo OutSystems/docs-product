@@ -20,17 +20,15 @@ coverage-type:
 
 OutSystems’ reactive applications are Single Page Applications (SPAs). These are web apps that load a single page and update content dynamically. They offer benefits like dynamic content, smooth navigation, improved performance, offline capabilities, and development simplicity.
 When a user accesses the app, the server returns a pretty bare HTML file and some JavaScript (JS) that executes on the client side to render the UI. This also allows fetching data asynchronously in parallel with page rendering.
-However, when you have very complex logic or you retrieve a big amount of data, you might experience longer initial loading times due to reliance on client-side rendering (CSR). This can present SEO challenges as search engine bots need to render the page in order to index it. 
+However, when you have very complex logic or you retrieve a big amount of data, you might experience longer initial loading times due to reliance on client-side rendering (CSR). This can present SEO challenges as search engine bots need to render the page in order to index it.
 
 In these situations, you benefit from using the pre-render technology. **Although this improves your app's Core Web Vitals, it does't affect the end-user experience.**
 
-In this article, we describe how you can integrate the OutSystems platform with a third-party pre-rendering solution called [prerender.io](https://prerender.io/). 
-
-
+In this article, we describe how you can integrate the OutSystems platform with a third-party pre-rendering solution called [prerender.io](https://prerender.io/).
 
 <div class="info" markdown="1">
 
-There are other pre-render solutions in the market and you are free to choose a different one that fits your needs. OutSystems recommends [Prerender.io](https://prerender.io/) as one of your pre-rendering options due to its significant SEO improvements. 
+There are other pre-render solutions in the market and you are free to choose a different one that fits your needs. OutSystems recommends [Prerender.io](https://prerender.io/) as one of your pre-rendering options due to its significant SEO improvements.
 
 Note that the steps below are applicable for OutSystems Cloud customers.
 
@@ -38,7 +36,7 @@ Note that the steps below are applicable for OutSystems Cloud customers.
 
 <div class="info" markdown="1">
 
-OutSystems is not affiliated with or sponsored by Prerender.io, and does not receive any economic or financial benefit from customers subscribing to their services. 
+OutSystems is not affiliated with or sponsored by Prerender.io, and does not receive any economic or financial benefit from customers subscribing to their services.
 
 </div>
 
@@ -52,14 +50,13 @@ You may refer to [this article](prerender-io-usage-and-configuration.md) which d
 
 ### CDN
 
-Prerender.io offers several options to integrate with your application. The best way to integrate with the OutSystems platform is by using a CDN. In this article, we’ll describe how to use a CloudFront CDN, but you can choose the [CDN](https://docs.prerender.io/docs/integrations-1) that works best for you. 
+Prerender.io offers several options to integrate with your application. The best way to integrate with the OutSystems platform is by using a CDN. In this article, we’ll describe how to use a CloudFront CDN, but you can choose the [CDN](https://docs.prerender.io/docs/integrations-1) that works best for you.
 
 <div class="info" markdown="1">
 
 For more information on using CDN with OutSystems, see [Using a CDN with OutSystems](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/using_a_cdn_with_outsystems/).
 
 </div>
-
 
 ## Integrating prerender.io with CloudFront CDN
 
@@ -80,14 +77,13 @@ Lambda@Edge lets you run Node.js and Python Lambda functions to customize conten
 * After CloudFront receives the response from the origin (origin response)
 * Before CloudFront forwards the response to the viewer (viewer response)
 
-For more information, see [Customize at the edge with Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html). 
+For more information, see [Customize at the edge with Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html).
 
 You need to intercept both the viewer and the origin requests:
 
 * In the **viewer request**, your code checks if the request comes from a bot. If it does, it adds headers required by Prerender.io, including the user token.
 
 * In the **origin request**, your code checks if the Prerender.io headers are in place. If it does, it forwards the request to Prerender.io servers that contains the prerendered copy of the site. If not, it sends the request to the actual server.
-
 
 ## CloudFront integration
 
@@ -114,9 +110,9 @@ When logging in to the prerender.io dashboard for the first time, it shows a mod
 
 1. Click **Test**.
 
-1. Go to the bottom of the dashboard and check the **Recent Crawler Visits** section. 
+1. Go to the bottom of the dashboard and check the **Recent Crawler Visits** section.
 
-You can see all the websites that got redirected to the prerendered version of your application. 
+You can see all the websites that got redirected to the prerendered version of your application.
 
 ### Using Curl command
 
@@ -140,4 +136,3 @@ The result will look something like this:
 ![Screenshot showing the difference between the prerendered and live version of a webpage when using the curl command](images/prerender-ss.png "Prerendered vs Live Version Comparison")
 
 Note that instead of showing the full HTML for your rendered page, you call different JavaScript files. These are the files that render the content of your application to the final users when they open it.
-

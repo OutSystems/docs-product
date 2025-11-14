@@ -20,11 +20,12 @@ coverage-type:
 # IT Users Integration with External IdP via OpenId Connect
 
 The **IT Users Integration with External IdP OpenId Connect (OIDC)** feature enables you to implement modern security standards to the authentication, setup, and management of IT users. The main goals of the feature are to:
+
 * Reduce the risk associated with using unsecure passwords to access business-critical digital assets.
-* Reduce the risk of managing multiple Identity Providers (IdPs). 
+* Reduce the risk of managing multiple Identity Providers (IdPs).
 * Improve the authentication experience offering a single sign-on (SSO) method across the company.
 
-## Feature summary 
+## Feature summary
 
 The **IT Users Authentication with External IdP (OIDC)** feature enables:
 
@@ -34,9 +35,9 @@ The **IT Users Authentication with External IdP (OIDC)** feature enables:
 * Efficient external IdP login practices. You can create users without a password which forces them to log in using the external IdP.
       **Note**: Once the OIDC feature is activated, it’s not possible to add or change passwords for any new or existing users. Passwords can be added/changed only for Local admin users.
 
-## Login flow 
+## Login flow
 
-You can integrate an external IdP by configuring the OIDC protocol in LifeTime. IT Users can log into the following OutSystems tools using their company IdP credentials in a new external IdP login flow: 
+You can integrate an external IdP by configuring the OIDC protocol in LifeTime. IT Users can log into the following OutSystems tools using their company IdP credentials in a new external IdP login flow:
 
 * Service Center (SC)
 
@@ -50,7 +51,7 @@ You can integrate an external IdP by configuring the OIDC protocol in LifeTime. 
 
 * Workflow Builder
 
-* Factory Configuration 
+* Factory Configuration
 
 * Workato
 
@@ -68,7 +69,7 @@ The following diagram shows the communication flow between Service Studio, AI Me
 
 For example, consider using Service Studio with an External IdP,
 
-1. User logs into Service Studio. 
+1. User logs into Service Studio.
 1. Service Studio requests External IdP configuration metadata from the Server API. <br/>Server API returns External IdP configuration metadata.
 1. Service Studio requests endpoints from the IdP config.<br/>IdP config returns endpoints for External IdP login.
 1. Service Studio displays browser login for external IdP provider. User credentials get validated at IdP Authorize.<br/>IdP returns an authorization token to Service Studio.
@@ -81,9 +82,9 @@ The following diagram shows the communication flow between LifeTime with Externa
 
 For example, consider using LifeTime with an External IdP,
 
-1. User logs into LifeTime. 
+1. User logs into LifeTime.
 1. LifeTime requests endpoints from the IdP config.<br/>IdP config returns endpoints for External IdP login.
-1. LifeTime displays browser login for external IdP provider. User credentials get validated at IdP Authorize.<br/>IdP 
+1. LifeTime displays browser login for external IdP provider. User credentials get validated at IdP Authorize.<br/>IdP
 returns an authorization token to Service Studio.
 1. LifeTime requests access tokens from IdP Tokens.<br/>IdP Tokens return JSON Web Tokens(JWT) to LifeTime.
 1. LifeTime validates the received token and keeps updating the token while you continue to work.
@@ -92,7 +93,7 @@ returns an authorization token to Service Studio.
 
 Tools that **don’t** enforce the external IdP flow use the username and password login authentication or [LT login authentication plugins](../use-an-external-authentication-provider.md). The following tools **do not** enforce the external IdP flow:
 
-* [OutSystems Solution Pack (OSP) Tool](../../../setup-infra-platform/setup/unattended-install/osp-tool-ref.md) 
+* [OutSystems Solution Pack (OSP) Tool](../../../setup-infra-platform/setup/unattended-install/osp-tool-ref.md)
 
 * Custom apps that use Service Center as a user provider and don’t use the [User_GetUnifiedLoginUrl](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Users_API#User_GetUnifiedLoginUrl) API
 
@@ -100,7 +101,7 @@ Tools that **don’t** enforce the external IdP flow use the username and passwo
 
 The **IT Users Authentication with External IdP (OIDC)** feature requires the following versions of OutSystems components:
 
-* Platform Server 11.18.1 
+* Platform Server 11.18.1
 
 * LifeTime 11.16.1
 
@@ -112,7 +113,7 @@ The **IT Users Authentication with External IdP (OIDC)** feature requires the fo
 
 To use an IT User as an End User in an OutSystems Reactive app, you must [configure the single sign-on between app types](../../../security/configure-authentication.md).
 
-**Note**: This only applies to custom apps that use Service Center as a user provider. 
+**Note**: This only applies to custom apps that use Service Center as a user provider.
 
 <div class="warning" markdown="1">
 

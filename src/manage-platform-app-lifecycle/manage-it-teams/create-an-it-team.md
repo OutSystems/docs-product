@@ -40,7 +40,7 @@ Now that the team is created, [add users](#add-it-users-to-the-team) and [applic
 
 ![Screenshot of the LifeTime console with a new IT team created](images/team-lt.png "New IT Team Created")
 
-## Add IT users to the team 
+## Add IT users to the team
 
 Adding users to a team will grant them a set of permissions over the team’s applications. As permissions are configured in roles, and you can assign different roles to each user within a team, you are able to have users with different permissions in the same team.
 

@@ -27,6 +27,6 @@ When designing queries, it's common to add conditions to filter results and get 
 
     ![Screenshot showing how to add a filter to an Aggregate in OutSystems](images/filter-query.png "Adding a Filter to an Aggregate")
 
-1. Enter the condition. 
+1. Enter the condition.
 
 To edit the conditions, go to the Filters option and change the ones you want to alter.

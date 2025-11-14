@@ -18,24 +18,25 @@ coverage-type:
 
 # Search engine optimization in apps
 
-Search engine optimization (SEO) is the process of improving a website’s content and technical configuration to increase its ranking in search engine results pages (SERPs). Because search is one of the main ways in which people discover content online, ranking higher in search engines can lead to an increase in traffic to a website. SEO makes your website more visible to people who are looking for solutions that your brand, product, or service can provide via search engines. 
+Search engine optimization (SEO) is the process of improving a website’s content and technical configuration to increase its ranking in search engine results pages (SERPs). Because search is one of the main ways in which people discover content online, ranking higher in search engines can lead to an increase in traffic to a website. SEO makes your website more visible to people who are looking for solutions that your brand, product, or service can provide via search engines.
 
 ![Diagram illustrating the search engine optimization process for OutSystems apps](images/seo-process-diag.png "SEO Process Diagram")  
 
 ## SEO benefits
 
 The following are some benefits of SEO for websites that want to increase visibility and provide value to their users:
-* Increased organic (unpaid) discovery 
+
+* Increased organic (unpaid) discovery
 
     Organic visibility leads to increased traffic.
 
-* Improved credibility and trust 
+* Improved credibility and trust
 
     Ranking on the first page of a search engine boosts credibility among users.
 
 * Optimized user experience
 
-    User experience is a critical component of SEO and a significant ranking factor. 
+    User experience is a critical component of SEO and a significant ranking factor.
 
 For developers that want to take their application to production, and have it be widely available and easily findable by new users, implementing SEO strategies allows them to:
 

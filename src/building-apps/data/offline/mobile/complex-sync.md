@@ -48,7 +48,7 @@ When syncing information from the server to the device it's important to only sy
 To illustrate the **top principles** let's consider a mobile app designed to support **appointment scheduling** on a hospital backoffice.
 
 ### Design a lightweight local database
-    
+
 ![Data model diagram showing the denormalization process for a lightweight local database in a mobile app.](images/lightweight-data-model.png "Lightweight Data Model for Mobile")
 
 * Since the main uses cases are **presenting appointments information** and provide **available doctor's data** we should denormalize the server side relational data model.
@@ -78,9 +78,9 @@ Create a local entity to keep track of the last synchronization moment per SyncU
     1. **SyncUnit = "Splash"** — Get information to display on the homepage, not that detailed.
 
     1. **SyncUnit = "Login"** — Get detailed information, related to the user or the homepage items.
-    
+
     1. **SyncUnit = "SendAppointments"** — Send Appointments stored locally to the server.
-    
+
     1. **SyncUnit = "Online"** — Trigger complete sync for new and updated data.
 
 * Use the SyncUnit parameter of the OfflineDataSync action — Manages the different moments of the synchronization by passing the SyncUnit as a parameter.
@@ -93,7 +93,7 @@ SyncUnit = "Login"
     ![Diagram illustrating the synchronization process during the login phase in a mobile application.](images/sync-unit-login.png "Sync Unit Login Process")
 
 SyncUnit = "SendAppointments"
-:   TriggerOfflineDataSync at the Create Appointment action to send the new appointment to the server **asynchronously**. 
+:   TriggerOfflineDataSync at the Create Appointment action to send the new appointment to the server **asynchronously**.
 
     ![Diagram showing the process of sending appointments to the server asynchronously using a sync unit.](images/sync-unit-send-appointments.png "Sync Unit Send Appointments Process")
 

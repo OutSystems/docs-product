@@ -60,12 +60,12 @@ public void MssEnableSoapMTOM() {
     //Replace previous binding
     client.Endpoint.Binding = customBinding;
 }
-```        
+```
 
 3\. Quit Visual Studio .NET and, back in Integration Studio, publish the extension by clicking the "1-Click Publish" toolbar icon or by pressing `F5`.
 
 4\. In Service Studio, add a reference to the "EnableSoapMTOM" action of your extension in your application module.  
 
-5\. In the flow of the SOAP callback of your SOAP Web Service, i.e. the flow of "OnBeforeRequestAdvanced", drag the "EnableSoapMTOM" action to the flow. 
+5\. In the flow of the SOAP callback of your SOAP Web Service, i.e. the flow of "OnBeforeRequestAdvanced", drag the "EnableSoapMTOM" action to the flow.
 
 6\. Publish the application module and test the application.

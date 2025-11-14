@@ -30,37 +30,37 @@ Follow the guidelines presented in [REST API Authentication](<../lifetime-deploy
 
 ## Summary
 
-API | Base URL | Security
----|---|---
-[v1](<#v1>) | /lifetimeapi/rest/v1 | SSL/TLS
+| API | Base URL | Security |
+| ---|---|--- |
+| [v1](<#v1>) | /lifetimeapi/rest/v1 | SSL/TLS |
 
 ## v1
 
-API Method | Description
----|---
-[GET /applications/](<#Applications_List>) | Returns a list of applications that exist in the infrastructure.
-[GET /applications/{ApplicationKey}/](<#Applications_Get>) | Returns the details of a given application.
-[GET /applications/{ApplicationKey}/versions/](<#Applications_Versions_List>) | Returns a list of versions of a given application.
-[GET /applications/{ApplicationKey}/versions/{VersionKey}/](<#Applications_Versions_Get>) | Returns the details of a given version of the specified application.
-[GET /deployments/](<#Deployments_List>) | Returns a list of deployments ordered by creation date, from newest to oldest.
-[POST /deployments/](<#Deployments_Create>) | Creates a deployment to a target environment. An optional list of applications to include in the deployment can be specified. The input is a subset of a Deployment object.
-[GET /deployments/{DeploymentKey}/](<#Deployments_Get>) | Returns the details of a given deployment. The returned information contains the included applications and the possible conflicts that can arise from the deployment of the current applications.
-[PUT /deployments/{DeploymentKey}/](<#Deployments_Update>) | Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of a Deployment object.
-[DELETE /deployments/{DeploymentKey}/](<#Deployments_Delete>) | Discards a deployment, if possible. Only deployments whose state is “saved” can be deleted.
-[POST /deployments/{DeploymentKey}/{Command}/](<#Deployments_ExecuteCommand>) | Executes the given command in a specified deployment. The allowed commands are “start”, “continue” and “abort”.
-[GET /deployments/{DeploymentKey}/status/](<#Deployments_GetStatus>) | Returns the details of a given deployment execution, including the deployment status and messages.
-[GET /environments/](<#Environments_List>) | Lists all the environments in the infrastructure.
-[GET /environments/{EnvironmentKey}/](<#Environments_Get>) | Returns the details of a given environment.
-[GET /environments/{EnvironmentKey}/applications/](<#Environments_GetRunningApps>) | Returns information about the running versions of all applications in a given environment.
-[GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/](<#Environments_GetRunningApp>) | Returns information about the running version of the specified application in a given environment.
-[GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/content/](<#Environments_DownloadRunningApp>) | Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes.
-[POST /environments/{EnvironmentKey}/applications/{ApplicationKey}/versions/](<#Environments_Applications_Versions_Create>) | Creates a new version of the application based on the current running application.
-[GET /modules/](<#Modules_List>) | Returns a list of modules that exist in the infrastructure.
-[GET /modules/{ModuleKey}/](<#Modules_Get>) | Returns the details of a given module.
-[GET /modules/{ModuleKey}/versions/](<#ModuleVersions_List>) | Returns a list of versions of a given module.
-[GET /modules/{ModuleKey}/versions/{ModuleVersionKey}/](<#ModuleVersion_Get>) | Returns the details of a given module version.
+| API Method | Description |
+| ---|--- |
+| [GET /applications/](<#Applications_List>) | Returns a list of applications that exist in the infrastructure. |
+| [GET /applications/{ApplicationKey}/](<#Applications_Get>) | Returns the details of a given application. |
+| [GET /applications/{ApplicationKey}/versions/](<#Applications_Versions_List>) | Returns a list of versions of a given application. |
+| [GET /applications/{ApplicationKey}/versions/{VersionKey}/](<#Applications_Versions_Get>) | Returns the details of a given version of the specified application. |
+| [GET /deployments/](<#Deployments_List>) | Returns a list of deployments ordered by creation date, from newest to oldest. |
+| [POST /deployments/](<#Deployments_Create>) | Creates a deployment to a target environment. An optional list of applications to include in the deployment can be specified. The input is a subset of a Deployment object. |
+| [GET /deployments/{DeploymentKey}/](<#Deployments_Get>) | Returns the details of a given deployment. The returned information contains the included applications and the possible conflicts that can arise from the deployment of the current applications. |
+| [PUT /deployments/{DeploymentKey}/](<#Deployments_Update>) | Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of a Deployment object. |
+| [DELETE /deployments/{DeploymentKey}/](<#Deployments_Delete>) | Discards a deployment, if possible. Only deployments whose state is “saved” can be deleted. |
+| [POST /deployments/{DeploymentKey}/{Command}/](<#Deployments_ExecuteCommand>) | Executes the given command in a specified deployment. The allowed commands are “start”, “continue” and “abort”. |
+| [GET /deployments/{DeploymentKey}/status/](<#Deployments_GetStatus>) | Returns the details of a given deployment execution, including the deployment status and messages. |
+| [GET /environments/](<#Environments_List>) | Lists all the environments in the infrastructure. |
+| [GET /environments/{EnvironmentKey}/](<#Environments_Get>) | Returns the details of a given environment. |
+| [GET /environments/{EnvironmentKey}/applications/](<#Environments_GetRunningApps>) | Returns information about the running versions of all applications in a given environment. |
+| [GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/](<#Environments_GetRunningApp>) | Returns information about the running version of the specified application in a given environment. |
+| [GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/content/](<#Environments_DownloadRunningApp>) | Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes. |
+| [POST /environments/{EnvironmentKey}/applications/{ApplicationKey}/versions/](<#Environments_Applications_Versions_Create>) | Creates a new version of the application based on the current running application. |
+| [GET /modules/](<#Modules_List>) | Returns a list of modules that exist in the infrastructure. |
+| [GET /modules/{ModuleKey}/](<#Modules_Get>) | Returns the details of a given module. |
+| [GET /modules/{ModuleKey}/versions/](<#ModuleVersions_List>) | Returns a list of versions of a given module. |
+| [GET /modules/{ModuleKey}/versions/{ModuleVersionKey}/](<#ModuleVersion_Get>) | Returns the details of a given module version. |
 
-# Actions
+## Actions
 
 ## /applications
 
@@ -68,11 +68,11 @@ API Method | Description
 
 Returns a list of applications that exist in the infrastructure.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/applications/`
 
-*Inputs*
+_Inputs_
 
 IncludeModules
 :   Type: optional, Boolean.  
@@ -84,14 +84,14 @@ IncludeEnvStatus
     Located in: URL (query parameter).  
     When set to true, the application status per environment is also returned. The default value is false.
 
-*Outputs*
+_Outputs_
 
 Applications
 :   Type: [Application](<#Structure_Application>) List.  
     Located in: Body.  
     A list of Application records including AppStatusInEnv sub-lists, if requested.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Application list successfully retrieved.
@@ -103,16 +103,15 @@ Applications
 400
 :   Failed to retrieve applications because IncludeModules was requested but IncludeEnvStatus was not, or invalid request when listing all applications.
 
-
 ### GET /applications/{ApplicationKey}/ { #Applications_Get }
 
 Returns the details of a given application.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/applications/{ApplicationKey}/`
 
-*Inputs*
+_Inputs_
 
 ApplicationKey
 :   Type: mandatory, Text.  
@@ -129,14 +128,14 @@ IncludeEnvStatus
     Located in: URL (query parameter).  
     When set to true, the application status per environment is also returned. The default value is false.
 
-*Outputs*
+_Outputs_
 
 Application
 :   Type: [Application](<#Structure_Application>).  
     Located in: Body.  
     An Application record including an AppStatusInEnv sub-list, if requested.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Application details successfully retrieved.
@@ -154,11 +153,11 @@ Application
 
 Returns a list of versions of a given application.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/applications/{ApplicationKey}/versions/`
 
-*Inputs*
+_Inputs_
 
 ApplicationKey
 :   Type: mandatory, Text.  
@@ -170,14 +169,14 @@ MaximumVersionsToReturn
     Located in: URL (query parameter).  
     The maximum number of versions to return. The default value is 5.
 
-*Outputs*
+_Outputs_
 
 ApplicationVersions
 :   Type: [ApplicationVersion](<#Structure_ApplicationVersion>) List.  
     Located in: Body.  
     A list of ApplicationVersion records.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   List of application versions successfully retrieved.
@@ -195,11 +194,11 @@ ApplicationVersions
 
 Returns the details of a given version of the specified application.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/applications/{ApplicationKey}/versions/{VersionKey}/`
 
-*Inputs*
+_Inputs_
 
 ApplicationKey
 :   Type: mandatory, Text.  
@@ -216,14 +215,14 @@ IncludeModules
     Located in: URL.  
     When set to true, the modules details are also retrieved. The default value is false.
 
-*Outputs*
+_Outputs_
 
 ApplicationVersion
 :   Type: [ApplicationVersion](<#Structure_ApplicationVersion>).  
     Located in: Body.  
     An ApplicationVersion record.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Application version details successfully retrieved.
@@ -240,11 +239,11 @@ ApplicationVersion
 
 Returns a list of deployments ordered by creation date, from newest to oldest.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/deployments/`
 
-*Inputs*
+_Inputs_
 
 MinDate
 :   Type: optional, Date.  
@@ -256,14 +255,14 @@ MaxDate
     Located in: URL (query parameter).  
     The maximum creation date of the deployments to return. The default value is the current date.
 
-*Outputs*
+_Outputs_
 
 Deployments
 :   Type: [Deployment](<#Structure_Deployment>) List.  
     Located in: Body.  
     A list of Deployment records.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Deployments list successfully retrieved.
@@ -282,11 +281,11 @@ Deployments
 
 Creates a deployment to a target environment. An optional list of applications to include in the deployment can be specified. The input is a subset of a Deployment object.
 
-*Full URL*
+_Full URL_
 
 `POST /lifetimeapi/rest/v1/deployments/`
 
-*Inputs*
+_Inputs_
 
 ApplicationVersionKeys
 :   Type: Optional, Text List.  
@@ -308,14 +307,14 @@ TargetEnvironmentKey
     Located in: Body.  
     Target environment unique identifier.
 
-*Outputs*
+_Outputs_
 
 DeploymentKey
 :   Type: Text.  
     Located in: Body.  
     The key of the newly created deployment.
 
-*Return Codes*
+_Return Codes_
 
 201
 :   Deployment successfully created.
@@ -346,18 +345,18 @@ DeploymentKey
 
 Returns the details of a given deployment. The returned information contains the included applications and the possible conflicts that can arise from the deployment of the current applications.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/deployments/{DeploymentKey}/`
 
-*Inputs*
+_Inputs_
 
 DeploymentKey
 :   Type: mandatory, Text.  
     Located in: URL.  
     The key of the desired deployment.
 
-*Outputs*
+_Outputs_
 
 ApplicationConflicts
 :   Type: [ApplicationConflict](<#Structure_ApplicationConflict>) List.  
@@ -369,7 +368,7 @@ Deployment
     Located in: Body.  
     The deployment details.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Deployment details successfully retrieved.
@@ -384,11 +383,11 @@ Deployment
 
 Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of a Deployment object.
 
-*Full URL*
+_Full URL_
 
 `PUT /lifetimeapi/rest/v1/deployments/{DeploymentKey}/`
 
-*Inputs*
+_Inputs_
 
 DeploymentKey
 :   Type: mandatory, Text.  
@@ -415,14 +414,14 @@ TargetEnvironmentKey
     Located in: Body.  
     Target environment unique identifier.
 
-*Outputs*
+_Outputs_
 
 Deployment
 :   Type: [Deployment](<#Structure_Deployment>).  
     Located in: Body.  
     A Deployment record containing the updated information.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Deployment successfully updated.
@@ -435,7 +434,6 @@ Deployment
 
 404
 :   Deployment plan not found.
-
 
 **Example Request Body**
 
@@ -454,18 +452,18 @@ Deployment
 
 Discards a deployment, if possible. Only deployments whose state is “saved” can be deleted.
 
-*Full URL*
+_Full URL_
 
 `DELETE /lifetimeapi/rest/v1/deployments/{DeploymentKey}/`
 
-*Inputs*
+_Inputs_
 
 DeploymentKey
 :   Type: mandatory, Text.  
     Located in: URL.  
     The key of the deployment to delete.
 
-*Return Codes*
+_Return Codes_
 
 204
 :   Deployment successfully deleted.
@@ -480,16 +478,15 @@ DeploymentKey
 404
 :   Deployment with key `<DeploymentKey>` not found.
 
-
 ### POST /deployments/{DeploymentKey}/{Command}/ { #Deployments_ExecuteCommand }
 
 Executes the given command in a specified deployment. The allowed commands are "start", "continue" and "abort".
 
-*Full URL*
+_Full URL_
 
 `POST /lifetimeapi/rest/v1/deployments/{DeploymentKey}/{Command}/`
 
-*Inputs*
+_Inputs_
 
 DeploymentKey
 :   Type: mandatory, Text.  
@@ -501,7 +498,7 @@ Command
     Located in: URL.  
     The command to execute. One of “start”, “continue” or “abort”.
 
-*Return Codes*
+_Return Codes_
 
 202
 :   Command `<Command>` executed successfully for deployment `<DeploymentKey>`.
@@ -515,23 +512,22 @@ Command
 404
 :   Deployment with key `<DeploymentKey>` not found, or command not found.
 
-
 ### GET /deployments/{DeploymentKey}/status/ { #Deployments_GetStatus }
 
 Returns the details of a given deployment execution, including the deployment status and messages.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/deployments/{DeploymentKey}/status/`
 
-*Inputs*
+_Inputs_
 
 DeploymentKey
 :   Type: mandatory, Text.  
     Located in: URL.  
     The key of the deployment whose status is being requested.
 
-*Outputs*
+_Outputs_
 
 DeploymentLog
 :   Type: [DeploymentMessage](<#Structure_DeploymentMessage>) List.  
@@ -543,7 +539,7 @@ DeploymentStatus
     Located in: Body.  
     Status of the deployment. [saved | running | needs_user_intervention | aborted | aborting | finished_successful | finished_with_warnings | finished_with_errors]
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Deployment status successfully retrieved.
@@ -554,25 +550,24 @@ DeploymentStatus
 404
 :   Deployment with key `<DeploymentKey>` not found.
 
-
 ## /environments
 
 ### GET /environments/ { #Environments_List }
 
 Lists all the environments in the infrastructure.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/environments/`
 
-*Outputs*
+_Outputs_
 
 Environments
 :   Type: [Environment](<#Structure_Environment>) List.  
     Located in: Body.  
     A list of Environment records.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Environments list successfully retrieved.
@@ -585,25 +580,25 @@ Environments
 
 Returns the details of a given environment.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/environments/{EnvironmentKey}/`
 
-*Inputs*
+_Inputs_
 
 EnvironmentKey
 :   Type: mandatory, Text.  
     Located in: URL.  
     The key of the desired environment.
 
-*Outputs*
+_Outputs_
 
 Environment
 :   Type: [Environment](<#Structure_Environment>).  
     Located in: Body.  
     An Environment record.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Environment details successfully retrieved.
@@ -614,16 +609,15 @@ Environment
 404
 :   An environment with key `<EnvironmentKey>` was not found.
 
-
 ### GET /environments/{EnvironmentKey}/applications/ { #Environments_GetRunningApps }
 
 Returns information about the running versions of all applications in a given environment.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/environments/{EnvironmentKey}/applications/`
 
-*Inputs*
+_Inputs_
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -640,14 +634,14 @@ IncludeEnvStatus
     Located in: URL (query parameter).  
     When set to true, the applications’ status information in the environment is included in the result. The default value is false.
 
-*Outputs*
+_Outputs_
 
 Applications
 :   Type: [Application](<#Structure_Application>) List.  
     Located in: Body.  
     A list of Application records.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Applications list for the given environment successfully retrieved
@@ -664,16 +658,15 @@ Applications
 404
 :   Failed to retrieve running applications for environment with key `<EnvironmentKey>` because it was not found.
 
-
 ### GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/ { #Environments_GetRunningApp }
 
 Returns information about the running version of the specified application in a given environment.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/environments/{EnvironmentKey}/applications/{ApplicationKey}/`
 
-*Inputs*
+_Inputs_
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -695,14 +688,14 @@ IncludeModules
     Located in: URL (query parameter).  
     When set to true, the modules details are also retrieved. The default value is false.
 
-*Outputs*
+_Outputs_
 
 Application
 :   Type: [Application](<#Structure_Application>).  
     Located in: Body.  
     An Application record.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Application information successfully retrieved.
@@ -720,11 +713,11 @@ Application
 
 Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/environments/{EnvironmentKey}/applications/{ApplicationKey}/content/`
 
-*Inputs*
+_Inputs_
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -741,7 +734,7 @@ Type
     Located in: URL (query parameter).  
     The type of binary file to return, when applicable. [oap | apk | ipa]
 
-*Outputs*
+_Outputs_
 
 DownloadLink
 :   Type: [DownloadLink](<#Structure_DownloadLink>).  
@@ -753,7 +746,7 @@ Expires
     Located in: Header.  
     The expiration date and time of the returned link.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Binary file download link successfully retrieved.
@@ -775,11 +768,11 @@ Expires
 
 Creates a new version of the application based on the current running application.
 
-*Full URL*
+_Full URL_
 
 `POST /lifetimeapi/rest/v1/environments/{EnvironmentKey}/applications/{ApplicationKey}/versions/`
 
-*Inputs*
+_Inputs_
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -796,14 +789,14 @@ ApplicationVersionCreate
     Located in: Body.  
     A structure holding the new version name for the application and for its native applications, if applicable.
 
-*Outputs*
+_Outputs_
 
 ApplicationVersionKey
 :   Type: Text.  
     Located in: Body.  
     The key of the newly created application version.
 
-*Return Codes*
+_Return Codes_
 
 201
 :   Application version successfully created.
@@ -816,7 +809,6 @@ ApplicationVersionKey
 
 404
 :   Environment or application not found.
-
 
 **Example Request Body**
 
@@ -837,32 +829,31 @@ ApplicationVersionKey
 }
 ```
 
-
 ## /modules
 
 ### GET /modules/ { #Modules_List }
 
 Returns a list of modules that exist in the infrastructure.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/modules/`
 
-*Inputs*
+_Inputs_
 
 IncludeEnvStatus
 :   Type: optional, Boolean.  
     Located in: URL (query parameter).  
     When set to true, the module status per environment is also returned. The default value is false.
 
-*Outputs*
+_Outputs_
 
 ModuleList
 :   Type: [Module](<#Structure_Module>) List.  
     Located in: Body.  
     List of Module records.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Modules list successfully retrieved.
@@ -875,11 +866,11 @@ ModuleList
 
 Returns the details of a given module.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/modules/{ModuleKey}/`
 
-*Inputs*
+_Inputs_
 
 ModuleKey
 :   Type: mandatory, Text.  
@@ -891,14 +882,14 @@ IncludeEnvStatus
     Located in: URL (query parameter).  
     When set to true, the module status per environment is also returned. The default value is false.
 
-*Outputs*
+_Outputs_
 
 Module
 :   Type: [Module](<#Structure_Module>).  
     Located in: Body.  
     Module record.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Module details successfully retrieved.
@@ -913,11 +904,11 @@ Module
 
 Returns a list of versions of a given module.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/modules/{ModuleKey}/versions/`
 
-*Inputs*
+_Inputs_
 
 ModuleKey
 :   Type: mandatory, Text.  
@@ -939,14 +930,14 @@ MaximumVersionsToReturn
     Located in: URL (query parameter).  
     Maximum number of versions to return. Default is 5.
 
-*Outputs*
+_Outputs_
 
 ModuleVersionList
 :   Type: [ModuleVersion](<#Structure_ModuleVersion>) List.  
     Located in: Body.  
     List of ModuleVersion records.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   List of module versions successfully retrieved.
@@ -964,11 +955,11 @@ ModuleVersionList
 
 Returns the details of a given module version.
 
-*Full URL*
+_Full URL_
 
 `GET /lifetimeapi/rest/v1/modules/{ModuleKey}/versions/{ModuleVersionKey}/`
 
-*Inputs*
+_Inputs_
 
 ModuleKey
 :   Type: mandatory, Text.  
@@ -990,14 +981,14 @@ IncludeConsumedElements
     Located in: URL (query parameter).  
     Boolean to indicate if consumed elements should be returned. Default is false.
 
-*Outputs*
+_Outputs_
 
 ModuleVersion
 :   Type: [ModuleVersion](<#Structure_ModuleVersion>)  
     Located in: Body.  
     Record of ModuleVersion.
 
-*Return Codes*
+_Return Codes_
 
 200
 :   Module version details successfully retrieved.
@@ -1008,14 +999,13 @@ ModuleVersion
 404
 :   Failed to retrieve the module with key: `<ModuleKey>`, or failed to retrieve the module version with key: `<ModuleKey>`.
 
-
 ## Structures
 
 ### Application { #Structure_Application }
 
 An application with its details and its status in the environments were it is running.
 
-*Attributes*
+_Attributes_
 
 Key
 :   Type: Text.  
@@ -1061,7 +1051,7 @@ AppStatusInEnvs
 
 A deployment conflict.
 
-*Attributes*
+_Attributes_
 
 Message
 :   Type: Text.  
@@ -1083,7 +1073,7 @@ ModuleConflict
 
 Operation executed in the deployment over the application.
 
-*Attributes*
+_Attributes_
 
 ApplicationKey
 :   Type: Text.  
@@ -1101,7 +1091,7 @@ DeploymentOperation
 
 Information about a specific version of an application and the versions of its modules.
 
-*Attributes*
+_Attributes_
 
 Key
 :   Type: Text.  
@@ -1135,7 +1125,7 @@ ModuleVersions
 
 A structure holding the new version name for the application and for its native applications, if applicable.
 
-*Attributes*
+_Attributes_
 
 ChangeLog
 :   Type: Text.  
@@ -1157,7 +1147,7 @@ ModuleVersionKeys
 
 Status of application in a given environment.
 
-*Attributes*
+_Attributes_
 
 EnvironmentKey
 :   Type: Text.  
@@ -1199,7 +1189,7 @@ ModuleStatusInEnvs
 
 Deployment information with the operations executed.
 
-*Attributes*
+_Attributes_
 
 Key
 :   Type: Text.  
@@ -1273,7 +1263,7 @@ ApplicationsVersionKeys
 
 Message from a deployment operation log.
 
-*Attributes*
+_Attributes_
 
 Instant
 :   Type: Date Time.  
@@ -1287,7 +1277,7 @@ Message
 
 The link for the application binary file.
 
-*Attributes*
+_Attributes_
 
 url
 :   Type: Text.  
@@ -1301,7 +1291,7 @@ expires
 
 An environment and its information.
 
-*Attributes*
+_Attributes_
 
 Key
 :   Type: Text.  
@@ -1355,7 +1345,7 @@ IsCloudEnvironment
 
 Status of mobile application in a given environment.
 
-*Attributes*
+_Attributes_
 
 EnvironmentKey
 :   Type: Text.  
@@ -1389,7 +1379,7 @@ IsModified
 
 A mobile version and its information.
 
-*Attributes*
+_Attributes_
 
 NativePlatform
 :   Type: Text.  
@@ -1407,7 +1397,7 @@ VersionDescription
 
 Module information and the status in the environments where the modules are running.
 
-*Attributes*
+_Attributes_
 
 Key
 :   Type: Text.  
@@ -1433,7 +1423,7 @@ ModuleStatusInEnv
 
 A module conflict.
 
-*Attributes*
+_Attributes_
 
 ProducerModuleKey
 :   Type: Text.  
@@ -1455,7 +1445,7 @@ ConflictType
 
 Element version information, such as action, entity, structure, among others.
 
-*Attributes*
+_Attributes_
 
 Key
 :   Type: Text.  
@@ -1485,7 +1475,7 @@ ModuleKey
 
 Status of module in a given environment.
 
-*Attributes*
+_Attributes_
 
 EnvironmentKey
 :   Type: Text.  
@@ -1507,7 +1497,7 @@ ConsistencyStatusMessages
 
 A module version and its information.
 
-*Attributes*
+_Attributes_
 
 Key
 :   Type: Text.  
@@ -1524,4 +1514,3 @@ PublicElements
 ConsumedElements
 :   Type: [ModuleElement](<#Structure_ModuleElement>) List.  
     List of module elements consumed by module version.
-

@@ -27,13 +27,13 @@ Applies only to Mobile apps.
 
 </div>
 
-You must wrap Apache Cordova plugins into modules to reference them in your mobile apps. 
+You must wrap Apache Cordova plugins into modules to reference them in your mobile apps.
 
 To wrap Apache Cordova plugins into modules, do the following:
 
-1. Clone the [Template Plugin from Forge](<https://www.outsystems.com/forge/component-overview/1676/template-plugin/>) that provides the groundwork for all custom Cordova plugins. 
-1. Wrap each plugin in its own dedicated module and application; if using several plugins, create an application for each, containing a single wrapper module. 
-1. Make the relevant actions and entities of the wrapper module public. 
+1. Clone the [Template Plugin from Forge](<https://www.outsystems.com/forge/component-overview/1676/template-plugin/>) that provides the groundwork for all custom Cordova plugins.
+1. Wrap each plugin in its own dedicated module and application; if using several plugins, create an application for each, containing a single wrapper module.
+1. Make the relevant actions and entities of the wrapper module public.
 1. Provide a meaningful name for the wrapper module. For example, "SamplePlugin".
 
 You can only test the functionality of Cordova plugins in native mobile application.
@@ -48,9 +48,9 @@ Wrap a Cordova plugin through the **Extensibility Configuration** module propert
 * the Cordova identifier (the value of the `identifier` key)
 * the ZIP file from the **Resources** folder in the **Data** tab (the value of the `resource` key)
 
-Unless it’s a [plugin supported by OutSystems](intro.md) and you're using a public repository to reference the plugin, it's recommended that you fork the plugin repository or use a tagged version, such as `https://example.com/sampleplugin/sampleplugin.git#1.1.0`. This prevents breaking changes in the plugin and the applications using the plugin. Additionally, if tags aren't used, two different builds may produce different results. This is important when deploying across one or more environments, where testing in one environment may be invalidated by a different build generated for another environment. 
+Unless it’s a [plugin supported by OutSystems](intro.md) and you're using a public repository to reference the plugin, it's recommended that you fork the plugin repository or use a tagged version, such as `https://example.com/sampleplugin/sampleplugin.git#1.1.0`. This prevents breaking changes in the plugin and the applications using the plugin. Additionally, if tags aren't used, two different builds may produce different results. This is important when deploying across one or more environments, where testing in one environment may be invalidated by a different build generated for another environment.
 
-You can use JSON for configuring additional settings required by the plugin. For detailed information about the description of the JSON, refer to [Extensibility Configurations JSON Schema](../../../deploying-apps/mobile-app-packaging-delivery/compliance-with-third-party-licenses.md).
+You can use JSON for configuring additional settings required by the plugin. For detailed information about the description of the JSON, refer to [Extensibility Configurations JSON Schema](../../../deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/extensibility-configurations-json-schema.md).
 
 ![Extensibility Configuration window in OutSystems showing where to specify the Cordova plugin settings](images/plugin-exensibility-window-ss.png "Extensibility Configuration Window")
 

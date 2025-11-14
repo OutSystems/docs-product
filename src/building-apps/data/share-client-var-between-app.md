@@ -25,25 +25,36 @@ This document shows how you can share some value between two apps using Client V
 Follow these steps to create a Client Variable and initialize its value when the module loads.
 
 1. Create a sample **Reactive Web App**, name it **ReactiveAppA**, and add a **Web Module** to it. When the editor opens, add a Screen to the app.
-1. Go to the **Data** tab > right-click **Client Variables** > select **Add Client Variable**. Name the variable **MyClientVariable**.
-1. Go to the **Logic** tab > right-click **Client Actions** > select **Add System Event** > select **On Application Ready**.
-1. Drag an **Assign Tool** to the Flow and assign `Client.MyClientVariable = "Value from ReactiveAppA!"`. This sets a value to the variable once the app starts running.
-1. Add a Block to MainFlow and name it **BlockWithClientVariable**. Drag an **Expression Widget** to the Block and enter `Client.MyClientVariable` in the **Expression Value** of the Widget.
-1. Drag **BlockWithClientVariable** to the Screen.
-1. Set **Public** property of BlockWithClientVariable to **Yes**.
-1. Publish the app and open it in a browser.
 
-![Screenshot showing the process of creating and setting a Client Variable in a Reactive Web App](images/client-variable.png "Client Variable in Reactive Web App")
+1. Go to the **Data** tab > right-click **Client Variables** > select **Add Client Variable**. Name the variable **MyClientVariable**.
+
+    ![Screenshot showing the creation of a Client Variable named MyClientVariable in OutSystems.](images/my-client-variable-ss.png "Client Variable Creation")
+
+1. Go to the **Logic** tab > right-click **Client Actions** > select **Add System Event** > select **On Application Ready**.
+
+1. Drag an **Assign Tool** to the Flow and assign `Client.MyClientVariable = "Value from ReactiveAppA!"`. This sets a value to the variable once the app starts running.
+
+   ![Screenshot of the Assign Tool in the On Application Ready event, setting the value of MyClientVariable.](images/assign-tool-ss.png "Assign Tool in On Application Ready")
+
+1. Add a Block to MainFlow and name it **BlockWithClientVariable**. Drag an **Expression Widget** to the Block and enter `Client.MyClientVariable` in the **Expression Value** of the Widget.
+
+1. Drag **BlockWithClientVariable** to the Screen.
+
+   ![Screenshot showing the BlockWithClientVariable being dragged to the screen in OutSystems.](images/drag-block-to-screen-ss.png "Drag Block to Screen")
+
+1. Set **Public** property of BlockWithClientVariable to **Yes**.
+
+1. Publish the app and open it in a browser.
 
 ## Create the second app and pass it the value of Client Variable
 
 The following steps show how to share the Client Variable between apps by reusing the block created in the previous section.
 
 1. Create another sample **Reactive Web App**, name it **ReactiveAppB**, and add a **Web Module** to it. Again, add a Screen to the app.
-2. Open **Manage Dependencies**, search for **ReactiveAppA** in Producers and select **BlockWithClientVariable**. Click **Apply** to add references and close the dialog.
-3. Drag the **BlockWithClientVariable** to the Screen.
-4. Publish the app and open it in a browser.
+1. Open **Manage Dependencies**, search for **ReactiveAppA** in Producers and select **BlockWithClientVariable**. Click **Apply** to add references and close the dialog.
+1. Drag the **BlockWithClientVariable** to the Screen.
+1. Publish the app and open it in a browser.
 
-## Sharing values in Traditional Web Apps 
+## Sharing values in Traditional Web Apps
 
 In Traditional Web Apps, you can use Session Variables to keep configurations and app context data.

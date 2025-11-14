@@ -30,7 +30,7 @@ You can use the Video UI pattern to embed a native video player into your applic
 
 <div class="info" markdown="1">
 
-Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How to Add Video to Your Applications](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_add_video_to_your_applications/) article. 
+Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How to Add Video to Your Applications](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_add_video_to_your_applications/) article.
 
 </div>
 
@@ -47,16 +47,16 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Video widget into the Main Content area of your application's screen.
 
     ![Illustration of dragging the Video widget into the Main Content area of an application screen](images/video-image-11.png "Dragging Video Widget into Main Content")
- 
-1. On the **Properties** tab, set the **SourceFile** property to the source video file you want to embed in your app. 
+
+1. On the **Properties** tab, set the **SourceFile** property to the source video file you want to embed in your app.
 
     * If using an external source file, insert the file URL.
 
@@ -67,25 +67,25 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
         1. On the **Data** tab, right-click the **Resources** folder and select **Import Resource**.
 
             ![Dialog for importing a video file as a resource into the module](images/video-image-add-resource.png "Importing Video File as Resource")
-        
+
         1. Browse and select the video file you want to add and click **Open**.
         1. On the **Resource** properties tab, from the **Deploy Action** drop-down, select **Deploy to Target Directory**.
 
              ![Dropdown menu for selecting 'Deploy to Target Directory' as the deploy action for a video resource](images/video-image-12.png "Setting Deploy Action for Video Resource")
 
         1. On the **Interface** tab, from the **Widget Tree**, select the Video pattern.
-       
+
         1. In the **SourceFile** property, enter the runtime path of the video file.
 
             ![Input field for entering the runtime path of the video file in the SourceFile property](images/video-image-13.png "Entering Runtime Path in SourceFile Property")
-    
+
             **Tip**: You can copy the runtime path from the Resource Runtime Path property tab.
 
             ![Resource properties tab showing the runtime path of the video file for copying](images/video-image-14.png "Copying Runtime Path from Resource Properties")
 
 1. On the Video **Properties** tab, you can also define (optional) properties, such as the height and width of the video and the audio settings.
 
-1. After following these steps and publishing the module, you can test the pattern in your app. 
+1. After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 

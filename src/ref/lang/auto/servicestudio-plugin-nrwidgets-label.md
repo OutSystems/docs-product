@@ -19,7 +19,6 @@ coverage-type:
 
 # Label
 
-
 Provides a caption to the input fields describing the information that is being requested from the user.
 
 ## Properties
@@ -125,4 +124,3 @@ Provides a caption to the input fields describing the information that is being 
 </tr>
 </tbody>
 </table>
-

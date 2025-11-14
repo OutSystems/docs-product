@@ -70,4 +70,3 @@ Attaches a file to an e-mail.
 </tr>
 </tbody>
 </table>
-

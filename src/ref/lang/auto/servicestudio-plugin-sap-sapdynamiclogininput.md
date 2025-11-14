@@ -8,8 +8,14 @@ platform-version: o11
 figma:
 coverage-type:
   - remember
+tags: sap connections, dynamic login, input parameter, service studio, data type
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
 ---
-
 # Input Parameter - SAP Username
 
 Input parameter for the SAP username. This parameter is added automatically by Service Studio to every SAP remote function when Dynamic Login is added to the SAP Connection.  
@@ -50,4 +56,3 @@ Input parameter for the SAP username. This parameter is added automatically by S
 </tr>
 </tbody>
 </table>
-

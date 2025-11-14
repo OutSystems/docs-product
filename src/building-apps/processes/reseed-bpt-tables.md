@@ -42,7 +42,7 @@ If you don't clean up your BPT data after performing the specified operation, ev
 
 </div>
 
-## SQL Server - Reseed identity values in BPT tables 
+## SQL Server - Reseed identity values in BPT tables
 
 To check the current identity values in your BPT tables, you can run the following SQL statement:
 
@@ -84,7 +84,7 @@ The following steps demonstrate how you can reseed the identity value for the `o
 
 1. Repeat steps 1 and 2 for the `ossys_BPM_Process` table if required.
 
-## Oracle - Restart sequence values for BPT tables 
+## Oracle - Restart sequence values for BPT tables
 
 To check the current sequence values for your BPT tables, you can run the following SQL statement:
 
@@ -126,4 +126,3 @@ The following steps demonstrate how you can restart the sequence value for the s
     ```
 
 1. Repeat steps 1 and 2 for the `OSSEC_BPM_PROCESS` sequence used by the `ossys_BPM_Process` table if required.
-

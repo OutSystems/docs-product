@@ -30,6 +30,5 @@ This error is issued in the following situations:
 **Recommended action**
 
 Wait a few moments and try the operation again.
-    
-If the issue persists, try restarting the deployment controller service. On the OutSystems Cloud, [you can do it in LifeTime](https://success.outsystems.com/Support/Troubleshooting/Infrastructure_management/Restart_services_on_OutSystems_Cloud). In self-managed servers, access the remote server, open the Windows app **Services**, search and restart the **OutSystems Deployment Controller service**.
 
+If the issue persists, try restarting the deployment controller service. On the OutSystems Cloud, [you can do it in LifeTime](https://success.outsystems.com/Support/Troubleshooting/Infrastructure_management/Restart_services_on_OutSystems_Cloud). In self-managed servers, access the remote server, open the Windows app **Services**, search and restart the **OutSystems Deployment Controller service**.

@@ -20,9 +20,9 @@ coverage-type:
 
 The Help menu on the [menu bar](<../../workspace.md>) contains the following operations:
 
-Menu Item | Description
-:--------:|:-----------
-![Icon for Integration Studio Help in the Help menu](images/help.png "Integration Studio Help") Integration Studio Help | Launches this help file.
-![Icon for What's New document in the Help menu](images/whats-new.png "What's New?") What's New? | Opens a document that contains a general overview of the current version of the platform.
-![Icon for Submit Feedback in the Help menu](images/submit-feedback.png "Submit Feedback") Submit Feedback | [Submits feedback](<submit-feedback.md>) to OutSystems.
-![Icon for Start Screen in the Help menu](images/home.png "Start Screen") Start Screen | Displays the Start Screen of Integration Studio, where you can manage your extensions, take a tour on Integration Studio and get help.
+| Menu Item | Description |
+| :--------:|:----------- |
+| ![Icon for Integration Studio Help in the Help menu](images/help.png "Integration Studio Help") Integration Studio Help | Launches this help file. |
+| ![Icon for What's New document in the Help menu](images/whats-new.png "What's New?") What's New? | Opens a document that contains a general overview of the current version of the platform. |
+| ![Icon for Submit Feedback in the Help menu](images/submit-feedback.png "Submit Feedback") Submit Feedback | [Submits feedback](<submit-feedback.md>) to OutSystems. |
+| ![Icon for Start Screen in the Help menu](images/home.png "Start Screen") Start Screen | Displays the Start Screen of Integration Studio, where you can manage your extensions, take a tour on Integration Studio and get help. |

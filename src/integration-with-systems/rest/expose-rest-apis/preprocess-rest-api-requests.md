@@ -22,15 +22,15 @@ OutSystems allows you to run logic before executing each request of an exposed R
 
 For that, do the following:
 
-1. In the **Logic** tab, open the **Integrations** folder. 
+1. In the **Logic** tab, open the **Integrations** folder.
 
-1. In the REST API, set the property "On Request" to `New OnRequest`. 
+1. In the REST API, set the property "On Request" to `New OnRequest`.
 
     ![Screenshot showing the REST API properties with 'On Request' set to 'New OnRequest'.](images/ss-rest-expose-onrequest.png "Setting the OnRequest Property")
 
-1. Open the "OnRequest" callback action that is now available under the REST API. 
+1. Open the "OnRequest" callback action that is now available under the REST API.
 
-1. Design the logic to preprocess the request. 
+1. Design the logic to preprocess the request.
 
     ![Screenshot of the OnRequest callback logic tree in OutSystems with RequestText and RequestBinary attributes.](images/ss-rest-expose-onrequest-tree.png "OnRequest Callback Logic Tree")
 

@@ -88,4 +88,3 @@ Output parameter of an imported SAP remote function.
 </tr>
 </tbody>
 </table>
-

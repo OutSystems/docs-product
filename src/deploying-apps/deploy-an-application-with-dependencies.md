@@ -22,9 +22,9 @@ topic:
 
 # Deploy an application with dependencies
 
-An application that is [deployed to another environment](<deploy-an-application.md>) may experience runtime errors if it depends on the functionality of other applications that are not deployed together with it. 
+An application that is [deployed to another environment](<deploy-an-application.md>) may experience runtime errors if it depends on the functionality of other applications that are not deployed together with it.
 
-LifeTime validates these type of dependencies before deploying applications. 
+LifeTime validates these type of dependencies before deploying applications.
 
 LifeTime detects all application dependencies that are not compatible in the destination environment and adds those dependencies to the deployment plan, highlighting them in red.
 
@@ -36,7 +36,6 @@ In this situation, do the following:
 1. LifeTime validation goes green (OK), you can proceed with the deployment.
 
 Here's an example of how to do it.
-
 
 ## Deploy MyApp to the Quality environment
 
@@ -59,12 +58,11 @@ To deploy MyApp to Quality, do the following:
 
     ![Image displaying the DEPLOY 0.2 option selected for MyApp with the VALIDATE NOW button highlighted](images/deploy-an-application-with-dependencies-3.png "Selecting Deploy Option for MyApp")
 
-
 LifeTime detects that MyApp depends on MyWebApp, which also needs to be updated in Quality, and adds MyWebApp to the deployment plan. Both applications go red (error), and it’s not possible to continue with the deployment.
 
 ![Screenshot of LifeTime deployment plan with MyApp and MyWebApp highlighted in red due to errors](images/deploy-an-application-with-dependencies-4.png "LifeTime Deployment Plan with Error Indicators")
 
-In very specific situations where you have the total ownership of all the identified dependency modules and you are aware of the impact this deployment will cause in the destination environment, you can choose to "Continue with errors". Otherwise, you should continue forward to understand and solve all the dependencies. 
+In very specific situations where you have the total ownership of all the identified dependency modules and you are aware of the impact this deployment will cause in the destination environment, you can choose to "Continue with errors". Otherwise, you should continue forward to understand and solve all the dependencies.
 
 ### Understand the dependencies
 

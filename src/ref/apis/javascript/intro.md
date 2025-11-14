@@ -55,7 +55,6 @@ $public.FeedbackMessage.showFeedbackMessage("Your data has been submitted.", 1);
 |---|---|
 |[ApplicationLoadEventHandlers](intro.md#applicationloadeventhandlers)|Event handlers called when the status of the application load changes.|
 
-
 ## Type aliases
 
 ### ApplicationLoadEventHandlers
@@ -88,4 +87,3 @@ Parameters:
 * **total**: number
 
 Returns: void
-

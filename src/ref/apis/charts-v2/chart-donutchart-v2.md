@@ -28,17 +28,17 @@ This example shows how you can create a simple Donut Chart.
 
     ![Screenshot of the Properties tab with the DataPointList property expanded to show options](images/chartdonut-expand-ss.png "Expanding DataPointList Property")
 
-1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data).
 
-    This example uses fixed data. These properties define the first data point. Each data point corresponds to a slice on the donut chart. 
+    This example uses fixed data. These properties define the first data point. Each data point corresponds to a slice on the donut chart.
 
     ![Screenshot demonstrating how to set the Label and Value properties for a data point in the Donut Chart](images/chartdonut-datapoint-ss.png "Setting Data Point Properties")
 
 1. To add more data points, repeat steps 2 and 3.
-    
+
     ![Screenshot illustrating the process of adding more data points to the Donut Chart](images/chartdonut-extra-datapoints-ss.png "Adding Additional Data Points")
 
-1. To customize the inner size of the Donut Chart, set the value of the **InnerSize** property. 
+1. To customize the inner size of the Donut Chart, set the value of the **InnerSize** property.
 
     In this example, the **InnerSize** property is set to 60% (by default, the **InnerSize** property is 50%).
 
@@ -47,4 +47,3 @@ This example shows how you can create a simple Donut Chart.
 After following these steps, you can publish your module:
 
 ![Image of the final Donut Chart as it appears after publishing the module](images/chartdonut-result.png "Final Donut Chart Result")
-

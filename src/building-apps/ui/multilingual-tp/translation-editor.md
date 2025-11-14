@@ -26,12 +26,11 @@ The **translation editor** lets you translate text and manage your translation d
 
 Translation editor also opens when you [add a new translation language](translate-your-app.md).
 
-
 Once you open the translation editor, you can:
 
 * **Translate** text by entering the translation in the **Translation in (language code)** column (1).
 * **Switch languages for translation** by selecting the language code in the **Locale (language code)** dropdown (2).
-* **Set text as translatable/non-translatable** by selecting one of the options in the **Behavior** list column (3). 
+* **Set text as translatable/non-translatable** by selecting one of the options in the **Behavior** list column (3).
 * **Filter and search** the text by using the tools in the **Filter** section of the translation editor (4). With the translation window open, select an element in the screen, and then click the button with the arrow icon to show that element in the editor.
 * **Navigate to a text in the module** by double-clicking a **Text** field to see the text in context.
 * **See the translation progress**, as it shows in the **Statistics** section (5).

@@ -33,10 +33,10 @@ Returns the absolute value (unsigned magnitude) of the decimal number 'n'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -60,10 +60,10 @@ Returns the remainder of decimal division of 'n' by 'm'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -92,10 +92,10 @@ Returns 'n' raised to the power of 'm'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Function is evaluated before the aggregate is executed.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Function is evaluated before the aggregate is executed.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -123,16 +123,17 @@ Power(-10.89, -5) = -6.52920946044017E-06
 
 Returns the Decimal number 'n' rounded to a specific number of 'fractional digits'.  
 The round method applied depends on where the function is used:  
-- In <b>expressions in client-side and server-side logic</b>, applies the method round half to even (rounds to the nearest integer, 0.5 rounds to the nearest even integer).  
-- In aggregates that query <b>SQL Server or Oracle databases</b>, applies the method round half away from 0 (rounds to the nearest integer, 0.5 rounds the number further away from 0).  
-- In aggregates that query <b>iDB2 databases</b>, applies the method round half up (rounds to the nearest integer, 0.5 rounds up).  
+
+* In <b>expressions in client-side and server-side logic</b>, applies the method round half to even (rounds to the nearest integer, 0.5 rounds to the nearest even integer).  
+* In aggregates that query <b>SQL Server or Oracle databases</b>, applies the method round half away from 0 (rounds to the nearest integer, 0.5 rounds the number further away from 0).  
+* In aggregates that query <b>iDB2 databases</b>, applies the method round half up (rounds to the nearest integer, 0.5 rounds up).  
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -180,10 +181,10 @@ Returns the square root of the Decimal number 'n'.
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Function is evaluated before the aggregate is executed.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Function is evaluated before the aggregate is executed.
 
 ### Parameters
 
@@ -207,10 +208,10 @@ Returns the Decimal number 'n' truncated to integer removing the decimal part of
 
 Available in:  
 
-  * Server-side logic: Yes
-  * Client-side logic: Yes
-  * Database: Can be used with attributes in aggregates.
-  * Local Storage: Can be used with attributes in aggregates.
+* Server-side logic: Yes
+* Client-side logic: Yes
+* Database: Can be used with attributes in aggregates.
+* Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
 
@@ -228,4 +229,3 @@ Type: Decimal
 Trunc(-10.89) = -10
 Trunc(7.51) = 7
 ```
-

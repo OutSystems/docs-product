@@ -1,0 +1,11 @@
+---
+extends: existence
+message: Using '%s' may come across as condescending.
+link: https://css-tricks.com/words-avoid-educational-writing/
+level: error
+ignorecase: true
+tokens:
+  - obvious
+  - obviously
+  - of course
+  - everyone knows

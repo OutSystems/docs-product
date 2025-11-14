@@ -49,9 +49,9 @@ In this example, we create a dropdown tags search for a list of employees and a 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Dropdown Search widget into the Main Content area of your application's screen.
@@ -62,7 +62,7 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
 1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant database entity and click **Select**.
 
-    In this example, the **Sample_Employee** entity is selected. 
+    In this example, the **Sample_Employee** entity is selected.
 
     ![Selecting the Sample_Employee database entity for the Dropdown Tags widget](images/dropdowntags-source-ss.png "Selecting Database Entity for Dropdown Tags")
 
@@ -78,17 +78,17 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
     ![Creating a new client action for the Dropdown Tags widget from the properties tab](images/dropdowntags-handler-ss.png "Creating New Client Action for Dropdown Tags")
 
-1. Add the relevant logic to the client action. 
+1. Add the relevant logic to the client action.
 
     In this example:
-    
+
     1. Add a Message to the client action.
     1. Add the following logic to the expression editor:
 
         `CurrentList.Length`
 
-    1. Click **Close**. 
-    
+    1. Click **Close**.
+
         This displays the number of selected items.
 
         ![Adding logic to display the number of selected items in the Dropdown Tags client action](images/dropdowntags-message-ss.png "Adding Logic to Client Action in Dropdown Tags")
@@ -119,7 +119,7 @@ After following these steps and publishing the module, you can test the pattern 
 |StartingSelection.Description (Text): Optional| Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|
 |Prompt (Text): Optional|Defines the text to display when there are no items selected and to serve as an empty value.<br/><br/>The default message is: **Select...** |
 |OptionalConfigs (DropdownTagsOptionalConfigs): Optional | Extra configurations.|
-|OptionalConfigs.IsDisabled (Boolean): Optional | Set as True to disable the Dropdown. the default value is False.| 
+|OptionalConfigs.IsDisabled (Boolean): Optional | Set as True to disable the Dropdown. the default value is False.|
 |OptionalConfigs.NoResultsText (Text): Optional|Defines the text that is displayed when there are no results to show.<br/><br/>The default message is: **There are no options to show.**|
 |OptionalConfigs.SearchPrompt (Text): Optional| Defines the prompt text that appears in the search input. <br/><br/>The default message is: **Search...**|
 |OptionalConfigs.NoOptionsText (Text): Optional |Defines the message that displays in the Dropdown list when there are no options available.<br/><br/>The default message is: **There are no options to show.**|
@@ -130,7 +130,20 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Dropdown Tags
 
-|Event| Description| 
+|Event| Description|
 |---|---|
-|Initialized: Optional | Event triggered after the DropdownTags instance is ready. | 
-|OnChanged: Mandatory| Event triggered each time an option is selected.| 
+|Initialized: Optional | Event triggered after the DropdownTags instance is ready. |
+|OnChanged: Mandatory| Event triggered each time an option is selected.|
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+**Note:**  
+When using the **NVDA** screen reader, users may notice that pressing **Esc** twice is required to close the dropdown.  
+This is the expected behavior in NVDA, as the first **Esc** exits focus mode and the second collapses the control.  
+For more details, see the [NVDA GitHub discussion on this behavior](https://github.com/nvaccess/nvda/issues/4428).
+
+</div>

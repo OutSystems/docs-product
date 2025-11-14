@@ -54,7 +54,7 @@ For each Role in your module, OutSystems provides the following Actions:
 
 `Revoke<role_name>Role`
 :   Denies access for a specific end user to a specific role.  
-    This action is not available for the System Roles **Anonymous** and **Registered**. 
+    This action is not available for the System Roles **Anonymous** and **Registered**.
 
 Role Actions are available in the **Logic** tab, within the **Roles** folder, under the corresponding Role, and can simply be dropped into your action flow.
 

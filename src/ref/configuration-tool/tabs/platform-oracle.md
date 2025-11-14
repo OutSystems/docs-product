@@ -27,13 +27,13 @@ In the **Platform** tab, once you set the **Database Provider** property to
 
 This area contains general configurations for the Oracle database.
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-Naming Method | The method to connect to the Oracle database server. | `Service Name`  
-Host | The hostname or IP address to the database server.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost`
-Port | The port on which the database service listens.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521`
-Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. |
-TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. |
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| Naming Method | The method to connect to the Oracle database server. | `Service Name` |
+| Host | The hostname or IP address to the database server.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost` |
+| Port | The port on which the database service listens.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521` |
+| Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | |
+| TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. | |
 
 For advanced settings, click on the **Advanced Settings** link.
 
@@ -98,22 +98,22 @@ OutSystems supports Unicode for Oracle databases. To start developing with suppo
 
 The Administrator section allows you to configure the database user that manages the platform. This user owns the OutSystems metamodel tables, views, and indexes.
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-User | Name of the user that's the owner of OutSystems metamodel tables. | `OSADMIN`  
-Password | Password for the user. |  
-Tablespace | Table space holding system tables. | `OSSYS`  
-Index Tablespace | Table space holding all indexes of the platform. | `OSIDX`  
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| User | Name of the user that's the owner of OutSystems metamodel tables. | `OSADMIN` |
+| Password | Password for the user. | |
+| Tablespace | Table space holding system tables. | `OSSYS` |
+| Index Tablespace | Table space holding all indexes of the platform. | `OSIDX` |
   
 ## Runtime section
 
 In this section you specify the login for the user that owns user tables.
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-User | Name of the user that's the owner of tables created in the development environment. | `OSRUNTIME`  
-Password | Password for the user. |
-Tablespace | Table space holding the tables created in the development environment. | `OSUSR`
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| User | Name of the user that's the owner of tables created in the development environment. | `OSRUNTIME` |
+| Password | Password for the user. | |
+| Tablespace | Table space holding the tables created in the development environment. | `OSUSR` |
 
 ## Create/Upgrade Database button
 

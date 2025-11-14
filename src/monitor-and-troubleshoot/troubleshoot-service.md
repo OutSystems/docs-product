@@ -43,7 +43,7 @@ To change the amount of information that is logged for requests to all Service A
 
 1. In Service Center console, go to the **Factory** section.
 1. In the **Modules** tab, find your module and click the module's name to go to the details page.
-1. In the **Operations** tab, set the Service Actions logging level to the desired value (`Default`, `Troubleshoot` or `Full`).    
+1. In the **Operations** tab, set the Service Actions logging level to the desired value (`Default`, `Troubleshoot` or `Full`).
 
     ![Instructions for changing the Service Actions logging level in the OutSystems Service Center](images/service-action-log-level-sc.png "Changing Service Actions Log Level")
 

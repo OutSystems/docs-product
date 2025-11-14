@@ -19,7 +19,7 @@ coverage-type:
 
 # Disable Registered Role Required error logs
 
-It's common to find the error `Registered Role Required` in the error logs. This exception happens when an expired user session requests any action that requires a registered role. A registered role refers to any non-anonymous role, including custom roles. Considering the asynchronous nature of reactive and mobile apps that contain multiple actions, these errors can multiply in the error logs. Sometimes, OutSystems developers consider these messages irrelevant and prefer to disable them. This article explains why these error messages happen and how to disable them. 
+It's common to find the error `Registered Role Required` in the error logs. This exception happens when an expired user session requests any action that requires a registered role. A registered role refers to any non-anonymous role, including custom roles. Considering the asynchronous nature of reactive and mobile apps that contain multiple actions, these errors can multiply in the error logs. Sometimes, OutSystems developers consider these messages irrelevant and prefer to disable them. This article explains why these error messages happen and how to disable them.
 
 ![Example of Registered Role Required error messages in the OutSystems error log.](images/disable-registered-role-error-sc.png "Screenshot of the Registered Role Required error in OutSystems logs")
 
@@ -31,12 +31,11 @@ The client logic is usually prepared to receive a **NotRegistered Exception** (o
 
 However, these apps might have many actions that are executed asynchronously. For example, if a screen contains more than 5 data actions and the screen is refreshed, each of these requests generates 2 errors in the logs. This might lead to log pollution.
 
-
 ## Procedure
 
 <div class="info" markdown="1">
 
-This feature is only available in Platform Server 11.21.0 and newer versions. When it's enabled, it affects all reactive and mobile apps once they're re-published. 
+This feature is only available in Platform Server 11.21.0 and newer versions. When it's enabled, it affects all reactive and mobile apps once they're re-published.
 
 </div>
 
@@ -48,8 +47,8 @@ Please follow these steps to disable the **Registered Role Required** error logs
 
     ![Screenshot showing the Factory Configuration setting to disable Registered Role Required error logs in OutSystems.](images/disable-registered-role-error.png "Factory Configuration option to disable Registered Role Required error logs")
 
-1. Create a solution in Service Center, including all reactive and mobile apps with corresponding dependencies. Check the option **Publish with full compilations** and publish the solution. 
+1. Create a solution in Service Center, including all reactive and mobile apps with corresponding dependencies. Check the option **Publish with full compilations** and publish the solution.
 
-This toggle will disable the creation of these error logs when requests reach the server. It also disables the logging of these errors by exception handlers. 
+This toggle will disable the creation of these error logs when requests reach the server. It also disables the logging of these errors by exception handlers.
 
 You can also disable the client-side errors by setting **Log Error = No** in all exception handlers that might catch **NotRegistered** exceptions. But this isn't an elegant solution and you might suppress information about other relevant exceptions. Therefore, we implemented this alternative solution to turn off the logging of **Registered role required** errors only, even when log error is set to **Yes**. If a NotRegistered exception is caught by a **NotRegistered**, **SecurityException**, or **AllException** handler, the error isn't logged. Every other type of error is still logged.

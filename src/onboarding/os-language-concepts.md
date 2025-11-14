@@ -41,7 +41,7 @@ There is also a downloadable compact PDF of this content:
 
 | Process Actions | Description                                | Traditional |
 |-----------------|--------------------------------------------|-------------|
-| Launch&ltProcess&gt | Explicitly launch an instance of a process |             |
+| Launch&lt;Process&gt; | Explicitly launch an instance of a process |             |
 
 | Timer Actions | Description                                    | Traditional |
 |---------------|------------------------------------------------|-------------|
@@ -196,4 +196,3 @@ There is also a downloadable compact PDF of this content:
 | Application (.oap) | Groups of Modules and Extensions for storage and staging between Environments.  Unit of automated deployment across Environments/Stages in Lifetime. | |
 | Module (.oml) | Project with UI, Logic, Data, Processes, Security Rules, etc. | Web Application Project |
 | Extension (.xif) | Extension of OutSystems Platform capabilities written in C# | Class Library Project |
-

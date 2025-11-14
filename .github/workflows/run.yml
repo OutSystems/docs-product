@@ -7,7 +7,7 @@ on:
     - master
     - main
   pull_request:
-    types: [opened, edited, synchronize, reopened, labeled, unlabeled]
+    types: [opened, edited, synchronize, reopened, labeled, unlabeled, ready_for_review, converted_to_draft]
 
 concurrency:
   group: run-${{ github.ref }}
@@ -41,6 +41,15 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Check auto-merge
+      uses: reitermarkus/automerge@v2
+      if: vars.ENABLE_AUTO_MERGE && steps.PR.outputs.number != ''
+      with:
+        pull-request: ${{ steps.PR.outputs.number }}
+        token: ${{ secrets.TOOLS_PAT }}
+        do-not-merge-labels: never-merge,do not merge
+        required-labels: auto-merge
+
     outputs:
       changed-files: ${{ steps.changed-files.outputs.files }}
       pull-request: ${{ steps.PR.outputs.number }}
@@ -65,6 +74,13 @@ jobs:
     with:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
       files: ${{ needs.pr-info.outputs.changed-files }}
+  
+  style-guide-validation:
+    name: Run style guide validation
+    needs: [pr-info]
+    if: needs.pr-info.outputs.changed-files != ''
+    uses: ./.github/workflows/style-guide-validation.yml
+    secrets: inherit
   
   auto-fill:
     if: github.event_name == 'pull_request'

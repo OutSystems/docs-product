@@ -42,16 +42,16 @@ This example demonstrates how to change the location of a map marker and get the
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Map widget into the Main Content area of your application's screen.
 
     ![Dragging the Map widget from the toolbox onto the main content area of the application screen](images/map-drag-ss.png "Dragging Map Widget onto the Screen")
 
-1. On the **Properties** tab, enter an API key so that the "For development purposes" watermark is removed. 
+1. On the **Properties** tab, enter an API key so that the "For development purposes" watermark is removed.
 
     ![Entering an API key in the Properties tab to remove the development watermark from the Map widget](images/map-apikey-ss.png "Entering API Key for Map Widget")
 
@@ -59,7 +59,7 @@ This example demonstrates how to change the location of a map marker and get the
 
     ![Dragging the Marker block onto the Drag markers here area of the Map widget screen](images/map-marker-ss.png "Placing Marker Block on the Map")
 
-1. On the **Properties** tab, define the Marker's initial coordinates in the **Position** property. 
+1. On the **Properties** tab, define the Marker's initial coordinates in the **Position** property.
 
     ![Defining the initial coordinates of the Marker in the Position property on the Properties tab](images/map-position-ss.png "Defining Marker's Initial Coordinates")
 
@@ -67,7 +67,7 @@ This example demonstrates how to change the location of a map marker and get the
 
     ![Setting AllowDrag to True in the OptionalConfigs to enable dragging of the map marker](images/map-draggable-ss.png "Enabling Marker Dragging")
 
-1.  To get the new marker coordinates, drag the **Marker Event** block inside the **MarkerEvents** placeholder and on the **Properties** tab, set the **EventName** property as **DragEnd**.
+1. To get the new marker coordinates, drag the **Marker Event** block inside the **MarkerEvents** placeholder and on the **Properties** tab, set the **EventName** property as **DragEnd**.
 
     ![Dragging the Marker Event block inside the MarkerEvents placeholder and setting the EventName property to DragEnd](images/map-markerevent-ss.png "Setting Up Marker DragEnd Event")
 
@@ -79,7 +79,7 @@ This example demonstrates how to change the location of a map marker and get the
 
     ![Creating a handler for the DragEnd event to assign new marker coordinates to the Latitude and Longitude variables](images/map-handler-ss.png "Creating Event Handler for New Coordinates")
 
-1. Add two expression widgets to the screen with the **Latitude** and **Longitude** variables to display the marker coordinates in your application. 
+1. Add two expression widgets to the screen with the **Latitude** and **Longitude** variables to display the marker coordinates in your application.
 
     ![Adding expression widgets to the screen to display the new Latitude and Longitude marker coordinates](images/map-expression-ss.png "Displaying New Marker Coordinates")
 

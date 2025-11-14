@@ -18,7 +18,6 @@ coverage-type:
 
 # DbCleaner API
 
-
 The DbCleaner API provides functionality for freeing up database space. This is accomplished through actions that enable you to:
 
 * drop database tables/columns corresponding to Entities/Attributes that are no longer in use by any of your applications
@@ -35,32 +34,32 @@ To use this API simply reference the DbCleaner_API module using the References W
 To use this API, there are the following requirements:
 
 * The module invoking this API needs to have Service Center set as User Provider module.
-* The logged user needs to have 'Change & Deploy' permissions, or the 'Administrator' built-in role depending on the action being invoked. Check the action documentation to learn more. 
+* The logged user needs to have 'Change & Deploy' permissions, or the 'Administrator' built-in role depending on the action being invoked. Check the action documentation to learn more.
 
 When deleting multi-tenant Entities, or Static Entities with translations, the 9.0.0.23 version of this API requires republishing the modules using the deleted tables or columns. This implies republishing the module that had the Entity or Attribute and all the modules that reference it.
 
 ## Summary
 
-Action | Description
----|---
-[Attribute_DropColumn](<#Attribute_DropColumn>) | Physically deletes the database table column associated with the specified entity attribute.  If the entity attribute still exists in a module’s meta model, the delete operation will not be performed.<br/>The logged user needs to have the 'Administrator' built-in role.
-[Attribute_ListDeleted](<#Attribute_ListDeleted>) | Returns a list of attributes, with their information, that have been deleted from module’s meta model but are still physically present in the database.<br/>The logged user needs to have the 'Administrator' built-in role.
-[Entity_DropTable](<#Entity_DropTable>) | Physically deletes the database table associated with the specified entity.  If the entity still exists in a module’s meta model, the delete operation will not be performed.<br/>The logged user needs to have the 'Administrator' built-in role.
-[Entity_ListDeleted](<#Entity_ListDeleted>) | Returns a list of entities, with their information, that have been deleted from module’s meta model but are still physically present in the database.<br/>The logged user needs to have the 'Administrator' built-in role.
-[ModuleVersion_Delete](<#ModuleVersion_Delete>) | Deletes the specified module version of the specified module from the database.<br/>The logged user needs to have 'Change & Deploy' permissions.
-[ModuleVersion_DeleteAll](<#ModuleVersion_DeleteAll>) | Deletes module versions that were published before the specified date and time. This action does not delete the module version that is currently published or module versions used in tagged versions of applications or solutions.<br/>The logged user needs to have 'Change & Deploy' permissions.
-[ModuleVersion_ListOldest](<#ModuleVersion_ListOldest>) | Returns a list of module versions that are stored in the database and that were published before the specified date and time. This action does not return the module version that is currently published or module versions used in tagged versions of applications or solutions.<br/>The logged user needs to have 'Change & Deploy' permissions.
+| Action | Description |
+| ---|--- |
+| [Attribute_DropColumn](<#Attribute_DropColumn>) | Physically deletes the database table column associated with the specified entity attribute.  If the entity attribute still exists in a module’s meta model, the delete operation will not be performed.<br/>The logged user needs to have the 'Administrator' built-in role. |
+| [Attribute_ListDeleted](<#Attribute_ListDeleted>) | Returns a list of attributes, with their information, that have been deleted from module’s meta model but are still physically present in the database.<br/>The logged user needs to have the 'Administrator' built-in role. |
+| [Entity_DropTable](<#Entity_DropTable>) | Physically deletes the database table associated with the specified entity.  If the entity still exists in a module’s meta model, the delete operation will not be performed.<br/>The logged user needs to have the 'Administrator' built-in role. |
+| [Entity_ListDeleted](<#Entity_ListDeleted>) | Returns a list of entities, with their information, that have been deleted from module’s meta model but are still physically present in the database.<br/>The logged user needs to have the 'Administrator' built-in role. |
+| [ModuleVersion_Delete](<#ModuleVersion_Delete>) | Deletes the specified module version of the specified module from the database.<br/>The logged user needs to have 'Change & Deploy' permissions. |
+| [ModuleVersion_DeleteAll](<#ModuleVersion_DeleteAll>) | Deletes module versions that were published before the specified date and time. This action does not delete the module version that is currently published or module versions used in tagged versions of applications or solutions.<br/>The logged user needs to have 'Change & Deploy' permissions. |
+| [ModuleVersion_ListOldest](<#ModuleVersion_ListOldest>) | Returns a list of module versions that are stored in the database and that were published before the specified date and time. This action does not return the module version that is currently published or module versions used in tagged versions of applications or solutions.<br/>The logged user needs to have 'Change & Deploy' permissions. |
 
-Structure | Description
----|---
-[AttributeInfo](<#Structure_AttributeInfo>) | Information about a specific entity attribute.
-[EntityInfo](<#Structure_EntityInfo>) | Information about a specific entity.
-[ModuleInfo](<#Structure_ModuleInfo>) | Information about a specific module.
-[ModuleVersionInfo](<#Structure_ModuleVersionInfo>) | Information about a specific module version.
+| Structure | Description |
+| ---|--- |
+| [AttributeInfo](<#Structure_AttributeInfo>) | Information about a specific entity attribute. |
+| [EntityInfo](<#Structure_EntityInfo>) | Information about a specific entity. |
+| [ModuleInfo](<#Structure_ModuleInfo>) | Information about a specific module. |
+| [ModuleVersionInfo](<#Structure_ModuleVersionInfo>) | Information about a specific module version. |
 
-Static Entity | Description
----|---
-[ModuleType](<#StaticEntity_ModuleType>) | Types of modules.
+| Static Entity | Description |
+| ---|--- |
+| [ModuleType](<#StaticEntity_ModuleType>) | Types of modules. |
 
 ## Actions
 
@@ -69,13 +68,13 @@ Static Entity | Description
 Physically deletes the database table column associated with the specified entity attribute.  If the entity attribute still exists in a module’s meta model, the delete operation will not be performed and the reason for failure will be recorded in the platform logs.  
 The logged user needs to have the 'Administrator' built-in role.
 
-*Inputs*
+_Inputs_
 
 AttributeId
 :   Type: mandatory, Integer.  
     The attribute identifier.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -86,7 +85,7 @@ Success
 Returns a list of attributes, with their information, that have been deleted from module’s meta model but are still physically present in the database.  
 The logged user needs to have the 'Administrator' built-in role.
 
-*Outputs*
+_Outputs_
 
 DeletedAttributes
 :   Type: [AttributeInfo](<#Structure_AttributeInfo>) List.  
@@ -97,13 +96,13 @@ DeletedAttributes
 Physically deletes the database table associated with the specified entity.  If the entity still exists in a module’s meta model, the delete operation will not be performed and the reason for failure will be recorded in the platform logs.  
 The logged user needs to have the 'Administrator' built-in role.
 
-*Inputs*
+_Inputs_
 
 EntityId
 :   Type: mandatory, Integer.  
     The entity identifier.
 
-*Outputs*
+_Outputs_
 
 Success
 :   Type: Boolean.  
@@ -114,7 +113,7 @@ Success
 Returns a list of entities, with their information, that have been deleted from module’s meta model but are still physically present in the database.  
 The logged user needs to have the 'Administrator' built-in role.
 
-*Outputs*
+_Outputs_
 
 DeletedEntities
 :   Type: [EntityInfo](<#Structure_EntityInfo>) List.  
@@ -125,7 +124,7 @@ DeletedEntities
 Deletes the specified module version of the specified module from the database.  
 The logged user needs to have 'Change & Deploy' permissions.
 
-*Inputs*
+_Inputs_
 
 ModuleVersionId
 :   Type: mandatory, Integer.  
@@ -140,7 +139,7 @@ ModuleId
 Deletes module versions that were published before the specified date and time. This action does not delete the module version that is currently published or module versions used in tagged versions of applications or solutions.  
 The logged user needs to have 'Change & Deploy' permissions.
 
-*Inputs*
+_Inputs_
 
 OlderThan
 :   Type: mandatory, Date Time.  
@@ -154,7 +153,7 @@ MaxNumberOfVersions
 :   Type: optional, Integer.  
     The maximum number of versions to get. If not specified, deletes the oldest 100 module versions. Set to 0 (zero) to get all the module versions.
 
-*Outputs*
+_Outputs_
 
 HasMoreVersions
 :   Type: Boolean.  
@@ -165,7 +164,7 @@ HasMoreVersions
 Returns a list of module versions that are stored in the database and that were published before the specified date and time. This action does not return the module version that is currently published or module versions used in tagged versions of applications or solutions.  
 The logged user needs to have 'Change & Deploy' permissions.
 
-*Inputs*
+_Inputs_
 
 OlderThan
 :   Type: mandatory, Date Time.  
@@ -183,7 +182,7 @@ MaxNumberOfVersions
 :   Type: optional, Integer.  
     The maximum number of versions to get. If not specified, returns the oldest 100 module versions. Set to 0 (zero) to get all the module versions
 
-*Outputs*
+_Outputs_
 
 ModuleVersions
 :   Type: [ModuleVersionInfo](<#Structure_ModuleVersionInfo>) List.  
@@ -193,14 +192,13 @@ HasMoreVersions
 :   Type: Boolean.  
     Returns True if there are more module versions than the ones listed.
 
-
 ## Structures
 
 ### AttributeInfo { #Structure_AttributeInfo }
 
 Information about a specific entity attribute.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
@@ -222,7 +220,7 @@ EntityInfo
 
 Information about a specific entity.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
@@ -244,7 +242,7 @@ ModuleInfo
 
 Information about a specific module.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
@@ -266,7 +264,7 @@ ModuleTypeId
 
 Information about a specific module version.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
@@ -288,26 +286,21 @@ ModuleInfo
 :   Type: [ModuleInfo](<#Structure_ModuleInfo>).  
     Information about the module to which the module version belongs
 
-
 ## Static Entities
 
 ### ModuleType { #StaticEntity_ModuleType }
 
 Types of modules.
 
-*Attributes*
+_Attributes_
 
 Id
 :   Type: Integer.  
-    
 
 Label
 :   Type: Text (50).  
-    
 
-*Records*
+_Records_
 
 * Extension
 * Espace
-
-

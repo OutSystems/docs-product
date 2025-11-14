@@ -32,7 +32,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
     ![Checkbox for setting administrator as local administrator in LifeTime authentication settings](images/add-local-admin-lt.png "Setting Administrator as Local Administrator")
 
-    The existing administrator is migrated and a local administrator is automatically created. For more information about creating a local administrator account, see [Adding a local administrator](#adding-a-local-administrator). 
+    The existing administrator is migrated and a local administrator is automatically created. For more information about creating a local administrator account, see [Adding a local administrator](#adding-a-local-administrator).
 
 1. Enter the following details according to the OIDC provider you are using:
 
@@ -42,7 +42,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
         **Note**: Click the **Test** button to verify the well-known URL. This action will also add some recommended scopes required for OIDC connection in the future.
 
-   * **Client ID Type**: Select one of the following:
+    * **Client ID Type**: Select one of the following:
 
         * Single Client ID for Desktop and Web tools
 
@@ -51,41 +51,40 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
             If you choose the **Use a different Client Ids for Desktop and Web tools** option, enter the following:
 
             * **Client ID for Desktop tools**: Native Application’s Client ID
-           
+
             * **Client ID for Web tools**: Web Application’s Client ID
 
     * **Client ID**: Client ID for both desktop and web tools.
-        
+
     * **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
   
     <div class="warning" markdown="1">
-      
+
     For Microsoft Entra and OKTA you must use ``preferred_username`` as the **Username Claim** value.
-         
+
     </div>
-       
+
     * **Scopes**: Clicking the **Test** button after you enter the well-known configuration URL fetches all the scopes supported and enabled in the identity provider. The scopes are displayed on the **Configuration details** section. Any required scope for the user authentication process can be added and saved for the configuration.
   
-          
        **Note:** Please follow these guidelines when selecting values for scopes:
-       
-       * Select your value from the provided list of acceptable values in Configuration details section, ensuring that it matches exactly.
-       
-       * Avoid entering values that are not included in the provided list.
-       
-       * Pay attention to letter case (uppercase/lowercase) and formatting requirements if specified.
-       
+
+        * Select your value from the provided list of acceptable values in Configuration details section, ensuring that it matches exactly.
+
+        * Avoid entering values that are not included in the provided list.
+
+        * Pay attention to letter case (uppercase/lowercase) and formatting requirements if specified.
+
        Selecting values outside the provided list may result in errors or data inconsistencies.
-       
+
         **Default Selected Scopes**:
           If the following scopes are supported by identity providers then they are added by default and cannot be removed:
-       
+
         * openid
-       
+
         * email
-       
+
         * profile
-       
+
          **Note**: If **offline_access** is supported and enabled in the Identity provider, this is also added by default. However, this scope can be removed if not needed.
 
        These scopes provide basic user information that is necessary for authentication and initial authorization.
@@ -96,34 +95,40 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
         **Recommended Additional Scopes**:
                     The following are some recommendations for additional scope selection based on commonly used identity providers:
 
-         *  **Microsoft Entra**:
+        * **Microsoft Entra**:
                     For Microsoft Entra, it is recommended to add the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
 
-         *  **Okta**:
+        * **Okta**:
                     For Okta, it is recommended to add the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.
-                        
-         *   **AD FS**:
+
+        * **AD FS**:
                     For AD FS, it is recommended to add the **allatclaims** scope. This scope requests the access token claims in the identity token.
 
         **Note**: The recommended additional scopes mentioned above are not exhaustive, and users should consult their identity provider's documentation for specific scope requirements.
-       
+
         ![LifeTime authentication settings interface displaying scope configuration options for OpenID Connect](images/auth-settings-scope-lt.png "Configuring Scopes in Authentication Settings")
 
- 1. Click **Save Changes**.
+1. Click **Save Changes**.
 
- 1. Click **Activate**.
+1. Click **Activate**.
 
-    The **Activate OpenID Connect provider** pop-up is displayed. 
+    The **Activate OpenID Connect provider** pop-up is displayed.
 
-     * Enter the **Client Secret**.
+    * Enter the **Client Secret**.
 
-     * Select the **Clear all local user’s passwords now (Recommended)** checkbox.
+    * Select the **Clear all local user’s passwords now (Recommended)** checkbox.
 
         For more information about clearing user’s passwords, see [Clearing built-in password credentials](#clearing-built-in-password-credentials).
 
-     * Click **Activate and Log Out**. 
+    * Click **Activate and Log Out**.
 
     ![Log out confirmation dialog in LifeTime after activating OpenID Connect provider](images/log-out-lt.png "Log Out Confirmation")
+
+    <div class="info" markdown="1">
+
+    For Microsoft Entra, when a new **Client Secret** is generated (due to expiration), you must delete the current OIDC configuration and recreate it entirely.
+
+    </div>
 
 Once activated, you are logged out of the current session and redirected to the login page of the currently active OIDC provider login page.
 
@@ -151,7 +156,7 @@ When creating a new user in LifeTime, if an external IdP configuration is active
 
 ### Adding a local administrator
 
-If the external IdP is unavailable or has configuration errors, the local administrator is responsible for configuring user profiles. With the external IDP activated, only the local administrator can log into the platform using a username and password. 
+If the external IdP is unavailable or has configuration errors, the local administrator is responsible for configuring user profiles. With the external IDP activated, only the local administrator can log into the platform using a username and password.
 
 You can create a local administrator before or after adding a new OIDC connection. It is recommended that you add at least one local administrator before activating an OIDC provider. This ensures that there is always a fallback authentication option for the user to log into the platform.
 
@@ -169,11 +174,11 @@ To add a local administrator, follow these steps:
 
     ![LifeTime console showing the option to add a local administrator](images/add-localadmin-lt.png "Adding a Local Administrator in LifeTime")
 
-1. Add the relevant details and click **Create**. 
+1. Add the relevant details and click **Create**.
 
     ![Form to add a new local administrator in LifeTime with fields for details](images/new-localadmin-lt.png "New Local Administrator Details")
 
-Once you add the local administrator, you can log in using `<domain>/LifeTimeSDK/Internal_Login.aspx?`. 
+Once you add the local administrator, you can log in using `<domain>/LifeTimeSDK/Internal_Login.aspx?`.
 
 ### Clearing built-in password credentials
 
@@ -190,6 +195,3 @@ Once the OpenID Connect provider is activated, the fallback of using the built-i
     If you don't clear the passwords when activating the OIDC provider, a warning message displays on the **Authentication Settings** screen. Click **Clear passwords now**.
 
     ![Warning message and button to clear built-in user passwords in LifeTime](images/clear-pass-lt.png "Clearing Built-in Password Credentials")
-  
-
-

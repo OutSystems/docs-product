@@ -20,7 +20,6 @@ topic:
 
 # Customize REST API Responses
 
-
 OutSystems allows you to customize the information sent in responses when exposing a REST API.
 
 For that, do the following:

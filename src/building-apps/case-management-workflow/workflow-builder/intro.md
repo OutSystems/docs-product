@@ -31,7 +31,7 @@ With Workflow Builder you can create apps that automate processes, improve effic
 
 During the development process, you can reuse data (OutSystems Entities) from existing databases in your development environment. Ask your IT Admin about these. You can test the generated app using different sample users, and iterate it until you're sure it follows the process rules and needs for the different types of users involved.
 
-When you finish developing, the role of IT managers is to actively lead and manage the entire app lifecycle, deployment to QA/testing, then to production environments, and also to provide access to all your end users. 
+When you finish developing, the role of IT managers is to actively lead and manage the entire app lifecycle, deployment to QA/testing, then to production environments, and also to provide access to all your end users.
 
 As business needs keep changing, you can update apps you have in production to reflect changes to the business process. Perform the needed changes, test them, and ask your IT manager to publish the new version.
 

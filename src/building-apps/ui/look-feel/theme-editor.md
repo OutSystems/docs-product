@@ -55,7 +55,7 @@ Select one of the six font types and change the base size of your font.
 
 ![Screenshot displaying font type and size customization in Theme Editor](images/theme-editor-03-ss.png "Font Customization in Theme Editor")
 
-Font 
+Font
 :   Change the font type used in your app.
 
 Font Size

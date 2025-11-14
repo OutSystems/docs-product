@@ -41,16 +41,16 @@ You can use the Video UI pattern to embed a native video player into your applic
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Video widget into the Main Content area of your application's screen.
 
     ![Dragging the Video widget from the toolbox into the main content area of an application screen](images/video-3-ss.png "Dragging Video Widget to Main Content")
- 
-1. On the **Properties** tab, set the **VideoURL** property to the source video file you want to embed in your app. 
+
+1. On the **Properties** tab, set the **VideoURL** property to the source video file you want to embed in your app.
 
     * If using an external source file, insert the file URL.
 
@@ -61,7 +61,7 @@ You can use the Video UI pattern to embed a native video player into your applic
         1. On the **Data** tab, right-click the **Resources** folder and select **Import Resource**.
 
             ![Import Resource option in the Data tab for adding a local video file](images/video-5-ss.png "Importing Video Resource")
-        
+
         1. Browse and select the video file you want to add and click **Open**.
 
         1. On the **Resource** properties tab, from the **Deploy Action** drop-down, select **Deploy to Target Directory**.
@@ -69,11 +69,11 @@ You can use the Video UI pattern to embed a native video player into your applic
             ![Resource properties tab with Deploy Action dropdown set to Deploy to Target Directory](images/video-6-ss.png "Setting Deploy Action for Video Resource")
 
         1. On the **Interface** tab, from the **Widget Tree**, select the Video pattern.
-       
+
         1. In the **VideoURL** property, enter the runtime path of the video file.
 
             ![VideoURL property field with the runtime path of the local video file entered](images/video-7-ss.png "Entering Runtime Path for Video")
-    
+
             **Tip**: You can copy the runtime path from the Resource Runtime Path property tab.
 
             ![Resource Runtime Path property tab showing the path to copy for the VideoURL](images/video-8-ss.png "Copying Runtime Path from Resource Properties")
@@ -82,8 +82,8 @@ You can use the Video UI pattern to embed a native video player into your applic
 
     ![Video Properties tab with optional settings for height, width, and audio](images/video-9-ss.png "Video Properties Tab")
 
-After following these steps and publishing the module, you can test the pattern in your app. 
-       
+After following these steps and publishing the module, you can test the pattern in your app.
+
 ## Properties
 
 | Property                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |

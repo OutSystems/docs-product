@@ -60,7 +60,7 @@ The Front-end resource usage is distributed through the CPU, Memory and Network 
 
 ![Diagram of the Deployment Controller server role in OutSystems infrastructure, detailing its responsibilities and resource usage.](images/server-roles_1.png "Deployment Controller Server Role")
 
-The ***Deployment Controller*** handles the application compilation for deployment in Front-ends and license validation.
+The _**Deployment Controller**_ handles the application compilation for deployment in Front-ends and license validation.
 Each of the following environments must have one server with this role:
 
 * **Development**
@@ -94,13 +94,11 @@ menu in the Administration top menu.
 
 The resource consumption of the Scheduler role happens at CPU level only and depends on the timer and BPT logic.
 
-
 ## More Information
 
 To learn more about how to set up your OutSystems Platform check the [Designing OutSystems infrastructures guide](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures).
 
 <div class="info" markdown="1">
-
 
 **Important:** The information in this article applies only to OutSystems Platform on-premises or private cloud deployments.
 </div>

@@ -30,5 +30,3 @@ Do the following:
 
 1. Run the following command:  
     `ConfigurationTool.exe /CreateUpgradeCacheInvalidationService`
-
-

@@ -54,4 +54,3 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 Every few years the OWASP foundation releases the Top 10 attack vectors in Web Applications.
 Keeping up with these attacks is paramount to understanding what kind of attacks we want to protect our applications with WAF rules.
 You can find more about this in [OWASP](https://owasp.org/www-project-top-ten/).
-

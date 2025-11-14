@@ -39,15 +39,14 @@ To learn more about SQL in OutSystems, check out the following free courses:
 * [SQL Queries](https://www.outsystems.com/training/courses/146/sql-queries/). Write your SQL queries to interact with data in OutSystems.
 * [Getting Started with OutSystems for SQL Developers](https://www.outsystems.com/training/courses/169/getting-started-with-outsystems-for-sql-developers/). Learn how to create a data model, fetch data, and how to use an existing external database in an OutSystems app.
 
-
 </div>
 
 * `Unknown <parameter> parameter in <query>`
 
     You have an SQL query in our application that is using a parameter that no longer exists.
 
-    Do one of the following: 
-    
+    Do one of the following:
+
     * Fix the SQL associated with this query, in order to use an existing parameter.
     * Change the input parameters of the query.
 
@@ -73,8 +72,8 @@ To learn more about SQL in OutSystems, check out the following free courses:
 
     The SQL query has a output structure with a definition containing nested records or lists.
 
-    You have to fix the query output structure by doing one of the following: 
-    
+    You have to fix the query output structure by doing one of the following:
+
     * Use a different structure with no nested elements.
     * Redefine this structure in order to avoid nested Records or Lists.
 
@@ -82,8 +81,8 @@ To learn more about SQL in OutSystems, check out the following free courses:
 
     You have a query that is using inline parameters but their data type is not Text.
 
-    Edit the input parameters of this query and do one of the following: 
-    
+    Edit the input parameters of this query and do one of the following:
+
     * Set the Expand Inline property of the input parameter.
     * Change the data type of this input parameter to Text.
 

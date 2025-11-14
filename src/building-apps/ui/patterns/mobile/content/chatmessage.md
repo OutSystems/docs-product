@@ -20,7 +20,7 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-Applies to Mobile Apps and Reactive Web Apps only
+Applies to Mobile Apps and Reactive Web Apps only.
 
 </div>
 
@@ -28,10 +28,10 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
 
 ![Example of a chat message UI pattern in a conversation post](images/chatmessage-3.png "Chat Message UI Pattern Example")
 
-**How to use the Chat Message UI Pattern**
+## How to use the Chat Message UI pattern
 
 1. In Service Studio, in the Toolbox, search for `Chat Message`.
-  
+
     The Chat Message widget is displayed.
 
     ![Screenshot showing the Chat Message widget in OutSystems Service Studio](images/chatmessage-1-ss.png "Chat Message Widget in Service Studio")
@@ -41,9 +41,9 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Chat Message widget into the Main Content area of your application's screen.
@@ -54,7 +54,7 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
 
 1. Add the relevant content to the placeholders.
 
-    In this example, we add the user avatar to the Image placeholder and text to the Content placeholder. 
+    In this example, we add the user avatar to the Image placeholder and text to the Content placeholder.
 
     ![Adding user avatar and text to the Chat Message widget placeholders](images/chatmessage-4-ss.png "Adding Content to Chat Message")
 
@@ -74,3 +74,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Time (Time): Optional                              | Message timestamp.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | MessageStatus (MessageStatus Identifier): Optional | The status of the current message, for example, sent recieved, read, and hidden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ExtendedClass (Text): Optional                     | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

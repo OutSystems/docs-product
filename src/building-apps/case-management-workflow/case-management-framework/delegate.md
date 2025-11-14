@@ -49,7 +49,6 @@ The following actions from the **CaseServices_API** module allow you to check de
 
 * [Delegation_GetByUser](ref/auto/CaseServices_API.final.md#Delegation_GetByUser)
 
-
 ## Case and Activity actions that check delegations
 
 The following actions from the CaseServices_API module check active delegations:

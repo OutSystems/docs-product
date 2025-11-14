@@ -68,4 +68,3 @@ The extension source files are added as resources of the extension with the foll
 * **Deploy Action**: For the files stored under the `Binaries` folder, this property has the value `Copy to Binaries directory`. For the rest of the files, this property has the value `Ignore`.
 
 For more information about the Deploy Action property, see [Resource Properties](<../../../ref/integration-studio/element-property/resource.md>).
-

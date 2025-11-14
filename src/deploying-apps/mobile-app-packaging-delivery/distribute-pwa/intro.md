@@ -54,7 +54,7 @@ To distribute your app as a PWA, you need:
 
 ## Creating an app and enabling the PWA
 
-Create a mobile app and turn on the toggle **Distribute as PWA** in the app details. 
+Create a mobile app and turn on the toggle **Distribute as PWA** in the app details.
 
 1. Start creating a new app, and in the **New Application** window select **Phone App** or **Tablet App** app template.
 
@@ -71,7 +71,7 @@ Create a mobile app and turn on the toggle **Distribute as PWA** in the app deta
 1. Publish the app.
 
 1. In the app details, under the **Distribute** tab, turn on the toggle **Distribute as PWA**. To locate the **Distribute** tab, go back to the home screen of Service Studio and click your app icon.
-   
+
     ![Toggle switch in OutSystems Service Studio to enable Distribute as PWA option](images/pwa-toggle.png "PWA Distribution Toggle")
 
 **Notes**
@@ -89,7 +89,7 @@ Mobile best practices apply for PWA development as well, particularly about [des
 
 Here is how you can run your PWA. Go to the app details in Service Studio and click **Distribute** tab:
 
-* **Scan the QR code** to open the PWA on your mobile device. 
+* **Scan the QR code** to open the PWA on your mobile device.
 * **Click the link** to open the PWA in a desktop browser.
 
 ![Service Studio screen showing QR code and links to open the PWA on different devices](images/pwa-open-links-ss.png "QR Code and Links for PWA")
@@ -105,7 +105,7 @@ Follow these steps to install and run your PWA on an Android device.
     ![Banner prompt on an Android device to add the app to the home screen](images/pwa-app-install-android.png "Installing PWA on Android")
 
 1. After you see a confirmation that Android added the shortcut to the home screen, open the app like any other app installed from a store. You can uninstall it like any other Android app.
-    
+
     ![Icon of the progressive web app added to the Android home screen](images/pwa-app-android-home.png "PWA on Android Home Screen")
 
 ### PWA in iOS
@@ -115,7 +115,7 @@ Follow these steps to install and run your PWA on an iOS device.
 1. Visit the app URL in Safari.
 
 1. Tap the Share button. The share menu opens.
-   
+
     ![Share button in Safari browser on an iOS device for adding the app to the home screen](images/pwa-share-button-ios.png "Share Button in Safari on iOS")
 
 1. Tap **Add to home screen**. The confirmation screen opens.
@@ -123,13 +123,12 @@ Follow these steps to install and run your PWA on an iOS device.
     ![Options menu in Safari on iOS showing the Add to Home Screen option](images/pwa-share-options-ios.png "Share Options on iOS")
 
 1. In the confirmation screen, tap **Add**.
-    
+
     ![Confirmation dialog in iOS Safari for adding the app to the home screen](images/pwa-ios-share-confirm.png "Confirm Adding to iPhone Home Screen")
 
 1. Your app should now be on the home screen. You can uninstall it like any other iOS app.
-    
-    ![Progressive web app icon displayed on the iOS home screen](images/pwa-app-ios-home.png "PWA Added to iOS Home Screen")
 
+    ![Progressive web app icon displayed on the iOS home screen](images/pwa-app-ios-home.png "PWA Added to iOS Home Screen")
 
 ## Customizing your PWA
 
@@ -144,11 +143,11 @@ You can edit your app name, description, color, and logo through the UI of Servi
 
 ### Prompting users to install PWA in iOS
 
-Use a prompt to tell your users they can install the PWA version of the app. For the iOS devices, try out the community-contributed plugin [Prompt to Install PWA](https://www.outsystems.com/forge/component-overview/8216/prompt-to-install-pwa), or develop a custom solution. 
+Use a prompt to tell your users they can install the PWA version of the app. For the iOS devices, try out the community-contributed plugin [Prompt to Install PWA](https://www.outsystems.com/forge/component-overview/8216/prompt-to-install-pwa), or develop a custom solution.
 
 ![Custom prompt suggesting to install the PWA on an iOS device](images/prompt-pwa-install.png "Prompt to Install PWA on iOS")
 
-Android (Chrome) offers a native experience for the install prompt, so you don't need a plugin. 
+Android (Chrome) offers a native experience for the install prompt, so you don't need a plugin.
 
 ## Using plugins {#plugins}
 
@@ -174,7 +173,6 @@ Having issues with your PWA? Check out [Troubleshooting and known issues](troubl
 ## Learning resources
 
 * [PWAs overview and best practices](https://www.outsystems.com/training/courses/164/pwa-overview-and-best-practices/) is an intermediate course about progressive web apps in OutSystems. Learn more about differences between PWAs and native apps, advantages and challenges, installation and desktop support.
-
 
 ______________________________________________________________
 _QR CODE is a registered trademark of Denso Wave Incorporated._

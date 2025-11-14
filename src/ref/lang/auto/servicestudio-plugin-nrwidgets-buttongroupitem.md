@@ -148,4 +148,3 @@ When you drag the Button Group widget into the Main Content area of your applica
 </tr>
 </tbody>
 </table>
-

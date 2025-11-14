@@ -80,4 +80,3 @@ To log into Integration Studio using an IdP,  follow these steps:
    A new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a pop-up asking the user to **Open Integration Studio**.
 
 1. Click **Open Integration Studio** and complete the login process.
-

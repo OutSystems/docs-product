@@ -37,9 +37,9 @@ The `Invalid Entity` error is issued in the following situations:
     Your entity has more than one Binary Data attribute and this situation is not supported by the database.
 
     Depending on your requirements do one of the following:
-    
+
     * Change the data type of one of these attributes;
-    
+
     * Create a new Entity and move one of these attributes to that new Entity.
 
 * `The only attribute of entity '<entity>' cannot be AutoNumber. Add more attributes to the entity or set  to 'No' the attribute's property 'Is AutoNumber'`
@@ -47,7 +47,7 @@ The `Invalid Entity` error is issued in the following situations:
     You have an Entity with only one Attribute and it is set as sequential (AutoNumber). This situation is not allowed by some of databases supported by OutSystems. This has probably happened because new Entities in OutSystems are created with a default Identifier (which is an AutoNumber attribute), and you still have not added more attributes to your entity.
 
     Depending on your requirements, do one of the following:
-    
+
     * Add more Attributes to your Entity.
     * Change the Is AutoNumber property of the attribute to No.
 

@@ -22,7 +22,6 @@ topic:
 
 When designing the process flow of your process, you can add business rules to validate the execution of your process activities at some stage of their life cycle. This allows you to block or quit the activity instance execution if a specified condition is not verified. This behavior is implemented through **Activity Callback actions**.
 
-
 ## Add an Activity Callback Action
 
 1. In the **module tree**, under **Processes**, right-click on the **Process Activity** element and select the callback action.
@@ -55,7 +54,6 @@ Below is a table containing a summary of which callback actions are executed by 
 | Decision|-|-|-|-|-|
 | End|-|-|-|-|-|
 
-
 ## Designing Activities Callback Actions at Process Level
 
 If you have the same business rules being executed by the callbacks of several process activities (in your process flow), you may move all of the common business rules to a single place: a common callback action at the process level. For that, add the corresponding activity callback action to your process and design the common business rules there.
@@ -65,7 +63,6 @@ If you have the same business rules being executed by the callbacks of several p
 The activities callback actions at the process level are identified by the activity callback action name infixed with the `Activity` word. For example, `On Start` and `On Close` activity callback actions have corresponding common callback actions at the process level: `On Activity Start` and `On Activity Close`.
 
 </div>
-
 
 ## Add an Activity Callback Action at Process Level
 

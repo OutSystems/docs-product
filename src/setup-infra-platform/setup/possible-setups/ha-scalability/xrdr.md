@@ -45,17 +45,16 @@ The following are some of the key concepts of cross-region disaster recovery:
 * **Recovery point objective (RPO)**
 
     * Defines the point in time to which data must be recovered after a disruption. For example, if an organization has an RPO of 4 hours, it means that the organization can tolerate losing up to 4 hours worth of data but no more.
- 
+
 <div class="info" markdown="1">
 
-OutSystems XRDR support RPO values of 4 hours or 24 hours, that can be defined per production environment. Please contact your OutSystems account team for more information.
+OutSystems XRDR supports RPO of either 4 hours or 24 hours, depending on the XRDR add-on selected for the production environment. For more information, please contact your OutSystems account team.
 
 </div>
 
-
 * **Recovery time objective (RTO)**
 
-    * Refers to the maximum acceptable amount of time that a system, app, or process can be down after a failure or disruption. For example, if an organization has an RTO of 2 hours, it means that the system or process must be up and running within 2 hours of an outage. 
+    * Refers to the maximum acceptable amount of time that a system, app, or process can be down after a failure or disruption. For example, if an organization has an RTO of 2 hours, it means that the system or process must be up and running within 2 hours of an outage.
 
     The following diagram illustrates the recovery point objective before the disaster and the recovery time objective after the disaster.
 
@@ -63,7 +62,7 @@ OutSystems XRDR support RPO values of 4 hours or 24 hours, that can be defined p
 
 <div class="info" markdown="1">
 
-OutSystems XRDR has fixed values of RTO of 24 hours and 48 hours in case of Sentry infrastructures.
+OutSystems XRDR supports a standard RTO of 24 hours. For production environments that include Sentry, the RTO is 48 hours.
 
 </div>
 
@@ -81,7 +80,7 @@ The following are some of the benefits of cross-region disaster recovery:
 
 * **Compliance**
 
-    * For many industries (for example, healthcare and government), a business continuity disaster recovery plan that is compliant with disasters that may affect a region within a 100-kilometer radius is mandatory. OutSystems XRDR allows you to choose the recovery region from any of the available OutSystems Cloud regions. 
+    * For many industries (for example, healthcare and government), a business continuity disaster recovery plan that is compliant with disasters that may affect a region within a 100-kilometer radius is mandatory. OutSystems XRDR allows you to choose the recovery region from any of the available OutSystems Cloud regions.
 
     * Data sovereignty: With OutSystems XRDR, you can choose the recovery region from any of the available OutSystems Cloud regions.
 
@@ -89,8 +88,54 @@ The following are some of the benefits of cross-region disaster recovery:
 
 1. Primary region: This is the main operational site where applications are running and data is stored. It is fully functional and serves end-users.
 
-2. Disaster recovery region: A recovery site is located in a different geographic region. When the primary site is healthy, this site only contains regular data backups, stored and updated with a frequency dependent on the contracted RPO.
+1. Disaster recovery region: A recovery site is located in a different geographic region. When the primary site is healthy, this site only contains regular data backups, stored and updated with a frequency dependent on the contracted RPO.
 
-3. Cross-region backup: Data from the primary site is copied to the recovery site, using backups, on a fixed schedule of no more than 24 hours, depending on the contracted RPO.
+1. Cross-region backup: Data from the primary site is copied to the recovery site, using backups, on a fixed schedule of no more than 24 hours, depending on the contracted RPO.
 
+## Recovery process
 
+The cross-region recovery process ensures that your platform's critical components, including infrastructure, runtime services, and data, are restored in the designated recovery region with minimal manual intervention. This automated process adheres to stringent RPO and RTO requirements, ensuring seamless business continuity during a disaster.
+
+### Failover triggering
+
+Triggering a cross-region disaster recovery process may result in several hours of downtime. Before initiating a failover process, OutSystems works with your team to assess the situation and determine the best course of action.
+
+Preparing for a failover requires a comprehensive disaster recovery plan. This plan clearly documents all steps required to restore your apps, including any dependencies on external systems. Additionally, performing at least one failover test in advance is essential to validate the plan's effectiveness and ensure readiness for a seamless recovery process.
+
+OutSystems only initiates an automated failover after receiving explicit approval from at least two designated platform administrators. This safeguard ensures the decision aligns with your business needs and operational priorities. While OutSystems may notify you of potential threats or disruptions, you make the final decision to initiate failover.
+
+Alternatively, you can request a failover through a support ticket if the following conditions are met:
+
+* At least two designated platform administrators submit or explicitly approve the request.
+* You provide a valid business justification.
+* You have conducted at least one successful failover test.
+
+OutSystems assesses whether failover is the most appropriate solution based on the available information.
+
+### Automated failover process
+
+The recovery of your infrastructure components, runtime services, and data is fully automated and adheres to the applicable RPOs and RTOs. No manual intervention is required during this process. OutSystems ensures that the following configurations are preserved in the recovery cloud region:
+
+* **Sentry**: Security and monitoring configurations
+* **HIPAA compliance**: Ensuring adherence to healthcare data protection standards
+* **Log separation**: Maintaining log integrity and separation
+* **WAF IP filtering rules**: Preserving web app firewall configurations
+* **External connections**: Retaining configurations such as database connections in Service Center
+
+The new environment will mirror the source environment's configuration, including:
+
+* Relational database service (RDS) instance engine version, instance type (class), and storage parameters.
+* Front-end count, instance type (class), and storage parameters.
+
+OutSystems notifies you once your platform is back online and operational.
+
+### Post-failover steps
+
+After the failover process is complete, you should take the following steps to ensure stability and optimal performance:
+
+1. **Republish apps or the factory**: This ensures that all apps are running correctly in the new environment.
+1. **Reapply configurations**: Depending on your setup, you may need to reapply minor configurations. For example, you might need to update external integrations, adjust logging settings, or verify database connections.
+
+## Related resources
+
+[Perform a cross-region disaster recovery test](disaster-recovery-test.md)

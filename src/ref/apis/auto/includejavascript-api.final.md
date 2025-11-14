@@ -30,24 +30,24 @@ To use this API reference the **IncludeJavascript_API extension** using the Refe
 
 ## Summary
 
-Action | Description
----|---
-[Application_AddExclusionRule](<#Application_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified application.
-[Application_RemoveExclusionRule](<#Application_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified application.
-[Espace_AddExclusionRule](<#Espace_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified module.
-[Espace_RemoveExclusionRule](<#Espace_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified module.
-[Script_CreateOrUpdate](<#Script_CreateOrUpdate>) | Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all modules.<br/>If the script name already exists, the script is updated, otherwise a new script is created.
-[Script_Delete](<#Script_Delete>) | Deletes a script: the script is no longer included in Web Screens.
-[Script_Get](<#Script_Get>) | Returns the information of a script.
-[Script_List](<#Script_List>) | Returns a list of scripts to be included in Web Screens.
-[Script_SetActive](<#Script_SetActive>) | Activates a certain script to be included in Web Screens.
-[Script_SetInactive](<#Script_SetInactive>) | Deactivates a certain script. The script is not included in Web Screens.
+| Action | Description |
+| ---|--- |
+| [Application_AddExclusionRule](<#Application_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified application. |
+| [Application_RemoveExclusionRule](<#Application_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified application. |
+| [Espace_AddExclusionRule](<#Espace_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified module. |
+| [Espace_RemoveExclusionRule](<#Espace_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified module. |
+| [Script_CreateOrUpdate](<#Script_CreateOrUpdate>) | Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all modules.<br/>If the script name already exists, the script is updated, otherwise a new script is created. |
+| [Script_Delete](<#Script_Delete>) | Deletes a script: the script is no longer included in Web Screens. |
+| [Script_Get](<#Script_Get>) | Returns the information of a script. |
+| [Script_List](<#Script_List>) | Returns a list of scripts to be included in Web Screens. |
+| [Script_SetActive](<#Script_SetActive>) | Activates a certain script to be included in Web Screens. |
+| [Script_SetInactive](<#Script_SetInactive>) | Deactivates a certain script. The script is not included in Web Screens. |
 
-Structure | Description
----|---
-[ExcludedApplications](<#Structure_ExcludedApplications>) | Represents an exclusion rule for a specific application. Exclusion rules specify applications in which scripts are not to be inserted.
-[ExcludedEspaces](<#Structure_ExcludedEspaces>) | Represents an exclusion rule for a specific module. Exclusion rules specify modules in which scripts are not to be inserted.
-[JavaScript](<#Structure_JavaScript>) | Represents a script to be included in the HTML of Web Screens.
+| Structure | Description |
+| ---|--- |
+| [ExcludedApplications](<#Structure_ExcludedApplications>) | Represents an exclusion rule for a specific application. Exclusion rules specify applications in which scripts are not to be inserted. |
+| [ExcludedEspaces](<#Structure_ExcludedEspaces>) | Represents an exclusion rule for a specific module. Exclusion rules specify modules in which scripts are not to be inserted. |
+| [JavaScript](<#Structure_JavaScript>) | Represents a script to be included in the HTML of Web Screens. |
 
 ## Actions
 
@@ -55,12 +55,11 @@ Structure | Description
 
 Creates exclusion rules for a script. The specified script is not included in the specified application.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
     The name of the script.  
-    
 
 ApplicationKey
 :   Type: Text. Mandatory.  
@@ -70,7 +69,7 @@ ApplicationKey
 
 Removes a script exclusion rule. The specified script is to be included in the specified application.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
@@ -84,12 +83,11 @@ ApplicationKey
 
 Creates exclusion rules for a script. The specified script is not included in the specified module.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
     The name of the script.  
-    
 
 EspaceKey
 :   Type: Text. Mandatory.  
@@ -99,7 +97,7 @@ EspaceKey
 
 Removes a script exclusion rule. The specified script is to be included in the specified module.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
@@ -114,7 +112,7 @@ EspaceKey
 Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all modules.  
 If the script name already exists, the script is updated, otherwise a new script is created.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
@@ -135,13 +133,12 @@ Order
 Description
 :   Type: Text.  
     The documentation of the script.  
-    
 
 ### Script_Delete { #Script_Delete }
 
 Deletes a script: the script is no longer included in Web Screens.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
@@ -151,13 +148,13 @@ ScriptName
 
 Returns the information of a script.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
     The name of the script.
 
-*Outputs*
+_Outputs_
 
 JavaScript
 :   Type: Record of [JavaScript](<#Structure_JavaScript>).  
@@ -167,13 +164,13 @@ JavaScript
 
 Returns a list of scripts to be included in Web Screens.
 
-*Inputs*
+_Inputs_
 
 ShowInactive
 :   Type: Boolean. Mandatory.  
     If true returns all scripts, including scripts marked as inactive.
 
-*Outputs*
+_Outputs_
 
 JavaScriptList
 :   Type: RecordList of [JavaScript](<#Structure_JavaScript>).  
@@ -183,7 +180,7 @@ JavaScriptList
 
 Activates a certain script to be included in Web Screens.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
@@ -193,12 +190,11 @@ ScriptName
 
 Deactivates a certain script. The script is not included in Web Screens.
 
-*Inputs*
+_Inputs_
 
 ScriptName
 :   Type: Text. Mandatory.  
     The name of the script.
-
 
 ## Structures
 
@@ -206,7 +202,7 @@ ScriptName
 
 Represents an exclusion rule for a specific application. Exclusion rules specify applications in which scripts are not to be inserted.
 
-*Attributes*
+_Attributes_
 
 ApplicationKey
 :   Type: Text (50). Mandatory.  
@@ -220,7 +216,7 @@ ApplicationName
 
 Represents an exclusion rule for a specific module. Exclusion rules specify modules in which scripts are not to be inserted.
 
-*Attributes*
+_Attributes_
 
 EspaceKey
 :   Type: Text (50). Mandatory.  
@@ -234,7 +230,7 @@ EspaceName
 
 Represents a script to be included in the HTML of Web Screens.
 
-*Attributes*
+_Attributes_
 
 Name
 :   Type: Text (50). Mandatory.  
@@ -267,4 +263,3 @@ ExcludedApplications
 ExcludedEspaces
 :   Type: RecordList of [ExcludedEspaces](<#Structure_ExcludedEspaces>). Mandatory.  
     The script is not inserted in the Web Screens of these modules.
-

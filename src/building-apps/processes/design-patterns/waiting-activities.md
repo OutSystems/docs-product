@@ -28,7 +28,6 @@ The Wait activity holds the process execution until an event occurs, a timeout o
 
 To add business logic to validate whether the waiting is really to be ended or not, use the **OnClose** callback action of the Wait activity.
 
-
 ## Using Timeouts
 
 A pattern to end a Wait activity is to set a timeout and then handle it accordingly.
@@ -39,7 +38,6 @@ As an example, think of a process to handle orders that starts provisioning orde
 
 ![Flowchart example of an order process using a timeout in a Wait activity to handle orders, with paths for payment confirmation within 30 days leading to shipping, and timeout leading to order cancellation.](images/using-timeouts.png "Order Process with Timeout Example")
 
-
 ## Using Database Events
 
 Another pattern to end a Wait activity is to set the `Close On` property with a database event: the creation or the modification of an Entity record.
@@ -49,7 +47,6 @@ Another pattern to end a Wait activity is to set the `Close On` property with a 
 As an example, think of a recruitment process for candidates who apply for a job. At some point in the process, one interview is scheduled and the process waits for the interview to be updated with the feedback before continuing.
 
 ![Flowchart example of a recruitment process using a database event in a Wait activity, where the process waits for interview feedback before proceeding.](images/using-database-events.png "Recruitment Process with Database Event Example")
-
 
 ## Validating Whether the Waiting Ends
 

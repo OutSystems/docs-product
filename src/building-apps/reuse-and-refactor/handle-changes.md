@@ -66,7 +66,7 @@ The signature of an exposed element can change in one of the following ways:
 
 * The element’s signature is **modified** but the change is compatible with the information known by the consumer module.
 * The element’s signature is **incompatible** with the information known by the consumer module.
-* The element is missing. 
+* The element is missing.
 
 ### Modified Signature
 

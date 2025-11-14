@@ -19,5 +19,3 @@ coverage-type:
 # Start
 
 Indicates where a flow starts executing.  
-
-

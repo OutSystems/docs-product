@@ -19,10 +19,9 @@ coverage-type:
 
 # Role
 
-
 ## Exposed Role
 
-When an exposed Role is checked, it raises an exception under the **transaction** of the Consumer module. 
+When an exposed Role is checked, it raises an exception under the **transaction** of the Consumer module.
 
 ## Properties
 
@@ -77,4 +76,3 @@ When an exposed Role is checked, it raises an exception under the **transaction*
 </tr>
 </tbody>
 </table>
-

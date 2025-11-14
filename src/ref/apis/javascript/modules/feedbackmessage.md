@@ -65,4 +65,3 @@ Parameters:
 * (Optional) **onClick**: function<br/> Function to be executed whenever the feedback message is clicked.
 
 Returns: void
-

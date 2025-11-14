@@ -43,5 +43,4 @@ You can consult the logs in Service Studio. Reference the **PlatformLogs Extensi
 
 ![Screenshot showing how to access log entities in OutSystems Service Studio](images/log-entites-ss.png "Service Studio Log Entities")
 
-
 </div>

@@ -41,9 +41,9 @@ The following example shows how you can use the Swipe Events UI pattern to incre
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Swipe Events widget into the Main Content area of your application's screen.
@@ -87,3 +87,7 @@ After following these steps and publishing the module, you can test the pattern 
 | **Property** | **Description** |
 |---|---|
 | WidgetId (Text): Mandatory | Element that's swipeable. |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

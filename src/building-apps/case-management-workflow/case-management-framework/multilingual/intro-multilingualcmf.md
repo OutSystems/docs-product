@@ -18,7 +18,7 @@ coverage-type:
 
 # Introduction to multilingual Case Management framework
 
-Case Management framework (CMf) now includes multilingual capabilities allowing you to build OutSystems Case Management (CM) applications in different languages. 
+Case Management framework (CMf) now includes multilingual capabilities allowing you to build OutSystems Case Management (CM) applications in different languages.
 
 The supported languages are:
 

@@ -24,7 +24,7 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-The Layout Popup is a pre-existing web block useful for displaying additional off-canvas information. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app. 
+The Layout Popup is a pre-existing web block useful for displaying additional off-canvas information. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app.
 
 ![Screenshot of the Layout Popup web block in OutSystems Traditional Web App](images/layoutpopup-1-ss.png "Layout Popup Example")
 

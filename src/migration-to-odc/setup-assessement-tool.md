@@ -1,11 +1,11 @@
 ---
-summary: This article outlines steps for installing and configuring the Migration Assessment Tool for migration to OutSystems Developer Cloud (ODC).
+summary: This article outlines steps for installing and configuring the Conversion Assessment Tool for conversion to OutSystems Developer Cloud (ODC).
 locale: en-us
 guid: 29920fad-9efd-45ae-a4e4-212705fceb65
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2336-2236
-tags: migration, outsystems, cloud migration, database configuration, infrastructure management
+tags: app conversion, outsystems, database configuration, infrastructure management
 audience:
   - platform administrators
   - full stack developers
@@ -14,169 +14,291 @@ audience:
 outsystems-tools:
   - lifetime
   - platform server
+  - conversion assessment tool
 coverage-type:
   - apply
 ---
 
-# Set up the Migration Assessment Tool
+# Set up the Conversion Assessment Tool
 
-<div class="info" markdown="1">
+The Conversion Assessment Tool helps you evaluate the readiness of O11 apps for the ODC conversion and guides you through the necessary code adjustments to ensure that your apps can be converted.
 
-This article only applies to customers with access to the Migration Kit.
+![Screenshot of the Conversion Assessment Tool showing the ODC blueprint and assessment findings for various apps.](images/assessment-tool-setup-overview-at.png "Conversion Assessment Tool overview")
 
-</div>
-
-The Migration Assessment Tool helps you evaluate the readiness of O11 apps for the ODC migration and guides you through the necessary code adjustments to ensure that your apps can be migrated.
-
-![Screenshot of the Migration Assessment Tool showing the ODC blueprint and assessment findings for various apps.](images/assessment-tool-setup-overview-at.png "Migration Assessment Tool overview")
-
-In the Migration Assessment Tool you can:
+In the Conversion Assessment Tool you can:
 
 * Design your ODC architecture blueprint by [mapping your O11 apps to ODC assets](plan/plan-map-apps.md) - Use your O11 apps as building blocks for future ODC apps, where an ODC app can be composed of one or multiple existing O11 apps.
 
-* [Define migration plans](plan/plan-define-migration-plans.md) for small sets of apps based on your different app domains and your teams' development lifecycle.
+* [Define conversion plans](plan/plan-define-migration-plans.md) - Group a set of O11 apps that you want to convert independently.
 
-* [Assess your apps’ architecture and ODC readiness](plan/plan-assess-refactor.md) - The Migration Assessment Tool assesses your O11 apps and identifies any technical challenges that may occur during the migration process, for example, O11-specific features that need to be implemented differently in ODC, or adapting the app architecture. These technical challenges are outlined in findings that guide you through the steps on how to adjust your apps for a smooth migration to ODC's modern cloud-native framework.
+* [Assess your apps’ architecture and ODC readiness](plan/plan-assess-refactor.md) - The Conversion Assessment Tool assesses your O11 apps and identifies any technical challenges that may occur during the conversion process, for example, O11-specific features that need to be implemented differently in ODC, or adapting the app architecture. These technical challenges are outlined in findings that guide you through the steps on how to adjust your apps for a smooth conversion to ODC's modern cloud-native framework.
+
+As you navigate the Conversion Assessment Tool, the apps and details available to you are based on your O11 permissions. For a complete overview of permissions by tool operation, refer to the [Conversion Assessment Tool permission model](plan/mat-permissions.md).
 
 ## Tool components
 
-The Migration Assessment Tool consists of the following components:
+The Conversion Assessment Tool consists of the following components:
 
-* Console
-* Engine
+* Installer  
+* Console  
+* Engine  
 * Probe
 
-![Diagram showing the architecture of the Migration Assessment Tool, including the Console, Engine, and Probes in different environments (DEV, Q&A, PROD) and their interactions.](images/assessment-tool-architecture-diag.png "Migration Assessment Tool Architecture Diagram")
+![Diagram showing the architecture of the Conversion Assessment Tool, including the Console, Engine, and Probes in different environments (DEV, Q&A, PROD) and their interactions.](images/assessment-tool-architecture-diag.png "Conversion Assessment Tool Architecture Diagram")
 
-### Console
+### Installer { #installer }
 
-The **Console** is the user interface app for the Migration Assessment Tool. It’s where you map your O11 apps to ODC architecture, create migration plans, and see the assessment reports. It’s also where you configure the connections between the several components of the tool.
+The **Installer** enables you to do the initial set up of the Conversion Assessment Tool, [update it to the latest version](#update), and [install additional probes](#additional-probes), if needed.
+
+During the setup process, the installer gets the O11 environments’ details from LifeTime, and connects to each environment to install the several tool components. When all the components are installed, the installer passes the configuration information to the engine.
+
+The installer component is typically **installed in the Development environment** of your O11 infrastructure.
+
+### Console { #console }
+
+The **Console** is the user interface app for the Conversion Assessment Tool. It’s where you map your O11 apps to ODC architecture, create conversion plans, and see the assessment reports. It’s also where you configure the connections between the several components of the tool.
 
 The console must be **installed in the Development environment** of your O11 infrastructure.
 
-### Probe
+### Probe { #probe }
 
-The first **Probe** to install is the development probe, which must be **installed in the Development environment** of your O11 infrastructure. Optionally, you can install additional probes in other environments to check the ODC-readiness of the apps, except the LifeTime environment. For example, you may want to install a probe in the QA environment, so you can run the assessment on apps during the app testing phase.
+The first **Probe** to install is the development probe, which must be **installed in the Development environment** of your O11 infrastructure. Optionally, you can install an additional non-production probe to check the ODC-readiness of the apps. For example, you may want to install a probe in the QA environment, so you can run the assessment on apps during the app testing phase.
 
-Each probe runs the assessment of the apps in the environment where it's installed and returns the findings to the engine. The assessments run sequentially, only one at a time while the remaining are queued.
+Each probe runs the assessment of the apps in the environment where it's installed and returns the findings to the engine. The assessments run sequentially, only one ODC Asset at a time while the remaining are queued.
 
-At a later phase, when you [execute the migration](execute/execute-intro.md) of your apps to ODC, the O11 environments running a probe can be selected as the source for code or data migration.
-
-### Engine
+### Engine { #engine }
 
 The **Engine** is the communication entry point between your O11 infrastructure and your ODC tenant. It must be **installed in the LifeTime environment** of your O11 infrastructure.
 
-The engine manages the assessment queues of the probes installed in the O11 environments, and keeps a record of all the findings. By default, the engine queues new assessments for each probe every 15 minutes to check for app changes in the environment.
+The engine manages the assessment queues of the probes installed in the O11 environments, and keeps a record of all the findings. The engine [queues new assessments periodically](#cycles) for each probe to check for app and environment changes.
+
+## Assessment cycles { #cycles }
+
+The Conversion Assessment Tool runs different types of assessments, each with its own frequency:
+
+* By default, a **code assessment** runs every 15 minutes for the O11 apps mapped to ODC assets in an environment with a probe installed, but you can [change this interval per environment](#change-cycle). Possible values are 15 minutes, 1 hour, 8 hours, or 24 hours. A code assessment also runs for the mapped O11 apps when an ODC asset is created or updated.
+
+* A **data assessment** runs daily for the O11 apps mapped to ODC assets in all environments with a probe installed. This interval is not configurable. It also runs every time an ODC asset is created or updated.
+
+* An **infrastructure assessment** runs daily in all environments with a probe installed. This interval is not configurable.
+
+Additionally, you can trigger an assessment at any time in the Conversion Assessment Tool console.
 
 ## Prerequisites
 
-Before setting up the Migration Assessment Tool, make sure the following requirements are met:
-
-* You are part of the early access program and have access to the Migration Kit.
-
-* Your O11 infrastructure uses SQL Server databases.
+Before setting up the Conversion Assessment Tool, make sure the following requirements are met:
 
 * Your O11 environments use Platform Server 11.18.1 or later.
 
-* One of your non-LifeTime environments, where you publish the Migration Assessment Tool Console, has [Single Sign-On Between App Types enabled](../security/configure-authentication.md). Please note that to enable this setting, you must also [toggle the Enable HTTP Strict Transport Security (HSTS)](../security/enforce-https-security.md) and [enable secure session cookies](../security/secure-cookies-enable-secure-session.md) in that environment.
-
-* Your IT User has the **Administrator** [role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
-
 ## Set up the tool
 
-To set up the Migration Assessment Tool, follow these steps:
+To set up the Conversion Assessment Tool, follow these steps:
 
-* [Step 1. Install the Engine in the LifeTime environment](#engine)
+* [Step 1. Install the Conversion Assessment Tool Installer app](#cat-installer)
 
-* [Step 2. Install the Console in the Development environment](#console)
+* [Step 2. Follow the installation wizard](#install-wizard)
 
-* [Step 3. Install the development Probe in the Development environment](#probe-dev)
+### Step 1. Install the Conversion Assessment Tool Installer app { #cat-installer }
 
-* [Step 4. Install the Probe in other environments](#probe-other-env)
+<div class="info" markdown="1">
 
-* [Step 5. Configure the Migration Assessment Tool](#configure)
-
-### Step 1. Install the Engine in the LifeTime environment { #engine }
-
-1. Download the [Migration Assessment Tool Engine solution pack](resources/Migration_Assessment_Engine_v1_5_11_8.osp).
-
-1. Go to the Service Center console of your LifeTime environment (`https://<lifetime_environment>/ServiceCenter`).
-
-1. [Upload and publish the Migration Assessment Engine solution pack](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment).
-
-### Step 2. Install the Console in the Development environment { #console }
-
-1. Download the [Migration Assessment Tool Console solution pack](resources/Migration_Assessment_Console_v1_5_11_8.osp).
-
-1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
-
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Console solution pack.
-
-1. Still in the Service Center console, ensure [Single Sign-On Between App Types](../security/configure-authentication.md) is enabled.
-
-### Step 3. Install the development Probe in the Development environment { #probe-dev }
-
-1. Download the [Migration Assessment Tool Probe solution pack](resources/Migration_Assessment_Probe_v1_5_11_8.osp).
-
-1. Go to the Service Center console of your Development environment (`https://<dev_environment>/ServiceCenter`).
-
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Probe solution pack.
-
-### Step 4. Install the Probe in other environments { #probe-other-env }
-
-Optionally, you can install additional probes in the environments where you also want to assess the ODC-readiness of your apps (for example, the QA environment), or the environments that you will later select as the source for code or data migration (for example, the Production environment).
-
-<div class="warning" markdown="1">
-
-Don’t install the Probe in the LifeTime environment.
+This step [requires **Create Applications** and **Change and Deploy Applications** permissions](plan/mat-permissions.md#setup-update) for the O11 environment where you install the installer app, typically the Development environment.
 
 </div>
 
-1. Go to the Service Center console of the environment where you want to install an additional probe (`https://<environment>/ServiceCenter`).
+The [Conversion Assessment Tool Installer](https://www.outsystems.com/forge/component-overview/22569/o11-to-odc-conversion-assessment-tool-installer) is available in the OutSystems Forge. Follow these instructions to install it in your Development environment:
 
-1. [Upload and publish](https://success.outsystems.com/support/troubleshooting/application_lifecycle/deploy_applications_through_service_center/#step-2.upload-and-publish-the-solution-in-the-target-environment) the Migration Assessment Probe solution pack you downloaded in the previous step.
+1. Open [Service Studio](../getting-started/service-studio.md) and connect to your O11 Development environment.
 
-Installing extra probes is important not only for assessing ODC readiness but also for migrating code and data from those environments.
+1. In the Environment tab, click **Install from Forge**.
 
-### Step 5. Configure the Migration Assessment Tool { #configure }
+1. Search for the **Conversion Assessment Tool Installer** component.
 
-1. Go to the LifeTime management console (`https://<lifetime_environment>/lifetime`).
+1. Click **Install**.
 
-1. [Create a service account](../ref/apis/lifetime-deployment/rest-api-authentication.md) with the [Administrator role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles).
+<div class="info" markdown="1">
 
-1. Copy the authentication token.
+If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), add the following redirect URI to your IdP configuration:
 
-1. Go to the Migration Assessment console (`https://<mat_console_environment>/MigrationAssessment/`).
+* `https://<dev_environment>/ConversionAssessmentInstaller/OIDC_Callback`
+
+</div>
+
+### Step 2. Follow the installation wizard { #install-wizard }
+
+<div class="info" markdown="1">
+
+This step requires:
+
+* The [**Administrator** role](plan/mat-permissions.md#setup-update).
+* A [service account in LifeTime](../ref/apis/lifetime-deployment/rest-api-authentication.md) with the [**Administrator** role](../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#roles), and the corresponding authentication token.
+
+</div>
+
+Follow the installer wizard to set up the Conversion Assessment Tool components:
+
+1. Open the Conversion Assessment Tool Installer app (`https://<dev_environment>/ConversionAssessmentInstaller/`).
 
 1. Log in using your IT User credentials.
 
+1. Set the **Authentication token** of the [service account](../ref/apis/lifetime-deployment/rest-api-authentication.md) you’ll use to access the LifeTime environment.
+
+    ![Screenshot of the Conversion Assessment Tool Installer wizard to configure access to LifeTime, showing fields for LifeTime URL and authentication token.](images/setup-mat-wizard-access-lt-mati.png "Configure access to LifeTime in Conversion Assessment Tool Installer")
+
+1. Click **Access LifeTime** to validate the connection.
+
+    You can only proceed if the provided service account can successfully access LifeTime.
+
+1. Click **Continue**.
+
+1. Choose the O11 environments where you want to install the [probes](#probe) and the [console](#console) components.
+
+    The installer provides you the list of environments registered in LifeTime. If you want to use an alternative URL for a specific environment, choose the environment from the list and click the pencil icon to edit the environment URL.
+
+    <div class="info" markdown="1">
+
+    * The installation of the **Development probe** and the **Conversion Assessment Tool console** is mandatory. Outsystems recommends the installation of these components in your O11 Development environment.
+
+    * Optionally, you can install additional probes in the environments where you also want to assess the ODC-readiness of your apps, for example, the QA environment. You can opt to [install additional probes](#additional-probes) at a later phase. Code conversion and data migration are only available from O11 environments with installed probes.
+
+    </div>
+
+    ![Screenshot of the Conversion Assessment Tool Installer wizard to configure the O11 environments where the tool components are installed.](images/setup-mat-wizard-011-env-mati.png "Configure O11 environments in Conversion Assessment Tool Installer")
+
+1. Click **Validate URLs** to validate the connection with the chosen environments.
+
+    You can only proceed if the installer can successfully connect with the chosen environments.
+
+1. Click **Continue**.
+
+1. The last step of the wizard shows a summary of the Conversion Assessment Tool components that will be installed in each environment. Click **Install**.
+
+    ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to install.](images/setup-mat-wizard-summary-mati.png "See the installation summary in Conversion Assessment Tool Installer")
+
+<div class="info" markdown="1">
+
+If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), add the following redirect URI to your IdP configuration:
+
+* `https://<cat_console_environment>/ConversionAssessment/OIDC_Callback`, where `<cat_console_environment>` is the environment where you installed the [Conversion Assessment Tool console](#console)
+
+</div>
+
+After setting up the Conversion Assessment Tool, you can start [mapping your O11 apps to ODC assets](plan/plan-map-apps.md).
+
+## Update to the latest Conversion Assessment Tool version { #update }
+
+<div class="info" markdown="1">
+
+This operation [requires the **Administrator** role](plan/mat-permissions.md#setup-update).
+
+</div>
+
+The Conversion Assessment Tool will show a notification when a new version is available.
+
+![Screenshot of the Conversion Assessment Tool showing a notification of update availability.](images/mat-update-available-at.png "Conversion Assessment Tool update available")
+
+Follow these steps to update the Conversion Assessment Tool:
+
+1. Click **Open Conversion Assessment Tool Installer** to open the installer.
+
+    The installer takes you to the last step of the setup wizard.
+
+1. Click **Update** to install the latest version of the Conversion Assessment Tool in each component.
+
+    ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to update.](images/update-mat-wizard-summary-mati.png "See the update summary in Conversion Assessment Tool Installer")
+
+## Install an additional probe { #additional-probes }
+
+<div class="info" markdown="1">
+
+This operation [requires the **Administrator** role](plan/mat-permissions.md#setup-update).
+
+</div>
+
+After the initial setup, you can always install an additional probe in another O11 environment of your infrastructure. For example, when you are ready to execute the conversion of your apps to ODC, you need to have a probe running in the O11 environment that will be the source for code conversion or data migration (for example, the Production environment).
+
+Follow these steps to install an additional probe using the Conversion Assessment Tool Installer:
+
+1. Open the Conversion Assessment Tool Installer app (`https://<dev_environment>/ConversionAssessmentInstaller/`).
+
+1. Log in using your IT User credentials.
+
+    As you already set up the Conversion Assessment Tool, the installer takes you to the last step of the setup wizard.
+
+1. Click **Go back** to go to the **Choose O11 environments** step.
+
+1. Select the O11 environment for the additional probe.
+
+1. Click **Continue**.
+
+1. Click **Update** to install an additional probe in the new environment.
+
+    The Conversion Assessment Tool Installer uses the latest version available to install the new probe and updates all the remaining components if they are not up to date.
+
+## Change the code assessment cycle { #change-cycle }
+
+<div class="info" markdown="1">
+
+This operation [requires **Full Control** permission](plan/mat-permissions.md#maintenance) for the O11 environment running the [development probe](#probe).
+
+</div>
+
+You can adjust how frequently the Conversion Assessment Tool assesses your O11 apps in a specific environment by changing the code assessment cycle for the environment probe. By default, the code assessment cycle is 15 minutes.
+
+Follow these steps to change the code assessment cycle for an environment:
+
+1. Log into the Conversion Assessment Tool console (`https://<cat_console_environment>/ConversionAssessment/`) using your IT User credentials.
+
 1. Go to the **Maintenance** tab.
 
-1. Configure the **Access to LifeTime**, where the Engine component is installed:
+1. In the **Probe connection** area, identify the probe installed in the environment you want to configure.
 
-   * Set the **Engine URL (LifeTime)** field to the LifeTime address.
-   * Paste the authentication token for the LifeTime Service Account into the **Authentication token** field.
+1. Change the **Code assessment cycle** value for that probe using the dropdown.
 
-1. Click **Save** to save and test the connection to LifeTime.
+    The change is automatically saved.
 
-    ![Screenshot of the Migration Assessment Tool configuration page for accessing LifeTime, showing fields for Engine URL and authentication token.](images/assessment-tool-setup-access-lt-at.png "Configure access to LifeTime in Migration Assessment Tool")
+    ![Screenshot of the Probe connection area in the Maintenance area of the Conversion Assessment Tool showing the code assessment cycle dropdown.](images/change-code-assessment-cycle-mat.png "Change the code assessment cycle")
 
-9. To configure access to the development probe, in the **Probe connection** area, set the **Analysis environment URL** to your Development environment address, and click **Connect**.
+## Troubleshooting
 
-    <div class="info" markdown="1">
+This section describes some common issues you may encounter during the setup of the Conversion Assessment Tool, and how to solve them.
 
-    It's mandatory to configure access to the **Development** probe.
+If you encounter any other limitation or issue using the Conversion Assessment Tool Installer, try the [manual setup process](manual-setup-assessement-tool.md).
 
-    </div>
+Please also tell us about the issue you faced using the **Give feedback** option. This will help us improve the installer tool and support more scenarios.
 
-    ![Screenshot of the Migration Assessment Tool configuration page for probe connections, showing the status and URLs for different environments.](images/assessment-tool-setup-probe-connection-at.png "Configure probes connection in Migration Assessment Tool")
+### Can't log in to the Conversion Assessment tools { #cannot-login }
 
-10. If you installed the Probe component in other environments, configure the connection to those environment probes.
+You are not able to log in to the Conversion Assessment Tool Installer app or to the Conversion Assessment Tool Console.
 
-    <div class="info" markdown="1">
+#### Recommended action
 
-    Later, when you [execute the migration](execute/execute-intro.md) of your apps to ODC, you will select which O11 environment probes will be the source for code and data migration.
+Validate the following:
 
-    </div>
+* You are using your IT user credentials to log in.
 
-After configuring the Migration Assessment Tool, you can start [mapping your O11 apps to ODC assets](plan/plan-map-apps.md).
+* If you are trying to log in to the Conversion Assessment Tool Installer app, make sure your IT user [has the **Administrator** role](plan/mat-permissions.md#setup-update).
+
+* If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), make sure you added the following redirect URIs to your IdP configuration:
+
+    * `https://<cati_environment>/ConversionAssessmentInstaller/OIDC_Callback`, where `<cati_environment>` is the environment running the [Conversion Assessment Tool Installer](#installer)
+
+    * `https://<cat_console_environment>/ConversionAssessment/OIDC_Callback`, where `<cat_console_environment>` is the environment running the [Conversion Assessment Tool Console](#console)
+
+### Setup process fails
+
+In some scenarios, the Conversion Assessment Tool Installer is not able to connect to one or more of the remaining O11 environments and the setup fails. Possible reasons are:
+
+* There’s no communication between the Conversion Assessment Tool Installer environment and another O11 environment.
+
+* The O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection.
+
+#### Recommended action
+
+Make sure your O11 infrastructure follows the [OutSystems 11 network requirements](../setup-infra-platform/setup/network-requirements.md).
+
+In case the O11 environment URL returned by LifeTime doesn’t match the URL where the environment accepts the connection, you can edit the environment URL to the alternative URL when choosing the O11 environments in the [setup wizard](#install-wizard).
+
+If you have other communication restrictions applied to your O11 environments, [install the Conversion Assessment Tool Installer](#cat-installer) in your LifeTime environment instead, and repeat the [setup wizard](#install-wizard).
+
+If the problem persists, try the [manual setup process](manual-setup-assessement-tool.md).

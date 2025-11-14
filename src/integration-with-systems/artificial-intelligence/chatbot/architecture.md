@@ -18,7 +18,7 @@ coverage-type:
 
 # The chatbot architecture
 
-A chatbot is a feature that you add to an existing app. The architecture of a chatbot depends on the functionalities you implement. You need Azure Bot Service for a chatbot to work. For advanced use cases you also need to add the OutSystems webhook chat module to your app and implement logic for your use cases. 
+A chatbot is a feature that you add to an existing app. The architecture of a chatbot depends on the functionalities you implement. You need Azure Bot Service for a chatbot to work. For advanced use cases you also need to add the OutSystems webhook chat module to your app and implement logic for your use cases.
 
 ## Bot service
 
@@ -68,9 +68,9 @@ This sequence shows an advanced chatbot logic, where OutSystems developers have 
 </div>
 
 1. User writes a question in the chatbot.
-2. The question message goes, via a REST API, to Azure Bot Framework.
-3. From the Azure Bot Framework, the question message goes to OutSystems via the webhook REST API.
-4. The OutSystems app receives the message and the message is then handled by the logic defined by the developers in Service Studio.
+1. The question message goes, via a REST API, to Azure Bot Framework.
+1. From the Azure Bot Framework, the question message goes to OutSystems via the webhook REST API.
+1. The OutSystems app receives the message and the message is then handled by the logic defined by the developers in Service Studio.
 
 In this example, the developers use the Azure QnA Maker Service to get responses from the Azure knowledge base. This is also a REST API service. Synchronously, the Azure QnA Maker service replies back to OutSystems the answer message via the same REST API response.
 

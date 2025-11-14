@@ -78,4 +78,3 @@ Attribute belonging to a structure used in input arguments of REST API Multipart
 </tr>
 </tbody>
 </table>
-

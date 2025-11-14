@@ -74,4 +74,3 @@ Input parameter of the exposed REST API authentication action (Username or Passw
 </tr>
 </tbody>
 </table>
-

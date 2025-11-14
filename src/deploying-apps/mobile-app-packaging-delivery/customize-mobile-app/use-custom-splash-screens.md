@@ -26,7 +26,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-By default, mobile applications have a custom splash screen displaying the main color defined in the app creation wizard. This splash screen is displayed after the Operating System loads your app (black screen) and after the WebView finishes loading the content (white screen). 
+By default, mobile applications have a custom splash screen displaying the main color defined in the app creation wizard. This splash screen is displayed after the Operating System loads your app (black screen) and after the WebView finishes loading the content (white screen).
 
 It is possible to change the look of your app even before it is fully loaded by customizing the native splash screen. This way you make sure that the end user has a fluid experience from the moment they open your app by replacing the black to white screen transition with an image of your choice.
 
@@ -34,14 +34,13 @@ It is possible to change the look of your app even before it is fully loaded by 
 
 To use a custom image as the native splash screen of your app, you need to create PNG versions of your custom image for **all** the [Android/iOS splash screen sizes](#devices-screen-sizes-and-densities).
 
-
 ## Customizing the native splash screen
 
 To use a custom image as the native splash screen of your app:
 
-1. Create a ZIP file containing all the PNG versions of your custom image for all the Android/iOS splash screen sizes. 
+1. Create a ZIP file containing all the PNG versions of your custom image for all the Android/iOS splash screen sizes.
 
-1. In the Data tab of the main Module of your app, right-click the Resources folder and import the ZIP file as a Resource. 
+1. In the Data tab of the main Module of your app, right-click the Resources folder and import the ZIP file as a Resource.
 
     ![Screenshot of the Resources folder with a ZIP file imported as a resource in OutSystems.](images/res-folder-ss.png "Importing ZIP File as Resource")
 
@@ -56,12 +55,12 @@ To use a custom image as the native splash screen of your app:
     ![Screenshot of the JSON template added to the Extensibility Configurations property with paths to splash screen images.](images/extensibility-splashsreens-ss.png "JSON Template in Extensibility Configurations")
 
     <div class="warning" markdown="1">
-    
+
     Ensure that you define the splash screen and the PNG image path for all sizes and densities available, otherwise, you'll get an error when generating your mobile application.
-    
+
     </div>
 
-1. To make this change available to users, [publish and generate a new mobile application package](<../generate-distribute-mobile-app/intro.md>) and distribute it. 
+1. To make this change available to users, [publish and generate a new mobile application package](<../generate-distribute-mobile-app/intro.md>) and distribute it.
 
     ![Screenshot of the mobile app package generation process with a QR code for app installation.](images/generate-mobile-app-ss.png "Generating Mobile App Package")
 
@@ -69,20 +68,20 @@ To use a custom image as the native splash screen of your app:
 
 ### For Android
 
-Width<br/>(px)|Height<br/>(px)|Density
----|---|---
-240|360|port-ldpi (120 dpi)
-320|480|port-mdpi (160 dpi)
-480|720|port-hdpi (240 dpi)
-640|960|port-xhdpi (320 dpi)
-960|1440|port-xxhdpi (480 dpi)
-1280|1920|port-xxxhdpi (640 dpi)
-360|240|land-ldpi (120 dpi)
-480|320|land-mdpi (160 dpi)
-720|480|land-hdpi (240 dpi)
-960|640|land-xhdpi (320 dpi)
-1440|960|land-xxhdpi (480 dpi)
-1920|1280|land-xxxhdpi (640 dpi)
+| Width<br/>(px)|Height<br/>(px)|Density |
+| ---|---|--- |
+| 240|360|port-ldpi (120 dpi) |
+| 320|480|port-mdpi (160 dpi) |
+| 480|720|port-hdpi (240 dpi) |
+| 640|960|port-xhdpi (320 dpi) |
+| 960|1440|port-xxhdpi (480 dpi) |
+| 1280|1920|port-xxxhdpi (640 dpi) |
+| 360|240|land-ldpi (120 dpi) |
+| 480|320|land-mdpi (160 dpi) |
+| 720|480|land-hdpi (240 dpi) |
+| 960|640|land-xhdpi (320 dpi) |
+| 1440|960|land-xxhdpi (480 dpi) |
+| 1920|1280|land-xxxhdpi (640 dpi) |
 
 ### For iOS
 
@@ -92,43 +91,43 @@ For iOS, the splash screen sizes depend on the [Mobile Apps Build Service (MABS)
 
 If you are using MABS 4.0 or later, you must use splash screen sizes [based in launch storyboard images](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html#launch-storyboard-images).
 
-Width<br/>(px)|Height<br/>(px)|Default Filename
----|---|---
-2732|2732|`Default@2x~universal~anyany`
-1278|2732|`Default@2x~universal~comany`
-1334|750|`Default@2x~universal~comcom`
-2208|2208|`Default@3x~universal~anyany`
-2208|1242|`Default@3x~universal~anycom`
-1242|2208|`Default@3x~universal~comany`
-1334|1334|`Default@2x~iphone~anyany`
-750|1334|`Default@2x~iphone~comany`
-1334|750|`Default@2x~iphone~comcom`
-2208|2208|`Default@3x~iphone~anyany`
-2208|1242|`Default@3x~iphone~anycom`
-1242|2208|`Default@3x~iphone~comany`
-2732|2732|`Default@2x~ipad~anyany`
-1278|2732|`Default@2x~ipad~comany`
+| Width<br/>(px)|Height<br/>(px)|Default Filename |
+| ---|---|--- |
+| 2732|2732|`Default@2x~universal~anyany` |
+| 1278|2732|`Default@2x~universal~comany` |
+| 1334|750|`Default@2x~universal~comcom` |
+| 2208|2208|`Default@3x~universal~anyany` |
+| 2208|1242|`Default@3x~universal~anycom` |
+| 1242|2208|`Default@3x~universal~comany` |
+| 1334|1334|`Default@2x~iphone~anyany` |
+| 750|1334|`Default@2x~iphone~comany` |
+| 1334|750|`Default@2x~iphone~comcom` |
+| 2208|2208|`Default@3x~iphone~anyany` |
+| 2208|1242|`Default@3x~iphone~anycom` |
+| 1242|2208|`Default@3x~iphone~comany` |
+| 2732|2732|`Default@2x~ipad~anyany` |
+| 1278|2732|`Default@2x~ipad~comany` |
 
 #### MABS 3.3
 
 If you are using MABS 3.3, you must use splash screen sizes [based on the legacy launch images](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html#legacy-launch-images).
 
-Width<br/>(px)|Height<br/>(px)|Device
----|---|---
-320|480|All non-retina iPhones and iPods
-640|960|iPhone 4/4s (portrait)
-640|1136|iPhone 5/5s/SE (portrait)
-750|1334|iPhone 6/6s/7/8 (portrait)
-1242|2208|iPhone 6+/6s+/7+/8+ (portrait)
-2208|1242|iPhone 6+/6s+/7+/8+ (landscape)
-1125|2436|iPhone X (portrait)
-2436|1125|iPhone X (landscape)
-768|1024|All non-retina iPads (portrait)
-1024|768|All non-retina iPads (landscape)
-1536|2048|All retina iPads (portrait)
-2048|1536|All retina iPads (landscape)
+| Width<br/>(px)|Height<br/>(px)|Device |
+| ---|---|--- |
+| 320|480|All non-retina iPhones and iPods |
+| 640|960|iPhone 4/4s (portrait) |
+| 640|1136|iPhone 5/5s/SE (portrait) |
+| 750|1334|iPhone 6/6s/7/8 (portrait) |
+| 1242|2208|iPhone 6+/6s+/7+/8+ (portrait) |
+| 2208|1242|iPhone 6+/6s+/7+/8+ (landscape) |
+| 1125|2436|iPhone X (portrait) |
+| 2436|1125|iPhone X (landscape) |
+| 768|1024|All non-retina iPads (portrait) |
+| 1024|768|All non-retina iPads (landscape) |
+| 1536|2048|All retina iPads (portrait) |
+| 2048|1536|All retina iPads (landscape) |
 
-## Splash screens JSON Templates { #splash-screens-json-templates } 
+## Splash screens JSON Templates { #splash-screens-json-templates }
 
 Find below two templates that you can copy and paste to the **Extensibility Configurations** property of your module. Choose only one of them, depending on the [Mobile Apps Build Service (MABS) version](https://www.outsystems.com/goto/mabs) you are using to generate your mobile app packages, and copy the whole template. The templates include definitions for both Android and iOS.
 
@@ -388,7 +387,7 @@ Find below two templates that you can copy and paste to the **Extensibility Conf
 
 ## Further customization of splash screen behavior
 
-You can further customize the behavior of the native splash screen by adding new preferences, in the **Extensibility Configurations**, using the following syntax: 
+You can further customize the behavior of the native splash screen by adding new preferences, in the **Extensibility Configurations**, using the following syntax:
 
 ```javascript
 {
@@ -405,14 +404,14 @@ You can further customize the behavior of the native splash screen by adding new
 
 Where `<target-platform>` is the target mobile platform that can be set as `global`, `android` or `ios`. The table below lists the possible values for `<preference>` and `<preference-value>`.
 
-Preference | Possible Values | Platform Support
----|---|---
-AutoHideSplashScreen | _True_ or _False_ | iOS and Android
-SplashScreenDelay | Number | iOS and Android
-FadeSplashScreen | _True_ or _False_ | iOS and Android
-FadeSplashScreenDuration | Number | iOS and Android
-SplashMaintainAspectRatio | _True_ or _False_ | Android
-SplashShowOnlyFirstTime | _True_ or _False_ | Android
+| Preference | Possible Values | Platform Support |
+| ---|---|--- |
+| AutoHideSplashScreen | _True_ or _False_ | iOS and Android |
+| SplashScreenDelay | Number | iOS and Android |
+| FadeSplashScreen | _True_ or _False_ | iOS and Android |
+| FadeSplashScreenDuration | Number | iOS and Android |
+| SplashMaintainAspectRatio | _True_ or _False_ | Android |
+| SplashShowOnlyFirstTime | _True_ or _False_ | Android |
 
 See the descriptions of the [available splash screen preferences](https://github.com/apache/cordova-plugin-splashscreen#preferences) to learn how they work.
 

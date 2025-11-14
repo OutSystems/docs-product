@@ -26,7 +26,6 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Inline SVG UI Pattern to change fill and stroke properties or animate the SVG paths.
 
-
 **How to use the Inline SVG UI Pattern**
 
 1. In Service Studio, in the Toolbox, search for `Inline SVG`.
@@ -40,16 +39,16 @@ You can use the Inline SVG UI Pattern to change fill and stroke properties or an
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Inline SVG widget into the Main Content area of your application's screen.
 
     ![Screenshot illustrating how to drag the Inline SVG widget into the main content area of an application's screen](images/inlinesvg-3-ss.png "Dragging Inline SVG Widget into Main Content Area")
 
-1. On the **Properties** tab, in the **SVGCode** property, set your SVG code. 
+1. On the **Properties** tab, in the **SVGCode** property, set your SVG code.
 
     In this example, we enter the following:
 
@@ -82,8 +81,8 @@ The following are some guidelines to help ensure your SVG code is accessible:
          <!-- SVG content goes here -->
     </svg>
     ```
-    
-1. Add the **`` aria-describedby ``** attribute to the **`` <svg> ``** tag. 
+
+1. Add the **`` aria-describedby ``** attribute to the **`` <svg> ``** tag.
 
     ```html
     <svg aria-describedby="my-title my-description">
@@ -92,7 +91,7 @@ The following are some guidelines to help ensure your SVG code is accessible:
          <!-- SVG content goes here -->
     </svg>
     ```
-    
+
 1. To define the role of the SVG as an image within the accessibility context, add the **`` role=”img” ``** attribute to the **`` <svg> ``** tag.
 
    ```html
@@ -104,7 +103,6 @@ The following are some guidelines to help ensure your SVG code is accessible:
     ```
 
 After completing these steps, set your SVG code to the SVGCode property on the InlineSVG pattern.
-
 
 ## Properties
 

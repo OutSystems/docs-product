@@ -215,4 +215,3 @@ The list of possible values can be an Attribute of an Entity, an Attribute of a 
 </tr>
 </tbody>
 </table>
-

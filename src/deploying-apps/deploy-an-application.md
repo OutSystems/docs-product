@@ -23,11 +23,13 @@ topic:
 
 In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>) takes a version of the application from one environment and deploys it in another. Just select the tagged version of the application and LifeTime deploys it in the exact development state in which it was tagged.
 
+To prevent accidental deployments to incorrect environments, Lifetime 11.70.0 version onwards supports [blocking specific apps from being deployed](block-app-from-deployment.md) to an environment.
+
 **Note:** Application and module names must be unique within each environment and as you stage, name changes are propagated to the target environments. It is important to keep all environments up to date when changing application or module names to avoid the following scenarios:
 
-- [LifeTime staging aborts after renaming an app or module](https://success.outsystems.com/Support/Troubleshooting/Application_lifecycle/LifeTime_staging_aborts_after_renaming_an_app_or_module)
+* [LifeTime staging aborts after renaming an app or module](https://success.outsystems.com/Support/Troubleshooting/Application_lifecycle/LifeTime_staging_aborts_after_renaming_an_app_or_module)
 
-- [Application renamed unexpectedly after staging](https://success.outsystems.com/Support/Troubleshooting/Application_lifecycle/Application_renamed_unexpectedly_after_staging)
+* [Application renamed unexpectedly after staging](https://success.outsystems.com/Support/Troubleshooting/Application_lifecycle/Application_renamed_unexpectedly_after_staging)
 
 Here's an example of deploying applications in LifeTime.
 
@@ -76,11 +78,11 @@ To deploy both applications to Quality, do the following:
     Note: If LifeTime detects any changes in the applications included in the plan either in the source or in the target environment, it will show a **Refresh Applications** sticker that you can click to [refresh the applications](#refresh) included in the plan.
 
 1. The deployment plan is OK (all green). Click **CONTINUE** to move on.
-    
+
     ![LifeTime deployment plan showing all checks passed and the CONTINUE button enabled](images/deploy-an-application-7.png "Deployment Plan Validation")
 
 1. Type the **Deployment Notes** and click the **Deploy Now** button to execute the deployment.
-    
+
     ![Field for entering deployment notes and the Deploy Now button to execute the deployment in LifeTime](images/deploy-an-application-8.png "Deployment Notes and Deploy Now Button")
 
 When the deployment finishes, both applications have the same tagged version in both environments.
@@ -126,9 +128,9 @@ After creating a deployment plan and adding applications to it, OutSystems notif
 
 The detected changes include:
 
-* In the **source** environment, publishing/moving a module of an application included in the plan 
+* In the **source** environment, publishing/moving a module of an application included in the plan
 * In the **target** environment, publishing/moving **any** module of an application
-* In the **source**/**target** environment, tagging a version of an application included in the plan 
+* In the **source**/**target** environment, tagging a version of an application included in the plan
 
 When any of these changes is detected, a **Refresh Applications** sticker appears under the page title heading of the deployment plan creation screen:
 
@@ -142,3 +144,9 @@ The refresh operation does the following:
 * Applications with the "Tag & Deploy" option selected will be deployed with the most recent code.
 * Any new tags created outside the plan are shown in the deployment options and can be selected for deployment.
 * All deployment options previously selected are kept, except if they are no longer available.
+
+## Additional resources
+
+* [Block an app from deployment](block-app-from-deployment.md)
+
+* [Block newly created apps from deployement](block-app-from-deployment.md#block-a-newly-created-app-from-deployment)

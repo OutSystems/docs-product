@@ -37,22 +37,23 @@ To further enhance the scrolling experience, it’s possible to configure the vi
 
 ![Screenshot showing the virtualization thresholds before and after a list in OutSystems.](images/virtualization-before-after-ss.png "List Virtualization Thresholds")
 
-``Virtualization-threshold-before`` renders the elements before the first visible element, even if they are not visible. ``virtualization-threshold-after`` renders the elements after the last visible element, even if they are not visible. 
+``Virtualization-threshold-before`` renders the elements before the first visible element, even if they are not visible. ``virtualization-threshold-after`` renders the elements after the last visible element, even if they are not visible.
 
 You can also deactivate the virtualization by setting the List attribute value to ``disable-virtualization=True``.
 
 ![Screenshot demonstrating how to disable virtualization for a list in OutSystems.](images/virtualization-disable-ss.png "Disabling List Virtualization")
 
 ## Scroll threshold
+
 When the List reaches the scroll threshold value, the list triggers the OnScrollEnding event. You can configure this event to load more data into the list which allows the user to keep scrolling continuously. The scroll threshold default value is 2000 pixels. To change the scroll ending threshold, set the ``infinite-scroll-threshold`` in the **Attributes** of the List.
 
 ![Screenshot illustrating the configuration of infinite scroll threshold for a list in OutSystems.](images/virtualization-infinite-ss.png "Infinite Scroll Threshold Configuration")
 
 ## Known Issues
-You should avoid using list virtualization when your list items have complex blocks with built-in aggregates or you are using custom or third-party JavaScript that interacts with the list items. Since virtualization adds and removes elements from the DOM, and the aggregates of a block run automatically when they are added to the DOM, scrolling a List whose items contain blocks with aggregates will constantly trigger their execution, which may result in a significant amount of server requests that can hinder server performance. 
 
-To prevent this issue, you can either disable the list virtualization or fetch all the data on the screen and pass it as parameters to the blocks. If you encounter any other UI/UX issues when using the List widget (for example, scrolling or list item visibility), a possible workaround is disabling list virtualization. For more details on how to disable list virtualization, see the [List virtualization](#list-virtualization). 
+You should avoid using list virtualization when your list items have complex blocks with built-in aggregates or you are using custom or third-party JavaScript that interacts with the list items. Since virtualization adds and removes elements from the DOM, and the aggregates of a block run automatically when they are added to the DOM, scrolling a List whose items contain blocks with aggregates will constantly trigger their execution, which may result in a significant amount of server requests that can hinder server performance.
 
+To prevent this issue, you can either disable the list virtualization or fetch all the data on the screen and pass it as parameters to the blocks. If you encounter any other UI/UX issues when using the List widget (for example, scrolling or list item visibility), a possible workaround is disabling list virtualization. For more details on how to disable list virtualization, see the [List virtualization](#list-virtualization).
 
 ## Properties
 
@@ -190,4 +191,3 @@ To prevent this issue, you can either disable the list virtualization or fetch a
 </tr>
 </tbody>
 </table>
-

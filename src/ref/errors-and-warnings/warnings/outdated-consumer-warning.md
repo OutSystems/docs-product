@@ -28,4 +28,3 @@ Cause
 
 Recommendation
 :   To start using the latest implementation of your producer module, the consumer module must be republished, otherwise the consumer will keep using the previous version. The consumer has no need to refresh the producer dependencies.
-

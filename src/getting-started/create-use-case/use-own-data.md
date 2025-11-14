@@ -41,4 +41,3 @@ The key steps for replacing the sample data in your use-case app with your own e
 1. Get external data from an external database, a System of Record (SoR), or an Excel file in your app. Check [this article to learn about the external data sources you can use in your app and how you to get the data in your app](get-external-data.md).
 
 1. Use your data in the screens of the app. Check [this article to learn how to use your data in the UI of your app](replace-data-sauce.md)
-

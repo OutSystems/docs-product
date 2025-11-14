@@ -25,7 +25,7 @@ This series of articles helps you on providing guidelines and best practices on 
 
 ## What’s the challenge?
 
-As you know by now, there are several differences between developing a traditional web and a mobile application in OutSystems. 
+As you know by now, there are several differences between developing a traditional web and a mobile application in OutSystems.
 
 First of all, the mobile application lifecycle is completely different. There is no preparation, but there are several events to fetch data or initialize variables. The mobile application has local storage to speed up common operations or to support offline navigation, which is an additional aspect to take into consideration.
 
@@ -35,7 +35,7 @@ It has a dedicated JavaScript node that allows you not only to run any snippet y
 
 Several dedicated widgets are exclusive to the mobile version and were optimized for mobile usage.
 
-Also, the architecture of such applications must also be approached in a very different level. 
+Also, the architecture of such applications must also be approached in a very different level.
 
 Having to deal with all this while having different teams developing, it's huge. That's why we recommend you to understand about:
 
@@ -50,4 +50,3 @@ Besides this section we recommend checking the following resources:
 * [Mobile Architecture Tech Talk](https://learn.outsystems.com/training/journeys/odc-2018-architecture-547/-odc-2018-mobile-architecture/o11/2474)
 
 * [Mobile Application Architecture Training](https://learn.outsystems.com/training/journeys/mobile-app-architecture-411)
-

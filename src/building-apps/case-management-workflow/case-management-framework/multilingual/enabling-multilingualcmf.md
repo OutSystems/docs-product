@@ -31,9 +31,9 @@ This section describes how to translate the CM static entities in your `<busines
 
 Translate only the attributes that need translation. The Id attributes, which are displayed in the translation window are text identifiers, and shouldn't be translated.
 
-1.  Open the **&lt;business-entity&gt;\_CS** module.
+1. Open the **&lt;business-entity&gt;\_CS** module.
 
-1.  Go to the **Data** tab, right-click the **Multilingual Locales** folder and add your desired Locales. Select the most generic locale - for example, (pt) as opposed to (pt-PT).
+1. Go to the **Data** tab, right-click the **Multilingual Locales** folder and add your desired Locales. Select the most generic locale - for example, (pt) as opposed to (pt-PT).
 
     ![Screenshot of the process to select a locale in the Multilingual Locales folder within the Data tab](images/select-locale-ss.png "Selecting a Locale")
 
@@ -45,7 +45,7 @@ Translate only the attributes that need translation. The Id attributes, which ar
 
     </div>
 
-1.  Carry out the translations. Translations can either be done manually or by exporting to Excel, both accessed by right-clicking the **Multilingual Locales** folder in the **Data** tab. For the UI and front-end translations, as well as the static entities listed below follow [this guide for Traditional Web apps](../../../ui/multilingual/multilingual-web.md) and [this one for Reactive Web apps and Mobile apps](../../../ui/multilingual-tp/intro.md). 
+1. Carry out the translations. Translations can either be done manually or by exporting to Excel, both accessed by right-clicking the **Multilingual Locales** folder in the **Data** tab. For the UI and front-end translations, as well as the static entities listed below follow [this guide for Traditional Web apps](../../../ui/multilingual/multilingual-web.md) and [this one for Reactive Web apps and Mobile apps](../../../ui/multilingual-tp/intro.md).
 
 Below is a list of setup CMf static entities that you have to translate. Note that these names apply to the example described in this article.
 
@@ -59,7 +59,7 @@ Below is a list of setup CMf static entities that you have to translate. Note th
 
 ## Enabling the translation to a given locale
 
-In this procedure you create an action to enable the translation based on the specified locale. 
+In this procedure you create an action to enable the translation based on the specified locale.
 
 The image below shows a sample completed action flow. It includes the optional CaseActions static entity. In your action flow, ensure all connections for your Case Definition and Case Status static entities correspond with those shown:
 
@@ -124,7 +124,7 @@ The image below shows a sample completed action flow. It includes the optional C
 
 1. Drag an **Assign** to the flow. Add the Assignment **SetupData_Output = SetupData\_Input**. This assigns the output parameter called **SetupData\_Output** as the input data that was received previously.
 
-1. Ensure all connections are made as shown in the image. 
+1. Ensure all connections are made as shown in the image.
 
 This action should be called in the timer as many times as the amount of languages that you want to add, further explained in the following section.
 

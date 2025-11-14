@@ -26,12 +26,9 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Events
 
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
-SwipeDown  |  The event is triggered after a swipe down.  |  False 
-SwipeLeft  |  The event is triggered after a swipe left.  |  False
-SwipeRight  |  The event is triggered after a swipe right.  |  False
-SwipeUp  |  The event is triggered after a swipe up.  |  False  
-
-
-
+| **Event Name** |  **Description** |  **Mandatory** |
+| ---|---|--- |
+| SwipeDown  |  The event is triggered after a swipe down.  |  False |
+| SwipeLeft  |  The event is triggered after a swipe left.  |  False |
+| SwipeRight  |  The event is triggered after a swipe right.  |  False |
+| SwipeUp  |  The event is triggered after a swipe up.  |  False |

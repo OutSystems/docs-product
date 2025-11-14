@@ -25,7 +25,6 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-
 Allows the user to select one or more values from a list of possible values.
 
 ![Screenshot of a List Box widget example in a Traditional Web App](images/listbox-example.png "List Box Example")
@@ -71,7 +70,7 @@ In the following example, the user selects the second value from a list (item `[
 
 You must take care when using Ajax refresh operations to refresh the List Box widget. Doing a refresh clears the currently selected values.
 
-Executing any action that performs a Submit operation (for example, clicking on a button or link with the *Method* property set to `Submit`) also clears the current selection of the List Box widget.
+Executing any action that performs a Submit operation (for example, clicking on a button or link with the _Method_ property set to `Submit`) also clears the current selection of the List Box widget.
 
 To maintain the selection when there's an Ajax refresh, you can follow an approach similar to the following:
 
@@ -244,4 +243,3 @@ If you're allowing users to select multiple values in a List Box widget, conside
 </tr>
 </tbody>
 </table>
-

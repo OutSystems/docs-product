@@ -22,7 +22,7 @@ You should create such Screen Templates that, when used by developers, produce S
 
 In general, you should:
 
-* Use public Blocks and UI elements to avoid duplicates in the target module. 
+* Use public Blocks and UI elements to avoid duplicates in the target module.
 * Enter the metadata to help developers find the Screen Template they need.
 * Create logic that's sufficient for UI.
 * Make your Screen Templates as reusable as possible.
@@ -56,7 +56,7 @@ In Traditional Web App use the **Extended Properties** pane to add the same attr
 
 ### Expressions
 
-Design Screen Templates in such a way that it's quick to understand how the UI elements and attributes work together, as this makes Screens quicker to troubleshoot. 
+Design Screen Templates in such a way that it's quick to understand how the UI elements and attributes work together, as this makes Screens quicker to troubleshoot.
 
 ### Data sources
 
@@ -92,8 +92,8 @@ Use the OutSystems UI Framework CSS classes or classes from your default Theme. 
 
 ## Preview and testing
 
-In cases where an element collapses within a branch of the If tool and breaks the preview in the main editor, wrap the element inside a Container. This forces the element to take the full width of the parent Container and fixes the preview. 
- 
+In cases where an element collapses within a branch of the If tool and breaks the preview in the main editor, wrap the element inside a Container. This forces the element to take the full width of the parent Container and fixes the preview.
+
 ![Animated GIF demonstrating the preview and testing process of Screen Templates within the editor](images/gif-2.png "Preview and Testing of Screen Templates")
 
 Use a "Work in progress" category, or similar, to let the developers know which Screen Templates are work in progress.

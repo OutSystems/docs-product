@@ -122,4 +122,3 @@ For more information see the [expression widget](../../lang/auto/servicestudio-p
 </tr>
 </tbody>
 </table>
-

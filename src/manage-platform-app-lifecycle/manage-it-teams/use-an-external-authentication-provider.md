@@ -25,7 +25,7 @@ The authentication of **end users**, i.e. the users of your OutSystems applicati
 
 </div>
 
-OutSystems allows you to manage IT users (developers, testers, operators). By default, when these users access OutSystems, they're authenticated using the built-in authentication mechanism. 
+OutSystems allows you to manage IT users (developers, testers, operators). By default, when these users access OutSystems, they're authenticated using the built-in authentication mechanism.
 
 Usually you have other systems and you want your users to only have one account to authenticate in all of them. OutSystems allows this by enabling you to authenticate IT users using an authentication provider of your choice.
 
@@ -45,7 +45,6 @@ When an IT user tries to access OutSystems, it checks which authentication metho
 
 * If configured to use an **external authentication provider**, the platform delegates the authentication to the plugin assigned for it. The plugin is responsible for validating the credentials, and returning a unique user identifier. That unique identifier maps the authenticated user to an OutSystems IT user.
 
-
 ## Change the Authentication Provider
 
 To change the authentication provider:
@@ -58,7 +57,7 @@ To change the authentication provider:
 
 In this example we'll change the platform to authenticate IT users through Active Directory.
 
-### Map users from the external system to OutSystems 
+### Map users from the external system to OutSystems
 
 Before changing the authentication provider, you need to ensure that each IT user that exists on the external directory service has a corresponding OutSystems user.
 
@@ -66,12 +65,11 @@ You can either create the IT users manually, using the infrastructure management
 
 Notice that when creating new IT users in OutSystems you'll have to specify the user password. Since you'll be using an external authentication provider, you can simply use a dummy password when creating OutSystems users, because it won't be used in the authentication process.
 
-
 ### Change the Authentication Plugin
 
-To change the authentication method, in the infrastructure management console, under **User Management**, choose **Authentication Mode**. 
+To change the authentication method, in the infrastructure management console, under **User Management**, choose **Authentication Mode**.
 
-Out of the box, the platform provides an Active Directory (AD) and LDAP authentication providers that you can see listed. 
+Out of the box, the platform provides an Active Directory (AD) and LDAP authentication providers that you can see listed.
 
 To choose an external authentication provider, do the following:
 
@@ -85,23 +83,21 @@ To choose an external authentication provider, do the following:
 
 After setting a new provider, when an IT user connects to a specific environment, the  authentication provider is responsible for authenticating the user on that environment.
 
-
 ### Configure the Authentication Plugin
 
-After choosing the AD authentication provider, it’s time to configure the provider. You will need to provide configuration values for a single environment and then propagate those configuration values to other environments. 
+After choosing the AD authentication provider, it’s time to configure the provider. You will need to provide configuration values for a single environment and then propagate those configuration values to other environments.
 
-To start the configuration: 
+To start the configuration:
 
-1. Click in the **Configuring** link. This will open the configuration screen of the authentication provider in the infrastructure management console environment. 
+1. Click in the **Configuring** link. This will open the configuration screen of the authentication provider in the infrastructure management console environment.
 
     ![Screenshot of the Active Directory authentication configuration page with the default domain set to OUTSYSTEMS.](images/use-an-external-authentication-provider-2.png "Configuring Active Directory Authentication")
 
     In this example, the Active Directory domain was set to `OUTSYSTEMS`.
 
-1. After entering the necessary data, click in the **Save Configuration** button. 
+1. After entering the necessary data, click in the **Save Configuration** button.
 
 1. Close the current provider configuration page, returning to the **Authentication Mode** page.
-
 
 ### Test and Propagate Configuration Settings
 
@@ -137,7 +133,6 @@ After all necessary configuration settings have been defined and before propagat
 1. If all the tests succeeded, apply the configurations to all environments by clicking in the **Apply configurations** link.
 
 As a consequence, all IT users logged in OutSystems will need to login again, now with their Active Directory credentials.
-
 
 ## Get or Customize an Authentication Provider
 

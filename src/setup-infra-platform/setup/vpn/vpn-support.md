@@ -1,6 +1,6 @@
 ---
 summary: Explore how to establish a secure site-to-site VPN connection between your on-premises network and OutSystems 11 (O11) Cloud hosted on AWS.
-tags:
+tags: vpn setup, outsystems cloud, aws, site-to-site vpn, network security
 locale: en-us
 guid: f05c9cb8-7c15-4b9d-bf6c-c2da72993ff8
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,8 +8,13 @@ platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=620:3
 coverage-type:
   - apply
+audience:
+  - platform administrators
+  - infrastructure managers
+  - architects
+outsystems-tools:
+  - none
 ---
-
 # Set up a VPN to your OutSystems Cloud
 
 This topic details how you can set up a site-to-site VPN (virtual private network) connection that allows secure communication between your on-premises network and OutSystems Cloud.
@@ -173,28 +178,28 @@ Configure your VPN gateway using the values provided in the configuration file y
 
 If you want to use your own configuration, make sure your VPN gateway configuration values respect the following AWS requirements:
 
-Phase 1 Parameters | |
----|---
-Protocol | IKE v1 or IKE v2
-Authentication Method | Pre-shared Key
-Protocol Communications | Encapsulated UDP port 500, NAT-T (UDP port 4500)
-Encryption Algorithm | AES-128, AES-256
-Diffie-Hellman Group | 2 (1024 bit), 14-18 (2048 bit), 22, 23, and 24 (2048 bit)
-Perfect Forward Secrecy (PFS) | Yes
-Hashing Algorithm for Integrity | SHA-1,  SHA-256, SHA-512
-Re-negotiation time | 28800 seconds
-Mode | Main
+| Phase 1 Parameters | |
+| ---|--- |
+| Protocol | IKE v1 or IKE v2 |
+| Authentication Method | Pre-shared Key |
+| Protocol Communications | Encapsulated UDP port 500, NAT-T (UDP port 4500) |
+| Encryption Algorithm | AES-128, AES-256 |
+| Diffie-Hellman Group | 2 (1024 bit), 14-18 (2048 bit), 22, 23, and 24 (2048 bit) |
+| Perfect Forward Secrecy (PFS) | Yes |
+| Hashing Algorithm for Integrity | SHA-1,  SHA-256, SHA-512 |
+| Re-negotiation time | 28800 seconds |
+| Mode | Main |
 
-Phase 2 Parameters| |
----|---
-Protocol | IKE Phase II (IPSEC SA)
-IPSec Protocol | ESP; UDP port 500; NAT-T is supported on your side
-Encryption Algorithm | AES-128, AES-256
-Encryption Mode | Tunnel
-Diffie-Hellman Group | 2 (1024 bit), 5 (1536 bit), 14-18 (2048 bit), 22, 23, and 24 (2048 bit)
-Hashing Algorithm for Integrity | SHA-1,  SHA-256, SHA-512
-Lifetime Measurement | Time
-Time Lifetime | 3600 seconds
+| Phase 2 Parameters| |
+| ---|--- |
+| Protocol | IKE Phase II (IPSEC SA) |
+| IPSec Protocol | ESP; UDP port 500; NAT-T is supported on your side |
+| Encryption Algorithm | AES-128, AES-256 |
+| Encryption Mode | Tunnel |
+| Diffie-Hellman Group | 2 (1024 bit), 5 (1536 bit), 14-18 (2048 bit), 22, 23, and 24 (2048 bit) |
+| Hashing Algorithm for Integrity | SHA-1,  SHA-256, SHA-512 |
+| Lifetime Measurement | Time |
+| Time Lifetime | 3600 seconds |
 
 ### Step 5. Configure your firewall { #configure-firewall }
 

@@ -32,7 +32,6 @@ You can troubleshoot issues in your mobile app using [Google Chrome's Developer 
 
 There are a few tips that can streamline your troubleshooting process while using Chrome Developer Tools. Check the  [Troubleshooting tips](#tips) section for more information.
 
-
 ## Troubleshoot using Chrome
 
 You can troubleshoot mobile app issues in your Chrome desktop browser if you're not using native plugins or if all native plugins have fallbacks in place that allow your mobile app to work properly outside a real mobile device.
@@ -53,7 +52,7 @@ Check the [Generated JavaScript code architecture](#generated-javascript-code-ar
 You can troubleshoot your mobile app as soon as you publish it, checking its logic, screens, and viewing the local storage. To do it:
 
 1. Open the Chrome browser on the desktop (use the latest version).
-1. Open Chrome Developer Tools (for example, by pressing `F12`) and start debugging or troubleshooting. 
+1. Open Chrome Developer Tools (for example, by pressing `F12`) and start debugging or troubleshooting.
 
 Check the [Developer Tools JavaScript Debugging Reference](<https://developer.chrome.com/docs/devtools/javascript/reference>) from Google for more information on the debugging features provided by Chrome Developer Tools.
 
@@ -178,17 +177,17 @@ The explanation about the highlighted sections is in the table below. Please not
 
 ### JavaScript files roles
 
-File | Description
----|---  
-**Module files** | |
-`<ModuleName>.controller.js` | Global client actions of the `<ModuleName>` module.
-`<ModuleName>.entities.js` | SQL code to manipulate the local entities of the `<ModuleName>` module.
-`<ModuleName>.model.js` | Definitions for the `<ModuleName>` module's local entities (including referenced entities).
-`<ModuleName>.languageResources.js` | Validation messages defined in the `<ModuleName>` module.
-**UI Flow files** | |
-`<ModuleName>.<UIFlowName>.controller.js` | Exception handler of the `<UIFlowName>` flow.
-**Screen file, Block file** | |
-`<ModuleName>.<UIFlowName>.<ScreenName>.mvc.js` `<ModuleName>.<UIFlowName>.<BlockName>.mvc.js` | Contains the actions and events, definition of variables and widget rendering code for the screen/block element.
+| File | Description |
+| ---|--- |
+| **Module files** | |
+| `<ModuleName>.controller.js` | Global client actions of the `<ModuleName>` module. |
+| `<ModuleName>.entities.js` | SQL code to manipulate the local entities of the `<ModuleName>` module. |
+| `<ModuleName>.model.js` | Definitions for the `<ModuleName>` module's local entities (including referenced entities). |
+| `<ModuleName>.languageResources.js` | Validation messages defined in the `<ModuleName>` module. |
+| **UI Flow files** | |
+| `<ModuleName>.<UIFlowName>.controller.js` | Exception handler of the `<UIFlowName>` flow. |
+| **Screen file, Block file** | |
+| `<ModuleName>.<UIFlowName>.<ScreenName>.mvc.js` `<ModuleName>.<UIFlowName>.<BlockName>.mvc.js` | Contains the actions and events, definition of variables and widget rendering code for the screen/block element. |
   
 ### How are flow nodes represented in JavaScript
 

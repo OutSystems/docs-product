@@ -20,13 +20,13 @@ coverage-type:
 
 # Optimize data preparation
 
-Data preparation for a screen should be very efficient. This ensures a pleasant experience for the user. 
+Data preparation for a screen should be very efficient. This ensures a pleasant experience for the user.
 
 Data preparation is usually inefficient when:
 
   1. The Data Model doesn't support the use case of the screen - for example, it is necessary to group large volume of data by complex criteria to get averages, counts and alikes, or values must be calculated on the fly for each listed record.
 
-  2. Aggregates and loops used instead of lean SQL queries. For example, instead of a single SQL query to combine all the information, a simple aggregate is used to retrieve the data from the master entity. Then, an aggregate inside a loop collects the details for each row to be appended to a record list.
+  1. Aggregates and loops used instead of lean SQL queries. For example, instead of a single SQL query to combine all the information, a simple aggregate is used to retrieve the data from the master entity. Then, an aggregate inside a loop collects the details for each row to be appended to a record list.
 
 ## Impact
 

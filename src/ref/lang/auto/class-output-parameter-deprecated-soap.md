@@ -20,7 +20,6 @@ coverage-type:
 
 # Output Parameter - Deprecated SOAP
 
-
 ## Properties
 
 <table markdown="1">
@@ -109,4 +108,3 @@ coverage-type:
 </tr>
 </tbody>
 </table>
-

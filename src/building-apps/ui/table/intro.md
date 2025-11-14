@@ -32,7 +32,7 @@ When you select a table created with Table Widget, you can use the Table toolbar
 
 The quickest way to create a table in Reactive Web App is by dragging an Entity to a Screen. When you create a table by dragging an Entity, the table comes with the built-in features sorting and pagination.
 
-To change the default number of records to show, edit the value of the **MaxRecords** Local Variable associated with the Screen where you dropped the Entity. 
+To change the default number of records to show, edit the value of the **MaxRecords** Local Variable associated with the Screen where you dropped the Entity.
 
 ![Preview of a table created by dragging an Entity onto a Reactive Web App screen](images/table-from-entity-preview-ss.png "Table Creation from Entity")
 
@@ -41,10 +41,10 @@ To change the default number of records to show, edit the value of the **MaxReco
 To create a Table in a Mobile App, which you distribute as a native mobile app or Progressive Web App (PWA), fetch some data to the Screen and then add Table to the Screen. Here is an example.
 
 1. Right-click the Screen in the **Interface** tab and select **Fetch Data from Database** or **Fetch Data from Local Storage**. The Aggregate editor opens.
-2. Drag an Aggregate from the **Data** tab to the Aggregate editor. The data preview now shows.
-3. Go back to the Screen. Search for Table in the widget toolbox. Drag the Table to the Screen.
-4. Select the Table. From the list in **Table** > **Properties** > **Source** select the List that was created previously by adding the Aggregate.
-5. Expand the Aggregate and Entity associated with the Screen. To create the columns, drag the Entity Attributes to the Table. The Table preview populates with sample the data preview.
+1. Drag an Aggregate from the **Data** tab to the Aggregate editor. The data preview now shows.
+1. Go back to the Screen. Search for Table in the widget toolbox. Drag the Table to the Screen.
+1. Select the Table. From the list in **Table** > **Properties** > **Source** select the List that was created previously by adding the Aggregate.
+1. Expand the Aggregate and Entity associated with the Screen. To create the columns, drag the Entity Attributes to the Table. The Table preview populates with sample the data preview.
 
     ![Screenshot demonstrating how to add columns to a Table in a Mobile or Progressive Web App](images/table-mobile-app-create-column-ss.png "Adding Columns to Table in Mobile App")
 

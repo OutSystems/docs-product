@@ -63,11 +63,11 @@ To configure Akamai CDN/WAF:
         1. Press **next**
 
            <div class="info" markdown="1">
-            
+
             To avoid stale cache issues, make sure you adopt the platform setup recommendations documented [here](https://success.outsystems.com/documentation/11/setup_outsystems_infrastructure_and_platform/setting_up_outsystems/using_a_cdn_with_outsystems/#cache-timeout).
 
            </div>
-           
+
     1. On the **Security Settings** tab, give a name for this configuration and click **Next**.
     1. On the **Review and activate** tab, you can review the applied settings in the previous steps. If you’re happy with the settings click **Activate**.
     1. On the **Verify** step, perform the host file changes and test that your settings work. Click **Next**.
@@ -106,7 +106,7 @@ To customize the rules on your Akamai WAF, do the following:
         ![Screenshot of Akamai WAF custom rule structure interface showing match criteria and request method settings.](images/akamai-rule-structure.png "Akamai Custom Rule Structure")
     This rule will attempt to block suspicious patterns of access to your filesystem:
     1. In the end insert a tag for this rule and click **Save**
-    1.  Apply the rule and select the action you want to occur when it triggers following this [Akamai documentation](https://techdocs.akamai.com/app-api-protector/docs/apply-custom-rule).
+    1. Apply the rule and select the action you want to occur when it triggers following this [Akamai documentation](https://techdocs.akamai.com/app-api-protector/docs/apply-custom-rule).
 1. Remember, there should be a balance between the rules you implement and the impact it may bring to your applications security. Implementing too many rules without value may compromise the performance of your applications.
 1. When you’re happy with the WAF security changes, you can click on **Activate** > Select the Network and insert Activation Notes. In the end click **Activate**.
 

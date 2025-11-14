@@ -113,17 +113,17 @@ For pre-production, you should create a custom checklist containing all the requ
 
 ![Flowchart illustrating the recommended order of upgrading environments following the staging lifecycle](images/infra-staging-lifecycle-diag.png "Infrastructure Staging Lifecycle")
 
-#### Go live strategies { #go-live }
+### Go live strategies { #go-live }
 
 When upgrading the Platform Server you should consider that the environment is literally under maintenance. Therefore, if you already have live applications, this process may impact them and, as such, you should define a strategy for the upgrade of your Production environment, based on the priority of your applications.
 
-##### Downtime upgrade { #downtime }
+#### Downtime upgrade { #downtime }
 
 A Downtime approach is the safest way to perform an upgrade and advised when there are no business requirements for zero-downtime. By stopping the Production environment and preventing end-users access, the Upgrade process consistency is guaranteed, and a rollback can happen with no data loss.
 
 ![Illustration of the downtime upgrade process where the production environment is stopped during the upgrade](images/downtime-upgrade-diag.png "Downtime Upgrade Process")
 
-##### Zero-downtime upgrade { #zero-downtime }
+#### Zero-downtime upgrade { #zero-downtime }
 
 Choosing to do a Zero-Downtime Upgrade means that if you need to rollback, you will most certainly have data loss. To successfully perform a Zero-Downtime Upgrade, your environment requires multiple Front Ends in each OutSystems Zone. **If you don’t have this feature enabled you cannot proceed with this solution**. The Upgrade process is done by:
 
@@ -145,9 +145,9 @@ For each environment, the upgrade consists in the following steps:
 
 1. Upgrade the **Platform Server component**.
 
-2. Upgrade the **development tools** of the developers publishing applications in that environment.
+1. Upgrade the **development tools** of the developers publishing applications in that environment.
 
-3. Upgrade the **applications** to the new version. Depending on your upgrade scenario, you might need to publish all your applications, or opt to publish your applications gradually, following your teams' pace. See the [details below](#upgrade-apps).
+1. Upgrade the **applications** to the new version. Depending on your upgrade scenario, you might need to publish all your applications, or opt to publish your applications gradually, following your teams' pace. See the [details below](#upgrade-apps).
 
 ### Step 1. Upgrade the Platform Server component { #upgrade-ps }
 
@@ -165,8 +165,8 @@ In the OutSystems Cloud, the process of upgrading the Platform Server is handled
 
 1. OutSystems will promptly contact you to discuss the schedule and plan for the upgrade.
 
-1. OutSystems proceeds with the upgrade of the environment on the agreed schedule. 
-    
+1. OutSystems proceeds with the upgrade of the environment on the agreed schedule.
+
     1. When upgrading the **Development environment** of your infrastructure to **Platform Server 11.11.3 or earlier**, OutSystems also installs the latest version of the following components:
 
         * [OutSystems UI](https://www.outsystems.com/forge/component-overview/1385/outsystems-ui-o11)
@@ -178,7 +178,7 @@ In the OutSystems Cloud, the process of upgrading the Platform Server is handled
         * [OutSystems Templates Reactive](https://www.outsystems.com/forge/component-overview/6335/outsystems-templates-reactive-o11)
         * [OutSystems Screen Templates Traditional](https://www.outsystems.com/forge/component-overview/4146/outsystems-screen-templates-traditional-o11)
         * [OutSystems Sample Data](https://www.outsystems.com/forge/component-overview/4145/outsystems-sample-data-o11)
-    
+
     1. When upgrading to **Platform Server 11.12.0 or later**, you're reponsible for updating those components.
 
 1. If you are upgrading from **Platform Server 11.x** to **Platform Server 11.12.0 or later**, you receive an email indicating that the Platform Server has been upgraded in your environment, and OutSystems is now [preparing your modules](upgrade-platform-module-prep.md) for the new version. This operation takes place outside your maintenance window as it doesn't require any downtime. Once the modules preparation step finishes, you are able to [publish your applications in the new version](#upgrade-apps), at your own pace.

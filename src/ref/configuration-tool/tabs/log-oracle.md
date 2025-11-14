@@ -24,13 +24,13 @@ The following configurations are available in the **Log** tab when the **Databas
 
 This area contains general configurations for the Oracle database.
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-Naming Method | The method to connect to the Oracle database server. | `Service Name`
-Host | The hostname or IP address to the database server.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost`
-Port | The port on which the database service listens.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521`
-Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. |
-TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. |
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| Naming Method | The method to connect to the Oracle database server. | `Service Name` |
+| Host | The hostname or IP address to the database server.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost` |
+| Port | The port on which the database service listens.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521` |
+| Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | |
+| TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. | |
 
 For advanced settings, click the **Advanced Settings** link.
 
@@ -85,22 +85,22 @@ OutSystems supports Unicode for Oracle databases. To start developing with suppo
 
 The Administrator section allows you to configure the database user that manages the logging database. This user owns the log tables, views, and indexes.
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-User | Name of the user that's the owner of log tables and associated objects. | `OSADMIN_LOG`  
-Password | Password for the user. |  
-Tablespace | Table space holding system tables. | `OSSYS_LOG`
-Index Tablespace | Table space holding all indexes of the platform. | `OSIDX_LOG`
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| User | Name of the user that's the owner of log tables and associated objects. | `OSADMIN_LOG` |
+| Password | Password for the user. | |
+| Tablespace | Table space holding system tables. | `OSSYS_LOG` |
+| Index Tablespace | Table space holding all indexes of the platform. | `OSIDX_LOG` |
   
 ## Runtime section
 
 In this section you specify the login for the user that owns user tables in the logging database.
 
-Configuration | Description | Default value  
---------------|-------------|--------------  
-User | Name of the user that's the owner of user tables created in the logging database. | `OSRUNTIME_LOG`
-Password | Password for the specified user. |
-Tablespace | Table space holding user tables created in the logging database. | `OSUSR_LOG`
+| Configuration | Description | Default value |
+| --------------|-------------|-------------- |
+| User | Name of the user that's the owner of user tables created in the logging database. | `OSRUNTIME_LOG` |
+| Password | Password for the specified user. | |
+| Tablespace | Table space holding user tables created in the logging database. | `OSUSR_LOG` |
 
 ## Create/Upgrade Database button
 

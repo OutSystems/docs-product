@@ -21,14 +21,13 @@ topic:
 
 # Local Variable
 
-
 A Local Variable exists only in the scope of its parent element, for example, a Screen, Action, Web Block, or Automatic Activity. A Local Variable can only be assigned and used locally inside that scope. Local variables are destroyed when execution leaves the scope of the parent element. The image below shows how to add a Local Variable inside a Screen.  
 
 ![Screenshot showing the process of adding a Local Variable inside a Screen in Service Studio](images/add-local-variable-inside-screen-ss.png "Adding a Local Variable in Service Studio")
 
 ## How to use
 
-This example shows how to use a Local Variable to keep the value of a Search widget. The value of the Local Variable is then used to filter an Aggregate. 
+This example shows how to use a Local Variable to keep the value of a Search widget. The value of the Local Variable is then used to filter an Aggregate.
 
 1. Select the Input widget.
 
@@ -44,18 +43,17 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
 1. On the **Filter** tab, click **Add filter**.
 
-1. Insert the filter condition. 
+1. Insert the filter condition.
 
     ```
     Employee.FirstName like "%" + SearchKeyword + "%"
     ```
 
+1. To save the filter, click **Close**.
 
-1. To save the filter, click **Close**. 
+    ![Screenshot of a filtered aggregate in Service Studio where the filter condition includes a Local Variable named SearchKeyword](images/filtered-aggregate-ss.png "Filtered Aggregate Using a Local Variable")
 
-    ![Screenshot of a filtered aggregate in Service Studio where the filter condition includes a Local Variable named SearchKeyword](images/filtered-aggregate-ss.png "Filtered Aggregate Using a Local Variable") 
-
-After you follow these steps and publish your module, you can test the functionality of the filter in your browser. The text inserted in the Input of the Search widget is stored in the defined Local Variable and is then used to filter the aggregate. When you change to another screen or close your browser, the Local Variable is destroyed and the filter no longer applies.   
+After you follow these steps and publish your module, you can test the functionality of the filter in your browser. The text inserted in the Input of the Search widget is stored in the defined Local Variable and is then used to filter the aggregate. When you change to another screen or close your browser, the Local Variable is destroyed and the filter no longer applies.
 
 Learn more in this [lesson about Variables](https://learn.outsystems.com/training/journeys/web-developer-662/variables/o11/316).  
 

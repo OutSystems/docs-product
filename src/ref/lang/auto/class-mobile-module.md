@@ -19,7 +19,6 @@ coverage-type:
 
 # Mobile Module
 
-
 <div class="info" markdown="1">
 
 Applies to Mobile and Reactive Web Apps.
@@ -42,7 +41,7 @@ To create a new in an app, follow these steps in Service Studio:
 
     ![Screenshot of Service Studio interface for creating a new module with module name and type selection](images/servicestudio-new-module.png "Creating a New Module in Service Studio")
   
-2. Click **Create module**. Your new module opens for editing.
+1. Click **Create module**. Your new module opens for editing.
 
 ## Properties
 
@@ -101,7 +100,7 @@ To create a new in an app, follow these steps in Service Studio:
 <td>Yes</td>
 <td>Default Icon</td>
 <td>Identifies the module in the element tree of the development environment.<br/>
-            <strong>Note:</strong> This icon will <em>not</em> be used as the mobile app icon; 
+            <strong>Note:</strong> This icon will <em>not</em> be used as the mobile app icon;
             to change the app icon check <a href="http://www.outsystems.com/DocRouter/Router.aspx?PlatformToolName=ServiceStudio&amp;PlatformVersionNumber=10.0&amp;HelpId=30112">Modify the App Icon</a>.</td>
 </tr>
 <tr >
@@ -303,4 +302,3 @@ To create a new in an app, follow these steps in Service Studio:
 </tr>
 </tbody>
 </table>
-

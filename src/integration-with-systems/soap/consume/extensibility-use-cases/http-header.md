@@ -21,7 +21,7 @@ In this example scenario we will add a new HTTP header to all the requests of a 
 
 _Tip:_ You can adjust the provided example to remove or modify HTTP headers from your request instead of adding a new header by making the necessary adjustments to the `BeforeSendRequest` function.
 
-## Code overview 
+## Code overview
 
 To achieve this, we will need to create C# code to perform the following:
 
@@ -32,7 +32,7 @@ This class will add a message inspector (based on another custom class that we w
 
 1. Create the message inspector class that will add the HTTP header, adding code to the `BeforeSendRequest` function.
 
-## Example 
+## Example
 
 Let's follow a concrete example on how to perform these steps:
 
@@ -58,7 +58,7 @@ using OutSystems.SOAP.API;
 public void MssRegisterHttpHeaderCallback() {
     SoapRequest.RegisterEndpointBehavior(new AddHttpRequestHeaderBehavior());
 }
-```        
+```
 
 3\. Create the custom class `AddSoapHeaderBehavior` implementing WCF's interface `IEndpointBehavior`, containing the following code:
 
@@ -113,6 +113,7 @@ class AddHttpRequestHeaderMessageInspector : IClientMessageInspector {
     }
 }
 ```
+
 In this class we can add code to the function that handles the request (`BeforeSendRequest`), to the one handling the reply (`AfterReceiveReply`) or even to both functions, according to our use case.  
 Since we want to add an element to the SOAP request header, we add code to the `BeforeSendRequest` function.
 
@@ -120,6 +121,6 @@ Since we want to add an element to the SOAP request header, we add code to the `
 
 6\. In Service Studio, add a reference to the "RegisterHttpHeaderCallback" action of your extension in your application module.  
 
-7\. In the flow of the SOAP callback of your SOAP Web Service, i.e. the flow of "OnBeforeRequestAdvanced", drag the "RegisterHttpHeaderCallback" action to the flow. 
+7\. In the flow of the SOAP callback of your SOAP Web Service, i.e. the flow of "OnBeforeRequestAdvanced", drag the "RegisterHttpHeaderCallback" action to the flow.
 
 8\. Publish the application module and test the application, checking that the HTTP header was added to the web service requests.

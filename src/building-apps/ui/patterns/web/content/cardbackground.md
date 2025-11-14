@@ -24,7 +24,7 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-You can use the Card Background UI Pattern to group small pieces of information and highlight them on the screen using a background image. The information is grouped into a small block that is easily noticeable on-screen. 
+You can use the Card Background UI Pattern to group small pieces of information and highlight them on the screen using a background image. The information is grouped into a small block that is easily noticeable on-screen.
 
 ![Screenshot of a card background example in a traditional web app](images/cardbackground-1-ss.png "Card Background Example")
 
@@ -41,9 +41,9 @@ You can use the Card Background UI Pattern to group small pieces of information 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Card Background widget into the Main Content area of your application's screen.

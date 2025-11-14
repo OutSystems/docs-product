@@ -44,7 +44,7 @@ In Service Studio, open a Screen for editing and follow these steps:
 
 <iframe src="https://player.vimeo.com/video/973090137" width="750" height="395" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video displaying how to drag and drop an accelerator into a screen within OutSystems Service Studio.</iframe>
 
-Once you've published your app, you can customize it by, for example, [replacing sample data with your own data](#replace-sample-data-with-real-data) and [adapting the UI and logic](#adapt-the-UI-and-logic) to match the user experience you want to achieve. You can also use the [Map](../patterns/mobile/interaction/map/map.md) accelerator in your app.
+Once you've published your app, you can customize it by, for example, [replacing sample data with your own data](#replace-sample-data-with-real-data) and [adapting the UI and logic](#adapt-the-ui-and-logic) to match the user experience you want to achieve. You can also use the [Map](../patterns/mobile/interaction/map/map.md) accelerator in your app.
 
 ### Replace sample data with real data
 

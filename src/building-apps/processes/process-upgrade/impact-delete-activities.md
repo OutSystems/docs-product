@@ -21,7 +21,6 @@ coverage-type:
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic lists some examples of the impact of removed activities on executing process instances.
 
-
 ## Process Instance is Executing the Removed Activity
 
 In this case the process instance is executing the deleted activity: **the execution is suspended**.

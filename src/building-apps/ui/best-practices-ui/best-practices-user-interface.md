@@ -125,7 +125,7 @@ This is a good idea because it enables reusability between eSpaces and encapsula
 
 ## JavaScript Loading Delay
 
-### Description 
+### Description
 
 Move the JavaScript that is not needed at load time to the bottom of the page to make the page load faster.
 
@@ -143,13 +143,13 @@ This is fundamental rule especially in homepages that need a small load time - i
 
 ## CSS sprite images
 
-### Description 
+### Description
 
 Use CSS sprites that replace several images to reduce the number of server requests and improve screen load times.
 
 ### Solution
 
-Combine images frequently used on the same screen in a single image (CSS sprite) making use of CSS background-image and background-position properties to display the desired image segment. 
+Combine images frequently used on the same screen in a single image (CSS sprite) making use of CSS background-image and background-position properties to display the desired image segment.
 
 Learn more with the [full description of the technique](http://www.websiteoptimization.com/speed/tweak/css-sprites/).
 
@@ -180,4 +180,3 @@ Minification reduces the JavaScript size by removing unnecessary characters and 
 ### Remarks
 
 Minified JavaScript is extremely hard to read so any JavaScript problem in the production environment will be especially hard to diagnose. Furthermore there is some effort involved in maintaining development (non-minified) and production (minified) versions. Stable JavaScript libraries like JQuery and Prototype shouldn't pose any problems. For custom JavaScript, only public high traffic application will yield positive payoffs in using this technique.
-

@@ -36,6 +36,7 @@ To update the new SSL domain name in a mobile application, you must regenerate t
 </div>
 
 ## SSL domain requirements
+
 To configure SSL for your domain, do the following:
 
 1. You must own the desired domain address (for example, www.example.com)
@@ -56,7 +57,7 @@ Certificates follow a chain structure that includes the root, intermediate, and 
 
 To use your domain on OutSystems Cloud, you must upload the SSL certificate before assigning it to the environments:
 
-1. Navigate to the infrastructure management console at *`https://<yourlifetimeenvironment>/lifetime`* and go to the **Environments** tab.
+1. Navigate to the infrastructure management console at `https://<yourlifetimeenvironment>/lifetime` and go to the **Environments** tab.
 
 1. Select the environment you want to use your own HTTPS domain.
 
@@ -100,7 +101,6 @@ A PEM certificate is commonly presented as a set of .PEM files (namely a certifi
 
 ![Screenshot of the form to submit a new PEM format domain certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-2.png "PEM Format Domain Certificate Submission Form")
 
-
 ### Domain certificate in PFX format { #PFX-certificate }
 
 The PFX certificate is the most commonly used format and is identified by a single '.PFX' file with all the certificate information, including the private key, public certificate, and chain.
@@ -121,7 +121,7 @@ To submit a new PFX certificate, you require the following information:
 
 <div class="warning" markdown="1">
 
-Choose the **I don't really know in what format my Domain certificate is** option only when it's impossible to use the PEM and PFX certificate options. 
+Choose the **I don't really know in what format my Domain certificate is** option only when it's impossible to use the PEM and PFX certificate options.
 
 If you have a ZIP file, unzip the zip file and check for .PFX or .PEM file. Then, choose the corresponding option on the wizard to use the .PFX or .PEM files.
 
@@ -145,7 +145,7 @@ To submit a bundle, you require the following information:
 
 ### Certificate validation { #validate-certificate }
 
-To finish the wizard, click **Validate**. Our systems will check the certificate. 
+To finish the wizard, click **Validate**. Our systems will check the certificate.
 
 Once successful, click **Submit**.
 
@@ -168,19 +168,19 @@ If the certificate isn't validated you'll see the **Status** as loading:
 ![Screenshot indicating a loading status for SSL certificate validation in OutSystems Cloud](images/ssl-domain-cloud-lt-6.png "Loading Status for SSL Certificate Validation")
 
 You can only assign the certificate to an environment once the validation process is complete.
- 
+
 OutSystems Support will only contact you if the certificate is missing any information.
 
 ## Assigning the certificate to an environment
 
 You can now assign the certificate to an environment, directly from the **Environments** dashboard:
 
-1. Select the environment and click **Change** in the Secure Endpoint section. 
+1. Select the environment and click **Change** in the Secure Endpoint section.
 
     ![Screenshot of the process to assign an SSL certificate to an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-9.png "Assigning SSL Certificate to an Environment")
 
 1. Select the desired certificate from the drop-down box and click **Next**.  
-    
+
     ![Screenshot of selecting an SSL certificate for an environment in OutSystems Cloud](images/ssl-domain-cloud-lt-10.png "Selecting SSL Certificate for Environment")
 
 1. Choose the hostname for the environment and tick "I have created a CNAME record on my chosen hostname".
@@ -204,12 +204,11 @@ Follow these steps:
 
 1. Make sure you [configure your DNS](#configure-dns)
 
-
 ## Configure your DNS { #configure-dns }
 
 You'll need to configure your DNS to point the hostname that was chosen for an environment to it's default `outsystemsenterprise.com`. You may also do this before uploading the certificate but note that your apps will only use your domain with HTTPS after completing all the steps.
 
-An example : 
+An example :
 
 * Our environment had the `my-environment.outsystemsenterprise.com` hostname.
 * We assigned the new hostname to be `dev.example.com` after uploading a wildcard certificate valid for `*.example.com`.

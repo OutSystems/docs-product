@@ -64,7 +64,7 @@ Since a specific OutSystems customer ultimately designs, develops, and delivers 
 | ( k ) Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz.| Supports| See summary table for remarks |
 | ( l ) When electronic forms are used, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.| Supports| See summary table for remarks |
 
-## Section 1194.22 Web-based Internet Information and Applications 
+## Section 1194.22 Web-based Internet Information and Applications
 
 The VPAT Board interprets paragraphs (a) through (k) of this section as consistent with the following priority 1 Checkpoints of the Web Content Accessibility Guidelines 1.0 (WCAG 1.0) published by the Web Accessibility Initiative of the World Wide Web Consortium.
 
@@ -87,9 +87,9 @@ Find the guidelines at [https://www.outsystems.com/goto/AccessibilityComplianceG
 | ( k ) A text-only page, with equivalent information or functionality, shall be provided to make a web site comply with the provisions of this part, when compliance cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page changes. | Supports| See remarks in summary table and this section notes |
 | ( l ) When pages utilize scripting languages to display content, or to create interface elements, the information provided by the script shall be identified with functional text that can be read by Assistive Technology.| Supports| See summary table for remarks  |
 | ( m ) When a web page requires that an applet, plug-in or other application be present on the client system to interpret page content, the page must provide a link to a plug-in or applet that complies with §1194.21(a) through (l).| Supports| See remarks in summary table and this section notes |
-| ( n ) When electronic forms are designed to be completed on-line, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues. | Supports| 	See summary table for remarks  |
-| ( o ) A method shall be provided that permits users to skip repetitive navigation links.(p) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.| Supports  | 	See summary table for remarks  |
-| ( p ) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.| Supports | 	See summary table for remarks  |
+| ( n ) When electronic forms are designed to be completed on-line, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues. | Supports|  See summary table for remarks  |
+| ( o ) A method shall be provided that permits users to skip repetitive navigation links.(p) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.| Supports  |  See summary table for remarks  |
+| ( p ) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.| Supports |  See summary table for remarks  |
 
 ## Section 1194.31 Functional Performance Criteria
 
@@ -102,7 +102,7 @@ Find the guidelines at [https://www.outsystems.com/goto/AccessibilityComplianceG
 | ( e ) At least one mode of operation and information retrieval that does not require user speech shall be provided, or support for Assistive Technology used by people with disabilities shall be provided.| Supports| See summary table for remarks |
 | ( f ) At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach and strength shall be provided. | Supports | See summary table for remarks |
 
-## Section 1194.41 Information, Documentation and Support 
+## Section 1194.41 Information, Documentation and Support
 
 | Criteria| Supporting Features | Remarks and Explanations|
 |---------|---------------------|-------------------------|

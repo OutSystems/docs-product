@@ -66,14 +66,13 @@ To generate your API key, follow these steps:
 
     If you close the **Your API key** window without saving the key, there is no way of retrieving it again. If you need to replace your key, see the [How to replace a key](#replace-key) section.
 
-
 ## How to replace a key { #replace-key }
 
 If you lost your API key, or if you have some security issues, you might need to replace your key. Follow these steps:
 
 1. In **AI Mentor Studio**, navigate to the **Maintenance** tab and select **Configurations**.
 
-1. In the **AI Mentor Studio API** section, click **Replace API key**. 
+1. In the **AI Mentor Studio API** section, click **Replace API key**.
 
     ![AI Mentor Studio interface with highlighted Replace API key button under Configurations](images/replace-key-ams.png "Replace API Key in AI Mentor Studio")
 

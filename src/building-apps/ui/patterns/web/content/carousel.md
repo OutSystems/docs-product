@@ -39,18 +39,18 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
-    
+
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
+
     1. In the Toolbox, search for the widget again.
 
-1. To From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
+1. To From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen.
 
    ![Dragging the Carousel widget into the main content area of an application screen](images/carousel-9-ss.png "Dragging Carousel Widget into Main Content Area")
 
-1. Place the content you want to appear in the Carousel into the Items placeholder. (In this example we use images.) 
+1. Place the content you want to appear in the Carousel into the Items placeholder. (In this example we use images.)
 
-1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/class-image-widget.md>) into the Light Box Image widget. This is a thumbnail image. 
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/class-image-widget.md>) into the Light Box Image widget. This is a thumbnail image.
 
     The **Select Image** pop-up is displayed.
 

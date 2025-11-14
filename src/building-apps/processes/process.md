@@ -24,8 +24,8 @@ A **Process** is an element that allows you to integrate your business processes
 ## Create a Process
 
 1. In the **module tree**, under **Processes**, right-click on the **Processes** folder and select **Add Process**.
-2. Rename it as desired. OutSystems Platform automatically opens the process flow on the flow canvas.
-3. Design the behavior of the process (i.e. the [process flow](<process-flow/intro.md>)) using the [Process Flow Editor](<process-flow/process-flow-editor.md>).
+1. Rename it as desired. OutSystems Platform automatically opens the process flow on the flow canvas.
+1. Design the behavior of the process (i.e. the [process flow](<process-flow/intro.md>)) using the [Process Flow Editor](<process-flow/process-flow-editor.md>).
 
 A process can have input parameters and output parameters.
 
@@ -39,7 +39,6 @@ When editing expressions in your process flow, you have access to the following 
 
 When you're editing your process flow, all of the process activities available in the scope are present in the Scope tree of the Expression Editor when editing an expression, or in the variables tree of the Select Variable window when trying to use a variable.
 
-
 ## Launching a Process
 
 In your application, a process may be either **automatically launched** when an entity record is created, or **explicitly launched** in an action flow of your actions. In the first case, simply set the `Launch On` process property with the CreateEntity (for example, CreateCustomer) action.
@@ -48,7 +47,7 @@ When a process is automatically launched as result of a Create entity action, an
 
 To explicitly launch the process in your application use the [process extended actions](actions-extended/intro.md).
 
-A process can also be [executed](<../../ref/lang/auto/class-execute-process.md>) in another process flow. 
+A process can also be [executed](<../../ref/lang/auto/class-execute-process.md>) in another process flow.
 
 ### Using Process References
 
@@ -73,16 +72,13 @@ You may add business logic to validate your process instance execution, for exam
 
 Each activity instance has its own life cycle with several states followed from the beginning to the end of the execution. To enforce your activity execution consistency, you may **add business logic** at some points of the activity life cycle.
 
-
 ## Upgrading Your Process
 
 To upgrade your process flow, simply edit the process flow and publish your module. OutSystems automatically performs the process flow upgrade for all executing process instances.
 
-
 ## Using Process Entities
 
 You may set a process to have a Process Entity associated with it. This allows you to persist process information and use it in your application logic.
-
 
 ## Using the Processes API
 

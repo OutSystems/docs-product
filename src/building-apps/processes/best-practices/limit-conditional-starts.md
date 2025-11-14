@@ -26,7 +26,7 @@ When you add [Conditional Starts](<../../../ref/lang/auto/class-conditional-star
 
 1. Each conditional start has its own life cycle and it keeps an activity instance permanently active and listening to events. On each event, a new execution of the flow is launched, meaning that, multiple events launch multiple executions growing the amount of information. When deploying an application, the [impact analysis](../process-upgrade/intro.md) goes over all this information;
 
-2. During the deployment of applications, a specific validation is ran for conditional starts. It goes over all instances of active processes and checks whether each conditional start in the process has an activity instance listening to its event. Any missing activity instance is created. This operation brings an extra overhead to the deployment.
+1. During the deployment of applications, a specific validation is ran for conditional starts. It goes over all instances of active processes and checks whether each conditional start in the process has an activity instance listening to its event. Any missing activity instance is created. This operation brings an extra overhead to the deployment.
 
 In this case, we recommend that you do one of the following:
 

@@ -20,7 +20,7 @@ coverage-type:
 
 In OutSystems, an error is a problem that prevents deploying the module to the server.
 
-Only when all errors are fixed, the module can be deployed to the server. 
+Only when all errors are fixed, the module can be deployed to the server.
 
 For more information about the different errors, see:
 

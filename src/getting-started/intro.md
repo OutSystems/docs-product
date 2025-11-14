@@ -24,19 +24,18 @@ topic:
 OutSystems lets you build great and secure web and mobile apps. This is what you need to get started:
 
 1. Create a [free account](https://www.outsystems.com/home/GetStartedForFree.aspx).
-2. Install [Development Environment](https://www.outsystems.com/home/downloads).
-3. Start **Service Studio** and see the section about [your first app](#your-first-app).
+1. Install [Development Environment](https://www.outsystems.com/home/downloads).
+1. Start **Service Studio** and see the section about [your first app](#your-first-app).
 
-## Your first app 
+## Your first app
 
-To create your first app in Service Studio you can: 
+To create your first app in Service Studio you can:
 
-* Run a **built-in interactive tutorial**. In Service Studio, open the **Help** menu and select **Build an App in 5 minutes tutorial** to start and interactive tutorial. 
+* Run a **built-in interactive tutorial**. In Service Studio, open the **Help** menu and select **Build an App in 5 minutes tutorial** to start and interactive tutorial.
 * Follow **step-by-steps tutorials**. Check out the tutorials about [how to create a mobile app](create-mobile.md) or [how to create a web app](create-reactive-web.md).
 * Start from an **existing sample app**. Create a new app in Service Studio and choose **Start from an app** to see the collection of the prebuilt apps.
 
 ![Screenshot of the Service Studio interface showing the process of starting a new application](images/getting-started-new-app-ss.png "Service Studio New App Interface")
-
 
 ## Creating apps
 
@@ -48,7 +47,6 @@ There are several prebuilt elements that you can use to build your apps faster. 
 * [Screen templates](https://www.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=2)
 * [User interface patterns](https://www.outsystems.com/OutSystemsUIWebsite/PatternsOverview)
 * [Choose the right app for your project](right-app.md)
-
 
 You can also use OutSystems builder to prototype the front end of mobile apps or create workflows, if your product license includes these tools. With the builders you can start creating your apps without Service Studio.
 

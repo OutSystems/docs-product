@@ -18,6 +18,7 @@ coverage-type:
 # Best practices for loading data on mobile screens
 
 ## Pre-requisites
+
 You need to be a [Mobile Web Developer](https://learn.outsystems.com/training/journeys/mobile-developer-679).
 
 ## Loading Data Into Mobile Applications

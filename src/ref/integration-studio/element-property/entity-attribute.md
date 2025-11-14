@@ -21,7 +21,7 @@ The next table presents the properties of the [entity attribute](<../../../integ
   
 |Property|Description|Optionality|Default value|Obs.|
 |--- |--- |--- |--- |--- |
-|Name|Name of the attribute.|Mandatory|`Attribute `|You should change the name of the attribute to a suitable value.<br/>See [rules for naming elements](<../element-naming.md>).|
+|Name|Name of the attribute.|Mandatory|`Attribute`|You should change the name of the attribute to a suitable value.<br/>See [rules for naming elements](<../element-naming.md>).|
 |Original Name|Name of the column in the source database. Can contain any kind of characters supported by the DBMS.|Optional||Automatically filled when introspecting a database.<br/>If this property is empty, the "Name" property value will be used.<br/>![Warning icon indicating potential runtime errors when changing the 'Original Name' property in an imported entity attribute](images/warning-icon.png "Warning Icon") If you change this property value in an imported entity attribute, you might have runtime errors.|
 |Original Type|Type of the attribute in the source database. Can be any value supported by the database.|Optional||Automatically filled when introspecting a database.|
 |Mandatory|Indicates whether the attribute is mandatory or optional.|Mandatory|`Mandatory`|To define an attribute as optional, simply un-check this property.|

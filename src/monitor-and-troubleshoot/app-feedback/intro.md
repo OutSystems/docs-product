@@ -32,7 +32,6 @@ The feedback users send consists of:
 
 ![Screenshot of the App Feedback handling interface showing user feedback details](images/app-feedback-handle-2.png "App Feedback Handling Interface")
 
-
 ## Integrating AppFeedback with 3rd party tools
 
 You can also integrate the feedback process into your corporate tracking tools. OutSystems AppFeedback App Feedback exposes public actions that another OutSystems application can consume directly. The following articles are examples on how you can take advantages of AppFeedback and integrate with external tools:
@@ -41,4 +40,3 @@ You can also integrate the feedback process into your corporate tracking tools. 
 * [Jira](https://www.outsystems.com/blog/posts/jira-integration-app-feedback/)
 
 You can also use directly the components submitted by the OutSystems community, for [JIRA](https://www.outsystems.com/forge/component/2153/feedback-to-jira/), [Zendesk](https://www.outsystems.com/forge/component/2154/feedback-to-zendesk/), and [Asana](https://www.outsystems.com/forge/component/2107/feedback-to-asana/).
-

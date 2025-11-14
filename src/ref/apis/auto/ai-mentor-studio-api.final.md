@@ -575,7 +575,7 @@ AI Mentor Studio API helps you manage technical debt, allowing you to use its da
 
 * Integrate technical debt data from [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md) with other technical debt and BI tools you already use.
 
-* Use technical debt data as a quality gate of an automated CI/CD pipeline. This ensures that deploys meet a predefined technical debt value.   
+* Use technical debt data as a quality gate of an automated CI/CD pipeline. This ensures that deploys meet a predefined technical debt value.
 
 <div class="info" markdown="1">
 
@@ -583,8 +583,7 @@ Note: New findings are only processed every 12 hours.
 
 </div>
 
-
-To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../ai-mentor-studio/aims-api-authentication.md) article. 
+To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../ai-mentor-studio/aims-api-authentication.md) article.
 
 <div class="info" markdown="1">
 
@@ -596,7 +595,7 @@ To authenticate your API requests, follow the guidelines in the [AI Mentor Studi
 
 You can access the **Swagger file** from the [AI Mentor Studio API page](https://aimentorstudio.outsystems.com/AIMentorStudioAPI/rest/V1/):
 
-![Screenshot of the AI Mentor Studio API Swagger interface showing available endpoints](images/api-swagger-aims.png "AI Mentor Studio API Swagger Interface") 
+![Screenshot of the AI Mentor Studio API Swagger interface showing available endpoints](images/api-swagger-aims.png "AI Mentor Studio API Swagger Interface")
 
 <div class="container">
 <h1>V1</h1>
@@ -778,11 +777,11 @@ Offset
 </section>
 
 <section class="sw-responses">
-<p><span class="label label-default">application/json</span> 
+<p><span class="label label-default">application/json</span>
 </p>
 
 <!-- List of response codes -->
-<dl>    
+<dl>
 
 <!-- 200 -->
 <dt class="sw-response-200">
@@ -991,7 +990,7 @@ Tags:
 </section>
 
 <section class="sw-responses">
-<p><span class="label label-default">application/json</span> 
+<p><span class="label label-default">application/json</span>
 </p>
 
 <!-- List of response codes -->
@@ -1155,7 +1154,7 @@ Tags:
 </section>
 
 <section class="sw-responses">
-<p><span class="label label-default">application/json</span> 
+<p><span class="label label-default">application/json</span>
 </p>
 
 <!-- List of response codes -->
@@ -1319,7 +1318,7 @@ Tags:
 </section>
 
 <section class="sw-responses">
-<p><span class="label label-default">application/json</span> 
+<p><span class="label label-default">application/json</span>
 </p>
 
 <!-- List of response codes -->
@@ -1514,7 +1513,7 @@ Team
 </section>
 
 <section class="sw-responses">
-<p><span class="label label-default">application/json</span> 
+<p><span class="label label-default">application/json</span>
 </p>
 
 <!-- List of response codes -->
@@ -1777,7 +1776,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-ApplicationTechnicalDebt" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/ApplicationTechnicalDebt"></a>ApplicationTechnicalDebt:
@@ -1850,7 +1849,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-CategoryDetails" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/CategoryDetails"></a>CategoryDetails:
@@ -1925,7 +1924,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-CategoryTechnicalDebt" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/CategoryTechnicalDebt"></a>CategoryTechnicalDebt:
@@ -2090,7 +2089,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-Level" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/Level"></a>Level:
@@ -2142,7 +2141,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-ModuleDetails" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/ModuleDetails"></a>ModuleDetails:
@@ -2232,7 +2231,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-Page" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/Page"></a>Page:
@@ -2324,7 +2323,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-PatternDetails" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/PatternDetails"></a>PatternDetails:
@@ -2376,7 +2375,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-PatternFinding" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/PatternFinding"></a>PatternFinding:
@@ -2444,7 +2443,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-TeamApplicationInfo" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/TeamApplicationInfo"></a>TeamApplicationInfo:
@@ -2480,7 +2479,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-TeamDetails" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/TeamDetails"></a>TeamDetails:
@@ -2553,7 +2552,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-TeamTechnicalDebt" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/TeamTechnicalDebt"></a>TeamTechnicalDebt:
@@ -2612,7 +2611,7 @@ Team
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-TechnicalDebtLevels" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/TechnicalDebtLevels"></a>TechnicalDebtLevels:

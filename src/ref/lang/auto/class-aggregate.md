@@ -32,7 +32,7 @@ In Traditional Web Apps, Aggregates can only be server-side. To load data on a s
 
 ## How to create an Aggregate
 
-You can create Aggregates in Screens, Blocks, or Action flows. 
+You can create Aggregates in Screens, Blocks, or Action flows.
 
 ### Create an Aggregate in a Screen or Block
 
@@ -45,11 +45,11 @@ There are cases when you always need to fetch all records from the database, for
 
 ### Create an Aggregate in an Action
 
-To add an Aggregate to an Action, drag an **Aggregate** from the toolbox to the flow. 
+To add an Aggregate to an Action, drag an **Aggregate** from the toolbox to the flow.
 
 ![Screenshot demonstrating the addition of a server-side Aggregate to an Action in Service Studio](images/aggregate-server-side-ss.png "Adding an Aggregate to an Action")
 
-There are cases when you always need to fetch all records from the database, for example, to populate drop-down box lists. If you fetch all records using a Data Action, leave the **Max. Records** field empty. In Data Actions, the **Max. Records** value is optional. If you don't provide a value, the Data Action fetches all records from the database. 
+There are cases when you always need to fetch all records from the database, for example, to populate drop-down box lists. If you fetch all records using a Data Action, leave the **Max. Records** field empty. In Data Actions, the **Max. Records** value is optional. If you don't provide a value, the Data Action fetches all records from the database.
 
 ## How to add a data source to an Aggregate
 
@@ -86,20 +86,20 @@ For more information, see the [How To Fetch Data from Multiple Sources in Aggreg
 Once you have your Aggregate with its sources defined, you can filter and sort your results:
 
 * To add filters to your Aggregate, follow the steps in [Filter Query Results](../../../building-apps/data/operations/filter-results.md).  
-For more information, see the [How to Filter Data in an Aggregate](https://www.outsystems.com/training/lesson/1939/demo-how-to-filter-data-in-an-aggregate) demo.
+For more information, see the [How to Filter Data in an Aggregate](https://www.outsystems.com/tk/redirect?g=81a14fff-6fcc-44ef-aedb-75fb9e534d54) demo.
 
 * To sort the results of your Aggregate, follow the steps in [Sort Results in an Aggregate](../../../building-apps/data/operations/sort-aggregate.md).  
-For more information, see the [How To Sort Data in an Aggregate](https://www.outsystems.com/training/lesson/1938/demo-how-to-sort-data-in-an-aggregate) demo.
+For more information, see the [How To Sort Data in an Aggregate](https://www.outsystems.com/tk/redirect?g=089de161-f9dd-4dbb-8d1c-18e84b564779) demo.
 
 ## Advanced use cases
 
 * If you don't want the columns of your Aggregate to include repeated values, follow the steps in [Get Distinct Values from the Database](../../../building-apps/data/operations/distinct.md).
 
 * To calculate values based on groups of identical data using Aggregate functions, follow the steps in [Calculate Values from Grouped Data](../../../building-apps/data/operations/group-calculate.md).  
-For more information, see the [How To Create Aggregation Functions in Aggregates](https://www.outsystems.com/training/lesson/1975/demo-how-to-create-aggregation-functions-in-aggregates) demo.
+For more information, see the [How To Create Aggregation Functions in Aggregates](https://www.outsystems.com/tk/redirect?g=cb2720f1-e5dc-4079-bcf3-0e25439cb241) demo.
 
 * To create a new attribute based on the value of other attributes, you can define your own expression to calculate the values. Follow the steps in [Create a Calculated Attribute in an Aggregate](../../../building-apps/data/operations/calculated-attribute-create.md).  
-For more information, see the [How To Create Calculated Attributes in Aggregates](https://www.outsystems.com/training/lesson/1973/demo-how-to-create-calculated-attributes-in-aggregates) demo.
+For more information, see the [How To Create Calculated Attributes in Aggregates](https://www.outsystems.com/tk/redirect?g=6ef8f3ee-0497-42f0-b266-5d7b6454ce2a) demo.
 
 ## Showing data
 
@@ -227,4 +227,3 @@ For more information, see the [How To Create Calculated Attributes in Aggregates
 </tr>
 </tbody>
 </table>
-

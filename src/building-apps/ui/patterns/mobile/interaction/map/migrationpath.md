@@ -57,7 +57,7 @@ If you have any questions, comments, or need some assistance you can post a ques
 
 * **Markers_EventTriggered**
 
-    Use the **MarkerEvent** block to handle the multiple marker events, such as **doubleClick**, **dragEnd** and **rightClick**. 
+    Use the **MarkerEvent** block to handle the multiple marker events, such as **doubleClick**, **dragEnd** and **rightClick**.
 
 * **Markers_OnClick**
 
@@ -65,7 +65,7 @@ If you have any questions, comments, or need some assistance you can post a ques
 
 * **Markers_OnMouseout**
 
-    Use the **MarkerEvent** block to handle the multiple marker events such as **doubleClick**, **dragEnd** and **rightClick**. It’s also possible to extend this list by setting the **EventName** as 
+    Use the **MarkerEvent** block to handle the multiple marker events such as **doubleClick**, **dragEnd** and **rightClick**. It’s also possible to extend this list by setting the **EventName** as
     **TextToIdentifier** (Mouseout).
 
 * **Map_OnMouseover**

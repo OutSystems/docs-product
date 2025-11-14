@@ -174,7 +174,7 @@ To add a calendar to your case management app, make sure you have [set up your a
 
     </div>
 
-1. Set the remaining attributes of the record.   
+1. Set the remaining attributes of the record.
     For example, to set up a calendar for a Portuguese office with working hours from 9 AM to 6 PM set the attributes as follows:
 
     * Set **Name** as `"Portugal2020"`.
@@ -190,7 +190,7 @@ After these steps the **Boostrap_Calendars** timer runs, and creates the new cal
 
 ## Add holidays to a calendar
 
-To add holidays to a calendar, make sure you [added a calendar to your app](#add-a-calendar), and then follow these steps: 
+To add holidays to a calendar, make sure you [added a calendar to your app](#add-a-calendar), and then follow these steps:
 
 1. In **&lt;app-name&gt;_Configuration** module, add a record to **HolidayConfigurations**. Each record of this static entity represents a holiday.
 
@@ -249,4 +249,3 @@ To add non-working days to a calendar, make sure you [added a calendar to your a
 1. Publish the module by selecting **1-Click Publish**.
 
 After these steps the **Boostrap_Calendars** timer runs, and creates the new non-working days for the calendar.
-

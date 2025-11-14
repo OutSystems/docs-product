@@ -28,8 +28,8 @@ Depending on the type of element exposed by a producer module, OutSystems will g
 When a consumer module has a **strong dependency** to a producer, those modules are tightly-coupled. The producer logic is executed just as if it is defined in the consumer module: they run in the same request, share the same transaction, session variables, site properties, etc.
 
 ![Diagram illustrating strong dependencies between producer and consumer modules in OutSystems](images/strong-weak-dependencies-1-diag.png "Strong Dependencies Diagram")
- 
-In runtime, the consumer module needs to know both the **signature** and the **implementation** of the element exposed by the producer to be able to reuse it. For this reason, when the [producer changes the signature or the implementation](handle-changes.md#change-functionality-in-the-producer-module) of the exposed element, the consumer module becomes outdated and needs to be republished to start using the latest producer version. 
+
+In runtime, the consumer module needs to know both the **signature** and the **implementation** of the element exposed by the producer to be able to reuse it. For this reason, when the [producer changes the signature or the implementation](handle-changes.md#change-functionality-in-the-producer-module) of the exposed element, the consumer module becomes outdated and needs to be republished to start using the latest producer version.
 
 Reusing the following elements, will make the consumer’s dependency to the producer a **strong** dependency:
 

@@ -19,6 +19,6 @@ coverage-type:
 
 # Refactor anonymous and registered roles
 
-You can use [roles](../../user-management/user-roles/intro.md) to restrict or allow end users to access specific screens and operations of your application. O11 provides the [anonymous and registered](../../user-management/user-roles/intro.md#system-roles-and-custom-roles) system role to restrict or allow end users to access specific screens and operations of your application. If you use anonymous role in a screen then the screen can be accessed by everyone including users that aren't logged in (non-authenticated users). However, if you use registered role in a screen, only authenticated logged in users can access the screen. 
+You can use [roles](../../user-management/user-roles/intro.md) to restrict or allow end users to access specific screens and operations of your application. O11 provides the [anonymous and registered](../../user-management/user-roles/intro.md#system-roles-and-custom-roles) system role to restrict or allow end users to access specific screens and operations of your application. If you use anonymous role in a screen then the screen can be accessed by everyone including users that aren't logged in (non-authenticated users). However, if you use registered role in a screen, only authenticated logged in users can access the screen.
 
 In ODC, you don't have the **anonymous** and **registered** system roles. Hence, you must remove these roles from screens and logic and replace them with the corresponding app roles.

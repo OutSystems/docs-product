@@ -26,13 +26,12 @@ Applies only to Traditional Web Apps.
 
 ## Layout and classes
 
-
 ![Diagram illustrating the layout and classes of a navigation bar for traditional web apps](images/navigationbar-4-diag.png "Navigation Bar Diagram")
 
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
+| ---|---|--- |
 | .navigation-bar |  .is--sticky|  Defines if the navigationBar position is fixed or not  |
 | .navigation-bar-item | .is--active |  Defines if the current navigationBarItem is active  |
 | .navigation-bar-item | .is--open |  Defines if the current navigationBarItem is open  |
@@ -42,7 +41,6 @@ Applies only to Traditional Web Apps.
 | .navigation-bar-item-content | .is--closed |  Defines if the current navigationBarSubItem is closed  |
 | .navigation-bar-item-content | .is--expanded |  Defines if the current navigationBarSubItem is expanded  |
 | .navigation-bar-item-content | .is--collapsed |  Defines if the current navigationBarSubItem is collapsed  |
-
 
 ## Advanced use case
 
@@ -61,7 +59,6 @@ Applies only to Traditional Web Apps.
 1. Publish and test.
 
     ![Screenshot showing the Navigation Bar used with ListRecords in a traditional web app](images/navigationbar-5-ss.png "Navigation Bar with ListRecords")
-
 
 ### Change the active color on the NavigationBarItem
 

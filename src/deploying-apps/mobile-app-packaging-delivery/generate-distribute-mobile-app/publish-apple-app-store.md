@@ -34,7 +34,7 @@ iOS has graphics assets and app package requirements. Ensure you meet these pre-
 
 * [App preview specifications](https://developer.apple.com/help/app-store-connect/reference/app-preview-specifications)
 * [Screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications)
-* App package: [signed IPA file with the App Store build type](#Generate_the_iOS_App_Package_(IPA)).   
+* App package: [signed IPA file with the App Store build type](#Generate_the_iOS_App_Package_(IPA)).
 
 ### Preparation checklist
 
@@ -52,14 +52,14 @@ To publish in App Store, you need to ensure that your application complies to th
 
 To generate the release version of your iOS mobile app:
 
-* You must enroll as an Apple Developer. If you haven’t enrolled yet, learn [how to enroll as an Apple Developer](https://developer.apple.com/programs/how-it-works/). 
+* You must enroll as an Apple Developer. If you haven’t enrolled yet, learn [how to enroll as an Apple Developer](https://developer.apple.com/programs/how-it-works/).
 
-* You must also have a certificate generated and configured in your Apple Developer account. The exact type of certificate depends on the developer program you enrolled in:   
+* You must also have a certificate generated and configured in your Apple Developer account. The exact type of certificate depends on the developer program you enrolled in:
 — `App Store and Ad Hoc` certificate for Apple Developer Program, or  
 — `In-House and Ad Hoc` certificate for Apple Developer Enterprise Program  
 If you don’t have one, learn [how you can create a certificate](https://developer.apple.com/account/ios/certificate/) (login required).
 
-* You  need a provisioning profile according to the developer program you enrolled in:   
+* You  need a provisioning profile according to the developer program you enrolled in:
 — `App Store` provisioning profile for the Apple Developer Program, or  
 — `In-House` provisioning profile for the Apple Developer Enterprise Program  
 
@@ -124,9 +124,9 @@ To generate your mobile app in the Service Center, perform the following steps:
 
 1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, for example, **com.domain.appname**).
 
-1. Provide a certificate of the correct type (see the [Before You Start](#Before-You-Start) section) and its password. The certificate should have a **.p12** extension.
+1. Provide a certificate of the correct type (see the [Before You Start](#before-you-start) section) and its password. The certificate should have a **.p12** extension.
 
-    Provide a provisioning profile of the correct type (see the [Before You Start](#Before-You-Start) section). The provisioning profile should have a **.mobileprovision** extension.
+    Provide a provisioning profile of the correct type (see the [Before You Start](#before-you-start) section). The provisioning profile should have a **.mobileprovision** extension.
 
     ![Screenshot of the iOS app settings configuration fields in Service Center](images/sc-configure-ios-settings.png "Service Center iOS App Settings Configuration")
 
@@ -150,7 +150,7 @@ The size of your IPA increases due to the addition of Apple's Swift libraries. T
 
 Only available if you enrolled in the [Apple Developer Program](https://developer.apple.com/programs/).
 
-Now that [your application is prepared](#Application-Preparation) and the IPA file generated you can now [submit your application for review](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-for-review). Apple is going to review your application before making it available in the App Store.
+Now that [your application is prepared](#application-preparation) and the IPA file generated you can now [submit your application for review](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-for-review). Apple is going to review your application before making it available in the App Store.
 
 For more information about privacy updates for Apple App Store submissions, refer [here](privacy-updates-for-apple-app-store-submissions.md)
 

@@ -23,15 +23,7 @@ This article explains how to set up the OpenTelemetry collector for Application 
 
 ## Prerequisites
 
-Before setting up the OpenTelemetry collector, ensure you have: 
-
-* Enabled [Log separation](../../setup-infra-platform/setup/logging-db/logs-separation-cloud/intro.md). 
-
-* Installed Platform Server version 11.23.1 or higher (recommended Platform Server version is 11.30.0 or higher).
-
-* Installed LifeTime version 11.19.0 or higher (recommended LifeTime version is 11.25.0 or higher).
-
-* Have subscription to log streaming. Contact your Account Manager for provisioning.
+For a complete list of prerequisites, refer to [Introduction to log streaming](intro.md#prerequisites).
 
 ## Set up OpenTelemetry collector
 
@@ -43,9 +35,9 @@ To receive logs in Datadog, Splunk or Amazon S3, you must set up an OpenTelemetr
 
 1. Set up the OpenTelemetry Collector.
 
-    Add the APM tool exporter and security information to the collector config file. The configuration information varies depending on the type of the APM tool.   
+    Add the APM tool exporter and security information to the collector config file. The configuration information varies depending on the type of the APM tool.
 
-1.  Run the OpenTelemetry Collector. 
+1. Run the OpenTelemetry Collector.
 
 <div class="info" markdown="1">
 
@@ -57,7 +49,7 @@ To receive logs in Datadog, Splunk or Amazon S3, you must set up an OpenTelemetr
 
 ## Example file with a basic configuration
 
-The following configuration provides a basic working example for **Datadog**. It secures the OpenTelemetry Collector with basic authentication. 
+The following configuration provides a basic working example for **Datadog**. It secures the OpenTelemetry Collector with basic authentication.
 
    ```
     extensions: 
@@ -93,6 +85,7 @@ The following configuration provides a basic working example for **Datadog**. It
           exporters: [datadog]
 
    ```
+
 * Replace **DD_SITE** with your **Datadog site**. The default is **datadoghq.com**.
 
 * Replace **DD_API_KEY** with your **Datadog API key**.

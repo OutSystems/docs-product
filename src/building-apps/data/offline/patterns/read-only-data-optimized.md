@@ -39,10 +39,9 @@ The following is an overview of the Read-Only Data Optimized pattern logic:
 
 1. ![Icon representing a server in the Read-Only Data Optimized pattern](images/icon-server.png "Server Icon") Returns database data.
 
-1. ![Icon representing a client device in the Read-Only Data Optimized pattern](images/icon-client.png "Client Icon") Deletes and recreates data in the local storage with the data received from the server. 
+1. ![Icon representing a client device in the Read-Only Data Optimized pattern](images/icon-client.png "Client Icon") Deletes and recreates data in the local storage with the data received from the server.
 
 Download the [sample module for the Read-Only Data Optimized pattern](http://www.outsystems.com/forge/component/1638/Offline+Data+Sync+Patterns/), that uses companies as an example of data to synchronize. The following sections provide detailed descriptions of the data model and logic used in the sample module.
-
 
 ## Data Model
 
@@ -56,7 +55,6 @@ This sample defines a database entity `Company` and its local storage counterpar
 
 The application logic must keep the entity attributes `ModifiedOn` and `IsActive` updated.
 
-
 ## OfflineDataSync Logic
 
 The following is a description of the logic of the `OfflineDataSync` client action:
@@ -68,7 +66,6 @@ The following is a description of the logic of the `OfflineDataSync` client acti
 1. Updates the Company records in the local storage using the list of changed or added records returned by the server.
 1. Iterates the list of deleted (inactive) Company records returned by the server and deletes the corresponding records in the local storage.
 1. Updates the entity attribute `SyncProperties.LastSync` with the timestamp of this synchronization returned by the server.
-
 
 ## ServerDataSync Logic
 

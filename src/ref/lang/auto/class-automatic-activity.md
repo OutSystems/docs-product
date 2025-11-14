@@ -123,4 +123,3 @@ When you're editing your automatic activity flow, all of the elements available 
 </tr>
 </tbody>
 </table>
-

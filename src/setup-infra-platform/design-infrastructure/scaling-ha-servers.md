@@ -42,7 +42,7 @@ The characteristics of each [OutSystems Platform server role](server-roles.md) d
 | **Scheduler**             | Yes                 | Yes          |
 | **LifeTime Front-end**    | Yes                 | Yes          |
 
-**Manual procedure*. Learn more about [how to execute the appropriate actions](https://success.outsystems.com/support/enterprise_customers/maintenance_and_operations/outsystems_platform_server_failover_procedures/).
+*_Manual procedure_. Learn more about [how to execute the appropriate actions](https://success.outsystems.com/support/enterprise_customers/maintenance_and_operations/outsystems_platform_server_failover_procedures/).
 
 ### Front-end
 
@@ -92,7 +92,4 @@ Check the [Infrastructure Design Examples](infra-design-examples.md) for some si
 
 RabbitMQ can be configured to work as a cluster, offering benefits like fault-tolerance, high availability and data replication. If your [application requires that the cache invalidation service is always available](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/cache_invalidation_in_outsystems_11/#when-ha), [you should use a RabbitMQ cluster](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/possible_setups_for_an_outsystems_infrastructure/high_availability_and_scalability_strategies/).
 
-
 To learn more about how to set up your OutSystems platform check the [Designing OutSystems infrastructures guide](designing-infrastructures.md).
-
-

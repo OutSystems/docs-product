@@ -226,4 +226,3 @@ Changing the `Close On` property to listen to events from another entity only ha
 </tr>
 </tbody>
 </table>
-

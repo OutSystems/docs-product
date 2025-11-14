@@ -36,6 +36,3 @@ You may force the process execution to be terminated by setting to 'Yes' the `Te
 The execution of a terminated process might be restarted in the Service Center.
 
 </div>
-
-
-

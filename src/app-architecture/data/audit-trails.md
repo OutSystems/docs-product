@@ -35,7 +35,8 @@ In this context, there are the following two types of Audit Trail in OutSystems:
 
 In conjunction with appropriate tools and procedures, audit trails can help in detecting security violations, performance problems, and flaws in applications.
 
-### Business Audit 
+### Business Audit
+
 A Business Audit relates to business requirements to collect or track the application end users’ behavior or to provide information for Auditors. For example, log any update over a table record: “who” did “what” and “how” the system behaved, and what were the values before and after the update. The value to collect this information is, for example, to set up an alarmist process on top, to alert decision-maker teams if any business rules were violated or a threshold value reached.
 
 Use Business Audits when there are business requirements to log a specific end user behavior or automatic system actions in an application:
@@ -78,7 +79,7 @@ For Standard Audit Trail systems, there is an industry common architecture patte
 
 ![Diagram illustrating the generic architecture pattern for a standard audit trail system with users, services, audit trail logging, and external audit integration components.](images/standard-audit-trail-system_generic-architecture.png "Generic Architecture of a Standard Audit Trail System")
 
-*[(Source)](https://docs.aws.amazon.com/en_pv/whitepapers/latest/microservices-on-aws/auditing.html)*
+_[(Source)](https://docs.aws.amazon.com/en_pv/whitepapers/latest/microservices-on-aws/auditing.html)_
 
 This implementation logs information about the end user activities. These logs help you to monitor  applications for security and troubleshooting purposes, which is a process often referred to as auditing. The audit logs are stored in buckets for convenient access with data security features for users who are responsible for monitoring activities in the application.
 
@@ -96,7 +97,7 @@ The **Audit_Lib** module provides a **MyLogMessage** public action, which refere
 
 All logged messages are available throughout the Service Center using the navigation menu **Monitoring > General**, filtered by the **ModuleName** value.
 
-###  Centralized Audit Trail (using server entities)
+### Centralized Audit Trail (using server entities)
 
 Although OutSystems provides a system log audit action, we recommend building a centralized system log. You can define log levels in your log module, typified audit messages, and enable/disable logging per application without having to redeploy the modules (using the site properties or a small back office using the scaffolding built-in feature).
 

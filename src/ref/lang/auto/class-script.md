@@ -108,4 +108,3 @@ coverage-type:
 </tr>
 </tbody>
 </table>
-

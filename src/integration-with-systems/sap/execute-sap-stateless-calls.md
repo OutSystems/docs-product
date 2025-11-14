@@ -52,7 +52,7 @@ Learn [how to consume exposed elements in a module](<../../building-apps/reuse-a
 
 ## Implement logic to execute stateless calls
 
-Use SAP remote functions together with actions from the extension mentioned above to implement stateless calls. 
+Use SAP remote functions together with actions from the extension mentioned above to implement stateless calls.
 
 Every call inside a stateless region is made in a stateless connection unless a manual context is created through the **CreateContext** action.
 

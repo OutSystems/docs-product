@@ -29,24 +29,24 @@ For previous MABS versions, the status bar is black and above the app content by
 
 ## Customizing the Status Bar
 
-1. In Service Studio, open the **home module** of your mobile app. 
+1. In Service Studio, open the **home module** of your mobile app.
 
-2. In the module tree, select the module and, in the properties editor, open the Extensibility Configurations property editor window: 
+1. In the module tree, select the module and, in the properties editor, open the Extensibility Configurations property editor window:
 
     ![Screenshot of the Extensibility Configurations property editor in Service Studio](images/ss_extensibility_in_module_properties.png "Extensibility Configurations in Module Properties")
 
-3. Add the JSON properties to customize your application status bar according to the reference information presented below.  
+1. Add the JSON properties to customize your application status bar according to the reference information presented below.  
     If you already have some extensibility configurations defined in the module, add the new content making the necessary adjustments.
 
-4. After customizing the status bar you must install an [updated build of the mobile app](<../mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build>) on the devices for the changes to take effect. 
+1. After customizing the status bar you must install an [updated build of the mobile app](<../mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build>) on the devices for the changes to take effect.
 
 ## Status Bar Customization Reference
 
-Property  |  Values  |  Description  
----|---|---  
-StatusBarOverlaysWebView  |  `true` <br/> `false` |  Defines whether the content of your app starts after the status bar or can appear behind the status bar.<br/>If set to `true` or **not set** in MABS 11 or newer, the content will appear behind the status bar.<br/>If set to `false` or **not set** in MABS 10, the content will start after the status bar.
-StatusBarBackgroundColor  |  `#000000` to `#FFFFFF` |  The background color of the status bar. This is only used when the app content starts after the status bar.<br/>Expected color format: `#RRGGBB`.  
-StatusBarStyle  |  `default` <br/> `lightcontent` <br/> `darkcontent` |  Defines the style of the status bar text and icons.<br/>When set to `default` (or **not set**), the status bar text and icons appear with the mobile platform's default color.<br/>When set to `lightcontent` or `darkcontent`, the status bar text and icons appear in a light or dark color defined by the mobile platform.
+| Property  |  Values  |  Description |
+| ---|---|--- |
+| StatusBarOverlaysWebView  |  `true` <br/> `false` |  Defines whether the content of your app starts after the status bar or can appear behind the status bar.<br/>If set to `true` or **not set** in MABS 11 or newer, the content will appear behind the status bar.<br/>If set to `false` or **not set** in MABS 10, the content will start after the status bar. |
+| StatusBarBackgroundColor  |  `#000000` to `#FFFFFF` |  The background color of the status bar. This is only used when the app content starts after the status bar.<br/>Expected color format: `#RRGGBB`. |
+| StatusBarStyle  |  `default` <br/> `lightcontent` <br/> `darkcontent` |  Defines the style of the status bar text and icons.<br/>When set to `default` (or **not set**), the status bar text and icons appear with the mobile platform's default color.<br/>When set to `lightcontent` or `darkcontent`, the status bar text and icons appear in a light or dark color defined by the mobile platform. |
 
 ## Status Bar JSON Template
 
@@ -77,7 +77,7 @@ Use the following template as a reference for defining a custom behavior for the
 
 ![Example of a mobile app with a transparent status bar in full screen mode](images/transparent_statusbar.png "Transparent Status Bar Example")
 
-```javascript   
+```javascript
 {
     "preferences": {
         "global": [{
@@ -92,7 +92,7 @@ Use the following template as a reference for defining a custom behavior for the
 
 ![Example of a mobile app with a status bar colored in gold](images/differentcolor_statusbar.png "Colored Status Bar Example")
 
-```javascript        
+```javascript
 {
     "preferences": {
         "global": [{

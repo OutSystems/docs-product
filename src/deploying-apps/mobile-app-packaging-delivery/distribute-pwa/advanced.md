@@ -63,7 +63,7 @@ The platform applies the default settings for all values that aren't in the mani
 
 ### Sample PWA manifest
 
-You can use [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) to generate the manifest, or experiment with this sample. 
+You can use [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) to generate the manifest, or experiment with this sample.
 
 ```
 { 
@@ -93,8 +93,8 @@ If you choose to have a custom service worker in your PWA, you need to **manage 
 To add a custom service worker in PWA, do the following:
 
 1. [Get static resources links and URL mappings](#getting-static-resources-links-and-url-mappings).
-2. [Add a custom service worker script](#adding-custom-service-worker).
-3. [Edit the PWA manifest to reference the worker](#editing-manifest).
+1. [Add a custom service worker script](#adding-custom-service-worker).
+1. [Edit the PWA manifest to reference the worker](#editing-manifest).
 
 ### Getting static resources links and URL mappings
 
@@ -102,7 +102,7 @@ When you use the default service worker in your PWA, Service Studio compiles the
 
 To get the static resources links and URL mappings of a PWA, publish your app and do the following:
 
-1. Open the app in Chrome and go to the developer tools, then navigate to **Application** > **Service Workers** > **pwaServiceWorker.js**. The source code of **pwaServiceWorker.js** opens. 
+1. Open the app in Chrome and go to the developer tools, then navigate to **Application** > **Service Workers** > **pwaServiceWorker.js**. The source code of **pwaServiceWorker.js** opens.
 
     ![Screenshot showing how to access the service worker in Chrome Developer Tools under the Application tab](images/service-worker-chrome-tools.png "Service Worker in Chrome Developer Tools")
 
@@ -114,13 +114,13 @@ To get the static resources links and URL mappings of a PWA, publish your app an
 
 <div class="warning" markdown="1">
 
-You need to [keep the PWA resources and URLs up to date](#keeping-resources-up-to-date) when you update the app that uses a custom service worker. 
+You need to [keep the PWA resources and URLs up to date](#keeping-resources-up-to-date) when you update the app that uses a custom service worker.
 
 </div>
 
 ### Adding the custom service worker script
 
-Add a JavaScript file and write your service worker code. The implementation depends on your use case, but you can check out [Introduction to Service Worker](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker) by Google and [Service Workers](https://www.w3.org/TR/service-workers/) by W3C. 
+Add a JavaScript file and write your service worker code. The implementation depends on your use case, but you can check out [Introduction to Service Worker](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker) by Google and [Service Workers](https://www.w3.org/TR/service-workers/) by W3C.
 
 1. Add a JavaScript in **Interface** > **Scripts**. See [Use JavaScript code from an external library](../../../integration-with-systems/javascript/mobile/use-external-lib.md) for instructions.
 
@@ -134,7 +134,7 @@ The PWA uses a custom script as a service worker only after you [edit the servic
 
 ### Adding the custom service worker to the manifest
 
-Edit the PWA manifest so that the `src` value of `serviceworker` points to your JavaScript file. 
+Edit the PWA manifest so that the `src` value of `serviceworker` points to your JavaScript file.
 
 Here ia JSON snippet with added the serviceworker value:
 

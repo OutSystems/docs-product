@@ -23,7 +23,7 @@ topic:
 
 OutSystems allows you to manage IT users like developers, testers, and operators.
 
-When adding a new user they must be given a username to log into the platform. This username is their own unique identifier. 
+When adding a new user they must be given a username to log into the platform. This username is their own unique identifier.
 
 For example, a new developer just joined the company. To create the new IT user, follow these steps:
 
@@ -31,11 +31,11 @@ For example, a new developer just joined the company. To create the new IT user,
 
 1. Choose **USERS** and click the **New User** link.
 
-1. Complete the form with the user’s information. 
+1. Complete the form with the user’s information.
 
     You must set the **Default Role** of the user. Afterward, you can grant the user with additional permissions through teams or for specific applications. While selecting the user's **Default Role**, you get a preview of the default permissions that will be granted to the user by assigning that role.  
 
-    **Note**: The password must meet the password complexity rules. It must have at least 12 characters including at least one number, one lowercase letter, and one uppercase letter. The password complexity rule is applicable only when a new password is created or an existing password is updated.
+    **Note**: The password must meet the password complexity rules. It must have at least 12 characters including at least one number, one lowercase letter, and one uppercase letter. These rules apply to all IT users, including those created in LifeTime.
 
     ![Screenshot of the LifeTime console showing the form to create a new IT user with fields for username, email, and default role selection.](images/user-create-lt.png "Creating a New IT User in LifeTime")
 

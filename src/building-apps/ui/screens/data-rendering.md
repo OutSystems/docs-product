@@ -16,7 +16,7 @@ coverage-type:
   - understand
 ---
 
-# Best practices for rendering data on mobile screens 
+# Best practices for rendering data on mobile screens
 
 ## Pre-requisites
 

@@ -1,12 +1,12 @@
 ---
-summary:
+summary: This article explains how to refactor an O11 Application Client Action dependency to be compatible with OutSystems Developer Cloud (ODC).
 locale: en-us
 guid: ebd97f10-d965-4b69-9829-ccbabeee44d2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-6830
 helpids: 30520
-tags: outsystems, application development, code migration, architecture mapping, dependency management
+tags: outsystems, application development, code conversion, architecture mapping, dependency management
 audience:
   - mobile developers
   - frontend developers
@@ -21,12 +21,11 @@ coverage-type:
 
 # Asset consuming an ODC application Client Action
 
-A dependency to a Client Action is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies.
-This means that the Client Action must either be part of the consumer ODC asset, or the Client Action must be shared by an ODC Library.
+A dependency to a Client Action is a strong dependency, and in ODC, dependencies to other Apps must be weak dependencies. This means that the Client Action must either be part of the consumer ODC asset, or the Client Action must be shared by an ODC Library.
 
 ## How to solve
 
-You must solve this pattern in O11, before proceeding with the code migration to ODC.
+You must solve this pattern in O11, before proceeding with the code conversion to ODC.
 
 ### Solve in O11
 

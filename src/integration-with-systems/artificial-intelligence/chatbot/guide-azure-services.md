@@ -41,7 +41,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 1. Sign into the Azure portal at [portal.azure.com](https://portal.azure.com).
 
 1. Click the search field (or press **Ctrl + /** ) and enter `QnA Maker`. Locate the **Marketplace** section in the results and click **QnA Maker**.
-   
+
     ![Screenshot showing how to search for QnA Maker in the Azure portal](images/azure-portal-qna-search.png "Azure Portal QnA Maker Search")
 
 1. Enter the information for your QnA Maker and click **Create**. Here is what you need to provide:
@@ -96,7 +96,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
 
     ![Screenshot of the Azure Web App Bot dashboard showing the bot settings](images/azure-web-app-bot-dashboard.png "Azure Web App Bot Dashboard")
 
-1. Open **Channels** from the side menu, locate **Add a featured channel** and click **Configure direct line channel button**. A page to configure direct line opens. 
+1. Open **Channels** from the side menu, locate **Add a featured channel** and click **Configure direct line channel button**. A page to configure direct line opens.
 
     ![Screenshot of the Azure portal showing the configuration page for a new Direct Line channel in a Web App Bot service](images/azure-web-app-bot-service-direct-channel-new.png "Azure Web App Bot Direct Line Channel Configuration")
 
@@ -130,7 +130,7 @@ Another way to get the settings is to download the source code. In the bot confi
 
 ### Direct line secret { #get-direct-line-key }
 
-You can get the secret after you [create a direct line channel](#add-a-direct-channel-for-a-bot-service) for your bot. 
+You can get the secret after you [create a direct line channel](#add-a-direct-channel-for-a-bot-service) for your bot.
 
 1. Open the chatbot configuration page. You can open it by clicking your bot name in the Azure home page or by searching for the bot name in the search bar.
 
@@ -158,7 +158,7 @@ Follow these instructions if you need to create a generic bot service in Azure, 
 
 </div>
 
-Follow these steps to create a bot service in Azure. This bot monitors for new messages from your users. 
+Follow these steps to create a bot service in Azure. This bot monitors for new messages from your users.
 
 <div class="info" markdown="1">
 
@@ -173,9 +173,9 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
     ![Screenshot of the Azure portal highlighting the 'Create a resource' button](images/azure-add-resource-button.png "Azure Portal Create a Resource Button")
 
 1. Select **AI + Machine Learning** and then click **Web App Bot**. A page to create In the new Web App Bot opens.
-    
+
     ![Screenshot of the Azure portal page for creating a new Web App Bot service](images/azure-web-app-bot-service-new.png "Creating a New Azure Web App Bot")
-    
+
 1. Enter the information for your bot and click **Create**. Here is what you need to provide:
 
     * **Bot handle**. Unique identifier for the bot.
@@ -184,7 +184,7 @@ You can also use the [chatbot configuration wizard](configuration-wizard.md) to 
     * **Location**. The location of the datacenter from which the bot service runs.
     * **App name**. The name of your bot service that's part of the URL to reach the service.
     * **Bot template**. Click to expand. In the **SDK language** select **C#**. For creating an echo bot, select **Echo Bot**. For advanced bot service select **Basic Bot**.
-    * **App service plan / location**. This is a set of the compute resources which the bot uses.   
+    * **App service plan / location**. This is a set of the compute resources which the bot uses.
     * **Microsoft App ID and password**. Verify the selected option is **Autocreate App Id and password**.
 
     ![Screenshot showing the form to create a new Web App Bot service in the Azure portal](images/azure-web-app-bot-service-create.png "Azure Web App Bot Service Creation Form")

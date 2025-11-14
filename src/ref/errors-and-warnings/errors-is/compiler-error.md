@@ -24,7 +24,7 @@ Message
 Cause
 :   Your extension source code has some errors that must be fixed.
 
-Recommendation    
+Recommendation
 :   You should launch the IDE (Integrated Development Environment) independently from Integration Studio, build a solution to check the exact errors that were found, and fix them.
 
 ---

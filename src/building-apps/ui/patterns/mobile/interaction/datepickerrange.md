@@ -39,8 +39,8 @@ In this example, the user selects a range of dates from the calendar. The dates 
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
-    
-    1. Select the widget you want to add from the **OutSystemsUI** module and click **Add Dependency**. 
+
+    1. Select the widget you want to add from the **OutSystemsUI** module and click **Add Dependency**.
 
     1. In the Toolbox, search for the widget again.
 
@@ -69,7 +69,6 @@ In this example, the user selects a range of dates from the calendar. The dates 
 1. Enter a name for the variables (in this example **PickedStartDate** and **PickedEndDate**) and select **Date** as the **Data Type**.
 
     ![Entering names for the start and end date variables and selecting Date as the data type in Service Studio](images/datepickerrange-pickedstart-pickedend-ss.png "Naming Start and End Date Variables")
-   
 
 1. To create an **OnSelect** event for the Date Picker Range, on the **Properties** tab, from the **Handler** dropdown, select New **Client Action**.
 
@@ -106,7 +105,12 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-|Event| Description  | 
+|Event| Description  |
 |---|---|
-|Initialized: Optional| Event triggered after the Date Picker Range instance is ready.| 
-|OnSelected: Mandatory| Event triggered when a range of dates is selected.| 
+|Initialized: Optional| Event triggered after the Date Picker Range instance is ready.|
+|OnSelected: Mandatory| Event triggered when a range of dates is selected.|
+ |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

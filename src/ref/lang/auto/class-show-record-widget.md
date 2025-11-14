@@ -159,4 +159,3 @@ Use the [Form widget](<servicestudio-plugin-widgets-form.md>) instead of the Sho
 </tr>
 </tbody>
 </table>
-

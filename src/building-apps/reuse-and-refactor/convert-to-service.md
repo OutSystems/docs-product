@@ -56,12 +56,12 @@ To convert a Web or Mobile module to a Service module follow these steps:
 
 1. Do one of the following:
 
-    * To publish the converted Service module, click **PUBLISH NOW**. 
+    * To publish the converted Service module, click **PUBLISH NOW**.
     * To continue working before publishing the converted module, click **PUBLISH LATER**.
 
 ## Convert a Server Action to a Service Action
 
-You can only define Service Actions in Service modules. 
+You can only define Service Actions in Service modules.
 
 Before refactoring your Server Actions to Service Actions, read more about [using Service Actions, how they are different from Server Actions and how you should adapt your logic](services.md#using-service-actions).
 

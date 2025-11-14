@@ -18,9 +18,9 @@ coverage-type:
 
 # Warnings
 
-In OutSystems, a warning is a potential problem but does not prevent the deployment of a module to the server. 
+In OutSystems, a warning is a potential problem but does not prevent the deployment of a module to the server.
 
-However, it's advisable to check the warnings and solve them, since they may be tip of the iceberg for unexpected or bad behaviors. 
+However, it's advisable to check the warnings and solve them, since they may be tip of the iceberg for unexpected or bad behaviors.
 
 For more information about the different warnings, see:
 

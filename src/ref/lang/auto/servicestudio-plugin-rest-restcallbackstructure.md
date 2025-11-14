@@ -57,4 +57,3 @@ Structure used in input and output arguments of REST API Callbacks.
 </tr>
 </tbody>
 </table>
-

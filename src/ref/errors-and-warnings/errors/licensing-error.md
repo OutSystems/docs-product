@@ -62,7 +62,7 @@ The `Licensing` error is issued in the following situation:
     You are trying to perform an operation (like publishing a module) and the Platform Server you are using has either an expired license or it has exceeded the licensed limit of one or more features. You won't be able to use any of the licensed features for this server, for example, testing queries, running, debugging or publishing your module, until the situation is solved.
 
     Contact your Platform Server administrator to do one of the following:
-    
+
     * Request a new license from OutSystems.
     * Check for information about which feature(s) exceeded their licensed usage limit. This may help you to do your share in cleaning up old or obsolete information like users or modules. Otherwise, ask them to change the license contract.
 

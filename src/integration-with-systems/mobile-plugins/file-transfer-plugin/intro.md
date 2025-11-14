@@ -57,9 +57,8 @@ It's also possible to know the progress, completion and error of your download/u
 To add and use these UI blocks to your app, follow these steps:
 
 1. Navigate to **Interface** > **Elements** > **UI Flows** and add the File Transfer blocks to the screen you wish to perform files downloads and uploads.
-    
-    If you wish to handle these events across the whole app, you can also add the UI Blocks to your **Interface** > **Elements** > **UI Flows** > **Common** > **Layout**.
 
+    If you wish to handle these events across the whole app, you can also add the UI Blocks to your **Interface** > **Elements** > **UI Flows** > **Common** > **Layout**.
 
     ![Shows how to add and use the File Transfer Plugin from the ODC Studio Interface tab](images/create-and-use-filetransfer-plugin-in-interface-tab-odcs.png "Using the File Transfer Plugin in ODC Studio Interface Tab")
 
@@ -82,6 +81,7 @@ In the following sections, it's explained how the PWA implementation of the File
 Instead of using a file system URL/path to save the downloaded file, in a PWA, the plugin triggers a download to the device's default saving folder. The file name is determined based on the following criteria:
 
 1. The server sets the HTTP header `Content-Disposition` with the desired file name.
+
     ```
     Content-Disposition: attachment; filename="filename.jpg"
     ```
@@ -137,7 +137,7 @@ Here is the reference for the events you can use from the File Transfer Plugin, 
 | **OnDownloadProgress** | **HandleDownload** | Called whenever a new chunk of data is downloaded, with a **Progress** object. |
 | **OnUploadComplete**   | **HandleUpload**   | Called when the upload has completed, with a **FileUploadResult** object. |
 | **OnUploadError**      | **HandleUpload**   | Called when an error occurs. Invoked with a **FileTransferError** object. |
-| **OnUploadProgress**   | **HandleUpload**   | Called whenever a new chunk of data is uploaded, with a **Progress** object. | 
+| **OnUploadProgress**   | **HandleUpload**   | Called whenever a new chunk of data is uploaded, with a **Progress** object. |
 
 ### Structures
 
@@ -218,6 +218,7 @@ Starting with version 3.0.0 of the plugin, specific errors are returned on nativ
 ## Known issues and limitations
 
 ### Multiple downloads
+
 **Applies to PWAs.**
 
 Avoid downloading multiple files simultaneously, as it may result in unexpected behaviors.

@@ -94,6 +94,16 @@ Available in:
 * Database: Function is evaluated before the aggregate is executed.
 * Local Storage: Function is evaluated before the aggregate is executed.
 
+<div class="warning" markdown="1">
+
+Take into account the following key considerations:
+
+* **Server-Side**: This function is only supported in server-side logic for Traditional Web Apps. Calling it in a server action for Mobile or Reactive Web Apps returns an empty string.
+
+* **Client-Side (Mobile/Reactive)**: The URL is only returned after the screen has finished the **OnInitialize** event. It doesn't return the expected URL during the **OnInitialize** event or in exception handlers that run before the screen is fully rendered, for example, a Security Exception from a failed role check.
+
+</div>
+
 ### Output
 
 Type: Text  

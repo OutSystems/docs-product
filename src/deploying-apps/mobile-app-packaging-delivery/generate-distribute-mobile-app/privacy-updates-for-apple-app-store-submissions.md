@@ -24,7 +24,7 @@ Your app or third-party SDK must declare one or more approved reasons that accur
 
 ## Privacy manifest file
 
-You must provide a PrivacyInfo.xcprivacy file in your OutSystems app, where the APIs used are detailed. Provided is a default file that can be used. Ensure you've installed a new app build after adding the privacy manifest file.
+You must provide a privacy manifest in your OutSystems app, where the APIs used are detailed. Provided is a default file that can be used. Ensure you've installed a new app build after adding the privacy manifest file.
 
      <?xml version="1.0" encoding="UTF-8"?>
      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -76,7 +76,7 @@ You must provide a PrivacyInfo.xcprivacy file in your OutSystems app, where the 
 
 ## Providing a privacy manifest file for a File plugin
 
-When you use a File plugin, you must include a PrivacyInfo.xcprivacy file in your OutSystems app.
+When you use a File plugin, you must include a privacy manifest in your OutSystems app.
 
 The following table contains the required key and recommended reason value for this plugin:
 
@@ -122,11 +122,11 @@ In Service Studio add and upload the privacy manifest file:
 
 1. In the **Data** tab, add the file to **Resources**. Right-click and select **Import Resource**. Select your file.
 
-1. Set the name to `PrivacyInfo.xcprivacy`
+1. Set the name to `PrivacyInfo.xml`
 
 1. Ensure that the **Deploy Action** attribute of the **Resource** property is set to `Deploy to Target Directory`.
 
-    ![Service Studio showing how to add a PrivacyInfo.xcprivacy file to the Resources.](images/privacy-info-file-ss.png "Adding Privacy Manifest File in OutSystems Service Studio")
+    ![Service Studio showing how to add a privacy manifest to the Resources.](images/privacy-info-file-ss.png "Adding Privacy Manifest File in OutSystems Service Studio")
 
 1. In the **Logic** tab, select your app icon. In the **Advanced** section, click on **Extensibility Configurations.**
 
@@ -137,7 +137,7 @@ In Service Studio add and upload the privacy manifest file:
     "resources": {
             "ios": {
                 "Thekeyoftheresource": {
-                    "src": "www/PrivacyInfo.xcprivacy",
+                    "src": "www/PrivacyInfo.xml",
                     "target": "PrivacyInfo.xcprivacy"
                 }
             }

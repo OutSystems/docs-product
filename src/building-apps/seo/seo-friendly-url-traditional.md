@@ -179,7 +179,7 @@ If you are using the OutSystems Cloud, the necessary configurations are already 
 
 <!-- Help id 30374 links to this section. Edit the URL mapping if you change the title / URL of the doc. -->
 
-The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet Information Services (IIS). To install the ISAPI Filter in Microsoft IIS, perform the following steps (instructions based on Windows Server 2016 and IIS 10.0):
+The OutSystems platform works with ISAPI Filters installed in Microsoft Internet Information Services (IIS). To install the ISAPI Filter in Microsoft IIS, perform the following steps (instructions based on Windows Server 2016 and IIS 10.0):
 
 1. Make sure you have followed all the steps in the OutSystems Platform Server installation checklist;
 
@@ -270,3 +270,15 @@ Open the ‘OsISAPIConf.cache‘ file with a simple text editor like NotePad or 
 
 …
 ```
+
+The `OsISAPIConf.cache` file functions solely as an input source. The logging level you specify remains active until you provide new input or an IIS reset occurs. Be aware that the file content may revert to **Refresh** without changing the active logging level after the following actions:
+
+* Changing SEO URL Rules (Page, Path, Site, or Redirect).
+* Publishing a Module or deploying a Solution.
+* Uploading a new license.
+
+<div class="info" markdown="1">
+
+An IIS reset triggers an actual reset. The ISAPI filters reverts to **Refresh** regardless of the value displayed in the file.
+
+</div>

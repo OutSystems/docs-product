@@ -44,6 +44,7 @@ Understanding the difference between common nouns and proper nouns is essential 
 **Examples**
 
 * **Yes**: Mobile apps help users access information on the go.
+
 * **No**: Mobile Apps help users access information on the go.
 
 **Proper noun**: A specific place, person, or thing. Always capitalize proper nouns.
@@ -51,6 +52,7 @@ Understanding the difference between common nouns and proper nouns is essential 
 At OutSystems, a proper noun is typically:
 
 * Something the user named (for example, My Business app)
+
 * A product name (for example, Service Studio)
 
 #### Don't capitalize common nouns
@@ -58,30 +60,38 @@ At OutSystems, a proper noun is typically:
 Don't capitalize generic technical terms unless they're part of a proper noun:
 
 * environment, application, module, screen, action
+
 * database, server, cloud, platform
+
 * developer, user, administrator
 
 **Examples**
 
 * **Yes**: 
   1. Configure application settings after deployment.
+
   1. Click **Save**.
     
       For more information, refer to the troubleshooting guide
 
 * **No**: 
+
   1. Configure Application Settings After Deployment
+
   1. Click the **save** button
     
-      For More Information, Refer To The Troubleshooting Guide
+      For more information, refer To the Troubleshooting Guide
 
 #### Capitalize proper nouns and brand names
 
 Always capitalize:
 
 * Product names: OutSystems, Service Studio, LifeTime, ODC Portal
+
 * Technology names: JavaScript, CSS, HTML, SQL
+
 * Company names: Microsoft, Google, Amazon Web Services
+
 * Service names: Azure Active Directory, Amazon S3
 
 **Examples**
@@ -97,7 +107,9 @@ Always capitalize:
 #### Special cases
 
 * APIs and endpoints: Use the exact capitalization as defined in the API documentation
+
 * Code elements: Maintain original capitalization (variables, functions, classes)
+
 * Abbreviations: Follow standard conventions (HTML, CSS, API, UI, URL)
 
 ### Use contractions

@@ -33,6 +33,72 @@ Use the present tense whenever possible. Using the present tense helps make sent
 
 **No:** Click the Save button. The data will be updated.
 
+### Capitalization
+
+#### Common nouns versus proper nouns
+
+Understanding the difference between common nouns and proper nouns is essential for correct capitalization:
+
+**Common noun**: A general person, place, or thing (for example, app, icon, stage). Only capitalize common nouns when they begin a sentence. If a common noun consists of two words, then capitalize only the first word when it starts a sentence.
+
+**Examples**
+
+* **Yes**: Mobile apps help users access information on the go.
+* **No**: Mobile Apps help users access information on the go.
+
+**Proper noun**: A specific place, person, or thing. Always capitalize proper nouns.
+
+At OutSystems, a proper noun is typically:
+
+* Something the user named (for example, My Business app)
+* A product name (for example, Service Studio)
+* A specific instance of a common noun
+
+#### Don't capitalize common nouns
+
+Don't capitalize generic technical terms unless they're part of a proper noun:
+
+* environment, application, module, screen, action
+* database, server, cloud, platform
+* developer, user, administrator
+
+**Examples**
+
+* **Yes**: 
+  1. Configure application settings after deployment
+  1. Click the Save button
+    For more information, refer to the troubleshooting guide
+
+* **No**: 
+  1. Configure Application Settings After Deployment
+  1. Click the save button
+    For More Information, Refer To The Troubleshooting Guide
+
+#### Capitalize proper nouns and brand names
+
+Always capitalize:
+
+* Product names: OutSystems, Service Studio, LifeTime, ODC Portal
+* Technology names: JavaScript, CSS, HTML, SQL
+* Company names: Microsoft, Google, Amazon Web Services
+* Service names: Azure Active Directory, Amazon S3
+
+**Examples**
+
+* **Yes**: You can integrate your app with Azure Active Directory using the OutSystems authentication system.
+
+* **No**: You can integrate your app with azure active directory using the outsystems authentication system.
+
+* **Yes**: Deploy your app to the production environment.
+
+* **No**: Deploy your Application to the Production Environment.
+
+#### Special cases
+
+* APIs and endpoints: Use the exact capitalization as defined in the API documentation
+* Code elements: Maintain original capitalization (variables, functions, classes)
+* Abbreviations: Follow standard conventions (HTML, CSS, API, UI, URL)
+
 ### Use contractions
 
 Use common contractions instead of full forms. Some of the common contractions you need are: it's, doesn't, there's, can't/cannot.

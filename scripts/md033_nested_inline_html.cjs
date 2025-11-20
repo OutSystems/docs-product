@@ -52,6 +52,26 @@ function getHtmlTagInfo(text) {
     return { close: !!match[1], name: match[2].toLowerCase() };
 }
 
+/**
+ * Returns ranges of inline code spans in a line.
+ */
+function getCodeSpans(line) {
+    const codeSpans = [];
+    const codeRe = /(`+)([\s\S]*?)(\1)/g;
+    let match;
+    while ((match = codeRe.exec(line)) !== null) {
+        codeSpans.push([match.index, match.index + match[0].length]);
+    }
+    return codeSpans;
+}
+
+/**
+ * Check if a given index is inside any range.
+ */
+function isInsideRanges(index, ranges) {
+    return ranges.some(([start, end]) => index >= start && index < end);
+}
+
 module.exports = {
     names: ["MD033_INLINE_HTML", "no-inline-or-nested-html"],
     description: "Inline HTML with nested-element restrictions (extends MD033)",
@@ -85,10 +105,16 @@ module.exports = {
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i];
             const lineNumber = i + 1;
+            const codeSpans = getCodeSpans(line);
             let match;
 
             while ((match = htmlTagRe.exec(line)) !== null) {
                 const fullTag = match[0];
+                const tagIndex = match.index;
+
+                // Skip HTML-like tags inside inline code spans
+                if (isInsideRanges(tagIndex, codeSpans)) continue;
+
                 const info = getHtmlTagInfo(fullTag);
                 if (!info) continue;
                 const { name: elementName, close } = info;
@@ -111,7 +137,6 @@ module.exports = {
                 }
 
                 // Determine if we're in a Markdown table context (not HTML <table>)
-                // markdownlint core passes context for Markdown tables via params.configInlines
                 const isMarkdownTableContext =
                     params &&
                     params.configInlines &&
@@ -136,7 +161,7 @@ module.exports = {
                     const detail = currentParent
                         ? `Element <${elementName}> not allowed inside <${currentParent}>`
                         : `Element <${elementName}> not allowed`;
-                    const range = [match.index + 1, fullTag.length];
+                    const range = [tagIndex + 1, fullTag.length];
                     addErrorContext(onError, lineNumber, detail, range);
                 }
 

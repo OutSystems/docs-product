@@ -22,7 +22,7 @@ Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](h
 ## Summary
 
 | Widget | Description |
-| ---|--- |
+| --- | --- |
 | [ActionColumn](<#ActionColumn>) | Column for your GridContainer Block to render number fields. Drag as many columns as  you need into the GridColumnsPlaceholder in the GridContainer Block. |
 | [CheckboxColumn](<#CheckboxColumn>) | Column for your GridContainer Block to render boolean fields. Drag as many columns as you need into the GridColumnsPlaceholder in the GridContainer Block. |
 | [ContextMenu](<#ContextMenu>) | Add a context menu to the grid. Default options: Copy, Copy with headers, Export to CSV to Excel Freeze column(s), Unfreeze column(s). |
@@ -51,15 +51,16 @@ Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](h
 | [TextColumn](<#TextColumn>) | Column for your GridContainer Block to render text fields. Drag as many columns as you need into the GridColumnsPlaceholder in the GridContainer Block. |
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [ArrangeData](<#ArrangeData>) | Prepares your data to be used by the Data Grid. Use this action in the Data Action after you've fetched the data from the database (**only available for O11**). |
 
 | Client Action | Description |
-| ---|--- |
+| --- | --- |
 | [ActivateFilter](<#Client_ActivateFilter>) | Activates a filter on a given column. |
 | [AddClass](<#Client_AddClass>) | Adds a CSS class to a specific row on the grid. |
 | [AddNewRows](<#Client_AddNewRows>) | Adds new lines to the grid (depending on the number of lines that are selected). |
 | [ClearFilter](<#Client_ClearFilter>) | Clears the filter on a given column. |
+| [ClearGridChanges](<#Client_ClearGridChanges>) | Clears all unsaved changes from the grid. |
 | [ClearSort](<#Client_ClearSort>) | Clears all sorting on the grid |
 | [DeactivateFilter](<#Client_DeactivateFilter>) | Deactivates the filter on a given column. |
 | [FreezeColumns](<#Client_FreezeColumns>) | Freezes the left-most columns on the grid. |
@@ -82,7 +83,7 @@ Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](h
 | [UnfreezeColumns](<#Client_UnfreezeColumns>) | Unfreezes all columns on the grid. |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [ActionOptionalConfigs](<#Structure_ActionOptionalConfigs>) | Additional configurations that can be set in the Action column. |
 | [ActiveFilters](<#Structure_ActiveFilters>) | Contains the information of a given filter of a column. |
 | [BindingValue](<#Structure_BindingValue>) | Represents the content of a cell. |
@@ -111,7 +112,7 @@ Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](h
 | [RowData](<#Structure_RowData>) | Represent the data source of a row. |
 
 | Static Entity | Description |
-| ---|--- |
+| --- | --- |
 | [AlignMode](<#StaticEntity_AlignMode>) | Alignment modes for the column **Align** parameter. Has the values Center, Left and Right. |
 | [DateOperator](<#StaticEntity_DateOperator>) | Operators used by the Date and DateTime conditional format. |
 | [Filter_OperatorType](<#StaticEntity_Filter_OperatorType>) | Operators supported by the filter. |
@@ -698,6 +699,26 @@ GridWidgetId
 ColumnWidgetId
 :   Type: mandatory, Text.  
     ID of the Column block in which the filter will be cleared.
+
+### ClearGridChanges { #Client_ClearGridChanges }
+
+Discard any modifications since the last time the data was loaded or explicitly marked as saved.
+
+**Inputs**
+
+GridWidgetId
+:   Type: mandatory, Text.  
+    ID of Grid block.
+
+**Outputs**
+
+ErrorMerssage
+:   Type: [ErrorMessage](<#Structure_ErrorMessage>).
+    Shows details about errors that occur after performing the action. Contains a code and a message explaining the error.
+
+Success
+:   Type: Boolean
+    Indicates if the action was successfully performed.
 
 ### ClearSort { #Client_ClearSort }
 

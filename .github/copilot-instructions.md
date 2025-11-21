@@ -59,7 +59,7 @@ At OutSystems, a proper noun is typically:
 
 Don't capitalize generic technical terms unless they're part of a proper noun:
 
-* environment, application, module, screen, action
+* environment, app, module, screen, action
 
 * database, server, cloud, platform
 
@@ -68,7 +68,7 @@ Don't capitalize generic technical terms unless they're part of a proper noun:
 **Examples**
 
 * **Yes**: 
-  1. Configure application settings after deployment.
+  1. Configure app settings after deployment.
 
   1. Click **Save**.
     
@@ -76,7 +76,7 @@ Don't capitalize generic technical terms unless they're part of a proper noun:
 
 * **No**: 
 
-  1. Configure Application Settings After Deployment
+  1. Configure App Settings After Deployment
 
   1. Click the **save** button
     
@@ -187,7 +187,7 @@ Capitalize the first letter in headings and titles.
 
 **Examples**
 
-**Yes:** Configure application settings after deployment.
+**Yes:** Configure app settings after deployment.
 
 **No:** Configure Application Settings After Deployment.
 

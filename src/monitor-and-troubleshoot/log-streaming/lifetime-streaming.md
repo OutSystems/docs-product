@@ -20,6 +20,12 @@ coverage-type:
 
 To enable log streaming from the O11 app to the corresponding APM tool,you must configure the APM server details and the authentication credentials. This article explains how you can configure the log streaming service in LifeTime for a specific APM tool.
 
+<div class="info" markdown="1">
+
+Streaming Lifetime logs is not supported.
+
+</div>
+
 ## Prerequisites
 
 For a complete list of prerequisites, refer to [Introduction to log streaming](intro.md#prerequisites).

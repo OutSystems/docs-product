@@ -139,7 +139,7 @@ Here is the list of parameters you can use in the plugin actions.
 | **ScanButton**    | If set to True, enables a scan button on the Scan UI. Pressing the button triggers the scan action instead of scanning automatically when framing the code. |
 | **ScanButtonText**    | Defines the text shown on the Scan button, when it is set to True. |
 | **ShowCameraSelection**    | **Only applies to PWA/Web**. If true, the scanner experience in PWA includes a UI for the end-user to switch between the device's cameras. |
-| **Hint**    | **Only applies to PWA/Web**. A code format of type `<Formats Identifier>`. If set, it only scans codes of the specified format. |
+| **Hint**    | **Only applies to PWA/Web**. A code format of type `{Formats Identifier}`. If set, it only scans codes of the specified format. |
 | **ScannerFPS**    | **Only applies to PWA/Web**. A direct mapping to HTML5Qr-Code `fps`. This number represents the number of frames per second the scanner reads and thus scans a code. Values over (and including) 1000 are not recommended as they will break the app. |
 | **AndroidScanningLibrary**    | **Only applies to Android**. Defines which Android library to use when scanning - ML Kit or ZXing. |
 
@@ -168,6 +168,10 @@ Also, on some devices, it's not possible to scan certain codes. The following ar
 * Try to change the camera using the camera selection dropdown, setting the **ShowCameraSelection** input parameter to **True**.
 * Specify the code format with the **Hint** input parameter.
 * Increase the number of FPS (max 1000, and this value is not recommended) passed in the **ScannerFPS** input parameter.
+
+### ScanOrientation has no effect in tablets on Android 16 and above
+
+For apps that target Android 16 or above running on tablets, the **ScanOrientation** input parameter of the **ScanBarcode** client action has no effect.
 
 ______________________________________________________________
 _QR CODE is a registered trademark of Denso Wave Incorporated._

@@ -30,6 +30,7 @@ module.exports = {
 
         let sectionHeadings = [];
         let inTabBlock = false;
+        let inFencedBlock = false;
 
         const frontMatterTitle = params.config.front_matter_title === '' ? getFrontMatterTitle(lines) : '';
         if (frontMatterTitle && level === 1) {
@@ -38,7 +39,8 @@ module.exports = {
 
         for (let i = 0; i < lines.length; i++) {
             const lineNumber = i + 1;
-            const line = lines[i].trim();
+            const rawLine = lines[i];
+            const line = rawLine.trim();
 
             // DocFX tab blocks
             if (/^:::/.test(line)) {
@@ -47,6 +49,15 @@ module.exports = {
             }
             if (inTabBlock) continue;
 
+            // Detect start/end of fenced code blocks (``` or ~~~)
+            if (/^\s*(```|~~~)/.test(rawLine)) {
+                inFencedBlock = !inFencedBlock;
+                continue;
+            }
+
+            // Skip all content inside code fences
+            if (inFencedBlock) continue;
+
             // Skip HTML comments
             if (/^<!--.*-->$/.test(line)) continue;
 
@@ -54,37 +65,48 @@ module.exports = {
             if (/^\s*$/.test(line)) continue;
 
             // Page break detection
-            const isPageBreak = /^\s*---\s*$/.test(line) || /^\s*<!--\s*PAGE BREAK\s*-->\s*$/.test(line);
+            const isPageBreak =
+                /^\s*---\s*$/.test(line) ||
+                /^\s*<!--\s*PAGE BREAK\s*-->\s*$/.test(line);
+
             if (isPageBreak) {
                 if (sectionHeadings.length > 1) {
-                    sectionHeadings.slice(1).forEach(h => addErrorContext(onError, h.lineNumber, h.text));
+                    sectionHeadings.slice(1).forEach(h =>
+                        addErrorContext(onError, h.lineNumber, h.text)
+                    );
                 }
                 sectionHeadings = [];
                 continue;
             }
 
-            // ATX heading detection for configurable level
+            // ATX heading detection
             const atxMatch = new RegExp(`^#{${level}}\\s+(.*)`).exec(line);
             if (atxMatch) {
                 const headingText = atxMatch[1].trim();
                 sectionHeadings.push({ lineNumber, text: headingText });
-                if (sectionHeadings.length > 1) addErrorContext(onError, lineNumber, headingText);
+                if (sectionHeadings.length > 1) {
+                    addErrorContext(onError, lineNumber, headingText);
+                }
                 continue;
             }
 
-            // Setext heading detection for configurable level
+            // Setext heading detection
             if (i + 1 < lines.length) {
                 if (level === 1 && /^=+$/.test(lines[i + 1].trim())) {
                     const headingText = line;
                     sectionHeadings.push({ lineNumber, text: headingText });
-                    if (sectionHeadings.length > 1) addErrorContext(onError, lineNumber, headingText);
-                    i++; // skip underline
+                    if (sectionHeadings.length > 1) {
+                        addErrorContext(onError, lineNumber, headingText);
+                    }
+                    i++;
                     continue;
                 } else if (level === 2 && /^-+$/.test(lines[i + 1].trim())) {
                     const headingText = line;
                     sectionHeadings.push({ lineNumber, text: headingText });
-                    if (sectionHeadings.length > 1) addErrorContext(onError, lineNumber, headingText);
-                    i++; // skip underline
+                    if (sectionHeadings.length > 1) {
+                        addErrorContext(onError, lineNumber, headingText);
+                    }
+                    i++;
                     continue;
                 }
             }

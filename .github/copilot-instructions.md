@@ -1,13 +1,17 @@
-##  General guidelines for grammar and content
+# Instructions for documentation
+
+## General guidelines for grammar and content
+
+Follow these guidelines to ensure consistent and high-quality documentation.
 
 ### Tone and voice
 
 Use the appropriate tone and voice in your content. Your content must be:
 
-- Friendly and straightforward
-- Clear and concise
-- Inclusive and respectful
-- Free of jargon and sales talk
+* Friendly and straightforward
+* Clear and concise
+* Inclusive and respectful
+* Free of jargon and sales talk
 
 ### Be brief and concise
 
@@ -34,6 +38,8 @@ Use the present tense whenever possible. Using the present tense helps make sent
 **No:** Click the Save button. The data will be updated.
 
 ### Capitalization
+
+Use the following rules for capitalization.
 
 #### Common nouns versus proper nouns
 
@@ -71,7 +77,7 @@ Don't capitalize generic technical terms unless they're part of a proper noun:
   1. Configure app settings after deployment.
 
   1. Click **Save**.
-    
+
       For more information, refer to the troubleshooting guide
 
 * **No**: 
@@ -79,7 +85,7 @@ Don't capitalize generic technical terms unless they're part of a proper noun:
   1. Configure App Settings After Deployment
 
   1. Click the **save** button
-    
+
       For more information, refer To the Troubleshooting Guide
 
 #### Capitalize proper nouns and brand names
@@ -87,11 +93,8 @@ Don't capitalize generic technical terms unless they're part of a proper noun:
 Always capitalize:
 
 * Product names: OutSystems, Service Studio, LifeTime, ODC Portal
-
 * Technology names: JavaScript, CSS, HTML, SQL
-
 * Company names: Microsoft, Google, Amazon Web Services
-
 * Service names: Azure Active Directory, Amazon S3
 
 **Examples**
@@ -106,10 +109,10 @@ Always capitalize:
 
 #### Special cases
 
+Adhere to these rules for special cases:
+
 * APIs and endpoints: Use the exact capitalization as defined in the API documentation
-
 * Code elements: Maintain original capitalization (variables, functions, classes)
-
 * Abbreviations: Follow standard conventions (HTML, CSS, API, UI, URL)
 
 ### Use contractions
@@ -142,6 +145,18 @@ The active voice makes the sentence dynamic and clear. It also makes it clear wh
 
 **No:** The original Aggregate is kept in the flow editor for your manual deletion after validating the new SQL element.
 
+### Be careful with modal verbs
+
+Avoid using modal verbs like can, could, may, might, will, shall, would, should, and must when possible. Technical content should confidently describe what the product does. Using a modal often creates a weak and wordy sentence.
+
+**Examples**
+
+**Yes:** OutSystems lets you create several app types.
+**No:** There are several app types you can create.
+
+**Yes:** OutSystems handles unforeseen or unhandled errors in applications.
+**No:** OutSystems handles unforeseen or unhandled errors that might occur in applications.
+
 ### Use second person
 
 Use the second person "you" to address the reader or readers. However, don't overuse it.
@@ -168,18 +183,39 @@ When referring to OutSystems, don't use we.
 
 **No:** We recommend backing up your data every 3 months.
 
+### Be clear and precise
+
+The language in technical content must be clear and precise. Avoid being vague.
+
+**Examples**
+
+**Yes:** Do the following in all of your apps.
+**No:** Some tasks must be used as a rule of thumb.
+
+**Yes:** Error. The library uses an API that's not available.
+**No:** Error. The library might be using an API that's not available.
+
 ### Keep accessibility in mind
 
 Your content should be accessible to all people, to those without and with disabilities. Be mindful of:
 
-- How you refer to people with disabilities. Use inclusive language.
-- How you describe interactions with the user interface. Consider providing alternative methods or steps.
-- How you use words to indicate a location (left, right, top, below, up, down) on screen. Provide more context for people using screen-readers.
-- How you use the words "easy" and "simple". What may be simple to do for some people may not be simple to do for all.
+* How you refer to people with disabilities. Use inclusive language.
+* How you describe interactions with the user interface. Consider providing alternative methods or steps.
+* How you use words to indicate a location (left, right, top, below, up, down) on screen. Provide more context for people using screen-readers.
+* How you use the words "easy" and "simple". What may be simple to do for some people may not be simple to do for all.
 
 **Yes:** For more information about accessibility, refer to [Writing for all abilities](https://docs.microsoft.com/en-us/style-guide/accessibility/writing-all-abilities).
 
 **No:** For more information about accessibility, see [Writing for all abilities](https://docs.microsoft.com/en-us/style-guide/accessibility/writing-all-abilities).
+
+### Don't use the words "sorry" and "please"
+
+Avoid using apologetic or polite filler words in technical documentation.
+
+**Examples**
+
+**Yes:** To view the document, click _View_.
+**No:** To view the document, please click _View_.
 
 ### Use sentence case for headings and titles
 
@@ -199,23 +235,48 @@ Capitalize the first letter in headings and titles.
 
 **No:** Bootstrap an Entity Using an Excel File
 
+### Avoid overusing parentheses
+
+Don't put important information in parentheses. Readers may ignore them. If the info is important, use commas, dashes, or separate sentences.
+
+### Serial comma
+
+In a series of three or more items, use a comma before the final "and" or "or".
+
+**Example**
+
+**Yes:** Consider an infrastructure with the following environments: development, preproduction, and production.
+**No:** Consider an infrastructure with the following environments: development, preproduction and production.
+
+### Keep it international
+
+Ensure content is accessible to people of different cultures.
+
+* Use plain English.
+* Don't use idioms (e.g., "cost an arm and a leg").
+* Don't try to be funny.
+
 ### Use gender-inclusive language
 
 You should make the gender visible only if it's important to understand the content. This means you shouldn't use words like he/she, himself/herself, man/woman, unless you're referring to a particular individual. Instead, use a non-gender alternative, like plural forms and "they". Furthermore, you shouldn't use language that reinforces stereotypes.
 
-For more details, see [Bias-free communication](https://docs.microsoft.com/en-us/style-guide/bias-free-communication) by Microsoft.
+For more details, refer to [Bias-free communication](https://docs.microsoft.com/en-us/style-guide/bias-free-communication) by Microsoft.
 
 **Examples**
 
 **Yes:**
 
-- When developers download a Forge component, they can install it in Service Studio. (Use plural to avoid referring to gender.)
-- When a developer downloads a Forge component, they can install it in Service Studio. (Use "they" to refer to a single person without mentioning their gender.)
-- When you download a Forge component, install it in Service Studio. (Are your target readers developers? If yes, then "you" is a better choice.)
+* When developers download a Forge component, they can install it in Service Studio. (Use plural to avoid referring to gender.)
+* When a developer downloads a Forge component, they can install it in Service Studio. (Use "they" to refer to a single person without mentioning their gender.)
+* When you download a Forge component, install it in Service Studio. (Are your target readers developers? If yes, then "you" is a better choice.)
 
 **No:**
 
-- When a developer downloads a Forge component, he can install it in Service Studio. (Service Studio is not used exclusively by male developers or developers who identify as men.)
+* When a developer downloads a Forge component, he can install it in Service Studio. (Service Studio is not used exclusively by male developers or developers who identify as men.)
+
+### Use standardized example domains
+
+Use `example.com` for domain examples. Do not use real customer domains or other domains.
 
 ### Avoid Latin abbreviations
 
@@ -233,13 +294,15 @@ Use "that is" instead of "i.e." and "for example" or "such as" instead of "e.g."
 
 ### Timeless documentation
 
-- Avoiding time-based words and phrases: Do not use words like new, now, currently, latest, or future when describing a product's features. These words quickly become outdated and require maintenance.
-- Focusing on the current state: The documentation should describe how a product works as if it is the current, stable state, not a recent change.
-- Providing a specific reference point (if necessary): If you absolutely must refer to a new feature, provide a specific reference point like a version number or a date.
+Ensure documentation remains relevant by following these practices:
+
+* Avoiding time-based words and phrases: Do not use words like new, now, currently, latest, or future when describing a product's features. These words quickly become outdated and require maintenance.
+* Focusing on the current state: The documentation should describe how a product works as if it is the current, stable state, not a recent change.
+* Providing a specific reference point (if necessary): If you absolutely must refer to a new feature, provide a specific reference point like a version number or a date.
 
 **Yes:** You can configure LinkedIn as your Identity Provider using the provided accelerator.
 
-**Yes:** From Lifetime Release 11.27.1, You can configure LinkedIn as your Identity Provider using the provided accelerator.
+**Yes:** From LifeTime Release 11.27.1, you can configure LinkedIn as your Identity Provider using the provided accelerator.
 
 **No:** There's now a new accelerator to configure LinkedIn as your Identity Provider.
 
@@ -247,67 +310,107 @@ Avoid documenting future features or products, even in innocuous ways. Don't pre
 
 ### Rules for pronouns
 
+Use pronouns correctly to avoid ambiguity.
+
 #### Ensure pronoun references are unambiguous
+
 A pronoun should clearly refer to a specific noun (antecedent). If there is any potential for confusion, restate the noun.
 **Yes:** "If you are using the Data Grid, you can change the view in ODC Portal. This new feature simplifies the process."
 **No:** "If you are using the Data Grid, you can change the view in ODC Portal. It is a new feature."
 
 #### Use `that` and `which` correctly
+
 Use `that` for restrictive clauses (information essential to the meaning of the sentence). Use `which` for nonrestrictive clauses (information that can be removed without changing the core meaning).
 * **Yes:** "The platform service that handles all requests to the services is the Platform Load Balancer."
 * **Yes:** "OutSystems, which is a low-code development platform, helps you create apps."
 
 #### Use "who" for people
+
 The pronoun `who` should be used when referring to a person or people.
 * **Yes:** "The person who configures the security settings should be an administrator."
 * **No:** "The person that configures the security settings should be an administrator."
 
+### Check the readability scores
+
+Content should be understood by high school graduates (readability score < 13).
+
+### Git commit subject line
+
+Limit the git commit subject line to 50 characters.
+
 ## General guidelines for the structure of a document
+
+Structure your documents logically to help readers find information quickly.
 
 ### Put critical information first
 
 Similarly to putting the most important information first in a sentence, put the most important information first in a paragraph. Don't hide the key point of a paragraph at the end of the paragraph. Readers don't read every word.
 
+### Headings
+
+Follow these hierarchy and formatting rules for headings:
+
+* **Hierarchy**: Use heading levels to show the relationship of ideas.
+  * Use only one Heading 1 (`#`) per file (topic title).
+  * Don't skip levels (e.g., don't go from `#` to `###`).
+  * Limit headings to three levels (`#`, `##`, `###`).
+* **Format**:
+  * Use sentence case.
+  * No numbers in headings to indicate sequence.
+  * No links in headings.
+  * Add at least one sentence between a heading and an image/table.
+  * Leave an empty line before and after a heading.
+
+### Paragraphs
+
+Keep paragraphs focused and readable:
+
+* Break up paragraphs to aid scannability.
+* A paragraph longer than 5-6 sentences often contains too much info.
+* Each paragraph should address a single idea.
+
 ### Lists
+
+Use lists to break up text and make information easier to scan.
 
 #### Types of lists
 
-Choose one of the following list styles. 
+Choose one of the following list styles.
 
 #### Numbered list
 
-A set of items where the sequence is significant, such as ordered steps, phases, or priorities. The following is an example of a numbered list:
+A set of items where the sequence is significant, such as ordered steps, phases, or priorities. Preceed each item with `1. `. The following is an example of a numbered list:
 
 To install OutSystems in your infrastructure, follow these steps:
 
-1. Download the Platform Server installation binaries.  
-2. Install the Platform Server.  
-3. Download the LifeTime installation binaries.  
-4. Install the LifeTime in a dedicated environment.  
-5. Configure the infrastructure management console.  
-6. Install and configure the development tools.
+1. Download the Platform Server installation binaries.
+1. Install the Platform Server.
+1. Download the LifeTime installation binaries.
+1. Install the LifeTime in a dedicated environment.
+1. Configure the infrastructure management console.
+1. Install and configure the development tools.
 
 #### Bulleted list
 
-A set of items that's not a sequence, such as a set of nonsequential options or examples. Make sure it's clear whether or not every item is required. The following is an example of a bulleted list: 
+A set of items that's not a sequence, such as a set of nonsequential options or examples. Make sure it's clear whether or not every item is required. The following is an example of a bulleted list:
 
-Here's some of the benefits of using workflows: 
+Here's some of the benefits of using workflows:
 
-* Streamline tasks that require manual intervention. 
-  
-* Automate repetitive tasks and notifications, leading to faster response times and better operational efficiency. Include multiple conditional paths that route your business process based on specific criteria. 
+* Streamline tasks that require manual intervention.
+
+* Automate repetitive tasks and notifications, leading to faster response times and better operational efficiency. Include multiple conditional paths that route your business process based on specific criteria.
 
 #### Description list that uses bulleted run-in headings
 
-A set of introductory terms or phrases, each followed by a description, definition, or explanation. Use this type of list if you want to highlight and explain several concepts or save space. 
+A set of introductory terms or phrases, each followed by a description, definition, or explanation. Use this type of list if you want to highlight and explain several concepts or save space.
 
 The following is an example of a description list that uses bulleted run-in headings:
 
 OutSystems allows you to deploy your apps in the following ways:
 
-* **Public cloud:** Leverage the scalability and reach of public cloud providers.  
+* **Public cloud:** Leverage the scalability and reach of public cloud providers.
 
-* **On-premises (self-managed):** Maintain full control over your infrastructure within your own data center.  
+* **On-premises (self-managed):** Maintain full control over your infrastructure within your own data center.
 
 * **Hybrid cloud:** Combine public cloud and on-premises environments for a flexible solution.
 
@@ -321,23 +424,23 @@ If the list doesn't need any additional context other than the heading that imme
 
 To stream logs to Datadog, follow these steps:
 
-1. Get the Datadog API key.  
-2. Set up the [OpenTelemetry Collector](https://success.outsystems.com/documentation/11/monitoring_and_troubleshooting_apps/introduction_to_log_streaming/configuring_the_log_streaming_service_in_lifetime/set_up_the_opentelemetry_collector/) with Datadog as the exporter.  
-3. Get the OpenTelemetry Collector endpoint and authentication credentials.
+1. Get the Datadog API key.
+1. Set up the [OpenTelemetry Collector](https://success.outsystems.com/documentation/11/monitoring_and_troubleshooting_apps/introduction_to_log_streaming/configuring_the_log_streaming_service_in_lifetime/set_up_the_opentelemetry_collector/) with Datadog as the exporter.
+1. Get the OpenTelemetry Collector endpoint and authentication credentials.
 
 Here are some examples of events that can occur in an app:
 
-* A sensor detects a temperature change.  
-* A customer is submitting a loan application.  
+* A sensor detects a temperature change.
+* A customer is submitting a loan application.
 * A server reaching 80% of its capacity.
 
 **No:**
 
-To stream logs to Datadog, 
+To stream logs to Datadog,
 
-1. Get the Datadog API key.  
-2. Set up the [OpenTelemetry Collector](https://success.outsystems.com/documentation/11/monitoring_and_troubleshooting_apps/introduction_to_log_streaming/configuring_the_log_streaming_service_in_lifetime/set_up_the_opentelemetry_collector/) with Datadog as the exporter.  
-3. Get the OpenTelemetry Collector endpoint and authentication credentials.
+1. Get the Datadog API key.
+1. Set up the [OpenTelemetry Collector](https://success.outsystems.com/documentation/11/monitoring_and_troubleshooting_apps/introduction_to_log_streaming/configuring_the_log_streaming_service_in_lifetime/set_up_the_opentelemetry_collector/) with Datadog as the exporter.
+1. Get the OpenTelemetry Collector endpoint and authentication credentials.
 
 ### Parallel syntax
 
@@ -347,17 +450,26 @@ Use the same syntax/structure for all list items in a given list, if possible.
 
 You can use the Data Grid component to:
 
-* Display large datasets in a tabular format.  
-* Enable users to filter, sort, and group data.  
+* Display large datasets in a tabular format.
+* Enable users to filter, sort, and group data.
 * Edit data directly within the grid.
 
 **No:**
 
 You can use the Data Grid component to:
 
-* Display large datasets.  
-* Filtering, sorting, and grouping data are needed.  
+* Display large datasets.
+* Filtering, sorting, and grouping data are needed.
 * Paginate data for better performance.
+
+### List punctuation
+
+Start each list item with a capital letter.
+End each item with a period unless:
+* It's a single word.
+* It doesn't include a verb.
+* It's entirely code font.
+* It's entirely link text.
 
 ### Write descriptive link text
 
@@ -367,11 +479,11 @@ Effective link text helps to improve accessibility and scannability. Different r
 
 Sometimes you have to rework a sentence to include a phrase that makes good link text.
 
-### Write link introductions 
+### Write link introductions
 
 When you dedicate a separate sentence to a cross-reference, introduce the cross-reference using consistent language—specifically, use the phrase "For more information, refer to..." or "For more information about..., refer to... ."
 
-Include the "about..." clause when the link text or surrounding context doesn't clearly indicate why you're referring the reader to this information. 
+Include the "about..." clause when the link text or surrounding context doesn't clearly indicate why you're referring the reader to this information.
 
 Don't use *on* instead of *about*.
 
@@ -387,33 +499,144 @@ Use *refer to* to refer to links and cross-references. For more information, ref
 
 Make sure that the surrounding context or the link text itself clearly indicates why you're referring the reader to this information. Make the explanation specific, but don't repeat the link text.
 
-If you're introducing a cross-reference with "For more information..." phrasing, then you can do this by adding an "about..." phrase. 
+If you're introducing a cross-reference with "For more information..." phrasing, then you can do this by adding an "about..." phrase.
 
 **Yes**: For more information about OAuth authentication and authorization, refer to
 
+### Placeholders
+
+Format placeholders consistently using these rules:
+
+* In Markdown, wrap inline placeholders in backticks, and use an asterisk before the first backtick and after the second one (``*`PLACEHOLDER_NAME`*``).
+* Use uppercase characters with underscore delimiters (e.g., `*API_NAME*`).
+* Explain the placeholder the first time you use it.
+
+## Formatting
+
+Apply consistent formatting to UI elements and other text features.
+
+### Typographical emphasis
+
+Use typographical emphasis as follows:
+
+* **Bold**: Use for UI elements (labels, buttons, links) or occasional emphasis.
+* _Italic_: Don't use italic.
+* **Underline**: Don't use underline.
+
+### User inputs and interface labels
+
+Distinguish user inputs and UI labels with specific formatting:
+
+* **UI Labels**: Use **bold** (e.g., **New Application** window, **Save** button).
+* **User Input**: Use `inline code` (monospace) for text users need to type (e.g., Enter `display-flex`).
+
+### Properties: names and values
+
+Format property names and values according to these rules:
+
+* **Property Names**: Use **bold** (e.g., **Name** property).
+* **Typed Values**: Use `inline code` (e.g., enter `Yes`).
+* **Selected Values**: Use **bold** (e.g., select **Yes** from the dropdown).
+
+### Keyboard shortcuts
+
+Represent keyboard shortcuts using these conventions:
+
+* Use sentence capitalization.
+* Use bold.
+* Example: Select **Ctrl+N**.
+
+### Code examples
+
+Present code examples clearly:
+
+* Use code blocks (triple backticks).
+* Specify the language (e.g., ```javascript).
+
+### Screenshots
+
+Include screenshots only when necessary:
+
+* Use sparingly to guide users in complex procedures.
+* Not for decorative purposes.
+
+## Markdown syntax specifics
+
+Use standard Markdown syntax with specific conventions for this project.
+
+### Warning and information sections
+
+Use HTML `<div>` elements with `class="warning"` or `class="info"`. Include `markdown="1"`.
+
+```html
+<div class="warning" markdown="1">
+
+Include your warning text here.
+
+</div>
+```
+
+### Images
+
+Use standard Markdown syntax: `![alt text](images/my-image.png)`.
+Do not use `?width=` parameter (deprecated).
+
+## File and folder naming
+
+Name files, folders, and images using these conventions:
+
+* **Files/Folders**: Use lowercase, numbers, and hyphens only. No spaces or underscores. (e.g., `my-new-topic.md`).
+* **Images**:
+  * Use lowercase, numbers, hyphens.
+  * Include a suffix identifying the source (e.g., `my-screen-ss.png` for Service Studio).
+  * Suffixes: `ss` (Service Studio), `odcs` (ODC Studio), `lt` (LifeTime), `sc` (Service Center), `pl` (ODC Portal), `usr` (Users), `fg` (Forge).
+
 ## General guidelines for procedures
 
-### Use task-based headings for procedural content
+Write clear and easy-to-follow procedures by adhering to these guidelines.
 
-* Start with a verb in the imperative mood (for example, "Create a screen" or "Install a Forge app").
-* Avoid gerunds (for example "Creating a screen").
+### Title
+
+Structure procedure headings to be action-oriented:
+
+* Start with an active verb (e.g., "Set up OpenTelemetry Collector").
+* Avoid gerunds.
 
 ### Include an introduction
 
-* Provide a brief overview of the procedure, explaining what the user will achieve and why it is important.
-* Identify the audience or skill level (for example, beginner or experienced developer).
+Start every procedure with context:
+
+* Explain what the task is and what the user will achieve.
+* (Optional) Explain when and why the user might want to perform the task.
+* Identify the intended audience.
 
 ### Place prerequisites at the top
+
+State what is needed before starting:
 
 * List any requirements (for example, tools, permissions, or prior steps) before the procedure begins.
 * Ensure prerequisites are clear and concise.
 
+### How to {Task name}
+
+Structure the main instruction section:
+
+* Use a lead-in sentence: "To do this task, follow these steps:" or a short intro sentence.
+* Stick to a maximum of 7-10 steps. If more are needed, break into multiple procedures.
+* Do not explain concepts within the steps.
+
 ### Use numbered steps
+
+Format steps for clarity:
 
 * Write steps in a logical order, using numbers to indicate sequence.
 * Each step should describe a single action.
+* For describing actions on screen, follow this format: `[Why do the action] [Where is the location on screen], [what is the action]`.
+  * Example: "To display a preview of the empty screen, in the **New Screen** window, select **Empty**."
 
 ### Follow the 3w rule
+
+Include the Why, Where, and What in steps:
 
 * **Why**: Explain the purpose of the step (optional).
 * **Where**: Indicate the location or context for the action.
@@ -421,27 +644,127 @@ If you're introducing a cross-reference with "For more information..." phrasing,
 
 ### Limit the number of steps
 
+Keep procedures concise:
+
 * Aim for 7–9 steps per procedure. If more steps are needed, break the procedure into smaller sections or sub-procedures.
 
 ### Add content after headings
+
+Never leave a heading empty:
 
 * Include at least one sentence after a heading to introduce the content that follows (for example, images, tables, or steps).
 
 ### Use infoboxes sparingly
 
+Use admonitions only for important info:
+
 * Highlight critical information (for example, warnings or tips) only when necessary to avoid overuse.
 
 ### Use links judiciously
+
+Manage links to avoid distraction:
 
 * Limit the number of links in the procedure to avoid distractions.
 * Place additional resources in a **Related Resources** section at the end.
 
 ### Add a summary
 
+Conclude procedures effectively:
+
 * Provide a brief summary at the end of the procedure, recapping the key points or outcomes.
 
 ### Add rationales for steps
 
+Explain the 'why' behind actions:
+
 * When necessary, explain why a step is important to help users understand its purpose.
 
-These rules ensure that procedures are user-friendly, consistent, and easy to follow. Let me know if you need further assistance!
+### Format UI elements and user input
+
+When documenting procedures, use the following formatting for UI elements and user input:
+
+* **UI elements**: Use **bold** for elements in the user interface, such as button names, menu items, field labels, and window titles.
+* **User input**: Use `inline code` for values that the user enters or selects.
+
+Here are examples of adding the Assign widget in ODC Studio:
+
+1. From the **Widget Tree**, right-click the **Content** container, then select **Insert Widget** > **Block**, and add a **PasswordPolicy** block.
+1. Set the **Password** property to `Password`.
+1. In the **Handler** property, select **New Client Action**.
+1. Add an **Assign** widget, and assign the `Input_Password.valid` variable to `IsValid`.
+
+Here is another example:
+
+1. From the **Interface** > **Elements** tab, open the **SignUpOnClick** action, drag an **Assign** to the **True** branch after the `"Check your email"` message.
+1. In the **Assign** properties, select **IsVerificationCodeVisible** from the variable dropdown, and set its value to `True`.
+
+## General guidelines for processes
+
+For high-level process documents (distinct from step-by-step procedures):
+
+* **Title**: Start with a verb in the gerund form (e.g., "Streaming log data").
+* **Purpose**: Describe high-level end-to-end tasks.
+* **Introduction**: Provide a summary of tasks needed to implement the capability.
+* **Prerequisites**: List requirements before the process.
+* **High-level process**:
+  * Use diagrams (sequence, flow chart).
+  * Use a bulleted or numbered list of high-level tasks.
+  * Focus on *what* and *why*, not detailed steps.
+* **Examples**: Provide examples to clarify.
+* **Next steps**: Link to detailed procedures.
+* **Related resources**: Link to concepts or external resources.
+
+## General guidelines for overviews
+
+Use overview documents to provide a birds-eye view of a capability.
+
+* **Title**: Use a specific noun or phrase (e.g., "Introduction to UI screen design", "Log streaming in ODC"). Avoid generic "Introduction" or "Overview".
+* **Purpose**: Explain key features, use cases, and a high-level summary.
+* **Audience**: Tech leads, developers, decision makers.
+* **Introduction**: Describe the capability, its purpose, and the intended audience.
+* **Benefits**: List the top 3 benefits from the user's point of view. Use the rule of three.
+* **Use cases**: Provide real-world examples.
+* **How it works** (Optional): Include a high-level diagram, components, and workflow.
+* **Restrictions** (Optional): List known limitations.
+
+## General guidelines for concepts
+
+Use concept documents to provide background knowledge and principles.
+
+* **Title**: Use a noun (e.g., "About business processes").
+* **Introductory Paragraph**: Set the stage, explaining relevance and importance.
+* **Definition**: Define the concept clearly (glossary style) and its scope. Address 5W and 1H (Who, What, Where, When, Why, How).
+* **Diagrams**: Use diagrams to illustrate organization or system fit.
+* **Use case**: List common scenarios.
+
+## General guidelines for reference documents
+
+Use reference documents for feature-specific information (settings, configurations).
+
+* **Title**: Use a noun (e.g., "Controller tab").
+* **Content**: Provide an introductory sentence followed by a table or list.
+* **Table Structure**: Typically includes columns for Setting/Configuration, Description, and Considerations/Default Value.
+
+## General guidelines for troubleshooting articles
+
+Use troubleshooting articles to help users resolve specific errors or issues.
+
+* **Title**: Speak to the error message or symptom (e.g., "ORA-01000: maximum open cursors exceeded").
+* **Symptoms**: Describe the impact as presented to the user (manifestations vs root cause).
+* **Causes**: Order from easiest to confirm to most complex.
+* **Resolution**: For each cause, describe the steps to resolve it.
+
+## Common product names (reference)
+
+Use these exact names:
+
+* OutSystems (not OS)
+* Service Studio
+* LifeTime
+* Service Center
+* Integration Studio
+* ODC (OutSystems Developer Cloud)
+* ODC Studio
+* ODC Portal
+* AI Mentor Studio
+* Forge

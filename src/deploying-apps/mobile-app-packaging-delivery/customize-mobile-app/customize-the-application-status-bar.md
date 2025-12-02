@@ -44,18 +44,28 @@ For previous MABS versions, the status bar is black and above the app content by
 
 | Property  |  Values  |  Description |
 | ---|---|--- |
-| StatusBarBackgroundColor  |  `#000000` to `#FFFFFF` |  The background color of the status bar. The status bar style (light or dark text and icons) is automatically determined based on this color for optimal contrast.<br/>If not set, the status bar uses your application's primary color.<br/>Expected color format: `#RRGGBB`. |
+| StatusBarOverlaysWebView  |  `true` <br/> `false` |  Defines whether the content of your app starts after the status bar or can appear behind the status bar.<br/>If set to `true` or **not set** in MABS 11 or newer, the content will appear behind the status bar.<br/>If set to `false` or **not set** in MABS 10, the content will start after the status bar. |
+| StatusBarBackgroundColor  |  `#000000` to `#FFFFFF` |  The background color of the status bar. This is only used when the app content starts after the status bar.<br/>Expected color format: `#RRGGBB`. |
+| StatusBarStyle  |  `default` <br/> `lightcontent` <br/> `darkcontent` |  Defines the style of the status bar text and icons.<br/>When set to `default` (or **not set**), the status bar text and icons appear with the mobile platform's default color.<br/>When set to `lightcontent` or `darkcontent`, the status bar text and icons appear in a light or dark color defined by the mobile platform. |
 
 ## Status Bar JSON Template
 
-Use the following template as a reference for defining a custom background color for the application status bar:
+Use the following template as a reference for defining a custom behavior for the application status bar. Depending on your use case, you can include just one of the properties in your extensibility configurations:
 
 ```javascript
 {
     "preferences": {
         "global": [{
+            "name": "StatusBarOverlaysWebView",
+            "value": "<value>"
+        },
+        {
             "name": "StatusBarBackgroundColor",
             "value": "<#RRGGBB>"
+        },
+        {
+            "name": "StatusBarStyle",
+            "value": "<value>"
         }]
     }
 }
@@ -63,13 +73,22 @@ Use the following template as a reference for defining a custom background color
 
 ## Examples
 
-### Status Bar Using App Primary Color
+### Transparent Status Bar in Full Screen App
 
-When no `StatusBarBackgroundColor` is set, the status bar automatically uses your application's primary color with appropriate text styling for optimal contrast.
+![Example of a mobile app with a transparent status bar in full screen mode](images/transparent_statusbar.png "Transparent Status Bar Example")
 
-No extensibility configuration is required for this default behavior.
+```javascript
+{
+    "preferences": {
+        "global": [{
+            "name": "StatusBarOverlaysWebView",
+            "value": "true"
+        }]
+    }
+}
+```
 
-### Status Bar with a Custom Color
+### Status Bar with a Different Color
 
 ![Example of a mobile app with a status bar colored in gold](images/differentcolor_statusbar.png "Colored Status Bar Example")
 
@@ -77,6 +96,10 @@ No extensibility configuration is required for this default behavior.
 {
     "preferences": {
         "global": [{
+            "name": "StatusBarOverlaysWebView",
+            "value": "false"
+        },
+        {
             "name": "StatusBarBackgroundColor",
             "value": "#AF9200"
         }]
@@ -88,6 +111,5 @@ No extensibility configuration is required for this default behavior.
 
 Here are some known issues in customizing the status bar.
 
-* If you choose to opt into `AndroidEdgeToEdge` (which is not the default) by manually changing the cordova preference, the style of your icons will not be up-dateable.
-* On android 15, if you opt into `AndroidEdgeToEdge` there is a conflicting preference `android:windowOptOutEdgeToEdgeEnforcement` in `cdv_themes.xml` that will cause strange behavior, so be sure to remove that preference if you opt into `AndroidEdgeToEdge`
-* Before setting `window.statusbar.visible` to `false`, set a background color that sets the style of the icons to match your preference.
+* In iOS 13, when using dark mode, it's not currently possible to use a status bar text color other than white, even when setting the StatusBarStyle to `default`. This is an [issue in Cordova's Status Bar plugin](https://github.com/apache/cordova-plugin-statusbar/issues/148) and should be fixed in a future release.
+* If your status bar customization doesn't show, you may be using and outdated version of OutSystems UI. Try updating OutSystems UI from Forge.

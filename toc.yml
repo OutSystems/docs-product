@@ -735,11 +735,9 @@
     - href: integration-with-systems/mobile-plugins/intro.md
     - topics:
         - href: integration-with-systems/mobile-plugins/barcode/intro.md
-        - href: integration-with-systems/mobile-plugins/location/intro.md
         - href: integration-with-systems/mobile-plugins/camera/intro.md
         - topics:  
             - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
-        - href: integration-with-systems/mobile-plugins/inapp-browser/inapp-browser.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md
         - topics:
             - href: integration-with-systems/mobile-plugins/file-plugin/file-plugin-ref.md
@@ -755,9 +753,11 @@
         - href: integration-with-systems/mobile-plugins/health-fitness/intro.md
         - topics:
             - href: integration-with-systems/mobile-plugins/health-fitness/intro_v2.md
+        - href: integration-with-systems/mobile-plugins/inapp-browser/inapp-browser.md
         - href: integration-with-systems/mobile-plugins/keystore-plugin/intro.md
         - topics:
             - href: integration-with-systems/mobile-plugins/keystore-plugin/keystore-ref.md
+        - href: integration-with-systems/mobile-plugins/location/intro.md    
         - href: integration-with-systems/mobile-plugins/payments-plugin/intro.md 
         - href: integration-with-systems/mobile-plugins/social-login/intro.md
         - topics:

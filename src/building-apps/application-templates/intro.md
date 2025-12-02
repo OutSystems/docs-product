@@ -24,8 +24,8 @@ Thanks to the application templates, the apps have many predefined elements that
 
 There the following types of application templates:
 
-* built-in application templates
-* custom application templates
+* Built-in application templates
+* Custom application templates
 * Forge application templates
 
 ## Built-in application templates

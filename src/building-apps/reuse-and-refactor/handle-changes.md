@@ -97,9 +97,9 @@ The **signature of an exposed element has changed** and the change **has impact*
 
 The impact of this change on your consumer module depends on the **type of dependency** to the producer:
 
-* If it is a [strong dependency](strong-weak-dependencies.md#strong-dependencies), the change will cause no impact on your consumer module at runtime. You will only get runtime errors if you republish your consumer module without refreshing the dependency.
+* If it is a [strong dependency](strong-weak-dependencies.md#strong-dependencies), the change will cause runtime errors in your consumer module.
 
-* If it is a [weak dependency](strong-weak-dependencies.md#weak-dependencies), the change will cause runtime errors in your consumer module.
+* If it is a [weak dependency](strong-weak-dependencies.md#weak-dependencies), the change will cause no impact on your consumer module at runtime. You will only get runtime errors if you republish your consumer module without refreshing the dependency.
 
 In both cases, you need to [refresh the dependency](#refresh-dependencies), adapt your logic to the latest version of the producer, and republish your consumer module.
 
@@ -111,9 +111,9 @@ An element previously exposed is **no longer available**, which **has impact** o
 
 The impact of this change on your consumer module depends on the type of dependency to the producer:
 
-* If it is a [strong dependency](strong-weak-dependencies.md#strong-dependencies), the change will cause no impact on your consumer module at runtime. You will only get runtime errors if you republish your consumer module without refreshing the dependency.
-
-* If it is a [weak dependency](strong-weak-dependencies.md#weak-dependencies), the change will likely cause runtime errors in your consumer module.
+* If it is a [strong dependency](strong-weak-dependencies.md#strong-dependencies), the change will likely cause runtime errors in your consumer module.
+  
+* If it is a [weak dependency](strong-weak-dependencies.md#weak-dependencies), the change will cause no impact on your consumer module at runtime. You will only get runtime errors if you republish your consumer module without refreshing the dependency.
 
 In both cases, you need to [refresh the dependency](#refresh-dependencies), remove the element from your module, adapt your logic to the latest version of the producer, and republish your consumer module.
 

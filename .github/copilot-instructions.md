@@ -683,8 +683,8 @@ Explain the 'why' behind actions:
 
 When documenting procedures, use the following formatting for UI elements and user input:
 
-* **UI elements**: Use **bold** for elements in the user interface, such as button names, menu items, field labels, and window titles.
-* **User input**: Use `inline code` for values that the user enters or selects.
+* **UI elements**: Use **bold** for elements in the user interface, such as button names, menu items, field labels, window titles or items in a dropdown list that the user selects.
+* **User input**: Use `inline code` for values that the user enters.
 
 Here are examples of adding the Assign widget in ODC Studio:
 

@@ -1,0 +1,31 @@
+name: Reset Dev Documentation Branch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  reset-docs-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine default branch
+        id: default_branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DEFAULT_BRANCH=$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')
+          echo "Default branch is $DEFAULT_BRANCH"
+          echo "default_branch=$DEFAULT_BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Reset dev branch
+        run: |
+          git fetch origin ${{ steps.default_branch.outputs.default_branch }}          
+          git checkout ${{ vars.DEV_BRANCH }}
+          git reset --hard origin/${{ steps.default_branch.outputs.default_branch }}
+          git push origin ${{ vars.DEV_BRANCH }} --force

@@ -55,6 +55,7 @@ jobs:
       pull-request: ${{ steps.PR.outputs.number }}
       pull-request-title: ${{ steps.PR.outputs.pr_title }}
       skip-jira: ${{ github.ref_name != github.event.repository.default_branch && contains(steps.PR.outputs.pr_labels, 'skip-jira') }}
+      publish-dev: ${{ github.ref_name != github.event.repository.default_branch && contains(steps.PR.outputs.pr_labels, 'publish-dev') }}
 
   jira:
     name: "JIRA"
@@ -116,3 +117,15 @@ jobs:
     needs: [pr-info, frontmatter]
     uses: ./.github/workflows/build.yml
     secrets: inherit
+
+  publish-dev:
+    name: Publish Dev
+    uses: OutSystems/tk-cicd/.github/workflows/auto-publish.yml@main
+    needs: [pr-info, tools]
+    if: needs.pr-info.outputs.publish-dev == 'true'
+    with:
+      target-branch: ${{ vars.DEV_BRANCH }}
+      pr-number: ${{ needs.pr-info.outputs.pull-request }}
+      changed-files: ${{ needs.pr-info.outputs.changed-files }}
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}

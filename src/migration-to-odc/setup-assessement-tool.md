@@ -46,33 +46,33 @@ The Conversion Assessment Tool consists of the following components:
 
 ![Diagram showing the architecture of the Conversion Assessment Tool, including the Console, Engine, and Probes in different environments (DEV, Q&A, PROD) and their interactions.](images/assessment-tool-architecture-diag.png "Conversion Assessment Tool Architecture Diagram")
 
-### Installer { #installer }
+### Installer {#installer}
 
 The **Installer** enables you to do the initial set up of the Conversion Assessment Tool, [update it to the latest version](#update), and [install additional probes](#additional-probes), if needed.
 
 During the setup process, the installer gets the O11 environments’ details from LifeTime, and connects to each environment to install the several tool components. When all the components are installed, the installer passes the configuration information to the engine.
 
-The installer component is typically **installed in the Development environment** of your O11 infrastructure.
+The installer component is typically **installed in the Development environment** of your O11 infrastructure. Keep it installed after the initial setup to update the Conversion Assessment Tool and install additional probes when needed.
 
-### Console { #console }
+### Console {#console}
 
 The **Console** is the user interface app for the Conversion Assessment Tool. It’s where you map your O11 apps to ODC architecture, create conversion plans, and see the assessment reports. It’s also where you configure the connections between the several components of the tool.
 
 The console must be **installed in the Development environment** of your O11 infrastructure.
 
-### Probe { #probe }
+### Probe {#probe}
 
 The first **Probe** to install is the development probe, which must be **installed in the Development environment** of your O11 infrastructure. Optionally, you can install an additional non-production probe to check the ODC-readiness of the apps. For example, you may want to install a probe in the QA environment, so you can run the assessment on apps during the app testing phase.
 
 Each probe runs the assessment of the apps in the environment where it's installed and returns the findings to the engine. The assessments run sequentially, only one ODC Asset at a time while the remaining are queued.
 
-### Engine { #engine }
+### Engine {#engine}
 
 The **Engine** is the communication entry point between your O11 infrastructure and your ODC tenant. It must be **installed in the LifeTime environment** of your O11 infrastructure.
 
 The engine manages the assessment queues of the probes installed in the O11 environments, and keeps a record of all the findings. The engine [queues new assessments periodically](#cycles) for each probe to check for app and environment changes.
 
-## Assessment cycles { #cycles }
+## Assessment cycles {#cycles}
 
 The Conversion Assessment Tool runs different types of assessments, each with its own frequency:
 
@@ -98,7 +98,7 @@ To set up the Conversion Assessment Tool, follow these steps:
 
 * [Step 2. Follow the installation wizard](#install-wizard)
 
-### Step 1. Install the Conversion Assessment Tool Installer app { #cat-installer }
+### Step 1. Install the Conversion Assessment Tool Installer app {#cat-installer}
 
 <div class="info" markdown="1">
 
@@ -124,7 +124,7 @@ If your IT users [authenticate with external IdP](../manage-platform-app-lifecyc
 
 </div>
 
-### Step 2. Follow the installation wizard { #install-wizard }
+### Step 2. Follow the installation wizard {#install-wizard}
 
 <div class="info" markdown="1">
 
@@ -185,7 +185,7 @@ If your IT users [authenticate with external IdP](../manage-platform-app-lifecyc
 
 After setting up the Conversion Assessment Tool, you can start [mapping your O11 apps to ODC assets](plan/plan-map-apps.md).
 
-## Update to the latest Conversion Assessment Tool version { #update }
+## Update to the latest Conversion Assessment Tool version {#update}
 
 <div class="info" markdown="1">
 
@@ -207,7 +207,7 @@ Follow these steps to update the Conversion Assessment Tool:
 
     ![Screenshot of the Conversion Assessment Tool Installer wizard showing a summary of the components to update.](images/update-mat-wizard-summary-mati.png "See the update summary in Conversion Assessment Tool Installer")
 
-## Install an additional probe { #additional-probes }
+## Install an additional probe {#additional-probes}
 
 <div class="info" markdown="1">
 
@@ -235,7 +235,7 @@ Follow these steps to install an additional probe using the Conversion Assessmen
 
     The Conversion Assessment Tool Installer uses the latest version available to install the new probe and updates all the remaining components if they are not up to date.
 
-## Change the code assessment cycle { #change-cycle }
+## Change the code assessment cycle {#change-cycle}
 
 <div class="info" markdown="1">
 
@@ -267,7 +267,7 @@ If you encounter any other limitation or issue using the Conversion Assessment T
 
 Please also tell us about the issue you faced using the **Give feedback** option. This will help us improve the installer tool and support more scenarios.
 
-### Can't log in to the Conversion Assessment tools { #cannot-login }
+### Can't log in to the Conversion Assessment tools {#cannot-login}
 
 You are not able to log in to the Conversion Assessment Tool Installer app or to the Conversion Assessment Tool Console.
 

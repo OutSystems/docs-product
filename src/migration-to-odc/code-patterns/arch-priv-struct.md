@@ -19,7 +19,9 @@ coverage-type:
 
 # Asset consuming a private Structure
 
-In ODC, Structures are private by default, and can't be explicitly shared between ODC assets. Structures can be implicitly shared between ODC assets if they're used as the Data Type of parameters of Service Actions.
+In O11, you can set Structures as public and share them between modules.
+
+In ODC, Structures are private by default and you can't manually set them as public. Only when you use a Structure as the data type of a Service Action parameter, ODC automatically makes that Structure available to consuming assets.
 
 ## How to solve
 
@@ -29,6 +31,6 @@ You must solve this pattern in O11, before proceeding with the code conversion t
 
 Depending on your scenario, solve this pattern in one of the following ways:
 
-* Replicate the Structure in the consumer.
+* Create a copy of the Structure in the consuming module. Use this approach when the Structure isn't used in Service Action parameters.
 
-* Implicitly share the Structure by using it in a Service Action exposed by the producer and referenced in the consumer.
+* Use the Structure as a parameter of a Service Action exposed by the producer and referenced in the consumer.

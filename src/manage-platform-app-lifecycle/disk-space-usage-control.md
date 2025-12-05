@@ -4,7 +4,7 @@ guid: 787114b3-a4af-452a-8acf-2644624e8cbe
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=4043-89
 tags: disk space management, on-premises deployment, cloud deployment, server administration, performance optimization
 audience:
   - platform administrators
@@ -22,13 +22,13 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+**Important:** The information in this guide applies only to OutSystems on-premises or private cloud deployments.
 
 </div>
 
 ## Introduction
 
-This article explains how OutSystems Platform Server uses the disk to store objects, and enables our customers to understand, control, and manage that disk space usage.
+This article explains how Platform Server uses the disk to store objects, and enables our customers to understand, control, and manage that disk space usage.
 
 ## Knowing the commonly largest directories
 
@@ -87,13 +87,43 @@ On the table below, you'll find detailed information about what it's stored on e
 
 A server can have both roles, and in that case, it would have both server role contents. Usually, the non-production environments use more disk space then production, mainly due to the number of developers, and due to the personal test areas for debugging.
 
+### Share folder
+
+The share folder, located in C:\Program Files\OutSystems\Platform Server\share, is exclusively used by the Deployment Controller machine to store intermediate and final compilation results for all platform modules.
+
+Each module has its own folder inside share, along with a few metadata files that is used by the controller, as well as the compressed file that is ready to be sent to any Deployment Service that requires it.
+
+![Screenshot of the share folder in the OutSystems Platform Server directory, showing various module folders and metadata files.](images/local_directories.png "Share Folder Contents")
+
+Inside each module folder, you can find the module file from when the compilation process began, and a folder with the results for both the 1st stage and 2nd stage compilations.
+
+### Repository folder
+
+The repository folder contains libraries for public elements of each module/extension, potentially having multiple files for the producer module if different consumers reference different versions.
+
+### Running folder
+
+The running folder contains all the resources needed by IIS to serve the application. It is organized by folders, and each module has at least one folder used by the IIS.
+
+The modules also contain extra folders for older or ready-to-be-deployed versions, which are automatically removed later. Each module folder also contains metadata files used by the deployment service. Older versions are no longer necessary.
+
+<div class="warning" markdown = "1">
+
+Both system folders mentioned are essential for the correct operation of the OutSystems platform, these folders are tied to platform internal operations, such as management of application modules, integrations, or infrastructure files, that are critical for stability and availability.
+
+Removing or altering them without a detailed understanding can disrupt platform functionality, leading to data loss or service outages.
+
+If you have any questions on these please reach out to [OutSystems support](https://success.outsystems.com/support/home/).
+
+</div>
+
 ## What folder contents can be deleted?
 
 Ultimately, based on the architecture of the Platform Server where applications are defined by single OML files and extensions, any folder content can be deleted and then recovered through internal processes, such as 1-Click publishing. However, as you might be aware, this takes time, and it's not recommended for most environments, so let's elaborate on the side-effect of deleting each one of the presented contents:
 
 | Type of content | Side Effect of deleting it | How to recover it |
 |-----------------|----------------------------|-------------------|
-| Full compilation cache | This compilation cache is used when 1-Click publishing or debugging modules with references. The Platform Server will fetch the producer references from this location. If they aren't here, compilation errors or runtime errors on the consumer modules due to broken references may occur. | One needs to do 1-Click publishing of the producer modules to rebuild the producers' compilation cache. The best way is to build an all content solution in Service Center and publish it. |
+| Full compilation cache | This compilation cache is used when 1-Click publishing or debugging modules with references. The Platform Server fetchs the producer references from this location. If they aren't here, compilation errors or runtime errors on the consumer modules due to broken references may occur. | One needs to do 1-Click publishing of the producer modules to rebuild the producers' compilation cache. The best way is to build an all content solution in Service Center and publish it. |
 | Partial compilation cache | This compilation cache is used during the creation of a personal test area for Debugging purposes. If missing, it shouldn't impact the debugging process. | By attempting to debug the module again, the partial content will be recreated again. |
 | Release application files | These are the resulting OutSystems application files, mapped on the IIS application server. If they're missing the applications will go offline. There's an automatic internal thread maintaining the content on this folder, so it should never be deleted. | One needs to redeploy all modules again to restore the application files. This can be done by restarting the OutSystems Deployment Service on the server, or 1-Click publishing an all content solution in Service Center, or even use the re-deploy button for every module on Service Center. |
 | Personal test area files  | These are the actual application files of the personal test areas for each module and developer. Deleting them will make the developer lose the ability to run/debug the application by accessing it on the web browser. | In order for the developer to restore it's own personal test area for that module, he needs to perform a run/debug from Service Studio again. |

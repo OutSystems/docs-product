@@ -34,7 +34,7 @@ To use this API, use the **Manage Dependencies** window in Service Studio to add
 | Action | Description |
 | ---|--- |
 | [EncryptPassword](<#EncryptPassword>) | Returns the encrypted password for a specific username and password. This is the value kept in the Password attribute of the User system entity. |
-| [GetEffectiveUserProviderEspaceId](<#GetEffectiveUserProviderEspaceId>) | Returns the eSpace identifier of the effective user provider. Normally it returns the Users eSpaceId, in upgrade scenarios it returns the EnterpriseManager eSpaceId. |
+| [GetEffectiveUserProviderEspaceId](<#GetEffectiveUserProviderEspaceId>) | Returns the module/eSpace identifier of the effective user provider. Normally it returns the Users eSpaceId, in upgrade scenarios it returns the EnterpriseManager eSpaceId. |
 | [Group_CreateNew](<#Group_CreateNew>) | Create a new system group. Requires the UserManager role to be invoked. |
 | [Group_Delete](<#Group_Delete>) | Delete a system group. Requires the UserManager role to be invoked. |
 | [Group_Update](<#Group_Update>) | Updates a system group. Requires the UserManager role to be invoked. |
@@ -75,7 +75,7 @@ To use this API, use the **Manage Dependencies** window in Service Studio to add
 
 ## Widgets
 
-### ChangePassword { #ChangePassword }
+### ChangePassword {#ChangePassword}
 
 Allows changing the user password.
 
@@ -84,11 +84,11 @@ _Inputs_
 UserId
 :   Type: optional, User Identifier.  
 
-### EditMyInfo { #EditMyInfo }
+### EditMyInfo {#EditMyInfo}
 
 ## Actions
 
-### EncryptPassword { #EncryptPassword }
+### EncryptPassword {#EncryptPassword}
 
 Returns the encrypted password for a specific username and password. This is the value kept in the Password attribute of the User system entity.
 
@@ -105,16 +105,16 @@ _Outputs_
 EncryptedPassword
 :   Type: Text.  
 
-### GetEffectiveUserProviderEspaceId { #GetEffectiveUserProviderEspaceId }
+### GetEffectiveUserProviderEspaceId {#GetEffectiveUserProviderEspaceId}
 
-Returns the eSpace identifier of the effective user provider. Normally it returns the Users eSpaceId, in upgrade scenarios it returns the EnterpriseManager eSpaceId.  
+Returns the module/eSpace identifier of the effective user provider. Normally it returns the Users eSpaceId, in upgrade scenarios it returns the EnterpriseManager eSpaceId.  
 
 _Outputs_
 
 EspaceId
 :   Type: Espace Identifier.  
 
-### Group_CreateNew { #Group_CreateNew }
+### Group_CreateNew {#Group_CreateNew}
 
 Create a new system group. Requires the UserManager role to be invoked.
 
@@ -128,7 +128,7 @@ _Outputs_
 GroupId
 :   Type: Group Identifier.  
 
-### Group_Delete { #Group_Delete }
+### Group_Delete {#Group_Delete}
 
 Delete a system group. Requires the UserManager role to be invoked.
 
@@ -137,7 +137,7 @@ _Inputs_
 GroupId
 :   Type: mandatory, Group Identifier.  
 
-### Group_Update { #Group_Update }
+### Group_Update {#Group_Update}
 
 Updates a system group. Requires the UserManager role to be invoked.
 
@@ -146,7 +146,7 @@ _Inputs_
 Group
 :   Type: mandatory, Group.  
 
-### IPAddress_GetBlockedStatus { #IPAddress_GetBlockedStatus }
+### IPAddress_GetBlockedStatus {#IPAddress_GetBlockedStatus}
 
 Returns the blocking state of the IP address.
 
@@ -162,7 +162,7 @@ LoginAttemptResult
 :   Type: [LoginAttemptResult](<#Structure_LoginAttemptResult>).  
     Blocking state for the given IP address.
 
-### IPAddress_GetBlocks { #IPAddress_GetBlocks }
+### IPAddress_GetBlocks {#IPAddress_GetBlocks}
 
 Returns the blocking state of the IP address. If there are no blocks for this address, the list will be empty. If no IP address is given, information on all blocked IP addresses will be returned.
 
@@ -178,7 +178,7 @@ BlockedAddresses
 :   Type: [LoginAttemptPublic](<#Structure_LoginAttemptPublic>) List.  
     Blocked login attempts associated to the given IP address, or all IP addresses, if no input is given.
 
-### IPAddress_Unblock { #IPAddress_Unblock }
+### IPAddress_Unblock {#IPAddress_Unblock}
 
 Ends the blocking period for the specified IP address, allowing any user to login in that address.
 
@@ -188,7 +188,7 @@ IPAddress
 :   Type: mandatory, Text.  
     The IP address to be unblocked.
 
-### UseActiveDirectoryAuthentication { #UseActiveDirectoryAuthentication }
+### UseActiveDirectoryAuthentication {#UseActiveDirectoryAuthentication}
 
 Returns the Users configuration that determines if the Active Directory is used for authentication
 
@@ -197,7 +197,7 @@ _Outputs_
 IsActive
 :   Type: Boolean.  
 
-### UseIntegratedAuthentication { #UseIntegratedAuthentication }
+### UseIntegratedAuthentication {#UseIntegratedAuthentication}
 
 Returns the Users configuration that determines if the Integrated Authentication is used to login.
 
@@ -206,7 +206,7 @@ _Outputs_
 IsActive
 :   Type: Boolean.  
 
-### UseLDAPAuthentication { #UseLDAPAuthentication }
+### UseLDAPAuthentication {#UseLDAPAuthentication}
 
 Returns the Users configuration that determines if the Active Directory is used for authentication
 
@@ -215,7 +215,7 @@ _Outputs_
 IsActive
 :   Type: Boolean.  
 
-### User_CanChangePassword { #User_CanChangePassword }
+### User_CanChangePassword {#User_CanChangePassword}
 
 Checks if the User is allowed to change a password. It is false for Active Directory users.
 
@@ -229,7 +229,7 @@ _Outputs_
 IsAllowed
 :   Type: Boolean.  
 
-### User_Create { #User_Create }
+### User_Create {#User_Create}
 
 Create a new user. Requires UserManager role to be invoked.  
 Fails when the username is repeated.
@@ -244,7 +244,7 @@ _Outputs_
 UserId
 :   Type: User Identifier.  
 
-### User_CreateOrUpdate { #User_CreateOrUpdate }
+### User_CreateOrUpdate {#User_CreateOrUpdate}
 
 Create or updates a user. Requires UserManager role to be invoked.
 
@@ -258,7 +258,7 @@ _Outputs_
 UserId
 :   Type: User Identifier.  
 
-### User_DeleteIfNoRoles { #User_DeleteIfNoRoles }
+### User_DeleteIfNoRoles {#User_DeleteIfNoRoles}
 
 Deletes the User if there are no roles assigned to it.
 
@@ -267,7 +267,7 @@ _Inputs_
 UserId
 :   Type: mandatory, User Identifier.  
 
-### User_GetBlockedStatus { #User_GetBlockedStatus }
+### User_GetBlockedStatus {#User_GetBlockedStatus}
 
 Returns information regarding the blocking state of the user and the blocking reason, in the specified IP address. If no IP address is given, checks the last IP address from where the user attempted to login.
 
@@ -287,7 +287,7 @@ LoginAttemptResult
 :   Type: [LoginAttemptResult](<#Structure_LoginAttemptResult>).  
     Blocking state and reason for the given username.
 
-### User_GetIdByUsername { #User_GetIdByUsername }
+### User_GetIdByUsername {#User_GetIdByUsername}
 
 Returns the user identifier for a specific user given the username
 
@@ -301,7 +301,7 @@ _Outputs_
 UserId
 :   Type: User Identifier.  
 
-### User_GetLastFailedLoginAttempts { #User_GetLastFailedLoginAttempts }
+### User_GetLastFailedLoginAttempts {#User_GetLastFailedLoginAttempts}
 
 Returns a list of last failed login attempts (one record for each IP address). This information can be used to invoke User_Unblock or IPaddress_Unblock.
 
@@ -321,7 +321,7 @@ LoginAttempt
 :   Type: [LoginAttemptPublic](<#Structure_LoginAttemptPublic>) List.  
     List of last failed login attempts for the given username.
 
-### User_GetName { #User_GetName }
+### User_GetName {#User_GetName}
 
 Returns the name of the logged user.
 
@@ -330,7 +330,7 @@ _Outputs_
 Name
 :   Type: Text.  
 
-### User_GetUnifiedLoginUrl { #User_GetUnifiedLoginUrl }
+### User_GetUnifiedLoginUrl {#User_GetUnifiedLoginUrl}
 
 Returns the Url used for custom unified login patterns. Includes Windows Integrated Authentication pattern.
 
@@ -344,7 +344,7 @@ _Outputs_
 Url
 :   Type: Text.  
 
-### User_GetUnifiedLogoutUrl { #User_GetUnifiedLogoutUrl }
+### User_GetUnifiedLogoutUrl {#User_GetUnifiedLogoutUrl}
 
 Returns the Url used for custom unified logout patterns. Includes Windows Integrated Authentication pattern.
 
@@ -358,7 +358,7 @@ _Outputs_
 Url
 :   Type: Text.  
 
-### User_IsExternalUser { #User_IsExternalUser }
+### User_IsExternalUser {#User_IsExternalUser}
 
 Checks if the user was synched from an external system.
 
@@ -372,7 +372,7 @@ _Outputs_
 IsExternal
 :   Type: Boolean.  
 
-### User_Login { #User_Login }
+### User_Login {#User_Login}
 
 Action to login using username and password as credentials.
 
@@ -390,11 +390,11 @@ RememberLogin
 :   Type: mandatory, Boolean.  
     If true, the login will be persistent for 10 days.
 
-### User_Logout { #User_Logout }
+### User_Logout {#User_Logout}
 
 Logs out the current user. Session variables are cleared during the logout process.
 
-### User_Unblock { #User_Unblock }
+### User_Unblock {#User_Unblock}
 
 Ends the blocking period for the specified user, allowing the user to login in all IP addresses where the user was blocked.
 
@@ -408,7 +408,7 @@ IPAddress
 :   Type: optional, Text.  
     The IP address that is being unblocked and from where the specified user will be allowed to login again.
 
-### User_Update { #User_Update }
+### User_Update {#User_Update}
 
 Updates a specific user.
 
@@ -419,7 +419,7 @@ User
 
 ## Structures
 
-### LoginAttemptPublic { #Structure_LoginAttemptPublic }
+### LoginAttemptPublic {#Structure_LoginAttemptPublic}
 
 Represents the Login attempt record structure that is exposed
 
@@ -454,7 +454,7 @@ Result
 
 ## Static Entities
 
-### LoginAttemptResult { #StaticEntity_LoginAttemptResult }
+### LoginAttemptResult {#StaticEntity_LoginAttemptResult}
 
 The alternative values that may appear in the LoginAttempt record Result column.
 
@@ -474,7 +474,7 @@ _Records_
 * InvalidUser
 * InvalidPassword
 
-### MenuItem { #StaticEntity_MenuItem }
+### MenuItem {#StaticEntity_MenuItem}
 
 Menu item to be used in menu web block parameters.
 

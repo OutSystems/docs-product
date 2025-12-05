@@ -124,11 +124,11 @@ The DEP issue is particularly important when not natively supported by hardware 
 
 ### Description
 
-For heavy background processing applications that rely on timers, try to isolate those timers in eSpaces. Configure dedicated servers to run those timers.
+For heavy background processing applications that rely on timers, try to isolate those timers in modules. Configure dedicated servers to run those timers.
 
 ### Solution
 
-Avoid having large timer processing on the same server where the users are accessing the web applications. Isolate timers in eSpaces and use multiple zones to have timers running in dedicated servers. Or only activate the scheduler service in servers dedicated for timers.
+Avoid having large timer processing on the same server where the users are accessing the web applications. Isolate timers in modules and use multiple zones to have timers running in dedicated servers. Or only activate the scheduler service in servers dedicated for timers.
 
 ### Importance
 
@@ -136,7 +136,7 @@ Isolating the timers to run in dedicated servers will avoid additional load on t
 
 ### Remarks
 
-Please also consider configuring the "Max. Concurrent Timers", having a proper scheduled time, or maybe creating an eSpace and application pool for this if the previous solution is not applicable or did not provide optimum results.
+Please also consider configuring the "Max. Concurrent Timers", having a proper scheduled time, or maybe creating an module and application pool for this if the previous solution is not applicable or did not provide optimum results.
 
 ## Prefer 64-bit Architectures
 

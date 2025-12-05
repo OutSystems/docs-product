@@ -80,7 +80,7 @@ Provides actions to manipulate HTTP Requests and Responses.
 
 ## Actions
 
-### AddAttributeToHtmlTag { #AddAttributeToHtmlTag }
+### AddAttributeToHtmlTag {#AddAttributeToHtmlTag}
 
 Adds an attribute to the outermost HTML tag of the document (e.g. xmlns, manifest...).  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -93,7 +93,7 @@ Name
 Value
 :   Type: Text. Mandatory.  
 
-### AddFaviconTag { #AddFaviconTag }
+### AddFaviconTag {#AddFaviconTag}
 
 Allows setting the favicon for the current page. You can use &quot;omlresources&quot; to add an icon file to your oml.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -108,7 +108,7 @@ MimeType
 :   Type: Text. Default: "image/x-icon".  
     The mime type of the icon file. By default this is &quot;image/x-icon&quot;.
 
-### AddHeader { #AddHeader }
+### AddHeader {#AddHeader}
 
 Adds a header to the current HTTP response.  
 This method has no effect in Ajax Requests.
@@ -123,7 +123,7 @@ Value
 :   Type: Text. Mandatory.  
     Value of the header.
 
-### AddJavaScriptTag { #AddJavaScriptTag }
+### AddJavaScriptTag {#AddJavaScriptTag}
 
 Adds a `<script>` tag to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -142,7 +142,7 @@ Charset
 :   Type: Text. Default: "UTF-8".  
     The charset attribute of the `<script>` tag. Defaults to UTF-8.
 
-### AddLinkTag { #AddLinkTag }
+### AddLinkTag {#AddLinkTag}
 
 Adds a `<link>` tag to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -158,7 +158,7 @@ Href
 Type
 :   Type: Text.  
 
-### AddMetaHttpEquivTag { #AddMetaHttpEquivTag }
+### AddMetaHttpEquivTag {#AddMetaHttpEquivTag}
 
 Adds a `<meta>` tag with the http-equiv attribute to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -171,7 +171,7 @@ HttpEquiv
 Content
 :   Type: Text. Mandatory.  
 
-### AddMetaTag { #AddMetaTag }
+### AddMetaTag {#AddMetaTag}
 
 Adds a `<meta>` tag to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -184,7 +184,7 @@ Name
 Content
 :   Type: Text. Mandatory.  
 
-### AddPostProcessingFilter { #AddPostProcessingFilter }
+### AddPostProcessingFilter {#AddPostProcessingFilter}
 
 This method has no effect in Ajax Requests.  
 Not implemented in Java. Not compatible with reactive web and mobile apps.
@@ -197,7 +197,7 @@ matchingRegexp
 replacement
 :   Type: Text. Mandatory.  
 
-### AddSessionToURL { #AddSessionToURL }
+### AddSessionToURL {#AddSessionToURL}
 
 Adds the current session identifier to a specified URL. Not compatible with reactive web and mobile apps.
 
@@ -213,7 +213,7 @@ URLWithSession
 :   Type: Text.  
     URL with session id.
 
-### AddStyleSheetTag { #AddStyleSheetTag }
+### AddStyleSheetTag {#AddStyleSheetTag}
 
 Adds a `<link rel="stylesheet">` tag to the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -228,7 +228,7 @@ Charset
 :   Type: Text. Default: "UTF-8".  
     The charset attribute of the `<script>` tag. Defaults to UTF-8.
 
-### GetCookie { #GetCookie }
+### GetCookie {#GetCookie}
 
 Gets a cookie value.
 
@@ -244,7 +244,7 @@ CookieValue
 :   Type: Text.  
     Value for the specified cookie.
 
-### GetEntryURL { #GetEntryURL }
+### GetEntryURL {#GetEntryURL}
 
 Returns the URL of an Entry. Includes the Personal Area and the session identifier if applicable. Not compatible with reactive web and mobile apps.
 
@@ -256,7 +256,7 @@ EntryName
 
 eSpaceName
 :   Type: Text.  
-    Name of the eSpace. If not specified, assumes the current eSpace and gives a relative URL.
+    Name of the module/eSpace. If not specified, assumes the current module/eSpace and gives a relative URL.
 
 FirstParameterName
 :   Type: Text.  
@@ -304,7 +304,7 @@ URL
 :   Type: Text.  
     URL of the Entry.
 
-### GetFormValue { #GetFormValue }
+### GetFormValue {#GetFormValue}
 
 Gets the value of a form field of the current HTTP request.  
 If the field does not exist in the request an empty String will be returned. The same applies when the field exists but has an empty string as a value. Not compatible with reactive web and mobile apps.
@@ -319,7 +319,7 @@ _Outputs_
 Value
 :   Type: Text.  
 
-### GetIP { #GetIP }
+### GetIP {#GetIP}
 
 Gets the IP host address of the remote client (IP of the user machine performing the HTTP request).
 
@@ -329,7 +329,7 @@ UserIP
 :   Type: Text.  
     IP of the user machine performing the HTTP request.
 
-### GetPageExtension { #GetPageExtension }
+### GetPageExtension {#GetPageExtension}
 
 Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;. Not compatible with reactive web and mobile apps.
 
@@ -339,7 +339,7 @@ PageExtension
 :   Type: Text.  
     Extension of the physical page that corresponds to the current screen.
 
-### GetPageName { #GetPageName }
+### GetPageName {#GetPageName}
 
 Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur. Not compatible with reactive web and mobile apps.
 _Outputs_
@@ -348,7 +348,7 @@ PageName
 :   Type: Text.  
     Name of the physical page that corresponds to the current screen.
 
-### GetRawURL { #GetRawURL }
+### GetRawURL {#GetRawURL}
 
 Returns the current relative requested URL, without the http://[server] part and without the session identifier.  
 If SEO rules are being applied, the URL displayed in the user's browser is returned, and not the final URL after the rule is applied.
@@ -358,7 +358,7 @@ _Outputs_
 RawURL
 :   Type: Text.  
 
-### GetReferrerURL { #GetReferrerURL }
+### GetReferrerURL {#GetReferrerURL}
 
 Gets the URL of the page that referred the user to the current page (HTTP referer header). Returns an empty string if no referer is available.
 
@@ -368,7 +368,7 @@ ReferrerURL
 :   Type: Text.  
     The URL of the referring page, or an empty string if no referer is available.
 
-### GetRequest_AddArgument { #GetRequest_AddArgument }
+### GetRequest_AddArgument {#GetRequest_AddArgument}
 
 Builds the arguments string for an HTTP request with method GET, adding a new parameter to the arguments string.
 
@@ -392,7 +392,7 @@ ArgumentsOut
 :   Type: Text.  
     Inputed arguments string concatenated with the pair `<argument name> = <argument value>`.
 
-### GetRequest_Submit { #GetRequest_Submit }
+### GetRequest_Submit {#GetRequest_Submit}
 
 Submit an HTTP GET request given the GET arguments and the URL. Returns the response content as a string and as binary data.
 
@@ -430,7 +430,7 @@ BinaryContentType
 :   Type: Text.  
     Value of the Content-Type header returned with the response.
 
-### GetRequestContent { #GetRequestContent }
+### GetRequestContent {#GetRequestContent}
 
 Gets the content of the current HTTP request.
 
@@ -446,7 +446,7 @@ RawContent
 :   Type: Text.  
     The content of the current HTTP request.
 
-### GetRequestDomain { #GetRequestDomain }
+### GetRequestDomain {#GetRequestDomain}
 
 Returns the host part of the current HTTP request as seen by the browser.  
 Example: when the browser uses the address &quot;<http://support.domain.com/site/welcome.aspx?id=12345>&quot;, GetRequestDomain() returns &quot;support.domain.com&quot;.
@@ -457,7 +457,7 @@ Domain
 :   Type: Text.  
     The domain of the current HTTP request.
 
-### GetRequestFiles { #GetRequestFiles }
+### GetRequestFiles {#GetRequestFiles}
 
 Returns the list of files submitted in the current HTTP request.
 
@@ -466,7 +466,7 @@ _Outputs_
 RequestFiles
 :   Type: RecordList of [RequestFile](<#Structure_RequestFile>).  
 
-### GetRequestHeader { #GetRequestHeader }
+### GetRequestHeader {#GetRequestHeader}
 
 Gets the value of a specific header in the current HTTP request. Returns an empty string if the header is not present or has no value.
 
@@ -482,16 +482,16 @@ Value
 :   Type: Text.  
     Returns an empty string if the header is not present or has no value.
 
-### GetRunningESpaceJQueryVersion { #GetRunningESpaceJQueryVersion }
+### GetRunningESpaceJQueryVersion {#GetRunningESpaceJQueryVersion}
 
-Returns the jQueryVersion of the Running ESpace. Not compatible with reactive web and mobile apps.
+Returns the jQueryVersion of the Running module/eSpace. Not compatible with reactive web and mobile apps.
 
 _Outputs_
 
 JQueryVersion
 :   Type: Text.  
 
-### GetSessionId { #GetSessionId }
+### GetSessionId {#GetSessionId}
 
 Gets the session identifier of the current HTTP request. Not compatible with reactive web and mobile apps.
 
@@ -501,7 +501,7 @@ SessionId
 :   Type: Text.  
     Session identifier.
 
-### GetURL { #GetURL }
+### GetURL {#GetURL}
 
 Returns the current absolute requested URL, without the session identifier.  
 If SEO rules are being applied, the final URL after the rule is applied is returned, and not the URL displayed in the user's browser.
@@ -512,7 +512,7 @@ URL
 :   Type: Text.  
     Current requested URL.
 
-### GetURLMethod { #GetURLMethod }
+### GetURLMethod {#GetURLMethod}
 
 Gets the request method (GET or POST) of the current requested URL.
 
@@ -522,7 +522,7 @@ Method
 :   Type: Text.  
     Current request method (GETor POST).
 
-### GetURLWithSession { #GetURLWithSession }
+### GetURLWithSession {#GetURLWithSession}
 
 Gets the current requested URL (with the session identifier). Not compatible with reactive web and mobile apps.
 
@@ -532,7 +532,7 @@ URL
 :   Type: Text.  
     Current requested URL with the session identifier.
 
-### GetUserAgent { #GetUserAgent }
+### GetUserAgent {#GetUserAgent}
 
 Gets the user agent of the current HTTP request.
 
@@ -541,7 +541,7 @@ _Outputs_
 UserAgent
 :   Type: Text.  
 
-### GetUserLanguages { #GetUserLanguages }
+### GetUserLanguages {#GetUserLanguages}
 
 Gets a sorted record list of client language preferences.
 
@@ -551,7 +551,7 @@ Languages
 :   Type: RecordList of [UserLanguage](<#Structure_UserLanguage>).  
     Sorted record list of client language preferences.
 
-### GetValueFromInputId { #GetValueFromInputId }
+### GetValueFromInputId {#GetValueFromInputId}
 
 Gets the URL encoded value from an input form. Not compatible with reactive web and mobile apps.
 
@@ -565,7 +565,7 @@ _Outputs_
 Value
 :   Type: Text.  
 
-### GetValueFromInputIdDecoded { #GetValueFromInputIdDecoded }
+### GetValueFromInputIdDecoded {#GetValueFromInputIdDecoded}
 
 Gets the decoded value from an input form. Not compatible with reactive web and mobile apps.
 
@@ -579,7 +579,7 @@ _Outputs_
 Value
 :   Type: Text.  
 
-### IsAjaxRequest { #IsAjaxRequest }
+### IsAjaxRequest {#IsAjaxRequest}
 
 Returns true if this is running in an AJAX request.  
 Not Implemented in Java. Not compatible with reactive web and mobile apps.
@@ -590,7 +590,7 @@ IsAjaxRequest
 :   Type: Boolean.  
     Returns true if this is running in an AJAX request.
 
-### IsSecureConnection { #IsSecureConnection }
+### IsSecureConnection {#IsSecureConnection}
 
 Tells if the current request is being made via HTTPS.
 
@@ -599,7 +599,7 @@ _Outputs_
 IsSecureConnection
 :   Type: Boolean.  
 
-### MakeAbsoluteURL { #MakeAbsoluteURL }
+### MakeAbsoluteURL {#MakeAbsoluteURL}
 
 Makes an absolute URL based on the URL provided.
 
@@ -615,7 +615,7 @@ AbsoluteURL
 :   Type: Text.  
     Absolute URL.
 
-### PostRequest_AddArgument { #PostRequest_AddArgument }
+### PostRequest_AddArgument {#PostRequest_AddArgument}
 
 Builds arguments list for a POST HTTP request, adding a new text parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example).
 
@@ -639,7 +639,7 @@ ArgumentsOut
 :   Type: BinaryData.  
     Inputed arguments list concatenated with the pair `<argument name> = <argument value>` in binary format.
 
-### PostRequest_AddBinaryArgument { #PostRequest_AddBinaryArgument }
+### PostRequest_AddBinaryArgument {#PostRequest_AddBinaryArgument}
 
 Builds arguments list for an HTTP request, adding a new binary parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example).
 
@@ -663,7 +663,7 @@ ArgumentsOut
 :   Type: BinaryData.  
     Inputed arguments list concatenated with the pair `<argument name> = <argument value>` in binary format.
 
-### PostRequest_Submit { #PostRequest_Submit }
+### PostRequest_Submit {#PostRequest_Submit}
 
 Submit an HTTP POST request given the POST arguments and the URL. Returns the response content as a string and as binary data.
 
@@ -699,7 +699,7 @@ BinaryContentType
 :   Type: Text.  
     Value of the Content-Type header returned with the response.
 
-### ReplaceURLDomain { #ReplaceURLDomain }
+### ReplaceURLDomain {#ReplaceURLDomain}
 
 Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.  
 If the URL starts with the protocol (`http:` or `https:`), the host is removed from the URL and the remaining part is concatenated with the domain of the current request. Otherwise, the URL is considered as relative and it's concatenated with the one from the current request.
@@ -720,7 +720,7 @@ SafeURL
 :   Type: Text.  
     The URL with the new domain.
 
-### RunJavaScript { #RunJavaScript }
+### RunJavaScript {#RunJavaScript}
 
 Runs the provided JavaScript code in the browser. Not compatible with reactive web and mobile apps.
 
@@ -736,7 +736,7 @@ Script
 :   Type: Text. Mandatory.  
     JavaScript code to be sent to the browser.
 
-### SetBaseTag { #SetBaseTag }
+### SetBaseTag {#SetBaseTag}
 
 Sets the base tag of the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -749,7 +749,7 @@ HREF
 Target
 :   Type: Text. Default: "".  
 
-### SetCookie { #SetCookie }
+### SetCookie {#SetCookie}
 
 Sets a cookie.
 
@@ -769,7 +769,7 @@ CookieExpirationSpan
 
 CookiePath
 :   Type: Text.  
-    Cookie path. Defaults to path of the current eSpace, Tenant and Personal Area combination.
+    Cookie path. Defaults to path of the current module/eSpace, Tenant and Personal Area combination.
 
 CookieDomain
 :   Type: Text.  
@@ -788,7 +788,7 @@ CookieSameSite
 :   Type: Text.  
     Cookie SameSite attribute. Possible values: &quot;&quot;, &quot;None&quot;, &quot;Lax&quot;, and &quot;Strict&quot;. Defaults to what is defined in the security settings for the current environment.
 
-### SetLastModified { #SetLastModified }
+### SetLastModified {#SetLastModified}
 
 Sets the Last Modified Date HTTP header of the current response.
 
@@ -798,7 +798,7 @@ LastModifiedDate
 :   Type: DateTime. Mandatory.  
     Last Modified Date.
 
-### SetPageTitle { #SetPageTitle }
+### SetPageTitle {#SetPageTitle}
 
 Sets the page title of the HTML of the current HTTP response.  
 This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
@@ -808,7 +808,7 @@ _Inputs_
 Title
 :   Type: Text. Mandatory.  
 
-### SetRequestTimeout { #SetRequestTimeout }
+### SetRequestTimeout {#SetRequestTimeout}
 
 Sets the timeout of the current HTTP request.
 
@@ -818,7 +818,7 @@ Timeout
 :   Type: Integer. Mandatory.  
     Timeout in seconds, or -1 for an infinite timeout.
 
-### SetStatusCode { #SetStatusCode }
+### SetStatusCode {#SetStatusCode}
 
 Sets the status code of the current HTTP response. Not compatible with reactive web and mobile apps.
 Note: Setting custom HTTP status codes is an advanced extensibility scenario, so be sure to test if it works as intended in your specific infrastructure (for example, HTTP status code 204 is known to cause issues). Check the list of standard HTTP status codes used in OutSystems.
@@ -829,7 +829,7 @@ StatusCode
 :   Type: Integer. Mandatory.  
     Status code of the response. Examples: 404, 403.
 
-### URLEncode { #URLEncode }
+### URLEncode {#URLEncode}
 
 Encodes a URL string for reliable HTTP transmission from the Web server to a client
 
@@ -849,7 +849,7 @@ StrOut
 :   Type: Text.  
     Encoded string URL
 
-### ValidateRequestSource { #ValidateRequestSource }
+### ValidateRequestSource {#ValidateRequestSource}
 
 Validates if the income request is coming from the local machine and/or from the list of TrustedAddresses, ignoring  
 Trusted Proxies configurations, so that by default it only allows real local requests that are not being handled by a proxy/loadbalancer.
@@ -876,7 +876,7 @@ RequestOrigin
 
 ## Structures
 
-### RequestFile { #Structure_RequestFile }
+### RequestFile {#Structure_RequestFile}
 
 _Attributes_
 
@@ -892,7 +892,7 @@ FileSize
 BinaryContent
 :   Type: BinaryData. Mandatory.  
 
-### UserLanguage { #Structure_UserLanguage }
+### UserLanguage {#Structure_UserLanguage}
 
 _Attributes_
 

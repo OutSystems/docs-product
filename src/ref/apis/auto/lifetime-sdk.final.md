@@ -51,8 +51,8 @@ To learn more on how to develop your LifeTime plug-in, access the `http://<LifeT
 | [GetUserSessionToken](<#GetUserSessionToken>) | Returns an authentication token that is valid for 5 minutes, for the session user. |
 | [ModuleVersion_Get](<#ModuleVersion_Get>) | Returns the information of a module version for the specified module and version. |
 | [ModuleVersion_List](<#ModuleVersion_List>) | Returns the information of all module versions for the specified module. |
-| [Plugin_Register](<#Plugin_Register>) | Registers the caller eSpace as a LifeTime plugin: in the LifeTime 'More' menu a new link is created with the specified name that redirects to the entry point provided, or the default entry point if none is provided. All web screens of the plugin are displayed with their owner name.<br/>Each eSpace can only register a single plugin.<br/> |
-| [Plugin_Unregister](<#Plugin_Unregister>) | Unregisters the caller eSpace as a LifeTime plugin: in the LifeTime 'More' menu there is no longer a link to the plugin. |
+| [Plugin_Register](<#Plugin_Register>) | Registers the caller module/eSpace as a LifeTime plugin: in the LifeTime 'More' menu a new link is created with the specified name that redirects to the entry point provided, or the default entry point if none is provided. All web screens of the plugin are displayed with their owner name.<br/>Each module/eSpace can only register a single plugin.<br/> |
+| [Plugin_Unregister](<#Plugin_Unregister>) | Unregisters the caller module/eSpace as a LifeTime plugin: in the LifeTime 'More' menu there is no longer a link to the plugin. |
 | [Security_CheckApplicationPermission](<#Security_CheckApplicationPermission>) | Checks if a user has a permission for a specific application running on an environment.<br/>If no user is specified, the current user is used. |
 | [Security_CheckEnvironmentPermission](<#Security_CheckEnvironmentPermission>) | Checks if a user has a permission for a specific environment. If no user is specified, the current user is used. |
 | [Security_CheckInfrastructurePermission](<#Security_CheckInfrastructurePermission>) | Checks if a user has the 'Configure Infrastructure' permission. If no user is specified, the current user is used. |
@@ -89,7 +89,7 @@ To learn more on how to develop your LifeTime plug-in, access the `http://<LifeT
 
 ## Widgets
 
-### Internal_Layout_LifeTime { #Internal_Layout_LifeTime }
+### Internal_Layout_LifeTime {#Internal_Layout_LifeTime}
 
 The LifeTime layout.
 
@@ -101,7 +101,7 @@ HelpURL
 ForceFixedContentOnTop
 :   Type: optional, Boolean.  
 
-### Internal_Layout_Popup { #Internal_Layout_Popup }
+### Internal_Layout_Popup {#Internal_Layout_Popup}
 
 The Popup Layout to be used in a LifeTime plugin. Pressing the popup buttons triggers the OnNotify action containing a LayoutPopupButtonClicked identifier.
 
@@ -155,7 +155,7 @@ Icon
 :   Type: optional, DialogBoxIcon Identifier.  
     The icon to appear in the Popup.
 
-### Layout_LifeTimeSDK { #Layout_LifeTimeSDK }
+### Layout_LifeTimeSDK {#Layout_LifeTimeSDK}
 
 The Web Block to be used as the base layout for a LifeTime plugin. The layout allows you to easily create screens with the look and feel of LifeTime, since it contains LifeTime header and footer.  
   
@@ -163,7 +163,7 @@ The layout also contains a stamp for you to customize with the developer or comp
 
 ## Actions
 
-### Application_Get { #Application_Get }
+### Application_Get {#Application_Get}
 
 Returns the information of an application in an environment.  
 If the environment is not specified, information of the application across all infrastructure is returned.
@@ -192,7 +192,7 @@ Modules
 :   Type: [ModuleInfo](<#Structure_ModuleInfo>) List.  
     List of modules with their information, such as name, description, status.
 
-### Application_List { #Application_List }
+### Application_List {#Application_List}
 
 Returns a list of the applications in the specified environment that are visible within LifeTime, with their information, such as name, description, url. If no environment is specified, information of all visible applications across all environments is returned.
 
@@ -212,7 +212,7 @@ Applications
 :   Type: [ApplicationInfo](<#Structure_ApplicationInfo>) List.  
     List of applications with their information, such as name, description, url.
 
-### ApplicationVersion_Get { #ApplicationVersion_Get }
+### ApplicationVersion_Get {#ApplicationVersion_Get}
 
 Returns information of an application on a specified date.
 
@@ -232,7 +232,7 @@ ApplicationVersion
 :   Type: [ApplicationVersionInfo](<#Structure_ApplicationVersionInfo>).  
     Application with its information, such as version, description and modules.
 
-### ApplicationVersion_List { #ApplicationVersion_List }
+### ApplicationVersion_List {#ApplicationVersion_List}
 
 Returns the information of all tagged application versions for the specified application.
 
@@ -252,7 +252,7 @@ ApplicationVersions
 :   Type: [ApplicationVersionInfo](<#Structure_ApplicationVersionInfo>) List.  
     List of application versions with their information, such as version, description and its modules.
 
-### Deployment_Get { #Deployment_Get }
+### Deployment_Get {#Deployment_Get}
 
 Returns information of the specified deployment.
 
@@ -276,7 +276,7 @@ DeploymentLog
 :   Type: [DeploymentMessage](<#Structure_DeploymentMessage>) List.  
     The log of the operations executed during the deployment.
 
-### Deployment_List { #Deployment_List }
+### Deployment_List {#Deployment_List}
 
 Returns information of all deployments made between two environments.
 
@@ -304,7 +304,7 @@ Deployments
 :   Type: [DeploymentInfo](<#Structure_DeploymentInfo>) List.  
     The list of deployments with their information, such as source environment, target environment, and operations executed.
 
-### Environment_Get { #Environment_Get }
+### Environment_Get {#Environment_Get}
 
 Returns the information of an environment, such as name, version of the Platform, Application Server.
 
@@ -320,7 +320,7 @@ Environment
 :   Type: [EnvironmentInfo](<#Structure_EnvironmentInfo>).  
     Information of an environment, such as name, version of the Platform, Application Server.
 
-### Environment_List { #Environment_List }
+### Environment_List {#Environment_List}
 
 Returns a list of environments with their information, such as name, version of the Platform, Application Server.
 
@@ -330,7 +330,7 @@ Environments
 :   Type: [EnvironmentInfo](<#Structure_EnvironmentInfo>) List.  
     List of environments with their information, such as name, version of the Platform, Application Server...
 
-### GetUserSessionToken { #GetUserSessionToken }
+### GetUserSessionToken {#GetUserSessionToken}
 
 Returns an authentication token that is valid for 5 minutes, for the session user.
 
@@ -354,7 +354,7 @@ ResponseAdditionalInfo
 :   Type: Text.  
     More information about why the call to the API failed.
 
-### ModuleVersion_Get { #ModuleVersion_Get }
+### ModuleVersion_Get {#ModuleVersion_Get}
 
 Returns the information of a module version for the specified module and version.
 
@@ -374,7 +374,7 @@ ModuleVersion
 :   Type: [ModuleVersionInfo](<#Structure_ModuleVersionInfo>).  
     Module version with its information, such as key, when it was created and by whom.
 
-### ModuleVersion_List { #ModuleVersion_List }
+### ModuleVersion_List {#ModuleVersion_List}
 
 Returns the information of all module versions for the specified module.
 
@@ -390,10 +390,10 @@ ModuleVersions
 :   Type: [ModuleVersionInfo](<#Structure_ModuleVersionInfo>) List.  
     List of module versions with their information, such as key, when it was created and by whom.
 
-### Plugin_Register { #Plugin_Register }
+### Plugin_Register {#Plugin_Register}
 
-Registers the caller eSpace as a LifeTime plugin: in the LifeTime 'More' menu a new link is created with the specified name that redirects to the entry point provided, or the default entry point if none is provided. All web screens of the plugin are displayed with their owner name.  
-Each eSpace can only register a single plugin.  
+Registers the caller module/eSpace as a LifeTime plugin: in the LifeTime 'More' menu a new link is created with the specified name that redirects to the entry point provided, or the default entry point if none is provided. All web screens of the plugin are displayed with their owner name.  
+Each module/eSpace can only register a single plugin.  
 
 _Inputs_
 
@@ -409,11 +409,11 @@ DeveloperName
 :   Type: optional, Text.  
     The developers of the plugin. The name is displayed in all web screens of the plugin.
 
-### Plugin_Unregister { #Plugin_Unregister }
+### Plugin_Unregister {#Plugin_Unregister}
 
-Unregisters the caller eSpace as a LifeTime plugin: in the LifeTime 'More' menu there is no longer a link to the plugin.
+Unregisters the caller module/eSpace as a LifeTime plugin: in the LifeTime 'More' menu there is no longer a link to the plugin.
 
-### Security_CheckApplicationPermission { #Security_CheckApplicationPermission }
+### Security_CheckApplicationPermission {#Security_CheckApplicationPermission}
 
 Checks if a user has a permission for a specific application running on an environment.  
 If no user is specified, the current user is used.
@@ -442,7 +442,7 @@ HasPermission
 :   Type: Boolean.  
     True if the user has the specified permission, false otherwise.
 
-### Security_CheckEnvironmentPermission { #Security_CheckEnvironmentPermission }
+### Security_CheckEnvironmentPermission {#Security_CheckEnvironmentPermission}
 
 Checks if a user has a permission for a specific environment. If no user is specified, the current user is used.
 
@@ -466,7 +466,7 @@ HasPermission
 :   Type: Boolean.  
     True if the user has the requested permission, false otherwise.
 
-### Security_CheckInfrastructurePermission { #Security_CheckInfrastructurePermission }
+### Security_CheckInfrastructurePermission {#Security_CheckInfrastructurePermission}
 
 Checks if a user has the 'Configure Infrastructure' permission. If no user is specified, the current user is used.
 
@@ -482,7 +482,7 @@ HasPermission
 :   Type: Boolean.  
     True if the user has the requested permission, false otherwise.
 
-### Security_GetApplicationsPermissions { #Security_GetApplicationsPermissions }
+### Security_GetApplicationsPermissions {#Security_GetApplicationsPermissions}
 
 Returns the permissions the specified user has for each application in the environment. If no user is specified, the current user is used.
 
@@ -502,7 +502,7 @@ EnvironmentApplicationsPermissions
 :   Type: [EnvironmentApplicationPermission](<#Structure_EnvironmentApplicationPermission>) List.  
     List of the application permissions for each application in the environment.
 
-### Security_GetEnvironmentsPermissions { #Security_GetEnvironmentsPermissions }
+### Security_GetEnvironmentsPermissions {#Security_GetEnvironmentsPermissions}
 
 Returns the permissions the specified user has for each environment. If no user is specified, the current user is used.
 
@@ -518,7 +518,7 @@ EnvironmentsPermissions
 :   Type: [EnvironmentPermission](<#Structure_EnvironmentPermission>) List.  
     List of the permissions for each environment.
 
-### SetLoginRedirectURL { #SetLoginRedirectURL }
+### SetLoginRedirectURL {#SetLoginRedirectURL}
 
 _Inputs_
 
@@ -527,7 +527,7 @@ URL
 
 ## Structures
 
-### ApplicationInfo { #Structure_ApplicationInfo }
+### ApplicationInfo {#Structure_ApplicationInfo}
 
 Application details and environment specific information where the application is running.
 
@@ -572,7 +572,7 @@ IsHidden
 ApplicationKindId
 :   Type: RuntimeKind Identifier.  
 
-### ApplicationVersionInfo { #Structure_ApplicationVersionInfo }
+### ApplicationVersionInfo {#Structure_ApplicationVersionInfo}
 
 Information of a specific version of an application, and the versions of its modules.
 
@@ -602,7 +602,7 @@ ModuleVersions
 :   Type: [ModuleVersionInfo](<#Structure_ModuleVersionInfo>) List.  
     List of module versions that make the application version.
 
-### DeploymentInfo { #Structure_DeploymentInfo }
+### DeploymentInfo {#Structure_DeploymentInfo}
 
 Deployment information with the operations executed.
 
@@ -668,7 +668,7 @@ Operations
 :   Type: [DeploymentOperationInfo](<#Structure_DeploymentOperationInfo>) List.  
     List of operations to execute, as specified in the deployment plan.
 
-### DeploymentMessage { #Structure_DeploymentMessage }
+### DeploymentMessage {#Structure_DeploymentMessage}
 
 Message from a deployment operation log.
 
@@ -690,7 +690,7 @@ DeploymentMessageTypeId
 :   Type: DeploymentMessageType Identifier.  
     Type of the message. Can be used to identify errors, warnings and other events.
 
-### DeploymentOperationInfo { #Structure_DeploymentOperationInfo }
+### DeploymentOperationInfo {#Structure_DeploymentOperationInfo}
 
 A deployment operation as specified in the deployment plan.
 
@@ -712,7 +712,7 @@ DeploymentOperationTypeId
 :   Type: DeploymentOperationType Identifier.  
     Type of operation to execute, as specified in the deployment plan.
 
-### EnvironmentApplicationInfo { #Structure_EnvironmentApplicationInfo }
+### EnvironmentApplicationInfo {#Structure_EnvironmentApplicationInfo}
 
 Application information for a specific environment.
 
@@ -742,7 +742,7 @@ LastPublishedBy
 :   Type: Text (50).  
     Username of user that performed the last publication.
 
-### EnvironmentApplicationPermission { #Structure_EnvironmentApplicationPermission }
+### EnvironmentApplicationPermission {#Structure_EnvironmentApplicationPermission}
 
 A user's permission to an application in an environment.
 
@@ -756,7 +756,7 @@ ApplicationPermissionLevelId
 :   Type: ApplicationPermissionLevel Identifier.  
     Application Permission Level identifier.
 
-### EnvironmentInfo { #Structure_EnvironmentInfo }
+### EnvironmentInfo {#Structure_EnvironmentInfo}
 
 An environment and its information.
 
@@ -810,7 +810,7 @@ IsCloudEnvironment
 :   Type: Boolean.  
     Indicates if the environment is running on a cloud service.
 
-### EnvironmentModuleInfo { #Structure_EnvironmentModuleInfo }
+### EnvironmentModuleInfo {#Structure_EnvironmentModuleInfo}
 
 Information of a module in a specific environment.
 
@@ -844,7 +844,7 @@ ModuleVersionInfoKey
 :   Type: Text (50).  
     Module version unique identifier.
 
-### EnvironmentPermission { #Structure_EnvironmentPermission }
+### EnvironmentPermission {#Structure_EnvironmentPermission}
 
 A user's permission to an environment.
 
@@ -858,7 +858,7 @@ EnvironmentPermissionLevelId
 :   Type: EnvironmentPermissionLevel Identifier.  
     Environment Permission Level identifier.
 
-### ModuleInfo { #Structure_ModuleInfo }
+### ModuleInfo {#Structure_ModuleInfo}
 
 Module information and the status in the environments where the modules are running.
 
@@ -884,7 +884,7 @@ StatusInEnvironments
 :   Type: [EnvironmentModuleInfo](<#Structure_EnvironmentModuleInfo>) List.  
     Status of the module for each environment where the application is running.
 
-### ModuleVersionInfo { #Structure_ModuleVersionInfo }
+### ModuleVersionInfo {#Structure_ModuleVersionInfo}
 
 Information about a module version.
 
@@ -908,7 +908,7 @@ CreatedBy
 
 ## Static Entities
 
-### ApplicationPermissionLevel { #StaticEntity_ApplicationPermissionLevel }
+### ApplicationPermissionLevel {#StaticEntity_ApplicationPermissionLevel}
 
 Permission level that a user has over an application.
 
@@ -933,7 +933,7 @@ _Records_
 * OpenReuse
 * ChangeDeploy
 
-### DeploymentMessageType { #StaticEntity_DeploymentMessageType }
+### DeploymentMessageType {#StaticEntity_DeploymentMessageType}
 
 The type of a deployment message.
 
@@ -959,7 +959,7 @@ _Records_
 * StepSub
 * AcceptableError
 
-### DeploymentOperationType { #StaticEntity_DeploymentOperationType }
+### DeploymentOperationType {#StaticEntity_DeploymentOperationType}
 
 The type of a deployment operation.
 
@@ -980,7 +980,7 @@ _Records_
 * Deploy
 * Republish
 
-### DeploymentStatus { #StaticEntity_DeploymentStatus }
+### DeploymentStatus {#StaticEntity_DeploymentStatus}
 
 The status of a deployment operation.
 
@@ -1004,7 +1004,7 @@ _Records_
 * Deployed
 * Draft
 
-### DialogBoxIcon { #StaticEntity_DialogBoxIcon }
+### DialogBoxIcon {#StaticEntity_DialogBoxIcon}
 
 Internal only. Icon of a Dialog Box.
 
@@ -1027,7 +1027,7 @@ _Records_
 * Feedback
 * Warning
 
-### ElementType { #StaticEntity_ElementType }
+### ElementType {#StaticEntity_ElementType}
 
 The types of elements a module references or exposes as public.
 
@@ -1060,7 +1060,7 @@ _Records_
 * Process
 * ServiceAPIMethod
 
-### EnvironmentPermissionLevel { #StaticEntity_EnvironmentPermissionLevel }
+### EnvironmentPermissionLevel {#StaticEntity_EnvironmentPermissionLevel}
 
 Permission level that a user has over an epplication.
 
@@ -1090,7 +1090,7 @@ _Records_
 * OpenReuse
 * List
 
-### LayoutPopupButtonClicked { #StaticEntity_LayoutPopupButtonClicked }
+### LayoutPopupButtonClicked {#StaticEntity_LayoutPopupButtonClicked}
 
 The message of an OnNotify action when a button is pressed in a popup.
 

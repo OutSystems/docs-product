@@ -128,7 +128,7 @@ Going back to the task at hand, we normally use "dummy" CSS styles in the inputs
 
 ![Screenshot of Service Studio showing the addition of custom 'SeleniumUsernameInput' style to an input widget.](images/How-to-do-UI-testing-with-Selenium_5.png "Service Studio Custom Styles")
 
-As you can see in the above image, we added a "SeleniumUsernameInput" dummy style that doesn’t even need to be defined in the CSS stylesheet of the module. We just need it to be outputted in the HTML element of the input after we have published the eSpace (you can check it is there by using an inspector tool like [Firebug](http://getfirebug.com/)).
+As you can see in the above image, we added a "SeleniumUsernameInput" dummy style that doesn’t even need to be defined in the CSS stylesheet of the module. We just need it to be outputted in the HTML element of the input after we have published the module (you can check it is there by using an inspector tool like [Firebug](http://getfirebug.com/)).
 
 We can then use CSS selectors in our script to locate the inputs and button through the new dummy styles: `"**css=.<Name_Of_Dummy_Style>**"`:
 

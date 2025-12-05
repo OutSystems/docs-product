@@ -91,7 +91,7 @@ The Case Process Configurations API includes actions used to configure the under
 
 ## Actions
 
-### Activity_GetAssignDetailsByActivityId { #Activity_GetAssignDetailsByActivityId }
+### Activity_GetAssignDetailsByActivityId {#Activity_GetAssignDetailsByActivityId}
 
 Gets the activity assignment details (user and group) and if the acitivity is blocked
 
@@ -107,7 +107,7 @@ ActivityAssignDetails
 :   Type: [Activity_AssignDetails](<#Structure_Activity_AssignDetails>).  
     ActivityA ssignment Details
 
-### ActivityDefinitionConfiguration_Get { #ActivityDefinitionConfiguration_Get }
+### ActivityDefinitionConfiguration_Get {#ActivityDefinitionConfiguration_Get}
 
 Gets the configuration of an activity definition
 
@@ -123,7 +123,7 @@ ProcessConfiguration
 :   Type: [ProcessConfiguration_View](<#Structure_ProcessConfiguration_View>).  
     ProcessConfiguration View
 
-### ActivityDefinitionConfiguration_GetAll { #ActivityDefinitionConfiguration_GetAll }
+### ActivityDefinitionConfiguration_GetAll {#ActivityDefinitionConfiguration_GetAll}
 
 Gets all the activity configuration of an process definition
 
@@ -139,7 +139,7 @@ ProcessConfigurationLst
 :   Type: [ProcessConfiguration_View](<#Structure_ProcessConfiguration_View>) List.  
     ProcessConfiguration View list
 
-### ActivityDefinitionConfiguration_Save { #ActivityDefinitionConfiguration_Save }
+### ActivityDefinitionConfiguration_Save {#ActivityDefinitionConfiguration_Save}
 
 Saves the configuration of an activity definition
 
@@ -149,7 +149,7 @@ ProcessConfiguration
 :   Type: mandatory, [ProcessConfiguration_Save](<#Structure_ProcessConfiguration_Save>).  
     ProcessConfiguration View
 
-### ActivityDefinitionSLA_Create { #ActivityDefinitionSLA_Create }
+### ActivityDefinitionSLA_Create {#ActivityDefinitionSLA_Create}
 
 Creates a new Activity Definition SLA
 
@@ -165,7 +165,7 @@ ActivityDefinitionSLAId
 :   Type: ActivityDefinitionSLA Identifier.  
     Activity Definition SLA Identifier
 
-### ActivityDefinitionSLA_CreateOrUpdate { #ActivityDefinitionSLA_CreateOrUpdate }
+### ActivityDefinitionSLA_CreateOrUpdate {#ActivityDefinitionSLA_CreateOrUpdate}
 
 Creates or updates the Activity Definition SLA details
 
@@ -181,7 +181,7 @@ ActivityDefinitionSLAId
 :   Type: ActivityDefinitionSLA Identifier.  
     Activity Definition SLA Identifier
 
-### ActivityDefinitionSLA_Delete { #ActivityDefinitionSLA_Delete }
+### ActivityDefinitionSLA_Delete {#ActivityDefinitionSLA_Delete}
 
 Deletes an existing Activity Definition SLA
 
@@ -191,7 +191,7 @@ Id
 :   Type: mandatory, ActivityDefinitionSLA Identifier.  
     Activity SLA Identifier
 
-### ActivityDefinitionSLA_GetById { #ActivityDefinitionSLA_GetById }
+### ActivityDefinitionSLA_GetById {#ActivityDefinitionSLA_GetById}
 
 Gets an Activity Configuration associated with activity definition.
 
@@ -207,7 +207,7 @@ ActivityDefinitionSLADetail
 :   Type: [ActivityDefinition_DetailWithSLA](<#Structure_ActivityDefinition_DetailWithSLA>).  
     Activity definition configuration
 
-### ActivityDefinitionSLA_GetList { #ActivityDefinitionSLA_GetList }
+### ActivityDefinitionSLA_GetList {#ActivityDefinitionSLA_GetList}
 
 Gets the list of SLA configurations associated with activity definitions. Can be filtered based on a process definition.
 
@@ -231,7 +231,7 @@ TotalResults
 :   Type: Long Integer.  
     Number of total activity definition SLA that match the criteiria
 
-### ActivityDefinitionSLA_Update { #ActivityDefinitionSLA_Update }
+### ActivityDefinitionSLA_Update {#ActivityDefinitionSLA_Update}
 
 Updates an existing Activity Definition SLA
 
@@ -241,7 +241,7 @@ ActivityDefinitionSLAUpdateRec
 :   Type: mandatory, [ActivityDefinitionSLA_CreateOrUpdate](<#Structure_ActivityDefinitionSLA_CreateOrUpdate>).  
     Activity Definition SLA update details
 
-### Configurations_Load { #Configurations_Load }
+### Configurations_Load {#Configurations_Load}
 
 Load the input configuratins (usually from a bootstrap process). Already calls Configurations_InitializeStaging.
 
@@ -261,7 +261,7 @@ FoundDefinition
 :   Type: Boolean.  
     If false the input process definition was not found
 
-### ProcessConfigurations_GetAll { #ProcessConfigurations_GetAll }
+### ProcessConfigurations_GetAll {#ProcessConfigurations_GetAll}
 
 Gets all the configuration of a process definition
 
@@ -277,7 +277,7 @@ Configurations
 :   Type: [ProcessActivityConfigs](<#Structure_ProcessActivityConfigs>).  
     List of all configurations
 
-### ProcessDefinition_GetByGlobalKey { #ProcessDefinition_GetByGlobalKey }
+### ProcessDefinition_GetByGlobalKey {#ProcessDefinition_GetByGlobalKey}
 
 Gets the Process Definition Id by it's GlobalKey
 
@@ -293,7 +293,7 @@ ProcessDefinitionId
 :   Type: Process_Definition Identifier.  
     ProcessDefinition Id
 
-### ProcessDefinitionConfiguration_Get { #ProcessDefinitionConfiguration_Get }
+### ProcessDefinitionConfiguration_Get {#ProcessDefinitionConfiguration_Get}
 
 Gets the configuration of an process definition
 
@@ -309,7 +309,7 @@ ProcessConfiguration
 :   Type: [ProcessConfiguration_View](<#Structure_ProcessConfiguration_View>).  
     ProcessConfiguration View
 
-### ProcessDefinitionConfiguration_Save { #ProcessDefinitionConfiguration_Save }
+### ProcessDefinitionConfiguration_Save {#ProcessDefinitionConfiguration_Save}
 
 Saves the configuration of an process definition
 
@@ -319,7 +319,7 @@ ProcessConfiguration
 :   Type: mandatory, [ProcessConfiguration_Save](<#Structure_ProcessConfiguration_Save>).  
     ProcessConfiguration View
 
-### ProcessDefinitionExtended_Create { #ProcessDefinitionExtended_Create }
+### ProcessDefinitionExtended_Create {#ProcessDefinitionExtended_Create}
 
 Creates a new Process Definition Extended
 
@@ -335,7 +335,7 @@ ProcessDefinitionExtendedId
 :   Type: ProcessDefinitionExtended Identifier.  
     Process Definition Extended Identifier
 
-### ProcessDefinitionExtended_CreateOrUpdate { #ProcessDefinitionExtended_CreateOrUpdate }
+### ProcessDefinitionExtended_CreateOrUpdate {#ProcessDefinitionExtended_CreateOrUpdate}
 
 Creates or updates the Process Definition Extended details.
 
@@ -351,7 +351,7 @@ ProcessDefinitionExtendedId
 :   Type: ProcessDefinitionExtended Identifier.  
     Process Definition Extended Identifier
 
-### ProcessDefinitionExtended_Delete { #ProcessDefinitionExtended_Delete }
+### ProcessDefinitionExtended_Delete {#ProcessDefinitionExtended_Delete}
 
 Deletes an existing Process Definition Extended
 
@@ -361,7 +361,7 @@ ProcessDefinitionExtendedId
 :   Type: mandatory, ProcessDefinitionExtended Identifier.  
     Process Definition Extended Identifier
 
-### ProcessDefinitionExtended_Update { #ProcessDefinitionExtended_Update }
+### ProcessDefinitionExtended_Update {#ProcessDefinitionExtended_Update}
 
 Updates an existing Process Definition Extended
 
@@ -371,7 +371,7 @@ ProcessDefinitionExtendedUpdateRec
 :   Type: mandatory, [ProcessDefinitionExtended_CreateOrUpdate](<#Structure_ProcessDefinitionExtended_CreateOrUpdate>).  
     Process Definition Extended update details
 
-### ProcessDefinitionPriority_Create { #ProcessDefinitionPriority_Create }
+### ProcessDefinitionPriority_Create {#ProcessDefinitionPriority_Create}
 
 Creates a new priority type
 
@@ -387,7 +387,7 @@ ProcessDefinitionPriorityId
 :   Type: ProcessDefinitionPriority Identifier.  
     Priority Type Identifier
 
-### ProcessDefinitionPriority_CreateOrUpdate { #ProcessDefinitionPriority_CreateOrUpdate }
+### ProcessDefinitionPriority_CreateOrUpdate {#ProcessDefinitionPriority_CreateOrUpdate}
 
 Creates or updates the Priority Type details
 
@@ -403,7 +403,7 @@ ProcessDefinitionPriorityId
 :   Type: ProcessDefinitionPriority Identifier.  
     Priority Type Identifier
 
-### ProcessDefinitionPriority_Delete { #ProcessDefinitionPriority_Delete }
+### ProcessDefinitionPriority_Delete {#ProcessDefinitionPriority_Delete}
 
 Removes an existing priority type.
 
@@ -413,7 +413,7 @@ ProcessDefinitionPriorityId
 :   Type: mandatory, ProcessDefinitionPriority Identifier.  
     Process Definition Priority Identifier
 
-### ProcessDefinitionPriority_Update { #ProcessDefinitionPriority_Update }
+### ProcessDefinitionPriority_Update {#ProcessDefinitionPriority_Update}
 
 Updates an existing priority type.
 
@@ -423,7 +423,7 @@ ProcessDefinitionPriorityUpdateRec
 :   Type: mandatory, [ProcessDefinitionPriorityCreateOrUpdate](<#Structure_ProcessDefinitionPriorityCreateOrUpdate>).  
     Priority type creation details
 
-### ProcessDefinitionPriorityGetAll { #ProcessDefinitionPriorityGetAll }
+### ProcessDefinitionPriorityGetAll {#ProcessDefinitionPriorityGetAll}
 
 Gets the list of priorities.
 
@@ -447,7 +447,7 @@ TotalResults
 :   Type: Long Integer.  
     Number of total activity definition SLA that match the criteiria
 
-### ProcessDefinitionPriorityGetById { #ProcessDefinitionPriorityGetById }
+### ProcessDefinitionPriorityGetById {#ProcessDefinitionPriorityGetById}
 
 Gets a priority.
 
@@ -463,7 +463,7 @@ ProcessDefinitionPriorityDetail
 :   Type: [ProcessDefinitionPriorityDetail](<#Structure_ProcessDefinitionPriorityDetail>).  
     Priority Detail
 
-### ProcessDefinitionSLA_Create { #ProcessDefinitionSLA_Create }
+### ProcessDefinitionSLA_Create {#ProcessDefinitionSLA_Create}
 
 Creates a new Process Definition SLA
 
@@ -479,7 +479,7 @@ ProcessDefinitionSLAId
 :   Type: ProcessDefinitionSLA Identifier.  
     Process Definition SLA Identifier
 
-### ProcessDefinitionSLA_CreateOrUpdate { #ProcessDefinitionSLA_CreateOrUpdate }
+### ProcessDefinitionSLA_CreateOrUpdate {#ProcessDefinitionSLA_CreateOrUpdate}
 
 Creates or updates the Process Definition SLA details.
 
@@ -495,7 +495,7 @@ ProcessDefinitionSLAId
 :   Type: ProcessDefinitionSLA Identifier.  
     Process Definition SLA Identifier
 
-### ProcessDefinitionSLA_Delete { #ProcessDefinitionSLA_Delete }
+### ProcessDefinitionSLA_Delete {#ProcessDefinitionSLA_Delete}
 
 Deletes an existing Process Definition SLA
 
@@ -505,7 +505,7 @@ ProcessDefinitionSLAId
 :   Type: mandatory, ProcessDefinitionSLA Identifier.  
     Process Definition SLA Identifier
 
-### ProcessDefinitionSLA_GetById { #ProcessDefinitionSLA_GetById }
+### ProcessDefinitionSLA_GetById {#ProcessDefinitionSLA_GetById}
 
 Gets a process definition configuration.
 
@@ -521,7 +521,7 @@ ProcessDefinitionSLADetail
 :   Type: [ProcessDefinitionSLA_DetailWithProcessDefinition](<#Structure_ProcessDefinitionSLA_DetailWithProcessDefinition>).  
     Process definition configuration
 
-### ProcessDefinitionSLA_GetList { #ProcessDefinitionSLA_GetList }
+### ProcessDefinitionSLA_GetList {#ProcessDefinitionSLA_GetList}
 
 Gets the list of process definition configuration.
 
@@ -545,7 +545,7 @@ TotalResults
 :   Type: Long Integer.  
     Number of total process definition SLA that match the criteiria
 
-### ProcessDefinitionSLA_Update { #ProcessDefinitionSLA_Update }
+### ProcessDefinitionSLA_Update {#ProcessDefinitionSLA_Update}
 
 Updates an existing Process Definition SLA
 
@@ -555,7 +555,7 @@ ProcessDefinitionSLAUpdateRec
 :   Type: mandatory, [ProcessDefinitionSLA_CreateOrUpdate](<#Structure_ProcessDefinitionSLA_CreateOrUpdate>).  
     Process Definition Extended update details
 
-### ProcessExtended_InitializeStaging { #ProcessExtended_InitializeStaging }
+### ProcessExtended_InitializeStaging {#ProcessExtended_InitializeStaging}
 
 It will mark all entries as deleted for the staging process after only import the active ones
 
@@ -564,7 +564,7 @@ _Inputs_
 ProcessDefinitionId
 :   Type: optional, Process_Definition Identifier.  
 
-### ProcessPriority_InitializeStaging { #ProcessPriority_InitializeStaging }
+### ProcessPriority_InitializeStaging {#ProcessPriority_InitializeStaging}
 
 It will mark all entries as deleted for the staging process after only import the active ones
 
@@ -573,7 +573,7 @@ _Inputs_
 ProcessDefinitionId
 :   Type: optional, Process_Definition Identifier.  
 
-### ProcessSLA_InitializeStaging { #ProcessSLA_InitializeStaging }
+### ProcessSLA_InitializeStaging {#ProcessSLA_InitializeStaging}
 
 It will mark all entries as deleted for the staging process after only import the active ones
 
@@ -584,7 +584,7 @@ ProcessDefinitionId
 
 ## Structures
 
-### Activity_AssignDetails { #Structure_Activity_AssignDetails }
+### Activity_AssignDetails {#Structure_Activity_AssignDetails}
 
 Details about activity assignment details
 
@@ -614,7 +614,7 @@ ProcessIsBlocked
 :   Type: Boolean.  
     If the Process is blocked
 
-### ActivityDefinition_Detail { #Structure_ActivityDefinition_Detail }
+### ActivityDefinition_Detail {#Structure_ActivityDefinition_Detail}
 
 Contains the generic details for activity definition
 
@@ -632,7 +632,7 @@ ProcessDefinitionId
 :   Type: Process_Definition Identifier.  
     Process Definition Id
 
-### ActivityDefinition_DetailWithSLA { #Structure_ActivityDefinition_DetailWithSLA }
+### ActivityDefinition_DetailWithSLA {#Structure_ActivityDefinition_DetailWithSLA}
 
 Contains the generic details for activity definition SLA
 
@@ -646,7 +646,7 @@ ActivityDefinitionSLA_Detail
 :   Type: [ActivityDefinitionSLA_Detail](<#Structure_ActivityDefinitionSLA_Detail>).  
     Activity Definition Config Detail
 
-### ActivityDefinitionSLA_Config { #Structure_ActivityDefinitionSLA_Config }
+### ActivityDefinitionSLA_Config {#Structure_ActivityDefinitionSLA_Config}
 
 ActivityDefinitionSLA Config
 
@@ -676,7 +676,7 @@ ResponseTimeInMinutes
 :   Type: Integer.  
     Duration that the activty has to be completed
 
-### ActivityDefinitionSLA_Create { #Structure_ActivityDefinitionSLA_Create }
+### ActivityDefinitionSLA_Create {#Structure_ActivityDefinitionSLA_Create}
 
 Public structure to enable to create a new activity definition extended configuration
 
@@ -694,7 +694,7 @@ ResponseTimeInMinutes
 :   Type: Integer.  
     Activity SLA minutes to be completed
 
-### ActivityDefinitionSLA_CreateOrUpdate { #Structure_ActivityDefinitionSLA_CreateOrUpdate }
+### ActivityDefinitionSLA_CreateOrUpdate {#Structure_ActivityDefinitionSLA_CreateOrUpdate}
 
 Public structure to enable to create or update an existing activity definition extended
 
@@ -720,7 +720,7 @@ IsActive
 :   Type: Boolean.  
     True if the extended definition is active
 
-### ActivityDefinitionSLA_Detail { #Structure_ActivityDefinitionSLA_Detail }
+### ActivityDefinitionSLA_Detail {#Structure_ActivityDefinitionSLA_Detail}
 
 Public structure to retrieve details about activity definition configuration details
 
@@ -750,7 +750,7 @@ ProcessDefinition
 :   Type: [ProcessDefinition_Detail](<#Structure_ProcessDefinition_Detail>).  
     Process Definition Identifier
 
-### ActivityDefiniton_Config { #Structure_ActivityDefiniton_Config }
+### ActivityDefiniton_Config {#Structure_ActivityDefiniton_Config}
 
 ActivityDefiniton Config
 
@@ -776,7 +776,7 @@ ActivityName
 :   Type: Text.  
     Activity Name
 
-### FilterResults4 { #Structure_FilterResults4 }
+### FilterResults4 {#Structure_FilterResults4}
 
 Filter Search Structure
 
@@ -794,7 +794,7 @@ OnlyActive
 :   Type: Boolean.  
     Only active results
 
-### FilterResults5 { #Structure_FilterResults5 }
+### FilterResults5 {#Structure_FilterResults5}
 
 Filter Search Structure
 
@@ -812,7 +812,7 @@ OnlyActive
 :   Type: Boolean.  
     Only active results
 
-### ProcessActivityConfigs { #Structure_ProcessActivityConfigs }
+### ProcessActivityConfigs {#Structure_ProcessActivityConfigs}
 
 Config
 
@@ -838,7 +838,7 @@ ActivityDefinitonConfigs
 :   Type: [ActivityDefiniton_Config](<#Structure_ActivityDefiniton_Config>) List.  
     ActivityDefiniton Configs
 
-### ProcessConfiguration_Save { #Structure_ProcessConfiguration_Save }
+### ProcessConfiguration_Save {#Structure_ProcessConfiguration_Save}
 
 Save Activity Definition Configuration structure
 
@@ -854,7 +854,7 @@ ActivityDefinitionId
 
 EspaceId
 :   Type: Espace Identifier.  
-    Contains the User interface associated espace for the activity execution
+    Contains the User interface associated module/eSpace for the activity execution
 
 ScreenUI
 :   Type: Text.  
@@ -872,7 +872,7 @@ IsActive
 :   Type: Boolean.  
     If is active
 
-### ProcessConfiguration_View { #Structure_ProcessConfiguration_View }
+### ProcessConfiguration_View {#Structure_ProcessConfiguration_View}
 
 Activity Definition Configuration structure
 
@@ -904,11 +904,11 @@ ActivityDefinitionSSKey
 
 EspaceId
 :   Type: Espace Identifier.  
-    Contains the User interface associated espace for the activity execution
+    Contains the User interface associated module/eSpace for the activity execution
 
 EspaceName
 :   Type: Text.  
-    Espace Name
+    Module/eSpace Name
 
 ScreenUI
 :   Type: Text.  
@@ -922,7 +922,7 @@ CalendarId
 :   Type: Calendar Identifier.  
     Calendar Id
 
-### ProcessDefinition_Detail { #Structure_ProcessDefinition_Detail }
+### ProcessDefinition_Detail {#Structure_ProcessDefinition_Detail}
 
 Contains the generic details for process definition
 
@@ -936,7 +936,7 @@ Label
 :   Type: Text (100).  
     Activity Definition Label
 
-### ProcessDefinitionExtended_Config { #Structure_ProcessDefinitionExtended_Config }
+### ProcessDefinitionExtended_Config {#Structure_ProcessDefinitionExtended_Config}
 
 ProcessDefinitionExtended Config
 
@@ -958,7 +958,7 @@ CalendarId
 :   Type: Calendar Identifier.  
     Possible calendar associated with the process
 
-### ProcessDefinitionExtended_Create { #Structure_ProcessDefinitionExtended_Create }
+### ProcessDefinitionExtended_Create {#Structure_ProcessDefinitionExtended_Create}
 
 Public structure to enable to create a new process definition extended confgurations
 
@@ -976,7 +976,7 @@ CalendarId
 :   Type: Calendar Identifier.  
     Ccalendar associated with the process
 
-### ProcessDefinitionExtended_CreateOrUpdate { #Structure_ProcessDefinitionExtended_CreateOrUpdate }
+### ProcessDefinitionExtended_CreateOrUpdate {#Structure_ProcessDefinitionExtended_CreateOrUpdate}
 
 Public structure to enable to create/update an existing process definition configuration
 
@@ -998,7 +998,7 @@ IsActive
 :   Type: Boolean.  
     True if the extended definition is active
 
-### ProcessDefinitionPriority_Config { #Structure_ProcessDefinitionPriority_Config }
+### ProcessDefinitionPriority_Config {#Structure_ProcessDefinitionPriority_Config}
 
 ProcessDefinitionPriority Config
 
@@ -1024,7 +1024,7 @@ Order
 :   Type: Integer.  
     Order
 
-### ProcessDefinitionPriorityCreate { #Structure_ProcessDefinitionPriorityCreate }
+### ProcessDefinitionPriorityCreate {#Structure_ProcessDefinitionPriorityCreate}
 
 Public structure to create a new priority associated to an existing process definition.
 
@@ -1046,7 +1046,7 @@ ProcessDefinitionId
 :   Type: Process_Definition Identifier.  
     Process Definition Identifier
 
-### ProcessDefinitionPriorityCreateOrUpdate { #Structure_ProcessDefinitionPriorityCreateOrUpdate }
+### ProcessDefinitionPriorityCreateOrUpdate {#Structure_ProcessDefinitionPriorityCreateOrUpdate}
 
 Public structure to create/update priority associated to an existing process definition.
 
@@ -1072,7 +1072,7 @@ ProcessDefinitionId
 :   Type: Process_Definition Identifier.  
     Process Definition Id
 
-### ProcessDefinitionPriorityDetail { #Structure_ProcessDefinitionPriorityDetail }
+### ProcessDefinitionPriorityDetail {#Structure_ProcessDefinitionPriorityDetail}
 
 Public structure to return the details for process priority
 
@@ -1098,7 +1098,7 @@ ProcessDefinitionId
 :   Type: Process_Definition Identifier.  
     Process Definition Identifier
 
-### ProcessDefinitionSLA_Config { #Structure_ProcessDefinitionSLA_Config }
+### ProcessDefinitionSLA_Config {#Structure_ProcessDefinitionSLA_Config}
 
 ProcessDefinitionSLA Config
 
@@ -1120,7 +1120,7 @@ ResponseTimeInMinutes
 :   Type: Integer.  
     Process SLA minutes to be completed
 
-### ProcessDefinitionSLA_Create { #Structure_ProcessDefinitionSLA_Create }
+### ProcessDefinitionSLA_Create {#Structure_ProcessDefinitionSLA_Create}
 
 Public structure to enable to create a new process definition SLA
 
@@ -1138,7 +1138,7 @@ ResponseTimeInMinutes
 :   Type: Integer.  
     Process SLA in minutes to be completed
 
-### ProcessDefinitionSLA_CreateOrUpdate { #Structure_ProcessDefinitionSLA_CreateOrUpdate }
+### ProcessDefinitionSLA_CreateOrUpdate {#Structure_ProcessDefinitionSLA_CreateOrUpdate}
 
 Public structure to enable to create/update an existing process definition sla
 
@@ -1160,7 +1160,7 @@ IsActive
 :   Type: Boolean.  
     True if the extended definition is active
 
-### ProcessDefinitionSLA_DetailWithProcessDefinition { #Structure_ProcessDefinitionSLA_DetailWithProcessDefinition }
+### ProcessDefinitionSLA_DetailWithProcessDefinition {#Structure_ProcessDefinitionSLA_DetailWithProcessDefinition}
 
 Public structure to retrieve details about process definition configuration
 

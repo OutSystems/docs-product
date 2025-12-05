@@ -52,21 +52,21 @@ On the table below, you'll find detailed information about what it's stored on e
 <tr>
 <td rowspan="2">Full compilation cache</td>
 <td><ul><li>Generated source code (.oml, .cs,.csproj, etc) files</li><li>Application release binary files (.dll, .aspx, .asmx ,etc)</li><li>Application resources files (.js,.css,.png,.gif, etc) in a full compilation.</li></ul></td>
-<td><strong>Path:</strong> <code>&lt;platformserver&gt;\share\&lt;espacename&gt;\full</code><br/><strong>In controller:</strong> yes<br/><strong>In front-end:</strong> no<br/><strong>Environment type:</strong> all</td>
+<td><strong>Path:</strong> <code>&lt;platformserver&gt;\share\&lt;modulename&gt;\full</code><br/><strong>In controller:</strong> yes<br/><strong>In front-end:</strong> no<br/><strong>Environment type:</strong> all</td>
 </tr>
 <tr>
 <td>Release application files package (zip)</td>
-<td><strong>Path:</strong> &lt;platformserver&gt;\share\&lt;espacename&gt;<br/><strong>In controller:</strong> yes<br/><strong>In front-end:</strong> no<br/><strong>Environment type:</strong> all</td>
+<td><strong>Path:</strong> &lt;platformserver&gt;\share\&lt;modulename&gt;<br/><strong>In controller:</strong> yes<br/><strong>In front-end:</strong> no<br/><strong>Environment type:</strong> all</td>
 </tr>
 <tr>
 <td>Partial compilation cache</td>
-<td><ul><li>Generated source code (.oml, .cs,.csproj, etc) files</li><li>Application release binary files (.dll, .aspx, .asmx ,etc)</li><li>Application resources files (.js,.css,.png,.gif, etc) in a partial compilation for each developer that runs/debugs the espace.</li></ul></td>
-<td><strong>Path:</strong> &lt;platformserver&gt;\share\&lt;espacename&gt;\partial\&lt;developer&gt;<br/><strong>In controller:</strong> yes<br/><strong>In front-end:</strong> no<br/><strong>Environment type:</strong> all that have debug enabled</td>
+<td><ul><li>Generated source code (.oml, .cs,.csproj, etc) files</li><li>Application release binary files (.dll, .aspx, .asmx ,etc)</li><li>Application resources files (.js,.css,.png,.gif, etc) in a partial compilation for each developer that runs/debugs the module.</li></ul></td>
+<td><strong>Path:</strong> &lt;platformserver&gt;\share\&lt;modulename&gt;\partial\&lt;developer&gt;<br/><strong>In controller:</strong> yes<br/><strong>In front-end:</strong> no<br/><strong>Environment type:</strong> all that have debug enabled</td>
 </tr>
 <tr>
 <td rowspan="2">Release application files</td>
-<td><ul><li>All release application files, deployed to be loaded by the front-ends application server (IIS).<br/>These files include all application files for this espace (.dll, .aspx, .asmx, .js, .css, images and other included resources).</li><li>All application compiled files (DLLs and JARs) that are shared between applications are hard links to the actual files stored in the \repository folder.</li></ul></td>
-<td><strong>Path:</strong><code>&lt;platformserver&gt;\running\&lt;espacename&gt;.&lt;versionid&gt;</code><br/><strong>In controller:</strong> no<br/><strong>In front-end:</strong> yes<br/><strong>Environment type:</strong> all</td>
+<td><ul><li>All release application files, deployed to be loaded by the front-ends application server (IIS).<br/>These files include all application files for this module (.dll, .aspx, .asmx, .js, .css, images and other included resources).</li><li>All application compiled files (DLLs and JARs) that are shared between applications are hard links to the actual files stored in the \repository folder.</li></ul></td>
+<td><strong>Path:</strong><code>&lt;platformserver&gt;\running\&lt;modulename&gt;.&lt;versionid&gt;</code><br/><strong>In controller:</strong> no<br/><strong>In front-end:</strong> yes<br/><strong>Environment type:</strong> all</td>
 </tr>
 <tr>
 <td>All application compiled files (DLLs and JARs) that are shared between applications are stored in a shared server library, along with other platform libraries.<br/>This replaces the local copy of the DLLs/ JARs of all its producer applications in the \running folder, reducing the required disk space and the number of files that need to be distributed to the front-end servers.</td>
@@ -74,13 +74,13 @@ On the table below, you'll find detailed information about what it's stored on e
 </tr>
 <tr>
 <td>Personal Test Area Files</td>
-<td>All release application files for a specific version that a specific user is running/debugging.<br/>These files include all application files for this espace (.dll, .aspx, .asmx, .js, .css, images and other included resources).</td>
-<td><strong>Path:</strong><code>&lt;platformserver\test\&lt;espacename&gt;\&lt;developer&gt;</code><br/><strong>In controller:</strong> no<br/><strong>In front-end:</strong> yes<br/><strong>Environment type:</strong> all that have debug enabled</td>
+<td>All release application files for a specific version that a specific user is running/debugging.<br/>These files include all application files for this module (.dll, .aspx, .asmx, .js, .css, images and other included resources).</td>
+<td><strong>Path:</strong><code>&lt;platformserver\test\&lt;modulename&gt;\&lt;developer&gt;</code><br/><strong>In controller:</strong> no<br/><strong>In front-end:</strong> yes<br/><strong>Environment type:</strong> all that have debug enabled</td>
 </tr>
 <tr>
 <td>Temporary Asp.Net Files</td>
 <td>These files are automatically generated by the .Net Framework, and not the Platform Server, but they are a part of every ASP.NET application.</td>
-<td><strong>Path:</strong><code>C:\windows\microsoft.net\framework\v4.0.30319\Temporary Asp.Net Files\&lt;espacename&gt;</code> or <code>C:\windows\microsoft.net\framework64\v4.0.30319\Temporary Asp.Net Files\&lt;espacename&gt;</code><br/><strong>In controller:</strong> no<br/><strong>In front-end:</strong> yes<br/><strong>Environment type:</strong> all</td>
+<td><strong>Path:</strong><code>C:\windows\microsoft.net\framework\v4.0.30319\Temporary Asp.Net Files\&lt;modulename&gt;</code> or <code>C:\windows\microsoft.net\framework64\v4.0.30319\Temporary Asp.Net Files\&lt;modulename&gt;</code><br/><strong>In controller:</strong> no<br/><strong>In front-end:</strong> yes<br/><strong>Environment type:</strong> all</td>
 </tr>
 </tbody>
 </table>
@@ -93,7 +93,7 @@ Ultimately, based on the architecture of the Platform Server where applications 
 
 | Type of content | Side Effect of deleting it | How to recover it |
 |-----------------|----------------------------|-------------------|
-| Full compilation cache | This compilation cache is used when 1-Click publishing or debugging modules with references. The Platform Server will fetch the producer references from this location. If they aren't here, compilation errors or runtime errors on the consumer espaces due to broken references may occur. | One needs to do 1-Click publishing of the producer modules to rebuild the producers' compilation cache. The best way is to build an all content solution in Service Center and publish it. |
+| Full compilation cache | This compilation cache is used when 1-Click publishing or debugging modules with references. The Platform Server will fetch the producer references from this location. If they aren't here, compilation errors or runtime errors on the consumer modules due to broken references may occur. | One needs to do 1-Click publishing of the producer modules to rebuild the producers' compilation cache. The best way is to build an all content solution in Service Center and publish it. |
 | Partial compilation cache | This compilation cache is used during the creation of a personal test area for Debugging purposes. If missing, it shouldn't impact the debugging process. | By attempting to debug the module again, the partial content will be recreated again. |
 | Release application files | These are the resulting OutSystems application files, mapped on the IIS application server. If they're missing the applications will go offline. There's an automatic internal thread maintaining the content on this folder, so it should never be deleted. | One needs to redeploy all modules again to restore the application files. This can be done by restarting the OutSystems Deployment Service on the server, or 1-Click publishing an all content solution in Service Center, or even use the re-deploy button for every module on Service Center. |
 | Personal test area files  | These are the actual application files of the personal test areas for each module and developer. Deleting them will make the developer lose the ability to run/debug the application by accessing it on the web browser. | In order for the developer to restore it's own personal test area for that module, he needs to perform a run/debug from Service Studio again. |
@@ -111,7 +111,7 @@ So, based on the tables above, and if you're concerned about disk space usage on
 
 Finally, let's try to pass on some highlights about some recommended disk sizes.
 
-Estimating the disk space usage of a factory isn't easy since it depends greatly on the number of application objects or software units, eSpaces, and developers that work on one environment. Additionally, the type of application (and thus the resources included on that application) can really offset any metrics. From our experience, and considering the disk fragmentation impact on server performance, we recommend the following, based only on application objects / software units metric:
+Estimating the disk space usage of a factory isn't easy since it depends greatly on the number of application objects or software units, modules, and developers that work on one environment. Additionally, the type of application (and thus the resources included on that application) can really offset any metrics. From our experience, and considering the disk fragmentation impact on server performance, we recommend the following, based only on application objects / software units metric:
 
 * 36 GB for small factories (< 250 application objects / 150 000 software units)
 
@@ -135,4 +135,4 @@ If you have the need to tweak these values, you may reach out to OutSystems supp
 
 Regarding the period of the cleanup thread, you actually can set it on the Monitoring page of Service Center, and if you access the deployment service details, you'll find the **Unused Folders Removal** thread and the time since the last execution.
 
-Regarding the logs, you might find some General Logs from the (system) espace, related to this cleanup thread, if anything was deleted. [OSTrace](http://www.outsystems.com/goto/ostrace) (for on-premises environments only) also allows you to monitor this activity.
+Regarding the logs, you might find some General Logs from the (system) module, related to this cleanup thread, if anything was deleted. [OSTrace](http://www.outsystems.com/goto/ostrace) (for on-premises environments only) also allows you to monitor this activity.

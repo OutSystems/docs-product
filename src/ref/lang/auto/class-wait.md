@@ -49,7 +49,7 @@ For example, if the wait activity is designed to wait until an entity is updated
 
 ## Using Wait Activity References
 
-Service Studio provides you with mechanisms to access Wait process activities among eSpaces. You can expose your Wait process activities to other eSpaces or use the Wait process activities defined in another eSpace.
+Service Studio provides you with mechanisms to access Wait process activities among modules. You can expose your Wait process activities to other modules or use the Wait process activities defined in another module.
 
 ## Remarks
 

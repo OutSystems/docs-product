@@ -210,7 +210,7 @@ http://outsystemscloud.com/PerformanceProbe/rest/PerformanceMonitoringAPI/Reques
 
 Any events with a Request Event Name different from the built-in events, created by the POST request, are custom events that are not automatically consumed by the current monitoring mechanism (that is, LifeTime Analytics). This means you decide the event name (limited to 50 characters).
 
-#### Request event details for WebScreenClientExecuted event { #webscreenclientexecuted-details }
+#### Request event details for WebScreenClientExecuted event {#webscreenclientexecuted-details}
 
 This event occurs whenever the user's browser finishes processing a request (initial page load, any form submission, or any AJAX request). The event's properties are the following:
 
@@ -244,7 +244,7 @@ This event occurs whenever the user's browser finishes processing a request (ini
 | CCC | Client Country Code | **[Deprecated as of Platform Server 11.12.0]** The ISO-Alpha2 country code associated with the device's carrier. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS. |
 | CNT | Carrier Network Type | **[Deprecated as of Platform Server 11.12.0]** The active network type provided by the device's carrier, such as 3G or GPRS. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS. |
 
-#### Request event details for WebScreenServerExecuted event { #webscreenserverexecuted-details }
+#### Request event details for WebScreenServerExecuted event {#webscreenserverexecuted-details}
 
 This event occurs whenever the server finishes handling a request. The event's properties are the following:
 
@@ -275,7 +275,7 @@ This event occurs whenever the server finishes handling a request. The event's p
 | UID | User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the User Id isn't included in the event attributes. |
 | EC | Number of errors | The number of errors that occurred during the request. |
 
-#### Request event details for QueryExecuted event { #queryexecuted-details }
+#### Request event details for QueryExecuted event {#queryexecuted-details}
 
 This event occurs when the platform detects a [slow query](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
@@ -298,7 +298,7 @@ This event occurs when the platform detects a [slow query](../../monitor-and-tro
 | OEN | Object's eSpace Name | The name of the application module where the slow query was called. |
 | EC | Number of errors | The number of errors that occurred during the request. |
 
-#### Request event details for ConsumedIntegrationExecuted event { #consumedintegrationexecuted-details }
+#### Request event details for ConsumedIntegrationExecuted event {#consumedintegrationexecuted-details}
 
 This event occurs when the platform detects a [slow consumed integration](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
@@ -323,7 +323,7 @@ This event occurs when the platform detects a [slow consumed integration](../../
 | IE | Integration Endpoint | The integration's endpoint URL. |
 | EC | Number of errors | The number of errors that occurred during the request. |
 
-#### Request event details for ExtensionExecuted event { #extensionexecuted-details }
+#### Request event details for ExtensionExecuted event {#extensionexecuted-details}
 
 This event occurs when the platform detects a [slow extension action](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
@@ -336,8 +336,8 @@ This event occurs when the platform detects a [slow extension action](../../moni
 | FN | Front-end Name | The name of the front-end server that handled the request. |
 | OK | Object key | The key that identifies the slow extension's action. |
 | ON | Object name | The name of the slow extension's action. |
-| OEK | Object's eSpace key | The key of the eSpace where the slow extension action was called. |
-| OEN | Object's eSpace name | The name of the eSpace where the slow extension action was called. |
+| OEK | Object's eSpace key | The key of the module/eSpace where the slow extension action was called. |
+| OEN | Object's eSpace name | The name of the module/eSpace where the slow extension action was called. |
 | NE | Number of Executions | The total number of calls for a given slow extension's action. |
 | D | Duration | The total duration of all the slow extension executions. |
 | EPK | EndPoint Key | The key of the web screen that was handling the request. |
@@ -346,7 +346,7 @@ This event occurs when the platform detects a [slow extension action](../../moni
 | AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then ActionName is "(PageRender)". |
 | EC | Number of errors | The number of errors that occurred during the request. |
 
-#### Request event details for ScreenServer event { #screenserver-details }
+#### Request event details for ScreenServer event {#screenserver-details}
 
 <div class="info" markdown="1">
 
@@ -382,7 +382,7 @@ This event occurs whenever the server finishes handling a request. This is ident
 | UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the event attributes don't include the User Id. |
 | EC       | Number of errors                      | The number of errors that occurred during the request.        |
 
-#### Request event details for TimerExecuted event { #timerexecuted-details }
+#### Request event details for TimerExecuted event {#timerexecuted-details}
 
 This event is disabled by default. This means that the event is not generated. Even when the event is enabled, it isn't processed by LifeTime Analytics because this event is not supported by LifeTime Analytics. You can enable the TimerExecuted event in Factory Configuration under the **Platform Configurations** section.
 

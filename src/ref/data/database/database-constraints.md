@@ -17,7 +17,7 @@ coverage-type:
 
 # Database Constraints
 
-When defining your entities, you can specify their Identifiers and the relationships they have with other entities of your eSpace, through Reference Attributes.
+When defining your entities, you can specify their Identifiers and the relationships they have with other entities of your module, through Reference Attributes.
 
 In database terminology, the Identifier of an entity corresponds to its Primary Key and the Reference Attributes correspond to Foreign keys. OutSystems automatically creates the necessary database constraints as explained below.
 

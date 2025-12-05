@@ -109,11 +109,11 @@ Note that if only passing entity IDs, you will need to do another query to the d
 
 ### Description
 
-Avoid the use of JavaScript in screen expression; place JavaScript code in files included through extensions or eSpace resources.
+Avoid the use of JavaScript in screen expression; place JavaScript code in files included through extensions or module resources.
 
 ### Solution
 
-Avoid using large JavaScript in screen expressions. Always place it in a file and include it through extensions or eSpace resources, placing a link script to it.
+Avoid using large JavaScript in screen expressions. Always place it in a file and include it through extensions or module resources, placing a link script to it.
 
 ### Importance
 
@@ -121,7 +121,7 @@ Placing large chunks of JavaScript code in your screen through expressions will 
 
 ### Remarks
 
-This is a good idea because it enables reusability between eSpaces and encapsulates the JS logic. Always use it on the JavaScript frameworks. However, for custom JavaScript, it may be a problem when you need to use local widget ids.
+This is a good idea because it enables reusability between modules and encapsulates the JS logic. Always use it on the JavaScript frameworks. However, for custom JavaScript, it may be a problem when you need to use local widget ids.
 
 ## JavaScript Loading Delay
 

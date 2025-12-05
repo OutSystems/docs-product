@@ -228,7 +228,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |Instant|@timestamp|Date Time|Time of log generation in the front end (server log) or time of log generation in the mobile device (client log).|
 |Msisdn|Msisdn|Text|Cell phone number if screen belongs to a SMS flow.|
 |Request_key|log.attributes.outsystems.request.key|GUID|Key of the request that originated the log. Correlation field of the several log types to a single request.|
-|Screen|log.attributes.outsystems.log.screen.name|Text|Name of the screen as declared in the eSpace where it's present. For SMS Flows, name of the SMS Node.|
+|Screen|log.attributes.outsystems.log.screen.name|Text|Name of the screen as declared in the module/eSpace where it's present. For SMS Flows, name of the SMS Node.|
 |Screen_Type|log.attributes.outsystems.log.screen.type|Text|Type of screen (WEB, MOBILE).|
 |Session_bytes|log.attributes.outsystems.traditional.ss|Int|Size of the session associated with this request, in bytes, at the beginning of the request.|
 |Session_Id|log.attributes.outsystems.user.session.id|Text|User Session Identifier|

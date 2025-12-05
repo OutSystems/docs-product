@@ -44,7 +44,7 @@ This kind of connector is represented as the green dotted connector shown in the
 
 ## Using Conditional Start Activity References
 
-Service Studio provides you with mechanisms to access Conditional Start process activities among eSpaces. You can expose your Conditional Start process activities to other eSpaces or use Conditional Start process activities defined in another eSpace.
+Service Studio provides you with mechanisms to access Conditional Start process activities among modules. You can expose your Conditional Start process activities to other modules or use Conditional Start process activities defined in another module.
 
 ## Remarks
 

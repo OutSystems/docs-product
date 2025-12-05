@@ -56,7 +56,7 @@ See [Using Taskbox in Reactive Web Apps](https://success.outsystems.com/Document
 
 ## Actions
 
-### API_GetActivities { #API_GetActivities }
+### API_GetActivities {#API_GetActivities}
 
 Returns the activities of a user.  
 Activity filtering and pagination are allowed.
@@ -87,7 +87,7 @@ PaginationInfo
 :   Type: [PaginationInfo](#Structure_PaginationInfo).  
     The definite pagination information for displaying the activities in the Taskbox of the user.
 
-### API_GetActivityGuidanceHtml { #API_GetActivityGuidanceHtml }
+### API_GetActivityGuidanceHtml {#API_GetActivityGuidanceHtml}
 
 Encodes the activity guidance instructions in HTML format.
 
@@ -103,7 +103,7 @@ GuidanceHtml
 :   Type: Text.  
     The activity guidance instructions encoded in HTML format.
 
-### API_GetActivityPagination { #API_GetActivityPagination }
+### API_GetActivityPagination {#API_GetActivityPagination}
 
 Returns the pagination information of all activities currently displayed in the Taskbox of the user.
 
@@ -124,7 +124,7 @@ PaginationInfo
 :   Type: [PaginationInfo](#Structure_PaginationInfo).  
     The pagination information of all activities currently displayed in the Taskbox of the user.
 
-### API_GetActivityVisualization { #API_GetActivityVisualization }
+### API_GetActivityVisualization {#API_GetActivityVisualization}
 
 Returns information on how an open activity is displayed in the Taskbox.
 
@@ -149,7 +149,7 @@ CustomInstructions
     The text/HTML of custom instructions displayed below the normal activity instructions when the activity is open in the Taskbox.  
     The instructions have a maximum length of 500 characters.
 
-### API_GetDynamicHtml { #API_GetDynamicHtml }
+### API_GetDynamicHtml {#API_GetDynamicHtml}
 
 [Deprecated] Returns the JavaScript code for the Taskbox and its current content.
 
@@ -177,7 +177,7 @@ Html
 :   Type: Text.  
     The JavaScript code for the Taskbox and its current content.
 
-### API_GetNewOpenActivity { #API_GetNewOpenActivity }
+### API_GetNewOpenActivity {#API_GetNewOpenActivity}
 
 Returns the activity that is currently open by the user and has the indicated activity as one of the previous activities in the process flow.
 
@@ -197,7 +197,7 @@ ActivityId
 :   Type: Activity Identifier.  
     The activity that is currently open by the user.
 
-### API_GetStaticHtml { #API_GetStaticHtml }
+### API_GetStaticHtml {#API_GetStaticHtml}
 
 [Deprecated] Returns the HTML of the Taskbox with absolute URLs, i.e., starting with &quot;http://&lt;Server Name&gt;/&quot;.
 
@@ -205,7 +205,7 @@ _Inputs_
 
 EspaceId
 :   Type: mandatory, Espace Identifier.  
-    The identifier of the eSpace.
+    The identifier of the module/eSpace.
 
 UserId
 :   Type: mandatory, User Identifier.  
@@ -225,7 +225,7 @@ Html
 :   Type: Text.  
     The HTML of the Taskbox with absolute URLs, i.e., starting with &quot;http://&lt;Server Name&gt;/&quot;.
 
-### API_MarkActivitiesAsSeen { #API_MarkActivitiesAsSeen }
+### API_MarkActivitiesAsSeen {#API_MarkActivitiesAsSeen}
 
 Displays all Taskbox activities for the user as already seen, i.e., only new activities will be displayed as not seen in the Taskbox.
 
@@ -235,7 +235,7 @@ UserId
 :   Type: mandatory, User Identifier.  
     The identifier of the user.
 
-### API_SetActivityVisualization { #API_SetActivityVisualization }
+### API_SetActivityVisualization {#API_SetActivityVisualization}
 
 Sets how an open activity is displayed in the Taskbox.
 
@@ -258,24 +258,24 @@ CustomInstructions
     The text/HTML for custom instructions displayed below the normal activity instructions when the activity is open in the Taskbox.  
     The custom instructions have a maximum length of 500 characters.
 
-### Inbox_DisableInServer { #Inbox_DisableInServer }
+### Inbox_DisableInServer {#Inbox_DisableInServer}
 
 Disables the Taskbox in the environment.
 
-### Inbox_EnableInServer { #Inbox_EnableInServer }
+### Inbox_EnableInServer {#Inbox_EnableInServer}
 
 Enables the Taskbox in the environment.
 
 ## Structures
 
-### Inbox_FilterCriteria { #Structure_Inbox_FilterCriteria }
+### Inbox_FilterCriteria {#Structure_Inbox_FilterCriteria}
 
 _Attributes_
 
 ActivityLabel
 :   Type: Text (50).  
 
-### Inbox_PaginationCriteria { #Structure_Inbox_PaginationCriteria }
+### Inbox_PaginationCriteria {#Structure_Inbox_PaginationCriteria}
 
 _Attributes_
 
@@ -285,7 +285,7 @@ StartIndex
 LineCount
 :   Type: Integer.  
 
-### Activity { #Structure_Activity }
+### Activity {#Structure_Activity}
 
 The structure with the information of an activity in the TaskBox.
 
@@ -319,7 +319,7 @@ IsSeen
 :   Type: Boolean.
     Is False if the activity is not visible in the TaskBox due to pagination.
 
-### PaginationInfo { #Structure_PaginationInfo }
+### PaginationInfo {#Structure_PaginationInfo}
 
 The structure with information of the number of activities in the TaskBox.
 

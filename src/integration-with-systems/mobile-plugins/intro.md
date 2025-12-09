@@ -45,7 +45,6 @@ You may also create mobile plugins by [wrapping an Apache Cordova plugin into a 
 | [Cloud Messaging](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) | Firebase-based plugin to give your app users a state-of-the-art notifications experience. | No |
 | [Contacts](<https://www.outsystems.com/forge/component-overview/1394/contacts-plugin>) | Access the contacts of your device. | No |
 | [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705) | Firebase-based plugin that provides realtime crash reporting to help you track, prioritize, and fix stability issues.  | No |
-| [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase) | Firebase-based plugin that lets you manage links outside of your app. | No |
 | [File](<https://www.outsystems.com/forge/component-overview/1633/file-plugin>) | Lets you manage files and folders on a mobile device within the app sandbox. | No |
 | [File Transfer](<https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin>) | Lets users upload and download files in the background. | Yes |
 | [File Viewer](<https://www.outsystems.com/forge/component-overview/1606/file-viewer-plugin>) | Lets users view remote or app resource files. | Yes |

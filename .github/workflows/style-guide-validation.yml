@@ -2,6 +2,11 @@ name: Style Guide Validation
 
 on:
   workflow_call:
+    inputs:
+      changed-files:
+        description: 'List of changed files to validate'
+        type: string
+        required: true
 
 concurrency: style-guide-validation-${{ github.ref }}
 
@@ -13,6 +18,7 @@ jobs:
     uses: OutSystems/tk-cicd/.github/workflows/style-guides-validation.yml@main
     with:
       runner-type: "ubuntu-latest"
+      changed-files: ${{ inputs.changed-files }}
     secrets:
       github-token: ${{ secrets.TOOLS_PAT }}
       copilot-token: ${{ secrets.TK_COPILOT_TOKEN }}

@@ -82,6 +82,8 @@ jobs:
     if: needs.pr-info.outputs.changed-files != ''
     uses: ./.github/workflows/style-guide-validation.yml
     secrets: inherit
+    with:
+      changed-files: ${{ needs.pr-info.outputs.changed-files }}
   
   auto-fill:
     if: github.event_name == 'pull_request'

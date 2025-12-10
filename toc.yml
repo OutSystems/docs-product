@@ -680,6 +680,7 @@
         - topics:
             - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/development-tests.md
             - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/limited-group-end-users.md
+            - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/customize-mobile-version.md            
             # Generate and Publish Your Mobile App to the Mobile App Stores
             - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/publish-app-stores.md
             - topics:

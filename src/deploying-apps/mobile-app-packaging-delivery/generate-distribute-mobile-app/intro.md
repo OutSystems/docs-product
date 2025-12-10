@@ -46,7 +46,7 @@ Don't tamper with the iOS or Android mobile builds once the platform generates t
 
 </div>
 
-## Configure and generate a mobile app package in Service Studio { #config-generate-service-studio }
+## Configure and generate a mobile app package in Service Studio {#config-generate-service-studio}
 
 To configure or generate your mobile app package (iOS or Android) in Service Studio, do the following:
 
@@ -60,7 +60,7 @@ To configure or generate your mobile app package (iOS or Android) in Service Stu
 
     ![Screenshot of the native mobile settings tab in Service Studio for configuring mobile app packages](images/native-platforms-tab-ss.png "Native app settings in Service Studio")
 
-## Configure and generate a mobile app package in Service Center { #config-generate-service-center }
+## Configure and generate a mobile app package in Service Center {#config-generate-service-center}
 
 To configure or generate your mobile app package (iOS or Android) in Service Center, do the following:
 
@@ -88,7 +88,7 @@ To configure or generate your mobile app package (iOS or Android) in Service Cen
 
 Now that you have configured the app, the next time you need to generate a new mobile app package, just click the **Generate** button.
 
-### Customizing the mobile app domain name { #customizing-the-mobile-app-domain-name }
+### Customizing the mobile app domain name {#customizing-the-mobile-app-domain-name}
 
 For some cases, you might need to change the domain name associated with your mobile app, like when you have internal security policies dictating that different mobile apps should have different associated domain names and SSL certificates.
 
@@ -106,25 +106,19 @@ To define a different domain name for your mobile app, do the following:
 
 1. **Regenerate the mobile app** for the changes to take effect.
 
-### Customizing the mobile app version code { #customizing-the-mobile-app-version-code }
+### Mobile app version code {#mobile-app-version-code}
 
-The mobile app version code is an internal number associated with the generation of the mobile app package. App stores use this number to determine whether one version is more recent than another. See more detailed information in [Android](https://developer.android.com/studio/publish/versioning) and [iOS](https://help.apple.com/app-store-connect/#/dev82a6a9d79) documentation.
+While tagging an application version in LifeTime associates a version number to an application, mobile apps also have a Version Code.
 
-By default, OutSystems **increments the version code by one** every time the MABS generates the mobile app package.
+The Version Code is an internal number, different from the app version number that users see. App stores (like the Google Play Store and Apple App Store) use it to identify and manage different versions of a mobile application. Essentially, it's an internal timestamp the store uses to determine which version is the most recent and to manage updates. See more detailed information in [Android](https://developer.android.com/studio/publish/versioning) and [iOS](https://help.apple.com/app-store-connect/#/dev82a6a9d79) documentation.
 
-For some cases, you might need to change the default mobile app version code. For example, if you are migrating an existing mobile app from another technology provider to OutSystems, the current version code of your app in the app store is higher than the first OutSystems app version code. In this case, you can set the version code of your OutSystems mobile app to a different value.
+For example, if your application has version 1.0.0 (the number users see), its Version Code might be 1001. In the next update, the version could change to 1.0.1 (or even remain 1.0.0 if it's a minor fix), but the Version Code will always be incremented, for example, to 1002. It's this number that the app store compares to determine if an update is available for a user.
 
-To set a different version code for your mobile app, do the following:
+By default, **OutSystems automatically increments the Version Code by one** every time it generates a new mobile app package (the .apk file for Android or .ipa for iOS). This ensures that each new version submitted to the app store has a unique and more recent identifier, preventing conflicts and ensuring the update process works correctly.
 
-1. In the **Distribute** tab, under the section **Native Platforms**, click the **Change** link in the **Code** column for the iOS or Android entry.
+For some cases, you might need to change the default mobile app version code. For example, if you are migrating an existing mobile app from another technology provider to OutSystems, the current version code of your app in the app store is higher than the first OutSystems app version code. In this case, you can set the version code of your OutSystems mobile app to a different value. To do this, check this article on [how to do customize the mobile app version code](customize-mobile-version.md).
 
-    ![Screenshot showing where to change the app version code for mobile apps in Service Center](images/change-versioncode-sc.png "App code version settings for mobile apps")
-
-1. Enter the new code for the mobile app and click **Apply**.
-
-The next time you generate a new app package, the version code increments by one.
-
-### Choosing the MABS version to build your mobile packages { #choose-mabs-version }
+### Choosing the MABS version to build your mobile packages {#choose-mabs-version}
 
 The [Mobile Apps Build Service (MABS)](../mobile-apps-build-service/intro.md) is a **cloud service** used by OutSystems to generate the mobile packages of your mobile apps developed in OutSystems for iOS and Android.
 
@@ -158,7 +152,7 @@ Whether you selected the option of using the latest MABS version or using a spec
 
 **To fully understand the impacts of this setting, be sure to check [Understanding MABS Versions](../mobile-apps-build-service/intro.md#understanding-mabs-versions).**
 
-## Download mobile app build logs { #download-mobile-app-build-logs }
+## Download mobile app build logs {#download-mobile-app-build-logs}
 
 You can obtain the build logs of your mobile apps in Service Center. Build logs are available for both successful and unsuccessful builds, and each platform (Android and iOS) has its own build log.
 
@@ -177,7 +171,7 @@ Users usually don't have to update the app manually after installing it, since O
 
 However, in some specific situations, the users must install a new mobile app package. For more information check [Mobile App Update Scenarios](<../mobile-app-update-scenarios.md>).
 
-## Distribute your app as PWA { #distribute-your-app-as-pwa }
+## Distribute your app as PWA {#distribute-your-app-as-pwa}
 
 You can use the settings in Service Center to configure your app as progressive web app (PWA). PWAs run from your server and don't require distribution though the app stores.
 

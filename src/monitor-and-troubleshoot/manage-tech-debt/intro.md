@@ -32,6 +32,12 @@ AI Mentor Studio (<https://aimentorstudio.outsystems.com/>) is the OutSystems te
 
 As organizations strive to expedite time-to-market and empower non-professional developers (citizen developers) to create business apps themselves, controlling technical debt naturally becomes a top concern.
 
+<div class="info" markdown="1">
+
+This content covers AI Mentor Studio for technical debt management in O11. For AI-powered app generation in ODC, see [Build apps with AI](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/build_apps_with_ai/).
+
+</div>
+
 With AI Mentor Studio, technical debt can be effectively managed at every stage of the development lifecycle so that when departmental applications evolve to become enterprise-wide solutions, nothing needs to be rewritten.
 
 For architects and development team leaders, it provides an integrated, bird’s eye view of their organization’s technical debt to identify problem areas and prioritize accordingly. Developers can view detailed reports on what best practices are being violated, their impact, and how to fix them.

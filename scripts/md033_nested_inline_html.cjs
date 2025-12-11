@@ -35,7 +35,6 @@
 //     }
 // }
 
-
 "use strict";
 
 function addErrorContext(onError, lineNumber, detail, range) {
@@ -93,13 +92,15 @@ module.exports = {
 
             const fenceMatch = fenceRe.exec(line);
             if (fenceMatch) {
-                // Toggle fenced block state
                 inFencedBlock = !inFencedBlock;
                 continue;
             }
             if (inFencedBlock) continue;
 
             const codeSpans = getCodeSpans(line);
+
+            const inMarkdownTable = /^\s*\|.*\|\s*$/.test(line);
+
             let match;
             while ((match = htmlTagRe.exec(line)) !== null) {
                 const fullTag = match[0];
@@ -126,19 +127,12 @@ module.exports = {
                     continue;
                 }
 
-                const isMarkdownTableContext =
-                    params &&
-                    params.configInlines &&
-                    params.configInlines.inMarkdownTable === true;
-
-                const allowedInMarkdownTable =
-                    isMarkdownTableContext && tableAllowedElements.includes(elementName);
+                const allowedInMarkdownTable = inMarkdownTable && tableAllowedElements.includes(elementName);
 
                 const allowedInParent =
                     currentParent && normalizedNested[currentParent] && normalizedNested[currentParent].includes(elementName);
 
-                const allowedInHTMLTable =
-                    currentParent === "table" && allowedInMarkdownTable;
+                const allowedInHTMLTable = currentParent === "table" && allowedInMarkdownTable;
 
                 if (!allowedInMarkdownTable && !allowedInParent && !allowedInHTMLTable) {
                     const detail = currentParent

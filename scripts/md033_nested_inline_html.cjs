@@ -42,9 +42,6 @@ function addErrorContext(onError, lineNumber, detail, range) {
     onError({ lineNumber, detail, range });
 }
 
-/**
- * Extract tag name and whether it's a closing tag.
- */
 function getHtmlTagInfo(text) {
     const htmlTagNameRe = /^<\s*(\/?)([a-zA-Z0-9-]+)/;
     const match = htmlTagNameRe.exec(text);
@@ -52,9 +49,6 @@ function getHtmlTagInfo(text) {
     return { close: !!match[1], name: match[2].toLowerCase() };
 }
 
-/**
- * Returns ranges of inline code spans in a line.
- */
 function getCodeSpans(line) {
     const codeSpans = [];
     const codeRe = /(`+)([\s\S]*?)(\1)/g;
@@ -65,9 +59,6 @@ function getCodeSpans(line) {
     return codeSpans;
 }
 
-/**
- * Check if a given index is inside any range.
- */
 function isInsideRanges(index, ranges) {
     return ranges.some(([start, end]) => index >= start && index < end);
 }
@@ -77,50 +68,50 @@ module.exports = {
     description: "Inline HTML with nested-element restrictions (extends MD033)",
     tags: ["html"],
     function: function MD033_INLINE_HTML(params, onError) {
-        // Normalize allowed elements
-        let allowedElements = params.config.allowed_elements;
-        allowedElements = Array.isArray(allowedElements)
-            ? allowedElements.map((e) => e.toLowerCase())
+        let allowedElements = Array.isArray(params.config.allowed_elements)
+            ? params.config.allowed_elements.map(e => e.toLowerCase())
             : [];
-
-        // Normalize markdown-table-specific allowed elements
-        let tableAllowedElements = params.config.table_allowed_elements;
-        tableAllowedElements = Array.isArray(tableAllowedElements)
-            ? tableAllowedElements.map((e) => e.toLowerCase())
+        let tableAllowedElements = Array.isArray(params.config.table_allowed_elements)
+            ? params.config.table_allowed_elements.map(e => e.toLowerCase())
             : [];
-
-        // Normalize nested allowed mapping
-        const allowedNestedElements = params.config.nested_allowed_elements || {};
         const normalizedNested = {};
-        for (const [parent, children] of Object.entries(allowedNestedElements)) {
-            normalizedNested[parent.toLowerCase()] = (children || []).map((c) =>
-                c.toLowerCase()
-            );
+        for (const [parent, children] of Object.entries(params.config.nested_allowed_elements || {})) {
+            normalizedNested[parent.toLowerCase()] = (children || []).map(c => c.toLowerCase());
         }
 
         const lines = params.lines;
         const tagStack = [];
         const htmlTagRe = /<\s*\/?\s*([a-zA-Z0-9-]+)[^>]*>/g;
 
+        // Track fenced code blocks (``` or ~~~)
+        let inFencedBlock = false;
+        const fenceRe = /^(\s*)(`{3,}|~{3,})(.*)$/;
+
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i];
             const lineNumber = i + 1;
+
+            const fenceMatch = fenceRe.exec(line);
+            if (fenceMatch) {
+                // Toggle fenced block state
+                inFencedBlock = !inFencedBlock;
+                continue;
+            }
+            if (inFencedBlock) continue;
+
             const codeSpans = getCodeSpans(line);
             let match;
-
             while ((match = htmlTagRe.exec(line)) !== null) {
                 const fullTag = match[0];
                 const tagIndex = match.index;
 
-                // Skip HTML-like tags inside inline code spans
                 if (isInsideRanges(tagIndex, codeSpans)) continue;
 
                 const info = getHtmlTagInfo(fullTag);
                 if (!info) continue;
                 const { name: elementName, close } = info;
 
-                const currentParent =
-                    tagStack.length > 0 ? tagStack[tagStack.length - 1] : null;
+                const currentParent = tagStack.length > 0 ? tagStack[tagStack.length - 1] : null;
 
                 // Pop closing tags
                 if (close) {
@@ -129,31 +120,23 @@ module.exports = {
                     continue;
                 }
 
-                // If globally allowed, skip all deeper checks
                 const isGloballyAllowed = allowedElements.includes(elementName);
                 if (isGloballyAllowed) {
                     if (!/\/>$/.test(fullTag)) tagStack.push(elementName);
                     continue;
                 }
 
-                // Determine if we're in a Markdown table context (not HTML <table>)
                 const isMarkdownTableContext =
                     params &&
                     params.configInlines &&
                     params.configInlines.inMarkdownTable === true;
 
-                // Check if this element is allowed in a Markdown table context
                 const allowedInMarkdownTable =
-                    isMarkdownTableContext &&
-                    tableAllowedElements.includes(elementName);
+                    isMarkdownTableContext && tableAllowedElements.includes(elementName);
 
-                // Check if allowed inside its parent by nested rules
                 const allowedInParent =
-                    currentParent &&
-                    normalizedNested[currentParent] &&
-                    normalizedNested[currentParent].includes(elementName);
+                    currentParent && normalizedNested[currentParent] && normalizedNested[currentParent].includes(elementName);
 
-                // In HTML tables, only nested_allowed_elements rules apply (not table_allowed_elements)
                 const allowedInHTMLTable =
                     currentParent === "table" && allowedInMarkdownTable;
 
@@ -165,10 +148,7 @@ module.exports = {
                     addErrorContext(onError, lineNumber, detail, range);
                 }
 
-                // Push non-self-closing tags
-                if (!/\/>$/.test(fullTag)) {
-                    tagStack.push(elementName);
-                }
+                if (!/\/>$/.test(fullTag)) tagStack.push(elementName);
             }
         }
     },

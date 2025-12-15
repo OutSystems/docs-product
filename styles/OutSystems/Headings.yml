@@ -154,14 +154,21 @@ exceptions:
   - UI
   - SAST
 # Country
-  - API
-  - IP
-  - FAQ
-  - TLS
-  - AI
-  - DNS
-  - TLS
-  - UI
-  - SAST
+  - US East (North Virginia)
+  - Canada (Central)
+  - South America (São Paulo)
+  - Europe (London)
+  - Europe (Ireland)
+  - Europe (Frankfurt)
+  - South Africa (Cape Town)
+  - Middle East (Tel Aviv)
+  - Middle East (UAE)
+  - Asia Pacific (Mumbai)
+  - Asia Pacific (Singapore)
+  - Asia Pacific (Seoul)
+  - Asia Pacific (Tokyo)
+  - Asia Pacific (Hong Kong)
+  - Asia Pacific (Sydney)
+  - Asia Pacific (Jakarta)
 
   

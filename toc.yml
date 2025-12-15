@@ -671,10 +671,12 @@
             - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/modify-the-app-icon.md
             - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
             - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/use-custom-splash-screens.md
+            - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/customize-edge-to-edge.md
             - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/customize-the-application-status-bar.md
             - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/customize-errors-screen.md
             - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/configure-accessible-domains.md
             - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/customize-deeplink-behavior.md
+            
             - href: deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/extensibility-configurations-json-schema.md
         - href: deploying-apps/mobile-app-packaging-delivery/generate-distribute-mobile-app/intro.md
         - topics:

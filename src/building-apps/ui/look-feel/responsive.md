@@ -28,7 +28,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 On the OutSystems UI, everything is responsive — themes, layouts, and patterns. By default, OutSystems provides a set of adaptive and responsive behaviors that allow developers to easily create applications to work with all browsers, devices, and resolutions.
 
-## Device Detection
+## Device detection
 
 To have a multiexperience on reactive and native mobile applications, OutSystems has a built-in device detection mechanism that identifies the device type (desktop, tablet, or phone) and screen size and correctly displays layouts and UI patterns accordingly.
 
@@ -70,7 +70,7 @@ To improve the experience and the responsive behavior of your application, the O
 * Using the reactive layouts, the buttons and containers are full width on phones
     * In order to keep good readability for all applications on small devices, OutSystems apply this rule so that all containers are full width and the content is broken up on the screen. If you want to override this behavior, add the CSS class **.no-responsive** to each element.
 
-## OutSystems UI Layouts
+## OutSystems UI layouts
 
 Depending on screen size and resolution, OutSystems UI captures device type (desktop, tablet, or phone) and adapts the content to the screen. To learn more about app templates, see [OutSystems UI Framework App Templates](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/AppTemplates).
 
@@ -98,13 +98,13 @@ For Native Mobile applications, OutSystems UI provides a layout to use on a tabl
 
 **Note:** On the phone, the layout always has the overlay behavior applied because of the available space on smaller screens, even when the **Expandable** or **Visible** behavior is enabled.
 
-## Adaptive Patterns
+## Adaptive patterns
 
 Every app is different. The way your app adapts to a specific device is, therefore, unique. To address this, OutSystems UI offers a set of [adaptive patterns](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/PatternsOverview). These patterns give you full control of how your application will look on different screen sizes, allowing for different settings for phones and tablets.
 
 **Available adaptive patterns:** _Columns2, Columns3, Columns4, Columns5, Columns6, ColumnsMediumLeft, ColumnsMediumRight, ColumnsSmallLeft, ColumnsSmallRight, DisplayOnDevice, Gallery, and MasterDetail._
 
-## Adaptive Actions
+## Adaptive actions
 
 All patterns on OutSystems UI can adapt the UI to the device, using only CSS. However, if your use case has specific scenarios to show or hide content, navigate to another page, or even run client actions, you need a little extra to run different logic according to the device.
 
@@ -116,7 +116,7 @@ OutSystems UI provides a set of client-side actions that allow developers to dec
 
 **Available client-side actions:** _GetBrowser, GetDeviceOrientation, GetDeviceType, GetIsTouch, GetOS, IsDesktop, IsTablet, IsPhone, IsWebApp, IsRunningAsPWA, IsLayoutNative, and SetDeviceBreakpoints._
 
-## Columns Responsive Behavior
+## Columns responsive behavior
 
 OutSytems UI provides a set of structure patterns that allow dividing content in columns that follow the underlying grid. The structure patterns are blocks with specific responsive parameters, which allow the developer to configure how they react on each mobile device.
 
@@ -186,34 +186,6 @@ To override these breakpoints, there is the  **SetDeviceBreakpoints client actio
 
 **Note:** When opening on an iPad Pro (or similar tablet devices) in landscape, it is treated as a desktop.
 
-## Notch support
+## Safe area inset support
 
-Recently, the inclusion of notch displays has become dominant on mobile devices, especially on iOS devices. This means applications must react to each display, repositioning its content based on the available notch area.
-
-The safe areas are automatically applied to OutSystems UI layouts and patterns, with full support to notch, adapting the content on your application. If you want to create your own custom content, you can use the CSS variables provided by the OutSystems UI theme:
-
-### iOS devices
-
-```
-/* iOS Safe Areas (Notch Support) */
-var(--os-safe-area-top);
-var(--os-safe-area-right);
-var(--os-safe-area-bottom);
-var(--os-safe-area-left);
-```
-
-### Android devices
-
-```
-/* Android top Safe Area (Notch Support) */
-var(--status-bar-height);
-```
-
-**Example:**
-
-```
-.your-class {
-    margin-top: calc(var(--space-base) + var
-(--os-safe-area-top));
-}
-```
+OutSystems injects CSS variables to handle safe areas on all devices. These variables ensure that your app content doesn't overlap with system UI elements, such as the status bar or home indicator. For detailed information, refer to [Safe area inset support](../../../deploying-apps/mobile-app-packaging-delivery/customize-mobile-app/customize-edge-to-edge.md#safe-area-inset-support-safe-area-inset-support)

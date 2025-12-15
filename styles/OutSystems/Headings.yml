@@ -21,6 +21,8 @@ exceptions:
   - O11
   - ODC
   - OutSystems
+  - OutSystems Cloud
+  - Personal Edition
   - Portal
   - Workflow Builder
   - AI Mentor Studio
@@ -123,6 +125,7 @@ exceptions:
   - Chrome
   - Code
   - Docker
+  - DOM
   - Excel
   - Git
   - Google Play
@@ -137,6 +140,8 @@ exceptions:
   - Windows
   - Visual Studio
   - SAP
+  - Cross-site Scripting
+  - XSS
 # Industry
   - API
   - IP
@@ -147,3 +152,4 @@ exceptions:
   - TLS
   - UI
   - SAST
+  

@@ -147,6 +147,7 @@ exceptions:
   - Cross-site Scripting
   - XSS
   - shred.bundle.js
+  - CSV
 # Industry
   - API
   - IP

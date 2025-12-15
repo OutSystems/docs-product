@@ -22,6 +22,7 @@ exceptions:
   - ODC
   - OutSystems
   - OutSystems Cloud
+  - OutSystems Developer Cloud
   - Personal Edition
   - Portal
   - Workflow Builder
@@ -119,6 +120,8 @@ exceptions:
   - Amazon Kendra
   - Android
   - Apple Developer
+  - AWS Firehose
+  - JSON
   - Azure
   - Cascading Style Sheets
   - CSS
@@ -129,6 +132,7 @@ exceptions:
   - Excel
   - Git
   - Google Play
+  - HIPPA
   - iOS
   - Integrated Authentication
   - Kubernetes

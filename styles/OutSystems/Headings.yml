@@ -153,4 +153,15 @@ exceptions:
   - TLS
   - UI
   - SAST
+# Country
+  - API
+  - IP
+  - FAQ
+  - TLS
+  - AI
+  - DNS
+  - TLS
+  - UI
+  - SAST
+
   

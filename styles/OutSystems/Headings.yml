@@ -3,7 +3,7 @@
 # Previous link: https://docs.microsoft.com/en-us/style-guide/capitalization
 extends: capitalization
 message: "'%s' should use sentence-style capitalization."
-level: warning
+level: error
 scope: heading
 match: $sentence
 indicators:

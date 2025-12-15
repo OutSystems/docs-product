@@ -4,7 +4,7 @@
 extends: substitution
 message: "Use '%s' instead of '%s'."
 ignorecase: true
-level: warning
+level: error
 action:
   name: replace
 swap:

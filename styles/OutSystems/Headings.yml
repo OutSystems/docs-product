@@ -142,6 +142,7 @@ exceptions:
   - SAP
   - Cross-site Scripting
   - XSS
+  - shred.bundle.js
 # Industry
   - API
   - IP

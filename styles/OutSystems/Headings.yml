@@ -31,6 +31,14 @@ exceptions:
   - MABS
   - Mobile Apps Builder Service
   - UsersIdP
+  - Build Operations
+  - Build Operations API
+  - Dependency Management
+  - Dependency Management API
+  - Asset Repository
+  - Asset Repository API
+  - Asset Configurations
+  - Asset Configurations API
 # Concepts
   - Action
   - Activity
@@ -150,6 +158,7 @@ exceptions:
   - CSV
 # Industry
   - API
+  - APIs
   - IP
   - FAQ
   - TLS
@@ -158,6 +167,7 @@ exceptions:
   - TLS
   - UI
   - SAST
+  - REST
 # Country
   - US East
   - North Virginia

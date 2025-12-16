@@ -45,9 +45,9 @@ OutSystems is continuously improving modules preparation. Thus, depending on the
 
 * **From Platform Server 11.17.0 or later**: Progressive modules preparation is available for all customers with an improved UI.
 
-## Progressive modules preparation { #key-improvements }
+## Progressive modules preparation {#key-improvements}
 
-Having the progressive modules preparation enabled, after upgrading your OutSystems environment, the Platform Server uses an improved algorithm to perform the preparation of small groups of modules. This approach introduces the following key improvements:
+With progressive modules preparation, after upgrading your OutSystems environment, the Platform Server uses an improved algorithm to perform the preparation of small groups of modules. This approach introduces the following key improvements:
 
 * **Overall performance improvement**: The global step of preparing all the environment's modules was optimized. The average preparation time per module is now lower.
 
@@ -80,7 +80,7 @@ During the preparation step, if you go to the detail screen of a module that has
 
 ![Screenshot of the Service Center detailing the status of a module during preparation](images/module-preparation-detail-screen-sc.png "Service Center Module Preparation Detail Screen")
 
-### Checking the progress of the modules preparation { #progress }
+### Checking the progress of the modules preparation {#progress}
 
 <div class="info" markdown="1">
 
@@ -134,13 +134,13 @@ After the modules preparation finishes, you can access the upgrades report by cl
 
 ![Screenshot of the Service Center showing the upgrades report after successful module preparation](images/module-preparation-upgrades-success-sc.png "Service Center Upgrades Success Report")
 
-If error occurs during the modules preparation, you can relaunch the preparation step by clicking the **Prepare** button. Subsequent executions of modules preparation will only apply to the modules that failed the preparation during the previous run.
+If error occurs during the modules preparation, you can relaunch the preparation step by clicking the **Prepare** button. Subsequent executions of modules preparation only apply to the modules that failed the preparation during the previous run.
 
 ![Screenshot showing an error during module preparation in the Service Center](images/module-preparation-upgrades-error-sc.png "Service Center Module Preparation Error")
 
 If the error persist, [see here](upgrade-platform-errors.md) how to proceed.
 
-## Modules preparation with Platform Server 11.16.1 or earlier { #preparation-11-16-1 }
+## Modules preparation with Platform Server 11.16.1 or earlier {#preparation-11-16-1}
 
 If you are upgrading to **Platform Server 11.16.1 or earlier**, you can see the details of the modules preparation by clicking the **Click here for more details** link on the blue banner, or the link **More details** on the sidebar, in Service Center.
 
@@ -162,7 +162,7 @@ If the new progressive modules preparation hasn’t been enabled in your environ
 
 After the modules preparation finishes, you can access the latest preparation report going to the Service Center's screen `https://<your_environment>/ServiceCenter/PrepareModules.aspx`.
 
-## Known issues with Modules Preparation { #known-issues }
+## Known issues with Modules Preparation {#known-issues}
 
 If you are directly upgrading from Platform Server 11.10.0 or earlier to a version that includes the Flexible Upgrades feature (from version 11.12.0 onwards), we recommend that you publish all your applications instead.
 

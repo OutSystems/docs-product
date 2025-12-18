@@ -62,12 +62,12 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
 
 ## Properties
 
-| **Property**                   | **Description** |
-| -------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Title (Text): Optional         | Image title that is displayed when previewing the image in full screen mode.<br/><br/>Examples<br/><br/><ul><li>"Image 1" - Displays Image 1 as the image title.</li></ul> |
-| Group (Text): Optional         | Name of the group of images. Similar to the concept of a picture album, images in the same group are displayed in a gallery. You can navigate through pictures with the same group name when viewing them in full screen mode.<br/><br/>Examples<br/><br/><ul><li>Gallery 1 - Adds this image to the Gallery 1 group.</li></ul> |
-| ImageURL (Text): Optional      | URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode. |
-| ImageZoom (Decimal): Optional  | Defines the size of the image that opens in full screen mode (based on the thumbnail size).<br/>To avoid rendering problems, try to use images with the same ratio.<br/><br/>Examples<br/><br/><ul><li>2 - A thumbnail with 100x100, and zoom 2 opens with 200x200.</li><li>0.5 - A thumbnail with 500x500, and zoom 0.5 opens with 250x250.</li></ul> |
+| **Property** | **Description** |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Title (Text): Optional | Image title that is displayed when previewing the image in full screen mode.<br/><br/>Examples<br/><br/><ul><li>"Image 1" - Displays Image 1 as the image title.</li></ul> |
+| Group (Text): Optional | Name of the group of images. Similar to the concept of a picture album, images in the same group are displayed in a gallery. You can navigate through pictures with the same group name when viewing them in full screen mode.<br/><br/>Examples<br/><br/><ul><li>Gallery 1 - Adds this image to the Gallery 1 group.</li></ul> |
+| ImageURL (Text): Optional | URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode. |
+| ImageZoom (Decimal): Optional | Defines the size of the image that opens in full screen mode (based on the thumbnail size).<br/>To avoid rendering problems, try to use images with the same ratio.<br/><br/>Examples<br/><br/><ul><li>2 - A thumbnail with 100x100, and zoom 2 opens with 200x200.</li><li>0.5 - A thumbnail with 500x500, and zoom 0.5 opens with 250x250.</li></ul> |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>To disable the URL feature, you must use the "disable-url" class on this parameter.<br/><br/>Examples<br/><br/><ul><li>Blank - No custom styles are added (default value). </li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Compatibility with other patterns
@@ -79,3 +79,15 @@ The Lightbox Image UI pattern can be used only with images.
 Watch how the [Product Overview sample](https://silkui.outsystems.com/Samples_Mobile.aspx#Mobile_Details-Samples_ProductOverview) uses the Lightbox Image UI Pattern:
 
 <iframe src="https://player.vimeo.com/video/977630859" width="372" height="666" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video exhibiting an application using the Lightbox Image UI Pattern.</iframe>
+
+## Accessibility – WCAG 2.2 AA compliance
+
+By default, the **Lightbox Image** UI Pattern presents several accessibility issues that can affect users of assistive technologies and automated testing tools. These issues are mainly related to the way the Lightbox dialog and its images are created and managed in the DOM.
+
+The main known issues are:
+
+* The lightbox container is rendered with `role="dialog"` but doesn't always expose an accessible name (`aria-label`, `aria-labelledby`, or `title`), which can fail rules such as “ARIA dialog and alertdialog nodes should have an accessible name” and impact WCAG 2.2 success criteria related to name, role, and value.  
+* The images displayed inside the lightbox are cloned versions of the original thumbnails. These cloned images don't inherit text alternatives (`alt`, `aria-label`, or `title`), which can lead to failures of non-text content requirements.  
+* When the dialog is closed (for example, after pressing **Esc**), focus isn't reliably returned to the element that opened the lightbox. This behavior can make keyboard navigation confusing and doesn't meet expectations for accessible focus management.
+
+These limitations are a consequence of the current implementation of the lightbox script and aren't trivial to address with a small configuration change. This section will be updated with concrete guidance once that enhanced implementation is ready.

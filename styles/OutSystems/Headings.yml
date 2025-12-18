@@ -95,6 +95,7 @@ exceptions:
   - Traditional
   - Variable
   - Web
+  - WCAG 2.2 AA
 # Events
   - On Initialize
   - On Ready

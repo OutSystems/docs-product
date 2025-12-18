@@ -157,6 +157,7 @@ exceptions:
   - XSS
   - shred.bundle.js
   - CSV
+  - Firebase Cloud Messaging
 # Industry
   - API
   - APIs

@@ -101,6 +101,7 @@ exceptions:
   - SendNotificationToUsers
   - SendSilentNotificationToTopics
   - SendSilentNotificationToUsers
+  - Create/Upgrade
 # Events
   - On Initialize
   - On Ready
@@ -164,6 +165,7 @@ exceptions:
   - CSV
   - Firebase Cloud Messaging
   - Firebase Performance
+  - Platform Tab in Oracle
 # Industry
   - API
   - APIs

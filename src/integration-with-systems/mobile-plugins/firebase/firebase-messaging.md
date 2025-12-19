@@ -87,7 +87,7 @@ The following steps show how to create a back-end notification service and how t
 
 1. [Extend to your use case: authenticate your notification requests to FCM HTTP v1 REST API](#custom-notification-requests).
 
-## Set up a back-end notification service { #set-back-end }
+## Set up a back-end notification service {#set-back-end}
 
 To set up a back-end notification service, follow these steps:
 
@@ -97,15 +97,13 @@ To set up a back-end notification service, follow these steps:
 
 1. Create a new app to serve as your backend notification service.
 
-   This app can be a Reactive Web or Mobile app.
-
 1. In the new back-end app, create a module.
 
-1. In the newly created module, consume the **Firebase Cloud Messaging Plugin** and add the Server Actions, along with its associated Static Entities.
+1. In the newly created module, consume the **Firebase Cloud Messaging Plugin**. Add the Server Actions along with its associated Static Entities.
 
     ![Screenshot showing how to import the Server Actions and associated Static Entities.](images/fcm-server-actions-import-ss.png "Firebase Messaging Cloud Plugin Server Actions Import")
 
-1. Create the logic to store and access your Firebase Service Account File in the app you just created.
+1. Create the logic to store and access your Firebase Service Account File in the app you just created. Follow these steps:
 
     1. To access your Firebase Service Account File, go to **Firebase Console** > **Settings** > **Service Accounts** > **Generate new private key**.
 
@@ -113,11 +111,9 @@ To set up a back-end notification service, follow these steps:
 
        ![Screenshot showing how to access the Firebase Service Account File.](images/firebase-service-account-generation.png "Firebase Service Account File access")
 
-        **Note**: In addition to encrypting the Firebase Service Account File, the binary data associated with the Firebase Service Account File is required to use the Plugin’s Server Actions for notification triggering. This means that there should be a simple way to fetch this information in the app. One way to achieve this is to associate it with the Firebase Project Identifier by, for example, keeping this mapping stored in a database table.
+        **Note**: In addition to encrypting the Firebase Service Account File, the binary data associated with the Firebase Service Account File is required to use the Plugin's Server Actions for notification triggering. This means that you need a simple way to fetch this information in the app. One way to achieve this is to associate it with the Firebase Project Identifier. For example, keep this mapping stored in a database table.
 
-Now you can start to create the UI for your back-end notification service. For example, to send a notification to a user on the associated Firebase project (using an app with the Cloud Messaging plugin), associate the **SendNotificationToUsers** Server Action to a button and add logic to retrieve your Service Account file.
-
-If you want to send the notification to specific users, note that these are identified by their Firebase Token, that can be obtained with the **GetToken** client action. You can find this ID on the Firebase Project Settings under the Cloud Messaging tab.
+Now you can start to create the UI for your back-end notification service. If you want to send the notification to specific users, note that these are identified by their Firebase Token, which you can obtain with the **GetToken** client action.
 
 To send a notification to all users, or to all Android or iOS users, you need to fill the **SenderID** structure attribute of the **SendRequest** parameter. You can find this ID on the Firebase Project Settings under the Cloud Messaging tab.
 
@@ -127,15 +123,15 @@ Moreover, to send a notification specifically to all Android or iOS users, you s
 
 Other available methods include **SendNotificationToTopics**, **SendSilentNotificationToUsers**, and **SendSilentNotificationToTopics**.
 
-For silent notifications (**SendSilentNotificationToUsers** and **SendSilentNotificationToTopics**), the **TimeToLive** structure attribute sets the notifications' expiration time. More specifically, if the **TimeValue** for a specific **TimeUnit** is greater than 0, the message will persist in the local storage and be delivered at the first opportunity, until the expiration time has passed.
+For silent notifications (**SendSilentNotificationToUsers** and **SendSilentNotificationToTopics**), the **TimeToLive** structure attribute sets the notifications' expiration time. More specifically, if the **TimeValue** for a specific **TimeUnit** is greater than 0, the message persists in the local storage and is delivered at the first opportunity, until the expiration time has passed.
 
-For topic notifications (**SendNotificationToTopics**, **SendSilentNotificationToTopics**), set the topics for which a notification will be delivered to in the **SendToTopics** structure attribute.
+For topic notifications (**SendNotificationToTopics**, **SendSilentNotificationToTopics**), set the topics to which a notification is delivered in the **SendToTopics** structure attribute.
 
-## Enable basic notification functions in your app { #enable-notifications }
+## Enable basic notification functions in your app {#enable-notifications}
 
 This section describes some of the actions that you can use to leverage notification functions on your mobile app.
 
-On first use, you might want to register your users to receive notifications. For that, you can use the **RegisterDevice** action when your app opens. For example, if the user isn’t already registered, you can call the **RegisterDevice** action on the **OnReady** event of the app’s home screen. On first use, this action displays a native permission request and, upon user acceptance, the device is registered on the Firebase Cloud Messaging service, ready to receive notifications.
+On first use, you might want to register your users to receive notifications. You can use the **RegisterDevice** action when your app opens. For example, if the user isn’t already registered, you can call the **RegisterDevice** action on the **OnReady** event of the app’s home screen. On first use, this action displays a native permission request and, upon user acceptance, the device is registered on the Firebase Cloud Messaging service, ready to receive notifications.
 
 Alternatively, you can provide an explicit way to register and unregister the device from the Firebase Cloud Messaging service using the **RegisterDevice** / **UnregisterDevice** actions. Then associate the actions to a UI element such as a toggle.
 
@@ -149,7 +145,7 @@ To manage topic subscriptions, you can use the **Subscribe / Unsubscribe** actio
 
 ![Screenshot displaying the logic for adding a topic in Firebase Messaging](images/firebase-messaging-logic-add-topic-ss.png "Firebase Messaging Add Topic Logic")
 
-To retrieve all pending silent notifications, you can use the **GetPendingNotification** action. This action outputs a silent notifications list with Timestamp, MessageID, TimeToLive, and an ExtraData list of key-value pairs. Silent notifications are notifications that have no UI representation in the form of a visual or auditory stimulus in the app. Despite being silent, these notifications can deliver a data package to the app (called extra data), in the form of a list of key-value pairs.
+To retrieve all pending silent notifications, you can use the **GetPendingNotification** action. This action outputs a silent notifications list with Timestamp, MessageID, TimeToLive, and an ExtraData list of key-value pairs. Silent notifications are notifications that have no UI representation in the form of a visual or auditory stimulus in the app. Despite being silent, these notifications can deliver a data package to the app (called extra data) in the form of a list of key-value pairs.
 
 <div class="info" markdown="1">
 
@@ -175,7 +171,7 @@ Finally, you might want to give the opportunity to your user to clear all the ap
 
 ![Screenshot of the action to clear all notifications in Firebase Messaging](images/firebase-messaging-clear-notifications-ss.png "Firebase Messaging Clear Notifications")
 
-## Enable notifications with custom actions { #custom-actions }
+## Enable notifications with custom actions {#custom-actions}
 
 To enhance your notification with custom actions you must use the **Plugin's Server Actions**, using the **ActionList** parameter inside the Notification parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** methods.
 
@@ -191,7 +187,7 @@ We have 3 types of custom actions:
 
 1. **Reply field** - Opens a text field that allows the user to send a text directly to the app.
 
-## Enable notifications with custom sound { #custom-sounds }
+## Enable notifications with custom sound {#custom-sounds}
 
 To enhance your notification with custom sounds, you must put the .wav files you want to use as notification sounds into a .zip file called **sounds.zip**. Then, upload the .zip file to the app’s Resources folder. Additionally, you must use the **Plugin's Server Actions**, using the **Sound** parameter inside the **Notification** parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** methods.
 
@@ -252,7 +248,7 @@ To setup a custom icon and custom icon color for Android notifications, you foll
     }
 ```
 
-1. In your push notification request, either via the plugin's `SendNotificationToUsers` or `SendNotificationToTopic` Server Actions, specify the custom icon and color.
+1. In your push notification request, either via the plugin's `SendNotificationToUsers` or `SendNotificationToTopic` Server Actions, specify the custom icon and color in the **Android** attribute.
 
     ![Screenshot showing Android notification configuration](images/fcm-custom-android-notification-ss.png "Custom Android Icon and Color Configuration")
 
@@ -263,7 +259,7 @@ To setup a custom icon and custom icon color for Android notifications, you foll
 
 </div>
 
-## Manage the experience of in-app notifications { #notification-ux }
+## Manage the experience of in-app notifications {#notification-ux}
 
 A Cloud Messaging notification is by default presented in the notification center, however the developer might want to handle the notification content in-app when the app is on foreground. To enable this you can use the **NotificationsHandler** block. This block triggers events that pass the parameters of both notifications and silent notifications to the context of the app.
 
@@ -271,7 +267,7 @@ You need to add this block to each screen that might handle the notification con
 
 Optionally, you can use the **NotificationDialog** block, which provides a notification dialog UI inside the app.
 
-## Manage the experience of custom actions using the Notifications block. { #custom-actions-ux }
+## Manage the experience of custom actions using the Notifications block. {#custom-actions-ux}
 
 A Cloud Messaging notification is by default presented in the notification center, however the developer might want to handle the notification content in-app when the app is on foreground. To enable this you can use the **NotificationsHandler** block, using **InternalRouteActionClicked** for custom actions. This block triggers events that pass the parameters of both notifications and silent notifications to the context of the app.
 
@@ -281,7 +277,7 @@ You need to add this block to each screen that might handle the notification con
 
 When the end-user clicks on a notification in the notification center, the app opens by default. If you want your app to handle the notification click, you can use the **NotificationsHandler** block and define a handler for the **NotificationClicked** event.
 
-If you want to navigate to a screen inside your app when the end-user clicks on a notification, you can use the **BuildInternalDeepLink** client action from the plugin. You should pass the name of the destination screen to the **Notification > DeepLink** attribute of the **SendRequest** parameter of the server action you called to deliver the notification (**SendNotificationToUsers** or **SendNotificationToTopics**). If you want the **BuildInternalDeepLink** action to build a deep link with query parameters, you should set the **key-value** pairs using the **ExtraDataList** attribute.
+If you want to navigate to a screen inside your app when the end-user clicks on a notification, you can use the **BuildInternalDeepLink** client action from the plugin. You should pass the name of the destination screen to the **Notification > DeepLink** attribute of the **SendRequest** parameter of the server action you called to send the notification (**SendNotificationToUsers** or **SendNotificationToTopics**). If you want the **BuildInternalDeepLink** action to build a deep link with query parameters, you should set the **key-value** pairs using the **ExtraDataList** attribute.
 
 Our Sample App has this scenario implemented. If you want your app to do something else when the end-user clicks on a notification, simply implement your logic in the handler you create for the **NotificationClicked** event.
 
@@ -291,7 +287,7 @@ When sending a notification with a deep link, you should avoid using the followi
 
 </div>
 
-## Optional setup for notification Channel Name and Description - Android only
+## Optional setup for notification channel name and description - Android only
 
 By default the Cloud Messaging plugin defines values for the notification channel name and description on local notifications. But in some instances the developer might want to define a different default value. You can do this by adding the following properties on the extensibility configurations of your app:
 
@@ -312,7 +308,7 @@ By default the Cloud Messaging plugin defines values for the notification channe
 }
 ```
 
-The following image illustrates how the notification channel's name and description will appear in the user device:
+The following image illustrates how the notification channel's name and description appears in the user device:
 
 ![Screenshot of notification channel name and description](images/fcm-notification-channel.png "Notification Channel")
 
@@ -329,13 +325,13 @@ Starting on version 4.3.0, the plugin offers a way to enable an app's message de
 * `DeliveryMetricsExportToBigQueryEnabled`: Determines whether Firebase Cloud Messaging exports message delivery metrics to BigQuery.
 * `SetDeliveryMetricsExportToBigQuery`: Enables or disables Firebase Cloud Messaging message delivery metrics export to BigQuery.
 
-To have a better idea of what BigQuery is and how to enable it within the Firebase Console, please refer to the [official documentation](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#bigquery-data-export).
+To have a better idea of what BigQuery is and how to enable it within the Firebase Console, refer to the [official documentation](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=ios#bigquery-data-export).
 
-The feature is disabled by default. To enable it, `SetDeliveryMetricsExportToBigQuery` needs to be called with its `Enable` input parameter set to `true`.
+The feature is disabled by default. To enable it, call `SetDeliveryMetricsExportToBigQuery` with its `Enable` input parameter set to `true`.
 
 ## Authenticate push notification requests to FCM HTTP v1 API {#custom-notification-requests}
 
-Firebase Cloud Messaging offers a variety of uses cases with their HTTP v1 API which are not covered by the Cloud Messaging Plugin's Server Actions, and as they can be very use-case specific, these Server Actions won't ever fully cover 100% of the HTTP v1 API.
+Firebase Cloud Messaging offers a variety of uses cases with their HTTP v1 API. These are not covered by the Cloud Messaging Plugin's Server Actions, as they can be very use-case specific. As such, our Server Actions don't fully cover 100% of the HTTP v1 API.
 
 Nevertheless, starting from version `4.4.0` of the plugin, it's possible to use the token generated with the `GetAccessToken` Server Action to authenticate requests for Firebase's HTTP v1 API.
 
@@ -356,8 +352,8 @@ As explained in the following [page](https://firebase.google.com/docs/cloud-mess
 
 Sends a notification to all users associated with a topic or group of topics.
 
-|Parameter| Type | Data Type | Description |
-|:--------|:--------|:----------|:------------|
+| Parameter | Type | Data Type | Description |
+| :-------- | :-------- | :---------- | :------------ |
 | SendRequest | Input | SendToTopics Data Structure | The notification to topics request. |
 | Response | Output | FirebaseResponse Data Structure | The Response sent by Firebase. |
 
@@ -365,8 +361,8 @@ Sends a notification to all users associated with a topic or group of topics.
 
 Sends a notification to a user or group of users.
 
-| Parameter| Type | Data Type | Description |
-|:--------|:--------|:----------|:------------|
+| Parameter | Type | Data Type | Description |
+| :-------- | :-------- | :---------- | :------------ |
 | SendRequest | Input | SendToUsers Data Structure | The notification to users request. |
 | Response | Output | FirebaseResponse Data Structure | The Response sent by Firebase. |
 
@@ -374,8 +370,8 @@ Sends a notification to a user or group of users.
 
 Sends a silent notification to all users associated with a topic or group of topics.
 
-|Parameter| Type | Data Type | Description |
-|:--------|:--------|:----------|:------------|
+| Parameter | Type | Data Type | Description |
+| :-------- | :-------- | :---------- | :------------ |
 | SendRequest | Input | SilentTopicNotification Data Structure | The silent notification to topic request. |
 | Response | Output | FirebaseResponse Data Structure | The Response sent by Firebase. |
 
@@ -383,33 +379,33 @@ Sends a silent notification to all users associated with a topic or group of top
 
 SendSilentNotificationToUsersSends a silent notification to a user or group of users.
 
-|Parameter| Type | Data Type | Description |
-|:--------|:--------|:----------|:------------|
+| Parameter | Type | Data Type | Description |
+| :-------- | :-------- | :---------- | :------------ |
 | SendRequest | Input | SilentUserNotification Data Structure | The silent notification to users request. |
 | Response | Output | FirebaseResponse Data Structure | The Response sent by Firebase. |
 
 ## Limitations
 
-### On Silent Notifications
+### On silent notifications
 
 For iOS.
 
-With a device in low battery state, the silent notification will not be processed by the app.
+With a device in low battery state, the silent notification is not processed by the app.
 
 For more information see: Apple documentation
 
-### On Subscribe to Topic
+### On subscribe to topic
 
 For both iOS and Android.
 
 Firebase SDKs for Android and iOS do not support subscribing to topics for which the name contains spaces, like `TV Shows`.
 
-### On Transitive Dependencies
+### On transitive dependencies
 
-Starting on version 4.0.0 of the plugin, builds of your app can fail if:
+Starting on version 4.0.0 of the plugin, builds of your app can fail in the following scenarios:
 
-1. it contains a dependency to another app, mobile or web, that includes an asset from the Firebase Cloud Messaging plugin
-1. the app doesn't include the necessary configuration files for Firebase plugins (e.g. google-services.json).
+1. The app contains a dependency to another app, mobile or web, that includes an asset from the Firebase Cloud Messaging plugin.
+1. The app doesn't include the necessary configuration files for Firebase plugins (e.g. google-services.json).
 
 ### On Changes in Android 15
 
@@ -419,7 +415,7 @@ It is not possible to detect if an app is installed in the private space. Theref
 
 For more information about the behavior changes of your app related to the private space, refer to [Android documentation](https://developer.android.com/about/versions/15/behavior-changes-all#private-space-changes).
 
-## On Compatibility with Firebase Performance
+## On compatibility with Firebase Performance
 
 For both iOS and Android.
 

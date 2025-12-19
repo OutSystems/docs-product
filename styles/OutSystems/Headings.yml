@@ -96,6 +96,11 @@ exceptions:
   - Variable
   - Web
   - WCAG 2.2 AA
+  - GetAcessToken
+  - SendNotificationToTopics
+  - SendNotificationToUsers
+  - SendSilentNotificationToTopics
+  - SendSilentNotificationToUsers
 # Events
   - On Initialize
   - On Ready
@@ -158,6 +163,7 @@ exceptions:
   - shred.bundle.js
   - CSV
   - Firebase Cloud Messaging
+  - Firebase Performance
 # Industry
   - API
   - APIs
@@ -170,6 +176,8 @@ exceptions:
   - UI
   - SAST
   - REST
+  - HTTP
+  - FCM
 # Country
   - US East
   - North Virginia

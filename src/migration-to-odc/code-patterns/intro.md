@@ -37,7 +37,7 @@ You must handle different patterns during the several conversion phases:
 
 * [After the conversion](#handle-odc), you must make some adjustments to ensure your new ODC apps can be published.
 
-## Patterns to handle in O11 { #handle-o11 }
+## Patterns to handle in O11 {#handle-o11}
 
 These are the patterns that require changes in the O11 apps before proceeding with the conversion to ODC.
 
@@ -65,16 +65,17 @@ These are the patterns that require changes in the O11 apps before proceeding wi
 * [Asset consuming REST API with multipart request](elem-rest-consume-multipart.md)
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
 
-### Data { #data-patterns }
+### Data {#data-patterns}
 
 * [Large binaries validation](data-large-binaries-validation.md)
+* [Large text validation](data-large-text-validation.md)
 * [User email validation](data-user-email-validation.md)
 
 ### App configuration
 
 * [Align persistent login timeout](persistent-login-timeout.md)
 
-## Patterns to handle in ODC { #handle-odc }
+## Patterns to handle in ODC {#handle-odc}
 
 These are the patterns that require changes in the converted ODC apps before you publish them.
 

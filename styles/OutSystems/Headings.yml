@@ -180,6 +180,8 @@ exceptions:
   - REST
   - HTTP
   - FCM
+  - CI/CD
+  - CICD
 # Country
   - US East
   - North Virginia

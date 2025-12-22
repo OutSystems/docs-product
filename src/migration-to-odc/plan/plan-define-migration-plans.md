@@ -28,7 +28,9 @@ After [mapping a set of O11 apps into ODC assets](plan-map-apps.md), you can gro
 
 * Identify the dependencies between apps included in different conversion plans.
 
-* Have different development teams focusing only on the [preparation of their own apps](../prepare/prep-intro.md)
+* Decide on the best preparation sequence and the eventual conversion order of your conversion plans.
+
+* Have different development teams focusing only on the [preparation of their own apps](../prepare/prep-intro.md).
 
 ![Diagram showing the Define conversion plans step in the conversion process.](images/prep-define-plans-diag.png "Define conversion plans")
 
@@ -54,15 +56,15 @@ To create a conversion plan, follow these steps:
 
 1. Click **Save plan**.
 
-After creating the conversion plan, you can validate if the assets in the plan [have dependencies](#dependencies) on assets in other plans.
+After creating the conversion plan, you can validate if the assets in the plan [have dependencies](#dependencies) on assets in other plans and then [decide on the order your team should tackle the several plans](#decide-order).
 
 ![Conversion plan list in Conversion Assessment Tool.](images/migration-plan-list-at.png "Conversion plan list")
 
-## Identify dependencies between apps { #dependencies }
+## Identify dependencies between apps {#dependencies}
 
 In the **Conversion plans** list, you can identify the following:
 
-* If an asset in the conversion plan has dependencies on producer or consumer assets that are not in the same plan. This helps you understand which plans must be converted first. For example, you must first convert the plans that don't have dependencies on producers or the producer's assets were already converted to ODC.
+* If an asset in the conversion plan has dependencies on producer or consumer assets that are not in the same plan.
 
 * If an asset has a [weak dependency](../../building-apps/reuse-and-refactor/strong-weak-dependencies.md#weak-dependencies) on a producer asset that is not in the same plan.
 
@@ -70,16 +72,20 @@ In the **Conversion plans** list, you can identify the following:
 
 To validate the dependencies of a conversion plan, follow these steps:
 
-1. In the Conversion Assessment Tool console, go to the **Conversion plans** tab to view the list of plans already created.
+1. In the Conversion Assessment Tool console, go to the **Conversion plans** tab to view the plans already created.
 
-1. Select a conversion plan from the list.
+    You can use the toggle to switch between the table and the diagram view. The diagram view helps you [decide the best preparation and conversion order for your plans](#decide-order).
+
+    ![Toggle switch between table and diagram view in Conversion Assessment Tool.](images/migration-plan-toggle-at.png "Toggle view")
+
+1. Select a conversion plan.
 
     The following details of the plan are displayed:
 
-      * The number of assets.
-      * The overall ODC readiness status of the assets.
-      * The list of different plans including producer assets. Under **Unplanned**, you also find the producer assets not included in any plan yet.
-      * The list of different plans including consumer assets. Under **Unplanned**, you also find the consumer assets not included in any plan yet.
+    * The number of assets.
+    * The overall ODC readiness status of the Assets.
+    * The different plans that include **Producer** assets consumed by assets in the current plan. Under **Unplanned**, you also find the producer assets not included in any plan yet.
+    * The different plans that include **Consumer** assets that have dependencies to assets in the current plan. Under **Unplanned**, you also find the consumer assets not included in any plan yet.
 
 1. Expand a plan in the list of **Producers** or **Consumers** to view the list of producer or consumer assets.
 
@@ -90,3 +96,25 @@ If you are validating an identified weak dependency on a producer asset in a dif
 ![Dependency details with Resolve in ODC option.](images/migration-plan-dependency-details-at.png "Dependency details")
 
 The **Resolve in ODC** option is only available when validating producer assets, and is not available when validating consumer assets.
+
+## Decide preparation order of conversion plans {#decide-order}
+
+The dependency diagram view shows the consumer-producer relationships across all your conversion plans, allowing you to establish a logical [preparation](../prepare/prep-intro.md) sequence and the eventual conversion order of each plan.
+
+To access the diagram view, in the **Conversion plans** tab use the toggle switch between the table View and the diagram view.
+
+![Toggle switch between table and diagram view in Conversion Assessment Tool.](images/migration-plan-toggle-at.png "Toggle view")
+
+The arrows point from consumers to producers, which means they point from plans with assets that have dependencies to assets in other plans.
+
+![Dependency diagram view in Conversion Assessment Tool.](images/migration-plan-diagram-at.png "Dependency diagram")
+
+When you select a plan, the diagram visually highlights only the arrows leading to or from that plan, instantly filtering relationships.
+
+The diagram organizes conversion plans by tiers based on the nature of their dependencies. Producer plans and plans without dependencies appear at the bottom, and consumers appear above them.
+
+To reduce risk and complexity during the conversion phase, start by preparing and converting the plans at the bottom of the diagram (producers), before moving to plans above them.
+
+![Preparation order diagram for conversion plans.](images/migration-plan-diagram-order-at.png "Preparation order")
+
+For example, if the Vacation plan has an arrow pointing to the Foundations plan, it means the Vacation plan consumes assets from Foundations, and therefore the Foundations plan should be prepared first.

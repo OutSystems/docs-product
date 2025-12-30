@@ -27,7 +27,7 @@ This article describes the process you must follow to publish your application t
 
 To publish your app to the Google Play store you must have a developer account. If you don't, [create a new Google Developer Account here](https://developer.android.com/distribute/googleplay/start.html).
 
-## Preparation Checklist
+## Preparation checklist
 
 Google [provides a checklist](https://developer.android.com/distribute/best-practices/launch/launch-checklist) with instructions to ensure your application is compliant with the publishing rules and the quality required.
 
@@ -126,20 +126,20 @@ You have to provide the following information:
 * Provide information for [Google Play's Data safety section](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en#types&zippy=%2Cdata-types).
     * By default, OutSystems apps collect the following data:
 
-        | Category | Data Type | Description |
-        |---|---|---|
-        | App info and performance | Crash logs | Crash logs are collected in the Service center for troubleshoot purposes|
-        | Device or other IDs | Device or other IDs | We’re using the DeviceUUID which is solely respective to the current application installation and we're collecting it for troubleshoot purposes |
+| Category | Data Type | Description |
+| --- | --- | --- |
+| App info and performance | Crash logs | Crash logs are collected in Service Center for troubleshoot purposes |
+| Device or other IDs | Device or other IDs | We’re using the DeviceUUID which is solely respective to the current application installation and we're collecting it for troubleshoot purposes |
 
-    * In this form, you must also add entries for any data that you are collecting on top of the above mentioned ones, leveraged by either custom or supported plugins.
+    * In this form, you must also add entries for any data that you are collecting. Include data leveraged by either custom or supported plugins.
 
 At the final steps, you need to release the app to Beta Testing or Production, according to your choice, confirm the version and the build (APK/AAB), and start the rollout.
 
 After completing this process your application is published and available for download at the Google Play Store.
 
-## User Privacy in OutSystems Android apps { #privacy }
+## User Privacy in OutSystems Android apps {#privacy}
 
-When submitting a mobile app to the store, you have to answer a few questions about the user sensitive data being collected or shared by the app. You can obtain more details about the Google Safety data form [here](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en).
+When submitting a mobile app to the store, you have to answer a few questions about the user sensitive data being collected or shared by the app. For more information about the Google Safety data form, refer to [Google Play Console Help](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en).
 
 We understand that OutSystems customers may not be fully aware on how OutSystems base apps may collect or share user data. The following table shows what kinds of data contain or may contain user sensitive data and their purposes:
 
@@ -181,6 +181,12 @@ Every network request trigger by the OutSystems runtime is performed via HTTPS w
 This section may be updated overtime, so we recommend you check this section when uploading a new app version to the store.
 
 We highly recommend you to review the usage of user sensitive data in other parts of your application that do not belong to the OutSystems domain by following the [Google guidelines](https://developer.android.com/guide/topics/data/collect-share).
+
+## Google Play’s 16 KB page size compatibility requirement
+
+Since November 1st, 2025, all new apps and updates submitted to Google Play must support 16 KB page sizes. This applies to apps targeting Android 15+ devices. [Google blog](https://android-developers.googleblog.com/2025/05/prepare-play-apps-for-devices-with-16kb-page-size.html).
+
+OutSystems applications and supported plugins built with MABS 11 or greater are fully compliant. Developers should ensure their third-party plugins are also compliant before submitting to Google Play.
 
 ______________________________________________________________
 _QR CODE is a registered trademark of Denso Wave Incorporated._

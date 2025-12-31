@@ -1179,6 +1179,19 @@
     - href: manage-platform-app-lifecycle/disk-space-usage-control.md
     - href: manage-platform-app-lifecycle/best-practices-sql-server.md
 
+# Extending with ODC
+- href: extending-with-odc/intro.md
+- topics:
+    # Data interoperability
+    - href: extending-with-odc/data-interoperability/intro.md
+    - topics:
+        - href: extending-with-odc/data-interoperability/expose-entities.md
+        - href: extending-with-odc/data-interoperability/configure-connection.md
+        - href: extending-with-odc/data-interoperability/consume-entities.md
+        - href: extending-with-odc/data-interoperability/handle-o11-data-model-changes.md
+        - href: extending-with-odc/data-interoperability/data-interop-self-managed.md
+        - href: extending-with-odc/data-interoperability/troubleshooting.md
+
 # Migration to ODC
 - href: migration-to-odc/migration-intro.md
 - topics:

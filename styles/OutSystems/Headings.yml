@@ -182,6 +182,7 @@ exceptions:
   - FCM
   - CI/CD
   - CICD
+  - EAP
 # Country
   - US East
   - North Virginia

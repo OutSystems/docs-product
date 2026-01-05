@@ -148,6 +148,7 @@ exceptions:
   - ios {#ios-1
   - config
   - parameters
+  - Cordova-based
   
 # Events
   - On Initialize

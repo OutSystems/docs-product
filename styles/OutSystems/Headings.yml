@@ -102,6 +102,15 @@ exceptions:
   - SendSilentNotificationToTopics
   - SendSilentNotificationToUsers
   - Create/Upgrade
+  - appName
+  - manifest
+  - gradle
+  - res
+  - json
+  - xml
+  - copy
+  - code
+  - tar
 # Events
   - On Initialize
   - On Ready

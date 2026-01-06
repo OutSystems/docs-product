@@ -16,7 +16,7 @@ tags: entities,data interoperability,troubleshooting
 outsystems-tools:
   - lifetime
   - odc portal
-helpids: 
+helpids: 30651
 ---
 
 # Troubleshooting data interoperability issues

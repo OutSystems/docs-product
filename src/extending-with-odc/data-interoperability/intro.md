@@ -76,7 +76,7 @@ Application runtime communication depends on your [O11 infrastructure setup](htt
 
     * Enabling the network communication from the ODC stage to their O11 infrastructure. To ensure a secure connection, OutSystems recommends that customers [configure an ODC Private Gateway](https://www.outsystems.com/tk/redirect?g=9a023d82-da5b-4164-8f3f-9d6c35444b50).
 
-    * Creating a dedicated read-only database user for each O11 environment, and managing the database permissions required for the integration. See [Data interoperability for O11 self-managed infrastructures](data-interop-self-managed.md) for further details.
+    * Creating a dedicated database user for each O11 environment, and managing the database permissions required for the integration. See [Data interoperability for O11 self-managed infrastructures](data-interop-self-managed.md) for further details.
 
 Platform communication from the ODC Portal to O11 LifeTime is established via REST APIs, secured by token authentication and restricted to HTTPS via IP allowlisting.
 

@@ -15,7 +15,7 @@ coverage-type:
   - apply
 ---
 
-# InApp Browser plugin
+# InAppBrowser plugin
 
 <div class="info" markdown="1">
 
@@ -25,7 +25,7 @@ Applies only to Mobile Apps.
 
 This documentation page applies to version 3.0.0 of the plugin and onwards.
 
-Use the InAppBrowser Plugin to open external URLs directly in your application, either within a web view, or a system in-app browser (Custom Tabs for Android and SafariViewController for iOS). You can also use the plugin to open URLs in the device's default browser.
+Use the InAppBrowser plugin to open external URLs directly in your application, either within a web view, or a system in-app browser (Custom Tabs for Android and SafariViewController for iOS). You can also use the plugin to open URLs in the device's default browser.
 
 All three browser targets of the plugin behave like standard web browsers, and can't access Cordova APIs. For this reason, the plugin is recommended if you need to load third-party (untrusted) content, instead of loading it into the main Cordova WebView (for example, using the RedirectToURL destination). The plugin's browser targets aren't subject to the whitelist.
 
@@ -133,6 +133,29 @@ To enable your app to open HTTP URLs in the web view, set the **InAppBrowserClea
                     {
                         "name": "InAppBrowserCleartextTrafficPermitted",
                         "value": true
+                    }
+                ]
+            }
+        }
+```
+
+## Adding necessary permissions to upload files within the web view on iOS
+
+To allow users to upload photos or videos in a page opened in a web view (using **OpenInWebView**), you may need to configure specific iOS usage descriptions. If the web page gives users the option to capture new photos or videos, you must add the iOS usage descriptions for the camera and microphone to your app.
+
+To add the necessary usage descriptions, set the following preferences in the Extensibility Configurations of your app, passing the descriptions you wish to include in the **value** field:
+
+```json
+        {
+            "preferences": {
+                "ios": [
+                    {
+                        "name": "NSCameraUsageDescription",
+                        "value": "This app uses the camera to take photos and record videos."
+                    },
+                    {
+                        "name": "NSMicrophoneUsageDescription",
+                        "value": "This app uses the microphone when recording videos."
                     }
                 ]
             }

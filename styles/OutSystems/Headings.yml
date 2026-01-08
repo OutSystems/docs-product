@@ -150,6 +150,7 @@ exceptions:
   - parameters
   - Cordova-based
   - Cordova-only
+  - WorkflowNewCustomerLoan
   
 # Events
   - On Initialize

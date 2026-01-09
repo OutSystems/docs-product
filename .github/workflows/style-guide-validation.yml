@@ -4,7 +4,11 @@ on:
   workflow_call:
     inputs:
       changed-files:
-        description: 'List of changed files to validate'
+        description: "List of changed files to validate"
+        type: string
+        required: true
+      pull-request:
+        description: "The Pull Request number"
         type: string
         required: true
 
@@ -19,6 +23,7 @@ jobs:
     with:
       runner-type: "ubuntu-latest"
       changed-files: ${{ inputs.changed-files }}
+      pull-request: ${{ inputs.pull-request }}
     secrets:
       github-token: ${{ secrets.TOOLS_PAT }}
       copilot-token: ${{ secrets.TK_COPILOT_TOKEN }}

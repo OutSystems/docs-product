@@ -84,6 +84,7 @@ jobs:
     secrets: inherit
     with:
       changed-files: ${{ needs.pr-info.outputs.changed-files }}
+      pull-request: ${{ needs.pr-info.outputs.pull-request }}
   
   auto-fill:
     if: github.event_name == 'pull_request'

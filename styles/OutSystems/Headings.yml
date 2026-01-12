@@ -11,6 +11,8 @@ indicators:
   - '.'
 exceptions:
 # Product
+  - Application Objects
+  - AO
   - Center
   - Conversion Assessment Tool
   - Integration Builder
@@ -187,6 +189,7 @@ exceptions:
   - Apple Developer
   - AWS Firehose
   - JSON
+  - IdP
   - Azure
   - Cascading Style Sheets
   - CSS

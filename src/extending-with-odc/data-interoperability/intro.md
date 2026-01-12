@@ -102,6 +102,10 @@ ODC directly accesses the O11 database through automatically generated database 
 
 However, to ensure your O11 applications continue to run smoothly alongside ODC apps and AI Agents, follow the standard high-load application best practices - writing efficient queries in ODC, monitoring your apps, or conducting performance tests.
 
+### Licensing {#licensing}
+
+Consuming O11 entities in ODC apps or agents through the ODC Data Fabric connector doesn't affect your [license consumption](https://www.outsystems.com/tk/redirect?g=cd994c70-9dcc-46ed-b423-84099beac39a), as it doesn't contribute to the AO count.
+
 ## Exposing O11 entities lifecycle
 
 The integration uses a specific lifecycle model to ensure consistency and safety from development through to production:

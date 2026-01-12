@@ -190,7 +190,9 @@ exceptions:
   - AWS Firehose
   - JSON
   - IdP
+  - IdPs
   - Azure
+  - Microsoft Entra ID
   - Cascading Style Sheets
   - CSS
   - Chrome
@@ -198,6 +200,7 @@ exceptions:
   - Docker
   - DOM
   - Excel
+  - Okta
   - Git
   - Google Play
   - HIPPA
@@ -211,6 +214,8 @@ exceptions:
   - TypeScript
   - Windows
   - Visual Studio
+  - URI
+  - URIs
   - SAP
   - Cross-site Scripting
   - XSS

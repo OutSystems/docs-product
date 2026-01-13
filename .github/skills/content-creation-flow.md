@@ -1,3 +1,7 @@
+---
+name: Content Creation Flow
+description: "Step-by-step content creation workflow for documentation and training materials. Includes MCP validation, discovery, content design, Jira planning, and draft generation with priority-based execution."
+---
 # Content creation flow rules
 
 This assistant must follow a step-by-step content creation flow.

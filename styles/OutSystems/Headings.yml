@@ -163,6 +163,7 @@ exceptions:
   - WorkflowNewCustomerLoan
   - NSCameraUsageDescription
   - ScanOrientation
+  - OS-BERT-60400
   
 # Events
   - On Initialize
@@ -194,6 +195,8 @@ exceptions:
   - List Item
 # Third Party
   - Active Directory
+  - AgentFlow
+  - Agent Flow
   - Amazon Kendra
   - Android
   - Google
@@ -203,6 +206,7 @@ exceptions:
   - IdP
   - IdPs
   - Azure
+  - BuildMessages
   - Microsoft Entra ID
   - CallAgent01_Intake 
   - Cascading Style Sheets
@@ -215,7 +219,7 @@ exceptions:
   - Excel
   - Okta
   - Git
-  - Google Play
+    - Google Play
   - HIPPA
   - iOS
   - Integrated Authentication

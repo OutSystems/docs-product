@@ -23,9 +23,11 @@ This article explains how to set up the OpenTelemetry collector for Application 
 
 ## Prerequisites
 
+You must have a functioning OpenTelemetry Collector. The collector is an external, customer-managed component that resides within your own infrastructure. It acts as the intermediary gateway to receive telemetry from OutSystems.
+
 For a complete list of prerequisites, refer to [Introduction to log streaming](intro.md#prerequisites).
 
-## Set up OpenTelemetry collector
+## Set up OpenTelemetry Collector
 
 To receive logs in Datadog, Splunk or Amazon S3, you must set up an OpenTelemetry Collector:
 

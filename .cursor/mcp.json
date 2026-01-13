@@ -1,0 +1,21 @@
+{
+    "mcpServers": {
+        "Atlassian-MCP-Server": {
+            "url": "https://mcp.atlassian.com/v1/sse"
+        },
+        "outsystems-tech-content": {
+            "url": "http://10.120.88.4:9081/sse",
+            "transport": "sse"
+        },
+        "Figma": {
+            "url": "https://mcp.figma.com/mcp",
+            "headers": {}
+        },
+        "github": {
+            "url": "https://api.githubcopilot.com/mcp/",
+            "headers": {
+                "Authorization": "Bearer github_pat_(...)"
+            }
+        }
+    }
+}

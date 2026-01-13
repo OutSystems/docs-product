@@ -57,14 +57,19 @@ exceptions:
   - Business Process
   - Callback
   - Client
+  - EC
   - Email
   - Entity
   - Entities
   - EPA_Taskbox
   - EPA_TaskboxExtension
   - Exception
+  - HMAC
   - Identifier
   - IT
+  - JWT
+  - JSON Web Keys
+  - JWK
   - Library
   - Local
   - Method
@@ -82,6 +87,7 @@ exceptions:
   - Refresh
   - Resource
   - Role
+  - RSA
   - Screen
   - Server
   - Service
@@ -153,6 +159,8 @@ exceptions:
   - Cordova-based
   - Cordova-only
   - WorkflowNewCustomerLoan
+  - NSCameraUsageDescription
+  - ScanOrientation
   
 # Events
   - On Initialize

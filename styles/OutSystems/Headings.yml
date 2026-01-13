@@ -41,6 +41,7 @@ exceptions:
   - Asset Repository API
   - Asset Configurations
   - Asset Configurations API
+  
 # Concepts
   - Action
   - Activity
@@ -236,6 +237,7 @@ exceptions:
   - Health and Fitness Plugin
   - HealthKit
   - Health Connect
+  - Firebase Analytics
 # Industry
   - API
   - APIs

@@ -41,6 +41,7 @@ exceptions:
   - Asset Repository API
   - Asset Configurations
   - Asset Configurations API
+  - Forge
   
 # Concepts
   - Action
@@ -195,6 +196,7 @@ exceptions:
   - Active Directory
   - Amazon Kendra
   - Android
+  - Google
   - Apple Developer
   - AWS Firehose
   - JSON
@@ -238,6 +240,8 @@ exceptions:
   - HealthKit
   - Health Connect
   - Firebase Analytics
+  - Firebase Crashlytics
+  - SSL Pinning
 # Industry
   - API
   - APIs

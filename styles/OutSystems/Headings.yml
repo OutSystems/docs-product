@@ -249,6 +249,7 @@ exceptions:
   - Firebase Analytics
   - Firebase Crashlytics
   - SSL Pinning
+  - OpenTelemetry Collector
 # Industry
   - API
   - APIs

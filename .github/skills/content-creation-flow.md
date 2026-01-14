@@ -520,7 +520,7 @@ Create content drafts and open a pull request that strictly follow the approved 
    * Convert Figma design code to match the target project's technology stack and styling system when needed
    * Save extracted images or diagrams to the appropriate images directory in the repository
 1. **Frontmatter guidelines:**
-   * When generating new drafts, leave the `guid` field in the frontmatter empty
+   * When generating drafts on **NEW** files, leave the `guid` field in the frontmatter empty. For changes to existing files, leave the `guid` as it is.
    * The `guid` will be automatically generated later through a GitHub action automation
    * Ensure frontmatter includes all required fields as specified in the repository's validation rules and `.github/copilot-instructions.md` if applicable
 1. Ensure all generated content aligns with:

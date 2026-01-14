@@ -265,7 +265,7 @@ Ask the user to:
 * Confirm the content design
 * Confirm priorities and scope
 
-After user validation is approved, create the content design page on Confluence in a space with the name "Test" (personal). Search by space name, not key.
+After user validation is approved, create the content design page, following the Content Design templates listed above, on Confluence in a space with the name "Test" (personal). Search by space name, not key.
 Place the content design page in the following folder structure (create the folder structure if not present):
 
 * For training: Online Training > Content Design
@@ -383,9 +383,109 @@ Ask the user to confirm:
 * Sprint structure
 * Ticket breakdown
 
-After user validation is approved, create the required items on Jira. Update the Confluence page Content Design Table created in Step 2 with the matching Jira links for each work piece to keep track of progress.
+### Creating Jira Issues
 
-**Important:** When adding Jira links to the Content Design table, format them using `<custom data-type="smartlink">` tags (e.g., `<custom data-type="smartlink">https://outsystemsrd.atlassian.net/browse/TK-12345</custom>`) so that Confluence displays them as inline cards with the ticket data.
+After user validation is approved, verify the connection to the Atlassian MCP Server before creating tickets:
+
+1. **Check Atlassian MCP Server connection:**
+   * Run a test call to verify the Atlassian MCP Server is accessible and authenticated
+   * If the connection fails or returns authentication errors, **stop immediately** and ask the user to re-authenticate
+   * Do **not** proceed with ticket creation until the connection is verified and working
+
+Once the connection is verified, create the Jira issues using the Atlassian MCP Server. Do NOT loop, ask for additional confirmation, or delay. Execute the creation steps below in sequence.
+
+#### Step 3.1 — Get Cloud ID
+
+1. Call `mcp_Atlassian-MCP-Server_getAccessibleAtlassianResources` to retrieve the cloudId
+1. Use the cloudId from the response (typically: `"3755dbe1-fa22-4c37-956e-59bea84af9cf"`)
+
+#### Step 3.2 — Create Epic
+
+**Create the Epic FIRST** using `mcp_Atlassian-MCP-Server_createJiraIssue` with these exact parameters:
+
+```json
+{
+  "cloudId": "3755dbe1-fa22-4c37-956e-59bea84af9cf",
+  "projectKey": "RD",
+  "issueTypeName": "Epic",
+  "summary": "[Content Piece Title from Step 2]",
+  "description": "[Full content design description from Step 2 Confluence page, in Markdown format]",
+  "additional_fields": {
+    "labels": ["AI-TK"]
+  }
+}
+```
+
+**Data mapping for Epic:**
+
+* `summary`: Use the main title/topic from the content design created in Step 2
+* `description`: Use the full content design description from the Confluence page created in Step 2 (convert to Markdown if needed)
+* Store the returned Epic key (e.g., `RD-123`) for reference
+
+#### Step 3.3 — Create All Task Tickets
+
+**For EACH work item** defined in Step 2, create the required tickets based on content type. Use `mcp_Atlassian-MCP-Server_createJiraIssue` with these exact parameters:
+
+**For each Task ticket:**
+
+```json
+{
+  "cloudId": "3755dbe1-fa22-4c37-956e-59bea84af9cf",
+  "projectKey": "RD",
+  "issueTypeName": "Task",
+  "summary": "[Content-type] [Work item name] - [Work type]",
+  "description": "[Work item description from Step 2, including target audiences, content sources, and any relevant details, in Markdown format]",
+  "parent": {
+    "key": "[Epic key from Step 3.2, e.g., RD-123]"
+  },
+  "additional_fields": {
+    "labels": ["AI-TK"]
+  }
+}
+```
+
+**Note:** All Task tickets MUST be linked to the Epic created in Step 3.2. Use the `parent` parameter with an object containing the Epic key (e.g., `"parent": { "key": "RD-123" }`) to establish the parent-child relationship.
+
+**Data mapping for Task tickets:**
+
+* `summary`: Follow the naming convention: `[Content-type] [Work item name] - [Work type]`
+    * Content-type: Article, Procedure, Concept, Overview, Troubleshooting, Reference, Slide Deck, Demo, Exercise, Quiz, Visual Assets
+    * Work item name: The name/title of the work item from Step 2
+    * Work type: Outline, Draft, Peer Review, SME Review, Visual Assets, SikuliX script
+* `description`: Include:
+    * Work item description from Step 2
+    * Target audiences (from the work item)
+    * Content sources (with full links)
+    * Priority level
+    * Target GitHub repositories
+    * Any other relevant details from the work item
+    * Format as Markdown
+
+**Execution order:**
+
+1. Create all tickets for Priority 1 work items first
+1. Then create all tickets for Priority 2 work items
+1. Continue in priority order (3, 4, etc.)
+1. For each work item, create tickets in sequential order (Outline → Draft → Peer Review → SME Review → Visual Assets)
+
+**Store all created ticket keys** (e.g., `RD-124`, `RD-125`) for the blocked-by relationship mapping.
+
+#### Step 3.4 — Document Blocked-By Relationships
+
+After all tickets are created, output a comprehensive table showing:
+
+* Each ticket key and summary
+* All tickets it should be blocked by (sequential and priority-based)
+* This enables manual creation of blocked-by links in Jira
+
+#### Step 3.5 — Update Confluence Content Design
+
+Update the Confluence Content Design page created in Step 2:
+
+1. Add the Epic link to the page
+1. Add each Task ticket link to its corresponding work item in the Content Design table
+1. Format Jira links using `<custom data-type="smartlink">` tags:
+   * Example: `<custom data-type="smartlink">https://outsystemsrd.atlassian.net/browse/RD-123</custom>`
 
 **Do not proceed to Step 4 without explicit approval.**
 

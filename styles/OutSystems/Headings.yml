@@ -251,6 +251,8 @@ exceptions:
   - Firebase Crashlytics
   - SSL Pinning
   - OpenTelemetry Collector
+  - Amazon Bedrock
+  - IBM
 # Industry
   - API
   - APIs

@@ -67,6 +67,7 @@ exceptions:
   - EPA_Taskbox
   - EPA_TaskboxExtension
   - Exception
+  - GetUserId
   - HMAC
   - Identifier
   - IT
@@ -161,6 +162,7 @@ exceptions:
   - parameters
   - Cordova-based
   - Cordova-only
+  - ViewState
   - WorkflowNewCustomerLoan
   - NSCameraUsageDescription
   - ScanOrientation
@@ -253,6 +255,9 @@ exceptions:
   - OpenTelemetry Collector
   - Amazon Bedrock
   - IBM
+  - GPT-4o
+  - Claude 3.7 Sonnet
+  - Amazon Nova Pro
 # Industry
   - API
   - APIs

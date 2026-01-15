@@ -167,14 +167,11 @@ exceptions:
   - NSCameraUsageDescription
   - ScanOrientation
   - OS-BERT-60400
-  - Intake agent
-  - Enrichment agent
-  - Underwriter agent
-  - Communication agent
   - Intake
   - Enrichment
   - Underwriter
   - Communication
+  - Paula
   
 # Events
   - On Initialize

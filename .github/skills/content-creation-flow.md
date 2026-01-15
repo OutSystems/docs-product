@@ -264,11 +264,11 @@ Ask the user to:
 * Confirm the content design
 * Confirm priorities and scope
 
-After user validation is approved, create the content design page, following the Content Design templates listed above, on Confluence in a space with the name "Test" (personal). Search by space name, not key.
+After user validation is approved, create the content design page, following the Content Design templates listed above, on Confluence in a space with the name "Technical Knowledge team" (key: "TK").
 Place the content design page in the following folder structure (create the folder structure if not present):
 
-* For training: Online Training > Content Design
-* For documentation: Documentation > Content Design
+* For training: AI Generated > Online Training > Content Design
+* For documentation:  AI Generated > Documentation > Content Design
 
 **Do not proceed to Step 3 without explicit approval.**
 

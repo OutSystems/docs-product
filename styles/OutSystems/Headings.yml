@@ -171,6 +171,10 @@ exceptions:
   - Enrichment agent
   - Underwriter agent
   - Communication agent
+  - Intake
+  - Enrichment
+  - Underwriter
+  - Communication
   
 # Events
   - On Initialize

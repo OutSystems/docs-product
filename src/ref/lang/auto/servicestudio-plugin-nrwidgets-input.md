@@ -19,7 +19,7 @@ coverage-type:
 
 # Input
 
-Field that holds the data typed by the user.
+Field that holds the data entered by the user.
 
 At runtime, the value typed by the user is validated against the variable data type.
 
@@ -151,7 +151,7 @@ At runtime, the value typed by the user is validated against the variable data t
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>
@@ -188,9 +188,9 @@ At runtime, the value typed by the user is validated against the variable data t
 </tbody>
 </table>
 
-## Additional Notes
+## Additional notes
 
-### Rendering Empty Values
+### Rendering empty values
 
 If a variable associated with an Input widget doesn't have a defined value, the widget will be rendered by default with no content.
 
@@ -198,3 +198,7 @@ If you would like to show the default value for the associated variable type (e.
 
 * Property: **show-default-value**  
     Value: **true**
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

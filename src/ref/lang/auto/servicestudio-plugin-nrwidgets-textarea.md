@@ -18,7 +18,7 @@ coverage-type:
   - remember
 ---
 
-# Text Area
+# Text area
 
 <div class="info" markdown="1">
 
@@ -156,7 +156,7 @@ Multi-line field to hold text typed by the user. The value must be stored in a T
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>
@@ -192,3 +192,7 @@ Multi-line field to hold text typed by the user. The value must be stored in a T
 </tr>
 </tbody>
 </table>
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

@@ -157,3 +157,7 @@ Check box field where the user can enable or disable an option. The value must b
 </tr>
 </tbody>
 </table>
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

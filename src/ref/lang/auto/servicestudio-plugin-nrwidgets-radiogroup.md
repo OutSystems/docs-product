@@ -17,7 +17,7 @@ coverage-type:
   - remember
 ---
 
-# Radio Group
+# Radio group
 
 Radio Group is a widget that groups two or more Radio Buttons. Set the variable that holds the value of the selected option in the **Variable** property of Radio Group. This value usually comes from a Static Entity. The value of **Variable** depends on which Radio Button the user selects.
 
@@ -134,7 +134,7 @@ The Radio Group widget is supported in **Platform Server** version 11.8.0 or hig
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>
@@ -170,3 +170,7 @@ The Radio Group widget is supported in **Platform Server** version 11.8.0 or hig
 </tr>
 </tbody>
 </table>
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

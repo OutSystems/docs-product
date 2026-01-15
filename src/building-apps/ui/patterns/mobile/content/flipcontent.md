@@ -16,7 +16,7 @@ coverage-type:
   - apply
 ---
 
-# Flip Content
+# Flip content
 
 <div class="info" markdown="1">
 
@@ -36,7 +36,7 @@ You can use the Flip Content UI Pattern to display information that when, for ex
 
 <iframe src="https://player.vimeo.com/video/973090281" width="750" height="296" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing how the Flip Content UI pattern in action, showing the front and back content flipping.</iframe>
 
-**How to use the Flip content UI Pattern**
+## How to use the Flip content UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Flip Content`.
 
@@ -72,14 +72,18 @@ You can use the Flip Content UI Pattern to display information that when, for ex
 
 ## Properties
 
-| Property| Description|
-|---|---|
-|StartsFlipped (Boolean): Optional | Defines the initial state of the pattern. If True, the Card Front content is displayed first before flipping. If False, the Card Back content is displayed first before flipping. This is the default.<br/><br/>Use one of the following actions to change the value afterwards: <ul><li>FlipContentBack</li><li>FlipContentFront</li><li>FlipContentToggle</li></ul> |
-|FlipOnClick (Boolean): Optional| If True, the flip event is triggered when the Flip Content card (front or back) is clicked. This is the default. If False, you can define the action that triggers the flip event.|
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| Property | Description |
+| --- | --- |
+| StartsFlipped (Boolean): Optional | Defines the initial state of the pattern. If True, the Card Front content is displayed first before flipping. If False, the Card Back content is displayed first before flipping. This is the default.<br/><br/>Use one of the following actions to change the value afterwards: <ul><li>FlipContentBack</li><li>FlipContentFront</li><li>FlipContentToggle</li></ul> |
+| FlipOnClick (Boolean): Optional | If True, the flip event is triggered when the Flip Content card (front or back) is clicked. This is the default. If False, you can define the action that triggers the flip event. |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 
-|Event| Description|
-|---|---|
-|OnFlip: Optional| Event triggered after the content is flipped.|
+| Event | Description |
+| --- | --- |
+| OnFlip: Optional | Event triggered after the content is flipped. |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

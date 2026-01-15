@@ -167,6 +167,10 @@ exceptions:
   - NSCameraUsageDescription
   - ScanOrientation
   - OS-BERT-60400
+  - Intake agent
+  - Enrichment agent
+  - Underwriter agent
+  - Communication agent
   
 # Events
   - On Initialize

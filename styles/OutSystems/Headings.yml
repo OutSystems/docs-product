@@ -172,6 +172,7 @@ exceptions:
   - Underwriter
   - Communication
   - Paula
+  - USB
   
 # Events
   - On Initialize
@@ -263,6 +264,7 @@ exceptions:
   - GPT-4o
   - Claude 3.7 Sonnet
   - Amazon Nova Pro
+  - Chrome DevTools
 # Industry
   - API
   - HTML

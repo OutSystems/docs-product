@@ -173,6 +173,7 @@ exceptions:
   - Communication
   - Paula
   - USB
+  - PC
   
 # Events
   - On Initialize

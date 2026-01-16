@@ -267,8 +267,8 @@ Ask the user to:
 After user validation is approved, create the content design page, following the Content Design templates listed above, on Confluence in a space with the name "Technical Knowledge team" (key: "TK").
 Place the content design page in the following folder structure (create the folder structure if not present):
 
-* For training: AI Generated > Online Training > Content Design
-* For documentation:  AI Generated > Documentation > Content Design
+* For training: AI Generated > AI Online Training > Content Design
+* For documentation:  AI Generated > AI Documentation > Content Design
 
 **Do not proceed to Step 3 without explicit approval.**
 

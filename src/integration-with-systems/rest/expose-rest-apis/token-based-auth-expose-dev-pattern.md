@@ -33,15 +33,13 @@ This article describes a **development pattern** for securing exposed REST APIs 
 
 For more information about setting up custom authentication in Service Studio, refer to [Add Custom Authentication to an Exposed REST API](add-custom-authentication-to-an-exposed-rest-api.md).
 
-<!-- TODO: Add the following once the Forge component is published
 <div class="info" markdown="1">
 
-If you prefer to start from a prebuilt accelerator instead of implementing the pattern from scratch, consider using the [**O11 Service Account Manager – Secure Token Auth for ODC**](https://www.outsystems.com/forge/) Forge component (OutSystems 11, server-side).
+If you prefer to start from a prebuilt accelerator instead of implementing the pattern from scratch, consider using the [**O11 Service Account Manager – Secure Token Auth for ODC**](https://www.outsystems.com/forge/component-overview/23018/o11-service-account-manager-server-o11) Forge component (OutSystems 11, server-side).
 
 This Forge component is a community-provided accelerator and **isn't officially supported by OutSystems**. Review the source code, perform a security assessment, and validate that it meets your organization's requirements before using it in production.
 
 </div>
--->
 
 ## When to use this pattern
 

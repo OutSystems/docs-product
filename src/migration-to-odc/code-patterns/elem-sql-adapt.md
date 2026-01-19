@@ -14,13 +14,13 @@ outsystems-tools:
   - none
 ---
 
-# Application with SQL Node
+# Application with SQL node
 
-ODC supports two SQL syntaxes within SQL nodes, which are different from the SQL syntax used in OutSystems 11:
+ODC supports two SQL syntaxes within SQL nodes, which are different from the SQL syntax used in OutSystems 11 (O11):
 
-* In ODC, PostgreSQL syntax is used when the query includes only internal entities (created in ODC Studio) since apps use Aurora PostgreSQL as the platform database. In contrast, O11 supports SQL Server, Azure SQL Database, DB2, and Oracle as the platform database.
+* ODC uses **PostgreSQL syntax** when the query includes only internal entities (created in ODC Studio) since apps use Aurora PostgreSQL as the platform database (while O11 supports SQL Server, Azure SQL Database, and Oracle as the platform database).
 
-* In ODC, ANSI-92 syntax is used when the query includes external entities, or a mix of internal and external entities.
+* ODC uses a **syntax based on ANSI-92** when the query includes external entities, or a mix of internal and external entities.
 
 These differences mean that after converting your assets from O11 to ODC, you must review and potentially adapt all SQL queries to ensure compatibility with the ODC syntax.
 

@@ -260,7 +260,7 @@ Only OutSystems support teams will be able to access your business data, and it 
 
 Refer to our [Data Processing Agreement](https://www.outsystems.com/legal/master-subscription-agreement/data-processing-addendum/)
 
-## Securing application data
+## Securing application data {securing-application-data}
 
 OutSystems protects your data with several security controls. However, you are still responsible for developing applications that follow best practices for data security. This section details how to encrypt sensitive data at the application level and how you take responsibility for the key management storage and key encryption method used.
 

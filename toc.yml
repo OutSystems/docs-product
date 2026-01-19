@@ -819,6 +819,8 @@
             - href: integration-with-systems/rest/expose-rest-apis/expose-a-rest-api.md
             - href: integration-with-systems/rest/expose-rest-apis/add-basic-authentication-to-an-exposed-rest-api.md
             - href: integration-with-systems/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md
+            - href: integration-with-systems/rest/expose-rest-apis/token-based-auth-expose-dev-pattern.md
+            - href: integration-with-systems/rest/expose-rest-apis/key-management-and-json-web-keys.md
             - href: integration-with-systems/rest/expose-rest-apis/customize-rest-urls.md
             - href: integration-with-systems/rest/expose-rest-apis/customize-rest-api-responses.md
             - href: integration-with-systems/rest/expose-rest-apis/preprocess-rest-api-requests.md

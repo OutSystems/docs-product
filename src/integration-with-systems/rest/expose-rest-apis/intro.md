@@ -28,7 +28,9 @@ If you want to **consume** a REST API, check [Consume REST APIs](../consume-rest
 
 </div>
 
-## REST API Method Flow
+For high-level guidance on securing exposed REST APIs with JWT-based token authentication, refer to [Token-based authentication pattern for exposed REST APIs](token-based-auth-expose-dev-pattern.md).
+
+## REST API method flow
 
 When a request to your REST API Method is received, OutSystems executes the following flow:
 

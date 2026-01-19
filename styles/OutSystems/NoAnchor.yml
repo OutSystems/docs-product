@@ -1,0 +1,6 @@
+extends: existence
+message: "Anchor links are not allowed."
+level: error
+scope: raw
+raw:
+  - '\[[^\]]+\]\(#[^)]+\)'

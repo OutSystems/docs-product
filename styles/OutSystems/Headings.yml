@@ -199,6 +199,7 @@ exceptions:
   - Swipe Events
   - Switch
   - Touch Events
+  - Dropdown Server Side
 # Widgets
   - Widget
   - Link
@@ -228,7 +229,7 @@ exceptions:
   - Excel
   - Okta
   - Git
-    - Google Play
+  - Google Play
   - HIPPA
   - iOS
   - Integrated Authentication
@@ -285,6 +286,7 @@ exceptions:
   - CICD
   - EAP
   - JavaScript
+  - UI
 # Country
   - US East
   - North Virginia

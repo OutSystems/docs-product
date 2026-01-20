@@ -86,6 +86,15 @@ jobs:
       changed-files: ${{ needs.pr-info.outputs.changed-files }}
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
   
+  validate-toc:
+    name: Validate files in TOC
+    needs: [pr-info]
+    if: needs.pr-info.outputs.changed-files != ''
+    uses: ./.github/workflows/validate-toc.yml
+    with:
+      changed-files: ${{ needs.pr-info.outputs.changed-files }}
+    secrets: inherit
+
   auto-fill:
     if: github.event_name == 'pull_request'
     uses: OutSystems/tk-cicd/.github/workflows/autofill-frontmatter.yml@main

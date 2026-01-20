@@ -1,0 +1,131 @@
+name: Validate files in TOC
+
+on:
+  workflow_call:
+    inputs:
+      changed-files:
+        description: "List of changed files to validate"
+        type: string
+        required: false
+
+jobs:
+  validate-toc:
+    name: Validate files in TOC
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Validate files in TOC
+        id: validate
+        run: |
+          python << 'EOF'
+          import re
+          import sys
+          import yaml
+          from pathlib import Path
+          
+          changed_files = """${{ inputs.changed-files }}""".strip()
+          
+          if not changed_files:
+              print("No changed files provided. Skipping validation.")
+              sys.exit(0)
+          
+          files = [f.strip() for f in changed_files.split('\n') if f.strip()]
+          
+          md_files = [f for f in files if f.endswith('.md')]
+          
+          if not md_files:
+              print("No markdown files found in changed files. Skipping validation.")
+              sys.exit(0)
+          
+          toc_path = Path('toc.yml')
+          if not toc_path.exists():
+              print("ERROR: toc.yml not found!")
+              sys.exit(1)
+          
+          with open(toc_path, 'r', encoding='utf-8') as f:
+              toc_content = f.read()
+          
+          toc_data = yaml.safe_load(toc_content)
+          
+          def extract_hrefs(data, hrefs=None):
+              if hrefs is None:
+                  hrefs = []
+              if isinstance(data, dict):
+                  if 'href' in data:
+                      hrefs.append(data['href'])
+                  for value in data.values():
+                      extract_hrefs(value, hrefs)
+              elif isinstance(data, list):
+                  for item in data:
+                      extract_hrefs(item, hrefs)
+              return hrefs
+          
+          toc_hrefs = extract_hrefs(toc_data)
+          
+          missing_from_toc = []
+          files_with_guid = []
+          
+          for file_path in md_files:
+              file = Path(file_path)
+              
+              if not file.exists():
+                  print(f"Skipping {file_path} (file does not exist, might be deleted)")
+                  continue
+              
+              with open(file, 'r', encoding='utf-8') as f:
+                  content = f.read()
+              
+              frontmatter_match = re.match(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
+              
+              if frontmatter_match:
+                  frontmatter = frontmatter_match.group(1)
+                  guid_pattern = re.compile(r'^guid\s*:', re.MULTILINE)
+                  if guid_pattern.search(frontmatter):
+                      files_with_guid.append(file_path)
+                      
+                      toc_path_format = file_path
+                      if file_path.startswith('src/'):
+                          toc_path_format = file_path[4:]
+                      
+                      toc_path_format = toc_path_format.replace('\\', '/')
+                      
+                      found_in_toc = False
+                      for href in toc_hrefs:
+                          normalized_href = href.replace('\\', '/')
+                          if normalized_href == toc_path_format:
+                              found_in_toc = True
+                              break
+                      
+                      if not found_in_toc:
+                          missing_from_toc.append({
+                              'file': file_path,
+                              'toc_path': toc_path_format
+                          })
+          
+          if missing_from_toc:
+              print(f"\n❌ ERROR: {len(missing_from_toc)} file(s) are NOT referenced in toc.yml:")
+              for item in missing_from_toc:
+                  print(f"  - {item['file']}")
+                  print(f"    Expected in TOC as: {item['toc_path']}")
+              print("\nPlease add these file(s) to toc.yml before merging.")
+              sys.exit(1)
+          else:
+              if files_with_guid:
+                  print(f"\n✅ All {len(files_with_guid)} file(s) are properly referenced in toc.yml")
+              else:
+                  print("\n✅ No relevant files found in changed files.")
+          EOF

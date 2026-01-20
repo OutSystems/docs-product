@@ -90,6 +90,14 @@ Before setting up the Conversion Assessment Tool, make sure the following requir
 
 * Your O11 environments use Platform Server 11.18.1 or later.
 
+* Your O11 infrastructure uses one of the following authentication methods for IT users:
+
+    * [Built-in authentication](../manage-platform-app-lifecycle/manage-it-teams/intro.md)
+
+    * [External IdP authentication via OpenID Connect](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md)
+  
+  The Conversion Assessment Tool Installer and the Conversion Assessment Tool don't support other authentication methods.
+
 ## Set up the tool
 
 To set up the Conversion Assessment Tool, follow these steps:
@@ -267,7 +275,7 @@ If you encounter any other limitation or issue using the Conversion Assessment T
 
 Please also tell us about the issue you faced using the **Give feedback** option. This will help us improve the installer tool and support more scenarios.
 
-### Can't log in to the Conversion Assessment tools {#cannot-login}
+### Can't log in to the conversion assessment tools {#cannot-login}
 
 You are not able to log in to the Conversion Assessment Tool Installer app or to the Conversion Assessment Tool Console.
 

@@ -12,3 +12,5 @@ config.yml
 
 # Ignore all files inside the 'styles' folder
 styles/*
+# Ignore all mcp.json files anywhere in the repo
+**/mcp.json

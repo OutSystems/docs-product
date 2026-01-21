@@ -52,6 +52,7 @@ exceptions:
   - Ajax
   - App
   - Application
+  - App Auth Service
   - Area
   - Attribute
   - Block

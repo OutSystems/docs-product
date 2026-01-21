@@ -115,8 +115,6 @@ jobs:
 
   validations:
     name: Misc validations
-    needs: frontmatter
-    if: needs.frontmatter.result == 'success'
     uses: ./.github/workflows/validations.yml
     secrets: inherit
     with:

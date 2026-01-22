@@ -218,6 +218,7 @@ exceptions:
   - IdPs
   - Azure
   - BuildMessages
+  - Microsoft Entra
   - Microsoft Entra ID
   - Cascading Style Sheets
   - CallAgent01_Intake 

@@ -46,17 +46,17 @@ Refer to the [limitations of the current SAML 2.0 implementation](configure-saml
 
 To configure Microsoft Entra authentication you must take these general steps:
 
-1. [Configure general Microsoft Entra settings in the Users app](#configure-general-microsoft-entra-settings-in-the-users-app)
-1. [Create and configure an application in Microsoft Entra admin center](#create-and-configure-application-in-microsoft-entra-admin-center)
-1. [Finish configuration in the Users app](#finish-configuration-in-the-users-app)
-1. [Assign user or group to Microsoft Entra application](#assign-user-or-group-to-microsoft-entra-application--assign-user-entra-app-)
-1. [Test your configuration](#test-your-configuration)
-1. [Configure user roles in the Users app](#configure-user-roles-in-the-users-app)
-1. [Perform some final checks and configurations](#perform-some-final-checks-and-configurations)
+1. [Configure general Microsoft Entra settings in the Users app](#configure-general-settings)
+1. [Create and configure an application in Microsoft Entra admin center](#create-app-entra)
+1. [Finish configuration in the Users app](#finish-configuration)
+1. [Assign user or group to Microsoft Entra application](#assign-user-entra-app)
+1. [Test your configuration](#test-configurations)
+1. [Configure user roles in the Users app](#configure-user-roles)
+1. [Perform some final checks and configurations](#perform-final-checks)
 
 The following sections describe these steps in detail.
 
-### Configure general Microsoft Entra settings in the Users app
+### Configure general Microsoft Entra settings in the Users app {#configure-general-settings}
 
 1. In the [Users application](../accessing-users.md), click **Configure Authentication** in the right sidebar.
 
@@ -72,7 +72,7 @@ The following sections describe these steps in detail.
 
     ![Screenshot of the Users app with the Download SP Metadata XML button highlighted](images/azuread-download-sp-metadata-usr.png "Download Service Provider Metadata File")
 
-### Create  and configure an application in Microsoft Entra
+### Create and configure an application in Microsoft Entra {#create-app-entra}
 
 1. From the [Microsoft Entra admin center](https://entra.microsoft.com/#home), create a new OutSystems Microsoft Entra ID enterprise application.
 
@@ -84,7 +84,7 @@ The following sections describe these steps in detail.
 
 For more information on how to create a new application in Microsoft Entra, refer to [Add an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal#add-an-enterprise-application)
 
-### Finish configuration in the Users app
+### Finish configuration in the Users app {#finish-configuration}
 
 Back in the Users app:
 
@@ -114,13 +114,13 @@ Back in the Users app:
 
     For more information about application authentication, see [Configure App Authentication](../../../security/configure-authentication.md).
 
-### Assign user or group to Microsoft Entra application { #assign-user-entra-app }
+### Assign user or group to Microsoft Entra application {#assign-user-entra-app}
 
 In the Microsoft Entra admin center, assign a user or a group to the Microsoft Entra application you created.
 
 For more information about assigning groups to an app, refer to  [Manage users and groups assignment to an application](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/assign-user-or-group-access-portal#assign-users-or-groups-to-an-app-via-the-azure-portal).
 
-### Test your configuration
+### Test your configuration {#test-configurations}
 
 In the Microsoft Entra admin center, navigate back to your application's single sign-on settings and test the connection.
 
@@ -132,7 +132,7 @@ This happens because the user you used for testing Microsoft Entra authenticatio
 
 If the authentication is unsuccessful, double-check your configuration settings.
 
-### Configure user roles in the Users app
+### Configure user roles in the Users app {#configure-user-roles}
 
 You're currently logged in with a user account that doesn't have the required permissions to grant roles to end users. You must first log in with an administrator account.
 
@@ -168,7 +168,7 @@ Microsoft Entra limits the number of groups it will emit in a token to 150 for S
 
 After having the groups synchronized you should be able to access the OutSystems groups in the Users app and assign the desired OutSystems roles accordingly.
 
-### Perform some final checks and configurations
+### Perform some final checks and configurations {#perform-final-checks}
 
 Just like when using SAML 2.0 authentication, you must perform these two final tasks:
 

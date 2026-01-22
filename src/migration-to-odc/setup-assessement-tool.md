@@ -88,6 +88,12 @@ Additionally, you can trigger an assessment at any time in the Conversion Assess
 
 Before setting up the Conversion Assessment Tool, make sure the following requirements are met:
 
+* You have an enterprise [O11 cloud or self-managed infrastructure](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e).
+
+    * The Conversion Assessment Tool isn't supported for O11 Personal environments.
+
+    * OutSystems Partners can use the Conversion Assessment Tool in Cloud demo environments.
+
 * Your O11 environments use Platform Server 11.18.1 or later.
 
 * Your O11 infrastructure uses one of the following authentication methods for IT users:

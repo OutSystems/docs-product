@@ -52,6 +52,12 @@ Outcomes:
 
 ### Stage 3: Execute the code conversion
 
+<div class="info" markdown="1">
+
+The capabilities to convert the code of your O11 apps to ODC will be released at a future date.
+
+</div>
+
 Once you’ve prepared your O11 app to align with ODC architecture, you can convert the O11 code to ODC-native code, and publish the converted code to your ODC tenant.
 
 Outcomes:
@@ -61,6 +67,12 @@ Outcomes:
 * The converted ODC app is published and tested in an ODC development stage.
 
 ### Stage 4: Execute the data and users migration
+
+<div class="info" markdown="1">
+
+The capabilities to migrate the data and end users of your O11 apps to ODC will be released at a future date.
+
+</div>
 
 After testing and ensuring your app is running as expected in ODC, you can migrate your O11 data and end users to ODC.
 

@@ -17,17 +17,17 @@ coverage-type:
   - apply
 ---
 
-# Additional Configurations for OutSystems on Microsoft Azure
+# Additional configurations for OutSystems on Microsoft Azure
 
 In this article you can find the instructions for some additional configurations you might want to apply to **OutSystems on Microsoft Azure**.
 
 Check [OutSystems Documentation](https://success.outsystems.com/Documentation) and [Support Center](https://success.outsystems.com/Support) for further information.
 
-## Enable Remote Desktop for a Virtual Machine
+## Enable remote desktop for a virtual machine
 
 To access the machines remotely through RDF, you need to create a jump server - a dedicated VM with enabled RDP to reach and manage devices inside a network.
 
-1. Create a VM with the RDP activated and connect to the VM. This is your jump server. Check [Quickstart: Create a Windows virtual machine in the Azure portal](<https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal>) for detailed instructions. You can also use [Azure Bastion](https://azure.microsoft.com/services/azure-bastion).
+1. Create a VM with the RDP activated and connect to the VM. This is your jump server. Check [Quickstart: Create a Windows virtual machine in the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal) for detailed instructions. You can also use [Azure Bastion](https://azure.microsoft.com/services/azure-bastion).
 
 1. Discover the IP of a machine you want to connect to. Access the machine in the Azure Portal and in the left blade choose **Networking**. The IP shows next to the label **Private IP**.
 
@@ -35,29 +35,45 @@ To access the machines remotely through RDF, you need to create a jump server - 
 
 1. After you connect remotely to the jump server, use it to connect to a machine inside the group by using the private IP of the machine.
 
-## Add a Certificate Issued by a Certificate Authority to the Application Gateway of the Environment
+## Add a certificate issued by a certificate authority to the application gateway of the environment
 
-SSL certificates enable secure connections between the web server and the web browser through HTTPS protocol. If you wish to build mobile applications with OutSystems, you will need a certificate from a public trusted authority to place on your application gateway.
+SSL certificates enable secure connections between the web server and the web browser through HTTPS protocol. If you want to build mobile applications with OutSystems, you need a certificate from a public trusted authority to place on your application gateway.
 
 SSL offloading is active by default on every environment. All access, both http and https, to the environments are made through the Application Gateway IP/DNS Address.
 
 To add the trusted certificate to the application gateway of the environment, do the following:
 
-1. Go to the details of the **application gateway** that was created for the environment and choose **Listeners** from the menu to the left.
+1. Go to the details of the **application gateway** that was created for the environment and choose **Listeners** from the menu.
 
     ![Screenshot of the Application Gateway details page with Listeners option highlighted in the Azure Portal](images/additconf-image12.png "Application Gateway Listeners")  
 
-1. Select the **appGatewayHttpsListener**.
+1. Click on **Add listener** and add **appGatewayHttpsListener**
 
-    ![Screenshot of the appGatewayHttpsListener selected in the Azure Portal](images/additconf-image20.png "appGatewayHttpsListener Selection")  
+    ![Screenshot of the Azure Portal interface for adding a new listener](images/additconf-image16.png "Adding a listener to Azure Application Gateway")
 
-1. Add a new certificate by uploading the .pfx file and providing its password. Name it according to your preference.
+    Upload a new certificate by uploading the .pfx file along with the password and a name of your choice.
 
-    ![Screenshot showing the process of adding a new SSL certificate to the Application Gateway in Azure Portal](images/additconf-image11.png "Adding SSL Certificate to Application Gateway")
+1. From the Settings menu, select **Rules** > **Routing rule**. In the **Listener** tab, enter the following settings:
 
-Note that you can set up the end-to-end encryption for traffic in Microsoft Azure, as described in the Microsoft document [Configure end to end SSL by using Application Gateway with PowerShell](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-end-to-end-ssl-powershell).
+    | Setting       | Value                   |
+    | ------------- | ----------------------- |
+    | Rule name     | httpsrule               |
+    | Priority      | 2                       |
+    | Listener      | appGatewayHttpsListener |
 
-## Scale Your Environments Using Azure Scale Sets
+1. Select the **Backend targets** tab and enter the following settings:
+
+    | Setting          | Value                         |
+    | ---------------- | ----------------------------- |
+    | Target type      | Backend pool                  |
+    | Backend target   | appGatewayBackendPool         |
+    | Backend settings | appGatewayBackendHttpSettings |
+
+1. Select **Add** to create the routing rule.
+
+You can also set up end-to-end encryption for traffic in Microsoft Azure. For more information, see [Configure end to end SSL by using Application Gateway with PowerShell](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-end-to-end-ssl-powershell).
+
+## Scale your environments using Azure scale sets
 
 Your OutSystems environments are ready for horizontal scaling using **Azure virtual machine scale sets**. This is achieved scaling the number of front-ends of the environment with no need to manually install and register new servers into your infrastructure. To proceed with this operation, make sure your OutSystems license allows for multiple front-ends.
 
@@ -83,11 +99,11 @@ Choosing **Instances** from the menu to the left, you can see the progress of th
 
 ![Screenshot of the Azure Portal showing the progress of deployment for new instances in a Virtual Machine Scale Set](images/additconf-image1.png "Deployment Progress of Scale Set Instances")
 
-When the deployment finishes, you will see in the Service Center console for your environment that the new front-end servers are already running.
+When the deployment finishes, the Service Center console shows the new front-end servers running.
 
 ![Screenshot of the Service Center console in OutSystems showing the new front-end servers running after scaling](images/additconf-image25.png "New Front-end Servers Running")
 
-## Update Azure Scale Sets to a Newer Platform Version
+## Update Azure scale sets to a newer platform version
 
 <div class="info" markdown="1">
 
@@ -107,7 +123,7 @@ Follow these steps to update a Platform Server deployed on Microsoft Azure scale
 
 1. Update the Platform Server in your Deployment Controller, according to the checklist that opens in your browser when you run the update binary.
 
-1. Go to the [Base Image Versioning table](<https://github.com/OutSystems/AzureARMTemplates/#base-image-versioning>) of the available image versions and note the version that matches the Platform Server you installed/updated in your Deployment Controller VM.
+1. Go to the [Base Image Versioning table](https://github.com/OutSystems/AzureARMTemplates/#base-image-versioning) of the available image versions and note the version that matches the Platform Server you installed/updated in your Deployment Controller VM.
 
     ![Screenshot of the Base Image Versioning table on GitHub indicating available image versions for OutSystems](images/azure-image-versions.png "Base Image Versioning Table")
 

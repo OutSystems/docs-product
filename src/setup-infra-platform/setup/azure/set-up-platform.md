@@ -17,7 +17,7 @@ coverage-type:
   - apply
 ---
 
-# Set Up OutSystems on Microsoft Azure
+# Set up OutSystems on Microsoft Azure
 
 This article describes the steps to deploy and set up OutSystems on Microsoft Azure.
 
@@ -35,13 +35,13 @@ To deploy and set up OutSystems on Microsoft Azure you must execute the followin
 1. [Register the environments on your OutSystems deployment management console (LifeTime).](#register-the-environments-in-lifetime)
 1. [Install the extended product components.](#install-the-extended-product-components)
 
-## Run the Solution Template Wizard
+## Run the solution template wizard
 
 1. Go to [Azure Marketplace](https://azuremarketplace.microsoft.com "Azure Marketplace") or your [Azure Portal](https://portal.azure.com) and search for **OutSystems on Microsoft Azure** solution template.
 
 1. On your [Azure Portal](https://portal.azure.com), in the OutSystems on Microsoft Azure solution template, click the **Create** button to proceed to the deployment wizard.
 
-1. Fill in the information for the **Basics** blade and click OK to proceed to the next blade. The **Solution Identifier** you choose will be used to prefix the name of all resources created during the deployment, such as virtual machines or databases. In the **Resource Group** section click **Create new** and enter a name.
+1. Fill in the information for the **Basics** blade and click OK to proceed to the next blade. The **Solution Identifier** you choose prefixes the name of all resources created during the deployment, such as virtual machines or databases. In the **Resource Group** section click **Create new** and enter a name.
 
     ![Screenshot of the Azure Setup Basics blade with fields for Solution Identifier and Resource Group](images/azure-setup-basics.png "Azure Setup Basics Blade")
 
@@ -63,11 +63,11 @@ The deployment process might take about 1 hour to complete. You can check the de
 
 ![Screenshot showing the deployment status of OutSystems on Microsoft Azure in the Azure Portal](images/setup-image11.png "OutSystems Deployment Status in Azure")
 
-In your Azure Portal, you will now find a resource group with the name that you defined in the deployment wizard grouping all the newly created resources. All the [resources deployed](quick-reference.md#azure-resources "OutSystems on Microsoft Azure - Quick Reference") by OutSystems on Microsoft Azure solution template are prefixed with the solution identifier:
+In your Azure Portal, you now have a resource group with the name that you defined in the deployment wizard. This group contains all the newly created resources. All the [resources deployed](quick-reference.md#azure-resources "OutSystems on Microsoft Azure - Quick Reference") by OutSystems on Microsoft Azure solution template are prefixed with the solution identifier:
 
 ![Screenshot of the Azure Portal displaying the resource group with all resources created by the OutSystems solution template](images/setup-image15.png "OutSystems Azure Resources")
 
-## Apply your OutSystems License
+## Apply your OutSystems license
 
 The next step is to apply your OutSystems license to each environment:
 
@@ -84,7 +84,7 @@ To apply your OutSystems license to the **development** environment, do the foll
 
     ![Screenshot of the Azure Portal showing the application gateway details for the OutSystems development environment](images/setup-image4.png "OutSystems Development Environment Application Gateway")  
 
-1. You will access the environment through the **DNS name** of the public IP address. In the Public IP address details page, use the "Click to copy" option to copy the DNS name.
+1. Access the environment through the **DNS name** of the public IP address. In the Public IP address details page, use the "Click to copy" option to copy the DNS name.
 
     ![Screenshot of the Azure Portal with the DNS name of the public IP address for the OutSystems environment](images/setup-image7.png "OutSystems Public IP Address DNS Name")  
 
@@ -97,7 +97,7 @@ To apply your OutSystems license to the **development** environment, do the foll
 
 1. Go to the Administration section and select the Licensing tab.
 
-1. Take note of the **Serial Number** of the environment. You will need it to get the license file from OutSystems Customer portal.
+1. Take note of the **Serial Number** of the environment. You need this to get the license file from the OutSystems customer portal.
 
     ![Screenshot of the Service Center management console displaying the Serial Number of the OutSystems environment](images/setup-image9.png "OutSystems Environment Serial Number")  
 
@@ -109,7 +109,7 @@ To apply your OutSystems license to the **development** environment, do the foll
 
 ## Add a valid certificate to the environments
 
-To register the Development, Test, and Production environments in the LifeTime deployment management console, you have to first install valid certificates (signed by a Certificate Authority) in the Application Gateways of all the environments.
+To register the Development, Test, and Production environments in LifeTime, you must first install valid certificates in the Application Gateways of all environments. Use certificates signed by a Certificate Authority.
 
 To add the trusted certificate to the Application Gateway of each environment (including LifeTime) do the following:
 
@@ -119,13 +119,46 @@ To add the trusted certificate to the Application Gateway of each environment (i
 
     ![Screenshot of the Azure Portal showing the Listeners settings in the Application Gateway](images/additconf-image12.png "Azure Application Gateway Listeners")  
 
-1. Select the **appGatewayHttpsListener**.
+1. Select **Add listener** to create an HTTPS listener with your certificate. Enter the settings in the **Add listener** screen as follows:
 
-    ![Screenshot of the Azure Portal displaying the appGatewayHttpsListener details in the Application Gateway](images/additconf-image20.png "Azure Application Gateway Https Listener")  
+    | Setting                                | Value                              |
+    | -------------------------------------- | ---------------------------------- |
+    | Listener name                          | appGatewayHttpsListener            |
+    | Frontend IP                            | Public                             |
+    | Protocol                               | HTTPS                              |
+    | Port                                   | 443                                |
+    | Choose a certificate                   | Create new                         |
+    | Choose a certificate (HTTPS Settings)  | Upload a certificate               |
+    | Cert name                              | Enter a name of your choice        |
+    | PFX certificate file                   | Select your .pfx certificate file  |
+    | Password                               | Enter the certificate password     |
+    | Enable SSL Profile                     | Leave unchecked                    |
 
-1. Add a new certificate by uploading the .pfx file along with the password and a name of your choice.
+### Add a routing rule for HTTPS traffic
 
-    ![Screenshot of the Azure Portal interface for adding a new certificate to the Application Gateway](images/additconf-image11.png "Adding a Certificate to Azure Application Gateway")
+After creating the HTTPS listener, you need to add a routing rule to direct incoming HTTPS traffic to the backend pool.
+
+1. From the Settings menu, select **Rules** > **Routing rule**. The **Add a routing rule** screen opens.
+
+1. In the **Listener** tab, enter the following settings:
+
+    | Setting       | Value                   |
+    | ------------- | ----------------------- |
+    | Rule name     | httpsrule               |
+    | Priority      | 2                       |
+    | Listener      | appGatewayHttpsListener |
+
+1. Select the **Backend targets** tab and enter the following settings:
+
+    | Setting          | Value                         |
+    | ---------------- | ----------------------------- |
+    | Target type      | Backend pool                  |
+    | Backend target   | appGatewayBackendPool         |
+    | Backend settings | appGatewayBackendHttpSettings |
+
+1. Select **Add** to create the routing rule.
+
+1. Repeat the steps in this section for all remaining environments (Test, Production, and LifeTime).
 
 ## Register the environments in LifeTime
 
@@ -135,13 +168,13 @@ To register your environments in the LifeTime deployment management console, do 
 
     ![Screenshot of the Azure Portal showing the application gateway details for the OutSystems LifeTime environment](images/setup-image22.png "OutSystems LifeTime Environment Application Gateway")  
 
-1. You will access the environment through the **DNS name** of the public IP address. In the Public IP address details page, use the "Click to copy" option to copy the DNS name.
+1. Access the environment through the **DNS name** of the public IP address. In the Public IP address details page, use the "Click to copy" option to copy the DNS name.
 
     ![Screenshot of the Azure Portal with the DNS name of the public IP address for the OutSystems LifeTime environment](images/setup-image18.png "OutSystems LifeTime Public IP Address DNS Name")  
 
 1. Using the DNS name from the previous step, access the LifeTime console with the following URL: `http://<DNS_name>/LifeTime`.
 
-1. To register the development environment, we will use the **DNS name** of the public IP address associated to its application gateway, for example "myid-devappgw-PIP". Go to the details of the **public IP address** and use the "Click to copy" option to copy the DNS name.
+1. To register the development environment, use the **DNS name** of the public IP address associated with its application gateway, for example "myid-devappgw-PIP". Go to the details of the **public IP address** and use the "Click to copy" option to copy the DNS name.
 
     ![Screenshot of the Azure Portal with the DNS name of the public IP address for the OutSystems environment](images/setup-image7.png "OutSystems Public IP Address DNS Name")  
 
@@ -155,7 +188,7 @@ At this point, we recommend that you change your password for the LifeTime admin
 
 ## Install the extended product components
 
-In this step you install the extended product components, a set of OutSystems modules that provide essential features for development. These components are available on the Forge repository. To install them, you need the OutSystems Community user name and password - which you can get [here](https://www.outsystems.com/home/signup.aspx).
+In this step you install the extended product components, a set of OutSystems modules that provide essential features for development. These components are available on the Forge repository. To install them, you need the OutSystems Community user name and password - which you can get from the [OutSystems sign up page](https://www.outsystems.com/home/signup.aspx).
 
 There are eight components that you need to set up in your **development environment only**. What follows is an example on how to install the Charts Web component. Follow the steps for the remaining components.
 
@@ -188,4 +221,4 @@ Here is the list of all extended product components that you need to install, in
 1. [OutSystems UI Templates Mobile](https://www.outsystems.com/forge/4148/)
 1. [OutSystems UI Templates Reactive](https://www.outsystems.com/forge/6335/)
 
-And you are done! At this point, your OutSystems on Microsoft Azure is ready to use. Check [additional configurations](<additional-configurations.md> "OutSystems on Microsoft Azure - Additional Configurations") to learn more about configurations you might want to execute in your OutSystems infrastructure.
+And you are done! At this point, your OutSystems on Microsoft Azure is ready to use. Check [additional configurations](additional-configurations.md "OutSystems on Microsoft Azure - Additional Configurations") to learn more about configurations you might want to execute in your OutSystems infrastructure.

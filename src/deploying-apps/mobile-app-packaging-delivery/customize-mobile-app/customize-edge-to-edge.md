@@ -27,6 +27,7 @@ Mobile App Build Service (MABS) 12 introduces changes to how mobile apps handle 
 | Property | Status |
 | --- | --- |
 | AndroidEdgeToEdge | Added |
+| NavigationBarBackgroundColor | Added |
 | StatusBarBackgroundColor | Unchanged |
 | StatusBarDefaultScrollToTop | Removed/Ignored |
 | StatusBarOverlaysWebView | Removed/Ignored |
@@ -36,6 +37,7 @@ Mobile App Build Service (MABS) 12 introduces changes to how mobile apps handle 
 
 | Property | Status |
 | --- | --- |
+| window.OSNavigationBar.setNavigationBarColor | Added |
 | window.statusbar.visible | Added |
 | window.statusbar.setBackgroundColor | Added |
 | window.StatusBar.backgroundColorByHexString | Removed |
@@ -77,12 +79,13 @@ Mobile App Build Service (MABS) 12 introduces changes to how mobile apps handle 
 
 | Property | Values | Description |
 | --- | --- | --- |
-| AndroidEdgeToEdge | `True` or `False` | Whether the WebView will reach edge-to-edge or just between the system bars on Android devices.<br/>If set to `True`, the application reports the safe area insets through the `--safe-area-inset-*` CSS variables. For more information, refer to [Safe area inset support](<./customize-edge-to-edge.md#safe-area-inset-support>). If set to `False`, the style of the status bar icons is automatically managed by the system.<br/>If not set, defaults to `False`. |
-| StatusBarBackgroundColor | `#000000` to `#FFFFFF` | The background color of the status bar. The status bar style (light or dark text and icons) is automatically determined based on this color for optimal contrast.<br/>Has no effect when `AndroidEdgeToEdge` is set to `True`.<br/>If not set, the status bar uses your application's primary color.<br/>Expected color format: `#RRGGBB`. |
+| AndroidEdgeToEdge | `True` or `False` | Whether the WebView will reach edge-to-edge or just between the system bars on Android devices.<br/>- If set to `True`, the app reports the safe area insets through the `--safe-area-inset-*` CSS variables. For more information, refer to [Safe area inset support](#safe-area-inset-support-safe-area-inset-support).<br/>- If set to `False`, the style of the status bar icons is automatically managed by the system.<br/>- If not set, defaults to `False`. |
+| NavigationBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the navigation bar.<br/>- If set to `#00000000`, the navigation bar follows the device theme.<br/>- If set to any other hex color, the navigation bar uses that color and it does not change when the device theme changes.<br/>- If not set, it matches the color defined in the `BackgroundColor` preference, which by default is your application's primary color.<br/>- Has no effect when `AndroidEdgeToEdge` is set to `True` on android 15+.<br/>- Expected color format: `#RRGGBB` or `#00000000`. |
+| StatusBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the status bar. Operates the same way as `NavigationBarBackgroundColor`, with the addition that the status bar style (light or dark text and icons) is automatically determined based on the color for optimal contrast. |
 
 ## System bars JSON template
 
-Use the following template as a reference for defining a custom background color for the application status bar:
+Use the following template as a reference for defining a custom background color for the application status bar and navigation bar:
 
 ```javascript
 {
@@ -90,6 +93,10 @@ Use the following template as a reference for defining a custom background color
         "global": [{
             "name": "StatusBarBackgroundColor",
             "value": "<#RRGGBB>"
+        },
+        {
+            "name": "NavigationBarBackgroundColor",
+            "value": "<#AARRGGBB>"
         }],
         "android": [{
             "name": "AndroidEdgeToEdge",

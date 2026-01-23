@@ -274,7 +274,16 @@ Place the content design page in the following folder structure (create the fold
 
 ## Step 3 — Jira Planning
 
-Create the following items in the Jira project "R&D Demo" (key: "RD") on the board "Demo Problems":
+### Project and Board Selection
+
+**Before creating any Jira tickets, ask the user which Jira project and board should be used:**
+
+* **For testing purposes:** Jira project "R&D Demo" (key: "RD") on the board "Demo Problems"
+* **For production tickets:** Jira project "Technical Knowledge Team" (key: "TK") on the board "Technical Knowledge Board"
+
+**Do not proceed with ticket creation until the user has explicitly selected a project and board.**
+
+Once the user has selected the project and board, create the following items:
 
 * Dedicated epic for this content piece, where all tickets should be grouped in
 * All required Jira tickets (all tickets must include the "AI-TK" label)
@@ -379,6 +388,7 @@ Ensure tickets align with:
 
 Ask the user to confirm:
 
+* Selected Jira project and board
 * Sprint structure
 * Ticket breakdown
 
@@ -405,7 +415,7 @@ Once the connection is verified, create the Jira issues using the Atlassian MCP 
 ```json
 {
   "cloudId": "3755dbe1-fa22-4c37-956e-59bea84af9cf",
-  "projectKey": "RD",
+  "projectKey": "[Selected project key from user, e.g., 'RD' or 'TK']",
   "issueTypeName": "Epic",
   "summary": "[Content Piece Title from Step 2]",
   "description": "[Full content design description from Step 2 Confluence page, in Markdown format]",
@@ -417,9 +427,10 @@ Once the connection is verified, create the Jira issues using the Atlassian MCP 
 
 **Data mapping for Epic:**
 
+* `projectKey`: Use the project key selected by the user in the Project and Board Selection step (e.g., "RD" for testing or "TK" for production)
 * `summary`: Use the main title/topic from the content design created in Step 2
 * `description`: Use the full content design description from the Confluence page created in Step 2 (convert to Markdown if needed)
-* Store the returned Epic key (e.g., `RD-123`) for reference
+* Store the returned Epic key (e.g., `RD-123` or `TK-456`) for reference
 
 #### Step 3.3 — Create All Task Tickets
 
@@ -430,12 +441,12 @@ Once the connection is verified, create the Jira issues using the Atlassian MCP 
 ```json
 {
   "cloudId": "3755dbe1-fa22-4c37-956e-59bea84af9cf",
-  "projectKey": "RD",
+  "projectKey": "[Selected project key from user, e.g., 'RD' or 'TK']",
   "issueTypeName": "Task",
   "summary": "[Content-type] [Work item name] - [Work type]",
   "description": "[Work item description from Step 2, including target audiences, content sources, and any relevant details, in Markdown format]",
   "parent": {
-    "key": "[Epic key from Step 3.2, e.g., RD-123]"
+    "key": "[Epic key from Step 3.2, e.g., RD-123 or TK-456]"
   },
   "additional_fields": {
     "labels": ["AI-TK"]
@@ -443,7 +454,7 @@ Once the connection is verified, create the Jira issues using the Atlassian MCP 
 }
 ```
 
-**Note:** All Task tickets MUST be linked to the Epic created in Step 3.2. Use the `parent` parameter with an object containing the Epic key (e.g., `"parent": { "key": "RD-123" }`) to establish the parent-child relationship.
+**Note:** All Task tickets MUST be linked to the Epic created in Step 3.2. Use the `parent` parameter with an object containing the Epic key (e.g., `"parent": { "key": "RD-123" }` or `"parent": { "key": "TK-456" }`) to establish the parent-child relationship.
 
 **Data mapping for Task tickets:**
 
@@ -467,7 +478,7 @@ Once the connection is verified, create the Jira issues using the Atlassian MCP 
 1. Continue in priority order (3, 4, etc.)
 1. For each work item, create tickets in sequential order (Outline → Draft → Peer Review → SME Review → Visual Assets)
 
-**Store all created ticket keys** (e.g., `RD-124`, `RD-125`) for the blocked-by relationship mapping.
+**Store all created ticket keys** (e.g., `RD-124`, `RD-125` or `TK-456`, `TK-457`, depending on the selected project) for the blocked-by relationship mapping.
 
 #### Step 3.4 — Document Blocked-By Relationships
 
@@ -484,7 +495,7 @@ Update the Confluence Content Design page created in Step 2:
 1. Add the Epic link to the page
 1. Add each Task ticket link to its corresponding work item in the Content Design table
 1. Format Jira links using `<custom data-type="smartlink">` tags:
-   * Example: `<custom data-type="smartlink">https://outsystemsrd.atlassian.net/browse/RD-123</custom>`
+   * Example: `<custom data-type="smartlink">https://outsystemsrd.atlassian.net/browse/RD-123</custom>` or `<custom data-type="smartlink">https://outsystemsrd.atlassian.net/browse/TK-456</custom>` (use the actual ticket keys created)
 
 **Do not proceed to Step 4 without explicit approval.**
 
@@ -562,6 +573,7 @@ Create content drafts and open a pull request that strictly follow the approved 
     * Ensure all changes are committed to the local branch
     * Push the branch to the remote repository using `git push -u origin <branch-name>`
     * Only after the branch exists on the remote, create the Pull Request
+* **When creating PRs in GitHub, include a label called "AI-TK" on each PR**
 * Iterate through all repositories in the current workspace that require updates
 * Group changes by repository and create PRs accordingly
 * Ensure all PRs for a given repository are created before moving to the next repository

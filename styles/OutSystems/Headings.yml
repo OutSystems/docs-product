@@ -43,6 +43,7 @@ exceptions:
   - Asset Configurations API
   - Forge
   - Self-hosted
+  - Cloud demo
   
 # Concepts
   - Action

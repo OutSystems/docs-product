@@ -18,8 +18,11 @@ Ensure all required MCP servers are **reachable and operational** before startin
 ### Instructions
 
 1. Enumerate all configured MCP servers available to the assistant.
-1. Run a status or health check against each MCP server.
-   * Use the server's native status, ping, or lightweight test call.
+1. Run a status or health check against each MCP server using the following specific tools:
+   * **Atlassian MCP Server:** Use the `atlassianUserinfo` tool
+   * **Figma MCP Server:** Use the `howami` tool
+   * **outsystems-tech-content MCP Server:** Use the `check_health` tool
+   * **GitHub MCP Server:** Use the `get_me` tool
    * Do **not** perform any write operations.
 1. Collect and report the results for each MCP server:
    * Server name
@@ -544,11 +547,19 @@ Create content drafts and open a pull request that strictly follow the approved 
    * Language, tone, and formatting strictly follow `.github/copilot-instructions.md` guidelines
    * Follow all structure, formatting, and file naming rules specified in `.github/copilot-instructions.md`
    * Ensure all generated content complies with the project's Vale and markdownlint rules
+   * **Vale rule updates:** When Vale validation reports issues of type **ERROR** that cannot be resolved by changing the content (because the rule itself needs updating - exceptions), update the corresponding Vale rule file in the `docs-validation` repository. The `docs-validation` repository is included in the workspace, so rule files can be edited directly. For instance, if `OutSystems.Headings` incorrectly flags "JSON" in "Building JSON strings" title as a capitalization error, but "JSON" is a valid acronym that should remain uppercase, add "JSON" to the exception list in `docs-validation/styles/OutSystems/Headings.yml`. After modifying the corresponding rule, commit the changes and create a pull request in the `docs-validation` repository. Note that the rule changes will not take effect in the documentation repositories until the PR is merged in `docs-validation` and the changes are synced to those repositories.
    * No unapproved assumptions or scope expansion are introduced
 1. **Repository iteration and PR creation:**
    * Iterate over all repositories in the current workspace that were identified in Step 2 as needing updates
    * For each repository, perform the necessary changes for all tickets that target that repository
-   * For each ticket, create a local branch, make changes, and commit them
+   * For each ticket:
+     * Create a local branch and make the necessary changes
+     * **Before committing, ask the user to validate the draft changes:**
+       * Present a summary of the changes made (files created/modified, key content updates)
+       * Show the diff or key changes for review
+       * Explicitly ask: "Please review the draft changes for [ticket name]. Do you approve these changes to proceed with committing and creating the pull request?"
+     * **Do not commit or proceed with the pull request until the user explicitly approves the draft changes**
+     * After user approval, commit the changes
    * **Push each branch to the remote repository** before creating the Pull Request
    * Create one Pull Request per Jira ticket
    * Each PR should correspond to exactly one ticket created in Step 3

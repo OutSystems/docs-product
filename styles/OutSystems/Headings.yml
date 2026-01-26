@@ -177,6 +177,8 @@ exceptions:
   - Paula
   - USB
   - PC
+  - NaN
+  - EXTRACT
 # Events
   - On Initialize
   - On Ready

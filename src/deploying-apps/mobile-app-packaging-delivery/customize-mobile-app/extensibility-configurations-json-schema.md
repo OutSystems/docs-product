@@ -178,20 +178,24 @@ The value of the **Extensibility Configurations** property of a mobile app modul
 
 The following section provides more details about the options you can use in the `preferences` top-level property. For a comprehensive list of the available settings, see [preferences in Config.xml](https://cordova.apache.org/docs/en/dev/config_ref/index.html#preference) by Apache Cordova.
 
-| Property                          | Platform | Default | Description |
+| Property | Platform | Default | Description |
 | --------------------------------- | -------- | ------- | ----------- |
-| (iOS_FEATURE)UsageDescription    | iOS        | NA       | Adds preferences that match the pattern of UsageDescription to the Info.plist file. For full list, see [Cocoa Keys](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW1) and filter by UsageDescription. For an example, see information about [iOS usage descriptions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions/MABS_7_Release_notes#ios-usage-descriptions) in the release notes. |
-| AddUploadWidgetPermissions      | Android, iOS        | false       | Set as false to skip adding permissions required by the upload widget to AndroidManifest.xml and/or Info.plist. For an example, see information about [Upload widget permissions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions/MABS_7_Release_notes#upload-widget-permissions) in the release notes. |
+| (iOS_FEATURE)UsageDescription | iOS | NA | Adds preferences that match the pattern of UsageDescription to the Info.plist file. For full list, see [Cocoa Keys](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW1) and filter by UsageDescription. For an example, see information about [iOS usage descriptions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions/MABS_7_Release_notes#ios-usage-descriptions) in the release notes. |
+| AddUploadWidgetPermissions | Android, iOS | false | Set as false to skip adding permissions required by the upload widget to AndroidManifest.xml and/or Info.plist. For an example, see information about [Upload widget permissions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions/MABS_7_Release_notes#upload-widget-permissions) in the release notes. |
 | AllowHttpConnections | Android, iOS | false | Set to true to allow the usage of cleartext HTTP traffic in your mobile app. |
 | DeepLinksHandlerType | Android, iOS | default | Defines how the mobile app [handles deeplinks](customize-deeplink-behavior.md). This can have 4 possible values: `default`, `event`, `function` or `legacy`. |
 | DisableInspectorNotification | iOS | false | Set to true to remove the notification from the [Network inspector](https://www.outsystems.com/tk/redirect?g=2bea2ff9-7655-4952-a00c-2a3f1e3316e9) plugin in iOS debug builds. |
 | DisplayName | Android, iOS | NA | Overrides the name of app that is displayed in a mobile device. |
-| EnableRefererHeaderCustomScheme | iOS        | false       | Set to true to inject the `Referer: URL` in the requests of the native app, where `URL` is the app domain.         |
-| FilterTouchesWhenObscured | Android |true for MABS ≥ 9<br/> false for MABS &lt; 9| Defines the value of the [filterTouchesWhenObscured](https://developer.android.com/reference/android/view/View#security) property of WebView on Android. Set to true to prevent the app from handling touches while obscured by other apps.|
-| InitLoggerSyncDelay             | Android        | 0       | Seconds to delay the logger synchronization after the initialization.         |
+| EnableRefererHeaderCustomScheme | iOS | false | Set to true to inject the `Referer: URL` in the requests of the native app, where `URL` is the app domain. |
+| FilterTouchesWhenObscured | Android | true for MABS ≥ 9<br/> false for MABS &lt; 9 | Defines the value of the [filterTouchesWhenObscured](https://developer.android.com/reference/android/view/View#security) property of WebView on Android. Set to true to prevent the app from handling touches while obscured by other apps. |
+| InitLoggerSyncDelay | Android | 0 | Seconds to delay the logger synchronization after the initialization. |
 | LoggingBehavior | Android, iOS | all | Defines whether logs from the core of the OutSystems mobile app are emitted to development consoles or not. This does not affect the logs emitted to ODC Portal or Service Center. The preference can have 3 possible values: `none` (don't emit), `debug` (emit when it's a development/debug build), `all` (emit). |
-| RemoveSystemCertificates        | Android        | false | Set to true to remove system certificates from the trust anchors in network_security_config.xml.         |
-| RemoveUserCertificates          | Android        |true for MABS ≥ 9; <br/> false for MABS &lt; 9| Set to true to remove user certificates from the trust anchors in network_security_config.xml.         |
+| NSAllowsArbitraryLoads | iOS | NA | Boolean value to set or remove NSAllowsArbitraryLoads value in Apple App Transport Security. |
+| NSAllowsArbitraryLoadsForMedia | iOS | NA | Boolean value to set or remove NSAllowsArbitraryLoadsForMedia value in Apple App Transport Security. |
+| NSAllowsArbitraryLoadsInWebContent | iOS | NA | Boolean value to set or remove NSAllowsArbitraryLoadsInWebContent value in Apple App Transport Security. |
+| NSAllowsLocalNetworking | iOS | NA | Boolean value to set or remove NSAllowsLocalNetworking value in Apple App Transport Security. |
+| RemoveSystemCertificates | Android | false | Set to true to remove system certificates from the trust anchors in network_security_config.xml. |
+| RemoveUserCertificates | Android | true for MABS ≥ 9; <br/> false for MABS &lt; 9 | Set to true to remove user certificates from the trust anchors in network_security_config.xml. |
 
 ## Resources
 

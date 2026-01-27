@@ -96,6 +96,7 @@ exceptions:
   - Resource
   - Role
   - RSA
+  - RAG
   - Screen
   - Server
   - Service

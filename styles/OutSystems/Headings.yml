@@ -143,6 +143,8 @@ exceptions:
   - On After Fetch
   - On Parameters Changed
   - On Destroy
+  - On Application Ready
+  - On Application Resume
 # UI Patterns and Widgets
   - Pattern
   - Columns

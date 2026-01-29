@@ -136,6 +136,8 @@ exceptions:
   - PC
   - NaN
   - EXTRACT
+  - AdvancedQuery
+  - GetWorkoutsData
 # Events
   - On Initialize
   - On Ready

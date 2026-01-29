@@ -154,7 +154,7 @@ Before you start, make sure the following requirements are met:
 
 * You have an enterprise [cloud or self-managed O11 infrastructure](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e).
 
-    * Data interoperability isn't supported for O11 Personal Environment.
+    * Data interoperability isn't supported for O11 Personal Environment and partner's Cloud demo environments.
 
     * Take into account the [current limitations](#temporary-limitations) for the O11 infrastructure setup.
 

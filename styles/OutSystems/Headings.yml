@@ -284,4 +284,4 @@ exceptions:
   - Mobile Developer specialization
   - Front-end Developer specialization
 # Errors
-  - \bOS-[A-Z]+-[A-Z]+-\d+\b
+  - \bOS-(?:[A-Z]+-){1,2}\d+\b

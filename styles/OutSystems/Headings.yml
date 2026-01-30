@@ -138,6 +138,8 @@ exceptions:
   - EXTRACT
   - AdvancedQuery
   - GetWorkoutsData
+  - Read-Only
+  - Read-Write
 # Events
   - On Initialize
   - On Ready
@@ -147,6 +149,9 @@ exceptions:
   - On Destroy
   - On Application Ready
   - On Application Resume
+  - OnSync
+  - SyncCompanies
+  - SyncContacts
 # UI Patterns and Widgets
   - Pattern
   - Columns

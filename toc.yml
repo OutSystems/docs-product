@@ -754,8 +754,6 @@
             - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-messaging-plugin-configurator-api.md
             - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-api-v1-v2.md
         - href: integration-with-systems/mobile-plugins/health-fitness/intro.md
-        - topics:
-            - href: integration-with-systems/mobile-plugins/health-fitness/intro_v2.md
         - href: integration-with-systems/mobile-plugins/inapp-browser/inapp-browser.md
         - href: integration-with-systems/mobile-plugins/keystore-plugin/intro.md
         - topics:

@@ -375,21 +375,20 @@ An app with the health and fitness plugin can run on many Android or iOS devices
 
 Following is a list of actions you can use to make sure there are no errors:
 
-| Variable        | Action                   | Description                                                    |
+| Variable | Action | Description |
 | --------------- | ------------------------ | -------------------------------------------------------------- |
-| **IsAvailable** | CheckHealthFitnessPlugin | True if the plugin is available in the app.                    |
-| **Success**     | RequestPermissions       | True if there aren't errors while requesting permissions.      |
-| **Success**     | AdvancedQuery            | True if there aren't errors while accessing and storing data.  |
-| **Success**     | GetWorkoutsData          | True if there aren't errors while accessing and storing data.  |
-| **Success**     | GetFitnessData (*)       | True if there aren't errors while accessing and storing data.  |
-| **Success**     | WriteProfileData         | True if there aren't errors while writing data.                |
-| **Success**     | SetBackgroundJob         | True if there aren't errors while creating a background job.   |
-| **Success**     | DeleteBackgroundJob      | True if there aren't errors while deleting a background job.   |
-| **Success**     | UpdateBackgroundJob      | True if there aren't errors while updating a background job.   |
-| **Success**     | ListBackgroundJobs       | True if there aren't errors while listing the background jobs. |
-| **Success**     | OpenHealthConnectApp     | True if there aren't errors while opening the Health Connect app. |
-| **Success**     | DisableGoogleFit         | True if there aren't errors while disconnecting from Google Fit.|
-| **Success**     | DisableHealthConnect     | True if there aren't errors while disconnecting from Health Connect.|
+| **IsAvailable** | CheckHealthFitnessPlugin | True if the plugin is available in the app. |
+| **Success** | RequestPermissions | True if there aren't errors while requesting permissions. |
+| **Success** | AdvancedQuery | True if there aren't errors while accessing and storing data. |
+| **Success** | GetWorkoutsData | True if there aren't errors while accessing and storing data. |
+| **Success** | GetFitnessData (*) | True if there aren't errors while accessing and storing data. |
+| **Success** | WriteProfileData | True if there aren't errors while writing data. |
+| **Success** | SetBackgroundJob | True if there aren't errors while creating a background job. |
+| **Success** | DeleteBackgroundJob | True if there aren't errors while deleting a background job. |
+| **Success** | UpdateBackgroundJob | True if there aren't errors while updating a background job. |
+| **Success** | ListBackgroundJobs | True if there aren't errors while listing the background jobs. |
+| **Success** | OpenHealthConnectApp | True if there aren't errors while opening the Health Connect app. |
+| **Success** | DisableHealthConnect | True if there aren't errors while disconnecting from Health Connect. |
 
 (*) There are several actions in the Health & Fitness plugin that begin with **Get** and have a **Success** variable.
 

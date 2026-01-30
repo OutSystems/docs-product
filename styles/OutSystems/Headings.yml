@@ -152,6 +152,7 @@ exceptions:
   - OnSync
   - SyncCompanies
   - SyncContacts
+  - ServerDataSync
 # UI Patterns and Widgets
   - Pattern
   - Columns

@@ -219,7 +219,101 @@ Start, for example, by defining a variable that corresponds to the type of outpu
 
 ![Example of a user interface in Service Studio displaying daily step count.](images/sample-interface-ss.png "Sample User Interface for Health Data")
 
-To show the step count for the day, you can use an **Expression** and customize the look and feel of the parent widget (2).
+To show the step count for the day, you can use an expression and customize the look and feel of the parent widget (2).
+
+## Retrieve record metadata
+
+<div class="info" markdown="1">
+
+The plugin returns metadata provided by HealthKit (iOS) and Health Connect (Android) without additional processing.
+
+</div>
+
+The plugin returns several client actions that return additional metadata about each health record, allowing you to understand how the data is recorded and where it came from.
+
+* **RecordingMethod**: Indicates how the record is created.
+    * `MANUAL`: The record is manually entered by the user.
+    * `AUTOMATIC`: The record is automatically recorded by the system or device sensors.
+    * `ACTIVELY_RECORDED`: (Android only) The record is actively recorded during an activity or workout.
+    * `UNKNOWN`: (Android only) The recording method can't be determined.
+
+* **Device**: Information about the device where the data is recorded.
+    * **Model**: The device model or name (iPhone, Apple Watch, Pixel Watch).
+    * **Manufacturer**: The device manufacturer.
+* **OriginApp**: Identifies the app that writes the record into HealthKit (iOS) or Health Connect (Android).
+This corresponds to the app's bundle identifier (iOS) or package name (Android).
+
+Note that the plugin can't guarantee with 100% certainty whether a record is manually entered by the user. The returned values represent the best information provided by HealthKit (iOS) and Health Connect (Android).
+
+### Client actions that return RecordMetadata
+
+The following client actions return record metadata:
+
+* **AdvancedQuery**
+* **GetWorkoutsData** (iOS only)
+* **GetFitnessData**
+* **GetHealthData**
+* **GetProfileData**
+
+The availability of RecordMetadata depends on the nature of the returned data. For **AdvancedQuery**, it also depends on the selected operation type.
+
+#### RecordMetadata in AdvancedQuery
+
+The **AdvancedQuery** client action returns an additional `RecordMetadata List` output parameter. This list provides metadata about how each record is created.
+
+The behavior of `RecordMetadata List` in AdvancedQuery depends on the selected `OperationType`:
+
+* **RAW**
+    * Returns one `RecordMetadata` entry for each health value.
+    * The metadata list follows the same order as the values list.
+    * This provides a 1:1 mapping between record values and their metadata.
+
+    Example response for heart rate data:
+
+    ```json
+    {
+      "values": [72, 85, 90, 78, 82, 88],
+      "recordMetadataList": [
+      { "recordingMethod": "AUTOMATIC", "device": "Apple Watch", "originApp": "com.apple.Health" },
+      { "recordingMethod": "AUTOMATIC", "device": "iPhone", "originApp": "com.fitbit.app" },
+      { "recordingMethod": "MANUAL", "device": "iPhone", "originApp": "com.apple.Health" },
+      { "recordingMethod": "AUTOMATIC", "device": "Apple Watch", "originApp": "com.apple.Health" },
+      { "recordingMethod": "AUTOMATIC", "device": "Apple Watch", "originApp": "com.strava.app" },
+      { "recordingMethod": "MANUAL", "device": "iPhone", "originApp": "com.apple.Health" }
+      ]
+    }
+    ```
+
+    In this example, the first heart rate reading (72 bpm) was automatically recorded by an Apple Watch, while the third reading (90 bpm) was manually entered by the user on their iPhone.
+
+* **MIN / MAX**
+    * These operations return the minimum or maximum value for the selected period.
+    * The returned `RecordMetadata` corresponds to the record that produced the selected value.
+    * Only a single `RecordMetadata` entry is returned.
+
+* **SUM / AVERAGE**
+    * These operations return aggregated values.
+    * Aggregated values don't correspond to a single underlying record.
+    * `RecordMetadata` **isn't returned** for these operations.
+
+#### RecordMetadata in GetWorkoutsData
+
+For the **GetWorkoutsData** client action, `RecordMetadata` refers to the workout itself and not to the individual samples collected during the workout.
+
+The metadata is derived from the `HKWorkout` object and follows the same structure and semantics as other `RecordMetadata` responses.
+
+#### RecordMetadata when writing data
+
+When writing health and fitness data using **WriteProfileData**, the plugin ensures that the record is correctly marked as manually entered.
+
+* **RecordingMethod**
+    * **MANUAL**: The record is explicitly marked as manually entered by the user.
+
+* **OriginApp**: Automatically set by HealthKit to the bundle identifier (iOS) or package name (Android) of the app that writes the data.
+
+* **Device**
+    * Not set when writing data manually.
+    * Device information is only associated with records that are automatically recorded by sensors or devices, such as Apple Watch or Pixel Watch.
 
 ### Create logic to access and use health and fitness data
 
@@ -229,7 +323,7 @@ The health or fitness query parameters might include:
 
 * period: start, end
 * time unit: second, minute, hour, day, week, month, year
-* operation type: sum, min, max, average
+* operation type: sum, min, max, average, raw
 
 ![Service Studio logic flow for accessing and querying health and fitness data.](images/get-fitness-data-ss.png "Accessing Health and Fitness Data")
 
@@ -271,9 +365,11 @@ Verify that access and storage of health or fitness workout data on the device w
 
 ### Create logic to write health and fitness data
 
-To write health and fitness data you can use the **WriteData** action. Set the parameters for the type of health or fitness variable you want and the new value you want to store.
+To write health and fitness data you can use the **WriteProfileData** action. Set the parameters for the type of health or fitness variable you want and the new value you want to store.
 
-To check that writing the health or fitness data on the device is working, verify the value of **WriteData.Success** is **True**.
+Note that **WriteProfileData** only supports some of the health and fitness variables. Not all variables exposed by the plugin can be written, and support depends on the platform.
+
+To check that writing the health or fitness data on the device is working, verify the value of **WriteProfileData.Success** is **True**.
 
 ### Create logic to define a background job
 

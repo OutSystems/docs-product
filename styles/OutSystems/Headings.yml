@@ -38,6 +38,12 @@ exceptions:
   - Build Operations API
   - Dependency Management
   - Dependency Management API
+  - GetGroundingData
+  - Data
+  - GetGroundingData
+  - Call Agent
+  - StoreMemory
+  - 
   - Asset Repository
   - Asset Repository API
   - Asset Configurations

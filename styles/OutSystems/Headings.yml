@@ -43,7 +43,7 @@ exceptions:
   - GetGroundingData
   - Call Agent
   - StoreMemory
-  - 
+  - Agent Workbench
   - Asset Repository
   - Asset Repository API
   - Asset Configurations
@@ -146,6 +146,7 @@ exceptions:
   - GetWorkoutsData
   - Read-Only
   - Read-Write
+  - LLM
 # Events
   - On Initialize
   - On Ready

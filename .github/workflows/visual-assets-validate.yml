@@ -39,7 +39,7 @@ jobs:
 
     - name: Checkout
       if: inputs.files == '' || steps.count.outputs.number > 0
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         fetch-depth: 1
         ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
@@ -51,14 +51,48 @@ jobs:
     - name: 'Validate visual assets for changed files'
       if: steps.count.outputs.number > 0
       run: |
+        VALID_SUFFIXES="-(ss|odcs|is|lt|sc|pl|usr|at|ct|af|gc|fg|ams|ib|eb|we|az|vs|ok|fc|diag)$"
         while IFS= read -r file; do
-        if [ -f "${file}" ]; then
-          echo "Run markdown-figma on ${file}.";
-          markdown-figma --input "${file}" --api-token ${{ secrets.FIGMA_API_TOKEN }} --export "images" --similarity ${{ vars.FIGMA_SIMILARITY_THRESHOLD }} --svg-visual-check-only --report report.md --report-append --parse-html;
-        else 
-          echo "${file} does not exist."
-        fi
-        done <<< cat << EOF
+          [ -z "$file" ] && continue
+
+          if [ ! -f "${file}" ]; then
+            echo "${file} does not exist."
+            continue
+          fi
+
+          # Validate image files
+          if [[ "$file" =~ \.(png|jpg|jpeg|gif|webp|svg)$ ]]; then
+            filename=$(basename "$file")
+            name_without_ext="${filename%.*}"
+            HAS_ERRORS=0
+
+            # Only .png extension allowed
+            if [[ ! "$filename" =~ \.png$ ]]; then
+              echo "- ❌ $file: Image must have .png extension (only .png is allowed, got: ${filename##*.})" >> report.md
+              HAS_ERRORS=1
+            fi
+
+            # Hyphen-separated, only lowercase letters and hyphens, no numbers or special characters
+            if [[ ! "$name_without_ext" =~ ^[a-z]+(-[a-z]+)*$ ]]; then
+              echo "- ❌ $file: Image name must be hyphen-separated, lowercase letters and hyphens only (no numbers or special characters)" >> report.md
+              HAS_ERRORS=1
+            fi
+
+            # Must end with one of the valid suffixes
+            if [[ ! "$name_without_ext" =~ $VALID_SUFFIXES ]]; then
+              echo "- ❌ $file: Image name must end with one of: ss, odcs, is, lt, sc, pl, usr, at, ct, af, gc, fg, ams, ib, eb, we, az, vs, ok, fc, diag. See [Image file names](https://outsystemsrd.atlassian.net/wiki/spaces/TK/pages/3179839882/Screenshots#Image-file-names) for reference." >> report.md
+              HAS_ERRORS=1
+            fi
+
+            if [ $HAS_ERRORS -eq 0 ]; then
+              echo "✅ $file: Image naming valid"
+            fi
+          else
+            # Run markdown-figma on non-image files (e.g. markdown)
+            echo "Run markdown-figma on ${file}.";
+            markdown-figma --input "${file}" --api-token ${{ secrets.FIGMA_API_TOKEN }} --export "images" --similarity ${{ vars.FIGMA_SIMILARITY_THRESHOLD }} --svg-visual-check-only --report report.md --report-append --parse-html;
+          fi
+        done << EOF
         ${{ steps.paths.outputs.files }}
         EOF
 
@@ -92,7 +126,7 @@ jobs:
       
     - name: 'Visual assets validation failed'
       if: steps.check_files.outcome == 'success' && steps.check_files.outputs.files_exists == 'true' && steps.get-report.outputs.content != ''
-      uses: actions/github-script@v7
+      uses: actions/github-script@v8
       with:
         script: |
             core.setFailed('Validation of visual assets failed.');

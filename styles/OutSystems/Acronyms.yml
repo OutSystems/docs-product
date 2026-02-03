@@ -79,4 +79,5 @@ exceptions:
   - ZIP
   - VPN
   - IIS
+  - STRIDE
 scope: ~text.frontmatter.figma

@@ -297,5 +297,6 @@ exceptions:
   - Boot Camp
   - Mobile Developer specialization
   - Front-end Developer specialization
+  - Tech Lead exam
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b

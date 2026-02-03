@@ -52,6 +52,7 @@ exceptions:
   - Forge
   - Self-hosted
   - Cloud demo
+  - Data Fabric
   
 # Concepts
   - Action

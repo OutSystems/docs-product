@@ -132,7 +132,7 @@ The [Conversion Assessment Tool Installer](https://www.outsystems.com/forge/comp
 
 <div class="info" markdown="1">
 
-If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), add the following redirect URI to your IdP configuration:
+If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), add the following redirect URI to your IdP configuration, for the Mobila and Desktop apps:
 
 * `https://<dev_environment>/ConversionAssessmentInstaller/OIDC_Callback`
 

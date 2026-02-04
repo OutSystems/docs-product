@@ -114,6 +114,8 @@ exceptions:
   - Static
   - Structure
   - Taskbox
+  - Task
+  - Epic
   - Template
   - Theme
   - Timer
@@ -210,6 +212,10 @@ exceptions:
   - Excel
   - Okta
   - Git
+  - GitHub
+  - Figma
+  - Jira
+  - Confluence
   - Google Play
   - HIPPA
   - iOS
@@ -252,6 +258,7 @@ exceptions:
   - HTML
   - APIs
   - IP
+  - ID
   - FAQ
   - TLS
   - AI
@@ -266,6 +273,8 @@ exceptions:
   - CICD
   - EAP
   - JavaScript
+  - MCP
+  - PR
   - UI
 # Country
   - US East

@@ -87,10 +87,19 @@ jobs:
             if [ $HAS_ERRORS -eq 0 ]; then
               echo "✅ $file: Image naming valid"
             fi
-          else
-            # Run markdown-figma on non-image files (e.g. markdown)
+          elif [[ "$file" =~ \.md$ ]]; then
+            # Validate .md files with image links have figma in frontmatter
+            if grep -qE '!\[.*\]\([^)]*\.(png|svg)' "${file}"; then
+              figma=$(awk '/^---$/{f=!f;next} f && /^figma:/{sub(/^figma:[[:space:]]*/,""); print; exit}' "${file}")
+              if [[ -z "$figma" || ! "$figma" =~ ^https?:// ]]; then
+                echo "- ❌ $file: Markdown contains image links but frontmatter is missing a figma property with a valid URL." >> report.md
+              fi
+            fi
+            # Run markdown-figma on markdown files
             echo "Run markdown-figma on ${file}.";
             markdown-figma --input "${file}" --api-token ${{ secrets.FIGMA_API_TOKEN }} --export "images" --similarity ${{ vars.FIGMA_SIMILARITY_THRESHOLD }} --svg-visual-check-only --report report.md --report-append --parse-html;
+          else
+            echo "Skipping ${file} (not an image or markdown file)."
           fi
         done << EOF
         ${{ steps.paths.outputs.files }}

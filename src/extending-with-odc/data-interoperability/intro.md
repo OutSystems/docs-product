@@ -162,9 +162,11 @@ Before you start, make sure the following requirements are met:
 
 * The **LifeTime** version of your O11 infrastructure is **11.28.0 or later**.
 
-* If you have an **O11 self-managed infrastructure**, ensure the following:
+* The **O11 LifeTime environment** is accessible over HTTPS (TCP on port 443) from your ODC tenant:
 
-    * The O11 LifeTime environment is accessible over HTTPS (TCP on port 443). You can restrict access using [IP allowlisting](https://success.outsystems.com/documentation/outsystems_developer_cloud/managing_outsystems_platform_and_apps/allowlisting_odc_public_ip_addresses/#platform-unification).
+    * If you have an [internal network](../../security/configure-internal-network.md) configured or other IP restrictions, make sure the O11 LifeTime environment allow inbound connections from the [ODC IP addresses](https://success.outsystems.com/documentation/outsystems_developer_cloud/managing_outsystems_platform_and_apps/allowlisting_odc_public_ip_addresses/#platform-unification). For O11 cloud infrastructures, contact [OutSystems Support](https://www.outsystems.com/SupportPortal/CaseOpen/) to configure the required network connectivity.
+
+* If you have an **O11 self-managed infrastructure**, ensure the following:
 
     * The databases of the [mapped O11 environments](#mapping) are accessible from your ODC tenant. The recommended approach is to [configure an ODC private gateway](https://www.outsystems.com/tk/redirect?g=9a023d82-da5b-4164-8f3f-9d6c35444b50). In alternative, you can allowlist the [ODC public IP addresses](https://www.outsystems.com/tk/redirect?g=2356ff87-f2e9-4ab2-81bf-34ebcffe68c2) in your firewalls or access policies.
 

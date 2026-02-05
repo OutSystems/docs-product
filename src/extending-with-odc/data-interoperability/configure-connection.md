@@ -37,9 +37,9 @@ Before you start, ensure the following requirements are met:
 
 * The user defining which entities are imported in the data connection has the **Configuration management > Configure connections** permission.
 
-* If you have an O11 self-managed infrastructure, ensure the following:
+* The [required network connectivity](intro.md#prerequisites) from ODC to your O11 infrastructure is in place.
 
-    * The [required network connectivity](intro.md#prerequisites), from ODC to your O11 self-managed infrastructure.
+* If you have an O11 self-managed infrastructure, ensure the following:
 
     * A database administrator performed the [required database operations](data-interop-self-managed.md#on-expose) for the O11 environments where developers exposed or propagated entities.
 

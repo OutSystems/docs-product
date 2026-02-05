@@ -72,9 +72,9 @@ jobs:
               HAS_ERRORS=1
             fi
 
-            # Hyphen-separated, only lowercase letters and hyphens, no numbers or special characters
-            if [[ ! "$name_without_ext" =~ ^[a-z]+(-[a-z]+)*$ ]]; then
-              echo "- ❌ $file: Image name must be hyphen-separated, lowercase letters and hyphens only (no numbers or special characters)" >> report.md
+            # Hyphen-separated, lowercase letters, numbers and hyphens only, no special characters
+            if [[ ! "$name_without_ext" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]; then
+              echo "- ❌ $file: Image name must be hyphen-separated, lowercase letters, numbers and hyphens only (no special characters)" >> report.md
               HAS_ERRORS=1
             fi
 

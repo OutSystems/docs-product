@@ -53,6 +53,10 @@ exceptions:
   - Self-hosted
   - Cloud demo
   - Data Fabric
+  - Integration Studio
+  - Platform Server
+  - 1-Click Publish
+  - True Change
   
 # Concepts
   - Action
@@ -253,6 +257,10 @@ exceptions:
   - Claude 3.7 Sonnet
   - Amazon Nova Pro
   - Chrome DevTools
+  - Microsoft Visual Studio
+  - Visual Studio Code
+  - .NET
+  - NuGet
 # Industry
   - API
   - HTML
@@ -280,6 +288,7 @@ exceptions:
   - DevOps
   - SOAP
   - PaaS
+  - SDK
 # Country
   - US East
   - North Virginia

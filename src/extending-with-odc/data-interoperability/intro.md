@@ -154,7 +154,7 @@ Before you start, make sure the following requirements are met:
 
 * You have an enterprise [cloud or self-managed O11 infrastructure](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e).
 
-    * Data interoperability isn't supported for O11 Personal Environment and partner's Cloud demo environments.
+    * Data interoperability **isn't supported** for O11 Personal Environments and partner's Cloud demo environments.
 
     * Take into account the [current limitations](#temporary-limitations) for the O11 infrastructure setup.
 
@@ -167,6 +167,8 @@ Before you start, make sure the following requirements are met:
     * If you have an [internal network](../../security/configure-internal-network.md) configured or other IP restrictions, make sure the O11 LifeTime environment allow inbound connections from the [ODC IP addresses](https://success.outsystems.com/documentation/outsystems_developer_cloud/managing_outsystems_platform_and_apps/allowlisting_odc_public_ip_addresses/#platform-unification). For O11 cloud infrastructures, contact [OutSystems Support](https://www.outsystems.com/SupportPortal/CaseOpen/) to configure the required network connectivity.
 
 * If you have an **O11 self-managed infrastructure**, ensure the following:
+
+    * You don't use [multiple database catalogs and schemas](https://www.outsystems.com/tk/redirect?g=1c742c8a-449c-4828-865b-7295d2f90527). Data interoperability **isn't supported** for O11 self-managed infrastructures using this feature.
 
     * The databases of the [mapped O11 environments](#mapping) are accessible from your ODC tenant. The recommended approach is to [configure an ODC private gateway](https://www.outsystems.com/tk/redirect?g=9a023d82-da5b-4164-8f3f-9d6c35444b50). In alternative, you can allowlist the [ODC public IP addresses](https://www.outsystems.com/tk/redirect?g=2356ff87-f2e9-4ab2-81bf-34ebcffe68c2) in your firewalls or access policies.
 

@@ -278,6 +278,8 @@ exceptions:
   - UI
   - DREAD
   - DevOps
+  - SOAP
+  - PaaS
 # Country
   - US East
   - North Virginia

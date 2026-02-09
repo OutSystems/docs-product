@@ -20,7 +20,7 @@ topic:
   - create-app-role
 ---
 
-# Create and Use Roles
+# Create and use roles
 
 You can restrict or allow end users access to specific screens and operations of your application using your own custom Roles. For example, you can create a back-office Role, set the Role in your application's back-office screens, and grant this Role only to those end users who are entitled to access the back-office screens.
 
@@ -32,7 +32,11 @@ To create a custom Role, do the following:
 
 ![Screenshot of the Add Role dialog in the Logic tab](images/role-example-ss.png "Add Role Dialog")
 
-Once you create a new Role, you can assign it to end users through the **Users** application or you can create logic in your application to manage the access.
+## Assign the role to end users
+
+After you publish the application, OutSystems adds the role to the **Users** application.
+
+For more information about granting and revoking roles, refer to [Grant and revoke end user roles](../end-user-manage/end-user-roles.md).
 
 ![Screenshot showing the process of granting and revoking roles in the application](images/roles-grant-revoke-flows-ss.png "Roles Grant and Revoke Flows")
 
@@ -58,7 +62,7 @@ For each Role in your module, OutSystems provides the following Actions:
 
 Role Actions are available in the **Logic** tab, within the **Roles** folder, under the corresponding Role, and can simply be dropped into your action flow.
 
-### Role Functions
+### Role functions
 
 To check end user Roles in your expressions, OutSystems provides the following built-in function:
 
@@ -75,3 +79,8 @@ For each Role in your module, OutSystems creates the following Exception:
 * `Not <role_name>`
 
 This Exception is raised when a user tries to access an element, for example a Screen, that requires a specific Role and the user has not been granted with that Role.
+
+## Related resources
+
+* To manage app roles for end users in the **Users** application, refer to [Grant and revoke end user roles](../end-user-manage/end-user-roles.md).
+* To manage roles for IT users in LifeTime, refer to [Create and assign roles](../../manage-platform-app-lifecycle/manage-it-teams/create-an-it-role.md).

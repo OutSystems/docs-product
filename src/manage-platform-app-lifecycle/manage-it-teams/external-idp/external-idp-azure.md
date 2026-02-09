@@ -24,7 +24,7 @@ To configure Microsoft Entra authentication, follow these steps:
 
 1. [Register and name your app with Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#register-an-application)
 
-1. [Configure the platform settings for Web apps](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=client-secret#configure-platform-settings) using the following settings:
+1. [Configure the platform settings for Web apps](https://learn.microsoft.com/en-us/entra/identity-platform/how-to-add-redirect-uri) using the following settings:
 
     * Set the **Redirect URI** to the Service Center login page from the LifeTime environment:
 
@@ -34,7 +34,7 @@ To configure Microsoft Entra authentication, follow these steps:
 
         * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
-1. [Configure the platform settings for Mobile and Desktop apps](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=client-secret#configure-platform-settings) using the following settings:
+1. [Configure the platform settings for Mobile and Desktop apps](https://learn.microsoft.com/en-us/entra/identity-platform/how-to-add-redirect-uri) using the following settings:
 
     * Set the **Custom redirect URIs** to the following Service Studio protocol:
 
@@ -58,7 +58,7 @@ To configure Microsoft Entra authentication, follow these steps:
 
         * ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
 
-1. [Configure the client secret](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=client-secret#add-credentials)
+1. [Configure the client secret](https://learn.microsoft.com/en-us/entra/identity-platform/how-to-add-credentials?tabs=certificate)
 
     <div class="warning" markdown="1">
 

@@ -32,21 +32,23 @@ To create a custom Role, do the following:
 
 ![Screenshot of the Add Role dialog in the Logic tab](images/role-example-ss.png "Add Role Dialog")
 
-## Assign the role to end users
+## Assign roles to end users
 
 After you publish the application, OutSystems adds the role to the **Users** application.
 
-For more information about granting and revoking roles, refer to [Grant and revoke end user roles](../end-user-manage/end-user-roles.md).
+For more information about how to add a user to the created role, refer to [Grant and revoke end user roles](../end-user-manage/end-user-roles.md).
 
-![Screenshot showing the process of granting and revoking roles in the application](images/roles-grant-revoke-flows-ss.png "Roles Grant and Revoke Flows")
-
-## Use the Role in your Application's Logic
+## Use roles in your application's logic
 
 When you define a new Role in your module, OutSystems provides a set of System Actions, built-in functions, and exceptions necessary to use the Role in your logic.
 
-### Role Actions
+The following diagram shows a typical flow for granting and revoking roles in your application logic.
 
-For each Role in your module, OutSystems provides the following Actions:
+![Screenshot showing the process of granting and revoking roles in the application](images/roles-grant-revoke-flows-ss.png "Roles Grant and Revoke Flows")
+
+### Role actions
+
+For each Role in your module, OutSystems provides the following actions:
 
 `Check<role_name>Role`
 :   Checks whether a specific end user has been granted access to a specific role.  
@@ -82,5 +84,4 @@ This Exception is raised when a user tries to access an element, for example a S
 
 ## Related resources
 
-* To manage app roles for end users in the **Users** application, refer to [Grant and revoke end user roles](../end-user-manage/end-user-roles.md).
 * To manage roles for IT users in LifeTime, refer to [Create and assign roles](../../manage-platform-app-lifecycle/manage-it-teams/create-an-it-role.md).

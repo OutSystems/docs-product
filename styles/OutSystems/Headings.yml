@@ -155,6 +155,7 @@ exceptions:
   - Read-Only
   - Read-Write
   - LLM
+  - CSP
 # Events
   - On Initialize
   - On Ready

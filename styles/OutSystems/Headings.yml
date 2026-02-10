@@ -156,6 +156,7 @@ exceptions:
   - Read-Write
   - LLM
   - CSP
+  - Web Application Firewall
 # Events
   - On Initialize
   - On Ready

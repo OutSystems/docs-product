@@ -348,5 +348,6 @@ exceptions:
   - Mobile Developer specialization
   - Front-end Developer specialization
   - Tech Lead exam
+  - Platform Ops exam
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b

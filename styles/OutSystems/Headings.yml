@@ -157,6 +157,28 @@ exceptions:
   - LLM
   - CSP
   - Web Application Firewall
+  - ChangePassword
+  - FinishResetPassword
+  - FinishUserRegistration
+  - GetPasswordComplexityPolicy
+  - GetUserProfile
+  - IsExternalUser
+  - StartResetPassword 
+  - StartUserRegistration
+  - UpdateUserProfile
+  - ValidatePasswordComplexity
+  - ChangePasswordResult
+  - FinishPasswordResetResult
+  - FinishUserRegistrationResult
+  - PasswordComplexityPolicy
+  - PasswordValidationResult
+  - StartResetPasswordResult
+  - FinishResetPasswordFailureReason
+  - UserInfo
+  - StartUserRegistrationResult
+  - UserUpdateInfo
+  - UpdateUserResult
+
 # Events
   - On Initialize
   - On Ready

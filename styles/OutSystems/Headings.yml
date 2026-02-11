@@ -178,6 +178,7 @@ exceptions:
   - StartUserRegistrationResult
   - UserUpdateInfo
   - UpdateUserResult
+  - CameraDirection 
 
 # Events
   - On Initialize
@@ -286,6 +287,7 @@ exceptions:
   - .NET
   - NuGet
   - Key Store Plugin
+  - Camera Plugin
   
 # Industry
   - API

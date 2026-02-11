@@ -285,6 +285,8 @@ exceptions:
   - Visual Studio Code
   - .NET
   - NuGet
+  - Key Store Plugin
+  
 # Industry
   - API
   - HTML

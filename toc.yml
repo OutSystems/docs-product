@@ -738,9 +738,11 @@
     - href: integration-with-systems/mobile-plugins/intro.md
     - topics:
         - href: integration-with-systems/mobile-plugins/barcode/intro.md
+        - href: integration-with-systems/mobile-plugins/calendar/intro.md
         - href: integration-with-systems/mobile-plugins/camera/intro.md
         - topics:  
             - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
+        - href: integration-with-systems/mobile-plugins/contacts/intro.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md
         - topics:
             - href: integration-with-systems/mobile-plugins/file-plugin/file-plugin-ref.md

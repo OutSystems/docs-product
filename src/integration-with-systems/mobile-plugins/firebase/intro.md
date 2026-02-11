@@ -17,7 +17,7 @@ coverage-type:
   - apply
 ---
 
-# Firebase Plugins
+# Firebase plugins
 
 <div class="info" markdown="1">
 
@@ -126,7 +126,7 @@ You must provide the plugin configuration file as settings in the Service Studio
 
 Starting with iOS 14.5, apps on the App Store must request the user’s permission to collect tracking data through the AppTrackingTransparency framework. For more information, see [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency).
 
-![Shows the Firebase request tracking authorization prompt in a mobile application](images/firebase-request-tracking-authorization.png "Firebase Request Tracking Authorization")
+![Shows the Firebase request tracking authorization prompt in a mobile application](images/firebase-request-tracking-authorization-fg.png "Firebase Request Tracking Authorization")
 
 To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin. Apple recommends triggering this prompt as soon as the app loads.
 

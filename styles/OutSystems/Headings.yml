@@ -186,8 +186,8 @@ exceptions:
   - EditPicture
   - MediaType
   - CheckCameraPlugin
-  - MediaMetadata
-  - MediaResult
+  - MediaResult data
+  - MediaMetadata data
 
 # Events
   - On Initialize

@@ -65,6 +65,7 @@ Once you establish a database connection, you can develop apps in Service Studio
 * It's not possible to define the following fields at attribute level: length, mandatory, autonumber, delete rule, and description.
 * It's only possible to change the data type mapping for Text and DateTime attributes. Text attributes can be changed to Currency, Decimal, Email and PhoneNumber. DateTime attributes can be changed to Date and Time.
 * It's only possible to change the Identifier, at the entity level, when the Primary Key is not defined at the external system. Only attributes of type Integer, LongInteger or Text can be selected as Identifier.
+* Each integration supports a maximum of 200 entities for relational databases or 80 objects for non-relational providers. This fixed limit is required to ensure the stability of the integration generation process. If your requirements exceed these values, you must create multiple integrations or use Integration Studio.
 
 ## Process overview
 

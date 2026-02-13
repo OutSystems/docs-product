@@ -183,6 +183,7 @@ exceptions:
   - PlayVideo
   - EditPicture
   - MediaType
+  - CheckCameraPlugin
 
 # Events
   - On Initialize

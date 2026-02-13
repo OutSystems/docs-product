@@ -93,6 +93,12 @@ If it does, handle the picture data in **TakePicture.MediaResult.Thumbnail** by 
 
 ## Recording a video
 
+<div class="info" markdown="1">
+
+Applies only to native mobile apps. Not available on PWAs.
+
+</div>
+
 To let users record a video and have a good user experience:
 
 * Create a user interface
@@ -141,6 +147,14 @@ If yes, handle the video data in **RecordVideo.MediaResult** by assigning it to 
 ![Flowchart screenshot outlining the logic to record a video using the Camera plugin, including checking plugin availability, capturing the video, and handling the video data.](images/capture-video-logic-2-ss.png "Camera Flow for Recording a Video")
 
 ## Selecting media from the gallery
+
+<div class="info" markdown="1">
+
+Applies only to native mobile apps. Not available on PWAs.
+
+Until support is added for PWAs, you may use **DEPRECATED_ChooseGalleryPicture**.
+
+</div>
 
 Let users choose a media file from the device gallery, either a picture, a video, or both, with the **ChooseFromGallery** action.
 The action is in the **Logic** tab of Service Studio, in **Client Actions > CameraPlugin**.
@@ -191,15 +205,15 @@ To ensure a good user experience and prevent the app from crashing, handle the e
 
 Here is the list of actions you can use to handle the errors.
 
-|Variable|Action|Description|
-|-|-|-|
-|**IsAvailable**|**CheckCameraPlugin**| True if the camera plugin is available in the app.|
-|**Success**|**TakePicture**|True if there aren't errors while taking a picture.|
-|**Success**|**ChooseGalleryPicture**|True if there aren't errors while opening a picture from the gallery.|
-|**Success**|**EditPicture**| True if there aren't errors while editing a picture.|
-|**Success**|**RecordVideo**|True if there aren't errors while recording a video.|
-|**Success**|**ChooseFromGallery**|True if there aren't errors while opening a media file from the gallery.|
-|**Success**|**PlayVideo**|True if there aren't errors while playing a video.|
+| Variable | Action | Description |
+| - | - | - |
+| **IsAvailable** | **CheckCameraPlugin** | True if the camera plugin is available in the app. |
+| **Success** | **TakePicture** | True if there aren't errors while taking a picture. |
+| **Success** | **ChooseGalleryPicture** | True if there aren't errors while opening a picture from the gallery. |
+| **Success** | **EditPicture** | True if there aren't errors while editing a picture. |
+| **Success** | **RecordVideo** | True if there aren't errors while recording a video. |
+| **Success** | **ChooseFromGallery** | True if there aren't errors while opening a media file from the gallery. |
+| **Success** | **PlayVideo** | True if there aren't errors while playing a video. |
 
 You can use these actions with the **If** nodes to check for errors and control how the app works.
 
@@ -209,58 +223,7 @@ You can use these actions with the **If** nodes to check for errors and control 
 
 More information about the plugin.
 
-### Actions
-
-Here is the reference of the actions you can use from the plugin.
-The Camera plugin uses a Cordova plugin, for more information check [cordova-plugin-camera](https://github.com/OutSystems/cordova-plugin-camera).
-
-|Action|Description|Available in PWA|
-|-|-|-|
-|**CheckCameraPlugin**|Checks if the plugin is available in the app.|Yes*|
-|**TakePicture**|Opens the camera on the user device.|Yes*|
-|**RecordVideo*****|Opens the camera on the user device.|No|
-|**ChooseFromGallery**|Opens the gallery on the user device.|No**|
-|**EditPicture**|Opens an edit interface to edit the picture.|Yes|
-|**PlayVideo**|Opens a native video player to play local files.|No|
-|**ChooseGalleryPicture**|Opens the gallery on the user device.|Yes|
-
-(*) Camera plugin works in progressive web apps (PWAs) from version 6.0.0 and later, in **mobile devices only**.
-See [OutSystems system requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_system_requirements) for more information about the supported devices and browser versions.
-
-(**) Under development.
-
-(***) When SaveToGallery is set to True, the value of the returned URI points to the gallery file on Android. On iOS, it points to a temporary file, stored in the cache.
-
-## Picture options
-
-Change the properties of the **TakePicture** action to adjust how the app handles the images.
-
-|Property|Description|
-|-|-|
-|**Quality**|The quality of the picture, in percentage. See also the [notes about Quality](#image-quality-and-app-responsiveness).|
-|**Width**|The width of the picture, in pixels.|
-|**Height**|The height of the picture, in pixels.|
-|**CorrectOrientation**|If **True**, the plugin fixes the orientation if users take a photo and rotate the device.|
-|**EncodingType**|Select the **JPEG** or **PNG** format.|
-|**SaveToPhotoAlbum**|If **True**, the app saves the image to the device.|
-|**CameraDirection**|Select the front or back camera as the default when taking a new picture.|
-|**AllowEdit**|If **True**, an Edit step is added after the take or choose picture step.|
-|**AllowMultiplePictures**| PWA only. Allows multiple pictures to be taken. To ensure this feature works, add the **CameraPlugin** theme to your app.|
-
-<div class="info" markdown="1">
-
-The properties of the **TakePicture** action apply to native mobile apps only.
-In PWAs, the app takes pictures with the default camera settings that depend on the device's browser.
-
-</div>
-
-## Video options
-
-Change the properties of the **RecordVideo** action to adjust how the app handles the video.
-
-|Property|Description|
-|-|-|
-|**SaveToGallery**|If **True**, the app saves the video to the device.|
+For reference on the available client actions and structures, refer to the [Camera Plugin Reference Page](camera-ref.md)
 
 ### MABS compatibility
 

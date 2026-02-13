@@ -1,6 +1,6 @@
 ---
-summary: Customize system bars in Cordova mobile apps with changes in MABS 12 for OutSystems 11 (O11), detailing preferences, JavaScript API, and CSS updates for Android 16.
-tags: cordova mobile apps, system bars, mabs 12, android 16, javascript api changes
+summary: Customize system bars in Cordova mobile apps with changes in MABS 12 for OutSystems 11 (O11), detailing preferences, and CSS updates for Android 16.
+tags: cordova mobile apps, system bars, mabs 12, android 16
 locale: en-us
 guid: 43f73d1e-9745-4de4-9d7a-66c7b8a42455
 app_type: mobile apps
@@ -33,23 +33,6 @@ Mobile App Build Service (MABS) 12 introduces changes to how mobile apps handle 
 | StatusBarOverlaysWebView | Removed/Ignored |
 | StatusBarStyle | Removed/Ignored |
 
-## JavaScript API changes
-
-| Property | Status |
-| --- | --- |
-| window.OSNavigationBar.setNavigationBarColor | Added |
-| window.statusbar.visible | Added |
-| window.statusbar.setBackgroundColor | Added |
-| window.StatusBar.backgroundColorByHexString | Removed |
-| window.StatusBar.backgroundColorByName | Removed |
-| window.StatusBar.hide | Removed |
-| window.StatusBar.isVisible | Removed |
-| window.StatusBar.overlaysWebView | Removed |
-| window.StatusBar.show | Removed |
-| window.StatusBar.styleDarkContent | Removed |
-| window.StatusBar.styleDefault | Removed |
-| window.StatusBar.styleLightContent | Removed |
-
 ## CSS changes
 
 | Variable | Status |
@@ -79,7 +62,7 @@ Mobile App Build Service (MABS) 12 introduces changes to how mobile apps handle 
 
 | Property | Values | Description |
 | --- | --- | --- |
-| AndroidEdgeToEdge | `True` or `False` | Whether the WebView will reach edge-to-edge or just between the system bars on Android devices.<br/>- If set to `True`, the app reports the safe area insets through the `--safe-area-inset-*` CSS variables. For more information, refer to [Safe area inset support](#safe-area-inset-support-safe-area-inset-support).<br/>- If set to `False`, the style of the status bar icons is automatically managed by the system.<br/>- If not set, defaults to `False`. |
+| AndroidEdgeToEdge | `True` or `False` | This only effects Android 15+, as lower versions of Android don't support edge to edge mode. Whether the WebView will reach edge-to-edge or just between the system bars on Android devices.<br/>- If set to `True`, the app reports the safe area insets through the `--safe-area-inset-*` CSS variables. For more information, refer to [Safe area inset support](#safe-area-inset-support-safe-area-inset-support).<br/>- If set to `False`, the style of the status bar icons is automatically managed by the system.<br/>- If not set, defaults to `False`. |
 | NavigationBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the navigation bar.<br/>- If set to `#00000000`, the navigation bar follows the device theme.<br/>- If set to any other hex color, the navigation bar uses that color and it does not change when the device theme changes.<br/>- If not set, it matches the color defined in the `BackgroundColor` preference, which by default is your application's primary color.<br/>- Has no effect when `AndroidEdgeToEdge` is set to `True` on android 15+.<br/>- Expected color format: `#RRGGBB` or `#00000000`. |
 | StatusBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the status bar. Operates the same way as `NavigationBarBackgroundColor`, with the addition that the status bar style (light or dark text and icons) is automatically determined based on the color for optimal contrast. |
 
@@ -105,6 +88,13 @@ Use the following template as a reference for defining a custom background color
     }
 }
 ```
+
+## Cordova runtime JavaScript API
+
+| API | Supported Platforms | Notes |
+| --- | --- | --- |
+| window.OSNavigationBar.setNavigationBarColor | Android | Sets the background color behind the navigation bar when an Android app isn't in EdgeToEdge mode |
+| window.statusbar.setBackgroundColor | Android | Sets the background color behind the status bar when an Android app isn't in EdgeToEdge mode |
 
 ## Examples
 
@@ -147,7 +137,6 @@ To ensure your app content does not overlap with system UI elements such as the 
 These variables report the value `0` under the following scenarios:
 
 1. `AndroidEdgeToEdge` preference is set to `True` -- all variables return `0`
-1. `window.statusbar.visible` is `false` -- some variables return `0` depending on the device orientation
 
 Due to some quirks on older Android versions it is recommended to use injected variables with the standard [MDN environment variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/env#parameters) as a fallback:
 

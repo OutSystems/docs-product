@@ -104,7 +104,9 @@ This has three main consequences in your ODC app:
 
 Similarly to other [external data source integrations](https://www.outsystems.com/tk/redirect?g=05934d09-1852-40c7-8b4f-cafd0f93f2a3), ODC creates an independent transaction on the O11 database for each O11 entity action.
 
-If you require transactional consistency across multiple O11 records - for example, creating an Order and the Order Lines together - create a wrapper REST API in O11 that handles the transaction internally, and consume that API in your ODC app.
+When combining O11 entities with other external data sources in your ODC app, be aware of the [transaction behavior in data mashup scenarios](https://www.outsystems.com/tk/redirect?g=4d56d131-ab84-401a-950f-ba81eebd716c), especially when performing write operations before querying the combined data.
+
+If you require transactional consistency across multiple O11 records - for example, creating an Order and the Order Lines together - create a wrapper REST API in O11 that handles the transaction internally, and consume that API in your ODC app. For guidance on how to expose your O11 business logic through REST APIs, see [Token-based authentication for exposed REST APIs](../../integration-with-systems/rest/expose-rest-apis/token-based-auth-expose-dev-pattern.md).
 
 ### Performance
 
@@ -114,7 +116,7 @@ To ensure stability across both platforms:
 
 * **Design your O11 data model for performance:** Ensure proper indexing and normalization to handle queries efficiently. Refer to the [O11 data model best practices](https://success.outsystems.com/documentation/11/onboarding_developers/outsystems_platform_best_practices/#data-model) for more details.
 
-* **Write efficient queries in your ODC apps:** Optimize data fetching by selecting only necessary columns and limiting result sets. Avoid executing SQL queries inside logic loops, as this generates database communication overhead. For more details, refer to the best practices for [fetching and displaying data](https://www.outsystems.com/tk/redirect?g=65834d5d-b36c-47b0-afc5-43ae35b5bd7d) [and querying data using SQL](https://www.outsystems.com/tk/redirect?g=22b6fa5c-e6d7-49db-a2bc-861465aa1419).  
+* **Write efficient queries in your ODC apps:** Optimize data fetching by selecting only necessary columns and limiting result sets. Avoid executing SQL queries inside logic loops, as this generates database communication overhead. For more details, refer to the best practices for [fetching and displaying data](https://www.outsystems.com/tk/redirect?g=65834d5d-b36c-47b0-afc5-43ae35b5bd7d) and [querying data using SQL](https://www.outsystems.com/tk/redirect?g=22b6fa5c-e6d7-49db-a2bc-861465aa1419). When combining O11 entities with other external data sources in your ODC app, follow the [best practices for data mashup queries](https://www.outsystems.com/tk/redirect?g=eb941889-6a5e-4e81-a570-80321841e5c1).
 
 * **Test your apps:** Conduct load testing to verify that your O11 database can handle the additional concurrent load from ODC apps without degradation. Refer to [Testing apps](https://www.outsystems.com/tk/redirect?g=B1B1C48B-A7E2-4E13-83F7-104B97075CB2) for further details.
 

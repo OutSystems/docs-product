@@ -178,7 +178,11 @@ exceptions:
   - StartUserRegistrationResult
   - UserUpdateInfo
   - UpdateUserResult
-  - CameraDirection 
+  - CameraDirection
+  - TakePicture
+  - PlayVideo
+  - EditPicture
+  - MediaType
 
 # Events
   - On Initialize

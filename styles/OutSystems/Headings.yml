@@ -297,6 +297,7 @@ exceptions:
   - NuGet
   - Key Store Plugin
   - Camera Plugin
+  - SAML
   
 # Industry
   - API

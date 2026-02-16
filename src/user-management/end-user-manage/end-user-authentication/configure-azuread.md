@@ -36,7 +36,7 @@ Requires Platform Server Release Jul.2019 CP2 (11.0.542.0) or later.
 
 The configuration of the Microsoft Entra authentication method is quite similar to the [SAML 2.0](configure-saml.md) one, but in this case, the **Claims** settings are already filled in with Microsoft Entra default values.
 
-Additionally, you can fill in the configuration settings for Microsoft Entra authentication by uploading/downloading files with metadata, which helps avoid human errors.,
+Additionally, you can fill in the configuration settings for Microsoft Entra authentication by uploading/downloading files with metadata, which helps avoid human errors.
 
 <div class="info" markdown="1">
 
@@ -82,7 +82,7 @@ The following sections describe these steps in detail.
 
 1. Upload the XML metadata file you downloaded from the Users app.
 
-For more information on how to create a new application in Microsoft Entra, refer to [Add an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal#add-an-enterprise-application)
+For more information on how to create a new application in Microsoft Entra, refer to [Add an enterprise application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal#add-an-enterprise-application).
 
 ### Finish configuration in the Users app {#finish-configuration}
 

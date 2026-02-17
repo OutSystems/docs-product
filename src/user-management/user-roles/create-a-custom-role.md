@@ -52,7 +52,8 @@ For each Role in your module, OutSystems provides the following actions:
 
 `Check<role_name>Role`
 :   Checks whether a specific end user has been granted access to a specific role.  
-    Note: This function is only applicable to **active users**. When you use it for an inactive user, the result is always "False", even if the user has been granted the role.
+    Note: This function is only applicable to **active users**. When you use it for an inactive user, the result is always `False`, even if the user has been granted the role.
+    If you don't set the optional **UserId** input parameter, OutSystems checks the role for the user that's currently authenticated. If no user is authenticated, OutSystems uses `NullIdentifier()` for **UserId**.
 
 `Grant<role_name>Role`
 :   Provides access for a specific end user to a specific role. You can use it both for active and inactive users. The role granted to the end user persists until it's revoked.
@@ -71,6 +72,8 @@ To check end user Roles in your expressions, OutSystems provides the following b
 * `Check<role_name>Role`
 
 This function is available in the Scope Tree of the Expression Editor, under the **Roles** folder. It's only applicable to **active users**.
+
+It has an optional **UserId** input parameter. When you don't set **UserId**, OutSystems checks the role for the user that's currently authenticated. If no user is authenticated, OutSystems uses `NullIdentifier()` for **UserId**.
 
 Besides this function for each role, there are other built-in functions related to Roles. Check the [Roles built-in functions](../../ref/lang/auto/builtinfunction-roles.md).
 

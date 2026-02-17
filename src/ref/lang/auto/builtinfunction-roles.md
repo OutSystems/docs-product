@@ -18,11 +18,13 @@ coverage-type:
 
 # Roles
 
-Besides the functions listed below, you also have another built-in function available for each existing role. This function, which is automatically defined by the platform, is the following:
+<div class="info" markdown="1">
 
-* `Check<role_name>Role`
+OutSystems automatically defines a `Check<role_name>Role` function for each role in your module. For more information about how to use `Check<role_name>Role`, refer to [Role functions](../../../user-management/user-roles/create-a-custom-role.md#role-functions).
 
-Check [Role Functions](../../../user-management/user-roles/create-a-custom-role.md#role-functions) for more information.
+</div>
+
+The following table lists role-related built-in functions.
 
 <table markdown="1">
 <thead>

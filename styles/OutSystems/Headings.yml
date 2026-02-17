@@ -59,6 +59,7 @@ exceptions:
   - True Change
   - IdP
   - IdPs
+  - Customer Portal
   
 # Concepts
   - Action

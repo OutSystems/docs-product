@@ -1052,7 +1052,7 @@ Check whether the Aggregate or the SQL query is necessary and consider deleting 
 
 ### Reminder comments
 
-Reminder comments are remarks or reminders for yourself or team members. Some keywords may set a comment as a reminder. For more information, refer to the [Comment documentation](../../../ref/lang/auto/class-comment.md). AIMS will flag Comments set as reminders.
+Reminder comments are remarks or reminders for yourself or team members. Some keywords may set a comment as a reminder. For more information, refer to the [Comment documentation](../../../ref/lang/auto/class-comment.md). AI Mentor Studio will flag Comments set as reminders.
 
 #### Impact
 
@@ -1061,3 +1061,15 @@ Comments marked as "Is Reminder" may indicate important technical debt or unreso
 #### How to fix
 
 Resolve the issue or finish the task related to the reminder [Comment](../../../ref/lang/auto/class-comment.md). When completed, remove the comment or change **Is Reminder** to **No**.
+
+### Consuming deprecated element
+
+Module is consuming a public element that has been marked as deprecated.
+
+#### Impact
+
+Using deprecated elements introduces several risks to an application. Deprecated components are often no longer maintained and may contain known security flaws that have been patched in newer versions, leaving the application exposed to vulnerabilities and potentially missing out on performance improvements.
+
+#### How to fix
+
+Find a suitable replacement for the deprecated element and refactor the code to use the new alternative.

@@ -60,6 +60,8 @@ exceptions:
   - IdP
   - IdPs
   - Customer Portal
+  - Workflows Editor
+  - Workflows
   
 # Concepts
   - Action

@@ -104,8 +104,12 @@ Conversion to ODC isn't yet supported for the following patterns.
 
 * [SOAP](elem-soap.md)
 * [Apps containing BPT elements](elem-bpt.md) or [consuming BPT elements](arch-bpt-elements.md)
-* [Modules having a user provider different than Users](elem-user-provider.md)
+* [Modules configured with a user provider different than Users](elem-user-provider.md)
 * [Multi-tenant modules](elem-multi-tenant.md)
+
+### Data
+
+* [Modules with a user provider different than Users](data-user-provider.md)
 
 ### Infrastructure
 

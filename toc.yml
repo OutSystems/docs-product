@@ -1263,6 +1263,7 @@
         - href: migration-to-odc/code-patterns/data-user-email-validation.md
         - href: migration-to-odc/code-patterns/data-large-binaries-validation.md
         - href: migration-to-odc/code-patterns/data-large-text-validation.md
+        - href: migration-to-odc/code-patterns/data-user-provider.md
         - href: migration-to-odc/code-patterns/infra-self-managed.md
         - href: migration-to-odc/code-patterns/infra-additional-pipelines.md
 # Reference

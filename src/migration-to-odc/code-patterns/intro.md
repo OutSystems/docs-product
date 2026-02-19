@@ -109,6 +109,7 @@ Conversion to ODC isn't yet supported for the following patterns.
 
 ### Data
 
+* [Modules with multiple active tenants](data-multiple-tenants.md)
 * [Modules with a user provider different than Users](data-user-provider.md)
 
 ### Infrastructure

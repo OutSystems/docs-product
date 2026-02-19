@@ -22,7 +22,9 @@ helpids: 30633
 
 # The Asset cannot contain multi-tenant modules
 
-[Multi-tenancy](https://success.outsystems.com/documentation/how_to_guides/development/how_to_build_a_multi_tenant_application/) allows a single application server and database server to provide different customers with their own isolated set of computing resources. Currently, OutSystems Developer Cloud doesn’t support multi-tenancy.
+[Multi-tenancy](https://www.outsystems.com/tk/redirect?g=6e1bb224-5f33-4233-adc5-57dc98793113) allows a single application server and database server to provide different customers with their own isolated set of computing resources. Currently, OutSystems Developer Cloud doesn’t support multi-tenancy.
+
+This pattern identifies OutSystems 11 (O11) modules with elements configured as multi-tenant - entities, site properties, or timers.
 
 ## How to solve
 
@@ -34,4 +36,4 @@ If you are only preparing your code for the conversion, at present, OutSystems r
 
 This pattern isn't supported yet.
 
-You can only proceed with the conversion of ODC assets without multi-tenant modules.
+You can only proceed with the conversion of ODC assets with modules that don't include multi-tenant elements.

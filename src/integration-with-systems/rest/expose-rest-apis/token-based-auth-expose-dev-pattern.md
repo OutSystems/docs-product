@@ -35,9 +35,12 @@ For more information about setting up custom authentication in Service Studio, r
 
 <div class="info" markdown="1">
 
-If you prefer to start from a prebuilt accelerator instead of implementing the pattern from scratch, consider using the [**O11 Service Account Manager – Secure Token Auth for ODC**](https://www.outsystems.com/forge/component-overview/23018/o11-service-account-manager-server-o11) Forge component (OutSystems 11, server-side).
+For interoperability between O11 and ODC, see also the [development pattern for securing consumed REST APIs in ODC with JWT-based tokens](https://www.outsystems.com/tk/redirect?g=9f31b7c4-6a7a-4a43-8b45-3b0f0b7d7f22). If you prefer to start from a prebuilt accelerator instead of implementing the pattern from scratch, consider using these Forge components:
 
-This Forge component is a community-provided accelerator and **isn't officially supported by OutSystems**. Review the source code, perform a security assessment, and validate that it meets your organization's requirements before using it in production.
+* [**O11 Service Account Manager – Secure Token Auth for ODC**](https://www.outsystems.com/forge/component-overview/23018/o11-service-account-manager-server-o11) (O11, server-side)
+* [**ODC REST Connector – Secure Token Auth for O11**](https://www.outsystems.com/forge/component-overview/23091/odc-rest-connector-client-odc) (ODC, client-side)
+
+These Forge components are community-provided accelerators and **aren't officially supported by OutSystems**. Review the source code, perform a security assessment, and validate that they meet your organization's requirements before using them in production.
 
 </div>
 
@@ -202,7 +205,7 @@ The App Auth Service acts as the "front desk". It authenticates the client and i
 
 ![Diagram showing JWT generation in an app using asymmetric signing and key pairs.](images/app-JWT-token-generation-asymmetric-signing-diag.png "Example of JWT Token Generation with Asymmetric Signing")
 
-1. **Get Organization JSON Web Key from Secrets**: Retrieve the signing key (for example, from a secure Site Property or an encrypted entity).
+1. **Get Organization JSON Web Key from Secrets**: Retrieve the signing key from a [secret site property](../../../ref/lang/auto/class-site-property.md#example-2) or from an entity that stores the key in an encrypted format.
 1. **Generate JWT token**: Use a JWT action to create the token payload with required claims (sub, aud, exp) and sign it using the retrieved key.
 1. **Save token detail**: Store relevant token metadata (such as AppID and Status) in an entity for tracking or revocation purposes.
 1. **Assign token output**: Return the generated signed token to the caller.
@@ -275,5 +278,6 @@ When you implement this pattern, apply the following security best practices:
 
 * [Expose REST APIs](intro.md)
 * [Add Custom Authentication to an Exposed REST API](add-custom-authentication-to-an-exposed-rest-api.md)
+* [Token-based authentication for consumed REST APIs in ODC](https://www.outsystems.com/tk/redirect?g=9f31b7c4-6a7a-4a43-8b45-3b0f0b7d7f22)
 
-<!-- TODO: Add link to the ODC "Token-based authentication pattern for consumed REST APIs" article once it's available in the ODC documentation. -->
+<!-- TODO: Replace with the final public ODC doc link once it's published. -->

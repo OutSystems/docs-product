@@ -37,7 +37,7 @@ If you want to **expose** an OutSystems REST API, check [Expose REST APIs](../ex
 
 </div>
 
-## REST API Authentication
+## REST API authentication
 
 Every REST API you consume has its own security and authentication process, which implies you must create an account, register for an API key, or use tokens. To consume a REST API in OutSystems you must understand and follow the provider's security model.
 
@@ -48,7 +48,7 @@ OutSystems has built-in support for REST APIs with:
 
 You can use the REST customization capabilities to add support for other authentication methods:
 
-* For **token-based authentication** you can use [OAuth 2.0 client credentials flow](rest-oauth2-authorization.md). Another method is adding the authorization info to the header with [OnBeforeRequest callback in Simple Customizations](simple-customizations.md).
+* For **token-based authentication**, you can use [OAuth 2.0 client credentials flow](rest-oauth2-authorization.md). Another method is adding the authorization info to the header with [OnBeforeRequest callback in Simple Customizations](simple-customizations.md). For a high-level development pattern for JWT-based APIs, refer to [Token-based authentication for consumed REST APIs](token-based-auth-consume-dev-pattern.md).
 
 * For **client certificate authentication**, use the OnBeforeRequestAdvanced callback, together with .NET code in an extension, to customize the outgoing requests. For detailed information about a possible implementation, refer to [HTTPS Consumer](https://www.outsystems.com/forge/component-overview/3591/https-consumer) component provided by the OutSystems Community. For more information about implementing advanced use cases, refer to [Advanced Customizations](advanced-customizations.md).
 

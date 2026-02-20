@@ -65,7 +65,7 @@ In this example, there's a screen with an aggregate named **GetEmployees**. This
 
 1. Click **Apply** and then refresh your app's page. The MaxRecords displayed must adopt the new value.
 
-### Example 2
+### Example 2 {#example-2}
 
 In this example, there's an integration with an external service, where the service credentials, such as password, must be protected.
 

@@ -68,8 +68,8 @@ When you use JWKs to represent keys, follow these additional practices.
 
 The exact storage mechanism for keys in O11 depends on your architecture. Common options include the following approaches.
 
-* **Secret Site Properties** (Platform Server 11.25.0 and later): Store keys securely in Site Properties marked as secrets.
-* **Configuration modules**: Store keys in encrypted entities or Site Properties.
+* **Secret Site Properties** (Platform Server 11.25.0 and later): Store keys securely in [secret site properties](../../../ref/lang/auto/class-site-property.md#example-2).
+* **Configuration modules**: Store keys in a [secret site property](../../../ref/lang/auto/class-site-property.md#example-2) or encrypt keys before storing them in entities.
 * **External identity provider integration**: Retrieve keys from your identity provider's JWK endpoint.
 * **Forge components**: Use community-supported components that abstract JWK parsing and validation logic.
 

@@ -301,6 +301,7 @@ exceptions:
   - Key Store Plugin
   - Camera Plugin
   - SAML
+  - Plugin Manager
   
 # Industry
   - API

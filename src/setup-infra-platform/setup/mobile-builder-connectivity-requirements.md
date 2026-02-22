@@ -40,6 +40,16 @@ Amazon CloudFront, which MABS uses, is a distributed service with the endpoint I
 
 The simplest, and potentially most secure way, of meeting this requirement is a proxy. When using a proxy to mediate the access with the internet, ensure it allows access to the **nativebuilder.api.outsystems.com** URL and any other URL the MABS service might require from the Internet for normal functioning.
 
+Starting in Platform Server version 11.26, when publishing a mobile application, it is now the Compiler service that contacts MABS to build and generate the mobile application. To ensure that the Compiler service is able to use the proxy, update the machine.config file in the Deployment Controller server. Add the below code under the configuration node
+
+```
+<system.net>
+  <defaultProxy>
+    <proxy usesystemdefault="False" proxyaddress="http://proxyserver:proxyport" bypassonlocal="True" />
+  </defaultProxy>
+</system.net>
+```
+
 ## Use a firewall to limit access to a domain
 
 If you have a firewall which allows limiting access by domain, use the firewall to limit access to the MABS domain. This opens your infrastructure only to the Cloud Front's IPs.

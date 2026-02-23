@@ -191,6 +191,7 @@ exceptions:
   - CheckCameraPlugin
   - MediaResult data
   - MediaMetadata data
+  - Employee
 
 # Events
   - On Initialize

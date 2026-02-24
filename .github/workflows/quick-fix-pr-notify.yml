@@ -1,0 +1,19 @@
+name: Quick fix PR – Slack notification
+
+on:
+  pull_request:
+    types: [labeled]
+
+jobs:
+  notify:
+    name: Notify Slack
+    if: |
+      (github.event.action == 'labeled' && github.event.label.name == 'llmSolvedTypoFeedback')
+    uses: OutSystems/tk-cicd/.github/workflows/quick-fix-pr-slack-notify.yml@main
+    with:
+      repository: ${{ github.repository }}
+      pr_number: ${{ github.event.pull_request.number }}
+      pr_url: ${{ github.event.pull_request.html_url }}
+      pr_title: ${{ github.event.pull_request.title }}
+    secrets:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

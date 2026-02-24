@@ -118,7 +118,6 @@ exceptions:
   - Server
   - Service
   - Session
-  - Site Property
   - SQL
   - Static
   - Structure
@@ -275,7 +274,6 @@ exceptions:
   - URI
   - URIs
   - SAP
-  - Cross-site Scripting
   - XSS
   - CSV
   - Firebase Cloud Messaging
@@ -304,7 +302,7 @@ exceptions:
   - SAML
   - Plugin Manager
   - Phosphor
-  - Fone Awesome
+  - Font Awesome
   
 # Industry
   - API

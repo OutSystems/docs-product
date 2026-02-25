@@ -41,7 +41,7 @@ Before you start, ensure the following requirements are met:
 
 * If you have an O11 self-managed infrastructure, ensure the following:
 
-    * A database administrator performed the [required database operations](data-interop-self-managed.md#on-expose) for the O11 environments where developers exposed or propagated entities.
+    * A database administrator performed the [required database operations](data-interop-self-managed.md#on-expose) for the O11 environments where developers exposed or promoted entities.
 
     * You have the details of the database connection (Server, Port, Database Name or Host, Port, Service Name), and database dedicated user (username and password) for each of the [O11 environments to map](intro.md#mapping).
 
@@ -81,7 +81,15 @@ This step requires the **Connection management > Create** permission.
 
 </div>
 
-After linking your infrastructures, let's create a data connection to O11. Follow these steps:
+After linking your infrastructures, let's create the data connection to OutSystems 11.
+
+You can create different connections for your O11 infrastructure. For example:
+
+* You can group O11 entities from different business apps in different connections to be used by different teams in ODC.
+
+* If your O11 infrastructure has additional pipelines, create one connection per pipeline.
+
+To create the connection, follow these steps:
 
 1. In the ODC Portal, go to **INTEGRATE > Connections**.
 
@@ -93,21 +101,25 @@ After linking your infrastructures, let's create a data connection to O11. Follo
 
 1. Enter a unique **Name** and an optional **Description** for your connection.
 
-1. Map each ODC stage to the [corresponding O11 environment](intro.md#mapping). The configuration is different for O11 Cloud and O11 self-managed infrastructures:
+1. Map each ODC stage to the [corresponding O11 environment](intro.md#mapping).
 
-    * For O11 Cloud:
+    <div class="info" markdown="1">
 
-        You map each ODC stage to an O11 environment. ODC automatically handles the underlying complexity, such as creating the dedicated database users and connection details for each mapping.
+    For O11 infrastructures with additional pipelines, make sure the selected O11 environments are part of the O11 pipeline you are mapping.
 
-        In the **Setup by stage** section, use the dropdowns to map each ODC stage to the corresponding O11 environment.
+    For example, consider you have two O11 pipelines, **Finance** and **HR**. If you are creating the connection for the **Finance** pipeline, make sure you select only O11 environments from that pipeline. To import O11 entities from the **HR** pipeline, create another connection to map the O11 environments from that pipeline.
+
+    </div>
+
+    The configuration is different for O11 Cloud and O11 self-managed infrastructures:
+
+    * If you have an **O11 Cloud** infrastructure, use the dropdowns in the **Setup by stage** section to map each ODC stage to the corresponding O11 environment.
+
+        ODC automatically handles the underlying complexity, such as creating the dedicated database users and connection details for each mapping.
 
         ![Configure OutSystems 11 connection details](images/configure-connection-o11-details-pl.png "Configure OutSystems 11 connection details")
 
-    * For O11 self-managed infrastructures:
-
-        You must provide the database connection details for each ODC stage, similar to when [creating connections to external data sources](https://www.outsystems.com/tk/redirect?g=32004a44-1a95-46b2-abcb-88ad76f51961).
-
-        In the **Setup by stage** section, provide the database connection details and test the connection for each ODC stage:
+    * If you have an **O11 self-managed** infrastructure, in the **Setup by stage** section, provide the database connection details and test the connection for each ODC stage, similar to [creating connections to external data sources](https://www.outsystems.com/tk/redirect?g=32004a44-1a95-46b2-abcb-88ad76f51961):
 
         * Set the **Username** and **Password** of the dedicated database user for interoperability created during [the initial setup](data-interop-self-managed.md#setup).
 

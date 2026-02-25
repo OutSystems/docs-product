@@ -48,7 +48,7 @@ Reusing your O11 data in ODC apps involves three key steps:
 
 As part of the data interoperability setup, you map each ODC stage (Development, Test, and Production) to its corresponding O11 environment.
 
-If your O11 infrastructure has more than the standard three environments, choose the three O11 environments that match your ODC stages in your development lifecycle.
+If your O11 infrastructure pipeline has more environments than the number of stages in your ODC tenant, choose the O11 environments that best match the ODC stages in your development lifecycle.
 
 ![Diagram of data interoperability architecture](images/data-interoperability-architecture-diag.png "Data interoperability architecture")
 
@@ -58,13 +58,17 @@ The following mapping rules apply:
 
 * Your ODC development and testing stages can connect to any of your non-production O11 environments. This prevents non-production apps from accessing sensitive production data.
 
+* For O11 infrastructures with additional pipelines, map your ODC stages to O11 environments of a single pipeline. For example, consider you have two O11 pipelines, **Finance** and **HR**. If you want to consume entities from both pipelines in your ODC apps, you need to [configure a separate O11 connection](configure-connection.md) to map each pipeline.
+
+    ![Diagram of data interoperability architecture for additional pipelines](images/data-interoperability-architecture-pipelines-diag.png "Data interoperability architecture for additional pipelines")
+
 ### Security
 
 The connection between ODC and your O11 infrastructure is designed with security as a priority.
 
 ![Diagram of data interoperability security](images/data-interoperability-security-diag.png "Data interoperability security")
 
-Application runtime communication depends on your [O11 infrastructure setup](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e):
+Application runtime communication depends on your [O11 infrastructure setup](../../setup-infra-platform/setup/intro.md#alternatives):
 
 * For **OutSystems Cloud**:
 
@@ -114,19 +118,25 @@ The integration uses a specific lifecycle model to ensure consistency and safety
 
     You manage the definition of all exposed entities in a O11 [**baseline environment**](expose-entities.md#configure-baseline) that is the single source where you define the set of entities that you want to expose. This is typically your O11 Development environment.
 
-* **Propagate exposed entities to other environments**
+* **Promote exposed entities to other environments**
 
-    From the baseline environment, you then [propagate the exposed entities](expose-entities.md#propagate) definition to other O11 environments in your pipeline. The propagation process is sequential and follows the pipeline order defined in LifeTime.
+    From the baseline environment, you then [promote the exposed entities](expose-entities.md#promote) definition to other O11 environments in your pipeline. The promotion process is sequential and follows the pipeline order defined in LifeTime.
 
-    The propagation process copies the exposed entity definitions (the database views) to the target environment. This ensures that when you deploy your ODC app to its next stage, it connects to the corresponding O11 environment and finds the exact data structures it expects.
+    The promotion process copies the exposed entity definitions (the database views) to the target environment. This ensures that when you deploy your ODC app to its next stage, it connects to the corresponding O11 environment and finds the exact data structures it expects.
 
 * **Always update exposed entities definition in the baseline environment**
 
-    Because your ODC apps have a runtime dependency on the exposed entities, it's critical to manage ongoing changes carefully. Thus, you must first [update the exposed entities definition](expose-entities.md#update-exposed) in the baseline environment, and then propagate the changes to other environments.
+    Because your ODC apps have a runtime dependency on the exposed entities, it's critical to manage ongoing changes carefully. Thus, you must first [update the exposed entities definition](expose-entities.md#update-exposed) in the baseline environment, and then promote the changes to other environments.
 
 This approach aligns with the best practice of managing and testing all changes in a non-production environment first.
 
 ## Limitations
+
+Data interoperability **isn't supported** for the following infrastructure setup:
+
+* O11 Personal environments
+* Partner's Cloud demo environments
+* O11 self-managed infrastructures using [multiple database catalogs and schemas](https://www.outsystems.com/tk/redirect?g=1c742c8a-449c-4828-865b-7295d2f90527)
 
 The following entities **can't be exposed** to ODC:
 
@@ -146,29 +156,23 @@ OutSystems is working to improve the data interoperability capability. Meanwhile
 
 * An ODC tenant can only connect to one O11 infrastructure.
 
-* Data interoperability isn't yet supported for hybrid O11 infrastructures and O11 infrastructures with additional pipelines.
+* Data interoperability isn't yet supported for hybrid O11 infrastructures.
 
 ## Prerequisites
 
 Before you start, make sure the following requirements are met:
 
-* You have an enterprise [cloud or self-managed O11 infrastructure](https://www.outsystems.com/tk/redirect?g=079418c8-7a3d-4b5e-9c13-c1ae7a1f122e).
-
-    * Data interoperability **isn't supported** for O11 Personal Environments and partner's Cloud demo environments.
-
-    * Take into account the [current limitations](#temporary-limitations) for the O11 infrastructure setup.
+* You have an enterprise [cloud or self-managed O11 infrastructure](../../setup-infra-platform/setup/intro.md#alternatives). Take into account the [limitations](#limitations) for the O11 infrastructure setup.
 
 * The **Platform Server** version of your O11 environments is **11.40.0 or later**.
 
-* The **LifeTime** version of your O11 infrastructure is **11.28.0 or later**.
+* The **LifeTime** version of your O11 infrastructure is **11.28.0 or later**. The support for infrastructures with additional pipelines is available from **LifeTime 11.28.2**.
 
 * The **O11 LifeTime environment** is accessible over HTTPS (TCP on port 443) from your ODC tenant:
 
     * If you have an [internal network](../../security/configure-internal-network.md) configured or other IP restrictions, make sure the O11 LifeTime environment allow inbound connections from the [ODC IP addresses](https://success.outsystems.com/documentation/outsystems_developer_cloud/managing_outsystems_platform_and_apps/allowlisting_odc_public_ip_addresses/#platform-unification). For O11 cloud infrastructures, contact [OutSystems Support](https://www.outsystems.com/SupportPortal/CaseOpen/) to configure the required network connectivity.
 
 * If you have an **O11 self-managed infrastructure**, ensure the following:
-
-    * You don't use [multiple database catalogs and schemas](https://www.outsystems.com/tk/redirect?g=1c742c8a-449c-4828-865b-7295d2f90527). Data interoperability **isn't supported** for O11 self-managed infrastructures using this feature.
 
     * The databases of the [mapped O11 environments](#mapping) are accessible from your ODC tenant. The recommended approach is to [configure an ODC private gateway](https://www.outsystems.com/tk/redirect?g=9a023d82-da5b-4164-8f3f-9d6c35444b50). In alternative, you can allowlist the [ODC public IP addresses](https://www.outsystems.com/tk/redirect?g=2356ff87-f2e9-4ab2-81bf-34ebcffe68c2) in your firewalls or access policies.
 

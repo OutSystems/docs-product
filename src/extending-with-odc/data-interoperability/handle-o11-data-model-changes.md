@@ -27,7 +27,7 @@ Whether evolving your O11 apps - for example, adding new O11 entities, or changi
 
 Thus, when the O11 data model changes, the following actions are required to reflect those changes in your ODC apps:
 
-1. [Update the exposed entities definition](expose-entities.md#update-exposed) - In the O11 LifeTime console, update the exposed O11 entities in the baseline environment and [propagate the changes](expose-entities.md#propagate) to other environments in your pipeline.
+1. [Update the exposed entities definition](expose-entities.md#update-exposed) - In the O11 LifeTime console, update the exposed O11 entities in the baseline environment and [promote the changes](expose-entities.md#promote) to other environments in your pipeline.
 
 1. [Refresh the O11 connection](configure-connection.md#refresh-exposed) - In the ODC Portal, refresh the O11 connection to fetch the new data model.
 
@@ -37,7 +37,7 @@ Thus, when the O11 data model changes, the following actions are required to ref
 
 ![Process to reflect O11 data model changes in ODC apps showing the tools](images/handle-o11-model-changes-lt-pl-odcs.png "Process to reflect O11 data model changes in ODC apps showing the tools")
 
-However, to ensure your ODC app works correctly across all stages - development, QA, and production - you must propagate the O11 data model changes to ODC apps following the development lifecycle. Here's the recommend order:
+However, to ensure your ODC app works correctly across all stages - development, QA, and production - you must promote the O11 data model changes to ODC apps following the development lifecycle. Here's the recommend order:
 
 1. **[O11]** Update the exposed O11 entities in the [baseline environment](expose-entities.md#configure-baseline) - let's consider the O11 development environment - using the LifeTime console.
 
@@ -50,11 +50,11 @@ However, to ensure your ODC app works correctly across all stages - development,
     1. Adjust the logic if necessary.
     1. Publish the changes.
 
-1. **[O11]** Propagate the exposed O11 entities that changed from O11 development to QA environment.
+1. **[O11]** Promote the exposed O11 entities that changed from O11 development to QA environment.
 
 1. **[ODC]** Deploy the ODC app from development to QA stage.
 
-1. **[O11]** Propagate the exposed O11 entities that changed from QA to production environment.
+1. **[O11]** Promote the exposed O11 entities that changed from QA to production environment.
 
 1. **[ODC]** Deploy the ODC app from QA to production stage.
 
@@ -62,7 +62,7 @@ However, to ensure your ODC app works correctly across all stages - development,
 
 <div class="info" markdown="1">
 
-If you deploy the ODC app to a stage before propagating the O11 exposed entities to the mapped O11 environment, the app may fail at runtime because it will be looking for database columns or views that do not yet exist in the target O11 database.
+If you deploy the ODC app to a stage before promoting the O11 exposed entities to the mapped O11 environment, the app may fail at runtime because it will be looking for database columns or views that do not yet exist in the target O11 database.
 
 </div>
 

@@ -25,7 +25,7 @@ helpids:
 Data interoperability from ODC to an O11 self-managed infrastructure requires the manual execution of some database operations at specific moments:
 
 * [Initial setup](#setup)
-* [When entities are exposed or propagated](#on-expose)
+* [When entities are exposed or promoted](#on-expose)
 
 These operations must be performed by a database administrator (DBA).
 
@@ -70,7 +70,7 @@ When setting up data interoperability for the first time, the following operatio
 
 ## On exposing or promoting O11 entities {#on-expose}
 
-Every time developers [expose an entity in the baseline environment](expose-entities.md#expose) using the O11 LifeTime console, OutSystems creates a new database view on the O11 baseline environment. The same way, every time developers [propagate an exposed O11 entity to other O11 environment](expose-entities.md#propagate), OutSystems creates a new database view on that O11 environment.
+Every time developers [expose an entity in the baseline environment](expose-entities.md#expose) using the O11 LifeTime console, OutSystems creates a new database view on the O11 baseline environment. The same way, every time developers [promote an exposed O11 entity to other O11 environment](expose-entities.md#promote), OutSystems creates a new database view on that O11 environment.
 
 When this happens, a DBA must grant the dedicated database user **read and write** access to the created database views and corresponding tables.
 
@@ -80,13 +80,13 @@ Currently, the **write** access is not required for Oracle databases, as the wri
 
 </div>
 
-Thus, every time new entities are exposed or propagated, the following operations must be performed by a DBA in that O11 environment:
+Thus, every time new entities are exposed or promoted, the following operations must be performed by a DBA in that O11 environment:
 
-1. Grant the dedicated interoperability database user **read and write** access (read access for Oracle) to the new **database views**, one for each exposed or propagated entity:
+1. Grant the dedicated interoperability database user **read and write** access (read access for Oracle) to the new **database views**, one for each exposed or promoted entity:
 
     * `OSUSR_VIEW_<entity_name>`, or `OSUSR_VIEW_<custom_view_name>` if the view name was renamed [when the entity was exposed](expose-entities.md#expose).
 
-1. Grant the dedicated interoperability database user **read and write** access (read access for Oracle) to the corresponding **tables**, one for each exposed or propagated entity:
+1. Grant the dedicated interoperability database user **read and write** access (read access for Oracle) to the corresponding **tables**, one for each exposed or promoted entity:
 
     * `osusr_<entity_name>`
 

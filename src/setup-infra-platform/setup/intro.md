@@ -21,7 +21,7 @@ coverage-type:
   - apply
 ---
 
-# Setting Up OutSystems
+# Setting up OutSystems
 
 <div class="info" markdown="1">
 
@@ -31,7 +31,7 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 This article explains the several components of OutSystems. It also explains how to set up OutSystems on the cloud or as self-managed.
 
-## OutSystems Overview
+## OutSystems overview
 
 ### Components
 
@@ -69,7 +69,7 @@ If you're using OutSystems Cloud, you don't need to worry about installing or li
 
 If you're installing OutSystems as self-managed, be sure you have a valid activation code, or license files. Without them you won't be able to deploy applications to your environments. So be sure to [check how OutSystems licensing works.](https://success.outsystems.com/Support/Licensing/Identify_OutSystems_infrastructure_and_runtime_environments)
 
-## Installation alternatives
+## Installation alternatives {#alternatives}
 
 ### Cloud
 
@@ -124,7 +124,7 @@ To perform an offline installation of Platform Server you might need to download
 
 </div>
 
-### 2. Install the Platform Server { #install-the-platform-server }
+### 2. Install the Platform Server {#install-the-platform-server}
 
 Install the Platform Server in each environment of your infrastructure that will host your applications (eg. Development, Quality and Production). For this, follow the Platform Server installation checklist that is launched when you run the Platform Server installation binary.
 
@@ -167,28 +167,31 @@ OutSystems is now ready for you to start developing. The only thing missing is t
 
 After installing the development tools, [configure them for developing your own extensions](http://www.outsystems.com/goto/howto-configure-integration-studio).
 
-## Automatic Prerequisites Installation and Configuration Tuning { #prerequisites }
+## Automatic prerequisites installation and configuration tuning {#prerequisites}
 
-The OutSystems Platform Server and LifeTime installation packages can automatically install most of the prerequisites (as described in the Installation Checklist) when you select the **Install Prerequisites** option in the installer. You may need to reboot your system to finish the installation of some prerequisites.
+The Platform Server and LifeTime installation packages can automatically install most of the prerequisites (as described in the Installation Checklist) when you select the **Install Prerequisites** option in the installer. You may need to reboot your system to finish the installation of some prerequisites.
 
-The installation package will automatically download the required binaries for installing the prerequisites from the official Microsoft sources. However, you can also perform an [offline installation](<#offline-installation>).
+The installation package automatically downloads the required binaries for installing the prerequisites from the official Microsoft sources. However, you can also perform an [offline installation](<#offline-installation>).
 
-Before starting the installation of the component, the installation package will validate if all the prerequisites are available on your system. The installation **will not proceed** if any prerequisites are missing.
+Before starting the installation of the component, the installation package validates if all the prerequisites are available on your system. The installation **will not proceed** if any prerequisites are missing.
 
 <div class="info" markdown="1">
 
-The installer will only install the minimum required version for the OutSystems Platform Server installation, which may not be the latest available version.
+The installer only installs the minimum required version for the Platform Server installation, which may not be the latest available version.
 
 </div>
 
-If you select the **Perform Tuning** option in the installer, and after checking that the prerequisites are correctly installed, the installation package will also check if it can automatically apply most of the mandatory steps in the **Tuning and Security checklist** section of the Installation Checklist.  
-The process will not make any modifications to user-defined configurations; it will only change any default values to the recommended values, as described in the referenced section in the Installation Checklist.
+If you select the **Perform Tuning** option in the installer, and after checking that the prerequisites are correctly installed, the installation package also checks if it can automatically apply most of the mandatory steps in the **Tuning and Security checklist** section of the Installation Checklist.
 
-The configuration tuning option is also available as a command-line switch when running the installer in [unattended mode](unattended-install/intro.md): `/DoTuning=<factory_size>`.  
-When you provide this switch, the installer will change any default values to the ones recommended for the specified `<factory_size>`. These recommended values for each factory size are described in the subsections **Tuning .NET Framework Runtime** and **Tuning Internet Information Services** in the Installation Checklist.  
-The available options for `<factory_size>` are `small`, `medium` and `large`. Any other option text will map to the `small` option.
+The process doesn't make any modifications to user-defined configurations. It only changes any default values to the recommended values, as described in the referenced section of the Installation Checklist.
 
-## Offline Installation { #offline-installation }
+The configuration tuning option is also available as a command-line switch when running the installer in [unattended mode](unattended-install/intro.md): `/DoTuning=<factory_size>`.
+
+When you provide this switch, the installer changes any default values to the ones recommended for the specified `<factory_size>`. These recommended values for each factory size are described in the subsections **Tuning .NET Framework Runtime** and **Tuning Internet Information Services** in the Installation Checklist.
+
+The available options for `<factory_size>` are `small`, `medium` and `large`. Any other text option will map to the `small` option.
+
+## Offline installation {#offline-installation}
 
 To perform a fully offline installation you should download some binaries beforehand so that the installation package can [automatically install most of the prerequisites](#prerequisites).
 
@@ -198,13 +201,13 @@ Do the following:
 
     * For the **Platform Server** offline installation, create the `bin` folder at the same folder level as the Platform Server installation package.
 
-    * For the **LifeTime Management Console** offline installation, create the `bin` folder inside the Platfor Server installation path. The default path is `C:\Program Files\OutSystems\Platform Server`, but you can use a different one.
+    * For the **LifeTime Management Console** offline installation, create the `bin` folder inside the Platform Server installation path. The default path is `C:\Program Files\OutSystems\Platform Server`, but you can use a different one.
 
 1. Download and place the required Microsoft installers in the `bin` folder.
 
     * **Microsoft .NET Framework 4.7.2**  
         1\. [Download the Offline Installer for the Runtime](https://go.microsoft.com/fwlink/?LinkID=863265) from Microsoft.  
-        2\. Rename the Microsot .NET Framework Installer to `DotNet.exe`.  
+        2\. Rename the Microsoft .NET Framework Installer to `DotNet.exe`.  
         _Note:_ If you're installing a Platform Server version earlier than 11.9, rename the installer to `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` instead.
 
     * **.NET 8.0 Runtime & Hosting Bundle for Windows**  
@@ -231,6 +234,6 @@ Do the following:
 
 1. Run the installation package as usual. The binaries you downloaded from Microsoft will be detected by the installation package.
 
-## More Information
+## More information
 
 If you are having trouble installing or setting up OutSystems, check the [OutSystems Community](http://www.outsystems.com/forums/) for help, or reach out to the [OutSystems technical support](https://www.outsystems.com/legal/success/contact-outsystems-technical-support/).

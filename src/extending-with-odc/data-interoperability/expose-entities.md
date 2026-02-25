@@ -36,7 +36,7 @@ Exposing O11 entities in the LifeTime console comprises:
 
 * Selecting the set of O11 entities that you want to expose to ODC in a [baseline environment](#configure-baseline) - typically the first environment in your infrastructure pipeline used for application development. You configure the baseline environment the first time you expose entities.  
 
-* [Propagating the exposed entities](#propagate) to other environments in your O11 infrastructure pipeline.
+* [Promoting the exposed entities](#promote) to other environments in your O11 infrastructure pipeline.
 
 <div class="info" markdown="1">
 
@@ -46,7 +46,7 @@ To reduce clutter and follow the least privilege principle, expose only the O11 
 
 After exposing your O11 entities, you can then [configure the connection](configure-connection.md) from your ODC tenant to the O11 infrastructure so developers can reuse the exposed O11 entities in their ODC apps using ODC Studio.
 
-While evolving and maintaining your applications, you can [update the definition of the exposed entities](#update-exposed) in the baseline environment and propagate it again to the other environments in the pipeline.
+While evolving and maintaining your applications, you can [update the definition of the exposed entities](#update-exposed) in the baseline environment and promote it again to the other environments in the pipeline.
 
 ## Prerequisites
 
@@ -94,9 +94,14 @@ This step requires the **Access** [permission](https://success.outsystems.com/do
 
 </div>
 
-Before you start exposing your O11 entities to ODC, you first need to configure the **baseline environment**. This will be the single source where you define the set of entities that you want to expose. From this baseline environment, you will then propagate that definition to other environments in your pipeline, similarly to your app development lifecycle.
+Before you start exposing your O11 entities to ODC, you first need to configure the **baseline environment**. This will be the single source where you define the set of entities that you want to expose. From this baseline environment, you then promote that definition to other environments in your pipeline, similarly to your app development lifecycle.
 
-To ensure the configuration reaches all subsequent environments, you must start from the first environment in the pipeline. For example, if your O11 infrastructure comprises **Development > Quality > Production** environments, set the **Development environment** as the baseline environment.
+To ensure the configuration reaches all subsequent environments, you must start from the first environment in the pipeline. For example, if your O11 infrastructure pipeline comprises **Development > Quality > Production** environments, set the **Development environment** as the baseline environment.
+
+O11 infrastructures with additional pipelines must share the same baseline environment. For example, considering two O11 pipelines, Finance and HR, they would both start with the same **Development** environment configured as the baseline environment:
+
+* **Development > Finance QA > Finance PRD**
+* **Development > HR QA > HR PRD**
 
 Follow these steps to configure the baseline environment:
 
@@ -122,9 +127,17 @@ The baseline environment is now set, and you can start exposing your O11 entitie
 
 The **Applications > Expose Entities** screen in your LifeTime console shows the O11 entities of your applications that are exposed to ODC across your infrastructure. [Only public entities can be exposed](#control-data) to ODC.
 
+![Expose entities in LifeTime](images/expose-entities-lt.png "Expose entities in LifeTime")
+
+If your O11 infrastructure has additional pipelines, you can use the [environment filter](../../manage-platform-app-lifecycle/environment-filters.md) dropdown to display only the O11 environments of a specific pipeline.
+
+![Expose entities in LifeTime with environment filter](images/expose-entities-env-filter-lt.png "Expose entities in LifeTime with environment filter")
+
 Follow these steps to expose O11 entities in your baseline environment:
 
 1. Click **Manage access**.
+
+    The first time you expose entities there's no environment displayed, as there are no exposed entities yet.
 
     ![Manage access from expose entities option in LifeTime](images/expose-manage-access-lt.png "Manage access from expose entities option in LifeTime")
 
@@ -168,57 +181,63 @@ If you have an O11 self-managed infrastructure, make sure the required [database
 
 </div>
 
-After exposing in the baseline environment, you can now [propagate your exposed O11 entities to the next O11 environment](#propagate).
+After exposing in the baseline environment, you can now [promote your exposed O11 entities to the next O11 environment](#promote).
 
-## Propagate exposed O11 entities to other environments {#propagate}
+## Promote exposed O11 entities to other environments {#promote}
 
-When you need the exposed O11 entities available in the next ODC stage, propagate the exposed entities to the [corresponding O11 environment](intro.md#mapping).
+When you need the exposed O11 entities available in the next ODC stage, promote the exposed entities to the [corresponding O11 environment](intro.md#mapping).
 
 <div class="info" markdown="1">
 
-The propagation process creates or updates database views in the target O11 environment. For critical O11 systems, it's a good practice to run large-scale propagations during off-peak hours.
+The entity promotion process creates or updates database views in the target O11 environment. For critical O11 systems, it's a good practice to run large-scale promotions during off-peak hours.
 
 </div>
 
-Follow these steps to propagate the exposed O11 entities from the baseline environment to the next environment in the pipeline:
+Follow these steps to promote the exposed O11 entities from the baseline environment to the next environment in the pipeline:
 
-1. In the **Expose entities** home screen, use the **Application** and **Module** filter to list the exposed entities you want to propagate.
+1. In the **Expose entities** home screen, use the **Application** and **Module** filter to list the exposed entities you want to promote.
 
     The screen shows the status of the O11 entities in the baseline environment (**Exposed**) and the next environment (**Not exposed**).
 
-    ![Select apps and modules to propagate exposed entities to next O11 environment](images/expose-propagate-select-modules-lt.png "Select apps and modules to propagate exposed entities to next O11 environment")
+    ![Select apps and modules to promote exposed entities to next O11 environment](images/expose-promote-select-modules-lt.png "Select apps and modules to promote exposed entities to next O11 environment")
 
-1. Click **Promote** to begin the propagation.
+1. Click **Promote** to begin the promotion process.
 
     <div class="info" markdown="1">
 
-    To propagate exposed entities to the next environment, the O11 application must have been deployed to that environment.  
+    When promoting exposed entities:
+
+    * The O11 application must have been deployed to the target environment.
+
+    * The target environment defaults to the next environment in your O11 pipeline. If you want to skip an environment, use the dropdown next to the environment name to select a different target.
+
+    * If your O11 infrastructure has additional pipelines, you can use the [environment filter](../../manage-platform-app-lifecycle/environment-filters.md) on the **Expose entities** screen to dropdown to display only the O11 environments of a specific pipeline.
 
     </div>
 
-1. Make sure all the exposed entities that you want to propagate to the next environment are set with the **Promote** option.
+1. Make sure all the exposed entities that you want to promote to the target environment are set with the **Promote** option.
 
-    If there are exposed entities in the baseline environment that you don't want to propagate to the next environment yet, select the **Do nothing** option for those entities.
+    If there are exposed entities in the baseline environment that you don't want to promote to the next environment yet, select the **Do nothing** option for those entities.
 
-    ![Set propagate status for exposed entities](images/expose-propagate-set-apply-status-lt.png "Set propagate status for exposed entities")
+    ![Set promote status for exposed entities](images/expose-promote-set-apply-status-lt.png "Set promote status for exposed entities")
 
-1. Click **Apply to**.
+1. Click **Promote**.
 
 1. Click **Continue** to confirm and proceed with the operation.
 
 The results screen lists the successfully exposed entities and any errors that might occur. From here, you can export the exposing results and details to an Excel file using the **Export to excel** button.
 
-![Report of propagating O11 entities operation](images/expose-propagate-entities-report-lt.png "Report of propagating O11 entities operation")
+![Report of promoting O11 entities operation](images/expose-promote-entities-report-lt.png "Report of promoting O11 entities operation")
 
-Back to the **Expose entities**, you can now see the status of the exposed O11 entities that you propagated as **Exposed** in the next environment. The entities you didn't propagate will be kept as **Not exposed**.
+Back to the **Expose entities**, you can now see the status of the O11 entities that you promoted as **Exposed** in the next environment. The entities you didn't promote are kept as **Not exposed**.
 
-![Expose entities home screen showing propagated entities to QA](images/expose-propagated-entities-lt.png "Expose entities home screen showing propagated entities to QA")
+![Expose entities home screen showing promoted entities to QA](images/expose-promoted-entities-lt.png "Expose entities home screen showing promoted entities to QA")
 
-Repeat the same steps described above to propagate the exposed O11 entities to the following environment.
+Repeat the same steps described above to promote the exposed O11 entities to the following environment in your pipeline.
 
 <div class="info" markdown="1">
 
-If you have an O11 self-managed infrastructure, make sure a database administrator run the [required database operations](data-interop-self-managed.md#on-expose) in the environment to which the entities were propagated to.
+If you have an O11 self-managed infrastructure, make sure a database administrator run the [required database operations](data-interop-self-managed.md#on-expose) in the environment to which the entities were promoted to.
 
 </div>
 
@@ -226,7 +245,7 @@ If you have an O11 self-managed infrastructure, make sure a database administrat
 
 During the development of the ODC apps integrating with O11 data source, you might need to update or adjust the set of exposed O11 entities. For example, stop exposing an entity, or exposing a new entity.
 
-You must do all the changes in the baseline environment, which is the single source where you define the set of exposed entities, and then [propagate them to other environments](#propagate).
+You must do all the changes in the baseline environment, which is the single source where you define the set of exposed entities, and then [promote them to other environments](#promote).
 
 To update the definition of the current exposed entities in the baseline environment, follow these steps:
 
@@ -242,7 +261,7 @@ To update the definition of the current exposed entities in the baseline environ
 
     ![Exposed entities options menu](images/exposed-entities-options-lt.png "Exposed entities options menu")
 
-The changes are immediately reflected in the database views of the baseline environment, and you can then [propagate them to other environments](#propagate).
+The changes are immediately reflected in the database views of the baseline environment, and you can then [promote them to other environments](#promote).
 
 To reflect the changes in the ODC connection, [refresh the exposed entities](configure-connection.md#refresh-exposed) in the ODC Portal.
 

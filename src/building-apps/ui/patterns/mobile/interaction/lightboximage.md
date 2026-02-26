@@ -82,12 +82,10 @@ Watch how the [Product Overview sample](https://silkui.outsystems.com/Samples_Mo
 
 ## Accessibility – WCAG 2.2 AA compliance
 
-By default, the **Lightbox Image** UI Pattern presents several accessibility issues that can affect users of assistive technologies and automated testing tools. These issues are mainly related to the way the Lightbox dialog and its images are created and managed in the DOM.
+To ensure the **Lightbox Image** UI Pattern is fully compliant with **WCAG 2.2 AA**, you must ensure that the images displayed within the lightbox dialog are accessible.
 
-The main known issues are:
+The key requirement is:
 
-* The lightbox container is rendered with `role="dialog"` but doesn't always expose an accessible name (`aria-label`, `aria-labelledby`, or `title`), which can fail rules such as “ARIA dialog and alertdialog nodes should have an accessible name” and impact WCAG 2.2 success criteria related to name, role, and value.  
-* The images displayed inside the lightbox are cloned versions of the original thumbnails. These cloned images don't inherit text alternatives (`alt`, `aria-label`, or `title`), which can lead to failures of non-text content requirements.  
-* When the dialog is closed (for example, after pressing **Esc**), focus isn't reliably returned to the element that opened the lightbox. This behavior can make keyboard navigation confusing and doesn't meet expectations for accessible focus management.
+* Each image inside the Lightbox must include an accessible name. You must use the `aria-label` attribute or an appropriate `alt` attribute when applicable. Without an accessible name, the image fails WCAG success criteria related to **Non-text Content (1.1.1)** and [Name, Role, Value (4.1.2)](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html).
 
-These limitations are a consequence of the current implementation of the lightbox script and aren't trivial to address with a small configuration change. This section will be updated with concrete guidance once that enhanced implementation is ready.
+Providing a meaningful `aria-label` for every Lightbox image ensures that screen reader users can understand the image's purpose or content. This ensures compliance and improves overall accessibility.

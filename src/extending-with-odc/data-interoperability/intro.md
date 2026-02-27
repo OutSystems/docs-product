@@ -164,11 +164,15 @@ Before you start, make sure the following requirements are met:
 
 * You have an enterprise [cloud or self-managed O11 infrastructure](../../setup-infra-platform/setup/intro.md#alternatives). Take into account the [limitations](#limitations) for the O11 infrastructure setup.
 
-* The **Platform Server** version of your O11 environments is **11.40.0 or later**.
-
 * The **LifeTime** version of your O11 infrastructure is **11.28.0 or later**. The support for infrastructures with additional pipelines is available from **LifeTime 11.28.2**.
 
-* The **O11 LifeTime environment** is accessible over HTTPS (TCP on port 443) from your ODC tenant:
+* The **Platform Server** version of your O11 environments is **11.40.0 or later**. You can update your environments incrementally:
+
+    * Update your [O11 baseline environment](expose-entities.md#configure-baseline) first, so you can expose O11 entities in that environment and import them from ODC. This enables you to start developing in ODC.
+
+    * Then, update the remaining O11 environments (for example, QA or Production) when you need to [promote the exposed entities](expose-entities.md#promote) to those environments.
+
+* The **O11 LifeTime environment** is accessible over HTTPS (TCP on port 443) from your ODC tenant.
 
     * If you have an [internal network](../../security/configure-internal-network.md) configured or other IP restrictions, make sure the O11 LifeTime environment allow inbound connections from the [ODC IP addresses](https://success.outsystems.com/documentation/outsystems_developer_cloud/managing_outsystems_platform_and_apps/allowlisting_odc_public_ip_addresses/#platform-unification). For O11 cloud infrastructures, contact [OutSystems Support](https://www.outsystems.com/SupportPortal/CaseOpen/) to configure the required network connectivity.
 

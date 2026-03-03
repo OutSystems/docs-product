@@ -1,5 +1,5 @@
 ---
-summary: Explore the comprehensive guide on using System Actions in OutSystems 11 (O11) for server and client-side operations in application development.
+summary: Guide to System Actions in OutSystems 11 (O11). Use them for server and client-side operations.
 tags: server actions, client-side logic, system module, action management, expression editor
 locale: en-us
 guid: 15b8a38f-a4cc-4bb7-b496-520824990340
@@ -22,7 +22,7 @@ OutSystems provides a set of **System Actions** that you can use when designing 
 
 Run System Actions the same way as any other Action in your module. **System Actions** are available in the **Logic** tab, under the **System** module within the **Server Actions** folder.
 
-If you are developing a mobile app, along with the System Actions available at the server side, you can use a set of System Actions to run at the client side. These **Client Actions** are available under the System module within the **Client Actions** folder.
+For mobile apps, you can use server-side and client-side System Actions. **Client Actions** are under the System module in the **Client Actions** folder.
 
 Similarly to the Actions you design in your module, some Systems Actions are **defined as functions**, which you can use also within Expressions. They're available in the **User Functions** folder within the Scope Tree of the Expression Editor.
 
@@ -40,67 +40,79 @@ Only a subset of the System Actions is by default available in your module. You 
 
 ## Summary
 
+The following tables list all System Actions by type. Server Actions run on the server; Client Actions run client-side in mobile apps. Select an action name to jump to its reference.
+
+### Server Actions
+
+The following table lists Server Actions available in the **Logic** tab under the System module. Actions marked **Is Function?** are available in the Expression Editor. Select an action name to jump to its reference.
+
+<!-- markdownlint-disable MD051 -->
 | Server Action | Description | Is Function? |
-| ---|---|--- |
-| [AbortTransaction](<#AbortTransaction>) | Issues a database ROLLBACK command that undoes all changes performed on the database since the last commit. | |
-| [ActivityClose](<#ActivityClose>) | Explicitly closes a Human Activity or a Wait Activity ending the execution.<br/>The the id of the next Human Activity in sequence is returned, if determined. | |
-| [ActivityGetUrl](<#ActivityGetUrl>) | Returns the URL of the web screen where an activity will be carried out, once opened. | Yes |
-| [ActivityOpen](<#ActivityOpen>) | Explicitly forces a Human Activity instance to be opened in an end user's Taskbox. | |
-| [ActivityReset](<#ActivityReset>) | Releases the Human Activity leaving it to be opened and carried out by another end user. | |
-| [ActivitySchedule](<#ActivitySchedule>) | Schedules a date for the Human Activity to be available in the Taskbox. | |
-| [ActivitySetGroup](<#ActivitySetGroup>) | Limit a Human Activity visibility and handling to end users who belong to a specific group. | |
-| [ActivitySkip](<#ActivitySkip>) | Explicitly skips the execution of a Human Activity or a Wait Activity.<br/>The the id of the next Human Activity in sequence is returned, if determined. | |
-| [ActivityStart](<#ActivityStart>) | Explicitly starts the execution of a ConditionalStart Activity. | |
-| [ClientCertificateGetDetails](<#ClientCertificateGetDetails>) | Gets the relevant information for the current request client certificate from the .NET framework. | |
-| [ClientCertificateValue](<#ClientCertificateValue>) | Gets the value of a specific property of the client certificate in the .NET framework. | |
-| [CommitTransaction](<#CommitTransaction>) | Issues a database COMMIT command that makes effective all changes done on the database since the last commit. | |
-| [Deprecated_Notify](<#Deprecated_Notify>) | DEPRECATED: This action is deprecated because Events are now available for Web Blocks. Use Events in Web Blocks to propagate changes from a Web Block to the parent block.<br/><br/>The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function. | |
-| [Deprecated_NotifyGetMessage](<#Deprecated_NotifyGetMessage>) | DEPRECATED: This action is deprecated because Events are now available for Web Blocks. Use Input Parameters in block Events to send information to the parent block when the Event is triggered.<br/><br/>Returns the notification message sent by the Notify action. | Yes |
-| [Deprecated_NotifyWidget](<#Deprecated_NotifyWidget>) | The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function. | |
-| [EspaceInvalidateCache](<#EspaceInvalidateCache>) | Invalidates module/eSpace's specific caches across all Front-end servers and consumer module/eSpaces. Limit the invalidation to a single tenant by setting the tenant identifier. | |
-| [GenerateGuid](<#GenerateGuid>) | Generates and returns a new GUID. | Yes |
-| [InboundSmsGetDetails](<#InboundSmsGetDetails>) | DEPRECATED: This action is deprecated because the SMS features are no longer available. Returns information about the inbound SMS that is currently being processed. | |
-| [IntegratedSecurityCheckRole](<#IntegratedSecurityCheckRole>) | Verifies whether the current Windows user has access to a specific role. | Yes |
-| [IntegratedSecurityGetDetails](<#IntegratedSecurityGetDetails>) | Gets information about the current Windows user that made the request. | |
-| [ListAll](<#ListAll>) | Determines if all the elements in the list satisfy the given condition. | |
-| [ListAny](<#ListAny>) | Determines if any of the elements in the list satisfies the given condition. | |
-| [ListAppend](<#ListAppend>) | Adds an element to the end of a list. | |
-| [ListAppendAll](<#ListAppendAll>) | Adds the elements of the source list to the end of the destination list. | |
-| [ListClear](<#ListClear>) | Removes all elements from a list. | |
-| [ListDistinct](<#ListDistinct>) | Filters duplicate elements from a list. | Yes |
-| [ListDuplicate](<#ListDuplicate>) | Duplicates the elements of a list into another list. | Yes |
-| [ListFilter](<#ListFilter>) | Returns a new list with the elements from the List parameter satisfying the given condition. | |
-| [ListIndexOf](<#ListIndexOf>) | Returns the position of the first element of the List parameter that satisfies the given condition, or -1 if no element satisfying the condition was found. | |
-| [ListInsert](<#ListInsert>) | Inserts an element in a specific position of a list. | |
-| [ListRemove](<#ListRemove>) | Removes an element from a specific position of a list. | |
-| [ListSort](<#ListSort>) | Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. | |
-| [Login](<#Login>) | Logs a specified user in the application.<br/>In case of success, 'UserId' and 'Username' session variables are filled with the user data. | |
-| [LoginPassword](<#LoginPassword>) | Logs a specified user in the application using a password.<br/>In case of success, 'UserId' and 'Username' session variables are filled with the user data. | |
-| [LogMessage](<#LogMessage>) | Registers information that can be presented in Service Center in the module general log. | |
-| [Logout](<#Logout>) | Logs out a specific user from the application.<br/>The 'UserId' and 'Username' session variables are cleared. | |
-| [ProcessTerminate](<#ProcessTerminate>) | Explicitly forces a Process to terminate its execution. | |
-| [SetCurrentLocale](<#SetCurrentLocale>) | Sets the language locale of the user session to change the application presentation language. | |
-| [TenantCreate](<#TenantCreate>) | Creates a new tenant and associates it with the provisioning site. | |
-| [TenantInvalidateCache](<#TenantInvalidateCache>) | Invalidates tenant's specific caches across all Front-end servers and module/eSpaces. This action is now available for compatibility purposes only. Please use the EspaceInvalidateCache action instead and invalidate tenant's specific caches by module/eSpace to narrow the invalidation scope | |
-| [TenantSwitch](<#TenantSwitch>) | Change the context to the given tenant identifier. When switching tenant, the session is cleared (equivalent to an implicit logout, before changing the tenant), the OnSessionStart actions are executed, and the current transaction is committed. | |
+| --- | --- | --- |
+| [AbortTransaction](#AbortTransaction) | Issues a database ROLLBACK command that undoes all changes performed on the database since the last commit. | |
+| [ActivityClose](#ActivityClose) | Explicitly closes a Human Activity or a Wait Activity ending the execution.<br/>The id of the next Human Activity in sequence is returned, if determined. | |
+| [ActivityGetUrl](#ActivityGetUrl) | Returns the URL of the web screen where an activity is carried out once opened. | Yes |
+| [ActivityOpen](#ActivityOpen) | Explicitly forces a Human Activity instance to be opened in an end user's Taskbox. | |
+| [ActivityReset](#ActivityReset) | Releases the Human Activity leaving it to be opened and carried out by another end user. | |
+| [ActivitySchedule](#ActivitySchedule) | Schedules a date for the Human Activity to be available in the Taskbox. | |
+| [ActivitySetGroup](#ActivitySetGroup) | Limit a Human Activity visibility and handling to end users who belong to a specific group. | |
+| [ActivitySkip](#ActivitySkip) | Explicitly skips the execution of a Human Activity or a Wait Activity.<br/>The id of the next Human Activity in sequence is returned, if determined. | |
+| [ActivityStart](#ActivityStart) | Explicitly starts the execution of a ConditionalStart Activity. | |
+| [ClientCertificateGetDetails](#ClientCertificateGetDetails) | Gets the relevant information for the current request client certificate from the .NET framework. | |
+| [ClientCertificateValue](#ClientCertificateValue) | Gets the value of a specific property of the client certificate in the .NET framework. | |
+| [CommitTransaction](#CommitTransaction) | Issues a database COMMIT command that makes effective all changes done on the database since the last commit. | |
+| [Deprecated_Notify](#Deprecated_Notify) | DEPRECATED: This action is deprecated because Events are now available for Web Blocks. Use Events in Web Blocks to propagate changes from a Web Block to the parent block.<br/><br/>The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function. | |
+| [Deprecated_NotifyGetMessage](#Deprecated_NotifyGetMessage) | DEPRECATED: This action is deprecated because Events are now available for Web Blocks. Use Input Parameters in block Events to send information to the parent block when the Event is triggered.<br/><br/>Returns the notification message sent by the Notify action. | Yes |
+| [Deprecated_NotifyWidget](#Deprecated_NotifyWidget) | The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function. | |
+| [EspaceInvalidateCache](#EspaceInvalidateCache) | Invalidates module/eSpace's specific caches across all Front-end servers and consumer module/eSpaces. Limit the invalidation to a single tenant by setting the tenant identifier. | |
+| [GenerateGuid](#GenerateGuid) | Generates and returns a new GUID. | Yes |
+| [InboundSmsGetDetails](#InboundSmsGetDetails) | DEPRECATED: This action is deprecated because the SMS features are no longer available. Returns information about the inbound SMS that is currently being processed. | |
+| [IntegratedSecurityCheckRole](#IntegratedSecurityCheckRole) | Verifies whether the current Windows user has access to a specific role. | Yes |
+| [IntegratedSecurityGetDetails](#IntegratedSecurityGetDetails) | Gets information about the current Windows user that made the request. | |
+| [ListAll](#ListAll) | Determines if all the elements in the list satisfy the given condition. | |
+| [ListAny](#ListAny) | Determines if any of the elements in the list satisfies the given condition. | |
+| [ListAppend](#ListAppend) | Adds an element to the end of a list. | |
+| [ListAppendAll](#ListAppendAll) | Adds the elements of the source list to the end of the destination list. | |
+| [ListClear](#ListClear) | Removes all elements from a list. | |
+| [ListDistinct](#ListDistinct) | Filters duplicate elements from a list. | Yes |
+| [ListDuplicate](#ListDuplicate) | Duplicates the elements of a list into another list. | Yes |
+| [ListFilter](#ListFilter) | Returns a new list with the elements from the List parameter satisfying the given condition. | |
+| [ListIndexOf](#ListIndexOf) | Returns the position of the first element of the List parameter that satisfies the given condition, or -1 if no element satisfying the condition was found. | |
+| [ListInsert](#ListInsert) | Inserts an element in a specific position of a list. | |
+| [ListRemove](#ListRemove) | Removes an element from a specific position of a list. | |
+| [ListSort](#ListSort) | Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. | |
+| [Login](#Login) | Logs a specified user in the application.<br/>In case of success, 'UserId' and 'Username' session variables are filled with the user data. | |
+| [LoginPassword](#LoginPassword) | Logs a specified user in the application using a password.<br/>In case of success, 'UserId' and 'Username' session variables are filled with the user data. | |
+| [LogMessage](#LogMessage) | Registers information that can be presented in Service Center in the module general log. | |
+| [Logout](#Logout) | Logs out a specific user from the application.<br/>The 'UserId' and 'Username' session variables are cleared. | |
+| [ProcessTerminate](#ProcessTerminate) | Explicitly forces a Process to terminate its execution. | |
+| [SetCurrentLocale](#SetCurrentLocale) | Sets the language locale of the user session to change the application presentation language. | |
+| [TenantCreate](#TenantCreate) | Creates a new tenant and associates it with the provisioning site. | |
+| [TenantInvalidateCache](#TenantInvalidateCache) | Invalidates tenant's specific caches across all Front-end servers and module/eSpaces. This action is now available for compatibility purposes only. Please use the EspaceInvalidateCache action instead and invalidate tenant's specific caches by module/eSpace to narrow the invalidation scope | |
+| [TenantSwitch](#TenantSwitch) | Change the context to the given tenant identifier. When switching tenant, the session is cleared (equivalent to an implicit logout, before changing the tenant), the OnSessionStart actions are executed, and the current transaction is committed. | |
+
+### Client Actions
+
+The following table lists Client Actions for mobile apps. These actions run client-side. Select an action name to jump to its reference.
 
 | Client Action | Description | Is Function? |
-| ---|---|--- |
-| [ListAll](<#Client_ListAll>) | Determines if all the elements in the list satisfy the given condition. | |
-| [ListAny](<#Client_ListAny>) | Determines if any of the elements in the list satisfies the given condition. | |
-| [ListAppend](<#Client_ListAppend>) | Adds an element to the end of a list. | |
-| [ListAppendAll](<#Client_ListAppendAll>) | Adds the elements of the source list to the end of the destination list. | |
-| [ListClear](<#Client_ListClear>) | Removes all elements from a list. | |
-| [ListDistinct](<#Client_ListDistinct>) | Filters duplicate elements from a list. | Yes |
-| [ListDuplicate](<#Client_ListDuplicate>) | Duplicates the elements of a list into another list. | Yes |
-| [ListFilter](<#Client_ListFilter>) | Returns a new list with the elements from the List parameter satisfying the given condition. | |
-| [ListIndexOf](<#Client_ListIndexOf>) | Returns the position of the first element of the List parameter that satisfies the given condition, or -1 if no element satisfying the condition was found. | |
-| [ListInsert](<#Client_ListInsert>) | Inserts an element in a specific position of a list. | |
-| [ListRemove](<#Client_ListRemove>) | Removes an element from a specific position of a list. | |
-| [ListSort](<#Client_ListSort>) | Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. | |
-| [LogMessage](<#Client_LogMessage>) | Registers information that can be presented in Service Center in the module general log. | |
-| [RequireScript](<#Client_RequireScript>) | Add a Javascript to the html header. Multiple calls for the same Javascript will only add it once. Action flow will proceed after the Javascript has been successfully loaded. | |
-| [SetCurrentLocale](<#Client_SetCurrentLocale>) | Set the locale to change your app's display language. | |
+| --- | --- | --- |
+| [ListAll](#Client_ListAll) | Determines if all the elements in the list satisfy the given condition. | |
+| [ListAny](#Client_ListAny) | Determines if any of the elements in the list satisfies the given condition. | |
+| [ListAppend](#Client_ListAppend) | Adds an element to the end of a list. | |
+| [ListAppendAll](#Client_ListAppendAll) | Adds the elements of the source list to the end of the destination list. | |
+| [ListClear](#Client_ListClear) | Removes all elements from a list. | |
+| [ListDistinct](#Client_ListDistinct) | Filters duplicate elements from a list. | Yes |
+| [ListDuplicate](#Client_ListDuplicate) | Duplicates the elements of a list into another list. | Yes |
+| [ListFilter](#Client_ListFilter) | Returns a new list with the elements from the List parameter satisfying the given condition. | |
+| [ListIndexOf](#Client_ListIndexOf) | Returns the position of the first element of the List parameter that satisfies the given condition, or -1 if no element satisfying the condition was found. | |
+| [ListInsert](#Client_ListInsert) | Inserts an element in a specific position of a list. | |
+| [ListRemove](#Client_ListRemove) | Removes an element from a specific position of a list. | |
+| [ListSort](#Client_ListSort) | Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. | |
+| [LogMessage](#Client_LogMessage) | Registers information that can be presented in Service Center in the module general log. | |
+| [RequireScript](#Client_RequireScript) | Add a JavaScript to the html header. Multiple calls for the same JavaScript will only add it once. Action flow proceeds after the JavaScript loads successfully. | |
+| [SetCurrentLocale](#Client_SetCurrentLocale) | Set the locale to change your app's display language. | |
+<!-- markdownlint-enable MD051 -->
 
 ## Server Actions
 
@@ -111,28 +123,28 @@ Issues a database ROLLBACK command that undoes all changes performed on the data
 ### ActivityClose {#ActivityClose}
 
 Explicitly closes a Human Activity or a Wait Activity ending the execution.  
-The the id of the next Human Activity in sequence is returned, if determined.
+The id of the next Human Activity in sequence is returned, if determined.
 
-_Inputs_
+#### Inputs
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
 
-_Outputs_
+#### Outputs
 
 NextHumanActivityId
 :   Type: Activity Identifier.  
 
 ### ActivityGetUrl {#ActivityGetUrl}
 
-Returns the URL of the web screen where an activity will be carried out, once opened.
+Returns the URL of the web screen where an activity is carried out once opened.
 
-_Inputs_
+#### Inputs
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
 
-_Outputs_
+#### Outputs
 
 HandlingUrl
 :   Type: Text.  
@@ -141,12 +153,12 @@ HandlingUrl
 
 Explicitly forces a Human Activity instance to be opened in an end user's Taskbox.
 
-_Inputs_
+#### Inputs
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
 
-_Outputs_
+#### Outputs
 
 HandlingUrl
 :   Type: Text.  
@@ -155,7 +167,7 @@ HandlingUrl
 
 Releases the Human Activity leaving it to be opened and carried out by another end user.
 
-_Inputs_
+#### Inputs
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -167,7 +179,7 @@ ResetActivityUser
 
 Schedules a date for the Human Activity to be available in the Taskbox.
 
-_Inputs_
+#### Inputs
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -179,7 +191,7 @@ StartDate
 
 Limit a Human Activity visibility and handling to end users who belong to a specific group.
 
-_Inputs_
+#### Inputs
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
@@ -190,14 +202,14 @@ GroupId
 ### ActivitySkip {#ActivitySkip}
 
 Explicitly skips the execution of a Human Activity or a Wait Activity.  
-The the id of the next Human Activity in sequence is returned, if determined.
+The id of the next Human Activity in sequence is returned, if determined.
 
-_Inputs_
+#### Inputs
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
 
-_Outputs_
+#### Outputs
 
 NextHumanActivityId
 :   Type: Activity Identifier.  
@@ -206,12 +218,12 @@ NextHumanActivityId
 
 Explicitly starts the execution of a ConditionalStart Activity.
 
-_Inputs_
+#### Inputs
 
 ActivityId
 :   Type: mandatory, Activity Identifier.  
 
-_Outputs_
+#### Outputs
 
 NextHumanActivityId
 :   Type: Activity Identifier.  
@@ -220,7 +232,7 @@ NextHumanActivityId
 
 Gets the relevant information for the current request client certificate from the .NET framework.
 
-_Outputs_
+#### Outputs
 
 cookie
 :   Type: Text.  
@@ -270,12 +282,12 @@ validUntil
 
 Gets the value of a specific property of the client certificate in the .NET framework.
 
-_Inputs_
+#### Inputs
 
 key
 :   Type: mandatory, Text.  
 
-_Outputs_
+#### Outputs
 
 value
 :   Type: Text.  
@@ -290,7 +302,7 @@ DEPRECATED: This action is deprecated because Events are now available for Web B
   
 The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function.
 
-_Inputs_
+#### Inputs
 
 Message
 :   Type: optional, Text.  
@@ -301,7 +313,7 @@ DEPRECATED: This action is deprecated because Events are now available for Web B
   
 Returns the notification message sent by the Notify action.
 
-_Outputs_
+#### Outputs
 
 Message
 :   Type: Text.  
@@ -310,7 +322,7 @@ Message
 
 The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function.
 
-_Inputs_
+#### Inputs
 
 Message
 :   Type: optional, Text.  
@@ -319,7 +331,7 @@ Message
 
 Invalidates module/eSpace's specific caches across all Front-end servers and consumer modules/eSpaces. Limit the invalidation to a single tenant by setting the tenant identifier.
 
-_Inputs_
+#### Inputs
 
 EspaceId
 :   Type: optional, Espace Identifier.  
@@ -333,7 +345,7 @@ TenantId
 
 Generates and returns a new GUID.
 
-_Outputs_
+#### Outputs
 
 Guid
 :   Type: Text.  
@@ -342,7 +354,7 @@ Guid
 
 DEPRECATED: This action is deprecated because the SMS features are no longer available. Returns information about the inbound SMS that is currently being processed.
 
-_Outputs_
+#### Outputs
 
 MSISDN
 :   Type: Phone Number.  
@@ -390,12 +402,12 @@ Custom3
 
 Verifies whether the current Windows user has access to a specific role.
 
-_Inputs_
+#### Inputs
 
 RoleName
 :   Type: mandatory, Text.  
 
-_Outputs_
+#### Outputs
 
 Belongs
 :   Type: Boolean.  
@@ -404,7 +416,7 @@ Belongs
 
 Gets information about the current Windows user that made the request.
 
-_Outputs_
+#### Outputs
 
 Username
 :   Type: Text.  
@@ -425,7 +437,7 @@ isAuthenticated
 
 Determines if all the elements in the list satisfy the given condition.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -435,7 +447,7 @@ Condition
 :   Type: mandatory, Boolean.  
     The boolean expression to check for on each element of the list.
 
-_Outputs_
+#### Outputs
 
 Result
 :   Type: Boolean.  
@@ -445,7 +457,7 @@ Result
 
 Determines if any of the elements in the list satisfies the given condition.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -455,7 +467,7 @@ Condition
 :   Type: mandatory, Boolean.  
     The boolean expression to check for on each element of the list.
 
-_Outputs_
+#### Outputs
 
 Result
 :   Type: Boolean.  
@@ -465,7 +477,7 @@ Result
 
 Adds an element to the end of a list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -479,7 +491,7 @@ Element
 
 Adds the elements of the source list to the end of the destination list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -487,13 +499,13 @@ List
 
 SourceList
 :   Type: mandatory, Generic Record List.  
-    The list whose elements will be added.
+    The list whose elements are added.
 
 ### ListClear {#ListClear}
 
 Removes all elements from a list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -503,13 +515,13 @@ List
 
 Filters duplicate elements from a list.
 
-_Inputs_
+#### Inputs
 
 SourceList
 :   Type: mandatory, Generic Record List.  
     The list that includes duplicate elements.
 
-_Outputs_
+#### Outputs
 
 DistinctList
 :   Type: Generic Record List.  
@@ -519,13 +531,13 @@ DistinctList
 
 Duplicates the elements of a list into another list.
 
-_Inputs_
+#### Inputs
 
 SourceList
 :   Type: mandatory, Generic Record List.  
     The list to duplicate.
 
-_Outputs_
+#### Outputs
 
 DuplicatedList
 :   Type: Generic Record List.  
@@ -535,7 +547,7 @@ DuplicatedList
 
 Returns a new list with the elements from the List parameter satisfying the given condition.
 
-_Inputs_
+#### Inputs
 
 SourceList
 :   Type: mandatory, Generic Record List.  
@@ -545,7 +557,7 @@ Condition
 :   Type: mandatory, Boolean.  
     The boolean expression to check for on each element of the list.
 
-_Outputs_
+#### Outputs
 
 FilteredList
 :   Type: Generic Record List.  
@@ -555,7 +567,7 @@ FilteredList
 
 Returns the position of the first element of the List parameter that satisfies the given condition, or -1 if no element satisfying the condition was found.
 
-**Examples**
+#### Examples
 
 ```
 ListIndexOf(UserList, Is_Active)
@@ -569,7 +581,7 @@ ListIndexOf(UserList, Name = "James")
 Returns the position of the first user in the list of User records satisfying the condition Name = "James".
 ```
 
-*Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -579,7 +591,7 @@ Condition
 :   Type: mandatory, Boolean.  
     The boolean expression to check for on each element of the list.
 
-_Outputs_
+#### Outputs
 
 Position
 :   Type: Integer.  
@@ -589,7 +601,7 @@ Position
 
 Inserts an element in a specific position of a list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -607,7 +619,7 @@ Position
 
 Removes an element from a specific position of a list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -621,7 +633,7 @@ Position
 
 Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. You can sort different kinds of lists, like lists of basic types (for example, Text List, Integer List), Lists of Entity records, Lists of Structures, and Record Lists.
 
-**Examples**
+#### Examples
 
 ```
 ListSort(UserList, Name)
@@ -652,7 +664,7 @@ Order of OfficeEmployeesList Records after calling ListSort(OfficeEmployeesList,
 [ {Employee.Name = "Jane"}, {Office.Name = 'Central Office'} ]
 ```
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Any List.  
@@ -671,21 +683,21 @@ Ascending
 Logs a specified user in the application.  
 In case of success, 'UserId' and 'Username' session variables are filled with the user data.
 
-_Inputs_
+#### Inputs
 
 UserId
 :   Type: mandatory, User Identifier.  
 
 Persistent
 :   Type: mandatory, Boolean.  
-    If true, the login will be persistent for 15 days
+    If true, the login is persistent for 15 days
 
 ### LoginPassword {#LoginPassword}
 
 Logs a specified user in the application using a password.  
 In case of success, 'UserId' and 'Username' session variables are filled with the user data.
 
-_Inputs_
+#### Inputs
 
 UserId
 :   Type: mandatory, User Identifier.  
@@ -695,21 +707,21 @@ Password
 
 Persistent
 :   Type: mandatory, Boolean.  
-    If true, the login will be persistent for 15 days
+    If true, the login is persistent for 15 days
 
 ### LogMessage {#LogMessage}
 
-With the server side LogMessage action you can register your custom app logs that will be shown in Service Center general logs. When checking these logs in Service Center, the Module field represents the app module that generated the message, or in other words, the module where the LogMessage is consumed. The **Time of Log** and **Module** fields are automatically added when the log is created. You must also add the inputs below.
+With the server side LogMessage action you can register your custom app logs that are shown in Service Center general logs. When checking these logs in Service Center, the Module field represents the app module that generated the message, or in other words, the module where the LogMessage is consumed. The **Time of Log** and **Module** fields are automatically added when the log is created. You must also add the inputs below.
 
-_Inputs_
+#### Inputs
 
 Message
-:   Type: mandatory, Text. It's length is limited to 2000 characters, extra characters will be truncated.
-    The message to add to the module general log. In Service Center, it will show in the **Message** column.
+:   Type: mandatory, Text. It's length is limited to 2000 characters, extra characters are truncated.
+    The message to add to the module general log. In Service Center, it shows in the **Message** column.
 
 ModuleName
-:   Type: mandatory, Text. It's length is limited to 15 characters, extra characters will be truncated.
-    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance` or `Debug`. It will show in Service Center in the **Source** column.
+:   Type: mandatory, Text. It's length is limited to 15 characters, extra characters are truncated.
+    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance` or `Debug`. It shows in Service Center in the **Source** column.
 
 ### Logout {#Logout}
 
@@ -720,7 +732,7 @@ The 'UserId' and 'Username' session variables are cleared.
 
 Explicitly forces a Process to terminate its execution.
 
-_Inputs_
+#### Inputs
 
 ProcessId
 :   Type: mandatory, Process Identifier.  
@@ -729,7 +741,7 @@ ProcessId
 
 Sets the language locale of the user session to change the application presentation language.
 
-_Inputs_
+#### Inputs
 
 Locale
 :   Type: mandatory, Text.  
@@ -738,17 +750,17 @@ Locale
 
 Creates a new tenant and associates it with a [User Provider module](../../../user-management/end-user-manage/end-user-authentication/single-sign-on.md).
 
-_Inputs_
+#### Inputs
 
 eSpaceName
 :   Type: mandatory, Text.  
-    Name of the User Provider module for the new tenant. The new tenant will become a User Subscriber to the specified module.
+    Name of the User Provider module for the new tenant. The new tenant becomes a User Subscriber to the specified module.
 
 TenantName
 :   Type: mandatory, Text.  
     Name of the new tenant to be created.
 
-_Outputs_
+#### Outputs
 
 TenantId
 :   Type: Tenant Identifier.  
@@ -758,17 +770,17 @@ TenantId
 
 Invalidates tenant's specific caches across all Front-end servers and modules/eSpaces. This action is now available for compatibility purposes only. Please use the EspaceInvalidateCache action instead and invalidate tenant's specific caches by module/eSpace to narrow the invalidation scope
 
-_Inputs_
+#### Inputs
 
 TenantId
 :   Type: mandatory, Tenant Identifier.  
-    Identifier of the tenant which will have all of its specific caches invalidated.
+    Identifier of the tenant whose specific caches are invalidated.
 
 ### TenantSwitch {#TenantSwitch}
 
-Change the context to the given tenant identifier. When switching tenant, the session is cleared (equivalent to an implicit logout, before changing the tenant), the OnSessionStart actions are executed, and the current transaction is commited.
+Change the context to the given tenant identifier. When switching tenant, the session is cleared (equivalent to an implicit logout, before changing the tenant), the OnSessionStart actions are executed, and the current transaction is committed.
 
-_Inputs_
+#### Inputs
 
 TenantId
 :   Type: mandatory, Tenant Identifier.  
@@ -779,7 +791,7 @@ TenantId
 
 Determines if all the elements in the list satisfy the given condition.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -789,7 +801,7 @@ Condition
 :   Type: mandatory, Boolean.  
     The boolean expression to check for on each element of the list.
 
-_Outputs_
+#### Outputs
 
 Result
 :   Type: Boolean.  
@@ -799,7 +811,7 @@ Result
 
 Determines if any of the elements in the list satisfies the given condition.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -809,7 +821,7 @@ Condition
 :   Type: mandatory, Boolean.  
     The boolean expression to check for on each element of the list.
 
-_Outputs_
+#### Outputs
 
 Result
 :   Type: Boolean.  
@@ -819,7 +831,7 @@ Result
 
 Adds an element to the end of a list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -833,7 +845,7 @@ Element
 
 Adds the elements of the source list to the end of the destination list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -841,13 +853,13 @@ List
 
 SourceList
 :   Type: mandatory, Generic Record List.  
-    The list whose elements will be added.
+    The list whose elements are added.
 
 ### ListClear {#Client_ListClear}
 
 Removes all elements from a list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -857,13 +869,13 @@ List
 
 Filters duplicate elements from a list.
 
-_Inputs_
+#### Inputs
 
 SourceList
 :   Type: mandatory, Generic Record List.  
     The list that includes duplicate elements.
 
-_Outputs_
+#### Outputs
 
 DistinctList
 :   Type: Generic Record List.  
@@ -873,13 +885,13 @@ DistinctList
 
 Duplicates the elements of a list into another list.
 
-_Inputs_
+#### Inputs
 
 SourceList
 :   Type: mandatory, Generic Record List.  
     The list to duplicate.
 
-_Outputs_
+#### Outputs
 
 DuplicatedList
 :   Type: Generic Record List.  
@@ -889,7 +901,7 @@ DuplicatedList
 
 Returns a new list with the elements from the List parameter satisfying the given condition.
 
-_Inputs_
+#### Inputs
 
 SourceList
 :   Type: mandatory, Generic Record List.  
@@ -899,7 +911,7 @@ Condition
 :   Type: mandatory, Boolean.  
     The boolean expression to check for on each element of the list.
 
-_Outputs_
+#### Outputs
 
 FilteredList
 :   Type: Generic Record List.  
@@ -909,7 +921,7 @@ FilteredList
 
 Returns the position of the first element of the List parameter that satisfies the given condition, or -1 if no element satisfying the condition was found.
 
-**Examples**
+#### Examples
 
 ```
 ListIndexOf(UserList, Is_Active)
@@ -923,7 +935,7 @@ ListIndexOf(UserList, Name = "James")
 Returns the position of the first user in the list of User records satisfying the condition Name = "James".
 ```
 
-*Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Any List.  
@@ -933,7 +945,7 @@ Condition
 :   Type: mandatory, Boolean.  
     The boolean expression to check for on each element of the list.
 
-_Outputs_
+#### Outputs
 
 Position
 :   Type: Integer.  
@@ -943,7 +955,7 @@ Position
 
 Inserts an element in a specific position of a list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -961,7 +973,7 @@ Position
 
 Removes an element from a specific position of a list.
 
-_Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Generic Record List.  
@@ -975,7 +987,7 @@ Position
 
 Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. You can sort different kinds of lists, like lists of basic types (for example, Text List, Integer List), Lists of Entity records, Lists of Structures, and Record Lists.
 
-**Examples**
+#### Examples
 
 ```
 ListSort(UserList, Name)
@@ -1006,7 +1018,7 @@ Order of OfficeEmployeesList Records after calling ListSort(OfficeEmployeesList,
 [ {Employee.Name = "Jane"}, {Office.Name = 'Central Office'} ]
 ```
 
-*Inputs_
+#### Inputs
 
 List
 :   Type: mandatory, Any List.  
@@ -1022,33 +1034,33 @@ Ascending
 
 ### LogMessage {#Client_LogMessage}
 
-With the client side LogMessage action you can register your custom app logs that will be shown in Service Center general logs. When checking these logs in Service Center, the Module field represents the app module that generated the message, or in other words, the module where the LogMessage is consumed. The **Time of Log** and **Module** fields are automatically added when the log is created. You must also add the inputs below.
+With the client side LogMessage action you can register your custom app logs that are shown in Service Center general logs. When checking these logs in Service Center, the Module field represents the app module that generated the message, or in other words, the module where the LogMessage is consumed. The **Time of Log** and **Module** fields are automatically added when the log is created. You must also add the inputs below.
 
-_Inputs_
+#### Inputs
 
 Message
-:   Type: mandatory, Text. It's length is limited to 2000 characters, extra characters will be truncated.
-    The message to add to the module general log. In Service Center, it will show in the **Message** column.
+:   Type: mandatory, Text. It's length is limited to 2000 characters, extra characters are truncated.
+    The message to add to the module general log. In Service Center, it shows in the **Message** column.
 
 ModuleName
-:   Type: mandatory, Text. It's length is limited to 15 characters, extra characters will be truncated.
-    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance` or `Debug`. It will show in Service Center in the **Source** column.
+:   Type: mandatory, Text. It's length is limited to 15 characters, extra characters are truncated.
+    ModuleName is a text of your choice that you can define to name your desired grouping. For example, you can group logs as `Performance` or `Debug`. It shows in Service Center in the **Source** column.
 
 ### RequireScript {#Client_RequireScript}
 
-Add a Javascript to the html header. Multiple calls for the same Javascript will only add it once. Action flow will proceed after the Javascript has been successfully loaded.
+Add a JavaScript to the html header. Multiple calls for the same JavaScript will only add it once. Action flow proceeds after the JavaScript loads successfully.
 
-_Inputs_
+#### Inputs
 
 Url
 :   Type: mandatory, Text.  
-    The Url of the Javascript to add to the header
+    The Url of the JavaScript to add to the header
 
 ### SetCurrentLocale {#Client_SetCurrentLocale}
 
 Set the locale to change your app's display language.
 
-_Inputs_
+#### Inputs
 
 Locale
 :   Type: mandatory, Text.  

@@ -231,12 +231,16 @@ The table shows the compatibility of the Camera plugin with the Mobile Apps Buil
 
 |Plugin version|Compatible with MABS version|Notes|
 |-|-|-|
-|7.5.0 and later|MABS 10.0 and later.||
-|7.2.0 and later|MABS 9.0 and later.||
-|7.1.0 and later|MABS 7.0 and later.||
-|5.1.0 and later|All MABS versions.||
-|5.0.0 and later|MABS 5.0 and later.|For Android P with Support Library 28.|
-|5.0.0 and earlier|MABS 5.0 and earlier.|For older MABS versions only.|
+|7.6.4 and later|MABS 11.0 and later.||
+
+## PWA functionality
+
+In PWAs, the camera plugin has these limitations compared to native mobile apps:
+
+* The **RecordVideo** and **PlayVideo** client actions and blocks aren't available. Video capture and playback are available in native mobile apps only.
+* The **EditURIPicture** client action and block aren't available. Use **EditPicture**.
+* The **ChooseFromGallery** client action and block aren't available. Use the **DEPRECATED_ChooseGalleryPicture** action.
+* The **MediaResult** data structure only offers **Type** and **Thumbnail** attributes. **URI** and **Metadata** are available in native mobile apps only. Use **Thumbnail** to retrieve the image captured by the camera.
 
 ## Known issues and workarounds
 

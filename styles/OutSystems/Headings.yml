@@ -208,12 +208,12 @@ exceptions:
   - ServerDataSync
 # UI Patterns and Widgets
   - Animated Label
-  - Pattern
   - Columns
   - Carousel
   - Checkbox
   - Columns
   - Date Picker
+  - Dropdown Server Side
   - Gallery
   - Lightbox Image
   - Master Detail
@@ -224,7 +224,7 @@ exceptions:
   - Swipe Events
   - Switch
   - Touch Events
-  - Dropdown Server Side
+  - User Avatar
 # Widgets
   - Widget
   - Link

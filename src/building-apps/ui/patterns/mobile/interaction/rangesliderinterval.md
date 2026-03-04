@@ -102,25 +102,70 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property| Description |
-|---|---|
-| MinValue (Decimal): Mandatory| Defines the slider's minimum value.|
-| MaxValue (Decimal): Mandatory| Defines the slider's maximum value.|
-| StartingValueFrom (Decimal): Mandatory |Defines the default value for the interval's start. Must be between min and max values. |
-| StartingValueTo (Decimal): Mandatory| Defines the default value for the interval's end. Must be between min and max values. |
-| Orientation (Orientation Identifier): Optional| Defines the Range Slider direction. The default direction is horizontal. |
-| Size (Text): Optional| Defines the size of the Range Slider Interval. If the slider's orientation is horizontal, the size you set will be the width of the Range Slider Interval. Otherwise (vertical), the size you set will be the height. Accepts any kind of unit (px, %, vw). Default value is 100%. |
+| Property | Description |
+| --- | --- |
+| MinValue (Decimal): Mandatory | Defines the slider's minimum value. |
+| MaxValue (Decimal): Mandatory | Defines the slider's maximum value. |
+| StartingValueFrom (Decimal): Mandatory | Defines the default value for the interval's start. Must be between min and max values. |
+| StartingValueTo (Decimal): Mandatory | Defines the default value for the interval's end. Must be between min and max values. |
+| Orientation (Orientation Identifier): Optional | Defines the Range Slider direction. The default direction is horizontal. |
+| Size (Text): Optional | Defines the size of the Range Slider Interval. If the slider's orientation is horizontal, the size you set will be the width of the Range Slider Interval. Otherwise (vertical), the size you set will be the height. Accepts any kind of unit (px, %, vw). Default value is 100%. |
 | OptionalConfigs (RangeSliderOptionalConfigs): Optional | Defines additional parameters to customize the RangeSlider behavior and functionality. |
-| OptionalConfigs.ShowFloatingLabel (Boolean): Optional | Set to True to add a floating label above the handler. The default value is False.|
-| OptionalConfigs.Step (Decimal): Optional|Slider moves in increments of Step. If Step is 10, the slider will go from 0 to 10, to 20, to 30, etc. Default value is 1.|
-| OptionalConfigs.ShowTickMarks (Boolean): Optional | Show tick marks below the slider. To generate the tick marks, you must set the TickMarksInterval. The default value is True.|
-| OptionalConfigs.TickMarksInterval (Integer): Optional | Defines the range interval after which a tick mark is drawn (when ShowTickMarks is enabled).<br/>Example: If TickMarksInterval = 5, a tick mark is shown for every 5 steps.<br/>The value can not be less than 0 (library restraint).<br/>If you do not want the tick marks to show, set the ShowTickMarks parameter to False.  |
-| OptionalConfigs.IsDisabled (Boolean): Optional| Set as True to disable the Range Slider. The default value is False.|
+| OptionalConfigs.ShowFloatingLabel (Boolean): Optional | Set to True to add a floating label above the handler. The default value is False. |
+| OptionalConfigs.Step (Decimal): Optional | Slider moves in increments of Step. If Step is 10, the slider will go from 0 to 10, to 20, to 30, etc. Default value is 1. |
+| OptionalConfigs.ShowTickMarks (Boolean): Optional | Show tick marks below the slider. To generate the tick marks, you must set the TickMarksInterval. The default value is True. |
+| OptionalConfigs.TickMarksInterval (Integer): Optional | Defines the range interval after which a tick mark is drawn (when ShowTickMarks is enabled).<br/>Example: If TickMarksInterval = 5, a tick mark is shown for every 5 steps.<br/>The value can not be less than 0 (library restraint).<br/>If you do not want the tick marks to show, set the ShowTickMarks parameter to False. |
+| OptionalConfigs.IsDisabled (Boolean): Optional | Set as True to disable the Range Slider. The default value is False. |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 
-|Event| Description  |
-|---|---|
-|Initialized: Optional  | Event triggered after the RangerSliderInterval instance is ready.<br/>With this event, you get the element Id that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` |
-|OnValueChange: Mandatory  | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSliderInterval handler. You can use the SetRangeSliderIntervalChangeOnDragEnd to trigger the event only after the user releases it.  |
+| Event | Description |
+| --- | --- |
+| Initialized: Optional | Event triggered after the RangerSliderInterval instance is ready.<br/>With this event, you get the element Id that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` |
+| OnValueChange: Mandatory | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSliderInterval handler. You can use the SetRangeSliderIntervalChangeOnDragEnd to trigger the event only after the user releases it. |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+By default, the **Range Slider Interval** UI Pattern might not expose the correct roles and labels for assistive technologies. As a result, screen readers can’t distinguish between the lower and upper handles, making it harder for users who rely on assistive tools to understand which value they’re adjusting.
+
+To fix this, you can assign accurate ARIA labels to both handles so that they’re properly announced when focused.
+
+### Assign accurate roles to handlers
+
+1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the **Range Slider Interval**.
+
+1. In the **Screen/Block** properties, under **Events**, select **OnReady** to create a client action.
+
+    ![Create the OnReady action in Service Studio](images/rangesliderint-onready-ss.png "Creating the OnReady action")
+
+1. In **OnReady**, add a **JavaScript** node.
+
+    ![Example of adding a JavaScript node to OnReady action in Service Studio](images/rangesliderint-addjsnode-ss.png "Adding a JavaScript node to OnReady action")
+
+1. Add the following code to the **JavaScript** node to assign distinct labels to each handle:
+
+    ```javascript
+    const rangeSlider = document.getElementById($parameters.WidgetId);
+    const handlers = rangeSlider.querySelectorAll('.noUi-handle');
+
+    handlers.forEach(handler => {
+        if (handler.classList.contains("noUi-handle-lower")) {
+            handler.setAttribute('aria-label', 'Lower value handle');
+        } else {
+            handler.setAttribute('aria-label', 'Upper value handle');
+        }
+    });
+    ```
+
+1. Set **WidgetId** to the Range Slider Interval block/widget ID (for example, `RangeSliderInt.Id`).
+
+    ![Setting the WidgetId parameter to the Range Slider Interval block ID in Service Studio](images/rangesliderint-setwidgetid-ss.png "Set WidgetId for the Range Slider Interval block ID")
+
+1. Publish the module
+
+### Result
+
+After completing these steps, assistive technologies can identify and announce each slider handle as either “Lower value handle” or “Upper value handle.” This improvement provides better context for users who rely on screen readers, allowing them to adjust ranges accurately and independently.
+
+Test the component in your app to confirm that each handle is correctly recognized and labeled.

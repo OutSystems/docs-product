@@ -1,6 +1,6 @@
 ---
 tags: progress circle, ui patterns, customization, dependency management, incremental update
-summary: Explore how to implement and customize the Progress Circle UI Pattern in OutSystems 11 (O11) for mobile and reactive web apps.
+summary: Explore how to implement and customize the Progress Circle UI pattern in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 1f0827a1-891f-4fe7-a37e-34a66224f7dc
 app_type: mobile apps, reactive web apps
@@ -25,17 +25,17 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 <div class="info" markdown="1">
 
-**This documentation is not valid for deprecated components.** To check if your component is deprecated and how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+**This documentation isn't valid for deprecated components.** To check if your component is deprecated and how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
 
 To find out what version of OutSystems UI you are using, see [OutSystems UI version](../../intro.md#outsystems-ui-version).
 
 </div>
 
-You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge.
+You can use the Progress Circle UI pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge.
 
 ![Screenshot showing an example of the Progress Circle UI pattern in use](images/progresscircle-example-ss.png "Example of Progress Circle UI")
 
-**How to use the Progress Circle UI Pattern**
+## How to use the Progress Circle UI pattern
 
 In this example, we create a button that increments the progress circle each time it's clicked and displays the progress as a fraction.
 
@@ -97,14 +97,60 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property| Description|
-|---|---|
-|Progress (Integer): Mandatory |Defines the progress percentage. Usually a number between 0 and 100. You can also use functions or local variables. |
-|ProgressColor (Color Identifier): Optional|Defines the color that fills the circle as progress increases. By default, the progress color is the primary color you choose when creating the app.<br/><br/>To use an RGB color, use: TextToIdentifier("rgb(0,0,0)")<br/>To use a HEX color, use: TextToIdentifier("#000000").|
-|Size (Text): Optional | Defines the Progress Circle diameter (height and width). Accepts any kind of unit (px, %, vw). By default, "auto". |
-|TrailColor (Color Identifier): Optional | Defines the color of the empty part of the circle. By default, the trail color is Neutral 4 (#DEE2E6).<br/><br/>To use an RGB color, use: TextToIdentifier("rgb(0,0,0)")<br/>To use a HEX color, use: TextToIdentifier("#000000") |
-|Thickness (Integer): Optional| Defines the thickness of the circle that marks the progress, in pixels. By default, the thickness is 8 pixels. |
-|OptionalConfigs (ProgressCircleOptionalConfigs): Optional|Defines additional parameters to customize the Progress Circle behavior and functionality. |
-|OptionalConfigs.Shape (Shape Identifier): Optional|Defines the progress shape.<br/><br/>The predefined options are:<ul><li>SoftRounded</li><li>Rounded</li><li>Sharp</li></ul>Example:<ul><li>Entities.Shape.Rounded - The inherit style is rounded. This is the default.</li></ul> |
-|OptionalConfigs.AnimateInitialProgress (Boolean): Optional| If True, the Progress Circle shows an animation going from zero to its initial progress. This is the default. |
-|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| Property | Description |
+| --- | --- |
+| Progress (Integer): Mandatory | Defines the progress percentage. Usually a number between 0 and 100. You can also use functions or local variables. |
+| ProgressColor (Color Identifier): Optional | Defines the color that fills the circle as progress increases. By default, the progress color is the primary color you choose when creating the app.<br/><br/>To use an RGB color, use: TextToIdentifier("rgb(0,0,0)")<br/>To use a HEX color, use: TextToIdentifier("#000000"). |
+| Size (Text): Optional | Defines the Progress Circle diameter (height and width). Accepts any kind of unit (px, %, vw). By default, "auto". |
+| TrailColor (Color Identifier): Optional | Defines the color of the empty part of the circle. By default, the trail color is Neutral 4 (#DEE2E6).<br/><br/>To use an RGB color, use: TextToIdentifier("rgb(0,0,0)")<br/>To use a HEX color, use: TextToIdentifier("#000000") |
+| Thickness (Integer): Optional | Defines the thickness of the circle that marks the progress, in pixels. By default, the thickness is 8 pixels. |
+| OptionalConfigs (ProgressCircleOptionalConfigs): Optional | Defines additional parameters to customize the Progress Circle behavior and functionality. |
+| OptionalConfigs.Shape (Shape Identifier): Optional | Defines the progress shape.<br/><br/>The predefined options are:<ul><li>SoftRounded</li><li>Rounded</li><li>Sharp</li></ul>Example:<ul><li>Entities.Shape.Rounded - The inherit style is rounded. This is the default.</li></ul> |
+| OptionalConfigs.AnimateInitialProgress (Boolean): Optional | If True, the Progress Circle shows an animation going from zero to its initial progress. This is the default. |
+| ExtendedClass (Text): Optional | Adds custom style classes to the pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+Out of the box, the **Progress Circle** UI pattern may not be correctly announced by screen readers, as it’s primarily a decorative element that doesn’t expose meaningful information. To make it accessible, hide the decorative circle and add a descriptive text alternative so users of assistive technologies can understand the progress status.
+
+### Hide progress circle from Screen Readers
+
+1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the **Progress Circle**.
+
+1. In the **Widget Tree**, find the **Progress Circle**, right-click it, and select **Enclose in Container**.
+
+    ![Example of Enclosing the Progress Circle in a container  in Service Studio](images/progresscircle-encloseincontainer-ss.png "Enclosing in Container the Progress Circle")
+
+1. In **Container Properties**, under **Attributes**, add `aria-hidden="true"`.
+
+   ![Example of setting aria-hidden true in Service Studio](images/progresscircle-setariahidden-ss.png "Setting aria hidden attribute to Container")
+
+1. Drag and drop an **Expression** to the **Widget Tree**, below the container (be careful not to place it inside).
+
+   ![Example of dragging an expression to Widget Tree in Service Studio](images/progresscircle-dragexpression-ss.png "Dragging an expression to Widget Tree")
+
+1. In the **Expression Properties**, set a descriptive text value. For example:  
+   `"Decorative progress circle bar that shows 15 of 30 results have been achieved."`  
+   Then, add the CSS class `wcag-hide-text` so that it’s hidden visually but announced by screen readers.
+
+   ![Example of setting value and class in an Expression](images/progresscircle-setvalue-ss.png "Setting a value and a class into an expression")
+
+    <div class="info" markdown="1">
+
+    If the progress value updates dynamically, make sure to notify users of changes using an appropriate ARIA live region or focus management technique.
+
+    </div>
+
+1. Publish the module.
+
+### Result
+
+After completing these steps:
+
+* The decorative **Progress Circle** is hidden from assistive technologies.
+
+* Screen readers announce an accurate, descriptive text alternative instead.
+
+* Users relying on screen readers receive meaningful progress feedback.
+
+Test the pattern in your app to confirm the update.

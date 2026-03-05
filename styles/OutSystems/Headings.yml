@@ -194,6 +194,7 @@ exceptions:
   - Employee
 
 # Events
+  - OnClick
   - On Initialize
   - On Ready
   - On Render

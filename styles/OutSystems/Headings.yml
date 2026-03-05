@@ -208,6 +208,7 @@ exceptions:
   - SyncContacts
   - ServerDataSync
 # UI Patterns and Widgets
+  - Action Sheet
   - Animated Label
   - Columns
   - Carousel

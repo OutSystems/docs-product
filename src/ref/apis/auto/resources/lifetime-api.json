@@ -6523,7 +6523,7 @@
       "description": "Full definition of a role.",
       "type": "object",
       "properties": {
-        "key": {
+        "Key": {
           "type": "string",
           "description": "Identifier of a role.",
           "readOnly": true
@@ -6532,6 +6532,10 @@
           "type": "string",
           "description": "Name of a role"
         },
+		"description": {
+          "type": "string",
+          "description": "Description of the role."
+		},
         "manageInfrastructure": {
           "type": "boolean",
           "default": false,

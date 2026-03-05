@@ -1,6 +1,6 @@
 ---
-tags: ui design, user experience, ui patterns, mobile development, web development
-summary: Explore how to implement and customize the Tooltip UI Pattern in OutSystems 11 (O11) for enhanced user interface interactions.
+tags: tooltip, ui patterns, mobile apps, reactive web apps, outsystems ui
+summary: Learn to use the Tooltip UI pattern in OutSystems 11 (O11) for mobile and reactive web apps, available in Service Studio to display dynamic informative text.
 locale: en-us
 guid: 44f1bcc8-d2bd-4174-ae3d-8813092a4bac
 app_type: mobile apps, reactive web apps
@@ -15,7 +15,6 @@ outsystems-tools:
 coverage-type:
   - apply
 ---
-
 # Tooltip
 
 <div class="info" markdown="1">
@@ -32,15 +31,15 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 </div>
 
-You can use the Tooltip UI Pattern to dynamically display informative text when a user hovers over, clicks, or taps an on-screen element.
+You can use the Tooltip UI pattern to dynamically display informative text when a user hovers over, clicks, or taps an on-screen element.
 
 ![Screenshot showing an example of a Tooltip being used in an application interface](images/tooltip-example.png "Example of a Tooltip in action")
 
-**How to use the Tooltip UI Pattern**
+## How to use the Tooltip UI pattern
 
 <div class="info" markdown="1">
 
-**Prerequities** To use the Tooltip UI Pattern, you must use an OutSystems Layout. If you are using a Custom Layout, you must add the Layout CSS class.
+To use the Tooltip UI pattern, you must use an OutSystems UI layout. If you are using a custom Layout, you must add the Layout CSS class.
 
 </div>
 
@@ -60,11 +59,11 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 
     1. In the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the Tooltip widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Tooltip widget into the MainContent area of your application's screen.
 
     ![Step-by-step process of dragging the Tooltip widget into the Main Content area of an application screen](images/tooltip-drag-ss.png "Dragging Tooltip Widget to Screen")
 
-    By default, the Tooltip widget contains Content and Tooltip placeholders.
+    By default, the Tooltip widget contains **Content** and **Tooltip** placeholders.
 
 1. Add your content to the placeholders.
 
@@ -84,19 +83,19 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Properties| Description|
-|---|---|
-|Position (Position Identifier): Optional | Defines the Tooltip's position. The default position is right.<br/><br/>The predefined options are the following:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul> Examples:<ul><li>Entities.Position.Right - The Tooltip is displayed to the right of the element.</li><li>Entities.Position.Bottom - The Tooltip is displayed underneath the element.</li></ul> |
-|StartsOpen (Boolean): Optional| If True, the Tooltip is displayed when the page is first loaded (without the need for the initial trigger). If False, the tooltip is not visible. This is the default.|
-|Trigger (Trigger Identifier): Optional| Defines how the tooltip is triggered. The available trigger options are OnClick and OnHover. By default, the tooltip is shown OnHover.|
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| Properties | Description |
+| --- | --- |
+| Position (Position Identifier): Optional | Defines the Tooltip's position. The default position is right.<br/><br/>The predefined options are the following:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul> Examples:<ul><li>Entities.Position.Right - The Tooltip is displayed to the right of the element.</li><li>Entities.Position.Bottom - The Tooltip is displayed underneath the element.</li></ul> |
+| StartsOpen (Boolean): Optional | If True, the Tooltip is displayed when the page is first loaded (without the need for the initial trigger). If False, the tooltip is not visible. This is the default. |
+| Trigger (Trigger Identifier): Optional | Defines how the tooltip is triggered. The available trigger options are OnClick and OnHover. By default, the tooltip is shown OnHover. |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 
-|Event| Description  |
-|---|---|
-|Initialized: Optional|Event triggered after the Tooltip instance is ready.|
-|OnToggle: Mandatory|Event triggered each time a Tooltip opens or closes.|
+| Event | Description |
+| --- | --- |
+| Initialized: Optional | Event triggered after the Tooltip instance is ready. |
+| OnToggle: Mandatory | Event triggered each time a Tooltip opens or closes. |
 
 <div class="info" markdown="1">
 
@@ -104,3 +103,26 @@ To include clickable elements inside the Tooltip component, add ``data-allow-eve
 Applies to OutSystems UI version 2.14.0 and higher.
 
 </div>
+
+## Accessibility – WCAG 2.2 AA compliance
+
+By default, the Tooltip UI pattern may not be fully keyboard accessible when configured to open on hover only.  
+To ensure WCAG 2.2 AA compliance, configure the Tooltip trigger to open on click so it can be activated through keyboard interaction.
+
+### Ensure that the trigger is set as OnClick
+
+1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the **Tooltip**.
+
+1. In **Tooltip** Properties, in **Trigger**, select **OnClick**.
+
+    ![Set Trigger as OnClick in Tooltip pattern in Service Studio](images/tooltip-settriggeronclick-ss.png "Setting Trigger as OnClick")
+
+1. Publish the module
+
+### Result
+
+After completing these steps, the Tooltip can be activated through keyboard interaction.
+
+Keyboard users can open the Tooltip using `Enter` or `Space`, and close it using `Esc`, ensuring consistent and accessible behavior.
+
+Test the pattern in your app to confirm that the Tooltip can be triggered and dismissed using only the keyboard.

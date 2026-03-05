@@ -311,30 +311,31 @@ exceptions:
   - Font Awesome
   
 # Industry
+  - AI
   - API
-  - HTML
+  - ARIA
   - APIs
+  - CI/CD
+  - CICD
+  - DREAD
+  - DevOps
+  - EAP
+  - FAQ
+  - FCM
   - IP
   - ID
-  - FAQ
   - TLS
-  - AI
   - DNS
   - TLS
   - UI
   - SAST
   - REST
+  - HTML
   - HTTP
-  - FCM
-  - CI/CD
-  - CICD
-  - EAP
   - JavaScript
   - MCP
   - PR
   - UI
-  - DREAD
-  - DevOps
   - SOAP
   - PaaS
   - SDK

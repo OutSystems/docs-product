@@ -195,6 +195,7 @@ exceptions:
 
 # Events
   - OnClick
+  - On Click
   - On Initialize
   - On Ready
   - On Render
@@ -222,6 +223,7 @@ exceptions:
   - Progress Circle
   - Range Slider
   - Range Slider Interval
+  - Section Index
   - Split Screen
   - Stacked Cards
   - Submenu

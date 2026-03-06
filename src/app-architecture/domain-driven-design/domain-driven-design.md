@@ -20,9 +20,9 @@ topic:
   - domain-driven-design
 ---
 
-# Domain Driven Design
+# Domain driven design
 
-Domain Driven Design (DDD) is a way of more easily developing complex software by translating it into small connected pieces in an ever-evolving model of the core business logic. It's a methodology and process prescription for the development of complex systems. The focus of DDD is mapping business processes within a problem domain into the technology artifacts of a solution domain.
+Domain driven design (DDD) is a way of more easily developing complex software by translating it into small connected pieces in an ever-evolving model of the core business logic. It's a methodology and process prescription for the development of complex systems. The focus of DDD is mapping business processes within a problem domain into the technology artifacts of a solution domain.
 
 Its premise is:
 
@@ -51,8 +51,6 @@ A domain is a boundary for a business problem that needs to be solved by softwar
     * Strong dependencies aren't allowed between each domain, avoiding collision and promoting independence.
 
     b. Loosely coupling between domains
-
-    * Strong dependencies aren't allowed between each domain, avoiding collision and promoting independence.
 
     c. Ensure independent life cycles
 

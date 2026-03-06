@@ -379,6 +379,7 @@ exceptions:
   - Front-end Developer specialization
   - Tech Lead exam
   - Platform Ops exam
-  - Delivery specialization
+  - Delivery Specialist exam
+  - Web Developer Specialist exam
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b

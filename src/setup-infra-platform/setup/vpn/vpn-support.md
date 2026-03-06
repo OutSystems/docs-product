@@ -50,7 +50,7 @@ If you use your own [AWS Transit Gateway](https://aws.amazon.com/transit-gateway
 
 </div>
 
-### VPN specifications { #specifications }
+### VPN specifications {#specifications}
 
 VPN network traffic
 :   Your on-premises network must generate constant network traffic to initiate the VPN connection and keep it alive; the OutSystems Cloud can't initiate the VPN tunnel. If your Site-to-Site VPN connection experiences a period of idle time (usually 10 seconds, depending on your configuration), the tunnel may go down. To initiate the VPN connection and keep it operating, you can use one of the following options:
@@ -72,13 +72,13 @@ Virtual private gateway device
 Limitation
 :   The site-to-site VPN currently doesn't support IPv6 traffic.
 
-## Set up a VPN to OutSystems Cloud { #setup-procedure }
+## Set up a VPN to OutSystems Cloud {#setup-procedure}
 
 Before setting up your VPN, make sure to comply with the requirements and to gather the necessary information to proceed:
 
-### Check the VPN gateway requirements { #requirements }
+### Check the VPN gateway requirements {#requirements}
 
-Your VPN gateway can be a physical or software device. Check [the list provided by AWS](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files) to know if AWS tested your VPN gateway with the site-to-site VPN. If your VPN gateway isn't in the previous list, it must meet the following requirements:
+Your VPN gateway can be a physical or software device. Check [the list provided by AWS](https://docs.aws.amazon.com/vpn/latest/s2svpn/example-configuration-files.html) to know if AWS tested your VPN gateway with the site-to-site VPN. If your VPN gateway isn't in the previous list, it must meet the following requirements:
 
 * Maintains the same static public IP address.
 
@@ -118,7 +118,7 @@ To create a VPN you must have the **Administrator role** in **LifeTime**.
 
 Make sure you read [the requirements](#requirements) before you continue.
 
-### Step 1. Request the VPN { #request-vpn }
+### Step 1. Request the VPN {#request-vpn}
 
 To request the creation of a VPN to your OutSystems Cloud, follow these steps:
 
@@ -150,11 +150,11 @@ OutSystems starts creating your new VPN. You can check the status of the process
 
 If OutSystems can't create the VPN connection using the information you provided, you get an error message describing the cause after clicking the **Create VPN** button. See [these guidelines](https://www.outsystems.com/tk/redirect?g=9b339da0-8b05-4388-83b4-f8cb8f6b5d9a) for further details.
 
-### Step 2. OutSystems creates the VPN connection and notifies you when it's ready { #create-notify }
+### Step 2. OutSystems creates the VPN connection and notifies you when it's ready {#create-notify}
 
 OutSystems creates the VPN connection on your OutSystems Cloud. Having the VPN created, OutSystems sends an email to the user that created the VPN in LifeTime. This email notifies that the VPN configuration file is ready for download and provides the information needed to configure the VPN gateway on the on-premises network.
 
-### Step 3. Download the configuration file { #download-file }
+### Step 3. Download the configuration file {#download-file}
 
 After receiving the OutSystems email notifying about your VPN creation, you must download the VPN configuration file:
 
@@ -166,7 +166,7 @@ After receiving the OutSystems email notifying about your VPN creation, you must
 
     ![Screenshot showing the option to download the VPN configuration file in OutSystems LifeTime.](images/vpn-download-file-lt.png "LifeTime VPN Configuration File Download")
 
-### Step 4. Configure your VPN gateway { #configure-gateway }
+### Step 4. Configure your VPN gateway {#configure-gateway}
 
 <div class="info" markdown="1">
 
@@ -179,7 +179,7 @@ Configure your VPN gateway using the values provided in the configuration file y
 If you want to use your own configuration, make sure your VPN gateway configuration values respect the following AWS requirements:
 
 | Phase 1 Parameters | |
-| ---|--- |
+| --- | --- |
 | Protocol | IKE v1 or IKE v2 |
 | Authentication Method | Pre-shared Key |
 | Protocol Communications | Encapsulated UDP port 500, NAT-T (UDP port 4500) |
@@ -190,8 +190,8 @@ If you want to use your own configuration, make sure your VPN gateway configurat
 | Re-negotiation time | 28800 seconds |
 | Mode | Main |
 
-| Phase 2 Parameters| |
-| ---|--- |
+| Phase 2 Parameters | |
+| --- | --- |
 | Protocol | IKE Phase II (IPSEC SA) |
 | IPSec Protocol | ESP; UDP port 500; NAT-T is supported on your side |
 | Encryption Algorithm | AES-128, AES-256 |
@@ -201,7 +201,7 @@ If you want to use your own configuration, make sure your VPN gateway configurat
 | Lifetime Measurement | Time |
 | Time Lifetime | 3600 seconds |
 
-### Step 5. Configure your firewall { #configure-firewall }
+### Step 5. Configure your firewall {#configure-firewall}
 
 <div class="info" markdown="1">
 
@@ -220,7 +220,7 @@ For example, to access a **SQL Server** database, allow **TCP** traffic on port 
 
 * If you are using **NAT-T** on your VPN gateway, allow **UDP** traffic on port **4500**. Add outbound and inbound firewall rules.
 
-## Change the internal IP range of your VPN { #change-vpn-route }
+## Change the internal IP range of your VPN {#change-vpn-route}
 
 When the internal IP range of your on-premises network that accesses your VPN changes, you need to reflect that change in your OutSystems Cloud VPN.
 

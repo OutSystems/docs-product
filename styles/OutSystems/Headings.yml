@@ -320,6 +320,8 @@ exceptions:
   - APIs
   - CI/CD
   - CICD
+  - DEV
+  - DNS
   - DREAD
   - DevOps
   - EAP
@@ -327,25 +329,23 @@ exceptions:
   - FCM
   - IP
   - ID
+  - JavaScript
+  - MCP
   - TLS
-  - DNS
   - TLS
   - UI
   - SAST
   - REST
   - HTML
   - HTTP
-  - JavaScript
-  - MCP
   - PR
   - UI
   - SOAP
-  - PaaS
   - SDK
   - QA
-  - DEV
   - PRD
   - SEO
+  - VPN
 # Country
   - US East
   - North Virginia
@@ -379,5 +379,6 @@ exceptions:
   - Front-end Developer specialization
   - Tech Lead exam
   - Platform Ops exam
+  - Delivery specialization
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b

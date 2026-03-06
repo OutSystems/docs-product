@@ -35,7 +35,7 @@ You can use the Submenu UI Pattern to create a menu that is contained within ano
 
 ![Screenshot showing an example of a submenu in a mobile app interface](images/submenu-example-ss.png "Submenu Example Screenshot")
 
-**How to use the Submenu UI Pattern**
+## How to use the Submenu UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Submenu`.
 
@@ -69,6 +69,36 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property| Description |
-|---|---|
-| ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| Property | Description |
+| --- | --- |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility - WCAG 2.2 AA compliance
+
+By default, the **Submenu** UI Pattern does not require structural or ARIA-related adjustments for accessibility compliance.
+
+To improve usability and accessibility, the only recommended change is to increase the size of the menu. Ensuring adequate dimensions helps enhance readability, improves touch target accessibility, and provides a better overall user experience, particularly for users navigating via touch or assistive technologies.
+
+The procedure below show how to:
+
+### Increase submenu header target size
+
+By default, submenu headers may not meet the recommended **pointer target size**, which can impact usability for users with limited dexterity. You can address this with a small CSS adjustment.
+
+1. In **Service Studio**, go to the **Interface** tab.
+
+1. In the **Themes** folder, double-click the **Style Sheet** of the theme used by your application.
+
+1. Add the following CSS rule to increase the clickable area of submenu headers:
+
+    ```css
+    .osui-submenu__header {
+        padding: var(--space-none) var(--space-m);
+        min-height: 24px;
+        min-width: 24px;
+    }
+    ```
+
+1. Adjust the spacing values if needed to fit your design, but make sure the clickable area remains at least **24 px** in both height and width.
+
+1. Publish the module.

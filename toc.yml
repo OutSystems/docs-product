@@ -48,7 +48,6 @@
         - href: app-architecture/domain-driven-design/understanding-microservices.md
         - href: app-architecture/domain-driven-design/domain-driven-design.md
         - href: app-architecture/domain-driven-design/domain-driven-design-os.md
-    # How to Create Customized Versions of a Base Application
     - href: app-architecture/customizable-web-product.md
     # Building mobile apps with multiple independent teams
     - href: app-architecture/build-mobile-app-teams/intro.md
@@ -156,6 +155,19 @@
             - href: building-apps/ui/screens/data-load.md
             - href: building-apps/ui/screens/data-rendering.md
             - href: building-apps/ui/screens/scope-information.md
+        # Look and Feel
+        - href: building-apps/ui/look-feel/intro.md
+        - topics:
+            - href: building-apps/ui/patterns/mobile/layout/layouts.md
+            - href: building-apps/ui/look-feel/styles-editor.md
+            - href: building-apps/ui/look-feel/css.md
+            - href: building-apps/ui/look-feel/avoid-inline-js-and-style.md
+            - href: building-apps/ui/look-feel/design-screens-layout.md
+            - href: building-apps/ui/look-feel/themes.md
+            - href: building-apps/ui/look-feel/theme-editor.md
+            - href: building-apps/ui/look-feel/layer-system.md
+            - href: building-apps/ui/look-feel/responsive.md
+            - href: building-apps/ui/look-feel/rtl.md
         # Accessibility
         - href: building-apps/ui/accessibility/intro.md
         - topics:
@@ -198,18 +210,6 @@
             - href: building-apps/ui/image/use-icons.md
             - href: building-apps/ui/image/display-image.md
             - href: building-apps/ui/image/control-image-size.md
-        # Look and Feel
-        - href: building-apps/ui/look-feel/intro.md
-        - topics:
-            - href: building-apps/ui/look-feel/styles-editor.md
-            - href: building-apps/ui/look-feel/css.md
-            - href: building-apps/ui/look-feel/avoid-inline-js-and-style.md
-            - href: building-apps/ui/look-feel/design-screens-layout.md
-            - href: building-apps/ui/look-feel/themes.md
-            - href: building-apps/ui/look-feel/theme-editor.md
-            - href: building-apps/ui/look-feel/layer-system.md
-            - href: building-apps/ui/look-feel/responsive.md
-            - href: building-apps/ui/look-feel/rtl.md
         # Reuse UI
         - href: building-apps/ui/reuse/intro.md
         - topics:

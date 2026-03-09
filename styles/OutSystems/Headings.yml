@@ -189,6 +189,7 @@ exceptions:
   - EditPicture
   - MediaType
   - CheckCameraPlugin
+  - Plugin Manager
   - MediaResult data
   - MediaMetadata data
   - Employee

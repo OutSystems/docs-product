@@ -30,13 +30,13 @@ Applies only to Traditional Web Apps.
 
 ## CSS Selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
-| .alert | .alert-error |  When Alert type selected is Error  |
-| .alert | .alert-info |  When Alert type selected is Info  |
-| .alert | .alert-success |  When Alert type selected is Success  |
-| .alert | .alert-warning |  When Alert type selected is Warning  |
-| .alert | .alert-close.is--hidden |  When ShowCloseButton parameter is False  |
+| .alert | .alert-error | When Alert type selected is Error |
+| .alert | .alert-info | When Alert type selected is Info |
+| .alert | .alert-success | When Alert type selected is Success |
+| .alert | .alert-warning | When Alert type selected is Warning |
+| .alert | .alert-close.is--hidden | When ShowCloseButton parameter is False |
 
 ## Advanced Use Case
 

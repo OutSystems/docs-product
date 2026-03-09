@@ -30,11 +30,11 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
-| .flip-content | .flip-content.is--hover |  When Trigger parameter is Hover |
-| .flip-content | .flip-content.is--click |  When Trigger parameter is Click |
-| .flip-content | .flip-content.is--click.is--flipped |  When FlipContent is flipped |
+| .flip-content | .flip-content.is--hover | When Trigger parameter is Hover |
+| .flip-content | .flip-content.is--click | When Trigger parameter is Click |
+| .flip-content | .flip-content.is--click.is--flipped | When FlipContent is flipped |
 
 ## Advanced use case
 

@@ -30,10 +30,10 @@ Applies only to Traditional Web Apps.
 
 ## Events
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnHide | Event triggered once the balloon is hidden.  |  False  |
-| OnShow | Event triggered once the balloon is shown.  |  False  |
+| **Event Name** | **Description** | **Mandatory** |
+| --- | --- | --- |
+| OnHide | Event triggered once the balloon is hidden. | False |
+| OnShow | Event triggered once the balloon is shown. | False |
 
 ## Advanced
 

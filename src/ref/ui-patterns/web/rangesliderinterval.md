@@ -26,9 +26,9 @@ Applies only to Traditional Web Apps.
 
 ## Events
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnChange | Event triggered once a handler is dragged and the values change.  |  True  |
+| **Event Name** | **Description** | **Mandatory** |
+| --- | --- | --- |
+| OnChange | Event triggered once a handler is dragged and the values change. | True |
 
 **Return values**
 
@@ -41,11 +41,11 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| Lesser handle |  .noUi-handle-lower |  It's the lesser handle, used to customize (use also the :before and :after).  |
-| Upper Handle  |  .noUi-handle-upper  |  It's the upper handle, used to customize (use also the :before and :after). |
-| Interval  |  .noUi-connect  |  Used to change the color of the interval.  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| Lesser handle | .noUi-handle-lower | It's the lesser handle, used to customize (use also the :before and :after). |
+| Upper Handle | .noUi-handle-upper | It's the upper handle, used to customize (use also the :before and :after). |
+| Interval | .noUi-connect | Used to change the color of the interval. |
   
 ## Advanced use case
 

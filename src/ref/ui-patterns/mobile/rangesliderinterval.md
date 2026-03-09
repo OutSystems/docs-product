@@ -26,10 +26,10 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Events
 
-|**Event Name** |  **Output** |  **Description**  |
-|---|---|---|
-|Initialized: Optional| RangeSliderIntervalId (Text) | Event triggered after the Ranger Slider Interval is initialized.This event provides you with the element Id that can be used to call methods from the **RangeSliderAPI:OutSystems.OSUI.Patterns.RangeSliderAPI**|
-|OnValueChange: Mandatory|Value (Decimal)|Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the Range Slider Interval handler. You can use the **SetRangeSliderIntervalChangeOnDragEnd** to trigger the event only after the user releases it.|
+| **Event Name** | **Output** | **Description** |
+| --- | --- | --- |
+| Initialized: Optional | RangeSliderIntervalId (Text) | Event triggered after the Ranger Slider Interval is initialized.This event provides you with the element Id that can be used to call methods from the **RangeSliderAPI:OutSystems.OSUI.Patterns.RangeSliderAPI** |
+| OnValueChange: Mandatory | Value (Decimal) | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the Range Slider Interval handler. You can use the **SetRangeSliderIntervalChangeOnDragEnd** to trigger the event only after the user releases it. |
 
 ## Structure
 
@@ -46,20 +46,20 @@ In the diagram below, gray denotes the classes added by OutSystems UI and green 
 
 ### Modifiers
 
-|**Modifier** | **Attribute** |  **Element**  |
-|---|---|---|
-|IsVertical | .osui-range-slider–is-vertical | .osui-range-slider |
-|Orientation|.noUi-horizontal <br/>.noUi-vertical|.noUi-target|
-|Direction|.noUi-ltr <br/>.noUi-rtl|.noUi-target|
-|Size| --range-slider-size|.osui-range-slider|
-|Handler Size|--range-slider-handle-size|.osui-range-slider|
-|Slider Thickness|--range-slider-thickness||
+| **Modifier** | **Attribute** | **Element** |
+| --- | --- | --- |
+| IsVertical | .osui-range-slider–is-vertical | .osui-range-slider |
+| Orientation | .noUi-horizontal <br/>.noUi-vertical | .noUi-target |
+| Direction | .noUi-ltr <br/>.noUi-rtl | .noUi-target |
+| Size | --range-slider-size | .osui-range-slider |
+| Handler Size | --range-slider-handle-size | .osui-range-slider |
+| Slider Thickness | --range-slider-thickness | |
 
 ## Client actions
 
-|**Modifier** | **Attribute** |  **Element**  |
-|---|---|---|
-|SetRangeSliderIntervalChangeOnDragEnd|Use this action on the **RangeSliderIntervalInitialized** event or on the screen's **OnReady** event.<p>By using this action, the change event is only triggered when the user releases the slider.</p><p>**Tip:** if you're refreshing a query based on the value of the slider, we recommend using this action.</p>| WidgetId: string|
+| **Modifier** | **Attribute** | **Element** |
+| --- | --- | --- |
+| SetRangeSliderIntervalChangeOnDragEnd | Use this action on the **RangeSliderIntervalInitialized** event or on the screen's **OnReady** event.<p>By using this action, the change event is only triggered when the user releases the slider.</p><p>**Tip:** if you're refreshing a query based on the value of the slider, we recommend using this action.</p> | WidgetId: string |
 
 ## API
 

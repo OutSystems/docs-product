@@ -29,7 +29,7 @@ You can add links in comments by using the `a` HTML tag. For example: `This a <a
 
 ## Properties
 
-|Name|Description|Mandatory|Default value|Observations|
-|---|---|---|---|---|
-|Text| Text to display. The HTML **a** tag is allowed.|Yes |"Write your comment here"| |
-|Is Reminder|Set to Yes to have the comment displayed as a reminder in the TrueChange tab.|Yes|No|The upper-cased keywords TODO, TBD, and REMINDER automatically set the comment as a reminder. Removing such keywords won't set `Is Reminder` to `No`|
+| Name | Description | Mandatory | Default value | Observations |
+| --- | --- | --- | --- | --- |
+| Text | Text to display. The HTML **a** tag is allowed. | Yes | "Write your comment here" | |
+| Is Reminder | Set to Yes to have the comment displayed as a reminder in the TrueChange tab. | Yes | No | The upper-cased keywords TODO, TBD, and REMINDER automatically set the comment as a reminder. Removing such keywords won't set `Is Reminder` to `No` |

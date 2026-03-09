@@ -23,7 +23,7 @@ The **File menu** on the [menu bar](<../../workspace.md>) contains options deali
 The File menu contains the following operations:
 
 | Menu Item | Description |
-| :--------:|:----------- |
+| :--------: | :----------- |
 | ![Icon for creating a new extension in the File menu](images/file-new-icon.png "New File Icon") New | Creates a [new extension](<../../../../integration-with-systems/integration-studio/extension-life-cycle/extension-create.md>). |
 | ![Icon for opening an existing extension in the File menu](images/file-open-icon.png "Open File Icon") Open | Opens an extension already created in Integration Studio. Simply select the XIF (Extension and Integration Framework) file and all the elements defined for the extension are available in the [Extension](<../../multi-tree-navigator.md>) and [Resources](<../../resources-tree.md>) tree. |
 | Close | Closes the current extension. If you have not saved it, Integration Studio prompts you with the Save window. |

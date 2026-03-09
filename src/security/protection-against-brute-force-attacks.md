@@ -161,19 +161,19 @@ The protection of OutSystems applications against brute force attacks is configu
 1. Select the **Site Properties** tab.
 1. Configure the protection in the **Site Properties** using the information in the following table.
 
-|Site Property                              |Description               |
-|-------------------------------------------|--------------------------|
-|EnableBruteForceProtection                 |Enables brute force login protection at user level.|
-|MaxUsernameAttemptsFirstBackoff            |The maximum number of login attempts for a user after which the first backoff protection is triggered.<br/>The default value is 3 times.|
-|MaxUsernameAttemptsSecondBackoff           |The maximum number of login attempts for a user after which the second backoff protection is triggered.<br/>The default value is 6 times.|
-|UsernameAttemptsFirstBackoffDelayInSeconds |After hitting the first backoff, it's the time that login attempts are blocked for a user.<br/>The default value is 30 seconds.|
-|UsernameAttemptsSecondBackoffDelayInSeconds|After hitting the second backoff, it's the time that login attempts are blocked for a user.<br/>The default value is 1800 seconds.|
-|EnableBruteForceProtectionPerIP            |Enables brute force login protection at IP level.|
-|MaxIPAttemptsFirstBackoff                  |The number of login attempts for an IP address after which the first backoff is triggered.<br/>The default value is 20 times.|
-|MaxIPAttemptsSecondBackoff                 |The number of login attempts from an IP address after which the second backoff is triggered.<br/>The default value is 50 times.|
-|IPAttemptsFirstBackoffDelayInSeconds       |After hitting the first backoff, it's the time that login attempts are blocked for an IP address.<br/>The default value is 300 seconds.|
-|IPAttemptsSecondBackoffDelayInSeconds      |After hitting the second backoff, it's the time that login attempts are blocked for an IP address.<br/>The default value is 3600 seconds.|
-|InvalidLoginCheckWindowInMinutes           |Time frame in minutes in which failed attempts are accounted.<br/>Default value is 60 minutes.|
+| Site Property | Description |
+| ------------------------------------------- | -------------------------- |
+| EnableBruteForceProtection | Enables brute force login protection at user level. |
+| MaxUsernameAttemptsFirstBackoff | The maximum number of login attempts for a user after which the first backoff protection is triggered.<br/>The default value is 3 times. |
+| MaxUsernameAttemptsSecondBackoff | The maximum number of login attempts for a user after which the second backoff protection is triggered.<br/>The default value is 6 times. |
+| UsernameAttemptsFirstBackoffDelayInSeconds | After hitting the first backoff, it's the time that login attempts are blocked for a user.<br/>The default value is 30 seconds. |
+| UsernameAttemptsSecondBackoffDelayInSeconds | After hitting the second backoff, it's the time that login attempts are blocked for a user.<br/>The default value is 1800 seconds. |
+| EnableBruteForceProtectionPerIP | Enables brute force login protection at IP level. |
+| MaxIPAttemptsFirstBackoff | The number of login attempts for an IP address after which the first backoff is triggered.<br/>The default value is 20 times. |
+| MaxIPAttemptsSecondBackoff | The number of login attempts from an IP address after which the second backoff is triggered.<br/>The default value is 50 times. |
+| IPAttemptsFirstBackoffDelayInSeconds | After hitting the first backoff, it's the time that login attempts are blocked for an IP address.<br/>The default value is 300 seconds. |
+| IPAttemptsSecondBackoffDelayInSeconds | After hitting the second backoff, it's the time that login attempts are blocked for an IP address.<br/>The default value is 3600 seconds. |
+| InvalidLoginCheckWindowInMinutes | Time frame in minutes in which failed attempts are accounted.<br/>Default value is 60 minutes. |
 
 ## Configure Brute Force Protection for IT Users { #configure-brute-force-protection-it-users }
 

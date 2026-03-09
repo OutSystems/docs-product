@@ -21,7 +21,7 @@ coverage-type:
 When exposing SOAP Web Services in your module, OutSystems Data Types are mapped into the following XML Schema Data Types:
 
 | OutSystems Data Type | XML Data Type | Is an Input Parameter of this Type Mandatory? |
-| ---|---|--- |
+| --- | --- | --- |
 | Binary | base64Binary | No |
 | Boolean | boolean | Yes |
 | Currency | decimal | Yes |

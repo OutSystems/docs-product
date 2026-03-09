@@ -29,7 +29,7 @@ This element is processed on the client-side (browser) and it uses the browser's
 
 ## Properties
 
-|Name|Description|Mandatory|Default value|Observations|
-|--- |--- |--- |--- |--- |
-|File Content|Holds the file selected by the user.|Yes|||
-|File Name|Text literal or expression with the name of the file, including the extension.|Yes|||
+| Name | Description | Mandatory | Default value | Observations |
+| --- | --- | --- | --- | --- |
+| File Content | Holds the file selected by the user. | Yes | | |
+| File Name | Text literal or expression with the name of the file, including the extension. | Yes | | |

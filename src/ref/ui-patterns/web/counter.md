@@ -30,9 +30,9 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
-| .center-align | .flex-direction-column |  When Orientation is Vertical  |
+| .center-align | .flex-direction-column | When Orientation is Vertical |
 
 ## Advanced use case
 

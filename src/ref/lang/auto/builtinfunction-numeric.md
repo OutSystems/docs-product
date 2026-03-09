@@ -19,7 +19,7 @@ coverage-type:
 # Numeric
 
 | Name | Description |
-|---|---|
+| --- | --- |
 | [Max](#Max)(​Decimal, Decimal) | Returns the largest number of 'n' and 'm'. |
 | [Min](#Min)(​Decimal, Decimal) | Returns the smallest number of 'n' and 'm'. |
 | [Sign](#Sign)(​Decimal) | Returns -1 if 'n' is negative; 1 if 'n' is positive; 0 if 'n' is 0. |

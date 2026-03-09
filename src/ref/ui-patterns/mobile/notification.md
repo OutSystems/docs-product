@@ -50,13 +50,13 @@ For advanced users, you might want to use our Notification API (OutSystems.OSUI.
 
 ## Methods
 
-|Function|Description|Parameters|
-|---|---|---|
-|ChangeProperty|Changes the Notification property.|<ul><li>notificationId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul>|
-|Create|Creates a new Notification instance and adds it to the notificationMap.|<ul><li>notificationId: string</li><li>configs: string</li></ul>|
-|Destroy|Destroys the Notification instance. |<ul><li>notificationId: string</li></ul>|
-|GetAllNotifications|Returns the Map with all the Notification instances on the screen.|<ul><li>Returns array of Ids</li></ul>|
-|GetNotificationById| Gets the Notification instance ID.|<ul><li>notificationId: string</li></ul>|
-|Initialize|Initializes the pattern instance.|<ul><li>notificationId: string</li></ul>|
-|Show|Shows a Notification instance.|<ul><li>notificationId: string</li></ul>|
-|Hide| Hides a Notification instance.|<ul><li>notificationId: string</li></ul>|
+| Function | Description | Parameters |
+| --- | --- | --- |
+| ChangeProperty | Changes the Notification property. | <ul><li>notificationId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul> |
+| Create | Creates a new Notification instance and adds it to the notificationMap. | <ul><li>notificationId: string</li><li>configs: string</li></ul> |
+| Destroy | Destroys the Notification instance. | <ul><li>notificationId: string</li></ul> |
+| GetAllNotifications | Returns the Map with all the Notification instances on the screen. | <ul><li>Returns array of Ids</li></ul> |
+| GetNotificationById | Gets the Notification instance ID. | <ul><li>notificationId: string</li></ul> |
+| Initialize | Initializes the pattern instance. | <ul><li>notificationId: string</li></ul> |
+| Show | Shows a Notification instance. | <ul><li>notificationId: string</li></ul> |
+| Hide | Hides a Notification instance. | <ul><li>notificationId: string</li></ul> |

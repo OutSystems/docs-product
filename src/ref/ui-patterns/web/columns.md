@@ -30,17 +30,17 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .columns | .columns2 |  When is the Columns2 Pattern  |
-| .columns | .columns3 |  When is the Columns3 Pattern  |
-| .columns | .columns4 |  When is the Columns4 Pattern  |
-| .columns | .columns5 |  When is the Columns5 Pattern  |
-| .columns | .columns6 |  When is the Columns6 Pattern  |
-| .columns | .columns-medium-left |  When is the ColumnsMediumLeft Pattern  |
-| .columns | .columns-medium-right |  When is the ColumnsMediumRight Pattern  |
-| .columns | .columns-small-left |  When is the ColumnsSmallLeft Pattern  |
-| .columns | .columns-small-right |  When is the ColumnsSmallRight Pattern  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .columns | .columns2 | When is the Columns2 Pattern |
+| .columns | .columns3 | When is the Columns3 Pattern |
+| .columns | .columns4 | When is the Columns4 Pattern |
+| .columns | .columns5 | When is the Columns5 Pattern |
+| .columns | .columns6 | When is the Columns6 Pattern |
+| .columns | .columns-medium-left | When is the ColumnsMediumLeft Pattern |
+| .columns | .columns-medium-right | When is the ColumnsMediumRight Pattern |
+| .columns | .columns-small-left | When is the ColumnsSmallLeft Pattern |
+| .columns | .columns-small-right | When is the ColumnsSmallRight Pattern |
 | .columns | .gutter-none | When Columns have no Gutter between column item |
 | .columns | .gutter-xs | When Columns have 4px Gutter between column items |
 | .columns | .gutter-s | When Columns have 8px Gutter between column items |

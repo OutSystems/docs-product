@@ -21,7 +21,7 @@ coverage-type:
 When integrating with a SAP System in your module, OutSystems maps the SAP Data Types into OutSystems Data Types as follows:
 
 | SAP Data Type | OutSystems Data Type | Comments |
-| ---|---|--- |
+| --- | --- | --- |
 | BCD | Decimal <br/>Text | Decimal, if the length of the field is less than 28 characters. <br/>Text otherwise. |
 | BYTE | Binary Data | |
 | CHAR | Text | |

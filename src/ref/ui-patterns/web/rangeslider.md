@@ -25,9 +25,9 @@ Applies only to Traditional Web Apps.
 
 ## Events
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnChange | Event triggered once a handler is dragged and the value changes.  |  True  |
+| **Event Name** | **Description** | **Mandatory** |
+| --- | --- | --- |
+| OnChange | Event triggered once a handler is dragged and the value changes. | True |
 
 **Return values**
 
@@ -39,10 +39,10 @@ SelectedValue: Integer
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| Handle |  .noUi-handle |  It's the handle element. Use this selector to customize it (use also the :before and :after). |
-| Interval  |  .noUi-connect  |  It's the colored interval. Use this selector to change the color of the interval from zero to the selected value. |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| Handle | .noUi-handle | It's the handle element. Use this selector to customize it (use also the :before and :after). |
+| Interval | .noUi-connect | It's the colored interval. Use this selector to change the color of the interval from zero to the selected value. |
 
 ## Advanced use case
 

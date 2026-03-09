@@ -39,8 +39,8 @@ The syntax is composed of a **command** and it’s **arguments**. The command de
 
 ## Summary of available commands
 
-| Command| Description |
-| ---|--- |
+| Command | Description |
+| --- | --- |
 | [-create](#create) | Opens the Service Studio dialog to create a new application. |
 | [-diff](#diff) | Opens the [**Compare and Merge**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Merge_the_Work/Compare_and_merge_example_with_conflicts) window using the 2 modules passed as parameters. |
 | [espace](#espace) | Opens a locally saved module. |
@@ -66,8 +66,8 @@ Syntax
  Example: `servicestudio.exe -create NewApplication -url dev.example.com -userName DevDave --password mypassword`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
-| `-url <hostName>`| Optional | Address of the environment to create the app in. | dev.example.com |
+| --- | --- | --- | --- |
+| `-url <hostName>` | Optional | Address of the environment to create the app in. | dev.example.com |
 | `-userName <user>` | Optional | The username used to connect to Service Studio | DevDave |
 | `-password <password>` | Optional | The password that corresponds to the provided username | mypassword |
 
@@ -80,7 +80,7 @@ Syntax
 :   Example: `servicestudio.exe -diff "C:\Program Files\OutSystems\ComponentsCore.oml" "C:\Program Files\OutSystems\ComponentsCore2.oml"`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | `localESpace.oml` | Mandatory | Source module to use in the comparison. This is the module that will appear on the left side of the **Compare and Merge** dialog, labeled as **Your version**. | C:\Program Files\OutSystems\ComponentsCore.oml |
 | `foreignESpace.oml` | Mandatory | Target module to use in the comparison. This is the module that will appear on the right side of the **Compare and Merge** dialog, labeled as **The other version**. | C:\Program Files\OutSystems\ComponentsCore2.oml |
 
@@ -94,7 +94,7 @@ Syntax
 :   Example: `servicestudio.exe "C:\Program Files\OutSystems\ComponentsCore.oml"`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | `Module_path.oml` | Mandatory | The path to a locally saved module | C:\Program Files\OutSystems\ComponentsCore.oml |
 
 ### -exportSettings { #export-settings }
@@ -106,7 +106,7 @@ Syntax
 :   Example: `servicestudio.exe -exportSettings "C:\Program Files\Mysettings.xml"`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | `settings.xml` | Mandatory | The path where to save the exported settings file. You can chose the name of the settings file to your preference but the file must have the .xml extension. | "C:\Program Files\Mysettings.xml" |
 
 ### -importSettings { #import-settings }
@@ -118,7 +118,7 @@ Syntax
 :   Example: `servicestudio.exe -importSettings "C:\Program Files\Mysettings.xml"`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | `settings.xml` | Mandatory | The path to the settings file to import into Service Studio. | "C:\Program Files\Mysettings.xml" |
 
 ### -merge { #merge }
@@ -130,7 +130,7 @@ Syntax
 :   Example: `servicestudio.exe -merge "C:\Program Files\OutSystems\ComponentsCore.oml" "C:\Program Files\OutSystems\ComponentsCore2.oml"`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | `localESpace.oml` | Mandatory | Source module to use in the comparison. This is the module that will appear on the left side of the **Compare and Merge** dialog, labeled as **Your version**. | C:\Program Files\OutSystems\ComponentsCore.oml |
 | `foreignESpace.oml` | Mandatory | Target module to use in the comparison. This is the module that will appear on the right side of the **Compare and Merge** dialog, labeled as **The other version**. | C:\Program Files\OutSystems\ComponentsCore2.oml |
 
@@ -143,7 +143,7 @@ Syntax
 :   Example: `servicestudio.exe -openModuleFromUrl (https://www.example.com/MyModule.oml)`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | `url.oml` | Mandatory | The path to the remote location of the module. | <https://www.example.com/MyModule.oml> |
 
 ### -refresh { #refresh }
@@ -155,7 +155,7 @@ Syntax
 :   Example: `servicestudio.exe -refresh "C:\Program Files\MyModule.oml" "C:\Program Files\verify.xml" dev.example.com admin AdminPassword`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | `eSpace.oml` | Mandatory | The path to a locally saved module. | C:\Program Files\MyModule.oml |
 | `verify.xml` | Mandatory | The path in which to save the log file "verify.xml". | C:\Program Files\verify.xml |
 | `hostName` | Mandatory | The hostname of the environment to compare the references of the local module. | dev.example.com |
@@ -175,5 +175,5 @@ Syntax
 :   Example: `servicestudio.exe -recover "C:\Program Files\OutSystems\ComponentsCore.oml"`
 
 | Argument | Type | Description | Example |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | `C:\Program Files\OutSystems\ComponentsCore.oml` | Mandatory | The path to a locally saved module. | "C:\Program Files\OutSystems\ComponentsCore.oml" |

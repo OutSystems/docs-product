@@ -83,27 +83,27 @@ All communications before and after each work item are to be done by e-mail. The
 
 List of people/departments that take part in the plan.
 
-| Responsibility        | Name          | E-mail                  | Contact      | Department 24/7 contact |
-|-----------------------|---------------|-------------------------|--------------|-------------------------|
-| Network               | Diane Man     | <diane.man@acme.corp>     | +1 432 7434  | +1 432 7434             |
-| Database              | Jack Lang     | <jack.lang@ext.acme.corp> | +1 378 4320  | +1 479 4321             |
-| Server Operations     | Lee Connan    | <lee.conan@ext.acme.corp> | +62 444 9254 | +62 229 5478            |
-| Global Infrastructure | Rob Roy       | <rob.roy@acme.corp>       | +1 334 7845  | +1 334 3402             |
-| Applications          | Audrey Branch | <audrey.branch@acme.corp> | +1 434 1121  | +1 432 001              |
-| Backups               | Cindy Krall   | <cindy.krall@acme.corp>   | +1 432 5009  | +1 332 887              |
+| Responsibility | Name | E-mail | Contact | Department 24/7 contact |
+| ----------------------- | --------------- | ------------------------- | -------------- | ------------------------- |
+| Network | Diane Man | <diane.man@acme.corp> | +1 432 7434 | +1 432 7434 |
+| Database | Jack Lang | <jack.lang@ext.acme.corp> | +1 378 4320 | +1 479 4321 |
+| Server Operations | Lee Connan | <lee.conan@ext.acme.corp> | +62 444 9254 | +62 229 5478 |
+| Global Infrastructure | Rob Roy | <rob.roy@acme.corp> | +1 334 7845 | +1 334 3402 |
+| Applications | Audrey Branch | <audrey.branch@acme.corp> | +1 434 1121 | +1 432 001 |
+| Backups | Cindy Krall | <cindy.krall@acme.corp> | +1 432 5009 | +1 332 887 |
 
 #### Systems
 
 List of devices that directly take part of the OutSystems Factory
 
-| System                | Hostname      | IP Address              | Responsibility|
-|-----------------------|---------------|-------------------------|--------------      |
-| Load Balancer 1       | syslb1        | 81.253.167.3            | Network            |
-| Frontend 1            | srvappout1    | 10.56.1.11              | Server Operations  |
-| Frontend 2            | srvappout2    | 10.56.1.12              | Server Operations  |
-| Frontend 3            | srvappout3    | 10.56.1.13              | Server Operations  |
-| Frontend 4            | srvappout4    | 10.56.1.14              | Server Operations  |
-| Database1             | oradbout1     | 10.80.1.33              | Database           |
+| System | Hostname | IP Address | Responsibility |
+| ----------------------- | --------------- | ------------------------- | -------------- |
+| Load Balancer 1 | syslb1 | 81.253.167.3 | Network |
+| Frontend 1 | srvappout1 | 10.56.1.11 | Server Operations |
+| Frontend 2 | srvappout2 | 10.56.1.12 | Server Operations |
+| Frontend 3 | srvappout3 | 10.56.1.13 | Server Operations |
+| Frontend 4 | srvappout4 | 10.56.1.14 | Server Operations |
+| Database1 | oradbout1 | 10.80.1.33 | Database |
 
 ##### Support Contracts
 

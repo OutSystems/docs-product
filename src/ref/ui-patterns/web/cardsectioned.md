@@ -30,12 +30,12 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .card-sectioned |  .flex-direction-row |  When the parameter Orientation of the card is set to horizontal |
-| .card-sectioned |  .flex-direction-column | When the parameter Orientation of the card is set to vertical  |
-| .card-image |  .padding-none | When the parameter ImagePadding of the card is set to False  |
-| .card-sectioned |  .card-sectioned-right | When the parameter IsRight is set to True  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .card-sectioned | .flex-direction-row | When the parameter Orientation of the card is set to horizontal |
+| .card-sectioned | .flex-direction-column | When the parameter Orientation of the card is set to vertical |
+| .card-image | .padding-none | When the parameter ImagePadding of the card is set to False |
+| .card-sectioned | .card-sectioned-right | When the parameter IsRight is set to True |
 
 ## Advanced use case
 

@@ -29,17 +29,17 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
 | .card-background-content | .bottom-center | Vertically aligns the content to Bottom and Horizontally align it to Center. |
-| .card-background-content | .bottom-left |  Vertically aligns the content to Bottom and Horizontally align it to Left. |
-| .card-background-content | .bottom-right |  Vertically aligns the content to Bottom and Horizontally align it to Right. |
-| .card-background-content | .center |  Vertically aligns the content to Center and Horizontally align it to Center. |
-| .card-background-content | .center-left |  Vertically aligns the content to Center and Horizontally align it to Left. |
-| .card-background-content | .center-right |  Vertically aligns the content to Center and Horizontally align it to Right. |
+| .card-background-content | .bottom-left | Vertically aligns the content to Bottom and Horizontally align it to Left. |
+| .card-background-content | .bottom-right | Vertically aligns the content to Bottom and Horizontally align it to Right. |
+| .card-background-content | .center | Vertically aligns the content to Center and Horizontally align it to Center. |
+| .card-background-content | .center-left | Vertically aligns the content to Center and Horizontally align it to Left. |
+| .card-background-content | .center-right | Vertically aligns the content to Center and Horizontally align it to Right. |
 | .card-background-content | .top-center | Vertically aligns the content to Top and Horizontally align it to Center. |
-| .card-background-content | .top-left |  Vertically aligns the content to Top and Horizontally align it to Left. |
-| .card-background-content | .top-right |  Vertically aligns the content to Top and Horizontally align it to Right. |
+| .card-background-content | .top-left | Vertically aligns the content to Top and Horizontally align it to Left. |
+| .card-background-content | .top-right | Vertically aligns the content to Top and Horizontally align it to Right. |
 
 ## Advanced use case
 

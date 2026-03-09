@@ -61,17 +61,17 @@ With this definition in mind, choose your updating and loaded front-ends. To imp
 
 To execute the upgrade, use the following steps:
 
-| Step |Description | Server |
-|-------|-------|---------|
-| **1** | **Set traffic on the load balancer to the loaded front-ends (remove the updating ones)**  Access your load balancing management tool and remove application traffic from the **updating**  front-ends.| Load Balancer |
-| **2** | **Disable deployment to loaded front-ends in Service Center**  Access the environment’s Service Center and log in with administrative privileges. Go to the **Administration  -> Front-end Servers**  page and, for each **loaded** front-end, access its details and press the **Disable** button.  | Loaded Front-ends|
-| **3** | **Follow the Platform Server installation checklist and upgrade the Deployment Controller Server and the updating front-ends**  Follow the appropriate steps on a single  updating front-end.| Any Updating Front-end |
-| **4** | **Test your applications on the updating front-ends**  Access the applications on your **updating**  front-ends to confirm their availability.| Updating Front-ends|
-| **5** | **Set traffic on the load balancer to the updating front-ends**  Access your load balancing management tool. Add the **updating**  front-ends to **start**  receiving application traffic. Remove the **loaded**  front-ends so that they **stop**  receiving application traffic.| Load Balancer|
-| **6** | **Follow the Platform Server installation checklist and upgrade the loaded front-ends**.| Loaded Front-ends |
+| Step | Description | Server |
+| ------- | ------- | --------- |
+| **1** | **Set traffic on the load balancer to the loaded front-ends (remove the updating ones)**  Access your load balancing management tool and remove application traffic from the **updating**  front-ends. | Load Balancer |
+| **2** | **Disable deployment to loaded front-ends in Service Center**  Access the environment’s Service Center and log in with administrative privileges. Go to the **Administration  -> Front-end Servers**  page and, for each **loaded** front-end, access its details and press the **Disable** button. | Loaded Front-ends |
+| **3** | **Follow the Platform Server installation checklist and upgrade the Deployment Controller Server and the updating front-ends**  Follow the appropriate steps on a single  updating front-end. | Any Updating Front-end |
+| **4** | **Test your applications on the updating front-ends**  Access the applications on your **updating**  front-ends to confirm their availability. | Updating Front-ends |
+| **5** | **Set traffic on the load balancer to the updating front-ends**  Access your load balancing management tool. Add the **updating**  front-ends to **start**  receiving application traffic. Remove the **loaded**  front-ends so that they **stop**  receiving application traffic. | Load Balancer |
+| **6** | **Follow the Platform Server installation checklist and upgrade the loaded front-ends**. | Loaded Front-ends |
 | **7** | **Ensure that the OutSystems Deployment Service is running**  **.NET Stack:** In Windows’ Services management console (**services.msc** ), ensure that the OutSystems Deployment Service’s startup type is configured as Automatic. Start the service if it is stopped.  **J2EE Stack:** In a command line, as user root, run the following command: **# service outsystems start DEPLOYER** | Loaded Front-ends |
-| **8** | **Access Service Center**  In the **Monitoring  -> Platform Monitoring**  page, click the **detail**  link for the **Deployment**  service in each loaded front-end. Wait until the status of all threads is ‘Sleeping’. When this happens, the deployment process has finished to the loaded front-ends.| Loaded Front-ends|
-| **9** | **Reset traffic on the load balancer to all Front-ends**  Access your load balancing management tool and add the **loaded**  front-ends to start receiving application traffic again.| Load Balancer|
+| **8** | **Access Service Center**  In the **Monitoring  -> Platform Monitoring**  page, click the **detail**  link for the **Deployment**  service in each loaded front-end. Wait until the status of all threads is ‘Sleeping’. When this happens, the deployment process has finished to the loaded front-ends. | Loaded Front-ends |
+| **9** | **Reset traffic on the load balancer to all Front-ends**  Access your load balancing management tool and add the **loaded**  front-ends to start receiving application traffic again. | Load Balancer |
 
 ## More information
 

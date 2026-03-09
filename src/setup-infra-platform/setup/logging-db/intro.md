@@ -52,12 +52,12 @@ To decrease the level of impact, log entities were [denormalized](<https://en.wi
 The attributes added to log entities were the following:
 
 | Attribute | Added to... |
-| ----|---- |
-| `Espace_Name`      | All log entities |
+| ---- | ---- |
+| `Espace_Name` | All log entities |
 | `Application_Name` | All log entities |
-| `Application_Key`  | All log entities |
-| `Username`         | `Log_Error`, `Log_Error_Previous`, `Log_Extension`, `Log_Extension_Previous`, `Log_General`, `Log_General_Previous`, `Log_Mobile_Request`, `Log_Mobile_Request_Previous`, `Log_Screen`, `Log_Screen_Previous`, `Log_Sms`, `Log_Sms_Previous` |
-| `Extension_Name`   | `Log_Extension`, `Log_Extension_Previous` |
+| `Application_Key` | All log entities |
+| `Username` | `Log_Error`, `Log_Error_Previous`, `Log_Extension`, `Log_Extension_Previous`, `Log_General`, `Log_General_Previous`, `Log_Mobile_Request`, `Log_Mobile_Request_Previous`, `Log_Screen`, `Log_Screen_Previous`, `Log_Sms`, `Log_Sms_Previous` |
+| `Extension_Name` | `Log_Extension`, `Log_Extension_Previous` |
 
 These new attributes in log entities will only be filled in for applications already upgraded to OutSystems 11 and the information saved in the log records will refer to the moment the log was generated, i.e. if an application changes its name from 'X' to 'Y' after a log record is created, the application name in that log record will still be 'X'. Note that this will not affect any filters using the key attribute rather than the name.
 

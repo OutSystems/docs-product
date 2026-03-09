@@ -29,21 +29,21 @@ Different Timers can be executed at the same time, but the same Timer never has 
 Here follows some common scenarios where you can use Timers:
 
 | **Scenario** | **Example** |
-|----------|---------|
-| **Scheduled Jobs**| Execute the same job every day at the same time. For example, send every day at 4 a.m. e-mails to subscribers with digest news.<br/><br/>Create a Timer to execute an Action that does the job of sending e-mails to subscribers every day at 4 a.m.|
-| **Executing Long Running Actions** | Execute application logic that usually takes long time to finish. For example, at 2 a.m. of the 1st day of every month, the system must archive a lot of database records. It takes about 2 hours.<br/><br/>Create a Timer to execute an Action that archives records and set it to run at 2 a.m. of 1st day of every month and with the default timeout of 150 minutes (this value can be adjusted in Service Center).|
+| ---------- | --------- |
+| **Scheduled Jobs** | Execute the same job every day at the same time. For example, send every day at 4 a.m. e-mails to subscribers with digest news.<br/><br/>Create a Timer to execute an Action that does the job of sending e-mails to subscribers every day at 4 a.m. |
+| **Executing Long Running Actions** | Execute application logic that usually takes long time to finish. For example, at 2 a.m. of the 1st day of every month, the system must archive a lot of database records. It takes about 2 hours.<br/><br/>Create a Timer to execute an Action that archives records and set it to run at 2 a.m. of 1st day of every month and with the default timeout of 150 minutes (this value can be adjusted in Service Center). |
 
 ## Architecture
 
 The following table lists the OutSystems elements that relate to Timers:
 
 | **Element** | **Description** |
-|---------|---------|
-| **OutSystems Scheduler service**| This is the service that has the responsibility of checking for Timers to be executed. It's a multi-threaded service that allows having different Timers executing at the same time.|
-| **Runtime database**| The runtime database contains all System entities for managing Timers, such as:<br/> - The record of all existing Timers.<br/> - The schedule for executing Timers.<br/> - Current execution of Timers: when started, their timeout, or next execution.|
-| **Log database** | When a Timer is executed, an entry is created in the Log database.|
-| **Configuration Tool** | This is the tool that allows configuring the maximum number of Timers that may execute at the same time in each front-end server node.|
-| **OutSystems Logs** | In Service Center you can access Timer logs for individual applications or all apps in your environment.|
+| --------- | --------- |
+| **OutSystems Scheduler service** | This is the service that has the responsibility of checking for Timers to be executed. It's a multi-threaded service that allows having different Timers executing at the same time. |
+| **Runtime database** | The runtime database contains all System entities for managing Timers, such as:<br/> - The record of all existing Timers.<br/> - The schedule for executing Timers.<br/> - Current execution of Timers: when started, their timeout, or next execution. |
+| **Log database** | When a Timer is executed, an entry is created in the Log database. |
+| **Configuration Tool** | This is the tool that allows configuring the maximum number of Timers that may execute at the same time in each front-end server node. |
+| **OutSystems Logs** | In Service Center you can access Timer logs for individual applications or all apps in your environment. |
 | **Deployed module (Application)** | The deployed application contains the code for the Timer. It has the application logic designed in the Action executed by the Timer, and also some stub code needed to get the system database up-to-date about the state of the Timer. |
 
 ### Runtime and Log databases
@@ -57,15 +57,15 @@ This entity contains the definitions of Timers created in modules. These records
 Here's the complete description of the attributes:
 
 | **Attribute** | **Description** |
-|----------|--------|
-| **Id** | The primary key.|
+| ---------- | -------- |
+| **Id** | The primary key. |
 | **Espace_Id** | The module where the Timer is defined. |
 | **Name** | The Timer name, as defined in the module. |
-| **Default_Schedule** | The default scheduled time for the Timer, as defined in the module.<br/><br/> This is a string with the time and the frequency the Timer is executed. It has a special editor in Service Studio to set its value.<br/><br/> This value is used to set the Schedule property in the Cyclic_Job_Shared  entity.|
-| **Priority** | The Timer priority, as defined in the module. It's a value between 1 (Highest) and 4 (Lowest).<br/><br/> When the number of Timers being executed at the same time is greater than the maximum allowed for the Front-end Server, Timers with highest priority are executed first.|
-| **Is_Active** | Indicates whether the Timer is active.|
-| **SS_Key** | The Timer key in Service Studio.|
-| **Timeout** | The Timer default timeout, as defined in the module. The value is in minutes.<br/><br/> If the Timer doesn't finish the job in this time limit, the Timer execution is aborted by the system.|
+| **Default_Schedule** | The default scheduled time for the Timer, as defined in the module.<br/><br/> This is a string with the time and the frequency the Timer is executed. It has a special editor in Service Studio to set its value.<br/><br/> This value is used to set the Schedule property in the Cyclic_Job_Shared  entity. |
+| **Priority** | The Timer priority, as defined in the module. It's a value between 1 (Highest) and 4 (Lowest).<br/><br/> When the number of Timers being executed at the same time is greater than the maximum allowed for the Front-end Server, Timers with highest priority are executed first. |
+| **Is_Active** | Indicates whether the Timer is active. |
+| **SS_Key** | The Timer key in Service Studio. |
+| **Timeout** | The Timer default timeout, as defined in the module. The value is in minutes.<br/><br/> If the Timer doesn't finish the job in this time limit, the Timer execution is aborted by the system. |
 | **Effective_Timeout** | If the value is different from zero, it overrides the above Timer default timeout.<br/><br/> Use it to adjust a new timeout, which is done in Service Center, in the Timer's detail page. |
 | **IsShared** | When True, it indicates that instances of the Timer are created in the **Cyclic_Job_Shared** entity, otherwise they're created in the **Cyclic_Job** entity. |
 
@@ -86,16 +86,16 @@ The **Schedule** and **Next_Run** are the only attributes of this entity that yo
 Here's the complete description of the attributes:
 
 | **Attribute** | **Description** |
-|----------|------------|
-| **Meta_Cyclic_Job_Id** | A reference to the  **Meta_Cyclic_Job**  entity.|
-| **Tenant_Id** | The reference to the tenant where the Timer is running.|
+| ---------- | ------------ |
+| **Meta_Cyclic_Job_Id** | A reference to the  **Meta_Cyclic_Job**  entity. |
+| **Tenant_Id** | The reference to the tenant where the Timer is running. |
 | **Schedule** | After the Timer has finished its execution, this attribute is used to calculate the time of the next execution.<br/><br/> **For example:** Schedule: "02:00 10:00 18:00" (runs every day at 2 a.m., 10 a.m., and 6 p.m.). If a Timer finished on the 10-23-2012 at 18:00:50 then the Next_Run is set to 10-24-2012 at 2:00:00.<br/><br/>This property is initially set by the value defined in the **Default_Schedule** property of the **Meta_Cyclic_Job** entity, but it can be changed in Service Center. |
-| **Last_Run** | The date and time at which the Timer started its last execution (using the database clock).|
-| **Next_Run** | The date and time of the next execution (using the database clock).<br/><br/>The Scheduler Service executes Timers which have **Next_Run** <= current date time.|
-| **Last_Duration** | The time in seconds the Timer took to finish its last execution.|
-| **Is_Running_Since** | The date and time when the Schedule Service started executing the Timer (database clock time).<br/><br/> This attribute is also used to synchronize the several Front-end Server nodes because the Scheduler Service doesn't execute Timers with this attribute set (unless in error recovering actions).<br/><br/> When the execution of the Timer finishes, this attribute is cleaned.|
-| **Is_Running_By** | This attribute has the name of the Front-end Server node that's executing the Timer. The  **Is_Running_Since**  attribute is also set.|
-| **Number_Of_Tries** | The number of consecutive times the Timer was executed without success.|
+| **Last_Run** | The date and time at which the Timer started its last execution (using the database clock). |
+| **Next_Run** | The date and time of the next execution (using the database clock).<br/><br/>The Scheduler Service executes Timers which have **Next_Run** <= current date time. |
+| **Last_Duration** | The time in seconds the Timer took to finish its last execution. |
+| **Is_Running_Since** | The date and time when the Schedule Service started executing the Timer (database clock time).<br/><br/> This attribute is also used to synchronize the several Front-end Server nodes because the Scheduler Service doesn't execute Timers with this attribute set (unless in error recovering actions).<br/><br/> When the execution of the Timer finishes, this attribute is cleaned. |
+| **Is_Running_By** | This attribute has the name of the Front-end Server node that's executing the Timer. The  **Is_Running_Since**  attribute is also set. |
+| **Number_Of_Tries** | The number of consecutive times the Timer was executed without success. |
 
 #### Entity Cyclic_Job_Shared
 
@@ -114,15 +114,15 @@ The **Schedule** and **Next_Run** are the only attributes of this entity that yo
 Here's the complete description of the attributes:
 
 | **Attribute** | **Description** |
-|-----------|----------|
-| **Meta_Cyclic_Job_Id** | A reference to the **Meta_Cyclic_Job** entity.|
-| **Schedule** | After the Timer has finished its execution, this attribute is used to calculate the time of the next execution.<br/><br/> **For example**: Schedule: "02:00 10:00 18:00" (runs every day at 2 a.m., 10 a.m., and 6 p.m.). If a Timer finished on the 10-23-2012 at 18:00:50 then the Next_Run is set to 10-24-2012 at 2:00:00.<br/><br/> This property is initially set by the value defined in the **Default_Schedule** property of the **Meta_Cyclic_Job** entity, but it can be changed in Service Center.|
-| **Last_Run** | The date and time at which the Timer started its last execution.|
-| **Next_Run** | The date and time of the next execution.<br/><br/> The Scheduler Service executes Timers which have **Next_Run** <= current date time.|
-| **Last_Duration** | The time in seconds the Timer took to finish its last execution.|
+| ----------- | ---------- |
+| **Meta_Cyclic_Job_Id** | A reference to the **Meta_Cyclic_Job** entity. |
+| **Schedule** | After the Timer has finished its execution, this attribute is used to calculate the time of the next execution.<br/><br/> **For example**: Schedule: "02:00 10:00 18:00" (runs every day at 2 a.m., 10 a.m., and 6 p.m.). If a Timer finished on the 10-23-2012 at 18:00:50 then the Next_Run is set to 10-24-2012 at 2:00:00.<br/><br/> This property is initially set by the value defined in the **Default_Schedule** property of the **Meta_Cyclic_Job** entity, but it can be changed in Service Center. |
+| **Last_Run** | The date and time at which the Timer started its last execution. |
+| **Next_Run** | The date and time of the next execution.<br/><br/> The Scheduler Service executes Timers which have **Next_Run** <= current date time. |
+| **Last_Duration** | The time in seconds the Timer took to finish its last execution. |
 | **Is_Running_Since** | The date and time when the Schedule Service started executing the Timer (database clock time).<br/><br/> This attribute is also used to synchronize the several Front-end Server nodes because the Scheduler Service doesn't execute Timers with this attribute set (unless in error recovering actions).<br/><br/> When the execution of the Timer finishes, this attribute is cleaned. |
-| **Is_Running_By** | This attribute has the name of the Front-end Server node that's executing the Timer. The **Is_Running_Since** attribute is also set.|
-| **Number_Of_Tries** | The number of consecutive times the Timer was executed without success.|
+| **Is_Running_By** | This attribute has the name of the Front-end Server node that's executing the Timer. The **Is_Running_Since** attribute is also set. |
+| **Number_Of_Tries** | The number of consecutive times the Timer was executed without success. |
 
 #### Tables LogCyclic_Job and Log_Cyclic_Job_Previous
 
@@ -132,17 +132,17 @@ These are available under the PlatformLogs extension and are not accessible with
 Here's the complete description of the attributes:
 
 | **Attribute** | **Description** |
-|----------|----------|
-| **Instant** | The date and time when the Timer execution started ('Time of Log' in Service Center).<br/><br/> This is the IIS clock date and time.|
-| **Duration** | The time in seconds the Timer took to finish the execution.|
-| **Cyclic_Job_Key** | The Timer key in Service Studio.|
-| **Espace_Id** | The reference to the module where the Timer was created.|
-| **Tenant_Id** | The reference to the tenant where the Timer was executed.|
-| **Executed_By** | The name of the Front-end Server node that executed the Timer ('Server' in Service Center).|
-| **Error_Id** | The reference to the Log_Error entity.<br/><br/> If set, it means there was an error executing the application logic of the Timer and in Service Center Timers Log page displays a red link called Error in the row of the Timer.|
-| **Should_Have_Run_At** | The date and time when this Timer should have been executed.<br/><br/> Note that if a system is very loaded, this value can be quite different than the Instant attribute. This may happen because the same module has many tenants and all have the same schedule, other Timers are taking too much time to execute, etc.<br/><br/> This is the database clock date and time.|
-| **Next_Run** | Is a date time representing when this Timer should start again (based on schedule, as explained above).|
-| **Cycle** | Log cycle number for internal use.|
+| ---------- | ---------- |
+| **Instant** | The date and time when the Timer execution started ('Time of Log' in Service Center).<br/><br/> This is the IIS clock date and time. |
+| **Duration** | The time in seconds the Timer took to finish the execution. |
+| **Cyclic_Job_Key** | The Timer key in Service Studio. |
+| **Espace_Id** | The reference to the module where the Timer was created. |
+| **Tenant_Id** | The reference to the tenant where the Timer was executed. |
+| **Executed_By** | The name of the Front-end Server node that executed the Timer ('Server' in Service Center). |
+| **Error_Id** | The reference to the Log_Error entity.<br/><br/> If set, it means there was an error executing the application logic of the Timer and in Service Center Timers Log page displays a red link called Error in the row of the Timer. |
+| **Should_Have_Run_At** | The date and time when this Timer should have been executed.<br/><br/> Note that if a system is very loaded, this value can be quite different than the Instant attribute. This may happen because the same module has many tenants and all have the same schedule, other Timers are taking too much time to execute, etc.<br/><br/> This is the database clock date and time. |
+| **Next_Run** | Is a date time representing when this Timer should start again (based on schedule, as explained above). |
+| **Cycle** | Log cycle number for internal use. |
 
 ### How Timers are executed
 

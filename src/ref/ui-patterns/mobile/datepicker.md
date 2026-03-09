@@ -25,9 +25,9 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Events
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnSelect | Action to execute after selecting a DatePicker day. If SelectInterval is enabled, both parameters return values. If not, only the StartDate has a value.  |  True  |
+| **Event Name** | **Description** | **Mandatory** |
+| --- | --- | --- |
+| OnSelect | Action to execute after selecting a DatePicker day. If SelectInterval is enabled, both parameters return values. If not, only the StartDate has a value. | True |
   
 ## Layout and Classes
 
@@ -35,7 +35,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## CSS Selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-|---|---|--- |
-| td | .is-selected  | Clicked day. |
-| td | .is-startrange  | If SelectInterval is True , this class will be the start range value.  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| td | .is-selected | Clicked day. |
+| td | .is-startrange | If SelectInterval is True , this class will be the start range value. |

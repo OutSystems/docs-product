@@ -27,9 +27,9 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Events
 
-|**Event** |**Output**|**Description**|
-|---|---|---|
-|OnSelect: Optional |Value (Decimal)|  Event that returns the current rating value. |
+| **Event** | **Output** | **Description** |
+| --- | --- | --- |
+| OnSelect: Optional | Value (Decimal) | Event that returns the current rating value. |
   
 ## Structure
 

@@ -30,7 +30,7 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
-| .sidebar | .sidebar.is--hidden |  When Sidebar is closed  |
-| .sidebar | .sidebar.is--visible |  When Sidebar is open  |
+| .sidebar | .sidebar.is--hidden | When Sidebar is closed |
+| .sidebar | .sidebar.is--visible | When Sidebar is open |

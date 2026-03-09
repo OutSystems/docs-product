@@ -30,10 +30,10 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
-| .progress-circle | .progress-circle .progress-circle-content |  When IsSemiCircle parameter is False  |
-| .progress-circle | .progress-circle .progress-semi-circle-content |  When IsSemiCircle parameter is True  |
+| .progress-circle | .progress-circle .progress-circle-content | When IsSemiCircle parameter is False |
+| .progress-circle | .progress-circle .progress-semi-circle-content | When IsSemiCircle parameter is True |
 
 ## Advanced use case
 

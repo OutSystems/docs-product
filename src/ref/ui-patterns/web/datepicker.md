@@ -40,11 +40,11 @@ Applies only to Traditional Web Apps.
 
 ## Events
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| onClose | Event that will be triggered once you close the date picker which returns the last selected date.  |  False  |
-| onOpen | Event that will be triggered once you open the date picker.  |  False  |
-| OnSelect | Event will be triggered when a date is selected returning it.  |  False  |
+| **Event Name** | **Description** | **Mandatory** |
+| --- | --- | --- |
+| onClose | Event that will be triggered once you close the date picker which returns the last selected date. | False |
+| onOpen | Event that will be triggered once you open the date picker. | False |
+| OnSelect | Event will be triggered when a date is selected returning it. | False |
 
 ## Advanced Use Case
 

@@ -19,7 +19,7 @@ coverage-type:
 # Math
 
 | Name | Description |
-|---|---|
+| --- | --- |
 | [Abs](#Abs)(​Decimal) | Returns the absolute value (unsigned magnitude) of the decimal number 'n'. |
 | [Mod](#Mod)(​Decimal, Decimal) | Returns the remainder of decimal division of 'n' by 'm'. |
 | [Power](#Power)(​Decimal, Decimal) | Returns 'n' raised to the power of 'm'. |

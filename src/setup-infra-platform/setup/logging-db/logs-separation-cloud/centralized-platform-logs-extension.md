@@ -46,12 +46,12 @@ If you have apps using the [PlatformLogs extension](../../../../monitor-and-trou
 There are some key differences between both extensions, mostly differences between accessing a database and requesting an API.
 
 | | PlatformLogs extension | CentralizedPlatformLogs extension |
-|---|---|---|
+| --- | --- | --- |
 | **Time interval** | Both the **Cycle** and **Instant** fields can be used to filter the logs by date. | The time interval is defined by the parameters **From** and **To** (inclusive) which accept Date Time values.<br/>If only **To** is defined with a value `toDate`, the **From** will, by default, be defined with a value of `toDate`-15m. |
 | **Number of results and skipping** | The number of results returned and skipping of rows can be defined using default database syntax (TOP, OFFSET). | The number of results can be defined using **PageSize** and skipped using **StartIndex**. |
 | **Query operators** | The query can include several conditions to be applied when filtering the logs using database syntax. | Applicable to integer and text input parameter types: <br/> `eq` - returns results that contain an exact word. To use it, inform one word, in lower case.  <br/><br/> Applicable to integer and date time input parameter types: <br/> `lt` - returns results containing values less than the provided. <br/> `lte` - values less than or equal to the provided. <br/> `gt` - values greater than the provided. <br/> `gte` - values greater than or equal to the provided. <br/>All query conditions are combined with the **AND** operator. |
 | **Sorting** | The query can include a sorting command (ORDER BY) which can be applied to any log property. | Every request accepts a boolean input parameter **AscendingOrder** which sorts the logs by `Instant`. False for newest first and true for oldest first. Default is false. |
-| **Restrictions** | -  | The maximum number of logs per request is 500 (**PageSize** <= 500). The maximum number of logs that you can go back and access is 10000 (**PageSize** + **StartIndex** <= 10000). |
+| **Restrictions** | - | The maximum number of logs per request is 500 (**PageSize** <= 500). The maximum number of logs that you can go back and access is 10000 (**PageSize** + **StartIndex** <= 10000). |
 
 ### Unsupported scenarios
 
@@ -86,7 +86,7 @@ When using the CentralizedPlatformLogs extension, you have the following server 
 All of these actions have these input parameters in common:
 
 | Parameter | Input parameter type | Default value |
-|---|---|---|
+| --- | --- | --- |
 | PageSize | Integer | 10 |
 | StartIndex | Integer | 0 |
 | AscendingOrder | Boolean | false |
@@ -98,7 +98,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetCyclicJobLogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | Application_Key | Text | Text |
 | Application_Name | Text | Text |
 | Cyclic_Job_Key | Text | Text |
@@ -116,7 +116,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetErrorLogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | Action_Name | Text | Text |
 | Application_Key | Text | Text |
 | Application_Name | Text | Text |
@@ -138,7 +138,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetExtensionLogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | Action_Name | Text | Text |
 | Application_Key | Text | Text |
 | Application_Name | Text | Text |
@@ -158,7 +158,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetGeneralLogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | Action_Name | Text | Text |
 | Application_Key | Text | Text |
 | Application_Name | Text | Text |
@@ -179,7 +179,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetIntegrationLogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | Action | Text | Text |
 | Application_Key | Text | Text |
 | Application_Name | Text | Text |
@@ -199,7 +199,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetMobileRequestLogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | Application_Key | Text | Text |
 | Application_Name | Text | Text |
 | Duration | Text | Integer |
@@ -220,7 +220,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetRequestEventLogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | ApplicationKey | Text | Text |
 | ApplicationName | Text | Text |
 | EventDetails | Text | Text |
@@ -232,7 +232,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetScreenLogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | Access_Mode | Text | Text |
 | Action_Name | Text | Text |
 | Application_Key | Text | Text |
@@ -256,7 +256,7 @@ Additionally, each action has also the parameters represented in the following t
 #### GetServiceAPILogs
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | Action | Text | Text |
 | Application_Key | Text | Text |
 | Application_Name | Text | Text |
@@ -284,7 +284,7 @@ Additionally, each action has also the parameters represented in the following t
 All these actions have the following parameters:
 
 | Parameter | Input parameter type | Output response type |
-|---|---|---|
+| --- | --- | --- |
 | AscendingOrder | Boolean | N/A |
 | Detail | Text | Text |
 | DetailLabel | Text | Text |

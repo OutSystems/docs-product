@@ -30,10 +30,10 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
-| .progress-container | .progress-container.flex-direction-column |  When IsInline parameter is False  |
-| .progress-container | .progress-container.flex-direction-row |  When IsInline parameter is False  |
+| .progress-container | .progress-container.flex-direction-column | When IsInline parameter is False |
+| .progress-container | .progress-container.flex-direction-row | When IsInline parameter is False |
 
 ## Advanced use case
 

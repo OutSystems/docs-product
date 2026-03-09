@@ -92,22 +92,22 @@ The following are the configurations that are specific to SQL Server and Azure S
 
 The following are the configurations that are specific to Oracle:
 
-|Key|Value|Description|
-|---|-----|-----------|
-|IntrospectionMethod|**Internal**, do not customize.||
-|CI_AI|"true" or "false".<br/>**Internal**, do not customize.|Case insensitive and accent insensitive mode.|
-|DateFunction|Function used to get date.<br/>**Internal**, do not customize.||
-|DDLLockTimeout|Numeric value.<br/>**Internal**, do not customize.|Timeout used in DDL lock operations.|
-|NamingType|"Service Name" or "TNS Name".|Connection mode used.|
-|TNSName|Address name defined in the `tnsnames.ora` configuration file.|This option is only available when NamingType is set to "TNS Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Host|Hostname or IP address of the database server.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Port|Port where the database service listens.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|ServiceName|Oracle database service name.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|NLS_Language|NLS_LANG Language Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
-|NLS_Territory|NLS_LANG Territory Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
-|AdminTablespace|Table space where the system tables are stored.||
-|IndexTablespace|Table space where all the indexes of the platform are stored.||
-|RuntimeTablespace|Table space where the tables created in the Development Environment are stored.| |
+| Key | Value | Description |
+| --- | ----- | ----------- |
+| IntrospectionMethod | **Internal**, do not customize. | |
+| CI_AI | "true" or "false".<br/>**Internal**, do not customize. | Case insensitive and accent insensitive mode. |
+| DateFunction | Function used to get date.<br/>**Internal**, do not customize. | |
+| DDLLockTimeout | Numeric value.<br/>**Internal**, do not customize. | Timeout used in DDL lock operations. |
+| NamingType | "Service Name" or "TNS Name". | Connection mode used. |
+| TNSName | Address name defined in the `tnsnames.ora` configuration file. | This option is only available when NamingType is set to "TNS Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration). |
+| Host | Hostname or IP address of the database server. | This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration). |
+| Port | Port where the database service listens. | This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration). |
+| ServiceName | Oracle database service name. | This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration). |
+| NLS_Language | NLS_LANG Language Oracle environment parameter. | Changes the locale of the messages returned by the Oracle driver. |
+| NLS_Territory | NLS_LANG Territory Oracle environment parameter. | Changes the locale of the messages returned by the Oracle driver. |
+| AdminTablespace | Table space where the system tables are stored. | |
+| IndexTablespace | Table space where all the indexes of the platform are stored. | |
+| RuntimeTablespace | Table space where the tables created in the Development Environment are stored. | |
 
 ## Logging Database Configuration
 
@@ -151,23 +151,23 @@ The following are the configurations that are specific to SQL Server and Azure S
 
 The following are the configurations that are specific to Oracle:
 
-|Key|Value|Description|
-|---|-----|-----------|
-|IntrospectionMethod|**Internal**, do not customize.||
-|CI_AI|"true" or "false".<br/>**Internal**, do not customize.|Case insensitive and accent insensitive mode.|
-|DateFunction|Function used to get date.<br/>**Internal**, do not customize.||
-|DDLLockTimeout|Numeric value.<br/>**Internal**, do not customize.|Timeout used in DDL lock operations.|
-|NamingType|"Service Name" or "TNS Name".|Connection mode used.|
-|TNSName|Address name defined in the `tnsnames.ora` configuration file.|This option is only available when NamingType is set to "TNS Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Host|Hostname or IP address of the database server.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Port|Port where the database service listens.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|ServiceName|Oracle database service name.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|NLS_Language|NLS_LANG Language Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
-|NLS_Territory|NLS_LANG Territory Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
-|AdminTablespace|Table space where the system tables are stored.||
-|IndexTablespace|Table space where all the indexes of the platform are stored.||
-|RuntimeTablespace|Table space where the tables created in the Development Environment are stored.| |
-|LogTablespace|Table space where the logging tables are stored.||
+| Key | Value | Description |
+| --- | ----- | ----------- |
+| IntrospectionMethod | **Internal**, do not customize. | |
+| CI_AI | "true" or "false".<br/>**Internal**, do not customize. | Case insensitive and accent insensitive mode. |
+| DateFunction | Function used to get date.<br/>**Internal**, do not customize. | |
+| DDLLockTimeout | Numeric value.<br/>**Internal**, do not customize. | Timeout used in DDL lock operations. |
+| NamingType | "Service Name" or "TNS Name". | Connection mode used. |
+| TNSName | Address name defined in the `tnsnames.ora` configuration file. | This option is only available when NamingType is set to "TNS Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration). |
+| Host | Hostname or IP address of the database server. | This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration). |
+| Port | Port where the database service listens. | This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration). |
+| ServiceName | Oracle database service name. | This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration). |
+| NLS_Language | NLS_LANG Language Oracle environment parameter. | Changes the locale of the messages returned by the Oracle driver. |
+| NLS_Territory | NLS_LANG Territory Oracle environment parameter. | Changes the locale of the messages returned by the Oracle driver. |
+| AdminTablespace | Table space where the system tables are stored. | |
+| IndexTablespace | Table space where all the indexes of the platform are stored. | |
+| RuntimeTablespace | Table space where the tables created in the Development Environment are stored. | |
+| LogTablespace | Table space where the logging tables are stored. | |
 
 ## Session Database Configuration
 
@@ -186,12 +186,12 @@ The attribute `ProviderKey` needs to match the `ProviderKey` value set in the Pl
 
 The following are the configurations that do not depend on the database management system:
 
-|Key|Value|Description|
-|---|-----|-----------|
-|SessionUser|Name of the owner of the OutSystems session metamodel tables.||
-|SessionPassword*|Password of the owner of the OutSystems session metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
-|SessionAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
-|DeleteExpiredSessionsAvoidLockRowCount|Numeric value.<br/>**Internal**, do not customize.| |
+| Key | Value | Description |
+| --- | ----- | ----------- |
+| SessionUser | Name of the owner of the OutSystems session metamodel tables. | |
+| SessionPassword* | Password of the owner of the OutSystems session metamodel tables. | Configuration Tool will read the clear text password and save an encrypted version. |
+| SessionAdvancedSettings | Settings in ADO.NET format to be appended to the connection string for OutSystems services. | Allows you to use a specific connection string for the OutSystems applications. |
+| DeleteExpiredSessionsAvoidLockRowCount | Numeric value.<br/>**Internal**, do not customize. | |
 
 (*) Ignored for systems configured with SQL Server as the platform database, when using Windows Authentication.
 
@@ -263,7 +263,7 @@ The following XML element defines the configurations in the Server Configuration
 The following are the available configurations:
 
 | Key | Value | Description |
-|-----|-------|-------------|
+| ----- | ------- | ------------- |
 | ApplicationServerPort | **Internal**, do not customize. | The default port is 80. |
 | ApplicationServerSecurePort | **Internal**, do not customize. | The default port is 443. |
 | MaxConcurrentTimers | Numeric value. | Maximum number of Timers (asynchronous jobs) that can be executed at the same time in each Front-End Server. |

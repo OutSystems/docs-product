@@ -30,13 +30,13 @@ Applies only to Traditional Web Apps.
 
 ## CSS Selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
-| .accordion-item | .accordion-item.is--open |  When AccordionItem is Open  |
-| .accordion-item | accordion-item-content.is--expanded |  When AccordionItem is Open  |
-| .accordion-item | .accordion-item.is--closed |  When AccordionItem is Closed  |
-| .accordion-item | accordion-item-content.is--collapsed |  When AccordionItem is Closed  |
-| .accordion-item | .accordion-item.is--disabled |  When IsDisabled parameter is True  |
+| .accordion-item | .accordion-item.is--open | When AccordionItem is Open |
+| .accordion-item | accordion-item-content.is--expanded | When AccordionItem is Open |
+| .accordion-item | .accordion-item.is--closed | When AccordionItem is Closed |
+| .accordion-item | accordion-item-content.is--collapsed | When AccordionItem is Closed |
+| .accordion-item | .accordion-item.is--disabled | When IsDisabled parameter is True |
 
 ## Advanced Use Case
 

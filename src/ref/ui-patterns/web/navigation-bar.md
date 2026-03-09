@@ -30,17 +30,17 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .navigation-bar |  .is--sticky|  Defines if the navigationBar position is fixed or not  |
-| .navigation-bar-item | .is--active |  Defines if the current navigationBarItem is active  |
-| .navigation-bar-item | .is--open |  Defines if the current navigationBarItem is open  |
-| .navigation-bar-item | .is--closed |  Defines if the current navigationBarItem is closed  |
-| .navigation-bar-item-content | .is--active |  Defines if the current navigationBarSubItem is active  |
-| .navigation-bar-item-content | .is--open |  Defines if the current navigationBarSubItem is open  |
-| .navigation-bar-item-content | .is--closed |  Defines if the current navigationBarSubItem is closed  |
-| .navigation-bar-item-content | .is--expanded |  Defines if the current navigationBarSubItem is expanded  |
-| .navigation-bar-item-content | .is--collapsed |  Defines if the current navigationBarSubItem is collapsed  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .navigation-bar | .is--sticky | Defines if the navigationBar position is fixed or not |
+| .navigation-bar-item | .is--active | Defines if the current navigationBarItem is active |
+| .navigation-bar-item | .is--open | Defines if the current navigationBarItem is open |
+| .navigation-bar-item | .is--closed | Defines if the current navigationBarItem is closed |
+| .navigation-bar-item-content | .is--active | Defines if the current navigationBarSubItem is active |
+| .navigation-bar-item-content | .is--open | Defines if the current navigationBarSubItem is open |
+| .navigation-bar-item-content | .is--closed | Defines if the current navigationBarSubItem is closed |
+| .navigation-bar-item-content | .is--expanded | Defines if the current navigationBarSubItem is expanded |
+| .navigation-bar-item-content | .is--collapsed | Defines if the current navigationBarSubItem is collapsed |
 
 ## Advanced use case
 

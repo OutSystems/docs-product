@@ -30,16 +30,16 @@ Applies only to Traditional Web Apps.
 
 ## Events
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnSelect | Event will be triggered when a time is selected returning it.  |  False  |
+| **Event Name** | **Description** | **Mandatory** |
+| --- | --- | --- |
+| OnSelect | Event will be triggered when a time is selected returning it. | False |
 
 ## CSS Selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .time-option | .time-option-selected |  When the time option is selected  |
-| .time-option | .time-picker .dropdown-content-list .time-option[disabled="disabled"] |  When the time option is disabled  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .time-option | .time-option-selected | When the time option is selected |
+| .time-option | .time-picker .dropdown-content-list .time-option[disabled="disabled"] | When the time option is disabled |
 
 ## Advanced Use Case
 

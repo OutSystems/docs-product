@@ -171,23 +171,23 @@ When adding multiple domains, insert 1 domain per line without any separators af
 
 </div>
 
-| Directive     | Reason        | Required values  |
-| :------------ |:--------------|:----------------|
-| Base-uri      |The domains which can be used as base URL for applications screens.<br/>The following source expressions are allowed: `self`.|`self`|
-| Child-src     |The domains which applications are allowed to embed framed.<br/>The following source expressions are allowed: `self` and `*`.|`self`<br/>`gap:`|
-| Connect-src   |The domains from which applications are allowed to load resources using script interfaces.<br/>The following source expressions are allowed: `self` and `*`.|`self`|
-| Default-src   |The domains from which applications are allowed to load resources, by default.<br/>Any resource type dedicated directive (like object-src or img-src) that's not defined will inherit this configuration.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/>`gap:`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`<br/>`'unsafe-eval'` <br/>**Note**: For Reactive web apps, if these values are set to **False** in the [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration) Forge component, the directives are removed and are **not** added at runtime. For more information, refer to [breaking changes](https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#introduced-in-platform-server-11.28.0).|
-| Font-src      |The domains from which applications are allowed to load fonts.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/>`data:`|
-| Img-src       |The domains from which applications are allowed to load images.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/>`data:`<br/><br/>Values added at runtime:<br/>`blob:`|
-| Media-src     |The domains from which applications are allowed to load media files.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|-|
-| Object-src    |The domains from which applications are allowed to load objects (for `<object>`, `<embed>` and `<applet>` elements).<br/>The following source expressions are allowed: `self` and `*`.|`-`|
-| Plugin-types  |The valid plugins that the user browser may invoke|-|
-| Script-src    |The domains from which applications are allowed to load scripts.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`<br/>`'unsafe-eval'`<br/>**Note**: For Reactive web apps, if these values are set to **False** in the [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration) Forge component, the directives are removed and are **not** added at runtime. For more information, refer to [breaking changes](https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#introduced-in-platform-server-11.28.0).|
-| Style-src     |The domains from which applications are allowed to load styles.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`|
-| Frame-ancestors|The domains which are allowed to embed applications in a frame.<br/>The following source expressions are allowed: `self` and `*`.|`self`<br/>`gap:`|
+| Directive | Reason | Required values |
+| :------------ | :-------------- | :---------------- |
+| Base-uri | The domains which can be used as base URL for applications screens.<br/>The following source expressions are allowed: `self`. | `self` |
+| Child-src | The domains which applications are allowed to embed framed.<br/>The following source expressions are allowed: `self` and `*`. | `self`<br/>`gap:` |
+| Connect-src | The domains from which applications are allowed to load resources using script interfaces.<br/>The following source expressions are allowed: `self` and `*`. | `self` |
+| Default-src | The domains from which applications are allowed to load resources, by default.<br/>Any resource type dedicated directive (like object-src or img-src) that's not defined will inherit this configuration.<br/>The following source expressions are allowed: `self`, `data:` and `*`. | `self`<br/>`gap:`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`<br/>`'unsafe-eval'` <br/>**Note**: For Reactive web apps, if these values are set to **False** in the [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration) Forge component, the directives are removed and are **not** added at runtime. For more information, refer to [breaking changes](https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#introduced-in-platform-server-11.28.0). |
+| Font-src | The domains from which applications are allowed to load fonts.<br/>The following source expressions are allowed: `self`, `data:` and `*`. | `self`<br/>`data:` |
+| Img-src | The domains from which applications are allowed to load images.<br/>The following source expressions are allowed: `self`, `data:` and `*`. | `self`<br/>`data:`<br/><br/>Values added at runtime:<br/>`blob:` |
+| Media-src | The domains from which applications are allowed to load media files.<br/>The following source expressions are allowed: `self`, `data:` and `*`. | - |
+| Object-src | The domains from which applications are allowed to load objects (for `<object>`, `<embed>` and `<applet>` elements).<br/>The following source expressions are allowed: `self` and `*`. | `-` |
+| Plugin-types | The valid plugins that the user browser may invoke | - |
+| Script-src | The domains from which applications are allowed to load scripts.<br/>The following source expressions are allowed: `self`, `data:` and `*`. | `self`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`<br/>`'unsafe-eval'`<br/>**Note**: For Reactive web apps, if these values are set to **False** in the [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration) Forge component, the directives are removed and are **not** added at runtime. For more information, refer to [breaking changes](https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#introduced-in-platform-server-11.28.0). |
+| Style-src | The domains from which applications are allowed to load styles.<br/>The following source expressions are allowed: `self`, `data:` and `*`. | `self`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'` |
+| Frame-ancestors | The domains which are allowed to embed applications in a frame.<br/>The following source expressions are allowed: `self` and `*`. | `self`<br/>`gap:` |
 | Frame-src | There's no dedicated field, but you can use the `Child-src` field to enter the values for the platform to generate the `Frame-src` directive. | `self` |
-| Report-to     |URI where content security violations will be reported.|`<internal>`|
-| Other directives|More directives to append to the Content Security Policy headers.|-|
+| Report-to | URI where content security violations will be reported. | `<internal>` |
+| Other directives | More directives to append to the Content Security Policy headers. | - |
 
 ## Content security policy and MABS { #mobile-apps }
 
@@ -201,13 +201,13 @@ The mobile apps generated with MABS 6 and higher require loading with `outsystem
 
 Here are some examples:
 
-| Before MABS 6           | After MABS 6                    |
+| Before MABS 6 | After MABS 6 |
 | :---------------------- | :------------------------------ |
-| `example.com`           | `https://example.com`           |
+| `example.com` | `https://example.com` |
 | `subdomain.example.com` | `https://subdomain.example.com` |
-| `*.example.com`         | `https://*.example.com`         |
-| `https://example.com`   | `https://example.com` (no change) |
-| `http://example.com`    | `http://example.com` (no change)  |
+| `*.example.com` | `https://*.example.com` |
+| `https://example.com` | `https://example.com` (no change) |
+| `http://example.com` | `http://example.com` (no change) |
 
 **Applies to mobile apps only**. If you configure CSP on the environment level in LifeTime, change the schema to `outsystems://` in the mobile apps CSP configuration only. This prevents side effects for Traditional Web Apps or Progressive Web Apps (PWAs).
 

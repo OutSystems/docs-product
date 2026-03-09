@@ -30,9 +30,9 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .animated-label | .animated-label-inline |  When IsInline Input Parameter is true |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .animated-label | .animated-label-inline | When IsInline Input Parameter is true |
 
 ## Advanced use case
 

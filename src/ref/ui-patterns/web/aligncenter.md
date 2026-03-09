@@ -30,7 +30,7 @@ Applies only to Traditional Web Apps.
 
 ## CSS Selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
 | .center-align | .center-align.flex-direction-row | When Orientation parameter is Horizontal |
 | .center-align | .center-align.flex-direction-column | When Orientation parameter is Vertical |

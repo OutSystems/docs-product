@@ -30,10 +30,10 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
+| **Element** | **CSS Class** | **Description** |
 | --- | --- | --- |
-| .separator | .separator-horizontal |  When IsVertical parameter is False  |
-| .separator | .separator-vertical |  When IsVertical parameter is True  |
+| .separator | .separator-horizontal | When IsVertical parameter is False |
+| .separator | .separator-vertical | When IsVertical parameter is True |
 
 ## Advanced use case
 

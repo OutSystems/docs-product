@@ -23,7 +23,7 @@ topic:
 OutSystems uses the following HTTP status codes when working with exposed REST API methods:
 
 | Status Code | Reason Phrase | Description |
-| ---|---|--- |
+| --- | --- | --- |
 | 200 | OK | Success. |
 | 400 | Bad Request | Problem with the request. See the response body for more information. |
 | 401 | Unauthorized | Missing Authorization header when the method uses Basic authentication. |

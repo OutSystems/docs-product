@@ -30,12 +30,12 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .wizard |  .wizard.wizard-vertical|  When the wizard orientation is vertical  |
-| .wizard-item |  .wizard-item.active|  Defines the current active step  |
-| .wizard-item |  .wizard-item.past|  Defines the previous step  |
-| .wizard-item |  .wizard-item.next|  Defines the next step  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .wizard | .wizard.wizard-vertical | When the wizard orientation is vertical |
+| .wizard-item | .wizard-item.active | Defines the current active step |
+| .wizard-item | .wizard-item.past | Defines the previous step |
+| .wizard-item | .wizard-item.next | Defines the next step |
 
 ## Advanced use case
 

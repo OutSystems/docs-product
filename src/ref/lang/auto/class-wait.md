@@ -58,7 +58,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 ## Properties
 
 | Name | Description | Mandatory | Observations |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Description | Text that documents the element. | | Useful for documentation purposes.The maximum size of this property is 2000 characters. |
 | Label | Text displayed in the back-office when an instance of this Wait activity is executed. | | If not defined, the displayed text will be the Wait process activity name. |
 | Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes | |
@@ -71,7 +71,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 ## Runtime Properties
 
 | Name | Description | Read Only | Type |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | ClosedInstant | Date and time when the process activity instance was closed. | Yes | Date Time |
 | Expired | True if the process activity instance ended because of a timeout. | Yes | Boolean |
 | Skipped | True if the process activity instance ended because it was skipped. | Yes | Boolean |

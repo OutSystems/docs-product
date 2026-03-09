@@ -54,39 +54,39 @@ Although unclear, these logs contain an Hexadecimal value which is the `Reason` 
 
 A list of reasons for app shutdown in Android devices.
 
-| ExitOnUrl (Decimal)| Log (Hex) | Explanation                                                  |
+| ExitOnUrl (Decimal) | Log (Hex) | Explanation |
 | ------- | ------- | ------------------------------------------------------------------------- |
-| 00      | 00      | Device is rooted                                                          |
-| 01      | 01      | Application is modified or repackaged<br />**Note**: Removed from ExitOnUrl functionality from AppShield version 1.4.0 because it was not guaranteed to be triggered.|
-| 02      | 02      | Application is being run in an emulator<br />**Note**: Removed from ExitOnUrl functionality from AppShield version 1.4.0 because it was not guaranteed to be triggered.|
-| 03      | 03      | Java debugger attached to app                                             |
-| 04      | 04      | Untrusted keyboard detected                                               |
-| 05      | 05      | Untrusted screen reader detected                                          |
-| 06      | 06      | Native code hooks, possibly inserted by malicious app                     |
-| 08      | 08      | Shield could not read configuration file                                  |
-| 09      | 09      | Problem with Native Debugger Protection                                   |
-| 25      | 19      | Problem initializing Shield                                               |
-| 26      | 1a      | Developer Options enabled on device                                       |
-| 27      | 1b      | Untrusted Installer found on device                                       |
-| 32      | 20      | App received termination signal                                           |
-| 33      | 21      | Application crashed outside of Java-code, either native library or Shield |
-| 34      | 22      | Hooking frameworks detected                                               |
-| 35      | 23      | Native debugger prevention not possible on this device                    |
-| 50      | 32      | App started from a private space or work profile                          |
+| 00 | 00 | Device is rooted |
+| 01 | 01 | Application is modified or repackaged<br />**Note**: Removed from ExitOnUrl functionality from AppShield version 1.4.0 because it was not guaranteed to be triggered. |
+| 02 | 02 | Application is being run in an emulator<br />**Note**: Removed from ExitOnUrl functionality from AppShield version 1.4.0 because it was not guaranteed to be triggered. |
+| 03 | 03 | Java debugger attached to app |
+| 04 | 04 | Untrusted keyboard detected |
+| 05 | 05 | Untrusted screen reader detected |
+| 06 | 06 | Native code hooks, possibly inserted by malicious app |
+| 08 | 08 | Shield could not read configuration file |
+| 09 | 09 | Problem with Native Debugger Protection |
+| 25 | 19 | Problem initializing Shield |
+| 26 | 1a | Developer Options enabled on device |
+| 27 | 1b | Untrusted Installer found on device |
+| 32 | 20 | App received termination signal |
+| 33 | 21 | Application crashed outside of Java-code, either native library or Shield |
+| 34 | 22 | Hooking frameworks detected |
+| 35 | 23 | Native debugger prevention not possible on this device |
+| 50 | 32 | App started from a private space or work profile |
 
 ### iOS
 
 A list of reasons for app shutdown in iOS devices.
 
-| ExitOnUrl (Decimal)| Explanation           |
+| ExitOnUrl (Decimal) | Explanation |
 | ------- | ------------------------------------------------- |
-| 00      | Device is jailbroken/rooted                       |
-| 01      | Application is being debugged                     |
-| 02      | Application is modified or repackaged             |
-| 03      | A screenshot of the application was taken         |
-| 04      | An injected library was found in the process      |
-| 05      | A hooking framework was found in the process      |
-| 06      | A screen recording of the application was started |
-| 07      | iOS app running on macOS.         |
-| 08      | Running on emulator                               |
-| 09      | Running with Developer Mode enabled               |
+| 00 | Device is jailbroken/rooted |
+| 01 | Application is being debugged |
+| 02 | Application is modified or repackaged |
+| 03 | A screenshot of the application was taken |
+| 04 | An injected library was found in the process |
+| 05 | A hooking framework was found in the process |
+| 06 | A screen recording of the application was started |
+| 07 | iOS app running on macOS. |
+| 08 | Running on emulator |
+| 09 | Running with Developer Mode enabled |

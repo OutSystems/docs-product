@@ -30,8 +30,8 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
 | .toggle-button | .toggle-button-checked | Is the Class Selector to style the Toggle Button when the Boolean Variable is true |
 | .toggle-button | .toggle-button-disabled | Is the Class Selector to style the Toggle Button when is disabled |
 | .toggle-button | .toggle-button:after | Is the Pseudo Element Selector to style the circle of Toggle Button |

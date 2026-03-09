@@ -29,13 +29,13 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .stacked-icon  | .fa-2x |  Change the icon size, to 2em  |
-| .stacked-icon  | .fa-3x |  Change the icon size, to 3em  |
-| .stacked-icon  | .fa-4x |  Change the icon size, to 4em  |
-| .stacked-icon  | .fa-5x |  Change the icon size, to 5em  |
-| .stacked-icon  | .fa-lg |  Change the icon size, to 1.33333333em  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .stacked-icon | .fa-2x | Change the icon size, to 2em |
+| .stacked-icon | .fa-3x | Change the icon size, to 3em |
+| .stacked-icon | .fa-4x | Change the icon size, to 4em |
+| .stacked-icon | .fa-5x | Change the icon size, to 5em |
+| .stacked-icon | .fa-lg | Change the icon size, to 1.33333333em |
 
 ## Advanced use case
 

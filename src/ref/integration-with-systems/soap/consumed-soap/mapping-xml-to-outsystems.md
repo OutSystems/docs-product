@@ -20,31 +20,31 @@ coverage-type:
 
 When consuming SOAP Web Services in your module, OutSystems maps the XML Data Types into OutSystems Data Types as follows:
 
-| XML Data Types  |  OutSystems Data Types |
-| ---|--- |
-| anySimpleType <br/>anyAtomicType <br/>anyType <br/>anyURI  |  Text <br/>Text <br/>Text <br/>Text |
-| bool <br/>boolean <br/>base64Binary <br/>byte <br/>bytev  |  Boolean <br/>Boolean <br/>Binary <br/>Integer <br/>Integer |
-| char  |  Integer |
-| choice  |  Static Entity + Structure (check Notes) |
-| date <br/>dateTime <br/>dateTimeStamp <br/>decimal <br/>double <br/>duration <br/>dayTimeDuration <br/>yearMonthDuration  |  Date <br/>Date Time <br/>Date Time <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text |
-| ENTITY <br/>ENTITIES <br/>enum  |  Text <br/>Text <br/>Static Entity (check Notes) |
-| float  |  Text |
-| gDay <br/>gMonth <br/>gMonthDay <br/>gYearMonth <br/>gYear  |  Text <br/>Text <br/>Text <br/>Text <br/>Text |
-| hexBinary  |  Binary |
-| ID <br/>IDREF <br/>IDREFS <br/>int <br/>integer  |  Text <br/>Text <br/>Text <br/>Integer <br/>Text |
-| language <br/>long  |  Text <br/>Long Integer |
-| Microsoft Datasets  |  Text |
-| Name <br/>NCName <br/>negativeInteger <br/>NMTOKEN <br/>NMTOKENS <br/>nonNegativeInteger <br/>nonPositiveInteger <br/>normalizedString <br/>NOTATION  |  Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text |
-| Object  |  Text |
-| positiveInteger  |  Text |
-| QName  |  Text |
-| short <br/>signed byte <br/>string  |  Integer <br/>Integer <br/>Text |
-| time <br/>token  |  Time <br/>Text |
-| unsignedByte <br/>unsignedInt <br/>unsignedLong <br/>unsignedShort  |  Integer <br/>Long Integer <br/>Decimal <br/>Integer |
-| XML Element  |  Text |
-| XSD Arrays  |  List <br/>In OutSystems, a List is a sequence of elements of any data type. Therefore, an XSD array is mapped into a list of records which elements are a structure that represents those elements in the XSD array. If you have an XSD array of integers, the mapping in Service Studio is a List of structures with one attribute of type Integer. |
-| XSD Complex data types  |  Record |
-| (Other types)  |  Text |
+| XML Data Types | OutSystems Data Types |
+| --- | --- |
+| anySimpleType <br/>anyAtomicType <br/>anyType <br/>anyURI | Text <br/>Text <br/>Text <br/>Text |
+| bool <br/>boolean <br/>base64Binary <br/>byte <br/>bytev | Boolean <br/>Boolean <br/>Binary <br/>Integer <br/>Integer |
+| char | Integer |
+| choice | Static Entity + Structure (check Notes) |
+| date <br/>dateTime <br/>dateTimeStamp <br/>decimal <br/>double <br/>duration <br/>dayTimeDuration <br/>yearMonthDuration | Date <br/>Date Time <br/>Date Time <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text |
+| ENTITY <br/>ENTITIES <br/>enum | Text <br/>Text <br/>Static Entity (check Notes) |
+| float | Text |
+| gDay <br/>gMonth <br/>gMonthDay <br/>gYearMonth <br/>gYear | Text <br/>Text <br/>Text <br/>Text <br/>Text |
+| hexBinary | Binary |
+| ID <br/>IDREF <br/>IDREFS <br/>int <br/>integer | Text <br/>Text <br/>Text <br/>Integer <br/>Text |
+| language <br/>long | Text <br/>Long Integer |
+| Microsoft Datasets | Text |
+| Name <br/>NCName <br/>negativeInteger <br/>NMTOKEN <br/>NMTOKENS <br/>nonNegativeInteger <br/>nonPositiveInteger <br/>normalizedString <br/>NOTATION | Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text |
+| Object | Text |
+| positiveInteger | Text |
+| QName | Text |
+| short <br/>signed byte <br/>string | Integer <br/>Integer <br/>Text |
+| time <br/>token | Time <br/>Text |
+| unsignedByte <br/>unsignedInt <br/>unsignedLong <br/>unsignedShort | Integer <br/>Long Integer <br/>Decimal <br/>Integer |
+| XML Element | Text |
+| XSD Arrays | List <br/>In OutSystems, a List is a sequence of elements of any data type. Therefore, an XSD array is mapped into a list of records which elements are a structure that represents those elements in the XSD array. If you have an XSD array of integers, the mapping in Service Studio is a List of structures with one attribute of type Integer. |
+| XSD Complex data types | Record |
+| (Other types) | Text |
 
 ## Notes
 

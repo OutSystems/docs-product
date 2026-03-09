@@ -55,7 +55,7 @@ To open the directory that contains the resources, simply right-click in the Res
 In the Resources tree, the following operations are available to handle your resources:
 
 | Operation | Description |
-| :--------:|:----------- |
+| :--------: | :----------- |
 | ![Icon for the operation to include a resource in the extension in Integration Studio](images/resource-include-icon.png "Include Resource Icon") Include in Extension | Adds the resource to the extension.<br/>For more information, see [Add a Resource](<../../integration-with-systems/integration-studio/managing-extensions/resource-define.md>). |
 | ![Icon for the operation to exclude a resource from the extension in Integration Studio](images/resource-exclude-icon.png "Exclude Resource Icon") Exclude from Extension | Removes the resource from the extension. The next time the extension is saved, this resource file is not packed in the XIF file. |
 | Open | Opens the item you selected on the Resources tree.<br/>If a folder is selected, then Windows Explorer is launched in the corresponding folder.<br/>If a file is selected, the default program associated with that file type is launched and the file is opened. |

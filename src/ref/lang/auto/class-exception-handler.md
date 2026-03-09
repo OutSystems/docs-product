@@ -59,7 +59,7 @@ In Reactive Web and Mobile apps, the **Abort Transaction** property isn't availa
 ## Properties
 
 | Name | Description | Mandatory | Default value | Observations |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes | | |
 | Exception | Type of exception to handle. | Yes | There is a call hierarchy for exceptions that determines the error handler behavior. For more info see [Exception Handling Mechanism](../../../building-apps/handling-exceptions/handling-mechanism.md). | |
 | Abort Transaction | Set to Yes to abort the transaction and rollback changes. | Yes | Yes | This property is only available in Traditional Web Apps or in a server-side context (for all apps). |

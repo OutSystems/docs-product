@@ -30,16 +30,16 @@ Applies only to Traditional Web Apps.
 
 ## Events
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnClick | Event triggered when the user clicks the message container.  |  False  |
+| **Event Name** | **Description** | **Mandatory** |
+| --- | --- | --- |
+| OnClick | Event triggered when the user clicks the message container. | False |
 
 ## CSS Selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .chat-message-actions |  is--hidden|  When the server action ToggleChatActions hides the content  |
-| .chat-message-actions |  is--visible|  When the server action ToggleChatActions shows the content  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .chat-message-actions | is--hidden | When the server action ToggleChatActions hides the content |
+| .chat-message-actions | is--visible | When the server action ToggleChatActions shows the content |
 
 ## Advanced use case
 

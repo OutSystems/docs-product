@@ -47,12 +47,12 @@ You can choose the size of the virtual machines during the setup, in the solutio
 
 The main features of the proposed sizes are:
 
-| |  **F4s_v2** (default) |
-| ---|--- |
-| vCPUs  |  4 |
-| Memory (GB)  |  8 |
-| Temp Storage (GB)  |  32 |
-| Max IOPS  |  8000 |
+| | **F4s_v2** (default) |
+| --- | --- |
+| vCPUs | 4 |
+| Memory (GB) | 8 |
+| Temp Storage (GB) | 32 |
+| Max IOPS | 8000 |
   
 Check the [official Azure documentation](<https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes>) for detailed information on the different virtual machine sizes.
 

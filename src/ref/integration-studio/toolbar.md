@@ -21,7 +21,7 @@ coverage-type:
 The Toolbar is the area of your [workspace](<workspace.md>) where you can execute the following operations:
 
 | Button | Description |
-| :-----:|:----------- |
+| :-----: | :----------- |
 | ![Icon for creating a new extension in Integration Studio](images/file-new-icon.png "New Button") New | Creates a [new extension](<../../integration-with-systems/integration-studio/extension-life-cycle/extension-create.md>). |
 | ![Icon for opening an existing extension in Integration Studio](images/file-open-icon.png "Open Button") Open | Opens an extension already created in Integration Studio. Simply select the XIF (Extension and Integration Framework) file and all the elements defined for the extension are available in the [Extension](<multi-tree-navigator.md>) and [Resources](<resources-tree.md>) tree. |
 | ![Icon for saving the current extension in Integration Studio](images/file-save-icon.png "Save Button") Save | Saves the extension in a XIF file. |

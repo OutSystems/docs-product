@@ -30,10 +30,10 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| Active Header |  .tabs-header-item.active |  It's active header (represented as the one with a colored underline)  |
-| Active Tab  |  .tabs-content-item.active  |  It's active content  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| Active Header | .tabs-header-item.active | It's active header (represented as the one with a colored underline) |
+| Active Tab | .tabs-content-item.active | It's active content |
   
 ## Advanced
 

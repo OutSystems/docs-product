@@ -29,22 +29,22 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| .animate-wrapper | .is--visible |  When the animation will enter in the screen  |
-| .animate-wrapper | .is--hidden |  When the animation will leave in the screen |
-| .animate | .enter-bottom |  When the animation will enter in the screen from bottom |
-| .animate | .enter-fade |  When the animation will enter in the screen with fade |
-| .animate | .enter-left |  When the animation will enter in the screen from left |
-| .animate | .enter-right |  When the animation will enter in the screen from right |
-| .animate | .enter-scale |  When the animation will enter in the screen with scale |
-| .animate | .enter-top |  When the animation will enter in the screen from top |
-| .animate | .leave-bottom |  When the animation will leave the screen from bottom |
-| .animate | .leave-fade |  When the animation will leave the screen with fade |
-| .animate | .leave-left |  When the animation will leave the screen from left |
-| .animate | .leave-right |  When the animation will leave the screen from right |
-| .animate | .leave-scale |  When the animation will leave the screen with scale |
-| .animate | .leave-top |  When the animation will leave the screen from top |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .animate-wrapper | .is--visible | When the animation will enter in the screen |
+| .animate-wrapper | .is--hidden | When the animation will leave in the screen |
+| .animate | .enter-bottom | When the animation will enter in the screen from bottom |
+| .animate | .enter-fade | When the animation will enter in the screen with fade |
+| .animate | .enter-left | When the animation will enter in the screen from left |
+| .animate | .enter-right | When the animation will enter in the screen from right |
+| .animate | .enter-scale | When the animation will enter in the screen with scale |
+| .animate | .enter-top | When the animation will enter in the screen from top |
+| .animate | .leave-bottom | When the animation will leave the screen from bottom |
+| .animate | .leave-fade | When the animation will leave the screen with fade |
+| .animate | .leave-left | When the animation will leave the screen from left |
+| .animate | .leave-right | When the animation will leave the screen from right |
+| .animate | .leave-scale | When the animation will leave the screen with scale |
+| .animate | .leave-top | When the animation will leave the screen from top |
 | .animate | .animate-slow | The animation will reach the end in 1500ms |
 | .animate | .animate-fast | The animation will reach the end in 500ms |
 

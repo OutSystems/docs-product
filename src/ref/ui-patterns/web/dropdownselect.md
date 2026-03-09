@@ -30,9 +30,9 @@ Applies only to Traditional Web Apps.
 
 ## CSS selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|--- |
-| Dropdown |  .choices__list--dropdown.is-active |  Defines if the drop-down is closed or opened  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| Dropdown | .choices__list--dropdown.is-active | Defines if the drop-down is closed or opened |
 
 ## Advanced use case
 

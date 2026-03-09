@@ -33,8 +33,8 @@ Yields the negation of its numeric operand.
 The following are the data types allowed for the unary minus (\-) operator:
 
 | Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time |
-|---|---|---|---|---|---|---|---|
-| No | Yes | Yes | Yes | No | No | No | No  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| No | Yes | Yes | Yes | No | No | No | No |
   
 ### Arithmetic operators /, \-, \*
 
@@ -43,7 +43,7 @@ Perform common arithmetic operations.
 The following are the data types allowed for the arithmetic operators /, \-, \*:
 
 | /, \*, \- | Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time |
-| ---|---|---|---|---|---|---|---|--- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Text** | No | No | No | No | No | No | No | No |
 | **Long Integer** | No | Yes(a) | Yes(a) | Yes(a) | No | No | No | No |
 | **Integer** | No | Yes(a) | Yes(a) | Yes(a) | No | No | No | No |
@@ -62,7 +62,7 @@ Performs sum operation. When one of the operands is `Text`, the other operand is
 The following are the data types allowed for the arithmetic operator `+`:
 
 | \+ | Text | Long Integer | Integer | Decimal | Boolean | DateTime | Date | Time |
-| ---|---|---|---|---|---|---|---|--- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) |
 | **Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No |
 | **Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No |
@@ -97,7 +97,7 @@ Common comparison operations. When one of the operands is Text, the other operan
 The following are the data types allowed for comparison operators:
 
 | &lt;, &gt;, &lt;=, &gt;= | Text | Integer | Long Integer | Decimal | Boolean | Date Time | Date | Time | Email | Phone Number | Currency | Binary Data |
-| ---|---|---|---|---|---|---|---|---|---|---|---|--- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | No | No |
 | **Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | No | No | Yes(c) | No |
 | **Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | No | No | Yes(c) | No |
@@ -125,7 +125,7 @@ Performs equality operations. When one of operands is `Text`, the other operand 
 The following are the data types allowed for equality operators:
 
 | =, &lt;&gt; | Text | Integer | Long Integer | Decimal | Boolean | Date Time | Date | Time | Email | Phone Number | Currency | Binary Data | Entity / Structure / Record | Integer Identifier | Text Identifier |
-| ---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|--- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Text** | Yes | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | Yes(a) | No | No | No | No |
 | **Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | Yes* | Yes* | Yes* | No | No | No | No |
 | **Long Integer** | Yes(a) | Yes | Yes | Yes | No | No | No | No | Yes* | Yes* | Yes* | No | No | No | No |
@@ -151,7 +151,7 @@ The following are the data types allowed for equality operators:
 ***Equality between different types:**
 
 | Type of Operand 1 | Type of Operand 2 | Result |
-| ---|---|--- |
+| --- | --- | --- |
 | Date | Date Time | Converts Date Time operand type to Date type by dropping the time component. |
 | Date Time | Date | Converts Date operand type to Date Time type by adding the time component (#00:00:00#). |
 | Time or Date Time | Time or Date Time | Converts Time operand type to Date Time type by adding the date component (#01-01-1900#). |
@@ -176,7 +176,7 @@ Examples:
 The following are the data types allowed for LIKE operator:
 
 | LIKE | Text | Integer | Decimal | Boolean | DateTime | Date | Time |
-| ---|---|---|---|---|---|---|--- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | **Text** | Yes | (a) | (a) | (a) | (a) | (a) | (a) |
 | **Integer** | (a) | No | No | No | No | No | No |
 | **Decimal** | (a) | No | No | No | No | No | No |
@@ -210,7 +210,7 @@ You can use an expression inside the indexer operator as long as it returns an i
 The next table presents the precedence of the operators, highest precedence first:
 
 | Operator | Description |
-| ---|--- |
+| --- | --- |
 | \- | Numeric negation |
 | NOT | Logical negation |
 | /, \* | Multiplicative operators |

@@ -253,7 +253,7 @@ Unit tests are actually OutSystems code. This matches other development platform
 The same language structures are available when building tests, including table records. When validating combinations between multiple variables, you may create a list of records with the data for the different test cases, and provide that list to a table record widget. By placing a BDD scenario in the row, multiple test cases are actually executed with minimal effort. Take a look at the next example from the Test Framework unit tests, where the “scenario” is placed inside a “table records”.
 
 | Below is the code; notice the scenario inside a Table Records <br/>![Screenshot showing a table records widget with multiple BDD scenarios for executing various test cases.](images/unit04.png "Table Records with BDD Scenarios") | Below is the result of the execution; notice that many scenarios were executed <br/>![Screenshot showing the results of executing multiple BDD scenarios within a table records widget.](images/unit04_result.png "BDD Scenarios Execution Results") |
-| ---|--- |
+| --- | --- |
   
 ### Adding Unit Tests to Test Framework
 
@@ -400,7 +400,7 @@ API tests may be created using the BDD Framework in a very similar way to unit t
 Here is the **Given**, **When** and **Then** actions for the Case Create Test, using the REST API, to see how similar this approach is to unit testing:
 
 | ![Screenshot showing the Given action logic flow for a REST API test scenario.](images/creategivenrest.png "Given Action for REST API Test") | ![Screenshot showing the When action logic flow for a REST API test scenario.](images/createwhenrest.png "When Action for REST API Test") | ![Screenshot showing the Then action logic flow for a REST API test scenario.](images/createthenrest.png "Then Action for REST API Test") |
-| ---|---|--- |
+| --- | --- | --- |
   
 ## Test Framework Overview screen
 

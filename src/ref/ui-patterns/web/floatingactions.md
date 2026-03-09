@@ -28,15 +28,15 @@ Applies only to Traditional Web Apps.
 
 ## Events
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnToggle | Event fired after the floating actions are toggled |  False  |
+| **Event Name** | **Description** | **Mandatory** |
+| --- | --- | --- |
+| OnToggle | Event fired after the floating actions are toggled | False |
 
 ## CSS Selectors
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---|
-| .floating-actions |  .is--open|  Set when the Floating Actions Pattern is open  |
+| **Element** | **CSS Class** | **Description** |
+| --- | --- | --- |
+| .floating-actions | .is--open | Set when the Floating Actions Pattern is open |
 
 ## Advanced Use Case
 

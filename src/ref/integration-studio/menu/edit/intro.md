@@ -23,7 +23,7 @@ In the Edit menu, on the [menu bar](<../../workspace.md>), you can perform the c
 The Edit menu contains the following operations:
 
 | Menu Item | Description |
-| :--------:|:----------- |
+| :--------: | :----------- |
 | ![Icon representing the Undo operation in the Edit menu](images/file-undo-icon.png "Undo Operation Icon") Undo | Reverse the last operation you executed in the current screen contents. Each click reverses one more operation. |
 | ![Icon representing the Redo operation in the Edit menu](images/file-redo-icon.png "Redo Operation Icon") Redo | Reverse the action of the Undo. Each click reverse one more Undo operation. |
 | ![Icon representing the Cut operation in the Edit menu](images/file-cut-icon.png "Cut Operation Icon") Cut | Removes the selected element(s) or text and stores it in the Clipboard. |

@@ -25,10 +25,10 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Events
 
-|**Event** | **Output** |  **Description**|
-|---|---|---|
-|Initialized: Optional| RangeSliderId (Text)| Event triggered after the Ranger Slider is initialized. This event provides you with the element Id that can be used to call methods from the **RangeSliderAPI:OutSystems.OSUI.Patterns.RangeSliderAPI**. |
-|OnValueChange: Mandatory| Value (Decimal)| Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the Range Slider handler. You can use the SetRangeSliderChangeOnDragEnd to trigger the event only after the user releases it. |
+| **Event** | **Output** | **Description** |
+| --- | --- | --- |
+| Initialized: Optional | RangeSliderId (Text) | Event triggered after the Ranger Slider is initialized. This event provides you with the element Id that can be used to call methods from the **RangeSliderAPI:OutSystems.OSUI.Patterns.RangeSliderAPI**. |
+| OnValueChange: Mandatory | Value (Decimal) | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the Range Slider handler. You can use the SetRangeSliderChangeOnDragEnd to trigger the event only after the user releases it. |
   
 ## Structure
   
@@ -45,20 +45,20 @@ In the diagram below, gray denotes the classes added by OutSystems UI and green 
 
 ### Modifiers
 
-|**Modifier** | **Attribute** |  **Element**|
-|---|---|---|
-|IsVertical| .osui-range-slider–is-vertical| .osui-range-slider |
-|Orientation| .noUi-horizontal <p>.noUi-vertical </p> | .noUi-target|
-|Direction| .noUi-ltr <p>.noUi-rtl</p> | .noUi-target|
-|Size| --range-slider-size | .osui-range-slider|
-|Handler Size| --range-slider-handle-size | .osui-range-slider|
-|Slider Thickness| --range-slider-thickness| .osui-range-slider|
+| **Modifier** | **Attribute** | **Element** |
+| --- | --- | --- |
+| IsVertical | .osui-range-slider–is-vertical | .osui-range-slider |
+| Orientation | .noUi-horizontal <p>.noUi-vertical </p> | .noUi-target |
+| Direction | .noUi-ltr <p>.noUi-rtl</p> | .noUi-target |
+| Size | --range-slider-size | .osui-range-slider |
+| Handler Size | --range-slider-handle-size | .osui-range-slider |
+| Slider Thickness | --range-slider-thickness | .osui-range-slider |
 
 ## Client actions
 
-|**Client action** | **Description** | **Parameters**|
-|---|---|---|
-|SetRangeSliderChangeOnDragEnd| You can use this action on the **RangeSliderInitialize** event or on the screen's **OnReady** event. By using this action, the change event is only triggered when the user releases the slider. **Tip:** If you're refreshing a query based on the value of the slider, we recommend using this action.| WidgetId: string|
+| **Client action** | **Description** | **Parameters** |
+| --- | --- | --- |
+| SetRangeSliderChangeOnDragEnd | You can use this action on the **RangeSliderInitialize** event or on the screen's **OnReady** event. By using this action, the change event is only triggered when the user releases the slider. **Tip:** If you're refreshing a query based on the value of the slider, we recommend using this action. | WidgetId: string |
 
 ## API
 
@@ -66,16 +66,16 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 
 ### Methods
 
-|**Function**|**Description**|**Parameters**|
-|---|---|---|
-|ChangeProperty|Changes the Range Slider’s property.| <ul><li> rangeSliderId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul>|
-|Create|Creates a new Range Slider instance and adds it to the Range Slider Map.|<ul><li>rangeSliderId: string</li><li>configs: string</li></ul>|
-|Dispose|Destroys the Range Slider instance.|<ul><li> rangeSliderId: string </li></ul>|
-|GetAllRangeSliderItemsMap|Returns the map with all the Range Slider instances on the screen.|<ul><li>Returns array of Ids</li></ul>|
-|GetRangeSliderItemById|Get the Range Slider instance Id.|<ul><li>rangeSliderId: string</li></ul>|
-|Initialize|Initializes the pattern instance.|<ul><li> rangeSliderId: string </li></ul>|
-|RegisterProviderCallback|Function to register a provider callback.|<ul><li>rangeSliderId: string</li><li>eventName: string</li><li>callback: OSUIFramework.Callbacks.OSGeneric</li></ul>|
-|SetRangeIntervalChangeOnDragEnd|Function to change the Range Slider trigger to on DragEnd|<ul><li> rangeSliderId: string</li></ul>|
+| **Function** | **Description** | **Parameters** |
+| --- | --- | --- |
+| ChangeProperty | Changes the Range Slider’s property. | <ul><li> rangeSliderId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul> |
+| Create | Creates a new Range Slider instance and adds it to the Range Slider Map. | <ul><li>rangeSliderId: string</li><li>configs: string</li></ul> |
+| Dispose | Destroys the Range Slider instance. | <ul><li> rangeSliderId: string </li></ul> |
+| GetAllRangeSliderItemsMap | Returns the map with all the Range Slider instances on the screen. | <ul><li>Returns array of Ids</li></ul> |
+| GetRangeSliderItemById | Get the Range Slider instance Id. | <ul><li>rangeSliderId: string</li></ul> |
+| Initialize | Initializes the pattern instance. | <ul><li> rangeSliderId: string </li></ul> |
+| RegisterProviderCallback | Function to register a provider callback. | <ul><li>rangeSliderId: string</li><li>eventName: string</li><li>callback: OSUIFramework.Callbacks.OSGeneric</li></ul> |
+| SetRangeIntervalChangeOnDragEnd | Function to change the Range Slider trigger to on DragEnd | <ul><li> rangeSliderId: string</li></ul> |
 
 ## Advanced use cases
 

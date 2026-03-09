@@ -740,9 +740,9 @@
         - href: integration-with-systems/mobile-plugins/barcode/intro.md
         - href: integration-with-systems/mobile-plugins/calendar/intro.md
         - href: integration-with-systems/mobile-plugins/camera/intro.md
-        - href: integration-with-systems/mobile-plugins/common-plugin/intro.md
         - topics:  
-            - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
+            - href: integration-with-systems/mobile-plugins/camera/camera-ref.md        
+        - href: integration-with-systems/mobile-plugins/common-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/contacts/intro.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md
         - topics:

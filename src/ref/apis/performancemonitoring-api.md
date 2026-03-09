@@ -29,12 +29,12 @@ The server only stores data for the last two days. Learn [how application perfor
 ## Summary
 
 | Methods | Description |
-| ---|--- |
+| --- | --- |
 | [GET RequestEvents](#get-requestevents) | Returns a list of request events, filtered by the event names and time interval you specify in the parameters. |
 | [POST RequestEvents](#post-requestevents) | Logs a request event. Based on that data you can analyze the user experience of your applications. |
 
 | Resources | Description |
-| ---|--- |
+| --- | --- |
 | [RequestEvent](#requestevent) | Represents an event of a web request, sent to an OutSystems application. |
 
 ## Methods
@@ -195,16 +195,16 @@ http://outsystemscloud.com/PerformanceProbe/rest/PerformanceMonitoringAPI/Reques
 
 ### RequestEvent
 
-|Property|Description|
-|--- |--- |
-|Instant|Date and time when the event occurred.|
-|Request Key|The GUID that identifies the request.|
-|Request Event Name|The name of the event. This name can be whatever you want, but is limited to 50 characters. For more information, see the [More about Request Event Name](#more-about-request-event-name) section. |
-|Module Key|Unique identifier of the module where the event occurred.|
-|Module Name|Name of the module where the event occurred.|
-|Application Key|Unique identifier of the application where the event occurred.|
-|Application Name|Name of the application where the event occurred.|
-|Request Event Details|A JSON object with the details about the event. Each built-in request event has its own details:<br/>• [WebScreenClientExecuted](#webscreenclientexecuted-details)<br/>• [WebScreenServerExecuted](#webscreenserverexecuted-details)<br/>• [QueryExecuted](#queryexecuted-details)<br/>• [ConsumedIntegrationExecuted](#consumedintegrationexecuted-details)<br/>• [ExtensionExecuted](#extensionexecuted-details)<br/>• [ScreenServer](#screenserver-details)<br/>• [TimerExecuted](#timerexecuted-details)|
+| Property | Description |
+| --- | --- |
+| Instant | Date and time when the event occurred. |
+| Request Key | The GUID that identifies the request. |
+| Request Event Name | The name of the event. This name can be whatever you want, but is limited to 50 characters. For more information, see the [More about Request Event Name](#more-about-request-event-name) section. |
+| Module Key | Unique identifier of the module where the event occurred. |
+| Module Name | Name of the module where the event occurred. |
+| Application Key | Unique identifier of the application where the event occurred. |
+| Application Name | Name of the application where the event occurred. |
+| Request Event Details | A JSON object with the details about the event. Each built-in request event has its own details:<br/>• [WebScreenClientExecuted](#webscreenclientexecuted-details)<br/>• [WebScreenServerExecuted](#webscreenserverexecuted-details)<br/>• [QueryExecuted](#queryexecuted-details)<br/>• [ConsumedIntegrationExecuted](#consumedintegrationexecuted-details)<br/>• [ExtensionExecuted](#extensionexecuted-details)<br/>• [ScreenServer](#screenserver-details)<br/>• [TimerExecuted](#timerexecuted-details) |
 
 #### More about Request Event Name
 
@@ -215,7 +215,7 @@ Any events with a Request Event Name different from the built-in events, created
 This event occurs whenever the user's browser finishes processing a request (initial page load, any form submission, or any AJAX request). The event's properties are the following:
 
 | Property | Meaning | Description |
-| ---|---|--- |
+| --- | --- | --- |
 | AK | Action Key | The key of the action that was handling the request on the server. |
 | AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
 | EK | Environment Key | The unique key identifying the environment the user was accessing. |
@@ -249,7 +249,7 @@ This event occurs whenever the user's browser finishes processing a request (ini
 This event occurs whenever the server finishes handling a request. The event's properties are the following:
 
 | Property | Meaning | Description |
-| ---|---|--- |
+| --- | --- | --- |
 | TK | Tenant Key | A unique key identifying the tenant. |
 | TN | Tenant Name | The name of the tenant. |
 | EK | Environment Key | The unique key identifying the environment the user was accessing. |
@@ -280,7 +280,7 @@ This event occurs whenever the server finishes handling a request. The event's p
 This event occurs when the platform detects a [slow query](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 | Property | Meaning | Description |
-| ---|---|--- |
+| --- | --- | --- |
 | TK | Tenant Key | A unique key identifying the tenant. |
 | TN | Tenant Name | The name of the tenant. |
 | AK | Action Key | The key of the action that was handling the request. |
@@ -303,7 +303,7 @@ This event occurs when the platform detects a [slow query](../../monitor-and-tro
 This event occurs when the platform detects a [slow consumed integration](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 | Property | Meaning | Description |
-| ---|---|--- |
+| --- | --- | --- |
 | TK | Tenant Key | A unique key identifying the tenant. |
 | TN | Tenant Name | The name of the tenant. |
 | EK | Environment Key | The unique key identifying the environment the user was accessing. |
@@ -328,7 +328,7 @@ This event occurs when the platform detects a [slow consumed integration](../../
 This event occurs when the platform detects a [slow extension action](../../monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 | Property | Meaning | Description |
-| ---|---|--- |
+| --- | --- | --- |
 | TK | Tenant Key | A unique key identifying the tenant. |
 | TN | Tenant Name | The name of the tenant. |
 | EK | Environment Key | The unique key identifying the environment the user was accessing. |
@@ -358,29 +358,29 @@ This event is disabled by default. This means that the event is not generated. E
 
 This event occurs whenever the server finishes handling a request. This is identical to WebScreenServerExecuted without its client counterpart. The event's properties are the following:
 
-| Property | Meaning                               | Description                                                  |
+| Property | Meaning | Description |
 | -------- | ------------------------------------- | ------------------------------------------------------------ |
-| TK       | Tenant Key                            | A unique key identifying the tenant.                         |
-| TN       | Tenant Name                           | The name of the tenant.                                      |
-| EK       | Environment Key                       | The unique key identifying the environment the user was accessing. |
-| EN       | Environment Name                      | The name of the environment the user was accessing.          |
-| FN       | Front-end Name                        | The name of the front-end server that handled the request.   |
-| EPN      | EndPoint Name                         | The name of the web screen that was handling the request.    |
-| EPK      | EndPoint Key                          | The key of the web screen that was handling the request.     |
-| AN       | Action Name                           | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
-| AK       | Action Key                            | The key of the action that was handling the request.         |
-| D        | Duration                              | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, this metric doesn't include the time spent waiting in the queue. |
-| TQT      | Total Query Time                      | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). |
-| TQE      | Total Query Executions                | The total number of executed queries (Aggregates and Advanced Queries). |
-| TET      | Total Extension Time                  | The total time spent, in milliseconds, calling actions provided by extensions. |
-| TEE      | Total Extension Executions            | The total number of calls to actions provided by extensions. |
-| TCIT     | Total Consumed Integration Time       | The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP). |
-| TCIE     | Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP). |
-| TSAT     | Total Consumed Service Action Time    | The total time spent, in milliseconds, calling service actions. |
-| TSAE     | Total Consumed Service Action Calls   | The total number of calls of service actions.                |
-| IP       | Client IP                             | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). |
-| UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the event attributes don't include the User Id. |
-| EC       | Number of errors                      | The number of errors that occurred during the request.        |
+| TK | Tenant Key | A unique key identifying the tenant. |
+| TN | Tenant Name | The name of the tenant. |
+| EK | Environment Key | The unique key identifying the environment the user was accessing. |
+| EN | Environment Name | The name of the environment the user was accessing. |
+| FN | Front-end Name | The name of the front-end server that handled the request. |
+| EPN | EndPoint Name | The name of the web screen that was handling the request. |
+| EPK | EndPoint Key | The key of the web screen that was handling the request. |
+| AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
+| AK | Action Key | The key of the action that was handling the request. |
+| D | Duration | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, this metric doesn't include the time spent waiting in the queue. |
+| TQT | Total Query Time | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). |
+| TQE | Total Query Executions | The total number of executed queries (Aggregates and Advanced Queries). |
+| TET | Total Extension Time | The total time spent, in milliseconds, calling actions provided by extensions. |
+| TEE | Total Extension Executions | The total number of calls to actions provided by extensions. |
+| TCIT | Total Consumed Integration Time | The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP). |
+| TCIE | Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP). |
+| TSAT | Total Consumed Service Action Time | The total time spent, in milliseconds, calling service actions. |
+| TSAE | Total Consumed Service Action Calls | The total number of calls of service actions. |
+| IP | Client IP | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). |
+| UID | User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the event attributes don't include the User Id. |
+| EC | Number of errors | The number of errors that occurred during the request. |
 
 #### Request event details for TimerExecuted event {#timerexecuted-details}
 
@@ -388,26 +388,26 @@ This event is disabled by default. This means that the event is not generated. E
 
 This event occurs whenever the server finishes handling a timer. The event's properties are the following:
 
-| Property | Meaning                               | Description                                                  |
+| Property | Meaning | Description |
 | -------- | ------------------------------------- | ------------------------------------------------------------ |
-| TK       | Tenant Key                            | A unique key identifying the tenant.                         |
-| TN       | Tenant Name                           | The name of the tenant.                                      |
-| EK       | Environment Key                       | The unique key identifying the environment the user was accessing. |
-| EN       | Environment Name                      | The name of the environment the user was accessing.          |
-| FN       | Front-end Name                        | The name of the front-end server that handled the request.   |
-| EPN      | EndPoint Name                         | The name of the web screen that was handling the request.    |
-| EPK      | EndPoint Key                          | The key of the web screen that was handling the request.     |
-| AN       | Action Name                           | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
-| AK       | Action Key                            | The key of the action that was handling the request.         |
-| D        | Duration                              | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, this metric doesn't include the time spent waiting in the queue. |
-| TQT      | Total Query Time                      | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). |
-| TQE      | Total Query Executions                | The total number of executed queries (Aggregates and Advanced Queries). |
-| TET      | Total Extension Time                  | The total time spent, in milliseconds, calling actions provided by extensions. |
-| TEE      | Total Extension Executions            | The total number of calls to actions provided by extensions. |
-| TCIT     | Total Consumed Integration Time       | The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP). |
-| TCIE     | Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP). |
-| TSAT     | Total Consumed Service Action Time    | The total time spent, in milliseconds, calling service actions. |
-| TSAE     | Total Consumed Service Action Calls   | The total number of calls of service actions.                |
-| IP       | Client IP                             | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). For TimerExecuted, this reflects the IP address of the Scheduler Service that triggered the timer. |
-| UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the User Id isn't included in the event attributes. |
-| EC       | Number of errors                      | The number of errors that occurred during the request.        |
+| TK | Tenant Key | A unique key identifying the tenant. |
+| TN | Tenant Name | The name of the tenant. |
+| EK | Environment Key | The unique key identifying the environment the user was accessing. |
+| EN | Environment Name | The name of the environment the user was accessing. |
+| FN | Front-end Name | The name of the front-end server that handled the request. |
+| EPN | EndPoint Name | The name of the web screen that was handling the request. |
+| EPK | EndPoint Key | The key of the web screen that was handling the request. |
+| AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
+| AK | Action Key | The key of the action that was handling the request. |
+| D | Duration | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, this metric doesn't include the time spent waiting in the queue. |
+| TQT | Total Query Time | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). |
+| TQE | Total Query Executions | The total number of executed queries (Aggregates and Advanced Queries). |
+| TET | Total Extension Time | The total time spent, in milliseconds, calling actions provided by extensions. |
+| TEE | Total Extension Executions | The total number of calls to actions provided by extensions. |
+| TCIT | Total Consumed Integration Time | The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP). |
+| TCIE | Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP). |
+| TSAT | Total Consumed Service Action Time | The total time spent, in milliseconds, calling service actions. |
+| TSAE | Total Consumed Service Action Calls | The total number of calls of service actions. |
+| IP | Client IP | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). For TimerExecuted, this reflects the IP address of the Scheduler Service that triggered the timer. |
+| UID | User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the User Id isn't included in the event attributes. |
+| EC | Number of errors | The number of errors that occurred during the request. |

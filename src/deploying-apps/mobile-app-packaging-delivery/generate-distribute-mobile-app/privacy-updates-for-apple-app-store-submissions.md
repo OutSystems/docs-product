@@ -80,8 +80,8 @@ When you use a File plugin, you must include a privacy manifest in your OutSyste
 
 The following table contains the required key and recommended reason value for this plugin:
 
-|Key | Recommended reason value | Recommended reason |
-|----------|-------------|------|
+| Key | Recommended reason value | Recommended reason |
+| ---------- | ------------- | ------ |
 | [NSPrivacyAccessedAPICategoryFileTimestamp](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393) | C617.1 | Declare this reason to access the timestamps, size, or other metadata of files inside the app container, app group container, or the app’s CloudKit container. |
 | | 3B52.1 | Declare this reason to access the timestamps, size, or other metadata of files or directories that the user specifically granted access to, such as using a document picker view controller. |
 | [NSPrivacyAccessedAPICategoryDiskSpace](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278397) | E174.1 | Declare this reason to check whether there is sufficient disk space to write files, or to check whether the disk space is low so that the app can delete files when the disk space is low. The app must behave differently based on disk space in a way that is observable to users. Information accessed for this reason, or any derived information, may not be sent off-device. There is an exception that allows the app to avoid downloading files from a server when disk space is insufficient. |

@@ -21,8 +21,8 @@ coverage-type:
 OutSystems maps its data types to .NET at runtime. You can check the
 mapping done in the following table:
 
-| OutSystems data types  |  .NET data types  |
-| ---|---|
+| OutSystems data types | .NET data types |
+| --- | --- |
 | Text | System.String |
 | Integer | System.Int32 |
 | Long Integer | System.Int64 |

@@ -35,26 +35,26 @@ The chatbot component comes with the [chatbot configuration wizard](configuratio
 
 These are the settings available in the properties of the Blocks that come with the chatbot component from Forge.
 
-| Property   |      Location      |  Description |
-|----------|:-------------:|------|
-| DirectLineSecret |  Components\Chatbot, Components\ChatbotAdvanced | An Azure parameter. Lets your chatbot communicate with the Azure chatbot service. No default value. **Mandatory value.**|
-| BotName |  Components\Chatbot | The name that shows on the chatbot tab. The default value is `Chatbot`. |
-| BotImageURL |  Components\Chatbot | The image that shows next to the bot replies in the chat window. No default value. |
-| UserImageURL |  Components\Chatbot | The image that shows next to messages the user enters in the chat window. No default value. |
-| WelcomeMessage |  Components\Chatbot | The message that shows when the bot starts running in the screen. No default value. |
-| IsInline |  Components\Chatbot | If set to True, the chatbot window shows as an inline element. If set to False, the chatbot window shows as a modal window that the user can close by clicking the close button. The default value is False.|
-| StartsClosed |  Components\Chatbot | If set to True, the chatbot window shows as an inline element. If set to False, the chatbot window shows as a modal window that the user can close by clicking the close button.|
+| Property | Location | Description |
+| ---------- | :-------------: | ------ |
+| DirectLineSecret | Components\Chatbot, Components\ChatbotAdvanced | An Azure parameter. Lets your chatbot communicate with the Azure chatbot service. No default value. **Mandatory value.** |
+| BotName | Components\Chatbot | The name that shows on the chatbot tab. The default value is `Chatbot`. |
+| BotImageURL | Components\Chatbot | The image that shows next to the bot replies in the chat window. No default value. |
+| UserImageURL | Components\Chatbot | The image that shows next to messages the user enters in the chat window. No default value. |
+| WelcomeMessage | Components\Chatbot | The message that shows when the bot starts running in the screen. No default value. |
+| IsInline | Components\Chatbot | If set to True, the chatbot window shows as an inline element. If set to False, the chatbot window shows as a modal window that the user can close by clicking the close button. The default value is False. |
+| StartsClosed | Components\Chatbot | If set to True, the chatbot window shows as an inline element. If set to False, the chatbot window shows as a modal window that the user can close by clicking the close button. |
 
 ## Azure bot parameters
 
 These are some of the settings from Azure that you need for implementing a chatbot in OutSystems. You first need to [create a bot service in Azure](guide-azure-services.md#create-bot-service) to get these parameters.
 
-| Property   |      Location      |  Description |
-|----------|:-------------:|------|
-| DirectLineSecret |  Web App Bot | **Azure home page** > **your chatbot** > **Channels** > **Direct Line** > click **Edit**. You can use any of the keys in **Default Site** > **Secret keys**. |
-| Messaging endpoint |  Web App Bot | **Azure home page** > **your chatbot** > **Settings** > **Messaging endpoint**. |
-| MicrosoftClientId |  Web App Bot | **Azure home page** > **your chatbot** > **Configuration** > **Application Settings** > **MicrosoftAppId**. <br/><br/> If you download the source code from Azure, this value is available from the **settings.json** file. |
-| MicrosoftClientSecret |  Web App Bot | **Azure home page** > **your chatbot** > **Configuration** > **Application Settings** > **MicrosoftAppPassword**. <br/><br/> If you download the source code from Azure, this value is available from the **settings.json** file.|
+| Property | Location | Description |
+| ---------- | :-------------: | ------ |
+| DirectLineSecret | Web App Bot | **Azure home page** > **your chatbot** > **Channels** > **Direct Line** > click **Edit**. You can use any of the keys in **Default Site** > **Secret keys**. |
+| Messaging endpoint | Web App Bot | **Azure home page** > **your chatbot** > **Settings** > **Messaging endpoint**. |
+| MicrosoftClientId | Web App Bot | **Azure home page** > **your chatbot** > **Configuration** > **Application Settings** > **MicrosoftAppId**. <br/><br/> If you download the source code from Azure, this value is available from the **settings.json** file. |
+| MicrosoftClientSecret | Web App Bot | **Azure home page** > **your chatbot** > **Configuration** > **Application Settings** > **MicrosoftAppPassword**. <br/><br/> If you download the source code from Azure, this value is available from the **settings.json** file. |
 
 ## Data structures in OutSystems Bot Framework Connector
 

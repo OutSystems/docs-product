@@ -45,7 +45,7 @@ The same isolation levels apply for transactions done in the Platform database a
 The following table shows the isolation level OutSystems uses in the different databases:
 
 | | Read Uncommitted | Read Committed |
-|---|:---:|:---:|
+| --- | :---: | :---: |
 | SQL Server | X | |
 | Azure SQL | X | |
 | MySQL | X | |

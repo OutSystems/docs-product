@@ -41,7 +41,7 @@ When deleting multi-tenant Entities, or Static Entities with translations, the 9
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Attribute_DropColumn](<#Attribute_DropColumn>) | Physically deletes the database table column associated with the specified entity attribute.  If the entity attribute still exists in a module’s meta model, the delete operation will not be performed.<br/>The logged user needs to have the 'Administrator' built-in role. |
 | [Attribute_ListDeleted](<#Attribute_ListDeleted>) | Returns a list of attributes, with their information, that have been deleted from module’s meta model but are still physically present in the database.<br/>The logged user needs to have the 'Administrator' built-in role. |
 | [Entity_DropTable](<#Entity_DropTable>) | Physically deletes the database table associated with the specified entity.  If the entity still exists in a module’s meta model, the delete operation will not be performed.<br/>The logged user needs to have the 'Administrator' built-in role. |
@@ -51,14 +51,14 @@ When deleting multi-tenant Entities, or Static Entities with translations, the 9
 | [ModuleVersion_ListOldest](<#ModuleVersion_ListOldest>) | Returns a list of module versions that are stored in the database and that were published before the specified date and time. This action does not return the module version that is currently published or module versions used in tagged versions of applications or solutions.<br/>The logged user needs to have 'Change & Deploy' permissions. |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [AttributeInfo](<#Structure_AttributeInfo>) | Information about a specific entity attribute. |
 | [EntityInfo](<#Structure_EntityInfo>) | Information about a specific entity. |
 | [ModuleInfo](<#Structure_ModuleInfo>) | Information about a specific module. |
 | [ModuleVersionInfo](<#Structure_ModuleVersionInfo>) | Information about a specific module version. |
 
 | Static Entity | Description |
-| ---|--- |
+| --- | --- |
 | [ModuleType](<#StaticEntity_ModuleType>) | Types of modules. |
 
 ## Actions

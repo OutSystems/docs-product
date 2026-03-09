@@ -31,7 +31,7 @@ To use this API reference the **IncludeJavascript_API extension** using the Refe
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Application_AddExclusionRule](<#Application_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified application. |
 | [Application_RemoveExclusionRule](<#Application_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified application. |
 | [Espace_AddExclusionRule](<#Espace_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified module. |
@@ -44,7 +44,7 @@ To use this API reference the **IncludeJavascript_API extension** using the Refe
 | [Script_SetInactive](<#Script_SetInactive>) | Deactivates a certain script. The script is not included in Web Screens. |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [ExcludedApplications](<#Structure_ExcludedApplications>) | Represents an exclusion rule for a specific application. Exclusion rules specify applications in which scripts are not to be inserted. |
 | [ExcludedEspaces](<#Structure_ExcludedEspaces>) | Represents an exclusion rule for a specific module. Exclusion rules specify modules in which scripts are not to be inserted. |
 | [JavaScript](<#Structure_JavaScript>) | Represents a script to be included in the HTML of Web Screens. |

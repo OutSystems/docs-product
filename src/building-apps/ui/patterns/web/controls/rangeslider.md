@@ -97,7 +97,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | MinValue (Decimal): Mandatory | Slider's minimum value. <p>Examples <ul><li>1 - The slider's minimum value is 1.</li> </ul></p> |
 | MaxValue (Decimal): Mandatory | Slider's maximum value. <p>Examples <ul><li>100 - The slider's maximum value is 100.</li></ul></p> |
 | InitialValue (Decimal): Mandatory | Value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default value when the page is rendered is 10.</li></ul></p> |

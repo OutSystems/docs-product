@@ -36,7 +36,7 @@ To customize requests of consumed SOAP web services that were created in OutSyst
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [ClearWebReferenceHeaders](<#ClearWebReferenceHeaders>) | Use this action after a call to SetWebReferenceSoapHeaders to make a new Web Reference request without SOAP headers.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios. |
 | [GetWebReferenceSoapHeaders](<#GetWebReferenceSoapHeaders>) | Obtain the SOAP headers sent in the response of a Web Reference call. Use this action after invoking a Web Reference action.<br/>NOTE: since this action receives the Web Reference name as a parameter, if two Web References have the same name both are affected by this action.<br/>This only occurs in Consumer/Producer scenarios. |
 | [GetWebServiceSoapHeaders](<#GetWebServiceSoapHeaders>) | Gets the SOAP headers sent to the Web Service. Use this action inside the Web Service logic. |
@@ -47,7 +47,7 @@ To customize requests of consumed SOAP web services that were created in OutSyst
 | [SetWebServiceSoapHeaders](<#SetWebServiceSoapHeaders>) | Sets the SOAP headers to be sent by the Web Service in the response. Use this action inside the Web Service Logic. |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [SOAPHeader](<#Structure_SOAPHeader>) | |
 
 ## Actions

@@ -22,14 +22,14 @@ Provides actions to manipulate HTTP Requests and Responses.
 ## Summary
 
 | Action | Description | App type |
-| ---|---|--- |
+| --- | --- | --- |
 | [AddAttributeToHtmlTag](<#AddAttributeToHtmlTag>) | Adds an attribute to the outermost HTML tag of the document (e.g. xmlns, manifest...).<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. |
 | [AddFaviconTag](<#AddFaviconTag>) | Allows setting the favicon for the current page. You can use &quot;omlresources&quot; to add an icon file to your oml.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. |
-| [AddHeader](<#AddHeader>) | Adds a header to the current HTTP response.<br/>This method has no effect in Ajax Requests. |Applies to all app types. |
+| [AddHeader](<#AddHeader>) | Adds a header to the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to all app types. |
 | [AddJavaScriptTag](<#AddJavaScriptTag>) | Adds a `<script>` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. |
-| [AddLinkTag](<#AddLinkTag>) | Adds a `<link>` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.| Applies to Traditional Web apps only. |
+| [AddLinkTag](<#AddLinkTag>) | Adds a `<link>` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. |
 | [AddMetaHttpEquivTag](<#AddMetaHttpEquivTag>) | Adds a `<meta>` tag with the http-equiv attribute to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. |
-| [AddMetaTag](<#AddMetaTag>) | Adds a `<meta>` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.| Applies to Traditional Web apps only. |
+| [AddMetaTag](<#AddMetaTag>) | Adds a `<meta>` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. |
 | [AddPostProcessingFilter](<#AddPostProcessingFilter>) | This method has no effect in Ajax Requests.<br/>Not implemented in Java. | Applies to Traditional Web apps only. |
 | [AddSessionToURL](<#AddSessionToURL>) | Adds the current session identifier to a specified URL. | Applies to Traditional Web apps only. |
 | [AddStyleSheetTag](<#AddStyleSheetTag>) | Adds a `<link rel="stylesheet">` tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. |
@@ -40,7 +40,7 @@ Provides actions to manipulate HTTP Requests and Responses.
 | [GetPageExtension](<#GetPageExtension>) | Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;. | Applies to Traditional Web apps only. |
 | [GetPageName](<#GetPageName>) | Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur. | Applies to Traditional Web apps only. |
 | [GetRawURL](<#GetRawURL>) | Returns the current relative requested URL, without the http://[server] part and without the session identifier.<br/>If SEO rules are being applied, the URL displayed in the user's browser is returned, and not the final URL after the rule is applied. | Applies to all app types. |
-| [GetReferrerURL](<#GetReferrerURL>) | Gets the URL of the page that referred the user to the current page (HTTP referer header). Returns an empty string if no referer is available. |Applies to all app types. |
+| [GetReferrerURL](<#GetReferrerURL>) | Gets the URL of the page that referred the user to the current page (HTTP referer header). Returns an empty string if no referer is available. | Applies to all app types. |
 | [GetRequest_AddArgument](<#GetRequest_AddArgument>) | Builds the arguments string for an HTTP request with method GET, adding a new parameter to the arguments string. | Applies to all app types. |
 | [GetRequest_Submit](<#GetRequest_Submit>) | Submit an HTTP GET request given the GET arguments and the URL. Returns the response content as a string and as binary data. | Applies to all app types. |
 | [GetRequestContent](<#GetRequestContent>) | Gets the content of the current HTTP request. | Applies to all app types. |
@@ -50,12 +50,12 @@ Provides actions to manipulate HTTP Requests and Responses.
 | [GetRunningESpaceJQueryVersion](<#GetRunningESpaceJQueryVersion>) | Returns the jQueryVersion of the Running ESpace. | Applies to Traditional Web apps only. |
 | [GetSessionId](<#GetSessionId>) | Gets the session identifier of the current HTTP request. | Applies to Traditional Web apps only. |
 | [GetURL](<#GetURL>) | Returns the current absolute requested URL, without the session identifier.<br/>If SEO rules are being applied, the final URL after the rule is applied is returned, and not the URL displayed in the user's browser. | Applies to all app types. |
-| [GetURLMethod](<#GetURLMethod>) | Gets the request method (GET or POST) of the current requested URL. |Applies to all app types. |
+| [GetURLMethod](<#GetURLMethod>) | Gets the request method (GET or POST) of the current requested URL. | Applies to all app types. |
 | [GetURLWithSession](<#GetURLWithSession>) | Gets the current requested URL (with the session identifier). | Applies to Traditional Web apps only. |
 | [GetUserAgent](<#GetUserAgent>) | Gets the user agent of the current HTTP request. | Applies to all app types. |
 | [GetUserLanguages](<#GetUserLanguages>) | Gets a sorted record list of client language preferences. | Applies to all app types. |
 | [GetValueFromInputId](<#GetValueFromInputId>) | Gets the URL encoded value from an input form. | Applies to Traditional Web apps only. |
-| [GetValueFromInputIdDecoded](<#GetValueFromInputIdDecoded>) | Gets the decoded value from an input form.  | Applies to Traditional Web apps only. |
+| [GetValueFromInputIdDecoded](<#GetValueFromInputIdDecoded>) | Gets the decoded value from an input form. | Applies to Traditional Web apps only. |
 | [IsAjaxRequest](<#IsAjaxRequest>) | Returns true if this is running in an AJAX request.<br/>Not Implemented in Java. | Applies to Traditional Web apps only. |
 | [IsSecureConnection](<#IsSecureConnection>) | Tells if the current request is being made via HTTPS. | Applies to all app types. |
 | [MakeAbsoluteURL](<#MakeAbsoluteURL>) | Makes an absolute URL based on the URL provided. | Applies to all app types. |
@@ -63,7 +63,7 @@ Provides actions to manipulate HTTP Requests and Responses.
 | [PostRequest_AddBinaryArgument](<#PostRequest_AddBinaryArgument>) | Builds arguments list for an HTTP request, adding a new binary parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example). | Applies to all app types. |
 | [PostRequest_Submit](<#PostRequest_Submit>) | Submit an HTTP POST request given the POST arguments and the URL. Returns the response content as a string and as binary data. | Applies to all app types. |
 | [ReplaceURLDomain](<#ReplaceURLDomain>) | Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.<br/>If the URL starts with the protocol (`http:` or `https:`), the host is removed from the URL and the remaining part is concatenated with the domain of the current request. Otherwise, the URL is considered as relative and it's concatenated with the one from the current request. | Applies to all app types. |
-| [RunJavaScript](<#RunJavaScript>) | Runs the provided JavaScript code in the browser.| Applies to Traditional Web apps only. |
+| [RunJavaScript](<#RunJavaScript>) | Runs the provided JavaScript code in the browser. | Applies to Traditional Web apps only. |
 | [SetBaseTag](<#SetBaseTag>) | Sets the base tag of the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. |
 | [SetCookie](<#SetCookie>) | Sets a cookie. | Applies to all app types. |
 | [SetLastModified](<#SetLastModified>) | Sets the Last Modified Date HTTP header of the current response. | Applies to all app types. |
@@ -74,7 +74,7 @@ Provides actions to manipulate HTTP Requests and Responses.
 | [ValidateRequestSource](<#ValidateRequestSource>) | Validates if the income request is coming from the local machine and/or from the list of TrustedAddresses, ignoring<br/>Trusted Proxies configurations, so that by default it only allows real local requests that are not being handled by a proxy/loadbalancer. | Applies to all app types. |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [RequestFile](<#Structure_RequestFile>) | Represents a file submitted in an HTTP request, containing file metadata and binary content. |
 | [UserLanguage](<#Structure_UserLanguage>) | Represents a client language preference with its priority value. |
 

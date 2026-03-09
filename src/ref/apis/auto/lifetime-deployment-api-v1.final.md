@@ -31,13 +31,13 @@ Follow the guidelines presented in [REST API Authentication](<../lifetime-deploy
 ## Summary
 
 | API | Base URL | Security |
-| ---|---|--- |
+| --- | --- | --- |
 | [v1](<#v1>) | /lifetimeapi/rest/v1 | SSL/TLS |
 
 ## v1
 
 | API Method | Description |
-| ---|--- |
+| --- | --- |
 | [GET /applications/](<#Applications_List>) | Returns a list of applications that exist in the infrastructure. |
 | [GET /applications/{ApplicationKey}/](<#Applications_Get>) | Returns the details of a given application. |
 | [GET /applications/{ApplicationKey}/versions/](<#Applications_Versions_List>) | Returns a list of versions of a given application. |

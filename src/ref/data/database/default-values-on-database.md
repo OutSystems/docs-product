@@ -20,8 +20,8 @@ coverage-type:
 The following table represents the default values of the OutSystems data types, and the respective values stored in the database.
 If an [Entity Attribute](<../../lang/auto/class-entity-attribute.md>) does not have a default value defined, the following default values will be used:
 
-| Data Type  |  OutSystems  |  SQL Server  |  Oracle  |  MySQL |
-| ---|---|---|---|--- |
+| Data Type | OutSystems | SQL Server | Oracle | MySQL |
+| --- | --- | --- | --- | --- |
 | Text | "" (empty string) | "" (empty string) | " " (single space) | "" (empty string) |
 | Integer | 0 | 0 | 0 | 0 |
 | Long Integer | 0 | 0 | 0 | 0 |

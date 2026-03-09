@@ -26,7 +26,7 @@ To use this API, first reference the **BPT_API** extension by using the **Manage
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Activity_Discard](<#Activity_Discard>) | Discards an Activity and the execution of the current Process flow stops, that is, none of the following activities in the flow is executed.<br/>Remarks:<br/>This action commits the current transaction. |
 | [Activity_IsValidId](<#Activity_IsValidId>) | Checks whether an Activity Identifier is valid for a Kind of activity. |
 | [HumanActivity_AssignToUser](<#HumanActivity_AssignToUser>) | Assigns a Human Activity to a User and sets the activity status to Ready. The human activity is only shown in that user's Taskbox.<br/>Remarks:<br/>This action commits the current transaction. |

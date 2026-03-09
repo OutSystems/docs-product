@@ -23,7 +23,7 @@ coverage-type:
 The following table represents how OutSystems data types are mapped to the data types of the database being used.
 
 | OutSystems | SQL Server / SQL Azure | Oracle | Obs. |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | Text | nvarchar(&lt;length&gt;) if the length is less than or equal to 2000, NVarchar(max) otherwise. | VARCHAR2(&lt;length&gt;), if the length is less than or equal to 2000, CLOB otherwise. | |
 | Integer | int If an attribute with this type is set to auto number, the IDENTITY attribute is added. | NUMBER(10) If an attribute with this type is set to auto number, a sequence is added. | |
 | Long Integer | bigint If an attribute with this type is set to auto number, the IDENTITY attribute is added. | NUMBER(20) If an attribute with this type is set to auto number, a sequence is added. | |

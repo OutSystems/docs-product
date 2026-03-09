@@ -29,7 +29,7 @@ The PlatformPasswordUtils API provides actions for validating and securely stori
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [GenerateSaltedMD5Hash](<#GenerateSaltedMD5Hash>) | Salts the password with a fixed number and hashes it using the MD5 hash algorithm. |
 | [GenerateSaltedSHA512Hash](<#GenerateSaltedSHA512Hash>) | Salts the password with a 32 bytes random number and hashes it using the SHA512 hash algorithm. |
 | [ValidatePassword](<#ValidatePassword>) | Validates a password against the expected salted password hash. |

@@ -26,7 +26,7 @@ OutSystems uses Highcharts 12.4.0 to generate the charts, and you should consult
 ## Summary
 
 | Widget | Description |
-| ---|--- |
+| --- | --- |
 | [AreaChart](<#AreaChart>) | Area charts illustrate the contribution of values to a total over time. |
 | [BarChart](<#BarChart>) | Bar charts compare multiple values using horizontal bars.<br/>In this chart, the X-axis runs vertically and the Y-axis runs horizontally. |
 | [ColumnChart](<#ColumnChart>) | Column charts compare multiple values using vertical bars. |
@@ -34,7 +34,7 @@ OutSystems uses Highcharts 12.4.0 to generate the charts, and you should consult
 | [PieChart](<#PieChart>) | Pie charts illustrate the proportions of values. |
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [AdvancedFormat_Init](<#AdvancedFormat_Init>) | Initializes an AdvancedFormat record with the values passed as arguments. The record is returned by the action. |
 | [ChartFormat_Init](<#ChartFormat_Init>) | Initializes a ChartFormat record with the values passed as arguments. The record is returned by the action. |
 | [DataPoint_GetClicked](<#DataPoint_GetClicked>) | Returns the data point that was clicked on the chart.<br/>Execute this action in the On Click action of a chart. |
@@ -44,7 +44,7 @@ OutSystems uses Highcharts 12.4.0 to generate the charts, and you should consult
 | [YAxisFormat_Init](<#YAxisFormat_Init>) | Initializes a YAxisFormat record with the values passed as arguments. The record is returned by the action. |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [AdvancedDataPointFormat](<#Structure_AdvancedDataPointFormat>) | Information to format a data point using Highcharts JSON. |
 | [AdvancedDataSeriesFormat](<#Structure_AdvancedDataSeriesFormat>) | Information to format a data series using Highcharts JSON. |
 | [AdvancedFormat](<#Structure_AdvancedFormat>) | Information to format chart elements using Highcharts JSON. |
@@ -54,7 +54,7 @@ OutSystems uses Highcharts 12.4.0 to generate the charts, and you should consult
 | [YAxisFormat](<#Structure_YAxisFormat>) | Information to format the Y-axis on the chart. |
 
 | Static Entity | Description |
-| ---|--- |
+| --- | --- |
 | [LegendPosition](<#StaticEntity_LegendPosition>) | The position where the legend is displayed on charts. |
 | [StackingType](<#StaticEntity_StackingType>) | The way to plot multiple data series on Area, Bar, or Column charts:<br/>- ‘NoStacking’: plot data series side by side to compare them;<br/>- ‘Stacked’: plot data series stacked to show their contribution to a total;<br/>- ‘Stacked100Percent’: plot data series stacked to show their percentage in a total. |
 | [XAxisValuesType](<#StaticEntity_XAxisValuesType>) | The data type of labels displayed on the X-axis to format them.<br/>Using ‘Auto’ means the type is inferred from the label of the first data point. |

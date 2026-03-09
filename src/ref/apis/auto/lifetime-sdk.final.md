@@ -33,13 +33,13 @@ To learn more on how to develop your LifeTime plug-in, access the `http://<LifeT
 ## Summary
 
 | Widget | Description |
-| ---|--- |
+| --- | --- |
 | [Internal_Layout_LifeTime](<#Internal_Layout_LifeTime>) | The LifeTime layout. |
 | [Internal_Layout_Popup](<#Internal_Layout_Popup>) | The Popup Layout to be used in a LifeTime plugin. Pressing the popup buttons triggers the OnNotify action containing a LayoutPopupButtonClicked identifier. |
 | [Layout_LifeTimeSDK](<#Layout_LifeTimeSDK>) | The Web Block to be used as the base layout for a LifeTime plugin. The layout allows you to easily create screens with the look and feel of LifeTime, since it contains LifeTime header and footer.<br/><br/>The layout also contains a stamp for you to customize with the developer or company name, when you register the plugin. |
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Application_Get](<#Application_Get>) | Returns the information of an application in an environment.<br/>If the environment is not specified, information of the application across all infrastructure is returned. |
 | [Application_List](<#Application_List>) | Returns a list of the applications in the specified environment that are visible within LifeTime, with their information, such as name, description, url. If no environment is specified, information of all visible applications across all environments is returned. |
 | [ApplicationVersion_Get](<#ApplicationVersion_Get>) | Returns information of an application on a specified date. |
@@ -62,7 +62,7 @@ To learn more on how to develop your LifeTime plug-in, access the `http://<LifeT
 | [SetLoginRedirectURL](<#SetLoginRedirectURL>) | |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [ApplicationInfo](<#Structure_ApplicationInfo>) | Application details and environment specific information where the application is running. |
 | [ApplicationVersionInfo](<#Structure_ApplicationVersionInfo>) | Information of a specific version of an application, and the versions of its modules. |
 | [DeploymentInfo](<#Structure_DeploymentInfo>) | Deployment information with the operations executed. |
@@ -77,7 +77,7 @@ To learn more on how to develop your LifeTime plug-in, access the `http://<LifeT
 | [ModuleVersionInfo](<#Structure_ModuleVersionInfo>) | Information about a module version. |
 
 | Static Entity | Description |
-| ---|--- |
+| --- | --- |
 | [ApplicationPermissionLevel](<#StaticEntity_ApplicationPermissionLevel>) | Permission level that a user has over an application. |
 | [DeploymentMessageType](<#StaticEntity_DeploymentMessageType>) | The type of a deployment message. |
 | [DeploymentOperationType](<#StaticEntity_DeploymentOperationType>) | The type of a deployment operation. |

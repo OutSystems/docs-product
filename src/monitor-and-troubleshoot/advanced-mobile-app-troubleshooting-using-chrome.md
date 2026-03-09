@@ -178,7 +178,7 @@ The explanation about the highlighted sections is in the table below. Please not
 ### JavaScript files roles
 
 | File | Description |
-| ---|--- |
+| --- | --- |
 | **Module files** | |
 | `<ModuleName>.controller.js` | Global client actions of the `<ModuleName>` module. |
 | `<ModuleName>.entities.js` | SQL code to manipulate the local entities of the `<ModuleName>` module. |

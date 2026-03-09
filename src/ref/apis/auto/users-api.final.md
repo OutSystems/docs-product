@@ -27,12 +27,12 @@ To use this API, use the **Manage Dependencies** window in Service Studio to add
 ## Summary
 
 | Widget | Description |
-| ---|--- |
+| --- | --- |
 | [ChangePassword](<#ChangePassword>) | Allows changing the user password. |
 | [EditMyInfo](<#EditMyInfo>) | |
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [EncryptPassword](<#EncryptPassword>) | Returns the encrypted password for a specific username and password. This is the value kept in the Password attribute of the User system entity. |
 | [GetEffectiveUserProviderEspaceId](<#GetEffectiveUserProviderEspaceId>) | Returns the module/eSpace identifier of the effective user provider. Normally it returns the Users eSpaceId, in upgrade scenarios it returns the EnterpriseManager eSpaceId. |
 | [Group_CreateNew](<#Group_CreateNew>) | Create a new system group. Requires the UserManager role to be invoked. |
@@ -61,16 +61,16 @@ To use this API, use the **Manage Dependencies** window in Service Studio to add
 | [User_Update](<#User_Update>) | Updates a specific user. |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [LoginAttemptPublic](<#Structure_LoginAttemptPublic>) | Represents the Login attempt record structure that is exposed |
 
 | Static Entity | Description |
-| ---|--- |
+| --- | --- |
 | [LoginAttemptResult](<#StaticEntity_LoginAttemptResult>) | The alternative values that may appear in the LoginAttempt record Result column. |
 | [MenuItem](<#StaticEntity_MenuItem>) | Menu item to be used in menu web block parameters. |
 
 | Role | Description |
-| ---|--- |
+| --- | --- |
 | UserManager | |
 
 ## Widgets

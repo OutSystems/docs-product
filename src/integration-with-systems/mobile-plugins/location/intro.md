@@ -96,12 +96,12 @@ The app with the Location Plugin can run on many Android or iOS devices, with di
 
 Here is the list of actions you can use to handle the errors. Use these actions with the **If** nodes to check for errors and control how the app works.
 
-| Variable    | Action              | Description                                                                    |
+| Variable | Action | Description |
 | ----------- | ------------------- | ------------------------------------------------------------------------------ |
-| IsAvailable | CheckLocationPlugin | True if the Location Plugin is available in the app.                           |
-| Success     | GetLocation         | True if there aren't errors while getting the device position.                 |
-| Success     | WatchPosition       | True if there aren't errors while receiving position updates in real time.          |
-| Success     | ClearWatch          | True if there aren't errors while canceling position updates in real time. |
+| IsAvailable | CheckLocationPlugin | True if the Location Plugin is available in the app. |
+| Success | GetLocation | True if there aren't errors while getting the device position. |
+| Success | WatchPosition | True if there aren't errors while receiving position updates in real time. |
+| Success | ClearWatch | True if there aren't errors while canceling position updates in real time. |
 
 ![Flowchart demonstrating how to handle errors when using the Location Plugin in Service Studio](images/handling-errors-ss.png "Handling Errors")
 

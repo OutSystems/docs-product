@@ -131,17 +131,17 @@ The following list shows which barcode formats the plugin can read.
 
 Here is the list of parameters you can use in the plugin actions.
 
-| Action                   | Description                                   |
+| Action | Description |
 | ------------------------ | --------------------------------------------- |
-| **ScanInstructions**    | Displays the scanning instructions. |
-| **CameraDirection**    | Select the front or back camera as default when triggering a new scan action. |
-| **ScanOrientation**    | Allows you to set the Scan UI to Adaptive, which detects your device's orientation, Landscape, or Portrait mode. |
-| **ScanButton**    | If set to True, enables a scan button on the Scan UI. Pressing the button triggers the scan action instead of scanning automatically when framing the code. |
-| **ScanButtonText**    | Defines the text shown on the Scan button, when it is set to True. |
-| **ShowCameraSelection**    | **Only applies to PWA/Web**. If true, the scanner experience in PWA includes a UI for the end-user to switch between the device's cameras. |
-| **Hint**    | **Only applies to PWA/Web**. A code format of type `{Formats Identifier}`. If set, it only scans codes of the specified format. |
-| **ScannerFPS**    | **Only applies to PWA/Web**. A direct mapping to HTML5Qr-Code `fps`. This number represents the number of frames per second the scanner reads and thus scans a code. Values over (and including) 1000 are not recommended as they will break the app. |
-| **AndroidScanningLibrary**    | **Only applies to Android**. Defines which Android library to use when scanning - ML Kit or ZXing. |
+| **ScanInstructions** | Displays the scanning instructions. |
+| **CameraDirection** | Select the front or back camera as default when triggering a new scan action. |
+| **ScanOrientation** | Allows you to set the Scan UI to Adaptive, which detects your device's orientation, Landscape, or Portrait mode. |
+| **ScanButton** | If set to True, enables a scan button on the Scan UI. Pressing the button triggers the scan action instead of scanning automatically when framing the code. |
+| **ScanButtonText** | Defines the text shown on the Scan button, when it is set to True. |
+| **ShowCameraSelection** | **Only applies to PWA/Web**. If true, the scanner experience in PWA includes a UI for the end-user to switch between the device's cameras. |
+| **Hint** | **Only applies to PWA/Web**. A code format of type `{Formats Identifier}`. If set, it only scans codes of the specified format. |
+| **ScannerFPS** | **Only applies to PWA/Web**. A direct mapping to HTML5Qr-Code `fps`. This number represents the number of frames per second the scanner reads and thus scans a code. Values over (and including) 1000 are not recommended as they will break the app. |
+| **AndroidScanningLibrary** | **Only applies to Android**. Defines which Android library to use when scanning - ML Kit or ZXing. |
 
 The Barcode Plugin uses a Cordova plugin. For more information, refer to [cordova-outsystems-barcode](https://github.com/OutSystems/cordova-outsystems-barcode).
 

@@ -121,7 +121,7 @@ Instead of mapping from another list, you can add elements manually. Follow thes
 OutSystems provides the following runtime properties for lists:
 
 | Property | Type | Access type | Comment |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | Current | List element type | Read/write | Allows direct access to the current element. |
 | EOF | Boolean | Read only | Indicates whether the end of the list was exceeded. When you are iterating the last element, this property is still FALSE. |
 | BOF | Boolean | Read only | Indicates whether you are at the beginning of the list. When you are iterating the first element, this property is True. |
@@ -134,7 +134,7 @@ OutSystems provides the following runtime properties for lists:
 The following System Actions are available to manipulate a List:
 
 | System Action | Description |
-| ---|--- |
+| --- | --- |
 | [ListAll](<../../apis/auto/system-actions.final.md#ListAll>) | Determines if all the elements in the list satisfy the given condition. |
 | [ListAny](<../../apis/auto/system-actions.final.md#ListAny>) | Determines if any of the elements in the list satisfies the given condition. |
 | [ListAppend](<../../apis/auto/system-actions.final.md#ListAppend>) | Adds an element to the end of a list. |

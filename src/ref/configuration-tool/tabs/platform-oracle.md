@@ -32,8 +32,8 @@ This area contains general configurations for the Oracle database.
 | Naming Method | The method to connect to the Oracle database server. | `Service Name` |
 | Host | The hostname or IP address to the database server.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost` |
 | Port | The port on which the database service listens.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521` |
-| Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. |  |
-| TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. |  |
+| Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | |
+| TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. | |
 
 For advanced settings, click on the **Advanced Settings** link.
 
@@ -118,7 +118,7 @@ In this section you specify the login for the user that owns user tables.
 | Configuration | Description | Default value |
 | -------------- | ------------- | -------------- |
 | User | Name of the user that's the owner of tables created in the development environment. | `OSRUNTIME` |
-| Password | Password for the user. |  |
+| Password | Password for the user. | |
 | Tablespace | Table space holding the tables created in the development environment. | `OSUSR` |
 
 ## Create/Upgrade database button

@@ -34,7 +34,7 @@ See [Using Taskbox in Reactive Web Apps](https://success.outsystems.com/Document
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [API_GetActivities](<#API_GetActivities>) | Returns the activities of a user.<br/>Activity filtering and pagination are allowed. |
 | [API_GetActivityGuidanceHtml](<#API_GetActivityGuidanceHtml>) | Encodes the activity guidance instructions in HTML format. |
 | [API_GetActivityPagination](<#API_GetActivityPagination>) | Returns the pagination information of all activities currently displayed in the Taskbox of the user. |
@@ -48,7 +48,7 @@ See [Using Taskbox in Reactive Web Apps](https://success.outsystems.com/Document
 | [Inbox_EnableInServer](<#Inbox_EnableInServer>) | Enables the Taskbox in the environment. |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [Inbox_FilterCriteria](<#Structure_Inbox_FilterCriteria>) | |
 | [Inbox_PaginationCriteria](<#Structure_Inbox_PaginationCriteria>) | |
 | [Activity](<#Structure_Activity>) | The structure with the information of an activity in the TaskBox. |

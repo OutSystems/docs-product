@@ -62,8 +62,8 @@ Base URL: `/CloudMessagingConfigurator/rest/v1/notification/topics`
 
 **Request parameters**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | FCMServerKey | Text | Identifies the Firebase Cloud Messaging (FCM) Server Key. To send out a notification to users or user groups, you must enter a text value to authorize a connection to FCM. You can find this value in the Firebase Project Settings under the Cloud Messaging tab. |
 | SendToTopics | SendToTopicsV1 Data Structure | Identifies the topics that will receive the notification. |
 | Notification | NotificationV1 Data Structure | Identifies the notification parameters. |
@@ -72,8 +72,8 @@ Base URL: `/CloudMessagingConfigurator/rest/v1/notification/topics`
 
 **Response**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | Message_id | Text | Displays the ID of an error, if applicable. |
 | Error | Text | Displays error information, or null if successful. |
 
@@ -117,20 +117,20 @@ Base URL: `/CloudMessagingConfigurator/rest/v1/notification/users`
 
 **Request parameters**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | FCMServerKey | Text | Identifies the Firebase Cloud Messaging (FCM) Server Key. To send out a notification to users or user groups, you must enter a text value to authorize a connection to FCM. You can find this value in the Firebase Project Settings under the Cloud Messaging tab. |
 | SendToPlatform | Text | Identifies the platform that will receive the notification. |
 | SendToUsers | Text List | Identifies a list of users that will receive notifications. If empty, the notification is sent to all platform users. |
 | SenderID | Text | Identifies the Sender ID. You can find this ID in the Firebase Project Settings under the Cloud Messaging tab. |
 | Notification | NotificationV1 Data Structure | Identifies the notification parameters. |
 | ExtraDataList | ExtraDataItem List | Identifies the extra data for the notification. |
-| ShowIfAppOpen | Boolean | Identifies if the push notifications are shown as in-app messages and the app must be open when the device receives the notification ('True'), or not open ('False').|
+| ShowIfAppOpen | Boolean | Identifies if the push notifications are shown as in-app messages and the app must be open when the device receives the notification ('True'), or not open ('False'). |
 
 **Response**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | MulticastID | Text | Returns the Multicast ID. |
 | NoSuccess | Text | Returns the number of notifications successfully sent. |
 | NoError | Text | Returns the number of notifications not sent due to an error. |
@@ -172,8 +172,8 @@ Base URL: `/CloudMessagingConfigurator/rest/v1/notification/silent/topics`
 
 **Request parameters**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | FCMServerKey | Text | Identifies the Firebase Cloud Messaging (FCM) Server Key. To send out a notification to users or user groups, you must enter a text value to authorize a connection to FCM. You can find this value in the Firebase Project Settings under the Cloud Messaging tab. |
 | SendToTopics | SendToTopicsV1 Data Structure | Identifies the topics that will receive the notification. |
 | ExtraDataList | ExtraDataItem List | Identifies the extra data for the notification. |
@@ -181,8 +181,8 @@ Base URL: `/CloudMessagingConfigurator/rest/v1/notification/silent/topics`
 
 **Response**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | Message_id | Text | Displays the ID of an error, if applicable. |
 | Error | Text | Displays error information, or null if successful. |
 
@@ -224,8 +224,8 @@ Base URL: `/CloudMessagingConfigurator/rest/v1/notification/users`
 
 **Request parameters**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | FCMServerKey | Text | Identifies the Firebase Cloud Messaging (FCM) Server Key. To send out a notification to users or user groups, you must enter a text value to authorize a connection to FCM. You can find this value in the Firebase Project Settings under the Cloud Messaging tab. |
 | SendToUsers | Text List | Identifies a list of users that will receive notifications. If empty, the notification is sent to all platform users. |
 | SendToPlatform | Platform Identifier | Identifies the platform that will receive the notification. |
@@ -235,8 +235,8 @@ Base URL: `/CloudMessagingConfigurator/rest/v1/notification/users`
 
 **Response**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | MulticastID | Text | Returns the Multicast ID. |
 | NoSuccess | Text | Returns the number of notifications successfully sent. |
 | NoError | Text | Returns the number of notifications not sent due to an error. |
@@ -285,18 +285,18 @@ Base URL: `/CloudMessagingConfigurator/rest/v2/notification/topics`
 
 **Request parameters**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | FCMServerKey | Text | Identifies the Firebase Cloud Messaging (FCM) Server Key. To send out a notification to users or user groups, you must enter a text value to authorize a connection to FCM. You can find this value in the Firebase Project Settings under the Cloud Messaging tab. |
 | SendToTopics | SendToTopicsV2 Data Structure | Identifies the topics that will receive the notification. |
 | Notification | NotificationV2 Data Structure | Identifies the notification parameters. |
 | ExtraDataList | ExtraDataItem List | Identifies the extra data for the notification. |
-| ShowIfAppOpen | Boolean | Identifies if the push notifications are shown as in-app messages and the app must be open when the device receives the notification ('True'), or not open ('False').|
+| ShowIfAppOpen | Boolean | Identifies if the push notifications are shown as in-app messages and the app must be open when the device receives the notification ('True'), or not open ('False'). |
 
 **Response**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | Message_id | Text | Displays the ID of an error, if applicable. |
 | Error | Text | Displays error information, or null if successful. |
 
@@ -396,20 +396,20 @@ Base URL: `/CloudMessagingConfigurator/rest/v2/notification/users`
 
 **Request parameters**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | FCMServerKey | Text | Identifies the Firebase Cloud Messaging (FCM) Server Key. To send out a notification to users or user groups, you must enter a text value to authorize a connection to FCM. You can find this value in the Firebase Project Settings under the Cloud Messaging tab. |
 | SendToPlatform | Text | Identifies the platform that will receive the notification. |
 | SendToUsers | Text List | Identifies a list of users that will receive notifications. If empty, the notification is sent to all platform users. |
 | SenderID | Text | Identifies the Sender ID. You can find this ID in the Firebase Project Settings under the Cloud Messaging tab. |
 | Notification | NotificationV2 Data Structure | Identifies the notification parameters. |
 | ExtraDataList | ExtraDataItem List | Identifies the extra data for the notification. |
-| ShowIfAppOpen | Boolean | Identifies if the push notifications are shown as in-app messages and the app must be open when the device receives the notification ('True'), or not open ('False').|
+| ShowIfAppOpen | Boolean | Identifies if the push notifications are shown as in-app messages and the app must be open when the device receives the notification ('True'), or not open ('False'). |
 
 **Response**
 
-|Parameter| Data Type | Description |
-|:--------|:----------|:------------|
+| Parameter | Data Type | Description |
+| :-------- | :---------- | :------------ |
 | MulticastID | Text | Returns the Multicast ID. |
 | NoSuccess | Text | Returns the number of notifications successfully sent. |
 | NoError | Text | Returns the number of notifications not sent due to an error. |

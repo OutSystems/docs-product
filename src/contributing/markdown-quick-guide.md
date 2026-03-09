@@ -99,7 +99,7 @@ Available languages: html, xml, css, javascript, json, sql, csharp
 To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column.
 
 | Heading1 | Heading 2 |
-|----------|-----------|
+| ---------- | ----------- |
 | Text 11 | Text 21 |
 | Text 12 | Text 22 |
 

@@ -43,7 +43,7 @@ In a **single-server scenario**, you can set the "Deployment Zone Address" field
 ![Diagram of single server network architecture for OutSystems deployment zones with user devices, database, and server platform apps.](images/architecture-single-server-diag.png "Single Server Network Architecture")
 
 | Element | Description |
-| :------:|------------ |
+| :------: | ------------ |
 | ![Icon representing user devices such as mobile or desktop accessing OutSystems applications.](images/user-diag.png "User Devices") | User devices (mobile or desktop) accessing OutSystems applications. |
 | ![Icon representing the database used by the OutSystems platform and applications for storing metadata and business data.](images/database-diag.png "Database") | Database (on-premise or on the cloud) used by the platform to store application metadata and by applications to store business data. |
 | ![Icon representing the OutSystems platform and applications installed on a server, possibly using different application pools.](images/server-platform-apps-diag.png "OutSystems Platform and Applications") | OutSystems platform, installed on a virtual machine or on the cloud, along with applications living in the same IIS server (possibly using different application pools). |
@@ -53,7 +53,7 @@ In a **farm scenario**, when you're using multiple servers, the deployment zone 
 ![Diagram of farm scenario network architecture for OutSystems deployment zones with load balancers, servers, and deployment zones.](images/architecture-zones-diag.png "Farm Scenario Network Architecture")
 
 | Element | Description |
-| :------:|------------ |
+| :------: | ------------ |
 | ![Icon representing the main load balancer and reverse proxy in a network architecture, mapping applications to the correct servers.](images/load-balancer-diag.png "Load Balancer and Reverse Proxy") | **Main Load Balancer and Reverse Proxy** - Exposes `www.mydomain.net` address and knows how to map `/AppX` and `/AppY` to the servers where those applications are available.<br/>**Deployment Zone Load Balancer** - Distributes load among the servers configured in the deployment zone. |
 | ![Icon representing multiple servers where OutSystems applications are installed and reachable by the platform.](images/server-apps-diag.png "OutSystems Applications on Multiple Servers") | A second (or third) server on which OutSystems applications can be reached. Installed on a virtual machine or on the cloud and reachable by the platform. |
 | **"Intranet" Deployment Zone** | A customer-defined zone, including only some of the servers configured in the environment (2 out of 3 in the diagram). |

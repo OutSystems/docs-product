@@ -18,7 +18,7 @@ This page describes the data types available in OutSystems, their default values
 ## Basic data types
 
 | Type | Default Value | Example | Comment |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | Binary Data | Byte array with no elements | n/a | |
 | Boolean | false | true or false | |
 | Currency | 0.0 | 545870.025 | See Decimal type. |
@@ -59,17 +59,17 @@ If your application needs to store characters defined in higher Unicode ranges, 
 
 ## Compound data types
 
-|Type|Comments|
-|--- |--- |
-|`<Entity>` or `<Structure>`|When an Entity or [Structure](../../../building-apps/data/structure-create-use.md) is created, a data type is also created with all the attributes of that Entity or Structure. For example, when the Customer entity is created, the Customer data type is created. To create a variable of this data type, simply set its **Data Type** property to `Customer`.<br/>To access an attribute of the variable, use the following syntax: `<variable>.<attribute>`, for example `MyCustomerVar.Name`.|
-|Object|OutSystems supports the Object data type to allow to reuse your own .NET classes. The default value is NullObject().|
-|Record|A [Record](../../../building-apps/data/structure-create-use.md) is a data type that's composed of a fixed number of attributes, each one with its own data type. Use a Record to define a compound data type that is used for a single variable. If you need to define more than one variable with the same compound data type, use a Structure instead. Some use cases for using the Record data type are:<br/>• You need to return the result of an Aggregate on a User Action. In this case, you can define the user action output parameter using the record data type.<br/>• You need a user action that returns compound information, but don't want to define a new Structure.|
+| Type | Comments |
+| --- | --- |
+| `<Entity>` or `<Structure>` | When an Entity or [Structure](../../../building-apps/data/structure-create-use.md) is created, a data type is also created with all the attributes of that Entity or Structure. For example, when the Customer entity is created, the Customer data type is created. To create a variable of this data type, simply set its **Data Type** property to `Customer`.<br/>To access an attribute of the variable, use the following syntax: `<variable>.<attribute>`, for example `MyCustomerVar.Name`. |
+| Object | OutSystems supports the Object data type to allow to reuse your own .NET classes. The default value is NullObject(). |
+| Record | A [Record](../../../building-apps/data/structure-create-use.md) is a data type that's composed of a fixed number of attributes, each one with its own data type. Use a Record to define a compound data type that is used for a single variable. If you need to define more than one variable with the same compound data type, use a Structure instead. Some use cases for using the Record data type are:<br/>• You need to return the result of an Aggregate on a User Action. In this case, you can define the user action output parameter using the record data type.<br/>• You need a user action that returns compound information, but don't want to define a new Structure. |
   
 ## Collection data types
 
-|Type|Comments|
-|--- |--- |
-|List|A [List](list.md) is a sequence of elements of the same data type, either basic or compound. Elements can be inserted, fetched, and removed from a List.|
+| Type | Comments |
+| --- | --- |
+| List | A [List](list.md) is a sequence of elements of the same data type, either basic or compound. Elements can be inserted, fetched, and removed from a List. |
   
 ## Default and null values
 
@@ -84,7 +84,7 @@ OutSystems enables the conversion between different data types. This can be made
 OutSystems automatically converts values of the following types:
 
 | Expected Type | Accepted Types | Obs. |
-| ---|---|--- |
+| --- | --- | --- |
 | Boolean | - | |
 | Currency | Decimal, Integer, Boolean, Entity Identifier(Integer) | |
 | Date | Date Time | |
@@ -92,7 +92,7 @@ OutSystems automatically converts values of the following types:
 | Integer | Decimal, Boolean, Currency, Entity Identifier(Integer) | When converting Decimal to Integer implicitly, the decimals are truncated. |
 | Long Integer | Long Integer, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Long Integer) | |
 | Decimal | Integer, Boolean, Currency, Entity Identifier(Integer) | |
-| Entity Identifier | Entity Identifier |  A certain Entity Identifier can be converted into another Entity's Identifier, but a warning is displayed. |
+| Entity Identifier | Entity Identifier | A certain Entity Identifier can be converted into another Entity's Identifier, but a warning is displayed. |
 | Email | Text, Phone Number, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Text), Date Time, Date, Time | |
 | Phone Number | Text, Email, Integer, Decimal, Boolean, Currency, Entity Identifier(Integer), Entity Identifier(Text), Date Time, Date, Time | |
 | Text | Integer, Decimal, Boolean, Currency, Phone Number, Email, Entity Identifier(Integer), Entity Identifier(Text) | |
@@ -104,7 +104,7 @@ To convert values from one data type to another use [data type conversion functi
 Here is a summary about the possible explicit conversions:
 
 | From | To | Function |
-| ---|---|--- |
+| --- | --- | --- |
 | Boolean | Integer<br/>Text | [BooleanToInteger](<../../lang/auto/builtinfunction-data-conversion.md#BooleanToInteger>)<br/>[BooleanToText](<../../lang/auto/builtinfunction-data-conversion.md#BooleanToText>) |
 | Date | Date Time<br/>Text | [DateToDateTime](<../../lang/auto/builtinfunction-data-conversion.md#DateToDateTime>)<br/>[DateToText](<../../lang/auto/builtinfunction-data-conversion.md#DateToText>) |
 | Date Time | Date<br/>Text<br/>Time | [DateTimeToDate](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToDate>)<br/>[DateTimeToText](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToText>)<br/>[DateTimeToTime](<../../lang/auto/builtinfunction-data-conversion.md#DateTimeToTime>) |
@@ -112,7 +112,7 @@ Here is a summary about the possible explicit conversions:
 | Long Integer | Long Integer Identifier<br/>Integer<br/>Text | [LongIntegerToIdentifier](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToIdentifier>)<br/>[LongIntegerToInteger](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToInteger>)<br/>[LongIntegerToText](<../../lang/auto/builtinfunction-data-conversion.md#LongIntegerToText>) |
 | Decimal | Boolean<br/>Integer<br/>Text | [DecimalToBoolean](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToBoolean>)<br/>[DecimalToInteger](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToInteger>)<br/>[DecimalToText](<../../lang/auto/builtinfunction-data-conversion.md#DecimalToText>) |
 | Entity Identifier (Integer) | Integer | [IdentifierToInteger](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToInteger>) |
-| Entity Identifier (Long Integer) |  Long Integer  | [IdentifierToLongInteger](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToLongInteger>) |
+| Entity Identifier (Long Integer) | Long Integer | [IdentifierToLongInteger](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToLongInteger>) |
 | Entity Identifier (Text) | Text | [IdentifierToText](<../../lang/auto/builtinfunction-data-conversion.md#IdentifierToText>) |
 | Text | Date<br/>Date Time<br/>Decimal<br/>Integer<br/>Time<br/>Text Identifier | [TextToDate](<../../lang/auto/builtinfunction-data-conversion.md#TextToDate>)<br/>[TextToDateTime](<../../lang/auto/builtinfunction-data-conversion.md#TextToDateTime>)<br/>[TextToDecimal](<../../lang/auto/builtinfunction-data-conversion.md#TextToDecimal>)<br/>[TextToInteger](<../../lang/auto/builtinfunction-data-conversion.md#TextToInteger>)<br/>[TextToTime](<../../lang/auto/builtinfunction-data-conversion.md#TextToTime>)<br/>[TextToIdentifier](<../../lang/auto/builtinfunction-data-conversion.md#TextToIdentifier>) |
 | Time | Text | [TimeToText](<../../lang/auto/builtinfunction-data-conversion.md#TimeToText>) |

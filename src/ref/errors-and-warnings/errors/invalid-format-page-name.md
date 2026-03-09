@@ -26,10 +26,10 @@ The **Page Name** property contains double forward slashes (`//`) or starts or e
 
 Check the examples of correct and incorrect **Page Names**:
 
-| Correct   | Incorrect                   |
+| Correct | Incorrect |
 | --------- | --------------------------- |
-| `Buy`     | `Buy!`                      |
-| `About`   | `\\About`                   |
+| `Buy` | `Buy!` |
+| `About` | `\\About` |
 | `Product` | `Product` (space at start) |
 
 <div class="info" markdown="1">

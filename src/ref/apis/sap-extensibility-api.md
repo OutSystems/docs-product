@@ -69,11 +69,11 @@ To handle the connection configurations, create an extension module, and use its
 
 #### Methods
 
-| Method  |  Description |
-| ---|--- |
-| static <br/>SAPConnection GetCurrent()  |  Returns the object with the configurations used to establish the connection to call an SAP remote function, when invoked inside the 'OnBeforeConnection' callback action of the SAP connection. Otherwise, returns null. |
-| SAP.Middleware.Connector.RfcConfigParameters GetRfcConfigParameters()  | Returns the SAP connector SAP.Middleware.Connector.RfcConfigParameters object, with the configurations used in the connection established to call an SAP remote function. |
-| void <br/>SetRfcConfigParameters(SAP.Middleware.Connector.RfcConfigParameters rfcConfigParameters)  |  Sets the SAP connector object SAP.Middleware.Connector.RfcConfigParameters object, with configurations used in the connection established to call an SAP remote function. |
+| Method | Description |
+| --- | --- |
+| static <br/>SAPConnection GetCurrent() | Returns the object with the configurations used to establish the connection to call an SAP remote function, when invoked inside the 'OnBeforeConnection' callback action of the SAP connection. Otherwise, returns null. |
+| SAP.Middleware.Connector.RfcConfigParameters GetRfcConfigParameters() | Returns the SAP connector SAP.Middleware.Connector.RfcConfigParameters object, with the configurations used in the connection established to call an SAP remote function. |
+| void <br/>SetRfcConfigParameters(SAP.Middleware.Connector.RfcConfigParameters rfcConfigParameters) | Sets the SAP connector object SAP.Middleware.Connector.RfcConfigParameters object, with configurations used in the connection established to call an SAP remote function. |
   
 #### Example
 
@@ -112,12 +112,12 @@ To handle the connection's context, create an extension module, and use its meth
 
 #### Methods
 
-| Method  |  Description |
-| ---|--- |
-| static void BeginContext()  |  Begins a stateful call sequence allowing the user to orchestrate two or more remote function calls in the same context. |
-| static void Commit()  |  Commits the changes made so far in the stateful call sequence by calling the remote function 'BAPI_TRANSACTION_COMMIT'. |
-| static void EndContext()  |  Ends a stateful call sequence. Must be placed after a beginContext() method. |
-| static void Rollback()  |  Rolls back any changes made so far in the stateful call sequence by calling the remote function 'BAPI_TRANSACTION_ROLLBACK'. |
+| Method | Description |
+| --- | --- |
+| static void BeginContext() | Begins a stateful call sequence allowing the user to orchestrate two or more remote function calls in the same context. |
+| static void Commit() | Commits the changes made so far in the stateful call sequence by calling the remote function 'BAPI_TRANSACTION_COMMIT'. |
+| static void EndContext() | Ends a stateful call sequence. Must be placed after a beginContext() method. |
+| static void Rollback() | Rolls back any changes made so far in the stateful call sequence by calling the remote function 'BAPI_TRANSACTION_ROLLBACK'. |
   
 #### Example
 
@@ -167,10 +167,10 @@ To handle the remote function parameters, create an extension module, and use it
 
 #### Methods
 
-| Method  |  Description |
-| ---|--- |
-| static <br/>SAPRequest GetCurrent()  |  Returns the object with information about the current SAP remote function call, when invoked inside the 'OnBeforeCall', or 'OnAfterCall' callback actions of the SAP connection. Otherwise, returns null. |
-| SAP.Middleware.Connector.IRfcFunction GetIRfcFunction()  |  Returns the SAP connector SAP.Middleware.Connector.IRfcFunction object, with the metadata and the parameters value for the current SAPRequest. |
+| Method | Description |
+| --- | --- |
+| static <br/>SAPRequest GetCurrent() | Returns the object with information about the current SAP remote function call, when invoked inside the 'OnBeforeCall', or 'OnAfterCall' callback actions of the SAP connection. Otherwise, returns null. |
+| SAP.Middleware.Connector.IRfcFunction GetIRfcFunction() | Returns the SAP connector SAP.Middleware.Connector.IRfcFunction object, with the metadata and the parameters value for the current SAPRequest. |
   
 #### Example
 

@@ -31,7 +31,7 @@ The outsystems.api.requestInfo global object is defined for all OutSystems appli
 All of the following methods return a String.
 
 | Method | Description |
-| ---|--- |
+| --- | --- |
 | getApplicationKey() | Returns the identifier of the current application. The key is unique to the application, and it is consistent across different environments. |
 | getApplicationName() | Returns the name of the current application. |
 | getEnvironmentKey() | Returns the identifier of the current environment. |

@@ -50,9 +50,9 @@ The following sections show some examples of how to customize your endpoints.
 Use the same name for methods related to a resource. OutSystems knows which method to execute through the HTTP verb (for example, `GET` or `POST`):
 
 | Default Endpoint | URL Path | Customized Endpoint |
-| ---|---|--- |
+| --- | --- | --- |
 | `GET /PhoneAPI/rest/v1/GetContacts` | `/contacts` | `GET /PhoneAPI/rest/v1/contacts` |
-| `POST /PhoneAPI/rest/v1/CreateContact` | `/contacts`  | `POST /PhoneAPI/rest/v1/contacts` |
+| `POST /PhoneAPI/rest/v1/CreateContact` | `/contacts` | `POST /PhoneAPI/rest/v1/contacts` |
   
 _Note:_ Endpoints displayed without protocol and server information for brevity.
 
@@ -65,8 +65,8 @@ When handling a specific resource, start the "URL Path" property value with the 
 * For `PUT`: Add nothing, since the resource is already passed in the request Header or Body.
 
 | Default Endpoint | URL Path | Customized Endpoint |
-| ---|---|--- |
-| `GET /PhoneAPI/rest/v1/GetContact` | `/contacts/{Id}`  | `GET /PhoneAPI/rest/v1/contacts/{Id}` |
+| --- | --- | --- |
+| `GET /PhoneAPI/rest/v1/GetContact` | `/contacts/{Id}` | `GET /PhoneAPI/rest/v1/contacts/{Id}` |
 | `DELETE /PhoneAPI/rest/v1/DeleteContact` | `/contacts/{Id}` | `DELETE /PhoneAPI/rest/v1/contacts/{Id}` |
 | `PUT /PhoneAPI/rest/v1/UpdateContact` | `/contacts` | `PUT /PhoneAPI/rest/v1/contacts` |
 
@@ -74,8 +74,8 @@ When handling a specific resource, start the "URL Path" property value with the 
 
 With master-detail relationships, handle details as a collection under the master resource:
 
-| Default Endpoint  |  URL Path  |  Customized Endpoint |
-| ---|---|--- |
+| Default Endpoint | URL Path | Customized Endpoint |
+| --- | --- | --- |
 | `GET /PhoneAPI/rest/v1/GetContactAddresses` | `/contacts/{Id}/addresses` | `GET /PhoneAPI/rest/v1/contacts/{Id}/addresses` |
 
 ## Recommendations for REST API URLs

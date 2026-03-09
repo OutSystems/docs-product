@@ -30,15 +30,15 @@ The Charts API v2 allows you to create, populate, and customize charts. OutSyste
 
 OutSystems provides a collection of charts that allow you to build your screens with a simple drag-and-drop from Service Studio’s toolbox.
 
-|Widget|Description |
-|---|---|
-|Area Chart|The Area Chart is composed of data points plotted and connected by a line with a colored area below the line.|
-|Bar Chart|The Bar Chart is a simple, two-dimensional chart where rectangular bars are placed along the X-Axis with bar length representing the value for a specific category.|
-|Column Chart|The Column Chart is a two-dimensional chart where rectangular bars are placed along the Y-Axis with bar height representing the value for a specific category.|
-|Donut Chart|The Donut Chart is a circular graph that displays data in rings, where each ring represents a category and the size of the ring corresponds to the value of the data being presented.|
-|Line Chart|The Line Chart is a simple, two-dimensional chart where each point represents a single value. The data points are joined by a line to depict a trend, usually a period of time. |
-|Pie Chart|The Pie Chart is a circular graph that displays data in sections, where each section represents a category and the size of the section corresponds to the value of the data being presented.|
-|Radar Chart|The Radar Chart, also known as a polar chart, illustrates multivariate data in a two-dimensional chart, plotted along a radial axis.|
+| Widget | Description |
+| --- | --- |
+| Area Chart | The Area Chart is composed of data points plotted and connected by a line with a colored area below the line. |
+| Bar Chart | The Bar Chart is a simple, two-dimensional chart where rectangular bars are placed along the X-Axis with bar length representing the value for a specific category. |
+| Column Chart | The Column Chart is a two-dimensional chart where rectangular bars are placed along the Y-Axis with bar height representing the value for a specific category. |
+| Donut Chart | The Donut Chart is a circular graph that displays data in rings, where each ring represents a category and the size of the ring corresponds to the value of the data being presented. |
+| Line Chart | The Line Chart is a simple, two-dimensional chart where each point represents a single value. The data points are joined by a line to depict a trend, usually a period of time. |
+| Pie Chart | The Pie Chart is a circular graph that displays data in sections, where each section represents a category and the size of the section corresponds to the value of the data being presented. |
+| Radar Chart | The Radar Chart, also known as a polar chart, illustrates multivariate data in a two-dimensional chart, plotted along a radial axis. |
 
 ## Addons
 
@@ -62,10 +62,10 @@ You can enrich your charts with add-ons to customize their elements, such as axe
 
 Collection of all client actions that trigger the API methods to customize and extend the charts and addon blocks.
 
-|Widget|Description|
-|---|---|
-|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/).|
-|SetHighchartsXAxisConfigs|Extend the x-axis properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis).|
-|SetHighchartsYAxisConfigs|Extend the y-axis properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis).|
-|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/series).|
-|UpdateChartColorScheme|A list of color values to use for the chart. Some of the formats accepted are HTML, RGB, rgba, and hex. |
+| Widget | Description |
+| --- | --- |
+| SetHighchartsChartConfigs | Extend the chart block properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/). |
+| SetHighchartsXAxisConfigs | Extend the x-axis properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis). |
+| SetHighchartsYAxisConfigs | Extend the y-axis properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis). |
+| SetHighchartsSeriesConfigs | Extend the series properties with additional Highcharts configurations. For security reasons, configurations or properties using callback functions or objects (for example, arrays) cannot be used as they will not be parsed. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/series). |
+| UpdateChartColorScheme | A list of color values to use for the chart. Some of the formats accepted are HTML, RGB, rgba, and hex. |

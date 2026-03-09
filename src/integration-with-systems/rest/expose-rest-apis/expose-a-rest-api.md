@@ -75,7 +75,7 @@ Examples:
 Here are some example of default REST API endpoints:
 
 | Default Endpoint | Description |
-| ---|--- |
+| --- | --- |
 | `GET /PhoneAPI/rest/v1/GetContacts` | Gets all contacts. |
 | `GET /PhoneAPI/rest/v1/GetContact` | Gets a contact. |
 | `POST /PhoneAPI/rest/v1/CreateContact` | Creates a contact. |

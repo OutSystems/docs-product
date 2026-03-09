@@ -51,11 +51,11 @@ Regardless of which RAID level you choose, the recommended stripe size for SQL S
 Below we'll discuss briefly each of the most common levels as they pertain to SQL Server performance.
 
 | **Raid Level** | **Description** |
-|----------------|------|
+| ---------------- | ------ |
 | 0 | Known as a Stripe Set, the disks taking part in the set will each own a separate chunk of information that's distributed over the disks. While not fault tolerant it provides the best read and write performance. RAID 0 disk sets start at 2 drives, however can be extended to improve I/O performance. Adding drives however will being to provide less and less performance improvements as you add disks. Recovery isn't possible once one of the drives fails. |
-| 1  | Also known as a Mirrored Set, the disks taking part in the set mirror each other. This provides the best fault tolerance at the expense of disk space and some performance as all the drives need to read and write the information. RAID 1 disk sets begin with 2 drives.As long as one non-failed drive is left on the array the array can be recovered.|
-| 5  | Using block-level striping with parity data distributed across all members, RAID 5 has become popular due to the low cost of redundancy. RAID 5 disk sets begin with 3 drives, letting you add drives as you go. Arrays that lose one drive continue to operate and once the failed drive is replaced, the array will be rebuilt. Rebuilding the array will however result in performance degradation as the disks use I/O capacity to rebuild the new disk. Loss of a second drive up until the rebuild is complete will result in data loss. |
-| 10 (1+0)| This is a nested RAID level where two different RAID levels are used together to boost performance and/or fault tolerance. In this case a RAID 0 stripe will be created over two or more sets of RAID 1 drive arrays. Disk sets begin with 4 drives, distributed over two drive arrays. You may increase the number of drives present in the disk arrays to improve fault tolerance, or increase the number of arrays to improve performance. Data loss won't occur until all drives in one of the mirror set fail. This means the array can continue to operate correctly with multiple failures as long as no single mirror is completely wiped out. |
+| 1 | Also known as a Mirrored Set, the disks taking part in the set mirror each other. This provides the best fault tolerance at the expense of disk space and some performance as all the drives need to read and write the information. RAID 1 disk sets begin with 2 drives.As long as one non-failed drive is left on the array the array can be recovered. |
+| 5 | Using block-level striping with parity data distributed across all members, RAID 5 has become popular due to the low cost of redundancy. RAID 5 disk sets begin with 3 drives, letting you add drives as you go. Arrays that lose one drive continue to operate and once the failed drive is replaced, the array will be rebuilt. Rebuilding the array will however result in performance degradation as the disks use I/O capacity to rebuild the new disk. Loss of a second drive up until the rebuild is complete will result in data loss. |
+| 10 (1+0) | This is a nested RAID level where two different RAID levels are used together to boost performance and/or fault tolerance. In this case a RAID 0 stripe will be created over two or more sets of RAID 1 drive arrays. Disk sets begin with 4 drives, distributed over two drive arrays. You may increase the number of drives present in the disk arrays to improve fault tolerance, or increase the number of arrays to improve performance. Data loss won't occur until all drives in one of the mirror set fail. This means the array can continue to operate correctly with multiple failures as long as no single mirror is completely wiped out. |
 
 #### Storage subsystem design
 
@@ -78,10 +78,10 @@ We can divide storage needs in three parts, by looking at the I/O requirements o
 * Log Files  
 
 | **File Type** | **Description** |
-|--------------|-----------------|
+| -------------- | ----------------- |
 | System Files | System files are the files for Windows, including your pagefile, as well as the SQL Server binaries. This subsystem is mostly oriented towards read operations. However your main concern is ensuring integrity and fault tolerance, than I/O performance. RAID levels 1, 5, and 10 are appropriate, although RAID 1 is the most common. |
 | Data Files (*.mdf,*.ndf) | Data files (*.mdf,*.ndf) are the files where SQL stores all of your database data and schema information.The load placed on these files will depend on whether your database is mostly transaction oriented, create a higher write load, or if it has a more analytical role which usually mean a higher read load.RAID 10 is the recommended level as it provides the best fault tolerance as well as the best speed |
-| Log Files (*.ldf) | Transaction Log files (*.ldf) are where the database journaling takes place and is critical to ensuring proper database recovery. Except for database recovery actions, the load is mostly write oriented. RAID 1 or RAID 10 are recommended.|
+| Log Files (*.ldf) | Transaction Log files (*.ldf) are where the database journaling takes place and is critical to ensuring proper database recovery. Except for database recovery actions, the load is mostly write oriented. RAID 1 or RAID 10 are recommended. |
 
 To get the maximum performance, with these set of files, you should use the NTFS block size of 64k (recommended). For 64-bit systems this can be set higher, but note that when going beyond 64k you should try it first on a test system.
 

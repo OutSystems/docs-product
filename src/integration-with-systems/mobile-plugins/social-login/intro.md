@@ -87,7 +87,7 @@ To configure a new provider or edit an existing one you need to add the followin
 #### Apple
 
 | Relevant Information | Description |
-| ---|--- |
+| --- | --- |
 | Identifier | A public identifier your app on the provider side. It's a string type value available to any registered developer on Apple Developer. You can access the Identifier value on the Certificates, Identifiers, and Profiles pages of your app. |
 | Key ID | Key ID corresponding to your Secret (`.p8`). |
 | Team ID | Identifier of your team on Apple Developer. |
@@ -102,7 +102,7 @@ This is in the **Define your App Type** field.
 For example, if your app is distributed both as an Android app and as a PWA, you need two provider configurations.
 
 | Relevant Information | Description |
-| ---|--- |
+| --- | --- |
 | Client ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on the Google Cloud Platform. You can access the ClientID value on the OAuth Consent tab on your app's Credentials screen. |
 | Client Secret | A confidential code known only to your app and the authorization server. It's a string type value type value available to any registered developer on the Google Cloud Platform. You can access the ClientSecret value on the OAuth Consent tab on your app's Credentials screen. |
 
@@ -123,7 +123,7 @@ Define configuration in the **Define your App Type** field.
 Note that, for example, if your app is distributed both as an Android app and as a PWA, you need to create two provider configurations.
 
 | Relevant Information | Description |
-| ---|--- |
+| --- | --- |
 | App ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on Meta for Developers. You can access the AppID value in your app's settings. |
 | App Secret | A confidential code known only to your app and the authorization server. It's a string type value available to any registered developer on Meta for Developers. You can access the AppSecret value in your app's settings. |
 
@@ -132,7 +132,7 @@ Check the information on the OAuth configuration of Facebook login in [Facebook 
 #### Linkedin
 
 | Relevant Information | Description |
-| ---|--- |
+| --- | --- |
 | Client ID | A public identifier your app on the provider side. It's a string type value available to any registered developer on LinkedIn Developer. You can access the Identifier value on the "Authentication" side navigation link, underneath the header "Authentication Keys". |
 | Client Secret | A confidential code known only to your app and the authorization server. It's a string type value available to any registered developer on LinkedIn Developer. You can access the Identifier value on the "Authentication" side navigation link, underneath the header "Authentication Keys". |
 
@@ -201,7 +201,7 @@ When you deploy your app to another environment make sure you set its value to t
 1. For the following social login providers and app type combinations:
 
 | Social Login provider | App Type |
-| ---|--- |
+| --- | --- |
 | Apple | Android |
 | Google | iOS |
 | Facebook | Android, iOS |
@@ -257,7 +257,7 @@ After setting up your block handler, you can use the login scope by passing the 
 The login scope includes the following variables:
 
 | Scope | Variable type | Description | Additional Info |
-| ---|---|---|--- |
+| --- | --- | --- | --- |
 | ID | Text | User's ID stored by the social login provider. | |
 | FirstName | Text | User's first name stored by the social login provider. | |
 | LastName | Text | User's last name stored by the social login provider. | |

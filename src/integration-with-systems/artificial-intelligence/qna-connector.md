@@ -157,11 +157,11 @@ This section contains additional information.
 
 Here are some QnA Maker connector settings and corresponding values in Azure.
 
-| Property   |      Location      |  Description |
-|----------| ------------- |------|
-| **KbId**, **KnowledgebaseId** |  QnA Maker connector server actions |  The knowledge base identifier (id). Get the identifier from the QnA Maker portal, from the **Deployment details** in the knowledge base settings. It's the randomized value of the POST URL. |
-| **QnAMakerResourceName** |  QnA Maker connector server actions | The name of the service running the QnA Maker in Azure. You can get it from the **Deployment details** in the QnA Maker portal. Check the Host line and grab the first part of the URL. For example, if the Host line is `Host: https://my-example-service.azurewebsites.net/qnamaker`, the resource name is **my-example-service**. You can get the resource name from the service endpoint URL in Azure as well. |
-| **Authorization** |  QnA Maker connector server actions | The endpoint key from the **Deployment details** in the knowledge base settings, in the QnA Maker portal. For example, if the Authorization line is `Authorization: EndpointKey abcd123456`, the value you need is **abcd123456**.  |
+| Property | Location | Description |
+| ---------- | ------------- | ------ |
+| **KbId**, **KnowledgebaseId** | QnA Maker connector server actions | The knowledge base identifier (id). Get the identifier from the QnA Maker portal, from the **Deployment details** in the knowledge base settings. It's the randomized value of the POST URL. |
+| **QnAMakerResourceName** | QnA Maker connector server actions | The name of the service running the QnA Maker in Azure. You can get it from the **Deployment details** in the QnA Maker portal. Check the Host line and grab the first part of the URL. For example, if the Host line is `Host: https://my-example-service.azurewebsites.net/qnamaker`, the resource name is **my-example-service**. You can get the resource name from the service endpoint URL in Azure as well. |
+| **Authorization** | QnA Maker connector server actions | The endpoint key from the **Deployment details** in the knowledge base settings, in the QnA Maker portal. For example, if the Authorization line is `Authorization: EndpointKey abcd123456`, the value you need is **abcd123456**. |
 
 ### Data structures
 

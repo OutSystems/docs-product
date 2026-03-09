@@ -90,7 +90,7 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | SourceFile (Text): Mandatory | The video file URL or the runtime path of the resource video file. |
 | Width (Text): Optional | Width (in pixel or percentage) of the video.<br/><br/>Examples<br/><br/><ul><li>Blank - The video is 100% wide. This is the default value.</li><li>150 - The video is 150px wide.</li></ul> |
 | Height (Text): Optional | Height (in pixel or percentage) of the video.<br/><br/>Examples<br/><br/><ul><li>Blank - The video is 100% high. This is the default value.</li><li>150 - The video is 150px high.</li></ul> |

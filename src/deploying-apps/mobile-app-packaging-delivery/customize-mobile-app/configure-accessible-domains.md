@@ -86,14 +86,14 @@ The only mandatory field in each list element (for both iOS and Android) is the 
 
 The following table lists the other available optional fields, for specific iOS configurations:
 
-| Field Name                              | Applies to | Allowed Origin Values | Default Value |
-| ----------------------------------------|:----------:|:---------------------:|-------------- |
-| `minimum-tls-version`                   | iOS 9+     | Any | `TLSv1.2` |
-| `requires-forward-secrecy`              | iOS 9+     | Any | `true` |
-| `requires-certificate-transparency`     | iOS 10+    | Any | `false` |
-| `allows-arbitrary-loads-for-media`      | iOS 10+    | `*` | `false` |
-| `allows-arbitrary-loads-in-web-content` | iOS 10+    | `*` | `false` |
-| `allows-local-networking`               | iOS 10+    | `*` | `false` |
+| Field Name | Applies to | Allowed Origin Values | Default Value |
+| ---------------------------------------- | :----------: | :---------------------: | -------------- |
+| `minimum-tls-version` | iOS 9+ | Any | `TLSv1.2` |
+| `requires-forward-secrecy` | iOS 9+ | Any | `true` |
+| `requires-certificate-transparency` | iOS 10+ | Any | `false` |
+| `allows-arbitrary-loads-for-media` | iOS 10+ | `*` | `false` |
+| `allows-arbitrary-loads-in-web-content` | iOS 10+ | `*` | `false` |
+| `allows-local-networking` | iOS 10+ | `*` | `false` |
 
 Note that the last three fields can only be included in an `access` list element whose `origin` field contains an `*` value.
 

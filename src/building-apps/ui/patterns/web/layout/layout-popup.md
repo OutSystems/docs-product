@@ -33,6 +33,6 @@ For more information about creating and using a popup, see [RichWidgets Popup Ed
 ## Properties
 
 | Property | Description |
-|---|---|
+| --- | --- |
 | DeviceConfiguration (DeviceConfig): Optional | Configuration that changes the default values that apply when the application is viewed on a phone, tablet, or desktop. |
 | AccessibilityConfiguration (AccessibilityConfiguration): Optional | Configuration that changes the default values for the options that reset tab index values and the options that add a visible outline to focused elements. |

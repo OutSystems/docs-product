@@ -23,7 +23,7 @@ API that provides server actions to help you avoid code injection in HTML, JavaS
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [BuildSafe_InClauseIntegerList](<#BuildSafe_InClauseIntegerList>) | Returns a comma-delimited text value containing all the integer values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause. |
 | [BuildSafe_InClauseTextList](<#BuildSafe_InClauseTextList>) | Returns a comma-delimited text value with the encoded version of all the text values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause. This method should only be used in queries against the Platform's main database. Behavior can be unexpected when used against external databases. |
 | [SanitizeHtml](<#SanitizeHtml>) | Sanitizes the provided HTML using [HtmlSanitizer NuGet package](https://github.com/mganss/HtmlSanitizer). |

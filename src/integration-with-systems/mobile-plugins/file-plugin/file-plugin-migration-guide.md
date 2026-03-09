@@ -47,22 +47,22 @@ This section will further detail which client actions replace the deprecated one
 
 ### Client action mapping
 
-| Deprecated Action             | New Action to use   | Migration notes               |
+| Deprecated Action | New Action to use | Migration notes |
 | ----------------------------- | ------------------- | ----------------------------- |
-| DEPRECATED_CheckFilePlugin    | **CheckFilePlugin** | The new plugin action can return either an **Error** or a **Warning** - the latter in the case that the plugin is working, but is running an old version. |
-| DEPRECATED_CreateDirectory    | **CreateDirectory** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory).  |
-| DEPRECATED_DeleteDirectory    | **DeleteDirectory** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
-| DEPRECATED_DeleteFile         | **DeleteFile**      | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
-| DEPRECATED_DeleteFileFromUri  | **DeleteFile**      | Provide the Uri in the **Path** input parameter, and leave **Directory** empty. |
-| DEPRECATED_GetFileData        | **ReadFile**        | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
-| DEPRECATED_GetFileDataFromUri | **ReadFile**        | Provide the Uri in the **Path** input parameter, and leave **Directory** empty. |
-| DEPRECATED_GetFileData        | **ReadFile**        | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
-| DEPRECATED_GetFileUri         | **GetFileUri**      | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
-| DEPRECATED_GetFileUrl         | **ReadFile**        | The new **ReadFile** does not return blob URL's. You may keep using the deprecated action for the time being, or refer to [Create a blob URL](#create-a-blob-url) to accomplish the same behavior in your app. |
-| DEPRECATED_GetFileUrlFromUri  | **ReadFile**        | The new **ReadFile** does not return blob URL's. You may keep using the deprecated action for the time being, or refer to [Create a blob URL](#create-a-blob-url) to accomplish the same behavior in your app. |
-| DEPRECATED_ListDirectory      | **ListDirectory**   | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
-| DEPRECATED_SaveFile           | **WriteFile**       | You may instead use **AppendFile** if you're saving to the end of an existing file and you don't want to overwrite it. For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
-| DEPRECATED_SaveTemporaryFile  | **WriteFile**       | You may instead use **AppendFile** if you're saving to the end of an existing file and you don't want to overwrite it. For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_CheckFilePlugin | **CheckFilePlugin** | The new plugin action can return either an **Error** or a **Warning** - the latter in the case that the plugin is working, but is running an old version. |
+| DEPRECATED_CreateDirectory | **CreateDirectory** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_DeleteDirectory | **DeleteDirectory** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_DeleteFile | **DeleteFile** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_DeleteFileFromUri | **DeleteFile** | Provide the Uri in the **Path** input parameter, and leave **Directory** empty. |
+| DEPRECATED_GetFileData | **ReadFile** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_GetFileDataFromUri | **ReadFile** | Provide the Uri in the **Path** input parameter, and leave **Directory** empty. |
+| DEPRECATED_GetFileData | **ReadFile** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_GetFileUri | **GetFileUri** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_GetFileUrl | **ReadFile** | The new **ReadFile** does not return blob URL's. You may keep using the deprecated action for the time being, or refer to [Create a blob URL](#create-a-blob-url) to accomplish the same behavior in your app. |
+| DEPRECATED_GetFileUrlFromUri | **ReadFile** | The new **ReadFile** does not return blob URL's. You may keep using the deprecated action for the time being, or refer to [Create a blob URL](#create-a-blob-url) to accomplish the same behavior in your app. |
+| DEPRECATED_ListDirectory | **ListDirectory** | For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_SaveFile | **WriteFile** | You may instead use **AppendFile** if you're saving to the end of an existing file and you don't want to overwrite it. For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
+| DEPRECATED_SaveTemporaryFile | **WriteFile** | You may instead use **AppendFile** if you're saving to the end of an existing file and you don't want to overwrite it. For migrating from the deprecated **StorageType** and **StoragePersistency** to the new **PathDirectory**, [see the section below](#storage-persistence-and-type-to-pathdirectory). |
 
 ### Storage Persistence and Type to PathDirectory
 

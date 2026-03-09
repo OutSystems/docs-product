@@ -33,7 +33,7 @@ To use this API, simply reference the AsynchronousLogging module in your applica
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [LogError](<#LogError>) | Asynchronously inserts a error into the database. Errors are kept in a queue and inserted into the database in bulk after a short period. |
 | [LogRecord](<#LogRecord>) | Asynchronously inserts a record into the database. Records are kept in a queue and inserted into the database in bulk after a short period. |
 | [LogRequestEvent](<#LogRequestEvent>) | Asynchronously logs a request event. The events are kept in a queue and inserted in bulk after a short period. |

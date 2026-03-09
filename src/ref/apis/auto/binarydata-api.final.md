@@ -23,7 +23,7 @@ Provides Actions to manipulate BinaryData contents, such as retrieving the lengt
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Base64ToBinary](<#Base64ToBinary>) | Converts Base64 Text into BinaryData. |
 | [BinaryDataSize](<#BinaryDataSize>) | Returns the size in bytes of a binary content. |
 | [BinaryDataToText](<#BinaryDataToText>) | Reads the content of a text file using a given encoding. If no encoding is supplied, the system's default ANSI encoding will be used. |

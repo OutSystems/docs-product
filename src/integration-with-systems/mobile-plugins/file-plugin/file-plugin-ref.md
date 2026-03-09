@@ -36,20 +36,20 @@ This section details the different elements exposed by the File Plugin, starting
 
 ### Actions
 
-| Action               | Description                                                                           |
+| Action | Description |
 | -------------------- | ------------------------------------------------------------------------------------- |
-| **AppendFile**       | Appends content to an existing file.                                                  |
-| **CheckFilePlugin**  | Checks if the File Plugin is loaded.                                                   |
-| **Copy**             | Copies a file from one location to another.                                             |
-| **CreateDirectory** | Creates a directory in the file system.                                               |
-| **DeleteDirectory**  | Deletes a directory in the file system.                                               |
-| **DeleteFile**       | Deletes a single file.                                                                |
-| **GetFileUri**       | Returns the file's URI.                                                               |
-| **GetMetadata**      | Gets metadata information on a file or directory. See [File Info](#file-info).        |
-| **ListDirectory**    | Lists the contents of a directory (any files and sub-directories).                    |
-| **ReadFile**         | Reads the contents of a file.                                                         |
-| **Rename**           | Renames an existing file or directory.                                                 |
-| **WriteFile**        | Writes content to a file. This action overwrites data written to the file previously. |
+| **AppendFile** | Appends content to an existing file. |
+| **CheckFilePlugin** | Checks if the File Plugin is loaded. |
+| **Copy** | Copies a file from one location to another. |
+| **CreateDirectory** | Creates a directory in the file system. |
+| **DeleteDirectory** | Deletes a directory in the file system. |
+| **DeleteFile** | Deletes a single file. |
+| **GetFileUri** | Returns the file's URI. |
+| **GetMetadata** | Gets metadata information on a file or directory. See [File Info](#file-info). |
+| **ListDirectory** | Lists the contents of a directory (any files and sub-directories). |
+| **ReadFile** | Reads the contents of a file. |
+| **Rename** | Renames an existing file or directory. |
+| **WriteFile** | Writes content to a file. This action overwrites data written to the file previously. |
 
 ### Path Directory
 
@@ -57,17 +57,17 @@ Most operations in the File Plugin have two attributes: **Path** and **Directory
 
 The table below details the types of **PathDirectory** entries.
 
-| **PathDirectory**     | Description                                                                                                                                                            |
+| **PathDirectory** | Description |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **DOCUMENTS**         | A directory to store documents. For iOS it's stored within the app's sandbox. On Android, it's a public directory, and access is limited for Android 11 and above.      |
-| **DATA**              | The application's data directory for holding files on Android. On iOS, **DOCUMENTS** is used.                                                                          |
-| **LIBRARY**           | The top-level directory for non user data files on iOS - backed by iCloud. On Android, **DATA** is used.                                                |
-| **CACHE**             | The application's cache directory. The Operating System may delete files in this directory. Use this when you have non-persistent files that can be re-created easily. |
-| **EXTERNAL**          | On Android, it's similar to the **DATA** directory, but it's stored in the primary external storage. On iOS, **DOCUMENTS** is used.                                      |
-| **EXTERNAL_CACHE**    | On Android, it's similar to the **CACHE** directory, but it's stored in the primary external storage. On iOS, **DOCUMENTS** is used.                                     |
-| **EXTERNAL_STORAGE**  | The device's primary external storage directory (e.g. SD Card) on Android; access is restricted for Android 11 and above. On iOS, **DOCUMENTS** is used.                  |
-| **TEMPORARY**         | A directory for storing temporary files on iOS, within the app's sandbox. On Android, **CACHE** is used.                                                               |
-| **LIBRARY_NO_CLOUD**  | Similar to **LIBRARY**, except that it's not backed by iCloud. On Android, **DATA** is used.                                                                           |
+| **DOCUMENTS** | A directory to store documents. For iOS it's stored within the app's sandbox. On Android, it's a public directory, and access is limited for Android 11 and above. |
+| **DATA** | The application's data directory for holding files on Android. On iOS, **DOCUMENTS** is used. |
+| **LIBRARY** | The top-level directory for non user data files on iOS - backed by iCloud. On Android, **DATA** is used. |
+| **CACHE** | The application's cache directory. The Operating System may delete files in this directory. Use this when you have non-persistent files that can be re-created easily. |
+| **EXTERNAL** | On Android, it's similar to the **DATA** directory, but it's stored in the primary external storage. On iOS, **DOCUMENTS** is used. |
+| **EXTERNAL_CACHE** | On Android, it's similar to the **CACHE** directory, but it's stored in the primary external storage. On iOS, **DOCUMENTS** is used. |
+| **EXTERNAL_STORAGE** | The device's primary external storage directory (e.g. SD Card) on Android; access is restricted for Android 11 and above. On iOS, **DOCUMENTS** is used. |
+| **TEMPORARY** | A directory for storing temporary files on iOS, within the app's sandbox. On Android, **CACHE** is used. |
+| **LIBRARY_NO_CLOUD** | Similar to **LIBRARY**, except that it's not backed by iCloud. On Android, **DATA** is used. |
 
 <div class="info" markdown="1">
 

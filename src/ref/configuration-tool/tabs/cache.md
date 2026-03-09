@@ -27,8 +27,8 @@ In the **Cache** tab you define the basic settings for connecting to the Cache I
 
 This section contains configuration parameters for the cache invalidation service.
 
-| Configuration | Description  | Default value |
-| --------------|--------------|--------------- |
+| Configuration | Description | Default value |
+| -------------- | -------------- | --------------- |
 | Host | Hostname or IP address of the Cache Invalidation Service.<br/>_Note:_ To make it easier to add a front-end server later, OutSystems doesn't recommend using `localhost` as the hostname. | `localhost` |
 | Port | Port used by applications and OutSystems services to communicate with the cache invalidation service. | `5672` |
 | Virtual Host | Name of RabbitMQ virtual host.<br/>Virtual hosts allow you to reuse the service to other purposes having a separation from OutSystems logic. | `/outsystems` |

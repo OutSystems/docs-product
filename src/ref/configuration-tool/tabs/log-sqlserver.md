@@ -26,17 +26,17 @@ The following configurations are available in the **Log** tab when the **Databas
 This section contains general configurations for the Azure SQL Database / SQL Server database connection to the logging database.
 
 | Configuration | Description | Default value |
-| --------------|-------------|--------------- |
+| -------------- | ------------- | --------------- |
 | Server | The hostname or IP address to the database server. | `localhost` |
 | Database | The database catalog used for the logging database. | `outsystems_log` |
 
 For advanced settings, click the **Advanced Settings** link.
 
-|Configuration | Description | Default value|
-|---|---|---|
-|Runtime Applications|Allows you to use a specific connection string for OutSystems applications.||
-|Log Service Port|The port the log service listens to.|`12003`|
-|Log Cycle Period|Indicates how long to keep the log files (in weeks). After this time, the log tables are rotated and information is lost.|`4`|
+| Configuration | Description | Default value |
+| --- | --- | --- |
+| Runtime Applications | Allows you to use a specific connection string for OutSystems applications. | |
+| Log Service Port | The port the log service listens to. | `12003` |
+| Log Cycle Period | Indicates how long to keep the log files (in weeks). After this time, the log tables are rotated and information is lost. | `4` |
 
 ## Administrator section
 
@@ -49,7 +49,7 @@ These configurations are read-only when Authentication is set to `Windows Authen
 </div>
 
 | Configuration | Description | Default value |
-| --------------|-------------|-------------- |
+| -------------- | ------------- | -------------- |
 | User | Name of the user that's the owner of log tables and associated objects. | `OSADMIN_LOG` |
 | Password | Password for the user. | |
 
@@ -64,7 +64,7 @@ These configurations are read-only when Authentication is set to `Windows Authen
 </div>
 
 | Configuration | Description | Default value |
-| --------------|-------------|-------------- |
+| -------------- | ------------- | -------------- |
 | User | Name of the user used by the applications at runtime for logging purposes. | `OSRUNTIME_LOG` |
 | Password | Password of the specified user. | |
   

@@ -30,7 +30,7 @@ This API, composed of a set of SOAP Web Services, provides functionality to mana
 ## Summary
 
 | Web Service | Description |
-| ---|--- |
+| --- | --- |
 | [RoleManagementService](<#rolemanagementservice>) | The API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul> |
 | [AuthenticationService](<#authenticationservice>) | The API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires. |
 | [TeamManagementService](<#teammanagementservice>) | The API to manage teams in the platform.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#authenticationservice>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul> |
@@ -51,7 +51,7 @@ This API is exposed as a Web Service, made available at:
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/RoleManagementService.asmx?WSDL`
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Role_ChangeName](<#Role_ChangeName>) | Updates the name of a platform role. |
 | [Role_CreateOrUpdate](<#Role_CreateOrUpdate>) | Creates a new platform role or updates a platform role that already exists. |
 | [Role_Delete](<#Role_Delete>) | Deletes a platform role that already exists. Since the platform requires IT users to have a single platform role, you need to specify a new platform role to grant to the users that are currently set with the role you want to delete.<br/> |
@@ -302,7 +302,7 @@ This API is exposed as a Web Service, made available at:
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/AuthenticationService.asmx?WSDL`
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Authentication_GetToken](<#Authentication_GetToken>) | Returns an authentication token that is valid for 5 minutes. |
 
 ### Actions
@@ -348,7 +348,7 @@ This API is exposed as a Web Service, made available at:
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/TeamManagementService.asmx?WSDL`
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Team_AddUser](<#Team_AddUser>) | Adds a user to a team with a specified role. |
 | [Team_AssignApplication](<#Team_AssignApplication>) | Assigns an application to a team, replacing a previous assignment, if any. An application can only be assigned to a team a time. |
 | [Team_CreateOrUpdate](<#Team_CreateOrUpdate>) | Creates a new team or updates an already existent team. |
@@ -629,7 +629,7 @@ This API is exposed as a Web Service, made available at:
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/SecurityManagementService.asmx?WSDL`
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [IPAddress_GetLockedStatus](<#IPAddress_GetLockedStatus>) | |
 | [IPAddress_Unlock](<#IPAddress_Unlock>) | |
 | [User_GetLockedStatus](<#User_GetLockedStatus>) | |
@@ -777,7 +777,7 @@ This API is exposed as a Web Service, made available at:
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/DbConnectionManagementService.asmx?WSDL`
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [DbConnection_Create](<#DbConnection_Create>) | Creates a new database connection. |
 | [DbConnection_Delete](<#DbConnection_Delete>) | Deletes the database connection given by the name. |
 | [DbConnection_Edit](<#DbConnection_Edit>) | Updates the configuration of the database connection. |
@@ -1393,7 +1393,7 @@ This API is exposed as a Web Service, made available at:
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/UserManagementService.asmx?WSDL`
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [User_ChangePassword](<#User_ChangePassword>) | Changes the password of a platform user. |
 | [User_ChangeUsername](<#User_ChangeUsername>) | Changes the username of a platform user. |
 | [User_CreateOrUpdate](<#User_CreateOrUpdate>) | Creates a new platform user or updates an existing one. The operation activates the user in the platform. |

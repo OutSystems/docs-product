@@ -68,25 +68,25 @@ It's usually up to extension developers to ensure that no null references are ha
 
 If an extension action is imported from a .NET assembly with this option turned on, any null values handed over by the extension to the platform will be converted to the following default values, according to each data type:
 
-| Data Type    | Default value |
-| -------------|-------------- |
-| Text         | `""` |
-| Integer      | `0` |
+| Data Type | Default value |
+| ------------- | -------------- |
+| Text | `""` |
+| Integer | `0` |
 | Long Integer | `0` |
-| Decimal      | `0` |
-| Boolean      | `False` |
-| Date Time    | `#1900-01-01#` |
-| Date         | `#1900-01-01#` |
-| Time         | `#1900-01-01#` |
+| Decimal | `0` |
+| Boolean | `False` |
+| Date Time | `#1900-01-01#` |
+| Date | `#1900-01-01#` |
+| Time | `#1900-01-01#` |
 | Phone Number | `""` |
-| Email        | `""` |
-| Binary Data  | `new byte[0]` |
-| Object       | `new <object>` |
-| Currency     | `0` |
-| Record       | `new <record>` |
-| Record List  | `new <recordlist>` |
+| Email | `""` |
+| Binary Data | `new byte[0]` |
+| Object | `new <object>` |
+| Currency | `0` |
+| Record | `new <record>` |
+| Record List | `new <recordlist>` |
 | Integer Identifier | `0` |
-| Text Identifier    | `""` |
+| Text Identifier | `""` |
 | Long Integer Identifier | `0` |
 
 ## Report contents

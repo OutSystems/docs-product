@@ -29,7 +29,7 @@ This API is available under the `OutSystems.RuntimePublic.Db` .NET namespace.
 ## Classes
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | [Command](#command) | Represents a command to execute queries. |
 | [CommittableTransaction](#committabletransaction) | Represents a transaction that needs to be explicitly managed using commit and roll back operations. Use it for selecting, inserting, updating, and deleting data. |
 | [Connection](#connection) | Represents a connection to a database. |
@@ -54,8 +54,8 @@ Represents a command to execute queries.
 #### Methods
 
 | Name | Description |
-| ---|--- |
-| [DataParameter](#dataparameter) CreateParameter(string name, DbType type, object value)  | Adds a parameter to the command with a given type and value. The parameter value is modified to a compatible database value. |
+| --- | --- |
+| [DataParameter](#dataparameter) CreateParameter(string name, DbType type, object value) | Adds a parameter to the command with a given type and value. The parameter value is modified to a compatible database value. |
 | [DataParameter](#dataparameter) CreateParameter(string name) | Adds a parameter to the command. The parameter value is modified to a compatible database value. |
 | void Dispose() | Frees the resources used by this object. |
 | int ExecuteNonQuery() | Executes the command and returns the number of rows affected. |
@@ -68,7 +68,7 @@ Represents a command to execute queries.
 #### Members
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | string CommandText | Gets or sets the SQL statements to execute. |
 | int CommandTimeout | Gets or sets the command execution timeout (in seconds). |
   
@@ -79,7 +79,7 @@ Represents a transaction that needs to be explicitly managed using commit and ro
 #### Methods
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | void Close() | Rolls back a transaction from a pending state and closes the transaction. |
 | void Commit() | Commits the transaction. |
 | [Command](#command) CreateCommand(string sql) | Creates a command that you can execute in this transaction. |
@@ -96,7 +96,7 @@ Represents a connection to a database.
 #### Methods
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | [CommittableTransaction](#committabletransaction) BeginReadUncommittedTransaction() | Creates an [OutSystems.RuntimePublic.Db.CommittableTransaction](#committabletransaction) with the transaction isolation level set to read uncommitted.<br/>**Warning: This method has been deprecated.** |
 | [CommittableTransaction](#committabletransaction) BeginTransaction() | Creates an [OutSystems.RuntimePublic.Db.CommittableTransaction](#committabletransaction) with the transaction isolation level set to read committed.<br/>**Warning: This method has been deprecated.** |
 | void Close() | Closes the connection to the database. |
@@ -113,7 +113,7 @@ Creates DatabaseProvider instances to access a database.
 #### Methods
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | [DatabaseProvider](#databaseprovider) ForDatabase(string databaseName) | Returns a database provider for a given database catalog or schema. Use it to access data managed by applications that are configured to use this database. |
 | [DatabaseProvider](#databaseprovider) ForExternalDatabase(string connectionName) | Returns a database provider for a specific external database connection. Use it to access data managed by external systems. |
 | [DatabaseProvider](#databaseprovider) ForRunningApplication() | Returns a database provider to access the database of the currently running application. Use it to access data managed by the currently running application, or other applications sharing the same database. |
@@ -126,14 +126,14 @@ Provides access to a specific database.
 #### Methods
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | [CommittableTransaction](#committabletransaction) GetCommitableTransaction() | Returns a new transaction that needs to be managed explicitly using a commit or roll back. |
 | [RequestTransaction](#requesttransaction) GetRequestTransaction() | Returns the transaction that starts at the beginning of the web request and is committed when the response is sent to the client. This transaction can't be committed or rolled back inside extensions. |
 
 #### Members
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | [SqlHelper](#sqlhelper) SqlHelper | Returns a [SqlHelper](#sqlhelper) instance targeted at the manipulation of SQL statements members. |
 | int CommandTimeout | Gets or sets the command execution timeout. |
 
@@ -144,13 +144,13 @@ Represents the query parameters associated with a command.
 #### Methods
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | IDbDataParameter <br/>GetDriverParameter() | Returns the native parameter object used by the stack in which the application is running. |
 
 #### Members
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | DbType DbType | Gets or sets the database type. |
 | int Size | Sets the size of the parameter. |
 | object Value | Gets or sets the parameter value. |
@@ -162,7 +162,7 @@ Represents the transaction that's automatically managed by the platform. The tra
 #### Methods
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | [Command](#command) CreateCommand(string sql) | Creates a command that you can execute in this transaction. |
 | [Command](#command) CreateCommand() | Creates an empty command that you can execute in this transaction. |
 | void Dispose() | Releases the transaction and frees the resources used by this object. |
@@ -177,6 +177,6 @@ Functions to assist in the manipulation of SQL statements members.
 #### Methods
 
 | Name | Description |
-| ---|--- |
+| --- | --- |
 | string EscapeIdentifier(string identifier) | Escapes an identifier so you can use it in a query. |
 | string PrefixParam(string paramName) | Prefixes a parameter name used as a placeholder in a query or as the "de facto" parameter name when creating command parameters. |

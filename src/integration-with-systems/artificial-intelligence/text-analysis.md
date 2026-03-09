@@ -225,7 +225,7 @@ This is the overview of what you can do with the component, as well and the Azur
 | ---- | ---- | --- | ---- |
 | Key phrases detection | GetKeyPhrasesInText | TextAnalysis\KeyPhrasesHighlight | Text Analytics |
 | Sentiment detection | DetectSentimentInText | TextAnalysis\SentimentDetection | Text Analytics |
-| Entities detection | EntitiesHighlight |  TextAnalysis\GetEntitiesInText | Text Analytics |
+| Entities detection | EntitiesHighlight | TextAnalysis\GetEntitiesInText | Text Analytics |
 | Spellchecking | RunSpellChecker | NA | Bing Spell Check |
 | Translation | GetTextTranslation | NA | Translator |
 

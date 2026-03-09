@@ -46,8 +46,8 @@ You have an element that belongs simultaneously to different Start, Exception Ha
 
 **Examples**  
 
-| Flow        | Description  |
-|:-----------:|:-------------|
+| Flow | Description |
+| :-----------: | :------------- |
 | ![Flowchart showing an Assign element belonging to both Action and Exception flows, causing an error.](images/ambiguous-paths-1.png "Example of Ambiguous Paths in Action Flow") | In this situation, the Assign element belongs to the Action flow and also to the Exception flow, therefore the Error Handler flow is crossing the regular execution of the Action. |
 | ![Flowchart illustrating an Assign element shared by Action flow and For Each loop, leading to an error.](images/ambiguous-paths-2.png "Example of Ambiguous Paths with For Each in Action Flow") | In this situation, the Assign element belongs to the Action flow and also to the For Each flow. |
 

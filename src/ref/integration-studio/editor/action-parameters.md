@@ -45,7 +45,7 @@ By default, the parameter is an input parameter. To define an Output parameter, 
 The order of the parameters must be the same in both the extension action and in the corresponding C# method. The Action Parameter Editor contains the necessary buttons to define the order of the parameters:
 
 | Button | Description |
-| :-----:|:----------- |
+| :-----: | :----------- |
 | ![Button to move the selected parameter down one position in the Action Parameter Editor](images/bottom-one-icon.png "Move Parameter Down Button") | Move the selected parameter down. |
 | ![Button to move the selected parameter to the bottom of the list in the Action Parameter Editor](images/bottom-all-icon.png "Move Parameter to Bottom Button") | Move the selected parameter to the bottom of the list. |
 | ![Button to move the selected parameter up one position in the Action Parameter Editor](images/top-one-icon.png "Move Parameter Up Button") | Move the selected parameter up. |

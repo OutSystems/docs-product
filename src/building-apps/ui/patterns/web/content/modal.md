@@ -91,7 +91,7 @@ The result of this example looks something like the following:
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | Position (PositionExtended Identifier): Optional | Set the position of the Modal on the screen. <p>Examples</p><ul><li>Blank - The modal is positioned in the center of the screen (Entities.PositionExtended.Center). This is the default.</li><li>Entities.PositionExtended.TopLeft - The modal is positioned top-left of the screen.</li></ul> |
 | HasOverlay (Boolean): Optional | If True, an overlay is enabled behind the modal. This is the default. If False, there is no overlay. |
 | EnterAnimation (EnterAnimation Identifier): Optional | Define from where the animation enters the screen. <p>Examples</p><ul><li>Blank - The animation goes from a small size to its rendered size (Entities.EnterAnimation.EnterScale). This is the default.</li><li>Entities.EnterAnimation.EnterBottom - The animation enters from the bottom of the screen.</li></ul> |

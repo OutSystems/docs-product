@@ -61,7 +61,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | Color (Color Identifier): Optional | Set the Tag's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available. <p>Examples <ul><li>Blank - Displays the badge in the color you chose when creating the app (default value).</li><li>Entities.Color.Red - The Tag's background is red.</li></ul></p> |
 | Shape (Shape Identifier): Optional | Set the Tag's shape. Rounded, soft rounded, and sharp are the predefined shapes available. <p>Examples <ul><li>Blank - Displays a rounded shaped Tag (default value).</li><li>Entities.Shape.Sharp - Displays a square shaped Tag.</li></ul></p> |
 | Size (Size Identifier): Optional | Set the Tag's size. Small and medium are the predefined sizes available. <p>Examples <ul><li>Entities.Size.Medium - Displays a medium-sized badge.</li><li>Entities.Size.Small - Displays a small sized Tag.</li></ul></p> |

@@ -48,10 +48,10 @@ The following is an overview of the Read/Write Data One-to-Many pattern:
 In this sample pattern, we use a dictionary to maintain the relationship between the records of the parent and child entities. When syncing new parent entity records with the server, the dictionary keeps track of the correspondence between the original ID on the local storage and the new ID on the server database as shown below. This is needed because the parent and the child records are not created in the server database at the same time, so the dictionary mapping is used to update the unsynced child records with the foreign keys generated on the main server database.
 
 | Key: local record ID | Value: server record ID |
-| ---------------------|------------------------ |
-| 5                    | 135 |
-| 6                    | 136 |
-| 7                    | 150 |
+| --------------------- | ------------------------ |
+| 5 | 135 |
+| 6 | 136 |
+| 7 | 150 |
 
 You can download the [sample module for the Read/Write Data One-to-Many pattern](http://www.outsystems.com/forge/component/1638/Offline+Data+Sync+Patterns/) explained here and examine the logic in your own environment.
 

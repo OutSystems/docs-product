@@ -49,9 +49,9 @@ You can use the output parameters of the **Launch&lt;Process Name&gt;** process 
 
 The extended actions for the process and process activities are the following:
 
-|Element   |Extended Action   |Description   |
-|:----------|:----------|:----------|
-| Process| Launch&lt;Process Name&gt;|Launches an instance of the Process.|
-| Human Activity| Close&lt;Human Activity Name&gt;|Closes a Human Activity.|
-| Wait| Close&lt;Wait Name&gt;|Closes a Wait activity.|
-| Conditional Start| Start&lt;Conditional Start Name&gt;|Starts a Conditional Start activity. |
+| Element | Extended Action | Description |
+| :---------- | :---------- | :---------- |
+| Process | Launch&lt;Process Name&gt; | Launches an instance of the Process. |
+| Human Activity | Close&lt;Human Activity Name&gt; | Closes a Human Activity. |
+| Wait | Close&lt;Wait Name&gt; | Closes a Wait activity. |
+| Conditional Start | Start&lt;Conditional Start Name&gt; | Starts a Conditional Start activity. |

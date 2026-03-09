@@ -20,8 +20,8 @@ coverage-type:
 
 When defining the process flow of your processes, Service Studio provides the following Tools:
 
-| Tool      | Description    |
-|:----------|:---------------|
+| Tool | Description |
+| :---------- | :--------------- |
 | Start | Starts the process flow. Only one Start element is allowed in a process flow. |
 | Conditional Start | Starts an alternative flow in the process flow. How to use a [Conditional Start](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Processes/Process_Tools/Conditional_Start). |
 | Human Activity | Activity to be executed by a human being. How to use a [Human Activity](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Processes/Process_Tools/Human_Activity). |

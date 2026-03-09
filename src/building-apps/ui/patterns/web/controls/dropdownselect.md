@@ -80,7 +80,7 @@ How this pattern behaves depends on the way it is bound.
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | WidgetId (Text): Mandatory | Element name (Combo Box and List Box) that triggers the element. |
 | NoResultsText (Text): Optional | Text to display when there are no results. The default value is "No results found." |
 | SearchEnabled (Boolean): Optional | If False, the search functionality is removed. This property does not work with the List Box. If True, the search functionality is enabled. This is the default value. |

@@ -76,8 +76,8 @@ This example shows how to edit the Grid data and save those changes to the datab
     In this example the following is added:
 
     | **Logic** | **Property** | **Value** |
-    |---|---|---|
-    | **For Each**  | Record List | EditedProducts (Input Parameter) |
+    | --- | --- | --- |
+    | **For Each** | Record List | EditedProducts (Input Parameter) |
     | **Run Server Action** | Source | EditedProducts.Current |
 
     ![Screenshot showing the logic added to update data in the database using a For Each loop and Run Server Action.](images/grid-save-logic-ss.png "Adding Logic to Update Data in the Database")

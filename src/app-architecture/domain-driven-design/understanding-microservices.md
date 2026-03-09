@@ -27,11 +27,11 @@ _is an approach to developing a single application as a suite of small services,
 
 With the hype of microservices and the fall of monoliths, it became clear that as the constituent services are small, they can be built by one or more small teams from the beginning, separated by service boundaries. All in all, this makes it easier to scale up the development effort.
 
-|Microservices have many benefits...|...but come with additional burdens|
-|-----|-----|
-| **Strong Module Boundaries**<br/>Microservices reinforce modular structure, which is particularly important for larger teams. The structure of a software system mirrors the communication structure of the organization that built it.| **Inter-process communication**<br/>Dealing with network latency and hiccups, data marshalling<br/>**Multiple transactions**<br/>Handling and coordinating multiple independent commits|
-|**Independent Deployment**<br/>Simple services are easier to deploy, and since they're autonomous, are less likely to cause system failures when they go wrong. Continuous delivery becomes a must, as the organizations that do this can respond quickly to market changes and introduce new features faster than their competition.|**Fault tolerance**<br/>Recovering from and handling communication errors and service consistency<br/>**Limited data mashup**<br/>Executed in memory and limited to APIs<br/>**Security**<br/>Access management and authentication|
-|**Technology Diversity**<br/>With microservices, you can mix multiple languages, development frameworks and data-storage technologies.|**Debugging & troubleshooting**<br/>Drilldown to the root cause, because it may be inside of the chain of services<br/>**Monitor & logging**<br/>Need to centralize effective monitoring & logging|
+| Microservices have many benefits... | ...but come with additional burdens |
+| ----- | ----- |
+| **Strong Module Boundaries**<br/>Microservices reinforce modular structure, which is particularly important for larger teams. The structure of a software system mirrors the communication structure of the organization that built it. | **Inter-process communication**<br/>Dealing with network latency and hiccups, data marshalling<br/>**Multiple transactions**<br/>Handling and coordinating multiple independent commits |
+| **Independent Deployment**<br/>Simple services are easier to deploy, and since they're autonomous, are less likely to cause system failures when they go wrong. Continuous delivery becomes a must, as the organizations that do this can respond quickly to market changes and introduce new features faster than their competition. | **Fault tolerance**<br/>Recovering from and handling communication errors and service consistency<br/>**Limited data mashup**<br/>Executed in memory and limited to APIs<br/>**Security**<br/>Access management and authentication |
+| **Technology Diversity**<br/>With microservices, you can mix multiple languages, development frameworks and data-storage technologies. | **Debugging & troubleshooting**<br/>Drilldown to the root cause, because it may be inside of the chain of services<br/>**Monitor & logging**<br/>Need to centralize effective monitoring & logging |
 
 As you can see, all the initial benefits create additional burdens. What was promised to speed up the process has now become a huge complexity problem.
 

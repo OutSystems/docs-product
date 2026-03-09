@@ -25,7 +25,7 @@ The Case Process Configurations API includes actions used to configure the under
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Activity_GetAssignDetailsByActivityId](<#Activity_GetAssignDetailsByActivityId>) | Gets the activity assignment details (user and group) and if the acitivity is blocked |
 | [ActivityDefinitionConfiguration_Get](<#ActivityDefinitionConfiguration_Get>) | Gets the configuration of an activity definition |
 | [ActivityDefinitionConfiguration_GetAll](<#ActivityDefinitionConfiguration_GetAll>) | Gets all the activity configuration of an process definition |
@@ -62,7 +62,7 @@ The Case Process Configurations API includes actions used to configure the under
 | [ProcessSLA_InitializeStaging](<#ProcessSLA_InitializeStaging>) | It will mark all entries as deleted for the staging process after only import the active ones |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [Activity_AssignDetails](<#Structure_Activity_AssignDetails>) | Details about activity assignment details |
 | [ActivityDefinition_Detail](<#Structure_ActivityDefinition_Detail>) | Contains the generic details for activity definition |
 | [ActivityDefinition_DetailWithSLA](<#Structure_ActivityDefinition_DetailWithSLA>) | Contains the generic details for activity definition SLA |

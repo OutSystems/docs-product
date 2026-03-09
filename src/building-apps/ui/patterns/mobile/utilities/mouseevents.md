@@ -101,7 +101,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | WidgetId (Text): Mandatory | The element that responds to the mouse event you configure. |
 | PreventDefaults (Boolean): Optional | If True, events propagation to the screen and other widgets is stopped. This is the default. If False, event propagation to the screen and other widgets is enabled. |
 

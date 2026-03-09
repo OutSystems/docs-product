@@ -46,12 +46,12 @@ Adding big resource files to your module may slow down the publish operation.
 In the table below there are some example of how you can use the Resources path and filename in the design of your module:
 
 | Resource Filename | Target Directory | Relative Path |
-|-------------------|------------------|---------------|
-|'Presentation.wmv' |'Videos'          |'Videos\Presentation.wmv'|
-|'Tutorial1.wmv'    |'Videos\Tutorials'|'Videos\Tutorials\Tutorial1.wmv'|
-|'Tutorial2.wmv'    |'Videos\Tutorials'|'Videos\Tutorials\Tutorial2.wmv'|
-|'Conditions.pdf'   |'Documents'       |'Documents\Conditions.pdf'|
-|'Statement.pdf'    |'' (application root directory)|'Statement.pdf'|
+| ------------------- | ------------------ | --------------- |
+| 'Presentation.wmv' | 'Videos' | 'Videos\Presentation.wmv' |
+| 'Tutorial1.wmv' | 'Videos\Tutorials' | 'Videos\Tutorials\Tutorial1.wmv' |
+| 'Tutorial2.wmv' | 'Videos\Tutorials' | 'Videos\Tutorials\Tutorial2.wmv' |
+| 'Conditions.pdf' | 'Documents' | 'Documents\Conditions.pdf' |
+| 'Statement.pdf' | '' (application root directory) | 'Statement.pdf' |
 
 ## Use Resources to Display a PDF Document
 

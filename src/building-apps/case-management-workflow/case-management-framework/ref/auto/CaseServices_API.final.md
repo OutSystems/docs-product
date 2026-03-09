@@ -39,7 +39,7 @@ You can also use this API to check information for a case, for example:
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [Activity_AddComments](<#Activity_AddComments>) | Adds a comment to an existing acitivity |
 | [Activity_AssignToGroup](<#Activity_AssignToGroup>) | Assigns an Activity to an existing group.%%If access control is switched on, automatically grants write access to the group for the case the activity is associated with.%%It performs a COMMIT on the transaction. |
 | [Activity_AssignToGroupAndUser](<#Activity_AssignToGroupAndUser>) | Assigns an Activity to an existing group and user.%%If access control is switched on, automatically grants write access to the group and user for the case the activity is associated with. |
@@ -147,7 +147,7 @@ You can also use this API to check information for a case, for example:
 | [UserExtended_GetById](<#UserExtended_GetById>) | Gets an user extended details |
 
 | Service Action | Description |
-| ---|--- |
+| --- | --- |
 | [Activity_GetActionList](<#Service_Activity_GetActionList>) | Returns the list of available actions for an existing activity based on its current details |
 | [Activity_GetExtraFieldValue](<#Service_Activity_GetExtraFieldValue>) | Gets the actual value of an extra field for a specific activity |
 | [Case_GetActivities](<#Service_Case_GetActivities>) | Gets all activities that match the provided scope and search criteria |
@@ -180,7 +180,7 @@ You can also use this API to check information for a case, for example:
 | [Tag_GetAllByLabel](<#Service_Tag_GetAllByLabel>) | Gets all Tags for a given Case Definition that match the specified label. If no label is specified all tags are returned up to the MaxResults input parameter value |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [Activity_AssignDetails](<#Structure_Activity_AssignDetails>) | Details about activity assignment details |
 | [Activity_CaseView](<#Structure_Activity_CaseView>) | For specific case, holds the activity view details |
 | [Activity_Details](<#Structure_Activity_Details>) | Activity details |

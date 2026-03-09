@@ -38,7 +38,7 @@ If a user attempts to access a case they don't have permission to read or write 
 For **Service actions**, some return a single case and others a list of cases. If the user does not have read permissions for all cases in a list of cases, only the ones they do have access to are returned. The cases they don't have access to are ignored and no exception is raised.
 
 | Action Type | Action | Required Permission | Return Type |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Case | [Case_AddComments](../ref/auto/CaseServices_API.final.md#Case_AddComments) | Write | Single |
 | Case | [Case_AddTags](../ref/auto/CaseServices_API.final.md#Case_AddTags) | Write | Single |
 | Case | [Case_RemoveTag](../ref/auto/CaseServices_API.final.md#Case_RemoveTag) | Write | Single |

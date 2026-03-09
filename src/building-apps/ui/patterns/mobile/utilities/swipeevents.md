@@ -85,7 +85,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | WidgetId (Text): Mandatory | Element that's swipeable. |
 
 ## Accessibility – WCAG 2.2 AA compliance

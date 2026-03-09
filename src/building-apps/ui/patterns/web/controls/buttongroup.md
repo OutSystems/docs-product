@@ -62,5 +62,5 @@ See [Variables](../../../../../ref/data/handling-data/variables/intro.md) for mo
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | IsJustified (Boolean): Optional | If True, the Button Group items are evenly distributed in the space available. If False, the Button Group items are left aligned. This is the default. |

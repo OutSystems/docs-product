@@ -37,10 +37,10 @@ Borders
 
 **Margins** and **Borders** have icons to indicate how edits apply to the widget.
 
-| Icon  | Meaning  |
-|---|---|
-|![Icon indicating that the value applies to all related properties in Styles Editor](images/styles-editor-icon-editable-unlocked.png "Editable Properties Icon") | The value applies to all other related properties. |
-|![Icon indicating that the value applies only to the current property in Styles Editor](images/styles-editor-icon-editable-locked.png "Locked Properties Icon") | The value applies to the current property only. |
+| Icon | Meaning |
+| --- | --- |
+| ![Icon indicating that the value applies to all related properties in Styles Editor](images/styles-editor-icon-editable-unlocked.png "Editable Properties Icon") | The value applies to all other related properties. |
+| ![Icon indicating that the value applies only to the current property in Styles Editor](images/styles-editor-icon-editable-locked.png "Locked Properties Icon") | The value applies to the current property only. |
 
 All changes apply to the current widget only.
 

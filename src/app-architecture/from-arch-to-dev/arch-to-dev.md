@@ -66,8 +66,8 @@ This is the first step. To understand what you are looking at:
 
 The following table shows some conventions:
 
-|Conventions | |
-|------------|-|
+| Conventions | |
+| ------------ | - |
 | Rectangles with round corners represent the **modules**. The rectangle color allows mapping each module to the level in the [Architecture Canvas.](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) | ![Icon representing modules in the architecture blueprint with rounded rectangle shapes.](images/archictecture-modules.png "Architecture Modules Icon") |
 | Rectangles with modules inside represent **Applications**. The rectangle color is lighter than the module color, and it also allows you to map the application to the architecture layers. | ![Icon representing applications in the architecture blueprint with rectangles containing modules.](images/architecture-applications.png "Architecture Applications Icon") |
 

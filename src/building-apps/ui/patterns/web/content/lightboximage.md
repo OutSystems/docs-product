@@ -75,7 +75,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | Property | Description |
-|---|---|
+| --- | --- |
 | Title (Text): Optional | Image title that is displayed when previewing the image in full screen mode. <p>Examples<ul><li>"Image 1" - Displays **Image 1** as the image title. </li></ul></p> |
 | Group (Text): Optional | Name of the group of images. Similar to the concept of a picture album. You can navigate through pictures with the same group name when viewing them in full screen mode.<p>Examples<ul><li>Gallery 1 - Adds this image to the Gallery 1 group</li></ul></p> |
 | ImageURL (Text): Optional | URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode. |

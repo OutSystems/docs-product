@@ -65,8 +65,8 @@ Starting from Platform Server 11.21.0, default values in consumed REST, SOAP and
 
 All the Locales are expressed according to the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format. Here are some examples:
 
-| English   | French   | Portuguese   | Spanish   |
-|-----------|----------|--------------|-----------|
+| English | French | Portuguese | Spanish |
+| ----------- | ---------- | -------------- | ----------- |
 | en: English | fr: French | pt: Portuguese | es: Spanish |
 | en-GB: English (United Kingdom) | fr-CA: French (Canada) | pt-BR: Portuguese (Brazil) | es-AR: Spanish (Argentina) |
 | en-US: English (United States) | fr-FR: French (France) | pt-PT: Portuguese (Portugal) | es-ES: Spanish (Spain) |

@@ -65,7 +65,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | Color (Color Identifier): Optional | Set the background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>Blank - No background color is applied. This is the default (Entities.Color.Transparent).</li><li>Entities.Color.Red - Applies a red background color to the card.</li></ul></p> |
 | Position (PositionExtended Identifier): Optional | Sets the widget position. <p>Examples</p><ul><li>Entities.PositionExtended.BottomRight - The widget displays on the bottom right of the screen. </li><li>Entities.PositionExtended.Center - The widget displays in the center of the screen. </li></ul> |
 | Height (Integer): Optional | Set the height of the Card (in pixels). By default, the content is vertically aligned. <p>Examples</p><ul><li>Blank - The Card height is 300 pixels. </li><li>500 - The Card height is 500 pixels. </li></ul> |

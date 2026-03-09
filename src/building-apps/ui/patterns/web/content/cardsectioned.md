@@ -67,7 +67,7 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | Orientation (Orientation Identifier): Optional | Sets the orientation of the card. <p>Examples</p><ul><li>Blank - The content displays vertically. This is the default.</li><li>Entities.Orientation.Horizontal - The content is displayed horizontally.</li></ul> |
 | ImagePadding (Boolean): Optional | If True, a padding of 24px is applied to the image. This is the default. If False, no padding is applied to the image. |
 | IsRight (Boolean): Optional | If True, content is left aligned. If False, content is right aligned. This is the default. **Note**: This property is only applicable if the **Orientation** property is set to **Horizontal**. |

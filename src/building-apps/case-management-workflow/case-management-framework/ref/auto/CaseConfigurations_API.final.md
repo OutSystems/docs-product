@@ -33,7 +33,7 @@ For example, this API is used to configure the following entities related to the
 ## Summary
 
 | Action | Description |
-| ---|--- |
+| --- | --- |
 | [BootstrapCaseConfiguration](<#BootstrapCaseConfiguration>) | Bootstraps the case configuration |
 | [Calendar_Create](<#Calendar_Create>) | Action to create a new calendar |
 | [Calendar_CreateOrUpdate](<#Calendar_CreateOrUpdate>) | Action to create or update a calendar |
@@ -155,11 +155,11 @@ For example, this API is used to configure the following entities related to the
 | [UserHierarchy_Import](<#UserHierarchy_Import>) | Submits a requests to import user's hierarchy |
 
 | Service Action | Description |
-| ---|--- |
+| --- | --- |
 | [SetupCaseManagementApplication](<#Service_SetupCaseManagementApplication>) | Sets up the basic configurations for a case management application |
 
 | Structure | Description |
-| ---|--- |
+| --- | --- |
 | [BusinessEntity_View](<#Structure_BusinessEntity_View>) | View for business entities |
 | [BusinessEntityAttr_View](<#Structure_BusinessEntityAttr_View>) | View for business entities attributes |
 | [Calendar_Create](<#Structure_Calendar_Create>) | Public structure to create a new Calendar |

@@ -52,10 +52,10 @@ This example shows how to edit data in the Grid using columns.
     This examples uses the following:
 
     | **Widget** | **Property** |
-    |---|---|
-    |**Number Column** | Header: "Stock" <br/> Binding: "Sample_Product.Stock"|
-    | **Currency Column**| Header: "Price"<br/> Binding: "Sample_Product.Price" |
-    |**Checkbox Column** | Header: "Is Favorite"<br/>Binding: "Sample_Product.IsFavourite" |  
+    | --- | --- |
+    | **Number Column** | Header: "Stock" <br/> Binding: "Sample_Product.Stock" |
+    | **Currency Column** | Header: "Price"<br/> Binding: "Sample_Product.Price" |
+    | **Checkbox Column** | Header: "Is Favorite"<br/>Binding: "Sample_Product.IsFavourite" |
 
     ![Screenshot showing the Data Grid with added columns for Name, Stock, Price, and Is Favorite with their respective bindings.](images/grid-edit-addcol-ss.png "Adding Columns to Data Grid")
 

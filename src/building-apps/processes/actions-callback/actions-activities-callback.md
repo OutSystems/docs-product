@@ -42,17 +42,17 @@ The business rules can be designed for the following available activity callback
 
 Below is a table containing a summary of which callback actions are executed by the activities:
 
-|Tool   | On Ready   | On Open   | On Start   | On Close   | On Skip   |
-|----------|----------|----------|----------|----------|----------|
-| Start|-|-|-|-|-|
-| Conditional Start|Yes|-|Yes|-|-|
-| Human Activity|Yes|Yes|-|Yes|Yes|
-| Send Email|-|-|-|-|-|
-| Automatic Activity|-|-|-|-|-|
-| Execute Process|-|-|-|-|-|
-| Wait|Yes|-|-|Yes|Yes|
-| Decision|-|-|-|-|-|
-| End|-|-|-|-|-|
+| Tool | On Ready | On Open | On Start | On Close | On Skip |
+| ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
+| Start | - | - | - | - | - |
+| Conditional Start | Yes | - | Yes | - | - |
+| Human Activity | Yes | Yes | - | Yes | Yes |
+| Send Email | - | - | - | - | - |
+| Automatic Activity | - | - | - | - | - |
+| Execute Process | - | - | - | - | - |
+| Wait | Yes | - | - | Yes | Yes |
+| Decision | - | - | - | - | - |
+| End | - | - | - | - | - |
 
 ## Designing Activities Callback Actions at Process Level
 

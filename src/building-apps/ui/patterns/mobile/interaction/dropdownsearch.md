@@ -108,36 +108,36 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property| Description|
-|---|---|
-|OptionsList (DropdownOption List): Mandatory|Defines the list of options to show in dropdown.|
-|OptionsList.Value (Text): Mandatory|Defines the items's value.|
-|OptionsList.Label (Text): Mandatory |Defines the items's text.|
-|OptionsList.ImageUrlOrIconClass (Text): Optional|Defines an image URL or a CSS class. If you define a URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
-|OptionsList.GroupName (Text): Optional|Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
-|OptionsList.Description (Text): Optional|Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|
-|StartingSelection (DropdownOption List): Optional| Defines the list of options that appear pre-selected in the Dropdown Search.<br/>The property is static and is only valid for the initial Dropdown Search state and is not  updated dynamically.|
-|StartingSelection.Value (Text): Mandatory|Defines the items's value.|
-|StartingSelection.Label (Text): Mandatory|Defines the items's text.|
-|StartingSelection.ImageUrlOrIconClass (Text): Optional |Define an image URL or a CSS class. If you define a URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
-|StartingSelection.GroupName (Text): Optional|Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
-|StartingSelection.Description (Text): Optional| Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|
-|Prompt (Text): Optional| Defines the text that is displayed when no items are selected and serves as an empty value.<br/><br/>The default message is: **Select...** |
-|OptionalConfigs (DropdownOptionalConfigs): Optional |Extra configurations.|
-|OptionalConfigs.AllowMultipleSelection (Boolean): Optional|Defines if multiple options can be selected. If True, multiple options can be selected. If False, only one option can be selected. The default value is False.|
-|OptionalConfigs.IsDisabled (Boolean): Optional|Set to True to disable the dropdown.|
-|OptionalConfigs.NoResultsText (Text): Optional|Defines the text that is displayed when there are no results to show.<br/><br/>The default message is: **There are no options to show.**|
-|OptionalConfigs.SearchPrompt (Text): Optional|Defines the prompt text that appears in the search input. <br/><br/>The default message is: **Search...**|
-|OptionalConfigs.NoOptionsText (Text): Optional |Defines the message that displays in the Dropdown list when there are no options available.<br/><br/>The default message is: **There are no options to show.** |
-|OptionalConfigs.SanitizeDropdownValues (Boolean): Optional |Set true to assure the values inputted in the dropdown will be sanitized or false if you want to explicitly allow custom code to run.<br/>By setting it to true it will replace HTML tags from option's text (value and label) to prevent potential injected code execution.<br/>This option is not enabled by default to avoid performance issues.<br/><br/>**Note:** When using OutSystems UI prior to version 2.23.0 and do not explicitly need to use HTML, ensure that the client action ``SetVirtualSelectConfigs`` is executed in the ``Initialized`` event handler of the Dropdown Search block, with ``enableSecureText = Entities.BooleanTypes.True`` to prevent potential injected code execution.|
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples:<br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
+| Property | Description |
+| --- | --- |
+| OptionsList (DropdownOption List): Mandatory | Defines the list of options to show in dropdown. |
+| OptionsList.Value (Text): Mandatory | Defines the items's value. |
+| OptionsList.Label (Text): Mandatory | Defines the items's text. |
+| OptionsList.ImageUrlOrIconClass (Text): Optional | Defines an image URL or a CSS class. If you define a URL, an image is added, otherwise the information is used as a class selector and an icon is added. |
+| OptionsList.GroupName (Text): Optional | Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group. |
+| OptionsList.Description (Text): Optional | Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option. |
+| StartingSelection (DropdownOption List): Optional | Defines the list of options that appear pre-selected in the Dropdown Search.<br/>The property is static and is only valid for the initial Dropdown Search state and is not  updated dynamically. |
+| StartingSelection.Value (Text): Mandatory | Defines the items's value. |
+| StartingSelection.Label (Text): Mandatory | Defines the items's text. |
+| StartingSelection.ImageUrlOrIconClass (Text): Optional | Define an image URL or a CSS class. If you define a URL, an image is added, otherwise the information is used as a class selector and an icon is added. |
+| StartingSelection.GroupName (Text): Optional | Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group. |
+| StartingSelection.Description (Text): Optional | Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option. |
+| Prompt (Text): Optional | Defines the text that is displayed when no items are selected and serves as an empty value.<br/><br/>The default message is: **Select...** |
+| OptionalConfigs (DropdownOptionalConfigs): Optional | Extra configurations. |
+| OptionalConfigs.AllowMultipleSelection (Boolean): Optional | Defines if multiple options can be selected. If True, multiple options can be selected. If False, only one option can be selected. The default value is False. |
+| OptionalConfigs.IsDisabled (Boolean): Optional | Set to True to disable the dropdown. |
+| OptionalConfigs.NoResultsText (Text): Optional | Defines the text that is displayed when there are no results to show.<br/><br/>The default message is: **There are no options to show.** |
+| OptionalConfigs.SearchPrompt (Text): Optional | Defines the prompt text that appears in the search input. <br/><br/>The default message is: **Search...** |
+| OptionalConfigs.NoOptionsText (Text): Optional | Defines the message that displays in the Dropdown list when there are no options available.<br/><br/>The default message is: **There are no options to show.** |
+| OptionalConfigs.SanitizeDropdownValues (Boolean): Optional | Set true to assure the values inputted in the dropdown will be sanitized or false if you want to explicitly allow custom code to run.<br/>By setting it to true it will replace HTML tags from option's text (value and label) to prevent potential injected code execution.<br/>This option is not enabled by default to avoid performance issues.<br/><br/>**Note:** When using OutSystems UI prior to version 2.23.0 and do not explicitly need to use HTML, ensure that the client action ``SetVirtualSelectConfigs`` is executed in the ``Initialized`` event handler of the Dropdown Search block, with ``enableSecureText = Entities.BooleanTypes.True`` to prevent potential injected code execution. |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples:<br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 
-|Event| Description|
-|---|---|
-|Initialized: Optional| Event triggered after the Dropdown Search instance is ready.|
-|OnChanged: Mandatory| Event triggered each time an option is selected.|
+| Event | Description |
+| --- | --- |
+| Initialized: Optional | Event triggered after the Dropdown Search instance is ready. |
+| OnChanged: Mandatory | Event triggered each time an option is selected. |
 
 ## Accessibility – WCAG 2.2 AA compliance
 

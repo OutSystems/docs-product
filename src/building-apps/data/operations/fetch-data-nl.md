@@ -63,14 +63,14 @@ Check the following examples on the best way to ask for data, depending on your 
 #### Get all data
 
 | You want | You ask |
-| ---|--- |
+| --- | --- |
 | **All employees** | `Find employees` |
 | **All orders and their descriptions**.<br/>Here, orders and their descriptions are in two different entities, Order and Order Details. | `Show Order and Order Details` |
 
 #### Get filtered data
 
 | You want | You ask |
-| ---|--- |
+| --- | --- |
 | **Employees who live in London** | `Find employees who live in London` |
 | **Sales managers in London** | `Employees who live in London and whose title is sales manager` |
 | **Orders that cost more than $10** | `Show orders with a minimum price of $10` |
@@ -82,20 +82,20 @@ Check the following examples on the best way to ask for data, depending on your 
 #### Get sorted data
 
 | You want | You ask |
-| ---|--- |
+| --- | --- |
 | **Employees ordered by the city they live in** | `Get employees ordered by City (in Employee)` |
 | **Orders sorted by price from highest to lowest** | `Show orders sorted by Price (in Order) from high to low` |
 
 #### Get grouped data
 
 | You want | You ask |
-| ---|--- |
+| --- | --- |
 | **All employees grouped by the city they live in** | `Get Employee grouped by CityName (in City)` |
 
 #### Get the count or average
 
 | You want | You ask |
-| ---|--- |
+| --- | --- |
 | **How many employees exist** | `Count employees` |
 | **How many users exist** | `Total number of users` |
 | **How many orders have shipped to London** | `How many orders shipped to London` |

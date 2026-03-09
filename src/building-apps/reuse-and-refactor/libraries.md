@@ -76,11 +76,11 @@ Due to their stateless and database agnostic design, Libraries can only contain 
 | Structures | ![Green check circle icon indicating availability of elements in Library modules.](images/ic_check_circle.png "Check Circle Icon") |
 | Resources | ![Green check circle icon indicating availability of elements in Library modules.](images/ic_check_circle.png "Check Circle Icon") |
 | Consumed REST<br/>Consumed SOAP<br/>SAP | ![Green check circle icon indicating availability of elements in Library modules.](images/ic_check_circle.png "Check Circle Icon") |
-| Exposed REST<br/>Exposed SOAP  | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon") |
+| Exposed REST<br/>Exposed SOAP | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon") |
 | Exceptions | ![Green check circle icon indicating availability of elements in Library modules.](images/ic_check_circle.png "Check Circle Icon") |
 | Processes | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon") |
 | Timers | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon") |
-| Roles | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon")|
+| Roles | ![Red cancel icon indicating unavailability of elements in Library modules.](images/ic_cancel.png "Cancel Icon") |
 
 ## Restrictions
 

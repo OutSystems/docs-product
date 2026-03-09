@@ -60,7 +60,7 @@ A `ContactPhoto` always belongs to a `Contact`. A `Contact` can have one `Contac
 To implement this relationship, the primary key of the `ContactPhoto` must be a reference attribute to the Primary key of the `Contact`:
 
 | Entity Diagram | Module Tree |
-| ---------------|------------ |
+| --------------- | ------------ |
 | ![Entity diagram illustrating a one-to-one relationship in OutSystems](images/one-to-one-entity-diagram.png "One-to-One Entity Diagram") | ![Module tree view showing a one-to-one relationship in OutSystems](images/one-to-one-module-tree.png "One-to-One Module Tree") |
 
 ## One-to-many relationships
@@ -83,7 +83,7 @@ A `Company` has one or more `Contact`. A `Contact` belongs to a `Company`.
 To implement this relationship, the reference attribute must be in the entity `Contact`:
 
 | Entity Diagram | Module Tree |
-| ---------------|------------ |
+| --------------- | ------------ |
 | ![Entity diagram illustrating a one-to-many relationship in OutSystems](images/one-to-many-entity-diagram.png "One-to-Many Entity Diagram") | ![Module tree view showing a one-to-many relationship in OutSystems](images/one-to-many-module-tree.png "One-to-Many Module Tree") |
 
 ## Many-to-many relationships
@@ -108,7 +108,7 @@ To implement this relationship, a third Entity must be created, `CompanyContact`
 * `ContactId`
 
 | Entity Diagram | Module Tree |
-| ---------------|------------ |
+| --------------- | ------------ |
 | ![Entity diagram illustrating a many-to-many relationship in OutSystems](images/many-to-many-entity-diagram.png "Many-to-Many Entity Diagram") | ![Module tree view showing a many-to-many relationship in OutSystems](images/many-to-many-module-tree.png "Many-to-Many Module Tree") |
 
 ## Referential integrity

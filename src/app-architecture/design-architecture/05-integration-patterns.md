@@ -101,11 +101,11 @@ However, this pattern has several **limitations**:
 
 * A constant need to extend **Customer_IS** and a strong dependency on the **ERP** team to provide new APIs each time a different data retrieval is required (e.g.: to filter with some criteria or to include more or less detail). Typically, to avoid this dependency, developers tend to inappropriately reuse the available API, for instance, by using a method that returns 50 fields, when only 4 are required.
 
-|Advantages|Disadvantages|
-|--- |--- |
-|Data is always up-to-date|More APIs (one per retrieval use case)|
-||More latency|
-||More hits on external system|
+| Advantages | Disadvantages |
+| --- | --- |
+| Data is always up-to-date | More APIs (one per retrieval use case) |
+| | More latency |
+| | More hits on external system |
 
 ### Cold Cache Summary Data
 
@@ -129,12 +129,12 @@ Adding local entities to **Customer_CS** will overcome the limitations of the **
 |---|---|
 |![Diagram depicting the Cold Cache pattern with batch synchronization for customer data.](images/cold-cache-with-batch-sync-diag.png "Cold Cache with Batch Sync Diagram")|The **Integration Service** becomes simple and stable. Instead of providing a myriad of actions for different data retrieval needs, it only has to supply a method to fetch all customer relevant data, updated since the last sync.<br/>**Customer_CS** has a timer to regularly synchronize information through the **Integration Service**. This synchronization should be unidirectional, to avoid complex merges of information - from the **ERP** (the master of data) to the **Core Service**. On the opposite direction, when an update is made in **Customer_CS**, you must be careful to make sure that the update is successful and synchronously committed in the ERP first (a write-through policy).|
 
-|Advantages|Disadvantages|
-|--- |--- |
-|Simpler API|Data may be outdated|
-|Enable data mashup in OutSystems||
-|Less impact on the source system||
-|Core Service customers not affected by the synchronization||
+| Advantages | Disadvantages |
+| --- | --- |
+| Simpler API | Data may be outdated |
+| Enable data mashup in OutSystems | |
+| Less impact on the source system | |
+| Core Service customers not affected by the synchronization | |
 
 <div class="subtopic">Isolate synchronization logic</div>
 
@@ -152,12 +152,12 @@ Normally, a cold cache with summary data that is required for search, listing or
 |---|---|
 |![Diagram showing real-time synchronization with an external system of records through an API module.](images/real-time-sync-diag.png "Real-Time Sync Diagram")|Real-time sync requires the external system of records to callback OutSystems, notifying some change in real time (in this example a customer update or insert).<br/>The **API** and the **IS** modules completely isolate the Core Service, making it agnostic to the external system and to the synchronization process.|
 
-|Advantages|Disadvantages|
-|--- |--- |
-|Simpler API|More inter-system dependency|
-|Enable data mashup in OutSystems|Not appropriate for a high load of changes, by not providing a queue|
-|Less impact on the source system||
-|Data is always current||
+| Advantages | Disadvantages |
+| --- | --- |
+| Simpler API | More inter-system dependency |
+| Enable data mashup in OutSystems | Not appropriate for a high load of changes, by not providing a queue |
+| Less impact on the source system | |
+| Data is always current | |
 
 <div class="subtopic">Queued real-time sync</div>
 

@@ -11,7 +11,7 @@ All documentation present in this repository should be written in Markdown (chec
 The Markdown-to-HTML conversion process is done through the Python Markdown package. The following Markdown extensions are currently being used in the conversion step:
 
 | Extension | Description |
-| ----------|------------ |
+| ---------- | ------------ |
 | [markdown.extensions.extra](https://python-markdown.github.io/extensions/extra/) | Meta-extension adding support to a series of smaller extensions (check documentation). Currently supports the definition lists syntax. |
 | [markdown.extensions.meta](https://python-markdown.github.io/extensions/meta_data/) | Read metadata from each Markdown front-matter section (discarded in HTML output). Can be used for specifying custom page titles, for example (not used by the default template). |
 | [markdown.extensions.toc](https://python-markdown.github.io/extensions/toc/) | Only used to get automatic bookmarks in headings. |

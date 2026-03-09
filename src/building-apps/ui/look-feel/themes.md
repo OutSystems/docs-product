@@ -274,14 +274,14 @@ The mobile Themes have the block-specific events and actions, which are later co
 
 What placeholders to use depends on the type of screen. Here is an overview for the web applications:
 
-|Type of Screen/<br/> Placeholder|Title|MainContent |Actions|Header|Menu|Footer|
-|---|---|---|---|---|---|---|
-|**Blank Screen**||Required||Optional|Optional|Optional|
-|**List Screen**|Required|Required|Optional|Optional|Optional|Optional|
-|**Edit Screen**|Required|Required|Optional|Optional|Optional|Optional|
-|**Info Balloon**||Required|||||
-|**Pop-up Editor**||Required|||||
-|**Email**|Optional|Required|||||
+| Type of Screen/<br/> Placeholder | Title | MainContent | Actions | Header | Menu | Footer |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Blank Screen** | | Required | | Optional | Optional | Optional |
+| **List Screen** | Required | Required | Optional | Optional | Optional | Optional |
+| **Edit Screen** | Required | Required | Optional | Optional | Optional | Optional |
+| **Info Balloon** | | Required | | | | |
+| **Pop-up Editor** | | Required | | | | |
+| **Email** | Optional | Required | | | | |
 
 Some examples:
 

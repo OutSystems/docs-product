@@ -75,7 +75,7 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 ## Properties
 
 | Property | Description |
-|---|---|
+| --- | --- |
 | Margin(Integer): Optional | Set the distance between each Carousel item. Default value is 0.<p>Examples<ul><li>Blank - A distance of 16 pixels between each Carousel item.</li><li>32 - A distance of 32 pixels between each Carousel item.</li></ul></p> |
 | Padding(Integer): Optional | Set the distance between the screen edges and the visible items on the screen. <p>Examples<ul><li>Blank - No distance between the screen edges and the on screen item. This is the default value.</li><li>5 - A distance of 5 pixels between the screen edges and the on screen item.</li></ul></p> |
 | Pagination(Boolean): Optional | Enable or disable navigational dots that represent items on the Carousel.<p>Examples<ul><li>Blank - Navigational dots are displayed. This is the default value.</li><li>True - Navigational dots are displayed.</li><li>False - No navigational dots are displayed.</li></ul></p> |

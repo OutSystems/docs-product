@@ -132,14 +132,14 @@ The following figure depicts the foundation application that supports all applic
 
     * **Audit_Lib API (public methods):**
 
-        | Name              |Description  |
-        |-------------------|-------------|
-        | Audit_Create      |Async method to log new record Creation registration|
-        |Audit_Update       |Async method to log an Updated record|
-        |Audit_Delete       |Async method to log Deleted record|
-        |Audit_OperationLog |Async method to log any Operation performed by User or System|
-        |Audit_GenericLog   |Async method to log Generic information|
-        |Audit_ListFilterLog|Returns a List of logs according to the filter provided|
+      | Name | Description |
+      | ------------------- | ------------- |
+      | Audit_Create | Async method to log new record Creation registration |
+      | Audit_Update | Async method to log an Updated record |
+      | Audit_Delete | Async method to log Deleted record |
+      | Audit_OperationLog | Async method to log any Operation performed by User or System |
+      | Audit_GenericLog | Async method to log Generic information |
+      | Audit_ListFilterLog | Returns a List of logs according to the filter provided |
 
 * **LogMessage_IS Module**
 

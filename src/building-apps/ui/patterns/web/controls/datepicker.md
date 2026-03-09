@@ -75,7 +75,7 @@ For advanced options, you can check the official documentation of the [Pikaday l
 ## Properties
 
 | **Property** | **Description** |
-|---|---|
+| --- | --- |
 | InputWidgetId (Text): Mandatory | Input element Id that triggers the element so it is visible. |
 | ButtonWidgetId (Text): Optional | Element name (example: button) that  triggers the element so it is visible. |
 | DisabledDates (Date List):Optional | List of dates for the disabled days. |
@@ -84,12 +84,12 @@ For advanced options, you can check the official documentation of the [Pikaday l
 | InitialDate (Date Time): Optional | If set, the calendar will initially display the set date, otherwise it will display the current Date (default). |
 | DateFormat (Text): Optional | Defaults to the date format defined in the server configuration. The default is the server date format. |
 | SelectInterval (Boolean): Optional | Allows the selection between two dates. If set to True, the Block Event "On Select" has the values for both parameters. |
-| AdvancedFormat (DatePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters.                                                    |
+| AdvancedFormat (DatePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters. |
 
 ### Date Picker advanced format information
 
 | **Property** | **Description** |
-|---|--- |
+| --- | --- |
 | EventsList (DateTime List): Optional | A list of events (type Date Time) |
 | AdvancedFormatJSON (DateTime List): Optional | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: <https://github.com/dbushell/Pikaday> |
 

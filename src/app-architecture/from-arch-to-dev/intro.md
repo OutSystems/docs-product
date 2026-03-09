@@ -85,7 +85,7 @@ First of all, let's understand the functional and non-functional requirements. I
 Let's have a quick recap of the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) principles:
 
 | Layer | Description |
-|---|---|
+| --- | --- |
 | ![Icon for the End User Layer, indicating user interfaces and processes.](images/end-user-layer.png "End User Layer Icon") | User interfaces and processes, reusing **Core** and **Library** to implement the user stories. |
 | ![Icon for the Core Layer, indicating core business services.](images/core-layer.png "Core Layer Icon") | Services around business concepts, exporting reusable entities, business rules, and business widgets. |
 | ![Icon for the Foundation Layer, indicating non-business services.](images/foundation-layer.png "Foundation Layer Icon") | Business-agnostic services to extend the framework with highly reusable assets, UI Patterns, connectors to external systems, and integration of native code. |

@@ -31,17 +31,17 @@ When building the workflow app, the Workflow Builder users can assign tasks in t
 
 Workflow Builder generates for each app a set of groups, roles, and sample users (in the development environment only) that you need to use for the user and access management. The roles and groups generated are associated with each application and have the following structure:
 
-|Roles |
-|------|
-|&lt;**AppName**&gt;Requester |
-|&lt;**AppName**&gt;Operator  |
-|&lt;**AppName**&gt;Administrator|
+| Roles |
+| ------ |
+| &lt;**AppName**&gt;Requester |
+| &lt;**AppName**&gt;Operator |
+| &lt;**AppName**&gt;Administrator |
 
-|Groups |Roles in group |Sample users in group |
-|-----------------------|-------------------|-----------|
-|WB \| &lt;**AppName**&gt; \| Requesters | &lt;**AppName**&gt;Requester | Requester  |
-|WB \| &lt;**AppName**&gt; \| &lt;**GroupName**&gt; | &lt;**AppName**&gt;Operator  | &lt;**GroupName**&gt;|
-|WB \| &lt;**AppName**&gt; \| Administrator|&lt;**AppName**&gt;Administrator | Administrator|
+| Groups | Roles in group | Sample users in group |
+| ----------------------- | ------------------- | ----------- |
+| WB \ | &lt;**AppName**&gt; \ | Requesters | &lt;**AppName**&gt;Requester | Requester |
+| WB \ | &lt;**AppName**&gt; \ | &lt;**GroupName**&gt; | &lt;**AppName**&gt;Operator | &lt;**GroupName**&gt; |
+| WB \ | &lt;**AppName**&gt; \ | Administrator | &lt;**AppName**&gt;Administrator | Administrator |
 
 The &lt;AppName&gt;Administrator role enables an end user to manage all the request and tasks of the app, by doing the following:
 
@@ -51,18 +51,18 @@ The &lt;AppName&gt;Administrator role enables an end user to manage all the requ
 
 Using the example of an **Expense Approval** app with validation with the procurement and finance groups, the roles, groups, and sample users created in the development environment are:
 
-|Roles |
-|------|
-|**ExpenseApproval**Requester |
-|**ExpenseApproval**Operator |
-|**ExpenseApproval**Administrator |
+| Roles |
+| ------ |
+| **ExpenseApproval**Requester |
+| **ExpenseApproval**Operator |
+| **ExpenseApproval**Administrator |
 
-|Groups                           |Roles in group             |Sample users in group |
-|---------------------------------|---------------------------|------------|
-|WB \| **Expense Approval** \| Requester            |**ExpenseApproval**Requester |Requester   |
-|WB \| **Expense Approval** \| Procurement  |**ExpenseApproval**Operator  |Procurement |
-|WB \| **Expense Approval** \| Finance      |**ExpenseApproval**Operator  |Finance     |
-|WB \| **Expense Approval** \| Administrator | **ExpenseApproval**Administrator | Administrator |
+| Groups | Roles in group | Sample users in group |
+| --------------------------------- | --------------------------- | ------------ |
+| WB \ | **Expense Approval** \ | Requester | **ExpenseApproval**Requester | Requester |
+| WB \ | **Expense Approval** \ | Procurement | **ExpenseApproval**Operator | Procurement |
+| WB \ | **Expense Approval** \ | Finance | **ExpenseApproval**Operator | Finance |
+| WB \ | **Expense Approval** \ | Administrator | **ExpenseApproval**Administrator | Administrator |
 
 ## Configuring the hierarchy integration
 

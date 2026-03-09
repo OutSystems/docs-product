@@ -124,11 +124,11 @@ Both Server Actions and Service Actions have their own characteristics and shoul
 
 The table below compares the most relevant differences between Server Actions and Service Actions:
 
-|   | Server Actions | Service Actions |
+| | Server Actions | Service Actions |
 | - | -------------- | --------------- |
 | **Release cycles** | Changes in implementation requires consumers to also be deployed. | Changes in the implementation can be deployed independently from the consumers. |
 | **Service communication** | Consumer and producer modules run in a single process. | Consumer and producer modules run in different processes. |
-| **DB transactions** | All transactions in a single process. |Multiple processes require multiple transactions. |
+| **DB transactions** | All transactions in a single process. | Multiple processes require multiple transactions. |
 | **Development effort** | Simpler logic and faster development. | Requires additional logic to handle transactionality and networking. |
 
 During the lifecycle of your application, you will typically start with a small tightly-coupled application. When your application begins to evolve to a large portfolio, you should decide when is the right time to start decoupling your modules, using Service Actions to expose functionality instead of Server Actions.

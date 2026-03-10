@@ -16,6 +16,7 @@ exceptions:
   - Agent Workbench
   - Center
   - Conversion Assessment Tool
+  - DbCleaner
   - Integration Builder
   - Service
   - Studio

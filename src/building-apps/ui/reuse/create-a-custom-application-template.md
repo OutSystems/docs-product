@@ -26,7 +26,7 @@ To create a template for an application:
 
 1. Create a module and name it as `Template_<module_name>`, where `<module_name>` is the name you wish to assign to the new template.
 
-1. Open the module. In the properties of the module , insert a description and an icon. Along with the syntax of the module name in the step before, for a module to be considered a template it must have a description and an icon.
+1. Open the module. In the properties of the module, insert a description and an icon. Along with the syntax of the module name in the step before, for a module to be considered a template it **must have a description and an icon**.
 
 1. Add to your module the developments you want to provide to the applications based on the template, like blocks or user permission logic.
 
@@ -50,7 +50,7 @@ To help with that task, we will create a template to be the base of all planned 
 
 1. Insert the name `Template_BrandTwee`, where `Template_` is a required prefix to your name to set the module as a template.
 
-1. Open the module. Along with a name, for it to be considered a template it also needs a description and an icon.
+1. Open the module. Along with a name, for it to be considered a template it also **must have a description and an icon**.
 
 1. Go to the module’s properties and insert a description:
 

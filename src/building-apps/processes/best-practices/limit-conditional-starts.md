@@ -20,7 +20,7 @@ topic:
   - scalable-process-best-practices
 ---
 
-# Limit the Use of Conditional Starts
+# Limit the use of conditional starts
 
 When you add [Conditional Starts](<../../../ref/lang/auto/class-conditional-start.md>) to a [Process](../intro.md) you should consider well the business case you are addressing, or else you may be **introducing unnecessary complexity to the deployment of applications**. This is essentially due to:
 
@@ -32,7 +32,7 @@ In this case, we recommend that you do one of the following:
 
 * Analyze processes to identify conditional starts that are only necessary after a specific point in the process flow. Use the [dependency connector](<../../../ref/lang/auto/class-conditional-start.md>) to postpone the listening activity of a conditional start to only when it is really necessary. This way, the validation during deployment has less conditional starts to analyze.
 
-## Example
+## Example: Job interview scheduling
 
 Think of a process to handle candidates that apply for a job. At some point, interviews are scheduled and each scheduled interview is handled independently by a conditional start.
 
@@ -46,7 +46,7 @@ Move the flow of the conditional start to a new process and replace all executio
 
 Add an input parameter to the new process to pass the identifier of the main process. This way, the new process is automatically related with the main process, which is useful for reporting. To pass other values you need, simply add more input parameters.
 
-## Example
+## Example: Ad hoc telephone calls
 
 From the process of the previous example, imagine it also has a conditional start to take note of ad hoc telephone calls.
 

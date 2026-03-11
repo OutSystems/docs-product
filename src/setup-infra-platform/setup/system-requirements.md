@@ -67,9 +67,9 @@ Use the same type of database engine for all three 3 databases in Platform Serve
 
 * Microsoft SQL Server supported versions<sup>1, 2</sup> and respective supported compatibility levels:
 
-    |  2016                |  2017                 |  2019                 |  2022                   |
-    |----------------------|-----------------------|-----------------------|-------------------------|
-    |  130                 |  130, 140             |  130, 140, 150        |  130, 140, 150          |
+    | 2016 | 2017 | 2019 | 2022 | 2025 |
+    | ---- | ---- | ---- | ---- | ---- |
+    | 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150 |
 
 * Azure SQL Database, with compatibility level between 130 and 150
 * Oracle<sup>3, 4</sup> 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
@@ -231,9 +231,9 @@ The following systems are certified to integrate with OutSystems.
 
 * Supported versions<sup>1</sup> and respective supported compatibility levels:
 
-    |  2016    |  2017       |  2019           |  2022            |
-    |----------|-------------|-----------------|------------------|
-    |  130     |  130, 140   |  130, 140, 150  |  130, 140, 150   |
+    |  2016    |  2017       |  2019           |  2022            | 2025 |
+    |----------|-------------|-----------------|------------------|------|
+    |  130     |  130, 140   |  130, 140, 150  |  130, 140, 150   | 130, 140, 150 |
 
 <sup>1</sup> Versions 2008 to 2014 stopped being supported from Platform Server version 11.33 onwards.
 

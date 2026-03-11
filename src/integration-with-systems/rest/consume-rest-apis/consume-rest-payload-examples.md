@@ -43,7 +43,7 @@ Using this payload, the system creates the following input parameter and the cor
 
 ![Image displaying the input parameters generated from a JSON payload in Service Studio](images/payload-input-parameters-ss.png "Payload Input Parameters in Service Studio") ![Image showing the structure created from a JSON payload in Service Studio](images/payload-structure-ss.png "Payload Structure in Service Studio")
 
-## Form URL Encoded
+## Form URL encoded
 
 If you use the Form URL Encoded format, the payload must be in a query string format with key-value pairs. Each key and value pair is separated by an equal sign ``(name=value)`` and every pair is separated by the ampersand sign ``(name1=value1&name2=value2)``.
 
@@ -85,7 +85,7 @@ Content-Type: application/json
 }
 
 --BOUNDARY
-Content-Disposition: form-data; name="document"; filename="document.pdf"
+Content-Disposition: form-data; name="document"
 Content-Type: application/pdf
 
 [BINARY PDF CONTENT HERE]
@@ -98,6 +98,12 @@ In this example, there are two parts - the first part is a JSON payload and the 
 Using this payload example, the system can infer the data structures involved. The metadata input parameter with two fields **Name** and **Created_at** and a second input parameter document of type **Binary Data**.
 
 ![Image illustrating the input parameters for multipart/form-data in Service Studio](images/metadata-inputs-ss.png "Multipart Form Data Inputs in Service Studio")
+
+<div class="info" markdown="1">
+
+If you need to include a `filename` parameter in the `Content-Disposition` header for file uploads, change the data type of the input to **RequestPart** and populate its **Filename** attribute. For more information, see [Consuming a REST API with a multipart or form data method](consume-multipart-form-data.md).
+
+</div>
 
 For more information about multipart/form-data structure, see the [standard specifications (RFC 2388)](https://www.ietf.org/rfc/rfc2388.txt).
 

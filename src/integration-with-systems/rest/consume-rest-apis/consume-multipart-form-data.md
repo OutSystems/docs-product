@@ -5,7 +5,7 @@ locale: en-us
 guid: F6D1AF42-2DF2-43D8-9700-75335D0A7302
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=2831-15072&p=f&t=KrNoXU4995chLZdE-0
 audience:
   - mobile developers
   - frontend developers
@@ -69,6 +69,39 @@ The following is an auxiliary data structure that represents a part and has a **
 These properties are useful if you want greater flexibility to modify the parts (Name, Filename, and Content-Type). Sending a dynamic number of files with different extensions is the typical scenario for using multipart/form-data. The following image demonstrates this scenario.
 
 ![Example of modifying parts in Service Studio for a multipart form data request with different file extensions](images/modify-parts-ss.png "Modifying Parts in Service Studio")
+
+### How the Content-Disposition header is generated
+
+The platform generates the `Content-Disposition` header differently depending on the data structure you use.
+
+#### Using the RequestPart data structure
+
+When you use the **RequestPart** data structure, the platform automatically reads its attributes and includes them in the `Content-Disposition` header:
+
+* **Name**: Added as the `name` parameter (for example, `name="uploadedFile"`).
+* **Filename**: Added as the `filename` parameter (for example, `filename="document.pdf"`).
+
+The following is an example of a generated header:
+
+```http
+Content-Disposition: form-data; name="uploadedFile"; filename="document.pdf"
+```
+
+You only need to populate the **RequestPart** attributes. The platform handles the header generation automatically.
+
+#### Using other data structures
+
+When you don't use the **RequestPart** data structure (for example, when using **Binary Data**), the platform only adds the `form-data` type and the parameter name to the `Content-Disposition` header. The `filename` parameter isn't added automatically.
+
+The following is an example of a generated header:
+
+```http
+Content-Disposition: form-data; name="uploadedFile"
+```
+
+If you need a `filename` parameter in this scenario, you must add it manually by using the **OnBeforeRequest** callback. For more information on customizing request headers, refer to [Simple Customizations](simple-customizations.md#multipart).
+
+**Recommendation**: For file uploads, use the **RequestPart** data structure to let the platform handle `Content-Disposition` headers automatically.
 
 ## Updating a multipart/form-data REST API method
 

@@ -38,7 +38,7 @@ However, as the application continues to grow, if you keep a high publish rate, 
 
 Because of that, it's important in Development environments, to regularly clean up old module versions that you don’t need anymore. You can  delete old module versions directly via Service Center or using the DbCleaner API, that provides functionality for freeing up database space.
 
-### Delete old Module versions using Service Center
+### Delete old module versions using Service Center
 
 1. Navigate to Service Center `https://<YOUR_ENVIRONMENT>/ServiceCenter`
 1. Click on the Factory tab
@@ -89,7 +89,7 @@ A sample implementation of the API can be found in the Forge Component [Lifetime
 
 Once you delete the tagged application version, you can then delete the module version associated with it, as described in the [Module versions](#module-versions) section.
 
-## Temporary test Modules
+## Temporary test modules
 
 While developing applications your team may need to create some temporary test modules, proof of concept (POC’s), and often deploy and test some Forge components.
 All these modules are useful during the implementation phase, but soon they may become obsolete, and you will end up having unused code in your development environment.
@@ -124,7 +124,7 @@ Application data is basically all the information that's stored in the database 
 Especially in the development environment is common to have test/dummy data. This is the result of the developers’ tests during the development of different features. Although this data isn't critical for the application to run, it’s common that this data to grow and sometimes may even have some inconsistencies, being useful to clean it from time to time.
 With OutSystems, you don’t need to have access to the database to perform these cleaning operations. Check [How to delete data from Entities](https://success.outsystems.com/documentation/how_to_guides/data/how_to_delete_data_from_entities/) to implement your own delete data logic.
 
-### Entities and Attributes
+### Entities and attributes
 
 When you delete Entities and Attributes in your applications, OutSystems doesn't delete the corresponding table or column in the database. Your data is safely stored just in case you want to rollback your application. If you feel that those entities and attributes are no longer used, then it’s a best practice to delete them, thus freeing database space. For that OutSystems provides the DbCleaner API methods:
 
@@ -168,13 +168,13 @@ This article guides you across the multiple components that consume space on the
 
 While you can apply these best practices ad hoc, without limitations, you should also have in mind the maintenance plans of an on-premises installation type and that this shouldn't be just a one-time concern.
 
-### Cloud vs On-Premises
+### OutSystems Cloud vs self-managed
 
-While the **above clean-up options are valid on both installation types**, there are some additional actions that you can perform on-premises as you are the responsible to maintain the infrastructure.
+While the **above clean-up options are valid on both installation types**, there are some additional actions that you can perform on self-managed as you are the responsible to maintain the infrastructure.
 
-If you have a development environment installed **on-premises**, besides having more flexibility with the database (allowing you to truncate data for example), you should also consider a regular maintenance of the file system of your servers. Refer to the [Guide to disk space usage and control on OutSystems servers](http://www.outsystems.com/goto/disk-space-usage-guide) to understand how to do it.
+If you have a self-managed infrastructure, besides having more flexibility with the database (allowing you to truncate data for example), you should also consider a regular maintenance of the file system of your servers. Refer to the [Guide to disk space usage and control on OutSystems servers](http://www.outsystems.com/goto/disk-space-usage-guide) to understand how to do it.
 
-### Automate the clean-Up
+### Automate the clean-up
 
 The clean-up of the Development environment should be a regular concern, and not just an on-time task because you are experiencing some issues ("better safe than sorry").
 With that in mind, a possible approach is to implement a periodic clean-up logic (using [OutSystems Timers](https://success.outsystems.com/documentation/11/developing_an_application/use_timers/create_and_run_timers/)), that can address the different components described in this article.
@@ -213,7 +213,7 @@ Along the way, you release several versions of the apps, while the number of you
 
 So, it's extremely important to have all these different components documented with some relevant information, such as, but not limited to:
 
-* Date of Installation
+* Date of installation
 * Version installed
 * Owner of that component - the person or team in your organization accountable for its lifecycle
 
@@ -244,7 +244,7 @@ Therefore, it's a good idea to keep track of what's happening in your factory. T
 * **Tables not used anymore** - When deleting a Module, its physical tables aren’t deleted from the database. They're kept there to enable future rollbacks if necessary. However, if you are sure you won’t need the data from those Tables anymore, you can drop them both to keep your database smaller and to keep it tidy and clean.
 Please note that if for any reason you need to deploy an app that was already deleted together with the Tables, the Tables will be recreated. The only thing you won’t recover is the data that was inside them.
 
-Some components on the [Forge](https://www.outsystems.com/forge/) already have some of these housekeeping tasks implemented, while others also have some automated ones. The following table gives you guindance on Forge components with some out of the box housekeeping tasks:
+Some components on the [Forge](https://www.outsystems.com/forge/) already have some of these housekeeping tasks implemented, while others also have some automated ones. The following table gives you guidance on Forge components with some out of the box housekeeping tasks:
 
 ![Table summarizing housekeeping features available in various Forge components for OutSystems.](images/table.png "Forge Components Housekeeping Features Table")
 
@@ -254,8 +254,8 @@ Keep in mind that, as good practice, you should always validate if the component
 
 </div>
 
-### Clean up log tables after upgrade to OS11
+### Clean up log tables after upgrade to O11
 
-In OS11, log tables no longer live inside the same database catalog as all other tables. From the moment you upgrade, log information is written to a different catalog, leaving the old log tables with the data they had.
+In O11, log tables no longer live inside the same database catalog as all other tables. From the moment you upgrade, log information is written to a different catalog, leaving the old log tables with the data they had.
 
 If you don't truncate those tables, they can keep consuming useless disk space from your database. You can truncate the tables by using a simple SQL query or by accessing directly to the database.

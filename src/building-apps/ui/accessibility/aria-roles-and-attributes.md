@@ -52,7 +52,7 @@ If the form is invalid, because one of the required fields is missing or a value
 
 These are the built-in actions that support setting ARIA attributes. Use them to set the ARIA properties in your logic flows.
 
-### Hide elements with SetAriaHidden
+### Hide elements
 
 Use the **SetAriaHidden** action to hide an element and all content inside it from the assistive technology tools. It's equivalent to setting **aria-hidden="true"** explicitly for an element.
 
@@ -61,8 +61,8 @@ To find the **SetAriaHidden** action, go to the **Logic** tab > **OutSystemsUI**
 ### Change the role of the Alert pattern
 
 To change the ARIA role of the Alert pattern, use the **SetAccessibilityRole** action.
-To find the **SetAccessibilityRole** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility**
-For more information, refer to [Alert pattern](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Alert_pattern) section in this document.
+To find the **SetAccessibilityRole** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility**.
+For more information, refer to [Alert pattern](../patterns/mobile/content/alert.md) documentation.
 
 <div class="info" markdown="1">
 

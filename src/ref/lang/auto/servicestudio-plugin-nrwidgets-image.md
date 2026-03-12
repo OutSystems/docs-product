@@ -21,7 +21,7 @@ coverage-type:
 
 Displays an image in the screen or block. The image source can be one of the following:
 
-* A local image included in the module as a resource
+* A local image included in the module as a resource in the Images folder
 * An external image stored outside the platform that is accessible through a URL. When the screen is rendered, the image URL is processed, the image is fetched and displayed on the screen
 * An image stored in the platform database as Binary Data
 
@@ -136,7 +136,7 @@ The supported image formats are GIF, JPEG, and PNG. Please note that the images 
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>

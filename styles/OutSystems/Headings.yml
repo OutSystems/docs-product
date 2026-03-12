@@ -193,7 +193,6 @@ exceptions:
   - Plugin Manager
   - MediaResult data
   - MediaMetadata data
-  - Employee
   - RequestPart
   - Form URL
 
@@ -323,6 +322,7 @@ exceptions:
   - AI
   - API
   - ARIA
+  - Accessible Rich Internet Applications
   - APIs
   - CI/CD
   - CICD

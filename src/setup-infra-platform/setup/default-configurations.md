@@ -54,7 +54,7 @@ The executable and configuration files are located in `C:\Program Files\OutSyste
 * For Deployment Service, since Platform Server version 11.24.0, they're located in `C:\Program Files\OutSystems\Platform Server\DeployService\`.
 * For Deployment Controller Service, since Platform Server version 11.25.0, they're located in `C:\Program Files\OutSystems\Platform Server\CompilerService\`.
 
-### For platform versions prior to 11.18:
+### For Platform Server versions prior to 11.18.0
 
 |Service|Executable|Configuration|Account|
 |-------|-------|-------|-------|
@@ -62,7 +62,7 @@ The executable and configuration files are located in `C:\Program Files\OutSyste
 |Deployment Service|DeployService.exe|DeployService.exe.config|Local System account|
 |Scheduler Service|Scheduler.exe|Scheduler.exe.config|OSSchedulerUser|
 
-### For platform versions 11.18 or later:
+### For Platform Server versions 11.18.0 or later
 
 |Service|Executable|Configuration|Account|
 |-------|-------|-------|-------|

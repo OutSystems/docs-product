@@ -422,7 +422,7 @@ CSS and HTML should be kept separate. Inline styles are inefficient, harder to m
 
 CSS should be centrally managed in the application style guide to avoid loading a large number of CSS files. If the CSS is specific to one screen or web block, define your CSS at the screen/web block level instead of in extended properties.
 
-### Site Property update
+### Site property update
 
 Site Property is being updated using Application logic.
 
@@ -1073,3 +1073,15 @@ Using deprecated elements introduces several risks to an application. Deprecated
 #### How to fix
 
 Find a suitable replacement for the deprecated element and refactor the code to use the new alternative.
+
+### Exposed secrets in site properties
+
+Site Property that likely contains sensitive information but is not configured as secret.
+
+#### Impact
+
+Storing secrets as plain text creates a significant security risk by exposing sensitive data in management consoles like Service Center and allowing it to be read directly from the platform database. This lack of protection increases the risk of unauthorized access to internal or third-party systems.
+
+#### How to fix
+
+Locate the Site Property, set the **Is Secret** attribute to **Yes**, and then publish the module. This ensures the value is encrypted at rest and masked in management interfaces. Note that this built-in encryption capability requires OutSystems Platform Server 11.25.0 or later.

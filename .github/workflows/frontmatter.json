@@ -113,7 +113,10 @@
       "type": "string"
     },
     "uniqueItems": true
-  }
+  },
+    "isautopublish": {
+      "type": "boolean"
+    }
   },
   "required": [
     "summary",

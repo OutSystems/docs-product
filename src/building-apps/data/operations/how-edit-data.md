@@ -17,6 +17,7 @@ coverage-type:
   - apply
 topic:
   - edit-data-service-studio
+isautopublish: true
 ---
 
 # How to edit the data of an entity in Service Studio
@@ -25,7 +26,7 @@ Learn how to add a record or row, remove a record or row, and change an attribut
 
 To understand how editing data on Service Studio works and the prerequisites check the [edit data while developing article](./edit-data.md).
 
-## Add a record or row { #add }
+## Add a record or row {#add}
 
 To add a record or row, follow these steps:
 
@@ -45,7 +46,7 @@ To add a record or row, follow these steps:
 
 1. You can prepare more than one change to the entity at a time. Once you're done with your changes [apply them](#apply).
 
-## Remove a record or row { #remove }
+## Remove a record or row {#remove}
 
 To remove a record or row, follow these steps:
 
@@ -60,7 +61,7 @@ To remove a record or row, follow these steps:
 
 1. You can prepare more than one change at a time. Once you're done with your changes [apply them](#apply).
 
-## Modify a record's attribute { #modify }
+## Modify a record's attribute {#modify}
 
 To modify a record's attribute or cell, follow these steps:
 
@@ -77,8 +78,8 @@ To modify a record's attribute or cell, follow these steps:
     * For a **Integer** or a **Long Integer** cell, enter an integer for example, `10`.
     * For a **Decimal** or a **Currency** cell, enter a decimal, for example, `10.8`.
     * For a **Date** cell, enter a date using the `YYYY-MM-DD` format, for example, `1988-08-28`.
-    * For a **Time** cell, enter a time using the `HH:MM:SS` format, for example, `23:59:59`.
-    * For a **Date Time** cell, enter a time using the `YYYY-MM-DD HH:MM:SS` format , for example, `1988-08-28 23:59:59`.
+    * For a **Time** cell, enter a time using the `HH:mm:ss` format, for example, `23:59:59`.
+    * For a **Date Time** cell, enter a time using the `YYYY-MM-DD HH:mm:ss` format , for example, `1988-08-28 23:59:59`.
     * For a **Boolean** cell, enter **true** or **false**, capitalization is irrelevant.
     * For a **Binary** cell, select and upload a file.
     * For an entity identifier cell, select a value from the dropdown.
@@ -90,7 +91,7 @@ To modify a record's attribute or cell, follow these steps:
 
 1. You can prepare more than one change to the entity to the entity at a time. Once you're done with your changes [apply them](#apply).
 
-## Apply changes { #apply}
+## Apply changes {#apply}
 
 Once you're done with your changes, confirm you want to change the data by selecting **Apply**.<br/>
 You won't be able to apply changes if you have cells highlighted in red.
@@ -107,7 +108,7 @@ After trying to apply all your changes in the database, Service Studio lets show
 
     ![Error message and highlighted rows for changes that failed to apply in Service Studio](images/changes-failed-ss.png "Changes Failed to be Applied")
 
-## Discard changes { #discard }
+## Discard changes {#discard}
 
 You can permanently discard changes in one of the following ways:
 

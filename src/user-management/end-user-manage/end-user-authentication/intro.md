@@ -18,9 +18,10 @@ coverage-type:
   - unblock
 topic:
   - built-in-mechanisms
+isautopublish: true
 ---
 
-# End Users Authentication
+# End users authentication
 
 <div class="info" markdown="1">
 
@@ -116,11 +117,9 @@ After a successful login
 :   The data for the **logged in user** is updated. Occurs when using Active Directory, LDAP, SAML 2.0, Microsoft Entra or Okta authentication.
 
 On a daily timer
-:   The data for **all existing users from external authentication sources** in the OutSystems database is updated. These users are the ones whose username contains a `\` (slash) character.  
-The timer is named `SynchronizeDomainUsers` and is configured in the Users module. This timer-based synchronization only occurs when using Active Directory.  
-Note that this process does not create any new users in the OutSystems database.
+:   The `SynchronizeDomainUsers` timer, configured in the Users module, updates the data for **all existing Active Directory users** in the OutSystems database. It identifies these users by the `\` (backslash) character in their username, which follows the `DOMAIN\username` format. This timer doesn't create new users in the OutSystems database and doesn't run for other authentication methods.
 
-### Known Issues
+### Known issues
 
 If a user is deactivated in the active directory, the user's status is synchronized by the `SynchronizeDomainUsers` timer. However, when the user is reactivated in the active directory, the user's status is **not updated to active**. This prevents the user from logging in.
 

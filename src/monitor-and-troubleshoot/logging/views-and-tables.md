@@ -17,6 +17,7 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+isautopublish: true
 ---
 
 # The log tables and views
@@ -28,7 +29,7 @@ For each log type, the database model consists of:
 * A set of 10 tables, `oslog_<TYPE>_0` to `oslog_<TYPE>_9`
 * Two views, `oslog_<TYPE>` mapped to the current week, and `oslog_<TYPE>_Previous` mapped to the previous week
 
-For example: for the Error type, there are tables `oslog_Error_0` to `oslog_Error_9` and views `oslog_Error` and `oslog_Error_Previous`. The numbers `_0` to `_9` refer to a tables that are rotated.
+For example: for the Error type, there are tables `oslog_Error_0` to `oslog_Error_9` and views `oslog_Error` and `oslog_Error_Previous`. The numbers `_0` to `_9` refer to the tables that are rotated.
 
 <div class="info" markdown="1">
 

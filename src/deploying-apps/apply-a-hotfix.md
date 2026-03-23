@@ -19,17 +19,18 @@ topic:
   - hotfix-in-qa
   - deploy-hotfix-production
   - portback-hotfix
+isautopublish: true
 ---
 
-# Apply a Hotfix
+# Apply a hotfix
 
 In OutSystems, you can implement and resolve issues immediately using Hotfix. This helps you maintain your apps' reliability and performance while minimizing downtime.
 
-OutSystems recommends publishing hotfixes to a Pre-Production environment fully synchronized with a Production environment rather than directly to the Production environment. Ensure that both environments have the same app version and that replicated data. This way, you can test and debug the Hotfix and then deploy it to Production without downtime.
+OutSystems recommends publishing hotfixes to a Pre-Production environment fully synchronized with a Production environment rather than directly to the Production environment. Ensure that both environments have the same app version and that they have replicated data. This way, you can test and debug the Hotfix and then deploy it to Production without downtime.
 
 Finally, the Hotfix is propagated backward to previous stages. The following example describes how a hotfix is applied to fix a bug in the eCommerce app.
 
-## Fix the Defect
+## Fix the defect
 
 A severe defect was discovered in the eCommerce app in Production and has to be immediately fixed. Proceed as follows:
 
@@ -42,7 +43,7 @@ The version number in Pre-Production has changed: it is suffixed with a '+' (for
 
 ![Screenshot showing the version number in Pre-Production environment suffixed with a '+' indicating a hotfix, highlighted in red.](images/apply-a-hotfix-1.png "Pre-Production Environment with Hotfix Version")
 
-## Deploy the Hotfix to Production
+## Deploy the hotfix to production
 
 To apply the hotfix to Production, [deploy the app](<deploy-an-application.md>) from Pre-Production to Production. LifeTime automatically suggests that you choose 'Tag &amp; Deploy 0.3.1'. The hotfix is tagged with a third number in Pre-Production and the app is deployed to Production.
 
@@ -50,7 +51,7 @@ Both Pre-Production and Production have the 0.3.1 version, and the Pre-Productio
 
 ![Screenshot of the deployment process with 'Tag & Deploy 0.3.1' highlighted, indicating the deployment of a hotfix to Production.](images/apply-a-hotfix-2.png "Deploying Hotfix to Production")
 
-## Propagate the Hotfix
+## Propagate the hotfix
 
 To apply a hotfix, propagate all changes to the app back to previous environments: first to Quality Assurance, then to Development. Follow these steps:
 

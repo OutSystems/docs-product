@@ -16,6 +16,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+isautopublish: true
 ---
 
 # Performance best practices for data modeling
@@ -64,7 +65,7 @@ Updating entities that have large texts or binary data attributes is very slow. 
 
 When designing the data model, grouping and aggregating values will reduce the amount of requests/transactions to obtain the high level searches/reports.
 
-## Beware of Large Excel Files Performance
+## Beware of large Excel files performance
 
 ### Description
 
@@ -84,7 +85,7 @@ By isolating the data processing from the data uploading you avoid the request t
 
 The process mentioned above is not necessary for excel files used for bootstrapping an application.
 
-## Use of the Delete Rules constraints in Entities
+## Use of the delete rules constraints in Entities
 
 ### Description
 
@@ -96,7 +97,7 @@ This is an advanced scenario that must be used with care, since it may cause dat
 
 This best practice applies to applications where the data is effectively deleted from the database and when this happens to entities which other entities depend on. One of three scenarios is possible:
 
-1. Use the Protect rule, which means that your application must be delete all records from child entities first (or the database will return an error) and then when you delete the parent entity record, the database has to check if there are records in the child entities (which is unnecessary or will return an error). This is the worst option in terms of performance.
+1. Use the Protect rule, which means that your application must delete all records from child entities first (or the database will return an error) and then when you delete the parent entity record, the database has to check if there are records in the child entities (which is unnecessary or will return an error). This is the worst option in terms of performance.
 
 1. Use the Delete rule, which means that all control is given to the database (which has no business knowledge) and may be trying to delete things that were already deleted.
 

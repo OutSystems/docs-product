@@ -6,7 +6,7 @@ figma: https://www.figma.com/design/epaiN2jasbbKgJA0iSYfZn/Extending-with-ODC?no
 coverage-type:
   - apply
   - understand
-topic: 
+topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
@@ -15,7 +15,8 @@ audience:
 tags: entities, data interoperability
 outsystems-tools:
   - lifetime
-helpids: 
+helpids:
+isautopublish: true
 ---
 
 # Expose O11 entities to ODC
@@ -60,7 +61,7 @@ To expose O11 entities to ODC, make sure the following requirements are met:
 
 ## Control how O11 data is exposed {#control-data}
 
-You control at design-time how your [O11 data can be consumed](consume-entities.md) in ODC apps.
+When exposing your O11 application data to ODC, you control at design-time how your [data can be consumed](consume-entities.md) in ODC apps.
 
 In Service Studio, use the following properties to define how the O11 entity is exposed:
 
@@ -71,12 +72,6 @@ In Service Studio, use the following properties to define how the O11 entity is 
     * Set to **Yes** - ODC apps can only query the O11 data. This is the default and recommended setting to ensure O11 data integrity and clear ownership.
 
     * Set to **No** - ODC apps can create, update, and delete O11 data. Use this option with caution, as it allows ODC logic to bypass O11 business rules defined in Service Studio actions.
-
-    <div class="info" markdown="1">
-
-    Currently, the writing capability isn't yet supported for Oracle databases. See the [data interoperability limitations](intro.md#limitations) for further details.
-
-    </div>
 
 ![Entity properties in Service Studio](images/expose-entity-properties-ss.png "Entity properties in Service Studio")
 
@@ -125,9 +120,19 @@ The baseline environment is now set, and you can start exposing your O11 entitie
 
 ## Select and expose O11 entities {#expose}
 
-The **Applications > Expose Entities** screen in your LifeTime console shows the O11 entities of your applications that are exposed to ODC across your infrastructure. [Only public entities can be exposed](#control-data) to ODC.
+The **Applications > Expose Entities** screen in your LifeTime console shows the O11 entities of your applications that are exposed to ODC across your infrastructure.
 
 ![Expose entities in LifeTime](images/expose-entities-lt.png "Expose entities in LifeTime")
+
+<div class="info" markdown="1">
+
+Consider the following when exposing your O11 entities to ODC:
+
+* You can only expose application entities, you can't expose O11 system entities.
+* The O11 system entities **User** and **Tenant** are [exposed to ODC by default](#user-tenant) as **read-only**.
+* [Only public entities can be exposed](#control-data) to ODC.
+
+</div>
 
 If your O11 infrastructure has additional pipelines, you can use the [environment filter](../../manage-platform-app-lifecycle/environment-filters.md) dropdown to display only the O11 environments of a specific pipeline.
 
@@ -182,6 +187,21 @@ If you have an O11 self-managed infrastructure, make sure the required [database
 </div>
 
 After exposing in the baseline environment, you can now [promote your exposed O11 entities to the next O11 environment](#promote).
+
+### User and Tenant entities exposed by default {#user-tenant}
+
+The O11 system entities **User** and **Tenant** are exposed to ODC by default as **read-only**. If you want use these entities in your ODC apps, you just need to [import them from your ODC connection](configure-connection.md#import-exposed).
+
+For security reasons, the following attributes are **not exposed to ODC**:
+
+* `User.Password`
+* `Tenant.Espace_Id`
+
+<div class="info" markdown="1">
+
+If you have an O11 self-managed infrastructure, make sure the [required database operations](data-interop-self-managed.md#sys-entities) are performed by a database administrator before [importing these O11 system entities](configure-connection.md#import-exposed) from your ODC connection.
+
+</div>
 
 ## Promote exposed O11 entities to other environments {#promote}
 

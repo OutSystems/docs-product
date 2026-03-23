@@ -5,7 +5,7 @@ summary: Learn how to configure the O11 connector in the ODC Portal
 figma: https://www.figma.com/design/epaiN2jasbbKgJA0iSYfZn/Extending-with-ODC?node-id=2618-222
 coverage-type:
   - apply
-topic: 
+topic:
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
@@ -14,7 +14,8 @@ audience:
 tags: entities, data interoperability
 outsystems-tools:
   - odc portal
-helpids: 
+helpids:
+isautopublish: true
 ---
 
 # Configure the O11 connection in ODC Portal
@@ -29,7 +30,7 @@ Start by [connecting ODC to your O11 infrastructure](#connect-o11-infrastructure
 
 Before you start, ensure the following requirements are met:
 
-* The O11 entities you want to use in ODC have already [been exposed using the Expose Entities LifeTime plugin](expose-entities.md).
+* The O11 entities you want to use in ODC have already [been exposed using the O11 LifeTime console](expose-entities.md).
 
 * The user connecting ODC to the O11 infrastructure has the **Administrator** role.
 
@@ -162,6 +163,12 @@ Follow these steps to import the exposed entities:
 1. In the connections list, click **Import** for the OutSystems 11 connection you want to use.
 
 1. Select the exposed O11 entities you want to import. OutSystems automatically selects and imports all the attributes for each O11 entity.
+
+    <div class="info" markdown="1">
+
+    The O11 system entities **User** and **Tenant** are [exposed to ODC by default](expose-entities.md#user-tenant) and available to import. Filter the **O11 modules** by **(O11 system)** to see them in the entities list.
+
+    </div>
 
 1. Click **Import**.
 

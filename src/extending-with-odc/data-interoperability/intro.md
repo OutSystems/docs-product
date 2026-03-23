@@ -5,7 +5,7 @@ summary: Build new ODC apps that seamlessly consume data from your existing O11 
 figma: https://www.figma.com/design/epaiN2jasbbKgJA0iSYfZn/Extending-with-ODC?node-id=1-2
 coverage-type:
   - understand
-topic: 
+topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
@@ -17,7 +17,8 @@ tags: entities, data interoperability
 outsystems-tools:
   - lifetime
   - odc portal
-helpids: 
+helpids:
+isautopublish: true
 ---
 
 # Data interoperability
@@ -92,12 +93,6 @@ You [control how O11 entities are exposed to ODC](expose-entities.md#control-dat
 
 * ODC apps can't change data (create, update, or delete records) of O11 entities exposed as read-only.
 
-    <div class="info" markdown="1">
-
-    Currently, the writing capability isn't yet supported for Oracle databases. See the [data interoperability limitations](#limitations) for further details.
-
-    </div>
-
 Additionally, only IT users with the [required permissions](expose-entities.md#prerequisites) can expose O11 entities to ODC.
 
 ### Performance
@@ -138,9 +133,9 @@ Data interoperability **isn't supported** for the following infrastructure setup
 * Partner's Cloud demo environments
 * O11 self-managed infrastructures using [multiple database catalogs and schemas](https://www.outsystems.com/tk/redirect?g=1c742c8a-449c-4828-865b-7295d2f90527)
 
-The following entities **can't be exposed** to ODC:
+The following O11 entities **can't be exposed** to ODC:
 
-* System entities (you can only expose application entities)
+* System entities, except **User** and **Tenant**, which are [exposed by default as read-only](expose-entities.md#user-tenant) - you can only expose application entities
 * Static entities defined in libraries
 * Local storage entities of mobile apps
 
@@ -148,11 +143,9 @@ The following entities **can't be exposed** to ODC:
 
 OutSystems is working to improve the data interoperability capability. Meanwhile, consider these additional limitations:
 
-* The writing capability isn't yet supported for Oracle databases - O11 entities are available in ODC as read-only entities.
+* O11 static entities are available in ODC as regular read-only entities (doesn't apply to static entities defined in libraries, which can't be exposed). See [how to work with O11 static entities](consume-entities.md#o11-static-entities).
 
-* O11 static entities (except those defined in libraries, which can't be exposed) are available in ODC as regular read-only entities. See [how to work with O11 static entities](consume-entities.md#o11-static-entities).
-
-* O11 multi-tenant entities are available in ODC as read-only entities.
+* [Data mashup with O11 Oracle entities and other external system](consume-entities-best-practices.md#oracle-mashup) in ODC apps is currently not supported.
 
 * An ODC tenant can only connect to one O11 infrastructure.
 
@@ -164,9 +157,9 @@ Before you start, make sure the following requirements are met:
 
 * You have an enterprise [cloud or self-managed O11 infrastructure](../../setup-infra-platform/setup/intro.md#alternatives). Take into account the [limitations](#limitations) for the O11 infrastructure setup.
 
-* The **LifeTime** version of your O11 infrastructure is **11.28.0 or later**. The support for infrastructures with additional pipelines is available from **LifeTime 11.28.2**.
+* The **LifeTime** version of your O11 infrastructure is **11.28.2 or later**.
 
-* The **Platform Server** version of your O11 environments is **11.40.0 or later**. You can update your environments incrementally:
+* The **Platform Server** version of your O11 environments is **11.41.0 or later**. You can update your environments incrementally:
 
     * Update your [O11 baseline environment](expose-entities.md#configure-baseline) first, so you can expose O11 entities in that environment and import them from ODC. This enables you to start developing in ODC.
 

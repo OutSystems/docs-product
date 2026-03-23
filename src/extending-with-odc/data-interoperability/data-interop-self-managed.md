@@ -18,6 +18,7 @@ tags: entities,data interoperability
 outsystems-tools:
   - none
 helpids:
+isautopublish: true
 ---
 
 # Data interoperability for O11 self-managed infrastructures
@@ -70,23 +71,19 @@ When setting up data interoperability for the first time, the following operatio
 
 ## On exposing or promoting O11 entities {#on-expose}
 
-Every time developers [expose an entity in the baseline environment](expose-entities.md#expose) using the O11 LifeTime console, OutSystems creates a new database view on the O11 baseline environment. The same way, every time developers [promote an exposed O11 entity to other O11 environment](expose-entities.md#promote), OutSystems creates a new database view on that O11 environment.
+Every time developers [expose an entity in the baseline environment](expose-entities.md#expose) using the O11 LifeTime console, OutSystems creates a new **database view** on the O11 baseline environment. The same way, every time developers [promote an exposed O11 entity to other O11 environment](expose-entities.md#promote), OutSystems creates a new database view on that O11 environment.
 
-When this happens, a DBA must grant the dedicated database user **read and write** access to the created database views and corresponding tables.
+When this happens, a DBA must grant the dedicated database user access to these views, as described in the sections below.
 
-<div class="info" markdown="1">
+### Granting access for exposed application entities {#app-entities}
 
-Currently, the **write** access is not required for Oracle databases, as the writing capability isn't yet supported. See the [data interoperability limitations](intro.md#limitations) for further details.
+When O11 application entities are exposed or promoted, the following operations must be performed by a DBA in that O11 environment:
 
-</div>
-
-Thus, every time new entities are exposed or promoted, the following operations must be performed by a DBA in that O11 environment:
-
-1. Grant the dedicated interoperability database user **read and write** access (read access for Oracle) to the new **database views**, one for each exposed or promoted entity:
+1. Grant the dedicated interoperability database user **read and write** access to the new **database views**, one for each exposed or promoted entity:
 
     * `OSUSR_VIEW_<entity_name>`, or `OSUSR_VIEW_<custom_view_name>` if the view name was renamed [when the entity was exposed](expose-entities.md#expose).
 
-1. Grant the dedicated interoperability database user **read and write** access (read access for Oracle) to the corresponding **tables**, one for each exposed or promoted entity:
+1. Grant the dedicated interoperability database user **read and write** access to the corresponding **tables**, one for each exposed or promoted entity:
 
     * `osusr_<entity_name>`
 
@@ -94,7 +91,23 @@ Thus, every time new entities are exposed or promoted, the following operations 
 
 No manual actions are required when:
 
-* Attributes are added, removed, or renamed in an exposed entity.
-* An entity stops being exposed. The corresponding database view is removed automatically.
+* Attributes are added, removed, or renamed in an exposed O11 entity.
+* An O11 entity stops being exposed. The corresponding database view is removed automatically.
 
 </div>
+
+### Granting access for exposed system entities {#sys-entities}
+
+The O11 system entities **User** and **Tenant** are [exposed to ODC by default](expose-entities.md#user-tenant) as **read-only**.
+
+If developers want to use these entities in ODC apps, the following operations must be performed by a DBA in the O11 environments mapped by the [ODC data connection](configure-connection.md#create-connection):
+
+1. Grant the dedicated interoperability database user **read** access to the **database view** created for the O11 system entity:
+
+    * User: `OSSYS_VIEW_USER`
+    * Tenant: `OSSYS_VIEW_TENANT`
+
+1. Grant the dedicated interoperability database user **read** access to the corresponding O11 system entity **table**:
+
+    * User: `OSSYS_USER`
+    * Tenant: `OSSYS_TENANT`

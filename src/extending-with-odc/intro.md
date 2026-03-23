@@ -2,36 +2,39 @@
 guid: 6d794961-6191-4e75-a22d-45b8f8b411e3
 locale: en-us
 summary: Extend your existing O11 portfolio with new ODC cloud-native and AI-powered capabilities.
-figma: 
+figma:
 coverage-type:
   - evaluate
   - understand
-topic: 
+topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
   - architects
   - tech leads
-tags: 
-outsystems-tools: 
-helpids: 
+tags: cloud-native, ai-powered capabilities, interoperability, agent workflows, auto-scaling
+outsystems-tools:
+  - none
+helpids:
+isautopublish: true
 ---
-
 # Extending with ODC
 
 You can extend your existing O11 portfolio with new [ODC cloud-native and AI-powered capabilities](https://www.outsystems.com/low-code-platform/developer-cloud/) by building new ODC apps that seamlessly consume your trusted resources from your existing O11 apps.
 
-This interoperability approach enables you to maintain and evolve your core apps on O11 while using ODC to deliver new digital experiences, AI-powered agents, or high-performance portals.
+This interoperability approach enables you to maintain and evolve your core apps on O11 while using ODC to deliver new AI-powered agents, digital experiences, or high-performance portals.
 
 ## Interoperability use cases
 
 Here are some scenarios where you can use ODC cloud-native capabilities to extend your O11 core apps:
 
-* **New agentic use cases:** Apps that leverage the ODC Agent Workbench to classify tickets, summarize records, or provide conversational interfaces, grounded in trusted O11 data.
+* **New agentic use cases that leverage Agent Workbench:** An agent that classifies support tickets by assigning tags, teams, and priority, reading O11 data via the ODC Data Fabric connector and writing back.
+
+* **Existing O11 apps enhanced with agentic flows:** Existing O11 apps with embedded conversational agents, or calling an agent via REST to quickly summarize a customer record.
 
 * **High-scale B2C apps:** Public-facing apps with unpredictable usage peaks that require the auto-scaling capabilities of ODC (for example, a Black Friday campaign app).
 
-* **Apps with low O11 dependencies:** New use cases, such as a field-service mobile app, that are mostly self-contained but require specific master data (like customer lists) from O11.
+* **Apps with low O11 dependencies:** New use cases, such as a field-service mobile app, that are mostly self-contained but leverages some existing O11 data (like customer lists) or logic.
 
 * **Extension portals:** New portals (for example, a Customer Loyalty Rewards) built in ODC that read core details from O11 but store their own operational data (rewards, catalogs) natively in ODC.
 
@@ -43,4 +46,4 @@ On the other hand, there are scenarios where extending with ODC may not be the r
 
 ## Getting started
 
-Start extending your portfolio using [data interoperability](data-interoperability/intro.md).
+Start extending your portfolio using [data interoperability](data-interoperability/intro.md) and [logic interoperability](logic-interoperability/intro.md).

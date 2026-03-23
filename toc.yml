@@ -1197,6 +1197,11 @@
         - href: extending-with-odc/data-interoperability/data-interop-self-managed.md
         - href: extending-with-odc/data-interoperability/troubleshooting.md
 
+    # Logic interoperability
+    - href: extending-with-odc/logic-interoperability/intro.md
+    - topics:
+        - href: extending-with-odc/logic-interoperability/logic-interop-best-practices.md
+
 # Migration to ODC
 - href: migration-to-odc/migration-intro.md
 - topics:

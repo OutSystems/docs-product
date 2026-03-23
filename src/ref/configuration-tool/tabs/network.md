@@ -4,7 +4,7 @@ locale: en-us
 guid: 8a4e8da5-fdb0-4112-a474-c1781f35d12c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-150&p=f&t=YWpNVSB3J2vcO8FT-0
 tags: network configuration, service center, ip configuration, security, deployment
 audience:
   - frontend developers
@@ -15,6 +15,7 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Network tab
@@ -23,7 +24,7 @@ The **Network** taballows you to clear the current internal network settings, an
 
 ![Screenshot of the Network tab in the Configuration Tool](images/network-tab-ct.png "Network tab")
 
-## Internal Network section
+## Internal network section
 
 When developing your applications, you can set resources such as web flows (groups of screens), and web services to be available only within your internal network. This configuration is [defined in Service Center](../../../security/configure-internal-network.md).
 

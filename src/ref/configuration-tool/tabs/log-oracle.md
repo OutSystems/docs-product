@@ -14,9 +14,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
-# Log Tab in Oracle
+# Log tab in Oracle
 
 The following configurations are available in the **Log** tab when the **Database Provider** property is set to `Oracle`.
 

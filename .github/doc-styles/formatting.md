@@ -52,7 +52,7 @@ Use these rules when writing or reviewing documentation in this repository.
 
 Format placeholders consistently:
 
-* In Markdown, wrap inline placeholders in backticks, and use an asterisk before the first backtick and after the second one (``*`PLACEHOLDER_NAME`*``).
+* In Markdown, wrap inline placeholders in backticks, and use an asterisk before the first backtick and after the second one (*`PLACEHOLDER_NAME`*).
 * Use uppercase characters with underscore delimiters (for example, `*API_NAME*`).
 * Explain the placeholder the first time you use it.
 

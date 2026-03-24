@@ -14,6 +14,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # REST
@@ -24,8 +25,12 @@ You can also expose REST APIs in your OutSystems applications. In this case, oth
 
 <div class="info" markdown="1">
 
-If you're creating a REST API to expose functionality that is going to be consumed only by other modules or applications inside the same OutSystems environment, consider using **Service Actions** instead.
+Considerations:
 
-A Service Action is a REST-based remote call to another process, but its usage is very similar to public Server Actions. For more information check [Use Services to Expose Functionality](../../building-apps/reuse-and-refactor/services.md).
+* If you're creating a REST API to expose functionality that is going to be consumed only by other modules or applications inside the same OutSystems environment, consider using **Service Actions** instead.
+
+    A Service Action is a REST-based remote call to another process, but its usage is very similar to public Server Actions. For more information check [Use Services to Expose Functionality](../../building-apps/reuse-and-refactor/services.md).
+
+* If you want to share logic between O11 and ODC, see [Logic interoperability](../../extending-with-odc/logic-interoperability/intro.md) for further details.
 
 </div>

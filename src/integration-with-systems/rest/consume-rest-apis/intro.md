@@ -17,6 +17,7 @@ coverage-type:
 topic:
   - consume-refresh-methods
   - webservice-authentication
+isautopublish: true
 ---
 
 # Consume REST APIs
@@ -28,6 +29,8 @@ Start by looking into the documentation of the REST API you want to use and unde
 * Base URL
 * Security/Authentication requirements
 * Methods definition (HTTP Method, URL Path, response format)
+
+If you want to consume a REST API exposed by your ODC tenant, see [Logic interoperability](../../../extending-with-odc/logic-interoperability/intro.md) for further details.
 
 Check how you can [Consume one or more REST API Methods](consume-a-rest-api.md) in Service Studio.
 

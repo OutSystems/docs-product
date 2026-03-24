@@ -19,6 +19,7 @@ coverage-type:
 topic:
   - rest-webservice-data
   - define-methods
+isautopublish: true
 ---
 
 # Expose a REST API
@@ -29,11 +30,13 @@ If you want to expose methods to allow other systems to retrieve or manipulate i
 
 1. In the **Logic** tab, open the **Integrations** folder.
 
-1. Right-click REST and select **Expose REST API...**
+1. Right-click **REST** and select **Expose REST API**
 
 1. Set the name of your REST API.
 
     A common recommendation is to name the exposed REST API according to its version. You could name the API `v1` for the first version of a REST API. You can also use a different name, like `PhoneBook`.  
+
+If you are exposing your O11 logic through REST to be consumed by your ODC apps, see [Logic interoperability](../../../extending-with-odc/logic-interoperability/intro.md) for further details.
 
 ## Create the REST API Method
 
@@ -66,7 +69,7 @@ The endpoint is of the format:
 
 <div class="info" markdown="1">
 
-OutSystems defines the default endpoints based on the HTTP Method (`GET`, `POST`, `PUT`, `DELETE`) and the name of the REST API Methods, but you can [customize the endpoints](<customize-rest-urls.md>) according to your needs.
+OutSystems defines the default endpoints based on the HTTP Method (`GET`, `POST`, `PUT`, `DELETE`) and the name of the REST API Methods, but you can [customize the endpoints](customize-rest-urls.md) according to your needs.
 
 </div>
 

@@ -157,13 +157,25 @@ Before you start, make sure the following requirements are met:
 
 * You have an enterprise [cloud or self-managed O11 infrastructure](../../setup-infra-platform/setup/intro.md#alternatives). Take into account the [limitations](#limitations) for the O11 infrastructure setup.
 
-* The **LifeTime** version of your O11 infrastructure is **11.28.2 or later**.
+* You have the required **LifeTime** and **Platform Server** versions:
 
-* The **Platform Server** version of your O11 environments is **11.41.0 or later**. You can update your environments incrementally:
+    * Minimal **LifeTime** version of your O11 infrastructure is **11.28.0**.
 
-    * Update your [O11 baseline environment](expose-entities.md#configure-baseline) first, so you can expose O11 entities in that environment and import them from ODC. This enables you to start developing in ODC.
+    * Minimal **Platform Server** version of your O11 environments is **11.40.0**.
 
-    * Then, update the remaining O11 environments (for example, QA or Production) when you need to [promote the exposed entities](expose-entities.md#promote) to those environments.
+    * The following capabilities require the versions below:
+
+        * Support for infrastructures with **additional pipelines** requires **LifeTime 11.28.2**.
+
+        * **Writing capability for Oracle** databases requires **Platform Server 11.41.0**.
+
+        * O11 system entities **User** and **Tenant** exposed to ODC as read-only requires **LifeTime 11.28.2** and **Platform Server 11.41.0**.
+
+    * You can update the **Platform Server** version of your O11 environments incrementally.
+
+        * Update your [O11 baseline environment](expose-entities.md#configure-baseline) first, so you can expose O11 entities in that environment and import them from ODC. This enables you to start developing in ODC.
+
+        * Then, update the remaining O11 environments (for example, QA or Production) when you need to [promote the exposed entities](expose-entities.md#promote) to those environments.
 
 * The **O11 LifeTime environment** is accessible over HTTPS (TCP on port 443) from your ODC tenant.
 

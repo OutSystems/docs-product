@@ -1,6 +1,6 @@
 ---
 tags: ide usage, reactive web apps, tutorials for beginners, ui design patterns, navigation
-summary: Explore the Section Index UI Pattern in OutSystems 11 (O11) for efficient content organization and navigation on screens.
+summary: Explore the Section Index UI pattern in OutSystems 11 (O11) for efficient content organization and navigation on screens.
 locale: en-us
 guid: f2009318-b804-4f98-88b9-3a654a6835b7
 app_type: mobile apps, reactive web apps
@@ -14,6 +14,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Section Index
@@ -32,35 +33,35 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 </div>
 
-You can use the Section Index UI Pattern to organize the content of a screen, enabling quick navigation within the page.
+You can use the Section Index UI pattern to organize the content of a screen, enabling quick navigation within the page.
 
-![Example of a screen organized using the Section Index UI Pattern](images/sectionindex-example.png "Section Index Example")
+![Example of a screen organized using the Section Index UI pattern](images/sectionindex-example.png "Section Index Example")
 
-**How to use the Section Index UI Pattern**
+## How to use the Section Index UI pattern
 
-1. In Service Studio, in the Toolbox, search for `Section Index`.
+1. In Service Studio, in the toolbox, search for `Section Index`.
 
     The Section Index widget is displayed.
 
-    ![Service Studio displaying the Section Index widget in the Toolbox](images/sectionindex-widget-ss.png "Section Index Widget in Service Studio")
+    ![Service Studio displaying the Section Index widget in the toolbox](images/sectionindex-widget-ss.png "Section Index widget in Service Studio")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the **Remove Unused Dependencies** setting is enabled. To make the widget available in your app:
 
-    1. In the Toolbox, click **Search in other modules**.
+    1. In the toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
 
     1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
 
-    1. In the Toolbox, search for the widget again.
+    1. In the toolbox, search for the widget again.
 
-1. From the Toolbox, drag the Section Index widget into the Main Content area of your application's screen.
+1. From the toolbox, drag the Section Index widget into the Main Content area of your application's screen.
 
     In this example, we drag the Section Index widget into a column (ColumnsSmallLeft). By default, the Section Index widget contains 2 Section Index Items. You can add or delete as many as required. In this example, 4 Section Index Items are required.
 
     ![Dragging the Section Index widget into the Main Content area of a screen in Service Studio](images/sectionindex-dragwidget-ss.png "Dragging Section Index Widget to Screen")
 
-1. In the Toolbox, search for and drag the Section widget onto the screen. Add as many sections as you require for your app.
+1. In the toolbox, search for and drag the Section widget onto the screen. Add as many sections as you require for your app.
 
     In this example, we drag 4 Section widgets (to match the number of Section Index Items) onto the screen (Column2). Each section widget contains a **Title** and **Content** placeholder.
 
@@ -78,7 +79,7 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
     ![Entering names for Card Sectioned widgets to link with Section Index Items](images/sectionindex-cardname-ss.png "Naming Card Sectioned Widgets")
 
-1. In the Toolbox, search for and drag the Text widget into the first Section Index Item and enter a title (in this example, the employee's name).
+1. In the toolbox, search for and drag the Text widget into the first Section Index Item and enter a title (in this example, the employee's name).
 
     ![Entering a title for the first Section Index Item in Service Studio](images/sectionindex-item-ss.png "Entering Section Index Item Title")
 

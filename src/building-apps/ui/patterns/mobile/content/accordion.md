@@ -14,6 +14,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Accordion
@@ -34,7 +35,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Accordion UI Pattern to allow users expand and hide content when clicked.
 
-**How to use the Accordion UI Pattern**
+## How to use the accordion UI pattern
 
 1. In Service Studio, in the Toolbox, search for `Accordion`.
 
@@ -79,7 +80,7 @@ After following these steps and publishing the module, you can test the pattern 
 | MultipleItems (Boolean): Optional | Set to True to allow multiple Accordion items to be expanded simultaneously. By default, False. |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-### Accordion Item
+### Accordion item
 
 | Property | Description |
 | --- | --- |
@@ -91,8 +92,74 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Events
 
-### Accordion Item
+### Accordion item
 
-|Event|Description|
-|---|---|
-|OnToggle: Optional|Event triggered when the section is expanded or collapsed.|
+| Event | Description |
+| --- | --- |
+| OnToggle: Optional | Event triggered when the section is expanded or collapsed. |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+By default, the **Accordion** UI Pattern used together with a **List** Widget doesn’t expose the correct roles for assistive technologies.  
+Assigning `list` and `listitem` roles ensures that screen readers interpret the structure properly, improving navigation and context for users who rely on assistive tools.
+
+### Assign list roles in the Accordion
+
+<div class="info" markdown="1">
+
+If using Accordion Item pattern without Accordion pattern adapt the following instructions and the script to create the action in Accordion Item Initialized Event.
+
+</div>
+
+1. In **Service Studio**, go to the **Interface** tab and select the **Screen/Block** where you use the **Accordion**.  
+
+1. In the **Accordion** properties, under **Event Initialized**, select **New Cliente Action** and name it `AccordionInitialized`.  
+
+    ![Create a new client action in Service Studio](images/accordion-accordioninitialized-ss.png "Creating a new client action")
+
+1. In **AccordionInitialized**, add a **JavaScript** node.  
+
+    ![Example of adding a JavaScript node to OnReady action in Service Studio](images/accordion-addjsnode-ss.png "Adding a JavaScript node to OnReady action")
+
+1. Add the following code to apply correct list semantics:
+
+    ```javascript
+    const accordionItems = document.querySelectorAll("#"+ $parameters.WidgetId +" .osui-accordion .osui-accordion-item");
+    if (!accordionItems) return;
+
+    accordionItems.forEach(accordionItem => {
+        let retryHandle;
+
+        function applyRoles(currListEl) {
+            if (!currListEl) return;
+            currListEl.setAttribute('role', 'list');
+            const items = currListEl.querySelectorAll(':scope > *');
+            items.forEach(item => item.setAttribute('role', 'listitem'));
+        }
+
+        function waitListRender() {
+            const listEl = document.querySelector("#"+ $parameters.WidgetId +".osui-accordion .list");
+            if (listEl) {
+                applyRoles(listEl);
+                if (retryHandle) {
+                    clearTimeout(retryHandle);
+                }
+            } else {
+                retryHandle = setTimeout(waitListRender, 100);
+            }
+        }
+
+        // Start the process
+        waitListRender();
+    });
+    ```
+
+1. Publish the module
+
+### Result
+
+After completing these steps, any **List** inside an **Accordion** correctly exposes `list` and `listitem` roles.  
+
+Screen readers can now identify and announce list items accurately, improving both structure and usability for people who navigate using assistive technologies.  
+
+Test the pattern in your app to confirm the update.

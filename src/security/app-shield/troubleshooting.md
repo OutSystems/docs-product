@@ -12,6 +12,7 @@ audience:
   - mobile developers
 outsystems-tools:
   - none
+isautopublish: true
 ---
 # Troubleshooting AppShield crashes
 
@@ -41,6 +42,19 @@ i.aw: 1a
 
 In the scenario, the line `i.aw: 1a` includes the reason for the crash which has the code `1a` - `Developer Options enabled on device`.
 The first part of the line varies from app to app, and the reason code is next to the colon (:).
+
+<div class="info" markdown="1">
+
+AppShield may cause shielded Android apps to fail Google Play Store and 16KB page size compatibility reviews. This happens because Google tested the apps on rooted devices and emulators and AppShield exits the app when it detects these environments as security risks.
+
+If a shielded app fails one of these reviews, check the stack trace provided by Google. If the crash resembles
+`gxffgth.jMo: XX` then the app exited due to its configured security policy.
+
+In this example, `XX` is the exit code. For a full list of exit codes, refer to the [Shutdown reasons](#shutdown-reasons) section. The most common codes in this context are `00` (rooting detection) and `02` (emulator detection).
+
+If this occurs, contact Google directly and explain that the app exited for security reasons and shouldn't be tested on a rooted device or emulator during the review process.
+
+</div>
 
 ### iOS
 

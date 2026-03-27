@@ -14,6 +14,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+isautopublish: true
 ---
 
 # Invalid Client Function
@@ -37,5 +38,13 @@ The `Invalid Client Function` error is issued in the following situations:
     Client Actions marked as functions must be synchronous and cannot execute JavaScript nodes that include the function `$resolve()`.
   
     Change the Function property of the Client Action to `No` or avoid executing the asynchronous JavaScript node.
+
+* `'<Client Action>' action cannot be used in the '<Client Action>' action. Only actions that are functions can be used in other functions. Change the 'Function' property of the '<Client Action>' action to 'Yes' or the 'Function' property of the '<Client Action>' action to 'No'.`
+
+* `'<Client Action>' action cannot be used in the '<Client Action>' action. Only actions that are functions can be used in other functions. Change the 'Function' property of the '<Client Action>' action to 'No'.`
+
+    In OutSystems 11, only actions marked as functions can be used inside other functions or in the Expression Editor. Some System Client Actions aren't defined as functions. For example, `ListIndexOf` isn't marked with `Is Function?` set to `Yes`, while actions like `ListDistinct` and `ListDuplicate` are.
+
+    If the called action is a user-defined action, change its **Function** property to `Yes`. If the called action is a System action or you need to call non-function actions, change the calling action's **Function** property to `No`.
 
 Double-click on the error line to take you directly to the source of the error.

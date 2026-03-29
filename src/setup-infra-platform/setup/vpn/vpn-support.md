@@ -14,6 +14,7 @@ audience:
   - architects
 outsystems-tools:
   - none
+isautopublish: true
 ---
 # Set up a VPN to your OutSystems Cloud
 
@@ -183,10 +184,10 @@ If you want to use your own configuration, make sure your VPN gateway configurat
 | Protocol | IKE v1 or IKE v2 |
 | Authentication Method | Pre-shared Key |
 | Protocol Communications | Encapsulated UDP port 500, NAT-T (UDP port 4500) |
-| Encryption Algorithm | AES-128, AES-256 |
-| Diffie-Hellman Group | 2 (1024 bit), 14-18 (2048 bit), 22, 23, and 24 (2048 bit) |
+| Encryption Algorithm | AES-128, AES-256, AES-128-GCM-16, AES-256-GCM-16 |
+| Diffie-Hellman Group | 2, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 |
 | Perfect Forward Secrecy (PFS) | Yes |
-| Hashing Algorithm for Integrity | SHA-1,  SHA-256, SHA-512 |
+| Hashing Algorithm for Integrity | SHA-1, SHA-256, SHA-384, SHA-512 |
 | Re-negotiation time | 28800 seconds |
 | Mode | Main |
 
@@ -194,10 +195,10 @@ If you want to use your own configuration, make sure your VPN gateway configurat
 | --- | --- |
 | Protocol | IKE Phase II (IPSEC SA) |
 | IPSec Protocol | ESP; UDP port 500; NAT-T is supported on your side |
-| Encryption Algorithm | AES-128, AES-256 |
+| Encryption Algorithm | AES-128, AES-256, AES-128-GCM-16, AES-256-GCM-16 |
 | Encryption Mode | Tunnel |
-| Diffie-Hellman Group | 2 (1024 bit), 5 (1536 bit), 14-18 (2048 bit), 22, 23, and 24 (2048 bit) |
-| Hashing Algorithm for Integrity | SHA-1,  SHA-256, SHA-512 |
+| Diffie-Hellman Group | 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 |
+| Hashing Algorithm for Integrity | SHA-1, SHA-256, SHA-384, SHA-512 |
 | Lifetime Measurement | Time |
 | Time Lifetime | 3600 seconds |
 

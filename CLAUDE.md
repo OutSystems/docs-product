@@ -1,34 +1,39 @@
-# Claude Caude guidance
+# Claude Code guidance
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working in this repository.
+
+This `CLAUDE.md` is shared across multiple documentation repositories in this workspace. Repo-specific details (content roots, frontmatter schema, build toolchain, and workflow names) can vary. When unsure, check the repo’s source-of-truth configuration files (for example, `.github/`, `toc.yml`, and `config.yml`) and follow existing patterns in nearby content.
 
 ## Repository overview
 
-This is the **OutSystems Developer Cloud (ODC)** documentation repository. It contains Markdown source files published to <https://success.outsystems.com/documentation/outsystems-developer-cloud/>. This is a docs-only repo — no application code, no package manager, no build scripts to run locally. Markdown is converted to HTML via Python Markdown with extensions (extra, meta, toc, blankline, markdown-include).
+These repositories are OutSystems documentation-first codebases. Most changes are Markdown content, images, and configuration for building, validating, and publishing documentation. Some repositories also include scripts and tooling that support those workflows.
 
 ## Repository structure
 
-* `src/eap/` — Main documentation content, organized by topic area (building-apps, deploying-apps, security, etc.). Each topic folder contains `.md` files and an `images/` subfolder for screenshots and diagrams.
-* `src/error/` — Error documentation
-* `src/shared/` — Shared/reusable content fragments (included into other docs via markdown-include syntax)
-* `toc.yml` — Table of contents defining site navigation hierarchy. Uses `href` paths relative to `src/`. Structured with `# Comment` section headers, `- href:` entries, and nested `- topics:` arrays.
-* `config.yml` — Build configuration (input: `src/`, output: `build/`)
-* `styles/` — Vale linting styles (OutSystems, Microsoft, proselint, alex)
-* `.github/doc-styles/` — Authoritative style guide files (formatting.md, tone.md, structure.md, visual-assets.md)
-* `scripts/` — Custom markdownlint rules (MD025 with pagebreaks, MD033 nested inline HTML)
+Look for the files and folders that define content roots, navigation, and validations. Common patterns include:
+
+* `README.md` — Project-specific instructions (if present)
+* `toc.yml` — Table of contents / navigation (if present)
+* `config.yml` (or equivalent) — Build configuration such as input/output folders (if present)
+* `src/` (or equivalent) — Markdown source content (if present)
+* `src/shared/` (or equivalent) — Reusable content fragments included into other docs (if present)
+* `images/` subfolders — Screenshots and diagrams referenced by pages (if present)
+* `.github/workflows/` — CI validations and build steps
+* `.github/doc-styles/` and `.github/copilot-instructions.md` — Writing and formatting rules
+* `styles/` — Vale linting styles (if present)
+* `scripts/` — Custom lint rules or helpers (if present)
 
 ## Frontmatter format
 
-Every `.md` file uses YAML frontmatter validated by CI against `.github/workflows/frontmatter.json`.
+Many Markdown pages start with YAML frontmatter. The exact required fields and allowed values are enforced by CI and can vary by repository.
 
-Required fields: `summary`, `locale` (always `en-us`), `app_type` (e.g. `mobile apps, reactive web apps`), `guid` (UUID), `platform-version` (always `odc`), `figma` (Figma URL or empty/null).
+Treat the schema as authoritative (commonly `.github/workflows/frontmatter.json`, if present) and copy frontmatter from a similar page in the same repo/section.
 
-Optional fields with enum values:
+When editing or creating pages:
 
-* `coverage-type`: remember, understand, apply, evaluate, unblock, none
-* `content-type`: conceptual, procedure, process, error or warning, troubleshooting, reference, tutorial, best practice, vulnerability, release notes, none
-* `audience`: mobile developers, frontend developers, backend developers, full stack developers, team lead, team manager, test engineers, architects, platform administrators, tech leads, infrastructure managers, ui designers, business analysts, data engineers, project managers, product owners, none
-* `outsystems-tools`, `topic`, `tags`: free-form arrays/strings
+* Copy frontmatter from a similar page.
+* Don’t invent enum values—reuse values already used in the repo or listed in the schema.
+* If the frontmatter contains a unique identifier (for example, `guid`), leave the new value empty when creating a new page and don’t reuse an existing one.
 
 ## Style guide (source of truth)
 
@@ -77,13 +82,13 @@ Warning text here.
 
 Use `class="info"` for informational callouts.
 
-Product names (exact capitalization): OutSystems, Service Studio, ODC Studio, ODC Portal, LifeTime, Service Center, AI Mentor Studio, Forge, Integration Studio.
+Product names: follow capitalization and naming in `.github/doc-styles/tone.md`.
 
 ## Linting
 
 ### Vale (prose linting)
 
-Configuration: `.vale.ini` with `BasedOnStyles = Vale, OutSystems, alex`. Rules from Microsoft and proselint are also enabled selectively. Run locally with:
+Configuration is typically in `.vale.ini` (if present). Run locally with:
 
 ```
 vale src/path/to/file.md
@@ -91,7 +96,7 @@ vale src/path/to/file.md
 
 ### Markdownlint
 
-Configuration: `.markdownlint.json`. Custom rules in `scripts/`. Key settings:
+Configuration is typically in `.markdownlint.json` (if present). Custom rules may live in `scripts/` (if present). Key settings:
 
 * `ul-style`: asterisk
 * `ul-indent`: 4 spaces
@@ -101,11 +106,11 @@ Configuration: `.markdownlint.json`. Custom rules in `scripts/`. Key settings:
 * `line-length`: disabled
 * `no-duplicate-heading`: siblings only
 
-Rules that cause CI failure are listed in `markdownlint_fail.json`.
+Rules that cause CI failure may be listed in `markdownlint_fail.json` (if present).
 
 ## CI workflows
 
-Validations run on PRs via shared workflows in `OutSystems/tk-cicd`. Key workflows:
+Validations run on PRs via `.github/workflows/`. Workflow names and checks vary by repository, but commonly include:
 
 * `validations.yml` — Shared docs validation (markdownlint, vale, etc.)
 * `validate-frontmatter.yml` — Frontmatter schema validation against `.github/workflows/frontmatter.json`

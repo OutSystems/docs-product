@@ -149,6 +149,8 @@ OutSystems is working to improve the data interoperability capability. Meanwhile
 
 * An ODC tenant can only connect to one O11 infrastructure.
 
+* Data interoperability isn't yet supported for [ODC self-hosted](https://www.outsystems.com/tk/redirect?g=2433ca96-db20-493f-b04b-0e82e33c424e).
+
 * Data interoperability isn't yet supported for hybrid O11 infrastructures.
 
 ## Prerequisites

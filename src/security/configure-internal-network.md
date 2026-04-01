@@ -17,7 +17,7 @@ coverage-type:
 isautopublish: true
 ---
 
-# Configure an Internal Network
+# Configure an internal network
 
 OutSystems applications can set the access to specific elements (Web UI Flows (**traditional web apps only**), exposed SOAP services, and exposed REST APIs) to be available only within an internal network, while other parts of the application are kept available to the general public.
 
@@ -37,9 +37,9 @@ To configure an internal network for your OutSystems environment, do the followi
 
 1. Select the **Network Security** area.
 
-    ![Screenshot of the Network Security area in the OutSystems Service Center where the Internal network addresses field is highlighted](images/configure-internal-network-1.png "Internal Network Configuration")
+    ![Screenshot of the Network Security area in the OutSystems Service Center where the Internal network addresses field is highlighted](images/configure-internal-network-sc.png "Internal Network Configuration")
 
-1. Fill in the **Internal network addresses** field with the list of IP addresses or ranges from which you want to allow the access to the management consoles and the endpoints of your applications defined as Internal Access Only. Assure you include also the IP addresses/ranges of the controller, all front-end servers and monitoring tools.
+1. Fill in the **Internal network addresses** field with the list of IP addresses or ranges from which you want to allow the access to the management consoles and the endpoints of your applications defined as Internal Access Only. Ensure that you also include the IP addresses or ranges of the controller, all front-end servers, and any monitoring tools.
 
 1. Click the **Save** button.
 
@@ -51,6 +51,9 @@ When you define an internal network for a specific OutSystems environment, it wi
 * The LifeTime console of the environment, if the environment where the configuration was applied is a LifeTime environment
 * Connections from Service Studio, Integration Studio and OSP Tool to the environment
 * System Components that are meant to be used by the development tools, like RESTDevService
+* OutSystems Deployment Controller service (since Platform Server 11.25.0)
+* OutSystems Deployment service (since Platform Server 11.24.0)
+* OutSystems Scheduler service (since Platform Server 11.21.0)
 
 In the case you inadvertently define an internal network configuration that blocks you from accessing Service Center, you can:
 

@@ -14,9 +14,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
-# Preprocess REST API Requests
+# Preprocess REST API requests
 
 OutSystems allows you to run logic before executing each request of an exposed REST API.
 
@@ -26,13 +27,13 @@ For that, do the following:
 
 1. In the REST API, set the property "On Request" to `New OnRequest`.
 
-    ![Screenshot showing the REST API properties with 'On Request' set to 'New OnRequest'.](images/ss-rest-expose-onrequest.png "Setting the OnRequest Property")
+    ![Screenshot showing the REST API properties with 'On Request' set to 'New OnRequest'.](images/rest-expose-onrequest-ss.png "Setting the OnRequest Property")
 
 1. Open the "OnRequest" callback action that is now available under the REST API.
 
 1. Design the logic to preprocess the request.
 
-    ![Screenshot of the OnRequest callback logic tree in OutSystems with RequestText and RequestBinary attributes.](images/ss-rest-expose-onrequest-tree.png "OnRequest Callback Logic Tree")
+    ![Screenshot of the OnRequest callback logic tree in OutSystems with RequestText and RequestBinary attributes.](images/rest-expose-onrequest-tree-ss.png "OnRequest Callback Logic Tree")
 
     You can get the text of the request by accessing the "RequestText" attribute of the "Request" input parameter or its binary contents by accessing the "RequestBinary" attribute.
 

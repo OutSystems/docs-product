@@ -16,9 +16,10 @@ coverage-type:
   - apply
 topic:
   - custom-request-response
+isautopublish: true
 ---
 
-# Customize REST API Responses
+# Customize REST API responses
 
 OutSystems allows you to customize the information sent in responses when exposing a REST API.
 
@@ -28,13 +29,13 @@ For that, do the following:
 
 1. In the exposed REST API, set the property **On Response** to `New OnResponse`.
 
-    ![Screenshot showing where to set the On Response property in the OutSystems REST API configuration](images/ss-rest-expose-onresponse.png "Setting On Response Property")
+    ![Screenshot showing where to set the On Response property in the OutSystems REST API configuration](images/rest-expose-onresponse-ss.png "Setting On Response Property")
 
 1. Open the OnResponse callback action that's now available under the REST API.
 
 1. Design the logic to customize the information of the response.
 
-    ![Screenshot of the OnResponse callback action logic tree in OutSystems](images/ss-rest-expose-onresponse-tree.png "OnResponse Callback Action Logic")
+    ![Screenshot of the OnResponse callback action logic tree in OutSystems](images/rest-expose-onresponse-tree-ss.png "OnResponse Callback Action Logic")
 
     You can get the text of the response by accessing the "ResponseText" attribute of the "Response" input parameter or its binary contents by accessing the "ResponseBinary" attribute.
 

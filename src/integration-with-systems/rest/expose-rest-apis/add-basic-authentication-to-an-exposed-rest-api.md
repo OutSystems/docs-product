@@ -15,11 +15,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+isautopublish: true
 ---
 
-# Add Basic Authentication to an Exposed REST API
-
-## Basic authentication
+# Add basic authentication to an exposed REST API
 
 Basic authentication is a simple authentication scheme built into the HTTP protocol. The client sends HTTP requests with the "Authorization" header containing the word "Basic", a space character, and a "username:password" string encoded in Base64.
 
@@ -47,14 +46,14 @@ For that, do the following:
 
 1. Select the exposed REST API you want to change and set its "Authentication" property to `Basic`.
 
-    ![Screenshot showing how to select the Basic authentication property for a REST API in OutSystems](images/rest-authentication-options-ss.png "REST API Authentication Property")
+    ![Screenshot showing how to select the Basic authentication property for a REST API in OutSystems](images/rest-authentication-options-basic-ss.png "REST API Authentication Property")
 
 As a result, OutSystems creates the "OnAuthentication" action in your REST API to handle basic authentication with:
 
 * The "Username" and "Password" input parameters holding the credentials passed in the request (they're automatically decoded from the "Authorization" HTTP header)
 * The "User_Login" action to validate the credentials and identify the user
 
-![Flow diagram of the OnAuthentication action handling basic authentication in OutSystems REST API](images/ss-rest-onauthentication-basic-flow.png "OnAuthentication Action Flow")
+![Flow diagram of the OnAuthentication action handling basic authentication in OutSystems REST API](images/rest-onauthentication-basic-flow-ss.png "OnAuthentication Action Flow")
 
 All methods in the REST API now require Basic Authentication. Manage user credentials in your end user management application (by default, the [Users application](../../../user-management/end-user-manage/accessing-users.md)).
 

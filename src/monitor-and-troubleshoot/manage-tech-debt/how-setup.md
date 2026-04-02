@@ -16,6 +16,7 @@ outsystems-tools:
   - architecture dashboard
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # How to set up AI Mentor Studio
@@ -94,7 +95,7 @@ Before registering and setting up your infrastructure in AI Mentor Studio, make 
 
 * You have the **Administrator** role in your infrastructure.
 
-* AI Mentor Studio will use the environment's public DNS hostname to communicate. Check [AI Mentor Studio network requirements](../../setup-infra-platform/setup/network-requirements.md#ai-mentor-studio) for detailed information. In the OutSystems Cloud, these requirements are ensured.
+* AI Mentor Studio uses the environment's public DNS hostname to communicate. Check [AI Mentor Studio network requirements](../../setup-infra-platform/setup/network-requirements.md#ai-mentor-studio) for detailed information. In the OutSystems Cloud, these requirements are ensured.
 
 <div class="info" markdown="1">
 
@@ -114,7 +115,7 @@ Depending on your authentication method, the interface might differ slightly fro
 
 1. After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/), select **Register and set up my infrastructure**.
 
-1. Fill in your infrastructure information, or confirm it is correct in case it's already pre-filled. Then, click **Register**.
+1. Fill in your infrastructure information, or confirm it is correct in case it's already pre-filled. Then, select **Register**.
 
     ![Form for registering and setting up infrastructure information in AI Mentor Studio](images/infra-setup-ams.png "Infrastructure Setup in AI Mentor Studio")
 
@@ -132,7 +133,7 @@ Depending on your authentication method, the interface might differ slightly fro
 
     1. Select **Download code analysis probe** to download the probe.
 
-    1. In the Service Center of the **code analysis environment** (`https://<code_analysis_environment>/ServiceCenter`), go to **Factory**>**Solutions** and install the **code analysis probe**.
+    1. In the Service Center of the **code analysis environment** (`https://<code_analysis_environment>/ServiceCenter`), go to **Factory** > **Solutions** and install the **code analysis probe**.
 
 1. After completing the previous steps, select the **I confirm I completed all the steps above.** checkbox and select **Next**.
 
@@ -142,7 +143,7 @@ Depending on your authentication method, the interface might differ slightly fro
 
     1. Select **Download LifeTime probe** to download the probe.
 
-    1. In the Service Center of the **LifeTime environment** (`https://<lifetime_environment>/ServiceCenter`), go to **Factory**>**Solutions** and install the **LifeTime probe**.
+    1. In the Service Center of the **LifeTime environment** (`https://<lifetime_environment>/ServiceCenter`), go to **Factory** > **Solutions** and install the **LifeTime probe**.
 
 1. After completing the previous steps, select the **I confirm I completed all the steps above.** checkbox and select **Next**.
 
@@ -217,3 +218,31 @@ If you log in with your **IT user account**, follow these steps to associate you
     1. Check the **Installation details** and read the **privacy policy** carefully.
 
     1. If you agree with the privacy policy, select the check box and then select **Agree and continue**.
+
+## Troubleshoot a 401 unauthorized error {#troubleshoot-401}
+
+During setup or IT user association, you may get a `401 Unauthorized` error. The following sections help you identify and resolve the cause.
+
+### Symptom
+
+AI Mentor Studio returns a `401 Unauthorized` error when you try to log in, register your infrastructure, or associate your IT user.
+
+### Cause
+
+A 401 error occurs when AI Mentor Studio can't validate your credentials. Common causes, ordered from most to least likely:
+
+* **Wrong authentication mode** — IT User authentication is activated for the environment, but you logged in with an OutSystems account (or the other way around).
+
+* **IT user association not completed** — The infrastructure is already registered and you logged in with an OutSystems account, but you didn't complete the IT user association flow through LifeTime.
+
+* **Invalid credentials** — The IT user username doesn't exist, the password is incorrect, or the account is blocked after too many failed attempts.
+
+### Resolution
+
+To resolve the error, follow these steps:
+
+1. Verify which authentication mode is activated for your environment. If IT User authentication is activated, log in with your IT user account.
+
+1. If the infrastructure is already registered and you're using an OutSystems account, complete the [IT user association flow](#associate-os-login).
+
+1. If logging in with IT user credentials fails, verify the username and password are correct and that the account isn't blocked. Contact your IT administrator to reset the account if needed.

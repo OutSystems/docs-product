@@ -45,15 +45,19 @@ To configure an internal network for your OutSystems environment, do the followi
 
 Clicking Save will invalidate the Service Center cache. After checking the cache was invalidated, all the running applications in the environment will load the new settings.
 
-When you define an internal network for a specific OutSystems environment, it will affect the access to the following tools:
+When you define an internal network for a specific OutSystems environment, this will also affect the access to tools and services.
+
+Affected tools:
 
 * The Service Center console of the environment
 * The LifeTime console of the environment, if the environment where the configuration was applied is a LifeTime environment
 * Connections from Service Studio, Integration Studio and OSP Tool to the environment
 * System Components that are meant to be used by the development tools, like RESTDevService
-* OutSystems Deployment Controller service (since Platform Server 11.25.0)
-* OutSystems Deployment service (since Platform Server 11.24.0)
-* OutSystems Scheduler service (since Platform Server 11.21.0)
+
+Impacted internal OutSystems services:
+
+* OutSystems Deployment Service (since Platform Server 11.41.0)
+* OutSystems Scheduler Service (since Platform Server 11.28.0)
 
 In the case you inadvertently define an internal network configuration that blocks you from accessing Service Center, you can:
 

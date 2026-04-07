@@ -23,3 +23,10 @@ swap:
   SS: Service Studio
   KeyCloak: Keycloak
   'paas': OutSystems Cloud
+  'mentor ?web': Mentor Web
+  'mentor ?studio': Mentor Studio
+  'odc ?studio': ODC Studio
+  'odc ?portal': ODC Portal
+  'data ?fabric': Data Fabric
+  'data ?platform': Data Platform
+  'outsystems ?model': OutSystems Model

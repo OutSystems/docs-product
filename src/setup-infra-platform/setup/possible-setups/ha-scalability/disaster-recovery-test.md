@@ -11,6 +11,7 @@ audience:
   - platform administrators
 outsystems-tools:
   - service center
+isautopublish: true
 ---
 # Perform a cross-region disaster recovery test
 
@@ -46,7 +47,7 @@ To perform a cross-region disaster recovery test that replicates a real-world sc
 
     ![OutSystems Customer Portal showing the all preconditions checked.](images/xrdr-conditions-cp.png "Verify the preconditions for the failover test")
 
-    **Note**: If you fail to fulfill all preconditions, you risk losing data from the environment used for the failover test. Be aware that any changes done to the environment since its last backup will be lost irreversibly once the test procedure starts
+    **Note**: If you fail to fulfill all preconditions, you risk losing data from the environment used for the failover test. Be aware that any changes done to the environment since its last backup are lost irreversibly once the test procedure starts
 
 1. In the popup, enter the environment name and click **Start failover**.
 
@@ -64,7 +65,7 @@ When the test is finished, the system sends you an email confirming the failover
 
     * A new environment is created in the new region from the database backup. You must publish the factory to guarantee its stability.
 
-* Recreate private connections: VPN (via Lifetime), Transit Gateway (via OutSystems support case), and Direct Connect (via OutSystems support case).
+* Recreate private connections via an OutSystems support case: VPN, Transit Gateway, and Direct Connect.
 
     * A new virtual private cloud (VPC) is created in the new region using a different class inter-domain routing (CIDR) block from the primary region. Based on the database backup, OutSystems creates all assets from scratch, that is, environment front-ends and databases.
 
@@ -96,7 +97,7 @@ The following configurations are kept in the environment, with no need for addit
 
 * External connections (in Service Center, for example, DB connections)
 
-The new environment's front-ends and database configuration will mirror the source environment's configuration. The relational database service (RDS) instance engine version, instance type (class), and storage parameters will match. Additionally, the front-end count, instance type (class), and storage parameters will align.
+The new environment's front-ends and database configuration mirror the source environment's configuration. The relational database service (RDS) instance engine version, instance type (class), and storage parameters match. Additionally, the front-end count, instance type (class), and storage parameters are also replicated.
 
 ## Failover test report
 

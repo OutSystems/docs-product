@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Data Grid Reactive APIs
@@ -102,7 +103,7 @@ Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](h
 | [Filter_Condition](<#Structure_Filter_Condition>) | Represents a filter condition. |
 | [ImageOptionalConfigs](<#Structure_ImageOptionalConfigs>) | Additional configurations that can be set in the Image Column. |
 | [Mandatory](<#Structure_Mandatory>) | Sets column fields as mandatory and sets an error message. |
-| [Mandatory](<#Structure_Mandatory>) | Sets column fields as mandatory and sets an error message. |
+
 | [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>) | Additional configurations that can be set in the Context Menu items. |
 | [NumberConditionalFormatRule](<#Structure_NumberConditionalFormatRule>) | Conditional format rule definition for the Number column. |
 | [NumberFormatCondition](<#Structure_NumberFormatCondition>) | Condition to be validated. |
@@ -121,7 +122,7 @@ Data Grid for Reactive Web Applications is built on top of [Mescius Data Grid](h
 
 ## Widgets
 
-### ActionColumn { #ActionColumn }
+### ActionColumn {#ActionColumn}
 
 Column for your GridContainer block to render number fields.  
   
@@ -149,7 +150,7 @@ ActionOptionalConfigs
 :   Type: optional, [ActionOptionalConfigs](<#Structure_ActionOptionalConfigs>).  
     Sets additional parameters to customize the column's behavior and functionality.
 
-### CheckboxColumn { #CheckboxColumn }
+### CheckboxColumn {#CheckboxColumn}
 
 Column for your GridContainer Block to render boolean fields.  
   
@@ -171,11 +172,11 @@ ColumnOptionalConfigs
 :   Type: optional, [ColumnOptionalConfigs](<#Structure_ColumnOptionalConfigs>).  
     Sets additional parameters to customize the column's behavior and functionality.
 
-### ContextMenu { #ContextMenu }
+### ContextMenu {#ContextMenu}
 
 Adds a context menu to the grid. (Default options: Copy, Copy with headers, Export to CSV to Excel, Freeze column(s), Unfreeze columns)
 
-### CurrencyColumn { #CurrencyColumn }
+### CurrencyColumn {#CurrencyColumn}
 
 Column for your GridContainer Block to render number fields.  
   
@@ -205,7 +206,7 @@ CurrencyOptionalConfigs
 :   Type: optional, [CurrencyOptionalConfigs](<#Structure_CurrencyOptionalConfigs>).  
     Sets additional configurations that can be set in the Currency columns.
 
-### DateColumn { #DateColumn }
+### DateColumn {#DateColumn}
 
 Column for your GridContainer Block to render text fields.  
   
@@ -235,7 +236,7 @@ DateOptionalConfigs
 :   Type: optional, [DateOptionalConfigs](<#Structure_DateOptionalConfigs>).  
     Sets additional configurations that can be set in the Date columns.
 
-### DateTimeColumn { #DateTimeColumn }
+### DateTimeColumn {#DateTimeColumn}
 
 Column for your GridContainer Block to render text fields.  
   
@@ -265,7 +266,7 @@ DateTimeOptionalConfigs
 :   Type: optional, [DateTimeOptionalConfigs](<#Structure_DateTimeOptionalConfigs>).  
     Sets additional configurations that can be set in the DateTime columns.
 
-### DropdownColumn { #DropdownColumn }
+### DropdownColumn {#DropdownColumn}
 
 Column for your GridContainer Block to render fields with dropdown options.  
   
@@ -295,7 +296,7 @@ ColumnOptionalConfigs
 :   Type: optional, [ColumnOptionalConfigs](<#Structure_ColumnOptionalConfigs>).  
     Set additional parameters to customize the column's behavior and functionality.
 
-### Grid { #Grid }
+### Grid {#Grid}
 
 Container that displays the grid.  
   
@@ -324,7 +325,7 @@ OptionalConfigs
 :   Type: optional, [OptionalConfigs](<#Structure_OptionalConfigs>).  
     Set additional parameters to customize the grid's behavior and functionality.
 
-### ImageColumn { #ImageColumn }
+### ImageColumn {#ImageColumn}
 
 Column for your GridContainer Block to render image fields.
   
@@ -346,7 +347,7 @@ ImageOptionalConfigs
 :   Type: optional, [ImageOptionalConfigs](<#Structure_ImageOptionalConfigs>).  
     Set additional parameters to customize the column's behavior and functionality.
 
-### MenuItem_Column_Freeze { #MenuItem_Column_Freeze }
+### MenuItem_Column_Freeze {#MenuItem_Column_Freeze}
 
 Allows the user to freeze columns on the grid.
 
@@ -360,7 +361,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Column_FreezeUnfreeze { #MenuItem_Column_FreezeUnfreeze }
+### MenuItem_Column_FreezeUnfreeze {#MenuItem_Column_FreezeUnfreeze}
 
 Allows the user to freeze or unfreeze columns on the grid.
 
@@ -378,7 +379,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Column_Unfreeze { #MenuItem_Column_Unfreeze }
+### MenuItem_Column_Unfreeze {#MenuItem_Column_Unfreeze}
 
 Allows the user to unfreeze columns on the grid.
 
@@ -392,7 +393,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Copy { #MenuItem_Copy }
+### MenuItem_Copy {#MenuItem_Copy}
 
 Allows the user to copy data from the grid.
 
@@ -406,7 +407,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Copy_WithHeaders { #MenuItem_Copy_WithHeaders }
+### MenuItem_Copy_WithHeaders {#MenuItem_Copy_WithHeaders}
 
 Allow the user to copy data from grid, including its headers.
 
@@ -420,7 +421,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_CustomOption { #MenuItem_CustomOption }
+### MenuItem_CustomOption {#MenuItem_CustomOption}
 
 Allows the user to set customized actions on the ContextMenu.
 
@@ -433,7 +434,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Export { #MenuItem_Export }
+### MenuItem_Export {#MenuItem_Export}
 
 Aggregates all the available export functions.
 
@@ -446,7 +447,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Export_ToCSV { #MenuItem_Export_ToCSV }
+### MenuItem_Export_ToCSV {#MenuItem_Export_ToCSV}
 
 Allows the user to export data to a .CSV file
 
@@ -460,7 +461,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Export_ToExcel { #MenuItem_Export_ToExcel }
+### MenuItem_Export_ToExcel {#MenuItem_Export_ToExcel}
 
 Allows the user to export data to a .XLS file
 
@@ -474,7 +475,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Export_ToExcelWithoutStyles { #MenuItem_Export_ToExcelWithoutStyles }
+### MenuItem_Export_ToExcelWithoutStyles {#MenuItem_Export_ToExcelWithoutStyles}
 
 Allow the user to export data to a .XLS file, ignoring CSS styles.
 
@@ -488,7 +489,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Rows_Add { #MenuItem_Rows_Add }
+### MenuItem_Rows_Add {#MenuItem_Rows_Add}
 
 Allows the user to insert as many rows as the selected.
 
@@ -502,7 +503,7 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Rows_Delete { #MenuItem_Rows_Delete }
+### MenuItem_Rows_Delete {#MenuItem_Rows_Delete}
 
 Allow the user to delete the selected rows.
 
@@ -516,11 +517,11 @@ MenuItemOptionalConfigs
 :   Type: optional, [MenuItemOptionalConfigs](<#Structure_MenuItemOptionalConfigs>).  
     Additional configurations that can be set in the context menu items.
 
-### MenuItem_Separator { #MenuItem_Separator }
+### MenuItem_Separator {#MenuItem_Separator}
 
 Inserts a line separator. Used to distinguish areas in a context menu.
 
-### NumberColumn { #NumberColumn }
+### NumberColumn {#NumberColumn}
 
 Column for your GridContainer Block to render number fields.  
   
@@ -550,7 +551,7 @@ NumberOptionalConfigs
 :   Type: optional, [NumberOptionalConfigs](<#Structure_NumberOptionalConfigs>).  
     Sets additional configurations that can be set in the Number columns.
 
-### OnFiltersChange { #OnFiltersChange }
+### OnFiltersChange {#OnFiltersChange}
 
 This block enables you to handle theOnFiltersChange event of a given grid.  
 When the user changes a filter, the event is fired with all of the currently active filters.
@@ -561,7 +562,7 @@ GridWidgetId
 :   Type: mandatory, Text.  
     ID of Grid block, that the block will handle the events.
 
-### SearchData { #SearchData }
+### SearchData {#SearchData}
 
 Searches for data on an already loaded grid.
 
@@ -576,7 +577,7 @@ PromptMessage
 :   Type: optional, Text.  
     Message that appears in the search input (Default: `Search for data in the Grid`).
 
-### TextColumn { #TextColumn }
+### TextColumn {#TextColumn}
 
 Column for your GridContainer Block to render text fields.  
   
@@ -604,7 +605,7 @@ ColumnOptionalConfigs
 
 ## Actions
 
-### ArrangeData { #ArrangeData }
+### ArrangeData {#ArrangeData}
 
 Prepares your data to be used by the Data Grid.  
 You should use this action in the Data Action after you fetch the data from the database.
@@ -632,7 +633,7 @@ ErrorMessage
 
 ## Client Actions
 
-### ActivateFilter { #Client_ActivateFilter }
+### ActivateFilter {#Client_ActivateFilter}
 
 Activate filter on a given column
 
@@ -646,7 +647,7 @@ ColumnWidgetId
 :   Type: mandatory, Text.  
     ID of the Column block in which the filter will be activated.
 
-### AddClass { #Client_AddClass }
+### AddClass {#Client_AddClass}
 
 Add a CSS class to a specific row from the grid.
 
@@ -665,7 +666,7 @@ Class
 :   Type: mandatory, Text.  
     CSS class to add to the row.
 
-### AddNewRows { #Client_AddNewRows }
+### AddNewRows {#Client_AddNewRows}
 
 Add new lines to the grid depending on the number of lines that are selected.
 
@@ -686,7 +687,7 @@ ErrorMessage
 :   Type: [ErrorMessage](<#Structure_ErrorMessage>).  
     Error message from actions, such as adding or removing rows from the grid. Contains a code and a message explaining the error.
 
-### ClearFilter { #Client_ClearFilter }
+### ClearFilter {#Client_ClearFilter}
 
 Clear filter on a given column.
 
@@ -700,7 +701,7 @@ ColumnWidgetId
 :   Type: mandatory, Text.  
     ID of the Column block in which the filter will be cleared.
 
-### ClearGridChanges { #Client_ClearGridChanges }
+### ClearGridChanges {#Client_ClearGridChanges}
 
 Discard any modifications since the last time the data was loaded or explicitly marked as saved.
 
@@ -720,7 +721,7 @@ Success
 :   Type: Boolean
     Indicates if the action was successfully performed.
 
-### ClearSort { #Client_ClearSort }
+### ClearSort {#Client_ClearSort}
 
 Clear all sorting on the grid.
 
@@ -730,7 +731,7 @@ GridWidgetId
 :   Type: mandatory, Text.  
     ID of Grid block.
 
-### DeactivateFilter { #Client_DeactivateFilter }
+### DeactivateFilter {#Client_DeactivateFilter}
 
 Deactivate filter on a given column.
 
@@ -744,7 +745,7 @@ ColumnWidgetId
 :   Type: mandatory, Text.  
     ID of the Column block in which the filter will be deactivated.
 
-### FreezeColumns { #Client_FreezeColumns }
+### FreezeColumns {#Client_FreezeColumns}
 
 Freezes the leftmost columns in the grid.
 
@@ -758,7 +759,7 @@ ColumnsCount
 :   Type: mandatory, Integer.  
     Number of leftmost columns to freeze
 
-### FreezeColumnsByActiveCell { #Client_FreezeColumnsByActiveCell }
+### FreezeColumnsByActiveCell {#Client_FreezeColumnsByActiveCell}
 
 Freezes the leftmost columns from the grid, considering the active cell.
 
@@ -768,7 +769,7 @@ GridWidgetId
 :   Type: mandatory, Text.  
     ID of Grid block.
 
-### GetAllSelections { #Client_GetAllSelections }
+### GetAllSelections {#Client_GetAllSelections}
 
 Returns the Ranges for all selections on Grid.
 
@@ -784,7 +785,7 @@ SelectedRanges
 :   Type: [CellRange](<#Structure_CellRange>) List.  
     Returns all selections made in grid.
 
-### GetAllSelectionsData { #Client_GetAllSelectionsData }
+### GetAllSelectionsData {#Client_GetAllSelectionsData}
 
 Returns the DataSource for all the ranges and rows selected on the Grid
 
@@ -800,7 +801,7 @@ SelectionData
 :   Type: [RangeData](<#Structure_RangeData>) List.  
     Returns the values selected in each row.
 
-### GetChangedLines { #Client_GetChangedLines }
+### GetChangedLines {#Client_GetChangedLines}
 
 Gets the lines that were added/changed/removed by the user.
 
@@ -817,7 +818,7 @@ ChangedLines
 :   Type: [ChangedLines](<#Structure_ChangedLines>).  
     Lines that were added/changed/removed by the user.
 
-### GetSelectedRowsCount { #Client_GetSelectedRowsCount }
+### GetSelectedRowsCount {#Client_GetSelectedRowsCount}
 
 Returns the number of rows selected on the grid.
 
@@ -833,7 +834,7 @@ RowsCount
 :   Type: Integer.  
     Returns the number of selected rows.
 
-### GetSelectedRowsData { #Client_GetSelectedRowsData }
+### GetSelectedRowsData {#Client_GetSelectedRowsData}
 
 Returns the DataSource for all the rows selected on the grid.
 
@@ -849,7 +850,7 @@ RowsData
 :   Type: [RowData](<#Structure_RowData>) List.  
     Returns the selected rows data.
 
-### GetViewLayout { #Client_GetViewLayout }
+### GetViewLayout {#Client_GetViewLayout}
 
 Returns the current layout of the grid.
 
@@ -865,7 +866,7 @@ GridWidgetId
 Config
 :   Type: Text.  
 
-### HasFrozenColumns { #Client_HasFrozenColumns }
+### HasFrozenColumns {#Client_HasFrozenColumns}
 
 Checks if the grid has frozen columns.
 
@@ -881,7 +882,7 @@ IsFrozen
 :   Type: Boolean.  
     Returns a boolean indicating if the grid has frozen columns.
 
-### HasSelectedRows { #Client_HasSelectedRows }
+### HasSelectedRows {#Client_HasSelectedRows}
 
 Checks if the grid has selected rows.
 
@@ -897,7 +898,7 @@ HasSelectedRows
 :   Type: Boolean.  
     Returns a boolean indicating if the grid has selected rows.
 
-### MarkChangesAsSaved { #Client_MarkChangesAsSaved }
+### MarkChangesAsSaved {#Client_MarkChangesAsSaved}
 
 Marks the lines that were changed as saved in the database.
 
@@ -908,7 +909,7 @@ GridWidgetId
     ID of Grid block.  
     By default: first grid on the screen.
 
-### RemoveAllClasses { #Client_RemoveAllClasses }
+### RemoveAllClasses {#Client_RemoveAllClasses}
 
 Remove all CSS classes from a specific row on the grid.
 
@@ -923,7 +924,7 @@ RowNumber
 :   Type: mandatory, Integer.  
     Number of the rows from which all classes will be removed.
 
-### RemoveClass { #Client_RemoveClass }
+### RemoveClass {#Client_RemoveClass}
 
 Remove a CSS class from a specific row on the grid.
 
@@ -942,7 +943,7 @@ Class
 :   Type: mandatory, Text.  
     CSS class to remove from the row.
 
-### RemoveSelectedRows { #Client_RemoveSelectedRows }
+### RemoveSelectedRows {#Client_RemoveSelectedRows}
 
 Delete the lines that are selected on the grid.
 
@@ -963,7 +964,7 @@ ErrorMessage
 :   Type: [ErrorMessage](<#Structure_ErrorMessage>).  
     Error message from actions, such as adding or removing rows from the grid. Contains a code and a message explaining the error.
 
-### SearchData_deprecated { #Client_SearchData_deprecated }
+### SearchData_deprecated {#Client_SearchData_deprecated}
 
 Search for data on an already loaded grid.
 
@@ -978,7 +979,7 @@ SearchValue
 :   Type: mandatory, Text.  
     Value to be searched in the Grid.
 
-### SetValidationStatus { #Client_SetValidationStatus }
+### SetValidationStatus {#Client_SetValidationStatus}
 
 Defines a specific cell as valid/invalid and displays an error message to the user when the content of that same cell is invalid.
 
@@ -1004,7 +1005,7 @@ ErrorMessage
 :   Type: optional, Text.  
     Message shown to the user when the value introduced is not valid. By default: `Invalid [ColumnName]`
 
-### SetViewLayout { #Client_SetViewLayout }
+### SetViewLayout {#Client_SetViewLayout}
 
 Adds new lines to the grid depending on the number of lines that are selected.
 
@@ -1018,7 +1019,7 @@ GridWidgetId
 Config
 :   Type: optional, Text.  
 
-### UnfreezeColumns { #Client_UnfreezeColumns }
+### UnfreezeColumns {#Client_UnfreezeColumns}
 
 Unfreezes all columns in the grid.
 
@@ -1030,7 +1031,7 @@ GridWidgetId
 
 ## Structures
 
-### ActionOptionalConfigs { #Structure_ActionOptionalConfigs }
+### ActionOptionalConfigs {#Structure_ActionOptionalConfigs}
 
 Additional configurations that can be set in the Action Column.
 
@@ -1063,7 +1064,7 @@ Width
 :   Type: Integer.  
     Set the column's default width in pixels (default: 0 -&gt; set automatically by the grid).
 
-### ActiveFilters { #Structure_ActiveFilters }
+### ActiveFilters {#Structure_ActiveFilters}
 
 Contains the information of a column's filter.
 
@@ -1089,7 +1090,7 @@ FilterShowValues
 :   Type: [Text](<#Structure_Text>) List.  
     List of values (in string format) of selected values for the filter.
 
-### BindingValue { #Structure_BindingValue }
+### BindingValue {#Structure_BindingValue}
 
 Represents the content of a Cell
 
@@ -1103,7 +1104,7 @@ Value
 :   Type: Text.  
     Cell's value.
 
-### CellRange { #Structure_CellRange }
+### CellRange {#Structure_CellRange}
 
 Represents a range of cells.
 
@@ -1126,7 +1127,7 @@ RightColumnIndex
 :   Type: Integer.  
     Rightmost column index.
 
-### ChangedLines { #Structure_ChangedLines }
+### ChangedLines {#Structure_ChangedLines}
 
 Information about the lines that were added/changed/removed by the user.
 
@@ -1157,7 +1158,7 @@ InvalidLines
 :   Type: Text.  
     JSON Serialization of the lines that are invalid in the data grid.
 
-### ColumnOptionalConfigs { #Structure_ColumnOptionalConfigs }
+### ColumnOptionalConfigs {#Structure_ColumnOptionalConfigs}
 
 Additional configurations that can be set in the Column.
 
@@ -1198,7 +1199,7 @@ Width
 :   Type: Integer.  
     Set the column's default width in pixels (Default: 0 -&gt; set automatically by the grid).
 
-### CurrencyOptionalConfigs { #Structure_CurrencyOptionalConfigs }
+### CurrencyOptionalConfigs {#Structure_CurrencyOptionalConfigs}
 
 Additional configurations that can be set in the Currency columns.
 
@@ -1217,7 +1218,7 @@ Symbol
 :   Type: Text.  
     Set the column's default currency symbol (Default: $).
 
-### DateConditionalFormatRule { #Structure_DateConditionalFormatRule }
+### DateConditionalFormatRule {#Structure_DateConditionalFormatRule}
 
 Conditional format rule definition for Date column.
 
@@ -1235,7 +1236,7 @@ RowClass
 :   Type: Text.  
     CSS class to be applied in the row.
 
-### DateFormatCondition { #Structure_DateFormatCondition }
+### DateFormatCondition {#Structure_DateFormatCondition}
 
 Condition to be validated.
 
@@ -1249,7 +1250,7 @@ Value
 :   Type: Date.  
     Value to be compared to.
 
-### DateOptionalConfigs { #Structure_DateOptionalConfigs }
+### DateOptionalConfigs {#Structure_DateOptionalConfigs}
 
 Additional configurations that can be set in the Date columns.
 
@@ -1259,7 +1260,7 @@ DateConditionalFormatRules
 :   Type: [DateConditionalFormatRule](<#Structure_DateConditionalFormatRule>) List.  
     List of conditional format rules  to be applied to the Date column.
 
-### DateTimeConditionalFormatRule { #Structure_DateTimeConditionalFormatRule }
+### DateTimeConditionalFormatRule {#Structure_DateTimeConditionalFormatRule}
 
 Conditional format rule definition for DateTime column.
 
@@ -1277,7 +1278,7 @@ RowClass
 :   Type: Text.  
     CSS class to be applied in the row.
 
-### DateTimeFormatCondition { #Structure_DateTimeFormatCondition }
+### DateTimeFormatCondition {#Structure_DateTimeFormatCondition}
 
 Condition to be validated.
 
@@ -1291,7 +1292,7 @@ Value
 :   Type: Date Time.  
     Value to be compared to.
 
-### DateTimeOptionalConfigs { #Structure_DateTimeOptionalConfigs }
+### DateTimeOptionalConfigs {#Structure_DateTimeOptionalConfigs}
 
 Additional configurations that can be set in the DateTime columns.
 
@@ -1301,7 +1302,7 @@ DateTimeConditionalFormatRules
 :   Type: [DateTimeConditionalFormatRule](<#Structure_DateTimeConditionalFormatRule>) List.  
     List of conditional format rules  to be applied to the DateTime column.
 
-### DropdownOption { #Structure_DropdownOption }
+### DropdownOption {#Structure_DropdownOption}
 
 Option to be displayed in the Dropdown column.
 
@@ -1317,7 +1318,7 @@ Value
     ID of this option.  
     For example: Sample_ProductCategory.Id
 
-### ErrorMessage { #Structure_ErrorMessage }
+### ErrorMessage {#Structure_ErrorMessage}
 
 Error message from actions such as adding or removing rows from the grid.
 
@@ -1331,7 +1332,7 @@ Message
 :   Type: Text.  
     Message that explains the resulting code from the actions, such as adding or removing lines from the grid.
 
-### Filter_Condition { #Structure_Filter_Condition }
+### Filter_Condition {#Structure_Filter_Condition}
 
 Represents a filter condition
 
@@ -1349,7 +1350,7 @@ Value
 :   Type: Text.  
     Condition value against which the cell value will be matched against - string format.
 
-### ImageOptionalConfigs { #Structure_ImageOptionalConfigs }
+### ImageOptionalConfigs {#Structure_ImageOptionalConfigs}
 
 Additional configurations that can be set in the Image Column.
 
@@ -1408,7 +1409,7 @@ HeaderTooltip
 :   Type: Text.
     Message to show on hover column header when this parameter is not empty.
 
-### Mandatory { #Structure_Mandatory }
+### Mandatory {#Structure_Mandatory}
 
 Set column fields as mandatory and set an error message
 
@@ -1423,7 +1424,7 @@ ErrorMessage
 :   Type: Text.  
     Message that will be displayed if the cell is not filled with any value
 
-### MenuItemOptionalConfigs { #Structure_MenuItemOptionalConfigs }
+### MenuItemOptionalConfigs {#Structure_MenuItemOptionalConfigs}
 
 Additional configurations that can be set in the Context Menu items.
 
@@ -1433,7 +1434,7 @@ Enabled
 :   Type: Boolean.  
     Boolean literal or expression that defines if the Context Menu item is enabled. The menu item will not be clickable if this configuration is set to False.
 
-### NumberConditionalFormatRule { #Structure_NumberConditionalFormatRule }
+### NumberConditionalFormatRule {#Structure_NumberConditionalFormatRule}
 
 Conditional format rule definition for Number column.
 
@@ -1451,7 +1452,7 @@ RowClass
 :   Type: Text.  
     CSS class to be applied in the row.
 
-### NumberFormatCondition { #Structure_NumberFormatCondition }
+### NumberFormatCondition {#Structure_NumberFormatCondition}
 
 Condition to be validated.
 
@@ -1465,7 +1466,7 @@ Value
 :   Type: Decimal (0, 0).  
     Value to be compared to.
 
-### NumberOptionalConfigs { #Structure_NumberOptionalConfigs }
+### NumberOptionalConfigs {#Structure_NumberOptionalConfigs}
 
 Additional configurations that can be set in the Number columns.
 
@@ -1498,7 +1499,7 @@ Step
     When step value is defined and the cell is in edit mode, the input will show two buttons, a plus (+) that will increase the cell value with the step value and a minus (-) that will decrease the cell value.  
     If step value is 0, then no buttons will be displayed.
 
-### OptionalConfigs { #Structure_OptionalConfigs }
+### OptionalConfigs {#Structure_OptionalConfigs}
 
 Additional configurations that can be set in the grid.
 
@@ -1528,7 +1529,7 @@ RowsPerPage
 :   Type: Integer.  
     Set the number of rows per page (Default: 50).
 
-### RangeData { #Structure_RangeData }
+### RangeData {#Structure_RangeData}
 
 Represents a range of selected cells in a row.
 
@@ -1542,7 +1543,7 @@ Selected
 :   Type: [BindingValue](<#Structure_BindingValue>) List.  
     List of selected cells
 
-### RowData { #Structure_RowData }
+### RowData {#Structure_RowData}
 
 Represents the data source of a Row.
 
@@ -1558,7 +1559,7 @@ RowIndex
 
 ## Static Entities
 
-### AlignMode { #StaticEntity_AlignMode }
+### AlignMode {#StaticEntity_AlignMode}
 
 Alignment modes for the column **Align** parameter. Has the values Center, Left and Right.
 
@@ -1573,7 +1574,7 @@ Id
 * Left
 * Right
 
-### DateOperator { #StaticEntity_DateOperator }
+### DateOperator {#StaticEntity_DateOperator}
 
 Operators to be used in Date and DateTime conditional format.
 
@@ -1590,7 +1591,7 @@ Label
 * Equals
 * GreaterOrEqualsTo
 
-### Filter_OperatorType { #StaticEntity_Filter_OperatorType }
+### Filter_OperatorType {#StaticEntity_Filter_OperatorType}
 
 Operators supported by the filter.
 
@@ -1618,7 +1619,7 @@ Order
 * IsGreaterThan
 * IsLessThan
 
-### Filter_Type { #StaticEntity_Filter_Type }
+### Filter_Type {#StaticEntity_Filter_Type}
 
 Type of filter supported by the grid - condition and value.
 
@@ -1632,7 +1633,7 @@ Id
 * Condition
 * Value
 
-### NumberOperator { #StaticEntity_NumberOperator }
+### NumberOperator {#StaticEntity_NumberOperator}
 
 Operators to be used in Number and Currency conditional format.
 

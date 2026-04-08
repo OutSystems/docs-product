@@ -259,6 +259,8 @@ exceptions:
   - IdPs
   - Azure
   - BuildMessages
+  - DOCX
+  - Markdown
   - Microsoft Entra
   - Microsoft Entra ID
   - Cascading Style Sheets

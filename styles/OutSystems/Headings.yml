@@ -222,7 +222,6 @@ exceptions:
   - Animated Label
   - Columns
   - Carousel
-  - Inline SVG
   - Checkbox
   - Columns
   - Date Picker
@@ -365,7 +364,6 @@ exceptions:
   - QA
   - PRD
   - SEO
-  - SVG
   - VPN
 # Country
   - US East

@@ -13,53 +13,53 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # Merging and versioning
 
-In an environment where many developers work on the same module, you often need to incorporate other people's changes to the module. If there are no conflicting changes, Service Studio first tries to automatically integrate the differences. If conflicting changes are detected, you are prompted to manually resolve them. To publish the module, you will need to update your local module, save it locally with conflicts resolved, and then publish it.
+In an environment where many developers work on the same module, you often need to incorporate other people's changes. If there are no conflicting changes, Service Studio automatically integrates the differences. If conflicting changes are detected, you are prompted to resolve them manually. To publish the module, update your local module, resolve all conflicts, and then publish it.
 
-The merge capabilities are designed with OutSystems visual language in mind, which enables you to review changes for both visual and textual elements.
+The merge capabilities are designed with the OutSystems visual language in mind, letting you review changes for both visual and textual elements.
 
 ![Screenshot showing the conflicts detected during the merge process in Service Studio](images/conflicts-detected.png "Conflicts Detected in Service Studio")
 
-What follows is an overview of the merge feature. For the step by step instructions for conflict resolution, check [Compare and merge example](<merge-example.md>). The document about [the merge feature and team collaboration](<concepts.md>) outlines the merge operations in OutSystems.
+What follows is an overview of the merge feature. For step-by-step instructions on conflict resolution, refer to [Compare and merge example](merge-example.md). For more information about merge operations in OutSystems, refer to [The merge feature and team collaboration](concepts.md).
 
-## Modified version detected
+## Conflicting version found
 
-You can see the **Modified version detected** window when you try publishing your module and Service Studio detects differences between your version and the version on the server. These are the most relevant buttons and their actions.
+The **Conflicting version found** window appears when you try to publish your module and Service Studio detects differences between your version and the version on the server. The following buttons are available:
 
-Merge and publish
-:   Enables you to attempt an automatic merge of the differences and to publish the updated version. If the automatic merge fails because of the conflicting changes, you can manually resolve the differences in the **Compare and Merge** window that opens afterward.
+**Override with this version**
+:   Overwrites the version of the module on the server with your local version. This is a destructive operation that discards all changes in the server version.
 
-Compare
-:   Opens the **Compare and Merge** window where you can preview the changes between both versions, and edit the local version before publishing.
+**Compare versions**
+:   Opens the **Compare and Merge** window where you preview the changes between both versions and edit the local version before publishing.
 
-Publish my version
-:   Use this option to overwrite the version of the module on the server with your local version. This option is a destructive operation, and you will lose all changes in the version that is currently on the server.
+**Cancel**
+:   Closes the window without publishing or merging.
 
-![Screenshot of the 'Modified version detected' window in Service Studio with merge options](images/modified-version-detected.png "Modified Version Detected Window")
+## Compare and merge window
 
-## Compare and Merge window
-
-You can open the **Compare and Merge** window by clicking **Compare** in the **Modified version detected** window. The **Compare and Merge window** shows the local and the server version side by side and enables you to select and incorporate both textual and visual elements. Elements with the conflicting changes are labeled "**(merged with conflicts)**". Double-click an element to navigate to the details screen.
+Open the **Compare and Merge** window by clicking **Compare versions** in the **Conflicting version found** window. The **Compare and Merge** window shows the local and the server version side by side. You select and incorporate both textual and visual elements. Elements with conflicting changes are labeled **(merged with conflicts)**. Double-click an element to navigate to the details screen.
 
 ## Editing the textual elements
 
-The textual elements you can edit during the merge are CSS, JavaScript, and the values of the properties inside elements (for example, a variable value in the Assign tool, SQL expressions, descriptions, text in widgets...). After you double-click a textual element, two tabs show the different versions and origins of the textual element.
-**Merged version (# of conflicts)** tab, with the editable text and comparison:
+The textual elements you edit during the merge are CSS, JavaScript, and the values of properties inside elements. Examples include a variable value in the Assign tool, SQL expressions, descriptions, and text in widgets. After you double-click a textual element, two tabs show the different versions and origins of the textual element.
 
-* **Merged version** pane – the textual element that you save locally during a merge. It contains _both_ the automatically merged text and the conflicting changes you need to resolve. You can edit this text.
+The **Merged version (# of conflicts)** tab shows the editable text and comparison:
+
+* **Merged version** pane – the textual element that you save locally during a merge. It contains **both** the automatically merged text and the conflicting changes you need to resolve. You edit this text.
 * **The other version** pane – the textual element in the server version of the module. You cannot edit this text.
 
-**Your version** tab, with the comparison:
+The **Your version** tab shows the comparison:
 
 * **Your version** pane – the textual element in the local version of the module. You cannot edit this text.
 * **The other version** pane – the textual element in the server version of the module. You cannot edit this text.
 
 ### Resolving conflicts in the textual elements
 
-To select the changes that will be saved in the local version, and that can then be uploaded to the server, do the following in the **Merged version (# of conflicts)** tab:
+To select the changes that are saved in the local version, and that can be uploaded to the server, do the following in the **Merged version (# of conflicts)** tab:
 
 * To accept the changes from the server version, click the arrow in **The other version** pane.
 * To accept the changes from the local version, select the check box in **Merged version** pane.
@@ -69,7 +69,7 @@ To select the changes that will be saved in the local version, and that can then
 
 ### Highlight all differences
 
-By default, the pane for editing the changes highlights only the lines with conflicts. If you'd like to highlight all the changes, check the **Highlight all differences** check box.
+By default, the pane for editing the changes highlights only the lines with conflicts. To highlight all changes, select the **Highlight all differences** check box.
 
 ### Color reference
 
@@ -87,13 +87,17 @@ Here are the color descriptions.
 
 ### "Merge and publish" vs "Merge"
 
-Once you select which changes to accept, you may choose to **Merge and publish** or just **Merge** to finalize the integration process.
+After you select which changes to accept, choose one of the following actions to finalize the integration:
 
-* **Merge and publish** – click to update the local version of the module and to publish the module.
-* **Merge** – click to update the local module and continue with your work, and then publish it using the **1-Click Publish** button.
+* **Merge and publish** – updates the local version of the module and publishes it.
+* **Merge** – updates the local module so you continue working, and then publish using the **1-Click Publish** button.
+* **Cancel** – opens a confirmation dialog asking "Do you want to cancel merge?". Click **Cancel merge** to exit the merge, or click **Keep comparing** to return to the **Compare and Merge** window.
 
 ## Recover previous merge
 
-The merge changes and actions are saved automatically. When the window **Recover Previous Merge** shows, click **Yes** to continue working on changes without losing the previous edits. Clicking **No** deletes the saved merge edits and you can start the edits from scratch.
+Service Studio saves merge selections and changes automatically. If you cancel a merge by clicking **Cancel merge** in the confirmation dialog, or if Service Studio closes unexpectedly during a merge, the **Recover Previous Merge** dialog appears. The dialog appears the next time you start a merge for the same module. The dialog asks "Do you want to restore the selections and changes from the previous merge?"
+
+* Click **Yes** to resume from where you left off without losing the previous edits.
+* Click **No** to discard the saved merge edits and start fresh.
 
 ![Screenshot of the 'Recover Previous Merge' dialog in Service Studio](images/recover-previous-merge-dialog.png "Recover Previous Merge Dialog")

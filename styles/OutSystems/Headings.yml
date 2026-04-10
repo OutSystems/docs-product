@@ -321,6 +321,7 @@ exceptions:
   - Camera Plugin
   - TakePhoto
   - EditPhoto
+  - MediaResult
   - SAML
   - Plugin Manager
   - Phosphor

@@ -1,6 +1,7 @@
 ---
 name: content-creation-flow
 description: Step-by-step content creation workflow for documentation and training materials. Includes MCP validation, discovery, content design, Jira planning, and draft generation with priority-based execution. Use when starting the content creation flow, creating documentation or training materials, or when the user asks to follow the content creation workflow.
+isautopublish: true
 ---
 
 # Content creation flow rules
@@ -290,56 +291,157 @@ Place the content design page in the following folder structure (create the fold
 Once the user has selected the project and board, create the following items:
 
 * Dedicated epic for this content piece, where all tickets should be grouped in
-* All required Jira tickets (all tickets must include the "AI-TK" label)
+* All required Jira tickets for each of the work items
 
 ### Ticket naming convention
 
 All Jira tickets must follow this naming pattern:
-
-**Pattern:** `[Content-type] Ticket name - work type`
+**Pattern:** `[Work type] Ticket name/description - Content-type`
 
 **Examples:**
 
-* `[Quiz] AI agent actions quiz - SME Review`
-* `[Article] Creating an agent in ODC Studio - Draft`
-* `[Slide Deck] Introduction to AI Agents - Peer Review`
-* `[Exercise] Build the Intake Agent Exercise - Outline`
-* `[Demo] Building a simple agent - SikuliX script`
+* `[Apply Peer Feedback + SME Review + Apply SME Feedback] AI agent actions quiz - Quiz`
+* `[Draft] Creating an agent in ODC Studio - Article`
+* `[Peer Review] Introduction to AI Agents - Slide Deck`
+* `[Outline] Build the Intake Agent Exercise - Exercise`
+* `[SikuliX script] Building a simple agent - Demo`
+
+**Work type values:** Outline, Draft, Visual Assets Creation from Draft, Peer Review, Apply Peer Feedback + SME Review + Apply SME Feedback, Visual Assets Review, SikuliX script, Publish
 
 **Content-type values:** Article, Procedure, Concept, Overview, Troubleshooting, Reference, Slide Deck, Demo, Exercise, Quiz, Visual Assets
 
-**Work type values:** Outline, Draft, Peer Review, SME Review, Visual Assets, SikuliX script
+### Ticket ladder by content type
 
-### Define required Jira tickets based on content type (per work item)
+For **each** work item, use the list below that matches that work item’s **content type** (from Step 2).
 
-**Slide Deck / Quiz:**
+**Documentation / Slide Deck / Quiz:**
 
 * Draft ticket
 * Peer Review ticket
-* SME Review ticket
-* Visual Assets ticket
+* Apply Peer Feedback + SME Review + Apply SME Feedback ticket
+* Visual Assets Review ticket
+* Publish ticket
 
 **Demo:**
 
 * Outline ticket
 * SikuliX script ticket
 * Peer Review ticket
-* SME Review ticket
+* Apply Peer Feedback + SME Review + Apply SME Feedback ticket
+* Publish ticket
 
-**Exercise / Documentation:**
+**Exercise:**
 
 * Outline ticket
 * Draft ticket
 * Peer Review ticket
-* SME Review ticket
-* Visual Assets ticket
+* Apply Peer Feedback + SME Review + Apply SME Feedback ticket
+* Visual Assets Review ticket
+* Publish ticket
 
-**Documentation:**
+#### Ticket to Jira issue type mapping
 
-* Draft ticket
-* Peer Review ticket
-* SME Review ticket
-* Visual Assets ticket
+Use this mapping when choosing the Jira issue type for each ticket activity:
+
+| Activity | Jira issue type |
+| --- | --- |
+| Outline | Task |
+| Draft | User Story |
+| SikuliX script | User Story |
+| Peer Review | Peer Review |
+| Apply Peer Feedback + SME Review + Apply SME Feedback | Task |
+| Visual Assets Review | Peer Review |
+| Publish | Task |
+
+If an activity from this flow is not listed in the table above, choose the closest mapped activity and ask the user to confirm before creating tickets.
+
+#### Story points by Jira work type
+
+Use the following baseline SP values as the default estimate for each ticket type:
+
+* Outline ticket: `3`
+* Draft ticket: `5`
+* SikuliX script ticket: `5`
+* Peer Review ticket: `1`
+* Apply Peer Feedback + SME Review + Apply SME Feedback: `3`
+* Visual Assets Review: `3`
+* Publish ticket: `0`
+
+These values are recommendations. Adjust one level up or down when justified by scope, complexity, or risk.
+Use this decision flow for each ticket estimate:
+
+1. Identify the ticket work type.
+1. Apply the baseline SP value.
+1. Adjust one level up or down if justified.
+1. If estimate exceeds `8`, split the work and re-estimate each split ticket.
+1. Confirm estimates in the Step 3 validation gate before creation.
+
+**Note**: On **TK** and **RD** , Story Points use REST field is `customfield_10004`.
+
+### Sprint planning
+
+#### Objective
+
+Assign every ticket to a Jira sprint so delivery matches team cadence, capacity, and the sequential **blocked by** chain.
+
+#### TK sprint naming (technical knowledge board)
+
+On boards that follow the TK convention, sprint names use a fixed pattern so you can infer **order** and **calendar placement** from the title.
+
+The pattern is:
+
+`TK` + two-digit year + `.` + quarter + `.` + sprint number within that quarter
+
+* **Year:** Last two digits of the calendar year (for example, `26` is 2026).
+* **Quarter:** `Q1`, `Q2`, `Q3`, or `Q4`.
+* **Sprint number:** The **n**th two-week sprint in that quarter, counting from `1`.
+
+**Example:** `TK 26.Q2.1` is the **first** two-week sprint of **Q2** of **2026**. Sprints are **two weeks** long.
+
+Sprints are created on the board to match this scheme; use the **exact** sprint name from Jira when assigning issues.
+**Note**: On **TK** and **RD**, Sprint uses REST field `customfield_10006` (set to the sprint’s numeric id).
+
+#### Mapping tickets to sprints
+
+For each work item, use the **ticket order** already defined in **Ticket ladder by content type** (earlier in this step). Assign sprints by walking that list from **first ticket to last**, in the same order as the sequential **blocked by** chain.
+
+Use these **allocation rules** on top of that order:
+
+* **One stage per sprint** by default: the first ticket in the ladder goes in the **current** sprint (or the earliest agreed sprint with the user), the next ticket in the following sprint, and so on—unless the user agrees to a different cadence.
+* If the ladder has **more** stages than **available** sprints, walk the ladder in order: assign **one** ticket per sprint across consecutive available sprints until you reach the **last** available sprint, then assign **all** remaining tickets to that **last** sprint. **Blocked by** order still applies: a ticket’s sprint must be the same as or later than the sprints of all tickets that block it.
+
+#### Instructions
+
+1. Resolve sprint names and dates with the user from the **selected board** (current sprint and upcoming sprints). When the board uses the TK convention, interpret and order sprints using **TK sprint naming** above. If the board uses different naming, map stages to those sprints while preserving ladder order.
+1. Assign **each** ticket to **one** sprint using **Ticket ladder by content type** and the allocation rules above.
+1. Verify sprint dates do not violate **blocked by** order: a ticket’s sprint must be the **same as or later than** the sprints of all tickets that block it.
+1. Summarize sprint assignments in the Step 3 validation gate (ticket key, summary, sprint name or identifier).
+
+### User assigning
+
+#### Default assignee
+
+Except where **Peer Review and Visual Assets Review exceptions** apply, assign **every** issue you create in Step 3—the **Epic** and **all** work-item tickets to the **current user**: the person running this content creation flow. Use the Jira identity that matches that person when the Atlassian tools expose or require an assignee field.
+
+#### `Peer Review` and `Visual Assets Review` exceptions
+
+For tickets whose **work type** in the naming convention is **Peer Review** or **Visual Assets Review** (refer to **Ticket naming convention** and **Ticket ladder by content type**), do **not** use the default assignee.
+
+Before creating **each** of those issues, ask the user **which** Jira user must be the assignee. Accept whatever identifier the user provides that your Jira integration can resolve (for example, email, account ID, or display name—match what the Atlassian MCP or Jira metadata supports).
+
+#### Instructions
+
+1. Before or during Step 3.3, collect assignees for every **Peer Review** and **Visual Assets Review** ticket from the user.
+1. Add the full assignee plan (default user plus each named reviewer ticket) to the Step 3 validation summary alongside sprint planning.
+1. When calling `createJiraIssue`, set assignee using the correct Jira field for the project and issue type (confirm field keys from issue metadata when needed).
+
+### Required labelling
+
+All tickets created in this step must include labels based on the target repository scope:
+
+* Always add the `AI-TK` label.
+* If the work item targets `training-internal`, add the `Training` label to each ticket in that work item.
+* If the work item targets documentation repositories, add the `Documentation` label to each ticket in that work item.
 
 ### Blocked by rules
 
@@ -353,8 +455,9 @@ Each ticket in a work item should be blocked by the previous ticket in the seque
 
 * Draft ticket → blocked by Outline ticket
 * Peer Review ticket → blocked by Draft ticket
-* SME Review ticket → blocked by Peer Review ticket
-* Visual Assets ticket → blocked by SME Review ticket (or the appropriate previous ticket in the sequence)
+* Apply Peer Feedback + SME Review + Apply SME Feedback ticket → blocked by Peer Review ticket
+* Visual Assets Review ticket → blocked by Apply Peer Feedback + SME Review + Apply SME Feedback ticket
+* Publish ticket → blocked by Visual Assets Review ticket
 
 **2. Priority-based blocking across work items:**
 
@@ -395,6 +498,9 @@ Ask the user to confirm:
 * Selected Jira project and board
 * Sprint structure
 * Ticket breakdown
+* Story point mapping and estimates per work type
+* Sprint planning
+* Jira ticket to user assignment
 
 ### Creating Jira issues
 
@@ -407,12 +513,12 @@ After user validation is approved, verify the connection to the Atlassian MCP Se
 
 Once the connection is verified, create the Jira issues using the Atlassian MCP Server. Do NOT loop, ask for additional confirmation, or delay. Execute the creation steps below in sequence.
 
-#### Step 3.1 — Get cloud ID
+#### Step 3.1: Get cloud ID
 
 1. Call `mcp_Atlassian-MCP-Server_getAccessibleAtlassianResources` to retrieve the cloudId
 1. Use the cloudId from the response (typically: `"3755dbe1-fa22-4c37-956e-59bea84af9cf"`)
 
-#### Step 3.2 — Create epic
+#### Step 3.2: Create epic
 
 **Create the Epic FIRST** using `mcp_Atlassian-MCP-Server_createJiraIssue` with these exact parameters:
 
@@ -436,36 +542,50 @@ Once the connection is verified, create the Jira issues using the Atlassian MCP 
 * `description`: Use the full content design description from the Confluence page created in Step 2 (convert to Markdown if needed)
 * Store the returned Epic key (e.g., `RD-123` or `TK-456`) for reference
 
-#### Step 3.3 — Create all task tickets
+#### Step 3.3: Create all work-item issues
 
-**For EACH work item** defined in Step 2, create the required tickets based on content type. Use `mcp_Atlassian-MCP-Server_createJiraIssue` with these exact parameters:
+**For EACH work item** defined in Step 2, create the required tickets from **Ticket ladder by content type**. Use `mcp_Atlassian-MCP-Server_createJiraIssue` for each issue.
 
-**For each Task ticket:**
+**For each issue, set:**
+
+* **Issue type:** Use **Ticket to Jira issue type mapping** (`User Story`, `Peer Review`, or `Task`—not every issue is a Task).
+* **Labels:** Follow **Required labelling** (`AI-TK`, plus `Training` or `Documentation` per work item target).
+* **Sprint:** Follow **Sprint planning** (correct sprint for that ticket’s stage).
+* **Assignee:** Follow **User assigning** (default user vs reviewer-picked assignees).
+* **Story points:** Follow **Story points by Jira work type**; use the project’s Story Points custom field and allowed values (`0`, `1`, `3`, `5`, `8`). Resolve field keys from Jira issue metadata before creating issues.
+
+Example payload shape (replace placeholders; add sprint, assignee, and story points in `additional_fields` using the keys your project uses):
 
 ```json
 {
   "cloudId": "3755dbe1-fa22-4c37-956e-59bea84af9cf",
   "projectKey": "[Selected project key from user, e.g., 'RD' or 'TK']",
-  "issueTypeName": "Task",
-  "summary": "[Content-type] [Work item name] - [Work type]",
+  "issueTypeName": "[User Story | Peer Review | Task from Ticket to Jira issue type mapping]",
+  "summary": "[Work type] [Work item name/description] - [Content-type]",
   "description": "[Work item description from Step 2, including target audiences, content sources, and any relevant details, in Markdown format]",
   "parent": {
     "key": "[Epic key from Step 3.2, e.g., RD-123 or TK-456]"
   },
   "additional_fields": {
-    "labels": ["AI-TK"]
+    "labels": ["AI-TK", "Training"]
   }
-}
 ```
 
-**Note:** All Task tickets MUST be linked to the Epic created in Step 3.2. Use the `parent` parameter with an object containing the Epic key (e.g., `"parent": { "key": "RD-123" }` or `"parent": { "key": "TK-456" }`) to establish the parent-child relationship.
+Add sprint, assignee, and story-point keys your project uses to `additional_fields` (names vary by Jira project).
 
-**Data mapping for Task tickets:**
+**Note:** All work-item issues MUST link to the Epic from Step 3.2. Use the `parent` parameter with the Epic key (e.g., `"parent": { "key": "RD-123" }` or `"parent": { "key": "TK-456" }`).
 
-* `summary`: Follow the naming convention: `[Content-type] [Work item name] - [Work type]`
+**Data mapping for work-item issues:**
+
+* `summary`: Follow **Ticket naming convention**: `[Work type] Ticket name/description - Content-type`
+    * Work type: Outline, Draft, Peer Review, Apply Peer Feedback + SME Review + Apply SME Feedback, Visual Assets Review, SikuliX script, Publish (and any other value from **Work type values** in that section)
     * Content-type: Article, Procedure, Concept, Overview, Troubleshooting, Reference, Slide Deck, Demo, Exercise, Quiz, Visual Assets
     * Work item name: The name/title of the work item from Step 2
-    * Work type: Outline, Draft, Peer Review, SME Review, Visual Assets, SikuliX script
+* `additional_fields`: Must include:
+    * `labels`: `AI-TK` plus `Training` or `Documentation` per **Required labelling**
+    * Story Points field (key from metadata) with the estimate from **Story points by Jira work type** and allowed values (`0`, `1`, `3`, `5`, `8`)
+    * Sprint field (key from metadata) per **Sprint planning**
+    * Assignee field (key from metadata) per **User assigning**
 * `description`: Include:
     * Work item description from Step 2
     * Target audiences (from the work item)
@@ -480,11 +600,11 @@ Once the connection is verified, create the Jira issues using the Atlassian MCP 
 1. Create all tickets for Priority 1 work items first
 1. Then create all tickets for Priority 2 work items
 1. Continue in priority order (3, 4, etc.)
-1. For each work item, create tickets in sequential order (Outline → Draft → Peer Review → SME Review → Visual Assets)
+1. For each work item, create tickets in the order given in **Ticket ladder by content type** for that work item’s content type
 
 **Store all created ticket keys** (e.g., `RD-124`, `RD-125` or `TK-456`, `TK-457`, depending on the selected project) for the blocked-by relationship mapping.
 
-#### Step 3.4 — Document blocked-by relationships
+#### Step 3.4: Document blocked-by relationships
 
 After all tickets are created, output a comprehensive table showing:
 
@@ -492,12 +612,12 @@ After all tickets are created, output a comprehensive table showing:
 * All tickets it should be blocked by (sequential and priority-based)
 * This enables manual creation of blocked-by links in Jira
 
-#### Step 3.5 — Update Confluence content design
+#### Step 3.5: Update Confluence content design
 
 Update the Confluence Content Design page created in Step 2:
 
 1. Add the Epic link to the page
-1. Add each Task ticket link to its corresponding work item in the Content Design table
+1. Add each work-item issue link to its corresponding work item in the Content Design table
 1. Format Jira links using `<custom data-type="smartlink">` tags:
     * Example: `<custom data-type="smartlink">https://outsystemsrd.atlassian.net/browse/RD-123</custom>` or `<custom data-type="smartlink">https://outsystemsrd.atlassian.net/browse/TK-456</custom>` (use the actual ticket keys created)
 

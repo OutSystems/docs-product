@@ -14,6 +14,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Inline SVG
@@ -26,7 +27,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Inline SVG UI Pattern to change fill and stroke properties or animate the SVG paths.
 
-**How to use the Inline SVG UI Pattern**
+## How to use the Inline SVG UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Inline SVG`.
 
@@ -66,47 +67,104 @@ After following these steps and publishing the module, you can test the pattern 
 
 Using the example above, the results are as follows:
 
-![Example output of an Inline SVG showing a circle and text label 'outsystems' in an application](images/inlinesvg-1-ss.png "Example of Inline SVG in an Application")
-
-**How to make your SVG code accessible**
-
-The following are some guidelines to help ensure your SVG code is accessible:
-
-1. Add **`` <title> ``** and **`` <desc> ``** tags to your code describing the SVG image. You must add the **`` <title> ``** and **`` <desc> ``** tags after the opening **`` <svg> ``** tag and before the **`` <path> ``** tag.
-
-    ```html
-    <svg>
-        <title id="my-title">Descriptive title of the SVG</title>
-        <desc id="my-description">More detailed description of the SVG content</desc>
-         <!-- SVG content goes here -->
-    </svg>
-    ```
-
-1. Add the **`` aria-describedby ``** attribute to the **`` <svg> ``** tag.
-
-    ```html
-    <svg aria-describedby="my-title my-description">
-        <title id="my-title">Descriptive title of the SVG</title>
-        <desc id="my-description">More detailed description of the SVG content</desc>
-         <!-- SVG content goes here -->
-    </svg>
-    ```
-
-1. To define the role of the SVG as an image within the accessibility context, add the **`` role=”img” ``** attribute to the **`` <svg> ``** tag.
-
-   ```html
-    <svg aria-describedby="my-title my-description" role="img">
-        <title id="my-title">Descriptive title of the SVG</title>
-        <desc id="my-description">More detailed description of the SVG content</desc>
-         <!-- SVG content goes here -->
-    </svg>
-    ```
-
-After completing these steps, set your SVG code to the SVGCode property on the InlineSVG pattern.
+![Example output of an Inline SVG showing a circle and text label 'OutSystems' in an application](images/inlinesvg-1-ss.png "Example of Inline SVG in an Application")
 
 ## Properties
 
 | Property | Description |
 | --- | --- |
 | SVGCode (Text): Optional | SVG markup code that is appended onto the HTML. |
-| ExtendedClass (Text): Optional | <p>Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples:<br/>- Blank - No custom styles are added (default value).<br/>- "myclass" - Adds the ``myclass`` style to the UI styles being applied.<br/>- "myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.<br/><br/>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+By default, the **Inline SVG** UI Pattern might not expose the right accessibility attributes. This can cause screen readers to misinterpret or ignore the SVG content.
+Use one of the following options to ensure assistive technologies announce the SVG correctly, depending on whether it conveys information or is purely decorative.
+
+### Option 1: Add attributes for decorative SVG
+
+Use this option when the SVG is purely visual and doesn’t convey information.
+
+1. In **Service Studio**, go to the **Interface** tab.
+
+1. Select the **Screen/Block** that uses the **Inline SVG**.
+
+1. In the **Inline SVG** properties, under **Event Initialized**, select **New Client Action** to create a client action (E.g. 'OnSVGInit').
+
+    ![Creating a new client action in Service Studio](images/inlinesvg-initialized-ss.png "Create a new client action")
+
+1. In **Initialized Action**, add a **JavaScript** node and add the following code:
+
+    ```javascript
+    const svgBlock = document.getElementById($parameters.WidgetId);
+    if (!svgBlock) return;
+
+    const svg = svgBlock.querySelector('svg');
+    if (!svg) return;
+
+    // Hide decorative SVGs from assistive technologies
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+    ```
+
+   ![Add a JavaScript node in the client action in Service Studio](images/inlinesvg-addjsnode-ss.png "Adding a JavaScript node")
+
+1. Publish the module.
+
+### Option 2: Add attributes for informative SVG
+
+Use this option when the SVG conveys meaning (for example, an icon, chart, or status indicator).
+
+1. In **Service Studio**, go to the **Interface** tab.
+
+1. Select the **Screen/Block** that uses the **Inline SVG**.
+
+1. In the **Inline SVG** properties, under **Event Initialized**, select **New Client Action** to create a client action (E.g. 'OnSVGInit').
+
+    ![Creating a new client action in Service Studio](images/inlinesvg-initialized-ss.png "Create a new client action")
+
+1. Add the following code, replacing the label text with something meaningful to your SVG content:
+
+    ```javascript
+    const svgBlock = document.getElementById($parameters.WidgetId);
+    if (!svgBlock) return;
+
+    const svg = svgBlock.querySelector('svg');
+    if (!svg) return;
+
+    // Expose as an image with an accessible name
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "Balance chart");
+    ```
+
+    <div class="info" markdown="1">
+
+    When you create the client action, Service Studio automatically creates an input parameter.  
+    This parameter passes the **InlineSVGId** value to the action flow.
+
+    </div>
+
+    ![InlineSVGId input parameter automatically assigned in Service Studio](images/inlinesvg-setilinesvgparam-ss.png "InlineSVGId input parameter automatically assigned")
+
+1. In the **JavaScript** node properties, set the **InlineSVGId** input parameter to the generated **InlineSVGId** value.
+
+    ![Set InlineSVGId to the InlineSVGId input parameter in the JavaScript node properties in Service Studio](images/inlinesvg-setinlinesvgid-ss.png "Set InlineSVGId in the JavaScript node properties")
+
+1. Publish the module.
+
+### Option 3: Make the SVG interactive
+
+If the SVG acts as a control (for example, a link, button, or toggle), treat it as interactive.
+Give it the correct role (for example, `button`), a `tabindex="0"`, an accessible name (`aria-label`), and keyboard event handlers for **Enter** and **Space** keys.
+
+### Result
+
+After completing these steps, assistive technologies handle SVGs according to their purpose:
+
+* **Decorative SVGs** are ignored by screen readers.
+
+* **Informative SVGs** are announced with a clear accessible name.
+
+* **Interactive SVGs** behave like standard controls, supporting focus and keyboard interaction.
+
+Test your app to confirm that each SVG behaves as expected for users relying on assistive technologies.

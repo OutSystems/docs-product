@@ -319,6 +319,8 @@ exceptions:
   - NuGet
   - Key Store Plugin
   - Camera Plugin
+  - TakePhoto
+  - EditPhoto
   - SAML
   - Plugin Manager
   - Phosphor

@@ -354,6 +354,7 @@ exceptions:
   - ID
   - JavaScript
   - MCP
+  - Nginx
   - TLS
   - TLS
   - UI

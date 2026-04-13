@@ -1,7 +1,6 @@
 ---
 name: content-creation-flow
 description: Step-by-step content creation workflow for documentation and training materials. Includes MCP validation, discovery, content design, Jira planning, and draft generation with priority-based execution. Use when starting the content creation flow, creating documentation or training materials, or when the user asks to follow the content creation workflow.
-isautopublish: true
 ---
 
 # Content creation flow rules

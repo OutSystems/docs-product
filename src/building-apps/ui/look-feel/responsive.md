@@ -40,9 +40,9 @@ The CSS classes add the following:
 
 * **Device:** .desktop, .tablet, .phone, .iphonex
 * **Orientation:** .landscape, .portrait
-* **Browser:** .chrome, .firefox, .edge, .safari, etc.
+* **Browser:** .chrome, .firefox, .edge, .safari, etc. (only applies to Reactive Web apps)
 * **Operation system:** .windows, .osx, .ios, .android, etc.
-* **Touch devices detection:** .is--touch
+* **Touch devices detection:** .is--touch (only applies to Reactive Web apps)
 
 **Example:**
 

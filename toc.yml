@@ -741,7 +741,10 @@
         - href: integration-with-systems/mobile-plugins/calendar/intro.md
         - href: integration-with-systems/mobile-plugins/camera/intro.md
         - topics:  
-            - href: integration-with-systems/mobile-plugins/camera/camera-ref.md        
+            - href: integration-with-systems/mobile-plugins/camera/camera-ref.md
+            - href: integration-with-systems/mobile-plugins/camera/camera-plugin-migration-guide-7-to-8.md
+            - href: integration-with-systems/mobile-plugins/camera/camera-plugin-version-7.md
+            - href: integration-with-systems/mobile-plugins/camera/camera-ref-version-7.md
         - href: integration-with-systems/mobile-plugins/common-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/contacts/intro.md
         - href: integration-with-systems/mobile-plugins/file-plugin/intro.md

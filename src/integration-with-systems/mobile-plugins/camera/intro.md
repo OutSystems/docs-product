@@ -5,7 +5,7 @@ locale: en-us
 guid: 158347bc-c312-4499-9912-1f1dfeac7d50
 app_type: mobile apps
 platform-version: o11
-figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1088:5164
+figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=4185-145
 audience:
   - mobile developers
   - frontend developers
@@ -19,9 +19,22 @@ coverage-type:
   - remember
 topic:
   - using-cordova-plugins
+isautopublish: true
 ---
 
-# Camera Plugin
+# Camera Plugin version 8
+
+<div class="info" markdown="1">
+
+For information about Camera Plugin version 7.x, refer to the [Camera Plugin version 7](camera-plugin-version-7.md).
+
+</div>
+
+<div class="warning" markdown="1">
+
+Camera Plugin version 8.0.0 includes breaking changes. To update from an older version to version 8.0.0, refer to the [Migrating camera plugin from version 7 to version 8](camera-plugin-migration-guide-7-to-8.md).
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -29,69 +42,69 @@ Applies only to Mobile Apps.
 
 </div>
 
-Use the Camera plugin to let users take pictures and capture video with their mobile devices.
-This plugin works with both native mobile apps and progressive web apps (PWAs).
-The plugin lets you select options like image quality, orientation, and file format.
+The Camera plugin enables users to take photos and record videos directly from their mobile devices within your app. It supports both native mobile apps and progressive web apps (PWAs), ensuring broad compatibility across platforms. With this plugin, you can configure settings such as image quality, orientation, and file format to suit your apps' requirements.
 
 <div class="info" markdown="1">
 
-See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
+For more information about installing and referencing a plugin and installing a demo app, refer to [Adding plugins](../intro.md#adding-plugins).
 
 </div>
 
 ## Demo app
 
 Install the [Camera Demo App](https://www.outsystems.com/forge/component-overview/1390/camera-plugin) from Forge and open the app in Service Studio.
-The demo app contains logic for common use cases, which you can examine and recreate in your apps.
-For example, the demo app (the next image shows a screen from the demo app) shows how to:
+The demo app contains logic for common use cases to examine and recreate in your apps.
+For example, the demo app shows how to:
 
-* Take a picture
-* Capture a video
-* Select media from the gallery
-* Edit a picture taken with the camera or selected from the gallery
-* Edit the picture that now displays in the app
+* Take a photo.
+* Capture a video.
+* Select media from the gallery.
+* Edit a photo taken with the camera or selected from the gallery.
+* Edit the photo displayed in the app.
 
-![Screenshot of the Camera Demo App interface showing options to take a picture, capture a video, select media from the gallery, and edit pictures.](images/camera-sample-app-ss.png "Camera Demo App Screen")
+![Screenshot of the Camera Demo App interface showing options to take a photo, capture a video, select media from the gallery, and edit photos.](images/camera-sample-app-ss.png "Camera Demo App Screen")
 
-## Taking a picture
+## Take a photo
 
-To let users take a picture and have a good user experience:
+To allow users to take a photo, complete these tasks:
 
-* Create a user interface
-* Create logic to take a picture
-* Create logic to handle errors
+* [Create a user interface](#user-interface-photo)
+* [Create logic to take a photo](#logic-photo)
+* [Handle errors](#handle-errors)
 
-See the sections that follow for more information.
+### Create a user interface {#user-interface-photo}
 
-### Creating a user interface
+To set up the user interface for taking a photo, follow these steps:
 
-You can start by defining a variable of the **Binary Data** data type to hold the image data (1).
-Use a Button (2) or another widget to run the action that takes a picture.
-Use an **Image** widget (3) to show the image after using the camera, by setting **Type** to **Binary Data** and **Image Content** to the variable you created.
+1. Define a variable of the **Binary Data** data type to hold the image data (1).
+1. Add a Button (2) or another widget to run the action that takes a photo.
+1. Add an **Image** widget (3) to show the image after using the camera. Set **Type** to **Binary Data** and **Image Content** to the variable you created.
 
-![Screenshot illustrating the user interface setup for the camera feature with a variable for image data, a button to take a picture, and an image widget to display the picture.](images/camera-ui-setup-ss.png "Camera UI Setup")
+![Screenshot illustrating the user interface setup for the camera feature with a variable for image data, a button to take a photo, and an image widget to display the photo.](images/camera-ui-setup-ss.png "Camera UI Setup")
 
-For more guidance on how to create an interface, see the UI accelerators that come with the Camera plugin.
-In Service Studio, navigate to **Interface** > **UI FLows** > **Camera Plugin** > **Camera Plugin**, and drag these Blocks to your Screen:
+<div class="info" markdown="1">
 
-* **ChooseImage**
-* **TakePicture**
+Alternatively, use the pre-built widget included with the plugin. In Service Studio, navigate to **Interface** > **UI Flows** > **Camera Plugin** > **Camera Plugin**, and drag the **TakePhoto** Block to your Screen. Then use the **OnClick** event to receive the returned result. The image binary is in **MediaResult.Thumbnail**.
 
-### Creating logic to take a picture
+</div>
 
-The Camera plugin actions are in the **Logic** tab of Service Studio, in **Client Actions** > **CameraPlugin**.
+### Create logic to take a photo {#logic-photo}
 
-To prevent errors, it's a best practice to first check if the plugin is available (1) with the action **CheckCameraPlugin**.
-If the plugin isn't available to the app, display an error to the user.
-Otherwise, open the camera with **TakePicture** to let users take a picture (2).
-In the **TakePicture** action, you can set the parameters for quality, width, back or front camera, and more.
+To take a photo using the Camera plugin, configure the app logic that connects user actions to the device camera. The following steps outline how to enable the camera, specify options, and receive the captured image.
 
-Check if taking pictures on the device works by verifying the value of **TakePicture.Success** is **True** (3).
-If it does, handle the picture data in **TakePicture.MediaResult.Thumbnail** by assigning it to a variable of the **Binary Data** data type (4).
+1. Go to the **Logic** tab in Service Studio and navigate to **Client Actions** > **CameraPlugin**.
+1. Use the **CheckCameraPlugin** action to verify if the plugin is available (1).
+    * If the plugin is not available, display an error message to the user.
+1. If the plugin is available, use the **TakePhoto** action to open the camera and let the user take a photo (2).
+    * In the **TakePhoto** action, set parameters such as quality, width, and camera direction (back or front) based on your app's requirements.
+1. After the photo is taken, check if **TakePhoto.Success** is **True** (3).
+1. If successful, assign the value of **TakePhoto.MediaResult.Thumbnail** to a variable of the **Binary Data** data type to handle the captured image (4).
 
-![Flowchart screenshot detailing the process to take a picture using the Camera plugin, including checking plugin availability, opening the camera, and handling the captured image.](images/camera-flow-take-picture-ss.png "Camera Flow for Taking a Picture")
+![Flowchart screenshot detailing the process to take a photo using the Camera plugin, including checking plugin availability, opening the camera, and handling the captured image.](images/camera-flow-take-picture-ss.png "Camera Flow for Taking a Photo")
 
-## Recording a video
+For more information about error handling, refer to [Handle errors](#handle-errors).
+
+## Record a video
 
 <div class="info" markdown="1">
 
@@ -99,81 +112,94 @@ Applies only to native mobile apps. Not available on PWAs.
 
 </div>
 
-To let users record a video and have a good user experience:
+To allow users to record a video, complete these tasks:
 
-* Create a user interface
-* Create logic to record a video
-* Create logic to handle errors
+* [Create a user interface](#user-interface-video)
+* [Create logic to record a video](#logic-video)
+* [Handle errors](#handle-errors)
 
-See the sections that follow for more information.
+### Create a user interface {#user-interface-video}
 
-### Creating a user interface
+To set up the user interface for recording a video, follow these steps:
 
-You can start by defining a variable of the **MediaResult** data type to hold the video data (1).
-Use a Button (2) or another widget to run the action that captures a video.
-Use the **PlayVideo** widget (3) to show the video after using the camera, by setting it to the variable you created.
+1. Define a variable of the **MediaResult** data type to hold the video data (1).
+1. Add a Button (2) or another widget to run the action that captures a video.
+1. Add the **PlayVideo** widget (3) to show the video after using the camera. Set it to the variable you created.
 
-**PlayVideo** is a widget available to play video on a device.
-The video can either have just been recorded or locally stored in the device's gallery.
-If you want to display videos from other sources you must use the [**Video**](https://success.outsystems.com/documentation/11/developing_an_application/design_ui/patterns/using_traditional_web_patterns/controls/video/) widget.
+The **PlayVideo** widget plays recorded or locally stored videos on a device.
+To display videos from other sources, use the [**Video**](https://success.outsystems.com/documentation/11/developing_an_application/design_ui/patterns/using_traditional_web_patterns/controls/video/) widget.
 
 <div class="info" markdown="1">
 
-Beware that video files stored in the cache are deleted when the app closes.
-When setting the URI parameter to a video file stored in the cache, beware that the video you're trying to play may have been already deleted.
+The **RecordVideo** action includes an **IsPersistent** parameter that persists videos in your app. It is **True** by default. Set it to **False** to save the video in cache instead. Video files stored in the cache are deleted when the app closes. If you set the URI parameter to a cached video file, the video might already be deleted.
+
+If you don't plan to play the video after closing the app and want to save device storage, set **IsPersistent** to **False**.
 
 </div>
 
 ![Screenshot showing the user interface setup for capturing video with a variable for video data, a button to record a video, and a PlayVideo widget to display the video.](images/capture-video-logic-1-ss.png "Capture Video UI Setup")
 
-For more guidance on creating an interface, see the UI accelerators that come with the Camera plugin.
-In Service Studio, navigate to **Interface > UI FLows > Camera Plugin > Camera Plugin**, and drag these Blocks to your Screen:
-
-* **ChooseFromGallery**
-* **CaptureVideo**
-
-### Creating logic to record a video
-
-The Camera plugin actions are in the **Logic** tab of Service Studio, in **Client Actions > CameraPlugin**.
-
-To prevent errors, it's a best practice to first check if the plugin is available (1) with the action **CheckCameraPlugin**.
-If the plugin isn't available to the app, display an error to the user.
-Otherwise, open the camera with **RecordVideo** to let users capture a video (2).
-In the **RecordVideo** action, you can set the parameters for saving the recorded media to the device’s gallery.
-
-Check if recording videos on the device works by verifying the value of **RecordVideo.Success** is **True** (3).
-If yes, handle the video data in **RecordVideo.MediaResult** by assigning it to a variable of the **MediaResult** data type (4).
-
-![Flowchart screenshot outlining the logic to record a video using the Camera plugin, including checking plugin availability, capturing the video, and handling the video data.](images/capture-video-logic-2-ss.png "Camera Flow for Recording a Video")
-
-## Selecting media from the gallery
-
 <div class="info" markdown="1">
 
-Applies only to native mobile apps. Not available on PWAs.
-
-Until support is added for PWAs, you may use **DEPRECATED_ChooseGalleryPicture**.
+Alternatively, use the pre-built widget included with the plugin. In Service Studio, navigate to **Interface** > **UI Flows** > **Camera Plugin** > **Camera Plugin**, and drag the **RecordVideo** Block to your Screen. Then use the **OnClick** event to receive the returned result.
 
 </div>
 
-Let users choose a media file from the device gallery, either a picture, a video, or both, with the **ChooseFromGallery** action.
-The action is in the **Logic** tab of Service Studio, in **Client Actions > CameraPlugin**.
+### Create logic to record a video {#logic-video}
 
-The action **ChooseFromGallery** opens a media browser to let users select a media file (1).
-[Check for errors](#handling-errors) by verifying **ChooseFromGallery.Success** is **True** (2).
-After users select the image, the binary data of the image is in the variable **ChooseFromGallery.MediaResult.** (3).
+To capture and manage video recordings in your app, set up logic that checks for plugin availability, initiates the recording, and stores the resulting media.
+
+To create logic to record a video, follow these steps:
+
+1. Go to the **Logic** tab in Service Studio and navigate to **Client Actions** > **CameraPlugin**.
+1. Use the **CheckCameraPlugin** action to verify if the plugin is available (1).
+    * If the plugin is not available, display an error message to the user.
+1. If the plugin is available, use the **RecordVideo** action to open the camera and let users capture a video (2).
+    * In the **RecordVideo** action, set the parameters for saving the recorded media to the device's gallery.
+1. Check if **RecordVideo.Success** is **True** (3).
+1. If successful, assign **RecordVideo.MediaResult** to a variable of the **MediaResult** data type to handle the video data (4).
+
+![Flowchart screenshot outlining the logic to record a video using the Camera plugin, including checking plugin availability, capturing the video, and handling the video data.](images/capture-video-logic-2-ss.png "Camera Flow for Recording a Video")
+
+For more information about error handling, refer to [Handle errors](#handle-errors).
+
+## Select media from the gallery
+
+<div class="info" markdown="1">
+
+Applies to both mobile apps and PWAs, but with [limited support on PWAs](#pwa-functionality).
+
+</div>
+
+You can allow users to pick photos or videos directly from their device's gallery, enhancing flexibility for media input in your mobile app. This is especially useful when users want to upload existing files rather than capture new content.
+
+The **ChooseFromGallery** action lets users choose a media file from the device gallery, either a photo, a video, or both. The action is in the **Logic** tab of Service Studio, in **Client Actions** > **CameraPlugin**.
+
+The following example illustrates selecting a single photo from the gallery.
+
+To select media from the gallery, follow these steps:
+
+1. Use the **ChooseFromGallery** action to open a media browser and let users select a media file (1).
+1. Verify **ChooseFromGallery.Success** is **True** (2). For more information about error handling, refer to [Handle errors](#handle-errors).
+1. After users select the image, retrieve the binary data from **ChooseFromGallery.MediaResult.Current.Thumbnail** (3).
 
 ![Flowchart screenshot demonstrating the process for selecting media from the gallery using the Camera plugin, including opening the media browser and handling the selected media.](images/camera-flow-choose-from-gallery-ss.png "Camera Flow for Choosing Media from Gallery")
 
-## Uploading media assets from URIs
+<div class="info" markdown="1">
 
-You can use the video and picture URIs returned in the **MediaResult** variable, in conjunction with the **FileTransfer** plugin, to upload media files to a server. You can then use the hosted URLs to view the media files in your app.
+Alternatively, use the pre-built widget included with the plugin. In Service Studio, navigate to **Interface** > **UI Flows** > **Camera Plugin** > **Camera Plugin**, and drag the **ChooseFromGallery** Block to your Screen. Then use the **OnClick** event to receive the returned result.
 
-In the following example, the **UploadFileWithHeaders** client action uploads a video file to the app’s rest endpoint `rest/tickets/video`.
+</div>
 
-![Screenshot of the logic to upload a video file to a server endpoint using the UploadFileWithHeaders client action.](images/upload-with-headers-ss.png "Uploading Media Assets with Headers")
+## Upload media assets from URIs
 
-You can upload the video file to an S3 bucket inside the rest endpoint and then use the video's presigned URL with the **Video** widget to play the uploaded video.
+Use the video and photo URIs returned in the **MediaResult** variable, together with the **FileTransfer** plugin, to upload media files to a server. Then use the hosted URLs to view the media files in your app.
+
+In the following example, the **UploadFile** client action from File Transfer Plugin uploads a video file to the app's REST endpoint `rest/tickets/video`.
+
+![Screenshot of the logic to upload a video file to a server endpoint using the UploadFileWithHeaders client action.](images/file-transfer-upload-video-ss.png "Uploading Media Assets with Headers")
+
+Upload the video file to an S3 bucket inside the REST endpoint, then use the video's presigned URL with the **Video** widget to play the uploaded video.
 
 ![Screenshot showing the logic for uploading a video file to an S3 bucket within a REST endpoint.](images/object-put-ss.png "Uploading Video to S3 Bucket")
 ![Screenshot depicting the logic to retrieve a presigned URL for a video uploaded to an S3 bucket.](images/get-url-ss.png "Retrieving Video URL")
@@ -181,11 +207,11 @@ You can upload the video file to an S3 bucket inside the rest endpoint and then 
 ## Image quality and app responsiveness
 
 When you set **100%** image **Quality** or use the **PNG** format, your app handles a large amount of image data.
-Users might notice a delay after taking an image with the highest quality settings.
-The more data the app has to handle, the less responsive it can become on low-end devices.
+Users experience slower response times after taking an image with the highest quality settings.
+The more data the app handles, the less responsive it becomes on low-end devices.
 
 When setting the image quality, consider the use case for your app.
-Check the following table.
+The following table shows examples of quality settings for common use cases.
 
 |Example use case|Image quality|Notes|
 |-|-|-|
@@ -198,96 +224,82 @@ Changing the image quality setting applies only to .JPEG files.
 
 </div>
 
-## Handling errors
+## Handle errors
 
 The app with the camera plugin can run on many Android or iOS devices, with different hardware and configurations.
 To ensure a good user experience and prevent the app from crashing, handle the errors within the app.
 
-Here is the list of actions you can use to handle the errors.
+The following table lists the actions and variables that handle errors.
 
 | Variable | Action | Description |
 | - | - | - |
 | **IsAvailable** | **CheckCameraPlugin** | True if the camera plugin is available in the app. |
-| **Success** | **TakePicture** | True if there aren't errors while taking a picture. |
-| **Success** | **ChooseGalleryPicture** | True if there aren't errors while opening a picture from the gallery. |
-| **Success** | **EditPicture** | True if there aren't errors while editing a picture. |
+| **Success** | **TakePhoto** | True if there aren't errors while taking a photo. |
+| **Success** | **EditPhoto** | True if there aren't errors while editing a photo. |
+| **Success** | **EditURIPhoto** | True if there aren't errors while editing a photo. |
 | **Success** | **RecordVideo** | True if there aren't errors while recording a video. |
 | **Success** | **ChooseFromGallery** | True if there aren't errors while opening a media file from the gallery. |
 | **Success** | **PlayVideo** | True if there aren't errors while playing a video. |
 
-You can use these actions with the **If** nodes to check for errors and control how the app works.
+Use these actions with **If** nodes to check for errors and control how the app works.
 
-![Screenshot of a flowchart for handling various errors that may occur when using the camera plugin in an app.](images/camera-handling-errors.png "Handling Errors in Camera Plugin")
+![Screenshot of a flowchart for handling various errors that may occur when using the camera plugin in an app.](images/camera-handling-errors-ss.png "Handling Errors in Camera Plugin")
+
+Errors return an **Error** structure with **ErrorCode** and **ErrorMessage**. For information about specific error codes and how to handle them, refer to the [error codes section in the reference article](camera-ref.md#error-codes).
 
 ## Reference
 
-More information about the plugin.
+The following sections contain additional reference information about the plugin.
 
-For reference on the available client actions and structures, refer to the [Camera Plugin Reference Page](camera-ref.md)
+For reference on available client actions and structures, refer to the [Camera Plugin reference article](camera-ref.md).
 
 ### MABS compatibility
 
-The table shows the compatibility of the Camera plugin with the Mobile Apps Builds Service (MABS).
+The following table shows the compatibility of the Camera plugin with the Mobile Apps Builds Service (MABS).
 
 |Plugin version|Compatible with MABS version|Notes|
 |-|-|-|
+|8.0.0 and later|MABS 11.0 and later.||
 |7.6.4 and later|MABS 11.0 and later.||
 
 ## PWA functionality
 
-In PWAs, the camera plugin has these limitations compared to native mobile apps:
+In PWAs, the camera plugin has the following limitations compared to native mobile apps:
 
 * The **RecordVideo** and **PlayVideo** client actions and blocks aren't available. Video capture and playback are available in native mobile apps only.
-* The **EditURIPicture** client action and block aren't available. Use **EditPicture**.
-* The **ChooseFromGallery** client action and block aren't available. Use the **DEPRECATED_ChooseGalleryPicture** action.
+* The **EditURIPhoto** client action and block aren't available. Use **EditPhoto**.
+* The **ChooseFromGallery** client action and block have limited functionality. They currently only allow selecting one photo at a time, and don't allow video selection.
 * The **MediaResult** data structure only offers **Type** and **Thumbnail** attributes. **URI** and **Metadata** are available in native mobile apps only. Use **Thumbnail** to retrieve the image captured by the camera.
 
 ## Known issues and workarounds
 
-A list of known issues and possible workarounds.
+The following sections describe known issues and possible workarounds.
 
-### Taking multiple pictures not working in PWAs
+### Taking multiple photos doesn't work in PWAs
 
-In PWA, taking multiple pictures requires the use of browser stream capabilities.
+In PWAs, taking multiple photos requires browser stream capabilities.
 To ensure the app has access to the stream, add the theme **CameraPlugin** as an element to your app.
 **Keep the theme as a dependency even when the IDE reports it as not used by the app**.
 
-### In PWA, taking multiple pictures isn't working in some devices
+### Taking multiple photos doesn't work on some PWA devices
 
-In some devices, the workaround mentioned above shows a defective UI.
-There is, currently, no workaround to this issue.
+On some devices, the workaround described in the previous section shows a defective UI.
+There's no workaround for this issue.
 
-### Crashes on iOS 13.2 and 13.3
-
-**Applies to PWAs.**
-
-In iOS 13.2 and 13.3 the camera may stop working because of the [WebKit 206219 bug](https://bugs.webkit.org/show_bug.cgi?id=206219).
-If the camera stops working, swipe the open app up in App Switcher and reopen the app.
-WebKit is working on the fix.
-
-### Pictures appear rotated
+### Photos appear rotated
 
 **Applies to PWAs.**
 
-In some Chrome versions, the picture displays rotated in the **Image** widget.
+In some Chrome versions, the photo displays rotated in the **Image** widget.
 There is no workaround.
 
-### CameraDirection setting has no effect
-
-**Applies to Android only.**
-
-In some versions of Android, the app ignores the **CameraDirection** setting.
-Users can change the camera direction (back or front) once the camera app opens.
-
-### The resolution and quality settings apply to app images only
+### Resolution and quality settings apply to app images only
 
 When you change the resolution or quality setting, the plugin applies it only to the image the app uses.
 The device ignores the settings when saving the images in the device gallery.
-This means that the size of the image in the gallery depends on the device's hardware.
+The size of the image in the gallery depends on the device's hardware.
 
-### Choose from gallery wont allow for items to be selected
+## Related resources
 
-**Applies to Android only.**
-
-In Android 13, when using "ChooseFromGallery", users are unable to select content from device's gallery.
-When targeting Android 13, users should build their apps using MABS9 or later.
+* [Camera Plugin version 7](camera-plugin-version-7.md)
+* [Migrating camera plugin from version 7 to version 8](camera-plugin-migration-guide-7-to-8.md)

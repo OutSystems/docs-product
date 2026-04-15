@@ -17,6 +17,7 @@ outsystems-tools:
   - conversion assessment tool
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Set up the Conversion Assessment Tool
@@ -96,13 +97,23 @@ Before setting up the Conversion Assessment Tool, make sure the following requir
 
 * Your O11 environments use Platform Server 11.18.1 or later.
 
-* Your O11 infrastructure uses one of the following authentication methods for IT users:
+* If your O11 infrastructure uses an [authentication method](#auth-methods) for IT users that isn't supported, the environment where you publish the [Conversion Assessment Tool Console](#console) must have [Single Sign-On Between App Types](../security/configure-authentication.md) enabled.
 
-    * [Built-in authentication](../manage-platform-app-lifecycle/manage-it-teams/intro.md)
+### Supported authentication methods {#auth-methods}
 
-    * [External IdP authentication via OpenID Connect](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md)
-  
-  The Conversion Assessment Tool Installer and the Conversion Assessment Tool don't support other authentication methods.
+The [Conversion Assessment Tool](#console) and the [Conversion Assessment Tool Installer](#installer) support the following authentication methods:
+
+* [Built-in authentication](../manage-platform-app-lifecycle/manage-it-teams/intro.md)
+
+* [External IdP authentication via OpenID Connect](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md)
+
+* [LDAP authentication](../manage-platform-app-lifecycle/manage-it-teams/use-an-external-authentication-provider.md)
+
+If your O11 infrastructure uses any different authentication method for IT users:
+
+* You must set up the Conversion Assessment Tool using the [manual setup process](manual-setup-assessement-tool.md).
+
+* Your IT users can log in to the Conversion Assessment Tool using Service Center. This requires enabling [Single Sign-On Between App Types](../security/configure-authentication.md) in the environment where you publish the Conversion Assessment Tool Console.
 
 ## Set up the tool
 
@@ -281,9 +292,9 @@ If you encounter any other limitation or issue using the Conversion Assessment T
 
 Please also tell us about the issue you faced using the **Give feedback** option. This will help us improve the installer tool and support more scenarios.
 
-### Can't log in to the conversion assessment tools {#cannot-login}
+### Can't log in to the Conversion Assessment Tool installer {#cannot-login-cati}
 
-You are not able to log in to the Conversion Assessment Tool Installer app or to the Conversion Assessment Tool Console.
+You are not able to log in to the **Conversion Assessment Tool installer**.
 
 #### Recommended action
 
@@ -291,13 +302,37 @@ Validate the following:
 
 * You are using your IT user credentials to log in.
 
-* If you are trying to log in to the Conversion Assessment Tool Installer app, make sure your IT user [has the **Administrator** role](plan/mat-permissions.md#setup-update).
+* Make sure your IT user [has the **Administrator** role](plan/mat-permissions.md#setup-update).
 
-* If your IT users [authenticate with external IdP](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), make sure you added the following redirect URIs to your IdP configuration:
+* If your IT user [authenticate with external IdP via OpenID Connect](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), make sure the following redirect URI was added to your IdP configuration:
 
     * `https://<cati_environment>/ConversionAssessmentInstaller/OIDC_Callback`, where `<cati_environment>` is the environment running the [Conversion Assessment Tool Installer](#installer)
 
+* You are using an authentication method [supported by the Conversion Assessment Tool Installer](#auth-methods). If you are using a method that isn't supported, you need to set up the Conversion Assessment Tool using the [manual setup process](manual-setup-assessement-tool.md).
+
+### Can't log in to the Conversion Assessment Tool {#cannot-login}
+
+You are not able to log in to the **Conversion Assessment Tool Console**.
+
+#### Recommended action
+
+Validate the following:
+
+* You are using your IT user credentials to log in.
+
+* If your IT user [authenticate with external IdP via OpenID Connect](../manage-platform-app-lifecycle/manage-it-teams/external-idp/intro.md), make sure the following redirect URI was added to your IdP configuration:
+
     * `https://<cat_console_environment>/ConversionAssessment/OIDC_Callback`, where `<cat_console_environment>` is the environment running the [Conversion Assessment Tool Console](#console)
+
+* If your IT user authenticate using a method that isn't [supported by the Conversion Assessment Tool](#auth-methods), make sure the environment where you published the Conversion Assessment Tool Console has [Single Sign-On Between App Types enabled](../security/configure-authentication.md).
+
+### Log in to the Conversion Assessment Tool redirects to Service Center {#redirect-sc}
+
+If you are using an authentication method that isn't [supported by the Conversion Assessment Tool](#auth-methods), you are able to log in using Service Center.
+
+#### Recommended action
+
+Log in to Service Center using your IT user credentials. After logging in, you are redirected back to the Conversion Assessment Tool Console.
 
 ### Setup process fails
 

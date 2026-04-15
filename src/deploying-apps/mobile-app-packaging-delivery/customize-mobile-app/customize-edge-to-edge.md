@@ -10,6 +10,7 @@ audience:
   - mobile developers
 outsystems-tools:
   - service studio
+isautopublish: true
 ---
 
 # Customize the application system bars with edge-to-edge display
@@ -20,13 +21,14 @@ Applies only to Cordova mobile apps.
 
 </div>
 
-Mobile App Build Service (MABS) 12 introduces changes to how mobile apps handle system bars on Android 16 devices due to Android's new edge-to-edge enforcement. Edge-to-edge display extends your app content to the full screen, including areas behind the status bar and navigation bar. This document explains the preference changes from MABS 11 and how to migrate your app.
+Mobile Apps Build Service (MABS) 12 introduces changes to how mobile apps handle system bars on Android due to Android's edge-to-edge enforcement on Android 16 and above. Edge-to-edge display extends your app content to the full screen, including areas behind the status bar and navigation bar. You can also opt in to edge-to-edge on older Android versions. This document explains the preference changes from MABS 11 and how to migrate your app.
 
 ## Preference changes
 
 | Property | Status |
 | --- | --- |
 | AndroidEdgeToEdge | Added |
+| EdgeToEdgeGlyphTheme | Added |
 | NavigationBarBackgroundColor | Added |
 | StatusBarBackgroundColor | Unchanged |
 | StatusBarDefaultScrollToTop | Removed/Ignored |
@@ -62,8 +64,9 @@ Mobile App Build Service (MABS) 12 introduces changes to how mobile apps handle 
 
 | Property | Values | Description |
 | --- | --- | --- |
-| AndroidEdgeToEdge | `True` or `False` | This only effects Android 15+, as lower versions of Android don't support edge to edge mode. Whether the WebView will reach edge-to-edge or just between the system bars on Android devices.<br/>- If set to `True`, the app reports the safe area insets through the `--safe-area-inset-*` CSS variables. For more information, refer to [Safe area inset support](#safe-area-inset-support-safe-area-inset-support).<br/>- If set to `False`, the style of the status bar icons is automatically managed by the system.<br/>- If not set, defaults to `False`. |
-| NavigationBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the navigation bar.<br/>- If set to `#00000000`, the navigation bar follows the device theme.<br/>- If set to any other hex color, the navigation bar uses that color and it does not change when the device theme changes.<br/>- If not set, it matches the color defined in the `BackgroundColor` preference, which by default is your application's primary color.<br/>- Has no effect when `AndroidEdgeToEdge` is set to `True` on android 15+.<br/>- Expected color format: `#RRGGBB` or `#00000000`. |
+| AndroidEdgeToEdge | `True` or `False` | Whether the WebView will reach edge-to-edge or just between the system bars on Android devices.<br/>- If set to `True`, the app reports the safe area insets through the `--safe-area-inset-*` CSS variables. For more information, refer to [Safe area inset support](#safe-area-inset-support-safe-area-inset-support).<br/>- If set to `False`, the style of the status bar icons is automatically managed by the system.<br/>- If not set, defaults to `False`. |
+| EdgeToEdgeGlyphTheme | `dark` or `light` | Controls the color of system bar icons and text (glyphs) when `AndroidEdgeToEdge` is set to `True`. In edge-to-edge mode the system bar background is transparent, so automatic luminance-based detection may not produce the desired result. This preference lets you explicitly choose the glyph color to match your app's background.<br/>- `dark`: dark-colored glyphs (suitable for light backgrounds).<br/>- `light`: light-colored glyphs (suitable for dark backgrounds).<br/>- If not set or set to an unrecognized value, falls back to automatic luminance-based detection.<br/>- Has no effect when `AndroidEdgeToEdge` is set to `False`. |
+| NavigationBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the navigation bar.<br/>- If set to `#00000000`, the navigation bar follows the device theme.<br/>- If set to any other hex color, the navigation bar uses that color and it does not change when the device theme changes.<br/>- If not set, it matches the color defined in the `BackgroundColor` preference, which by default is your application's primary color.<br/>- Has no effect when `AndroidEdgeToEdge` is set to `True`.<br/>- Expected color format: `#RRGGBB` or `#00000000`. |
 | StatusBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the status bar. Operates the same way as `NavigationBarBackgroundColor`, with the addition that the status bar style (light or dark text and icons) is automatically determined based on the color for optimal contrast. |
 
 ## System bars JSON template
@@ -84,6 +87,10 @@ Use the following template as a reference for defining a custom background color
         "android": [{
             "name": "AndroidEdgeToEdge",
             "value": "<boolean>"
+        },
+        {
+            "name": "EdgeToEdgeGlyphTheme",
+            "value": "<dark|light>"
         }]
     }
 }

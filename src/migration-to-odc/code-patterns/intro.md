@@ -17,6 +17,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - none
+isautopublish: true
 ---
 
 # O11 to ODC conversion patterns
@@ -59,6 +60,7 @@ These are the patterns that require changes in the O11 apps before proceeding wi
 * [Asset consuming a Forge component](arch-forge.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
 * [Asset consuming an O11 app that is not mapped to any ODC asset](arch-not-mapped.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
 * [Asset consuming its own service action](arch-internal-service-action.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
+* [Asset programmatically changing a site property](refactor-siteproperties.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
 * [Unsupported Delete Rule to an entity from another app](elem-unsupported-delete-rule.md) - Optionally, you can choose to solve this pattern in ODC after the conversion.
 * [Library with cyclic dependency to another ODC library](arch-lib-cyclic.md)
 * [Asset cannot contain Traditional Web modules](elem-trad-web.md)
@@ -93,7 +95,6 @@ These are the patterns that require changes in the converted ODC apps before you
 
 ### App configuration
 
-* [Refactor site properties to be ODC-compatible](refactor-siteproperties.md)
 * [Update the URLs of consumed REST API endpoints](update-url-consumed-rest-endpoint.md)
 
 ## Limitations

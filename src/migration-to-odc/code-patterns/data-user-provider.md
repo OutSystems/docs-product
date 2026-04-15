@@ -2,13 +2,13 @@
 guid: a38b687f-5515-4cb5-a12d-85a7662a8c22
 locale: en-us
 summary: The data migration of O11 modules with user provider different than Users isn't supported.
-figma: 
+figma:
 coverage-type:
   - unblock
-topic: 
+topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
-audience: 
+audience:
   - backend developers
   - frontend developers
   - full stack developers
@@ -18,17 +18,20 @@ tags: outsystems 11, data migration, user provider, odc assets, module configura
 outsystems-tools:
   - conversion assessment tool
 helpids: "30742"
+isautopublish: true
 ---
 
 # Module with a user provider different than Users
 
 [User management](https://www.outsystems.com/tk/redirect?g=9e0fb9b7-d2b0-419f-a5d8-5b5ed730da5e) in OutSystems Developer Cloud (ODC) is different from [OutSystems 11 (O11)](../../user-management/intro.md):
 
-* O11 includes two default user providers, Users (default) and Service Center, but you can also use other custom user providers. The Users provider handles app end-users and Service Center handles IT users.
+* O11 includes two default user providers, **Users** (default) and **Service Center**, but you can also [use other custom user providers](../../user-management/end-user-manage/end-user-authentication/single-sign-on.md#different-user-provider). The **Users** provider handles app end-users and **Service Center** handles IT users.
 
 * ODC uses a single unified user management system. App end-users and IT users exist in the same user provider.
 
-This pattern identifies modules in the assessed environment with a user provider different from Users. The O11 to ODC App Conversion Kit EAP doesn't yet support data migration for this scenario.
+For [O11 modules configured as user provider](../../user-management/end-user-manage/end-user-authentication/single-sign-on.md#different-user-provider), the **Effective User Provider** module can be changed in the Service Center console, affecting all modules using that user provider.
+
+This pattern identifies modules in the database of the assessed environment with an effective user provider different from **Users**. The O11 to ODC App Conversion Kit EAP doesn't yet support data migration for this scenarios.
 
 ## How to solve
 
@@ -40,4 +43,4 @@ If you are only preparing your code for the conversion, at present, OutSystems r
 
 This pattern isn't supported yet.
 
-You can only proceed with data migration of ODC assets where all modules use **Users** as the user provider.
+You can only proceed with data migration of ODC assets where all modules use **Users** as the user provider or the effective user provider.

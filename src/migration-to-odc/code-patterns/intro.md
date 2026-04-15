@@ -99,7 +99,7 @@ These are the patterns that require changes in the converted ODC apps before you
 
 ## Limitations
 
-Conversion to ODC isn't yet supported for the following patterns.
+Conversion to ODC **isn't yet supported** for the following patterns.
 
 ### Code
 
@@ -110,7 +110,7 @@ Conversion to ODC isn't yet supported for the following patterns.
 
 ### Data
 
-* [Modules with multiple active tenants](data-multiple-tenants.md)
+* [Modules with data in multiple tenants](data-multiple-tenants.md)
 * [Modules with a user provider different than Users](data-user-provider.md)
 
 ### Infrastructure

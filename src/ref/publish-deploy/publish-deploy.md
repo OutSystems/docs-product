@@ -15,11 +15,15 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Publishing and deploying an OutSystems app
 
-To make your app available to users, there are some steps you must complete, such as publishing and deploying your app. However, sometimes you might need to republish or redeploy your apps. Those actions are slightly different than just repeating a publish or deploy. This article describes the concepts of publish, deploy, republish, and redeploy.  
+To make your app available to users, complete steps such as publishing and
+deploying your app. Sometimes, you need to republish or redeploy your apps.
+Those actions are different from repeating a publish or deploy. This article
+describes publish, deploy, republish, and redeploy.  
 
 ## Publish
 
@@ -28,6 +32,28 @@ When there are changes to your app, you can publish it to your development envir
 In **Service Studio**, click the **1 Publish** button to compile the code and publish the app.  
 
 ![Screenshot of the Service Studio interface with the '1 Publish' button highlighted](images/1-publish-ss.png "Publishing in Service Studio")
+
+You can also add a comment when publishing to describe the changes you made.
+
+![Screenshot of Service Studio showing the Publish dropdown with 1-Click Publish and 1-Click Publish with Comment options](images/publish-with-comment-ss.png "1-Click Publish with Comment in Service Studio")
+
+To publish with a comment, click the dropdown arrow on the **1 Publish**
+button. Then select **1-Click Publish with comment**. You can also use
+**Shift+F5** (Windows) or **Shift+Cmd+F5** (macOS).
+
+In the dialog that opens, type your comment and publish. The comment is
+optional and supports up to 2,000 characters. After publishing, the comment is
+a permanent, read-only record attached to that module version.
+
+You can review comments for previous module versions in **Service Center** >
+**Factory** > **Modules**. Select the module. The **Versions** tab displays
+each version with its comment.
+
+<div class="info" markdown="1">
+
+At the database level, publish comments are stored in the `OSSYS_CommitMessage` system table. Each record links a comment to a module version through the `EspaceVersionId` foreign key (referencing the `Espace_Version` entity) and the corresponding `Message` column.
+
+</div>
 
 In **Service Center**, click the **Publish** button.
 

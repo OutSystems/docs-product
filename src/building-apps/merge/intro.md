@@ -18,13 +18,20 @@ isautopublish: true
 
 # Merging and versioning
 
-In an environment where many developers work on the same module, you often need to incorporate other people's changes. If there are no conflicting changes, Service Studio automatically integrates the differences. If conflicting changes are detected, you are prompted to resolve them manually. To publish the module, update your local module, resolve all conflicts, and then publish it.
+When many developers work on the same module, you often need to incorporate
+other people's changes. If there are no conflicts, Service Studio
+automatically integrates the differences. If Service Studio detects conflicts,
+it prompts you to resolve them manually. To publish the module, update your
+local module, resolve all conflicts, and then publish it.
 
 The merge capabilities are designed with the OutSystems visual language in mind, letting you review changes for both visual and textual elements.
 
 ![Screenshot showing the conflicts detected during the merge process in Service Studio](images/conflicts-detected.png "Conflicts Detected in Service Studio")
 
-What follows is an overview of the merge feature. For step-by-step instructions on conflict resolution, refer to [Compare and merge example](merge-example.md). For more information about merge operations in OutSystems, refer to [The merge feature and team collaboration](concepts.md).
+What follows is an overview of the merge feature. For step-by-step
+instructions on conflict resolution, refer to [Compare and merge
+example](merge-example.md). For more information about merge operations in
+OutSystems, refer to [The merge feature and team collaboration](concepts.md).
 
 ## Conflicting version found
 
@@ -54,7 +61,7 @@ The **Merged version (# of conflicts)** tab shows the editable text and comparis
 
 The **Your version** tab shows the comparison:
 
-* **Your version** pane – the textual element in the local version of the module. You cannot edit this text.
+* **Your version** pane – the textual element in the local version of the module. You can edit this text.
 * **The other version** pane – the textual element in the server version of the module. You cannot edit this text.
 
 ### Resolving conflicts in the textual elements

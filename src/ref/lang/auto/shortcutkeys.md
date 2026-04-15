@@ -1,5 +1,5 @@
 ---
-summary: Explore keyboard shortcuts for OutSystems 11 (O11) across various development environments and operating systems.
+summary: Explore OutSystems 11 (O11) keyboard shortcuts for different development environments and operating systems.
 locale: en-us
 guid: d508b2f0-f667-4a03-8117-20292875c195
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -51,7 +51,7 @@ isautopublish: true
 |Description|Windows|macOS|
 |---|---|---|
 |1-Click Publish|F5|F5|
-|1-Click Publish with comment|Shift+F5|Shift+F5|
+|1-Click Publish with comment|Shift+F5|Shift+Cmd+F5|
 |Hide/show warning in TrueChange tab|Ctrl+H|Shift+Cmd+H|
 |Enable/disable Styles Editor|Ctrl+J||
 |Refresh Aggregate's data preview|Ctrl+L|Cmd+R|

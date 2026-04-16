@@ -201,9 +201,7 @@ exceptions:
   - RequestPart
   - Form URL
   - Create/Upgrade
-  - URL
-  - XML
-
+  
 # Events
   - OnClick
   - On Click
@@ -372,6 +370,9 @@ exceptions:
   - PRD
   - SEO
   - VPN
+  - URL
+  - XML
+  - README
 # Country
   - US East
   - North Virginia

@@ -201,6 +201,8 @@ exceptions:
   - RequestPart
   - Form URL
   - Create/Upgrade
+  - URL
+  - XML
 
 # Events
   - OnClick

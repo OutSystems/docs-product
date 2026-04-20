@@ -14,41 +14,48 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Redacting information from REST API logs
 
-When [setting the logging level](https://success.outsystems.com/documentation/11/extensibility_and_integration/set_the_logging_level_of_rest_and_soap_integrations/) of a REST API to **Full** the input and output parameter values sent/received are shown up in the logs. Nonetheless, in some cases, you may not want some values of the parameters to be displayed.
+When you set the [logging level](https://success.outsystems.com/documentation/11/extensibility_and_integration/set_the_logging_level_of_rest_and_soap_integrations/)
+of a REST API to **Full**, OutSystems logs input and output parameter values. If
+those values include sensitive data, use log redaction to hide them.
 
-Log redaction allows you to redact sensitive information from a consumed REST API’s logs. Since sensitive information may be transmitted through inputs and output parameters it is possible to redact both input and output parameters sent in the Header, Body or Url and received in the Body or Header respectively.
+Log redaction prevents sensitive information from appearing in an exposed REST
+API’s logs. You can redact input and output parameter values sent in the
+header, body, or URL, and received in the header or body.
 
-For instance, imagine if you have an API that sends a username and password as input parameters and receives a code which gives privileged access to a specific resource as output parameter. In that case, you may want to redact the Password input parameter and the code output.
+For example, if a request includes a username and password and the response
+returns an access code, redact the **Password** input parameter and the
+**Code** output parameter.
 
-To redact the values of a given Input Parameter from the logs, do the following:
+To redact the values of an input parameter, follow these steps:
 
-1. In Service Studio, open the module containing the consumed REST API element.
+1. In Service Studio, open the module that contains the exposed REST API.
 
-1. In the element tree, expand the consumed REST element, and then expand the
-   element for REST Method with the input parameter you want to redact from the
-   logs.
+1. In the element tree, expand the REST API, and then expand the REST API
+   method that contains the input parameter you want to redact.
 
-1. Select the input parameter you wish to redact, and set its **Log Redaction**
-   property to **Yes**.
+1. Select the input parameter, and set **Log Redaction** to **Yes**.
 
-    ![Screenshot showing how to enable log redaction for an input parameter in Service Studio](images/redact_password.png "Activating the Log Redaction property of an input parameter")
+    ![Screenshot showing how to enable log redaction for an input parameter in Service Studio](images/redact-password-ss.png "Activating the Log Redaction property of an input parameter")
 
-Use the following steps to redact the values of a given Output Parameter from the logs:
+To redact the values of an output parameter, follow these steps:
 
-1. In Service Studio, open the module containing the consumed REST API element.
+1. In Service Studio, open the module that contains the exposed REST API.
 
-1. In the element tree, expand the consumed REST element, and then expand the element for REST Method with the input parameter you want to redact from the logs.
+1. In the element tree, expand the REST API, and then expand the REST API
+   method that contains the output parameter you want to redact.
 
-1. Select the output parameter you wish to redact (in this case Code) , and set its **Log Redaction property** to **Yes**.
+1. Select the output parameter (for example, **Code**), and set **Log
+   Redaction** to **Yes**.
 
-    ![Screenshot illustrating the activation of log redaction for an output parameter in Service Studio](images/redact_code.png "Activating the Log Redaction property of an output parameter")
+    ![Screenshot illustrating the activation of log redaction for an output parameter in Service Studio](images/redact-code-ss.png "Activating the Log Redaction property of an output parameter")
 
-With this configured, performing a request at runtime the resultant logs will look like shown below.
+After you call the method, the integration logs show the redacted values.
 
-![Sample logs displaying redacted values for sensitive information in a REST API call](images/logs.png "Example of redacted REST API logs")
+![Sample logs displaying redacted values for sensitive information in a REST API call](images/redact-logs-sc.png "Example of redacted REST API logs")
 
-You can see that it’s not possible to see the values of the Password and the Code which meant they are both shown as **redacted**.
+In the logs, the **Password** and **Code** values appear as `[redacted]`.

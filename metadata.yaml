@@ -1,9 +1,11 @@
 audience:
-  - Developer
-  - Business Analyst
-  - Tech Lead
   - Architect
-  - System Administrator
+  - Business analyst
+  - Developer
+  - Front-end developer
+  - Product owner
+  - Tech lead
+  - Platform administrator
 
 tags:
   - .NET

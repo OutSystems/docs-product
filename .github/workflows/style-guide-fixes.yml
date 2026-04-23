@@ -1,0 +1,37 @@
+name: Style Guide Fixes
+
+on:
+  workflow_call:
+    inputs:
+      changed-files:
+        description: "List of changed files to fix"
+        type: string
+        required: true
+      pull-request:
+        description: "The Pull Request number"
+        type: string
+        required: true
+
+concurrency: style-guide-fixes-${{ github.ref }}
+
+run-name: "Fix style guide errors ${{ github.ref_name }}"
+
+jobs:
+
+  fix-errors:
+    name: Fix Style Guide Errors
+    if: inputs.changed-files != ''
+    uses: OutSystems/tk-cicd/.github/workflows/ai-copilot-skill.yml@main
+    with:
+      title: Fix Style Guide Errors
+      changed-files: ${{ inputs.changed-files }}
+      pull-request: ${{ inputs.pull-request }}
+      ignore-paths: .github,.cursor,scripts,styles
+      required-label: "fix-style-guide"
+      prompt: "Automatically fix all errors; do not ask for confirmation at any step; do not use any git commands; the pull request number is ${{ inputs.pull-request }}."
+      skill: .github/skills/style-guide-fixer/SKILL.md
+      cooldown-hours: 0
+      setup-mcp-servers: '{"github":{"command":"docker","args":["run","--rm","-i","-e","GITHUB_PERSONAL_ACCESS_TOKEN","ghcr.io/github/github-mcp-server"],"env":{"GITHUB_PERSONAL_ACCESS_TOKEN":"$GITHUB_TOKEN"}}}'
+    secrets:
+      github-token: ${{ secrets.TOOLS_PAT }}
+      copilot-token: ${{ secrets.TK_COPILOT_TOKEN }}

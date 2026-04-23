@@ -85,7 +85,17 @@ jobs:
     with:
       changed-files: ${{ needs.pr-info.outputs.changed-files }}
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
-  
+
+  style-guide-fixes:
+    name: Style Guide Fixes
+    needs: [pr-info, style-guide-validation]
+    if: always() && github.ref_name != github.event.repository.default_branch && needs.pr-info.outputs.changed-files != '' && github.event_name != 'merge_group' && needs.pr-info.result == 'success' && needs.style-guide-validation.result != 'cancelled'
+    uses: ./.github/workflows/style-guide-fixes.yml
+    with:
+      changed-files: ${{ needs.pr-info.outputs.changed-files }}
+      pull-request: ${{ needs.pr-info.outputs.pull-request }}
+    secrets: inherit
+
   validate-toc:
     name: Validate files in TOC
     needs: [pr-info]

@@ -222,6 +222,7 @@ OutSystems supports Microsoft Azure SQL Database with the following consideratio
 * Customizing the timezone from UTC isn't supported in Azure SQL database.
 
 OutSystems also supports SQL Server running on an Azure virtual machine.
+Azure SQL Managed Instances are not supported.
 
 ## Integration with external systems
 

@@ -1,6 +1,6 @@
 ---
 name: style-guide-fixer
-description: Fix style guide errors reported in the "STYLE GUIDE VALIDATION" PR comment. Reads the latest style guide validation comment and applies fixes for errors it can confidently resolve without changing content meaning, following the documentation style guidelines. Use when asked to fix style guide errors on a file.
+description: Fix style guide errors reported in the PR comment marked with the sticky marker "STYLE GUIDE VALIDATION". Reads the most recent such comment and applies fixes for errors it can confidently resolve without changing content meaning, following the documentation style guidelines. Use when asked to fix style guide errors on a file.
 ---
 
 # Style guide fixer rules
@@ -17,7 +17,7 @@ Read the provided files and find all style guide errors reported for them in the
 ### Instructions
 
 1. Read the provided files in full.
-1. Use GitHub tools to retrieve the most recent PR comment on the pull request whose number is specified in the prompt. Look for the latest comment that has the `STYLE GUIDE VALIDATION` header — it contains tables of markdownlint and Vale errors.
+1. Use GitHub tools to retrieve all PR comments on the pull request whose number is specified in the prompt. Find the most recent comment that contains the sticky marker `<!-- Sticky Pull Request CommentSTYLE GUIDE VALIDATION -->` — it contains tables of markdownlint and Vale errors.
     * If no such comment exists, stop and report that no style guide validation comment was found.
 1. From the comment, extract all rows from both error tables where:
     * The `File` column matches the path of the current file.

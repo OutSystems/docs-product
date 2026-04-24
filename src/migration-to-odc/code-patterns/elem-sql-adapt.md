@@ -115,11 +115,15 @@ Consider maintaining a checklist to track the status (Pending, In Progress, Vali
 
     </div>
 
-1. Use the **Test SQL** button within the SQL node editor to execute the query with specific input parameters.
+1. Test the adapted query with specific input parameters:
 
-1. Run the same query with the same input parameters in both O11 and ODC.
+    * Within the SQL node editor, use the **Test Inputs** tab to set the input parameters.
 
-1. Compare the result sets. Verify that:
+    * Use the **Test SQL** button to execute the query.
+
+1. Run the original query in O11 with the same input parameters.
+
+1. Compare the O11 and ODC result sets. Verify that:
 
     * The result sets are identical or semantically equivalent.
 

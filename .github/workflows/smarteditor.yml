@@ -22,17 +22,19 @@ jobs:
 
     steps:
       - name: Add reaction to comment
+        env:
+          COMMENT_ID: ${{ github.event.comment.id }}
         run: |
-          COMMENT_ID=${{ github.event.comment.id }}
           curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                -H "Content-Type: application/json" \
                -d '{"content":"eyes"}' \
                "https://api.github.com/repos/${{ github.repository }}/issues/comments/$COMMENT_ID/reactions"
       - name: Set ref for checkout
         id: set_ref
+        env:
+          PR_API_URL: ${{ github.event.issue.pull_request.url }}
         run: |
-          PR_API_URL="${{ github.event.issue.pull_request.url }}"
-          REF=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" $PR_API_URL | jq -r .head.ref)
+          REF=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$PR_API_URL" | jq -r .head.ref)
           echo "REF=$REF" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4.1.1

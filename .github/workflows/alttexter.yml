@@ -23,8 +23,10 @@ jobs:
     steps:
       - name: Set ref for checkout
         id: set_ref
+        env:
+          PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
-          echo "REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
+          echo "REF=$PR_HEAD_REF" >> $GITHUB_ENV
 
       - name: Checkout
         uses: actions/checkout@v4.1.1

@@ -30,14 +30,17 @@ jobs:
 
       - name: Validate files in TOC
         id: validate
+        env:
+          CHANGED_FILES: ${{ inputs.changed-files }}
         run: |
           python << 'EOF'
+          import os
           import re
           import sys
           import yaml
           from pathlib import Path
-          
-          changed_files = """${{ inputs.changed-files }}""".strip()
+
+          changed_files = os.environ.get('CHANGED_FILES', '').strip()
           
           if not changed_files:
               print("No changed files provided. Skipping validation.")

@@ -373,6 +373,8 @@ exceptions:
   - URL
   - XML
   - README
+  - CPU
+  - SSL
 # Country
   - US East
   - North Virginia

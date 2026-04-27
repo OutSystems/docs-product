@@ -33,25 +33,25 @@ In **Service Studio**, click the **1 Publish** button to compile the code and pu
 
 ![Screenshot of the Service Studio interface with the '1 Publish' button highlighted](images/1-publish-ss.png "Publishing in Service Studio")
 
-You can also add a comment when publishing to describe the changes you made.
+You can also add a message when publishing to describe the changes you made.
 
-![Screenshot of Service Studio showing the Publish dropdown with 1-Click Publish and 1-Click Publish with Comment options](images/publish-with-comment-ss.png "1-Click Publish with Comment in Service Studio")
+![Screenshot of Service Studio showing the Publish dropdown with 1-Click Publish and 1-Click Publish with Message options](images/publish-with-comment-ss.png "1-Click Publish with Message in Service Studio")
 
-To publish with a comment, click the dropdown arrow on the **1 Publish**
-button. Then select **1-Click Publish with comment**. You can also use
+To publish with a message, click the dropdown arrow on the **1 Publish**
+button. Then select **1-Click Publish with message**. You can also use
 **Shift+F5** (Windows) or **Shift+Cmd+F5** (macOS).
 
-In the dialog that opens, type your comment and publish. The comment is
-optional and supports up to 2,000 characters. After publishing, the comment is
+In the dialog that opens, type your message and publish. The message is
+optional and supports up to 2,000 characters. After publishing, the message is
 a permanent, read-only record attached to that module version.
 
-You can review comments for previous module versions in **Service Center** >
+You can review messages for previous module versions in **Service Center** >
 **Factory** > **Modules**. Select the module. The **Versions** tab displays
-each version with its comment.
+each version with its message.
 
 <div class="info" markdown="1">
 
-At the database level, publish comments are stored in the `OSSYS_CommitMessage` system table. Each record links a comment to a module version through the `EspaceVersionId` foreign key (referencing the `Espace_Version` entity) and the corresponding `Message` column.
+At the database level, publish messages are stored in the `OSSYS_CommitMessage` system table. Each record links a message to a module version through the `EspaceVersionId` foreign key (referencing the `Espace_Version` entity) and the corresponding `Message` column.
 
 </div>
 

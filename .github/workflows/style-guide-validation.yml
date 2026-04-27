@@ -24,6 +24,7 @@ jobs:
       runner-type: "ubuntu-latest"
       changed-files: ${{ inputs.changed-files }}
       pull-request: ${{ inputs.pull-request }}
+      disable-suggestions: ${{ fromJSON(vars.DISABLE_STYLE_GUIDE_SUGGESTIONS) }}
     secrets:
       github-token: ${{ secrets.TOOLS_PAT }}
       copilot-token: ${{ secrets.TK_COPILOT_TOKEN }}

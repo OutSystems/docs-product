@@ -1,29 +1,46 @@
 ---
 name: style-guide-fixer
-description: Fix style guide errors reported in the PR comment marked with the sticky marker "STYLE GUIDE VALIDATION". Reads the most recent such comment and applies fixes for errors it can confidently resolve without changing content meaning, following the documentation style guidelines. Use when asked to fix style guide errors on a file.
+description: Fix style guide errors on a file. Runs vale and markdownlint locally to find errors. Falls back to the PR comment marked with the sticky marker "STYLE GUIDE VALIDATION" only when the prompt explicitly instructs it. Use when asked to fix style guide errors on a file.
 ---
 
 # Style guide fixer rules
 
-This assistant fixes style guide errors reported in PR validation comments.
+This assistant fixes style guide errors on documentation files.
 This is an automated skill — do not ask for user confirmation at any step.
 
 ## Step 1 — read the file and locate errors
 
 ### Objective
 
-Read the provided files and find all style guide errors reported for them in the PR comment.
+Read the provided files and collect all style guide errors for them.
 
 ### Instructions
 
-1. Read the provided files in full.
-1. Use GitHub tools to retrieve all PR comments on the pull request whose number is specified in the prompt. Find the most recent comment that contains the sticky marker `<!-- Sticky Pull Request CommentSTYLE GUIDE VALIDATION -->` — it contains tables of markdownlint and Vale errors.
+1. Collect errors using the following priority order:
+
+    **Primary — run local linters** (default, no PR required):
+    * Determine which file to fix:
+        * If a file path was explicitly passed with the command, use that.
+        * Otherwise, use the file currently open in the IDE, available in the conversation context via the `<ide_opened_file>` tag. If no file is open, stop and ask the user to provide a file path.
+    * Read the file in full.
+    * Collect errors using the following sub-priority:
+
+        **IDE diagnostics** (preferred, if available):
+        * After reading the file, check whether `<ide_diagnostics>` data is present in the conversation context for this file.
+        * If it is, use those diagnostics as the error source. Treat entries with severity `"Error"` as errors; ignore `"Warning"` and `"Information"` entries.
+
+        **CLI linters** (fallback, when IDE diagnostics are absent):
+        * Run `markdownlint` on the file and capture all output.
+        * Run `vale` on the file and capture all output.
+        * From the markdownlint output, collect only errors for rules listed in `markdownlint_fail.json`. Treat all other markdownlint findings as warnings and ignore them.
+        * From the vale output, collect only findings with severity `error`. Ignore `warning` and `suggestion` findings.
+
+    **Fallback — PR comment** (use only when the prompt explicitly says to use the PR comments):
+    * Use GitHub tools to retrieve all PR comments on the pull request whose number is specified in the prompt. Find the most recent comment that contains the sticky marker `<!-- Sticky Pull Request CommentSTYLE GUIDE VALIDATION -->`.
     * If no such comment exists, stop and report that no style guide validation comment was found.
-1. From the comment, extract all rows from both error tables where:
-    * The `File` column matches the path of the current file.
-    * The `Severity` column is `error❌`.
-    * Ignore all rows with severity `warning⚠️` or `suggestion💡`.
-1. If no `error❌` rows are found for this file, stop and report that no fixable errors were found.
+    * From the comment, extract all rows from both error tables where the `File` column matches the path of the current file and the `Severity` column is `error❌`. Ignore `warning⚠️` and `suggestion💡` rows.
+
+1. If no errors are found for this file, stop and report that no fixable errors were found.
 
 ### Output
 

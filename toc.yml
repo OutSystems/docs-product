@@ -608,6 +608,10 @@
                 - href: building-apps/case-management-workflow/case-management-framework/ref/auto/CaseProcessConfigurations_API.final.md
     # Mobile best practices
     - href: building-apps/mobile-best-practices/mobile-best-practices.md
+    # Convert Traditional to Reactive
+    - href: building-apps/traditional-to-reactive/traditional-to-reactive.md
+    - topics:
+        - href: building-apps/traditional-to-reactive/conversion-mapping.md
 # Debugging apps
 - href: debugging-apps/intro.md
 - topics:

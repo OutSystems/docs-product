@@ -16,11 +16,12 @@ outsystems-tools:
   - platform server
 coverage-type:
   - evaluate
+isautopublish: true
 ---
 
 # Best practices for SQL Server
 
-This article presents the current best practices recommended when operating OutSystems Platform Server with a SQL Server database.
+This article presents the current best practices recommended when operating OutSystems platform server with a SQL Server database.
 
 ## Hardware recommendations
 
@@ -80,7 +81,7 @@ We can divide storage needs in three parts, by looking at the I/O requirements o
 | **File Type** | **Description** |
 | -------------- | ----------------- |
 | System Files | System files are the files for Windows, including your pagefile, as well as the SQL Server binaries. This subsystem is mostly oriented towards read operations. However your main concern is ensuring integrity and fault tolerance, than I/O performance. RAID levels 1, 5, and 10 are appropriate, although RAID 1 is the most common. |
-| Data Files (*.mdf,*.ndf) | Data files (*.mdf,*.ndf) are the files where SQL stores all of your database data and schema information.The load placed on these files will depend on whether your database is mostly transaction oriented, create a higher write load, or if it has a more analytical role which usually mean a higher read load.RAID 10 is the recommended level as it provides the best fault tolerance as well as the best speed |
+| Data Files (\*.mdf,\*.ndf) | Data files (\*.mdf,\*.ndf) are the files where SQL stores all of your database data and schema information.The load placed on these files will depend on whether your database is mostly transaction oriented, create a higher write load, or if it has a more analytical role which usually mean a higher read load.RAID 10 is the recommended level as it provides the best fault tolerance as well as the best speed |
 | Log Files (*.ldf) | Transaction Log files (*.ldf) are where the database journaling takes place and is critical to ensuring proper database recovery. Except for database recovery actions, the load is mostly write oriented. RAID 1 or RAID 10 are recommended. |
 
 To get the maximum performance, with these set of files, you should use the NTFS block size of 64k (recommended). For 64-bit systems this can be set higher, but note that when going beyond 64k you should try it first on a test system.

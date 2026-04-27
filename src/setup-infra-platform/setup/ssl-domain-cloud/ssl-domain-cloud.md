@@ -17,6 +17,7 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+isautopublish: true
 ---
 
 # Use your SSL domain in OutSystems Cloud
@@ -39,7 +40,7 @@ To update the new SSL domain name in a mobile application, you must regenerate t
 
 To configure SSL for your domain, do the following:
 
-1. You must own the desired domain address (for example, www.example.com)
+1. You must own the desired domain address (for example, `www.example.com`)
 
 1. Obtain an SSL certificate from a trusted Certificate Authority for the desired domain so the end users can access the apps using HTTPS. For more information, refer to [How to generate a CSR](https://success.outsystems.com/Support/Enterprise_Customers/Installation/How_to_generate_a_CSR). The supported formats are either **PEM** or **PFX** with a maximum private key size of 4096 bits. Contact your Certificate Authority if none of these formats are supplied.
 
@@ -53,7 +54,7 @@ To configure SSL for your domain, do the following:
 
 Certificates follow a chain structure that includes the root, intermediate, and domain certificate. You must provide a certificate that contains the complete chain. Some CAs provide the full chain, while others only provide the domain certificate, requiring you to assemble the chain. Before upload, validate that your certificate contains the complete chain.
 
-## Upload the certificate in LifeTime { #upload-certificate }
+## Upload the certificate in LifeTime {#upload-certificate}
 
 To use your domain on OutSystems Cloud, you must upload the SSL certificate before assigning it to the environments:
 
@@ -83,7 +84,7 @@ OutSystems recommends **PEM** and **PFX** certificates. These file types ensure 
 
 Depending on the certificate file format, the wizard guides you through the next steps.
 
-### Domain certificate in PEM format { #PEM-certificate }
+### Domain certificate in PEM format {#PEM-certificate}
 
 A PEM certificate is commonly presented as a set of .PEM files (namely a certificate, a private key, and a chain), that contain text. To submit a new PEM certificate, you require the following information:
 
@@ -101,7 +102,7 @@ A PEM certificate is commonly presented as a set of .PEM files (namely a certifi
 
 ![Screenshot of the form to submit a new PEM format domain certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-2.png "PEM Format Domain Certificate Submission Form")
 
-### Domain certificate in PFX format { #PFX-certificate }
+### Domain certificate in PFX format {#PFX-certificate}
 
 The PFX certificate is the most commonly used format and is identified by a single '.PFX' file with all the certificate information, including the private key, public certificate, and chain.
 
@@ -117,7 +118,7 @@ To submit a new PFX certificate, you require the following information:
 
 ![Screenshot of the form to submit a new PFX format domain certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-3.png "PFX Format Domain Certificate Submission Form")
 
-### Unknown domain certificate format { #ZIP-bundle }
+### Unknown domain certificate format {#ZIP-bundle}
 
 <div class="warning" markdown="1">
 
@@ -143,7 +144,7 @@ To submit a bundle, you require the following information:
 
 ![Screenshot of the form to submit an unknown format domain certificate in OutSystems Cloud](images/ssl-domain-cloud-lt-4.png "Unknown Format Domain Certificate Submission Form")
 
-### Certificate validation { #validate-certificate }
+### Certificate validation {#validate-certificate}
 
 To finish the wizard, click **Validate**. Our systems will check the certificate.
 
@@ -190,7 +191,7 @@ You can now assign the certificate to an environment, directly from the **Enviro
 
     Updating the hostname takes approximately 5 minutes.
 
-## Assigning a domain certificate to LifeTime { #lifetime-certificate }
+## Assigning a domain certificate to LifeTime {#lifetime-certificate}
 
 You can customize the domain of the LifeTime environment. However, it's only available with a support ticket because it has a direct impact on the user session.
 
@@ -204,7 +205,7 @@ Follow these steps:
 
 1. Make sure you [configure your DNS](#configure-dns)
 
-## Configure your DNS { #configure-dns }
+## Configure your DNS {#configure-dns}
 
 You'll need to configure your DNS to point the hostname that was chosen for an environment to it's default `outsystemsenterprise.com`. You may also do this before uploading the certificate but note that your apps will only use your domain with HTTPS after completing all the steps.
 

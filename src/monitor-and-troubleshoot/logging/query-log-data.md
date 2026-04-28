@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: logging, performance monitoring, system administration, database queries, oracle sql
 audience:
-  - mobile developers
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

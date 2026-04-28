@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1728&t=WkNS4cBkPZHvTban-1
 tags: application architecture, architecture canvas, layer classification, dependency rules
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
   - architecture dashboard

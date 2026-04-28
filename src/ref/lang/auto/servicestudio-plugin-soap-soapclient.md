@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: soap web services, security, authentication, web services configuration, soap protocol
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -8,9 +8,8 @@ figma:
 helpids: 30528
 tags: role management, code conversion, access control, user permissions, odc
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

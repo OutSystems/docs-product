@@ -7,10 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3890-240&t=sSDtb29zrg6QWMVS-1
 tags: enterprise application development, visual domain specific languages, it architecture
 audience:
-  - architects
-  - platform administrators
-  - tech leads
-  - full stack developers
+  - Architect
+  - Platform administrator
+  - Tech lead
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

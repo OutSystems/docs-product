@@ -7,7 +7,7 @@ platform-version: o11
 figma:
 tags: process design, workflow development, visual modeling, drag and drop interface, process automation
 audience:
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

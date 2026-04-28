@@ -8,10 +8,9 @@ platform-version: o11
 figma:
 tags: web services, soap protocol, security configuration, integration, application development
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - service studio
   - service center

@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, data types, widgets, entity modeling, web development
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

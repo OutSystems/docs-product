@@ -8,8 +8,8 @@ figma:
 helpids: 30539
 tags: bpt, workflow automation, conversion, outsystems 11, outsystems platform
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
   - conversion assessment tool

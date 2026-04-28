@@ -5,9 +5,9 @@ app_type: traditional web apps
 platform-version: o11
 tags: traditional to reactive, conversion, automated conversion, outsystems 11, web apps
 audience:
-  - frontend developers
-  - full stack developers
-  - tech leads
+  - Front-end developer
+  - Developer
+  - Tech lead
 outsystems-tools:
   - service studio
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=6099-302

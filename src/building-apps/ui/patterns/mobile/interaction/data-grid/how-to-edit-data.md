@@ -9,7 +9,7 @@ figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?type=design
 coverage-type:
   - apply
 audience:
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 ---

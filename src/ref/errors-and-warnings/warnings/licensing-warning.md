@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: licensing, outsystems platform, server management, renewal process, resource management
 audience:
-  - platform administrators
-  - tech leads
-  - infrastructure managers
-  - full stack developers
+  - Platform administrator
+  - Tech lead
+  - Developer
 outsystems-tools:
   - service center
 coverage-type:

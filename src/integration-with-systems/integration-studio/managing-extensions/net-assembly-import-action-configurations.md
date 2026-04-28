@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: integration, .net, configuration, limitations, supported elements
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - integration studio
 coverage-type:

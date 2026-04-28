@@ -7,8 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3653-5&mode=design&t=KKbqsgPPqdrPLkpd-0
 tags: firebase cloud messaging, notifications, cross-platform messaging, mobile app development, outsystems plugin
 audience:
-  - mobile developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
   - forge

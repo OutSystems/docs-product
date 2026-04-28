@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: element management, application development, outsystems platform, script management, property configuration
 audience:
-  - frontend developers
-  - full stack developers
-  - mobile developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

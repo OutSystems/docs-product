@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5593-486&t=dmWMuLk1wDbU6pmJ-1
 tags: mobile development, performance optimization, user experience, low-code, outsystems ui
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

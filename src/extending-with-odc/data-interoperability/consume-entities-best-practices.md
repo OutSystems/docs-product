@@ -9,9 +9,8 @@ topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 tags: entities,data interoperability
 outsystems-tools:
   - odc studio

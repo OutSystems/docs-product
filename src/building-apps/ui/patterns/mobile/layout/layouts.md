@@ -10,8 +10,8 @@ coverage-type:
   - understand
   - apply
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 topic:

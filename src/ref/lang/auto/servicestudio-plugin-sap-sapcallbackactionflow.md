@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: sap integration, callback customization, function calls, outsystems platform, outsystems sap
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

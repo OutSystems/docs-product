@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-2109&t=WkNS4cBkPZHvTban-1
 tags: microservices architecture, soa (service-oriented architecture), rest api, continuous deployment, scalability
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3953-240&t=vO3Lqcn06Tcis4dv-1
 tags: ci/cd, devops, scalable development, delivery agility, domain-driven design
 audience:
-  - full stack developers
-  - architects
-  - tech leads
+  - Developer
+  - Architect
+  - Tech lead
 outsystems-tools:
   - service studio
   - lifetime

@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: api documentation, case management, crud operations, outsystems platform, case configurations
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - case management framework

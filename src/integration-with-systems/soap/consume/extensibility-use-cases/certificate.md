@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A28&mode=design&t=8a1ub9syb4QKHbuk-1
 tags: authentication, soap web services, client certificates, outsystems service studio, security configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

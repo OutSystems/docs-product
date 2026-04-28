@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: database integration, data management, external database, entity management, outsystems integration
 audience:
-  - full stack developers
-  - backend developers
-  - architects
-  - platform administrators
+  - Developer
+  - Architect
+  - Platform administrator
 outsystems-tools:
   - integration studio
   - service studio

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: process management, workflow automation, event-driven processes, entity events
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

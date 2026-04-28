@@ -7,9 +7,8 @@ app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A391&mode=design&t=Cx8ecjAITJrQMvRn-1
 audience:
-  - frontend developers
-  - ui designers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

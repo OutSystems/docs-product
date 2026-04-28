@@ -7,8 +7,8 @@ app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4520%3A3225&mode=design&t=vStGeN187wwjAjiU-1
 audience:
-  - mobile developers
-  - frontend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, customer support, feedback submission, technical issues, platform troubleshooting
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

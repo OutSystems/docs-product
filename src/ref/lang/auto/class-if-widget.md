@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: widget implementation, conditional rendering, ui components, runtime evaluation, dynamic ui
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

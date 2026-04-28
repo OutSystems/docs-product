@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, application management, outsystems service center, shared configuration issues, runtime errors
 audience:
-  - platform administrators
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service center
 coverage-type:

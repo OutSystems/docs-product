@@ -7,11 +7,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:507
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - tech leads
-  - architects
+  - Platform administrator
+  - Developer
+  - Tech lead
+  - Architect
 outsystems-tools:
   - lifetime
   - service center

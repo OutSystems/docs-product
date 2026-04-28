@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Int
 summary: Explore how to manually add and configure actions in OutSystems 11 (O11) extensions for enhanced functionality.
 tags: extension development, integration studio, web services, extension properties, action configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

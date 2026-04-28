@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: database optimization, performance enhancement, scalability, automatic indexing, transactions management
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:35
 tags: concurrent transactions, entity record locking, process optimization, error handling, performance improvement
 audience:
-  - full stack developers
-  - backend developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
   - service center

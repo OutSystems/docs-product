@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: html customization, html elements, web development, interface design, app customization
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

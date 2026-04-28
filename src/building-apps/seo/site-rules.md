@@ -7,9 +7,9 @@ app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5911-76&p=f&t=yEuZ6nH6eZPjlRD7-0 
 audience:
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Front-end developer
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service center
 coverage-type:

@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: app conversion, application architecture, code refactoring, outsystems platform
 audience:
-  - architects
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Architect
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - conversion assessment tool

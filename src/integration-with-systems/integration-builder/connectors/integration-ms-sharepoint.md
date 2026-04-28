@@ -7,11 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6374
 tags: sharepoint online integration, integration builder, outsystems application development, https outbound requests, list view threshold
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - integration builder
 coverage-type:

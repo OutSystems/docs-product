@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: ui design, user experience, responsive design, grid system, technical troubleshooting
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

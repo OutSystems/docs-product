@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, rest api configuration, api development, data types, debugging
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

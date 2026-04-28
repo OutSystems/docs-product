@@ -7,11 +7,9 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 summary: Explore the extension life cycle in OutSystems 11 (O11) and third-party IDEs, detailing creation, coding, and publishing processes.
 tags: extension lifecycle, integration studio, database management systems (dbms), .net integration, code generation
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

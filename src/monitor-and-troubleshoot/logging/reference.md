@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: application monitoring, database views, platform logs, service studio, outsystems 11
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

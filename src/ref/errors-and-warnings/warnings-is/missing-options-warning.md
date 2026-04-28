@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: .net, software development kit, compilation error, 1-click publish, extension deployment
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

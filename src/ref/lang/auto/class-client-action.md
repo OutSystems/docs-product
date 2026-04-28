@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: client-side logic, exposed actions, session variables, entity/structure restrictions, action properties
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

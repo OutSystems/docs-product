@@ -7,11 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=3011-796&t=GvLiKHXITRsPv8hn-1
 tags: disaster recovery, high availability, infrastructure redundancy, system uptime, cloud deployments
 audience:
-  - platform administrators
-  - infrastructure managers
-  - tech leads
-  - full stack developers
-  - architects
+  - Platform administrator
+  - Tech lead
+  - Developer
+  - Architect
 outsystems-tools:
   - none
 coverage-type:

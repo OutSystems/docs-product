@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: popup implementation, ui components, user interaction design, web design, outsystems ui framework
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

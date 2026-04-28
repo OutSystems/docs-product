@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3954-252&t=Gt8bYIfSykukAq2d-1
 tags: security best practices, server-side security, client-side security, sensitive data handling, web storage security
 audience:
-  - frontend developers
-  - full stack developers
-  - mobile developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

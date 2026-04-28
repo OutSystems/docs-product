@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: integration testing, api testing, test automation, software reliability, software performance
 audience:
-  - backend developers
-  - full stack developers
-  - architects
-  - platform administrators
-  - test engineers
+  - Developer
+  - Architect
+  - Platform administrator
 outsystems-tools:
   - none
 coverage-type:

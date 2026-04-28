@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: screen template design, ui customization, image optimization, metadata configuration, outsystems development best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

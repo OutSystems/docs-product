@@ -8,11 +8,9 @@ platform-version: o11
 figma:
 tags: rest api, api security, http requests, web services, ssl/tls
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: extension development, .net ide, integration studio, application development, outsystems 11
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

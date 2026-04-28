@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: server-side logic, server actions, action properties, web development
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

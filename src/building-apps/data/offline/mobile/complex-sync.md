@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5619-258&t=GZoLVxUBtXFpMnnm-1
 tags: data synchronization, mobile app development, performance optimization, local storage, data modelling
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

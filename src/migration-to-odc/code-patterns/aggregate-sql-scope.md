@@ -7,10 +7,9 @@ app_type: traditional web apps, reactive web apps, mobile apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?m=auto&node-id=2849-240&t=Kul2SDydEJD6RIhT-1
 audience:
-  - architects
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Architect
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: resource management, extension customization, file naming conventions, deployment issues, reserved namespaces
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

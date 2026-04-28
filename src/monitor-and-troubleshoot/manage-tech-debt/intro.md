@@ -7,10 +7,10 @@ platform-version: o11
 figma:
 tags: technical debt management, code analysis, api integration, low-code platform, it leadership
 audience:
-  - architects
-  - full stack developers
-  - tech leads
-  - platform administrators
+  - Architect
+  - Developer
+  - Tech lead
+  - Platform administrator
 outsystems-tools:
   - ai mentor studio
   - architecture dashboard

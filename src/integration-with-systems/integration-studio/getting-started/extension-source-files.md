@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Int
 summary: Learn how OutSystems 11 (O11) automates the generation of extension source files for streamlined development in Integration Studio.
 tags: ide usage, reactive web apps, tutorials for beginners, .net development, extension customization
 audience:
-  - backend developers
-  - full stack developers
-  - frontend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

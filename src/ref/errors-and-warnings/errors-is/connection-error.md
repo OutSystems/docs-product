@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: connection issues, platform server, error handling, system administration, outsystems troubleshooting
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - platform server

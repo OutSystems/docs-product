@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=18-10&t=jlGay4xDI503Rj5x-1
 tags: caching patterns, performance optimization, database optimization, application architecture, external integrations
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

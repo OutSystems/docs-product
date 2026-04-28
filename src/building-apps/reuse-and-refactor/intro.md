@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: module reusability, modular design, application scalability, logic encapsulation, code integration
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

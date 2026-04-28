@@ -7,8 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1305:613
 audience:
-  - architects
-  - tech leads
+  - Architect
+  - Tech lead
 outsystems-tools:
   - ai mentor studio
   - architecture dashboard

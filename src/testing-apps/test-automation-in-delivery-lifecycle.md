@@ -7,7 +7,7 @@ platform-version: o11
 figma:
 tags: test automation, devops, agile methodology, application lifecycle management, quality assurance
 audience:
-  - full stack developers
+  - Developer
 outsystems-tools:
   - none
 coverage-type:

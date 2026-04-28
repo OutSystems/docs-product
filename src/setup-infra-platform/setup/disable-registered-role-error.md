@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2635%3A724&mode=design&t=PPL7U8XyNSIpuC5w-1
 tags: error handling, session management, security best practices, client-server interaction, debugging
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

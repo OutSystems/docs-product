@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1739&t=WkNS4cBkPZHvTban-1
 tags: enterprise architecture, ui design, theme customization, css, layout design
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
-  - architects
+  - Front-end developer
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

@@ -9,8 +9,8 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 coverage-type:
   - apply
 audience:
-  - mobile developers
-  - frontend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - none
 ---

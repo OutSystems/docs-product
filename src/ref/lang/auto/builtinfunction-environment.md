@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems 11, server-side logic, database functions, localization, http headers
 audience:
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

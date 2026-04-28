@@ -9,9 +9,8 @@ figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?
 coverage-type:
   - apply
 audience:
-  - platform administrators
-  - infrastructure managers
-  - architects
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - none
 isautopublish: true

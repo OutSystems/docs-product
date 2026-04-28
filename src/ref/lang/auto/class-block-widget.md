@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: low-code development, user interface components, widget implementation, application development
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

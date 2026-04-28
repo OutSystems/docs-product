@@ -8,11 +8,9 @@ platform-version: o11
 figma:
 tags: rest apis, parameter configuration, http headers, api documentation, traditional web apps
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

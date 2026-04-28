@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=306
 summary: Explore how OutSystems 11 (O11) enhances attribute management in extensions through its Attributes Editor.
 tags: extension development, attribute management, ui design, service studio ide, entity management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

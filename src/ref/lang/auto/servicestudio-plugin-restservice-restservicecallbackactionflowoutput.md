@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: rest api, output parameters, api development, rest callbacks, api documentation
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

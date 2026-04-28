@@ -8,9 +8,9 @@ figma:
 helpids: 30537
 tags: ide usage, reactive web apps, app conversion, integration, extensions
 audience:
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - integration studio
   - service studio

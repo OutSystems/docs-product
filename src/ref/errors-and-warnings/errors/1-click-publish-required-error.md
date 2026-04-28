@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error resolution, database changes, 1-click publish, outsystems development, personal environment
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

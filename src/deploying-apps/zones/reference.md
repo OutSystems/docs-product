@@ -7,11 +7,10 @@ platform-version: o11
 figma:
 tags: deployment zones, on-premises, application management, environment configuration, internal communications
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - frontend developers
-  - architects
+  - Platform administrator
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - none
 coverage-type:

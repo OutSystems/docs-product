@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: outsystems development, screen configuration, user interface customization, http security
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

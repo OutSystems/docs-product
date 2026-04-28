@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: entity management, data modeling, database integration, entity refresh, integration studio
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

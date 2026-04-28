@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-150&p=f&t=YWpNVSB3J2vcO8FT-0
 tags: network configuration, service center, ip configuration, security, deployment
 audience:
-  - frontend developers
-  - full stack developers
-  - platform administrators
-  - infrastructure managers
+  - Front-end developer
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service center
 coverage-type:

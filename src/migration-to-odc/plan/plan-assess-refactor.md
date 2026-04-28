@@ -7,11 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2168-1376
 tags: app conversion, odc architecture, platform updates, conversion process, architecture assessment
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - architects
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Architect
+  - Platform administrator
 outsystems-tools:
   - conversion assessment tool
 coverage-type:

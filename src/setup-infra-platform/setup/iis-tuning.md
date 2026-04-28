@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: iis configuration, performance optimization, thread management, system administration, on-premises deployment
 audience:
-  - platform administrators
-  - infrastructure managers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - none
 coverage-type:

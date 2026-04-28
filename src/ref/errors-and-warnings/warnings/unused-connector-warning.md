@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: web development, outsystems platform, error handling, screen navigation, ui development
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

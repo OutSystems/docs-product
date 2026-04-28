@@ -7,10 +7,8 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-exte
 summary: OutSystems 11 (O11) enables complex data type definitions through Structures in Integration Studio for enhanced data handling in applications.
 tags: ide usage, reactive web apps, tutorials for beginners, data integration, extension structures
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

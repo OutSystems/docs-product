@@ -7,10 +7,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=352:1236
 audience:
-  - platform administrators
-  - full stack developers
-  - infrastructure managers
-  - architects
+  - Platform administrator
+  - Developer
+  - Architect
 outsystems-tools:
   - lifetime
 coverage-type:

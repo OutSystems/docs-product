@@ -10,8 +10,8 @@ coverage-type:
   - unblock
 tags: conversion issues, module troubleshooting, error resolution, outsystems 11, service studio
 audience:
-  - platform administrators
-  - tech leads
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - service studio
   - service center

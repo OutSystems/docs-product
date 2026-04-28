@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: .net, sql server, connection strings, configuration, system.data.sqlclient
 audience:
-  - platform administrators
-  - backend developers
-  - full stack developers
+  - Platform administrator
+  - Developer
 coverage-type:
   - remember
 outsystems-tools:

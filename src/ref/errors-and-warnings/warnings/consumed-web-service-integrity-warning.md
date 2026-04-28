@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: soap web services, wsdl, api integration, service error handling, web service refresh
 audience:
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

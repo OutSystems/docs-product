@@ -7,8 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A24&mode=design&t=8a1ub9syb4QKHbuk-1
 tags: soap web services, http headers, outsystems integration, c# programming, wcf implementation
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - integration studio
 coverage-type:

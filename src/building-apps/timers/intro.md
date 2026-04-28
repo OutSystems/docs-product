@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: asynchronous tasks, batch processing, scheduler service, exception handling, application configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

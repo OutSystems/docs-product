@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database transactions, error handling, data consistency, transaction management, isolation levels
 audience:
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

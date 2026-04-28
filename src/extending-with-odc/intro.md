@@ -10,8 +10,8 @@ topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
-  - architects
-  - tech leads
+  - Architect
+  - Tech lead
 tags: cloud-native, ai-powered capabilities, interoperability, agent workflows, auto-scaling
 outsystems-tools:
   - none

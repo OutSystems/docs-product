@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: continuous deployment, application governance, outsystems platform, deployment automation, api integration
 audience:
-  - full stack developers
-  - platform administrators
-  - architects
-  - infrastructure managers
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - lifetime
   - service center

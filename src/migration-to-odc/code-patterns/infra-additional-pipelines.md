@@ -9,9 +9,9 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - architects
-  - tech leads
-  - platform administrators
+  - Architect
+  - Tech lead
+  - Platform administrator
 tags: infrastructure conversion, additional pipelines, odc conversion, outsystems 11, platform setup
 outsystems-tools:
   - none

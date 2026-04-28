@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=2755%3A24246&mode=design&t=GF97AOUqsRf9tsAh-1
 tags: ide usage, reactive web apps, tutorials for beginners, gps location, mobile app development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - forge

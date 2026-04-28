@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: api usage, outsystems development, application deployment, version control, continuous integration
 audience:
-  - full stack developers
-  - platform administrators
-  - backend developers
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - lifetime
 coverage-type:

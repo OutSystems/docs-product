@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: web service configuration, soap web service, service center, environment configuration, endpoint customization
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
-  - infrastructure managers
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

@@ -10,9 +10,9 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - full stack developers
-  - tech leads
-  - architects
+  - Developer
+  - Tech lead
+  - Architect
 tags: outsystems 11,conversion,odc assets,entities and relationships
 outsystems-tools:
   - service studio

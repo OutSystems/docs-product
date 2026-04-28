@@ -7,7 +7,7 @@ app_type: mobile apps
 platform-version: o11
 figma:
 audience:
-  - mobile developers
+  - Developer
 outsystems-tools:
   - none
 coverage-type:

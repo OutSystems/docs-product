@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, extension management, resource management, file system integration, outsystems best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

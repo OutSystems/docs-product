@@ -8,8 +8,8 @@ platform-version: o11
 figma:
 tags: outsystems widgets, traditional web development, entity management, ui components, form layout
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: ui patterns, error handling, user experience, data submission, validations
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

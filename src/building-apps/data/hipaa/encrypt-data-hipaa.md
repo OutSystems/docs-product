@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A524&mode=design&t=GF97AOUqsRf9tsAh-1
 tags: data encryption, cloud security, hipaa compliance, outsystems cloud, entity management
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

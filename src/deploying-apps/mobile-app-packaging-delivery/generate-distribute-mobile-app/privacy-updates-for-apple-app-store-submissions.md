@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3586%3A281&mode=design&t=nAeh9FAOKTk5agGA-1
 tags: api compliance, apple app store integration, privacy compliance, app deployment, xml configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

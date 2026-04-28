@@ -7,8 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=306
 summary: Explore the detailed properties of entity attributes in OutSystems 11 (O11), including mandatory and optional settings, data types, and default values.
 tags: entity management, database configuration, ide usage, reactive web apps, entity attributes
 audience:
-  - full stack developers
-  - frontend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

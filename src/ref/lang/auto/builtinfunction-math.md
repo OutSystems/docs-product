@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: math functions, server-side logic, client-side logic, database functions, data manipulation
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

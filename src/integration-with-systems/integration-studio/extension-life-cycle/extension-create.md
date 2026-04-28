@@ -7,10 +7,9 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integ
 summary: OutSystems 11 (O11) enables the creation of extensions through Integration Studio, allowing integration with third-party technologies.
 tags: ide usage, reactive web apps, tutorials for beginners, extension development, third-party integration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - integration studio

@@ -8,8 +8,8 @@ platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A323&mode=design&t=Ix2yojgoXorQvo4C-1
 tags: data management, entity manipulation, user interface components, web development
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

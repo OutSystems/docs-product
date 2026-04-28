@@ -8,8 +8,8 @@ platform-version: o11
 figma:
 tags: web development, input validation, user interface design, form design, outsystems platform
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

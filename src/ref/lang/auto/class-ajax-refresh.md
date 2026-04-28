@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: ajax, user interface, screen optimization, dynamic content loading, client-side rendering
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: automated testing, ui testing, test automation tools, load testing, testing best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - none
 coverage-type:

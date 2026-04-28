@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-100&p=f&t=YWpNVSB3J2vcO8FT-0
 tags: cache invalidation, service configuration, rabbitmq, security, deployment & operations
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - architects
+  - Platform administrator
+  - Developer
+  - Architect
 outsystems-tools:
   - service center
 coverage-type:

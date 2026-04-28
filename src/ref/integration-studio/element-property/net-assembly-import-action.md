@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=306
 summary: OutSystems 11 (O11) facilitates importing .NET assembly items as actions with specific properties and parameters.
 tags: ide usage, reactive web apps, .net integration, outsystems development, import actions
 audience:
-  - full stack developers
-  - backend developers
-  - frontend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

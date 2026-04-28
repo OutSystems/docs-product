@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3942-809&t=yFA2dg85pciiAiog-1
 tags: ci/cd, application lifecycle management, agile, devops, automation
 audience:
-  - full stack developers
-  - architects
-  - platform administrators
+  - Developer
+  - Architect
+  - Platform administrator
 outsystems-tools:
   - none
 coverage-type:

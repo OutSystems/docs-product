@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: file management, version control, backup procedures, ide usage, error handling
 audience:
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Front-end developer
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

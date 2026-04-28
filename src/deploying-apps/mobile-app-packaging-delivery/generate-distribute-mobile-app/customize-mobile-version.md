@@ -1,7 +1,7 @@
 ---
 guid: 742d427f-6394-4b03-bcaf-3c7105a9657a
 locale: en-us
-summary: 
+summary: Customize mobile app version code in OutSystems 11 (O11) using Service Center to align with existing store versions and ensure valid mobile app updates.
 figma: https://www.figma.com/design/RizSdkiVSDYFb97Vqvc7oj/Delivering-Mobile-Apps?node-id=5015-164
 coverage-type:
   - apply
@@ -12,15 +12,14 @@ topic:
   - customize-mobile-apps
 app_type: mobile apps
 platform-version: o11
-audience:
-  - tech leads
-  - mobile developers
-tags: 
+audience: 
+  - Tech lead
+  - Developer
+tags: mobile app version code, app store submission, migrate mobile apps, outsystems service center, app distribution settings
 outsystems-tools:
   - service center
-helpids: 
+helpids:
 ---
-
 # Customizing the mobile app version code
 
 The need to manually change the Version Code is rare but crucial in some specific situations. The most common is migrating an existing application from another technology to OutSystems.

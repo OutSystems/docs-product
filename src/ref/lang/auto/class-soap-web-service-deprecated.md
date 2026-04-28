@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: deprecated features, soap web services, web service integration, service migration, upgrades
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

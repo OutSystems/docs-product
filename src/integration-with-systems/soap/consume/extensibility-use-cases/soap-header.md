@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A26&mode=design&t=8a1ub9syb4QKHbuk-1
 tags: soap, web services, .net programming, wcf, add soap header
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

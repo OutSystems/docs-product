@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: web development, outsystems development, ui components, web blocks
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

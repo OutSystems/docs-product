@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: ai components, machine learning, low-code development, outsystems forge, ai in mobile apps
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - forge
   - service studio

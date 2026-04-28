@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: ui design patterns, responsive design, user interface, app development, outsystems platform
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: api integration, deployment automation, continuous delivery, software lifecycle management, outsystems api
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - lifetime
 coverage-type:

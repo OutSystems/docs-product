@@ -11,9 +11,9 @@ topic:
 app_type: traditional web apps,reactive web apps,mobile apps
 platform-version: o11
 audience:
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 tags: application performance management,real-time monitoring,troubleshooting,integration with third-party tools,analytics dashboards
 outsystems-tools:
   - service studio

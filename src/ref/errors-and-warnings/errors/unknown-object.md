@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: ide usage, reactive web apps, resource management, deployment issues, error handling
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

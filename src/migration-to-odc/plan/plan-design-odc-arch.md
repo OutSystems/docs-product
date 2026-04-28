@@ -10,8 +10,8 @@ topic:
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 tags: app conversion, architecture, o11 conversion, app conversion kit, business apps
 outsystems-tools:
   - conversion assessement tool

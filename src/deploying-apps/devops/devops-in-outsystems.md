@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3942-319&t=yFA2dg85pciiAiog-1
 tags: devops, alm integration, software development, legacy modernization, continuous integration/continuous deployment
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - none
 coverage-type:

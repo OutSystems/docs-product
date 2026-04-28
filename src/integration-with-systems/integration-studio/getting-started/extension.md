@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: ide usage, reactive web apps, tutorials for beginners, outsystems extensions, external system integration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
   - service studio

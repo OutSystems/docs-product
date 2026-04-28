@@ -10,9 +10,9 @@ topic:
 app_type: mobile apps, reactive web apps
 platform-version: o11
 audience:
-  - architects
-  - platform administrators
-  - tech leads
+  - Architect
+  - Platform administrator
+  - Tech lead
 tags: app conversion, conversion process, conversion plans
 outsystems-tools:
   - conversion assessment tool

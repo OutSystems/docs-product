@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: soap web services, wsdl, soap 1.1, soap 1.2, web services integration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

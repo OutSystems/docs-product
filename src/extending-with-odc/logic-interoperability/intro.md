@@ -9,10 +9,9 @@ topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
-  - architects
-  - tech leads
-  - infrastructure managers
-  - full stack developers
+  - Architect
+  - Tech lead
+  - Developer
 tags: logic interoperability, REST, REST API, REST expose, REST consume
 outsystems-tools:
   - service studio

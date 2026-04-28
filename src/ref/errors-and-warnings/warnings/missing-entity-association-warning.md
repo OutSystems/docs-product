@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: module management, entity references, permissions, environment management, troubleshooting
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

@@ -7,8 +7,7 @@ platform-version: o11
 figma:
 tags: process automation, error handling, database operations, external system integration, process monitoring
 audience:
-  - full stack developers
-  - backend developers
+  - Developer
 outsystems-tools:
   - service studio
   - service center

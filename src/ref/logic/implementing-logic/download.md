@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: client-side processing, file handling, performance considerations, browser compatibility, memory management
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

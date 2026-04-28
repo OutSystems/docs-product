@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: extension development, system integration, development best practices, extension management, outsystems extensions
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: front-end development, css best practices, scalability, style guide, architecture patterns
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: action parameters, data types, input parameters, entity definitions, extension structures
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

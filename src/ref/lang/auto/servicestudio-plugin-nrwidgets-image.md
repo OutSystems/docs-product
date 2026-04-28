@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: image handling, database storage, web development, ui components, data display
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

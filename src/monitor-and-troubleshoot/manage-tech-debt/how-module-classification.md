@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:728
 tags: module reclassification, technical debt, architecture dashboard, permissions, outsystems
 audience:
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - ai mentor studio
   - architecture dashboard

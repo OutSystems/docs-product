@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, debugging, user interface development, data validation, outsystems development
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

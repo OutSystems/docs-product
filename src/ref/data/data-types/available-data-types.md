@@ -7,7 +7,7 @@ platform-version: o11
 figma:
 tags: data types, default values, data constraints, conversion functions, outsystems 11
 audience:
-  - full stack developers
+  - Developer
 outsystems-tools:
   - none
 ---

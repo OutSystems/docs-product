@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: database configuration, sql server, azure sql, application deployment, database management
 audience:
-  - full stack developers
-  - backend developers
-  - platform administrators
-  - tech leads
+  - Developer
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - service studio
 coverage-type:

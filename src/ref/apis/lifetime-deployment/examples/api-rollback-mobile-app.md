@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: api usage, rollback strategy, deployment management, version control, environment configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - lifetime
 coverage-type:

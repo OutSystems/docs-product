@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2041-594
 tags: app conversion, code assessment, compatibility, deployment environments, application architecture
 audience:
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - conversion assessment tool
 coverage-type:

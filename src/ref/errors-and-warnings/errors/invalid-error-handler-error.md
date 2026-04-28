@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, security best practices, application development, access control, user experience
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

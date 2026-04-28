@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:23
 tags: permission management, security policies, role management, it governance, access control
 audience:
-  - platform administrators
-  - full stack developers
-  - architects
+  - Platform administrator
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
   - lifetime

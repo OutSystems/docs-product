@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems, resource management, extension management, development best practices, application deployment
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

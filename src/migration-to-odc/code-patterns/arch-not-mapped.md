@@ -8,9 +8,9 @@ figma:
 helpids: 30535
 tags: application upgrade, dependency mapping, odc conversion, architecture mapping, outsystems platform
 audience:
-  - full stack developers
-  - architects
-  - platform administrators
+  - Developer
+  - Architect
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

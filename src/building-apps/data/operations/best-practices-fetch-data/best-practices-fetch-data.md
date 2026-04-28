@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database optimization, performance tuning, best practices, application efficiency, sql queries
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

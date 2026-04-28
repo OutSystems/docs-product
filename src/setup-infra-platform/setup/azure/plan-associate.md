@@ -7,11 +7,10 @@ platform-version: o11
 figma:
 tags: azure integration, azure marketplace, arm templates, cloud computing, installation configuration
 audience:
-  - platform administrators
-  - full stack developers
-  - tech leads
-  - infrastructure managers
-  - architects
+  - Platform administrator
+  - Developer
+  - Tech lead
+  - Architect
 outsystems-tools:
   - none
 coverage-type:

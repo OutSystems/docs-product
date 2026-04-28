@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: soap web services, external authentication, plugin development, user authentication, deployment configuration
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service studio
   - service center

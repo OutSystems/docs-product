@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=307
 summary: Explore the detailed properties of structure attributes in OutSystems 11 (O11), including mandatory settings, data types, and default values.
 tags: data modeling, entity management, outsystems development, data types, extension management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

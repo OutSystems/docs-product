@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: outsystems ui, web development, ux design, widget configuration, front-end engineering
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

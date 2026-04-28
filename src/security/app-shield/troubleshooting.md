@@ -9,7 +9,7 @@ figma:
 coverage-type:
   - unblock
 audience:
-  - mobile developers
+  - Developer
 outsystems-tools:
   - none
 isautopublish: true

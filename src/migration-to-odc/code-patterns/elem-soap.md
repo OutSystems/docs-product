@@ -8,11 +8,9 @@ figma:
 helpids: 30540
 tags: api integration, rest services, soap conversion, integration platforms, outsystems developer cloud
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
   - integration builder

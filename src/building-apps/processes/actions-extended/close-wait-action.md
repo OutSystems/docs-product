@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems 11, workflow processes, process automation, action flow control, wait activity management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

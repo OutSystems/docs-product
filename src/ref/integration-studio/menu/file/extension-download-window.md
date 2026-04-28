@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=307
 summary: OutSystems 11 (O11) features a Download from Server window in Integration Studio, facilitating the download of the latest extension versions.
 tags: ide usage, reactive web apps, tutorials for beginners, integration studio, extension management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

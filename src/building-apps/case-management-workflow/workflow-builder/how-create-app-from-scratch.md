@@ -7,9 +7,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:917
 audience:
-  - business analysts
-  - frontend developers
-  - full stack developers
+  - Business analyst
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - workflow builder
 coverage-type:

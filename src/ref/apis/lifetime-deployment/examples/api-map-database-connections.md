@@ -9,9 +9,8 @@ coverage-type:
   - remember
 tags: api usage, database mapping, deployment status, lifetime api, outsystems 11
 audience:
-  - platform administrators
-  - backend developers
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - lifetime
 ---

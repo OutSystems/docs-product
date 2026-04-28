@@ -8,8 +8,7 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 helpids: 30554
 tags: sql query conversion, database compatibility, postgresql, aurora postgresql, cloud conversion
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - none
 isautopublish: true

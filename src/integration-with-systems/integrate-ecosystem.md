@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3892-240&t=ab9wvmXDcL4k94Yv-1
 tags: enterprise integration, database connectivity, community contributions, external systems integration
 audience:
-  - full stack developers
-  - backend developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - forge
 coverage-type:

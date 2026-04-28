@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: mobile app development, cloud services, amazon cloudfront, network security, api management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
-  - infrastructure managers
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - none
 coverage-type:

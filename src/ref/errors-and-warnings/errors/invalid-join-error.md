@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, database operations, entity relationships, data modeling, troubleshooting
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

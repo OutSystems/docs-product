@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems, extension lifecycle, database management, ide usage, extension configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

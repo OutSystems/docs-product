@@ -9,9 +9,8 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - architects
-  - full stack developers
-  - mobile developers
+  - Architect
+  - Developer
 tags: Forge,forge,forge component,outsystems forge
 outsystems-tools:
   - forge

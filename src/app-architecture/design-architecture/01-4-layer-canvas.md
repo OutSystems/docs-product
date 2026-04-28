@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-489&t=WkNS4cBkPZHvTban-1
 tags: soa design, architecture canvas, reusable services, module dependency, cost-effective architecture
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
   - architecture canvas

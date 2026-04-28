@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=255%3A60&mode=design&t=PPL7U8XyNSIpuC5w-1
 tags: cloud infrastructure, self-managed infrastructure, application deployment, application management, outsystems components
 audience:
-  - full stack developers
-  - platform administrators
-  - infrastructure managers
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - platform server

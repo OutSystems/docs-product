@@ -8,10 +8,8 @@ platform-version: o11
 figma:
 tags: ui component configuration, form design, input validation, user interface, data binding
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

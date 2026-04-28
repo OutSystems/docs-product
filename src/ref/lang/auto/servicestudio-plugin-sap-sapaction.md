@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: sap integration, data retrieval, enterprise systems, technical documentation, software development
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

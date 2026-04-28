@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: ui design, traditional web apps, pattern libraries, user interface guidelines, design systems
 audience:
-  - ui designers
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - none
 coverage-type:

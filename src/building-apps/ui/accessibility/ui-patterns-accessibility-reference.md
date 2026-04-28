@@ -7,8 +7,7 @@ app_type: reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:35
 audience:
-  - frontend developers
-  - ui designers
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

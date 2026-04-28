@@ -8,8 +8,8 @@ platform-version: o11
 figma:
 tags: web development, outsystems, application development, web blocks, traditional web apps
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

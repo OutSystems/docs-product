@@ -9,9 +9,9 @@ topic:
 app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 audience: 
-  - frontend developers
-  - full stack developers
-  - tech leads
+  - Front-end developer
+  - Developer
+  - Tech lead
 tags: reactive web apps, module conversion, conversion guide, outsystems 11, traditional web apps
 outsystems-tools: 
   - service studio

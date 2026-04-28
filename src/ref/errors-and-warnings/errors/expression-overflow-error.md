@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, data types, application development, debugging, best practices
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

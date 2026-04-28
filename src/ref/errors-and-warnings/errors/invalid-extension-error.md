@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error resolution, extension management, parameter configuration, outsystems development, service studio integration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
   - service studio

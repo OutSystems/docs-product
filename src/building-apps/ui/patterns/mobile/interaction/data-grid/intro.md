@@ -9,8 +9,8 @@ figma:
 coverage-type:
   - understand
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - forge
 ---

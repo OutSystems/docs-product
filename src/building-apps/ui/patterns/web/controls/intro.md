@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: ide usage, reactive web apps, traditional web apps, mobile apps, controls documentation
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - none
 coverage-type:

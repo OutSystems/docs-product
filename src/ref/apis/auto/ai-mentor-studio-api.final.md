@@ -7,10 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1549:2853
 audience:
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - ai mentor studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, outsystems development, integration issues, outsystems platform, .net integration
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

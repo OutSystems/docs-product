@@ -10,9 +10,8 @@ coverage-type:
   - remember
 tags: sap connections, dynamic login, input parameter, service studio, data type
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 ---

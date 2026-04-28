@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: troubleshooting, salesforce integration, connectivity issues, permission issues, outsystems 11
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - integration builder
 coverage-type:

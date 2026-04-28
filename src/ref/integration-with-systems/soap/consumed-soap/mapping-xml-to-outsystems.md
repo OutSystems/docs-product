@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 summary: Learn how OutSystems 11 (O11) maps XML Data Types to OutSystems Data Types for SOAP Web Services integration.
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

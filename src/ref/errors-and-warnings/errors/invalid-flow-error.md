@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:4
 summary: OutSystems 11 (O11) troubleshooting guide for resolving invalid flow errors by ensuring proper connector configurations in action flows.
 tags: error handling, debugging, application development, workflow design, connector configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

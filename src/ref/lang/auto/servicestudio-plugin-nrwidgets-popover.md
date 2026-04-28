@@ -8,9 +8,8 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3141-245&t=a3mwmA7f7peqqrKe-1
 tags: ide usage, reactive web apps, tutorials for beginners, ui component usage, outsystems ui framework
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -8,10 +8,8 @@ platform-version: o11
 figma:
 tags: ui design, security features, http requests, integrated authentication, user interface customization
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

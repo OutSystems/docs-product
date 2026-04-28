@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: version control, publishing workflows, debugging, team collaboration, development best practices
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

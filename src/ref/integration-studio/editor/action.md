@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=306
 summary: Explore the features of the Action Editor in OutSystems 11 (O11) for editing action properties and managing extensions.
 tags: ide usage, reactive web apps, extensions management, action editing, user interface customization
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

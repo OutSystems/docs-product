@@ -7,11 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2066%3A3453&mode=design&t=PPL7U8XyNSIpuC5w-1
 tags: cdn integration, performance optimization, infrastructure management, content delivery, app deployment
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
-  - infrastructure managers
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - none
 coverage-type:

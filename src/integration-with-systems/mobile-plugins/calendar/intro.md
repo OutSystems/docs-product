@@ -6,9 +6,8 @@ guid: 1b5a1418-e474-41d8-a233-4f0a80130aa7
 app_type: mobile apps
 figma: 
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 platform-version: o11
 coverage-type:
   - none

@@ -10,9 +10,8 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - frontend developers
-  - full stack developers
-  - mobile developers
+  - Front-end developer
+  - Developer
 tags: cloud-native applications,system entities,api development,data integration,platform version
 outsystems-tools:
   - service studio

@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: performance optimization, database indexing, database maintenance, query optimization, server configuration
 audience:
-  - full stack developers
-  - architects
-  - platform administrators
+  - Developer
+  - Architect
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3492-399&mode=design&t=POXL6zLzKO5sOwUF-0
 tags: security, compliance, pci dss, endpoint configuration, cloud security
 audience:
-  - platform administrators
-  - full stack developers
-  - infrastructure managers
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - lifetime
 coverage-type:

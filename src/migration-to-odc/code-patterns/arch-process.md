@@ -8,8 +8,8 @@ figma:
 helpids: 30526
 tags: process automation, bpt, process conversion, rest apis, outsystems upgrades
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

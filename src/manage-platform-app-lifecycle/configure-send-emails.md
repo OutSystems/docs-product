@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=418-80&p=f&t=8K3W2DzRJD9SmGT6-0
 tags: email configuration, smtp, environmental configuration, email testing, service center
 audience:
-  - platform administrators
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service center
 coverage-type:

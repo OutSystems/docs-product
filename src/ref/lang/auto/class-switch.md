@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: action flows, conditional logic, workflow design, visual programming, outsystems development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

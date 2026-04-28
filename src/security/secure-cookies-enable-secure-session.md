@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4260:366
 tags: security, session management, cookies, https, penetration testing
 audience:
-  - platform administrators
-  - full stack developers
-  - frontend developers
-  - backend developers
+  - Platform administrator
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - lifetime

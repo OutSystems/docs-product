@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=3010-787&t=GvLiKHXITRsPv8hn-1
 tags: clustering, failover, high availability, infrastructure management, scaling
 audience:
-  - platform administrators
-  - infrastructure managers
-  - full stack developers
-  - architects
+  - Platform administrator
+  - Developer
+  - Architect
 outsystems-tools:
   - platform server
   - service center

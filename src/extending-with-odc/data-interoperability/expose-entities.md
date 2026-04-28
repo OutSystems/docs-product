@@ -10,8 +10,8 @@ topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
-  - platform administrators
-  - tech leads
+  - Platform administrator
+  - Tech lead
 tags: entities, data interoperability
 outsystems-tools:
   - lifetime

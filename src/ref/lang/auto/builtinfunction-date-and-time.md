@@ -9,7 +9,7 @@ coverage-type:
   - remember
 tags: date manipulation, time manipulation, server-side functions, client-side functions, outsystems 11
 audience:
-  - full stack developers
+  - Developer
 outsystems-tools:
   - platform server
 ---

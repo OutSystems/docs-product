@@ -7,8 +7,7 @@ platform-version: o11
 figma:
 tags: soap web services, outsystems platform, static entities, data modeling, web service integration
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

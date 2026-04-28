@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=309
 summary: OutSystems 11 (O11) features a Submit Feedback operation in the Help menu, enabling users to provide comments or suggestions directly to OutSystems.
 tags: user feedback, integration studio, problem reporting, technical support, online help
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

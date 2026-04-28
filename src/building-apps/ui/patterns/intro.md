@@ -7,10 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4832%3A1884&mode=design&t=u4ANW5BJS7Flsdmg-1
 tags: ui design, css customization, ui framework, ui patterns, web development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

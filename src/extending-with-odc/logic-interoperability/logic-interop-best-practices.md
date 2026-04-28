@@ -9,9 +9,8 @@ topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
-  - frontend developers
-  - full stack developers
-  - mobile developers
+  - Front-end developer
+  - Developer
 tags: app logic,business logic,REST,application interoperability
 outsystems-tools:
   - service studio

@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: database configuration, compatibility issues, platform configuration, sql query optimization, error resolution
 audience:
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

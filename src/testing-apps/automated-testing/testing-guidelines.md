@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/9aIL4vSsuMMBfHMQDs8PLm/OutSystems%20Testing%20Guidelines?node-id=147:324
 tags: automated testing, continuous integration, deployment planning, application lifecycle management, integrity validation
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - lifetime
@@ -133,7 +132,7 @@ So, how do you decide which tests to automate? Well, we like the approach Angie 
 
 Test automation greatly reduces regression testing on increasingly complex or mission-critical systems. It is also a critical part of any continuous delivery approach. When choosing which tests to automate, it’s highly advisable to adopt the [Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) approach, which states that test automation effort should be distributed according to a pyramid shape, with component tests on the bottom layer and moving all the way up to E2E tests. The reason for this is that component tests are easy to write and maintain, as well as very fast to run, whereas E2E tests are typically unstable, hard to maintain, and very time consuming to execute.
 
-![Diagram of the Testing Pyramid strategy showing the distribution of component, integration, and end-to-end tests in a pyramid shape.](images/guidelines-testing-pyramid-diag.png "Testing Pyramid Strategy Diagram")
+![Testing Pyramid diagram with Component tests at the base, Integration tests in the middle, and E2E tests at the top, plus arrows indicating decreasing test granularity and test speed and guidance to climb the pyramid only as necessary.](images/guidelines-testing-pyramid-diag.png "Testing Pyramid distribution of automated tests")
 
 A key concept for implementing the Testing Pyramid is to write testable applications. In OutSystems, this means adopting the [Architecture Canvas architecture principles](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) and distributing functionality into small, testable pieces. For instance, all business entities reside in core layer modules and are wrapped by public server actions that validate data correctness, dependencies, and calculations. No business logic should be in Screen actions because these are not testable with component tests.
 

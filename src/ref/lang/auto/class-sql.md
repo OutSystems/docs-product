@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: database interaction, sql query, data management, application development, platform configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

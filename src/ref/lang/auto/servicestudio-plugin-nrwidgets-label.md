@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: ui design, user interface components, accessibility, label widget, web development
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -9,11 +9,9 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - backend developers
-  - frontend developers
-  - full stack developers
-  - mobile developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 tags: outsystems 11, data migration, user provider, odc assets, module configuration
 outsystems-tools:
   - conversion assessment tool

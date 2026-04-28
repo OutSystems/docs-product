@@ -10,7 +10,7 @@ coverage-type:
   - remember
 tags: label widget, traditional web apps, usability, accessibility, widget properties
 audience:
-  - frontend developers
+  - Front-end developer
 outsystems-tools:
   - none
 ---

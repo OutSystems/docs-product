@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:3
 summary: Explore the Header Row Widget in OutSystems 11, which automatically integrates with the Table Records Widget for Traditional Web Apps.
 tags: widget customization, ui components, table records, web development, web design
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

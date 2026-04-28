@@ -7,11 +7,9 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-exte
 summary: OutSystems 11 (O11) Integration Builder structures integrations into library and service modules for CRUD operations and external system interactions.
 tags: integration builder, crud operations, external systems integration, module configuration, authentication management
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - integration builder
 coverage-type:

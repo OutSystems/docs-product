@@ -9,7 +9,7 @@ figma:
 coverage-type:
   - apply
 audience:
-  - platform administrators
+  - Platform administrator
 outsystems-tools:
   - service center
 ---

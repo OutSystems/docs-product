@@ -7,8 +7,7 @@ platform-version: o11
 figma:
 tags: error handling, extension development, outsystems development, system integration, software troubleshooting
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - integration studio
 coverage-type:

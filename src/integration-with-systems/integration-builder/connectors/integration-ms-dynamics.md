@@ -7,11 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6371
 tags: microsoft dynamics 365, data management, application development, https, microsoft powerapps
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
-  - platform administrators
-  - architects
+  - Developer
+  - Front-end developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - integration builder
   - service studio

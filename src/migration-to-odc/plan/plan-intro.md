@@ -7,10 +7,10 @@ platform-version: o11
 figma:
 tags: app conversion, o11 to odc conversion, application portfolio management, conversion strategies, conversion planning
 audience:
-  - full stack developers
-  - architects
-  - tech leads
-  - platform administrators
+  - Developer
+  - Architect
+  - Tech lead
+  - Platform administrator
 outsystems-tools:
   - service studio
   - app conversion kit

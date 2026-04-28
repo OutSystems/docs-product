@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: application customization, product architecture, design patterns, upgrade strategies, user experience customization
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

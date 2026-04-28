@@ -7,9 +7,8 @@ figma:
 summary: OutSystems 11 (O11) enables efficient server-side data fetching with Data Actions after screen loads.
 tags: server-side logic, data fetching, database integration, concurrent processing, timeout handling
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

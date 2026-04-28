@@ -7,11 +7,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
-  - business analysts
+  - Developer
+  - Front-end developer
+  - Platform administrator
+  - Business analyst
 outsystems-tools:
   - service studio
   - case management framework

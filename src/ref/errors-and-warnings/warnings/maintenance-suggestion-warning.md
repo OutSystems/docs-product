@@ -7,8 +7,7 @@ platform-version: o11
 figma:
 tags: sql query optimization, database performance, entity management, query wildcards, software maintenance
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

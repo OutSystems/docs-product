@@ -7,9 +7,7 @@ platform-version: o11
 figma:
 tags: api, deprecated features, notification management, outsystems platform, firebase cloud messaging
 audience:
-  - mobile developers
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

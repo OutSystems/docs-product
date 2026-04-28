@@ -7,8 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A23&mode=design&t=ANpsYvOCthr9AWot-1
 tags: ui components, user interface design, web development, ux patterns, information architecture
 audience:
-  - frontend developers
-  - ui designers
+  - Front-end developer
 outsystems-tools:
   - none
 coverage-type:

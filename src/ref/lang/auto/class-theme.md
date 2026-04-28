@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: theme customization, styling applications, ui design, web development, frontend customization
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

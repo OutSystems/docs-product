@@ -8,10 +8,8 @@ platform-version: o11
 figma:
 tags: soap, web services, wsdl, service orchestration, data mapping
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

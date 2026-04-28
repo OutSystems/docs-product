@@ -9,9 +9,8 @@ coverage-type:
   - apply
 tags: outsystems cloud, database access, direct access, temporary user, permanent user
 audience:
-  - platform administrators
-  - infrastructure managers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - lifetime
 ---

@@ -7,8 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A33&mode=design&t=8a1ub9syb4QKHbuk-1
 summary: Learn how to expose a SOAP Web Service in OutSystems 11 (O11) by setting properties, adding methods, and configuring namespaces.
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

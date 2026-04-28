@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: user authentication, user authorization, role management, access control, security
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

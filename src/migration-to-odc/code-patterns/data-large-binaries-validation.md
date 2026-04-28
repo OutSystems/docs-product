@@ -9,8 +9,7 @@ topic:
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
-  - data engineers
-  - full stack developers
+  - Developer
 tags: data migration, binary attributes, outsystems 11, odc conversion, data validation
 outsystems-tools:
   - service studio

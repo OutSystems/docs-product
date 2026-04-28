@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: json parsing, data serialization, application development, api integration, data transformation
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

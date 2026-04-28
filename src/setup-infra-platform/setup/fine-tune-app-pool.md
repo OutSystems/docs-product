@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: application pool, iis, performance optimization, stability, on-premises deployment
 audience:
-  - platform administrators
-  - full stack developers
-  - infrastructure managers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - none
 coverage-type:

@@ -7,8 +7,7 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Int
 summary: OutSystems 11 (O11) allows users to refresh an entity definition in Integration Studio by fetching updated table information from the database.
 tags: database integration, entity management, ide usage, platform server, tutorials for beginners
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - integration studio
   - platform server

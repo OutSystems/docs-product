@@ -7,9 +7,7 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=304
 summary: Explore the management of extension resources in OutSystems 11 (O11) using Integration Studio's Resources tree.
 tags: extension management, integration studio, version control, resource management, ide customization
 audience:
-  - backend developers
-  - full stack developers
-  - ui designers
+  - Developer
 outsystems-tools:
   - integration studio
 coverage-type:

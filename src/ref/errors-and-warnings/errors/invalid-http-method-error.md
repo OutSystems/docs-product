@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: http methods, rest api, error handling, outsystems development, service studio troubleshooting
 audience:
-  - frontend developers
-  - full stack developers
-  - mobile developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

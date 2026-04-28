@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=1561:1474
 tags: load balancing, zero downtime deployment, platform server upgrade, high availability, cloud infrastructure
 audience:
-  - platform administrators
-  - infrastructure managers
-  - full stack developers
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - platform server
 coverage-type:

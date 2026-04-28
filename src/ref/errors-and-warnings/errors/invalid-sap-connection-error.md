@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: sap integration, error handling, configuration, debugging, troubleshooting
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

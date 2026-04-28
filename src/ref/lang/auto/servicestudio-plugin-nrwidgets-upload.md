@@ -8,8 +8,8 @@ platform-version: o11
 figma:
 tags: file upload, widget usage, user interface design, browser compatibility, input validation
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

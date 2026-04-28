@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=4043-89
 tags: disk space management, on-premises deployment, cloud deployment, server administration, performance optimization
 audience:
-  - platform administrators
-  - full stack developers
-  - infrastructure managers
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - platform server
 coverage-type:

@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: rest api, api development, web services, software documentation, integration patterns
 audience:
-  - backend developers
-  - full stack developers
-  - frontend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

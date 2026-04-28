@@ -7,10 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2635%3A730&mode=design&t=PPL7U8XyNSIpuC5w-1
 tags: security, certificate management, infrastructure configuration, api communication, system administration
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - infrastructure managers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - platform server
 coverage-type:

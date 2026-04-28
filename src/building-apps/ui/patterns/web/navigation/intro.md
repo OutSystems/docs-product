@@ -7,13 +7,11 @@ platform-version: o11
 figma:
 tags: navigation, usability, user interface, application development, outsystems platform
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - none
 coverage-type:
   - none
 ---
-
 # Navigation

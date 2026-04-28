@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: configuration management, site properties, application settings, runtime settings, api key management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

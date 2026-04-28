@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, data types, entity management, parameter configuration, app development best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,11 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=2977-497&t=4Nlh3ezICaWHuIQq-1
 tags: caching, stale cache, performance optimization, mobile apps, reactive web apps
 audience:
-  - frontend developers
-  - full stack developers
-  - platform administrators
-  - tech leads
-  - infrastructure managers
+  - Front-end developer
+  - Developer
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - platform server
 coverage-type:

@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: module management, application deployment, configuration, application maintenance, compliance
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

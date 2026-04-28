@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: sap integration, enterprise systems, system integration, connection configuration, traditional web apps
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

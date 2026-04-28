@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: traditional web development, ui components, widget implementation, radio button usage, form elements
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

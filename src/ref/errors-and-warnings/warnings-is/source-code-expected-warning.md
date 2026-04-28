@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: extension development, error handling, development best practices, .net integration, outsystems ide
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: text formatting, string manipulation, data types, localization, server-side logic, client-side logic
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

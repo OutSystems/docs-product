@@ -7,7 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1265%3A86185&mode=design&t=187UAgmZTPxcY0ZG-1
 tags: mobile development, healthkit integration, health connect integration, plugins, access control
 audience:
-  - mobile developers
+  - Developer
 outsystems-tools:
   - service studio
   - forge

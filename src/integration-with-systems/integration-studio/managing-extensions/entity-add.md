@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Int
 summary: OutSystems 11 (O11) allows manual addition of entities to extensions and offers a wizard for importing multiple entities from a database.
 tags: entity management, database integration, extensions, data modeling, entity properties
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
   - service center

@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: rest api, data modeling, api development, outsystems platform, data types
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

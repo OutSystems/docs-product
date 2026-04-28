@@ -7,7 +7,7 @@ platform-version: o11
 figma:
 tags: appshield, security features, mobile app security, app protection, root detection
 audience:
-  - mobile developers
+  - Developer
 coverage-type:
   - remember
 outsystems-tools:

@@ -7,11 +7,9 @@ figma:
 platform-version: o11
 tags: cloud integration, aws s3, log management, opentelemetry, observability
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - infrastructure managers
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - platform server
   - lifetime

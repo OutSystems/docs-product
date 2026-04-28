@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: sap integration, data types, error handling, data mapping, outsystems platform
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

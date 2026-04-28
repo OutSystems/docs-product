@@ -7,9 +7,8 @@ app_type: traditional web apps
 platform-version: o11
 figma:
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service center
 coverage-type:

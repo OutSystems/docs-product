@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: data structures, api integration, data management, data modeling, consistency management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

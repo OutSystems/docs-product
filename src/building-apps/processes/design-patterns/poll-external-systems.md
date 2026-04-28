@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:18
 tags: external system integration, data synchronization, process automation, workflow implementation, sap integration
 audience:
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - architects
+  - Front-end developer
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

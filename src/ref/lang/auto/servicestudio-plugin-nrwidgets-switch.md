@@ -8,10 +8,8 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3141-317&t=a3mwmA7f7peqqrKe-1
 tags: ui elements, widgets, boolean control, user interface design, property configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,8 +7,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2804:
 summary: Learn how to resolve the missing process detail warning in OutSystems 11 (O11) by setting the Detail property for human activities in the Taskbox.
 tags: process modeling, human activities, taskbox customization, error resolution, outsystems service studio
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

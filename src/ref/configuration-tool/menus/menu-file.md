@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: configuration management, script generation, deployment, database setup, platform server configuration
 audience:
-  - platform administrators
-  - full stack developers
-  - tech leads
-  - infrastructure managers
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - platform server
 coverage-type:

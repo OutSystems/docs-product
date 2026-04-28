@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: session management, system events, authentication, permissions, multi-tenancy
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

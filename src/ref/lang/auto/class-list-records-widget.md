@@ -8,9 +8,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:3
 summary: Learn how to use the List Records widget in OutSystems 11 (O11) to display records in a list layout for Traditional Web Apps.
 tags: list records widget, data binding, user interface components, screen design, outsystems ui
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

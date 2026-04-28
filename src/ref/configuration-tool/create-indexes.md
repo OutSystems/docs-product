@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database performance, index management, database configuration, platform server, timeout settings
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - platform server
 coverage-type:

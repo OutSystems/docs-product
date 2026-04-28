@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: soap extensibility api, web services, api integration, soap callback, outsystems integration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

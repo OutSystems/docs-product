@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: data modeling, performance optimization, database indexing, application design, query optimization
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: rest apis, data types, api documentation, default values, parameter configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

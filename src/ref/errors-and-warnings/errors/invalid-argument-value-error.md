@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, web services, debugging, service studio, outsystems platform
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error resolution, excel integration, data types handling, best practices, system troubleshooting
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

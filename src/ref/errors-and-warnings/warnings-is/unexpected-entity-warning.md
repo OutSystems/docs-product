@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database compatibility, entity configuration, error handling, data modeling, best practices
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - integration studio

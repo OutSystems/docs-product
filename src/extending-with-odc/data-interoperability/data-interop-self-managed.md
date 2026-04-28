@@ -10,10 +10,8 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - data engineers
-  - infrastructure managers
-  - tech leads
-  - platform administrators
+  - Tech lead
+  - Platform administrator
 tags: entities,data interoperability
 outsystems-tools:
   - none

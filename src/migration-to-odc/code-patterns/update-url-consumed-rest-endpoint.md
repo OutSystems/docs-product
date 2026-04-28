@@ -9,9 +9,8 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - backend developers
-  - full stack developers
-  - tech leads
+  - Developer
+  - Tech lead
 tags: rest api, url handling, code conversion, odc, backend development
 outsystems-tools:
   - service studio

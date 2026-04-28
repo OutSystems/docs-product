@@ -7,10 +7,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=415:13
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
   - httprequesthandler

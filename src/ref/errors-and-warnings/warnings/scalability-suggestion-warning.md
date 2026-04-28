@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: performance optimization, best practices, variable management, data types, scalability
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

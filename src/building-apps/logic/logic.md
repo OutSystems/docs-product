@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: performance optimization, system monitoring, efficient logic, code best practices, application troubleshooting
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

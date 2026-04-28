@@ -7,11 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2569%3A879&mode=design&t=kfTANqFRrMacskax-1
 tags: load balancing, high availability, infrastructure, performance optimization, scalability
 audience:
-  - platform administrators
-  - infrastructure managers
-  - full stack developers
-  - tech leads
-  - architects
+  - Platform administrator
+  - Developer
+  - Tech lead
+  - Architect
 outsystems-tools:
   - none
 coverage-type:

@@ -8,9 +8,8 @@ figma:
 helpids: 30538
 tags: cloud-native applications, system entities, api development, data integration, app conversion
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,8 +7,8 @@ app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=266%3A14&mode=design&t=GF97AOUqsRf9tsAh-1
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

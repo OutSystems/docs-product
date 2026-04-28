@@ -7,11 +7,9 @@ app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma:
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - tech leads
-  - infrastructure managers
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - none
 coverage-type:

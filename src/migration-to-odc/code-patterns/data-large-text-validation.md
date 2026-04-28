@@ -9,8 +9,7 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience: 
-  - data engineers
-  - full stack developers
+  - Developer
 tags: data migration, text attributes, outsystems 11, odc conversion, data validation
 outsystems-tools:
   - conversion assessment tool

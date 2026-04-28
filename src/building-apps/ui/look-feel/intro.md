@@ -7,10 +7,8 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 summary: OutSystems 11 (O11) enhances app UI with customizable CSS, themes, and responsive design tools.
 tags: user interface design, css customization, style guide, responsive design, right-to-left support
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

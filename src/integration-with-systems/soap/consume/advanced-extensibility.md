@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 summary: OutSystems 11 (O11) supports advanced SOAP web service extensibility through .NET code integration and a dedicated Forge component.
 tags: soap web services, .net integration, outsystems extensions, soap extensibility api, forge components
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
   - integration studio

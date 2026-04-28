@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, widget configuration, outsystems development, web development, data binding
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

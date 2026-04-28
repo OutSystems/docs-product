@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1745&t=WkNS4cBkPZHvTban-1
 tags: multi-tenancy, saas, data isolation, resource management, scalability
 audience:
-  - full stack developers
-  - architects
-  - platform administrators
+  - Developer
+  - Architect
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: process automation, transaction management, system integration, error handling, process flow
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

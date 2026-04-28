@@ -7,9 +7,8 @@ guid: b6478ecf-0592-4d5b-bbe6-87d1d9776833
 figma:
 tags: debugging, breakpoints, error handling, service studio features, outsystems development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

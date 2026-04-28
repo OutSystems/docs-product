@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: decision management, process flow, decision logic, flow design, decision outcomes
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

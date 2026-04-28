@@ -8,8 +8,8 @@ platform-version: o11
 figma:
 tags: web development, user interface components, data validation, security, user input
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

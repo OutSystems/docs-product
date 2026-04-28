@@ -8,9 +8,8 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:44
 tags: deployment, application lifecycle management, dependency management, continuous integration, environment management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - lifetime
   - service studio

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: asynchronous processing, process automation, workflow management, process execution, application development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/9aIL4vSsuMMBfHMQDs8PLm/OutSystems%20Testing%20Guidelines?node-id=642:247
 tags: component testing, bddframework, gherkin syntax, test automation, quality assurance
 audience:
-  - frontend developers
-  - full stack developers
-  - test engineers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
   - forge

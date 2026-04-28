@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: code optimization, ide usage, warning resolution, code maintenance, outsystems best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

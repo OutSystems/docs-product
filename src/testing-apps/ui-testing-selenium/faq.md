@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1142:386
 tags: selenium testing, automated testing, web testing, testing best practices, outsystems integration
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

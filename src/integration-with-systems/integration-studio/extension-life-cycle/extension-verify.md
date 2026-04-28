@@ -7,10 +7,9 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integ
 summary: OutSystems 11 (O11) includes a Verify operation to ensure extensions are valid and ready for publication on a Platform Server.
 tags: extensions, platform server, dynamic link library (dll), verification process, integration studio
 audience:
-  - full stack developers
-  - backend developers
-  - frontend developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

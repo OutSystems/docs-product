@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5604-2&t=nAkzKIHQvai2bAGN-1
 tags: bpmn, process modeling, bpmn 1.2 notation, business process technology, bpt
 audience:
-  - business analysts
-  - full stack developers
+  - Business analyst
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

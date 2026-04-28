@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: business process management, process flows, entity lifecycle, public exposed processes
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: sql server, azure sql database, database configuration, logging, security
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service studio
   - service center

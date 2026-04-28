@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: exception handling, application logic, customization, error management, traditional web apps
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

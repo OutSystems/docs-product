@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database integration, entity management, naming conventions, default values, documentation practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

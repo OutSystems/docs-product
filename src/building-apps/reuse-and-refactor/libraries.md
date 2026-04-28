@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:40
 tags: application architecture, code reusability, module dependencies, stateless modules, database agnosticism
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

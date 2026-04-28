@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1135
 summary: OutSystems 11 (O11) features a comprehensive set of logic tools in its Service Studio toolbox for efficient app development.
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

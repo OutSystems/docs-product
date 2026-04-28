@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, multitenancy, cross-application interaction, navigation patterns, ide troubleshooting
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

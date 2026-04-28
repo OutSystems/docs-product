@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: process activities, business rules, task management, outsystems platform, activity lifecycle
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Applicati
 summary: OutSystems 11 (O11) enhances app design consistency by utilizing Layout web blocks that integrate common elements across multiple screens.
 tags: app design, user interface, web blocks, application consistency, screen design
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

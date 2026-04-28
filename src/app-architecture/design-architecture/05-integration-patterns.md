@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1081&t=WkNS4cBkPZHvTban-1
 tags: system integration, abstraction patterns, performance optimization, system independence, extensibility
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

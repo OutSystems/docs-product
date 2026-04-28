@@ -7,9 +7,8 @@ figma:
 summary: This article explains how to configure the logging level for REST and SOAP integrations in OutSystems 11 (O11).
 tags: web services, api configuration, logging, troubleshooting, security
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

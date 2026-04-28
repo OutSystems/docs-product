@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=607:5
 summary: Explore how OutSystems 11 (O11) implements Human Activity to manage user tasks within process flows.
 tags: process flow, task management, user task assignment, workflow processes, human-centric bpm
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

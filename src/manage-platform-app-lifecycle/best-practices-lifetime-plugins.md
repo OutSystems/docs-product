@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: plugin development, best practices, deployment, api usage, environment configuration
 audience:
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - lifetime
 coverage-type:

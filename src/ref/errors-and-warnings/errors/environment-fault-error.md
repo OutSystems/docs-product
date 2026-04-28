@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: error resolution, platform server configuration, licensing, service management, technical support
 audience:
-  - platform administrators
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service center
   - platform server

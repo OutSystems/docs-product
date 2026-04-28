@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database management, site properties, error handling, data migration, outsystems upgrade
 audience:
-  - platform administrators
-  - backend developers
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - platform server
   - service studio

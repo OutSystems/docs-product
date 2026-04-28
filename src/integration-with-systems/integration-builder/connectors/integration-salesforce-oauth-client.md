@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: salesforce integration, api configuration, oauth settings, connected apps, digital certificates
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - integration builder
 coverage-type:

@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: email configuration, user interface design, web development, web applications, styling
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

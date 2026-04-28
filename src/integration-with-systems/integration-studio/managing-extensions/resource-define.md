@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-exte
 summary: Explore how to define and manage resources in OutSystems 11 (O11) using Integration Studio, including adding files and setting properties.
 tags: extension management, integration studio, resource management, extensions, outsystems development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

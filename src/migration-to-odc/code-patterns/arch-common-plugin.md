@@ -8,9 +8,9 @@ app_type: mobile apps, reactive web apps, traditional web apps
 platform-version: o11
 figma:
 audience:
-  - mobile developers
-  - architects
-  - tech leads
+  - Developer
+  - Architect
+  - Tech lead
 outsystems-tools:
   - forge
 ---

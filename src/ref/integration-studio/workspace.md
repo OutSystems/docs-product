@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2333:4131
 tags: ide usage, reactive web apps, tutorials for beginners, extension development, technical setup
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - integration studio
   - platform server

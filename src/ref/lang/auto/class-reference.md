@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems, element properties, ui design, application development, jquery
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

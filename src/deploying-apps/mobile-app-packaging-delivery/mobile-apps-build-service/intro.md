@@ -7,9 +7,8 @@ app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:0
 audience:
-  - mobile developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 coverage-type:
   - understand
   - apply

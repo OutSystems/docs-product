@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: data integration, api consuming, entity data management, single record fetching, record list display
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration builder

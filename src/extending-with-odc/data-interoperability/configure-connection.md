@@ -9,8 +9,8 @@ topic:
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
-  - tech leads
-  - platform administrators
+  - Tech lead
+  - Platform administrator
 tags: entities, data interoperability
 outsystems-tools:
   - odc portal

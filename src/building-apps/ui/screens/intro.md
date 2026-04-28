@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=184:0
 tags: ui design, screen templates, user interaction, widgets, ui flows
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

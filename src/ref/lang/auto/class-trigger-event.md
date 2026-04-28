@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: event handling, web application development, outsystems development, traditional web apps
 audience:
-  - frontend developers
-  - full stack developers
-  - mobile developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

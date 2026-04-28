@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: screen navigation, outsystems ui patterns, traditional web apps, screen lifecycle, ui/ux design
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-122&p=f&t=pRvxEDvINAxPgBYK-0
 tags: configuration, deployment, outsystems platform, server settings, application deployment
 audience:
-  - platform administrators
-  - frontend developers
-  - full stack developers
+  - Platform administrator
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service center
   - platform server

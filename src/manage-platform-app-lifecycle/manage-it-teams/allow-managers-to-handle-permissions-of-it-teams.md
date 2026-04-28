@@ -7,8 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:79
 tags: permission management, role assignments, it teams, user management, delegation
 audience:
-  - infrastructure managers
-  - platform administrators
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

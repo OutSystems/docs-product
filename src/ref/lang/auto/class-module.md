@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: outsystems, module properties, database configuration, user management, entity documentation
 audience:
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

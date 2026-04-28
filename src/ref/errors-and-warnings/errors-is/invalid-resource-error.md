@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: error handling, outsystems platform, platform server, application deployment, extension verification
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - platform server

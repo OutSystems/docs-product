@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: business process management, process modeling, low-code development, outsystems development, process entities
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

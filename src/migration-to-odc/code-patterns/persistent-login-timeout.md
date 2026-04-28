@@ -10,10 +10,9 @@ topic:
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
-  - backend developers
-  - full stack developers
-  - architects
-  - tech leads
+  - Developer
+  - Architect
+  - Tech lead
 tags: persistent login, session timeout, access tokens, single sign-on, security enhancement
 outsystems-tools:
   - service center

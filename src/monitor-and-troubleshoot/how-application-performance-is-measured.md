@@ -7,10 +7,9 @@ app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=267%3A131&mode=design&t=rzWSTBJIapfhmERp-1
 audience:
-  - full stack developers
-  - platform administrators
-  - tech leads
-  - backend developers
+  - Developer
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - lifetime
 coverage-type:

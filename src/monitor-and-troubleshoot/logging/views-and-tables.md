@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: logging, database optimization, data management, error handling, performance tuning
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
-  - tech leads
-  - data engineers
+  - Developer
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - service center
 coverage-type:

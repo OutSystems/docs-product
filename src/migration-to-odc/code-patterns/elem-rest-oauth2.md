@@ -8,7 +8,7 @@ figma:
 helpids: 30631
 tags: oauth 2.0 authentication, rest api, outsystems conversion, custom authentication flow, odc conversion
 audience:
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

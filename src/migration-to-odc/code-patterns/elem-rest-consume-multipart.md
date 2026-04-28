@@ -10,7 +10,7 @@ topic:
 app_type: mobile apps, reactive web apps
 platform-version: o11
 audience:
-  - full stack developers
+  - Developer
 tags: rest api, rest consume, outsystems conversion, odc conversion
 outsystems-tools:
   - conversion assessment tool

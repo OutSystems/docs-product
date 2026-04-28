@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: security, ssl configuration, secure communication, https, ssl certificate
 audience:
-  - platform administrators
-  - full stack developers
-  - mobile developers
-  - frontend developers
+  - Platform administrator
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service center
 coverage-type:

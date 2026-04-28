@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=306
 summary: OutSystems 11 (O11) action properties include mandatory and optional settings, defaults, and customization options.
 tags: ide usage, reactive web apps, tutorials for beginners, extension management, action definition
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

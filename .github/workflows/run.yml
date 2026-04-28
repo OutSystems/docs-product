@@ -21,23 +21,31 @@ jobs:
     - name: Find Pull Request
       if: github.ref_name != github.event.repository.default_branch
       id: PR
-      uses: 8BitJonny/gh-get-current-pr@3.0.0
+      uses: 8BitJonny/gh-get-current-pr@4.0.0
       with:
         filterOutClosed: true
         sha: ${{ github.event.pull_request.head.sha }}
 
+    - name: Merge Queue PR
+      id: merge-queue
+      if: github.event_name == 'merge_group'
+      uses: release-kit/regex@v1
+      with:
+        pattern: 'gh-readonly-queue\/.+\/pr-(?<pr>[0-9]+)-.*'
+        string: ${{ github.ref_name }}
+    
     - name: 'Pull Request'
-      if: steps.PR.outputs.number != ''
+      if: steps.PR.outputs.number != '' || steps.merge-queue.outputs.pr != ''
       run: |
-        echo "::notice title=Pull Request ${{ '#' }}${{ steps.PR.outputs.number }}::This workflow execution is related to the Pull Request https://github.com/${{ github.repository }}/pull/${{ steps.PR.outputs.number }}" 
+        echo "::notice title=Pull Request ${{ '#' }}${{ steps.PR.outputs.number || steps.merge-queue.outputs.pr }}::This workflow execution is related to the Pull Request https://github.com/${{ github.repository }}/pull/${{ steps.PR.outputs.number || steps.merge-queue.outputs.pr }}" 
 
     - name: Changed files
       id: changed-files
-      if: github.ref_name != github.event.repository.default_branch && steps.PR.outputs.number != ''
-      run: |
-        echo "files<<EOF" >> $GITHUB_OUTPUT
-        gh pr diff ${{ steps.PR.outputs.number }} --repo ${{ github.repository }} --name-only >> $GITHUB_OUTPUT
-        echo "EOF" >> $GITHUB_OUTPUT
+      if: (github.ref_name != github.event.repository.default_branch && steps.PR.outputs.number != '') || github.event_name == 'merge_group'
+      uses: MiguelDomingues/pull-request-changed-files@v1.0.3
+      with:
+        repository: ${{ github.repository }}
+        pull-request: ${{ steps.PR.outputs.number || steps.merge-queue.outputs.pr }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -122,6 +130,7 @@ jobs:
   auto-fill:
     if: github.event_name == 'pull_request'
     uses: OutSystems/tk-cicd/.github/workflows/autofill-frontmatter.yml@main
+    needs: [pr-info]
     with:
       GITHUB_REPOSITORY: ${{ github.repository }}
       PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
@@ -135,27 +144,38 @@ jobs:
   frontmatter:
     name: Frontmatter
     uses: ./.github/workflows/validate-frontmatter.yml
+    needs: [pr-info, auto-fill]
     secrets: inherit
 
   validations:
     name: Misc validations
+    needs: [pr-info]
     uses: ./.github/workflows/validations.yml
     secrets: inherit
     with:
       GITHUB_REPOSITORY: ${{ github.repository }}
-      PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
+      PR_NUMBER: ${{ needs.pr-info.outputs.pull-request }}
       TK_CICD_BRANCH: 'main'
 
+  metadata-updates:
+    name: Metadata
+    needs: [pr-info]
+    uses: ./.github/workflows/metadata-updates.yml
+    with:
+      changed-files: ${{ needs.pr-info.outputs.changed-files }}
+      pull-request: ${{ needs.pr-info.outputs.pull-request }}
+    secrets: inherit
+    
   tools:
     name: Tools
-    needs: [pr-info, frontmatter]
+    needs: [pr-info, frontmatter, metadata-updates, validate-toc]
     uses: ./.github/workflows/build.yml
     secrets: inherit
 
   publish-dev:
     name: Publish Dev
     uses: OutSystems/tk-cicd/.github/workflows/auto-publish.yml@main
-    needs: [pr-info, tools]
+    needs: [pr-info, tools, validations]
     if: needs.pr-info.outputs.publish-dev == 'true'
     with:
       target-branch: ${{ vars.DEV_BRANCH }}

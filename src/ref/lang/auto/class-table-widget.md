@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: traditional web development, table widget, screen design, ui components, web development best practices
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

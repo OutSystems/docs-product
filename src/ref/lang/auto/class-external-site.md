@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: url handling, url parameters, external linking, web navigation, data encoding
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

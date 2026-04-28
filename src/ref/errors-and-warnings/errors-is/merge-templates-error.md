@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, troubleshooting, permission issues, disk space, system administration
 audience:
-  - platform administrators
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - integration studio
 coverage-type:

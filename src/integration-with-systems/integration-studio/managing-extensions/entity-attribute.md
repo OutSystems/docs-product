@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: entity management, database configuration, ide usage, reactive web apps, tutorials for beginners
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

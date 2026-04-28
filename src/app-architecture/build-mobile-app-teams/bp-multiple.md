@@ -7,9 +7,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=12-22&t=7oBKT8XjBwOX3wkQ-1
 audience:
-  - mobile developers
-  - frontend developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

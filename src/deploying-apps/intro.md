@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A2&mode=design&t=98kL4vRdGIKpuwQm-1
 tags: ci/cd integration, deployment process, application lifecycle management, version tagging, deployment plan
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - lifetime

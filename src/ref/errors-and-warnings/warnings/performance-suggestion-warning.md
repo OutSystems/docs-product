@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: performance optimization, data handling, server interaction, splash screen optimization, efficient server requests
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

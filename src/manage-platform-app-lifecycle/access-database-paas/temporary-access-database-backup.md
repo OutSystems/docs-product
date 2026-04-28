@@ -10,9 +10,8 @@ coverage-type:
   - apply
 tags: cloud database backup, data recovery, outsystems cloud, backup service, 15-day retention
 audience:
-  - platform administrators
-  - backend developers
-  - infrastructure managers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - none
 ---

@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: url management, error handling, module personalization, outsystems development, traditional web apps
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

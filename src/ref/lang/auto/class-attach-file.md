@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: email attachment, file management, web development, outsystems platform, user interface components
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

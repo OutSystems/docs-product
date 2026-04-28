@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: rest apis, api integration, parameter configuration, input validation, web service development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

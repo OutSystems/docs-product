@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: theme development, error resolution, circular dependency, dependency management, base theme
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

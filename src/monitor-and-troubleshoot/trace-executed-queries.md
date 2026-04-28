@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:136
 tags: database performance, sql query, query optimization, database troubleshooting, performance monitoring
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

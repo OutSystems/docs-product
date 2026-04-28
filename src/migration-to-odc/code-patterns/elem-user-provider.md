@@ -11,9 +11,9 @@ coverage-type:
   - understand
 tags: outsystems 11, conversion, user provider, odc assets, module configuration
 audience:
-  - architects
-  - tech leads
-  - full stack developers
+  - Architect
+  - Tech lead
+  - Developer
 outsystems-tools:
   - service studio
   - conversion assessment tool

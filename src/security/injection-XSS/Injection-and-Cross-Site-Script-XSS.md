@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3954-240&t=Gt8bYIfSykukAq2d-1
 tags: security best practices, sql injection prevention, html and javascript sanitization, platform configuration
 audience:
-  - frontend developers
-  - full stack developers
-  - backend developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

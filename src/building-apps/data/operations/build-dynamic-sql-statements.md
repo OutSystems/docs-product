@@ -7,8 +7,7 @@ platform-version: o11
 figma:
 tags: sql injection prevention, security best practices, database queries, sql parameterization, sql best practices
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

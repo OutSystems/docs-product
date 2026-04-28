@@ -7,10 +7,9 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=309
 summary: Explore server connection options in OutSystems 11 (O11) using the Select Server window for efficient platform integration.
 tags: server connection, platform integration, user authentication, outsystems ide, configuration management
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - platform server

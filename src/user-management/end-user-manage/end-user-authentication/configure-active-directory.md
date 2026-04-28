@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:62
 tags: active directory, authentication, security, configuration, it administration
 audience:
-  - platform administrators
-  - full stack developers
-  - frontend developers
-  - infrastructure managers
+  - Platform administrator
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - users application

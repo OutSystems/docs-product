@@ -7,9 +7,8 @@ app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:220
 audience:
-  - mobile developers
-  - frontend developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

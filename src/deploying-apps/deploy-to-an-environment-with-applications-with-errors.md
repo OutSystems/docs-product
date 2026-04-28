@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:72
 tags: application deployment, incompatible references, environment management, error handling, outsystems platform
 audience:
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - lifetime
 coverage-type:

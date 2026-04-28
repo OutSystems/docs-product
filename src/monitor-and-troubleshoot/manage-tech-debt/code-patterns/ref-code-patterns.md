@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: architecture dashboard, ai mentor studio, code analysis, module classification, best practices
 audience:
-  - frontend developers
-  - full stack developers
-  - architects
+  - Front-end developer
+  - Developer
+  - Architect
 outsystems-tools:
   - ai mentor studio
   - service studio

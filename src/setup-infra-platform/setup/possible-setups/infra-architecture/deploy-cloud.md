@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: cloud computing, platform as a service, infrastructure as a service, security compliance, automated backups
 audience:
-  - platform administrators
-  - full stack developers
-  - tech leads
-  - infrastructure managers
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - none
 coverage-type:

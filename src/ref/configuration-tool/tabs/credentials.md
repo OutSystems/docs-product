@@ -7,7 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-130&p=f&t=YWpNVSB3J2vcO8FT-0
 tags: security, password management, configuration management, platform administration, system settings
 audience:
-  - platform administrators
+  - Platform administrator
 outsystems-tools:
   - platform server
 coverage-type:

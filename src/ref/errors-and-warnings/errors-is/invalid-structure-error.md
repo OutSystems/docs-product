@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, data modeling, web development, outsystems best practices, software troubleshooting
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

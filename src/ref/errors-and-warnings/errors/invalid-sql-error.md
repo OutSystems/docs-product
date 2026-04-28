@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: sql error handling, database integration, query optimization, parameter usage, error resolution
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

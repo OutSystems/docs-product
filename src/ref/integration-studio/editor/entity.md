@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=306
 summary: Learn how to manage and edit entity properties in OutSystems 11 (O11) using the Entity Editor.
 tags: entity management, database integration, ide usage, outsystems development, data modeling
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: sap integration, data mapping, data types, api documentation, system integration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

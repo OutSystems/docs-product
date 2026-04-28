@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: rest api, error handling, parameter configuration, rest integration, api development
 audience:
-  - frontend developers
-  - full stack developers
-  - backend developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

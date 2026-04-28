@@ -10,9 +10,9 @@ helpids: 30549
 coverage-type:
   - unblock
 audience:
-  - frontend developers
-  - full stack developers
-  - tech leads
+  - Front-end developer
+  - Developer
+  - Tech lead
 outsystems-tools:
   - service studio
 ---

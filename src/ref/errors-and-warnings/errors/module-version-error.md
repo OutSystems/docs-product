@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: error handling, deployment, administration, platform server, version control
 audience:
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Front-end developer
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

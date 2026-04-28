@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: permissions, security, publishing, user management, service center administration
 audience:
-  - platform administrators
-  - full stack developers
-  - frontend developers
+  - Platform administrator
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

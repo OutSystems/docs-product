@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: asynchronous processes, email configuration, workflow automation
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
   - service center

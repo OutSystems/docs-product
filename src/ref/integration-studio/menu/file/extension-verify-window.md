@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=307
 summary: Learn about the Verify window in OutSystems 11 (O11), essential for extension verification and error handling.
 tags: ide usage, reactive web apps, tutorials for beginners, error handling, extension verification
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

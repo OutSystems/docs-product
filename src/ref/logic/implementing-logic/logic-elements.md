@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2314:3895
 summary: Learn about OutSystems 11 (O11) logic elements like Screen, Client, and Server Actions for app development.
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

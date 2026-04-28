@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: process flows, process activities, output parameter management, data transfer in processes, process design
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

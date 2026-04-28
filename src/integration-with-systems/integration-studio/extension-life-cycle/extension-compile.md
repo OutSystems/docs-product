@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: ide usage, reactive web apps, tutorials for beginners, .net development, dll generation
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
   - service studio

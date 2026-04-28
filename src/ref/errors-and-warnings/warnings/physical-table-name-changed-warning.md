@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: database management, entity modeling, conflict resolution, application development, data migration
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

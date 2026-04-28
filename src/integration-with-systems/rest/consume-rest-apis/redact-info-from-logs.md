@@ -7,10 +7,8 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integ
 summary: OutSystems 11 (O11) enables log redaction for sensitive REST API input parameters.
 tags: security, privacy, logging, data protection, rest api
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,7 +7,7 @@ app_type: traditional web apps
 platform-version: o11
 figma:
 audience:
-  - frontend developers
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

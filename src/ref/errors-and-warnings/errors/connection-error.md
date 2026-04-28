@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: troubleshooting, server communication, error handling, connection issues, application development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

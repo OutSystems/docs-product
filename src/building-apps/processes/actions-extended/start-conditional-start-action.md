@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: process automation, conditional start, process flows, outsystems processes, event handling
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

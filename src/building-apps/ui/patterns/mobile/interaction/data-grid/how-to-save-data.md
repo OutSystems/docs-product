@@ -9,7 +9,7 @@ figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?type=design
 coverage-type:
   - apply
 audience:
-  - frontend developers
+  - Front-end developer
 outsystems-tools:
   - none
 ---

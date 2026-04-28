@@ -7,8 +7,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:4
 summary: Explore common causes and solutions for the 'Invalid Excel Import' error in OutSystems 11 (O11).
 tags: data import, excel, error handling, data management, debugging
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

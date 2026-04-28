@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: debugging, service center operations, platform version compatibility, error resolution, ide errors
 audience:
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Front-end developer
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

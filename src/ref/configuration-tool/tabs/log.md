@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3301-138&t=NHrjTY8KaPifZIK6-0
 tags: configuration management, database management, logging, application monitoring, performance optimization
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

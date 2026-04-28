@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: ide usage, reactive web apps, tutorials for beginners, ui component development, dependency management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

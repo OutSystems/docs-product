@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: dependency management, error handling, application maintenance, outsystems service center, error resolution
 audience:
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

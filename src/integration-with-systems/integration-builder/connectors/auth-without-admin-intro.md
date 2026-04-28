@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: salesforce integration, azure active directory, authentication, application registration, enterprise integration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration builder
 coverage-type:

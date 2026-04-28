@@ -8,9 +8,7 @@ platform-version: o11
 helpids: 30452
 figma:
 audience:
-  - backend developers
-  - full stack developers
-  - mobile developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

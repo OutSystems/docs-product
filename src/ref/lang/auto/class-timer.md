@@ -8,9 +8,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&n
 summary: OutSystems 11 (O11) includes Timers for scheduling and executing periodic application logic efficiently.
 tags: batch jobs, timers, scheduler service, system architecture, database management
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

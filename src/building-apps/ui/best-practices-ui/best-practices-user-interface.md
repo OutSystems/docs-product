@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: ui optimization, performance improvement, ajax optimization, viewstate management, caching strategies
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

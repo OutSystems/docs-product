@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: soap integration, web services, data mapping, api documentation, service-oriented architecture
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

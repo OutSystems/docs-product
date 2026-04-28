@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A522&mode=design&t=GF97AOUqsRf9tsAh-1
 tags: data encryption, security, hipaa compliance, cryptography, entity decryption
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

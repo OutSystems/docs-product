@@ -7,8 +7,8 @@ figma:
 summary: OutSystems 11 (O11) documentation details solutions for the "Invalid Property Value" error, including setting mandatory properties and using literals.
 tags: error handling, widget properties, default values, expression management, property configuration
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

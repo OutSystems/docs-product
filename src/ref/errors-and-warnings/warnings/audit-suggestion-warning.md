@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: error handling, exception logging, best practices, debugging, application monitoring
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

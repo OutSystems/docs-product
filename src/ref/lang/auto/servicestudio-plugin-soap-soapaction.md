@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: soap web services, web service integration, api documentation, service orchestration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

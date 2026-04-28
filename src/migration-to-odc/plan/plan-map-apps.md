@@ -8,8 +8,8 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 helpids: 30544
 tags: app conversion, architecture, o11 conversion, app conversion kit, business apps
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - conversion assessement tool
   - architecture canvas

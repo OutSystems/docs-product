@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: ide customization, ui development, user interface configuration, extension development, development environment setup
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,11 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:51
 summary: Learn how to enhance performance in OutSystems 11 (O11) by managing stateless SAP calls using an extension module.
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - forge

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database modeling, data persistence, entity management, primary keys, indexes
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

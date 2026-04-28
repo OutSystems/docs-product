@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integ
 summary: Learn how to ensure your extension is error-free using the Verify the Extension Definition operation in OutSystems 11 (O11).
 tags: error handling, extension validation, outsystems ide, outsystems platform, version control
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

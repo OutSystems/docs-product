@@ -8,9 +8,8 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3151-12&t=7CahKhPkrngAV3Pz-1
 tags: widget properties, form submission, user interface development, ui components, web widgets
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

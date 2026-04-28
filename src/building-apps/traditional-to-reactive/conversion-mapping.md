@@ -5,8 +5,8 @@ app_type: traditional web apps
 platform-version: o11
 tags: conversion mapping, traditional module, reactive module, convert to reactive
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=6239-107

@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: ui components, data presentation, pagination, sorting, widgets
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

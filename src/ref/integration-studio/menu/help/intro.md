@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3098-240
 tags: ide usage, reactive web apps, tutorials for beginners, integration studio, help resources
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

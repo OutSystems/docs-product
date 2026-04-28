@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: error resolution, runtime errors, module deployment, platform server, service center
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center

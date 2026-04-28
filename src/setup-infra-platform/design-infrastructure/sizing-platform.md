@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: infrastructure scaling, performance optimization, application deployment, hardware recommendations, capacity planning
 audience:
-  - platform administrators
-  - infrastructure managers
-  - full stack developers
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - none
 coverage-type:

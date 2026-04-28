@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: function reference, application development, outsystems development, logic implementation, outsystems functions
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,10 +7,9 @@ app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:109
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - platform server
 coverage-type:
@@ -80,7 +79,7 @@ To configure the authentication settings for apps in your OutSystems environment
 
 In this page you can also generate new keys for authenticating and encrypting cookie values. This will force all the users of your apps to login again in the next server request. To generate new keys, press the Generate button in Authentication and Encryption Keys area:
 
-![Close-up screenshot of the Generate button for new Authentication and Encryption Keys in OutSystems Service Center.](images/configure-app-authentication-generate-keys-sc.png "Generate New Authentication and Encryption Keys")
+![Close-up of the Authentication and Encryption Keys setting in Service Center with descriptive text and a Generate button to create new keys and invalidate existing authentications.](images/configure-app-authentication-generate-keys-sc.png "Authentication and Encryption Keys section with Generate button")
 
 ## Authentication Types
 
@@ -120,7 +119,7 @@ The server validates the request by checking the following conditions:
 
 If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user or fails in case of tampering.
 
-![Diagram illustrating the authentication flow in OutSystems, including cookie validation and session expiration.](images/authentication-1.png "Authentication Flow Diagram")
+![Diagram of the OutSystems authentication flow showing user login, issuance of two cookies, cache time window, session max idle time, and how subsequent requests extend or do not extend session expiration.](images/authentication-1.png "OutSystems authentication flow with cookies, cache time, and session expiration")
 
 ### Authentication Cache
 

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, data actions, output parameters, debugging, service studio
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

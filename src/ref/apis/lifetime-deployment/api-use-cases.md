@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: api, application deployment, application versioning, environment management, database connection mapping
 audience:
-  - full stack developers
-  - platform administrators
-  - tech leads
+  - Developer
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - lifetime
 coverage-type:

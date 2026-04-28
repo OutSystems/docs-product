@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: element properties, service action configuration, application modelling, user interface design
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

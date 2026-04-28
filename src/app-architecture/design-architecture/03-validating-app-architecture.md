@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-865&t=WkNS4cBkPZHvTban-1
 tags: application architecture, dependency management, software design principles
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - discovery
 coverage-type:

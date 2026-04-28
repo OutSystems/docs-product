@@ -7,9 +7,9 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Int
 summary: OutSystems 11 (O11) requires users to connect to an environment in Integration Studio to perform operations like 1-Click Publish and importing entities.
 tags: environment configuration, 1-click publish, extension management, entity import from database, outsystems development
 audience:
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Front-end developer
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

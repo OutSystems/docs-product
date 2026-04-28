@@ -8,11 +8,9 @@ platform-version: o11
 figma:
 tags: rest api, api development, api management, web services, data types
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

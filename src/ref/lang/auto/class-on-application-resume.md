@@ -7,7 +7,7 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:3
 summary: Implement the "On Application Resume" event in OutSystems 11 (O11) to manage app state upon resuming.
 tags: mobile development, application state management, event handling, network availability, outsystems platform
 audience:
-  - mobile developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

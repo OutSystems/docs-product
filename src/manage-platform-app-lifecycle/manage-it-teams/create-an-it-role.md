@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:29
 tags: user management, security policy, it user permissions, roles and permissions, environment configuration
 audience:
-  - platform administrators
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - lifetime
 coverage-type:

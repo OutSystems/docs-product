@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: cross-platform compatibility, ide shortcuts, multilingual support, ux/ui design, widget properties
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

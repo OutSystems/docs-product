@@ -8,8 +8,6 @@ platform-version: o11
 figma:
 coverage-type:
   - none
-audience:
-  - none
 outsystems-tools:
   - user management app
 ---

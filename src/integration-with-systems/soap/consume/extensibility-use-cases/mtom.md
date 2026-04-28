@@ -7,8 +7,7 @@ platform-version: o11
 figma:
 tags: soap, web services, data transmission, message optimization, integration
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - integration studio
   - service studio

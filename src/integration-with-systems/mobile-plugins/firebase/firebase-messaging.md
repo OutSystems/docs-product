@@ -7,7 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2218:14983
 tags: firebase cloud messaging, mobile notifications, push notifications, plugin integration, notification management
 audience:
-  - mobile developers
+  - Developer
 outsystems-tools:
   - service studio
   - forge

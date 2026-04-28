@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5743-365&t=6AQx7cEyHPjzgn9B-1
 tags: data archiving, performance optimization, database management, regulatory compliance, cloud infrastructure
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

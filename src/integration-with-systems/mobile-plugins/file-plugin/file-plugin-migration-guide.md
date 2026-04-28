@@ -7,7 +7,7 @@ app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3944-26
 audience:
-  - mobile developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

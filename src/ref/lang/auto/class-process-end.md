@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: process flows, process automation, workflow design, process modeling, service studio
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

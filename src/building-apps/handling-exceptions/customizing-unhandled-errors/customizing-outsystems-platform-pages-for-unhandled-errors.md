@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5643-320&t=9qWAwpzhqJ67cc17-1
 tags: error handling, customization, on-premises installation, application design, platform customization
 audience:
-  - platform administrators
-  - full stack developers
-  - frontend developers
+  - Platform administrator
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

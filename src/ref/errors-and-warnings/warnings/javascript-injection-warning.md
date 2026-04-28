@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: security best practices, javascript security, code sanitization, input validation, vulnerability prevention
 audience:
-  - frontend developers
-  - full stack developers
-  - mobile developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

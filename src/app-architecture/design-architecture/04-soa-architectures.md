@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1078&t=WkNS4cBkPZHvTban-1
 tags: service-oriented architecture, api design, system integration, legacy system migration
 audience:
-  - backend developers
-  - full stack developers
-  - architects
-  - tech leads
+  - Developer
+  - Architect
+  - Tech lead
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error resolution, database management, entity modeling, index configuration, data types
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

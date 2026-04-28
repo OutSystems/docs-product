@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: outsystems, traditional web development, upload files, ui components, widget properties
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

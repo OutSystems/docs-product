@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: web services, soap, api, deprecation, integration
 audience:
-  - backend developers
-  - full stack developers
-  - frontend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

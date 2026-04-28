@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: entity management, database management, data protection, software development, outsystems platform
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

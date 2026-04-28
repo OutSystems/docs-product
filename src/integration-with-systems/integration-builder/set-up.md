@@ -7,11 +7,10 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 summary: Explore how to configure Integration Builder in OutSystems 11 (O11) for seamless SaaS connectivity and user authentication.
 tags: saas connectivity, user authentication, outsystems integration, configuration management, platform server
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Front-end developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - integration builder
   - platform server

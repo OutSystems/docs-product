@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: data modeling, system integration, element configuration, traditional web apps, entity definitions
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

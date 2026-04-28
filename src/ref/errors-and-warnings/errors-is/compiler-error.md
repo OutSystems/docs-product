@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: compiler errors, extension troubleshooting, source code issues, debugging procedures, ide integration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=848:1
 summary: Explore how OutSystems 11 (O11) utilizes the Conditional Start process activity to initiate workflows based on entity record events.
 tags: workflow automation, event-driven processes, entity record events, process design, process flow
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

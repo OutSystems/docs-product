@@ -6,9 +6,8 @@ guid: 5f8c0c2b-41e0-4a0d-9b3b-2f5a6a1d9f11
 app_type: traditional web apps,mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - backend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

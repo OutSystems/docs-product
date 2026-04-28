@@ -8,9 +8,9 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 helpids: 30524
 tags: odc, code conversion, application development, dependency management, architecture
 audience:
-  - frontend developers
-  - full stack developers
-  - architects
+  - Front-end developer
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

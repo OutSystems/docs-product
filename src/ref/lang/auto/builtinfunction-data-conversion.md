@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: data conversion, data types, boolean, integer, decimal, date, text
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

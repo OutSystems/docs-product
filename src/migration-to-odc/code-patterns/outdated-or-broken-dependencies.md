@@ -6,8 +6,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 tags: dependency management, code conversion, o11 to odc, application lifecycle
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - app conversion kit
   - service studio

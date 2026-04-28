@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Int
 summary: OutSystems 11 (O11) enables direct editing of extension source code in the .NET IDE via Integration Studio.
 tags: ide usage, extension development, .net integration, source code synchronization, outsystems platform
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

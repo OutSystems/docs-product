@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: extension entities, database integration, entity management, user permissions, external database
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

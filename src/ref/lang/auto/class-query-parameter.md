@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1469:
 summary: Explore how to integrate query parameters into SQL queries within OutSystems 11 (O11) for dynamic data retrieval.
 tags: sql query integration, data retrieval, entity modeling, sql parameters, service studio tutorial
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

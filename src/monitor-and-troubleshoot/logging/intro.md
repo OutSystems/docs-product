@@ -7,11 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=267%3A136&mode=design&t=rzWSTBJIapfhmERp-1
 tags: logging architecture, performance monitoring, application troubleshooting, database optimization, security
 audience:
-  - full stack developers
-  - platform administrators
-  - backend developers
-  - architects
-  - tech leads
+  - Developer
+  - Platform administrator
+  - Architect
+  - Tech lead
 outsystems-tools:
   - service studio
   - service center

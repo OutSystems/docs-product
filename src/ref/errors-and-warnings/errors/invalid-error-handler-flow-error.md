@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, debugging, application development, outsystems platform, exception handling
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

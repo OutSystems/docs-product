@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: server request handling, web applications, server-side logic, outsystems platform, lifecycle events
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

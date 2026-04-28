@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, data consistency, database transactions, exception management, best practices
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

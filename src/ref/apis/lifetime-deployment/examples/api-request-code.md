@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: api integration, static code analysis, security and compliance, source code retrieval, continuous deployment
 audience:
-  - platform administrators
-  - full stack developers
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - platform server
   - lifetime

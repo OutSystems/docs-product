@@ -8,9 +8,8 @@ platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:344
 tags: mobile app development, user interface design, swipe gesture handling, design patterns
 audience:
-  - mobile developers
-  - frontend developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

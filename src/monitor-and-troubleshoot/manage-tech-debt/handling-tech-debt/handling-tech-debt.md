@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3945-276&t=Ql7W2ht1qc5SrbRz-1
 tags: technical debt, best practices, automation, software architecture, market adaptation
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - none
 coverage-type:

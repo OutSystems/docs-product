@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems, error handling, public actions, module references, entity/structure accessibility
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

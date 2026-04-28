@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=307
 summary: Explore the File menu functionalities in OutSystems 11 (O11) for managing extensions efficiently.
 tags: ide usage, reactive web apps, tutorials for beginners, extension management, integration studio
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

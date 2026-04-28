@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems 11, error handling, record definitions, entity validation, data modeling
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

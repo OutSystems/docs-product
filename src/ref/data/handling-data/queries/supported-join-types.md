@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=843:1507
 summary: Explore the supported join types in OutSystems 11 (O11) for efficiently querying and combining data from multiple entities.
 audience:
-  - frontend developers
-  - full stack developers
-  - backend developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

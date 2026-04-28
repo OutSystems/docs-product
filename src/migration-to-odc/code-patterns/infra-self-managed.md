@@ -9,9 +9,9 @@ topic:
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
-  - architects
-  - tech leads
-  - platform administrators
+  - Architect
+  - Tech lead
+  - Platform administrator
 tags: self-managed infrastructure, conversion, outsystems 11, outsystems data center, odc
 outsystems-tools:
   - none

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: soap web services, web service integration, data mapping, wsdl, outsystems service studio
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -8,8 +8,8 @@ platform-version: o11
 figma:
 tags: client-side logic, action flow, drag-and-drop interface, logic execution, client actions
 audience:
-  - mobile developers
-  - frontend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

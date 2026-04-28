@@ -7,11 +7,10 @@ platform-version: o11
 figma:
 tags: process management, case management, api, workflow automation, service apis
 audience:
-  - backend developers
-  - frontend developers
-  - full stack developers
-  - architects
-  - business analysts
+  - Developer
+  - Front-end developer
+  - Architect
+  - Business analyst
 outsystems-tools:
   - service studio
   - case management framework

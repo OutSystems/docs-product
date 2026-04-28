@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=18-19&t=jlGay4xDI503Rj5x-1
 tags: distributed caching, performance optimization, scalability, application responsiveness, front-end server
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - none
 coverage-type:

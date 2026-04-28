@@ -9,8 +9,7 @@ topic:
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
-  - full stack developers
-  - data engineers
+  - Developer
 tags: email validation, data migration, outsystems 11, end user management, duplicate emails
 outsystems-tools:
   - users app

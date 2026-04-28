@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: code maintenance, performance optimization, css best practices, javascript best practices, development best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

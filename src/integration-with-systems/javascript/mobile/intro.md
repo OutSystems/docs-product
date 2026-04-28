@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A38&mode=design&t=187UAgmZTPxcY0ZG-1
 summary: Explore how OutSystems 11 (O11) enhances mobile and reactive apps by integrating JavaScript for extended functionality.
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

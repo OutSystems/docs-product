@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: user interface components, swipe gestures, mobile user experience, widget configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

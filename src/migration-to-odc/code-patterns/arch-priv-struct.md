@@ -8,8 +8,7 @@ figma:
 helpids: 30533
 tags: service actions, data migration, code conversion, outsystems development, outsystems platform
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

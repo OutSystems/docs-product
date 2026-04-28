@@ -7,9 +7,8 @@ figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=304
 summary: Explore the toolbar functionalities in OutSystems 11 (O11) for managing extensions in Integration Studio.
 tags: ide usage, reactive web apps, tutorials for beginners, extension development, integration studio
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

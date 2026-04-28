@@ -7,10 +7,9 @@ figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Int
 summary: Explore how to download and manage extensions in OutSystems 11 (O11) using the Platform Server and Integration Studio.
 tags: ide usage, reactive web apps, tutorials for beginners, extension management, outsystems platform
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - integration studio
   - platform server

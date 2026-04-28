@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: json, syntax error, extensibility, error handling, in-app troubleshooting
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

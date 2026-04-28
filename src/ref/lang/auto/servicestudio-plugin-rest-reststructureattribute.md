@@ -8,10 +8,8 @@ platform-version: o11
 figma:
 tags: rest api, data modeling, attribute configuration, api documentation, web services
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

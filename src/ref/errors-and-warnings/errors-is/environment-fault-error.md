@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, extension development, integrated development environment, file system errors, troubleshooting
 audience:
-  - platform administrators
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - integration studio
 coverage-type:

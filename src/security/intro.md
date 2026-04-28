@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=267-92&t=Gt8bYIfSykukAq2d-1
 tags: software security, cia model, information security, security updates, security vulnerabilities
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - none
 coverage-type:

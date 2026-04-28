@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: ide usage, version control, extension management, outsystems platform, server administration
 audience:
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - integration studio
   - platform server

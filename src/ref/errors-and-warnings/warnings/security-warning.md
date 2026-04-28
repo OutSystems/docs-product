@@ -7,10 +7,9 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&n
 summary: OutSystems 11 (O11) emphasizes server-side data validation and secure access controls to enhance application security.
 tags: application security, database operations, server-side validation, access controls, security best practices
 audience:
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Front-end developer
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

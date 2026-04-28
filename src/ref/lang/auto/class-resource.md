@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: resource management, element properties, ide usage, reactive web apps, mobile app development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

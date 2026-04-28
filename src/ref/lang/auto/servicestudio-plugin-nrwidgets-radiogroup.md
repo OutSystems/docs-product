@@ -8,8 +8,8 @@ platform-version: o11
 figma:
 tags: widget implementation, ui components, outsystems ui framework, data binding, user input
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
   - platform server

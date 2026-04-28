@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: process management, process instances, workflow automation, system behavior, parameter modification
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

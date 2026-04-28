@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: architecture canvas, service-oriented architecture, microservices, architectural patterns, best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

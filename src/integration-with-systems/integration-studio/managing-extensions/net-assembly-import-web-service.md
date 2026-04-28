@@ -7,8 +7,7 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 summary: Explore how OutSystems 11 (O11) facilitates the import of .NET assembly-based Web Services into Integration Studio for enhanced application development.
 tags: web services, .net integration, soap, ide usage, visual studio
 audience:
-  - backend developers
-  - full stack developers
+  - Developer
 outsystems-tools:
   - integration studio
   - service studio

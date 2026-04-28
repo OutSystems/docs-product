@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?type=design&node-id=20%3A241&mode=design&t=IqPW9GPcaNRalD3r-1
 tags: app conversion, app modernization, cloud-native architecture, scaling strategies, automation tools
 audience:
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - service studio
   - lifetime

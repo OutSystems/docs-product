@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, system administration, outsystems platform, deployment issues, troubleshooting guide
 audience:
-  - platform administrators
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

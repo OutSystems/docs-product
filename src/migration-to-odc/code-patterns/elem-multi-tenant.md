@@ -9,11 +9,9 @@ topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
-  - backend developers
-  - frontend developers
-  - full stack developers
-  - mobile developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 tags: multi-tenancy, outsystems developer cloud, conversion, o11 modules, non-supported patterns
 outsystems-tools:
   - service studio

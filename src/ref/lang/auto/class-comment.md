@@ -8,9 +8,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&n
 summary: Explore how OutSystems 11 (O11) enhances code commenting with features like reminders and link embedding in the TrueChange™ tab.
 tags: ide usage, reactive web apps, tutorials for beginners, code commenting, development best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

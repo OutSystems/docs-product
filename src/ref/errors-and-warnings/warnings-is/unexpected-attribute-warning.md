@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database management, oracle database, reserved words, attribute naming, error handling
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

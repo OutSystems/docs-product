@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database management, error handling, entity definitions, database synchronization, data modeling
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

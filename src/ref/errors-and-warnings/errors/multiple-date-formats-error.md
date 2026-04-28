@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: error handling, rest api, data formatting, outsystems service studio, api design
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -8,10 +8,8 @@ platform-version: o11
 figma:
 tags: rest api, http methods, api documentation, outsystems development, api properties
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,7 +7,7 @@ app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:2
 audience:
-  - mobile developers
+  - Developer
 outsystems-tools:
   - service studio
   - forge

@@ -7,9 +7,8 @@ figma:
 summary: Learn how to synchronize and update extension source code in OutSystems 11 (O11) using Integration Studio's automated operations.
 tags: ide usage, extension development, source code management, outsystems, .net development
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

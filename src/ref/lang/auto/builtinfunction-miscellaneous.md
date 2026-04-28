@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: security, server-side logic, client-side logic, password generation, conditional statements
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

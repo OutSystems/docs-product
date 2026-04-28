@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integ
 summary: OutSystems 11 (O11) enhances SOAP web service integration by allowing the export of definition files through Service Studio.
 tags: soap web service, wsdl, xml, service integration, web service definition
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

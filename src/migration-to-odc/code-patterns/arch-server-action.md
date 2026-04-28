@@ -8,9 +8,9 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 helpids: 30519
 tags: code conversion, server actions, service actions, dependency management, refactoring code
 audience:
-  - frontend developers
-  - full stack developers
-  - architects
+  - Front-end developer
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

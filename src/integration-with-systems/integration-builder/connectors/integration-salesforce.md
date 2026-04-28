@@ -7,9 +7,8 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20I
 summary: Learn how to integrate Salesforce with OutSystems 11 (O11) using Integration Builder for secure data access and management.
 tags: salesforce integration, authorization processes, security, integration builder, oauth
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration builder
 coverage-type:

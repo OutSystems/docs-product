@@ -8,9 +8,8 @@ platform-version: o11
 figma:
 tags: authentication, rest apis, security, api development, service studio configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

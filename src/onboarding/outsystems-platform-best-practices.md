@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: database optimization, ui design best practices, code reusability, javascript best practices, css best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

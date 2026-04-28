@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: version control, module management, application deployment, error handling, server upgrade
 audience:
-  - platform administrators
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service studio
   - service center

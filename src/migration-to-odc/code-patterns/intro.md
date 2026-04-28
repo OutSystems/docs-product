@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: app conversion, outsystems developer cloud, code refactoring, application lifecycle management, outsystems platform
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - backend developers
-  - architects
+  - Developer
+  - Front-end developer
+  - Architect
 outsystems-tools:
   - app conversion kit
   - service studio

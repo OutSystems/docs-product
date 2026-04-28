@@ -7,10 +7,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1914:6837
 audience:
-  - platform administrators
-  - full stack developers
-  - frontend developers
-  - backend developers
+  - Platform administrator
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - lifetime

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: application optimization, code cleanup, development best practices, efficiency improvement, ide usage
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

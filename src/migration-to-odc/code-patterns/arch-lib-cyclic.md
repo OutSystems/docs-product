@@ -9,8 +9,8 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - architects
-  - tech leads
+  - Architect
+  - Tech lead
 outsystems-tools:
   - service studio
 helpids: 30671

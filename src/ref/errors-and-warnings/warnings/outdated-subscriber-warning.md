@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: error handling, configuration management, user authentication, user management, authentication providers
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

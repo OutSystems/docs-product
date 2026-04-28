@@ -7,9 +7,9 @@ platform-version: o11
 figma:
 tags: security, html injection, sanitization, encoding, cross-site scripting
 audience:
-  - frontend developers
-  - full stack developers
-  - platform administrators
+  - Front-end developer
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - sanitization extension

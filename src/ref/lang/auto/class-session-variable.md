@@ -8,8 +8,7 @@ platform-version: o11
 figma:
 tags: session management, server-side storage, data types, data modeling, performance optimization
 audience:
-  - full stack developers
-  - backend developers
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

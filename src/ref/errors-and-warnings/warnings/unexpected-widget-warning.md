@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: widget configuration, debugging in outsystems, ide usage, troubleshooting, reactive web apps
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

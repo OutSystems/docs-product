@@ -7,8 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1142:349
 audience:
-  - full stack developers
-  - architects
+  - Developer
+  - Architect
 outsystems-tools:
   - forge
 coverage-type:
@@ -97,13 +97,13 @@ Understand that having large numbers of small test cases is usually better than 
 
 Here is an excerpt of the Test Strategy for the Cases application.
 
-![Excerpt from a spreadsheet listing components, folders, names, risks, and associated test cases for the Cases application.](images/image00.png "Test Strategy Spreadsheet Excerpt")
+![Spreadsheet excerpt listing Cases components with their folder, name, risk level, number of test cases, and mapped unit and API tests.](images/image00.png "Cases Application Test Strategy Spreadsheet")
 
 Tests are usually conducted in testing cycles, during which test cases are executed and the actual results compared with expected results. At the end of a test cycle, undesired side effects should be removed (also called test teardown).
 
 Here is a simple diagram relating these concepts.
 
-![Diagram illustrating the relationship between Test Plan, Test Cycles, Test Cases, Application Info, Environment Info, and Expected Results.](images/sgVXy7OgVp35zvxGozZwKlQ.png "Test Plan Diagram")
+![Block diagram showing a test plan containing test cycles, which group application info, environment info, test case runs, test steps, and expected results.](images/sgVXy7OgVp35zvxGozZwKlQ.png "Relationship Between Test Plan and Test Cycles")
 
 Failed tests have to be analyzed and the defects found should be registered in a Defect Management Tool.
 
@@ -161,13 +161,13 @@ The first step is to create an module for the unit tests. It is very important t
 
 For demonstration purposes, we created a Cases_Tests application for the Cases web application.
 
-![Two application icons, one for the 'Cases' application and another for the 'Cases_Tests' application.](images/image01.png "Cases and Cases_Tests Application Icons")
+![OutSystems icons for the Cases application and the Cases_Tests application used to hold automated tests.](images/image01.png "Cases and Cases_Tests Applications")
 
 After creating the testing module, add a reference to the BDD Framework (please refer to the [Forge](https://www.outsystems.com/forge/component/1201/bddframework/) for installation of the BDD Framework). You will also need to add a reference to the application module this module will test.
 
 Here are the references for the Cases_UnitTests module:
 
-![Screenshot of the Manage Dependencies dialog in OutSystems showing references to BDDFramework and Cases.](images/unit01.png "Manage Dependencies Dialog")
+![OutSystems Manage Dependencies window with the Cases module and BDDFramework selected as producers and several server actions listed.](images/unit01.png "Manage Dependencies for Cases_UnitTests Module")
 
 BDD Framework uses a scenario for each test case. Since BDD scenarios are web blocks, they live on web screens. We recommend creating a web screen for a group of strongly related server actions to be tested, with a very understandable name. The web screens should be organized into UI Flows with the same name of the folder where the server action resides inside the application module. As explained in the BDD Framework video, create a scenario for each test case and a “Final Result” to check if all test cases pass.
 
@@ -177,11 +177,11 @@ Drag and drop “BDD Steps” to each “BDD Scenario” and assign the correct 
 
 Here is an example for the “Case Create, (Read), Update and Delete” (CRUD) test cases. (For a “Case”, the “delete” is closing the “Case”; there is no specific scenario for reading a “Case”).
 
-![Screenshot of BDD Framework scenarios for Create Case, Update Case, and Close Case.](images/unit02.png "BDD Framework Scenarios")
+![OutSystems screen showing BDD scenarios for Create Case, Update Case, and Close Case with Given, When, and Then sections.](images/unit02.png "BDD Framework Scenarios for Case CRUD")
 
 Open the **Given** screen action. Create the code that checks the system is in the initial state. Something like:
 
-![Logic flow diagram for the Given action in a test scenario, checking initial state conditions.](images/creategiven.png "Given Action Logic Flow")
+![OutSystems logic flow for the Given action that finds a contact, checks the count, and retrieves the current number of open cases.](images/creategiven.png "Case_Create Given Action Flow")
 
 * Assure a Contact exists
 
@@ -197,7 +197,7 @@ The “Contact Id” will be used to create a new Case. The number of cases will
 
 Now, open the **When** screen action and call the target application server action. The **When** action is usually very simple, setup parameters call the server action and store the minimal results for the validations (that will be placed in the **Then** action).
 
-![Logic flow diagram for the When action in a test scenario, executing the server action being tested.](images/createwhen.png "When Action Logic Flow")
+![OutSystems logic flow for the When action that sets case data, calls the Case_Create server action, and stores the created case identifier.](images/createwhen.png "Case_Create When Action Flow")
 
 We recommend a black-box approach where the test should rely only on the specification of the behavior. Tests should consider the results obtained for each input data, and not on knowledge of the code “inside” the server action that is being tested.
 Only one test should be performed, that is, only one call to one server action.
@@ -212,7 +212,7 @@ Absolutely no validation should be performed in the **When** action.
 
 Finally, open the **Then** screen action and add the validations. This is the most difficult and important step. It should perform all the necessary validations to ensure the test is effective. Remember that this test will be used as a regression test, so even the most simple validations should be included.
 
-![Logic flow diagram for the Then action in a test scenario, validating the outcomes of the test.](images/createthen.png "Then Action Logic Flow")
+![OutSystems logic flow for the Then action that asserts the case was created, validates the case count, and checks the stored case data.](images/createthen.png "Case_Create Then Action Flow")
 
 Give precise names to the Assert condition so it is very easy to identify which validation has failed, in the event one does.
 
@@ -252,7 +252,7 @@ Unit tests are actually OutSystems code. This matches other development platform
 
 The same language structures are available when building tests, including table records. When validating combinations between multiple variables, you may create a list of records with the data for the different test cases, and provide that list to a table record widget. By placing a BDD scenario in the row, multiple test cases are actually executed with minimal effort. Take a look at the next example from the Test Framework unit tests, where the “scenario” is placed inside a “table records”.
 
-| Below is the code; notice the scenario inside a Table Records <br/>![Screenshot showing a table records widget with multiple BDD scenarios for executing various test cases.](images/unit04.png "Table Records with BDD Scenarios") | Below is the result of the execution; notice that many scenarios were executed <br/>![Screenshot showing the results of executing multiple BDD scenarios within a table records widget.](images/unit04_result.png "BDD Scenarios Execution Results") |
+| Below is the code; notice the scenario inside a Table Records <br/>![OutSystems editor showing a table records widget where each row contains a BDD scenario to execute multiple test cases.](images/unit04.png "Table Records with Embedded BDD Scenarios") | Below is the result of the execution; notice that many scenarios were executed <br/>![BDD Framework execution results listing many scenarios generated from a table records widget.](images/unit04_result.png "Execution Results for Table-Based BDD Scenarios") |
 | --- | --- |
   
 ### Adding Unit Tests to Test Framework
@@ -261,33 +261,33 @@ Now let’s add the unit tests to Test Framework.
 
 1. The first thing to do is create a new Test Suite for regression tests. To do so, press “Define” on the topmost menu and then press the “New Test Suite” on the right side; the following screen appears.
 
-    ![Screenshot of the New Test Suite dialog in Test Framework with fields for name, target URL, and description.](images/testsuitenew01.png "New Test Suite Dialog")
+    ![Test Framework New Test Suite dialog with fields for name, target URL, description, and toggles for active and daily run.](images/testsuitenew01.png "New Test Suite Dialog in Test Framework")
 
 1. Fill in the data and press “Create Test Suite” button; the screen should be similar to the following image.
 
-    ![Screenshot showing the details of a newly created test suite in Test Framework.](images/testsuitenew03.png "Test Suite Details")
+    ![Test Framework screen showing the details of a newly created test suite with sections for setup, variables, and test cases.](images/testsuitenew03.png "Created Test Suite Details Screen")
 
 1. You can now create a Unit Test Case. To do so, press the “Unit Test” button, on the upper-right. The following screen appears.
 
-    ![Screenshot of the New Test Case dialog in Test Framework with fields for test case information.](images/testcasenew01.png "New Test Case Dialog")
+    ![Test Framework New Test Case form for a unit test with fields for name, description, quarantine, and target URL.](images/testcasenew01.png "New Unit Test Case Dialog")
 
 1. Fill in the test case information and press the “Create Test Case” button. The screen is updated and now allows the creation of test steps.
 
-    ![Screenshot showing the interface for creating a new test case with options to add test steps.](images/testcasenew02.png "Test Case Creation Interface")
+    ![Test Framework screen showing a newly created unit test case with no test steps defined yet.](images/testcasenew02.png "Unit Test Case Ready for Steps")
 
 1. You can now create a new Test Step. To do so press the “New Test Step” button on the left. The following screen appears.
 
-    ![Screenshot of the New Test Step dialog in Test Framework with fields for creating a test step.](images/teststepnew01.png "New Test Step Dialog")
+    ![Test Framework New Test Step form with fields for the step name and target URL.](images/teststepnew01.png "New Test Step Dialog")
 
 1. To create a unit test step, fill the Target URL with a valid URL, something like `https://<yourserver>/Cases_UnitTests/Case_CRUD.aspx`. Press the “Update Step” button and it’s ready for execution.
 
-    ![Screenshot showing the details of a newly created test step in Test Framework.](images/teststepnew02.png "Test Step Details")
+    ![Test Framework screen showing a unit test step configured with a URL to the Case_CRUD test page.](images/teststepnew02.png "Configured Unit Test Step")
 
 ### Using Existing Unit Tests
 
 If there are many unit tests, this may become time consuming. To speed up test creation, Test Framework is able to collect all unit test modules that reference an application. To do so, in the Test Case screen, you may press the “Load BDD Tests” button.
 
-![Screenshot of the Load BDD Tests button in Test Framework for importing BDD test scenarios.](images/loadbdd.png "Load BDD Tests Button")
+![Test Framework unit test case screen highlighting the Load BDD Tests link to import BDD scenarios as test steps.](images/loadbdd.png "Load BDD Tests Option")
 
 After you press the “Update Test Case” button, all information is updated in the database. Test steps become editable and all counters are updated accordingly.
 
@@ -295,17 +295,17 @@ After you press the “Update Test Case” button, all information is updated in
 
 1. To execute a Test Suite go to the list of test suites by pressing the “Define” menu button.
 
-    ![Screenshot showing a list of test suites in Test Framework with options to run tests.](images/testsuitelist.png "List of Test Suites")
+    ![Test Framework Define page listing multiple test suites with play buttons and a Run All option.](images/testsuitelist.png "List of Test Suites")
 
 1. Press the “1-Click Test” button for the test suite you want to run. The test starts to run in the background.
 
 1. Press the “Analyze” menu to see the result of the execution of a test suite. Here is an example:
 
-    ![Screenshot showing a summary of test results with classifications for passed and failed tests.](images/testresults01.png "Test Results Summary")
+    ![Test Framework Analyze page summarizing test runs with colored bars indicating passed and failed results.](images/testresults01.png "Test Results Summary View")
 
 1. Expand the test run to see the details. Here is an example.
 
-    ![Screenshot showing detailed test results with individual test steps and their outcomes.](images/testresults02.png "Detailed Test Results")
+    ![Test Framework Analyze page expanded to show individual test steps and their pass or fail status.](images/testresults02.png "Detailed Test Results View")
 
 ### Classifying the Execution of a Test
 
@@ -315,29 +315,29 @@ It is not possible to automatically classify the cause of a test failure. So, ev
 
 Test Framework automatically classifies all tests. The passed tests are classified as “Passed” and the tests that fail as “Unclassified”. For the unclassified tests the tester must provide more information, as displayed in this screen:
 
-![Screenshot showing the interface for classifying the reason for a test failure in Test Framework.](images/testresults03.png "Test Failure Classification")
+![Test Framework interface for classifying a failed test step as passed, unclassified, broken, or defect.](images/testresults03.png "Classify Failed Test Execution Screen")
 
 If the test failed due to a malfunction of the application, then it is a defect. The tester should register the defect in the Defect Management Tool, providing as much detail as possible.
 
-![Screenshot showing the interface for registering a defect in Test Framework.](images/testresults05.png "Defect Registration Interface")
+![Test Framework screen for adding a defect label and external URL to a failed test step.](images/testresults05.png "Defect Registration in Test Framework")
 
 All defects follow a workflow. Below is an example of a typical “Defect Workflow”.
 
-![Diagram showing the typical workflow for defect management from creation to closure.](images/defectwf.png "Defect Workflow Diagram")
+![Flow diagram showing defect states Open or Reopen, In Progress, Resolved, and Closed with arrows indicating transitions.](images/defectwf.png "Defect Management Workflow Diagram")
 
 The Defect Workflow is typically configured in your Defect Management Tool. [For demonstration purposes, we will use JIRA as the Defect Management Tool].
 
 Create a defect in JIRA and link it to this test execution. Press the “Add Defect” button and add the name of the defect and the URL from JIRA to establish the link.
 
-![Screenshot of the dialog for linking a defect to a test step in Test Framework.](images/linkdefect02.png "Link Defect Dialog")
+![Dialog in Test Framework for linking a test step to a defect by specifying a label and an external URL.](images/linkdefect02.png "Link Test Step to External Defect")
 
 If the test failed due to a mistake in the test itself, then the tester should classify it as “Broken”. The cause may be the test itself or the test data being used.
 
-![Screenshot showing the interface for classifying a test as broken in Test Framework.](images/testresults04.png "Broken Test Classification")
+![Test Framework screen showing a test step classified as broken with options to manage its status.](images/testresults04.png "Broken Test Classification Screen")
 
 If the tester cannot immediately fix the test step, the test should be placed in quarantine. See the following screen as an example.
 
-![Screenshot showing the option to quarantine a test in Test Framework.](images/quarantine01.png "Quarantine Test Option")
+![Test Framework interface showing a toggle to place a test case in quarantine so it no longer runs.](images/quarantine01.png "Quarantine Test Option")
 
 ## API Testing Approach
 
@@ -351,7 +351,7 @@ An API test is similar to a unit test with a setup (prepare data for calling the
 
 Test Framework natively supports API testing for APIs that expose REST or SOAP methods. To create an API Test Case, go to the “Cases Regression Tests” test suite. Now press the“API Test” button. Fill out the new test case information. The API Endpoint URL can be found in Service Studio. Press “Update Test Case” button and the following screen appears.
 
-![Screenshot of the New API Test Case dialog in Test Framework with fields for API test information.](images/testcaserestnew01.png "New API Test Case Dialog")
+![Test Framework New API Test Case form with fields for name, description, protocol, and API endpoint URL.](images/testcaserestnew01.png "New API Test Case Dialog")
 
 <div class="info" markdown="1">
 
@@ -370,15 +370,15 @@ Test Framework imports all methods and creates variables for all parameters used
 
 After loading all API methods, the screen will look something like this:
 
-![Screenshot showing an API test case with methods imported from a REST API documentation.](images/testcaserestnew03.png "API Test Case with Imported Methods")
+![Test Framework API test case showing multiple REST methods imported as test steps from a Swagger definition.](images/testcaserestnew03.png "API Test Case After Importing Methods")
 
 If you do not want to use all API methods, just delete the ones that aren’t required. When you select one of the methods you will see the following screen:
 
-![Screenshot showing the selection of API methods to be included in an API test case.](images/testcaserestnew04.png "API Method Selection")
+![Test Framework screen listing REST methods with an option to remove methods from automatic import.](images/testcaserestnew04.png "Select API Methods to Import")
 
 Press button “Remove - Don’t import automatically” to prevent the method from being imported. Repeat this operation for all API methods to be excluded. Now press the button “Save Test Case” to start importing the desired methods as test steps and creating variables for each parameter.
 
-![Screenshot showing the variables created for an API test case after importing methods.](images/testcaserestnew07.png "API Test Case Variables")
+![Test Framework API test case showing variables created for each REST method parameter.](images/testcaserestnew07.png "API Test Case Variables")
 
 For each test step, you should define the input and expected values. Just select the desired variable and specify the input value or the expected value (if is an output parameter). Press the “Save” button to store that variable.
 
@@ -389,7 +389,7 @@ It is possible to use variable values from previous test steps: just use `${<var
 
 Here is an example of the final configuration of the test step.
 
-![Screenshot showing a fully configured API test step with defined input and expected values.](images/testcaserestnew08.png "Configured API Test Step")
+![Test Framework screen showing an API test step with input and expected values defined for its variables.](images/testcaserestnew08.png "Configured API Test Step")
 
 ### Advanced API Testing Techniques
 
@@ -399,14 +399,14 @@ API tests may be created using the BDD Framework in a very similar way to unit t
 
 Here is the **Given**, **When** and **Then** actions for the Case Create Test, using the REST API, to see how similar this approach is to unit testing:
 
-| ![Screenshot showing the Given action logic flow for a REST API test scenario.](images/creategivenrest.png "Given Action for REST API Test") | ![Screenshot showing the When action logic flow for a REST API test scenario.](images/createwhenrest.png "When Action for REST API Test") | ![Screenshot showing the Then action logic flow for a REST API test scenario.](images/createthenrest.png "Then Action for REST API Test") |
+| ![OutSystems logic flow for the Given action of a REST API test that finds a contact and retrieves existing cases.](images/creategivenrest.png "REST Case_Create Given Action Flow") | ![OutSystems logic flow for the When action of a REST API test that calls the Case_Create REST method.](images/createwhenrest.png "REST Case_Create When Action Flow") | ![OutSystems logic flow for the Then action of a REST API test that validates the created case and case count.](images/createthenrest.png "REST Case_Create Then Action Flow") |
 | --- | --- | --- |
   
 ## Test Framework Overview screen
 
 Test results are organized on a daily basis in the Overview screen. This screen provides a way to easily follow test trends. Press the “Overview” menu option and the following screen appears.
 
-![Screenshot of the Test Framework Overview screen showing test execution trends and results.](images/overview01.png "Test Framework Overview Screen")
+![Test Framework Overview page showing daily executed test cases and charts for test case evolution and test step classification.](images/overview01.png "Test Framework Quality Overview")
 
 On the left side, test executions are organized by days. By expanding a day, you have easy access to the test executions for each test case executed that day. From the detail list you can drill into test execution to analyze the details.
 

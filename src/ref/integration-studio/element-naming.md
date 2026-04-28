@@ -7,9 +7,8 @@ figma:
 summary: OutSystems 11 (O11) Integration Studio enforces naming conventions and character limits for elements.
 tags: ide usage, reactive web apps, tutorials for beginners, integration studio, naming conventions, database compatibility
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

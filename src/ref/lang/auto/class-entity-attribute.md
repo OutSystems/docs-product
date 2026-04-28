@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: database design, data modeling, entity management, application development, data types
 audience:
-  - mobile developers
-  - frontend developers
-  - backend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

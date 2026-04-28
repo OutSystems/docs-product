@@ -9,9 +9,7 @@ figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742
 coverage-type:
   - apply
 audience:
-  - full stack developers
-  - backend developers
-  - ui designers
+  - Developer
 outsystems-tools:
   - forge
   - service studio

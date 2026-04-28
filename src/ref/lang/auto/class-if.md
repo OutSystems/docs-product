@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: conditional branching, action flows, boolean conditions, flow control, service studio features
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

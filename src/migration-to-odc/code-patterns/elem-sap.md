@@ -10,9 +10,8 @@ topic:
 app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
-  - frontend developers
-  - mobile developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 tags: sap integration,integration platforms,outsystems developer cloud
 outsystems-tools:
   - service studio

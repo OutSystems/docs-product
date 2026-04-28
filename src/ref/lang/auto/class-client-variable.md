@@ -8,9 +8,8 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1379:
 summary: OutSystems 11 (O11) supports Client Variables in Mobile and Reactive Web apps for client-side data storage in a key-value format.
 tags: client variables, data storage, data types, client-side data management, environment configuration
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems, dependency management, application lifecycle management, application troubleshooting, best practices
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

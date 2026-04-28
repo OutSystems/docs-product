@@ -8,10 +8,8 @@ platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=3002%3A373&mode=design&t=t7R0lKcODmSSUet7-1
 tags: ui components, button group widget, user input, component properties, widget customization
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

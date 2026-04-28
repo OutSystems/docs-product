@@ -10,9 +10,8 @@ topic:
 app_type: mobile apps,reactive web apps
 platform-version: o11
 audience:
-  - infrastructure managers
-  - tech leads
-  - architects
+  - Tech lead
+  - Architect
 tags: app conversion, outsystems, database configuration, infrastructure management
 outsystems-tools:
   - conversion assessment tool

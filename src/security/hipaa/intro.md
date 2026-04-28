@@ -7,9 +7,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vTtFn5nl44ZLjUBYo2anCO/Security?node-id=210:728
 audience:
-  - full stack developers
-  - platform administrators
-  - architects
+  - Developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

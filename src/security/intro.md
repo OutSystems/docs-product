@@ -43,7 +43,7 @@ You can guarantee confidentiality by controlling access to information, making s
     You can attain this by following good authentication practices, like strong passwords, multi-factor authentications, security tokens, and digital certificates. You should limit the access to sensitive information and only appear when it's necessary. It must also be subject to Role validation. Common means used to manage confidentiality include access control lists, volume, file encryption, and data permissions.
 
 * **Integrity** – Integrity means the trustworthiness of data or resources in terms of preventing improper and unauthorized changes.
-Data and resources must not be compromised or tampered with, and it must be reliable. You can verify data integrating by using checksums as a practice.
+Data and resources must not be compromised or tampered with, and it must be reliable. You can verify data integrity by using checksums as a practice.
 
     If the data had modifications, backup or redundancy should exist to guarantee data recovery, which also ensures that  when an authorized person makes a foul change in the data, you can reverse the damage.
 
@@ -70,7 +70,7 @@ This is one of the main reasons why you should keep your OutSystems platform upd
 
 ### Finding major vulnerabilities
 
-Major security vulnerabilities are compiled by [OWASP - Open Source Foundation for Application Security](https://owasp.org/). OWASP an open community of volunteers that works to improve the security of software, providing several articles, tools, and documents that set the baseline of best practices to overcome known software vulnerabilities.
+Major security vulnerabilities are compiled by [OWASP - Open Source Foundation for Application Security](https://owasp.org/). OWASP is an open community of volunteers that works to improve the security of software, providing several articles, tools, and documents that set the baseline of best practices to overcome known software vulnerabilities.
 
 Also, periodically OWASP publishes the top software vulnerabilities for Web and Mobile Applications:
 
@@ -82,6 +82,6 @@ Also, periodically OWASP publishes the top software vulnerabilities for Web and 
 
 Security certifications have gained high relevance because earning these certifications demonstrates the organization’s capabilities, accuracy, and compliance with the certification specific scope.
 
-Compliance is the set of practices, processes, and tools that a company uses to guarantee that personnel and the company as a whole abide by internal rules of conduct and external rules and regulations. This compliance is attained with through a specific approach, being an iterative and continuous process, where you need to prove the compliance to have those certifications renewed.
+Compliance is the set of practices, processes, and tools that a company uses to guarantee that personnel and the company as a whole abide by internal rules of conduct and external rules and regulations. This compliance is attained through a specific approach, being an iterative and continuous process, where you need to prove the compliance to have those certifications renewed.
 
 Check the other articles in this section for best practices related to security.

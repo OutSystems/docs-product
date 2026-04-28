@@ -1,6 +1,6 @@
 ---
 name: style-guide-fixer
-description: Fix style guide errors on a file. Runs vale and markdownlint locally to find errors. Falls back to the PR comment marked with the sticky marker "STYLE GUIDE VALIDATION" only when the prompt explicitly instructs it. Use when asked to fix style guide errors on a file.
+description: Fix style guide errors on a file. Checks IDE diagnostics first, then runs vale and markdownlint only if IDE diagnostics are unavailable or empty. Falls back to the PR comment marked with the sticky marker "STYLE GUIDE VALIDATION" only when the prompt explicitly instructs it. Use when asked to fix style guide errors on a file.
 ---
 
 # Style guide fixer rules
@@ -18,7 +18,7 @@ Read the provided files and collect all style guide errors for them.
 
 1. Collect errors using the following priority order:
 
-    **Primary — run local linters** (default, no PR required):
+    **Primary — use IDE diagnostics or local linters** (default, no PR required):
     * Determine which file to fix:
         * If a file path was explicitly passed with the command, use that.
         * Otherwise, use the file currently open in the IDE, available in the conversation context via the `<ide_opened_file>` tag. If no file is open, stop and ask the user to provide a file path.
@@ -26,10 +26,13 @@ Read the provided files and collect all style guide errors for them.
     * Collect errors using the following sub-priority:
 
         **IDE diagnostics** (preferred, if available):
-        * After reading the file, check whether `<ide_diagnostics>` data is present in the conversation context for this file.
-        * If it is, use those diagnostics as the error source. Treat entries with severity `"Error"` as errors; ignore `"Warning"` and `"Information"` entries.
+        * After reading the file, explicitly check whether `<ide_diagnostics>` data is present in the conversation context for this file.
+        * If it is present, use those diagnostics as the only error source for this step. Treat entries with severity `"Error"` as errors; ignore `"Warning"` and `"Information"` entries.
+        * If the `<ide_diagnostics>` block is present but contains no entries with severity `"Error"`, stop and report that no fixable errors were found.
+        * Do not run `markdownlint` or `vale` when usable `<ide_diagnostics>` data is present.
 
-        **CLI linters** (fallback, when IDE diagnostics are absent):
+        **CLI linters** (fallback, only when IDE diagnostics are absent or empty):
+        * Run this fallback only if `<ide_diagnostics>` data is unavailable for the file, or the diagnostics source is empty and cannot provide results for the file.
         * Run `markdownlint` on the file and capture all output.
         * Run `vale` on the file and capture all output.
         * From the markdownlint output, collect only errors for rules listed in `markdownlint_fail.json`. Treat all other markdownlint findings as warnings and ignore them.

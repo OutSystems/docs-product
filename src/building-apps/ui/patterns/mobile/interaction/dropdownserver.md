@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Dropdown server side
@@ -201,3 +202,7 @@ If you are an advanced user, you might want to use the Accordion API (OutSystems
 | GetDropdownServerSideItemItemById | Gets the instance of DropdownServerSideItem by a specific ID. | <li>dropdownServerSideItemId: string</li> |
 | Initialize | Initializes the pattern instance. | <li>dropdownId: string</li> |
 | Initialize | Initializes the pattern instance. | <li>dropdownServerSideId: string</li><li>eventName: string</li><li>callback: OSUIFramework.Callbacks.OSGeneric</li> |
+
+## Accessibility – WCAG 2.2 AA compliance
+
+The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

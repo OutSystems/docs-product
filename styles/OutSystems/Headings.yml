@@ -29,7 +29,7 @@ exceptions:
   - OutSystems Developer Cloud
   - OutSystems Model
   - Personal Edition
-  - Portal
+  - ODC Portal
   - Workflow Builder
   - AI Mentor Studio
   - AIMS
@@ -37,19 +37,13 @@ exceptions:
   - Mentor
   - Mobile Apps Builder Service
   - UsersIdP
-  - Build Operations
   - Build Operations API
-  - Dependency Management
   - Dependency Management API
-  - GetGroundingData
   - Data
-  - GetGroundingData
   - Call Agent
   - StoreMemory
   - Agent Workbench
-  - Asset Repository
   - Asset Repository API
-  - Asset Configurations
   - Asset Configurations API
   - Forge
   - Self-hosted
@@ -136,10 +130,6 @@ exceptions:
   - Web
   - WCAG 2.2 AA
   - GetAcessToken
-  - SendNotificationToTopics
-  - SendNotificationToUsers
-  - SendSilentNotificationToTopics
-  - SendSilentNotificationToUsers
   - Create/Upgrade
   - JSON
   - Cordova-based
@@ -169,33 +159,6 @@ exceptions:
   - LLM
   - CSP
   - Web Application Firewall
-  - ChangePassword
-  - FinishResetPassword
-  - FinishUserRegistration
-  - GetPasswordComplexityPolicy
-  - GetUserProfile
-  - IsExternalUser
-  - StartResetPassword 
-  - StartUserRegistration
-  - UpdateUserProfile
-  - ValidatePasswordComplexity
-  - ChangePasswordResult
-  - FinishPasswordResetResult
-  - FinishUserRegistrationResult
-  - PasswordComplexityPolicy
-  - PasswordValidationResult
-  - StartResetPasswordResult
-  - FinishResetPasswordFailureReason
-  - UserInfo
-  - StartUserRegistrationResult
-  - UserUpdateInfo
-  - UpdateUserResult
-  - CameraDirection
-  - TakePicture
-  - PlayVideo
-  - EditPicture
-  - MediaType
-  - CheckCameraPlugin
   - Plugin Manager
   - MediaResult data
   - MediaMetadata data
@@ -265,7 +228,6 @@ exceptions:
   - Microsoft Entra
   - Microsoft Entra ID
   - Cascading Style Sheets
-  - CallAgent01_Intake 
   - CSS
   - Chrome
   - Code
@@ -284,7 +246,6 @@ exceptions:
   - Integrated Authentication
   - Kubernetes
   - Loan Origination
-  - LoanOrigination
   - Package
   - Store
   - Tips
@@ -403,7 +364,7 @@ exceptions:
   - Europe
   - London
 # Certifications and Boot Camps
-  - Associate Developer
+  - Associate Developer exam
   - Boot Camp
   - Mobile Developer specialization
   - Front-end Developer specialization

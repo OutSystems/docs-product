@@ -51,7 +51,7 @@ jobs:
     - name: 'Validate visual assets for changed files'
       if: steps.count.outputs.number > 0
       run: |
-        VALID_SUFFIXES="-(ss|odcs|is|lt|sc|pl|usr|at|ct|af|gc|fg|ams|ib|eb|we|az|vs|ok|fc|diag)$"
+        VALID_SUFFIXES="-(ss|odcs|is|lt|sc|pl|usr|at|ct|af|gc|fg|ams|ib|eb|we|az|vs|ok|fc|diag|sa)$"
         while IFS= read -r file; do
           [ -z "$file" ] && continue
 
@@ -80,7 +80,7 @@ jobs:
 
             # Must end with one of the valid suffixes
             if [[ ! "$name_without_ext" =~ $VALID_SUFFIXES ]]; then
-              echo "- ❌ $file: Image name must end with one of: ss, odcs, is, lt, sc, pl, usr, at, ct, af, gc, fg, ams, ib, eb, we, az, vs, ok, fc, diag. See [Image file names](https://outsystemsrd.atlassian.net/wiki/spaces/TK/pages/3179839882/Screenshots#Image-file-names) for reference." >> report.md
+              echo "- ❌ $file: Image name must end with one of: ss, odcs, is, lt, sc, pl, usr, at, ct, af, gc, fg, ams, ib, eb, we, az, vs, ok, fc, diag, sa. See [Image file names](https://outsystemsrd.atlassian.net/wiki/spaces/TK/pages/3179839882/Screenshots#Image-file-names) for reference." >> report.md
               HAS_ERRORS=1
             fi
 

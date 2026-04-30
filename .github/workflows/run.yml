@@ -160,10 +160,13 @@ jobs:
   metadata-updates:
     name: Metadata
     needs: [pr-info]
-    uses: ./.github/workflows/metadata-updates.yml
+    uses: OutSystems/tk-cicd/.github/workflows/metadata-updates.yml@main
     with:
       changed-files: ${{ needs.pr-info.outputs.changed-files }}
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
+      runner-type: ubuntu
+      front-matter-key-filter: guid
+      file-glob-filter: "*.md"
     secrets: inherit
     
   tools:

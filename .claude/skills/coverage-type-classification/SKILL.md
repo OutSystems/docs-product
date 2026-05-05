@@ -63,7 +63,8 @@ If an `audience` value was found in Step 1, use it as a guide to validate that t
 
 * `apply` and `unblock` are most common for Business analysts, Developers, Front-end developers, and Platform administrators.
 * `understand` and `evaluate` are most common for Architects, Tech leads, and Product owners.
-* `remember` applies broadly to all audiences.
+* `remember` applies broadly to all developer audiences.
+* `apply` and `unblock` also apply to all developer audiences for hands-on content.
 
 If the audience strongly points away from a coverage type you are about to include, treat that as a signal to re-examine the justification — not as a rule to exclude it outright.
 

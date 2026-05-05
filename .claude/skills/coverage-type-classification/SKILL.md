@@ -61,10 +61,9 @@ Use this summary as the anchor for all scoring decisions below.
 
 If an `audience` value was found in Step 1, use it as a guide to validate that the scores are sound. The audience does not restrict which coverage types are valid, but it should inform your confidence in each score. Use the following as a reference:
 
-* `apply` and `unblock` are most common for Test Engineers, UI Designers, and Business Analysts.
-* `understand` and `evaluate` are most common for Architects, Tech Leads, and Full-Stack Developers.
-* `remember` applies broadly to all developer audiences.
-* `apply` and `unblock` also apply to Mobile, Frontend, and Backend Developers for hands-on content.
+* `apply` and `unblock` are most common for Business analysts, Developers, Front-end developers, and Platform administrators.
+* `understand` and `evaluate` are most common for Architects, Tech leads, and Product owners.
+* `remember` applies broadly to all audiences.
 
 If the audience strongly points away from a coverage type you are about to include, treat that as a signal to re-examine the justification — not as a rule to exclude it outright.
 

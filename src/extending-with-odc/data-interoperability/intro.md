@@ -1,7 +1,7 @@
 ---
 guid: 42156dc2-2ec5-4f2d-bf5c-b5af28072cfa
 locale: en-us
-summary: Build new ODC apps that seamlessly consume data from your existing O11 apps.
+summary: Data interoperability between OutSystems Developer Cloud (ODC) and O11 lets you reuse O11 entities in ODC apps via Data Fabric without migrating data.
 figma: https://www.figma.com/design/epaiN2jasbbKgJA0iSYfZn/Extending-with-ODC?node-id=1-2
 coverage-type:
   - understand
@@ -10,9 +10,16 @@ app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
   - Architect
-  - Tech lead
   - Developer
-tags: entities, data interoperability
+  - Tech lead
+tags:
+  - Architecture
+  - Data
+  - Development lifecycle
+  - Entities
+  - Infrastructure
+  - Lifecycle
+  - Security
 outsystems-tools:
   - lifetime
   - odc portal
@@ -142,7 +149,7 @@ The following O11 entities **can't be exposed** to ODC:
 
 OutSystems is working to improve the data interoperability capability. Meanwhile, consider these additional limitations:
 
-* O11 static entities are available in ODC as regular read-only entities (doesn't apply to static entities defined in libraries, which can't be exposed). See [how to work with O11 static entities](consume-entities.md#o11-static-entities).
+* O11 static entities are available in ODC as regular read-only entities (doesn't apply to static entities defined in libraries, which can't be exposed). See [how to work with O11 static entities](consume-entities-best-practices.md#o11-static-entities).
 
 * [Data mashup with O11 Oracle entities and other external system](consume-entities-best-practices.md#oracle-mashup) in ODC apps is currently not supported.
 

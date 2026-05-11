@@ -1,6 +1,11 @@
 ---
-tags: charting libraries, data visualization, highcharts integration, drag-and-drop ui, service studio chart tools
-summary: Explore customizable charting options in OutSystems 11 (O11) with the enhanced Charts API v2 and Highcharts 11.4.8 integration.
+tags:
+  - Blocks
+  - Front-End
+  - Screens
+  - UI
+  - Widgets
+summary: OutSystems 11 (O11) Charts API v2 reference covering chart types, add-ons, and Highcharts 12.5.0 client actions for customization.
 locale: en-us
 guid: CA58D796-3D68-4221-8DD8-33049ACEA9E5
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -13,6 +18,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Charts API v2
@@ -23,7 +29,7 @@ Available from OutSystems Charts v3.0.0. For more information on how to use the 
 
 </div>
 
-The Charts API v2 allows you to create, populate, and customize charts. OutSystems uses Highcharts 12.4.0 to generate the charts. For more information about implementation and the API, see the [Highcharts documentation](https://api.highcharts.com/highcharts/).
+The Charts API v2 allows you to create, populate, and customize charts. OutSystems uses Highcharts 12.5.0 to generate the charts. For more information about implementation and the API, refer to the [Highcharts documentation](https://api.highcharts.com/highcharts/).
 
 ## Charts
 

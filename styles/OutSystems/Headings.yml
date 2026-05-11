@@ -130,7 +130,6 @@ exceptions:
   - Variable
   - Web
   - WCAG 2.2 AA
-  - GetAcessToken
   - Create/Upgrade
   - JSON
   - Cordova-based
@@ -142,8 +141,6 @@ exceptions:
   - ViewState
   - WorkflowNewCustomerLoan
   - NSCameraUsageDescription
-  - ScanOrientation
-  - OS-BERT-60400
   - Intake
   - Enrichment
   - Underwriter
@@ -154,7 +151,6 @@ exceptions:
   - NaN
   - EXTRACT
   - AdvancedQuery
-  - GetWorkoutsData
   - Read-Only
   - Read-Write
   - LLM
@@ -168,7 +164,6 @@ exceptions:
   - Create/Upgrade
   
 # Events
-  - OnClick
   - On Click
   - On Initialize
   - On Ready
@@ -178,10 +173,6 @@ exceptions:
   - On Destroy
   - On Application Ready
   - On Application Resume
-  - OnSync
-  - SyncCompanies
-  - SyncContacts
-  - ServerDataSync
 # UI Patterns and Widgets
   - Action Sheet
   - Animated Label
@@ -223,7 +214,6 @@ exceptions:
   - IdP
   - IdPs
   - Azure
-  - BuildMessages
   - DOCX
   - Markdown
   - Microsoft Entra
@@ -231,7 +221,6 @@ exceptions:
   - Cascading Style Sheets
   - CSS
   - Chrome
-  - Code
   - Docker
   - DOM
   - Excel
@@ -246,11 +235,6 @@ exceptions:
   - iOS
   - Integrated Authentication
   - Kubernetes
-  - Loan Origination
-  - Package
-  - Store
-  - Tips
-  - Tricks
   - TypeScript
   - Windows
   - Visual Studio
@@ -282,9 +266,6 @@ exceptions:
   - NuGet
   - Key Store Plugin
   - Camera Plugin
-  - TakePhoto
-  - EditPhoto
-  - MediaResult
   - SAML
   - Plugin Manager
   - Phosphor
@@ -364,6 +345,7 @@ exceptions:
   - Jakarta
   - Europe
   - London
+
 # Certifications and Boot Camps
   - Associate Developer exam
   - Boot Camp
@@ -373,5 +355,6 @@ exceptions:
   - Platform Ops exam
   - Delivery Specialist exam
   - Web Developer Specialist exam
+
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b

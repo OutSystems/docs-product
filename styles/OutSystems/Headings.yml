@@ -294,6 +294,8 @@ exceptions:
   - ID
   - JavaScript
   - MCP
+  - MongoDB
+  - MySQL
   - Nginx
   - TLS
   - TLS

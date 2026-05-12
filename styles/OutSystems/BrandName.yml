@@ -4,4 +4,4 @@ scope: sentence
 level: error
 ignorecase: false
 raw:
-  - "(?:OutSystems'|OutSystems Platform)"
+  - "(?:OutSystems'|OutSystems Platform(?! Server))"

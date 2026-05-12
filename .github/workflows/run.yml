@@ -16,106 +16,55 @@ concurrency:
 jobs:
   pr-info:
     name: Pull Request / Info
-    runs-on: ubuntu-latest
-    steps:
-    - name: Find Pull Request
-      if: github.ref_name != github.event.repository.default_branch
-      id: PR
-      uses: 8BitJonny/gh-get-current-pr@4.0.0
-      with:
-        filterOutClosed: true
-        sha: ${{ github.event.pull_request.head.sha }}
-
-    - name: Merge Queue PR
-      id: merge-queue
-      if: github.event_name == 'merge_group'
-      uses: release-kit/regex@v1
-      with:
-        pattern: 'gh-readonly-queue\/.+\/pr-(?<pr>[0-9]+)-.*'
-        string: ${{ github.ref_name }}
-    
-    - name: 'Pull Request'
-      if: steps.PR.outputs.number != '' || steps.merge-queue.outputs.pr != ''
-      run: |
-        echo "::notice title=Pull Request ${{ '#' }}${{ steps.PR.outputs.number || steps.merge-queue.outputs.pr }}::This workflow execution is related to the Pull Request https://github.com/${{ github.repository }}/pull/${{ steps.PR.outputs.number || steps.merge-queue.outputs.pr }}" 
-
-    - name: Changed files
-      id: changed-files
-      if: (github.ref_name != github.event.repository.default_branch && steps.PR.outputs.number != '') || github.event_name == 'merge_group'
-      uses: MiguelDomingues/pull-request-changed-files@v1.0.3
-      with:
-        repository: ${{ github.repository }}
-        pull-request: ${{ steps.PR.outputs.number || steps.merge-queue.outputs.pr }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Check auto-merge
-      uses: reitermarkus/automerge@v2
-      if: vars.ENABLE_AUTO_MERGE && steps.PR.outputs.number != ''
-      with:
-        pull-request: ${{ steps.PR.outputs.number }}
-        token: ${{ secrets.TOOLS_PAT }}
-        do-not-merge-labels: never-merge,do not merge
-        required-labels: auto-merge
-
-    outputs:
-      changed-files: ${{ steps.changed-files.outputs.files }}
-      pull-request: ${{ steps.PR.outputs.number }}
-      pull-request-title: ${{ steps.PR.outputs.pr_title }}
-      skip-jira: ${{ github.ref_name != github.event.repository.default_branch && contains(steps.PR.outputs.pr_labels, 'skip-jira') }}
-      publish-dev: ${{ github.ref_name != github.event.repository.default_branch && contains(steps.PR.outputs.pr_labels, 'publish-dev') }}
+    uses: OutSystems/tk-cicd/.github/workflows/pr-info.yml@main
+    secrets: inherit
 
   jira:
     name: "JIRA"
     needs: [pr-info]
     if: needs.pr-info.outputs.pull-request != ''
-    uses: ./.github/workflows/jira-issue-pr.yml
+    uses: OutSystems/tk-cicd/.github/workflows/jira-issue-pr.yml@main
     secrets: inherit
     with:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
+      product-type: O11
 
   visual-assets:
     name: "Visual Assets"
     needs: [pr-info]
     if: needs.pr-info.outputs.pull-request != ''
-    uses: ./.github/workflows/visual-assets-pr.yml
+    uses: OutSystems/tk-cicd/.github/workflows/visual-assets-pr.yml@main
     secrets: inherit
     with:
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
       files: ${{ needs.pr-info.outputs.changed-files }}
   
   style-guide-validation:
-    name: Run style guide validation
+    name: Style Guide
     needs: [pr-info]
     if: needs.pr-info.outputs.changed-files != ''
-    uses: ./.github/workflows/style-guide-validation.yml
-    secrets: inherit
+    uses: OutSystems/tk-cicd/.github/workflows/style-guides-validation.yml@main
     with:
+      runner-type: "ubuntu-latest"
       changed-files: ${{ needs.pr-info.outputs.changed-files }}
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
-
-  style-guide-fixes:
-    name: Style Guide Fixes
-    needs: [pr-info, style-guide-validation]
-    if: always() && github.ref_name != github.event.repository.default_branch && needs.pr-info.outputs.changed-files != '' && github.event_name != 'merge_group' && needs.pr-info.result == 'success' && needs.style-guide-validation.result != 'cancelled'
-    uses: ./.github/workflows/style-guide-fixes.yml
-    with:
-      changed-files: ${{ needs.pr-info.outputs.changed-files }}
-      pull-request: ${{ needs.pr-info.outputs.pull-request }}
-    secrets: inherit
+      disable-suggestions: ${{ fromJSON(vars.DISABLE_STYLE_GUIDE_SUGGESTIONS) }}
+    secrets:
+      github-token: ${{ secrets.TOOLS_PAT }}
+      copilot-token: ${{ secrets.TK_COPILOT_TOKEN }}
 
   validate-toc:
     name: Validate files in TOC
-    needs: [pr-info]
+    needs: [pr-info, jira]
     if: needs.pr-info.outputs.changed-files != ''
-    uses: ./.github/workflows/validate-toc.yml
+    uses: OutSystems/tk-cicd/.github/workflows/validate-toc.yml@main
     with:
       changed-files: ${{ needs.pr-info.outputs.changed-files }}
     secrets: inherit
 
   auto-publish-documentation:
     name: Auto-publish documentation
-    needs: [pr-info]
+    needs: [pr-info, jira]
     if: github.event_name == 'pull_request' && needs.pr-info.outputs.changed-files != '' && github.event.pull_request.base.ref == github.event.repository.default_branch
     uses: OutSystems/tk-cicd/.github/workflows/auto-publish-documentation.yml@main
     with:
@@ -130,7 +79,7 @@ jobs:
   auto-fill:
     if: github.event_name == 'pull_request'
     uses: OutSystems/tk-cicd/.github/workflows/autofill-frontmatter.yml@main
-    needs: [pr-info]
+    needs: [pr-info, jira]
     with:
       GITHUB_REPOSITORY: ${{ github.repository }}
       PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
@@ -143,24 +92,24 @@ jobs:
 
   frontmatter:
     name: Frontmatter
-    uses: ./.github/workflows/validate-frontmatter.yml
+    uses: OutSystems/tk-cicd/.github/workflows/validate-frontmatter.yml@main
     needs: [pr-info, auto-fill]
     secrets: inherit
 
   validations:
     name: Misc validations
-    needs: [pr-info]
-    uses: ./.github/workflows/validations.yml
+    needs: [pr-info, jira]
+    uses: OutSystems/tk-cicd/.github/workflows/validations.yml@main
     secrets: inherit
     with:
       GITHUB_REPOSITORY: ${{ github.repository }}
       PR_NUMBER: ${{ needs.pr-info.outputs.pull-request }}
       TK_CICD_BRANCH: 'main'
 
-  metadata-updates:
-    name: Metadata
-    needs: [pr-info]
-    uses: OutSystems/tk-cicd/.github/workflows/metadata-updates.yml@main
+  ai-skills:
+    name: AI Skills
+    needs: [pr-info, tools]
+    uses: OutSystems/tk-cicd/.github/workflows/ai-skills.yml@main
     with:
       changed-files: ${{ needs.pr-info.outputs.changed-files }}
       pull-request: ${{ needs.pr-info.outputs.pull-request }}
@@ -171,8 +120,8 @@ jobs:
     
   tools:
     name: Tools
-    needs: [pr-info, frontmatter, metadata-updates, validate-toc]
-    uses: ./.github/workflows/build.yml
+    needs: [pr-info, frontmatter, validate-toc]
+    uses: OutSystems/tk-cicd/.github/workflows/documentation-build.yml@main
     secrets: inherit
 
   publish-dev:
@@ -186,3 +135,43 @@ jobs:
       changed-files: ${{ needs.pr-info.outputs.changed-files }}
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
+
+  translations:
+    name: Translations
+    if: always() && needs.tools.result == 'success' && github.ref_name == github.event.repository.default_branch
+    needs: [tools]
+    uses: OutSystems/tk-cicd/.github/workflows/update-translations.yml@main
+    with:
+      event: docs-product
+    secrets: inherit
+
+  vector-db:
+    name: VectorDB update
+    if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
+    uses: OutSystems/tk-cicd/.github/workflows/chroma-update.yml@main
+    with:
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      TK_CICD_BRANCH: 'main'
+    secrets: inherit
+
+  rdtkf-fix-pr-notify:
+    name: Notify Slack
+    if: github.event.action == 'labeled' && (github.event.label.name == 'ai-quick-fix' || github.event.label.name == 'ai-deep-fix')
+    uses: OutSystems/tk-cicd/.github/workflows/quick-fix-pr-slack-notify.yml@main
+    with:
+      repository: ${{ github.repository }}
+      pr_number: ${{ github.event.pull_request.number }}
+      pr_url: ${{ github.event.pull_request.html_url }}
+      pr_title: ${{ github.event.pull_request.title }}
+      pr_description: ${{ github.event.pull_request.body || '' }}
+      pr_label: ${{ github.event.label.name }}
+    secrets:
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_TK_BOT_TOKEN }}
+
+  qdrant-update:
+    name: Qdrant update
+    if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
+    uses: OutSystems/tk-cicd/.github/workflows/qdrant-update.yml@main
+    with:
+      GITHUB_REPOSITORY: ${{ github.repository }}
+    secrets: inherit

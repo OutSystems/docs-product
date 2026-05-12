@@ -1,24 +1,29 @@
 ---
-summary: Explore configuration management and script generation features in OutSystems 11 (O11) for efficient deployment across servers.
+summary: OutSystems 11 (O11) Configuration Tool File menu options for importing and exporting settings and generating SQL scripts for server setup.
 locale: en-us
 guid: c87ade70-83ff-4ba0-b333-9ce56da5c8f1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: configuration management, script generation, deployment, database setup, platform server configuration
+tags:
+  - Infrastructure
+  - Logging
+  - Platform Server
+  - Settings
+  - SQL
 audience:
   - Platform administrator
-  - Developer
-  - Tech lead
 outsystems-tools:
   - platform server
 coverage-type:
   - remember
+  - apply
+isautopublish: true
 ---
 
-# File Menu
+# File menu
 
-The **File menu** contains entires for import/export of the settings and configuration scripts.
+The **File menu** contains entries for import/export of the settings and configuration scripts.
 
 ## Import and export of configuration
 

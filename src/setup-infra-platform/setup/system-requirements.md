@@ -1,6 +1,12 @@
 ---
 summary: Explore the comprehensive system requirements for deploying OutSystems 11 (O11) across various platforms and configurations.
-tags: system requirements, on-premises installation, windows server, hardware requirements, software compatibility
+tags:
+  - .NET
+  - External Databases
+  - Infrastructure
+  - Platform Server
+  - Security
+  - SQL
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -12,31 +18,35 @@ audience:
 outsystems-tools:
   - platform server
 coverage-type:
-  - understand
+  - remember
 topic:
   - download-and-set-up
+isautopublish: true
 ---
 
-# OutSystems system requirements
+# OutSystems 11 system requirements
 
 <div class="info" markdown="1">
 
 This article applies to: **OutSystems 11**&#8195;&#8195;Other version available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_system_requirements)
+
 </div>
 
 Before installing OutSystems on-premises, verify that your setup meets the hardware and software requirements outlined in this article. To start the installation, refer to [Setting Up OutSystems](intro.md).
 
-## Platform server
+## Platform Server {#platform-server}
 
 The following are the requirements for installing the Platform Server in your data center.
 
-### Hardware (minimum requirements)
+### Hardware {#ps-hardware}
+
+The following are the minimum hardware requirements for each server machine running the Platform Server:
 
 * Dual-core processor
 * 4 GB of RAM
 * 80 GB of free disk space
 
-### Operating system
+### Operating system {#ps-operating-system}
 
 * Microsoft Windows Server 2025 (Standard Edition or higher edition), since Platform Server 11.35.0<sup>1</sup>
 * Microsoft Windows Server 2022 (Standard Edition or higher edition), since Platform Server 11.20.0<sup>1</sup>
@@ -56,11 +66,11 @@ The supported Operating System configurations must be deployed on bare metal or 
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
-### Application server
+### Application server {#ps-application-server}
 
 * Microsoft Internet Information Services (IIS) 10.0 or higher configured with a valid SSL certificate issued by a public certificate authority. The SSL Certificate can alternatively be installed at a load balancer or reverse proxy level in [end-to-end SSL and SSL offloading](https://success.outsystems.com/documentation/how_to_guides/infrastructure/using_outsystems_in_reverse_proxy_scenarios/outsystems_configurations_in_reverse_proxy_scenarios/#ssl-offloading) configurations.
 
-### Database management system
+### Database management system {#ps-database}
 
 Use the same type of database engine for all three 3 databases in Platform Server (platform and apps, logs, and session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
 
@@ -95,7 +105,7 @@ Future revisions of OutSystems may require the installation of an update within 
 
 </div>
 
-### Additional software requirements
+### Additional software requirements {#ps-additional-software}
 
 * Microsoft .NET Framework, one of the following, depending on the Platform Server version:
     * 4.8.1<sup>1</sup> : supported since Platform Server 11.35.0
@@ -124,7 +134,7 @@ Future revisions of OutSystems may require the installation of an update within 
 
 </div>
 
-### FIPS-compliance
+### FIPS-compliance {#fips-compliance}
 
 From version 11.38.0 onwards, the Platform Server can be installed on FIPS-compliant systems.
 
@@ -140,7 +150,7 @@ To be able to achieve FIPS-compliance, customers must:
 
 </div>
 
-## Cache invalidation service
+## Cache invalidation service {#cache-invalidation}
 
 RabbitMQ Server and Erlang version numbers follow the format: Major.Minor.Patch. OutSystems Platform Server versions require minimum Patch versions of RabbitMQ Server and Erlang.
 
@@ -172,7 +182,7 @@ During Platform Server installation, OutSystems provides a script that simplifie
 
 Alternatively, you can use an existing RabbitMQ Server and Erlang installation if it fulfills the same version requirements.
 
-## Amazon EC2 considerations
+## Amazon cloud server considerations {#amazon-server}
 
 OutSystems can run on Amazon EC2 instances. Each instance must fulfill one of the following requirements:
 
@@ -184,7 +194,7 @@ For more information on how to enable `Amazon EC2Launch` service, refer to [Amaz
 
 For more information on how to enable `EC2Config` service, refer to [Amazon EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
 
-## Amazon RDS considerations
+## Amazon database considerations {#amazon-database}
 
 OutSystems supports Microsoft SQL Server 2019 or higher and compatibility level 150 (since Platform Server 11.12.0), Microsoft SQL Server 2016, Microsoft SQL Server 2017 and Oracle 19c on Amazon RDS.
 
@@ -209,7 +219,7 @@ Oracle 19c on Amazon RDS is supported since Platform Server 11 – Release Oct.2
 
 For more information on the available DB instance classes, refer to [Amazon's DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html).To learn more about Amazon RDS limitations, refer to [Amazon RDS System Requirements](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html).
 
-## Microsoft Azure considerations
+## Microsoft Azure considerations {#azure-considerations}
 
 OutSystems supports Microsoft Azure SQL Database with the following considerations:
 
@@ -222,25 +232,25 @@ OutSystems supports Microsoft Azure SQL Database with the following consideratio
 
 OutSystems also supports SQL Server running on an Azure virtual machine.
 
-## Integration with external systems
+## Integration with external systems {#external-systems}
 
 The following systems are certified to integrate with OutSystems.
 
-### SQL Server database
+### SQL Server database {#sql-server}
 
 * Supported versions<sup>1</sup> and respective supported compatibility levels:
 
-    |  2016    |  2017       |  2019           |  2022            | 2025 |
-    |----------|-------------|-----------------|------------------|------|
-    |  130     |  130, 140   |  130, 140, 150  |  130, 140, 150   | 130, 140, 150 |
+| 2016 | 2017 | 2019 | 2022 | 2025 |
+| ---------- | ------------- | ----------------- | ------------------ | ------ |
+| 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150 |
 
 <sup>1</sup> Versions 2008 to 2014 stopped being supported from Platform Server version 11.33 onwards.
 
-### Azure SQL database
+### Azure SQL database {#azure-sql}
 
 * Azure SQL Database with compatibility level between 130 and 150
 
-### Oracle database
+### Oracle database {#oracle}
 
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 
@@ -258,7 +268,7 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 </div>
 
-### MySQL database
+### MySQL database {#mysql}
 
 * MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)<sup>1</sup>
 * MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)<sup>1</sup>
@@ -267,7 +277,7 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 <sup>1</sup> This version is no longer supported by MySQL and isn't supported by OutSystems starting with Platform Server version 11.32.0.
 
-### PostgreSQL database
+### PostgreSQL database {#postgresql-database}
 
 * PostgreSQL 12.x.x, since Platform Server 11.15.0<sup>1</sup>
 * PostgreSQL 13.x.x, since Platform Server 11.15.0<sup>2</sup>
@@ -276,11 +286,11 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 <sup>1</sup> This version is no longer supported by PostgreSQL and isn't supported by OutSystems starting with Platform Server version 11.38.0.
 <sup>2</sup> This version is no longer supported by PostgreSQL and isn't supported by OutSystems starting with Platform Server version 11.40.0.
 
-### Aurora PostgreSQL database
+### Aurora PostgreSQL database {#aurora-postgresql}
 
 * Aurora PostgreSQL database available in the cloud running a version compatible with a [supported PostgreSQL database](#postgresql-database), since Platform Server 11.15.0
 
-### IBM database
+### IBM database {#ibm}
 
 * DB2 for iSeries V6R1 or higher
 * **OutSystems** supports integration with DB2 databases hosted in iSeries machines only. It doesn't support integration with DB2 databases hosted in Unix, Linux, or Windows.
@@ -293,7 +303,7 @@ The use of double-byte characters with DB2 databases isn't supported.
 
 </div>
 
-### MongoDB database
+### MongoDB database {#mongodb}
 
 * MongoDB Atlas and on-premises
 * MongoDB 4.X
@@ -301,45 +311,51 @@ The use of double-byte characters with DB2 databases isn't supported.
 * MongoDB 6.X
 * MongoDB 7.0
 
-### SAP
+### SAP {#sap}
 
 * SAP ERP R/3 4.6 or higher
 * SAP ECC 5.0 or higher
 * SAP S/4HANA
 
-## Development tools
+## Development tools {#development-tools}
 
 To develop your applications using OutSystems, you must install **Service Studio** and **Integration Studio** development tools on your desktop.
 You can download the latest version of development tools from the [OutSystems downloads page](https://www.outsystems.com/Downloads/).
 
-### Service Studio
+<div class="info" markdown="1">
 
-Before setting up Service Studio make sure that your computer meets the following requirements:
+Service Studio and Integration Studio are certified for developer use on the operating systems listed below. Service and Integration Studio are also installed on Platform Server as a required component; in that context, they're certified for use by the platform itself, not for interactive development. For supported operating systems to be used by the platform, see [Platform Server operating system requirements](#ps-operating-system).
 
-### Hardware (minimum requirements)
+OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple.
+
+</div>
+
+### Hardware requirements {#studio-hardware}
+
+To install Service Studio and Integration Studio, your computer must meet the following minimum hardware requirements:
 
 * 1.8 GHz dual-core processor or better
 * 2 GB of RAM (4 GB recommended)
 * 1 GB of free disk space
 
-#### Operating System
+### Service Studio {#service-studio}
 
-**macOS (cross-platform Service Studio only):**
+Before setting up Service Studio make sure that your computer meets the following requirements:
+
+#### Operating system {#ss-os}
+
+On Windows, the following versions are supported:
+
+* Windows 11 (64-bit) since Service Studio 11.54.45
+* Windows 10 (64-bit)
+
+On macOS (cross-platform Service Studio only), the following versions are supported:
 
 * macOS Tahoe since Service Studio 11.55.45
 * macOS Sequoia since Service Studio 11.55.0
 * macOS Sonoma since Service Studio 11.54.60
 
-**Windows:**
-
-* Windows 11 (64-bit) since Service Studio 11.54.45
-* Windows 10 (64-bit)
-* Microsoft Windows Server 2019
-* Microsoft Windows Server 2016
-
- OutSystems only supports Windows and macOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple, respectively.
-
-#### Required software
+#### Required software {#ss-software}
 
 * Google Chrome version 54 or later, or Microsoft Edge (Edge is only available for Service Studio running on Windows)
 :   To perform client-side debugging in Service Studio using a  desktop browser
@@ -348,40 +364,32 @@ Before setting up Service Studio make sure that your computer meets the followin
 * iTunes 12.1.3 or later
 :   To perform client-side debugging on an iOS mobile device
 
-### Integration Studio
+### Integration Studio {#integration-studio}
 
 The installation requirements for Integration Studio are as follows:
 
-#### Hardware (minimum requirements)
-
-* 1.8 GHz dual-core processor (or better)
-* 2 GB of RAM (4 GB recommended)
-* 1 GB of free disk space
-
-Limitations:
-
-* The touch feature of touch screen devices isn't supported. However, you can use touch screen devices with a keyboard and mouse.
-
-#### Operating System
+#### Operating system {#is-os}
 
 * Windows 11 (64-bit) since Integration Studio 11.14.23
 * Windows 10 (64-bit)
-* Microsoft Windows Server 2019, since Development Environment 11.6.5
-* Microsoft Windows Server 2016
 
-OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
-
-#### Required software
+#### Required software {#is-software}
 
 * Microsoft .NET Framework 4.7.2 (or higher)
 * Visual Studio 2015, Visual Studio 2017, or Visual Studio 2019 (since development environment 11.6.7)
 :   To integrate with external systems using Integration Studio and to edit source code extension actions
 
-## End user requirements
+<div class="info" markdown="1">
+
+The touch feature of touch screen devices isn't supported. However, you can use touch screen devices with a keyboard and mouse.
+
+</div>
+
+## End user requirements {#end-user}
 
 Running an OutSystems app on a browser is supported for 6 months after the end-of-support date announced by OutSystems for that browser.
 
-### Reactive Web apps
+### Reactive web apps {#reactive-apps}
 
 Use the most current stable version of the following browsers:
 
@@ -390,20 +398,18 @@ Use the most current stable version of the following browsers:
 * Google Chrome
 * Safari
 
-### Progressive Web Apps
+### Progressive web apps {#progressive-apps}
 
 * Default browser for the latest stable version of Android
 * Default browser for the latest stable version of iOS
 
-### Mobile App packages
+### Mobile app packages {#mobile-packages}
 
 For more information on the supported Android and iOS platform versions, refer to [Mobile Apps Build Service (MABS)](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions)
 
-### Traditional Web apps
+### Traditional web apps {#traditional-apps}
 
-**Desktop browsers**
-
-Use the most current stable version of the following browsers:
+Use the most current stable version of the following desktop browsers:
 
 * Internet Explorer
 * Edge
@@ -411,7 +417,7 @@ Use the most current stable version of the following browsers:
 * Google Chrome
 * Safari
 
-**Mobile device browsers**
+For mobile devices, the following default browsers are supported:
 
 * Default browser for iOS 7 or higher
 * Default browser for Android 4.1 or higher

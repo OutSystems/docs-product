@@ -1,19 +1,27 @@
 ---
-summary: Explore DevOps and ALM integration in OutSystems 11 (O11) for streamlined software development and operations.
+summary: "OutSystems 11 (O11) DevOps and ALM built-in capabilities span the full lifecycle: TrueChange, 1-Click Publish, LifeTime deployment, testing, and security."
 guid: 17b6007b-d151-40bd-83b3-3e16ec524880
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3942-319&t=yFA2dg85pciiAiog-1
-tags: devops, alm integration, software development, legacy modernization, continuous integration/continuous deployment
+tags:
+  - CI/CD
+  - Deploy
+  - Development lifecycle
+  - Lifecycle
+  - Monitoring
+  - Security
+  - Testing
 audience:
-  - Developer
   - Architect
+  - Developer
 outsystems-tools:
   - none
 coverage-type:
   - evaluate
   - understand
+isautopublish: true
 ---
 
 # DevOps and ALM in OutSystems
@@ -57,7 +65,7 @@ To be clear, OutSystems does not pretend to be all things to all people. Our Dev
 
 Planning is a crucial first step for any complex endeavor, and for a software factory it is the crux of the DevOps loop. There is a plethora of resources available that outline planning methods and techniques. Among the most useful for software development is prototyping: translating business requirements and workflows into a wireframe working model, using it as a basis to create high-fidelity mockups and provide a good overview of the application’s look and feel—and only then proceed with development.
 
-Read [Front-End Journey: From Mockups to Code](https://success.outsystems.com/documentation/best_practices/development/front_end_journey_from_mockups_to_code/) for a description of prototyping in Outsystems.
+Read [Front-End Journey: From Mockups to Code](../../building-apps/ui/front-end/front-end-journey.md) for a description of prototyping in OutSystems.
 
 ## Develop
 
@@ -70,17 +78,17 @@ To fill this expertise gap, many companies have adopted low-code software develo
 
 The OutSystems platform straddles multiple steps of the DevOps loop by consolidating coding, validation, and building using a combination of automation, AI, and analytics.
 
-[Service Studio](https://success.outsystems.com/Documentation/11/Getting_started/Service_Studio_Overview), the Outsystems visual development environment, is not meant to replace experienced coders. Instead, it vastly increases their productivity with [AI-assisted development](https://success.outsystems.com/documentation/11/developing_an_application/implement_application_logic/code_mentor_logic_suggestions/), which predicts what is needed as logic or workflow is being built—and even gives a choice of the most likely properties for newly created nodes. At the same time, colleagues with different skill sets can develop anything from simple departmental applications to more complex mission-critical enterprise apps—all without the need to write a single line of code. And, unlike many low-code offerings, OutSystems does not lock developers into a limited number of blocks, modules, and components. OutSystems is endlessly extensible, and developers with expertise in classical coding can use their skills to expand built-in capabilities to fulfill specific use cases.
+[Service Studio](../../getting-started/service-studio.md), the OutSystems visual development environment, is not meant to replace experienced coders. Instead, it vastly increases their productivity with [AI-assisted development](../../building-apps/logic/ai-assisted-dev.md), which predicts what is needed as logic or workflow is being built—and even gives a choice of the most likely properties for newly created nodes. At the same time, colleagues with different skill sets can develop anything from simple departmental applications to more complex mission-critical enterprise apps—all without the need to write a single line of code. And, unlike many low-code offerings, OutSystems does not lock developers into a limited number of blocks, modules, and components. OutSystems is endlessly extensible, and developers with expertise in classical coding can use their skills to expand built-in capabilities to fulfill specific use cases.
 
 Here are the steps of the OutSystems **Develop** stage:
 
-1. **TrueChange™** acts as an “always-on-call” QA department, identifying architecture errors, faulty logic, and broken dependencies—during development, in real time—directing developers to the source of the problem along with suggestions on how to correct it.
+1. **TrueChange** acts as an “always-on-call” QA department, identifying architecture errors, faulty logic, and broken dependencies—during development, in real time—directing developers to the source of the problem along with suggestions on how to correct it.
 1. **1-Click Publish** deploys a module to the current environment only after all detected errors have been fixed.
-1. **Compare and Merge** identifies any conflicts that may have been previously published by other developers so they can be corrected.
+1. **Compare and merge** identifies any conflicts that may have been previously published by other developers so they can be corrected.
 
-### [TrueChange™](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems#TrueChange™)
+### TrueChange
 
-When a developer makes changes to a model, the **TrueChange™** engine provides immediate feedback on its impact. By inspecting the model for consistency—a method similar to syntactic and semantic analysis used in classical coding—**TrueChange** checks if the model is well-formed and well-typed, and, at the same time, detects many other problems, including those that may lead to performance issues, marking them accordingly for followup.
+When a developer makes changes to a model, the [**TrueChange**](../../monitor-and-troubleshoot/manage-tech-debt/handling-tech-debt/handling-tech-debt.md#truechange) engine provides immediate feedback on its impact. By inspecting the model for consistency—a method similar to syntactic and semantic analysis used in classical coding—**TrueChange** checks if the model is well-formed and well-typed, and, at the same time, detects many other problems, including those that may lead to performance issues, marking them accordingly for followup.
 
 In the image below, **TrueChange** has identified two errors, noted three unused arguments, and given a warning about a security concern. Clicking links in the **TrueChange** tab brings the developer to the issue to be corrected.
 
@@ -90,13 +98,13 @@ Most importantly, the module cannot be built until all errors have been resolved
 
 ### 1-Click Publish
 
-**1-Click Publish** does what it says: replaces the pain of compilation, integration, troubleshooting, and bug hunting with a single click, encouraging frequent publication so developers can verify that none of their changes, large or small, will break anything.
+**1-Click Publish** does what it says: replaces the pain of compilation, integration, troubleshooting, and bug hunting with a single click, encouraging frequent publication so developers can verify that none of their changes, large or small, break anything.
 
-### Compare and Merge
+### Compare and merge
 
-In environments where many developers work on the same module at the same time, [Compare and Merge](https://success.outsystems.com/documentation/best_practices/lifecycle/handling_technical_debt_with_outsystems/#compare-and-merge) first tries to merge new code with the changes that other developers published in the meantime. If automatic integration is not possible, the developer can review the results in the **Compare and Merge** window, as seen in the image below. Drilling down into conflicts, shown in red, displays the changes between the versions. Once the conflicts have been reconciled and all of the merges approved, the app can then be published.
+In environments where many developers work on the same module at the same time, [compare and merge](../../monitor-and-troubleshoot/manage-tech-debt/handling-tech-debt/handling-tech-debt.md#compare-and-merge) first tries to merge new code with the changes that other developers published in the meantime. If automatic integration is not possible, the developer can review the results in the **Compare and Merge** window, as seen in the image below. Drilling down into conflicts, shown in red, displays the changes between the versions. Once the conflicts have been reconciled and all of the merges approved, the app can then be published.
 
-![Screenshot of the Compare and Merge window in OutSystems Service Studio indicating conflicts.](images/conflicts-detected.png "Conflicts Detected")
+![Screenshot of the compare and merge window in OutSystems Service Studio indicating conflicts.](images/conflicts-detected.png "Conflicts Detected")
 
 To supercharge the development process, OutSystems offers the following design tools:
 
@@ -104,7 +112,7 @@ To supercharge the development process, OutSystems offers the following design t
 
 ### Workflow Builder
 
-[Workflow Builder](https://success.outsystems.com/documentation/11/developing_an_application/create_case_management_and_workflow_apps/create_workflow_apps_with_workflow_builder/) is an IT-governed tool that allows anyone in the organization who designs and manages workflows to quickly build apps for task management and automation, thus extending the team of in-house app developers.
+[Workflow Builder](../../building-apps/case-management-workflow/workflow-builder/intro.md) is an IT-governed tool that allows anyone in the organization who designs and manages workflows to quickly build apps for task management and automation, thus extending the team of in-house app developers.
 
 ![Screenshot of the Workflow Builder interface in OutSystems.](images/untap-talent-deliver-apps-figure-v3.png "Workflow Builder Interface")
 
@@ -118,15 +126,13 @@ While a workflow app can be designed from scratch, **Workflow Builder** includes
 * Approval request
 * Issue report
 
-A workflow app, as it evolves, may outgrow its original design. For example, its scope may expand to require a feature that is not available in **Workflow Builder**, such as integration with an outside service like SAP or Salesforce. In this case, [the workflow app can be converted](https://success.outsystems.com/documentation/11/developing_an_application/create_case_management_and_workflow_apps/create_workflow_apps_with_workflow_builder/converting_a_workflow_builder_app_to_service_studio/) to **Service Studio**, where it can continue to be developed with all of the capabilities available in the OutSystems platform.
-
-Once stakeholders are satisfied with the user journeys of the mobile app, it can be [opened for further development](https://success.outsystems.com/documentation/11/developing_an_application/create_mobile_apps_with_experience_builder/extend_your_experience_builder_app_in_service_studio/) in **Service Studio**.
+A workflow app, as it evolves, may outgrow its original design. For example, its scope may expand to require a feature that is not available in **Workflow Builder**, such as integration with an outside service like SAP or Salesforce. In this case, [the workflow app can be converted](../../building-apps/case-management-workflow/workflow-builder/how-convert-service-studio.md) to **Service Studio**, where it can continue to be developed with all of the capabilities available in the OutSystems platform.
 
 ## Test
 
-No one disputes the importance of testing throughout the application lifecycle. The heat in the discussion comes from details about automation, techniques, priorities, budget allocations, and team resources. However, everyone agrees that, if there were an ideal solution, it would be fast, efficient, automatic—and would catch that bug lurking in production which will soon be discovered by a dissatisfied user.
+No one disputes the importance of testing throughout the application lifecycle. The heat in the discussion comes from details about automation, techniques, priorities, budget allocations, and team resources. However, everyone agrees that, if there were an ideal solution, it would be fast, efficient, automatic—and would catch that bug lurking in production, soon to be discovered by a dissatisfied user.
 
-OutSystems gives your factory a step up in this testing quest. Self-healing capabilities automatically correct problems and notify developers of any issues they must handle. Continuous integrity validation tracks dependencies, automates database updates, and analyzes the impact on running applications throughout their lifecycles, ensuring that nothing is broken at deployment time. A [deployment plan](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/deployment_plans/) assesses the impact of moving applications to a target environment, checks software package integrity, validates the overall quality of application—including a set of functional, performance, and security criteria.
+OutSystems gives your factory a step up in this testing quest. Self-healing capabilities automatically correct problems and notify developers of any issues they must handle. Continuous integrity validation tracks dependencies, automates database updates, and analyzes the impact on running applications throughout their lifecycles, ensuring that nothing is broken at deployment time. A [deployment plan](../deployment-plans.md) assesses the impact of moving applications to a target environment, checks software package integrity, validates the overall quality of application—including a set of functional, performance, and security criteria.
 
 When compared to traditional development technologies, the OutSystems platform results in fewer bugs, reduced test-and-fix cycles, and a more streamlined development and deployment pipeline. However, this does not eliminate the need for testing during the application lifecycle. So the original questions remain: how and where and when.
 
@@ -134,7 +140,7 @@ When compared to traditional development technologies, the OutSystems platform r
 
 While the specifics vary, there is a general consensus about testing. Especially with agile development practices, DevOps culture, and continuous integration and continuous deployment, a strategy to integrate automated tests is vital so teams can move fast—and move with confidence.
 
-There is no way to automate everything, and such an effort would prove self-defeating. Deciding which tests to automate requires a cost-benefit analysis: to make sure that the results will justify the effort of writing and maintaining automated test scripts. The [OutSystems Testing Guidelines](https://www.outsystems.com/tk/redirect?g=5b8189ce-c413-481c-ba0a-ef1598996630)give a detailed overview, and a workplan, for setting up automatic testing.
+There is no way to automate everything, and such an effort would prove self-defeating. Deciding which tests to automate requires a cost-benefit analysis: to make sure that the results justify the effort of writing and maintaining automated test scripts. The [OutSystems Testing Guidelines](../../testing-apps/automated-testing/testing-guidelines.md) give a detailed overview, and a workplan, for setting up automatic testing.
 
 A key concept for successful testing is to write testable applications: distributing functionality into small, testable pieces. In OutSystems, this means adopting a multi-layer framework architecture that promotes the correct abstraction of reusable services and components. [AI Mentor Studio](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment, classifying every architecture module into its correct class.
 
@@ -147,6 +153,8 @@ The tests described below are easily available and field-tested, but they don't 
 ### Component tests
 
 [Component tests](https://www.outsystems.com/tk/redirect?g=0f836bfe-225b-41b0-851e-91b04544362c) validate the behavior of single units of code. These tests correspond to unit tests in traditional high-code technologies. In OutSystems, these map to action elements that implement business logic.
+
+The [Unit Testing Framework](https://www.outsystems.com/forge/component-overview/387/unit-testing-framework) is an open-source Forge application that lets you develop and run unit tests for your OutSystems projects. For behavior-driven testing, OutSystems offers the BDD test framework described next.
 
 #### BDD test framework
 
@@ -163,33 +171,23 @@ Each test is built using the following syntax:
 
 See the [Complete Guide To BDD Testing In OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) for instructions about setting up a BDD framework.
 
-#### Unit Testing Framework
-
-[Unit Testing Framework](https://www.outsystems.com/forge/component-overview/387/unit-testing-framework), an open-source application freely available from the Forge, allows you to easily develop and run unit tests for your OutSystems projects.
-
 ### Integration tests
 
-[Integration tests](https://success.outsystems.com/documentation/11/testing_your_application/outsystems_testing_guidelines/integration/api_testing/#api-integration-tests), often called API tests, validate integration with external systems, such as a middleware layer, or a direct integration with any other independent system, such as applications that expose APIs to external parties.  
+[Integration tests](../../testing-apps/automated-testing/integration-api-testing.md#api-integration-tests), often called API tests, validate integration with external systems, such as a middleware layer, or a direct integration with any other independent system, such as applications that expose APIs to external parties.
 
-#### BDD test framework
+The following Forge components support integration testing:
 
-[BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework), described above, can also be used to write integration tests.
-
-#### TestFramework
-
-[TestFramework](https://www.outsystems.com/forge/component-overview/2464/testframework), an open-source application freely available from the Forge,  offers simple management and automated execution of OutSystems unit and API tests. With seamless integration with [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework) and [Unit Testing Framework](https://www.outsystems.com/forge/component-overview/387/unit-testing-framework), it provides automated setup and execution of regression tests, and with [Ghost Inspector](https://www.outsystems.com/forge/component-overview/1316/ghost-inspector) integration, it allows the inclusion of automated UI tests in the test suites.
+* **[BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework)**, described above, can also be used to write integration tests.
+* **[TestFramework](https://www.outsystems.com/forge/component-overview/2464/testframework)** — an open-source application that offers simple management and automated execution of OutSystems unit and API tests. With seamless integration with [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework) and [Unit Testing Framework](https://www.outsystems.com/forge/component-overview/387/unit-testing-framework), it provides automated setup and execution of regression tests, and with [Ghost Inspector](https://www.outsystems.com/forge/component-overview/1316/ghost-inspector) integration, it allows the inclusion of automated UI tests in the test suites.
 
 ### E2E tests
 
-[End-to-End (E2E) tests](https://www.outsystems.com/tk/redirect?g=7b8f66bb-5f78-4ff7-8248-85d4a25b6589), also called system tests, validate complete functionality from an end-user or system perspective. End-to-end tests are typically executed through a web or mobile user interface, though not all E2E tests are UI tests. Because of the complexity of developing a testing script and the high maintenance required, typically such tests are limited to critical use cases, particularly ones with happy paths.
+[End-to-End (E2E) tests](../../testing-apps/automated-testing/web-ui-testing.md), also called system tests, validate complete functionality from an end-user or system perspective. End-to-end tests are typically executed through a web or mobile user interface, though not all E2E tests are UI tests. Because of the complexity of developing a testing script and the high maintenance required, typically such tests are limited to critical use cases, particularly ones with happy paths.
 
-#### BDD test framework
+The following components support E2E testing:
 
-[BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework), described above, can also be used to write E2E tests.
-
-#### Ghost Inspector
-
-[Ghost Inspector](https://www.outsystems.com/forge/component-overview/1316/ghost-inspector) is an automated website testing and monitoring service that checks for problems with your website or application. It carries out operations in a browser, the same way a user would, to ensure that everything is working properly.
+* **[BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework)**, described above, can also be used to write E2E tests.
+* **[Ghost Inspector](https://www.outsystems.com/forge/component-overview/1316/ghost-inspector)** is an automated website testing and monitoring service that checks for problems with your website or application. It carries out operations in a browser, the same way a user would, to ensure that everything is working properly.
 
 ### Other testing tools
 
@@ -208,13 +206,13 @@ Because OutSystems generates standard applications, any testing framework or ven
 
 ## Deploy
 
-In OutSystems, deployment means moving a [tagged version](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/tag_a_version/) of an application from one environment to another, starting in development and ultimately reaching production and the outside world.
+In OutSystems, deployment means moving a [tagged version](../tag-a-version.md) of an application from one environment to another, starting in development and ultimately reaching production and the outside world.
 
-[LifeTime](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/), the OutSystems unified console for all environments in your infrastructure, plays an important part in every stage of DevOps. Among its [deployment](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/deploy_an_application/) functions are the following:
+[LifeTime](../../manage-platform-app-lifecycle/intro.md), the OutSystems unified console for all environments in your infrastructure, plays an important part in every stage of DevOps. Among its [deployment](../deploy-an-application.md) functions are the following:
 
-* [Tagging published modules](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/tag_a_version/): Developers can take a snapshot of the application and its modules, tag it with a version number, and then use it for deployment.
-* [Deploying an Application](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/deploy_an_application/): Developers select a tagged application to move from one environment to another.
-* [Rollback to a Previous Version](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/rollback_to_a_previous_version/): An application can be rolled back to its previous version in case a critical bug is detected.
+* [Tagging published modules](../tag-a-version.md): Developers can take a snapshot of the application and its modules, tag it with a version number, and then use it for deployment.
+* [Deploying an Application](../deploy-an-application.md): Developers select a tagged application to move from one environment to another.
+* [Rollback to a Previous Version](../rollback-to-a-previous-version.md): An application can be rolled back to its previous version in case a critical bug is detected.
 
 The figure below shows the first step of deploying a tagged app to production:
 
@@ -224,11 +222,11 @@ The figure below shows the first step of deploying a tagged app to production:
 
 But wait—isn’t release part of the “deploy” stage? Isn’t that what “deploy” means in the first place?
 
-Well, yes and no—or, in other words, it depends. The confusion may stem from an [ambiguity of the meaning of CI/CD](https://www.outsystems.com/blog/posts/continuous-delivery-vs-continuous-deployment/). The “D” is sometimes said to refer to “deploy,” sometimes to “deliver.” Occasionally what one enterprise calls “deliver” another calls “deploy,” and vice versa.
+Well, yes and no—or, in other words, it depends. The confusion may stem from an [ambiguity of the meaning of CI/CD](https://www.outsystems.com/application-development/software-development-guide/what-is-cicd-continuous-integration-and-delivery/). The “D” is sometimes said to refer to “deploy,” sometimes to “deliver.” Occasionally what one enterprise calls “deliver” another calls “deploy,” and vice versa.
 
 “Release” is a modest attempt to clear up the confusion.
 
-In the OutSystems DevOps model, a deployed app means that it has been moved to the next environment—but the timing of the final step, to production, is a business decision. Some enterprises do not want to leave this stage to an automated CI/CD pipeline. For these companies, a release candidate is first deployed to a pre-production environment where it can get a real workout, with real users and real data, where it can undergo additional load testing and performance testing—and, only then, will an authorized person manually approve it for release.
+In the OutSystems DevOps model, a deployed app means that it has been moved to the next environment—but the timing of the final step, to production, is a business decision. Some enterprises do not want to leave this stage to an automated CI/CD pipeline. For these companies, a release candidate is first deployed to a pre-production environment where it can get a real workout, with real users and real data, where it can undergo additional load testing and performance testing—and only then does an authorized person manually approve it for release.
 
 <div class="info" markdown="1">
 
@@ -248,31 +246,31 @@ When new code vulnerabilities are found in generated code, fixes are included in
 
 OutSystems complies with, and accelerates the implementation of, common security requirements using built-in security tools.
 
-#### [Application security checks](https://www.outsystems.com/evaluation-guide/outsystems-security-overview/#security-checks)
+#### Application security checks
 
-[Service Studio](https://success.outsystems.com/documentation/11/getting_started/service_studio_overview/) warns the developer at design time about potentially unsafe application patterns. Detected risks include code injection attacks, cross-site scripting, unvalidated redirects, and violation of data isolation when querying different databases.
+[Service Studio](../../getting-started/service-studio.md) warns the developer at design time about [potentially unsafe application patterns](https://www.outsystems.com/evaluation-guide/outsystems-security-overview/#security-checks). Detected risks include code injection attacks, cross-site scripting, unvalidated redirects, and violation of data isolation when querying different databases.
 
-#### [Identity management](https://www.outsystems.com/evaluation-guide/outsystems-security-overview/#identity-mgmt)
+#### Identity management
 
-OutSystems automatically includes built-in logic for the following[end-user authentication](https://success.outsystems.com/documentation/11/developing_an_application/secure_the_application/end_users/end_users_authentication/) methods, including [single sign-on](https://success.outsystems.com/documentation/how_to_guides/integrations/how_to_configure_outsystems_to_use_identity_providers_using_saml/) (SSO):
+OutSystems automatically includes built-in logic for the following[end-user authentication](../../user-management/end-user-manage/end-user-authentication/intro.md) methods, including [single sign-on](../../user-management/end-user-manage/end-user-authentication/configure-saml.md) (SSO):
 
 * **Internal** authentication, the default method, stores end user information in the OutSystems database, but not the credentials. Instead, a cryptographic hash function is computed using the credentials—and only its result is stored. When the end user attempts to log in, the hash function is computed again and its result is compared with the database.
-* **[Active Directory](https://success.outsystems.com/documentation/11/developing_an_application/secure_the_application/end_users/end_users_authentication/configure_active_directory_authentication/)** uses your Active Directory to authenticate end users. It is available only in self-managed installations.
-* **[LDAP](https://success.outsystems.com/documentation/11/developing_an_application/secure_the_application/end_users/end_users_authentication/configure_ldap_authentication/)**, the Lightweight Directory Access Protocol method, authenticates the end user against your LDAP server, using either LDAP configured for Active Directory or standard LDAP.
-* **[SAML 2.0](https://success.outsystems.com/documentation/11/developing_an_application/secure_the_application/end_users/end_users_authentication/configure_saml_2.0_authentication)**, Security Assertion Markup Language, is used in both traditional web apps and reactive web apps to authenticate end users with Single Sign-On (SSO) provided by commercial identity provider companies, such as [OneLogin](https://www.onelogin.com/) and [PingFederate](https://www.pingidentity.com/en/resources/downloads/pingfederate.html).
-* **[Azure AD](https://success.outsystems.com/documentation/11/developing_an_application/secure_the_application/end_users/end_users_authentication/configure_azure_ad_authentication/)** uses SAML-based authentication to authenticate end users with Single Sign-On (SSO) provided by the Azure AD Identity Provider.
-* **[Okta](https://success.outsystems.com/documentation/11/developing_an_application/secure_the_application/end_users/end_users_authentication/configure_okta_authentication/)** uses SAML-based authentication to authenticate the end users with Single Sign-On (SSO) provided by Okta.
+* **[Active Directory](../../user-management/end-user-manage/end-user-authentication/configure-active-directory.md)** uses your Active Directory to authenticate end users. It is available only in self-managed installations.
+* **[LDAP](../../user-management/end-user-manage/end-user-authentication/configure-ldap.md)**, the Lightweight Directory Access Protocol method, authenticates the end user against your LDAP server, using either LDAP configured for Active Directory or standard LDAP.
+* **[SAML 2.0](../../user-management/end-user-manage/end-user-authentication/configure-saml.md)**, Security Assertion Markup Language, is used in both traditional web apps and reactive web apps to authenticate end users with Single Sign-On (SSO) provided by commercial identity provider companies, such as [OneLogin](https://www.onelogin.com/) and [PingFederate](https://www.pingidentity.com/en/resources/downloads/pingfederate.html).
+* **[Microsoft Entra ID](../../user-management/end-user-manage/end-user-authentication/configure-azuread.md)** uses SAML-based authentication to authenticate end users with Single Sign-On (SSO) provided by the Microsoft Entra ID Identity Provider.
+* **[Okta](../../user-management/end-user-manage/end-user-authentication/configure-okta.md)** uses SAML-based authentication to authenticate the end users with Single Sign-On (SSO) provided by Okta.
 * **[IdP Connector](https://www.outsystems.com/forge/component-overview/599/idp)** and [IdP Mobile](https://www.outsystems.com/forge/component-overview/2044/idp-mobile), community-supported connectors available from the Forge, can be downloaded and modified for use in mobile applications.
 
 The OutSystems Forge includes community-supported connectors for integration with other authentication services, such as[OAuth2](https://www.outsystems.com/forge/component-overview/2647/google-services-oauth2) and[JWT tokens](https://www.outsystems.com/forge/component-overview/9043/jwt-token). External IdPs for identity management and access control for providers such as,[IAM OAuth](https://www.outsystems.com/forge/component-overview/5075/auth0-web-connector)/[SAML](https://www.outsystems.com/forge/component-overview/4312/saml-platform-authentication-plugin), and[OpenID Connect](https://www.outsystems.com/forge/component-overview/5823/okta-sso-with-openid-connect) can also be found on the Forge.
 
-#### [Access control](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Use_Access_Control_List_(ACL)_to_set_up_permission-based_access_to_data)
+#### Access control
 
-Role-based access control restricts access to your application’s pages depending on specific application level roles. Developers define application-level permissions for roles using visual building blocks. As an example, a role might restrict access to every application page that involves changing a specific database table.
+[Role-based access control](../../user-management/user-roles/security-model/acl.md) restricts access to your application’s pages depending on specific application level roles. Developers define application-level permissions for roles using visual building blocks. As an example, a role might restrict access to every application page that involves changing a specific database table.
 
 Users can be provisioned and granted access to one or more roles. Users can be managed with OutSystems directly, or through applications using APIs that are available to developers. The definition of a user role is completely dynamic and independent of the application development phase.
 
-#### [Encryption](https://www.outsystems.com/evaluation-guide/outsystems-security-overview/#encryption)
+#### Encryption
 
 OutSystems enforces HTTPS/SSL encryption for native mobile applications, and recommends it for web and responsive applications. A system-wide setting allows you to either enforce HTTPS/SSL encryption for all web applications, or adjust it on each page or web service.
 
@@ -280,7 +278,7 @@ OutSystems Cloud allows full database encryption at rest. On self-managed infras
 
 #### AI Mentor Studio
 
-When [AI Mentor Studio](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/) analyzes your application code and runtime performance it also scans for security issues, including:
+When [AI Mentor Studio](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) analyzes your application code and runtime performance it also scans for security issues, including:
 
 * SQL injection
 * Visible disabled buttons
@@ -289,7 +287,7 @@ When [AI Mentor Studio](https://success.outsystems.com/documentation/11/managing
 * JavaScript or HTML injection (Traditional Web apps)
 * Compromised mobile apps: rooted (Android) or jailbroken (iOS)
 
-Along with each identified issue, AI Mentor Studio explains its impact and gives instructions for how to fix it. A list of all code analysis patterns can be found [here](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/#Security).
+Along with each identified issue, AI Mentor Studio explains its impact and gives instructions for how to fix it. Refer to the [list of code analysis patterns](../../monitor-and-troubleshoot/manage-tech-debt/code-patterns/ref-code-patterns.md#Security) for the full set.
 
 ### Third-party tools
 
@@ -309,7 +307,7 @@ The same exported source code can be used by [Veracode](https://www.veracode.com
 
 #### Penetration testing
 
-A penetration test, also called a pen test or ethical hacking, can be used used to identify, test, and highlight vulnerabilities in your code in the OutSystems cloud using such third-party tools as [Neotys](https://www.neotys.com/) and [Tricentis](https://www.tricentis.com/).
+A penetration test, also called a pen test or ethical hacking, can be used to identify, test, and highlight vulnerabilities in your code in the OutSystems cloud using such third-party tools as [Neotys](https://www.neotys.com/) and [Tricentis](https://www.tricentis.com/).
 
 <div class="info" markdown="1">
 
@@ -325,7 +323,7 @@ Applications are automatically instrumented to create over a dozen types of acce
 
 ### Logging
 
-[Service Center](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/monitor_and_troubleshoot/view_the_environment_logs_and_status/) includes logging information about main indicators, including the following:
+[Service Center](../../monitor-and-troubleshoot/monitoring-an-environment.md) includes logging information about main indicators, including the following:
 
 * **General**: System and application activity
 * **Traditional Web Requests** and **Screen Requests**: Server delays
@@ -382,7 +380,7 @@ These metrics are captured asynchronously at run time, so application performanc
 
 These logs are stored in a standard database that users can access to build their own dashboards.
 
-While **Service Center** presents monitoring logs and analysis reports by way of numbers, which can make it difficult to parse,[LifeTime](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/monitor_and_troubleshoot/troubleshoot_the_performance_of_an_application/) provides much the same data in a unified graphic console for analytics across all of your environments for traditional web apps.
+While **Service Center** presents monitoring logs and analysis reports by way of numbers, which can make it difficult to parse,[LifeTime](../../monitor-and-troubleshoot/troubleshoot-the-performance-of-an-application.md) provides much the same data in a unified graphic console for analytics across all of your environments for traditional web apps.
 
 The analytics dashboard for one app in the environment, covers all aspects of the[end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), a metric based on industry standard indicators of user satisfaction. By regularly checking **LifeTime**, developers can detect, troubleshoot, and solve performance issues even before end users report them.
 
@@ -390,7 +388,7 @@ The analytics dashboard for one app in the environment, covers all aspects of th
 
 The **End User Experience** tab displayed above shows the execution times of all queries, web service invocations, screen renderings, schedulers and invocations to adapters, external systems and custom APIs, which are all tracked asynchronously.
 
-The **Application Performance Index** pane shows a downward trend, and the **Screen Action** pane shows that the[APDEX](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/monitor_and_troubleshoot/the_apdex_performance_score/) value for Preparation is 59%, which indicates the source of the problem.
+The **Application Performance Index** pane shows a downward trend, and the **Screen Action** pane shows that the[APDEX](../../monitor-and-troubleshoot/the-apdex-performance-score.md) value for Preparation is 59%, which indicates the source of the problem.
 
 ![Screenshot of the TLC application performance index score in OutSystems LifeTime.](images/tlc-apdex.png "TLC APDEX Score")
 
@@ -404,8 +402,8 @@ In a like manner, you can analyze the other three tabs, which, taken together, c
 
 Some additional built in tools:
 
-* [Asynchronous Logging API](https://success.outsystems.com/documentation/11/reference/outsystems_apis/asynchronous_logging_api/): Your OutSystems applications can be instrumented for more advanced monitoring by referencing the[](https://success.outsystems.com/documentation/11/reference/outsystems_apis/asynchronous_logging_api/)Asynchronous Logging API module which provides actions to insert records into the database register request events of your applications. This captured information and data is then easily—and without any extra effort—made accessible with the rest of OutSystems logs and monitoring data.
-* [App Feedback](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/gather_user_feedback/enable_user_feedback_for_apps/): This service can be configured[](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/gather_user_feedback/enable_user_feedback_for_apps/)in LifeTime so key users, during the acceptance stage, deployment, and after release, can send suggestions or report problems.
+* [Asynchronous Logging API](../../ref/apis/auto/asynchronous-logging-api.final.md): Your OutSystems applications can be instrumented for more advanced monitoring by referencing the Asynchronous Logging API module which provides actions to insert records into the database register request events of your applications. This captured information and data is then easily—and without any extra effort—made accessible with the rest of OutSystems logs and monitoring data.
+* [App Feedback](../../monitor-and-troubleshoot/app-feedback/user-feedback-enable.md): This service can be configured in LifeTime so key users, during the acceptance stage, deployment, and after release, can send suggestions or report problems.
 
 ### Forge monitoring components
 
@@ -421,11 +419,11 @@ For instance, the API can be used to extend the dashboard with business data, su
 
 OutSystems supports business process modeling so teams can quickly create a process on top of an existing application or set of applications. This is often used to guide users throughout existing business processes, such as order approvals, claims handling and other actions.
 
-The[Business Activity Monitoring](http://www.outsystems.com/forge/component/132/business-activity-monitoring/) dashboard, an Outsystems-supported extension from the Forge, enables developers to start monitoring and optimizing their processes right after deploying them for the first time without the need for any development effort. Reports can be easily modified and extended to align with the business language of the organization using them.
+The[Business Activity Monitoring](http://www.outsystems.com/forge/component/132/business-activity-monitoring/) dashboard, an OutSystems-supported extension from the Forge, enables developers to start monitoring and optimizing their processes right after deploying them for the first time without the need for any development effort. Reports can be easily modified and extended to align with the business language of the organization using them.
 
 ![Screenshot of the Business Activity Monitoring dashboard in OutSystems.](images/business-activity-monitoring.png "Business Activity Monitoring Dashboard")
 
-#### MonitorProbe
+#### REST API access to monitoring data
 
 [MonitorProbe](https://www.outsystems.com/forge/component-overview/4559/monitorprobe), an open-code component available for free download from the Forge, can be used to expose all the relevant OutSystems monitoring data through a set of REST APIs of a specific environment.
 
@@ -433,7 +431,7 @@ Like **Performance Monitoring API**, **MonitorProbe** gives you access to data t
 
 **MonitorProbe** presents the raw data about application behavior and performance in an easily accessible manner for monitoring and troubleshooting. In addition, using a tool that can import the exposed data, such as[Microsoft Excel](https://support.microsoft.com/en-us/office/import-data-from-external-data-sources-power-query-be4330b3-5356-486c-a168-b68e9e616f5a), you can build your own visualizations and create alerts on top of the OutSystems monitoring data.
 
-#### Infrastructure Monitoring
+#### Infrastructure monitoring
 
 For installations on the[OutSystems Cloud](https://www.outsystems.com/evaluation-guide/does-outsystems-monitor-customer-cloud-infrastructures/), resources, events, and availability are monitored on a 24/7 schedule. Alerts about relevant events enable proactive actions, and self-healing capabilities automatically start when needed to maintain the availability of a customer's systems.
 

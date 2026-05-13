@@ -14,6 +14,7 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+isautopublish: true
 ---
 
 # Handling technical debt with OutSystems
@@ -42,7 +43,7 @@ OutSystems promotes and encourages the use of Agile methodologies, so it's extre
 
 [Service Studio](https://success.outsystems.com/Documentation/11/Getting_started/Service_Studio_Overview), the Outsystems visual development environment, gives developers the tools they need to achieve these goals.
 
-### TrueChange™
+### TrueChange {#truechange}
 
 When a developer makes changes to a model, the TrueChange™ engine provides immediate feedback on its impact. By inspecting the model for consistency — a method similar to syntactic and semantic analysis used in classical coding — TrueChange checks if the model is well-formed and well-typed, and, at the same time, detects many other problems, including those that may lead to performance issues, marking them accordingly for followup.
 
@@ -56,7 +57,7 @@ Developers may also [debug applications](https://success.outsystems.com/Document
 
 The **Debugger** tab shows app information, including variable and runtime values, along with current debugging context (current thread, event name, UI flow, screen and action). The developer can use the **Debugger Toolbar** and the menu to track down and correct the problems.
 
-### Compare and Merge
+### Compare and merge
 
 OutSystems uses a versioning system that labels modules with an incremental version number upon each successful publish. In environments where many developers work on the same module at the same time, **1-Click Publish** first initiates a comparison of the new code with the existing code before going forward.
 

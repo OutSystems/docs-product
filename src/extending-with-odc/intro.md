@@ -12,7 +12,11 @@ platform-version: o11
 audience:
   - Architect
   - Tech lead
-tags: cloud-native, ai-powered capabilities, interoperability, agent workflows, auto-scaling
+tags:
+  - Agentic
+  - AI
+  - Data
+  - Extensions
 outsystems-tools:
   - none
 helpids:
@@ -45,5 +49,7 @@ On the other hand, there are scenarios where extending with ODC may not be the r
 * **Heavy dependencies:** New applications that require a massive amount of O11 data and logic owned by different business owners, where the integration complexity would outweigh the benefits of the new platform.
 
 ## Getting started
+
+Before you start, check the [version requirements](version-requirements.md) for your O11 infrastructure and development tools.
 
 Start extending your portfolio using [data interoperability](data-interoperability/intro.md) and [logic interoperability](logic-interoperability/intro.md).

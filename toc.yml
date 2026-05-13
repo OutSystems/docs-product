@@ -1193,6 +1193,7 @@
 # Extending with ODC
 - href: extending-with-odc/intro.md
 - topics:
+    - href: extending-with-odc/version-requirements.md
     # Data interoperability
     - href: extending-with-odc/data-interoperability/intro.md
     - topics:

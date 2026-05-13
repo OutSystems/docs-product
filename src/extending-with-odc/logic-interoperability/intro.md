@@ -5,14 +5,20 @@ summary: Leverage O11 logic in your ODC apps and agents via REST.
 figma: https://www.figma.com/design/epaiN2jasbbKgJA0iSYfZn/Extending-with-ODC?node-id=2703-200
 coverage-type:
   - understand
+  - apply
 topic:
 app_type: mobile apps,reactive web apps,traditional web apps
 platform-version: o11
 audience:
   - Architect
-  - Tech lead
   - Developer
-tags: logic interoperability, REST, REST API, REST expose, REST consume
+  - Tech lead
+tags:
+  - Best Practices
+  - Logic
+  - Performance
+  - REST
+  - Security
 outsystems-tools:
   - service studio
   - odc studio
@@ -88,15 +94,11 @@ REST integrations between O11 and ODC for interoperability purposes don't affect
 
 REST integrations with any other external system follow the regular license consumption, contributing to the [Application Object](https://www.outsystems.com/tk/redirect?g=cd994c70-9dcc-46ed-b423-84099beac39a) count.
 
-## Prerequisites
+## Prerequisites {#prerequisites}
 
 Before you start, make sure the following requirements are met:
 
 * You have an O11 infrastructure and an ODC tenant.
 
-* The **Platform Server** version of your O11 environments is **11.41.0 or later**.
-
-* Your development teams use the **required IDE version** both for O11 and ODC:
-
-    * Service Studio 11.55.59.64640 or later
-    * ODC Studio 1.6.21 / Build 9475 or later
+* Your O11 environments and development tools meet the required **Platform Server** and IDE versions.
+  Refer to [interoperability version requirements](../version-requirements.md#logic-interop) for the full list.

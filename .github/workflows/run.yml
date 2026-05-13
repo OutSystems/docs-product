@@ -120,7 +120,7 @@ jobs:
     
   tools:
     name: Tools
-    needs: [pr-info, frontmatter, validate-toc]
+    needs: [pr-info, frontmatter, validate-toc, style-guide-validation]
     uses: OutSystems/tk-cicd/.github/workflows/documentation-build.yml@main
     secrets: inherit
 

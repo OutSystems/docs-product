@@ -1,0 +1,29 @@
+{
+  "skill_name": "validate-screenshots",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you check my screenshots in src/eap/building-apps/data/fetch-data/aggregate.md before I push? I want to make sure they follow the design rules.",
+      "expected_output": "Skill resolves every PNG referenced by the markdown, reads each one, scores against visual-rules-screenshots.md, and returns a short issues-only summary. If there's no rubric yet it should stop with the calibration instruction.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "screenshot review",
+      "expected_output": "Skill runs in branch-diff mode (no argument). It calls `git diff master...HEAD -- '*.png'`, resolves each changed PNG to its referencing article, and reports. Empty changeset should produce the 'no screenshots to validate' message.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "validate this screenshot: src/eap/building-apps/data/fetch-data/images/aggregate-create-ss.png",
+      "expected_output": "Skill single-image flow. Resolves the PNG, finds the article that references it, reads the Figma URL from its frontmatter, and reviews against the rubric. Output is one image section only.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "are these screenshots good to go?",
+      "expected_output": "Vague invocation with no argument should still trigger and fall back to branch-diff. If no changed PNGs are found, skill should say so clearly rather than scanning the whole repo.",
+      "files": []
+    }
+  ]
+}

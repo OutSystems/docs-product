@@ -156,15 +156,23 @@ The skill uses this file as a checklist. Each rule has:
       the design-system frame. Common causes: a CSS box-shadow captured
       inside the screenshot pixels, a manually drawn shadow, or an export
       from a non-Figma source.
-    * `shadow: false` — no feathered alpha on any edge (content runs
-      straight to the border, or there's only a 1-px hard border). ❌ for
-      large-surface captures, ⚠️ otherwise — never a clean pass. The
-      close-crop exemption is a reviewer call, not a skill call: surface
-      every `false` verdict so the designer can decide. Note that a 1-px
-      gray border alone — which the rule allows as an alternative to the
-      soft shadow — also reads as `false`.
-    * `shadow: unknown` — the image has no alpha channel (typically a JPG
-      saved as `.png`). Rule 1 already fails this case.
+    * `shadow: false` — alpha channel is present but no feathered alpha
+      on any edge (content runs straight to the border, or there's only
+      a 1-px hard border). ❌ for large-surface captures, ⚠️ otherwise —
+      never a clean pass. The close-crop exemption is a reviewer call,
+      not a skill call: surface every `false` verdict so the designer
+      can decide. Note that a 1-px gray border alone — which the rule
+      allows as an alternative to the soft shadow — also reads as
+      `false`.
+    * `shadow: inconclusive` — alpha channel exists, but the edge slice
+      never reached opaque content (typical when content is far from
+      the borders or the mid-edges are fully transparent) and the RGB
+      fallback couldn't decide either. ⚠️ — surface it so the designer
+      can eyeball the shadow. Do not phrase it as "missing shadow":
+      the script can't tell whether the shadow is there.
+    * `shadow: unknown` — the image has no alpha channel at all
+      (typically a JPG saved as `.png`). Rule 1 already fails this
+      case; don't emit a separate shadow finding.
 
   Vision cannot reliably detect any of this on dark-theme images, so do
   not second-guess the script.

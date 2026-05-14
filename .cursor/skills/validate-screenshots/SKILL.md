@@ -88,20 +88,27 @@ For each entry in the list:
      and rule 10 (width ≤ 1200 px). Parse the JSON and use each verdict
      directly.
    * `has_shadow.py` prints one of `shadow: true` / `shadow: wrong` /
-     `shadow: false` / `shadow: unknown` for rule 6. Map them to severity
-     as follows: `true` passes; `wrong` is ❌ (phrase as "Shadow doesn't
-     match the design-system token — …" so the user knows there is a
-     shadow but it's the wrong one); `false` is ❌ for large-surface
-     captures and ⚠️ otherwise — never a clean pass, so the reviewer
-     always sees it and can dismiss when it's genuinely a self-bounded
-     close crop. Phrase every `false` finding as "Missing design-system
-     shadow — …" so the user immediately understands the shadow is
-     absent (don't lead with "no design-system frame" or other paraphrases
-     that bury what's wrong). `unknown` means the image has no alpha
-     (typically a JPG, which rule 1 already fails). Do not suppress a
-     `false` verdict based on your own close-crop judgment — surface it
-     as ⚠️ at minimum. Refer to rule 6 in the rubric for the full
-     definitions.
+     `shadow: false` / `shadow: inconclusive` / `shadow: unknown` for
+     rule 6. Map them to severity as follows: `true` passes; `wrong` is
+     ❌ (phrase as "Shadow doesn't match the design-system token — …"
+     so the user knows there is a shadow but it's the wrong one);
+     `false` is ❌ for large-surface captures and ⚠️ otherwise — never
+     a clean pass, so the reviewer always sees it and can dismiss when
+     it's genuinely a self-bounded close crop. Phrase every `false`
+     finding as "Missing design-system shadow — …" so the user
+     immediately understands the shadow is absent (don't lead with "no
+     design-system frame" or other paraphrases that bury what's wrong).
+     `inconclusive` is ⚠️ — the alpha channel is present but the
+     detector couldn't reach opaque content on the sampled edges (e.g.
+     content far from the borders, transparent mid-edges); phrase as
+     "Shadow check inconclusive — designer should verify the
+     design-system shadow is present and correct (rule 6)". Do not
+     restate it as "missing shadow" — the script didn't say that.
+     `unknown` means the image has no alpha channel at all (typically a
+     JPG saved as `.png`, which rule 1 already fails); don't emit a
+     separate shadow finding in that case. Do not suppress a `false`
+     verdict based on your own close-crop judgment — surface it as ⚠️
+     at minimum. Refer to rule 6 in the rubric for the full definitions.
    * `check_red.py` prints one of `red: ok #RRGGBB` / `red: wrong #RRGGBB
       (token #F22800)` / `red: none` for the color half of rule 3. Map
      it as: `ok` passes; `none` passes (the image has no red highlight,

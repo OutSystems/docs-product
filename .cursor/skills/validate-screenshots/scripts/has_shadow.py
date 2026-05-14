@@ -32,13 +32,18 @@ Usage:
     python3 has_shadow.py <path-to-png>
 
 Prints one of:
-    shadow: true      (feather present and matches the OS token, in either
-                       the alpha channel or the RGB pixels)
-    shadow: wrong     (feather present but profile doesn't match — e.g.
-                       symmetric shadow, too narrow, too wide)
-    shadow: false     (no feather detected on any edge — content runs
-                       straight to the border, or only a hard 1-px border)
-    shadow: unknown   (decoding failed)
+    shadow: true          (feather present and matches the OS token, in
+                           either the alpha channel or the RGB pixels)
+    shadow: wrong         (feather present but profile doesn't match —
+                           e.g. symmetric shadow, too narrow, too wide)
+    shadow: false         (alpha intact, no feather on any edge — content
+                           runs straight to the border, or only a hard
+                           1-px border)
+    shadow: inconclusive  (alpha exists but the edge slice never reached
+                           opaque content, and the RGB fallback couldn't
+                           decide either; designer should verify)
+    shadow: unknown       (no alpha channel at all — typically a JPG saved
+                           as .png, which rule 1 already catches)
 
 Exit codes: 0 on success (any verdict), 2 on usage error.
 """
@@ -209,8 +214,23 @@ def _feather_length(img, edge: str, w: int, h: int) -> int | None:
                 continue
             if a >= OPAQUE_THRESHOLD:
                 return 0
-            state = "feather"
+            # Tentatively enter the feather band. Figma sometimes emits a
+            # single sub-pixel coverage value (alpha = 1..3) at the very
+            # canvas edge followed by alpha = 0 again — that single
+            # pixel is noise, not a real feather start, and we back out
+            # below if the next pixel drops back to 0.
+            state = "tentative"
             feather = 1
+            continue
+        if state == "tentative":
+            if a == 0:
+                state = "padding"
+                feather = 0
+                continue
+            if a >= OPAQUE_THRESHOLD:
+                return feather
+            state = "feather"
+            feather += 1
             continue
         # state == "feather"
         if a >= OPAQUE_THRESHOLD:
@@ -290,24 +310,35 @@ def has_shadow(path: Path) -> str:
     if img is None or w == 0 or h == 0:
         return "unknown"
 
+    # Probe a corner pixel to tell "no alpha channel at all" (rule-1 territory)
+    # apart from "alpha exists but the slice is degenerate" (inconclusive).
+    if _alpha_at(img, 0, 0) is None:
+        return "unknown"
+
     alpha_feathers: dict[str, int] = {}
+    alpha_degenerate = False
     for edge in EXPECTED_FEATHER:
         f = _feather_length(img, edge, w, h)
         if f is None:
-            return "unknown"
+            alpha_degenerate = True
+            break
         alpha_feathers[edge] = f
 
-    if any(f > 0 for f in alpha_feathers.values()):
+    if not alpha_degenerate and any(f > 0 for f in alpha_feathers.values()):
         feathers = alpha_feathers
     else:
         baked_feathers: dict[str, int] = {}
+        baked_degenerate = False
         for edge in EXPECTED_FEATHER:
             f = _baked_feather_length(img, edge, w, h)
             if f is None:
-                return "unknown"
+                baked_degenerate = True
+                break
             baked_feathers[edge] = f
+        if baked_degenerate:
+            return "inconclusive" if alpha_degenerate else "unknown"
         if all(f == 0 for f in baked_feathers.values()):
-            return "false"
+            return "inconclusive" if alpha_degenerate else "false"
         feathers = baked_feathers
 
     in_range = all(

@@ -162,7 +162,7 @@ You can create a local administrator before or after adding a new OIDC connectio
 
 <div class="info" markdown="1">
 
-Local administrators are only able to log in to LifeTime.
+Local administrators are able to log in to LifeTime and Service Center of all registered environments.
 
 </div>
 

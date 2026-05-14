@@ -3,11 +3,20 @@ guid: 8e37e3c3-ac23-4827-aca8-edbb378a02d1
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
-tags: traditional to reactive, conversion, automated conversion, outsystems 11, web apps
+tags:
+  - Client Variables
+  - Entities
+  - Programming Model
+  - Roles
+  - Screens
+  - Security
+  - Traditional Web
 audience:
-  - Front-end developer
   - Developer
-  - Tech lead
+  - Front-end developer
+coverage-type:
+  - understand
+  - apply
 outsystems-tools:
   - service studio
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=6099-302
@@ -30,15 +39,19 @@ If your migration strategy involves a significant UX redesign or architectural o
 
 </div>
 
+### OutSystemsReactiveMigration module {#migration-module}
+
+**OutSystemsReactiveMigration** is a module that supports the conversion process. It contains the Reactive widgets, UI patterns, base themes, and code that replace their Traditional counterparts, ensuring converted applications behave correctly on the Reactive runtime. If the module isn't already in the environment, Service Studio prompts you to publish it when the conversion starts.
+
 ### Confirmation dialogs {#confirmation-dialogs}
 
 During conversion, Service Studio may display dialogs asking you to confirm or address specific situations:
 
 * **Convert to Reactive**: Confirms you want to begin the conversion.
-* **OutSystemsReactiveMigration not found**: Prompts you to publish this required module if it's missing or outdated. This module is required for the conversion to move ahead.
-* **Producer module not converted**: Warns that Traditional producer modules haven't been converted yet. See [Conversion order](#dependencies).
-* **Producer entities not converted**: Warns that entities are read-only or not public. See [Entities](#entities) to understand the impact of proceeding.
-* **Non-reusable Roles**: Warns that roles are not public. See [Roles](#roles) to understand the impact of proceeding.
+* **OutSystemsReactiveMigration not found**: Prompts you to publish this required module if it's missing or outdated. This module is required for the conversion to move ahead. For more information, refer to the [OutSystemsReactiveMigration module section](#migration-module).
+* **Producer module not converted**: Warns that Traditional producer modules haven't been converted yet. Refer to [Conversion order](#dependencies).
+* **Producer entities not converted**: Warns that entities are read-only or not public. Refer to [Entities](#entities) to understand the impact of proceeding.
+* **Non-reusable Roles**: Warns that roles are not public. Refer to [Roles](#roles) to understand the impact of proceeding.
 
 [After the conversion completes](#post-conversion), manual work may still be required. For example, you may have to fix errors and validate security patterns.
 
@@ -114,7 +127,7 @@ The conversion process evaluates various modules in your environment to find dep
 
 </div>
 
-During conversion, Service Studio may display dialogs asking you to confirm or address specific situations tha affect how your module is converted. Refer to [Confirmation dialogs](#confirmation-dialogs).
+During conversion, Service Studio may display dialogs asking you to confirm or address specific situations that affect how your module is converted. Refer to [Confirmation dialogs](#confirmation-dialogs).
 
 After the automatic process concludes, you still need to perform more actions. Refer to the [Post-conversion](#post-conversion) section.
 
@@ -174,7 +187,7 @@ For detailed information on how each element is handled by the conversion, refer
 
 #### Regression testing {#testing}
 
-After performing the previous post-conversion steps, you should perform regression testing on your application. Re-running existing tests to ensure that it still performs and functions ands you expect.
+After performing the previous post-conversion steps, you should perform regression testing on your application. Re-running existing tests to ensure that it still performs and functions as you expect.
 
 For example, deploy both modules to a testing environment:
 
@@ -186,8 +199,7 @@ This parallel testing approach helps you identify any functional gaps or regress
 
 #### Next steps {#next-steps}
 
-At this stage, your Reactive web application should work as expected.
-In preparation for the roll-out of the converted Reactive UI, consider doing the following in your original Traditional module:
+At this stage, your Reactive web application should work as expected. In preparation for the roll-out of the converted Reactive UI, consider doing the following in your original Traditional module:
 
 1. Remove the UI elements (screens, web blocks) from the original Traditional module.
 1. Convert the Traditional module to a [service module](../reuse-and-refactor/convert-to-service.md) so it becomes a pure backend module.

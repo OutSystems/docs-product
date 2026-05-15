@@ -1,12 +1,12 @@
 ---
 tags:
   - Accessibility
-  - Events
+  - CSS
+  - Front-End
   - Mobile app
   - OutSystems UI
   - UI
   - UI Patterns
-  - Widgets
 summary: Explore the Carousel UI Pattern in OutSystems 11 (O11) for displaying multiple items in a horizontal slide using navigation controls.
 locale: en-us
 guid: a2167543-6fcc-4c6e-9ff5-ba4426722ed5
@@ -124,19 +124,13 @@ Avoid using the Carousel inside patterns with swipe events, such as the **Tabs**
 
 ## Accessibility – WCAG 2.2 AA compliance
 
-By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. If you use **OutSystems UI version 2.29.0 or earlier**, you must manually update the Carousel UI pattern to fix the following issues:
+By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. You must manually update it to fix the following issues:
 
 * **Pagination controls** must meet the minimum target size of 24 px, making them easier to use for people with motor impairments or situational challenges.
 
 * **Images can’t have the `tabpanel` role**. This role is only valid on containers, such as `<div>` or `<section>`, associated with a tab in a tablist.
 
 * **Lists inside the Carousel** must have the correct roles so that screen readers interpret them properly.
-
-<div class="info" markdown="1">
-
-Placing a nested list (`ul` or `ol`) directly inside Carousel items isn’t recommended. Native HTML list elements already have list semantics, so the list role fix in this section targets the Carousel’s internal list structure (the OutSystems **List** widget or the Splide list).
-
-</div>
 
 Updating the Carousel ensures the pattern is more accessible for everyone, including people with visual or motor impairments.
 

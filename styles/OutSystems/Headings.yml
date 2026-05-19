@@ -218,6 +218,7 @@ exceptions:
   - Cascading Style Sheets
   - CSS
   - Chrome
+  - DELETE
   - Docker
   - DOM
   - Excel
@@ -238,6 +239,7 @@ exceptions:
   - URI
   - URIs
   - SAP
+  - SELECT
   - XSS
   - CSV
   - Firebase Cloud Messaging

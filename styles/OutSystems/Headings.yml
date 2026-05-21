@@ -172,13 +172,15 @@ exceptions:
 # UI Patterns and Widgets
   - Action Sheet
   - Animated Label
-  - Columns
+  - Blank Slate
+  - Card Background
   - Carousel
   - Checkbox
   - Columns
   - Date Picker
   - Dropdown Server Side
   - Gallery
+  - Inline SVG
   - Lightbox Image
   - Master Detail
   - Progress Circle
@@ -191,8 +193,11 @@ exceptions:
   - Submenu
   - Swipe Events
   - Switch
+  - Tabs
+  - Tag
   - Touch Events
   - User Avatar
+  - Wizard Item
 # Widgets
   - Widget
   - Link

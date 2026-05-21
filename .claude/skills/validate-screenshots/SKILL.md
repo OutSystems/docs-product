@@ -129,12 +129,27 @@ For each entry in the list:
 Keep per-image notes internal until every image is processed. Do not stream
 partial reports.
 
+### Extract the Figma link (once per article)
+
+If any entry has a non-null `article_path`, open that markdown file once and
+grep its YAML frontmatter for a `figma:` key (the value is a `figma.com` URL).
+Remember the value — the report header will surface it so the content
+developer can jump straight to Figma to fix things. If the frontmatter has no
+`figma:` field, or the value is empty, skip the link entirely (don't print an
+empty `Figma:` line).
+
+When multiple articles reference different screenshots (branch-diff mode),
+collect the unique Figma URLs per article and emit them grouped under each
+article in the header. In the common single-article case, one line is enough.
+
 ## Step 3: Emit the summary
 
 Follow this exact format:
 
 ```
 ## Screenshot review: <article filename or "branch changes">
+
+Figma: <url from frontmatter — omit this line entirely when no figma key>
 
 Checked N screenshots. M need changes.
 
@@ -149,7 +164,8 @@ Checked N screenshots. M need changes.
 Rules:
 
 * If N > 0 and M == 0: replace the body with `All N screenshots pass.` and skip
-  the per-image sections entirely.
+  the per-image sections entirely. Keep the `Figma:` line in the header if it
+  was extracted.
 * Severity: `❌` means "must fix before the article ships"; `⚠️` means "a
   designer should eyeball this, but it might be acceptable".
 * Never list a rule that passed — the point is to be short.

@@ -218,6 +218,7 @@ exceptions:
   - Azure
   - DOCX
   - Markdown
+  - Mermaid
   - Microsoft Entra
   - Microsoft Entra ID
   - Cascading Style Sheets

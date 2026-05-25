@@ -32,7 +32,7 @@ The skill uses this file as a checklist. Each rule has:
   `^[a-z0-9]+(-[a-z0-9]+)*$` and ends with exactly one of the documented
   source suffixes: `-ss`, `-odcs`, `-pl`, `-lt`, `-sc`, `-usr`, `-fg`,
   `-at`, `-ct`, `-af`, `-gc`, `-ams`, `-ib`, `-eb`, `-we`, `-az`, `-vs`,
-  `-ok`, `-fc`, `-diag`, `-sa`, `-is`. Double suffixes are rejected.
+  `-ok`, `-fc`, `-diag`, `-sa`, `-is`, `-ati`, `-uidp`. Double suffixes are rejected.
   (`-diag` is for diagrams, not screenshots, so if a screenshot uses it the
   skill warns.) **Verdict comes from `scripts/check_metadata.py`
   (`naming.verdict`).**

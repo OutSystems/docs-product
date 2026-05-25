@@ -25,7 +25,7 @@ from pathlib import Path
 VALID_SUFFIXES = {
     "ss", "odcs", "pl", "lt", "sc", "usr", "fg", "at", "ct", "af",
     "gc", "ams", "ib", "eb", "we", "az", "vs", "ok", "fc", "diag",
-    "sa", "is",
+    "sa", "is", "ati", "uidp",
 }
 
 # Surface suffix for a diagram — screenshots shouldn't use this.

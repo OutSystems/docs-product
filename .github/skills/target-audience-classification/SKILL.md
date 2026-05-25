@@ -9,27 +9,34 @@ This assistant must follow a step-by-step flow to classify and identify the targ
 After each step, the user must explicitly confirm before proceeding to the next step.
 Do not move forward without confirmation.
 
-## Step 1 — collect current list of target audiences
+## Step 1 — collect taxonomy and current audience
 
 ### Objective
 
-Gather the complete list of available target audiences from the `metadata.yaml` file.
-This is the taxonomy used to classify content pieces, and is the only valid source of target audiences for this skill.
-Do not read target audiences from the front-matter of the content piece.
+Two pieces of information are needed before classifying:
+
+* The full taxonomy of available target audiences, sourced from `metadata.yaml`. This is the only valid source for which audiences exist.
+* The file's current `audience` values (if any), read from its front-matter. These are used in Step 2 as a prior, not as part of the taxonomy.
+
+The taxonomy and the prior must come from different sources. Never use the file's front-matter as the taxonomy.
 
 ### Instructions
 
 1. Analyze the @metadata.yaml file, and extract the values from the `audience` field.
-    * List each target audience identified
+    * List each target audience identified — this is the taxonomy.
     * Proceed to the next step without user confirmation, as this is just an information collection step.
+1. Read the provided file's front-matter and note the current `audience` values, if any.
+    * These are used as a prior in Step 2 — they reflect a previous classification of this content.
+    * If the field is missing or empty, that's a cold start.
 1. Stop immediately if any of the following occurs:
-    * Unable to find the file
-    * The `audience` field is missing
-    * Duplicated values exist in the `audience` list
+    * Unable to find the `metadata.yaml` file
+    * The `audience` field is missing from `metadata.yaml`
+    * Duplicated values exist in the `metadata.yaml` `audience` list
 
 ### Output requirements
 
-* Present a clear, structured summary of the target audiences identified.
+* Present a clear, structured summary of the taxonomy from `metadata.yaml`.
+* List the file's current `audience` values explicitly — these will be used as a prior in Step 2 — or state that the file has no existing `audience` field (cold start).
 
 ## Step 2 — classification
 
@@ -47,7 +54,14 @@ This JSON file is only meant to help with the classification, and should not be 
 Before scoring, write a brief internal summary (2–3 sentences) of what the content piece is about and who it is for.
 Use this summary as the anchor for all scoring decisions below.
 
-Then evaluate **every target audience** from the list obtained in Step 1 against the following scoring rubric:
+If the file's front-matter has existing `audience` values (recorded in Step 1), treat those values as a prior judgment about this content. They reflect a previous classification — by an earlier run or a human edit — and should anchor your scoring. When evaluating each target audience:
+
+* For audiences in the existing list: lean toward confirming them. Assume the prior still holds unless your independent reading strongly disagrees or the content has materially diverged.
+* For audiences not in the existing list: apply the rubric as written, with no prior bias.
+
+In each justification, label the relationship to the prior: "agrees with prior", "partially agrees with prior", "disagrees with prior", or "no prior" when the audience was not in the existing list. This makes it visible to the reader when a score is being lifted by the prior versus standing on its own.
+
+Then evaluate **every target audience** from the taxonomy obtained in Step 1 using the following scoring rubric:
 
 | Score | Criteria |
 | ------- | ---------- |
@@ -56,37 +70,42 @@ Then evaluate **every target audience** from the list obtained in Step 1 against
 | 50–74% | The target audience is tangentially related — the concept is mentioned or implied, but the content does not teach or address it directly. |
 | 0–49% | The target audience is not present or not meaningfully addressed in the content. |
 
+For each target audience scored at 70% or above, ground the score in evidence from the content. Cite 1–3 verbatim passages — one short sentence or phrase each — that support the score. When direct quotes are sparse (short content, transcripts, code-heavy pages), structural observations are valid evidence: "the content covers REST API endpoints under an Architects section", "the page is a step-by-step deployment guide aimed at platform administrators". For scores below 70%, evidence is not required; a brief statement of why is enough.
+
+This evidence anchors the score to specific content, which reduces run-to-run variance, and creates an audit trail a reviewer can verify.
+
 ### Output
 
 Present to the user:
 
-* The full evaluation table with every target audience from Step 1, its score, and a one-line justification based on the content
-* A final recommended list of target audiences, sorted by relevance score (highest first), limited to target audiences that scored above 85%
-* All target audiences suggested must be part of the list obtained in Step 1
+* The content summary written above
+* For each target audience in the taxonomy, an evaluation block containing:
+    * The target audience name and its score
+    * The relationship to the prior: "agrees with prior", "partially agrees with prior", "disagrees with prior", or "no prior"
+    * Evidence — for scores 70% or above, 1–3 verbatim quotes from the content (or structural observations when quotes are sparse); for scores below 70%, a brief statement of why
+* A final recommended list of target audiences, built using the rules below
+* Sort the final list by relevance score, highest first
+* All recommended target audiences must be part of the taxonomy obtained in Step 1
 
-After presenting the results, proceed automatically to Step 3.
+#### Building the recommended list
 
-## Step 3 - Sibling validation
+The rules depend on whether the file already has existing `audience` values. This asymmetry, called hysteresis, prevents borderline scores from causing the classification to flip across runs.
 
-### Objective
+If the file does **not** have existing `audience` values (cold start):
 
-Use sibling files — files that share the same identifier but target a different platform — to validate target audiences and improve consistency across platform variants.
+* Include every target audience that scored 85% or above.
 
-### Instructions
+If the file **has** existing `audience` values (update with hysteresis):
 
-1. Read the front-matter of the current file and determine which identifier key is present: `kp-guid` or `guid`. Use whichever is present.
-    * If neither is present, skip this entire step and proceed to the confirmation below.
-1. Search the repository for other Markdown or YAML files that contain the same key and value, and are not the current file. Exclude any file where the `locale` field is present in the front-matter and does not start with `en`.
-    * If no sibling files are found, skip the remaining instructions in this step and proceed to the confirmation below.
-1. For each target audience in the current file's recommended list:
-    * If the target audience scored 90% or above, keep it regardless of whether it appears in sibling files.
-    * If the target audience scored below 90%, check whether it appears in the `audience` field of any sibling file. If it does not appear in any sibling file, remove it from the recommended list.
+* Keep an existing target audience in the list if it scores 70% or above.
+* Add a target audience that is not in the existing list only if it scores 90% or above.
+* Target audiences not in the existing list with scores between 70% and 89% are **not** added — this dead zone is intentional and absorbs run-to-run score variance.
 
-### Output
+If existing `audience` values were found in the file, compare the recommended list against them:
 
-* State which identifier key was used and how many sibling files were found, or that none were found.
-* For each removed target audience, explain why: low score (below 90%) and absent from all sibling files.
-* Present the final, validated recommended target audience list.
+* The lists are equivalent if they contain the same audiences, regardless of order. Differences in ordering alone are not a reason to update.
+* If the lists are equivalent, inform the user that the existing classification is still valid and no update is needed. **Stop the skill here** — do not proceed to Step 3.
+* Only proceed to Step 3 if the recommended list differs meaningfully from the existing values (different audiences, additions, or removals).
 
 ### Confirmation
 
@@ -108,9 +127,12 @@ Prompt the user for confirmation using buttons (instead of freeform input), use 
 
 This shows Yes/No buttons for user selection.
 
+* If the user selects **Yes**, proceed to Step 3.
+* If the user selects **No**, ask the user for their feedback, incorporate it into the recommended list, and re-present for confirmation. Repeat until the user approves.
+
 The assistant **must wait for explicit user confirmation** before continuing.
 
-## Step 4 — Update content piece
+## Step 3 — update content piece
 
 ### Objective
 

@@ -124,3 +124,9 @@ Validations run on PRs via `.github/workflows/`. Workflow names and checks vary 
 * UTF-8 encoding
 * Insert final newline
 * Soft-wrap at 80 columns (no hard line breaks in paragraphs)
+
+## Shared files
+
+This `CLAUDE.md` and all skills (Claude Code slash commands) are authored and
+maintained in the `docs-validation` repository and synced to all other
+documentation repositories. Always edit them in the 'docs-validation`. If unsure where to make the edit, ask the user.

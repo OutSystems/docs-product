@@ -46,7 +46,7 @@ Understand the content of the provided file so you can classify it accurately.
 
 ### Output requirements
 
-* Present a brief summary confirming which file was read, which linked files were read for context, and whether a `coverage-type` field already exists.
+* Present a brief summary confirming which file was read, which linked files were read for context, and whether a `coverage-type` field already exists. If it exists, list its current values explicitly — these will be used as a prior in Step 2.
 
 ## Step 2 — classification
 
@@ -68,56 +68,61 @@ If an `audience` value was found in Step 1, use it as a guide to validate that t
 
 If the audience strongly points away from a coverage type you are about to include, treat that as a signal to re-examine the justification — not as a rule to exclude it outright.
 
+If an existing `coverage-type` field was found in Step 1, treat those values as a prior judgment about this content. They reflect a previous classification — by an earlier run or a human edit — and should anchor your scoring. When evaluating each coverage type:
+
+* For types in the existing list: lean toward confirming them. Assume the prior still holds unless your independent reading strongly disagrees or the content has materially diverged.
+* For types not in the existing list: apply the rubric as written, with no prior bias.
+
+In each justification, label the relationship to the prior: "agrees with prior", "partially agrees with prior", "disagrees with prior", or "no prior" when the type was not in the existing list. This makes it visible to the reader when a score is being lifted by the prior versus standing on its own.
+
 Then evaluate **every coverage type** from the definitions above against the following scoring rubric:
 
 | Score | Criteria |
 | ------- | ---------- |
 | 90–100% | The content directly and primarily serves this cognitive goal. Removing this coverage type would misrepresent the content's purpose. |
 | 85–89% | The content partially serves this cognitive goal as a meaningful secondary purpose. |
-| 75–84% | The coverage type is present as a minor secondary element — not substantial enough to classify the content. |
+| 75–84% | The coverage type is present as a minor secondary element. |
 | 50–74% | The coverage type is tangentially related — the content touches on this goal but it is not a primary or secondary purpose. |
 | 0–49% | The coverage type does not apply to this content. |
+
+For each coverage type scored at 70% or above, ground the score in evidence from the content. Cite 1–3 verbatim passages — one short sentence or phrase each — that support the score. When direct quotes are sparse (short content, transcripts, code-heavy pages), structural observations are valid evidence: "the content is structured as six numbered procedural steps", "the page is a reference table of API parameters". For scores below 70%, evidence is not required; a brief statement of why is enough.
+
+This evidence anchors the score to specific content, which reduces run-to-run variance, and creates an audit trail a reviewer can verify.
 
 ### Output
 
 Present to the user:
 
 * The content summary written above
-* The full evaluation table with every coverage type, its score, and a one-line justification based on the content
-* A final recommended list of coverage types, limited to those that scored above 85%
-* Include a maximum of 3 coverage types — if more than 3 exceed the threshold, keep only the 3 with the highest scores
+* For each of the five coverage types, an evaluation block containing:
+    * The coverage type name and its score
+    * The relationship to the prior: "agrees with prior", "partially agrees with prior", "disagrees with prior", or "no prior"
+    * Evidence — for scores 70% or above, 1–3 verbatim quotes from the content (or structural observations when quotes are sparse); for scores below 70%, a brief statement of why
+* A final recommended list of coverage types, built using the rules below
 * Sort the final list by Bloom's taxonomy progression: `remember`, `understand`, `apply`, `evaluate`, `unblock`
 * All recommended coverage types must come from the five defined types: `remember`, `understand`, `apply`, `evaluate`, `unblock`
+
+#### Building the recommended list
+
+The rules depend on whether the file already has a `coverage-type` field. This asymmetry, called hysteresis, prevents borderline scores from causing the classification to flip across runs.
+
+If the file does **not** have an existing `coverage-type` field (cold start):
+
+* Include every coverage type that scored 85% or above.
+* Cap the list at 3 — if more than 3 exceed the threshold, keep the 3 with the highest scores.
+
+If the file **has** an existing `coverage-type` field (update with hysteresis):
+
+* Keep an existing coverage type in the list if it scores 70% or above.
+* Add a coverage type that is not in the existing list only if it scores 90% or above.
+* Coverage types not in the existing list with scores between 70% and 89% are **not** added — this dead zone is intentional and absorbs run-to-run score variance.
+* Cap the list at 3 — if more than 3 qualify, break ties in this order: (1) existing types win over additions, (2) higher raw score wins.
 
 If a `coverage-type` field already existed in the file, compare the recommended list against the existing values:
 
 * The lists are equivalent if they contain the same coverage types, regardless of order. Differences in ordering alone are not a reason to update.
 * If the lists are equivalent, inform the user that the existing classification is still valid and no update is needed. **Stop the skill here** — do not proceed to Step 3.
 * Only proceed to Step 3 if the recommended list differs meaningfully from the existing values (different types, additions, or removals).
-
-After presenting the results, proceed automatically to Step 3.
-
-## Step 3 — sibling validation
-
-### Objective
-
-Use sibling files — files that share the same identifier but target a different platform — to validate coverage types and improve consistency across platform variants.
-
-### Instructions
-
-1. Read the front-matter of the current file and determine which identifier key is present: `kp-guid` or `guid`. Use whichever is present.
-    * If neither is present, skip this entire step and proceed to the confirmation below.
-1. Search the repository for other Markdown or YAML files that contain the same key and value, and are not the current file. Exclude any file where the `locale` field is present in the front-matter and does not start with `en`.
-    * If no sibling files are found, skip the remaining instructions in this step and proceed to the confirmation below.
-1. For each coverage type in the current file's recommended list:
-    * If the coverage type scored 90% or above, keep it regardless of whether it appears in sibling files.
-    * If the coverage type scored below 90%, check whether it appears in the `coverage-type` field of any sibling file. If it does not appear in any sibling file, remove it from the recommended list.
-
-### Output
-
-* State which identifier key was used and how many sibling files were found, or that none were found.
-* For each removed coverage type, explain why: low score (below 90%) and absent from all sibling files.
-* Present the final, validated recommended coverage type list.
 
 ### Confirmation
 
@@ -139,12 +144,12 @@ Prompt the user for confirmation using buttons (instead of freeform input), use 
 
 This shows Yes/No buttons for user selection.
 
-* If the user selects **Yes**, proceed to Step 4.
+* If the user selects **Yes**, proceed to Step 3.
 * If the user selects **No**, ask the user for their feedback, incorporate it into the recommended list, and re-present for confirmation. Repeat until the user approves.
 
 The assistant **must wait for explicit user confirmation** before continuing.
 
-## Step 4 — update content piece
+## Step 3 — update content piece
 
 ### Objective
 

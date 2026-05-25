@@ -28,5 +28,4 @@ swap:
   'odc ?studio': ODC Studio
   'odc ?portal': ODC Portal
   'data ?fabric': Data Fabric
-  'data ?platform': Data Platform
   'outsystems ?model': OutSystems Model

@@ -1,6 +1,8 @@
 ---
-summary: Learn how to expose and customize REST APIs in OutSystems 11 (O11) to integrate with external systems effectively.
-tags: rest api integration, api development, api versioning, http methods, endpoint configuration
+summary: "OutSystems 11 (O11) REST API: create a REST API service and define methods with HTTP verbs in Service Studio to share your module data."
+tags:
+  - REST
+  - Web services
 locale: en-us
 guid: 28d56896-53c1-40c0-ac3d-84c757ac71d0
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,7 +10,6 @@ platform-version: o11
 figma:
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:
@@ -34,7 +35,7 @@ If you want to expose methods to allow other systems to retrieve or manipulate i
 
     A common recommendation is to name the exposed REST API according to its version. You could name the API `v1` for the first version of a REST API. You can also use a different name, like `PhoneBook`.  
 
-If you are exposing your O11 logic through REST to be consumed by your ODC apps, see [Logic interoperability](../../../extending-with-odc/logic-interoperability/intro.md) for further details.
+If you are exposing your O11 logic through REST to be consumed by your ODC apps, see [Logic interoperability](https://www.outsystems.com/tk/redirect?g=1edc897d-d7ca-494f-9379-d8ce57467cc9) for further details.
 
 ## Create the REST API Method
 

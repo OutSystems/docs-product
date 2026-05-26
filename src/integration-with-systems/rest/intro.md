@@ -1,6 +1,8 @@
 ---
 summary: Explore REST API integration and exposure capabilities in OutSystems 11 (O11) for enhanced application interoperability.
-tags: rest api, api integration, api exposure, application interoperability, service actions
+tags:
+  - REST
+  - Web services
 locale: en-us
 guid: e66f1a19-83df-4bb1-ad39-a61cfaaa6bbb
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -30,6 +32,6 @@ Considerations:
 
     A Service Action is a REST-based remote call to another process, but its usage is very similar to public Server Actions. For more information check [Use Services to Expose Functionality](../../building-apps/reuse-and-refactor/services.md).
 
-* If you want to share logic between O11 and ODC, see [Logic interoperability](../../extending-with-odc/logic-interoperability/intro.md) for further details.
+* If you want to share logic between O11 and ODC, see [Logic interoperability](https://www.outsystems.com/tk/redirect?g=1edc897d-d7ca-494f-9379-d8ce57467cc9) for further details.
 
 </div>

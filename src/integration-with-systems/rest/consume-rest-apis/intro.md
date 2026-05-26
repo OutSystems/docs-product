@@ -1,6 +1,11 @@
 ---
 summary: Explore how to consume REST APIs using OutSystems 11 (O11), including authentication methods and advanced customizations.
-tags: api integration, rest api, security implementation, rest api authentication, api consumption
+tags:
+  - Authentication
+  - Extensions
+  - OAuth
+  - REST
+  - Security
 locale: en-us
 guid: 5a949da9-dd60-4ea9-a05b-70c27bc53655
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -29,7 +34,7 @@ Start by looking into the documentation of the REST API you want to use and unde
 * Security/Authentication requirements
 * Methods definition (HTTP Method, URL Path, response format)
 
-If you want to consume a REST API exposed by your ODC tenant, see [Logic interoperability](../../../extending-with-odc/logic-interoperability/intro.md) for further details.
+If you want to consume a REST API exposed by your ODC tenant, see [Logic interoperability](https://www.outsystems.com/tk/redirect?g=1edc897d-d7ca-494f-9379-d8ce57467cc9) for further details.
 
 Check how you can [Consume one or more REST API Methods](consume-a-rest-api.md) in Service Studio.
 

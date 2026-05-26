@@ -15,7 +15,6 @@ audience:
 tags:
   - Agentic
   - AI
-  - Data
   - Extensions
 outsystems-tools:
   - none
@@ -50,6 +49,6 @@ On the other hand, there are scenarios where extending with ODC may not be the r
 
 ## Getting started
 
-Before you start, check the [version requirements](version-requirements.md) for your O11 infrastructure and development tools.
+Before you start, check the [version requirements](https://www.outsystems.com/tk/redirect?g=b6c0c043-0b0a-4825-9271-afaa60bd2ee9) for your O11 infrastructure and development tools.
 
-Start extending your portfolio using [data interoperability](data-interoperability/intro.md) and [logic interoperability](logic-interoperability/intro.md).
+Start extending your portfolio using [data interoperability](https://www.outsystems.com/tk/redirect?g=42156dc2-2ec5-4f2d-bf5c-b5af28072cfa) and [logic interoperability](https://www.outsystems.com/tk/redirect?g=1edc897d-d7ca-494f-9379-d8ce57467cc9).

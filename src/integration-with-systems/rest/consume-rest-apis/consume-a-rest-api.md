@@ -1,6 +1,8 @@
 ---
 summary: Learn to consume REST API methods in OutSystems 11 (O11) using OpenAPI specifications or individual methods in Service Studio.
-tags: rest api, openapi specification, api integration, service studio ide, integrations
+tags:
+  - REST
+  - Web services
 locale: en-us
 guid: b7ea1336-4e6b-49a8-8a61-fd56c2ae5f57
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -28,7 +30,7 @@ In Service Studio, you can:
 
 * Consume a single REST API method.
 
-If you want to consume a REST API exposed by your ODC tenant, see [Logic interoperability](../../../extending-with-odc/logic-interoperability/intro.md) for further details.
+If you want to consume a REST API exposed by your ODC tenant, see [Logic interoperability](https://www.outsystems.com/tk/redirect?g=1edc897d-d7ca-494f-9379-d8ce57467cc9) for further details.
 
 ## Default encoding when consuming REST APIs
 

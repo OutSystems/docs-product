@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) enables the exposure of methods via REST APIs, incorporating security validations and customizable request and response handling.
-tags: rest apis, security, authentication, api development, rest api integration
+tags:
+  - Authentication
+  - REST
+  - Security
 locale: en-us
 guid: 08e6c830-5f88-4645-b86f-412e1c399a1f
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -28,7 +31,7 @@ If you want to **consume** a REST API, check [Consume REST APIs](../consume-rest
 
 </div>
 
-If you are exposing your O11 logic through REST to be consumed by your ODC apps, see [Logic interoperability](../../../extending-with-odc/logic-interoperability/intro.md) for further details.
+If you are exposing your O11 logic through REST to be consumed by your ODC apps, see [Logic interoperability](https://www.outsystems.com/tk/redirect?g=1edc897d-d7ca-494f-9379-d8ce57467cc9) for further details.
 
 For high-level guidance on securing exposed REST APIs with JWT-based token authentication, refer to [Token-based authentication pattern for exposed REST APIs](token-based-auth-expose-dev-pattern.md).
 

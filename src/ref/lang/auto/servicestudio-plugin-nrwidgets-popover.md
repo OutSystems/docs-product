@@ -6,7 +6,14 @@ guid: 41d66ab0-f67a-49f8-adf1-931415c3047e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3141-245&t=a3mwmA7f7peqqrKe-1
-tags: ide usage, reactive web apps, tutorials for beginners, ui component usage, outsystems ui framework
+tags:
+  - Accessibility
+  - Events
+  - Front-End
+  - JavaScript
+  - OutSystems UI
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer
@@ -14,6 +21,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
 isautopublish: true
 ---
 
@@ -125,7 +133,7 @@ A container that opens when the user taps an element or a region. You can use it
 </tbody>
 </table>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Popover** Built-in Widget may not expose the correct ARIA roles and relationships to assistive technologies. In this procedure, you update the trigger and popover panel so screen readers can identify the control, understand whether it’s expanded, and associate it with the correct content.
 

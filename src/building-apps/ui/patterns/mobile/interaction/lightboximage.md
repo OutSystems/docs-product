@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, image galleries, widgets, dependency management, outsystems ui
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to implement the Lightbox Image UI Pattern in OutSystems 11 (O11) for enhancing image galleries in mobile and reactive web apps.
 locale: en-us
 guid: 971050ab-ea28-4490-8698-433ce02974de
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # Lightbox Image
@@ -25,7 +34,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Lightbox Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.
 
-## How to Use the Lightbox Image UI Pattern
+## How to use the Lightbox Image UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Lightbox Image`.
 
@@ -79,7 +88,7 @@ Watch how the [Product Overview sample](https://silkui.outsystems.com/Samples_Mo
 
 <iframe src="https://player.vimeo.com/video/977630859" width="372" height="666" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video exhibiting an application using the Lightbox Image UI Pattern.</iframe>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 To ensure the **Lightbox Image** UI Pattern is fully compliant with **WCAG 2.2 AA**, you must ensure that the images displayed within the lightbox dialog are accessible.
 

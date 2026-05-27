@@ -1,12 +1,19 @@
 ---
 helpids: 30040
-summary: Explore the button widget functionalities in OutSystems 11 (O11), including properties, events, and runtime attributes.
+summary: "Button widget reference for OutSystems 11 (O11): properties, events, runtime attributes, and WCAG 2.2 AA accessibility guidance for color contrast."
 locale: en-us
 guid: 193110a3-2fa3-45ae-9cdb-ae5ba20a7cef
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3151-12&t=7CahKhPkrngAV3Pz-1
-tags: widget properties, form submission, user interface development, ui components, web widgets
+tags:
+  - Accessibility
+  - Events
+  - Front-End
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 audience:
   - Developer
   - Front-end developer
@@ -14,6 +21,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
+isautopublish: true
 ---
 
 # Button
@@ -165,7 +174,7 @@ If the button belongs to a form with some input fields, the button submits the i
 </tbody>
 </table>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Button** UI Pattern is exposed to color combinations that might not meet the minimum contrast ratio required for WCAG 2.2 AA compliance. Certain color combinations in the **OutSystems UI** palette don’t provide sufficient contrast between the button text and background, particularly in hover or focus states.
 

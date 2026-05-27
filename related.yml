@@ -1861,7 +1861,7 @@
         
 - building-apps/ui/accessibility/testing-fixing-accessibility-issues.md:
     - one-way: building-apps/ui/accessibility/intro.md
-    - building-apps/ui/accessibility/ui-patterns-accessibility-reference.md
+    - building-apps/ui/accessibility/ui-patterns-accessibility.md
     - building-apps/ui/accessibility/additional-accessibility-resources.md
     - external:
         - "Design for Accessibility":
@@ -1872,7 +1872,7 @@
 - building-apps/ui/accessibility/aria-roles-and-attributes.md:
     - one-way: building-apps/ui/accessibility/intro.md
     - building-apps/ui/accessibility/testing-fixing-accessibility-issues.md
-    - building-apps/ui/accessibility/ui-patterns-accessibility-reference.md
+    - building-apps/ui/accessibility/ui-patterns-accessibility.md
     - building-apps/ui/accessibility/additional-accessibility-resources.md
     - external:
         - "Design for Accessibility":
@@ -1880,7 +1880,7 @@
         - "Accessibility in Traditional Web Applications": 
             https://success.outsystems.com/Support/Enterprise_Customers/Accessibility/Accessibility_in_OutSystems_Web_Applications
 
-- building-apps/ui/accessibility/ui-patterns-accessibility-reference.md:
+- building-apps/ui/accessibility/ui-patterns-accessibility.md:
     - one-way: building-apps/ui/accessibility/intro.md
     - building-apps/ui/accessibility/additional-accessibility-resources.md
     - external:

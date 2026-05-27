@@ -6,7 +6,14 @@ guid: 15a7a421-2257-46eb-b995-caff2bf6404f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3275-9&t=ipeYjD63Md7umFQc-1
-tags: dropdown widget, user interface components, html tags, data binding, custom ui elements
+tags:
+  - Accessibility
+  - Events
+  - Front-End
+  - JavaScript
+  - Mobile app
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer
@@ -14,6 +21,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
 isautopublish: true
 ---
 
@@ -226,7 +234,7 @@ With the Dropdown Widget you can implement two types of lists:
 </tbody>
 </table>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Dropdown** Built-in Widget is accessible when **OptionsContent** is set to **Text Only**, because it renders a native `<select>` element that exposes correct semantics to assistive technologies.
 

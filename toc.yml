@@ -173,7 +173,7 @@
         - topics:
             - href: building-apps/ui/accessibility/testing-fixing-accessibility-issues.md
             - href: building-apps/ui/accessibility/aria-roles-and-attributes.md
-            - href: building-apps/ui/accessibility/ui-patterns-accessibility-reference.md
+            - href: building-apps/ui/accessibility/ui-patterns-accessibility.md
             - href: building-apps/ui/accessibility/additional-accessibility-resources.md
             - href: building-apps/ui/accessibility/accessibility-web/accessibility-web.md
             - href: building-apps/ui/accessibility/accessibility-web/vpat-template.md

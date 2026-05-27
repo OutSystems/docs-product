@@ -1,5 +1,12 @@
 ---
-tags: progress circle, ui patterns, customization, dependency management, incremental update
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and customize the Progress Circle UI pattern in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: 1f0827a1-891f-4fe7-a37e-34a66224f7dc
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # Progress Circle
@@ -109,7 +118,7 @@ After following these steps and publishing the module, you can test the pattern 
 | OptionalConfigs.AnimateInitialProgress (Boolean): Optional | If True, the Progress Circle shows an animation going from zero to its initial progress. This is the default. |
 | ExtendedClass (Text): Optional | Adds custom style classes to the pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 Out of the box, the **Progress Circle** UI pattern may not be correctly announced by screen readers, as it’s primarily a decorative element that doesn’t expose meaningful information. To make it accessible, hide the decorative circle and add a descriptive text alternative so users of assistive technologies can understand the progress status.
 

@@ -1,12 +1,19 @@
 ---
 helpids: 30046
-summary: Explore modal popup features in OutSystems 11 (O11) for web and mobile app development.
+summary: Popup widget properties, events, and WCAG 2.2 AA accessibility implementation for OutSystems 11 (O11) mobile and reactive web apps.
 locale: en-us
 guid: 8815652b-3b2f-47ee-81be-f58165e33a8c
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3289-2&t=CjwzSlGiuLoIuHu8-1
-tags: popup implementation, ui components, user interaction design, web design, outsystems ui framework
+tags:
+  - Accessibility
+  - Events
+  - Front-End
+  - JavaScript
+  - Mobile app
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer
@@ -14,6 +21,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
 isautopublish: true
 ---
 
@@ -131,7 +139,7 @@ A floating container/window above other screen content. Popup is a modal contain
 </tbody>
 </table>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Popup** Built-in Widget may not fully manage focus, keyboard navigation, or ARIA attributes as required by WCAG 2.2 AA.  
 Update it so that focus remains inside the Popup while it’s open, supports visible focus on its interactive elements, returns to the trigger when the Popup closes, and exposes the correct ARIA relationship between the trigger and the Popup.  

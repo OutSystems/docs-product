@@ -19,6 +19,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
 isautopublish: true
 ---
@@ -137,7 +138,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 This pattern should be used alone inside the screen content because it adapts to the height of the parent. Additionally, you should avoid using the Master Detail pattern inside patterns with swipe events, such as [Tabs](<../navigation/tabs.md>).
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Master Detail** UI Pattern may not expose the right semantics to assistive technologies. Follow this procedure to map the pattern to an ARIA tabs structure so screen readers announce the relationship between the selectable items and the detail panel, and keyboard users can move focus predictably.
 

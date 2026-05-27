@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, ui design, notifications, user interface, service studio
+tags:
+  - Accessibility
+  - Aggregates
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) supports the Badge UI Pattern for displaying numerical notifications in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: 4e759186-e8a8-416a-a1fc-505d2cdc8de8
@@ -12,7 +19,10 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+  - unblock
+isautopublish: true
 ---
 
 # Badge
@@ -90,7 +100,7 @@ After following these steps and publishing the module, you can test the pattern 
 | IsLight (Boolean): Optional | Specify the badge's background color. <p>Examples <ul><li>Blank - A darker hue of the color is applied to the badge and a lighter color to the text (default value)</li><li>True - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>False - A darker hue of the color is applied to the badge and a lighter color to the text</li></ul></p> |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value)</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1" "myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Badge** UI Pattern uses color combinations that might not meet the minimum contrast ratio required for WCAG 2.2 AA compliance. This happens because the **OutSystems UI** color palette was designed to provide broad coverage across many projects, similar to other design systems.
 

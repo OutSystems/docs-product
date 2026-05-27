@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, design systems
+tags:
+  - Accessibility
+  - CSS
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) supports the Card Background UI Pattern for grouping and highlighting information in Mobile and Reactive Web Apps.
 locale: en-us
 guid: e34c8b4b-958b-498e-b8c8-459c60d5c98f
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # Card Background
@@ -72,7 +81,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Height (Integer): Optional         | Set the height of the Card (in pixels). By default, the content is vertically aligned. <p>Examples</p><ul><li>_Blank_ - The Card height is 300 pixels. </li><li>_500_ - The Card height is 500 pixels. </li></ul>                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ExtendedClass (Text): Optional     | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied. </li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Card Background** UI Pattern might not provide enough contrast between the overlaid text and its background image or color. This can make the text harder to read, especially for users with low vision or in bright environments.
 

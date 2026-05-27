@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, user experience, widget implementation, dependency management, design integration
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to animate user input labels using the Animated Label UI pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 6b42f314-f637-444d-b908-f0609c1ba46f
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # Animated Label
@@ -73,7 +82,7 @@ After following these steps and publishing the module, you can test the pattern 
 | --- | --- |
 | ExtendedClass (Text): Optional | Adds custom style classes to the pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Animated Label** UI pattern might not fully meet WCAG 2.2 AA accessibility requirements. Associating each input field with its corresponding label ensures that screen readers can correctly announce the purpose of the input, improving usability for all users, including those who rely on assistive technologies.
 

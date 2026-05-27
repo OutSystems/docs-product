@@ -5,14 +5,23 @@ guid: 18443b28-3b50-4e2d-9731-a84aac8cdaf1
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:29
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, counter widget, web development, outsystems ui
+tags:
+  - Accessibility
+  - Aggregates
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 audience:
   - Developer
   - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # Counter
@@ -27,7 +36,7 @@ You can use the Counter UI Pattern to give feedback about the current count of s
 
 ![Screenshot showing the Counter UI Pattern used for notifications, such as unread emails or messages.](images/counter-2-ss.png "Counter UI Pattern Notification Example")
 
-## How to use the Counter UI Pattern
+## How to use the Counter UI pattern
 
 The following example demonstrates how you can display the number of registered users on your platform.
 
@@ -90,7 +99,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Height (Text): Optional | The counter's height (in pixels units). By default the counter height is 100 (pixel units). |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Counter** UI Pattern uses color combinations that might not meet the minimum contrast ratio required for WCAG 2.2 AA compliance. This happens because the **OutSystems UI** color palette was designed to provide broad coverage across many projects, similar to other design systems.
 

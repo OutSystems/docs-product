@@ -6,7 +6,13 @@ guid: 4479919f-eabb-4cad-97d0-5e8e990d8524
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3141-317&t=a3mwmA7f7peqqrKe-1
-tags: ui elements, widgets, boolean control, user interface design, property configuration
+tags:
+  - Accessibility
+  - Events
+  - Front-End
+  - Mobile app
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer
@@ -14,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
+isautopublish: true
 ---
 
 # Switch
@@ -126,7 +134,7 @@ Two-state toggle control which allows users to select between two options. You c
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>
@@ -163,7 +171,7 @@ Two-state toggle control which allows users to select between two options. You c
 </tbody>
 </table>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Switch** built-in widget may not expose the correct ARIA attributes for assistive technologies.  
 Set the appropriate roles so that screen readers identify it as a switch and accurately announce its state.

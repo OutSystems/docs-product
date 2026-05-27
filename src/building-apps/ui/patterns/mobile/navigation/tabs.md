@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, mobile app development, service studio widgets, content organization, ui design
+tags:
+  - Accessibility
+  - CSS
+  - JavaScript
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
 summary: Learn how to implement and customize the Tabs UI Pattern in OutSystems 11 (O11) for effective content organization in mobile and reactive web apps.
 locale: en-us
 guid: a5e72a7a-870d-46e7-b2be-a15ac6948b97
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # Tabs
@@ -35,7 +44,7 @@ You can use the Tabs UI Pattern to divide content into meaningful sections. This
 
 <iframe src="https://player.vimeo.com/video/977630907" width="750" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Switching between different tabs in the Tabs UI Pattern.</iframe>
 
-## How to use the Tabs UI Pattern
+## How to use the Tabs UI pattern
 
 1. In Service Studio, in the Toolbox, search for `Tabs`.
 
@@ -139,7 +148,7 @@ To ensure predictable behavior and avoid runtime issues, the Tabs component is d
 
 Avoid using the Tabs Pattern inside patterns with swipe events, such as the Stacked Cards or Carousel Patterns.
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Tabs** UI Pattern does not fully comply with the ARIA tabs specification. The `role="tabpanel"` attribute does not align with the semantic `<article>` HTML element used for tab panels.
 

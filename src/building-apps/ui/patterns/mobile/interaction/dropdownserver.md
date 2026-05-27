@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, dropdown implementation, user experience, data handling, ui customization
+tags:
+  - Events
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore the customizable Dropdown Server Side UI pattern in OutSystems 11 (O11) for managing complex dropdown use cases.
 locale: en-us
 guid: 8B9A073C-74E8-4019-84DE-C686AAFAC59A
@@ -12,6 +18,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
 isautopublish: true
 ---
@@ -203,6 +210,6 @@ If you are an advanced user, you might want to use the Accordion API (OutSystems
 | Initialize | Initializes the pattern instance. | <li>dropdownId: string</li> |
 | Initialize | Initializes the pattern instance. | <li>dropdownServerSideId: string</li><li>eventName: string</li><li>callback: OSUIFramework.Callbacks.OSGeneric</li> |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 The default version of this pattern complies with WCAG 2.2 AA accessibility standards. No changes or manual work are required. If you customize the pattern, validate your implementation to confirm it still meets accessibility requirements.

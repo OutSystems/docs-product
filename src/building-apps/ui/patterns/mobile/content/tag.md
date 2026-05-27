@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui design, customization
+tags:
+  - Accessibility
+  - CSS
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to use the Tag UI Pattern in OutSystems 11 (O11) to enhance user interfaces by styling texts with customizable colors, shapes, and sizes.
 locale: en-us
 guid: ad4f4ddf-d346-4347-b78d-8741dea7cb94
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # Tag
@@ -25,7 +34,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Tag UI Pattern to style small texts in a colored tag format. Use the Tags UI Pattern to display statuses, labels, or categories thus providing great user experience.
 
-## How to use the Tag UI Pattern
+## How to use the Tag UI pattern
 
 1. In Service Studio, in the Toolbox, search for `Tag`.
   
@@ -67,7 +76,7 @@ After following these steps and publishing the module, you can test the pattern 
 | IsLight (Boolean): Optional | Specify the Tag's background color. Examples: _Blank_ - A darker hue of the color is applied to the Tag and a lighter color to the text (default value). _True_ - A brighter hue of the color is applied to the Tag and a darker color to the text. _False_ - A darker hue of the color is applied to the Tag and a lighter color to the text. |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. Examples: Blank - No custom styles are added (default value). "myclass" - Adds the ``myclass`` style to the UI styles being applied. "myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied. You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Tag** UI Pattern uses color combinations that might not meet the minimum contrast ratio required for WCAG 2.2 AA compliance. This happens because the **OutSystems UI** color palette was designed to provide broad coverage across many projects, similar to other design systems.
 

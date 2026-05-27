@@ -122,7 +122,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 Avoid using the Carousel inside patterns with swipe events, such as the **Tabs** and **Stacked Cards** patterns.
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. You must manually update it to fix the following issues:
 

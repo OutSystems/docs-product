@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, svg customization
+tags:
+  - Accessibility
+  - JavaScript
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) supports the Inline SVG UI Pattern for customizing SVG properties and animations in mobile and reactive web apps.
 locale: en-us
 guid: e79dc731-c258-4920-8ec4-6d4245cfc24a
@@ -26,7 +33,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Inline SVG UI Pattern to change fill and stroke properties or animate the SVG paths.
 
-## How to use the Inline SVG UI Pattern
+## How to use the Inline SVG UI pattern
 
 1. In Service Studio, in the Toolbox, search for `Inline SVG`.
 
@@ -75,7 +82,7 @@ Using the example above, the results are as follows:
 | SVGCode (Text): Optional | SVG markup code that is appended onto the HTML. |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples:<br/>- Blank - No custom styles are added (default value).<br/>- "myclass" - Adds the ``myclass`` style to the UI styles being applied.<br/>- "myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.<br/><br/>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Inline SVG** UI Pattern might not expose the right accessibility attributes. This can cause screen readers to misinterpret or ignore the SVG content.
 Use one of the following options to ensure assistive technologies announce the SVG correctly, depending on whether it conveys information or is purely decorative.

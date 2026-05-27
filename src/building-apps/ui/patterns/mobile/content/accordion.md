@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, accordion pattern
+tags:
+  - Accessibility
+  - JavaScript
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to implement and customize the Accordion UI pattern in OutSystems 11 (O11) for dynamic content management in mobile and reactive web apps.
 locale: en-us
 guid: 4cdf1677-f152-4afc-ac90-75901d2e9055
@@ -12,6 +19,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
 isautopublish: true
 ---
@@ -97,7 +105,7 @@ After following these steps and publishing the module, you can test the pattern 
 | --- | --- |
 | OnToggle: Optional | Event triggered when the section is expanded or collapsed. |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Accordion** UI Pattern used together with a **List** Widget doesn’t expose the correct roles for assistive technologies.  
 Assigning `list` and `listitem` roles ensures that screen readers interpret the structure properly, improving navigation and context for users who rely on assistive tools.

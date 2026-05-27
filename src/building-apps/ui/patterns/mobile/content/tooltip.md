@@ -1,5 +1,12 @@
 ---
-tags: tooltip, ui patterns, mobile apps, reactive web apps, outsystems ui
+tags:
+  - Accessibility
+  - Mobile app
+  - OutSystems UI
+  - Triggers
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn to use the Tooltip UI pattern in OutSystems 11 (O11) for mobile and reactive web apps, available in Service Studio to display dynamic informative text.
 locale: en-us
 guid: 44f1bcc8-d2bd-4174-ae3d-8813092a4bac
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 # Tooltip
 
@@ -103,7 +112,7 @@ Applies to OutSystems UI version 2.14.0 and higher.
 
 </div>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the Tooltip UI pattern may not be fully keyboard accessible when configured to open on hover only.  
 To ensure WCAG 2.2 AA compliance, configure the Tooltip trigger to open on click so it can be activated through keyboard interaction.

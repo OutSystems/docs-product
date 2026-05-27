@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, mobile app development, web development, outsystems ui framework, nouislider library
+tags:
+  - Accessibility
+  - Events
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and configure the Range Slider Interval UI pattern in OutSystems 11 (O11) for selecting values within a specified range.
 locale: en-us
 guid: 69f1f6e5-318f-4da2-aa8f-912a7b8e66c2
@@ -13,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+  - remember
+isautopublish: true
 ---
 
 # Range Slider Interval
@@ -124,7 +133,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Initialized: Optional | Event triggered after the RangerSliderInterval instance is ready.<br/>With this event, you get the element Id that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` |
 | OnValueChange: Mandatory | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSliderInterval handler. You can use the SetRangeSliderIntervalChangeOnDragEnd to trigger the event only after the user releases it. |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Range Slider Interval** UI Pattern might not expose the correct roles and labels for assistive technologies. As a result, screen readers can’t distinguish between the lower and upper handles, making it harder for users who rely on assistive tools to understand which value they’re adjusting.
 

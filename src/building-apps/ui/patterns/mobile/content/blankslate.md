@@ -1,6 +1,13 @@
 ---
-tags: ui patterns, user interface design, dependency management, widget implementation, outsystemsui
-summary: Explore how to implement the Blank Slate UI Pattern in OutSystems 11 (O11) for enhancing user interfaces in mobile and reactive web apps.
+tags:
+  - Accessibility
+  - JavaScript
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
+summary: Blank Slate UI Pattern in OutSystems 11 (O11) lets you display empty-state messages in mobile and reactive web apps with WCAG 2.2 AA accessibility.
 locale: en-us
 guid: a8fd8afa-cb19-444b-a050-c83a4dc5d13a
 app_type: mobile apps, reactive web apps
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # Blank Slate
@@ -66,7 +75,7 @@ After following these steps and publishing the module, you can test the pattern 
 | FullHeight (Boolean): Optional | Displays a larger Blank Slate, taking over full page height. If True, the Blank Slate takes over the full page height. This is the default value. If False, the Blank Slate doesn't take over the full height of the page.                                                                                                                                                                                                                                                                                                                                                                                            |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied. </li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the Blank Slate UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. Add the correct role so that screen readers interpret it properly.
 

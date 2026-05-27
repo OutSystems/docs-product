@@ -1,6 +1,13 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui pattern implementation, step-by-step guides
-summary: OutSystems 11 (O11) features a Wizard UI Pattern for simplifying complex tasks into manageable steps.
+tags:
+  - Accessibility
+  - JavaScript
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
+summary: "Wizard UI Pattern in OutSystems 11 (O11): build multi-step navigation with step status logic, navigation buttons, and WCAG 2.2 AA accessibility fixes."
 locale: en-us
 guid: 133fb7c1-4365-4a44-85d0-a81abe22458e
 app_type: mobile apps, reactive web apps
@@ -13,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+  - unblock
+isautopublish: true
 ---
 
 # Wizard
@@ -61,7 +70,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. From the Toolbox, drag another Wizard Item into your Wizard Pattern.
 
-    ![Dragging a new Wizard Item into the Wizard Pattern in Service Studio](images/wizard-4-ss.png "Adding a Wizard Item to the Wizard Pattern")
+    ![Dragging a new Wizard Item into the Wizard Pattern in Service Studio](images/wizard-4-ss.png "Adding a Wizard Item to the Wizard pattern")
 
 1. Drag the Text widget into the Icon placeholders, and enter the numbers 1-4 consecutively.
 
@@ -188,7 +197,7 @@ To ensure that all elements in the list are correctly fetched, for any List used
 
 </div>
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the Wizard UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. You must manually update it to fix the following issues:
 

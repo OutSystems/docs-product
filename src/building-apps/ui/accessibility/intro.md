@@ -1,6 +1,13 @@
 ---
-summary: OutSystems 11 (O11) integrates WCAG-compliant accessibility features, enabling developers to create universally usable apps.
-tags: accessibility, ui design, wcag, ethical development, legal compliance
+summary: "OutSystems 11 (O11) accessibility features: enable WCAG support in Service Studio with focus states, skip-to-content, alt text, and form labels."
+tags:
+  - Accessibility
+  - Forms
+  - Layouts
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
 locale: en-us
 guid: 845ea0d1-6110-4a9f-a4ca-19e53b178825
 app_type: mobile apps, reactive web apps
@@ -12,12 +19,11 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
-  - understand
-  - evaluate
   - apply
 topic:
   - design-for-accessibility
   - accessibility-screen-reader
+isautopublish: true
 ---
 
 # Accessibility
@@ -37,7 +43,7 @@ Here are some guidelines to consider for meeting your accessibility needs:
 1. Ensure that your app meets the basic accessibility requirements. For more information, refer to [Enabling the built-in accessibility features](#enable-the-built-in-accessibility-features).
 1. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. For more information, refer to [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
 1. Pay close attention to complex interactions and dynamic content. Fix the critical issues immediately. Use ARIA to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. Refer to [ARIA roles and attributes](aria-roles-and-attributes.md).
-1. Refer to [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md) for special notes about patterns you may be using on a page.
+1. Refer to [UI Patterns accessibility](ui-patterns-accessibility.md) for special notes about patterns you may be using on a page.
 
 <div class="info" markdown="1">
 
@@ -47,7 +53,7 @@ OutSystems UI is often updated to support more accessibility features. For more 
 
 ## Enable the built-in accessibility features
 
-OutSystems has many built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip-to-content settings. To develop accessible apps, you must activate the accessibility feature in Service Studio. In that case, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md).
+OutSystems has many built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip-to-content settings. To develop accessible apps, you must activate the accessibility feature in Service Studio. In that case, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility](ui-patterns-accessibility.md).
 
 To enable the built-in accessibility features in Service Studio, do the following steps:
 

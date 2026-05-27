@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui components, uidesign
+tags:
+  - Accessibility
+  - Aggregates
+  - JavaScript
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
 summary: Learn how to display user initials or images in a circular badge using the User Avatar UI pattern in OutSystems 11 (O11).
 locale: en-us
 guid: ca179aae-31fe-4032-b523-167c3ba531e5
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+isautopublish: true
 ---
 
 # User Avatar
@@ -95,7 +104,7 @@ After following these steps and publishing the module, you can test the pattern 
 | IsLight (Boolean): Optional | Specify the badge's background and text color. <p>Examples <ul><li>_True_ - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>_False_ - A darker hue of the color is applied to the badge and a lighter color to the text. This is the default.</li></ul></p> |
 | ExtendedClass (Text): Optional | Adds custom style classes to the pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **User Avatar** UI pattern requires a few small updates to fully comply with WCAG 2.2 AA guidelines. You must manually adjust it to address the following issues:
 
@@ -112,7 +121,7 @@ Screen readers rely on the `alt` attribute to describe images. The **User Avatar
 * **Informative avatar:** The avatar appears without nearby text, so it needs an `alt` value for identification.  
 * **Decorative avatar:** The avatar appears next to the user’s name or other descriptive text, so the `alt` value should be empty.
 
-#### Option 1: informative avatar
+#### Option 1: Informative avatar
 
 1. In **Service Studio**, go to the **Interface** tab.
 
@@ -150,7 +159,7 @@ Screen readers rely on the `alt` attribute to describe images. The **User Avatar
 
 1. Publish the module.
 
-#### Option 2: decorative avatar
+#### Option 2: Decorative avatar
 
 1. In **Service Studio**, go to the **Interface** tab.
 

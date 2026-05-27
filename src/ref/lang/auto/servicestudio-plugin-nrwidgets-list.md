@@ -6,7 +6,13 @@ guid: 836cb2ad-86f5-4d9a-96ac-b7e34b4e82f7
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1718%3A3506&mode=design&t=R3Sasu7dM1Rm42Nj-1
-tags: list virtualization, performance optimization, ui components, app development, scroll management
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - Performance
+  - UI
+  - Widgets
 audience:
   - Developer
   - Front-end developer
@@ -14,7 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - understand
   - apply
+isautopublish: true
 ---
 
 # List widget
@@ -93,7 +101,7 @@ To prevent this issue, you can either disable the list virtualization or fetch a
 | --- | --- | --- | --- |
 | Id | Identifies the widget instance at runtime (HTML 'id' attribute). You can use it in JavaScript and Extended Properties. | Yes | Text |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **List** Built-in Widget might not expose the correct semantic roles for assistive technologies. Adding the appropriate ARIA roles helps screen readers announce the list structure correctly. If the List is interactive, you can also add keyboard support so users can focus items and activate them using Enter or Space.
 

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, notification system, user experience, frontend development, mobile app development
+tags:
+  - Accessibility
+  - Events
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
 summary: Explore how to implement and customize the Notification UI Pattern in OutSystems 11 (O11) for effective user communication in mobile and reactive web apps.
 locale: en-us
 guid: 90ae661d-b0d0-4001-b2b1-efe5c50bb056
@@ -12,7 +19,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - apply
+  - evaluate
 isautopublish: true
 ---
 
@@ -113,7 +122,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Initialized: Optional | Event triggered when the Notification instance is ready. |
 | OnToggle: Optional | Triggered when the Notification is toggled. |
 
-## Accessibility – WCAG 2.2 AA compliance
+## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 By default, the **Notification** UI pattern is accessible, but it requires small manual tweaks to fully comply with WCAG 2.2 AA guidelines.
 

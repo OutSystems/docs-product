@@ -372,3 +372,8 @@ exceptions:
 
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b
+
+# Jira issue keys
+# Allow Jira issue keys in titles (e.g., TK-12252, RPM-1) for vulnerability articles
+# Pattern: 1-10 uppercase letters, dash, 1-10 digits
+  - \b[A-Z]{1,10}-\d{1,10}\b

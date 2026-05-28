@@ -44,7 +44,7 @@ and print:
 Call the target collector with whatever the user passed (default to empty):
 
 ```
-python3 <skill-dir>/scripts/collect_targets.py "$ARGUMENTS"
+python3 -B <skill-dir>/scripts/collect_targets.py "$ARGUMENTS"
 ```
 
 It prints a JSON array to stdout. Each entry has:
@@ -78,9 +78,9 @@ For each entry in the list:
    they cover — do **not** second-guess them from vision.
 
    ```
-   python3 <skill-dir>/scripts/check_metadata.py "<image_path>"
-   python3 <skill-dir>/scripts/has_shadow.py    "<image_path>"
-   python3 <skill-dir>/scripts/check_red.py     "<image_path>"
+   python3 -B <skill-dir>/scripts/check_metadata.py "<image_path>"
+   python3 -B <skill-dir>/scripts/has_shadow.py    "<image_path>"
+   python3 -B <skill-dir>/scripts/check_red.py     "<image_path>"
    ```
 
    * `check_metadata.py` prints JSON covering rule 1 (PNG format), rule 2

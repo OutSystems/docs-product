@@ -12,6 +12,7 @@ audience:
   - Developer
 outsystems-tools:
   - none
+isautopublish: true
 ---
 # KeyStore Plugin reference
 
@@ -48,6 +49,7 @@ Creates or updates a key-value pair in the store.
 | Key | Input | Text | The key that will identify the value. |
 | Value | Input | Text | The value to be set. |
 | KeyAuthentication | Input | Boolean | The authentication value for a specific key-value pair. By default, no authentication is required to access the pair ('False'). If ('True'), the access to the pair will require an authentication method. |
+| InvalidateOnBiometricChange | Input | Boolean | Indicates if the stored value should be invalidated when the device's biometric configuration changes (for example, a new fingerprint is enrolled). Only takes effect when **KeyAuthentication** is ('True'). Only applies to secrets saved with this flag set to ('True'). Secrets previously saved without this flag are not affected. By default, the value is not invalidated on biometric change ('False'). |
 | Success | Output | Boolean | Indicates if the action was successful ('True') or not ('False'). |
 | Error | Output | Error | Displays detailed information of an error, if applicable. |
 

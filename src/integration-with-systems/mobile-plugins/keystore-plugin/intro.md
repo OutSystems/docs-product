@@ -14,6 +14,7 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+isautopublish: true
 ---
 
 # Key Store Plugin
@@ -38,12 +39,36 @@ See [Adding plugins](https://success.outsystems.com/documentation/11/extensibili
 
 </div>
 
+## Set the NSFaceIDUsageDescription for iOS
+
+From version 2.5.0, the **InvalidateOnBiometricChange** feature on iOS requires a description for the following property list key:
+
+* **NSFaceIDUsageDescription**
+
+By default, **NSFaceIDUsageDescription** is set to "We use your facial features for authentication purposes." If you want to use a different description, add the following to your app's Extensibility Configurations:
+
+```json
+{
+    "preferences": {
+        "ios": [
+            {
+                "name": "NSFaceIDUsageDescription",
+                "value": "CUSTOM_USAGE_DESCRIPTION"
+            }
+        ]
+    }
+}
+```
+
+Replace `CUSTOM_USAGE_DESCRIPTION` with your custom description.
+
 ## Plugin functionalities
 
 The Key Store Plugin allows you to do the following:
 
 * Set, get, and remove your secrets;
 * Choose if you want authentication to access your secrets (available from version 2.3.0);
+* Invalidate secrets on biometric change (available from version 2.5.0);
 * Migrate the key-value pairs stored in a previous version to a new version of the plugin (only for Android, available from version 2.3.0).
 
 ### Set, get, and remove your secrets
@@ -92,6 +117,26 @@ Any value chosen for the KeyAuthentication variable doesn't affect the security 
 </div>
 
 ![Screenshot showing the SetValue Run Client Action dialog with options for requiring authentication in the OutSystems development environment](images/setvalue-run-client-action-ss.png "The SetValue Run Client Action dialog for authentication")
+
+### Invalidate secrets on biometric change
+
+<div class="info" markdown="1">
+
+Available from version 2.5.0.
+
+</div>
+
+You can set the **InvalidateOnBiometricChange** parameter in the **SetValue** client action to automatically invalidate a stored secret when the device's biometric configuration changes (for example, a new fingerprint is enrolled). This parameter only takes effect when **KeyAuthentication** is **True**.
+
+By default, secrets are not invalidated on biometric change (**False**). If **True**, the secret becomes inaccessible after a biometric change and you must set it again.
+
+<div class="info" markdown="1">
+
+Invalidation only applies to secrets saved with **InvalidateOnBiometricChange** set to **True**. Secrets previously saved without this flag are not affected.
+
+On Android, invalidation only occurs if the secret was saved with Class 3 (Strong) biometrics. If the secret was not saved with Class 3 biometrics, the **InvalidateOnBiometricChange** parameter is ignored.
+
+</div>
 
 #### (Optional) Set the authentication dialog content (Android only)
 

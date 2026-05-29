@@ -70,6 +70,29 @@ Key rules:
     * Explain each placeholder the first time you use it
 * No hard line breaks mid-paragraph — use soft-wrap at 80 columns
 
+### Punctuation
+
+Do not use em dashes (`—`) or en dashes (`–`) in prose. Em dashes break reading rhythm, render inconsistently, fragment under localization, and read as an LLM stylistic tic. Replace per use case:
+
+* Parenthetical aside: use commas if the aside belongs in the sentence; split into a new sentence if it deserves its own space; delete if it does not earn the space.
+* Appositive defining a noun: use commas.
+* End-of-sentence amplification: new sentence.
+* List preamble: colon.
+* Range or span: "to" or a hyphen.
+* Compound modifier: hyphen.
+* Definition: choose the appropriate form based on context (refer to the definition options below).
+
+For definitions, choose one of the following forms instead of an em dash:
+
+* **Section**: use when the definition is substantial and likely to be referenced directly from another document.
+* **Definition list**: use when you have multiple terms to define and they are grouped together, introduced by a lead-in sentence. Ensure your Markdown renderer supports definition list syntax before using it.
+* **Colon** (`**Term**: definition`): use when you have only one term to define, or when the definition is very short (one or two words).
+* **Sentence**: use when the term is already embedded in surrounding prose, or when definitions are interspersed with other content. Integrate the definition naturally rather than breaking the flow.
+
+Avoid parentheses for hedged content. If the parenthetical matters, integrate it into the sentence; if it does not, remove it. Keep parentheses only for functional uses: acronym expansions on first mention (for example, "Progressive Web App (PWA)"), and Markdown link syntax `[text](url)`.
+
+If a sentence resists rewriting without an em dash or a parenthetical hedge, the sentence is too long. Split it.
+
 Callouts use HTML divs with blank lines inside:
 
 ```html

@@ -28,7 +28,6 @@ exceptions:
   - OutSystems
   - OutSystems Cloud
   - OutSystems Developer Cloud
-  - OutSystems FedRAMP
   - OutSystems Model
   - Personal Edition
   - ODC Portal
@@ -213,6 +212,7 @@ exceptions:
   - Google
   - Apple Developer
   - AWS Firehose
+  - FedRAMP
   - JSON
   - IdP
   - IdPs

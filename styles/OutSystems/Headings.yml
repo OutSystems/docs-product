@@ -284,6 +284,7 @@ exceptions:
   - UPSERT
 
 # Industry
+  - ATO
   - AI
   - API
   - ARIA

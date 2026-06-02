@@ -5,7 +5,14 @@ guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1092%3A5184&mode=design&t=VFCa3RHG3vFTaPWn-1
-tags: firebase, mobile app development, analytics, crash reporting, cloud messaging
+tags:
+  - Android
+  - Events
+  - Forge
+  - iOS
+  - Mobile app
+  - Monitoring
+  - Plugins
 audience:
   - Developer
   - Front-end developer
@@ -14,6 +21,7 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Firebase plugins
@@ -122,6 +130,29 @@ You must provide the plugin configuration file as settings in the Service Studio
 1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each environment. For details on pointing the mobile application to the correct configuration files in each environment, see [Override Mobile Extensibility Configurations](../../../deploying-apps/override-extensibility-configurations.md).
 
     ![Shows the process of adding multiple Firebase configuration files for different environments in Service Studio](images/firebase-multiple-configurations-ss.png "Multiple Firebase Configurations in Service Studio")
+
+    For each environment, upload the environment-specific configuration files with distinct names (for example, `google-services-dev.json` for Development and `google-services-prod.json` for Production). Then, in the Override Extensibility Configurations for that environment, update the `src` value to match the uploaded file name while keeping the `target` value unchanged:
+
+    ```json
+    {
+        "resources": {
+            "android": {
+                "AndroidResource": {
+                    "src": "www/google-services-dev.json",
+                    "target": "app/google-services.json"
+                }
+            },
+            "ios": {
+                "IosResource": {
+                    "src": "www/GoogleService-Info-dev.plist",
+                    "target": "GoogleService-Info.plist"
+                }
+            }
+        }
+    }
+    ```
+
+    Replace `google-services-dev.json` and `GoogleService-Info-dev.plist` with the names of the configuration files for that environment.
 
 Starting with iOS 14.5, apps on the App Store must request the user’s permission to collect tracking data through the AppTrackingTransparency framework. For more information, see [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency).
 

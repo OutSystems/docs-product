@@ -246,6 +246,8 @@ The skill uses this file as a checklist. Each rule has:
 | `-usr` | Users | light or dark (both allowed) |
 | `-fg` | Forge | light only |
 | `-we` | Workflow editor | dark only |
+| `-uidp` | User Identity Provider | light only |
+| `-ati` | Assessment Tool Installer | dark only |
 
   Surfaces not listed (e.g. `-at`, `-ams`, `-ib`, etc.) have no theme
   mandate yet — flag as ⚠️ and ask the designer. Confirmed mandates are

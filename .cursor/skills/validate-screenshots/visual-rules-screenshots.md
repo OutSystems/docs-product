@@ -190,7 +190,10 @@ The skill uses this file as a checklist. Each rule has:
   cursor icon positioned on or immediately next to the highlighted element.
   Use one of the three Figma cursor components — never a raw vector:
   `cursor-white`, `cursor-black`, `cursor-hand`. Informational screenshots
-  (output panels, result views, overviews) don't need a cursor.
+  (output panels, result views, overviews) don't need a cursor. Step-based
+  screenshots that already contain numbered callouts guiding the user through
+  interaction steps also don't need a cursor — the callouts already direct
+  attention to the relevant element.
 * **Pass example:** `aggregate-create-ss.png` (cursor on the right edge of
   the highlighted menu item); `add-source-ss.png` (cursor just below the
   **Add source** button).

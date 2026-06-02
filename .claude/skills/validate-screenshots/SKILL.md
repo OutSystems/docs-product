@@ -127,7 +127,9 @@ For each entry in the list:
    suffix-vs-content mismatch (filename says `-ss` but the image shows
    ODC Studio), rule 3's _placement_ (whether a highlight is present and
     on the right element — the color is scripted), rule 4 (numbered
-   callouts), rule 5 (arrows), rule 7 (cursor), rule 8 (PII), rule 9
+   callouts), rule 5 (arrows), rule 7 (cursor — skip if the screenshot
+   already has numbered callouts; they substitute for the cursor in
+   step-based flows), rule 8 (PII), rule 9
    (internal environment URLs).
 1. Collect only failures and warnings — passing rules are not reported.
 

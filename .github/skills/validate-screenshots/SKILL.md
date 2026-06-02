@@ -90,20 +90,25 @@ For each entry in the list:
    * `has_shadow.py` prints one of `shadow: true` / `shadow: wrong` /
      `shadow: false` / `shadow: inconclusive` / `shadow: unknown` for
      rule 6. Map them to severity as follows: `true` passes; `wrong` is
-     ❌ (phrase as "Shadow doesn't match the design-system token — …"
-     so the user knows there is a shadow but it's the wrong one);
+     ❌ (phrase as "Shadow doesn't match the design-system token —
+     apply the TK/shadow effect from the TK Design library (Effects
+     menu in Figma) — …" so the user knows there is a shadow but it's
+     the wrong one);
      `false` is ❌ for large-surface captures and ⚠️ otherwise — never
      a clean pass, so the reviewer always sees it and can dismiss when
      it's genuinely a self-bounded close crop. Phrase every `false`
-     finding as "Missing design-system shadow — …" so the user
-     immediately understands the shadow is absent (don't lead with "no
-     design-system frame" or other paraphrases that bury what's wrong).
+     finding as "Missing design-system shadow — apply the TK/shadow
+     effect from the TK Design library (Effects menu in Figma) — …" so
+     the user immediately understands the shadow is absent and knows how
+     to fix it (don't lead with "no design-system frame" or other
+     paraphrases that bury what's wrong).
      `inconclusive` is ⚠️ — the alpha channel is present but the
      detector couldn't reach opaque content on the sampled edges (e.g.
      content far from the borders, transparent mid-edges); phrase as
-     "Shadow check inconclusive — designer should verify the
-     design-system shadow is present and correct (rule 6)". Do not
-     restate it as "missing shadow" — the script didn't say that.
+     "Shadow check inconclusive — designer should verify the TK/shadow
+     effect from the TK Design library (Effects menu in Figma) is
+     applied (rule 6)". Do not restate it as "missing shadow" — the
+     script didn't say that.
      `unknown` means the image has no alpha channel at all (typically a
      JPG saved as `.png`, which rule 1 already fails); don't emit a
      separate shadow finding in that case. Do not suppress a `false`

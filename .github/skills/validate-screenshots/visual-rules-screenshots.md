@@ -130,9 +130,10 @@ The skill uses this file as a checklist. Each rule has:
     * a subtle grey outer border (≈ `#CCCCCC`, 1 px), and/or
     * a soft outer drop shadow that separates the image from the article's
       white background.
-  Close crops of a single bounded component (a dropdown, a context menu, a
-  button with its label, a single tab strip) don't need the frame — their
-  own borders do the job.
+  Apply the **TK/shadow** effect from the TK Design library (Effects menu in
+  Figma) to produce the correct frame. Close crops of a single bounded
+  component (a dropdown, a context menu, a button with its label, a single
+  tab strip) don't need the frame — their own borders do the job.
 * **OS window chrome is NOT the shadow.** macOS traffic lights, Windows
   titlebars, browser tabs, and any chrome captured as part of the raster
   pixel are content, not frame. The design-system shadow is a separate

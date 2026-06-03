@@ -1,6 +1,10 @@
 ---
 summary: Explore mobile app updates distribution options in OutSystems 11 (O11), including store-only and hybrid updates.
-tags: mobile app distribution, app updates, native builds, store updates, mobile apps configuration
+tags:
+  - Deploy
+  - Mobile app
+  - Native App
+  - Platform Server
 locale: en-us
 guid: c9f2e601-8b4c-4dc7-93d4-e456c058b6f4
 app_type: mobile apps
@@ -15,6 +19,7 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+isautopublish: true
 ---
 
 # Technical Preview - Configure mobile apps updates distribution
@@ -35,7 +40,7 @@ With **mobile apps updates distribution settings**, you can choose how apps upda
 
 These are the prerequisites to manage how mobile apps update on user devices.
 
-### Activating the feature
+### Requirements to activate the mobile app updates support
 
 To manage how mobile apps update on user devices, you need to meet the following requirements:
 
@@ -46,7 +51,7 @@ To manage how mobile apps update on user devices, you need to meet the following
 * You create and distribute the native mobile builds of your apps to submit them to the app stores. This means you created and app based on **Phone App** or **Tablet App** in Service Studio.
 * Ensure you can follow the steps in [How to develop an app that updates only through the app stores](#how-to-develop-an-app-that-updates-only-through-the-app-stores).
 
-### Deactivating the feature
+### Requirements to deactivate the mobile app updates support
 
 You can deactivate this technical preview only after you meet both of these conditions:
 
@@ -55,7 +60,7 @@ You can deactivate this technical preview only after you meet both of these cond
 
 These steps ensure that the deployment in LifeTime works correctly and that the apps continue working for your users.
 
-## How LifeTime manages the configuration of mobile apps updates { #about }
+## How LifeTime manages the configuration of mobile apps updates {#about}
 
 Deployment plans in LifeTime let you configure how apps update on the user devices. LifeTime keeps the settings local to the app and the environment, so you need to change the setting **per app and per target environment**:
 
@@ -80,7 +85,7 @@ When you create a new deployment plan in LifeTime, you can change the update pre
 
 ![Screenshot of the Distribution tab in a LifeTime deployment plan showing mobile application update preferences](images/distribution-tab-deployment-plan-lt.png "Distribution Tab in Deployment Plan")
 
-## Configure a mobile app to update through the stores only { #set-store-only-updates}
+## Configure a mobile app to update through the stores only {#set-store-only-updates}
 
 Edit the distribution settings in the deployment plan. In LifeTime, locate **Configure application settings** screen of the deployment configuration, and then click the **DISTRIBUTION** tab. Here are the instructions with more details.
 
@@ -132,7 +137,7 @@ To configure all environments for store-only updates, you need to configure the 
 
 If your app is ready for distribution, generate the native build and submit the app to the app stores. See the **See Also** section in this document for further instructions.
 
-## Configure a mobile app to receive hybrid updates { #set-hybrid-updates }
+## Configure a mobile app to receive hybrid updates {#set-hybrid-updates}
 
 Read this section for instructions on how to turn off the store-only updates and switch back to the default hybrid updates in the deployment plans.
 
@@ -169,7 +174,7 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
     * **Automatically pushed through your servers.** The app receives hybrid updates.
     * **Distributed only through the app stores.** The app receives updates only through the app stores.
 
-    ![Screenshot of the Advanced settings section showing the mobile updates configuration status](images/app-settings-advanced-updates.png "Advanced Settings and Mobile Updates Configuration Status")
+    ![Screenshot of the Advanced settings section showing the mobile updates configuration status](images/app-settings-advanced-updates-lt.png "Advanced Settings and Mobile Updates Configuration Status")
 
 ## How to develop an app that updates only through the app stores
 

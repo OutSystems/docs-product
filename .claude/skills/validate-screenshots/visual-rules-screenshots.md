@@ -127,18 +127,18 @@ The skill uses this file as a checklist. Each rule has:
 * **Severity:** ❌
 * **Check:** every screenshot that captures a large surface (editor canvas,
   full modal, full browser window, full app page) **must** carry the
-  design-system frame applied in Figma on top of the raster capture. The
+  TK-shadow effect applied in Figma on top of the raster capture. The
   frame is one of:
     * a subtle grey outer border (≈ `#CCCCCC`, 1 px), and/or
     * a soft outer drop shadow that separates the image from the article's
       white background.
-  Apply the **TK/shadow** effect from the TK Design library (Effects menu in
+  Apply the **TK-shadow** effect from the TK design library (Effects menu in
   Figma) to produce the correct frame. Close crops of a single bounded
   component (a dropdown, a context menu, a button with its label, a single
   tab strip) don't need the frame — their own borders do the job.
 * **OS window chrome is NOT the shadow.** macOS traffic lights, Windows
   titlebars, browser tabs, and any chrome captured as part of the raster
-  pixel are content, not frame. The design-system shadow is a separate
+  pixel are content, not frame. The TK-shadow effect is a separate
   element added **in Figma, outside** the captured rectangle — it lives on
   the image border, not inside it. If the image ends abruptly at the edge
   of the OS window with no extra pixels of grey border or soft shadow around
@@ -147,16 +147,16 @@ The skill uses this file as a checklist. Each rule has:
   its verdict as authoritative. The script walks inward from each edge
   mid-point and measures the _feather length_ — the band of partially-
   transparent pixels between optional fully-transparent padding and the
-  first opaque content pixel. The OutSystems shadow token produces an
+  first opaque content pixel. The TK-shadow effect produces an
   asymmetric feather (top 5 px, left 5 px, right 15 px, bottom 15 px),
   so the script accepts only profiles within tolerance of those values.
   Possible verdicts:
     * `shadow: true` — feather present on all four edges and matches the
-      asymmetric token. ✅
+      asymmetric profile. ✅
     * `shadow: wrong` — feather present but the profile doesn't match
       (symmetric shadow, too narrow, too wide, missing on one side, etc).
       Treat this as ❌: the image has a shadow-like effect but it isn't
-      the design-system frame. Common causes: a CSS box-shadow captured
+      the TK-shadow effect from the TK design library. Common causes: a CSS box-shadow captured
       inside the screenshot pixels, a manually drawn shadow, or an export
       from a non-Figma source.
     * `shadow: false` — alpha channel is present but no feathered alpha

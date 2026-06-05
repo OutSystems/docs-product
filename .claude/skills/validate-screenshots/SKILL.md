@@ -92,21 +92,21 @@ For each entry in the list:
      rule 6. Map them to severity as follows:
      `true` passes.
      `wrong` is ❌ — output **exactly** this text (do not paraphrase):
-     "Shadow doesn't match the design-system token — apply the TK/shadow
-     effect from the TK Design library (Effects menu in Figma) (rule 6)".
+     "Shadow doesn't match the TK-shadow effect available in the TK design
+     library — apply it from the Effects menu in Figma (rule 6)".
      `false` is ❌ for large-surface captures and ⚠️ otherwise — never
      a clean pass, so the reviewer always sees it and can dismiss when
      it's genuinely a self-bounded close crop. Output **exactly** this
      text (do not paraphrase):
-     "Missing design-system shadow — apply the TK/shadow effect from the
-     TK Design library (Effects menu in Figma) (rule 6)".
+     "Missing TK-shadow effect available in the TK design library — apply
+     it from the Effects menu in Figma (rule 6)".
      `inconclusive` is ⚠️ — the alpha channel is present but the
      detector couldn't reach opaque content on the sampled edges (e.g.
      content far from the borders, transparent mid-edges). Output
      **exactly** this text (do not paraphrase):
-     "Shadow check inconclusive — designer should verify the TK/shadow
-     effect from the TK Design library (Effects menu in Figma) is
-     applied (rule 6)". Do not restate it as "missing shadow" — the
+     "Shadow check inconclusive — designer should verify the TK-shadow
+     effect available in the TK design library (Effects menu in Figma)
+     is applied (rule 6)". Do not restate it as "missing shadow" — the
      script didn't say that.
      `unknown` means the image has no alpha channel at all (typically a
      JPG saved as `.png`, which rule 1 already fails); don't emit a

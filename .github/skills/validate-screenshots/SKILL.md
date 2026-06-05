@@ -131,6 +131,30 @@ For each entry in the list:
    already has numbered callouts; they substitute for the cursor in
    step-based flows), rule 8 (PII), rule 9
    (internal environment URLs).
+
+   For files ending in **`-diag`**: use vision to determine whether the
+   content is a genuine diagram or a UI screenshot.
+
+   A genuine diagram has all of the following:
+
+   * No product UI chrome (no IDE toolbars, portal navigation, or browser
+     address bar)
+   * A conceptual layout: flow chart, sequence diagram, hierarchy tree,
+     architecture box, icon grid, or swimlane diagram
+   * OutSystems branded orange/red iconography representing concepts
+   * Connecting elements: arrows, dashed lines, or swimlanes
+   * A white or light-gray background with a rounded-rectangle shadow border
+   * Descriptive text labels naming concepts or roles, not UI controls
+
+   A UI screenshot shows product interface chrome with interactive elements
+   (panels, toolbars, dropdowns, form fields, menus) from ODC Studio, ODC
+   Portal, Service Studio, or similar tools.
+
+   * If the content is a genuine diagram → suffix is correct; no naming
+     finding.
+   * If the content is a UI screenshot → emit ❌ Rule 2: "Image looks like
+     a UI screenshot but uses the `-diag` suffix — rename with the correct
+     surface suffix (e.g. `-ss`, `-odcs`)."
 1. Collect only failures and warnings — passing rules are not reported.
 
 Keep per-image notes internal until every image is processed. Do not stream

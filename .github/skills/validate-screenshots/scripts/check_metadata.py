@@ -78,13 +78,7 @@ def check_naming(path: Path) -> dict:
             ),
         }
     if last == DIAGRAM_SUFFIX:
-        return {
-            "verdict": "warn",
-            "reason": (
-                "-diag is for diagrams; screenshots should use a surface "
-                "suffix like -ss or -odcs"
-            ),
-        }
+        return {"verdict": "pass", "reason": ""}
     return {"verdict": "pass", "reason": ""}
 
 

@@ -33,9 +33,11 @@ The skill uses this file as a checklist. Each rule has:
   source suffixes: `-ss`, `-odcs`, `-pl`, `-lt`, `-sc`, `-usr`, `-fg`,
   `-at`, `-ct`, `-af`, `-gc`, `-ams`, `-ib`, `-eb`, `-we`, `-az`, `-vs`,
   `-ok`, `-fc`, `-diag`, `-sa`, `-is`, `-ati`, `-uidp`. Double suffixes are rejected.
-  (`-diag` is for diagrams, not screenshots, so if a screenshot uses it the
-  skill warns.) **Verdict comes from `scripts/check_metadata.py`
-  (`naming.verdict`).**
+  (`-diag` is a valid suffix for Figma diagram exports; the scripted check
+  accepts it as a pass. Vision then verifies the content is a genuine diagram
+  — if it looks like a UI screenshot, Rule 2 fails. See SKILL.md for the
+  diagram visual characteristics used in the vision check.) **Verdict comes
+  from `scripts/check_metadata.py` (`naming.verdict`).**
 * **Check (vision):** the suffix must also match the surface actually shown
   in the image — e.g. a screenshot of ODC Studio should end in `-odcs`, not
   `-ss`. This part is vision-only; the script can't see the pixels.

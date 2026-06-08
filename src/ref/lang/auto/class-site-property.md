@@ -6,7 +6,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1526:2630
 summary: Explore how OutSystems 11 (O11) utilizes site properties to manage global variables and integrate secure data handling in applications.
-tags: global variables, data management, application configuration, security, ide usage, reactive web apps
+tags:
+  - Security
+  - Site Properties
 audience:
   - Developer
   - Front-end developer
@@ -114,61 +116,11 @@ If you change a site property from secret to non-secret or vice-versa, the effec
 
 ## Properties
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Mandatory</th>
-<th>Default value</th>
-<th>Observations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module</td>
-<td>Yes</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td title="Description">Description</td>
-<td>Text that documents the element</td>
-<td></td>
-<td></td>
-<td>Useful for documentation purposes.<br/>The maximum size of this property is 2000 characters.</td>
-</tr>
-<tr>
-<td title="Data Type">Data Type</td>
-<td>The data type of the site property</td>
-<td>Yes</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td title="Is Secret">Is Secret</td>
-<td>Encrypts and protects the value</td>
-<td></td>
-<td>No</td>
-<td>A site property with the Is Secret property enabled does not have  a default value. When a secret site property is published for the first time, its effective value is empty and must be set in Service Center.</td>
-</tr>
-<tr>
-<td title="Default Value">Default Value</td>
-<td>Initial value of this element. If undefined, the default value of the data type is used.</td>
-<td></td>
-<td></td>
-<td>Does not apply to site properties that have the Is Secret property enabled.</td>
-</tr>
-<tr >
-<th colspan="5">Advanced</th>
-</tr>
-<tr>
-<td title="Is Multi-tenant">Is Multi-tenant</td>
-<td>Set to Yes to enable muti-tenancy for this specific element. Overrides the multi-tenancy definitions inherited from the module.</td>
-<td>Yes</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Name | Description | Mandatory | Default value | Observations |
+| --- | --- | --- | --- | --- |
+| Name | Identifies an element in the scope where it is defined, like a screen, action, or module | Yes | | |
+| Description | Text that documents the element | No | | Useful for documentation purposes. The maximum size of this property is 2000 characters. |
+| Data Type | The data type of the site property | Yes | | |
+| Is Secret | Encrypts the value at rest and masks it in management consoles. Once set, the value can't be retrieved or displayed. Use this for passwords, tokens, and other sensitive configuration values. | | No | A site property with the Is Secret property enabled doesn't have a default value. When a secret site property is published for the first time, its effective value is empty and must be set in Service Center. |
+| Default Value | Initial value of this element. If undefined, the default value of the data type is used. | No | | Does not apply to site properties that have the Is Secret property enabled. |
+| Is Multi-tenant | Set to Yes to enable multi-tenancy for this specific element. Overrides the multi-tenancy definitions inherited from the module. | No | | |

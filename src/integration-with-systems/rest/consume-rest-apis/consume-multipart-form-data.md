@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) supports consuming REST APIs with multipart/form-data, allowing multiple data types in a single request.
-tags: rest api, file upload, integration, configuration, api development
+tags:
+  - REST
+  - Testing
+  - Web services
 locale: en-us
 guid: F6D1AF42-2DF2-43D8-9700-75335D0A7302
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -14,6 +17,7 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Consuming a REST API with a multipart or form data method
@@ -33,7 +37,7 @@ Multipart requests combine one or more data sets into the body of a single reque
 
 Consuming a multipart/form-data is a commonly used functionality in REST services. OutSystems supports this functionality as part of its native support of REST services. This means you can set the request format of a REST method to multipart/form-data.
 
-When the **Request Format**property of a method is set to **Multipart/form-data**, the method can receive multiple inputs sent in the body of the request. For each part defined in the OpenAPI specification of the REST API method you are consuming, Service Studio creates an input, with its **Send In** property set to **Body**. Each one of the input data types correspond to the data type of the part specified in the specification.  
+When the **Request Format** property of a method is set to **Multipart/form-data**, the method can receive multiple inputs sent in the body of the request. For each part defined in the OpenAPI specification of the REST API method you are consuming, Service Studio creates an input, with its **Send In** property set to **Body**. Each one of the input data types correspond to the data type of the part specified in the specification.  
 
 For example, the OpenAPI specification below has the request set to multipart/form data with a list of parts (address, profileImage, and id) that have their content-type defined.
 

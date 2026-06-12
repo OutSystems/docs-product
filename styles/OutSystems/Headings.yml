@@ -381,10 +381,3 @@ exceptions:
 # Allow Jira issue keys in titles (e.g., TK-12252, RPM-1) for vulnerability articles
 # Pattern: 1-10 uppercase letters, dash, 1-10 digits
   - \b[A-Z]{1,10}-\d{1,10}\b
-
-# Heading anchors and links
-# Allow kramdown-style heading anchors (e.g., {#ios-1}) so the capitalization
-# check ignores them, especially when the visible heading text is inline code.
-  - \{#[\w-]+\}
-# Allow Markdown links (e.g., [text](url)) in headings.
-  - \[[^\]]*\]\([^)]*\)

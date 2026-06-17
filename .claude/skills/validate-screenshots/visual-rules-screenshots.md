@@ -218,20 +218,31 @@ The skill uses this file as a checklist. Each rule has:
 
 ## 9. No internal environment URLs or hostnames
 
-* **Severity:** ❌
-* **Check:** no internal OutSystems environment URL, staging subdomain,
-  development-only tenant, or infrastructure hostname is visible in the
-  screenshot. This includes browser address bars, application tabs, footer
-  status bars, and any overlay chrome. Common leaks spotted in the reference
-  fail set:
-    * `eng-stage-us-01.outsystems.dev`, `*.outsystems.dev`, `*.outsystems.app`
-    * internal tenant names like `eng-stage-*`, `qa-*`, `internal-*`
-    * development server IPs or private VPN hostnames
-    * internal Jira / ticket IDs (`RDTKF-*`, `TK-*`) visible on screen
-  Use the public OutSystems demo/training environments instead, or blur the
-  hostname before export.
-* **Pass example:** the browser tab reads `training-prd.outsystems.app` or a
-  generic demo URL.
+* **Severity:** ⚠️
+* **Check:** no internal OutSystems infrastructure hostname or staging
+  environment URL is visible in the screenshot. This includes browser address
+  bars, application tabs, footer status bars, and any overlay chrome.
+
+  **Not acceptable** — flag these:
+    * Infrastructure or staging names: `eng-stage-us-01.outsystems.dev`,
+      `eng-stage-*`, `qa-*`, `internal-*`, `staging-*`
+    * Development server IPs or private VPN hostnames
+    * Internal Jira / ticket IDs (`RDTKF-*`, `TK-*`) visible on screen
+
+  **Acceptable** — do not flag these:
+    * Generic synthetic tenant names that read as placeholder data, even on
+      `*.outsystems.dev` or `*.outsystems.app` — for example,
+      `neo-apps.outsystems.dev`, `acme.outsystems.app`,
+      `mycompany-dev.outsystems.app`. These are fine when the article is
+      about domains or when the hostname is intentionally shown as example
+      content.
+    * Public demo/training URLs such as `training-prd.outsystems.app`.
+
+  When in doubt, ask whether the hostname reveals real infrastructure or a
+  real customer — if yes, flag it; if it reads as generic placeholder data,
+  let it pass.
+* **Pass example:** `neo-apps.outsystems.dev` (generic synthetic name),
+  `training-prd.outsystems.app` (public demo URL).
 * **Fail example:** `action-odcs.png` (browser tab shows
   `eng-stage-us-01 - eng-stage-us-01.out...`), `emanuel-rodrigues-odcs.png`
   (footer shows `eng-stage-us-01.outsystems.dev`).

@@ -4,7 +4,7 @@ guid: 0f836bfe-225b-41b0-851e-91b04544362c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/9aIL4vSsuMMBfHMQDs8PLm/OutSystems%20Testing%20Guidelines?node-id=642:247
+figma: https://www.figma.com/design/S948ecVUtPW9JMmJUTPjcO/Testing-apps?node-id=2001-320&t=BqlADDc4tHlI4nzB-1
 tags: component testing, bddframework, gherkin syntax, test automation, quality assurance
 audience:
   - Front-end developer
@@ -16,9 +16,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+isautopublish: true
 ---
 
-# Component Testing
+# Component testing
 
 For component testing, we recommend using the [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework), which is available on OutSystems Forge. This framework provides a set of web blocks and actions that enable the creation of tests in the Gherkin **Given-When-Then syntax**. Tests are built in a UI screen where the structure of the test is defined by the web blocks provided by the framework, and its logic is implemented through screen actions.
 
@@ -28,7 +29,7 @@ For component testing, we recommend using the [BDDFramework](https://www.outsyst
 
 The framework has four different web blocks available to build your tests. For each test scenario, you'll need a BDDScenario web block to represent it.
 
-![Screenshot of the BDDFramework web blocks used for building test scenarios in OutSystems.](images/component-bdd-webblocks.png "BDDFramework Web Blocks")
+![Screenshot of the BDDFramework web blocks used for building test scenarios in OutSystems.](images/component-bdd-webblocks-ss.png "BDDFramework Web Blocks")
 
 <!-- BDDFramework Web Blocks  -->
 
@@ -38,11 +39,11 @@ The **FinalResult** gives you stats about all the scenarios run on the web scree
 
 The **SetupOrTeardownStep** can be included before or after the actual test logic in scenarios to perform setup/cleanup operations outside the scope of the scenario from a functional or business perspective. For instance, it can delete test data that was generated during the test.
 
-## Component Test Architecture
+## Component test architecture
 
 When we're implementing automated component tests, we're implementing OutSystems code. It's code that is used to test other code in our business application, but it's still code anyway. As a consequence, concerns like maintainability, reusability, and scalability need to be considered when running these tests.
 
-### Test Code Isolation
+### Test code isolation
 
 Because you want to have the ability to deploy your business application to production without the test modules, you should have a separate OutSystems application just for testing. By doing so, you create a clear separation between your actual application code and test code, making it easier to manage. Although this separation is beneficial, there is still the need to identify which version of your test code matches which version of your application code. So we recommend that both applications follow the same versioning numbers in Lifetime. Meaning, if the application is tagged with version number 2.1, then the test application should also be tagged with version number 2.1.
 
@@ -52,7 +53,7 @@ Consider the example architecture below. We can clearly see that for each OutSys
 * For OutSystems 11 or higher, if it's loosely coupled to the core app and only references service actions and entities, then the test app must be loosely coupled as well.
 * If it only references the core app through REST/SOAP APIs, then the test application may only reference REST/SOAP from the core test app too.
 
-![Diagram illustrating the separation between OutSystems applications and their corresponding test applications.](images/component-test-code-isolation-1.png "Component Test Code Isolation")
+![Diagram illustrating the separation between OutSystems applications and their corresponding test applications.](images/component-test-code-isolation-1-diag.png "Component Test Code Isolation")
 
 In terms of dependencies between a test application and OutSystems applications, the test application should only reference:
 
@@ -61,7 +62,7 @@ In terms of dependencies between a test application and OutSystems applications,
 
 Complying to these rules ensures that the developed tests do not introduce any unwanted dependencies that could potentially impact the deployment plans when promoting new application and/or test code to other environments.
 
-![Diagram showing the allowed dependencies between a test application and OutSystems applications.](images/component-test-code-isolation-2.png "Test Application Dependencies")
+![Diagram showing the allowed dependencies between a test application and OutSystems applications.](images/component-test-code-isolation-2-diag.png "Test Application Dependencies")
 
 ### Reusability
 
@@ -73,11 +74,11 @@ Experienced developers may already know to identify such patterns upfront. Other
 
 Notice that it is perfectly fine, and even sometimes desirable, to reuse common patterns from other test applications, as long as the dependency rules mentioned above are followed.
 
-## Component Test Design Patterns
+## Component test design patterns
 
 For simplicity sake, we earlier described that you start defining a test scenario by dragging the BDDScenario web block directly onto your test screen. Furthermore, as a best practice when implementing component testing with the BDD Framework, we recommend you group multiple tests in the same test screen. These tests can be grouped by whatever criteria the team agrees on, such as requirement, functionality, or concept.
 
-![Screenshot demonstrating how multiple tests are grouped in the same test screen within the OutSystems environment.](images/component-design-patterns.png "Component Test Design Patterns")
+![Screenshot demonstrating how multiple tests are grouped in the same test screen within the OutSystems environment.](images/component-design-patterns-diag.png "Component Test Design Patterns")
 
 By following this approach, each test implements in its own separate web block instead of directly in the test screen. After each test web block is implemented, they can enter the test screen along with the FinalResult web block. When you access the screen, all tests included run just as if they were defined directly on the screen.
 

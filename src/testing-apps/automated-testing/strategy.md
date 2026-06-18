@@ -4,7 +4,7 @@ guid: 43ac8c54-9bb3-4dd7-be5d-0301eeee07f9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/9aIL4vSsuMMBfHMQDs8PLm/OutSystems%20Testing%20Guidelines?node-id=147:325
+figma: https://www.figma.com/design/S948ecVUtPW9JMmJUTPjcO/Testing-apps?node-id=2001-325&t=BqlADDc4tHlI4nzB-1
 tags: automated testing, testability, refactoring, regression testing, best practices
 audience:
   - Developer
@@ -13,9 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
-# Automated Testing Strategy
+# Automated testing strategy
 
 There is a big difference between an application that was built with testability in mind, and an existing application, sometimes even legacy, that was produced with none of these concerns. A good design for testability is crucial for a sound testing strategy, and achieving it requires a continuous effort from all team members throughout the application lifecycle.
 
@@ -25,7 +26,7 @@ So when thinking about automating an existing application, first analyze how rea
 
 One thing to consider is that the risk of refactoring an application can be significantly reduced with a good set of regression tests. Learn more techniques to improve the testability of OutSystems applications in [Developing for Testability](https://success.outsystems.com/Documentation/11/Developing_an_Application/Developing_for_Testability).
 
-## Automated Testing Scenarios
+## Automated testing scenarios
 
 As we explained above, there are two different scenarios when we want to apply automated testing. In one case, we have an application that was built with testability in mind, and we should:
 
@@ -44,13 +45,13 @@ For this last option, your E2E tests will act as a temporary suite of regression
 
 Keep in mind that if we're considering covering a legacy application with automated testing, it's because there is a risk identified that needs mitigation and the application still has ongoing developments (more details in [OutSystems Testing Guidelines - Which Tests to Automate](testing-guidelines.md#which-tests-to-automate).) In these cases, the refactoring effort should be considered part of the automation effort, because it should pay off to do the refactoring together with the tests instead of building hard-to-maintain E2E tests.
 
-### Automated Testing Decision Process
+### Automated testing decision process
 
 Every new application should follow the standard test automation principles, the testing pyramid, development best practices for testability, and the decision process on which tests should be automated.
 
 The problem is more difficult to solve when we need to automate the tests for an existing application. When we have this scenario we should follow this process.
 
-![Workflow Strategy](images/strategy-workflow.png?width=750)
+![Flowchart showing a test automation assessment leading to either standard test automation practice or, if not ready, a tactical practice followed by planning application refactoring.](images/strategy-workflow-diag.png "Automated testing decision workflow")
 
 First of all, we need to assess our application against testability principles explained in [Developing for Testability](https://success.outsystems.com/Documentation/11/Developing_an_Application/Developing_for_Testability). This is done in the **Test Automation Assessment** phase.
 
@@ -60,14 +61,14 @@ On the other hand, in case the assessment result is negative, then we should app
 
 In the end, we should always plan a refactoring on the parts that should be more testable-ready. Refactoring is always a good thing, even if it is sometimes hard to explain to the business. In the end it's a crucial tool to reduce technical debt, which business can see  only in the worst way.
 
-If you take into account OutSystems' "True change" capabilities, refactoring becomes much easier to perform. So refactoring should become a part of developers' practices as a way to continuously improve testability and ensure a reduced technical debt.
+If you take into account OutSystems is "True change" capabilities, refactoring becomes much easier to perform. So refactoring should become a part of developers' practices as a way to continuously improve testability and ensure a reduced technical debt.
 
 For more information about refactoring an application, please refer to the following links:
 
 * [Refactor an Application in OutSystems 10](https://success.outsystems.com/Documentation/10/Managing_the_Applications_Lifecycle/Deploy_Applications/Refactor_an_Application)
 * [Refactor an Application in OutSystems 11](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Refactor_an_Application)
 
-## Test Data Management
+## Test data management
 
 Managing test data can be as important and difficult to achieve as building the test itself. The data used during test execution instantiates the functional behavior we are validating when running each test. This means that each test's dependency on its data is huge. Most tests fail due to unreliable data. This is even more true as you climb up the testing pyramid and become more dependent on real data. E2E tests depend more on real data than component tests.
 
@@ -77,7 +78,7 @@ Another important thing is that tests must always be idempotent.Prepare testing 
 
 Finally, tests must run fast, or at least they must execute within the minimal time possible. Otherwise they compromise the automation and continuous delivery ultimate goals. If we implement common data setup and teardown for multiple automated tests, these steps will also consume test execution time. We need to follow some criteria to set up test data in a way that optimizes test execution time.
 
-### Test Data Management Options
+### Test Data management options
 
 When we build tests for an OutSystems application, our tests will always depend on two possible data sources:
 
@@ -122,13 +123,13 @@ When thinking about mocking services, there are usually two different options:
 
 We always need to analyze each application test data dependency to allow it to test in the best way possible. So, you must carry out a deep test data for each application to reduce test complexity, effort, and maintainability, and  to reach the ultimate goal of test idempotency.
 
-## Mocking Services for Integrations Points
+## Mocking services for integrations points
 
 Mocking services are used to simulate real services used in a given functionality. This method is commonly known as service virtualization. The reason to use mock services is to eliminate dependencies from external systems when we try to test the functionality of our application. By isolating our application, we are able to assess the correctness of our functionalities, regardless of the status of the external system.
 
 This is very useful to pinpoint potential problems during testing. If we have a set of tests on a given functionality that are using mocking services to simulate an external system, and all execute successfully, then we know our application logic is okay. But if we have another set of tests on the same functionality that instead communicate with the actual external system, and they fail, then we know that the problem is at the integration level.The problem is that the API changed or the external system is down. This is a technique called contract testing.
 
-![Architecture diagram of an OutSystems test setup where a BDD test application and the application under test use domain mocking services to route calls either to an external REST API or to a mock server.](images/strategy-integration-points.png "Integration Points Strategy with Mocking Services")
+![Architecture diagram of an OutSystems test setup where a BDD test application and the application under test use domain mocking services to route calls either to an external REST API or to a mock server.](images/strategy-integration-points-diag.png "Integration points strategy with mocking services")
 
 This implies that when the external service is called, the application needs to be aware if it is running in the context of a test execution, and if mocking will apply in external dependencies. Some tests will want to use mocking, and some won't. For this reason, we recommend that you define a separate mocking services framework to provide two simple functionalities:
 
@@ -137,39 +138,39 @@ This implies that when the external service is called, the application needs to 
 
 This framework consists of a single MockingServices module that provides the base functionality, and wrapper modules per domain called DomainMockingServices.
 
-### Mocking Services Module
+### Mocking services module
 
 This is a Library-level module that should exist in its own separate application. Because of dependencies that will be created from your OutSystems applications to this module, it will have to be pushed all the way up to production. For this reason, the module needs to be as lightweight as possible, have no dependencies to any other modules, and have no impact on the running applications in production. For an example of a possible implementation, please take a look at the appendix MockingServices sample module.
 
-### DomainMockingServices Module
+### Domain mocking services module
 
 Because the MockingServices module is generic and will be used by all domains, each domain should abstract its usage by implementing its own module that wraps its functionality, only for that domain. This enables the possibility to have mocking enabled for some domains and disabled for others at the same time.
 
 This is what the architecture should look like:
 
-![Layered architecture diagram showing business apps and test apps per domain using domain-specific mocking service modules on top of a shared MockingServices module.](images/strategy-mockingservices-architecture.png "Mocking Services Framework Architecture")
+![Layered architecture diagram showing business apps and test apps per domain using domain-specific mocking service modules on top of a shared MockingServices module.](images/strategy-mockingservices-architecture-diag.png "Mocking Services Framework Architecture")
 
 ### Mocking in REST APIs
 
 In the context of REST API methods, simply add the testing mode validation to the "OnBeforeRequest" event action, and if it returns true, customize the request URL to point it to the destination mock service, as shown in this picture.
 
-![Service Studio flow for a consumed REST API OnBeforeRequest action that checks IsDomainMockingOn and, when true, changes the request BaseURL to point to a mock server.](images/strategy-mocking-rest.png "Mocking REST APIs in OnBeforeRequest")
+![Service Studio flow for a consumed REST API OnBeforeRequest action that checks whether domain mocking is on and, when true, changes the request BaseURL to point to a mock server.](images/strategy-mocking-rest-ss.png "Mocking REST APIs in OnBeforeRequest")
 
 ### Mocking in SOAP APIs
 
 In the context of SOAP API methods, add testing validation before calling the actual service method. If it returns true, override the target URL by calling the "SetWebReferenceURL" action from the "EnhancedWebReferences" module. Here's a small example:
 
-![Service Studio flow for a consumed SOAP service that checks IsDomainMockingOn and, when true, calls SetWebReferenceURL to redirect the SOAP method to a mock server URL.](images/strategy-mocking-soap.png "Mocking SOAP APIs with SetWebReferenceURL")
+![Service Studio flow for a consumed SOAP service that checks whether domain mocking is on and, when true, calls SetWebReferenceURL to redirect the SOAP method to a mock server URL.](images/strategy-mocking-soap-ss.png "Mocking SOAP APIs with SetWebReferenceURL")
 
-### MockingServices Sample Module
+### Mocking services sample module
 
 This is a brief description of a possible implementation for this module, with an example for when there's a single mocking server in place. But for scenarios where there are multiple mocking servers, it easily can be extended.
 
 #### Data tab
 
-![Service Studio data tab showing the DomainMocking entity with Id, DomainName, and IsOn attributes, plus site properties MockingServerBaseURL and MockingServicesOn.](images/strategy-mockingservices-data.png "MockingServices Data Model")
+![Service Studio data tab showing the DomainMocking entity with Id, DomainName, and IsOn attributes, plus site properties MockingServerBaseURL and MockingServicesOn.](images/strategy-mockingservices-data-ss.png "MockingServices data model")
 
-##### Site Properties
+##### Site properties
 
 MockingServerBaseURL
 :   Indicates the mocking server's base URL. Used by the application modules to know where to redirect the calls.
@@ -182,9 +183,9 @@ MockingServicesOn
 DomainMocking
 :   Persists the status of the mocking service for a specific domain. We recommend that the domain is the LifeTime team or the business application (as per DDD recommendations). But because the DomainName attribute is a text, it is also possible to set any level of granularity.
 
-#### Logic Tab
+#### Logic tab
 
-![Service Studio logic tab highlighting the IsDomainMockingOn and SetDomainMocking server actions, their internal decision flows, and custom exceptions for mocking services.](images/strategy-mockingservices-logic-ss.png "MockingServices Logic and Public Actions")
+![Service Studio logic tab highlighting the IsDomainMockingOn and SetDomainMocking server actions, their internal decision flows, and custom exceptions for mocking services.](images/strategy-mockingservices-logic-diag.png "MockingServices logic and public actions")
 
 ##### Public Actions
 
@@ -201,7 +202,7 @@ IsDomainMockingOn
 MockingServicesOffException
 :   Exception is thrown when the MockingServicesOn site property is set to false and someone tries to set the mocking for a domain.
 
-### DomainMockingServices Sample Module
+### Domain mocking services sample module
 
 Here is a sample implementation of the DomainMockingServices module. Because the MockingServices module accepts the DomainName as generic text, it's best to have these wrapper modules to abstract the tests from the actual domain name.
 
@@ -209,4 +210,4 @@ The module keeps the domain name in a site property and wraps the actions from t
 
 Here's a sample of what one of these DomainMockingServices modules looks like:
 
-![Service Studio module example where site properties store the domain name and wrapper actions call IsDomainMockingOn and SetDomainMocking from the central MockingServices module.](images/strategy-domainmockingservices.png "DomainMockingServices Wrapper Module Example")
+![Service Studio module example where site properties store the domain name and wrapper actions call IsDomainMockingOn and SetDomainMocking from the central MockingServices module.](images/strategy-domainmockingservices-ss.png "DomainMockingServices wrapper module example")

@@ -4,7 +4,7 @@ guid: 5b8189ce-c413-481c-ba0a-ef1598996630
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/9aIL4vSsuMMBfHMQDs8PLm/OutSystems%20Testing%20Guidelines?node-id=147:324
+figma: https://www.figma.com/design/S948ecVUtPW9JMmJUTPjcO/Testing-apps?node-id=1-488&t=BqlADDc4tHlI4nzB-1
 tags: automated testing, continuous integration, deployment planning, application lifecycle management, integrity validation
 audience:
   - Developer
@@ -17,6 +17,7 @@ coverage-type:
   - apply
   - understand
   - evaluate
+isautopublish: true
 ---
 
 # OutSystems testing guidelines
@@ -35,7 +36,7 @@ Keep in mind that integrity validations, self-healing capabilities, and impact a
 
 The following diagram depicts typical testing activities that can take place during the OutSystems software delivery lifecycle:
 
-![Typical testing activities during OutSystems app delivery cycle](images/guidelines-test-lifecycle-diag.png?width=900)
+![Diagram showing DEV, CI, QA, PRE, and PRD environments with App 1 progressing through sprint and release cycles, mapping component, integration, E2E, deployment, load, and smoke tests, and emphasizing reliable test data.](images/guidelines-test-lifecycle-diag.png "Testing activities across OutSystems delivery environments")
 
 Component tests validate the behavior of single units of code. These tests correspond to unit tests in traditional high-code technologies. In OutSystems, these map to Action elements that implement business logic. As part of sprint development activities, developers should automate or manually deliver these tests in the DEV environment. Automated component tests should also run in the continuous integration (CI) environment, as part of the CI flow. Component tests can adopt one of two approaches:
 
@@ -102,19 +103,19 @@ So, how do you decide which tests to automate? Well, we like the approach Angie 
 
 1. Evaluate the risk of not automating a test, taking into account the frequency with which the target functionality is used and the business impact if it breaks.
 
-    ![Risk versus impact @ 2016-19 Angie Jones, All Rights Reserved](images/guidelines-risk-diag.png?width=300)
+    ![Blank risk chart with probability on the vertical axis and impact on the horizontal axis, used to rate how often a feature is used versus the impact if it fails.](images/guidelines-risk-diag.png "Risk assessment chart for test automation")
 
 1. Evaluate the value of the test, based on the distinctness of the test and also the time it would take to recover from a failure of the functionality under test
 
-    ![](images/guidelines-value-diag.png?width=300)
+    ![Blank value chart with distinctness on the vertical axis and cause for action on the horizontal axis, used to rate how much new information a test provides and how quickly failures would be fixed.](images/guidelines-value-diag.png "Value assessment chart for test automation")
 
 1. Evaluate the cost-efficiency of building the test, analyzing how fast and easy it is to build the test.
 
-    ![](images/guidelines-cost-efficiency-diag.png?width=300)
+    ![Blank cost-efficiency chart with quickness on the vertical axis and ease on the horizontal axis, used to rate how fast and easy it is to script a test.](images/guidelines-cost-efficiency-diag.png "Cost-efficiency chart for building automated tests")
 
 1. Evaluate the history of the user story we want to test, how many functional failures we had in the past in similar areas against the number of failures of this particular test case.
 
-    ![](images/guidelines-history-diag.png?width=300)
+    ![Blank history chart with similarity to weak areas on the vertical axis and frequency of breaks on the horizontal axis, used to rate historical failures for a test and related areas.](images/guidelines-history-diag.png "History chart for evaluating test automation")
 
 1. The score for each item comes from multiplying the two values determined in each vector. In the end, you should finish with a score matrix that will help you decide whether or not you should automate every specific test you need to perform.
 
@@ -126,13 +127,13 @@ So, how do you decide which tests to automate? Well, we like the approach Angie 
 
     For example:
 
-    ![](images/guidelines-score-example-diag.png?width=500)
+    ![Table listing three test cases with columns for ID, description, risk, value, cost, history, and score, highlighting scores of 75, 65, and 20 to illustrate automation decisions.](images/guidelines-score-example-diag.png "Example scoring matrix for deciding what to automate")
 
 ## Segregating automated tests
 
 Test automation greatly reduces regression testing on increasingly complex or mission-critical systems. It is also a critical part of any continuous delivery approach. When choosing which tests to automate, it’s highly advisable to adopt the [Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) approach, which states that test automation effort should be distributed according to a pyramid shape, with component tests on the bottom layer and moving all the way up to E2E tests. The reason for this is that component tests are easy to write and maintain, as well as very fast to run, whereas E2E tests are typically unstable, hard to maintain, and very time consuming to execute.
 
-![Testing Pyramid diagram with Component tests at the base, Integration tests in the middle, and E2E tests at the top, plus arrows indicating decreasing test granularity and test speed and guidance to climb the pyramid only as necessary.](images/guidelines-testing-pyramid-diag.png "Testing Pyramid distribution of automated tests")
+![Testing Pyramid diagram with component tests at the base, integration tests in the middle, and E2E tests at the top, plus arrows indicating decreasing test granularity and test speed and guidance to climb the pyramid only as necessary.](images/guidelines-testing-pyramid-diag.png "Testing Pyramid distribution of automated tests")
 
 A key concept for implementing the Testing Pyramid is to write testable applications. In OutSystems, this means adopting the [Architecture Canvas architecture principles](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) and distributing functionality into small, testable pieces. For instance, all business entities reside in core layer modules and are wrapped by public server actions that validate data correctness, dependencies, and calculations. No business logic should be in Screen actions because these are not testable with component tests.
 

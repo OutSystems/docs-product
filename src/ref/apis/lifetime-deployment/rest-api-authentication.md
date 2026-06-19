@@ -1,6 +1,10 @@
 ---
 summary: Learn how to authenticate REST API calls using service accounts and tokens in OutSystems 11 (O11).
-tags: api authentication, service accounts, security practices, rest api security, access control
+tags:
+  - Authentication
+  - Authorization
+  - REST
+  - Security
 locale: en-us
 guid: 1f0c3b37-45b9-4a4d-b640-016dac5f5d6b
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -15,11 +19,13 @@ outsystems-tools:
   - platform server
 coverage-type:
   - remember
+  - apply
 topic:
   - service-accounts-deploy
+isautopublish: true
 ---
 
-# REST API Authentication
+# REST API authentication
 
 To invoke the REST methods of [LifeTime API](<../auto/lifetime-deployment-api-v2.final.md>) you will need a special type of account, called a **service account**.
 
@@ -29,7 +35,7 @@ After creating a service account, LifeTime provides you with an **authentication
 
 From LifeTime 11.16.0 and Platform Server 11.18.0 onwards, service accounts can also be used in [Performance Monitoring API](<../performancemonitoring-api.md>).
 
-## Security Considerations
+## Security considerations
 
 All REST API method calls are audited and can be traced back to the service account through the authorization token in the request. The logs can be viewed in LifeTime in the activity log of the service account.
 
@@ -47,17 +53,23 @@ To create a service account in LifeTime, do the following:
 
 1. In the LifeTime management console of your infrastructure, open the **User Management** tab and select the **Service Accounts** sub-menu.
 
-    ![Screenshot of the LifeTime Service Accounts management console highlighting the 'New Service Account' button.](images/lt_service_accounts.png "LifeTime Service Accounts Management Console")
+    ![Screenshot of the LifeTime Service Accounts management console highlighting the 'New Service Account' button.](images/service-accounts-lt.png "LifeTime Service Accounts Management Console")
 
 1. Select **New Service Account**.
 
 1. Enter the service account username and description, select the desired role, select the duration for the token, and click the **Create** button.
 
+    <div class="info" markdown="1">
+
+    To connect ODC to your O11 infrastructure (using LifeTime 11.29.0 or later), set **Service account consumer** to **ODC** and paste the ODC organization ID from the ODC Portal infrastructure configuration page. For more information, refer to [Extending with ODC](https://www.outsystems.com/tk/redirect?g=6d794961-6191-4e75-a22d-45b8f8b411e3).
+
+    </div>
+
     After creating the service account, you are provided with the authentication token that you must include in each REST API method call to authenticate the request.
 
-    ![Blurred image of an authentication token provided by LifeTime after creating a service account.](images/lt_auth_token_blurred.png "Authentication Token Display")
+    ![Blurred image of an authentication token provided by LifeTime after creating a service account.](images/auth-token-lt.png "Authentication Token Display")
 
-    **Note**: As a security measure, the authentication token is only shown once.If you lose the token, you must generate a new one, and the previous token is no           longer valid.
+    **Note**: As a security measure, the authentication token is only shown once. If you lose the token, you must generate a new one. In LifeTime 11.29.0 and later, the previous token remains valid for 24 hours after a new one is generated, giving you time to update your integrations. In earlier versions, the previous token is immediately revoked. For this overlap to also apply to Performance Monitoring API calls, the target environment must be running Platform Server 11.41.3 or later — on earlier versions, the previous token is revoked immediately at the Platform Server level.
 
 ## Authenticating REST API calls
 
@@ -67,7 +79,7 @@ To authenticate each REST API method call you will need to provide the authentic
 
 ## Revoking an authentication token
 
-If you need to revoke or deprecate a given authentication token, you should generate a new token for the corresponding service account as follows:
+If you need to rotate or revoke a given authentication token, generate a new token for the corresponding service account as follows. In LifeTime 11.29.0 and later, the previous token is not immediately revoked — it remains valid for 24 hours to allow a smooth transition.
 
 1. Navigate to **User Management** tab, and select the **Service Accounts** sub-menu.
 
@@ -75,8 +87,8 @@ If you need to revoke or deprecate a given authentication token, you should gene
 
 1. Click the **Generate new Authentication Token** link.
 
-    ![Screenshot showing the option to generate a new authentication token for a service account in LifeTime.](images/lt_gen_new_auth_token.png "Generate New Authentication Token")
+    ![Screenshot showing the option to generate a new authentication token for a service account in LifeTime.](images/gen-new-auth-token-lt.png "Generate New Authentication Token")
 
-1. Click **Continue** to confirm that you want to generate a new token, and that you’re fully aware that the previous token will be revoked/deprecated and will no longer work.
+1. Click **Continue** to confirm that you want to generate a new token. In **LifeTime 11.29.0 and later**, the previous token remains valid for **24 hours** after the new token is generated, allowing a overlap period for you to update your integrations. After 24 hours, the previous token is automatically revoked. In earlier versions, the previous token is revoked immediately. For this overlap to also apply to Performance Monitoring API calls, the target environment must be running **Platform Server 11.41.3 or later** — on earlier versions, the previous token is revoked immediately at the Platform Server level.
 
 A new token is generated and displayed for the current service account. Take note of the generated token as it will not be shown again.

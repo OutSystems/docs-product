@@ -12,6 +12,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # File Plugin version 4 reference page
@@ -24,13 +25,13 @@ If you are looking for information about version 3.x of the File Plugin, refer t
 
 <div class="info" markdown="1">
 
-If you are looking to migrate from version 3.X.X of the File Plugin to 4.0.0 or higher, refer to the [migration guide](file-plugin-migration-guide.md).
+If you are looking to migrate from version 3.x.x of the File Plugin to 4.0.0 or higher, refer to the [migration guide](file-plugin-migration-guide.md).
 
 </div>
 
-This is the reference of all the functionality you can use from the [File Plugin version 4.0.0](intro.md). The File Plugin version 2.0.0 uses a Cordova plugin, and for more information see [cordova-outsystems-file](https://github.com/ionic-team/cordova-outsystems-file). For version 3.X.X and below, see [cordova-plugin-file](https://github.com/OutSystems/cordova-plugin-file).
+This is the reference of all the functionality you can use from the [File Plugin version 4.0.0](intro.md). The File Plugin version 2.0.0 uses a Cordova plugin, and for more information see [cordova-outsystems-file](https://github.com/ionic-team/cordova-outsystems-file). For version 3.x.x and below, see [cordova-plugin-file](https://github.com/OutSystems/cordova-plugin-file).
 
-## Plugin Elements
+## Plugin elements
 
 This section details the different elements exposed by the File Plugin, starting on version 4.0.0. For older versions, refer to [Deprecated Elements](#deprecated-elements).
 
@@ -51,7 +52,7 @@ This section details the different elements exposed by the File Plugin, starting
 | **Rename** | Renames an existing file or directory. |
 | **WriteFile** | Writes content to a file. This action overwrites data written to the file previously. |
 
-### Path Directory
+### Path directory
 
 Most operations in the File Plugin have two attributes: **Path** and **Directory**, each with a different purpose. The **Directory** is an optional specific location in the file system. If it is specified, then the **Path** should be the relative path from that directory. If not, then **Path** should contain the full path to file.
 
@@ -77,7 +78,7 @@ If you're unsure which type of **PathDirectory** you need, try to think about th
 
 </div>
 
-### File Info
+### File info
 
 The **GetMetadata** and **ListDirectory** client actions return a structure containing information about a file or directory, named **FileInfo**. The table below decribes the attributes of this structure.
 
@@ -90,29 +91,13 @@ The **GetMetadata** and **ListDirectory** client actions return a structure cont
 | **ModificationTime**    | Date Time of last modification.                        |
 | **URI**                 | Full URI path to the file or directory (e.g. file://). |
 
-### Errors
+### Error codes
 
-Starting on version 4.0.0 of the File Plugin, specific errors are returned on native platforms.
+For a complete list of mobile plugin errors, their causes, impact, and recommended solutions, see the [Mobile Plugins errors page](https://www.outsystems.com/tk/redirect?g=8ae41e18-fa7d-4cbe-a223-226a14abd8bf).
 
-| Error code        | Platform(s)      | Message                                                                                             |
-| ------------------| ---------------- | --------------------------------------------------------------------------------------------------- |
-| OS-PLUG-FILE-0001 | Android, iOS     | Cordova isn't defined.                                                                              |
-| OS-PLUG-FILE-0002 | Android, iOS     | The app is running with an old version of the plugin. Please create a new mobile package.           |
-| OS-PLUG-FILE-0003 | Android, iOS     | The File plugin is not defined. Make sure the mobile package is valid.                              |
-| OS-PLUG-FILE-0004 | iOS              | Cordova bridge isn’t initialized.                                                                   |
-| OS-PLUG-FILE-0005 | Android, iOS     | The action input parameters aren’t valid.                                                           |
-| OS-PLUG-FILE-0006 | Android, iOS     | Invalid path was provided.                                                                          |
-| OS-PLUG-FILE-0007 | Android          | Unable to perform file operation, user denied permission request.                                   |
-| OS-PLUG-FILE-0008 | Android, iOS     | Operation failed because file does not exist.                                                       |
-| OS-PLUG-FILE-0009 | Android          | Operation not supported for provided input.                                                         |
-| OS-PLUG-FILE-0010 | Android, iOS     | Directory already exists, cannot be overwritten.                                                    |
-| OS-PLUG-FILE-0011 | Android, iOS     | Missing parent directory – possibly recursive=false was passed or parent directory creation failed. |
-| OS-PLUG-FILE-0012 | Android, iOS     | Cannot delete directory with children; received recursive=false but directory has contents.         |
-| OS-PLUG-FILE-0013 | Android, iOS     | The operation failed with an error.                                                                 |
+## Deprecated elements
 
-## Deprecated Elements
-
-The following section details the elements that were available in version 3.X.X of the File Plugin. These were marked as deprecated in version 4.0.0.
+The following section details the elements that were available in version 3.x.x of the File Plugin. These were marked as deprecated in version 4.0.0.
 
 <div class="warning" markdown="1">
 

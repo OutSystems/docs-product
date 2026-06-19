@@ -15,9 +15,10 @@ coverage-type:
   - understand
   - apply
   - remember
+isautopublish: true
 ---
 
-# File Viewer Plugin
+# File viewer plugin
 
 <div class="info" markdown="1">
 
@@ -95,7 +96,7 @@ The plugin can access only the resources you deploy in the **resources** path. T
 
 </div>
 
-## Example of using File Viewer plugin
+## Example of using File viewer plugin
 
 Here is an example of how to use the File Viewer plugin.
 
@@ -135,22 +136,6 @@ The following client actions are still offered, but have been deprecated since v
 | **OpenDocument**        | Opens a remote file or a [file from the app resources](#working-with-app-resources). | Use **OpenDocumentFrom(X)** where (X) can be `LocalPath`, `Resources`, or `Url`.        |
 | **PreviewMediaContent** | iOS only. Action to preview media content.                                           | Use **PreviewMediaContentFrom(X)** where (X) can be `LocalPath`, `Resources`, or `Url`. |
 
-### Errors
+### Error codes
 
-Since version 3.0.0 of the Plugin, specific errors are returned on native platforms.
-
-| Error code        | Platform(s)      | Message                                                                                   |
-| ------------------| ---------------- | ----------------------------------------------------------------------------------------- |
-| OS-PLUG-FLVW-0001 | Android, iOS     | Cordova isn't defined.                                                                    |
-| OS-PLUG-FLVW-0002 | Android, iOS     | The app is running with an old version of the plugin. Please create a new mobile package. |
-| OS-PLUG-FLVW-0003 | Android, iOS     | File Viewer Plugin is not loaded.                                                         |
-| OS-PLUG-FLVW-0004 | Android, iOS     | The file you are trying to open does not exist.                                           |
-| OS-PLUG-FLVW-0005 | Android, iOS     | The URL you are trying to open is malformed.                                              |
-| OS-PLUG-FLVW-0006 | Android, iOS     | Path of the file to open is either null or empty.                                         |
-| OS-PLUG-FLVW-0007 | Android, iOS     | URL to open is either null or empty.                                                      |
-| OS-PLUG-FLVW-0008 | Android, iOS     | Could not open the file.                                                                  |
-| OS-PLUG-FLVW-0009 | Android, iOS     | Invalid parameters.                                                                       |
-| OS-PLUG-FLVW-0010 | Android          | There is no app to open this file.                                                        |
-| OS-PLUG-FLVW-0011 | iOS              | Cordova bridge isn’t initialized.                                                         |
-| OS-PLUG-FLVW-0012 | iOS              | The download failed.                                                                      |
-| OS-PLUG-FLVW-0013 | iOS              | The file has no extension.                                                                |
+For a complete list of mobile plugin errors, their causes, impact, and recommended solutions, refer to the [Mobile Plugins errors page](https://www.outsystems.com/tk/redirect?g=8ae41e18-fa7d-4cbe-a223-226a14abd8bf).

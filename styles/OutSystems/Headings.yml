@@ -266,6 +266,7 @@ exceptions:
   - IBM
   - GPT-4o
   - Claude 3.7 Sonnet
+  - Claude Haiku 4.5
   - Amazon Nova Pro
   - Chrome DevTools
   - Microsoft Visual Studio

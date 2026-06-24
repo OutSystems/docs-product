@@ -208,17 +208,29 @@ exceptions:
   - Active Directory
   - AgentFlow
   - Agent Flow
+  - Amazon
+  - Amazon Elastic Kubernetes Service
+  - Amazon EKS
   - Amazon Kendra
   - Android
   - CALL
   - Google
+  - Google Cloud
+  - Google Cloud GAR
+  - Google Kubernetes Engine
+  - GKE
   - Apple Developer
+  - AWS
+  - AWS ECR
   - AWS Firehose
   - FedRAMP
   - JSON
   - IdP
   - IdPs
   - Azure
+  - Azure ACR
+  - Azure Kubernetes Service
+  - AKS
   - DOCX
   - Markdown
   - Mermaid

@@ -1,12 +1,13 @@
 ---
-summary: Learn how to manually implement table pagination and sorting in OutSystems 11 (O11) with detailed instructions for enhancing user interface functionality.
-tags: ide usage, reactive web apps, tutorials for beginners, user interface, pagination, sorting, table widgets, outsystems development
+summary: Learn how to manually implement table pagination and sorting in OutSystems 11 (O11) for Traditional Web, Reactive Web, and Mobile apps.
+tags: ide usage, reactive web apps, traditional web apps, mobile apps, tutorials for beginners, user interface, pagination, sorting, table widgets, outsystems development
 locale: en-us
 guid: c85c1a3d-327a-49e1-af6d-bd99a67b4ebc
-app_type: reactive web apps
+app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:30
 audience:
+  - mobile developers
   - frontend developers
   - full stack developers
 outsystems-tools:
@@ -18,52 +19,101 @@ coverage-type:
 
 # Table pagination and sorting
 
-Pagination and sorting are the features you get automatically if you create a table by dragging an Entity to the Screen. However, you may choose to implement pagination and sorting manually. Here are the instructions to help you with that.
+Pagination and sorting are the features you get automatically if you create a table by dragging an Entity to the screen. For cases where you need to implement them manually, follow the instructions in this article.
 
 ## Sorting
 
-Service Studio automatically creates Actions for sorting the columns in a Table. This makes it quick to change how the sorting works, or remove it completely.
+### In Reactive Web and Mobile
 
-### Add sorting to a Table
+Service Studio automatically creates a Client Action with the full sort logic when you wire up the OnSort event. Before doing that, set the sort attribute on each column header you want to make sortable.
 
-1. In the **OnSort** drop-down list box of your Table Widget properties, select **New On Sort Client Action**. This automatically creates a new Client Action with the necessary logic to sort your table. This logic includes capturing the sort attribute and order, updating the **TableSort** local variable, and refreshing the data source of your table to display the sorted results.
-1. At this step, all table columns are sortable, and you can publish the module.
+#### Add sorting to a table
 
-### Change sorting Attribute 
+1. In the **Widget Tree**, select the **Header Cell** of each column you want to make sortable. In the **Sort Attribute** property, select the entity attribute to sort by. Repeat for each sortable column.
 
-You can change the Attribute used for sorting.
-
-1. In the **Widget Tree**, locate the **Header Cell** of the row you want to sort by (or select the cell in the content editor).
-1. In the **Sort Attribute** drop-down combo box select the Attribute for sorting.
+    This associates each column with the database attribute that controls the sort order. The `ClickedColumn` Input Parameter of the OnSort event automatically receives the Sort Attribute value of the header cell the user clicks.
 
     ![Screenshot showing how to change the sort attribute in a table widget within Service Studio](images/table-sort-attribute-ss.png "Table Sort Attribute Selection")
-    
-    **Note.** With nested structure as the table **Source** variable, to select a nested item as **Sort Attribute**, the **Data Type** of the **Source** needs to be a **List of Record** with your structure. Also, when using a structure **List** instead of **Record List**, you can only select the first level attributes as the **Sort Attribute**.
+
+    <div class="info" markdown="1">
+
+    With a nested structure as the table **Source** variable, to select a nested item as **Sort Attribute**, set the **Data Type** of the **Source** to a **List of Record** with your structure. When using a structure **List** instead of **Record List**, you can only select the first-level attributes as the **Sort Attribute**.
+
+    </div>
+
+1. Select the Table widget. In the **OnSort** drop-down list box of the properties, select **New On Sort Client Action**.
+
+    Service Studio creates a Client Action with the sort logic already implemented:
+
+    * A `TableSort` Local Variable on the screen to hold the current sort attribute.
+    * An **If** node that checks whether the user clicked the same column again. If yes, it appends `" DESC"` to toggle descending order. If no, it sets `TableSort` to the new column's sort attribute.
+    * A **Dynamic Sort** on the Aggregate set to `TableSort`.
+    * A **Refresh Data** node to re-execute the Aggregate and update the table.
 
 1. Publish the module.
 
-### Remove sorting
+#### Remove sorting
 
-To remove the sorting feature from the table column, delete the value of the **Sort Attribute** parameter of the **Header Cell** element.
+To remove sorting from a table column, delete the value of the **Sort Attribute** parameter of the **Header Cell** element.
 
+### In Traditional Web
+
+The Table Records widget supports sortable column headers. Set the sort attribute on each header cell and add a Dynamic Sort to the Preparation Aggregate.
+
+1. In the **Widget Tree**, select the **Header Cell** of each column you want to make sortable.
+1. In the **Sort Attribute** property, select the entity attribute to sort by. Repeat for each sortable column.
+
+    Service Studio adds a sort link to the column header. When users click it, the page refreshes and displays the data sorted by that attribute in ascending order. Clicking the same header again sorts in descending order.
+
+1. Open the Preparation Aggregate. Add a **Dynamic Sort** and set it to `Runtime.CurrentContext.Ordering`.
+
+    This tells the Aggregate to apply the sort order that the column header links pass to the page on each request.
+
+1. Publish the module.
 
 ## Pagination
 
-Follow these steps to add pagination to your table. You should already have an Aggregate and a Table Widget added to your Screen.
+Follow these steps to add pagination to your table. You should already have an Aggregate and a Table widget added to your screen.
 
-1. Create **MyStartIndex** and **MyMaxRecords** Local Variables of the Integer Data Type. Set the default values of these variables.
-1. In the properties of the Aggregate that fetches your data set **StartIndex** to **MyStartIndex**, **Max. Records** to **MyMaxRecords**.
+### In Reactive Web and Mobile
 
-    ![Screenshot illustrating the settings for StartIndex and Max. Records in an Aggregate for pagination](images/pagination-aggregate-props-ss.png "Aggregate Index and Max Records Settings")
+1. Create **StartIndex** and **MaxRecords** Local Variables of the Integer data type. Set the default value of **StartIndex** to `0` and the default value of **MaxRecords** to the number of records to display per page (for example, `50`).
 
-1. Drag the Pagination Widget below the Table Widget and set  **StartIndex** to **MyStartIndex**, **MaxRecords** to **MyMaxRecords**. Also, set **TotalCount** to the Output Parameter `.Count` of the Aggregate.
+1. Drag the **Pagination** widget below the Table widget.
+
+1. In the **Pagination** widget properties, set the following:
+
+    * **StartIndex** to `StartIndex`
+    * **MaxRecords** to `MaxRecords`
+    * **TotalCount** to the `.Count` Output Parameter of your Aggregate (for example, `GetEmployees.Count`)
 
     ![Screenshot displaying the Pagination Widget properties with StartIndex, MaxRecords, and TotalCount settings](images/pagination-paginate-props-ss.png "Pagination Widget Properties")
 
-1. Still in the Pagination Widget properties, from the **Handler** drop-down list box select **New Client Action**. Action **PaginationOnNavigate** opens.
-1. In the Action **PaginationOnNavigate** assign the value of the **NewStartIndex** Input Parameter to **MyStartIndex** (MyStartIndex = NewStartIndex). Drag a Refresh Data Tool to the Flow and set it to refresh the Aggregate.
+1. In the **Handler** drop-down list box, select **New Client Action**. The new action opens.
+
+1. In the action, add an **Assign** node and set `StartIndex = NewStartIndex`. Then drag a **Refresh Data** node to the flow and set it to refresh the Aggregate.
+
+    The `NewStartIndex` Input Parameter holds the index of the first record on the page the user navigated to.
 
     ![Screenshot depicting the PaginationOnNavigate action logic for updating the StartIndex in a pagination system](images/pagination-logic-ss.png "Pagination Logic Configuration")
 
-1. Go back to the Pagination Widget properties and confirm that the **NewStartIndex** property is set to **NewStartIndex** from the Event.
+1. In the Aggregate properties, set **Start Index** to `StartIndex` and **Max. Records** to `MaxRecords`.
+
+    ![Screenshot illustrating the settings for StartIndex and Max. Records in an Aggregate for pagination](images/pagination-aggregate-props-ss.png "Aggregate Index and Max Records Settings")
+
+1. Publish the module.
+
+### In Traditional Web
+
+The Table Records widget uses the **Start Index** and **Line Count** properties for pagination. Pass the current page offset as a screen Input Parameter and use Previous and Next links to navigate between pages.
+
+1. Select the Table Records widget. In the properties, set **Line Count** to the number of records to display per page.
+1. Add a **StartIndex** Input Parameter of the Integer data type to the screen. Set its default value to `0`.
+1. Set the **Start Index** property of the Table Records widget to the `StartIndex` Input Parameter.
+1. Open the Preparation Aggregate. Set **Max. Records** to `StartIndex + TableRecords.LineCount + 1`. This limits the database query to only the records needed for the current page.
+1. Add **Previous** and **Next** Link widgets below the Table Records widget. For each link, set the destination to the same screen and pass a new `StartIndex` value:
+
+    * **Previous**: `StartIndex = StartIndex - TableRecords.LineCount`
+    * **Next**: `StartIndex = StartIndex + TableRecords.LineCount`
+
 1. Publish the module.

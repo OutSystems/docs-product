@@ -1,6 +1,7 @@
 ---
 summary: Explore how to enhance OutSystems 11 (O11) applications by integrating community-made Forge components for added functionality.
-tags: ide usage, reactive web apps, tutorials for beginners, component installation, open-source collaboration
+tags:
+  - Forge
 locale: en-us
 guid: 8dd13cd7-723f-456c-ac0d-e8981a266e2e
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -17,9 +18,10 @@ coverage-type:
   - understand
 topic:
   - install-forge-component
+isautopublish: true
 ---
 
-# Use a Forge Component Made by the Community
+# Use a Forge component made by the community
 
 OutSystems Forge is a repository of open-source reusable components and applications that speed application delivery. They provide multiple additional features and components such as:
 
@@ -30,7 +32,7 @@ OutSystems Forge is a repository of open-source reusable components and applicat
 
 To install a component as a dependency of your application:
 
-1. In the Development tab in Service Studio, click on the **Install Application** button.
+1. In the Development tab in Service Studio, click on the **Install from Forge** button.
 1. Search for the component, select the component and click **Install**. Once the component is declared to be compatible with your version of Service Studio, click on the **Install** button again.
 1. After installing the component, from the detail screen of your application, click on the **Manage Dependencies** button.
 

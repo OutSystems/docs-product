@@ -2,7 +2,7 @@ name: AI Fix PR – Slack Notify
 
 on:
   pull_request:
-    types: [labeled, opened]
+    types: [labeled]
 
 # Dedicated concurrency group so this workflow is never cancelled by the main
 # run.yml workflow (which uses cancel-in-progress: true on a shared group).
@@ -12,9 +12,7 @@ concurrency:
 
 jobs:
   notify:
-    if: >-
-      (github.event.action == 'labeled' && (github.event.label.name == 'ai-quick-fix' || github.event.label.name == 'ai-deep-fix'))
-      || (github.event.action == 'opened' && (contains(github.event.pull_request.labels.*.name, 'ai-quick-fix') || contains(github.event.pull_request.labels.*.name, 'ai-deep-fix')))
+    if: github.event.label.name == 'ai-quick-fix' || github.event.label.name == 'ai-deep-fix'
     uses: OutSystems/tk-cicd/.github/workflows/quick-fix-pr-slack-notify.yml@main
     with:
       repository: ${{ github.repository }}
@@ -22,6 +20,6 @@ jobs:
       pr_url: ${{ github.event.pull_request.html_url }}
       pr_title: ${{ github.event.pull_request.title }}
       pr_description: ${{ github.event.pull_request.body || '' }}
-      pr_label: ${{ github.event.label.name || (contains(github.event.pull_request.labels.*.name, 'ai-deep-fix') && 'ai-deep-fix' || 'ai-quick-fix') }}
+      pr_label: ${{ github.event.label.name }}
     secrets:
       SLACK_BOT_TOKEN: ${{ secrets.SLACK_TK_BOT_TOKEN }}

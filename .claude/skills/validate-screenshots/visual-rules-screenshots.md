@@ -32,7 +32,7 @@ The skill uses this file as a checklist. Each rule has:
   `^[a-z0-9]+(-[a-z0-9]+)*$` and ends with exactly one of the documented
   source suffixes: `-ss`, `-odcs`, `-pl`, `-lt`, `-sc`, `-usr`, `-fg`,
   `-at`, `-ct`, `-af`, `-gc`, `-ams`, `-ib`, `-eb`, `-we`, `-wb`, `-az`, `-vs`,
-  `-ok`, `-fc`, `-diag`, `-sa`, `-is`, `-ati`, `-uidp`, `-shc` . Double suffixes are rejected.
+  `-ok`, `-fc`, `-diag`, `-sa`, `-is`, `-ati`, `-uidp`. Double suffixes are rejected.
   (`-diag` is a valid suffix for Figma diagram exports; the scripted check
   accepts it as a pass. Vision then verifies the content is a genuine diagram
   — if it looks like a UI screenshot, Rule 2 fails. See SKILL.md for the
@@ -127,18 +127,18 @@ The skill uses this file as a checklist. Each rule has:
 * **Severity:** ❌
 * **Check:** every screenshot that captures a large surface (editor canvas,
   full modal, full browser window, full app page) **must** carry the
-  TK-shadow effect applied in Figma on top of the raster capture. The
+  design-system frame applied in Figma on top of the raster capture. The
   frame is one of:
     * a subtle grey outer border (≈ `#CCCCCC`, 1 px), and/or
     * a soft outer drop shadow that separates the image from the article's
       white background.
-  Apply the **TK-shadow** effect from the TK design library (Effects menu in
+  Apply the **TK/shadow** effect from the TK Design library (Effects menu in
   Figma) to produce the correct frame. Close crops of a single bounded
   component (a dropdown, a context menu, a button with its label, a single
   tab strip) don't need the frame — their own borders do the job.
 * **OS window chrome is NOT the shadow.** macOS traffic lights, Windows
   titlebars, browser tabs, and any chrome captured as part of the raster
-  pixel are content, not frame. The TK-shadow effect is a separate
+  pixel are content, not frame. The design-system shadow is a separate
   element added **in Figma, outside** the captured rectangle — it lives on
   the image border, not inside it. If the image ends abruptly at the edge
   of the OS window with no extra pixels of grey border or soft shadow around
@@ -147,19 +147,18 @@ The skill uses this file as a checklist. Each rule has:
   its verdict as authoritative. The script walks inward from each edge
   mid-point and measures the _feather length_ — the band of partially-
   transparent pixels between optional fully-transparent padding and the
-  first opaque content pixel. The TK-shadow effect produces an
+  first opaque content pixel. The OutSystems shadow token produces an
   asymmetric feather (top 5 px, left 5 px, right 15 px, bottom 15 px),
   so the script accepts only profiles within tolerance of those values.
   Possible verdicts:
     * `shadow: true` — feather present on all four edges and matches the
-      asymmetric profile. ✅
+      asymmetric token. ✅
     * `shadow: wrong` — feather present but the profile doesn't match
       (symmetric shadow, too narrow, too wide, missing on one side, etc).
       Treat this as ❌: the image has a shadow-like effect but it isn't
-      the TK-shadow effect from the TK design library. Common causes: a CSS box-shadow captured
+      the design-system frame. Common causes: a CSS box-shadow captured
       inside the screenshot pixels, a manually drawn shadow, or an export
       from a non-Figma source.
-      Output: "Shadow doesn't match the TK-shadow effect available in the TK design library — apply it from the Effects menu in Figma (rule 6)".
     * `shadow: false` — alpha channel is present but no feathered alpha
       on any edge (content runs straight to the border, or there's only
       a 1-px hard border). ❌ for large-surface captures, ⚠️ otherwise —
@@ -168,14 +167,12 @@ The skill uses this file as a checklist. Each rule has:
       can decide. Note that a 1-px gray border alone — which the rule
       allows as an alternative to the soft shadow — also reads as
       `false`.
-      Output: "Missing TK-shadow effect available in the TK design library — apply it from the Effects menu in Figma (rule 6)".
     * `shadow: inconclusive` — alpha channel exists, but the edge slice
       never reached opaque content (typical when content is far from
       the borders or the mid-edges are fully transparent) and the RGB
       fallback couldn't decide either. ⚠️ — surface it so the designer
       can eyeball the shadow. Do not phrase it as "missing shadow":
       the script can't tell whether the shadow is there.
-      Output: "Shadow check inconclusive — designer should verify the TK-shadow effect available in the TK design library (Effects menu in Figma) is applied (rule 6)".
     * `shadow: unknown` — the image has no alpha channel at all
       (typically a JPG saved as `.png`). Rule 1 already fails this
       case; don't emit a separate shadow finding.
@@ -218,31 +215,20 @@ The skill uses this file as a checklist. Each rule has:
 
 ## 9. No internal environment URLs or hostnames
 
-* **Severity:** ⚠️
-* **Check:** no internal OutSystems infrastructure hostname or staging
-  environment URL is visible in the screenshot. This includes browser address
-  bars, application tabs, footer status bars, and any overlay chrome.
-
-  **Not acceptable** — flag these:
-    * Infrastructure or staging names: `eng-stage-us-01.outsystems.dev`,
-      `eng-stage-*`, `qa-*`, `internal-*`, `staging-*`
-    * Development server IPs or private VPN hostnames
-    * Internal Jira / ticket IDs (`RDTKF-*`, `TK-*`) visible on screen
-
-  **Acceptable** — do not flag these:
-    * Generic synthetic tenant names that read as placeholder data, even on
-      `*.outsystems.dev` or `*.outsystems.app` — for example,
-      `neo-apps.outsystems.dev`, `acme.outsystems.app`,
-      `mycompany-dev.outsystems.app`. These are fine when the article is
-      about domains or when the hostname is intentionally shown as example
-      content.
-    * Public demo/training URLs such as `training-prd.outsystems.app`.
-
-  When in doubt, ask whether the hostname reveals real infrastructure or a
-  real customer — if yes, flag it; if it reads as generic placeholder data,
-  let it pass.
-* **Pass example:** `neo-apps.outsystems.dev` (generic synthetic name),
-  `training-prd.outsystems.app` (public demo URL).
+* **Severity:** ❌
+* **Check:** no internal OutSystems environment URL, staging subdomain,
+  development-only tenant, or infrastructure hostname is visible in the
+  screenshot. This includes browser address bars, application tabs, footer
+  status bars, and any overlay chrome. Common leaks spotted in the reference
+  fail set:
+    * `eng-stage-us-01.outsystems.dev`, `*.outsystems.dev`, `*.outsystems.app`
+    * internal tenant names like `eng-stage-*`, `qa-*`, `internal-*`
+    * development server IPs or private VPN hostnames
+    * internal Jira / ticket IDs (`RDTKF-*`, `TK-*`) visible on screen
+  Use the public OutSystems demo/training environments instead, or blur the
+  hostname before export.
+* **Pass example:** the browser tab reads `training-prd.outsystems.app` or a
+  generic demo URL.
 * **Fail example:** `action-odcs.png` (browser tab shows
   `eng-stage-us-01 - eng-stage-us-01.out...`), `emanuel-rodrigues-odcs.png`
   (footer shows `eng-stage-us-01.outsystems.dev`).
@@ -268,8 +254,6 @@ The skill uses this file as a checklist. Each rule has:
 | `-we` | Workflow editor | dark only |
 | `-uidp` | User Identity Provider | light only |
 | `-ati` | Assessment Tool Installer | dark only |
-| `-shc` | Self-hosted controller | dark only |
-| `-sa` | Sample app | light only |
 
   Surfaces not listed (e.g. `-at`, `-ams`, `-ib`, etc.) have no theme
   mandate yet — flag as ⚠️ and ask the designer. Confirmed mandates are

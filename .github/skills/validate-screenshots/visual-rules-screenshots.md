@@ -31,7 +31,7 @@ The skill uses this file as a checklist. Each rule has:
 * **Check (scripted):** the filename (without extension) matches
   `^[a-z0-9]+(-[a-z0-9]+)*$` and ends with exactly one of the documented
   source suffixes: `-ss`, `-odcs`, `-pl`, `-lt`, `-sc`, `-usr`, `-fg`,
-  `-at`, `-ct`, `-af`, `-gc`, `-ams`, `-ib`, `-eb`, `-we`, `-az`, `-vs`,
+  `-at`, `-ct`, `-af`, `-gc`, `-ams`, `-ib`, `-eb`, `-we`, `-wb`, `-az`, `-vs`,
   `-ok`, `-fc`, `-diag`, `-sa`, `-is`, `-ati`, `-uidp`. Double suffixes are rejected.
   (`-diag` is a valid suffix for Figma diagram exports; the scripted check
   accepts it as a pass. Vision then verifies the content is a genuine diagram
@@ -250,6 +250,7 @@ The skill uses this file as a checklist. Each rule has:
 | `-sc` | Service Center | light only (no dark mode exists) |
 | `-usr` | Users | light or dark (both allowed) |
 | `-fg` | Forge | light only |
+| `-wb` | Workflow builder | light only |
 | `-we` | Workflow editor | dark only |
 | `-uidp` | User Identity Provider | light only |
 | `-ati` | Assessment Tool Installer | dark only |

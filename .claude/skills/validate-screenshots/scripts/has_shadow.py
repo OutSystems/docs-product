@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Detect whether a PNG has the TK-shadow effect.
+"""Detect whether a PNG has the OutSystems design-system drop shadow.
 
 The shadow is exported as partially-transparent alpha pixels feathered
-outside the opaque content. Asymmetric offsets (from the TK-shadow effect in the TK design library):
+outside the opaque content. Asymmetric offsets (from the design token):
     top = 5 px, left = 5 px, right = 15 px, bottom = 15 px.
 
 Detection runs in two stages:
@@ -21,7 +21,7 @@ Detection runs in two stages:
    between the edge background luma and the inner content luma.
 
 Either stage produces a feather length per edge, which is compared
-against the asymmetric TK-shadow effect to decide whether the shadow is
+against the asymmetric design token to decide whether the shadow is
 correct (true), present-but-wrong (wrong), or absent (false).
 
 Using mid-edges rather than corners avoids false positives from
@@ -32,9 +32,9 @@ Usage:
     python3 has_shadow.py <path-to-png>
 
 Prints one of:
-    shadow: true          (feather present and matches the TK-shadow effect, in
+    shadow: true          (feather present and matches the OS token, in
                            either the alpha channel or the RGB pixels)
-    shadow: wrong         (feather present but doesn't match the TK-shadow effect —
+    shadow: wrong         (feather present but profile doesn't match —
                            e.g. symmetric shadow, too narrow, too wide)
     shadow: false         (alpha intact, no feather on any edge — content
                            runs straight to the border, or only a hard

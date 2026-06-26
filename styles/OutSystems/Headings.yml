@@ -120,6 +120,7 @@ exceptions:
   - Service
   - Session
   - SQL
+  - SVG
   - Static
   - Structure
   - Taskbox

@@ -71,7 +71,11 @@ This message allows conversions of consumers to automatically correct references
 
 ## Prerequisites {#prereq}
 
-To convert a Traditional Web module to Reactive, make sure you're using Service Studio version 11.55.69 or later.
+Before converting a Traditional Web module to Reactive, make sure you meet the following requirements:
+
+* Service Studio version 11.55.69 or later.
+* You have **Change and Deploy Applications** permission.
+* You have **Add System Dependencies** permission if the **OutSystemsReactiveMigration** module isn't already in your environment or up to date.
 
 ## Conversion process
 

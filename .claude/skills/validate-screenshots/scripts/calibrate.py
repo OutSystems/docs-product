@@ -45,6 +45,7 @@ SUFFIX_LABELS = {
     "fc": "Forms Composer",
     "diag": "Diagram",
     "sa": "Solution Architecture",
+    "sol": "Solutions",
     "is": "Integration Studio",
 }
 

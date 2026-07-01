@@ -32,7 +32,7 @@ The skill uses this file as a checklist. Each rule has:
   `^[a-z0-9]+(-[a-z0-9]+)*$` and ends with exactly one of the documented
   source suffixes: `-ss`, `-odcs`, `-pl`, `-lt`, `-sc`, `-usr`, `-fg`,
   `-at`, `-ct`, `-af`, `-gc`, `-ams`, `-ib`, `-eb`, `-we`, `-wb`, `-az`, `-vs`,
-  `-ok`, `-fc`, `-diag`, `-sa`, `-is`, `-ati`, `-uidp`, `-shc`. Double suffixes are rejected.
+  `-ok`, `-fc`, `-diag`, `-sa`, `-is`, `-ati`, `-uidp`, `-sol`, `-shc`. Double suffixes are rejected.
   (`-diag` is a valid suffix for Figma diagram exports; the scripted check
   accepts it as a pass. Vision then verifies the content is a genuine diagram
   — if it looks like a UI screenshot, Rule 2 fails. See SKILL.md for the
@@ -270,6 +270,7 @@ The skill uses this file as a checklist. Each rule has:
 | `-ati` | Assessment Tool Installer | dark only |
 | `-shc` | Self-hosted controller | dark only |
 | `-sa` | Sample app | light only |
+| `-sol` | Solutions | dark only |
 
   Surfaces not listed (e.g. `-at`, `-ams`, `-ib`, etc.) have no theme
   mandate yet — flag as ⚠️ and ask the designer. Confirmed mandates are

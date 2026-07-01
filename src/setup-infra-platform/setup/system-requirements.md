@@ -1,11 +1,10 @@
 ---
-summary: Explore the comprehensive system requirements for deploying OutSystems 11 (O11) across various platforms and configurations.
+summary: OutSystems 11 (O11) system requirements covering Platform Server, development tools, external databases, and end-user browser support.
 tags:
   - .NET
   - External Databases
   - Infrastructure
   - Platform Server
-  - Security
   - SQL
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
@@ -78,7 +77,7 @@ Use the same type of database engine for all three 3 databases in Platform Serve
 
     | 2016 | 2017 | 2019 | 2022 | 2025 |
     | ---- | ---- | ---- | ---- | ---- |
-    | 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150 |
+    | 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150, 170 |
 
 * Azure SQL Database, with compatibility level between 130 and 150
 * Oracle<sup>3, 4</sup> 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
@@ -240,11 +239,13 @@ The following systems are certified to integrate with OutSystems.
 
 * Supported versions<sup>1</sup> and respective supported compatibility levels:
 
-| 2016 | 2017 | 2019 | 2022 | 2025 |
+| 2016 | 2017 | 2019 | 2022 | 2025<sup>2</sup> |
 | ---------- | ------------- | ----------------- | ------------------ | ------ |
-| 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150 |
+| 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150, 170 |
 
 <sup>1</sup> Versions 2008 to 2014 stopped being supported from Platform Server version 11.33 onwards.
+
+<sup>2</sup> Supported since Platform Server 11.42.0. SQL Server 2025 has breaking changes to the linked servers feature. Refer to [Microsoft's documentation](https://learn.microsoft.com/en-us/sql/database-engine/breaking-changes-to-database-engine-features-in-sql-server-2025?view=sql-server-ver17#linked-server-connections-fail-after-an-upgrade) for more information.
 
 ### Azure SQL database {#azure-sql}
 

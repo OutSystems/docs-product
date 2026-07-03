@@ -43,7 +43,7 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 You can use the Carousel UI Pattern to display multiple items in a horizontal slide.  The Carousel Pattern optimizes screen space by displaying only a few images from a larger collection which you can view using the navigation controls.
 
-![Screenshot showing an example of the Carousel UI Pattern in action](images/carousel-example.png "Example of a Carousel UI Pattern")
+![Screenshot showing an example of the Carousel UI Pattern in action](images/carousel-example-sa.png "Example of a Carousel UI Pattern")
 
 <div class="info" markdown="1">
 
@@ -125,7 +125,7 @@ Avoid using the Carousel inside patterns with swipe events, such as the **Tabs**
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. If you're using an OutSystems UI version earlier than 2.29.0, you must manually update the Carousel UI pattern to fix the following issues:
+By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. If you're using an OutSystems UI version earlier than **2.29.0**, you must manually update the Carousel UI pattern to fix the following issues. Before updating to **2.29.0** or later, remove any manual code you added by following the steps in this section.
 
 * **Pagination controls** must meet the minimum target size of 24 px, making them easier to use for people with motor impairments or situational challenges. Starting with OutSystems UI 2.29.0, this is automatically fixed when the Carousel is inside an element with the `.has-accessible-features` CSS class.
 

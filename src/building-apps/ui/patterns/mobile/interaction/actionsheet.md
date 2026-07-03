@@ -97,7 +97,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Action Sheet** UI Pattern may not accurately convey its expanded or collapsed state to assistive technologies. If you're using OutSystems UI version earlier than 2.29.0, follow the steps in this section to manually set the correct ARIA attributes.
+By default, the **Action Sheet** UI Pattern may not accurately convey its expanded or collapsed state to assistive technologies. If you're using OutSystems UI version earlier than **2.29.0**, follow the steps in this section to manually set the correct ARIA attributes. Before updating to **2.29.0** or later, remove any manual code you added by following the steps in this section.
 
 Set the appropriate ARIA attributes so screen readers announce when the Action Sheet opens or closes, ensuring users always understand its current state.
 

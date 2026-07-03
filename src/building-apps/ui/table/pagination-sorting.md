@@ -1,25 +1,24 @@
 ---
-summary: Learn how to manually implement table pagination and sorting in OutSystems 11 (O11) for Traditional Web, Reactive Web, and Mobile apps.
+summary: Learn how to manually implement table pagination and sorting in OutSystems 11 (O11) with detailed instructions for enhancing user interface functionality.
 tags:
-  - Mobile app
+  - Accessibility
+  - Aggregates
   - Pagination
   - Sorting
   - Table
   - Traditional Web
   - UI
-  - Widgets
 locale: en-us
 guid: c85c1a3d-327a-49e1-af6d-bd99a67b4ebc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:30
 audience:
-  - Front-end developer
   - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:
-  - understand
   - apply
 isautopublish: true
 ---
@@ -66,6 +65,40 @@ To remove sorting from a table column, delete the value of the **Sort Attribute*
 ### In Traditional Web
 
 In Traditional Web apps, sorting is a built-in feature of the **Table Records** widget. When you create a screen by dragging an Entity onto a web flow, Service Studio scaffolds the table with sortable column headers automatically. Refer to [Table Records Widget](../../../ref/lang/auto/class-table-records-widget.md) for details on configuring fixed and dynamic sorting.
+
+### Sorting and accessibility
+
+To meet WCAG 2.2 accessibility standards, since Platform Server 11.42.0 the Table widget supports communicating sort state to assistive technologies such as screen readers.
+
+When you enable **Enable WCAG 2.2** in the **Platform Configurations** tab of [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration), the Table widget automatically adds the `aria-sort` attribute to sortable column headers. This attribute communicates the current sort state to screen readers, as required by WCAG 1.3.1 (Info and Relationships).
+
+The `aria-sort` attribute is set as follows:
+
+* `aria-sort="none"` — the column is sortable but not currently sorted.
+* `aria-sort="ascending"` — the column is currently sorted in ascending order.
+* `aria-sort="descending"` — the column is currently sorted in descending order.
+
+By default, the Table widget assumes the following sort convention:
+
+* The first click on a column sorts it in ascending order.
+* A second click on the same column sorts it in descending order.
+* Clicking a different column sorts the new column in ascending order.
+
+The auto-generated **OnSort** action created by Service Studio follows this convention, and `aria-sort` reflects the correct state automatically.
+
+#### Custom OnSort actions with a different default direction
+
+If your custom **OnSort** action sorts a column in descending order on the first click (for example, a date column that shows the newest records first), the default assumption above is wrong, and `aria-sort` will not match the actual sort state announced to screen readers.
+
+To fix this, declare the initial direction on the **Header Cell** using the `default-sort-direction` **Extended Property**:
+
+1. In the **Widget Tree**, select the **Header Cell**.
+1. In the widget properties, locate **Extended Properties** and add a new entry:
+
+    * **Name**: `default-sort-direction`
+    * **Value**: `"descending"` (use `"ascending"` to keep the default; any other value also falls back to `"ascending"`)
+
+With this property set, the first click on the column produces `aria-sort="descending"`, and subsequent clicks on the same column toggle between `descending` and `ascending`. Set this property per column — each **Header Cell** can declare its own default direction.
 
 ## Pagination
 

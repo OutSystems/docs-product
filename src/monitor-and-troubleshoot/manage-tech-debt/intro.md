@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) features AI Mentor Studio for effective management of technical debt through comprehensive code and architecture analysis.
+summary: AI Mentor Studio monitors OutSystems 11 (O11) technical debt by analyzing code patterns across performance, architecture, maintainability, and security.
 locale: en-us
 guid: 7aa53270-fb01-4543-90e4-57907dcc68fe
 app_type: traditional web apps, mobile apps, reactive web apps

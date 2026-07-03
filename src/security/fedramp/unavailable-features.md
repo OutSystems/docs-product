@@ -33,7 +33,7 @@ Review this list before designing or planning projects on OutSystems FedRAMP.
 
 The services in the [OutSystems Cloud services catalog](https://www.outsystems.com/legal/success/cloud-services-catalog/) are available in OutSystems FedRAMP, except where this article notes otherwise. You request these services by opening a support case, because in OutSystems FedRAMP you can't configure them yourself.
 
-<!-- For alternative approaches to work around these limitations, refer to [Alternatives to unavailable features in OutSystems FedRAMP](alternatives.md). -->
+For alternative approaches to work around these limitations, refer to [Alternatives to unavailable features in OutSystems FedRAMP](alternatives.md).
 
 ## Mobile app builds
 

@@ -1005,6 +1005,8 @@
     - topics:
         - href: security/fedramp/getting-started.md
         - href: security/fedramp/unavailable-features.md
+        - href: security/fedramp/controls.md
+        - href: security/fedramp/alternatives.md
     - href: security/restrict-access-to-an-internal-network.md
     - href: security/secure-http-requests.md
     - href: security/secure-cookies-enable-secure-session.md

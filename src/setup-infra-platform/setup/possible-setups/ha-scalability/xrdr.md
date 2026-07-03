@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) cross-region disaster recovery (XRDR) covers RPO, RTO, failover, and the automated recovery process for OutSystems Cloud platforms.
 tags:
+  - Data
   - Infrastructure
   - Security
 locale: en-us

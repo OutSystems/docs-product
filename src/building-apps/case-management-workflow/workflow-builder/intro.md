@@ -13,7 +13,6 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 audience:
   - Business analyst
   - Platform administrator
-  - Developer
 outsystems-tools:
   - workflow builder
   - platform server

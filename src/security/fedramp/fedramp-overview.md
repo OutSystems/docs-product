@@ -77,6 +77,8 @@ The following types of Authority to Operate (ATO) apply to OutSystems FedRAMP:
 
 * **Agency-level ATO**: Allows an agency to use an application, service or platform. Issued by the federal agency after reviewing compliance documentation. Each agency that uses OutSystems FedRAMP must issue its own ATO.  This ATO applies to an agency’s use of OutSystems FedRAMP itself, and not to the applications you build. Those applications will be subject to agency review and issuance of ATO separate from OutSystems.
 
+Refer to [How OutSystems enables FedRAMP controls](controls.md) for a high-level description of how the platform and Knox Systems hosting support FedRAMP Certification Class C (Moderate) controls.
+
 ## Limitations
 
 OutSystems FedRAMP doesn't support all features available in the standard OutSystems 11 Cloud offering. Refer to [Unavailable features in OutSystems FedRAMP](unavailable-features.md) for the complete list.

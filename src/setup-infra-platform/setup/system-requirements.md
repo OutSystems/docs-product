@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) system requirements covering Platform Server, development tools, external databases, and end-user browser support.
+summary: OutSystems 11 (O11) system requirements cover Platform Server hardware, Windows Server, SQL Server, Oracle, .NET, RabbitMQ, and development tools.
 tags:
   - .NET
   - External Databases
@@ -195,7 +195,7 @@ For more information on how to enable `EC2Config` service, refer to [Amazon EC2C
 
 ## Amazon database considerations {#amazon-database}
 
-OutSystems supports Microsoft SQL Server 2019 or higher and compatibility level 150 (since Platform Server 11.12.0), Microsoft SQL Server 2016, Microsoft SQL Server 2017 and Oracle 19c on Amazon RDS.
+OutSystems supports Microsoft SQL Server and Oracle databases on Amazon RDS. Please refer to the [Database management system](#ps-database) section for the specific versions.
 
 The database instance class must fulfill the following requirements:
 

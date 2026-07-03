@@ -1,14 +1,15 @@
 ---
 summary: OutSystems 11 (O11) allows users to configure their own SSL domain in the OutSystems Cloud by uploading and assigning their SSL certificate.
-tags: ssl certificate configuration, cloud infrastructure, domain management, endpoint configuration, application deployment
+tags:
+  - Domains
+  - Infrastructure
+  - Security
 locale: en-us
 guid: 75f71e55-19e7-4a6a-bd44-f730385acf52
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2580%3A4785&mode=design&t=uPq3qCZl7kqIKVy0-1
 audience:
-  - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - service studio
@@ -22,6 +23,12 @@ isautopublish: true
 # Use your SSL domain in OutSystems Cloud
 
 Your OutSystems cloud environment includes a valid SSL certificate with the `outsystemsenterprise.com` domain. You can also use your own domain by assigning your SSL certificate to the environment. To use your own domain, you must upload your SSL certificate that replaces the `outsystemsenterprise.com` default certificate.
+
+<div class="info" markdown="1">
+
+In OutSystems FedRAMP, you can't set up this service yourself. Open a [support case](https://www.outsystems.com/legal/success/support-terms-and-service-level-agreements-sla-of-the-outsystems-software/) to request it.
+
+</div>
 
 To set up your environment with your company domain, follow these steps:
 

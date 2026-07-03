@@ -5,7 +5,9 @@ guid: e65820c4-3550-4a5d-be8d-54531bada121
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4260:366
-tags: security, session management, cookies, https, penetration testing
+tags:
+  - Security
+  - Settings
 audience:
   - Platform administrator
   - Developer
@@ -16,9 +18,16 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+isautopublish: true
 ---
 
 # Enable secure session cookies and set application cookies as secure
+
+<div class="info" markdown="1">
+
+In OutSystems FedRAMP, you can't configure this yourself. Open a [support case](https://www.outsystems.com/legal/success/support-terms-and-service-level-agreements-sla-of-the-outsystems-software/) to request it.
+
+</div>
 
 ## Overview
 

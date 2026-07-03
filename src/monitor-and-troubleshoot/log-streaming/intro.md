@@ -1,6 +1,10 @@
 ---
-summary: This article provides an overview of log Streaming, its benefits and use cases, high-level architecture for streaming log data, supported log data, and the supported application performance monitoring tools.
-tags: log streaming, application performance monitoring, opentelemetry, real-time analytics, cloud deployments
+summary: Log streaming in OutSystems 11 (O11) uses OpenTelemetry to export application logs to APM tools like Elastic Cloud, Datadog, and Splunk.
+tags:
+  - Logging
+  - Monitoring
+  - Performance
+  - Troubleshooting
 locale: en-us
 guid: 75f48471-6193-4149-abf4-29c15e75c1f6
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -15,9 +19,16 @@ outsystems-tools:
 coverage-type:
   - understand
   - remember
+isautopublish: true
 ---
 
 # Introduction to log streaming
+
+<div class="info" markdown="1">
+
+Log streaming isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../../security/fedramp/unavailable-features.md) for details.
+
+</div>
 
 <div class="info" markdown="1">
 

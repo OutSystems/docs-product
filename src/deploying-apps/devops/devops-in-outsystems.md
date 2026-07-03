@@ -6,10 +6,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3942-319&t=yFA2dg85pciiAiog-1
 tags:
+  - 1-Click Publish
   - CI/CD
   - Deploy
   - Development lifecycle
-  - Lifecycle
   - Monitoring
   - Security
   - Testing
@@ -28,7 +28,7 @@ isautopublish: true
 
 An article about DevOps typically begins with a short discussion about the history of the term, the philosophy behind its practice, the benefits of its use, and the elements of its culture. It also invariably features some version of the DevOps infinity loop, like the one pictured below.
 
-![Illustration of the traditional DevOps infinity loop.](images/traditional-devops-infinity-loop.png "Traditional DevOps Infinity Loop")
+![Illustration of the traditional DevOps infinity loop.](images/traditional-devops-infinity-loop-diag.png "Traditional DevOps Infinity Loop")
 
 At the risk of bucking tradition—and in the spirit of efficiency and asset reuse—the theory part of this introduction has been replaced with the following links. You are invited to click through to review the [history](https://en.wikipedia.org/wiki/DevOps#History), [philosophy](https://aws.amazon.com/devops/what-is-devops/), [benefits](https://www.atlassian.com/devops), and [culture](https://azure.microsoft.com/en-us/overview/what-is-devops/) of DevOps at your leisure.
 
@@ -44,7 +44,7 @@ There are no hard-and-fast rules, no “best” way, no ideal toolchain. Every e
 
 OutSystems has changed the way enterprise software is built, and, in the same way, the traditional DevOps infinity loop has been reimagined to make it simpler, streamlined, and more elegant.
 
-![Diagram of the reimagined DevOps infinity loop in the OutSystems platform.](images/devops-reference-model.png "DevOps Reference Model")
+![Diagram of the reimagined DevOps infinity loop in the OutSystems platform.](images/devops-reference-model-diag.png "DevOps Reference Model")
 
 If you compare this model with the one pictured after the opening paragraph, you’ll notice a number of differences, such as fewer steps and different names. But what truly sets this model apart is that these stages don’t loop around the negative spaces of an infinity symbol. Instead they circle the core of the OutSystems platform, which provides a set of out-of-the-box capabilities that reduce the complexity of implementing a DevOps approach in a software factory.
 
@@ -94,7 +94,7 @@ In the image below, **TrueChange** has identified two errors, noted three unused
 
 Most importantly, the module cannot be built until all errors have been resolved.
 
-![Screenshot of the TrueChange window in OutSystems Service Studio showing errors and warnings.](images/true-change-window.png "TrueChange Window")
+![Screenshot of the TrueChange window in OutSystems Service Studio showing errors and warnings.](images/true-change-window-ss.png "TrueChange Window")
 
 ### 1-Click Publish
 
@@ -104,7 +104,7 @@ Most importantly, the module cannot be built until all errors have been resolved
 
 In environments where many developers work on the same module at the same time, [compare and merge](../../monitor-and-troubleshoot/manage-tech-debt/handling-tech-debt/handling-tech-debt.md#compare-and-merge) first tries to merge new code with the changes that other developers published in the meantime. If automatic integration is not possible, the developer can review the results in the **Compare and Merge** window, as seen in the image below. Drilling down into conflicts, shown in red, displays the changes between the versions. Once the conflicts have been reconciled and all of the merges approved, the app can then be published.
 
-![Screenshot of the compare and merge window in OutSystems Service Studio indicating conflicts.](images/conflicts-detected.png "Conflicts Detected")
+![Screenshot of the compare and merge window in OutSystems Service Studio indicating conflicts.](images/conflicts-detected-ss.png "Conflicts Detected")
 
 To supercharge the development process, OutSystems offers the following design tools:
 
@@ -114,7 +114,7 @@ To supercharge the development process, OutSystems offers the following design t
 
 [Workflow Builder](../../building-apps/case-management-workflow/workflow-builder/intro.md) is an IT-governed tool that allows anyone in the organization who designs and manages workflows to quickly build apps for task management and automation, thus extending the team of in-house app developers.
 
-![Screenshot of the Workflow Builder interface in OutSystems.](images/untap-talent-deliver-apps-figure-v3.png "Workflow Builder Interface")
+![Screenshot of the Workflow Builder interface in OutSystems.](images/untap-talent-deliver-apps-figure-ss.png "Workflow Builder Interface")
 
 **Workflow Builder** generates reactive web apps and deploys them on your development environment, going through the same application development lifecycle as any other OutSystems app, with proper architecture, and following all the best practices.
 
@@ -216,7 +216,7 @@ In OutSystems, deployment means moving a [tagged version](../tag-a-version.md) o
 
 The figure below shows the first step of deploying a tagged app to production:
 
-![Screenshot of the deployment plan interface in OutSystems LifeTime.](images/lifetime-deploy.png "LifeTime Deployment Plan")
+![Screenshot of the deployment plan interface in OutSystems LifeTime.](images/lifetime-deploy-lt.png "LifeTime Deployment Plan")
 
 ## Release
 
@@ -343,13 +343,13 @@ A **Error Log** is shown below:
 
 Each log entry is identified by a timestamp, the module where the error occurred, the actual error message, and a Detail link to view additional information.
 
-![Screenshot showing the error detail page in OutSystems Service Center.](images/error-detail.png "Error Detail")
+![Screenshot showing the error detail page in OutSystems Service Center.](images/error-detail-sc.png "Error Detail")
 
 The **Error detail** page includes the error ID, the session ID, environment information, and a stack trace.
 
 In addition, the **Request Key** can be used to correlate all log and performance events. Click it to see the Request Log.
 
-![Screenshot of the request log in OutSystems Service Center.](images/request-log.png "Request Log")
+![Screenshot of the request log in OutSystems Service Center.](images/request-log-sc.png "Request Log")
 
 Here you can see that a particular web screen request generated two different errors, both in the same module. You have identified a probable source for this particular error; now your developers know where to go to begin fixing it.
 
@@ -365,7 +365,7 @@ The screen below shows the **Top Errors** report, arranged according to the numb
 
 By clicking through to the module you can pinpoint the source of the problem and begin the process of correcting the error.
 
-![Screenshot of the screens performance report in OutSystems Service Center.](images/screens-performance-report.png "Screens Performance Report")
+![Screenshot of the screens performance report in OutSystems Service Center.](images/screens-performance-report-sc.png "Screens Performance Report")
 
 These metrics are captured asynchronously at run time, so application performance isn't compromised while creating a constant stream of metrics. Events captured include:
 
@@ -384,13 +384,13 @@ While **Service Center** presents monitoring logs and analysis reports by way of
 
 The analytics dashboard for one app in the environment, covers all aspects of the[end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), a metric based on industry standard indicators of user satisfaction. By regularly checking **LifeTime**, developers can detect, troubleshoot, and solve performance issues even before end users report them.
 
-![Screenshot of the analytics drilldown interface in OutSystems LifeTime.](images/analytics-drilldown.png "Analytics Drilldown")
+![Screenshot of the analytics drilldown interface in OutSystems LifeTime.](images/analytics-drilldown-lt.png "Analytics Drilldown")
 
 The **End User Experience** tab displayed above shows the execution times of all queries, web service invocations, screen renderings, schedulers and invocations to adapters, external systems and custom APIs, which are all tracked asynchronously.
 
 The **Application Performance Index** pane shows a downward trend, and the **Screen Action** pane shows that the[APDEX](../../monitor-and-troubleshoot/the-apdex-performance-score.md) value for Preparation is 59%, which indicates the source of the problem.
 
-![Screenshot of the TLC application performance index score in OutSystems LifeTime.](images/tlc-apdex.png "TLC APDEX Score")
+![Screenshot of the TLC application performance index score in OutSystems LifeTime.](images/tlc-apdex-lt.png "TLC APDEX Score")
 
 To investigate further click the problematic module and drill down to see more information to direct your developers’ troubleshooting efforts.
 
@@ -421,7 +421,7 @@ OutSystems supports business process modeling so teams can quickly create a proc
 
 The[Business Activity Monitoring](http://www.outsystems.com/forge/component/132/business-activity-monitoring/) dashboard, an OutSystems-supported extension from the Forge, enables developers to start monitoring and optimizing their processes right after deploying them for the first time without the need for any development effort. Reports can be easily modified and extended to align with the business language of the organization using them.
 
-![Screenshot of the Business Activity Monitoring dashboard in OutSystems.](images/business-activity-monitoring.png "Business Activity Monitoring Dashboard")
+![Screenshot of the Business Activity Monitoring dashboard in OutSystems.](images/business-activity-monitoring-sa.png "Business Activity Monitoring Dashboard")
 
 #### REST API access to monitoring data
 
@@ -447,7 +447,7 @@ A great number of monitoring use cases can be served by the out-of-the-box tools
 
 **Elastic** allows you to monitor software services and applications in real time, collecting detailed performance information on response time for incoming requests, database queries, calls to caches, external HTTP requests, among others.
 
-![Diagram showing the integration of OutSystems with Elastic monitoring tools.](images/elastic-monitoring.png "Elastic Monitoring Integration")
+![Diagram showing the integration of OutSystems with Elastic monitoring tools.](images/elastic-monitoring-diag.png "Elastic Monitoring Integration")
 
 With **Elastic** integrated into your monitoring workflow, as seen above, you can extract extensive data logs for web and mobile apps, capturing log formats, networks, and firewalls from both cloud and on-premises sources that enriches the data collected by OutSystems.
 

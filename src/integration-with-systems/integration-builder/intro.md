@@ -1,11 +1,13 @@
 ---
-summary: OutSystems 11 (O11) enhances enterprise integration capabilities through its Integration Builder, facilitating seamless data flow and system connectivity.
+summary: Integration Builder OutSystems 11 (O11) SaaS tool creates plug-and-play connectors to SAP, Salesforce, and Microsoft systems using a wizard interface.
 locale: en-us
 guid: 7d1ada04-3931-44d4-9dc1-654ed40f16f2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:58
-tags: enterprise integration, systems of records, data flow, saas, connectors
+tags:
+  - External Databases
+  - Web services
 audience:
   - Developer
   - Architect
@@ -14,9 +16,16 @@ outsystems-tools:
   - integration builder
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # Create connectors with Integration Builder
+
+<div class="info" markdown="1">
+
+This feature isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../../security/fedramp/unavailable-features.md) for details.
+
+</div>
 
 Integration Builder is a Software as a Service (SaaS) that allows you to implement complex integrations between an OutSystems application and your enterprise Systems of Records like SAP or Salesforce.
 

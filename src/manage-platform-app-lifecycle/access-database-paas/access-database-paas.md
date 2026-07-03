@@ -7,16 +7,30 @@ platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=304:0
 coverage-type:
   - apply
-tags: outsystems cloud, database access, direct access, temporary user, permanent user
+tags:
+  - Authentication
+  - Authorization
+  - Data
+  - Infrastructure
+  - Security
+  - SQL
+  - Troubleshooting
 audience:
   - Platform administrator
   - Developer
 outsystems-tools:
   - lifetime
+isautopublish: true
 ---
 # Access the database of your OutSystems Cloud
 
 This topic details how you request direct access to the OutSystems Cloud databases of your subscription using OutSystems 11.
+
+<div class="info" markdown="1">
+
+In OutSystems FedRAMP, you can't set up this service yourself. Open a [support case](https://www.outsystems.com/legal/success/support-terms-and-service-level-agreements-sla-of-the-outsystems-software/) to request it.
+
+</div>
 
 <div class="info" markdown="1">
 

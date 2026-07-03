@@ -1,5 +1,9 @@
 ---
-tags: workflow automation, task management, low-code development, it governance, application development
+tags:
+  - Business Processes
+  - IT Roles
+  - Templates
+  - Workflows
 summary: OutSystems 11 (O11) enhances app development with Workflow Builder, enabling rapid, collaborative creation of workflow apps.
 guid: a0f60d57-4ae7-4c6b-a6db-1f180513b9bd
 locale: en-us
@@ -15,9 +19,16 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # Create workflow apps with Workflow Builder
+
+<div class="info" markdown="1">
+
+This feature isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../../../security/fedramp/unavailable-features.md) for details.
+
+</div>
 
 [Workflow Builder](http://workflowbuilder.outsystems.com/) allows anyone to build apps for task management and automation in minutes, only by creating workflows. It's an IT-governed tool that IT managers with LifeTime administrator role, experienced in working with the OutSystems platform, need to register and set up first. Once set up, anyone in the organization that designs and manages workflows can use Workflow Builder, extending the team of in-house app developers.
 
@@ -25,7 +36,7 @@ All users need to have their development environment registered in Workflow Buil
 
 Creating low-code Reactive Web Apps with Workflow Builder makes the app creation process simpler, faster, and more collaborative, where multidisciplinary teams work together reducing the time-to-business outcome.
 
-![Screenshot of the Workflow Builder login interface](images/login-wfb.png "Workflow Builder Login Screen")
+![Screenshot of the Workflow Builder login interface](images/login-wb.png "Workflow Builder Login Screen")
 
 With Workflow Builder you can create apps that automate processes, improve efficiency, and get better outcomes on your daily work. Even if you have no previous experience developing apps.  
 

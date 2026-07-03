@@ -1,19 +1,21 @@
 ---
-summary: Explore cross-regional disaster recovery
-tags: disaster recovery, cloud computing, data protection, business continuity, aws
+summary: OutSystems 11 (O11) cross-region disaster recovery (XRDR) covers RPO, RTO, failover, and the automated recovery process for OutSystems Cloud platforms.
+tags:
+  - Infrastructure
+  - Security
 locale: en-us
 guid: fcbc5dc8-e119-4365-9ddd-d60ae481e2d8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-figma:
+figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=2870-104
 audience:
   - Platform administrator
-  - Developer
   - Tech lead
 outsystems-tools:
   - none
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # Cross-region disaster recovery
@@ -21,6 +23,12 @@ coverage-type:
 <div class="info" markdown="1">
 
 OutSystems cross-region disaster recovery (XRDR) requires the subscription of an add-on. Please contact your OutSystems account team for more information.
+
+</div>
+
+<div class="info" markdown="1">
+
+This feature isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../../../../security/fedramp/unavailable-features.md) for details.
 
 </div>
 

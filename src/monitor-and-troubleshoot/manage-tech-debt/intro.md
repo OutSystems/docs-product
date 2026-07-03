@@ -5,7 +5,14 @@ guid: 7aa53270-fb01-4543-90e4-57907dcc68fe
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: technical debt management, code analysis, api integration, low-code platform, it leadership
+tags:
+  - Architecture
+  - Best Practices
+  - Development lifecycle
+  - Mentor Studio
+  - Monitoring
+  - Performance
+  - Technical Debt
 audience:
   - Architect
   - Developer
@@ -18,6 +25,7 @@ coverage-type:
   - understand
 topic:
   - manage-tech-debt
+isautopublish: true
 ---
 
 # Manage technical debt
@@ -25,6 +33,12 @@ topic:
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
+<div class="info" markdown="1">
+
+This feature isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../../security/fedramp/unavailable-features.md) for details.
 
 </div>
 
@@ -48,7 +62,7 @@ To integrate AI Mentor Studio's data with third-party tools, use the [AI Mentor 
 
 AI Mentor Studio analyzes the code produced by developers and provides insights regarding code quality that may impact team agility.  
 
-### Code Analysis
+### Code analysis
 
 AI Mentor Studio runs a set of predefined rules throughout the produced low-code, with the goal of uncovering code patterns in the following categories:
 

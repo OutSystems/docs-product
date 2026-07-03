@@ -1,22 +1,27 @@
 ---
-tags: business process technology, workflow automation, operational efficiency, application development, case management applications
-summary: Explore the Case Management framework in OutSystems 11 (O11) for enhanced business process solutions and operational efficiency.
+tags:
+  - Business Processes
+  - Case Management framework
+  - Events
+  - Lifecycle
+  - Workflows
+summary: "Case Management framework (CMf) in OutSystems 11 (O11) extends BPT with SLA management, delegation, access control, and case status machines."
 guid: 46c46161-b83a-491d-89a2-0bff10c4e5f6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:911
 audience:
-  - Developer
-  - Front-end developer
   - Architect
   - Business analyst
+  - Developer
 outsystems-tools:
   - service studio
   - platform server
   - case management framework
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # Use Case Management framework

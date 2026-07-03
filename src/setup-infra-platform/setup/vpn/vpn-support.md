@@ -1,6 +1,9 @@
 ---
 summary: Explore how to establish a secure site-to-site VPN connection between your on-premises network and OutSystems 11 (O11) Cloud hosted on AWS.
-tags: vpn setup, outsystems cloud, aws, site-to-site vpn, network security
+tags:
+  - Infrastructure
+  - Security
+  - Troubleshooting
 locale: en-us
 guid: f05c9cb8-7c15-4b9d-bf6c-c2da72993ff8
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -18,6 +21,12 @@ isautopublish: true
 # Set up a VPN to your OutSystems Cloud
 
 This topic details how you can set up a site-to-site VPN (virtual private network) connection that allows secure communication between your on-premises network and OutSystems Cloud.
+
+<div class="info" markdown="1">
+
+In OutSystems FedRAMP, you can't set up this service yourself. Open a [support case](https://www.outsystems.com/legal/success/support-terms-and-service-level-agreements-sla-of-the-outsystems-software/) to request it.
+
+</div>
 
 <div class="info" markdown="1">
 

@@ -1,6 +1,11 @@
 ---
-summary: OutSystems 11 (O11) facilitates mobile app packaging for iOS and Android through its cloud-based Mobile Apps Build Service (MABS).
-tags: cloud services, mobile application deployment, mobile sdks, mabs, outsystems platform
+summary: Mobile Apps Build Service (MABS) in OutSystems 11 (O11) builds iOS and Android packages in the cloud; configure MABS versions and monitor status.
+tags:
+  - Android
+  - Deploy
+  - iOS
+  - Mobile app
+  - Monitoring
 locale: en-us
 guid: a5d92b93-40f7-418b-a2b3-40e81e820760
 app_type: mobile apps
@@ -14,12 +19,19 @@ coverage-type:
   - apply
 outsystems-tools:
   - platform server
+isautopublish: true
 ---
 # Mobile Apps Build Service
 
 <div class="info" markdown="1">
 
 Applies only to Mobile Apps.
+
+</div>
+
+<div class="info" markdown="1">
+
+This feature isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../../../security/fedramp/unavailable-features.md) for details.
 
 </div>
 
@@ -31,7 +43,7 @@ You **do not** need to install any Platform Server updates to benefit from new v
 
 </div>
 
-## Understanding MABS Versions { #understanding-mabs-versions }
+## Understanding MABS versions { #understanding-mabs-versions }
 
 OutSystems regularly releases new versions of this cloud service with support for new mobile stacks, and therefore newer mobile platform versions.
 
@@ -113,7 +125,7 @@ From now on, every time there is a request for a new mobile application package 
 
 To disable the service, uncheck the option. In this case, when new developments require a new version of the application package, the current application installed on the devices might not work properly.
 
-## Monitor the Mobile Apps Build Service Status
+## Monitor the Mobile Apps Build Service status
 
 When Mobile Apps Build Service is enabled for an environment and some problem happens, you can check its operation status in the environment manager to detect the eventuality of the service being down (e.g. in the case when mobile apps are not being generated).
 

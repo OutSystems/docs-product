@@ -1,19 +1,27 @@
 ---
-summary: Learn how OutSystems 11 (O11) enables seamless integration with a wide range of systems and technologies, enhancing enterprise application development.
+summary: OutSystems 11 (O11) integration options include REST, SOAP, external databases, SAP, CI/CD, and AI services for enterprise applications.
 locale: en-us
 guid: 76f0ff8d-00dc-4b9e-8da7-95df3bebb8cb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3892-240&t=ab9wvmXDcL4k94Yv-1
-tags: enterprise integration, database connectivity, community contributions, external systems integration
+tags:
+  - AI
+  - CI/CD
+  - End-user Authentication
+  - External Databases
+  - REST
+  - SOAP
+  - Web services
 audience:
   - Developer
   - Architect
 outsystems-tools:
   - forge
 coverage-type:
+  - understand
   - evaluate
-  - apply
+isautopublish: true
 ---
 
 # Integrating OutSystems with your ecosystem
@@ -51,6 +59,12 @@ There are many other integrations that don’t exactly fit into any particular c
 This document discusses the wide range of integrations made possible by OutSystems.
 
 ## Integration Builder {#ib}
+
+<div class="info" markdown="1">
+
+This feature isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../security/fedramp/unavailable-features.md) for details.
+
+</div>
 
 [Integration Builder](https://www.outsystems.com/platform/integration-builder/) is a wizard-style tool for developers to quickly connect apps to major enterprise SoR platforms, including SAP, Salesforce, Microsoft Dynamics, Microsoft Dataverse, and Sharepoint Online. With a few clicks, developers can generate secure and scalable integrations of service modules with all of the code required to call an external system: authentication flow, encoding, and parsing.
 
@@ -130,7 +144,7 @@ OutSystems continually tracks all of the dependencies to the underlying database
 
 Many pre-built connectors and utilities that can be used, as is, or modified as needed, can be found on the [OutSystems Forge](http://www.outsystems.com/Forge/), including connectors for on-premises databases that aren’t natively supported by OutSystems, such as MongoDB. Big data repositories, including CouchDB and Hadoop, can be integrated using their REST APIs. For other database types, developers can create a connector in [Integration Studio](https://success.outsystems.com/Documentation/11/Reference/Integration_Studio) using [standard code](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Extend_Logic_with_Your_Own_Code) with ODBC/JDBC drivers.
 
-## SAP Integration
+## SAP integration
 
 OutSystems provides native support to consume SAP functions to create mobile and web applications by leveraging data and processes from any SAP instance by using RFC calls (BAPI or ZBAPI). Even developers with limited or no knowledge of SAP Integration can easily integrate both SAP ECC and SAP S/4HANA.
 
@@ -188,7 +202,7 @@ Comprehensive analytics and monitoring tools, built into OutSystems, enable proa
 
 The analytics dashboard in LifeTime covers all aspects of the [end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), based on industry standard indicators of user satisfaction. Developers can detect, troubleshoot, and solve performance issues even before end users report them.
 
-![Screenshot of the Performance Monitoring dashboard in OutSystems showing various performance metrics.](images/performance-monitoring.png "Performance Monitoring Dashboard")
+![Screenshot of the Performance Monitoring dashboard in OutSystems showing various performance metrics.](images/performance-monitoring-lt.png "Performance Monitoring Dashboard")
 
 The **End User Experience** dashboard displays the execution times of all queries, web service invocations, screen renderings, schedulers and invocations to adapters, external systems and custom APIs, which are all tracked asynchronously. Performance reports provide valuable tuning and optimization information for applications.
 
@@ -206,13 +220,13 @@ OutSystems supports business process modeling so teams can quickly create a proc
 
 The [Business Activity Monitoring](http://www.outsystems.com/forge/component/132/business-activity-monitoring/) dashboard, an Outsystems-supported extension from the Forge, enables developers to start monitoring and optimizing their processes right after deploying them for the first time without the need for any development effort. Reports can be easily modified and extended to align with the business language of the organization using them.
 
-![Screenshot of the Business Activity Monitoring dashboard with graphs displaying top activities and processes.](images/business-activity-monitoring.png "Business Activity Monitoring Dashboard")
+![Screenshot of the Business Activity Monitoring dashboard with graphs displaying top activities and processes.](images/business-activity-monitoring-sa.png "Business Activity Monitoring Dashboard")
 
 #### Logging
 
 OutSystems logs everything. Applications are automatically instrumented to create over a dozen types of error logs. LifeTime uses this data for its analytics dashboards, and developers have access to all of these logs, in Service Center, without having to write a single line of code.
 
-![Screenshot of the Screens Performance report in OutSystems Service Center with detailed metrics.](images/screens-performance-report.png "Screens Performance Report")
+![Screenshot of the Screens Performance report in OutSystems Service Center with detailed metrics.](images/screens-performance-report-sc.png "Screens Performance Report")
 
 These metrics are captured asynchronously at run time, so application performance isn't compromised while creating a constant stream of metrics. Events captured include:
 
@@ -237,7 +251,7 @@ For instance, the API can be used to extend the dashboard with business data, su
 
 LifeTime provides [automated deployment](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications) processes across all environments, from development to production, which simplifies processes and increases overall IT efficiency.
 
-If a problem pops up in a deployed app, it can be debugged in a pre-production environment. When the [hotfix](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Apply_a_Hotfix) has been tested it can then then be deployed to production, with no downtime, and then propagated backwards to previous environments.
+If a problem pops up in a deployed app, it can be debugged in a pre-production environment. When the [hotfix](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Apply_a_Hotfix) has been tested it can then be deployed to production, with no downtime, and then propagated backwards to previous environments.
 
 #### DevOps extensions
 
@@ -251,13 +265,13 @@ Every enterprise must find a testing solution for each stage of development, as 
 
 Typical stages and testing types
 
-![Diagram illustrating the typical stages and types of testing in a software development lifecycle.](images/typical-stages-and-testing.png "Typical Stages and Testing Types")
+![Diagram illustrating the typical stages and types of testing in a software development lifecycle.](images/typical-stages-and-testing-diag.png "Typical Stages and Testing Types")
 
 OutSystems supports a modern development approach that automatically performs validations regarding factor analysis and impact analysis, alerting developers about conflicts with existing code before new features can be merged. When staging an application to the next environment OutSystems provides feedback about missing dependencies that might cause runtime issues after deployment.
 
 All this is provided automatically, with no need for any scripting.
 
-![Illustration of OutSystems built-in testing capabilities across different stages of development.](images/built-in-testing.png "Built-in Testing Capabilities")
+![Illustration of OutSystems built-in testing capabilities across different stages of development.](images/built-in-testing-diag.png "Built-in Testing Capabilities")
 
 Aside from handling many aspects of automatic testing that are required for building a continuous development pipeline, OutSystems’s built-in tools and technologies facilitate easy integration with major third-party testing platforms so you can continue to work the way you are used to, or choose a tool that answers your needs, all orchestrated within the OutSystems environment.
 
@@ -276,6 +290,12 @@ The most powerful integration test is **1-Click Publish**, which validates all o
 Built-in impact analysis is done for integration, acceptance, and deployment,  simplifying the process of deploying complex application portfolios across environments.  
 
 The **[AI Mentor Studio](../monitor-and-troubleshoot/manage-tech-debt/intro.md)** monitors technical debt from integration through acceptance, visualizing complex cross-portfolio architectures to identify problems while also helping developers follow best practices and avoid common pitfalls.
+
+<div class="info" markdown="1">
+
+AI Mentor Studio isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../security/fedramp/unavailable-features.md) for details.
+
+</div>
 
 **[LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle)**, the OutSystems centralized management console, manages application environments, development, quality, production environments and version management from integration all the way through deployment and release.
 
@@ -309,11 +329,11 @@ OutSystems provides deployment without any need for scripting. Every time an app
 
 OutSystems [AppShield](https://www.outsystems.com/forge/component-overview/9379/outsystems-appshield), an additional cost add-on, automatically adds additional layers of security during deployment to make mobile applications more resistant to intrusion, tampering, and reverse engineering. AppShield makes it more difficult for attackers to spoof your app, meddle with its security controls, inject malicious code, and run in an insecure environment.
 
-#### CI/CD Extensions
+#### CI/CD extensions
 
 The figure below shows the built-in test automation provided by OutSystems and the many third-party tools that can be integrated into the CI/CD workflow.
 
-![Diagram showing the integration of built-in and third-party testing tools in the OutSystems platform.](images/built-in-and-extensions-testing.png "Built-in and Third-party Testing Integration")
+![Diagram showing the integration of built-in and third-party testing tools in the OutSystems platform.](images/built-in-and-extensions-testing-diag.png "Built-in and Third-party Testing Integration")
 
 Popular third-party automation tools can be integrated into your OutSystems CI/CD workflow, including:
 
@@ -405,6 +425,6 @@ Custom machine learning automates decisions in businesses process by providing p
 
 **[Azure ML](https://www.outsystems.com/forge/component-overview/5657/azure-ml-connector),** an OutSystems-supported connector available from the Forge, can be used to create an interactive, visual workspace easily and quickly build, test, and deploy models using pre-built machine learning algorithms. No programming is required; the machine learning model is constructed by connecting datasets and analysis modules on an interactive canvas, and then deploying it.
 
-![Screenshot of the Azure Machine Learning Studio interface showing a machine learning model workflow.](images/azure-ml.png "Azure Machine Learning Studio")
+![Screenshot of the Azure Machine Learning Studio interface showing a machine learning model workflow.](images/azure-ml-diag.png "Azure Machine Learning Studio")
 
 Azure Machine Learning Studio publishes models as web services that can easily be consumed by OutSystems applications.

@@ -21,6 +21,7 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+  - unblock
 isautopublish: true
 ---
 
@@ -150,7 +151,7 @@ Avoid using the Tabs Pattern inside patterns with swipe events, such as the Stac
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Tabs** UI Pattern does not fully comply with the ARIA tabs specification. The `role="tabpanel"` attribute does not align with the semantic `<article>` HTML element used for tab panels.
+By default, the **Tabs** UI Pattern does not fully comply with the ARIA tabs specification. The `role="tabpanel"` attribute does not align with the semantic `<article>` HTML element used for tab panels. If you're using OutSystems UI version earlier than 2.29.0, follow the steps in this section to manually fix this.
 
 To fix this, you keep the existing `<article>` structure but move the accessibility attributes to an inner `<div>`. This approach preserves the current navigation logic, which relies on the `<article>` containers, while ensuring that assistive technologies interpret tabs and panels correctly.
 

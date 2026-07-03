@@ -21,6 +21,7 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+  - unblock
 isautopublish: true
 ---
 
@@ -107,7 +108,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Accordion** UI Pattern used together with a **List** Widget doesn’t expose the correct roles for assistive technologies.  
+By default, the **Accordion** UI Pattern used together with a **List** Widget doesn’t expose the correct roles for assistive technologies. If you’re using OutSystems UI version earlier than 2.29.0, follow the steps in this section to manually assign the correct list roles.
+
 Assigning `list` and `listitem` roles ensures that screen readers interpret the structure properly, improving navigation and context for users who rely on assistive tools.
 
 ### Assign list roles in the Accordion

@@ -21,6 +21,7 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+  - unblock
 isautopublish: true
 ---
 
@@ -124,17 +125,29 @@ Avoid using the Carousel inside patterns with swipe events, such as the **Tabs**
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. You must manually update it to fix the following issues:
+By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. If you're using an OutSystems UI version earlier than 2.29.0, you must manually update the Carousel UI pattern to fix the following issues:
 
-* **Pagination controls** must meet the minimum target size of 24 px, making them easier to use for people with motor impairments or situational challenges.
+* **Pagination controls** must meet the minimum target size of 24 px, making them easier to use for people with motor impairments or situational challenges. Starting with OutSystems UI 2.29.0, this is automatically fixed when the Carousel is inside an element with the `.has-accessible-features` CSS class.
 
 * **Images can’t have the `tabpanel` role**. This role is only valid on containers, such as `<div>` or `<section>`, associated with a tab in a tablist.
 
 * **Lists inside the Carousel** must have the correct roles so that screen readers interpret them properly.
 
+<div class="info" markdown="1">
+
+Placing a nested list (`ul` or `ol`) directly inside Carousel items isn't recommended. Native HTML list elements already have list semantics, so the list role fix in this section targets the Carousel's internal list structure (the OutSystems **List** widget or the Splide list).
+
+</div>
+
 Updating the Carousel ensures the pattern is more accessible for everyone, including people with visual or motor impairments.
 
 ### Fix pagination controls
+
+<div class="info" markdown="1">
+
+Starting with OutSystems UI 2.29.0, the pagination fix is automatically applied when the Carousel is placed inside an element with the `.has-accessible-features` CSS class. If the Carousel is not inside such an element, or if you're using an earlier version, follow these steps to apply the fix manually.
+
+</div>
 
 1. In **Service Studio**, go to the **Interface** tab.
 

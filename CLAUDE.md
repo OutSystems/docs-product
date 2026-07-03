@@ -148,6 +148,20 @@ Validations run on PRs via `.github/workflows/`. Workflow names and checks vary 
 * Insert final newline
 * Soft-wrap at 80 columns (no hard line breaks in paragraphs)
 
+## Training-internal overrides
+
+The following rules override the shared guidance above for this repository only.
+
+### No HTML div callouts
+
+Do not use `<div class="info">` or `<div class="warning">` callout blocks. The `attach-pdf` build tool used in this repo does not support HTML elements and fails with an "Unsupported HTML element found in attach-pdf" error.
+
+Use inline bold prefixes instead:
+
+* For informational notes: `**Note:** Your note text here.`
+* For bad-practice warnings: `**Bad practice:** Your warning text here.`
+* For key distinctions: `**Key distinction:** Your explanation here.`
+
 ## Shared files
 
 This `CLAUDE.md` and all skills (Claude Code slash commands) are authored and

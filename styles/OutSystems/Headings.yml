@@ -63,6 +63,7 @@ exceptions:
   - Workflows Editor
   - Workflows
   - PWA
+  - SPM
   
 # Concepts
   - Action

@@ -4,9 +4,9 @@
 
 | Token | Hex | Usage |
 | --- | --- | --- |
-| red | #F22800 | Request arrows, "No" labels, warning/error nodes, icons |
+| red | #F22800 | Request arrows, "No" labels, warning/error nodes, end/stop node border, icons |
 | blue | #1783EF | Response arrows, app/service nodes, secondary elements |
-| green | #00802D | Start node, end node, "Yes" labels |
+| green | #00802D | Start node border, "Yes" labels |
 | light-grey1 | #F5F6FA | Container/subgraph backgrounds (zones, clusters) |
 | light-grey3 | #979CA2 | Text on connector/arrow labels |
 | dark-grey | #686E76 | Arrow color, node borders |
@@ -15,8 +15,6 @@
 
 ## Typography
 
-* Font family: `NotoSans, Helvetica, Arial, sans-serif` — Noto Sans is the OutSystems docs site font; fallbacks are kept in case the renderer doesn't load it. Matching the production font is important for sequence diagrams, where Mermaid pre-calculates note/box widths based on `fontFamily` and the text overflows when the rendered font differs from the calculated one. **Do not write the font name with a space or wrap it in single quotes** (`'Noto Sans'`) — single quotes inside the `%%{init}%%` JSON break the directive parser in some renderers, which silently rejects the entire init block and reverts the diagram to Mermaid defaults.
-* Node text: 16px
 * Connector label text: 14px — use HTML label syntax (see Edge / Arrow Rules)
 * Subgraph / container title: 18px, weight 500 (medium), no wrap, 16px horizontal padding — use HTML span in the subgraph label:
   `subgraph ID["<span style='font-size:18px;font-weight:500;white-space:nowrap;padding:0 16px'>Title</span>"]`
@@ -70,8 +68,6 @@ Use this at the top of EVERY diagram:
     "secondaryColor": "#F5F6FA",
     "tertiaryColor": "#F5F6FA",
     "edgeLabelBackground": "#FFFFFF",
-    "fontFamily": "NotoSans, Helvetica, Arial, sans-serif",
-    "fontSize": "16px",
     "clusterBkg": "#F5F6FA",
     "clusterBorder": "#686E76",
     "nodeBorder": "#686E76"
@@ -89,12 +85,12 @@ Use this at the top of EVERY diagram:
 Define these classDefs at the top of every flowchart:
 
 ```
-classDef start      fill:#00802D,stroke:#00802D,color:#FFFFFF
-classDef stop       fill:#00802D,stroke:#00802D,color:#FFFFFF
+classDef start      fill:#FFFFFF,stroke:#00802D,color:#0A141E
+classDef stop       fill:#FFFFFF,stroke:#F22800,color:#0A141E
 classDef process    fill:#FFFFFF,stroke:#686E76,color:#0A141E
-classDef decision   fill:#1783EF,stroke:#1783EF,color:#FFFFFF
+classDef decision   fill:#FFFFFF,stroke:#1783EF,color:#0A141E
 classDef container  fill:#F5F6FA,stroke:#686E76,color:#0A141E
-classDef error      fill:#F22800,stroke:#F22800,color:#FFFFFF
+classDef error      fill:#FFFFFF,stroke:#F22800,color:#0A141E
 ```
 
 Apply them with: `class NodeId className`
@@ -153,17 +149,17 @@ If the relationship must be described, use one of these alternatives:
 ### Flowchart (process / hierarchy)
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","secondaryColor": "#F5F6FA","fontFamily": "NotoSans, Helvetica, Arial, sans-serif","fontSize": "16px","clusterBkg": "#F5F6FA","clusterBorder": "#686E76"}, "flowchart": {"subGraphTitleMargin": {"top": 16, "bottom": 16}}}}%%
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","secondaryColor": "#FFFFFF","clusterBkg": "#F5F6FA","clusterBorder": "#686E76"}, "flowchart": {"subGraphTitleMargin": {"top": 16, "bottom": 16}}}}%%
 flowchart TD
-    classDef start    fill:#00802D,stroke:#00802D,color:#FFFFFF
-    classDef stop     fill:#00802D,stroke:#00802D,color:#FFFFFF
+    classDef start    fill:#FFFFFF,stroke:#00802D,color:#0A141E
+    classDef stop     fill:#FFFFFF,stroke:#F22800,color:#0A141E
     classDef process  fill:#FFFFFF,stroke:#686E76,color:#0A141E
-    classDef decision fill:#1783EF,stroke:#1783EF,color:#FFFFFF
+    classDef decision fill:#FFFFFF,stroke:#1783EF,color:#0A141E
 
     S([Start]):::start --> A(Step One):::process
     A --> B{Is condition met?}:::decision
     B -->|"<span style='font-size:14px'>Yes</span>"| C(Path A):::process
-    B -->|"<span style='font-size:14px'>No</span>"|  D(Path B):::process
+    B -->|"<span style='font-size:14px'>No</span>"| D(Path B):::process
     C --> E([End]):::stop
     D --> E
 ```
@@ -175,7 +171,7 @@ When using `autonumber`, add `"labelBoxBkgColor": "#F22800"` and `"labelTextColo
 Some Mermaid renderers (notably VS Code's built-in Markdown preview) ignore these theme variables. Include a `themeCSS` block that targets the underlying CSS classes as a defensive override — it wins where theme variables don't.
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","fontFamily": "NotoSans, Helvetica, Arial, sans-serif","fontSize": "16px","messageFontSize": "14px","labelBoxBkgColor": "#F22800","labelTextColor": "#FFFFFF","noteBkgColor": "#F5F6FA","noteBorderColor": "#686E76","noteTextColor": "#0A141E"}, "themeCSS": "circle.sequenceNumber, rect.labelBox { fill: #F22800 !important; stroke: #F22800 !important; } text.sequenceNumber, text.labelText { fill: #FFFFFF !important; } g.note rect, rect.note { fill: #F5F6FA !important; stroke: #686E76 !important; } g.note text { fill: #0A141E !important; }"}}%%
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","messageFontSize": "14px","labelBoxBkgColor": "#F22800","labelTextColor": "#FFFFFF","noteBkgColor": "#F5F6FA","noteBorderColor": "#686E76","noteTextColor": "#0A141E"}, "themeCSS": "circle.sequenceNumber, rect.labelBox { fill: #F22800 !important; stroke: #F22800 !important; } text.sequenceNumber, text.labelText { fill: #FFFFFF !important; } g.note rect, rect.note { fill: #F5F6FA !important; stroke: #686E76 !important; } g.note text { fill: #0A141E !important; }"}}%%
 sequenceDiagram
     autonumber
     participant U as User
@@ -193,7 +189,7 @@ sequenceDiagram
 Use `:::process` (grey border, rounded) for all component nodes. Use dashed arrows (`-.->`) and descriptive labels to indicate unavailable components — do not use `:::error` for component state.
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","secondaryColor": "#F5F6FA","fontFamily": "NotoSans, Helvetica, Arial, sans-serif","fontSize": "16px","clusterBkg": "#F5F6FA","clusterBorder": "#686E76"}, "flowchart": {"subGraphTitleMargin": {"top": 16, "bottom": 16}}}}%%
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","secondaryColor": "#F5F6FA","clusterBkg": "#F5F6FA","clusterBorder": "#686E76"}, "flowchart": {"subGraphTitleMargin": {"top": 16, "bottom": 16}}}}%%
 flowchart TB
     classDef process   fill:#FFFFFF,stroke:#686E76,color:#0A141E
     classDef external  fill:#FFFFFF,stroke:#686E76,color:#0A141E
@@ -219,7 +215,7 @@ flowchart TB
 ### Entity - relationship (data model)
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","fontFamily": "NotoSans, Helvetica, Arial, sans-serif","fontSize": "16px"}}}%%
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76"}}}%%
 erDiagram
     ENTITY_A {
         int id PK
@@ -237,7 +233,7 @@ erDiagram
 Use HTML spans to set font size by depth. Set distinct branch colors explicitly via `cScale` variables — do **not** rely on Mermaid auto-coloring when `primaryColor` is overridden.
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","fontFamily": "NotoSans, Helvetica, Arial, sans-serif","cScale0": "#D6E9FF","cScale1": "#D1F0DC","cScale2": "#E9D8FD","cScale3": "#FEE2C8","cScale4": "#CBF5FA"}}}%%
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","cScale0": "#D6E9FF","cScale1": "#FED06B","cScale2": "#38BDFF","cScale3": "#F85E40","cScale4": "#FEE2C8"}}}%%
 mindmap
   root(("<b style='font-size:20px'>Core Concept</b>"))
     ["<span style='font-size:18px'>Topic A</span>"]

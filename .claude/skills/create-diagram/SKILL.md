@@ -50,10 +50,10 @@ Ask the user two questions in a single AskUserQuestion call:
 
 **Question 2 — Purpose:**
 
-* Process or workflow
-* System / component overview
-* Data model
-* Concept overview / mental model
+* Process or workflow (flowchart or sequence diagram)
+* System / component overview (architecture diagram)
+* Data model (entity-relationship diagram)
+* Concept overview / mental model (mindmap or flowchart)
 
 ### Step 3: Select diagram type
 

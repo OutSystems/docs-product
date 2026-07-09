@@ -177,12 +177,14 @@ exceptions:
   - Action Sheet
   - Animated Label
   - Blank Slate
+  - Bottom Sheet
   - Card Background
   - Carousel
   - Checkbox
   - Columns
   - Date Picker
   - Dropdown Server Side
+  - Flip Content 
   - Gallery
   - Inline SVG
   - Lightbox Image

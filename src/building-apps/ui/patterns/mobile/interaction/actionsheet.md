@@ -97,9 +97,15 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Action Sheet** UI Pattern may not accurately convey its expanded or collapsed state to assistive technologies. If you're using OutSystems UI version earlier than **2.29.0**, follow the steps in this section to manually set the correct ARIA attributes. Before updating to **2.29.0** or later, remove any manual code you added by following the steps in this section.
+Starting with OutSystems UI version **2.29.0**, the **Action Sheet** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
 
-Set the appropriate ARIA attributes so screen readers announce when the Action Sheet opens or closes, ensuring users always understand its current state.
+<div class="info" markdown="1">
+
+**For versions earlier than 2.29.0**: If you use an OutSystems UI version earlier than **2.29.0** and manually applied accessibility fixes as described below, remove the manual code added by following the steps in this section before updating to version **2.29.0**.
+
+</div>
+
+### Manual fix required (for versions before 2.29.0)
 
 <div class="info" markdown="1">
 
@@ -108,7 +114,7 @@ In scenarios with dynamic content, instead of creating multiple Action Sheet ins
 
 </div>
 
-### Set the correct ARIA state for the Action Sheet trigger
+#### Set the correct ARIA state for the Action Sheet trigger
 
 Expose the open and closed state through the trigger button and remove invalid state attributes from the container.
 
@@ -118,7 +124,7 @@ Expose the open and closed state through the trigger button and remove invalid s
 
 1. Select the **Button** that triggers the **Action Sheet**. In **Properties**, under **Attributes**, add `aria-expanded=If(IsOpen, "true", "false")`, `aria-controls = actionSheetId` and `aria-haspopup="menu`;
 
-### Correct the ARIA attributes on the Action Sheet container
+#### Correct the ARIA attributes on the Action Sheet container
 
 Remove `aria-expanded` from the Action Sheet container, since `aria-expanded` belongs on the trigger element.
 
@@ -144,7 +150,7 @@ Remove `aria-expanded` from the Action Sheet container, since `aria-expanded` be
 
 1. Publish the module.
 
-### Result
+#### Result
 
 After completing these steps:
 

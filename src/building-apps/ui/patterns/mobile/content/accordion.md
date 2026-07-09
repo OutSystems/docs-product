@@ -108,11 +108,21 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Accordion** UI Pattern used together with a **List** Widget doesn’t expose the correct roles for assistive technologies. If you’re using OutSystems UI version earlier than **2.29.0**, follow the steps in this section to manually assign the correct list roles. Before updating to **2.29.0** or later, remove any manual code you added by following the steps in this section.
+Starting with OutSystems UI version **2.29.0**, the **Accordion** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+**For versions earlier than 2.29.0**: If you use an OutSystems UI version earlier than **2.29.0** and manually applied accessibility fixes as described below, remove the manual code added by following the steps in this section before updating to version **2.29.0**.
+
+</div>
+
+### Manual fix required (for versions before 2.29.0)
+
+#### Assign list roles in the Accordion
+
+By default, the **Accordion** UI Pattern used together with a **List** Widget doesn’t expose the correct roles for assistive technologies.
 
 Assigning `list` and `listitem` roles ensures that screen readers interpret the structure properly, improving navigation and context for users who rely on assistive tools.
-
-### Assign list roles in the Accordion
 
 <div class="info" markdown="1">
 
@@ -165,7 +175,7 @@ If using Accordion Item pattern without Accordion pattern adapt the following in
 
 1. Publish the module
 
-### Result
+#### Result
 
 After completing these steps, any **List** inside an **Accordion** correctly exposes `list` and `listitem` roles.  
 

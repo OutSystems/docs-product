@@ -77,11 +77,21 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
+Starting with OutSystems UI version **2.29.0**, the **Blank Slate** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+**For versions earlier than 2.29.0**: If you use an OutSystems UI version earlier than **2.29.0** and manually applied accessibility fixes as described below, remove the manual code added by following the steps in this section before updating to version **2.29.0**.
+
+</div>
+
+### Manual fix required (for versions before 2.29.0)
+
 By default, the Blank Slate UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. Add the correct role so that screen readers interpret it properly.
 
 Doing so ensures the pattern is accessible for all users, including people with visual or motor disabilities.
 
-### Fix Blank Slate role
+#### Fix Blank Slate role
 
 1. In **Service Studio**, go to the **Interface** tab.
 
@@ -141,7 +151,7 @@ Doing so ensures the pattern is accessible for all users, including people with 
 
 1. Publish the module.
 
-### Result
+#### Result
 
 The Blank Slate now has the correct role applied.
 

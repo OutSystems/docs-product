@@ -5,7 +5,7 @@ locale: en-us
 guid: e4899a53-ca9e-4c13-b021-06518a34fba2
 app_type: mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:18
+figma:
 audience:
   - Developer
   - Front-end developer
@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Public Actions
@@ -27,7 +28,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the [Accordion](<content/accordion.md>) actions described below anywhere in OutSystems.
 
-### AccordionCollapseAll
+### `AccordionCollapseAll`
 
 Function to collapse all the expanded items of an Accordion.
 
@@ -40,7 +41,7 @@ Function to collapse all the expanded items of an Accordion.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### AccordionExpandAll
+### `AccordionExpandAll`
 
 Function to expand all the collapsed items of an Accordion.
 
@@ -53,7 +54,7 @@ Function to expand all the collapsed items of an Accordion.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### AccordionItemAllowTitleEvents
+### `AccordionItemAllowTitleEvents`
 
 Enable the events of an AccordionItem title’s elements. Use this action to trigger element events (for example, link on click) without opening/closing the Accordion Item.
 
@@ -66,7 +67,7 @@ Enable the events of an AccordionItem title’s elements. Use this action to tri
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### AccordionItemCollapse
+### `AccordionItemCollapse`
 
 Closes an Accordion Item.
 
@@ -79,7 +80,7 @@ Closes an Accordion Item.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### AccordionItemExpand
+### `AccordionItemExpand`
 
 Opens an Accordion Item.
 
@@ -96,7 +97,7 @@ Opens an Accordion Item.
 
 You can use the [Bottom Sheet](<interaction/bottomsheet.md>) actions described below anywhere in OutSystems.
 
-### BottomSheetClose
+### `BottomSheetClose`
 
 Closes a Bottom Sheet.
 
@@ -109,7 +110,7 @@ Closes a Bottom Sheet.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### BottomSheetOpen
+### `BottomSheetOpen`
 
 Opens a Bottom Sheet.
 
@@ -126,7 +127,7 @@ Opens a Bottom Sheet.
 
 You can use the [Carousel](<interaction/carousel.md>) actions described below anywhere in OutSystems.
 
-### CarouselGoTo
+### `CarouselGoTo`
 
 Set the item that the Carousel goes to.
 
@@ -142,7 +143,7 @@ Set the item that the Carousel goes to.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### CarouselNext
+### `CarouselNext`
 
 Use to move the Carousel to the next item.
 
@@ -155,7 +156,7 @@ Use to move the Carousel to the next item.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### CarouselPrevious
+### `CarouselPrevious`
 
 Use to move the carousel to the previous item.
 
@@ -168,7 +169,7 @@ Use to move the carousel to the previous item.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### CarouselToggleDrag
+### `CarouselToggleDrag`
 
 Enable the drag to navigate between items.
 
@@ -182,7 +183,7 @@ Enable the drag to navigate between items.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### SetCarouselDirection
+### `SetCarouselDirection`
 
 Set the direction in which the Carousel is sliding when it is automatically looping (Loop). By default, the carousel direction is from left to right.
 
@@ -204,8 +205,6 @@ To remove elements from the Carousel, create an action with the ListRemove and U
 
 You can use the [Stacked Cards](<interaction/stackedcards.md>) actions described below anywhere in OutSystems.
 
-![Screenshot of Stacked Cards actions in OutSystems](images/StackedCards_Actions.png "Stacked Cards Actions")
-
 ### SwipeLeft Action
 
 Calling this public action in relation to a button triggers the SwipeRight action and moves the card. You need to set the Stacked Cards ID (Widget ID).
@@ -224,15 +223,13 @@ You must use this action on the ListRemove action. The action updates all cards 
 
 ### ListRemove
 
-To remove elements from the Stacked Cards, create an action with the ListRemove and UpdateCarousel actions (see the example below).
+To remove elements from the Stacked Cards, create an action with the ListRemove and UpdateCarousel actions (see the example below). -->
 
-![Example of List Remove action usage in OutSystems](images/ListRemove.png "List Remove Example") -->
-
-## Date Pickers
+## Date Picker
 
 You can use the [Date Picker](<interaction/datepicker.md>) actions described below anywhere in OutSystems.
 
-### DatePickerClear
+### `DatePickerClear`
 
 Resets the selected dates (if any) and clears the input of a Date Picker.
 
@@ -245,7 +242,7 @@ Resets the selected dates (if any) and clears the input of a Date Picker.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DatePickerClose
+### `DatePickerClose`
 
 Closes a Date Picker.
 
@@ -258,7 +255,7 @@ Closes a Date Picker.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DatePickerOpen
+### `DatePickerOpen`
 
 Opens a Date Picker.
 
@@ -269,7 +266,7 @@ Opens a Date Picker.
 |Success| Boolean| Boolean value that indicates if the action was successfully performed. |
 |ErrorMessage|ErrorMessage|Message detailing the errors that occur after performing the action. The message contains an error code and explains the error.|
 
-### DatePickerRangeUpdateDates
+### `DatePickerRangeUpdateDates`
 
 Update the selected start and end dates shown in a given Date Picker Range.
 
@@ -284,7 +281,7 @@ Update the selected start and end dates shown in a given Date Picker Range.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DatePickerSetEditableInput
+### `DatePickerSetEditableInput`
 
 Use this action to enable the end-user to write on the Date Picker input. By default, the input is read-only.
 
@@ -298,7 +295,7 @@ Use this action to enable the end-user to write on the Date Picker input. By def
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DatePickerSetLanguage
+### `DatePickerSetLanguage`
 
 Set a new language on a Date Picker. All the elements shown in the Date Picker are translated into the selected language.
 
@@ -312,7 +309,7 @@ Set a new language on a Date Picker. All the elements shown in the Date Picker a
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DatePickerToggleNativeBehavior
+### `DatePickerToggleNativeBehavior`
 
 Use this action to control the Date Picker behavior when opened in mobile. By default, the Date Picker is opened as native, in mobile.
 
@@ -326,7 +323,7 @@ Use this action to control the Date Picker behavior when opened in mobile. By de
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DatePickerUpdateDate
+### `DatePickerUpdateDate`
 
 Update the selected date displayed in a Date Picker.
 
@@ -344,7 +341,7 @@ Update the selected date displayed in a Date Picker.
 
 You can use the [Dropdown](<interaction/dropdownsearch.md>) actions described below anywhere in OutSystems.
 
-### DropdownClear
+### `DropdownClear`
 
 Method used to clear any selected values for a Dropdown.
 
@@ -357,7 +354,7 @@ Method used to clear any selected values for a Dropdown.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DropdownClearValidation
+### `DropdownClearValidation`
 
 Method used to clear the validation style of a Dropdown.
 
@@ -370,7 +367,7 @@ Method used to clear the validation style of a Dropdown.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DropdownDisable
+### `DropdownDisable`
 
 Method that sets a Dropdown to disabled.
 
@@ -383,7 +380,7 @@ Method that sets a Dropdown to disabled.
 | Success | Boolean | Boolean that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Shows details about errors that occur after performing the action. It contains a code and a message explaining the error. |
 
-### DropdownEnable
+### `DropdownEnable`
 
 Method that sets a Dropdown to enabled.
 
@@ -396,7 +393,7 @@ Method that sets a Dropdown to enabled.
 | Success | Boolean | Boolean that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Shows details about errors that occur after performing the action. It contains a code and a message explaining the error. |
 
-### DropdownGetSelectedValues
+### `DropdownGetSelectedValues`
 
 Method that returns a list with the selected value from a Dropdown.
 
@@ -409,7 +406,7 @@ Method that returns a list with the selected value from a Dropdown.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DropdownNotValid
+### `DropdownNotValid`
 
 Method used to set a not valid style to a Dropdown.
 
@@ -423,7 +420,7 @@ Method used to set a not valid style to a Dropdown.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### DropdownTogglePopup
+### `DropdownTogglePopup`
 
 Use this action to enable/disable the default behavior of Dropdowns opening as a popup in Native Apps. By default, Dropdowns open as popups in Native Apps.
 
@@ -441,7 +438,7 @@ Use this action to enable/disable the default behavior of Dropdowns opening as a
 
 You can use the [Flip Content](<content/flipcontent.md>) actions described below anywhere in OutSystems.
 
-### FlipContentBack
+### `FlipContentBack`
 
 Shows the back of the Flip Content.
 
@@ -454,7 +451,7 @@ Shows the back of the Flip Content.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### FlipContentFront
+### `FlipContentFront`
 
 Shows the front of the Flip Content.
 
@@ -462,12 +459,12 @@ Shows the front of the Flip Content.
 | --- | --- | --- |
 | WidgetId | Text | Flip Content identifier. |
 
-||Output parameter | Type | Description |
-|---|---|---|
-|Success| Boolean| Boolean value that indicates if the action was successfully performed. |
-|ErrorMessage|ErrorMessage|Message detailing the errors that occur after performing the action. The message contains an error code and explains the error.|
+| Output parameter | Type | Description |
+| --- | --- | --- |
+| Success | Boolean | Boolean value that indicates if the action was successfully performed. |
+| ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### FlipContentToggle
+### `FlipContentToggle`
 
 Flips the content of the Flip Content.
 
@@ -480,11 +477,29 @@ Flips the content of the Flip Content.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
+## Inline SVG
+
+You can use the [Inline SVG](<utilities/inlinesvg.md>) actions described below anywhere in OutSystems.
+
+### `InlineSVGSetAccessibilityType`
+
+Use this client action to apply accessibility semantics to an Inline SVG element.
+
+| Input parameter | Type | Description |
+| --- | --- | --- |
+| WidgetId | Text | The InlineSVG identifier |
+| Options | InlineSVGA11YOpts | A11Y options:<br/>• Type: Defines the accessibility role of the SVG by specifying how it should be perceived and handled by assistive technologies.<br/>• Decorative: Indicates that the SVG is purely visual and conveys no meaningful information.<br/>• Informative: Indicates that the SVG conveys meaningful content or information.<br/>• Interactive: Indicates that the SVG functions as an interactive element (e.g., a button or control).<br/>• Label: Provides a human-readable text alternative describing the SVG’s meaning or function. |
+
+| Output parameter | Type | Description |
+| --- | --- | --- |
+| Success | Boolean | Boolean value that indicates if the action was successfully performed. |
+| ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
+
 ## Notification
 
 You can use the [Notification](<interaction/notification.md>) actions described below anywhere in OutSystems.
 
-### NotificationClose
+### `NotificationClose`
 
 Closes a Notification.
 
@@ -497,7 +512,7 @@ Closes a Notification.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### NotificationOpen
+### `NotificationOpen`
 
 Opens a Notification.
 
@@ -514,7 +529,7 @@ Opens a Notification.
 
 You can use the [Progess Bar](<numbers/progressbar.md>) and [Progress Circle](<numbers/progresscircle.md>) actions described below anywhere in OutSystems.
 
-### ResetProgressBar
+### `ResetProgressBar`
 
 Resets the Progress Bar value to the Progress value.
 
@@ -527,7 +542,7 @@ Resets the Progress Bar value to the Progress value.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### ResetProgressCircle
+### `ResetProgressCircle`
 
 Resets the Progress Circle value to the Progress value.
 
@@ -540,7 +555,7 @@ Resets the Progress Circle value to the Progress value.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### SetProgressBarValue
+### `SetProgressBarValue`
 
 Set a value on the Progress Bar.
 
@@ -554,7 +569,7 @@ Set a value on the Progress Bar.
 | Success | Boolean | Boolean value that indicates if the action was successfully performed. |
 | ErrorMessage | ErrorMessage | Message detailing the errors that occur after performing the action. The message contains an error code and explains the error. |
 
-### SetProgressCircleValue
+### `SetProgressCircleValue`
 
 Set a value on the Progress Circle.
 

@@ -151,11 +151,21 @@ Avoid using the Tabs Pattern inside patterns with swipe events, such as the Stac
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
+Starting with OutSystems UI version **2.29.0**, the **Tabs** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+**For versions earlier than 2.29.0**: If you use an OutSystems UI version earlier than **2.29.0** and manually applied accessibility fixes as described below, remove the manual code added by following the steps in this section before updating to version **2.29.0**.
+
+</div>
+
+### Manual fix required (for versions before 2.29.0)
+
 By default, the **Tabs** UI Pattern does not fully comply with the ARIA tabs specification. The `role="tabpanel"` attribute does not align with the semantic `<article>` HTML element used for tab panels. If you're using OutSystems UI version earlier than **2.29.0**, follow the steps in this section to manually fix this. Before updating to **2.29.0** or later, remove any manual code you added by following the steps in this section.
 
 To fix this, you keep the existing `<article>` structure but move the accessibility attributes to an inner `<div>`. This approach preserves the current navigation logic, which relies on the `<article>` containers, while ensuring that assistive technologies interpret tabs and panels correctly.
 
-### Move the tabpanel role to the inner container
+#### Move the tabpanel role to the inner container
 
 1. In **Service Studio**, go to the **Interface** tab and select the screen or block that uses the **Tabs** UI Pattern.
 
@@ -256,6 +266,6 @@ To fix this, you keep the existing `<article>` structure but move the accessibil
 
 1. Publish the module.
 
-### Result
+#### Result
 
 After completing these steps, each tab panel exposes `role="tabpanel"` and related ARIA attributes on the inner container instead of the `<article>` element. Screen readers correctly associate tabs with their panels, keyboard navigation remains unchanged, and automated accessibility tools stop reporting invalid ARIA role usage on the Tabs pattern.

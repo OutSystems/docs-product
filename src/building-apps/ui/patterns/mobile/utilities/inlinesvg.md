@@ -84,10 +84,20 @@ Using the example above, the results are as follows:
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
+Starting with OutSystems UI version **2.29.0**, the **Inline SVG** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+**For versions earlier than 2.29.0**: If you use an OutSystems UI version earlier than **2.29.0** and manually applied accessibility fixes as described below, remove the manual code added by following the steps in this section before updating to version **2.29.0**.
+
+</div>
+
+### Manual fix required (for versions before 2.29.0)
+
 By default, the **Inline SVG** UI Pattern might not expose the right accessibility attributes. This can cause screen readers to misinterpret or ignore the SVG content.
 Use one of the following options to ensure assistive technologies announce the SVG correctly, depending on whether it conveys information or is purely decorative.
 
-### Option 1: Add attributes for decorative SVG
+#### Option 1: Add attributes for decorative SVG
 
 Use this option when the SVG is purely visual and doesn’t convey information.
 
@@ -117,7 +127,7 @@ Use this option when the SVG is purely visual and doesn’t convey information.
 
 1. Publish the module.
 
-### Option 2: Add attributes for informative SVG
+#### Option 2: Add attributes for informative SVG
 
 Use this option when the SVG conveys meaning (for example, an icon, chart, or status indicator).
 
@@ -158,12 +168,12 @@ Use this option when the SVG conveys meaning (for example, an icon, chart, or st
 
 1. Publish the module.
 
-### Option 3: Make the SVG interactive
+#### Option 3: Make the SVG interactive
 
 If the SVG acts as a control (for example, a link, button, or toggle), treat it as interactive.
 Give it the correct role (for example, `button`), a `tabindex="0"`, an accessible name (`aria-label`), and keyboard event handlers for **Enter** and **Space** keys.
 
-### Result
+#### Result
 
 After completing these steps, assistive technologies handle SVGs according to their purpose:
 

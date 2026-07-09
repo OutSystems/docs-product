@@ -125,6 +125,16 @@ Avoid using the Carousel inside patterns with swipe events, such as the **Tabs**
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
+Starting with OutSystems UI version **2.29.0**, the **Carousel** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+**For versions earlier than 2.29.0**: If you use an OutSystems UI version earlier than **2.29.0** and manually applied accessibility fixes as described below, remove the manual code added by following the steps in this section before updating to version **2.29.0**.
+
+</div>
+
+### Manual fix required (for versions before 2.29.0)
+
 By default, the Carousel UI pattern requires a small update to fully comply with WCAG 2.2 AA standards. If you're using an OutSystems UI version earlier than **2.29.0**, you must manually update the Carousel UI pattern to fix the following issues. Before updating to **2.29.0** or later, remove any manual code you added by following the steps in this section.
 
 * **Pagination controls** must meet the minimum target size of 24 px, making them easier to use for people with motor impairments or situational challenges. Starting with OutSystems UI 2.29.0, this is automatically fixed when the Carousel is inside an element with the `.has-accessible-features` CSS class.
@@ -141,7 +151,7 @@ Placing a nested list (`ul` or `ol`) directly inside Carousel items isn't recomm
 
 Updating the Carousel ensures the pattern is more accessible for everyone, including people with visual or motor impairments.
 
-### Fix pagination controls
+#### Fix pagination controls
 
 <div class="info" markdown="1">
 
@@ -177,7 +187,7 @@ Starting with OutSystems UI 2.29.0, the pagination fix is automatically applied 
 
 1. Publish the module.
 
-### Remove the incorrect role from images
+#### Remove the incorrect role from images
 
 <div class="info" markdown="1">
 
@@ -199,7 +209,7 @@ This issue occurs **only when you use static images directly inside the Carousel
 
 1. Publish the module.
 
-### Assign list roles in the Carousel
+#### Assign list roles in the Carousel
 
 1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the Carousel with a list.
 
@@ -272,7 +282,7 @@ This issue occurs **only when you use static images directly inside the Carousel
 
 1. Click **Done**, then publish the module and test it.
 
-### Result
+#### Result
 
 * The Carousel pagination dots now have a minimum **24px** clickable area.
 

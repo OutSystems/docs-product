@@ -106,6 +106,16 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
+Starting with OutSystems UI version **2.29.0**, the **User Avatar** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+**For versions earlier than 2.29.0**: If you use an OutSystems UI version earlier than **2.29.0** and manually applied accessibility fixes as described below, remove the manual code added by following the steps in this section before updating to version **2.29.0**.
+
+</div>
+
+### Manual fix required (for versions before 2.29.0)
+
 By default, the **User Avatar** UI pattern requires a few small updates to fully comply with WCAG 2.2 AA guidelines. You must manually adjust it to address the following issues:
 
 * **Alternative text (`alt` attribute)** may be missing or incorrectly applied, preventing screen readers from describing or skipping the avatar as intended.
@@ -114,14 +124,14 @@ By default, the **User Avatar** UI pattern requires a few small updates to fully
 
 Fixing these two issues ensures that the User Avatar is perceivable and understandable for all users, including those relying on screen readers or with low vision.
 
-### Add or hide alternative text
+#### Add or hide alternative text
 
 Screen readers rely on the `alt` attribute to describe images. The **User Avatar** may lack appropriate alternative text or use it incorrectly, depending on how the avatar appears in your interface. There are two common scenarios:
 
 * **Informative avatar:** The avatar appears without nearby text, so it needs an `alt` value for identification.  
 * **Decorative avatar:** The avatar appears next to the user’s name or other descriptive text, so the `alt` value should be empty.
 
-#### Option 1: Informative avatar
+##### Option 1: Informative avatar
 
 1. In **Service Studio**, go to the **Interface** tab.
 
@@ -159,7 +169,7 @@ Screen readers rely on the `alt` attribute to describe images. The **User Avatar
 
 1. Publish the module.
 
-#### Option 2: Decorative avatar
+##### Option 2: Decorative avatar
 
 1. In **Service Studio**, go to the **Interface** tab.
 
@@ -184,7 +194,7 @@ Screen readers rely on the `alt` attribute to describe images. The **User Avatar
 
 1. Publish the module.
 
-### Improve color contrast
+#### Improve color contrast
 
 The **User Avatar** may not meet the minimum contrast ratio required for WCAG 2.2 AA compliance.  
 This occurs because the **OutSystems UI** color palette includes combinations that aren’t optimized for text contrast—especially when using dynamic or brand-customized settings.
@@ -217,7 +227,7 @@ Use a contrast checking tool such as:
 
   ![Example of how to use Color Contrast Checker to validate compliant colors](images/useravatar-neutral6contrast-ss.png "Validating contrast color with Color Contrast Checker")
 
-#### Update CSS variables to improve contrast
+##### Update CSS variables to improve contrast
 
 Update the theme color tokens so text and background combinations meet WCAG 2.2 AA. Replace each placeholder value with your brand colors (hex or rgba) and publish.
 
@@ -383,7 +393,7 @@ For readability, the examples use a black hex value (`#000000`), but you can rep
 }
 ```
 
-### Result
+#### Result
 
 After completing these steps:
 

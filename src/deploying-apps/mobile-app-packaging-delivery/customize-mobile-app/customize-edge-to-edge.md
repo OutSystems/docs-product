@@ -58,13 +58,13 @@ Mobile Apps Build Service (MABS) 12 introduces changes to how mobile apps handle
 1. Add the JSON properties to customize your application system bars according to the reference information presented below.  
     If you already have some extensibility configurations defined in the module, add the new content making the necessary adjustments.
 
-1. After customizing the system bars you must install an [updated build of the mobile app](<../mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build>) on the devices for the changes to take effect.
+1. After customizing the system bars you must install an [updated build of the mobile app](../mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build) on the devices for the changes to take effect.
 
 ## System bars customization reference
 
 | Property | Values | Description |
 | --- | --- | --- |
-| AndroidEdgeToEdge | `True` or `False` | Whether the WebView will reach edge-to-edge or just between the system bars on Android devices.<br/>- If set to `True`, the app reports the safe area insets through the `--safe-area-inset-*` CSS variables. For more information, refer to [Safe area inset support](#safe-area-inset-support-safe-area-inset-support).<br/>- If set to `False`, the style of the status bar icons is automatically managed by the system.<br/>- If not set, defaults to `False`. |
+| AndroidEdgeToEdge | `True` or `False` | Whether the WebView will reach edge-to-edge or just between the system bars on Android devices.<br/>- If set to `True`, the app reports the safe area insets through the `--safe-area-inset-*` CSS variables. For more information, refer to [Safe area inset support](#safe-area-inset-support).<br/>- If set to `False`, the style of the status bar icons is automatically managed by the system.<br/>- If not set, defaults to `False`. |
 | EdgeToEdgeGlyphTheme | `dark` or `light` | Controls the color of system bar icons and text (glyphs) when `AndroidEdgeToEdge` is set to `True`. In edge-to-edge mode the system bar background is transparent, so automatic luminance-based detection may not produce the desired result. This preference lets you explicitly choose the glyph color to match your app's background.<br/>- `dark`: dark-colored glyphs (suitable for light backgrounds).<br/>- `light`: light-colored glyphs (suitable for dark backgrounds).<br/>- If not set or set to an unrecognized value, falls back to automatic luminance-based detection.<br/>- Has no effect when `AndroidEdgeToEdge` is set to `False`. |
 | NavigationBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the navigation bar.<br/>- If set to `#00000000`, the navigation bar follows the device theme.<br/>- If set to any other hex color, the navigation bar uses that color and it does not change when the device theme changes.<br/>- If not set, it matches the color defined in the `BackgroundColor` preference, which by default is your application's primary color.<br/>- Has no effect when `AndroidEdgeToEdge` is set to `True`.<br/>- Expected color format: `#RRGGBB` or `#00000000`. |
 | StatusBarBackgroundColor | `#000000` to `#FFFFFF` or `#00000000` | The background color of the status bar. Operates the same way as `NavigationBarBackgroundColor`, with the addition that the status bar style (light or dark text and icons) is automatically determined based on the color for optimal contrast. |
@@ -130,7 +130,7 @@ No extensibility configuration is required for this default behavior.
 }
 ```
 
-## Safe area inset support {safe-area-inset-support}
+## Safe area inset support {#safe-area-inset-support}
 
 To ensure your app content does not overlap with system UI elements such as the status bar, camera notch/cutout and navigation bar, the following custom CSS variables are available on both Android and iOS to expose the safe area insets:
 

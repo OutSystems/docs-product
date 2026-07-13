@@ -40,8 +40,8 @@ Use JavaScript when you need to:
 
 For detailed instructions, see the article that matches your app type:
 
-* Traditional Web Apps: [Extend your Traditional Web App using JavaScript](./web/intro.md)
-* Reactive Web Apps and Mobile Apps: [Extend Your Mobile and Reactive Apps Using JavaScript](./mobile/intro.md)
+* Traditional Web Apps: [Extend your Traditional Web App using JavaScript](web/intro.md)
+* Reactive Web Apps and Mobile Apps: [Extend Your Mobile and Reactive Apps Using JavaScript](mobile/intro.md)
 
 ## Before you use JavaScript
 
@@ -57,7 +57,7 @@ Before adding custom JavaScript, keep these recommendations in mind:
 
 You may also want to check these related articles:
 
-* [Use JavaScript Code from an External Library](./mobile/use-external-lib.md)
+* [Use JavaScript Code from an External Library](mobile/use-external-lib.md)
 * [OutSystems JavaScript API Reference](../../ref/apis/javascript/intro.md)
 
 ## Next steps

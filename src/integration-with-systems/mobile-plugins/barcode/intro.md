@@ -1,6 +1,12 @@
 ---
 summary: Learn how to integrate and utilize the Barcode Plugin in OutSystems 11 (O11) for scanning various barcode formats in native mobile apps.
-tags: barcode scanning, native mobile development, mobile plugins, outsystems forge, demo applications
+tags:
+  - Cordova
+  - Forge
+  - Logic
+  - Mobile app
+  - Native App
+  - Plugins
 locale: en-us
 guid: 22ea5600-8b2b-4ad3-8e64-06e512155c58
 app_type: mobile apps
@@ -13,15 +19,15 @@ outsystems-tools:
   - service studio
   - forge
 coverage-type:
-  - understand
-  - apply
   - remember
+  - apply
   - unblock
 topic:
   - using-cordova-plugins
+isautopublish: true
 ---
 
-# Barcode Plugin
+# Barcode plugin
 
 <div class="info" markdown="1">
 
@@ -29,7 +35,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-The Barcode Plugin works with native mobile apps and lets users of the app scan 1D and 2D barcodes. Set the options in the plugin to customize the scanner, add instructions, or change the camera direction.
+The Barcode plugin works with native mobile apps and lets users of the app scan 1D and 2D barcodes. Set the options in the plugin to customize the scanner, add instructions, or change the camera direction.
 
 <div class="info" markdown="1">
 
@@ -118,7 +124,7 @@ The following list shows which barcode formats the plugin can read.
 
 (**) Not Supported in Android with ML Kit.
 
-#### Important notes about Android Libraries
+#### Important notes about Android libraries
 
 * ML Kit gets better results for most codes (for example, with blurred images).
 * ML Kit can read codes that are rotated (for example, 90º), while ZXing can't.
@@ -141,6 +147,7 @@ Here is the list of parameters you can use in the plugin actions.
 | **Hint** | **Only applies to PWA/Web**. A code format of type `{Formats Identifier}`. If set, it only scans codes of the specified format. |
 | **ScannerFPS** | **Only applies to PWA/Web**. A direct mapping to HTML5Qr-Code `fps`. This number represents the number of frames per second the scanner reads and thus scans a code. Values over (and including) 1000 are not recommended as they will break the app. |
 | **AndroidScanningLibrary** | **Only applies to Android**. Defines which Android library to use when scanning - ML Kit or ZXing. |
+| **AccessibilityLabels** | **Doesn't apply to PWA/Web**. Sets the accessibility labels (alternative text) that screen readers announce for the scanner's Cancel and Torch buttons. It's a structure with the attributes **CancelButton**, **TorchButtonOn** (used while the torch is on), and **TorchButtonOff** (used while the torch is off). Any attribute left empty means no label is set for that button, keeping the default behavior. |
 
 The Barcode Plugin uses a Cordova plugin. For more information, refer to [cordova-outsystems-barcode](https://github.com/OutSystems/cordova-outsystems-barcode).
 
@@ -168,9 +175,9 @@ Also, on some devices, it's not possible to scan certain codes. The following ar
 * Specify the code format with the **Hint** input parameter.
 * Increase the number of FPS (max 1000, and this value is not recommended) passed in the **ScannerFPS** input parameter.
 
-### ScanOrientation has no effect in tablets on Android 16 and above
+### `ScanOrientation` Parameter has no effect in tablets on Android 16 and above
 
-For apps that target Android 16 or above running on tablets, the **ScanOrientation** input parameter of the **ScanBarcode** client action has no effect.
+For apps targeting Android 16 or later on tablets, the **ScanOrientation** input parameter of the **ScanBarcode** client action has no effect.
 
 ______________________________________________________________
 _QR CODE is a registered trademark of Denso Wave Incorporated._

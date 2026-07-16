@@ -218,6 +218,7 @@ exceptions:
   - Amazon EKS
   - Amazon Kendra
   - Android
+  - Safari Web Inspector
   - CALL
   - Google
   - Google Cloud
@@ -268,16 +269,16 @@ exceptions:
   - SELECT
   - XSS
   - CSV
-  - Firebase Cloud Messaging
+  - Firebase Cloud Messaging plugin
   - Firebase Performance
   - Platform Tab in Oracle
   - Privacy Policy file
-  - Health and Fitness Plugin
+  - Health and Fitness plugin
   - HealthKit
   - Health Connect
   - Firebase Analytics
   - Firebase Crashlytics
-  - SSL Pinning
+  - SSL Pinning plugin
   - OpenTelemetry Collector
   - Amazon Bedrock
   - IBM
@@ -290,10 +291,9 @@ exceptions:
   - Visual Studio Code
   - .NET
   - NuGet
-  - Key Store Plugin
-  - Camera Plugin
+  - Key Store plugin
+  - Camera plugin
   - SAML
-  - Plugin Manager
   - Phosphor
   - Font Awesome
   - Oracle

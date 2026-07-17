@@ -760,6 +760,7 @@
         - href: integration-with-systems/mobile-plugins/file-viewer-plugin/intro.md
         - href: integration-with-systems/mobile-plugins/firebase/intro.md
         - topics:
+            - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-messaging-ref.md
             - href: integration-with-systems/mobile-plugins/firebase/firebase-messaging.md
             - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-messaging-plugin-configurator-api.md
             - href: integration-with-systems/mobile-plugins/firebase/firebase-cloud-api-v1-v2.md

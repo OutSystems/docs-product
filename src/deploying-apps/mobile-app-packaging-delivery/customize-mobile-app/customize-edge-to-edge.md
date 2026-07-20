@@ -8,6 +8,9 @@ platform-version: o11
 figma: https://www.figma.com/design/RizSdkiVSDYFb97Vqvc7oj/Delivering-Mobile-Apps?node-id=5027-4
 audience:
   - Developer
+coverage-type:
+  - remember
+  - apply
 outsystems-tools:
   - service studio
 isautopublish: true

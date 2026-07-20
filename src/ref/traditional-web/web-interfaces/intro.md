@@ -7,7 +7,7 @@ app_type: traditional web apps
 platform-version: o11
 figma:
 coverage-type:
-  - none
+  - remember
 ---
 
 # Web Interfaces

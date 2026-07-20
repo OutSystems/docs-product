@@ -14,6 +14,7 @@ audience:
 outsystems-tools:
   - platform server
 coverage-type:
+  - understand
 ---
 # Preventing stale cache
 

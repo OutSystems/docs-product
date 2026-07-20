@@ -8,6 +8,8 @@ platform-version: o11
 figma: https://www.figma.com/design/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?node-id=2919-812
 audience:
   - Platform administrator
+coverage-type:
+  - apply
 outsystems-tools:
   - service center
 isautopublish: true

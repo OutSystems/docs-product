@@ -8,8 +8,12 @@ platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5459-240
 audience:
   - Developer
+coverage-type:
+  - understand
+  - evaluate
 outsystems-tools:
   - service studio
+isautopublish: true
 ---
 
 # Understanding CRUD operations in O11

@@ -8,10 +8,13 @@ figma:
 tags: data types, default values, data constraints, conversion functions, outsystems 11
 audience:
   - Developer
+coverage-type:
+  - remember
 outsystems-tools:
   - none
+isautopublish: true
 ---
-# Available Data Types
+# Available data types
 
 This page describes the data types available in OutSystems, their default values and constraints, and the built-in functions to convert them into another data type.
 

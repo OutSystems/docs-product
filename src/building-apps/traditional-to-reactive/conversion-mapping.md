@@ -7,6 +7,9 @@ tags: conversion mapping, traditional module, reactive module, convert to reacti
 audience:
   - Front-end developer
   - Developer
+coverage-type:
+  - remember
+  - understand
 outsystems-tools:
   - service studio
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=6239-107

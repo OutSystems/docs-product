@@ -1,0 +1,19 @@
+name: Evergreen
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * *'
+
+concurrency:
+  group: evergreen-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  metadata-refresh:
+    name: Metadata
+    uses: OutSystems/tk-cicd/.github/workflows/evergreen-metadata.yml@main
+    with:
+      path: "src"
+      required-key: "guid"
+    secrets: inherit

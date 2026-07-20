@@ -7,6 +7,10 @@ platform-version: o11
 figma:
 coverage-type:
   - none
+tags: Mobile app,Programming Model,Traditional Web,Web
+isautopublish: true
+outsystems-tools:
+  - none
 ---
 
-# OutSystems Language
+# OutSystems language

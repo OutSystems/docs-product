@@ -7,6 +7,10 @@ platform-version: o11
 figma:
 coverage-type:
   - none
+audience:
+  - Developer
+  - Front-end developer
+isautopublish: true
 ---
 
 # Reference

@@ -169,7 +169,8 @@ Depending on the RabbitMQ used by the Platform Server, you can upgrade to either
 
 The following are the minimum Patch versions of RabbitMQ Server and Erlang per Platform Server version:
 
-* For Platform Server 11.38.0 and higher: RabbitMQ Server 4.1.2 and Erlang version 27.3.4
+* For Platform Server 11.42.1 and higher: RabbitMQ Server 4.3.2 and Erlang version 27.3.4
+* From Platform Server 11.38.0 to 11.42.0: RabbitMQ Server 4.1.2 and Erlang version 27.3.4
 * From Platform Server 11.27.0 to 11.37.0: RabbitMQ Server 3.13.0 and Erlang version 26.2.2
 * From Platform Server 11.19.0 to 11.26.0: RabbitMQ Server 3.10.14 and Erlang version 25.1.2
 * From Platform Server 11.15.0 to 11.18.1: RabbitMQ Server 3.9.11 and Erlang version 24.2

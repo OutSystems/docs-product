@@ -7,6 +7,9 @@ platform-version: o11
 figma:
 coverage-type:
   - none
+audience:
+  - Developer
+  - Front-end developer
 tags: ui patterns, numbers widget, counters, notifications, progress indicators
 outsystems-tools:
   - none

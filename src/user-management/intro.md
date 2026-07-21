@@ -10,6 +10,9 @@ coverage-type:
   - none
 outsystems-tools:
   - user management app
+audience:
+  - Architect
+  - Developer
 ---
 # User management
 

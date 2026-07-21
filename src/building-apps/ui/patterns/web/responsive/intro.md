@@ -11,5 +11,8 @@ tags: responsive design, ui patterns, web apps, mobile apps, outsystems 11
 outsystems-tools:
   - none
 isautopublish: true
+audience:
+  - Developer
+  - Front-end developer
 ---
 # Responsive

@@ -1,5 +1,5 @@
 ---
-summary:
+summary: REST APIs in OutSystems 11 (O11) enable data exchange and API integration for traditional web, mobile, and reactive web apps.
 tags: rest apis, web services, api integration, data exchange, application development
 locale: en-us
 guid: 624479ed-e9da-4ac8-a41b-e56811306623

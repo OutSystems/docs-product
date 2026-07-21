@@ -1,5 +1,5 @@
 ---
-summary:
+summary: OutSystems 11 (O11) Utilities UI patterns for Traditional Web Apps include Animate, Iframe, Fieldset, Flip Content, Stacked Icon, and more.
 locale: en-us
 guid: 8bda2515-3ffc-4939-9cf2-7c2605ac0e7a
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Data modeling in OutSystems 11 (O11) covers entities, attributes, and relationships used to structure and persist application data.
 tags: database modeling, data structures, entity relationships, application development, database support
 locale: en-us
 guid: 2c9d7652-4547-4340-b562-fbb81a88dfed

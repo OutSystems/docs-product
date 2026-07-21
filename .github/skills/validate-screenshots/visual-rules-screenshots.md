@@ -47,6 +47,40 @@ The skill uses this file as a checklist. Each rule has:
   surface suffix), `emanuel-rodrigues-ss-odcs.png` (double suffix),
   `action1-ss.png` (suffix says Service Studio but image shows ODC Studio).
 
+**What genuine `-sa` (Sample app) content looks like:** unlike the other
+suffixes, `-sa` doesn't correspond to a single OutSystems tool's chrome — it's
+the generated business app itself, running standalone. Use these traits to
+catch a suffix-vs-content mismatch:
+
+* No OutSystems IDE or Portal chrome (no Service Studio/ODC Studio toolbars,
+  no ODC Portal navigation, no OutSystems logo).
+* Generic business-app UI: forms, tables, card grids, dashboards, or
+  master-detail views, populated with synthetic placeholder data (fake
+  names, fake companies, generic business objects like orders, playlists, or
+  onboarding tasks).
+* The accent color varies per screenshot (blue, pink, green, etc.) because
+  each generated sample app can have its own theme — don't flag this as
+  inconsistent theme across images.
+* Usually cropped tight to the app content (no browser or OS window chrome)
+  with the TK-shadow border applied per rule 6.
+* The app's own native accent-colored borders or selected-row states (for
+  example, a pink outline on a selected row in a pink-themed app) are part
+  of the app's UI, not a design-system highlight — same exemption logic as
+  rule 3's native red UI list. Don't flag these as a wrong-colored highlight.
+
+* **Pass example:** `sample-dashboard-sa.png`, `sample-table-sa.png`,
+  `sample-card-gallery-sa.png` (all generic generated-app UI, no IDE chrome,
+  TK-shadow border visible).
+* **Fail example (content-only reference, filename not changed):**
+  `consume-best-practices-default-values-diag.png` — a genuine Sample app
+  form screenshot filed under `-diag` instead of `-sa`.
+* **Ambiguous case flagged during calibration:** `gemini-gem-mentor-prompt-coach-sa.png`
+  shows Google Gemini's chat UI (full macOS browser chrome, dark theme, no
+  TK-shadow border), not a generated OutSystems app. It doesn't match any of
+  the traits above — flag `-sa` files like this for the content owner to
+  confirm the suffix is correct rather than treating it as a reference
+  example.
+
 ## 3. Highlight — red rectangle outline on the focal element
 
 * **Severity:** ❌ when the screenshot illustrates a specific click or focused

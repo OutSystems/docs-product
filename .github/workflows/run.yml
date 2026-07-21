@@ -8,6 +8,7 @@ on:
     - main
   pull_request:
     types: [opened, edited, synchronize, reopened, labeled, unlabeled, ready_for_review, converted_to_draft]
+  merge_group:
 
 concurrency:
   group: run-${{ github.ref }}

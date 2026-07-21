@@ -50,7 +50,7 @@ SUFFIX_LABELS = {
     "sol": "Solutions",
     "is": "Integration Studio",
     "uidp": "Users IdP component",
-    "shc": "Self-hosted controller",
+    "shc": "Self-hosted configurator",
 }
 
 

@@ -11,6 +11,9 @@ tags: Mobile app,Programming Model,Traditional Web,Web
 isautopublish: true
 outsystems-tools:
   - none
+audience:
+  - Developer
+  - Tech lead
 ---
 
 # OutSystems language

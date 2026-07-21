@@ -7,6 +7,11 @@ platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6368
 coverage-type:
   - apply
+tags:
+  - Authentication
+  - Authorization
+  - Data
+  - External Databases
 ---
 
 # Microsoft Dataverse integration

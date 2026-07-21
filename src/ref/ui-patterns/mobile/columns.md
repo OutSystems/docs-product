@@ -1,5 +1,12 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags:
+  - CSS
+  - Front-End
+  - Layouts
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
 summary: Explore the layout and classes of the Columns UI Pattern in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: eea3c672-9d43-448e-bb20-021cde37af18

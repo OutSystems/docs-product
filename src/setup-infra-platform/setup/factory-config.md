@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Factory Configuration for OutSystems 11 (O11) manages shared configurations, platform settings, and persistent web.config changes across eSpaces.
 tags: configuration management, service center, outsystems configurations, web.config, asp.net
 guid: 13ecad2b-bfc4-47c7-9aec-7f3e2e8c15c3
 locale: en-us

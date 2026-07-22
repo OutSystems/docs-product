@@ -15,6 +15,9 @@ platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=612%3A347&mode=design&t=xOFe93sVU3cU3chE-1
 coverage-type:
   - none
+audience:
+  - Developer
+  - Front-end developer
 ---
 
 # Columns Reference

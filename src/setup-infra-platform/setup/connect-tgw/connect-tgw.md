@@ -9,6 +9,8 @@ platform-version: o11
 figma: https://www.figma.com/file/cPLNnZfDOZ1NX3avcjmq3g/Enterprise%20Customers?node-id=618:32
 coverage-type:
   - apply
+audience:
+  - Platform administrator
 ---
 
 # Connect to your OutSystems Cloud using AWS Transit Gateway

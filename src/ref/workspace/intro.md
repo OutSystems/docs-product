@@ -1,4 +1,6 @@
 ---
+audience:
+  - Developer
 tags: Mobile app,Programming Model,Traditional Web
 summary: Reference information on top-level elements like modules, belonging to web applications and mobile apps.
 locale: en-us

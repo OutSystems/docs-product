@@ -1,7 +1,7 @@
 ---
 tags:
   - Accessibility
-  - CSS
+  - Events
   - Front-End
   - Mobile app
   - OutSystems UI
@@ -126,6 +126,12 @@ Avoid using the Carousel inside patterns with swipe events, such as the **Tabs**
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
 Starting with OutSystems UI version **2.29.0**, the **Carousel** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
+
+<div class="info" markdown="1">
+
+When you place **Image** widgets directly inside the Carousel, the images are accessible through their **alt text** but aren't exposed as a list. To expose them as an accessible list, enclose each **Image** in a **Container**: the Container becomes the list item, so screen readers announce the images as a list of items and let users navigate them accordingly, while each image keeps its own image semantics and alt text.
+
+</div>
 
 <div class="info" markdown="1">
 

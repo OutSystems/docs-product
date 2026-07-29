@@ -1,18 +1,24 @@
 ---
-summary: Learn how to integrate contact access in your applications using the Calendar Plugin in OutSystems O11 (O11).
-tags: calendar, contacts, plugin installation, error handling
+summary: Calendar Plugin for OutSystems 11 (O11) mobile apps lets you create, delete, and find device calendar events with iOS permission setup.
+tags:
+  - Events
+  - iOS
+  - Mobile app
+  - Native App
+  - Plugins
 locale: en-us
 guid: 1b5a1418-e474-41d8-a233-4f0a80130aa7
 app_type: mobile apps
-figma: 
+figma:
 audience:
   - Developer
   - Front-end developer
 platform-version: o11
 coverage-type:
-  - none
+  - apply
 outsystems-tools:
   - service studio
+isautopublish: true
 ---
 
 # Calendar plugin
@@ -123,7 +129,7 @@ The following actions help you handle errors. Use these actions with **If** node
 
 ## Actions
 
-The following actions are available in the plugin. For more information, see [Calendar-PhoneGap-Plugin](https://github.com/OutSystems/Calendar-PhoneGap-Plugin/tree/outsystems).
+The following actions are available in the plugin. For more information, see [cordova-outsystems-calendar](https://github.com/ionic-team/cordova-outsystems-calendar).
 
 | Action                 | Description                                                                                 |
 | :--------------------- | :------------------------------------------------------------------------------------------ |
@@ -142,4 +148,5 @@ The table shows the compatibility of the Calendar Plugin with the Mobile Apps Bu
 
 | Plugin version  | Compatible with MABS version | Notes |
 | :-------------- | :--------------------------- | :---- |
+| 4.0.0 and later | MABS 11.2 and later.         |       |
 | 3.1.6 and later | MABS 11.0 and later.         |       |

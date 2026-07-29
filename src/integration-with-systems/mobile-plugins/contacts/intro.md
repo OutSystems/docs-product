@@ -1,18 +1,22 @@
 ---
-summary: Learn how to integrate contact access in your applications using the Contacts Plugin in OutSystems O11 (O11).
-tags: contacts, plugin installation, error handling
+summary: 'Contacts Plugin for OutSystems 11 (O11) mobile apps: add, find, pick, and remove device contacts using Service Studio client actions.'
+tags:
+  - iOS
+  - Mobile app
+  - Plugins
 locale: en-us
 guid: 777b0874-e06c-4ff3-8d62-a973e1866f9f
 app_type: mobile apps
-figma: 
+figma:
 audience:
   - Developer
   - Front-end developer
 platform-version: o11
 coverage-type:
-  - none
+  - apply
 outsystems-tools:
   - service studio
+isautopublish: true
 ---
 
 # Contacts plugin
@@ -95,7 +99,9 @@ To let the user select a contact using the device's native contact picker, use t
 
 To remove a contact from the device's contact list, use the **RemoveFromContacts** action.
 
-You must provide the **Contact** input parameter. Typically, you first retrieve this contact by calling **FindContact** or **PickContact**.
+Starting on version 5.0.0 of the plugin, you can simply provide the **ContactId** input parameter. For older verisions, you must provide the **Contact** input parameter. Typically, you first retrieve this contact by calling **FindContact** or **PickContact**.
+
+If you are using version 5.0.0 or later but still wish to remove the contact by providing the full Contact object, you can use the **DEPRECATED_RemoveFromContacts** client action.
 
 ## Handling errors
 
@@ -113,7 +119,7 @@ The following actions help you handle errors. Use these actions with **If** node
 
 ## Actions
 
-The following actions are available in the plugin. For more information, see [cordova-plugin-contacts](https://github.com/OutSystems/cordova-plugin-contacts/tree/outsystems).
+The following actions are available in the plugin. For more information, see [[cordova-outsystems-contacts](https://github.com/ionic-team/cordova-outsystems-contacts).
 
 | Action              | Description                                                                                 |
 | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -129,4 +135,5 @@ The table shows the compatibility of the Contacts Plugin with the Mobile Apps Bu
 
 | Plugin version  | Compatible with MABS version | Notes |
 | :-------------- | :--------------------------- | :---- |
+| 5.0.0 and later | MABS 11.2 and later.         |       |
 | 4.0.7 and later | MABS 11.0 and later.         |       |

@@ -232,6 +232,7 @@ exceptions:
   - AWS Firehose
   - FedRAMP
   - JSON
+  - IIS
   - IdP
   - IdPs
   - Azure

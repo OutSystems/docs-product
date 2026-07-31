@@ -74,28 +74,6 @@ With mTLS passthrough, the Application Load Balancer (ALB) forwards the caller's
 
 The following diagram shows the request flow, from the client presenting its certificate to the ALB, through header forwarding, to validation in `OnAuthentication`:
 
-<!---
-```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","messageFontSize": "14px","labelBoxBkgColor": "#F22800","labelTextColor": "#FFFFFF","noteBkgColor": "#F5F6FA","noteBorderColor": "#686E76","noteTextColor": "#0A141E"}, "themeCSS": "circle.sequenceNumber, rect.labelBox { fill: #F22800 !important; stroke: #F22800 !important; } text.sequenceNumber, text.labelText { fill: #FFFFFF !important; } g.note rect, rect.note { fill: #F5F6FA !important; stroke: #686E76 !important; } g.note text { fill: #0A141E !important; }"}}%%
-sequenceDiagram
-    autonumber
-    participant Client
-    participant ALB as Application load balancer
-    participant API as Exposed REST API
-
-    Client->>ALB: HTTPS request with client certificate
-    ALB->>API: Forward request with X-Amzn-Mtls-Clientcert header
-    Note right of API: OnAuthentication validates the header against the installed CA certificate
-    alt Certificate valid
-        API--&gt;>ALB: 200 response
-        ALB--&gt;>Client: 200 response
-    else Certificate missing or invalid
-        API--&gt;>ALB: 401 response
-        ALB--&gt;>Client: 401 response
-    end
-```
--->
-
 ![Sequence diagram showing the client sending an HTTPS request with its client certificate to the Application Load Balancer, which forwards it to the exposed REST API as an X-Amzn-Mtls-Clientcert header. OnAuthentication validates the header against the installed CA certificate and returns a 200 response if the certificate is valid, or a 401 response if it's missing or invalid.](images/mtls-diag.png "mTLS passthrough flow for exposed REST APIs")
 
 The client and load balancer steps happen automatically. Implement the following pattern in your REST API's `OnAuthentication` callback to read and validate the header, corresponding to the validation step in the diagram:

@@ -114,7 +114,7 @@ The client and load balancer steps happen automatically. Implement the following
 
     Wire your validation logic into the REST API's callback. This gates every request automatically, returning a 401 status code if the certificate is missing or invalid, before any method logic executes.
 
-## Troubleshooting hints
+## Troubleshooting hints {#troubleshoot}
 
 If the integration doesn't behave as expected, a diagnostic endpoint helps you inspect the forwarded header and understand why a certificate is accepted or rejected. This endpoint reads the `X-Amzn-Mtls-Clientcert` header and returns its raw value alongside the validation result.
 

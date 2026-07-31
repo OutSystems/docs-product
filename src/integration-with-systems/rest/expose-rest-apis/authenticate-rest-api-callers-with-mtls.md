@@ -23,7 +23,7 @@ helpids:
 isautopublish: true
 ---
 
-# Authenticate REST API callers with mTLS client certificates
+# Authenticate REST API callers with TLS client certificates over mTLS
 
 <div class="info" markdown="1">
 

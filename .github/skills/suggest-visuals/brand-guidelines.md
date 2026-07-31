@@ -4,12 +4,9 @@
 
 | Token | Hex | Usage |
 | --- | --- | --- |
-| red | #F22800 | Request arrows, "No" labels, warning/error nodes, end/stop node border, icons |
-| blue | #1783EF | Response arrows, app/service nodes, secondary elements |
-| green | #00802D | Start node border, "Yes" labels |
 | light-grey1 | #F5F6FA | Container/subgraph backgrounds (zones, clusters) |
 | light-grey3 | #979CA2 | Text on connector/arrow labels |
-| dark-grey | #686E76 | Arrow color, node borders |
+| dark-grey | #686E76 | Arrow color, node borders (start, stop, process, decision, error), sequence autonumber circles |
 | dark | #0A141E | Primary node text |
 | white | #FFFFFF | Node fill (default), canvas background |
 
@@ -85,12 +82,12 @@ Use this at the top of EVERY diagram:
 Define these classDefs at the top of every flowchart:
 
 ```
-classDef start      fill:#FFFFFF,stroke:#00802D,color:#0A141E
-classDef stop       fill:#FFFFFF,stroke:#F22800,color:#0A141E
+classDef start      fill:#FFFFFF,stroke:#686E76,color:#0A141E
+classDef stop       fill:#FFFFFF,stroke:#686E76,color:#0A141E
 classDef process    fill:#FFFFFF,stroke:#686E76,color:#0A141E
-classDef decision   fill:#FFFFFF,stroke:#1783EF,color:#0A141E
+classDef decision   fill:#FFFFFF,stroke:#686E76,color:#0A141E
 classDef container  fill:#F5F6FA,stroke:#686E76,color:#0A141E
-classDef error      fill:#FFFFFF,stroke:#F22800,color:#0A141E
+classDef error      fill:#FFFFFF,stroke:#686E76,color:#0A141E
 ```
 
 Apply them with: `class NodeId className`
@@ -104,9 +101,9 @@ Use rounded shapes for `process` nodes — write `NodeId(Label):::process` inste
 * `NodeId{Label}` — diamond, use for `:::decision` nodes
 * `NodeId[Label]` — sharp rectangle, reserved for external system or data-store nodes when a visual distinction is needed
 
-### Semantic color rules
+### Semantic node classes
 
-Each class has a fixed semantic meaning — do not repurpose colors to indicate state:
+All node classes share the same neutral color; distinguish them by shape and class name, not color. Each class has a fixed semantic meaning — do not repurpose a class to indicate state:
 
 | Class | When to use | When NOT to use |
 | --- | --- | --- |
@@ -122,11 +119,9 @@ To show that a component is unavailable in an architecture diagram, use a dashed
 ## Edge / arrow rules
 
 * Default arrows: color `#686E76` (handled by `lineColor` in themeVariables)
-* Request/action arrows: label text in `#979CA2`; add `%% red flow` comment for semantic clarity
-* Response arrows: label text in `#979CA2`; add `%% blue flow` comment
-* Yes/No labels on decision branches:
-    * Yes → `|Yes|` with green-styled target node
-    * No → `|No|` with red-styled target node (error/warning class)
+* Request/action arrows: label text in `#979CA2`; add `%% request flow` comment for semantic clarity
+* Response arrows: label text in `#979CA2`; add `%% response flow` comment
+* Yes/No labels on decision branches: distinguish branches only by the `Yes`/`No` edge label text; target nodes use standard `:::process` styling, with no color-coding
 * Connector label font size: 14px — wrap the label in an HTML span:
   `-->|"<span style='font-size:14px'>label text</span>"|`
 
@@ -151,10 +146,10 @@ If the relationship must be described, use one of these alternatives:
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","secondaryColor": "#FFFFFF","clusterBkg": "#F5F6FA","clusterBorder": "#686E76"}, "flowchart": {"subGraphTitleMargin": {"top": 16, "bottom": 16}}}}%%
 flowchart TD
-    classDef start    fill:#FFFFFF,stroke:#00802D,color:#0A141E
-    classDef stop     fill:#FFFFFF,stroke:#F22800,color:#0A141E
+    classDef start    fill:#FFFFFF,stroke:#686E76,color:#0A141E
+    classDef stop     fill:#FFFFFF,stroke:#686E76,color:#0A141E
     classDef process  fill:#FFFFFF,stroke:#686E76,color:#0A141E
-    classDef decision fill:#FFFFFF,stroke:#1783EF,color:#0A141E
+    classDef decision fill:#FFFFFF,stroke:#686E76,color:#0A141E
 
     S([Start]):::start --> A(Step One):::process
     A --> B{Is condition met?}:::decision
@@ -166,12 +161,12 @@ flowchart TD
 
 ### Sequence diagram (multi-actor interaction)
 
-When using `autonumber`, add `"labelBoxBkgColor": "#F22800"` and `"labelTextColor": "#FFFFFF"` to themeVariables so the numbered circles render in OutSystems red with white text. Always include `noteBkgColor`, `noteBorderColor`, and `noteTextColor` so `Note over` boxes use the OutSystems palette instead of Mermaid's default yellow.
+When using `autonumber`, add `"labelBoxBkgColor": "#686E76"` and `"labelTextColor": "#FFFFFF"` to themeVariables so the numbered circles render in OutSystems dark-grey with white text. Always include `noteBkgColor`, `noteBorderColor`, and `noteTextColor` so `Note over` boxes use the OutSystems palette instead of Mermaid's default yellow.
 
 Some Mermaid renderers (notably VS Code's built-in Markdown preview) ignore these theme variables. Include a `themeCSS` block that targets the underlying CSS classes as a defensive override — it wins where theme variables don't.
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","messageFontSize": "14px","labelBoxBkgColor": "#F22800","labelTextColor": "#FFFFFF","noteBkgColor": "#F5F6FA","noteBorderColor": "#686E76","noteTextColor": "#0A141E"}, "themeCSS": "circle.sequenceNumber, rect.labelBox { fill: #F22800 !important; stroke: #F22800 !important; } text.sequenceNumber, text.labelText { fill: #FFFFFF !important; } g.note rect, rect.note { fill: #F5F6FA !important; stroke: #686E76 !important; } g.note text { fill: #0A141E !important; }"}}%%
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#FFFFFF","primaryTextColor": "#0A141E","primaryBorderColor": "#686E76","lineColor": "#686E76","messageFontSize": "14px","labelBoxBkgColor": "#686E76","labelTextColor": "#FFFFFF","noteBkgColor": "#F5F6FA","noteBorderColor": "#686E76","noteTextColor": "#0A141E"}, "themeCSS": "circle.sequenceNumber, rect.labelBox { fill: #686E76 !important; stroke: #686E76 !important; } text.sequenceNumber, text.labelText { fill: #FFFFFF !important; } g.note rect, rect.note { fill: #F5F6FA !important; stroke: #686E76 !important; } g.note text { fill: #0A141E !important; }"}}%%
 sequenceDiagram
     autonumber
     participant U as User

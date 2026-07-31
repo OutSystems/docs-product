@@ -28,6 +28,7 @@ exceptions:
   - Technical Preview
   - O11
   - ODC
+  - OSPTool
   - OutSystems
   - OutSystems Cloud
   - OutSystems Developer Cloud
@@ -346,6 +347,7 @@ exceptions:
   - HTTP
   - PR
   - UI
+  - SMS
   - SOAP
   - SDK
   - QA

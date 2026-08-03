@@ -1,12 +1,12 @@
 ---
 tags:
   - Accessibility
+  - Events
   - Mobile app
   - OutSystems UI
   - Triggers
   - UI
   - UI Patterns
-  - Widgets
 summary: Learn to use the Tooltip UI pattern in OutSystems 11 (O11) for mobile and reactive web apps, available in Service Studio to display dynamic informative text.
 locale: en-us
 guid: 44f1bcc8-d2bd-4174-ae3d-8813092a4bac
@@ -55,7 +55,7 @@ To use the Tooltip UI pattern, you must use an OutSystems UI layout. If you are 
   
     The Tooltip widget is displayed.
 
-    ![Image of the Tooltip widget as it appears in the OutSystems Service Studio](images/tooltip-widget-ss.png "Tooltip Widget in Service Studio")
+    ![Screenshot of the Tooltip widget displayed in the OutSystems Service Studio Toolbox](images/tooltip-widget-ss.png "Tooltip Widget in Service Studio Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
@@ -81,11 +81,11 @@ To use the Tooltip UI pattern, you must use an OutSystems UI layout. If you are 
 
 1. Select the **Save** button and add the relevant **On Click** event.
 
-    ![Illustration of selecting the Save button and adding an On Click event in Service Studio](images/tooltip-onclick-ss.png "Adding OnClick Event to Save Button")
+    ![Screenshot of selecting the Save button and adding an On Click event in Service Studio](images/tooltip-onclick-ss.png "Adding OnClick Event to Save Button")
 
 1. On the **Properties** tab, from the **Position** dropdown, select where you want the tooltip to appear. In this example we want the tooltip to appear on top of the **Save** button. You can also change the look and feel of the Tooltip by setting the (optional) properties.
 
-    ![Image showing how to set optional properties for the Tooltip, including its position and appearance](images/tooltip-properties-ss.png "Setting Optional Properties for Tooltip")
+    ![Screenshot of the Tooltip Properties tab in Service Studio, with the Position dropdown highlighted](images/tooltip-properties-ss.png "Tooltip Properties Tab in Service Studio")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -114,8 +114,7 @@ Applies to OutSystems UI version 2.14.0 and higher.
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the Tooltip UI pattern may not be fully keyboard accessible when configured to open on hover only.  
-To ensure WCAG 2.2 AA compliance, configure the Tooltip trigger to open on click so it can be activated through keyboard interaction.
+By default, the Tooltip UI pattern isn't fully keyboard accessible when configured to open only on hover. To ensure WCAG 2.2 AA compliance, configure the Tooltip trigger to open on click, which also makes the Tooltip open on keyboard focus.
 
 ### Ensure that the trigger is set as OnClick
 
@@ -129,8 +128,12 @@ To ensure WCAG 2.2 AA compliance, configure the Tooltip trigger to open on click
 
 ### Result
 
-After completing these steps, the Tooltip can be activated through keyboard interaction.
+After completing these steps, the Tooltip behavior aligns with the [WAI-ARIA Authoring Practices Guide (APG) Tooltip pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/), which defines the following keyboard interaction.
 
-Keyboard users can open the Tooltip using `Enter` or `Space`, and close it using `Esc`, ensuring consistent and accessible behavior.
+1. Keyboard users move focus to the trigger element, for example with `Tab`, and the Tooltip opens automatically.
 
-Test the pattern in your app to confirm that the Tooltip can be triggered and dismissed using only the keyboard.
+1. The Tooltip closes when the user presses `Esc` or moves focus away from the trigger element.
+
+**Note:** The APG defines `Esc` as the key for dismissing a tooltip and doesn't define `Enter` or `Space` as valid tooltip triggers, since the Tooltip is expected to open automatically on hover or focus rather than through an explicit key press. The W3C community continues to refine parts of this pattern, so refer to the [Tooltip pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) documentation for the latest guidance.
+
+Test the pattern in your app to confirm that the Tooltip opens when the trigger element receives focus, and closes with the `Esc` key or when focus moves elsewhere.

@@ -1,6 +1,11 @@
 ---
-summary: Explore the integration of OpenTelemetry standards in OutSystems 11 (O11) for enhanced log data management across various modules and applications.
-tags: opentelemetry, logging, data management, application performance monitoring (apm), cloud configuration
+summary: OutSystems 11 (O11) OpenTelemetry log field mapping for log streaming, covering General, Error, Request Event, Cyclic Job, and other log types.
+tags:
+  - Logging
+  - Mobile app
+  - Monitoring
+  - Timers
+  - Troubleshooting
 locale: en-us
 guid: 83602415-028e-4bd2-937f-99ff473939c0
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -14,6 +19,7 @@ outsystems-tools:
   - none
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Logged data fields
@@ -75,7 +81,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |Username|log.attributes.outsystems.user.name|Text|Username relative to the authenticated session|
 |N/A|log.attributes.outsystems.log.type|Text|Type of log: Error. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
-## RequestEvent logs
+## Request event logs
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
@@ -99,7 +105,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |N/A|log.attributes.outsystems.request.event.details.tqe|Int|The total number of executed queries (Aggregates and Advanced Queries). Available from Dec 18th 2024|
 |N/A|log.attributes.outsystems.request.event.details.tqt|Int|The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). Available from Dec 18th 2024|
 
-## CyclicJob logs
+## Cyclic job logs
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
@@ -167,7 +173,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
-|Detail|log.attributes.outsystems.log.detail|Text|Detailed log information.|
+|Detail|log.body|Text|Detailed log information.|
 |DetailLabel|log.attributes.outsystems.log.detail_label|Text|Informative label about what is being logged.|
 |Id|log.attributes.outsystems.log.uid|text|Unique identifier.|
 |Instant|@timestamp|Date Time|Time of log generation in the front end (server log) or time of log generation in the mobile device (client log).|
@@ -175,7 +181,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |TenantId|log.attributes.outsystems.tenant.id|Int|ID of the tenant where the message was logged. 0 if message originates from an OutSystems service.|
 |N/A|log.attributes.outsystems.log.type|Text|Type of log: IntDetailLog. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
-## MobileRequest logs
+## Mobile request logs
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
@@ -202,7 +208,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
-|Detail|log.attributes.outsystems.log.detail|Text|Log detailed information.|
+|Detail|log.body|Text|Log detailed information.|
 |DetailLabel|log.attributes.outsystems.log.detail_label|Text|Type of detail|
 |Id|log.attributes.outsystems.log.uid|GUID|Unique identifier of the log entry.|
 |Instant|@timestamp|Date Time|Time of log generation in the front end (server log) or time of log generation in the mobile device (client log).|
@@ -237,7 +243,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 |Viewstate_bytes|log.attributes.outsystems.log.viewstate_bytes|Int|Size of the viewstate associated with this request. 0 if the request has no viewstate (GET); greater than 0 if the request is a POST or AJAX request.|
 |N/A|log.attributes.outsystems.log.type|Text|Type of log: Screen. This field can be used to differentiate the different log types. In Elastic Cloud, it is named as  `labels.outsystems_log_type`|
 
-## Service Action logs
+## Service action logs
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
@@ -267,7 +273,7 @@ The field `log.attributes.outsystems.log.type` can be used to differentiate the 
 
 |Existing data field|OpenTelemetry field|Data type|Description|
 |:-|:-|:-:|-|
-|Detail|log.attributes.outsystems.log.detail|Text|Detailed log information.|
+|Detail|log.body|Text|Detailed log information.|
 |DetailLabel|log.attributes.outsystems.log.detail_label|Text|Informative label about what is being logged.|
 |Id|log.attributes.outsystems.log.uid|text|Unique identifier.|
 |Instant|@timestamp|Date Time|Time of log generation in the front end (server log) or time of log generation in the mobile device (client log).|

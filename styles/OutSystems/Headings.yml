@@ -282,6 +282,7 @@ exceptions:
   - Firebase Analytics
   - Firebase Crashlytics
   - SSL Pinning plugin
+  - OneSignal plugin
   - OpenTelemetry Collector
   - Amazon Bedrock
   - IBM
@@ -359,6 +360,7 @@ exceptions:
   - README
   - CPU
   - SSL
+  - APNs
 # Country
   - US East
   - North Virginia

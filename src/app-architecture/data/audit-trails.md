@@ -1,5 +1,5 @@
 ---
-summary: Explore audit trail capabilities in OutSystems 11 (O11) for compliance and security monitoring.
+summary: "Audit trail architecture in OutSystems 11 (O11): business audit, platform audit, centralized patterns, and NoSQL advanced implementation."
 guid: 641a7444-c8cf-4f13-bcce-e86e0b2fd1d7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

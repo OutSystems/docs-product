@@ -1,5 +1,5 @@
 ---
-summary: Explore caching architecture patterns in OutSystems 11 (O11) to enhance application performance by using hot cache for data optimization.
+summary: Hot Cache pattern in OutSystems 11 (O11) stores pre-calculated active data to boost performance for dashboards and data-intensive use cases.
 guid: b36910c2-01cc-4e7b-95e8-9526ede4e1e3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

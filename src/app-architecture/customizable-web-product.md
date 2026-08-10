@@ -1,5 +1,5 @@
 ---
-summary: Explore customization strategies for base applications using OutSystems 11 (O11) in this detailed guide.
+summary: "OutSystems 11 (O11) base application customization: design an architecture that supports custom versions while keeping upgrades safe."
 guid: 89d76a9c-caa8-4565-878d-8c30e12b754f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

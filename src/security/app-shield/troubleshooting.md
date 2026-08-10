@@ -70,23 +70,28 @@ A list of reasons for app shutdown in Android devices.
 
 | ExitOnUrl (Decimal) | Log (Hex) | Explanation |
 | ------- | ------- | ------------------------------------------------------------------------- |
-| 00 | 00 | Device is rooted |
-| 01 | 01 | Application is modified or repackaged<br />**Note**: Removed from ExitOnUrl functionality from AppShield version 1.4.0 because it was not guaranteed to be triggered. |
-| 02 | 02 | Application is being run in an emulator<br />**Note**: Removed from ExitOnUrl functionality from AppShield version 1.4.0 because it was not guaranteed to be triggered. |
-| 03 | 03 | Java debugger attached to app |
-| 04 | 04 | Untrusted keyboard detected |
-| 05 | 05 | Untrusted screen reader detected |
-| 06 | 06 | Native code hooks, possibly inserted by malicious app |
-| 08 | 08 | Shield could not read configuration file |
-| 09 | 09 | Problem with Native Debugger Protection |
-| 25 | 19 | Problem initializing Shield |
-| 26 | 1a | Developer Options enabled on device |
-| 27 | 1b | Untrusted Installer found on device |
-| 32 | 20 | App received termination signal |
-| 33 | 21 | Application crashed outside of Java-code, either native library or Shield |
-| 34 | 22 | Hooking frameworks detected |
-| 35 | 23 | Native debugger prevention not possible on this device |
-| 50 | 32 | App started from a private space or work profile |
+| 0 | 00 | Device is rooted |
+| 1 | 01 | Application is modified or repackaged.<br />**Note**: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered. |
+| 2 | 02 | Application is being run in an emulator.<br />**Note**: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered. |
+| 3 | 03 | Java debugger attached to app |
+| 4 | 04 | Untrusted keyboard detected |
+| 5 | 05 | Untrusted screen reader detected |
+| 6 | 06 | Native code hooks detected, possibly inserted by a malicious app |
+| 8 | 08 | AppShield could not read the configuration file |
+| 9-17 | 09-11 | Problem with Native Debugger Protection |
+| 19 | 13 | Problem initializing AppShield |
+| 20 | 14 | App received a termination signal |
+| 21 | 15 | Application crashed outside of Java code, either in a native library or AppShield |
+| 22 | 16 | Hooking frameworks detected |
+| 23 | 17 | Native debugger prevention not possible on this device |
+| 27 | 1B | Untrusted installer found on device |
+| 29 | 1D | Application launched via a virtual space application |
+| 31 | 1F | Emulated input detected |
+| 32 | 20 | Application launched in a Private Space or Work Profile |
+| 33 | 21 | Device bootloader is unlocked |
+| 34 | 22 | Tapjacking event detected |
+| 35 | 23 | Code injected into the application process |
+| 37 | 25 | Device connected to a VPN |
 
 ### iOS
 

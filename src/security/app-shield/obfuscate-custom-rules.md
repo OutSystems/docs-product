@@ -13,6 +13,7 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Creating custom obfuscation rules
@@ -41,7 +42,7 @@ At a high-level, you:
 
 1. [Create your own obfuscation rules](#create-your-own-obfuscation-rules).
 
-1. Verify and encode the obfuscation rules to base64 using the OutSystems Obfuscation Helper. See: [Obfuscation Helper](#obfuscation-helper)
+1. Verify and encode the obfuscation rules to base64 using the OutSystems obfuscation helper. See: [Obfuscation helper](#obfuscation-helper)
 
 1. Add new settings to your mobile app using the Extensibility Configuration field in Service Studio. See: [Add custom obfuscation rules to your app](#add-custom-obfuscation-rules-to-your-app)
 
@@ -73,7 +74,7 @@ If you want to configure specific rules for a custom plugin, you can also add th
 
 ## Create your own obfuscation rules
 
-To begin, use your favorite editor to create your rules. Or try our editor, which has a validation feature for custom obfuscation rules. For more information, see the [Obfuscation Helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/).
+To begin, use your favorite editor to create your rules. Or try our editor, which has a validation feature for custom obfuscation rules. For more information, see the [Obfuscation helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/).
 
 Be sure to include [OutSystems obfuscation base rules](
 resources/default-obfuscation-rules.txt). Base rules are a set of mandatory obfuscation rules that guarantee that the obfuscation process correctly obfuscates native code from the shell and OS-supported plugins. When you're defining custom rules for non-supported plugins, you must include OutSystems Obfuscation rules.
@@ -95,10 +96,14 @@ obfuscate class *;
 
 The following table shows how you can match classes, fields, and methods in an exclusion declaration to obfuscate specific parts of the app.
 
-| Class_operation (class_op) | Opposite of | Description                                        |
+| Class_operation (class_op) | Opposite of | Description |
 | -------------------------- | ----------- | -------------------------------------------------- |
-| match                      |             | Specify the rules to operate on a given class      |
-| preserve                   | obfuscate   | Specify a class member to exclude from obfuscation |
+| match | | Specify the rules to operate on a given class |
+| obfuscate | preserve | Specify a class member to select or exclude from obfuscation |
+| bind | unbind | Select classes or members to bind or exclude from binding. |
+| removeDebug | keepDebug | Select classes or members from which to remove or keep debug information. |
+| removeLines | keepLines | Select classes or members from which to remove or keep line numbers. |
+| removeSourceFile | keepSourceFile | Select classes from which to remove or keep the source file name. |
 
 ### Obfuscation syntax example
 
@@ -173,9 +178,9 @@ The following is a list of the specifiers with a short description.
 **return_type**
 :    void, primitive or fully qualified name of a java class. Supports wildcards.
 
-## Obfuscation Helper
+## Obfuscation helper
 
-Using the Obfuscation [Helper tool](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/) you can verify the syntax of your custom obfuscation rules and encode them in a base64 format. The Helper tool automatically checks your rules, encodes your script, and defines the value of your AppShieldObfuscationRules in the Extensibility Configuration.
+Using [Obfuscation helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/) you can verify the syntax of your custom obfuscation rules and encode them in a base64 format. The Helper tool automatically checks your rules, encodes your script, and defines the value of your `AppShieldObfuscationRules` in the extensibility configurations.
 
 ## Additional syntax guidance
 
@@ -211,16 +216,16 @@ To enable custom code obfuscation, follow these steps to add a property to the E
 
 <div class="info" markdown="1">
 
-Optionally, you can use the [Obfuscation Helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/) to verify the syntax of your custom obfuscation rules and encode them in a bae64 format.
+Optionally, you can use the [Obfuscation helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/) to verify the syntax of your custom obfuscation rules and encode them in a bae64 format.
 
 </div>
 
 ## Generate your app and try it out
 
-After you add your AppShieldObfuscationRules preference and value, you must perform a new build. The new build activates your custom obfuscation.
+After you add your `AppShieldObfuscationRules` preference and value, you must perform a new build. The new build activates your custom obfuscation.
 
 The code obfuscation process generates a mapping file that maps original names to obfuscated names. With this file, developers can de-obfuscate backtraces from the app. To get a mapping file you need to contact OutSystems support.
 
-If you have a syntax error on your custom obfuscation rules, the base64 encoding of your file propagates the error and the build fails. Verify the syntax of your custom obfuscation rules is correct. You can use Code Obfuscation Helper tool which provides a validator for the syntax of your custom code obfuscation rules and an encoder to base64. If you write your code using the code editor, after each input, the validator runs. Upon completion, a success or error message displays.
+If you have a syntax error on your custom obfuscation rules, the base64 encoding of your file propagates the error and the build fails. Verify the syntax of your custom obfuscation rules is correct. You can use Obfuscation helper which provides a validator for the syntax of your custom code obfuscation rules and an encoder to base64. If you write your code using the code editor, after each input, the validator runs. Upon completion, a success or error message displays.
 
 If you have a runtime error caused by the obfuscation, have someone on your team review the device logs.

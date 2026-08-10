@@ -12,6 +12,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - understand
   - evaluate
 topic:
   - scale-development-strategy

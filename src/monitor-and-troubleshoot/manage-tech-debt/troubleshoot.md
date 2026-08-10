@@ -52,7 +52,7 @@ The number of issues listed in AI Mentor Studio is inconsistent across views. Fo
 
 This may occur if you change the target environment of the code analysis probe without first deleting data from AI Mentor Studio. Before you change the target environment, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data. Then follow the [setup procedure](how-setup.md) to configure the new target environment.
 
-## IT User login issues
+## IT User login issues {#it-user-login-issues}
 
 When attempting to log into AI Mentor Studio using your IT User account, you might get the following error message:
 

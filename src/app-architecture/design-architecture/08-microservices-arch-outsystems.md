@@ -1,5 +1,5 @@
 ---
-summary: Explore microservices architecture in OutSystems 11 (O11), detailing its implementation, benefits, and lifecycle management.
+summary: Microservices architecture in OutSystems 11 (O11) decouples services via REST API, covering Extended Services, versioning strategies, and infrastructure isolation scenarios.
 guid: 2a701988-2780-4aff-954c-a88fb24ff10f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

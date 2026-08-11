@@ -1,5 +1,5 @@
 ---
-summary: Explore how OutSystems 11 (O11) manages application themes to ensure consistent enterprise look & feel while allowing customization.
+summary: "OutSystems 11 (O11) Theme module architecture for enterprise apps: global theme reuse vs. independent themes, each with CSS, layout blocks, and login flows."
 guid: 5a065377-1843-4d63-b7b9-135f9de77886
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

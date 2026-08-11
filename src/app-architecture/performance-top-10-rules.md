@@ -1,5 +1,5 @@
 ---
-summary: Explore performance optimization best practices for OutSystems 11 (O11) to enhance application speed and efficiency.
+summary: OutSystems 11 (O11) performance optimization rules covering entity indexing, query tuning, screen preparation, and data fetching best practices.
 guid: 5ec53f32-ba14-4732-bbdf-44b8588c5fd2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

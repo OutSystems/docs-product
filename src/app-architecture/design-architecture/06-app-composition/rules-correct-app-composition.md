@@ -5,7 +5,13 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1735&t=WkNS4cBkPZHvTban-1
-tags: application composition, application architecture, software deployment, software modularity
+tags:
+  - Architecture
+  - Best Practices
+  - Deploy
+  - Development lifecycle
+  - Lifecycle
+  - Modular Programming
 audience:
   - Architect
   - Developer

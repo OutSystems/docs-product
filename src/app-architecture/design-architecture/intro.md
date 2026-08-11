@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: architecture canvas, service-oriented architecture, microservices, architectural patterns, best practices
+tags:
+  - Architecture
+  - Best Practices
+  - Microservices
 audience:
   - Developer
   - Front-end developer

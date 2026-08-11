@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) introduces features that support Domain Driven Design (DDD) to help users architect complex systems effectively.
-tags: domain driven design, application architecture, system complexity, decomposition, design patterns
+tags:
+  - Architecture
+  - Best Practices
+  - Domains
+  - Microservices
+  - Modular Programming
+  - Programming Model
 guid: 0ed36ce5-66fe-4507-ba42-a554c522e0ca
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

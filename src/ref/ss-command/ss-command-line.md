@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Service Studio command line
@@ -35,7 +36,7 @@ To use the commands, on the CLI first navigate to your Service Studio installati
 
 And precede any command by `servicestudio.exe` and a space, for example: `servicestudio.exe -merge`.
 
-The syntax is composed of a **command** and it’s **arguments**. The command defines the functionality such as merging two modules. The arguments represent inputs necessary to each switch such as the version of the modules to be merged.
+The syntax is composed of a **command** and its **arguments**. The command defines the functionality such as merging two modules. The arguments represent inputs necessary to each switch such as the version of the modules to be merged.
 
 ## Summary of available commands
 
@@ -53,7 +54,7 @@ The syntax is composed of a **command** and it’s **arguments**. The command de
 
 ## Commands
 
-### -create { #create }
+### -create {#create}
 
 Opens the Service Studio dialog to create a new application.
 
@@ -71,7 +72,7 @@ Syntax
 | `-userName <user>` | Optional | The username used to connect to Service Studio | DevDave |
 | `-password <password>` | Optional | The password that corresponds to the provided username | mypassword |
 
-### -diff { #diff }
+### -diff {#diff}
 
 Opens two locally saved modules at the [**Compare and Merge**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Merge_the_Work/Compare_and_merge_example_with_conflicts) window. This command will not attempt to merge the modules and you'll have to select each element to merge . To attempt to merge the modules automatically, use [-merge](#merge) instead.
 
@@ -84,7 +85,7 @@ Syntax
 | `localESpace.oml` | Mandatory | Source module to use in the comparison. This is the module that will appear on the left side of the **Compare and Merge** dialog, labeled as **Your version**. | C:\Program Files\OutSystems\ComponentsCore.oml |
 | `foreignESpace.oml` | Mandatory | Target module to use in the comparison. This is the module that will appear on the right side of the **Compare and Merge** dialog, labeled as **The other version**. | C:\Program Files\OutSystems\ComponentsCore2.oml |
 
-### espace { #espace }
+### espace {#espace}
 
 Opens a locally saved module, the file must have an `.oml` file type.
 As a result, Service Studio opens and the module provided is loaded.
@@ -97,7 +98,7 @@ Syntax
 | --- | --- | --- | --- |
 | `Module_path.oml` | Mandatory | The path to a locally saved module | C:\Program Files\OutSystems\ComponentsCore.oml |
 
-### -exportSettings { #export-settings }
+### -exportSettings {#export-settings}
 
 Exports a settings file that contains all the preferences and saved connection details of Service Studio. This file can then be used on the -importSettings command to import the settings to another Service Studio installation.
 
@@ -109,7 +110,7 @@ Syntax
 | --- | --- | --- | --- |
 | `settings.xml` | Mandatory | The path where to save the exported settings file. You can chose the name of the settings file to your preference but the file must have the .xml extension. | "C:\Program Files\Mysettings.xml" |
 
-### -importSettings { #import-settings }
+### -importSettings {#import-settings}
 
 Imports an .xml file with all the all the preferences and saved connection details of Service Studio. This file was exported by the -exportSettings command.
 
@@ -121,7 +122,7 @@ Syntax
 | --- | --- | --- | --- |
 | `settings.xml` | Mandatory | The path to the settings file to import into Service Studio. | "C:\Program Files\Mysettings.xml" |
 
-### -merge { #merge }
+### -merge {#merge}
 
 Attempts to merge two locally saved modules. The  [**Compare and Merge**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Merge_the_Work/Compare_and_merge_example_with_conflicts) window will open and the elements that can be merged will be selected.
 
@@ -134,7 +135,7 @@ Syntax
 | `localESpace.oml` | Mandatory | Source module to use in the comparison. This is the module that will appear on the left side of the **Compare and Merge** dialog, labeled as **Your version**. | C:\Program Files\OutSystems\ComponentsCore.oml |
 | `foreignESpace.oml` | Mandatory | Target module to use in the comparison. This is the module that will appear on the right side of the **Compare and Merge** dialog, labeled as **The other version**. | C:\Program Files\OutSystems\ComponentsCore2.oml |
 
-### -openModuleFromUrl { #open-module-from-url }
+### -openModuleFromUrl {#open-module-from-url}
 
 Opens a module stored in a remote location accessible via an url. Service Studio launches, downloads the module from the url provided, and opens it locally.
 
@@ -146,7 +147,7 @@ Syntax
 | --- | --- | --- | --- |
 | `url.oml` | Mandatory | The path to the remote location of the module. | <https://www.example.com/MyModule.oml> |
 
-### -refresh { #refresh }
+### -refresh {#refresh}
 
 Refreshes the references of a locally saved module against a given environment and generates a log file with any errors of the process.
 
@@ -162,7 +163,7 @@ Syntax
 | `userName` | Mandatory | The username used to connect to the environment. | admin |
 | `password` | Mandatory | The password of the given userName. | AdminPassword |
 
-### -recover { #recover }
+### -recover {#recover}
 
 Recovers module meta-information from corrupted .oml files. This command can be used as a mitigation measure to address strange behaviors that are only occurring on specific modules, for example:
 

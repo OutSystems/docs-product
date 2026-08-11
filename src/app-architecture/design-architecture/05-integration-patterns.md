@@ -5,7 +5,13 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-1081&t=WkNS4cBkPZHvTban-1
-tags: system integration, abstraction patterns, performance optimization, system independence, extensibility
+tags:
+  - Architecture
+  - Caching
+  - Data
+  - Data Synchronization
+  - Optimization
+  - Performance
 audience:
   - Developer
   - Architect

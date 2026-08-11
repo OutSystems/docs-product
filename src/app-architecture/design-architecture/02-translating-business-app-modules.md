@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rdSCF3WV51agwVCcEFkx2I/App-architecture?node-id=1-835&t=WkNS4cBkPZHvTban-1
-tags: software architecture, module management, application design, enterprise applications
+tags:
+  - Architecture
+  - Business Processes
+  - Development lifecycle
+  - Lifecycle
+  - Modular Programming
 audience:
   - Developer
   - Architect

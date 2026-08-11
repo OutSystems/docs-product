@@ -1,6 +1,10 @@
 ---
 summary: Explore application composition in OutSystems 11 (O11), focusing on module assembly and deployment dependencies essential for architectural design.
-tags: application deployment, dependency management, architectural design, application life cycle management
+tags:
+  - Architecture
+  - Deploy
+  - Lifecycle
+  - Modular Programming
 guid: dd85b743-88c8-4cba-8214-de594cffeefa
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

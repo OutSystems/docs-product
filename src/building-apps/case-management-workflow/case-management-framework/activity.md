@@ -9,8 +9,6 @@ figma:
 audience:
   - Developer
   - Front-end developer
-  - Platform administrator
-  - Business analyst
 outsystems-tools:
   - service studio
   - case management framework

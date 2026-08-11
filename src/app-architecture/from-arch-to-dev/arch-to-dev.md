@@ -13,7 +13,6 @@ outsystems-tools:
   - service studio
   - forge
 coverage-type:
-  - evaluate
   - understand
   - apply
 topic:

@@ -35,7 +35,7 @@ To use the commands, on the CLI first navigate to your Service Studio installati
 
 And precede any command by `servicestudio.exe` and a space, for example: `servicestudio.exe -merge`.
 
-The syntax is composed of a **command** and it’s **arguments**. The command defines the functionality such as merging two modules. The arguments represent inputs necessary to each switch such as the version of the modules to be merged.
+The syntax is composed of a **command** and its **arguments**. The command defines the functionality such as merging two modules. The arguments represent inputs necessary to each switch such as the version of the modules to be merged.
 
 ## Summary of available commands
 

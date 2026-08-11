@@ -1,5 +1,5 @@
 ---
-summary: Explore service-oriented architectures in OutSystems 11 (O11) for robust, flexible application development.
+summary: Service-oriented architecture in OutSystems 11 (O11) structures apps into External API, Core Services, and Integration Services layers to isolate business logic.
 guid: 15d0b981-a3c5-4d65-a013-2e9837d81da5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

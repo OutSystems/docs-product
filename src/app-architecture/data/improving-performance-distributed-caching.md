@@ -1,5 +1,5 @@
 ---
-summary: Explore how OutSystems 11 (O11) enhances application performance through the implementation of distributed caching mechanisms.
+summary: "Distributed caching in OutSystems 11 (O11): cache-aside and background data push patterns, and when to use distributed over local cache."
 guid: 1592accf-a032-4d7b-bbf9-941f97df4d7e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

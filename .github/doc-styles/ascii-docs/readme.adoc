@@ -1,0 +1,32 @@
+Technical Knowledge style guide
+==============================
+
+The goal of this style guide is to help us *create consistent content*, and consistent content aids readability and understanding.
+
+This style guide is based on the *best industry standards* and can be used as a tool that helps us improve our writing and editing skills.
+
+It should also *make collaboration more efficient*. We expect our authors to adopt the style guide. Following the style guide lets us edit faster, publish sooner, and help our users quicker.
+
+This style guide is also:
+
+* A collaborative and practical living document.
+* A set of guidelines and recommendations.
+* Flexible. We adapt it to our work.
+* Focused on the OutSystems technical ecosystem.
+* A reference document. Read it once, come back to it often.
+* A formal enablement tool. We want to empower people to create high-quality content.
+
+== Table of contents
+
+The style guide consists of several sections. Here is an overview.
+
+* link:./intro.adoc[Before you start creating or editing]
+* link:./content.adoc[Grammar and content]
+* link:./structure.adoc[Structure]
+* link:./formatting.adoc[Formatting]
+* link:./word-lists.adoc[Word lists]
+* link:./markdown.adoc[Writing in Markdown]
+* link:./working-with-files.adoc[Working with files]
+* link:./resources.adoc[Additional resources]
+
+NOTE: See the https://github.com/OutSystems/docs-validation/tree/master/templates[templates] for detailed instructions on how to write procedure, concept, or process.

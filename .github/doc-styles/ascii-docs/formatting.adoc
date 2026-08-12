@@ -1,0 +1,116 @@
+Formatting
+==========
+:toc:
+
+== Formatting
+
+Use consistent formatting across all content.
+
+=== Typographical emphasis
+
+*Bold*. Use bold to denote the text as it's in the user interface (UI), such as labels, buttons. 
+
+*Italic*. Don't use italic. 
+
+*Underline*. Don't use underline, as browsers use it to show links.
+
+*Examples*
+
+In the *New Application* window, select *Phone App* or *Tablet App* app template. 
+
+Click *Generate App*.
+
+Enter the information for the *Basics* blade and click *OK* to proceed to the next blade.
+
+Choose *USERS* and click the *New User* link.
+
+=== User inputs and interface labels
+
+* Use *bold* for interface labels, and write them using the same capitalization as they display on the user interface.
+
+* Use a monospace font to identify the text users need to enter. If you're using Markdown, use inline code to get a monospace font.
+
+*Examples*
+
+Enter `display-flex` in the input field.
+
+Create a Container. Enter `MyContainer` in the *Name* property.
+
+=== Properties: names and values
+
+* Use *bold* for property names and write them using the same capitalization as they appear on the UI. 
+
+* Use inline code for property values when the user enters/types the value.
+
+* Use bold for variable values when the user selects the variable value, for example, from a dropdown.
+
+*Example*
+
+* To restrict the elements to internal network access, in the *Internal Access* property, enter `Yes`.
+
+* To restrict the elements to internal network access, from the *Internal Access* dropdown, select *Yes*. 
+
+=== Keyboard shortcuts
+
+Use sentence capitalization and spell the key name as it appears on the keyboard. Use bold when the shortcut appears in the sentence.
+
+*Examples*
+
+Ctrl+Shift+S
+
+Esc
+
+F1
+
+To open a new window, select *Ctrl+N*.
+
+=== Code examples
+
+Use code blocks for code examples. If your text editor has that option, specify the programming language of the example code.
+
+*Example*
+
+A JavaScrip code snippet:
+
+[source, javascript]
+----
+// Return success in GlobalAsyncAction client action
+$parameters.Success = true;
+$parameters.Out1 = 5.0;
+$resolve();
+----
+
+A JSON code snippet:
+
+----
+{
+    "plugin": {
+        // Use only one the following ways to reference a plugin
+        "url": "<The url to a public git repository containing your plugin>",
+        // or
+        "identifier": "<The identifier for your plugin>",
+        // or
+        "resource": "<The path to the plugin folder inside the resources file ZIP>",
+        // If the plugin requires additional settings
+        "variables": [
+            {
+                "name": "<The attribute name for your plugin variable>",
+                "value": "<The attribute value for your plugin variable>"
+            },
+            /* ...more variables, if needed... */
+        ]
+    }
+}
+----
+
+=== Screenshots and illustrations
+
+Screenshots and illustrations should be a useful addition to the content, and not critical to the understanding of the content or following a procedure.
+
+* Use screenshots to guide users in a complicated or long procedure, to show complex windows or dialog boxes, or to emphasize a new feature.
+* The screenshot should show the relevant part of the user interface and some of the surrounding interface, to help users locate the relevant part. For example, if you need a screenshot with an input field, include the form or a window where the field shows. However, don't use the screenshot of the entire desktop.
+* Mask the internal domain names and user names of OutSystems employees in your screenshots.
+* The maximum screenshot size is 1200 pixels wide, with screen scale set at 100%. When highlighting an area on a screenshot, only use boxes and arrows. Use "Bright Red" (#F22800) and stroke dimension 2pt.
+* Give unique and meaningful names to the screenshot files. Use lowercase and hyphens between words. For example, "vpn-your-outsystems-cloud.png".
+* It is recommended that you don't use screenshots from a third-party product as we have no control over changes.  
+

@@ -1,0 +1,44 @@
+Additional resources
+===================
+:toc:
+
+== Additional resources
+
+This section contains links to resources that can help you write better and more efficiently.
+
+=== Dictionaries
+
+The default language of the OutSystems documentation, and content in general, is American English.
+
+* https://www.merriam-webster.com/[Merriam-Webster] — We recommend that you consult this dictionary for all linguistic questions you may have.
+* http://www.ozdic.com/[OzDictionary of Collocations] — Lists the most frequent word pairs in English. 
+
+=== Markdown editors
+
+These are apps that we use to create content, check spelling, or calculate the readability.
+
+* https://code.visualstudio.com/[Visual Studio Code] — recommended Markdown editor. Use it with a spellcheck extensions. Free.
+
+=== Writing tools
+
+When using these tools, keep in mind not to accidentally share confidential information through copy and paste.
+
+* https://ludwig.guru/[Ludwig] — Check phrases in context. Limited free version. 
+* https://support.office.com/en-us/article/language-accessory-pack-for-office-82ee1236-0f9a-45ee-9c72-05b026ee809f[Microsoft Proofing Tools] — these are part of Microsoft Office and provide solid guidance to improve content and calculate readability scores. Commercial, available in Office 365 and the local installations of Word.
+* https://www.grammarly.com/[Grammarly] — usable a spellchecker, but use its edit suggestion with caution, as they are often out of context. Limited free version.
+
+Tools you can use to check the readability scores of your content.
+
+* https://www.hemingwayapp.com/[Hemingway Editor]
+* https://www.expresso-app.org/[Expresso]
+* https://www.webfx.com/tools/read-able/[Readable]
+
+=== Style guides for technical writing
+
+Technical writing style guides.
+
+* https://docs.microsoft.com/en-us/style-guide/welcome/[Microsoft Writing Style Guide]
+* https://help.apple.com/applestyleguide/#/[Apple Style Guide]
+* https://developers.google.com/style[Google developer style guide]
+* https://doc.opensuse.org/products/opensuse/Styleguide/opensuse_documentation_styleguide_sd/[SUSE Documentation Style Guide]
+* https://stylepedia.net/style/[The Red Hat Style Guide]

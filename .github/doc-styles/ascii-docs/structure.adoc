@@ -1,0 +1,149 @@
+Content structure
+=================
+:toc:
+
+== Content structure
+
+This section is about organizing content in documentation and training.
+
+== Structure in documentation
+
+This section describes the different types of content you might include. Most of the content applies to any document, such as an introduction. Other sections may be very specific, such as the number of steps to include in a procedure. 
+
+The following are types of technical documents you can include in your document set. 
+
+* *Concept* - introduces a topic, identifies the audience, and explains what the feature or function is and how it benefits the reader. You might also introduce the use case that this feature solves. A concept describes the purpose of the feature. It may also include information about where this feature is used in the product. 
+** To name a concept, use a noun for the title, such as Forge.
+
+* *Process* - is a series of paragraphs that are related so readers learn how to complete a task. A process doesn't include step-by-step instructions or instructions on how to complete the fields on a screen. Drawings showing the process are helpful for users to understand how the parts fit together and provide a good overview. A process provides the information a user might need to move from a concept to a procedure. 
+** To name a process document, use gerunds in the title, such as *Installing a Forge app*. 
+
+* *Procedure* - is a series of related steps users follow to complete a task. These steps must be followed in the order specified. Screenshots help explain the sequence of steps readers follow to reach the goal.  
+** Prerequisites should be at the top of the document below the introduction. 
+** If the procedure doesn't immediately follow the introduction, then write a lead-in sentence, such as *To install an app, follow these steps*:
+** Use numbered steps to indicate the order in which users complete a task. 
+** Write the step following the 3W rule (Why, Where, and What)
+. Why (the result) indicates the objective of the user's action. Not all steps have a Why. It is optional.
+. Where positions the user so they know where the item is located that they need to select. 
+. What indicates what the user needs to select, such as the name of a link or button. 
+*** *Example*: To add a button, from the Toolbox, drag the *Button* widget to your screen. 
+
+** To name a procedural document, use an active verb and noun such as *Create a screen*.
+
+=== Include an introduction / overview
+
+A good technical document should always have an introduction that may include conceptual information. 
+
+Use the introduction / overview to let readers know what to expect in the document and it confirms they found what they were looking for. Identify the audience or the developer level such an experienced developer.
+
+The introduction, should be the first paragraph of your document. 
+
+=== Place prerequisites near the top
+
+Place prerequisites at the beginning of the document. This sets the users' expectations because they immediately know if they can use this document or not. Keep in mind that prerequisites might end up as preview snippets in search engines' results page.
+
+=== Use infoboxes sparingly
+
+Only use infoboxes (info, warnings) when you need to emphasize a particular piece of information. The overuse of infoboxes has the opposite effect, as readers start ignoring them. 
+
+=== Limit the number of steps in procedures
+
+Try limiting procedures to seven to nine steps. This is to prevent us from writing endless procedures that are difficult to follow.  If you need more steps, consider reorganizing the content. Break the procedure into smaller procedures and use Heading 2's or 3's to separate the content. 
+
+=== Use links in paragraphs occasionally
+
+Having too many links distracts the reader from understanding the content. Additionally, those links are difficult to maintain. Limit the number of links in a text to ones that are necessary for users to achieve a task.
+
+Don't add links to every concept just because you have content about it. Instead, use one of the following options:
+
+* For additional information related to a specific paragraph or section, refer to that information at the end of the paragraph or section.
+* For additional information related to the entire document, list those links in a *Related resources* section at the end of the document.
+
+*Example*
+
+Yes: Use http://example.com/[Extract to Action] to create a new Action with that piece of logic. For more information about actions, refer to http://example.com/[Actions in OutSystems].
+
+Yes:
+
+Use http://example.com/[Extract to Action] to create a new Action with that piece of logic.
+
+*Related resources*
+
+* http://example.com/[Actions]
+* http://example.com/[Logic]
+
+No: Use http://example.com/[Extract to Action] to create a http://example.com/[new Action] with that piece of http://example.com/[logic].
+
+=== Use heading levels 
+
+Use heading levels to show the relationship of ideas and to enable readers to easily scan and read selectively. 
+
+=== Limit headings to three levels
+
+Avoid using more than three levels of headings. If you think that you need more levels to structure the content, consider separating the content into smaller documents. 
+
+=== Add content after a heading
+
+Add at least a sentence between a heading and an image or table, describing what follows. Introduce images and tables, so users know what they are looking at.  
+
+*Example*
+
+Yes:
+
+*Create a New Mobile App*
+
+Follow the steps below to create a new mobile app.
+
+1. ...
+2. ...
+3. ...
+
+No:
+
+*Create a New Mobile App*
+
+1. ...
+2. ...
+3. ...
+
+=== Add a summary
+
+Add a summary to your document/video explaining why users might need the content. The summary shows in Google results pages. Make sure the summary is succint, contains important information, and is not more than 150 characters. 
+
+*Example*
+
+Develop a Progressive Web App (PWA) by creating a Mobile App and toggling on the option to distribute the app as PWA. Try your app in Android and iOS.
+
+=== Differentiate content for technical preview features
+
+Documentation for Technical Preview (TP) features is typically self-contained. Here's how a document for a TP feature is different from a document for a feature that's Generally Available (GA).
+
+* *Title*. The title is "Technical Preview - <title>".
+* *Technical Preview infobox*. Place an infobox at the beginning of the page clarifying that it's a Technical Preview feature. The default message is: "Read https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features[how features in Technical Preview work]. We encourage you to try these features out and to http://example.com/[send us your feedback].". Check with the Technical Knowledge team where the "send us your feedback" should link to, or if the message should be different.
+* *Table of contents listing*. Check with the Technical Knowledge team if you should include the page in the table of contents or to have it accessible as a direct link only.
+
+== Structure in training
+
+How to structure videos in training to make them useful and engaging.
+
+=== Slide decks
+
+Limit the length of videos to four minutes. Avoid using screenshots in videos created from slide decks to show steps. Show the steps through the demo videos instead.
+
+=== Demos
+
+Each demo should be self-contained. Use a pre-built demo for a quick start, as it has a scenario that focuses on the topic.
+
+=== Quizzes
+
+Each question is a multiple-choice question and has between two and four (preferred) choices.
+
+For each answer, give a rationale and explain to the user why the answer is correct or incorrect.
+
+Within a question, two answers cannot be mutually exclusive. Logically, this doesn't apply to the questions with only two answers.
+
+All choices should be plausible enough to be considered possibly correct.
+
+=== Exercises
+
+Ideally, provide a sample app for a quick start and explain how to install it. The sample app should be self-contained, without dependencies, and have all the resources users need for following the training video.

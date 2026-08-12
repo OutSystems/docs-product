@@ -52,9 +52,37 @@ Use these rules when writing or reviewing documentation in this repository.
 
 Format placeholders consistently:
 
-* In Markdown, wrap inline placeholders in backticks, and use an asterisk before the first backtick and after the second one (*`PLACEHOLDER_NAME`*).
-* Use uppercase characters with underscore delimiters (for example, `*API_NAME*`).
-* Explain the placeholder the first time you use it.
+* In Markdown, wrap inline placeholders in backticks only
+  (`PLACEHOLDER_NAME`).
+* If your placeholders are in a block of code, wrap the code block in a
+  code fence (\`\`\`).
+* Inside a code fence, you can't apply formatting like bold or italic.
+* For a single placeholder explanation, use this format:
+  `Replace \`PLACEHOLDER_NAME\` with a description of what the
+  placeholder represents.`
+* Example: `Replace \`BUILD_ID\` with the ID of the 'WORKING' build that
+  you copied in the preceding step.`
+* For two or more placeholders:
+    * Follow the command line with a descriptive list of the placeholders
+      used in the command line.
+    * Introduce this list with `Replace the following:`.
+    * List the placeholders in the order in which they appear in the command
+      line.
+    * Explain what each placeholder represents, even if the placeholder value
+      is intuitive.
+* Use uppercase characters with underscore delimiters (for example,
+  `API_NAME`).
+
+### Explain placeholders
+
+When you use a placeholder in text or code, explain the placeholder the first
+time you use it. It's not necessary to repeat the explanation in the document
+unless doing so might benefit the reader, for example in circumstances such as
+the following:
+
+* Your document is lengthy.
+* You've introduced several other placeholders in a long procedure.
+* Your document isn't intended to be read from beginning to end.
 
 ## Warnings and info sections
 

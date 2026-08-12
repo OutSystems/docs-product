@@ -100,7 +100,6 @@ Write a short, accurate SEO summary for the content piece.
     * Does it name at least one specific sub-topic, principle, or concept from the content — not just the general subject?
     * Does it avoid describing something the content does not actually cover?
     * Could it apply to a different content piece in this repository? If yes, rewrite it to be more specific.
-    * Does it contain a colon (`:`) anywhere? If yes, flag it now — it must be wrapped in double quotes when written to the front-matter in Step 4.
     * If the summary fails any criterion, revise it and re-check before proceeding. Do not present a summary to the user that fails any of these checks.
 1. If a `summary` already existed, compare the generated summary to the existing one before presenting anything to the user.
     * The summaries are **semantically equivalent** if a user searching for this content would be equally served by either — same primary keyword, same search intent, same core topic. Wording differences, minor rephrasing, and stylistic improvements do not make them meaningfully different.
@@ -168,17 +167,7 @@ The front-matter is the YAML block delimited by `---` at the start of the file.
 * Only the input file provided by the user may be modified — no other file.
 * Only modify the `summary` field — do not add, remove, or reorder any other line in the file.
 * Do not touch the `---` delimiters in `.md` files.
-* The value must be a plain scalar string. If the summary contains a colon (`:`) anywhere, wrap the entire value in double quotes. Do not add quotes when no colon is present.
-
-Example:
-
-```yaml
-# Invalid — unquoted colon breaks the YAML front-matter
-summary: OutSystems 11 (O11) exercise: populate a Project Member entity, build a multi-source aggregate with joins, and display filtered project members in a List widget.
-
-# Valid — value wrapped in double quotes because it contains a colon
-summary: "OutSystems 11 (O11) exercise: populate a Project Member entity, build a multi-source aggregate with joins, and display filtered project members in a List widget."
-```
+* The value must be a plain scalar string. If the summary contains a colon (`:`) or other special YAML characters, wrap the value in double quotes.
 
 ### Post-write validation
 
@@ -186,10 +175,10 @@ After writing the file, read it back and perform the following checks in order:
 
 1. Locate the `summary` line in the file.
 1. Check whether the written value matches the approved summary exactly.
-1. Scan the written value character by character for a colon (`:`). Do this even if Step 3 already flagged the summary as colon-free — verify against the literal text actually written, not against memory. Common triggers include colons after product names such as "OutSystems Developer Cloud (ODC): ...".
-1. If the value is unquoted and contains a colon, the front-matter is invalid. Rewrite only the `summary` line, wrapping the entire value in double quotes, then re-read the file to confirm the fix was applied correctly.
-1. After applying the quoting fix, re-validate that the corrected summary still satisfies all Step 3 rules: character count under 160, no forbidden phrases, correct platform name, and no unquoted colon remaining. If it fails any check, treat this as a new generation failure and restart from Step 3.
-1. If the value matches the approved summary and it is quoted whenever (and only when) it contains a colon, validation passes — inform the user the file was updated successfully.
+1. Check for YAML special characters that require quoting — specifically, a colon followed by a space (`:`) anywhere in an unquoted value. Common triggers include colons after product names such as "OutSystems Developer Cloud (ODC): ...".
+1. If the value is unquoted and contains any such character, the front-matter is invalid. Rewrite only the `summary` line, wrapping the entire value in double quotes, then re-read the file to confirm the fix was applied correctly.
+1. After applying the quoting fix, re-validate that the corrected summary still satisfies all Step 3 rules: character count under 160, no forbidden phrases, correct platform name, and no YAML special characters left unquoted. If it fails any check, treat this as a new generation failure and restart from Step 3.
+1. If the value matches the approved summary and no unquoted special characters are present, validation passes — inform the user the file was updated successfully.
 
 ## Global constraints
 

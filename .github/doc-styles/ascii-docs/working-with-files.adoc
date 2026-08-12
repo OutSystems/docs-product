@@ -1,0 +1,155 @@
+Working with files
+===================
+:toc:
+
+== Working with files
+
+Read this section to learn more about the Markdown file structure, naming conventions, and how to add files to the table of contents.
+
+=== Naming conventions
+
+Recommendations to follow when naming.
+
+===== Document titles
+
+Use only letters, numbers, and hyphens. Never use other special chars, even `(`, `)`, or `_`.
+
+===== Files and folders
+
+Here are some conventions you should follow for file and folder names:
+
+* Use only letters, numbers, and hyphens. Never use other special chars.
+* Write file and folder names in lowercase with word-separating hyphens. Do not use underscores or spaces for this purpose.
+* Folder names should be short and descriptive. They don't have to match the topic name, and may abbreviate some words (for example, "application" to "app").
+* Topics on similar subjects, when placed in the same folder, may share the same short prefix. This makes them easier to find.
+* Limit the number of files at the folder level. Review the list of files and organize them into subfolders, if needed.
+
+===== Image file names
+
+Also, the image file names should include the following:
+
+* One keyword from the topic filename at the beginning, especially if there are a few topics in the same folder. 
+* A few words describing the image (not too many)
+* Suffix to identify the source of the image:
+** `ss` — includes user interface elements from Service Studio, even if it's not a simple screenshot
+** `odcs` — includes user interface elements from OutSystems Developer Cloud Studio
+** `is` — includes user interface elements from Integration Studio
+** `lt` — includes user interface elements from LifeTime
+** `sc` — includes user interface elements from Service Center
+** `pl` — includes user interface elements from the ODC Portal
+** `usr` — includes user interface elements from Users
+** `at` — includes user interface elements from Assessment Tool
+** `ct` — includes user interface elements from Configuration Tool
+** `af` — includes user interface elements from App Feedback Tool
+** `gc` — includes user interface elements from Google Console
+** `fg` — includes user interface elements from Forge
+** `ams` — includes user interface elements from AI Mentor Studio
+** `ib` — includes user interface elements from Integration Builder
+** `eb` — includes user interface elements from Experience Builder
+** `we` — includes user interface elements from Workflow Editor
+** `az` — includes user interface elements from Microsoft Azure
+** `vs` — includes user interface elements from Visual Studio
+** `ok` — includes user interface elements from Okta
+** `fc` — includes user interface elements from Factory Configuration
+** `diag` — the image contains a diagram, a workflow, or similar, with no elements from the product tools user interface
+** `app` — includes user interface elements from sample apps
+** `cp` — includes user interface elements from the Customer Portal
+** `sh` — includes user interface elements from ODC self hosted configurator
+
+If necessary, image filenames may include a number before the suffix, but adding another word is preferable.
+
+*Examples*
+
+Here are some sample image file names:
+
+* roles-create-lt.png
+* roles-edit-lt.png
+* application-architecture-diag.png
+* flow-editor-1-ss.png
+* flow-editor-2-ss.png
+* flow-editor-properties-ss.png
+
+===== Branches
+
+Suggested names:
+
+* Prefix with **update-** to update existing content
+* Prefix with **feature-** to add new content
+
+
+=== Structure of a Markdown file 
+
+Markdown files have the following sections:
+
+* *Header* or *front-matter*. Contains topic metadata.
+* *Title*. The topic title that by default also defines the page URL when published. Always use a Heading 1 to define the title (check "Headings"). After the header (front matter), insert two line breaks and then write the title of the topic as Heading 1. Leave a blank line after the Heading 1 and then write the body of the topic.
+* *Body*. The content of the topic. Can contain text, tables, images, videos, and similar.
+
+=== File header of a Markdown file 
+
+The file header or front-matter of a Markdown file contains metadata that's not rendered as body text. The header starts in the first line with `---` (three hyphen characters), has one entry per line, and ends with `---` (three hyphen characters), followed by two line breaks and one empty line. Insert two line breaks after the header.
+
+For more information about the front-matter, see [Validate markdown frontmatter](https://outsystemsrd.atlassian.net/wiki/spaces/TK/pages/3602121571/Validate+markdown+frontmatter).
+
+=== File organization
+
+Each documentation area or a section in a repository should have a specific folder. Check below for the folder naming conventions and recommendations.
+
+Each section should have an overview topic, placed inside the section folder. The topic name should be `intro-<some-keywords>.md`.
+
+Put:
+
+* All images of a single topic in an `images/subfolder`.
+* Resources related to a topic, for example, downloadable files, samples, demos, in a `resources/` folder.
+* Any images or icons reused throughout the documentation in a common `/shared/` folder at the root of the repository.
+
+*Examples*
+
+A sample folder structure:
+
+----
+src/
+    intro-doc-10.md
+    getting-started.md
+    images/
+        getting-started-overview-ss.png
+    apps-lifecycle/
+        intro.md
+        role-create.md
+        role-permissions.md
+        team-create.md
+        team-app-permissions.md
+        images/
+            overview-diag.png
+            roles-lt.png
+        resources/
+            cheatsheet.pdf
+----
+
+Here is a possible folder organization with a folder for shared images:
+
+----
+src/
+    shared/
+        icons-tools/
+            <...>.png
+        icons-elements/
+            <...>.png
+----
+
+=== Table of contents
+
+After creating a new topic you must add it to the table of contents (TOC) so that it can be published. The table of contents is defined per repository in the *toc.yml* file, available in the root folder.
+
+Each entry is defined by a hyphen, a space, the `href: ` text and the UNIX-style path (using `/` forward slashes to separate parts) from the `src/` folder up to the Markdown filename.
+
+Child topics are defined after a `- topics` entry, using an extra level of indentation (four spaces).
+
+[source, yaml]
+----
+- href: app-lifecycle/intro.md
+- topics:
+    - href: app-lifecycle/app-deploy.md
+    - href: app-lifecycle/troubleshooting.md
+----
+

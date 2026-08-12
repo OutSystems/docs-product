@@ -11,9 +11,9 @@ Use these files as the authoritative documentation style guide:
 * `.github/doc-styles/structure.md`
 * `.github/doc-styles/visual-assets.md` (only when working on diagrams or other visual assets)
 
-## Cursor commands
+## Claude Code commands
 
-In Cursor, use these commands to automatically pull in the right chunks:
+In Claude Code, use these commands to automatically pull in the right chunks:
 
 * `/doc-write`: Writing documentation (applies formatting, tone, and structure).
 * `/doc-review`: Reviewing documentation (applies formatting, tone, and structure).

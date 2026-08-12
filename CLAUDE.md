@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working in this repository.
 
-This `CLAUDE.md` is shared across multiple documentation repositories in this workspace. Repo-specific details (content roots, frontmatter schema, build toolchain, and workflow names) can vary. When unsure, check the repo’s source-of-truth configuration files (for example, `.github/`, `toc.yml`, and `config.yml`) and follow existing patterns in nearby content.
+This `CLAUDE.md` is shared across multiple documentation repositories in this workspace. Repo-specific details (content roots, frontmatter schema, build toolchain, and workflow names) can vary. When unsure, check the repo's source-of-truth configuration files (for example, `.github/`, `toc.yml`, and `config.yml`) and follow existing patterns in nearby content.
 
 ## Repository overview
 
@@ -12,16 +12,16 @@ These repositories are OutSystems documentation-first codebases. Most changes ar
 
 Look for the files and folders that define content roots, navigation, and validations. Common patterns include:
 
-* `README.md` — Project-specific instructions (if present)
-* `toc.yml` — Table of contents / navigation (if present)
-* `config.yml` (or equivalent) — Build configuration such as input/output folders (if present)
-* `src/` (or equivalent) — Markdown source content (if present)
-* `src/shared/` (or equivalent) — Reusable content fragments included into other docs (if present)
-* `images/` subfolders — Screenshots and diagrams referenced by pages (if present)
-* `.github/workflows/` — CI validations and build steps
-* `.github/doc-styles/` and `.github/copilot-instructions.md` — Writing and formatting rules
-* `styles/` — Vale linting styles (if present)
-* `scripts/` — Custom lint rules or helpers (if present)
+* `README.md`: project-specific instructions (if present)
+* `toc.yml`: table of contents / navigation (if present)
+* `config.yml` (or equivalent): build configuration such as input/output folders (if present)
+* `src/` (or equivalent): Markdown source content (if present)
+* `src/shared/` (or equivalent): reusable content fragments included into other docs (if present)
+* `images/` subfolders: screenshots and diagrams referenced by pages (if present)
+* `.github/workflows/`: CI validations and build steps
+* `.github/doc-styles/` and `.github/copilot-instructions.md`: writing and formatting rules
+* `styles/`: Vale linting styles (if present)
+* `scripts/`: custom lint rules or helpers (if present)
 
 ## Frontmatter format
 
@@ -32,17 +32,17 @@ Treat the schema as authoritative (commonly `.github/workflows/frontmatter.json`
 When editing or creating pages:
 
 * Copy frontmatter from a similar page.
-* Don’t invent enum values—reuse values already used in the repo or listed in the schema.
-* If the frontmatter contains a unique identifier (for example, `guid`), leave the new value empty when creating a new page and don’t reuse an existing one.
+* Don't invent enum values. Reuse values already used in the repo or listed in the schema.
+* If the frontmatter contains a unique identifier (for example, `guid`), leave the new value empty when creating a new page and don't reuse an existing one.
 
 ## Style guide (source of truth)
 
 When writing or reviewing docs, follow the rules in:
 
-* `.github/doc-styles/formatting.md` — Markdown conventions, emphasis, UI elements, placeholders, admonitions
-* `.github/doc-styles/tone.md` — Voice, language, capitalization, product names
-* `.github/doc-styles/structure.md` — Headings, paragraphs, lists, procedures, document types
-* `.github/doc-styles/visual-assets.md` — Mermaid diagram rules, color palette, visual audit workflow (only when working on diagrams or visual assets)
+* `.github/doc-styles/formatting.md`: Markdown conventions, emphasis, UI elements, placeholders, admonitions
+* `.github/doc-styles/tone.md`: voice, language, capitalization, product names
+* `.github/doc-styles/structure.md`: headings, paragraphs, lists, procedures, document types
+* `.github/doc-styles/visual-assets.md`: Mermaid diagram rules, color palette, visual audit workflow (only when working on diagrams or visual assets)
 
 Key rules:
 
@@ -68,7 +68,7 @@ Key rules:
     * Don't use possessive adjectives (MY_, YOUR_) in placeholders
     * Don't use x or xx as placeholders unless it's a standard convention (e.g. HTTP status codes)
     * Explain each placeholder the first time you use it
-* No hard line breaks mid-paragraph — use soft-wrap at 80 columns
+* No hard line breaks mid-paragraph. Use soft-wrap at 80 columns instead.
 
 ### Punctuation
 
@@ -135,11 +135,11 @@ Rules that cause CI failure may be listed in `markdownlint_fail.json` (if presen
 
 Validations run on PRs via `.github/workflows/`. Workflow names and checks vary by repository, but commonly include:
 
-* `validations.yml` — Shared docs validation (markdownlint, vale, etc.)
-* `validate-frontmatter.yml` — Frontmatter schema validation against `.github/workflows/frontmatter.json`
-* `validate-toc.yml` — TOC structure validation
-* `build.yml` — Documentation build
-* `visual-assets-validate.yml` / `visual-assets-pr.yml` — Image/diagram validation
+* `validations.yml`: shared docs validation (markdownlint, vale, etc.)
+* `validate-frontmatter.yml`: frontmatter schema validation against `.github/workflows/frontmatter.json`
+* `validate-toc.yml`: TOC structure validation
+* `build.yml`: documentation build
+* `visual-assets-validate.yml` / `visual-assets-pr.yml`: image/diagram validation
 
 ## Editor settings
 
@@ -165,5 +165,5 @@ Use inline bold prefixes instead:
 ## Shared files
 
 This `CLAUDE.md` and all skills (Claude Code slash commands) are authored and
-maintained in the `docs-validation` repository and synced to all other
-documentation repositories. Always edit them in the 'docs-validation`. If unsure where to make the edit, ask the user.
+maintained in the `tk-cicd` repository and synced to all other documentation
+repositories. Always edit them in `tk-cicd`. If unsure where to make the edit, ask the user.

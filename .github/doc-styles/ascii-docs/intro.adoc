@@ -1,0 +1,59 @@
+Before you start creating or editing
+====================================
+:toc:
+
+== Before you start creating or editing
+
+Keep in mind the following guidelines when creating or editing content.
+
+=== Define your audience
+
+Define your audience and think of what they already know and what they need to learn. When the right audience gets the right content, that content is useful. Similarly, if the content isn't right for the audience, regardless of how good the content is, it is useless to the audience.
+
+For example, a beginner in OutSystems coming from arts, humanities, or social sciences, would have little use for a tutorial about creating extensions. Or, a senior STEM developer would learn nothing new from an introduction to databases for beginners.
+
+Your stakeholders should have more information about the audience. In product teams, the stakeholders are often project managers (PMs) and product designers. However, you should always be critical about the assumed knowledge level of the audience and evaluate the information carefully.
+
+=== Set your goals
+
+What's the purpose of the content, not only for the audience, but in the context of customer business goals? The answer helps you choose the type of content, the level of detail, and where the content will live. Here are some examples:
+
+* Documents about technical previews: create awareness and enthusiasm and get early feedback from businesses about a feature
+* Support article about the platform upgrade: prevent loss of data
+
+=== Prioritize for correct, complete, good-looking
+
+A prerequisite for content being useful is that it is technically correct. Technically correct content may or may not be complete, depending on whether you have time to complete it. Often, however, there's no need to document everything about a feature. After your content is both correct and with enough information to help users, you can make the content more appealing, by adding better screenshots, improving formatting or layout.
+
+=== Think about how users find your content
+
+Content you create lives alongside existing content. In which repository should you commit it? Where in the table of contents should you place it and why? Does the content have correct headings and sections, with alternative text for images, and page summary, so search engines can crawl it properly? Does it compete with other resources on our website? 
+
+=== Select the right content type
+
+Depending on what the goal of the content is, you may choose to create one of the following:
+
+* Document or video explaining what something is, a concept.
+* Document or video  explaining how you might complete a task, a process. 
+* Document or video providing the steps to complete a task, a procedure.
+* Reference document, with additional information about a feature.
+* Troubleshooting document about a product defect.
+* Document or video that includes a mix of content types.
+
+NOTE: See the https://github.com/OutSystems/docs-validation/tree/master/templates[templates] for detailed instructions on how to write procedure, concept, or process.
+
+=== Know your style guide
+
+Style guides help us write consistently and efficiently. As well as the Technical Style guide (you're reading it!), you should also be familiar with the https://docs.google.com/document/d/13iTl65xGOp3raxMU2-60rO4qocRO31xupaIjzIQEaOQ[Editorial Style Guide].
+
+=== Monitor content usefulness
+
+Try asking the target users if the content is helpful. Depending on the type of content, you may have available so-called proxy metrics. Proxy metrics — the number of feedback emails, the number of visits to the page, the bounce rate of the page, the number of minutes people spend on the page, what users searched when they go to the page, how many people completed the course, or what your manager says — are only the indirect measurements of the content usefulness. You should analyze them in the context.
+
+=== Reuse content carefully
+
+Use common sense when reusing content across documentation and training. Ideally, we shouldn't repeat content, but sometimes we need to repeat important information to make it more visible. Think about linking to content rather than repeating content. 
+
+=== Respect attribution
+
+Your work must be original. Quote the text that's not yours and cite the source. Include the list of sources in your draft.

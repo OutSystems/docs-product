@@ -8,7 +8,6 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:912
 audience:
   - Platform administrator
-  - Business analyst
 outsystems-tools:
   - lifetime
   - workflow builder

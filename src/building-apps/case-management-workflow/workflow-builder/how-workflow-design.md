@@ -9,7 +9,6 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 audience:
   - Business analyst
   - Developer
-  - Front-end developer
 outsystems-tools:
   - workflow builder
 coverage-type:

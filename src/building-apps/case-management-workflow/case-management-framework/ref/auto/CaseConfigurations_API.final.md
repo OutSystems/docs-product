@@ -9,7 +9,6 @@ tags: api documentation, case management, crud operations, outsystems platform, 
 audience:
   - Developer
   - Front-end developer
-  - Platform administrator
 outsystems-tools:
   - service studio
   - case management framework

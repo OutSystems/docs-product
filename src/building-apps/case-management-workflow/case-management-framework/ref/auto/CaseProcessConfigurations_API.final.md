@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: api documentation, business process technology, service level agreements (sla), process automation, activity management
 audience:
-  - Developer
   - Architect
-  - Platform administrator
+  - Developer
 outsystems-tools:
   - service studio
   - case management framework

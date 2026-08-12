@@ -14,6 +14,7 @@ outsystems-tools:
   - workflow builder
 coverage-type:
   - understand
+  - apply
 ---
 
 # Creating a Workflow Builder app

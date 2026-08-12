@@ -1,6 +1,6 @@
 ---
 tags: workflow automation, project management, app development workflow, project initiation, application configuration
-summary: Learn how to create apps using the Project Request template in OutSystems 11 (O11).
+summary: "Project Request template in OutSystems 11 (O11) Workflow Builder: configure forms, statuses, manual tasks, and conditions to build a project intake app."
 guid: 3571926d-eafe-4ced-a42f-9be2230a0639
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

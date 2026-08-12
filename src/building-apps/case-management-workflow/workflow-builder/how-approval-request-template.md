@@ -1,6 +1,6 @@
 ---
 tags: workflow automation, app creation, ui configuration, form customization, template usage
-summary: Learn how to create an app using the Approval Request template in OutSystems 11 (O11).
+summary: Approval Request template in OutSystems 11 (O11) Workflow Builder guides you through setting up app info, editing forms, configuring statuses, and assigning tasks.
 guid: ee2f7324-b677-427b-9e70-c60c4b1e9e9b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

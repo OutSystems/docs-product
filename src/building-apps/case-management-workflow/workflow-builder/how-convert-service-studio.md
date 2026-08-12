@@ -1,6 +1,6 @@
 ---
 tags: workflow conversion, workflow builder, workflow management, outsystems platform, app development
-summary: Explore how to convert a Workflow Builder app to Service Studio in OutSystems 11 (O11).
+summary: "Workflow Builder app to Service Studio conversion in OutSystems 11 (O11): steps for administrators, including the irreversible one-way process."
 guid: d1b8c5b6-6844-42f6-91cb-0dd183c2eda4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: app development, workflow design, form creation, outsystems platform, visual development
-summary: Explore the comprehensive guide on building a Workflow Builder app from scratch using OutSystems 11 (O11).
+summary: "Workflow Builder app from scratch in OutSystems 11 (O11): set up a blank canvas, design a form, configure stages, and publish your app."
 guid: 23eb1fab-8030-4857-ab70-2e96e1735bc6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

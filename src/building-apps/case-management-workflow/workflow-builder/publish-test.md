@@ -1,6 +1,6 @@
 ---
 tags: workflow automation, app lifecycle management, user role testing, sample users, environment deployment
-summary: Learn how to publish and test your app using OutSystems 11 (O11) with Workflow Builder, including user role testing and app screen functionalities.
+summary: Workflow Builder app publishing and testing in OutSystems 11 (O11) using sample users, role-based screens, and Administrator task management.
 guid: 326f1e4a-f451-480e-9e40-e068521784eb
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

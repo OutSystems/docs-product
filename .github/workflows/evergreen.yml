@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 1 * * *'
+    - cron: '0 13 * * *'
 
 concurrency:
   group: evergreen-${{ github.ref }}

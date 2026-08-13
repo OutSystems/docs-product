@@ -12,7 +12,7 @@ outsystems-tools:
   - service studio
   - forge
 coverage-type:
-  - none
+  - remember
 topic:
   - data-syncronization
   - offline-synch

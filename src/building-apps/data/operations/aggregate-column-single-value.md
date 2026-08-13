@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+  - apply
 topic:
   - agregating-data
 ---

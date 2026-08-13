@@ -12,6 +12,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+  - apply
 topic:
   - data-syncronization
   - offline-synch

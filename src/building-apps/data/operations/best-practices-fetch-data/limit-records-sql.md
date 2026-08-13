@@ -1,6 +1,6 @@
 ---
 tags: database optimization, performance tuning, sql queries, pagination, data fetching strategies
-summary: OutSystems 11 (O11) emphasizes controlling the number of records fetched from databases to optimize resource usage and improve application performance.
+summary: "OutSystems 11 (O11) SQL query row limits: use the maxrows parameter and Max. Records in Aggregates to reduce unnecessary database load."
 locale: en-us
 guid: 1aecc52f-daef-42a3-ab1b-12e31f086dcb
 app_type: traditional web apps, mobile apps, reactive web apps

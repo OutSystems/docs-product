@@ -1,5 +1,5 @@
 ---
-summary: Explore the Read-Only Data Optimized pattern in OutSystems 11 (O11) for efficient data synchronization in mobile apps.
+summary: Read-Only Data Optimized pattern in OutSystems 11 (O11) syncs only changed or deleted records to local storage using timestamps, reducing data transfer in offline mobile apps.
 tags: data synchronization, offline data handling, performance optimization, mobile app development
 locale: en-us
 guid: 1a81a250-78b5-4d79-b161-3b501049e46c

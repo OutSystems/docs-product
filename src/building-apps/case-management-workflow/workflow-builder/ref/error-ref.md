@@ -1,6 +1,6 @@
 ---
 tags: error handling, platform server, outsystems 11, personal environments, technical troubleshooting
-summary: This document details error handling for OutSystems 11 (O11) Workflow Builder, including platform, publishing, and network issues.
+summary: "Workflow Builder errors in OutSystems 11 (O11): reference for personal environment, platform version, publish, and network issues."
 guid: 71f53a62-0c7d-499b-8772-7990c58ee9d2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

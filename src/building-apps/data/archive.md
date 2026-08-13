@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5743-365&t=6AQx7cEyHPjzgn9B-1
-tags: data archiving, performance optimization, database management, regulatory compliance, cloud infrastructure
+tags:
+  - Best Practices
+  - Data
+  - Entities
+  - Indexes
+  - Optimization
+  - Performance
+  - Timers
 audience:
   - Developer
   - Platform administrator

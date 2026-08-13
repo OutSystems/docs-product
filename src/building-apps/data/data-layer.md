@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?node-id=5743-240&t=6AQx7cEyHPjzgn9B-1
-tags: local storage, performance optimization, data storage, mobile app development, offline support
+tags:
+  - Best Practices
+  - Data
+  - Data Model
+  - Data Synchronization
+  - Mobile app
+  - Optimization
+  - Performance
 audience:
   - Developer
 outsystems-tools:

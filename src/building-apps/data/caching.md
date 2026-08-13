@@ -5,7 +5,11 @@ guid: b1fd3cda-593d-4e77-99db-bfccef52149f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=174%3A28&mode=design&t=GF97AOUqsRf9tsAh-1
-tags: caching, performance optimization, cache invalidation, multitenancy, server actions
+tags:
+  - Caching
+  - Multi-Tenant
+  - Optimization
+  - Performance
 audience:
   - Developer
   - Front-end developer

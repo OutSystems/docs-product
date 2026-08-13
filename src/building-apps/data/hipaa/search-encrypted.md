@@ -5,7 +5,12 @@ guid: f1e59367-c1a5-4ef1-bb4e-ea265d5100e2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data encryption, database operations, security, hipaa compliance, encryption in outsystems
+tags:
+  - Data
+  - Data Integrity
+  - Entities
+  - Logic
+  - Security
 audience:
   - Developer
   - Front-end developer

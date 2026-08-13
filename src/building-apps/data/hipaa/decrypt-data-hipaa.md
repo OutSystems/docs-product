@@ -5,7 +5,11 @@ guid: b5a18548-1f7c-48a0-87f5-43936645d8cd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A522&mode=design&t=GF97AOUqsRf9tsAh-1
-tags: data encryption, security, hipaa compliance, cryptography, entity decryption
+tags:
+  - Data
+  - Entities
+  - Logic
+  - Security
 audience:
   - Developer
   - Front-end developer

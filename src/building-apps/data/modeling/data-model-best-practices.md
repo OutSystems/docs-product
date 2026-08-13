@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data modeling, performance optimization, database indexing, application design, query optimization
+tags:
+  - Best Practices
+  - Data
+  - Data Model
+  - Entities
+  - Indexes
+  - Optimization
+  - Performance
 audience:
   - Developer
   - Front-end developer

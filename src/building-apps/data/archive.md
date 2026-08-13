@@ -1,5 +1,5 @@
 ---
-summary: Explore data archiving strategies and best practices using OutSystems 11 (O11) for efficient long-term data storage and performance optimization.
+summary: OutSystems 11 (O11) data archiving strategies, including light and historical archiving patterns, control columns, Timer setup, and common pitfalls to avoid.
 guid: f00255a0-8205-46d7-aaf7-1b097cc552ea
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

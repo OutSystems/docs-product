@@ -1,6 +1,6 @@
 ---
 tags: user management, security, compliance, lifetime, service center
-summary: Explore user management, security, and compliance details for OutSystems 11's Workflow Builder.
+summary: Workflow Builder FAQs for OutSystems 11 (O11) covering user registration, roles, data storage, security, and GDPR compliance.
 guid: d6e18346-5ecc-4178-9bf2-15e82ff891f6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -8,7 +8,6 @@ platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A521&mode=design&t=GF97AOUqsRf9tsAh-1
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - service studio

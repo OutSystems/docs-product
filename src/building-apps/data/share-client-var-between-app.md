@@ -1,5 +1,5 @@
 ---
-summary: Learn how to share a client variable between applications using OutSystems 11 (O11) for Reactive Web and Mobile Apps.
+summary: Share a Client Variable between OutSystems 11 (O11) Reactive Web and Mobile apps using a public Block or Client Action.
 tags: client variables, data sharing, outsystems development, cross-application communication, outsystems best practices
 locale: en-us
 guid: e45b6e4c-0b32-4934-ad0b-c74a014df878

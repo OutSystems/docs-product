@@ -1,5 +1,5 @@
 ---
-summary: Learn about implementing data purging in OutSystems 11 (O11) to enhance database performance and reduce costs.
+summary: "Data purging in OutSystems 11 (O11): implement Timer-based bulk deletion with control columns, Delete Rules, and avoid common pitfalls to keep your database lean."
 guid: 5dc91dec-eed8-452a-a188-5564a743f19a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

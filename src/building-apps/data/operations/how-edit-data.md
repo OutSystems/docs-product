@@ -1,5 +1,5 @@
 ---
-summary: Explore how to manage entity data in OutSystems 11 (O11) using Service Studio, including adding, modifying, and deleting records.
+summary: "OutSystems 11 (O11) Service Studio entity data: add, remove, and modify records, with step-by-step instructions for applying or discarding changes."
 tags: entity management, data operations, database editing, service studio features, outsystems development
 locale: en-us
 guid: f83e9afb-de9b-4b5e-9564-24490bc762e5

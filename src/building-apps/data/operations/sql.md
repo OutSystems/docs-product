@@ -1,5 +1,5 @@
 ---
-summary: Explore SQL query functionalities within OutSystems 11 (O11) for optimized data manipulation and testing.
+summary: "SQL element in OutSystems 11 (O11): write and test queries using input parameters, output structures, and convert Aggregates to SQL."
 tags: sql queries, data manipulation, input parameters, output parameters, service studio sql tool
 locale: en-us
 guid: 17f9fae0-ed62-44a4-befb-788f5206fad0

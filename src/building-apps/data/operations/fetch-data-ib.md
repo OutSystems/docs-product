@@ -1,5 +1,5 @@
 ---
-summary: Explore how OutSystems 11 (O11) facilitates data fetching and display from integrations in application screens.
+summary: "OutSystems 11 (O11) Integration Builder: fetch a single record or list from an external system using Data Actions and display it on a screen."
 locale: en-us
 guid: af0a23a7-38a2-4d2e-89da-a734af4e68a4
 app_type: traditional web apps, mobile apps, reactive web apps

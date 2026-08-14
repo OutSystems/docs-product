@@ -1,5 +1,5 @@
 ---
-summary: Learn how to handle complex mobile data synchronization with optimized strategies and best practices in OutSystems 11 (O11).
+summary: "OutSystems 11 (O11) complex mobile data synchronization best practices: sync granularity, SyncUnits, delta control, and lightweight local DB design."
 guid: 134bfe6b-170d-4ca3-86f4-25664431bd20
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

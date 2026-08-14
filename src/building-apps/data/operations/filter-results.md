@@ -1,5 +1,5 @@
 ---
-summary: Learn how to filter query results in OutSystems 11 (O11) by adding conditions to Aggregates.
+summary: OutSystems 11 (O11) aggregate filters let you add conditions to queries in Service Studio to retrieve exactly the data you need.
 tags: database queries, aggregates, filters, data retrieval, query conditions
 locale: en-us
 guid: ed7fd28f-d0a7-4b18-bddc-6ee0521677bf

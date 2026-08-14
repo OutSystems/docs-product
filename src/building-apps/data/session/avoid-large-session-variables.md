@@ -13,7 +13,6 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
-  - unblock
   - evaluate
 ---
 

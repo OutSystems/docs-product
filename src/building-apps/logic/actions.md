@@ -1,5 +1,5 @@
 ---
-summary: Explore how OutSystems 11 (O11) enhances Reactive Web and Mobile Apps through Data, Client, and Server Actions.
+summary: "OutSystems 11 (O11) Data, Client, and Server Actions explained: when each runs (server vs. client), how to scope them, and when to reuse logic across screens."
 tags: ide usage, reactive web apps, data actions, client actions, server actions
 locale: en-us
 guid: ce518c93-363b-485e-91b3-b4a402ec4579

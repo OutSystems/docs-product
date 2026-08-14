@@ -1,5 +1,5 @@
 ---
-summary: Discover how to customize error handling pages in OutSystems 11 (O11) for on-premises installations to enhance application design.
+summary: "OutSystems 11 (O11) unhandled error pages customization for on-premises: edit .aspx and .htm files in customHandlers to match your app design."
 guid: 878d7f53-12a8-4101-a5bd-884e389b8025
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Explore merging and versioning features in OutSystems 11 (O11) designed for effective team collaboration on modules.
+summary: "OutSystems 11 (O11) merge feature: Compare and Merge window, textual conflict resolution, color reference, and recover previous merge."
 locale: en-us
 guid: 1c3fca8d-f369-4aaa-b647-dcc9db705eb1
 app_type: traditional web apps, mobile apps, reactive web apps

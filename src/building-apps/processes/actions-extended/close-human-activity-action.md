@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) provides a process extended action to close Human Activities in action flows.
+summary: Close Human Activity action in OutSystems 11 (O11) process flows using a server action, including wrapping it for client actions in Reactive Web and Mobile apps.
 locale: en-us
 guid: 249a28f9-965b-47b7-bbe1-6ba5d20032d5
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 tags: process design, deployment efficiency, process flows, impact analysis, process upgrades
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

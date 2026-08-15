@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 tags: business process management, workflow design, parallel processing, process synchronization, order handling process
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

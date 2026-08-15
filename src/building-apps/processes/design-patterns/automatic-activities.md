@@ -9,7 +9,6 @@ tags: process automation, transaction management, system integration, error hand
 audience:
   - Developer
   - Front-end developer
-  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

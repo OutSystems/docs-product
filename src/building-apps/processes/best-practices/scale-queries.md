@@ -8,7 +8,6 @@ figma:
 tags: scalability, process entities, performance optimization, entity design, query efficiency
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

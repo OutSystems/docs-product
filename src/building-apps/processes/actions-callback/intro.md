@@ -1,6 +1,9 @@
 ---
 summary: Learn how to implement and validate business rules in your process flow using callback actions in OutSystems 11 (O11).
-tags: process flows, business rule validation, process callback actions, activity callback actions, workflow automation
+tags:
+  - Business Processes
+  - Logic
+  - Workflows
 locale: en-us
 guid: b5e04430-4a9c-4697-83a0-f495f4b9d650
 app_type: traditional web apps, mobile apps, reactive web apps

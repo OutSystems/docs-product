@@ -5,7 +5,12 @@ guid: da852258-d018-4628-b2bb-aec5fcc78c0b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process activities, business rules, task management, outsystems platform, activity lifecycle
+tags:
+  - Business Processes
+  - Lifecycle
+  - Logic
+  - Taskbox
+  - Workflows
 audience:
   - Developer
   - Front-end developer

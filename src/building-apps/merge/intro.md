@@ -5,7 +5,8 @@ guid: 1c3fca8d-f369-4aaa-b647-dcc9db705eb1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1361:19892
-tags: version control, team collaboration, automatic merging, manual merging, conflict resolution
+tags:
+  - Development lifecycle
 audience:
   - Front-end developer
   - Developer

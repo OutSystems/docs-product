@@ -5,7 +5,10 @@ guid: c903f266-1cdc-45fb-9609-188a79440359
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: business rules, process flows, callback actions, process validation, process design
+tags:
+  - Business Processes
+  - Logic
+  - Workflows
 audience:
   - Developer
   - Front-end developer

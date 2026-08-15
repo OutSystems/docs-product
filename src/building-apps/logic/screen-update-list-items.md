@@ -1,5 +1,5 @@
 ---
-summary: Learn how to efficiently update list items on a screen using OutSystems 11 (O11) for both Reactive Web and Traditional Web applications.
+summary: OutSystems 11 (O11) list item updates using ListAppend, ListRemove, and Ajax Submit keep only affected rows refreshed in Reactive Web and Traditional Web.
 tags: list manipulation, ajax submit, client actions, system actions, ui update
 locale: en-us
 guid: 540f72cb-fa35-4bdb-8af4-c7637699eb3c

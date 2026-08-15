@@ -1,5 +1,5 @@
 ---
-summary: Explore how to use Ajax for partial screen refreshes in Traditional Web Apps with OutSystems 11 (O11).
+summary: Ajax Refresh in OutSystems 11 (O11) Traditional Web Apps lets you update parts of a screen without a full page reload, creating faster, dynamic interfaces.
 tags: ajax, web development, performance optimization, screen interactivity, user experience
 locale: en-us
 guid: cf447891-96c9-41a7-b624-455c180d4002

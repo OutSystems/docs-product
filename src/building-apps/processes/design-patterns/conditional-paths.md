@@ -13,7 +13,6 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
-  - evaluate
 topic:
   - process-decision-patterns
 ---

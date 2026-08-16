@@ -5,7 +5,14 @@ guid: 1961c6df-66b1-4e5d-a324-b5bd09df1186
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:35
-tags: concurrent transactions, entity record locking, process optimization, error handling, performance improvement
+tags:
+  - Asynchronous Processes
+  - Best Practices
+  - Business Processes
+  - Data Integrity
+  - Entities
+  - Logic
+  - Performance
 audience:
   - Developer
   - Architect

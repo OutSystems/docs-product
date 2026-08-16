@@ -1,6 +1,10 @@
 ---
 summary: Learn how to design, manage, and integrate business processes in your applications using OutSystems 11 (O11).
-tags: business process technology, process flow design, entity events, process integration, business process management
+tags:
+  - Business Processes
+  - Events
+  - Taskbox
+  - Workflows
 locale: en-us
 guid: ce023611-1cbc-4c61-a778-2a66167bc7ba
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,10 @@
 ---
 summary: Explore process design patterns for improved readability and performance in OutSystems 11 (O11).
-tags: application development, process design, performance optimization, readability improvement, workflow best practices
+tags:
+  - Best Practices
+  - Business Processes
+  - Performance
+  - Workflows
 locale: en-us
 guid: 6bb2ff5a-25b3-4d09-8863-08fc0896b4c8
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -12,6 +12,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - understand
 topic:
   - extend-processes-entities

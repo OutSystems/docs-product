@@ -1,5 +1,5 @@
 ---
-summary: Learn how to design polling of external systems using OutSystems 11 (O11) for efficient data synchronization and process continuation.
+summary: Polling external systems in OutSystems 11 (O11) using Wait activities and OnClose callbacks to pause a process until an external condition, such as SAP invoice approval, is met.
 locale: en-us
 guid: 4a3be3da-ce0d-4940-a534-60a2c22468cf
 app_type: traditional web apps, mobile apps, reactive web apps

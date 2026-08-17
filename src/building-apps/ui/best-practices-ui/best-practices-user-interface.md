@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ui optimization, performance improvement, ajax optimization, viewstate management, caching strategies
+tags:
+  - Best Practices
+  - Caching
+  - JavaScript
+  - Optimization
+  - Performance
+  - Screens
+  - UI
 audience:
   - Front-end developer
   - Developer
@@ -13,6 +20,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+isautopublish: true
 ---
 
 # Best practices for enhancing UI performance
@@ -69,7 +77,7 @@ Using many records and record lists, will cause the page Viewstate to grow consi
 
 When splitting screens, the customer needs and the whole application logic must be accounted for. Logic must be reused and it's possible that just splitting the screen by half won't do the trick. Splitting in more than two parts, or unevenly, may be the best way to do it.
 
-## Cache, baby, cache!
+## Cache screens and blocks
 
 ### Description
 
@@ -123,7 +131,7 @@ Placing large chunks of JavaScript code in your screen through expressions will 
 
 This is a good idea because it enables reusability between modules and encapsulates the JS logic. Always use it on the JavaScript frameworks. However, for custom JavaScript, it may be a problem when you need to use local widget ids.
 
-## JavaScript Loading Delay
+## JavaScript loading delay
 
 ### Description
 

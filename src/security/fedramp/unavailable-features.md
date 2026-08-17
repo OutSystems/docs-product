@@ -59,7 +59,7 @@ External database and service connections from your applications are supported a
 
 ## Infrastructure
 
-**[Cross-Region Disaster Recovery](../../setup-infra-platform/setup/possible-setups/ha-scalability/xrdr.md)** isn't available. High availability across multiple [AWS Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) within the US East region is included for every customer.
+**[Cross-Region Disaster Recovery](../../setup-infra-platform/setup/possible-setups/ha-scalability/xrdr.md)** isn't available. High availability across multiple [AWS Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) within your assigned region is included for every customer.
 
 ## Log streaming
 

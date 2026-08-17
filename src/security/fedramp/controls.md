@@ -51,7 +51,7 @@ The following table maps common FedRAMP Certification Class C control areas to h
 | Access control | Knox Systems generates and administers the AWS accounts, Virtual Private Clouds (VPCs), and subnets. All traffic enters a Knox-administered environment. |
 | System and communications protection | Data is encrypted, with Knox Systems holding the encryption keys. Service Studio is configured for Federal Information Processing Standards (FIPS) compliance, and data is kept within the FedRAMP authorization boundary. |
 | Audit and accountability | Knox Systems monitors OutSystems 11 and facilitates monthly reporting and annual third-party compliance audits. |
-| Contingency planning | High availability across multiple AWS Availability Zones within the US East region is included for every customer. |
+| Contingency planning | High availability across multiple AWS Availability Zones within your assigned region is included for every customer. |
 | Personnel security | All support personnel with access to the OutSystems FedRAMP platform are US-based, US citizens, vetted by Knox Systems and OutSystems. |
 
 ## Authorization and compliance artifacts

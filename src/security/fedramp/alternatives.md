@@ -52,7 +52,7 @@ The O11/ODC Connector isn't available, and OutSystems FedRAMP can't link to non-
 
 ## Cross-region disaster recovery
 
-Cross-Region Disaster Recovery isn't available. High availability across multiple [AWS Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) within the US East region is included for every customer, so your environment stays available if a single data center fails.
+Cross-Region Disaster Recovery isn't available. High availability across multiple [AWS Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) within your assigned region is included for every customer, so your environment stays available if a single data center fails.
 
 ## Log streaming
 

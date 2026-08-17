@@ -1,5 +1,5 @@
 ---
-summary: OutSystems FedRAMP is a Certification Class C (Moderate) version of OutSystems 11 (O11), hosted by Knox Systems on AWS US East for US federal agencies.
+summary: OutSystems FedRAMP is a Certification Class C (Moderate) version of OutSystems 11 (O11), hosted by Knox Systems on AWS in the US for US federal agencies.
 tags:
   - Architecture
   - Authorization
@@ -28,7 +28,7 @@ OutSystems FedRAMP is a FedRAMP certified version of OutSystems 11 designed for 
 
 ## Hosting and authorization
 
-OutSystems FedRAMP is hosted and operated by [Knox Systems](https://knoxsystems.com/platform) on Amazon Web Services (AWS) US East (North Virginia). It's an OutSystems-managed cloud offering. Customers don't have direct access to the underlying infrastructure or the ability to configure it themselves.
+OutSystems FedRAMP is hosted and operated by [Knox Systems](https://knoxsystems.com/platform) on Amazon Web Services (AWS), in one of the following regions: US East (North Virginia), US East (Ohio), US West (North California), or US West (Oregon). It's an OutSystems-managed cloud offering. Customers don't have direct access to the underlying infrastructure or the ability to configure it themselves.
 
 Knox Systems is FedRAMP certified at Certification Class C, which aligns with the [**Moderate**](https://csrc.nist.gov/pubs/fips/199/final) impact level. OutSystems 11 operates under Knox’s [Authority to Operate (ATO)](https://cic.gsa.gov/basics/cloud-security). Verify the certification on the [FedRAMP Marketplace](https://www.fedramp.gov/marketplace/products/F1206111371/), where OutSystems 11 is listed under Knox Systems.
 
@@ -36,10 +36,10 @@ Knox Systems is FedRAMP certified at Certification Class C, which aligns with th
 
 The following details apply to OutSystems FedRAMP:
 
-* **Region**: AWS US East (North Virginia)
+* **Region**: AWS US East (North Virginia), US East (Ohio), US West (North California), or US West (Oregon)
 * **Domain**: `osgov-cloud.com` by default. Custom domains are available on request via a support case.
 * **Database**: SQL Server. Oracle isn't available.
-* **High availability**: Your environment runs across multiple [AWS Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) within US East, so a single data-center failure doesn't cause downtime.
+* **High availability**: Your environment runs across multiple [AWS Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) within your assigned region, so a single data-center failure doesn't cause downtime.
 * **Support**: 24x7 support is included.
 
 ## Architecture

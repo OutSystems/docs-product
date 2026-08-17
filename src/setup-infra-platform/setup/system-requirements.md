@@ -71,38 +71,89 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ### Database management system {#ps-database}
 
-Use the same type of database engine for all three 3 databases in Platform Server (platform and apps, logs, and session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL database for the logs/session databases (or any other combination).
+Use the same type of database engine for all three databases in Platform Server (platform and apps, logs, and session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL for the logs/session databases (or any other combination). The only exception is the session database, which can use Redis and be combined with any of the supported relational database engines.
 
-* Microsoft SQL Server supported versions<sup>1, 2</sup> and respective supported compatibility levels:
+<div class="info" markdown="1">
+OutSystems only supports database versions that are supported by their respective vendor.
+<br/>
+<br/>
+Future revisions of OutSystems may require the installation of an update within the major versions of each supported database engine.
+</div>
+
+#### Microsoft SQL Server {#ps-sql-server}
+
+OutSystems supports Microsoft SQL Server with the following considerations:
+
+* Supported versions<sup>1</sup> and respective supported compatibility levels:
 
     | 2016 | 2017 | 2019 | 2022 | 2025 |
     | ---- | ---- | ---- | ---- | ---- |
     | 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150, 170 |
 
-* Azure SQL Database, with compatibility level between 130 and 150
-* Oracle<sup>3, 4</sup> 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
+* These versions are also supported when running on [Amazon RDS](#amazon-database) or Azure virtual machine
 
 <div class="info" markdown="1">
 
 <sup>1</sup> Requires Web Edition or higher. Developer and Express editions of Microsoft SQL Server (any version) aren't supported.
-<br/>
-<br/>
-<sup>2</sup> SQL Server 2014 stopped being supported from Platform Server version 11.33 onwards.
-<br/>
-<br/>
-<sup>3</sup> Oracle 18c stopped being supported from Platform Server version 11.33 onwards. It was initially supported from Platform Server 11 – Release Oct.2019 CP2.
-<br/>
-<br/>
-<sup>4</sup> Oracle 12c stopped being supported from Platform Server version 11.33 onwards.
-<br/>
-<br/>
- OutSystems only supports Database versions that are supported by their respective vendor.
-<br/>
-<br/>
-
-Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
 </div>
+
+##### Out of support
+
+* SQL Server 2014 support ended in Platform Server version 11.33
+
+#### Azure SQL {#ps-azure-sql}
+
+OutSystems supports Microsoft Azure SQL with the following considerations:
+
+* The compatibility level must be 130, 140, 150 or 170.
+* The database service tier must be at least "S3".
+* The MDC (Multiple Database Catalogs) feature isn't supported.
+* Connecting to Azure SQL using Windows authentication isn't supported.
+* Private endpoints aren't supported, due to a limitation on how Microsoft implements them.
+* Customizing the timezone from UTC isn't supported in Azure SQL.
+
+#### Azure SQL Managed Instance {#ps-azure-sql-managed-instance}
+
+OutSystems supports Microsoft Azure SQL Managed Instance with the following considerations:
+
+* The compatibility level must be 170, supported since Platform Server 11.43<sup>1</sup>
+* The service tier must be at least General Purpose (vCore-based pricing model). Business Critical is also supported
+* The MDC (Multiple Database Catalogs) feature is supported
+* Windows Authentication is supported via Microsoft Entra ID, using Kerberos-based authentication. This requires Microsoft Entra Connect synchronization
+* Private endpoints are not supported natively via Azure Private Link
+* Timezone customization is supported, but only at instance creation time. You can't change the timezone of an existing instance after provisioning
+* The instance must be deployed inside a virtual network (VNet). Ensure proper subnet delegation and network security group (NSG) rules are in place for connectivity to the OutSystems Platform Server
+
+<div class="info" markdown="1">
+
+<sup>1</sup> Ensure the engine SQL Server 2025 (compatibility level 170) is specifically selected.
+
+</div>
+
+The following table summarizes the differences between Azure SQL and Azure SQL Managed Instance support in OutSystems:
+
+| Feature | Azure SQL | Azure SQL Managed Instance |
+| ------- | ------------------ | -------------------------- |
+| Compatibility level (validated) | 130, 140, 150, 170 | 170 |
+| Minimum service tier | S3 (DTU model) | General Purpose (vCore model) |
+| Windows Authentication | Not supported | Supported via Microsoft Entra ID |
+| Private endpoints | Not supported | Not supported |
+| Timezone customization | Not supported | Supported at instance creation only |
+| MDC (Multiple Database Catalogs) | Not supported | Supported |
+| Network access | Public or VNet endpoint | VNet only |
+
+#### Oracle {#ps-oracle}
+
+OutSystems supports Oracle with the following considerations:
+
+* Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
+    * This version is also supported when running on [Amazon RDS](#amazon-database)
+
+##### Out of support
+
+* Oracle 18c support ended in Platform Server version 11.33. It was initially supported from Platform Server 11 – Release Oct.2019 CP2
+* Oracle 12c support ended in Platform Server version 11.33
 
 ### Additional software requirements {#ps-additional-software}
 
@@ -207,50 +258,33 @@ The database instance class must fulfill the following requirements:
 
 Example of a DB instance class fulfilling these requirements: "db.t2.medium".
 
-Oracle 19c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP3.
-
-<div class="info" markdown="1">
-
-* Oracle 18c stopped being supported from Platform Server version 11.33 onwards. It was initially supported from Platform Server 11 – Release Oct.2019 CP2.
-
-* Oracle 12c stopped being supported from Platform Server version 11.33 onwards.
-
-</div>
-
 For more information on the available DB instance classes, refer to [Amazon's DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html).To learn more about Amazon RDS limitations, refer to [Amazon RDS System Requirements](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html).
-
-## Microsoft Azure considerations {#azure-considerations}
-
-OutSystems supports Microsoft Azure SQL Database with the following considerations:
-
-* The compatibility level must be between 130 and 150.
-* The database service tier must be at least "S3".
-* The MDC (Multiple Database Catalogs) feature isn't supported.
-* Connecting to Azure SQL database using Windows authentication isn't supported.
-* Private endpoints aren't supported, due to a limitation on how Microsoft implements them.
-* Customizing the timezone from UTC isn't supported in Azure SQL database.
-
-OutSystems also supports SQL Server running on an Azure virtual machine.
 
 ## Integration with external systems {#external-systems}
 
 The following systems are certified to integrate with OutSystems.
 
-### SQL Server database {#sql-server}
+### Microsoft SQL Server database {#sql-server}
 
-* Supported versions<sup>1</sup> and respective supported compatibility levels:
+* Supported versions and respective supported compatibility levels:
 
-| 2016 | 2017 | 2019 | 2022 | 2025<sup>2</sup> |
-| ---------- | ------------- | ----------------- | ------------------ | ------ |
+| 2016 | 2017 | 2019 | 2022 | 2025<sup>1</sup> |
+| ---- | ---- | ---- | ---- | ---- |
 | 130 | 130, 140 | 130, 140, 150 | 130, 140, 150 | 130, 140, 150, 170 |
 
-<sup>1</sup> Versions 2008 to 2014 stopped being supported from Platform Server version 11.33 onwards.
+<sup>1</sup> Supported since Platform Server 11.42.0. SQL Server 2025 has breaking changes to the linked servers feature. Refer to [Microsoft's documentation](https://learn.microsoft.com/en-us/sql/database-engine/breaking-changes-to-database-engine-features-in-sql-server-2025?view=sql-server-ver17#linked-server-connections-fail-after-an-upgrade) for more information.
 
-<sup>2</sup> Supported since Platform Server 11.42.0. SQL Server 2025 has breaking changes to the linked servers feature. Refer to [Microsoft's documentation](https://learn.microsoft.com/en-us/sql/database-engine/breaking-changes-to-database-engine-features-in-sql-server-2025?view=sql-server-ver17#linked-server-connections-fail-after-an-upgrade) for more information.
+#### Out of support
+
+* SQL Server 2008 to 2014 support ended in Platform Server version 11.33
 
 ### Azure SQL database {#azure-sql}
 
-* Azure SQL Database with compatibility level between 130 and 150
+* Azure SQL with compatibility level 130, 140, 150 or 170
+
+### Azure SQL Managed Instance database {#azure-sql-managed-instance}
+
+* Azure SQL Managed Instance with compatibility level 170, since Platform Server 11.43
 
 ### Oracle database {#oracle}
 
@@ -258,35 +292,31 @@ The following systems are certified to integrate with OutSystems.
 
 The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
-<div class="info" markdown="1">
+#### Out of support
 
-* Oracle 18c stopped being supported from Platform Server version 11.33 onwards. It was initially supported from Platform Server 11 – Release Oct.2019 CP2.
-
-* Oracle 12c stopped being supported from Platform Server version 11.33 onwards.
-
-* Oracle 11g R2 stopped being supported from Platform Server version 11.25 onwards.
-
-* Oracle versions earlier than 11g R2 stopped being supported from OutSystems 11 Platform Server Release Oct.2019 onwards.
-
-</div>
+* Oracle 18c support ended in Platform Server version 11.33. It was initially supported from Platform Server 11 – Release Oct.2019 CP2
+* Oracle 12c support ended in Platform Server version 11.33
+* Oracle 11g R2 support ended in Platform Server version 11.25
+* Support for Oracle versions earlier than 11g R2 ended in Platform Server Release Oct.2019
 
 ### MySQL database {#mysql}
 
-* MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)<sup>1</sup>
-* MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)<sup>1</sup>
 * MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
 * MySQL 8.4 (8.4.3 or later within the 8.3 version, all editions), since Platform Server 11.38.0
 
-<sup>1</sup> This version is no longer supported by MySQL and isn't supported by OutSystems starting with Platform Server version 11.32.0.
+#### Out of support
+
+* MySQL 5.6 support ended in Platform Server version 11.32.0
+* MySQL 5.7 support ended in Platform Server version 11.32.0
 
 ### PostgreSQL database {#postgresql-database}
 
-* PostgreSQL 12.x.x, since Platform Server 11.15.0<sup>1</sup>
-* PostgreSQL 13.x.x, since Platform Server 11.15.0<sup>2</sup>
 * PostgreSQL 17.x.x, since Platform Server 11.38.0
 
-<sup>1</sup> This version is no longer supported by PostgreSQL and isn't supported by OutSystems starting with Platform Server version 11.38.0.
-<sup>2</sup> This version is no longer supported by PostgreSQL and isn't supported by OutSystems starting with Platform Server version 11.40.0.
+#### Out of support
+
+* PostgreSQL 12.x.x support ended in Platform Server version 11.38.0. It was initially supported from Platform Server 11.15
+* PostgreSQL 13.x.x support ended in Platform Server version 11.40.0. It was initially supported from Platform Server 11.15
 
 ### Aurora PostgreSQL database {#aurora-postgresql}
 

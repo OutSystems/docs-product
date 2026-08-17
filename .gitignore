@@ -16,5 +16,7 @@ styles/*
 # Ignore all mcp.json files anywhere in the repo
 **/mcp.json
 
+# MacOS artifacts
+.DS_Store
 # Ignore temp files
 temp/

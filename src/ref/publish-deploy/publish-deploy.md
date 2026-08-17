@@ -1,6 +1,10 @@
 ---
-summary: Explore the processes of publishing, deploying, republishing, and redeploying apps in OutSystems 11 (O11).
-tags: ide usage, reactive web apps, tutorials for beginners, application lifecycle management
+summary: 'OutSystems 11 (O11) publish, deploy, republish, and redeploy explained: what each action does, when to use it, and how they differ.'
+tags:
+  - 1-Click Publish
+  - Deploy
+  - Development lifecycle
+  - Lifecycle
 locale: en-us
 guid: 0C021138-FA51-4A62-97E2-EC6C030FFDA4
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -14,6 +18,7 @@ outsystems-tools:
   - service center
 coverage-type:
   - remember
+  - understand
 isautopublish: true
 ---
 
@@ -42,28 +47,26 @@ button. Then select **1-Click Publish with message**. You can also use
 
 In the dialog that opens, type your message and publish. The message is
 optional and supports up to 2,000 characters. After publishing, the message is
-a permanent, read-only record attached to that module version.
-
-You can review messages for previous module versions in **Service Center** >
-**Factory** > **Modules**. Select the module. The **Versions** tab displays
-each version with its message.
-
-<div class="info" markdown="1">
-
-At the database level, publish messages are stored in the `OSSYS_CommitMessage` system table. Each record links a message to a module version through the `EspaceVersionId` foreign key (referencing the `Espace_Version` entity) and the corresponding `Message` column.
-
-</div>
+a permanent, read-only record attached to that module version. For
+information about viewing and querying these messages, refer to
+[Track what your team publishes](#track-what-your-team-publishes).
 
 In **Service Center**, click the **Publish** button.
 
 ![Screenshot of the Service Center interface with the 'Publish' button highlighted](images/publish-sc.png "Publishing in Service Center")
+
+## Track what your team publishes
+
+When a team member publishes a module version, they can leave a message describing what they changed. Reading these messages lets you see what a teammate changed without asking them directly.
+
+You can view these messages in **Service Center** > **Factory** > **Modules**. Select the module, then check the **Versions** tab to see each version with its message. To query messages programmatically, for example from a custom tool or dashboard, use the public, read-only `Espace_CommitMessage` entity.
 
 ## Deploy
 
 Deploying an app takes a version of the app from one environment and makes it available to a defined target environment, such as Quality or Production.  
 Deploying an app and its modules from one environment to another implies that those modules  are recompiled in the target environment. The compilation ensures that the modules are updated according to the producers available in the target environment.  
 
-![Flowchart illustrating the deployment process of an app using LifeTime](images/deploy-lt.png "Deployment Process")
+![Flowchart illustrating the deployment process of an app using LifeTime](images/deploy-lt.png "LifeTime App Deployment Flowchart")
 
 You can deploy your apps [using LifeTime](../../deploying-apps/deploy-an-application.md) or [using the LifeTime API](../apis/lifetime-deployment/examples/api-deploy-app.md).  
 
@@ -71,7 +74,7 @@ You can deploy your apps [using LifeTime](../../deploying-apps/deploy-an-applica
 
 Sometimes, when deploying an app to a target environment, LifeTime detects the apps consuming functionality from the app being deployed. These consumer apps would have outdated dependencies with the current deployment. In the deployment plan, LifeTime suggests republishing these consumer apps in the target environment to ensure all its dependencies are up to date. Republishing these apps means that their code is recompiled and distributed to the application server. The version of those apps does not change as there were no changes made to those apps. You can choose not to republish these consumer apps, but it may lead to runtime errors.  
 
-![Screenshot showing the LifeTime deployment plan suggesting republishing of consumer apps with outdated dependencies](images/deploy-dependencies-lt.png "Deploying with Dependencies")
+![Screenshot showing the LifeTime deployment plan suggesting republishing of consumer apps with outdated dependencies](images/deploy-dependencies-lt.png "LifeTime Republish Consumer Apps")
 
 Learn more about [deploying an app with dependencies](../../deploying-apps/deploy-an-application-with-dependencies.md).
 

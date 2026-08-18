@@ -13,9 +13,6 @@ description: >-
   Trigger phrases: "validate screenshots", "review screenshots", "check my
   screenshots", "are these screenshots good", "screenshot review".
 allowed-tools: Read,Bash,Edit,AskUserQuestion
-metadata:
-  exclude-repos:
-    - OutSystems/training-internal
 ---
 
 # Validate screenshots

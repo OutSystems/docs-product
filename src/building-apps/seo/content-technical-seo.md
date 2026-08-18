@@ -1,6 +1,11 @@
 ---
 summary: Explore how OutSystems 11 (O11) enhances both content and technical SEO to improve website rankings and user experience.
-tags: seo best practices, url configuration, site optimization, crawlability improvement, page ranking
+tags:
+  - Best Practices
+  - Front-End
+  - Optimization
+  - Traditional Web
+  - Web
 locale: en-us
 guid: E0CB30E3-30B2-4593-AACF-97765EB80D45
 app_type: traditional web apps, reactive web apps

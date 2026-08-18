@@ -1,6 +1,11 @@
 ---
 summary: Explore SEO-friendly URL configurations for Traditional Web apps in OutSystems 11 (O11).
-tags: seo, url configuration, user experience, search engine optimization, platform server administration
+tags:
+  - Logging
+  - Platform Server
+  - Traditional Web
+  - UX
+  - Web
 helpids: 30374
 locale: en-us
 guid: 641c106a-d688-42a3-9b73-8fd9791a673b

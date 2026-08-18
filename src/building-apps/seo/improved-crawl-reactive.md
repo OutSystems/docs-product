@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) enhances SEO for Reactive Web apps by optimizing crawler accessibility through effective use of sitemaps and robots.txt files.
-tags: seo optimization, crawler accessibility, sitemaps, robots.txt, search engine indexing
+tags:
+  - Front-End
+  - Optimization
+  - REST
+  - Screens
+  - Web
+  - Web services
 locale: en-us
 guid: 7D2154CF-186A-4671-89FA-88C7C25FBBC8
 app_type: traditional web apps, reactive web apps

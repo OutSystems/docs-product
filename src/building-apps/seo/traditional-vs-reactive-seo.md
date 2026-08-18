@@ -1,6 +1,13 @@
 ---
 summary: Explore SEO configurations for OutSystems 11 (O11) Reactive and Traditional Web apps, detailing differences in module aliases and page rules setups.
-tags: seo, service center, custom url, configuration, service studio
+tags:
+  - Front-End
+  - Optimization
+  - Screens
+  - Settings
+  - Traditional Web
+  - UI
+  - Web
 locale: en-us
 guid: 74EB0BCA-31AD-4EA8-8892-6FA2A2011664
 app_type: traditional web apps, reactive web apps

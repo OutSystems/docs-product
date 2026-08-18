@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) features widgets for creating lightweight, compatible emails in Service Studio.
-tags: email design, email widgets, user interface components, application development, email security
+tags:
+  - Front-End
+  - Mobile app
+  - Pagination
+  - Security
+  - Table
+  - UI
+  - Widgets
 locale: en-us
 guid: 3e6b3c93-dee6-4e15-860b-fa9a627825ba
 app_type: traditional web apps, mobile apps, reactive web apps

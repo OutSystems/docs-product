@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) integrates with prerender.io to enhance SEO for reactive applications by pre-rendering content for better indexing by search engines.
-tags: seo optimization, prerender.io integration, single page applications, core web vitals, client-side rendering
+tags:
+  - Front-End
+  - JavaScript
+  - Mobile app
+  - Optimization
+  - Performance
+  - Web
 locale: en-us
 guid: 528FED29-0646-431E-98D1-9BDF5471068A
 app_type: mobile apps, reactive web apps

@@ -15,6 +15,7 @@ outsystems-tools:
 coverage-type:
   - remember
   - understand
+  - apply
 ---
 
 # Monitor Timers

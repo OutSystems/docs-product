@@ -1,5 +1,5 @@
 ---
-summary: See how to use icons and images from different sources in your screens or blocks.
+summary: OutSystems 11 (O11) images and icons intro covering how to add visuals from local files, URLs, or binary data in screens and blocks.
 tags: user interface design, image resources, ui components, app development, platform specific tips
 locale: en-us
 guid: 0be5d44d-f84c-4f51-bd81-f0fd6fa22359

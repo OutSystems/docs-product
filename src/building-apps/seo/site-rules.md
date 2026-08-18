@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) enables SEO-friendly URLs for Reactive Web apps, requiring specific server and studio versions.
+summary: Site rules in OutSystems 11 (O11) let you customize domain URLs and app names in Service Center to improve SEO and simplify URL structure.
 tags: seo optimization, platform server, seo best practices, site rules
 locale: en-us
 guid: 3e81bb8b-4351-4533-b084-873a5e38fc2e

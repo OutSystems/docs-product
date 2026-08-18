@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use Timers for asynchronous tasks in OutSystems 11 (O11), managed by the OutSystems Scheduler Service.
+summary: OutSystems 11 (O11) Timers execute asynchronous logic on a schedule, managed by the Scheduler Service with priority, timeout, and session isolation rules.
 locale: en-us
 guid: 7b104f5a-3077-4eab-9dd0-90c28ade4b67
 app_type: traditional web apps, mobile apps, reactive web apps

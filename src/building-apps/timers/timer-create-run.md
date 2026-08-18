@@ -1,5 +1,5 @@
 ---
-summary: Explore how to create, schedule, and manually trigger Timers in OutSystems 11 (O11) for efficient task automation.
+summary: "OutSystems 11 (O11) Timers setup: create a Timer, configure its schedule at design or runtime, and trigger it with WakeTimer or Service Center."
 locale: en-us
 guid: 133d8c46-b36b-47de-9ad3-ca8e6460bb20
 app_type: traditional web apps, mobile apps, reactive web apps

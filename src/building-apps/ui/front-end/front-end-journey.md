@@ -1,6 +1,13 @@
 ---
 summary: Explore the front-end development process from UX concepts to code implementation using OutSystems 11 (O11) in this detailed guide.
-tags: ux design, ui design, front-end development, style guide, design systems
+tags:
+  - CSS
+  - Front-End
+  - Live Style Guide
+  - OutSystems UI
+  - Style Guides
+  - UI
+  - UX
 guid: c8a658b6-cda4-4222-a1c6-14a743e3f9e9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

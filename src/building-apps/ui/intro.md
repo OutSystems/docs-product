@@ -1,6 +1,13 @@
 ---
 summary: Explore the user interface architecture and components of OutSystems 11 (O11) for building responsive and consistent web and mobile applications.
-tags: ui framework, screen templates, style guide, web development, outsystems patterns
+tags:
+  - Live Style Guide
+  - OutSystems UI
+  - Screens
+  - Style Guides
+  - Templates
+  - UI
+  - UI Patterns
 locale: en-us
 guid: 5fa4c8b3-0ab5-4ac3-8696-40b0a55d340d
 app_type: traditional web apps, mobile apps, reactive web apps

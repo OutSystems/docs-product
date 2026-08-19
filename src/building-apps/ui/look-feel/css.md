@@ -1,6 +1,13 @@
 ---
 summary: Learn CSS customization in OutSystems 11 (O11) using its UI framework and Style Sheet Editor.
-tags: ide usage, reactive web apps, tutorials for beginners, css customization, ui design, theming
+tags:
+  - Blocks
+  - CSS
+  - Front-End
+  - OutSystems UI
+  - Screens
+  - Themes
+  - Traditional Web
 locale: en-us
 guid: d9c9539a-bb5f-4775-9abc-86c9ba2c36ad
 app_type: traditional web apps, mobile apps, reactive web apps

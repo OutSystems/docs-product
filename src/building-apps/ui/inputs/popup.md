@@ -1,6 +1,13 @@
 ---
 summary: Explore how to effectively implement and manage popups in OutSystems 11 (O11) for both Reactive Web and Mobile as well as Traditional Web applications.
-tags: ide usage, reactive web apps, tutorials for beginners, ui components, user experience
+tags:
+  - Front-End
+  - Mobile app
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - UX
+  - Widgets
 locale: en-us
 guid: f43cd1e1-13d3-4960-b025-4f75f9383ee8
 app_type: traditional web apps, mobile apps, reactive web apps

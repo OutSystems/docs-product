@@ -1,6 +1,13 @@
 ---
 summary: Explore how to display database-stored images in applications using OutSystems 11 (O11).
-tags: ide usage, reactive web apps, traditional web apps, binary data handling, image manipulation
+tags:
+  - Aggregates
+  - Front-End
+  - Mobile app
+  - Screens
+  - Traditional Web
+  - UI
+  - Widgets
 locale: en-us
 guid: 0e4fc725-6ba9-4e5e-8834-71ca8b4aa180
 app_type: traditional web apps, mobile apps, reactive web apps

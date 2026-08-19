@@ -1,5 +1,5 @@
 ---
-summary: Explore how to implement single-choice selection using radio buttons and button groups in OutSystems 11 (O11).
+summary: Radio Group and Button Group widgets in OutSystems 11 (O11) let you bind a variable to a single-choice input across Reactive Web, Mobile, and Traditional Web apps.
 tags: ide usage, reactive web apps, tutorials for beginners, ui design, form inputs
 locale: en-us
 guid: 3eb6105e-2157-472f-972f-f3cc133043a5

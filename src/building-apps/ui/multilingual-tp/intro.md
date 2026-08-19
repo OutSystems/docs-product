@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
   - platform server
 coverage-type:
+  - understand
   - apply
 topic:
   - translating-apps

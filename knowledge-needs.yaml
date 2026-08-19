@@ -1,0 +1,977 @@
+knowledge-needs:
+- name: (Creating Application) Logic
+  guid: b097750b-4f88-4094-a656-2a4359f14c85
+  topics:
+  - name: Creating Actions
+    id: creating-actions
+    subtopics:
+    - name: What are service actions/when to use service actions
+      id: service-actions-when-use
+    - name: Server-side vs client-side logic
+      id: server-vs-client-logic
+    - name: How to create an action
+      id: how-to-create-an-action
+    - name: Logic Flows
+      id: logic-flows
+    - name: What are client actions/when to use client actions
+      id: client-actions-when-use
+    - name: What are server actions/when to use server actions
+      id: server-actions-when-use
+  - name: Using Events
+    id: using-events
+    subtopics:
+    - name: System Events
+      id: system-events
+    - name: How to use Events
+      id: how-to-use-events
+    - name: Screen Events
+      id: screen-events
+    - name: UI elements Events
+      id: ui-elements-events
+  - name: Understanding Exceptions
+    id: understanding-exceptions
+    subtopics:
+    - name: How to handle Exceptions
+      id: how-to-handle-exceptions
+  - name: Using Expressions
+    id: using-expressions
+    subtopics:
+    - name: Operands
+      id: operands
+    - name: When and how to write expressions
+      id: write-expressions-guide
+    - name: Scope
+      id: scope
+    - name: Operators
+      id: operators
+    - name: Functions
+      id: functions
+  - name: Debugging and troubleshooting logic
+    id: debug-troubleshoot-logic
+    subtopics:
+    - name: How to debug and troubleshoot application logic
+      id: debug-troubleshoot-app-logic
+  - name: Creating Variables
+    id: creating-variables
+    subtopics:
+    - name: Site properties / Settings
+      id: site-properties-settings
+    - name: Input Parameters
+      id: input-parameters
+    - name: Local Variables
+      id: local-variables
+    - name: Output Parameters
+      id: output-parameters
+    - name: How to use Variables
+      id: how-to-use-variables
+  - name: Using Structures
+    id: using-structures
+    subtopics:
+    - name: How to create structures
+      id: how-to-create-structures
+    - name: What are structures
+      id: what-are-structures
+- name: (Creating Basic) Application Security
+  guid: f89b0297-9ba2-48bd-9e84-b56614a7e620
+  topics:
+  - name: User Roles
+    id: user-roles
+    subtopics:
+    - name: Anonymous
+      id: anonymous
+- name: (Creating an Application) Architecture
+  guid: 9ce4fe11-dcc9-4b0f-b3ea-545557accdec
+  topics:
+  - name: Why is architecture relevant?
+    id: architecture-relevance
+    subtopics:
+    - name: Basic architecture concepts
+      id: basic-architecture
+    - name: Importance of having good architecture from day one
+      id: good-architecture-value
+  - name: How to build app architecture
+    id: app-architecture-basics
+    subtopics:
+    - name: Map OS concepts with "rest of the world" concepts
+      id: map-os-to-global-concepts
+  - name: Modules
+    id: modules
+    subtopics:
+    - name: What are modules?
+      id: what-are-modules
+    - name: Difference between applications and modules
+      id: apps-vs-modules
+- name: (Modeling, Consuming and Using) Data
+  guid: 184681b2-96da-4711-9efd-53172730bbed
+  topics:
+  - name: Showing data on a screen/block
+    id: display-data-screen-block
+    subtopics:
+    - name: Replace sample data in a UI element
+      id: replace-ui-sample-data
+    - name: Bind data to a UI element
+      id: bind-data-to-a-ui-element
+  - name: Securing Data
+    id: securing-data
+    subtopics:
+    - name: Security validations on CRUD
+      id: security-crud-validation
+  - name: Getting Data from your systems of records
+    id: fetch-data-system-records
+    subtopics:
+    - name: Get data from external db
+      id: get-data-from-external-db
+  - name: Adding test data
+    id: adding-test-data
+    subtopics:
+    - name: How to bootstrap test data from an excel file
+      id: bootstrap-test-data-excel
+    - name: How to edit data in Service Studio
+      id: edit-data-service-studio
+  - name: Modeling Data
+    id: modeling-data
+    subtopics:
+    - name: Data relationships
+      id: data-relationships
+    - name: Static Entities
+      id: static-entities
+    - name: Create/manipulate entities
+      id: create-edit-entities
+  - name: Querying data
+    id: querying-data
+    subtopics:
+    - name: Joins
+      id: joins
+    - name: Filter data
+      id: filter-data
+    - name: Aggregates
+      id: aggregates
+  - name: Sharing Data defined in OutSystems
+    id: share-data-outsystems
+    subtopics:
+    - name: Allow other apps to change data
+      id: allow-apps-edit-data
+    - name: Allow other apps to read data
+      id: allow-apps-read-data
+- name: API testing
+  guid: 195d823e-8f16-4d32-a66d-7766c6bdd032
+  topics:
+  - name: Fundamentals of API testing strategies
+    id: api-testing-strategy
+    subtopics:
+    - name: API testing strategies
+      id: api-testing-strategies
+  - name: Manual API testing
+    id: manual-api-testing
+    subtopics:
+    - name: Manual API tests
+      id: manual-api-tests
+- name: Access Control and Privileges
+  guid: ccc4b848-0f34-4854-bdc3-76e15fd4f42c
+- name: Accessibility
+  guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
+  topics:
+  - name: Design for accessibility
+    id: design-for-accessibility
+  - name: Implement accessibility features (screen readers, contrast...)
+    id: accessibility-screen-reader
+  - name: Translating apps
+    id: translating-apps
+- name: Advanced app architecture
+  guid: d59b4004-582f-44ee-a1ae-eb75787ba1e0
+  topics:
+  - name: SOA and Microservices
+    id: soa-and-microservices
+- name: Advanced data handling
+  guid: c6a945c1-deaa-4266-9b94-d7b31d9fdf07
+  topics:
+  - name: When to use Aggregates vs SQL Nodes
+    id: agg-vs-sql
+  - name: Stored procedures
+    id: stored-procedures
+  - name: Aggregating data
+    id: agregating-data
+  - name: SQL
+    id: sql
+    subtopics:
+    - name: Query parameters
+      id: query-parameters
+    - name: Use SQL
+      id: use-sql
+    - name: Implement dynamic SQL statements correctly
+      id: dynamic-sql-correctly
+  - name: Compound data
+    id: compound-data
+  - name: Dealing with rollbacks
+    id: dealing-with-rollbacks
+- name: Advanced data modeling
+  guid: 9a38cf20-a3dc-491a-8a25-c261c830e9c7
+  topics:
+  - name: Data performance, caching
+    id: data-performance-caching
+  - name: Indexes
+    id: indexes
+  - name: Enforcing data integrity
+    id: enforcing-data-integrity
+  - name: Exposing data via REST webservices
+    id: rest-webservice-data
+  - name: Data isolation
+    id: data-isolation
+  - name: Data archiving / cold data
+    id: data-archiving-cold-data
+  - name: Data synchronization
+    id: data-syncronization
+- name: Advanced integrations
+  guid: fb5d71a9-9ac6-4fda-adea-e89546e0af89
+  topics:
+  - name: Webservice customization
+    id: webservice-customization
+    subtopics:
+    - name: Customize request and response
+      id: custom-request-response
+    - name: API rate limit
+      id: api-rate-limit
+    - name: Customize headers
+      id: customize-headers
+  - name: Integration Patterns
+    id: integration-patterns
+  - name: Extensions
+    id: extensions
+    subtopics:
+    - name: Integrate using custom code
+      id: custom-code-integration
+    - name: Integrate with legacy systems
+      id: legacy-systems-integration
+  - name: Handling webservice errors
+    id: handle-webservice-errors
+- name: Advanced security
+  guid: dedf532a-fe2a-4e93-8316-731133ad6ba1
+  topics:
+  - name: Handling sensitive data
+    id: handling-sensitive-data
+    subtopics:
+    - name: Data masking
+      id: data-masking
+    - name: Data encryption
+      id: data-encryption
+  - name: External access control
+    id: external-access-control
+    subtopics:
+    - name: ACLs
+      id: acls
+    - name: Webservice authentication
+      id: webservice-authentication
+- name: Advanced workflows
+  guid: 7a84e09e-c48c-404f-8d9f-728b9f78c88c
+  topics:
+  - name: Using callbacks
+    id: using-callbacks
+  - name: Best practices for scalable processes
+    id: scalable-process-best-practices
+  - name: Extend processes (process entities, APIs, reports)
+    id: extend-processes-entities
+  - name: Event driven processes
+    id: event-driven-processes
+- name: App Configuration Management
+  guid: 22a71e1c-da01-468c-9633-29c791104e7e
+  topics:
+  - name: App configuration
+    id: app-configuration
+    subtopics:
+    - name: Configure app settings after a deployment
+      id: config-app-after-deploy
+    - name: App settings
+      id: app-settings
+    - name: Configure app settings before a deployment
+      id: config-app-before-deploy
+  - name: Runbooks for app configuration management
+    id: runbook-config-mgmt
+    subtopics:
+    - name: Manual runbooks for app configuration
+      id: manual-runbook-config
+  - name: Automated runbooks for app configuration management
+    id: automated-runbook-mgmt
+    subtopics:
+    - name: Automated runbooks for app configuration
+      id: automated-runbook-config
+- name: App architecture
+  guid: 6c1b124d-3ad6-456a-926c-0a843667cd0a
+  topics:
+  - name: Refactoring
+    id: refactoring
+  - name: Validating your application architecture
+    id: validate-app-architecture
+  - name: Architecture Canvas
+    id: architecture-canvas
+  - name: Application composition
+    id: application-composition
+- name: Asynchronous processes
+  guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
+  topics:
+  - name: How to process data using Timers
+    id: process-data-timers
+  - name: How to process massive amounts of data in Batch Processing
+    id: batch-data-processing
+- name: Basic integrations
+  guid: c0892f27-0055-4fe6-bb6f-e5a308d37b2a
+  topics:
+  - name: Integration Patterns - Basics (decision tree)
+    id: integration-pattern-basics
+  - name: Expose webservices
+    id: expose-webservices
+    subtopics:
+    - name: Define methods
+      id: define-methods
+    - name: Error codes
+      id: error-codes
+    - name: Document APIs
+      id: document-apis
+    - name: Develop the logic of web services
+      id: webservice-logic-dev
+    - name: Troubleshoot webservices
+      id: troubleshoot-webservices
+  - name: Consume webservices
+    id: consume-webservices
+    subtopics:
+    - name: Changing endpoints
+      id: changing-endpoints
+    - name: Consume and refresh methods
+      id: consume-refresh-methods
+    - name: Structures
+      id: structures
+- name: Basic workflows
+  guid: 368a1c9e-0f21-4970-9645-577590bbf1ca
+  topics:
+  - name: Emails
+    id: emails
+    subtopics:
+    - name: How to send emails
+      id: how-to-send-emails
+    - name: How to create emails
+      id: how-to-create-emails
+  - name: BPT
+    id: bpt
+    subtopics:
+    - name: Connecting processes to the UI
+      id: connect-process-ui
+    - name: Understanding asynchronous processes
+      id: async-processes-basics
+    - name: Triggering processes, process flows
+      id: trigger-processes
+    - name: BPMN notation
+      id: bpmn-notation
+    - name: Patterns for processes (automatic, human, decision)
+      id: process-decision-patterns
+- name: Component testing
+  guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
+  topics:
+  - name: Fundamentals of component testing strategies
+    id: component-test-fundamentals
+    subtopics:
+    - name: Component testing strategies
+      id: component-test-strategy
+  - name: Manual component testing
+    id: manual-component-testing
+    subtopics:
+    - name: Manual component tests
+      id: manual-component-tests
+  - name: Automated component testing
+    id: component-test-automation
+    subtopics:
+    - name: Service virtualization
+      id: service-virtualization
+    - name: Testing small units of code
+      id: test-small-units
+    - name: Automated component tests
+      id: automated-component-tests
+- name: Consume UI
+  guid: 349f50f2-cb79-41c7-9e8b-f113cbb3e965
+  topics:
+  - name: Use a live style guide
+    id: use-a-live-style-guide
+  - name: Reuse UI
+    id: reuse-ui
+  - name: Front end architecture
+    id: front-end-architecture
+  - name: Customize style
+    id: customize-style
+    subtopics:
+    - name: Customize styles in your app
+      id: customize-app-styles
+    - name: Creating a theme
+      id: creating-a-theme
+- name: Creating UI
+  guid: a6b567df-2deb-4736-bd6d-cf144a9c6262
+  topics:
+  - name: Visibility conditions of inputs in App Editor
+    id: visibility-conditions-app-editor
+    subtopics:
+    - name: Removing visibility conditions in App Editor
+      id: remove-visibility-cond-app-editor
+    - name: Adding visibility conditions in App Editor
+      id: add-visibility-cond-app-editor
+    - name: Modify visibility conditions in App Editor
+      id: edit-visibility-cond-app-editor
+    - name: Identify existing visibility conditions in App Editor
+      id: id-visibility-cond-app-editor
+  - name: Business validations of user input in App Editor
+    id: biz-val-app-editor
+    subtopics:
+    - name: Removing validations in App Editor
+      id: remove-biz-val-app-editor
+    - name: Adding validations in App Editor
+      id: add-biz-val-app-editor
+    - name: Refine/Edit validations in App Editor
+      id: edit-biz-val-app-editor
+    - name: Identify existing validations in App Editor
+      id: id-auto-gen-val
+  - name: Adding UI Elements to a Screen
+    id: add-ui-elements
+    subtopics:
+    - name: Layouts
+      id: layouts
+    - name: Adding a Block
+      id: adding-a-block
+    - name: Adding a Widget or OS UI pattern
+      id: add-widget-ui-pattern
+    - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
+      id: ui-elements-accelerators
+  - name: Creating UI interactions
+    id: creating-ui-interactions
+    subtopics:
+    - name: Navigating between screens
+      id: navigate-screens
+    - name: Changing data with UI
+      id: changing-data-with-ui
+    - name: UI interactions in apps
+      id: ui-interactions-in-apps
+  - name: Securing UI
+    id: securing-ui
+    subtopics:
+    - name: Secure UI element
+      id: secure-ui-element
+    - name: Secure screen
+      id: secure-screen
+  - name: Basic front-end architecture
+    id: basic-frontend-arch
+    subtopics:
+    - name: Elements of UI in OutSystems (UI Flow, screen, UI element)
+      id: ui-elements-screen-blocks
+  - name: Creating Screens
+    id: creating-screens
+    subtopics:
+    - name: Create screen from scratch
+      id: create-screen-scratch
+    - name: Create screen using scaffolding
+      id: screen-scaffolding
+    - name: Create screen from screen template
+      id: screen-template
+- name: Deployment Management
+  guid: 2d8be9e7-a1a1-4c3b-943e-93ad568b32b0
+  topics:
+  - name: Manual deployment without an infrastructure management console
+    id: manual-deploy-no-console
+    subtopics:
+    - name: Publish a module in SC
+      id: publish-a-module-in-sc
+    - name: Create a solution in SC
+      id: create-a-solution-in-sc
+    - name: Publish a solution in SC
+      id: publish-a-solution-in-sc
+    - name: Publish an app in SC
+      id: publish-an-app-in-sc
+    - name: Publish an extension in SC
+      id: publish-extension-sc
+  - name: Basic deployment concepts
+    id: basic-deployment-concepts
+    subtopics:
+    - name: Dependencies
+      id: dependencies
+    - name: Solutions/Apps/Modules/Extensions
+      id: solutions-apps-modules
+    - name: Environments/Stages
+      id: environments-stages
+    - name: Deployment options
+      id: deployment-options
+  - name: Manual deployment with an infrastructure management console
+    id: manual-deploy-mgmt-console
+    subtopics:
+    - name: Tag a version
+      id: tag-a-version
+    - name: Dealing with dependencies during deployments
+      id: deploy-dependency-management
+    - name: Deployment plan
+      id: deployment-plan
+    - name: Deploy apps in LT/Portal
+      id: deploy-apps-in-lt-portal
+  - name: Advanced manual deployments
+    id: manual-advanced-deploy
+    subtopics:
+    - name: Selective Deployment Using Deployment Zones (self-managed)
+      id: selective-deploy-zones
+    - name: Deployments with no downtime
+      id: zero-downtime-deployments
+  - name: Automated deployments foundations
+    id: automated-deploy-basics
+    subtopics:
+    - name: Automating deployments with API
+      id: deployments-api-automation
+    - name: Service accounts for automatic deployments
+      id: service-accounts-deploy
+    - name: CI/CD foundations
+      id: ci-cd-foundations
+  - name: CI/CD pipelines
+    id: ci-cd-pipelines
+    subtopics:
+    - name: Integrate with external orchestrators for CD
+      id: external-orchestrator-cd
+- name: Develop for testability
+  guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
+  topics:
+  - name: Fundamentals of Domain Driven Design for testability
+    id: domain-driven-design-test
+    subtopics:
+    - name: Code isolation
+      id: code-isolation
+    - name: DDD and testability
+      id: ddd-and-testability
+    - name: Mapping tests to the Architecture Canvas
+      id: map-tests-architecture
+  - name: Test data
+    id: test-data
+    subtopics:
+    - name: Setup & teardown strategies for automation
+      id: setup-teardown-automation
+  - name: Develop UI for testability
+    id: testable-ui-development
+    subtopics:
+    - name: UI development for testability
+      id: testable-ui-dev
+- name: Developing Plugins
+  guid: 241c1f68-e8b9-4b5d-9e03-c1c014240027
+  topics:
+  - name: Wrap a Cordova plugin as an OS Plugin
+    id: wrap-cordova-plugin
+- name: Getting started with app development
+  guid: 08c8e683-27ea-4656-8559-e145b5e05086
+  topics:
+  - name: Using Service Studio
+    id: using-service-studio
+    subtopics:
+    - name: Log in to an environment
+      id: log-in-to-an-environment
+    - name: Service Studio overview
+      id: service-studio-overview
+    - name: Download and set up
+      id: download-and-set-up
+  - name: Publish and share apps
+    id: publish-and-share-apps
+    subtopics:
+    - name: Try your app and share with end-users
+      id: test-share-app-users
+    - name: Publish an app
+      id: publish-an-app
+  - name: Creating apps
+    id: creating-apps
+    subtopics:
+    - name: Choosing the right app type
+      id: choose-app-type
+    - name: Creating app from scratch
+      id: creating-app-from-scratch
+  - name: Using external OutSystems components
+    id: external-outsystems-comp
+    subtopics:
+    - name: Adding dependencies to a module
+      id: add-module-dependency
+    - name: Installing Forge component
+      id: install-forge-component
+  - name: Setting up your OutSystems environment
+    id: setup-outsystems-env
+    subtopics:
+    - name: OutSystems overview
+      id: outsystems-overview
+- name: Hotfixing
+  guid: d8111f11-34b0-4f33-8374-5d9611d507e2
+  topics:
+  - name: Solve issues identified in Production
+    id: fix-issues-production
+    subtopics:
+    - name: Hotfix in QA
+      id: hotfix-in-qa
+    - name: Hotfixing strategies in OutSystems
+      id: hotfix-strategy-os
+    - name: Deploy Hotfix to Production
+      id: deploy-hotfix-production
+  - name: Solve issues directly in Production
+    id: fix-production-issues
+    subtopics:
+    - name: Hotfix directly in Production
+      id: hotfix-production
+  - name: Propagate hotfix to other environments
+    id: hotfix-propagation
+    subtopics:
+    - name: Portback hotfix
+      id: portback-hotfix
+    - name: Preparing hotfix portback
+      id: preparing-hotfix-portback
+  - name: Advanced hotfixing strategies
+    id: hotfix-strategy-advanced
+    subtopics:
+    - name: Hotfix from development with feature toggles
+      id: hotfix-dev-feature-toggle
+  - name: Hotfixing with a CI/CD pipeline
+    id: hotfix-ci-cd
+    subtopics:
+    - name: Hotfixing from dev with CI/CD pipeline
+      id: hotfix-dev-ci-cd
+- name: Integrate AI
+  guid: a7056193-1048-45b9-ba65-37023127caab
+  topics:
+  - name: Chatbots
+    id: chatbots
+  - name: Sentiment analysis
+    id: sentiment-analisys
+    subtopics:
+    - name: Sentiment analysis
+      id: sentiment-analysis
+  - name: Machine learning
+    id: machine-learning
+- name: Integrating with Plugins
+  guid: 1af9eece-e820-40ec-8483-b1243267b038
+  topics:
+  - name: Using Cordova Plugins
+    id: using-cordova-plugins
+- name: Lifecycle Independence
+  guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
+  topics:
+  - name: Lifecycle independence
+    id: lifecycle-independence
+    subtopics:
+    - name: Lifecycle independence strategies in OutSystems
+      id: lifecycle-independence-os
+    - name: Domain Driven Design
+      id: domain-driven-design
+    - name: Team structure that promotes autonomy
+      id: autonomous-team-structure
+    - name: Strategies for development at scale
+      id: scale-development-strategy
+  - name: Basic feature fencing for independent releases
+    id: feature-fencing-basics
+    subtopics:
+    - name: Feature fencing using site properties/settings
+      id: feature-toggle-site-settings
+    - name: Feature fencing strategies
+      id: feature-fencing
+- name: Load testing
+  guid: f816091c-1508-4da9-b5f6-cffebb845234
+  topics:
+  - name: Fundamentals of load testing strategies
+    id: load-test-strategy
+    subtopics:
+    - name: Post-release load testing
+      id: post-release-load-testing
+    - name: Load testing strategies
+      id: load-testing-strategies
+  - name: Load testing as part of CI/CD
+    id: load-test-ci-cd
+    subtopics:
+    - name: Load tests in CI/CD pipeline
+      id: load-tests-ci-cd
+- name: Native Mobile apps
+  guid: f67965c4-a2ef-4076-8676-c8b8203ab671
+  topics:
+  - name: Local Storage
+    id: local-storage
+  - name: App distribution
+    id: app-distribution
+  - name: Offline Synch
+    id: offline-synch
+  - name: Customize Mobile apps
+    id: customize-mobile-apps
+- name: OutSystems data centers
+  guid: 5d6b141d-82f8-4949-af54-6593592e0327
+- name: Product security
+  guid: f5935fdf-7f64-46b8-bc71-dd69627c33d8
+- name: Production Recovery
+  guid: e392931b-251f-4d43-8c0b-c85bbc97e02e
+  topics:
+  - name: Production rollback
+    id: production-rollback
+    subtopics:
+    - name: Production rollback strategies in OutSystems
+      id: rollback-strategy-os
+    - name: Rollback to an app's previous version
+      id: rollback-app-version
+  - name: Production recovery using roll forward
+    id: recovery-roll-forward
+- name: Progressive Release
+  guid: eb4c73d7-260f-4048-9a2f-f61333238db1
+  topics:
+  - name: Progressive releases
+    id: progressive-releases
+    subtopics:
+    - name: Progressive release strategies
+      id: progressive-release
+    - name: Canary releases using feature toggles
+      id: canary-release-toggle
+    - name: AB releases using feature toggles
+      id: ab-release-feature-toggle
+  - name: Advanced progressive releases
+    id: progressive-release-adv
+    subtopics:
+    - name: Releases using manual blue-green deployments
+      id: manual-blue-green-release
+    - name: Automated blue-green deployments
+      id: blue-green-deployment
+- name: Static Code Analysis
+  guid: 931dbd7f-f26d-4499-b25a-e60f5c268f9d
+  topics:
+  - name: Basic technical debt maintenance
+    id: tech-debt-basics
+    subtopics:
+    - name: Manage technical debt with AIMS
+      id: manage-tech-debt
+  - name: SAST integration
+    id: sast-integration
+    subtopics:
+    - name: Use third party SAST tools
+      id: use-third-party-sast
+  - name: Automated SAST integration in dev
+    id: sast-integration-dev
+  - name: Automated SAST in CI/CD pipelines
+    id: automated-sast-ci-cd
+    subtopics:
+    - name: Automated low-code analysis and SAST integrated in a CI/CD pipeline
+      id: low-code-sast-ci-cd
+- name: Testing practice
+  guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
+  topics:
+  - name: Fundamentals of testing strategies
+    id: testing-strategy-basics
+    subtopics:
+    - name: Testing strategies
+      id: testing-strategies
+    - name: Manual testing strategies
+      id: manual-testing-strategies
+  - name: Fundamentals of testing in SDLC
+    id: fund-testing-in-sdlc
+    subtopics:
+    - name: Pre-release testing
+      id: pre-release-testing
+    - name: Test phase in SDLC
+      id: test-phase-in-sdlc
+  - name: Testing in SDLC
+    id: testing-in-sdlc
+    subtopics:
+    - name: End of sprint testing
+      id: end-of-sprint-testing
+  - name: Fundamentals of testing practice
+    id: testing-practices
+    subtopics:
+    - name: Test scripts
+      id: test-scripts
+  - name: Road to automation
+    id: road-to-automation
+    subtopics:
+    - name: Test pyramid
+      id: test-pyramid
+    - name: Prioritizing automation of tests
+      id: prioritize-test-automation
+    - name: Automated testing strategies
+      id: automated-test-strategy
+  - name: Acceptance criteria
+    id: acceptance-criteria
+    subtopics:
+    - name: Three amigos sessions
+      id: three-amigos-sessions
+    - name: Gherkin syntax for functional acceptance criteria
+      id: gherkin-functional-criteria
+- name: Traceability
+  guid: da3a0cdb-4d5e-4281-add1-df304cd6db5f
+  topics:
+  - name: Basic traceability
+    id: basic-tracebility
+    subtopics:
+    - name: Track work using tag and deployment notes
+      id: track-work-tag-deploy
+    - name: Traceability strategies in OutSystems
+      id: traceability-outsystems
+  - name: Traceability for automated deployments
+    id: traceability-deployments
+    subtopics:
+    - name: Integrate with ALM tools
+      id: integrate-with-alm-tools
+  - name: Traceability in CI/CD pipelines
+    id: traceability-ci-cd
+    subtopics:
+    - name: Integrate with external version control systems in a CI/CD pipeline
+      id: external-version-control-ci
+- name: UI testing
+  guid: 0a465f0d-889b-4ff4-8903-9f3acd3c98c3
+  topics:
+  - name: Fundamentals of UI testing strategies
+    id: ui-testing-strategy
+    subtopics:
+    - name: Manual ad-hoc UI tests
+      id: manual-ad-hoc-ui-tests
+    - name: UI testing strategies
+      id: ui-testing-strategies
+  - name: Manual UI testing
+    id: manual-ui-testing
+    subtopics:
+    - name: Manual UI tests using testing scripts
+      id: manual-ui-tests
+    - name: Ad-hoc visual defect reporting
+      id: ad-hoc-defect-reporting
+  - name: Automated UI testing
+    id: automated-ui-testing
+    subtopics:
+    - name: Automated UI tests
+      id: automated-ui-tests
+- name: User Management
+  guid: 30a6f6ca-c898-4e05-b5d6-88a6789ca36c
+  topics:
+  - name: Authentication
+    id: authentication
+    subtopics:
+    - name: Built-in Authentication
+      id: built-in-authentication
+    - name: External IDPs
+      id: external-idps
+    - name: Lockout
+      id: lockout
+    - name: Passwords
+      id: passwords
+    - name: External IDPs - User Mapping
+      id: user-mapping
+    - name: External IDPs - LinkedIn
+      id: idp-linkedin
+    - name: External IDPs - Google
+      id: idp-google
+    - name: External IDPs - Facebook
+      id: idp-facebook
+    - name: External IDPs - Apple
+      id: idp-apple
+    - name: External IDPs - OpenIDP
+      id: idp-openidp
+  - name: Authorization
+    id: authorization
+    subtopics:
+    - name: Creating app role
+      id: create-app-role
+    - name: Application Roles
+      id: app-roles
+    - name: Creating Organization Role
+      id: create-org-role
+    - name: Delete app roles
+      id: delete-app-role
+    - name: Updating app role
+      id: update-app-role
+    - name: Assign Users to Organization Roles
+      id: assign-to-org-roles
+    - name: Define Permissions
+      id: define-permissions
+    - name: Permissions
+      id: permissions
+    - name: Assign Users to User Groups
+      id: assign-to-user-groups
+    - name: User Groups
+      id: user-groups
+    - name: Deleting Organization Role
+      id: delete-org-roles
+    - name: Duplicating Organization Role
+      id: duplicate-org-roles
+    - name: Updating Organization Role
+      id: update-org-roles
+    - name: Organizational Roles
+      id: org-roles
+  - name: Users in OutSystems
+    id: users-in-os
+    subtopics:
+    - name: Creating Users
+      id: creating-users
+    - name: Deleting Users
+      id: deleting-users
+    - name: Updating Users
+      id: updating-users
+    - name: Self Registration
+      id: self-registration
+    - name: Users and Licensing
+      id: users-licensing
+    - name: User Types
+      id: user-types
+  - name: Governance principles
+    id: governance-principles
+    subtopics:
+    - name: Deleting apps and libraries
+      id: delete-apps-libraries
+    - name: Modify IT Users in LT
+      id: modify-it-users-in-lt
+    - name: Delete IT Users in LT
+      id: delete-it-users-in-lt
+    - name: Create IT Users in LT
+      id: create-it-users-in-lt
+    - name: Built-in Roles
+      id: built-in-roles
+    - name: IT User management in LT
+      id: it-user-management-in-lt
+    - name: Governance strategies
+      id: governance-strategies
+    - name: Permission model in LT
+      id: permission-model-in-lt
+    - name: Permission model for semi-autonomous dev deployments up to QA
+      id: permission-model-qa
+    - name: Role assignment
+      id: role-assignment
+  - name: Expanded governance
+    id: expanded-governance
+    subtopics:
+    - name: Assign a role for an app
+      id: assign-a-role-for-an-app
+    - name: Permission model for autonomous dev deployments up to PP
+      id: permission-model-pp
+    - name: Assign a role within a team
+      id: assign-team-role
+    - name: Create a team
+      id: create-a-team
+- name: Using audit logs for compliance and troubleshooting
+  guid: c96ed7dd-90d2-406d-a816-c47269c0d20b
+  topics:
+  - name: Using audit logs for operational alerts
+    id: alerts-audit-logs
+    description: Can I detect when a deployment happened outside defined hours?
+  - name: Using audit logs for troubleshooting
+    id: troubleshoot-audit-logs
+  - name: Which compliances can audit trail help me achieve
+    id: compliance-audit-logs
+  - name: User permissions for audit log access
+    id: user-perms-audit-logs
+    description: What is the permission model? For example, if I have access to only
+      some apps, can I see audit logs for other apps for which I don't have permission?
+      Is it per stage?
+  - name: Events logged in the audit trail
+    id: events-audit-logs
+    description: 'Is operation XYZ in ODC Portal audited?
+
+      What is the list of operations and for what scope for auditing?'
+  - name: Understanding the structure and fields of an audit log
+    id: struct-audit-logs
+    description: 'What does each field mean?
+
+      What fields exist?
+
+      What values can each field hold?
+
+      What does each possible value mean?'
+  - name: Retention period available for audit trail
+    id: retention-audit-logs
+  - name: Methods for accessing audit log data
+    id: access-audit-logs
+    subtopics:
+    - name: Stream audit logs
+      id: stream-audit-logs
+      description: Can I stream audit logs?
+    - name: Exporting logs via CSV
+      id: export-audit-logs
+    - name: Viewing logs in the ODC Portal
+      id: view-audit-logs

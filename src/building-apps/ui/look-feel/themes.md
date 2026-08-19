@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) offers a flexible theme management system that allows customization and optimization of app visuals through its UI framework.
+summary: OutSystems 11 (O11) themes let you set a default module theme, create blank or base themes, and define app visuals using Blocks and Placeholders.
 tags: ide usage, reactive web apps, tutorials for beginners, ui customization, performance optimization
 locale: en-us
 guid: fa7dc8c3-aea1-4ccb-a2d6-219772a1a7f2

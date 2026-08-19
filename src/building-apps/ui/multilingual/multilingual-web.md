@@ -1,5 +1,5 @@
 ---
-summary: Learn how to manage and translate multilingual web applications in OutSystems 11 (O11) for diverse locales using various resources and tools.
+summary: "Multilingual Traditional Web Apps in OutSystems 11 (O11): add locales, export/import Excel or .resX translation files, and switch languages at runtime."
 tags: localization, internationalization, application translation, language support, locale management
 locale: en-us
 guid: e4525653-9e57-4bb3-8426-a74a898addd0

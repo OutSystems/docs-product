@@ -1,5 +1,5 @@
 ---
-summary: Explore multilingual app translation and language switching features in OutSystems 11 (O11) using Service Studio.
+summary: "OutSystems 11 (O11) multilingual app translation: add locales, use the translation editor, set up a SetCurrentLocale language switcher, and handle Static Entities."
 tags: internationalization, localization, language support, user experience, application development
 locale: en-us
 guid: e664c563-cb0f-491c-bd05-8f1684d4a5a3

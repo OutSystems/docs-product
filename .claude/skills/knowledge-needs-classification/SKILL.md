@@ -100,24 +100,32 @@ The local copy read in Step 2 is a synced duplicate, not the source of
 truth — before using it for matching, confirm it hasn't drifted from the
 canonical copy.
 
-1. Fetch `knowledge-needs.yaml` from the `OutSystems/tk-cicd` GitHub
+1. Try fetching `knowledge-needs.yaml` from the `OutSystems/tk-cicd` GitHub
    repository into a scratch file (e.g. in the session's scratchpad
    directory), by running:
    `gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml --jq '.content' | base64 -d > <scratch-path>/tk-cicd-knowledge-needs.yaml`
    (use exactly this command shape — it's the one pre-approved in this
    skill's `allowed-tools`, so it runs without a permission prompt).
-2. Compare it against the local copy read in Step 2 with
-   `diff <local-path> <scratch-path>/tk-cicd-knowledge-needs.yaml`.
-3. **If `diff` produces no output** → they match; proceed with the local
-   copy already loaded.
-4. **If they differ** → stop and ask the user, via `AskUserQuestion`, how to
-   proceed:
-   - **Sync tk-cicd to local** — overwrite the local copy with the
-     canonical `tk-cicd` content, then use that synced version for the rest
-     of this skill.
-   - **Use local version** — keep working with the local copy as-is, even
-     though it differs from `tk-cicd`.
-5. Never silently proceed on a mismatch without asking.
+2. **If the command fails** (`OutSystems/tk-cicd` isn't reachable —
+   missing credentials, no cross-repo access, network issue, etc.): tell
+   the user plainly that `tk-cicd` couldn't be reached and the local copy
+   will be used instead, then ask, via `AskUserQuestion`, whether to
+   proceed on that basis. If the user declines, stop here. If they
+   proceed, note for Step 8 that `tk-cicd` was unreachable this run, and
+   continue to Step 4 with the local copy as loaded.
+3. **If it succeeds**, compare it against the local copy read in Step 2
+   with `diff <local-path> <scratch-path>/tk-cicd-knowledge-needs.yaml`.
+   - **No output** → they match; proceed with the local copy already
+     loaded.
+   - **They differ** → stop and ask the user, via `AskUserQuestion`, how to
+     proceed:
+     - **Sync tk-cicd to local** — overwrite the local copy with the
+       canonical `tk-cicd` content, then use that synced version for the
+       rest of this skill.
+     - **Use local version** — keep working with the local copy as-is,
+       even though it differs from `tk-cicd`.
+4. Never silently proceed past an unreachable `tk-cicd` or a local/`tk-cicd`
+   mismatch without asking first.
 
 ## Step 4 — Chunk the content into meaningful sections
 
@@ -220,47 +228,57 @@ the matching option above.
 
 **Handling each response:**
 
-- **Add** — finalize: fetch the current `knowledge-needs.yaml` from the
+- **Add** — finalize: if Step 3 already found `OutSystems/tk-cicd`
+  unreachable this run, skip straight to the unreachable handling below.
+  Otherwise, fetch the current `knowledge-needs.yaml` from the
   `OutSystems/tk-cicd` GitHub repository — the canonical source — using the
-  same `gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml` command
-  as Step 3. Never write to the local duplicate in the current repo; it's a
-  synced copy, not the source of truth. Insert each `NEW` item at its
-  approved placement into the `tk-cicd` copy, then ask, via
-  `AskUserQuestion`, whether to open a pull request in `OutSystems/tk-cicd`
-  with this change:
-  - **Yes** — the branch name is
-    `add-knowledge-needs/<current-repo-name>/<current-repo-branch-name>`. Get
-    `<current-repo-name>` from the **remote** repository, not the local
-    folder name — a worktree's folder often doesn't match the repo name —
-    by running `gh repo view --json name --jq '.name'`. Get
-    `<current-repo-branch-name>` from the current git branch (e.g.
-    `git branch --show-current`). Example:
-    `add-knowledge-needs/success-docs/tk-12345-add-section`.
-    1. Get the default branch of `OutSystems/tk-cicd`:
-       `gh api repos/OutSystems/tk-cicd --jq '.default_branch'` — don't
-       assume it's `main`.
-    2. Check whether the branch already exists:
-       `gh api repos/OutSystems/tk-cicd/git/matching-refs/heads/<branch-name> --jq '.[].ref'`.
-       Also check for an existing PR on it:
-       `gh pr list --repo OutSystems/tk-cicd --head <branch-name> --state all --json number,title,state,url`.
-    3. **Doesn't exist** → get the default branch's tip commit SHA
-       (`gh api repos/OutSystems/tk-cicd/git/ref/heads/<default-branch> --jq '.object.sha'`),
-       create the branch from it
-       (`gh api repos/OutSystems/tk-cicd/git/refs -f ref="refs/heads/<branch-name>" -f sha="<sha>"`),
-       commit the updated `knowledge-needs.yaml` to it, push, and open a PR
-       with `gh pr create` describing what was added and why.
-    4. **Already exists** → show the user the branch's latest commit
-       (`gh api repos/OutSystems/tk-cicd/commits/<branch-name> --jq '{sha: .sha, message: .commit.message, author: .commit.author.name, date: .commit.author.date}'`)
-       and any existing PR found above, then stop and ask, via
-       `AskUserQuestion`, how to proceed:
-       - **Override changes** — reset the branch to the default branch's
-         tip and reapply only this change (force-push), discarding
-         whatever was on it before.
-       - **Combine changes** — check out the existing branch as-is, apply
-         this change on top of what's already there, and push, keeping
-         any prior work on the branch.
-  - **No** — present the updated file content to the user as a deliverable
-    instead, and state plainly that no PR was opened.
+  same `gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml`
+  command as Step 3.
+  - **`tk-cicd` unreachable** — insert each approved `NEW` item at its
+    placement directly into the **local** `knowledge-needs.yaml` (the file
+    read in Step 2, at the repo root) instead, and save it. Tell the user
+    plainly that `tk-cicd` couldn't be reached, so no pull request was
+    opened there — the local copy now holds the approved additions
+    instead. Skip the "open a pull request?" question below and go
+    straight to Step 9.
+  - **`tk-cicd` reachable** — never write to the local duplicate in the
+    current repo; it's a synced copy, not the source of truth. Insert each
+    `NEW` item at its approved placement into the `tk-cicd` copy, then ask,
+    via `AskUserQuestion`, whether to open a pull request in
+    `OutSystems/tk-cicd` with this change:
+    - **Yes** — the branch name is
+      `add-knowledge-needs/<current-repo-name>/<current-repo-branch-name>`. Get
+      `<current-repo-name>` from the **remote** repository, not the local
+      folder name — a worktree's folder often doesn't match the repo name —
+      by running `gh repo view --json name --jq '.name'`. Get
+      `<current-repo-branch-name>` from the current git branch (e.g.
+      `git branch --show-current`). Example:
+      `add-knowledge-needs/success-docs/tk-12345-add-section`.
+      1. Get the default branch of `OutSystems/tk-cicd`:
+         `gh api repos/OutSystems/tk-cicd --jq '.default_branch'` — don't
+         assume it's `main`.
+      2. Check whether the branch already exists:
+         `gh api repos/OutSystems/tk-cicd/git/matching-refs/heads/<branch-name> --jq '.[].ref'`.
+         Also check for an existing PR on it:
+         `gh pr list --repo OutSystems/tk-cicd --head <branch-name> --state all --json number,title,state,url`.
+      3. **Doesn't exist** → get the default branch's tip commit SHA
+         (`gh api repos/OutSystems/tk-cicd/git/ref/heads/<default-branch> --jq '.object.sha'`),
+         create the branch from it
+         (`gh api repos/OutSystems/tk-cicd/git/refs -f ref="refs/heads/<branch-name>" -f sha="<sha>"`),
+         commit the updated `knowledge-needs.yaml` to it, push, and open a PR
+         with `gh pr create` describing what was added and why.
+      4. **Already exists** → show the user the branch's latest commit
+         (`gh api repos/OutSystems/tk-cicd/commits/<branch-name> --jq '{sha: .sha, message: .commit.message, author: .commit.author.name, date: .commit.author.date}'`)
+         and any existing PR found above, then stop and ask, via
+         `AskUserQuestion`, how to proceed:
+         - **Override changes** — reset the branch to the default branch's
+           tip and reapply only this change (force-push), discarding
+           whatever was on it before.
+         - **Combine changes** — check out the existing branch as-is, apply
+           this change on top of what's already there, and push, keeping
+           any prior work on the branch.
+    - **No** — present the updated file content to the user as a deliverable
+      instead, and state plainly that no PR was opened.
 - **Edit** — apply only the specified change(s), then re-display the updated
   table for another Add / Edit / Scrap-and-redo round. Loop until the user
   Adds.
@@ -277,33 +295,40 @@ declined), update the input markdown file's own frontmatter. This is
 separate from, and happens after, everything above.
 
 1. Check the frontmatter of the file read in Step 1 for a `topic` field.
-2. **Field doesn't exist** → leave the frontmatter untouched. Don't add a
-   `topic` field that wasn't already there.
-3. **Field exists** → this is a prior, from an earlier run or a human
-   edit. Compute this run's raw topic id set first: the parent topic `id`
-   of every knowledge need identified for this file — REUSE and NEW
-   combined. Use the *topic*-level id (the middle level of the category >
-   topic > subtopic path), not the subtopic id, even when the knowledge
-   need itself is a subtopic-level entry.
-4. Apply hysteresis against the prior before finalizing the list — the
+   This is the prior for the hysteresis in step 3 below — its existing
+   value if present, or an empty set if the field is missing. A missing
+   field means there's no prior to keep, not a reason to skip the update:
+   this skill is frequently run specifically to populate `topic` on files
+   that don't have it yet, so it must be able to create the field, not
+   just edit an existing one.
+2. Compute this run's raw topic id set: the parent topic `id` of every
+   knowledge need identified for this file — REUSE and NEW combined. Use
+   the *topic*-level id (the middle level of the category > topic >
+   subtopic path), not the subtopic id, even when the knowledge need
+   itself is a subtopic-level entry.
+3. Apply hysteresis against the prior before finalizing the list — the
    same asymmetric keep-vs-add logic the `coverage-type-classification`
    skill uses for its `coverage-type` field, so a borderline run doesn't
    flip the field back and forth:
    - **Keep** every prior topic id unless this run found positive evidence
      the content no longer covers it (for example, the section that
      justified it was removed or rewritten). Don't drop a prior id just
-     because this run's chunking didn't happen to revisit it.
+     because this run's chunking didn't happen to revisit it. (Vacuous
+     when the field was missing — there's nothing to keep.)
    - **Add** a topic id not already in the prior only when this run backs
      it with a solid `REUSE` match or a `NEW` candidate that passed full
      validation (Step 5) — the same bar Step 5 already applies, so no
      extra threshold is needed here.
    - Deduplicate the resulting set and sort it alphabetically.
-5. Compare the resulting list to the prior as sets, ignoring order.
-   - **Equivalent** → the frontmatter is already correct. Skip the write
-     and tell the user no update was needed.
+4. Compare the resulting list to the prior as sets, ignoring order.
+   - **Equivalent** → the frontmatter is already correct — either it
+     already held exactly this set, or the field was missing and this run
+     found nothing to add. Skip the write (don't create an empty `topic`
+     field) and tell the user no update was needed.
    - **Different** → write the resulting list to the `topic` field in the
-     file read in Step 1, at the same local path, preserving the rest of
-     the frontmatter and content unchanged.
+     file read in Step 1, creating the field if it didn't already exist,
+     at the same local path, preserving the rest of the frontmatter and
+     content unchanged.
 
 ## Tone guidance
 

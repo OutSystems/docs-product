@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, outsystemsui
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to use the Card UI Pattern in OutSystems 11 (O11) to effectively group and display information in Mobile Apps and Reactive Web Apps.
 locale: en-us
 guid: a44ab647-aef4-44ba-b68b-d7a0d421a92c

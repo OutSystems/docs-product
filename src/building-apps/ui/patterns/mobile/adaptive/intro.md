@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) supports adaptive patterns for optimal display across various device types and screen sizes in mobile and reactive web apps.
-tags: adaptive design, ux/ui design, responsive layouts, device compatibility, screen sizes
+tags:
+  - Front-End
+  - Layouts
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - UX
 locale: en-us
 guid: 8ff27ca3-0716-4aa9-9b9f-03f8a68dc96c
 app_type: mobile apps, reactive web apps

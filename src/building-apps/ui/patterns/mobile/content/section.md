@@ -1,5 +1,12 @@
 ---
-tags: ui design, ui patterns, mobile app development, section ui pattern, outsystems ui framework
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
 summary: Explore how to organize content using the Section UI Pattern in OutSystems 11 (O11) for mobile and reactive web apps.
 locale: en-us
 guid: f8eb7c31-9003-4675-85a1-8c09a8aeafd8

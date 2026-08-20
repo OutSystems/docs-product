@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, mobile app development, ui patterns, tutorials for beginners
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to organize content effectively in mobile and reactive web apps using the List Item Content UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 1c561d9b-7797-4365-b605-9c56261bfe04

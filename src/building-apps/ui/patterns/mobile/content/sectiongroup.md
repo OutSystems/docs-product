@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, section group ui pattern
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to implement the Section Group UI Pattern in OutSystems 11 (O11) to maintain header context while scrolling through content.
 locale: en-us
 guid: 7a764bd9-b48b-4961-a2b0-594723d02997

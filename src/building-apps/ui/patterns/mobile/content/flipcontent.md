@@ -1,6 +1,13 @@
 ---
-summary: Flip Content UI Pattern in OutSystems 11 (O11) lets you build interactive flip cards with CardFront and CardBack placeholders in mobile and reactive web apps.
-tags: ide usage, reactive web apps, tutorials for beginners, ui design, outsystems ui
+summary: Learn how to use the Flip Content UI Pattern in OutSystems 11 (O11) to enhance interactive content display in mobile and reactive web apps.
+tags:
+  - Events
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 locale: en-us
 guid: 714b1496-4c20-47fd-afcb-a0f2007ad984
 app_type: mobile apps, reactive web apps

@@ -1,6 +1,13 @@
 ---
-tags: chat interfaces, ui patterns, widget configuration, dependency management, mobile application development
-summary: "Chat Message UI Pattern in OutSystems 11 (O11): add it to mobile or reactive web apps, configure placeholders, and set alignment, timestamp, and message status properties."
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
+summary: Explore how to implement and customize the Chat Message UI Pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: 6d975212-eb39-4891-83ba-9306ba78b2cd
 app_type: mobile apps, reactive web apps

@@ -1,6 +1,13 @@
 ---
-tags: ide usage, reactive web apps, ui patterns, floating content, tutorials for beginners
-summary: Floating Content UI Pattern in OutSystems 11 (O11) lets you overlay content on screen elements like maps in mobile and reactive web apps.
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
+summary: Learn how to use the Floating Content UI Pattern in OutSystems 11 (O11) to overlay content on other screen elements in mobile and reactive web apps.
 locale: en-us
 guid: 85bf3d51-36e8-4b3f-bebb-3ee59614230f
 app_type: mobile apps, reactive web apps

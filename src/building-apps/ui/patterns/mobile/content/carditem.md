@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, mobile app development
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and customize the Card Item UI Pattern in OutSystems 11 (O11) for enhanced mobile and reactive web app interfaces.
 locale: en-us
 guid: 434a7ae9-243a-47b8-ae7c-e2f424a5411b

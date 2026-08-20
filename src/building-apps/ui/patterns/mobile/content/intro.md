@@ -1,5 +1,10 @@
 ---
-tags: user interface design, design patterns, ui components, accessibility, interaction design
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
 summary: OutSystems 11 (O11) offers diverse content patterns for mobile and reactive web apps, improving user interface design.
 locale: en-us
 guid: 9690a50e-ac67-4e4a-9b4d-16821ac9e8b1

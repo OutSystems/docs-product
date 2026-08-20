@@ -1,6 +1,6 @@
 ---
 tags: data grid, rest api, outsystems, web app interface, data management
-summary: Explore the capabilities of OutSystems 11 (O11) for creating dynamic data grid interfaces that allow viewing, editing, and saving data efficiently.
+summary: "OutSystems Data Grid Web setup for O11: build REST endpoints, enable cell editing, and implement server-side validation with JSONResponse in traditional web apps."
 guid: 80b3e393-53fa-40e3-b457-4cd8cc78fd71
 locale: en-us
 app_type: traditional web apps

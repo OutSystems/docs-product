@@ -13,7 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
-  - unblock
+  - apply
 topic:
   - navigate-screens
   - input-parameters

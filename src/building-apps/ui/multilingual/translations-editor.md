@@ -1,5 +1,5 @@
 ---
-summary: Explore the Translations Behavior Editor in OutSystems 11 (O11) for managing translation settings in Traditional Web Apps.
+summary: Translations Behavior Editor in OutSystems 11 (O11) lets you set translation behaviors for Traditional Web App resources, filter, and translate strings.
 tags: localization, internationalization, app configuration, multilingual support, service studio
 locale: en-us
 guid: 5b9787c8-9b67-4d45-8f6b-7d5a1c964beb

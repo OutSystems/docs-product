@@ -1,6 +1,6 @@
 ---
 tags: ide usage, reactive web apps, tutorials for beginners, ui design patterns, outsystems ui framework
-summary: Learn how to use the Card Sectioned UI pattern in OutSystems 11 (O11) to effectively organize and display information in mobile and reactive web apps.
+summary: Card Sectioned UI pattern in OutSystems 11 (O11) groups information with image, title, content, and footer placeholders in mobile and reactive web apps.
 locale: en-us
 guid: db5e39c5-f5ee-4e18-9754-14fef2f95533
 app_type: mobile apps, reactive web apps

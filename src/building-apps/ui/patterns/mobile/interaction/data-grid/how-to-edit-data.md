@@ -1,5 +1,10 @@
 ---
-tags: data editing, data grids, outsystems 11, ui components, columns
+tags:
+  - Data
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to enable and configure data editing in OutSystems 11 (O11) Data Grid by setting the AllowColumnEdit property to true and adding column widgets.
 guid: 2f8a50d1-be34-401b-bd4a-c27ba72b37f7
 locale: en-us

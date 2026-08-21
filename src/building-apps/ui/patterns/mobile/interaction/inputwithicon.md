@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui design, application development
+tags:
+  - Accessibility
+  - Forms
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) features the Input with Icon UI Pattern for enhancing user input with visual hints in Mobile and Reactive Web Apps.
 locale: en-us
 guid: ec5ca995-0a63-4bc9-b5d9-9c22a0f34a5b

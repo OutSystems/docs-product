@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui design, animation patterns
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - UX
 summary: Explore animation capabilities in OutSystems 11 (O11) for enhancing app usability through the Animate UI Pattern.
 locale: en-us
 guid: 14009e9a-16b3-4d0a-ae41-859c15a3ea5d

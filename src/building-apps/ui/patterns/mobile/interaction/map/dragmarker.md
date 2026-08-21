@@ -1,5 +1,5 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, mapping, ui components
+tags: Events, Forge, Mobile app, OutSystems UI, UI, UI Patterns, Widgets
 summary: Learn how to retrieve draggable marker coordinates in OutSystems 11 (O11) using the OutSystems Map component for Mobile and Reactive Web Apps.
 locale: en-us
 guid: b7dce067-3d75-4c88-8a92-9de144f97896

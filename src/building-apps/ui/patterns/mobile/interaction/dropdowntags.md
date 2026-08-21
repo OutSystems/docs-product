@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, dropdown components, widget configuration, ui development, dependency management
+tags:
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore the Dropdown Tags UI Pattern in OutSystems 11 (O11) for enhanced dropdown search functionality in mobile and reactive web apps.
 locale: en-us
 guid: 6b79cc3c-d89b-40df-ba5f-c04038639d4b

@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, mobile app development
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to implement and customize the Bottom Sheet UI pattern in OutSystems 11 (O11) for enhanced mobile app interfaces.
 locale: en-us
 guid: 4CCAE716-CF2A-4601-9F03-D6ACF603F01A

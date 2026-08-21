@@ -1,5 +1,12 @@
 ---
-tags: data grid, data manipulation, spreadsheet interface, enterprise interface, virtual scrolling
+tags:
+  - Data
+  - Forge
+  - Front-End
+  - Sorting
+  - UI
+  - UI Patterns
+  - Web
 summary: OutSystems 11 (O11) features the Data Grid component for efficient data manipulation with sorting and virtual scrolling.
 guid: 7a4ea179-b360-4220-a0fc-627a6c751564
 locale: en-us

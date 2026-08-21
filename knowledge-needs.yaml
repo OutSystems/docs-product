@@ -28,6 +28,12 @@ knowledge-needs:
       id: screen-events
     - name: UI elements Events
       id: ui-elements-events
+    - name: Handle block events
+      id: handle-block-events
+      description: Wants to handle events triggered by a block by mapping a screen
+        action to the block's event and accessing the event input parameters, in ODC
+        Studio, so that the screen can respond to user interactions happening inside
+        the block.
   - name: Understanding Exceptions
     id: understanding-exceptions
     subtopics:
@@ -111,6 +117,28 @@ knowledge-needs:
       id: replace-ui-sample-data
     - name: Bind data to a UI element
       id: bind-data-to-a-ui-element
+    - name: Table pagination setup
+      id: table-pagination-setup
+      description: Wants to add pagination and records-per-page control to a Table
+        widget in an OutSystems 11 Screen, so that users can navigate through large
+        datasets in configurable page sizes.
+    - name: Table sorting setup
+      id: table-sorting-setup
+      description: Wants to implement user-triggered column sorting on a Table widget
+        using a Dynamic Sort in an Aggregate, so that users can reorder displayed
+        records by clicking header cells.
+    - name: Customize table columns
+      id: customize-table-columns
+      description: Wants to customize the columns of a Table widget — adding, deleting,
+        renaming, editing column expressions, and adjusting text alignment — in an
+        OutSystems 11 Screen, so that the Table displays the right data fields with
+        appropriate labels and formatting.
+    - name: Set up Table widget
+      id: set-up-table-widget
+      description: Wants to add a Table widget to a Screen, bind it to an Aggregate
+        as its data source, and configure the displayed columns — including adding,
+        deleting, renaming, editing expressions, and adjusting alignment — in ODC
+        Studio, so that the employee list is presented correctly in the browser.
   - name: Securing Data
     id: securing-data
     subtopics:
@@ -157,6 +185,11 @@ knowledge-needs:
       id: filter-data
     - name: Aggregates
       id: aggregates
+    - name: Multi-entity aggregate
+      id: multi-entity-aggregate
+      description: Wants to create an aggregate that joins multiple entities and applies
+        filters for a specific input parameter, so that a screen can display related
+        records from several data sources in a single query.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -208,6 +241,12 @@ knowledge-needs:
       description: Wants to implement dynamic sorting on calculated attributes in
         an aggregate that uses external entities, so that the sort works correctly
         at runtime without errors or empty results.
+    - name: Aggregation functions
+      id: aggregation-functions
+      description: Wants to understand which aggregation functions are available
+        in an Aggregate, what the output contains after applying them, and how
+        Group By affects which columns are returned, in OutSystems, so that
+        queries return only the expected calculated results.
   - name: SQL
     id: sql
     subtopics:
@@ -355,6 +394,28 @@ knowledge-needs:
     id: architecture-canvas
   - name: Application composition
     id: application-composition
+  - name: Core module patterns
+    id: core-module-patterns
+    subtopics:
+    - name: Core entity pattern
+      id: core-entity-pattern
+      description: Wants to understand the core entity pattern in OutSystems 11 — how
+        a core module stores data in entities exposed as read-only and centralizes all
+        create/update operations — so that multiple applications can consume core business
+        data consistently without bypassing the module's encapsulation.
+    - name: ECS pattern variations
+      id: ecs-pattern-variations
+      description: Wants to understand the external core service (ECS) pattern and its
+        variations — base ECS, local replica, isolated synchronization, direct integration,
+        pub/sub, summary cache, and lazy load — in OutSystems 11, so that the right caching
+        and synchronization strategy can be selected when an external system is the system
+        of records.
+    - name: Transparency service
+      id: transparency-service-pattern
+      description: Wants to understand the transparency service pattern in OutSystems 11,
+        where an integration service with multiple drivers abstracts several external systems
+        behind a uniform API, so that core services can retrieve and update data without
+        knowing which external system holds it.
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
@@ -1059,3 +1120,24 @@ knowledge-needs:
       id: export-audit-logs
     - name: Viewing logs in the ODC Portal
       id: view-audit-logs
+- name: Business Analysis
+  guid: a3f7c821-56e4-4b2d-9d83-1e4c0f2d8b95
+  topics:
+  - name: Business Vision
+    id: business-vision
+    subtopics:
+    - name: Vision document
+      id: vision-document
+      description: Wants to understand what a business vision document is and what
+        goals it serves, when starting a new project, so that they can align business
+        strategy, context, and challenges before development begins.
+    - name: Vision statement
+      id: vision-statement
+      description: Wants to create a vision statement and vision cloud for a project,
+        when conducting business analysis, so that they can articulate the primary
+        business goals in an inspirational and actionable way.
+    - name: Process diagrams
+      id: process-diagrams
+      description: Wants to create and scope process diagrams for a business vision
+        document, when conducting business analysis, so that all stakeholders can
+        visually understand the full business process beyond just the application scope.

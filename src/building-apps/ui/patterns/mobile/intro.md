@@ -12,7 +12,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - none
+  - remember
 ---
 
 # Using Mobile and Reactive Patterns

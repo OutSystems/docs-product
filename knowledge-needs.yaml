@@ -45,6 +45,12 @@ knowledge-needs:
         action to the block's event and accessing the event input parameters, in ODC
         Studio, so that the screen can respond to user interactions happening inside
         the block.
+    - name: Screen action as callback
+      id: screen-action-as-callback
+      description: Wants to assign a screen action as a callback for a UI component's
+        provider events using JavaScript and the OutSystems UI API (e.g., SetProviderEvent),
+        in Service Studio, so that custom logic runs when a component fires events
+        like open or close.
   - name: Understanding Exceptions
     id: understanding-exceptions
     subtopics:
@@ -155,6 +161,14 @@ knowledge-needs:
       description: Wants to add a Table widget to a Screen and bind it to an Aggregate
         as its data source, so that the screen displays database records in a tabular
         layout.
+    - name: Fixed header table
+      id: fixed-header-table
+      description: Wants to create a vertically scrollable Table Records widget with
+        a fixed header row that remains visible while users scroll, by adding a separate
+        Table Widget as a static header, applying TableRecords style classes, and
+        enclosing the body in a CSS-styled container with overflow-y auto, in Service
+        Studio for O11 Traditional Web Apps, so that large datasets are navigable
+        without losing column context.
   - name: Securing Data
     id: securing-data
     subtopics:
@@ -567,6 +581,21 @@ knowledge-needs:
     id: use-a-live-style-guide
   - name: Reuse UI
     id: reuse-ui
+    subtopics:
+    - name: Embed web screens iframe
+      id: embed-web-screens-iframe
+      description: Wants to embed Traditional Web Screens from an O11 web app into
+        a Mobile App using an iframe, including creating the InternalBrowser block,
+        implementing the FetchIframe action with correct CSRF headers, and working
+        around the LifeTime Analytics incompatibility, so that existing web screens
+        can be surfaced inside a mobile app without full migration.
+    - name: Auto-login mobile user
+      id: auto-login-mobile-user
+      description: Wants to automatically log in an end user authenticated in the
+        mobile app into the embedded Traditional Web App, by adding an OnException
+        handler that calls Session_GetMobileAppLoginInfo and then the system Login
+        action, in Service Studio for O11, so that users don't need to log in
+        separately to the web app inside the iframe.
   - name: Front end architecture
     id: front-end-architecture
   - name: Customize style
@@ -576,6 +605,21 @@ knowledge-needs:
       id: customize-app-styles
     - name: Creating a theme
       id: creating-a-theme
+    - name: Change app favicon
+      id: change-app-favicon
+      description: Wants to replace the default OutSystems favicon with a custom PNG
+        or ICO image by changing the favicon resource in Service Studio, in a Reactive
+        Web App for O11, so that the app displays a branded browser tab icon.
+  - name: UI framework migration
+    id: ui-framework-migration
+    subtopics:
+    - name: Migrate Silk patterns
+      id: migrate-silk-patterns
+      description: Wants to migrate each Silk Web UI pattern to its OutSystems UI
+        equivalent — including remapping content placeholders, updating input parameters,
+        and handling structural changes introduced in O11 — so that a Silk-based
+        Traditional Web App can be upgraded to the OutSystems 11 Web UI Framework
+        without breaking existing screen behavior.
 - name: Creating UI
   guid: a6b567df-2deb-4736-bd6d-cf144a9c6262
   topics:
@@ -612,6 +656,12 @@ knowledge-needs:
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
       id: ui-elements-accelerators
+    - name: List Records layout
+      id: list-records-layout
+      description: Wants to display records side-by-side instead of one per line by
+        setting the Line Separator property of the List Records widget to None, in
+        Service Studio for O11, so that records appear in a multi-column layout on
+        the screen.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -621,6 +671,29 @@ knowledge-needs:
       id: changing-data-with-ui
     - name: UI interactions in apps
       id: ui-interactions-in-apps
+    - name: Resize popup window
+      id: resize-popup-window
+      description: Wants to dynamically resize a Popup_Editor window at runtime by
+        setting the AutoResize property to enable auto-growth and using a JavaScript
+        snippet with the RunJavaScript action to enable auto-shrink, in Service Studio
+        for O11 Traditional Web Apps, so that the pop-up window adjusts its size
+        automatically when its contents change.
+    - name: Save active tab state
+      id: save-active-tab-state
+      description: Wants to save and restore the active tab between page visits in
+        a SilkUIFramework Tabs widget, by capturing the clicked tab number via a
+        JavaScript onclick handler, persisting it in a session variable, and passing
+        it back to the ActiveTab parameter, in Service Studio for O11 Traditional
+        Web Apps, so that users return to the same tab after navigating away and
+        back.
+    - name: Custom validation location
+      id: custom-validation-message-location
+      description: Wants to display input validation messages in a custom location
+        by hiding the default .ValidationMessage CSS class and binding
+        <input_name>.ValidationMessage to an Expression widget, in Service Studio
+        for O11 Traditional Web Apps and Mobile Apps, so that validation feedback
+        appears where business or design requirements demand rather than next to
+        the default input position.
   - name: Securing UI
     id: securing-ui
     subtopics:
@@ -769,6 +842,12 @@ knowledge-needs:
     subtopics:
     - name: OutSystems overview
       id: outsystems-overview
+    - name: Install Azure trial
+      id: install-azure-trial
+      description: Wants to install the OutSystems 11 trial on Microsoft Azure by
+        completing the Azure Portal wizard (resource group, credentials, VM size),
+        starting the deployed VM, and connecting Service Studio to the new environment,
+        so that they have a working OutSystems trial up and running.
 - name: Hotfixing
   guid: d8111f11-34b0-4f33-8374-5d9611d507e2
   topics:

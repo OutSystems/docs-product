@@ -17,6 +17,17 @@ knowledge-needs:
       id: client-actions-when-use
     - name: What are server actions/when to use server actions
       id: server-actions-when-use
+    - name: Use AI logic suggestions
+      id: use-ai-logic-suggestions
+      description: Wants to understand what AI logic suggestions are and how to use
+        them in ODC Studio action flows, including accessing suggestions via the AI
+        radar, accepting them, and applying tips to improve suggestion quality, so
+        that they can build logic faster with ML-guided assistance.
+    - name: Enable logic suggestions
+      id: enable-logic-suggestions
+      description: Wants to enable or disable AI logic suggestions in ODC Studio
+        Preferences, so that they can control whether the feature is active during
+        development.
   - name: Using Events
     id: using-events
     subtopics:
@@ -289,6 +300,12 @@ knowledge-needs:
         single-system queries and performance considerations for mashup queries
         spanning multiple external systems — so they can write efficient and correct
         queries.
+    - name: Update SQL statement
+      id: update-sql-statement
+      description: Wants to update records in an external entity using the ANSI-92
+        UPDATE statement in an ODC SQL node — including SET clause syntax, WHERE
+        filtering, permissions, return behavior, and data source compatibility —
+        so they can correctly modify data in external systems.
   - name: Compound data
     id: compound-data
   - name: Dealing with rollbacks
@@ -421,6 +438,13 @@ knowledge-needs:
   topics:
   - name: How to process data using Timers
     id: process-data-timers
+    subtopics:
+    - name: Monitor timer logs
+      id: monitor-timer-logs
+      description: Wants to monitor timer execution by viewing timer logs in the ODC
+        Portal, so that they can check whether a timer is running, review its last
+        execution time and duration, and investigate errors using log details and
+        related activities.
   - name: How to process massive amounts of data in Batch Processing
     id: batch-data-processing
 - name: Basic integrations
@@ -495,6 +519,30 @@ knowledge-needs:
       id: test-small-units
     - name: Automated component tests
       id: automated-component-tests
+- name: Collaborative Development
+  guid: ''
+  topics:
+  - name: Merging revisions
+    id: merging-revisions
+    subtopics:
+    - name: Resolve merge conflicts
+      id: resolve-merge-conflicts
+      description: Wants to understand how ODC handles code merges when multiple
+        developers publish changes to the same app simultaneously, including when
+        ODC merges automatically and when conflicts require manual resolution by
+        choosing which changes to keep, so that they can collaborate on an app
+        without losing work.
+    - name: Compare app revisions
+      id: compare-app-revisions
+      description: Wants to compare the currently open version of an app against
+        a previously published revision or another revision from the server using
+        ODC Studio's Compare and Merge options, so that they can review differences
+        before deciding what to publish.
+    - name: Recover previous merge
+      id: recover-previous-merge
+      description: Wants to resume or discard an in-progress merge that was automatically
+        saved by ODC Studio, so that they can continue resolving conflicts without
+        losing earlier merge work or start fresh.
 - name: Consume UI
   guid: 349f50f2-cb79-41c7-9e8b-f113cbb3e965
   topics:
@@ -696,6 +744,9 @@ knowledge-needs:
       id: add-module-dependency
     - name: Installing Forge component
       id: install-forge-component
+    - name: Forge overview
+      id: forge-overview
+      description: Wants to understand what Forge is, what types of reusable assets (apps, libraries, agentic apps) are available, and how the community-driven sharing model works in OutSystems.
   - name: Setting up your OutSystems environment
     id: setup-outsystems-env
     subtopics:
@@ -829,8 +880,25 @@ knowledge-needs:
     - name: Configure manifest in ODC
       id: configure-manifest-odc
       description: Wants to upload and configure a privacy manifest file in ODC Studio and the ODC Portal using extensibility settings, so that the file is packaged into their iOS app build.
+    - name: File plugin manifest
+      id: file-plugin-manifest
+      description: Wants to declare the correct API reason keys (NSPrivacyAccessedAPICategoryFileTimestamp, NSPrivacyAccessedAPICategoryDiskSpace) and recommended reason values for the File plugin in a PrivacyInfo.xcprivacy file, so that the app passes Apple App Store privacy validation when using the File plugin.
+    - name: Distribute as PWA
+      id: distribute-as-pwa
+      description: Wants to understand what a PWA is, how it compares to native mobile
+        app distribution in ODC, and how to enable and try out the PWA on Android and
+        iOS devices, so that they can offer their mobile app to users without requiring
+        an app store installation.
   - name: Offline Synch
     id: offline-synch
+    subtopics:
+    - name: Complex mobile sync
+      id: complex-mobile-sync
+      description: Wants to optimize complex offline data synchronization in a mobile
+        app — including when and what to sync, context-based sync moments, SyncProperties
+        with time deltas, lightweight local database design, and minimizing server
+        requests — so that the app performs efficiently and remains error-tolerant
+        under demanding synchronization scenarios.
   - name: Customize Mobile apps
     id: customize-mobile-apps
 - name: OutSystems data centers

@@ -137,6 +137,17 @@ knowledge-needs:
       id: static-entities
     - name: Create/manipulate entities
       id: create-edit-entities
+    - name: Data types
+      id: data-types
+      description: Wants to understand what data types are available in ODC, their
+        default values, and their minimum/maximum constraints, so that variables and
+        entity attributes can be correctly typed during app development.
+    - name: DateTime UTC behavior
+      id: datetime-utc-behavior
+      description: Wants to understand how DateTime values are stored in UTC and
+        displayed in the device's local time zone — including how client-side,
+        server-side, and SQL calls differ — so that time-sensitive data is handled
+        correctly across regions.
   - name: Querying data
     id: querying-data
     subtopics:
@@ -191,6 +202,12 @@ knowledge-needs:
     id: stored-procedures
   - name: Aggregating data
     id: agregating-data
+    subtopics:
+    - name: Dynamic sort setup
+      id: dynamic-sort-setup
+      description: Wants to implement dynamic sorting on calculated attributes in
+        an aggregate that uses external entities, so that the sort works correctly
+        at runtime without errors or empty results.
   - name: SQL
     id: sql
     subtopics:
@@ -200,6 +217,39 @@ knowledge-needs:
       id: use-sql
     - name: Implement dynamic SQL statements correctly
       id: dynamic-sql-correctly
+    - name: SQL operator reference
+      id: sql-operator-reference
+      description: Wants to know which ANSI-92 operators and functions — comparison,
+        logical, arithmetic, string, date/time, conditional, aggregate, and window —
+        are supported in SQL queries with external entities in ODC, so they can write
+        correct queries without accidentally using unsupported syntax.
+    - name: SQL type conversion
+      id: sql-type-conversion
+      description: Wants to know which type conversion functions (such as CAST,
+        DECIMAL_TO_TEXT, TEXT_TO_INTEGER) are available and what behavior to expect
+        when converting between data types in SQL queries with external entities in
+        ODC, so they can avoid runtime errors and produce correct results.
+    - name: SQL NULL behavior
+      id: sql-null-behavior
+      description: Wants to understand how NULL values behave in SQL operators and
+        functions when querying external entities in ODC — including how NULL handling
+        differs between push-down and ODC-handled execution in mashup queries — so
+        they can write reliable queries that handle NULLs correctly across different
+        external systems.
+    - name: ANSI-92 syntax basics
+      id: ansi-92-syntax-basics
+      description: Wants to understand the ANSI-92 SQL syntax rules used in ODC SQL
+        nodes — including entity and attribute notation, identifier casing behavior,
+        and how to run multiple statements in a single SQL node with transaction
+        semantics — so they can write correct queries against external entities without
+        syntax errors.
+    - name: SQL query execution
+      id: sql-query-execution
+      description: Wants to understand how ODC parses, normalizes, and executes SQL
+        queries against external entities — including push-down behavior for
+        single-system queries and performance considerations for mashup queries
+        spanning multiple external systems — so they can write efficient and correct
+        queries.
   - name: Compound data
     id: compound-data
   - name: Dealing with rollbacks
@@ -636,6 +686,33 @@ knowledge-needs:
       id: sentiment-analysis
   - name: Machine learning
     id: machine-learning
+  - name: Agentic Apps
+    id: agentic-apps
+    subtopics:
+    - name: Consume AI agent
+      id: consume-ai-agent
+      description: Wants to understand what a consumer app is and how to integrate it with an AI agent by passing UserInput and SessionId parameters, so that the app can send user requests to the agent and maintain conversation context across interactions.
+    - name: Consumer app workflow
+      id: consumer-app-workflow
+      description: Wants to implement the end-to-end workflow for calling an AI agent from a consumer app — including session setup, capturing user input, invoking the agent's service action, handling the response, and persisting the session — so that the app delivers a coherent, context-aware conversational experience.
+    - name: Debug agentic apps
+      id: debug-agentic-apps
+      description: Wants to debug an end-to-end flow that calls an AI agent by running separate debugging sessions for the consumer app and the agentic app in ODC Studio, so that they can inspect inputs, outputs, and errors across both apps.
+    - name: Test agent messages
+      id: test-agent-messages
+      description: Wants to test System and User messages for an AI agent in ODC Studio's Test area before publishing, so that they can verify message effectiveness and avoid committing to an incorrect configuration.
+    - name: Test agentic app
+      id: test-agentic-app
+      description: Wants to validate an agentic app's behavior after publishing by launching the auto-generated test app or an existing consumer app from ODC Studio, selecting which public service action to test, and iterating on changes in the browser, so that the app's logic and responses can be confirmed before deploying to production.
+    - name: Test app prerequisites
+      id: test-app-prerequisites
+      description: Wants to know which service action parameters are required — name, type, and data type — for ODC Studio to successfully generate a test app for an agentic app, so that the setup is correct before clicking Test agent.
+  - name: Semantic Search
+    id: semantic-search
+    subtopics:
+    - name: Implement semantic search
+      id: implement-semantic-search
+      description: Wants to implement semantic search in ODC by marking entity attributes as searchable and adding a Semantic Search element to a server action flow, so that the app can retrieve results ranked by meaning rather than exact keywords.
 - name: Integrating with Plugins
   guid: 1af9eece-e820-40ec-8483-b1243267b038
   topics:

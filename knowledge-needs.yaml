@@ -150,6 +150,11 @@ knowledge-needs:
         as its data source, and configure the displayed columns — including adding,
         deleting, renaming, editing expressions, and adjusting alignment — in ODC
         Studio, so that the employee list is presented correctly in the browser.
+    - name: Add Table widget
+      id: add-table-widget
+      description: Wants to add a Table widget to a Screen and bind it to an Aggregate
+        as its data source, so that the screen displays database records in a tabular
+        layout.
   - name: Securing Data
     id: securing-data
     subtopics:
@@ -439,6 +444,18 @@ knowledge-needs:
   - name: How to process data using Timers
     id: process-data-timers
     subtopics:
+    - name: Timer best practices
+      id: timer-best-practices
+      description: Wants to implement a long-running Timer correctly by applying best
+        practices (timeout prevention, idempotent commits, completeness through batching,
+        and data integrity) in ODC, so that the Timer never aborts due to timeout and
+        all records are eventually processed without data corruption or repeated work.
+    - name: Configure timer settings
+      id: configure-timer-settings
+      description: Wants to configure a Timer's schedule (Daily, Weekly, Monthly, When
+        Published, Run Now), timeout, and active flag in ODC Portal per deployment stage,
+        so the Timer runs at the right time, within resource limits, and with appropriate
+        values in each environment.
     - name: Monitor timer logs
       id: monitor-timer-logs
       description: Wants to monitor timer execution by viewing timer logs in the ODC

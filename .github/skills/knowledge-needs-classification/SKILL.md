@@ -301,22 +301,22 @@ separate from, and happens after, everything above.
    this skill is frequently run specifically to populate `topic` on files
    that don't have it yet, so it must be able to create the field, not
    just edit an existing one.
-2. Compute this run's raw topic id set: the parent topic `id` of every
-   knowledge need identified for this file — REUSE and NEW combined. Use
-   the *topic*-level id (the middle level of the category > topic >
-   subtopic path), not the subtopic id, even when the knowledge need
-   itself is a subtopic-level entry.
+2. Compute this run's raw topic id set: the `id` of every knowledge need
+   identified for this file — REUSE and NEW combined. Use each entry's own
+   identifier, same as the flattening in Step 2: a subtopic's `id` when
+   the knowledge need is a subtopic-level entry, or the topic's `id` only
+   when it has no subtopics.
 3. Apply hysteresis against the prior before finalizing the list — the
    same asymmetric keep-vs-add logic the `coverage-type-classification`
    skill uses for its `coverage-type` field, so a borderline run doesn't
    flip the field back and forth:
-   - **Keep** every prior topic id unless this run found positive evidence
-     the content no longer covers it (for example, the section that
-     justified it was removed or rewritten). Don't drop a prior id just
-     because this run's chunking didn't happen to revisit it. (Vacuous
-     when the field was missing — there's nothing to keep.)
-   - **Add** a topic id not already in the prior only when this run backs
-     it with a solid `REUSE` match or a `NEW` candidate that passed full
+   - **Keep** every prior id unless this run found positive evidence the
+     content no longer covers it (for example, the section that justified
+     it was removed or rewritten). Don't drop a prior id just because this
+     run's chunking didn't happen to revisit it. (Vacuous when the field
+     was missing — there's nothing to keep.)
+   - **Add** an id not already in the prior only when this run backs it
+     with a solid `REUSE` match or a `NEW` candidate that passed full
      validation (Step 5) — the same bar Step 5 already applies, so no
      extra threshold is needed here.
    - Deduplicate the resulting set and sort it alphabetically.

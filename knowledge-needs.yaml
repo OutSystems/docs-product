@@ -684,6 +684,13 @@ knowledge-needs:
     id: local-storage
   - name: App distribution
     id: app-distribution
+    subtopics:
+    - name: Apple privacy manifest
+      id: apple-privacy-manifest
+      description: Wants to include a privacy manifest (PrivacyInfo.xcprivacy) in their ODC mobile app so that it meets Apple App Store submission requirements, with accurate API usage justifications.
+    - name: Configure manifest in ODC
+      id: configure-manifest-odc
+      description: Wants to upload and configure a privacy manifest file in ODC Studio and the ODC Portal using extensibility settings, so that the file is packaged into their iOS app build.
   - name: Offline Synch
     id: offline-synch
   - name: Customize Mobile apps

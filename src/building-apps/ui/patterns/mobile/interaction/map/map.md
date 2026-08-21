@@ -1,6 +1,6 @@
 ---
 tags: mapping, google maps api, leaflet, ui components, api configuration
-summary: Explore interactive mapping in OutSystems 11 (O11) with the Map component, supporting Google Maps and Leaflet for global office location visualization.
+summary: "OutSystems 11 (O11) Map component setup: add an interactive map with Markers, configure a Google Maps API key, and customize properties in Service Studio."
 locale: en-us
 guid: 3193c9d8-9711-4d4c-bf24-839f22a8052f
 app_type: mobile apps, reactive web apps

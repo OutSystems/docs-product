@@ -45,6 +45,11 @@ knowledge-needs:
         action to the block's event and accessing the event input parameters, in ODC
         Studio, so that the screen can respond to user interactions happening inside
         the block.
+    - name: Block events O11
+      id: block-events
+      description: Wants to expose an event on a block and handle it on a screen by
+        triggering the event in the block and mapping a screen action to it, so that 
+        they can pass data and trigger logic across UI components.
     - name: Screen action as callback
       id: screen-action-as-callback
       description: Wants to assign a screen action as a callback for a UI component's
@@ -242,6 +247,28 @@ knowledge-needs:
       id: manual-api-tests
 - name: Access Control and Privileges
   guid: ccc4b848-0f34-4854-bdc3-76e15fd4f42c
+  topics:
+  - name: Case Management Access Control
+    id: case-management-access-control
+    subtopics:
+    - name: CMF access control
+      id: cmf-access-control
+      description: Wants to understand what access control is in the Case Management
+        Framework in OutSystems 11, including what it restricts, how the default-deny
+        behavior works when enabled, and what read and write permissions mean, so
+        that they can decide whether and how to apply it to their case app.
+    - name: Grant case definition access
+      id: grant-case-definition-access
+      description: Wants to grant or revoke access to a case definition for a user
+        or group in OutSystems 11 using the Case Management Framework server actions,
+        so that all existing and future case instances of that definition are accessible
+        to the right users.
+    - name: Grant case instance access
+      id: grant-case-instance-access
+      description: Wants to grant access to a specific case instance for a user or
+        group in OutSystems 11 using the Case Management Framework server actions
+        (Case_GrantAccessToUser / Case_GrantAccessToGroup), so that only the intended
+        users or groups can access that individual case instance.
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
@@ -334,6 +361,14 @@ knowledge-needs:
   topics:
   - name: Data performance, caching
     id: data-performance-caching
+    subtopics:
+    - name: Connection pool usage
+      id: connection-pool-usage
+      description: Wants to understand when and how to use connection pooling when
+        connecting to external databases (SQL Server, Oracle, PostgreSQL, DB2, MySQL)
+        via extensions in OutSystems 11 — including connections from OutSystems
+        extensions back to the OutSystems database — so that frequent connections do
+        not degrade application performance as load scales up.
   - name: Indexes
     id: indexes
   - name: Enforcing data integrity
@@ -397,6 +432,63 @@ knowledge-needs:
     id: extend-processes-entities
   - name: Event driven processes
     id: event-driven-processes
+  - name: Case Management Framework
+    id: case-management-framework
+    subtopics:
+    - name: Bootstrap CMF app
+      id: bootstrap-cmf-app
+      description: Wants to create the foundational modules of a case management app
+        (core services, workflow, and optional UI) using the Case Management Framework
+        in OutSystems 11, so that the basic app structure is in place and ready for
+        further case development.
+    - name: Bootstrap case config
+      id: bootstrap-case-config
+      description: Wants to create a bootstrapping timer action that registers the
+        case definition and case status definitions into the Case Management Framework
+        every time the core services module is published in OutSystems 11, so that
+        the configuration is automatically kept in sync with the module.
+    - name: Define case status
+      id: define-case-status
+      description: Wants to define a new case status by adding a record to the
+        CaseStatusConfiguration static entity in the core services module in
+        OutSystems 11, so that the bootstrapping action can register it with the
+        case definition and it becomes available for assignment to case instances.
+    - name: Update case status
+      id: update-case-status
+      description: Wants to update the status of an existing case instance using
+        the Case_UpdateStatus action from the CaseServices_API module in OutSystems
+        11, so that a case moves to a new valid status when the required conditions
+        (valid case ID, valid status, valid state-machine transition) are met.
+    - name: Manage CMF delegation
+      id: manage-cmf-delegation
+      description: Wants to enable users to create, update, or delete a case or
+        activity delegation in OutSystems 11 using the Delegation_Create,
+        Delegation_CreateOrUpdate, Delegation_Update, and Delegation_Delete actions
+        in the CaseConfigurations_API module, so that work can be reassigned to
+        another user either for a set time period or indefinitely.
+    - name: Use CMF delegation
+      id: use-cmf-delegation
+      description: Wants to validate an active delegation, retrieve existing
+        delegations by ID or user, and correctly pass the DelegatedBy attribute
+        when calling case and activity actions in OutSystems 11 using the
+        CaseServices_API module, so that delegated actions are properly authorized
+        and logged in case history.
+    - name: Understand GroupExtended
+      id: understand-group-extended
+      description: Wants to understand what the GroupExtended entity is in the
+        Case Management Framework in OutSystems 11, including how it extends the
+        Group system entity, how it supports assigning activities to groups,
+        managing group-based case permissions, defining group hierarchies, and
+        associating calendars, so that they can decide how to model user groups
+        in their case management app.
+    - name: Bootstrap CMF groups
+      id: bootstrap-cmf-groups
+      description: Wants to set up extended case management groups by creating
+        a GroupExtendedConfiguration static entity, a Bootstrap_Groups timer,
+        and wiring the GroupExtended_CreateOrUpdate action in OutSystems 11,
+        and then add group records to the configuration module, so that groups
+        are registered in the Group and GroupExtended entities when the module
+        is published.
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -452,6 +544,13 @@ knowledge-needs:
         where an integration service with multiple drivers abstracts several external systems
         behind a uniform API, so that core services can retrieve and update data without
         knowing which external system holds it.
+    - name: Module reference trade-offs
+      id: module-reference-tradeoffs
+      description: Wants to understand how to manage module references in OutSystems 11
+        — including avoiding circular references, choosing between structures and entities
+        for large record flows, and evaluating local web services versus public actions —
+        so that the application's reference model stays simple, deployment times are
+        minimized, and thread exhaustion is avoided.
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
@@ -827,6 +926,12 @@ knowledge-needs:
       id: choose-app-type
     - name: Creating app from scratch
       id: creating-app-from-scratch
+    - name: Application templates overview
+      id: application-templates-overview
+      description: Wants to understand what application templates are, what types are
+        available (built-in, custom, and Forge), and what predefined elements they
+        provide, when starting to create an OutSystems app in Service Studio, so that
+        they can choose the right template for their project.
   - name: Using external OutSystems components
     id: external-outsystems-comp
     subtopics:
@@ -1305,3 +1410,116 @@ knowledge-needs:
       description: Wants to create and scope process diagrams for a business vision
         document, when conducting business analysis, so that all stakeholders can
         visually understand the full business process beyond just the application scope.
+- name: O11 to ODC Migration
+  guid: ''
+  topics:
+  - name: Code Conversion
+    id: code-conversion
+    subtopics:
+    - name: Convert O11 code
+      id: convert-o11-code
+      description: Wants to understand how to convert O11 app code to ODC using the
+        app conversion console, including what the tool does automatically, so that
+        they can initiate the code conversion step in their migration plan.
+    - name: Publish converted apps
+      id: publish-converted-apps
+      description: Wants to publish converted ODC apps and libraries after code conversion
+        — including downloading each app file, opening it in ODC Studio, fixing dependency
+        and TrueChange errors, and publishing producers before consumers — so that
+        the converted apps are live in the target ODC stage.
+    - name: Tag app before conversion
+      id: tag-app-before-conversion
+      description: Wants to know how to tag an O11 app in the source environment
+        before starting the code conversion process, so that the correct app version
+        is picked up by the app conversion console.
+    - name: Troubleshoot code conversion
+      id: troubleshoot-code-conversion
+      description: Wants to identify and collect troubleshooting information when
+        an O11 to ODC code conversion ends with errors — including reading conversion
+        logs and exporting the troubleshooting zip file — so that they can diagnose
+        the failure or provide the necessary data to OutSystems Support.
+    - name: Adapt converted SQL
+      id: adapt-converted-sql
+      description: Wants to validate and adapt SQL nodes in a converted ODC app to
+        ensure compatibility with Aurora PostgreSQL — including reviewing auto-converted
+        queries, handling limitations (Expand Inline, external entities, BEGIN-END
+        blocks), and testing all SQL nodes — so that the converted app's data queries
+        work correctly in ODC.
+    - name: SQL conversion mapping
+      id: sql-conversion-mapping
+      description: Wants to understand the exact syntax mappings applied automatically
+        when converting O11 SQL nodes to ODC PostgreSQL — including general clauses,
+        Oracle-specific functions, data type translations, string concatenation rules,
+        temporary tables, and pattern matching — so that they can verify converted
+        queries and anticipate what the conversion tool produces.
+    - name: Adapt login flows
+      id: adapt-login-flows
+      description: Wants to manually adapt the login and logout flows of a converted
+        ODC app so that end users can authenticate using their existing O11 credentials,
+        so that the converted app is usable after migration.
+    - name: Review converted app
+      id: review-converted-app
+      description: Wants to review the On Application Ready and On Application Resume
+        event actions and the app and library properties of a converted ODC app, after
+        the code conversion tool has merged multiple O11 modules, so that the resulting
+        app behaves as expected and has the correct settings.
+    - name: Configure converted apps
+      id: configure-converted-apps
+      description: Wants to configure a converted ODC app after code conversion —
+        including Site Properties/Settings (secret and non-secret), custom domains,
+        external databases, REST service endpoints, private gateways, and SMTP email
+        — so that the app works correctly in ODC before testing and deploying it.
+    - name: Connect ODC to O11
+      id: connect-odc-to-o11
+      description: Wants to verify that their ODC organization is connected to the
+        correct O11 infrastructure and, in a multi-portfolio organization, set the
+        target ODC portfolio for app conversion, in the ODC Portal, so that conversion
+        plans from the Conversion Assessment Tool are available in the app conversion
+        console.
+    - name: Conversion prerequisites
+      id: conversion-prerequisites
+      description: Wants to understand the prerequisites and limitations for executing
+        an O11 to ODC app conversion — including required infrastructure type, LifeTime
+        version, prior preparation steps, and unsupported scenarios (self-managed,
+        hybrid, demo environments, ODC self-hosted) — so that they can confirm whether
+        their environment is ready before starting the conversion process.
+  - name: Data Migration
+    id: data-migration
+    subtopics:
+    - name: Data migration scope
+      id: data-migration-scope
+      description: Wants to understand what is included in an O11 to ODC data migration
+        (entity data, repeat migrations, data model consistency requirements) and the
+        available migration types (non-production vs production final), so that they
+        can choose the right approach for their migration phase.
+    - name: Migrate end users
+      id: migrate-end-users
+      description: Wants to understand how end-user migration works during O11 to ODC
+        data migration, including IdP configuration requirements, one IdP per O11
+        environment, user extension tables, role migration, and the option to skip
+        end-user migration, so that they can prepare their environment and identity
+        setup before migrating.
+    - name: Cancel data migration
+      id: cancel-data-migration
+      description: Wants to know when and how to cancel an in-progress O11 to ODC data
+        migration, and understand the impact on app data and end users depending on
+        which phase is canceled, so that they can recover safely if a running migration
+        needs to be aborted.
+    - name: Execute data migration
+      id: execute-data-migration
+      description: Wants to execute the O11 to ODC data migration using the app conversion
+        console in the ODC Portal — including selecting migration type, source environment,
+        target stage, end-user migration options, and confirming the setup — so that
+        app entity data and end users are transferred to ODC.
+    - name: Configure end-user IdP
+      id: configure-end-user-idp
+      description: Wants to configure an identity provider in ODC for each O11 source
+        environment and map it to a target ODC stage in the infrastructure settings,
+        including selecting the user profile mapping and username prefix, so that end
+        users can be migrated from that O11 environment.
+    - name: Fix data migration errors
+      id: fix-data-migration-errors
+      description: Wants to identify and fix data model inconsistency errors that
+        stop an O11 to ODC data migration — including missing entities or attributes,
+        attribute property mismatches, and reference attribute mismatches — so that
+        they can resolve the root cause and successfully retry the migration.

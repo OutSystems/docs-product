@@ -8,8 +8,6 @@ platform-version: o11
 figma:
 audience:
   - Developer
-  - Front-end developer
-  - Architect
 outsystems-tools:
   - service studio
   - case management framework

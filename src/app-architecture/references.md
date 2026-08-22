@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: module architecture, software architecture, deployment best practices, performance optimization, entity management
 audience:
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -1,5 +1,5 @@
 ---
-summary: Explore translating architectural blueprints into real applications with OutSystems 11 (O11), focusing on an online soccer field booking system.
+summary: OutSystems 11 (O11) architecture blueprint design using the Disclose, Organize, and Assemble steps for a soccer field booking app.
 tags: architecture blueprint, web application development, application design, online booking system
 guid: e52a7581-4dc9-4848-88c3-7e5df4a5c614
 locale: en-us

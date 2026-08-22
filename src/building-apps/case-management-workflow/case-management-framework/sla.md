@@ -1,6 +1,6 @@
 ---
 tags: sla enforcement, sla configuration, workflow automation, process management, business rules
-summary: Learn how to set and enforce SLA resolution times in OutSystems 11 (O11) using the Case Management framework.
+summary: OutSystems 11 (O11) Case Management framework SLA configuration lets you set and enforce resolution times at case and activity levels.
 guid: e745cd81-f50a-483d-a08d-4279288fceae
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags: business process technology, entity relationships, case hierarchy, process management, wait node implementation
-summary: Learn how to manage complex workflows with subcases in OutSystems 11 (O11), featuring hierarchical case relationships.
+summary: Subcases in OutSystems 11 (O11) are cases linked to a parent case via the CaseRelation entity, polled through a BPT Wait node to track completion.
 guid: 7a4bf141-060b-4cd8-bf99-a381f4e37d73
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

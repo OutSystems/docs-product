@@ -1,5 +1,5 @@
 ---
-summary: Explore how to create a one-to-one relationship in OutSystems 11 (O11) to extend entities with additional attributes.
+summary: One-to-one relationships in OutSystems 11 (O11) let you extend a referenced entity with extra attributes by creating a new entity with a matching identifier.
 tags: entity relationships, database modeling, entity extension, data management, system entities
 locale: en-us
 guid: 31531e0f-7653-48b1-810e-027d4586bef3

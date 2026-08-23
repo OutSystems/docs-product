@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) enables offline access and data synchronization for mobile apps and PWAs.
+summary: OutSystems 11 (O11) offline data sync for mobile apps and PWAs using SQLite, IndexedDB, local storage modeling, and a 4-step sync implementation process.
 tags: offline capabilities, data synchronization, progressive web apps, sqlite, indexeddb
 locale: en-us
 guid: ff508705-52d0-4d39-a319-fca0f74eb85f

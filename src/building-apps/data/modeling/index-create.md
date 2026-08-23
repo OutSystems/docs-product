@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create and manage database indexes in OutSystems 11 (O11) to enhance search performance and enforce attribute uniqueness.
+summary: "Entity index creation in OutSystems 11 (O11): define indexes in Service Studio to speed up searches or enforce attribute uniqueness across rows."
 tags: database management, entity modeling, performance optimization, application development, data uniqueness
 locale: en-us
 guid: 0611c8e9-7cba-4812-8495-88165c39e20e

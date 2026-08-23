@@ -14,7 +14,6 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
-  - unblock
   - evaluate
 topic:
   - site-properties-settings

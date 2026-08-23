@@ -28,6 +28,13 @@ knowledge-needs:
       description: Wants to enable or disable AI logic suggestions in ODC Studio
         Preferences, so that they can control whether the feature is active during
         development.
+    - name: AI logic suggestions model
+      id: ai-logic-suggestions-model
+      description: Wants to understand how the AI logic suggestions model works,
+        including that it uses an OutSystems proprietary ML model trained on anonymized
+        patterns running entirely within OutSystems infrastructure rather than external
+        LLMs, so that they can make informed decisions about data privacy and tool
+        selection.
   - name: Using Events
     id: using-events
     subtopics:
@@ -74,6 +81,12 @@ knowledge-needs:
       id: operators
     - name: Functions
       id: functions
+    - name: Check string contains
+      id: check-string-contains
+      description: Wants to check whether one text string contains another using
+        the built-in Index function in OutSystems O11, including a case-insensitive
+        variant, so that they can replicate C# String.Contains behavior in logic
+        expressions.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -402,6 +415,12 @@ knowledge-needs:
       id: custom-code-integration
     - name: Integrate with legacy systems
       id: legacy-systems-integration
+      subtopics:
+      - name: Access Lotus Notes data
+        id: access-lotus-notes-data
+        description: Wants to access data from a legacy Lotus Notes/Domino application
+          using ODBC and a SQL Server Linked Server, on a 64-bit SQL Server environment,
+          so that OutSystems applications can query that legacy data at runtime.
   - name: Handling webservice errors
     id: handle-webservice-errors
 - name: Advanced security
@@ -489,6 +508,68 @@ knowledge-needs:
         and then add group records to the configuration module, so that groups
         are registered in the Group and GroupExtended entities when the module
         is published.
+    - name: List case activities
+      id: list-case-activities
+      description: Wants to retrieve a list of activities assigned to a logged-in
+        case worker by adding the Case_GetActivities action and related static
+        entity dependencies to the UI module and wiring a Data Action in
+        OutSystems 11, so that the activity list can be used as the data source
+        for a Table or List widget.
+    - name: Enrich activity list
+      id: enrich-activity-list
+      description: Wants to enrich an activity list with case business entity
+        data by modifying the Data Action output parameter to a Record list and
+        iterating with a For Each, Aggregate, and ListAppend in OutSystems 11,
+        so that case workers can see supplementary case information (such as a
+        support ticket subject) alongside each activity.
+    - name: List requester cases
+      id: list-requester-cases
+      description: Wants to retrieve a list of cases created by a logged-in
+        requester by adding the Case_GetCases action and RequesterScope static
+        entity dependencies to the UI module and wiring a Data Action in
+        OutSystems 11, so that the case list can be used as the data source for
+        a Table or List widget.
+    - name: Enrich requester case list
+      id: enrich-requester-case-list
+      description: Wants to enrich a requester case list with case business
+        entity data by modifying the Data Action output parameter to a Record
+        list and iterating with a For Each, Aggregate, and ListAppend in
+        OutSystems 11, so that requesters can see supplementary case information
+        (such as a support ticket subject) alongside each case they created.
+    - name: Translate CMF entities
+      id: translate-cmf-entities
+      description: Wants to add locales to the Data tab and translate the CMF
+        static entities (CaseDefinitionConfiguration, CaseStatusConfiguration,
+        Milestones, CaseActions) in the core services module in OutSystems 11,
+        so that the Case Management Framework app displays text in the correct
+        supported language for end users.
+    - name: Enable CMF locale
+      id: enable-cmf-locale
+      description: Wants to create a SetupCaseConfiguration_Locale server action
+        that calls SetCurrentLocale and appends translation records for the case
+        definition and case status static entities in OutSystems 11, so that the
+        case management app resolves labels in the correct language for a given
+        locale at runtime.
+    - name: Adapt CMF bootstrap
+      id: adapt-cmf-bootstrap
+      description: Wants to call the SetupCaseConfiguration_Locale action once
+        per target locale in the Bootstrap_CaseConfiguration timer action,
+        chaining each call's SetupData output as the next call's input in
+        OutSystems 11, so that all desired locale translations are registered
+        every time the core services module is published.
+    - name: Understand rules engine
+      id: understand-rules-engine
+      description: Wants to understand the four components of the rules engine
+        in the Case Management Framework (Rule, Rule Group, Rule Line, Rule
+        Group Output), how they relate to each other, and what result types a
+        rule can return, in OutSystems 11, so that they can model business rules
+        correctly before setting them up.
+    - name: Set up CMF rule
+      id: set-up-cmf-rule
+      description: Wants to set up a rule in the Case Management Framework by
+        creating the Rule, Rule Group, Rule Line, and Rule Group Output records
+        using the CaseServices_API in OutSystems 11, so that a business rule is
+        ready to be evaluated in a case management application.
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -604,6 +685,26 @@ knowledge-needs:
       id: consume-refresh-methods
     - name: Structures
       id: structures
+    - name: Consume SAP OData
+      id: consume-sap-odata
+      description: Wants to consume an SAP OData service in OutSystems 11 by downloading
+        the JSON Swagger specification from SAP API Business Hub and importing it via
+        Service Studio's REST consumer in a dedicated module, so that SAP data and
+        operations are available as server actions in the application.
+    - name: Fix OData dollar params
+      id: fix-odata-dollar-params
+      description: Wants to work around SAP OData's $-prefixed system query parameter
+        encoding issue by implementing an OnBeforeRequest handler in Service Studio
+        that re-adds the dollar sign to matching URL query parameters before each
+        request, so that filters, ordering, pagination, and other OData system options
+        are transmitted correctly.
+    - name: Handle SAP OData errors
+      id: handle-sap-odata-errors
+      description: Wants to implement an OnAfterResponse handler in Service Studio
+        that parses SAP OData error responses across three formats (data errors, fault
+        errors, and API errors) and throws typed exceptions, so that error handling
+        logic in the consuming application can respond appropriately to different
+        failure modes.
 - name: Basic workflows
   guid: 368a1c9e-0f21-4970-9645-577590bbf1ca
   topics:
@@ -761,6 +862,14 @@ knowledge-needs:
         setting the Line Separator property of the List Records widget to None, in
         Service Studio for O11, so that records appear in a multi-column layout on
         the screen.
+    - name: Integrate jQuery plugin
+      id: integrate-jquery-plugin
+      description: Wants to integrate a third-party jQuery plugin into an OutSystems
+        Traditional Web app by creating a web block that encapsulates the plugin's
+        JavaScript, CSS, and resources, adding optional parameters to control the
+        plugin, and using an un-escaped Expression to activate it, in Service Studio
+        for O11, so that the plugin can be reused across multiple screens without
+        duplicating resources.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -953,6 +1062,61 @@ knowledge-needs:
         completing the Azure Portal wizard (resource group, credentials, VM size),
         starting the deployed VM, and connecting Service Studio to the new environment,
         so that they have a working OutSystems trial up and running.
+    - name: Timezone sync requirements
+      id: timezone-sync-requirements
+      description: Wants to understand why all components of an OutSystems 11 environment
+        (database, controller, and front-ends) must share the same timezone and be
+        synchronized via NTP, so that they can configure their infrastructure correctly
+        and avoid unexpected behavior with time-dependent features such as timers
+        and BPT.
+    - name: Fix .NET Core upgrade
+      id: fix-net-core-upgrade
+      description: Wants to fix Server.API and Server.Identity failing to initialize
+        after upgrading to Platform Server 11.12.2 or later in a self-managed environment,
+        caused by a missing .NET Core 3.1 Runtime & Hosting Bundle for Windows, so
+        that they can verify the cause and complete the platform upgrade successfully.
+    - name: Fix controller duplication
+      id: fix-controller-duplication
+      description: Wants to fix the Environment Health screen showing a Deployment
+        Controller or Front-End server listed twice under different names or IP addresses,
+        caused by a mismatch between the server's registered name and the Deployment
+        Controller Hostname in Configuration Tool, so that they can resolve the duplication
+        and restore an accurate environment health display.
+    - name: O11 Windows Event logs
+      id: o11-windows-event-logs
+      description: Wants to locate the log entries generated by OutSystems 11 platform
+        components by opening Windows Event Viewer and navigating to the Application
+        folder, so they can inspect service errors, warnings, and informational messages
+        in a self-managed environment.
+    - name: O11 platform log sources
+      id: o11-platform-log-sources
+      description: Wants to understand the types (error, warning, information), sources
+        (which OutSystems 11 services), and contents of log entries written to Windows
+        Event Viewer by the OutSystems platform, so they can correctly interpret log
+        entries and identify which component generated a given issue.
+    - name: Fix CT symlink downtime
+      id: fix-ct-symlink-downtime
+      description: Wants to diagnose and recover from application downtime caused by
+        running Configuration Tool from different paths via a symbolic link in Platform
+        Server 11.10.0, which overwrites configuration files and deletes DLLs, so
+        that they can remove affected front-end servers from the load balancer, republish
+        all modules, and avoid recurrence.
+    - name: Fix site property upgrade
+      id: fix-site-property-upgrade
+      description: Wants to fix the "Value cannot be null. Parameter name: key" error
+        that occurs when upgrading O11 Platform Server to 11.10.2 or higher on an
+        environment originally installed on version 5 or lower, caused by legacy Site
+        Property IDs in non-standard format that were not migrated in version 5, by
+        running SQL queries to identify and delete the outdated entries, so that they
+        can complete the Service Center installation and the platform upgrade successfully.
+    - name: Fix ODP.NET conflict
+      id: fix-odp-net-conflict
+      description: Wants to resolve Oracle Data Provider for .NET (ODP.NET) driver errors
+        — such as "Unsupported column datatype" and TransformDatabaseToRuntimeValue access
+        failures — caused by a conflicting Oracle.ManagedDataAccess.dll version in the
+        GAC on the platform server, by removing or replacing the DLL using OraProvCfg.exe,
+        so that Configuration Tool, Service Studio, and application runtime stop throwing
+        Oracle driver errors.
 - name: Hotfixing
   guid: d8111f11-34b0-4f33-8374-5d9611d507e2
   topics:
@@ -1031,6 +1195,50 @@ knowledge-needs:
   topics:
   - name: Using Cordova Plugins
     id: using-cordova-plugins
+    subtopics:
+    - name: CocoaPods support
+      id: cocoapods-support-outsystems
+      description: Wants to understand what CocoaPods support means in OutSystems, including
+        what CocoaPods is, which plugin types it applies to (Objective-C Cordova plugins),
+        and how it eliminates manual iOS dependency management, so that they can decide
+        whether and how to use CocoaPods-dependent plugins in their mobile apps.
+    - name: Check CocoaPods plugin
+      id: check-plugin-uses-cocoapods
+      description: Wants to determine whether a Cordova plugin uses CocoaPods by inspecting
+        the plugin module's extensibility configurations JSON to locate the plugin URL,
+        then checking the corresponding plugin.xml for a podspec framework reference,
+        so that they know whether CocoaPods dependency handling applies before using
+        the plugin.
+    - name: Set up push notifications
+      id: set-up-push-notifications
+      description: Wants to set up push notifications in an OutSystems mobile app using
+        the OneSignal plugin — including configuring the OneSignal account, installing
+        the plugin, registering the device (with or without a user), handling notification
+        events, and configuring deep-link support for Android — so that the app can
+        receive push notifications on both iOS and Android.
+    - name: Send push notifications
+      id: send-push-notifications
+      description: Wants to implement server-side logic in an OutSystems O11 app to
+        send push notifications via the OneSignalAPI — including adding the API dependency,
+        building the send logic, configuring the notification icon, and defining
+        multi-language message content — so that the app can deliver targeted push
+        notifications to users.
+    - name: Set up Pushwoosh
+      id: set-up-pushwoosh-notifications
+      description: Wants to set up push notifications in an OutSystems O11 mobile app
+        using the Pushwoosh plugin — including installing the plugin from Forge, adding
+        the PushwooshNotifications block, configuring the ApplicationCode and FCMSenderId
+        parameters, uploading google-services.json for Android, registering the device
+        after login or via OnInitializeOver, and setting the aps-environment entitlement
+        for iOS developer certificates — so that the app can receive push notifications
+        on both iOS and Android.
+    - name: Send Pushwoosh notification
+      id: send-pushwoosh-notifications
+      description: Wants to send push notifications from an OutSystems O11 app using
+        the Pushwoosh plugin — including generating a Pushwoosh API Access Token and
+        calling the SendPushNotificationToAll action with the ApplicationCode, ApiAccessToken,
+        Message, Badge, and Deeplink parameters — so that the app can broadcast
+        notifications to all registered devices.
 - name: Lifecycle Independence
   guid: 4b3a44cd-2a86-462c-81b2-89a841284aab
   topics:
@@ -1102,10 +1310,46 @@ knowledge-needs:
         under demanding synchronization scenarios.
   - name: Customize Mobile apps
     id: customize-mobile-apps
+  - name: AppShield
+    id: appshield
+    subtopics:
+    - name: Retrace obfuscated logs
+      id: retrace-obfuscated-logs
+      description: Wants to deobfuscate an Android stack trace generated by a MABS
+        AppShield-obfuscated build, using ProGuard's retrace CLI or proguardgui with
+        the build's mapping.txt file, so that they can identify the root cause of
+        a crash in an obfuscated app.
+    - name: Plugin obfuscation errors
+      id: plugin-obfuscation-errors
+      description: Wants to understand why a customized or unsupported mobile plugin
+        produces ClassNotFoundException or MethodNotFoundException errors at runtime
+        after AppShield obfuscation, so that they can identify whether misconfigured
+        dependencies, Gradle/JAR/AAR imports, or reflection-based code are causing
+        the issue.
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
 - name: Product security
   guid: f5935fdf-7f64-46b8-bc71-dd69627c33d8
+  topics:
+  - name: Cloud infrastructure maintenance
+    id: cloud-infrastructure-maintenance
+    subtopics:
+    - name: Cloud maintenance schedule
+      id: cloud-maintenance-schedule
+      description: Wants to understand the schedule, frequency, advance notice periods,
+        and rescheduling rules for OutSystems Cloud system updates, so that they can
+        plan around maintenance windows and avoid unexpected service disruption.
+    - name: Cloud update downtime
+      id: cloud-update-downtime
+      description: Wants to understand the expected downtime during OutSystems Cloud
+        system updates based on their infrastructure configuration (single front-end,
+        multiple front-ends, load balancer), so that they can assess the impact on
+        their production environment.
+    - name: PCI DSS patching compliance
+      id: pci-dss-patching-compliance
+      description: Wants to understand how OutSystems Cloud system updates fulfill
+        PCI DSS Requirement 6.2 for timely security patching, so that they can confirm
+        their environment meets compliance obligations without taking manual action.
 - name: Production Recovery
   guid: e392931b-251f-4d43-8c0b-c85bbc97e02e
   topics:
@@ -1252,6 +1496,13 @@ knowledge-needs:
       id: built-in-authentication
     - name: External IDPs
       id: external-idps
+    - name: External IdP concepts
+      id: external-idp-concepts
+      description: Wants to understand what external identity providers (IdPs) are,
+        why they are beneficial (reduced overhead, enhanced security, SSO), and the
+        core concepts of authentication, authorization, and single sign-on in the
+        context of ODC, so that they can explain external IdP integration and its
+        value before configuring it.
     - name: Lockout
       id: lockout
     - name: Passwords
@@ -1268,6 +1519,21 @@ knowledge-needs:
       id: idp-apple
     - name: External IDPs - OpenIDP
       id: idp-openidp
+    - name: Map AD Groups to Roles
+      id: map-ad-groups-to-roles
+      description: Wants to map Active Directory Groups to OutSystems Roles using
+        the Active Directory and Active Directory Group Mapping Forge components —
+        including installing the components, creating an access token, defining role
+        mappings, and updating the login flow to call RefreshUserRoles before session
+        creation — in OutSystems 11, so that user permissions managed in Active Directory
+        are automatically reflected in OutSystems application roles.
+    - name: Sync AD roles schedule
+      id: sync-ad-roles-schedule
+      description: Wants to configure the schedule of the SyncRoles, SyncGroups,
+        and SyncUsers timers provided by the Active Directory Group Mapping component
+        — including setting timer schedules in Service Center and triggering on-demand
+        synchronisation — in OutSystems 11, so that changes to Active Directory Groups
+        are regularly propagated to OutSystems user roles without manual intervention.
   - name: Authorization
     id: authorization
     subtopics:
@@ -1314,6 +1580,20 @@ knowledge-needs:
       id: users-licensing
     - name: User Types
       id: user-types
+    - name: IT vs App Users
+      id: it-vs-app-users
+      description: Wants to understand the difference between IT Users and Application
+        Users in O11, including how each is managed under a separate User Provider
+        (Service Center vs Users app) and how multi-tenancy can create further isolated
+        user spaces, so that they can correctly identify which user space a given login
+        belongs to.
+    - name: Login provider mismatch
+      id: login-provider-mismatch
+      description: Wants to diagnose why a login works in one OutSystems user provider
+        (for example, Service Center) but fails in another (for example, the Users
+        app), by understanding the common causes — inactive user, different password,
+        external authentication configuration, or multi-tenancy — so that they can
+        resolve the login failure.
   - name: Governance principles
     id: governance-principles
     subtopics:
@@ -1410,6 +1690,12 @@ knowledge-needs:
       description: Wants to create and scope process diagrams for a business vision
         document, when conducting business analysis, so that all stakeholders can
         visually understand the full business process beyond just the application scope.
+    - name: Personas
+      id: personas
+      description: Wants to create personas for a business vision document by observing
+        users in action and collecting statistics and context information for each,
+        when conducting business analysis, so that they can understand each persona's
+        contribution to strategic or tactical goals.
 - name: O11 to ODC Migration
   guid: ''
   topics:
@@ -1523,3 +1809,93 @@ knowledge-needs:
         stop an O11 to ODC data migration — including missing entities or attributes,
         attribute property mismatches, and reference attribute mismatches — so that
         they can resolve the root cause and successfully retry the migration.
+- name: Infrastructure Setup
+  guid: a1c2e3f4-5b6d-7e8f-9a0b-1c2d3e4f5a6b
+  topics:
+  - name: Reverse Proxy Configuration
+    id: reverse-proxy-configuration
+    subtopics:
+    - name: Configure SSL offloading
+      id: configure-ssl-offloading
+      description: Wants to configure SSL offloading for OutSystems 11 by setting
+        the X-Forwarded-Proto HTTP header at the reverse proxy, inserting the HTTPtoHTTPSproxyHeader
+        parameter into the OutSystems database, and configuring the trusted proxy
+        address in Service Center, so that the platform correctly identifies and processes
+        HTTPS requests when SSL is terminated at the proxy level.
+    - name: Rewrite resource URLs
+      id: rewrite-resource-urls
+      description: Wants to rewrite absolute URLs in OutSystems application resources
+        (HTML, CSS, JavaScript) at the reverse proxy level and disable content compression
+        at both the platform and application-server level, so that all resource links
+        remain valid when an extra path segment is introduced by the reverse proxy.
+    - name: Adjust keep-alive timeout
+      id: adjust-keep-alive-timeout
+      description: Wants to configure the keep-alive connection timeout on an Apache-based
+        reverse proxy to at least 30 seconds using the KeepAliveTimeout directive,
+        so that OutSystems Mobile and Reactive Web apps do not encounter connection
+        errors caused by the default 5-second timeout.
+  - name: Redis in-memory sessions
+    id: redis-in-memory-sessions
+    subtopics:
+    - name: Redis software prerequisites
+      id: redis-software-prereqs
+      description: Wants to know which Platform Server and Redis Server versions
+        are required to use Redis for in-memory session storage in O11, so they
+        can verify their environment meets the minimum software requirements before
+        starting setup.
+    - name: Redis hardware sizing
+      id: redis-hardware-sizing
+      description: Wants to understand the minimum hardware specifications for a
+        Redis infrastructure — covering both non-productive and production (Redis
+        Cluster) environments — so they can provision servers with the right CPU,
+        RAM, storage, and network capacity before deploying Redis for OutSystems.
+- name: Log streaming (O11)
+  guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
+  topics:
+  - name: Log Streaming overview
+    id: log-streaming-overview
+    subtopics:
+    - name: Understand Log Streaming
+      id: log-streaming-understand
+      description: Wants to understand what Log Streaming is for a self-managed O11
+        installation — including how the bundled Fluent Bit service reads JSON log
+        files, transforms them into the Flat Format, and forwards them to an external
+        tool — so that they can decide whether to adopt it and know what to expect
+        before setup.
+    - name: Enable Log Streaming
+      id: log-streaming-enable
+      description: Wants to enable and configure Log Streaming on a self-managed O11
+        installation using the Configuration Tool GUI or CLI, including meeting
+        prerequisites, configuring settings, setting up a multi-front-end farm, and
+        disabling the feature, so that application logs are forwarded to an external
+        observability or SIEM tool.
+  - name: Log Streaming operations
+    id: log-streaming-ops
+    subtopics:
+    - name: Troubleshoot Log Streaming
+      id: log-streaming-troubleshoot
+      description: Wants to diagnose and resolve Log Streaming issues on a self-managed
+        O11 installation — using Test Connection, the Fluent Bit service log, the
+        Windows Service console, and the metrics endpoint — so that they can identify
+        why logs aren't arriving at a destination or the service isn't running.
+  - name: Fluent Bit configuration
+    id: fluentbit-configuration
+    subtopics:
+    - name: Configure Fluent Bit output
+      id: fluentbit-configure-output
+      description: Wants to set up a Fluent Bit output plugin in custom.yaml on a
+        self-managed O11 installation, including specifying the output name, match
+        tags, match_regex, alias, and reliability settings such as retry_limit, so
+        that logs are routed to the chosen APM or SIEM destination reliably.
+    - name: Filter streaming logs
+      id: fluentbit-filter-logs
+      description: Wants to filter streamed logs in Fluent Bit on a self-managed O11
+        installation by log type (using tag matching) or by application name (using
+        the modify+grep workaround for flat-format field names), so that only the
+        desired subset of records reaches a given output.
+    - name: Enrich logs with metadata
+      id: fluentbit-enrich-logs
+      description: Wants to add static metadata fields, copy fields, or rename fields
+        in Fluent Bit log records on a self-managed O11 installation using the modify
+        filter and dotted-key names, so that streamed logs carry the additional context
+        needed by the destination tool.

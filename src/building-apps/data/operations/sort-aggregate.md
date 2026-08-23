@@ -1,5 +1,5 @@
 ---
-summary: Learn how to implement fixed and dynamic sorting in aggregates using OutSystems 11 (O11) to enhance data presentation in applications.
+summary: "OutSystems 11 (O11) aggregate sorting: add fixed or dynamic sort to display records in ascending or descending order at runtime."
 tags: data sorting, aggregates, dynamic sorting, fixed sorting, data presentation
 locale: en-us
 guid: 1a92a987-8550-4f9c-9772-177373a40e2f

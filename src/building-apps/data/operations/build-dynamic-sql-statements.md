@@ -11,6 +11,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - apply
   - evaluate
 topic:
   - query-parameters

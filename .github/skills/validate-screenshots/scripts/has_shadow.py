@@ -75,14 +75,19 @@ EXPECTED_FEATHER = {
 }
 
 # Baked-in (RGB) detector tuning. The edge mid-point is sampled and a
-# *smooth, monotonic* luminance ramp toward inner-content luminance is
-# treated as a shadow gradient. Sharp step transitions (e.g. anti-aliased
-# UI edges between two flat regions) are rejected.
+# *smooth* luminance ramp between the background and inner-content luma
+# is treated as a shadow gradient — it may dip the other way first (a
+# valley) when the content is lighter than the canvas, but it settles in
+# one direction at a time. Sharp step transitions and flat plateaus
+# (e.g. anti-aliased UI edges, a header bar between two flat regions)
+# are rejected.
 BAKED_DELTA_THRESHOLD = 8       # min |edge_luma − inner_luma| to call it a gradient
 BAKED_PADDING_TOLERANCE = 3     # pixels within this of edge_luma still count as bg
 BAKED_INSIDE_TOLERANCE = 5      # pixels within this of inner_luma count as content
 BAKED_MAX_STEP = 20             # max luma delta between adjacent feather pixels
 BAKED_MIN_FEATHER = 2           # feathers shorter than this are treated as noise
+BAKED_AVERAGE_SPAN = 5          # adjacent perpendicular samples averaged per depth step
+BAKED_MAX_FLAT_RUN = 2          # consecutive near-flat steps before it's a plateau, not a ramp
 
 
 def _load_rgba_via_pillow(path: Path):
@@ -241,17 +246,55 @@ def _feather_length(img, edge: str, w: int, h: int) -> int | None:
     return None
 
 
+def _averaged_lumas(img, edge: str, coords: list[tuple[int, int]], w: int, h: int) -> list[int] | None:
+    """Luma per depth step, taken as the median across a few adjacent
+    perpendicular pixels.
+
+    A single pixel line is at the mercy of ordinary PNG antialiasing
+    (±1-3 luma units), which is enough noise to shift where a short
+    feather is judged to start. Sampling a small band of columns (for
+    top/bottom, which walk a fixed column) or rows (for left/right,
+    which walk a fixed row) around the mid-point smooths that out — the
+    median, not the mean, because a real UI has vertical/horizontal
+    structure (a divider, a panel edge) that can run through the band
+    a column or two off-center; the mean blends that structure's luma
+    into the reading, the median shrugs off a single such outlier.
+    """
+    half = BAKED_AVERAGE_SPAN // 2
+    lumas: list[int] = []
+    for (x, y) in coords:
+        samples: list[int] = []
+        if edge in ("top", "bottom"):
+            for sx in range(max(0, x - half), min(w - 1, x + half) + 1):
+                pixel = _rgb_at(img, sx, y)
+                if pixel is None:
+                    return None
+                samples.append(_luma(*pixel))
+        else:
+            for sy in range(max(0, y - half), min(h - 1, y + half) + 1):
+                pixel = _rgb_at(img, x, sy)
+                if pixel is None:
+                    return None
+                samples.append(_luma(*pixel))
+        samples.sort()
+        lumas.append(samples[len(samples) // 2])
+    return lumas
+
+
 def _baked_feather_length(img, edge: str, w: int, h: int) -> int | None:
     """Measure a baked-in shadow gradient at an edge using RGB luminance.
 
     Walks SAMPLE_DEPTH pixels inward from the edge mid-point and counts
-    pixels that form a *smooth, monotonic* gradient between the edge
-    background luma (lumas[0]) and an inner-content luma sampled deep
-    inside the slice. A real soft drop shadow rasterised into pixels
-    produces small per-pixel luma steps (≤ BAKED_MAX_STEP) all moving
-    toward the content luma. Sharp transitions (a single big jump from
-    background to a different region) are anti-aliased UI edges, not
-    shadows — those are rejected and the function returns 0.
+    pixels between the flat background plateau and the point where the
+    walk reaches inner-content luma or takes a sharp single-pixel step —
+    whichever comes first. A real soft drop shadow rasterised into
+    pixels produces small per-pixel luma steps (≤ BAKED_MAX_STEP) the
+    whole way, regardless of whether the ramp moves straight toward the
+    content luma or dips the other way first (as it does when the
+    content is lighter than the background canvas). Sharp transitions (a
+    single big jump straight from background to a different region) are
+    anti-aliased UI edges, not shadows — those are rejected and the
+    function returns 0.
 
     Returns 0 for: no gradient (edge ≈ inside), step transitions, or
     feathers shorter than BAKED_MIN_FEATHER. Returns None if the slice
@@ -261,12 +304,9 @@ def _baked_feather_length(img, edge: str, w: int, h: int) -> int | None:
     if len(coords) < 5:
         return None
 
-    lumas: list[int] = []
-    for (x, y) in coords:
-        pixel = _rgb_at(img, x, y)
-        if pixel is None:
-            return None
-        lumas.append(_luma(*pixel))
+    lumas = _averaged_lumas(img, edge, coords, w, h)
+    if lumas is None:
+        return None
 
     edge_luma = lumas[0]
     inside_start = max(0, len(lumas) - 5)
@@ -276,32 +316,65 @@ def _baked_feather_length(img, edge: str, w: int, h: int) -> int | None:
     if abs(edge_luma - inside_luma) < BAKED_DELTA_THRESHOLD:
         return 0
 
-    sign = 1 if inside_luma > edge_luma else -1
-    state = "padding"
-    feather = 0
-    prev = edge_luma
-    for l in lumas:
-        if state == "padding":
-            if abs(l - edge_luma) < BAKED_PADDING_TOLERANCE:
-                continue
-            if abs(l - edge_luma) > BAKED_MAX_STEP:
-                return 0
-            if abs(l - inside_luma) < BAKED_INSIDE_TOLERANCE:
-                return 0
-            state = "feather"
-            feather = 1
-            prev = l
+    plateau_end = None
+    for i, l in enumerate(lumas):
+        if abs(l - edge_luma) < BAKED_PADDING_TOLERANCE:
             continue
-        # state == "feather"
+        if abs(l - edge_luma) > BAKED_MAX_STEP:
+            return 0
         if abs(l - inside_luma) < BAKED_INSIDE_TOLERANCE:
+            return 0
+        plateau_end = i
+        break
+    if plateau_end is None:
+        return 0
+
+    # From the end of the plateau, find where the ramp reaches content —
+    # either by luma proximity or by a cliff-sized single-pixel step. A
+    # real gradient (straight, or a valley that dips before it rises to
+    # lighter content) turns direction at most once, and keeps drifting
+    # away from wherever it last settled — a run of pixels that stops
+    # drifting is a flat region (a header bar, a panel background),
+    # even if each individual step is too small to have tripped the
+    # reversal check on its own; a slow gradient of small steps in the
+    # same direction keeps drifting from its anchor and is never flagged.
+    boundary = None
+    prev = lumas[plateau_end]
+    ramp_sign = 0
+    reversed_once = False
+    flat_anchor = prev
+    flat_run = 0
+    for i in range(plateau_end + 1, len(lumas)):
+        l = lumas[i]
+        if abs(l - inside_luma) < BAKED_INSIDE_TOLERANCE:
+            boundary = i
             break
-        progress = (l - prev) * sign
-        if progress < -BAKED_PADDING_TOLERANCE:
+        step = l - prev
+        if abs(step) > BAKED_MAX_STEP:
+            boundary = i
             break
-        if abs(l - prev) > BAKED_MAX_STEP:
-            break
-        feather += 1
+        if abs(l - flat_anchor) < BAKED_PADDING_TOLERANCE:
+            flat_run += 1
+            if flat_run > BAKED_MAX_FLAT_RUN:
+                boundary = i - flat_run
+                break
+        else:
+            flat_run = 0
+            flat_anchor = l
+        if abs(step) >= BAKED_PADDING_TOLERANCE:
+            step_sign = 1 if step > 0 else -1
+            if ramp_sign == 0:
+                ramp_sign = step_sign
+            elif step_sign != ramp_sign:
+                if reversed_once:
+                    break
+                reversed_once = True
+                ramp_sign = step_sign
         prev = l
+    if boundary is None:
+        return 0
+
+    feather = boundary - plateau_end
     return feather if feather >= BAKED_MIN_FEATHER else 0
 
 

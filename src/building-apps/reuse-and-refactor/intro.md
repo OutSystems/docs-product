@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) supports scalable app development through reusable, modular logic and various module types.
+summary: "OutSystems 11 (O11) module types explained: Reactive, Mobile, Service, Library, and Extension modules, and how producer and consumer modules share logic."
 locale: en-us
 guid: 33e63dcb-e047-49d9-ad6b-e14efd20ed46
 app_type: traditional web apps, mobile apps, reactive web apps

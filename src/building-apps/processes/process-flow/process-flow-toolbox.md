@@ -1,5 +1,5 @@
 ---
-summary: Discover process flow tools in OutSystems 11 (O11) for streamlined process management.
+summary: OutSystems 11 (O11) process flow toolbox lists all process tools in Service Studio, including Human Activity, Send Email, Decision, and Wait elements.
 locale: en-us
 guid: ce9e1f95-ff93-4bb2-95be-92752f3df2ce
 app_type: traditional web apps, mobile apps, reactive web apps

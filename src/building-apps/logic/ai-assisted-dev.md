@@ -1,5 +1,5 @@
 ---
-summary: Explore AI-driven logic development enhancements in OutSystems 11 (O11) with the Code Mentor feature for streamlined app creation.
+summary: Code Mentor logic suggestions in OutSystems 11 (O11) use AI to predict next steps in action flows, helping you build logic faster with auto-completed elements.
 tags: ide usage, reactive web apps, tutorials for beginners, ai and machine learning integration, logic development
 locale: en-us
 guid: 9ca5abbb-ff2d-4aaf-9437-a6565e9df8f6

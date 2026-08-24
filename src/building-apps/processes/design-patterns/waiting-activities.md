@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Appli
 tags: workflow management, database events, process automation, timeout handling, event-driven
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

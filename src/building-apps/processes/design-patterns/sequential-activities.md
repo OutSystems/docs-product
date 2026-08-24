@@ -8,7 +8,6 @@ summary: Learn how to design sequential activities in OutSystems 11 (O11) by con
 tags: workflow design, process modeling, flowchart, user guide
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

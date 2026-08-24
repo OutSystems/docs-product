@@ -8,7 +8,6 @@ figma:
 tags: process flows, process activities, output parameter management, data transfer in processes, process design
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

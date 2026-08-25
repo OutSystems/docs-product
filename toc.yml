@@ -966,7 +966,7 @@
             - href: monitor-and-troubleshoot/log-streaming/splunk.md
             - href: monitor-and-troubleshoot/log-streaming/amazon-s3.md
             - href: monitor-and-troubleshoot/log-streaming/configure-collector.md
-    #App quality and technical debt
+    # App quality and technical debt
     - href: monitor-and-troubleshoot/manage-tech-debt/intro.md
     - topics:
         - href: monitor-and-troubleshoot/manage-tech-debt/handling-tech-debt/handling-tech-debt.md

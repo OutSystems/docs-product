@@ -1,21 +1,28 @@
 ---
-summary: Explore the AI Mentor Studio API for managing technical debt in OutSystems 11 (O11).
-tags: api documentation, technical debt management, integration guidelines, outsystems development, json schema styling
+summary: 'Code Quality API reference for OutSystems 11 (O11): retrieve technical debt data by app, team, and category for CI/CD and BI tool integration.'
+tags:
+  - Authentication
+  - CI/CD
+  - Mentor Studio
+  - Quality Assurance
+  - REST
+  - Technical Debt
+  - Web services
 locale: en-us
 guid: 29A5FD23-8A6E-4B2B-853F-58AD0A34C560
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1549:2853
 audience:
-  - Front-end developer
   - Developer
 outsystems-tools:
-  - ai mentor studio
+  - code quality
 coverage-type:
   - remember
+isautopublish: true
 ---
 
-# AI Mentor Studio API
+# Code Quality API
 
 <style>
 
@@ -569,9 +576,9 @@ coverage-type:
         }
 </style>
 
-AI Mentor Studio API helps you manage technical debt, allowing you to use its data in third-party tools. This enables you to:
+Code Quality API helps you manage technical debt, allowing you to use its data in third-party tools. This enables you to:
 
-* Integrate technical debt data from [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md) with other technical debt and BI tools you already use.
+* Integrate technical debt data from [Code Quality](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md) with other technical debt and BI tools you already use.
 
 * Use technical debt data as a quality gate of an automated CI/CD pipeline. This ensures that deploys meet a predefined technical debt value.
 
@@ -581,24 +588,24 @@ Note: New findings are only processed every 12 hours.
 
 </div>
 
-To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../ai-mentor-studio/aims-api-authentication.md) article.
+To authenticate your API requests, follow the guidelines in the [Code Quality API authentication](../ai-mentor-studio/aims-api-authentication.md) article.
 
 <div class="info" markdown="1">
 
-**Report page URL integration**: ApplicationGUID and TeamId parameters (case sensitive) can be passed to AI Mentor Studio report page to automatically set corresponding Teams and Apps filters. TeamId parameter should map to team ExternalId field returned in the API.
+**Findings page URL integration**: ApplicationGUID and TeamId parameters (case sensitive) can be passed to Code Quality's findings page to automatically set corresponding Teams and Apps filters. TeamId parameter should map to team ExternalId field returned in the API.
 
 </div>
 
 ## Access the Swagger file
 
-You can access the **Swagger file** from the [AI Mentor Studio API page](https://aimentorstudio.outsystems.com/AIMentorStudioAPI/rest/V1/):
+You can access the **Swagger file** from the [Code Quality API page](https://codequality.outsystems.com/CodeQualityAPI/rest/V1/):
 
-![Screenshot of the AI Mentor Studio API Swagger interface showing available endpoints](images/api-swagger-aims.png "AI Mentor Studio API Swagger Interface")
+![Screenshot of the Code Quality API Swagger interface showing available endpoints](images/api-swagger-aims.png "Code Quality API Swagger Interface")
 
 <div class="container">
 <h1>V1</h1>
 <p class="sw-info">
-Base URL: <span class="sw-info-basePath">/AIMentorStudioAPI/rest/V1/</span>,
+Base URL: <span class="sw-info-basePath">/CodeQualityAPI/rest/V1/</span>,
 Version: <span class="sw-info-version">1</span>
 </p>
 <p><p>Provides technical debt details of an OutSystems infrastructure.</p>
@@ -858,7 +865,7 @@ Offset
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Code Quality API feature isn't licensed.</p>
 
 </div>
 </div>
@@ -1071,7 +1078,7 @@ Tags:
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Code Quality API feature isn't licensed.</p>
 
 </div>
 </div>
@@ -1235,7 +1242,7 @@ Tags:
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Code Quality API feature isn't licensed.</p>
 
 </div>
 </div>
@@ -1399,7 +1406,7 @@ Tags:
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Code Quality API feature isn't licensed.</p>
 
 </div>
 </div>
@@ -1594,7 +1601,7 @@ Team
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Code Quality API feature isn't licensed.</p>
 
 </div>
 </div>

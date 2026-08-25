@@ -2005,7 +2005,7 @@
     # OutSystems APIs
     - href: ref/apis/intro.md
     - topics:
-        # AI Mentor Studio API
+        # Code Quality API
         - href: ref/apis/auto/ai-mentor-studio-api.final.md
         - topics:
             - href: ref/apis/ai-mentor-studio/aims-api-authentication.md

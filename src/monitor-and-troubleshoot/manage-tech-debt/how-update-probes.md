@@ -1,6 +1,11 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, probes update, permissions management
-summary: OutSystems 11 (O11) is not mentioned in the provided article, which focuses on updating AI Mentor Studio probes.
+tags:
+  - 1-Click Publish
+  - Deploy
+  - Infrastructure
+  - Quality Assurance
+  - Technical Debt
+summary: 'OutSystems 11 (O11) Code Quality probes update: download Development and LifeTime probes and install them via Service Center.'
 locale: en-us
 guid: d11dd771-148b-49fd-8bfd-dfe0800620c5
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,44 +13,44 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:738
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
-  - ai mentor studio
+  - code quality
 coverage-type:
   - apply
+isautopublish: true
 ---
 
-# How to update the AI Mentor Studio probes
+# How to update the Code Quality probes
 
 <div class="info" markdown="1">
 
-To check the current version of your AI Mentor Studio probes, click the **Help** icon on the top-right corner of AI Mentor Studio and then select **About AI Mentor Studio**.
+To check the current version of your Code Quality probes, click the **Help** icon on the top-right corner of Code Quality and then select **About Code Quality**.
 
 </div>
 
 If you have [**Full Control** permissions assigned as a default role](how-works.md#update-probes) for the code analysis environment, the following message is displayed when an updated version of the probes is available:
 
-![Notification message in AI Mentor Studio indicating an update is available for users with Full Control permissions](images/probes-update-full-ams.png "AI Mentor Studio Full Control Update Notification")
+![Notification message in Code Quality indicating an update is available for users with Full Control permissions](images/probes-update-full-ams.png "Code Quality Full Control Update Notification")
 
 After selecting **How to download and update probes**, you go to the **Probes download and update** screen, where you can download the new probes.
 
-![Probes download and update screen in AI Mentor Studio showing options to download new probes](images/probes-procedure-ams.png "AI Mentor Studio Probes Download and Update Screen")
+![Probes download and update screen in Code Quality showing options to download new probes](images/probes-procedure-ams.png "Code Quality Probes Download and Update Screen")
 
 If you have a different permissions level, the following message is displayed when an updated version of the probes is available:
 
-![Notification message in AI Mentor Studio indicating an update is available for users with limited permissions](images/probes-update-listapp-ams.png "AI Mentor Studio Limited Permissions Update Notification")
+![Notification message in Code Quality indicating an update is available for users with limited permissions](images/probes-update-listapp-ams.png "Code Quality Limited Permissions Update Notification")
 
-To install the new probes for AI Mentor Studio, contact your infrastructure administrator.
+To install the new probes for Code Quality, contact your infrastructure administrator.
 
 ## Prerequisites
 
-Before configuring the proxy in AI Mentor Studio, make sure you have [**Full Control** permissions assigned as a default role](how-works.md#update-probes) for the code analysis environment.
+Before configuring the proxy in Code Quality, make sure you have [**Full Control** permissions assigned as a default role](how-works.md#update-probes) for the code analysis environment.
 
 ## Update probes
 
 If you have a previous version of the probes installed there's no need to uninstall it prior to installing the new version of the probes.  
-To update the AI Mentor Studio's probes, follow these steps:
+To update the Code Quality's probes, follow these steps:
 
 1. In the **Probes download and update** screen, select **Download Development probe**.
 

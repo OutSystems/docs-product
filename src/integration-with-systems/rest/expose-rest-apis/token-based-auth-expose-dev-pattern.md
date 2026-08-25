@@ -1,6 +1,11 @@
 ---
-summary: Learn a development pattern for securing exposed REST APIs in OutSystems 11 (O11) using JWT-based token authentication.
-tags: rest apis,security,authentication,jwt,token-based authentication
+summary: 'JWT token-based authentication for exposed O11 REST APIs: development pattern covering token flows, JWT structure, OnAuthentication callback, and security best practices.'
+tags:
+  - Authentication
+  - Authorization
+  - Best Practices
+  - REST
+  - Security
 locale: en-us
 guid: 5f8c0c2b-41e0-4a0d-9b3b-2f5a6a1d9f11
 app_type: traditional web apps,mobile apps,reactive web apps
@@ -18,7 +23,8 @@ topic:
   - rest-webservice-data
   - document-apis
   - authentication-mechanisms
-helpids: 
+helpids:
+isautopublish: true
 ---
 
 # Token-based authentication for exposed REST APIs
@@ -260,7 +266,7 @@ When you implement this pattern, apply the following security best practices:
 
 * **Protect tokens in transit and at rest**
     * Always expose REST APIs over HTTPS, and don't accept plain HTTP. In O11, configure **HTTP Security** to `SSL/TLS` in the exposed REST API properties.
-        * Use [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/code-patterns/ref-code-patterns.md#exposed-rest-services-are-not-secured) to scan for exposed REST services without proper security.
+        * Use [Code Quality](../../../monitor-and-troubleshoot/manage-tech-debt/code-patterns/ref-code-patterns.md#exposed-rest-services-are-not-secured) to scan for exposed REST services without proper security.
     * If you log or store tokens anywhere, mask them in logs and encrypt them before persisting to prevent leakage. In O11, use an application-level encryption mechanism such as the `Encrypt` action from the **CryptoAPI** Forge component so that you store only ciphertext in the database. Decrypt any stored values only inside trusted server-side logic when strictly needed.
 
     <div class="info" markdown="1">

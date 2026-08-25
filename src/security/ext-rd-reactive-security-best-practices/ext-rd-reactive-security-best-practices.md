@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3954-252&t=Gt8bYIfSykukAq2d-1
-tags: security best practices, server-side security, client-side security, sensitive data handling, web storage security
+tags:
+  - Authentication
+  - Best Practices
+  - Client Variables
+  - Front-End
+  - Roles
+  - Screens
+  - Security
 audience:
   - Front-end developer
   - Developer
@@ -13,6 +20,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+isautopublish: true
 ---
 
 # Best practices for reactive web security
@@ -97,11 +105,11 @@ When you have server actions that you expose to Reactive applications, you shoul
 
 When you compare Traditional Web with Reactive Web there are more security angles that you need to be aware of
 
-![Screenshot of the TrueChange interface displaying a security warning related to client-side database operations.](images/reactive-security-best-practices_4.png "TrueChange Security Warning Interface")
+![Screenshot of the TrueChange panel showing a security warning about client-side code quality in a Reactive Web App.](images/reactive-security-best-practices_4.png "TrueChange Security Warning")
 
 1. Take the warnings in [TrueChange](http://gemoc.org/pub/20190625-MLE19/paper9.pdf)™ at heart. They will guide you through the biggest mistakes and help you improve the Client Code Quality.
 
-1. As an extra option, you can also look into the [AI Mentor Studio](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/), because this tool also has several [code analysis patterns](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/).
+1. As an extra option, you can also look into the [Code Quality](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/), because this tool also has several [code analysis patterns](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/).
 
 1. Don’t deploy test screens to other environments than the development environment. They are normally Public screens with quite some functionality which you can use to tamper with the database.
 

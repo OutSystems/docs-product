@@ -142,7 +142,7 @@ While the specifics vary, there is a general consensus about testing. Especially
 
 There is no way to automate everything, and such an effort would prove self-defeating. Deciding which tests to automate requires a cost-benefit analysis: to make sure that the results justify the effort of writing and maintaining automated test scripts. The [OutSystems Testing Guidelines](../../testing-apps/automated-testing/testing-guidelines.md) give a detailed overview, and a workplan, for setting up automatic testing.
 
-A key concept for successful testing is to write testable applications: distributing functionality into small, testable pieces. In OutSystems, this means adopting a multi-layer framework architecture that promotes the correct abstraction of reusable services and components. [AI Mentor Studio](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment, classifying every architecture module into its correct class.
+A key concept for successful testing is to write testable applications: distributing functionality into small, testable pieces. In OutSystems, this means adopting a multi-layer framework architecture that promotes the correct abstraction of reusable services and components. [Code Quality](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment, classifying every architecture module into its correct class.
 
 The [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), as illustrated below, shows how segregated testing facilitates creation of a healthy, fast, and maintainable test suite. Delivery teams can write a comprehensive set of easily automatable unit tests to cover critical business functionality, prepare a set of integration tests to define the scope of regression for each application deployment, and save more complicated automated UI tests for critical UI flows.
 
@@ -276,9 +276,9 @@ OutSystems enforces HTTPS/SSL encryption for native mobile applications, and rec
 
 OutSystems Cloud allows full database encryption at rest. On self-managed infrastructures, system administrators can use the database vendor’s technology to activate encryption of data at rest and while in transit to the database. Alternatively, developers may build encryption in sensitive fields and tables, typically leveraging Forge components, such as the [Crypto API](https://www.outsystems.com/forge/component/437/cryptoapi/).
 
-#### AI Mentor Studio
+#### Code Quality
 
-When [AI Mentor Studio](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) analyzes your application code and runtime performance it also scans for security issues, including:
+When [Code Quality](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) analyzes your application code and runtime performance it also scans for security issues, including:
 
 * SQL injection
 * Visible disabled buttons
@@ -287,7 +287,7 @@ When [AI Mentor Studio](../../monitor-and-troubleshoot/manage-tech-debt/intro.md
 * JavaScript or HTML injection (Traditional Web apps)
 * Compromised mobile apps: rooted (Android) or jailbroken (iOS)
 
-Along with each identified issue, AI Mentor Studio explains its impact and gives instructions for how to fix it. Refer to the [list of code analysis patterns](../../monitor-and-troubleshoot/manage-tech-debt/code-patterns/ref-code-patterns.md#Security) for the full set.
+Along with each identified issue, Code Quality explains its impact and gives instructions for how to resolve it. Refer to the [list of code analysis patterns](../../monitor-and-troubleshoot/manage-tech-debt/code-patterns/ref-code-patterns.md#Security) for the full set.
 
 ### Third-party tools
 
@@ -339,7 +339,7 @@ Applications are automatically instrumented to create over a dozen types of acce
 
 A **Error Log** is shown below:
 
-![Screenshot of the reports section in OutSystems Service Center.](images/reports-sc.png "Service Center Reports")
+![Screenshot of the Error Log in OutSystems Service Center.](images/reports-sc.png "Service Center Error Log")
 
 Each log entry is identified by a timestamp, the module where the error occurred, the actual error message, and a Detail link to view additional information.
 

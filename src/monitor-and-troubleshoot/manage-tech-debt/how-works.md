@@ -1,6 +1,13 @@
 ---
-tags: saas, platform security, data communication, lifetime plugin, environment monitoring
-summary: OutSystems 11 (O11) introduces AI Mentor Studio, a SaaS and plugin system enhancing data communication and security for OutSystems users.
+tags:
+  - Authentication
+  - IT Users
+  - Mentor
+  - Mentor Studio
+  - Plugins
+  - Roles
+  - Technical Debt
+summary: Code Quality in OutSystems 11 (O11) combines a SaaS backend and LifeTime Plugin to collect code analysis data, with permissions mapped to LifeTime roles.
 locale: en-us
 guid: f6f9f871-5f0c-4991-a47e-91fa20033627
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -12,51 +19,52 @@ audience:
   - Tech lead
 outsystems-tools:
   - lifetime
-  - ai mentor studio
+  - code quality
 coverage-type:
   - understand
   - remember
+isautopublish: true
 ---
 
-# How does AI Mentor Studio work
+# How does Code Quality work
 
 <div class="info" markdown="1">
 
-Architecture Dashboard is now AI Mentor Studio.
+AI Mentor Studio is now Code Quality.
 
 </div>
 
-AI Mentor Studio includes the following components:
+Code Quality includes the following components:
 
-AI Mentor Studio SaaS
-:   A "Software as a Service" that processes and shows all data collected by the AI Mentor Studio LifeTime Plugin.
+Code Quality SaaS
+:   A "Software as a Service" that processes and shows all data collected by the Code Quality LifeTime Plugin.
 
-AI Mentor Studio LifeTime Plugin
-:   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the AI Mentor Studio SaaS.  
+Code Quality LifeTime Plugin
+:   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the Code Quality SaaS.  
 
 ## Communication
 
-The communication between AI Mentor Studio's components differs depending on your authentication method.
+The communication between Code Quality's components differs depending on your authentication method.
 
-If you authenticate with your **OutSystems account**, communications between the AI Mentor Studio plugin and the AI Mentor Studio SaaS are always initiated by the plugin. This reduces connectivity requirements on your side since all that needs to be ensured is connectivity from the Plugin in the LifeTime environment to the AI Mentor Studio SaaS endpoint.  
+If you authenticate with your **OutSystems account**, communications between the Code Quality plugin and the Code Quality SaaS are always initiated by the plugin. This reduces connectivity requirements on your side since all that needs to be ensured is connectivity from the Plugin in the LifeTime environment to the Code Quality SaaS endpoint.  
 
-![Diagram illustrating the communication flow initiated by the AI Mentor Studio plugin when using OutSystems account authentication.](images/os-auth-communication-diag.png "OutSystems Authentication Communication Diagram")
+![Diagram illustrating the communication flow initiated by the Code Quality plugin when using OutSystems account authentication.](images/os-auth-communication-diag.png "OutSystems Authentication Communication Diagram")
 
-If you authenticate with your **IT User account**, AI Mentor Studio needs to be able to connect with your infrastructure to ensure the login is correct. When a user authenticates or accepts the privacy policy, the AI Mentor Studio SaaS needs to communicate with the AI Mentor Studio plugin. To send data from the LifeTime probe to the AI Mentor Studio SaaS endpoint, the AI Mentor Studio plugin needs to communicate with the AI Mentor Studio SaaS. Thus, when using IT User authentication, the communication between the AI Mentor Studio SaaS and the AI Mentor Studio plugin is bidirectional.  
+If you authenticate with your **IT User account**, Code Quality needs to be able to connect with your infrastructure to ensure the login is correct. When a user authenticates or accepts the privacy policy, the Code Quality SaaS needs to communicate with the Code Quality plugin. To send data from the LifeTime probe to the Code Quality SaaS endpoint, the Code Quality plugin needs to communicate with the Code Quality SaaS. Thus, when using IT User authentication, the communication between the Code Quality SaaS and the Code Quality plugin is bidirectional.  
 
-![Diagram showing bidirectional communication between AI Mentor Studio SaaS and the AI Mentor Studio plugin when using IT User account authentication.](images/it-user-auth-communication-diag.png "IT User Authentication Communication Diagram")
+![Diagram showing bidirectional communication between Code Quality SaaS and the Code Quality plugin when using IT User account authentication.](images/it-user-auth-communication-diag.png "IT User Authentication Communication Diagram")
 
-With either authentication method, the plugin can use a forward proxy to connect to the AI Mentor Studio SaaS endpoint.
+With either authentication method, the plugin can use a forward proxy to connect to the Code Quality SaaS endpoint.
 
 ### Data collected in plugin and sent to SaaS
 
-AI Mentor Studio collects the following data from your infrastructure:
+Code Quality collects the following data from your infrastructure:
 
 * Platform metamodel data, including infrastructure activation code, environments information (name and Platform Server version), teams, list of apps and modules (including name and identifier), and platform configurations.
 
 * Modules and dependency information for code analysis.
 
-* Upon acceptance of the agreement, during AI Mentor Studio set up: users information (name, username, email address, user creation date, last login date) and LifeTime permissions.
+* Upon acceptance of the agreement, during Code Quality set up: users information (name, username, email address, user creation date, last login date) and LifeTime permissions.
 
 * Optionally: Discovery snapshot data (architectural references, applications, and modules) for architecture analysis.
 
@@ -66,9 +74,9 @@ AI Mentor Studio collects the following data from your infrastructure:
 
 * IP or DNS addresses aren't transmitted.
 
-* No ports besides the defaults need to be open for the correct use of AI Mentor Studio Probes.
+* No ports besides the defaults need to be open for the correct use of Code Quality Probes.
 
-* No firewall issues should arise, although you need to be able to access the endpoint detailed in [How to set up AI Mentor Studio](how-setup.md).
+* No firewall issues should arise, although you need to be able to access the endpoint detailed in [How to set up Code Quality](how-setup.md).
 
 ### Data at rest in SaaS
 
@@ -78,13 +86,13 @@ AI Mentor Studio collects the following data from your infrastructure:
 
 Read more about security and compliance in the following FAQ sections:
 
-* [Security, legal and compliance - registration in AI Mentor Studio](faq.md#data-faq)
+* [Security, legal and compliance - registration in Code Quality](faq.md#data-faq)
 
 * [Security, legal and compliance - personal information](faq.md#personal-data-faq)
 
 ## Permissions
 
-The permissions that IT users have while using AI Mentor Studio with an infrastructure, depend on the [role and permissions set in LifeTime](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#permissions) for the **code-analysis environment** of that infrastructure.
+The permissions that IT users have while using Code Quality with an infrastructure, depend on the [role and permissions set in LifeTime](../../manage-platform-app-lifecycle/manage-it-teams/about-permission-levels.md#permissions) for the **code-analysis environment** of that infrastructure.
 
 <div class="info" markdown="1">
 
@@ -98,7 +106,7 @@ The permissions of a role assigned for an app override the permissions for the s
 
 </div>
 
-The following tables map the AI Mentor Studio permissions to the LifeTime permissions and to the way the roles are assigned to IT users.
+The following tables map the Code Quality permissions to the LifeTime permissions and to the way the roles are assigned to IT users.
 
 ### Main features permissions
 
@@ -233,7 +241,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
 
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
-#### Open findings report
+#### Open findings
 
 <table>
   <thead>
@@ -297,7 +305,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
 
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
-#### Export findings report
+#### Export findings
 
 <table>
   <thead>
@@ -661,7 +669,7 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
   </tbody>
 </table>
 
-#### Manage AI Mentor Studio API
+#### Manage Code Quality API
 
 <table>
   <thead>

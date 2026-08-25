@@ -1,6 +1,12 @@
 ---
-summary: Explore the scalable and flexible infrastructure architecture and deployment options of OutSystems 11 (O11) for optimized application development.
-tags: infrastructure architecture, deployment options, scalable infrastructure, application development, sdlc management
+summary: 'OutSystems 11 (O11) infrastructure architecture explained: environments, pipelines, LifeTime console, and Cloud vs. self-managed deployment options.'
+tags:
+  - Architecture
+  - Deploy
+  - Development lifecycle
+  - Infrastructure
+  - Lifecycle
+  - Platform Server
 locale: en-us
 guid: 59f6b703-30bd-4143-8af8-aac2f6e82ae0
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -15,6 +21,7 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # Infrastructure architecture and deployment options
@@ -262,7 +269,7 @@ your self-managed infrastructure, you’ll need to be aware of this:
 * [Mobile Apps Build Service](https://www.outsystems.com/blog/posts/how-mobile-apps-build-service-works/):
 generates mobile packages for installation on mobile devices.
 
-* [AI Mentor Studio](https://www.outsystems.com/platform/architecture-dashboard/):
+* [Code Quality](https://www.outsystems.com/platform/architecture-dashboard/):
 technical debt monitoring tool that enables you to visualize complex
 cross-portfolio architectures, identify problems, and help developers follow
 best practices.
@@ -414,4 +421,4 @@ technology and components described in this document.
 
 Learn more about deploying infrastructure on OutSystems Cloud here:
 
-[![Clickable image linking to information about deploying infrastructure on OutSystems Cloud](images/infra-options-cloud.png "OutSystems Cloud Infrastructure Options")](https://success.outsystems.com/Support/Enterprise_Customers/Infrastructure_architecture_and_deployment_options/Deploy_an_infrastructure_on_OutSystems_Cloud)
+[![OutSystems Cloud logo and wordmark](images/infra-options-cloud.png "OutSystems Cloud Logo")](https://success.outsystems.com/Support/Enterprise_Customers/Infrastructure_architecture_and_deployment_options/Deploy_an_infrastructure_on_OutSystems_Cloud)

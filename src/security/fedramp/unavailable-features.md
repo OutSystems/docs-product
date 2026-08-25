@@ -4,7 +4,6 @@ tags:
   - Forge
   - Infrastructure
   - Logging
-  - Mentor Studio
   - Mobile app
   - Native App
   - Security
@@ -45,7 +44,7 @@ Build Reactive Web Apps and Progressive Web Apps (PWAs) instead.
 
 The following OutSystems tools aren't available in OutSystems FedRAMP:
 
-* **[AI Mentor Studio](../../monitor-and-troubleshoot/manage-tech-debt/intro.md)**: The AI-powered architecture analysis tool isn't available.
+* **[Code Quality](../../monitor-and-troubleshoot/manage-tech-debt/intro.md)**: The AI-powered architecture analysis tool isn't available.
 * **[Integration Builder](../../integration-with-systems/integration-builder/intro.md)**: The visual integration builder tool isn't available.
 * **[Workflow Builder](../../building-apps/case-management-workflow/workflow-builder/intro.md)**: The workflow builder tool isn't available.
 

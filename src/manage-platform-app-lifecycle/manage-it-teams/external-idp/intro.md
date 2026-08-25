@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) enhances IT user security by integrating authentication with external Identity Providers using OpenID Connect.
-tags: it security, single sign-on, openid connect, identity providers, authentication
+tags:
+  - Authentication
+  - External Authentication
+  - IdP
+  - IT Users
+  - OIDC
+  - Security
+  - SSO
 locale: en-us
 guid: 595C5E6F-7C59-4314-9BDE-4EF1400A670F
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -15,6 +22,7 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # IT Users Integration with External IdP via OpenId Connect
@@ -55,7 +63,7 @@ You can integrate an external IdP by configuring the OIDC protocol in LifeTime. 
 
 * Workato
 
-* AI Mentor Studio
+* Code Quality
 
 Applications that use Service Center as a user provider and that implement the regular authentication flow using the [User_GetUnifiedLoginUrl](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Users_API#User_GetUnifiedLoginUrl) API are also covered by this feature.
 
@@ -63,9 +71,9 @@ The following diagram shows the flow for the IT Users Integration with External 
 
 ![Diagram illustrating the IT Users Integration with External Identity Provider via OpenID Connect](images/it-users-integration-external-idp-diag.png "IT Users Integration with External IdP via OpenID Connect")
 
-The following diagram shows the communication flow between Service Studio, AI Mentor Studio, Integration, Experience, and Workflow Builder with External IdP (OIDC).
+The following diagram shows the communication flow between Service Studio, Code Quality, Integration, Experience, and Workflow Builder with External IdP (OIDC).
 
-![Diagram showing the communication flow between Service Studio, AI Mentor Studio, and other builders with External Identity Provider via OpenID Connect](images/ss-aims-builders-external-idp-integration-diag.png "Communication Flow with External IdP for Various OutSystems Builders")
+![Diagram showing the communication flow between Service Studio, Code Quality, and other builders with External Identity Provider via OpenID Connect](images/ss-aims-builders-external-idp-integration-diag.png "Communication Flow with External IdP for Various OutSystems Builders")
 
 For example, consider using Service Studio with an External IdP,
 

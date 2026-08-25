@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3953-240&t=vO3Lqcn06Tcis4dv-1
-tags: ci/cd, devops, scalable development, delivery agility, domain-driven design
+tags:
+  - Architecture
+  - CI/CD
+  - Deploy
+  - Development lifecycle
+  - Domains
+  - Lifecycle
+  - Testing
 audience:
   - Developer
   - Architect
@@ -23,6 +30,7 @@ topic:
   - scale-development-strategy
   - canary-release-toggle
   - domain-driven-design
+isautopublish: true
 ---
 
 # Development and delivery at scale
@@ -49,7 +57,7 @@ With the growth of a software factory, it becomes more difficult to isolate deve
 
 ![Diagram illustrating domain-driven design with vertical and horizontal domains, showing business verticals and foundation services.](images/domain-definition.png "Domain-Driven Design Architecture")
 
-OutSystems [AI Mentor Studio](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) provides a bird-eye-view of the entire application’s architecture, facilitating the correct domain assessment by detecting unexpected dependencies between applications and wrong architecture patterns.
+OutSystems [Code Quality](../../monitor-and-troubleshoot/manage-tech-debt/intro.md) provides a bird-eye-view of the entire application’s architecture, facilitating the correct domain assessment by detecting unexpected dependencies between applications and wrong architecture patterns.
 
 ### Team structure
 
@@ -81,7 +89,7 @@ Part of OutSystems’ vision is to provide capabilities that remove developers' 
 
 The small batch approach allows developers to decompose complex solutions into smaller components that can be deployed incrementally and tested independently. Instead of months of coding that requires months of testing, small batches of code, such as a single user story, can be tested and released quickly. Developing in small batches lowers the risk in development and means less waste as you can get quick feedback from the customer and adjust accordingly.
 
-Working in small batches is one of a set of capabilities that drives higher software delivery and organizational performance. These capabilities were discovered by the [DORA State of DevOps research program](https://www.devops-research.com/research.html), an independent, academically rigorous investigation into the practices and capabilities that drive high performance. As per the [The State of DevOps Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf), the following image shows how higher performers compare to low performers:
+Working in small batches is one of a set of capabilities that drives higher software delivery and organizational performance. These capabilities were discovered by the [DORA State of DevOps research program](https://www.devops-research.com/research.html), an independent, academically rigorous investigation into the practices and capabilities that drive high performance. As per [The State of DevOps Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf), the following image shows how higher performers compare to low performers:
 
 ![Infographic comparing elite performers with low performers in terms of throughput and stability metrics.](images/elite-performers-vs-low-performers.png "Comparison of Elite Performers vs Low Performers")
 
@@ -101,7 +109,7 @@ With multiple versions, the best way to approach version management is to have c
 
 #### Feature toggles
 
-Feature toggles are application-based release patterns that provide the mechanism to modify system behavior by selectively enabling and disabling features without requiring a production code deployment. Generally, feature toggles are implemented by wrapping application logic or UI elements with a conditional statement, where the feature is enabled or disabled based on a configuration setting stored somewhere, for example, business feature toggles that enable progressive rollouts of new behaviors to the end-users (Canary releases) or feature fencing to ensure that any consumer or just part of them can use the new behavior or keep the old behavior. Feature toggling is a code pattern that enables trunk-based development and, ultimately, continuous delivery which is a fundamental trait of elite performers. As per the [The State of DevOps Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf), higher performers can deliver high quality software faster than lower performers and they also have the ability to recover quicker from any kind of production incidents.
+Feature toggles are application-based release patterns that provide the mechanism to modify system behavior by selectively enabling and disabling features without requiring a production code deployment. Generally, feature toggles are implemented by wrapping application logic or UI elements with a conditional statement, where the feature is enabled or disabled based on a configuration setting stored somewhere, for example, business feature toggles that enable progressive rollouts of new behaviors to the end-users (Canary releases) or feature fencing to ensure that any consumer or just part of them can use the new behavior or keep the old behavior. Feature toggling is a code pattern that enables trunk-based development and, ultimately, continuous delivery which is a fundamental trait of elite performers. As per [The State of DevOps Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf), higher performers can deliver high quality software faster than lower performers and they also have the ability to recover quicker from any kind of production incidents.
 
 When dealing with multiple simultaneous parallel developments on the same code-base, trunk-based-development together with **feature toggles are faster and more flexible than branching and merging**. However, they also add complexity to the development process (for example, toggle-specific code and backward-compatibility concerns) and require a scalable approach for managing toggles.
 
@@ -132,18 +140,18 @@ Part of OutSystems vision is to keep providing capabilities that empower easy co
 
 TrueChange is a Service Studio built-in analysis engine that provides real-time feedback to developers, provides warnings, and prevents the publishing of invalid code.
 
-#### AI Mentor Studio
+#### Code Quality
 
-The AI Mentor Studio can detect potential issues in the areas of architecture, performance, security, and maintainability. The maintainability analysis flags complex undocumented code and missing descriptions of reusable elements to help teams produce well-documented code that other developers can quickly understand and enhance in the future. The AI Mentor Studio validates technical debt,  ensures the delivery of quality code, and limits the risk of issues slipping through into the application code.
+The Code Quality can detect potential issues in the areas of architecture, performance, security, and maintainability. The maintainability analysis flags complex undocumented code and missing descriptions of reusable elements to help teams produce well-documented code that other developers can quickly understand and enhance in the future. The Code Quality validates technical debt,  ensures the delivery of quality code, and limits the risk of issues slipping through into the application code.
 
 #### Static-code analysis (automated)
 
-For an independent analysis of OutSystems code, (for example, for advanced security audits), static code analysis tools can be used to supplement AI Mentor Studio and TrueChange. These tools are available through third-party partners, such as [SIG](https://www.outsystems.com/news/sig-accelerate-application-security-quality/), [BONCODE](https://www.outsystems.com/news/boncode-code-analysis-service-reduce-application-risk/), and [Omnext](https://www.outsystems.com/news/omnext-launch-application-risk-analysis-services/).
+For an independent analysis of OutSystems code, (for example, for advanced security audits), static code analysis tools can be used to supplement Code Quality and TrueChange. These tools are available through third-party partners, such as [SIG](https://www.outsystems.com/news/sig-accelerate-application-security-quality/), [BONCODE](https://www.outsystems.com/news/boncode-code-analysis-service-reduce-application-risk/), and [Omnext](https://www.outsystems.com/news/omnext-launch-application-risk-analysis-services/).
 
 #### Code review (manual)
 
 Code reviews help teams build a maintainable code base and gather feedback quickly.
-To ensure adherence to coding best practices and technical standards, senior developers or technical leads should perform regular code reviews. During these reviews the technical design is validated, the code is checked to ensure that it meets the business requirements, and that it is aligned with the architecture design. Code reviews can also be carried out by other developers and conducted on-the-fly as code is being written. The technical solution and code are validated and checks are carried out to ensure that the code complies with best practices. While AI Mentor Studio validates code quality, a code review validates code correctness and is a great way to ensure the ‘four eyes principle’, where the code gets checked by a couple of people before it gets approved. Code reviews are also a great way to share responsibility among the team and are also a good way to disseminate knowledge within the team about the technical solution.
+To ensure adherence to coding best practices and technical standards, senior developers or technical leads should perform regular code reviews. During these reviews the technical design is validated, the code is checked to ensure that it meets the business requirements, and that it is aligned with the architecture design. Code reviews can also be carried out by other developers and conducted on-the-fly as code is being written. The technical solution and code are validated and checks are carried out to ensure that the code complies with best practices. While Code Quality validates code quality, a code review validates code correctness and is a great way to ensure the ‘four eyes principle’, where the code gets checked by a couple of people before it gets approved. Code reviews are also a great way to share responsibility among the team and are also a good way to disseminate knowledge within the team about the technical solution.
 
 ### Functional quality
 

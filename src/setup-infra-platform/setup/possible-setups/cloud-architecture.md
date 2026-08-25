@@ -1,20 +1,24 @@
 ---
 summary: OutSystems 11 (O11) features a secure, AWS-hosted cloud network architecture with dedicated environments and advanced security controls.
-tags: cloud architecture, amazon web services, security, virtual private cloud, web application firewall
+tags:
+  - Architecture
+  - Infrastructure
+  - IP Filters
+  - Security
 locale: en-us
 guid: b6b4709a-59b4-45e4-b29d-2f78d8bb8f19
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=352:86
 audience:
+  - Architect
   - Platform administrator
   - Tech lead
-  - Developer
-  - Architect
 outsystems-tools:
   - none
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # OutSystems Cloud network architecture
@@ -42,7 +46,7 @@ Depending on the [OutSystems Cloud edition](https://www.outsystems.com/legal/suc
 
 ### Communications with OutSystems tools
 
-Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/intro.md), [AI Mentor Studio](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md), [Integration Builder](../../../integration-with-systems/integration-builder/intro.md), and [Workflow Builder](../../../building-apps/case-management-workflow/workflow-builder/intro.md).
+Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deploying-apps/mobile-app-packaging-delivery/mobile-apps-build-service/intro.md), [Code Quality](../../../monitor-and-troubleshoot/manage-tech-debt/intro.md), [Integration Builder](../../../integration-with-systems/integration-builder/intro.md), and [Workflow Builder](../../../building-apps/case-management-workflow/workflow-builder/intro.md).
 
 ![Diagram showing the communication flow between OutSystems Cloud environments and various OutSystems tools](images/communication-between-environments-tools-diag.png "Communication Flow with OutSystems Tools")
 

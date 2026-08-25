@@ -1,11 +1,18 @@
 ---
-summary: Explore how OutSystems 11 (O11) effectively manages and reduces technical debt through automation, AI, and best-practice architectures.
+summary: OutSystems 11 (O11) technical debt management uses TrueChange, Code Quality, and AI-powered refactoring to keep apps maintainable and architecturally sound.
 guid: 94feeaa6-0e06-4bab-b262-f990f78ca1ba
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3945-276&t=Ql7W2ht1qc5SrbRz-1
-tags: technical debt, best practices, automation, software architecture, market adaptation
+tags:
+  - 1-Click Publish
+  - AI
+  - Architecture
+  - Best Practices
+  - Quality Assurance
+  - Refactoring
+  - Technical Debt
 audience:
   - Developer
   - Architect
@@ -33,7 +40,7 @@ Software deployment using classical programming methods typically comprises modi
 
 OutSystems orchestrates the entire deployment process using a combination of automation, AI, and analytics to identify architecture errors, faulty logic, and broken dependencies — during development, in real time. OutSystems preempts failed compilations by either applying corrective measures automatically or directing the developer to the source of the error — along with a suggestion about how to fix it. Modules can only be published when it will function correctly.
 
-Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems AI Mentor Studio provides a high-level analysis of your app, marks areas for improvement, and facilitates unhindered growth.
+Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems Code Quality provides a high-level analysis of your app, marks areas for improvement, and facilitates unhindered growth.
 
 This paper discusses how OutSystems helps reduce technical debt during development and assists in building a best-practices architecture to efficiently deal with it in the future.
 
@@ -65,7 +72,7 @@ OutSystems uses a versioning system that labels modules with an incremental vers
 
 ![Screenshot of the OutSystems Compare and Merge window displaying detected conflicts during code integration.](images/conflicts-detected.png "OutSystems Compare and Merge Conflicts")
 
-## AI Mentor Studio
+## Code Quality
 
 Enterprises have moved away from legacy monolith systems — where a single stack contains all of the functionality of an application — so they can more quickly answer customer needs, respond to changing operational requirements, and meet business goals and objectives.
 
@@ -86,13 +93,13 @@ It's fundamental to align architecture with business goals: to translate busines
 While developing a conceptual design for application architecture is beyond the scope of the article, information about this subject can be found in the links below:
 
 * [Designing the Architecture of Your OutSystems Applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications)
-* [Web and Mobile Architecture with AI Mentor Studio (presentation)](https://www.outsystems.com/events/tech-talks/architecture-dashboard/)
+* [Web and Mobile Architecture with Code Quality (presentation)](https://www.outsystems.com/events/tech-talks/architecture-dashboard/)
 * [Integration Patterns for Core Services Abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction)
 * [Domains and Services Architecture](https://www.outsystems.com/learn/lesson/1696/domains-and-services-architecture)
 
 ### The architecture canvas
 
-The architecture canvas, as used by the OutSystems [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), is a multi-layer framework that provides a systematic approach to speed up architecture design. It promotes the correct abstraction of reusable services and components, maximizes independent life cycles among all the parts of your architecture by setting the correct mutual dependencies, and minimizes the impact of changes, making it much easier to maintain and evolve your apps.
+The architecture canvas, as used by the OutSystems [Code Quality](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), is a multi-layer framework that provides a systematic approach to speed up architecture design. It promotes the correct abstraction of reusable services and components, maximizes independent life cycles among all the parts of your architecture by setting the correct mutual dependencies, and minimizes the impact of changes, making it much easier to maintain and evolve your apps.
 
 ![Illustration of the OutSystems architecture canvas showing the multi-layer framework for application design.](images/architecture-canvas.png "OutSystems Architecture Canvas")
 
@@ -123,11 +130,11 @@ The figure below illustrates how an OutSystems app with a well-formed architectu
 
 ### Architecture canvas validation
 
-[AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) is the OutSystems technical debt monitoring tool. Powered by [AIFusion™](https://www.outsystems.com/evaluation-guide/what-is-aifusion/) and [CodeDNA](https://www.outsystems.com/blog/posts/ai-software-development/), it automatically performs code and runtime analysis before recommending solutions for improving the performance, security, architecture, and user experience of applications.
+[Code Quality](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) is the OutSystems technical debt monitoring tool. Powered by [AIFusion™](https://www.outsystems.com/evaluation-guide/what-is-aifusion/) and [CodeDNA](https://www.outsystems.com/blog/posts/ai-software-development/), it automatically performs code and runtime analysis before recommending solutions for improving the performance, security, architecture, and user experience of applications.
 
 A guided refactoring capability powered by the CodeDNA engine identifies the opportunities for refactoring and code duplication across the factory, pointing architects and teams to the right points to make these improvements. Code duplication is one of the top technical debt issues. The guided refactoring capability is unique in our industry. It uses AI to detect, with incredible accuracy, where teams should focus on refactoring and ranks them by importance.
 
-AI Mentor Studio uses the following validation rules to evaluate the architecture of your applications:
+Code Quality uses the following validation rules to evaluate the architecture of your applications:
 
 * No upward references
 * No side references among end users
@@ -137,31 +144,31 @@ AI Mentor Studio uses the following validation rules to evaluate the architectur
 
 For an in-depth discussion of these rules for architecture design see the Architecture design [appendix](#architecture-design-for-drchitecture-dashboard) below.
 
-### Using the AI Mentor Studio
+### Using the Code Quality
 
-The AI Mentor Studio is designed for:
+The Code Quality is designed for:
 
 * [Architects](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_an_architect) who need an overview of the portfolio so they can focus on keeping technical debt under control  
 * [Team leads](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_team_lead) who need an overview of the teams work so they can focus on ensuring the delivery of quality apps  
 * [Developers](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_developer) who need to make sure their code adheres to best practices and doesn’t introduce any performance or security issues  
 
-AI Mentor Studio provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment. The OutSystems AI engine classifies every architecture module into its correct class, automating architecture discovery. A heat map visualization of mild-to-severe problem areas helps IT leaders identify problem areas quickly and to prioritize them accordingly.
+Code Quality provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment. The OutSystems AI engine classifies every architecture module into its correct class, automating architecture discovery. A heat map visualization of mild-to-severe problem areas helps IT leaders identify problem areas quickly and to prioritize them accordingly.
 
-![Screenshot of the AI Mentor Studio overview interface displaying a heatmap visualization of technical debt across applications.](images/use-overview-infra-ams.png "AI Mentor Studio Overview")
+![Screenshot of the Code Quality overview interface displaying a heatmap visualization of technical debt across applications.](images/use-overview-infra-ams.png "Code Quality Overview")
 
 Clicking an app shows its dependencies and technical debt with other applications.
 
-![Screenshot of the AI Mentor Studio interface showing the selection of an app to view its dependencies and technical debt.](images/use-select-app-ams.png "Selecting an App in AI Mentor Studio")
+![Screenshot of the Code Quality interface showing the selection of an app to view its dependencies and technical debt.](images/use-select-app-ams.png "Selecting an App in Code Quality")
 
 Double-clicking one of the modules allows you to drill down into any identified issues, which are grouped by **Architecture**, **Performance**, **Maintainability** and **Security**, so you can quickly understand what's going on in that particular area.
 
-![Screenshot of the AI Mentor Studio report interface detailing issues and providing recommendations for fixes.](images/use-report-fix-ams.png "AI Mentor Studio Report and Fix Recommendations")
+![Screenshot of the Code Quality Findings interface detailing issues and providing recommendations for fixes.](images/use-report-fix-ams.png "Code Quality Findings and How to Resolve Recommendations")
 
-AI Mentor Studio explains the impact of this finding and gives a recommendation about how to fix it.  
+Code Quality explains the impact of this finding and gives a recommendation about how to resolve it.  
 
-## Architecture design for AI Mentor Studio
+## Architecture design for Code Quality
 
-This appendix contains a detailed discussion of rules for canvas validation and application composition. For more information on AI Mentor Studio’s analysis patterns, check [Code Analysis Patterns](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_technical_debt/Code_Analysis_Patterns).
+This appendix contains a detailed discussion of rules for canvas validation and application composition. For more information on Code Quality’s analysis patterns, check [Code Analysis Patterns](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_technical_debt/Code_Analysis_Patterns).
 
 ### Validation rules
 
@@ -241,4 +248,4 @@ OutSystems applications rely only on standard architectures and frameworks and r
 
 When developers write new code, or make changes to existing code, OutSystems provides immediate feedback on its impact. Corrective measures are applied automatically if possible. Otherwise the source of the error is linked, along with suggestions about how to fix it. This eliminates compilation errors, since an OutSystems app can't be published unless they function correctly.
 
-Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems AI Mentor Studio provides a high level analysis of your app, highlighting areas for improvement, and facilitates unhindered growth.
+Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems Code Quality provides a high level analysis of your app, highlighting areas for improvement, and facilitates unhindered growth.

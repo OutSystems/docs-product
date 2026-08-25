@@ -1,6 +1,10 @@
 ---
-tags: troubleshooting, synchronization issues, ai mentor studio, service center, technical support
-summary: Explore troubleshooting tips for OutSystems 11 (O11) focusing on AI Mentor Studio synchronization, code discrepancies, and login issues.
+tags:
+  - Data Synchronization
+  - IT Users
+  - Technical Debt
+  - Troubleshooting
+summary: 'Code Quality troubleshooting in OutSystems 11 (O11): fix sync failures, duplicated findings mismatches, and IT User login errors.'
 locale: en-us
 guid: e2eb38b8-b3b6-42dd-9389-232ef2ba6226
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -13,50 +17,51 @@ outsystems-tools:
   - service studio
   - service center
   - lifetime
-  - ai mentor studio
+  - code quality
 coverage-type:
   - unblock
+isautopublish: true
 ---
 
 # Troubleshooting
 
 <div class="info" markdown="1">
 
-Architecture Dashboard is now AI Mentor Studio.
+AI Mentor Studio is now Code Quality.
 
 </div>
 
 <div class="info" markdown="1">
 
-Ensure that you are using the latest version of the AI Mentor Studio probes and that they are correctly installed. For more information, refer to [How to update the AI Mentor Studio probes](how-update-probes.md).
+Ensure that you are using the latest version of the Code Quality probes and that they are correctly installed. For more information, refer to [How to update the Code Quality probes](how-update-probes.md).
 
 </div>
 
 ## Synchronization issues
 
-Synchronization (data sent from AI Mentor Studio Probe to SaaS) occurs every 12 hours.
+Synchronization (data sent from Code Quality Probe to SaaS) occurs every 12 hours.
 
-In AI Mentor Studio, go to the **Apps** tab and check when was the **Last sync**.
+In Code Quality, go to the **Apps** tab and check when was the **Last sync**.
 
-![Screenshot showing the last synchronization date and time in the AI Mentor Studio canvas](images/latest-sync-ams.png "AI Mentor Studio Last Sync Check")
+![Screenshot showing the last synchronization date and time in the Code Quality canvas](images/latest-sync-ams.png "Code Quality Last Sync Check")
 
-If the last sync occurred more than 24 hours ago, go to the **Monitoring** tab of the Service Center of the LifeTime environment (`https://<lifetime_environment>/ServiceCenter`), and check for errors in the AI Mentor StudioLifeTime Probe module named **ArPr_Communitcation**.
+If the last sync occurred more than 24 hours ago, go to the **Monitoring** tab of the Service Center of the LifeTime environment (`https://<lifetime_environment>/ServiceCenter`), and check for errors in the Code QualityLifeTime Probe module named **ArPr_Communitcation**.
 
-Note that the **LifeTime environment** must be able to connect to AI Mentor Studio Web Service available at:`https://aimentorstudio.outsystems.com/Probe_API/rest/Synchronization`.
+Note that the **LifeTime environment** must be able to connect to Code Quality Web Service available at:`https://codequality.outsystems.com/Probe_API/rest/Synchronization`.
 
 If the issue persists, open a ticket in the [Support Portal](https://www.outsystems.com/goto/submit-support-case) with all the details that you have and steps followed to troubleshoot.
 
 ## Duplicated code findings mismatch  
 
-The number of issues listed in AI Mentor Studio is inconsistent across views. For example, the number of duplicate code instances in the report view differs from the number listed in the detailed view.
+The number of issues listed in Code Quality is inconsistent across views. For example, the number of duplicate code instances in the findings view differs from the number listed in the detailed view.
 
-This may occur if you change the target environment of the code analysis probe without first deleting data from AI Mentor Studio. Before you change the target environment, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data. Then follow the [setup procedure](how-setup.md) to configure the new target environment.
+This may occur if you change the target environment of the code analysis probe without first deleting data from Code Quality. Before you change the target environment, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data. Then follow the [setup procedure](how-setup.md) to configure the new target environment.
 
 ## IT User login issues {#it-user-login-issues}
 
-When attempting to log into AI Mentor Studio using your IT User account, you might get the following error message:
+When attempting to log into Code Quality using your IT User account, you might get the following error message:
 
-`It was not possible to sign into AI Mentor Studio. Check here for the solutions.`
+`It was not possible to sign into Code Quality. Check here for the solutions.`
 
 ### Cause
 

@@ -4,9 +4,9 @@ tags:
   - Forge
   - Logging
   - Mobile app
+  - Monitoring
   - Native App
   - Security
-  - Technical Debt
   - Workflows
 locale: en-us
 guid: eefbaa82-854f-480c-9bd1-60de0e955798
@@ -36,11 +36,11 @@ Native mobile application builds through the Mobile Apps Build Service (MABS) ar
 
 ## OutSystems tooling
 
-The visual accelerator tools (AI Mentor Studio, Integration Builder, and Workflow Builder) aren't available. You build the same functionality directly in Service Studio:
+The visual accelerator tools (Code Quality, Integration Builder, and Workflow Builder) aren't available. You build the same functionality directly in Service Studio:
 
 * **Integrations**: Build connectors and consume REST or SOAP services directly in Service Studio, instead of generating them with Integration Builder. For more information, refer to [Integrating OutSystems with your ecosystem](../../integration-with-systems/integrate-ecosystem.md)
 * **Workflow apps**: Model business processes and task flows with Processes in Service Studio, instead of generating them with Workflow Builder.
-* **AI Mentor Studio**: Apply OutSystems architecture and code best practices during development, since AI Mentor Studio isn't available to analyze technical debt after the fact.
+* **Code Quality**: Apply OutSystems architecture and code best practices during development, since Code Quality isn't available to analyze technical debt after the fact.
 
 ## External integrations and AI services
 

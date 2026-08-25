@@ -1,21 +1,29 @@
 ---
-summary: OutSystems 11 (O11) network requirements include specific open ports, protocols, and configurations for optimal application accessibility and performance.
-tags: network configuration, security, deployment, installation, performance optimization
+summary: 'OutSystems 11 (O11) network requirements: TCP ports for deployment, Integration Builder, Workflow Builder, Code Quality, LifeTime, and log streaming IPs.'
+tags:
+  - Deploy
+  - Front-End
+  - Infrastructure
+  - IP Filters
+  - Monitoring
+  - Platform Server
+  - Security
 locale: en-us
 guid: 6238ecb9-6eaf-4406-a421-f4b01322052d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 audience:
-  - Platform administrator
-  - Front-end developer
   - Developer
+  - Platform administrator
 outsystems-tools:
   - configuration tool
 coverage-type:
+  - remember
   - understand
 topic:
   - download-and-set-up
+isautopublish: true
 ---
 
 # OutSystems 11 network requirements
@@ -161,32 +169,34 @@ You need to have bidirectional secure communication between the front-end of the
 |LifeTime Front-End|Environment Front-End|443|TCP|
 |Environment Front-End|LifeTime Front-End|443|TCP|
 
-### AI Mentor Studio
+### Code Quality
 
-To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../monitor-and-troubleshoot/manage-tech-debt/how-works.md).
+To use [Code Quality](https://codequality.outsystems.com/), the Code Quality LifeTime plugin must be able to communicate with the Code Quality SaaS. Check out [how Code Quality works](../../monitor-and-troubleshoot/manage-tech-debt/how-works.md).
 
-The network requirements depend on the authentication method and Probe version you use to access AI Mentor Studio.
+The network requirements depend on the authentication method and Probe version you use to access Code Quality.
 
 #### OutSystems account authentication
 
-If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable, depending on the Probe version:
+If you access Code Quality using OutSystems account authentication, ensure the following destination endpoint is reachable, depending on the Probe version:
 
 | Probe version | Source | Destination | Port | Protocol |
 | --- | --- | --- | --- | --- |
-| Probes 4.2 and above | LifeTime Front-End | aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP |
+| Probes 6.0.0 and above | LifeTime Front-End | codequality.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP |
+| Probes 4.2 and above | LifeTime Front-End | codequality.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP |
 | Probes 4.0 and 4.1 | LifeTime Front-End | architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard | 443 | TCP |
 
 #### IT user authentication
 
-If you access AI Mentor Studio using IT user authentication, AI Mentor Studio must be able to connect to the environment where you want to perform code analysis. Hence, besides ensuring the destination endpoint (LifeTime Front-End) is reachable, you also need to ensure that the front ends of the environment where you want to perform code analysis accept inbound connections from `aimentorstudio.outsystems.com`.  
+If you access Code Quality using IT user authentication, Code Quality must be able to connect to the environment where you want to perform code analysis. Hence, besides ensuring the destination endpoint (LifeTime Front-End) is reachable, you also need to ensure that the front ends of the environment where you want to perform code analysis accept inbound connections from `codequality.outsystems.com`.  
 
-Alternatively, ensure that the front ends of the environment used with AI Mentor Studio accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
+Alternatively, ensure that the front ends of the environment used with Code Quality accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
 | Source | Destination | Port | Protocol | Notes |
 | --- | --- | --- | --- | --- |
-| LifeTime Front-End | aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP | **Outbound communication** |
-| aimentorstudio.outsystems.com | Environment Front-End (public DNS hostname) | 443 | TCP | **Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145 |
-| aimentorstudio.outsystems.com | LifeTime Front-End | 443 | TCP | **Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145 |
+| LifeTime Front-End (Probes 6.0.0 and above) | codequality.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP | **Outbound communication** |
+| LifeTime Front-End (Probes before 6.0.0) | aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP | **Outbound communication** |
+| codequality.outsystems.com | Environment Front-End (public DNS hostname) | 443 | TCP | **Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145 |
+| codequality.outsystems.com | LifeTime Front-End | 443 | TCP | **Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145 |
 
 ### Log streaming { #log-streaming }
 

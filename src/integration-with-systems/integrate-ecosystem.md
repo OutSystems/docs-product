@@ -289,11 +289,11 @@ The most powerful integration test is **1-Click Publish**, which validates all o
 
 Built-in impact analysis is done for integration, acceptance, and deployment,  simplifying the process of deploying complex application portfolios across environments.  
 
-The **[AI Mentor Studio](../monitor-and-troubleshoot/manage-tech-debt/intro.md)** monitors technical debt from integration through acceptance, visualizing complex cross-portfolio architectures to identify problems while also helping developers follow best practices and avoid common pitfalls.
+The **[Code Quality](../monitor-and-troubleshoot/manage-tech-debt/intro.md)** monitors technical debt from integration through acceptance, visualizing complex cross-portfolio architectures to identify problems while also helping developers follow best practices and avoid common pitfalls.
 
 <div class="info" markdown="1">
 
-AI Mentor Studio isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../security/fedramp/unavailable-features.md) for details.
+Code Quality isn't available in OutSystems FedRAMP. Refer to [Unavailable features in OutSystems FedRAMP](../security/fedramp/unavailable-features.md) for details.
 
 </div>
 
@@ -319,7 +319,7 @@ As an app moves from integration to acceptance, OutSystems performs:
 *   Security testing
 *   User acceptance testing
 
-These test are handled within the AI Mentor Studio, the BDD framework.
+These test are handled within the Code Quality, the BDD framework.
  -->
 <!-- You can also configure [App Feedback](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Gather_user_feedback/Enable_user_feedback_for_apps?origin=d) in LifeTime so key users can send suggestions or report problems in an app, during the acceptance stage, deployment, and after release.  -->
 

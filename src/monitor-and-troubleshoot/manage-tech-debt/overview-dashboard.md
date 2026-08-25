@@ -1,6 +1,10 @@
 ---
-tags: technical debt management, dashboard analysis, application lifecycle management, investment decision making, team communication
-summary: Explore technical debt management in OutSystems 11 (O11) using the AI Mentor Studio's Infrastructure Overview Dashboard.
+tags:
+  - Architecture
+  - Infrastructure
+  - Monitoring
+  - Technical Debt
+summary: Explore technical debt management in OutSystems 11 (O11) using the Code Quality's Infrastructure Overview Dashboard.
 locale: en-us
 guid: 89bd155e-0d22-4262-a952-8f6de556ffda
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -10,17 +14,17 @@ audience:
   - Architect
   - Tech lead
 outsystems-tools:
-  - ai mentor studio
-  - architecture dashboard
+  - code quality
 coverage-type:
   - understand
+isautopublish: true
 ---
 
 # Get an overview of the overall technical debt
 
 <div class="info" markdown="1">
 
-Architecture Dashboard is now AI Mentor Studio.
+AI Mentor Studio is now Code Quality.
 
 </div>
 
@@ -30,7 +34,7 @@ The **Infrastructure overview** dashboard gives architects and development team 
 * How is the technical debt distributed
 * What has been the evolution
 
-![Screenshot of the Infrastructure Overview Dashboard in AI Mentor Studio showing various metrics related to technical debt](images/overview-dashboard-ams.png "Infrastructure Overview Dashboard")
+![Screenshot of the Infrastructure Overview Dashboard in Code Quality showing various metrics related to technical debt](images/overview-dashboard-ams.png "Infrastructure Overview Dashboard")
 
 Using the Infrastructure overview dashboard, you can compare the different charts through a specific period of time. This enables you to check at the same time both **status** and **progress** within the several areas that contribute to your technical debt.
 
@@ -40,7 +44,7 @@ Architects and team leads can use the information obtained from this dashboard:
 
 * As a tool to better communicate their technical debt strategies with the development teams.
 
-To access the **Infrastructure overview** dashboard, click the **Overview** tab in the AI Mentor Studio.
+To access the **Infrastructure overview** dashboard, click the **Overview** tab in the Code Quality.
 
 ## Get the most relevant data to define your strategy
 
@@ -54,11 +58,11 @@ As an architect or a team lead, you can apply several filters to get the most re
 
 For example, team leads can check for their own team impact, or analyze a specific application, while architects might want to validate the technical debt distribution by category across all applications.
 
-The data displayed in the **Infrastructure overview** dashboard depends on the permissions of the IT user accessing the AI Mentor Studio. Each user sees the data corresponding to the applications and teams to which they have permissions. See the [main features permissions](how-works.md#Permissions) for further details.
+The data displayed in the **Infrastructure overview** dashboard depends on the permissions of the IT user accessing the Code Quality. Each user sees the data corresponding to the applications and teams to which they have permissions. See the [main features permissions](how-works.md#Permissions) for further details.
 
 <div class="info" markdown="1">
 
-You can set the analysis date range since the factory first started to use the AI Mentor Studio, until the last sync from the previous day. The data from the current day is collected during that day, and it will be available on the next day.
+You can set the analysis date range since the factory first started to use the Code Quality, until the last sync from the previous day. The data from the current day is collected during that day, and it will be available on the next day.
 
 </div>
 
@@ -70,13 +74,13 @@ In the Infrastructure overview dashboard you can see the following information:
 * The [variation of the technical debt and corresponding findings](#variation)
 * The [applications with the highest technical debt](#highest-apps)
 
-### Check the overall evolution of your technical debt { #overall }
+### Check the overall evolution of your technical debt {#overall}
 
 The **Technical debt** overall card gives you a first glimpse of how the technical debt is evolving in your applications through the main development slots (2 weeks, 1 month, and 3 months).
 
 ![Card visualizing the overall evolution of technical debt over main development slots in the Infrastructure Overview Dashboard](images/overview-overall-card-ams.png "Technical Debt Overall Card")
 
-### Check the technical debt distribution by category { #category}
+### Check the technical debt distribution by category {#category}
 
 In the **Technical debt per category** list you can see the distribution (%) of each code pattern category and the total number of findings in your factory.
 
@@ -84,7 +88,7 @@ Here you can assess which are the categories contributing more to your technical
 
 ![List showing the percentage distribution of technical debt by code pattern category in the Infrastructure Overview Dashboard](images/overview-debt-per-category-ams.png "Technical Debt Distribution by Category")
 
-### Check the top code patterns with highest technical debt { #top-patterns }
+### Check the top code patterns with highest technical debt {#top-patterns}
 
 The **Top code patterns with highest technical debt** graph shows an hierarchical view on the code patterns distribution:
 
@@ -98,7 +102,7 @@ Here you can quickly perceive which code patterns and categories are the largest
 
 When you mouse hover a code pattern, you can see the corresponding number of findings.
 
-### Check the variation of the technical debt and corresponding findings { #variation }
+### Check the variation of the technical debt and corresponding findings {#variation}
 
 The **Technical debt variation vs. number of findings** chart shows a progress view of the variation of technical debt and the number of findings on a daily basis. The technical debt variation shows how much the technical debt has increased or decreased compared to the previous day. For each day, you can see the number of open, new, and solved findings.
 
@@ -128,7 +132,7 @@ For example, for a specific date:
 
 * A technical debt variation with values around 0% doesn’t mean that you don’t have technical debt. It means that it didn’t vary from the previous day.
 
-### Check the applications with the highest technical debt { #highest-apps }
+### Check the applications with the highest technical debt {#highest-apps}
 
 The **Apps by highest technical debt** chart shows a ranking of the applications that contribute more to your technical debt. On each application, you can identify the modules contributing to that technical debt.
 

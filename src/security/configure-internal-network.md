@@ -1,6 +1,12 @@
 ---
-summary: Learn to configure internal network settings in OutSystems 11 (O11) to restrict application access.
-tags: internal network configuration, security, access restrictions, network security, service center
+summary: 'OutSystems 11 (O11) internal network configuration in Service Center: set IP address ranges to restrict SOAP, REST, and Web UI Flow access.'
+tags:
+  - IP Filters
+  - Platform Server
+  - REST
+  - Security
+  - Settings
+  - SOAP
 locale: en-us
 guid: 2326f357-2f2a-4a5c-a05d-fb20edd7be5f
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,7 +14,6 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:93
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - service center
 coverage-type:
@@ -26,7 +31,7 @@ This procedure applies only to **self-managed environments**. For OutSystems Clo
 
 </div>
 
-When configuring your internal network, ensure that you also add the IP addresses of any extended products you use (for example, AI Mentor Studio, Workflow Builder). For more information, refer to [OutSystems network requirements](../setup-infra-platform/setup/network-requirements.md).
+When configuring your internal network, ensure that you also add the IP addresses of any extended products you use (for example, Code Quality, Workflow Builder). For more information, refer to [OutSystems network requirements](../setup-infra-platform/setup/network-requirements.md).
 
 To configure an internal network for your OutSystems environment, do the following:
 

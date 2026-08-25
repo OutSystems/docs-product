@@ -1,11 +1,18 @@
 ---
-summary: Explore how OutSystems 11 (O11) integrates CI/CD practices using native and third-party tools to enhance application lifecycle management.
+summary: CI/CD in OutSystems 11 (O11) uses a continuous delivery pipeline with LifeTime and third-party testing tools to automate deployment across environments.
 guid: 51a5ebb6-5a65-41c0-8641-e2bd11799438
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3942-809&t=yFA2dg85pciiAiog-1
-tags: ci/cd, application lifecycle management, agile, devops, automation
+tags:
+  - Agile
+  - CI/CD
+  - Deploy
+  - Development lifecycle
+  - Jenkins
+  - Quality Assurance
+  - Testing
 audience:
   - Developer
   - Architect
@@ -15,6 +22,7 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+isautopublish: true
 ---
 
 # Application Lifecycle Management in O11 CI/CD
@@ -76,7 +84,7 @@ The ultimate success of CI/CD is based on automation, and, for testing, the succ
 
 <div class="info" markdown="1">
 
-[AI Mentor Studio](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment. It classifies every architecture module into its correct class, identifies problems, and gives guidance for how to fix them.
+[Code Quality](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment. It classifies every architecture module into its correct class, identifies problems, and gives guidance for how to resolve them.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) supports right-to-left (RTL) languages by default in its UI framework, facilitating multilingual application development.
+summary: "Right-to-left (RTL) layout in OutSystems 11 (O11): apply it via the Multilingual feature or inject the `is-rtl` class, and use the IsRTL action to adapt content."
 tags: ide usage, reactive web apps, tutorials for beginners, rtl support, multilingual applications, ui design, localization
 locale: en-us
 guid: f7a12f2e-55b0-4a1a-8a50-a7b2e7fff65e

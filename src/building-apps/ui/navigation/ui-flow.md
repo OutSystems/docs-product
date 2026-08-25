@@ -1,5 +1,5 @@
 ---
-summary: Learn how to manage and customize UI Flows in OutSystems 11 (O11) for efficient app interface development.
+summary: UI Flows in OutSystems 11 (O11) group Screens and Blocks, and you can add flows, set themes, define the default screen, and scaffold screens using entities.
 locale: en-us
 guid: be5be9b1-2021-4aef-919c-4b36b930255d
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to manage translations in OutSystems 11 (O11) by exporting and importing language resources using Excel or .resX formats.
+summary: "OutSystems 11 (O11) translation management: export and import language resources using Excel or .resX files in Service Studio."
 tags: localization, internationalization, export and import data, excel, .resx
 locale: en-us
 guid: f5ec781d-b346-4f47-b4cc-1ccb94a50312

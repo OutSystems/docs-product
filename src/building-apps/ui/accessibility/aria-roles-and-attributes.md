@@ -1,5 +1,5 @@
 ---
-summary: Learn how to enhance accessibility in OutSystems 11 (O11) using ARIA roles and attributes for dynamic content and complex structures.
+summary: ARIA roles and attributes in OutSystems 11 (O11) let you set dynamic states, hide elements, and create readable labels for assistive technology.
 tags: accessibility, aria, web accessibility, screen readers, dynamic content
 locale: en-us
 guid: e4cd9450-4fe2-4145-8f1b-0852ab8c081d

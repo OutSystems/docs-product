@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) enables the creation of accessible Traditional Web Apps by customizing HTML, CSS, and ARIA roles to adhere to WCAG standards.
+summary: "OutSystems 11 (O11) Traditional Web App accessibility: apply ARIA roles, keyboard navigation, color contrast, and tabindex to reach WCAG compliance."
 tags: accessibility, wcag standards, aria roles, html/css customization, best practices
 locale: en-us
 guid: b5635533-5774-4a83-b2ed-6c207d5d8db8

@@ -81,6 +81,32 @@ catch a suffix-vs-content mismatch:
   confirm the suffix is correct rather than treating it as a reference
   example.
 
+**What genuine entity/data-model diagrams (`-ss` / `-odcs`) look like:**
+these are captured directly from Service Studio's or ODC Studio's Data tab,
+not authored as a standalone Figma diagram, even though they show a
+box-and-connector layout like one. Use these traits to catch a
+suffix-vs-content mismatch in either direction:
+
+* Each entity renders as the tool's own card widget: entity name in the
+  header next to the tool's blue table/grid icon, not a hand-drawn box.
+* Attributes are listed as rows, each with the tool's own attribute-type
+  icon (a key glyph on identifier attributes, a plain grid-dot icon on
+  regular ones), not generic bullet text.
+* Relationships are drawn as the tool's characteristic curved/bezier
+  connector lines between cards, never straight brand-colored arrows.
+* Typography, spacing, and per-card drop shadows match the tool's own
+  default rendering, not a Figma-authored diagram style.
+* These captures are normally cropped tight to just the Data tab canvas, so
+  the absence of toolbar/menu chrome does not by itself indicate a
+  standalone `-diag` diagram — the deciding signal is the native
+  entity/attribute iconography and connector style, not the presence or
+  absence of surrounding chrome.
+
+* **Pass example:** `best-practice-binary-data-odcs.png` (entity cards with
+  native icons and curved relationship lines, cropped to the canvas only).
+* See SKILL.md's genuine-diagram checklist for the matching exclusion that
+  keeps this content from being misjudged as a `-diag` candidate.
+
 ## 3. Highlight — red rectangle outline on the focal element
 
 * **Severity:** ❌ when the screenshot illustrates a specific click or focused

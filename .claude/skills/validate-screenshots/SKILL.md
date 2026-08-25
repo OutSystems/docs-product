@@ -128,6 +128,13 @@ For each entry in the list:
    step-based flows), rule 8 (PII), rule 9
    (internal environment URLs).
 
+   For `-ss`/`-odcs` files showing an entity or data-model layout (boxes
+   connected by lines), check against `visual-rules-screenshots.md` rule 2's
+   entity/data-model carve-out before concluding the suffix is wrong. A
+   Data-tab capture cropped tight with no toolbar chrome is not by itself a
+   sign of a misfiled `-diag` diagram — don't fall back on the genuine-diagram
+   checklist below as the only reference point for that judgment.
+
    For files ending in **`-diag`**: use vision to determine whether the
    content is a genuine diagram or a UI screenshot.
 
@@ -141,6 +148,13 @@ For each entry in the list:
    * Connecting elements: arrows, dashed lines, or swimlanes
    * A white or light-gray background with a rounded-rectangle shadow border
    * Descriptive text labels naming concepts or roles, not UI controls
+
+   Excluded: entity or data-model diagrams captured directly from Service
+   Studio's or ODC Studio's Data tab, even when cropped tight with no
+   visible toolbar chrome. These are native tool renderings, not
+   standalone Figma diagrams — refer to `visual-rules-screenshots.md`
+   rule 2's entity/data-model carve-out for the native iconography and
+   connector traits that identify them.
 
    A UI screenshot shows product interface chrome with interactive elements
    (panels, toolbars, dropdowns, form fields, menus) from ODC Studio, ODC

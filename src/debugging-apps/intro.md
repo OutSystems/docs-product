@@ -1,6 +1,11 @@
 ---
-summary: OutSystems 11 (O11) provides advanced debugging features in Service Studio for detailed app analysis and troubleshooting.
-tags: debugging, breakpoints, native mobile app debugging, pwa (progressive web app), debugger ui
+summary: Debugging apps in OutSystems 11 (O11) Service Studio using breakpoints, step-by-step execution, mobile targets, and proxy or farm environment setups.
+tags:
+  - Debugging
+  - Mobile app
+  - Native App
+  - Traditional Web
+  - Troubleshooting
 locale: en-us
 guid: 78def0b5-863d-4d58-8ea0-bb9f28bf1ef8
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -16,13 +21,14 @@ coverage-type:
   - apply
 topic:
   - debug-troubleshoot-app-logic
+isautopublish: true
 ---
 
 # Debugging apps
 
-Debug your app in Service Studio by pausing the execution at [breakpoints](<breakpoints.md>), specific points in a module, and then running the logic step-by-step. This lets you find any issues in your logic design.
+Debug your app in Service Studio by pausing the execution at [breakpoints](breakpoints.md), specific points in a module, and then running the logic step-by-step. This lets you find any issues in your logic design.
 
-The [Debugger tab](<debugger-ui-reference.md>) shows app information like variable and runtime values. It also shows the current debugging context (current [thread](<threads.md>), event name, UI flow, screen and action, when applicable. Use the debugger commands available in the Debugger Toolbar and in the Debugger menu.
+The [Debugger tab](debugger-ui-reference.md) shows app information like variable and runtime values. It also shows the current debugging context (current [thread](threads.md), event name, UI flow, screen and action, when applicable. Use the debugger commands available in the Debugger Toolbar and in the Debugger menu.
 
 ![Screenshot of the initial debugger interface in OutSystems Service Studio](images/debugger-intro-ss.png "Debugger Introduction in Service Studio")
 
@@ -32,13 +38,13 @@ To debug your app, do the following in Service Studio:
 
 1. Click the 1-Click Publish button to save the latest changes in the module before debugging.
 
-1. Set one or more [breakpoints](<breakpoints.md>) in the module you're debugging.
+1. Set one or more [breakpoints](breakpoints.md) in the module you're debugging.
 
-1. Before debugging a **native mobile app**, choose a debugging target in the [Debugger tab](<debugger-ui-reference.md>): Android, iOS, or Google Chrome which emulates a device. The section [Mobile Debugging Scenarios](<#mobile-debugging-scenarios>) includes further details about the different targets. If you're debugging a **mobile app distributed as a PWA**, select **Emulate using Google Chrome** in **Debugger** > **Debug Setup**.
+1. Before debugging a **native mobile app**, choose a debugging target in the [Debugger tab](debugger-ui-reference.md): Android, iOS, or Google Chrome which emulates a device. The section [Mobile Debugging Scenarios](#mobile-debugging-scenarios) includes further details about the different targets. If you're debugging a **mobile app distributed as a PWA**, select **Emulate using Google Chrome** in **Debugger** > **Debug Setup**.
 
     ![Debugger tab in Service Studio showing options for native mobile app debugging](images/debugger-tab.png "Debugger Tab in Service Studio")
 
-1. Start debugger by clicking the **Start Debugging** button in the [Debugger tab](<debugger-ui-reference.md>) or by selecting **Debug in the Public Area** in the Debugger menu. When you're debugging mobile apps using the Google Chrome target, Service Studio opens a dedicated Chrome browser instance for debugging only.
+1. Start debugger by clicking the **Start Debugging** button in the [Debugger tab](debugger-ui-reference.md) or by selecting **Debug in the Public Area** in the Debugger menu. When you're debugging mobile apps using the Google Chrome target, Service Studio opens a dedicated Chrome browser instance for debugging only.
 
     Note: To also open a browser when starting a debug session in a **web application**, check the **Open in new browser window** option in the **Debug Setup** tab.
 
@@ -56,11 +62,11 @@ To debug your app, do the following in Service Studio:
 
     * Right-clicking an element on the canvas (or in the module tree) and selecting the **Continue To Here** option in the context menu. The execution continues until it reaches that element on the canvas.
 
-In some scenarios you need to [debug some functionality exposed by another module](<debug-producer-modules.md>) (called a producer module).
+In some scenarios you need to [debug some functionality exposed by another module](debug-producer-modules.md) (called a producer module).
 
-While developing **Traditional Web apps** you can also [debug modules in your Personal Area](<public-personal-areas.md>). This lets you test your changes separately from other developer's changes in the same module.
+While developing **Traditional Web apps** you can also [debug modules in your Personal Area](public-personal-areas.md). This lets you test your changes separately from other developer's changes in the same module.
 
-## Mobile debugging scenarios { #mobile-debugging-scenarios }
+## Mobile debugging scenarios {#mobile-debugging-scenarios}
 
 There are different ways of debugging a mobile app that help you discover, understand, and fix issues. You can debug your mobile app in one of the following ways:
 
@@ -74,11 +80,11 @@ There are different ways of debugging a mobile app that help you discover, under
 
     * **To test a mobile app on an iOS device running on Service Studio:**
 
-        1. On your **Windows computer**, install [iTunes](<https://www.apple.com/itunes/download/>) (this step is not necessary if you're running Service Studio on a MacOS computer).
+        1. On your **Windows computer**, install [iTunes](https://www.apple.com/itunes/download/) (this step is not necessary if you're running Service Studio on a MacOS computer).
 
         1. On your **device**, turn the **Web Inspector** option **On**.
 
-            For detailed instructions, refer to [Troubleshoot Debugger Connection Issues](<troubleshoot-debugger-connection.md#web-inspector-is-not-enabled-on-your-device>).
+            For detailed instructions, refer to [Troubleshoot Debugger Connection Issues](troubleshoot-debugger-connection.md#web-inspector-is-not-enabled-on-your-device).
 
         1. Connect your device to the computer using a USB cable.
 
@@ -88,7 +94,7 @@ There are different ways of debugging a mobile app that help you discover, under
 
     * **To test a mobile app on an Android device**:
 
-        1. On your **device**, turn [USB debugging On](<https://developer.android.com/studio/debug/dev-options.html#enable>).
+        1. On your **device**, turn [USB debugging On](https://developer.android.com/studio/debug/dev-options.html#enable).
 
         1. Connect your mobile device to the computer using a USB cable.
 
@@ -96,13 +102,13 @@ There are different ways of debugging a mobile app that help you discover, under
 
         1. Click **Allow** to allow debugging on your device.
 
-For more information, refer to [Troubleshoot Debugger Connection Issues](<troubleshoot-debugger-connection.md>).
+For more information, refer to [Troubleshoot Debugger Connection Issues](troubleshoot-debugger-connection.md).
 
 If you need to troubleshoot app crashes, a plugin or check the native code of apps, debug your apps with the mobile platform's native tools, such as Android Studio for Android and Xcode for iOS. Before debugging using the native tools, you must generate a mobile package with `Debug` (Android) or `Development` (iOS) build type.
 
 <div class="info" markdown="1">
 
-For more information, refer to [Solve Common Mobile App Development Issues](<../monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md>) and [Best Practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>). These resources have useful tips that might save you some troubleshooting time.
+For more information, refer to [Solve Common Mobile App Development Issues](../monitor-and-troubleshoot/solve-common-mobile-app-development-issues.md) and [Best Practices](../building-apps/mobile-best-practices/mobile-best-practices.md). These resources have useful tips that might save you some troubleshooting time.
 
 </div>
 
@@ -116,20 +122,51 @@ When debugging an app and checking the values of the Date Time data type, keep i
 
 You can read more about timezones in [Available Data Types](../ref/data/data-types/available-data-types.md#date-time-notes).
 
-## Debugging in Proxy Scenarios and Farm Environments
+## Debugging in proxy scenarios and farm Environments
 
-In environments with multiple front-end servers behind a load balancer or proxy server, debugging may encounter issues due to unmatched origin IP addresses.
+In environments with multiple front-end servers behind a load balancer or a proxy server, unmatched origin IP addresses can cause debugging issues. When a debug session starts, the platform associates it with the developer's origin IP address and, by default, only stops at breakpoints for requests that come from that same IP address. If the developer's requests reach the server through a proxy, or through a pool of proxy or NAT addresses that presents a different or rotating origin IP, the breakpoint is silently skipped and the request runs to completion without stopping. This makes debugging appear intermittent, stopping only for the fraction of requests whose origin IP matches the one registered for the session.
 
-For Traditional Web Applications, adding the proxy IP address to the Trusted Proxy addresses in Service Center > Administration > Security > Network Security resolves this issue, enabling proper debugging.
+Here are the types of apps that are subject to the origin-IP restriction:
 
-It's important to note that debugger functionality remains unaffected for Mobile and Reactive Applications, as breakpoints are honored regardless of origin IP addresses.
-
-In farm setups, debugging can be challenging as user connections to specific front-ends cannot be guaranteed. This necessitates ensuring that the load balancer redirects users based on immutable criteria for effective debugging.
-Alternatively, manual distribution of users across front-ends or using DNS load balancing can also help manage debugging challenges.
+* Reactive web apps
+* Progressive web apps (PWAs)
+* Traditional web apps
+* Mobile apps emulated in a browser are subject to the origin-IP restriction.
 
 <div class="info" markdown="1">
 
-Proxy scenarios are supported in self-managed environments. However, there is no option to add Trusted proxy addresses in OutSystems Cloud installations.
+Native mobile apps running in the OutSystems mobile app native shell are not affected by this origin-IP restriction. Their breakpoints are honored regardless of the origin IP address.
+
+</div>
+
+To debug the affected apps reliably behind a proxy or load balancer, use one of the following approaches:
+
+* Make the developer's real origin IP address resolvable and stable. Add the proxy IP address to the trusted proxy addresses in **Service Center** > **Administration** > **Security** > **Network Security** so the platform resolves the real client IP from the forwarded headers instead of the proxy IP. Also ensure the developer's traffic egresses through a single, stable IP address for example, a single NAT or VPN gateway rather than a pool of addresses.
+
+* **Allow debugging from any IP address.** If a stable origin IP address can't be guaranteed, enable the corresponding platform configuration so breakpoints are honored regardless of the origin IP address. In [Factory Configuration](../setup-infra-platform/setup/factory-config.md), open the **Platform Configurations** tab and enable:
+
+    * **Allow Debugging Reactive Apps From Any IP** — for Reactive Web apps, PWAs, and mobile apps emulated in a browser.
+    * **Allow Debugging Traditional Apps From Any IP** — for Traditional Web apps.
+
+    Both configurations are disabled by default.
+
+    <div class="warning" markdown="1">
+
+    When these settings are enabled, two developers debugging the same app at the same time results in unexpected behavior, as one developer's debug session interferes with the other's. Enable these settings only in controlled development environments.
+
+    </div>
+
+In farm setups, the load balancer doesn't guarantee that a user's requests reach the same front-end server, which complicates debugging. Configure the load balancer to redirect users based on immutable criteria for effective debugging. Alternatively, distribute users across front-ends manually, or use DNS load balancing, to reduce this issue.
+
+<div class="info" markdown="1">
+
+In earlier Platform Server versions, breakpoints in Reactive Web and mobile apps were honored regardless of the origin IP address. If Reactive Web app debugging stopped working after a Platform Server upgrade in a proxy or farm environment, this origin-IP restriction is the likely cause. Use one of the approaches described earlier in this section to restore that behavior.
+
+</div>
+
+<div class="info" markdown="1">
+
+Proxy scenarios are supported in self-managed environments. However, there is no option to add trusted proxy addresses in OutSystems Cloud installations.
 
 </div>
 

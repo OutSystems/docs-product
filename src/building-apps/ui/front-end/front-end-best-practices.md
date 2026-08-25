@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: front-end development, css best practices, scalability, style guide, architecture patterns
+tags:
+  - Architecture
+  - Best Practices
+  - CSS
+  - Front-End
+  - Style Guides
+  - UI
+  - UI Patterns
 audience:
   - Front-end developer
   - Developer

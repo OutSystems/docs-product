@@ -5,7 +5,14 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:103
 summary: OutSystems 11 (O11) enhances app UI with customizable CSS, themes, and responsive design tools.
-tags: user interface design, css customization, style guide, responsive design, right-to-left support
+tags:
+  - CSS
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - Themes
+  - UI
+  - UI Patterns
 audience:
   - Developer
   - Front-end developer

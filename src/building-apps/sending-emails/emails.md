@@ -1,6 +1,11 @@
 ---
 summary: Explore how OutSystems 11 (O11) enables sending emails from traditional web applications, including dynamic content composition and asynchronous delivery.
-tags: email integration, web application development, email templates, asynchronous processing, email api
+tags:
+  - Asynchronous Processes
+  - Logging
+  - Themes
+  - Traditional Web
+  - Widgets
 locale: en-us
 guid: fcef1ee7-5f7d-4c00-a92c-14f0a0039ac0
 app_type: traditional web apps

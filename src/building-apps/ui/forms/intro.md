@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) enhances user experience by allowing real-time data collection and submission through forms that group input widgets and validate data.
-tags: data collection, user interface design, form validation, data storage, user experience
+tags:
+  - Forms
+  - Front-End
+  - Screens
+  - UI
+  - UI Patterns
+  - UX
+  - Widgets
 locale: en-us
 guid: 13f0400d-d287-43e7-8f59-a056d2048e7b
 app_type: traditional web apps, mobile apps, reactive web apps

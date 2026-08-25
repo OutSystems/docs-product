@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 introduces a new z-index management system in OutSystems UI 2.16.0, enhancing maintainability and customization.
-tags: ui design, css, z-index, ui customization, maintainability
+tags:
+  - CSS
+  - Front-End
+  - OutSystems UI
+  - Themes
+  - UI
+  - UI Patterns
 locale: en-us
 guid: c3a6352a-f92a-4d3a-9bfd-8bdd93f411ae
 app_type: mobile apps, reactive web apps

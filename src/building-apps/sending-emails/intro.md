@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) supports sending emails with attachments in Mobile and Reactive apps, requiring SMTP setup and specific platform versions.
-tags: email integration, smtp configuration, app development workflow, sending emails, email attachments
+tags:
+  - CSS
+  - Logic
+  - Mobile app
+  - Platform Server
+  - Security
+  - Templates
+  - Widgets
 locale: en-us
 guid: e08ac080-d0c3-469c-baad-39526af24ded
 app_type: traditional web apps, mobile apps, reactive web apps

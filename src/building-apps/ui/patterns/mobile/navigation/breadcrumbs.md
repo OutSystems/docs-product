@@ -1,6 +1,6 @@
 ---
 tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, navigation
-summary: OutSystems 11 (O11) supports the Breadcrumbs UI Pattern for enhancing navigation in Mobile Apps and Reactive Web Apps.
+summary: Breadcrumbs UI Pattern in OutSystems 11 (O11) lets you add navigational breadcrumb trails to Mobile Apps and Reactive Web Apps in Service Studio.
 locale: en-us
 guid: fd207363-044c-4b69-a584-83cbcb7b0108
 app_type: mobile apps, reactive web apps

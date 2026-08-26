@@ -1,6 +1,6 @@
 ---
 tags: ui patterns, client actions, event handling, extensibility, outsystems ui framework
-summary: Explore the extensibility client actions for UI Patterns in OutSystems 11 (O11), including event and configuration management for various UI components.
+summary: OutSystems 11 (O11) UI Pattern extensibility client actions for adding provider events and configurations to Carousel, Date Picker, Range Slider, and Dropdown patterns.
 locale: en-us
 guid: 6265028A-3331-417B-80BC-3E91A1E7B12C
 app_type: mobile apps, reactive web apps

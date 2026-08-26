@@ -1,6 +1,13 @@
 ---
 summary: Learn how to update the login and logout flows in your mobile app to support SAML 2.0 using OutSystems 11 (O11).
-tags: saml 2.0, authentication, security, mobile app development, single sign-on
+tags:
+  - Authentication
+  - End-user Authentication
+  - External Authentication
+  - Mobile app
+  - Plugins
+  - SAML
+  - SSO
 locale: en-us
 guid: 8b7802cb-bd7b-47e4-a3d1-bc8124ca4856
 app_type: mobile apps
@@ -18,6 +25,7 @@ coverage-type:
   - understand
   - apply
   - remember
+isautopublish: true
 ---
 
 # Updating the login and logout flows of your Mobile App to support SAML 2.0
@@ -36,7 +44,7 @@ For new apps that don’t comply with the two first prerequisites and are using 
 
 ## Configuration and activation
 
-To enable single sign-on on your Mobile App, you must configure an identity provider with SAML 2.0 Authentication and activate single sign-on between app types settings.
+To enable single sign-on on your Mobile App, you must configure an identity provider with SAML 2.0 Authentication and activate single sign-on between app types settings. SAML 2.0 authentication doesn't support multi-tenancy.
 
 To configure SAML 2.0 and add your identity provider, see the  [Configure SAML 2.0 Authentication](../configure-saml.md) documentation.
 
@@ -44,7 +52,7 @@ To activate the Single Sign-On Between App Types setting in Service Center, see 
 
 ## Updating the login and logout flows
 
-1. [Install the **Single Sign-On Mobile** plugin and add its dependencies in the home module of your app.](#install-the-single-sign-on-mobile-plugin)
+1. [Install the **SSO Mobile** plugin and add its dependencies in the home module of your app.](#install-the-sso-mobile-plugin)
 
 1. [**Create UI** for an SSO Mobile experience.](#create-a-ui-for-an-sso-mobile-experience)
 
@@ -52,7 +60,7 @@ To activate the Single Sign-On Between App Types setting in Service Center, see 
 
 1. [Update the **UserInfo Block** to manage the logout flow.](#update-the-userinfo-block-to-manage-the-logout-flow)
 
-### Install the Single Sign-On Mobile plugin
+### Install the SSO Mobile plugin
 
 Go to Forge and install the [**Single Sign-On Mobile**](https://www.outsystems.com/forge/component-overview/14284/single-sign-on-mobile) plugin. After installing the plugin in your environment, you must manage the dependencies on your target project so that you can access the SSO capabilities enclosed in this plugin. To manage the dependencies, follow these steps:
 
@@ -135,14 +143,14 @@ For SSO authentication in both PWA and Native applications, create logic to upda
     1. Run the **GetCallbackURL** client action.
         This action returns a URL.
 
-    1. Add the **User_GetUnifiedLoginURL** server action, setting its **OriginalUrl** parameter as:
+    1. Add the **User_GetUnifiedLoginUrl** server action, setting its **OriginalUrl** parameter as:
 
     ``GetCallbackUrl.Url (the output of the GetCallbackURL action)``
 
     1. Verify that the URL exists. You can use the following condition:
 
         ```
-        Length(UserGetUnifiedLoginURL2.Url) > 0
+        Length(User_GetUnifiedLoginUrl.Url) > 0
         ```
 
     1. If the URL exists add the **StartSSOAuthentication** client action and verify if it runs successfully.
@@ -174,23 +182,27 @@ In this step you update the **ClientLogout** client action of the **UserInfo blo
 
     1. Create a new **SSOLogoutMobile** client action and add it to the flow. Inside this new client action:
 
-        1. Call User_IsExternaluser and if User_IsExternalUser.IsExternal is TRUE, run DoLogout server action;
+        1. Call **User_IsExternalUser** and if `User_IsExternalUser.IsExternal` is TRUE, run the **DoLogout** server action;
 
-        1. If User_IsExternalUser.IsExternal is FALSE, run the GetCallbackURL client action. This action will return a URL;
+        1. If `User_IsExternalUser.IsExternal` is FALSE, run the **GetCallbackURL** client action. This action returns a URL;
 
-        1. Add the User_GetUnifiedLogoutURL server action, setting the OriginalUrl parameter as: GetCallbackUrl.Url
+        1. Add the **User_GetUnifiedLogoutUrl** server action, setting the **OriginalUrl** parameter as: `GetCallbackUrl.Url`
 
         1. Verify that the URL exists. You can use the condition:
 
             ```
-              Length(UserGetUnifiedLoginURL2.Url) > 0
+              Length(User_GetUnifiedLogoutUrl.Url) > 0
             ```
 
-        1. If the URL exists add the StartSSOAuthentication client action and verify if it runs successfully;
+        1. If the URL doesn't exist, run the **DoLogout** server action.
 
-        1. If so, run the User_Logout_Mobile server action.
+        1. If the URL exists, add the **StartSSOAuthentication** client action and verify if it runs successfully.
 
-    1. Verify if the Logout was successful and if so redirect the application to the Login Screen.
+        1. If it doesn't run successfully, run the **DoLogout** server action.
+
+        1. If it runs successfully, run the **User_Logout_Mobile** server action.
+
+    1. In every case, redirect the application to the Login Screen after **DoLogout** or **User_Logout_Mobile** completes.
 
 The following is an overview of the complete logic:
 

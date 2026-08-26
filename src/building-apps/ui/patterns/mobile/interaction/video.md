@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, video embedding, ui patterns
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to embed a native video player in your application using OutSystems 11 (O11).
 locale: en-us
 guid: 48653c19-7ef1-44ca-b625-226ca4af35d0

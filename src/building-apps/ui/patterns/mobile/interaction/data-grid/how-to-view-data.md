@@ -1,5 +1,12 @@
 ---
-tags: outsystems data grid, data management, display data, reactive web apps, service studio
+tags:
+  - Aggregates
+  - Data
+  - Forge
+  - Front-End
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to display and manage data using the OutSystems Data Grid (O11) component in OutSystems 11.
 guid: cca0de21-e1fb-452f-9ff7-c73b55b3c287
 locale: en-us

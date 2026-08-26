@@ -1,6 +1,13 @@
 ---
 summary: Configure page structures for Reactive Web Apps using OutSystems 11 (O11) layouts, ensuring consistency with customizable headers, navigation, and main content areas.
-tags: layouts, outsystems ui, reactive web apps, page structure, application templates
+tags:
+  - Accessibility
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
 guid: 1814b20f-97bb-494d-a51e-c5cd4554d990
 locale: en-us
 app_type: reactive web apps

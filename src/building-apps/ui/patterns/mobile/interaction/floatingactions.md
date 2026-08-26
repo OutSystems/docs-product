@@ -1,5 +1,12 @@
 ---
-tags: ui design, ui patterns, mobile app development, web development, outsystems service studio
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to implement the Floating Actions UI Pattern in OutSystems 11 (O11) for enhanced mobile and reactive web app interfaces.
 locale: en-us
 guid: ebdedf83-2dba-46f4-9415-c0679e4ced71

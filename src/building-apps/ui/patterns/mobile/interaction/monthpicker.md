@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, date handling
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore the Month Picker UI Pattern in OutSystems 11 (O11) for user-friendly month selection based on the flatpickr library.
 locale: en-us
 guid: 81E3194C-9817-4A14-81C5-5E3F3CDDE4E3

@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, range slider
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore the Range Slider UI Pattern in OutSystems 11 (O11) for selecting values within a defined range in mobile and reactive web apps.
 locale: en-us
 guid: 788ee1a3-fd00-43dc-afc9-1cf6d25a1805

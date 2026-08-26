@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, time input, service studio widgets, dependency management, user interface design
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) integrates a Time Picker UI Pattern allowing users to input time in various formats, based on the flatpickr library.
 locale: en-us
 guid: F51B0186-5CEB-4D5F-880D-A85C6E0AB6DF

@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, mobile development, web development, user interaction, outsystems ui framework
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore the swipeable Stacked Cards UI Pattern in OutSystems 11 (O11) for enhancing mobile and reactive web apps.
 locale: en-us
 guid: c4e2edb1-3142-4f82-b34d-dab8d2356155

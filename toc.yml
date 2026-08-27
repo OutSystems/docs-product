@@ -945,6 +945,11 @@
     - href: monitor-and-troubleshoot/how-application-performance-is-measured.md
     - href: monitor-and-troubleshoot/use-cases.md
     - href: monitor-and-troubleshoot/the-apdex-performance-score.md
+    # Lifetime Analytics
+    - href: monitor-and-troubleshoot/reactive-app-lifetime-analytics/lifetime-analytics-reactive-apps-overview.md
+    - topics:
+        - href: monitor-and-troubleshoot/reactive-app-lifetime-analytics/lifetime-analytics-reactive-apps-enable.md
+        - href: monitor-and-troubleshoot/reactive-app-lifetime-analytics/lifetime-analytics-reactive-apps-cq.md
     #Logging
     - href: monitor-and-troubleshoot/logging/intro.md
     - topics:

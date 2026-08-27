@@ -12,7 +12,8 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - none
+  - remember
+  - understand
 ---
 
 # OutSystems UI Pattern extensibility

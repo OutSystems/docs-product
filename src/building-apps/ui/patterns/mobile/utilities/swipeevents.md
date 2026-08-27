@@ -1,6 +1,6 @@
 ---
 tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, swipe gesture
-summary: Learn how to implement swipe functionality in OutSystems 11 (O11) to manipulate data through user interactions with the Swipe Events UI Pattern.
+summary: Swipe Events UI Pattern in OutSystems 11 (O11) lets you trigger client actions on swipe left or right gestures in mobile and reactive web apps.
 locale: en-us
 guid: 388d64de-604e-47a8-b533-8f2900ed21d9
 app_type: mobile apps, reactive web apps

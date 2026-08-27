@@ -1,5 +1,12 @@
 ---
-tags: ui/ux design, user interface patterns, data handling, application development, outsystems ui
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to implement the Blank Slate UI Pattern in OutSystems 11 (O11) for enhancing Traditional Web Apps when no data is available.
 locale: en-us
 guid: e77f1bd7-6d92-4bdb-b3fe-82f5bd1b2e1b

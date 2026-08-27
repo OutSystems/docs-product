@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui patterns, content organization
+tags:
+  - Front-End
+  - Mobile app
+  - OutSystems UI
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to use the Separator UI Pattern in OutSystems 11 (O11) to enhance content organization in mobile and reactive web apps.
 locale: en-us
 guid: 0799a5eb-d6c4-4708-9a2a-895a2434613e

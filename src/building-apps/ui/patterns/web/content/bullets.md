@@ -1,5 +1,12 @@
 ---
-tags: ui design, widgets, web development, dependency management, instructional guide
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to organize content using the Bullets UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 0028c775-3531-4d78-b693-124fb9f1c70e

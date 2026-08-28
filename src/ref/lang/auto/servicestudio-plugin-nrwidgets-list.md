@@ -1,6 +1,6 @@
 ---
 helpids: 30030
-summary: Explore the List widget in OutSystems 11 (O11), which optimizes performance through virtualization and configurable scrolling thresholds.
+summary: 'List widget in OutSystems 11 (O11): properties, virtualization for performance, scroll threshold, and WCAG 2.2 accessibility with ARIA roles.'
 locale: en-us
 guid: 836cb2ad-86f5-4d9a-96ac-b7e34b4e82f7
 app_type: mobile apps, reactive web apps
@@ -9,6 +9,7 @@ figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&n
 tags:
   - Accessibility
   - Front-End
+  - JavaScript
   - Mobile app
   - Performance
   - UI
@@ -103,9 +104,50 @@ To prevent this issue, you can either disable the list virtualization or fetch a
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **List** Built-in Widget might not expose the correct semantic roles for assistive technologies. Adding the appropriate ARIA roles helps screen readers announce the list structure correctly. If the List is interactive, you can also add keyboard support so users can focus items and activate them using Enter or Space.
+From **Platform Server 11.43.0**, the **List** widget supports WCAG 2.2 AA compliance by default. [See the details below](#automatic).
 
-### Add list and listitem roles
+For previous Platform Server versions, follow [these guidelines](#manual-fix) to ensure predictable and accessible interactions for all users.
+
+### Automatic status announcements {#automatic}
+
+When you enable the **Enable WCAG 2.2** option in the **Platform Configurations** tab of [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration), the **List** widget automatically renders a visually hidden live region (`role="status"` with `aria-live="polite"` and `aria-atomic="true"`) as a sibling of the list. Screen readers announce the region's text whenever the list state changes, helping you satisfy WCAG 4.1.3 (Status Messages).
+
+<div class="info" markdown="1">
+
+If you choose to keep the **Enable WCAG 2.2** option disabled, follow [these guidelines](#manual-fix) to expose the correct semantic roles for assistive technologies, as required by WCAG 2.2 AA.
+
+</div>
+
+The list is linked to the live region via `aria-describedby`, so the announcement is also discoverable when assistive technologies query the list itself.
+
+The widget chooses the announcement text from the current `Source` data fetch status and the item count:
+
+| Data fetch status | Item count | Announcement (English default) |
+| --- | --- | --- |
+| `Fetching` | — | _(silent — the region is empty until the fetch resolves so the user is not interrupted while a spinner is on screen)_ |
+| `Error` | — | `Failed to load items` |
+| `Fetched` | `0` | `No items` |
+| `Fetched` | `1` | `1 item` |
+| `Fetched` | `N` (≥ 2) | `N items` |
+
+#### Localizing the announcement
+
+The widget resolves each announcement through the platform's `TranslationsService`. If no translation is registered for a key, the English default above is used. To translate the announcements to another language, register entries for the following keys via the platform's translation resources:
+
+| Key | English default | Notes |
+| --- | --- | --- |
+| `List.Status.LoadFailed` | `Failed to load items` | Used when `Source` reports an error. |
+| `List.Status.Empty` | `No items` | Used when the fetch resolved with zero items. |
+| `List.Status.SingleItem` | `1 item` | Used when the list has exactly one item. |
+| `List.Status.MultipleItems` | `{0} items` | Used when the list has two or more items. `{0}` is substituted with the item count, so translators can place the count and the noun in the natural order of the target language. |
+
+If **Enable WCAG 2.2** is disabled, no live region is added to the DOM and no announcements are made.
+
+### Manual fix required (for Platform Server versions before 11.43.0) {#manual-fix}
+
+The fixes in this section describe how to add the appropriate ARIA roles that help screen readers announce the list structure correctly. If the **List** is interactive, you can also add keyboard support so users can focus items and activate them using `Enter` or `Space`.
+
+#### Add list and listitem roles
 
 1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the **List**.
 
@@ -123,7 +165,7 @@ By default, the **List** Built-in Widget might not expose the correct semantic r
 
 1. Publish the module.
 
-### Enable keyboard navigation
+#### Enable keyboard navigation
 
 Add focus and key handling only when list items are interactive.
 
@@ -139,7 +181,7 @@ Add `tabindex="0"` to the **List Item** only when the whole item is interactive 
 
 1. In **List Item Properties**, under **Attributes**, add `tabindex="0"`.
 
-    ![Example of how to set listitem role attribute to a List Item in Service Studio](images/list-addtabindexlistitem-ss.png "Setting listitem role attribute to List Item")
+    ![Screenshot of List Item Properties in Service Studio with tabindex="0" added under Attributes](images/list-addtabindexlistitem-ss.png "List Item tabindex Attribute")
 
 1. In the same **Screen**, under **Events**, add a client action to **OnReady** event.
 
@@ -190,7 +232,7 @@ Remove the keyboard handler on OnDestroy to prevent memory leaks.
 
 1. Publish the module.
 
-### Result
+#### Result
 
 After completing these steps:
 

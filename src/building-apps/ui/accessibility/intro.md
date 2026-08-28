@@ -43,7 +43,7 @@ Here are some guidelines to consider for meeting your accessibility needs:
 1. Ensure that your app meets the basic accessibility requirements. For more information, refer to [Enabling the built-in accessibility features](#enable-the-built-in-accessibility-features).
 1. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. For more information, refer to [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
 1. Pay close attention to complex interactions and dynamic content. Fix the critical issues immediately. Use ARIA to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. Refer to [ARIA roles and attributes](aria-roles-and-attributes.md).
-1. Refer to [UI Patterns accessibility](ui-patterns-accessibility.md) for special notes about patterns you may be using on a page.
+1. Refer to [UI Patterns accessibility](ui-patterns-accessibility.md) for specific notes about patterns you may be using on a page.
 
 <div class="info" markdown="1">
 
@@ -53,9 +53,11 @@ OutSystems UI is often updated to support more accessibility features. For more 
 
 ## Enable the built-in accessibility features
 
-OutSystems has many built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip-to-content settings. To develop accessible apps, you must activate the accessibility feature in Service Studio. In that case, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility](ui-patterns-accessibility.md).
+OutSystems has many built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip-to-content settings. To develop accessible apps, you must activate the accessibility features. In that case, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility](ui-patterns-accessibility.md).
 
-To enable the built-in accessibility features in Service Studio, do the following steps:
+### OutSystems UI patterns
+
+To enable the built-in accessibility features for UI patterns, do the following steps in Service Studio:
 
 1. Go to **UI Flows** and click on **Layouts**
 1. Expand the layout you're using.
@@ -71,7 +73,21 @@ By setting the **EnableAccessibilityFeatures** set to true, you activate the fol
 * **Accessible links** - generates links with high color contrast
 * **Enhanced contrast** - allows displaying the content on the screen using a contrast ratio perceivable to people with visual impairments.
 
-### Page title
+### OutSystems widgets
+
+<div class="info" markdown="1">
+
+Requires [Factory Configuration 11.3.1](https://www.outsystems.com/forge/component-overview/25/factory-configuration-o11), for built-in WCAG 2.2 compliance released from Platform Server 11.42.0.
+
+</div>
+
+To enable built-in WCAG 2.2 compliance for widgets, do the following steps:
+
+1. Open [Factory Configuration](../../../setup-infra-platform/setup/factory-config.md) in the browser and login using your LifeTime/Service Center credentials.
+1. Navigate to the **Platform Configurations** tab.
+1. Toggle **EnableWCAG22**.
+
+## Page title
 
 Screen readers use page titles to inform users of the name of the page they're on. To define the page titles for accessibility, do the following steps:
 
@@ -85,11 +101,11 @@ The default page title of the log-in page is blank. Navigate to **UI Flows** > *
 
 </div>
 
-### Page language settings for screen readers
+## Page language settings for screen readers
 
 The locale of the app defines the language of the page. For more information refer to[Multilingual Reactive Web and Mobile Apps](https://success.outsystems.com/documentation/11/developing_an_application/design_ui/multilingual_reactive_web_and_mobile_apps/).
 
-### Image text alternatives
+## Image text alternatives
 
 Image text alternatives, also known as alt text or alternative text, is a string of text that describes what's in the image. Adding image text alternatives allows screen readers to read the description of the images.
 
@@ -103,7 +119,7 @@ To set an alternative text to an image, do the following steps:
 
 After adding alt-text to an image, for each of the used images, and published the module, you can test the image text alternatives by using a screen reader.
 
-### Text headings
+## Text headings
 
 Text headings are a valuable visual aid for users to understand the page structure. Incorporating varying text sizes, especially larger ones, enhances visual guidance on the page and benefits users with cognitive disabilities. Moreover, text-to-speech readers rely on headings to assist users in navigating through a page.
 
@@ -121,11 +137,11 @@ To set the text headings, do the following steps:
 
 On setting the headings, you can test them using a screen reader.
 
-### Text color contrast
+## Text color contrast
 
 By default, OutSystems UI provides the correct text contrast ratio to comply with the color contrast accessibility requirements. The built-in accessibility features, once turned on, improve the contrast. If you edit the colors in your app, make sure the contrast is still valid, by referring to the [minimum contrast criteria](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum).
 
-### Text spacing
+## Text spacing
 
 Improve the text readability by letting the users increase the text spacing in your application. To increase the text spacing, create an action that runs the accessibility **ToggleTextSpacing** actions.
 
@@ -140,9 +156,9 @@ Improve the text readability by letting the users increase the text spacing in y
 1. Click on the **Accessibility** Client Actions folder.
 1. Drag the **ToggleTextSpacing** action into the flow.
 
-    ![Screenshot depicting how to set the accessibility ToggleTextSpacing action in OutSystems](images/set-accessibility-role-ss.png "Setting the Accessibility Role")
+    ![Screenshot depicting how to set the accessibility ToggleTextSpacing action in OutSystems](images/set-accessibility-role-ss.png "Setting ToggleTextSpacing Action")
 
-### Form labels
+## Form labels
 
 Labels provide captions to the input fields, describing the information requested from the user. You have to bound the Label widget to inputs in forms to allow screen readers to read each input field caption.
 
@@ -162,17 +178,17 @@ Use the `aria-labelledby` attribute for more control when setting up relationshi
 
 </div>
 
-### Form validation on screen readers
+## Form validation on screen readers
 
 To learn how to validate the input fields of a form, refer to [Validate the fields of a form](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Forms/Validate_the_fields_of_a_form#Examples_of_the_client-side_validation_with_accelerators).
 
 To learn how to signal to screen readers and users that the form isn't valid, check the example in [Set ARIA dynamically](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility/Accessible_Rich_Internet_Applications_roles_and_attributes#Set_ARIA_dynamically).
 
-### Highlighting selected elements
+## Highlighting selected elements
 
 Turning on the built-in accessibility features allows you to get a visual highlight on the selectable items on the page. When the user navigates between different selectable items with the tab key, the selected element highlights.
 
-#### Selecting an element with the SetFocus action
+### Selecting an element with the SetFocus action
 
 You can explicitly select an element by using the **SetFocus** action. For example, to highlight an input field when a user enters a page that contains a form.
 
@@ -190,7 +206,7 @@ To explicitly select an element on a screen, do the following steps:
 
 After following these steps and published the module, you can test the highlighting of the element.
 
-### Skipping to specific content on a page
+## Skipping to specific content on a page
 
 By default, text readers skip repetitive elements, such as headers and menus, and jump to the main content of a page for reading it. You might want text readers to skip to a specific section of the page, other than the main content. To do this, do the following steps:
 

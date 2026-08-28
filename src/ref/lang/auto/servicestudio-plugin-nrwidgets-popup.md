@@ -1,6 +1,6 @@
 ---
 helpids: 30046
-summary: Popup widget properties, events, and WCAG 2.2 AA accessibility implementation for OutSystems 11 (O11) mobile and reactive web apps.
+summary: "Popup widget in OutSystems 11 (O11): properties, events, and WCAG 2.2 AA accessibility steps for Mobile and Reactive Web apps."
 locale: en-us
 guid: 8815652b-3b2f-47ee-81be-f58165e33a8c
 app_type: mobile apps, reactive web apps
@@ -141,30 +141,73 @@ A floating container/window above other screen content. Popup is a modal contain
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-By default, the **Popup** Built-in Widget may not fully manage focus, keyboard navigation, or ARIA attributes as required by WCAG 2.2 AA.  
-Update it so that focus remains inside the Popup while it’s open, supports visible focus on its interactive elements, returns to the trigger when the Popup closes, and exposes the correct ARIA relationship between the trigger and the Popup.  
-These changes ensure predictable, accessible interactions for all users.
+From **Platform Server 11.43.0**, the **Popup** widget supports WCAG 2.2 AA compliance by default. [See the details below](#automatic).
 
-### Set visible focus
+For previous Platform Server versions, follow [these guidelines](#manual-fix) to ensure predictable and accessible interactions for all users.
+
+### Automatic dialog name and Escape handling {#automatic}
+
+When you enable the **Enable WCAG 2.2** option in the **Platform Configurations** tab of [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration), the **Popup** widget automatically:
+
+* Adds `aria-label="Dialog"` to the popup dialog element, providing an accessible name for screen readers as required by WCAG 4.1.2 (Name, Role, Value).
+
+* Invokes a custom `onEscape` event when the user presses the `Escape` key while focus is inside the Popup, helping you satisfy WCAG 2.1.2 (No Keyboard Trap).
+
+<div class="info" markdown="1">
+
+If you choose to keep the **Enable WCAG 2.2** option disabled, follow [these guidelines](#manual-fix) to manage focus, keyboard navigation, or ARIA attributes as required by WCAG 2.2 AA.
+
+</div>
+
+The widget does not modify the **Popup** visibility variable itself. To close the **Popup** when the user presses `Escape`, wire the `onEscape` event to a client action that sets your **Popup** visibility variable to `False`.
+
+#### Close the popup on Escape {#close}
+
+1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the **Popup**.
+
+1. In the **Widget Tree**, select the **Popup** widget.
+
+1. In the **Properties** pane, in the **Events** section, add a new entry:
+
+    * **Event**: `onEscape`
+    * **Handler**: select or create a client action (for example, `ClosePopup`).
+
+1. In the client action, set the variable bound to **Show Popup** to `False` (for example, `ShowPopupVar = False`).
+
+1. Publish the module.
+
+#### Result
+
+* The popup dialog element exposes `aria-label="Dialog"` so screen readers announce a dialog name.
+
+* Pressing `Escape` while focus is inside the Popup runs the `onEscape` client action, which sets the visibility variable to `False` and closes the Popup. Because the variable changes, the parent can reopen the Popup later by setting it back to `True`.
+
+If **Enable WCAG 2.2** is disabled, the `onEscape` event is not invoked and `aria-label` is not added to the dialog element. Use the [manual workarounds](#manual-fix) in the sections below in that case.
+
+### Manual fix required (for Platform Server versions before 11.43.0) {#manual-fix}
+
+The fixes in this section ensure the focus remains inside the **Popup** while it’s open, supports visible focus on its interactive elements, returns to the trigger when the **Popup** closes, and exposes the correct ARIA relationship between the trigger and the **Popup**.
+
+#### Set visible focus
 
 1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the Popup.
 
 1. In **Elements**, select the action that opens or closes the Popup.
 
-    ![Example of the Client Action that opens or closes the Popup in Service Studio](images/popup-setvisiblefocus-step2-ss.png "Selecting the Client Action Client Action")
+    ![Screenshot of the Service Studio Elements tree with the Client Action that opens or closes the Popup selected](images/popup-setvisiblefocus-step2-ss.png "Service Studio Client Action Selected")
 
 1. In the action flow, drag an **If** node to validate if the variable that controls the Popup is `True`.  
 
-    ![Example of how to add an If to a Client Action in Service Studio](images/popup-setvisiblefocus-step3-ss.png "Adding an If to a Client Action")
+    ![Screenshot of the Service Studio action flow with an If node added to validate the Popup visibility variable](images/popup-setvisiblefocus-step3-ss.png "Service Studio If Node in Action Flow")
 
 1. In the **True** branch of the **If**, drag a **JavaScript** node to the flow.  
 
-    ![Example of how to add a JS node to a Client Action in Service Studio](images/popup-setvisiblefocus-step4-ss.png "Adding a JS node to a Client Action")
+    ![Screenshot of the Service Studio action flow with a JavaScript node added to the True branch of the If](images/popup-setvisiblefocus-step4-ss.png "Service Studio JavaScript Node in True Branch")
 
 1. In the **JavaScript** node, add an input parameter named **WidgetId** (type **Text**), and set it to the **Popup** block or widget ID (for example, `Popup.Id`).  
    Ensure that the **Popup** widget has a **Name** defined in the screen; otherwise, assign one before continuing.
 
-    ![Example of how to create an input parameter in Service Studio](images/popup-setvisiblefocus-step5-ss.png "Creating a WidgetId input parameter")
+    ![Screenshot of the Service Studio JavaScript node properties with a WidgetId input parameter of type Text](images/popup-setvisiblefocus-step5-ss.png "Service Studio WidgetId Input Parameter")
 
 1. Add the following code to the **Javascript** node:
 
@@ -179,7 +222,7 @@ These changes ensure predictable, accessible interactions for all users.
 
 1. Publish the module.
 
-### Add a focus trap
+#### Add a focus trap
 
 1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the **Popup**.
 
@@ -187,12 +230,12 @@ These changes ensure predictable, accessible interactions for all users.
 
 1. In the **True** branch, drag another **JavaScript** node after the last one.
 
-    ![Example of how to add a JS node to Client Action in Service Studio](images/popup-addfocus-step-3-ss.png "Adding a JS node to Client Action")
+    ![Screenshot of the Service Studio action flow with a second JavaScript node added to the True branch for the focus trap](images/popup-addfocus-step-3-ss.png "Service Studio Focus Trap JavaScript Node")
 
 1. Add an input parameter named **WidgetId** (type **Text**) and set it to the Popup widget ID (for example, `Popup.Id`).
     Ensure that the **Popup** widget has a **Name** defined in the screen; otherwise, assign one before continuing.
 
-    ![Example of how to create an input parameter in Service Studio](images/popup-addfocus-step-4-ss.png "Creating a WidgetId input parameter")
+    ![Screenshot of the Service Studio JavaScript node properties with a WidgetId input parameter of type Text for the focus trap](images/popup-addfocus-step-4-ss.png "Service Studio WidgetId Input Parameter")
 
 1. Add the following script:
 
@@ -261,11 +304,11 @@ These changes ensure predictable, accessible interactions for all users.
     delete popup._setFocusTrap;
     ```
 
-    ![Example of how to set the destroy focus trap node in Service Studio](images/popup-addfocus-step-8-ss.png "Adding a DestroyFocusTrap javascript node")
+    ![Screenshot of the Service Studio action flow with a JavaScript node in the False branch to remove the focus trap event listener](images/popup-addfocus-step-8-ss.png "Service Studio DestroyFocusTrap JavaScript Node")
 
 1. Publish the module.
 
-### Return focus to the trigger
+#### Return focus to the trigger
 
 1. In **Service Studio**, go to the **Interface** tab, and select the **Screen/Block** where you use the **Popup**.
 
@@ -275,16 +318,16 @@ These changes ensure predictable, accessible interactions for all users.
 
 1. Search for and select **SetFocus()**.
 
-    ![Example of how to set a SetFocus to a Run Client Action node in Service Studio](images/popup-returnfocus-step4-ss.png "Adding a SetFocus to a Run Client Action")
+    ![Screenshot of the Service Studio action flow with a Run Client Action node configured to call SetFocus](images/popup-returnfocus-step4-ss.png "Service Studio SetFocus Run Client Action")
 
 1. Set **WidgetId** to the **Popup trigger** ID (for example, `Button.Id`).
     Ensure that the **Button** widget has a **Name** defined in the screen; otherwise, assign one before continuing.
 
-    ![Example of how to create an input parameter in Service Studio](images/popup-returnfocus-step5-ss.png "Creating a WidgetId input parameter")
+    ![Screenshot of the Service Studio Run Client Action node with WidgetId set to the Popup trigger button ID](images/popup-returnfocus-step5-ss.png "Service Studio SetFocus WidgetId Parameter")
 
 1. Publish the module.
 
-### Set ARIA on trigger button
+#### Set ARIA on trigger button
 
 1. Go to the **Interface** tab, and select the **Screen/Block** where you use the **Popup**.
 
@@ -297,9 +340,9 @@ These changes ensure predictable, accessible interactions for all users.
     aria-expanded=If(ShowPopup, "true", "false")
     ```
 
-    ![Set ARIA to trigger button](images/popup-setariaexpanded-ss.png "Setting ARIA to trigger button")
+    ![Screenshot of the Service Studio button Properties pane with aria-controls and aria-expanded attributes added under Attributes](images/popup-setariaexpanded-ss.png "Service Studio Button ARIA Attributes")
 
-### Result
+#### Result
 
 * Focus remains inside the **Popup** while it’s open, and keyboard users can move between interactive elements using arrow keys and `Tab`.  
 * When the **Popup** closes, focus returns to the original trigger.  

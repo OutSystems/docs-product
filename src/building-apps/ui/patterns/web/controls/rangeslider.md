@@ -1,5 +1,12 @@
 ---
-tags: ui design, range slider interface, outsystems ui patterns, traditional web development, user experience
+tags:
+  - Front-End
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) includes a Range Slider UI Pattern for selecting a value within a defined range in Traditional Web Apps.
 locale: en-us
 guid: 7e929fe3-3027-4324-9b2a-a7d10e9fe4c6

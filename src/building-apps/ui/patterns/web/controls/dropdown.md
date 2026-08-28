@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, dropdown menu, user interface design, database integration, service studio usage
+tags:
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Learn how to implement and customize the Dropdown UI Pattern in OutSystems 11 (O11) for enhanced user choice functionality.
 locale: en-us
 guid: b4792689-6d10-4819-9a92-609ddbbd0365

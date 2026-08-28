@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, user interface design, frontend development, web development, outsystems
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: OutSystems 11 (O11) features the Input with Icon UI Pattern for enhanced data entry in Traditional Web Apps.
 locale: en-us
 guid: 28c2a35c-1fad-450b-bb5f-a31926f49c1a

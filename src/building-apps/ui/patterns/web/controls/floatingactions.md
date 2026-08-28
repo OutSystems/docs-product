@@ -1,5 +1,12 @@
 ---
-tags: ui design, ui patterns, web development, outsystems, widget implementation
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Learn how to implement the Floating Actions UI Pattern in OutSystems 11 (O11) for enhanced user interface design in Traditional Web Apps.
 locale: en-us
 guid: 2d4b31df-c2f5-46c6-945b-8fd711f22542

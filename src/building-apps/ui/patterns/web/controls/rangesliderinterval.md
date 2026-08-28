@@ -1,5 +1,12 @@
 ---
-tags: ui components, web development, outsystems development, ui patterns, interactive elements
+tags:
+  - Front-End
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Implement the Range Slider Interval UI pattern in OutSystems 11 (O11) for value selection in web apps.
 locale: en-us
 guid: 94ed04bf-3e70-41d6-9d40-713927750c02

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, web development, outsystems ui, design patterns, widgets
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore the use of the Button Group UI Pattern in OutSystems 11 (O11) for efficiently displaying radio button choices in Traditional Web Apps.
 locale: en-us
 guid: a42977e0-825d-49b5-bc9b-49025bac70cb

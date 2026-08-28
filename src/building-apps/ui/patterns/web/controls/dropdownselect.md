@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, forms, widgets, service studio, outsystems ui
+tags:
+  - Forms
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore the Dropdown Select UI Pattern in OutSystems 11 (O11) for enhanced combo box functionality in Traditional Web Apps.
 locale: en-us
 guid: da3a1367-e123-420b-8978-da142720ef57

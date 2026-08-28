@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, web development, frontend development, date input, outsystems ui framework
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Learn how to implement the Date Picker UI Pattern in OutSystems 11 (O11) for selecting dates within Traditional Web Apps.
 locale: en-us
 guid: 0eaaa700-8f98-4d1e-b478-5df2d45101ff

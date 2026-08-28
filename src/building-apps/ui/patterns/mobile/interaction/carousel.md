@@ -7,7 +7,7 @@ tags:
   - OutSystems UI
   - UI
   - UI Patterns
-summary: Explore the Carousel UI Pattern in OutSystems 11 (O11) for displaying multiple items in a horizontal slide using navigation controls.
+summary: "Carousel UI Pattern in OutSystems 11 (O11): add, configure, and make accessible a horizontal slide widget with navigation controls in Service Studio."
 locale: en-us
 guid: a2167543-6fcc-4c6e-9ff5-ba4426722ed5
 app_type: mobile apps, reactive web apps
@@ -41,26 +41,25 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 </div>
 
-You can use the Carousel UI Pattern to display multiple items in a horizontal slide.  The Carousel Pattern optimizes screen space by displaying only a few images from a larger collection which you can view using the navigation controls.
+You can use the Carousel UI Pattern to display multiple items in a horizontal slide. The Carousel Pattern optimizes screen space by displaying only a few images from a larger collection which you can view using the navigation controls.
 
 ![Screenshot showing an example of the Carousel UI Pattern in action](images/carousel-example-sa.png "Example of a Carousel UI Pattern")
 
 <div class="info" markdown="1">
 
-The Carousel Pattern is based on the Splide.js library (v3). For more information about the Carousel’s behaviors and extensibility methods, see [Splide.js](https://splidejs.com/).  
+The Carousel Pattern is based on the Splide.js library (v3). For more information about the Carousel’s behaviors and extensibility methods, see [Splide.js](https://splidejs.com/).
 
 </div>
 
 ## How to use the Carousel UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Carousel`.
-  
-     The Carousel widget is displayed.
 
-    ![Image of the Carousel widget as displayed in the OutSystems Service Studio](images/carousel-widget-ss.png "Carousel Widget in Service Studio")
+    The Carousel widget is displayed.
+
+    ![Screenshot of the Carousel widget displayed in the OutSystems Service Studio Toolbox](images/carousel-widget-ss.png "Carousel Widget in Service Studio Toolbox")
 
     If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
-
     1. In the Toolbox, click **Search in other modules**.
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
@@ -77,7 +76,7 @@ The Carousel Pattern is based on the Splide.js library (v3). For more informatio
 
 1. Add your content to the **Carousel Items** placeholder.
 
-    In this example, the List is deleted, and 3 Image widgets are added.  
+    In this example, the List is deleted, and 3 Image widgets are added.
 
     ![Example of adding three Image widgets to the Carousel Items placeholder in Service Studio](images/carousel-addimages-ss.png "Adding Image Widgets to Carousel")
 
@@ -91,33 +90,33 @@ The Carousel Pattern is based on the Splide.js library (v3). For more informatio
 
 1. You can configure the Carousel by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, **Navigation** or **ItemsPerSlide**.For more configurations, expand the **OptionalConfigs** property.
 
-    ![Image depicting the process of setting optional properties for the Carousel UI Pattern](images/carousel-properties-ss.png "Carousel Properties Configuration")  
+    ![Screenshot of the Carousel Properties tab in Service Studio showing optional configurations](images/carousel-properties-ss.png "Carousel Properties Tab")
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
-| **Property** | **Description** |
-| --- | --- |
-| Navigation (CarouselNavigation Identifier): Optional | Defines the type of navigation for the carousel. The available options are:<ul><li>Dots</li><li>Arrows</li><li>Both (dots and arrows)</li><li>None</li></ul> |
-| Height (Text): Optional | Defines a custom height for the carousel. The parameter accepts any CSS format, except percentage (library constraint). The default value is 'auto'. This means that the height is adapted to the same height as the parent element in the DOM. |
-| ItemsPerSlide (CarouselItems): Optional | Defines the number of items shown per slide according to the device. <ul><li>Desktop (Integer): Defines the number of items that are shown simultaneously on a desktop. By default, 1 item is displayed.</li><li>Tablet (Integer): Defines the number of items that are shown simultaneously on a tablet. By default, 1 item is displayed.</li><li>Phone (Integer): Defines the number of items that are shown simultaneously on a phone. By default, 1 item is displayed.</li></ul> |
-| OptionalConfigs (CarouselOptionalConfigs): Optional | Defines additional parameters to customize the Carousel behavior and functionality. |
-| OptionalConfigs.AutoPlay (Boolean): Optional | If set to True, the Carousel changes slides automatically. This is the default value. |
-| OptionalConfigs.Loop (Boolean): Optional | Enables the continuous slide of the Carousel even after it reaches the end. |
-| OptionalConfigs.Padding (Text): Optional | Defines the distance between the Carousel edges and the visible items on each slide.<br/>Accepts any css size unit (such as px, vw, %) or even css variables.<br/>Example: "100px" |
-| OptionalConfigs.ItemsGap (Text): Optional | Defines the distance between each Carousel item.<br/>Accepts any css size unit (such as px, vw, %) or even css variables.<br/>Example: "var(--space-base)". |
-| OptionalConfigs.StartingPosition (Integer): Optional | Defines the first element to show in the Carousel. |
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul><br/>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| **Property**                                         | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Navigation (CarouselNavigation Identifier): Optional | Defines the type of navigation for the carousel. The available options are:<ul><li>Dots</li><li>Arrows</li><li>Both (dots and arrows)</li><li>None</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Height (Text): Optional                              | Defines a custom height for the carousel. The parameter accepts any CSS format, except percentage (library constraint). The default value is 'auto'. This means that the height is adapted to the same height as the parent element in the DOM.                                                                                                                                                                                                                                                                                                                                                                     |
+| ItemsPerSlide (CarouselItems): Optional              | Defines the number of items shown per slide according to the device. <ul><li>Desktop (Integer): Defines the number of items that are shown simultaneously on a desktop. By default, 1 item is displayed.</li><li>Tablet (Integer): Defines the number of items that are shown simultaneously on a tablet. By default, 1 item is displayed.</li><li>Phone (Integer): Defines the number of items that are shown simultaneously on a phone. By default, 1 item is displayed.</li></ul>                                                                                                                                |
+| OptionalConfigs (CarouselOptionalConfigs): Optional  | Defines additional parameters to customize the Carousel behavior and functionality.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| OptionalConfigs.AutoPlay (Boolean): Optional         | If set to True, the Carousel changes slides automatically. This is the default value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| OptionalConfigs.Loop (Boolean): Optional             | Enables the continuous slide of the Carousel even after it reaches the end.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| OptionalConfigs.Padding (Text): Optional             | Defines the distance between the Carousel edges and the visible items on each slide.<br/>Accepts any css size unit (such as px, vw, %) or even css variables.<br/>Example: "100px"                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| OptionalConfigs.ItemsGap (Text): Optional            | Defines the distance between each Carousel item.<br/>Accepts any css size unit (such as px, vw, %) or even css variables.<br/>Example: "var(--space-base)".                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| OptionalConfigs.StartingPosition (Integer): Optional | Defines the first element to show in the Carousel.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ExtendedClass (Text): Optional                       | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the `myclass` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the `myclass1` and `myclass2` styles to the UI styles being applied.</li></ul><br/>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 
 ### Carousel
 
-| Event | Description |
-| --- | --- |
-| Initialized: Optional | Event triggered after the Carousel is initialized. |
-| OnSlideMoved: Optional | Event triggered after the Carousel slides move. |
+| Event                  | Description                                        |
+| ---------------------- | -------------------------------------------------- |
+| Initialized: Optional  | Event triggered after the Carousel is initialized. |
+| OnSlideMoved: Optional | Event triggered after the Carousel slides move.    |
 
 ## Compatibility with other patterns
 
@@ -125,13 +124,50 @@ Avoid using the Carousel inside patterns with swipe events, such as the **Tabs**
 
 ## Accessibility – WCAG 2.2 AA compliance {#accessibility}
 
-Starting with OutSystems UI version **2.29.0**, the **Carousel** is compliant with WCAG 2.2 AA accessibility standards by default. No changes or manual work are required. If you customized the pattern, validate your implementation to ensure it still meets accessibility requirements.
+Starting with OutSystems UI version **2.29.0**, the Carousel includes improved support for WCAG 2.2 AA accessibility requirements by default.
+
+To ensure the Carousel is accessible, follow the recommended content structure for CarouselItems, particularly when using static content, images, or other OSUI components. The Carousel relies on the provided structure to correctly identify and expose its slides to assistive technologies.
+
+If you have customized the Carousel pattern or its content structure, review your implementation against the Carousel accessibility guidelines to ensure it remains compliant.
+
+### Structure the content inside CarouselItems
+
+The Carousel identifies its slides based on the structure you provide inside the **CarouselItems** placeholder. Depending on the type of content you add, you need extra wrapper containers to give screen reader users an accurate list of slides.
+
+#### Static content
+
+Add a **Container** as a direct child of **CarouselItems** whenever the Carousel doesn't contain a dynamic **List** widget, for example, when you add static images or components directly to **CarouselItems**. Set the Container's **Style Classes** property to `list`.
 
 <div class="info" markdown="1">
 
-When you place **Image** widgets directly inside the Carousel, the images are accessible through their **alt text** but aren't exposed as a list. To expose them as an accessible list, enclose each **Image** in a **Container**: the Container becomes the list item, so screen readers announce the images as a list of items and let users navigate them accordingly, while each image keeps its own image semantics and alt text.
+The Carousel uses this Container to identify the collection of items that become Carousel slides. Without a Container that has the `list` style class, the Carousel uses the first child of **CarouselItems** as a reference, resulting in an incorrect slide structure and an incorrect accessibility structure for screen reader users.
 
 </div>
+
+#### Image lists
+
+Wrap each **Image** widget in a **Container**, regardless of whether the images come from a dynamic **List** widget or are static. The Container becomes the Carousel list item: it lets screen readers announce the image as part of a list and lets users navigate the items accordingly, while the image keeps its own image semantics and alt text.
+
+Give each Container an **aria-label** attribute that describes the image, including the item's position and the total number of items, for example, `(2 of 5) - Black and grey headphones`.
+
+To add the **aria-label** attribute to a Container:
+
+1. Select the **Container** widget.
+1. On the **Properties** tab, go to the **Attributes** section.
+1. Create a new **aria-label** attribute.
+1. In the value field, enter the position and description, for example, `(2 of 5) - Black and grey headphones`.
+
+<div class="info" markdown="1">
+
+The Container's **aria-label** and the Image's **alt text** serve different purposes. Keep the **Image** widget's **alt** property set to a description of the image, or to an empty value for decorative images. Don't omit **alt text** because the Container already has an **aria-label**.
+
+</div>
+
+#### OutSystems UI components
+
+Wrap components such as **Card** or **Card Background** in a **Container** when you use them as Carousel content, and add a meaningful **aria-label** to the Container by following the same steps as for image lists, for example, `(1 of 3) - Product information`.
+
+OutSystems UI components contain multiple internal elements and their own accessibility semantics. Using such a component directly as the Carousel item prevents the Carousel from identifying the item correctly. The Container wrapper gives the Carousel a consistent element to treat as the list item, and gives screen reader users an accessible name for that item.
 
 <div class="info" markdown="1">
 
@@ -187,7 +223,7 @@ Starting with OutSystems UI 2.29.0, the pagination fix is automatically applied 
 
     <div class="info" markdown="1">
 
-     The original width and height of the dots was **8px**. In this update, the dots are enlarged to improve visibility and reduce extra spacing between them.
+    The original width and height of the dots was **8px**. In this update, the dots are enlarged to improve visibility and reduce extra spacing between them.
 
      </div>
 
@@ -205,11 +241,11 @@ This issue occurs **only when you use static images directly inside the Carousel
 
 1. In the **Carousel** pattern, search for the **CarouselItems** placeholder.
 
-   ![Screenshot of how Carousel structures is shown Widget Tree in Service Studio](images/carousel-search-carouselitemsplaceholder-ss.png "Searching for CarouselItems placeholcer")
+    ![Screenshot of how Carousel structures is shown Widget Tree in Service Studio](images/carousel-search-carouselitemsplaceholder-ss.png "Searching for CarouselItems Placeholder")
 
 1. Right-click an **Image** widget, and select **Enclose in Container**.
 
-   ![Example of how to enclose Image in Container in Service Studio](images/carousel-encloseimagecontainer-ss.png "Enclosing Image in Container")
+    ![Example of how to enclose Image in Container in Service Studio](images/carousel-encloseimagecontainer-ss.png "Enclosing Image in Container")
 
 1. Repeat step 3 for every **Image** inside the Carousel.
 
@@ -225,11 +261,11 @@ This issue occurs **only when you use static images directly inside the Carousel
 
 1. In the **OnReady** client action, drag a **JavaScript** node to the flow, from the left panel.
 
-   ![Example of how to add a JS node to Client Action in Service Studio](images/carousel-draganddropjs-ss.png "Adding a JS node to Client Action")
+    ![Example of how to add a JS node to Client Action in Service Studio](images/carousel-draganddropjs-ss.png "Adding a JS node to Client Action")
 
 1. In the **JavaScript** node, add an input parameter named **WidgetId** (type **Text**).
 
-   ![Example of how to create an input parameter in Service Studio](images/carousel-createwidgetid-ss.png "Creating a WidgetId input parameter")
+    ![Example of how to create an input parameter in Service Studio](images/carousel-createwidgetid-ss.png "Creating a WidgetId input parameter")
 
 1. Set **WidgetId** to the Carousel block/widget ID (for example, `Carousel.Id`).
 
@@ -243,22 +279,26 @@ This issue occurs **only when you use static images directly inside the Carousel
     if (!carouselObj) {
         return;
     }
-    let listEl = carouselObj.querySelector('.osui-carousel .list');
+    let listEl = carouselObj.querySelector(".osui-carousel .list");
     let retryHandle;
 
     function applyRoles(currListEl) {
         if (!currListEl) return;
-        currListEl.setAttribute('role', 'list');
+        currListEl.setAttribute("role", "list");
 
         // Apply to direct children only
-        const items = currListEl.querySelectorAll(':scope > *');
+        const items = currListEl.querySelectorAll(":scope > *");
         items.forEach((item) => {
-            item.setAttribute('role', 'listitem');
+            item.setAttribute("role", "listitem");
         });
     }
 
     function waitListRender() {
-        if (listEl && !listEl.classList.contains('list-loading') && listEl.children.length) {
+        if (
+            listEl &&
+            !listEl.classList.contains("list-loading") &&
+            listEl.children.length
+        ) {
             applyRoles(listEl);
             if (retryHandle) {
                 clearTimeout(retryHandle);
@@ -273,7 +313,7 @@ This issue occurs **only when you use static images directly inside the Carousel
         waitListRender();
     } else {
         // Fallback to static Splide list
-        listEl = carouselObj.querySelector('.osui-carousel .splide__list');
+        listEl = carouselObj.querySelector(".osui-carousel .splide__list");
         if (listEl) {
             applyRoles(listEl);
         }
@@ -284,7 +324,7 @@ This issue occurs **only when you use static images directly inside the Carousel
 
 1. Confirm the **List** applies the `list-loading` class based on the query’s `IsDataFetched` state.
 
-   ![Example of how to set the list-loading class and disable-virtualization to List element in Service Studio](images/carousel-listsettings-ss.png "Setting list-loading class and disable-virtualization to List element")
+    ![Example of how to set the list-loading class and disable-virtualization to List element in Service Studio](images/carousel-listsettings-ss.png "Setting list-loading class and disable-virtualization to List element")
 
 1. Click **Done**, then publish the module and test it.
 

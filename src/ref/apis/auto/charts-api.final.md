@@ -2,6 +2,7 @@
 summary: OutSystems 11 (O11) Charts API reference covering widgets, actions, structures, and static entities for building charts with Highcharts.
 tags:
   - Front-End
+  - OutSystems Charts
   - UI
   - Widgets
 locale: en-us
@@ -25,7 +26,7 @@ The OutSystems API for plotting charts.
 
 You can create a chart by dragging a chart widget to the screen. The widget property `SourceDataPointList` is the list consisting of the `DataPoint` elements. The `DataPoint` element defines the data points to be displayed on the chart.
 
-OutSystems uses Highcharts 12.6.0 to generate the charts, and you should consult the [Highcharts documentation](https://api.highcharts.com/highcharts/) for implementation and the API.
+OutSystems uses Highcharts 13.0.0 to generate the charts, and you should consult the [Highcharts documentation](https://api.highcharts.com/highcharts/) for implementation and the API.
 
 ## Summary
 

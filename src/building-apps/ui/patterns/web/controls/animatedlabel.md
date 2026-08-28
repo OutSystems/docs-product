@@ -1,5 +1,12 @@
 ---
-tags: ui design, web development, outsystems ui, user experience, widgets
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Learn how to animate user input labels in Traditional Web Apps using the Animated Label UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: cada799f-c2fe-4d0a-98aa-309bf3a4fd16

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, modal, user interface design, web development, dependency management
+tags:
+  - Front-End
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and customize the Modal UI Pattern in OutSystems 11 (O11) for enhanced user interaction in Traditional Web Apps.
 locale: en-us
 guid: 64cf2199-6b69-480b-a63e-49b91965e777

@@ -1,5 +1,12 @@
 ---
-tags: ui design, web development, outsystems, ui patterns, best practices
+tags:
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to effectively use the Section UI Pattern in OutSystems 11 (O11) to organize content in Traditional Web Apps.
 locale: en-us
 guid: 838dea96-eace-422c-8430-3a86522d2449

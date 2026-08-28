@@ -1,5 +1,12 @@
 ---
-tags: ui design, widgets, web development, user interface patterns, outsystems development
+tags:
+  - Front-End
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Explore how to effectively utilize the Cards UI Pattern in Traditional Web Apps with OutSystems 11 (O11).
 locale: en-us
 guid: a332f63f-d4ca-400d-ab27-d29455ba5b29

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, web development, outsystems ui, widgets, ui customization
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to implement and customize the Tooltip UI Pattern in OutSystems 11 (O11) for Traditional Web Apps.
 locale: en-us
 guid: 0e075d6f-21b5-4929-a591-d27832d9b40a

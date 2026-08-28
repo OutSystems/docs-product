@@ -1,5 +1,12 @@
 ---
-tags: ui component customization, styling interfaces, ui patterns, web design, user experience
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to use the Tag UI Pattern in OutSystems 11 (O11) to enhance user interfaces by styling texts with customizable colors, sizes, and shapes.
 locale: en-us
 guid: b448e71a-760c-46b3-9fed-b3b97229d351

@@ -1,5 +1,9 @@
 ---
-tags: ui design, web development, ui patterns, application development, outsystems platform
+tags:
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the Card Sectioned UI pattern in OutSystems 11 (O11) for organizing and highlighting information in Traditional Web Apps.
 locale: en-us
 guid: 1ba59808-a9ca-45c3-8f9c-3b68edccaef4

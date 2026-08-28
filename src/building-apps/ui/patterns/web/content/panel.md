@@ -1,5 +1,12 @@
 ---
-tags: ui design, web development, widget implementation, user interface patterns, outsystems development
+tags:
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: OutSystems 11 (O11) supports the Panel UI Pattern for organizing information in Traditional Web Apps.
 locale: en-us
 guid: 8cbeefba-ff0a-4f0f-a9ef-eccd63af568b

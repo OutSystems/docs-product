@@ -6,12 +6,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3945-276&t=Ql7W2ht1qc5SrbRz-1
 tags:
-  - 1-Click Publish
   - AI
   - Architecture
   - Best Practices
   - Quality Assurance
   - Refactoring
+  - Security
   - Technical Debt
 audience:
   - Developer
@@ -40,7 +40,7 @@ Software deployment using classical programming methods typically comprises modi
 
 OutSystems orchestrates the entire deployment process using a combination of automation, AI, and analytics to identify architecture errors, faulty logic, and broken dependencies — during development, in real time. OutSystems preempts failed compilations by either applying corrective measures automatically or directing the developer to the source of the error — along with a suggestion about how to fix it. Modules can only be published when it will function correctly.
 
-Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems Code Quality provides a high-level analysis of your app, marks areas for improvement, and facilitates unhindered growth.
+Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. OutSystems Code Quality provides a high-level analysis of your app, marks areas for improvement, and facilitates unhindered growth.
 
 This paper discusses how OutSystems helps reduce technical debt during development and assists in building a best-practices architecture to efficiently deal with it in the future.
 
@@ -142,11 +142,11 @@ Code Quality uses the following validation rules to evaluate the architecture of
 
 ![Diagram showing the validation rules for OutSystems architecture design, including no upward, side, or circular references.](images/architecture-validation-rules.png "OutSystems Architecture Validation Rules")
 
-For an in-depth discussion of these rules for architecture design see the Architecture design [appendix](#architecture-design-for-drchitecture-dashboard) below.
+For an in-depth discussion of these rules for architecture design see the Architecture design [appendix](#architecture-design-for-code-quality) below.
 
-### Using the Code Quality
+### Using Code Quality
 
-The Code Quality is designed for:
+Code Quality is designed for:
 
 * [Architects](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_an_architect) who need an overview of the portfolio so they can focus on keeping technical debt under control  
 * [Team leads](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_team_lead) who need an overview of the teams work so they can focus on ensuring the delivery of quality apps  
@@ -248,4 +248,4 @@ OutSystems applications rely only on standard architectures and frameworks and r
 
 When developers write new code, or make changes to existing code, OutSystems provides immediate feedback on its impact. Corrective measures are applied automatically if possible. Otherwise the source of the error is linked, along with suggestions about how to fix it. This eliminates compilation errors, since an OutSystems app can't be published unless they function correctly.
 
-Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems Code Quality provides a high level analysis of your app, highlighting areas for improvement, and facilitates unhindered growth.
+Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. OutSystems Code Quality provides a high level analysis of your app, highlighting areas for improvement, and facilitates unhindered growth.

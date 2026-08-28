@@ -7,15 +7,15 @@ app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma:
 audience:
-  - Platform administrator
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - lifetime
   - service center
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Configuring Active Directory Federation Services as external identity provider
@@ -106,7 +106,7 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
     * ``https://experiencebuilder.outsystems.com/Authentication/OIDC_Callback``
     * ``https://workflowbuilder.outsystems.com/Authentication/OIDC_Callback``
     * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
-    * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
+    * ``https://codequality.outsystems.com/Authentication/OIDC_Callback``
     * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager’s URI:
         * ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
 

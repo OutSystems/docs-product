@@ -1,5 +1,5 @@
 ---
-summary: This guide details configuring Microsoft Azure AD authentication for OutSystems 11 (O11) as an identity provider.
+summary: Microsoft Entra external IdP configuration for OutSystems 11 (O11) covers app registration, redirect URIs, delegated permissions, and LifeTime setup.
 tags: identity provider configuration, azure ad, authentication, security, sso
 locale: en-us
 guid: DA5BA9CA-066E-49E2-92C8-674CB644C370
@@ -7,14 +7,13 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=1914%3A6373&mode=design&t=qy82U3bMoQChCp6y-1
 audience:
-  - Platform administrator
-  - Front-end developer
-  - Developer
   - Architect
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Configuring Microsoft Entra authentication
@@ -51,7 +50,7 @@ To configure Microsoft Entra authentication, follow these steps:
 
         * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
 
-        * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
+        * ``https://codequality.outsystems.com/Authentication/OIDC_Callback``
 
     * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager's URI:
 

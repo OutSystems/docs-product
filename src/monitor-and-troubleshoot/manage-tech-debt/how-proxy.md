@@ -43,7 +43,7 @@ Before configuring the proxy in Code Quality, make sure that the following requi
 
 To configure the proxy, follow these steps:
 
-1. Go to the Code Quality LifeTime plugin (`https://<lifetime_environment>/ArchitectureDashboardProbe/`) and select **Configuration**.
+1. Go to the Code Quality LifeTime plugin (`https://<lifetime_environment>/CodeQualityProbe/`) and select **Configuration**.
 
     ![Screenshot of Code Quality LifeTime plugin showing where to configure the proxy settings](images/proxy-config-ams.png "Code Quality Proxy Configuration")
 

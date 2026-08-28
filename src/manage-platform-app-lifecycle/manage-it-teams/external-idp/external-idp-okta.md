@@ -8,13 +8,12 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1914:6837
 audience:
   - Platform administrator
-  - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - lifetime
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Configuring Okta authentication
@@ -104,7 +103,7 @@ To configure Okta authentication, follow these steps:
 
         * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
 
-        * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
+        * ``https://codequality.outsystems.com/Authentication/OIDC_Callback``
 
         * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager’s URI:
 

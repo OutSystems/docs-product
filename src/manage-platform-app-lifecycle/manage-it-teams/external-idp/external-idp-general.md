@@ -1,5 +1,5 @@
 ---
-summary: Explore how to integrate external identity providers using OIDC with OutSystems 11 (O11) for enhanced authentication across web and native applications.
+summary: 'External IdP OIDC integration in OutSystems 11 (O11): configure redirect URIs for Consoles and Development Tools using OpenID Connect Discovery.'
 tags: oidc integration, authentication, identity providers, openid connect discovery, token configuration
 locale: en-us
 guid: 7486CF76-C3FC-41E0-B2E9-F6C6512FAB44
@@ -7,9 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 audience:
-  - Platform administrator
   - Developer
-  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center
@@ -17,6 +16,7 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+isautopublish: true
 ---
 
 # Generic external identity provider supporting OIDC
@@ -35,7 +35,7 @@ You must configure the authorization and refresh tokens in the external IdP. By 
 
 The redirect URIs configuration is split into Web Applications (Consoles) and Native Application (Development Tools), but depending on the external provider, the redirects configuration can be configured together, like on Microsoft Entra, or separately, like on Okta.
 
-## Integrating with OutSystems Consoles
+## Integrating with OutSystems consoles
 
 To integrate with OutSystems Consoles, follow these steps:
 
@@ -51,7 +51,7 @@ To integrate with OutSystems Consoles, follow these steps:
 
         * ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
 
-## Integrating with OutSystems Development Tools
+## Integrating with OutSystems development tools
 
 To integrate OutSystems Development Tools, follow these steps:
 
@@ -69,7 +69,7 @@ To integrate OutSystems Development Tools, follow these steps:
 
     * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
 
-    * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
+    * ``https://codequality.outsystems.com/Authentication/OIDC_Callback``
 
     * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager’s URI:
         * ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``

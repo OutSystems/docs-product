@@ -7,14 +7,14 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 audience:
-  - Platform administrator
-  - Developer
   - Architect
+  - Platform administrator
   - Tech lead
 outsystems-tools:
   - none
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Configuring PingFederate as an external identity provider
@@ -106,13 +106,13 @@ For each of the environments on your infrastructure (including Lifetime), add a 
 * ``https://experiencebuilder.outsystems.com/Authentication/OIDC_Callback``
 * ``https://workflowbuilder.outsystems.com/Authentication/OIDC_Callback``
 * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
-* ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
+* ``https://codequality.outsystems.com/Authentication/OIDC_Callback``
 * For each OutSystems environment in your infrastructure (excluding Lifetime), add an **Integration Managers URI**: ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
 
 **Allowed Grant Types**: Select Authorization Code and Refresh Token.
 
 For more information, refer to [Configuring an OAuth client](https://docs.pingidentity.com/r/en-us/solution-guides/mzt1663945300370).
 
-## 11. Configure PingFederate as OpenID connect provider in Lifetime
+## 11. Configure PingFederate as OpenID Connect provider in LifeTime
 
 Follow the steps mentioned [here](external-idp-lifetime.md).

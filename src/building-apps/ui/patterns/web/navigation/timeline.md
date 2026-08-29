@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, timeline implementation, web development, chronological display, dependency management
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to implement the Timeline UI Pattern in OutSystems 11 (O11) to display events chronologically in web applications.
 locale: en-us
 guid: 045e94bb-45ae-4672-8c58-c9f2bd07a485

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, web blocks, ui design, service studio, outsystemsui
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to implement and customize the Navigation Bar UI Pattern in OutSystems 11 (O11) for effective app navigation.
 locale: en-us
 guid: 107b5610-cfdd-4186-b3ae-f513af891651

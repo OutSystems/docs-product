@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, service studio, outsystems ui, dependency management, widgets
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore the Tabs UI Pattern in OutSystems 11 (O11) for efficiently managing and displaying large sets of information in Traditional Web Apps.
 locale: en-us
 guid: 61ddaa14-5f08-44b8-95a5-9527a7649449

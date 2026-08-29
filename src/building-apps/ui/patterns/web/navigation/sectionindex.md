@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, page navigation, widget configuration, service studio guide, outsystems ui framework
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to implement and customize the Section Index UI Pattern in OutSystems 11 (O11) for efficient on-page navigation in Traditional Web Apps.
 locale: en-us
 guid: f3a3a460-60ea-4f88-9eb2-0fda7bce73b3

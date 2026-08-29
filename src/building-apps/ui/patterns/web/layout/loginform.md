@@ -1,5 +1,12 @@
 ---
-tags: outsystems ui, web development, user interface design, authentication, web blocks
+tags:
+  - Authentication
+  - End-user Authentication
+  - Forms
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI Patterns
 summary: Explore the pre-built Login Form web block in OutSystems 11 (O11) for efficient customization and integration into Traditional Web Apps.
 locale: en-us
 guid: 57c2167c-5a87-43c7-aa6d-69c1d8d4c82b

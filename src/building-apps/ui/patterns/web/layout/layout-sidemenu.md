@@ -1,5 +1,12 @@
 ---
-tags: ui development, custom ui components, web blocks, ui customization, css customization
+tags:
+  - Blocks
+  - CSS
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: Explore the Layout Side Menu web block in OutSystems 11 (O11) for customizable UI components in Traditional Web Apps.
 locale: en-us
 guid: a2d35777-96f1-42e8-b9b6-760eb59d24cd

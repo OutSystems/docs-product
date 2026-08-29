@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, navigation patterns, breadcrumbs, web blocks, dependency management
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: OutSystems 11 (O11) supports the Breadcrumbs UI Pattern for enhanced navigation in Traditional Web Apps.
 locale: en-us
 guid: 44158133-1d56-47d6-9a5b-f204828c0024

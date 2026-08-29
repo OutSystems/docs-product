@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, sidebar implementation, user interface design, traditional web development, outsystemsui
+tags:
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to implement and customize the Sidebar UI Pattern in OutSystems 11 (O11) for enhanced user interface design in Traditional Web Apps.
 locale: en-us
 guid: e04f67a0-6c80-4d32-b519-55fb5ff7a04b

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, search functionality, ux design, web applications, real-time data
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Learn how to implement the Search Balloon UI Pattern in OutSystems 11 (O11) for real-time search results in Traditional Web Apps.
 locale: en-us
 guid: b50125b9-419e-42f0-a55e-1deb3cfe5fc9

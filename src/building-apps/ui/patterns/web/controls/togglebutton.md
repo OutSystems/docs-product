@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, ux/ui design, widget implementation, dependency management, service studio ide
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to implement a Toggle Button in OutSystems 11 (O11) for Traditional Web Apps to manage two-state user interactions.
 locale: en-us
 guid: 77270b71-d3f8-4ae7-93a2-92dd501e7d21

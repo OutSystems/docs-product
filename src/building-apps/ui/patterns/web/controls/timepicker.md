@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, widgets, time selection, ui design, dependency management
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore the Time Picker UI Pattern in OutSystems 11 (O11) for selecting times in Traditional Web Apps.
 locale: en-us
 guid: 113a390f-c3f6-4ba3-b493-184f75c36227

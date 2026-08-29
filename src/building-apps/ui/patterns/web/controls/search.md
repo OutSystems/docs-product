@@ -1,5 +1,12 @@
 ---
-tags: search functionality, ui design, widget customization, dependency management, local variables
+tags:
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Learn how to implement the Search UI Pattern in OutSystems 11 (O11) for Traditional Web Apps, including widget setup and customization.
 locale: en-us
 guid: e0731879-d8a5-406c-b5a8-7b08cc36caee

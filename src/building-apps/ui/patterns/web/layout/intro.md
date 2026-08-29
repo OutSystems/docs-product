@@ -5,7 +5,14 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A10&mode=design&t=KpVEJMvnBwiukqql-1
 summary: OutSystems 11 (O11) enhances app design consistency by utilizing Layout web blocks that integrate common elements across multiple screens.
-tags: app design, user interface, web blocks, application consistency, screen design
+tags:
+  - Blocks
+  - Front-End
+  - Layouts
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
 audience:
   - Front-end developer
   - Developer

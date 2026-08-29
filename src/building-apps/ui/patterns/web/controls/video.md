@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, multimedia content, video embedding, application design, dependency management
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore how to embed a native video player in Traditional Web Apps using OutSystems 11 (O11).
 locale: en-us
 guid: 23431108-d3aa-4c10-9307-c8ad925dc9f1

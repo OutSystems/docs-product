@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, ui components, web development, css customization, outsystems web ui framework
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Explore how OutSystems 11 (O11) leverages traditional web patterns and UI components for enhanced web app development.
 locale: en-us
 guid: 9439a883-2009-4f3f-b253-1c84a2e3407f

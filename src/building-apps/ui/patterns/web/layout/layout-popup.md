@@ -1,5 +1,12 @@
 ---
-tags: ui design, web development, application development, outsystems ui, web blocks
+tags:
+  - Blocks
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Explore the Layout Popup in OutSystems 11 (O11), a customizable web block for displaying off-canvas information in Traditional Web Apps.
 locale: en-us
 guid: 6e0a8f5c-f734-4478-913e-21c6e81e8f1e

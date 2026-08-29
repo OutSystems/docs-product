@@ -1,5 +1,12 @@
 ---
-tags: ui design, web development, web block customization, user experience, login screen design
+tags:
+  - Blocks
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
 summary: OutSystems 11 (O11) features the Layout Login Split, a customizable web block for Traditional Web Apps that divides the login screen into two columns.
 locale: en-us
 guid: 361243bd-b558-4b00-80b4-5f6bc67aaa79

@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, notifications, user interface design, data retrieval, action logic
+tags:
+  - Aggregates
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) features a Counter UI Pattern for displaying dynamic numerical notifications in Traditional Web Apps.
 locale: en-us
 guid: 91058e55-ccbb-494d-bc74-9bdeab106742

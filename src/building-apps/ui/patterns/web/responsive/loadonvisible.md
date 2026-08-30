@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, lazy loading, performance optimization, user experience, web development
+tags:
+  - Front-End
+  - OutSystems UI
+  - Performance
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Explore the Load on Visible UI pattern in OutSystems 11 (O11) to enhance application speed and user experience by loading content only when visible.
 locale: en-us
 guid: 768c98ad-bb82-496b-a311-1f577e2e221f

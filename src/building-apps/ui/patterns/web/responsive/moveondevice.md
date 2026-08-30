@@ -1,5 +1,12 @@
 ---
-tags: user interface design, design patterns, device compatibility, web development, ui patterns
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore device-specific content placement with the Move on Device UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 504329ab-7245-4b5b-ac7a-17b7fb026663

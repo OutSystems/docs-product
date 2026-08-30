@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, progress indicators, user interface design, widgets, dependency management
+tags:
+  - Aggregates
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to implement and customize the Progress Bar in OutSystems 11 (O11) for Traditional Web Apps to visually represent task completion.
 locale: en-us
 guid: 2a589d5e-0cd8-4dab-b9fa-bc7d12cacf23

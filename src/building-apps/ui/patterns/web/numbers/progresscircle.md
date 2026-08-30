@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, user interface design, progress tracking, outsystems ui, widget implementation
+tags:
+  - Aggregates
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) features a Progress Circle UI Pattern for visually representing operation flow progress in Traditional Web Apps.
 locale: en-us
 guid: 8f2233e3-6e6d-46b0-bdb9-ea3fa1d813b3

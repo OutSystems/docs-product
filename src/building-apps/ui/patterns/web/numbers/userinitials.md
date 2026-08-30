@@ -1,5 +1,11 @@
 ---
-tags: ui patterns, user interface design, widget implementation, dependency management, user profile display
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) supports the User Initials UI Pattern for displaying user initials or images in a circular badge within Traditional Web Apps.
 locale: en-us
 guid: 079fe985-0d1e-435c-984a-cbd125908f13

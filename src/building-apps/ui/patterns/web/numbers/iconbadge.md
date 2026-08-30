@@ -1,5 +1,12 @@
 ---
-tags: ui widgets, ui design, data binding, notifications, user interface
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: OutSystems 11 (O11) features the Icon Badge UI Pattern for displaying numerical notifications in Traditional Web Apps.
 locale: en-us
 guid: fa1815e9-06e0-4a60-bd56-135abbf03e0b

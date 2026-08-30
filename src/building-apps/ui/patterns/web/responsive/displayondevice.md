@@ -1,5 +1,11 @@
 ---
-tags: ui design patterns, visibility control, cross-platform development, conditional content display, outsystems ui
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to use the Display on Device UI pattern in OutSystems 11 (O11) to control element visibility across different devices.
 locale: en-us
 guid: cb68aaf9-4836-4eeb-b3f2-0a9fcc5164a4

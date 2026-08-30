@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, widgets, web development, service studio usage, outsystems ui
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Explore the Gallery UI Pattern in OutSystems 11 (O11) for displaying content groups in Traditional Web Apps.
 locale: en-us
 guid: fa8125c1-ec09-4d4f-8c84-41be51e007b8

@@ -1,5 +1,12 @@
 ---
-tags: ui design, layout management, web development, page structure, widget usage
+tags:
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Learn how to effectively use the Columns UI Pattern in OutSystems 11 (O11) to enhance content layout in Traditional Web Apps.
 locale: en-us
 guid: 0488b53b-190d-4467-83a4-76bae70bf4c2

@@ -1,5 +1,12 @@
 ---
-tags: ui design, user interface patterns, web development, visual organization, ui components
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Learn how to use the Separator UI Pattern in OutSystems 11 (O11) to enhance visual organization in Traditional Web Apps.
 locale: en-us
 guid: c2f627d5-7dbf-4c75-a18e-43635917c6e6

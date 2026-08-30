@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, ui design, service studio, outsystems ui, fieldset pattern
+tags:
+  - Front-End
+  - OutSystems UI
+  - Screens
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how OutSystems 11 (O11) enhances Traditional Web Apps by utilizing the Fieldset UI Pattern for grouping related information.
 locale: en-us
 guid: b22dd0ca-8b9a-4d0f-a848-384bec9e6bc9

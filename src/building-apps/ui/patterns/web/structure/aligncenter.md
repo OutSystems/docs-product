@@ -1,5 +1,12 @@
 ---
-tags: ui design, web development, css techniques, frontend frameworks, outsystems ui
+tags:
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
+  - Widgets
 summary: Learn how to center content horizontally or vertically in Traditional Web Apps using the Align Center UI Pattern in OutSystems 11 (O11).
 locale: en-us
 guid: 88f0dd67-0dcf-44c3-ad3e-41977550015c

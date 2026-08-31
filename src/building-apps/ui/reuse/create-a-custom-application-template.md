@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) enables the creation of Custom Application Templates to streamline app development with predefined functionalities and aesthetics.
-tags: ide usage, reactive web apps, mobile app development, application templates, outsystems development
+tags:
+  - Mobile app
+  - Templates
+  - Themes
+  - UI
 locale: en-us
 guid: 54d15c8a-e72c-4732-a54e-9f4e0be1fe0e
 app_type: traditional web apps, mobile apps, reactive web apps

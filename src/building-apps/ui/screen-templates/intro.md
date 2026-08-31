@@ -1,6 +1,13 @@
 ---
 summary: Explore how OutSystems 11 (O11) enhances app development with customizable Screen Templates featuring predefined layouts and components.
-tags: ui framework, screen design, app development efficiency, layout customization, sample data
+tags:
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - Screens
+  - Templates
+  - UI
+  - Widgets
 locale: en-us
 guid: ca291da3-9cc0-496c-bc37-018488602df9
 app_type: traditional web apps, mobile apps, reactive web apps

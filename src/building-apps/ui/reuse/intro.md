@@ -1,6 +1,13 @@
 ---
 summary: Explore how OutSystems 11 (O11) enhances UI reusability and maintainability through the use of Blocks and Web Blocks.
-tags: ui components, user interface design, application maintenance, reusability, screen design
+tags:
+  - Blocks
+  - Events
+  - Front-End
+  - Mobile app
+  - Screens
+  - Traditional Web
+  - UI
 locale: en-us
 guid: 3c67d197-93c9-4620-8f3d-719e15405278
 app_type: traditional web apps, mobile apps, reactive web apps

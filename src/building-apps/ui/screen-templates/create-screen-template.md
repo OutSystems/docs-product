@@ -1,6 +1,13 @@
 ---
 summary: Explore how to create and manage custom screen templates in OutSystems 11 (O11) using the Service Studio environment.
-tags: ide usage, reactive web apps, tutorials for beginners, screen template customization, outsystems development
+tags:
+  - Forge
+  - Layouts
+  - OutSystems UI
+  - Screens
+  - Templates
+  - Themes
+  - UI
 locale: en-us
 guid: 874543f6-0021-47c7-9b10-28853b48d6a3
 app_type: traditional web apps, mobile apps, reactive web apps

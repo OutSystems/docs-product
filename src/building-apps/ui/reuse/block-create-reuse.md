@@ -1,6 +1,12 @@
 ---
 summary: Explore how to create and reuse UI Blocks across different applications in OutSystems 11 (O11) to streamline user interface development.
-tags: ui design patterns, component-based development, user interface design, application development, dependency management
+tags:
+  - Blocks
+  - Front-End
+  - Mobile app
+  - Screens
+  - Traditional Web
+  - UI
 locale: en-us
 guid: 6cd79d30-4d78-4fd5-8707-b4af2cbd5078
 app_type: traditional web apps, mobile apps, reactive web apps

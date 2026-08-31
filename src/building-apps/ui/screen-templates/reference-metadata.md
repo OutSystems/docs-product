@@ -5,7 +5,10 @@ guid: e888ea09-ae0e-4632-9631-5b9abfd1acaf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: screen template design, ui customization, image optimization, metadata configuration, outsystems development best practices
+tags:
+  - Screens
+  - Templates
+  - UI
 audience:
   - Developer
   - Front-end developer

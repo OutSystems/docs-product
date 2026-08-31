@@ -1,6 +1,13 @@
 ---
 summary: Explore how to use events for communication between Blocks and parent elements in OutSystems 11 (O11).
-tags: event handling, parent-child communication, ui components, block development, outsystems ui patterns
+tags:
+  - Blocks
+  - Events
+  - Front-End
+  - Screens
+  - UI
+  - UI Patterns
+  - Widgets
 locale: en-us
 guid: 6140a263-aa35-45e6-92a7-dc4453dae1c6
 app_type: traditional web apps, mobile apps, reactive web apps

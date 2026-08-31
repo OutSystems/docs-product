@@ -157,7 +157,6 @@ exceptions:
   - Read-Only
   - Read-Write
   - LLM
-  - CSP
   - Web Application Firewall
   - Plugin Manager
   - MediaResult data
@@ -321,6 +320,8 @@ exceptions:
   - CI/CD
   - CICD
   - CI
+  - CSP
+  - Content Security Policy
   - DB2
   - DEV
   - DNS

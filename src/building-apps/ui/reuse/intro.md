@@ -12,7 +12,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - apply
+  - understand
 topic:
   - reuse-ui
   - adding-a-block

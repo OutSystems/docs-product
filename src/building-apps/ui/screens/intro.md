@@ -1,5 +1,5 @@
 ---
-summary: Explore how to create and utilize UI elements in OutSystems 11 (O11) for both web and mobile applications.
+summary: OutSystems 11 (O11) Screens are UI containers that render as web or mobile app screens; create one from a blank layout or a Screen Template.
 locale: en-us
 guid: a864addf-9175-49f9-905e-e90013c7d238
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Explore best practices for efficient data loading in mobile applications using OutSystems 11 (O11).
+summary: "OutSystems 11 (O11) mobile data loading: use parallel Fetch Data actions, On After Fetch events, and grouped server calls for non-blocking screens."
 guid: 0a6cd5bc-89d8-438b-a791-422f25bca587
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

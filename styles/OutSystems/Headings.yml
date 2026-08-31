@@ -240,6 +240,7 @@ exceptions:
   - Azure
   - Azure ACR
   - Azure Kubernetes Service
+  - Azure SQL Managed Instance
   - AKS
   - DOCX
   - Markdown

@@ -74,10 +74,11 @@ Future revisions of OutSystems may require the installation of an update within 
 Use the same type of database engine for all three databases in Platform Server (platform and apps, logs, and session). OutSystems does not support a combination of database engines. For example, you can't use SQL Server for the platform database and Azure SQL for the logs/session databases (or any other combination). The only exception is the session database, which can use Redis and be combined with any of the supported relational database engines.
 
 <div class="info" markdown="1">
+
 OutSystems only supports database versions that are supported by their respective vendor.
-<br/>
-<br/>
+
 Future revisions of OutSystems may require the installation of an update within the major versions of each supported database engine.
+
 </div>
 
 #### Microsoft SQL Server {#ps-sql-server}

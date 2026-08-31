@@ -1,5 +1,5 @@
 ---
-summary: Explore lifecycle events in OutSystems 11 (O11) for effective management of Mobile and Reactive Web Apps.
+summary: "Screen and block lifecycle events in OutSystems 11 (O11): how On Initialize, On Ready, On Render, and On Destroy handlers work in Mobile apps."
 tags: mobile app development, screen lifecycle, block lifecycle, event handlers, lifecycle events
 locale: en-us
 guid: 9205fe77-5e90-402b-ba73-45cdc745515a

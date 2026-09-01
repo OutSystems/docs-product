@@ -570,6 +570,12 @@ knowledge-needs:
         creating the Rule, Rule Group, Rule Line, and Rule Group Output records
         using the CaseServices_API in OutSystems 11, so that a business rule is
         ready to be evaluated in a case management application.
+    - name: Evaluate CMF rule
+      id: evaluate-cmf-rule
+      description: Wants to evaluate a rule in the Case Management Framework by
+        calling the execution actions in the CaseServices_API Rules Engine folder
+        in OutSystems 11, so that the rule result can be used in a case management
+        application's logic.
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -582,6 +588,25 @@ knowledge-needs:
       id: app-settings
     - name: Configure app settings before a deployment
       id: config-app-before-deploy
+    - name: Factory Configuration overview
+      id: factory-configuration-overview
+      description: Wants to understand what the Factory Configuration Forge plugin is
+        and how to install it from Forge for OutSystems 11, so that they can use it
+        to manage web.config shared configurations and platform-level settings across
+        their Service Center Factory.
+    - name: Shared configurations
+      id: factory-configuration-shared-configs
+      description: Wants to create shared configurations in Factory Configuration using
+        XSLT templates (from scratch or pre-made samples) and associate them with eSpaces
+        in Service Center, so that web.config customizations persist across module
+        deployments in OutSystems 11.
+    - name: Platform configurations
+      id: factory-configuration-platform-configs
+      description: Wants to understand which internal platform configurations are available
+        in Factory Configuration's Platform Configurations tab (such as brute force
+        protection, slow query threshold, and remember login settings) and what database
+        parameters they control, so that they can tune platform-wide behavior in
+        OutSystems 11.
   - name: Runbooks for app configuration management
     id: runbook-config-mgmt
     subtopics:
@@ -728,6 +753,23 @@ knowledge-needs:
       id: bpmn-notation
     - name: Patterns for processes (automatic, human, decision)
       id: process-decision-patterns
+  - name: Workflow Builder
+    id: workflow-builder
+    subtopics:
+    - name: WFB group naming
+      id: wfb-group-naming
+      description: Wants to understand how Workflow Builder automatically creates
+        user groups in the OutSystems Users tool when an app is published to the
+        development environment, including the naming conventions for requester and
+        activity groups ([WB | App Name | Requesters] and [WB | App Name | Group name]),
+        in OutSystems 11, so that IT teams can identify and configure the correct
+        groups for end-user access.
+    - name: WFB production handoff
+      id: wfb-production-handoff
+      description: Wants to understand the steps required to move a Workflow Builder
+        app from development to production in OutSystems 11, including involving the
+        IT team, sharing user group names, and having IT add users in the OutSystems
+        Users tool, so that the app is ready for end users to access.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -796,6 +838,12 @@ knowledge-needs:
         handler that calls Session_GetMobileAppLoginInfo and then the system Login
         action, in Service Studio for O11, so that users don't need to log in
         separately to the web app inside the iframe.
+    - name: iframe link target
+      id: iframe-link-target
+      description: Wants to ensure links inside an embedded Traditional Web Screen
+        that navigate back to the mobile app open in the top window by setting
+        target="_top" on those links, in O11 Mobile Apps using an iframe block,
+        so that the app avoids nested iframes (cascade syndrome).
   - name: Front end architecture
     id: front-end-architecture
   - name: Customize style
@@ -870,6 +918,18 @@ knowledge-needs:
         plugin, and using an un-escaped Expression to activate it, in Service Studio
         for O11, so that the plugin can be reused across multiple screens without
         duplicating resources.
+    - name: Icon widget reference
+      id: icon-widget-ref
+      description: Wants to look up the properties, events, and runtime properties
+        of the Icon widget in ODC Studio, so that they can correctly configure icon
+        display — including icon selection, size, visibility, CSS classes, HTML
+        attributes, and event handlers — in a Reactive Web App.
+    - name: Tooltip widget reference
+      id: tooltip-widget-ref
+      description: Wants to look up the properties of the Tooltip widget in ODC
+        Studio — including Position, StartsOpen, Trigger, and ExtendedClass — so
+        that they can correctly configure tooltip appearance and behavior in a
+        Reactive Web App or Mobile App.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -1117,6 +1177,38 @@ knowledge-needs:
         GAC on the platform server, by removing or replacing the DLL using OraProvCfg.exe,
         so that Configuration Tool, Service Studio, and application runtime stop throwing
         Oracle driver errors.
+    - name: ODC shared trial
+      id: odc-shared-trial
+      description: Wants to understand what the ODC shared space trial is, how long
+        it lasts (10 days), who shares it, and what limitations it has compared to
+        a paid license (no Forge submissions, no user invites, no connections, limited
+        apps, no official support), so they can decide whether it meets their learning
+        or exploration needs.
+    - name: Shared space permissions
+      id: shared-space-permissions
+      description: Wants to know what permissions a developer has in an ODC shared
+        space, including access to the development stage, assets, logs, configurations,
+        end-user management, and Forge, so they can plan what they can build and manage
+        during the trial.
+    - name: O11 error tracking
+      id: o11-error-tracking-setup
+      description: Wants to obtain error information in a self-managed O11 installation
+        by using Service Center's Monitoring area, querying the OutSystems Log Database
+        directly, and reading Windows Event Viewer alerts, so that they can track,
+        monitor, and receive alerts about errors in the platform.
+    - name: O11 perf counters
+      id: o11-perf-counters
+      description: Wants to use OutSystems Platform Server's Windows Performance Counters
+        to monitor asynchronous job execution, application error rates, screen access,
+        and web service access in a self-managed O11 environment, so that they can
+        track platform runtime performance using Windows Performance Monitor.
+    - name: O11 service error recovery
+      id: o11-service-error-recovery
+      description: Wants to diagnose and recover from errors in OutSystems 11 platform
+        services — including Deployment Controller, Deployment Service, Scheduler
+        Service, Log Service, IIS, and Message Queue — by reading error messages,
+        checking Service Center Monitoring, and restarting services in a self-managed
+        environment, so that they can restore normal platform operation.
 - name: Hotfixing
   guid: d8111f11-34b0-4f33-8374-5d9611d507e2
   topics:
@@ -1298,6 +1390,11 @@ knowledge-needs:
         app distribution in ODC, and how to enable and try out the PWA on Android and
         iOS devices, so that they can offer their mobile app to users without requiring
         an app store installation.
+    - name: Debug PWA
+      id: debug-pwa
+      description: Wants to debug a PWA built in ODC by emulating it in Google Chrome
+        from ODC Studio's Debugger tab, so that they can inspect and troubleshoot the
+        app without a physical device.
   - name: Offline Synch
     id: offline-synch
     subtopics:
@@ -1494,6 +1591,12 @@ knowledge-needs:
     subtopics:
     - name: Built-in Authentication
       id: built-in-authentication
+    - name: Custom auth screens
+      id: custom-auth-screens
+      description: Wants to use and edit the pre-built authentication screens and
+        blocks (Login, ChangePassword, RecoverPassword, UserProfile, UserInfo, PasswordPolicy)
+        available in the Common UI folder in ODC Studio, so that they can implement
+        a custom-branded authentication flow without building it from scratch.
     - name: External IDPs
       id: external-idps
     - name: External IdP concepts
@@ -1878,6 +1981,47 @@ knowledge-needs:
         O11 installation — using Test Connection, the Fluent Bit service log, the
         Windows Service console, and the metrics endpoint — so that they can identify
         why logs aren't arriving at a destination or the service isn't running.
+    - name: Fix streaming timeout
+      id: fix-streaming-timeout
+      description: Wants to understand and resolve the OS-DP-STREAM-00004 "deadline
+        exceeded" error — where the destination server responds with a gRPC 4 error
+        when testing the streaming connection in O11 or ODC — so that they can restore
+        log and observability data streaming to the destination APM tool.
+    - name: Fix streaming not found
+      id: fix-streaming-not-found
+      description: Wants to understand and resolve the OS-DP-STREAM-00005 "not found"
+        error — where the destination server responds with a gRPC 5 error when testing
+        the streaming connection in O11 or ODC — so that they can restore log and
+        observability data streaming by correcting the endpoint URL in LifeTime Log
+        Streaming or the ODC Portal.
+    - name: Fix streaming already exists
+      id: fix-streaming-already-exists
+      description: Wants to understand and resolve the OS-DP-STREAM-00006 "already
+        exists" error — where the destination server responds with a gRPC 6 error
+        when testing the streaming connection in O11 or ODC — so that they can restore
+        log and observability data streaming by verifying the APM tool is working
+        and re-establishing the connection.
+    - name: Fix streaming permission denied
+      id: fix-streaming-permission-denied
+      description: Wants to understand and resolve the OS-DP-STREAM-00007 "permission
+        denied" error — where the destination server responds with a gRPC 7 error
+        when testing the streaming connection in O11 or ODC — so that they can restore
+        log and observability data streaming by correcting the authentication credentials
+        or endpoint URL in LifeTime Log Streaming or the ODC Portal.
+    - name: Fix streaming resource exhausted
+      id: fix-streaming-resource-exhausted
+      description: Wants to understand and resolve the OS-DP-STREAM-00008 "resource
+        exhausted" error — where the destination server responds with a gRPC 8 error
+        when testing the streaming connection in O11 or ODC — so that they can restore
+        log and observability data streaming by verifying the APM tool is working
+        and re-establishing the connection.
+    - name: Fix streaming failed precondition
+      id: fix-streaming-failed-precondition
+      description: Wants to understand and resolve the OS-DP-STREAM-00009 "failed
+        precondition" error — where the destination server responds with a gRPC 9
+        error when testing the streaming connection in O11 or ODC — so that they
+        can restore log and observability data streaming by verifying the APM tool
+        is working and re-establishing the connection.
   - name: Fluent Bit configuration
     id: fluentbit-configuration
     subtopics:

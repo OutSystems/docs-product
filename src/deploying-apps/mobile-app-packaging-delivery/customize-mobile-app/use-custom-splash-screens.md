@@ -1,6 +1,12 @@
 ---
 summary: Learn how to customize the native splash screen in OutSystems 11 (O11) for a seamless user experience on mobile apps.
-tags: mobile app development, ui customization, app launch experience, user experience, branding
+tags:
+  - Android
+  - iOS
+  - Mobile app
+  - Native App
+  - UI
+  - UX
 locale: en-us
 guid: f8dfa815-8c3e-4906-9378-e9d91ad6b4a4
 app_type: mobile apps

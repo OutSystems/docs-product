@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) allows customization of mobile app icons by importing icon images in various sizes and densities into the application module.
-tags: customization, ui design, mobile development, app deployment, branding
+tags:
+  - Android
+  - iOS
+  - Mobile app
 locale: en-us
 guid: 4d07edaa-0b7b-41b8-bd1f-59c4b1bfd103
 app_type: mobile apps

@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) allows customization of mobile app error screens through JSON configuration in Service Studio.
-tags: ui customization, error handling, json configuration, service studio extensibility, best practices
+tags:
+  - CSS
+  - Mobile app
+  - Screens
+  - UI
 locale: en-us
 guid: bacb4f2b-e04b-4ecf-8ce0-1f9536afa095
 app_type: mobile apps

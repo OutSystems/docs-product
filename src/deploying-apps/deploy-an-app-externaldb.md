@@ -1,6 +1,9 @@
 ---
 summary: This guide details how to deploy an application with an external database connection from the Development to Quality environment using OutSystems 11 (O11).
-tags: application deployment, database management, environment configuration, outsystems best practices, external database integration
+tags:
+  - Deploy
+  - Extensions
+  - External Databases
 locale: en-us
 guid: 33c27796-6e3d-4507-bdd3-27cc71036ee5
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,9 @@
 ---
 summary: Learn how to deploy a single module in OutSystems 11 (O11) to enhance deployment efficiency for Traditional Web apps.
-tags: deployment strategy, version control, devops practices, efficiency optimization, deployment process
+tags:
+  - Deploy
+  - Traditional Web
+  - Web
 locale: en-us
 guid: ee8de340-e9d3-4392-8c8e-a2f3d2c02340
 app_type: traditional web apps

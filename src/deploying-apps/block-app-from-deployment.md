@@ -10,7 +10,9 @@ app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
   - Platform administrator
-tags: lifetime, deployment management, app blocking, outsystems, infrastructure management
+tags:
+  - Deploy
+  - Infrastructure
 outsystems-tools:
   - lifetime
 helpids:

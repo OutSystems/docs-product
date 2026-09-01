@@ -1,6 +1,10 @@
 ---
 summary: Learn how to apply and propagate a hotfix in OutSystems 11 (O11) to ensure seamless updates across environments without downtime.
-tags: hotfix deployment, deployment best practices, version control, continuous deployment, application reliability
+tags:
+  - Deploy
+  - Development lifecycle
+  - Lifecycle
+  - Quality Assurance
 locale: en-us
 guid: e79dfbfc-4c0b-4239-ae8d-824f5da95d2d
 app_type: traditional web apps, mobile apps, reactive web apps

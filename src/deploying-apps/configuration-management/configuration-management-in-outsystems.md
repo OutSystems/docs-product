@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=3943-823&t=yFA2dg85pciiAiog-1
-tags: configuration management, agile development, devops, ci/cd, software engineering
+tags:
+  - Business Processes
+  - Deploy
+  - Development lifecycle
+  - External Databases
+  - Site Properties
+  - Timers
+  - Web services
 audience:
   - Developer
   - Architect

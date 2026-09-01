@@ -1,6 +1,9 @@
 ---
 summary: Deploy applications across environments using tagged versions in OutSystems 11 (O11) via LifeTime.
-tags: application deployment, environments management, version control, outsystems lifetime, troubleshooting
+tags:
+  - Deploy
+  - Development lifecycle
+  - Lifecycle
 locale: en-us
 guid: 2a095f90-2b09-4d7c-9013-71a5ac4d9653
 app_type: traditional web apps, mobile apps, reactive web apps

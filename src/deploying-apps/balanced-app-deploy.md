@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) supports balanced application deployment in self-managed farm environments to ensure no downtime.
-tags: load balancing, deployment strategies, application lifecycle management, version control, rollback procedures
+tags:
+  - Deploy
+  - Front-End
+  - Infrastructure
 locale: en-us
 guid: 525adee0-1259-458e-bc2d-b1f1d178a832
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -13,6 +13,7 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - remember
+  - unblock
 ---
 
 # Deploy to an Environment with Applications with Errors

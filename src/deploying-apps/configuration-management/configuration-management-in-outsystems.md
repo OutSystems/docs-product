@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
-  - evaluate
   - understand
+  - apply
 ---
 
 # ALM in OutSystems: configuration management

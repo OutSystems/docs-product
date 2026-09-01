@@ -5,7 +5,10 @@ guid: a857c31f-3b44-4cbd-9630-985e56bf06be
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: deployment, warnings resolution, best practices, outsystems development, software quality assurance
+tags:
+  - Deploy
+  - Security
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer
@@ -13,6 +16,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - unblock
+isautopublish: true
 ---
 
 # Warnings
@@ -41,6 +45,7 @@ For more information about the different warnings, see:
 * [Invalid Theme Warning](invalid-theme-warning.md)
 * [Invalid Widget Warning](invalid-widget-warning.md)
 * [JavaScript Injection Warning](javascript-injection-warning.md)
+* [LDAP filter injection warning](ldap-filter-injection-warning.md)
 * [Licensing Warning](licensing-warning.md)
 * [Maintenance Suggestion Warning](maintenance-suggestion-warning.md)
 * [Missing Dependency Warning](missing-dependency-warning.md)

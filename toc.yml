@@ -1889,6 +1889,7 @@
             - href: ref/errors-and-warnings/warnings/invalid-theme-warning.md
             - href: ref/errors-and-warnings/warnings/invalid-widget-warning.md
             - href: ref/errors-and-warnings/warnings/javascript-injection-warning.md
+            - href: ref/errors-and-warnings/warnings/ldap-filter-injection-warning.md
             - href: ref/errors-and-warnings/warnings/licensing-warning.md
             - href: ref/errors-and-warnings/warnings/maintenance-suggestion-warning.md
             - href: ref/errors-and-warnings/warnings/missing-dependency-warning.md

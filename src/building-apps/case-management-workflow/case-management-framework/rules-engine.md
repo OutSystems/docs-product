@@ -14,6 +14,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - evaluate-cmf-rule
+  - set-up-cmf-rule
+  - understand-rules-engine
 ---
 
 # Rules engine

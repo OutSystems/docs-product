@@ -14,6 +14,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - apply
+topic:
+  - bootstrap-cmf-app
+  - define-case-status
 ---
 
 # Creating a case management app with App Starter

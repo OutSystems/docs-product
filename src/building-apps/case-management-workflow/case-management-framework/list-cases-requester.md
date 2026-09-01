@@ -14,6 +14,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - apply
+topic:
+  - enrich-requester-case-list
+  - list-requester-cases
 ---
 
 # How to get list of cases for a requester

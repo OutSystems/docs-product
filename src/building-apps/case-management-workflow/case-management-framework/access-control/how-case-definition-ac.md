@@ -14,6 +14,8 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - apply
+topic:
+  - grant-case-definition-access
 ---
 
 # How to grant or revoke access to a case definition

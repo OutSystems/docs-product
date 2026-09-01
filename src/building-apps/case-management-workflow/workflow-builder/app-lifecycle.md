@@ -13,6 +13,9 @@ outsystems-tools:
   - outsystems users tool
 coverage-type:
   - understand
+topic:
+  - wfb-group-naming
+  - wfb-production-handoff
 ---
 
 # App lifecycle management

@@ -14,6 +14,9 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - apply
+topic:
+  - enrich-activity-list
+  - list-case-activities
 ---
 
 # How to get list of activities assigned to a case worker

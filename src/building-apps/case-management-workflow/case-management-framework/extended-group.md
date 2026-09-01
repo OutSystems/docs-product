@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - bootstrap-cmf-groups
+  - understand-group-extended
 ---
 
 # Groups for case management apps

@@ -14,6 +14,10 @@ outsystems-tools:
   - case management framework
 coverage-type:
   - apply
+topic:
+  - adapt-cmf-bootstrap
+  - enable-cmf-locale
+  - translate-cmf-entities
 ---
 
 # Enable multilingual Case Management framework

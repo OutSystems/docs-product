@@ -14,6 +14,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - understand
+topic:
+  - application-templates-overview
 ---
 
 # Application Templates

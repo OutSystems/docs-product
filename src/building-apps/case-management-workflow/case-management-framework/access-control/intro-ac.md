@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - cmf-access-control
 ---
 
 # Managing access to cases

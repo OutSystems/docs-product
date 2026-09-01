@@ -196,6 +196,18 @@ For every `NEW` candidate (not `REUSE`):
    finalizing.
 4. Preserve the file's existing formatting conventions (2-space indents, key
    order: `name`, `id`, `description`, `subtopics`).
+5. Quote `name` and `description` values safely instead of always writing
+   them as a plain (unquoted) YAML scalar. Use a plain scalar only when the
+   value contains none of: a colon followed by whitespace (`: `), a
+   leading/trailing quote or YAML indicator character (`"`, `'`, `-`, `#`,
+   `&`, `*`, `!`, `|`, `>`, `%`, `@`, `` ` ``, `[`, `]`, `{`, `}`, `,`), or
+   trailing whitespace. If any of these appear anywhere in the value, wrap
+   the whole value in single quotes and double any literal single quotes
+   inside it (`it's` → `it''s`). This matters most for descriptions that
+   quote a literal error message or UI text containing a colon (for example
+   `Parameter name: key`). An unquoted `: ` inside a plain scalar is
+   invalid YAML and breaks every tool that later parses the file, including
+   the `metadata-refresh.yml` sync workflow's PR-body generation.
 
 ## Step 8 — Review gate: Add / Edit / Scrap and redo
 
@@ -234,6 +246,14 @@ the matching option above.
   `OutSystems/tk-cicd` GitHub repository — the canonical source — using the
   same `gh api repos/OutSystems/tk-cicd/contents/knowledge-needs.yaml`
   command as Step 3.
+  Whichever copy you insert into below, validate it immediately after
+  inserting and before saving, committing, or pushing it: parse the file
+  with a YAML parser (for example
+  `python3 -c "import yaml; yaml.safe_load(open('<path>'))"`) and confirm it
+  succeeds. If it fails, the most likely cause is a `name` or `description`
+  value that needed the quoting rule from Step 7 — fix it and re-validate
+  before continuing. Never save, commit, or push a `knowledge-needs.yaml`
+  that fails to parse.
   - **`tk-cicd` unreachable** — insert each approved `NEW` item at its
     placement directly into the **local** `knowledge-needs.yaml` (the file
     read in Step 2, at the repo root) instead, and save it. Tell the user
@@ -329,6 +349,17 @@ separate from, and happens after, everything above.
      file read in Step 1, creating the field if it didn't already exist,
      at the same local path, preserving the rest of the frontmatter and
      content unchanged.
+
+The `topic` field must always be written as a YAML list, one item per line,
+even when it holds a single value:
+
+```yaml
+topic:
+  - reset-password
+```
+
+Never write `topic` as a single line with comma-separated values (for
+example `topic: reset-password, configure-llm-judge`).
 
 ## Tone guidance
 

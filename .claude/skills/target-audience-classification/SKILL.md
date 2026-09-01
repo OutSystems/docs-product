@@ -144,6 +144,16 @@ Only add target audiences that were identified above the threshold.
 Sort the tags alphabetically before writing them to the file.
 Do not delete any line from the file, with the exception of values from  the `audience` key if needed.
 
+The `audience` key must always be written as a YAML list, one item per line:
+
+```yaml
+audience:
+  - Developer
+  - Front-end developer
+```
+
+Never write `audience` as a single line with comma-separated values (for example `audience: Developer, Front-end developer`).
+
 ## Global constraints
 
 * Never skip steps

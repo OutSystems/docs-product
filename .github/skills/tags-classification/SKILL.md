@@ -123,6 +123,16 @@ Only add tags that were identified above the threshold, up to a maximum of 7 tag
 Sort the tags alphabetically before writing them to the file.
 Do not delete any line from the file, with the exception of values from  the `tags` key if needed.
 
+The `tags` key must always be written as a YAML list, one item per line:
+
+```yaml
+tags:
+  - Forge
+  - Troubleshooting
+```
+
+Never write `tags` as a single line with comma-separated values (for example `tags: Forge, Troubleshooting`).
+
 ## Global constraints
 
 * Never skip steps

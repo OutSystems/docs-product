@@ -1,5 +1,5 @@
 ---
-summary: Explore deployment plan features in OutSystems 11 (O11) for efficient application updates across environments.
+summary: Deployment plans in OutSystems 11 (O11) let you move app changes across environments, with options to reuse, retry, or run parallel plans in LifeTime.
 locale: en-us
 guid: 13e13cb8-e058-4235-bead-06410a2b8c7d
 app_type: traditional web apps, mobile apps, reactive web apps

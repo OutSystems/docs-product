@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) enables customization of app UIs by integrating and managing external data within various screen types.
+summary: OutSystems 11 (O11) use-case apps replace sample data in list, detail, and form screens with your database, Excel, or SoR data.
 tags: data integration, ui customization, screen templates, external data, app customization
 locale: en-us
 guid: efe8b43b-19cd-460b-951a-d6af460a1474

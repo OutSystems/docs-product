@@ -283,6 +283,8 @@ exceptions:
   - Firebase Analytics
   - Firebase Crashlytics
   - SSL Pinning plugin
+  - File Transfer plugin
+  - File Viewer plugin
   - OneSignal plugin
   - OpenTelemetry Collector
   - Amazon Bedrock

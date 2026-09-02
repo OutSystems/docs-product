@@ -1,6 +1,13 @@
 ---
 summary: Learn to develop a Reactive Web App using OutSystems 11 (O11) by importing data, creating screens, and implementing logic.
-tags: ide usage, reactive web apps, tutorials for beginners, database integration, ui development, lifecycle management
+tags:
+  - Data Model
+  - Entities
+  - Forms
+  - Logic
+  - Screens
+  - UI
+  - Widgets
 locale: en-us
 guid: 795332a5-e1f3-40c0-886d-75b7bddf48af
 app_type: reactive web apps

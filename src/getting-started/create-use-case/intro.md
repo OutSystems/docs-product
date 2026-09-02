@@ -1,6 +1,10 @@
 ---
 summary: Explore how OutSystems 11 (O11) provides tutorials and accelerators for creating customized apps across various use cases.
-tags: app development, customized apps, personal environment, free trial, development accelerators
+tags:
+  - Employee Directory
+  - External Databases
+  - Mobile app
+  - Order Management
 locale: en-us
 guid: c7315436-17a6-49f5-a395-60b6da7bac46
 app_type: traditional web apps, mobile apps, reactive web apps

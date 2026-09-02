@@ -1,6 +1,8 @@
 ---
 summary: Explore how to integrate your own data into your use-case app in OutSystems 11 (O11) by replacing sample data with external sources.
-tags: data integration, external data sources, data import, user interface development, app customization
+tags:
+  - Data
+  - External Databases
 locale: en-us
 guid: 26564166-8c97-4176-a172-1a16703d86d7
 app_type: traditional web apps, mobile apps, reactive web apps

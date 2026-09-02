@@ -1,6 +1,10 @@
 ---
 summary: Explore app development options in OutSystems 11 (O11) for various platforms, including Reactive Web Apps and Mobile Apps, to suit different project needs.
-tags: app development platforms, cross-platform development, progressive web apps, outsystems development, visual development
+tags:
+  - Cordova
+  - Mobile app
+  - Native App
+  - Traditional Web
 locale: en-us
 guid: 1945689d-cfc3-497f-b313-a8cf051a18d9
 app_type: traditional web apps, mobile apps, reactive web apps

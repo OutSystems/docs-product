@@ -1,6 +1,13 @@
 ---
 summary: Explore essential features and enhancements in OutSystems 11 (O11) for efficient application development and management.
-tags: ide usage, reactive web apps, tutorials for beginners, dark theme configuration, keyboard shortcuts, service studio features, efficiency tips
+tags:
+  - Aggregates
+  - Blocks
+  - Entities
+  - Screens
+  - Themes
+  - UI
+  - Widgets
 locale: en-us
 guid: 0a003300-3e48-41de-8b77-f08d464a9eb4
 app_type: traditional web apps, mobile apps, reactive web apps

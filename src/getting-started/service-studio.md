@@ -1,6 +1,10 @@
 ---
 summary: Explore the capabilities of OutSystems 11 (O11) Service Studio, a low-code visual development environment for creating and managing applications.
-tags: ide usage, reactive web apps, tutorials for beginners, low-code development, application management
+tags:
+  - 1-Click Publish
+  - Debugging
+  - Deploy
+  - Mobile app
 locale: en-us
 guid: 23af05a7-9a06-4b73-ad98-3a9edee4ca0d
 app_type: traditional web apps, mobile apps, reactive web apps

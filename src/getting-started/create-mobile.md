@@ -1,6 +1,13 @@
 ---
 summary: Learn to build and test a mobile app with OutSystems 11 (O11) by importing Excel data into a database.
-tags: data import, excel integration, database operations, mobile app development, testing mobile apps
+tags:
+  - 1-Click Publish
+  - Data Model
+  - Entities
+  - Forms
+  - Logic
+  - Mobile app
+  - Screens
 locale: en-us
 guid: 0ee5a8f6-0c94-4316-818f-49cc25f92283
 app_type: mobile apps

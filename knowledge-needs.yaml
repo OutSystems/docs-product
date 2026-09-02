@@ -17,6 +17,14 @@ knowledge-needs:
       id: client-actions-when-use
     - name: What are server actions/when to use server actions
       id: server-actions-when-use
+    - name: Screen-level actions
+      id: screen-level-actions
+      description: 'Wants to understand the two types of screen-level actions in
+        OutSystems Traditional Web Apps: Preparation actions, which run automatically
+        before a screen renders to fetch data and set variables, and Screen Actions,
+        which run in response to user interactions like clicking a button, so that
+        they can add the right logic to each when building a Traditional Web App
+        screen.'
     - name: Use AI logic suggestions
       id: use-ai-logic-suggestions
       description: Wants to understand what AI logic suggestions are and how to use
@@ -35,6 +43,18 @@ knowledge-needs:
         patterns running entirely within OutSystems infrastructure rather than external
         LLMs, so that they can make informed decisions about data privacy and tool
         selection.
+    - name: Action types overview
+      id: action-types-overview
+      description: Wants to understand the different types of actions available
+        in OutSystems 11 (OutSystems built-in actions, custom actions, and actions
+        that handle system events) and when each applies, so that they can choose
+        the right type of action when designing application logic.
+    - name: Iterate a list
+      id: iterate-a-list
+      description: Wants to loop over each element in a collection using the
+        For Each logic node in OutSystems 11, including setting the Record
+        List, Start Index, and Maximum Iterations properties, so that they
+        can perform logic recursively on each list item.
   - name: Using Events
     id: using-events
     subtopics:
@@ -112,6 +132,14 @@ knowledge-needs:
       id: how-to-create-structures
     - name: What are structures
       id: what-are-structures
+  - name: Logic performance tips
+    id: logic-performance-tips
+    description: Wants to apply best practices for optimizing OutSystems 11 application
+      logic performance — including using Service Center reports to find bottlenecks,
+      limiting timer/batch job run duration with checkpoints, simplifying screen
+      preparations, treating Site Properties as constants, avoiding isolated Aggregates,
+      and avoiding queries inside conditional preparation branches — so that Traditional
+      Web, mobile, and Reactive Web apps run efficiently.
 - name: (Creating Basic) Application Security
   guid: f89b0297-9ba2-48bd-9e84-b56614a7e620
   topics:
@@ -243,6 +271,17 @@ knowledge-needs:
       description: Wants to create an aggregate that joins multiple entities and applies
         filters for a specific input parameter, so that a screen can display related
         records from several data sources in a single query.
+    - name: Master-detail aggregates
+      id: master-detail-aggregates
+      description: Wants to implement a master-detail pattern in a Screen using two
+        Aggregates with different Fetch properties (At start and Only on demand),
+        so that a list loads immediately while detail data loads only when needed.
+    - name: Trigger aggregate refresh
+      id: trigger-aggregate-refresh
+      description: Wants to trigger an on-demand Aggregate to refresh and update
+        the UI asynchronously, by using an Assign node to set a filter parameter
+        followed by a Refresh Data node inside a client action triggered by a UI
+        event, so that the Screen displays updated data without a full page reload.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -387,6 +426,13 @@ knowledge-needs:
         via extensions in OutSystems 11 — including connections from OutSystems
         extensions back to the OutSystems database — so that frequent connections do
         not degrade application performance as load scales up.
+    - name: Optimize data transfer
+      id: optimize-data-transfer
+      description: Wants to understand how OutSystems 11 optimizes server-to-client
+        data transfer for Screen Aggregates, Data Actions, and Server Actions used
+        in client-side Screen Actions logic in Mobile Apps and Reactive Web Apps,
+        so that they know when and why the platform automatically reduces the data
+        sent to the client.
   - name: Indexes
     id: indexes
   - name: Enforcing data integrity
@@ -604,6 +650,51 @@ knowledge-needs:
         calling the execution actions in the CaseServices_API Rules Engine folder
         in OutSystems 11, so that the rule result can be used in a case management
         application's logic.
+    - name: Fix duplicate transition
+      id: fix-duplicate-transition
+      description: 'Wants to fix the "We found more than one record for this
+        transition" error by deactivating the duplicate CaseStateMachine
+        record for a given CaseStatusId and NextCaseStatusId pair using the
+        CaseStateMachine_Update action in OutSystems 11, so that the Case
+        Management Framework can execute CaseStateMachine_GetByTransition
+        successfully.'
+    - name: Fix duplicate access grant
+      id: fix-duplicate-access-grant
+      description: 'Wants to fix the "Access permissions for that Case Definition
+        have already been granted to that user/group" error by verifying the
+        input parameters passed to the Case Management Framework''s access-granting
+        action using Service Studio''s Debugger in OutSystems 11, so that the
+        action isn''t called again for a user/group that already has access to
+        that case definition.'
+    - name: Fix CMF email destination
+      id: fix-cmf-email-destination
+      description: 'Wants to fix the "Set a destination to send the email" error
+        by filling in at least one of the To, Cc, Bcc, ToGroupId, CcGroupId, or
+        BccGroupId inputs before calling Email_Send in the Case Management
+        Framework in OutSystems 11, so that the framework can successfully
+        execute the action.'
+    - name: Fix rule data type
+      id: fix-rule-data-type
+      description: 'Wants to fix the "There was an error processing this rule
+        expression. <data-type> can''t be compared with <data-type>" error by
+        rewriting the rule so its left and right attribute data types are
+        comparable in the Case Management Framework in OutSystems 11, so that
+        the rule executes successfully.'
+    - name: Fix rule output type
+      id: fix-rule-output-type
+      description: 'Wants to fix the "The expected rule output type does not
+        match this rule type" error by updating the RuleTypeId input value to
+        match the configured rule type using the Rule_CreateOrUpdate action in
+        the CaseConfigurations_API module in OutSystems 11, so that the Case
+        Management Framework can successfully execute the rule.'
+    - name: Fix activity action ID
+      id: fix-activity-action-id
+      description: 'Wants to fix the "Unknown activity action. It must match one
+        from ActivityAction." error by verifying the ActivityActionId input
+        value against the ActivityAction static entity in the
+        CM_ProcessServices_BL module using Service Studio''s Debugger before
+        calling Case_PerformActionActivity in the Case Management Framework in
+        OutSystems 11, so that the action executes successfully.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -685,6 +776,29 @@ knowledge-needs:
         for large record flows, and evaluating local web services versus public actions —
         so that the application's reference model stays simple, deployment times are
         minimized, and thread exhaustion is avoided.
+  - name: Session management
+    id: session-management
+    subtopics:
+    - name: Session lifecycle
+      id: session-lifecycle
+      description: Wants to understand how a session is created, maintained, and
+        ended in OutSystems Traditional Web Apps — including differences between
+        Web, Web Service, and Timer sessions — so that they can reason about when
+        session state is available during their application's execution.
+    - name: Configure session timeout
+      id: configure-session-timeout
+      description: Wants to configure how long an idle Traditional Web App session
+        remains active before the Platform Server automatically ends it, by adjusting
+        the session timeout value in the machine.config file, so that end users
+        get a session duration appropriate to their app's needs.
+    - name: Session variables
+      id: session-variables
+      description: Wants to understand how session variables persist data during
+        a Traditional Web App session — including built-in read-only variables like
+        Username and TerminalType, defining custom session variables, their behavior
+        in asynchronous logic and consumer/producer module scenarios, and performance
+        implications of storing large data — so that they can design session state
+        usage correctly for their application.
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
@@ -727,6 +841,12 @@ knowledge-needs:
       id: document-apis
     - name: Develop the logic of web services
       id: webservice-logic-dev
+    - name: Test SOAP with SoapUI
+      id: test-soap-soapui
+      description: 'Wants to test a SOAP web service method built in OutSystems by installing
+        SoapUI, generating a project from the service''s WSDL, submitting a sample request,
+        and inspecting the success/error XML response, so that the method''s behavior can
+        be verified before considering it complete.'
     - name: Troubleshoot webservices
       id: troubleshoot-webservices
   - name: Consume webservices
@@ -798,6 +918,13 @@ knowledge-needs:
         app from development to production in OutSystems 11, including involving the
         IT team, sharing user group names, and having IT add users in the OutSystems
         Users tool, so that the app is ready for end users to access.
+    - name: Update CM dependency
+      id: update-cm-dependency
+      description: Wants to install or update the Case Management framework
+        dependency for a Workflow Builder app in OutSystems 11 by downloading
+        the CMF .osp file from Workflow Builder's settings and publishing it
+        through Service Center, so that Workflow Builder recognizes the app's
+        dependencies as up to date.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -958,6 +1085,18 @@ knowledge-needs:
         Studio — including Position, StartsOpen, Trigger, and ExtendedClass — so
         that they can correctly configure tooltip appearance and behavior in a
         Reactive Web App or Mobile App.
+    - name: Use Columns pattern
+      id: use-columns-pattern
+      description: Wants to add the Columns UI Pattern to a screen and configure
+        its responsive layout properties — including GutterSize, TabletBehavior,
+        and PhoneBehavior — in ODC Studio, so that content is organized into an
+        adaptive multi-column layout across different device types.
+    - name: Use Display on Device
+      id: use-display-on-device
+      description: Wants to add the Display on Device UI pattern to a screen and
+        configure its device-specific content placeholders — OnDesktop, OnTablet,
+        and OnPhone — in ODC Studio, so that different content is displayed on
+        desktop computers, tablets, and phones.
     - name: Display binary image
       id: display-binary-image
       description: Wants to configure an Image widget to display a binary data image
@@ -989,6 +1128,14 @@ knowledge-needs:
         it back to the ActiveTab parameter, in Service Studio for O11 Traditional
         Web Apps, so that users return to the same tab after navigating away and
         back.
+    - name: Prevent tab cache reload
+      id: prevent-tab-cache-reload
+      description: Wants to prevent the browser from showing a cached version of
+        a screen with tabs after a reload or back-navigation, by adding a Cache-Control
+        'NO-STORE' response header via the HttpRequestHandler AddHeader action in
+        the screen's Preparation, in Service Studio for O11 Traditional Web Apps,
+        so that the restored active tab reflects current state instead of a stale
+        cached page.
     - name: Custom validation location
       id: custom-validation-message-location
       description: Wants to display input validation messages in a custom location
@@ -1157,6 +1304,11 @@ knowledge-needs:
         completing the Azure Portal wizard (resource group, credentials, VM size),
         starting the deployed VM, and connecting Service Studio to the new environment,
         so that they have a working OutSystems trial up and running.
+    - name: Missing confirmation email
+      id: missing-confirmation-email
+      description: 'Wants to troubleshoot not receiving the ODC shared space signup
+        confirmation email by checking the spam folder and whitelisting the sender
+        address, so they know when to try signing up again if it''s still missing.'
     - name: Timezone sync requirements
       id: timezone-sync-requirements
       description: Wants to understand why all components of an OutSystems 11 environment

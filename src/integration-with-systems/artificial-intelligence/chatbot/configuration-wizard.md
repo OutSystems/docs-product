@@ -1,6 +1,7 @@
 ---
 summary: Explore the Chatbot Configurator for OutSystems 11 (O11) to easily set up and manage AI chatbots within your OutSystems environment.
-tags: chatbot integration, ai chatbots, user authentication, configuration management, cloud services
+tags:
+  - AI
 locale: en-us
 guid: a812ce9d-d668-4fc8-9d12-aab9f5f111f3
 app_type: traditional web apps, mobile apps, reactive web apps

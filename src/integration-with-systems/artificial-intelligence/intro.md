@@ -5,7 +5,9 @@ guid: bf9332a9-d068-4c72-9de7-704f085a3156
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ai components, machine learning, low-code development, outsystems forge, ai in mobile apps
+tags:
+  - AI
+  - Forge
 audience:
   - Developer
   - Front-end developer

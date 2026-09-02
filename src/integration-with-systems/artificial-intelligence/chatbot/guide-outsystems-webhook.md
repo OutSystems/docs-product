@@ -1,6 +1,10 @@
 ---
 summary: Explore how to create and configure the chatbot webhook module in OutSystems 11 (O11) for enhanced Azure service integration and UI response capabilities.
-tags: chatbots, azure integration, webhooks, bot services, ui design
+tags:
+  - Forge
+  - REST
+  - Site Properties
+  - Web services
 locale: en-us
 guid: 15102520-e5ff-4487-bc3d-14f757ccab88
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,8 @@
 ---
 summary: Integrate Azure Machine Learning with OutSystems 11 (O11) using the Azure ML Connector to enhance real-time predictive analytics capabilities.
-tags: azure machine learning, real-time predictive analytics, api integration, machine learning experiment deployment, azure ml studio
+tags:
+  - AI
+  - Forge
 locale: en-us
 guid: e59aad71-2eea-41aa-ae91-0aa531532cc1
 app_type: traditional web apps, mobile apps, reactive web apps

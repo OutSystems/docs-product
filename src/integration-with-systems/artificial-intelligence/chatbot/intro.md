@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) enables rapid creation of AI-powered chatbots using the OutSystems.AI Chatbot component and Microsoft Azure.
-tags: chatbots, azure bot service, ai integration, forge component, chatbot ui
+tags:
+  - AI
+  - Forge
+  - UI
 locale: en-us
 guid: c9733003-eb20-49b3-93af-47e313315e30
 app_type: traditional web apps, mobile apps, reactive web apps

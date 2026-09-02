@@ -2198,6 +2198,13 @@ knowledge-needs:
         (HTML, CSS, JavaScript) at the reverse proxy level and disable content compression
         at both the platform and application-server level, so that all resource links
         remain valid when an extra path segment is introduced by the reverse proxy.
+    - name: Expose app addresses
+      id: expose-app-addresses
+      description: Wants to configure the reverse proxy to translate their OutSystems
+        application's internal address to its externally exposed address, including
+        referenced content such as RichWidgets and other cross-app references, so
+        that the application and its dependent resources are correctly reachable
+        from the internet.
     - name: Adjust keep-alive timeout
       id: adjust-keep-alive-timeout
       description: Wants to configure the keep-alive connection timeout on an Apache-based

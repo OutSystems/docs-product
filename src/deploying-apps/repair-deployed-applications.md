@@ -14,6 +14,7 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+  - unblock
 ---
 
 # Repair Deployed Applications

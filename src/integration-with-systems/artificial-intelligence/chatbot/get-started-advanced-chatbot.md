@@ -1,5 +1,5 @@
 ---
-summary: Learn how to integrate Azure AI functionalities with OutSystems 11 (O11) for enhanced chatbot interactions and logic processing.
+summary: Advanced chatbot logic in OutSystems 11 (O11) uses the webhook module to combine Azure QnA Maker, LUIS, and Language Analysis for custom replies.
 tags: azure ai, chatbots, webhooks, knowledge base, logic processing
 locale: en-us
 guid: ff14d9bc-d70c-453d-a510-e6ee2e0874d9

@@ -1085,6 +1085,12 @@ knowledge-needs:
         Studio — including Position, StartsOpen, Trigger, and ExtendedClass — so
         that they can correctly configure tooltip appearance and behavior in a
         Reactive Web App or Mobile App.
+    - name: Adaptive UI patterns
+      id: adaptive-ui-patterns
+      description: Wants to understand what adaptive UI patterns are and why to use them,
+        so that they can choose the appropriate pattern to ensure their app
+        displays correctly across different device sizes, resolutions, and
+        aspect ratios, in ODC Studio, for mobile apps and reactive web apps.
     - name: Use Columns pattern
       id: use-columns-pattern
       description: Wants to add the Columns UI Pattern to a screen and configure
@@ -1097,6 +1103,20 @@ knowledge-needs:
         configure its device-specific content placeholders — OnDesktop, OnTablet,
         and OnPhone — in ODC Studio, so that different content is displayed on
         desktop computers, tablets, and phones.
+    - name: Use Gallery pattern
+      id: use-gallery-pattern
+      description: Wants to add the Gallery UI Pattern to a screen and configure
+        its responsive layout properties — including RowItemsDesktop, RowItemsTablet,
+        RowItemsPhone, ItemsGap, and ExtendedClass — in ODC Studio, so that groups
+        of images or content are displayed in a browsable, sequential grid across
+        different device types.
+    - name: Use Floating Content
+      id: use-floating-content
+      description: Wants to add the Floating Content UI Pattern to a screen and
+        configure its properties, including Position, UseFullHeight, UseFullWidth,
+        UseMargin, and ExtendedClass, in ODC Studio, so that content overlays on
+        top of other screen elements like a map, in mobile apps and reactive web
+        apps.
     - name: Display binary image
       id: display-binary-image
       description: Wants to configure an Image widget to display a binary data image
@@ -1104,6 +1124,24 @@ knowledge-needs:
         properties, in an OutSystems 11 Traditional Web App screen, so that profile
         pictures show correctly when available and a placeholder appears when none is
         uploaded.
+    - name: Use User Avatar pattern
+      id: use-user-avatar-pattern
+      description: Wants to add the User Avatar UI Pattern to a screen and configure
+        its properties, including Name, Image, Color, Size, Shape, IsLight, and
+        ExtendedClass, in ODC Studio, so that a circular badge displays a user's
+        initials or image in mobile apps and reactive web apps.
+    - name: Use Align Center pattern
+      id: use-align-center-pattern
+      description: Wants to add the Align Center UI Pattern to a screen and configure
+        its IsHorizontal and ExtendedClass properties, in ODC Studio, so that content
+        is centered horizontally or vertically on the screen, in mobile apps and
+        reactive web apps.
+    - name: Use Inline SVG pattern
+      id: use-inline-svg-pattern
+      description: Wants to add the Inline SVG UI Pattern to a screen and configure
+        its SVGCode and ExtendedClass properties, in ODC Studio, so that they can
+        customize SVG fill and stroke properties and animate SVG paths, in mobile
+        apps and reactive web apps.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -1463,6 +1501,34 @@ knowledge-needs:
     - name: Test app prerequisites
       id: test-app-prerequisites
       description: Wants to know which service action parameters are required — name, type, and data type — for ODC Studio to successfully generate a test app for an agentic app, so that the setup is correct before clicking Test agent.
+    - name: Data source contract
+      id: data-source-contract
+      description: Wants to implement a custom data source REST API following the AI
+        Agent Builder contract, including HTTP parameters, input and output schemas,
+        request/response formats, and error codes, so that a custom retrieval service
+        can be integrated with AI Agent Builder search.
+    - name: Configure CallAgent
+      id: configure-callagent
+      description: Wants to add the CallAgent service action to their app in ODC
+        Studio and configure its AgentId, ChatMessages, and TokenCount parameters,
+        so the app can send requests to an AI agent and receive its response.
+    - name: Agent Builder overview
+      id: ai-agent-builder-overview
+      description: Wants to understand what the AI Agent Builder is, its core
+        terminology (agent, agent template, AI model, data source, instructions),
+        and how information flows between models, data sources, and agents, so
+        they can decide whether it fits their use case before building an agent.
+    - name: Agent Builder access
+      id: ai-agent-builder-access
+      description: Wants to understand the AI Agent Builder homepage and the
+        access it provides to sample apps, the playground, model and data source
+        configurations, and components, so they can navigate the tool and find
+        the right entry point for their task.
+    - name: Agent sample apps
+      id: ai-agent-builder-sample-apps
+      description: Wants to understand the use cases, solutions, and customization options
+        of the AI Agent Builder's sample apps, so they can pick a starting point
+        matching their business scenario.
   - name: Semantic Search
     id: semantic-search
     subtopics:
@@ -1475,6 +1541,13 @@ knowledge-needs:
   - name: Using Cordova Plugins
     id: using-cordova-plugins
     subtopics:
+    - name: Haptics plugin reference
+      id: haptics-plugin-reference
+      description: Wants to look up the Haptics plugin's client actions (CheckHapticsPlugin,
+        Impact, Notification, Vibrate, SelectionStart, SelectionChanged, SelectionEnd),
+        their parameters, related static entities (ImpactStyle, NotificationType), the
+        HapticsError data structure, and error codes, so that they can trigger haptic
+        feedback correctly in an ODC mobile app.
     - name: CocoaPods support
       id: cocoapods-support-outsystems
       description: Wants to understand what CocoaPods support means in OutSystems, including

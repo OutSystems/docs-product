@@ -8,7 +8,6 @@ platform-version: o11
 figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=2318:1868
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - integration builder

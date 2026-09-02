@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 tags: deployment management, configuration, on-premises installations, environment setup, service center
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - service center
 coverage-type:

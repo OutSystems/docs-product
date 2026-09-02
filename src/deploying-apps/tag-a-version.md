@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:3
 audience:
   - Developer
-  - Front-end developer
+  - Platform administrator
 outsystems-tools:
   - lifetime
 coverage-type:

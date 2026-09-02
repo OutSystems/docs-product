@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 tags: refactoring, application modularization, service center usage, business logic isolation, module reusability
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

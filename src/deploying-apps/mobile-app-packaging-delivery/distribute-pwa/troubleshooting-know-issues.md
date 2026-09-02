@@ -14,7 +14,6 @@ outsystems-tools:
   - lifetime
   - platform server
 coverage-type:
-  - remember
   - unblock
 ---
 

@@ -1,6 +1,10 @@
 ---
 summary: Learn how OutSystems 11 (O11) supports over-the-air (OTA) upgrades for mobile apps, allowing updates without store submissions.
-tags: ota upgrades, mobile deployment, app distribution, 1-click publish, precache manifest
+tags:
+  - 1-Click Publish
+  - Deploy
+  - Mobile app
+  - Troubleshooting
 locale: en-us
 guid: BBD8AF1F-9BF0-4162-8619-4DA257F12A72
 app_type: mobile apps

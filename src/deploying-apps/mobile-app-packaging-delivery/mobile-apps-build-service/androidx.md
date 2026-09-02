@@ -1,6 +1,9 @@
 ---
 summary: Explore building mobile apps with AndroidX in OutSystems 11 (O11) using MABS 6.3 to MABS 9.
-tags: androidx, mobile app development, mabs, migration guidance, support libraries
+tags:
+  - Android
+  - Mobile app
+  - Native App
 locale: en-us
 guid: 1544fe43-3dbd-427e-bfd2-69ab0594f2e2
 app_type: mobile apps

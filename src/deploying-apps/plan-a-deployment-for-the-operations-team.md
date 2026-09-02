@@ -1,6 +1,10 @@
 ---
 summary: Explore how OutSystems 11 (O11) facilitates collaborative deployment planning between development and operations teams.
-tags: deployment planning, enterprise security policies, permission model, application lifecycle management, operations collaboration
+tags:
+  - Deploy
+  - Development lifecycle
+  - IT Teams
+  - Quality Assurance
 locale: en-us
 guid: 89d88d9f-f70a-491a-9265-e02c5b93b85a
 app_type: traditional web apps, mobile apps, reactive web apps

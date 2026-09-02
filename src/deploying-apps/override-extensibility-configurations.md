@@ -1,6 +1,10 @@
 ---
 summary: Override default mobile extensibility configurations in specific environments using OutSystems 11 (O11).
-tags: environment configurations, extensibility, mobile app development, configuration management, outsystems deployment
+tags:
+  - Logging
+  - Mobile app
+  - Plugins
+  - Settings
 locale: en-us
 guid: 09207082-720b-48a1-980b-e8937925e461
 app_type: mobile apps

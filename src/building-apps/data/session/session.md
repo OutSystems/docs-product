@@ -14,6 +14,10 @@ outsystems-tools:
   - platform server
 coverage-type:
   - understand
+topic:
+  - configure-session-timeout
+  - session-lifecycle
+  - session-variables
 ---
 
 # Sessions in Traditional Web apps

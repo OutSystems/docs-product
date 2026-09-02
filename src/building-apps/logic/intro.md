@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - action-types-overview
+  - server-vs-client-logic
 ---
 
 # Application Logic

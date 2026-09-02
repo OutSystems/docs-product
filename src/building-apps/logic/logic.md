@@ -14,6 +14,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - evaluate
+topic:
+  - logic-performance-tips
 ---
 
 # Best practices for logic performance optimization

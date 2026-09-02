@@ -13,6 +13,8 @@ audience:
   - Front-end developer
 outsystems-tools:
   - platform server
+topic:
+  - optimize-data-transfer
 ---
 # Server-to-client data transfer optimization
 

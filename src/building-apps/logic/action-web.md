@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - screen-level-actions
+  - server-actions-when-use
 ---
 
 # Actions in Web Applications

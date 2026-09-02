@@ -13,6 +13,9 @@ audience:
   - Front-end developer
 outsystems-tools:
   - none
+topic:
+  - master-detail-aggregates
+  - trigger-aggregate-refresh
 ---
 # Implement asynchronous data fetching using Aggregates
 

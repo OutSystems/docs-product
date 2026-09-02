@@ -13,6 +13,8 @@ outsystems-tools:
   - workflow builder
   - service center
   - case management framework
+topic:
+  - update-cm-dependency
 coverage-type:
   - apply
 ---

@@ -12,6 +12,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - dynamic-sql-correctly
 ---
 
 # Avoid expand inline parameters for dynamic values

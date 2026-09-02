@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) allows configuring accessible domains for mobile apps to enhance security through allowlists.
-tags: security, configuration, extensibility, app deployment, access control
+tags:
+  - Cordova
+  - Domains
+  - iOS
+  - Mobile app
+  - Native App
+  - Security
 locale: en-us
 guid: 0b12a757-5043-40ae-ac5f-4f009d2d5c5c
 app_type: mobile apps

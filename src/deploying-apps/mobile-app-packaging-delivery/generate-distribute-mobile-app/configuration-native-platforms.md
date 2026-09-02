@@ -1,6 +1,9 @@
 ---
 summary: Explore mobile app configuration and management options for iOS and Android in OutSystems 11 (O11) via the Service Center's Native Platforms section.
-tags: native mobile configuration, ios configuration, android configuration, mobile build and deployment, mobile app distribution
+tags:
+  - Android
+  - iOS
+  - Mobile app
 locale: en-us
 guid: 1ad36b43-1e0e-4efb-a701-651bf0b97e06
 app_type: mobile apps

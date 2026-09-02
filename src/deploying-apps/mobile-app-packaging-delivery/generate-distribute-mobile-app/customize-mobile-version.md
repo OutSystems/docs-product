@@ -15,7 +15,9 @@ platform-version: o11
 audience: 
   - Tech lead
   - Developer
-tags: mobile app version code, app store submission, migrate mobile apps, outsystems service center, app distribution settings
+tags:
+  - Mobile app
+  - Native App
 outsystems-tools:
   - service center
 helpids:

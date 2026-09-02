@@ -1,6 +1,8 @@
 ---
 summary: This article provides a detailed guide on publishing your mobile Android application developed with OutSystems 11 (O11) to the Google Play Store.
-tags: android app publishing, google play store, pre-requirements for android app, release build, developer account
+tags:
+  - Android
+  - Mobile app
 locale: en-us
 guid: 49613761-0f66-4d87-b41a-bf600081e654
 app_type: mobile apps

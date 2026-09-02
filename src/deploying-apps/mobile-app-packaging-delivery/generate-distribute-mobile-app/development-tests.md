@@ -1,6 +1,11 @@
 ---
 summary: Learn how to generate and distribute mobile app packages for development testing using OutSystems 11 (O11).
-tags: ios development, mobile app distribution, mobile app testing, ios provisioning, apple developer tools
+tags:
+  - Android
+  - iOS
+  - Mobile app
+  - Native App
+  - Testing
 locale: en-us
 guid: 8d9cef20-3f8a-440f-b229-bc8b3ced3e51
 app_type: mobile apps

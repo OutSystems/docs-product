@@ -5,7 +5,10 @@ guid: 3d02e722-3225-47fa-b343-d6188e21d174
 app_type: mobile apps
 platform-version: o11
 figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=310:25
-tags: ios publishing, app store deployment, mobile application distribution, application lifecyle management, compliance
+tags:
+  - iOS
+  - Mobile app
+  - Native App
 audience:
   - Developer
 outsystems-tools:

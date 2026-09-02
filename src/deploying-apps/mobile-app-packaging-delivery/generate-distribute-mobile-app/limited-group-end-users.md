@@ -1,6 +1,9 @@
 ---
 summary: Learn how to generate and distribute your mobile app to a limited group of end users using OutSystems 11 (O11).
-tags: mobile app deployment, mobile app distribution, ios app distribution, apple developer, provisioning profile
+tags:
+  - Android
+  - iOS
+  - Mobile app
 locale: en-us
 guid: bc8c19e3-512c-4be4-b900-f8f5c1880832
 app_type: mobile apps

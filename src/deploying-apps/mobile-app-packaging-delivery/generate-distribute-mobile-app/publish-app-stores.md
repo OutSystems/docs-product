@@ -1,6 +1,9 @@
 ---
 summary: Learn how to generate and publish your mobile app to app stores using OutSystems 11 (O11).
-tags: mobile publishing, app stores distribution, mobile app metadata, application screenshots, mobile app versioning
+tags:
+  - Android
+  - iOS
+  - Mobile app
 locale: en-us
 guid: f33d65af-6f6e-4425-9db3-7c8a206a71c3
 app_type: mobile apps

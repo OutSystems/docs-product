@@ -148,6 +148,13 @@ knowledge-needs:
         fetch data via data fetch calls, using the On After Fetch event for dependent
         fetches, so that data fetching runs in parallel with screen rendering instead
         of being fully serialized.
+    - name: StringBuilder for large strings
+      id: stringbuilder-large-strings
+      description: Wants to concatenate many strings, or a few large strings, into
+        one large string efficiently in OutSystems 11, using the StringBuilder API
+        from the Text Extension (StringBuilder_Append) instead of plain string concatenation,
+        so that operations that build large outputs, such as serializing large record
+        sets, avoid severe performance degradation.
 - name: (Creating Basic) Application Security
   guid: f89b0297-9ba2-48bd-9e84-b56614a7e620
   topics:
@@ -952,6 +959,13 @@ knowledge-needs:
       id: how-to-send-emails
     - name: How to create emails
       id: how-to-create-emails
+    - name: Email link variable
+      id: email-link-variable
+      description: Wants to generate a direct link to a specific record by building
+        the URL with GetEntryURL in the email's Preparation action and passing it
+        as an input parameter, in Service Studio for O11 Traditional Web Apps, so
+        that clicking the link in the email takes the user straight to that record's
+        page instead of a generic landing page.
   - name: BPT
     id: bpt
     subtopics:
@@ -1192,6 +1206,14 @@ knowledge-needs:
         RowItemsPhone, ItemsGap, and ExtendedClass — in ODC Studio, so that groups
         of images or content are displayed in a browsable, sequential grid across
         different device types.
+    - name: Use Gallery pattern (O11)
+      id: use-gallery-pattern-o11
+      description: Wants to add the Gallery UI Pattern to a screen and configure
+        its responsive layout properties — including RowItemsDesktop, RowItemsTablet,
+        RowItemsPhone, ItemsGap, and ExtendedClass — in Service Studio for
+        OutSystems 11, so that groups of images or content are displayed in a
+        browsable, sequential grid across different device types, in mobile
+        apps and reactive web apps.
     - name: Use Floating Content
       id: use-floating-content
       description: Wants to add the Floating Content UI Pattern to a screen and
@@ -2070,6 +2092,16 @@ knowledge-needs:
     subtopics:
     - name: Built-in Authentication
       id: built-in-authentication
+    - name: Extend login validation
+      id: extend-login-validation
+      description: Wants to add custom server-side validation to the built-in
+        end-user login flow by extending the Users data model with a 1-to-1
+        related entity, creating a server action that validates the extra data,
+        and wiring that action into the Login/DoLogin flow, in OutSystems 11
+        Traditional Web, Reactive Web, and Mobile apps, so that additional
+        business rules (for example, account expiration or external-system
+        checks) can block or allow login beyond the default username/password
+        check.
     - name: Custom auth screens
       id: custom-auth-screens
       description: Wants to use and edit the pre-built authentication screens and

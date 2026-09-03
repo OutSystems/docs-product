@@ -551,6 +551,13 @@ knowledge-needs:
         of an OSIgnore-decorated struct property/field to public in their C#
         external library project, so that they can successfully publish the
         external library.'
+    - name: Fix OSInterface duplicate
+      id: fix-osinterface-duplicate
+      description: 'Wants to fix the OS-ELG-MODL-05008 error ("The interface
+        decorated with OSInterface ... is implemented by multiple classes") by
+        ensuring only one class implements the OSInterface-decorated interface
+        in their C# external library project, so that they can successfully
+        publish the external library.'
     - name: Parse XML XPath
       id: parse-xml-xpath
       description: Wants to extract filtered data from an XML file using XPath expressions
@@ -1261,12 +1268,24 @@ knowledge-needs:
         Studio — including Position, StartsOpen, Trigger, and ExtendedClass — so
         that they can correctly configure tooltip appearance and behavior in a
         Reactive Web App or Mobile App.
+    - name: Icon Badge reference
+      id: icon-badge-reference
+      description: Wants to look up the properties of the Icon Badge UI Pattern
+        in Service Studio, including Number, Color, IsLight, and ExtendedClass,
+        so that they can correctly configure a numerical notification badge in
+        a Mobile App or Reactive Web App for OutSystems 11.
     - name: Adaptive UI patterns
       id: adaptive-ui-patterns
       description: Wants to understand what adaptive UI patterns are and why to use them,
         so that they can choose the appropriate pattern to ensure their app
         displays correctly across different device sizes, resolutions, and
         aspect ratios, in ODC Studio, for mobile apps and reactive web apps.
+    - name: Number patterns overview
+      id: number-patterns-overview
+      description: Wants to know which number-based UI pattern to use for displaying
+        numerical data, so that they can choose the appropriate pattern for
+        showing counts, percentages, ratings, or progress in a Mobile App or
+        Reactive Web App for OutSystems 11.
     - name: Use Columns pattern
       id: use-columns-pattern
       description: Wants to add the Columns UI Pattern to a screen and configure
@@ -1307,6 +1326,14 @@ knowledge-needs:
         UseMargin, and ExtendedClass, in ODC Studio, so that content overlays on
         top of other screen elements like a map, in mobile apps and reactive web
         apps.
+    - name: Use Center Content
+      id: use-center-content
+      description: Wants to add the Center Content UI Pattern to a screen and
+        configure its Top, Center, and Bottom placeholders, including adding the
+        widget via Toolbox or Search in other modules if the dependency isn't
+        added, and setting the ExtendedClass property, in Service Studio for
+        OutSystems 11, so that content is vertically centered within its
+        container, in mobile apps and reactive web apps.
     - name: Display binary image
       id: display-binary-image
       description: Wants to configure an Image widget to display a binary data image
@@ -1326,6 +1353,12 @@ knowledge-needs:
         its IsHorizontal and ExtendedClass properties, in ODC Studio, so that content
         is centered horizontally or vertically on the screen, in mobile apps and
         reactive web apps.
+    - name: Use Align Center pattern (O11)
+      id: use-align-center-pattern-o11
+      description: Wants to add the Align Center UI Pattern to a screen and configure
+        its IsHorizontal and ExtendedClass properties, in Service Studio for
+        OutSystems 11, so that content is centered horizontally or vertically on
+        the screen, in mobile apps and reactive web apps.
     - name: Use Inline SVG pattern
       id: use-inline-svg-pattern
       description: Wants to add the Inline SVG UI Pattern to a screen and configure
@@ -1372,6 +1405,75 @@ knowledge-needs:
         Studio for OutSystems 11, so that end users get an error message when no
         file is selected, an empty file is chosen, or the file type doesn't
         match what's expected, in Traditional Web Apps and Reactive Web Apps.
+    - name: Use Pagination pattern
+      id: use-pagination-pattern
+      description: 'Wants to add the Pagination UI Pattern to a screen and configure
+        its StartIndex, MaxRecords, TotalCount, ShowGoToPage, and ExtendedClass
+        properties, in Service Studio for OutSystems 11, so that users can
+        navigate through long listings such as e-commerce category pages, search
+        engines, and article archives, in mobile apps and reactive web apps.'
+    - name: Use Section Index pattern
+      id: use-section-index-pattern
+      description: Wants to add the Section Index UI Pattern to a screen, including
+        adding Section Index Items and Section widgets, entering titles and content,
+        and linking each Section Index Item to its Section via the ScrollToWidgetId
+        property, in Service Studio for OutSystems 11, so that users can quickly
+        navigate to different content sections within a page, in mobile apps and
+        reactive web apps.
+    - name: Section Index reference
+      id: section-index-reference
+      description: Wants to look up the properties of the Section Index and Section
+        Index Item widgets in Service Studio, including SmoothScrolling, IsFixed,
+        ScrollToWidgetId, and ExtendedClass, so that they can correctly configure
+        the pattern's scrolling behavior and appearance, in OutSystems 11 mobile
+        apps and reactive web apps.
+    - name: Use Timeline Item pattern
+      id: use-timeline-item-pattern
+      description: Wants to add the Timeline Item UI Pattern to a screen and configure
+        its IsActive, Color, and ExtendedClass properties, in Service Studio for
+        OutSystems 11, so that related events display in chronological order, in
+        mobile apps and reactive web apps.
+    - name: Use Progress Bar pattern
+      id: use-progress-bar-pattern
+      description: Wants to add the Progress Bar UI Pattern to a screen and configure
+        its Progress property using a local variable and increment button, in
+        Service Studio for OutSystems 11, so that they can display percentage
+        values and show the current progress of a task flow, in mobile apps and
+        reactive web apps.
+    - name: Progress Bar reference
+      id: progress-bar-reference
+      description: Wants to look up the properties of the Progress Bar UI Pattern
+        in Service Studio, including Progress, ProgressColor, TrailColor, Thickness,
+        and OptionalConfigs (Shape, AnimateInitialProgress), so that they can
+        correctly configure a progress bar's appearance and behavior in OutSystems
+        11 mobile apps and reactive web apps.
+    - name: Use Rating pattern
+      id: use-rating-pattern
+      description: Wants to add the Rating UI Pattern to a screen and configure its
+        RatingValue property, in Service Studio for OutSystems 11, so that users
+        can rate items such as products or services on a customizable icon
+        scale, in mobile apps and reactive web apps.
+    - name: Rating pattern reference
+      id: rating-pattern-reference
+      description: Wants to look up the properties and events of the Rating UI
+        Pattern in Service Studio, including RatingScale, IsEdit, Size,
+        ExtendedClass, and OnSelect, so that they can correctly configure a
+        rating pattern's scale, editability, and appearance in OutSystems 11
+        mobile apps and reactive web apps.
+    - name: Use Button Loading pattern
+      id: use-button-loading-pattern
+      description: Wants to add the Button Loading UI Pattern to a screen and
+        configure its IsLoading property using a Boolean local variable, in
+        Service Studio for OutSystems 11, so that a button shows a loading
+        spinner and is disabled from being clicked while a non-immediate
+        action is executing, in mobile apps and reactive web apps.
+    - name: Button Loading reference
+      id: button-loading-reference
+      description: Wants to look up the properties of the Button Loading UI
+        Pattern in Service Studio, including IsLoading, ShowLabelOnLoading,
+        and ExtendedClass, so that they can correctly configure a button's
+        loading spinner behavior and appearance in OutSystems 11 mobile apps
+        and reactive web apps.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -2195,6 +2297,22 @@ knowledge-needs:
         the mobile compilation and escalating to OutSystems Support if the
         problem persists, so that the native mobile build completes
         successfully.'
+    - name: Template package error
+      id: template-package-error
+      description: 'Wants to resolve the OS-MCO-50016 "The template NPM
+        package is invalid. If the problem persists, open a support case."
+        error, by retrying the mobile compilation and escalating to
+        OutSystems Support if the problem persists, so that the native
+        mobile build completes successfully.'
+    - name: Config XML error
+      id: config-xml-error
+      description: 'Wants to resolve the OS-MCO-50017 "An error occurred
+        while modifying the config.xml. If the problem persists, open a
+        support case." error, by removing invalid XML characters from the
+        extensibility configurations of the mobile app or its libraries,
+        retrying the mobile compilation, and escalating to OutSystems
+        Support if the problem persists, so that the native mobile build
+        completes successfully.'
   - name: AppShield
     id: appshield
     subtopics:

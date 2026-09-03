@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) enhances SOAP web service integration by allowing t
 tags: soap web service, wsdl, xml, service integration, web service definition
 audience:
   - Developer
-  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

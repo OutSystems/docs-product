@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) facilitates integration with external databases, allowing data utilization within applications through a streamlined import process.
+summary: Entity import from an external database in OutSystems 11 (O11) relies on the Connect to External Table or View wizard in Integration Studio.
 locale: en-us
 guid: 272cf76e-1e15-4cd0-8fc8-ea8107d9a8fe
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,10 @@
 ---
 summary: Explore REST API logging and troubleshooting features in OutSystems 11 (O11).
-tags: rest api, logging, troubleshooting, service center, integrations
+tags:
+  - Logging
+  - Monitoring
+  - REST
+  - Troubleshooting
 locale: en-us
 guid: 60a9bcc9-9841-40ba-b6be-95dc14831c47
 app_type: traditional web apps, mobile apps, reactive web apps

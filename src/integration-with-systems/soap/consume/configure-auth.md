@@ -1,6 +1,10 @@
 ---
 summary: Explore how to configure web service authentication in OutSystems 11 (O11) for SOAP services, including basic, dynamic, and certificate-based methods.
-tags: web service authentication, soap services, security, configuration management, authentication methods
+tags:
+  - Authentication
+  - Security
+  - SOAP
+  - Web services
 locale: en-us
 guid: 5ea726ad-7fb5-476b-ac3a-7c808b0692ef
 app_type: traditional web apps, mobile apps, reactive web apps

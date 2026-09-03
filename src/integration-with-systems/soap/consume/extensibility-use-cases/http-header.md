@@ -5,7 +5,12 @@ guid: 2f16774f-ec28-4597-9b56-c19599cb233e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A24&mode=design&t=8a1ub9syb4QKHbuk-1
-tags: soap web services, http headers, outsystems integration, c# programming, wcf implementation
+tags:
+  - .NET
+  - C#
+  - Extensions
+  - SOAP
+  - Web services
 audience:
   - Developer
 outsystems-tools:

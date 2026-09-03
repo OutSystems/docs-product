@@ -5,7 +5,10 @@ guid: 8f587c50-8581-49eb-a959-fb72411a00de
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: web service configuration, soap web service, service center, environment configuration, endpoint customization
+tags:
+  - Settings
+  - SOAP
+  - Web services
 audience:
   - Developer
   - Platform administrator

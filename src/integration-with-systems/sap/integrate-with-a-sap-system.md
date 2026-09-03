@@ -1,5 +1,9 @@
 ---
-tags: sap integration, data fetching, data updating, web services, enterprise integration
+tags:
+  - Authentication
+  - External Authentication
+  - Traditional Web
+  - Web services
 locale: en-us
 helpids: 30084
 guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb

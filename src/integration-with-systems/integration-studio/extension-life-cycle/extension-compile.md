@@ -8,7 +8,6 @@ figma:
 tags: ide usage, reactive web apps, tutorials for beginners, .net development, dll generation
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
   - service studio

@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) enables the creation of extensions through Integrat
 tags: ide usage, reactive web apps, tutorials for beginners, extension development, third-party integration
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - service studio

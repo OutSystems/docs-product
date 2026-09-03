@@ -8,7 +8,6 @@ figma:
 tags: ide usage, reactive web apps, tutorials for beginners, extensions, database model, module references
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

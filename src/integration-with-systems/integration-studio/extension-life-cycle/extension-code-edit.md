@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) enables direct editing of extension source code in 
 tags: ide usage, extension development, .net integration, source code synchronization, outsystems platform
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

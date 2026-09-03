@@ -8,8 +8,6 @@ summary: OutSystems 11 (O11) includes a Verify operation to ensure extensions ar
 tags: extensions, platform server, dynamic link library (dll), verification process, integration studio
 audience:
   - Developer
-  - Front-end developer
-  - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:

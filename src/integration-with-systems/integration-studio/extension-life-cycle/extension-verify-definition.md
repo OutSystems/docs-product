@@ -8,7 +8,6 @@ summary: Learn how to ensure your extension is error-free using the Verify the E
 tags: error handling, extension validation, outsystems ide, outsystems platform, version control
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

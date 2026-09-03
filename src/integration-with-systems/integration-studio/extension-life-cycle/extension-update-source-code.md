@@ -8,7 +8,6 @@ summary: Learn how to synchronize and update extension source code in OutSystems
 tags: ide usage, extension development, source code management, outsystems, .net development
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

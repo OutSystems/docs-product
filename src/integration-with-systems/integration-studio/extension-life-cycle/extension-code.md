@@ -8,7 +8,6 @@ figma:
 tags: extension development, .net ide, integration studio, application development, outsystems 11
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

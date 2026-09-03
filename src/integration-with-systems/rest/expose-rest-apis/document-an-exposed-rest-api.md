@@ -1,6 +1,8 @@
 ---
 summary: Learn how OutSystems 11 (O11) simplifies REST API documentation by automatically generating it upon module publication.
-tags: rest api, documentation automation, api integration, swagger documentation, service studio
+tags:
+  - REST
+  - Web services
 locale: en-us
 guid: b125017d-f037-4a5f-bba4-cdc563e0a4bf
 app_type: traditional web apps, mobile apps, reactive web apps

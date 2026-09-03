@@ -1,6 +1,10 @@
 ---
 summary: Learn a development pattern for consuming REST APIs that use JWT-based token authentication in OutSystems 11 (O11).
-tags: jwt,token-based authentication,access token,rest api,api authentication
+tags:
+  - Authentication
+  - OAuth
+  - REST
+  - Security
 locale: en-us
 guid: e475d7de-23dc-40ff-9308-0c64c3ae6c87
 app_type: traditional web apps,mobile apps,reactive web apps

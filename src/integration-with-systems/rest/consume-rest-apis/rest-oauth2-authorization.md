@@ -1,6 +1,11 @@
 ---
 summary: Explore OAuth 2.0 client flow authorization for REST API web services in OutSystems 11 (O11).
-tags: oauth 2.0, rest api, security, authorization, api integration
+tags:
+  - Authorization
+  - OAuth
+  - REST
+  - Security
+  - Web services
 locale: en-us
 guid: beb761a2-ef08-44e6-aa0c-ee11bada5baa
 app_type: traditional web apps, mobile apps, reactive web apps

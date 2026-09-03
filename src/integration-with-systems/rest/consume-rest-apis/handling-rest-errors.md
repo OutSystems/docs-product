@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) provides methods to handle and manipulate REST API errors, including using exception handlers and callbacks.
-tags: error handling, rest apis, exception handling, api integration, callbacks
+tags:
+  - REST
+  - Web services
 locale: en-us
 guid: 5a815098-ae36-4134-91ac-761a1087c31f
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,8 @@
 ---
 summary: Explore payload request examples for consuming a single REST method in OutSystems 11 (O11).
-tags: rest apis, api consumption, json payload, service studio features, integration techniques
+tags:
+  - REST
+  - Web services
 locale: en-us
 guid: E7A21ACC-EC04-4FB8-A3CC-D121EF8A9963
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,7 @@
 ---
 summary: OutSystems 11 (O11) allows for custom error handling in exposed REST APIs, enhancing client communication during errors.
-tags: error handling, rest api, http status codes, exception management, database transactions
+tags:
+  - REST
 locale: en-us
 guid: b8d6dc5c-a55e-4cf2-8215-127ab53ce0db
 app_type: traditional web apps, mobile apps, reactive web apps

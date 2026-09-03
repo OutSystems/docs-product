@@ -1,6 +1,8 @@
 ---
 summary: Learn how OutSystems 11 (O11) automatically creates and manages REST API Structures for efficient data handling and reuse.
-tags: api integration, data mapping, efficiency, application development, rest services
+tags:
+  - Data Model
+  - REST
 locale: en-us
 guid: 3bd954b8-a2db-4065-bac1-a7068aa6f538
 app_type: traditional web apps, mobile apps, reactive web apps

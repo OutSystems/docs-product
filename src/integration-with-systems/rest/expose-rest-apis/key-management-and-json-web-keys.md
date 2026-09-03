@@ -1,6 +1,10 @@
 ---
 summary: Learn how to design and manage JWT signing keys and JSON Web Keys (JWK) for securing exposed REST APIs in OutSystems 11 (O11).
-tags: rest apis,security,authentication,jwt,jwk,key management
+tags:
+  - Authentication
+  - Forge
+  - REST
+  - Security
 locale: en-us
 guid: 4e6f3a4a-9c3d-4f1e-9a6e-2b7b8e7d9c21
 app_type: traditional web apps,mobile apps,reactive web apps

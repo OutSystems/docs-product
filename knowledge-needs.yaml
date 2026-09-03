@@ -140,6 +140,14 @@ knowledge-needs:
       preparations, treating Site Properties as constants, avoiding isolated Aggregates,
       and avoiding queries inside conditional preparation branches — so that Traditional
       Web, mobile, and Reactive Web apps run efficiently.
+    subtopics:
+    - name: Client event fetch
+      id: client-event-fetch
+      description: Wants to avoid performing local data fetch inside client events
+        (On Initialize, On Ready, On Render) in OutSystems mobile apps, and instead
+        fetch data via data fetch calls, using the On After Fetch event for dependent
+        fetches, so that data fetching runs in parallel with screen rendering instead
+        of being fully serialized.
 - name: (Creating Basic) Application Security
   guid: f89b0297-9ba2-48bd-9e84-b56614a7e620
   topics:
@@ -760,12 +768,35 @@ knowledge-needs:
   topics:
   - name: Refactoring
     id: refactoring
+    subtopics:
+    - name: Convert to library
+      id: convert-to-library
+      description: Wants to convert an existing Mobile or Reactive module to a
+        Library module in OutSystems 11, including resolving disallowed elements
+        and TrueChange errors before conversion, so that the module publishes
+        successfully as a Library.
   - name: Validating your application architecture
     id: validate-app-architecture
   - name: Architecture Canvas
     id: architecture-canvas
   - name: Application composition
     id: application-composition
+    subtopics:
+    - name: Library module overview
+      id: library-module-overview
+      description: Wants to understand what a Library module is in OutSystems 11, including
+        its stateless, database-agnostic design principles, typical use cases
+        such as UI/style guides and reusable connectors or logic utilities,
+        which Service Studio elements are available or restricted in a Library,
+        and what reference restrictions apply to it, so that they can decide
+        when and how to use Libraries in their application architecture.
+    - name: Create a Library module
+      id: create-library-module
+      description: Wants to create a new Library module in Service Studio, by
+        creating a Mobile or Reactive Web app (or adding a module to an existing
+        one) and choosing Library as the module type, and knows to set the entry
+        module to a consuming module when debugging it, so that they have a
+        working Library ready to hold reusable stateless components.
   - name: Core module patterns
     id: core-module-patterns
     subtopics:
@@ -795,6 +826,13 @@ knowledge-needs:
         for large record flows, and evaluating local web services versus public actions —
         so that the application's reference model stays simple, deployment times are
         minimized, and thread exhaustion is avoided.
+    - name: Encapsulate REST APIs
+      id: encapsulate-rest-apis
+      description: Wants to understand why and how to encapsulate REST API consumption
+        inside an ODC library, exposing server actions and public structures instead of
+        consuming REST methods directly in the app, so that changes to the REST interface
+        only need to be updated once and breaking changes can be managed through library
+        versioning.
   - name: Session management
     id: session-management
     subtopics:
@@ -923,6 +961,18 @@ knowledge-needs:
       id: async-processes-basics
     - name: Triggering processes, process flows
       id: trigger-processes
+    - name: Design process flow
+      id: design-process-flow
+      description: Wants to design the behavior of a process using the Process
+        Flow editor after creating a process, selecting tools from the Process
+        Flow Toolbox to be executed in the flow, so that the process's logic is
+        defined.
+    - name: Process upgrade impact
+      id: process-upgrade-activity-impact
+      description: Wants to understand how moving activities in a process flow
+        affects executing process instances after publishing, in OutSystems 11,
+        so that they can predict which instances get suspended and know to
+        review them in Service Center.
     - name: BPMN notation
       id: bpmn-notation
     - name: Patterns for processes (automatic, human, decision)
@@ -1123,6 +1173,12 @@ knowledge-needs:
         its responsive layout properties — including GutterSize, TabletBehavior,
         and PhoneBehavior — in ODC Studio, so that content is organized into an
         adaptive multi-column layout across different device types.
+    - name: Use Columns pattern (O11)
+      id: use-columns-pattern-o11
+      description: Wants to add the Columns UI Pattern to a screen and configure its
+        responsive layout properties, in Service Studio for OutSystems 11, so
+        that content is organized into an adaptive multi-column layout across
+        different device types, in mobile apps and reactive web apps.
     - name: Use Display on Device
       id: use-display-on-device
       description: Wants to add the Display on Device UI pattern to a screen and
@@ -1168,11 +1224,53 @@ knowledge-needs:
         its SVGCode and ExtendedClass properties, in ODC Studio, so that they can
         customize SVG fill and stroke properties and animate SVG paths, in mobile
         apps and reactive web apps.
+    - name: Use Date Picker Range
+      id: use-date-picker-range
+      description: Wants to add the Date Picker Range UI Pattern to a screen and configure
+        its properties, in Service Studio for OutSystems 11, so that users can
+        select a date range from a calendar, in mobile apps and reactive web
+        apps.
+    - name: Use Dropdown Search
+      id: use-dropdown-search
+      description: Wants to add the Dropdown Search UI Pattern to a screen and configure
+        its properties, in Service Studio for OutSystems 11, so that users can
+        select an option from a searchable dropdown list, in mobile apps and
+        reactive web apps.
+    - name: Use Bottom Bar Item
+      id: use-bottom-bar-item
+      description: Wants to add the Bottom Bar Item UI Pattern to a screen and
+        configure its Icon and Text placeholders across up to four items,
+        including a floating action button, in Service Studio for OutSystems
+        11, so that users can access a bottom navigation drawer and quickly
+        switch between core app features, in mobile apps and reactive web
+        apps.
+    - name: Use Overflow Menu pattern
+      id: use-overflow-menu-pattern
+      description: Wants to add the Overflow Menu UI Pattern to a screen and configure its
+        properties, in Service Studio for OutSystems 11, so that additional
+        options are shown for a row or element when there's a space constraint
+        on the UI, in mobile apps and reactive web apps.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
     - name: Navigating between screens
       id: navigate-screens
+    - name: Override back navigation
+      id: override-back-navigation
+      description: Wants to override the default back-navigation behavior by
+        registering and unregistering a custom back handler callback via
+        $public.Navigation's registerBackNavigationHandler and
+        unregisterBackNavigationHandler JavaScript API functions, in ODC mobile
+        apps and reactive web apps, so that pressing the device back button (for
+        example, Android) triggers custom logic instead of navigating to the
+        previous screen.
+    - name: Intercept navigation events
+      id: intercept-navigation-events
+      description: Wants to intercept and conditionally cancel in-app navigation
+        events by registering a synchronous callback via $public.Navigation's
+        registerNavigationHandler JavaScript API, in ODC mobile apps and reactive
+        web apps, so that navigation only proceeds when custom business logic
+        approves it.
     - name: Changing data with UI
       id: changing-data-with-ui
     - name: UI interactions in apps
@@ -1208,6 +1306,35 @@ knowledge-needs:
         for O11 Traditional Web Apps and Mobile Apps, so that validation feedback
         appears where business or design requirements demand rather than next to
         the default input position.
+    - name: Show feedback message
+      id: show-feedback-message
+      description: Wants to display and manage feedback messages in an ODC app using the
+        FeedbackMessage JavaScript API's showFeedbackMessage and
+        closeFeedbackMessage functions, including configuring the message's
+        type, styling, and dismissal behavior, in ODC Studio, so that they can
+        show styled, auto-dismissing or persistent feedback messages to users in
+        Mobile Apps and Reactive Web Apps.
+    - name: Identify current screen
+      id: identify-current-screen
+      description: Wants to identify the currently running application and screen
+        (application key/name, screen key/name, ready state) at runtime, by calling
+        the ApplicationContext.getCurrentContext() JavaScript API, in ODC Mobile
+        Apps and Reactive Web Apps, so that client-side logic can behave contextually
+        based on the active screen or app.
+    - name: Handle app load status
+      id: handle-app-load-status
+      description: Wants to detect whether the app is currently being upgraded and
+        react to application load events (upgrade progress and load completion), by
+        using the ApplicationLifecycle JavaScript API's isUpgradingVersion and
+        listen functions, in ODC Mobile Apps and Reactive Web Apps, so that they can
+        customize the loading or splash screen experience shown during app
+        initialization and upgrades.
+    - name: Discover JS API modules
+      id: discover-js-api-modules
+      description: Wants to discover which JavaScript API modules ODC provides and call
+        them through the $public object, in ODC Studio, so that custom app
+        behavior can be built in JavaScript for mobile apps and reactive web
+        apps.
   - name: Securing UI
     id: securing-ui
     subtopics:
@@ -1574,6 +1701,13 @@ knowledge-needs:
         their parameters, related static entities (ImpactStyle, NotificationType), the
         HapticsError data structure, and error codes, so that they can trigger haptic
         feedback correctly in an ODC mobile app.
+    - name: Trigger haptic feedback
+      id: trigger-haptic-feedback
+      description: Wants to add logic in ODC Studio to trigger haptic feedback (impact,
+        notification, vibration, or selection hints) in a mobile app using the Haptics
+        plugin's client actions, including checking the plugin's availability beforehand
+        and handling the Success and Error output parameters, so that app users receive
+        physical touch or vibration feedback during interactions.
     - name: CocoaPods support
       id: cocoapods-support-outsystems
       description: Wants to understand what CocoaPods support means in OutSystems, including
@@ -1694,6 +1828,14 @@ knowledge-needs:
   - name: Customize Mobile apps
     id: customize-mobile-apps
     subtopics:
+    - name: Detect device ready
+      id: detect-device-ready
+      description: Wants to wait until Cordova's native device APIs are fully
+        loaded before running device-specific logic, by binding to the
+        whenReady() JavaScript API promise instead of the deviceready DOM
+        event, in ODC Mobile Apps, so that code safely accesses device
+        properties (model, UUID, platform) only after Cordova initialization
+        completes.
     - name: Build action errors
       id: build-action-errors
       description: Wants to troubleshoot a failed Capacitor build action caused

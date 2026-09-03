@@ -8,7 +8,6 @@ figma:
 tags: rest api, service integration, static entities, api specification, data mapping
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

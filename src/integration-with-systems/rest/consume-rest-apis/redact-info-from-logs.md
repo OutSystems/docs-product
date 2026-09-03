@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) enables log redaction for sensitive REST API input 
 tags: security, privacy, logging, data protection, rest api
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

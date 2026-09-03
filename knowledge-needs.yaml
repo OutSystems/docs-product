@@ -471,6 +471,13 @@ knowledge-needs:
         conflict and force-save their changes after being warned, in OutSystems 11,
         so that data isn't silently lost but the user can still choose to overwrite
         when confident their information is current.
+    - name: Detect update conflicts
+      id: detect-update-conflicts
+      description: Wants to implement a pessimistic concurrency strategy that
+        detects concurrent update conflicts before saving a record, using
+        GetForUpdate to lock the record and comparing audit attributes (such as
+        UpdatedOn) between the loaded and current record, in OutSystems 11, so
+        that users don't unknowingly overwrite each other's changes.
     - name: Isolation level basics
       id: isolation-level-basics
       description: Wants to understand which operations start and end a database
@@ -2831,3 +2838,10 @@ knowledge-needs:
       description: Wants to handle Espace bootstraps when planning an O11
         application data migration, so that initialization logic and migrated
         data remain aligned in the destination environment.
+    - name: Map entity dependencies
+      id: map-entity-dependencies
+      description: Wants to identify primary keys, foreign keys, other
+        constraints, cyclic entity references, and soft key usage in
+        application entities, so that they can migrate application data
+        without breaking referential integrity or introducing broken
+        business logic during an O11 data migration.

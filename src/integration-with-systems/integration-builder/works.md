@@ -5,7 +5,11 @@ guid: 8940670a-b3f2-4f06-af4a-c8eb7785153c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:2059
-tags: saas integrations, external systems integration, service action usage, integration architecture, integration management
+tags:
+  - Architecture
+  - Authentication
+  - External Authentication
+  - IT Users
 audience:
   - Developer
   - Front-end developer

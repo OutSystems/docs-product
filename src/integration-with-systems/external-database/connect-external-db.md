@@ -1,6 +1,10 @@
 ---
 summary: Learn how to integrate OutSystems 11 (O11) with external databases for app development without data migration concerns.
-tags: database integration, service center, external databases, data migration, deployment
+tags:
+  - Entities
+  - Extensions
+  - External Databases
+  - Table
 locale: en-us
 guid: d5fdba1a-e46c-4c92-9d6b-81be94eed163
 app_type: traditional web apps, mobile apps, reactive web apps

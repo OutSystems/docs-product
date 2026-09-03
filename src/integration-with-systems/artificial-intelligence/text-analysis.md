@@ -1,6 +1,10 @@
 ---
 summary: Explore AI-driven language processing capabilities in OutSystems 11 with the OutSystems.AI Language Analysis component for enhanced app functionality.
-tags: ai language processing, microsoft azure integration, cognitive services, text analytics, spell check
+tags:
+  - AI
+  - Blocks
+  - Multi-language
+  - Translation
 locale: en-us
 guid: 5e2273f8-4fa3-43a4-b0bf-7a177534bca2
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,7 @@
 ---
 summary: Explore how to create, publish, and manage integrations using Integration Builder in OutSystems 11 (O11).
-tags: integration management, deployment, security, sap integration, environment configuration
+tags:
+  - Deploy
 locale: en-us
 guid: 6c59c61d-f34b-4ef4-8875-0ea760341cd5
 app_type: traditional web apps, mobile apps, reactive web apps

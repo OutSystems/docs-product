@@ -5,7 +5,10 @@ guid: de265ad3-910f-42ad-b395-551ce6e83e4b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: sap integration, odata, service specification, https, entity operations
+tags:
+  - Authentication
+  - Entities
+  - Web services
 audience:
   - Developer
   - Front-end developer

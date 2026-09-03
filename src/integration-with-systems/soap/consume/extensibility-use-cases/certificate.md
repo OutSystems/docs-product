@@ -1,19 +1,26 @@
 ---
-summary: OutSystems 11 (O11) supports authenticating SOAP requests using a client certificate, as detailed in the integration and configuration process.
+summary: OutSystems 11 (O11) SOAP client certificate authentication configures binding security via an Integration Studio extension action.
 locale: en-us
 guid: c3df3d40-fd98-48f6-8c63-0ec22f08f516
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A28&mode=design&t=8a1ub9syb4QKHbuk-1
-tags: authentication, soap web services, client certificates, outsystems service studio, security configuration
+tags:
+  - .NET
+  - Authentication
+  - C#
+  - Extensions
+  - Security
+  - SOAP
+  - Web services
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - integration studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # Authenticate using a client certificate
@@ -21,6 +28,8 @@ coverage-type:
 In this example scenario we will add support for authenticating SOAP requests using a client certificate.
 
 **Notes:**
+
+* OutSystems 11 supports two configuration patterns for SOAP client certificate authentication: registering the certificate in Service Center, and the extension-based pattern in this article. Service Center certificate registration, under **Administration** > **Certificates**, applies only to consumed SOAP Web Services that you created in a version older than OutSystems 11 and later upgraded to OutSystems 11. For a SOAP Web Service you create in OutSystems 11, that registration step doesn't apply, and you use the extension-based pattern in this article instead.
 
 * The binary contents of the client certificate can be retrieved in several ways: from a disk file (for example, a `*.pfx` file), directly from the machine certificate store, from the database, from a blob on cloud storage, etc. The extension action presented in this example assumes that the binary data of the certificate is already available in an OutSystems application, such as in a local variable or as an output parameter of a function call.
 

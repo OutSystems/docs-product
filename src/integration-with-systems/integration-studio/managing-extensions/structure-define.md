@@ -5,7 +5,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3760-255&t=IqoLFGa1lr8bJxvT-1
 summary: OutSystems 11 (O11) enables complex data type definitions through Structures in Integration Studio for enhanced data handling in applications.
-tags: ide usage, reactive web apps, tutorials for beginners, data integration, extension structures
+tags:
+  - Extensions
 audience:
   - Developer
   - Front-end developer

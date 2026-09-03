@@ -5,7 +5,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:63
 summary: Explore how OutSystems 11 (O11) facilitates the import of .NET assembly-based Web Services into Integration Studio for enhanced application development.
-tags: web services, .net integration, soap, ide usage, visual studio
+tags:
+  - .NET
+  - Extensions
+  - SOAP
+  - Web services
 audience:
   - Developer
 outsystems-tools:

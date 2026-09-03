@@ -5,7 +5,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3748-257&t=0k6vqSszFayqzk9h-1
 summary: Explore how to download and manage extensions in OutSystems 11 (O11) using the Platform Server and Integration Studio.
-tags: ide usage, reactive web apps, tutorials for beginners, extension management, outsystems platform
+tags:
+  - Extensions
+  - Platform Server
 audience:
   - Developer
   - Front-end developer

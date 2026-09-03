@@ -5,7 +5,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3783-247
 summary: Explore how to define and manage resources in OutSystems 11 (O11) using Integration Studio, including adding files and setting properties.
-tags: extension management, integration studio, resource management, extensions, outsystems development
+tags:
+  - Extensions
 audience:
   - Developer
   - Front-end developer

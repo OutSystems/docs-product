@@ -5,7 +5,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3743-259&t=0k6vqSszFayqzk9h-1
 summary: OutSystems 11 (O11) allows users to refresh an entity definition in Integration Studio by fetching updated table information from the database.
-tags: database integration, entity management, ide usage, platform server, tutorials for beginners
+tags:
+  - Entities
+  - External Databases
+  - Extensions
+  - Platform Server
 audience:
   - Developer
 outsystems-tools:

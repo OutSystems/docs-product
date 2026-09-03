@@ -5,7 +5,14 @@ guid: 7a8babdb-b919-4c77-a7d2-31560bc43fe2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3890-240&t=sSDtb29zrg6QWMVS-1
-tags: enterprise application development, visual domain specific languages, it architecture
+tags:
+  - Architecture
+  - External Databases
+  - Extensions
+  - Forge
+  - REST
+  - SOAP
+  - Web services
 audience:
   - Architect
   - Platform administrator

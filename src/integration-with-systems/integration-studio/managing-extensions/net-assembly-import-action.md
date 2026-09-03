@@ -5,7 +5,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3756-246&t=IqoLFGa1lr8bJxvT-1
 summary: Learn to import .NET assembly actions into OutSystems 11 (O11) using a step-by-step wizard.
-tags: .net integration, extensions, ide usage, reactive web apps, tutorials for beginners
+tags:
+  - .NET
+  - Extensions
 audience:
   - Developer
   - Front-end developer

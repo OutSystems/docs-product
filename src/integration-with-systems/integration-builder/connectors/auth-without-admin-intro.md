@@ -5,7 +5,10 @@ guid: 2593fe18-2b20-483f-98ba-d8985048339c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: salesforce integration, azure active directory, authentication, application registration, enterprise integration
+tags:
+  - Active Directory
+  - Authentication
+  - External Authentication
 audience:
   - Developer
   - Front-end developer

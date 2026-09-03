@@ -5,7 +5,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?node-id=3726-242&t=SuzzAhRaRDk17IMm-1
 summary: OutSystems 11 (O11) requires users to connect to an environment in Integration Studio to perform operations like 1-Click Publish and importing entities.
-tags: environment configuration, 1-click publish, extension management, entity import from database, outsystems development
+tags:
+  - 1-Click Publish
+  - Extensions
+  - External Databases
 audience:
   - Front-end developer
   - Developer

@@ -1,6 +1,9 @@
 ---
 summary: Explore how to integrate Azure QnA Maker Connector with OutSystems 11 (O11) for enhanced knowledge base management.
-tags: azure, knowledge base, qna maker, chatbots, cognitive services
+tags:
+  - AI
+  - Forge
+  - Site Properties
 locale: en-us
 guid: ab7eb739-c72b-4177-979b-bfe9d58a9334
 app_type: traditional web apps, mobile apps, reactive web apps

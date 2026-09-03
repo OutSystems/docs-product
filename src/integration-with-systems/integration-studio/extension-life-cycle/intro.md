@@ -5,7 +5,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:58
 summary: Explore the extension life cycle in OutSystems 11 (O11) and third-party IDEs, detailing creation, coding, and publishing processes.
-tags: extension lifecycle, integration studio, database management systems (dbms), .net integration, code generation
+tags:
+  - .NET
+  - 1-Click Publish
+  - Extensions
+  - Lifecycle
 audience:
   - Developer
   - Front-end developer

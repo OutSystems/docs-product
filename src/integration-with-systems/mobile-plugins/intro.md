@@ -1,6 +1,11 @@
 ---
 summary: Explore the range of mobile plugins supported by OutSystems 11 (O11) for enhancing native mobile app functionalities, available in the Forge repository.
-tags: mobile plugins, outsystems forge, native mobile app development, progressive web app (pwa), apache cordova
+tags:
+  - Cordova
+  - Forge
+  - Mobile app
+  - Native App
+  - Plugins
 locale: en-us
 guid: 5543e1d8-095e-45d1-aef6-d3c054649421
 app_type: mobile apps

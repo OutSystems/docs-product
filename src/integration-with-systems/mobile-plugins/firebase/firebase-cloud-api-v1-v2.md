@@ -5,7 +5,10 @@ guid: 612389e2-3fb0-455c-8506-eebc7627615b
 app_type: mobile apps
 platform-version: o11
 figma:
-tags: api, deprecated features, notification management, outsystems platform, firebase cloud messaging
+tags:
+  - Mobile app
+  - Plugins
+  - REST
 audience:
   - Developer
 outsystems-tools:

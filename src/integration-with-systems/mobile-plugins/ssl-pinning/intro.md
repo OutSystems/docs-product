@@ -1,6 +1,11 @@
 ---
 summary: OutSystems 11 (O11) enhances mobile app security through its SSL Pinning Plugin, which verifies SSL certificates to prevent man-in-the-middle attacks.
-tags: security, ssl pinning, mobile app security, https, certificate management
+tags:
+  - Forge
+  - Mobile app
+  - Native App
+  - Plugins
+  - Security
 locale: en-us
 guid: fec62d79-033b-4a5a-a7e1-806b0a591daf
 app_type: mobile apps

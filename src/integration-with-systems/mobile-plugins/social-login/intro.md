@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) features a Social Login plugin for mobile apps, supporting authentication via Google, Apple, Facebook, and LinkedIn.
-tags: authentication, social media integration, plugin implementation, mobile application development, user experience
+tags:
+  - Authentication
+  - End-user Authentication
+  - External Authentication
+  - Mobile app
+  - OAuth
+  - Plugins
 locale: en-us
 guid: 834dcc40-0b87-4161-bcd0-db32053044c7
 app_type: mobile apps

@@ -1,6 +1,10 @@
 ---
 summary: OutSystems 11 (O11) File Plugin enables file and folder management within mobile app sandboxes.
-tags: file management, plugin integration, mobile app development, binary data handling, outsystems forge
+tags:
+  - Cordova
+  - Forge
+  - Mobile app
+  - Plugins
 locale: en-us
 guid: 77c53fcc-d787-4377-895f-90390ee33f3f
 app_type: mobile apps

@@ -1,6 +1,9 @@
 ---
 summary: Learn how to configure a consumed REST API at runtime in OutSystems 11 (O11) for different environments without republishing the module.
-tags: environment configuration, api management, deployment best practices, service center, integration
+tags:
+  - Authentication
+  - REST
+  - Settings
 locale: en-us
 guid: bab48957-3b44-44a9-9996-d705c67a2dd6
 app_type: traditional web apps, mobile apps, reactive web apps

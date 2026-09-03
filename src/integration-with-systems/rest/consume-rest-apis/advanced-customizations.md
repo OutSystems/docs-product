@@ -1,6 +1,9 @@
 ---
 summary: Explore advanced customizations in OutSystems 11 (O11) using .NET code for REST API requests and responses.
-tags: rest api, integration studio, .net code, rest extensibility api, visual studio
+tags:
+  - .NET
+  - Extensions
+  - REST
 locale: en-us
 guid: 79eee8b9-b6ae-43e0-8127-9d6004f24ec4
 app_type: traditional web apps, mobile apps, reactive web apps

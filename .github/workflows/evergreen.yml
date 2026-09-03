@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '0 1 * * *'
     - cron: '0 13 * * *'
+  push:
+    branches:
+      - master
+    paths:
+      - knowledge-needs.yaml
 
 concurrency:
   group: evergreen-${{ github.ref }}

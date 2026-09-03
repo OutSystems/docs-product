@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integ
 tags: security best practices, api integration, sensitive data handling, logging techniques, outsystems best practices
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

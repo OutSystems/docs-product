@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
 topic:
   - define-methods
 ---

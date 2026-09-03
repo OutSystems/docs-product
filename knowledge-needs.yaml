@@ -695,6 +695,25 @@ knowledge-needs:
         CM_ProcessServices_BL module using Service Studio''s Debugger before
         calling Case_PerformActionActivity in the Case Management Framework in
         OutSystems 11, so that the action executes successfully.'
+    - name: Fix case purge error
+      id: fix-case-purge-error
+      description: 'Wants to fix the "Case Definition with the Id
+        <case-definition-identifier-value> can''t be purged. Change the
+        PurgeTypeId to allow it." error by updating the case definition''s
+        PurgeTypeId, DaysToPurgeCase, and DaysToPurgeProcess attributes using
+        the CaseDefinition_Update action from the CaseConfigurations_API
+        module, or by filling in the missing attributes in the Bootstrap/Setup
+        input structures, in OutSystems 11, so that the Case Management
+        framework can successfully execute the CaseDefinition_Purge action.'
+    - name: Fix activity case mismatch
+      id: fix-activity-case-mismatch
+      description: 'Wants to fix the "Activity with Id
+        <activity-identifier-value> does not belong to Case with Id
+        <case-identifier-value>" error by verifying the Activity Identifier
+        input value belongs to a process associated with the given case using
+        Service Studio''s Debugger before calling Case_DiscardActivity in the
+        Case Management Framework in OutSystems 11, so that the action
+        executes successfully.'
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -856,6 +875,13 @@ knowledge-needs:
       id: changing-endpoints
     - name: Consume and refresh methods
       id: consume-refresh-methods
+    - name: Show webservice errors
+      id: show-webservice-errors
+      description: Wants to handle the outcome of a webservice method call in the
+        application logic by checking the method's Result.Success output and
+        displaying the Result.ErrorMessage in a feedback message when it's false,
+        so that end users are informed when an operation like deleting a record
+        fails.
     - name: Structures
       id: structures
     - name: Consume SAP OData
@@ -1667,6 +1693,57 @@ knowledge-needs:
         under demanding synchronization scenarios.
   - name: Customize Mobile apps
     id: customize-mobile-apps
+    subtopics:
+    - name: Build action errors
+      id: build-action-errors
+      description: Wants to troubleshoot a failed Capacitor build action caused
+        by invalid JSON syntax, incorrect target selectors/XPath, unresolved
+        variable references, or malformed merge/inject content in the build
+        action configuration file, so that the mobile app build completes
+        successfully.
+    - name: Missing resource error
+      id: missing-resource-error
+      description: 'Wants to resolve the OS-MABS-CNF-40012 "resource {0} declared
+        in your extensibility configurations can''t be found" error, caused by
+        an extensibility configuration''s resources entry pointing to a missing
+        file, by checking and correcting the resource declarations for their
+        app and its dependencies, so that the mobile app package generates
+        successfully.'
+    - name: Android manifest error
+      id: android-manifest-error
+      description: 'Wants to resolve the OS-MABS-GEN-40001 "multiple errors merging
+        the Android Manifest" error, by checking the Service Center build logs
+        to identify the custom plugins causing the incompatibility, so that the
+        Android mobile app package generates successfully.'
+    - name: Support library error
+      id: support-library-error
+      description: 'Wants to resolve the OS-MABS-GEN-40006 "there was an issue
+        generating the app" error, caused by a custom Cordova plugin using
+        deprecated Android Support Library components, by identifying the
+        plugin(s) via com.android.support references and migrating them to
+        AndroidX, so that the Android mobile app package generates
+        successfully.'
+    - name: Metadata conflict error
+      id: metadata-conflict-error
+      description: 'Wants to resolve the OS-MABS-GEN-40008 "meta-data {0} is
+        being defined more than once" error, by identifying which custom
+        plugin is overriding the same Android manifest metadata attribute
+        more than once, so that the Android mobile app package generates
+        successfully.'
+    - name: Google Services error
+      id: google-services-error
+      description: 'Wants to resolve the OS-MABS-GEN-40011 "There was an issue
+        generating the app. Some plugins using Google Services aren''t
+        correctly configured" error, by reviewing and correcting the Google
+        Services plugin configuration file setup, so that the Android mobile
+        app package generates successfully.'
+    - name: Invalid CocoaPods spec error
+      id: invalid-cocoapods-spec-error
+      description: 'Wants to resolve the OS-MABS-PLG-40005 "Spec attribute in
+        the Framework element related to CocoaPods is invalid" error, by
+        checking the Service Center build logs to identify the misconfigured
+        Cordova plugin''s plugin.xml, so that the iOS mobile app package
+        generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -2296,6 +2373,13 @@ knowledge-needs:
         error when testing the streaming connection in O11 or ODC — so that they
         can restore log and observability data streaming by verifying the APM tool
         is working and re-establishing the connection.
+    - name: Fix streaming unknown error
+      id: fix-streaming-unknown
+      description: Wants to understand and resolve the OS-DP-STREAM-00002 "unknown
+        error reaching your destination server" error — where the destination server
+        responds with a gRPC 2 (Unknown) error when testing the streaming connection
+        in O11 or ODC — so that they can restore log and observability data streaming
+        to the destination APM tool.
   - name: Fluent Bit configuration
     id: fluentbit-configuration
     subtopics:

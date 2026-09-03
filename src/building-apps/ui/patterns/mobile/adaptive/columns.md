@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-columns-pattern-o11
 ---
 
 # Columns

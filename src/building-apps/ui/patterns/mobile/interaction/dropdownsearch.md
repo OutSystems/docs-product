@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - accessibility-screen-reader
+  - dropdown-search-ref
+  - use-dropdown-search
 ---
 
 # Dropdown Search

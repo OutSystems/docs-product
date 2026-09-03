@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - understand
+topic:
+  - design-process-flow
 ---
 
 # Create a Process Flow

@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - understand
+topic:
+  - process-upgrade-activity-impact
 ---
 
 # Impact of Moving Activities in Process Flows

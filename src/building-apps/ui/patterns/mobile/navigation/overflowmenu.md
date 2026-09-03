@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-overflow-menu-pattern
 ---
 
 # Overflow Menu

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - use-bottom-bar-item
 ---
 
 # Bottom Bar Item

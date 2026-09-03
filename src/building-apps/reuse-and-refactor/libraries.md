@@ -12,6 +12,9 @@ audience:
   - Architect
 outsystems-tools:
   - service studio
+topic:
+  - create-library-module
+  - library-module-overview
 coverage-type:
   - understand
   - evaluate

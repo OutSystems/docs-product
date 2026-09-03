@@ -1,6 +1,13 @@
 ---
-summary: Explore the capabilities of the File Viewer plugin in OutSystems 11 (O11) for opening and managing files in mobile and Progressive Web Apps.
-tags: plugin development, file handling, cross-platform compatibility, plugin integration, pwa support
+summary: File Viewer plugin for OutSystems 11 (O11) lets you open remote, resource, and local files in mobile apps and PWAs, with iOS media preview support.
+tags:
+  - Android
+  - Cordova
+  - iOS
+  - Logic
+  - Mobile app
+  - Native App
+  - Plugins
 locale: en-us
 guid: 8f00b7c4-754a-4afd-86ac-740c255458b1
 app_type: mobile apps
@@ -18,7 +25,7 @@ coverage-type:
 isautopublish: true
 ---
 
-# File viewer plugin
+# File Viewer plugin
 
 <div class="info" markdown="1">
 
@@ -41,7 +48,7 @@ File Viewer plugin can open:
 
 ![Screenshot of the File Viewer plugin interface in a mobile app](images/file-viewer-preview-ss.png "File Viewer Plugin Preview")
 
-## Progressive Web Apps (PWA)
+## Viewing files in Progressive Web Apps
 
 For now, it's impossible to access and manage a file system in a PWA or browser context. This means that using this plugin in a PWA only lets you open files via the device's file picker. You can show them in an OutSystems dialog. Your application needs to manage these limitations as necessary. The File Viewer plugin sample app has an example of this.
 
@@ -61,7 +68,7 @@ To let users view files in the mobile apps, create logic with one of these three
 
 1. **OpenDocumentFromLocalPath** - Provide a local file path in the **FilePath** argument.
 1. **OpenDocumentFromResources** - If you want to open a file from the app resources see [Working with app resources](#working-with-app-resources).
-1. **OpenDocumentFromUrl** - Provide the url poiting to a remote file in the **URL** argument.
+1. **OpenDocumentFromUrl** - Provide the url pointing to a remote file in the **URL** argument.
 
 For an example of how to use the plugin check the demo app or refer to [the example in this document](#example-of-using-file-viewer-plugin).
 
@@ -96,7 +103,7 @@ The plugin can access only the resources you deploy in the **resources** path. T
 
 </div>
 
-## Example of using File viewer plugin
+## Example of using File Viewer plugin
 
 Here is an example of how to use the File Viewer plugin.
 
@@ -136,6 +143,20 @@ The following client actions are still offered, but have been deprecated since v
 | **OpenDocument**        | Opens a remote file or a [file from the app resources](#working-with-app-resources). | Use **OpenDocumentFrom(X)** where (X) can be `LocalPath`, `Resources`, or `Url`.        |
 | **PreviewMediaContent** | iOS only. Action to preview media content.                                           | Use **PreviewMediaContentFrom(X)** where (X) can be `LocalPath`, `Resources`, or `Url`. |
 
-### Error codes
+#### `CheckFileViewerPlugin` Behavior with old native plugin versions
+
+A device may still be running a native build with an older File Viewer plugin version than the one currently configured for your app, for instance if it only received an over-the-air (OTA) update to its web layer instead of a new native build.
+
+From File Viewer plugin 3.0.5 onwards, when this happens, **CheckFileViewerPlugin** returns **IsAvailable** as **True**, with **Warning.WarningCode** set to **OS-PLUG-FLVW-0002**, meaning the installed native plugin predates version 3.0.0. You can continue using all client actions (deprecated and non-deprecated).
+
+<div class="info" markdown="1">
+
+File Viewer plugin versions between 3.0.0 and 3.0.4 returned **False** for **IsAvailable** in this scenario, so only the deprecated client actions worked.
+
+This was fixed in version 3.0.5 of the File Viewer plugin. Update to this version, especially if you can't have your all users update to the new native build.
+
+</div>
+
+### Error codes {#errors}
 
 For a complete list of mobile plugin errors, their causes, impact, and recommended solutions, refer to the [Mobile Plugins errors page](https://www.outsystems.com/tk/redirect?g=8ae41e18-fa7d-4cbe-a223-226a14abd8bf).

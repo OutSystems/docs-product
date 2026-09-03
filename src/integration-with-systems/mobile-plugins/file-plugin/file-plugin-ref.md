@@ -1,6 +1,12 @@
 ---
-summary: Explore the File Plugin functionalities in OutSystems 11 (O11), including client actions, error handling, and deprecations.
-tags: mobile app development, plugin integration, file management, error handling, deprecations
+summary: 'File Plugin v4 reference for OutSystems 11 (O11): client actions, PathDirectory types, FileInfo attributes, error codes, and deprecated elements.'
+tags:
+  - Android
+  - Cordova
+  - iOS
+  - Mobile app
+  - Native App
+  - Plugins
 locale: en-us
 guid: d22f76f0-f3ac-465d-ad4b-f4bbc0f4b136
 app_type: mobile apps
@@ -29,7 +35,7 @@ If you are looking to migrate from version 3.x.x of the File Plugin to 4.0.0 or 
 
 </div>
 
-This is the reference of all the functionality you can use from the [File Plugin version 4.0.0](intro.md). The File Plugin version 2.0.0 uses a Cordova plugin, and for more information see [cordova-outsystems-file](https://github.com/ionic-team/cordova-outsystems-file). For version 3.x.x and below, see [cordova-plugin-file](https://github.com/OutSystems/cordova-plugin-file).
+This page describes the functionality available in [File Plugin version 4.0.0](intro.md). The File Plugin version 4.0.0 uses a Cordova plugin, and for more information, refer to [cordova-outsystems-file](https://github.com/ionic-team/cordova-outsystems-file). For version 3.x.x and below, refer to [cordova-plugin-file](https://github.com/OutSystems/cordova-plugin-file).
 
 ## Plugin elements
 
@@ -40,7 +46,7 @@ This section details the different elements exposed by the File Plugin, starting
 | Action | Description |
 | -------------------- | ------------------------------------------------------------------------------------- |
 | **AppendFile** | Appends content to an existing file. |
-| **CheckFilePlugin** | Checks if the File Plugin is loaded. |
+| **CheckFilePlugin** | Checks if the File Plugin is loaded. If it returns a **Warning**, see [Check the native plugin version before using new actions](file-plugin-migration-guide.md#check-native-plugin). |
 | **Copy** | Copies a file from one location to another. |
 | **CreateDirectory** | Creates a directory in the file system. |
 | **DeleteDirectory** | Deletes a directory in the file system. |
@@ -80,7 +86,7 @@ If you're unsure which type of **PathDirectory** you need, try to think about th
 
 ### File info
 
-The **GetMetadata** and **ListDirectory** client actions return a structure containing information about a file or directory, named **FileInfo**. The table below decribes the attributes of this structure.
+The **GetMetadata** and **ListDirectory** client actions return a structure containing information about a file or directory, named **FileInfo**. The table below describes the attributes of this structure.
 
 | **FileInfo** attributes | Description                                            |
 | ----------------------- | ------------------------------------------------------ |
@@ -105,7 +111,7 @@ All deprecated elements are marked with a **DEPRECATED_** before the element.
 
 </div>
 
-### Deprecated Actions
+### Deprecated actions
 
 | Action                            | Description                                                       |
 | --------------------------------- | ----------------------------------------------------------------- |
@@ -125,7 +131,7 @@ All deprecated elements are marked with a **DEPRECATED_** before the element.
 
 ### Storage type
 
-This seection contains information about the **StorageTypeId** property, which tells the app where to store the files. This property is available in some of the actions of the plugin. Newer versions of the File Plugin use [Path Directory](#path-directory).
+This section contains information about the **StorageTypeId** property, which tells the app where to store the files. This property is available in some of the actions of the plugin. Newer versions of the File Plugin use [Path Directory](#path-directory).
 
 | StorageTypeId                     | Description                                                                                                                                             |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

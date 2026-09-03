@@ -1,6 +1,7 @@
 ---
-summary: Explore advanced file transfer capabilities in mobile and Reactive Web Apps with the File transfer plugin in OutSystems 11 (O11).
+summary: File transfer plugin for OutSystems mobile and PWA apps lets you download and upload files in the background, with progress tracking via events.
 tags:
+  - Blocks
   - Cordova
   - Events
   - Mobile app
@@ -24,7 +25,7 @@ topic:
 isautopublish: true
 ---
 
-# File transfer plugin
+# File Transfer plugin
 
 <div class="info" markdown="1">
 
@@ -32,9 +33,9 @@ Applies to Mobile Apps and Reactive Web Apps only.
 
 </div>
 
-The File transfer plugin lets you download and upload files in your Mobile App or, in the case of a Progressive Web App (PWA), from your device. The plugin provides advanced file transfer that runs in the background, and, in the case of a Mobile App, continues even when the user closes or suspends the app.
+The File Transfer plugin lets you download and upload files in your Mobile App or, in the case of a Progressive Web App (PWA), from your device. The plugin provides advanced file transfer that runs in the background, and, in the case of a Mobile App, continues even when the user closes or suspends the app.
 
-The File transfer plugin shows progress updates for large transfers, such as videos, music, or images.
+The File Transfer plugin shows progress updates for large transfers, such as videos, music, or images.
 
 <div class="info" markdown="1">
 
@@ -44,9 +45,9 @@ See [Adding plugins](../intro.md#adding-plugins) to learn how to install and ref
 
 The plugin's behavior differs between Mobile Apps and PWAs. These differences are further explained in the next section.
 
-## Using the File transfer plugin
+## Using the File Transfer plugin
 
-To add the File transfer plugin to your app, follow these steps:
+To add the File Transfer plugin to your app, follow these steps:
 
 1. Install the **FileTransfer** Plugin and reference it in your app. For detailed instructions, refer to [Installing a plugin and adding a public element to your app](../intro.md#installing-a-plugin-and-adding-a-public-element-to-your-app).
 
@@ -66,13 +67,13 @@ To add and use these UI blocks to your app, follow these steps:
 
     ![Shows how to add and use the File transfer plugin from the ODC Studio Interface tab](images/create-and-use-filetransfer-plugin-in-interface-tab-odcs.png "Using the File transfer plugin in ODC Studio Interface Tab")
 
-    ![Shows how to add and use the File transfer plugin from the ODC Studio Interface tab](images/filetransfer-handledown-in-widget-tree-odcs.png "Using the File transfer plugin in ODC Studio Interface Tab")
+    ![ODC Studio widget tree showing the FileTransfer HandleDownload block added to the Common Layout](images/filetransfer-handledown-in-widget-tree-odcs.png "HandleDownload Block in Common Layout")
 
 1. Set the handlers for **OnDownloadComplete**, **OnDownloadError**, **OnDownloadProgress**, **OnUploadComplete**, **OnUploadError**, and on **OnUploadProgress** events.
 
     In these event handlers, you can define your own logic and what to do with the event data. For example, setting the progress on a **ProgressBar** widget for **OnUploadProgress** and **OnDownloadProgress** events.
 
-    ![Shows the new handlers for HandleDownload events](images/add-handlers-to-events-odcs.png "Settings Handlers for HandleDownload events.")
+    ![ODC Studio showing event handlers configured for the HandleDownload and HandleUpload blocks, including OnDownloadComplete, OnDownloadError, OnDownloadProgress, OnUploadComplete, OnUploadError, and OnUploadProgress](images/add-handlers-to-events-odcs.png "HandleDownload and HandleUpload Event Handlers")
 
 ## Progressive Web Apps vs Mobile Apps
 
@@ -130,9 +131,23 @@ The following table contains the reference of the client actions that were depre
 | **DEPRECATED_UploadFile**              | Action to upload files to the server.                       |
 | **DEPRECATED_UploadFileWithHeaders**   | Action to upload files to the server with HTTP headers.     |
 
+#### `CheckFileTransferPlugin` Behavior with old native plugin versions
+
+A device may still be running a native build with an older File Transfer Plugin version than the one currently configured for your app, for instance if it only received an over-the-air (OTA) update to its web layer instead of a new native build.
+
+From File Transfer Plugin 3.1.4 onwards, when this happens, **CheckFileTransferPlugin** returns **IsAvailable** as **True**, with **Warning.WarningCode** set to [OS-PLUG-FLTR-0002](https://www.outsystems.com/tk/redirect?g=93b8f06a-8358-4e6c-bb3c-2908e83b742e), meaning the installed native plugin predates version 3.0.0. You can continue using all client actions (**DEPRECATED** and non-deprecated).
+
+<div class="info" markdown="1">
+
+File Transfer Plugin versions between 3.0.0 and 3.1.3 returned **False** for **IsAvailable** in this scenario, and you were only able to use **DEPRECATED** client actions.
+
+This was fixed in version 3.1.4 of File Transfer Plugin. Update to this version, especially if you can't have your users all update to the new native build.
+
+</div>
+
 ### Events
 
-Here is the reference for the events you can use from the File transfer plugin, available in **UI Flows** > **FileTransferPlugin** > **FileTransfer**.
+Here is the reference for the events you can use from the File Transfer plugin, available in **UI Flows** > **FileTransferPlugin** > **FileTransfer**.
 
 | Event | Block | Description |
 | ---------------------- | ------------------ | ------------------ |
@@ -189,7 +204,7 @@ List of predefined error codes for lower versions of the plugin:
 | isDirectory | Boolean | Returns **True** if the result is a directory. |
 | name | Text | Name of the stored file. |
 | fullPath | Text | Path to the stored file. |
-| **(Removed in version 3.0.0)** filesystems | Text | Device-absolute-file-paths for the downloaded data. The goal of this parameter was to maintain backwards compatibility for older versions of the plugin. Fore more information check [here](https://github.com/OutSystems/cordova-plugin-file-transfer?tab=readme-ov-file#backwards-compatibility-notes). |
+| **(Removed in version 3.0.0)** filesystems | Text | Device-absolute-file-paths for the downloaded data. The goal of this parameter was to maintain backwards compatibility for older versions of the plugin. For more information, refer to [Backwards compatibility notes](https://github.com/OutSystems/cordova-plugin-file-transfer?tab=readme-ov-file#backwards-compatibility-notes). |
 | nativeURL | Text | Native URL path to the stored file. |
 
 #### `FileUploadResult`
@@ -206,6 +221,8 @@ List of predefined error codes for lower versions of the plugin:
 For a complete list of mobile plugin errors, their causes, impact, and recommended solutions, refer to the [Mobile Plugins errors page](https://www.outsystems.com/tk/redirect?g=8ae41e18-fa7d-4cbe-a223-226a14abd8bf).
 
 ## Known issues and limitations
+
+Here is a known issue and a limitation:
 
 ### Multiple downloads
 

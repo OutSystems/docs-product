@@ -7,7 +7,8 @@ app_type: mobile apps
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=3802-242
 platform-version: o11
 coverage-type:
-  - none
+  - remember
+  - apply
 audience:
   - Developer
   - Front-end developer

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to customize REST API requests and responses in OutSystems 11 (O11) using callbacks and advanced integration scenarios.
+summary: REST API customization in OutSystems 11 (O11) uses OnBeforeRequest and OnAfterResponse callbacks to edit headers, status codes, and multipart request parts.
 tags: rest api customizations, integration, outsystems forge, http headers, extensibility api
 locale: en-us
 guid: 21574391-c5b3-4831-a7b2-8aaf94df2230

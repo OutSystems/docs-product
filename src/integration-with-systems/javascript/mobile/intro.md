@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - remember
+  - apply
 ---
 
 # Extend Your Mobile and Reactive Apps Using JavaScript

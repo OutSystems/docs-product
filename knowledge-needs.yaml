@@ -131,6 +131,13 @@ knowledge-needs:
         Studio, including their outputs and availability in server-side logic,
         client-side logic, and database aggregates, so that they can retrieve
         session locale, user agent, and app name information in expressions.
+    - name: Built-in date functions
+      id: built-in-date-functions
+      description: Wants to know which built-in DateTime functions are available
+        in ODC Studio (e.g. DiffMonths, DiffQuarters, DiffWeeks, DiffYears,
+        GetTicks, Quarter, IsLeapYear), including their parameters and return
+        types, so that they can perform date and time calculations in
+        expressions.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -537,6 +544,13 @@ knowledge-needs:
     subtopics:
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Fix OSIgnore field error
+      id: fix-osignore-field-error
+      description: 'Wants to fix the OS-ELG-MODL-05012 error ("The property/field
+        decorated by OSIgnore ... is not public") by changing the access modifier
+        of an OSIgnore-decorated struct property/field to public in their C#
+        external library project, so that they can successfully publish the
+        external library.'
     - name: Parse XML XPath
       id: parse-xml-xpath
       description: Wants to extract filtered data from an XML file using XPath expressions
@@ -1057,6 +1071,12 @@ knowledge-needs:
       id: bpmn-notation
     - name: Patterns for processes (automatic, human, decision)
       id: process-decision-patterns
+    - name: Archive BPT processes
+      id: archive-bpt-processes
+      description: Wants to archive old closed BPT Process instances by creating
+        a mirrored set of meta-model entities and using Process_Delete or
+        Process_BulkDelete from the BPT_API extension, in OutSystems 11, so
+        that BPT queries stay performant as Process volume grows.
   - name: Workflow Builder
     id: workflow-builder
     subtopics:
@@ -1554,6 +1574,16 @@ knowledge-needs:
         progress automatically through Development, Regression, Acceptance,
         and Pre-production/Production stages with governance and impact
         analysis from LifeTime.
+  - name: Troubleshoot 1-Click Publish
+    id: troubleshoot-1-click-publish
+    subtopics:
+    - name: 1-Click Publish errors
+      id: 1-click-publish-errors
+      description: Wants to locate and resolve ODC build errors from the 1-Click
+        Publish service by finding the error code in the reference, understanding
+        its cause and impact, and following the recommended fix action, so that
+        they can resolve build failures when publishing mobile or reactive web
+        apps.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -1631,6 +1661,15 @@ knowledge-needs:
     - name: Forge overview
       id: forge-overview
       description: Wants to understand what Forge is, what types of reusable assets (apps, libraries, agentic apps) are available, and how the community-driven sharing model works in OutSystems.
+  - name: Troubleshoot Forge
+    id: troubleshoot-forge
+    subtopics:
+    - name: Forge errors
+      id: forge-errors
+      description: Wants to locate and resolve ODC Forge errors by finding the
+        error code in the reference, understanding its cause and impact, and
+        following the recommended action, so that they can fix issues affecting
+        mobile or reactive web apps.
   - name: Setting up your OutSystems environment
     id: setup-outsystems-env
     subtopics:
@@ -1835,6 +1874,16 @@ knowledge-needs:
     - name: Implement semantic search
       id: implement-semantic-search
       description: Wants to implement semantic search in ODC by marking entity attributes as searchable and adding a Semantic Search element to a server action flow, so that the app can retrieve results ranked by meaning rather than exact keywords.
+  - name: Troubleshoot Mentor Studio
+    id: troubleshoot-mentor-studio
+    subtopics:
+    - name: Mentor Studio errors
+      id: mentor-studio-errors
+      description: Wants to locate and resolve Mentor Studio errors by finding
+        the error code in the reference, understanding its cause and impact,
+        and following the recommended action, so that they can continue
+        working with Mentor Studio's conversational AI development flow in
+        ODC Studio.
 - name: Integrating with Plugins
   guid: 1af9eece-e820-40ec-8483-b1243267b038
   topics:
@@ -2112,6 +2161,40 @@ knowledge-needs:
         reviewing the SSLPinning JSON configuration file and removing any
         OutSystems domains, so that the mobile app package generates
         successfully.'
+    - name: SSL Pinning format error
+      id: ssl-pinning-format-error
+      description: 'Wants to resolve the OS-MABS-RES-40003 "The configuration
+        file has an invalid format. Add a file with a valid format for
+        SSLPinning" error, by validating and correcting the SSLPinning
+        configuration file''s format and content, so that the mobile app
+        package generates successfully.'
+    - name: Fetch resources error
+      id: fetch-resources-error
+      description: 'Wants to resolve the OS-MABS-RES-50002 "Couldn''t fetch
+        your app resources" error, by checking the build logs for details
+        and retrying application generation, escalating to OutSystems
+        support if the problem persists, so that the mobile app package
+        generates successfully.'
+    - name: Signing certificate error
+      id: signing-certificate-error
+      description: 'Wants to resolve the OS-MABS-SIG-40010 "There are no
+        certificates that match the provisioning profile" error, by
+        confirming and updating the certificate and provisioning profile
+        information so they match each other, so that the mobile app
+        package generates successfully.'
+    - name: Document storage error
+      id: document-storage-error
+      description: 'Wants to resolve the OS-MCO-50002 "A document is not
+        available in the document storage" error, by retrying the mobile
+        compilation and escalating to OutSystems Support if the problem
+        persists, so that the native mobile build completes successfully.'
+    - name: Storage comms error
+      id: storage-comms-error
+      description: 'Wants to resolve the OS-MCO-50003 "An error occurred
+        while communicating with the document storage" error, by retrying
+        the mobile compilation and escalating to OutSystems Support if the
+        problem persists, so that the native mobile build completes
+        successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -2128,6 +2211,42 @@ knowledge-needs:
         after AppShield obfuscation, so that they can identify whether misconfigured
         dependencies, Gradle/JAR/AAR imports, or reflection-based code are causing
         the issue.
+    - name: Duplicate AppShield ref
+      id: duplicate-appshield-reference
+      description: 'Wants to resolve the OS-MABS-SHLD-40001 "The AppShield plugin
+        has more than one reference in your app" error, by checking the
+        extensibility configurations for duplicate references to the AppShield
+        plugin and removing them, keeping only the reference from the AppShield
+        plugin retrieved from Forge, so that the mobile app package generates
+        successfully.'
+    - name: AppShield settings error
+      id: appshield-settings-error
+      description: 'Wants to resolve the OS-MABS-SHLD-40003 "Some AppShield plugin
+        settings have invalid values, please review them" error, by reviewing
+        the AppShield preferences in their extensibility configurations
+        against the documented configuration reference and correcting the
+        invalid values, so that the mobile app package generates
+        successfully.'
+    - name: Outdated MABS version error
+      id: outdated-mabs-version-error
+      description: Wants to resolve the OS-MABS-SHLD-40004 "It looks like your MABS version
+        is outdated, please update it" error, by updating MABS to the minimum
+        version required for the AppShield plugin, so that the AppShield plugin
+        is supported and the mobile app package generates successfully.
+    - name: License upgrade error
+      id: license-upgrade-error
+      description: 'Wants to resolve the OS-MABS-SHLD-40005 "It looks like
+        OutSystems AppShield is not accessible with your current license" error,
+        by contacting OutSystems Support to upgrade their license, so that the
+        AppShield build succeeds and the mobile app package generates
+        successfully.'
+    - name: AppShield generic error
+      id: appshield-generic-error
+      description: 'Wants to resolve the OS-MABS-SHLD-50000 "Something happened
+        and we couldn''t harden your app with AppShield. Please try again."
+        error, by checking the build logs for issues related to the Shield
+        phase and escalating to OutSystems Support if the problem persists,
+        so that the mobile app package generates successfully.'
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
 - name: Product security

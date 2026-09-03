@@ -1,5 +1,5 @@
 ---
-summary: Explore the integration and management of notifications in OutSystems 11 (O11) using the Firebase Cloud Messaging plugin.
+summary: Firebase Cloud Messaging Configurator REST API lets you manage push notifications, custom actions, and sounds in OutSystems 11 (O11) apps.
 locale: en-us
 guid: d89ecb04-0232-407d-b5ea-9423ab57dc8b
 app_type: mobile apps

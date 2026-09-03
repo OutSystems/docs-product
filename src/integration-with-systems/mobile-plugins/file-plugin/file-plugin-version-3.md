@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) File Plugin enables file and folder management within mobile app sandboxes.
+summary: OutSystems 11 (O11) File Plugin version 3 covers legacy actions, binary data conversion, and storage types for mobile file management.
 tags: file management, plugin integration, mobile app development, binary data handling, outsystems forge
 locale: en-us
 guid: 86ebad43-0937-4450-bfe9-8b06655edfd7

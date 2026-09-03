@@ -1546,6 +1546,14 @@ knowledge-needs:
     subtopics:
     - name: Integrate with external orchestrators for CD
       id: external-orchestrator-cd
+    - name: Build O11 CD pipeline
+      id: cd-pipeline-stages
+      description: Wants to build an automated continuous delivery pipeline for
+        O11 applications by using the outsystems-pipeline accelerator with a
+        CI/CD platform (Jenkins or Azure DevOps) so that release candidates
+        progress automatically through Development, Regression, Acceptance,
+        and Pre-production/Production stages with governance and impact
+        analysis from LifeTime.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -2800,6 +2808,12 @@ knowledge-needs:
         including platform version alignment, database definition differences,
         and downtime considerations, so that they can plan a safe data migration
         process.
+    - name: Platform dependencies
+      id: map-platform-dependencies
+      description: Wants to identify OutSystems Platform system entities (Users,
+        Tenants, Multi-Tenant Entities, BPT) that applicational entities have
+        foreign key dependencies on, so that they can map and align those
+        dependencies between environments before migrating application data.
     - name: Match migration identifiers
       id: match-migration-identifiers
       description: Wants to match entity and attribute physical names, static

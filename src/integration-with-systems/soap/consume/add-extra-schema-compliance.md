@@ -15,6 +15,7 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+  - unblock
 ---
 
 # Add extra schema compliance validations

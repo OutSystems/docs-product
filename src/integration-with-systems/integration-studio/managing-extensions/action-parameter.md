@@ -8,7 +8,6 @@ figma:
 tags: ide usage, reactive web apps, tutorials for beginners, action parameters editor, extension actions
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

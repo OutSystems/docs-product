@@ -8,7 +8,6 @@ figma:
 tags: ide usage, reactive web apps, tutorials for beginners, outsystems extensions, external system integration
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
   - service studio

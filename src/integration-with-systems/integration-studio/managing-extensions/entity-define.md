@@ -8,7 +8,6 @@ figma:
 tags: extension entities, database integration, entity management, user permissions, external database
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - service center

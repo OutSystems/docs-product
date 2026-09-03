@@ -8,7 +8,6 @@ figma:
 tags: entity management, data modeling, database integration, entity refresh, integration studio
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:

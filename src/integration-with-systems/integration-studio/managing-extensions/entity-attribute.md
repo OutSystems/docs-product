@@ -8,7 +8,6 @@ figma:
 tags: entity management, database configuration, ide usage, reactive web apps, tutorials for beginners
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

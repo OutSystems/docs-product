@@ -8,7 +8,6 @@ summary: Explore how to manually add and configure actions in OutSystems 11 (O11
 tags: extension development, integration studio, web services, extension properties, action configuration
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
   - integration studio

@@ -8,7 +8,6 @@ summary: OutSystems 11 (O11) allows manual addition of entities to extensions an
 tags: entity management, database integration, extensions, data modeling, entity properties
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
   - service center

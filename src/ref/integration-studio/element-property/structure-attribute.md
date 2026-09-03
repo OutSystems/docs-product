@@ -5,14 +5,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=3072-2&t=wVzbD9aw4fUXUtiF-1
 summary: Explore the detailed properties of structure attributes in OutSystems 11 (O11), including mandatory settings, data types, and default values.
-tags: data modeling, entity management, outsystems development, data types, extension management
+tags:
+  - Data Model
+  - Entities
+  - Extensions
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
 coverage-type:
   - remember
+isautopublish: true
 ---
 
 # Structure Attribute Properties
@@ -23,9 +26,9 @@ The next table presents the properties of the [structure attribute](<../../../in
 | --- | --- | --- | --- | --- |
 | Name | Name of the attribute. | Mandatory | `Attribute` | You should change the name of the attribute to a suitable value. See [rules for naming elements](<../element-naming.md>). |
 | Mandatory | Indicates whether the attribute is mandatory or optional. | Mandatory | `Mandatory` | To define an attribute as optional, simply un-check this property. |
-| Data Type | Indicates the type of the attribute. You can use basic data types such as `Text` or `Integer`; or you might need more complex data types to handle this attribute. Integration Studio provides the `Record` and `Record List` data types. The definition of these two data types are based on the [structures](<../../../integration-with-systems/integration-studio/managing-extensions/structure-define.md>) and [entities](<../../../integration-with-systems/integration-studio/managing-extensions/entity-define.md>) you have available in your extension. <br/>![Warning icon indicating a note about OutSystems not allowing recursive structures](images/warning-icon.png "Warning Icon") OutSystems does not allow recursive structures. | Mandatory | | The possible values are presented in a drop-down list. For more information, see available data types. Since OutSystems has its own data types, you should check how these data types are translated into Microsoft .NET data types. |
+| Data Type | Indicates the type of the attribute. You can use basic data types such as `Text` or `Integer`; or you might need more complex data types to handle this attribute. Integration Studio provides the `Record` and `Record List` data types. The definition of these two data types are based on the [structures](<../../../integration-with-systems/integration-studio/managing-extensions/structure-define.md>) and [entities](<../../../integration-with-systems/integration-studio/managing-extensions/entity-define.md>) you have available in your extension. <br/>![Warning icon indicating a note about OutSystems not allowing recursive structures](images/warning-icon.png "Recursive Structures Warning") OutSystems does not allow recursive structures. | Mandatory | | The possible values are presented in a drop-down list. For more information, see available data types. Since OutSystems has its own data types, you should check how these data types are translated into Microsoft .NET data types. |
 | Default value | Default value that is used if no value for this attribute is provided in the module that is using this action. | Optional | | |
-| Length | Size of the attribute. | Optional | | This property is only available for `Text` and `Decimal` types. In the `Decimal` type, this property corresponds to the number of digits, including the decimal part. If the values for these data types are not specified, default values are used. The rest of the data types have a fixed length. |
+| Length | Size of the attribute. | Optional | | This property is only available for `Text` and `Decimal` types. In the `Decimal` type, this property corresponds to the number of digits, including the decimal part. If the values for these data types are not specified, default values are used. The rest of the data types have a fixed length.<br/>For structure attributes, Length serves only as design-time metadata: Integration Studio requires a value for `Text` and `Decimal` attributes, and Service Studio uses it as the input limit when scaffolding a screen from the structure. Entity attribute Length has a different, enforced effect: it determines the database column type. Refer to [How data model changes are handled](<../../data/database/how-data-model-changes-are-handled.md#changing-the-length-property-of-a-text-attribute>). |
 | Decimals | Number of decimal places. | Optional | | This property is only available when the data type is `Decimal` and corresponds to the number of digits of the decimal part. |
 | Record Type | If your attribute data type is `Record` or a `Record List`, you have to select the [entities](<../../../integration-with-systems/integration-studio/managing-extensions/entity-add.md>) and/or [structures](<../../../integration-with-systems/integration-studio/managing-extensions/structure-define.md>) that define the Record or Record List. Learn more about these data types. The value of this property is the name of the structure. In case you have a combination of structures, the value is `(Join)`. | Optional | | Mandatory only if the Data Type is `Record` or `Record List`. |
 | Description | Description of the parameter. | Optional | | By default the description is empty, but you should provide a small description of the semantic of this parameter. The maximum allowed size for descriptions is 255 characters. |

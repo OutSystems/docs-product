@@ -107,6 +107,30 @@ knowledge-needs:
         the built-in Index function in OutSystems O11, including a case-insensitive
         variant, so that they can replicate C# String.Contains behavior in logic
         expressions.
+    - name: Function default values
+      id: function-default-values
+      description: Wants to understand why OutSystems built-in functions don't
+        raise exceptions during execution, returning the default value of the
+        output data type instead when an issue occurs, so that they can predict
+        function behavior when writing expressions in ODC Studio.
+    - name: Built-in math functions
+      id: built-in-math-functions
+      description: Wants to know which built-in math functions are available in ODC Studio,
+        including their parameters, return types, and availability in server-
+        side logic, client-side logic, and database aggregates, so that they can
+        perform mathematical calculations in expressions.
+    - name: Built-in text functions
+      id: built-in-text-functions
+      description: Wants to know which built-in text functions are available in ODC Studio,
+        including their parameters, return types, and availability in server-
+        side logic, client-side logic, and database aggregates, so that they can
+        manipulate text values in expressions.
+    - name: Organization functions
+      id: organization-functions
+      description: Wants to know which built-in organization functions are available in ODC
+        Studio, including their outputs and availability in server-side logic,
+        client-side logic, and database aggregates, so that they can retrieve
+        session locale, user agent, and app name information in expressions.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -163,6 +187,13 @@ knowledge-needs:
     subtopics:
     - name: Anonymous
       id: anonymous
+    - name: Check user role in code
+      id: check-user-role-in-code
+      description: Wants to verify whether the currently logged-in end-user has
+        a specific public role (local or consumed from another app) inside a
+        server action or service action, using the CheckEndUserRole built-in
+        function with a RoleId input, so that business logic can conditionally
+        allow or restrict behavior based on the user's role.
 - name: (Creating an Application) Architecture
   guid: 9ce4fe11-dcc9-4b0f-b3ea-545557accdec
   topics:
@@ -426,8 +457,28 @@ knowledge-needs:
         so they can correctly modify data in external systems.
   - name: Compound data
     id: compound-data
+  - name: Binary data actions
+    id: binary-data-actions
+    description: Wants to know which actions the BinaryData library provides in ODC,
+      including their inputs, outputs, and supported encodings, so that they can
+      convert and manipulate binary content correctly in logic flows.
   - name: Dealing with rollbacks
     id: dealing-with-rollbacks
+    subtopics:
+    - name: Force update conflict
+      id: force-update-conflict
+      description: Wants to let a user override a detected concurrent-update
+        conflict and force-save their changes after being warned, in OutSystems 11,
+        so that data isn't silently lost but the user can still choose to overwrite
+        when confident their information is current.
+    - name: Isolation level basics
+      id: isolation-level-basics
+      description: Wants to understand which operations start and end a database
+        transaction in ODC (write operations like Create, Update, Delete, GetForUpdate;
+        and Commit, Rollback, or end of Request), and how the Read Committed isolation
+        level prevents dirty reads by hiding uncommitted changes from concurrent
+        transactions, so that they can reason about data visibility during concurrent
+        database operations.
 - name: Advanced data modeling
   guid: 9a38cf20-a3dc-491a-8a25-c261c830e9c7
   topics:
@@ -479,6 +530,14 @@ knowledge-needs:
     subtopics:
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Parse XML XPath
+      id: parse-xml-xpath
+      description: Wants to extract filtered data from an XML file using XPath expressions
+        in a Server Action, by loading the XML document, selecting nodes with an
+        XPath expression, and iterating over the matched nodes to read their
+        values, using the OutSystems 11 XML Extension, so that only the data
+        matching specific criteria is available for downstream business logic
+        without processing the entire document.
     - name: Integrate with legacy systems
       id: legacy-systems-integration
       subtopics:
@@ -1258,6 +1317,13 @@ knowledge-needs:
         its properties, in Service Studio for OutSystems 11, so that users can
         select an option from a searchable dropdown list, in mobile apps and
         reactive web apps.
+    - name: Dropdown Search reference
+      id: dropdown-search-ref
+      description: Wants to look up the properties and events of the Dropdown
+        Search widget in Service Studio, including OptionsList, StartingSelection,
+        Prompt, and OptionalConfigs, so that they can correctly configure a
+        searchable dropdown selector in OutSystems 11 mobile apps and reactive
+        web apps.
     - name: Use Bottom Bar Item
       id: use-bottom-bar-item
       description: Wants to add the Bottom Bar Item UI Pattern to a screen and
@@ -1272,6 +1338,13 @@ knowledge-needs:
         properties, in Service Studio for OutSystems 11, so that additional
         options are shown for a row or element when there's a space constraint
         on the UI, in mobile apps and reactive web apps.
+    - name: Validate Upload widget file
+      id: validate-upload-widget-file
+      description: Wants to add custom validation logic for the Upload widget using If
+        conditions on its file name, content, and type information, in Service
+        Studio for OutSystems 11, so that end users get an error message when no
+        file is selected, an empty file is chosen, or the file type doesn't
+        match what's expected, in Traditional Web Apps and Reactive Web Apps.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -1357,6 +1430,35 @@ knowledge-needs:
         them through the $public object, in ODC Studio, so that custom app
         behavior can be built in JavaScript for mobile apps and reactive web
         apps.
+    - name: Manipulate screen DOM
+      id: manipulate-screen-dom
+      description: Wants to apply custom CSS classes to the current screen's root DOM
+        element and to the document body based on device orientation and type,
+        using the View JavaScript API's getCurrentScreenRootElement and
+        registerDeviceClassGetter functions, in ODC Mobile Apps and Reactive Web
+        Apps, so that DOM-based styling and animations can react to the active
+        screen and device characteristics.
+    - name: Detect render completion
+      id: detect-render-completion
+      description: Wants to know when the current screen/block has finished
+        rendering, using the View JavaScript API's render() promise, in ODC
+        Mobile Apps and Reactive Web Apps, so that custom logic can run after
+        rendering completes.
+    - name: Detect view cache restoration
+      id: detect-view-cache-restoration
+      description: Wants to know whether the current view was restored from
+        cache, using the View JavaScript API's
+        wasCurrentViewRestoredFromCache() function, in ODC Mobile Apps and
+        Reactive Web Apps, so that behavior can adapt when a view is restored
+        from cache.
+    - name: Validate widget state
+      id: validate-widget-state
+      description: Wants to check whether a widget is valid and set it as valid or
+        invalid with a custom message, using the Validation JavaScript API's
+        isWidgetValid, setWidgetAsInvalid, and setWidgetAsValid functions, in
+        ODC Studio, so that widgets inside iterators (for example, inside a For
+        Each node) can be validated individually, in ODC Mobile Apps and
+        Reactive Web Apps.
   - name: Securing UI
     id: securing-ui
     subtopics:
@@ -1464,6 +1566,14 @@ knowledge-needs:
   topics:
   - name: Wrap a Cordova plugin as an OS Plugin
     id: wrap-cordova-plugin
+  - name: Create LifeTime plugin
+    id: create-lifetime-plugin
+    description: Wants to create a custom LifeTime plugin for O11 by installing the
+      LifeTime SDK in a development environment, exporting sample data,
+      developing the plugin in Service Studio using the plugin template, and
+      publishing it to the LifeTime environment via Service Center, so that they
+      can extend LifeTime with functionality tailored to their organization's
+      governance or automation needs.
 - name: Getting started with app development
   guid: 08c8e683-27ea-4656-8559-e145b5e05086
   topics:
@@ -1908,6 +2018,85 @@ knowledge-needs:
         checking the Service Center build logs to identify the misconfigured
         Cordova plugin''s plugin.xml, so that the iOS mobile app package
         generates successfully.'
+    - name: CocoaPods pod not found
+      id: cocoapods-pod-not-found-error
+      description: 'Wants to resolve the OS-MABS-PLG-40006 "Couldn''t install
+        the Cordova plugin due to an error in the plugin.xml file. The
+        specified pod wasn''t found in the CocoaPods repository" error, by
+        checking the Service Center build logs and fixing the pod dependency
+        on the affected Cordova plugin, so that the mobile app package
+        generates successfully.'
+    - name: Swift CocoaPods error
+      id: swift-cocoapods-error
+      description: 'Wants to resolve the OS-MABS-PLG-40008 "Couldn''t install
+        the Cordova plugin because CocoaPods built in Swift are not
+        supported" error, by importing the affected pod as a framework in
+        the plugin''s podspec, so that the iOS mobile app package generates
+        successfully.'
+    - name: Cordova version mismatch
+      id: cordova-version-mismatch-error
+      description: 'Wants to resolve the OS-MABS-PLG-40009 "Couldn''t install
+        the Cordova plugin because your plugin doesn''t support this
+        Cordova version" error, by checking the build log to identify the
+        incompatible plugin and either updating the plugin or changing the
+        MABS version, so that the mobile app package generates
+        successfully.'
+    - name: Plugin config mismatch
+      id: plugin-config-mismatch-error
+      description: 'Wants to resolve the OS-MABS-PLG-40010 "Couldn''t install
+        the Cordova plugin. Your plugin must have a package.json file that
+        matches the configurations in the plugin.xml file" error, by checking
+        the build logs on Service Center to identify the mismatch between the
+        plugin''s package.json and plugin.xml files and correcting the plugin
+        configuration, so that the mobile app package generates
+        successfully.'
+    - name: Invalid plugin spec error
+      id: invalid-plugin-spec-error
+      description: 'Wants to resolve the OS-MABS-PLG-40011 "Couldn''t install
+        the Cordova plugin due to an issue with the plugin specification" error,
+        by checking the build logs on Service Center to identify the mismatch
+        in plugin name, version, or URL between the plugin.xml and package.json
+        files, so that the mobile app package generates successfully.'
+    - name: Plugin SDK tag error
+      id: plugin-sdk-tag-error
+      description: 'Wants to resolve the OS-MABS-PLG-40012 "Couldn''t install
+        the Cordova plugin because it''s not supported by MABS 6.0 and later
+        versions" error, caused by the plugin trying to change the
+        <uses-sdk> tag in the AndroidManifest.xml file, by updating the
+        plugin or changing the MABS version, so that the mobile app package
+        generates successfully.'
+    - name: Missing XML node error
+      id: missing-xml-node-error
+      description: 'Wants to resolve the OS-MABS-PLG-40013 "Couldn''t install
+        the Cordova plugin because the plugin tried to edit a missing XML
+        node" error, caused by an XML selector not finding the target node
+        in the config file, by checking the Service Center build logs and
+        fixing the selector path, so that the mobile app package generates
+        successfully.'
+    - name: Non-Cordova module error
+      id: non-cordova-module-error
+      description: 'Wants to resolve the OS-MABS-PLG-40015 "Couldn''t install
+        the Cordova plugin. Using requireCordovaModule to load a non-Cordova
+        module is not supported" error, by checking the Service Center build
+        logs to identify the plugin using requireCordovaModule and replacing
+        it with require, so that the mobile app package generates
+        successfully.'
+    - name: Missing module dependency error
+      id: missing-module-dependency-error
+      description: 'Wants to resolve the OS-MABS-PLG-40016 "Couldn''t install
+        the Cordova plugin due to a missing dependency in module
+        {node_module}" error, by checking the Service Center build logs to
+        identify the affected plugin and fixing its missing node module
+        dependency, including hooks dependencies declared in the plugin''s
+        package.json for MABS 7 and later, so that the mobile app package
+        generates successfully.'
+    - name: SSL Pinning domain error
+      id: ssl-pinning-domain-error
+      description: 'Wants to resolve the OS-MABS-RES-40001 "The configuration
+        file for SSLPinning must not contain OutSystems domains" error, by
+        reviewing the SSLPinning JSON configuration file and removing any
+        OutSystems domains, so that the mobile app package generates
+        successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -2092,6 +2281,13 @@ knowledge-needs:
     subtopics:
     - name: Built-in Authentication
       id: built-in-authentication
+    - name: Get authenticated user id
+      id: get-authenticated-user-id
+      description: Wants to retrieve the identifier of the user currently
+        authenticated with the server, or a null identifier when
+        unauthenticated, inside a server action, service action, or database
+        aggregate, using the GetUserId built-in function, so that logic can
+        reference or filter data by the current user's identity.
     - name: Extend login validation
       id: extend-login-validation
       description: Wants to add custom server-side validation to the built-in
@@ -2575,3 +2771,63 @@ knowledge-needs:
         in Fluent Bit log records on a self-managed O11 installation using the modify
         filter and dotted-key names, so that streamed logs carry the additional context
         needed by the destination tool.
+- name: O11 Data Migration
+  guid: ''
+  topics:
+  - name: Environment Data Migration
+    id: environment-data-migration
+    subtopics:
+    - name: Factory metamodel
+      id: factory-metamodel
+      description: Wants to understand how OutSystems manages the factory's
+        Applications, Espaces, Modules, and Extensions, and their system
+        entities (physical tables, producers, and consumers, SS_Key
+        uniqueness, and Is Active flags), so that they can correctly
+        interpret this data model when planning an O11 data migration
+        between environments.
+    - name: Plan data migration
+      id: plan-data-migration
+      description: Wants to understand the recommendations, prerequisites, and
+        planning considerations for migrating pure application and hybrid data
+        from an O11 production environment to a non-production environment,
+        including platform version alignment, database definition differences,
+        and downtime considerations, so that they can plan a safe data migration
+        process.
+    - name: Match migration identifiers
+      id: match-migration-identifiers
+      description: Wants to match entity and attribute physical names, static
+        entity record identifiers, and build a foreign keys map between source
+        and destination O11 environments, so that migrated data correctly
+        references the right records after an O11 data migration.
+    - name: Migrate hybrid BPT and users
+      id: migrate-hybrid-bpt-users
+      description: Wants to migrate hybrid data, including BPT process/activity
+        instances, BPT trigger events, and Users/Groups/Roles, between O11
+        environments, so that migrated applicational data remains functionally
+        consistent after the migration.
+    - name: GDPR and data masking
+      id: migration-gdpr-data-masking
+      description: Wants to account for GDPR compliance requirements and data
+        masking when planning an O11 application data migration, so that
+        sensitive data stays protected throughout the migration process.
+    - name: Date formats and timezones
+      id: migration-date-timezone-differences
+      description: Wants to reconcile date format and timezone differences
+        between source and destination O11 environments during an application
+        data migration, so that migrated date and time values remain accurate
+        after the move.
+    - name: Database catalog metadata
+      id: migration-database-catalog-metadata
+      description: Wants to account for database catalog metadata when planning
+        an O11 application data migration, so that supporting schema details
+        needed by the migrated data aren't missed.
+    - name: Binary data (BLOB) migration
+      id: migration-binary-blob-data
+      description: Wants to migrate binary data (BLOB) between O11
+        environments as part of an application data migration, so that files
+        and other binary content remain available after the migration.
+    - name: Espace bootstraps
+      id: migration-espace-bootstraps
+      description: Wants to handle Espace bootstraps when planning an O11
+        application data migration, so that initialization logic and migrated
+        data remain aligned in the destination environment.

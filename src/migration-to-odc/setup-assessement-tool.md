@@ -7,10 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2336-2236
 tags: app conversion, outsystems, database configuration, infrastructure management
 audience:
-  - Platform administrator
   - Developer
-  - Architect
-  - Tech lead
+  - Platform administrator
 outsystems-tools:
   - lifetime
   - platform server

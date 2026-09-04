@@ -201,6 +201,15 @@ knowledge-needs:
         server action or service action, using the CheckEndUserRole built-in
         function with a RoleId input, so that business logic can conditionally
         allow or restrict behavior based on the user's role.
+    - name: Hierarchical roles choice
+      id: hierarchical-roles-choice
+      description: Wants to decide whether to use hierarchical roles instead
+        of OutSystems' default static roles when designing an application's
+        security model, weighing benefits (hierarchical authorization, reduced
+        role explosion, runtime configurability) against implementation costs
+        (configuration overhead, performance overhead, security risks, lack of
+        built-in product support), so they can choose the appropriate role
+        model for their app.
 - name: (Creating an Application) Architecture
   guid: 9ce4fe11-dcc9-4b0f-b3ea-545557accdec
   topics:
@@ -342,6 +351,15 @@ knowledge-needs:
       id: allow-apps-edit-data
     - name: Allow other apps to read data
       id: allow-apps-read-data
+  - name: Exporting data
+    id: exporting-data
+    subtopics:
+    - name: Export data to Excel
+      id: export-data-to-excel
+      description: Wants to export the data of an entity to an Excel worksheet
+        using the Record List To Excel action and enable users to download the
+        generated file, in OutSystems 11 Reactive Web and Traditional Web apps,
+        so that entity records can be shared as an Excel file.
 - name: API testing
   guid: 195d823e-8f16-4d32-a66d-7766c6bdd032
   topics:
@@ -421,6 +439,13 @@ knowledge-needs:
       id: query-parameters
     - name: Use SQL
       id: use-sql
+    - name: Insert null via SQL
+      id: insert-null-via-sql
+      description: Wants to insert a null value into a database field when the
+        built-in create/update actions default missing values instead (for
+        example, writing 0 for an undefined decimal), by using a SQL node with
+        Expand Inline and EncodeSql, in OutSystems Service Studio (O11), so
+        that null is correctly stored in the database.
     - name: Implement dynamic SQL statements correctly
       id: dynamic-sql-correctly
     - name: SQL operator reference
@@ -574,6 +599,31 @@ knowledge-needs:
         description: Wants to access data from a legacy Lotus Notes/Domino application
           using ODBC and a SQL Server Linked Server, on a 64-bit SQL Server environment,
           so that OutSystems applications can query that legacy data at runtime.
+  - name: Generate PDF reports
+    id: generate-pdf-reports
+    subtopics:
+    - name: Set up HTML2PDF component
+      id: setup-html2pdf-component
+      description: Wants to install and configure the HTML2PDF Forge component in
+        OutSystems 11, including downloading the wkhtmltopdf/wkhtmltoimage binaries
+        matching the component's documented version, uploading them in the
+        component's admin panel, and adding references to GeneratePDF,
+        MakeAbsoluteURL, and GetEntryURL in Service Studio, so that the environment
+        is ready to generate PDF reports.
+    - name: Create PDF report HTML2PDF
+      id: create-pdf-report-html2pdf
+      description: Wants to build and generate a PDF report using the HTML2PDF
+        component by creating an anonymous screen with a Table Records widget bound
+        to an aggregate, then calling GeneratePDF with an absolute URL and a
+        Download action from a separate screen, in OutSystems 11, so that end users
+        can export screen data as a downloadable PDF file.
+    - name: Customize HTML2PDF output
+      id: customize-html2pdf-output
+      description: Wants to work around HTML2PDF/wkhtmltopdf rendering limitations,
+        such as table rows breaking across pages and missing header/footer/pagination
+        support, by applying the page-break-inside CSS rule, passing header/footer
+        URLs via OtherArgs, and adding pagination JavaScript, in OutSystems 11, so
+        that the generated PDF report renders correctly and completely.
   - name: Handling webservice errors
     id: handle-webservice-errors
 - name: Advanced security
@@ -1108,6 +1158,12 @@ knowledge-needs:
         the CMF .osp file from Workflow Builder's settings and publishing it
         through Service Center, so that Workflow Builder recognizes the app's
         dependencies as up to date.
+    - name: WFB token error
+      id: wfb-token-error
+      description: Wants to resolve the "Token error" that occurs when Workflow
+        Builder doesn't have a valid token to access the environment, by logging
+        out and back in (or contacting support if the problem persists), in
+        OutSystems 11, so that Workflow Builder can reconnect to the environment.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -1274,6 +1330,13 @@ knowledge-needs:
         in Service Studio, including Number, Color, IsLight, and ExtendedClass,
         so that they can correctly configure a numerical notification badge in
         a Mobile App or Reactive Web App for OutSystems 11.
+    - name: Use Icon Badge pattern
+      id: use-icon-badge-pattern
+      description: Wants to add the Icon Badge UI Pattern to a screen and bind
+        its Number property to an aggregate count, including adding the widget
+        via Toolbox or Search in other modules if the dependency isn't added,
+        in Service Studio for OutSystems 11, so that numerical notifications
+        like unread message counts display on mobile apps and reactive web apps.
     - name: Adaptive UI patterns
       id: adaptive-ui-patterns
       description: Wants to understand what adaptive UI patterns are and why to use them,
@@ -1412,6 +1475,12 @@ knowledge-needs:
         properties, in Service Studio for OutSystems 11, so that users can
         navigate through long listings such as e-commerce category pages, search
         engines, and article archives, in mobile apps and reactive web apps.'
+    - name: Pagination reference
+      id: pagination-reference
+      description: Wants to look up the properties of the Pagination UI Pattern
+        in Service Studio, including StartIndex, MaxRecords, TotalCount, ShowGoToPage,
+        and ExtendedClass, so that they can correctly configure pagination
+        behavior and appearance in OutSystems 11 mobile apps and reactive web apps.
     - name: Use Section Index pattern
       id: use-section-index-pattern
       description: Wants to add the Section Index UI Pattern to a screen, including
@@ -2313,6 +2382,13 @@ knowledge-needs:
         retrying the mobile compilation, and escalating to OutSystems
         Support if the problem persists, so that the native mobile build
         completes successfully.'
+    - name: Mobile framework error
+      id: mobile-framework-error
+      description: 'Wants to resolve the OS-MCO-50022 "MABS version does not
+        include <MobileFramework>. If the problem persists, open a support
+        case." error, by retrying the mobile compilation and escalating to
+        OutSystems Support if the problem persists, so that the native
+        mobile build completes successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -3096,3 +3172,24 @@ knowledge-needs:
         application entities, so that they can migrate application data
         without breaking referential integrity or introducing broken
         business logic during an O11 data migration.
+    - name: Classify entity types
+      id: classify-entity-types
+      description: Wants to classify OutSystems Platform entities into System,
+        Application, and Hybrid types, including their naming conventions
+        (OSSYS_/OSUSR_ prefixes), read/write permissions, and subgroupings,
+        so that they can correctly plan which entities to read or migrate
+        during an O11 data migration.
+    - name: Users/Roles/Groups model
+      id: users-roles-groups-entity-model
+      description: Wants to understand the physical tables, producers, and
+        consumers for the User, Role, Group, User_Role, Group_Role, and
+        Group_User system entities, so that they can correctly interpret
+        this entity-relationship model when planning an O11 environment
+        data migration.
+    - name: Trace BPT process data
+      id: trace-bpt-process-data
+      description: Wants to trace a BPT process instance across the Process,
+        Process_Input, Process_Output, Activity, and Activity_Output
+        entities using SQL queries in Service Center, so that they can
+        identify actual field values and hybrid entity relationships before
+        planning a BPT data migration.

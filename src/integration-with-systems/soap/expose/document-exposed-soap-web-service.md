@@ -1,6 +1,8 @@
 ---
 summary: OutSystems 11 (O11) simplifies SOAP Web Service documentation by auto-generating it upon module publication based on the "Description" properties.
-tags: soap web services, api documentation, module publishing, service studio features, web service integration
+tags:
+  - SOAP
+  - Web services
 locale: en-us
 guid: 07a471e4-c784-44ba-b868-8c90605481c0
 app_type: traditional web apps, mobile apps, reactive web apps

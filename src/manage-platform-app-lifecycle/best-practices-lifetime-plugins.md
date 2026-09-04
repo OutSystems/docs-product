@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: plugin development, best practices, deployment, api usage, environment configuration
+tags:
+  - Best Practices
+  - Deploy
+  - Development lifecycle
+  - Lifecycle
+  - Plugins
 audience:
   - Developer
   - Platform administrator

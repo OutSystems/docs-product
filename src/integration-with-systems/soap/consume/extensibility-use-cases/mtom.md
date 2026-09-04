@@ -5,7 +5,13 @@ guid: 37ee4b4e-0cfb-471e-aa97-6fb0bb427ff4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: soap, web services, data transmission, message optimization, integration
+tags:
+  - .NET
+  - C#
+  - Extensions
+  - Optimization
+  - SOAP
+  - Web services
 audience:
   - Developer
 outsystems-tools:

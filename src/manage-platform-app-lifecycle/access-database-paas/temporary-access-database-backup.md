@@ -8,7 +8,9 @@ figma:
 coverage-type:
   - understand
   - apply
-tags: cloud database backup, data recovery, outsystems cloud, backup service, 15-day retention
+tags:
+  - Infrastructure
+  - Troubleshooting
 audience:
   - Platform administrator
   - Developer

@@ -1,6 +1,11 @@
 ---
 summary: OutSystems 11 (O11) provides detailed logging for both exposed and consumed SOAP Web Services, accessible via the Service Center management console.
-tags: soap web services, error handling, logging configuration, monitoring, integrations
+tags:
+  - Logging
+  - Monitoring
+  - SOAP
+  - Troubleshooting
+  - Web services
 locale: en-us
 guid: ddb0cd62-4de7-48c2-9f44-3a9240a4ae66
 app_type: traditional web apps, mobile apps, reactive web apps

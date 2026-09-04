@@ -1,5 +1,7 @@
 ---
-tags: soap, web services, integration, wsdl, xml
+tags:
+  - SOAP
+  - Web services
 locale: en-us
 guid: ad3eafdc-ad10-415d-bcd6-21a2ef277cd1
 app_type: traditional web apps, mobile apps, reactive web apps

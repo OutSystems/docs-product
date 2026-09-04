@@ -1820,6 +1820,19 @@ knowledge-needs:
         its cause and impact, and following the recommended fix action, so that
         they can resolve build failures when publishing mobile or reactive web
         apps.
+  - name: Troubleshoot self-managed publish errors
+    id: troubleshoot-self-managed-publish-errors
+    subtopics:
+    - name: File access publish error
+      id: file-access-publish-error
+      description: 'Wants to resolve the "The process cannot access the file
+        because it is being used by another process" error during publishing
+        in OutSystems 11 (Service Studio, Service Center, or LifeTime), by
+        identifying whether antivirus software or another third-party process
+        is locking Platform Server files, excluding the required folders from
+        antivirus scanning, or using tools like Process Explorer/Process
+        Monitor to find and stop the conflicting process, so that publication
+        completes successfully.'
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -2009,6 +2022,22 @@ knowledge-needs:
         Service, Log Service, IIS, and Message Queue — by reading error messages,
         checking Service Center Monitoring, and restarting services in a self-managed
         environment, so that they can restore normal platform operation.
+    - name: Fix proxy auth 401
+      id: fix-proxy-auth-401
+      description: Wants to fix the 401 Unauthorized error (or missing app templates)
+        when creating a new app in Service Studio, caused by a proxy between the
+        developer's computer and Platform Server tampering with authorization tokens,
+        by asking IT to confirm the proxy doesn't manipulate authentication headers,
+        so that Service Studio can retrieve app templates in a self-managed OutSystems
+        11 environment.
+    - name: Fix IIS Basic Auth 401
+      id: fix-iis-basic-auth-401
+      description: Wants to fix the 401 Unauthorized error (or missing app templates)
+        when creating a new app in Service Studio, caused by Basic Authentication
+        being enabled on the module at the IIS level instead of the required Anonymous
+        Authentication, by enabling Anonymous Authentication in IIS, so that Platform
+        Server can correctly authenticate requests in a self-managed OutSystems 11
+        environment.
 - name: Hotfixing
   guid: d8111f11-34b0-4f33-8374-5d9611d507e2
   topics:

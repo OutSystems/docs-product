@@ -9,7 +9,6 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applicatio
 tags: infrastructure management, application lifecycle management, environment configuration, outsystems deployment, infrastructure setup
 audience:
   - Platform administrator
-  - Developer
   - Tech lead
 outsystems-tools:
   - lifetime

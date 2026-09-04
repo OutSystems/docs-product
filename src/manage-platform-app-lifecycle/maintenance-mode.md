@@ -8,7 +8,6 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=656%3A500&mode=design&t=rzWSTBJIapfhmERp-1
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - lifetime
   - platform server

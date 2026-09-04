@@ -8,8 +8,6 @@ figma:
 tags: sql server optimization, performance tuning, database management, hardware recommendations, system maintenance
 audience:
   - Platform administrator
-  - Developer
-  - Tech lead
 outsystems-tools:
   - platform server
 coverage-type:

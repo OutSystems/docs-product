@@ -8,6 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2318-2
 helpids: 30549
 coverage-type:
+  - apply
   - unblock
 audience:
   - Front-end developer

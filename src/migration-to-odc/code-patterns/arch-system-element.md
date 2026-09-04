@@ -13,8 +13,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - unblock
   - understand
+  - apply
+  - unblock
 ---
 
 # Asset consuming O11 platform system elements

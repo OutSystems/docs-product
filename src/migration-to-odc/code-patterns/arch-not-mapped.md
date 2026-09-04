@@ -14,8 +14,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
-  - unblock
   - understand
+  - apply
+  - unblock
 ---
 
 # Asset consuming an O11 app that is not mapped to any ODC asset

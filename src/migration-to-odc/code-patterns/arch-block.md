@@ -15,8 +15,9 @@ outsystems-tools:
   - architecture dashboard
   - service studio
 coverage-type:
-  - unblock
   - understand
+  - apply
+  - unblock
 ---
 
 # Asset consuming an ODC application Block

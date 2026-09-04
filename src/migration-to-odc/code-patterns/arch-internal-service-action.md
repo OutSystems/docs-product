@@ -4,6 +4,7 @@ locale: en-us
 summary: Learn how to solve the findings for the conversion code pattern "Asset consuming its own service action".
 figma:
 coverage-type:
+  - apply
   - unblock
 topic:
 app_type: mobile apps,reactive web apps

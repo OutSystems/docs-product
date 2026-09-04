@@ -8,6 +8,7 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applicatio
 tags: access control, permission settings, security best practices, team management, role management
 audience:
   - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

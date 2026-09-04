@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:68
 tags: permissions management, application lifecycle management, user roles, business user enablement, monitoring applications
 audience:
-  - Platform administrator
   - Business analyst
-  - Developer
+  - Platform administrator
 outsystems-tools:
   - lifetime
   - service studio

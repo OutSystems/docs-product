@@ -1,5 +1,5 @@
 ---
-summary: Explore how OutSystems 11 (O11) enhances IT team management by simplifying permissions and application access through team-based controls.
+summary: IT team creation in OutSystems 11 (O11) lets you group user roles and application permissions, avoiding individual per-app grants in LifeTime.
 locale: en-us
 guid: f2286378-689d-43d2-8bd2-7f21be387c3b
 app_type: traditional web apps, mobile apps, reactive web apps

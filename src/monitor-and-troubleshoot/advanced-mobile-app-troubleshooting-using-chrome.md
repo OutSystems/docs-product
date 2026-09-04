@@ -12,10 +12,9 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - remember
   - understand
   - apply
-  - evaluate
-  - remember
 ---
 
 # Advanced Mobile App Troubleshooting Using Chrome

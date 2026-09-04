@@ -4,6 +4,7 @@ locale: en-us
 summary: Learn more about handling the URLs of consumed REST API endpoints after converting to ODC.
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?m=auto&node-id=2861-240&t=sgPICOBjMsyBDjny-1
 coverage-type:
+  - apply
   - unblock
 topic:
 app_type: mobile apps,reactive web apps

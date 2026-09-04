@@ -4,6 +4,7 @@ locale: en-us
 summary: This article describes the permission model of the Conversion Assessment Tool.
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?m=auto&node-id=3238-3629&t=ESjXytEWWy55qiqt-1
 coverage-type:
+  - remember
   - understand
 topic: 
 app_type: reactive web apps,mobile apps

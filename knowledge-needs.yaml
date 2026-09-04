@@ -3264,6 +3264,13 @@ knowledge-needs:
         entity record identifiers, and build a foreign keys map between source
         and destination O11 environments, so that migrated data correctly
         references the right records after an O11 data migration.
+    - name: BPT entity model
+      id: bpt-entity-model
+      description: Wants to understand the entity-relationship model of BPT
+        Process and Activity definition and instance entities, and how
+        Service Studio, Service Center, and Lifetime populate them, so that
+        they can correctly interpret this data model when planning an O11
+        BPT data migration.
     - name: Migrate hybrid BPT and users
       id: migrate-hybrid-bpt-users
       description: Wants to migrate hybrid data, including BPT process/activity

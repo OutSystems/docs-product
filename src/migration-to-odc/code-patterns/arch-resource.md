@@ -8,9 +8,8 @@ figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?
 helpids: 30527
 tags: code conversion, architecture review, dependency management, asset management, platform version upgrade
 audience:
-  - Developer
-  - Front-end developer
   - Architect
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

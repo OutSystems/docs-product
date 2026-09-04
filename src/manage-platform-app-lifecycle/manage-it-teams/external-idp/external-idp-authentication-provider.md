@@ -1,6 +1,9 @@
 ---
 summary: OutSystems 11 (O11) supports authentication using an external identity provider for management consoles, Service Studio, and Integration Studio.
-tags: authentication, identity provider, security, management consoles, user access control
+tags:
+  - Authentication
+  - External Authentication
+  - IdP
 locale: en-us
 guid: 722169AB-BF65-4357-89F3-0AF7D7D49264
 app_type: traditional web apps, mobile apps, reactive web apps

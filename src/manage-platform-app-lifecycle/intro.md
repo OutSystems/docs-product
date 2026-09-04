@@ -1,6 +1,13 @@
 ---
 summary: Explore application lifecycle management in OutSystems 11 (O11) using LifeTime for deployment, security, and IT user management across all environments.
-tags: application_lifecycle_management, deployment_processes, impact_analysis, hotfix_deployment, it_user_management, security
+tags:
+  - Deploy
+  - Development lifecycle
+  - IT Roles
+  - IT Teams
+  - IT Users
+  - Lifecycle
+  - Security
 locale: en-us
 guid: e9f6f711-2df2-42a0-90c1-3b9bc8b3926b
 app_type: traditional web apps, mobile apps, reactive web apps

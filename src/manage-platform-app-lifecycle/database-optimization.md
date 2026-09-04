@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: database optimization, performance enhancement, scalability, automatic indexing, transactions management
+tags:
+  - Best Practices
+  - Caching
+  - Indexes
+  - Optimization
+  - Performance
 audience:
   - Developer
   - Platform administrator

@@ -5,7 +5,12 @@ guid: 85879015-1e65-424a-85cb-3405be3dafe9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/jSgZ0l0unYdVymLxKZasno/Integration-with-external-systems?node-id=418-80&p=f&t=8K3W2DzRJD9SmGT6-0
-tags: email configuration, smtp, environmental configuration, email testing, service center
+tags:
+  - Authentication
+  - OAuth
+  - Platform Server
+  - Settings
+  - Testing
 audience:
   - Platform administrator
   - Developer

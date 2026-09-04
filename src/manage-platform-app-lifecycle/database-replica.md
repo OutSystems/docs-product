@@ -1,6 +1,10 @@
 ---
 summary: Explore real-time business analytics with minimal performance impact using Database Replica in OutSystems 11 (O11).
-tags: business analytics, performance optimization, database management, cloud infrastructure, high availability
+tags:
+  - Data
+  - External Databases
+  - Infrastructure
+  - Performance
 locale: en-us
 guid: 706c08f9-df6b-4bac-bb20-0e683262cadd
 app_type: traditional web apps, mobile apps, reactive web apps

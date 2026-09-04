@@ -5,7 +5,9 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?node-id=4043-89
-tags: disk space management, on-premises deployment, cloud deployment, server administration, performance optimization
+tags:
+  - Infrastructure
+  - Platform Server
 audience:
   - Platform administrator
   - Developer

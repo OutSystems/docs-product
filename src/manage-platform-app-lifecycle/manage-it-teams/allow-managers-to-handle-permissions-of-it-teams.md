@@ -5,7 +5,12 @@ guid: e666aa10-a5dd-41c4-856d-52a7b2ff5474
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:79
-tags: permission management, role assignments, it teams, user management, delegation
+tags:
+  - Authorization
+  - IT Roles
+  - IT Teams
+  - IT Users
+  - Roles
 audience:
   - Platform administrator
 outsystems-tools:

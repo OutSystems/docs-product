@@ -1,6 +1,10 @@
 ---
 summary: Learn more about how to fix Aggregates and SQL nodes not identified after converting to ODC.
-tags: o11 service modules, aggregate, sql, logic flow, o11 to odc conversion
+tags:
+  - Aggregates
+  - Logic
+  - SQL
+  - Troubleshooting
 guid: a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d
 locale: en-us
 app_type: traditional web apps, reactive web apps, mobile apps

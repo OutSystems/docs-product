@@ -8,7 +8,9 @@ figma:
 helpids: 30554
 coverage-type:
   - unblock
-tags: conversion issues, module troubleshooting, error resolution, outsystems 11, service studio
+tags:
+  - Platform Server
+  - Troubleshooting
 audience:
   - Platform administrator
   - Tech lead

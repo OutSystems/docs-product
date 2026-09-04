@@ -10,7 +10,10 @@ app_type: reactive web apps,mobile apps
 platform-version: o11
 audience:
   - Developer
-tags: email validation, data migration, outsystems 11, end user management, duplicate emails
+tags:
+  - Data
+  - Data Integrity
+  - End-users
 outsystems-tools:
   - users app
 helpids: 30661

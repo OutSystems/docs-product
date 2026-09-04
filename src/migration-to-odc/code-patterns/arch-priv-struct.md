@@ -6,7 +6,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 helpids: 30533
-tags: service actions, data migration, code conversion, outsystems development, outsystems platform
+tags:
+  - Data Model
+  - Modular Programming
+  - Refactoring
 audience:
   - Developer
 outsystems-tools:

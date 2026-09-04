@@ -1,6 +1,13 @@
 ---
 summary: OutSystems 11 (O11) supports external authentication providers for IT users, allowing integration with systems like Active Directory and LDAP.
-tags: external authentication, active directory, ldap, security, it user management
+tags:
+  - Active Directory
+  - Authentication
+  - External Authentication
+  - Infrastructure
+  - IT Teams
+  - IT Users
+  - LDAP
 locale: en-us
 guid: f8b008aa-ae75-470a-adc3-5863bf6be8e6
 app_type: traditional web apps, mobile apps, reactive web apps

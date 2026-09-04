@@ -14,7 +14,10 @@ audience:
 outsystems-tools:
   - service studio
 helpids: 30671
-tags: cyclic dependency, o11 modules, odc libraries, code conversion, business domain
+tags:
+  - Architecture
+  - Libraries
+  - Modular Programming
 ---
 # Library with cyclic dependency to another ODC library
 

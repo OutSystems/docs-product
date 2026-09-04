@@ -5,7 +5,13 @@ guid: cd4618ec-7a4b-400f-a33c-a819571ebbb9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: soap web services, external authentication, plugin development, user authentication, deployment configuration
+tags:
+  - Authentication
+  - External Authentication
+  - IT Users
+  - Plugins
+  - SOAP
+  - Web services
 audience:
   - Platform administrator
   - Developer

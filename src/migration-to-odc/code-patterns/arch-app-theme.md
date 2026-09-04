@@ -6,7 +6,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2350-7993
 helpids: 30534
-tags: theme customization, odc libraries, conversion strategies, app development best practices, architecture mapping
+tags:
+  - Architecture
+  - Libraries
+  - Refactoring
+  - Themes
 audience:
   - Front-end developer
   - Developer

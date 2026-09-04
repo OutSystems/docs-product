@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - pagination-reference
+  - use-pagination-pattern
 ---
 
 # Pagination

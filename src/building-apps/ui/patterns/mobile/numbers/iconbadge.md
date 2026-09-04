@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - icon-badge-reference
+  - use-icon-badge-pattern
 ---
 
 # Icon Badge

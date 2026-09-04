@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - button-loading-reference
+  - use-button-loading-pattern
 ---
 
 # Button Loading

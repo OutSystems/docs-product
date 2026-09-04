@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - progress-bar-reference
+  - use-progress-bar-pattern
 ---
 
 # Progress Bar

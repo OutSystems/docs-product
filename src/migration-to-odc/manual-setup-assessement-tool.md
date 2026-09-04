@@ -1,7 +1,7 @@
 ---
 guid: 6e9a634f-774e-49ea-a2af-d74169b68cc1
 locale: en-us
-summary: This article describes the manual steps for installing and configuring the Conversion Assessment Tool.
+summary: Manual Conversion Assessment Tool setup installs the Engine, Console, and Probe components and configures LifeTime access without the installer app.
 figma: https://www.figma.com/design/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?node-id=2896-130
 coverage-type:
   - apply

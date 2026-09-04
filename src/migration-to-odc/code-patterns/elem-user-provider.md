@@ -1,5 +1,5 @@
 ---
-summary: Resolve asset issues in OutSystems 11 (O11) by managing modules with different user providers and ensuring findings are not mapped to ODC Assets.
+summary: OutSystems 11 (O11) modules with a non-default user provider block direct conversion to ODC, which only supports the unified Users provider.
 locale: en-us
 guid: 7ac9c1fe-c4b3-4213-8c15-187e38d3ba29
 app_type: traditional web apps, mobile apps, reactive web apps

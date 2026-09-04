@@ -1,5 +1,5 @@
 ---
-summary: This article outlines how to refactor site properties in your O11 apps for compatibility with ODC.
+summary: Site properties in OutSystems 11 (O11) apps become read-only in OutSystems Developer Cloud (ODC), so store runtime values in an entity.
 locale: en-us
 guid: 19d82c11-dc9a-43e8-bce1-1767e48e58fd
 app_type: traditional web apps, mobile apps, reactive web apps

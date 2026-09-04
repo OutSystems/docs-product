@@ -649,6 +649,12 @@ knowledge-needs:
       id: data-masking
     - name: Data encryption
       id: data-encryption
+    - name: Secure data in transit
+      id: secure-data-in-transit
+      description: Wants to protect OutSystems app communications from Man-in-the-Middle
+        attacks by using HTTPS/SSL/TLS for Web Flows and Web Services and enabling
+        secure cookies with HSTS headers, so that sensitive data and session cookies
+        aren't transmitted in plain text.
   - name: External access control
     id: external-access-control
     subtopics:
@@ -679,6 +685,15 @@ knowledge-needs:
         default escaping, and Encode functions (EncodeSQL, EncodeHTML, EncodeJavaScript,
         EncodeURL) and parameterized queries, so that they can protect their ODC
         applications against SQL injection and XSS attacks.
+  - name: Access control risks
+    id: access-control-risks
+    description: Wants to protect OutSystems 11 applications from access control
+      and permissions vulnerabilities, covering how to secure actions (avoiding
+      UI-only disabling/hiding, validating permissions server-side rather than
+      only in Preparation, checking permissions before executing code, using
+      non-guessable IDs) and information (checking permissions in Preparation
+      before displaying data), so that only authorized users can perform actions
+      or view data.
 - name: Advanced workflows
   guid: 7a84e09e-c48c-404f-8d9f-728b9f78c88c
   topics:

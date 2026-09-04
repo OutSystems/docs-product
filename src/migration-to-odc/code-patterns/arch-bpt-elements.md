@@ -1,7 +1,7 @@
 ---
 guid: 46402d14-c102-4977-86f1-ce3475df2910
 locale: en-us
-summary: This article provides guidelines for refactoring the usage of BPT entities and actions in O11 apps to ensure compatibility with OutSystems Developer Cloud (ODC).
+summary: O11 BPT elements like process management actions and entities remain unsupported in ODC conversion until OutSystems automates workflow mapping.
 figma: 
 coverage-type:
   - unblock

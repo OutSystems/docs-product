@@ -1,5 +1,5 @@
 ---
-summary: This article provides guidance on refactoring strong dependencies on Images in O11 apps to ensure compatibility with ODC.
+summary: Image dependencies in ODC require moving the O11 module to a dedicated app or library to convert strong dependencies into weak ones.
 locale: en-us
 guid: 4732cbaa-a548-4c28-b2fb-081be0f1ecc3
 app_type: traditional web apps, mobile apps, reactive web apps

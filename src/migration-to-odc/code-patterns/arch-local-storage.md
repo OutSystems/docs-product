@@ -1,5 +1,5 @@
 ---
-summary: This article provides guidance on refactoring dependencies to Local Storage Entities in O11 apps to ensure compatibility with ODC.
+summary: Local Storage Entities in OutSystems Developer Cloud (ODC) stay scoped to a single app, so move the O11 module to its own app before conversion.
 locale: en-us
 guid: 8639ad48-cd26-4273-8175-65db6a3f241d
 app_type: traditional web apps, mobile apps, reactive web apps

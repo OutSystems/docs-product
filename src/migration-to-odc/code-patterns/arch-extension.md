@@ -1,5 +1,5 @@
 ---
-summary: This article provides guidance on how to handle custom code when converting your OutSystems 11 apps to OutSystems Developer Cloud (ODC).
+summary: Extension in O11 requires refactoring external database connections and custom C# code before converting to OutSystems Developer Cloud (ODC).
 locale: en-us
 guid: d7657c47-7cd9-4bc1-a8be-54d25c20233d
 app_type: traditional web apps, mobile apps, reactive web apps

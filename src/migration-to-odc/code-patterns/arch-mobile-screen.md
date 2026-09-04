@@ -1,5 +1,5 @@
 ---
-summary: This article provides guidance on refactoring dependencies to Screens in O11 mobile apps to ensure compatibility with ODC.
+summary: Screen dependencies in ODC must be weak, so move the O11 module containing the Screen to a dedicated app mapped to the consuming ODC app.
 locale: en-us
 guid: f74beda0-279a-499c-932d-5ad57587c8f3
 app_type: traditional web apps, mobile apps, reactive web apps
